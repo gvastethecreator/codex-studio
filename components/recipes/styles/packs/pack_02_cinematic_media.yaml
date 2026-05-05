@@ -1,0 +1,1124 @@
+- id: pack_02
+  name: Cinematic & Media
+  description: A collection of 80+ styles inspired by film, television, animation, and historical photography.
+  presets:
+    - id: SP02-001
+      name: Film Noir
+      category: 1. Film Genres
+      negativePrompt: color, bright, happy
+      style:
+        aesthetic: 1940s crime drama
+        form_and_line: None
+        color_palette: Black and White
+        lighting_setup: Venetian blinds shadow
+        material_texture: Film grain
+        render_quality: Cinematic, moody
+        spatial_distortion: None
+        atmosphere: Suspense, dark
+        key_features: High contrast
+    - id: SP02-002
+      name: Spaghetti Western
+      category: 1. Film Genres
+      negativePrompt: modern, clean
+      style:
+        aesthetic: Sergio Leone film
+        form_and_line: None
+        color_palette: Warm, dusty yellow
+        lighting_setup: Harsh sun
+        material_texture: Techniscope grain
+        render_quality: Epic, gritty
+        spatial_distortion: Extreme close-up
+        atmosphere: Tense, hot
+        key_features: Wide angle
+    - id: SP02-003
+      name: 80s Sci-Fi
+      category: 1. Film Genres
+      negativePrompt: modern cgi
+      style:
+        aesthetic: Blade Runner aesthetic
+        form_and_line: None
+        color_palette: Neon Blue/Pink + Smoke
+        lighting_setup: Low key + Neon
+        material_texture: Anamorphic lens flare
+        render_quality: Atmospheric, practical FX
+        spatial_distortion: None
+        atmosphere: Dystopian, cool
+        key_features: Smoke
+    - id: SP02-004
+      name: Technicolor Musical
+      category: 1. Film Genres
+      negativePrompt: faded, dark
+      style:
+        aesthetic: Wizard of Oz style
+        form_and_line: None
+        color_palette: Hyper-saturated
+        lighting_setup: High key studio
+        material_texture: 3-strip Technicolor
+        render_quality: Vibrant, classic
+        spatial_distortion: None
+        atmosphere: Joyful, theatrical
+        key_features: Red is very red
+    - id: SP02-005
+      name: French New Wave
+      category: 1. Film Genres
+      negativePrompt: studio lighting, stable
+      style:
+        aesthetic: Godard film
+        form_and_line: None
+        color_palette: Black and White high contrast
+        lighting_setup: Natural light
+        material_texture: 16mm grain
+        render_quality: Handheld, raw
+        spatial_distortion: Jump cut feel
+        atmosphere: Cool, intellectual
+        key_features: Natural
+    - id: SP02-006
+      name: Grindhouse/Exploitation
+      category: 1. Film Genres
+      negativePrompt: clean, hd
+      style:
+        aesthetic: 70s B-movie
+        form_and_line: None
+        color_palette: Faded, red shift
+        lighting_setup: Harsh
+        material_texture: Scratches, cigarette burns
+        render_quality: Damaged film
+        spatial_distortion: Film splice
+        atmosphere: Trashy, violent
+        key_features: Dirt
+    - id: SP02-007
+      name: Silent Film
+      category: 1. Film Genres
+      negativePrompt: sound, color
+      style:
+        aesthetic: 1920s cinema
+        form_and_line: None
+        color_palette: Sepia or B&W
+        lighting_setup: Flat studio
+        material_texture: Flicker, dust
+        render_quality: Fast motion feel
+        spatial_distortion: Vignette
+        atmosphere: Expressive, old
+        key_features: Intertitle card
+    - id: SP02-008
+      name: Found Footage Horror
+      category: 1. Film Genres
+      negativePrompt: steady, cinematic
+      style:
+        aesthetic: Blair Witch style
+        form_and_line: None
+        color_palette: Low light digital
+        lighting_setup: Flashlight only
+        material_texture: Video noise
+        render_quality: Shaky, amateur
+        spatial_distortion: Motion blur
+        atmosphere: Terrifying, real
+        key_features: Timestamp
+    - id: SP02-009
+      name: Kaiju Movie (Suitmation)
+      category: 1. Film Genres
+      negativePrompt: cgi, realistic
+      style:
+        aesthetic: Godzilla 1954
+        form_and_line: None
+        color_palette: B&W or Eastmancolor
+        lighting_setup: Miniature set
+        material_texture: Rubber suit
+        render_quality: Tokusatsu, scale model
+        spatial_distortion: Stiff movement
+        atmosphere: Epic, destruction
+        key_features: Low angle
+    - id: SP02-010
+      name: Kung Fu (Shaw Brothers)
+      category: 1. Film Genres
+      negativePrompt: modern action
+      style:
+        aesthetic: 70s martial arts
+        form_and_line: None
+        color_palette: Zoom lens
+        lighting_setup: Studio set
+        material_texture: Film grain
+        render_quality: Choreographed
+        spatial_distortion: Snap zoom
+        atmosphere: Action, classic
+        key_features: Wide shot
+    - id: SP02-011
+      name: Cyberpunk Anime (90s)
+      category: 1. Film Genres
+      negativePrompt: modern digital
+      style:
+        aesthetic: Ghost in the Shell style
+        form_and_line: Cel shaded
+        color_palette: Green tint, dark
+        lighting_setup: City glow
+        material_texture: Cel grain
+        render_quality: Detailed, philosophical
+        spatial_distortion: Wires
+        atmosphere: Tech, moody
+        key_features: Bloom
+    - id: SP02-012
+      name: Wes Anderson Style
+      category: 1. Film Genres
+      negativePrompt: asymmetrical, messy
+      style:
+        aesthetic: Symmetrical composition
+        form_and_line: None
+        color_palette: Pastel palette
+        lighting_setup: Flat, soft
+        material_texture: Film
+        render_quality: Quirky, precise
+        spatial_distortion: Center frame
+        atmosphere: Whimsical, deadpan
+        key_features: Symmetry
+    - id: SP02-013
+      name: Blockbuster Teal & Orange
+      category: 1. Film Genres
+      negativePrompt: natural color
+      style:
+        aesthetic: Modern action movie
+        form_and_line: None
+        color_palette: Teal shadows, Orange skin
+        lighting_setup: High contrast
+        material_texture: Digital clean
+        render_quality: Michael Bay, epic
+        spatial_distortion: Lens flare
+        atmosphere: Intense, cinematic
+        key_features: Color grade
+    - id: SP02-014
+      name: Giallo Horror
+      category: 1. Film Genres
+      negativePrompt: natural lighting
+      style:
+        aesthetic: Italian horror
+        form_and_line: None
+        color_palette: Deep Red, Blue, Green gels
+        lighting_setup: Unnatural colored light
+        material_texture: Film grain
+        render_quality: Stylish, bloody
+        spatial_distortion: Black gloves
+        atmosphere: Mystery, stylish
+        key_features: Color gels
+    - id: SP02-015
+      name: Mumblecore
+      category: 1. Film Genres
+      negativePrompt: polished, scripted
+      style:
+        aesthetic: Indie film
+        form_and_line: None
+        color_palette: Natural, low contrast
+        lighting_setup: Available light
+        material_texture: Digital video
+        render_quality: Real, awkward
+        spatial_distortion: Out of focus
+        atmosphere: Intimate, talky
+        key_features: Handheld
+    - id: SP02-016
+      name: Space Opera (70s)
+      category: 1. Film Genres
+      negativePrompt: cgi
+      style:
+        aesthetic: Star Wars A New Hope
+        form_and_line: None
+        color_palette: Used future
+        lighting_setup: Studio
+        material_texture: Model kitbash
+        render_quality: Practical FX
+        spatial_distortion: None
+        atmosphere: Adventure, dirty
+        key_features: Greebles
+    - id: SP02-017
+      name: 90s Sitcom
+      category: 2. TV & Broadcast
+      negativePrompt: cinematic, dark
+      style:
+        aesthetic: Friends/Seinfeld set
+        form_and_line: None
+        color_palette: Bright, flat
+        lighting_setup: Multi-camera lighting
+        material_texture: Videotape
+        render_quality: Studio audience feel
+        spatial_distortion: None
+        atmosphere: Comfort, funny
+        key_features: 3-wall set
+    - id: SP02-018
+      name: News Broadcast
+      category: 2. TV & Broadcast
+      negativePrompt: movie
+      style:
+        aesthetic: Breaking news
+        form_and_line: Chyron overlay
+        color_palette: Studio Blue
+        lighting_setup: Flat studio
+        material_texture: HD Video
+        render_quality: Live, urgent
+        spatial_distortion: Ticker tape
+        atmosphere: Serious, info
+        key_features: Lower third
+    - id: SP02-019
+      name: Soap Opera
+      category: 2. TV & Broadcast
+      negativePrompt: film look
+      style:
+        aesthetic: Daytime TV
+        form_and_line: None
+        color_palette: Soft focus
+        lighting_setup: High key, backlit
+        material_texture: 60fps video (Soap effect)
+        render_quality: Dreamy, cheap
+        spatial_distortion: Soft glow
+        atmosphere: Dramatic, romance
+        key_features: Vaseline lens
+    - id: SP02-020
+      name: Reality TV Confessional
+      category: 2. TV & Broadcast
+      negativePrompt: scripted
+      style:
+        aesthetic: Interview chair
+        form_and_line: None
+        color_palette: Saturated
+        lighting_setup: Ring light
+        material_texture: HD Video
+        render_quality: Produced, fake
+        spatial_distortion: Green screen back
+        atmosphere: Gossip, drama
+        key_features: Eye contact
+    - id: SP02-021
+      name: Music Video (Hype Williams)
+      category: 2. TV & Broadcast
+      negativePrompt: boring, normal
+      style:
+        aesthetic: Late 90s rap video
+        form_and_line: None
+        color_palette: Shiny suits
+        lighting_setup: Studio tunnel
+        material_texture: Fisheye lens
+        render_quality: Glossy, expensive
+        spatial_distortion: Distorted wide angle
+        atmosphere: Cool, flashy
+        key_features: Fisheye
+    - id: SP02-022
+      name: CCTV/Security Cam
+      category: 2. TV & Broadcast
+      negativePrompt: color, hd
+      style:
+        aesthetic: Surveillance footage
+        form_and_line: None
+        color_palette: Black and White
+        lighting_setup: Low dynamic range
+        material_texture: Scanlines, noise
+        render_quality: Low res, grainy
+        spatial_distortion: Wide angle distortion
+        atmosphere: Creepy, voyeur
+        key_features: Timestamp
+    - id: SP02-023
+      name: VHS Home Video
+      category: 2. TV & Broadcast
+      negativePrompt: hd, digital
+      style:
+        aesthetic: 1990s camcorder
+        form_and_line: None
+        color_palette: Color bleed
+        lighting_setup: On-camera flash
+        material_texture: Tracking lines
+        render_quality: Nostalgic, bad
+        spatial_distortion: Glitch
+        atmosphere: Memory, raw
+        key_features: Date stamp
+    - id: SP02-024
+      name: Public Access TV
+      category: 2. TV & Broadcast
+      negativePrompt: professional
+      style:
+        aesthetic: Weird local TV
+        form_and_line: None
+        color_palette: Bad white balance
+        lighting_setup: Harsh shadows
+        material_texture: Analog noise
+        render_quality: Amateur, weird
+        spatial_distortion: Chroma key fail
+        atmosphere: Surreal, awkward
+        key_features: Bad keying
+    - id: SP02-025
+      name: Infomercial
+      category: 2. TV & Broadcast
+      negativePrompt: cinematic
+      style:
+        aesthetic: Product demo
+        form_and_line: None
+        color_palette: Bright, cheap
+        lighting_setup: Flat
+        material_texture: Video
+        render_quality: Sales, cheesy
+        spatial_distortion: Before/After split
+        atmosphere: Enthusiastic, fake
+        key_features: Call now
+    - id: SP02-026
+      name: Sports Broadcast
+      category: 2. TV & Broadcast
+      negativePrompt: movie
+      style:
+        aesthetic: Live game
+        form_and_line: Score overlay
+        color_palette: Saturated turf
+        lighting_setup: Stadium lights
+        material_texture: HD Slow mo
+        render_quality: Telephoto, action
+        spatial_distortion: None
+        atmosphere: Exciting, live
+        key_features: Scoreboard
+    - id: SP02-027
+      name: Weather Channel
+      category: 2. TV & Broadcast
+      negativePrompt: indoors
+      style:
+        aesthetic: Forecast map
+        form_and_line: Isobars
+        color_palette: Radar Green/Red
+        lighting_setup: Digital map
+        material_texture: Screen
+        render_quality: Info, graphics
+        spatial_distortion: None
+        atmosphere: Informative
+        key_features: Map
+    - id: SP02-028
+      name: MTV 90s Grunge
+      category: 2. TV & Broadcast
+      negativePrompt: clean
+      style:
+        aesthetic: Alternative video
+        form_and_line: Scribbles
+        color_palette: Desaturated + Neon
+        lighting_setup: Strobe
+        material_texture: Distressed film
+        render_quality: Edgy, fast
+        spatial_distortion: Morphing
+        atmosphere: Rebellious, cool
+        key_features: Fast cuts
+    - id: SP02-029
+      name: Cooking Show
+      category: 2. TV & Broadcast
+      negativePrompt: messy
+      style:
+        aesthetic: Food prep
+        form_and_line: None
+        color_palette: Warm, appetizing
+        lighting_setup: Bright kitchen
+        material_texture: Macro food
+        render_quality: Clean, delicious
+        spatial_distortion: None
+        atmosphere: Hungry, happy
+        key_features: Overhead shot
+    - id: SP02-030
+      name: Nature Documentary
+      category: 2. TV & Broadcast
+      negativePrompt: human, city
+      style:
+        aesthetic: BBC Earth
+        form_and_line: None
+        color_palette: Natural, vibrant
+        lighting_setup: Golden hour
+        material_texture: Ultra HD
+        render_quality: Attenborough, epic
+        spatial_distortion: Slow motion
+        atmosphere: Majestic, wild
+        key_features: Telephoto
+    - id: SP02-031
+      name: Classic Disney (Cel)
+      category: 3. Animation Styles
+      negativePrompt: 3d, digital
+      style:
+        aesthetic: Snow White style
+        form_and_line: Hand inked
+        color_palette: Technicolor paint
+        lighting_setup: Multiplane camera
+        material_texture: Cel paint
+        render_quality: Masterpiece, fluid
+        spatial_distortion: Squash and stretch
+        atmosphere: Magical, classic
+        key_features: Painted background
+    - id: SP02-032
+      name: Studio Ghibli
+      category: 3. Animation Styles
+      negativePrompt: ugly, dark
+      style:
+        aesthetic: Miyazaki film
+        form_and_line: Delicate
+        color_palette: Natural, lush green
+        lighting_setup: Dappled sunlight
+        material_texture: Watercolor background
+        render_quality: Beautiful, food looks good
+        spatial_distortion: None
+        atmosphere: Nostalgic, peaceful
+        key_features: Clouds
+    - id: SP02-033
+      name: Pixar Style (3D)
+      category: 3. Animation Styles
+      negativePrompt: 2d, anime
+      style:
+        aesthetic: Toy Story/Up
+        form_and_line: None
+        color_palette: Vibrant, subsurface
+        lighting_setup: Cinematic 3D
+        material_texture: Stylized realism
+        render_quality: High budget, cute
+        spatial_distortion: Big eyes
+        atmosphere: Heartwarming, fun
+        key_features: Soft shadows
+    - id: SP02-034
+      name: Stop Motion (Laika)
+      category: 3. Animation Styles
+      negativePrompt: smooth 3d
+      style:
+        aesthetic: Coraline style
+        form_and_line: None
+        color_palette: Texture rich
+        lighting_setup: Miniature studio
+        material_texture: Fabric, 3D print
+        render_quality: Tactile, creepy
+        spatial_distortion: Replacement face
+        atmosphere: Dark, handmade
+        key_features: Imperfection
+    - id: SP02-035
+      name: Looney Tunes (Chuck Jones)
+      category: 3. Animation Styles
+      negativePrompt: realistic
+      style:
+        aesthetic: Bugs Bunny
+        form_and_line: Thick black
+        color_palette: Flat
+        lighting_setup: None
+        material_texture: Cel
+        render_quality: Zany, fast
+        spatial_distortion: Extreme squash/stretch
+        atmosphere: Funny, violent
+        key_features: Abstract background
+    - id: SP02-036
+      name: Fleischer (Rubber Hose)
+      category: 3. Animation Styles
+      negativePrompt: color, modern
+      style:
+        aesthetic: 1930s Mickey/Betty Boop
+        form_and_line: Thick, bouncy
+        color_palette: Black and White
+        lighting_setup: None
+        material_texture: Film grain
+        render_quality: Cuphead, retro
+        spatial_distortion: Noodle limbs
+        atmosphere: Happy, weird
+        key_features: Pie eyes
+    - id: SP02-037
+      name: Anime (90s Aesthetic)
+      category: 3. Animation Styles
+      negativePrompt: modern digital
+      style:
+        aesthetic: Sailor Moon/Eva
+        form_and_line: Cel outline
+        color_palette: Pastel/Neon
+        lighting_setup: Hard shadows
+        material_texture: Film grain
+        render_quality: Retro anime
+        spatial_distortion: Big eyes
+        atmosphere: Nostalgic, aesthetic
+        key_features: Bloom
+    - id: SP02-038
+      name: Spider-Verse Style
+      category: 3. Animation Styles
+      negativePrompt: smooth 3d
+      style:
+        aesthetic: Comic book 3D
+        form_and_line: Ink lines on 3D
+        color_palette: Halftone dots
+        lighting_setup: Pop art
+        material_texture: Paper grain
+        render_quality: Dynamic, glitch
+        spatial_distortion: Chromatic aberration
+        atmosphere: Energetic, modern
+        key_features: Low framerate feel
+    - id: SP02-039
+      name: UPA Style (Mid-Century)
+      category: 3. Animation Styles
+      negativePrompt: realistic, 3d
+      style:
+        aesthetic: 50s minimalism
+        form_and_line: Graphic
+        color_palette: Offset blocks
+        lighting_setup: None
+        material_texture: Paper
+        render_quality: Design, flat
+        spatial_distortion: Abstract shapes
+        atmosphere: Jazz, modern
+        key_features: Flatness
+    - id: SP02-040
+      name: South Park Style
+      category: 3. Animation Styles
+      negativePrompt: drawn, 3d
+      style:
+        aesthetic: Construction paper
+        form_and_line: None
+        color_palette: Flat paper
+        lighting_setup: Drop shadow
+        material_texture: Paper texture
+        render_quality: Crude, funny
+        spatial_distortion: Waddle
+        atmosphere: Satire, simple
+        key_features: Cutout
+    - id: SP02-041
+      name: Rotoscoping
+      category: 3. Animation Styles
+      negativePrompt: smooth, 3d
+      style:
+        aesthetic: A Scanner Darkly style
+        form_and_line: Wobbly trace
+        color_palette: Flat blocks
+        lighting_setup: Realistic (traced)
+        material_texture: Digital paint
+        render_quality: Uncanny, dream
+        spatial_distortion: Floating shapes
+        atmosphere: Surreal, trippy
+        key_features: Jitter
+    - id: SP02-042
+      name: Papercraft Animation
+      category: 3. Animation Styles
+      negativePrompt: drawn, 3d
+      style:
+        aesthetic: Folded paper world
+        form_and_line: Fold lines
+        color_palette: Origami paper
+        lighting_setup: Soft studio
+        material_texture: Paper grain
+        render_quality: Delicate, craft
+        spatial_distortion: Low poly (paper)
+        atmosphere: Cute, handmade
+        key_features: Folds
+    - id: SP02-043
+      name: Flash Animation (2000s)
+      category: 3. Animation Styles
+      negativePrompt: textured, soft
+      style:
+        aesthetic: Newgrounds style
+        form_and_line: Thick vector
+        color_palette: Web safe colors
+        lighting_setup: Gradient tool
+        material_texture: Vector smooth
+        render_quality: Internet, crude
+        spatial_distortion: Tweening
+        atmosphere: Nostalgic, simple
+        key_features: Symbol reuse
+    - id: SP02-044
+      name: Oil Paint Animation
+      category: 3. Animation Styles
+      negativePrompt: digital, sharp
+      style:
+        aesthetic: Loving Vincent style
+        form_and_line: Brush strokes
+        color_palette: Impressionist
+        lighting_setup: Painted light
+        material_texture: Thick impasto
+        render_quality: Masterpiece, moving art
+        spatial_distortion: Swirling
+        atmosphere: Artistic, emotional
+        key_features: Brush direction
+    - id: SP02-045
+      name: Pixel Art Animation
+      category: 3. Animation Styles
+      negativePrompt: vector, smooth
+      style:
+        aesthetic: 16-bit RPG
+        form_and_line: Pixel outline
+        color_palette: Limited palette
+        lighting_setup: Dithered
+        material_texture: Pixel grid
+        render_quality: Retro game
+        spatial_distortion: Sprite squash
+        atmosphere: Nostalgic, game
+        key_features: Grid lock
+    - id: SP02-046
+      name: Daguerreotype (1840s)
+      category: 4. Photography Eras
+      negativePrompt: color, paper
+      style:
+        aesthetic: Silver plate photo
+        form_and_line: None
+        color_palette: Metallic B&W
+        lighting_setup: Long exposure
+        material_texture: Scratches, tarnish
+        render_quality: Ghostly, ancient
+        spatial_distortion: Blurry eyes
+        atmosphere: Haunting, history
+        key_features: Vignette
+    - id: SP02-047
+      name: Tintype (Civil War)
+      category: 4. Photography Eras
+      negativePrompt: clean, white
+      style:
+        aesthetic: Metal plate photo
+        form_and_line: None
+        color_palette: Dark Sepia
+        lighting_setup: Flat daylight
+        material_texture: Chemical stains
+        render_quality: Rough, historic
+        spatial_distortion: None
+        atmosphere: Serious, old
+        key_features: Black edges
+    - id: SP02-048
+      name: Autochrome (1900s)
+      category: 4. Photography Eras
+      negativePrompt: sharp, digital color
+      style:
+        aesthetic: First color photo
+        form_and_line: None
+        color_palette: Pointillist grain
+        lighting_setup: Soft, dreamy
+        material_texture: Potato starch grain
+        render_quality: Impressionist photo
+        spatial_distortion: None
+        atmosphere: Dreamy, vintage
+        key_features: Grainy color
+    - id: SP02-049
+      name: Kodachrome (50s)
+      category: 4. Photography Eras
+      negativePrompt: faded, digital
+      style:
+        aesthetic: National Geographic slide
+        form_and_line: None
+        color_palette: Rich Red/Yellow
+        lighting_setup: High contrast sun
+        material_texture: Fine grain
+        render_quality: Vivid, nostalgic
+        spatial_distortion: None
+        atmosphere: Sunny, classic
+        key_features: Deep blacks
+    - id: SP02-050
+      name: Polaroid (Instant)
+      category: 4. Photography Eras
+      negativePrompt: sharp, hd
+      style:
+        aesthetic: Instant film
+        form_and_line: None
+        color_palette: Green/Blue cast
+        lighting_setup: Flash
+        material_texture: Soft focus
+        render_quality: Personal, memory
+        spatial_distortion: Chemical leak
+        atmosphere: Nostalgic, fun
+        key_features: White border
+    - id: SP02-051
+      name: Disposable Camera (90s)
+      category: 4. Photography Eras
+      negativePrompt: professional lighting
+      style:
+        aesthetic: Party photo
+        form_and_line: None
+        color_palette: High contrast
+        lighting_setup: Harsh flash
+        material_texture: Grainy 400 ISO
+        render_quality: Candid, fun
+        spatial_distortion: Red eye
+        atmosphere: Party, memory
+        key_features: Vignette
+    - id: SP02-052
+      name: Lomography
+      category: 4. Photography Eras
+      negativePrompt: correct color
+      style:
+        aesthetic: Toy camera (Holga)
+        form_and_line: None
+        color_palette: Cross processed
+        lighting_setup: Leak
+        material_texture: Plastic lens blur
+        render_quality: Artsy, weird
+        spatial_distortion: Vignette blur
+        atmosphere: Experimental, fun
+        key_features: Light leaks
+    - id: SP02-053
+      name: Wet Plate Collodion
+      category: 4. Photography Eras
+      negativePrompt: clean
+      style:
+        aesthetic: Glass plate negative
+        form_and_line: None
+        color_palette: Cream/Black
+        lighting_setup: Shallow DOF
+        material_texture: Chemical swirls
+        render_quality: Handmade, fine art
+        spatial_distortion: Peeling emulsion
+        atmosphere: Timeless, soul
+        key_features: Focus falloff
+    - id: SP02-054
+      name: Infrared Film (Aerochrome)
+      category: 4. Photography Eras
+      negativePrompt: green grass
+      style:
+        aesthetic: False color IR
+        form_and_line: None
+        color_palette: Pink/Red foliage
+        lighting_setup: Surreal
+        material_texture: Grainy
+        render_quality: Psychedelic, weird
+        spatial_distortion: None
+        atmosphere: Alien, dream
+        key_features: Red trees
+    - id: SP02-055
+      name: Cyanotype (Photo)
+      category: 4. Photography Eras
+      negativePrompt: color
+      style:
+        aesthetic: Blue print photo
+        form_and_line: None
+        color_palette: Prussian Blue/White
+        lighting_setup: Sunlight
+        material_texture: Paper fiber
+        render_quality: Blueprint, art
+        spatial_distortion: None
+        atmosphere: Calm, blue
+        key_features: Monochrome
+    - id: SP02-056
+      name: Early Digital (2000s)
+      category: 4. Photography Eras
+      negativePrompt: film grain
+      style:
+        aesthetic: 2 Megapixel camera
+        form_and_line: None
+        color_palette: Noisy shadows
+        lighting_setup: Flat
+        material_texture: Jpeg artifacts
+        render_quality: Low res, nostalgic
+        spatial_distortion: Pixelation
+        atmosphere: Y2K, candid
+        key_features: Date stamp
+    - id: SP02-057
+      name: Pinhole Camera
+      category: 4. Photography Eras
+      negativePrompt: sharp focus
+      style:
+        aesthetic: Lensless photo
+        form_and_line: None
+        color_palette: Soft, dark
+        lighting_setup: Long exposure
+        material_texture: Soft everywhere
+        render_quality: Dreamy, infinite DOF
+        spatial_distortion: Vignette
+        atmosphere: Ethereal, time
+        key_features: Blur
+    - id: SP02-058
+      name: X-Ray Photography
+      category: 4. Photography Eras
+      negativePrompt: surface detail
+      style:
+        aesthetic: Internal structure
+        form_and_line: Bones/Structure
+        color_palette: Black/White/Blue
+        lighting_setup: Translucent
+        material_texture: Film
+        render_quality: Medical, scientific
+        spatial_distortion: Transparency
+        atmosphere: Clinical, spooky
+        key_features: Inverted
+    - id: SP02-059
+      name: Thermal Camera
+      category: 4. Photography Eras
+      negativePrompt: visible light
+      style:
+        aesthetic: Heat map
+        form_and_line: None
+        color_palette: Ironbow (Purple to Yellow)
+        lighting_setup: Emissive heat
+        material_texture: Digital
+        render_quality: Military, predator
+        spatial_distortion: None
+        atmosphere: Tech, hunting
+        key_features: Hot is white
+    - id: SP02-060
+      name: Night Vision (Green)
+      category: 4. Photography Eras
+      negativePrompt: color
+      style:
+        aesthetic: Intensifier tube
+        form_and_line: None
+        color_palette: Phosphor Green
+        lighting_setup: Grainy gain
+        material_texture: Scintillation noise
+        render_quality: Military, spy
+        spatial_distortion: Bloom
+        atmosphere: Stealth, hidden
+        key_features: Green
+    - id: SP02-061
+      name: Golden Hour
+      category: 5. Lighting & Atmosphere
+      negativePrompt: blue, cold
+      style:
+        aesthetic: Sunset light
+        form_and_line: None
+        color_palette: Warm Gold/Orange
+        lighting_setup: Low angle sun
+        material_texture: Soft
+        render_quality: Beautiful, romantic
+        spatial_distortion: Long shadows
+        atmosphere: Warm, happy
+        key_features: Rim light
+    - id: SP02-062
+      name: Blue Hour
+      category: 5. Lighting & Atmosphere
+      negativePrompt: orange, sun
+      style:
+        aesthetic: Twilight
+        form_and_line: None
+        color_palette: Deep Blue/Purple
+        lighting_setup: Soft ambient
+        material_texture: Smooth
+        render_quality: Calm, city lights
+        spatial_distortion: None
+        atmosphere: Quiet, cool
+        key_features: Streetlights on
+    - id: SP02-063
+      name: Rembrandt Lighting
+      category: 5. Lighting & Atmosphere
+      negativePrompt: flat, bright
+      style:
+        aesthetic: Classic portrait
+        form_and_line: None
+        color_palette: Warm skin, dark bg
+        lighting_setup: Chiaroscuro triangle
+        material_texture: Painterly light
+        render_quality: Dramatic, classic
+        spatial_distortion: None
+        atmosphere: Serious, art
+        key_features: Triangle on cheek
+    - id: SP02-064
+      name: Neon Noir
+      category: 5. Lighting & Atmosphere
+      negativePrompt: daylight
+      style:
+        aesthetic: Wet city street
+        form_and_line: None
+        color_palette: Cyan/Magenta reflections
+        lighting_setup: Signage glow
+        material_texture: Wet pavement
+        render_quality: Cinematic, cool
+        spatial_distortion: None
+        atmosphere: Urban, lonely
+        key_features: Reflections
+    - id: SP02-065
+      name: God Rays (Volumetric)
+      category: 5. Lighting & Atmosphere
+      negativePrompt: clear air
+      style:
+        aesthetic: Light shafts
+        form_and_line: None
+        color_palette: Dusty White
+        lighting_setup: Beams through dust
+        material_texture: Atmospheric
+        render_quality: Epic, divine
+        spatial_distortion: None
+        atmosphere: Holy, forest
+        key_features: Beams
+    - id: SP02-066
+      name: Silhouette
+      category: 5. Lighting & Atmosphere
+      negativePrompt: detail in shadow
+      style:
+        aesthetic: Backlit subject
+        form_and_line: None
+        color_palette: Black foreground
+        lighting_setup: Strong backlight
+        material_texture: Contrast
+        render_quality: Graphic, bold
+        spatial_distortion: None
+        atmosphere: Mystery, drama
+        key_features: No fill light
+    - id: SP02-067
+      name: Double Exposure
+      category: 5. Lighting & Atmosphere
+      negativePrompt: single image
+      style:
+        aesthetic: Layered images
+        form_and_line: None
+        color_palette: Ghostly mix
+        lighting_setup: Screen blend
+        material_texture: Complex
+        render_quality: Artsy, dream
+        spatial_distortion: Overlap
+        atmosphere: Surreal, memory
+        key_features: Two subjects
+    - id: SP02-068
+      name: Bokeh (Macro)
+      category: 5. Lighting & Atmosphere
+      negativePrompt: deep focus
+      style:
+        aesthetic: Blurry lights
+        form_and_line: None
+        color_palette: Soft blobs
+        lighting_setup: Defocused points
+        material_texture: Creamy blur
+        render_quality: Dreamy, abstract
+        spatial_distortion: Circles
+        atmosphere: Soft, night
+        key_features: Shallow DOF
+    - id: SP02-069
+      name: Split Lighting
+      category: 5. Lighting & Atmosphere
+      negativePrompt: flat light
+      style:
+        aesthetic: Half face shadow
+        form_and_line: None
+        color_palette: High contrast
+        lighting_setup: 90 degree key
+        material_texture: Skin texture
+        render_quality: Dramatic, villain
+        spatial_distortion: None
+        atmosphere: Tense, hidden
+        key_features: Half black
+    - id: SP02-070
+      name: Butterfly Lighting
+      category: 5. Lighting & Atmosphere
+      negativePrompt: harsh shadows
+      style:
+        aesthetic: Glamour portrait
+        form_and_line: None
+        color_palette: Flattering
+        lighting_setup: High front key
+        material_texture: Smooth skin
+        render_quality: Beauty, studio
+        spatial_distortion: None
+        atmosphere: Beautiful, clean
+        key_features: Nose shadow
+    - id: SP02-071
+      name: Day for Night
+      category: 5. Lighting & Atmosphere
+      negativePrompt: real night
+      style:
+        aesthetic: Fake movie night
+        form_and_line: None
+        color_palette: Blue tint
+        lighting_setup: Underexposed sun
+        material_texture: Film
+        render_quality: Cinematic, uncanny
+        spatial_distortion: Bright sky
+        atmosphere: Moonlight, fake
+        key_features: Blue cast
+    - id: SP02-072
+      name: Candlelight
+      category: 5. Lighting & Atmosphere
+      negativePrompt: electric light
+      style:
+        aesthetic: Period drama
+        form_and_line: None
+        color_palette: Warm Orange
+        lighting_setup: Flickering low
+        material_texture: Soft shadows
+        render_quality: Intimate, old
+        spatial_distortion: None
+        atmosphere: Romantic, secret
+        key_features: Bottom up light
+    - id: SP02-073
+      name: Bioluminescence
+      category: 5. Lighting & Atmosphere
+      negativePrompt: sunlight
+      style:
+        aesthetic: Avatar forest
+        form_and_line: None
+        color_palette: Neon Blue/Green
+        lighting_setup: Internal glow
+        material_texture: Organic glow
+        render_quality: Magical, nature
+        spatial_distortion: None
+        atmosphere: Wonder, night
+        key_features: Glowing plants
+    - id: SP02-074
+      name: Strobe Light
+      category: 5. Lighting & Atmosphere
+      negativePrompt: continuous light
+      style:
+        aesthetic: Club/Action freeze
+        form_and_line: None
+        color_palette: High contrast White
+        lighting_setup: Flash freeze
+        material_texture: Sharp motion
+        render_quality: Intense, frozen
+        spatial_distortion: Motion trails
+        atmosphere: Party, panic
+        key_features: Frozen action
+    - id: SP02-075
+      name: Prism Effect
+      category: 5. Lighting & Atmosphere
+      negativePrompt: clean lens
+      style:
+        aesthetic: Fractured image
+        form_and_line: None
+        color_palette: Rainbow edges
+        lighting_setup: Refracted
+        material_texture: Glass distortion
+        render_quality: Artsy, music video
+        spatial_distortion: Kaleidoscope
+        atmosphere: Dreamy, broken
+        key_features: Rainbows
+    - id: SP02-076
+      name: Rim Lighting
+      category: 5. Lighting & Atmosphere
+      negativePrompt: flat
+      style:
+        aesthetic: Edge glow
+        form_and_line: None
+        color_palette: Dark with white edge
+        lighting_setup: Backlight
+        material_texture: Silhouette detail
+        render_quality: Dramatic, separation
+        spatial_distortion: None
+        atmosphere: Heroic, mystery
+        key_features: Halo
+    - id: SP02-077
+      name: Underwater Light
+      category: 5. Lighting & Atmosphere
+      negativePrompt: dry
+      style:
+        aesthetic: Submerged
+        form_and_line: Caustics
+        color_palette: Cyan/Blue
+        lighting_setup: Refracted sun
+        material_texture: Water distortion
+        render_quality: Muted, floating
+        spatial_distortion: Warped
+        atmosphere: Calm, deep
+        key_features: Caustics
+    - id: SP02-078
+      name: Light Painting
+      category: 5. Lighting & Atmosphere
+      negativePrompt: static light
+      style:
+        aesthetic: Long exposure trails
+        form_and_line: Light streaks
+        color_palette: Neon lines
+        lighting_setup: Dark background
+        material_texture: Glowing lines
+        render_quality: Creative, night
+        spatial_distortion: None
+        atmosphere: Magic, art
+        key_features: Trails
+    - id: SP02-079
+      name: Softbox Studio
+      category: 5. Lighting & Atmosphere
+      negativePrompt: harsh shadows
+      style:
+        aesthetic: Product photography
+        form_and_line: None
+        color_palette: Perfect white balance
+        lighting_setup: Large diffuse source
+        material_texture: Smooth gradients
+        render_quality: Professional, clean
+        spatial_distortion: None
+        atmosphere: Commercial, perfect
+        key_features: Soft shadows
+    - id: SP02-080
+      name: Lens Flare (JJ Abrams)
+      category: 5. Lighting & Atmosphere
+      negativePrompt: matte
+      style:
+        aesthetic: Star Trek reboot
+        form_and_line: Horizontal lines
+        color_palette: Blue anamorphic
+        lighting_setup: Blinding
+        material_texture: Glass artifacts
+        render_quality: Sci-fi, action
+        spatial_distortion: Washed out
+        atmosphere: Future, bright
+        key_features: Horizontal flare

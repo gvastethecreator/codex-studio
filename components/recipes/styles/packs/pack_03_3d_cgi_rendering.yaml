@@ -1,0 +1,1124 @@
+- id: pack_03
+  name: 3D & CGI Rendering
+  description: A comprehensive collection of 80+ 3D render styles, engines, and material simulations.
+  presets:
+    - id: SP03-001
+      name: Octane Render
+      category: 1. Render Engines
+      negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
+      style:
+        aesthetic: GPU path traced render
+        form_and_line: Sharp, physically correct
+        color_palette: Vibrant, high contrast
+        lighting_setup: Bloom, spectral dispersion
+        material_texture: Glossy, detailed
+        render_quality: ArtStation trending, 4K
+        spatial_distortion: None
+        atmosphere: Cinematic, slick
+        key_features: Octane signature glow
+    - id: SP03-002
+      name: Unreal Engine 5
+      category: 1. Render Engines
+      negativePrompt: pre-rendered, low poly
+      style:
+        aesthetic: Real-time next-gen game
+        form_and_line: Lumen global illumination
+        color_palette: Realistic, dynamic
+        lighting_setup: Ray traced shadows
+        material_texture: Nanite geometry detail
+        render_quality: AAA Game, screenshot
+        spatial_distortion: None
+        atmosphere: Immersive, interactive
+        key_features: High fidelity
+    - id: SP03-003
+      name: Redshift Render
+      category: 1. Render Engines
+      negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
+      style:
+        aesthetic: Biased GPU render
+        form_and_line: Clean, noise-free
+        color_palette: Production quality
+        lighting_setup: Soft shadows, caustics
+        material_texture: Production assets
+        render_quality: Motion graphics, clean
+        spatial_distortion: None
+        atmosphere: Professional, studio
+        key_features: Fast blur
+    - id: SP03-004
+      name: Arnold Render
+      category: 1. Render Engines
+      negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
+      style:
+        aesthetic: CPU path traced movie VFX
+        form_and_line: Incredibly realistic
+        color_palette: Natural, filmic
+        lighting_setup: Complex bounces
+        material_texture: Micro-displacement
+        render_quality: Hollywood VFX
+        spatial_distortion: None
+        atmosphere: Realistic, grounded
+        key_features: Physical accuracy
+    - id: SP03-005
+      name: Blender Cycles
+      category: 1. Render Engines
+      negativePrompt: eevee, realtime
+      style:
+        aesthetic: Open source path tracing
+        form_and_line: Sharp
+        color_palette: Filmic log encoding
+        lighting_setup: Global Illumination
+        material_texture: Procedural nodes
+        render_quality: Blender Guru, detailed
+        spatial_distortion: None
+        atmosphere: Creative, solid
+        key_features: Principled BSDF
+    - id: SP03-006
+      name: V-Ray
+      category: 1. Render Engines
+      negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
+      style:
+        aesthetic: Architectural visualization
+        form_and_line: Precise
+        color_palette: Warm interior
+        lighting_setup: IES lights, sun
+        material_texture: Photorealistic materials
+        render_quality: ArchViz, catalog
+        spatial_distortion: None
+        atmosphere: Inviting, expensive
+        key_features: Clean lines
+    - id: SP03-007
+      name: KeyShot
+      category: 1. Render Engines
+      negativePrompt: environment, messy
+      style:
+        aesthetic: Product design render
+        form_and_line: Studio setup
+        color_palette: Accurate plastics/metals
+        lighting_setup: HDRI studio
+        material_texture: Mold tech textures
+        render_quality: Industrial design
+        spatial_distortion: None
+        atmosphere: Clean, commercial
+        key_features: Product focus
+    - id: SP03-008
+      name: Pixar RenderMan
+      category: 1. Render Engines
+      negativePrompt: anime, 2d
+      style:
+        aesthetic: High end animation
+        form_and_line: Soft shapes
+        color_palette: Vibrant, cinematic
+        lighting_setup: Artistic control
+        material_texture: Stylized realism
+        render_quality: Disney/Pixar movie
+        spatial_distortion: Squash and stretch
+        atmosphere: Magical, story
+        key_features: Subsurface scattering
+    - id: SP03-009
+      name: ZBrush Sculpt
+      category: 1. Render Engines
+      negativePrompt: textured, low poly
+      style:
+        aesthetic: Digital clay sculpt
+        form_and_line: Matcap shader
+        color_palette: Grey or Red wax
+        lighting_setup: Rim light
+        material_texture: Clay strokes
+        render_quality: High poly model
+        spatial_distortion: Anatomical study
+        atmosphere: Artistic, raw
+        key_features: Matcap material
+    - id: SP03-010
+      name: Unity HDRP
+      category: 1. Render Engines
+      negativePrompt: mobile game
+      style:
+        aesthetic: High definition game engine
+        form_and_line: Sharp
+        color_palette: Post-processed
+        lighting_setup: Volumetric fog
+        material_texture: PBR materials
+        render_quality: Game cinematic
+        spatial_distortion: None
+        atmosphere: Dynamic, interactive
+        key_features: Lens flares
+    - id: SP03-011
+      name: Glass & Crystal
+      category: 2. Materials
+      negativePrompt: opaque, dull
+      style:
+        aesthetic: Transparent refractive object
+        form_and_line: Caustics
+        color_palette: Prismatic dispersion
+        lighting_setup: Refracted light
+        material_texture: Smooth, flawless
+        render_quality: Raytraced
+        spatial_distortion: Refraction
+        atmosphere: Elegant, fragile
+        key_features: Transparency
+    - id: SP03-012
+      name: Liquid Simulation
+      category: 2. Materials
+      negativePrompt: solid, dry
+      style:
+        aesthetic: Splashing water or fluid
+        form_and_line: Droplets
+        color_palette: Clear or colored liquid
+        lighting_setup: Specular highlights
+        material_texture: Wet
+        render_quality: Realflow simulation
+        spatial_distortion: Fluid dynamics
+        atmosphere: Dynamic, wet
+        key_features: Splash shape
+    - id: SP03-013
+      name: Subsurface Scattering (SSS)
+      category: 2. Materials
+      negativePrompt: hard, plastic, metal
+      style:
+        aesthetic: Translucent material (wax, skin, jade)
+        form_and_line: Soft light penetration
+        color_palette: Glowing from inside
+        lighting_setup: Backlit
+        material_texture: Waxy, organic
+        render_quality: Realistic organic
+        spatial_distortion: Soft edges
+        atmosphere: Soft, organic
+        key_features: Inner glow
+    - id: SP03-014
+      name: Chrome & Metal
+      category: 2. Materials
+      negativePrompt: matte, rough
+      style:
+        aesthetic: Highly reflective surface
+        form_and_line: Sharp reflections
+        color_palette: Silver, Gold, Copper
+        lighting_setup: HDRI environment reflection
+        material_texture: Polished
+        render_quality: Automotive finish
+        spatial_distortion: Mirror distortion
+        atmosphere: Sleek, futuristic
+        key_features: Reflection
+    - id: SP03-015
+      name: Claymation (Stop Motion)
+      category: 2. Materials
+      negativePrompt: smooth, digital
+      style:
+        aesthetic: Plasticine model
+        form_and_line: Fingerprints visible
+        color_palette: Matte clay colors
+        lighting_setup: Studio miniature
+        material_texture: Imperfections, dust
+        render_quality: Aardman style
+        spatial_distortion: Handmade look
+        atmosphere: Playful, tactile
+        key_features: Fingerprints
+    - id: SP03-016
+      name: Fur & Hair
+      category: 2. Materials
+      negativePrompt: bald, smooth
+      style:
+        aesthetic: Groomed fur simulation
+        form_and_line: Individual strands
+        color_palette: Soft gradient
+        lighting_setup: Rim light on fuzz
+        material_texture: Fluffy, soft
+        render_quality: XGen simulation
+        spatial_distortion: Wind blown
+        atmosphere: Cozy, creature
+        key_features: Hair strands
+    - id: SP03-017
+      name: Slime & Goo
+      category: 2. Materials
+      negativePrompt: dry, solid
+      style:
+        aesthetic: Viscous sticky fluid
+        form_and_line: Stretching strands
+        color_palette: Neon Green/Pink
+        lighting_setup: Glossy
+        material_texture: Sticky, wet
+        render_quality: Nickelodeon, gross
+        spatial_distortion: Dripping
+        atmosphere: Fun, gross
+        key_features: Drips
+    - id: SP03-018
+      name: Carbon Fiber
+      category: 2. Materials
+      negativePrompt: smooth, paint
+      style:
+        aesthetic: Woven composite material
+        form_and_line: Weave pattern
+        color_palette: Black/Grey anisotropic
+        lighting_setup: Clear coat reflection
+        material_texture: Geometric weave
+        render_quality: High tech, automotive
+        spatial_distortion: None
+        atmosphere: Fast, strong
+        key_features: Weave pattern
+    - id: SP03-019
+      name: Hologram
+      category: 2. Materials
+      negativePrompt: solid, opaque
+      style:
+        aesthetic: Projected light construct
+        form_and_line: Scanlines, interference
+        color_palette: Cyan, Blue transparent
+        lighting_setup: Emissive
+        material_texture: Digital noise
+        render_quality: Sci-fi interface
+        spatial_distortion: Flickering
+        atmosphere: Futuristic, tech
+        key_features: Transparency
+    - id: SP03-020
+      name: Porcelain
+      category: 2. Materials
+      negativePrompt: plastic, metal
+      style:
+        aesthetic: Ceramic figure
+        form_and_line: Smooth curves
+        color_palette: White, painted details
+        lighting_setup: Soft gloss
+        material_texture: Smooth, fragile
+        render_quality: Doll, fine china
+        spatial_distortion: None
+        atmosphere: Delicate, creepy
+        key_features: Glaze
+    - id: SP03-021
+      name: Low Poly
+      category: 3. 3D Styles
+      negativePrompt: high poly, smooth, detailed
+      style:
+        aesthetic: Minimalist mesh
+        form_and_line: Visible triangles
+        color_palette: Flat shading
+        lighting_setup: Baked AO
+        material_texture: None or gradient
+        render_quality: Indie game, retro
+        spatial_distortion: Geometric
+        atmosphere: Simple, clean
+        key_features: Facets
+    - id: SP03-022
+      name: Voxel Art
+      category: 3. 3D Styles
+      negativePrompt: curves, smooth
+      style:
+        aesthetic: Made of cubes
+        form_and_line: Grid aligned
+        color_palette: Vibrant
+        lighting_setup: Global illumination
+        material_texture: None
+        render_quality: Minecraft, MagicaVoxel
+        spatial_distortion: Blocky
+        atmosphere: Cute, digital
+        key_features: Cubes
+    - id: SP03-023
+      name: Isometric 3D
+      category: 3. 3D Styles
+      negativePrompt: perspective, distortion
+      style:
+        aesthetic: Orthographic projection
+        form_and_line: Parallel lines
+        color_palette: Pastel, clean
+        lighting_setup: Soft studio
+        material_texture: Smooth
+        render_quality: Mobile game, icon
+        spatial_distortion: No vanishing point
+        atmosphere: Organized, tiny
+        key_features: 30 degree angle
+    - id: SP03-024
+      name: Wireframe Render
+      category: 3. 3D Styles
+      negativePrompt: solid, textured
+      style:
+        aesthetic: Mesh topology view
+        form_and_line: Glowing lines
+        color_palette: Black background, Neon lines
+        lighting_setup: None
+        material_texture: Grid
+        render_quality: Technical, blueprint
+        spatial_distortion: None
+        atmosphere: Technical, cyber
+        key_features: Topology
+    - id: SP03-025
+      name: Kitbash
+      category: 3. 3D Styles
+      negativePrompt: organic, smooth
+      style:
+        aesthetic: Complex mechanical detail
+        form_and_line: Greebles
+        color_palette: Grey, metal
+        lighting_setup: AO dirt
+        material_texture: Mechanical parts
+        render_quality: Concept art, detailed
+        spatial_distortion: None
+        atmosphere: Industrial, complex
+        key_features: Dense detail
+    - id: SP03-026
+      name: Knolling (Flat Lay)
+      category: 3. 3D Styles
+      negativePrompt: messy, piled
+      style:
+        aesthetic: Disassembled parts arranged
+        form_and_line: 90 degree angles
+        color_palette: Clean background
+        lighting_setup: Top down
+        material_texture: Clean parts
+        render_quality: Organization porn
+        spatial_distortion: None
+        atmosphere: Satisfying, organized
+        key_features: Grid layout
+    - id: SP03-027
+      name: Metaballs
+      category: 3. 3D Styles
+      negativePrompt: sharp, geometric
+      style:
+        aesthetic: Organic blobs merging
+        form_and_line: Smooth curves
+        color_palette: Gradient, glossy
+        lighting_setup: Studio
+        material_texture: Smooth plastic
+        render_quality: Abstract, motion graphics
+        spatial_distortion: Blobby
+        atmosphere: Fluid, abstract
+        key_features: Merging shapes
+    - id: SP03-028
+      name: Nurbs Surface
+      category: 3. 3D Styles
+      negativePrompt: polygons, sharp
+      style:
+        aesthetic: Mathematically perfect curves
+        form_and_line: Flow lines
+        color_palette: Zebra stripe reflection
+        lighting_setup: Studio check
+        material_texture: Glossy
+        render_quality: CAD, automotive
+        spatial_distortion: None
+        atmosphere: Perfect, engineered
+        key_features: Smoothness
+    - id: SP03-029
+      name: Fractal 3D
+      category: 3. 3D Styles
+      negativePrompt: simple, clean
+      style:
+        aesthetic: Mandelbulb complexity
+        form_and_line: Infinite detail
+        color_palette: Psychedelic
+        lighting_setup: Deep shadows
+        material_texture: Mathematical patterns
+        render_quality: Math art, infinite
+        spatial_distortion: Recursive
+        atmosphere: Trippy, alien
+        key_features: Self-similarity
+    - id: SP03-030
+      name: Glitch 3D
+      category: 3. 3D Styles
+      negativePrompt: clean, perfect
+      style:
+        aesthetic: Broken geometry
+        form_and_line: Vertex explosion
+        color_palette: Texture stretching
+        lighting_setup: Broken
+        material_texture: Corrupted UVs
+        render_quality: Data moshing
+        spatial_distortion: Spikes, holes
+        atmosphere: Chaotic, broken
+        key_features: Artifacts
+    - id: SP03-031
+      name: Global Illumination
+      category: 4. Lighting & Atmosphere
+      negativePrompt: direct flash, harsh shadows
+      style:
+        aesthetic: Soft bounced light
+        form_and_line: Color bleeding
+        color_palette: Natural gradients
+        lighting_setup: Ambient occlusion
+        material_texture: Soft
+        render_quality: Realistic, architectural
+        spatial_distortion: None
+        atmosphere: Calm, realistic
+        key_features: Soft shadows
+    - id: SP03-032
+      name: Volumetric Fog
+      category: 4. Lighting & Atmosphere
+      negativePrompt: clear, vacuum
+      style:
+        aesthetic: Light beams in air
+        form_and_line: God rays
+        color_palette: Hazy
+        lighting_setup: Scattered light
+        material_texture: Fog density
+        render_quality: Cinematic, atmospheric
+        spatial_distortion: Depth fade
+        atmosphere: Mysterious, epic
+        key_features: Light shafts
+    - id: SP03-033
+      name: Neon City (Cyberpunk)
+      category: 4. Lighting & Atmosphere
+      negativePrompt: daylight, sun
+      style:
+        aesthetic: Night city rain
+        form_and_line: Reflections
+        color_palette: Pink, Cyan, Purple
+        lighting_setup: Emissive signs
+        material_texture: Wet asphalt
+        render_quality: Blade Runner style
+        spatial_distortion: None
+        atmosphere: Dystopian, cool
+        key_features: Neon glow
+    - id: SP03-034
+      name: Studio Lighting (3 Point)
+      category: 4. Lighting & Atmosphere
+      negativePrompt: flat, outdoor
+      style:
+        aesthetic: Perfect product/portrait
+        form_and_line: Key, Fill, Rim
+        color_palette: Balanced
+        lighting_setup: Controlled
+        material_texture: Clean
+        render_quality: Commercial, professional
+        spatial_distortion: None
+        atmosphere: Professional
+        key_features: Rim light
+    - id: SP03-035
+      name: HDRI Environment
+      category: 4. Lighting & Atmosphere
+      negativePrompt: studio background
+      style:
+        aesthetic: Object in real location
+        form_and_line: Realistic reflections
+        color_palette: Natural
+        lighting_setup: Image based lighting
+        material_texture: Real world reflection
+        render_quality: Photorealistic integration
+        spatial_distortion: None
+        atmosphere: Grounded
+        key_features: Matched lighting
+    - id: SP03-036
+      name: Caustics
+      category: 4. Lighting & Atmosphere
+      negativePrompt: diffuse, matte
+      style:
+        aesthetic: Light focusing through glass/water
+        form_and_line: Bright patterns
+        color_palette: Prismatic
+        lighting_setup: Focused intensity
+        material_texture: Light patterns
+        render_quality: Physically correct
+        spatial_distortion: None
+        atmosphere: Ethereal, complex
+        key_features: Light dancing
+    - id: SP03-037
+      name: Ambient Occlusion Pass
+      category: 4. Lighting & Atmosphere
+      negativePrompt: color, light
+      style:
+        aesthetic: Contact shadows only
+        form_and_line: Soft gradients in corners
+        color_palette: White and Grey
+        lighting_setup: Occlusion
+        material_texture: Clay
+        render_quality: Technical, form study
+        spatial_distortion: None
+        atmosphere: Neutral, shape focus
+        key_features: Corner shadows
+    - id: SP03-038
+      name: Rim Lighting
+      category: 4. Lighting & Atmosphere
+      negativePrompt: front light, flat
+      style:
+        aesthetic: Silhouette with edge glow
+        form_and_line: Glowing outline
+        color_palette: Dark subject, bright edge
+        lighting_setup: Backlight
+        material_texture: Contrast
+        render_quality: Dramatic, moody
+        spatial_distortion: None
+        atmosphere: Mysterious, epic
+        key_features: Edge highlight
+    - id: SP03-039
+      name: Bioluminescent Forest
+      category: 4. Lighting & Atmosphere
+      negativePrompt: day, sun
+      style:
+        aesthetic: Avatar Pandora style
+        form_and_line: Glowing plants
+        color_palette: Blue, Purple night
+        lighting_setup: Plant glow
+        material_texture: Organic, alien
+        render_quality: Fantasy, magical
+        spatial_distortion: None
+        atmosphere: Wonder, magic
+        key_features: Glow in dark
+    - id: SP03-040
+      name: Toon Shader (Cel Shaded)
+      category: 4. Lighting & Atmosphere
+      negativePrompt: realistic, gradient
+      style:
+        aesthetic: Anime style 3D
+        form_and_line: Black outlines
+        color_palette: Flat bands of color
+        lighting_setup: Hard shadow edge
+        material_texture: Flat
+        render_quality: Guilty Gear, Zelda
+        spatial_distortion: None
+        atmosphere: Illustrated, fun
+        key_features: Banded shading
+    - id: SP03-041
+      name: God Rays (Volumetric)
+      category: 4. Lighting & Atmosphere
+      negativePrompt: clear, sharp
+      style:
+        aesthetic: Sunbeams through window/trees
+        form_and_line: Shafts of light
+        color_palette: Warm or Cool beams
+        lighting_setup: Directional
+        material_texture: Dust motes
+        render_quality: Epic, spiritual
+        spatial_distortion: None
+        atmosphere: Hopeful, grand
+        key_features: Light beams
+    - id: SP03-042
+      name: Diorama Lighting
+      category: 4. Lighting & Atmosphere
+      negativePrompt: flat, realistic scale
+      style:
+        aesthetic: Miniature world
+        form_and_line: Tilt-shift blur
+        color_palette: Saturated, cozy
+        lighting_setup: Warm, close
+        material_texture: Handmade feel
+        render_quality: Cute, small
+        spatial_distortion: Depth of field
+        atmosphere: Playful, tiny
+        key_features: Miniature
+    - id: SP03-043
+      name: X-Ray Shader
+      category: 4. Lighting & Atmosphere
+      negativePrompt: opaque, skin
+      style:
+        aesthetic: See-through object
+        form_and_line: Internal structure
+        color_palette: Blue/White inverted
+        lighting_setup: Internal glow
+        material_texture: Bone, metal
+        render_quality: Medical, sci-fi
+        spatial_distortion: Transparency
+        atmosphere: Analytical, cold
+        key_features: Internal view
+    - id: SP03-044
+      name: Thermal Vision
+      category: 4. Lighting & Atmosphere
+      negativePrompt: realistic color
+      style:
+        aesthetic: Heat map 3D
+        form_and_line: Heat gradients
+        color_palette: Rainbow (Blue cold, Red hot)
+        lighting_setup: Emissive temperature
+        material_texture: None
+        render_quality: Predator vision
+        spatial_distortion: None
+        atmosphere: Tactical, alien
+        key_features: Heat map
+    - id: SP03-045
+      name: Wireframe on Shaded
+      category: 4. Lighting & Atmosphere
+      negativePrompt: clean render
+      style:
+        aesthetic: Model with visible topology
+        form_and_line: White wires over grey model
+        color_palette: Grey and White
+        lighting_setup: Studio
+        material_texture: Grid overlay
+        render_quality: Making-of, technical
+        spatial_distortion: None
+        atmosphere: Educational, process
+        key_features: Wire overlay
+    - id: SP03-046
+      name: Game Asset (PBR)
+      category: 5. Applications
+      negativePrompt: high poly, unoptimized
+      style:
+        aesthetic: Optimized prop
+        form_and_line: Normal map details
+        color_palette: Albedo map
+        lighting_setup: Marmoset viewer
+        material_texture: Roughness/Metalness
+        render_quality: Game ready
+        spatial_distortion: None
+        atmosphere: Functional, clean
+        key_features: Asset turntable
+    - id: SP03-047
+      name: Architectural Visualization
+      category: 5. Applications
+      negativePrompt: messy, lived in
+      style:
+        aesthetic: Modern house render
+        form_and_line: Straight verticals
+        color_palette: Beige, White, Wood
+        lighting_setup: Sunlight
+        material_texture: Realistic materials
+        render_quality: Real estate brochure
+        spatial_distortion: None
+        atmosphere: Aspirational, clean
+        key_features: Perfect furniture
+    - id: SP03-048
+      name: Product Render
+      category: 5. Applications
+      negativePrompt: dust, scratches
+      style:
+        aesthetic: Consumer electronics
+        form_and_line: Sleek curves
+        color_palette: Brand colors
+        lighting_setup: Studio reflection
+        material_texture: Matte plastic, aluminum
+        render_quality: Apple website
+        spatial_distortion: None
+        atmosphere: Desirable, expensive
+        key_features: White background
+    - id: SP03-049
+      name: Character Design (T-Pose)
+      category: 5. Applications
+      negativePrompt: action pose, background
+      style:
+        aesthetic: Character model sheet
+        form_and_line: Anatomical
+        color_palette: Neutral light
+        lighting_setup: Flat
+        material_texture: Skin, cloth
+        render_quality: Concept art, production
+        spatial_distortion: Symmetrical pose
+        atmosphere: Neutral, design
+        key_features: T-Pose or A-Pose
+    - id: SP03-050
+      name: Motion Graphics
+      category: 5. Applications
+      negativePrompt: static, boring
+      style:
+        aesthetic: Abstract shapes moving
+        form_and_line: Trails
+        color_palette: Vibrant, gradient
+        lighting_setup: Studio
+        material_texture: Glossy
+        render_quality: Cinema 4D, mograph
+        spatial_distortion: Squash/Stretch
+        atmosphere: Energetic, corporate
+        key_features: Abstract shapes
+    - id: SP03-051
+      name: Medical Illustration 3D
+      category: 5. Applications
+      negativePrompt: gross, blood
+      style:
+        aesthetic: Clean anatomy render
+        form_and_line: Cutaway view
+        color_palette: Red, Blue, White
+        lighting_setup: Soft, clear
+        material_texture: Translucent tissue
+        render_quality: Textbook, educational
+        spatial_distortion: Cross section
+        atmosphere: Scientific, clean
+        key_features: Label space
+    - id: SP03-052
+      name: Automotive Render
+      category: 5. Applications
+      negativePrompt: dirty, dented
+      style:
+        aesthetic: Car commercial CGI
+        form_and_line: Aerodynamic lines
+        color_palette: Metallic paint
+        lighting_setup: Studio sweep
+        material_texture: Car paint, rubber
+        render_quality: High end, pristine
+        spatial_distortion: None
+        atmosphere: Fast, luxury
+        key_features: Reflection lines
+    - id: SP03-053
+      name: Jewelry Render
+      category: 5. Applications
+      negativePrompt: dull, plastic
+      style:
+        aesthetic: Diamond ring macro
+        form_and_line: Facets
+        color_palette: Sparkle, Gold, Silver
+        lighting_setup: Caustics, dispersion
+        material_texture: Metal polish
+        render_quality: Luxury, expensive
+        spatial_distortion: None
+        atmosphere: Elegant, rich
+        key_features: Sparkle
+    - id: SP03-054
+      name: Food CGI
+      category: 5. Applications
+      negativePrompt: rotten, dry
+      style:
+        aesthetic: Perfect burger ad
+        form_and_line: Juicy details
+        color_palette: Saturated, fresh
+        lighting_setup: Backlit steam
+        material_texture: Wet, condensation
+        render_quality: McDonalds ad, appetizing
+        spatial_distortion: Flying ingredients
+        atmosphere: Delicious, hyperreal
+        key_features: Water droplets
+    - id: SP03-055
+      name: Virtual Reality Environment
+      category: 5. Applications
+      negativePrompt: 2d, flat
+      style:
+        aesthetic: Immersive world
+        form_and_line: 360 degree feel
+        color_palette: Vibrant
+        lighting_setup: Baked
+        material_texture: Optimized
+        render_quality: Oculus, immersive
+        spatial_distortion: Wide FOV
+        atmosphere: Presence, digital
+        key_features: Player scale
+    - id: SP03-056
+      name: Scientific Visualization
+      category: 5. Applications
+      negativePrompt: fantasy, magic
+      style:
+        aesthetic: Molecule or galaxy
+        form_and_line: Data driven
+        color_palette: False color data
+        lighting_setup: Self illuminated
+        material_texture: Particle cloud
+        render_quality: NASA, accurate
+        spatial_distortion: None
+        atmosphere: Smart, complex
+        key_features: Data points
+    - id: SP03-057
+      name: NFT Art Style
+      category: 5. Applications
+      negativePrompt: traditional art
+      style:
+        aesthetic: 3D character portrait
+        form_and_line: Clean
+        color_palette: Neon, Gold, Rare traits
+        lighting_setup: Studio
+        material_texture: Plastic, Metal
+        render_quality: Bored Ape 3D, collectible
+        spatial_distortion: None
+        atmosphere: Hype, digital
+        key_features: Profile view
+    - id: SP03-058
+      name: 3D Typography
+      category: 5. Applications
+      negativePrompt: flat text
+      style:
+        aesthetic: Letters made of objects
+        form_and_line: Bold font
+        color_palette: Vibrant
+        lighting_setup: Studio
+        material_texture: Material letters
+        render_quality: Adobe, design
+        spatial_distortion: Inflated text
+        atmosphere: Bold, message
+        key_features: Readable
+    - id: SP03-059
+      name: Digital Fashion
+      category: 5. Applications
+      negativePrompt: stiff cloth
+      style:
+        aesthetic: Virtual clothing
+        form_and_line: Cloth simulation
+        color_palette: Iridescent, impossible fabric
+        lighting_setup: Runway
+        material_texture: Digital fabric
+        render_quality: Clo3D, Marvelous Designer
+        spatial_distortion: Floating cloth
+        atmosphere: Futuristic, fashion
+        key_features: Drape
+    - id: SP03-060
+      name: Environment Design
+      category: 5. Applications
+      negativePrompt: empty, boring
+      style:
+        aesthetic: Game level art
+        form_and_line: Compositional path
+        color_palette: Atmospheric perspective
+        lighting_setup: Baked global illumination
+        material_texture: Tileable textures
+        render_quality: Level art, immersive
+        spatial_distortion: None
+        atmosphere: Adventure, place
+        key_features: Walkable path
+    - id: SP03-061
+      name: Hard Surface Modeling
+      category: 5. Applications
+      negativePrompt: organic, soft
+      style:
+        aesthetic: Robot or gun
+        form_and_line: Bevels, panel lines
+        color_palette: Gunmetal, painted metal
+        lighting_setup: Rim light
+        material_texture: Scratched metal
+        render_quality: Mech design, precise
+        spatial_distortion: None
+        atmosphere: Industrial, military
+        key_features: Functional parts
+    - id: SP03-062
+      name: Organic Modeling
+      category: 5. Applications
+      negativePrompt: hard edge, robot
+      style:
+        aesthetic: Creature or plant
+        form_and_line: Flowing topology
+        color_palette: Skin tones, green
+        lighting_setup: Subsurface scattering
+        material_texture: Skin, bark
+        render_quality: ZBrush, natural
+        spatial_distortion: None
+        atmosphere: Alive, natural
+        key_features: Muscle/Growth flow
+    - id: SP03-063
+      name: 3D Map
+      category: 5. Applications
+      negativePrompt: 2d map, paper
+      style:
+        aesthetic: Isometric terrain map
+        form_and_line: Topography
+        color_palette: Map colors
+        lighting_setup: Sunlight
+        material_texture: Low poly terrain
+        render_quality: Game map, cute
+        spatial_distortion: Exaggerated height
+        atmosphere: Informative, toy
+        key_features: Grid
+    - id: SP03-064
+      name: Exploded View
+      category: 5. Applications
+      negativePrompt: assembled, solid
+      style:
+        aesthetic: Parts floating apart
+        form_and_line: Assembly lines
+        color_palette: Technical
+        lighting_setup: Flat
+        material_texture: Internal parts
+        render_quality: Engineering, diagram
+        spatial_distortion: Expanded
+        atmosphere: Technical, complex
+        key_features: Alignment
+    - id: SP03-065
+      name: 3D Icon
+      category: 5. Applications
+      negativePrompt: flat, 2d icon
+      style:
+        aesthetic: App icon render
+        form_and_line: Rounded corners
+        color_palette: Vibrant, gradient
+        lighting_setup: Soft studio
+        material_texture: Smooth plastic/glass
+        render_quality: macOS Big Sur, modern
+        spatial_distortion: Squircle
+        atmosphere: Friendly, UI
+        key_features: Front facing
+    - id: SP03-066
+      name: Abstract Background
+      category: 5. Applications
+      negativePrompt: subject, object
+      style:
+        aesthetic: Wallpaper art
+        form_and_line: Flowing shapes
+        color_palette: Pleasing gradients
+        lighting_setup: Soft
+        material_texture: Smooth
+        render_quality: Desktop wallpaper, clean
+        spatial_distortion: Waves
+        atmosphere: Calm, digital
+        key_features: No focal point
+    - id: SP03-067
+      name: Cybernetic Implant
+      category: 5. Applications
+      negativePrompt: flesh only
+      style:
+        aesthetic: Tech merged with body
+        form_and_line: Integration lines
+        color_palette: Chrome, LED
+        lighting_setup: Sci-fi
+        material_texture: Metal/Skin transition
+        render_quality: Deus Ex, transhuman
+        spatial_distortion: Prosthetic
+        atmosphere: Futuristic, body horror
+        key_features: Seamless blend
+    - id: SP03-068
+      name: 3D Scan (Photogrammetry)
+      category: 5. Applications
+      negativePrompt: perfect, modeled
+      style:
+        aesthetic: Scanned real object
+        form_and_line: Realistic geometry
+        color_palette: Photo texture
+        lighting_setup: Baked lighting (delit)
+        material_texture: Real world noise
+        render_quality: Quixel Megascans
+        spatial_distortion: Mesh errors (optional)
+        atmosphere: Real, grounded
+        key_features: Photo realism
+    - id: SP03-069
+      name: VFX Simulation (Fire/Smoke)
+      category: 5. Applications
+      negativePrompt: solid, cartoon fire
+      style:
+        aesthetic: Explosion or fire
+        form_and_line: Turbulence
+        color_palette: Orange, Black smoke
+        lighting_setup: Self illuminated
+        material_texture: Volume
+        render_quality: Houdini simulation
+        spatial_distortion: Expanding
+        atmosphere: Dangerous, dynamic
+        key_features: Physics
+    - id: SP03-070
+      name: Retro CGI (90s)
+      category: 5. Applications
+      negativePrompt: modern, ambient occlusion
+      style:
+        aesthetic: Reboot/Toy Story 1 era
+        form_and_line: Simple geometry
+        color_palette: Primary colors
+        lighting_setup: Phong shading
+        material_texture: Checkerboard
+        render_quality: Vintage CGI, uncanny
+        spatial_distortion: Stiff animation
+        atmosphere: Nostalgic, weird
+        key_features: No shadows
+    - id: SP03-071
+      name: Glassmorphism UI
+      category: 5. Applications
+      negativePrompt: opaque, flat
+      style:
+        aesthetic: Frosted glass interface
+        form_and_line: White borders
+        color_palette: Blurry background colors
+        lighting_setup: Soft
+        material_texture: Noise blur
+        render_quality: Modern UI design
+        spatial_distortion: Blur behind
+        atmosphere: Clean, modern
+        key_features: Floating cards
+    - id: SP03-072
+      name: Clay UI
+      category: 5. Applications
+      negativePrompt: sharp, flat
+      style:
+        aesthetic: Soft 3D interface
+        form_and_line: Rounded
+        color_palette: Pastel, matte
+        lighting_setup: Soft shadows
+        material_texture: Smooth clay
+        render_quality: Friendly, app design
+        spatial_distortion: Pill shapes
+        atmosphere: Friendly, soft
+        key_features: Floating elements
+    - id: SP03-073
+      name: Papercraft 3D
+      category: 5. Applications
+      negativePrompt: realistic, fluid
+      style:
+        aesthetic: Virtual paper
+        form_and_line: Fold lines
+        color_palette: Paper texture
+        lighting_setup: Shadows between layers
+        material_texture: Paper grain
+        render_quality: Craft, handmade feel
+        spatial_distortion: Folded
+        atmosphere: Creative, delicate
+        key_features: Layered depth
+    - id: SP03-074
+      name: Neon Sign 3D
+      category: 5. Applications
+      negativePrompt: flat, print
+      style:
+        aesthetic: Glowing glass tubes
+        form_and_line: Tube shape
+        color_palette: Neon Red/Blue
+        lighting_setup: Glow, wall reflection
+        material_texture: Glass, metal supports
+        render_quality: Nightlife, sign
+        spatial_distortion: None
+        atmosphere: Urban, cool
+        key_features: Tube connections
+    - id: SP03-075
+      name: Ice Sculpture
+      category: 5. Applications
+      negativePrompt: warm, melted
+      style:
+        aesthetic: Carved ice
+        form_and_line: Chiseled edges
+        color_palette: Clear, Blue tint
+        lighting_setup: Refractive
+        material_texture: Smooth, frosty
+        render_quality: Event, art
+        spatial_distortion: Melting (slight)
+        atmosphere: Cold, temporary
+        key_features: Transparency
+    - id: SP03-076
+      name: Balloon Art (Inflatable)
+      category: 5. Applications
+      negativePrompt: hard, heavy
+      style:
+        aesthetic: Mylar balloons
+        form_and_line: Seams, wrinkles
+        color_palette: Metallic foil
+        lighting_setup: High reflection
+        material_texture: Wrinkled foil
+        render_quality: Party, Jeff Koons
+        spatial_distortion: Inflated
+        atmosphere: Fun, pop art
+        key_features: Seams
+    - id: SP03-077
+      name: Lego 3D
+      category: 5. Applications
+      negativePrompt: smooth, melted
+      style:
+        aesthetic: Built of bricks
+        form_and_line: Studs
+        color_palette: Plastic primary colors
+        lighting_setup: Plastic gloss
+        material_texture: Plastic, fingerprints
+        render_quality: Lego Movie style
+        spatial_distortion: Brick steps
+        atmosphere: Playful, constructive
+        key_features: Studs on top
+    - id: SP03-078
+      name: Origami 3D
+      category: 5. Applications
+      negativePrompt: curved, smooth
+      style:
+        aesthetic: Folded paper model
+        form_and_line: Sharp creases
+        color_palette: Paper
+        lighting_setup: Soft
+        material_texture: Paper grain
+        render_quality: Geometric, craft
+        spatial_distortion: Angular
+        atmosphere: Delicate, precise
+        key_features: No cuts
+    - id: SP03-079
+      name: Bronze Statue
+      category: 5. Applications
+      negativePrompt: flesh, color
+      style:
+        aesthetic: Cast metal figure
+        form_and_line: Sculpted details
+        color_palette: Bronze, Patina (Green)
+        lighting_setup: Specular highlights
+        material_texture: Metal, weathering
+        render_quality: Monument, classic
+        spatial_distortion: Rigid
+        atmosphere: Timeless, heavy
+        key_features: Patina in crevices
+    - id: SP03-080
+      name: Marble Statue
+      category: 5. Applications
+      negativePrompt: flesh, warm
+      style:
+        aesthetic: Carved stone
+        form_and_line: Chisel marks (optional)
+        color_palette: White, Grey veins
+        lighting_setup: Subsurface scattering (slight)
+        material_texture: Stone polish
+        render_quality: Classical art, museum
+        spatial_distortion: Rigid
+        atmosphere: Classic, pure
+        key_features: Stone texture

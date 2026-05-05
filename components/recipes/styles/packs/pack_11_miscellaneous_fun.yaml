@@ -1,0 +1,1124 @@
+- id: pack_11
+  name: Miscellaneous & Fun
+  description: Playful, toy-like, and niche aesthetic styles.
+  presets:
+    - id: SP11-001
+      name: Lego Brick
+      category: 1. Toys & Crafts
+      negativePrompt: melted, smooth, organic
+      style:
+        aesthetic: Scene built entirely of LEGO bricks
+        form_and_line: Brick seams, studs
+        color_palette: Standard LEGO palette (Red, Blue, Yellow)
+        lighting_setup: Glossy plastic reflection
+        material_texture: ABS plastic, studs
+        render_quality: The LEGO Movie, stop motion
+        spatial_distortion: Blocky, minifigure proportions
+        atmosphere: Playful, creative, childhood
+        key_features: Studs on top surfaces
+    - id: SP11-002
+      name: Funko Pop
+      category: 1. Toys & Crafts
+      negativePrompt: realistic proportions, small head
+      style:
+        aesthetic: Vinyl collectible figure
+        form_and_line: Smooth, rounded
+        color_palette: Matte vinyl paint
+        lighting_setup: Studio box lighting
+        material_texture: Vinyl plastic
+        render_quality: Collectible, cute, merchandise
+        spatial_distortion: Giant square head, black button eyes
+        atmosphere: Cute, static, display
+        key_features: Box packaging (optional)
+    - id: SP11-003
+      name: Play-Doh Clay
+      category: 1. Toys & Crafts
+      negativePrompt: shiny, wet, hard
+      style:
+        aesthetic: Hand-sculpted modeling clay
+        form_and_line: Soft, squished edges
+        color_palette: Bright, mixed colors
+        lighting_setup: Soft studio light
+        material_texture: Salty dough, fingerprints, cracks
+        render_quality: Preschool art, fun, soft
+        spatial_distortion: Blobby shapes
+        atmosphere: Childish, creative, messy
+        key_features: Cracks in dry clay
+    - id: SP11-004
+      name: Papercraft Low Poly
+      category: 1. Toys & Crafts
+      negativePrompt: curved, smooth, realistic
+      style:
+        aesthetic: Folded cardstock model
+        form_and_line: Sharp paper folds
+        color_palette: Flat paper colors
+        lighting_setup: Soft shadows
+        material_texture: Paper grain, glue tabs
+        render_quality: Pepakura, craft, geometric
+        spatial_distortion: Faceted geometry
+        atmosphere: Delicate, handmade, clean
+        key_features: Visible fold lines
+    - id: SP11-005
+      name: Amigurumi Crochet
+      category: 1. Toys & Crafts
+      negativePrompt: smooth, plastic, hard
+      style:
+        aesthetic: Crocheted yarn doll
+        form_and_line: Spiral stitch pattern
+        color_palette: Soft yarn colors
+        lighting_setup: Soft, fuzzy
+        material_texture: Yarn fibers, stuffing
+        render_quality: Handmade, cute, soft
+        spatial_distortion: Round, chibi proportions
+        atmosphere: Cozy, sweet, tactile
+        key_features: Stitch texture
+    - id: SP11-006
+      name: Chalkboard Art
+      category: 2. Artistic Mediums
+      negativePrompt: paper, ink, digital
+      style:
+        aesthetic: Drawing on black slate board
+        form_and_line: Chalk dust, variable thickness
+        color_palette: White chalk on Black board
+        lighting_setup: Flat
+        material_texture: Slate grain, eraser smudges, dust
+        render_quality: Cafe menu, school, rustic
+        spatial_distortion: Hand-drawn imperfections
+        atmosphere: Casual, temporary, rustic
+        key_features: Dusty background
+    - id: SP11-007
+      name: Tattoo Flash (Old School)
+      category: 2. Artistic Mediums
+      negativePrompt: realistic, photo, 3d
+      style:
+        aesthetic: Traditional American tattoo design
+        form_and_line: Bold black outlines
+        color_palette: Red, Green, Yellow, Black shading
+        lighting_setup: Paper stain (coffee)
+        material_texture: Watercolor paper, skin
+        render_quality: Sailor Jerry, bold, classic
+        spatial_distortion: 2D flat design
+        atmosphere: Tough, classic, bold
+        key_features: Pepper shading (dots)
+    - id: SP11-008
+      name: Stained Glass
+      category: 2. Artistic Mediums
+      negativePrompt: opaque, dull, painting
+      style:
+        aesthetic: Church window art
+        form_and_line: Thick black lead came
+        color_palette: Vibrant translucent glass
+        lighting_setup: Backlit, glowing
+        material_texture: Glass imperfections, bubbles
+        render_quality: Religious, ornate, colorful
+        spatial_distortion: Mosaic segmentation
+        atmosphere: Spiritual, beautiful, light
+        key_features: Black outlines mandatory
+    - id: SP11-009
+      name: Emoji 3D
+      category: 2. Artistic Mediums
+      negativePrompt: flat, 2d, sketch
+      style:
+        aesthetic: Glossy 3D icon
+        form_and_line: Round, smooth
+        color_palette: Bright Yellow, Blue, Red
+        lighting_setup: Studio softbox, rim light
+        material_texture: Shiny plastic or glass
+        render_quality: Apple emoji, UI design
+        spatial_distortion: Sphere based
+        atmosphere: Happy, expressive, digital
+        key_features: Glossy reflection
+    - id: SP11-010
+      name: 8-Bit Pixel Art
+      category: 2. Artistic Mediums
+      negativePrompt: hd, vector, smooth
+      style:
+        aesthetic: NES game sprite
+        form_and_line: Pixel grid
+        color_palette: Limited 56 color palette
+        lighting_setup: None
+        material_texture: Large pixels
+        render_quality: Retro gaming, arcade
+        spatial_distortion: Low resolution abstraction
+        atmosphere: Nostalgic, fun, digital
+        key_features: Pixel grid alignment
+    - id: SP11-011
+      name: Synthwave 80s
+      category: 3. Aesthetics
+      negativePrompt: nature, green, day
+      style:
+        aesthetic: Retro-futurist 80s grid
+        form_and_line: Laser grid, wireframe mountains
+        color_palette: Magenta, Cyan, Purple, Black
+        lighting_setup: Neon sun, glow
+        material_texture: VHS grain, scanlines
+        render_quality: Outrun, retro, cool
+        spatial_distortion: Chrome reflection
+        atmosphere: Nostalgic, fast, digital
+        key_features: Sunset gradient
+    - id: SP11-012
+      name: Solarpunk
+      category: 3. Aesthetics
+      negativePrompt: dark, industrial, pollution
+      style:
+        aesthetic: Eco-futurist utopia
+        form_and_line: Art Nouveau curves + tech
+        color_palette: Lush Green, Gold, White, Blue
+        lighting_setup: Bright sunlight, lens flare
+        material_texture: Leaves, glass, solar panels
+        render_quality: Optimistic, clean, nature
+        spatial_distortion: Plants growing on buildings
+        atmosphere: Hopeful, bright, sustainable
+        key_features: Nature integration
+    - id: SP11-013
+      name: Dieselpunk
+      category: 3. Aesthetics
+      negativePrompt: clean, digital, plastic
+      style:
+        aesthetic: 1940s retro-future war
+        form_and_line: Rivets, heavy metal plates
+        color_palette: Oil, Grease, Steel, Rust
+        lighting_setup: Sooty, dark, industrial
+        material_texture: Grime, smoke, metal
+        render_quality: War, heavy, mechanical
+        spatial_distortion: Bulky machinery
+        atmosphere: Dirty, loud, powerful
+        key_features: Exhaust smoke
+    - id: SP11-014
+      name: Cottagecore
+      category: 3. Aesthetics
+      negativePrompt: city, modern, cold
+      style:
+        aesthetic: Rural romantic life
+        form_and_line: Soft, flowery
+        color_palette: Pastel, earth tones, floral
+        lighting_setup: Golden hour, soft
+        material_texture: Linen, flowers, wood
+        render_quality: Pinterest, cozy, traditional
+        spatial_distortion: None
+        atmosphere: Peaceful, slow, romantic
+        key_features: Flowers everywhere
+    - id: SP11-015
+      name: Dark Academia
+      category: 3. Aesthetics
+      negativePrompt: bright, modern, neon
+      style:
+        aesthetic: Classic university library
+        form_and_line: Detailed, gothic
+        color_palette: Brown, Tweed, Black, Gold
+        lighting_setup: Candlelight, dim
+        material_texture: Old paper, leather books, wood
+        render_quality: Intellectual, moody, historic
+        spatial_distortion: None
+        atmosphere: Serious, studious, mysterious
+        key_features: Books and coffee
+    - id: SP11-016
+      name: Plushie
+      category: 1. Toys & Crafts
+      negativePrompt: hard, plastic
+      style:
+        aesthetic: Stuffed animal
+        form_and_line: Seams
+        color_palette: Soft pastel
+        lighting_setup: Soft studio
+        material_texture: Faux fur, fabric
+        render_quality: Cute, huggable
+        spatial_distortion: Round shapes
+        atmosphere: Comforting, soft
+        key_features: Button eyes
+    - id: SP11-017
+      name: Action Figure (90s)
+      category: 1. Toys & Crafts
+      negativePrompt: realistic skin
+      style:
+        aesthetic: Plastic hero toy
+        form_and_line: Muscle definition
+        color_palette: Bright plastic
+        lighting_setup: Blister pack reflection
+        material_texture: Glossy plastic
+        render_quality: Mass produced, toy
+        spatial_distortion: 5 points of articulation
+        atmosphere: Exciting, play
+        key_features: Joints visible
+    - id: SP11-018
+      name: Balloon Art
+      category: 1. Toys & Crafts
+      negativePrompt: sharp, flat
+      style:
+        aesthetic: Twisted balloon animal
+        form_and_line: Rounded segments
+        color_palette: Shiny latex colors
+        lighting_setup: High specular highlights
+        material_texture: Stretched rubber
+        render_quality: Party, fragile
+        spatial_distortion: Tubular shapes
+        atmosphere: Fun, squeaky
+        key_features: Knots
+    - id: SP11-019
+      name: Felt Puppet
+      category: 1. Toys & Crafts
+      negativePrompt: cgi, smooth
+      style:
+        aesthetic: Muppet style
+        form_and_line: Fuzzy edges
+        color_palette: Bright felt
+        lighting_setup: TV studio
+        material_texture: Felt fabric
+        render_quality: Handmade, expressive
+        spatial_distortion: Flapping mouth
+        atmosphere: Funny, alive
+        key_features: Arm rods
+    - id: SP11-020
+      name: Wooden Toy
+      category: 1. Toys & Crafts
+      negativePrompt: plastic, metal
+      style:
+        aesthetic: Carved wood figure
+        form_and_line: Wood grain
+        color_palette: Natural wood, painted details
+        lighting_setup: Warm
+        material_texture: Wood grain, paint chips
+        render_quality: Traditional, sturdy
+        spatial_distortion: Simple geometry
+        atmosphere: Nostalgic, simple
+        key_features: Wood texture
+    - id: SP11-021
+      name: Sticker Art
+      category: 1. Toys & Crafts
+      negativePrompt: 3d, shadow
+      style:
+        aesthetic: Die-cut sticker
+        form_and_line: Thick white border
+        color_palette: Vibrant flat colors
+        lighting_setup: Flat
+        material_texture: Glossy paper
+        render_quality: Graphic, collectible
+        spatial_distortion: 2D cutout
+        atmosphere: Cool, decorative
+        key_features: White outline
+    - id: SP11-022
+      name: Claymation (Aardman)
+      category: 1. Toys & Crafts
+      negativePrompt: smooth cgi
+      style:
+        aesthetic: Wallace & Gromit style
+        form_and_line: Wide mouths
+        color_palette: Matte clay colors
+        lighting_setup: Stop motion set
+        material_texture: Fingerprints in clay
+        render_quality: British humor, tactile
+        spatial_distortion: Tooth gap
+        atmosphere: Funny, charming
+        key_features: Plasticine
+    - id: SP11-023
+      name: Tin Toy
+      category: 1. Toys & Crafts
+      negativePrompt: plastic
+      style:
+        aesthetic: Vintage wind-up robot
+        form_and_line: Lithograph print
+        color_palette: Metallic, Red, Gold
+        lighting_setup: Metallic reflection
+        material_texture: Painted metal
+        render_quality: Retro, mechanical
+        spatial_distortion: Boxy
+        atmosphere: Old fashioned, noisy
+        key_features: Wind-up key
+    - id: SP11-024
+      name: Diorama Box
+      category: 1. Toys & Crafts
+      negativePrompt: full scale
+      style:
+        aesthetic: Shoebox scene
+        form_and_line: Cutout layers
+        color_palette: Mixed media
+        lighting_setup: Top down
+        material_texture: Cardboard, glue
+        render_quality: School project, depth
+        spatial_distortion: Forced perspective
+        atmosphere: Creative, miniature
+        key_features: Box walls
+    - id: SP11-025
+      name: Button Eye Doll
+      category: 1. Toys & Crafts
+      negativePrompt: human eyes
+      style:
+        aesthetic: Coraline style
+        form_and_line: Stitched mouth
+        color_palette: Muted, creepy
+        lighting_setup: Cinematic dark
+        material_texture: Fabric, thread
+        render_quality: Spooky, stop motion
+        spatial_distortion: Button eyes
+        atmosphere: Unsettling, magical
+        key_features: Visible stitching
+    - id: SP11-026
+      name: Spray Paint / Graffiti
+      category: 2. Artistic Mediums
+      negativePrompt: brush strokes, clean
+      style:
+        aesthetic: Street mural
+        form_and_line: Drips, overspray
+        color_palette: Neon, Black outline
+        lighting_setup: Outdoor wall
+        material_texture: Concrete wall, aerosol
+        render_quality: Urban, rebellious
+        spatial_distortion: Wildstyle lettering
+        atmosphere: Cool, illegal
+        key_features: Drips
+    - id: SP11-027
+      name: Mosaic Tile
+      category: 2. Artistic Mediums
+      negativePrompt: smooth painting
+      style:
+        aesthetic: Roman floor art
+        form_and_line: Grout lines
+        color_palette: Stone colors, Gold glass
+        lighting_setup: Uneven reflection
+        material_texture: Ceramic tiles
+        render_quality: Ancient, durable, fragmented
+        spatial_distortion: Pixelated by tiles
+        atmosphere: Historic, grand
+        key_features: Grout
+    - id: SP11-028
+      name: Neon Sign
+      category: 2. Artistic Mediums
+      negativePrompt: daylight, paint
+      style:
+        aesthetic: Bar sign
+        form_and_line: Glass tubes
+        color_palette: Glowing Red, Blue
+        lighting_setup: Self-illuminated
+        material_texture: Glass, gas glow
+        render_quality: Nightlife, electric
+        spatial_distortion: Continuous line
+        atmosphere: Buzzing, night
+        key_features: Black backing
+    - id: SP11-029
+      name: Embroidery
+      category: 2. Artistic Mediums
+      negativePrompt: paint, flat
+      style:
+        aesthetic: Hoop art
+        form_and_line: Thread thickness
+        color_palette: Thread colors
+        lighting_setup: Soft fabric
+        material_texture: Canvas, thread loops
+        render_quality: Handmade, tactile
+        spatial_distortion: Stitch resolution
+        atmosphere: Homey, detailed
+        key_features: Fabric grain
+    - id: SP11-030
+      name: Sand Art
+      category: 2. Artistic Mediums
+      negativePrompt: water, paint
+      style:
+        aesthetic: Bottle sand layer
+        form_and_line: Granular edges
+        color_palette: Earth tones, Dyed sand
+        lighting_setup: Flat
+        material_texture: Grains of sand
+        render_quality: Fragile, temporary
+        spatial_distortion: Gravity layers
+        atmosphere: Patience, nature
+        key_features: Layers
+    - id: SP11-031
+      name: Ice Carving
+      category: 2. Artistic Mediums
+      negativePrompt: warm, opaque
+      style:
+        aesthetic: Sculpture
+        form_and_line: Sharp, melting
+        color_palette: Clear, Blue tint
+        lighting_setup: Refractive, internal
+        material_texture: Slippery ice
+        render_quality: Cold, temporary, crystal
+        spatial_distortion: Translucent
+        atmosphere: Elegant, freezing
+        key_features: Dripping water
+    - id: SP11-032
+      name: Latte Art
+      category: 2. Artistic Mediums
+      negativePrompt: solid, paint
+      style:
+        aesthetic: Coffee foam drawing
+        form_and_line: Soft foam edges
+        color_palette: Brown, White, Cream
+        lighting_setup: Overhead cafe
+        material_texture: Microfoam bubbles
+        render_quality: Tasty, temporary
+        spatial_distortion: Liquid surface
+        atmosphere: Cozy, morning
+        key_features: Cup rim
+    - id: SP11-033
+      name: Blueprint
+      category: 2. Artistic Mediums
+      negativePrompt: color, photo
+      style:
+        aesthetic: Architectural plan
+        form_and_line: White technical lines
+        color_palette: Cyan Blue background
+        lighting_setup: Flat
+        material_texture: Paper grain
+        render_quality: Technical, precise
+        spatial_distortion: 2D schematic
+        atmosphere: Planning, engineering
+        key_features: Grid lines
+    - id: SP11-034
+      name: X-Ray
+      category: 2. Artistic Mediums
+      negativePrompt: skin, color
+      style:
+        aesthetic: Medical scan
+        form_and_line: Bone density
+        color_palette: Black and White negative
+        lighting_setup: Backlit
+        material_texture: Film grain
+        render_quality: Medical, spooky, internal
+        spatial_distortion: Skeleton visible
+        atmosphere: Scientific, raw
+        key_features: Bones
+    - id: SP11-035
+      name: Thermal Vision
+      category: 2. Artistic Mediums
+      negativePrompt: natural colors
+      style:
+        aesthetic: Heat map camera
+        form_and_line: Heat gradients
+        color_palette: Rainbow (Red hot, Blue cold)
+        lighting_setup: Emission
+        material_texture: Digital noise
+        render_quality: Military, predator
+        spatial_distortion: Blobby heat zones
+        atmosphere: Tactical, hunting
+        key_features: Heat glow
+    - id: SP11-036
+      name: Vaporwave
+      category: 3. Aesthetics
+      negativePrompt: serious, dark
+      style:
+        aesthetic: 90s internet nostalgia
+        form_and_line: Glitch art
+        color_palette: Pink, Teal, White
+        lighting_setup: Bright, surreal
+        material_texture: Marble, water, windows 95
+        render_quality: A E S T H E T I C
+        spatial_distortion: Statue busts
+        atmosphere: Chill, surreal, ironic
+        key_features: Palm trees
+    - id: SP11-037
+      name: Steampunk
+      category: 3. Aesthetics
+      negativePrompt: plastic, digital
+      style:
+        aesthetic: Victorian sci-fi
+        form_and_line: Gears, pipes
+        color_palette: Brass, Copper, Brown leather
+        lighting_setup: Gaslight, steam
+        material_texture: Metal, leather, steam
+        render_quality: Intricate, mechanical
+        spatial_distortion: Clockwork parts
+        atmosphere: Adventure, invention
+        key_features: Goggles
+    - id: SP11-038
+      name: Biopunk
+      category: 3. Aesthetics
+      negativePrompt: metal, dry
+      style:
+        aesthetic: Genetic engineering
+        form_and_line: Veins, flesh
+        color_palette: Pink, Green, Flesh
+        lighting_setup: Wet, slime
+        material_texture: Organic matter
+        render_quality: Gross, fascinating
+        spatial_distortion: Mutations
+        atmosphere: Unsettling, biological
+        key_features: Flesh tubes
+    - id: SP11-039
+      name: Gothic Horror
+      category: 3. Aesthetics
+      negativePrompt: sunlight, happy
+      style:
+        aesthetic: Dracula's castle
+        form_and_line: Spiky architecture
+        color_palette: Black, Grey, Deep Red
+        lighting_setup: Moonlight, fog
+        material_texture: Stone, velvet, fog
+        render_quality: Scary, romantic
+        spatial_distortion: Shadows
+        atmosphere: Fear, elegance
+        key_features: Bats
+    - id: SP11-040
+      name: Kawaii Pastel
+      category: 3. Aesthetics
+      negativePrompt: dark, scary
+      style:
+        aesthetic: Sanrio style
+        form_and_line: Thick soft lines
+        color_palette: Pastel Pink, Blue, Yellow
+        lighting_setup: Bright, flat
+        material_texture: Smooth, fluffy
+        render_quality: Cute, happy, soft
+        spatial_distortion: Big eyes
+        atmosphere: Joy, innocence
+        key_features: Sparkles
+    - id: SP11-041
+      name: Grimdark
+      category: 3. Aesthetics
+      negativePrompt: hope, light
+      style:
+        aesthetic: Warhammer 40k style
+        form_and_line: Heavy, dirty
+        color_palette: Mud, Blood, Rust
+        lighting_setup: Dark, harsh
+        material_texture: Grime, scars
+        render_quality: Hopeless, war, eternal
+        spatial_distortion: Skulls everywhere
+        atmosphere: Depressing, epic
+        key_features: Skulls
+    - id: SP11-042
+      name: Frutiger Aero
+      category: 3. Aesthetics
+      negativePrompt: flat, matte
+      style:
+        aesthetic: 2000s Tech UI
+        form_and_line: Glossy curves
+        color_palette: Cyan, Green, White
+        lighting_setup: Bright, glossy
+        material_texture: Glass, water bubbles
+        render_quality: Optimistic, corporate tech
+        spatial_distortion: Floating icons
+        atmosphere: Fresh, clean, future
+        key_features: Lens flare
+    - id: SP11-043
+      name: Memphis Design
+      category: 3. Aesthetics
+      negativePrompt: realistic, 3d
+      style:
+        aesthetic: 80s geometric pattern
+        form_and_line: Squiggles, triangles
+        color_palette: Black + Primary Colors
+        lighting_setup: Flat
+        material_texture: Speckled pattern
+        render_quality: Chaotic, fun, retro
+        spatial_distortion: Abstract shapes
+        atmosphere: Playful, energetic
+        key_features: Geometric patterns
+    - id: SP11-044
+      name: Pop Art
+      category: 3. Aesthetics
+      negativePrompt: subtle
+      style:
+        aesthetic: Andy Warhol style
+        form_and_line: Halftone dots
+        color_palette: High contrast neon
+        lighting_setup: Flat
+        material_texture: Screenprint
+        render_quality: Mass media, bold
+        spatial_distortion: Repetition
+        atmosphere: Ironic, bold
+        key_features: Halftone
+    - id: SP11-045
+      name: Psychedelic
+      category: 3. Aesthetics
+      negativePrompt: boring, straight
+      style:
+        aesthetic: LSD trip art
+        form_and_line: Melting, swirling
+        color_palette: Rainbow, shifting
+        lighting_setup: Glowing
+        material_texture: Fractals
+        render_quality: Mind-bending, trippy
+        spatial_distortion: Melting reality
+        atmosphere: Crazy, expanding
+        key_features: Eyes everywhere
+    - id: SP11-046
+      name: Food Photography (Michelin)
+      category: 4. Food & Drink
+      negativePrompt: messy, cafeteria
+      style:
+        aesthetic: Fine dining plate
+        form_and_line: Precise plating
+        color_palette: Vibrant, fresh
+        lighting_setup: Soft window light
+        material_texture: Sauce gloss, fresh herbs
+        render_quality: Delicious, expensive
+        spatial_distortion: Tiny portions
+        atmosphere: Elegant, tasty
+        key_features: Garnish
+    - id: SP11-047
+      name: Candy Land
+      category: 4. Food & Drink
+      negativePrompt: healthy, savory
+      style:
+        aesthetic: World made of sweets
+        form_and_line: Sugar coating
+        color_palette: Pink, Blue, Sugar
+        lighting_setup: Bright, sparkly
+        material_texture: Sugar crystals, gummy
+        render_quality: Sweet, magical
+        spatial_distortion: Everything is edible
+        atmosphere: Happy, hungry
+        key_features: Lollipops
+    - id: SP11-048
+      name: Sushi Platter
+      category: 4. Food & Drink
+      negativePrompt: cooked, dry
+      style:
+        aesthetic: Fresh sashimi
+        form_and_line: Knife cuts
+        color_palette: Orange (Salmon), Red (Tuna)
+        lighting_setup: Glossy fish oil
+        material_texture: Raw fish, rice
+        render_quality: Fresh, japanese
+        spatial_distortion: None
+        atmosphere: Clean, tasty
+        key_features: Rice grains
+    - id: SP11-049
+      name: Fast Food Commercial
+      category: 4. Food & Drink
+      negativePrompt: real, soggy
+      style:
+        aesthetic: Burger ad
+        form_and_line: Perfect layers
+        color_palette: Saturated Orange, Brown
+        lighting_setup: High key studio
+        material_texture: Melting cheese, water drops
+        render_quality: Unrealistic perfection
+        spatial_distortion: Flying ingredients
+        atmosphere: Exciting, hungry
+        key_features: Sesame seeds
+    - id: SP11-050
+      name: Cocktail Macro
+      category: 4. Food & Drink
+      negativePrompt: opaque
+      style:
+        aesthetic: Drink closeup
+        form_and_line: Glass rim
+        color_palette: Liquid gradient
+        lighting_setup: Backlit refraction
+        material_texture: Condensation, ice
+        render_quality: Refreshing, cold
+        spatial_distortion: Bubbles
+        atmosphere: Party, relax
+        key_features: Ice cubes
+    - id: SP11-051
+      name: Bakery Window
+      category: 4. Food & Drink
+      negativePrompt: burnt
+      style:
+        aesthetic: Fresh bread and pastries
+        form_and_line: Crust cracks
+        color_palette: Golden Brown
+        lighting_setup: Warm yellow
+        material_texture: Flour, flaky crust
+        render_quality: Warm, homey
+        spatial_distortion: Rising dough
+        atmosphere: Comfort, smell
+        key_features: Steam
+    - id: SP11-052
+      name: Fruit Explosion
+      category: 4. Food & Drink
+      negativePrompt: rotten, still
+      style:
+        aesthetic: Slicing fruit in air
+        form_and_line: Splash lines
+        color_palette: Juicy brights
+        lighting_setup: High speed flash
+        material_texture: Juice, pulp
+        render_quality: Fresh, dynamic
+        spatial_distortion: Exploding
+        atmosphere: Energy, vitamin
+        key_features: Juice drops
+    - id: SP11-053
+      name: Chocolate Flow
+      category: 4. Food & Drink
+      negativePrompt: watery
+      style:
+        aesthetic: Melting chocolate river
+        form_and_line: Thick waves
+        color_palette: Dark Brown
+        lighting_setup: Satin gloss
+        material_texture: Smooth liquid chocolate
+        render_quality: Rich, decadent
+        spatial_distortion: Flowing
+        atmosphere: Indulgent, sweet
+        key_features: Smoothness
+    - id: SP11-054
+      name: Bento Box
+      category: 4. Food & Drink
+      negativePrompt: messy
+      style:
+        aesthetic: Cute lunch box
+        form_and_line: Compartments
+        color_palette: Colorful, organized
+        lighting_setup: Flat lay
+        material_texture: Rice, seaweed
+        render_quality: Kawaii, organized
+        spatial_distortion: Food shaped like animals
+        atmosphere: Cute, hungry
+        key_features: Panda rice ball
+    - id: SP11-055
+      name: Pizza Melt
+      category: 4. Food & Drink
+      negativePrompt: cold
+      style:
+        aesthetic: Cheese pull
+        form_and_line: Stretchy cheese
+        color_palette: Red, Yellow, White
+        lighting_setup: Warm
+        material_texture: Grease, cheese
+        render_quality: Cheesy, hot
+        spatial_distortion: Stretching
+        atmosphere: Craving, greasy
+        key_features: Pepperoni
+    - id: SP11-056
+      name: Electron Microscope
+      category: 5. Micro/Macro
+      negativePrompt: color, far away
+      style:
+        aesthetic: SEM scan
+        form_and_line: Tiny details
+        color_palette: Black and White
+        lighting_setup: Scanning beam
+        material_texture: Alien landscape
+        render_quality: Scientific, tiny
+        spatial_distortion: Dust looks like boulders
+        atmosphere: Scientific, weird
+        key_features: Scale bar
+    - id: SP11-057
+      name: Insect Eye
+      category: 5. Micro/Macro
+      negativePrompt: human eye
+      style:
+        aesthetic: Compound eye macro
+        form_and_line: Hexagonal grid
+        color_palette: Iridescent
+        lighting_setup: Macro flash
+        material_texture: Facet grid
+        render_quality: Detailed, alien
+        spatial_distortion: Geometric eye
+        atmosphere: Nature, intense
+        key_features: Hexagons
+    - id: SP11-058
+      name: Cellular Life
+      category: 5. Micro/Macro
+      negativePrompt: animal
+      style:
+        aesthetic: Biology textbook
+        form_and_line: Membrane walls
+        color_palette: Pink, Purple stain
+        lighting_setup: Microscope light
+        material_texture: Jelly, nucleus
+        render_quality: Medical, tiny
+        spatial_distortion: Blobs
+        atmosphere: Life, science
+        key_features: Nucleus
+    - id: SP11-059
+      name: Snowflake
+      category: 5. Micro/Macro
+      negativePrompt: melted
+      style:
+        aesthetic: Ice crystal macro
+        form_and_line: Fractal symmetry
+        color_palette: Clear, Blue background
+        lighting_setup: Sparkle
+        material_texture: Ice crystal
+        render_quality: Perfect, fragile
+        spatial_distortion: Symmetrical
+        atmosphere: Winter, beauty
+        key_features: Six arms
+    - id: SP11-060
+      name: Circuit Board
+      category: 5. Micro/Macro
+      negativePrompt: organic
+      style:
+        aesthetic: CPU die shot
+        form_and_line: Traces, paths
+        color_palette: Green, Gold, Silicon
+        lighting_setup: Flat metallic
+        material_texture: Silicon, solder
+        render_quality: Tech, complex
+        spatial_distortion: City-like
+        atmosphere: Digital, logic
+        key_features: Chips
+    - id: SP11-061
+      name: Water Drop Reflection
+      category: 5. Micro/Macro
+      negativePrompt: dry
+      style:
+        aesthetic: Refraction in drop
+        form_and_line: Perfect sphere
+        color_palette: Clear
+        lighting_setup: Lens effect
+        material_texture: Surface tension
+        render_quality: Physics, beauty
+        spatial_distortion: Inverted image inside
+        atmosphere: Calm, focus
+        key_features: Reflection
+    - id: SP11-062
+      name: Fiber/Fabric Macro
+      category: 5. Micro/Macro
+      negativePrompt: smooth
+      style:
+        aesthetic: Thread zoom
+        form_and_line: Individual fibers
+        color_palette: Thread color
+        lighting_setup: Soft
+        material_texture: Fuzzy
+        render_quality: Tactile, soft
+        spatial_distortion: Weave pattern
+        atmosphere: Cozy, close
+        key_features: Threads
+    - id: SP11-063
+      name: Rust/Decay Macro
+      category: 5. Micro/Macro
+      negativePrompt: clean
+      style:
+        aesthetic: Corrosion zoom
+        form_and_line: Flaking paint
+        color_palette: Orange, Brown
+        lighting_setup: Rough
+        material_texture: Oxidation, bumps
+        render_quality: Texture, time
+        spatial_distortion: Cracks
+        atmosphere: Old, textured
+        key_features: Flakes
+    - id: SP11-064
+      name: Iris/Eye Macro
+      category: 5. Micro/Macro
+      negativePrompt: skin
+      style:
+        aesthetic: Human eye zoom
+        form_and_line: Muscle fibers
+        color_palette: Blue/Green/Brown
+        lighting_setup: Ring light reflection
+        material_texture: Wet, fibrous
+        render_quality: Intense, soul
+        spatial_distortion: Pupil hole
+        atmosphere: Personal, deep
+        key_features: Pupil
+    - id: SP11-065
+      name: Soap Bubble
+      category: 5. Micro/Macro
+      negativePrompt: popped
+      style:
+        aesthetic: Oil slick surface
+        form_and_line: Swirling colors
+        color_palette: Rainbow iridescent
+        lighting_setup: Reflection
+        material_texture: Thin film liquid
+        render_quality: Fragile, colorful
+        spatial_distortion: Sphere
+        atmosphere: Dreamy, fleeting
+        key_features: Rainbow swirl
+    - id: SP11-066
+      name: Glitter Macro
+      category: 5. Micro/Macro
+      negativePrompt: matte
+      style:
+        aesthetic: Pile of glitter
+        form_and_line: Tiny hexagons
+        color_palette: Multi-color
+        lighting_setup: Sparkle bokeh
+        material_texture: Rough, shiny
+        render_quality: Party, mess
+        spatial_distortion: None
+        atmosphere: Fun, bright
+        key_features: Bling
+    - id: SP11-067
+      name: Feather Macro
+      category: 5. Micro/Macro
+      negativePrompt: blurry
+      style:
+        aesthetic: Bird feather zoom
+        form_and_line: Barbs and hooks
+        color_palette: Iridescent
+        lighting_setup: Soft sheen
+        material_texture: Velcro-like
+        render_quality: Nature, detailed
+        spatial_distortion: None
+        atmosphere: Soft, natural
+        key_features: Structure
+    - id: SP11-068
+      name: Leaf Veins
+      category: 5. Micro/Macro
+      negativePrompt: dead
+      style:
+        aesthetic: Backlit leaf
+        form_and_line: Vein network
+        color_palette: Chlorophyll Green
+        lighting_setup: Translucent
+        material_texture: Plant cells
+        render_quality: Life, nature
+        spatial_distortion: None
+        atmosphere: Fresh, organic
+        key_features: Veins
+    - id: SP11-069
+      name: Skin Pores
+      category: 5. Micro/Macro
+      negativePrompt: smooth plastic
+      style:
+        aesthetic: Dermatology zoom
+        form_and_line: Micro wrinkles
+        color_palette: Skin tone
+        lighting_setup: Soft scattering
+        material_texture: Pores, hair
+        render_quality: Hyperreal, human
+        spatial_distortion: None
+        atmosphere: Raw, real
+        key_features: Texture
+    - id: SP11-070
+      name: Ink in Water
+      category: 5. Micro/Macro
+      negativePrompt: still
+      style:
+        aesthetic: Cloud tank
+        form_and_line: Swirls
+        color_palette: Black/Color ink
+        lighting_setup: Backlit
+        material_texture: Fluid smoke
+        render_quality: Abstract, motion
+        spatial_distortion: Dissolving
+        atmosphere: Artistic, flow
+        key_features: Smoke shape
+    - id: SP11-071
+      name: Fungi/Mold
+      category: 5. Micro/Macro
+      negativePrompt: clean
+      style:
+        aesthetic: Petri dish
+        form_and_line: Fuzzy growth
+        color_palette: White, Green, Blue
+        lighting_setup: Macro
+        material_texture: Fuzzy, spores
+        render_quality: Gross, fascinating
+        spatial_distortion: Growth rings
+        atmosphere: Biological, decay
+        key_features: Spores
+    - id: SP11-072
+      name: Crystal Growth
+      category: 5. Micro/Macro
+      negativePrompt: round
+      style:
+        aesthetic: Chemical garden
+        form_and_line: Sharp geometric edges
+        color_palette: Vibrant chemical colors
+        lighting_setup: Internal reflection
+        material_texture: Glassy, sharp
+        render_quality: Geology, chemistry
+        spatial_distortion: Spikes
+        atmosphere: Sharp, growing
+        key_features: Facets
+    - id: SP11-073
+      name: Vinyl Record Grooves
+      category: 5. Micro/Macro
+      negativePrompt: smooth
+      style:
+        aesthetic: Microscope record
+        form_and_line: Parallel waves
+        color_palette: Black plastic
+        lighting_setup: Highlight along groove
+        material_texture: Dust, plastic
+        render_quality: Audio, physical
+        spatial_distortion: Wavy lines
+        atmosphere: Music, tech
+        key_features: Grooves
+    - id: SP11-074
+      name: Velcro
+      category: 5. Micro/Macro
+      negativePrompt: smooth
+      style:
+        aesthetic: Hooks and loops
+        form_and_line: Plastic hooks
+        color_palette: Black/White
+        lighting_setup: Macro
+        material_texture: Plastic loops
+        render_quality: Industrial, texture
+        spatial_distortion: Tangling
+        atmosphere: Functional, close
+        key_features: Hooks
+    - id: SP11-075
+      name: Sponge
+      category: 5. Micro/Macro
+      negativePrompt: solid
+      style:
+        aesthetic: Kitchen sponge zoom
+        form_and_line: Holes, bubbles
+        color_palette: Yellow, Pink
+        lighting_setup: Soft
+        material_texture: Porous foam
+        render_quality: Absorbent, texture
+        spatial_distortion: Holes
+        atmosphere: Clean, soft
+        key_features: Pores
+    - id: SP11-076
+      name: Moss
+      category: 5. Micro/Macro
+      negativePrompt: dry
+      style:
+        aesthetic: Forest floor zoom
+        form_and_line: Tiny leaves
+        color_palette: Green
+        lighting_setup: Dappled
+        material_texture: Velvet plant
+        render_quality: Nature, soft
+        spatial_distortion: Carpet
+        atmosphere: Quiet, tiny
+        key_features: Greenery
+    - id: SP11-077
+      name: Sandpaper
+      category: 5. Micro/Macro
+      negativePrompt: smooth
+      style:
+        aesthetic: Grit zoom
+        form_and_line: Rough rocks
+        color_palette: Brown, Black grit
+        lighting_setup: Sparkle on grit
+        material_texture: Rough, abrasive
+        render_quality: Industrial, rough
+        spatial_distortion: None
+        atmosphere: Harsh, work
+        key_features: Grit
+    - id: SP11-078
+      name: Cork
+      category: 5. Micro/Macro
+      negativePrompt: smooth
+      style:
+        aesthetic: Wine cork zoom
+        form_and_line: Wood cells
+        color_palette: Tan, Brown
+        lighting_setup: Matte
+        material_texture: Compressed wood
+        render_quality: Natural, dry
+        spatial_distortion: Holes
+        atmosphere: Rustic, dry
+        key_features: Texture
+    - id: SP11-079
+      name: Carbon Fiber
+      category: 5. Micro/Macro
+      negativePrompt: metal
+      style:
+        aesthetic: Weave pattern
+        form_and_line: Diagonal weave
+        color_palette: Black, Grey
+        lighting_setup: Anisotropic reflection
+        material_texture: Woven fiber
+        render_quality: High tech, strong
+        spatial_distortion: None
+        atmosphere: Fast, expensive
+        key_features: Weave
+    - id: SP11-080
+      name: Dandelion Seed
+      category: 5. Micro/Macro
+      negativePrompt: heavy
+      style:
+        aesthetic: Seed parachute
+        form_and_line: Fine hairs
+        color_palette: White
+        lighting_setup: Backlit sun
+        material_texture: Fluff
+        render_quality: Delicate, wind
+        spatial_distortion: Flying
+        atmosphere: Wish, soft
+        key_features: Parachute

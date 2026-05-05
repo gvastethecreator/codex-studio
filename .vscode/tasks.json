@@ -1,0 +1,59 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "studio:init",
+      "type": "shell",
+      "command": "bun run studio:init",
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "dev: studio all",
+      "type": "shell",
+      "command": "bun run dev",
+      "problemMatcher": [],
+      "isBackground": true,
+      "dependsOn": ["studio:init"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "dev: ui",
+      "type": "shell",
+      "command": "bun run dev:ui",
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "dev: server",
+      "type": "shell",
+      "command": "bun run dev:server",
+      "problemMatcher": [],
+      "isBackground": true,
+      "dependsOn": ["studio:init"]
+    },
+    {
+      "label": "check",
+      "type": "shell",
+      "command": "bun run check",
+      "problemMatcher": "$tsc",
+      "group": "test"
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "bun run build",
+      "problemMatcher": "$tsc",
+      "group": "build"
+    },
+    {
+      "label": "open: library logs",
+      "type": "shell",
+      "command": "explorer D:\\AI-Studio-Library\\logs",
+      "problemMatcher": []
+    }
+  ]
+}

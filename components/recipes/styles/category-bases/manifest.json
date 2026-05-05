@@ -1,0 +1,212 @@
+[
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "3. Camera Types",
+    "key": "pack_01__camera_types",
+    "file": "components/recipes/styles/category-bases/pack_01__camera_types.png",
+    "jobId": "76f6575c-bb6b-415b-859e-60d3b80120e8",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\76f6575c-bb6b-415b-859e-60d3b80120e8-codex.png",
+    "generatedAt": "2026-05-05T20:01:33.310Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "2. Film Stocks",
+    "key": "pack_01__film_stocks",
+    "file": "components/recipes/styles/category-bases/pack_01__film_stocks.png",
+    "jobId": "1237d535-d343-4ec4-ba24-ebeeb94a7588",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\1237d535-d343-4ec4-ba24-ebeeb94a7588-codex.png",
+    "generatedAt": "2026-05-05T19:59:29.390Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "key": "pack_01__genres",
+    "file": "components/recipes/styles/category-bases/pack_01__genres.png",
+    "jobId": "9a230149-717b-4728-bbea-247f5b05d953",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\9a230149-717b-4728-bbea-247f5b05d953-codex.png",
+    "generatedAt": "2026-05-05T20:05:19.406Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "4. Lighting",
+    "key": "pack_01__lighting",
+    "file": "components/recipes/styles/category-bases/pack_01__lighting.png",
+    "jobId": "9b03d18a-4510-4c41-8444-e58dcd18bc95",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\9b03d18a-4510-4c41-8444-e58dcd18bc95-codex.png",
+    "generatedAt": "2026-05-05T20:03:58.005Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "1. Portrait Styles",
+    "key": "pack_01__portrait_styles",
+    "file": "components/recipes/styles/category-bases/pack_01__portrait_styles.png",
+    "jobId": "c6d3b7a9-c703-4272-8107-664b8fb368f9",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\c6d3b7a9-c703-4272-8107-664b8fb368f9-codex.png",
+    "generatedAt": "2026-05-05T19:58:23.026Z"
+  },
+  {
+    "packId": "pack_02",
+    "packName": "Cinematic & Media",
+    "category": "3. Animation Styles",
+    "key": "pack_02__animation_styles",
+    "file": "components/recipes/styles/category-bases/pack_02__animation_styles.png",
+    "jobId": "88174362-8732-4d84-811d-4b5b27d61372",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\88174362-8732-4d84-811d-4b5b27d61372-codex.png",
+    "generatedAt": "2026-05-05T20:10:42.078Z"
+  },
+  {
+    "packId": "pack_02",
+    "packName": "Cinematic & Media",
+    "category": "1. Film Genres",
+    "key": "pack_02__film_genres",
+    "file": "components/recipes/styles/category-bases/pack_02__film_genres.png",
+    "jobId": "20f092fa-8897-4922-8028-87afb18e08af",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\20f092fa-8897-4922-8028-87afb18e08af-codex.png",
+    "generatedAt": "2026-05-05T20:06:34.722Z"
+  },
+  {
+    "packId": "pack_02",
+    "packName": "Cinematic & Media",
+    "category": "5. Lighting & Atmosphere",
+    "key": "pack_02__lighting_and_atmosphere",
+    "file": "components/recipes/styles/category-bases/pack_02__lighting_and_atmosphere.png",
+    "jobId": "b8116f64-d412-4f4c-baa8-97555ef6f76c",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\b8116f64-d412-4f4c-baa8-97555ef6f76c-codex.png",
+    "generatedAt": "2026-05-05T20:13:18.711Z"
+  },
+  {
+    "packId": "pack_02",
+    "packName": "Cinematic & Media",
+    "category": "4. Photography Eras",
+    "key": "pack_02__photography_eras",
+    "file": "components/recipes/styles/category-bases/pack_02__photography_eras.png",
+    "jobId": "434ab474-af3a-4d79-a8d7-8c04d684c573",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\434ab474-af3a-4d79-a8d7-8c04d684c573-codex.png",
+    "generatedAt": "2026-05-05T20:12:12.453Z"
+  },
+  {
+    "packId": "pack_02",
+    "packName": "Cinematic & Media",
+    "category": "2. TV & Broadcast",
+    "key": "pack_02__tv_and_broadcast",
+    "file": "components/recipes/styles/category-bases/pack_02__tv_and_broadcast.png",
+    "jobId": "dedf336c-1330-4b36-a1e2-dabbd34bf868",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\dedf336c-1330-4b36-a1e2-dabbd34bf868-codex.png",
+    "generatedAt": "2026-05-05T20:07:59.164Z"
+  },
+  {
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "3. 3D Styles",
+    "key": "pack_03__3d_styles",
+    "file": "components/recipes/styles/category-bases/pack_03__3d_styles.png",
+    "jobId": "307570bb-f30d-4d88-9b9d-2c2ebc6d0c67",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\307570bb-f30d-4d88-9b9d-2c2ebc6d0c67-codex.png",
+    "generatedAt": "2026-05-05T20:16:55.821Z"
+  },
+  {
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "4. Lighting & Atmosphere",
+    "key": "pack_03__lighting_and_atmosphere",
+    "file": "components/recipes/styles/category-bases/pack_03__lighting_and_atmosphere.png",
+    "jobId": "1655a937-de33-4deb-bf9e-83413f68f667",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\1655a937-de33-4deb-bf9e-83413f68f667-codex.png",
+    "generatedAt": "2026-05-05T20:18:20.246Z"
+  },
+  {
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "2. Materials",
+    "key": "pack_03__materials",
+    "file": "components/recipes/styles/category-bases/pack_03__materials.png",
+    "jobId": "c60456c9-f717-463c-b4bb-877fcb4c4c2c",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\c60456c9-f717-463c-b4bb-877fcb4c4c2c-codex.png",
+    "generatedAt": "2026-05-05T20:15:43.489Z"
+  },
+  {
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "1. Render Engines",
+    "key": "pack_03__render_engines",
+    "file": "components/recipes/styles/category-bases/pack_03__render_engines.png",
+    "jobId": "62b6b77d-69d3-4532-a38c-e39fc39d1858",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\62b6b77d-69d3-4532-a38c-e39fc39d1858-codex.png",
+    "generatedAt": "2026-05-05T20:14:31.154Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "2. Children's Illustration",
+    "key": "pack_04__children_s_illustration",
+    "file": "components/recipes/styles/category-bases/pack_04__children_s_illustration.png",
+    "jobId": "b60c3186-8c5e-4c65-b34b-69f10ffd5401",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\b60c3186-8c5e-4c65-b34b-69f10ffd5401-codex.png",
+    "generatedAt": "2026-05-05T20:43:43.907Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "1. Comic Book Styles",
+    "key": "pack_04__comic_book_styles",
+    "file": "components/recipes/styles/category-bases/pack_04__comic_book_styles.png",
+    "jobId": "89970b46-7bb5-4b6f-94d9-b00489209bd7",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\89970b46-7bb5-4b6f-94d9-b00489209bd7-codex.png",
+    "generatedAt": "2026-05-05T20:42:07.415Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "key": "pack_04__concept_art",
+    "file": "components/recipes/styles/category-bases/pack_04__concept_art.png",
+    "jobId": "08ef519b-d598-41db-8e1b-fb8531e6e099",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\08ef519b-d598-41db-8e1b-fb8531e6e099-codex.png",
+    "generatedAt": "2026-05-05T20:49:16.012Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "3. Editorial & Poster",
+    "key": "pack_04__editorial_and_poster",
+    "file": "components/recipes/styles/category-bases/pack_04__editorial_and_poster.png",
+    "jobId": "87105c1f-66ba-4cb3-88ac-5c39e0ec9af0",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\87105c1f-66ba-4cb3-88ac-5c39e0ec9af0-codex.png",
+    "generatedAt": "2026-05-05T20:46:29.994Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "5. Ink & Print",
+    "key": "pack_04__ink_and_print",
+    "file": "components/recipes/styles/category-bases/pack_04__ink_and_print.png",
+    "jobId": "883a8143-957f-405f-87ea-9bb3188fedd7",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\883a8143-957f-405f-87ea-9bb3188fedd7-codex.png",
+    "generatedAt": "2026-05-05T20:50:40.520Z"
+  },
+  {
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "1. 70s & 80s Retro Anime",
+    "key": "pack_05__70s_and_80s_retro_anime",
+    "file": "components/recipes/styles/category-bases/pack_05__70s_and_80s_retro_anime.png",
+    "jobId": "69fa95f3-dc57-4d62-bcc2-dad5074b358c",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\69fa95f3-dc57-4d62-bcc2-dad5074b358c-codex.png",
+    "generatedAt": "2026-05-05T20:53:26.460Z"
+  },
+  {
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "2. 90s Golden Era",
+    "key": "pack_05__90s_golden_era",
+    "file": "components/recipes/styles/category-bases/pack_05__90s_golden_era.png",
+    "jobId": "ec33f973-2a5d-49b4-be21-2f2a7fb10c6f",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\ec33f973-2a5d-49b4-be21-2f2a7fb10c6f-codex.png",
+    "generatedAt": "2026-05-05T20:55:08.907Z"
+  }
+]
