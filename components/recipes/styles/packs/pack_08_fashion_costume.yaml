@@ -1,0 +1,1124 @@
+- id: pack_08
+  name: Fashion & Costume
+  description: Diverse fashion styles from historical to futuristic.
+  presets:
+    - id: SP08-001
+      name: Haute Couture
+      category: 1. Contemporary Fashion
+      negativePrompt: ready-to-wear, cheap, simple
+      style:
+        aesthetic: Avant-garde runway look
+        form_and_line: Structural, architectural shapes
+        color_palette: Bold, artistic, expensive
+        lighting_setup: Runway spotlights
+        material_texture: Silk, feathers, embroidery
+        render_quality: Vogue, Met Gala, masterpiece
+        spatial_distortion: Exaggerated silhouette
+        atmosphere: Dramatic, expensive, artistic
+        key_features: High fashion pose
+    - id: SP08-002
+      name: Streetwear Hypebeast
+      category: 1. Contemporary Fashion
+      negativePrompt: suit, formal, old
+      style:
+        aesthetic: Urban youth fashion
+        form_and_line: Oversized silhouette
+        color_palette: Black, White, Red, Neon
+        lighting_setup: Street lights or flash
+        material_texture: Cotton, nylon, leather
+        render_quality: Supreme, Off-White, trendy
+        spatial_distortion: Baggy clothes
+        atmosphere: Cool, rebellious, rich
+        key_features: Sneaker focus
+    - id: SP08-003
+      name: Minimalist Chic
+      category: 1. Contemporary Fashion
+      negativePrompt: pattern, logo, bright colors
+      style:
+        aesthetic: Clean scandinavian fashion
+        form_and_line: Straight cuts, simple
+        color_palette: Beige, White, Grey, Black
+        lighting_setup: Soft natural light
+        material_texture: Linen, wool, cashmere
+        render_quality: COS, Jil Sander, expensive
+        spatial_distortion: None
+        atmosphere: Calm, sophisticated, clean
+        key_features: Neutral palette
+    - id: SP08-004
+      name: Boho Festival
+      category: 1. Contemporary Fashion
+      negativePrompt: suit, strict, dark
+      style:
+        aesthetic: Coachella festival outfit
+        form_and_line: Flowing layers, fringe
+        color_palette: Earth tones, floral prints
+        lighting_setup: Golden hour sun
+        material_texture: Lace, crochet, denim
+        render_quality: Free people, hippie, summer
+        spatial_distortion: None
+        atmosphere: Free, happy, natural
+        key_features: Accessories (hats, jewelry)
+    - id: SP08-005
+      name: Athleisure Sport
+      category: 1. Contemporary Fashion
+      negativePrompt: dress, jeans, formal
+      style:
+        aesthetic: Gym to street look
+        form_and_line: Tight fitting, ergonomic
+        color_palette: Black, Neon accents, Grey
+        lighting_setup: Gym lights or outdoor
+        material_texture: Spandex, mesh, sweat
+        render_quality: Nike, Lululemon, fit
+        spatial_distortion: None
+        atmosphere: Active, healthy, modern
+        key_features: Sleek silhouette
+    - id: SP08-006
+      name: Cyberpunk Techwear
+      category: 2. Subcultures
+      negativePrompt: vintage, natural, soft
+      style:
+        aesthetic: Futuristic ninja outfit
+        form_and_line: Straps, buckles, pockets
+        color_palette: Matte Black, Dark Grey
+        lighting_setup: Neon city lights
+        material_texture: Waterproof technical fabric
+        render_quality: Acronym, dystopian, functional
+        spatial_distortion: Masked face
+        atmosphere: Dark, prepared, cool
+        key_features: Utility focus
+    - id: SP08-007
+      name: Goth Darkwave
+      category: 2. Subcultures
+      negativePrompt: happy, pink, sun
+      style:
+        aesthetic: Traditional goth style
+        form_and_line: Sharp edges, spikes
+        color_palette: Black on Black
+        lighting_setup: Moonlight, pale skin
+        material_texture: Velvet, lace, leather, metal
+        render_quality: Dramatic, spooky, elegant
+        spatial_distortion: Corset waist
+        atmosphere: Melancholic, dark, romantic
+        key_features: Pale skin contrast
+    - id: SP08-008
+      name: Punk Rock
+      category: 2. Subcultures
+      negativePrompt: clean, expensive, nice
+      style:
+        aesthetic: 1970s London Punk
+        form_and_line: Ripped, torn, pinned
+        color_palette: Black, Red Plaid, Silver
+        lighting_setup: Flash bulb
+        material_texture: Denim, studs, safety pins
+        render_quality: Vivienne Westwood, rebellious
+        spatial_distortion: Mohawk hair
+        atmosphere: Angry, loud, chaotic
+        key_features: DIY aesthetic
+    - id: SP08-009
+      name: Steampunk Inventor
+      category: 2. Subcultures
+      negativePrompt: modern, plastic, digital
+      style:
+        aesthetic: Victorian sci-fi costume
+        form_and_line: Gears, goggles, corsets
+        color_palette: Bronze, Brown Leather, Copper
+        lighting_setup: Sepia tone, steam
+        material_texture: Leather, brass, tweed
+        render_quality: Detailed, costume, fantasy
+        spatial_distortion: Mechanical limbs (optional)
+        atmosphere: Adventurous, retro, inventive
+        key_features: Brass accessories
+    - id: SP08-010
+      name: Preppy Ivy League
+      category: 2. Subcultures
+      negativePrompt: messy, ripped, dark
+      style:
+        aesthetic: Classic American college style
+        form_and_line: Clean layers
+        color_palette: Navy, White, Khaki, Red
+        lighting_setup: Daylight, campus
+        material_texture: Cotton, wool knit
+        render_quality: Ralph Lauren, rich, classic
+        spatial_distortion: None
+        atmosphere: Smart, wealthy, traditional
+        key_features: Collared shirt
+    - id: SP08-011
+      name: Vintage 1950s
+      category: 3. Historical & Fantasy
+      negativePrompt: modern, pants, messy
+      style:
+        aesthetic: Rockabilly or housewife dress
+        form_and_line: Cinched waist, full skirt
+        color_palette: Polka dots, pastel pink/blue
+        lighting_setup: Bright, happy
+        material_texture: Cotton, hairspray
+        render_quality: Retro, pin-up, cute
+        spatial_distortion: Hourglass figure
+        atmosphere: Nostalgic, fun, feminine
+        key_features: Red lipstick
+    - id: SP08-012
+      name: Renaissance Royal
+      category: 3. Historical & Fantasy
+      negativePrompt: modern, simple, cheap
+      style:
+        aesthetic: 16th century court dress
+        form_and_line: Heavy layers, ruffs
+        color_palette: Deep Red, Gold, Velvet Blue
+        lighting_setup: Oil painting light
+        material_texture: Velvet, brocade, pearls
+        render_quality: Historical, museum, painting
+        spatial_distortion: Stiff posture
+        atmosphere: Regal, serious, wealthy
+        key_features: Ornate details
+    - id: SP08-013
+      name: Ethereal Fantasy
+      category: 3. Historical & Fantasy
+      negativePrompt: heavy, dark, solid
+      style:
+        aesthetic: Elven or fairy gown
+        form_and_line: Flowing, windblown
+        color_palette: White, Silver, Pale Blue
+        lighting_setup: Glowing, backlight
+        material_texture: Chiffon, silk, light
+        render_quality: Lord of the Rings, magical
+        spatial_distortion: Floating fabric
+        atmosphere: Magical, soft, dreamlike
+        key_features: Translucency
+    - id: SP08-014
+      name: Military Surplus
+      category: 3. Historical & Fantasy
+      negativePrompt: bright, delicate, clean
+      style:
+        aesthetic: Tactical soldier gear
+        form_and_line: Boxy, pockets, armor
+        color_palette: Olive Drab, Camo, Desert Tan
+        lighting_setup: Harsh outdoor
+        material_texture: Canvas, dirt, metal
+        render_quality: Tough, functional, war
+        spatial_distortion: Bulky silhouette
+        atmosphere: Serious, dangerous, ready
+        key_features: Utility pockets
+    - id: SP08-015
+      name: Cosplay Anime
+      category: 3. Historical & Fantasy
+      negativePrompt: realistic clothes, dull
+      style:
+        aesthetic: High quality cosplay photo
+        form_and_line: Accurate to character
+        color_palette: Bright synthetic colors
+        lighting_setup: Convention floor or studio
+        material_texture: Wig hair, EVA foam armor
+        render_quality: Fan art, detailed, fun
+        spatial_distortion: Big props
+        atmosphere: Playful, character, fake
+        key_features: Wig texture
+    - id: SP08-016
+      name: Normcore
+      category: 1. Contemporary Fashion
+      negativePrompt: flashy, expensive
+      style:
+        aesthetic: Seinfeld style
+        form_and_line: Loose fit
+        color_palette: Grey, Blue denim
+        lighting_setup: Flat
+        material_texture: Cotton, denim
+        render_quality: Boring, ironic, comfortable
+        spatial_distortion: None
+        atmosphere: Casual, unpretentious
+        key_features: Dad sneakers
+    - id: SP08-017
+      name: Tech CEO
+      category: 1. Contemporary Fashion
+      negativePrompt: suit, tie
+      style:
+        aesthetic: Steve Jobs/Zuckerberg
+        form_and_line: Simple silhouette
+        color_palette: Black, Grey, Navy
+        lighting_setup: Stage light
+        material_texture: Cotton t-shirt
+        render_quality: Minimal, rich
+        spatial_distortion: None
+        atmosphere: Serious, visionary
+        key_features: Turtle neck/Hoodie
+    - id: SP08-018
+      name: K-Pop Idol
+      category: 1. Contemporary Fashion
+      negativePrompt: boring, dark
+      style:
+        aesthetic: Music video outfit
+        form_and_line: Sharp, layered
+        color_palette: Pastel, Neon, White
+        lighting_setup: Studio bright
+        material_texture: Mixed fabrics
+        render_quality: Perfect, trendy, coordinated
+        spatial_distortion: None
+        atmosphere: Energetic, cute, cool
+        key_features: Dyed hair
+    - id: SP08-019
+      name: Business Casual
+      category: 1. Contemporary Fashion
+      negativePrompt: t-shirt, shorts
+      style:
+        aesthetic: Office wear
+        form_and_line: Tailored
+        color_palette: Blue, White, Beige
+        lighting_setup: Office fluorescent
+        material_texture: Cotton, wool
+        render_quality: Professional, safe
+        spatial_distortion: None
+        atmosphere: Work, standard
+        key_features: Blazer
+    - id: SP08-020
+      name: Red Carpet Gown
+      category: 1. Contemporary Fashion
+      negativePrompt: casual, short
+      style:
+        aesthetic: Oscars dress
+        form_and_line: Flowing train
+        color_palette: Red, Gold, Black
+        lighting_setup: Flash photography
+        material_texture: Silk, sequins
+        render_quality: Glamorous, expensive
+        spatial_distortion: None
+        atmosphere: Celebrity, fame
+        key_features: Long train
+    - id: SP08-021
+      name: Pastel Goth
+      category: 2. Subcultures
+      negativePrompt: all black
+      style:
+        aesthetic: Creepy cute
+        form_and_line: Spikes + Bows
+        color_palette: Black + Pastel Pink/Mint
+        lighting_setup: Soft
+        material_texture: Leather, lace
+        render_quality: Kawaii, spooky
+        spatial_distortion: None
+        atmosphere: Cute, dark
+        key_features: Bat wings
+    - id: SP08-022
+      name: Grunge (90s)
+      category: 2. Subcultures
+      negativePrompt: clean, ironed
+      style:
+        aesthetic: Kurt Cobain style
+        form_and_line: Loose, layered
+        color_palette: Faded plaid, denim
+        lighting_setup: Dim, overcast
+        material_texture: Flannel, knit
+        render_quality: Messy, cool, apathy
+        spatial_distortion: None
+        atmosphere: Angst, relaxed
+        key_features: Flannel shirt
+    - id: SP08-023
+      name: Lolita Fashion
+      category: 2. Subcultures
+      negativePrompt: modern, pants
+      style:
+        aesthetic: Victorian doll style
+        form_and_line: Ruffles, bell shape
+        color_palette: Pink, White, Blue
+        lighting_setup: Soft
+        material_texture: Lace, ribbons
+        render_quality: Cute, elaborate
+        spatial_distortion: None
+        atmosphere: Sweet, innocent
+        key_features: Bonnet
+    - id: SP08-024
+      name: Rockabilly
+      category: 2. Subcultures
+      negativePrompt: modern
+      style:
+        aesthetic: 50s Greaser/Pinup
+        form_and_line: Cuffed jeans, leather
+        color_palette: Black, Red, Denim
+        lighting_setup: Sunny
+        material_texture: Leather, denim
+        render_quality: Retro, cool
+        spatial_distortion: Pompadour hair
+        atmosphere: Rebellious, fun
+        key_features: Tattoos
+    - id: SP08-025
+      name: Hippie (60s)
+      category: 2. Subcultures
+      negativePrompt: suit, military
+      style:
+        aesthetic: Summer of Love
+        form_and_line: Flowing, loose
+        color_palette: Tie-dye, Earth tones
+        lighting_setup: Sun flare
+        material_texture: Cotton, fringe
+        render_quality: Peaceful, psychedelic
+        spatial_distortion: None
+        atmosphere: Free, happy
+        key_features: Flower crown
+    - id: SP08-026
+      name: Biker Gang
+      category: 2. Subcultures
+      negativePrompt: soft, colorful
+      style:
+        aesthetic: Motorcycle club
+        form_and_line: Heavy leather
+        color_palette: Black leather, Silver
+        lighting_setup: Harsh
+        material_texture: Leather, patches
+        render_quality: Tough, dangerous
+        spatial_distortion: None
+        atmosphere: Intimidating, cool
+        key_features: Leather vest
+    - id: SP08-027
+      name: Skater Style
+      category: 2. Subcultures
+      negativePrompt: tight clothes
+      style:
+        aesthetic: Thrasher magazine
+        form_and_line: Baggy
+        color_palette: Grey, Black, Graphic Tee
+        lighting_setup: Outdoor sun
+        material_texture: Cotton, canvas
+        render_quality: Casual, active
+        spatial_distortion: None
+        atmosphere: Chill, active
+        key_features: Vans shoes
+    - id: SP08-028
+      name: Cottagecore
+      category: 2. Subcultures
+      negativePrompt: urban, modern
+      style:
+        aesthetic: Rural fantasy
+        form_and_line: Soft dresses
+        color_palette: Cream, Sage, Floral
+        lighting_setup: Golden hour
+        material_texture: Linen, cotton
+        render_quality: Whimsical, soft
+        spatial_distortion: None
+        atmosphere: Peaceful, nature
+        key_features: Apron
+    - id: SP08-029
+      name: Dark Academia
+      category: 2. Subcultures
+      negativePrompt: bright, sport
+      style:
+        aesthetic: University student 1940s
+        form_and_line: Tailored layers
+        color_palette: Brown, Tweed, Cream
+        lighting_setup: Library dim
+        material_texture: Wool, tweed
+        render_quality: Intellectual, moody
+        spatial_distortion: None
+        atmosphere: Studious, serious
+        key_features: Glasses
+    - id: SP08-030
+      name: Raver (90s)
+      category: 2. Subcultures
+      negativePrompt: boring, grey
+      style:
+        aesthetic: PLUR vibes
+        form_and_line: Baggy pants
+        color_palette: Neon, Reflective
+        lighting_setup: Blacklight
+        material_texture: Plastic, fur
+        render_quality: Energetic, loud
+        spatial_distortion: None
+        atmosphere: Party, happy
+        key_features: Kandi bracelets
+    - id: SP08-031
+      name: Roaring 20s (Flapper)
+      category: 3. Historical & Fantasy
+      negativePrompt: long dress, modern
+      style:
+        aesthetic: Jazz age party
+        form_and_line: Straight silhouette
+        color_palette: Gold, Black, Silver
+        lighting_setup: Dim party
+        material_texture: Beads, fringe
+        render_quality: Fun, vintage
+        spatial_distortion: None
+        atmosphere: Party, retro
+        key_features: Bobbed hair
+    - id: SP08-032
+      name: Victorian Mourning
+      category: 3. Historical & Fantasy
+      negativePrompt: color, happy
+      style:
+        aesthetic: Widow weeds
+        form_and_line: Heavy layers
+        color_palette: Black matte
+        lighting_setup: Gloomy
+        material_texture: Crepe, veil
+        render_quality: Sad, formal
+        spatial_distortion: None
+        atmosphere: Somber, gothic
+        key_features: Black veil
+    - id: SP08-033
+      name: Ancient Egyptian
+      category: 3. Historical & Fantasy
+      negativePrompt: pants, modern
+      style:
+        aesthetic: Pharaoh or Queen
+        form_and_line: Pleated linen
+        color_palette: White, Gold, Lapis Blue
+        lighting_setup: Desert sun
+        material_texture: Linen, gold
+        render_quality: Royal, ancient
+        spatial_distortion: None
+        atmosphere: Regal, divine
+        key_features: Gold collar
+    - id: SP08-034
+      name: Roman Gladiator
+      category: 3. Historical & Fantasy
+      negativePrompt: clean, suit
+      style:
+        aesthetic: Arena fighter
+        form_and_line: Muscles, armor
+        color_palette: Bronze, Red, Skin
+        lighting_setup: Harsh sun
+        material_texture: Metal, leather, sweat
+        render_quality: Tough, historical
+        spatial_distortion: None
+        atmosphere: Violent, brave
+        key_features: Helmet
+    - id: SP08-035
+      name: Samurai Armor
+      category: 3. Historical & Fantasy
+      negativePrompt: european armor
+      style:
+        aesthetic: Japanese warrior
+        form_and_line: Laced plates
+        color_palette: Red lacquer, Black, Gold
+        lighting_setup: Dramatic
+        material_texture: Lacquer, silk
+        render_quality: Intimidating, detailed
+        spatial_distortion: None
+        atmosphere: Honorable, fierce
+        key_features: Kabuto helmet
+    - id: SP08-036
+      name: Viking Warrior
+      category: 3. Historical & Fantasy
+      negativePrompt: clean, shiny
+      style:
+        aesthetic: Norse raider
+        form_and_line: Furs, leather
+        color_palette: Brown, Grey, Blue
+        lighting_setup: Cold overcast
+        material_texture: Fur, chainmail
+        render_quality: Rugged, dirty
+        spatial_distortion: None
+        atmosphere: Tough, cold
+        key_features: Beard/Braids
+    - id: SP08-037
+      name: Wild West Cowboy
+      category: 3. Historical & Fantasy
+      negativePrompt: city, clean
+      style:
+        aesthetic: Gunslinger
+        form_and_line: Dusty coat
+        color_palette: Brown, Tan, Denim
+        lighting_setup: High noon
+        material_texture: Leather, dust
+        render_quality: Iconic, rugged
+        spatial_distortion: None
+        atmosphere: Tough, lonely
+        key_features: Stetson hat
+    - id: SP08-038
+      name: Disco (70s)
+      category: 3. Historical & Fantasy
+      negativePrompt: boring, matte
+      style:
+        aesthetic: Saturday Night Fever
+        form_and_line: Flared pants
+        color_palette: White suit, Gold
+        lighting_setup: Disco ball
+        material_texture: Polyester, satin
+        render_quality: Fun, dance
+        spatial_distortion: None
+        atmosphere: Groovy, energetic
+        key_features: Bell bottoms
+    - id: SP08-039
+      name: French Revolution
+      category: 3. Historical & Fantasy
+      negativePrompt: modern
+      style:
+        aesthetic: Marie Antoinette
+        form_and_line: Wide hips (panniers)
+        color_palette: Pastel Silk
+        lighting_setup: Chandelier
+        material_texture: Silk, powder
+        render_quality: Excessive, royal
+        spatial_distortion: Huge wig
+        atmosphere: Decadent, fragile
+        key_features: Powdered wig
+    - id: SP08-040
+      name: Space Suit (Retro)
+      category: 3. Historical & Fantasy
+      negativePrompt: modern sleek
+      style:
+        aesthetic: Apollo mission
+        form_and_line: Bulky suit
+        color_palette: White
+        lighting_setup: Harsh space sun
+        material_texture: Fabric, gold visor
+        render_quality: Historic, tech
+        spatial_distortion: None
+        atmosphere: Heroic, exploration
+        key_features: Bubble helmet
+    - id: SP08-041
+      name: Cybernetic Implant
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: fully human
+      style:
+        aesthetic: Cyborg fashion
+        form_and_line: Metal seams on skin
+        color_palette: Skin + Chrome
+        lighting_setup: Studio
+        material_texture: Metal, skin
+        render_quality: Sci-fi, body mod
+        spatial_distortion: Robot arm
+        atmosphere: Transhuman, cool
+        key_features: Metal parts
+    - id: SP08-042
+      name: Post-Apocalyptic Scavenger
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: clean, new
+      style:
+        aesthetic: Mad Max style
+        form_and_line: Rags, armor
+        color_palette: Dust, Brown, Rust
+        lighting_setup: Desert sun
+        material_texture: Dirty, torn
+        render_quality: Survival, gritty
+        spatial_distortion: None
+        atmosphere: Desperate, tough
+        key_features: Goggles
+    - id: SP08-043
+      name: Space Opera Royal
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: simple, earth
+      style:
+        aesthetic: Padme Amidala style
+        form_and_line: Elaborate headpiece
+        color_palette: Red, Gold, Alien
+        lighting_setup: Dramatic
+        material_texture: Exotic fabric
+        render_quality: Regal, alien
+        spatial_distortion: Strange hair
+        atmosphere: Serious, political
+        key_features: Face paint
+    - id: SP08-044
+      name: Wizard Robes
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: pants, modern
+      style:
+        aesthetic: Classic mage
+        form_and_line: Flowing robes
+        color_palette: Deep Blue, Stars
+        lighting_setup: Magic glow
+        material_texture: Velvet, embroidery
+        render_quality: Magical, wise
+        spatial_distortion: None
+        atmosphere: Mysterious, powerful
+        key_features: Staff
+    - id: SP08-045
+      name: Superhero Spandex
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: loose clothes
+      style:
+        aesthetic: Comic book hero
+        form_and_line: Tight muscles
+        color_palette: Primary Colors
+        lighting_setup: Rim light
+        material_texture: Spandex, matte
+        render_quality: Heroic, bold
+        spatial_distortion: Muscles
+        atmosphere: Strong, brave
+        key_features: Logo on chest
+    - id: SP08-046
+      name: Mech Pilot Suit
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: casual
+      style:
+        aesthetic: Evangelion plugsuit
+        form_and_line: Panel lines
+        color_palette: Glossy White/Red
+        lighting_setup: Cockpit glow
+        material_texture: Latex, plastic
+        render_quality: Anime, sci-fi
+        spatial_distortion: None
+        atmosphere: Ready, tech
+        key_features: Interface headset
+    - id: SP08-047
+      name: Vampire Lord
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: modern, messy
+      style:
+        aesthetic: Dracula style
+        form_and_line: High collar
+        color_palette: Black, Red lining
+        lighting_setup: Moonlight
+        material_texture: Velvet, silk
+        render_quality: Gothic, scary
+        spatial_distortion: None
+        atmosphere: Evil, elegant
+        key_features: Cape
+    - id: SP08-048
+      name: Zombie Survivor
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: clean
+      style:
+        aesthetic: Walking Dead style
+        form_and_line: Dirty layers
+        color_palette: Grey, Blood stain
+        lighting_setup: Gritty
+        material_texture: Blood, dirt
+        render_quality: Horror, survival
+        spatial_distortion: Wounds
+        atmosphere: Scared, tough
+        key_features: Weapon
+    - id: SP08-049
+      name: Mermaid Tail
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: legs
+      style:
+        aesthetic: Fantasy mermaid
+        form_and_line: Scales
+        color_palette: Iridescent Green
+        lighting_setup: Underwater
+        material_texture: Scales, wet
+        render_quality: Magical, mythical
+        spatial_distortion: Fish tail
+        atmosphere: Beautiful, wet
+        key_features: Tail
+    - id: SP08-050
+      name: Alien Fashion
+      category: 4. Fantasy/Sci-Fi Costume
+      negativePrompt: human clothes
+      style:
+        aesthetic: Fifth Element style
+        form_and_line: Strange cutouts
+        color_palette: Orange, Plastic
+        lighting_setup: Bright
+        material_texture: Rubber, plastic
+        render_quality: Weird, futuristic
+        spatial_distortion: None
+        atmosphere: Alien, fashion
+        key_features: Straps
+    - id: SP08-051
+      name: Latex/PVC
+      category: 5. Fabric & Texture Focus
+      negativePrompt: matte, cotton
+      style:
+        aesthetic: Fetish fashion
+        form_and_line: Tight highlights
+        color_palette: Black shiny
+        lighting_setup: High contrast reflection
+        material_texture: Glossy latex
+        render_quality: Shiny, edgy
+        spatial_distortion: None
+        atmosphere: Intense, sleek
+        key_features: Reflections
+    - id: SP08-052
+      name: Denim on Denim
+      category: 5. Fabric & Texture Focus
+      negativePrompt: silk, suit
+      style:
+        aesthetic: Canadian Tuxedo
+        form_and_line: Stitching
+        color_palette: Indigo Blue
+        lighting_setup: Studio
+        material_texture: Denim weave
+        render_quality: Textured, casual
+        spatial_distortion: None
+        atmosphere: Cool, blue
+        key_features: Orange stitching
+    - id: SP08-053
+      name: Fur Coat
+      category: 5. Fabric & Texture Focus
+      negativePrompt: smooth
+      style:
+        aesthetic: Luxury fur
+        form_and_line: Soft edges
+        color_palette: Brown/White
+        lighting_setup: Soft
+        material_texture: Fur strands
+        render_quality: Expensive, soft
+        spatial_distortion: None
+        atmosphere: Rich, warm
+        key_features: Fluff
+    - id: SP08-054
+      name: Chainmail
+      category: 5. Fabric & Texture Focus
+      negativePrompt: cloth
+      style:
+        aesthetic: Armor mesh
+        form_and_line: Tiny rings
+        color_palette: Silver
+        lighting_setup: Sparkle
+        material_texture: Metal rings
+        render_quality: Detailed, heavy
+        spatial_distortion: None
+        atmosphere: Protective, historic
+        key_features: Mesh pattern
+    - id: SP08-055
+      name: Knitted Wool
+      category: 5. Fabric & Texture Focus
+      negativePrompt: smooth
+      style:
+        aesthetic: Chunky sweater
+        form_and_line: Cable knit pattern
+        color_palette: Cream, Grey
+        lighting_setup: Soft
+        material_texture: Wool yarn
+        render_quality: Cozy, warm
+        spatial_distortion: None
+        atmosphere: Comfortable, winter
+        key_features: Knit loops
+    - id: SP08-056
+      name: Silk & Satin
+      category: 5. Fabric & Texture Focus
+      negativePrompt: rough, matte
+      style:
+        aesthetic: Slip dress
+        form_and_line: Fluid drape
+        color_palette: Champagne, Red
+        lighting_setup: Soft sheen
+        material_texture: Smooth silk
+        render_quality: Elegant, soft
+        spatial_distortion: None
+        atmosphere: Sensual, expensive
+        key_features: Drape folds
+    - id: SP08-057
+      name: Tweed Suit
+      category: 5. Fabric & Texture Focus
+      negativePrompt: smooth, shiny
+      style:
+        aesthetic: Professor suit
+        form_and_line: Herringbone pattern
+        color_palette: Brown, Green
+        lighting_setup: Flat
+        material_texture: Rough wool
+        render_quality: Classic, textured
+        spatial_distortion: None
+        atmosphere: Smart, old school
+        key_features: Herringbone
+    - id: SP08-058
+      name: Sequins
+      category: 5. Fabric & Texture Focus
+      negativePrompt: matte
+      style:
+        aesthetic: Disco dress
+        form_and_line: Sparkles
+        color_palette: Silver, Gold
+        lighting_setup: Glittering
+        material_texture: Small discs
+        render_quality: Flashy, bright
+        spatial_distortion: None
+        atmosphere: Party, attention
+        key_features: Sparkle
+    - id: SP08-059
+      name: Transparent Plastic
+      category: 5. Fabric & Texture Focus
+      negativePrompt: opaque
+      style:
+        aesthetic: Raincoat
+        form_and_line: Highlights
+        color_palette: Clear, tint
+        lighting_setup: Reflective
+        material_texture: Plastic
+        render_quality: Waterproof, modern
+        spatial_distortion: See-through
+        atmosphere: Wet, tech
+        key_features: Transparency
+    - id: SP08-060
+      name: Velvet
+      category: 5. Fabric & Texture Focus
+      negativePrompt: shiny, hard
+      style:
+        aesthetic: Evening jacket
+        form_and_line: Soft highlights
+        color_palette: Deep Blue, Burgundy
+        lighting_setup: Soft edge glow
+        material_texture: Plush
+        render_quality: Rich, soft
+        spatial_distortion: None
+        atmosphere: Luxury, night
+        key_features: Soft sheen
+    - id: SP08-061
+      name: Lace
+      category: 5. Fabric & Texture Focus
+      negativePrompt: solid
+      style:
+        aesthetic: Wedding dress detail
+        form_and_line: Intricate web
+        color_palette: White, Black
+        lighting_setup: Backlit
+        material_texture: Holes, thread
+        render_quality: Delicate, detailed
+        spatial_distortion: None
+        atmosphere: Romantic, fragile
+        key_features: Pattern
+    - id: SP08-062
+      name: Leather Armor
+      category: 5. Fabric & Texture Focus
+      negativePrompt: metal, cloth
+      style:
+        aesthetic: Fantasy rogue
+        form_and_line: Straps, studs
+        color_palette: Brown, Black
+        lighting_setup: Subsurface scatter
+        material_texture: Worn leather
+        render_quality: Tough, flexible
+        spatial_distortion: None
+        atmosphere: Adventure, tough
+        key_features: Buckles
+    - id: SP08-063
+      name: Feathers
+      category: 5. Fabric & Texture Focus
+      negativePrompt: fur, hair
+      style:
+        aesthetic: Showgirl costume
+        form_and_line: Soft barbs
+        color_palette: Bright, Peacock
+        lighting_setup: Soft
+        material_texture: Feather
+        render_quality: Exotic, soft
+        spatial_distortion: None
+        atmosphere: Grand, bird
+        key_features: Quills
+    - id: SP08-064
+      name: Burlap/Rags
+      category: 5. Fabric & Texture Focus
+      negativePrompt: silk, clean
+      style:
+        aesthetic: Peasant clothes
+        form_and_line: Loose weave
+        color_palette: Brown, Grey
+        lighting_setup: Flat
+        material_texture: Rough fiber
+        render_quality: Poor, scratchy
+        spatial_distortion: Holes
+        atmosphere: Sad, poverty
+        key_features: Fraying
+    - id: SP08-065
+      name: Neon Light Suit
+      category: 5. Fabric & Texture Focus
+      negativePrompt: dark
+      style:
+        aesthetic: Tron style
+        form_and_line: Glowing lines
+        color_palette: Black + Cyan
+        lighting_setup: Self-illuminated
+        material_texture: Light
+        render_quality: Sci-fi, digital
+        spatial_distortion: None
+        atmosphere: Future, tech
+        key_features: Glow
+    - id: SP08-066
+      name: Origami Paper
+      category: 5. Fabric & Texture Focus
+      negativePrompt: fabric
+      style:
+        aesthetic: Paper dress
+        form_and_line: Sharp folds
+        color_palette: White paper
+        lighting_setup: Hard shadows
+        material_texture: Paper grain
+        render_quality: Artistic, fragile
+        spatial_distortion: Rigid
+        atmosphere: Creative, stiff
+        key_features: Folds
+    - id: SP08-067
+      name: Bubble Wrap
+      category: 5. Fabric & Texture Focus
+      negativePrompt: fabric
+      style:
+        aesthetic: Plastic fashion
+        form_and_line: Circles
+        color_palette: Clear plastic
+        lighting_setup: Highlights
+        material_texture: Plastic bubbles
+        render_quality: Weird, pop art
+        spatial_distortion: Bulky
+        atmosphere: Fun, strange
+        key_features: Bubbles
+    - id: SP08-068
+      name: Smoke Dress
+      category: 5. Fabric & Texture Focus
+      negativePrompt: solid
+      style:
+        aesthetic: Dress made of smoke
+        form_and_line: Swirling
+        color_palette: Grey, White
+        lighting_setup: Volumetric
+        material_texture: Gas
+        render_quality: Ethereal, impossible
+        spatial_distortion: Dissolving
+        atmosphere: Ghostly, magic
+        key_features: No edges
+    - id: SP08-069
+      name: Water Dress
+      category: 5. Fabric & Texture Focus
+      negativePrompt: dry
+      style:
+        aesthetic: Dress made of water
+        form_and_line: Splashes
+        color_palette: Clear Blue
+        lighting_setup: Refraction
+        material_texture: Liquid
+        render_quality: Magical, fluid
+        spatial_distortion: Flowing
+        atmosphere: Pure, fantasy
+        key_features: Droplets
+    - id: SP08-070
+      name: Fire Dress
+      category: 5. Fabric & Texture Focus
+      negativePrompt: cold
+      style:
+        aesthetic: Hunger Games style
+        form_and_line: Flames
+        color_palette: Orange, Yellow
+        lighting_setup: Self-illuminated
+        material_texture: Fire
+        render_quality: Dangerous, hot
+        spatial_distortion: Burning
+        atmosphere: Powerful, magic
+        key_features: Flames
+    - id: SP08-071
+      name: Porcelain Doll
+      category: 5. Fabric & Texture Focus
+      negativePrompt: skin
+      style:
+        aesthetic: Living doll
+        form_and_line: Cracks (optional)
+        color_palette: Pale White, Pink
+        lighting_setup: Glossy
+        material_texture: Ceramic
+        render_quality: Creepy, perfect
+        spatial_distortion: Joints
+        atmosphere: Uncanny, stiff
+        key_features: Shiny skin
+    - id: SP08-072
+      name: Tattoo Skin
+      category: 5. Fabric & Texture Focus
+      negativePrompt: clean skin
+      style:
+        aesthetic: Full body suit tattoo
+        form_and_line: Ink lines
+        color_palette: Blue/Black ink
+        lighting_setup: Skin
+        material_texture: Skin
+        render_quality: Artistic, permanent
+        spatial_distortion: None
+        atmosphere: Edgy, committed
+        key_features: Ink
+    - id: SP08-073
+      name: Body Paint
+      category: 5. Fabric & Texture Focus
+      negativePrompt: clothes
+      style:
+        aesthetic: Painted clothes
+        form_and_line: Brush strokes on skin
+        color_palette: Vibrant
+        lighting_setup: Studio
+        material_texture: Matte paint
+        render_quality: Artistic, illusion
+        spatial_distortion: None
+        atmosphere: Creative, naked
+        key_features: Paint
+    - id: SP08-074
+      name: Bandage/Mummy
+      category: 5. Fabric & Texture Focus
+      negativePrompt: skin
+      style:
+        aesthetic: Wrapped in bandages
+        form_and_line: Wrapping lines
+        color_palette: White, Dirty
+        lighting_setup: Flat
+        material_texture: Cloth strips
+        render_quality: Spooky, hurt
+        spatial_distortion: None
+        atmosphere: Horror, hidden
+        key_features: Wraps
+    - id: SP08-075
+      name: Gold Leaf
+      category: 5. Fabric & Texture Focus
+      negativePrompt: dull
+      style:
+        aesthetic: Covered in gold
+        form_and_line: Flakes
+        color_palette: Metallic Gold
+        lighting_setup: Reflection
+        material_texture: Metal foil
+        render_quality: Expensive, statue
+        spatial_distortion: None
+        atmosphere: Divine, rich
+        key_features: Gold skin
+    - id: SP08-076
+      name: Slime/Goo
+      category: 5. Fabric & Texture Focus
+      negativePrompt: dry
+      style:
+        aesthetic: Covered in slime
+        form_and_line: Drips
+        color_palette: Neon Green
+        lighting_setup: Glossy
+        material_texture: Viscous
+        render_quality: Gross, sci-fi
+        spatial_distortion: Melting
+        atmosphere: Weird, sticky
+        key_features: Drips
+    - id: SP08-077
+      name: Stone Statue
+      category: 5. Fabric & Texture Focus
+      negativePrompt: flesh
+      style:
+        aesthetic: Living statue
+        form_and_line: Chisel marks
+        color_palette: Grey Marble
+        lighting_setup: Museum
+        material_texture: Stone
+        render_quality: Classic, cold
+        spatial_distortion: Rigid
+        atmosphere: Timeless, still
+        key_features: Marble
+    - id: SP08-078
+      name: Hologram
+      category: 5. Fabric & Texture Focus
+      negativePrompt: solid
+      style:
+        aesthetic: Star Wars hologram
+        form_and_line: Scanlines
+        color_palette: Blue monochrome
+        lighting_setup: Self-lit
+        material_texture: Light interference
+        render_quality: Sci-fi, glitchy
+        spatial_distortion: Transparent
+        atmosphere: Tech, message
+        key_features: Scanlines
+    - id: SP08-079
+      name: Invisibility Cloak
+      category: 5. Fabric & Texture Focus
+      negativePrompt: visible
+      style:
+        aesthetic: Partially invisible
+        form_and_line: Distortion edge
+        color_palette: Background
+        lighting_setup: Refraction
+        material_texture: Glass-like
+        render_quality: Magic, stealth
+        spatial_distortion: Missing parts
+        atmosphere: Hidden, magic
+        key_features: Distortion
+    - id: SP08-080
+      name: Shadow Form
+      category: 5. Fabric & Texture Focus
+      negativePrompt: light
+      style:
+        aesthetic: Made of shadow
+        form_and_line: Blurry
+        color_palette: Black
+        lighting_setup: None
+        material_texture: Darkness
+        render_quality: Scary, void
+        spatial_distortion: Silhouette
+        atmosphere: Evil, mystery
+        key_features: No details

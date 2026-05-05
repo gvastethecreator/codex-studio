@@ -1,0 +1,1404 @@
+- id: pack_05
+  name: Anime & Manga Universes
+  description: A massive collection of 100 presets inspired by iconic anime and manga art styles from the 70s to modern day.
+  presets:
+    - id: SP05-001
+      name: Astro Boy (1960s/70s)
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Classic Osamu Tezuka style, large eyes, simple shapes
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Nostalgic, heroic
+        key_features: Studio animation quality
+    - id: SP05-002
+      name: Mazinger Z
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 70s Super Robot, bold colors, metallic shading
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Action, retro mecha
+        key_features: Studio animation quality
+    - id: SP05-003
+      name: Lupin III (Part 1/2)
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 70s gritty but comedic, thin sketchy lines, muted colors
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Heist, jazzy
+        key_features: Studio animation quality
+    - id: SP05-004
+      name: Captain Harlock
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Leiji Matsumoto style, tall slender figures, dark space
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Space opera, melancholic
+        key_features: Studio animation quality
+    - id: SP05-005
+      name: Mobile Suit Gundam (0079)
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Late 70s cel animation, realistic mecha proportions, washed out colors
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: War drama, sci-fi
+        key_features: Studio animation quality
+    - id: SP05-006
+      name: Macross (SDF-1)
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 80s idol and mecha, detailed mechanical designs, soft character art
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Space romance, action
+        key_features: Studio animation quality
+    - id: SP05-007
+      name: Fist of the North Star
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Hyper-masculine 80s, heavy shading, thick lines, gritty
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Post-apocalyptic, martial arts
+        key_features: Studio animation quality
+    - id: SP05-008
+      name: City Hunter
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Late 80s urban aesthetic, neon lights, realistic proportions
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Hardboiled, comedic
+        key_features: Studio animation quality
+    - id: SP05-009
+      name: Akira
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: High-budget 80s cyberpunk, extreme detail, neon lighting, fluid motion
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Cyberpunk, dystopian
+        key_features: Studio animation quality
+    - id: SP05-010
+      name: Dragon Ball (Classic)
+      category: 1. 70s & 80s Retro Anime
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Toriyama 80s style, round shapes, soft shading, adventure feel
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Adventure, martial arts
+        key_features: Studio animation quality
+    - id: SP05-011
+      name: Dragon Ball Z
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Sharp angular muscles, intense auras, high contrast shading
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Epic battle, intense
+        key_features: Studio animation quality
+    - id: SP05-012
+      name: Sailor Moon (90s)
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 90s Shojo, pastel colors, sparkly transformations, big expressive eyes
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Magical girl, romantic
+        key_features: Studio animation quality
+    - id: SP05-013
+      name: Neon Genesis Evangelion
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 90s mecha, psychological, sharp character designs, biomechanical
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Psychological, apocalyptic
+        key_features: Studio animation quality
+    - id: SP05-014
+      name: Cowboy Bebop
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Late 90s cinematic, jazz-inspired, gritty space western, fluid animation
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Noir, space western
+        key_features: Studio animation quality
+    - id: SP05-015
+      name: Ghost in the Shell (1995)
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Cyberpunk, highly detailed backgrounds, realistic character designs, green tint
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Philosophical, cyberpunk
+        key_features: Studio animation quality
+    - id: SP05-016
+      name: Yu Yu Hakusho
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 90s Shonen, dark tournament aesthetic, spirit energy, sharp outlines
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Supernatural, fighting
+        key_features: Studio animation quality
+    - id: SP05-017
+      name: Rurouni Kenshin
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Meiji era Japan, 90s samurai aesthetic, dynamic sword fights
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Historical, action
+        key_features: Studio animation quality
+    - id: SP05-018
+      name: Trigun
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Space western, dusty environments, exaggerated expressions, detailed guns
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Sci-fi western, action
+        key_features: Studio animation quality
+    - id: SP05-019
+      name: Serial Experiments Lain
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Avant-garde 90s, high contrast, stark shadows, digital distortion
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Psychological, cyberpunk
+        key_features: Studio animation quality
+    - id: SP05-020
+      name: Cardcaptor Sakura
+      category: 2. 90s Golden Era
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: CLAMP 90s style, intricate costumes, soft magical effects, detailed hair
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Magical girl, cute
+        key_features: Studio animation quality
+    - id: SP05-021
+      name: Naruto (Part 1)
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Early 2000s Shonen, ninja aesthetic, dynamic action, earthy tones
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Ninja, coming of age
+        key_features: Studio animation quality
+    - id: SP05-022
+      name: Bleach
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Tite Kubo style, stylish urban fantasy, sharp angles, high contrast black and white
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Supernatural, stylish
+        key_features: Studio animation quality
+    - id: SP05-023
+      name: One Piece (Early)
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Oda style, exaggerated proportions, vibrant colors, goofy expressions
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Pirate adventure, fun
+        key_features: Studio animation quality
+    - id: SP05-024
+      name: 'Fullmetal Alchemist: Brotherhood'
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Steampunk/alchemy aesthetic, clean animation, detailed military uniforms
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Epic, philosophical
+        key_features: Studio animation quality
+    - id: SP05-025
+      name: Death Note
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Dark, gothic 2000s, realistic proportions, dramatic lighting, psychological tension
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Thriller, dark
+        key_features: Studio animation quality
+    - id: SP05-026
+      name: Code Geass
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: CLAMP character designs, long limbs, sharp chins, mecha battles, dramatic poses
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Mecha, political drama
+        key_features: Studio animation quality
+    - id: SP05-027
+      name: Gurren Lagann
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Over-the-top 2000s, thick outlines, vibrant colors, spiral motifs, extreme perspective
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Hype, mecha
+        key_features: Studio animation quality
+    - id: SP05-028
+      name: Samurai Champloo
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Hip-hop samurai, fluid action, stylized Edo period, thick outlines
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Historical, hip-hop
+        key_features: Studio animation quality
+    - id: SP05-029
+      name: FLCL
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Experimental 2000s, chaotic animation, varied art styles, vibrant
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Surreal, coming of age
+        key_features: Studio animation quality
+    - id: SP05-030
+      name: Soul Eater
+      category: 3. 2000s Classics
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Halloween aesthetic, exaggerated perspectives, distorted backgrounds, stylish
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Gothic, action
+        key_features: Studio animation quality
+    - id: SP05-031
+      name: Demon Slayer (Kimetsu no Yaiba)
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Ufotable style, thick variable outlines, traditional Japanese motifs, stunning VFX
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Historical fantasy, epic
+        key_features: Studio animation quality
+    - id: SP05-032
+      name: Jujutsu Kaisen
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: MAPPA style, gritty urban fantasy, fluid martial arts, dark cursed energy
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Dark fantasy, action
+        key_features: Studio animation quality
+    - id: SP05-033
+      name: Chainsaw Man
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Cinematic framing, gritty, chaotic action, realistic backgrounds, blood and gore
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Dark, chaotic
+        key_features: Studio animation quality
+    - id: SP05-034
+      name: My Hero Academia
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Comic book inspired, bright colors, thick shading, heroic poses
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Superhero, energetic
+        key_features: Studio animation quality
+    - id: SP05-035
+      name: Attack on Titan (Early)
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Thick outlines, intense expressions, steampunk gear, gritty textures
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Despair, epic survival
+        key_features: Studio animation quality
+    - id: SP05-036
+      name: Attack on Titan (MAPPA)
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Muted colors, realistic lighting, cinematic, dark and gritty
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: War drama, dark
+        key_features: Studio animation quality
+    - id: SP05-037
+      name: One Punch Man (Season 1)
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Madhouse fluid animation, extreme impact frames, detailed destruction
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Action comedy, epic
+        key_features: Studio animation quality
+    - id: SP05-038
+      name: Mob Psycho 100
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: ONE's style adapted, sketchy lines, psychedelic psychic effects, expressive
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Surreal, psychic
+        key_features: Studio animation quality
+    - id: SP05-039
+      name: Hunter x Hunter (2011)
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Clean modern Shonen, bright colors, detailed nen auras
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Adventure, tactical
+        key_features: Studio animation quality
+    - id: SP05-040
+      name: 'Fate/stay night: Unlimited Blade Works'
+      category: 4. Modern Shonen & Action
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Ufotable 'Unlimited Budget Works', glowing particle effects, hyper-detailed weapons
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Urban fantasy, epic
+        key_features: Studio animation quality
+    - id: SP05-041
+      name: Rose of Versailles
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 70s Shojo, sparkling eyes, detailed historical dresses, dramatic roses
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Historical romance, dramatic
+        key_features: Studio animation quality
+    - id: SP05-042
+      name: Revolutionary Girl Utena
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Surreal 90s Shojo, theatrical staging, symbolic imagery, elegant duels
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Surreal, romantic
+        key_features: Studio animation quality
+    - id: SP05-043
+      name: Fruits Basket (2019)
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Modern Shojo, soft lighting, pastel colors, expressive and emotional
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Heartwarming, drama
+        key_features: Studio animation quality
+    - id: SP05-044
+      name: Nana
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 2000s Josei, punk rock aesthetic, fashion-focused, realistic proportions
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Drama, music
+        key_features: Studio animation quality
+    - id: SP05-045
+      name: Ouran High School Host Club
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Mid-2000s Shojo comedy, bright colors, floating rose petals, elegant settings
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Romantic comedy, lavish
+        key_features: Studio animation quality
+    - id: SP05-046
+      name: Violet Evergarden
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Kyoto Animation masterpiece, hyper-detailed eyes, intricate mechanical hands, lush lighting
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Emotional, beautiful
+        key_features: Studio animation quality
+    - id: SP05-047
+      name: Kimi ni Todoke
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Soft pastel, sparkling bubbles, gentle expressions, light and airy
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Innocent romance
+        key_features: Studio animation quality
+    - id: SP05-048
+      name: Yona of the Dawn
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Historical fantasy Shojo, detailed traditional clothing, vibrant hair colors
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Epic romance, adventure
+        key_features: Studio animation quality
+    - id: SP05-049
+      name: Vampire Knight
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Gothic Shojo, dark reds and blacks, elegant uniforms, brooding atmosphere
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Gothic romance
+        key_features: Studio animation quality
+    - id: SP05-050
+      name: A Sign of Affection
+      category: 5. Classic & Modern Shojo
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Modern Shojo, very soft lighting, warm tones, expressive sign language
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Sweet, cozy
+        key_features: Studio animation quality
+    - id: SP05-051
+      name: 'Cyberpunk: Edgerunners'
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Studio Trigger, neon colors, hyper-violent, stylized UI, fast-paced
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Cyberpunk, tragic
+        key_features: Studio animation quality
+    - id: SP05-052
+      name: Psycho-Pass
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Dystopian sci-fi, sleek futuristic weapons (Dominators), dark urban environments
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Cyberpunk, police procedural
+        key_features: Studio animation quality
+    - id: SP05-053
+      name: 'Gundam: Iron-Blooded Orphans'
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Gritty mecha, heavy mechanical detail, sparks and oil, visceral combat
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: War, gritty
+        key_features: Studio animation quality
+    - id: SP05-054
+      name: Gundam SEED
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Early 2000s digital mecha, sleek designs, beam spam, dramatic character art
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Space opera, dramatic
+        key_features: Studio animation quality
+    - id: SP05-055
+      name: Ergo Proxy
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Dark, gothic cyberpunk, muted color palette, realistic character designs
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Philosophical, dark
+        key_features: Studio animation quality
+    - id: SP05-056
+      name: Promare
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Studio Trigger, geometric shapes, neon pastel colors, flat shading, high energy
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Hype, stylized
+        key_features: Studio animation quality
+    - id: SP05-057
+      name: Darling in the Franxx
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Sleek mecha designs, bright colors, post-apocalyptic landscapes
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Sci-fi romance, action
+        key_features: Studio animation quality
+    - id: SP05-058
+      name: 86 EIGHTY-SIX
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Modern war drama, spider-like mechs, cinematic direction, detailed UI
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: War, tragic
+        key_features: Studio animation quality
+    - id: SP05-059
+      name: 'Ghost in the Shell: Stand Alone Complex'
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Early 2000s cyberpunk, detailed tachikomas, realistic hacking interfaces
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Cyberpunk, tactical
+        key_features: Studio animation quality
+    - id: SP05-060
+      name: Aldnoah.Zero
+      category: 6. Mecha & Cyberpunk
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Sleek modern mecha, orbital knights, realistic military vs super robots
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Sci-fi, tactical
+        key_features: Studio animation quality
+    - id: SP05-061
+      name: Berserk (1997)
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 90s dark fantasy, crosshatching, gritty medieval, heavy shadows
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Grimdark, brutal
+        key_features: Studio animation quality
+    - id: SP05-062
+      name: Tokyo Ghoul
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Urban dark fantasy, glowing red eyes (kakugan), vibrant kagune, dark cityscapes
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Tragic, horror
+        key_features: Studio animation quality
+    - id: SP05-063
+      name: Hellsing Ultimate
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Hyper-violent, deep shadows, glowing red eyes, exaggerated expressions
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Gothic horror, action
+        key_features: Studio animation quality
+    - id: SP05-064
+      name: Vinland Saga
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Historical Viking, realistic combat, detailed nature, expressive character growth
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Historical, epic
+        key_features: Studio animation quality
+    - id: SP05-065
+      name: Claymore
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Pale color palette, silver eyes, monstrous transformations, medieval setting
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Dark fantasy, bleak
+        key_features: Studio animation quality
+    - id: SP05-066
+      name: Parasyte -the maxim-
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Body horror, morphing flesh, modern urban setting, clean animation
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Sci-fi horror, tense
+        key_features: Studio animation quality
+    - id: SP05-067
+      name: Made in Abyss
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Deceptively cute characters, lush but terrifying environments, detailed creatures
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Adventure, cosmic horror
+        key_features: Studio animation quality
+    - id: SP05-068
+      name: Dorohedoro
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Grimey, industrial, chaotic, masked characters, unique magic effects
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Bizarre, gritty
+        key_features: Studio animation quality
+    - id: SP05-069
+      name: Goblin Slayer
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Dark RPG fantasy, dirty armor, visceral combat, dimly lit caves
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Dark fantasy, tactical
+        key_features: Studio animation quality
+    - id: SP05-070
+      name: Devilman Crybaby
+      category: 7. Dark Fantasy & Seinen
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Masaaki Yuasa style, fluid, distorted, neon colors, psychedelic horror
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Psychedelic, tragic
+        key_features: Studio animation quality
+    - id: SP05-071
+      name: Spirited Away (Ghibli)
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Hayao Miyazaki style, lush hand-painted backgrounds, expressive animation, magical realism
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Magical, wondrous
+        key_features: Studio animation quality
+    - id: SP05-072
+      name: Princess Mononoke (Ghibli)
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Epic fantasy, detailed forests, corrupted demons, traditional Japanese elements
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Epic, nature
+        key_features: Studio animation quality
+    - id: SP05-073
+      name: Howl's Moving Castle (Ghibli)
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Steampunk/magic, intricate moving castle, European town architecture
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Romantic, magical
+        key_features: Studio animation quality
+    - id: SP05-074
+      name: Your Name (Makoto Shinkai)
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Hyper-realistic backgrounds, lens flares, stunning skies, vibrant lighting
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Emotional, breathtaking
+        key_features: Studio animation quality
+    - id: SP05-075
+      name: Weathering With You (Shinkai)
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Detailed rain effects, photorealistic Tokyo, glowing sunlight breaking through clouds
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Atmospheric, beautiful
+        key_features: Studio animation quality
+    - id: SP05-076
+      name: Paprika (Satoshi Kon)
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Surreal dreamscapes, seamless transitions, vibrant parade, psychological
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Surreal, psychological
+        key_features: Studio animation quality
+    - id: SP05-077
+      name: Perfect Blue (Satoshi Kon)
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: 90s psychological thriller, realistic urban settings, unsettling camera angles
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Thriller, unsettling
+        key_features: Studio animation quality
+    - id: SP05-078
+      name: Akira (Katsuhiro Otomo)
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Incredible mechanical detail, fluid animation, neo-Tokyo, iconic light trails
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Cyberpunk masterpiece
+        key_features: Studio animation quality
+    - id: SP05-079
+      name: Redline
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Hand-drawn hyper-detailed, extreme speed lines, heavy black shadows, vibrant colors
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Adrenaline, sci-fi racing
+        key_features: Studio animation quality
+    - id: SP05-080
+      name: Children of the Sea
+      category: 8. Studio Masterpieces
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Studio 4°C, incredibly fluid water animation, cosmic ocean imagery, highly detailed eyes
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Cosmic, aquatic
+        key_features: Studio animation quality
+    - id: SP05-081
+      name: K-On! (KyoAni)
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Kyoto Animation moe, soft lighting, detailed instruments, squishy faces
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Cute, relaxing
+        key_features: Studio animation quality
+    - id: SP05-082
+      name: Nichijou
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Simple character designs, extreme exaggerated reactions, fluid comedy animation
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Absurdist comedy
+        key_features: Studio animation quality
+    - id: SP05-083
+      name: Lucky Star
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Early 2000s moe, flat colors, simple backgrounds, chibi-like proportions
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Otaku comedy, relaxed
+        key_features: Studio animation quality
+    - id: SP05-084
+      name: The Melancholy of Haruhi Suzumiya
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Mid-2000s KyoAni, detailed school settings, expressive animation
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Sci-fi slice of life
+        key_features: Studio animation quality
+    - id: SP05-085
+      name: Bocchi the Rock!
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Mixed media, glitch effects, expressive anxiety, detailed live house lighting
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Comedy, music
+        key_features: Studio animation quality
+    - id: SP05-086
+      name: Yuru Camp
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Cozy camping, beautiful landscape backgrounds, warm campfire lighting
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Cozy, peaceful
+        key_features: Studio animation quality
+    - id: SP05-087
+      name: Non Non Biyori
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Lush countryside backgrounds, slow pacing, soft character designs
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Rural, relaxing
+        key_features: Studio animation quality
+    - id: SP05-088
+      name: Miss Kobayashi's Dragon Maid
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: KyoAni, vibrant colors, detailed dragon scales, dynamic action mixed with slice of life
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Whimsical, comedy
+        key_features: Studio animation quality
+    - id: SP05-089
+      name: Azumanga Daioh
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Early 2000s simple style, floating cats, surreal comedy elements
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Surreal comedy
+        key_features: Studio animation quality
+    - id: SP05-090
+      name: Clannad
+      category: 9. Slice of Life & Moe
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Key visual arts style, huge eyes, soft lighting, emotional atmosphere
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Tragic, emotional
+        key_features: Studio animation quality
+    - id: SP05-091
+      name: Sword Art Online (Aincrad)
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Early 2010s VRMMO, glowing UI elements, detailed weapon designs, bright fantasy worlds
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Action, virtual reality
+        key_features: Studio animation quality
+    - id: SP05-092
+      name: Re:Zero
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Dark isekai, detailed character designs, visceral deaths, psychological horror elements
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Psychological, fantasy
+        key_features: Studio animation quality
+    - id: SP05-093
+      name: Mushoku Tensei
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: High fantasy, cinematic lighting, detailed magic circles, rich world-building
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Epic fantasy, adventure
+        key_features: Studio animation quality
+    - id: SP05-094
+      name: Konosuba
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Loose animation, exaggerated comedic expressions, bright fantasy colors
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Comedy, parody
+        key_features: Studio animation quality
+    - id: SP05-095
+      name: 'Frieren: Beyond Journey''s End'
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Madhouse, serene fantasy landscapes, fluid magic combat, muted elegant colors
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Melancholic, epic
+        key_features: Studio animation quality
+    - id: SP05-096
+      name: No Game No Life
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Hyper-saturated, pink/purple outlines, neon fantasy, surreal chessboards
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Vibrant, strategic
+        key_features: Studio animation quality
+    - id: SP05-097
+      name: Overlord
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Dark fantasy RPG, skeletal protagonist, gothic architecture, glowing red eyes
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Villainous, dark fantasy
+        key_features: Studio animation quality
+    - id: SP05-098
+      name: That Time I Got Reincarnated as a Slime
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Bright, colorful fantasy, diverse monster designs, clean animation
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Optimistic, fantasy
+        key_features: Studio animation quality
+    - id: SP05-099
+      name: Shield Hero
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: RPG mechanics, glowing shield UI, medieval fantasy setting
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Underdog, fantasy
+        key_features: Studio animation quality
+    - id: SP05-100
+      name: DanMachi
+      category: 10. Isekai & High Fantasy
+      negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
+      style:
+        aesthetic: Dungeon crawler, glowing crystals, detailed adventuring gear
+        form_and_line: Anime style linework
+        color_palette: Anime color palette
+        lighting_setup: Anime shading
+        material_texture: Cel shaded or anime background
+        render_quality: Masterpiece, high quality anime screenshot
+        spatial_distortion: Anime proportions
+        atmosphere: Action, fantasy
+        key_features: Studio animation quality

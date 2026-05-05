@@ -1,0 +1,1124 @@
+- id: pack_06
+  name: Essential Art Styles
+  description: A comprehensive collection of 80+ traditional and digital art techniques.
+  presets:
+    - id: SP06-001
+      name: Oil Painting (Classic)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Classic oil painting on canvas
+        form_and_line: Thick impasto brush strokes
+        color_palette: Rich, deep, blended traditional pigments
+        lighting_setup: Dramatic chiaroscuro
+        material_texture: Canvas grain, raised paint, brush bristles
+        render_quality: Masterpiece, museum quality
+        spatial_distortion: Slightly impressionistic
+        atmosphere: Timeless, expressive
+        key_features: Visible brushwork
+    - id: SP06-002
+      name: Watercolor (Soft)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Soft watercolor painting
+        form_and_line: Fluid, bleeding edges
+        color_palette: Translucent, pastel, washed out
+        lighting_setup: Soft, diffuse, paper white highlights
+        material_texture: Cold press paper grain, water stains
+        render_quality: Delicate, artistic
+        spatial_distortion: Colors bleeding outside lines
+        atmosphere: Dreamy, soft, nostalgic
+        key_features: Watery texture
+    - id: SP06-003
+      name: Acrylic (Modern)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Modern acrylic painting
+        form_and_line: Clean edges, layered paint
+        color_palette: Bright, opaque, synthetic colors
+        lighting_setup: Flat or stylized lighting
+        material_texture: Slight canvas texture, matte finish
+        render_quality: Modern art, vibrant
+        spatial_distortion: Stylized shapes
+        atmosphere: Energetic, contemporary
+        key_features: Opaque paint layers
+    - id: SP06-004
+      name: Gouache (Flat)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Opaque gouache illustration
+        form_and_line: Crisp edges, matte finish
+        color_palette: Vibrant, solid, chalky
+        lighting_setup: Flat, graphic
+        material_texture: Smooth paper, matte paint
+        render_quality: Illustrative, design-focused
+        spatial_distortion: Simplified forms
+        atmosphere: Playful, graphic
+        key_features: Matte opacity
+    - id: SP06-005
+      name: Tempera (Egg)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Renaissance egg tempera
+        form_and_line: Fine cross-hatching strokes
+        color_palette: Bright, pure pigments, gold leaf
+        lighting_setup: Soft, internal glow
+        material_texture: Wood panel, smooth gesso
+        render_quality: Historical, religious art
+        spatial_distortion: Stiff poses
+        atmosphere: Sacred, ancient
+        key_features: Fine linear brushwork
+    - id: SP06-006
+      name: Encaustic (Wax)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Hot wax painting
+        form_and_line: Soft, melted edges
+        color_palette: Deep, translucent, layered
+        lighting_setup: Subsurface scattering
+        material_texture: Thick wax, scraped layers
+        render_quality: Textured, ancient
+        spatial_distortion: Blurred details
+        atmosphere: Mysterious, tactile
+        key_features: Waxy surface
+    - id: SP06-007
+      name: Fresco (Wall)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Italian wall fresco
+        form_and_line: Integrated into plaster
+        color_palette: Earthy, desaturated, matte
+        lighting_setup: Natural ambient
+        material_texture: Plaster cracks, wall texture
+        render_quality: Ancient, architectural
+        spatial_distortion: Faded areas
+        atmosphere: Historic, grand
+        key_features: Plaster texture
+    - id: SP06-008
+      name: Ink Wash (Sumi-e)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: East Asian ink wash painting
+        form_and_line: Expressive brush strokes
+        color_palette: Black ink, grey washes
+        lighting_setup: Minimalist
+        material_texture: Rice paper, ink bleed
+        render_quality: Zen, minimal, masterful
+        spatial_distortion: Abstracted forms
+        atmosphere: Peaceful, meditative
+        key_features: Brush pressure variation
+    - id: SP06-009
+      name: Impressionist Oil
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Monet style impressionism
+        form_and_line: Short, broken brushstrokes
+        color_palette: Vibrant, unblended optical mixing
+        lighting_setup: Natural outdoor light
+        material_texture: Thick paint dabs
+        render_quality: Artistic, plein air
+        spatial_distortion: Loss of detail
+        atmosphere: Light, airy, fleeting
+        key_features: Dabbed paint texture
+    - id: SP06-010
+      name: Pointillism
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Seurat style dot painting
+        form_and_line: Composed entirely of dots
+        color_palette: Optical mixing of primary colors
+        lighting_setup: Vibrating light
+        material_texture: Stippled paint
+        render_quality: Scientific, meticulous
+        spatial_distortion: Forms dissolve into dots
+        atmosphere: Static, shimmering
+        key_features: Dot pattern
+    - id: SP06-011
+      name: Palette Knife
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Thick impasto knife painting
+        form_and_line: Sharp geometric paint slabs
+        color_palette: Pure unmixed paint
+        lighting_setup: High contrast texture
+        material_texture: Extreme relief, sculptural paint
+        render_quality: Expressive, modern
+        spatial_distortion: Abstracted details
+        atmosphere: Bold, energetic
+        key_features: Knife marks
+    - id: SP06-012
+      name: Spray Paint (Graffiti)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Street art mural
+        form_and_line: Soft spray edges, drips
+        color_palette: Neon, vibrant, aerosol
+        lighting_setup: Outdoor city light
+        material_texture: Concrete wall, paint drips
+        render_quality: Urban, gritty
+        spatial_distortion: Stylized forms
+        atmosphere: Rebellious, cool
+        key_features: Spray texture
+    - id: SP06-013
+      name: Airbrush (80s)
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Retro 80s airbrush art
+        form_and_line: Soft gradients, no brush marks
+        color_palette: Chrome, neon, sunset
+        lighting_setup: Hyper-real, glossy
+        material_texture: Smooth, grainless
+        render_quality: Sci-fi cover, van art
+        spatial_distortion: Idealized forms
+        atmosphere: Retro, slick
+        key_features: Smooth gradients
+    - id: SP06-014
+      name: Casein Paint
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Milk-based paint illustration
+        form_and_line: Matte, velvety
+        color_palette: High chroma, matte
+        lighting_setup: Soft, illustrative
+        material_texture: Smooth, durable
+        render_quality: Vintage illustration
+        spatial_distortion: Clean shapes
+        atmosphere: Classic, sturdy
+        key_features: Velvet matte finish
+    - id: SP06-015
+      name: Black Velvet Painting
+      category: 1. Traditional Painting
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Kitsch painting on black velvet
+        form_and_line: Glowing edges
+        color_palette: Neon against deep black
+        lighting_setup: Glowing, high contrast
+        material_texture: Velvet fabric fuzz
+        render_quality: Kitsch, retro
+        spatial_distortion: Soft focus
+        atmosphere: Tacky, fun, night
+        key_features: Black background dominance
+    - id: SP06-016
+      name: Graphite Pencil
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Realistic pencil drawing
+        form_and_line: Precise shading, sharp lines
+        color_palette: Greyscale, graphite sheen
+        lighting_setup: Value based
+        material_texture: Paper tooth, smudge
+        render_quality: Academic, detailed
+        spatial_distortion: None
+        atmosphere: Studious, quiet
+        key_features: Graphite texture
+    - id: SP06-017
+      name: Charcoal (Expressive)
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Loose charcoal sketch
+        form_and_line: Thick, smudged, bold
+        color_palette: Deep black, grey
+        lighting_setup: Dramatic contrast
+        material_texture: Rough paper, dust
+        render_quality: Emotional, raw
+        spatial_distortion: Gestural
+        atmosphere: Dark, intense
+        key_features: Smudged texture
+    - id: SP06-018
+      name: Ink (Pen & Ink)
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Classic dip pen illustration
+        form_and_line: Cross-hatching, stippling
+        color_palette: Black ink on white
+        lighting_setup: High contrast
+        material_texture: Smooth paper
+        render_quality: Book illustration, detailed
+        spatial_distortion: Stylized shading
+        atmosphere: Classic, storybook
+        key_features: Line shading
+    - id: SP06-019
+      name: Ballpoint Pen
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Doodle with biro pen
+        form_and_line: Thin, scribbly lines
+        color_palette: Blue or Black ink
+        lighting_setup: Flat
+        material_texture: Notebook paper, indentations
+        render_quality: Casual, sketch
+        spatial_distortion: Rough shading
+        atmosphere: Bored, creative
+        key_features: Scribble texture
+    - id: SP06-020
+      name: Colored Pencil
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Prismacolor drawing
+        form_and_line: Layered wax strokes
+        color_palette: Vibrant, blended
+        lighting_setup: Soft
+        material_texture: Wax buildup, paper grain
+        render_quality: Illustrative, soft
+        spatial_distortion: None
+        atmosphere: Gentle, colorful
+        key_features: Wax texture
+    - id: SP06-021
+      name: Pastel (Soft)
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Chalk pastel drawing
+        form_and_line: Smudged, powdery
+        color_palette: Matte, vibrant, blended
+        lighting_setup: Soft, diffuse
+        material_texture: Textured paper, dust
+        render_quality: Fine art, degas style
+        spatial_distortion: Soft edges
+        atmosphere: Dreamy, atmospheric
+        key_features: Chalky finish
+    - id: SP06-022
+      name: Oil Pastel
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Crayon-like drawing
+        form_and_line: Thick, waxy, chunky
+        color_palette: Bold, unblended
+        lighting_setup: Flat
+        material_texture: Sticky wax, sgraffito
+        render_quality: Childlike, expressive
+        spatial_distortion: Rough shapes
+        atmosphere: Playful, bold
+        key_features: Chunky texture
+    - id: SP06-023
+      name: Silverpoint
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Renaissance metal stylus drawing
+        form_and_line: Extremely fine grey lines
+        color_palette: Pale grey, tarnished warm tone
+        lighting_setup: Delicate
+        material_texture: Prepared ground (bone ash)
+        render_quality: Da Vinci, precise
+        spatial_distortion: None
+        atmosphere: Antique, delicate
+        key_features: Fine lines
+    - id: SP06-024
+      name: Conte Crayon
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Sanguine/Sepia drawing
+        form_and_line: Square stick strokes
+        color_palette: Red, Brown, Black, White
+        lighting_setup: Classical study
+        material_texture: Textured paper
+        render_quality: Life drawing, academic
+        spatial_distortion: None
+        atmosphere: Warm, classical
+        key_features: Earth tones
+    - id: SP06-025
+      name: Technical Pen
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Architectural drafting
+        form_and_line: Uniform line weight
+        color_palette: Black on white
+        lighting_setup: None
+        material_texture: Vellum, smooth
+        render_quality: Blueprint, schematic
+        spatial_distortion: Geometric
+        atmosphere: Precise, technical
+        key_features: Clean lines
+    - id: SP06-026
+      name: Marker (Copic)
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Alcohol marker rendering
+        form_and_line: Clean ink outlines
+        color_palette: Vibrant, blended streaks
+        lighting_setup: Glossy highlights
+        material_texture: Marker paper, bleed
+        render_quality: Product design, manga
+        spatial_distortion: None
+        atmosphere: Modern, slick
+        key_features: Marker streaks
+    - id: SP06-027
+      name: Chalk (Blackboard)
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Drawing on chalkboard
+        form_and_line: Dusty white lines
+        color_palette: White on Black/Green
+        lighting_setup: Flat
+        material_texture: Slate, chalk dust
+        render_quality: Menu art, school
+        spatial_distortion: Rough
+        atmosphere: Rustic, temporary
+        key_features: Dusty lines
+    - id: SP06-028
+      name: Scratchboard
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Subtractive drawing
+        form_and_line: White lines scratched out of black
+        color_palette: Black and White
+        lighting_setup: High contrast
+        material_texture: Scratched clay
+        render_quality: Detailed, illustrative
+        spatial_distortion: Stylized texture
+        atmosphere: Dramatic, inverted
+        key_features: White on black
+    - id: SP06-029
+      name: Silhouette
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Paper cutout profile
+        form_and_line: Outline only
+        color_palette: Solid Black on White
+        lighting_setup: Backlit
+        material_texture: Paper edge
+        render_quality: Victorian, simple
+        spatial_distortion: No internal details
+        atmosphere: Graphic, stark
+        key_features: Solid shape
+    - id: SP06-030
+      name: Continuous Line
+      category: 2. Drawing & Sketching
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: One-line drawing
+        form_and_line: Unbroken single line
+        color_palette: Black on White
+        lighting_setup: None
+        material_texture: Smooth
+        render_quality: Picasso, minimalist
+        spatial_distortion: Abstracted
+        atmosphere: Fluid, simple
+        key_features: Single line
+    - id: SP06-031
+      name: Etching
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Intaglio print
+        form_and_line: Fine, fuzzy bitten lines
+        color_palette: Black ink, cream paper
+        lighting_setup: Linear shading
+        material_texture: Plate tone, embossed paper
+        render_quality: Rembrandt, detailed
+        spatial_distortion: None
+        atmosphere: Antique, classic
+        key_features: Plate mark
+    - id: SP06-032
+      name: Woodcut
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Relief block print
+        form_and_line: Thick, angular, gouged
+        color_palette: Black and White high contrast
+        lighting_setup: Stark
+        material_texture: Wood grain, ink squash
+        render_quality: German expressionism, bold
+        spatial_distortion: Angular forms
+        atmosphere: Dramatic, primitive
+        key_features: Gouge marks
+    - id: SP06-033
+      name: Linocut
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Linoleum block print
+        form_and_line: Smooth curves, fluid cuts
+        color_palette: Black, White, or multi-block color
+        lighting_setup: Flat
+        material_texture: Ink texture, paper
+        render_quality: Graphic, craft
+        spatial_distortion: Simplified shapes
+        atmosphere: Bold, graphic
+        key_features: Clean cuts
+    - id: SP06-034
+      name: Lithography
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Stone print
+        form_and_line: Crayon-like texture
+        color_palette: Soft blacks, greys
+        lighting_setup: Soft
+        material_texture: Limestone grain
+        render_quality: Toulouse-Lautrec, poster
+        spatial_distortion: None
+        atmosphere: Artistic, soft
+        key_features: Grainy texture
+    - id: SP06-035
+      name: Screenprint (Serigraphy)
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Silkscreen poster
+        form_and_line: No outlines, color shapes
+        color_palette: Flat, vibrant, layered
+        lighting_setup: None
+        material_texture: Mesh pattern, ink overlay
+        render_quality: Warhol, pop art
+        spatial_distortion: Misregistration (offset)
+        atmosphere: Commercial, bold
+        key_features: Layered colors
+    - id: SP06-036
+      name: Monotype
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Single painterly print
+        form_and_line: Soft, smashed paint
+        color_palette: Muted, blended
+        lighting_setup: Soft
+        material_texture: Glass transfer, paper
+        render_quality: Unique, expressive
+        spatial_distortion: Blurred
+        atmosphere: Ghostly, soft
+        key_features: Transfer texture
+    - id: SP06-037
+      name: Aquatint
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Tonal etching
+        form_and_line: None, tonal areas
+        color_palette: Greyscale, sepia
+        lighting_setup: Soft gradients
+        material_texture: Rosin dust, granular
+        render_quality: Goya, atmospheric
+        spatial_distortion: None
+        atmosphere: Dark, moody
+        key_features: Granular tone
+    - id: SP06-038
+      name: Mezzotint
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Dark to light engraving
+        form_and_line: None, rich blacks
+        color_palette: Deep black, velvet grey
+        lighting_setup: Dramatic, emerging from dark
+        material_texture: Rocker tool marks
+        render_quality: Velvety, detailed
+        spatial_distortion: None
+        atmosphere: Night, dramatic
+        key_features: Rich blacks
+    - id: SP06-039
+      name: Risograph
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Digital duplicator print
+        form_and_line: Dithered
+        color_palette: Neon pink, blue, yellow, grain
+        lighting_setup: Flat
+        material_texture: Rice paper, dithering
+        render_quality: Zine, retro, cheap
+        spatial_distortion: Misregistration
+        atmosphere: Fun, indie
+        key_features: Grainy dither
+    - id: SP06-040
+      name: Cyanotype
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Sun print blueprint
+        form_and_line: White silhouettes
+        color_palette: Prussian Blue and White
+        lighting_setup: Inverted (negative)
+        material_texture: Watercolor paper
+        render_quality: Botanical, architectural
+        spatial_distortion: Silhouette only
+        atmosphere: Blue, scientific
+        key_features: Blue monochrome
+    - id: SP06-041
+      name: Rubber Stamp
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Hand stamped image
+        form_and_line: Broken, uneven ink
+        color_palette: Red, Black, Blue ink
+        lighting_setup: Flat
+        material_texture: Ink pad, paper grain
+        render_quality: Rough, bureaucratic
+        spatial_distortion: Incomplete impression
+        atmosphere: Official, rough
+        key_features: Stamp border
+    - id: SP06-042
+      name: Halftone (Newspaper)
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Vintage newspaper photo
+        form_and_line: Dot pattern
+        color_palette: Black dots on newsprint
+        lighting_setup: Flat
+        material_texture: Cheap paper, ink smudge
+        render_quality: Low res, mass media
+        spatial_distortion: Pixelated by dots
+        atmosphere: Vintage, gritty
+        key_features: Visible dots
+    - id: SP06-043
+      name: Engraving (Banknote)
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Money or certificate art
+        form_and_line: Precise parallel lines
+        color_palette: Green, Grey, Monochrome
+        lighting_setup: Linear shading
+        material_texture: Cotton paper
+        render_quality: Official, detailed
+        spatial_distortion: None
+        atmosphere: Serious, valuable
+        key_features: Guilloche patterns
+    - id: SP06-044
+      name: Drypoint
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Scratched metal print
+        form_and_line: Velvety, burred lines
+        color_palette: Black ink, warm paper
+        lighting_setup: Soft
+        material_texture: Ink blur
+        render_quality: Expressive, short-run
+        spatial_distortion: None
+        atmosphere: Soft, rich
+        key_features: Burr texture
+    - id: SP06-045
+      name: Collagraph
+      category: 3. Printmaking
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Textured collage print
+        form_and_line: Embossed textures
+        color_palette: Earthy, multi-colored
+        lighting_setup: Relief
+        material_texture: Sand, glue, fabric
+        render_quality: Experimental, tactile
+        spatial_distortion: Abstracted
+        atmosphere: Rough, organic
+        key_features: Heavy texture
+    - id: SP06-046
+      name: Digital Painting
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Standard digital illustration
+        form_and_line: Clean, refined
+        color_palette: RGB, vibrant
+        lighting_setup: Studio
+        material_texture: Smooth
+        render_quality: ArtStation, professional
+        spatial_distortion: None
+        atmosphere: Polished
+        key_features: Digital look
+    - id: SP06-047
+      name: Speedpaint
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Quick digital sketch
+        form_and_line: Rough, energetic
+        color_palette: Bold, unrefined
+        lighting_setup: Dramatic
+        material_texture: Brush strokes
+        render_quality: Concept, loose
+        spatial_distortion: Unfinished edges
+        atmosphere: Dynamic, fast
+        key_features: Loose strokes
+    - id: SP06-048
+      name: Matte Painting
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Photorealistic environment extension
+        form_and_line: Invisible
+        color_palette: Cinematic, atmospheric
+        lighting_setup: Natural, consistent
+        material_texture: Photo textures
+        render_quality: Movie background
+        spatial_distortion: None
+        atmosphere: Epic, vast
+        key_features: Seamless blend
+    - id: SP06-049
+      name: Vector Art (Flat)
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Adobe Illustrator style
+        form_and_line: Bezier curves
+        color_palette: Solid flat colors
+        lighting_setup: None
+        material_texture: None
+        render_quality: Icon, logo, clean
+        spatial_distortion: Simplified
+        atmosphere: Corporate, modern
+        key_features: Infinite resolution
+    - id: SP06-050
+      name: Pixel Art (16-bit)
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: SNES game sprite
+        form_and_line: Pixel perfect
+        color_palette: Limited palette
+        lighting_setup: Dithered
+        material_texture: Pixel grid
+        render_quality: Retro game
+        spatial_distortion: Blocky
+        atmosphere: Nostalgic
+        key_features: Grid alignment
+    - id: SP06-051
+      name: Low Poly
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: 3D mesh with visible facets
+        form_and_line: Sharp edges
+        color_palette: Flat shaded polygons
+        lighting_setup: Global illumination
+        material_texture: None
+        render_quality: Indie game
+        spatial_distortion: Geometric
+        atmosphere: Simple, clean
+        key_features: Triangles
+    - id: SP06-052
+      name: Voxel Art
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: 3D cubes
+        form_and_line: Cubes
+        color_palette: Vibrant
+        lighting_setup: AO
+        material_texture: None
+        render_quality: Minecraft style
+        spatial_distortion: Blocky
+        atmosphere: Cute, digital
+        key_features: Cubes
+    - id: SP06-053
+      name: Concept Art
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Movie design visualization
+        form_and_line: Painterly
+        color_palette: Mood lighting
+        lighting_setup: Cinematic
+        material_texture: Photobash
+        render_quality: AAA Game
+        spatial_distortion: None
+        atmosphere: Epic, storytelling
+        key_features: Focal point detail
+    - id: SP06-054
+      name: Isometric
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: 3D parallel projection
+        form_and_line: Parallel lines
+        color_palette: Vibrant
+        lighting_setup: Studio
+        material_texture: Smooth
+        render_quality: Game asset
+        spatial_distortion: No perspective
+        atmosphere: Organized, toy-like
+        key_features: 30 degree angle
+    - id: SP06-055
+      name: Glitch Art
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Corrupted data
+        form_and_line: Jagged, displaced
+        color_palette: RGB shift, neon
+        lighting_setup: Broken
+        material_texture: Pixels, noise
+        render_quality: Broken, cyber
+        spatial_distortion: Tearing
+        atmosphere: Chaotic, tech
+        key_features: Digital artifacts
+    - id: SP06-056
+      name: Synthwave
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: 80s retro-futurism
+        form_and_line: Grid lines
+        color_palette: Purple, Pink, Cyan
+        lighting_setup: Neon glow
+        material_texture: Scanlines
+        render_quality: Retro, aesthetic
+        spatial_distortion: Chrome reflection
+        atmosphere: Nostalgic, cool
+        key_features: Sunset gradient
+    - id: SP06-057
+      name: Double Exposure
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Blended images
+        form_and_line: Silhouette
+        color_palette: Mixed palettes
+        lighting_setup: Contrast
+        material_texture: Mixed
+        render_quality: Artistic
+        spatial_distortion: Image inside shape
+        atmosphere: Dreamy
+        key_features: Silhouette container
+    - id: SP06-058
+      name: Polygon Art
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: 2D geometric triangulation
+        form_and_line: Triangles
+        color_palette: Gradients per triangle
+        lighting_setup: Flat
+        material_texture: None
+        render_quality: Vector, modern
+        spatial_distortion: Geometric
+        atmosphere: Clean, sharp
+        key_features: Triangular mesh
+    - id: SP06-059
+      name: Paper Cutout (Digital)
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Layered paper style
+        form_and_line: Cut edges
+        color_palette: Solid colors
+        lighting_setup: Drop shadows
+        material_texture: Paper grain
+        render_quality: Craft, cute
+        spatial_distortion: Simplified
+        atmosphere: Playful
+        key_features: Depth layers
+    - id: SP06-060
+      name: ASCII Art
+      category: 4. Digital Art
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Text based image
+        form_and_line: Characters
+        color_palette: Monochrome green/black
+        lighting_setup: Density based
+        material_texture: Text grid
+        render_quality: Retro, hacker
+        spatial_distortion: Low res
+        atmosphere: Tech, code
+        key_features: Text only
+    - id: SP06-061
+      name: Collage (Analog)
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Cut and paste magazine
+        form_and_line: Scissor cuts
+        color_palette: Vintage print
+        lighting_setup: Inconsistent
+        material_texture: Paper, glue
+        render_quality: Dada, punk
+        spatial_distortion: Disjointed
+        atmosphere: Chaotic, surreal
+        key_features: Cutout edges
+    - id: SP06-062
+      name: Photomontage
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Seamless photo blending
+        form_and_line: Invisible
+        color_palette: Unified grading
+        lighting_setup: Matched
+        material_texture: Photo
+        render_quality: Surreal, advertising
+        spatial_distortion: Impossible scale
+        atmosphere: Dreamlike
+        key_features: Realistic blend
+    - id: SP06-063
+      name: Decoupage
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Varnished paper on object
+        form_and_line: Torn edges
+        color_palette: Faded, yellowed
+        lighting_setup: Glossy varnish
+        material_texture: Crackle glaze
+        render_quality: Craft, vintage
+        spatial_distortion: Surface wrap
+        atmosphere: Antique, homey
+        key_features: Varnish shine
+    - id: SP06-064
+      name: Assemblage
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: 3D object collage
+        form_and_line: Physical objects
+        color_palette: Found object colors
+        lighting_setup: Box lighting
+        material_texture: Rust, wood, plastic
+        render_quality: Sculptural, box art
+        spatial_distortion: None
+        atmosphere: Mysterious, collection
+        key_features: Shadow box
+    - id: SP06-065
+      name: Scrapbook
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Memory book page
+        form_and_line: Tape, stickers
+        color_palette: Pastel, vintage
+        lighting_setup: Flat lay
+        material_texture: Paper, photos, handwriting
+        render_quality: Personal, cute
+        spatial_distortion: Layered
+        atmosphere: Nostalgic, sweet
+        key_features: Page layout
+    - id: SP06-066
+      name: Trash Polka
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Bold tattoo style
+        form_and_line: Realistic vs graphic
+        color_palette: Black, Grey, Red
+        lighting_setup: High contrast
+        material_texture: Ink, splatter
+        render_quality: Aggressive, modern
+        spatial_distortion: Collage
+        atmosphere: Intense, chaotic
+        key_features: Red and Black
+    - id: SP06-067
+      name: Mixed Media Canvas
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Paint plus objects
+        form_and_line: Varied
+        color_palette: Messy, layered
+        lighting_setup: Texture relief
+        material_texture: Sand, paper, paint
+        render_quality: Fine art, abstract
+        spatial_distortion: None
+        atmosphere: Expressive
+        key_features: Heavy texture
+    - id: SP06-068
+      name: Zine Aesthetic
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Photocopied booklet
+        form_and_line: High contrast, grainy
+        color_palette: Black and White
+        lighting_setup: Xerox flash
+        material_texture: Toner, tape
+        render_quality: DIY, punk
+        spatial_distortion: Rough cuts
+        atmosphere: Raw, underground
+        key_features: Xerox grain
+    - id: SP06-069
+      name: Moodboard
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Collection of images
+        form_and_line: Grid or pile
+        color_palette: Coordinated palette
+        lighting_setup: Flat
+        material_texture: Digital or paper
+        render_quality: Design, inspiration
+        spatial_distortion: None
+        atmosphere: Aesthetic
+        key_features: Color theme
+    - id: SP06-070
+      name: Vision Board
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Corkboard with pins
+        form_and_line: Pins, string
+        color_palette: Varied
+        lighting_setup: Room light
+        material_texture: Cork, paper
+        render_quality: Personal, planning
+        spatial_distortion: None
+        atmosphere: Hopeful, messy
+        key_features: Pinned items
+    - id: SP06-071
+      name: Mosaic (Paper)
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Torn paper image
+        form_and_line: Torn edges
+        color_palette: Magazine scraps
+        lighting_setup: Flat
+        material_texture: Paper fibers
+        render_quality: Craft, school
+        spatial_distortion: Pixelated by scraps
+        atmosphere: Creative, recycled
+        key_features: Torn bits
+    - id: SP06-072
+      name: Tape Art
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Image made of tape
+        form_and_line: Straight tape lines
+        color_palette: Masking tape, duct tape
+        lighting_setup: Flat
+        material_texture: Tape layers
+        render_quality: Street art, installation
+        spatial_distortion: Geometric
+        atmosphere: Urban, temporary
+        key_features: Tape strips
+    - id: SP06-073
+      name: Embroidery on Photo
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Thread stitched over photo
+        form_and_line: Thread lines
+        color_palette: Photo + Thread accent
+        lighting_setup: Photo lighting
+        material_texture: Glossy photo, matte thread
+        render_quality: Artistic, altered
+        spatial_distortion: Stitched details
+        atmosphere: Personal, tactile
+        key_features: Thread texture
+    - id: SP06-074
+      name: Paint over Photo
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Acrylic strokes on photo
+        form_and_line: Brush strokes
+        color_palette: Photo + Paint
+        lighting_setup: Mixed
+        material_texture: Paint texture
+        render_quality: Gerhard Richter, expressive
+        spatial_distortion: Obscured details
+        atmosphere: Abstracted reality
+        key_features: Smeared paint
+    - id: SP06-075
+      name: Digital Collage
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Photoshop composite
+        form_and_line: Clean cuts
+        color_palette: Vibrant, surreal
+        lighting_setup: Digital
+        material_texture: Screen
+        render_quality: Modern art, vaporwave
+        spatial_distortion: Scale play
+        atmosphere: Surreal, fun
+        key_features: Digital edges
+    - id: SP06-076
+      name: Fumage (Smoke Art)
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Soot on paper
+        form_and_line: Soft smoke trails
+        color_palette: Black soot, white paper
+        lighting_setup: Soft
+        material_texture: Smoke residue
+        render_quality: Surreal, delicate
+        spatial_distortion: Ghostly
+        atmosphere: Ethereal, dark
+        key_features: Smoke patterns
+    - id: SP06-077
+      name: Coffee Painting
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Painted with coffee
+        form_and_line: Liquid stains
+        color_palette: Sepia, brown
+        lighting_setup: Soft
+        material_texture: Watercolor paper, granules
+        render_quality: Organic, warm
+        spatial_distortion: Fluid
+        atmosphere: Cozy, rustic
+        key_features: Monochrome brown
+    - id: SP06-078
+      name: Gold Leaf Art
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Gilded illustration
+        form_and_line: Gold accents
+        color_palette: Gold, Black
+        lighting_setup: Reflective
+        material_texture: Metal foil, cracks
+        render_quality: Klimt, decorative
+        spatial_distortion: Flat gold areas
+        atmosphere: Rich, ornamental
+        key_features: Metallic shine
+    - id: SP06-079
+      name: Paper Marbling
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Suminagashi or Ebru
+        form_and_line: Fluid swirls
+        color_palette: Psychedelic, oil
+        lighting_setup: Flat
+        material_texture: Paper, oil slick
+        render_quality: Abstract, pattern
+        spatial_distortion: Liquid distortion
+        atmosphere: Trippy, fluid
+        key_features: Oil patterns
+    - id: SP06-080
+      name: Stencil Art
+      category: 5. Mixed Media
+      negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+      style:
+        aesthetic: Banksy style
+        form_and_line: Hard edges, bridges
+        color_palette: Black, Red, White
+        lighting_setup: Flat
+        material_texture: Wall, spray paint
+        render_quality: Street art, graphic
+        spatial_distortion: Simplified
+        atmosphere: Bold, urban
+        key_features: Stencil bridges

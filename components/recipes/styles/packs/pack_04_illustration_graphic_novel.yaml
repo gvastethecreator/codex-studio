@@ -1,0 +1,1124 @@
+- id: pack_04
+  name: Illustration & Graphic Novel
+  description: A versatile collection of 80+ illustration styles, covering comics, children's books, editorial art, and printmaking.
+  presets:
+    - id: SP04-001
+      name: Golden Age Comic
+      category: 1. Comic Book Styles
+      negativePrompt: modern digital color
+      style:
+        aesthetic: 1940s Superman style
+        form_and_line: Thick ink
+        color_palette: CMYK dots (Ben-Day)
+        lighting_setup: Flat
+        material_texture: Cheap paper
+        render_quality: Vintage, bold
+        spatial_distortion: Heroic pose
+        atmosphere: Action, classic
+        key_features: 4-color process
+    - id: SP04-002
+      name: Silver Age Comic
+      category: 1. Comic Book Styles
+      negativePrompt: dark, gritty
+      style:
+        aesthetic: Kirby style
+        form_and_line: Dynamic energy (Kirby dots)
+        color_palette: Bright primary
+        lighting_setup: Dramatic
+        material_texture: Newsprint
+        render_quality: Cosmic, energetic
+        spatial_distortion: Exaggerated perspective
+        atmosphere: Epic, sci-fi
+        key_features: Kirby Krackle
+    - id: SP04-003
+      name: Modern Superhero (Digital)
+      category: 1. Comic Book Styles
+      negativePrompt: flat, retro
+      style:
+        aesthetic: DC/Marvel modern
+        form_and_line: Clean digital ink
+        color_palette: Digital gradient
+        lighting_setup: Cinematic
+        material_texture: Smooth
+        render_quality: High detail, polished
+        spatial_distortion: Muscular
+        atmosphere: Action, serious
+        key_features: Lens flare
+    - id: SP04-004
+      name: Manga (Shonen)
+      category: 1. Comic Book Styles
+      negativePrompt: color, american comic
+      style:
+        aesthetic: Action manga
+        form_and_line: Speed lines
+        color_palette: Black and White
+        lighting_setup: High contrast
+        material_texture: Screentone
+        render_quality: Dynamic, Japanese
+        spatial_distortion: Spiky hair
+        atmosphere: Intense, battle
+        key_features: Speed lines
+    - id: SP04-005
+      name: Manga (Shojo)
+      category: 1. Comic Book Styles
+      negativePrompt: rough, ugly
+      style:
+        aesthetic: Romance manga
+        form_and_line: Thin, delicate
+        color_palette: Black and White
+        lighting_setup: Soft bloom
+        material_texture: Flower screentones
+        render_quality: Beautiful, emotional
+        spatial_distortion: Big eyes
+        atmosphere: Romantic, soft
+        key_features: Sparkles
+    - id: SP04-006
+      name: Webtoon Style
+      category: 1. Comic Book Styles
+      negativePrompt: black and white
+      style:
+        aesthetic: Vertical scroll comic
+        form_and_line: Clean digital
+        color_palette: Full color, flat
+        lighting_setup: Soft cell shade
+        material_texture: Digital
+        render_quality: Manhwa, modern
+        spatial_distortion: Pretty characters
+        atmosphere: Drama, fantasy
+        key_features: Vertical flow
+    - id: SP04-007
+      name: Franco-Belgian (Ligne Claire)
+      category: 1. Comic Book Styles
+      negativePrompt: shading, gradient
+      style:
+        aesthetic: Tintin style
+        form_and_line: Uniform thickness
+        color_palette: Flat, bright
+        lighting_setup: No shadows
+        material_texture: Clean
+        render_quality: Hergé, precise
+        spatial_distortion: Cartoon
+        atmosphere: Adventure, clear
+        key_features: No hatching
+    - id: SP04-008
+      name: Noir Comic (Sin City)
+      category: 1. Comic Book Styles
+      negativePrompt: grey, color
+      style:
+        aesthetic: High contrast ink
+        form_and_line: Negative space
+        color_palette: Black and White only
+        lighting_setup: Harsh
+        material_texture: Ink splatter
+        render_quality: Frank Miller, gritty
+        spatial_distortion: Silhouette
+        atmosphere: Dark, violent
+        key_features: No greyscale
+    - id: SP04-009
+      name: Underground Comix
+      category: 1. Comic Book Styles
+      negativePrompt: clean, mainstream
+      style:
+        aesthetic: Crumb style
+        form_and_line: Crosshatching, wobble
+        color_palette: Black and White
+        lighting_setup: Texture heavy
+        material_texture: Gritty paper
+        render_quality: Counter-culture, ugly
+        spatial_distortion: Grotesque
+        atmosphere: Subversive, weird
+        key_features: Dense detail
+    - id: SP04-010
+      name: Graphic Novel (Painted)
+      category: 1. Comic Book Styles
+      negativePrompt: line art, cartoon
+      style:
+        aesthetic: Alex Ross style
+        form_and_line: None (painted)
+        color_palette: Realistic gouache
+        lighting_setup: Realistic
+        material_texture: Brush strokes
+        render_quality: Cinematic, masterpiece
+        spatial_distortion: Realistic anatomy
+        atmosphere: Epic, serious
+        key_features: No outlines
+    - id: SP04-011
+      name: Horror Manga (Junji Ito)
+      category: 1. Comic Book Styles
+      negativePrompt: cute, clean
+      style:
+        aesthetic: Body horror
+        form_and_line: Fine, obsessive
+        color_palette: Black and White
+        lighting_setup: Creepy
+        material_texture: Lines, spirals
+        render_quality: Terrifying, detailed
+        spatial_distortion: Spiral/Holes
+        atmosphere: Unsettling, nightmare
+        key_features: Dense lines
+    - id: SP04-012
+      name: Retro Sci-Fi Comic (Moebius)
+      category: 1. Comic Book Styles
+      negativePrompt: dark, heavy shadows
+      style:
+        aesthetic: Surreal sci-fi
+        form_and_line: Fine stipple
+        color_palette: Pastel, desert
+        lighting_setup: Flat
+        material_texture: Dot shading
+        render_quality: French, intricate
+        spatial_distortion: Alien shapes
+        atmosphere: Dreamy, vast
+        key_features: Complex background
+    - id: SP04-013
+      name: Chibi Style
+      category: 1. Comic Book Styles
+      negativePrompt: tall, realistic
+      style:
+        aesthetic: Super deformed
+        form_and_line: Thick outline
+        color_palette: Bright
+        lighting_setup: Simple
+        material_texture: Smooth
+        render_quality: Cute, mascot
+        spatial_distortion: 2 heads tall
+        atmosphere: Kawaii, funny
+        key_features: Big head
+    - id: SP04-014
+      name: Pixel Art Comic
+      category: 1. Comic Book Styles
+      negativePrompt: vector, smooth
+      style:
+        aesthetic: 16-bit game art
+        form_and_line: Pixel outline
+        color_palette: Limited palette
+        lighting_setup: Dithered
+        material_texture: Pixel grid
+        render_quality: Retro game
+        spatial_distortion: Sprite
+        atmosphere: Nostalgic, digital
+        key_features: Pixel grid
+    - id: SP04-015
+      name: Risograph Print
+      category: 1. Comic Book Styles
+      negativePrompt: perfect registration
+      style:
+        aesthetic: Zine style
+        form_and_line: Grainy
+        color_palette: Neon Pink/Blue/Yellow
+        lighting_setup: Overprint
+        material_texture: Grainy, misaligned
+        render_quality: Indie, print
+        spatial_distortion: Offset layers
+        atmosphere: DIY, cool
+        key_features: Noise
+    - id: SP04-016
+      name: Tech Noir Comic
+      category: 1. Comic Book Styles
+      negativePrompt: daylight, nature
+      style:
+        aesthetic: Cyberpunk city
+        form_and_line: Sharp
+        color_palette: Neon on Black
+        lighting_setup: City lights
+        material_texture: Rain, grit
+        render_quality: Blade Runner, dark
+        spatial_distortion: None
+        atmosphere: Dystopian, cool
+        key_features: Rain
+    - id: SP04-017
+      name: Watercolor Storybook
+      category: 2. Children's Illustration
+      negativePrompt: digital, sharp
+      style:
+        aesthetic: Beatrix Potter style
+        form_and_line: Pencil sketch
+        color_palette: Soft wash
+        lighting_setup: Gentle
+        material_texture: Paper grain
+        render_quality: Classic, gentle
+        spatial_distortion: Cute animals
+        atmosphere: Whimsical, soft
+        key_features: White background fade
+    - id: SP04-018
+      name: Paper Cutout (Collage)
+      category: 2. Children's Illustration
+      negativePrompt: drawn, painted
+      style:
+        aesthetic: Eric Carle style
+        form_and_line: Scissor edges
+        color_palette: Painted paper textures
+        lighting_setup: Drop shadows
+        material_texture: Painted paper
+        render_quality: Handmade, layered
+        spatial_distortion: Simple shapes
+        atmosphere: Creative, bright
+        key_features: Layer depth
+    - id: SP04-019
+      name: Crayon Drawing
+      category: 2. Children's Illustration
+      negativePrompt: professional, smooth
+      style:
+        aesthetic: Child's drawing
+        form_and_line: Waxy, messy
+        color_palette: Vibrant wax
+        lighting_setup: Flat
+        material_texture: Wax buildup
+        render_quality: Naive, cute
+        spatial_distortion: Stick figures
+        atmosphere: Innocent, fun
+        key_features: Paper grain
+    - id: SP04-020
+      name: Vector Flat (Kurzgesagt)
+      category: 2. Children's Illustration
+      negativePrompt: outline, texture
+      style:
+        aesthetic: Infographic style
+        form_and_line: None
+        color_palette: Vibrant, flat
+        lighting_setup: Flat shading
+        material_texture: Vector clean
+        render_quality: Educational, modern
+        spatial_distortion: Rounded geometry
+        atmosphere: Smart, clean
+        key_features: Geometric
+    - id: SP04-021
+      name: Gouache Illustration
+      category: 2. Children's Illustration
+      negativePrompt: transparent, watercolor
+      style:
+        aesthetic: Mid-century modern
+        form_and_line: Dry brush
+        color_palette: Opaque, matte
+        lighting_setup: Flat
+        material_texture: Chalky paint
+        render_quality: Mary Blair, retro
+        spatial_distortion: Stylized shapes
+        atmosphere: Colorful, design
+        key_features: Brush texture
+    - id: SP04-022
+      name: Colored Pencil
+      category: 2. Children's Illustration
+      negativePrompt: ink, paint
+      style:
+        aesthetic: Soft sketch
+        form_and_line: Pencil strokes
+        color_palette: Soft, layered
+        lighting_setup: Paper white
+        material_texture: Pencil grain
+        render_quality: Gentle, fuzzy
+        spatial_distortion: Soft edges
+        atmosphere: Quiet, homey
+        key_features: Crosshatching
+    - id: SP04-023
+      name: Scratchboard
+      category: 2. Children's Illustration
+      negativePrompt: white background
+      style:
+        aesthetic: Black board scratched white
+        form_and_line: White scratches
+        color_palette: Black and White
+        lighting_setup: Inverted
+        material_texture: Scratches
+        render_quality: Detailed, night
+        spatial_distortion: None
+        atmosphere: Magical, night
+        key_features: Black base
+    - id: SP04-024
+      name: Claymation Style
+      category: 2. Children's Illustration
+      negativePrompt: 2d, drawn
+      style:
+        aesthetic: Plasticine model
+        form_and_line: None
+        color_palette: Clay colors
+        lighting_setup: Studio
+        material_texture: Fingerprints
+        render_quality: Aardman, tactile
+        spatial_distortion: Chunky
+        atmosphere: Funny, physical
+        key_features: Thumbprints
+    - id: SP04-025
+      name: Felt Tip Marker
+      category: 2. Children's Illustration
+      negativePrompt: paint, blend
+      style:
+        aesthetic: Marker drawing
+        form_and_line: Bleeding ink
+        color_palette: Saturated, overlapping
+        lighting_setup: Flat
+        material_texture: Paper bleed
+        render_quality: Sketchbook, bold
+        spatial_distortion: Loose
+        atmosphere: Casual, bright
+        key_features: Stroke overlap
+    - id: SP04-026
+      name: Pop-Up Book
+      category: 2. Children's Illustration
+      negativePrompt: flat page
+      style:
+        aesthetic: 3D paper engineering
+        form_and_line: Cut edges
+        color_palette: Cardstock
+        lighting_setup: Paper shadows
+        material_texture: Paper
+        render_quality: Intricate, dimensional
+        spatial_distortion: Folded
+        atmosphere: Surprise, fun
+        key_features: Tabs and slots
+    - id: SP04-027
+      name: Whimsical Ink
+      category: 2. Children's Illustration
+      negativePrompt: heavy, dark
+      style:
+        aesthetic: Quentin Blake style
+        form_and_line: Scratchy, loose
+        color_palette: Watercolor splash
+        lighting_setup: None
+        material_texture: Ink nib
+        render_quality: Roald Dahl, messy
+        spatial_distortion: Spiky
+        atmosphere: Funny, energetic
+        key_features: Loose lines
+    - id: SP04-028
+      name: Chalk Pastel
+      category: 2. Children's Illustration
+      negativePrompt: sharp, pen
+      style:
+        aesthetic: Soft blending
+        form_and_line: Thick dust
+        color_palette: Soft, dusty
+        lighting_setup: Soft
+        material_texture: Paper tooth
+        render_quality: The Snowman, dreamy
+        spatial_distortion: Blurred
+        atmosphere: Soft, winter
+        key_features: Smudge
+    - id: SP04-029
+      name: Sticker Art
+      category: 2. Children's Illustration
+      negativePrompt: background
+      style:
+        aesthetic: Die-cut sticker
+        form_and_line: Thick White outline
+        color_palette: Vector
+        lighting_setup: Glossy
+        material_texture: Vinyl
+        render_quality: Redbubble, cute
+        spatial_distortion: Simplified
+        atmosphere: Fun, collectible
+        key_features: White border
+    - id: SP04-030
+      name: Scientific Botanical
+      category: 2. Children's Illustration
+      negativePrompt: cartoon, messy
+      style:
+        aesthetic: Vintage textbook
+        form_and_line: Fine ink
+        color_palette: Watercolor tint
+        lighting_setup: Flat
+        material_texture: Aged paper
+        render_quality: Accurate, detailed
+        spatial_distortion: Dissected view
+        atmosphere: Educational, classic
+        key_features: Label text
+    - id: SP04-031
+      name: Art Deco Poster
+      category: 3. Editorial & Poster
+      negativePrompt: messy, organic
+      style:
+        aesthetic: 1920s travel poster
+        form_and_line: Geometric curves
+        color_palette: Gold, Black, Teal
+        lighting_setup: Gradient
+        material_texture: Airbrush
+        render_quality: Gatsby, luxury
+        spatial_distortion: Streamlined
+        atmosphere: Elegant, fast
+        key_features: Sunburst
+    - id: SP04-032
+      name: Art Nouveau (Mucha)
+      category: 3. Editorial & Poster
+      negativePrompt: straight lines, minimal
+      style:
+        aesthetic: Alphonse Mucha style
+        form_and_line: Flowing hair/vines
+        color_palette: Peach, Sage, Gold
+        lighting_setup: Flat
+        material_texture: Lithograph
+        render_quality: Decorative, floral
+        spatial_distortion: Organic curves
+        atmosphere: Beautiful, romantic
+        key_features: Circle halo
+    - id: SP04-033
+      name: Propaganda Poster
+      category: 3. Editorial & Poster
+      negativePrompt: subtle, weak
+      style:
+        aesthetic: Constructivist
+        form_and_line: Bold
+        color_palette: Red, Black, Cream
+        lighting_setup: High contrast
+        material_texture: Screenprint
+        render_quality: Shepard Fairey, bold
+        spatial_distortion: Heroic angle
+        atmosphere: Strong, commanding
+        key_features: Rays
+    - id: SP04-034
+      name: Psychedelic Poster (60s)
+      category: 3. Editorial & Poster
+      negativePrompt: straight, readable
+      style:
+        aesthetic: Fillmore poster
+        form_and_line: Warped text
+        color_palette: Neon clash
+        lighting_setup: Flat
+        material_texture: Screenprint
+        render_quality: Trippy, retro
+        spatial_distortion: Liquid
+        atmosphere: Groovy, music
+        key_features: Illegible font
+    - id: SP04-035
+      name: Minimalist Vector
+      category: 3. Editorial & Poster
+      negativePrompt: detail, texture
+      style:
+        aesthetic: Corporate Memphis
+        form_and_line: None
+        color_palette: Flat solid
+        lighting_setup: None
+        material_texture: Vector
+        render_quality: Tech startup, clean
+        spatial_distortion: Big limbs
+        atmosphere: Friendly, corporate
+        key_features: Flat
+    - id: SP04-036
+      name: Collage Art (Dada)
+      category: 3. Editorial & Poster
+      negativePrompt: seamless, painted
+      style:
+        aesthetic: Cut and paste
+        form_and_line: Scissor cuts
+        color_palette: Vintage photo
+        lighting_setup: Mismatched
+        material_texture: Halftone
+        render_quality: Punk, surreal
+        spatial_distortion: Hybrid objects
+        atmosphere: Rebellious, weird
+        key_features: Paper edges
+    - id: SP04-037
+      name: Bauhaus Poster
+      category: 3. Editorial & Poster
+      negativePrompt: decorative, floral
+      style:
+        aesthetic: Geometric design
+        form_and_line: Grid
+        color_palette: Red, Blue, Yellow
+        lighting_setup: Flat
+        material_texture: Matte
+        render_quality: Modernist, layout
+        spatial_distortion: Diagonal type
+        atmosphere: Rational, design
+        key_features: Circle/Square/Triangle
+    - id: SP04-038
+      name: National Park Poster (WPA)
+      category: 3. Editorial & Poster
+      negativePrompt: photo, detailed
+      style:
+        aesthetic: Screenprint landscape
+        form_and_line: None
+        color_palette: Separated layers
+        lighting_setup: Flat gradient
+        material_texture: Screen mesh
+        render_quality: Vintage travel, bold
+        spatial_distortion: Simplified mountains
+        atmosphere: Majestic, graphic
+        key_features: Serif font
+    - id: SP04-039
+      name: Movie Poster (Painted)
+      category: 3. Editorial & Poster
+      negativePrompt: photo collage
+      style:
+        aesthetic: Drew Struzan style
+        form_and_line: Airbrush
+        color_palette: Warm/Cool contrast
+        lighting_setup: Rim light
+        material_texture: Canvas
+        render_quality: Star Wars, epic
+        spatial_distortion: Floating heads
+        atmosphere: Cinematic, classic
+        key_features: Lens flare
+    - id: SP04-040
+      name: Infographic
+      category: 3. Editorial & Poster
+      negativePrompt: messy, art
+      style:
+        aesthetic: Data visualization
+        form_and_line: Thin icons
+        color_palette: Consistent palette
+        lighting_setup: Flat
+        material_texture: Vector
+        render_quality: Information, clean
+        spatial_distortion: Isometric
+        atmosphere: Smart, data
+        key_features: Charts
+    - id: SP04-041
+      name: Fashion Illustration
+      category: 3. Editorial & Poster
+      negativePrompt: short, realistic
+      style:
+        aesthetic: Runway sketch
+        form_and_line: Loose, gestural
+        color_palette: Watercolor splash
+        lighting_setup: None
+        material_texture: Paper
+        render_quality: Vogue, stylish
+        spatial_distortion: Elongated legs
+        atmosphere: Chic, fast
+        key_features: 9 heads tall
+    - id: SP04-042
+      name: Album Cover (Surreal)
+      category: 3. Editorial & Poster
+      negativePrompt: photo, boring
+      style:
+        aesthetic: Pink Floyd style
+        form_and_line: Sharp
+        color_palette: Surreal
+        lighting_setup: Dramatic
+        material_texture: Grainy photo
+        render_quality: Hipgnosis, iconic
+        spatial_distortion: Impossible object
+        atmosphere: Deep, weird
+        key_features: Square crop
+    - id: SP04-043
+      name: Pulp Magazine Cover
+      category: 3. Editorial & Poster
+      negativePrompt: modern, clean
+      style:
+        aesthetic: Cheap detective novel
+        form_and_line: Painted
+        color_palette: Saturated Red/Yellow
+        lighting_setup: Dramatic shadow
+        material_texture: Cheap paper
+        render_quality: Trashy, exciting
+        spatial_distortion: Action pose
+        atmosphere: Dangerous, cheap
+        key_features: Title space
+    - id: SP04-044
+      name: Travel Poster (Vintage)
+      category: 3. Editorial & Poster
+      negativePrompt: photo
+      style:
+        aesthetic: Railway poster
+        form_and_line: None
+        color_palette: Flat, sunny
+        lighting_setup: Flat
+        material_texture: Lithograph
+        render_quality: Optimistic, classic
+        spatial_distortion: Simplified view
+        atmosphere: Happy, vacation
+        key_features: Text at bottom
+    - id: SP04-045
+      name: Gig Poster (Screenprint)
+      category: 3. Editorial & Poster
+      negativePrompt: digital gradient
+      style:
+        aesthetic: Rock band poster
+        form_and_line: Thick ink
+        color_palette: 3 spot colors
+        lighting_setup: Halftone
+        material_texture: Paper grain
+        render_quality: Handmade, cool
+        spatial_distortion: Distressed
+        atmosphere: Loud, graphic
+        key_features: Overprint
+    - id: SP04-046
+      name: Speedpaint
+      category: 4. Concept Art
+      negativePrompt: detailed, polished
+      style:
+        aesthetic: Quick digital painting
+        form_and_line: None
+        color_palette: Mood lighting
+        lighting_setup: Atmospheric
+        material_texture: Brush strokes
+        render_quality: Concept, loose
+        spatial_distortion: Undefined details
+        atmosphere: Energetic, rough
+        key_features: Composition focus
+    - id: SP04-047
+      name: Matte Painting
+      category: 4. Concept Art
+      negativePrompt: cartoon, sketch
+      style:
+        aesthetic: Movie background
+        form_and_line: None
+        color_palette: Photorealistic
+        lighting_setup: Cinematic
+        material_texture: Photo bash
+        render_quality: Epic, detailed
+        spatial_distortion: None
+        atmosphere: Vast, invisible
+        key_features: Horizon line
+    - id: SP04-048
+      name: Character Sheet
+      category: 4. Concept Art
+      negativePrompt: background, action
+      style:
+        aesthetic: Front/Side/Back view
+        form_and_line: Clean line
+        color_palette: Flat + Occlusion
+        lighting_setup: Neutral
+        material_texture: Material callouts
+        render_quality: Production ready
+        spatial_distortion: T-Pose
+        atmosphere: Neutral, design
+        key_features: Scale
+    - id: SP04-049
+      name: Environment Concept
+      category: 4. Concept Art
+      negativePrompt: character focus
+      style:
+        aesthetic: Game level art
+        form_and_line: Perspective grid
+        color_palette: Atmospheric
+        lighting_setup: Key light
+        material_texture: Painted
+        render_quality: Immersive, vast
+        spatial_distortion: None
+        atmosphere: Adventure, place
+        key_features: Scale figure
+    - id: SP04-050
+      name: Vehicle Design
+      category: 4. Concept Art
+      negativePrompt: organic
+      style:
+        aesthetic: Sci-fi ship/car
+        form_and_line: Technical
+        color_palette: Industrial
+        lighting_setup: Studio
+        material_texture: Metal, dirt
+        render_quality: Syd Mead, functional
+        spatial_distortion: None
+        atmosphere: Fast, tech
+        key_features: Perspective
+    - id: SP04-051
+      name: Creature Design
+      category: 4. Concept Art
+      negativePrompt: human, cute
+      style:
+        aesthetic: Monster concept
+        form_and_line: Anatomical
+        color_palette: Skin tones
+        lighting_setup: Rim light
+        material_texture: Scales, fur
+        render_quality: Scary, biological
+        spatial_distortion: Extra limbs
+        atmosphere: Dangerous, alive
+        key_features: Silhouette
+    - id: SP04-052
+      name: Isometric Game Art
+      category: 4. Concept Art
+      negativePrompt: perspective, flat
+      style:
+        aesthetic: SimCity view
+        form_and_line: Clean pixel/vector
+        color_palette: Bright, clear
+        lighting_setup: Top-left sun
+        material_texture: Tileable
+        render_quality: Game asset, cute
+        spatial_distortion: No perspective
+        atmosphere: Orderly, toy
+        key_features: 30 degree angle
+    - id: SP04-053
+      name: Storyboard Sketch
+      category: 4. Concept Art
+      negativePrompt: color, detailed
+      style:
+        aesthetic: Movie frame sketch
+        form_and_line: Loose pencil/marker
+        color_palette: Greyscale + Arrows
+        lighting_setup: Value study
+        material_texture: Paper
+        render_quality: Cinematic flow
+        spatial_distortion: Motion blur lines
+        atmosphere: Action, plan
+        key_features: Frame border
+    - id: SP04-054
+      name: Prop Design
+      category: 4. Concept Art
+      negativePrompt: background
+      style:
+        aesthetic: Item focus
+        form_and_line: Clean
+        color_palette: Material render
+        lighting_setup: Studio
+        material_texture: Wear and tear
+        render_quality: RPG item, detailed
+        spatial_distortion: None
+        atmosphere: Valuable, useful
+        key_features: Isolated
+    - id: SP04-055
+      name: Keyframe Art
+      category: 4. Concept Art
+      negativePrompt: sketchy, rough
+      style:
+        aesthetic: Cinematic moment
+        form_and_line: None
+        color_palette: Color graded
+        lighting_setup: Cinematic
+        material_texture: Painted
+        render_quality: Movie still, emotional
+        spatial_distortion: None
+        atmosphere: Story beat
+        key_features: 16:9 ratio
+    - id: SP04-056
+      name: Photobash
+      category: 4. Concept Art
+      negativePrompt: painted, cartoon
+      style:
+        aesthetic: Mixed photos
+        form_and_line: None
+        color_palette: Unified grading
+        lighting_setup: Realistic
+        material_texture: Photo
+        render_quality: Realistic, fast
+        spatial_distortion: Mismatched resolution
+        atmosphere: Realism, concept
+        key_features: Texture clash
+    - id: SP04-057
+      name: Blueprint Schematic
+      category: 4. Concept Art
+      negativePrompt: 3d, shaded
+      style:
+        aesthetic: Technical diagram
+        form_and_line: White lines
+        color_palette: Blue background
+        lighting_setup: None
+        material_texture: Grid paper
+        render_quality: Engineering, precise
+        spatial_distortion: Exploded view
+        atmosphere: Smart, plan
+        key_features: Measurements
+    - id: SP04-058
+      name: Low Poly Concept
+      category: 4. Concept Art
+      negativePrompt: smooth, high res
+      style:
+        aesthetic: Early 3D game
+        form_and_line: None
+        color_palette: Flat shading
+        lighting_setup: Vertex light
+        material_texture: Pixelated
+        render_quality: PS1 style, retro
+        spatial_distortion: Blocky
+        atmosphere: Nostalgic, simple
+        key_features: Polygons
+    - id: SP04-059
+      name: UI/HUD Design
+      category: 4. Concept Art
+      negativePrompt: organic, messy
+      style:
+        aesthetic: Game interface
+        form_and_line: Thin tech lines
+        color_palette: Neon Cyan/Orange
+        lighting_setup: Glow
+        material_texture: Screen
+        render_quality: Futuristic, functional
+        spatial_distortion: None
+        atmosphere: Tech, info
+        key_features: Floating
+    - id: SP04-060
+      name: Weapon Design
+      category: 4. Concept Art
+      negativePrompt: soft, toy
+      style:
+        aesthetic: Gun or sword
+        form_and_line: Mechanical
+        color_palette: Gunmetal
+        lighting_setup: Rim light
+        material_texture: Scratched metal
+        render_quality: FPS game, lethal
+        spatial_distortion: None
+        atmosphere: Dangerous, heavy
+        key_features: Side view
+    - id: SP04-061
+      name: Linocut Print
+      category: 5. Ink & Print
+      negativePrompt: grey, gradient
+      style:
+        aesthetic: Carved block print
+        form_and_line: White gouges
+        color_palette: Black ink
+        lighting_setup: None
+        material_texture: Ink roll texture
+        render_quality: Handmade, bold
+        spatial_distortion: Chunky lines
+        atmosphere: Folk, strong
+        key_features: No fine detail
+    - id: SP04-062
+      name: Etching (Engraving)
+      category: 5. Ink & Print
+      negativePrompt: smooth shading
+      style:
+        aesthetic: Banknote style
+        form_and_line: Fine crosshatching
+        color_palette: Black ink
+        lighting_setup: Line density
+        material_texture: Paper
+        render_quality: Durer, classic
+        spatial_distortion: None
+        atmosphere: Serious, valuable
+        key_features: Hatching
+    - id: SP04-063
+      name: Woodcut (Ukiyo-e)
+      category: 5. Ink & Print
+      negativePrompt: western, 3d
+      style:
+        aesthetic: Hokusai style
+        form_and_line: Variable width
+        color_palette: Flat gradients (Bokashi)
+        lighting_setup: Flat
+        material_texture: Wood grain
+        render_quality: Japanese, masterpiece
+        spatial_distortion: Flattened perspective
+        atmosphere: Nature, calm
+        key_features: Outline
+    - id: SP04-064
+      name: Stipple (Dotwork)
+      category: 5. Ink & Print
+      negativePrompt: lines, solid
+      style:
+        aesthetic: Tattoo style
+        form_and_line: None (dots)
+        color_palette: Black ink
+        lighting_setup: Dot density
+        material_texture: Skin/Paper
+        render_quality: Detailed, slow
+        spatial_distortion: Gradient by dots
+        atmosphere: Obsessive, soft
+        key_features: Dots only
+    - id: SP04-065
+      name: Lithograph
+      category: 5. Ink & Print
+      negativePrompt: sharp lines
+      style:
+        aesthetic: Grease pencil on stone
+        form_and_line: Grainy crayon
+        color_palette: Black or Sepia
+        lighting_setup: Soft grain
+        material_texture: Stone grain
+        render_quality: Escher, print
+        spatial_distortion: None
+        atmosphere: Classic, soft
+        key_features: Grain
+    - id: SP04-066
+      name: Screenprint (Serigraph)
+      category: 5. Ink & Print
+      negativePrompt: gradient, painting
+      style:
+        aesthetic: Warhol style
+        form_and_line: None
+        color_palette: Misaligned layers
+        lighting_setup: Halftone
+        material_texture: Mesh pattern
+        render_quality: Pop art, mass produced
+        spatial_distortion: Offset color
+        atmosphere: Bold, commercial
+        key_features: Layer overlap
+    - id: SP04-067
+      name: Monotype
+      category: 5. Ink & Print
+      negativePrompt: repeatable, clean
+      style:
+        aesthetic: One off print
+        form_and_line: Smudged
+        color_palette: Ink wash
+        lighting_setup: Unpredictable
+        material_texture: Plate texture
+        render_quality: Painterly print
+        spatial_distortion: Squashed ink
+        atmosphere: Expressive, unique
+        key_features: Ghost image
+    - id: SP04-068
+      name: Cyanotype (Blueprint)
+      category: 5. Ink & Print
+      negativePrompt: red, yellow
+      style:
+        aesthetic: Sun print
+        form_and_line: Silhouette (white)
+        color_palette: Prussian Blue
+        lighting_setup: Negative
+        material_texture: Watercolor paper
+        render_quality: Botanical, photo
+        spatial_distortion: Soft edges
+        atmosphere: Dreamy, blue
+        key_features: Blue only
+    - id: SP04-069
+      name: Rubber Stamp
+      category: 5. Ink & Print
+      negativePrompt: perfect, clean
+      style:
+        aesthetic: Ink stamp
+        form_and_line: Thick, broken
+        color_palette: Red or Black ink
+        lighting_setup: Uneven pressure
+        material_texture: Ink starvation
+        render_quality: Office, rough
+        spatial_distortion: Missing parts
+        atmosphere: Official, bureaucratic
+        key_features: Border
+    - id: SP04-070
+      name: Mezzotint
+      category: 5. Ink & Print
+      negativePrompt: white background, lines
+      style:
+        aesthetic: Dark print
+        form_and_line: None
+        color_palette: Velvety Black
+        lighting_setup: Burnished highlights
+        material_texture: Rocker marks
+        render_quality: Dramatic, soft
+        spatial_distortion: None
+        atmosphere: Moody, night
+        key_features: Dark base
+    - id: SP04-071
+      name: Aquatint
+      category: 5. Ink & Print
+      negativePrompt: sharp lines
+      style:
+        aesthetic: Tonal print
+        form_and_line: Etched outline
+        color_palette: Watercolor-like ink
+        lighting_setup: Soft wash
+        material_texture: Rosin grain
+        render_quality: Goya, tonal
+        spatial_distortion: None
+        atmosphere: Somber, tonal
+        key_features: Wash effect
+    - id: SP04-072
+      name: Ballpoint Pen
+      category: 5. Ink & Print
+      negativePrompt: paint, thick
+      style:
+        aesthetic: Doodle
+        form_and_line: Thin blue lines
+        color_palette: Bic Blue
+        lighting_setup: Crosshatching
+        material_texture: Paper indent
+        render_quality: Sketchy, obsessive
+        spatial_distortion: Ink blobs
+        atmosphere: Bored, detailed
+        key_features: Blue ink
+    - id: SP04-073
+      name: Fountain Pen
+      category: 5. Ink & Print
+      negativePrompt: pencil, dry
+      style:
+        aesthetic: Elegant writing/drawing
+        form_and_line: Variable width (flex)
+        color_palette: Black ink
+        lighting_setup: Pools of ink
+        material_texture: Smooth paper
+        render_quality: Classy, fluid
+        spatial_distortion: None
+        atmosphere: Elegant, old
+        key_features: Line variation
+    - id: SP04-074
+      name: Sharpie Art
+      category: 5. Ink & Print
+      negativePrompt: fine detail
+      style:
+        aesthetic: Permanent marker
+        form_and_line: Thick, bleeding
+        color_palette: Black, smelly
+        lighting_setup: None
+        material_texture: Paper bleed
+        render_quality: Bold, rough
+        spatial_distortion: Blobby
+        atmosphere: Permanent, loud
+        key_features: Thick lines
+    - id: SP04-075
+      name: Tattoo Flash (Traditional)
+      category: 5. Ink & Print
+      negativePrompt: realistic, soft
+      style:
+        aesthetic: Sailor Jerry style
+        form_and_line: Bold black outline
+        color_palette: Red, Yellow, Green, Black
+        lighting_setup: Skin fade (whip shading)
+        material_texture: Paper stain
+        render_quality: Old school, bold
+        spatial_distortion: 2D
+        atmosphere: Tough, classic
+        key_features: Bold will hold
+    - id: SP04-076
+      name: Graffiti (Tag)
+      category: 5. Ink & Print
+      negativePrompt: clean, font
+      style:
+        aesthetic: Spray paint signature
+        form_and_line: Drips
+        color_palette: Chrome/Black
+        lighting_setup: Highlight
+        material_texture: Wall texture
+        render_quality: Street, vandal
+        spatial_distortion: Flow
+        atmosphere: Urban, fast
+        key_features: Drips
+    - id: SP04-077
+      name: Graffiti (Piece)
+      category: 5. Ink & Print
+      negativePrompt: tag, messy
+      style:
+        aesthetic: Wildstyle mural
+        form_and_line: Outline and fill
+        color_palette: Vibrant spray
+        lighting_setup: Highlights
+        material_texture: Brick wall
+        render_quality: Masterpiece, complex
+        spatial_distortion: Arrow shapes
+        atmosphere: Hip hop, bold
+        key_features: Arrows
+    - id: SP04-078
+      name: Stencil Art (Banksy)
+      category: 5. Ink & Print
+      negativePrompt: freehand
+      style:
+        aesthetic: Spray over cutout
+        form_and_line: Bridges
+        color_palette: Black on Wall
+        lighting_setup: Flat
+        material_texture: Overspray
+        render_quality: Political, street
+        spatial_distortion: Simplified levels
+        atmosphere: Rebellious, simple
+        key_features: Bridges
+    - id: SP04-079
+      name: Calligraphy (Blackletter)
+      category: 5. Ink & Print
+      negativePrompt: round, modern
+      style:
+        aesthetic: Gothic text
+        form_and_line: Broad nib
+        color_palette: Black ink
+        lighting_setup: Flat
+        material_texture: Parchment
+        render_quality: Medieval, heavy
+        spatial_distortion: Ornate
+        atmosphere: Serious, old
+        key_features: Verticals
+    - id: SP04-080
+      name: Brush Pen Ink
+      category: 5. Ink & Print
+      negativePrompt: stiff, pencil
+      style:
+        aesthetic: Sumi-e style
+        form_and_line: Variable pressure
+        color_palette: Black ink
+        lighting_setup: Dry brush
+        material_texture: Rice paper
+        render_quality: Zen, expressive
+        spatial_distortion: Loose
+        atmosphere: Calm, flow
+        key_features: Gesture
