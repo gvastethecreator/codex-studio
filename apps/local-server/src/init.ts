@@ -1,15 +1,18 @@
 import { spawnSync } from 'node:child_process';
 import { existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import { getSettings } from './config';
+import { getSettings, loadDotEnvLocal } from './config';
 import { resolveCodexInvocation } from './codexExecutable';
 import { ensureDefaultProject, migrateDb } from './db';
 import { ensureLibrary, resolveLibraryPath } from './library';
+import { ensureDefaultLibrary } from './libraries';
 import { log } from './logger';
 
 export function initStudio() {
+  loadDotEnvLocal();
   ensureLibrary();
   migrateDb();
+  ensureDefaultLibrary();
   const defaultProject = ensureDefaultProject();
   const envPath = path.resolve(process.cwd(), '.env.local');
 

@@ -7,5 +7,41 @@
     "category": "2. Subcultures",
     "error": "Job 84cf608c-ecb9-4bd0-92a3-ce5c15c4b472 ended as cancelled: Cancelled during server cutover to persistent category threads.",
     "failedAt": "2026-05-06T03:17:13.702Z"
+  },
+  {
+    "presetId": "SP08-077",
+    "presetName": "Stone Statue",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "error": "Job c4110b17-9ba9-4156-8de9-1ee8f4dc8716 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:47:07.554Z"
+  },
+  {
+    "presetId": "SP08-078",
+    "presetName": "Hologram",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "error": "Job 77f8b314-2381-4ca4-b922-db84b289b888 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:47:16.699Z"
+  },
+  {
+    "presetId": "SP08-079",
+    "presetName": "Invisibility Cloak",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "error": "Job 2cd9e55f-c02a-42a6-8aee-414d0efe8144 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:47:25.885Z"
+  },
+  {
+    "presetId": "SP08-080",
+    "presetName": "Shadow Form",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "error": "Job 140b76b6-ba94-4417-a7ce-67cc02992bec needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:47:44.266Z"
   }
 ]

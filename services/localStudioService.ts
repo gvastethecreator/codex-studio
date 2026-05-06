@@ -1,4 +1,4 @@
-import type { Asset, CreateJobRequest, HealthResponse, Job, Project, SystemLog } from '../packages/shared/src';
+import type { Asset, CatalogPage, CreateJobRequest, HealthResponse, Job, Project, StudioLibrary, SystemLog } from '../packages/shared/src';
 import { resolveStudioApiBase } from './studioRuntime';
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
@@ -51,6 +51,22 @@ export async function listStudioJobs() {
 
 export async function listStudioAssets() {
   return request<Asset[]>('/api/assets');
+}
+
+export async function listLibraries() {
+  return request<StudioLibrary[]>('/api/libraries');
+}
+
+export async function queryCatalog(params: { workspaceId?: string; libraryId?: string; favorite?: boolean; deleted?: boolean; q?: string; offset?: number; limit?: number } = {}) {
+  const search = new URLSearchParams();
+  if (params.workspaceId) search.set('workspace_id', params.workspaceId);
+  if (params.libraryId) search.set('library_id', params.libraryId);
+  if (params.favorite !== undefined) search.set('favorite', String(params.favorite));
+  if (params.deleted !== undefined) search.set('deleted', String(params.deleted));
+  if (params.q) search.set('q', params.q);
+  if (params.offset !== undefined) search.set('offset', String(params.offset));
+  if (params.limit !== undefined) search.set('limit', String(params.limit));
+  return request<CatalogPage>(`/api/catalog${search.size > 0 ? `?${search.toString()}` : ''}`);
 }
 
 export async function listStudioLogs() {

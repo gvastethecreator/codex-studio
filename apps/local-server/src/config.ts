@@ -14,7 +14,7 @@ export function hasEnvLocalFile() {
   return existsSync(getEnvLocalPath());
 }
 
-function loadDotEnvLocal() {
+export function loadDotEnvLocal() {
   const envPath = getEnvLocalPath();
   if (!existsSync(envPath)) return;
 
@@ -31,8 +31,6 @@ function loadDotEnvLocal() {
     }
   }
 }
-
-loadDotEnvLocal();
 
 export function getSettings(): StudioSettings {
   return {

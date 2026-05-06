@@ -1062,5 +1062,19 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T06:31:19.012Z"
+  },
+  {
+    "presetId": "SP04-077",
+    "presetName": "Graffiti (Piece)",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "5. Ink & Print",
+    "file": "components/recipes/styles/defaults/SP04-077.png",
+    "jobId": "f29c2757-6a4f-4f92-9cf0-2f3e3261f34d",
+    "sourceAsset": "components/recipes/styles/defaults/SP04-077.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:37:26.150Z"
   }
 ]

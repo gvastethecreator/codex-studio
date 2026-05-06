@@ -4,6 +4,7 @@ import { getCodexWsUrl, getSettings } from './config';
 import { resolveCodexInvocation } from './codexExecutable';
 import { resolveLibraryPath, toPublicAssetUrl } from './library';
 import { log } from './logger';
+import { resolvePlatformPath } from './platformPaths';
 
 interface JsonRpcMessage {
   jsonrpc?: '2.0';
@@ -228,9 +229,8 @@ class CodexRpcClient {
   }
 }
 
-function getNewestGeneratedImage(codexHome: string | null, sinceMs: number) {
-  if (!codexHome) return null;
-  const generatedDir = path.join(codexHome, 'generated_images');
+function getNewestGeneratedImage(sinceMs: number) {
+  const generatedDir = resolvePlatformPath('codex-generated-images');
   if (!existsSync(generatedDir)) return null;
 
   const candidates: string[] = [];
@@ -268,8 +268,8 @@ function extractImageResultFromNotifications(notifications: JsonRpcMessage[], jo
   return null;
 }
 
-function extractGeneratedImageItemPath(notifications: JsonRpcMessage[], codexHome: string | null) {
-  if (!codexHome) return null;
+function extractGeneratedImageItemPath(notifications: JsonRpcMessage[]) {
+  const generatedImagesDir = resolvePlatformPath('codex-generated-images');
   for (let index = notifications.length - 1; index >= 0; index -= 1) {
     const message = notifications[index];
     const item = message.params?.item;
@@ -278,7 +278,7 @@ function extractGeneratedImageItemPath(notifications: JsonRpcMessage[], codexHom
     const threadId = message.params?.threadId;
     if (!threadId) continue;
 
-    const generatedPath = path.join(codexHome, 'generated_images', threadId, `${item.id}.png`);
+    const generatedPath = path.join(generatedImagesDir, threadId, `${item.id}.png`);
     if (existsSync(generatedPath)) return generatedPath;
   }
   return null;
@@ -301,11 +301,13 @@ function extractSavedImagePathFromNotifications(notifications: JsonRpcMessage[],
   const matches = [
     ...raw.matchAll(/[A-Z]:\\\\(?:[^"'\\r\\n]|\\\\(?!r|n))+?\.(?:png|jpg|jpeg|webp)/gi),
     ...raw.matchAll(/[A-Z]:\\(?:[^"'\\r\\n]|\\(?!r|n))+?\.(?:png|jpg|jpeg|webp)/gi),
+    ...raw.matchAll(/\/(?:[^"'\r\n])+?\.(?:png|jpg|jpeg|webp)/gi),
   ];
+  const generatedImagesDir = resolvePlatformPath('codex-generated-images');
 
   const candidates = [...new Set(matches.map((match) => decodeJsonPath(match[0])))]
     .filter((filePath) => !/_image_id_\.(?:png|jpg|jpeg|webp)$/i.test(filePath))
-    .filter((filePath) => /(?:generated_images)/i.test(filePath))
+    .filter((filePath) => filePath.includes(generatedImagesDir) || /(?:generated_images)/i.test(filePath))
     .filter((filePath) => {
       if (!existsSync(filePath)) return false;
       return statSync(filePath).mtimeMs >= sinceMs - 1000;
@@ -317,7 +319,7 @@ function extractSavedImagePathFromNotifications(notifications: JsonRpcMessage[],
 
 const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4';
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
-const IMAGEGEN_SKILL_PATH = 'C:\\Users\\user\\.codex\\skills\\.system\\imagegen\\SKILL.md';
+const IMAGEGEN_SKILL_PATH = path.join(resolvePlatformPath('codex-skills-dir'), '.system', 'imagegen', 'SKILL.md');
 
 interface ImagegenSession {
   client: CodexRpcClient;
@@ -333,9 +335,13 @@ interface PersistedImagegenSession {
 }
 
 const imagegenSessions = new Map<string, ImagegenSession>();
-const imagegenSessionRegistryPath = resolveLibraryPath('state', 'imagegen-session-registry.json');
+
+function getImagegenSessionRegistryPath() {
+  return resolveLibraryPath('state', 'imagegen-session-registry.json');
+}
 
 function loadPersistedImagegenSessions() {
+  const imagegenSessionRegistryPath = getImagegenSessionRegistryPath();
   if (!existsSync(imagegenSessionRegistryPath)) return new Map<string, PersistedImagegenSession>();
   try {
     const parsed = JSON.parse(readFileSync(imagegenSessionRegistryPath, 'utf8')) as PersistedImagegenSession[];
@@ -346,6 +352,7 @@ function loadPersistedImagegenSessions() {
 }
 
 function savePersistedImagegenSessions(sessions: Map<string, PersistedImagegenSession>) {
+  const imagegenSessionRegistryPath = getImagegenSessionRegistryPath();
   mkdirSync(path.dirname(imagegenSessionRegistryPath), { recursive: true });
   const entries = [...sessions.values()].sort((a, b) => a.sessionKey.localeCompare(b.sessionKey));
   writeFileSync(imagegenSessionRegistryPath, `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
@@ -419,7 +426,7 @@ async function createImagegenSession(sessionKey: string): Promise<ImagegenSessio
         'Generate exactly one image per user turn through the provided imagegen skill. ' +
         'Treat every turn independently and use only the current user prompt for the requested style card. ' +
         'Do not run shell commands to locate or copy the newest generated image. ' +
-        'Do not copy files from C:\\Users\\user\\.codex\\generated_images manually. ' +
+        `Do not copy files from ${resolvePlatformPath('codex-generated-images')} manually. ` +
         'Report only the image generated by the current turn.',
     });
     threadId = thread?.thread?.id ?? null;
@@ -537,10 +544,24 @@ async function runCodexImagegenTurn(
     return { codexThreadId: session.threadId, codexTurnId: turnId, transcriptPath, discoveredImagePath: inlineImage };
   }
 
-  const generatedImage = extractGeneratedImageItemPath(notifications, session.codexHome);
+  const generatedImage = extractGeneratedImageItemPath(notifications);
   if (generatedImage) {
     const outputPath = resolveLibraryPath('assets', `${job.id}-codex.png`);
     copyFileSync(generatedImage, outputPath);
+    return { codexThreadId: session.threadId, codexTurnId: turnId, transcriptPath, discoveredImagePath: outputPath };
+  }
+
+  const savedImage = extractSavedImagePathFromNotifications(notifications, startedAt);
+  if (savedImage) {
+    const outputPath = resolveLibraryPath('assets', `${job.id}-codex${path.extname(savedImage).toLowerCase() || '.png'}`);
+    copyFileSync(savedImage, outputPath);
+    return { codexThreadId: session.threadId, codexTurnId: turnId, transcriptPath, discoveredImagePath: outputPath };
+  }
+
+  const newestImage = getNewestGeneratedImage(startedAt);
+  if (newestImage) {
+    const outputPath = resolveLibraryPath('assets', `${job.id}-codex${path.extname(newestImage).toLowerCase() || '.png'}`);
+    copyFileSync(newestImage, outputPath);
     return { codexThreadId: session.threadId, codexTurnId: turnId, transcriptPath, discoveredImagePath: outputPath };
   }
 

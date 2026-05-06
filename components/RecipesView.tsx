@@ -31,7 +31,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Palette,
         buttonText: 'Open Presets',
         buttonIcon: Sparkles,
-        bgImage: 'https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?q=80&w=1000&auto=format&fit=crop', // Abstract Fluid Dark
+        bgImage: new URL('./styles/category-bases/pack_01__portrait_styles.png', import.meta.url).href,
         accentColor: 'purple'
     },
     {
@@ -43,7 +43,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Wand2,
         buttonText: 'Open Tool',
         buttonIcon: Sparkles,
-        bgImage: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1000&auto=format&fit=crop', // Macro Tech/Chip
+        bgImage: new URL('./styles/category-bases/pack_06__traditional_painting.png', import.meta.url).href, // Local style-reference base
         accentColor: 'amber'
     },
     {
@@ -55,7 +55,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Video,
         buttonText: 'Open Viewfinder',
         buttonIcon: Film,
-        bgImage: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop', // Camera Lens
+        bgImage: new URL('./styles/previews/pack_01_camera_types.png', import.meta.url).href,
         accentColor: 'cyan'
     },
     {
@@ -67,7 +67,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Clapperboard,
         buttonText: 'Open Creator',
         buttonIcon: Film,
-        bgImage: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1000&auto=format&fit=crop', // Cinema Screen/Seats
+        bgImage: new URL('./styles/category-bases/pack_02__film_genres.png', import.meta.url).href,
         accentColor: 'rose'
     },
     {
@@ -79,7 +79,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Hourglass,
         buttonText: 'Open Timeline',
         buttonIcon: Clock,
-        bgImage: 'https://images.unsplash.com/photo-1495364141860-b0d03ecc005c?q=80&w=1000&auto=format&fit=crop', // Long Exposure Lights
+        bgImage: new URL('./styles/category-bases/pack_03__lighting_and_atmosphere.png', import.meta.url).href,
         accentColor: 'teal'
     },
     {
@@ -91,7 +91,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Grid3X3,
         buttonText: 'Configure Grid',
         buttonIcon: ArrowRight,
-        bgImage: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop', // Retro Arcade / Tech
+        bgImage: new URL('./styles/category-bases/pack_08__subcultures.png', import.meta.url).href,
         accentColor: 'emerald'
     },
     {
@@ -103,7 +103,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: User,
         buttonText: 'Open Designer',
         buttonIcon: Users,
-        bgImage: 'https://images.unsplash.com/photo-1515462277126-2dd0c162007a?q=80&w=1000&auto=format&fit=crop', // Mannequin / Figure
+        bgImage: new URL('./styles/category-bases/pack_05__studio_masterpieces.png', import.meta.url).href,
         accentColor: 'indigo'
     }
 ];

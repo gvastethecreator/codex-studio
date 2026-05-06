@@ -68,6 +68,59 @@ export function migrateDb() {
     )
   `);
   database.run(`
+    CREATE TABLE IF NOT EXISTS libraries (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      path TEXT NOT NULL UNIQUE,
+      is_default INTEGER DEFAULT 0,
+      created_at TEXT NOT NULL
+    )
+  `);
+  database.run(`
+    CREATE TABLE IF NOT EXISTS catalog_images (
+      id TEXT PRIMARY KEY,
+      library_id TEXT NOT NULL REFERENCES libraries(id),
+      file_path TEXT NOT NULL,
+      thumbnail_path TEXT,
+      public_url TEXT NOT NULL,
+      thumbnail_url TEXT,
+      prompt TEXT,
+      negative_prompt TEXT,
+      aspect_ratio TEXT,
+      image_size TEXT,
+      width INTEGER,
+      height INTEGER,
+      mime_type TEXT NOT NULL,
+      file_size_bytes INTEGER,
+      job_id TEXT REFERENCES jobs(id),
+      workspace_id TEXT,
+      batch_id TEXT,
+      recipe_id TEXT,
+      is_favorite INTEGER DEFAULT 0,
+      is_deleted INTEGER DEFAULT 0,
+      deleted_at TEXT,
+      tags TEXT DEFAULT '[]',
+      generation_config TEXT,
+      created_at TEXT NOT NULL
+    )
+  `);
+  database.run('CREATE INDEX IF NOT EXISTS idx_catalog_library ON catalog_images(library_id)');
+  database.run('CREATE INDEX IF NOT EXISTS idx_catalog_workspace ON catalog_images(workspace_id)');
+  database.run('CREATE INDEX IF NOT EXISTS idx_catalog_job ON catalog_images(job_id)');
+  database.run('CREATE INDEX IF NOT EXISTS idx_catalog_favorite ON catalog_images(is_favorite)');
+  database.run('CREATE INDEX IF NOT EXISTS idx_catalog_deleted ON catalog_images(is_deleted)');
+  database.run('CREATE INDEX IF NOT EXISTS idx_catalog_created ON catalog_images(created_at)');
+  database.run(`
+    CREATE TABLE IF NOT EXISTS workspaces (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      library_id TEXT REFERENCES libraries(id),
+      filter_json TEXT,
+      sort_order TEXT DEFAULT 'newest',
+      created_at TEXT NOT NULL
+    )
+  `);
+  database.run(`
     CREATE TABLE IF NOT EXISTS codex_threads (
       id TEXT PRIMARY KEY,
       project_id TEXT NOT NULL REFERENCES projects(id),
@@ -304,9 +357,11 @@ export function addJobEvent(jobId: string, type: string, message: string, metada
 }
 
 export function addSystemLog(input: { level: SystemLog['level']; scope: string; message: string; jobId?: string | null }) {
-  getDb()
+  const result = getDb()
     .query('INSERT INTO system_logs (level, scope, message, job_id, created_at) VALUES (?, ?, ?, ?, ?)')
     .run(input.level, input.scope, input.message, input.jobId ?? null, now());
+  const row = getDb().query('SELECT * FROM system_logs WHERE id = ?').get(Number(result.lastInsertRowid));
+  return row ? mapLog(row) : null;
 }
 
 export function listLogs() {

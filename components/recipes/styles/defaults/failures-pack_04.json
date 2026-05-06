@@ -1,0 +1,29 @@
+[
+  {
+    "presetId": "SP04-078",
+    "presetName": "Stencil Art (Banksy)",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "5. Ink & Print",
+    "error": "Job f017aba2-a986-4172-96bd-1c803c99fecc needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:47:40.386Z"
+  },
+  {
+    "presetId": "SP04-079",
+    "presetName": "Calligraphy (Blackletter)",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "5. Ink & Print",
+    "error": "Job 8faf2e4e-82c7-49a1-a731-95465d27e19e needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:47:52.786Z"
+  },
+  {
+    "presetId": "SP04-080",
+    "presetName": "Brush Pen Ink",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "5. Ink & Print",
+    "error": "Job c3a8b147-49e9-41e1-b7e2-db9dd9b63f49 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:48:08.060Z"
+  }
+]

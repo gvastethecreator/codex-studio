@@ -1,16 +1,19 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { registerCatalogImage } from './catalog';
 import { addAsset, addJobEvent, getJob, updateJobStatus, upsertCodexTurn } from './db';
 import { publishEvent } from './events';
 import { resolveLibraryPath, toPublicAssetUrl } from './library';
 import { log } from './logger';
-import { runCodexImagegenJob } from './codexClient';
+import { createCodexTurn } from './codex';
+import { embedMetadata } from './metadataEmbedder';
 import type { Job } from '../../../packages/shared/src';
 
 const runningJobs = new Set<string>();
 const jobQueue: Job[] = [];
 let activeWorkerCount = 0;
 const maxConcurrentJobs = Number(process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS || 4);
+const codexTurn = createCodexTurn();
 
 function svgForPrompt(prompt: string) {
   const safePrompt = prompt
@@ -54,8 +57,20 @@ async function runDryJob(job: Job) {
   log('info', 'worker', 'Dry run job started.', job.id);
   await Bun.sleep(500);
   const asset = createDryRunAsset(job);
+  const catalogImage = registerCatalogImage({
+    filePath: asset.filePath,
+    thumbnailPath: asset.thumbnailPath,
+    prompt: asset.prompt,
+    width: asset.width,
+    height: asset.height,
+    mimeType: asset.mimeType,
+    fileSizeBytes: statSync(asset.filePath).size,
+    jobId: asset.jobId,
+    workspaceId: asset.projectId,
+  });
   addJobEvent(job.id, 'asset.created', 'Dry run asset created.', { assetId: asset.id });
   publishEvent('asset.created', asset);
+  publishEvent('catalog.created', catalogImage);
   updateJobStatus(job.id, 'completed');
   publishEvent('job.completed', getJob(job.id));
   log('info', 'worker', `Dry run job completed. Asset: ${path.basename(asset.filePath)}`, job.id);
@@ -65,8 +80,8 @@ async function runCodexJob(job: Job) {
   addJobEvent(job.id, 'codex.started', 'Codex image generation started.');
   log('info', 'worker', 'Codex imagegen job started.', job.id);
   const turnRecordId = upsertCodexTurn({ jobId: job.id, status: 'running' });
-  const result = await runCodexImagegenJob({
-    id: job.id,
+  const result = await codexTurn.runTurn({
+    jobId: job.id,
     projectId: job.projectId,
     prompt: job.finalPromptUsed,
   });
@@ -74,35 +89,61 @@ async function runCodexJob(job: Job) {
   upsertCodexTurn({
     id: turnRecordId,
     jobId: job.id,
-    codexThreadId: result.codexThreadId,
-    codexTurnId: result.codexTurnId,
-    transcriptPath: result.transcriptPath,
-    status: result.discoveredImagePath ? 'completed' : 'needs_review',
+    codexThreadId: result.threadId,
+    codexTurnId: result.turnId,
+    transcriptPath: result.transcript,
+    status: result.assets.length > 0 ? 'completed' : 'needs_review',
   });
 
-  if (!result.discoveredImagePath) {
+  const discoveredImagePath = result.assets[0]?.sourcePath ?? null;
+  if (!discoveredImagePath) {
     updateJobStatus(job.id, 'needs_review');
     publishEvent('job.progress', getJob(job.id));
-    log('warn', 'worker', `Codex turn completed but no image file was discovered. Transcript: ${result.transcriptPath}`, job.id);
+    log('warn', 'worker', `Codex turn completed but no image file was discovered. Transcript: ${result.transcript}`, job.id);
     return;
   }
 
-  const ext = path.extname(result.discoveredImagePath).toLowerCase();
+  const ext = path.extname(discoveredImagePath).toLowerCase();
   const mimeType = ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : ext === '.webp' ? 'image/webp' : 'image/png';
   const asset = addAsset({
     projectId: job.projectId,
     jobId: job.id,
-    filePath: result.discoveredImagePath,
+    filePath: discoveredImagePath,
     thumbnailPath: null,
-    publicUrl: toPublicAssetUrl(result.discoveredImagePath),
+    publicUrl: toPublicAssetUrl(discoveredImagePath),
     prompt: job.finalPromptUsed,
     width: null,
     height: null,
     mimeType,
   });
+  const catalogImage = registerCatalogImage({
+    filePath: asset.filePath,
+    thumbnailPath: asset.thumbnailPath,
+    prompt: asset.prompt,
+    width: asset.width,
+    height: asset.height,
+    mimeType: asset.mimeType,
+    fileSizeBytes: statSync(asset.filePath).size,
+    jobId: asset.jobId,
+    workspaceId: asset.projectId,
+  });
+  void embedMetadata(asset.filePath, {
+    prompt: job.finalPromptUsed,
+    aspectRatio: job.finalPromptUsed.match(/Aspect ratio:\s*([0-9]+:[0-9]+)/)?.[1] ?? null,
+    imageSize: job.finalPromptUsed.match(/ImageGen output size:\s*([^\n]+)/)?.[1]?.trim() ?? null,
+    model: 'codex-imagegen',
+    batchId: job.id,
+    generatedAt: new Date().toISOString(),
+    studioVersion: '0.0.0',
+    libraryId: catalogImage.libraryId,
+    catalogId: catalogImage.id,
+  }).catch((error) => {
+    log('warn', 'metadata', `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`, job.id);
+  });
 
   addJobEvent(job.id, 'asset.created', 'Codex image asset imported.', { assetId: asset.id });
   publishEvent('asset.created', asset);
+  publishEvent('catalog.created', catalogImage);
   updateJobStatus(job.id, 'completed');
   publishEvent('job.completed', getJob(job.id));
   log('info', 'worker', `Codex job completed. Asset: ${path.basename(asset.filePath)}`, job.id);
