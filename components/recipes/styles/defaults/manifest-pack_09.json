@@ -1104,5 +1104,19 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T06:15:59.552Z"
+  },
+  {
+    "presetId": "SP09-080",
+    "presetName": "Dragon Scale",
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "5. Elemental & FX",
+    "file": "components/recipes/styles/defaults/SP09-080.png",
+    "jobId": "74a67263-c797-4dae-98ec-1564896a5722",
+    "sourceAsset": "components/recipes/styles/defaults/SP09-080.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:17:18.268Z"
   }
 ]
