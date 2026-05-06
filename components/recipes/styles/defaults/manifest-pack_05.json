@@ -740,5 +740,47 @@
     "model": "gpt-5.3-codex-spark",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T07:22:49.409Z"
+  },
+  {
+    "presetId": "SP05-059",
+    "presetName": "Ghost in the Shell: Stand Alone Complex",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "file": "components/recipes/styles/defaults/SP05-059.png",
+    "jobId": "0b3d0c0f-1802-433f-8f5d-90ec5b2f7f1b",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-059.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4-mini",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T14:13:58.057Z"
+  },
+  {
+    "presetId": "SP05-060",
+    "presetName": "Aldnoah.Zero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "file": "components/recipes/styles/defaults/SP05-060.png",
+    "jobId": "b9600e96-9ea3-4f64-8daa-de0facf05e18",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-060.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4-mini",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T14:17:17.509Z"
+  },
+  {
+    "presetId": "SP05-061",
+    "presetName": "Berserk (1997)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "file": "components/recipes/styles/defaults/SP05-061.png",
+    "jobId": "75e0d760-66c2-4009-ac9e-33f7525db32f",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-061.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4-mini",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T14:20:30.061Z"
   }
 ]

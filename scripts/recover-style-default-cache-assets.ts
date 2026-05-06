@@ -44,7 +44,7 @@ const generatedImagesDir = path.join(codexHome, "generated_images");
 const dryRun = process.argv.includes("--dry-run");
 const force = process.argv.includes("--force");
 const recoveredReportPath = path.join(defaultsDir, "cache-recovery-report.json");
-const model = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.3-codex-spark";
+const model = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.4-mini";
 const reasoningEffort = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || "low";
 
 function manifestPathForPack(packId: string) {

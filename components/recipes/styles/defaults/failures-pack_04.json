@@ -52,5 +52,23 @@
     "category": "5. Ink & Print",
     "error": "Job de782631-47ef-4389-a04e-adafd6cc7f96 needs review; no image was auto-discovered.",
     "failedAt": "2026-05-06T07:20:31.503Z"
+  },
+  {
+    "presetId": "SP04-078",
+    "presetName": "Stencil Art (Banksy)",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "5. Ink & Print",
+    "error": "Job b092f0c0-9d92-4e6b-bde2-1a5e6db82887 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:11.695Z"
+  },
+  {
+    "presetId": "SP04-078",
+    "presetName": "Stencil Art (Banksy)",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "5. Ink & Print",
+    "error": "Job 80a9ccb6-3eb3-4aed-bd63-3502785ea391 status needs_review",
+    "failedAt": "2026-05-06T07:48:51.872Z"
   }
 ]

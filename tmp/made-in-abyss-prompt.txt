@@ -1,0 +1,22 @@
+Generate one portrait default style-card image.
+TARGET STYLE: MADE IN ABYSS
+PACK: Anime & Manga Universes
+CATEGORY: 7. Dark Fantasy & Seinen
+MODE: text-to-image
+MODEL: gpt-5.3-codex-spark, low
+
+Base: A dark fantasy or mature anime scene with one original character, ruined architecture, ominous atmosphere, textured costume, dramatic shadows, and grounded narrative weight.
+Anchor: Place the subject at the edge of a greenhouse aisle with condensation, glass structure, and layered foliage depth.
+Fit pack "Anime & Manga Universes" and category "7. Dark Fantasy & Seinen". Finished style-card image, not a reference sheet. Portrait 2:3, usable in a 3:4 card crop. No text, labels, logos, watermark, or UI.
+COMPOSITION: Use a diagonal composition with the subject layered across foreground and middle-ground.
+MATERIAL: Add a tactile foreground detail that reinforces the style treatment.
+LIGHTING: Keep lighting directional with a dramatic edge and controlled ambient fill.
+DETAIL: Add a subtle asymmetry in object placement to avoid template repetition.
+FEELING: Let one facial or posture detail carry the scene’s emotional weight.
+
+Style DNA: aesthetic=Deceptively cute characters, lush but terrifying environments, detailed creatures; subject=Anime style linework; color=Anime color palette; light=Anime shading; texture=Cel shaded or anime background; camera=Anime proportions; mood=Adventure, cosmic horror; render=Masterpiece, high quality anime screenshot; features=Studio animation quality.
+
+Make it immediately recognizable as "Made in Abyss". Keep the anchor; apply the style through rendering, mood, materials, camera, and treatment. Distinct motif to avoid cross-pack convergence: Include a carved stone fragment with chipped edges.. No franchise, brand, character, logo, or copyrighted identity. Avoid books, bookshelves, libraries, reading rooms, archives, and stacked volumes. Output only the image, 1024x1536 portrait.
+
+Avoid:
+realistic, 3d render, photo, live action, western comic, ugly, bad anatomy

@@ -448,5 +448,761 @@
     "category": "6. Mecha & Cyberpunk",
     "error": "Job f1fcd82f-0526-41a0-a6b4-0f4517db577a needs review; no image was auto-discovered.",
     "failedAt": "2026-05-06T07:20:44.785Z"
+  },
+  {
+    "presetId": "SP05-059",
+    "presetName": "Ghost in the Shell: Stand Alone Complex",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job 3e596ccf-83d8-44dc-a1d6-32f9efe6fdf7 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:11.560Z"
+  },
+  {
+    "presetId": "SP05-064",
+    "presetName": "Vinland Saga",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 3d49eebb-8a59-4079-bb57-c87022e10171 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:11.566Z"
+  },
+  {
+    "presetId": "SP05-060",
+    "presetName": "Aldnoah.Zero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job ab4f061e-93f1-47e9-961b-5cea633a7c88 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:11.610Z"
+  },
+  {
+    "presetId": "SP05-061",
+    "presetName": "Berserk (1997)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 54c769b1-b228-4eb3-8c2c-22cc0a3baf82 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:11.618Z"
+  },
+  {
+    "presetId": "SP05-062",
+    "presetName": "Tokyo Ghoul",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job fd60ad6e-7a0f-4afa-a2ca-e3493f60cad7 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:11.675Z"
+  },
+  {
+    "presetId": "SP05-065",
+    "presetName": "Claymore",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 237df709-5538-4ccb-accd-c08dba14c947 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:16.441Z"
+  },
+  {
+    "presetId": "SP05-063",
+    "presetName": "Hellsing Ultimate",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 17c0ea43-30f3-4639-8df7-ea8ce6ee3309 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:16.498Z"
+  },
+  {
+    "presetId": "SP05-067",
+    "presetName": "Made in Abyss",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 0b7063ce-fd8e-486f-8988-f65699765666 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:17.748Z"
+  },
+  {
+    "presetId": "SP05-066",
+    "presetName": "Parasyte -the maxim-",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 54bdb81a-e993-4ffd-83c7-dc37a2decabd ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:17.788Z"
+  },
+  {
+    "presetId": "SP05-068",
+    "presetName": "Dorohedoro",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 1b8a0ec0-39ca-4c87-9a8b-fc9e5501a5d3 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:17.799Z"
+  },
+  {
+    "presetId": "SP05-069",
+    "presetName": "Goblin Slayer",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job c76f2f77-3280-4681-afb6-7cd7708ee019 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:17.817Z"
+  },
+  {
+    "presetId": "SP05-070",
+    "presetName": "Devilman Crybaby",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 2689dc7d-6914-44db-888f-0548a4517855 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:17.847Z"
+  },
+  {
+    "presetId": "SP05-071",
+    "presetName": "Spirited Away (Ghibli)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job cee8b8d8-1215-4666-8308-f65ee9d97ac7 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:17.879Z"
+  },
+  {
+    "presetId": "SP05-072",
+    "presetName": "Princess Mononoke (Ghibli)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job f9f951a3-1c94-4594-ae44-91ed068da1c7 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:22.611Z"
+  },
+  {
+    "presetId": "SP05-073",
+    "presetName": "Howl's Moving Castle (Ghibli)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 55e4ed75-9367-416f-9469-5dea27d3a849 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:22.618Z"
+  },
+  {
+    "presetId": "SP05-074",
+    "presetName": "Your Name (Makoto Shinkai)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 84ff1e78-012f-4b44-844d-f3a5223596c2 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:23.878Z"
+  },
+  {
+    "presetId": "SP05-075",
+    "presetName": "Weathering With You (Shinkai)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 7c7f9311-8f1e-4d86-9162-af7e0e59f9bd ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:23.918Z"
+  },
+  {
+    "presetId": "SP05-076",
+    "presetName": "Paprika (Satoshi Kon)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 4defd964-4a81-4c2d-84e2-114b8cb28fa6 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:23.956Z"
+  },
+  {
+    "presetId": "SP05-077",
+    "presetName": "Perfect Blue (Satoshi Kon)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job c182bf00-993e-45e5-8274-e1f08d340072 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:23.989Z"
+  },
+  {
+    "presetId": "SP05-078",
+    "presetName": "Akira (Katsuhiro Otomo)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 21b131a6-51ec-4e03-80c2-7bb113e5b2df ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:23.998Z"
+  },
+  {
+    "presetId": "SP05-079",
+    "presetName": "Redline",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 223f25a5-43fa-4169-9af7-698cd3374bd4 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:24.025Z"
+  },
+  {
+    "presetId": "SP05-080",
+    "presetName": "Children of the Sea",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 16c441ed-b779-44d6-b600-fd10b25f58f9 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:28.760Z"
+  },
+  {
+    "presetId": "SP05-081",
+    "presetName": "K-On! (KyoAni)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job 78ebc743-443e-4b67-9f67-72dde58529dc ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:28.788Z"
+  },
+  {
+    "presetId": "SP05-082",
+    "presetName": "Nichijou",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job 3e6a9594-7261-42b8-8dfe-16681f7b5f54 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:30.033Z"
+  },
+  {
+    "presetId": "SP05-083",
+    "presetName": "Lucky Star",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job c2e465bc-70a5-47b4-9b75-198b044a3618 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:30.042Z"
+  },
+  {
+    "presetId": "SP05-084",
+    "presetName": "The Melancholy of Haruhi Suzumiya",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job b35b0c86-c997-4117-9d41-218737ef3c35 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:30.096Z"
+  },
+  {
+    "presetId": "SP05-085",
+    "presetName": "Bocchi the Rock!",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job 67ad548e-b5ea-4208-be70-f6bf3fceccb0 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:30.130Z"
+  },
+  {
+    "presetId": "SP05-086",
+    "presetName": "Yuru Camp",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job ad202679-c51a-4023-a00f-6d7c272f03a8 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:30.150Z"
+  },
+  {
+    "presetId": "SP05-087",
+    "presetName": "Non Non Biyori",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job a88232d3-d2d0-4f2f-8f40-7ef69867b942 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:30.196Z"
+  },
+  {
+    "presetId": "SP05-088",
+    "presetName": "Miss Kobayashi's Dragon Maid",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job 74ae150b-606a-4ffd-a936-af9572df6d51 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:34.916Z"
+  },
+  {
+    "presetId": "SP05-089",
+    "presetName": "Azumanga Daioh",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job ae54ec82-8d89-4338-a5c8-e1bcbb74b017 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:34.954Z"
+  },
+  {
+    "presetId": "SP05-090",
+    "presetName": "Clannad",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job a8342788-3e8b-438f-913a-2ddf2dfd95c6 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:36.213Z"
+  },
+  {
+    "presetId": "SP05-091",
+    "presetName": "Sword Art Online (Aincrad)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job fa0e3186-6c76-4ebc-9017-97b6765eb9d8 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:36.236Z"
+  },
+  {
+    "presetId": "SP05-092",
+    "presetName": "Re:Zero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job ada6c3f9-db23-4ae7-8a04-4d94361b4fdc ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:36.314Z"
+  },
+  {
+    "presetId": "SP05-094",
+    "presetName": "Konosuba",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 55726195-190e-4bed-beff-725c32cee157 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:36.602Z"
+  },
+  {
+    "presetId": "SP05-095",
+    "presetName": "Frieren: Beyond Journey's End",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job b54bc6a4-8d30-4f54-bded-b0e8e0921120 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:36.635Z"
+  },
+  {
+    "presetId": "SP05-093",
+    "presetName": "Mushoku Tensei",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 5922dca2-f5aa-4c80-8b62-9294977a6bf1 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:36.650Z"
+  },
+  {
+    "presetId": "SP05-096",
+    "presetName": "No Game No Life",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 075f3113-806b-4ad7-a9f6-9c803fce3c37 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:41.080Z"
+  },
+  {
+    "presetId": "SP05-097",
+    "presetName": "Overlord",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 47848aac-5893-4871-ad41-efdd5806f5a9 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:41.141Z"
+  },
+  {
+    "presetId": "SP05-098",
+    "presetName": "That Time I Got Reincarnated as a Slime",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 7fd767a7-78c2-4db8-baf4-e7da4f3fa2b6 ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:42.397Z"
+  },
+  {
+    "presetId": "SP05-099",
+    "presetName": "Shield Hero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 2f318394-6e68-48dc-9ada-661a1062685e ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:42.708Z"
+  },
+  {
+    "presetId": "SP05-100",
+    "presetName": "DanMachi",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 4ea36eca-9e7a-4524-9488-405e91c6756b ended as failed: Unable to connect to ws://127.0.0.1:4318",
+    "failedAt": "2026-05-06T07:41:43.025Z"
+  },
+  {
+    "presetId": "SP05-063",
+    "presetName": "Hellsing Ultimate",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 54361711-bcdf-4010-b47f-69420e3db567 status needs_review",
+    "failedAt": "2026-05-06T07:50:54.811Z"
+  },
+  {
+    "presetId": "SP05-067",
+    "presetName": "Made in Abyss",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 039db51b-b7e6-4976-ab84-7cb1316989a7 status needs_review",
+    "failedAt": "2026-05-06T07:51:00.665Z"
+  },
+  {
+    "presetId": "SP05-060",
+    "presetName": "Aldnoah.Zero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job e424e8b2-5ac1-4b34-b6f6-40a684c52997 status needs_review",
+    "failedAt": "2026-05-06T07:51:03.960Z"
+  },
+  {
+    "presetId": "SP05-059",
+    "presetName": "Ghost in the Shell: Stand Alone Complex",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job 2233b3e1-cd90-4878-ab59-2f19df912e86 status needs_review",
+    "failedAt": "2026-05-06T07:51:20.616Z"
+  },
+  {
+    "presetId": "SP05-061",
+    "presetName": "Berserk (1997)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 2f044ca7-103f-481e-af87-d7d35ac24bf1 status needs_review",
+    "failedAt": "2026-05-06T07:51:35.532Z"
+  },
+  {
+    "presetId": "SP05-064",
+    "presetName": "Vinland Saga",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 25273c8d-be39-4e6d-9ebd-b0d58e2f4f63 status needs_review",
+    "failedAt": "2026-05-06T07:52:21.032Z"
+  },
+  {
+    "presetId": "SP05-070",
+    "presetName": "Devilman Crybaby",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 3fe462a6-e982-42f3-8a15-919a3150e986 status needs_review",
+    "failedAt": "2026-05-06T07:52:42.593Z"
+  },
+  {
+    "presetId": "SP05-066",
+    "presetName": "Parasyte -the maxim-",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 04af88ac-e9a9-4c66-93ee-dd1ca72b680a ended as failed: Timed out waiting for Codex notification",
+    "failedAt": "2026-05-06T07:57:31.102Z"
+  },
+  {
+    "presetId": "SP05-068",
+    "presetName": "Dorohedoro",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.956Z"
+  },
+  {
+    "presetId": "SP05-069",
+    "presetName": "Goblin Slayer",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.960Z"
+  },
+  {
+    "presetId": "SP05-077",
+    "presetName": "Perfect Blue (Satoshi Kon)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.961Z"
+  },
+  {
+    "presetId": "SP05-071",
+    "presetName": "Spirited Away (Ghibli)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.961Z"
+  },
+  {
+    "presetId": "SP05-072",
+    "presetName": "Princess Mononoke (Ghibli)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.962Z"
+  },
+  {
+    "presetId": "SP05-075",
+    "presetName": "Weathering With You (Shinkai)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.963Z"
+  },
+  {
+    "presetId": "SP05-065",
+    "presetName": "Claymore",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.963Z"
+  },
+  {
+    "presetId": "SP05-073",
+    "presetName": "Howl's Moving Castle (Ghibli)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.964Z"
+  },
+  {
+    "presetId": "SP05-062",
+    "presetName": "Tokyo Ghoul",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.964Z"
+  },
+  {
+    "presetId": "SP05-076",
+    "presetName": "Paprika (Satoshi Kon)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:38:51.965Z"
+  },
+  {
+    "presetId": "SP05-080",
+    "presetName": "Children of the Sea",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.177Z"
+  },
+  {
+    "presetId": "SP05-088",
+    "presetName": "Miss Kobayashi's Dragon Maid",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.179Z"
+  },
+  {
+    "presetId": "SP05-087",
+    "presetName": "Non Non Biyori",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.179Z"
+  },
+  {
+    "presetId": "SP05-079",
+    "presetName": "Redline",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.180Z"
+  },
+  {
+    "presetId": "SP05-084",
+    "presetName": "The Melancholy of Haruhi Suzumiya",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.267Z"
+  },
+  {
+    "presetId": "SP05-083",
+    "presetName": "Lucky Star",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.268Z"
+  },
+  {
+    "presetId": "SP05-082",
+    "presetName": "Nichijou",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.268Z"
+  },
+  {
+    "presetId": "SP05-081",
+    "presetName": "K-On! (KyoAni)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.269Z"
+  },
+  {
+    "presetId": "SP05-086",
+    "presetName": "Yuru Camp",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.269Z"
+  },
+  {
+    "presetId": "SP05-085",
+    "presetName": "Bocchi the Rock!",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:40:47.270Z"
+  },
+  {
+    "presetId": "SP05-091",
+    "presetName": "Sword Art Online (Aincrad)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.438Z"
+  },
+  {
+    "presetId": "SP05-090",
+    "presetName": "Clannad",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.440Z"
+  },
+  {
+    "presetId": "SP05-089",
+    "presetName": "Azumanga Daioh",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.440Z"
+  },
+  {
+    "presetId": "SP05-092",
+    "presetName": "Re:Zero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.441Z"
+  },
+  {
+    "presetId": "SP05-095",
+    "presetName": "Frieren: Beyond Journey's End",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.512Z"
+  },
+  {
+    "presetId": "SP05-094",
+    "presetName": "Konosuba",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.512Z"
+  },
+  {
+    "presetId": "SP05-093",
+    "presetName": "Mushoku Tensei",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.513Z"
+  },
+  {
+    "presetId": "SP05-098",
+    "presetName": "That Time I Got Reincarnated as a Slime",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.513Z"
+  },
+  {
+    "presetId": "SP05-097",
+    "presetName": "Overlord",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.513Z"
+  },
+  {
+    "presetId": "SP05-096",
+    "presetName": "No Game No Life",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:42:42.513Z"
+  },
+  {
+    "presetId": "SP05-078",
+    "presetName": "Akira (Katsuhiro Otomo)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:43:47.567Z"
+  },
+  {
+    "presetId": "SP05-074",
+    "presetName": "Your Name (Makoto Shinkai)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:43:47.567Z"
+  },
+  {
+    "presetId": "SP05-100",
+    "presetName": "DanMachi",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:44:37.749Z"
+  },
+  {
+    "presetId": "SP05-099",
+    "presetName": "Shield Hero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-06T08:44:37.749Z"
   }
 ]
