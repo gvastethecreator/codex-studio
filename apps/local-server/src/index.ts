@@ -1,10 +1,17 @@
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from './config';
 import { resolveCodexInvocation } from './codexExecutable';
+import {
+  getCatalogImage,
+  queryCatalog,
+  restoreCatalogImage,
+  softDeleteCatalogImage,
+  updateCatalogImage,
+} from './catalog';
 import {
   createJob,
   createProject,
@@ -19,13 +26,16 @@ import {
 import { publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
 import { inspectLibrary, resolveLibraryPath } from './library';
+import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from './libraries';
 import { log } from './logger';
 import { enqueueJob, getWorkerStatus } from './worker';
 import { ensureAppServer, getAppServerDiagnostics, isAppServerRunning } from './codexClient';
+import { embedMetadata } from './metadataEmbedder';
+import { processReferences, ReferenceProcessingError } from './referenceManager';
 import type { CreateJobRequest } from '../../../packages/shared/src';
 
 const initResult = initStudio();
-const app = new Hono();
+export const app = new Hono();
 
 app.use('*', cors());
 
@@ -117,7 +127,16 @@ app.post('/api/jobs', async (c) => {
   const prompt = body.prompt?.trim();
   if (!prompt) return c.json({ error: 'Prompt is required' }, 400);
   const job = createJob({ projectId, kind: body.kind, prompt });
-  const queuedJob = updateJobFinalPrompt(job.id, buildPromptWithReferences(prompt, persistJobReferences(job.id, body.references || []))) || job;
+  let finalPrompt = prompt;
+  try {
+    finalPrompt = (await processReferences(job.id, prompt, body.references || [], initResult.settings.libraryDir)).augmentedPrompt;
+  } catch (error) {
+    if (error instanceof ReferenceProcessingError) {
+      return c.json({ error: error.message, referenceName: error.referenceName, reason: error.reason }, 400);
+    }
+    throw error;
+  }
+  const queuedJob = updateJobFinalPrompt(job.id, finalPrompt) || job;
   publishEvent('job.created', queuedJob);
   log('info', 'api', `Job created: ${queuedJob.kind}`, queuedJob.id);
   enqueueJob(queuedJob);
@@ -127,6 +146,100 @@ app.post('/api/jobs', async (c) => {
 app.get('/api/assets', (c) => c.json(listAssets()));
 
 app.get('/api/logs', (c) => c.json(listLogs()));
+
+app.get('/api/libraries', (c) => c.json(listLibraries()));
+
+app.post('/api/libraries', async (c) => {
+  const body = await c.req.json().catch(() => ({}));
+  const library = registerLibrary({
+    name: body.name || 'Untitled Library',
+    path: body.path,
+    isDefault: Boolean(body.isDefault),
+  });
+  publishEvent('library.created', library);
+  return c.json(library, 201);
+});
+
+app.put('/api/libraries/:id/default', (c) => {
+  const library = setDefaultLibrary(c.req.param('id'));
+  if (!library) return c.json({ error: 'Library not found' }, 404);
+  publishEvent('library.default', library);
+  return c.json(library);
+});
+
+app.delete('/api/libraries/:id', (c) => {
+  if (!removeLibrary(c.req.param('id'))) return c.json({ error: 'Library not found or default library cannot be removed' }, 400);
+  return c.json({ ok: true });
+});
+
+app.get('/api/catalog', (c) => {
+  const url = new URL(c.req.url);
+  return c.json(queryCatalog({
+    libraryId: url.searchParams.get('library_id'),
+    workspaceId: url.searchParams.get('workspace_id'),
+    favorite: url.searchParams.has('favorite') ? url.searchParams.get('favorite') === 'true' : undefined,
+    isDeleted: url.searchParams.get('deleted') === 'true',
+    q: url.searchParams.get('q'),
+    offset: Number(url.searchParams.get('offset') || 0),
+    limit: Number(url.searchParams.get('limit') || 50),
+  }));
+});
+
+app.get('/api/catalog/search', (c) => {
+  const url = new URL(c.req.url);
+  return c.json(queryCatalog({ q: url.searchParams.get('q'), offset: Number(url.searchParams.get('offset') || 0), limit: Number(url.searchParams.get('limit') || 50) }));
+});
+
+app.get('/api/catalog/:id', (c) => {
+  const image = getCatalogImage(c.req.param('id'));
+  if (!image) return c.json({ error: 'Catalog image not found' }, 404);
+  return c.json(image);
+});
+
+app.patch('/api/catalog/:id', async (c) => {
+  const body = await c.req.json().catch(() => ({}));
+  const image = updateCatalogImage(c.req.param('id'), {
+    isFavorite: body.isFavorite,
+    tags: body.tags,
+    workspaceId: body.workspaceId,
+  });
+  if (!image) return c.json({ error: 'Catalog image not found' }, 404);
+  publishEvent('catalog.updated', image);
+  return c.json(image);
+});
+
+app.delete('/api/catalog/:id', (c) => {
+  const image = softDeleteCatalogImage(c.req.param('id'));
+  if (!image) return c.json({ error: 'Catalog image not found' }, 404);
+  publishEvent('catalog.updated', image);
+  return c.json(image);
+});
+
+app.post('/api/catalog/:id/restore', (c) => {
+  const image = restoreCatalogImage(c.req.param('id'));
+  if (!image) return c.json({ error: 'Catalog image not found' }, 404);
+  publishEvent('catalog.updated', image);
+  return c.json(image);
+});
+
+app.post('/api/catalog/:id/embed', async (c) => {
+  const image = getCatalogImage(c.req.param('id'));
+  if (!image) return c.json({ error: 'Catalog image not found' }, 404);
+  const result = await embedMetadata(image.filePath, {
+    prompt: image.prompt || '',
+    negativePrompt: image.negativePrompt,
+    aspectRatio: image.aspectRatio,
+    imageSize: image.imageSize,
+    model: 'codex-imagegen',
+    recipe: image.recipeId,
+    batchId: image.batchId,
+    generatedAt: image.createdAt,
+    studioVersion: '0.0.0',
+    libraryId: image.libraryId,
+    catalogId: image.id,
+  });
+  return c.json(result);
+});
 
 app.get('/api/events', (c) => {
   const stream = new ReadableStream({
@@ -152,46 +265,6 @@ app.get('/api/events', (c) => {
   });
 });
 
-function safeReferenceName(name: string, index: number) {
-  const parsed = path.parse(name || `reference-${index + 1}.png`);
-  const base = (parsed.name || `reference-${index + 1}`).replace(/[^a-z0-9._-]+/gi, '-').slice(0, 80);
-  const ext = parsed.ext && /^\.[a-z0-9]+$/i.test(parsed.ext) ? parsed.ext.toLowerCase() : '.png';
-  return `${base || `reference-${index + 1}`}${ext}`;
-}
-
-function persistJobReferences(jobId: string, references: NonNullable<CreateJobRequest['references']>) {
-  if (references.length === 0) return [];
-  const saved: { name: string; filePath: string; strength: number }[] = [];
-  const referencesDir = resolveLibraryPath('references', jobId);
-  mkdirSync(referencesDir, { recursive: true });
-
-  for (const [index, reference] of references.entries()) {
-    const match = /^data:(image\/(?:png|jpe?g|webp|gif|svg\+xml));base64,(.+)$/i.exec(reference.dataUrl);
-    if (!match) continue;
-    const fileName = safeReferenceName(reference.name, index);
-    const filePath = path.join(referencesDir, fileName);
-    const bytes = Buffer.from(match[2], 'base64');
-    writeFileSync(filePath, bytes);
-    saved.push({ name: reference.name || fileName, filePath, strength: reference.strength });
-  }
-
-  if (saved.length > 0) {
-    log('info', 'api', `Stored ${saved.length} reference image(s).`, jobId);
-  }
-  return saved;
-}
-
-function buildPromptWithReferences(prompt: string, references: { name: string; filePath: string; strength: number }[]) {
-  if (references.length === 0) return prompt;
-  const referenceBlock = references
-    .map((reference, index) => `${index + 1}. ${reference.filePath} (${reference.name}, strength ${reference.strength.toFixed(2)})`)
-    .join('\n');
-  return `${prompt}
-
-Use these local reference image files as visual context for the requested image. Respect the strength value as the visual influence for each reference:
-${referenceBlock}`;
-}
-
 app.get('/library/*', async (c) => {
   const encoded = c.req.path.replace('/library/', '');
   const relative = decodeURIComponent(encoded);
@@ -215,19 +288,34 @@ app.get('/library/*', async (c) => {
 
 const port = getSettings().serverPort;
 
-log('info', 'server', `Local server starting on http://localhost:${port}. Library: ${initResult.settings.libraryDir}`);
-
-Bun.serve({
-  port,
-  fetch: app.fetch,
-});
-
-console.log(`Codex Image Studio local-server listening on http://localhost:${port}`);
-
-const recoverableJobs = listRecoverableJobs();
-for (const job of recoverableJobs) {
-  enqueueJob(job);
+export async function createStudioApp() {
+  return {
+    app,
+    config: getSettings(),
+    initResult,
+    worker: getWorkerStatus(),
+    async shutdown() {
+      // Bun.serve owns the HTTP server in the entry point; module imports can still
+      // use this factory for route-level tests without opening a socket.
+    },
+  };
 }
-if (recoverableJobs.length > 0) {
-  log('info', 'worker', `Recovered ${recoverableJobs.length} queued/running job(s) from the local database.`);
+
+if (import.meta.main) {
+  log('info', 'server', `Local server starting on http://localhost:${port}. Library: ${initResult.settings.libraryDir}`);
+
+  Bun.serve({
+    port,
+    fetch: app.fetch,
+  });
+
+  console.log(`Codex Image Studio local-server listening on http://localhost:${port}`);
+
+  const recoverableJobs = listRecoverableJobs();
+  for (const job of recoverableJobs) {
+    enqueueJob(job);
+  }
+  if (recoverableJobs.length > 0) {
+    log('info', 'worker', `Recovered ${recoverableJobs.length} queued/running job(s) from the local database.`);
+  }
 }

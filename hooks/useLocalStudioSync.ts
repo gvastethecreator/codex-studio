@@ -7,6 +7,7 @@ import {
   listStudioLogs,
   toStudioAssetUrl,
 } from '../services/localStudioService';
+import { createStudioEventStream } from '../services/studioEventSource';
 import type { GenerationBatch, LogEntry, Toast } from '../types';
 import type { Job as StudioJob, SystemLog as StudioLog } from '../packages/shared/src';
 import { normalizeImageGenRatio } from '../utils/imageGenSizing';
@@ -110,10 +111,35 @@ export function useLocalStudioSync({ logs, log, setBatches, addToast }: UseLocal
     };
 
     void refreshBackendState();
-    const interval = window.setInterval(() => void refreshBackendState(), 3000);
+    const stream = createStudioEventStream();
+    const unsubscribeJob = stream.onJobUpdate('*', (job) => {
+      setStudioJobs(prev => [job, ...prev.filter(candidate => candidate.id !== job.id)].slice(0, 100));
+    });
+    const unsubscribeAsset = stream.onAssetAdded((asset) => {
+      let importedCount = 0;
+      setBatches(prev => {
+        const existingImageIds = new Set(prev.flatMap(batch => batch.images.map(image => image.id)));
+        if (existingImageIds.has(asset.id)) return prev;
+        importedCount = 1;
+        return [mapAssetToBatch(asset), ...prev];
+      });
+      if (importedCount > 0) {
+        log('Imported 1 local Codex asset from the studio library');
+      }
+    });
+    const unsubscribeLog = stream.onLogAdded((entry) => {
+      setStudioLogs(prev => [entry, ...prev.filter(candidate => candidate.id !== entry.id)].slice(0, 300));
+    });
+    const unsubscribeConnection = stream.onConnectionChange((connected) => {
+      if (!connected) void refreshBackendState();
+    });
     return () => {
       cancelled = true;
-      window.clearInterval(interval);
+      unsubscribeJob();
+      unsubscribeAsset();
+      unsubscribeLog();
+      unsubscribeConnection();
+      stream.close();
     };
   }, [log, setBatches]);
 

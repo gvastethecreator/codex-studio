@@ -670,5 +670,61 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T06:32:42.137Z"
+  },
+  {
+    "presetId": "SP05-049",
+    "presetName": "Vampire Knight",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "5. Classic & Modern Shojo",
+    "file": "components/recipes/styles/defaults/SP05-049.png",
+    "jobId": "123856a5-57bb-4cc2-81cd-856a970fd459",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-049.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:38:21.034Z"
+  },
+  {
+    "presetId": "SP05-050",
+    "presetName": "A Sign of Affection",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "5. Classic & Modern Shojo",
+    "file": "components/recipes/styles/defaults/SP05-050.png",
+    "jobId": "6ab4dfee-d232-4d50-aa4a-2445b85c0532",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-050.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.3-codex-spark ",
+    "reasoningEffort": "low ",
+    "generatedAt": "2026-05-06T06:44:35.950Z"
+  },
+  {
+    "presetId": "SP05-051",
+    "presetName": "Cyberpunk: Edgerunners",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "file": "components/recipes/styles/defaults/SP05-051.png",
+    "jobId": "936ae114-c92e-4b41-a6c4-10ca3d91aa19",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-051.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.3-codex-spark ",
+    "reasoningEffort": "low ",
+    "generatedAt": "2026-05-06T06:46:10.031Z"
+  },
+  {
+    "presetId": "SP05-052",
+    "presetName": "Psycho-Pass",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "file": "components/recipes/styles/defaults/SP05-052.png",
+    "jobId": "9695ee33-c439-42b0-9b42-7c6c0535af56",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-052.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.3-codex-spark ",
+    "reasoningEffort": "low ",
+    "generatedAt": "2026-05-06T06:47:47.317Z"
   }
 ]

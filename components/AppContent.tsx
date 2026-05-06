@@ -10,7 +10,7 @@ import { exportToJson, readJsonFile, validateVault, downloadMultipleImagesAsZip 
 import { detectRecipeFromContext } from '../utils/recipeUtils';
 import { startViewTransition } from '../utils/transitionUtils';
 import { MODELS } from '../constants';
-import { createStudioJob, listProjects, listStudioAssets, toStudioAssetUrl, waitForStudioJob } from '../services/localStudioService';
+import { runLocalGeneration } from '../services/localGenerationRun';
 
 import type { ImageGenerationConfig, GenerationBatch, GeneratedImageWithConfig, Attachment, AspectRatio, Workspace, RecipeId } from '../types';
 
@@ -417,47 +417,35 @@ export const AppContent: React.FC<AppContentProps> = () => {
     const handleExecuteEdit = useCallback(async (original: Attachment, mask: string, prompt: string) => {
         setIsEditingImage(true);
         try {
-            const projects = await listProjects();
-            const projectId = projects[0]?.id;
-            const job = await createStudioJob({
-                projectId,
-                kind: 'codex_imagegen',
-                prompt: [
-                    prompt,
-                    '',
-                    'Use the original image and mask reference files as edit context.',
-                    `Original attachment: ${original.name}`,
-                    `Mask reference: ${mask ? 'provided' : 'not provided'}`,
-                ].join('\n'),
-                references: [
-                    {
-                        name: original.name,
-                        dataUrl: original.dataUrl,
-                        strength: original.strength,
-                    },
-                    ...(mask ? [{
-                        name: `${original.name.replace(/\.[^.]+$/, '')}-mask.png`,
-                        dataUrl: mask,
-                        strength: 1,
-                    }] : []),
-                ],
-            });
-            const completed = await waitForStudioJob(job.id);
-            const assets = await listStudioAssets();
-            const asset = assets.find(candidate => candidate.jobId === completed.id);
-            if (!asset) throw new Error('Codex edit completed without a local asset');
-
-            const url = toStudioAssetUrl(asset.publicUrl);
-            const batchId = `edit-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
-            const newBatch: GenerationBatch = {
-                id: batchId,
+            const result = await runLocalGeneration({
                 workspaceId: activeWorkspaceId,
-                config: { ...generationConfig, prompt, model: MODELS.CODEX_IMAGEGEN },
-                images: [{ id: asset.id, src: url, batchId, createdAt: Date.now(), isFavorite: false }],
-                createdAt: Date.now()
-            };
+                config: {
+                    ...generationConfig,
+                    prompt,
+                    model: MODELS.CODEX_IMAGEGEN,
+                    batchCount: 1,
+                    attachments: mask
+                        ? [...generationConfig.attachments, {
+                            id: `mask-${Date.now()}`,
+                            name: `${original.name.replace(/\.[^.]+$/, '')}-mask.png`,
+                            dataUrl: mask,
+                            strength: 1,
+                        }]
+                        : generationConfig.attachments,
+                },
+                inputImage: {
+                    src: original.dataUrl,
+                    prompt: [
+                        prompt,
+                        '',
+                        'Use the input image as the edit source.',
+                        `Original attachment: ${original.name}`,
+                        `Mask reference: ${mask ? 'provided' : 'not provided'}`,
+                    ].join('\n'),
+                },
+            });
             setBatches(p => {
-                const newBatches = [newBatch, ...p];
+                const newBatches = [result.batch, ...p];
                 const workspaceBatches = newBatches.filter(b => b.workspaceId === activeWorkspaceId);
                 const otherBatches = newBatches.filter(b => b.workspaceId !== activeWorkspaceId);
                 return [...workspaceBatches.slice(0, 20), ...otherBatches];

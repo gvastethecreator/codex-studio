@@ -7,5 +7,428 @@
     "category": "1. 70s & 80s Retro Anime",
     "error": "Job 06992d5a-148d-45d9-911a-445ce271719a ended as cancelled: Cancelled during server cutover to persistent category threads.",
     "failedAt": "2026-05-06T03:17:13.720Z"
+  },
+  {
+    "presetId": "SP05-053",
+    "presetName": "Gundam: Iron-Blooded Orphans",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job 9884181d-0a37-4ca9-91ae-01c634d8ffa8 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:47:56.439Z"
+  },
+  {
+    "presetId": "SP05-054",
+    "presetName": "Gundam SEED",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job 6bc06bbc-2222-419f-aa41-61230d253946 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:48:08.849Z"
+  },
+  {
+    "presetId": "SP05-055",
+    "presetName": "Ergo Proxy",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job 7cf83816-3341-49e9-970f-bf47e8ed9bef needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:48:18.071Z"
+  },
+  {
+    "presetId": "SP05-056",
+    "presetName": "Promare",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job 75855365-ddbb-4f96-9b56-39aa00494319 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:48:27.249Z"
+  },
+  {
+    "presetId": "SP05-057",
+    "presetName": "Darling in the Franxx",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job 61a8751a-8a4d-4a90-a0b6-41427ba5b661 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:48:33.460Z"
+  },
+  {
+    "presetId": "SP05-058",
+    "presetName": "86 EIGHTY-SIX",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job 65910137-0e22-4ae6-94b8-5849a84b3a4b needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:48:39.585Z"
+  },
+  {
+    "presetId": "SP05-059",
+    "presetName": "Ghost in the Shell: Stand Alone Complex",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job c5288044-83a0-4421-9f3b-393c10ccc5dc needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:48:57.982Z"
+  },
+  {
+    "presetId": "SP05-060",
+    "presetName": "Aldnoah.Zero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job a484bab8-afe4-42a5-897b-51040f7f9b9a needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:49:07.200Z"
+  },
+  {
+    "presetId": "SP05-061",
+    "presetName": "Berserk (1997)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 3fdfd16e-6a9f-4a22-a04a-766bf24ef64b needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:49:16.412Z"
+  },
+  {
+    "presetId": "SP05-062",
+    "presetName": "Tokyo Ghoul",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 241b9103-745a-4032-a3e6-be8130979b42 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:49:22.601Z"
+  },
+  {
+    "presetId": "SP05-063",
+    "presetName": "Hellsing Ultimate",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job c25747cc-0a8b-41c5-b911-ab27968abe72 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:49:31.783Z"
+  },
+  {
+    "presetId": "SP05-064",
+    "presetName": "Vinland Saga",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 65394faa-5f0a-4297-a30d-6e61b919d05a needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:49:37.903Z"
+  },
+  {
+    "presetId": "SP05-065",
+    "presetName": "Claymore",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 5e44af0b-ef4a-407e-8348-18f1e142d5e4 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:49:44.075Z"
+  },
+  {
+    "presetId": "SP05-066",
+    "presetName": "Parasyte -the maxim-",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 87b4876a-e820-427c-bf37-55ffe059f90e needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:49:50.230Z"
+  },
+  {
+    "presetId": "SP05-067",
+    "presetName": "Made in Abyss",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job b65407a7-af81-4db7-a623-a629b0da282a needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:49:56.384Z"
+  },
+  {
+    "presetId": "SP05-068",
+    "presetName": "Dorohedoro",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job f4ad62ab-c9d0-4c0b-95e7-eed509c56865 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:50:02.547Z"
+  },
+  {
+    "presetId": "SP05-069",
+    "presetName": "Goblin Slayer",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 4f25ebcb-e024-4b31-92b2-e2592d5d6a48 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:50:11.780Z"
+  },
+  {
+    "presetId": "SP05-070",
+    "presetName": "Devilman Crybaby",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job 25106538-6467-4aa7-a532-d861078d6471 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:50:21.067Z"
+  },
+  {
+    "presetId": "SP05-071",
+    "presetName": "Spirited Away (Ghibli)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job cce2e66f-088a-43bd-a3aa-eacd4bd22292 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:50:30.283Z"
+  },
+  {
+    "presetId": "SP05-072",
+    "presetName": "Princess Mononoke (Ghibli)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 0e50aa0d-55c8-47f1-b0bc-f12407d839ec needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:50:39.513Z"
+  },
+  {
+    "presetId": "SP05-073",
+    "presetName": "Howl's Moving Castle (Ghibli)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job c1929703-249c-4080-a7d1-f645982db597 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:50:51.975Z"
+  },
+  {
+    "presetId": "SP05-074",
+    "presetName": "Your Name (Makoto Shinkai)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 9900f9d5-333c-4a63-b89e-28b78be2d32b needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:51:01.407Z"
+  },
+  {
+    "presetId": "SP05-075",
+    "presetName": "Weathering With You (Shinkai)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 76aa3687-8439-4ca2-9dfb-7e0de81c0d3f needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:51:10.708Z"
+  },
+  {
+    "presetId": "SP05-076",
+    "presetName": "Paprika (Satoshi Kon)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job fd1dd1e5-f1ce-45a4-b6ac-36fcba0ee865 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:51:23.101Z"
+  },
+  {
+    "presetId": "SP05-077",
+    "presetName": "Perfect Blue (Satoshi Kon)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job b839285a-35ac-4453-9c10-a288a2cf12c5 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:51:32.487Z"
+  },
+  {
+    "presetId": "SP05-078",
+    "presetName": "Akira (Katsuhiro Otomo)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 44146610-0f82-4793-b01c-0fa321cdd467 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:51:41.782Z"
+  },
+  {
+    "presetId": "SP05-079",
+    "presetName": "Redline",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 1d8d0dc3-1372-4571-a5e8-c6e6745aecd3 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:51:51.138Z"
+  },
+  {
+    "presetId": "SP05-080",
+    "presetName": "Children of the Sea",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 0206bc00-409a-4077-8b3b-2a9287ea9fc7 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:52:06.568Z"
+  },
+  {
+    "presetId": "SP05-081",
+    "presetName": "K-On! (KyoAni)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job 3b1e6883-7d31-44d7-ae46-9a0837ab672b needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:52:15.840Z"
+  },
+  {
+    "presetId": "SP05-082",
+    "presetName": "Nichijou",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job 4fa0f1d4-472f-432a-99d6-03e285ad4caa needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:52:25.046Z"
+  },
+  {
+    "presetId": "SP05-083",
+    "presetName": "Lucky Star",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job cb725467-0db1-4c72-8e2e-c475ffb9657b needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:52:34.254Z"
+  },
+  {
+    "presetId": "SP05-084",
+    "presetName": "The Melancholy of Haruhi Suzumiya",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job 295d953c-9e0b-4595-a943-d2f8bf3ba18e needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:52:43.512Z"
+  },
+  {
+    "presetId": "SP05-085",
+    "presetName": "Bocchi the Rock!",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job c5282259-f016-4f8b-bc31-35db93fa57f6 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:52:58.807Z"
+  },
+  {
+    "presetId": "SP05-086",
+    "presetName": "Yuru Camp",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job 6f1ed27c-1782-408f-a2e5-7f21b030a535 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:53:08.060Z"
+  },
+  {
+    "presetId": "SP05-087",
+    "presetName": "Non Non Biyori",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job f5f6fcad-f21f-48e1-8d3e-60b09d5e9ee7 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:53:17.277Z"
+  },
+  {
+    "presetId": "SP05-088",
+    "presetName": "Miss Kobayashi's Dragon Maid",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job faff2e4c-bf3d-4f61-9422-c146c875f4de needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:53:26.478Z"
+  },
+  {
+    "presetId": "SP05-089",
+    "presetName": "Azumanga Daioh",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job 431c9d22-9cce-4912-8143-19575eee2dce needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:53:35.712Z"
+  },
+  {
+    "presetId": "SP05-090",
+    "presetName": "Clannad",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "9. Slice of Life & Moe",
+    "error": "Job c4a319dc-936d-45cd-ae17-e86e42a88c17 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:53:44.894Z"
+  },
+  {
+    "presetId": "SP05-091",
+    "presetName": "Sword Art Online (Aincrad)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job a1b1ab8d-aadd-41c1-9a38-7b27105569e8 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:53:54.134Z"
+  },
+  {
+    "presetId": "SP05-092",
+    "presetName": "Re:Zero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 8596857c-6cf3-4b98-b9b5-4d7872907f20 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:54:03.370Z"
+  },
+  {
+    "presetId": "SP05-093",
+    "presetName": "Mushoku Tensei",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 2ebde937-9fd4-4fb2-907a-d2e57d789db4 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:54:12.630Z"
+  },
+  {
+    "presetId": "SP05-094",
+    "presetName": "Konosuba",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job afcd55c3-22c1-4d38-b367-bdbc3096ca1e needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:54:21.863Z"
+  },
+  {
+    "presetId": "SP05-095",
+    "presetName": "Frieren: Beyond Journey's End",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 572c0e86-ddae-40b9-9284-f676f2de6947 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:54:31.122Z"
+  },
+  {
+    "presetId": "SP05-096",
+    "presetName": "No Game No Life",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 51285ecf-908f-4461-afd2-a7f3ef4e763b needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:54:40.341Z"
+  },
+  {
+    "presetId": "SP05-097",
+    "presetName": "Overlord",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 6afdea14-93f6-4290-9132-be3bb8eea896 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:54:49.658Z"
+  },
+  {
+    "presetId": "SP05-098",
+    "presetName": "That Time I Got Reincarnated as a Slime",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job c2c21ec7-5d9f-4ee0-bc14-10e7f9f39494 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:54:58.894Z"
+  },
+  {
+    "presetId": "SP05-099",
+    "presetName": "Shield Hero",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 0bf696e1-abda-496d-9716-382c915f715d needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:55:08.133Z"
   }
 ]

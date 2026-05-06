@@ -45,6 +45,47 @@ export interface Asset {
   deletedAt: string | null;
 }
 
+export interface StudioLibrary {
+  id: string;
+  name: string;
+  path: string;
+  isDefault: boolean;
+  createdAt: string;
+}
+
+export interface CatalogImage {
+  id: string;
+  libraryId: string;
+  filePath: string;
+  thumbnailPath: string | null;
+  publicUrl: string;
+  thumbnailUrl: string | null;
+  prompt: string | null;
+  negativePrompt: string | null;
+  aspectRatio: string | null;
+  imageSize: string | null;
+  width: number | null;
+  height: number | null;
+  mimeType: string;
+  fileSizeBytes: number | null;
+  jobId: string | null;
+  workspaceId: string | null;
+  batchId: string | null;
+  recipeId: string | null;
+  isFavorite: boolean;
+  isDeleted: boolean;
+  deletedAt: string | null;
+  tags: string[];
+  generationConfig: unknown | null;
+  createdAt: string;
+}
+
+export interface CatalogPage {
+  images: CatalogImage[];
+  total: number;
+  hasMore: boolean;
+}
+
 export interface SystemLog {
   id: number;
   level: 'debug' | 'info' | 'warn' | 'error';

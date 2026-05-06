@@ -9,6 +9,6 @@ export function log(level: SystemLog['level'], scope: string, message: string, j
   const line = JSON.stringify({ createdAt, level, scope, message, jobId: jobId ?? null });
   const fileName = level === 'error' ? 'errors.log' : scope === 'worker' ? 'worker.log' : 'studio.log';
   appendFileSync(resolveLibraryPath('logs', fileName), `${line}\n`, 'utf8');
-  addSystemLog({ level, scope, message, jobId });
-  publishEvent('log.appended', { createdAt, level, scope, message, jobId: jobId ?? null });
+  const stored = addSystemLog({ level, scope, message, jobId });
+  publishEvent('log.created', stored ?? { createdAt, level, scope, message, jobId: jobId ?? null });
 }

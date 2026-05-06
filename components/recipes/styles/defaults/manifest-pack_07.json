@@ -1090,5 +1090,33 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T06:31:01.528Z"
+  },
+  {
+    "presetId": "SP07-079",
+    "presetName": "Monolith",
+    "packId": "pack_07",
+    "packName": "Architecture & Interior",
+    "category": "5. Fantasy Architecture",
+    "file": "components/recipes/styles/defaults/SP07-079.png",
+    "jobId": "3c5b6327-0e73-4a10-a6e6-19687837b463",
+    "sourceAsset": "components/recipes/styles/defaults/SP07-079.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:38:11.981Z"
+  },
+  {
+    "presetId": "SP07-080",
+    "presetName": "Tardis Interior",
+    "packId": "pack_07",
+    "packName": "Architecture & Interior",
+    "category": "5. Fantasy Architecture",
+    "file": "components/recipes/styles/defaults/SP07-080.png",
+    "jobId": "30224b9f-52a7-48b3-9653-2e7d2b243933",
+    "sourceAsset": "components/recipes/styles/defaults/SP07-080.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:39:55.336Z"
   }
 ]
