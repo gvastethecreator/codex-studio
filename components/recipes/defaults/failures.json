@@ -1,0 +1,14 @@
+[
+  {
+    "id": "camera",
+    "title": "Camera",
+    "error": "Job 57934b81-acee-47ec-bd3c-609d157ddf63 ended as cancelled: Interrupted to replace recipe cards with simplified monochrome illustration set",
+    "failedAt": "2026-05-06T16:35:33.888Z"
+  },
+  {
+    "id": "styles",
+    "title": "Styles",
+    "error": "Job 3f178291-f349-4ab2-9bb8-34cee25df17c ended as failed: Codex app-server socket is not open",
+    "failedAt": "2026-05-06T16:35:38.389Z"
+  }
+]

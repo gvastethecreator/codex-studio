@@ -1062,5 +1062,47 @@
     "model": "gpt-5.3-codex-spark ",
     "reasoningEffort": "low ",
     "generatedAt": "2026-05-06T06:46:55.378Z"
+  },
+  {
+    "presetId": "SP08-078",
+    "presetName": "Hologram",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "file": "components/recipes/styles/defaults/SP08-078.png",
+    "jobId": "049a4b6b-0b8f-4975-a61f-d786fa9b4282",
+    "sourceAsset": "components/recipes/styles/defaults/SP08-078.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4-mini",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T15:40:08.329Z"
+  },
+  {
+    "presetId": "SP08-079",
+    "presetName": "Invisibility Cloak",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "file": "components/recipes/styles/defaults/SP08-079.png",
+    "jobId": "3b98aa43-8941-4f1f-b7e6-9ac215833fc0",
+    "sourceAsset": "components/recipes/styles/defaults/SP08-079.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4-mini",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T15:41:11.658Z"
+  },
+  {
+    "presetId": "SP08-080",
+    "presetName": "Shadow Form",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "file": "components/recipes/styles/defaults/SP08-080.png",
+    "jobId": "b2305076-f0ea-441c-9c95-821405be3d59",
+    "sourceAsset": "components/recipes/styles/defaults/SP08-080.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4-mini",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T15:42:25.000Z"
   }
 ]

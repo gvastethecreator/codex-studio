@@ -70,5 +70,14 @@
     "category": "5. Ink & Print",
     "error": "Job 80a9ccb6-3eb3-4aed-bd63-3502785ea391 status needs_review",
     "failedAt": "2026-05-06T07:48:51.872Z"
+  },
+  {
+    "presetId": "SP04-078",
+    "presetName": "Stencil Art (Banksy)",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "5. Ink & Print",
+    "error": "Job e28e32b2-7131-4fa0-8eb0-cc2da9695e9f status needs_review",
+    "failedAt": "2026-05-06T15:25:36.405Z"
   }
 ]
