@@ -1,7 +1,7 @@
 # Style Category Bases Audit
 
-Generated bases: 15/60
-Missing bases: 45/60
+Generated bases: 44/60
+Missing bases: 16/60
 
 ## Generated
 
@@ -155,37 +155,298 @@ Representative presets: Game Asset (PBR), Architectural Visualization, Product R
 
 Review: PENDING
 
+### Illustration & Graphic Novel / 1. Comic Book Styles
+
+Key: `pack_04__comic_book_styles`
+
+![pack_04__comic_book_styles](../../components/recipes/styles/category-bases/pack_04__comic_book_styles.png)
+
+Representative presets: Golden Age Comic, Silver Age Comic, Modern Superhero (Digital), Manga (Shonen), Manga (Shojo), Webtoon Style, Franco-Belgian (Ligne Claire), Noir Comic (Sin City), Underground Comix, Graphic Novel (Painted), Horror Manga (Junji Ito), Retro Sci-Fi Comic (Moebius)
+
+Review: PENDING
+
+### Illustration & Graphic Novel / 2. Children's Illustration
+
+Key: `pack_04__children_s_illustration`
+
+![pack_04__children_s_illustration](../../components/recipes/styles/category-bases/pack_04__children_s_illustration.png)
+
+Representative presets: Watercolor Storybook, Paper Cutout (Collage), Crayon Drawing, Vector Flat (Kurzgesagt), Gouache Illustration, Colored Pencil, Scratchboard, Claymation Style, Felt Tip Marker, Pop-Up Book, Whimsical Ink, Chalk Pastel
+
+Review: PENDING
+
+### Illustration & Graphic Novel / 3. Editorial & Poster
+
+Key: `pack_04__editorial_and_poster`
+
+![pack_04__editorial_and_poster](../../components/recipes/styles/category-bases/pack_04__editorial_and_poster.png)
+
+Representative presets: Art Deco Poster, Art Nouveau (Mucha), Propaganda Poster, Psychedelic Poster (60s), Minimalist Vector, Collage Art (Dada), Bauhaus Poster, National Park Poster (WPA), Movie Poster (Painted), Infographic, Fashion Illustration, Album Cover (Surreal)
+
+Review: PENDING
+
+### Illustration & Graphic Novel / 4. Concept Art
+
+Key: `pack_04__concept_art`
+
+![pack_04__concept_art](../../components/recipes/styles/category-bases/pack_04__concept_art.png)
+
+Representative presets: Speedpaint, Matte Painting, Character Sheet, Environment Concept, Vehicle Design, Creature Design, Isometric Game Art, Storyboard Sketch, Prop Design, Keyframe Art, Photobash, Blueprint Schematic
+
+Review: PENDING
+
+### Illustration & Graphic Novel / 5. Ink & Print
+
+Key: `pack_04__ink_and_print`
+
+![pack_04__ink_and_print](../../components/recipes/styles/category-bases/pack_04__ink_and_print.png)
+
+Representative presets: Linocut Print, Etching (Engraving), Woodcut (Ukiyo-e), Stipple (Dotwork), Lithograph, Screenprint (Serigraph), Monotype, Cyanotype (Blueprint), Rubber Stamp, Mezzotint, Aquatint, Ballpoint Pen
+
+Review: PENDING
+
+### Anime & Manga Universes / 1. 70s & 80s Retro Anime
+
+Key: `pack_05__70s_and_80s_retro_anime`
+
+![pack_05__70s_and_80s_retro_anime](../../components/recipes/styles/category-bases/pack_05__70s_and_80s_retro_anime.png)
+
+Representative presets: Astro Boy (1960s/70s), Mazinger Z, Lupin III (Part 1/2), Captain Harlock, Mobile Suit Gundam (0079), Macross (SDF-1), Fist of the North Star, City Hunter, Akira, Dragon Ball (Classic)
+
+Review: PENDING
+
+### Anime & Manga Universes / 2. 90s Golden Era
+
+Key: `pack_05__90s_golden_era`
+
+![pack_05__90s_golden_era](../../components/recipes/styles/category-bases/pack_05__90s_golden_era.png)
+
+Representative presets: Dragon Ball Z, Sailor Moon (90s), Neon Genesis Evangelion, Cowboy Bebop, Ghost in the Shell (1995), Yu Yu Hakusho, Rurouni Kenshin, Trigun, Serial Experiments Lain, Cardcaptor Sakura
+
+Review: PENDING
+
+### Anime & Manga Universes / 3. 2000s Classics
+
+Key: `pack_05__2000s_classics`
+
+![pack_05__2000s_classics](../../components/recipes/styles/category-bases/pack_05__2000s_classics.png)
+
+Representative presets: Naruto (Part 1), Bleach, One Piece (Early), Fullmetal Alchemist: Brotherhood, Death Note, Code Geass, Gurren Lagann, Samurai Champloo, FLCL, Soul Eater
+
+Review: PENDING
+
+### Anime & Manga Universes / 4. Modern Shonen & Action
+
+Key: `pack_05__modern_shonen_and_action`
+
+![pack_05__modern_shonen_and_action](../../components/recipes/styles/category-bases/pack_05__modern_shonen_and_action.png)
+
+Representative presets: Demon Slayer (Kimetsu no Yaiba), Jujutsu Kaisen, Chainsaw Man, My Hero Academia, Attack on Titan (Early), Attack on Titan (MAPPA), One Punch Man (Season 1), Mob Psycho 100, Hunter x Hunter (2011), Fate/stay night: Unlimited Blade Works
+
+Review: PENDING
+
+### Anime & Manga Universes / 5. Classic & Modern Shojo
+
+Key: `pack_05__classic_and_modern_shojo`
+
+![pack_05__classic_and_modern_shojo](../../components/recipes/styles/category-bases/pack_05__classic_and_modern_shojo.png)
+
+Representative presets: Rose of Versailles, Revolutionary Girl Utena, Fruits Basket (2019), Nana, Ouran High School Host Club, Violet Evergarden, Kimi ni Todoke, Yona of the Dawn, Vampire Knight, A Sign of Affection
+
+Review: PENDING
+
+### Anime & Manga Universes / 6. Mecha & Cyberpunk
+
+Key: `pack_05__mecha_and_cyberpunk`
+
+![pack_05__mecha_and_cyberpunk](../../components/recipes/styles/category-bases/pack_05__mecha_and_cyberpunk.png)
+
+Representative presets: Cyberpunk: Edgerunners, Psycho-Pass, Gundam: Iron-Blooded Orphans, Gundam SEED, Ergo Proxy, Promare, Darling in the Franxx, 86 EIGHTY-SIX, Ghost in the Shell: Stand Alone Complex, Aldnoah.Zero
+
+Review: PENDING
+
+### Anime & Manga Universes / 7. Dark Fantasy & Seinen
+
+Key: `pack_05__dark_fantasy_and_seinen`
+
+![pack_05__dark_fantasy_and_seinen](../../components/recipes/styles/category-bases/pack_05__dark_fantasy_and_seinen.png)
+
+Representative presets: Berserk (1997), Tokyo Ghoul, Hellsing Ultimate, Vinland Saga, Claymore, Parasyte -the maxim-, Made in Abyss, Dorohedoro, Goblin Slayer, Devilman Crybaby
+
+Review: PENDING
+
+### Anime & Manga Universes / 8. Studio Masterpieces
+
+Key: `pack_05__studio_masterpieces`
+
+![pack_05__studio_masterpieces](../../components/recipes/styles/category-bases/pack_05__studio_masterpieces.png)
+
+Representative presets: Spirited Away (Ghibli), Princess Mononoke (Ghibli), Howl's Moving Castle (Ghibli), Your Name (Makoto Shinkai), Weathering With You (Shinkai), Paprika (Satoshi Kon), Perfect Blue (Satoshi Kon), Akira (Katsuhiro Otomo), Redline, Children of the Sea
+
+Review: PENDING
+
+### Anime & Manga Universes / 9. Slice of Life & Moe
+
+Key: `pack_05__slice_of_life_and_moe`
+
+![pack_05__slice_of_life_and_moe](../../components/recipes/styles/category-bases/pack_05__slice_of_life_and_moe.png)
+
+Representative presets: K-On! (KyoAni), Nichijou, Lucky Star, The Melancholy of Haruhi Suzumiya, Bocchi the Rock!, Yuru Camp, Non Non Biyori, Miss Kobayashi's Dragon Maid, Azumanga Daioh, Clannad
+
+Review: PENDING
+
+### Anime & Manga Universes / 10. Isekai & High Fantasy
+
+Key: `pack_05__isekai_and_high_fantasy`
+
+![pack_05__isekai_and_high_fantasy](../../components/recipes/styles/category-bases/pack_05__isekai_and_high_fantasy.png)
+
+Representative presets: Sword Art Online (Aincrad), Re:Zero, Mushoku Tensei, Konosuba, Frieren: Beyond Journey's End, No Game No Life, Overlord, That Time I Got Reincarnated as a Slime, Shield Hero, DanMachi
+
+Review: PENDING
+
+### Essential Art Styles / 1. Traditional Painting
+
+Key: `pack_06__traditional_painting`
+
+![pack_06__traditional_painting](../../components/recipes/styles/category-bases/pack_06__traditional_painting.png)
+
+Representative presets: Oil Painting (Classic), Watercolor (Soft), Acrylic (Modern), Gouache (Flat), Tempera (Egg), Encaustic (Wax), Fresco (Wall), Ink Wash (Sumi-e), Impressionist Oil, Pointillism, Palette Knife, Spray Paint (Graffiti)
+
+Review: PENDING
+
+### Essential Art Styles / 2. Drawing & Sketching
+
+Key: `pack_06__drawing_and_sketching`
+
+![pack_06__drawing_and_sketching](../../components/recipes/styles/category-bases/pack_06__drawing_and_sketching.png)
+
+Representative presets: Graphite Pencil, Charcoal (Expressive), Ink (Pen & Ink), Ballpoint Pen, Colored Pencil, Pastel (Soft), Oil Pastel, Silverpoint, Conte Crayon, Technical Pen, Marker (Copic), Chalk (Blackboard)
+
+Review: PENDING
+
+### Essential Art Styles / 3. Printmaking
+
+Key: `pack_06__printmaking`
+
+![pack_06__printmaking](../../components/recipes/styles/category-bases/pack_06__printmaking.png)
+
+Representative presets: Etching, Woodcut, Linocut, Lithography, Screenprint (Serigraphy), Monotype, Aquatint, Mezzotint, Risograph, Cyanotype, Rubber Stamp, Halftone (Newspaper)
+
+Review: PENDING
+
+### Essential Art Styles / 4. Digital Art
+
+Key: `pack_06__digital_art`
+
+![pack_06__digital_art](../../components/recipes/styles/category-bases/pack_06__digital_art.png)
+
+Representative presets: Digital Painting, Speedpaint, Matte Painting, Vector Art (Flat), Pixel Art (16-bit), Low Poly, Voxel Art, Concept Art, Isometric, Glitch Art, Synthwave, Double Exposure
+
+Review: PENDING
+
+### Essential Art Styles / 5. Mixed Media
+
+Key: `pack_06__mixed_media`
+
+![pack_06__mixed_media](../../components/recipes/styles/category-bases/pack_06__mixed_media.png)
+
+Representative presets: Collage (Analog), Photomontage, Decoupage, Assemblage, Scrapbook, Trash Polka, Mixed Media Canvas, Zine Aesthetic, Moodboard, Vision Board, Mosaic (Paper), Tape Art
+
+Review: PENDING
+
+### Architecture & Interior / 1. Interior Design
+
+Key: `pack_07__interior_design`
+
+![pack_07__interior_design](../../components/recipes/styles/category-bases/pack_07__interior_design.png)
+
+Representative presets: Modern Minimalist, Industrial Loft, Mid-Century Modern, Scandinavian Hygge, Bohemian Eclectic, Bauhaus Interior, Maximalist Decor, Farmhouse Chic, Art Nouveau Interior, Memphis Design
+
+Review: PENDING
+
+### Architecture & Interior / 2. Architectural Styles
+
+Key: `pack_07__architectural_styles`
+
+![pack_07__architectural_styles](../../components/recipes/styles/category-bases/pack_07__architectural_styles.png)
+
+Representative presets: Brutalist Architecture, Art Deco, Japanese Zen, Gothic Revival, Futuristic Pod, Deconstructivism, Neoclassical, Parametric Architecture, Victorian Painted Lady, Bauhaus Architecture, Googie Architecture, Tudor Revival
+
+Review: PENDING
+
+### Architecture & Interior / 3. Environment
+
+Key: `pack_07__environment`
+
+![pack_07__environment](../../components/recipes/styles/category-bases/pack_07__environment.png)
+
+Representative presets: Luxury Penthouse, Rustic Cabin, Mediterranean Villa, Cyberpunk Apartment, Victorian Mansion, Space Station Interior, Subway Station, Greenhouse/Conservatory, Abandoned Asylum, Library (Old), Casino Floor, Aquarium Tunnel
+
+Review: PENDING
+
+### Architecture & Interior / 4. Landscape Architecture
+
+Key: `pack_07__landscape_architecture`
+
+![pack_07__landscape_architecture](../../components/recipes/styles/category-bases/pack_07__landscape_architecture.png)
+
+Representative presets: French Formal Garden, English Cottage Garden, Zen Rock Garden, Urban Park (High Line), Desert Xeriscape, Tropical Resort Pool, Maze/Labyrinth, Rooftop Garden, Golf Course, Botanical Glasshouse
+
+Review: PENDING
+
+### Architecture & Interior / 5. Fantasy Architecture
+
+Key: `pack_07__fantasy_architecture`
+
+![pack_07__fantasy_architecture](../../components/recipes/styles/category-bases/pack_07__fantasy_architecture.png)
+
+Representative presets: Elven City (Rivendell), Dwarven Fortress, Floating Castle, Cyberpunk Slums, Candy Kingdom, Underwater City, Steampunk City, Crystal Spire, Hobbit Hole, Haunted House (Cartoon), Ice Palace, Tree Village (Ewok)
+
+Review: PENDING
+
+### Fashion & Costume / 1. Contemporary Fashion
+
+Key: `pack_08__contemporary_fashion`
+
+![pack_08__contemporary_fashion](../../components/recipes/styles/category-bases/pack_08__contemporary_fashion.png)
+
+Representative presets: Haute Couture, Streetwear Hypebeast, Minimalist Chic, Boho Festival, Athleisure Sport, Normcore, Tech CEO, K-Pop Idol, Business Casual, Red Carpet Gown
+
+Review: PENDING
+
+### Fashion & Costume / 2. Subcultures
+
+Key: `pack_08__subcultures`
+
+![pack_08__subcultures](../../components/recipes/styles/category-bases/pack_08__subcultures.png)
+
+Representative presets: Cyberpunk Techwear, Goth Darkwave, Punk Rock, Steampunk Inventor, Preppy Ivy League, Pastel Goth, Grunge (90s), Lolita Fashion, Rockabilly, Hippie (60s), Biker Gang, Skater Style
+
+Review: PENDING
+
+### Fashion & Costume / 3. Historical & Fantasy
+
+Key: `pack_08__historical_and_fantasy`
+
+![pack_08__historical_and_fantasy](../../components/recipes/styles/category-bases/pack_08__historical_and_fantasy.png)
+
+Representative presets: Vintage 1950s, Renaissance Royal, Ethereal Fantasy, Military Surplus, Cosplay Anime, Roaring 20s (Flapper), Victorian Mourning, Ancient Egyptian, Roman Gladiator, Samurai Armor, Viking Warrior, Wild West Cowboy
+
+Review: PENDING
+
+### Fashion & Costume / 4. Fantasy/Sci-Fi Costume
+
+Key: `pack_08__fantasy_sci_fi_costume`
+
+![pack_08__fantasy_sci_fi_costume](../../components/recipes/styles/category-bases/pack_08__fantasy_sci_fi_costume.png)
+
+Representative presets: Cybernetic Implant, Post-Apocalyptic Scavenger, Space Opera Royal, Wizard Robes, Superhero Spandex, Mech Pilot Suit, Vampire Lord, Zombie Survivor, Mermaid Tail, Alien Fashion
+
+Review: PENDING
+
 ## Missing
 
-- Illustration & Graphic Novel / 1. Comic Book Styles -> `pack_04__comic_book_styles.png`
-- Illustration & Graphic Novel / 2. Children's Illustration -> `pack_04__children_s_illustration.png`
-- Illustration & Graphic Novel / 3. Editorial & Poster -> `pack_04__editorial_and_poster.png`
-- Illustration & Graphic Novel / 4. Concept Art -> `pack_04__concept_art.png`
-- Illustration & Graphic Novel / 5. Ink & Print -> `pack_04__ink_and_print.png`
-- Anime & Manga Universes / 1. 70s & 80s Retro Anime -> `pack_05__70s_and_80s_retro_anime.png`
-- Anime & Manga Universes / 2. 90s Golden Era -> `pack_05__90s_golden_era.png`
-- Anime & Manga Universes / 3. 2000s Classics -> `pack_05__2000s_classics.png`
-- Anime & Manga Universes / 4. Modern Shonen & Action -> `pack_05__modern_shonen_and_action.png`
-- Anime & Manga Universes / 5. Classic & Modern Shojo -> `pack_05__classic_and_modern_shojo.png`
-- Anime & Manga Universes / 6. Mecha & Cyberpunk -> `pack_05__mecha_and_cyberpunk.png`
-- Anime & Manga Universes / 7. Dark Fantasy & Seinen -> `pack_05__dark_fantasy_and_seinen.png`
-- Anime & Manga Universes / 8. Studio Masterpieces -> `pack_05__studio_masterpieces.png`
-- Anime & Manga Universes / 9. Slice of Life & Moe -> `pack_05__slice_of_life_and_moe.png`
-- Anime & Manga Universes / 10. Isekai & High Fantasy -> `pack_05__isekai_and_high_fantasy.png`
-- Essential Art Styles / 1. Traditional Painting -> `pack_06__traditional_painting.png`
-- Essential Art Styles / 2. Drawing & Sketching -> `pack_06__drawing_and_sketching.png`
-- Essential Art Styles / 3. Printmaking -> `pack_06__printmaking.png`
-- Essential Art Styles / 4. Digital Art -> `pack_06__digital_art.png`
-- Essential Art Styles / 5. Mixed Media -> `pack_06__mixed_media.png`
-- Architecture & Interior / 1. Interior Design -> `pack_07__interior_design.png`
-- Architecture & Interior / 2. Architectural Styles -> `pack_07__architectural_styles.png`
-- Architecture & Interior / 3. Environment -> `pack_07__environment.png`
-- Architecture & Interior / 4. Landscape Architecture -> `pack_07__landscape_architecture.png`
-- Architecture & Interior / 5. Fantasy Architecture -> `pack_07__fantasy_architecture.png`
-- Fashion & Costume / 1. Contemporary Fashion -> `pack_08__contemporary_fashion.png`
-- Fashion & Costume / 2. Subcultures -> `pack_08__subcultures.png`
-- Fashion & Costume / 3. Historical & Fantasy -> `pack_08__historical_and_fantasy.png`
-- Fashion & Costume / 4. Fantasy/Sci-Fi Costume -> `pack_08__fantasy_sci_fi_costume.png`
 - Fashion & Costume / 5. Fabric & Texture Focus -> `pack_08__fabric_and_texture_focus.png`
 - Texture & Materiality / 1. Natural Materials -> `pack_09__natural_materials.png`
 - Texture & Materiality / 2. Man-Made Materials -> `pack_09__man_made_materials.png`
@@ -202,33 +463,3 @@ Review: PENDING
 - Miscellaneous & Fun / 3. Aesthetics -> `pack_11__aesthetics.png`
 - Miscellaneous & Fun / 4. Food & Drink -> `pack_11__food_and_drink.png`
 - Miscellaneous & Fun / 5. Micro/Macro -> `pack_11__micro_macro.png`
-
-## Manual Review Notes
-
-- `pack_01__camera_types`: KEEP after manual regeneration. Multi-scale workbench/diorama scene is appropriate for camera-type transforms.
-- `pack_01__genres`: KEEP after manual regeneration. Broad atrium/marketplace scene supports many photographic genres.
-- `pack_04__children_s_illustration`: KEEP. Friendly storybook base with character and nature setting.
-- `pack_04__comic_book_styles`: KEEP. Strong character/action base for comic treatments.
-- `pack_04__concept_art`: KEEP. Strong production-design base with character, environment, and props.
-- `pack_04__editorial_and_poster`: KEEP. Graphic poster-like composition with broad fields and figure.
-- `pack_04__ink_and_print`: KEEP. Printmaking studio scene with tools, paper, and high texture.
-- `pack_05__70s_and_80s_retro_anime`: KEEP. Retro anime character/environment base with older adventure proportions and cel-era mood.
-- `pack_05__90s_golden_era`: KEEP. Strong 90s action/adventure base with character, city, dramatic sunset, and broad anime treatment space.
-- `pack_05__2000s_classics`: KEEP. Action fantasy base with early-2000s anime energy and readable environment.
-- `pack_05__modern_shonen_and_action`: KEEP after manual regeneration. Dynamic action arena base with protagonist, energy, debris, and large-scale threat cues.
-- `pack_05__classic_and_modern_shojo`: KEEP. Shojo base with ornate fashion, floral/interior setting, and soft romantic composition.
-- `pack_05__mecha_and_cyberpunk`: KEEP. Dark mecha/cyberpunk base with pilot, machine scale, and neon/mechanical context.
-- `pack_05__dark_fantasy_and_seinen`: KEEP. Dark fantasy base with mature tone, armor, forest, and horror/seinen atmosphere.
-- `pack_05__studio_masterpieces`: KEEP. Scenic anime landscape base with quiet character and environmental richness.
-- `pack_05__slice_of_life_and_moe`: KEEP. Domestic/music room base with everyday warmth and soft character focus.
-- `pack_05__isekai_and_high_fantasy`: KEEP. Fantasy portal/castle base with adventure cues and magical environment.
-- `pack_06__traditional_painting`: KEEP. Painter studio base with canvas, palette, pigments, and natural light.
-- `pack_06__drawing_and_sketching`: KEEP. Drawing/sculpture studio base with bust, pencils, paper, and tonal surfaces.
-- `pack_06__printmaking`: KEEP. Printmaking workshop base with press, paper, ink, tools, and textured materials.
-- `pack_06__digital_art`: KEEP. Digital-art city/character base with stylized but broad futuristic composition.
-- `pack_06__mixed_media`: KEEP. Mixed-media workspace base with collage, fabric, paint, paper, and objects.
-- `pack_07__interior_design`: KEEP. Good interior base with furniture, plants, materials, and natural light.
-- `pack_07__architectural_styles`: KEEP. Clean architectural space with strong structural geometry and material surfaces.
-- `pack_07__environment`: KEEP. Interior/environment corridor with depth, vegetation, weathered materials, and atmosphere.
-- `pack_07__landscape_architecture`: KEEP. Strong landscape architecture base with garden, paths, water, and city backdrop.
-- `pack_07__fantasy_architecture`: KEEP. Rich fantasy architectural interior with arches, scale, props, and vertical depth.

@@ -2,9 +2,9 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { DEFAULT_GENERATION_CONFIG, MODELS } from '../constants';
 import {
   getStudioHealth,
-  listStudioAssets,
   listStudioJobs,
   listStudioLogs,
+  queryCatalog,
   toStudioAssetUrl,
 } from '../services/localStudioService';
 import { createStudioEventStream } from '../services/studioEventSource';
@@ -29,7 +29,7 @@ function mapStudioLog(entry: StudioLog): LogEntry {
   };
 }
 
-function mapAssetToBatch(asset: Awaited<ReturnType<typeof listStudioAssets>>[number]): GenerationBatch {
+function mapAssetToBatch(asset: Awaited<ReturnType<typeof queryCatalog>>['images'][number]): GenerationBatch {
   const createdAt = Date.parse(asset.createdAt) || Date.now();
   const batchId = `studio-${asset.jobId}`;
 
@@ -38,9 +38,9 @@ function mapAssetToBatch(asset: Awaited<ReturnType<typeof listStudioAssets>>[num
     workspaceId: 'default',
     config: {
       ...DEFAULT_GENERATION_CONFIG,
-      prompt: asset.prompt,
+      prompt: asset.prompt ?? '',
       model: MODELS.CODEX_IMAGEGEN,
-      aspectRatio: normalizeImageGenRatio(asset.prompt.match(/Aspect ratio:\s*([0-9]+:[0-9]+)/)?.[1]),
+      aspectRatio: normalizeImageGenRatio(asset.aspectRatio ?? asset.prompt?.match(/Aspect ratio:\s*([0-9]+:[0-9]+)/)?.[1]),
     },
     images: [{
       id: asset.id,
@@ -71,7 +71,7 @@ export function useLocalStudioSync({ logs, log, setBatches, addToast }: UseLocal
     let cancelled = false;
 
     const importLocalAssets = async () => {
-      const assets = await listStudioAssets();
+      const assets = (await queryCatalog({ limit: 200 })).images;
       if (assets.length === 0 || cancelled) return;
 
       let importedCount = 0;
@@ -115,17 +115,8 @@ export function useLocalStudioSync({ logs, log, setBatches, addToast }: UseLocal
     const unsubscribeJob = stream.onJobUpdate('*', (job) => {
       setStudioJobs(prev => [job, ...prev.filter(candidate => candidate.id !== job.id)].slice(0, 100));
     });
-    const unsubscribeAsset = stream.onAssetAdded((asset) => {
-      let importedCount = 0;
-      setBatches(prev => {
-        const existingImageIds = new Set(prev.flatMap(batch => batch.images.map(image => image.id)));
-        if (existingImageIds.has(asset.id)) return prev;
-        importedCount = 1;
-        return [mapAssetToBatch(asset), ...prev];
-      });
-      if (importedCount > 0) {
-        log('Imported 1 local Codex asset from the studio library');
-      }
+    const unsubscribeAsset = stream.onAssetAdded(() => {
+      void importLocalAssets();
     });
     const unsubscribeLog = stream.onLogAdded((entry) => {
       setStudioLogs(prev => [entry, ...prev.filter(candidate => candidate.id !== entry.id)].slice(0, 300));

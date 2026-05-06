@@ -726,5 +726,19 @@
     "model": "gpt-5.3-codex-spark ",
     "reasoningEffort": "low ",
     "generatedAt": "2026-05-06T06:47:47.317Z"
+  },
+  {
+    "presetId": "SP05-054",
+    "presetName": "Gundam SEED",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "file": "components/recipes/styles/defaults/SP05-054.png",
+    "jobId": "8e8bdd0e-0738-4593-957a-4737e35488c6",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-054.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.3-codex-spark",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T07:22:49.409Z"
   }
 ]
