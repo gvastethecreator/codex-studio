@@ -166,15 +166,27 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     "A close-up or miniature-scale vertical scene with one tiny or magnified subject, strong scale cues, macro detail, shallow depth, texture, and readable environment context.",
 };
 
-const CATEGORY_SCENE_ANCHORS: Record<string, string> = {
-  pack_01__lighting:
+const CATEGORY_SCENE_ANCHORS: Record<string, string[]> = {
+  pack_01__lighting: [
     "Place the subject on a quiet rooftop walkway after recent rain, with distant skyline bokeh, puddle reflections, a waist-high concrete ledge, and one practical lamp in frame.",
-  pack_02__lighting_and_atmosphere:
+    "Set the scene in a dim service corridor with one open doorway, reflective tile, a maintenance cart, and a strip of late light falling across the floor.",
+    "Use a narrow apartment balcony with wet metal railing, soft curtain spill from indoors, and a distant horizon line beyond the building edge.",
+  ],
+  pack_02__lighting_and_atmosphere: [
     "Place the subject in a narrow motel room with venetian blinds, a bedside practical lamp, a slightly open bathroom door, colored spill from outside, and cinematic negative space.",
-  pack_03__3d_styles:
+    "Set the scene in a quiet backstage dressing area with mirrors, one glowing bulb row, hanging garments, and deep falloff into shadow.",
+    "Use a half-empty late-night diner booth with window reflections, one overhead practical, table chrome, and hazy urban lights outside.",
+  ],
+  pack_03__3d_styles: [
     "Build the scene as a clean display diorama on a white plinth with modular blocks, stepped platforms, and a sculptural silhouette that reads immediately as a designed 3D object.",
-  pack_06__digital_art:
+    "Stage the subject inside a minimal showroom turntable bay with neutral walls, seam lines, and a sharply lit presentation platform.",
+    "Use a compact materials lab vignette with sample panels, a suspended light bar, and a hero object isolated against soft gradients.",
+  ],
+  pack_06__digital_art: [
     "Stage the subject inside a polished artist-workstation vignette with layered display panes, a lit desk surface, collectible props, and a strong focal object that feels made for digital painting.",
+    "Use a stylized dev-studio corner with floating screen glow, drawing tablet reflections, and a clean object pedestal built into the desk.",
+    "Set the subject in a concept-art pinup space with taped references, paint mess, display glare, and one central rendered focal object.",
+  ],
 };
 
 const GENERIC_SCENE_ANCHORS = [
@@ -190,6 +202,13 @@ const GENERIC_SCENE_ANCHORS = [
   "Build the scene around a workshop table with clamps, small tools, dust motes, and a bright opening in the rear plane.",
   "Place the subject in a canyon-like passage with textured walls, drifting haze, and a narrow vertical strip of sky.",
   "Use an atrium mezzanine with railings, geometric wall panels, warm pools of light, and deep perspective.",
+  "Place the subject beside a narrow bridge edge with layered mist below, strong parallax, and a single bright focal opening in the distance.",
+  "Use a compact studio apartment corner with a side table, soft fabric, a plant shadow, and a long slice of afternoon light.",
+  "Stage the composition in a weathered courtyard with stone paving, a side arch, and one reflective pool catching the sky.",
+  "Use a workshop storage wall with hanging tools, a central stool, deep shadows, and one bright task light near the focal area.",
+  "Set the scene inside a glass-roof passage with condensation, structural beams, and a bright depth lane behind the subject.",
+  "Place the focal subject near a train-car vestibule with window reflections, overhead rails, and a strong vanishing line.",
+  "Use a theatre-side rehearsal corner with curtains, floor marks, one spotlight spill, and stacked props at the edge of frame.",
 ];
 
 const GENERIC_PRESET_MOTIFS = [
@@ -247,6 +266,106 @@ const FEELING_VARIANTS = [
   "Keep the composition clean and readable from a quick card glance.",
 ];
 
+const HERO_VARIANTS: Record<string, string[]> = {
+  anime_dark_fantasy: [
+    "An original lone fighter with weathered gear, sharp silhouette, and visible emotional strain.",
+    "An original antihero framed as a survivor, with tense posture and one striking costume detail.",
+    "An original hunter or wanderer with scarred equipment, grounded anatomy, and controlled menace.",
+  ],
+  anime_masterpieces: [
+    "An original traveler or dreamer with an expressive silhouette and quiet human presence.",
+    "An original figure caught between wonder and melancholy, with subtle costume storytelling.",
+    "An original young adult protagonist whose posture carries most of the scene’s emotion.",
+  ],
+  anime_slice: [
+    "An original everyday character with a warm, readable silhouette and soft comedic charm.",
+    "An original school-age or young-adult figure with expressive posture and cozy visual rhythm.",
+    "An original slice-of-life lead whose face, clothing, and gesture feel instantly personable.",
+  ],
+  anime_fantasy: [
+    "An original fantasy adventurer with layered costume logic, one magical prop, and a clear quest vibe.",
+    "An original mage or traveler with readable gear, elegant silhouette, and story-driven pose.",
+    "An original high-fantasy lead with cloak, artifact, and a clean heroic read from card distance.",
+  ],
+  illustration_print: [
+    "One strong symbolic subject with a silhouette that survives heavy reduction and bold shape simplification.",
+    "One iconic print-friendly subject with immediate contrast, readable edges, and poster-like economy.",
+    "One original emblematic figure or object designed to carry the whole composition at a glance.",
+  ],
+  fashion_texture: [
+    "One adult model or mannequin where the garment behavior is the real protagonist.",
+    "One fashion subject posed to reveal seam logic, drape, weight, and trim detail.",
+    "One wardrobe-focused figure with strong silhouette and textile-first visual emphasis.",
+  ],
+  default: [
+    "One original focal subject with a strong silhouette and clear role in the frame.",
+    "One original protagonist or hero object with readable shape hierarchy and visual priority.",
+    "One original main figure or centerpiece designed to read instantly in a portrait card.",
+  ],
+};
+
+const ENVIRONMENT_VARIANTS: Record<string, string[]> = {
+  anime_dark_fantasy: [
+    "Surround the subject with ruined structure, damp surfaces, and oppressive depth layers.",
+    "Use an environment with decayed architecture, sharp occlusion, and uneasy negative space.",
+    "Build the setting around hostile texture: stone, metal, haze, and fractured background rhythm.",
+  ],
+  anime_masterpieces: [
+    "Give the environment lyrical depth, wind movement, and painterly background transitions.",
+    "Use a setting with emotionally charged atmosphere, layered sky or architecture, and soft distance.",
+    "Build a space where environment and character feel inseparable, with quiet cinematic depth.",
+  ],
+  anime_slice: [
+    "Make the setting intimate and lived-in, with small everyday props and gentle light falloff.",
+    "Use a cozy room, cafe, street corner, or courtyard that feels specific without clutter.",
+    "Build a warm daily-life environment with small asymmetries and friendly material cues.",
+  ],
+  anime_fantasy: [
+    "Place the subject in a magical environment with clear worldbuilding layers and one glowing focal cue.",
+    "Use a fantasy setting with path, ruins, city edge, or forest depth that suggests a larger world.",
+    "Build an adventure-ready backdrop with scale cues, atmosphere, and one memorable landmark element.",
+  ],
+  illustration_print: [
+    "Reduce the environment to bold supporting shapes, negative space, and print-friendly texture masses.",
+    "Keep the background graphic and intentional, with only the minimum shapes needed to reinforce the subject.",
+    "Use a simplified support environment that strengthens rhythm, contrast, and silhouette rather than realism.",
+  ],
+  fashion_texture: [
+    "Keep the environment secondary and tactile, designed to support fabric readability rather than story clutter.",
+    "Use a restrained fashion set with enough props to contrast textile finish, weight, and sheen.",
+    "Build a quiet editorial environment where backdrop surfaces help the garment stand out cleanly.",
+  ],
+  default: [
+    "Use an environment with layered depth, controlled clutter, and strong foreground/background separation.",
+    "Give the scene enough spatial context to feel specific, but keep the focal hierarchy clean.",
+    "Build a setting with clear planes, visible materials, and one memorable support detail.",
+  ],
+};
+
+const CAMERA_FOCUS_VARIANTS = [
+  "Prioritize a clean read of the subject’s silhouette before secondary details.",
+  "Let the camera emphasize one hero material transition near the focal area.",
+  "Use framing that makes one strong foreground-to-midground relationship memorable.",
+  "Make the image read first through pose and shape, then through surface detail.",
+  "Bias the framing toward one striking gesture, prop, or facial angle.",
+];
+
+const ACTION_VARIANTS = [
+  "Imply a paused action rather than a static pose.",
+  "Use a subtle in-between gesture that suggests the moment just before movement.",
+  "Let a small physical action give the frame its narrative beat.",
+  "Build the pose around one restrained but specific directional motion.",
+  "Keep the subject grounded, but make one edge of the scene feel alive.",
+];
+
+const COLOR_SEPARATION_VARIANTS = [
+  "Push one accent color family that is uncommon for neighboring presets in the same category.",
+  "Separate the preset with a distinct dominant-vs-accent palette relationship.",
+  "Use one memorable color accent on the focal plane that changes the image identity immediately.",
+  "Let the palette split warm and cool zones in a way that feels unique to this preset.",
+  "Use a strong local color decision that makes the card identifiable from thumbnail size.",
+];
+
 function hashString(value: string) {
   let hash = 0;
   for (let index = 0; index < value.length; index += 1) {
@@ -255,11 +374,22 @@ function hashString(value: string) {
   return hash;
 }
 
-function categorySceneAnchor(pack: StylePack, category: string) {
+function broadPromptFamily(pack: StylePack, category: string) {
+  const key = styleCategoryImageKey(pack.id, category);
+  if (key === "pack_05__dark_fantasy_and_seinen") return "anime_dark_fantasy";
+  if (key === "pack_05__studio_masterpieces") return "anime_masterpieces";
+  if (key === "pack_05__slice_of_life_and_moe") return "anime_slice";
+  if (key === "pack_05__isekai_and_high_fantasy") return "anime_fantasy";
+  if (key === "pack_04__ink_and_print") return "illustration_print";
+  if (key === "pack_08__fabric_and_texture_focus") return "fashion_texture";
+  return "default";
+}
+
+function categorySceneAnchor(pack: StylePack, category: string, seed?: string) {
   const key = styleCategoryImageKey(pack.id, category);
   const explicit = CATEGORY_SCENE_ANCHORS[key];
-  if (explicit) return explicit;
-  return GENERIC_SCENE_ANCHORS[hashString(key) % GENERIC_SCENE_ANCHORS.length];
+  const source = explicit && explicit.length > 0 ? explicit : GENERIC_SCENE_ANCHORS;
+  return source[hashString(seed || `${key}:anchor`) % source.length];
 }
 
 function presetMotif(preset: StylePresetDef) {
@@ -270,12 +400,17 @@ function pickVariant(list: string[], seed: string) {
   return list[Math.abs(hashString(seed)) % list.length];
 }
 
-function categoryBasePrompt(pack: StylePack, category: string) {
+function categoryBasePrompt(pack: StylePack, category: string, seed?: string) {
   const key = styleCategoryImageKey(pack.id, category);
   const base = CATEGORY_BASE_PROMPTS[key] || "A vertical scene with one clear original subject, foreground detail, midground context, background depth, varied materials, and no text.";
   return `Base: ${base}
-Anchor: ${categorySceneAnchor(pack, category)}
+Anchor: ${categorySceneAnchor(pack, category, seed)}
 Fit pack "${pack.name}" and category "${category}". Finished style-card image, not a reference sheet. Portrait 2:3, usable in a 3:4 card crop. No text, labels, logos, watermark, or UI.`;
+}
+
+function familyVariant(map: Record<string, string[]>, family: string, seed: string) {
+  const source = map[family] || map.default;
+  return source[Math.abs(hashString(seed)) % source.length];
 }
 
 function buildStylePrompt(pack: StylePack, preset: StylePresetDef, attempt: number) {
@@ -284,6 +419,7 @@ function buildStylePrompt(pack: StylePack, preset: StylePresetDef, attempt: numb
   const allowsBooks = /book|library|textbook|comic book|storybook/i.test(`${preset.name} ${category} ${valueOf(preset.style, "aesthetic", "key_features")}`);
   const avoidRepeatedLibrary = allowsBooks ? "" : " Avoid books, bookshelves, libraries, reading rooms, archives, and stacked volumes.";
   const variantSeed = `${pack.id}:${preset.id}:${preset.name}:${attempt}`;
+  const family = broadPromptFamily(pack, category);
 
   return `Generate one portrait default style-card image.
 TARGET STYLE: ${preset.name.toUpperCase()}
@@ -292,16 +428,21 @@ CATEGORY: ${category}
 MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
-${categoryBasePrompt(pack, category)}
+${categoryBasePrompt(pack, category, `${variantSeed}:anchor`)}
+HERO: ${familyVariant(HERO_VARIANTS, family, `${variantSeed}:hero`)}
+ENVIRONMENT: ${familyVariant(ENVIRONMENT_VARIANTS, family, `${variantSeed}:environment`)}
 COMPOSITION: ${pickVariant(COMPOSITION_VARIANTS, `${variantSeed}:composition`)}
 MATERIAL: ${pickVariant(MATERIAL_VARIANTS, `${variantSeed}:material`)}
 LIGHTING: ${pickVariant(LIGHT_VARIANTS, `${variantSeed}:light`)}
 DETAIL: ${pickVariant(DETAIL_VARIANTS, `${variantSeed}:detail`)}
 FEELING: ${pickVariant(FEELING_VARIANTS, `${variantSeed}:feeling`)}
+CAMERA FOCUS: ${pickVariant(CAMERA_FOCUS_VARIANTS, `${variantSeed}:focus`)}
+ACTION: ${pickVariant(ACTION_VARIANTS, `${variantSeed}:action`)}
+COLOR SEPARATION: ${pickVariant(COLOR_SEPARATION_VARIANTS, `${variantSeed}:color`)}
 
 Style DNA: aesthetic=${valueOf(preset.style, "aesthetic")}; subject=${valueOf(preset.style, "subject_treatment", "form_and_line")}; color=${valueOf(preset.style, "color_and_tone", "color_palette")}; light=${valueOf(preset.style, "lighting_and_shadow", "lighting_setup")}; texture=${valueOf(preset.style, "texture_and_material", "material_texture")}; camera=${valueOf(preset.style, "camera_and_composition", "spatial_distortion")}; mood=${valueOf(preset.style, "atmosphere_and_mood", "atmosphere")}; render=${valueOf(preset.style, "rendering_and_quality", "render_quality")}; features=${valueOf(preset.style, "key_features")}.
 
-Make it immediately recognizable as "${preset.name}". Keep the anchor; apply the style through rendering, mood, materials, camera, and treatment. Distinct motif to avoid cross-pack convergence: ${presetMotif(preset)}. No franchise, brand, character, logo, or copyrighted identity.${avoidRepeatedLibrary} Output only the image, 1024x1536 portrait.${negative}`;
+Make it immediately recognizable as "${preset.name}". Keep the anchor, but do not reuse generic staging from neighboring presets in this category; vary subject design, environment read, action cue, and color identity for this preset specifically. Apply the style through rendering, mood, materials, camera, and treatment. Distinct motif to avoid cross-pack convergence: ${presetMotif(preset)}. No franchise, brand, character, logo, or copyrighted identity.${avoidRepeatedLibrary} Output only the image, 1024x1536 portrait.${negative}`;
 }
 
 async function exists(filePath: string) {
