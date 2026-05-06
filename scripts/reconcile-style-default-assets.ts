@@ -32,7 +32,7 @@ const dbPath = path.join(libraryDir, "library.sqlite");
 const dryRun = process.argv.includes("--dry-run");
 const sinceArg = process.argv.find((arg) => arg.startsWith("--since="))?.slice("--since=".length);
 const sinceTime = sinceArg ? Date.parse(sinceArg) : Number.NEGATIVE_INFINITY;
-const reconciledModel = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.3-codex-spark";
+const reconciledModel = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.4-mini";
 const reconciledReasoningEffort = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || "low";
 
 function manifestPathForPack(packId: string) {

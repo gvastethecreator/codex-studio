@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
@@ -6,7 +6,7 @@ import { resolvePlatformPath } from '../platformPaths';
 import { closeImagegenSession, getImagegenSession, getImagegenSessionKey, type SessionHandle } from './sessionPool';
 import type { JsonRpcMessage } from './rpcClient';
 
-const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.3-codex-spark';
+const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini';
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
 const IMAGEGEN_SKILL_PATH = path.join(resolvePlatformPath('codex-skills-dir'), '.system', 'imagegen', 'SKILL.md');
 
@@ -27,28 +27,6 @@ export interface TurnResult {
 
 export interface CodexTurn {
   runTurn(params: TurnParams): Promise<TurnResult>;
-}
-
-function getNewestGeneratedImage(sinceMs: number) {
-  const generatedDir = resolvePlatformPath('codex-generated-images');
-  if (!existsSync(generatedDir)) return null;
-
-  const candidates: string[] = [];
-  const visit = (dir: string) => {
-    for (const entry of readdirSync(dir, { withFileTypes: true })) {
-      const fullPath = path.join(dir, entry.name);
-      if (entry.isDirectory()) {
-        visit(fullPath);
-      } else if (/\.(png|jpg|jpeg|webp)$/i.test(entry.name)) {
-        const stats = statSync(fullPath);
-        if (stats.mtimeMs >= sinceMs) candidates.push(fullPath);
-      }
-    }
-  };
-
-  visit(generatedDir);
-  candidates.sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs);
-  return candidates[0] ?? null;
 }
 
 function extractImageResultFromNotifications(notifications: JsonRpcMessage[], jobId: string) {
@@ -119,6 +97,18 @@ function mimeForPath(filePath: string) {
   return ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : ext === '.webp' ? 'image/webp' : 'image/png';
 }
 
+function extractAssistantText(notifications: JsonRpcMessage[]) {
+  return notifications
+    .map((message) => {
+      const item = message.params?.item;
+      if (!item || item.type !== 'agentMessage') return '';
+      if (typeof item.text === 'string') return item.text;
+      return '';
+    })
+    .filter(Boolean)
+    .join('\n');
+}
+
 async function runCodexImagegenTurn(
   session: SessionHandle,
   job: { id: string; prompt: string; projectId: string },
@@ -170,9 +160,15 @@ async function runCodexImagegenTurn(
     };
   }
 
+  const assistantText = extractAssistantText(notifications);
+  if (
+    /can[’']?t directly generate|image generation runtime\/tool isn[’']?t available|OPENAI_API_KEY/i.test(assistantText)
+  ) {
+    throw new Error(`Codex app-server thread lacks image generation capability for job ${job.id}`);
+  }
+
   const discovered = extractGeneratedImageItemPath(notifications)
-    ?? extractSavedImagePathFromNotifications(notifications, startedAt)
-    ?? getNewestGeneratedImage(startedAt);
+    ?? extractSavedImagePathFromNotifications(notifications, startedAt);
 
   if (!discovered) {
     return { assets: [], transcript: transcriptPath, turnId, threadId: session.threadId, durationMs: Date.now() - startedAt };

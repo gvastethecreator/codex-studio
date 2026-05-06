@@ -1,0 +1,22 @@
+Generate one portrait default style-card image.
+TARGET STYLE: DEVILMAN CRYBABY
+PACK: Anime & Manga Universes
+CATEGORY: 7. Dark Fantasy & Seinen
+MODE: text-to-image
+MODEL: gpt-5.3-codex-spark, low
+
+Base: A dark fantasy or mature anime scene with one original character, ruined architecture, ominous atmosphere, textured costume, dramatic shadows, and grounded narrative weight.
+Anchor: Place the subject at the edge of a greenhouse aisle with condensation, glass structure, and layered foliage depth.
+Fit pack "Anime & Manga Universes" and category "7. Dark Fantasy & Seinen". Finished style-card image, not a reference sheet. Portrait 2:3, usable in a 3:4 card crop. No text, labels, logos, watermark, or UI.
+COMPOSITION: Use a diagonal composition with the subject layered across foreground and middle-ground.
+MATERIAL: Prioritize readable skin, fabric, and structure texture differences.
+LIGHTING: Use soft frontal fill with one pronounced practical back light source.
+DETAIL: Use one distinct pose nuance that is not repeated in the base scene.
+FEELING: Add a specific mood beat that changes the character dynamics.
+
+Style DNA: aesthetic=Masaaki Yuasa style, fluid, distorted, neon colors, psychedelic horror; subject=Anime style linework; color=Anime color palette; light=Anime shading; texture=Cel shaded or anime background; camera=Anime proportions; mood=Psychedelic, tragic; render=Masterpiece, high quality anime screenshot; features=Studio animation quality.
+
+Make it immediately recognizable as "Devilman Crybaby". Keep the anchor; apply the style through rendering, mood, materials, camera, and treatment. Distinct motif to avoid cross-pack convergence: Include a strip of patterned tape or trim integrated into the set.. No franchise, brand, character, logo, or copyrighted identity. Avoid books, bookshelves, libraries, reading rooms, archives, and stacked volumes. Output only the image, 1024x1536 portrait.
+
+Avoid:
+realistic, 3d render, photo, live action, western comic, ugly, bad anatomy

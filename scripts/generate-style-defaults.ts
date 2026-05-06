@@ -26,9 +26,12 @@ interface PendingPreset {
   destination: string;
 }
 
-const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.3-codex-spark";
+const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.4-mini";
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || "low";
 const libraryDir = process.env.STUDIO_LIBRARY_DIR || "D:\\AI-Studio-Library";
+const IMAGE_RETRY_ATTEMPTS = Math.max(1, Number(process.env.CODEX_IMAGEGEN_RETRY_ATTEMPTS || 2));
+const WAIT_POLL_MS = 800;
+const RETRY_RETRY_DELAY_MS = 600;
 
 const CATEGORY_BASE_PROMPTS: Record<string, string> = {
   pack_01__portrait_styles:
@@ -204,6 +207,46 @@ const GENERIC_PRESET_MOTIFS = [
   "Include a dark cobalt accent object that contrasts with the rest of the palette.",
 ];
 
+const COMPOSITION_VARIANTS = [
+  "Compose the subject slightly off-center with clear negative space.",
+  "Use a diagonal composition with the subject layered across foreground and middle-ground.",
+  "Set the subject in a deep foreground-to-background setup with one clear depth lane.",
+  "Anchor the composition on a central subject with offset secondary elements.",
+  "Use a clean three-plane composition to preserve vertical card readability.",
+];
+
+const LIGHT_VARIANTS = [
+  "Keep lighting directional with a dramatic edge and controlled ambient fill.",
+  "Use cinematic side light with soft practical spill and subtle contrast.",
+  "Use cool rim light and warm bounce fill for a more dynamic tone.",
+  "Use soft frontal fill with one pronounced practical back light source.",
+  "Use high-contrast lighting to increase material legibility while preserving mood.",
+];
+
+const MATERIAL_VARIANTS = [
+  "Prioritize readable skin, fabric, and structure texture differences.",
+  "Include contrasting surface materials across subject, props, and background.",
+  "Use clear edge and surface definition between object planes.",
+  "Let material finish (metal/cloth/stone/paint) carry part of the style signal.",
+  "Add a tactile foreground detail that reinforces the style treatment.",
+];
+
+const DETAIL_VARIANTS = [
+  "Include one specific micro-detail linked to the preset tone.",
+  "Keep one small secondary prop that supports the main story element.",
+  "Use one distinct pose nuance that is not repeated in the base scene.",
+  "Add a subtle asymmetry in object placement to avoid template repetition.",
+  "Shift one secondary action detail (tilt, fold, ripple, or movement edge).",
+];
+
+const FEELING_VARIANTS = [
+  "Keep the emotion anchored by the style’s strongest expression cue.",
+  "Add a specific mood beat that changes the character dynamics.",
+  "Let one facial or posture detail carry the scene’s emotional weight.",
+  "Use subtle movement to suggest the scene’s implied beat.",
+  "Keep the composition clean and readable from a quick card glance.",
+];
+
 function hashString(value: string) {
   let hash = 0;
   for (let index = 0; index < value.length; index += 1) {
@@ -223,6 +266,10 @@ function presetMotif(preset: StylePresetDef) {
   return GENERIC_PRESET_MOTIFS[hashString(`${preset.id}:${preset.name}`) % GENERIC_PRESET_MOTIFS.length];
 }
 
+function pickVariant(list: string[], seed: string) {
+  return list[Math.abs(hashString(seed)) % list.length];
+}
+
 function categoryBasePrompt(pack: StylePack, category: string) {
   const key = styleCategoryImageKey(pack.id, category);
   const base = CATEGORY_BASE_PROMPTS[key] || "A vertical scene with one clear original subject, foreground detail, midground context, background depth, varied materials, and no text.";
@@ -231,19 +278,26 @@ Anchor: ${categorySceneAnchor(pack, category)}
 Fit pack "${pack.name}" and category "${category}". Finished style-card image, not a reference sheet. Portrait 2:3, usable in a 3:4 card crop. No text, labels, logos, watermark, or UI.`;
 }
 
-function buildStylePrompt(pack: StylePack, preset: StylePresetDef) {
+function buildStylePrompt(pack: StylePack, preset: StylePresetDef, attempt: number) {
   const category = sanitizeCategory(preset.category);
   const negative = preset.negativePrompt ? `\n\nAvoid:\n${preset.negativePrompt}` : "";
   const allowsBooks = /book|library|textbook|comic book|storybook/i.test(`${preset.name} ${category} ${valueOf(preset.style, "aesthetic", "key_features")}`);
   const avoidRepeatedLibrary = allowsBooks ? "" : " Avoid books, bookshelves, libraries, reading rooms, archives, and stacked volumes.";
+  const variantSeed = `${pack.id}:${preset.id}:${preset.name}:${attempt}`;
 
   return `Generate one portrait default style-card image.
 TARGET STYLE: ${preset.name.toUpperCase()}
 PACK: ${pack.name}
 CATEGORY: ${category}
+MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
 ${categoryBasePrompt(pack, category)}
+COMPOSITION: ${pickVariant(COMPOSITION_VARIANTS, `${variantSeed}:composition`)}
+MATERIAL: ${pickVariant(MATERIAL_VARIANTS, `${variantSeed}:material`)}
+LIGHTING: ${pickVariant(LIGHT_VARIANTS, `${variantSeed}:light`)}
+DETAIL: ${pickVariant(DETAIL_VARIANTS, `${variantSeed}:detail`)}
+FEELING: ${pickVariant(FEELING_VARIANTS, `${variantSeed}:feeling`)}
 
 Style DNA: aesthetic=${valueOf(preset.style, "aesthetic")}; subject=${valueOf(preset.style, "subject_treatment", "form_and_line")}; color=${valueOf(preset.style, "color_and_tone", "color_palette")}; light=${valueOf(preset.style, "lighting_and_shadow", "lighting_setup")}; texture=${valueOf(preset.style, "texture_and_material", "material_texture")}; camera=${valueOf(preset.style, "camera_and_composition", "spatial_distortion")}; mood=${valueOf(preset.style, "atmosphere_and_mood", "atmosphere")}; render=${valueOf(preset.style, "rendering_and_quality", "render_quality")}; features=${valueOf(preset.style, "key_features")}.
 
@@ -296,9 +350,9 @@ async function waitForJob(jobId: string) {
       throw new Error(`Job ${jobId} ended as ${job.status}: ${job.error || "no error"}`);
     }
     if (job.status === "needs_review") {
-      throw new Error(`Job ${jobId} needs review; no image was auto-discovered.`);
+      throw new Error(`Job ${jobId} status needs_review`);
     }
-    await Bun.sleep(3000);
+    await Bun.sleep(WAIT_POLL_MS);
   }
 }
 
@@ -367,6 +421,11 @@ const packs = (await loadPacks()).filter((pack) => !packFilter || pack.id === pa
 const manifestByPack = new Map<string, Map<string, ManifestEntry>>();
 const failuresByPack = new Map<string, unknown[]>();
 const targetPresets: PendingPreset[] = [];
+let attempted = 0;
+let generated = 0;
+let failed = 0;
+let skipped = 0;
+let cursor = 0;
 
 for (const pack of packs) {
   const manifestEntries = await loadManifest(pack.id);
@@ -378,6 +437,7 @@ for (const pack of packs) {
     const destination = path.join(defaultsDir, `${preset.id}.png`);
 
     if (!force && await exists(destination)) {
+      skipped += 1;
       continue;
     }
 
@@ -389,66 +449,79 @@ if (Number.isFinite(limit)) {
   targetPresets.splice(limit);
 }
 
-let attempted = 0;
-let generated = 0;
-let failed = 0;
-let skipped = 0;
-let cursor = 0;
-
 async function processPreset(target: PendingPreset) {
   const { pack, preset, category, destination } = target;
   const manifestByPreset = manifestByPack.get(pack.id);
   if (!manifestByPreset) throw new Error(`Missing manifest map for pack ${pack.id}`);
 
   console.log(`[txt2img] ${preset.id} ${pack.name} / ${category} / ${preset.name}`);
-  try {
-    const created = await request<Job>("/api/jobs", {
-      method: "POST",
-      body: JSON.stringify({
-        projectId,
-        kind: "codex_imagegen",
-        prompt: buildStylePrompt(pack, preset),
-      }),
-    });
+  let lastError: string | null = null;
 
-    await waitForJob(created.id);
-    const asset = await newestAssetForJob(created.id);
-    if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
+  for (let attempt = 1; attempt <= IMAGE_RETRY_ATTEMPTS + 1; attempt += 1) {
+    try {
+      if (attempt > 1) {
+        console.log(`[txt2img-retry] ${preset.id} ${pack.name} / ${category} / ${preset.name} (${attempt}/${IMAGE_RETRY_ATTEMPTS + 1})`);
+      }
 
-    await ensureRepoDefaultCopy(asset.filePath, destination);
-    await cleanupExternalJobArtifacts(created.id, asset.filePath);
-    const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
-    manifestByPreset.set(preset.id, {
-      presetId: preset.id,
-      presetName: preset.name,
-      packId: pack.id,
-      packName: pack.name,
-      category,
-      file: repoFile,
-      jobId: created.id,
-      sourceAsset: repoFile,
-      generationMode: "text-to-image",
-      model: IMAGEGEN_MODEL,
-      reasoningEffort: IMAGEGEN_REASONING_EFFORT,
-      generatedAt: new Date().toISOString(),
-    });
-    generated += 1;
-  } catch (error) {
-    failed += 1;
-    const message = error instanceof Error ? error.message : String(error);
-    console.error(`[txt2img-failed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${message}`);
-    const failures = failuresByPack.get(pack.id);
-    if (Array.isArray(failures)) {
-      failures.push({
+      const created = await request<Job>("/api/jobs", {
+        method: "POST",
+        body: JSON.stringify({
+          projectId,
+          kind: "codex_imagegen",
+          prompt: buildStylePrompt(pack, preset, attempt),
+        }),
+      });
+
+      await waitForJob(created.id);
+      const asset = await newestAssetForJob(created.id);
+      if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
+
+      await ensureRepoDefaultCopy(asset.filePath, destination);
+      await cleanupExternalJobArtifacts(created.id, asset.filePath);
+      const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
+      manifestByPreset.set(preset.id, {
         presetId: preset.id,
         presetName: preset.name,
         packId: pack.id,
         packName: pack.name,
         category,
-        error: message,
-        failedAt: new Date().toISOString(),
+        file: repoFile,
+        jobId: created.id,
+        sourceAsset: repoFile,
+        generationMode: "text-to-image",
+        model: IMAGEGEN_MODEL,
+        reasoningEffort: IMAGEGEN_REASONING_EFFORT,
+        generatedAt: new Date().toISOString(),
       });
+      generated += 1;
+      lastError = null;
+      return;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      lastError = message;
+
+      if (!message.includes("status needs_review") || attempt > IMAGE_RETRY_ATTEMPTS) {
+        break;
+      }
+
+      console.warn(`[txt2img-retry-needed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${message}`);
+      await Bun.sleep(RETRY_RETRY_DELAY_MS);
     }
+  }
+
+  failed += 1;
+  console.error(`[txt2img-failed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${lastError}`);
+  const failures = failuresByPack.get(pack.id);
+  if (Array.isArray(failures)) {
+    failures.push({
+      presetId: preset.id,
+      presetName: preset.name,
+      packId: pack.id,
+      packName: pack.name,
+      category,
+      error: lastError || "unknown",
+      failedAt: new Date().toISOString(),
+    });
   }
 }
 

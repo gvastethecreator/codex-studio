@@ -106,7 +106,7 @@ export async function createImagegenSession(sessionKey: string): Promise<Session
 
   if (!threadId) {
     const thread = await client.request('thread/start', {
-      model: process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.3-codex-spark',
+      model: process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini',
       cwd: process.cwd(),
       approvalPolicy: 'never',
       sandbox: 'danger-full-access',
