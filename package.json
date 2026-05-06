@@ -24,6 +24,7 @@
     "dev:server": "bun apps/local-server/src/index.ts",
     "dev:electron": "bun run scripts/dev-electron.ts",
     "studio:init": "bun run scripts/studio-init.ts",
+    "assets:migrate:webp": "bun run scripts/migrate-image-assets-to-webp.ts",
     "build": "bun run build:ui && bun run build:server",
     "build:ui": "vite build --config vite.config.ts",
     "build:server": "tsc --noEmit -p apps/local-server/tsconfig.json",
@@ -57,6 +58,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "electron": "^42.0.0",
+    "sharp": "^0.34.5",
     "typescript": "~6.0.3",
     "vite": "^8.0.10"
   }

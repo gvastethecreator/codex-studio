@@ -1,24 +1,45 @@
-import { readFile } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
+import sharp from "sharp";
 import yaml from "js-yaml";
 import type { StylePack, StylePresetDef } from "../components/recipes/styles/types";
+import { styleCategoryImageKey } from "../lib/recipeAssetKeys";
 
 export const rootDir = process.cwd();
+export const recipeAssetsDir = path.join(rootDir, "assets", "recipes");
+export const recipeCardsDir = path.join(recipeAssetsDir, "cards");
+export const recipeStylesDir = path.join(recipeAssetsDir, "styles");
 export const packsDir = path.join(rootDir, "components", "recipes", "styles", "packs");
-export const categoryBasesDir = path.join(rootDir, "components", "recipes", "styles", "category-bases");
-export const defaultsDir = path.join(rootDir, "components", "recipes", "styles", "defaults");
+export const categoryBasesDir = path.join(recipeStylesDir, "category-bases");
+export const defaultsDir = path.join(recipeStylesDir, "defaults");
+export const previewsDir = path.join(recipeStylesDir, "previews");
+export const RECIPE_ASSET_EXTENSION = ".webp";
+
+export { styleCategoryImageKey };
+
+export function withRecipeAssetExtension(filePath: string) {
+  const parsed = path.parse(filePath);
+  return path.join(parsed.dir, `${parsed.name}${RECIPE_ASSET_EXTENSION}`);
+}
+
+export function repoRelative(filePath: string) {
+  return path.relative(rootDir, filePath).replaceAll(path.sep, "/");
+}
+
+export async function writeRepoWebpAsset(sourcePath: string, destinationPath: string) {
+  const finalDestination = withRecipeAssetExtension(destinationPath);
+  await sharp(sourcePath).webp({ quality: 92, effort: 6 }).toFile(finalDestination);
+
+  const destinationStats = await stat(finalDestination).catch(() => null);
+  if (!destinationStats || destinationStats.size <= 0) {
+    throw new Error(`WebP asset copy failed for ${path.basename(finalDestination)} from ${sourcePath}`);
+  }
+
+  return finalDestination;
+}
 
 export function sanitizeCategory(category?: string) {
   return category || "General";
-}
-
-export function styleCategoryImageKey(packId: string, category: string) {
-  return `${packId}__${category
-    .toLowerCase()
-    .replace(/^\d+\.\s*/, "")
-    .replace(/&/g, "and")
-    .replace(/[^a-z0-9]+/g, "_")
-    .replace(/^_+|_+$/g, "")}`;
 }
 
 export function valueOf(style: StylePresetDef["style"], ...keys: string[]) {

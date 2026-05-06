@@ -1,8 +1,18 @@
-import { copyFile, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { Asset, Job, Project } from "../packages/shared/src";
 import type { StylePack, StylePresetDef } from "../components/recipes/styles/types";
-import { defaultsDir, loadPacks, request, rootDir, sanitizeCategory, styleCategoryImageKey, valueOf } from "./style-default-utils";
+import {
+  RECIPE_ASSET_EXTENSION,
+  defaultsDir,
+  loadPacks,
+  repoRelative,
+  request,
+  sanitizeCategory,
+  styleCategoryImageKey,
+  valueOf,
+  writeRepoWebpAsset,
+} from "./style-default-utils";
 
 interface ManifestEntry {
   presetId: string;
@@ -454,14 +464,6 @@ async function exists(filePath: string) {
   }
 }
 
-async function ensureRepoDefaultCopy(sourcePath: string, destinationPath: string) {
-  await copyFile(sourcePath, destinationPath);
-  const destinationStats = await stat(destinationPath).catch(() => null);
-  if (!destinationStats || destinationStats.size <= 0) {
-    throw new Error(`Default repo copy failed for ${path.basename(destinationPath)} from ${sourcePath}`);
-  }
-}
-
 async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
   const transcriptPath = path.join(libraryDir, "transcripts", jobId, "events.jsonl");
   const codexHome = process.env.CODEX_HOME || path.join(process.env.USERPROFILE || "C:\\Users\\user", ".codex");
@@ -575,7 +577,7 @@ for (const pack of packs) {
 
   for (const preset of pack.presets) {
     const category = sanitizeCategory(preset.category);
-    const destination = path.join(defaultsDir, `${preset.id}.png`);
+    const destination = path.join(defaultsDir, `${preset.id}${RECIPE_ASSET_EXTENSION}`);
 
     if (!force && await exists(destination)) {
       skipped += 1;
@@ -617,9 +619,9 @@ async function processPreset(target: PendingPreset) {
       const asset = await newestAssetForJob(created.id);
       if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
 
-      await ensureRepoDefaultCopy(asset.filePath, destination);
+      await writeRepoWebpAsset(asset.filePath, destination);
       await cleanupExternalJobArtifacts(created.id, asset.filePath);
-      const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
+      const repoFile = repoRelative(destination);
       manifestByPreset.set(preset.id, {
         presetId: preset.id,
         presetName: preset.name,

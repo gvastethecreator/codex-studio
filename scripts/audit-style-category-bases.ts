@@ -1,7 +1,15 @@
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import yaml from "js-yaml";
-import { categoryBasesDir, packsDir, rootDir, sanitizeCategory, styleCategoryImageKey } from "./style-default-utils";
+import {
+  RECIPE_ASSET_EXTENSION,
+  categoryBasesDir,
+  packsDir,
+  repoRelative,
+  rootDir,
+  sanitizeCategory,
+  styleCategoryImageKey,
+} from "./style-default-utils";
 
 interface BaseRow {
   packId: string;
@@ -32,13 +40,13 @@ for (const file of packFiles) {
 
     for (const [category, presetNames] of groups.entries()) {
       const key = styleCategoryImageKey(pack.id, category);
-      const fileName = `${key}.png`;
+      const fileName = `${key}${RECIPE_ASSET_EXTENSION}`;
       rows.push({
         packId: pack.id,
         packName: pack.name,
         category,
         key,
-        file: `components/recipes/styles/category-bases/${fileName}`,
+        file: repoRelative(path.join(categoryBasesDir, fileName)),
         exists: await Bun.file(path.join(categoryBasesDir, fileName)).exists(),
         presetNames,
       });
@@ -71,7 +79,7 @@ const lines = [
   ]),
   "## Missing",
   "",
-  ...missing.map((row) => `- ${row.packName} / ${row.category} -> \`${row.key}.png\``),
+  ...missing.map((row) => `- ${row.packName} / ${row.category} -> \`${row.key}${RECIPE_ASSET_EXTENSION}\``),
   "",
 ];
 

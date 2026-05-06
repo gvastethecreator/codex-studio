@@ -1,15 +1,17 @@
-import { copyFile, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { Asset, Job, Project } from "../packages/shared/src";
 import {
+  RECIPE_ASSET_EXTENSION,
   categoryBasesDir,
   loadPacks,
   request,
-  rootDir,
+  repoRelative,
   sanitizeCategory,
   styleCategoryImageKey,
   subjectForCategory,
   valueOf,
+  writeRepoWebpAsset,
 } from "./style-default-utils";
 
 interface ManifestEntry {
@@ -154,7 +156,7 @@ for (const pack of packs) {
   const categories = Array.from(new Set(pack.presets.map((preset) => sanitizeCategory(preset.category))));
   for (const category of categories) {
     const key = styleCategoryImageKey(pack.id, category);
-    const destination = path.join(categoryBasesDir, `${key}.png`);
+    const destination = path.join(categoryBasesDir, `${key}${RECIPE_ASSET_EXTENSION}`);
     if (await exists(destination)) {
       skipped += 1;
       continue;
@@ -177,9 +179,9 @@ for (const pack of packs) {
       const asset = await newestAssetForJob(created.id);
       if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
 
-      await copyFile(asset.filePath, destination);
+      await writeRepoWebpAsset(asset.filePath, destination);
       await cleanupExternalJobArtifacts(created.id, asset.filePath);
-      const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
+      const repoFile = repoRelative(destination);
       manifestByKey.set(key, {
         packId: pack.id,
         packName: pack.name,
