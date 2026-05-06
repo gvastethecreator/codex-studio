@@ -1,9 +1,16 @@
-import { copyFile, mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { Database } from "bun:sqlite";
 import type { StylePack, StylePresetDef } from "../components/recipes/styles/types";
-import { defaultsDir, loadPacks, rootDir, sanitizeCategory } from "./style-default-utils";
+import {
+  RECIPE_ASSET_EXTENSION,
+  defaultsDir,
+  loadPacks,
+  repoRelative,
+  sanitizeCategory,
+  writeRepoWebpAsset,
+} from "./style-default-utils";
 
 interface ManifestEntry {
   presetId: string;
@@ -63,14 +70,6 @@ async function loadManifest(packId: string) {
 async function saveManifest(packId: string, entries: ManifestEntry[]) {
   entries.sort((a, b) => a.presetId.localeCompare(b.presetId));
   await writeFile(manifestPathForPack(packId), `${JSON.stringify(entries, null, 2)}\n`, "utf8");
-}
-
-async function ensureRepoDefaultCopy(sourcePath: string, destinationPath: string) {
-  await copyFile(sourcePath, destinationPath);
-  const destinationStats = await stat(destinationPath).catch(() => null);
-  if (!destinationStats || destinationStats.size <= 0) {
-    throw new Error(`Default repo copy failed for ${path.basename(destinationPath)} from ${sourcePath}`);
-  }
 }
 
 function buildPresetIndex(packs: StylePack[]) {
@@ -203,14 +202,14 @@ let skippedExisting = 0;
 let refreshedManifest = 0;
 
 for (const { pack, preset, job, image } of latestByPreset.values()) {
-  const destination = path.join(defaultsDir, `${preset.id}.png`);
+  const destination = path.join(defaultsDir, `${preset.id}${RECIPE_ASSET_EXTENSION}`);
   const manifest = manifestByPack.get(pack.id);
   if (!manifest) continue;
 
   if (!force && existsSync(destination)) {
     skippedExisting += 1;
     if (!manifest.has(preset.id)) {
-      const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
+      const repoFile = repoRelative(destination);
       manifest.set(preset.id, {
         presetId: preset.id,
         presetName: preset.name,
@@ -231,8 +230,8 @@ for (const { pack, preset, job, image } of latestByPreset.values()) {
   }
 
   console.log(`[recover] ${preset.id} ${pack.id} ${preset.name} <- ${image.filePath}`);
-  if (!dryRun) await ensureRepoDefaultCopy(image.filePath, destination);
-  const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
+  if (!dryRun) await writeRepoWebpAsset(image.filePath, destination);
+  const repoFile = repoRelative(destination);
   manifest.set(preset.id, {
     presetId: preset.id,
     presetName: preset.name,

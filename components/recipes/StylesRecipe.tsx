@@ -36,9 +36,13 @@ import type {
   Attachment,
   AspectRatio,
 } from "../../types";
+import {
+  STYLE_CATEGORY_IMAGES,
+  STYLE_CATEGORY_PREVIEWS,
+  STYLE_DEFAULT_IMAGES,
+} from "../../lib/recipeAssetCatalog";
+import { styleCategoryImageKey } from "../../lib/recipeAssetKeys";
 import { STYLE_PACKS, StylePresetDef } from "./stylesData";
-import { STYLE_DEFAULT_IMAGES } from "./styleDefaultImages";
-import { STYLE_CATEGORY_IMAGES, styleCategoryImageKey } from "./styleCategoryImages";
 import { RecipeLayout } from "./RecipeLayout";
 import Slider from "../ui/Slider";
 import Tooltip from "../Tooltip";
@@ -144,29 +148,6 @@ import { RATIO_MAP } from '../../constants';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { startViewTransition } from '../../utils/transitionUtils';
 
-const STYLE_CATEGORY_PREVIEWS: Record<string, string> = {
-  "1. Portrait Styles": new URL(
-    "./styles/previews/pack_01_portrait_styles.png",
-    import.meta.url,
-  ).href,
-  "2. Film Stocks": new URL(
-    "./styles/previews/pack_01_film_stocks.png",
-    import.meta.url,
-  ).href,
-  "3. Camera Types": new URL(
-    "./styles/previews/pack_01_camera_types.png",
-    import.meta.url,
-  ).href,
-  "4. Lighting": new URL(
-    "./styles/previews/pack_01_lighting.png",
-    import.meta.url,
-  ).href,
-  "5. Genres": new URL(
-    "./styles/previews/pack_01_genres.png",
-    import.meta.url,
-  ).href,
-};
-
 const previewDataUrlCache = new Map<string, string>();
 
 async function loadPreviewAttachment(previewUrl: string, preset: StylePresetDef) {
@@ -190,7 +171,7 @@ async function loadPreviewAttachment(previewUrl: string, preset: StylePresetDef)
 
   return {
     id: `style-preview-${preset.id}`,
-    name: `${preset.category || "Style Preview"} - reference.png`,
+    name: `${preset.category || "Style Preview"} - reference.webp`,
     dataUrl,
     strength: 0.45,
   };
@@ -581,166 +562,165 @@ DO NOT output text or explanations. Just the image.
           <div
             className={`
                   group relative aspect-[3/4] rounded-xl overflow-hidden text-left transition-all duration-300 flex flex-col
-                  ${
-                    isActive
-                      ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace("border", "ring")} shadow-2xl scale-[1.02]`
-                      : "bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1"
-                  }
+                  ${isActive
+                ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace("border", "ring")} shadow-2xl scale-[1.02]`
+                : "bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1"
+              }
               `}
           >
-          <div className="flex-1 relative overflow-hidden bg-black">
-            {resultImage ? (
-              <>
-                <div
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (onOpenImage) onOpenImage(resultImage);
-                  }}
-                  className="absolute inset-0 cursor-zoom-in group/image"
-                >
-                  <img
-                    src={resultImage.thumbnail || resultImage.src}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover/image:scale-110"
-                    alt={preset.name}
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/image:opacity-100 transition-opacity flex items-center justify-center">
-                    <div className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20">
-                      <Maximize2 size={18} />
+            <div className="flex-1 relative overflow-hidden bg-black">
+              {resultImage ? (
+                <>
+                  <div
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (onOpenImage) onOpenImage(resultImage);
+                    }}
+                    className="absolute inset-0 cursor-zoom-in group/image"
+                  >
+                    <img
+                      src={resultImage.thumbnail || resultImage.src}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover/image:scale-110"
+                      alt={preset.name}
+                    />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/image:opacity-100 transition-opacity flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20">
+                        <Maximize2 size={18} />
+                      </div>
+                    </div>
+
+                    <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover/image:opacity-100 transition-opacity z-20">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleApplyStyle(preset);
+                        }}
+                        className="p-1.5 bg-black/60 backdrop-blur-md rounded-lg hover:bg-accent-600 text-white transition-colors border border-white/10 shadow-lg"
+                        title="Regenerate Style"
+                      >
+                        <RefreshCw size={14} />
+                      </button>
                     </div>
                   </div>
-
-                  <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover/image:opacity-100 transition-opacity z-20">
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleApplyStyle(preset);
-                      }}
-                      className="p-1.5 bg-black/60 backdrop-blur-md rounded-lg hover:bg-accent-600 text-white transition-colors border border-white/10 shadow-lg"
-                      title="Regenerate Style"
-                    >
+                </>
+              ) : defaultImage ? (
+                <button
+                  onClick={() => handleApplyStyle(preset)}
+                  disabled={isGenerating}
+                  className="absolute inset-0 w-full h-full bg-zinc-900 cursor-pointer disabled:cursor-not-allowed"
+                >
+                  <img
+                    src={defaultImage}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    alt={preset.name}
+                  />
+                  <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                    <div className="p-1.5 bg-black/60 backdrop-blur-md rounded-lg text-white border border-white/10 shadow-lg">
                       <RefreshCw size={14} />
-                    </button>
+                    </div>
                   </div>
-                </div>
-              </>
-            ) : defaultImage ? (
-              <button
-                onClick={() => handleApplyStyle(preset)}
-                disabled={isGenerating}
-                className="absolute inset-0 w-full h-full bg-zinc-900 cursor-pointer disabled:cursor-not-allowed"
-              >
-                <img
-                  src={defaultImage}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  alt={preset.name}
-                />
-                <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity z-20">
-                  <div className="p-1.5 bg-black/60 backdrop-blur-md rounded-lg text-white border border-white/10 shadow-lg">
-                    <RefreshCw size={14} />
+                </button>
+              ) : previewImage ? (
+                <button
+                  onClick={() => handleApplyStyle(preset)}
+                  disabled={isGenerating}
+                  className="absolute inset-0 w-full h-full bg-zinc-900 cursor-pointer disabled:cursor-not-allowed"
+                >
+                  <img
+                    src={previewImage}
+                    className="w-full h-full object-cover opacity-75 saturate-[0.9] transition-all duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:saturate-100"
+                    alt=""
+                  />
+                  <div className="absolute inset-0 bg-black/15 group-hover:bg-black/5 transition-colors" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
+                    <div
+                      className={`w-14 h-14 rounded-full flex items-center justify-center bg-black/55 backdrop-blur-md border border-white/15 ${activeTheme.text} transition-transform duration-300 group-hover:scale-110 shadow-xl`}
+                    >
+                      <Palette size={24} />
+                    </div>
+                    <span className="text-[9px] font-black text-white uppercase tracking-widest">
+                      Apply
+                    </span>
                   </div>
-                </div>
-              </button>
-            ) : previewImage ? (
-              <button
-                onClick={() => handleApplyStyle(preset)}
-                disabled={isGenerating}
-                className="absolute inset-0 w-full h-full bg-zinc-900 cursor-pointer disabled:cursor-not-allowed"
-              >
-                <img
-                  src={previewImage}
-                  className="w-full h-full object-cover opacity-75 saturate-[0.9] transition-all duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:saturate-100"
-                  alt=""
-                />
-                <div className="absolute inset-0 bg-black/15 group-hover:bg-black/5 transition-colors" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
+                </button>
+              ) : (
+                <button
+                  onClick={() => handleApplyStyle(preset)}
+                  disabled={isGenerating}
+                  className="absolute inset-0 w-full h-full flex flex-col items-center justify-center gap-3 bg-zinc-900/50 hover:bg-zinc-800 transition-colors cursor-pointer"
+                >
                   <div
-                    className={`w-14 h-14 rounded-full flex items-center justify-center bg-black/55 backdrop-blur-md border border-white/15 ${activeTheme.text} transition-transform duration-300 group-hover:scale-110 shadow-xl`}
+                    className={`w-14 h-14 rounded-full flex items-center justify-center bg-white/5 border border-white/10 ${activeTheme.text} transition-transform duration-300 group-hover:scale-110`}
                   >
                     <Palette size={24} />
                   </div>
-                  <span className="text-[9px] font-black text-white uppercase tracking-widest">
+                  <span className="text-[9px] font-black text-zinc-600 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
                     Apply
                   </span>
-                </div>
-              </button>
-            ) : (
-              <button
-                onClick={() => handleApplyStyle(preset)}
-                disabled={isGenerating}
-                className="absolute inset-0 w-full h-full flex flex-col items-center justify-center gap-3 bg-zinc-900/50 hover:bg-zinc-800 transition-colors cursor-pointer"
-              >
-                <div
-                  className={`w-14 h-14 rounded-full flex items-center justify-center bg-white/5 border border-white/10 ${activeTheme.text} transition-transform duration-300 group-hover:scale-110`}
-                >
-                  <Palette size={24} />
-                </div>
-                <span className="text-[9px] font-black text-zinc-600 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
-                  Apply
-                </span>
-              </button>
-            )}
+                </button>
+              )}
 
-            <div className="absolute top-2 left-2 z-30">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleFavorite(preset.id);
-                }}
-                className={`p-1.5 rounded-full transition-all duration-300 ${isFavorite ? "text-rose-500 bg-black/40" : "text-zinc-600 hover:text-rose-400 bg-transparent hover:bg-black/40"}`}
-                title={isFavorite ? "Unpin" : "Pin to top"}
-              >
-                <Heart
-                  size={14}
-                  fill={isFavorite ? "currentColor" : "none"}
-                  strokeWidth={isFavorite ? 0 : 2}
-                />
-              </button>
-            </div>
-          </div>
-
-          <div className="relative h-20 p-4 bg-zinc-900/90 backdrop-blur-md border-t border-white/5 flex flex-col justify-center text-left hover:bg-zinc-800 transition-colors z-20 group/label w-full">
-            <div
-              onClick={() =>
-                !isGenerating && handleApplyStyle(preset)
-              }
-              className={`flex-1 flex flex-col justify-center ${!isGenerating ? "cursor-pointer" : ""}`}
-            >
-              <div className="flex items-center justify-between w-full mb-1">
-                <span
-                  className={`text-[10px] font-black uppercase tracking-tight truncate pr-8 transition-colors ${isActive ? "text-white" : "text-zinc-400 group-hover/label:text-white"}`}
+              <div className="absolute top-2 left-2 z-30">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleFavorite(preset.id);
+                  }}
+                  className={`p-1.5 rounded-full transition-all duration-300 ${isFavorite ? "text-rose-500 bg-black/40" : "text-zinc-600 hover:text-rose-400 bg-transparent hover:bg-black/40"}`}
+                  title={isFavorite ? "Unpin" : "Pin to top"}
                 >
-                  {preset.name}
-                </span>
-                {resultImage && (
-                  <div className="w-1.5 h-1.5 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
-                )}
+                  <Heart
+                    size={14}
+                    fill={isFavorite ? "currentColor" : "none"}
+                    strokeWidth={isFavorite ? 0 : 2}
+                  />
+                </button>
               </div>
-              <span className="text-[9px] text-zinc-600 line-clamp-2 leading-relaxed group-hover/label:text-zinc-500 pr-6">
-                {preset.style.aesthetic}
-              </span>
             </div>
 
-            <div className="absolute bottom-2 right-2">
-              <button
-                onClick={(e) => handleCopyStylePrompt(e, preset)}
-                className="p-1.5 rounded-md text-zinc-600 hover:text-white hover:bg-white/10 transition-all"
-                title="Copy Style Prompt"
-              >
-                {isCopied ? (
-                  <Check size={12} className="text-green-500" />
-                ) : (
-                  <Copy size={12} />
-                )}
-              </button>
-            </div>
-
-            {isActive && (
+            <div className="relative h-20 p-4 bg-zinc-900/90 backdrop-blur-md border-t border-white/5 flex flex-col justify-center text-left hover:bg-zinc-800 transition-colors z-20 group/label w-full">
               <div
-                className={`absolute top-0 right-0 w-full h-0.5 ${activeTheme.bg} shadow-[0_0_10px_currentColor]`}
-              />
-            )}
+                onClick={() =>
+                  !isGenerating && handleApplyStyle(preset)
+                }
+                className={`flex-1 flex flex-col justify-center ${!isGenerating ? "cursor-pointer" : ""}`}
+              >
+                <div className="flex items-center justify-between w-full mb-1">
+                  <span
+                    className={`text-[10px] font-black uppercase tracking-tight truncate pr-8 transition-colors ${isActive ? "text-white" : "text-zinc-400 group-hover/label:text-white"}`}
+                  >
+                    {preset.name}
+                  </span>
+                  {resultImage && (
+                    <div className="w-1.5 h-1.5 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
+                  )}
+                </div>
+                <span className="text-[9px] text-zinc-600 line-clamp-2 leading-relaxed group-hover/label:text-zinc-500 pr-6">
+                  {preset.style.aesthetic}
+                </span>
+              </div>
+
+              <div className="absolute bottom-2 right-2">
+                <button
+                  onClick={(e) => handleCopyStylePrompt(e, preset)}
+                  className="p-1.5 rounded-md text-zinc-600 hover:text-white hover:bg-white/10 transition-all"
+                  title="Copy Style Prompt"
+                >
+                  {isCopied ? (
+                    <Check size={12} className="text-green-500" />
+                  ) : (
+                    <Copy size={12} />
+                  )}
+                </button>
+              </div>
+
+              {isActive && (
+                <div
+                  className={`absolute top-0 right-0 w-full h-0.5 ${activeTheme.bg} shadow-[0_0_10px_currentColor]`}
+                />
+              )}
+            </div>
           </div>
-        </div>
         </FloatingTooltip>
       );
     },
@@ -880,11 +860,10 @@ DO NOT output text or explanations. Just the image.
             }}
             className={`
                     h-9 px-3 rounded-lg flex items-center gap-2 transition-all duration-300 relative overflow-hidden group flex-shrink-0
-                    ${
-                      currentPackId === FAVORITES_PACK_ID
-                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                        : "bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400"
-                    }
+                    ${currentPackId === FAVORITES_PACK_ID
+                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                : "bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400"
+              }
                 `}
           >
             <Heart
@@ -916,11 +895,10 @@ DO NOT output text or explanations. Just the image.
                 }}
                 className={`
                             h-9 px-3 rounded-lg flex items-center gap-2 transition-all duration-300 relative overflow-hidden group flex-shrink-0
-                            ${
-                              isActive
-                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                                : "bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300"
-                            }
+                            ${isActive
+                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                    : "bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300"
+                  }
                         `}
               >
                 <div

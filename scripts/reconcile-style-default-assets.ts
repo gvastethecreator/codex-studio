@@ -1,8 +1,15 @@
-import { copyFile, mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { Database } from "bun:sqlite";
 import type { StylePack, StylePresetDef } from "../components/recipes/styles/types";
-import { defaultsDir, loadPacks, rootDir, sanitizeCategory } from "./style-default-utils";
+import {
+  RECIPE_ASSET_EXTENSION,
+  defaultsDir,
+  loadPacks,
+  repoRelative,
+  sanitizeCategory,
+  writeRepoWebpAsset,
+} from "./style-default-utils";
 
 interface ManifestEntry {
   presetId: string;
@@ -45,14 +52,6 @@ async function exists(filePath: string) {
     return true;
   } catch {
     return false;
-  }
-}
-
-async function ensureRepoDefaultCopy(sourcePath: string, destinationPath: string) {
-  await copyFile(sourcePath, destinationPath);
-  const destinationStats = await stat(destinationPath).catch(() => null);
-  if (!destinationStats || destinationStats.size <= 0) {
-    throw new Error(`Default repo copy failed for ${path.basename(destinationPath)} from ${sourcePath}`);
   }
 }
 
@@ -167,14 +166,14 @@ for (const row of rows) {
 }
 
 for (const { pack, preset, row } of latestByPreset.values()) {
-  const destination = path.join(defaultsDir, `${preset.id}.png`);
+  const destination = path.join(defaultsDir, `${preset.id}${RECIPE_ASSET_EXTENSION}`);
   const manifest = manifestByPack.get(pack.id);
   if (!manifest) continue;
 
   if (await exists(destination)) {
     skippedExisting += 1;
     if (!manifest.has(preset.id)) {
-      const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
+      const repoFile = repoRelative(destination);
       manifest.set(preset.id, {
         presetId: preset.id,
         presetName: preset.name,
@@ -194,8 +193,8 @@ for (const { pack, preset, row } of latestByPreset.values()) {
   }
 
   console.log(`[copy] ${preset.id} ${pack.id} ${preset.name} <- ${path.basename(row.file_path)}`);
-  if (!dryRun) await ensureRepoDefaultCopy(row.file_path, destination);
-  const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
+  if (!dryRun) await writeRepoWebpAsset(row.file_path, destination);
+  const repoFile = repoRelative(destination);
   manifest.set(preset.id, {
     presetId: preset.id,
     presetName: preset.name,

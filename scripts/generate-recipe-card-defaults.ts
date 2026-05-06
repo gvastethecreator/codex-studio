@@ -1,7 +1,13 @@
-import { copyFile, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { Asset, Job, Project } from "../packages/shared/src";
-import { request, rootDir } from "./style-default-utils";
+import {
+  RECIPE_ASSET_EXTENSION,
+  recipeCardsDir,
+  repoRelative,
+  request,
+  writeRepoWebpAsset,
+} from "./style-default-utils";
 
 interface RecipeCardDef {
   id: string;
@@ -20,7 +26,6 @@ interface ManifestEntry {
   generatedAt: string;
 }
 
-const recipeCardsDir = path.join(rootDir, "components", "recipes", "defaults");
 const manifestPath = path.join(recipeCardsDir, "manifest.json");
 const failuresPath = path.join(recipeCardsDir, "failures.json");
 const libraryDir = process.env.STUDIO_LIBRARY_DIR || "D:\\AI-Studio-Library";
@@ -43,7 +48,7 @@ const RECIPE_CARDS: RecipeCardDef[] = [
   {
     id: "styles",
     title: "Styles",
-    fileName: "recipe-styles.png",
+    fileName: `recipe-styles${RECIPE_ASSET_EXTENSION}`,
     accentColor: "purple",
     prompt: `Generate one default cover image for the STYLES recipe card in a local AI image studio.
 
@@ -63,7 +68,7 @@ No text, no logos, no watermark, no UI.`.trim(),
   {
     id: "remaster",
     title: "Remaster",
-    fileName: "recipe-remaster.png",
+    fileName: `recipe-remaster${RECIPE_ASSET_EXTENSION}`,
     accentColor: "amber",
     prompt: `Generate one default cover image for the REMASTER recipe card in a local AI image studio.
 
@@ -84,7 +89,7 @@ No text, no logos, no watermark, no UI.`.trim(),
   {
     id: "camera",
     title: "Camera",
-    fileName: "recipe-camera.png",
+    fileName: `recipe-camera${RECIPE_ASSET_EXTENSION}`,
     accentColor: "cyan",
     prompt: `Generate one default cover image for the CAMERA recipe card in a local AI image studio.
 
@@ -104,7 +109,7 @@ No text, no logos, no watermark, no UI.`.trim(),
   {
     id: "cinematic",
     title: "Cinematic",
-    fileName: "recipe-cinematic.png",
+    fileName: `recipe-cinematic${RECIPE_ASSET_EXTENSION}`,
     accentColor: "rose",
     prompt: `Generate one default cover image for the CINEMATIC recipe card in a local AI image studio.
 
@@ -125,7 +130,7 @@ No text, no logos, no watermark, no interface overlays.`.trim(),
   {
     id: "timeline",
     title: "Timeline",
-    fileName: "recipe-timeline.png",
+    fileName: `recipe-timeline${RECIPE_ASSET_EXTENSION}`,
     accentColor: "teal",
     prompt: `Generate one default cover image for the TIMELINE recipe card in a local AI image studio.
 
@@ -146,7 +151,7 @@ No text, no logos, no watermark, no UI.`.trim(),
   {
     id: "spritesheet",
     title: "Sprite Sheet",
-    fileName: "recipe-spritesheet.png",
+    fileName: `recipe-spritesheet${RECIPE_ASSET_EXTENSION}`,
     accentColor: "emerald",
     prompt: `Generate one default cover image for the SPRITE SHEET recipe card in a local AI image studio.
 
@@ -168,7 +173,7 @@ No text, no logos, no watermark, no UI.`.trim(),
   {
     id: "character",
     title: "Character",
-    fileName: "recipe-character.png",
+    fileName: `recipe-character${RECIPE_ASSET_EXTENSION}`,
     accentColor: "indigo",
     prompt: `Generate one default cover image for the CHARACTER recipe card in a local AI image studio.
 
@@ -282,10 +287,10 @@ async function generateOne(projectId: string, recipe: RecipeCardDef, manifestByI
   const asset = await newestAssetForJob(created.id);
   if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
 
-  await copyFile(asset.filePath, destination);
+  await writeRepoWebpAsset(asset.filePath, destination);
   await cleanupExternalJobArtifacts(created.id, asset.filePath);
 
-  const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
+  const repoFile = repoRelative(destination);
   manifestById.set(recipe.id, {
     id: recipe.id,
     title: recipe.title,
