@@ -1,4 +1,4 @@
-import type { Asset, CatalogPage, CreateJobRequest, HealthResponse, Job, Project, StudioLibrary, SystemLog } from '../packages/shared/src';
+import type { CatalogPage, CreateJobRequest, HealthResponse, Job, Project, StudioLibrary, SystemLog } from '../packages/shared/src';
 import { resolveStudioApiBase } from './studioRuntime';
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
@@ -49,10 +49,6 @@ export async function listStudioJobs() {
   return request<Job[]>('/api/jobs');
 }
 
-export async function listStudioAssets() {
-  return request<Asset[]>('/api/assets');
-}
-
 export async function listLibraries() {
   return request<StudioLibrary[]>('/api/libraries');
 }
@@ -71,31 +67,4 @@ export async function queryCatalog(params: { workspaceId?: string; libraryId?: s
 
 export async function listStudioLogs() {
   return request<SystemLog[]>('/api/logs');
-}
-
-export async function waitForStudioJob(jobId: string, signal?: AbortSignal) {
-  const startedAt = Date.now();
-  while (Date.now() - startedAt < 240_000) {
-    if (signal?.aborted) {
-      throw new Error('Operation cancelled by user');
-    }
-
-    const jobs = await listStudioJobs();
-    const job = jobs.find((candidate) => candidate.id === jobId);
-    if (!job) {
-      throw new Error(`Local studio job not found: ${jobId}`);
-    }
-
-    if (job.status === 'completed' || job.status === 'needs_review') {
-      return job;
-    }
-
-    if (job.status === 'failed' || job.status === 'cancelled') {
-      throw new Error(job.error || `Local studio job ${job.status}`);
-    }
-
-    await new Promise((resolve) => setTimeout(resolve, 1200));
-  }
-
-  throw new Error('Local studio job timed out after 240 seconds');
 }

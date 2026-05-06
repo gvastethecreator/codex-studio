@@ -430,5 +430,23 @@
     "category": "10. Isekai & High Fantasy",
     "error": "Job 0bf696e1-abda-496d-9716-382c915f715d needs review; no image was auto-discovered.",
     "failedAt": "2026-05-06T06:55:08.133Z"
+  },
+  {
+    "presetId": "SP05-100",
+    "presetName": "DanMachi",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "10. Isekai & High Fantasy",
+    "error": "Job 93dea968-f8e0-48bc-8edd-86ae8dd5a575 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T06:55:17.429Z"
+  },
+  {
+    "presetId": "SP05-053",
+    "presetName": "Gundam: Iron-Blooded Orphans",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "6. Mecha & Cyberpunk",
+    "error": "Job f1fcd82f-0526-41a0-a6b4-0f4517db577a needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T07:20:44.785Z"
   }
 ]

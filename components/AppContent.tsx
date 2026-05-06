@@ -515,7 +515,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
             const entries = await getAllEntries();
 
             let recoveredCount = 0;
-            const knownKeys = ['session-logs', 'app-workspaces', 'generation-batches', 'generation-trash', 'user-wallet-balance', 'bg-config', 'isBackgroundEnabled'];
+            const knownKeys = ['session-logs', 'app-workspaces', 'catalog-cache', 'catalog-trash', 'user-wallet-balance', 'bg-config', 'isBackgroundEnabled'];
 
             const newBatches: GenerationBatch[] = [];
 

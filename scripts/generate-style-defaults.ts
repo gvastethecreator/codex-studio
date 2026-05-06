@@ -19,7 +19,14 @@ interface ManifestEntry {
   generatedAt: string;
 }
 
-const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.4";
+interface PendingPreset {
+  pack: StylePack;
+  preset: StylePresetDef;
+  category: string;
+  destination: string;
+}
+
+const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.3-codex-spark";
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || "low";
 const libraryDir = process.env.STUDIO_LIBRARY_DIR || "D:\\AI-Studio-Library";
 
@@ -340,9 +347,11 @@ function argValue(name: string) {
   return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split("=")[1];
 }
 
-const limit = argValue("limit") ? Number(argValue("limit")) : Number.POSITIVE_INFINITY;
+const limitArg = argValue("limit");
+const limit = limitArg ? Number(limitArg) : Number.POSITIVE_INFINITY;
 const packFilter = argValue("pack");
 const force = process.argv.includes("--force");
+const parallel = Math.max(1, Number(argValue("parallel") || 1));
 const lockDir = path.join(defaultsDir, ".locks");
 
 await mkdir(defaultsDir, { recursive: true });
@@ -355,80 +364,82 @@ const projects = await request<Project[]>("/api/projects");
 const projectId = projects[0]?.id;
 const packs = (await loadPacks()).filter((pack) => !packFilter || pack.id === packFilter);
 
-let generated = 0;
-let skipped = 0;
-let failed = 0;
-
-async function withPackLock<T>(packId: string, callback: () => Promise<T>) {
-  const lockPath = path.join(lockDir, `${packId}.lock`);
-  try {
-    await writeFile(lockPath, `${process.pid}\n${new Date().toISOString()}\n`, { flag: "wx" });
-  } catch {
-    console.log(`[locked] ${packId} is already being generated; skipping duplicate process.`);
-    return undefined;
-  }
-
-  try {
-    return await callback();
-  } finally {
-    await rm(lockPath, { force: true });
-  }
-}
+const manifestByPack = new Map<string, Map<string, ManifestEntry>>();
+const failuresByPack = new Map<string, unknown[]>();
+const targetPresets: PendingPreset[] = [];
 
 for (const pack of packs) {
-  await withPackLock(pack.id, async () => {
-  const manifestByPreset = new Map((await loadManifest(pack.id)).map((entry) => [entry.presetId, entry]));
+  const manifestEntries = await loadManifest(pack.id);
+  manifestByPack.set(pack.id, new Map(manifestEntries.map((entry) => [entry.presetId, entry])));
+  failuresByPack.set(pack.id, await loadFailures(pack.id));
 
   for (const preset of pack.presets) {
     const category = sanitizeCategory(preset.category);
     const destination = path.join(defaultsDir, `${preset.id}.png`);
 
     if (!force && await exists(destination)) {
-      skipped += 1;
       continue;
     }
 
-    if (generated >= limit) break;
+    targetPresets.push({ pack, preset, category, destination });
+  }
+}
 
-    console.log(`[txt2img] ${preset.id} ${pack.name} / ${category} / ${preset.name}`);
-    try {
-      const created = await request<Job>("/api/jobs", {
-        method: "POST",
-        body: JSON.stringify({
-          projectId,
-          kind: "codex_imagegen",
-          prompt: buildStylePrompt(pack, preset),
-        }),
-      });
+if (Number.isFinite(limit)) {
+  targetPresets.splice(limit);
+}
 
-      await waitForJob(created.id);
-      const asset = await newestAssetForJob(created.id);
-      if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
+let attempted = 0;
+let generated = 0;
+let failed = 0;
+let skipped = 0;
+let cursor = 0;
 
-      await ensureRepoDefaultCopy(asset.filePath, destination);
-      await cleanupExternalJobArtifacts(created.id, asset.filePath);
-      const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
-      manifestByPreset.set(preset.id, {
-        presetId: preset.id,
-        presetName: preset.name,
-        packId: pack.id,
-        packName: pack.name,
-        category,
-        file: repoFile,
-        jobId: created.id,
-        sourceAsset: repoFile,
-        generationMode: "text-to-image",
-        model: IMAGEGEN_MODEL,
-        reasoningEffort: IMAGEGEN_REASONING_EFFORT,
-        generatedAt: new Date().toISOString(),
-      });
-      await saveManifest(pack.id, Array.from(manifestByPreset.values()));
-      generated += 1;
-    } catch (error) {
-      failed += 1;
-      const message = error instanceof Error ? error.message : String(error);
-      console.error(`[txt2img-failed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${message}`);
-      await saveFailure(pack.id, {
+async function processPreset(target: PendingPreset) {
+  const { pack, preset, category, destination } = target;
+  const manifestByPreset = manifestByPack.get(pack.id);
+  if (!manifestByPreset) throw new Error(`Missing manifest map for pack ${pack.id}`);
+
+  console.log(`[txt2img] ${preset.id} ${pack.name} / ${category} / ${preset.name}`);
+  try {
+    const created = await request<Job>("/api/jobs", {
+      method: "POST",
+      body: JSON.stringify({
+        projectId,
+        kind: "codex_imagegen",
+        prompt: buildStylePrompt(pack, preset),
+      }),
+    });
+
+    await waitForJob(created.id);
+    const asset = await newestAssetForJob(created.id);
+    if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
+
+    await ensureRepoDefaultCopy(asset.filePath, destination);
+    await cleanupExternalJobArtifacts(created.id, asset.filePath);
+    const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
+    manifestByPreset.set(preset.id, {
+      presetId: preset.id,
+      presetName: preset.name,
+      packId: pack.id,
+      packName: pack.name,
+      category,
+      file: repoFile,
+      jobId: created.id,
+      sourceAsset: repoFile,
+      generationMode: "text-to-image",
+      model: IMAGEGEN_MODEL,
+      reasoningEffort: IMAGEGEN_REASONING_EFFORT,
+      generatedAt: new Date().toISOString(),
+    });
+    generated += 1;
+  } catch (error) {
+    failed += 1;
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`[txt2img-failed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${message}`);
+    const failures = failuresByPack.get(pack.id);
+    if (Array.isArray(failures)) {
+      failures.push({
         presetId: preset.id,
         presetName: preset.name,
         packId: pack.id,
@@ -439,8 +450,27 @@ for (const pack of packs) {
       });
     }
   }
-  });
-  if (generated >= limit) break;
 }
 
-console.log(`[done] generated=${generated} skipped=${skipped} failed=${failed} packs=${packs.map((pack) => pack.id).join(",") || "none"}`);
+async function worker() {
+  while (cursor < targetPresets.length) {
+    const target = targetPresets[cursor];
+    cursor += 1;
+    attempted += 1;
+    await processPreset(target);
+  }
+}
+
+await Promise.all(Array.from({ length: Math.min(parallel, targetPresets.length || 1) }, () => worker()));
+
+for (const [packId, manifest] of manifestByPack) {
+  if (manifest.size > 0) await saveManifest(packId, Array.from(manifest.values()));
+}
+
+for (const [packId, failures] of failuresByPack) {
+  await writeFile(failuresPathForPack(packId), `${JSON.stringify(failures, null, 2)}\n`, "utf8");
+}
+
+console.log(
+  `[done] generated=${generated} attempted=${attempted} skipped=${skipped} failed=${failed} packs=${packs.map((pack) => pack.id).join(",") || "none"}`,
+);

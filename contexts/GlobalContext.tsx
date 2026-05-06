@@ -44,8 +44,8 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
     // --- Persistent States ---
     const [logs, setLogs] = useIndexedDBStorage<LogEntry[]>('session-logs', []);
     const [workspaces, setWorkspaces] = useIndexedDBStorage<Workspace[]>('app-workspaces', [{ id: 'default', createdAt: Date.now() }]);
-    const [batches, setBatches] = useIndexedDBStorage<GenerationBatch[]>('generation-batches', []);
-    const [trash, setTrash] = useIndexedDBStorage<GenerationBatch[]>('generation-trash', []);
+    const [batches, setBatches] = useIndexedDBStorage<GenerationBatch[]>('catalog-cache', []);
+    const [trash, setTrash] = useIndexedDBStorage<GenerationBatch[]>('catalog-trash', []);
     
     const [isBackgroundEnabled, setIsBackgroundEnabled] = useLocalStorage('isBackgroundEnabled', true);
 

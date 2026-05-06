@@ -3,7 +3,7 @@ import { createThumbnail } from '../utils/imageUtils';
 import {
   createStudioJob,
   listProjects,
-  listStudioAssets,
+  queryCatalog,
   toStudioAssetUrl,
 } from './localStudioService';
 import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
@@ -80,8 +80,8 @@ export async function runSingleCodexImagegenJob(options: {
   onProgress?.(`Codex job queued: ${createdJob.id}`);
   const stream = options.stream ?? createStudioEventStream();
   const completedJob = await watchJob(stream, createdJob.id, signal);
-  const studioAssets = await listStudioAssets();
-  const jobAssets = studioAssets.filter(asset => asset.jobId === completedJob.id);
+  const catalogPage = await queryCatalog({ limit: 50 });
+  const jobAssets = catalogPage.images.filter(asset => asset.jobId === completedJob.id);
 
   if (jobAssets.length === 0) {
     throw new Error(`Codex job ${completedJob.id} completed without an imported image asset.`);
@@ -94,7 +94,7 @@ export async function runSingleCodexImagegenJob(options: {
     images.push({
       id: asset.id,
       src: url,
-      thumbnail,
+      thumbnail: asset.thumbnailUrl ? toStudioAssetUrl(asset.thumbnailUrl) : thumbnail,
       batchId,
       createdAt: Date.now(),
       isFavorite: false,
