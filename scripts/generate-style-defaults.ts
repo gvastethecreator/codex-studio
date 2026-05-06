@@ -219,58 +219,26 @@ function presetMotif(preset: StylePresetDef) {
 function categoryBasePrompt(pack: StylePack, category: string) {
   const key = styleCategoryImageKey(pack.id, category);
   const base = CATEGORY_BASE_PROMPTS[key] || "A vertical scene with one clear original subject, foreground detail, midground context, background depth, varied materials, and no text.";
-  return `Create this base subject:
-${base}
-
-Required scene anchor:
-${categorySceneAnchor(pack, category)}
-
-The subject and scene must fit the pack "${pack.name}" and the category "${category}".
-Use a vertical 2:3 composition designed for a 3:4 preset card crop.
-The image should be a finished representative default for this exact style preset, not a neutral reference sheet.
-Include enough subject, material, lighting, and environment detail for the style to be immediately legible.
-No text, no labels, no logos, no watermark, no UI.`;
+  return `Base: ${base}
+Anchor: ${categorySceneAnchor(pack, category)}
+Fit pack "${pack.name}" and category "${category}". Finished style-card image, not a reference sheet. Portrait 2:3, usable in a 3:4 card crop. No text, labels, logos, watermark, or UI.`;
 }
 
 function buildStylePrompt(pack: StylePack, preset: StylePresetDef) {
   const category = sanitizeCategory(preset.category);
   const negative = preset.negativePrompt ? `\n\nAvoid:\n${preset.negativePrompt}` : "";
 
-  return `Generate a default card image for Codex Image Studio's style preset browser.
-
-*** STYLE TRANSFER PROTOCOL ***
+  return `Generate one portrait default style-card image.
 TARGET STYLE: ${preset.name.toUpperCase()}
-MODE: TEXT TO IMAGE DEFAULT STYLE CARD
-MODEL REQUEST: ${IMAGEGEN_MODEL}
-REASONING EFFORT: ${IMAGEGEN_REASONING_EFFORT}
 PACK: ${pack.name}
 CATEGORY: ${category}
+MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
-[BASE PROMPT]
 ${categoryBasePrompt(pack, category)}
 
-[VISUAL DNA]
-- Core Aesthetic: ${valueOf(preset.style, "aesthetic")}
-- Subject Treatment: ${valueOf(preset.style, "subject_treatment", "form_and_line")}
-- Color & Tone: ${valueOf(preset.style, "color_and_tone", "color_palette")}
-- Lighting & Shadow: ${valueOf(preset.style, "lighting_and_shadow", "lighting_setup")}
-- Texture & Material: ${valueOf(preset.style, "texture_and_material", "material_texture")}
-- Camera & Composition: ${valueOf(preset.style, "camera_and_composition", "spatial_distortion")}
-- Atmosphere & Mood: ${valueOf(preset.style, "atmosphere_and_mood", "atmosphere")}
-- Rendering & Quality: ${valueOf(preset.style, "rendering_and_quality", "render_quality")}
-- Key Features: ${valueOf(preset.style, "key_features")}
+Style DNA: aesthetic=${valueOf(preset.style, "aesthetic")}; subject=${valueOf(preset.style, "subject_treatment", "form_and_line")}; color=${valueOf(preset.style, "color_and_tone", "color_palette")}; light=${valueOf(preset.style, "lighting_and_shadow", "lighting_setup")}; texture=${valueOf(preset.style, "texture_and_material", "material_texture")}; camera=${valueOf(preset.style, "camera_and_composition", "spatial_distortion")}; mood=${valueOf(preset.style, "atmosphere_and_mood", "atmosphere")}; render=${valueOf(preset.style, "rendering_and_quality", "render_quality")}; features=${valueOf(preset.style, "key_features")}.
 
-[EXECUTION RULES]
-Make the result immediately recognizable as "${preset.name}".
-Keep the required scene anchor intact; change the rendering language, mood, materials, camera behavior, and treatment through the style rather than replacing the subject with a generic cliché.
-Add this preset-specific motif so repeated style names in different packs do not converge to the same card: ${presetMotif(preset)}
-Do not copy a single franchise, brand, character, logo, or copyrighted identity.
-Portrait orientation, 1024x1536 output target, composed for a vertical card.
-Do not output explanations. Just the image.
-*** END PROTOCOL ***${negative}
-
-ImageGen output size: 1024x1536
-Aspect ratio: 2:3 (portrait)`;
+Make it immediately recognizable as "${preset.name}". Keep the anchor; apply the style through rendering, mood, materials, camera, and treatment. Distinct motif to avoid cross-pack convergence: ${presetMotif(preset)}. No franchise, brand, character, logo, or copyrighted identity. Output only the image, 1024x1536 portrait.${negative}`;
 }
 
 async function exists(filePath: string) {
