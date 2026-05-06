@@ -712,5 +712,61 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T05:41:15.902Z"
+  },
+  {
+    "presetId": "SP10-052",
+    "presetName": "Camouflage",
+    "packId": "pack_10",
+    "packName": "Abstract & Experimental",
+    "category": "5. Pattern & Texture",
+    "file": "components/recipes/styles/defaults/SP10-052.png",
+    "jobId": "fcd640f8-8382-40f0-b8c6-8e0908b4ba44",
+    "sourceAsset": "components/recipes/styles/defaults/SP10-052.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:44:41.618Z"
+  },
+  {
+    "presetId": "SP10-053",
+    "presetName": "Tie Dye",
+    "packId": "pack_10",
+    "packName": "Abstract & Experimental",
+    "category": "5. Pattern & Texture",
+    "file": "components/recipes/styles/defaults/SP10-053.png",
+    "jobId": "c2c27e55-310a-4c0f-966e-8523c6a96d6e",
+    "sourceAsset": "components/recipes/styles/defaults/SP10-053.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:47:22.156Z"
+  },
+  {
+    "presetId": "SP10-054",
+    "presetName": "Marble Texture",
+    "packId": "pack_10",
+    "packName": "Abstract & Experimental",
+    "category": "5. Pattern & Texture",
+    "file": "components/recipes/styles/defaults/SP10-054.png",
+    "jobId": "fe94daf3-7685-4c22-beb8-21297402f338",
+    "sourceAsset": "components/recipes/styles/defaults/SP10-054.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:50:29.895Z"
+  },
+  {
+    "presetId": "SP10-055",
+    "presetName": "Wood Grain",
+    "packId": "pack_10",
+    "packName": "Abstract & Experimental",
+    "category": "5. Pattern & Texture",
+    "file": "components/recipes/styles/defaults/SP10-055.png",
+    "jobId": "7a18d9ee-824c-4a27-ba15-1bcc9b958651",
+    "sourceAsset": "components/recipes/styles/defaults/SP10-055.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:52:52.217Z"
   }
 ]

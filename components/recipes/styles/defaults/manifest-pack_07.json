@@ -768,5 +768,61 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T05:42:25.505Z"
+  },
+  {
+    "presetId": "SP07-056",
+    "presetName": "Underwater City",
+    "packId": "pack_07",
+    "packName": "Architecture & Interior",
+    "category": "5. Fantasy Architecture",
+    "file": "components/recipes/styles/defaults/SP07-056.png",
+    "jobId": "55f76ff2-729b-4ab2-821e-fe07318e376b",
+    "sourceAsset": "components/recipes/styles/defaults/SP07-056.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:44:38.642Z"
+  },
+  {
+    "presetId": "SP07-057",
+    "presetName": "Steampunk City",
+    "packId": "pack_07",
+    "packName": "Architecture & Interior",
+    "category": "5. Fantasy Architecture",
+    "file": "components/recipes/styles/defaults/SP07-057.png",
+    "jobId": "9a511a64-a08a-4853-aaae-8e590e4f42a7",
+    "sourceAsset": "components/recipes/styles/defaults/SP07-057.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:48:07.410Z"
+  },
+  {
+    "presetId": "SP07-058",
+    "presetName": "Crystal Spire",
+    "packId": "pack_07",
+    "packName": "Architecture & Interior",
+    "category": "5. Fantasy Architecture",
+    "file": "components/recipes/styles/defaults/SP07-058.png",
+    "jobId": "c2eed251-ac45-4819-8415-e58758ff8ce4",
+    "sourceAsset": "components/recipes/styles/defaults/SP07-058.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:50:35.745Z"
+  },
+  {
+    "presetId": "SP07-059",
+    "presetName": "Hobbit Hole",
+    "packId": "pack_07",
+    "packName": "Architecture & Interior",
+    "category": "5. Fantasy Architecture",
+    "file": "components/recipes/styles/defaults/SP07-059.png",
+    "jobId": "291b0fc7-4552-473d-bdfa-f2519c5ca525",
+    "sourceAsset": "components/recipes/styles/defaults/SP07-059.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:53:19.206Z"
   }
 ]

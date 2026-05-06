@@ -950,5 +950,47 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T05:42:30.064Z"
+  },
+  {
+    "presetId": "SP01-069",
+    "presetName": "Boudoir Photography",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "file": "components/recipes/styles/defaults/SP01-069.png",
+    "jobId": "21f1deb8-16c3-4316-b4ad-a3a345d5346e",
+    "sourceAsset": "components/recipes/styles/defaults/SP01-069.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:46:23.106Z"
+  },
+  {
+    "presetId": "SP01-070",
+    "presetName": "Travel Photography",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "file": "components/recipes/styles/defaults/SP01-070.png",
+    "jobId": "95d52f6e-300f-4a75-9e0b-790ef33ded34",
+    "sourceAsset": "components/recipes/styles/defaults/SP01-070.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:49:36.718Z"
+  },
+  {
+    "presetId": "SP01-071",
+    "presetName": "Flat Lay",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "file": "components/recipes/styles/defaults/SP01-071.png",
+    "jobId": "157c6e46-ea30-4131-ba5b-7c825200a2cf",
+    "sourceAsset": "components/recipes/styles/defaults/SP01-071.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:52:02.019Z"
   }
 ]

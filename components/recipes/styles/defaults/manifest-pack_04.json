@@ -740,5 +740,61 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T05:42:28.377Z"
+  },
+  {
+    "presetId": "SP04-054",
+    "presetName": "Prop Design",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "file": "components/recipes/styles/defaults/SP04-054.png",
+    "jobId": "7d1dc12b-3f97-4e11-a0c5-046bb9cd7801",
+    "sourceAsset": "components/recipes/styles/defaults/SP04-054.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:44:41.690Z"
+  },
+  {
+    "presetId": "SP04-055",
+    "presetName": "Keyframe Art",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "file": "components/recipes/styles/defaults/SP04-055.png",
+    "jobId": "6b0ccb51-85f3-4b42-a02a-e8a9e0834662",
+    "sourceAsset": "components/recipes/styles/defaults/SP04-055.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:48:19.608Z"
+  },
+  {
+    "presetId": "SP04-056",
+    "presetName": "Photobash",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "file": "components/recipes/styles/defaults/SP04-056.png",
+    "jobId": "fa39ed7d-dba3-4eec-a79a-3fb0d75048c0",
+    "sourceAsset": "components/recipes/styles/defaults/SP04-056.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:50:45.062Z"
+  },
+  {
+    "presetId": "SP04-057",
+    "presetName": "Blueprint Schematic",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "file": "components/recipes/styles/defaults/SP04-057.png",
+    "jobId": "2cbe4d74-d152-44f7-898c-943d20e3d9da",
+    "sourceAsset": "components/recipes/styles/defaults/SP04-057.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:53:43.803Z"
   }
 ]

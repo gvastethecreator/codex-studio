@@ -880,5 +880,61 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T05:42:31.694Z"
+  },
+  {
+    "presetId": "SP09-064",
+    "presetName": "Mud (Cracked)",
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "5. Elemental & FX",
+    "file": "components/recipes/styles/defaults/SP09-064.png",
+    "jobId": "e66852b6-09e3-4086-a8f3-1059e1a23518",
+    "sourceAsset": "components/recipes/styles/defaults/SP09-064.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:45:27.022Z"
+  },
+  {
+    "presetId": "SP09-065",
+    "presetName": "Tar",
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "5. Elemental & FX",
+    "file": "components/recipes/styles/defaults/SP09-065.png",
+    "jobId": "610a67bd-b752-4127-a542-2688e6f661c0",
+    "sourceAsset": "components/recipes/styles/defaults/SP09-065.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:48:40.674Z"
+  },
+  {
+    "presetId": "SP09-066",
+    "presetName": "Sand (Beach)",
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "5. Elemental & FX",
+    "file": "components/recipes/styles/defaults/SP09-066.png",
+    "jobId": "4acb05c1-e6c8-413d-acb2-f0d7d8a7af55",
+    "sourceAsset": "components/recipes/styles/defaults/SP09-066.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:51:06.022Z"
+  },
+  {
+    "presetId": "SP09-067",
+    "presetName": "Snow (Powder)",
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "5. Elemental & FX",
+    "file": "components/recipes/styles/defaults/SP09-067.png",
+    "jobId": "0d4c629d-8650-47ab-8115-e49db0ce7ff2",
+    "sourceAsset": "components/recipes/styles/defaults/SP09-067.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:53:34.329Z"
   }
 ]
