@@ -756,6 +756,20 @@
     "generatedAt": "2026-05-06T04:52:11.157Z"
   },
   {
+    "presetId": "SP01-055",
+    "presetName": "Underwater",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "file": "components/recipes/styles/defaults/SP01-055.png",
+    "jobId": "bb2a73ae-134f-4941-bf04-6664d801f28b",
+    "sourceAsset": "components/recipes/styles/defaults/SP01-055.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T04:56:01.692Z"
+  },
+  {
     "presetId": "SP01-056",
     "presetName": "Architecture (Modern)",
     "packId": "pack_01",
@@ -770,6 +784,34 @@
     "generatedAt": "2026-05-05T19:37:24.769Z"
   },
   {
+    "presetId": "SP01-057",
+    "presetName": "Interior Design",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "file": "components/recipes/styles/defaults/SP01-057.png",
+    "jobId": "a8db26ff-9e33-4a96-9702-f5abe00662be",
+    "sourceAsset": "components/recipes/styles/defaults/SP01-057.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:00:12.900Z"
+  },
+  {
+    "presetId": "SP01-058",
+    "presetName": "Minimalist Photo",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "file": "components/recipes/styles/defaults/SP01-058.png",
+    "jobId": "d88cc82a-e35d-4f7a-83ba-21d3d774eeed",
+    "sourceAsset": "components/recipes/styles/defaults/SP01-058.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:04:02.805Z"
+  },
+  {
     "presetId": "SP01-059",
     "presetName": "Abstract Photo",
     "packId": "pack_01",
@@ -782,5 +824,47 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-05T19:31:24.763Z"
+  },
+  {
+    "presetId": "SP01-060",
+    "presetName": "Documentary (War)",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "file": "components/recipes/styles/defaults/SP01-060.png",
+    "jobId": "d61d59be-b777-4ded-b772-63f4b6cea894",
+    "sourceAsset": "components/recipes/styles/defaults/SP01-060.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:09:20.222Z"
+  },
+  {
+    "presetId": "SP01-061",
+    "presetName": "Paparazzi Style",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "file": "components/recipes/styles/defaults/SP01-061.png",
+    "jobId": "92d3a0cd-4980-4765-a561-4d382e89ffd7",
+    "sourceAsset": "components/recipes/styles/defaults/SP01-061.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:14:14.231Z"
+  },
+  {
+    "presetId": "SP01-062",
+    "presetName": "Corporate Stock Photo",
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "5. Genres",
+    "file": "components/recipes/styles/defaults/SP01-062.png",
+    "jobId": "fd2c5b5d-5db3-4d83-ba74-9528ebdae525",
+    "sourceAsset": "components/recipes/styles/defaults/SP01-062.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:17:43.004Z"
   }
 ]
