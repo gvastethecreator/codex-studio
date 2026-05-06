@@ -852,5 +852,61 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T05:42:22.474Z"
+  },
+  {
+    "presetId": "SP06-062",
+    "presetName": "Photomontage",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "5. Mixed Media",
+    "file": "components/recipes/styles/defaults/SP06-062.png",
+    "jobId": "d7366542-7fcd-425e-8cd2-67c15b23d5fb",
+    "sourceAsset": "components/recipes/styles/defaults/SP06-062.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:44:32.522Z"
+  },
+  {
+    "presetId": "SP06-063",
+    "presetName": "Decoupage",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "5. Mixed Media",
+    "file": "components/recipes/styles/defaults/SP06-063.png",
+    "jobId": "9332399f-8cd7-49dc-a6e0-1166e35afac5",
+    "sourceAsset": "components/recipes/styles/defaults/SP06-063.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:47:18.982Z"
+  },
+  {
+    "presetId": "SP06-064",
+    "presetName": "Assemblage",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "5. Mixed Media",
+    "file": "components/recipes/styles/defaults/SP06-064.png",
+    "jobId": "5cbf0b86-6cd1-4b51-afa0-94f25d8c41ac",
+    "sourceAsset": "components/recipes/styles/defaults/SP06-064.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:50:35.529Z"
+  },
+  {
+    "presetId": "SP06-065",
+    "presetName": "Scrapbook",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "5. Mixed Media",
+    "file": "components/recipes/styles/defaults/SP06-065.png",
+    "jobId": "8c4c410b-b983-4b31-a2db-6732bda50f67",
+    "sourceAsset": "components/recipes/styles/defaults/SP06-065.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:53:16.064Z"
   }
 ]

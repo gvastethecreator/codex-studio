@@ -684,5 +684,61 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T05:41:12.812Z"
+  },
+  {
+    "presetId": "SP08-050",
+    "presetName": "Alien Fashion",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "4. Fantasy/Sci-Fi Costume",
+    "file": "components/recipes/styles/defaults/SP08-050.png",
+    "jobId": "1b299661-1b15-4038-af7c-fae5167bb94a",
+    "sourceAsset": "components/recipes/styles/defaults/SP08-050.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:43:41.106Z"
+  },
+  {
+    "presetId": "SP08-051",
+    "presetName": "Latex/PVC",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "file": "components/recipes/styles/defaults/SP08-051.png",
+    "jobId": "df23d6ea-f517-4732-8233-e7b867b720c3",
+    "sourceAsset": "components/recipes/styles/defaults/SP08-051.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:46:21.356Z"
+  },
+  {
+    "presetId": "SP08-052",
+    "presetName": "Denim on Denim",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "file": "components/recipes/styles/defaults/SP08-052.png",
+    "jobId": "e4553f13-68d9-4bad-8b5c-249cccbe0905",
+    "sourceAsset": "components/recipes/styles/defaults/SP08-052.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:50:11.362Z"
+  },
+  {
+    "presetId": "SP08-053",
+    "presetName": "Fur Coat",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "file": "components/recipes/styles/defaults/SP08-053.png",
+    "jobId": "3ed71960-0e89-418c-aac2-5bc12c2cfa55",
+    "sourceAsset": "components/recipes/styles/defaults/SP08-053.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:52:21.538Z"
   }
 ]

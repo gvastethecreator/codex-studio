@@ -460,5 +460,61 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T05:41:09.718Z"
+  },
+  {
+    "presetId": "SP05-034",
+    "presetName": "My Hero Academia",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "4. Modern Shonen & Action",
+    "file": "components/recipes/styles/defaults/SP05-034.png",
+    "jobId": "d89d51b1-492b-4ac0-9321-63abd67407c2",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-034.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:45:05.713Z"
+  },
+  {
+    "presetId": "SP05-035",
+    "presetName": "Attack on Titan (Early)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "4. Modern Shonen & Action",
+    "file": "components/recipes/styles/defaults/SP05-035.png",
+    "jobId": "abe25794-9f11-4008-8b4e-9eec62f30c84",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-035.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:49:07.778Z"
+  },
+  {
+    "presetId": "SP05-036",
+    "presetName": "Attack on Titan (MAPPA)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "4. Modern Shonen & Action",
+    "file": "components/recipes/styles/defaults/SP05-036.png",
+    "jobId": "f255ecaa-57e7-412b-81d7-6c67c3cb1640",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-036.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:52:30.696Z"
+  },
+  {
+    "presetId": "SP05-037",
+    "presetName": "One Punch Man (Season 1)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "4. Modern Shonen & Action",
+    "file": "components/recipes/styles/defaults/SP05-037.png",
+    "jobId": "58c3bede-cccf-4a98-b74f-e19ebc7968dd",
+    "sourceAsset": "components/recipes/styles/defaults/SP05-037.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T05:54:44.005Z"
   }
 ]
