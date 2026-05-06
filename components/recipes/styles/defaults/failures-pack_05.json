@@ -1204,5 +1204,23 @@
     "category": "10. Isekai & High Fantasy",
     "error": "Unable to connect. Is the computer able to access the url?",
     "failedAt": "2026-05-06T08:44:37.749Z"
+  },
+  {
+    "presetId": "SP05-074",
+    "presetName": "Your Name (Makoto Shinkai)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "8. Studio Masterpieces",
+    "error": "Job 9adfd9a3-050c-462b-99cd-fcd854724df0 status needs_review",
+    "failedAt": "2026-05-06T15:52:23.473Z"
+  },
+  {
+    "presetId": "SP05-064",
+    "presetName": "Vinland Saga",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "7. Dark Fantasy & Seinen",
+    "error": "Job f3934969-7d82-41b8-ab19-7e4512dbac1b ended as cancelled: Interrupted to replace recipe cards with halftone illustration set",
+    "failedAt": "2026-05-06T16:30:36.590Z"
   }
 ]

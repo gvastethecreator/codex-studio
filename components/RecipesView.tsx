@@ -31,7 +31,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Palette,
         buttonText: 'Open Presets',
         buttonIcon: Sparkles,
-        bgImage: new URL('./recipes/styles/category-bases/pack_01__portrait_styles.png', import.meta.url).href,
+        bgImage: new URL('./recipes/defaults/recipe-styles.png', import.meta.url).href,
         accentColor: 'purple'
     },
     {
@@ -43,7 +43,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Wand2,
         buttonText: 'Open Tool',
         buttonIcon: Sparkles,
-        bgImage: new URL('./recipes/styles/category-bases/pack_06__traditional_painting.png', import.meta.url).href, // Local style-reference base
+        bgImage: new URL('./recipes/defaults/recipe-remaster.png', import.meta.url).href,
         accentColor: 'amber'
     },
     {
@@ -55,7 +55,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Video,
         buttonText: 'Open Viewfinder',
         buttonIcon: Film,
-        bgImage: new URL('./recipes/styles/previews/pack_01_camera_types.png', import.meta.url).href,
+        bgImage: new URL('./recipes/defaults/recipe-camera.png', import.meta.url).href,
         accentColor: 'cyan'
     },
     {
@@ -67,7 +67,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Clapperboard,
         buttonText: 'Open Creator',
         buttonIcon: Film,
-        bgImage: new URL('./recipes/styles/category-bases/pack_02__film_genres.png', import.meta.url).href,
+        bgImage: new URL('./recipes/defaults/recipe-cinematic.png', import.meta.url).href,
         accentColor: 'rose'
     },
     {
@@ -79,7 +79,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Hourglass,
         buttonText: 'Open Timeline',
         buttonIcon: Clock,
-        bgImage: new URL('./recipes/styles/category-bases/pack_03__lighting_and_atmosphere.png', import.meta.url).href,
+        bgImage: new URL('./recipes/defaults/recipe-timeline.png', import.meta.url).href,
         accentColor: 'teal'
     },
     {
@@ -91,7 +91,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: Grid3X3,
         buttonText: 'Configure Grid',
         buttonIcon: ArrowRight,
-        bgImage: new URL('./recipes/styles/category-bases/pack_08__subcultures.png', import.meta.url).href,
+        bgImage: new URL('./recipes/defaults/recipe-spritesheet.png', import.meta.url).href,
         accentColor: 'emerald'
     },
     {
@@ -103,7 +103,7 @@ const RECIPES: RecipeDef[] = [
         tagIcon: User,
         buttonText: 'Open Designer',
         buttonIcon: Users,
-        bgImage: new URL('./recipes/styles/category-bases/pack_05__studio_masterpieces.png', import.meta.url).href,
+        bgImage: new URL('./recipes/defaults/recipe-character.png', import.meta.url).href,
         accentColor: 'indigo'
     }
 ];
