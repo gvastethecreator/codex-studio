@@ -212,3 +212,23 @@ Review: PENDING
 - `pack_04__concept_art`: KEEP. Strong production-design base with character, environment, and props.
 - `pack_04__editorial_and_poster`: KEEP. Graphic poster-like composition with broad fields and figure.
 - `pack_04__ink_and_print`: KEEP. Printmaking studio scene with tools, paper, and high texture.
+- `pack_05__70s_and_80s_retro_anime`: KEEP. Retro anime character/environment base with older adventure proportions and cel-era mood.
+- `pack_05__90s_golden_era`: KEEP. Strong 90s action/adventure base with character, city, dramatic sunset, and broad anime treatment space.
+- `pack_05__2000s_classics`: KEEP. Action fantasy base with early-2000s anime energy and readable environment.
+- `pack_05__modern_shonen_and_action`: KEEP after manual regeneration. Dynamic action arena base with protagonist, energy, debris, and large-scale threat cues.
+- `pack_05__classic_and_modern_shojo`: KEEP. Shojo base with ornate fashion, floral/interior setting, and soft romantic composition.
+- `pack_05__mecha_and_cyberpunk`: KEEP. Dark mecha/cyberpunk base with pilot, machine scale, and neon/mechanical context.
+- `pack_05__dark_fantasy_and_seinen`: KEEP. Dark fantasy base with mature tone, armor, forest, and horror/seinen atmosphere.
+- `pack_05__studio_masterpieces`: KEEP. Scenic anime landscape base with quiet character and environmental richness.
+- `pack_05__slice_of_life_and_moe`: KEEP. Domestic/music room base with everyday warmth and soft character focus.
+- `pack_05__isekai_and_high_fantasy`: KEEP. Fantasy portal/castle base with adventure cues and magical environment.
+- `pack_06__traditional_painting`: KEEP. Painter studio base with canvas, palette, pigments, and natural light.
+- `pack_06__drawing_and_sketching`: KEEP. Drawing/sculpture studio base with bust, pencils, paper, and tonal surfaces.
+- `pack_06__printmaking`: KEEP. Printmaking workshop base with press, paper, ink, tools, and textured materials.
+- `pack_06__digital_art`: KEEP. Digital-art city/character base with stylized but broad futuristic composition.
+- `pack_06__mixed_media`: KEEP. Mixed-media workspace base with collage, fabric, paint, paper, and objects.
+- `pack_07__interior_design`: KEEP. Good interior base with furniture, plants, materials, and natural light.
+- `pack_07__architectural_styles`: KEEP. Clean architectural space with strong structural geometry and material surfaces.
+- `pack_07__environment`: KEEP. Interior/environment corridor with depth, vegetation, weathered materials, and atmosphere.
+- `pack_07__landscape_architecture`: KEEP. Strong landscape architecture base with garden, paths, water, and city backdrop.
+- `pack_07__fantasy_architecture`: KEEP. Rich fantasy architectural interior with arches, scale, props, and vertical depth.

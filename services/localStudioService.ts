@@ -1,9 +1,9 @@
 import type { Asset, CreateJobRequest, HealthResponse, Job, Project, SystemLog } from '../packages/shared/src';
-
-const API_BASE = 'http://localhost:4317';
+import { resolveStudioApiBase } from './studioRuntime';
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
-  const response = await fetch(`${API_BASE}${path}`, {
+  const apiBase = resolveStudioApiBase();
+  const response = await fetch(`${apiBase}${path}`, {
     headers: { 'Content-Type': 'application/json', ...(init?.headers || {}) },
     ...init,
   });
@@ -16,8 +16,12 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   return response.json() as Promise<T>;
 }
 
+export function getStudioApiBase() {
+  return resolveStudioApiBase();
+}
+
 export function toStudioAssetUrl(publicUrl: string) {
-  return `${API_BASE}${publicUrl}`;
+  return `${resolveStudioApiBase()}${publicUrl}`;
 }
 
 export async function listProjects() {
@@ -26,6 +30,12 @@ export async function listProjects() {
 
 export async function getStudioHealth() {
   return request<HealthResponse>('/api/health');
+}
+
+export async function startStudioAppServer() {
+  return request<{ running: boolean; wsUrl: string }>('/api/app-server/start', {
+    method: 'POST',
+  });
 }
 
 export async function createStudioJob(body: CreateJobRequest) {

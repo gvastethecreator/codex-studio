@@ -9,6 +9,7 @@
 - **Codex Turn**: One app-server turn started by the backend to execute image generation through the local Codex session.
 - **Local Studio Sync**: Frontend module that imports Local Assets into Visual Batches and mirrors Persistent Jobs and backend logs into the UI.
 - **Local Generation Run**: Frontend module that hides the Persistent Job choreography needed to produce a Visual Batch from one image generation request.
+- **Studio Runtime**: Frontend runtime adapter that resolves how the UI reaches the local backend. In the current web flow it defaults to `http://localhost:4317`; future desktop adapters can inject a different API base without rewriting the renderer.
 
 ## Architectural Decisions
 

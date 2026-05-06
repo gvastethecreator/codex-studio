@@ -2,7 +2,18 @@
   "name": "codex-image-studio",
   "private": true,
   "version": "0.0.0",
+  "description": "Studio local-first para generar y administrar imagenes con Codex/ChatGPT mediante codex app-server.",
+  "license": "MIT",
   "type": "module",
+  "keywords": [
+    "codex",
+    "chatgpt",
+    "image-generation",
+    "local-first",
+    "react",
+    "bun",
+    "hono"
+  ],
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -11,39 +22,42 @@
     "dev": "bun run scripts/dev.ts",
     "dev:ui": "vite --config vite.config.ts",
     "dev:server": "bun apps/local-server/src/index.ts",
+    "dev:electron": "bun run scripts/dev-electron.ts",
     "studio:init": "bun run scripts/studio-init.ts",
     "build": "bun run build:ui && bun run build:server",
     "build:ui": "vite build --config vite.config.ts",
     "build:server": "tsc --noEmit -p apps/local-server/tsconfig.json",
     "check": "tsc --noEmit",
     "preview": "vite preview",
+    "preview:electron": "bun run scripts/preview-electron.ts",
     "lint": "bun run check"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.1",
-    "@types/three": "^0.183.1",
+    "@tailwindcss/vite": "^4.2.4",
+    "@types/three": "^0.184.0",
     "clsx": "^2.1.1",
     "file-saver": "^2.0.5",
-    "hono": "^4.10.7",
+    "hono": "^4.12.17",
     "js-yaml": "^4.1.1",
     "jszip": "^3.10.1",
-    "lucide-react": "^0.417.0",
-    "motion": "12.0.0",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "lucide-react": "^1.14.0",
+    "motion": "12.38.0",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
     "tailwind-merge": "^3.5.0",
-    "tailwindcss": "^4.2.1",
-    "three": "^0.183.1"
+    "tailwindcss": "^4.2.4",
+    "three": "^0.184.0"
   },
   "devDependencies": {
-    "@types/bun": "^1.3.4",
+    "@types/bun": "^1.3.13",
     "@types/file-saver": "^2.0.7",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.14.0",
+    "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.2",
-    "typescript": "~5.8.2",
-    "vite": "^7.3.0"
+    "@vitejs/plugin-react": "^6.0.1",
+    "electron": "^41.5.0",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.10"
   }
 }

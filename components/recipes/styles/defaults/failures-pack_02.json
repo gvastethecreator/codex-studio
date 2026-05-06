@@ -1,0 +1,20 @@
+[
+  {
+    "presetId": "SP02-009",
+    "presetName": "Kaiju Movie (Suitmation)",
+    "packId": "pack_02",
+    "packName": "Cinematic & Media",
+    "category": "1. Film Genres",
+    "error": "Job 4c9294d9-4814-4bf4-bf45-adff6f497352 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T01:20:10.339Z"
+  },
+  {
+    "presetId": "SP02-012",
+    "presetName": "Wes Anderson Style",
+    "packId": "pack_02",
+    "packName": "Cinematic & Media",
+    "category": "1. Film Genres",
+    "error": "Job be850619-445d-4dc5-8f43-ed95d255bde2 needs review; no image was auto-discovered.",
+    "failedAt": "2026-05-06T01:39:27.363Z"
+  }
+]

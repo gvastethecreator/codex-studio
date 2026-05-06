@@ -1,0 +1,10 @@
+[
+  {
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "4. Modern Shonen & Action",
+    "key": "pack_05__modern_shonen_and_action",
+    "error": "Job c739d76b-399e-4d81-b88d-1055c7161e13 ended as failed: Timed out waiting for Codex notification",
+    "failedAt": "2026-05-05T21:00:56.210Z"
+  }
+]

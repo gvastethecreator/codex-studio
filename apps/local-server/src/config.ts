@@ -6,8 +6,16 @@ const DEFAULT_LIBRARY_DIR = 'D:\\AI-Studio-Library';
 const DEFAULT_SERVER_PORT = 4317;
 const DEFAULT_CODEX_WS_PORT = 4318;
 
+export function getEnvLocalPath() {
+  return path.resolve(process.cwd(), '.env.local');
+}
+
+export function hasEnvLocalFile() {
+  return existsSync(getEnvLocalPath());
+}
+
 function loadDotEnvLocal() {
-  const envPath = path.resolve(process.cwd(), '.env.local');
+  const envPath = getEnvLocalPath();
   if (!existsSync(envPath)) return;
 
   const lines = readFileSync(envPath, 'utf8').split(/\r?\n/);

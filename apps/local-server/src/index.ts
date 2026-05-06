@@ -3,7 +3,7 @@ import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
-import { getCodexWsUrl, getSettings } from './config';
+import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from './config';
 import { resolveCodexInvocation } from './codexExecutable';
 import {
   createJob,
@@ -17,10 +17,10 @@ import {
 } from './db';
 import { publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
-import { resolveLibraryPath } from './library';
+import { inspectLibrary, resolveLibraryPath } from './library';
 import { log } from './logger';
 import { enqueueJob } from './worker';
-import { ensureAppServer, isAppServerRunning } from './codexClient';
+import { ensureAppServer, getAppServerDiagnostics, isAppServerRunning } from './codexClient';
 import type { CreateJobRequest } from '../../../packages/shared/src';
 
 const initResult = initStudio();
@@ -29,25 +29,70 @@ const app = new Hono();
 app.use('*', cors());
 
 app.get('/api/health', (c) => {
+  const settings = getSettings();
+  const library = inspectLibrary();
   const [command, ...args] = resolveCodexInvocation(['--version']);
   const codex = spawnSync(command, args, { encoding: 'utf8' });
+  const codexAvailable = codex.status === 0;
+  const appServerDiagnostics = getAppServerDiagnostics();
+  const libraryReady = library.exists && library.writable && library.missingFolders.length === 0;
+  const appServerRunning = isAppServerRunning();
+
   return c.json({
     ok: true,
-    libraryDir: getSettings().libraryDir,
+    checkedAt: new Date().toISOString(),
+    libraryDir: settings.libraryDir,
+    runtime: {
+      platform: process.platform,
+      arch: process.arch,
+      bunVersion: Bun.version,
+      nodeVersion: process.versions.node,
+      cwd: process.cwd(),
+      envLocalPath: getEnvLocalPath(),
+      envLocalPresent: hasEnvLocalFile(),
+    },
+    config: {
+      serverPort: settings.serverPort,
+      codexWsPort: settings.codexWsPort,
+    },
+    library: {
+      exists: library.exists,
+      writable: library.writable,
+      readmePresent: library.readmePresent,
+      missingFolders: library.missingFolders,
+    },
     codexCli: {
-      available: codex.status === 0,
-      version: codex.status === 0 ? codex.stdout.trim() : null,
+      available: codexAvailable,
+      version: codexAvailable ? codex.stdout.trim() : null,
+      command: [command, ...args].join(' '),
     },
     appServer: {
-      running: isAppServerRunning(),
+      running: appServerRunning,
       wsUrl: getCodexWsUrl(),
+      pid: appServerDiagnostics.pid,
+      lastExitCode: appServerDiagnostics.lastExitCode,
+      lastExitAt: appServerDiagnostics.lastExitAt,
+      lastInvocation: appServerDiagnostics.lastInvocation?.join(' ') ?? null,
+      lastStartAt: appServerDiagnostics.lastStartAt,
+      lastStartError: appServerDiagnostics.lastStartError,
+    },
+    checks: {
+      libraryReady,
+      codexReady: codexAvailable,
+      onboardingReady: libraryReady && codexAvailable && appServerRunning,
     },
   });
 });
 
 app.post('/api/app-server/start', (c) => {
   ensureAppServer();
-  return c.json({ running: isAppServerRunning(), wsUrl: getCodexWsUrl() });
+  const diagnostics = getAppServerDiagnostics();
+  return c.json({
+    running: isAppServerRunning(),
+    wsUrl: getCodexWsUrl(),
+    pid: diagnostics.pid,
+    lastStartError: diagnostics.lastStartError,
+  });
 });
 
 app.get('/api/settings', (c) => c.json(getSettings()));
