@@ -1062,5 +1062,61 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T06:15:44.685Z"
+  },
+  {
+    "presetId": "SP06-077",
+    "presetName": "Coffee Painting",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "5. Mixed Media",
+    "file": "components/recipes/styles/defaults/SP06-077.png",
+    "jobId": "9fd98451-5a5f-4005-8bc8-ff252103fad9",
+    "sourceAsset": "components/recipes/styles/defaults/SP06-077.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:19:13.543Z"
+  },
+  {
+    "presetId": "SP06-078",
+    "presetName": "Gold Leaf Art",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "5. Mixed Media",
+    "file": "components/recipes/styles/defaults/SP06-078.png",
+    "jobId": "8980d584-1d68-446f-94e1-e011e2269b0a",
+    "sourceAsset": "components/recipes/styles/defaults/SP06-078.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:20:59.675Z"
+  },
+  {
+    "presetId": "SP06-079",
+    "presetName": "Paper Marbling",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "5. Mixed Media",
+    "file": "components/recipes/styles/defaults/SP06-079.png",
+    "jobId": "1e2e23ed-e012-4b81-b424-49bae782a5da",
+    "sourceAsset": "components/recipes/styles/defaults/SP06-079.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:22:40.151Z"
+  },
+  {
+    "presetId": "SP06-080",
+    "presetName": "Stencil Art",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "5. Mixed Media",
+    "file": "components/recipes/styles/defaults/SP06-080.png",
+    "jobId": "b6bc9d73-3dba-47b1-9a9f-8c8327796475",
+    "sourceAsset": "components/recipes/styles/defaults/SP06-080.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:24:08.163Z"
   }
 ]

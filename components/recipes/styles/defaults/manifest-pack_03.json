@@ -1090,5 +1090,33 @@
     "model": "gpt-5.4",
     "reasoningEffort": "low",
     "generatedAt": "2026-05-06T06:16:35.324Z"
+  },
+  {
+    "presetId": "SP03-079",
+    "presetName": "Bronze Statue",
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "5. Applications",
+    "file": "components/recipes/styles/defaults/SP03-079.png",
+    "jobId": "d0c85369-6037-412d-a822-43b2405c1a90",
+    "sourceAsset": "components/recipes/styles/defaults/SP03-079.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:18:24.461Z"
+  },
+  {
+    "presetId": "SP03-080",
+    "presetName": "Marble Statue",
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "5. Applications",
+    "file": "components/recipes/styles/defaults/SP03-080.png",
+    "jobId": "ccf70aed-2f66-41aa-a361-dbd8fffcf9fb",
+    "sourceAsset": "components/recipes/styles/defaults/SP03-080.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T06:20:07.775Z"
   }
 ]

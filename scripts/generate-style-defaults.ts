@@ -179,7 +179,7 @@ const GENERIC_SCENE_ANCHORS = [
   "Use a sheltered transit platform with structural beams, empty seating, reflected light, and a vanishing-point background.",
   "Build the scene around a workshop table with clamps, small tools, dust motes, and a bright opening in the rear plane.",
   "Place the subject in a canyon-like passage with textured walls, drifting haze, and a narrow vertical strip of sky.",
-  "Use a library mezzanine with railings, stacked volumes without readable text, warm pools of light, and deep perspective.",
+  "Use an atrium mezzanine with railings, geometric wall panels, warm pools of light, and deep perspective.",
 ];
 
 const GENERIC_PRESET_MOTIFS = [
@@ -227,6 +227,8 @@ Fit pack "${pack.name}" and category "${category}". Finished style-card image, n
 function buildStylePrompt(pack: StylePack, preset: StylePresetDef) {
   const category = sanitizeCategory(preset.category);
   const negative = preset.negativePrompt ? `\n\nAvoid:\n${preset.negativePrompt}` : "";
+  const allowsBooks = /book|library|textbook|comic book|storybook/i.test(`${preset.name} ${category} ${valueOf(preset.style, "aesthetic", "key_features")}`);
+  const avoidRepeatedLibrary = allowsBooks ? "" : " Avoid books, bookshelves, libraries, reading rooms, archives, and stacked volumes.";
 
   return `Generate one portrait default style-card image.
 TARGET STYLE: ${preset.name.toUpperCase()}
@@ -238,7 +240,7 @@ ${categoryBasePrompt(pack, category)}
 
 Style DNA: aesthetic=${valueOf(preset.style, "aesthetic")}; subject=${valueOf(preset.style, "subject_treatment", "form_and_line")}; color=${valueOf(preset.style, "color_and_tone", "color_palette")}; light=${valueOf(preset.style, "lighting_and_shadow", "lighting_setup")}; texture=${valueOf(preset.style, "texture_and_material", "material_texture")}; camera=${valueOf(preset.style, "camera_and_composition", "spatial_distortion")}; mood=${valueOf(preset.style, "atmosphere_and_mood", "atmosphere")}; render=${valueOf(preset.style, "rendering_and_quality", "render_quality")}; features=${valueOf(preset.style, "key_features")}.
 
-Make it immediately recognizable as "${preset.name}". Keep the anchor; apply the style through rendering, mood, materials, camera, and treatment. Distinct motif to avoid cross-pack convergence: ${presetMotif(preset)}. No franchise, brand, character, logo, or copyrighted identity. Output only the image, 1024x1536 portrait.${negative}`;
+Make it immediately recognizable as "${preset.name}". Keep the anchor; apply the style through rendering, mood, materials, camera, and treatment. Distinct motif to avoid cross-pack convergence: ${presetMotif(preset)}. No franchise, brand, character, logo, or copyrighted identity.${avoidRepeatedLibrary} Output only the image, 1024x1536 portrait.${negative}`;
 }
 
 async function exists(filePath: string) {
