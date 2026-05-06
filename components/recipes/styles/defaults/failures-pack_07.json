@@ -1,0 +1,11 @@
+[
+  {
+    "presetId": "SP07-028",
+    "presetName": "Sustainable Green",
+    "packId": "pack_07",
+    "packName": "Architecture & Interior",
+    "category": "2. Architectural Styles",
+    "error": "Job a69e33fc-e84c-4f0d-a0c0-12f89ac4c01b ended as cancelled: Cancelled during server cutover to persistent category threads.",
+    "failedAt": "2026-05-06T03:17:13.788Z"
+  }
+]

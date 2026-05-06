@@ -9,6 +9,7 @@ import {
   createJob,
   createProject,
   ensureDefaultProject,
+  listRecoverableJobs,
   listAssets,
   listJobs,
   listLogs,
@@ -19,7 +20,7 @@ import { publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
 import { inspectLibrary, resolveLibraryPath } from './library';
 import { log } from './logger';
-import { enqueueJob } from './worker';
+import { enqueueJob, getWorkerStatus } from './worker';
 import { ensureAppServer, getAppServerDiagnostics, isAppServerRunning } from './codexClient';
 import type { CreateJobRequest } from '../../../packages/shared/src';
 
@@ -81,6 +82,7 @@ app.get('/api/health', (c) => {
       codexReady: codexAvailable,
       onboardingReady: libraryReady && codexAvailable && appServerRunning,
     },
+    worker: getWorkerStatus(),
   });
 });
 
@@ -221,3 +223,11 @@ Bun.serve({
 });
 
 console.log(`Codex Image Studio local-server listening on http://localhost:${port}`);
+
+const recoverableJobs = listRecoverableJobs();
+for (const job of recoverableJobs) {
+  enqueueJob(job);
+}
+if (recoverableJobs.length > 0) {
+  log('info', 'worker', `Recovered ${recoverableJobs.length} queued/running job(s) from the local database.`);
+}

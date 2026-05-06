@@ -1,4 +1,4 @@
-import { copyFile, mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { Asset, Job, Project } from "../packages/shared/src";
 import {
@@ -25,6 +25,7 @@ interface ManifestEntry {
 
 const manifestPath = path.join(categoryBasesDir, "manifest.json");
 const failuresPath = path.join(categoryBasesDir, "failures.json");
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || "D:\\AI-Studio-Library";
 
 async function exists(filePath: string) {
   try {
@@ -33,6 +34,25 @@ async function exists(filePath: string) {
   } catch {
     return false;
   }
+}
+
+async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
+  const transcriptPath = path.join(libraryDir, "transcripts", jobId, "events.jsonl");
+  const codexHome = process.env.CODEX_HOME || path.join(process.env.USERPROFILE || "C:\\Users\\cristian", ".codex");
+  const transcript = await readFile(transcriptPath, "utf8").catch(() => "");
+  for (const line of transcript.split(/\r?\n/)) {
+    if (!line.trim()) continue;
+    try {
+      const event = JSON.parse(line) as any;
+      const item = event.params?.item;
+      if (item?.type !== "imageGeneration" || !item.id || !event.params?.threadId) continue;
+      await rm(path.join(codexHome, "generated_images", event.params.threadId, `${item.id}.png`), { force: true }).catch(() => {});
+    } catch {
+      // Ignore malformed transcript lines; cleanup is best-effort after the repo copy succeeds.
+    }
+  }
+  await rm(sourceAssetPath, { force: true }).catch(() => {});
+  await rm(path.join(libraryDir, "transcripts", jobId), { recursive: true, force: true }).catch(() => {});
 }
 
 async function waitForJob(jobId: string) {
@@ -158,14 +178,16 @@ for (const pack of packs) {
       if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
 
       await copyFile(asset.filePath, destination);
+      await cleanupExternalJobArtifacts(created.id, asset.filePath);
+      const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
       manifestByKey.set(key, {
         packId: pack.id,
         packName: pack.name,
         category,
         key,
-        file: path.relative(rootDir, destination).replaceAll(path.sep, "/"),
+        file: repoFile,
         jobId: created.id,
-        sourceAsset: asset.filePath,
+        sourceAsset: repoFile,
         generatedAt: new Date().toISOString(),
       });
       await saveManifest(Array.from(manifestByKey.values()));

@@ -48,6 +48,14 @@ async function exists(filePath: string) {
   }
 }
 
+async function ensureRepoDefaultCopy(sourcePath: string, destinationPath: string) {
+  await copyFile(sourcePath, destinationPath);
+  const destinationStats = await stat(destinationPath).catch(() => null);
+  if (!destinationStats || destinationStats.size <= 0) {
+    throw new Error(`Default repo copy failed for ${path.basename(destinationPath)} from ${sourcePath}`);
+  }
+}
+
 async function loadManifest(packId: string) {
   try {
     const parsed = JSON.parse(await readFile(manifestPathForPack(packId), "utf8")) as ManifestEntry[] | ManifestEntry;
@@ -63,24 +71,42 @@ async function saveManifest(packId: string, entries: ManifestEntry[]) {
 }
 
 function buildPresetIndex(packs: StylePack[]) {
-  const byTarget = new Map<string, { pack: StylePack; preset: StylePresetDef }>();
+  const byTarget = new Map<string, { pack: StylePack; preset: StylePresetDef }[]>();
+  const byPackCategoryTarget = new Map<string, { pack: StylePack; preset: StylePresetDef }>();
   const byName = new Map<string, { pack: StylePack; preset: StylePresetDef }[]>();
 
   for (const pack of packs) {
     for (const preset of pack.presets) {
-      byTarget.set(preset.name.toUpperCase(), { pack, preset });
+      const target = preset.name.toUpperCase();
+      const category = sanitizeCategory(preset.category).toLowerCase();
+      const packName = pack.name.toLowerCase();
+      const targetList = byTarget.get(target) || [];
+      targetList.push({ pack, preset });
+      byTarget.set(target, targetList);
+      byPackCategoryTarget.set(`${packName}::${category}::${target}`, { pack, preset });
       const list = byName.get(preset.name) || [];
       list.push({ pack, preset });
       byName.set(preset.name, list);
     }
   }
 
-  return { byTarget, byName };
+  return { byTarget, byPackCategoryTarget, byName };
 }
 
 function resolvePreset(row: JobAssetRow, index: ReturnType<typeof buildPresetIndex>) {
   const target = row.final_prompt_used.match(/TARGET STYLE:\s*([^\n]+)/i)?.[1]?.trim().toUpperCase();
-  if (target && index.byTarget.has(target)) return index.byTarget.get(target);
+  const packName = row.final_prompt_used.match(/^PACK:\s*(.+)$/im)?.[1]?.trim().toLowerCase();
+  const category = row.final_prompt_used.match(/^CATEGORY:\s*(.+)$/im)?.[1]?.trim().toLowerCase();
+
+  if (target && packName && category) {
+    const exact = index.byPackCategoryTarget.get(`${packName}::${category}::${target}`);
+    if (exact) return exact;
+  }
+
+  if (target) {
+    const matches = index.byTarget.get(target);
+    if (matches?.length === 1) return matches[0];
+  }
 
   const explicit = row.final_prompt_used.match(/Make the result immediately recognizable as "([^"]+)"/i)?.[1]?.trim();
   if (explicit) {
@@ -148,15 +174,16 @@ for (const { pack, preset, row } of latestByPreset.values()) {
   if (await exists(destination)) {
     skippedExisting += 1;
     if (!manifest.has(preset.id)) {
+      const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
       manifest.set(preset.id, {
         presetId: preset.id,
         presetName: preset.name,
         packId: pack.id,
         packName: pack.name,
         category: sanitizeCategory(preset.category),
-        file: path.relative(rootDir, destination).replaceAll(path.sep, "/"),
+        file: repoFile,
         jobId: row.job_id,
-        sourceAsset: row.file_path,
+        sourceAsset: repoFile,
         generationMode: "text-to-image",
         model: reconciledModel,
         reasoningEffort: reconciledReasoningEffort,
@@ -167,16 +194,17 @@ for (const { pack, preset, row } of latestByPreset.values()) {
   }
 
   console.log(`[copy] ${preset.id} ${pack.id} ${preset.name} <- ${path.basename(row.file_path)}`);
-  if (!dryRun) await copyFile(row.file_path, destination);
+  if (!dryRun) await ensureRepoDefaultCopy(row.file_path, destination);
+  const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
   manifest.set(preset.id, {
     presetId: preset.id,
     presetName: preset.name,
     packId: pack.id,
     packName: pack.name,
     category: sanitizeCategory(preset.category),
-    file: path.relative(rootDir, destination).replaceAll(path.sep, "/"),
+    file: repoFile,
     jobId: row.job_id,
-    sourceAsset: row.file_path,
+    sourceAsset: repoFile,
     generationMode: "text-to-image",
     model: reconciledModel,
     reasoningEffort: reconciledReasoningEffort,

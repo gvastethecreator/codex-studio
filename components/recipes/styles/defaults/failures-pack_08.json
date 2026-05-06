@@ -1,0 +1,11 @@
+[
+  {
+    "presetId": "SP08-026",
+    "presetName": "Biker Gang",
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
+    "category": "2. Subcultures",
+    "error": "Job 84cf608c-ecb9-4bd0-92a3-ce5c15c4b472 ended as cancelled: Cancelled during server cutover to persistent category threads.",
+    "failedAt": "2026-05-06T03:17:13.702Z"
+  }
+]

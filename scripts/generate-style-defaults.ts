@@ -21,6 +21,7 @@ interface ManifestEntry {
 
 const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.4";
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || "low";
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || "D:\\AI-Studio-Library";
 
 const CATEGORY_BASE_PROMPTS: Record<string, string> = {
   pack_01__portrait_styles:
@@ -155,11 +156,74 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     "A close-up or miniature-scale vertical scene with one tiny or magnified subject, strong scale cues, macro detail, shallow depth, texture, and readable environment context.",
 };
 
+const CATEGORY_SCENE_ANCHORS: Record<string, string> = {
+  pack_01__lighting:
+    "Place the subject on a quiet rooftop walkway after recent rain, with distant skyline bokeh, puddle reflections, a waist-high concrete ledge, and one practical lamp in frame.",
+  pack_02__lighting_and_atmosphere:
+    "Place the subject in a narrow motel room with venetian blinds, a bedside practical lamp, a slightly open bathroom door, colored spill from outside, and cinematic negative space.",
+  pack_03__3d_styles:
+    "Build the scene as a clean display diorama on a white plinth with modular blocks, stepped platforms, and a sculptural silhouette that reads immediately as a designed 3D object.",
+  pack_06__digital_art:
+    "Stage the subject inside a polished artist-workstation vignette with layered display panes, a lit desk surface, collectible props, and a strong focal object that feels made for digital painting.",
+};
+
+const GENERIC_SCENE_ANCHORS = [
+  "Use a window-side corner with a bench, one hanging plant, and a strong diagonal light wedge crossing the floor.",
+  "Stage the scene beside a worn staircase landing with a handrail, a narrow side table, and layered depth behind the subject.",
+  "Use a market-adjacent alley with stacked crates, fabric awnings, damp pavement, and a bright background opening.",
+  "Place the focal subject near a studio cyclorama with one stool, a folded fabric drop, and a hard rim light from camera left.",
+  "Build the composition around a tiled courtyard with one fountain edge, potted greenery, and a sunlit archway behind.",
+  "Use a museum-gallery corner with a pedestal, polished floor reflection, and a tall shadow wall behind the subject.",
+  "Stage the image inside a compact observatory-like room with circular framing, metal rails, and a cool backlight.",
+  "Place the subject at the edge of a greenhouse aisle with condensation, glass structure, and layered foliage depth.",
+  "Use a sheltered transit platform with structural beams, empty seating, reflected light, and a vanishing-point background.",
+  "Build the scene around a workshop table with clamps, small tools, dust motes, and a bright opening in the rear plane.",
+  "Place the subject in a canyon-like passage with textured walls, drifting haze, and a narrow vertical strip of sky.",
+  "Use a library mezzanine with railings, stacked volumes without readable text, warm pools of light, and deep perspective.",
+];
+
+const GENERIC_PRESET_MOTIFS = [
+  "Include a brass compass-like object as a recurring prop.",
+  "Include a folded amber cloth accent near the focal area.",
+  "Include a cluster of suspended glass droplets catching light.",
+  "Include a slim red lacquer object on a nearby surface.",
+  "Include a carved stone fragment with chipped edges.",
+  "Include a teal ceramic vessel with a distinctive silhouette.",
+  "Include a strip of patterned tape or trim integrated into the set.",
+  "Include a single triangular light opening in the background.",
+  "Include a ring-shaped metallic element near the subject.",
+  "Include a weathered leather notebook-sized object without text.",
+  "Include a pale paper fan or folded sheet shape in the scene.",
+  "Include a dark cobalt accent object that contrasts with the rest of the palette.",
+];
+
+function hashString(value: string) {
+  let hash = 0;
+  for (let index = 0; index < value.length; index += 1) {
+    hash = (hash * 31 + value.charCodeAt(index)) >>> 0;
+  }
+  return hash;
+}
+
+function categorySceneAnchor(pack: StylePack, category: string) {
+  const key = styleCategoryImageKey(pack.id, category);
+  const explicit = CATEGORY_SCENE_ANCHORS[key];
+  if (explicit) return explicit;
+  return GENERIC_SCENE_ANCHORS[hashString(key) % GENERIC_SCENE_ANCHORS.length];
+}
+
+function presetMotif(preset: StylePresetDef) {
+  return GENERIC_PRESET_MOTIFS[hashString(`${preset.id}:${preset.name}`) % GENERIC_PRESET_MOTIFS.length];
+}
+
 function categoryBasePrompt(pack: StylePack, category: string) {
   const key = styleCategoryImageKey(pack.id, category);
   const base = CATEGORY_BASE_PROMPTS[key] || "A vertical scene with one clear original subject, foreground detail, midground context, background depth, varied materials, and no text.";
   return `Create this base subject:
 ${base}
+
+Required scene anchor:
+${categorySceneAnchor(pack, category)}
 
 The subject and scene must fit the pack "${pack.name}" and the category "${category}".
 Use a vertical 2:3 composition designed for a 3:4 preset card crop.
@@ -198,6 +262,8 @@ ${categoryBasePrompt(pack, category)}
 
 [EXECUTION RULES]
 Make the result immediately recognizable as "${preset.name}".
+Keep the required scene anchor intact; change the rendering language, mood, materials, camera behavior, and treatment through the style rather than replacing the subject with a generic cliché.
+Add this preset-specific motif so repeated style names in different packs do not converge to the same card: ${presetMotif(preset)}
 Do not copy a single franchise, brand, character, logo, or copyrighted identity.
 Portrait orientation, 1024x1536 output target, composed for a vertical card.
 Do not output explanations. Just the image.
@@ -214,6 +280,33 @@ async function exists(filePath: string) {
   } catch {
     return false;
   }
+}
+
+async function ensureRepoDefaultCopy(sourcePath: string, destinationPath: string) {
+  await copyFile(sourcePath, destinationPath);
+  const destinationStats = await stat(destinationPath).catch(() => null);
+  if (!destinationStats || destinationStats.size <= 0) {
+    throw new Error(`Default repo copy failed for ${path.basename(destinationPath)} from ${sourcePath}`);
+  }
+}
+
+async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
+  const transcriptPath = path.join(libraryDir, "transcripts", jobId, "events.jsonl");
+  const codexHome = process.env.CODEX_HOME || path.join(process.env.USERPROFILE || "C:\\Users\\cristian", ".codex");
+  const transcript = await readFile(transcriptPath, "utf8").catch(() => "");
+  for (const line of transcript.split(/\r?\n/)) {
+    if (!line.trim()) continue;
+    try {
+      const event = JSON.parse(line) as any;
+      const item = event.params?.item;
+      if (item?.type !== "imageGeneration" || !item.id || !event.params?.threadId) continue;
+      await rm(path.join(codexHome, "generated_images", event.params.threadId, `${item.id}.png`), { force: true }).catch(() => {});
+    } catch {
+      // Ignore malformed transcript lines; cleanup is best-effort after the repo copy succeeds.
+    }
+  }
+  await rm(sourceAssetPath, { force: true }).catch(() => {});
+  await rm(path.join(libraryDir, "transcripts", jobId), { recursive: true, force: true }).catch(() => {});
 }
 
 async function waitForJob(jobId: string) {
@@ -342,16 +435,18 @@ for (const pack of packs) {
       const asset = await newestAssetForJob(created.id);
       if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
 
-      await copyFile(asset.filePath, destination);
+      await ensureRepoDefaultCopy(asset.filePath, destination);
+      await cleanupExternalJobArtifacts(created.id, asset.filePath);
+      const repoFile = path.relative(rootDir, destination).replaceAll(path.sep, "/");
       manifestByPreset.set(preset.id, {
         presetId: preset.id,
         presetName: preset.name,
         packId: pack.id,
         packName: pack.name,
         category,
-        file: path.relative(rootDir, destination).replaceAll(path.sep, "/"),
+        file: repoFile,
         jobId: created.id,
-        sourceAsset: asset.filePath,
+        sourceAsset: repoFile,
         generationMode: "text-to-image",
         model: IMAGEGEN_MODEL,
         reasoningEffort: IMAGEGEN_REASONING_EFFORT,

@@ -1,0 +1,11 @@
+[
+  {
+    "presetId": "SP05-010",
+    "presetName": "Dragon Ball (Classic)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "1. 70s & 80s Retro Anime",
+    "error": "Job 06992d5a-148d-45d9-911a-445ce271719a ended as cancelled: Cancelled during server cutover to persistent category threads.",
+    "failedAt": "2026-05-06T03:17:13.720Z"
+  }
+]

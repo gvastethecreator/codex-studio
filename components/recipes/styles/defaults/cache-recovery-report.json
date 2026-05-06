@@ -1,0 +1,460 @@
+{
+  "generatedAt": "2026-05-06T03:59:22.378Z",
+  "jobs": 529,
+  "recoverablePresets": 362,
+  "copied": 2,
+  "skippedExisting": 360,
+  "refreshedManifest": 0,
+  "unresolved": [
+    {
+      "jobId": "ba195a0b-55f7-499d-a6bc-da82d9b260a2",
+      "status": "failed",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "5e3cc865-204a-4235-8a3c-fd5792d506d7",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "a5a92f99-014f-4332-a407-e96ddf17c5f3",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "4ff8a48f-68e9-440d-8d11-eb34a914e61d",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "3cb38dd7-cb12-4735-a868-035250c7514f",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "0709a07a-08d8-4564-aad8-fc0c3d1a5464",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "a4816aca-5ec1-49e8-b2f0-7328e26d2641",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "1f8f97a5-a751-4c57-be33-0e01f7087b3b",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "6c3553b5-23f1-4d3e-95cc-af19cf7211e6",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "eb3c7d0f-58db-4710-9403-844d76137aeb",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "3ba0c835-9919-4be0-8854-af83a387f280",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "d7790296-0308-45eb-a3ef-9fe3d88c6ab1",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "9bd7653a-66e7-466c-a9e3-3a40325fe3ba",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "339020bc-a7e8-4a93-826f-f5917c94274a",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "8f44dd22-2312-42e6-aca0-4320d0afe043",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "4e15db7e-9b83-40c9-b946-4d9416d9d906",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "b7e06d0d-13ee-4c2c-ad8b-ec6233d3d6dd",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "62675870-f8d3-4216-a852-9499d8a82414",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "a64a24c3-49f7-4ee4-8c69-cdd8864c98dd",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "d4194347-b14e-4410-a679-37ed7f5020f2",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "a7756cc5-0d12-4914-9ea9-fc3af5365237",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "a607f899-f7df-4b3f-aa99-f5a5e9eb9c8c",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "d630a4df-961b-46e2-8a9b-aae5531b2210",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "7b4bb46e-a260-4f86-8aed-906c8fce0e25",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "a2a47fd0-039b-4087-989d-fd5bca0911c2",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "b9da353b-7de8-4a9a-a0a3-381248d4bc2f",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "5ae27581-113c-4d5b-921b-91986159515d",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "a36b6960-594a-49bb-ba8d-12113d5714d9",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "513f1fa1-afca-40e9-a098-ee03c67b9c3d",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "bedfde38-53d4-4092-8dcf-d472e809d79e",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "be8e387c-c688-4b10-9223-6857d639f0c0",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "fcf8cef0-e71b-4210-8999-5a84d556385e",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "3e9e2cdb-2e61-4171-ba79-23bd749fb15c",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "ba3bf055-2bae-455b-81ac-5dcfcab8c417",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "eb7eb480-97b9-4bbc-8e08-abace2fbe9bd",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "469f8cdb-64e6-4ec6-a2d2-0b7d9abc060e",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "aae3464b-63cb-498b-bccf-fc79e84afeed",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "4c9294d9-4814-4bf4-bf45-adff6f497352",
+      "status": "needs_review",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "be850619-445d-4dc5-8f43-ed95d255bde2",
+      "status": "needs_review",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "e741740c-2c30-4d1a-99fc-5abc418fe3a5",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "c1d98064-1ae6-4fbd-8ab8-62f674b2ece1",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "1eff4c50-cb08-4697-8eec-7b0be1a4cafa",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "8399af9e-06ef-43e5-bd38-93d8e32a93bc",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "ad5669f3-7100-4bf6-bbcd-f6448bb810b3",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "e96e716d-89aa-4654-a749-c7f3f2696379",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "e929b740-661d-4bc4-913d-2b7337d9a655",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "cb69a583-7dbf-4a75-a101-b5e2c32ea5ad",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "445503b5-28ec-431a-9acc-824bf5935828",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "b730b4e4-b339-461c-8d19-340b1b9cc83a",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "84cf608c-ecb9-4bd0-92a3-ce5c15c4b472",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "b5a93e40-d486-4a23-bfd6-6b6a875c9f3e",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "8565d9da-4e5c-4681-8da0-dfd434709593",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "d360dd53-f0dd-4e7b-b46c-3f2916e903a8",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "a21ea091-83c4-49eb-a0d2-7105deede182",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "06992d5a-148d-45d9-911a-445ce271719a",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "381fbbea-5e32-4274-b8ea-9047bb9b46a1",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "a69e33fc-e84c-4f0d-a0c0-12f89ac4c01b",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "77b80370-7340-4d07-895b-4d1e2513bd57",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "b7008546-193a-4f8a-a9d2-679ea1345800",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "9b2ab9e3-6a12-4a10-81b7-b570a114a16c",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "f5e30b12-6adb-4acf-b6b9-e00dc33cbb09",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "10304ffa-66a7-4205-8c71-aace2696fde4",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "8f79d2d6-980c-4a77-912f-d5ded5d2a4f5",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "bee580f1-6bc0-4bb0-b742-32a1793538d0",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "433b95da-3e85-4614-af26-5491752bfab0",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "e77ab24d-1588-42b6-b3a8-2cd15bcd7ed5",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "4ebdf093-94fa-4cef-b4de-96e68a536cc9",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "41286d3a-20a8-4a14-a5f6-f94167fb9255",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "df9c45c8-7cf1-48a9-b8d4-e83c3c1b9ad8",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "5bbc3dba-2ba7-48ac-8dce-702351eae742",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "0f080345-fa34-4713-afe4-84ea6139638f",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "5db570a8-b69a-4895-9746-acc6e9b715ec",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "c0963cdc-6120-4a10-ae5a-73c48a8aeea3",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "d7a91b0f-c8aa-4315-8388-c406dfaacd51",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "6f8037da-f197-49e7-b0ee-c622aafc5bed",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "5f90b9fb-8415-4015-91da-67ce7b7dc7c4",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "3deaca24-6646-4af1-b9c3-31ec1ccd75c0",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "7c4d386f-20c3-4faf-848a-2cba3b07a812",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "c954f812-3798-4f32-b5b1-86373dd036c7",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "74fe605e-ce04-4399-9c35-730262472491",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "ebd1cea2-9289-4adb-a0bd-cca761c5b4b0",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "ffe1c3d1-7f69-47b7-951e-8e0021aad34e",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "9e489e19-2cd2-48eb-88e0-aebffcfbaf3e",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "74db210d-13c5-4e63-a9d6-039a374b09e5",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "9a5ca74a-99fe-4c9a-ba7d-c0ef809e6b1d",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "088a37a5-9583-4063-8c31-a59160a5e9d8",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "ef7fcd96-a9ae-45d8-95e3-58f8a3f4ee5d",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "67693cfa-edc6-4c30-8309-52e220468c1a",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "0a3255b8-5700-427a-a9f1-b69d506f2563",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    },
+    {
+      "jobId": "f7889bea-12a3-4839-a3b0-50d3d9af1b16",
+      "status": "cancelled",
+      "reason": "cache_image_not_found"
+    }
+  ]
+}

@@ -115,6 +115,15 @@ export function enqueueJob(job: Job) {
   queueMicrotask(processQueue);
 }
 
+export function getWorkerStatus() {
+  return {
+    maxConcurrentJobs,
+    activeWorkerCount,
+    queuedJobs: jobQueue.length,
+    trackedJobs: runningJobs.size,
+  };
+}
+
 async function processQueue() {
   while (activeWorkerCount < maxConcurrentJobs && jobQueue.length > 0) {
     const job = jobQueue.shift();
