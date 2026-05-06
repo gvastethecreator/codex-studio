@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { accessSync, constants, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings } from './config';
 
@@ -36,6 +36,31 @@ export function ensureLibrary() {
       'utf8',
     );
   }
+}
+
+export function inspectLibrary() {
+  const { libraryDir } = getSettings();
+  const readmePath = path.join(libraryDir, 'README.txt');
+  const exists = existsSync(libraryDir);
+  let writable = false;
+
+  if (exists) {
+    try {
+      accessSync(libraryDir, constants.W_OK);
+      writable = true;
+    } catch {
+      writable = false;
+    }
+  }
+
+  const missingFolders = LIBRARY_FOLDERS.filter((folder) => !existsSync(path.join(libraryDir, folder)));
+
+  return {
+    exists,
+    writable,
+    readmePresent: existsSync(readmePath),
+    missingFolders,
+  };
 }
 
 export function toPublicAssetUrl(filePath: string) {

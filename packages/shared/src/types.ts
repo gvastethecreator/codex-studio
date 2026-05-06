@@ -62,14 +62,46 @@ export interface StudioEvent<T = unknown> {
 
 export interface HealthResponse {
   ok: boolean;
+  checkedAt: string;
   libraryDir: string;
+  runtime: {
+    platform: string;
+    arch: string;
+    bunVersion: string | null;
+    nodeVersion: string;
+    cwd: string;
+    envLocalPath: string;
+    envLocalPresent: boolean;
+  };
+  config: {
+    serverPort: number;
+    codexWsPort: number;
+  };
+  library: {
+    exists: boolean;
+    writable: boolean;
+    readmePresent: boolean;
+    missingFolders: string[];
+  };
   codexCli: {
     available: boolean;
     version: string | null;
+    command: string;
   };
   appServer: {
     running: boolean;
     wsUrl: string;
+    pid: number | null;
+    lastExitCode: number | null;
+    lastExitAt: string | null;
+    lastInvocation: string | null;
+    lastStartAt: string | null;
+    lastStartError: string | null;
+  };
+  checks: {
+    libraryReady: boolean;
+    codexReady: boolean;
+    onboardingReady: boolean;
   };
 }
 

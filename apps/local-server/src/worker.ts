@@ -8,6 +8,9 @@ import { runCodexImagegenJob } from './codexClient';
 import type { Job } from '../../../packages/shared/src';
 
 const runningJobs = new Set<string>();
+const jobQueue: Job[] = [];
+let activeWorkerCount = 0;
+const maxConcurrentJobs = Number(process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS || 4);
 
 function svgForPrompt(prompt: string) {
   const safePrompt = prompt
@@ -108,7 +111,28 @@ async function runCodexJob(job: Job) {
 export function enqueueJob(job: Job) {
   if (runningJobs.has(job.id)) return;
   runningJobs.add(job.id);
-  queueMicrotask(async () => {
+  jobQueue.push(job);
+  queueMicrotask(processQueue);
+}
+
+async function processQueue() {
+  while (activeWorkerCount < maxConcurrentJobs && jobQueue.length > 0) {
+    const job = jobQueue.shift();
+    if (!job) continue;
+
+    activeWorkerCount += 1;
+    queueMicrotask(async () => {
+      try {
+        await processJob(job);
+      } finally {
+        activeWorkerCount -= 1;
+        queueMicrotask(processQueue);
+      }
+    });
+  }
+}
+
+async function processJob(job: Job) {
     try {
       updateJobStatus(job.id, 'running');
       publishEvent('job.running', getJob(job.id));
@@ -127,5 +151,4 @@ export function enqueueJob(job: Job) {
     } finally {
       runningJobs.delete(job.id);
     }
-  });
 }

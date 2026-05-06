@@ -1,20 +1,8 @@
-import { copyFile, mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { Asset, Job, Project } from "../packages/shared/src";
 import type { StylePack, StylePresetDef } from "../components/recipes/styles/types";
-import {
-  categoryBasesDir,
-  dataUrlFromBytes,
-  defaultsDir,
-  loadPacks,
-  request,
-  rootDir,
-  sanitizeCategory,
-  styleCategoryImageKey,
-  valueOf,
-} from "./style-default-utils";
-
-const manifestPath = path.join(defaultsDir, "manifest.json");
+import { defaultsDir, loadPacks, request, rootDir, sanitizeCategory, styleCategoryImageKey, valueOf } from "./style-default-utils";
 
 interface ManifestEntry {
   presetId: string;
@@ -25,11 +13,162 @@ interface ManifestEntry {
   file: string;
   jobId: string;
   sourceAsset: string;
-  sourceBaseImage: string;
+  generationMode: "text-to-image";
+  model: string;
+  reasoningEffort: string;
   generatedAt: string;
 }
 
-function buildStylePrompt(pack: StylePack, preset: StylePresetDef, baseFileName: string) {
+const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.4";
+const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || "low";
+
+const CATEGORY_BASE_PROMPTS: Record<string, string> = {
+  pack_01__portrait_styles:
+    "A realistic half-body adult portrait with a clear face, visible eyes, natural posture, restrained wardrobe, skin detail, hair detail, and a simple background with enough depth for lens, lighting, grain, and facial rendering differences.",
+  pack_01__film_stocks:
+    "A documentary travel photograph of one adult subject on a rainy city street with practical lights, wet pavement, foliage, fabric, glass, signage-free architecture, skin tones, bright color accents, deep shadows, and sky detail for film stock behavior.",
+  pack_01__camera_types:
+    "A controlled vertical scene with one human-scale subject, a room or street plane, foreground tabletop objects, distant background geometry, reflective surfaces, fine details, straight lines, and scale cues that expose lens, camera, surveillance, aerial, macro, or thermal traits.",
+  pack_01__lighting:
+    "A simple interior or narrow street set with one adult figure, textured wall, fabric, wood, glass, haze, reflective floor, and visible practical or natural light sources so shadows, highlights, bounce, and atmosphere are readable.",
+  pack_01__genres:
+    "A genre-ready cinematic portrait scene with one protagonist, readable location, wardrobe, props, atmosphere, and narrative tension. Adapt the subject, era, and setting to the named genre while avoiding franchise-specific identities.",
+
+  pack_02__film_genres:
+    "A cinematic still with one protagonist in a practical set, strong production design, expressive blocking, foreground props, midground action cues, background depth, and no text. Adapt era, setting, and staging to the named film genre.",
+  pack_02__tv_and_broadcast:
+    "A vertical broadcast or field-production scene with presenter or subject, cameras, lights, set furniture, monitors without readable text, cables, practical equipment, and clean studio or location context.",
+  pack_02__animation_styles:
+    "A vertical character-and-environment composition with one young adventurer in a workshop or stage-like setting, clean silhouette, expressive pose, layered props, readable background, and room for the animation style to dominate.",
+  pack_02__photography_eras:
+    "A period-neutral street or portrait photograph with one subject, architecture, clothing texture, sky, skin, shadows, highlights, and tonal range designed to reveal photographic process, emulsion, age, grain, and color reproduction.",
+  pack_02__lighting_and_atmosphere:
+    "A cinematic subject in a sparse interior with windows, practical lights, reflective surfaces, haze, shadow planes, fabric, wood, and controlled negative space for atmosphere and lighting style.",
+
+  pack_03__render_engines:
+    "A hero 3D creature or sculptural product on a pedestal in a clean studio gallery, surrounded by material swatches, reflective floor, glass, metal, skin-like material, fine geometry, and controlled lighting to reveal render-engine traits.",
+  pack_03__materials:
+    "A studio still life of simple geometric objects and a small figurine, with the central object dominated by the named material, plus secondary metal, glass, fabric, stone, and organic details for material contrast.",
+  pack_03__3d_styles:
+    "A clean 3D object study with one central constructed form, support primitives, visible silhouette, neutral background, modeling cues, surface detail, and lighting that makes topology and style language legible.",
+  pack_03__lighting_and_atmosphere:
+    "A minimal 3D interior display room with one central bust or object, reflective floor, volumetric fog, practical light panels, hard and soft shadow areas, and layered depth.",
+  pack_03__applications:
+    "A purpose-specific 3D presentation scene adapted to the preset: product render, game asset, architectural visualization, scientific model, motion graphics frame, or VFX element, with a single clear focal subject and no text.",
+
+  pack_04__comic_book_styles:
+    "A vertical comic hero panel with one original protagonist, dynamic pose, urban or dramatic environment, action framing, props, depth layers, and clear space for ink, panel energy, halftone, line weight, and color treatment.",
+  pack_04__children_s_illustration:
+    "A whimsical storybook scene with one child or small original character, friendly environment, simple props, expressive gesture, warm narrative moment, and enough background detail for illustration texture and shape language.",
+  pack_04__editorial_and_poster:
+    "A vertical editorial poster-style composition with one bold symbolic subject, strong silhouette, graphic background shapes, visual hierarchy, and no lettering or logo.",
+  pack_04__concept_art:
+    "A vertical concept-art key image with one original character, creature, vehicle, or environment focal point, cinematic depth, design callouts expressed visually, believable scale, and mood-driven lighting.",
+  pack_04__ink_and_print:
+    "A printmaking-focused composition showing one strong subject and a few supporting objects as if prepared for a finished print, with visible paper, ink, plate, block, or press-like texture cues and no text.",
+
+  pack_05__70s_and_80s_retro_anime:
+    "A retro anime keyframe with one original adventurer, mechanical or city backdrop, dramatic pose, painted background, expressive face, and practical props suited to vintage cel-era treatment.",
+  pack_05__90s_golden_era:
+    "A dramatic 1990s anime-inspired keyframe with one original hero, moody urban or fantasy background, strong silhouette, cinematic cel lighting, and emotional close-to-mid shot staging.",
+  pack_05__2000s_classics:
+    "An early-2000s anime adventure scene with one original character, layered environment, energetic pose, clean background details, and enough color variety for era-specific digital-cel styling.",
+  pack_05__modern_shonen_and_action:
+    "A modern action anime battle moment with one original fighter, motion arcs, impact energy, dramatic camera angle, debris, layered background, and readable costume details without referencing any franchise.",
+  pack_05__classic_and_modern_shojo:
+    "An emotional shojo portrait or two-character scene with expressive eyes, elegant pose, soft background motifs, fashion detail, delicate lighting, and romantic or introspective atmosphere.",
+  pack_05__mecha_and_cyberpunk:
+    "A vertical scene with an original pilot, android, or mecha detail in a neon industrial environment, visible machinery, reflective armor, cockpit or alley context, and hard-edged sci-fi design.",
+  pack_05__dark_fantasy_and_seinen:
+    "A dark fantasy or mature anime scene with one original character, ruined architecture, ominous atmosphere, textured costume, dramatic shadows, and grounded narrative weight.",
+  pack_05__studio_masterpieces:
+    "A poetic anime film still with one original traveler in a richly painted natural or urban environment, wind, sky, warm human detail, layered depth, and quiet cinematic emotion.",
+  pack_05__slice_of_life_and_moe:
+    "A cozy everyday anime scene with one original character in a room, cafe, school-adjacent, or street setting, expressive pose, small props, warm light, and gentle background detail.",
+  pack_05__isekai_and_high_fantasy:
+    "A vertical fantasy anime scene with one original traveler, magical city, forest, dungeon, or floating landscape, costume detail, glowing artifact, atmospheric depth, and adventure mood.",
+
+  pack_06__traditional_painting:
+    "A finished traditional painting scene with one original subject, studio-like composition, visible brushwork-ready surfaces, fabric, background depth, and lighting suited to classic painted media.",
+  pack_06__drawing_and_sketching:
+    "A drawing study of one subject with clear silhouette, anatomy or object structure, simple props, paper-like surface, tonal planes, and visible opportunities for line, graphite, charcoal, or ink handling.",
+  pack_06__printmaking:
+    "A printmaking motif with one bold subject, simplified shapes, paper texture, carved or etched mark opportunities, high contrast, and a finished handmade-print feeling.",
+  pack_06__digital_art:
+    "A polished digital illustration or concept scene with one original character, object, or environment focal point, clean composition, layered lighting, material detail, and space for digital rendering choices.",
+  pack_06__mixed_media:
+    "A layered mixed-media composition with one central subject, collage fragments, paint, paper, texture, transparent overlays, found-material cues, and controlled visual hierarchy without text.",
+
+  pack_07__interior_design:
+    "A vertical interior room scene with furniture, decor, natural and practical light, textiles, wall materials, floor detail, human scale cues, and a clear design focal point.",
+  pack_07__architectural_styles:
+    "An architectural portfolio image of one building or interior volume with structural lines, facade or spatial rhythm, material detail, scale cues, sky or landscape context, and clean vertical framing.",
+  pack_07__environment:
+    "A cinematic built environment with architecture, streetscape or interior-exterior transition, atmospheric light, readable scale, layered depth, materials, and a single compositional focal point.",
+  pack_07__landscape_architecture:
+    "A designed outdoor landscape with paths, planting, water or stone, seating or human-scale cues, architectural edge, layered vegetation, and controlled natural light.",
+  pack_07__fantasy_architecture:
+    "A fantasy architectural scene with one impossible building or interior, stairs, arches, towers or chambers, magical light, scale cues, atmospheric depth, and original worldbuilding.",
+
+  pack_08__contemporary_fashion:
+    "A full-body vertical fashion editorial with one adult model, runway or studio setting, visible garment silhouette, fabric motion, accessories, lighting, and uncluttered background.",
+  pack_08__subcultures:
+    "A vertical subculture fashion portrait in a bedroom, street, club, or studio-like space with one adult model, wardrobe details, accessories, props, and environment cues tied to the style.",
+  pack_08__historical_and_fantasy:
+    "A historical or fantasy costume portrait with one adult model, full garment silhouette, period or fantasy setting, textiles, accessories, hair detail, and dramatic but readable lighting.",
+  pack_08__fantasy_sci_fi_costume:
+    "A vertical costume design portrait of one original character wearing fantasy or sci-fi attire, armor or fabric systems, props, material contrast, and environment cues.",
+  pack_08__fabric_and_texture_focus:
+    "A garment material study with one wearable item on a model or mannequin, fabric folds, stitching, surface texture, trim, highlights, and close enough framing to reveal textile behavior.",
+
+  pack_09__natural_materials:
+    "A close-up material study of one natural surface as the hero subject, with secondary scale cues, tactile relief, color variation, grazing light, and macro detail.",
+  pack_09__man_made_materials:
+    "A close-up studio material study of one manufactured surface or object, with clean edges, fabrication marks, reflections, wear, and controlled lighting.",
+  pack_09__weathering_and_decay:
+    "A close-up scene of aged material with corrosion, peeling, cracks, stains, residue, dust, and layered history under directional light.",
+  pack_09__tactile_surfaces:
+    "A tactile macro surface composition with folds, fibers, grains, pores, bumps, and touchable relief, framed vertically with strong texture hierarchy.",
+  pack_09__elemental_and_fx:
+    "A close-up elemental or visual-effects material scene with one dominant phenomenon, particles, glow, fluid, smoke, sparks, or frost interacting with a simple surface.",
+
+  pack_10__geometric_abstraction:
+    "A vertical abstract composition based on deliberate geometric logic, central structure, negative space, dimensional layering, controlled color, and clean edge relationships.",
+  pack_10__fluid_and_organic:
+    "A vertical abstract composition of flowing organic forms, liquid motion, soft boundaries, layered translucency, color gradients in material rather than UI, and tactile depth.",
+  pack_10__digital_glitch_and_noise:
+    "A vertical digital abstraction with one coherent focal structure, signal distortion, scan artifacts, pixel noise, data-like fragmentation, and no readable text.",
+  pack_10__surrealism_and_dream:
+    "A surreal vertical scene with one impossible focal subject, dreamlike spatial logic, symbolic props, atmospheric depth, and strange but coherent lighting.",
+  pack_10__pattern_and_texture:
+    "A vertical pattern and texture composition with a clear repeat or motif logic, tactile material detail, layered rhythm, and one dominant visual system.",
+
+  pack_11__toys_and_crafts:
+    "A centered vertical toy or craft object scene with one handmade or collectible focal subject, table surface, tools or materials, scale cues, and playful but clean lighting.",
+  pack_11__artistic_mediums:
+    "A single subject rendered as a finished artwork in the named medium, with visible material behavior, surface texture, studio context, and no text.",
+  pack_11__aesthetics:
+    "A stylized vertical scene with one clear subject, props, environment cues, color story, texture, and composition tailored to the named aesthetic.",
+  pack_11__food_and_drink:
+    "A vertical food or drink hero shot with one plated dish or beverage, utensils, fabric, tabletop, controlled highlights, appetizing texture, and background depth.",
+  pack_11__micro_macro:
+    "A close-up or miniature-scale vertical scene with one tiny or magnified subject, strong scale cues, macro detail, shallow depth, texture, and readable environment context.",
+};
+
+function categoryBasePrompt(pack: StylePack, category: string) {
+  const key = styleCategoryImageKey(pack.id, category);
+  const base = CATEGORY_BASE_PROMPTS[key] || "A vertical scene with one clear original subject, foreground detail, midground context, background depth, varied materials, and no text.";
+  return `Create this base subject:
+${base}
+
+The subject and scene must fit the pack "${pack.name}" and the category "${category}".
+Use a vertical 2:3 composition designed for a 3:4 preset card crop.
+The image should be a finished representative default for this exact style preset, not a neutral reference sheet.
+Include enough subject, material, lighting, and environment detail for the style to be immediately legible.
+No text, no labels, no logos, no watermark, no UI.`;
+}
+
+function buildStylePrompt(pack: StylePack, preset: StylePresetDef) {
   const category = sanitizeCategory(preset.category);
   const negative = preset.negativePrompt ? `\n\nAvoid:\n${preset.negativePrompt}` : "";
 
@@ -37,14 +176,14 @@ function buildStylePrompt(pack: StylePack, preset: StylePresetDef, baseFileName:
 
 *** STYLE TRANSFER PROTOCOL ***
 TARGET STYLE: ${preset.name.toUpperCase()}
-MODE: CATEGORY BASE STYLE APPLICATION
+MODE: TEXT TO IMAGE DEFAULT STYLE CARD
+MODEL REQUEST: ${IMAGEGEN_MODEL}
+REASONING EFFORT: ${IMAGEGEN_REASONING_EFFORT}
 PACK: ${pack.name}
 CATEGORY: ${category}
 
-[BASE IMAGE]
-Use the attached category base image (${baseFileName}) as the visual subject and composition baseline.
-Preserve the broad composition and readable scene structure so all presets in this category can be compared against the same base image.
-Re-render the base image through this preset's visual DNA. Do not simply copy the reference.
+[BASE PROMPT]
+${categoryBasePrompt(pack, category)}
 
 [VISUAL DNA]
 - Core Aesthetic: ${valueOf(preset.style, "aesthetic")}
@@ -55,11 +194,12 @@ Re-render the base image through this preset's visual DNA. Do not simply copy th
 - Camera & Composition: ${valueOf(preset.style, "camera_and_composition", "spatial_distortion")}
 - Atmosphere & Mood: ${valueOf(preset.style, "atmosphere_and_mood", "atmosphere")}
 - Rendering & Quality: ${valueOf(preset.style, "rendering_and_quality", "render_quality")}
+- Key Features: ${valueOf(preset.style, "key_features")}
 
 [EXECUTION RULES]
-Produce a finished default representative image for this exact preset card.
-Portrait orientation, composed for a vertical 3:4 card crop.
-No text, no watermark, no logos, no UI.
+Make the result immediately recognizable as "${preset.name}".
+Do not copy a single franchise, brand, character, logo, or copyrighted identity.
+Portrait orientation, 1024x1536 output target, composed for a vertical card.
 Do not output explanations. Just the image.
 *** END PROTOCOL ***${negative}
 
@@ -97,97 +237,145 @@ async function newestAssetForJob(jobId: string) {
   return assets.find((asset) => asset.jobId === jobId);
 }
 
-async function loadManifest() {
+function manifestPathForPack(packId: string) {
+  return path.join(defaultsDir, `manifest-${packId}.json`);
+}
+
+function failuresPathForPack(packId: string) {
+  return path.join(defaultsDir, `failures-${packId}.json`);
+}
+
+async function loadManifest(packId: string) {
   try {
-    return JSON.parse(await readFile(manifestPath, "utf8")) as ManifestEntry[];
+    const parsed = JSON.parse(await readFile(manifestPathForPack(packId), "utf8")) as ManifestEntry[] | ManifestEntry;
+    return Array.isArray(parsed) ? parsed : [parsed];
   } catch {
     return [];
   }
 }
 
-async function saveManifest(entries: ManifestEntry[]) {
+async function saveManifest(packId: string, entries: ManifestEntry[]) {
   entries.sort((a, b) => a.presetId.localeCompare(b.presetId));
-  await writeFile(manifestPath, `${JSON.stringify(entries, null, 2)}\n`, "utf8");
+  await writeFile(manifestPathForPack(packId), `${JSON.stringify(entries, null, 2)}\n`, "utf8");
 }
 
-const limitArg = process.argv.find((arg) => arg.startsWith("--limit="));
-const limit = limitArg ? Number(limitArg.split("=")[1]) : Number.POSITIVE_INFINITY;
+async function loadFailures(packId: string) {
+  try {
+    return JSON.parse(await readFile(failuresPathForPack(packId), "utf8")) as unknown[];
+  } catch {
+    return [];
+  }
+}
+
+async function saveFailure(packId: string, entry: unknown) {
+  const failures = await loadFailures(packId);
+  failures.push(entry);
+  await writeFile(failuresPathForPack(packId), `${JSON.stringify(failures, null, 2)}\n`, "utf8");
+}
+
+function argValue(name: string) {
+  return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split("=")[1];
+}
+
+const limit = argValue("limit") ? Number(argValue("limit")) : Number.POSITIVE_INFINITY;
+const packFilter = argValue("pack");
 const force = process.argv.includes("--force");
+const lockDir = path.join(defaultsDir, ".locks");
 
 await mkdir(defaultsDir, { recursive: true });
+await mkdir(lockDir, { recursive: true });
 
 const health = await request<{ ok: boolean }>("/api/health");
 if (!health.ok) throw new Error("Local studio server is not healthy.");
 
 const projects = await request<Project[]>("/api/projects");
 const projectId = projects[0]?.id;
-const packs = await loadPacks();
-const manifest = await loadManifest();
-const manifestByPreset = new Map(manifest.map((entry) => [entry.presetId, entry]));
+const packs = (await loadPacks()).filter((pack) => !packFilter || pack.id === packFilter);
 
 let generated = 0;
 let skipped = 0;
-let missingBase = 0;
+let failed = 0;
+
+async function withPackLock<T>(packId: string, callback: () => Promise<T>) {
+  const lockPath = path.join(lockDir, `${packId}.lock`);
+  try {
+    await writeFile(lockPath, `${process.pid}\n${new Date().toISOString()}\n`, { flag: "wx" });
+  } catch {
+    console.log(`[locked] ${packId} is already being generated; skipping duplicate process.`);
+    return undefined;
+  }
+
+  try {
+    return await callback();
+  } finally {
+    await rm(lockPath, { force: true });
+  }
+}
 
 for (const pack of packs) {
+  await withPackLock(pack.id, async () => {
+  const manifestByPreset = new Map((await loadManifest(pack.id)).map((entry) => [entry.presetId, entry]));
+
   for (const preset of pack.presets) {
     const category = sanitizeCategory(preset.category);
-    const baseKey = styleCategoryImageKey(pack.id, category);
-    const basePath = path.join(categoryBasesDir, `${baseKey}.png`);
     const destination = path.join(defaultsDir, `${preset.id}.png`);
-    const existingManifest = manifestByPreset.get(preset.id);
 
-    if (!(await exists(basePath))) {
-      missingBase += 1;
-      console.log(`[missing-base] ${preset.id} ${pack.name} / ${category}`);
-      continue;
-    }
-
-    if (!force && await exists(destination) && existingManifest?.sourceBaseImage) {
+    if (!force && await exists(destination)) {
       skipped += 1;
       continue;
     }
 
     if (generated >= limit) break;
 
-    console.log(`[generate] ${preset.id} ${pack.name} / ${category} / ${preset.name}`);
-    const baseFileName = path.basename(basePath);
-    const baseBytes = await readFile(basePath);
-    const created = await request<Job>("/api/jobs", {
-      method: "POST",
-      body: JSON.stringify({
-        projectId,
-        kind: "codex_imagegen",
-        prompt: buildStylePrompt(pack, preset, baseFileName),
-        references: [{
-          name: baseFileName,
-          dataUrl: dataUrlFromBytes(baseBytes),
-          strength: 0.55,
-        }],
-      }),
-    });
+    console.log(`[txt2img] ${preset.id} ${pack.name} / ${category} / ${preset.name}`);
+    try {
+      const created = await request<Job>("/api/jobs", {
+        method: "POST",
+        body: JSON.stringify({
+          projectId,
+          kind: "codex_imagegen",
+          prompt: buildStylePrompt(pack, preset),
+        }),
+      });
 
-    await waitForJob(created.id);
-    const asset = await newestAssetForJob(created.id);
-    if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
+      await waitForJob(created.id);
+      const asset = await newestAssetForJob(created.id);
+      if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
 
-    await copyFile(asset.filePath, destination);
-    manifestByPreset.set(preset.id, {
-      presetId: preset.id,
-      presetName: preset.name,
-      packId: pack.id,
-      packName: pack.name,
-      category,
-      file: path.relative(rootDir, destination).replaceAll(path.sep, "/"),
-      jobId: created.id,
-      sourceAsset: asset.filePath,
-      sourceBaseImage: path.relative(rootDir, basePath).replaceAll(path.sep, "/"),
-      generatedAt: new Date().toISOString(),
-    });
-    await saveManifest(Array.from(manifestByPreset.values()));
-    generated += 1;
+      await copyFile(asset.filePath, destination);
+      manifestByPreset.set(preset.id, {
+        presetId: preset.id,
+        presetName: preset.name,
+        packId: pack.id,
+        packName: pack.name,
+        category,
+        file: path.relative(rootDir, destination).replaceAll(path.sep, "/"),
+        jobId: created.id,
+        sourceAsset: asset.filePath,
+        generationMode: "text-to-image",
+        model: IMAGEGEN_MODEL,
+        reasoningEffort: IMAGEGEN_REASONING_EFFORT,
+        generatedAt: new Date().toISOString(),
+      });
+      await saveManifest(pack.id, Array.from(manifestByPreset.values()));
+      generated += 1;
+    } catch (error) {
+      failed += 1;
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`[txt2img-failed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${message}`);
+      await saveFailure(pack.id, {
+        presetId: preset.id,
+        presetName: preset.name,
+        packId: pack.id,
+        packName: pack.name,
+        category,
+        error: message,
+        failedAt: new Date().toISOString(),
+      });
+    }
   }
+  });
   if (generated >= limit) break;
 }
 
-console.log(`[done] generated=${generated} skipped=${skipped} missingBase=${missingBase} total=${packs.reduce((sum, pack) => sum + pack.presets.length, 0)}`);
+console.log(`[done] generated=${generated} skipped=${skipped} failed=${failed} packs=${packs.map((pack) => pack.id).join(",") || "none"}`);

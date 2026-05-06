@@ -56,17 +56,30 @@ export async function loadPacks() {
 
 export async function request<T>(pathName: string, init?: RequestInit): Promise<T> {
   const apiBase = process.env.STUDIO_API_BASE || "http://localhost:4317";
-  const response = await fetch(`${apiBase}${pathName}`, {
-    ...init,
-    headers: {
-      "Content-Type": "application/json",
-      ...(init?.headers || {}),
-    },
-  });
-  if (!response.ok) {
-    throw new Error(`${init?.method || "GET"} ${pathName} failed: ${response.status} ${await response.text()}`);
+  const attempts = Number(process.env.STUDIO_API_RETRY_ATTEMPTS || 24);
+  let lastError: unknown;
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const response = await fetch(`${apiBase}${pathName}`, {
+        ...init,
+        headers: {
+          "Content-Type": "application/json",
+          ...(init?.headers || {}),
+        },
+      });
+      if (!response.ok) {
+        throw new Error(`${init?.method || "GET"} ${pathName} failed: ${response.status} ${await response.text()}`);
+      }
+      return response.json() as Promise<T>;
+    } catch (error) {
+      lastError = error;
+      if (attempt === attempts) break;
+      await Bun.sleep(5000);
+    }
   }
-  return response.json() as Promise<T>;
+
+  throw lastError instanceof Error ? lastError : new Error(String(lastError));
 }
 
 export function dataUrlFromBytes(bytes: Uint8Array, mimeType = "image/png") {

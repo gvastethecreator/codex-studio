@@ -120,9 +120,16 @@ export function useLocalStudioSync({ logs, log, setBatches, addToast }: UseLocal
   const verifyCodexSession = useCallback(async () => {
     try {
       const health = await getStudioHealth();
-      const isReady = health.ok && health.appServer.running;
-      addToast(isReady ? 'Sesion local Codex disponible' : 'Backend local disponible, app-server no activo', isReady ? 'success' : 'error');
-      log(`Codex health: cli=${health.codexCli.available ? health.codexCli.version || 'available' : 'missing'}, appServer=${health.appServer.running ? health.appServer.wsUrl : 'stopped'}`);
+      const isReady = health.ok && health.checks.onboardingReady;
+      const message = isReady
+        ? 'Sesion local Codex disponible'
+        : !health.checks.codexReady
+          ? 'Codex CLI no disponible todavia'
+          : !health.appServer.running
+            ? 'Backend local disponible, app-server no activo'
+            : 'La biblioteca local necesita atencion';
+      addToast(message, isReady ? 'success' : 'error');
+      log(`Codex health: cli=${health.codexCli.available ? health.codexCli.version || 'available' : 'missing'}, appServer=${health.appServer.running ? health.appServer.wsUrl : 'stopped'}, libraryReady=${health.checks.libraryReady}`);
     } catch (error) {
       addToast(error instanceof Error ? error.message : 'No se pudo verificar Codex local', 'error');
     }

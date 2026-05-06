@@ -1,0 +1,30 @@
+[
+  {
+    "presetId": "SP05-001",
+    "presetName": "Astro Boy (1960s/70s)",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "1. 70s & 80s Retro Anime",
+    "file": "components/recipes/styles/defaults/SP05-001.png",
+    "jobId": "932f9563-09b0-4681-969d-8ff4e47e7baa",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\932f9563-09b0-4681-969d-8ff4e47e7baa-codex.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-05T23:56:17.901Z"
+  },
+  {
+    "presetId": "SP05-002",
+    "presetName": "Mazinger Z",
+    "packId": "pack_05",
+    "packName": "Anime & Manga Universes",
+    "category": "1. 70s & 80s Retro Anime",
+    "file": "components/recipes/styles/defaults/SP05-002.png",
+    "jobId": "9efa4b3c-7438-45e7-aa91-5f0ef1b645bf",
+    "sourceAsset": "D:\\AI-Studio-Library\\assets\\9efa4b3c-7438-45e7-aa91-5f0ef1b645bf-codex.png",
+    "generationMode": "text-to-image",
+    "model": "gpt-5.4",
+    "reasoningEffort": "low",
+    "generatedAt": "2026-05-06T02:32:41.499Z"
+  }
+]

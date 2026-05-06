@@ -35,9 +35,11 @@ import { LeftDebugPanel } from './LeftDebugPanel';
 import { RightSystemPanel } from './RightSystemPanel';
 import { QueuePanel } from './QueuePanel';
 import { DashboardModal } from './DashboardModal';
+import { OnboardingModal } from './OnboardingModal';
 import { useGlobal } from '../contexts/GlobalContext';
 import { useGeneration } from '../contexts/GenerationContext';
 import { useQueueManager } from '../hooks/useQueueManager';
+import { useStudioOnboarding } from '../hooks/useStudioOnboarding';
 import { useLocalStudioSync } from '../hooks/useLocalStudioSync';
 
 import { BottomToolbar } from './ui/BottomToolbar';
@@ -77,7 +79,7 @@ const viewVariants = {
     })
 };
 
-interface AppContentProps {}
+interface AppContentProps { }
 
 export const AppContent: React.FC<AppContentProps> = () => {
     // Global Context
@@ -123,18 +125,18 @@ export const AppContent: React.FC<AppContentProps> = () => {
     } = useGeneration();
 
     // Queue Manager
-    const { 
-        jobs, 
-        enqueue, 
-        retry, 
+    const {
+        jobs,
+        enqueue,
+        retry,
         cancelJob,
-        removeJob, 
-        clearCompleted, 
-        isResting 
-    } = useQueueManager({ 
-        executeGeneration, 
-        isGenerating, 
-        addToast 
+        removeJob,
+        clearCompleted,
+        isResting
+    } = useQueueManager({
+        executeGeneration,
+        isGenerating,
+        addToast
     });
 
     // Local UI States
@@ -153,7 +155,26 @@ export const AppContent: React.FC<AppContentProps> = () => {
         setBatches,
         addToast,
     });
-    
+    const {
+        apiBase,
+        closeOnboarding,
+        completeOnboarding,
+        ensureAppServer,
+        error: onboardingError,
+        health: onboardingHealth,
+        isChecking: isCheckingOnboarding,
+        isDesktopRuntime,
+        isOpen: isOnboardingOpen,
+        isReady: isOnboardingReady,
+        isStartingAppServer,
+        openOnboarding,
+        refreshHealth: refreshOnboardingHealth,
+    } = useStudioOnboarding({
+        log,
+        addToast,
+        shouldAutoOpen: batches.length === 0,
+    });
+
     // Navigation Direction Logic
     const [navIndex, setNavIndex] = useState(0);
     const [direction, setDirection] = useState(0);
@@ -187,14 +208,14 @@ export const AppContent: React.FC<AppContentProps> = () => {
         const handleHashChange = () => {
             startViewTransition(() => {
                 const hash = window.location.hash.replace('#', '');
-                
+
                 if (hash === 'editor') {
                     if (!imageToEdit) {
                         window.history.replaceState(null, '', window.location.pathname + window.location.search);
                     } else {
                         setIsEditorOpen(true);
                     }
-                } 
+                }
                 else if (hash === 'modal') {
                     if (!modalImage) {
                         window.history.replaceState(null, '', window.location.pathname + window.location.search);
@@ -204,7 +225,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
                     const recipeId = hash.replace('recipe-', '') as RecipeId;
                     if (isEditorOpen) { setIsEditorOpen(false); setImageToEdit(null); }
                     if (isModalOpen) closeModal();
-                    
+
                     if (activeRecipe !== recipeId) {
                         setDirection(1);
                         setNavIndex(2);
@@ -214,7 +235,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
                 else if (hash === 'recipes') {
                     if (isEditorOpen) { setIsEditorOpen(false); setImageToEdit(null); }
                     if (isModalOpen) closeModal();
-                    
+
                     if (activeRecipe) {
                         setDirection(-1);
                         setNavIndex(1);
@@ -230,7 +251,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
                     // empty hash -> studio
                     if (isEditorOpen) { setIsEditorOpen(false); setImageToEdit(null); }
                     if (isModalOpen) closeModal();
-                    
+
                     if (activeRecipe) {
                         setDirection(-1);
                         setNavIndex(0);
@@ -253,28 +274,28 @@ export const AppContent: React.FC<AppContentProps> = () => {
         return batches.filter(b => b.workspaceId === activeWorkspaceId || (!b.workspaceId && activeWorkspaceId === 'default'));
     }, [batches, activeWorkspaceId]);
 
-    const { 
-        allImages, 
-        selectedImageIds, 
-        handleSelectionChange, 
-        handleDelete, 
-        handleDeleteSelected, 
-        handleSelectAll, 
+    const {
+        allImages,
+        selectedImageIds,
+        handleSelectionChange,
+        handleDelete,
+        handleDeleteSelected,
+        handleSelectAll,
         handleDeselectAll,
         handleToggleFavorite,
         handleClearWorkspace
-    } = useImageManager({ 
-        batches: workspaceBatches, 
+    } = useImageManager({
+        batches: workspaceBatches,
         setBatches: (valOrFn) => {
             setBatches(prev => {
                 const next = typeof valOrFn === 'function' ? valOrFn(workspaceBatches) : valOrFn;
                 const otherBatches = prev.filter(b => b.workspaceId !== activeWorkspaceId && (b.workspaceId || activeWorkspaceId !== 'default'));
                 return [...otherBatches, ...next];
             });
-        }, 
+        },
         setTrash,
-        log, 
-        modalImage, 
+        log,
+        modalImage,
         handleCloseModal: closeModal
     });
 
@@ -292,31 +313,31 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
     const workspacesWithThumbs = useMemo(() => {
         return workspaces.map(ws => {
-        const wBatches = batches.filter(b => b.workspaceId === ws.id || (!b.workspaceId && ws.id === 'default'));
-        const sorted = wBatches.sort((a, b) => b.createdAt - a.createdAt);
-        const lastBatch = sorted[0];
-        const lastImg = lastBatch?.images[0]?.thumbnail || lastBatch?.images[0]?.src;
-        const count = wBatches.reduce((acc, b) => acc + b.images.length, 0);
-        return { ...ws, lastImage: lastImg, imageCount: count };
+            const wBatches = batches.filter(b => b.workspaceId === ws.id || (!b.workspaceId && ws.id === 'default'));
+            const sorted = wBatches.sort((a, b) => b.createdAt - a.createdAt);
+            const lastBatch = sorted[0];
+            const lastImg = lastBatch?.images[0]?.thumbnail || lastBatch?.images[0]?.src;
+            const count = wBatches.reduce((acc, b) => acc + b.images.length, 0);
+            return { ...ws, lastImage: lastImg, imageCount: count };
         });
     }, [workspaces, batches]);
 
     useEffect(() => {
         const handleGlobalPaste = (event: ClipboardEvent) => {
-        const items = event.clipboardData?.items;
-        if (!items) return;
+            const items = event.clipboardData?.items;
+            if (!items) return;
 
-        const files: File[] = [];
-        for (let i = 0; i < items.length; i++) {
-            if (items[i].type.indexOf('image') !== -1) {
-            const file = items[i].getAsFile();
-            if (file) files.push(file);
+            const files: File[] = [];
+            for (let i = 0; i < items.length; i++) {
+                if (items[i].type.indexOf('image') !== -1) {
+                    const file = items[i].getAsFile();
+                    if (file) files.push(file);
+                }
             }
-        }
 
-        if (files.length > 0) {
-            handlePastedFiles(files);
-        }
+            if (files.length > 0) {
+                handlePastedFiles(files);
+            }
         };
 
         window.addEventListener('paste', handleGlobalPaste);
@@ -352,25 +373,30 @@ export const AppContent: React.FC<AppContentProps> = () => {
         });
     }, [setWorkspaces, addToast]);
 
-    const handleGenerate = useCallback((promptOverride?: string, configOverrides?: Partial<ImageGenerationConfig>, options?: { force?: boolean; preventModal?: boolean }) => { 
+    const handleGenerate = useCallback((promptOverride?: string, configOverrides?: Partial<ImageGenerationConfig>, options?: { force?: boolean; preventModal?: boolean }) => {
         if (isModalOpen && !options?.preventModal) {
             closeModal();
         }
-        
-        const finalPrompt = promptOverride !== undefined ? promptOverride : generationConfig.prompt;
-        const finalConfig = { ...generationConfig, ...configOverrides };
+
+        const finalPrompt = (promptOverride !== undefined ? promptOverride : generationConfig.prompt)?.trim() ?? '';
+        if (!finalPrompt) {
+            addToast('Escribe un prompt antes de generar', 'info');
+            return;
+        }
+
+        const finalConfig: ImageGenerationConfig = { ...generationConfig, ...configOverrides, prompt: finalPrompt };
 
         // If it's a manual generate from toolbar (no promptOverride), we enqueue
         // If it's a regenerate (promptOverride provided), we might want to enqueue too or execute immediately
         // The user said "todos los trabajos que iremos enviando", so let's enqueue everything
         enqueue(finalPrompt, finalConfig, options?.force);
-    }, [enqueue, generationConfig, isModalOpen, closeModal]);
+    }, [enqueue, generationConfig, isModalOpen, closeModal, addToast]);
 
     const handleEnhancePrompt = useCallback(async () => {
         if (isEnhancingPrompt) return;
         setIsEnhancingPrompt(true);
         try {
-            const currentPrompt = generationConfig.prompt.trim();
+            const currentPrompt = (generationConfig.prompt ?? '').trim();
             if (!currentPrompt) {
                 addToast('Escribe un prompt antes de refinarlo', 'info');
                 return;
@@ -423,12 +449,12 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
             const url = toStudioAssetUrl(asset.publicUrl);
             const batchId = `edit-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
-            const newBatch: GenerationBatch = { 
-                id: batchId, 
+            const newBatch: GenerationBatch = {
+                id: batchId,
                 workspaceId: activeWorkspaceId,
-                config: { ...generationConfig, prompt, model: MODELS.CODEX_IMAGEGEN }, 
-                images: [{ id: asset.id, src: url, batchId, createdAt: Date.now(), isFavorite: false }], 
-                createdAt: Date.now() 
+                config: { ...generationConfig, prompt, model: MODELS.CODEX_IMAGEGEN },
+                images: [{ id: asset.id, src: url, batchId, createdAt: Date.now(), isFavorite: false }],
+                createdAt: Date.now()
             };
             setBatches(p => {
                 const newBatches = [newBatch, ...p];
@@ -452,7 +478,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
     const handleLoadRecipe = useCallback((config: ImageGenerationConfig) => {
         setGenerationConfig(config);
         addToast('Recipe restored', 'success');
-        
+
         // Intelligent Recipe Redirection
         const detectedRecipe = detectRecipeFromContext(config.recipeContext);
         if (detectedRecipe) {
@@ -467,7 +493,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
         if (!file) return;
         try {
             const data = await readJsonFile(file);
-            
+
             if (!validateVault(data)) {
                 throw new Error("Invalid vault format");
             }
@@ -476,21 +502,21 @@ export const AppContent: React.FC<AppContentProps> = () => {
             setWorkspaces(currentWorkspaces => {
                 const existingIds = new Set(currentWorkspaces.map(w => w.id));
                 const newWorkspaces: Workspace[] = [];
-                
+
                 data.forEach(batch => {
                     if (batch.workspaceId && !existingIds.has(batch.workspaceId)) {
                         newWorkspaces.push({ id: batch.workspaceId, createdAt: Date.now(), name: `Imported (${batch.workspaceId.slice(-4)})` });
                         existingIds.add(batch.workspaceId);
                     }
                 });
-                
+
                 return [...currentWorkspaces, ...newWorkspaces];
             });
 
             setBatches(data);
             addToast('Vault Imported Successfully', 'success');
-        } catch (err: unknown) { 
-            addToast('Invalid Vault File', 'error'); 
+        } catch (err: unknown) {
+            addToast('Invalid Vault File', 'error');
         }
     }, [setWorkspaces, setBatches, addToast]);
 
@@ -499,12 +525,12 @@ export const AppContent: React.FC<AppContentProps> = () => {
         try {
             const { getAllEntries } = await import('../utils/idb');
             const entries = await getAllEntries();
-            
+
             let recoveredCount = 0;
             const knownKeys = ['session-logs', 'app-workspaces', 'generation-batches', 'generation-trash', 'user-wallet-balance', 'bg-config', 'isBackgroundEnabled'];
-            
+
             const newBatches: GenerationBatch[] = [];
-            
+
             // 1. Scan IndexedDB
             for (const entry of entries) {
                 if (typeof entry.key === 'string' && !knownKeys.includes(entry.key)) {
@@ -574,7 +600,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
             if (allImages.length > 0) {
                 await downloadMultipleImagesAsZip(allImages, `workspace-export-${Date.now()}.zip`);
             }
-            
+
             // Move all to trash
             setTrash(prev => {
                 const existingIds = new Set(prev.map(b => b.id));
@@ -582,7 +608,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
                 return [...uniqueBatches, ...prev];
             });
             setBatches([]);
-            
+
             setIsLimitModalOpen(false);
             setHasDismissedLimitModal(true);
             addToast('Workspace cleared and downloaded successfully', 'success');
@@ -613,7 +639,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
         e.preventDefault();
         e.stopPropagation();
         setIsDragging(false);
-        
+
         const files = Array.from(e.dataTransfer.files as Iterable<File>).filter(file => file.type.startsWith('image/'));
         if (files.length > 0) {
             handlePastedFiles(files);
@@ -621,270 +647,285 @@ export const AppContent: React.FC<AppContentProps> = () => {
     }, [handlePastedFiles]);
 
     return (
-        <div 
+        <div
             className="fixed inset-0 text-white font-sans flex flex-col selection:bg-accent-500/35 selection:text-white overflow-hidden"
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
             onDrop={handleDrop}
         >
-        {isBackgroundEnabled && (
-            <LiquidBlackBackground 
-                isGenerating={isGenerating} 
-                activeModel={generationConfig.model} 
-                config={bgConfig}
-            />
-        )}
-        <ToastContainer toasts={toasts} onDismiss={removeToast} />
-        
-        {!isModalOpen && !isGenerating && (
-            <HeaderToolbar
-                imageCount={allImages.length}
-                selectedImageCount={selectedImageIds.length}
-                isGenerating={isGenerating}
-                isToolbarVisible={isToolbarVisible}
-                onToggleToolbar={() => startViewTransition(() => setIsToolbarVisible(p => !p))}
-                workspaces={workspacesWithThumbs}
-                activeWorkspaceId={activeWorkspaceId}
-                onSwitchWorkspace={(id) => startViewTransition(() => setActiveWorkspaceId(id))}
-                onAddWorkspace={handleAddWorkspace}
-                onDeleteWorkspace={handleDeleteWorkspace}
-                onRenameWorkspace={handleRenameWorkspace}
-                currentView={currentView}
-                onViewChange={handleViewChange}
-                activeRecipe={activeRecipe}
-                onCloseRecipe={handleCloseRecipe}
-                onOpenDashboard={() => startViewTransition(() => setIsDashboardModalOpen(true))}
-                onOpenTrash={() => startViewTransition(() => setIsTrashModalOpen(true))}
-                trashCount={trash.length}
-                onToggleDebug={toggleDebugPanel}
-            />
-        )}
-            
-        <main 
-            className="flex-1 relative overflow-hidden z-10 w-full min-h-0" 
-            onClick={() => { setIsInteractingWithToolbar(false); setIsKeyPopoverOpen(false); }}
-        >
-            <AnimatePresence mode="popLayout" custom={direction} initial={false}>
-                {activeRecipe ? (
-                    <motion.div 
-                        key={`recipe-${activeRecipe}`}
-                        custom={direction}
-                        variants={viewVariants}
-                        initial="enter"
-                        animate="center"
-                        exit="exit"
-                        className="absolute inset-0 w-full h-full overflow-hidden"
-                    >
-                        <RecipeRouter
-                            activeRecipe={activeRecipe}
-                            generationConfig={generationConfig}
-                            updateGenerationConfig={updateGenerationConfig}
-                            updateAttachment={updateAttachment}
-                            handlePastedFiles={handlePastedFiles}
-                            handleGenerate={handleGenerate}
-                            isGenerating={isGenerating}
-                            imagesWithConfig={imagesWithConfig}
-                            openModal={openModal}
-                            handleAddToContext={handleAddToContext}
-                        />
-                    </motion.div>
-                ) : currentView === 'studio' ? (
-                    <motion.div 
-                        key="studio"
-                        custom={direction}
-                        variants={viewVariants}
-                        initial="enter"
-                        animate="center"
-                        exit="exit"
-                        className="absolute inset-0 w-full h-full flex flex-row overflow-hidden"
-                    >
-                        {!isModalOpen && (
-                            <LeftDebugPanel 
-                                workspaces={workspaces}
-                                logs={mergedLogs}
-                                batchesCount={batches.length}
-                                imagesCount={allImages.length}
-                            />
-                        )}
-
-                        <div className="flex-1 h-full relative overflow-hidden flex flex-col">
-                            <div className="flex-1 relative min-h-0">
-                                <ErrorBoundary fallbackMessage="Failed to render the image grid.">
-                                    <ImageGrid 
-                                        key={activeWorkspaceId} 
-                                        images={imagesWithConfig}
-                                        selectedImageIds={selectedImageIds}
-                                        onImageClick={openModal}
-                                        onSelectionChange={handleSelectionChange}
-                                        onRegenerate={(config) => handleGenerate(config.prompt, config, { preventModal: true })}
-                                        onAddToContext={handleAddToContext}
-                                        onLoadConfig={handleLoadRecipe}
-                                        onDelete={handleDelete}
-                                        onToggleFavorite={handleToggleFavorite}
-                                        isGenerating={isGenerating || jobs.some(j => j.status === 'processing')}
-                                        transitioningImageId={transitioningImageId}
-                                        activeModalImageId={activeCarouselId}
-                                        onSelectAll={() => handleSelectAll(allImages)}
-                                        onDeselectAll={handleDeselectAll}
-                                        onDownloadSelected={() => {
-                                            const selectedImages = imagesWithConfig.filter(img => selectedImageIds.includes(img.id));
-                                            if (selectedImages.length > 0) {
-                                                downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
-                                            }
-                                        }} 
-                                        onDownloadAll={() => {
-                                            if (imagesWithConfig.length > 0) {
-                                                downloadMultipleImagesAsZip(imagesWithConfig, `assets-${Date.now()}.zip`);
-                                            }
-                                        }}
-                                        onDeleteSelected={handleDeleteSelected}
-                                        onClearWorkspace={() => handleClearWorkspace(activeWorkspaceId)}
-                                    />
-                                </ErrorBoundary>
-                            </div>
-                            <FormatPreview ratio={previewRatio || generationConfig.aspectRatio} isVisible={!isModalOpen && (isInteractingWithToolbar || !!previewRatio)} isWorkspaceEmpty={allImages.length === 0} />
-                        </div>
-
-                        {!isModalOpen && (
-                            <div className="flex h-full">
-                                <AnimatePresence>
-                                    {isQueueOpen && (
-                                        <motion.div
-                                            initial={{ width: 0, opacity: 0 }}
-                                            animate={{ width: 320, opacity: 1 }}
-                                            exit={{ width: 0, opacity: 0 }}
-                                            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                                            className="h-full overflow-hidden"
-                                        >
-                                            <QueuePanel 
-                                                jobs={jobs}
-                                                serverJobs={studioJobs}
-                                                onRetry={retry}
-                                                onCancel={cancelJob}
-                                                onRemove={removeJob}
-                                                onClearCompleted={clearCompleted}
-                                                isResting={isResting}
-                                            />
-                                        </motion.div>
-                                    )}
-                                </AnimatePresence>
-                                <RightSystemPanel 
-                                    onImportVault={handleImportVault}
-                                    onExportVault={() => exportToJson(batches, `vault-${Date.now()}.json`)}
-                                    isBackgroundEnabled={isBackgroundEnabled}
-                                    onToggleBackground={() => setIsBackgroundEnabled(p => !p)}
-                                    isQueueOpen={isQueueOpen}
-                                    onToggleQueue={() => setIsQueueOpen(!isQueueOpen)}
-                                    queueCount={jobs.length + activeServerJobCount}
-                                />
-                            </div>
-                        )}
-                    </motion.div>
-                ) : (
-                    <motion.div 
-                        key="recipes-list"
-                        custom={direction}
-                        variants={viewVariants}
-                        initial="enter"
-                        animate="center"
-                        exit="exit"
-                        className="absolute inset-0 w-full h-full overflow-hidden"
-                    >
-                        <RecipesView onSelectRecipe={handleRecipeSelection} />
-                    </motion.div>
-                )}
-            </AnimatePresence>
-        </main>
-
-        {isToolbarVisible && !isModalOpen && (currentView === 'studio' || activeRecipe) && (
-            <BottomToolbar className="w-full relative z-30 flex-shrink-0">
-                <DropZoneOverlay isVisible={isDragging} />
-                <Toolbar 
-                    generationConfig={generationConfig}
-                    updateConfig={updateGenerationConfig}
-                    updateAttachment={updateAttachment}
-                    onGenerate={handleGenerate}
+            {isBackgroundEnabled && (
+                <LiquidBlackBackground
                     isGenerating={isGenerating}
-                    generationStartTime={generationStartTime}
-                    onFileSelect={handleFileSelect}
-                    onFilesDrop={handlePastedFiles}
-                    onRemoveAttachment={handleRemoveAttachment}
-                    isEnhancingPrompt={isEnhancingPrompt}
-                    onEnhancePrompt={handleEnhancePrompt}
-                    setPreviewRatio={setPreviewRatio}
-                    setIsInteracting={setIsInteractingWithToolbar}
-                    onOpenEditor={(att) => { 
-                        startViewTransition(() => {
-                            setImageToEdit(att); 
-                            setIsEditorOpen(true); 
-                            window.location.hash = 'editor'; 
-                        });
-                    }}
-                    isKeyPopoverOpen={isKeyPopoverOpen}
-                    onOpenKeySelector={() => startViewTransition(() => setIsKeyPopoverOpen(!isKeyPopoverOpen))}
-                    onSelectKey={async () => {
-                        await verifyCodexSession();
-                        startViewTransition(() => setIsKeyPopoverOpen(false));
-                    }}
-                    maxAttachments={maxAttachments}
+                    activeModel={generationConfig.model}
+                    config={bgConfig}
                 />
-            </BottomToolbar>
-        )}
+            )}
+            <ToastContainer toasts={toasts} onDismiss={removeToast} />
 
-        {isModalOpen && (
-            <ImageCarousel
-                activeImage={modalImage}
-                allImages={imagesWithConfig}
-                activeGenerationConfig={activeGenerationConfig}
-                onClose={() => closeModal()}
-                onDelete={handleDelete}
-                onRegenerate={(config) => handleGenerate(config.prompt, config, { preventModal: true })}
-                onAddToContext={(img) => { handleAddToContext(img); closeModal(); }}
-                onLoadConfig={(config) => { handleLoadRecipe(config); closeModal(); }}
-                onToggleFavorite={handleToggleFavorite}
-                onActiveImageChange={setActiveCarouselId}
-                transitionName="master-canvas"
+            {!isModalOpen && !isGenerating && (
+                <HeaderToolbar
+                    imageCount={allImages.length}
+                    selectedImageCount={selectedImageIds.length}
+                    isGenerating={isGenerating}
+                    isToolbarVisible={isToolbarVisible}
+                    onToggleToolbar={() => startViewTransition(() => setIsToolbarVisible(p => !p))}
+                    workspaces={workspacesWithThumbs}
+                    activeWorkspaceId={activeWorkspaceId}
+                    onSwitchWorkspace={(id) => startViewTransition(() => setActiveWorkspaceId(id))}
+                    onAddWorkspace={handleAddWorkspace}
+                    onDeleteWorkspace={handleDeleteWorkspace}
+                    onRenameWorkspace={handleRenameWorkspace}
+                    currentView={currentView}
+                    onViewChange={handleViewChange}
+                    activeRecipe={activeRecipe}
+                    onCloseRecipe={handleCloseRecipe}
+                    onOpenDashboard={() => startViewTransition(() => setIsDashboardModalOpen(true))}
+                    onOpenOnboarding={() => startViewTransition(() => openOnboarding())}
+                    onOpenTrash={() => startViewTransition(() => setIsTrashModalOpen(true))}
+                    trashCount={trash.length}
+                    onToggleDebug={toggleDebugPanel}
+                />
+            )}
+
+            <main
+                className="flex-1 relative overflow-hidden z-10 w-full min-h-0"
+                onClick={() => { setIsInteractingWithToolbar(false); setIsKeyPopoverOpen(false); }}
+            >
+                <AnimatePresence mode="popLayout" custom={direction} initial={false}>
+                    {activeRecipe ? (
+                        <motion.div
+                            key={`recipe-${activeRecipe}`}
+                            custom={direction}
+                            variants={viewVariants}
+                            initial="enter"
+                            animate="center"
+                            exit="exit"
+                            className="absolute inset-0 w-full h-full overflow-hidden"
+                        >
+                            <RecipeRouter
+                                activeRecipe={activeRecipe}
+                                generationConfig={generationConfig}
+                                updateGenerationConfig={updateGenerationConfig}
+                                updateAttachment={updateAttachment}
+                                handlePastedFiles={handlePastedFiles}
+                                handleGenerate={handleGenerate}
+                                isGenerating={isGenerating}
+                                imagesWithConfig={imagesWithConfig}
+                                openModal={openModal}
+                                handleAddToContext={handleAddToContext}
+                            />
+                        </motion.div>
+                    ) : currentView === 'studio' ? (
+                        <motion.div
+                            key="studio"
+                            custom={direction}
+                            variants={viewVariants}
+                            initial="enter"
+                            animate="center"
+                            exit="exit"
+                            className="absolute inset-0 w-full h-full flex flex-row overflow-hidden"
+                        >
+                            {!isModalOpen && (
+                                <LeftDebugPanel
+                                    workspaces={workspaces}
+                                    logs={mergedLogs}
+                                    batchesCount={batches.length}
+                                    imagesCount={allImages.length}
+                                />
+                            )}
+
+                            <div className="flex-1 h-full relative overflow-hidden flex flex-col">
+                                <div className="flex-1 relative min-h-0">
+                                    <ErrorBoundary fallbackMessage="Failed to render the image grid.">
+                                        <ImageGrid
+                                            key={activeWorkspaceId}
+                                            images={imagesWithConfig}
+                                            selectedImageIds={selectedImageIds}
+                                            onImageClick={openModal}
+                                            onSelectionChange={handleSelectionChange}
+                                            onRegenerate={(config) => handleGenerate(config.prompt, config, { preventModal: true })}
+                                            onAddToContext={handleAddToContext}
+                                            onLoadConfig={handleLoadRecipe}
+                                            onDelete={handleDelete}
+                                            onToggleFavorite={handleToggleFavorite}
+                                            isGenerating={isGenerating || jobs.some(j => j.status === 'processing')}
+                                            transitioningImageId={transitioningImageId}
+                                            activeModalImageId={activeCarouselId}
+                                            onSelectAll={() => handleSelectAll(allImages)}
+                                            onDeselectAll={handleDeselectAll}
+                                            onDownloadSelected={() => {
+                                                const selectedImages = imagesWithConfig.filter(img => selectedImageIds.includes(img.id));
+                                                if (selectedImages.length > 0) {
+                                                    downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
+                                                }
+                                            }}
+                                            onDownloadAll={() => {
+                                                if (imagesWithConfig.length > 0) {
+                                                    downloadMultipleImagesAsZip(imagesWithConfig, `assets-${Date.now()}.zip`);
+                                                }
+                                            }}
+                                            onDeleteSelected={handleDeleteSelected}
+                                            onClearWorkspace={() => handleClearWorkspace(activeWorkspaceId)}
+                                        />
+                                    </ErrorBoundary>
+                                </div>
+                                <FormatPreview ratio={previewRatio || generationConfig.aspectRatio} isVisible={!isModalOpen && (isInteractingWithToolbar || !!previewRatio)} isWorkspaceEmpty={allImages.length === 0} />
+                            </div>
+
+                            {!isModalOpen && (
+                                <div className="flex h-full">
+                                    <AnimatePresence>
+                                        {isQueueOpen && (
+                                            <motion.div
+                                                initial={{ width: 0, opacity: 0 }}
+                                                animate={{ width: 320, opacity: 1 }}
+                                                exit={{ width: 0, opacity: 0 }}
+                                                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                                                className="h-full overflow-hidden"
+                                            >
+                                                <QueuePanel
+                                                    jobs={jobs}
+                                                    serverJobs={studioJobs}
+                                                    onRetry={retry}
+                                                    onCancel={cancelJob}
+                                                    onRemove={removeJob}
+                                                    onClearCompleted={clearCompleted}
+                                                    isResting={isResting}
+                                                />
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                    <RightSystemPanel
+                                        onImportVault={handleImportVault}
+                                        onExportVault={() => exportToJson(batches, `vault-${Date.now()}.json`)}
+                                        isBackgroundEnabled={isBackgroundEnabled}
+                                        onToggleBackground={() => setIsBackgroundEnabled(p => !p)}
+                                        isQueueOpen={isQueueOpen}
+                                        onToggleQueue={() => setIsQueueOpen(!isQueueOpen)}
+                                        queueCount={jobs.length + activeServerJobCount}
+                                    />
+                                </div>
+                            )}
+                        </motion.div>
+                    ) : (
+                        <motion.div
+                            key="recipes-list"
+                            custom={direction}
+                            variants={viewVariants}
+                            initial="enter"
+                            animate="center"
+                            exit="exit"
+                            className="absolute inset-0 w-full h-full overflow-hidden"
+                        >
+                            <RecipesView onSelectRecipe={handleRecipeSelection} />
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </main>
+
+            {isToolbarVisible && !isModalOpen && (currentView === 'studio' || activeRecipe) && (
+                <BottomToolbar className="w-full relative z-30 shrink-0">
+                    <DropZoneOverlay isVisible={isDragging} />
+                    <Toolbar
+                        generationConfig={generationConfig}
+                        updateConfig={updateGenerationConfig}
+                        updateAttachment={updateAttachment}
+                        onGenerate={handleGenerate}
+                        isGenerating={isGenerating}
+                        generationStartTime={generationStartTime}
+                        onFileSelect={handleFileSelect}
+                        onFilesDrop={handlePastedFiles}
+                        onRemoveAttachment={handleRemoveAttachment}
+                        isEnhancingPrompt={isEnhancingPrompt}
+                        onEnhancePrompt={handleEnhancePrompt}
+                        setPreviewRatio={setPreviewRatio}
+                        setIsInteracting={setIsInteractingWithToolbar}
+                        onOpenEditor={(att) => {
+                            startViewTransition(() => {
+                                setImageToEdit(att);
+                                setIsEditorOpen(true);
+                                window.location.hash = 'editor';
+                            });
+                        }}
+                        isKeyPopoverOpen={isKeyPopoverOpen}
+                        onOpenKeySelector={() => startViewTransition(() => setIsKeyPopoverOpen(!isKeyPopoverOpen))}
+                        onSelectKey={async () => {
+                            await verifyCodexSession();
+                            startViewTransition(() => setIsKeyPopoverOpen(false));
+                        }}
+                        maxAttachments={maxAttachments}
+                    />
+                </BottomToolbar>
+            )}
+
+            {isModalOpen && (
+                <ImageCarousel
+                    activeImage={modalImage}
+                    allImages={imagesWithConfig}
+                    activeGenerationConfig={activeGenerationConfig}
+                    onClose={() => closeModal()}
+                    onDelete={handleDelete}
+                    onRegenerate={(config) => handleGenerate(config.prompt, config, { preventModal: true })}
+                    onAddToContext={(img) => { handleAddToContext(img); closeModal(); }}
+                    onLoadConfig={(config) => { handleLoadRecipe(config); closeModal(); }}
+                    onToggleFavorite={handleToggleFavorite}
+                    onActiveImageChange={setActiveCarouselId}
+                    transitionName="master-canvas"
+                />
+            )}
+            <ImageEditorModal
+                isOpen={isEditorOpen}
+                onClose={() => {
+                    startViewTransition(() => {
+                        setIsEditorOpen(false);
+                        setImageToEdit(null);
+                        if (window.location.hash === '#editor') {
+                            window.history.replaceState(null, '', window.location.pathname + window.location.search);
+                        }
+                    });
+                }}
+                image={imageToEdit}
+                onGenerate={handleExecuteEdit}
+                isGenerating={isEditingImage}
             />
-        )}
-        <ImageEditorModal 
-            isOpen={isEditorOpen} 
-            onClose={() => {
-                startViewTransition(() => {
-                    setIsEditorOpen(false);
-                    setImageToEdit(null);
-                    if (window.location.hash === '#editor') {
-                        window.history.replaceState(null, '', window.location.pathname + window.location.search);
-                    }
-                });
-            }} 
-            image={imageToEdit} 
-            onGenerate={handleExecuteEdit} 
-            isGenerating={isEditingImage} 
-        />
-        <DebugPanel isOpen={isDebugPanelOpen} onClose={toggleDebugPanel} logs={mergedLogs} appState={{}} />
-        <DashboardModal 
-            isOpen={isDashboardModalOpen} 
-            onClose={() => startViewTransition(() => setIsDashboardModalOpen(false))} 
-            batches={batches}
-            workspaces={workspaces}
-            onImportVault={handleImportVault}
-            onExportVault={() => exportToJson(batches, `vault-export-${Date.now()}.json`)}
-            onDeepScan={handleDeepScan}
-        />
-        <TrashModal
-            isOpen={isTrashModalOpen}
-            onClose={() => startViewTransition(() => setIsTrashModalOpen(false))}
-            trash={trash}
-            onRestore={restoreFromTrash}
-            onRestoreAll={restoreAllFromTrash}
-            onEmpty={() => setTrash([])}
-        />
-        <LimitReachedModal
-            isOpen={isLimitModalOpen}
-            onClose={handleDismissLimitModal}
-            onDownloadAndClear={handleDownloadAndClear}
-            batchCount={batches.length}
-        />
+            <DebugPanel isOpen={isDebugPanelOpen} onClose={toggleDebugPanel} logs={mergedLogs} appState={{}} />
+            <DashboardModal
+                isOpen={isDashboardModalOpen}
+                onClose={() => startViewTransition(() => setIsDashboardModalOpen(false))}
+                batches={batches}
+                workspaces={workspaces}
+                onImportVault={handleImportVault}
+                onExportVault={() => exportToJson(batches, `vault-export-${Date.now()}.json`)}
+                onDeepScan={handleDeepScan}
+            />
+            <OnboardingModal
+                apiBase={apiBase}
+                error={onboardingError}
+                health={onboardingHealth}
+                isChecking={isCheckingOnboarding}
+                isDesktopRuntime={isDesktopRuntime}
+                isOpen={isOnboardingOpen}
+                isReady={isOnboardingReady}
+                isStartingAppServer={isStartingAppServer}
+                onClose={() => startViewTransition(() => closeOnboarding())}
+                onComplete={() => startViewTransition(() => completeOnboarding())}
+                onRefresh={() => void refreshOnboardingHealth()}
+                onStartAppServer={() => void ensureAppServer()}
+            />
+            <TrashModal
+                isOpen={isTrashModalOpen}
+                onClose={() => startViewTransition(() => setIsTrashModalOpen(false))}
+                trash={trash}
+                onRestore={restoreFromTrash}
+                onRestoreAll={restoreAllFromTrash}
+                onEmpty={() => setTrash([])}
+            />
+            <LimitReachedModal
+                isOpen={isLimitModalOpen}
+                onClose={handleDismissLimitModal}
+                onDownloadAndClear={handleDownloadAndClear}
+                batchCount={batches.length}
+            />
         </div>
     );
 };
