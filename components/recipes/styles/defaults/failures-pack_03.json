@@ -1,0 +1,11 @@
+[
+  {
+    "presetId": "SP03-036",
+    "presetName": "Caustics",
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "4. Lighting & Atmosphere",
+    "error": "Job 9b2ab9e3-6a12-4a10-81b7-b570a114a16c ended as cancelled: Cancelled during server cutover to persistent category threads.",
+    "failedAt": "2026-05-06T03:17:13.622Z"
+  }
+]

@@ -247,6 +247,20 @@ export function listJobs() {
   return getDb().query('SELECT * FROM jobs ORDER BY created_at DESC LIMIT 100').all().map(mapJob);
 }
 
+export function listRecoverableJobs() {
+  return getDb()
+    .query(`
+      SELECT jobs.*
+      FROM jobs
+      LEFT JOIN assets ON assets.job_id = jobs.id AND assets.deleted_at IS NULL
+      WHERE jobs.status IN ('queued', 'running')
+        AND assets.id IS NULL
+      ORDER BY jobs.created_at ASC
+    `)
+    .all()
+    .map(mapJob);
+}
+
 export function addAsset(input: Omit<Asset, 'id' | 'createdAt' | 'deletedAt'>) {
   const asset: Asset = {
     ...input,

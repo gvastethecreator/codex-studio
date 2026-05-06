@@ -1,0 +1,11 @@
+[
+  {
+    "presetId": "SP06-035",
+    "presetName": "Screenprint (Serigraphy)",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "3. Printmaking",
+    "error": "Job a21ea091-83c4-49eb-a0d2-7105deede182 ended as cancelled: Cancelled during server cutover to persistent category threads.",
+    "failedAt": "2026-05-06T03:17:13.936Z"
+  }
+]

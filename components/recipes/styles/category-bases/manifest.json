@@ -6,7 +6,7 @@
     "key": "pack_01__camera_types",
     "file": "components/recipes/styles/category-bases/pack_01__camera_types.png",
     "jobId": "76f6575c-bb6b-415b-859e-60d3b80120e8",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\76f6575c-bb6b-415b-859e-60d3b80120e8-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_01__camera_types.png",
     "generatedAt": "2026-05-05T20:01:33.310Z"
   },
   {
@@ -16,7 +16,7 @@
     "key": "pack_01__film_stocks",
     "file": "components/recipes/styles/category-bases/pack_01__film_stocks.png",
     "jobId": "1237d535-d343-4ec4-ba24-ebeeb94a7588",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\1237d535-d343-4ec4-ba24-ebeeb94a7588-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_01__film_stocks.png",
     "generatedAt": "2026-05-05T19:59:29.390Z"
   },
   {
@@ -26,7 +26,7 @@
     "key": "pack_01__genres",
     "file": "components/recipes/styles/category-bases/pack_01__genres.png",
     "jobId": "9a230149-717b-4728-bbea-247f5b05d953",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\9a230149-717b-4728-bbea-247f5b05d953-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_01__genres.png",
     "generatedAt": "2026-05-05T20:05:19.406Z"
   },
   {
@@ -36,7 +36,7 @@
     "key": "pack_01__lighting",
     "file": "components/recipes/styles/category-bases/pack_01__lighting.png",
     "jobId": "9b03d18a-4510-4c41-8444-e58dcd18bc95",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\9b03d18a-4510-4c41-8444-e58dcd18bc95-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_01__lighting.png",
     "generatedAt": "2026-05-05T20:03:58.005Z"
   },
   {
@@ -46,7 +46,7 @@
     "key": "pack_01__portrait_styles",
     "file": "components/recipes/styles/category-bases/pack_01__portrait_styles.png",
     "jobId": "c6d3b7a9-c703-4272-8107-664b8fb368f9",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\c6d3b7a9-c703-4272-8107-664b8fb368f9-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_01__portrait_styles.png",
     "generatedAt": "2026-05-05T19:58:23.026Z"
   },
   {
@@ -56,7 +56,7 @@
     "key": "pack_02__animation_styles",
     "file": "components/recipes/styles/category-bases/pack_02__animation_styles.png",
     "jobId": "88174362-8732-4d84-811d-4b5b27d61372",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\88174362-8732-4d84-811d-4b5b27d61372-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_02__animation_styles.png",
     "generatedAt": "2026-05-05T20:10:42.078Z"
   },
   {
@@ -66,7 +66,7 @@
     "key": "pack_02__film_genres",
     "file": "components/recipes/styles/category-bases/pack_02__film_genres.png",
     "jobId": "20f092fa-8897-4922-8028-87afb18e08af",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\20f092fa-8897-4922-8028-87afb18e08af-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_02__film_genres.png",
     "generatedAt": "2026-05-05T20:06:34.722Z"
   },
   {
@@ -76,7 +76,7 @@
     "key": "pack_02__lighting_and_atmosphere",
     "file": "components/recipes/styles/category-bases/pack_02__lighting_and_atmosphere.png",
     "jobId": "b8116f64-d412-4f4c-baa8-97555ef6f76c",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\b8116f64-d412-4f4c-baa8-97555ef6f76c-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_02__lighting_and_atmosphere.png",
     "generatedAt": "2026-05-05T20:13:18.711Z"
   },
   {
@@ -86,7 +86,7 @@
     "key": "pack_02__photography_eras",
     "file": "components/recipes/styles/category-bases/pack_02__photography_eras.png",
     "jobId": "434ab474-af3a-4d79-a8d7-8c04d684c573",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\434ab474-af3a-4d79-a8d7-8c04d684c573-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_02__photography_eras.png",
     "generatedAt": "2026-05-05T20:12:12.453Z"
   },
   {
@@ -96,7 +96,7 @@
     "key": "pack_02__tv_and_broadcast",
     "file": "components/recipes/styles/category-bases/pack_02__tv_and_broadcast.png",
     "jobId": "dedf336c-1330-4b36-a1e2-dabbd34bf868",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\dedf336c-1330-4b36-a1e2-dabbd34bf868-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_02__tv_and_broadcast.png",
     "generatedAt": "2026-05-05T20:07:59.164Z"
   },
   {
@@ -106,7 +106,7 @@
     "key": "pack_03__3d_styles",
     "file": "components/recipes/styles/category-bases/pack_03__3d_styles.png",
     "jobId": "307570bb-f30d-4d88-9b9d-2c2ebc6d0c67",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\307570bb-f30d-4d88-9b9d-2c2ebc6d0c67-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_03__3d_styles.png",
     "generatedAt": "2026-05-05T20:16:55.821Z"
   },
   {
@@ -116,7 +116,7 @@
     "key": "pack_03__lighting_and_atmosphere",
     "file": "components/recipes/styles/category-bases/pack_03__lighting_and_atmosphere.png",
     "jobId": "1655a937-de33-4deb-bf9e-83413f68f667",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\1655a937-de33-4deb-bf9e-83413f68f667-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_03__lighting_and_atmosphere.png",
     "generatedAt": "2026-05-05T20:18:20.246Z"
   },
   {
@@ -126,7 +126,7 @@
     "key": "pack_03__materials",
     "file": "components/recipes/styles/category-bases/pack_03__materials.png",
     "jobId": "c60456c9-f717-463c-b4bb-877fcb4c4c2c",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\c60456c9-f717-463c-b4bb-877fcb4c4c2c-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_03__materials.png",
     "generatedAt": "2026-05-05T20:15:43.489Z"
   },
   {
@@ -136,7 +136,7 @@
     "key": "pack_03__render_engines",
     "file": "components/recipes/styles/category-bases/pack_03__render_engines.png",
     "jobId": "62b6b77d-69d3-4532-a38c-e39fc39d1858",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\62b6b77d-69d3-4532-a38c-e39fc39d1858-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_03__render_engines.png",
     "generatedAt": "2026-05-05T20:14:31.154Z"
   },
   {
@@ -146,7 +146,7 @@
     "key": "pack_04__children_s_illustration",
     "file": "components/recipes/styles/category-bases/pack_04__children_s_illustration.png",
     "jobId": "b60c3186-8c5e-4c65-b34b-69f10ffd5401",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\b60c3186-8c5e-4c65-b34b-69f10ffd5401-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_04__children_s_illustration.png",
     "generatedAt": "2026-05-05T20:43:43.907Z"
   },
   {
@@ -156,7 +156,7 @@
     "key": "pack_04__comic_book_styles",
     "file": "components/recipes/styles/category-bases/pack_04__comic_book_styles.png",
     "jobId": "89970b46-7bb5-4b6f-94d9-b00489209bd7",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\89970b46-7bb5-4b6f-94d9-b00489209bd7-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_04__comic_book_styles.png",
     "generatedAt": "2026-05-05T20:42:07.415Z"
   },
   {
@@ -166,7 +166,7 @@
     "key": "pack_04__concept_art",
     "file": "components/recipes/styles/category-bases/pack_04__concept_art.png",
     "jobId": "08ef519b-d598-41db-8e1b-fb8531e6e099",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\08ef519b-d598-41db-8e1b-fb8531e6e099-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_04__concept_art.png",
     "generatedAt": "2026-05-05T20:49:16.012Z"
   },
   {
@@ -176,7 +176,7 @@
     "key": "pack_04__editorial_and_poster",
     "file": "components/recipes/styles/category-bases/pack_04__editorial_and_poster.png",
     "jobId": "87105c1f-66ba-4cb3-88ac-5c39e0ec9af0",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\87105c1f-66ba-4cb3-88ac-5c39e0ec9af0-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_04__editorial_and_poster.png",
     "generatedAt": "2026-05-05T20:46:29.994Z"
   },
   {
@@ -186,7 +186,7 @@
     "key": "pack_04__ink_and_print",
     "file": "components/recipes/styles/category-bases/pack_04__ink_and_print.png",
     "jobId": "883a8143-957f-405f-87ea-9bb3188fedd7",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\883a8143-957f-405f-87ea-9bb3188fedd7-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_04__ink_and_print.png",
     "generatedAt": "2026-05-05T20:50:40.520Z"
   },
   {
@@ -196,7 +196,7 @@
     "key": "pack_05__2000s_classics",
     "file": "components/recipes/styles/category-bases/pack_05__2000s_classics.png",
     "jobId": "45a97089-bb8d-48eb-af3b-a505c5ba86ec",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\45a97089-bb8d-48eb-af3b-a505c5ba86ec-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_05__2000s_classics.png",
     "generatedAt": "2026-05-05T20:57:54.995Z"
   },
   {
@@ -206,7 +206,7 @@
     "key": "pack_05__70s_and_80s_retro_anime",
     "file": "components/recipes/styles/category-bases/pack_05__70s_and_80s_retro_anime.png",
     "jobId": "69fa95f3-dc57-4d62-bcc2-dad5074b358c",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\69fa95f3-dc57-4d62-bcc2-dad5074b358c-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_05__70s_and_80s_retro_anime.png",
     "generatedAt": "2026-05-05T20:53:26.460Z"
   },
   {
@@ -216,7 +216,7 @@
     "key": "pack_05__90s_golden_era",
     "file": "components/recipes/styles/category-bases/pack_05__90s_golden_era.png",
     "jobId": "ec33f973-2a5d-49b4-be21-2f2a7fb10c6f",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\ec33f973-2a5d-49b4-be21-2f2a7fb10c6f-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_05__90s_golden_era.png",
     "generatedAt": "2026-05-05T20:55:08.907Z"
   },
   {
@@ -226,7 +226,7 @@
     "key": "pack_05__classic_and_modern_shojo",
     "file": "components/recipes/styles/category-bases/pack_05__classic_and_modern_shojo.png",
     "jobId": "d18abc2d-fef0-4716-a2ae-4baa5f086738",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\d18abc2d-fef0-4716-a2ae-4baa5f086738-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_05__classic_and_modern_shojo.png",
     "generatedAt": "2026-05-05T21:03:42.033Z"
   },
   {
@@ -236,7 +236,7 @@
     "key": "pack_05__dark_fantasy_and_seinen",
     "file": "components/recipes/styles/category-bases/pack_05__dark_fantasy_and_seinen.png",
     "jobId": "6ca7d83d-c466-4b6f-b9ea-5bb5853252be",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\6ca7d83d-c466-4b6f-b9ea-5bb5853252be-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_05__dark_fantasy_and_seinen.png",
     "generatedAt": "2026-05-05T21:08:01.524Z"
   },
   {
@@ -246,7 +246,7 @@
     "key": "pack_05__isekai_and_high_fantasy",
     "file": "components/recipes/styles/category-bases/pack_05__isekai_and_high_fantasy.png",
     "jobId": "48214b5a-72d9-48c3-9953-bee20c04bb2b",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\48214b5a-72d9-48c3-9953-bee20c04bb2b-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_05__isekai_and_high_fantasy.png",
     "generatedAt": "2026-05-05T21:16:25.689Z"
   },
   {
@@ -256,7 +256,7 @@
     "key": "pack_05__mecha_and_cyberpunk",
     "file": "components/recipes/styles/category-bases/pack_05__mecha_and_cyberpunk.png",
     "jobId": "72352cc2-f0c1-4b5a-b189-93d87a4288a7",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\72352cc2-f0c1-4b5a-b189-93d87a4288a7-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_05__mecha_and_cyberpunk.png",
     "generatedAt": "2026-05-05T21:06:31.010Z"
   },
   {
@@ -266,7 +266,7 @@
     "key": "pack_05__slice_of_life_and_moe",
     "file": "components/recipes/styles/category-bases/pack_05__slice_of_life_and_moe.png",
     "jobId": "d3fb6ae6-f1fc-400f-a46c-025f4f003879",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\d3fb6ae6-f1fc-400f-a46c-025f4f003879-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_05__slice_of_life_and_moe.png",
     "generatedAt": "2026-05-05T21:13:39.694Z"
   },
   {
@@ -276,7 +276,7 @@
     "key": "pack_05__studio_masterpieces",
     "file": "components/recipes/styles/category-bases/pack_05__studio_masterpieces.png",
     "jobId": "838c18d6-eab0-453d-bc2c-97c59ec9a132",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\838c18d6-eab0-453d-bc2c-97c59ec9a132-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_05__studio_masterpieces.png",
     "generatedAt": "2026-05-05T21:10:47.573Z"
   },
   {
@@ -286,7 +286,7 @@
     "key": "pack_06__digital_art",
     "file": "components/recipes/styles/category-bases/pack_06__digital_art.png",
     "jobId": "70f94b87-d454-4275-847d-c28991df2d27",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\70f94b87-d454-4275-847d-c28991df2d27-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_06__digital_art.png",
     "generatedAt": "2026-05-05T21:21:33.840Z"
   },
   {
@@ -296,7 +296,7 @@
     "key": "pack_06__drawing_and_sketching",
     "file": "components/recipes/styles/category-bases/pack_06__drawing_and_sketching.png",
     "jobId": "35be1bed-27d2-4757-8542-c1a4c435c413",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\35be1bed-27d2-4757-8542-c1a4c435c413-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_06__drawing_and_sketching.png",
     "generatedAt": "2026-05-05T21:18:55.025Z"
   },
   {
@@ -306,7 +306,7 @@
     "key": "pack_06__mixed_media",
     "file": "components/recipes/styles/category-bases/pack_06__mixed_media.png",
     "jobId": "bd334df7-5a3d-42e5-b6dc-9dd5024d586c",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\bd334df7-5a3d-42e5-b6dc-9dd5024d586c-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_06__mixed_media.png",
     "generatedAt": "2026-05-05T21:22:55.236Z"
   },
   {
@@ -316,7 +316,7 @@
     "key": "pack_06__printmaking",
     "file": "components/recipes/styles/category-bases/pack_06__printmaking.png",
     "jobId": "81089c7d-3ce9-4e64-a72e-d6d376e1d319",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\81089c7d-3ce9-4e64-a72e-d6d376e1d319-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_06__printmaking.png",
     "generatedAt": "2026-05-05T21:20:18.256Z"
   },
   {
@@ -326,7 +326,7 @@
     "key": "pack_06__traditional_painting",
     "file": "components/recipes/styles/category-bases/pack_06__traditional_painting.png",
     "jobId": "efda3396-952a-45a5-bb73-5d7b84fa0d50",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\efda3396-952a-45a5-bb73-5d7b84fa0d50-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_06__traditional_painting.png",
     "generatedAt": "2026-05-05T21:17:39.086Z"
   },
   {
@@ -336,7 +336,7 @@
     "key": "pack_07__architectural_styles",
     "file": "components/recipes/styles/category-bases/pack_07__architectural_styles.png",
     "jobId": "5b98a8d5-31ea-4847-8af5-0a110f642e25",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\5b98a8d5-31ea-4847-8af5-0a110f642e25-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_07__architectural_styles.png",
     "generatedAt": "2026-05-05T21:25:26.215Z"
   },
   {
@@ -346,7 +346,7 @@
     "key": "pack_07__environment",
     "file": "components/recipes/styles/category-bases/pack_07__environment.png",
     "jobId": "c204e807-ccd8-48c5-b26d-e83e093fdc8b",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\c204e807-ccd8-48c5-b26d-e83e093fdc8b-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_07__environment.png",
     "generatedAt": "2026-05-05T21:26:56.755Z"
   },
   {
@@ -356,7 +356,7 @@
     "key": "pack_07__fantasy_architecture",
     "file": "components/recipes/styles/category-bases/pack_07__fantasy_architecture.png",
     "jobId": "49719eb1-676a-4124-9fe8-c2c00423cbaf",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\49719eb1-676a-4124-9fe8-c2c00423cbaf-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_07__fantasy_architecture.png",
     "generatedAt": "2026-05-05T21:29:45.659Z"
   },
   {
@@ -366,7 +366,7 @@
     "key": "pack_07__interior_design",
     "file": "components/recipes/styles/category-bases/pack_07__interior_design.png",
     "jobId": "76bbbaee-f232-4578-91d0-c652889d7121",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\76bbbaee-f232-4578-91d0-c652889d7121-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_07__interior_design.png",
     "generatedAt": "2026-05-05T21:24:04.626Z"
   },
   {
@@ -376,7 +376,7 @@
     "key": "pack_07__landscape_architecture",
     "file": "components/recipes/styles/category-bases/pack_07__landscape_architecture.png",
     "jobId": "accc00db-4a29-47b1-bae1-9a7ee897fe54",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\accc00db-4a29-47b1-bae1-9a7ee897fe54-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_07__landscape_architecture.png",
     "generatedAt": "2026-05-05T21:28:06.118Z"
   },
   {
@@ -386,7 +386,7 @@
     "key": "pack_08__contemporary_fashion",
     "file": "components/recipes/styles/category-bases/pack_08__contemporary_fashion.png",
     "jobId": "8a8a8d78-285c-4d89-9a8f-d15efa099884",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\8a8a8d78-285c-4d89-9a8f-d15efa099884-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_08__contemporary_fashion.png",
     "generatedAt": "2026-05-05T21:32:10.884Z"
   },
   {
@@ -396,7 +396,7 @@
     "key": "pack_08__fantasy_sci_fi_costume",
     "file": "components/recipes/styles/category-bases/pack_08__fantasy_sci_fi_costume.png",
     "jobId": "6938f87d-d1e7-4c56-8c20-a02b3a1f3e07",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\6938f87d-d1e7-4c56-8c20-a02b3a1f3e07-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_08__fantasy_sci_fi_costume.png",
     "generatedAt": "2026-05-05T21:36:57.793Z"
   },
   {
@@ -406,7 +406,7 @@
     "key": "pack_08__historical_and_fantasy",
     "file": "components/recipes/styles/category-bases/pack_08__historical_and_fantasy.png",
     "jobId": "bd549419-0b63-4e90-9988-8f251db41a6a",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\bd549419-0b63-4e90-9988-8f251db41a6a-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_08__historical_and_fantasy.png",
     "generatedAt": "2026-05-05T21:35:51.376Z"
   },
   {
@@ -416,7 +416,7 @@
     "key": "pack_08__subcultures",
     "file": "components/recipes/styles/category-bases/pack_08__subcultures.png",
     "jobId": "0b984156-d761-49b7-b183-31ac87e8083a",
-    "sourceAsset": "D:\\AI-Studio-Library\\assets\\0b984156-d761-49b7-b183-31ac87e8083a-codex.png",
+    "sourceAsset": "components/recipes/styles/category-bases/pack_08__subcultures.png",
     "generatedAt": "2026-05-05T21:34:32.978Z"
   }
 ]

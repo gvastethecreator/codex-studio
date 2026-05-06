@@ -16,6 +16,7 @@ dist
 dist-ssr
 *.local
 apps/studio-ui/dist
+components/recipes/styles/defaults/.locks/
 
 # Editor directories and files
 .vscode/*
