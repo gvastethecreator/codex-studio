@@ -52,7 +52,11 @@ const TASKS: Record<string, TaskDefinition> = {
   'fmt:check': {
     description: 'Check formatting without writing files.',
     steps: [
-      { label: 'Format Check', command: 'vp', args: ['fmt', '--threads', String(FMT_THREADS), '--check'] },
+      {
+        label: 'Format Check',
+        command: 'vp',
+        args: ['fmt', '--threads', String(FMT_THREADS), '--check'],
+      },
     ],
   },
   lint: {
@@ -168,7 +172,7 @@ function printCapturedTail(step: TaskStep, lines: string[], reason: 'success' | 
     return;
   }
 
-  const suffix = reason === 'success' ? 'resumen' : 'últimos detalles';
+  const suffix = reason === 'success' ? 'resumen' : '├║ltimos detalles';
   writeConsoleBanner(`${step.label} ${suffix} (salida completa en log)`);
 
   if (reason === 'success') {
@@ -239,7 +243,9 @@ async function runStep(step: TaskStep, log: NodeJS.WritableStream) {
   writeConsoleBanner(`${step.label}: ${printableCommand}`);
 
   if (!mirrorOutputToConsole) {
-    writeConsoleBanner(`${step.label}: salida detallada suprimida en terminal para evitar saturación; revisa el log si necesitas el detalle completo.`);
+    writeConsoleBanner(
+      `${step.label}: salida detallada suprimida en terminal para evitar saturaci├│n; revisa el log si necesitas el detalle completo.`,
+    );
   }
 
   const child = spawn(step.command, step.args, {
@@ -294,7 +300,7 @@ async function runStep(step: TaskStep, log: NodeJS.WritableStream) {
       }
 
       writeConsoleBanner(
-        `${step.label} falló tras ${formatDuration(performance.now() - startedAt)}`,
+        `${step.label} fall├│ tras ${formatDuration(performance.now() - startedAt)}`,
       );
       reject(
         new Error(`${step.command} ${step.args.join(' ')} exited with code ${code ?? 'unknown'}`),
@@ -330,7 +336,7 @@ async function main() {
   } catch (error) {
     writeBanner(log, `Task ${taskName} failed`);
     log.write(`${error instanceof Error ? (error.stack ?? error.message) : String(error)}\n`);
-    writeConsoleBanner(`Tarea "${taskName}" falló`);
+    writeConsoleBanner(`Tarea "${taskName}" fall├│`);
     throw error;
   } finally {
     await new Promise<void>((resolve) => {

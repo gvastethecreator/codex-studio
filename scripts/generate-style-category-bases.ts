@@ -4,6 +4,8 @@ import type { Asset, Job, Project } from '../packages/shared/src';
 import {
   RECIPE_ASSET_EXTENSION,
   categoryBasesDir,
+  defaultCodexHome,
+  defaultStudioLibraryDir,
   loadPacks,
   request,
   repoRelative,
@@ -27,7 +29,7 @@ interface ManifestEntry {
 
 const manifestPath = path.join(categoryBasesDir, 'manifest.json');
 const failuresPath = path.join(categoryBasesDir, 'failures.json');
-const libraryDir = process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library';
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
 
 async function exists(filePath: string) {
   try {
@@ -40,8 +42,7 @@ async function exists(filePath: string) {
 
 async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
   const transcriptPath = path.join(libraryDir, 'transcripts', jobId, 'events.jsonl');
-  const codexHome =
-    process.env.CODEX_HOME || path.join(process.env.USERPROFILE || 'C:\\Users\\cristian', '.codex');
+  const codexHome = process.env.CODEX_HOME || defaultCodexHome;
   const transcript = await readFile(transcriptPath, 'utf8').catch(() => '');
   for (const line of transcript.split(/\r?\n/)) {
     if (!line.trim()) continue;

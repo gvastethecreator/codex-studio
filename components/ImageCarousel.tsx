@@ -371,14 +371,14 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[100] flex flex-col bg-black/90 overflow-hidden pt-12 pb-12"
+      className="fixed inset-0 z-100 flex flex-col bg-black/90 overflow-hidden pt-12 pb-12"
       style={{ viewTransitionName: 'modal-backdrop' }}
       onClick={(e) => {
         e.stopPropagation();
       }}
     >
       <TopToolbar className="absolute top-0 left-0 right-0 w-full h-14 bg-black/80 backdrop-blur-sm flex items-center px-6 z-50 border-b border-white/5">
-        <div className="w-full max-w-[1920px] mx-auto flex items-center justify-between gap-4">
+        <div className="mx-auto flex w-full max-w-480 items-center justify-between gap-4">
           <Logo />
           <div
             ref={navScrollRef}
@@ -388,11 +388,12 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               <button
                 key={img.id}
                 onClick={() => handleJumpTo(idx)}
-                className={`relative h-10 w-10 flex-shrink-0 rounded-xl overflow-hidden transition-all duration-300 snap-center border cursor-pointer
-                            ${idx === currentIndex
-                    ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
-                    : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
-                  }
+                className={`relative h-10 w-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
+                            ${
+                              idx === currentIndex
+                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
+                                : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
+                            }
                         `}
               >
                 <img
@@ -480,8 +481,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
         </div>
       </section>
 
-      <BottomToolbar className="absolute bottom-0 left-0 right-0 w-full min-h-[68px] py-3 bg-black/80 backdrop-blur-sm flex items-center px-6 z-50 border-t border-white/5">
-        <div className="w-full max-w-[1920px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <BottomToolbar className="absolute bottom-0 left-0 right-0 z-50 flex w-full min-h-17 items-center border-t border-white/5 bg-black/80 px-6 py-3 backdrop-blur-sm">
+        <div className="mx-auto flex w-full max-w-480 flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <div className="flex-1 min-w-0 w-full">
             <p className="text-[12px] font-bold text-zinc-400 truncate tracking-tight leading-relaxed">
               {currentImage.config.prompt || 'Synthesized Matrix Output'}
@@ -499,7 +500,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           <div className="flex flex-wrap items-center gap-2 w-full md:w-auto justify-start md:justify-end">
             {/* COMPARE BUTTON */}
             {hasReference && (
-              <div className="flex items-center gap-1.5 p-1 bg-white/[0.03] rounded-xl">
+              <div className="flex items-center gap-1.5 rounded-xl bg-white/3 p-1">
                 <button
                   onPointerDown={() => setIsComparing(true)}
                   onPointerUp={() => setIsComparing(false)}
@@ -515,7 +516,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               </div>
             )}
 
-            <div className="flex items-center gap-1 p-1 bg-white/[0.03] rounded-xl flex-shrink-0">
+            <div className="flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
               <ActionButton
                 onClick={() => onToggleFavorite(currentImage.id)}
                 icon={<Heart size={16} fill={currentImage?.isFavorite ? 'currentColor' : 'none'} />}
@@ -541,7 +542,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             </div>
 
             {/* DOWNLOAD WITH OPTIONS */}
-            <div className="flex items-center gap-1 p-1 bg-white/[0.03] rounded-xl relative flex-shrink-0">
+            <div className="relative flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
               <ActionButton
                 onClick={() => onAddToContext(currentImage)}
                 icon={<PlusCircle size={16} />}
@@ -557,7 +558,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               </div>
             </div>
 
-            <div className="flex items-center gap-1 p-1 bg-white/[0.03] rounded-xl flex-shrink-0">
+            <div className="flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
               <ActionButton
                 onClick={() => onRegenerate(currentImage.config)}
                 icon={<RefreshCw size={16} />}

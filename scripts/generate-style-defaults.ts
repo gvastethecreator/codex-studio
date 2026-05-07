@@ -4,6 +4,8 @@ import type { Asset, Job, Project } from '../packages/shared/src';
 import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
 import {
   RECIPE_ASSET_EXTENSION,
+  defaultCodexHome,
+  defaultStudioLibraryDir,
   defaultsDir,
   loadPacks,
   repoRelative,
@@ -38,7 +40,7 @@ interface PendingPreset {
 
 const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini';
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
-const libraryDir = process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library';
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
 const IMAGE_RETRY_ATTEMPTS = Math.max(1, Number(process.env.CODEX_IMAGEGEN_RETRY_ATTEMPTS || 2));
 const WAIT_POLL_MS = 800;
 const RETRY_RETRY_DELAY_MS = 600;
@@ -474,8 +476,7 @@ async function exists(filePath: string) {
 
 async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
   const transcriptPath = path.join(libraryDir, 'transcripts', jobId, 'events.jsonl');
-  const codexHome =
-    process.env.CODEX_HOME || path.join(process.env.USERPROFILE || 'C:\\Users\\cristian', '.codex');
+  const codexHome = process.env.CODEX_HOME || defaultCodexHome;
   const transcript = await readFile(transcriptPath, 'utf8').catch(() => '');
   for (const line of transcript.split(/\r?\n/)) {
     if (!line.trim()) continue;
@@ -547,12 +548,6 @@ async function loadFailures(packId: string) {
   } catch {
     return [];
   }
-}
-
-async function saveFailure(packId: string, entry: unknown) {
-  const failures = await loadFailures(packId);
-  failures.push(entry);
-  await writeFile(failuresPathForPack(packId), `${JSON.stringify(failures, null, 2)}\n`, 'utf8');
 }
 
 function argValue(name: string) {

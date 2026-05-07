@@ -64,7 +64,7 @@ Cuando abras un issue o describas un problema, incluye:
 - comando usado (`bun run dev`, `bun run dev:server`, etc.);
 - que esperabas que ocurriera;
 - que ocurrio realmente;
-- logs o capturas relevantes de `D:\AI-Studio-Library\logs`, `logs/tooling/` o de tu directorio equivalente.
+- logs o capturas relevantes de la carpeta `logs/` dentro de tu Studio Library (por ejemplo `%USERPROFILE%\AI-Studio-Library\logs` en Windows), `logs/tooling/` o de tu directorio equivalente.
 
 ## Cambios especialmente valiosos ahora mismo
 

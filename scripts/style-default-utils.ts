@@ -1,4 +1,5 @@
 import { readFile, stat } from 'node:fs/promises';
+import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
 import yaml from 'js-yaml';
@@ -6,6 +7,7 @@ import type { StylePack, StylePresetDef } from '../components/recipes/styles/typ
 import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
 
 export const rootDir = process.cwd();
+const homeDir = process.env.USERPROFILE?.trim() || process.env.HOME?.trim() || os.homedir();
 export const recipeAssetsDir = path.join(rootDir, 'assets', 'recipes');
 export const recipeCardsDir = path.join(recipeAssetsDir, 'cards');
 export const recipeStylesDir = path.join(recipeAssetsDir, 'styles');
@@ -14,6 +16,8 @@ export const categoryBasesDir = path.join(recipeStylesDir, 'category-bases');
 export const defaultsDir = path.join(recipeStylesDir, 'defaults');
 export const previewsDir = path.join(recipeStylesDir, 'previews');
 export const RECIPE_ASSET_EXTENSION = '.webp';
+export const defaultStudioLibraryDir = path.join(homeDir, 'AI-Studio-Library');
+export const defaultCodexHome = path.join(homeDir, '.codex');
 
 export { styleCategoryImageKey };
 

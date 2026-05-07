@@ -1,8 +1,12 @@
 import { existsSync, readFileSync } from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import type { StudioSettings } from '../../../packages/shared/src';
 
-const DEFAULT_LIBRARY_DIR = 'D:\\AI-Studio-Library';
+const DEFAULT_LIBRARY_DIR = path.join(
+  process.env.USERPROFILE?.trim() || process.env.HOME?.trim() || os.homedir() || process.cwd(),
+  'AI-Studio-Library',
+);
 const DEFAULT_SERVER_PORT = 4317;
 const DEFAULT_CODEX_WS_PORT = 4318;
 const DEFAULT_CODEX_IMAGEGEN_MODEL = 'gpt-5.4-mini';

@@ -1,10 +1,12 @@
-import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { Database } from 'bun:sqlite';
 import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
 import {
   RECIPE_ASSET_EXTENSION,
+  defaultCodexHome,
+  defaultStudioLibraryDir,
   defaultsDir,
   loadPacks,
   repoRelative,
@@ -43,11 +45,10 @@ interface TranscriptImage {
   createdAt: string;
 }
 
-const libraryDir = process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library';
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
 const dbPath = path.join(libraryDir, 'library.sqlite');
 const transcriptDir = path.join(libraryDir, 'transcripts');
-const codexHome =
-  process.env.CODEX_HOME || path.join(process.env.USERPROFILE || 'C:\\Users\\cristian', '.codex');
+const codexHome = process.env.CODEX_HOME || defaultCodexHome;
 const generatedImagesDir = path.join(codexHome, 'generated_images');
 const dryRun = process.argv.includes('--dry-run');
 const force = process.argv.includes('--force');

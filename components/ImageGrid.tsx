@@ -106,7 +106,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         />
 
         <div
-          className={`absolute inset-0 transition-all duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100'}`}
+          className={`absolute inset-0 transition-all duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100'}`}
         ></div>
 
         <div className="absolute top-2 right-2 z-20 flex gap-2">
@@ -120,10 +120,11 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                 onToggleFavorite(image.id);
               }}
               className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
-                      ${image.isFavorite
-                  ? 'bg-accent-500 border-accent-400 text-white scale-110'
-                  : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
-                }`}
+                      ${
+                        image.isFavorite
+                          ? 'bg-accent-500 border-accent-400 text-white scale-110'
+                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
+                      }`}
             >
               <Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} strokeWidth={3} />
             </button>
@@ -132,10 +133,11 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
             <button
               onClick={handleSelectClick}
               className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
-                      ${isSelected
-                  ? 'bg-accent-600 border-accent-400 text-white scale-110'
-                  : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
-                }`}
+                      ${
+                        isSelected
+                          ? 'bg-accent-600 border-accent-400 text-white scale-110'
+                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
+                      }`}
             >
               <Check size={14} strokeWidth={3} />
             </button>

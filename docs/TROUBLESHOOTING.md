@@ -98,7 +98,7 @@ Nota: `build` muestra ahora solo un resumen corto en consola para evitar que el 
 
 ### La ruta por defecto no existe en tu sistema operativo
 
-Por defecto el proyecto usa `D:\AI-Studio-Library`, que es comodo para Windows pero no aplica a macOS o Linux.
+Por defecto el proyecto usa una ruta basada en el directorio home del usuario, por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows o `$HOME/AI-Studio-Library` en macOS/Linux.
 
 Solucion:
 
@@ -108,6 +108,7 @@ Solucion:
 
 Ejemplos:
 
+- Windows: `%USERPROFILE%\AI-Studio-Library`
 - macOS: `/Users/<tu-usuario>/AI-Studio-Library`
 - Linux: `/home/<tu-usuario>/AI-Studio-Library`
 

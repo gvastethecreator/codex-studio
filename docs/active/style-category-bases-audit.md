@@ -61,7 +61,7 @@ Key: `pack_02__film_genres`
 
 ![pack_02__film_genres](../../assets/recipes/styles/category-bases/pack_02__film_genres.webp)
 
-Representative presets: Film Noir, Spaghetti Western, 80s Sci-Fi, Technicolor Musical, French New Wave, Grindhouse/Exploitation, Silent Film, Found Footage Horror, Kaiju Movie (Suitmation), Kung Fu (Shaw Brothers), Cyberpunk Anime (90s), Wes Anderson Style
+Representative presets: Film Noir, Spaghetti Western, 80s Sci-Fi, Technicolor Musical, French New Wave, Grindhouse Cinema, Silent Film, Found Footage Horror, Kaiju Suitmation, Kung Fu Studio Epic, 90s Cyberpunk Anime, Symmetrical Storybook Cinema
 
 Review: PENDING
 
@@ -71,7 +71,7 @@ Key: `pack_02__tv_and_broadcast`
 
 ![pack_02__tv_and_broadcast](../../assets/recipes/styles/category-bases/pack_02__tv_and_broadcast.webp)
 
-Representative presets: 90s Sitcom, News Broadcast, Soap Opera, Reality TV Confessional, Music Video (Hype Williams), CCTV/Security Cam, VHS Home Video, Public Access TV, Infomercial, Sports Broadcast, Weather Channel, MTV 90s Grunge
+Representative presets: 90s Sitcom, News Broadcast, Soap Opera, Reality TV Confessional, Stylized Music Video, CCTV/Security Cam, VHS Home Video, Public Access TV, Infomercial, Sports Broadcast, Weather Channel, 90s Grunge Broadcast
 
 Review: PENDING
 
@@ -81,7 +81,7 @@ Key: `pack_02__animation_styles`
 
 ![pack_02__animation_styles](../../assets/recipes/styles/category-bases/pack_02__animation_styles.webp)
 
-Representative presets: Classic Disney (Cel), Studio Ghibli, Pixar Style (3D), Stop Motion (Laika), Looney Tunes (Chuck Jones), Fleischer (Rubber Hose), Anime (90s Aesthetic), Spider-Verse Style, UPA Style (Mid-Century), South Park Style, Rotoscoping, Papercraft Animation
+Representative presets: Golden Age Cel Feature, Painterly Nature Anime, Family Feature CG, Moody Stop-Motion, Golden Age Cartoon Frenzy, Rubber Hose Cartoon, Anime (90s Aesthetic), Comic Offset 3D, Mid-Century Flat Animation, Cutout TV Cartoon, Painterly Rotoscope, Papercraft Animation
 
 Review: PENDING
 
@@ -111,7 +111,7 @@ Key: `pack_03__render_engines`
 
 ![pack_03__render_engines](../../assets/recipes/styles/category-bases/pack_03__render_engines.webp)
 
-Representative presets: Octane Render, Unreal Engine 5, Redshift Render, Arnold Render, Blender Cycles, V-Ray, KeyShot, Pixar RenderMan, ZBrush Sculpt, Unity HDRP
+Representative presets: Spectral GPU Path Tracer, Next-Gen Real-Time Engine, Biased GPU Renderer, Feature Film Path Tracer, Open Path Tracer, ArchViz Raytracer, Product Studio Renderer, Feature Animation Renderer, Digital Clay Sculpt, High-End Game Pipeline
 
 Review: PENDING
 
@@ -181,7 +181,7 @@ Key: `pack_04__editorial_and_poster`
 
 ![pack_04__editorial_and_poster](../../assets/recipes/styles/category-bases/pack_04__editorial_and_poster.webp)
 
-Representative presets: Art Deco Poster, Art Nouveau (Mucha), Propaganda Poster, Psychedelic Poster (60s), Minimalist Vector, Collage Art (Dada), Bauhaus Poster, National Park Poster (WPA), Movie Poster (Painted), Infographic, Fashion Illustration, Album Cover (Surreal)
+Representative presets: Art Deco Poster, Art Nouveau Poster, Propaganda Poster, Psychedelic Poster (60s), Minimalist Vector, Collage Art (Dada), Bauhaus Poster, National Park Poster (WPA), Movie Poster (Painted), Infographic, Fashion Illustration, Album Cover (Surreal)
 
 Review: PENDING
 
@@ -221,7 +221,7 @@ Key: `pack_05__90s_golden_era`
 
 ![pack_05__90s_golden_era](../../assets/recipes/styles/category-bases/pack_05__90s_golden_era.webp)
 
-Representative presets: Dragon Ball Z, Sailor Moon (90s), Neon Genesis Evangelion, Cowboy Bebop, Ghost in the Shell (1995), Yu Yu Hakusho, Rurouni Kenshin, Trigun, Serial Experiments Lain, Cardcaptor Sakura
+Representative presets: Aura Battle Shonen, Sparkling Magical Team, Psychological Biomech Drama, Jazzy Space Noir, Philosophical Cyber Ops, Spirit Tournament Action, Wandering Swordsman Drama, Desert Space Gunslinger, Wired Existential Glitch, Dream Card Enchanter
 
 Review: PENDING
 
@@ -231,7 +231,7 @@ Key: `pack_05__2000s_classics`
 
 ![pack_05__2000s_classics](../../assets/recipes/styles/category-bases/pack_05__2000s_classics.webp)
 
-Representative presets: Naruto (Part 1), Bleach, One Piece (Early), Fullmetal Alchemist: Brotherhood, Death Note, Code Geass, Gurren Lagann, Samurai Champloo, FLCL, Soul Eater
+Representative presets: Headband Ninja Journey, Urban Spirit Blade, Grand Pirate Adventure, Alchemy Brotherhood Epic, Shadow Notebook Thriller, Masked Rebellion Mecha, Spiral Overdrive Mecha, Lo-Fi Sword Roadtrip, Chaotic Indie Adolescence, Gothic Academy Action
 
 Review: PENDING
 
@@ -241,7 +241,7 @@ Key: `pack_05__modern_shonen_and_action`
 
 ![pack_05__modern_shonen_and_action](../../assets/recipes/styles/category-bases/pack_05__modern_shonen_and_action.webp)
 
-Representative presets: Demon Slayer (Kimetsu no Yaiba), Jujutsu Kaisen, Chainsaw Man, My Hero Academia, Attack on Titan (Early), Attack on Titan (MAPPA), One Punch Man (Season 1), Mob Psycho 100, Hunter x Hunter (2011), Fate/stay night: Unlimited Blade Works
+Representative presets: Painterly Blade Fantasy, Gritty Urban Curses, Chaotic Splatter Action, Bright Hero Academy, Gritty Wallbound Survival, Colossal War Drama, Impact Frame Comedy Hero, Psychedelic Psychic Minimalism, Tactical Adventure Shonen, Blade Field Urban Fantasy
 
 Review: PENDING
 
@@ -251,7 +251,7 @@ Key: `pack_05__classic_and_modern_shojo`
 
 ![pack_05__classic_and_modern_shojo](../../assets/recipes/styles/category-bases/pack_05__classic_and_modern_shojo.webp)
 
-Representative presets: Rose of Versailles, Revolutionary Girl Utena, Fruits Basket (2019), Nana, Ouran High School Host Club, Violet Evergarden, Kimi ni Todoke, Yona of the Dawn, Vampire Knight, A Sign of Affection
+Representative presets: Ornate Palace Shojo, Theatrical Duel Symbolism, Soft Healing Ensemble, Punk Romance Drama, Rose-Petal Comedy Club, Luminous Letter Drama, Airy First-Love Tenderness, Crimson Hair Quest Romance, Velvet Gothic Academy, Cozy Sign-Language Romance
 
 Review: PENDING
 
@@ -261,7 +261,7 @@ Key: `pack_05__mecha_and_cyberpunk`
 
 ![pack_05__mecha_and_cyberpunk](../../assets/recipes/styles/category-bases/pack_05__mecha_and_cyberpunk.webp)
 
-Representative presets: Cyberpunk: Edgerunners, Psycho-Pass, Gundam: Iron-Blooded Orphans, Gundam SEED, Ergo Proxy, Promare, Darling in the Franxx, 86 EIGHTY-SIX, Ghost in the Shell: Stand Alone Complex, Aldnoah.Zero
+Representative presets: Neon Tragic Sprint, Dystopian Policing Grid, Heavy Industrial Mecha, Beam Opera Mecha, Gothic Tech Existentialism, Geometric Neon Rescue, Sleek Post-Apoc Mecha Romance, Spider-Mech War Drama, Tactical Network Cybercrime, Orbital Rival Mecha
 
 Review: PENDING
 
@@ -271,7 +271,7 @@ Key: `pack_05__dark_fantasy_and_seinen`
 
 ![pack_05__dark_fantasy_and_seinen](../../assets/recipes/styles/category-bases/pack_05__dark_fantasy_and_seinen.webp)
 
-Representative presets: Berserk (1997), Tokyo Ghoul, Hellsing Ultimate, Vinland Saga, Claymore, Parasyte -the maxim-, Made in Abyss, Dorohedoro, Goblin Slayer, Devilman Crybaby
+Representative presets: Crosshatched Doom Fantasy, Urban Monstrous Hunger, Crimson Gothic Hunt, Northern Historical Epic, Pale Blade Horror, Body-Horror Parasite Thriller, Lush Abyssal Wonder-Horror, Industrial Masked Chaos, Dungeon Exterminator Grit, Neon Tragic Metamorphosis
 
 Review: PENDING
 
@@ -281,7 +281,7 @@ Key: `pack_05__studio_masterpieces`
 
 ![pack_05__studio_masterpieces](../../assets/recipes/styles/category-bases/pack_05__studio_masterpieces.webp)
 
-Representative presets: Spirited Away (Ghibli), Princess Mononoke (Ghibli), Howl's Moving Castle (Ghibli), Your Name (Makoto Shinkai), Weathering With You (Shinkai), Paprika (Satoshi Kon), Perfect Blue (Satoshi Kon), Akira (Katsuhiro Otomo), Redline, Children of the Sea
+Representative presets: Bathhouse Reverie Fantasy, Forest Spirits Epic, Wandering Clockwork Castle, Skyglow Longing Drama, Rainlight City Romance, Parade Dream Surrealism, Mirror Identity Thriller, Light-Trail Mega-City, Hyperkinetic Cosmic Racing, Cosmic Ocean Lyrical
 
 Review: PENDING
 
@@ -291,7 +291,7 @@ Key: `pack_05__slice_of_life_and_moe`
 
 ![pack_05__slice_of_life_and_moe](../../assets/recipes/styles/category-bases/pack_05__slice_of_life_and_moe.webp)
 
-Representative presets: K-On! (KyoAni), Nichijou, Lucky Star, The Melancholy of Haruhi Suzumiya, Bocchi the Rock!, Yuru Camp, Non Non Biyori, Miss Kobayashi's Dragon Maid, Azumanga Daioh, Clannad
+Representative presets: Cozy Band Practice, Absurd School Comedy, Otaku Chat Slice, School Sci-Fi Whimsy, Anxiety Glitch Music Comedy, Campfire Comfort, Rural Quietude, Domestic Fantasy Chaos, Soft Surreal Classroom, Soft-Eyed Melodrama
 
 Review: PENDING
 
@@ -301,7 +301,7 @@ Key: `pack_05__isekai_and_high_fantasy`
 
 ![pack_05__isekai_and_high_fantasy](../../assets/recipes/styles/category-bases/pack_05__isekai_and_high_fantasy.webp)
 
-Representative presets: Sword Art Online (Aincrad), Re:Zero, Mushoku Tensei, Konosuba, Frieren: Beyond Journey's End, No Game No Life, Overlord, That Time I Got Reincarnated as a Slime, Shield Hero, DanMachi
+Representative presets: Glowing VR Adventure, Reset-Loop Dark Fantasy, Wandering Mage Chronicle, Party-Quest Comedy, Afterquest Melancholy Fantasy, Hyper-Saturated Strategy Fantasy, Bone Throne Dark Dominion, Monster-Nation Bright Fantasy, Defensive Underdog Fantasy, Dungeon Lantern Adventure
 
 Review: PENDING
 

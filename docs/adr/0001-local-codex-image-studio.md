@@ -19,7 +19,7 @@ Construiremos un studio local con estas piezas:
 - `codex app-server` como proceso local supervisado por el backend.
 - SQLite como fuente de verdad dentro de una biblioteca externa.
 - React/Vite como UI del studio.
-- `D:\AI-Studio-Library` como biblioteca externa por defecto.
+- `~/AI-Studio-Library` como biblioteca externa por defecto (por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows).
 - `$imagegen` como motor de generacion real invocado por turns de Codex.
 
 La automatizacion visual de Codex/ChatGPT no sera ruta critica. Podra agregarse despues como fallback auxiliar si algun flujo no esta expuesto por app-server.

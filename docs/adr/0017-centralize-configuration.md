@@ -10,7 +10,7 @@ Propuesto.
 
 | Archivo                      | Variable leída                     | Línea | Default                         |
 | ---------------------------- | ---------------------------------- | ----- | ------------------------------- |
-| `config.ts`                  | `STUDIO_LIBRARY_DIR`               | ~15   | `D:\AI-Studio-Library`          |
+| `config.ts`                  | `STUDIO_LIBRARY_DIR`               | ~15   | `~/AI-Studio-Library`           |
 | `config.ts`                  | `STUDIO_SERVER_PORT`               | ~16   | `4317`                          |
 | `config.ts`                  | `STUDIO_CODEX_WS_PORT`             | ~17   | `4318`                          |
 | `worker.ts`                  | `STUDIO_MAX_CONCURRENT_CODEX_JOBS` | ~12   | `1`                             |
@@ -60,7 +60,7 @@ export interface StudioSettings {
 
 export function getSettings(): StudioSettings {
   return {
-    libraryDir: process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library',
+    libraryDir: process.env.STUDIO_LIBRARY_DIR || path.join(os.homedir(), 'AI-Studio-Library'),
     serverPort: parseInt(process.env.STUDIO_SERVER_PORT || '4317', 10),
     codexWsPort: parseInt(process.env.STUDIO_CODEX_WS_PORT || '4318', 10),
 

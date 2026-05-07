@@ -108,7 +108,7 @@ Las fases son secuenciales (cada una construye sobre la anterior), pero dentro d
 
 ### 0004 — Platform Paths Seam
 
-**Problema**: Paths hardcodeados a Windows y al usuario `cristian` en 4 archivos. Sin seam para otras plataformas.
+**Problema**: Paths hardcodeados a Windows y a una máquina específica de desarrollo en 4 archivos. Sin seam para otras plataformas.
 
 **Solución**: Módulo `platformPaths.ts` con interfaz `resolvePlatformPath(key)`. Un adapter Windows (actual) y uno Unix (futuro).
 

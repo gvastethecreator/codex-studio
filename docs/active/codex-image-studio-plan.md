@@ -11,7 +11,7 @@ El studio debe usar `codex app-server` como integracion programatica local y `$i
 - No se usara `OPENAI_API_KEY` como requisito del producto.
 - El motor primario sera `codex app-server`, ejecutado localmente y supervisado por el backend.
 - La automatizacion visual de Codex/ChatGPT queda como fallback auxiliar, no como ruta critica.
-- La biblioteca vivira fuera del repo, por defecto en `D:\AI-Studio-Library`.
+- La biblioteca vivira fuera del repo, por defecto bajo el home del usuario en `~/AI-Studio-Library` (por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows).
 - La ruta de biblioteca se configurara con `STUDIO_LIBRARY_DIR` en `.env.local`.
 - La fuente de verdad local sera SQLite dentro de la biblioteca externa.
 - La cola de generacion correra en el backend aunque la UI se cierre.
@@ -46,7 +46,7 @@ codex-studio/
 ```
 
 ```text
-D:\AI-Studio-Library\
+<home>/AI-Studio-Library/
   db\studio.sqlite
   assets\
   thumbnails\
@@ -197,7 +197,7 @@ Tasks requeridas:
 
 ## Criterio de exito del primer bloque
 
-- `bun run studio:init` crea `D:\AI-Studio-Library` con estructura, SQLite y logs.
+- `bun run studio:init` crea la Studio Library por defecto (`~/AI-Studio-Library`) con estructura, SQLite y logs.
 - `bun run dev` levanta backend y UI.
 - La UI muestra health, projects, jobs, logs y assets.
 - Un job dry run completa y crea un asset local visible.

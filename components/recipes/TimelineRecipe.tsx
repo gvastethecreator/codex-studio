@@ -42,7 +42,7 @@ interface TimelineRecipeProps {
 }
 
 const TIME_OPTIONS = [
-  { label: 'Split Second', val: 'IMMEDIATE_REACTION', icon: '⚡' },
+  { label: 'Split Second', val: 'IMMEDIATE_REACTION', icon: 'ÔÜí' },
   { label: 'Seconds', val: 'SHORT_TERM_CONSEQUENCE', icon: 's' },
   { label: 'Minutes', val: 'MEDIUM_TERM_PROGRESSION', icon: 'm' },
   { label: 'Hours', val: 'DAY_NIGHT_CYCLE', icon: 'h' },
@@ -429,7 +429,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
             </span>
             <button
               onClick={() => setCameraMode((p) => (p === 'locked' ? 'dynamic' : 'locked'))}
-              className={`h-10 px-4 rounded-xl border flex items-center gap-2 transition-all min-w-[100px] ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-red-400' : 'bg-blue-500/10 border-blue-500/30 text-blue-400'}`}
+              className={`flex min-w-25 items-center gap-2 rounded-xl border px-4 transition-all h-10 ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-red-400' : 'bg-blue-500/10 border-blue-500/30 text-blue-400'}`}
             >
               {cameraMode === 'locked' ? <Lock size={14} /> : <Video size={14} />}
               <span className="text-[10px] font-black uppercase tracking-widest">{cameraMode}</span>
@@ -529,7 +529,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
-              className="w-full h-full flex flex-col items-center justify-center gap-6 cursor-pointer transition-all group bg-white/[0.01] hover:bg-white/[0.03]"
+              className="group flex h-full w-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-all hover:bg-white/3"
             >
               <input
                 type="file"
@@ -557,7 +557,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
       </div>
 
       {/* Timeline Strip (Carousel) */}
-      <div className="w-full h-auto flex flex-col gap-2 relative z-20 flex-shrink-0 bg-[#060606] pb-4 border-t border-white/5">
+      <div className="relative z-20 flex h-auto w-full shrink-0 flex-col gap-2 border-t border-white/5 bg-[#060606] pb-4">
         <div className="flex items-center justify-between px-6 pt-2">
           <div className="flex items-center gap-2 text-teal-500/60">
             <Film size={12} />
@@ -581,8 +581,8 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
         <div className="w-full h-28 relative group">
           {/* Playhead Indicator (Absolute Center) */}
           <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-teal-500 z-30 pointer-events-none shadow-[0_0_15px_rgba(20,184,166,1)]">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-teal-500" />
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-b-[8px] border-b-teal-500" />
+            <div className="absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-l-[6px] border-l-transparent border-t-8 border-t-teal-500" />
+            <div className="absolute bottom-0 left-1/2 h-0 w-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-b-8 border-b-teal-500 border-l-[6px] border-l-transparent" />
           </div>
 
           {/* SCROLL CONTAINER */}
@@ -593,7 +593,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
             style={{ paddingLeft: 'calc(50% - 96px)', paddingRight: 'calc(50% - 96px)' }}
           >
             {/* Background Pattern */}
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:20px_100%] pointer-events-none opacity-50" />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[20px_100%] pointer-events-none opacity-50" />
 
             <div className="flex items-center gap-4 px-4">
               {timelineItems.length === 0 && (
@@ -618,11 +618,12 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
                         if (el) itemRefs.current.set(item.id, el);
                         else itemRefs.current.delete(item.id);
                       }}
-                      className={`snap-center relative h-24 aspect-video flex-shrink-0 rounded-lg bg-zinc-900 border-2 overflow-hidden group transition-all duration-500 ease-out-expo
-                                            ${isActive
-                          ? 'border-teal-500 shadow-[0_0_40px_rgba(20,184,166,0.3)] scale-110 z-20 ring-1 ring-teal-400/50 opacity-100'
-                          : 'border-white/5 opacity-40 scale-90 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-95'
-                        }
+                      className={`group relative h-24 shrink-0 snap-center aspect-video overflow-hidden rounded-lg border-2 bg-zinc-900 transition-all duration-500 ease-out-expo
+                                            ${
+                                              isActive
+                                                ? 'border-teal-500 shadow-[0_0_40px_rgba(20,184,166,0.3)] scale-110 z-20 ring-1 ring-teal-400/50 opacity-100'
+                                                : 'border-white/5 opacity-40 scale-90 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-95'
+                                            }
                                         `}
                       onClick={() => handleItemClick(item)}
                     >
