@@ -37,7 +37,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
   const totalImages = batches.reduce((acc, b) => acc + b.images.length, 0);
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm">
+    <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/80 backdrop-blur-sm">
       <div className="vt-dashboard-modal bg-zinc-900 border border-white/10 rounded-3xl w-full max-w-xl shadow-2xl overflow-hidden flex flex-col">
         <div className="flex items-center justify-between p-6 border-b border-white/5">
           <div className="flex items-center gap-3">
@@ -45,7 +45,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
               <User size={20} />
             </div>
             <h2 className="text-sm font-black uppercase tracking-widest text-white">
-              User Dashboard
+              Studio Dashboard
             </h2>
           </div>
           <button
@@ -60,10 +60,10 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-2xl bg-zinc-800 border border-white/10 flex items-center justify-center text-zinc-400 relative overflow-hidden">
               <User size={40} />
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent-500/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-tr from-accent-500/20 to-transparent" />
             </div>
             <div>
-              <h3 className="text-xl font-black text-white uppercase tracking-tight">Guest User</h3>
+              <h3 className="text-xl font-black text-white uppercase tracking-tight">Local Session</h3>
               <div className="flex items-center gap-2 mt-1">
                 <span className="px-2 py-0.5 rounded-md bg-accent-500/10 text-accent-400 text-[10px] font-black uppercase tracking-widest">
                   Local Codex
@@ -97,7 +97,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
               <div className="flex items-center gap-2">
                 <Database size={14} className="text-purple-400" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                  Matrices
+                  Workspaces
                 </span>
               </div>
               <p className="text-lg font-mono font-black text-white">{workspaces.length}</p>
@@ -106,7 +106,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
 
           <div className="space-y-3">
             <h4 className="text-[10px] font-black uppercase tracking-widest text-zinc-600 px-1">
-              Vault Management
+              Workspace Snapshot
             </h4>
             <div className="grid grid-cols-2 gap-3">
               <button
@@ -117,7 +117,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
                   size={16}
                   className="text-blue-400 group-hover:scale-110 transition-transform"
                 />
-                Export Vault
+                Export Snapshot
               </button>
               <button
                 onClick={() => fileInputRef.current?.click()}
@@ -127,7 +127,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
                   size={16}
                   className="text-emerald-400 group-hover:scale-110 transition-transform"
                 />
-                Import Vault
+                Import Snapshot
                 <input
                   type="file"
                   ref={fileInputRef}
@@ -142,7 +142,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
               className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-accent-500/5 hover:bg-accent-500/10 border border-accent-500/10 text-accent-400 hover:text-accent-300 transition-all text-[10px] font-black uppercase tracking-widest cursor-pointer group mt-2"
             >
               <Activity size={14} className="animate-pulse" />
-              Deep Scan Recovery
+              Recover Saved Snapshots
             </button>
           </div>
 
@@ -152,7 +152,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
               Settings
             </button>
             <p className="text-[10px] text-zinc-700 font-bold uppercase tracking-widest">
-              AutoForge v2.4.0
+              Codex Studio Preview
             </p>
           </div>
         </div>

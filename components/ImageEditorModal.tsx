@@ -118,7 +118,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
       x,
       y,
       (brushSize * (canvasRef.current!.width / canvasRef.current!.getBoundingClientRect().width)) /
-        2,
+      2,
       0,
       Math.PI * 2,
     );
@@ -196,7 +196,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-[100] bg-black/98 backdrop-blur-3xl flex flex-col animate-in fade-in duration-500"
+      className="fixed inset-0 z-100 bg-black/98 backdrop-blur-3xl flex flex-col animate-in fade-in duration-500"
       onClick={onClose}
     >
       <div
@@ -212,7 +212,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
               Precision Inpaint
             </h2>
             <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-tight">
-              Regenerate Archives
+              Edit masked area and regenerate
             </p>
           </div>
         </div>
@@ -252,7 +252,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           />
           <div
             ref={brushCursorRef}
-            className="fixed pointer-events-none border border-white/40 shadow-2xl rounded-full mix-blend-difference z-[110]"
+            className="fixed pointer-events-none border border-white/40 shadow-2xl rounded-full mix-blend-difference z-110"
             style={{ width: brushSize, height: brushSize, transform: `translate(-50%, -50%)` }}
           />
         </div>
@@ -260,7 +260,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
         <div className="w-full md:w-96 bg-zinc-950 p-8 flex flex-col gap-10 shadow-[20px_0_60px_rgba(0,0,0,1)]">
           <div className="space-y-4">
             <label className="text-[10px] font-black text-zinc-700 uppercase tracking-widest">
-              Modification Prompt
+              Edit Prompt
             </label>
             <textarea
               ref={textareaRef}
@@ -268,14 +268,14 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
               value={editPrompt}
               onChange={(e) => setEditPrompt(e.target.value)}
               placeholder="Describe the changes..."
-              className="w-full min-h-[160px] max-h-[300px] bg-black/40 rounded-2xl p-5 text-[13px] font-bold leading-relaxed focus:bg-black/60 transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar"
+              className="w-full min-h-40 max-h-75 bg-black/40 rounded-2xl p-5 text-[13px] font-bold leading-relaxed focus:bg-black/60 transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar"
             />
           </div>
 
           <div className="space-y-8">
             <Slider
               icon={<Brush className="w-4 h-4 text-zinc-600" />}
-              label="Brush Aperture"
+              label="Brush Size"
               value={brushSize}
               min={5}
               max={180}
@@ -287,7 +287,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
               <button
                 onClick={handleUndo}
                 disabled={historyIndex < 0}
-                className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/[0.03] rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 disabled:opacity-10 transition-all"
+                className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 disabled:opacity-10 transition-all"
               >
                 Undo
               </button>
@@ -310,18 +310,17 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
               onClick={handleGenerate}
               disabled={isGenerating || !editPrompt.trim() || historyIndex < 0}
               className={`w-full h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-all active:scale-95 shadow-2xl
-                        ${
-                          isGenerating
-                            ? 'bg-accent-500/10 text-accent-500/40'
-                            : 'bg-accent-600 text-white hover:bg-accent-500 shadow-accent-950/40'
-                        } disabled:opacity-20 disabled:pointer-events-none`}
+                        ${isGenerating
+                  ? 'bg-accent-500/10 text-accent-500/40'
+                  : 'bg-accent-600 text-white hover:bg-accent-500 shadow-accent-950/40'
+                } disabled:opacity-20 disabled:pointer-events-none`}
             >
               {isGenerating ? (
                 <div className="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
               ) : (
                 <Sparkles size={18} />
               )}
-              {!isGenerating && <span>Execute Matrix</span>}
+              {!isGenerating && <span>Apply Edit</span>}
             </button>
           </div>
         </div>

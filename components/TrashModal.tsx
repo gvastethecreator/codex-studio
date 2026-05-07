@@ -59,22 +59,14 @@ export const TrashModal: React.FC<TrashModalProps> = ({
               {trash.length > 0 && (
                 <>
                   <button
-                    onClick={() => {
-                      if (window.confirm('Restore all archived batches to your workspace?')) {
-                        onRestoreAll();
-                      }
-                    }}
+                    onClick={onRestoreAll}
                     className="flex items-center gap-2 px-4 py-2 rounded-xl bg-accent-500/10 hover:bg-accent-500/20 text-accent-400 text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer"
                   >
                     <RotateCcw size={14} />
                     <span>Restore All</span>
                   </button>
                   <button
-                    onClick={() => {
-                      if (window.confirm('Permanently purge all archived batches?')) {
-                        onEmpty();
-                      }
-                    }}
+                    onClick={onEmpty}
                     className="flex items-center gap-2 px-4 py-2 rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-400 text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer"
                   >
                     <Trash size={14} />

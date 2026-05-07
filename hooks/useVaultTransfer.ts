@@ -43,16 +43,16 @@ export function useVaultTransfer({
         }
 
         replaceBatches(data, { ensureWorkspaces: true });
-        addToast('Vault Imported Successfully', 'success');
+        addToast('Workspace snapshot imported', 'success');
       } catch {
-        addToast('Invalid Vault File', 'error');
+        addToast('Invalid workspace snapshot file', 'error');
       }
     },
     [addToast, replaceBatches],
   );
 
   const exportVault = useCallback(() => {
-    exportToJson(batches, `vault-${Date.now()}.json`);
+    exportToJson(batches, `workspace-snapshot-${Date.now()}.json`);
   }, [batches]);
 
   const downloadAndClearWorkspace = useCallback(async () => {
@@ -69,11 +69,11 @@ export function useVaultTransfer({
 
       archiveBatches(batches);
       clearAllBatches();
-      addToast('Workspace cleared and downloaded successfully', 'success');
+      addToast('Workspace archive downloaded and canvas cleared', 'success');
       return true;
     } catch (error) {
       log(`Failed to download and clear workspace: ${formatErrorMessage(error)}`);
-      addToast('Failed to download and clear workspace', 'error');
+      addToast('Failed to download the workspace archive', 'error');
       return false;
     }
   }, [addToast, archiveBatches, batches, clearAllBatches, log]);

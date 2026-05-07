@@ -389,11 +389,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 key={img.id}
                 onClick={() => handleJumpTo(idx)}
                 className={`relative h-10 w-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
-                            ${
-                              idx === currentIndex
-                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
-                                : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
-                            }
+                            ${idx === currentIndex
+                    ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
+                    : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
+                  }
                         `}
               >
                 <img
@@ -485,14 +484,14 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
         <div className="mx-auto flex w-full max-w-480 flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <div className="flex-1 min-w-0 w-full">
             <p className="text-[12px] font-bold text-zinc-400 truncate tracking-tight leading-relaxed">
-              {currentImage.config.prompt || 'Synthesized Matrix Output'}
+              {currentImage.config.prompt || 'Generated image'}
             </p>
             <div className="flex gap-4 mt-2">
               <span className="text-[9px] font-black text-accent-500/70 uppercase tracking-widest">
                 {currentImage.config.model.split('-').slice(0, 2).join(' ').toUpperCase()}
               </span>
               <span className="text-[9px] font-black text-zinc-700 uppercase tracking-widest">
-                {currentImage.config.aspectRatio} ARCHIVE
+                {currentImage.config.aspectRatio} OUTPUT
               </span>
             </div>
           </div>

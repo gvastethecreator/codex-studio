@@ -173,7 +173,7 @@ export function useLocalStudioSync({
   }, [log, mergeBatches]);
 
   const recoverOrphanedBatches = useCallback(async () => {
-    addToast('Starting Deep Scan Recovery...', 'info');
+    addToast('Starting workspace recovery scan...', 'info');
 
     try {
       const entries = await getAllEntries();
@@ -227,13 +227,13 @@ export function useLocalStudioSync({
 
       addToast(
         uniqueRecovered.length > 0
-          ? `Success! Recovered ${uniqueRecovered.length} batches.`
-          : 'Deep Scan complete: No new fragments found.',
+          ? `Recovery complete: restored ${uniqueRecovered.length} saved workspace batch${uniqueRecovered.length === 1 ? '' : 'es'}.`
+          : 'Recovery scan complete: no additional saved workspace snapshots were found.',
         uniqueRecovered.length > 0 ? 'success' : 'info',
       );
     } catch (error) {
-      log(`Deep scan failed: ${error instanceof Error ? error.message : String(error)}`);
-      addToast('Error during Deep Scan', 'error');
+      log(`Workspace recovery scan failed: ${error instanceof Error ? error.message : String(error)}`);
+      addToast('Workspace recovery scan failed', 'error');
     }
   }, [addToast, log, mergeBatches]);
 

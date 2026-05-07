@@ -12,6 +12,7 @@ interface UseImageManagerProps {
   deleteImages: (imageIds: string[]) => void;
   toggleImageFavorite: (imageId: string) => void;
   clearWorkspace: (workspaceId: string) => void;
+  onRequestClearWorkspace?: (workspaceId: string, imageCount: number) => void;
 }
 
 /**
@@ -28,8 +29,14 @@ export const useImageManager = ({
   deleteImages,
   toggleImageFavorite,
   clearWorkspace,
+  onRequestClearWorkspace,
 }: UseImageManagerProps) => {
   const [selectedImageIds, setSelectedImageIds] = useState<string[]>([]);
+
+  // OPTIMIZATION: Memoize allImages to prevent new references on every render
+  const allImages = useMemo(() => {
+    return batches.flatMap((b) => b.images);
+  }, [batches]);
 
   const handleSelectionChange = useCallback((id: string, selected: boolean) => {
     startViewTransition(() => {
@@ -72,11 +79,6 @@ export const useImageManager = ({
     startViewTransition(performDelete);
   }, [selectedImageIds, deleteImages, log, modalImage, handleCloseModal]);
 
-  // OPTIMIZATION: Memoize allImages to prevent new references on every render
-  const allImages = useMemo(() => {
-    return batches.flatMap((b) => b.images);
-  }, [batches]);
-
   const handleSelectAll = useCallback(
     (images: GeneratedImage[]) => {
       startViewTransition(() => {
@@ -103,19 +105,18 @@ export const useImageManager = ({
 
   const handleClearWorkspace = useCallback(
     (activeWorkspaceId: string) => {
-      if (
-        window.confirm(
-          'Are you sure you want to move all images in this workspace to the archives?',
-        )
-      ) {
-        startViewTransition(() => {
-          clearWorkspace(activeWorkspaceId);
-          setSelectedImageIds([]);
-          log(`Moved workspace ${activeWorkspaceId} batches to archives.`);
-        });
+      if (onRequestClearWorkspace) {
+        onRequestClearWorkspace(activeWorkspaceId, allImages.length);
+        return;
       }
+
+      startViewTransition(() => {
+        clearWorkspace(activeWorkspaceId);
+        setSelectedImageIds([]);
+        log(`Moved workspace ${activeWorkspaceId} batches to archives.`);
+      });
     },
-    [clearWorkspace, log],
+    [allImages.length, clearWorkspace, log, onRequestClearWorkspace],
   );
 
   return {

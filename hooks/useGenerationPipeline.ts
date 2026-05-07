@@ -86,7 +86,7 @@ export const useGenerationPipeline = ({
       try {
         // Validate Recipe Requirements
         if (recipeId && configToUse.attachments.length === 0 && !configToUse.prompt?.trim()) {
-          throw new Error('This recipe requires a reference image or a prompt to synthesize.');
+          throw new Error('This recipe needs a reference image or a prompt before it can run.');
         }
 
         const { batch, generatedCount } = await runLocalGeneration({
@@ -111,8 +111,8 @@ export const useGenerationPipeline = ({
         }
 
         const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-        log(`Batch synthesized: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
-        addToast(`Matrix update: ${generatedCount} assets ready in ${duration}s`, 'success');
+  log(`Generated batch: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
+  addToast(`Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`, 'success');
       } catch (error) {
         handleGenerationError(error);
       } finally {
@@ -179,8 +179,8 @@ export const useGenerationPipeline = ({
         });
 
         const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-        log(`Edit synthesized: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
-        addToast('Matrix edit complete', 'success');
+  log(`Generated edit batch: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
+  addToast('Image edit complete', 'success');
         return batch;
       } catch (error) {
         handleGenerationError(error);

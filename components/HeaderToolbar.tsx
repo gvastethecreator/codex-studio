@@ -3,8 +3,8 @@ import { Trash2, ArrowLeft, Home, Activity } from 'lucide-react';
 import Tooltip from './Tooltip';
 import Logo from './Logo';
 import { TopToolbar } from './ui/TopToolbar';
+import type { StudioUsageSummary } from '../lib/studioDiagnostics';
 import type { Workspace, RecipeId } from '../types';
-import type { CodexAccountStatusResponse } from '../packages/shared/src';
 import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
 
@@ -25,9 +25,7 @@ interface HeaderToolbarProps {
   onOpenTrash: () => void;
   trashCount: number;
   onToggleDebug: () => void;
-  codexAccountStatus: CodexAccountStatusResponse | null;
-  isUsageLoading: boolean;
-  isBackendConnected: boolean;
+  usage: StudioUsageSummary;
 }
 
 const RECIPE_DATA: Record<Exclude<RecipeId, null>, { name: string }> = {
@@ -57,9 +55,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
   onOpenTrash,
   trashCount,
   onToggleDebug,
-  codexAccountStatus,
-  isUsageLoading,
-  isBackendConnected,
+  usage,
 }) => {
   const activeRecipeData = activeRecipe ? RECIPE_DATA[activeRecipe] : null;
 
@@ -69,7 +65,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
             <Logo isGenerating={isGenerating} />
-            <Tooltip content="Help" position="bottom">
+            <Tooltip content="Help & setup" position="bottom">
               <button
                 onClick={onOpenOnboarding}
                 className="rounded-lg border border-white/10 bg-white/5 px-2.5 py-1 text-[9px] font-black uppercase tracking-widest text-zinc-400 transition-colors hover:border-accent-500/30 hover:bg-accent-500/10 hover:text-white cursor-pointer"
@@ -77,7 +73,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
                 Help
               </button>
             </Tooltip>
-            <Tooltip content="Session Activity" position="bottom">
+            <Tooltip content="Studio activity" position="bottom">
               <button
                 onClick={onToggleDebug}
                 className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
@@ -85,7 +81,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
                 <Activity size={16} />
               </button>
             </Tooltip>
-            <Tooltip content="Recycle Bin" position="bottom">
+            <Tooltip content="Archived images" position="bottom">
               <button
                 onClick={onOpenTrash}
                 className={`p-1.5 rounded-lg transition-colors cursor-pointer relative ${trashCount > 0 ? 'text-red-400 hover:text-red-300 hover:bg-red-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
@@ -153,9 +149,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
           />
 
           <UsageStatusCard
-            codexAccountStatus={codexAccountStatus}
-            isUsageLoading={isUsageLoading}
-            isBackendConnected={isBackendConnected}
+            usage={usage}
             onOpenDashboard={onOpenDashboard}
           />
         </div>

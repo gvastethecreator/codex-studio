@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { resetStudioData as requestStudioReset } from '../services/localStudioService';
+import { resetStudioData as requestStudioResetData } from '../services/localStudioService';
 import { clearAll as clearAllIndexedDb } from '../utils/idb';
 import { startViewTransition } from '../utils/transitionUtils';
 
@@ -13,11 +13,69 @@ interface UseStudioResetProps {
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   resetStudioState: () => void;
   resetQueue: () => void;
-  refreshOnboardingHealth: () => Promise<unknown>;
-  refreshDiagnostics: () => Promise<unknown>;
+  refreshRuntime: () => Promise<unknown>;
   clearGenerationState: () => void;
   clearUiState: () => void;
   localStorageKeys?: readonly string[];
+}
+
+interface PerformStudioResetOptions {
+  addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
+  resetStudioState: () => void;
+  resetQueue: () => void;
+  refreshRuntime: () => Promise<unknown>;
+  clearGenerationState: () => void;
+  clearUiState: () => void;
+  localStorageKeys?: readonly string[];
+  requestStudioReset?: () => Promise<unknown>;
+  clearIndexedDb?: () => Promise<unknown>;
+  removeLocalStorageItem?: (key: string) => void;
+  startTransition?: (callback: () => void) => void;
+}
+
+export async function performStudioReset({
+  addToast,
+  resetStudioState,
+  resetQueue,
+  refreshRuntime,
+  clearGenerationState,
+  clearUiState,
+  localStorageKeys = DEFAULT_RESET_LOCAL_STORAGE_KEYS,
+  requestStudioReset = requestStudioResetData,
+  clearIndexedDb = clearAllIndexedDb,
+  removeLocalStorageItem = (key: string) => window.localStorage.removeItem(key),
+  startTransition = startViewTransition,
+}: PerformStudioResetOptions) {
+  try {
+    await requestStudioReset();
+    await clearIndexedDb();
+
+    for (const key of localStorageKeys) {
+      try {
+        removeLocalStorageItem(key);
+      } catch {
+        // Ignore storage cleanup failures; state reset still proceeds.
+      }
+    }
+
+    resetQueue();
+    clearGenerationState();
+
+    startTransition(() => {
+      resetStudioState();
+      clearUiState();
+    });
+
+    await refreshRuntime();
+    addToast(
+      'Studio reset complete. The local library, workspace cache, and database were rebuilt.',
+      'success',
+    );
+    return true;
+  } catch (error) {
+    addToast(error instanceof Error ? error.message : 'Studio reset failed', 'error');
+    return false;
+  }
 }
 
 /**
@@ -28,8 +86,7 @@ export function useStudioReset({
   addToast,
   resetStudioState,
   resetQueue,
-  refreshOnboardingHealth,
-  refreshDiagnostics,
+  refreshRuntime,
   clearGenerationState,
   clearUiState,
   localStorageKeys = DEFAULT_RESET_LOCAL_STORAGE_KEYS,
@@ -46,41 +103,18 @@ export function useStudioReset({
   const resetStudio = useCallback(async () => {
     if (isResettingStudio) return;
 
-    const confirmed =
-      typeof window === 'undefined'
-        ? true
-        : window.confirm(
-            'This will erase local workspaces, cached assets, backend jobs, logs, and the Codex Studio database. Continue?',
-          );
-
-    if (!confirmed) return;
-
     setIsResettingStudio(true);
 
     try {
-      await requestStudioReset();
-      await clearAllIndexedDb();
-
-      for (const key of localStorageKeys) {
-        try {
-          window.localStorage.removeItem(key);
-        } catch {
-          // Ignore storage cleanup failures; state reset still proceeds.
-        }
-      }
-
-      resetQueue();
-      clearGenerationState();
-
-      startViewTransition(() => {
-        resetStudioState();
-        clearUiState();
+      await performStudioReset({
+        addToast,
+        resetStudioState,
+        resetQueue,
+        refreshRuntime,
+        clearGenerationState,
+        clearUiState,
+        localStorageKeys,
       });
-
-      await Promise.allSettled([refreshOnboardingHealth(), refreshDiagnostics()]);
-      addToast('Studio reset complete. Local workspace and database were rebuilt.', 'success');
-    } catch (error) {
-      addToast(error instanceof Error ? error.message : 'Studio reset failed', 'error');
     } finally {
       if (isMountedRef.current) {
         setIsResettingStudio(false);
@@ -92,8 +126,7 @@ export function useStudioReset({
     clearUiState,
     isResettingStudio,
     localStorageKeys,
-    refreshDiagnostics,
-    refreshOnboardingHealth,
+    refreshRuntime,
     resetQueue,
     resetStudioState,
   ]);

@@ -11,7 +11,7 @@ import {
   Sparkles,
   Terminal,
 } from "lucide-react";
-import type { HealthResponse } from "../packages/shared/src";
+import type { StudioDiagnosticsSnapshot, StudioRuntimeStatusItem } from '../lib/studioDiagnostics';
 import { SidePanel } from "./SidePanel";
 
 type StatusTone = "success" | "warning" | "danger";
@@ -32,11 +32,16 @@ interface RightSystemPanelProps {
   isQueueOpen: boolean;
   onToggleQueue: () => void;
   queueCount: number;
-  health: HealthResponse | null;
-  isBackendConnected: boolean;
+  diagnostics: StudioDiagnosticsSnapshot;
   onResetStudio: () => void | Promise<void>;
   isResettingStudio: boolean;
 }
+
+const STATUS_ICONS: Record<StudioRuntimeStatusItem['key'], React.ComponentType<{ size?: number; className?: string }>> = {
+  backend: Server,
+  codexCli: Terminal,
+  appServer: Cpu,
+};
 
 const STATUS_TONE_STYLES: Record<StatusTone, { dot: string; value: string }> = {
   success: {
@@ -88,59 +93,28 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
     isQueueOpen,
     onToggleQueue,
     queueCount,
-    health,
-    isBackendConnected,
+    diagnostics,
     onResetStudio,
     isResettingStudio,
   }) => {
     const vaultInputRef = useRef<HTMLInputElement>(null);
     const statusItems = useMemo<StatusItem[]>(() => {
-      const backendStatus: StatusItem = {
-        label: "Backend",
-        value: isBackendConnected ? "Connected" : "Offline",
-        detail: isBackendConnected
-          ? `HTTP/SSE alive on localhost:${health?.config.serverPort ?? 4317}`
-          : "The frontend is not receiving a healthy connection from the local backend.",
-        tone: isBackendConnected ? "success" : "danger",
-        icon: Server,
-      };
-
-      const codexCliReady = health?.codexCli.available === true;
-      const codexCliStatus: StatusItem = {
-        label: "Codex CLI",
-        value: codexCliReady ? "Ready" : health ? "Unavailable" : "Pending",
-        detail: codexCliReady
-          ? health?.codexCli.version ?? health?.codexCli.command ?? "Codex CLI detected"
-          : health
-            ? "Install Codex CLI or verify it is available in PATH."
-            : "Waiting for the latest health probe.",
-        tone: codexCliReady ? "success" : health ? "danger" : "warning",
-        icon: Terminal,
-      };
-
-      const appServerRunning = health?.appServer.running === true;
-      const appServerStatus: StatusItem = {
-        label: "App Server",
-        value: appServerRunning ? "Running" : health ? "Idle" : "Pending",
-        detail: appServerRunning
-          ? health?.appServer.wsUrl ?? "Codex app-server websocket is live."
-          : health
-            ? "The Codex app-server will auto-start when a session needs it."
-            : "Waiting for the latest health probe.",
-        tone: appServerRunning ? "success" : "warning",
-        icon: Cpu,
-      };
-
-      return [backendStatus, codexCliStatus, appServerStatus];
-    }, [health, isBackendConnected]);
+      return diagnostics.statusItems.map((item) => ({
+        ...item,
+        icon: STATUS_ICONS[item.key],
+      }));
+    }, [diagnostics.statusItems]);
 
     return (
       <SidePanel position="right" label="SYSTEM">
         <div className="flex flex-col gap-6">
           <div>
             <h3 className="mb-2 px-1 text-[10px] font-black uppercase tracking-widest text-zinc-500">
-              Data Vault
+              Workspace Snapshot
             </h3>
+            <p className="mb-3 px-1 text-[11px] leading-relaxed text-zinc-500">
+              Import or export the current visual workspace as JSON. This does not back up the full local library stored on disk.
+            </p>
             <div className="flex flex-col gap-2">
               <input
                 type="file"
@@ -158,7 +132,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                   className="text-zinc-500 transition-colors group-hover:text-white"
                 />
                 <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300 group-hover:text-white">
-                  Import Vault
+                  Import Snapshot
                 </span>
               </button>
               <button
@@ -170,7 +144,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                   className="text-zinc-500 transition-colors group-hover:text-white"
                 />
                 <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300 group-hover:text-white">
-                  Export Vault
+                  Export Snapshot
                 </span>
               </button>
             </div>
@@ -253,11 +227,10 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                 </div>
                 <div className="min-w-0">
                   <p className="text-[10px] font-black uppercase tracking-[0.24em] text-rose-300/85">
-                    Full Studio Reset
+                    Rebuild Local Studio
                   </p>
                   <p className="mt-2 text-[11px] leading-relaxed text-zinc-300/85">
-                    Clears local workspaces, queue state, cached assets, logs, and recreates the
-                    SQLite studio database from scratch.
+                    Deletes the local library folders, archived items, queue state, logs, exports, and SQLite state, then recreates a clean Codex Studio library.
                   </p>
                 </div>
               </div>
@@ -274,7 +247,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                     <RotateCcw size={16} className="text-rose-300 transition-transform group-hover:-rotate-90" />
                   )}
                   <span className="text-[10px] font-black uppercase tracking-widest text-rose-100">
-                    {isResettingStudio ? "Resetting Studio..." : "Reset Workspace + Database"}
+                    {isResettingStudio ? "Rebuilding Studio..." : "Rebuild Library + Database"}
                   </span>
                 </div>
               </button>
