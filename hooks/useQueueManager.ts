@@ -124,6 +124,29 @@ export const useQueueManager = ({
     });
   }, []);
 
+  const resetQueue = useCallback(() => {
+    if (restTimerRef.current) {
+      clearTimeout(restTimerRef.current);
+      restTimerRef.current = null;
+    }
+
+    for (const controller of abortControllersRef.current.values()) {
+      if (!controller.signal.aborted) {
+        controller.abort();
+      }
+    }
+
+    abortControllersRef.current.clear();
+    linkedServerJobIdsRef.current.clear();
+    processingJobsRef.current.clear();
+    setIsResting(false);
+    setQueueTick(0);
+
+    startViewTransition(() => {
+      setJobs([]);
+    });
+  }, []);
+
   // Queue Processing Logic
   useEffect(() => {
     // We don't return early on isResting here because we might have forced jobs
@@ -256,6 +279,7 @@ export const useQueueManager = ({
     cancelJob,
     removeJob,
     clearCompleted,
+    resetQueue,
     isResting,
   };
 };

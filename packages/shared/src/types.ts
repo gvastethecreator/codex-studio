@@ -47,6 +47,23 @@ export interface CodexModelCatalogResponse {
   error: string | null;
 }
 
+export interface CodexUsageSnapshot {
+  available: number | string | null;
+  unit: string | null;
+  display: string | null;
+  path: string | null;
+  raw: unknown | null;
+}
+
+export interface CodexAccountStatusResponse {
+  authMode: CodexAuthMode;
+  planType: string | null;
+  usage: CodexUsageSnapshot | null;
+  source: 'app-server' | 'fallback';
+  fetchedAt: string;
+  error: string | null;
+}
+
 export interface StudioSettings {
   libraryDir: string;
   serverPort: number;
@@ -231,6 +248,13 @@ export interface HealthResponse {
     codexReady: boolean;
     onboardingReady: boolean;
   };
+}
+
+export interface StudioResetResponse {
+  ok: boolean;
+  resetAt: string;
+  libraryDir: string;
+  defaultProjectId: string;
 }
 
 export interface CreateJobRequest {

@@ -31,6 +31,7 @@ import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from
 import { log } from "./logger";
 import { cancelQueuedOrRunningJob, enqueueJob, getWorkerStatus } from "./worker";
 import {
+  getCodexAccountStatus,
   ensureAppServer,
   getAppServerDiagnostics,
   getCodexModelCatalog,
@@ -40,6 +41,7 @@ import { embedMetadata } from "./metadataEmbedder";
 import { getJobDetail } from './jobDetails';
 import { processReferences, ReferenceProcessingError } from "./referenceManager";
 import { createWorkspaceRoutes } from "./workspaceRoutes";
+import { resetStudioData } from './reset';
 import type { CreateJobRequest } from "../../../packages/shared/src";
 
 export interface StudioAppInstance {
@@ -134,6 +136,14 @@ export async function createStudioApp(
 
   app.get("/api/codex/models", async (c) => {
     return c.json(await getCodexModelCatalog());
+  });
+
+  app.get('/api/codex/account', async (c) => {
+    return c.json(await getCodexAccountStatus());
+  });
+
+  app.post('/api/studio/reset', async (c) => {
+    return c.json(await resetStudioData());
   });
 
   app.get("/api/projects", (c) => c.json(listProjects()));

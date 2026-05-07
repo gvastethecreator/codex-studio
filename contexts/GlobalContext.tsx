@@ -42,6 +42,7 @@ interface GlobalContextType {
   toggleImageFavorite: (imageId: string) => void;
   clearWorkspace: (workspaceId: string) => void;
   clearAllBatches: () => void;
+  resetStudioState: () => void;
 
   trash: GenerationBatch[];
   restoreFromTrash: (batchId: string) => void;
@@ -238,6 +239,10 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
     dispatch({ type: 'CLEAR_ALL_BATCHES' });
   }, []);
 
+  const resetStudioState = useCallback(() => {
+    dispatch({ type: 'RESET_STATE' });
+  }, []);
+
   const { toasts, addToast, removeToast } = useToasts();
   const { isDebugPanelOpen, toggleDebugPanel, openDebugPanel, closeDebugPanel } =
     usePanelManager();
@@ -287,6 +292,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       toggleImageFavorite,
       clearWorkspace,
       clearAllBatches,
+      resetStudioState,
       trash: state.trash,
       restoreFromTrash,
       restoreAllFromTrash,
@@ -325,6 +331,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       toggleImageFavorite,
       clearWorkspace,
       clearAllBatches,
+      resetStudioState,
       restoreFromTrash,
       restoreAllFromTrash,
       emptyTrash,

@@ -13,7 +13,15 @@ import {
 import { formatErrorMessage } from '../utils/runtimeLogger';
 import { detectRecipeFromContext } from '../utils/recipeUtils';
 import { startViewTransition } from '../utils/transitionUtils';
-import { cancelStudioJob, getStudioJobDetail } from '../services/localStudioService';
+import {
+  cancelStudioJob,
+  getCodexAccountStatus,
+  getStudioHealth,
+  getStudioJobDetail,
+  resetStudioData as requestStudioReset,
+} from '../services/localStudioService';
+import { DEFAULT_GENERATION_CONFIG } from '../constants';
+import { clearAll as clearAllIndexedDb } from '../utils/idb';
 
 import type {
   ImageGenerationConfig,
@@ -22,7 +30,11 @@ import type {
   AspectRatio,
   RecipeId,
 } from '../types';
-import type { JobDetailResponse } from '../packages/shared/src';
+import type {
+  CodexAccountStatusResponse,
+  HealthResponse,
+  JobDetailResponse,
+} from '../packages/shared/src';
 
 import { AppOverlays } from './AppOverlays';
 import { BottomToolbar } from './ui/BottomToolbar';
@@ -77,6 +89,13 @@ const viewVariants: Variants = {
 
 interface AppContentProps { }
 
+const STUDIO_DIAGNOSTICS_REFRESH_MS = 30_000;
+const STUDIO_RESET_LOCAL_STORAGE_KEYS = [
+  'generation-config',
+  'isBackgroundEnabled',
+  'user-wallet-balance',
+] as const;
+
 export const AppContent: React.FC<AppContentProps> = () => {
   const {
     logs,
@@ -96,6 +115,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
     toggleImageFavorite,
     clearWorkspace,
     clearAllBatches,
+    resetStudioState,
     trash,
     restoreFromTrash,
     restoreAllFromTrash,
@@ -130,6 +150,18 @@ export const AppContent: React.FC<AppContentProps> = () => {
   const [selectedStudioJobId, setSelectedStudioJobId] = useState<string | null>(null);
   const [selectedJobDetail, setSelectedJobDetail] = useState<JobDetailResponse | null>(null);
   const [isLoadingSelectedJob, setIsLoadingSelectedJob] = useState(false);
+  const [systemHealth, setSystemHealth] = useState<HealthResponse | null>(null);
+  const [codexAccountStatus, setCodexAccountStatus] =
+    useState<CodexAccountStatusResponse | null>(null);
+  const [hasFetchedDiagnostics, setHasFetchedDiagnostics] = useState(false);
+  const [isResettingStudio, setIsResettingStudio] = useState(false);
+  const isMountedRef = useRef(true);
+
+  useEffect(() => {
+    return () => {
+      isMountedRef.current = false;
+    };
+  }, []);
 
   const handleCancelPersistentJob = useCallback(
     async (jobId: string) => {
@@ -139,14 +171,13 @@ export const AppContent: React.FC<AppContentProps> = () => {
     [addToast],
   );
 
-  const { jobs, enqueue, retry, cancelJob, removeJob, clearCompleted, isResting } = useQueueManager(
-    {
+  const { jobs, enqueue, retry, cancelJob, removeJob, clearCompleted, resetQueue, isResting } =
+    useQueueManager({
       executeGeneration: pipeline.executeGeneration,
       isGenerating: pipeline.isGenerating,
       addToast,
       cancelPersistentJob: handleCancelPersistentJob,
-    },
-  );
+    });
 
   const [isQueueOpen, setIsQueueOpen] = useState(true);
   const [isEditorOpen, setIsEditorOpen] = useState(false);
@@ -160,6 +191,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
     studioJobs,
     mergedLogs,
     activeServerJobCount,
+    isBackendConnected,
     verifyCodexSession,
     recoverOrphanedBatches,
   } = useLocalStudioSync({
@@ -189,8 +221,54 @@ export const AppContent: React.FC<AppContentProps> = () => {
     shouldAutoOpen: batches.length === 0,
   });
 
+  const refreshStudioDiagnostics = useCallback(async () => {
+    const [healthResult, accountResult] = await Promise.allSettled([
+      getStudioHealth(),
+      getCodexAccountStatus(),
+    ]);
+
+    if (!isMountedRef.current) return;
+
+    setSystemHealth(healthResult.status === 'fulfilled' ? healthResult.value : null);
+    setCodexAccountStatus(
+      accountResult.status === 'fulfilled'
+        ? accountResult.value
+        : {
+          authMode: null,
+          planType: null,
+          usage: null,
+          source: 'fallback',
+          fetchedAt: new Date().toISOString(),
+          error:
+            accountResult.reason instanceof Error
+              ? accountResult.reason.message
+              : String(accountResult.reason),
+        },
+    );
+    setHasFetchedDiagnostics(true);
+  }, []);
+
+  useEffect(() => {
+    if (onboardingHealth) {
+      setSystemHealth(onboardingHealth);
+    }
+  }, [onboardingHealth]);
+
+  useEffect(() => {
+    void refreshStudioDiagnostics();
+
+    const interval = window.setInterval(() => {
+      void refreshStudioDiagnostics();
+    }, STUDIO_DIAGNOSTICS_REFRESH_MS);
+
+    return () => {
+      window.clearInterval(interval);
+    };
+  }, [refreshStudioDiagnostics]);
+
   const [direction, setDirection] = useState(0);
   const previousViewIndexRef = useRef(0);
+  const effectiveStudioHealth = systemHealth ?? onboardingHealth;
   const selectedStudioJobUpdatedAt = useMemo(
     () => studioJobs.find((job) => job.id === selectedStudioJobId)?.updatedAt ?? null,
     [selectedStudioJobId, studioJobs],
@@ -545,6 +623,83 @@ export const AppContent: React.FC<AppContentProps> = () => {
     [addToast, config, handleRecipeSelection, handleViewChange],
   );
 
+  const handleResetStudio = useCallback(async () => {
+    if (isResettingStudio) return;
+
+    const confirmed = window.confirm(
+      'This will erase local workspaces, cached assets, backend jobs, logs, and the Codex Studio database. Continue?',
+    );
+
+    if (!confirmed) return;
+
+    setIsResettingStudio(true);
+
+    try {
+      await requestStudioReset();
+      await clearAllIndexedDb();
+
+      for (const key of STUDIO_RESET_LOCAL_STORAGE_KEYS) {
+        try {
+          window.localStorage.removeItem(key);
+        } catch {
+          // Ignore storage cleanup failures; state reset still proceeds.
+        }
+      }
+
+      resetQueue();
+      config.setGenerationConfig({
+        ...DEFAULT_GENERATION_CONFIG,
+        attachments: [],
+        recipeParams: null,
+      });
+
+      startViewTransition(() => {
+        resetStudioState();
+        recipe.setActiveRecipe(null);
+        ui.setIsInteractingWithToolbar(false);
+        ui.setIsKeyPopoverOpen(false);
+        modal.closeModal();
+        navigateToStudio();
+        closeOverlay();
+        setSelectedStudioJobId(null);
+        setSelectedJobDetail(null);
+        setIsQueueOpen(true);
+        setIsEditorOpen(false);
+        setImageToEdit(null);
+        setPreviewRatio(null);
+        setIsToolbarVisible(true);
+        setIsEnhancingPrompt(false);
+        setIsEditingImage(false);
+        setIsDashboardModalOpen(false);
+        setIsTrashModalOpen(false);
+        setIsLimitModalOpen(false);
+        setHasDismissedLimitModal(false);
+      });
+
+      await Promise.allSettled([refreshOnboardingHealth(), refreshStudioDiagnostics()]);
+      addToast('Studio reset complete. Local workspace and database were rebuilt.', 'success');
+    } catch (error) {
+      addToast(error instanceof Error ? error.message : 'Studio reset failed', 'error');
+    } finally {
+      if (isMountedRef.current) {
+        setIsResettingStudio(false);
+      }
+    }
+  }, [
+    addToast,
+    closeOverlay,
+    config,
+    isResettingStudio,
+    modal,
+    navigateToStudio,
+    recipe,
+    refreshOnboardingHealth,
+    refreshStudioDiagnostics,
+    resetQueue,
+    resetStudioState,
+    ui,
+  ]);
+
   const handleImportVault = useCallback(
     async (e: React.ChangeEvent<HTMLInputElement>) => {
       const file = e.target.files?.[0];
@@ -671,6 +826,9 @@ export const AppContent: React.FC<AppContentProps> = () => {
           onOpenTrash={() => startViewTransition(() => setIsTrashModalOpen(true))}
           trashCount={trash.length}
           onToggleDebug={handleToggleDebugPanel}
+          codexAccountStatus={codexAccountStatus}
+          isUsageLoading={!hasFetchedDiagnostics}
+          isBackendConnected={isBackendConnected}
         />
       )}
 
@@ -759,6 +917,10 @@ export const AppContent: React.FC<AppContentProps> = () => {
                 setBackgroundEnabled={setBackgroundEnabled}
                 activeServerJobCount={activeServerJobCount}
                 onInspectJob={handleInspectStudioJob}
+                health={effectiveStudioHealth}
+                isBackendConnected={isBackendConnected}
+                onResetStudio={handleResetStudio}
+                isResettingStudio={isResettingStudio}
               />
             </motion.div>
           ) : (
@@ -854,7 +1016,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
         handleDeepScan={recoverOrphanedBatches}
         apiBase={apiBase}
         onboardingError={onboardingError}
-        onboardingHealth={onboardingHealth}
+        onboardingHealth={effectiveStudioHealth}
         isCheckingOnboarding={isCheckingOnboarding}
         isDesktopRuntime={isDesktopRuntime}
         isOnboardingOpen={isOnboardingOpen}

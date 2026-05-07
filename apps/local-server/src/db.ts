@@ -44,6 +44,18 @@ export function getDb() {
   return db;
 }
 
+export function closeDb() {
+  if (!db) return;
+
+  try {
+    db.close();
+  } catch {
+    // Best effort; reset flows can recreate the database afterwards.
+  } finally {
+    db = null;
+  }
+}
+
 export function migrateDb() {
   const database = getDb();
   database.run(`
