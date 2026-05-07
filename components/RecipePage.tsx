@@ -7,7 +7,7 @@ import type {
 } from '../types';
 import { RecipeRouter } from './RecipeRouter';
 
-interface RecipePageProps {
+export interface RecipePageProps {
   activeRecipe: RecipeId;
   generationConfig: ImageGenerationConfig;
   updateGenerationConfig: <K extends keyof ImageGenerationConfig>(

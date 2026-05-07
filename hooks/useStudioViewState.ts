@@ -21,7 +21,6 @@ export function useStudioViewState({
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [imageToEdit, setImageToEdit] = useState<Attachment | null>(null);
   const [previewRatio, setPreviewRatio] = useState<AspectRatio | null>(null);
-  const [isToolbarVisible, setIsToolbarVisible] = useState(true);
   const [isDashboardModalOpen, setIsDashboardModalOpen] = useState(false);
   const [isTrashModalOpen, setIsTrashModalOpen] = useState(false);
   const [isLimitModalOpen, setIsLimitModalOpen] = useState(false);
@@ -32,10 +31,6 @@ export function useStudioViewState({
       setIsLimitModalOpen(true);
     }
   }, [batchCount, hasDismissedLimitModal, isLimitModalOpen]);
-
-  const toggleToolbar = useCallback(() => {
-    startViewTransition(() => setIsToolbarVisible((previous) => !previous));
-  }, []);
 
   const openDashboard = useCallback(() => {
     startViewTransition(() => setIsDashboardModalOpen(true));
@@ -90,7 +85,6 @@ export function useStudioViewState({
     setIsEditorOpen(false);
     setImageToEdit(null);
     setPreviewRatio(null);
-    setIsToolbarVisible(true);
     setIsDashboardModalOpen(false);
     setIsTrashModalOpen(false);
     setIsLimitModalOpen(false);
@@ -106,8 +100,6 @@ export function useStudioViewState({
     setImageToEdit,
     previewRatio,
     setPreviewRatio,
-    isToolbarVisible,
-    toggleToolbar,
     isDashboardModalOpen,
     openDashboard,
     closeDashboard,

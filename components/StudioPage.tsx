@@ -1,5 +1,4 @@
-import React, { useCallback } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import React from "react";
 
 import type {
   AspectRatio,
@@ -11,15 +10,11 @@ import type {
 } from "../types";
 import type { HealthResponse, Job as StudioJob } from "../packages/shared/src";
 
-import { downloadMultipleImagesAsZip } from "../utils/fileUtils";
-import { ErrorBoundary } from "./ErrorBoundary";
-import { FormatPreview } from "./FormatPreview";
-import { ImageGrid } from "./ImageGrid";
 import { LeftDebugPanel } from "./LeftDebugPanel";
-import { QueuePanel } from "./QueuePanel";
-import { RightSystemPanel } from "./RightSystemPanel";
+import { StudioGridSurface } from "./studio/StudioGridSurface";
+import { StudioOperationsRail } from "./studio/StudioOperationsRail";
 
-interface StudioPageProps {
+export interface StudioPageProps {
   isModalOpen: boolean;
   workspaces: Workspace[];
   mergedLogs: LogEntry[];
@@ -60,7 +55,6 @@ interface StudioPageProps {
   removeJob: (jobId: string) => void;
   clearCompleted: () => void;
   isResting: boolean;
-  batchesForExport: GeneratedImageWithConfig[];
   exportBatches: () => void;
   handleImportVault: (e: React.ChangeEvent<HTMLInputElement>) => void | Promise<void>;
   isBackgroundEnabled: boolean;
@@ -121,41 +115,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({
   onResetStudio,
   isResettingStudio,
 }) => {
-  const handleGridRegenerate = useCallback(
-    (config: GeneratedImageWithConfig["config"]) => {
-      handleGenerate(config.prompt, config, { preventModal: true });
-    },
-    [handleGenerate],
-  );
-
-  const handleGridSelectAll = useCallback(() => {
-    handleSelectAll(allImages);
-  }, [allImages, handleSelectAll]);
-
-  const handleGridDownloadSelected = useCallback(() => {
-    const selectedImages = imagesWithConfig.filter((image) => selectedImageIds.includes(image.id));
-    if (selectedImages.length > 0) {
-      void downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
-    }
-  }, [imagesWithConfig, selectedImageIds]);
-
-  const handleGridDownloadAll = useCallback(() => {
-    if (imagesWithConfig.length > 0) {
-      void downloadMultipleImagesAsZip(imagesWithConfig, `assets-${Date.now()}.zip`);
-    }
-  }, [imagesWithConfig]);
-
-  const handleGridClearWorkspace = useCallback(() => {
-    handleClearWorkspace(activeWorkspaceId);
-  }, [activeWorkspaceId, handleClearWorkspace]);
-
-  const handleToggleBackground = useCallback(() => {
-    setBackgroundEnabled(!isBackgroundEnabled);
-  }, [isBackgroundEnabled, setBackgroundEnabled]);
-
-  const handleToggleQueue = useCallback(() => {
-    setIsQueueOpen((previous) => !previous);
-  }, [setIsQueueOpen]);
+  const hasProcessingJobs = jobs.some((job) => job.status === "processing");
 
   return (
     <>
@@ -171,81 +131,56 @@ export const StudioPage: React.FC<StudioPageProps> = ({
         />
       )}
 
-      <div className="flex-1 h-full relative overflow-hidden flex flex-col">
-        <div className="flex-1 relative min-h-0">
-          <ErrorBoundary fallbackMessage="Failed to render the image grid.">
-            <ImageGrid
-              key={activeWorkspaceId}
-              images={imagesWithConfig}
-              selectedImageIds={selectedImageIds}
-              onImageClick={openModal}
-              onSelectionChange={handleSelectionChange}
-              onRegenerate={handleGridRegenerate}
-              onAddToContext={handleAddToContext}
-              onLoadConfig={handleLoadRecipe}
-              onDelete={handleDelete}
-              onToggleFavorite={handleToggleFavorite}
-              isGenerating={isGenerating || jobs.some((job) => job.status === "processing")}
-              transitioningImageId={transitioningImageId}
-              activeModalImageId={activeModalImageId}
-              onSelectAll={handleGridSelectAll}
-              onDeselectAll={handleDeselectAll}
-              onDownloadSelected={handleGridDownloadSelected}
-              onDownloadAll={handleGridDownloadAll}
-              onDeleteSelected={handleDeleteSelected}
-              onClearWorkspace={handleGridClearWorkspace}
-            />
-          </ErrorBoundary>
-        </div>
-        <FormatPreview
-          ratio={previewRatio || generationAspectRatio}
-          isVisible={!isModalOpen && (isInteractingWithToolbar || !!previewRatio)}
-          isWorkspaceEmpty={allImages.length === 0}
-        />
-      </div>
+      <StudioGridSurface
+        isModalOpen={isModalOpen}
+        activeWorkspaceId={activeWorkspaceId}
+        allImages={allImages}
+        imagesWithConfig={imagesWithConfig}
+        selectedImageIds={selectedImageIds}
+        openModal={openModal}
+        handleSelectionChange={handleSelectionChange}
+        handleGenerate={handleGenerate}
+        handleAddToContext={handleAddToContext}
+        handleLoadRecipe={handleLoadRecipe}
+        handleDelete={handleDelete}
+        handleToggleFavorite={handleToggleFavorite}
+        isGenerating={isGenerating}
+        hasProcessingJobs={hasProcessingJobs}
+        transitioningImageId={transitioningImageId}
+        activeModalImageId={activeModalImageId}
+        handleSelectAll={handleSelectAll}
+        handleDeselectAll={handleDeselectAll}
+        handleDeleteSelected={handleDeleteSelected}
+        handleClearWorkspace={handleClearWorkspace}
+        previewRatio={previewRatio}
+        generationAspectRatio={generationAspectRatio}
+        isInteractingWithToolbar={isInteractingWithToolbar}
+      />
 
-      {!isModalOpen && (
-        <div className="flex h-full">
-          <AnimatePresence>
-            {isQueueOpen && (
-              <motion.div
-                initial={{ width: 0, opacity: 0 }}
-                animate={{ width: 320, opacity: 1 }}
-                exit={{ width: 0, opacity: 0 }}
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                className="h-full overflow-hidden"
-              >
-                <QueuePanel
-                  jobs={jobs}
-                  serverJobs={studioJobs}
-                  selectedJobId={selectedStudioJobId}
-                  onRetry={retry}
-                  onCancel={cancelJob}
-                  onCancelServerJob={cancelPersistentJob}
-                  onRemove={removeJob}
-                  onClearCompleted={clearCompleted}
-                  onInspectJob={onInspectJob}
-                  onClose={handleToggleQueue}
-                  isResting={isResting}
-                />
-              </motion.div>
-            )}
-          </AnimatePresence>
-          <RightSystemPanel
-            onImportVault={handleImportVault}
-            onExportVault={exportBatches}
-            isBackgroundEnabled={isBackgroundEnabled}
-            onToggleBackground={handleToggleBackground}
-            isQueueOpen={isQueueOpen}
-            onToggleQueue={handleToggleQueue}
-            queueCount={jobs.length + activeServerJobCount}
-            health={health}
-            isBackendConnected={isBackendConnected}
-            onResetStudio={onResetStudio}
-            isResettingStudio={isResettingStudio}
-          />
-        </div>
-      )}
+      <StudioOperationsRail
+        isModalOpen={isModalOpen}
+        isQueueOpen={isQueueOpen}
+        setIsQueueOpen={setIsQueueOpen}
+        jobs={jobs}
+        studioJobs={studioJobs}
+        selectedStudioJobId={selectedStudioJobId}
+        retry={retry}
+        cancelJob={cancelJob}
+        cancelPersistentJob={cancelPersistentJob}
+        removeJob={removeJob}
+        clearCompleted={clearCompleted}
+        isResting={isResting}
+        exportBatches={exportBatches}
+        handleImportVault={handleImportVault}
+        isBackgroundEnabled={isBackgroundEnabled}
+        setBackgroundEnabled={setBackgroundEnabled}
+        activeServerJobCount={activeServerJobCount}
+        onInspectJob={onInspectJob}
+        health={health}
+        isBackendConnected={isBackendConnected}
+        onResetStudio={onResetStudio}
+        isResettingStudio={isResettingStudio}
+      />
     </>
   );
 };

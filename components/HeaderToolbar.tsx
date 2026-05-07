@@ -9,11 +9,7 @@ import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
 
 interface HeaderToolbarProps {
-  imageCount: number;
-  selectedImageCount: number;
   isGenerating: boolean;
-  isToolbarVisible: boolean;
-  onToggleToolbar: () => void;
   workspaces: (Workspace & { imageCount?: number })[];
   activeWorkspaceId: string;
   onSwitchWorkspace: (id: string) => void;
@@ -45,8 +41,6 @@ const RECIPE_DATA: Record<Exclude<RecipeId, null>, { name: string }> = {
 };
 
 export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
-  imageCount,
-  selectedImageCount,
   isGenerating,
   workspaces,
   activeWorkspaceId,
@@ -67,7 +61,6 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
   isUsageLoading,
   isBackendConnected,
 }) => {
-  const isAllSelected = imageCount > 0 && selectedImageCount === imageCount;
   const activeRecipeData = activeRecipe ? RECIPE_DATA[activeRecipe] : null;
 
   return (

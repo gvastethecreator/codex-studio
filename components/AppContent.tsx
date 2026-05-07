@@ -1,5 +1,4 @@
 import React, { useCallback } from 'react';
-import { AnimatePresence, motion, type Variants } from 'motion/react';
 
 import { useHashRouter } from '../hooks/useHashRouter';
 import { useImageInputSurface } from '../hooks/useImageInputSurface';
@@ -18,56 +17,25 @@ import { cancelStudioJob } from '../services/localStudioService';
 
 import type { RecipeId } from '../types';
 
-import { AppOverlays } from './AppOverlays';
-import { BottomToolbar } from './ui/BottomToolbar';
-import { Toolbar } from './Toolbar';
+import {
+  AppOverlays,
+  type StudioImageOverlaysProps,
+  type StudioSystemOverlaysProps,
+  type StudioWorkspaceOverlaysProps,
+} from './AppOverlays';
+import { type RecipePageProps } from './RecipePage';
+import { type StudioPageProps } from './StudioPage';
+import { StudioGenerationDock } from './shell/StudioGenerationDock';
+import { StudioViewport } from './shell/StudioViewport';
+import { type ToolbarProps } from './Toolbar';
 import { HeaderToolbar } from './HeaderToolbar';
 import LiquidBlackBackground from './LiquidBlackBackground';
 import ToastContainer from './ToastContainer';
-import DropZoneOverlay from './DropZoneOverlay';
-import { RecipePage } from './RecipePage';
-import { RecipesView } from './RecipesView';
-import { StudioPage } from './StudioPage';
 import { useGlobal } from '../contexts/GlobalContext';
 import { useGeneration } from '../contexts/GenerationContext';
 import { useQueueManager } from '../hooks/useQueueManager';
 import { useStudioOnboarding } from '../hooks/useStudioOnboarding';
 import { useLocalStudioSync } from '../hooks/useLocalStudioSync';
-
-const viewVariants: Variants = {
-  enter: (direction: number) => ({
-    x: direction > 0 ? '100%' : '-100%',
-    opacity: 0,
-    scale: 0.98,
-    filter: 'blur(4px)',
-  }),
-  center: {
-    zIndex: 1,
-    x: 0,
-    opacity: 1,
-    scale: 1,
-    filter: 'blur(0px)',
-    transition: {
-      x: { type: 'spring' as const, stiffness: 260, damping: 26 },
-      opacity: { duration: 0.3 },
-      scale: { duration: 0.4 },
-      filter: { duration: 0.4 },
-    },
-  },
-  exit: (direction: number) => ({
-    zIndex: 0,
-    x: direction < 0 ? '50%' : '-50%',
-    opacity: 0,
-    scale: 0.98,
-    filter: 'blur(4px)',
-    transition: {
-      x: { type: 'spring' as const, stiffness: 260, damping: 26 },
-      opacity: { duration: 0.3 },
-      scale: { duration: 0.4 },
-      filter: { duration: 0.4 },
-    },
-  }),
-};
 
 interface AppContentProps { }
 
@@ -212,8 +180,6 @@ export const AppContent: React.FC<AppContentProps> = () => {
     setImageToEdit,
     previewRatio,
     setPreviewRatio,
-    isToolbarVisible,
-    toggleToolbar,
     isDashboardModalOpen,
     openDashboard,
     closeDashboard,
@@ -345,6 +311,147 @@ export const AppContent: React.FC<AppContentProps> = () => {
   const { isDragging, handleDragOver, handleDragLeave, handleDrop } = useImageInputSurface({
     onFiles: config.handlePastedFiles,
   });
+  const imageOverlays: StudioImageOverlaysProps = {
+    modalImage: modal.modalImage,
+    imagesWithConfig,
+    activeGenerationConfig: pipeline.activeGenerationConfig,
+    closeModal: handleCloseModal,
+    handleDelete,
+    handleGenerate,
+    handleAddToContext: config.handleAddToContext,
+    handleLoadRecipe,
+    handleToggleFavorite,
+    setActiveCarouselId: modal.setActiveCarouselId,
+    isEditorOpen,
+    closeEditor,
+    imageToEdit,
+    handleExecuteEdit,
+    isEditingImage,
+  };
+  const systemOverlays: StudioSystemOverlaysProps = {
+    isDebugPanelOpen,
+    closeDebugPanel,
+    mergedLogs,
+    isDashboardModalOpen,
+    closeDashboard,
+    batches,
+    workspaces,
+    studioJobs,
+    imagesCount: imagesWithConfig.length,
+    selectedJobDetail,
+    isLoadingSelectedJob,
+    onInspectJob: handleInspectStudioJob,
+    onClearSelectedJob: clearSelectedJob,
+    handleImportVault: importVault,
+    handleDeepScan: recoverOrphanedBatches,
+    apiBase,
+    onboardingError,
+    onboardingHealth: effectiveStudioHealth,
+    isCheckingOnboarding,
+    isDesktopRuntime,
+    isOnboardingOpen,
+    isOnboardingReady,
+    isStartingAppServer,
+    closeOnboarding: () => startViewTransition(() => closeOnboarding()),
+    completeOnboarding: () => startViewTransition(() => completeOnboarding()),
+    refreshOnboardingHealth: () => void refreshOnboardingHealth(),
+    ensureAppServer: () => void ensureAppServer(),
+  };
+  const workspaceOverlays: StudioWorkspaceOverlaysProps = {
+    isTrashModalOpen,
+    closeTrash,
+    trash,
+    restoreFromTrash,
+    restoreAllFromTrash,
+    emptyTrash,
+    isLimitModalOpen,
+    handleDismissLimitModal: dismissLimitModal,
+    handleDownloadAndClear,
+    batchCount: batches.length,
+  };
+  const recipePageProps: Omit<RecipePageProps, 'activeRecipe'> = {
+    generationConfig: config.generationConfig,
+    updateGenerationConfig: config.updateGenerationConfig,
+    updateAttachment: config.updateAttachment,
+    handlePastedFiles: config.handlePastedFiles,
+    handleGenerate,
+    isGenerating: pipeline.isGenerating,
+    imagesWithConfig,
+    openModal: handleOpenModal,
+    handleAddToContext: config.handleAddToContext,
+  };
+  const studioPageProps: StudioPageProps = {
+    isModalOpen: modal.isModalOpen,
+    workspaces,
+    mergedLogs,
+    batchesCount: batches.length,
+    allImages,
+    imagesWithConfig,
+    selectedImageIds,
+    activeWorkspaceId,
+    openModal: handleOpenModal,
+    handleSelectionChange,
+    handleGenerate,
+    handleAddToContext: config.handleAddToContext,
+    handleLoadRecipe,
+    handleDelete,
+    handleToggleFavorite,
+    isGenerating: pipeline.isGenerating,
+    transitioningImageId: modal.transitioningImageId,
+    activeModalImageId: modal.activeCarouselId,
+    handleSelectAll,
+    handleDeselectAll,
+    handleDeleteSelected,
+    handleClearWorkspace,
+    previewRatio,
+    generationAspectRatio: config.generationConfig.aspectRatio,
+    isInteractingWithToolbar: ui.isInteractingWithToolbar,
+    isQueueOpen,
+    setIsQueueOpen,
+    jobs,
+    studioJobs,
+    selectedStudioJobId,
+    retry,
+    cancelJob,
+    cancelPersistentJob: (jobId) => void handleCancelPersistentJob(jobId),
+    removeJob,
+    clearCompleted,
+    isResting,
+    exportBatches: exportVault,
+    handleImportVault: importVault,
+    isBackgroundEnabled,
+    setBackgroundEnabled,
+    activeServerJobCount,
+    onInspectJob: handleInspectStudioJob,
+    health: effectiveStudioHealth,
+    isBackendConnected,
+    onResetStudio: resetStudio,
+    isResettingStudio,
+  };
+  const toolbarProps: ToolbarProps = {
+    generationConfig: config.generationConfig,
+    updateConfig: config.updateGenerationConfig,
+    updateAttachment: config.updateAttachment,
+    onGenerate: handleGenerate,
+    isGenerating: pipeline.isGenerating,
+    generationStartTime: pipeline.generationStartTime,
+    onFileSelect: config.handleFileSelect,
+    onFilesDrop: config.handlePastedFiles,
+    onRemoveAttachment: config.handleRemoveAttachment,
+    isEnhancingPrompt,
+    onEnhancePrompt: handleEnhancePrompt,
+    setPreviewRatio,
+    setIsInteracting: ui.setIsInteractingWithToolbar,
+    onOpenEditor: (att) => openEditor(att, openEditorRoute),
+    isKeyPopoverOpen: ui.isKeyPopoverOpen,
+    onOpenKeySelector: () =>
+      startViewTransition(() => ui.setIsKeyPopoverOpen(!ui.isKeyPopoverOpen)),
+    onSelectKey: async () => {
+      await verifyCodexSession();
+      startViewTransition(() => ui.setIsKeyPopoverOpen(false));
+    },
+    maxAttachments: config.maxAttachments,
+  };
 
   return (
     <div
@@ -364,11 +471,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
       {!modal.isModalOpen && !pipeline.isGenerating && (
         <HeaderToolbar
-          imageCount={allImages.length}
-          selectedImageCount={selectedImageIds.length}
           isGenerating={pipeline.isGenerating}
-          isToolbarVisible={isToolbarVisible}
-          onToggleToolbar={toggleToolbar}
           workspaces={workspacesWithThumbs}
           activeWorkspaceId={activeWorkspaceId}
           onSwitchWorkspace={(id) => startViewTransition(() => setActiveWorkspace(id))}
@@ -397,190 +500,28 @@ export const AppContent: React.FC<AppContentProps> = () => {
           ui.setIsKeyPopoverOpen(false);
         }}
       >
-        <AnimatePresence mode="popLayout" custom={direction} initial={false}>
-          {route.view === 'recipe' && recipe.activeRecipe ? (
-            <motion.div
-              key={`recipe-${recipe.activeRecipe}`}
-              custom={direction}
-              variants={viewVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              className="absolute inset-0 w-full h-full overflow-hidden"
-            >
-              <RecipePage
-                activeRecipe={recipe.activeRecipe}
-                generationConfig={config.generationConfig}
-                updateGenerationConfig={config.updateGenerationConfig}
-                updateAttachment={config.updateAttachment}
-                handlePastedFiles={config.handlePastedFiles}
-                handleGenerate={handleGenerate}
-                isGenerating={pipeline.isGenerating}
-                imagesWithConfig={imagesWithConfig}
-                openModal={handleOpenModal}
-                handleAddToContext={config.handleAddToContext}
-              />
-            </motion.div>
-          ) : route.view === 'studio' ? (
-            <motion.div
-              key="studio"
-              custom={direction}
-              variants={viewVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              className="absolute inset-0 w-full h-full flex flex-row overflow-hidden"
-            >
-              <StudioPage
-                isModalOpen={modal.isModalOpen}
-                workspaces={workspaces}
-                mergedLogs={mergedLogs}
-                batchesCount={batches.length}
-                allImages={allImages}
-                imagesWithConfig={imagesWithConfig}
-                selectedImageIds={selectedImageIds}
-                activeWorkspaceId={activeWorkspaceId}
-                openModal={handleOpenModal}
-                handleSelectionChange={handleSelectionChange}
-                handleGenerate={handleGenerate}
-                handleAddToContext={config.handleAddToContext}
-                handleLoadRecipe={handleLoadRecipe}
-                handleDelete={handleDelete}
-                handleToggleFavorite={handleToggleFavorite}
-                isGenerating={pipeline.isGenerating}
-                transitioningImageId={modal.transitioningImageId}
-                activeModalImageId={modal.activeCarouselId}
-                handleSelectAll={handleSelectAll}
-                handleDeselectAll={handleDeselectAll}
-                handleDeleteSelected={handleDeleteSelected}
-                handleClearWorkspace={handleClearWorkspace}
-                previewRatio={previewRatio}
-                generationAspectRatio={config.generationConfig.aspectRatio}
-                isInteractingWithToolbar={ui.isInteractingWithToolbar}
-                isQueueOpen={isQueueOpen}
-                setIsQueueOpen={setIsQueueOpen}
-                jobs={jobs}
-                studioJobs={studioJobs}
-                selectedStudioJobId={selectedStudioJobId}
-                retry={retry}
-                cancelJob={cancelJob}
-                cancelPersistentJob={(jobId) => void handleCancelPersistentJob(jobId)}
-                removeJob={removeJob}
-                clearCompleted={clearCompleted}
-                isResting={isResting}
-                batchesForExport={imagesWithConfig}
-                exportBatches={exportVault}
-                handleImportVault={importVault}
-                isBackgroundEnabled={isBackgroundEnabled}
-                setBackgroundEnabled={setBackgroundEnabled}
-                activeServerJobCount={activeServerJobCount}
-                onInspectJob={handleInspectStudioJob}
-                health={effectiveStudioHealth}
-                isBackendConnected={isBackendConnected}
-                onResetStudio={resetStudio}
-                isResettingStudio={isResettingStudio}
-              />
-            </motion.div>
-          ) : (
-            <motion.div
-              key="recipes-list"
-              custom={direction}
-              variants={viewVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              className="absolute inset-0 w-full h-full overflow-hidden"
-            >
-              <RecipesView onSelectRecipe={handleRecipeSelection} />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <StudioViewport
+          routeView={route.view}
+          direction={direction}
+          activeRecipe={recipe.activeRecipe}
+          recipePageProps={recipePageProps}
+          studioPageProps={studioPageProps}
+          onSelectRecipe={handleRecipeSelection}
+        />
       </main>
 
-      {isToolbarVisible &&
-        !modal.isModalOpen &&
-        (route.view === 'studio' || recipe.activeRecipe) && (
-          <BottomToolbar className="w-full relative z-30 shrink-0">
-            <DropZoneOverlay isVisible={isDragging} />
-            <Toolbar
-              generationConfig={config.generationConfig}
-              updateConfig={config.updateGenerationConfig}
-              updateAttachment={config.updateAttachment}
-              onGenerate={handleGenerate}
-              isGenerating={pipeline.isGenerating}
-              generationStartTime={pipeline.generationStartTime}
-              onFileSelect={config.handleFileSelect}
-              onFilesDrop={config.handlePastedFiles}
-              onRemoveAttachment={config.handleRemoveAttachment}
-              isEnhancingPrompt={isEnhancingPrompt}
-              onEnhancePrompt={handleEnhancePrompt}
-              setPreviewRatio={setPreviewRatio}
-              setIsInteracting={ui.setIsInteractingWithToolbar}
-              onOpenEditor={(att) => openEditor(att, openEditorRoute)}
-              isKeyPopoverOpen={ui.isKeyPopoverOpen}
-              onOpenKeySelector={() =>
-                startViewTransition(() => ui.setIsKeyPopoverOpen(!ui.isKeyPopoverOpen))
-              }
-              onSelectKey={async () => {
-                await verifyCodexSession();
-                startViewTransition(() => ui.setIsKeyPopoverOpen(false));
-              }}
-              maxAttachments={config.maxAttachments}
-            />
-          </BottomToolbar>
-        )}
+      <StudioGenerationDock
+        isModalOpen={modal.isModalOpen}
+        currentView={route.view}
+        activeRecipe={recipe.activeRecipe}
+        isDragging={isDragging}
+        toolbarProps={toolbarProps}
+      />
 
       <AppOverlays
-        modalImage={modal.modalImage}
-        imagesWithConfig={imagesWithConfig}
-        activeGenerationConfig={pipeline.activeGenerationConfig}
-        closeModal={handleCloseModal}
-        handleDelete={handleDelete}
-        handleGenerate={handleGenerate}
-        handleAddToContext={config.handleAddToContext}
-        handleLoadRecipe={handleLoadRecipe}
-        handleToggleFavorite={handleToggleFavorite}
-        setActiveCarouselId={modal.setActiveCarouselId}
-        isEditorOpen={isEditorOpen}
-        closeEditor={closeEditor}
-        imageToEdit={imageToEdit}
-        handleExecuteEdit={handleExecuteEdit}
-        isEditingImage={isEditingImage}
-        isDebugPanelOpen={isDebugPanelOpen}
-        closeDebugPanel={closeDebugPanel}
-        mergedLogs={mergedLogs}
-        isDashboardModalOpen={isDashboardModalOpen}
-        closeDashboard={closeDashboard}
-        batches={batches}
-        workspaces={workspaces}
-        studioJobs={studioJobs}
-        selectedJobDetail={selectedJobDetail}
-        isLoadingSelectedJob={isLoadingSelectedJob}
-        onInspectJob={handleInspectStudioJob}
-        onClearSelectedJob={clearSelectedJob}
-        handleImportVault={importVault}
-        handleDeepScan={recoverOrphanedBatches}
-        apiBase={apiBase}
-        onboardingError={onboardingError}
-        onboardingHealth={effectiveStudioHealth}
-        isCheckingOnboarding={isCheckingOnboarding}
-        isDesktopRuntime={isDesktopRuntime}
-        isOnboardingOpen={isOnboardingOpen}
-        isOnboardingReady={isOnboardingReady}
-        isStartingAppServer={isStartingAppServer}
-        closeOnboarding={() => startViewTransition(() => closeOnboarding())}
-        completeOnboarding={() => startViewTransition(() => completeOnboarding())}
-        refreshOnboardingHealth={() => void refreshOnboardingHealth()}
-        ensureAppServer={() => void ensureAppServer()}
-        isTrashModalOpen={isTrashModalOpen}
-        closeTrash={closeTrash}
-        trash={trash}
-        restoreFromTrash={restoreFromTrash}
-        restoreAllFromTrash={restoreAllFromTrash}
-        emptyTrash={emptyTrash}
-        isLimitModalOpen={isLimitModalOpen}
-        handleDismissLimitModal={dismissLimitModal}
-        handleDownloadAndClear={handleDownloadAndClear}
+        imageOverlays={imageOverlays}
+        systemOverlays={systemOverlays}
+        workspaceOverlays={workspaceOverlays}
       />
     </div>
   );
