@@ -106,6 +106,26 @@ export function ensureAppServer() {
   });
 }
 
+export async function stopAppServer() {
+  if (!appServerProcess) return;
+
+  const currentProcess = appServerProcess;
+  appServerProcess = null;
+  diagnostics.pid = null;
+
+  try {
+    currentProcess.kill();
+  } catch {
+    // Ignore kill failures for already-terminated processes.
+  }
+
+  try {
+    await currentProcess.exited;
+  } catch {
+    // Ignore exit await failures; diagnostics are updated best-effort.
+  }
+}
+
 export function createProcessSupervisor(): ProcessSupervisor {
   const listeners = new Set<(info: ProcessInfo) => void>();
   const publish = () => listeners.forEach((listener) => listener(currentInfo()));
@@ -116,9 +136,7 @@ export function createProcessSupervisor(): ProcessSupervisor {
       return currentInfo();
     },
     async stopAppServer() {
-      appServerProcess?.kill();
-      appServerProcess = null;
-      diagnostics.pid = null;
+      await stopAppServer();
       publish();
     },
     onDiagnostics(cb) {

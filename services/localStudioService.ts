@@ -1,11 +1,13 @@
 import type {
   CatalogPage,
+  CodexAccountStatusResponse,
   CodexModelCatalogResponse,
   JobDetailResponse,
   CreateJobRequest,
   HealthResponse,
   Job,
   Project,
+  StudioResetResponse,
   StudioLibrary,
   SystemLog,
 } from '../packages/shared/src';
@@ -69,10 +71,26 @@ export async function getCodexModelCatalog() {
 }
 
 /**
+ * Read account plan and available usage data from the Codex app-server.
+ */
+export async function getCodexAccountStatus() {
+  return request<CodexAccountStatusResponse>('/api/codex/account');
+}
+
+/**
  * Ask the local backend to bootstrap `codex app-server` when possible.
  */
 export async function startStudioAppServer() {
   return request<{ running: boolean; wsUrl: string }>('/api/app-server/start', {
+    method: 'POST',
+  });
+}
+
+/**
+ * Reset the local studio database, assets, logs, and backend-managed workspace state.
+ */
+export async function resetStudioData() {
+  return request<StudioResetResponse>('/api/studio/reset', {
     method: 'POST',
   });
 }

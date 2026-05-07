@@ -14,6 +14,7 @@ import type { Job } from '../../../packages/shared/src';
 const runningJobs = new Set<string>();
 const jobQueue: Job[] = [];
 const runningJobControllers = new Map<string, AbortController>();
+const activeJobPromises = new Map<string, Promise<void>>();
 let activeWorkerCount = 0;
 const codexTurn = createCodexTurn();
 
@@ -307,20 +308,46 @@ export function getWorkerStatus() {
   };
 }
 
+export async function resetWorkerState() {
+  const queuedJobs = jobQueue.splice(0, jobQueue.length);
+
+  for (const queuedJob of queuedJobs) {
+    runningJobs.delete(queuedJob.id);
+    addJobEvent(queuedJob.id, 'job.cancelled', 'Queued job cancelled during studio reset.');
+    updateJobStatus(queuedJob.id, 'cancelled');
+    publishEvent('job.cancelled', getJob(queuedJob.id));
+  }
+
+  for (const [jobId, controller] of runningJobControllers.entries()) {
+    if (!controller.signal.aborted) {
+      addJobEvent(jobId, 'job.cancel.requested', 'Studio reset requested cancellation.');
+      controller.abort();
+    }
+  }
+
+  if (activeJobPromises.size > 0) {
+    await Promise.allSettled(activeJobPromises.values());
+  }
+
+  runningJobs.clear();
+}
+
 async function processQueue() {
   while (activeWorkerCount < getMaxConcurrentJobs() && jobQueue.length > 0) {
     const job = jobQueue.shift();
     if (!job) continue;
 
     activeWorkerCount += 1;
-    queueMicrotask(async () => {
+    const workPromise = Promise.resolve().then(async () => {
       try {
         await processJob(job);
       } finally {
         activeWorkerCount -= 1;
+        activeJobPromises.delete(job.id);
         queueMicrotask(processQueue);
       }
     });
+    activeJobPromises.set(job.id, workPromise);
   }
 }
 

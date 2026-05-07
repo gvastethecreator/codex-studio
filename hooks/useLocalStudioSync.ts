@@ -79,6 +79,7 @@ export function useLocalStudioSync({
 }: UseLocalStudioSyncProps) {
   const [studioJobs, setStudioJobs] = useState<StudioJob[]>([]);
   const [studioLogs, setStudioLogs] = useState<StudioLog[]>([]);
+  const [isBackendConnected, setIsBackendConnected] = useState(false);
   const batchesRef = useRef(batches);
 
   useEffect(() => {
@@ -128,11 +129,13 @@ export function useLocalStudioSync({
         if (!cancelled) {
           setStudioJobs(backendJobs);
           setStudioLogs(backendLogs);
+          setIsBackendConnected(true);
         }
 
         await importLocalAssets();
       } catch (error) {
         if (!cancelled) {
+          setIsBackendConnected(false);
           log(
             `Local Codex backend sync failed: ${error instanceof Error ? error.message : String(error)}`,
           );
@@ -156,6 +159,7 @@ export function useLocalStudioSync({
       );
     });
     const unsubscribeConnection = stream.onConnectionChange((connected) => {
+      setIsBackendConnected(connected);
       if (!connected) void refreshBackendState();
     });
     return () => {
@@ -260,6 +264,7 @@ export function useLocalStudioSync({
     studioJobs,
     mergedLogs,
     activeServerJobCount,
+    isBackendConnected,
     verifyCodexSession,
     recoverOrphanedBatches,
   };

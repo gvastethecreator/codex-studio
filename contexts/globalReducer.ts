@@ -18,6 +18,7 @@ export interface GlobalState {
 
 export type GlobalAction =
   | { type: "HYDRATE_STATE"; state: Partial<GlobalState> }
+  | { type: "RESET_STATE" }
   | { type: "ADD_LOG"; entry: LogEntry }
   | { type: "CREATE_WORKSPACE"; workspace: Workspace; activate?: boolean }
   | { type: "DELETE_WORKSPACE"; id: string }
@@ -246,6 +247,9 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         bgConfig: action.state.bgConfig ?? state.bgConfig,
       };
     }
+
+    case "RESET_STATE":
+      return createInitialGlobalState();
 
     case "ADD_LOG":
       return {

@@ -9,7 +9,7 @@ import type {
   QueueJob,
   Workspace,
 } from "../types";
-import type { Job as StudioJob } from "../packages/shared/src";
+import type { HealthResponse, Job as StudioJob } from "../packages/shared/src";
 
 import { downloadMultipleImagesAsZip } from "../utils/fileUtils";
 import { ErrorBoundary } from "./ErrorBoundary";
@@ -67,6 +67,10 @@ interface StudioPageProps {
   setBackgroundEnabled: (enabled: boolean) => void;
   activeServerJobCount: number;
   onInspectJob: (jobId: string) => void;
+  health: HealthResponse | null;
+  isBackendConnected: boolean;
+  onResetStudio: () => void | Promise<void>;
+  isResettingStudio: boolean;
 }
 
 export const StudioPage: React.FC<StudioPageProps> = ({
@@ -112,6 +116,10 @@ export const StudioPage: React.FC<StudioPageProps> = ({
   setBackgroundEnabled,
   activeServerJobCount,
   onInspectJob,
+  health,
+  isBackendConnected,
+  onResetStudio,
+  isResettingStudio,
 }) => {
   const handleGridRegenerate = useCallback(
     (config: GeneratedImageWithConfig["config"]) => {
@@ -231,6 +239,10 @@ export const StudioPage: React.FC<StudioPageProps> = ({
             isQueueOpen={isQueueOpen}
             onToggleQueue={handleToggleQueue}
             queueCount={jobs.length + activeServerJobCount}
+            health={health}
+            isBackendConnected={isBackendConnected}
+            onResetStudio={onResetStudio}
+            isResettingStudio={isResettingStudio}
           />
         </div>
       )}
