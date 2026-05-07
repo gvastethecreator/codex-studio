@@ -1,5 +1,6 @@
 import type { GeneratedImage, GenerationBatch, ImageGenerationConfig } from '../types';
 import { createThumbnail } from '../utils/imageUtils';
+import { resolveGenerationConfig } from '../lib/recipeContext';
 import {
   createStudioJob,
   listProjects,
@@ -80,8 +81,8 @@ export async function runSingleCodexImagegenJob(options: {
   onProgress?.(`Codex job queued: ${createdJob.id}`);
   const stream = options.stream ?? createStudioEventStream();
   const completedJob = await watchJob(stream, createdJob.id, signal);
-  const catalogPage = await queryCatalog({ limit: 50 });
-  const jobAssets = catalogPage.images.filter(asset => asset.jobId === completedJob.id);
+  const catalogPage = await queryCatalog({ jobId: completedJob.id, limit: 20 });
+  const jobAssets = catalogPage.images;
 
   if (jobAssets.length === 0) {
     throw new Error(`Codex job ${completedJob.id} completed without an imported image asset.`);
@@ -107,14 +108,15 @@ export async function runSingleCodexImagegenJob(options: {
 export async function runLocalGeneration({ config, workspaceId, inputImage, signal, onProgress }: RunLocalGenerationOptions): Promise<LocalGenerationRunResult> {
   const stream = createStudioEventStream();
   try {
+    const resolvedConfig = resolveGenerationConfig(config);
     const batchId = `${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
-    const batchCount = inputImage ? 1 : config.batchCount || 1;
+    const batchCount = inputImage ? 1 : resolvedConfig.batchCount || 1;
     const batchImages: GeneratedImage[] = [];
     let lastError: Error | null = null;
 
     for (let index = 0; index < batchCount; index += 1) {
       try {
-        const images = await runSingleCodexImagegenJob({ config, batchId, signal, onProgress, stream, inputImage });
+        const images = await runSingleCodexImagegenJob({ config: resolvedConfig, batchId, signal, onProgress, stream, inputImage });
         batchImages.push(...images);
       } catch (error) {
         lastError = error instanceof Error ? error : new Error(String(error));
@@ -137,7 +139,7 @@ export async function runLocalGeneration({ config, workspaceId, inputImage, sign
       batch: {
         id: batchId,
         workspaceId,
-        config,
+        config: resolvedConfig,
         images: batchImages,
         createdAt: Date.now(),
       },

@@ -35,6 +35,8 @@ export type RecipeId = 'remaster' | 'spritesheet' | 'cinematic' | 'character' | 
 export interface ImageGenerationConfig {
   prompt?: string;
   recipeContext?: string; // Hidden technical instructions injected by recipes
+  recipeId?: Exclude<RecipeId, null> | null;
+  recipeParams?: Record<string, unknown> | null;
   attachments: Attachment[];
   aspectRatio: AspectRatio;
   imageSize?: ImageSize;

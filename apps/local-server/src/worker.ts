@@ -1,5 +1,6 @@
 import { mkdirSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { getSettings } from './config';
 import { registerCatalogImage } from './catalog';
 import { addAsset, addJobEvent, getJob, updateJobStatus, upsertCodexTurn } from './db';
 import { publishEvent } from './events';
@@ -12,8 +13,11 @@ import type { Job } from '../../../packages/shared/src';
 const runningJobs = new Set<string>();
 const jobQueue: Job[] = [];
 let activeWorkerCount = 0;
-const maxConcurrentJobs = Number(process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS || 4);
 const codexTurn = createCodexTurn();
+
+function getMaxConcurrentJobs() {
+  return getSettings().codexMaxConcurrentJobs;
+}
 
 function svgForPrompt(prompt: string) {
   const safePrompt = prompt
@@ -158,7 +162,7 @@ export function enqueueJob(job: Job) {
 
 export function getWorkerStatus() {
   return {
-    maxConcurrentJobs,
+    maxConcurrentJobs: getMaxConcurrentJobs(),
     activeWorkerCount,
     queuedJobs: jobQueue.length,
     trackedJobs: runningJobs.size,
@@ -166,7 +170,7 @@ export function getWorkerStatus() {
 }
 
 async function processQueue() {
-  while (activeWorkerCount < maxConcurrentJobs && jobQueue.length > 0) {
+  while (activeWorkerCount < getMaxConcurrentJobs() && jobQueue.length > 0) {
     const job = jobQueue.shift();
     if (!job) continue;
 

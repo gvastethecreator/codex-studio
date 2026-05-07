@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { CodexRpcClient } from './rpcClient';
+import { getSettings } from '../config';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
 
@@ -105,8 +106,9 @@ export async function createImagegenSession(sessionKey: string): Promise<Session
   let threadId = persistedThreadId;
 
   if (!threadId) {
+    const settings = getSettings();
     const thread = await client.request('thread/start', {
-      model: process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini',
+      model: settings.codexImagegenModel,
       cwd: process.cwd(),
       approvalPolicy: 'never',
       sandbox: 'danger-full-access',

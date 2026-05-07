@@ -6,6 +6,9 @@ export interface StudioSettings {
   libraryDir: string;
   serverPort: number;
   codexWsPort: number;
+  codexImagegenModel: string;
+  codexImagegenReasoningEffort: 'low' | 'medium' | 'high';
+  codexMaxConcurrentJobs: number;
 }
 
 export interface Project {

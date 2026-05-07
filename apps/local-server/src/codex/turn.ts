@@ -1,13 +1,13 @@
-import { copyFileSync, existsSync, mkdirSync, statSync, writeFileSync } from 'node:fs';
+import { copyFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { getSettings } from '../config';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
 import { resolvePlatformPath } from '../platformPaths';
+import { createAssetExtractor } from './assetExtractor';
 import { closeImagegenSession, getImagegenSession, getImagegenSessionKey, type SessionHandle } from './sessionPool';
 import type { JsonRpcMessage } from './rpcClient';
 
-const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini';
-const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
 const IMAGEGEN_SKILL_PATH = path.join(resolvePlatformPath('codex-skills-dir'), '.system', 'imagegen', 'SKILL.md');
 
 export interface TurnParams {
@@ -27,69 +27,6 @@ export interface TurnResult {
 
 export interface CodexTurn {
   runTurn(params: TurnParams): Promise<TurnResult>;
-}
-
-function extractImageResultFromNotifications(notifications: JsonRpcMessage[], jobId: string) {
-  for (const message of notifications) {
-    const raw = JSON.stringify(message);
-    const pngMatch = raw.match(/data:image\/png;base64,([A-Za-z0-9+/=]+)/);
-    const jpegMatch = raw.match(/data:image\/jpeg;base64,([A-Za-z0-9+/=]+)/);
-    const webpMatch = raw.match(/data:image\/webp;base64,([A-Za-z0-9+/=]+)/);
-    const match = pngMatch || jpegMatch || webpMatch;
-    if (!match) continue;
-
-    const ext = pngMatch ? 'png' : jpegMatch ? 'jpg' : 'webp';
-    const outputPath = resolveLibraryPath('assets', `${jobId}-codex.${ext}`);
-    writeFileSync(outputPath, Buffer.from(match[1], 'base64'));
-    return outputPath;
-  }
-  return null;
-}
-
-function extractGeneratedImageItemPath(notifications: JsonRpcMessage[]) {
-  const generatedImagesDir = resolvePlatformPath('codex-generated-images');
-  for (let index = notifications.length - 1; index >= 0; index -= 1) {
-    const message = notifications[index];
-    const item = message.params?.item;
-    if (item?.type !== 'imageGeneration' || !item.id) continue;
-
-    const threadId = message.params?.threadId;
-    if (!threadId) continue;
-
-    const generatedPath = path.join(generatedImagesDir, threadId, `${item.id}.png`);
-    if (existsSync(generatedPath)) return generatedPath;
-  }
-  return null;
-}
-
-function stripAnsi(value: string) {
-  return value.replace(/\u001b\[[0-9;]*m/g, '');
-}
-
-function decodeJsonPath(value: string) {
-  return value
-    .replace(/\\\\/g, '\\')
-    .replace(/\\u001b/g, '\u001b')
-    .replace(/\\r|\\n/g, '')
-    .trim();
-}
-
-function extractSavedImagePathFromNotifications(notifications: JsonRpcMessage[], sinceMs: number) {
-  const raw = stripAnsi(JSON.stringify(notifications));
-  const matches = [
-    ...raw.matchAll(/[A-Z]:\\\\(?:[^"'\\r\\n]|\\\\(?!r|n))+?\.(?:png|jpg|jpeg|webp)/gi),
-    ...raw.matchAll(/[A-Z]:\\(?:[^"'\\r\\n]|\\(?!r|n))+?\.(?:png|jpg|jpeg|webp)/gi),
-    ...raw.matchAll(/\/(?:[^"'\r\n])+?\.(?:png|jpg|jpeg|webp)/gi),
-  ];
-  const generatedImagesDir = resolvePlatformPath('codex-generated-images');
-
-  const candidates = [...new Set(matches.map((match) => decodeJsonPath(match[0])))]
-    .filter((filePath) => !/_image_id_\.(?:png|jpg|jpeg|webp)$/i.test(filePath))
-    .filter((filePath) => filePath.includes(generatedImagesDir) || /(?:generated_images)/i.test(filePath))
-    .filter((filePath) => existsSync(filePath) && statSync(filePath).mtimeMs >= sinceMs - 1000)
-    .sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs);
-
-  return candidates[0] ?? null;
 }
 
 function mimeForPath(filePath: string) {
@@ -115,6 +52,8 @@ async function runCodexImagegenTurn(
   transcriptPath: string,
   startedAt: number,
 ): Promise<TurnResult> {
+  const settings = getSettings();
+  const assetExtractor = createAssetExtractor(job.id);
   const notificationStart = session.client.getNotificationCount();
   let turnId: string | null = null;
 
@@ -134,8 +73,8 @@ async function runCodexImagegenTurn(
     ],
     cwd: process.cwd(),
     approvalPolicy: 'never',
-    model: IMAGEGEN_MODEL,
-    effort: IMAGEGEN_REASONING_EFFORT,
+    model: settings.codexImagegenModel,
+    effort: settings.codexImagegenReasoningEffort,
   });
   turnId = turn?.turn?.id ?? null;
 
@@ -149,10 +88,15 @@ async function runCodexImagegenTurn(
     writeFileSync(transcriptPath, `${JSON.stringify(notification)}\n`, { flag: 'a' });
   }
 
-  const inlineImage = extractImageResultFromNotifications(notifications, job.id);
-  if (inlineImage) {
+  const discoveredAssets = await assetExtractor.extract(notifications, {
+    threadId: session.threadId,
+    sinceMs: startedAt,
+  });
+  const discoveredAsset = discoveredAssets[0];
+
+  if (discoveredAsset?.origin === 'inline' && discoveredAsset.sourcePath) {
     return {
-      assets: [{ type: 'file', sourcePath: inlineImage, mimeType: mimeForPath(inlineImage) }],
+      assets: [{ type: 'file', sourcePath: discoveredAsset.sourcePath, mimeType: discoveredAsset.mimeType }],
       transcript: transcriptPath,
       turnId,
       threadId: session.threadId,
@@ -167,17 +111,14 @@ async function runCodexImagegenTurn(
     throw new Error(`Codex app-server thread lacks image generation capability for job ${job.id}`);
   }
 
-  const discovered = extractGeneratedImageItemPath(notifications)
-    ?? extractSavedImagePathFromNotifications(notifications, startedAt);
-
-  if (!discovered) {
+  if (!discoveredAsset?.sourcePath) {
     return { assets: [], transcript: transcriptPath, turnId, threadId: session.threadId, durationMs: Date.now() - startedAt };
   }
 
-  const outputPath = resolveLibraryPath('assets', `${job.id}-codex${path.extname(discovered).toLowerCase() || '.png'}`);
-  copyFileSync(discovered, outputPath);
+  const outputPath = resolveLibraryPath('assets', `${job.id}-codex${path.extname(discoveredAsset.sourcePath).toLowerCase() || '.png'}`);
+  copyFileSync(discoveredAsset.sourcePath, outputPath);
   return {
-    assets: [{ type: 'file', sourcePath: outputPath, mimeType: mimeForPath(outputPath) }],
+    assets: [{ type: 'file', sourcePath: outputPath, mimeType: discoveredAsset.mimeType || mimeForPath(outputPath) }],
     transcript: transcriptPath,
     turnId,
     threadId: session.threadId,

@@ -236,7 +236,23 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   useEffect(() => {
     return () => updateConfig("recipeContext", "");
-  }, []);
+  }, [updateConfig]);
+
+  useEffect(() => {
+    return () => {
+      updateConfig('recipeId', null);
+      updateConfig('recipeParams', null);
+      updateConfig('recipeContext', '');
+    };
+  }, [updateConfig]);
+
+  useEffect(() => {
+    if (config.recipeId !== 'styles' || !config.recipeParams) return;
+    const presetId = typeof config.recipeParams.presetId === 'string' ? config.recipeParams.presetId : null;
+    if (presetId) {
+      setActivePresetId(presetId);
+    }
+  }, [config.recipeId, config.recipeParams]);
 
   const activePack = useMemo(() => {
     if (currentPackId === FAVORITES_PACK_ID) {
@@ -412,33 +428,27 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         `;
     }
 
-    const technicalPrompt = `
-*** STYLE TRANSFER PROTOCOL ***
-TARGET STYLE: ${preset.name.toUpperCase()}
-MODE: ${fallbackAttachment ? "PACK CATEGORY BASE STYLE APPLICATION" : activeImage ? (fidelity < 0.3 ? "CREATIVE RE-IMAGINING" : "STRUCTURAL PRESERVATION") : "DIRECT STYLE SYNTHESIS"}
-
-[DIRECTIVES]
-${roleInstruction}
-
-[VISUAL DNA]
-- Core Aesthetic: ${preset.style.aesthetic}
-- Subject Treatment: ${preset.style.subject_treatment || preset.style.form_and_line || 'Standard'}
-- Color & Tone: ${preset.style.color_and_tone || preset.style.color_palette || 'Standard'}
-- Lighting & Shadow: ${preset.style.lighting_and_shadow || preset.style.lighting_setup || 'Standard'}
-- Texture & Material: ${preset.style.texture_and_material || preset.style.material_texture || 'Standard'}
-- Camera & Composition: ${preset.style.camera_and_composition || preset.style.spatial_distortion || 'Standard'}
-- Atmosphere & Mood: ${preset.style.atmosphere_and_mood || preset.style.atmosphere || 'Standard'}
-- Rendering & Quality: ${preset.style.rendering_and_quality || preset.style.render_quality || 'Standard'}
-
-[EXECUTION RULES]
-${compositionRule}
-${styleEmphasis}
-DO NOT output text or explanations. Just the image.
-*** END PROTOCOL ***
-`;
+    const styleRecipeParams = {
+      presetId: preset.id,
+      presetName: preset.name,
+      mode: fallbackAttachment ? 'PACK_CATEGORY_BASE_STYLE_APPLICATION' : activeImage ? (fidelity < 0.3 ? 'CREATIVE_REIMAGINING' : 'STRUCTURAL_PRESERVATION') : 'DIRECT_STYLE_SYNTHESIS',
+      roleInstruction: roleInstruction.trim(),
+      compositionRule: compositionRule.trim(),
+      styleEmphasis: styleEmphasis.trim(),
+      aesthetic: preset.style.aesthetic,
+      subjectTreatment: preset.style.subject_treatment || preset.style.form_and_line || 'Standard',
+      colorTone: preset.style.color_and_tone || preset.style.color_palette || 'Standard',
+      lightingShadow: preset.style.lighting_and_shadow || preset.style.lighting_setup || 'Standard',
+      textureMaterial: preset.style.texture_and_material || preset.style.material_texture || 'Standard',
+      cameraComposition: preset.style.camera_and_composition || preset.style.spatial_distortion || 'Standard',
+      atmosphereMood: preset.style.atmosphere_and_mood || preset.style.atmosphere || 'Standard',
+      renderingQuality: preset.style.rendering_and_quality || preset.style.render_quality || 'Standard',
+    };
 
     onGenerate(undefined, {
-      recipeContext: technicalPrompt,
+      recipeId: 'styles',
+      recipeParams: styleRecipeParams,
+      recipeContext: '',
       attachments: fallbackAttachment ? [fallbackAttachment] : config.attachments,
       aspectRatio: fallbackAttachment ? "2:3" : config.aspectRatio,
       negativePrompt: config.negativePrompt

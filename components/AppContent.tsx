@@ -1,48 +1,30 @@
-import React, { useCallback, useMemo, useState, useEffect } from 'react';
-import { Bug, FolderSync, Share, Sparkles, Terminal, Activity, Database } from 'lucide-react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 
-import { usePanelManager } from '../hooks/usePanelManager';
 import { useImageManager } from '../hooks/useImageManager';
-import { useModalManager } from '../hooks/useModalManager';
+import { useHashRouter } from '../hooks/useHashRouter';
 
 import { exportToJson, readJsonFile, validateVault, downloadMultipleImagesAsZip } from '../utils/fileUtils';
 import { detectRecipeFromContext } from '../utils/recipeUtils';
 import { startViewTransition } from '../utils/transitionUtils';
-import { MODELS } from '../constants';
-import { runLocalGeneration } from '../services/localGenerationRun';
 
-import type { ImageGenerationConfig, GenerationBatch, GeneratedImageWithConfig, Attachment, AspectRatio, Workspace, RecipeId } from '../types';
+import type { ImageGenerationConfig, GeneratedImageWithConfig, Attachment, AspectRatio, RecipeId } from '../types';
 
-import { ImageGrid } from './ImageGrid';
+import { AppOverlays } from './AppOverlays';
+import { BottomToolbar } from './ui/BottomToolbar';
 import { Toolbar } from './Toolbar';
 import { HeaderToolbar } from './HeaderToolbar';
-import { DebugPanel } from './DebugPanel';
 import LiquidBlackBackground from './LiquidBlackBackground';
-import ImageCarousel from './ImageCarousel';
 import ToastContainer from './ToastContainer';
 import DropZoneOverlay from './DropZoneOverlay';
-import { ImageEditorModal } from './ImageEditorModal';
-import { FormatPreview } from './FormatPreview';
-import { SidePanel } from './SidePanel';
+import { RecipePage } from './RecipePage';
 import { RecipesView } from './RecipesView';
-import { ErrorBoundary } from './ErrorBoundary';
-import { RecipeRouter } from './RecipeRouter';
-import { TrashModal } from './TrashModal';
-import { LimitReachedModal } from './LimitReachedModal';
-
-import { LeftDebugPanel } from './LeftDebugPanel';
-import { RightSystemPanel } from './RightSystemPanel';
-import { QueuePanel } from './QueuePanel';
-import { DashboardModal } from './DashboardModal';
-import { OnboardingModal } from './OnboardingModal';
+import { StudioPage } from './StudioPage';
 import { useGlobal } from '../contexts/GlobalContext';
 import { useGeneration } from '../contexts/GenerationContext';
 import { useQueueManager } from '../hooks/useQueueManager';
 import { useStudioOnboarding } from '../hooks/useStudioOnboarding';
 import { useLocalStudioSync } from '../hooks/useLocalStudioSync';
-
-import { BottomToolbar } from './ui/BottomToolbar';
 
 const viewVariants = {
     enter: (direction: number) => ({
@@ -82,49 +64,30 @@ const viewVariants = {
 interface AppContentProps { }
 
 export const AppContent: React.FC<AppContentProps> = () => {
-    // Global Context
     const {
         logs, log,
-        workspaces, setWorkspaces,
-        activeWorkspaceId, setActiveWorkspaceId,
-        batches, setBatches,
-        trash, setTrash,
-        restoreFromTrash, restoreAllFromTrash,
-        isBackgroundEnabled, setIsBackgroundEnabled,
+        workspaces,
+        createWorkspace, deleteWorkspace, renameWorkspace,
+        activeWorkspaceId, setActiveWorkspace,
+        batches,
+        mergeBatches, replaceBatches, archiveBatches,
+        deleteImage, deleteImages, toggleImageFavorite, clearWorkspace, clearAllBatches,
+        trash,
+        restoreFromTrash, restoreAllFromTrash, emptyTrash,
+        isBackgroundEnabled, setBackgroundEnabled,
         bgConfig,
         toasts, removeToast, addToast,
         isDebugPanelOpen, toggleDebugPanel
     } = useGlobal();
 
+    const { route, navigateToStudio, navigateToRecipes, navigateToRecipe, openEditor: openEditorRoute, openModal: openModalRoute, closeOverlay } = useHashRouter();
+
     const [isTrashModalOpen, setIsTrashModalOpen] = useState(false);
     const [isLimitModalOpen, setIsLimitModalOpen] = useState(false);
     const [hasDismissedLimitModal, setHasDismissedLimitModal] = useState(false);
 
-    // Generation Context
-    const {
-        activeRecipe, setActiveRecipe,
-        modalImage, setModalImage,
-        activeCarouselId, setActiveCarouselId,
-        transitioningImageId,
-        openModal, closeModal, isModalOpen,
-        isInteractingWithToolbar, setIsInteractingWithToolbar,
-        isKeyPopoverOpen, setIsKeyPopoverOpen,
-        generationConfig,
-        setGenerationConfig,
-        updateGenerationConfig,
-        updateAttachment,
-        handleFileSelect,
-        handlePastedFiles,
-        handleRemoveAttachment,
-        handleAddToContext,
-        maxAttachments,
-        isGenerating,
-        executeGeneration,
-        activeGenerationConfig,
-        generationStartTime
-    } = useGeneration();
+    const { config, pipeline, recipe, ui, modal } = useGeneration();
 
-    // Queue Manager
     const {
         jobs,
         enqueue,
@@ -134,13 +97,11 @@ export const AppContent: React.FC<AppContentProps> = () => {
         clearCompleted,
         isResting
     } = useQueueManager({
-        executeGeneration,
-        isGenerating,
+        executeGeneration: pipeline.executeGeneration,
+        isGenerating: pipeline.isGenerating,
         addToast
     });
 
-    // Local UI States
-    const [currentView, setCurrentView] = useState<'studio' | 'recipes'>('studio');
     const [isQueueOpen, setIsQueueOpen] = useState(true);
     const [isEditorOpen, setIsEditorOpen] = useState(false);
     const [imageToEdit, setImageToEdit] = useState<Attachment | null>(null);
@@ -149,10 +110,11 @@ export const AppContent: React.FC<AppContentProps> = () => {
     const [isEnhancingPrompt, setIsEnhancingPrompt] = useState(false);
     const [isEditingImage, setIsEditingImage] = useState(false);
     const [isDashboardModalOpen, setIsDashboardModalOpen] = useState(false);
-    const { studioJobs, mergedLogs, activeServerJobCount, verifyCodexSession } = useLocalStudioSync({
+    const { studioJobs, mergedLogs, activeServerJobCount, verifyCodexSession, recoverOrphanedBatches } = useLocalStudioSync({
         logs,
         log,
-        setBatches,
+        batches,
+        mergeBatches,
         addToast,
     });
     const {
@@ -175,100 +137,89 @@ export const AppContent: React.FC<AppContentProps> = () => {
         shouldAutoOpen: batches.length === 0,
     });
 
-    // Navigation Direction Logic
-    const [navIndex, setNavIndex] = useState(0);
     const [direction, setDirection] = useState(0);
+    const previousViewIndexRef = useRef(0);
 
     const handleViewChange = useCallback((newView: 'studio' | 'recipes') => {
-        window.location.hash = newView === 'studio' ? '' : 'recipes';
-    }, []);
+        if (newView === 'studio') {
+            navigateToStudio();
+            return;
+        }
+
+        navigateToRecipes();
+    }, [navigateToRecipes, navigateToStudio]);
 
     const handleRecipeSelection = useCallback((id: RecipeId) => {
-        window.location.hash = `recipe-${id}`;
-    }, []);
+        if (!id) return;
+        navigateToRecipe(id);
+    }, [navigateToRecipe]);
 
     const handleCloseRecipe = useCallback(() => {
-        window.location.hash = 'recipes';
-    }, []);
+        navigateToRecipes();
+    }, [navigateToRecipes]);
+
+    const handleOpenModal = useCallback((image: GeneratedImageWithConfig) => {
+        modal.openModal(image);
+        openModalRoute();
+    }, [modal, openModalRoute]);
+
+    const handleCloseModal = useCallback(() => {
+        modal.closeModal();
+        closeOverlay();
+    }, [closeOverlay, modal]);
 
     useEffect(() => {
-        // Initial sync on mount
-        const hash = window.location.hash.replace('#', '');
-        if (hash === 'modal' || hash === 'editor') {
-            window.history.replaceState(null, '', window.location.pathname + window.location.search);
-        } else if (hash.startsWith('recipe-')) {
-            const recipeId = hash.replace('recipe-', '') as RecipeId;
-            setActiveRecipe(recipeId);
-        } else if (hash === 'recipes') {
-            setCurrentView('recipes');
+        const currentIndex = route.view === 'studio' ? 0 : route.view === 'recipes' ? 1 : 2;
+        if (currentIndex !== previousViewIndexRef.current) {
+            setDirection(currentIndex > previousViewIndexRef.current ? 1 : -1);
+            previousViewIndexRef.current = currentIndex;
         }
-    }, [setActiveRecipe]);
+    }, [route.view]);
 
     useEffect(() => {
-        const handleHashChange = () => {
-            startViewTransition(() => {
-                const hash = window.location.hash.replace('#', '');
-
-                if (hash === 'editor') {
-                    if (!imageToEdit) {
-                        window.history.replaceState(null, '', window.location.pathname + window.location.search);
-                    } else {
-                        setIsEditorOpen(true);
-                    }
+        startViewTransition(() => {
+            if (route.view === 'recipe' && route.activeRecipeId) {
+                if (recipe.activeRecipe !== route.activeRecipeId) {
+                    recipe.setActiveRecipe(route.activeRecipeId);
                 }
-                else if (hash === 'modal') {
-                    if (!modalImage) {
-                        window.history.replaceState(null, '', window.location.pathname + window.location.search);
-                    }
-                }
-                else if (hash.startsWith('recipe-')) {
-                    const recipeId = hash.replace('recipe-', '') as RecipeId;
-                    if (isEditorOpen) { setIsEditorOpen(false); setImageToEdit(null); }
-                    if (isModalOpen) closeModal();
+                return;
+            }
 
-                    if (activeRecipe !== recipeId) {
-                        setDirection(1);
-                        setNavIndex(2);
-                        setActiveRecipe(recipeId);
-                    }
-                }
-                else if (hash === 'recipes') {
-                    if (isEditorOpen) { setIsEditorOpen(false); setImageToEdit(null); }
-                    if (isModalOpen) closeModal();
+            if (recipe.activeRecipe) {
+                recipe.setActiveRecipe(null);
+            }
+        });
+    }, [recipe, route.activeRecipeId, route.view]);
 
-                    if (activeRecipe) {
-                        setDirection(-1);
-                        setNavIndex(1);
-                        setActiveRecipe(null);
-                    }
-                    if (currentView !== 'recipes') {
-                        setDirection(1);
-                        setNavIndex(1);
-                        setCurrentView('recipes');
-                    }
+    useEffect(() => {
+        startViewTransition(() => {
+            if (route.overlay === 'editor') {
+                if (!imageToEdit) {
+                    closeOverlay();
+                    return;
                 }
-                else {
-                    // empty hash -> studio
-                    if (isEditorOpen) { setIsEditorOpen(false); setImageToEdit(null); }
-                    if (isModalOpen) closeModal();
 
-                    if (activeRecipe) {
-                        setDirection(-1);
-                        setNavIndex(0);
-                        setActiveRecipe(null);
-                    }
-                    if (currentView !== 'studio') {
-                        setDirection(-1);
-                        setNavIndex(0);
-                        setCurrentView('studio');
-                    }
+                setIsEditorOpen(true);
+                return;
+            }
+
+            if (route.overlay === 'modal') {
+                if (!modal.modalImage) {
+                    closeOverlay();
                 }
-            });
-        };
+                return;
+            }
 
-        window.addEventListener('hashchange', handleHashChange);
-        return () => window.removeEventListener('hashchange', handleHashChange);
-    }, [imageToEdit, modalImage, isEditorOpen, isModalOpen, activeRecipe, currentView, closeModal, setActiveRecipe]);
+            if (modal.isModalOpen) {
+                modal.closeModal();
+            }
+
+            if (isEditorOpen) {
+                setIsEditorOpen(false);
+                setImageToEdit(null);
+            }
+        });
+    }, [closeOverlay, imageToEdit, isEditorOpen, modal, route.overlay]);
 
     const workspaceBatches = useMemo(() => {
         return batches.filter(b => b.workspaceId === activeWorkspaceId || (!b.workspaceId && activeWorkspaceId === 'default'));
@@ -286,17 +237,13 @@ export const AppContent: React.FC<AppContentProps> = () => {
         handleClearWorkspace
     } = useImageManager({
         batches: workspaceBatches,
-        setBatches: (valOrFn) => {
-            setBatches(prev => {
-                const next = typeof valOrFn === 'function' ? valOrFn(workspaceBatches) : valOrFn;
-                const otherBatches = prev.filter(b => b.workspaceId !== activeWorkspaceId && (b.workspaceId || activeWorkspaceId !== 'default'));
-                return [...otherBatches, ...next];
-            });
-        },
-        setTrash,
+        deleteImage,
+        deleteImages,
+        toggleImageFavorite,
+        clearWorkspace,
         log,
-        modalImage,
-        handleCloseModal: closeModal
+        modalImage: modal.modalImage,
+        handleCloseModal
     });
 
     const imagesWithConfig = useMemo(() => {
@@ -336,22 +283,21 @@ export const AppContent: React.FC<AppContentProps> = () => {
             }
 
             if (files.length > 0) {
-                handlePastedFiles(files);
+                config.handlePastedFiles(files);
             }
         };
 
         window.addEventListener('paste', handleGlobalPaste);
         return () => window.removeEventListener('paste', handleGlobalPaste);
-    }, [handlePastedFiles]);
+    }, [config]);
 
     const handleAddWorkspace = useCallback(() => {
         startViewTransition(() => {
             const newId = `ws-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
-            setWorkspaces(prev => [...prev, { id: newId, createdAt: Date.now() }]);
-            setActiveWorkspaceId(newId);
+            createWorkspace({ id: newId, createdAt: Date.now() }, { activate: true });
             addToast('New workspace synthesized', 'success');
         });
-    }, [setWorkspaces, addToast, setActiveWorkspaceId]);
+    }, [createWorkspace, addToast]);
 
     const handleDeleteWorkspace = useCallback((id: string) => {
         if (id === 'default') {
@@ -359,50 +305,44 @@ export const AppContent: React.FC<AppContentProps> = () => {
             return;
         }
         startViewTransition(() => {
-            setWorkspaces(prev => prev.filter(ws => ws.id !== id));
-            setBatches(prev => prev.filter(b => b.workspaceId !== id));
-            if (activeWorkspaceId === id) setActiveWorkspaceId('default');
+            deleteWorkspace(id);
             addToast('Workspace purged from archives', 'info');
         });
-    }, [activeWorkspaceId, setWorkspaces, setBatches, addToast, setActiveWorkspaceId]);
+    }, [deleteWorkspace, addToast]);
 
     const handleRenameWorkspace = useCallback((id: string, newName: string) => {
         startViewTransition(() => {
-            setWorkspaces(prev => prev.map(ws => ws.id === id ? { ...ws, name: newName } : ws));
+            renameWorkspace(id, newName);
             addToast('Workspace renamed', 'success');
         });
-    }, [setWorkspaces, addToast]);
+    }, [renameWorkspace, addToast]);
 
     const handleGenerate = useCallback((promptOverride?: string, configOverrides?: Partial<ImageGenerationConfig>, options?: { force?: boolean; preventModal?: boolean }) => {
-        if (isModalOpen && !options?.preventModal) {
-            closeModal();
+        if (modal.isModalOpen && !options?.preventModal) {
+            handleCloseModal();
         }
 
-        const finalPrompt = (promptOverride !== undefined ? promptOverride : generationConfig.prompt)?.trim() ?? '';
+        const finalPrompt = (promptOverride !== undefined ? promptOverride : config.generationConfig.prompt)?.trim() ?? '';
         if (!finalPrompt) {
             addToast('Escribe un prompt antes de generar', 'info');
             return;
         }
 
-        const finalConfig: ImageGenerationConfig = { ...generationConfig, ...configOverrides, prompt: finalPrompt };
-
-        // If it's a manual generate from toolbar (no promptOverride), we enqueue
-        // If it's a regenerate (promptOverride provided), we might want to enqueue too or execute immediately
-        // The user said "todos los trabajos que iremos enviando", so let's enqueue everything
+        const finalConfig: ImageGenerationConfig = { ...config.generationConfig, ...configOverrides, prompt: finalPrompt };
         enqueue(finalPrompt, finalConfig, options?.force);
-    }, [enqueue, generationConfig, isModalOpen, closeModal, addToast]);
+    }, [addToast, config.generationConfig, enqueue, handleCloseModal, modal.isModalOpen]);
 
     const handleEnhancePrompt = useCallback(async () => {
         if (isEnhancingPrompt) return;
         setIsEnhancingPrompt(true);
         try {
-            const currentPrompt = (generationConfig.prompt ?? '').trim();
+            const currentPrompt = (config.generationConfig.prompt ?? '').trim();
             if (!currentPrompt) {
                 addToast('Escribe un prompt antes de refinarlo', 'info');
                 return;
             }
 
-            updateGenerationConfig('prompt', [
+            config.updateGenerationConfig('prompt', [
                 currentPrompt,
                 '',
                 'Refinement notes:',
@@ -412,69 +352,33 @@ export const AppContent: React.FC<AppContentProps> = () => {
             addToast('Prompt preparado para Codex ImageGen', 'success');
         } catch (error) { addToast(error instanceof Error ? error.message : 'Prompt refinement failed', 'error'); }
         finally { setIsEnhancingPrompt(false); }
-    }, [isEnhancingPrompt, generationConfig.prompt, addToast, updateGenerationConfig]);
+    }, [addToast, config, isEnhancingPrompt]);
 
     const handleExecuteEdit = useCallback(async (original: Attachment, mask: string, prompt: string) => {
         setIsEditingImage(true);
         try {
-            const result = await runLocalGeneration({
-                workspaceId: activeWorkspaceId,
-                config: {
-                    ...generationConfig,
-                    prompt,
-                    model: MODELS.CODEX_IMAGEGEN,
-                    batchCount: 1,
-                    attachments: mask
-                        ? [...generationConfig.attachments, {
-                            id: `mask-${Date.now()}`,
-                            name: `${original.name.replace(/\.[^.]+$/, '')}-mask.png`,
-                            dataUrl: mask,
-                            strength: 1,
-                        }]
-                        : generationConfig.attachments,
-                },
-                inputImage: {
-                    src: original.dataUrl,
-                    prompt: [
-                        prompt,
-                        '',
-                        'Use the input image as the edit source.',
-                        `Original attachment: ${original.name}`,
-                        `Mask reference: ${mask ? 'provided' : 'not provided'}`,
-                    ].join('\n'),
-                },
-            });
-            setBatches(p => {
-                const newBatches = [result.batch, ...p];
-                const workspaceBatches = newBatches.filter(b => b.workspaceId === activeWorkspaceId);
-                const otherBatches = newBatches.filter(b => b.workspaceId !== activeWorkspaceId);
-                return [...workspaceBatches.slice(0, 20), ...otherBatches];
-            });
-            addToast('Matrix edit complete', 'success');
-            if (window.location.hash === '#editor') {
-                window.history.replaceState(null, '', window.location.pathname + window.location.search);
-            }
+            await pipeline.executeEdit(original, mask, prompt);
+            closeOverlay();
             setIsEditorOpen(false);
             setImageToEdit(null);
-        } catch (e) {
-            addToast(e instanceof Error ? e.message : 'Local Codex edit failed', 'error');
+        } catch {
+            // Pipeline already reports failures.
         } finally {
             setIsEditingImage(false);
         }
-    }, [generationConfig, activeWorkspaceId, setBatches, addToast]);
+    }, [closeOverlay, pipeline]);
 
-    const handleLoadRecipe = useCallback((config: ImageGenerationConfig) => {
-        setGenerationConfig(config);
+    const handleLoadRecipe = useCallback((nextConfig: ImageGenerationConfig) => {
+        config.setGenerationConfig(nextConfig);
         addToast('Recipe restored', 'success');
 
-        // Intelligent Recipe Redirection
-        const detectedRecipe = detectRecipeFromContext(config.recipeContext);
+        const detectedRecipe = nextConfig.recipeId ?? detectRecipeFromContext(nextConfig.recipeContext);
         if (detectedRecipe) {
             handleRecipeSelection(detectedRecipe);
         } else {
             handleViewChange('studio');
         }
-    }, [setGenerationConfig, addToast, handleRecipeSelection, handleViewChange]);
+    }, [addToast, config, handleRecipeSelection, handleViewChange]);
 
     const handleImportVault = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
@@ -486,93 +390,12 @@ export const AppContent: React.FC<AppContentProps> = () => {
                 throw new Error("Invalid vault format");
             }
 
-            // Restore workspaces associated with imported batches
-            setWorkspaces(currentWorkspaces => {
-                const existingIds = new Set(currentWorkspaces.map(w => w.id));
-                const newWorkspaces: Workspace[] = [];
-
-                data.forEach(batch => {
-                    if (batch.workspaceId && !existingIds.has(batch.workspaceId)) {
-                        newWorkspaces.push({ id: batch.workspaceId, createdAt: Date.now(), name: `Imported (${batch.workspaceId.slice(-4)})` });
-                        existingIds.add(batch.workspaceId);
-                    }
-                });
-
-                return [...currentWorkspaces, ...newWorkspaces];
-            });
-
-            setBatches(data);
+            replaceBatches(data, { ensureWorkspaces: true });
             addToast('Vault Imported Successfully', 'success');
         } catch (err: unknown) {
             addToast('Invalid Vault File', 'error');
         }
-    }, [setWorkspaces, setBatches, addToast]);
-
-    const handleDeepScan = useCallback(async () => {
-        addToast('Iniciando Deep Scan Recovery...', 'info');
-        try {
-            const { getAllEntries } = await import('../utils/idb');
-            const entries = await getAllEntries();
-
-            let recoveredCount = 0;
-            const knownKeys = ['session-logs', 'app-workspaces', 'catalog-cache', 'catalog-trash', 'user-wallet-balance', 'bg-config', 'isBackgroundEnabled'];
-
-            const newBatches: GenerationBatch[] = [];
-
-            // 1. Scan IndexedDB
-            for (const entry of entries) {
-                if (typeof entry.key === 'string' && !knownKeys.includes(entry.key)) {
-                    if (Array.isArray(entry.value) && validateVault(entry.value)) {
-                        newBatches.push(...entry.value);
-                    } else if (validateVault([entry.value])) {
-                        newBatches.push(entry.value);
-                    }
-                }
-            }
-
-            // 2. Scan LocalStorage
-            for (let i = 0; i < localStorage.length; i++) {
-                const key = localStorage.key(i);
-                if (key && !knownKeys.includes(key)) {
-                    try {
-                        const item = localStorage.getItem(key);
-                        if (item) {
-                            const parsed = JSON.parse(item);
-                            if (Array.isArray(parsed) && validateVault(parsed)) {
-                                newBatches.push(...parsed);
-                            } else if (validateVault([parsed])) {
-                                newBatches.push(parsed);
-                            }
-                        }
-                    } catch (e) {
-                        // Ignore parse errors
-                    }
-                }
-            }
-
-            if (newBatches.length > 0) {
-                setBatches(prev => {
-                    const existingIds = new Set(prev.map(b => b.id));
-                    const uniqueNew = newBatches.filter(b => !existingIds.has(b.id));
-                    recoveredCount = uniqueNew.length;
-                    return [...uniqueNew, ...prev].slice(0, 100);
-                });
-            }
-
-            if (trash.length > 0) {
-                addToast(`Se encontraron ${trash.length} lotes en la papelera.`, 'info');
-            }
-
-            if (recoveredCount > 0) {
-                addToast(`¡Éxito! Se recuperaron ${recoveredCount} lotes.`, 'success');
-            } else {
-                addToast('Deep Scan completado: No se encontraron nuevos fragmentos.', 'info');
-            }
-        } catch (err) {
-            console.error('Deep Scan Error:', err);
-            addToast('Error durante el Deep Scan', 'error');
-        }
-    }, [trash.length, setBatches, addToast]);
+    }, [addToast, replaceBatches]);
 
     const [isDragging, setIsDragging] = useState(false);
 
@@ -590,12 +413,8 @@ export const AppContent: React.FC<AppContentProps> = () => {
             }
 
             // Move all to trash
-            setTrash(prev => {
-                const existingIds = new Set(prev.map(b => b.id));
-                const uniqueBatches = batches.filter(b => !existingIds.has(b.id));
-                return [...uniqueBatches, ...prev];
-            });
-            setBatches([]);
+            archiveBatches(batches);
+            clearAllBatches();
 
             setIsLimitModalOpen(false);
             setHasDismissedLimitModal(true);
@@ -630,9 +449,11 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
         const files = Array.from(e.dataTransfer.files as Iterable<File>).filter(file => file.type.startsWith('image/'));
         if (files.length > 0) {
-            handlePastedFiles(files);
+            config.handlePastedFiles(files);
         }
-    }, [handlePastedFiles]);
+    }, [config]);
+
+    const currentView = route.view === 'studio' ? 'studio' : 'recipes';
 
     return (
         <div
@@ -643,29 +464,29 @@ export const AppContent: React.FC<AppContentProps> = () => {
         >
             {isBackgroundEnabled && (
                 <LiquidBlackBackground
-                    isGenerating={isGenerating}
-                    activeModel={generationConfig.model}
+                    isGenerating={pipeline.isGenerating}
+                    activeModel={config.generationConfig.model}
                     config={bgConfig}
                 />
             )}
             <ToastContainer toasts={toasts} onDismiss={removeToast} />
 
-            {!isModalOpen && !isGenerating && (
+            {!modal.isModalOpen && !pipeline.isGenerating && (
                 <HeaderToolbar
                     imageCount={allImages.length}
                     selectedImageCount={selectedImageIds.length}
-                    isGenerating={isGenerating}
+                    isGenerating={pipeline.isGenerating}
                     isToolbarVisible={isToolbarVisible}
                     onToggleToolbar={() => startViewTransition(() => setIsToolbarVisible(p => !p))}
                     workspaces={workspacesWithThumbs}
                     activeWorkspaceId={activeWorkspaceId}
-                    onSwitchWorkspace={(id) => startViewTransition(() => setActiveWorkspaceId(id))}
+                    onSwitchWorkspace={(id) => startViewTransition(() => setActiveWorkspace(id))}
                     onAddWorkspace={handleAddWorkspace}
                     onDeleteWorkspace={handleDeleteWorkspace}
                     onRenameWorkspace={handleRenameWorkspace}
                     currentView={currentView}
                     onViewChange={handleViewChange}
-                    activeRecipe={activeRecipe}
+                    activeRecipe={recipe.activeRecipe}
                     onCloseRecipe={handleCloseRecipe}
                     onOpenDashboard={() => startViewTransition(() => setIsDashboardModalOpen(true))}
                     onOpenOnboarding={() => startViewTransition(() => openOnboarding())}
@@ -677,12 +498,12 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
             <main
                 className="flex-1 relative overflow-hidden z-10 w-full min-h-0"
-                onClick={() => { setIsInteractingWithToolbar(false); setIsKeyPopoverOpen(false); }}
+                onClick={() => { ui.setIsInteractingWithToolbar(false); ui.setIsKeyPopoverOpen(false); }}
             >
                 <AnimatePresence mode="popLayout" custom={direction} initial={false}>
-                    {activeRecipe ? (
+                    {route.view === 'recipe' && recipe.activeRecipe ? (
                         <motion.div
-                            key={`recipe-${activeRecipe}`}
+                            key={`recipe-${recipe.activeRecipe}`}
                             custom={direction}
                             variants={viewVariants}
                             initial="enter"
@@ -690,20 +511,20 @@ export const AppContent: React.FC<AppContentProps> = () => {
                             exit="exit"
                             className="absolute inset-0 w-full h-full overflow-hidden"
                         >
-                            <RecipeRouter
-                                activeRecipe={activeRecipe}
-                                generationConfig={generationConfig}
-                                updateGenerationConfig={updateGenerationConfig}
-                                updateAttachment={updateAttachment}
-                                handlePastedFiles={handlePastedFiles}
+                            <RecipePage
+                                activeRecipe={recipe.activeRecipe}
+                                generationConfig={config.generationConfig}
+                                updateGenerationConfig={config.updateGenerationConfig}
+                                updateAttachment={config.updateAttachment}
+                                handlePastedFiles={config.handlePastedFiles}
                                 handleGenerate={handleGenerate}
-                                isGenerating={isGenerating}
+                                isGenerating={pipeline.isGenerating}
                                 imagesWithConfig={imagesWithConfig}
-                                openModal={openModal}
-                                handleAddToContext={handleAddToContext}
+                                openModal={handleOpenModal}
+                                handleAddToContext={config.handleAddToContext}
                             />
                         </motion.div>
-                    ) : currentView === 'studio' ? (
+                    ) : route.view === 'studio' ? (
                         <motion.div
                             key="studio"
                             custom={direction}
@@ -713,87 +534,48 @@ export const AppContent: React.FC<AppContentProps> = () => {
                             exit="exit"
                             className="absolute inset-0 w-full h-full flex flex-row overflow-hidden"
                         >
-                            {!isModalOpen && (
-                                <LeftDebugPanel
-                                    workspaces={workspaces}
-                                    logs={mergedLogs}
-                                    batchesCount={batches.length}
-                                    imagesCount={allImages.length}
-                                />
-                            )}
-
-                            <div className="flex-1 h-full relative overflow-hidden flex flex-col">
-                                <div className="flex-1 relative min-h-0">
-                                    <ErrorBoundary fallbackMessage="Failed to render the image grid.">
-                                        <ImageGrid
-                                            key={activeWorkspaceId}
-                                            images={imagesWithConfig}
-                                            selectedImageIds={selectedImageIds}
-                                            onImageClick={openModal}
-                                            onSelectionChange={handleSelectionChange}
-                                            onRegenerate={(config) => handleGenerate(config.prompt, config, { preventModal: true })}
-                                            onAddToContext={handleAddToContext}
-                                            onLoadConfig={handleLoadRecipe}
-                                            onDelete={handleDelete}
-                                            onToggleFavorite={handleToggleFavorite}
-                                            isGenerating={isGenerating || jobs.some(j => j.status === 'processing')}
-                                            transitioningImageId={transitioningImageId}
-                                            activeModalImageId={activeCarouselId}
-                                            onSelectAll={() => handleSelectAll(allImages)}
-                                            onDeselectAll={handleDeselectAll}
-                                            onDownloadSelected={() => {
-                                                const selectedImages = imagesWithConfig.filter(img => selectedImageIds.includes(img.id));
-                                                if (selectedImages.length > 0) {
-                                                    downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
-                                                }
-                                            }}
-                                            onDownloadAll={() => {
-                                                if (imagesWithConfig.length > 0) {
-                                                    downloadMultipleImagesAsZip(imagesWithConfig, `assets-${Date.now()}.zip`);
-                                                }
-                                            }}
-                                            onDeleteSelected={handleDeleteSelected}
-                                            onClearWorkspace={() => handleClearWorkspace(activeWorkspaceId)}
-                                        />
-                                    </ErrorBoundary>
-                                </div>
-                                <FormatPreview ratio={previewRatio || generationConfig.aspectRatio} isVisible={!isModalOpen && (isInteractingWithToolbar || !!previewRatio)} isWorkspaceEmpty={allImages.length === 0} />
-                            </div>
-
-                            {!isModalOpen && (
-                                <div className="flex h-full">
-                                    <AnimatePresence>
-                                        {isQueueOpen && (
-                                            <motion.div
-                                                initial={{ width: 0, opacity: 0 }}
-                                                animate={{ width: 320, opacity: 1 }}
-                                                exit={{ width: 0, opacity: 0 }}
-                                                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                                                className="h-full overflow-hidden"
-                                            >
-                                                <QueuePanel
-                                                    jobs={jobs}
-                                                    serverJobs={studioJobs}
-                                                    onRetry={retry}
-                                                    onCancel={cancelJob}
-                                                    onRemove={removeJob}
-                                                    onClearCompleted={clearCompleted}
-                                                    isResting={isResting}
-                                                />
-                                            </motion.div>
-                                        )}
-                                    </AnimatePresence>
-                                    <RightSystemPanel
-                                        onImportVault={handleImportVault}
-                                        onExportVault={() => exportToJson(batches, `vault-${Date.now()}.json`)}
-                                        isBackgroundEnabled={isBackgroundEnabled}
-                                        onToggleBackground={() => setIsBackgroundEnabled(p => !p)}
-                                        isQueueOpen={isQueueOpen}
-                                        onToggleQueue={() => setIsQueueOpen(!isQueueOpen)}
-                                        queueCount={jobs.length + activeServerJobCount}
-                                    />
-                                </div>
-                            )}
+                            <StudioPage
+                                isModalOpen={modal.isModalOpen}
+                                workspaces={workspaces}
+                                mergedLogs={mergedLogs}
+                                batchesCount={batches.length}
+                                allImages={allImages}
+                                imagesWithConfig={imagesWithConfig}
+                                selectedImageIds={selectedImageIds}
+                                activeWorkspaceId={activeWorkspaceId}
+                                openModal={handleOpenModal}
+                                handleSelectionChange={handleSelectionChange}
+                                handleGenerate={handleGenerate}
+                                handleAddToContext={config.handleAddToContext}
+                                handleLoadRecipe={handleLoadRecipe}
+                                handleDelete={handleDelete}
+                                handleToggleFavorite={handleToggleFavorite}
+                                isGenerating={pipeline.isGenerating}
+                                transitioningImageId={modal.transitioningImageId}
+                                activeModalImageId={modal.activeCarouselId}
+                                handleSelectAll={handleSelectAll}
+                                handleDeselectAll={handleDeselectAll}
+                                handleDeleteSelected={handleDeleteSelected}
+                                handleClearWorkspace={handleClearWorkspace}
+                                previewRatio={previewRatio}
+                                generationAspectRatio={config.generationConfig.aspectRatio}
+                                isInteractingWithToolbar={ui.isInteractingWithToolbar}
+                                isQueueOpen={isQueueOpen}
+                                setIsQueueOpen={setIsQueueOpen}
+                                jobs={jobs}
+                                studioJobs={studioJobs}
+                                retry={retry}
+                                cancelJob={cancelJob}
+                                removeJob={removeJob}
+                                clearCompleted={clearCompleted}
+                                isResting={isResting}
+                                batchesForExport={imagesWithConfig}
+                                exportBatches={() => exportToJson(batches, `vault-${Date.now()}.json`)}
+                                handleImportVault={handleImportVault}
+                                isBackgroundEnabled={isBackgroundEnabled}
+                                setBackgroundEnabled={setBackgroundEnabled}
+                                activeServerJobCount={activeServerJobCount}
+                            />
                         </motion.div>
                     ) : (
                         <motion.div
@@ -811,108 +593,93 @@ export const AppContent: React.FC<AppContentProps> = () => {
                 </AnimatePresence>
             </main>
 
-            {isToolbarVisible && !isModalOpen && (currentView === 'studio' || activeRecipe) && (
+            {isToolbarVisible && !modal.isModalOpen && (route.view === 'studio' || recipe.activeRecipe) && (
                 <BottomToolbar className="w-full relative z-30 shrink-0">
                     <DropZoneOverlay isVisible={isDragging} />
                     <Toolbar
-                        generationConfig={generationConfig}
-                        updateConfig={updateGenerationConfig}
-                        updateAttachment={updateAttachment}
+                        generationConfig={config.generationConfig}
+                        updateConfig={config.updateGenerationConfig}
+                        updateAttachment={config.updateAttachment}
                         onGenerate={handleGenerate}
-                        isGenerating={isGenerating}
-                        generationStartTime={generationStartTime}
-                        onFileSelect={handleFileSelect}
-                        onFilesDrop={handlePastedFiles}
-                        onRemoveAttachment={handleRemoveAttachment}
+                        isGenerating={pipeline.isGenerating}
+                        generationStartTime={pipeline.generationStartTime}
+                        onFileSelect={config.handleFileSelect}
+                        onFilesDrop={config.handlePastedFiles}
+                        onRemoveAttachment={config.handleRemoveAttachment}
                         isEnhancingPrompt={isEnhancingPrompt}
                         onEnhancePrompt={handleEnhancePrompt}
                         setPreviewRatio={setPreviewRatio}
-                        setIsInteracting={setIsInteractingWithToolbar}
+                        setIsInteracting={ui.setIsInteractingWithToolbar}
                         onOpenEditor={(att) => {
                             startViewTransition(() => {
                                 setImageToEdit(att);
                                 setIsEditorOpen(true);
-                                window.location.hash = 'editor';
+                                openEditorRoute();
                             });
                         }}
-                        isKeyPopoverOpen={isKeyPopoverOpen}
-                        onOpenKeySelector={() => startViewTransition(() => setIsKeyPopoverOpen(!isKeyPopoverOpen))}
+                        isKeyPopoverOpen={ui.isKeyPopoverOpen}
+                        onOpenKeySelector={() => startViewTransition(() => ui.setIsKeyPopoverOpen(!ui.isKeyPopoverOpen))}
                         onSelectKey={async () => {
                             await verifyCodexSession();
-                            startViewTransition(() => setIsKeyPopoverOpen(false));
+                            startViewTransition(() => ui.setIsKeyPopoverOpen(false));
                         }}
-                        maxAttachments={maxAttachments}
+                        maxAttachments={config.maxAttachments}
                     />
                 </BottomToolbar>
             )}
 
-            {isModalOpen && (
-                <ImageCarousel
-                    activeImage={modalImage}
-                    allImages={imagesWithConfig}
-                    activeGenerationConfig={activeGenerationConfig}
-                    onClose={() => closeModal()}
-                    onDelete={handleDelete}
-                    onRegenerate={(config) => handleGenerate(config.prompt, config, { preventModal: true })}
-                    onAddToContext={(img) => { handleAddToContext(img); closeModal(); }}
-                    onLoadConfig={(config) => { handleLoadRecipe(config); closeModal(); }}
-                    onToggleFavorite={handleToggleFavorite}
-                    onActiveImageChange={setActiveCarouselId}
-                    transitionName="master-canvas"
-                />
-            )}
-            <ImageEditorModal
-                isOpen={isEditorOpen}
-                onClose={() => {
+            <AppOverlays
+                modalImage={modal.modalImage}
+                imagesWithConfig={imagesWithConfig}
+                activeGenerationConfig={pipeline.activeGenerationConfig}
+                closeModal={handleCloseModal}
+                handleDelete={handleDelete}
+                handleGenerate={handleGenerate}
+                handleAddToContext={config.handleAddToContext}
+                handleLoadRecipe={handleLoadRecipe}
+                handleToggleFavorite={handleToggleFavorite}
+                setActiveCarouselId={modal.setActiveCarouselId}
+                isEditorOpen={isEditorOpen}
+                closeEditor={() => {
                     startViewTransition(() => {
                         setIsEditorOpen(false);
                         setImageToEdit(null);
-                        if (window.location.hash === '#editor') {
-                            window.history.replaceState(null, '', window.location.pathname + window.location.search);
-                        }
+                        closeOverlay();
                     });
                 }}
-                image={imageToEdit}
-                onGenerate={handleExecuteEdit}
-                isGenerating={isEditingImage}
-            />
-            <DebugPanel isOpen={isDebugPanelOpen} onClose={toggleDebugPanel} logs={mergedLogs} appState={{}} />
-            <DashboardModal
-                isOpen={isDashboardModalOpen}
-                onClose={() => startViewTransition(() => setIsDashboardModalOpen(false))}
+                imageToEdit={imageToEdit}
+                handleExecuteEdit={handleExecuteEdit}
+                isEditingImage={isEditingImage}
+                isDebugPanelOpen={isDebugPanelOpen}
+                toggleDebugPanel={toggleDebugPanel}
+                mergedLogs={mergedLogs}
+                isDashboardModalOpen={isDashboardModalOpen}
+                closeDashboard={() => startViewTransition(() => setIsDashboardModalOpen(false))}
                 batches={batches}
                 workspaces={workspaces}
-                onImportVault={handleImportVault}
-                onExportVault={() => exportToJson(batches, `vault-export-${Date.now()}.json`)}
-                onDeepScan={handleDeepScan}
-            />
-            <OnboardingModal
+                handleImportVault={handleImportVault}
+                handleDeepScan={recoverOrphanedBatches}
                 apiBase={apiBase}
-                error={onboardingError}
-                health={onboardingHealth}
-                isChecking={isCheckingOnboarding}
+                onboardingError={onboardingError}
+                onboardingHealth={onboardingHealth}
+                isCheckingOnboarding={isCheckingOnboarding}
                 isDesktopRuntime={isDesktopRuntime}
-                isOpen={isOnboardingOpen}
-                isReady={isOnboardingReady}
+                isOnboardingOpen={isOnboardingOpen}
+                isOnboardingReady={isOnboardingReady}
                 isStartingAppServer={isStartingAppServer}
-                onClose={() => startViewTransition(() => closeOnboarding())}
-                onComplete={() => startViewTransition(() => completeOnboarding())}
-                onRefresh={() => void refreshOnboardingHealth()}
-                onStartAppServer={() => void ensureAppServer()}
-            />
-            <TrashModal
-                isOpen={isTrashModalOpen}
-                onClose={() => startViewTransition(() => setIsTrashModalOpen(false))}
+                closeOnboarding={() => startViewTransition(() => closeOnboarding())}
+                completeOnboarding={() => startViewTransition(() => completeOnboarding())}
+                refreshOnboardingHealth={() => void refreshOnboardingHealth()}
+                ensureAppServer={() => void ensureAppServer()}
+                isTrashModalOpen={isTrashModalOpen}
+                closeTrash={() => startViewTransition(() => setIsTrashModalOpen(false))}
                 trash={trash}
-                onRestore={restoreFromTrash}
-                onRestoreAll={restoreAllFromTrash}
-                onEmpty={() => setTrash([])}
-            />
-            <LimitReachedModal
-                isOpen={isLimitModalOpen}
-                onClose={handleDismissLimitModal}
-                onDownloadAndClear={handleDownloadAndClear}
-                batchCount={batches.length}
+                restoreFromTrash={restoreFromTrash}
+                restoreAllFromTrash={restoreAllFromTrash}
+                emptyTrash={emptyTrash}
+                isLimitModalOpen={isLimitModalOpen}
+                handleDismissLimitModal={handleDismissLimitModal}
+                handleDownloadAndClear={handleDownloadAndClear}
             />
         </div>
     );
