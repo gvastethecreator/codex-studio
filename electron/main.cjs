@@ -11,7 +11,9 @@ function getRendererEntryUrl() {
 
   const distEntry = path.join(__dirname, '..', 'dist', 'index.html');
   if (!fs.existsSync(distEntry)) {
-    throw new Error(`Renderer build not found at ${distEntry}. Run \`bun run build:ui\` or \`bun run preview:electron\`.`);
+    throw new Error(
+      `Renderer build not found at ${distEntry}. Run \`bun run build:ui\` or \`bun run preview:electron\`.`,
+    );
   }
 
   return pathToFileURL(distEntry).toString();
@@ -58,9 +60,14 @@ function createMainWindow() {
     void shell.openExternal(url);
   });
 
-  mainWindow.webContents.on('did-fail-load', (_event, errorCode, errorDescription, validatedUrl) => {
-    console.error(`[electron] renderer failed to load (${errorCode}) ${errorDescription}: ${validatedUrl}`);
-  });
+  mainWindow.webContents.on(
+    'did-fail-load',
+    (_event, errorCode, errorDescription, validatedUrl) => {
+      console.error(
+        `[electron] renderer failed to load (${errorCode}) ${errorDescription}: ${validatedUrl}`,
+      );
+    },
+  );
 
   mainWindow.webContents.on('did-finish-load', () => {
     console.log(`[electron] renderer ready at ${entryUrl} (api: ${apiBase})`);

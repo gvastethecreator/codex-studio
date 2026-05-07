@@ -28,6 +28,7 @@ Esto crea fricción constante:
 ### Deletion test
 
 Si borramos la capa de `GenerationBatch` en IndexedDB y el grid renderiza desde el catálogo:
+
 - La complejidad de `mapAssetToBatch` desaparece.
 - La complejidad de paginación, filtrado, y ordenamiento reaparece en SQLite (donde pertenece) y en un hook `useCatalog`.
 - La complejidad de "qué imágenes mostrar" se resuelve con queries SQL parametrizadas en lugar de `Array.filter()` en el frontend.
@@ -41,16 +42,16 @@ Extender `queryCatalog` en `catalog.ts` para aceptar `jobId` como parámetro de 
 ```ts
 // catalog.ts
 export function queryCatalog(params: {
-  limit?: number
-  offset?: number
-  workspaceId?: string
-  jobId?: string          // NUEVO
-  batchId?: string        // NUEVO
-  isFavorite?: boolean
-  includeDeleted?: boolean
-  sortBy?: 'created_at' | 'prompt' | 'aspect_ratio'
-  sortOrder?: 'asc' | 'desc'
-}): CatalogPage
+  limit?: number;
+  offset?: number;
+  workspaceId?: string;
+  jobId?: string; // NUEVO
+  batchId?: string; // NUEVO
+  isFavorite?: boolean;
+  includeDeleted?: boolean;
+  sortBy?: 'created_at' | 'prompt' | 'aspect_ratio';
+  sortOrder?: 'asc' | 'desc';
+}): CatalogPage;
 ```
 
 El SQL se construye dinámicamente con `WHERE` clauses parametrizadas. Esto elimina el filtrado client-side frágil en `localGenerationRun`.
@@ -61,17 +62,18 @@ Crear un hook que reemplaza el acceso directo a `batches` del contexto:
 
 ```ts
 function useCatalog(filters?: CatalogFilters): {
-  images: CatalogImage[]
-  page: CatalogPage
-  isLoading: boolean
-  error: Error | null
-  loadMore: () => void
-  refresh: () => void
-  hasMore: boolean
-}
+  images: CatalogImage[];
+  page: CatalogPage;
+  isLoading: boolean;
+  error: Error | null;
+  loadMore: () => void;
+  refresh: () => void;
+  hasMore: boolean;
+};
 ```
 
 El hook maneja:
+
 - **Paginación**: carga inicial + `loadMore` para scroll infinito.
 - **Caché**: almacena páginas en IndexedDB bajo `catalog-cache` (ya existe) como caché de lectura, no como fuente de verdad.
 - **Invalidación**: después de generar imágenes, `refresh()` re-consulta el catálogo.
@@ -84,9 +86,9 @@ function StudioPage() {
   const { images, loadMore, hasMore, refresh } = useCatalog({
     workspaceId: activeWorkspaceId,
     isDeleted: false,
-  })
-  
-  return <ImageGrid images={images} onScrollEnd={loadMore} />
+  });
+
+  return <ImageGrid images={images} onScrollEnd={loadMore} />;
 }
 ```
 
@@ -96,20 +98,21 @@ Con el filtro `jobId` en el backend, `runSingleCodexImagegenJob` pasa de:
 
 ```ts
 // ANTES: fetch 50 + filter client-side
-const catalogPage = await queryCatalog({ limit: 50 })
-const jobAssets = catalogPage.images.filter(a => a.jobId === completedJob.id)
+const catalogPage = await queryCatalog({ limit: 50 });
+const jobAssets = catalogPage.images.filter((a) => a.jobId === completedJob.id);
 ```
 
 A:
 
 ```ts
 // DESPUÉS: filtro server-side
-const { images: jobAssets } = await queryCatalog({ jobId: completedJob.id })
+const { images: jobAssets } = await queryCatalog({ jobId: completedJob.id });
 ```
 
 ### Fase 4: Eliminar `GenerationBatch` de IndexedDB
 
 Una vez que el grid, carousel, y trash usan `useCatalog`:
+
 - Eliminar keys `catalog-cache` y `catalog-trash` de IndexedDB (o mantener solo como caché volátil).
 - Eliminar `mapAssetToBatch` de `useLocalStudioSync`.
 - `GlobalContext` deja de almacenar `batches` y `trash` como `GenerationBatch[]`.
@@ -117,18 +120,18 @@ Una vez que el grid, carousel, y trash usan `useCatalog`:
 
 ### Archivos afectados
 
-| Archivo | Cambio |
-|---------|--------|
-| `apps/local-server/src/catalog.ts` | Agregar filtros `jobId`, `batchId` a `queryCatalog` |
-| `apps/local-server/src/appFactory.ts` | Pasar query params del endpoint `/api/catalog` a `queryCatalog` |
-| `hooks/useCatalog.ts` | Nuevo — hook de consulta paginada al catálogo |
-| `services/localGenerationRun.ts` | Usar `queryCatalog({ jobId })` en lugar de filter client-side |
-| `hooks/useLocalStudioSync.ts` | Eliminar `mapAssetToBatch`, `importLocalAssets` |
-| `contexts/GlobalContext.tsx` | Reemplazar `batches`/`trash` state con `useCatalog` |
-| `components/ImageGrid.tsx` | Recibir `CatalogImage[]` en lugar de `GeneratedImage[]` |
-| `components/ImageCarousel.tsx` | Cargar full-res desde `publicUrl` del catálogo |
-| `components/TrashModal.tsx` | Usar `useCatalog({ isDeleted: true })` |
-| `types.ts` | Deprecar `GenerationBatch`, `GeneratedImage`, `GeneratedImageWithConfig` |
+| Archivo                               | Cambio                                                                   |
+| ------------------------------------- | ------------------------------------------------------------------------ |
+| `apps/local-server/src/catalog.ts`    | Agregar filtros `jobId`, `batchId` a `queryCatalog`                      |
+| `apps/local-server/src/appFactory.ts` | Pasar query params del endpoint `/api/catalog` a `queryCatalog`          |
+| `hooks/useCatalog.ts`                 | Nuevo — hook de consulta paginada al catálogo                            |
+| `services/localGenerationRun.ts`      | Usar `queryCatalog({ jobId })` en lugar de filter client-side            |
+| `hooks/useLocalStudioSync.ts`         | Eliminar `mapAssetToBatch`, `importLocalAssets`                          |
+| `contexts/GlobalContext.tsx`          | Reemplazar `batches`/`trash` state con `useCatalog`                      |
+| `components/ImageGrid.tsx`            | Recibir `CatalogImage[]` en lugar de `GeneratedImage[]`                  |
+| `components/ImageCarousel.tsx`        | Cargar full-res desde `publicUrl` del catálogo                           |
+| `components/TrashModal.tsx`           | Usar `useCatalog({ isDeleted: true })`                                   |
+| `types.ts`                            | Deprecar `GenerationBatch`, `GeneratedImage`, `GeneratedImageWithConfig` |
 
 ## Consecuencias
 

@@ -6,7 +6,8 @@ const DEFAULT_LIBRARY_DIR = 'D:\\AI-Studio-Library';
 const DEFAULT_SERVER_PORT = 4317;
 const DEFAULT_CODEX_WS_PORT = 4318;
 const DEFAULT_CODEX_IMAGEGEN_MODEL = 'gpt-5.4-mini';
-const DEFAULT_CODEX_IMAGEGEN_REASONING_EFFORT: StudioSettings['codexImagegenReasoningEffort'] = 'low';
+const DEFAULT_CODEX_IMAGEGEN_REASONING_EFFORT: StudioSettings['codexImagegenReasoningEffort'] =
+  'low';
 const DEFAULT_MAX_CONCURRENT_CODEX_JOBS = 4;
 
 let envLocalLoaded = false;
@@ -33,7 +34,10 @@ export function loadDotEnvLocal() {
     const separator = trimmed.indexOf('=');
     if (separator === -1) continue;
     const key = trimmed.slice(0, separator).trim();
-    const value = trimmed.slice(separator + 1).trim().replace(/^["']|["']$/g, '');
+    const value = trimmed
+      .slice(separator + 1)
+      .trim()
+      .replace(/^["']|["']$/g, '');
     if (!(key in process.env)) {
       process.env[key] = value;
     }
@@ -42,7 +46,9 @@ export function loadDotEnvLocal() {
 
 function warnInvalidSetting(key: string, value: string | undefined, fallback: string | number) {
   const renderedValue = value === undefined ? 'undefined' : JSON.stringify(value);
-  console.warn(`[studio-config] Invalid ${key}=${renderedValue}. Using ${JSON.stringify(fallback)}.`);
+  console.warn(
+    `[studio-config] Invalid ${key}=${renderedValue}. Using ${JSON.stringify(fallback)}.`,
+  );
 }
 
 function readStringSetting(key: string, fallback: string) {
@@ -63,7 +69,10 @@ function readPositiveIntSetting(key: string, fallback: number) {
   return parsed;
 }
 
-function readReasoningEffortSetting(key: string, fallback: StudioSettings['codexImagegenReasoningEffort']) {
+function readReasoningEffortSetting(
+  key: string,
+  fallback: StudioSettings['codexImagegenReasoningEffort'],
+) {
   const raw = process.env[key]?.trim().toLowerCase();
   if (!raw) return fallback;
   if (raw === 'low' || raw === 'medium' || raw === 'high') return raw;

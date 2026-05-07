@@ -10,39 +10,40 @@ El backend tiene **interface-washing**: 5+ interfaces existen (`CodexTurn`, `Pro
 
 ```ts
 // worker.ts — módulo-level side effect
-const codexTurn = createCodexTurn()  // línea 16 — se ejecuta en tiempo de import
+const codexTurn = createCodexTurn(); // línea 16 — se ejecuta en tiempo de import
 
 // catalog.ts, libraries.ts, workspaceRoutes.ts
-import { getDb } from './db'  // singleton lazy — mismo path para todos
-const db = getDb()
+import { getDb } from './db'; // singleton lazy — mismo path para todos
+const db = getDb();
 
 // codex/sessionPool.ts — instanciación directa
-import { CodexRpcClient } from './rpcClient'
-const client = new CodexRpcClient(config)
+import { CodexRpcClient } from './rpcClient';
+const client = new CodexRpcClient(config);
 
 // codex/turn.ts — módulo-level side effects
-const IMAGEGEN_SKILL_PATH = resolvePlatformPath('codex-skills-dir')  // línea 10 — ejecución eager
-const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-4o'  // línea 11
+const IMAGEGEN_SKILL_PATH = resolvePlatformPath('codex-skills-dir'); // línea 10 — ejecución eager
+const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-4o'; // línea 11
 ```
 
 Esto hace que **ningún módulo del backend sea testeable sin module mocking**: `getDb()` abre una conexión real a SQLite en `resolveLibraryPath('library.sqlite')`. `worker.ts` crea un `CodexTurn` real al importarse. Los tests no pueden correr en paralelo porque comparten el singleton `db`.
 
 ### Módulos bloqueados por falta de DI
 
-| Módulo | Bloqueador | Qué se necesita para testearlo |
-|--------|-----------|-------------------------------|
-| `db.ts` | `getDb()` singleton con path fijo | Poder pasar un path de DB o un `Database` mock |
-| `catalog.ts` | `getDb()` + `getDefaultLibrary()` hard imports | Poder inyectar DB y library mock |
-| `libraries.ts` | `getDb()` + `ensureLibraryStructure()` filesystem | Poder inyectar DB y mock filesystem |
-| `workspaceRoutes.ts` | `getDb()` + `getDefaultLibrary()` | Poder inyectar DB |
-| `worker.ts` | `createCodexTurn()` module-level | Poder pasar un `CodexTurn` mock |
-| `logger.ts` | `addSystemLog()` + `publishEvent()` + `appendFileSync()` | Poder inyectar los tres adapters |
-| `codex/turn.ts` | `resolvePlatformPath()` + `process.env` module-level | Mover a factory params |
-| `appFactory.ts` | 13+ hard imports | ADR 0002 ya cubre esto parcialmente |
+| Módulo               | Bloqueador                                               | Qué se necesita para testearlo                 |
+| -------------------- | -------------------------------------------------------- | ---------------------------------------------- |
+| `db.ts`              | `getDb()` singleton con path fijo                        | Poder pasar un path de DB o un `Database` mock |
+| `catalog.ts`         | `getDb()` + `getDefaultLibrary()` hard imports           | Poder inyectar DB y library mock               |
+| `libraries.ts`       | `getDb()` + `ensureLibraryStructure()` filesystem        | Poder inyectar DB y mock filesystem            |
+| `workspaceRoutes.ts` | `getDb()` + `getDefaultLibrary()`                        | Poder inyectar DB                              |
+| `worker.ts`          | `createCodexTurn()` module-level                         | Poder pasar un `CodexTurn` mock                |
+| `logger.ts`          | `addSystemLog()` + `publishEvent()` + `appendFileSync()` | Poder inyectar los tres adapters               |
+| `codex/turn.ts`      | `resolvePlatformPath()` + `process.env` module-level     | Mover a factory params                         |
+| `appFactory.ts`      | 13+ hard imports                                         | ADR 0002 ya cubre esto parcialmente            |
 
 ### Deletion test
 
 Si reemplazamos los hard imports con parámetros de factory:
+
 - La complejidad de "qué DB usar" se decide en un solo lugar (`appFactory` o `index.ts`).
 - La complejidad de "cómo testear catalog.ts" no requiere mockear `getDb()` a nivel módulo.
 - Los tests pueden crear `new Database(':memory:')` y pasarlo a `createCatalog(db)`.
@@ -55,15 +56,15 @@ En lugar de:
 
 ```ts
 // db.ts — ANTES
-let db: Database | null = null
+let db: Database | null = null;
 export function getDb(): Database {
-  if (!db) db = new Database(resolveLibraryPath('library.sqlite'))
-  return db
+  if (!db) db = new Database(resolveLibraryPath('library.sqlite'));
+  return db;
 }
 
 export function listJobs(): Job[] {
-  const db = getDb()
-  return db.query('SELECT * FROM jobs').all() as Job[]
+  const db = getDb();
+  return db.query('SELECT * FROM jobs').all() as Job[];
 }
 ```
 
@@ -72,22 +73,22 @@ Usar factory functions que reciben dependencias:
 ```ts
 // db.ts — DESPUÉS
 export function createDatabase(path: string): Database {
-  const db = new Database(path)
-  db.run('PRAGMA journal_mode=WAL')
-  db.run('PRAGMA foreign_keys=ON')
-  return db
+  const db = new Database(path);
+  db.run('PRAGMA journal_mode=WAL');
+  db.run('PRAGMA foreign_keys=ON');
+  return db;
 }
 
 export function createJobStore(db: Database) {
   return {
     listJobs(): Job[] {
-      return db.query('SELECT * FROM jobs').all() as Job[]
+      return db.query('SELECT * FROM jobs').all() as Job[];
     },
     createJob(job: CreateJobRequest): Job {
       // ...
     },
     // ... resto de funciones
-  }
+  };
 }
 ```
 
@@ -95,18 +96,18 @@ O, alternativamente, mantener las funciones exportadas pero aceptando un paráme
 
 ```ts
 // db.ts — alternativa menos invasiva
-let defaultDb: Database | null = null
+let defaultDb: Database | null = null;
 
 export function getDb(db?: Database): Database {
-  if (db) return db
-  if (!defaultDb) defaultDb = new Database(resolveLibraryPath('library.sqlite'))
-  return defaultDb
+  if (db) return db;
+  if (!defaultDb) defaultDb = new Database(resolveLibraryPath('library.sqlite'));
+  return defaultDb;
 }
 
 // Todas las funciones aceptan db opcional
 export function listJobs(db?: Database): Job[] {
-  const conn = getDb(db)
-  return conn.query('SELECT * FROM jobs').all() as Job[]
+  const conn = getDb(db);
+  return conn.query('SELECT * FROM jobs').all() as Job[];
 }
 ```
 
@@ -116,23 +117,27 @@ export function listJobs(db?: Database): Job[] {
 
 ```ts
 // worker.ts — ANTES
-const codexTurn = createCodexTurn()
-const maxConcurrentJobs = parseInt(process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS || '1')
+const codexTurn = createCodexTurn();
+const maxConcurrentJobs = parseInt(process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS || '1');
 
 // worker.ts — DESPUÉS
-let codexTurn: CodexTurn
+let codexTurn: CodexTurn;
 
 export function initWorker(turn: CodexTurn, maxConcurrent?: number) {
-  codexTurn = turn
-  maxConcurrentJobs = maxConcurrent ?? 1
+  codexTurn = turn;
+  maxConcurrentJobs = maxConcurrent ?? 1;
 }
 
 // O mejor: convertir en factory
 export function createWorker(turn: CodexTurn, maxConcurrent?: number) {
   return {
-    enqueueJob(job: Job) { /* ... */ },
-    getWorkerStatus() { /* ... */ },
-  }
+    enqueueJob(job: Job) {
+      /* ... */
+    },
+    getWorkerStatus() {
+      /* ... */
+    },
+  };
 }
 ```
 
@@ -140,21 +145,21 @@ export function createWorker(turn: CodexTurn, maxConcurrent?: number) {
 
 ```ts
 // logger.ts — ANTES: 3 hard imports
-import { addSystemLog } from './db'
-import { publishEvent } from './events'
-import { appendFileSync } from 'node:fs'
+import { addSystemLog } from './db';
+import { publishEvent } from './events';
+import { appendFileSync } from 'node:fs';
 
 // logger.ts — DESPUÉS: factory con dependencias
 export function createLogger(deps: {
-  db: { addSystemLog: (log: SystemLog) => number }
-  events: { publishEvent: (type: string, payload: unknown) => void }
-  writeToFile: (path: string, data: string) => void
+  db: { addSystemLog: (log: SystemLog) => number };
+  events: { publishEvent: (type: string, payload: unknown) => void };
+  writeToFile: (path: string, data: string) => void;
 }) {
   return function log(level: LogLevel, scope: string, message: string, jobId?: string) {
-    deps.writeToFile(resolveLogPath(level), formatLogEntry(level, scope, message))
-    deps.db.addSystemLog({ level, scope, message, jobId })
-    deps.events.publishEvent('log.created', { level, scope, message, jobId })
-  }
+    deps.writeToFile(resolveLogPath(level), formatLogEntry(level, scope, message));
+    deps.db.addSystemLog({ level, scope, message, jobId });
+    deps.events.publishEvent('log.created', { level, scope, message, jobId });
+  };
 }
 ```
 
@@ -177,18 +182,18 @@ export function createCodexTurn(deps: {
 
 ### Archivos afectados
 
-| Archivo | Cambio |
-|---------|--------|
-| `db.ts` | Agregar parámetro opcional `db?: Database` a todas las funciones |
-| `catalog.ts` | Aceptar `db?: Database` en funciones; tests pueden pasar `:memory:` |
-| `libraries.ts` | Ídem |
-| `workspaceRoutes.ts` | Ídem |
-| `worker.ts` | Factory `createWorker(turn, config)` en lugar de module-level state |
-| `logger.ts` | Factory `createLogger(deps)` en lugar de 3 hard imports |
-| `codex/turn.ts` | Aceptar `deps: { sessionPool, rpcClient, assetExtractor }` |
-| `codex/sessionPool.ts` | Aceptar `deps: { rpcClientFactory, persistencePath }` |
-| `appFactory.ts` | Construir dependencias y pasarlas a factories |
-| `index.ts` | Mínimo cambio — `createStudioApp` recibe overrides opcionales |
+| Archivo                | Cambio                                                              |
+| ---------------------- | ------------------------------------------------------------------- |
+| `db.ts`                | Agregar parámetro opcional `db?: Database` a todas las funciones    |
+| `catalog.ts`           | Aceptar `db?: Database` en funciones; tests pueden pasar `:memory:` |
+| `libraries.ts`         | Ídem                                                                |
+| `workspaceRoutes.ts`   | Ídem                                                                |
+| `worker.ts`            | Factory `createWorker(turn, config)` en lugar de module-level state |
+| `logger.ts`            | Factory `createLogger(deps)` en lugar de 3 hard imports             |
+| `codex/turn.ts`        | Aceptar `deps: { sessionPool, rpcClient, assetExtractor }`          |
+| `codex/sessionPool.ts` | Aceptar `deps: { rpcClientFactory, persistencePath }`               |
+| `appFactory.ts`        | Construir dependencias y pasarlas a factories                       |
+| `index.ts`             | Mínimo cambio — `createStudioApp` recibe overrides opcionales       |
 
 ## Consecuencias
 

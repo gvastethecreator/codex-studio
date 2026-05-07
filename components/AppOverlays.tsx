@@ -1,6 +1,13 @@
 import React from 'react';
 
-import type { Attachment, GeneratedImageWithConfig, GenerationBatch, ImageGenerationConfig, LogEntry, Workspace } from '../types';
+import type {
+  Attachment,
+  GeneratedImageWithConfig,
+  GenerationBatch,
+  ImageGenerationConfig,
+  LogEntry,
+  Workspace,
+} from '../types';
 import { exportToJson } from '../utils/fileUtils';
 import { DashboardModal } from './DashboardModal';
 import { DebugPanel } from './DebugPanel';
@@ -16,7 +23,11 @@ interface AppOverlaysProps {
   activeGenerationConfig: ImageGenerationConfig | null;
   closeModal: () => void;
   handleDelete: (imageId: string) => void;
-  handleGenerate: (promptOverride?: string, configOverrides?: Partial<ImageGenerationConfig>, options?: { force?: boolean; preventModal?: boolean }) => void;
+  handleGenerate: (
+    promptOverride?: string,
+    configOverrides?: Partial<ImageGenerationConfig>,
+    options?: { force?: boolean; preventModal?: boolean },
+  ) => void;
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
   handleLoadRecipe: (config: ImageGenerationConfig) => void;
   handleToggleFavorite: (imageId: string) => void;
@@ -135,7 +146,12 @@ export const AppOverlays: React.FC<AppOverlaysProps> = ({
         onGenerate={handleExecuteEdit}
         isGenerating={isEditingImage}
       />
-      <DebugPanel isOpen={isDebugPanelOpen} onClose={toggleDebugPanel} logs={mergedLogs} appState={{}} />
+      <DebugPanel
+        isOpen={isDebugPanelOpen}
+        onClose={toggleDebugPanel}
+        logs={mergedLogs}
+        appState={{}}
+      />
       <DashboardModal
         isOpen={isDashboardModalOpen}
         onClose={closeDashboard}

@@ -10,46 +10,46 @@ const LIQUID_CONFIG = {
     idle: {
       speedMultiplier: 1.0,
       opacity: 0.5,
-      transition: 'opacity 1s ease'
+      transition: 'opacity 1s ease',
     },
     generating: {
       speedMultiplier: 15.0,
       opacity: 0.8,
-      transition: 'opacity 1s ease'
-    }
+      transition: 'opacity 1s ease',
+    },
   },
   // Configuración específica por modelo (Colores RGB normalizados 0.0 - 1.0)
   // Este color se añade como un brillo extra cuando el modelo está generando
   models: {
     [MODELS.CODEX_IMAGEGEN]: { tint: [0.1, 0.5, 0.45] },
-    'default': { tint: [0.1, 0.3, 0.5] }                         // Azul (por defecto)
+    default: { tint: [0.1, 0.3, 0.5] }, // Azul (por defecto)
   },
   // Colores base (en formato código GLSL vec3)
   colors: {
-    darkest: 'vec3(0.01, 0.01, 0.015)',   // Color más oscuro (fondo profundo)
-    midTone: 'vec3(0.15, 0.15, 0.18)',    // Tono medio del fluido
-    highlight: 'vec3(0.40, 0.40, 0.45)',  // Brillos del fluido
+    darkest: 'vec3(0.01, 0.01, 0.015)', // Color más oscuro (fondo profundo)
+    midTone: 'vec3(0.15, 0.15, 0.18)', // Tono medio del fluido
+    highlight: 'vec3(0.40, 0.40, 0.45)', // Brillos del fluido
   },
   // Caracteres estilo Matrix
   matrix: {
-    scaleX: '3.0',                        // Escala X de los píxeles del caracter
-    scaleY: '5.0',                        // Escala Y de los píxeles del caracter
-    charWidth: '0.3',                     // Ancho del caracter en su celda
-    charHeight: '0.5',                    // Alto del caracter en su celda
-    intensityBase: '0.3',                 // Intensidad base de brillo
-    intensityVariance: '0.7'              // Varianza de brillo
+    scaleX: '3.0', // Escala X de los píxeles del caracter
+    scaleY: '5.0', // Escala Y de los píxeles del caracter
+    charWidth: '0.3', // Ancho del caracter en su celda
+    charHeight: '0.5', // Alto del caracter en su celda
+    intensityBase: '0.3', // Intensidad base de brillo
+    intensityVariance: '0.7', // Varianza de brillo
   },
   // Comportamiento del fluido
   fluid: {
-    mouseDistortion: '0.1',              // Cuánto distorsiona el ratón el fluido
-    charDistortion: '0.4',               // Cuánto distorsionan los caracteres el fluido
-    mouseRadius: '0.5'                    // Radio de efecto del ratón
-  }
+    mouseDistortion: '0.1', // Cuánto distorsiona el ratón el fluido
+    charDistortion: '0.4', // Cuánto distorsionan los caracteres el fluido
+    mouseRadius: '0.5', // Radio de efecto del ratón
+  },
 };
 
 const DEFAULT_BACKGROUND_CONFIG = {
   density: 0.1,
-  speed: 0.0005
+  speed: 0.0005,
 };
 
 interface LiquidBackgroundProps {
@@ -245,7 +245,7 @@ const fragmentShaderSource = `
 export default function LiquidBackground({
   isGenerating = false,
   activeModel,
-  config = DEFAULT_BACKGROUND_CONFIG
+  config = DEFAULT_BACKGROUND_CONFIG,
 }: LiquidBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const speedRef = useRef(1.0);
@@ -273,12 +273,12 @@ export default function LiquidBackground({
 
     const vertexShader = compileShader(gl.VERTEX_SHADER, vertexShaderSource);
     const fragmentShader = compileShader(gl.FRAGMENT_SHADER, fragmentShaderSource);
-    
+
     if (!vertexShader || !fragmentShader) return;
 
     const program = gl.createProgram();
     if (!program) return;
-    
+
     gl.attachShader(program, vertexShader);
     gl.attachShader(program, fragmentShader);
     gl.linkProgram(program);
@@ -294,12 +294,7 @@ export default function LiquidBackground({
     const positionBuffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
     const positions = new Float32Array([
-      -1.0, -1.0,
-       1.0, -1.0,
-      -1.0,  1.0,
-      -1.0,  1.0,
-       1.0, -1.0,
-       1.0,  1.0,
+      -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0,
     ]);
     gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
 
@@ -349,11 +344,13 @@ export default function LiquidBackground({
 
       // State-based configuration
       const currentState = isGenerating ? LIQUID_CONFIG.state.generating : LIQUID_CONFIG.state.idle;
-      const targetSpeed = currentState.speedMultiplier + (config.speed * 100.0);
+      const targetSpeed = currentState.speedMultiplier + config.speed * 100.0;
       speedRef.current += (targetSpeed - speedRef.current) * 0.05;
 
       // Model-based configuration
-      const modelConfig = LIQUID_CONFIG.models[activeModel as keyof typeof LIQUID_CONFIG.models] || LIQUID_CONFIG.models.default;
+      const modelConfig =
+        LIQUID_CONFIG.models[activeModel as keyof typeof LIQUID_CONFIG.models] ||
+        LIQUID_CONFIG.models.default;
 
       gl.uniform1f(timeLocation, (time - startTime) * 0.001);
       gl.uniform2f(mouseLocation, mouseX, mouseY);
@@ -378,5 +375,11 @@ export default function LiquidBackground({
 
   const currentState = isGenerating ? LIQUID_CONFIG.state.generating : LIQUID_CONFIG.state.idle;
 
-  return <canvas ref={canvasRef} className="fixed inset-0 z-0 pointer-events-none w-full h-full" style={{ opacity: currentState.opacity, transition: currentState.transition }} />;
+  return (
+    <canvas
+      ref={canvasRef}
+      className="fixed inset-0 z-0 pointer-events-none w-full h-full"
+      style={{ opacity: currentState.opacity, transition: currentState.transition }}
+    />
+  );
 }

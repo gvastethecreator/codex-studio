@@ -21,6 +21,10 @@ export interface StudioEventStream {
   close(): void;
 }
 
+/**
+ * Browser-backed SSE adapter shared by the UI so backend job, asset, and log
+ * events reuse a single connection with reconnect semantics.
+ */
 class BrowserStudioEventStream implements StudioEventStream {
   private source: EventSource | null = null;
   private closed = false;
@@ -113,11 +117,23 @@ class BrowserStudioEventStream implements StudioEventStream {
   }
 }
 
+/**
+ * Create a live SSE stream for backend events. Consumers should reuse the same
+ * instance when they need correlated job and asset updates.
+ */
 export function createStudioEventStream(apiBase?: string): StudioEventStream {
   return new BrowserStudioEventStream(apiBase);
 }
 
-export async function watchJob(stream: StudioEventStream, jobId: string, signal?: AbortSignal, timeoutMs = 240_000) {
+/**
+ * Wait for one persistent backend job to reach a terminal status.
+ */
+export async function watchJob(
+  stream: StudioEventStream,
+  jobId: string,
+  signal?: AbortSignal,
+  timeoutMs = 240_000,
+) {
   const initial = (await listStudioJobs()).find((job) => job.id === jobId);
   if (initial && TERMINAL_STATUSES.has(initial.status)) {
     if (initial.status === 'failed' || initial.status === 'cancelled') {

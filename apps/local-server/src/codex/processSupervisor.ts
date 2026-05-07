@@ -92,7 +92,11 @@ export function ensureAppServer() {
   if (appServerProcess.stdout instanceof ReadableStream) void pipeOutput(appServerProcess.stdout);
   if (appServerProcess.stderr instanceof ReadableStream) void pipeOutput(appServerProcess.stderr);
 
-  log('info', 'app-server', `Started codex app-server on ${getCodexWsUrl()} with ${invocation.join(' ')} (pid ${appServerProcess.pid})`);
+  log(
+    'info',
+    'app-server',
+    `Started codex app-server on ${getCodexWsUrl()} with ${invocation.join(' ')} (pid ${appServerProcess.pid})`,
+  );
   appServerProcess.exited.then((code) => {
     diagnostics.pid = null;
     diagnostics.lastExitCode = code;

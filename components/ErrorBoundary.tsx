@@ -14,7 +14,7 @@ interface State {
 export class ErrorBoundary extends Component<Props, State> {
   public state: State = {
     hasError: false,
-    error: null
+    error: null,
   };
 
   public static getDerivedStateFromError(error: Error): State {
@@ -34,7 +34,8 @@ export class ErrorBoundary extends Component<Props, State> {
             System Error
           </h2>
           <p className="text-xs text-zinc-500 text-center max-w-md">
-            {this.props.fallbackMessage || "A critical error occurred while rendering this component. Please check the console for details."}
+            {this.props.fallbackMessage ||
+              'A critical error occurred while rendering this component. Please check the console for details.'}
           </p>
           <button
             onClick={() => this.setState({ hasError: false, error: null })}

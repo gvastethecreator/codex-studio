@@ -1,7 +1,11 @@
-import { describe, expect, it } from 'bun:test';
+import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import { buildRecipeContext, parseRecipeIdFromContext, resolveGenerationConfig } from './recipeContext';
+import {
+  buildRecipeContext,
+  parseRecipeIdFromContext,
+  resolveGenerationConfig,
+} from './recipeContext';
 
 describe('recipeContext', () => {
   it('builds camera recipe documents with the shared protocol envelope', () => {

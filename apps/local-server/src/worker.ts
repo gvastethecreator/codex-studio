@@ -103,12 +103,18 @@ async function runCodexJob(job: Job) {
   if (!discoveredImagePath) {
     updateJobStatus(job.id, 'needs_review');
     publishEvent('job.progress', getJob(job.id));
-    log('warn', 'worker', `Codex turn completed but no image file was discovered. Transcript: ${result.transcript}`, job.id);
+    log(
+      'warn',
+      'worker',
+      `Codex turn completed but no image file was discovered. Transcript: ${result.transcript}`,
+      job.id,
+    );
     return;
   }
 
   const ext = path.extname(discoveredImagePath).toLowerCase();
-  const mimeType = ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : ext === '.webp' ? 'image/webp' : 'image/png';
+  const mimeType =
+    ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : ext === '.webp' ? 'image/webp' : 'image/png';
   const asset = addAsset({
     projectId: job.projectId,
     jobId: job.id,
@@ -142,7 +148,12 @@ async function runCodexJob(job: Job) {
     libraryId: catalogImage.libraryId,
     catalogId: catalogImage.id,
   }).catch((error) => {
-    log('warn', 'metadata', `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`, job.id);
+    log(
+      'warn',
+      'metadata',
+      `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`,
+      job.id,
+    );
   });
 
   addJobEvent(job.id, 'asset.created', 'Codex image asset imported.', { assetId: asset.id });
@@ -187,22 +198,22 @@ async function processQueue() {
 }
 
 async function processJob(job: Job) {
-    try {
-      updateJobStatus(job.id, 'running');
-      publishEvent('job.running', getJob(job.id));
-      if (job.kind === 'dry_run') {
-        await runDryJob(job);
-      } else if (job.kind === 'codex_imagegen') {
-        await runCodexJob(job);
-      } else {
-        throw new Error(`Unsupported job kind: ${job.kind}`);
-      }
-    } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
-      updateJobStatus(job.id, 'failed', message);
-      publishEvent('job.failed', getJob(job.id));
-      log('error', 'worker', message, job.id);
-    } finally {
-      runningJobs.delete(job.id);
+  try {
+    updateJobStatus(job.id, 'running');
+    publishEvent('job.running', getJob(job.id));
+    if (job.kind === 'dry_run') {
+      await runDryJob(job);
+    } else if (job.kind === 'codex_imagegen') {
+      await runCodexJob(job);
+    } else {
+      throw new Error(`Unsupported job kind: ${job.kind}`);
     }
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    updateJobStatus(job.id, 'failed', message);
+    publishEvent('job.failed', getJob(job.id));
+    log('error', 'worker', message, job.id);
+  } finally {
+    runningJobs.delete(job.id);
+  }
 }

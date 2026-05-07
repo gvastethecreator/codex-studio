@@ -1,6 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { HealthResponse } from '../packages/shared/src';
-import { getStudioApiBase, getStudioHealth, startStudioAppServer } from '../services/localStudioService';
+import {
+  getStudioApiBase,
+  getStudioHealth,
+  startStudioAppServer,
+} from '../services/localStudioService';
 import { isDesktopStudioRuntime } from '../services/studioRuntime';
 import { useLocalStorage } from './useLocalStorage';
 
@@ -11,7 +15,10 @@ interface UseStudioOnboardingProps {
 }
 
 export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudioOnboardingProps) {
-  const [hasCompletedOnboarding, setHasCompletedOnboarding] = useLocalStorage('studio-onboarding-complete', false);
+  const [hasCompletedOnboarding, setHasCompletedOnboarding] = useLocalStorage(
+    'studio-onboarding-complete',
+    false,
+  );
   const [isOpen, setIsOpen] = useState(false);
   const [health, setHealth] = useState<HealthResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -28,9 +35,14 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
     try {
       const nextHealth = await getStudioHealth();
       setHealth(nextHealth);
-      log(`Studio onboarding health refreshed: cli=${nextHealth.codexCli.available ? nextHealth.codexCli.version || 'available' : 'missing'}, appServer=${nextHealth.appServer.running ? 'running' : 'stopped'}, libraryReady=${nextHealth.checks.libraryReady}, envLocal=${nextHealth.runtime.envLocalPresent}`);
+      log(
+        `Studio onboarding health refreshed: cli=${nextHealth.codexCli.available ? nextHealth.codexCli.version || 'available' : 'missing'}, appServer=${nextHealth.appServer.running ? 'running' : 'stopped'}, libraryReady=${nextHealth.checks.libraryReady}, envLocal=${nextHealth.runtime.envLocalPresent}`,
+      );
     } catch (refreshError) {
-      const message = refreshError instanceof Error ? refreshError.message : 'No se pudo consultar el backend local';
+      const message =
+        refreshError instanceof Error
+          ? refreshError.message
+          : 'No se pudo consultar el backend local';
       setError(message);
       log(`Studio onboarding health failed: ${message}`);
     } finally {
@@ -65,9 +77,13 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
     try {
       const result = await startStudioAppServer();
       await refreshHealth();
-      addToast(result.running ? 'codex app-server iniciado' : 'No se pudo iniciar codex app-server', result.running ? 'success' : 'warning');
+      addToast(
+        result.running ? 'codex app-server iniciado' : 'No se pudo iniciar codex app-server',
+        result.running ? 'success' : 'warning',
+      );
     } catch (startError) {
-      const message = startError instanceof Error ? startError.message : 'No se pudo iniciar codex app-server';
+      const message =
+        startError instanceof Error ? startError.message : 'No se pudo iniciar codex app-server';
       addToast(message, 'error');
       log(`Studio onboarding failed to start app-server: ${message}`);
     } finally {

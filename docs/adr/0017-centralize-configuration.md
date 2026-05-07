@@ -8,16 +8,16 @@ Propuesto.
 
 `config.ts` existe como el módulo de settings autoritativo (`getSettings()`, `getEnvLocalPath()`, `loadDotEnvLocal()`), pero lecturas de `process.env` están dispersas en **5 archivos adicionales** más allá de `config.ts`:
 
-| Archivo | Variable leída | Línea | Default |
-|---------|---------------|-------|---------|
-| `config.ts` | `STUDIO_LIBRARY_DIR` | ~15 | `D:\AI-Studio-Library` |
-| `config.ts` | `STUDIO_SERVER_PORT` | ~16 | `4317` |
-| `config.ts` | `STUDIO_CODEX_WS_PORT` | ~17 | `4318` |
-| `worker.ts` | `STUDIO_MAX_CONCURRENT_CODEX_JOBS` | ~12 | `1` |
-| `codex/turn.ts` | `CODEX_IMAGEGEN_MODEL` | ~11 | `gpt-4o` |
-| `codex/turn.ts` | `CODEX_IMAGEGEN_REASONING_EFFORT` | ~12 | `medium` |
-| `codex/sessionPool.ts` | `CODEX_IMAGEGEN_MODEL` | ~15 | `gpt-4o` (duplicado) |
-| `codex/processSupervisor.ts` | `STUDIO_CODEX_WS_PORT` | ~20 | `4318` (duplicado de config.ts) |
+| Archivo                      | Variable leída                     | Línea | Default                         |
+| ---------------------------- | ---------------------------------- | ----- | ------------------------------- |
+| `config.ts`                  | `STUDIO_LIBRARY_DIR`               | ~15   | `D:\AI-Studio-Library`          |
+| `config.ts`                  | `STUDIO_SERVER_PORT`               | ~16   | `4317`                          |
+| `config.ts`                  | `STUDIO_CODEX_WS_PORT`             | ~17   | `4318`                          |
+| `worker.ts`                  | `STUDIO_MAX_CONCURRENT_CODEX_JOBS` | ~12   | `1`                             |
+| `codex/turn.ts`              | `CODEX_IMAGEGEN_MODEL`             | ~11   | `gpt-4o`                        |
+| `codex/turn.ts`              | `CODEX_IMAGEGEN_REASONING_EFFORT`  | ~12   | `medium`                        |
+| `codex/sessionPool.ts`       | `CODEX_IMAGEGEN_MODEL`             | ~15   | `gpt-4o` (duplicado)            |
+| `codex/processSupervisor.ts` | `STUDIO_CODEX_WS_PORT`             | ~20   | `4318` (duplicado de config.ts) |
 
 ### Problemas
 
@@ -32,6 +32,7 @@ Propuesto.
 ### Deletion test
 
 Si movemos todas las lecturas de `process.env` a `config.ts`:
+
 - La complejidad de "qué variables de entorno existen y cuáles son sus defaults" se concentra en un solo archivo.
 - Agregar una nueva variable de configuración es agregar una línea a `config.ts`, no buscar dónde más se lee `process.env`.
 - La validación y parsing ocurren una vez, no en cada módulo que consume la variable.
@@ -44,15 +45,15 @@ Si movemos todas las lecturas de `process.env` a `config.ts`:
 // config.ts
 export interface StudioSettings {
   // Library & server
-  libraryDir: string
-  serverPort: number
-  codexWsPort: number
-  
+  libraryDir: string;
+  serverPort: number;
+  codexWsPort: number;
+
   // Codex integration
-  codexImagegenModel: string
-  codexImagegenReasoningEffort: 'low' | 'medium' | 'high'
-  codexMaxConcurrentJobs: number
-  
+  codexImagegenModel: string;
+  codexImagegenReasoningEffort: 'low' | 'medium' | 'high';
+  codexMaxConcurrentJobs: number;
+
   // Paths (ya resueltos por platformPaths.ts)
   // ...
 }
@@ -62,32 +63,32 @@ export function getSettings(): StudioSettings {
     libraryDir: process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library',
     serverPort: parseInt(process.env.STUDIO_SERVER_PORT || '4317', 10),
     codexWsPort: parseInt(process.env.STUDIO_CODEX_WS_PORT || '4318', 10),
-    
+
     codexImagegenModel: process.env.CODEX_IMAGEGEN_MODEL || 'gpt-4o',
     codexImagegenReasoningEffort: validateReasoningEffort(
-      process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'medium'
+      process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'medium',
     ),
     codexMaxConcurrentJobs: validatePositiveInt(
-      process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS || '1'
+      process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS || '1',
     ),
-  }
+  };
 }
 
 function validateReasoningEffort(value: string): 'low' | 'medium' | 'high' {
   if (!['low', 'medium', 'high'].includes(value)) {
-    console.warn(`Invalid CODEX_IMAGEGEN_REASONING_EFFORT "${value}", using "medium"`)
-    return 'medium'
+    console.warn(`Invalid CODEX_IMAGEGEN_REASONING_EFFORT "${value}", using "medium"`);
+    return 'medium';
   }
-  return value as 'low' | 'medium' | 'high'
+  return value as 'low' | 'medium' | 'high';
 }
 
 function validatePositiveInt(value: string): number {
-  const num = parseInt(value, 10)
+  const num = parseInt(value, 10);
   if (isNaN(num) || num < 1) {
-    console.warn(`Invalid positive integer "${value}", using 1`)
-    return 1
+    console.warn(`Invalid positive integer "${value}", using 1`);
+    return 1;
   }
-  return num
+  return num;
 }
 ```
 
@@ -95,22 +96,22 @@ function validatePositiveInt(value: string): number {
 
 ```ts
 // worker.ts — ANTES
-const maxConcurrentJobs = parseInt(process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS || '1')
+const maxConcurrentJobs = parseInt(process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS || '1');
 
 // worker.ts — DESPUÉS
-import { getSettings } from './config'
-const settings = getSettings()
-const maxConcurrentJobs = settings.codexMaxConcurrentJobs
+import { getSettings } from './config';
+const settings = getSettings();
+const maxConcurrentJobs = settings.codexMaxConcurrentJobs;
 
 // codex/turn.ts — ANTES
-const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-4o'
-const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'medium'
+const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-4o';
+const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'medium';
 
 // codex/turn.ts — DESPUÉS
-import { getSettings } from '../config'
-const settings = getSettings()
-const model = settings.codexImagegenModel
-const reasoningEffort = settings.codexImagegenReasoningEffort
+import { getSettings } from '../config';
+const settings = getSettings();
+const model = settings.codexImagegenModel;
+const reasoningEffort = settings.codexImagegenReasoningEffort;
 ```
 
 O mejor aún: recibir config como parámetro en las factories (compatible con ADR 0014):
@@ -118,8 +119,8 @@ O mejor aún: recibir config como parámetro en las factories (compatible con AD
 ```ts
 // codex/turn.ts — con DI (ADR 0014)
 export function createCodexTurn(config: {
-  model: string
-  reasoningEffort: 'low' | 'medium' | 'high'
+  model: string;
+  reasoningEffort: 'low' | 'medium' | 'high';
   // ... otras deps
 }): CodexTurn {
   // usa config.model, no process.env
@@ -138,13 +139,13 @@ El problema de module-level evaluation (variables leídas antes de `loadDotEnvLo
 
 ### Archivos afectados
 
-| Archivo | Cambio |
-|---------|--------|
-| `config.ts` | Expandir `getSettings()` con todas las variables; agregar validación |
-| `worker.ts` | Reemplazar `process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS` con `getSettings().codexMaxConcurrentJobs` |
-| `codex/turn.ts` | Reemplazar `process.env.CODEX_IMAGEGEN_MODEL` + `CODEX_IMAGEGEN_REASONING_EFFORT` con settings |
-| `codex/sessionPool.ts` | Reemplazar `process.env.CODEX_IMAGEGEN_MODEL` con settings (eliminar duplicado) |
-| `codex/processSupervisor.ts` | Reemplazar `process.env.STUDIO_CODEX_WS_PORT` con `getSettings().codexWsPort` (eliminar duplicado) |
+| Archivo                      | Cambio                                                                                               |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `config.ts`                  | Expandir `getSettings()` con todas las variables; agregar validación                                 |
+| `worker.ts`                  | Reemplazar `process.env.STUDIO_MAX_CONCURRENT_CODEX_JOBS` con `getSettings().codexMaxConcurrentJobs` |
+| `codex/turn.ts`              | Reemplazar `process.env.CODEX_IMAGEGEN_MODEL` + `CODEX_IMAGEGEN_REASONING_EFFORT` con settings       |
+| `codex/sessionPool.ts`       | Reemplazar `process.env.CODEX_IMAGEGEN_MODEL` con settings (eliminar duplicado)                      |
+| `codex/processSupervisor.ts` | Reemplazar `process.env.STUDIO_CODEX_WS_PORT` con `getSettings().codexWsPort` (eliminar duplicado)   |
 
 ## Consecuencias
 

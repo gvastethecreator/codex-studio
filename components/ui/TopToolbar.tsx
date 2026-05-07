@@ -6,10 +6,7 @@ interface TopToolbarProps extends React.HTMLAttributes<HTMLElement> {
 
 export const TopToolbar: React.FC<TopToolbarProps> = ({ children, className = '', ...props }) => {
   return (
-    <header 
-      className={`vt-top-toolbar ${className}`}
-      {...props}
-    >
+    <header className={`vt-top-toolbar ${className}`} {...props}>
       {children}
     </header>
   );

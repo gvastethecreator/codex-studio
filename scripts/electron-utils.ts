@@ -8,7 +8,11 @@ interface HttpProbeOptions {
   timeoutMs?: number;
 }
 
-export function spawnManagedProcess(label: string, command: string[], env?: Record<string, string | undefined>) {
+export function spawnManagedProcess(
+  label: string,
+  command: string[],
+  env?: Record<string, string | undefined>,
+) {
   const child = Bun.spawn(command, {
     stdout: 'inherit',
     stderr: 'inherit',

@@ -1,7 +1,14 @@
 import { Database } from 'bun:sqlite';
 import { randomUUID } from 'node:crypto';
 import { resolveLibraryPath } from './library';
-import type { Asset, Job, JobKind, JobStatus, Project, SystemLog } from '../../../packages/shared/src';
+import type {
+  Asset,
+  Job,
+  JobKind,
+  JobStatus,
+  Project,
+  SystemLog,
+} from '../../../packages/shared/src';
 
 let db: Database | null = null;
 
@@ -220,7 +227,10 @@ function mapLog(row: any): SystemLog {
 export function ensureDefaultProject() {
   const existing = getDb().query('SELECT * FROM projects ORDER BY created_at LIMIT 1').get();
   if (existing) return mapProject(existing);
-  return createProject('Default Studio Project', 'Initial local project for Codex Image Studio jobs.');
+  return createProject(
+    'Default Studio Project',
+    'Initial local project for Codex Image Studio jobs.',
+  );
 }
 
 export function createProject(name: string, description: string | null = null) {
@@ -232,7 +242,9 @@ export function createProject(name: string, description: string | null = null) {
     updatedAt: now(),
   };
   getDb()
-    .query('INSERT INTO projects (id, name, description, created_at, updated_at) VALUES (?, ?, ?, ?, ?)')
+    .query(
+      'INSERT INTO projects (id, name, description, created_at, updated_at) VALUES (?, ?, ?, ?, ?)',
+    )
     .run(project.id, project.name, project.description, project.createdAt, project.updatedAt);
   return project;
 }
@@ -284,9 +296,12 @@ export function updateJobFinalPrompt(id: string, finalPrompt: string) {
 }
 
 export function updateJobStatus(id: string, status: JobStatus, error: string | null = null) {
-  const completedAt = status === 'completed' || status === 'failed' || status === 'cancelled' ? now() : null;
+  const completedAt =
+    status === 'completed' || status === 'failed' || status === 'cancelled' ? now() : null;
   getDb()
-    .query('UPDATE jobs SET status = ?, error = ?, updated_at = ?, completed_at = COALESCE(?, completed_at) WHERE id = ?')
+    .query(
+      'UPDATE jobs SET status = ?, error = ?, updated_at = ?, completed_at = COALESCE(?, completed_at) WHERE id = ?',
+    )
     .run(status, error, now(), completedAt, id);
   return getJob(id);
 }
@@ -352,15 +367,26 @@ export function listAssets() {
 
 export function addJobEvent(jobId: string, type: string, message: string, metadata?: unknown) {
   getDb()
-    .query('INSERT INTO job_events (job_id, type, message, metadata, created_at) VALUES (?, ?, ?, ?, ?)')
+    .query(
+      'INSERT INTO job_events (job_id, type, message, metadata, created_at) VALUES (?, ?, ?, ?, ?)',
+    )
     .run(jobId, type, message, metadata ? JSON.stringify(metadata) : null, now());
 }
 
-export function addSystemLog(input: { level: SystemLog['level']; scope: string; message: string; jobId?: string | null }) {
+export function addSystemLog(input: {
+  level: SystemLog['level'];
+  scope: string;
+  message: string;
+  jobId?: string | null;
+}) {
   const result = getDb()
-    .query('INSERT INTO system_logs (level, scope, message, job_id, created_at) VALUES (?, ?, ?, ?, ?)')
+    .query(
+      'INSERT INTO system_logs (level, scope, message, job_id, created_at) VALUES (?, ?, ?, ?, ?)',
+    )
     .run(input.level, input.scope, input.message, input.jobId ?? null, now());
-  const row = getDb().query('SELECT * FROM system_logs WHERE id = ?').get(Number(result.lastInsertRowid));
+  const row = getDb()
+    .query('SELECT * FROM system_logs WHERE id = ?')
+    .get(Number(result.lastInsertRowid));
   return row ? mapLog(row) : null;
 }
 

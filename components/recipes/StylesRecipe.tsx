@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from "react";
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import {
   Palette,
   Upload,
@@ -29,117 +29,114 @@ import {
   Building,
   Shirt,
   Wand2,
-} from "lucide-react";
+} from 'lucide-react';
 import type {
   ImageGenerationConfig,
   GeneratedImageWithConfig,
   Attachment,
   AspectRatio,
-} from "../../types";
+} from '../../types';
 import {
   STYLE_CATEGORY_IMAGES,
   STYLE_CATEGORY_PREVIEWS,
   STYLE_DEFAULT_IMAGES,
-} from "../../lib/recipeAssetCatalog";
-import { styleCategoryImageKey } from "../../lib/recipeAssetKeys";
-import { STYLE_PACKS, StylePresetDef } from "./stylesData";
-import { RecipeLayout } from "./RecipeLayout";
-import Slider from "../ui/Slider";
-import Tooltip from "../Tooltip";
-import { FloatingTooltip } from "../ui/FloatingTooltip";
+} from '../../lib/recipeAssetCatalog';
+import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
+import { STYLE_PACKS, StylePresetDef } from './stylesData';
+import { RecipeLayout } from './RecipeLayout';
+import Slider from '../ui/Slider';
+import Tooltip from '../Tooltip';
+import { FloatingTooltip } from '../ui/FloatingTooltip';
 
 interface StylesRecipeProps {
   config: ImageGenerationConfig;
-  updateConfig: <K extends keyof ImageGenerationConfig>(key: K, value: ImageGenerationConfig[K]) => void;
+  updateConfig: <K extends keyof ImageGenerationConfig>(
+    key: K,
+    value: ImageGenerationConfig[K],
+  ) => void;
   updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
   onFileSelect: (files: File[]) => void;
-  onGenerate: (
-    prompt?: string,
-    configOverrides?: Partial<ImageGenerationConfig>,
-  ) => void;
+  onGenerate: (prompt?: string, configOverrides?: Partial<ImageGenerationConfig>) => void;
   isGenerating: boolean;
   images?: GeneratedImageWithConfig[];
   onOpenImage?: (image: GeneratedImageWithConfig) => void;
 }
 
-const FAVORITES_PACK_ID = "favorites";
+const FAVORITES_PACK_ID = 'favorites';
 
 // Color mapping for each pack to give them distinct identities
-const PACK_THEMES: Record<
-  string,
-  { color: string; bg: string; border: string; text: string }
-> = {
+const PACK_THEMES: Record<string, { color: string; bg: string; border: string; text: string }> = {
   [FAVORITES_PACK_ID]: {
-    color: "rose",
-    bg: "bg-rose-600",
-    border: "border-rose-600",
-    text: "text-rose-500",
+    color: 'rose',
+    bg: 'bg-rose-600',
+    border: 'border-rose-600',
+    text: 'text-rose-500',
   },
   pack_01: {
-    color: "cyan",
-    bg: "bg-cyan-500",
-    border: "border-cyan-500",
-    text: "text-cyan-400",
+    color: 'cyan',
+    bg: 'bg-cyan-500',
+    border: 'border-cyan-500',
+    text: 'text-cyan-400',
   }, // Photography & Realism
   pack_02: {
-    color: "indigo",
-    bg: "bg-indigo-500",
-    border: "border-indigo-500",
-    text: "text-indigo-400",
+    color: 'indigo',
+    bg: 'bg-indigo-500',
+    border: 'border-indigo-500',
+    text: 'text-indigo-400',
   }, // Cinematic & Media
   pack_03: {
-    color: "rose",
-    bg: "bg-rose-500",
-    border: "border-rose-500",
-    text: "text-rose-400",
+    color: 'rose',
+    bg: 'bg-rose-500',
+    border: 'border-rose-500',
+    text: 'text-rose-400',
   }, // 3D & CGI Rendering
   pack_04: {
-    color: "fuchsia",
-    bg: "bg-fuchsia-500",
-    border: "border-fuchsia-500",
-    text: "text-fuchsia-400",
+    color: 'fuchsia',
+    bg: 'bg-fuchsia-500',
+    border: 'border-fuchsia-500',
+    text: 'text-fuchsia-400',
   }, // Illustration & Graphic Novel
   pack_05: {
-    color: "red",
-    bg: "bg-red-600",
-    border: "border-red-600",
-    text: "text-red-500",
+    color: 'red',
+    bg: 'bg-red-600',
+    border: 'border-red-600',
+    text: 'text-red-500',
   }, // Anime & Manga Universes
   pack_06: {
-    color: "amber",
-    bg: "bg-amber-500",
-    border: "border-amber-500",
-    text: "text-amber-400",
+    color: 'amber',
+    bg: 'bg-amber-500',
+    border: 'border-amber-500',
+    text: 'text-amber-400',
   }, // Essential Art Styles
   pack_07: {
-    color: "emerald",
-    bg: "bg-emerald-500",
-    border: "border-emerald-500",
-    text: "text-emerald-400",
+    color: 'emerald',
+    bg: 'bg-emerald-500',
+    border: 'border-emerald-500',
+    text: 'text-emerald-400',
   }, // Architecture & Interior
   pack_08: {
-    color: "violet",
-    bg: "bg-violet-500",
-    border: "border-violet-500",
-    text: "text-violet-400",
+    color: 'violet',
+    bg: 'bg-violet-500',
+    border: 'border-violet-500',
+    text: 'text-violet-400',
   }, // Fashion & Costume
   pack_09: {
-    color: "lime",
-    bg: "bg-lime-500",
-    border: "border-lime-500",
-    text: "text-lime-400",
+    color: 'lime',
+    bg: 'bg-lime-500',
+    border: 'border-lime-500',
+    text: 'text-lime-400',
   }, // Texture & Materiality
   pack_10: {
-    color: "blue",
-    bg: "bg-blue-500",
-    border: "border-blue-500",
-    text: "text-blue-400",
+    color: 'blue',
+    bg: 'bg-blue-500',
+    border: 'border-blue-500',
+    text: 'text-blue-400',
   }, // Abstract & Experimental
   pack_11: {
-    color: "orange",
-    bg: "bg-orange-500",
-    border: "border-orange-500",
-    text: "text-orange-400",
+    color: 'orange',
+    bg: 'bg-orange-500',
+    border: 'border-orange-500',
+    text: 'text-orange-400',
   }, // Miscellaneous & Fun
 };
 
@@ -171,7 +168,7 @@ async function loadPreviewAttachment(previewUrl: string, preset: StylePresetDef)
 
   return {
     id: `style-preview-${preset.id}`,
-    name: `${preset.category || "Style Preview"} - reference.webp`,
+    name: `${preset.category || 'Style Preview'} - reference.webp`,
     dataUrl,
     strength: 0.45,
   };
@@ -191,7 +188,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const activeImage = config.attachments[0];
   const initializedImageId = useRef<string | null>(null);
 
-  const [currentPackId, setCurrentPackId] = useState("pack_01");
+  const [currentPackId, setCurrentPackId] = useState('pack_01');
   const [activePresetId, setActivePresetId] = useState<string | null>(null);
   const [copiedStyleId, setCopiedStyleId] = useState<string | null>(null);
   const timeoutRef = useRef<number | null>(null);
@@ -205,24 +202,19 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   }, []);
 
   // -- FILTERS & STATE --
-  const [searchQuery, setSearchQuery] = useState("");
-  const [sortOrder, setSortOrder] = useState<"az" | "za">("az");
+  const [searchQuery, setSearchQuery] = useState('');
+  const [sortOrder, setSortOrder] = useState<'az' | 'za'>('az');
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
-  const [favorites, setFavorites] = useLocalStorage<string[]>("style-favorites", []);
+  const [favorites, setFavorites] = useLocalStorage<string[]>('style-favorites', []);
 
-  const ratioValue = useMemo(
-    () => RATIO_MAP[config.aspectRatio] || 1,
-    [config.aspectRatio],
-  );
+  const ratioValue = useMemo(() => RATIO_MAP[config.aspectRatio] || 1, [config.aspectRatio]);
 
   // Style Influence (Default 80%)
   const [styleStrength, setStyleStrength] = useState(0.8);
 
   const toggleFavorite = (presetId: string) => {
     setFavorites((prev) =>
-      prev.includes(presetId)
-        ? prev.filter((id) => id !== presetId)
-        : [...prev, presetId],
+      prev.includes(presetId) ? prev.filter((id) => id !== presetId) : [...prev, presetId],
     );
   };
 
@@ -235,7 +227,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   }, [activeImage?.id, updateAttachment]);
 
   useEffect(() => {
-    return () => updateConfig("recipeContext", "");
+    return () => updateConfig('recipeContext', '');
   }, [updateConfig]);
 
   useEffect(() => {
@@ -248,7 +240,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   useEffect(() => {
     if (config.recipeId !== 'styles' || !config.recipeParams) return;
-    const presetId = typeof config.recipeParams.presetId === 'string' ? config.recipeParams.presetId : null;
+    const presetId =
+      typeof config.recipeParams.presetId === 'string' ? config.recipeParams.presetId : null;
     if (presetId) {
       setActivePresetId(presetId);
     }
@@ -258,15 +251,15 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     if (currentPackId === FAVORITES_PACK_ID) {
       return {
         id: FAVORITES_PACK_ID,
-        name: "Your Favorites",
-        description: "A curated collection of your most used styles.",
+        name: 'Your Favorites',
+        description: 'A curated collection of your most used styles.',
         presets: [], // Placeholder, populated in processedData
       };
     }
     return STYLE_PACKS.find((p) => p.id === currentPackId) || STYLE_PACKS[0];
   }, [currentPackId]);
 
-  const activeTheme = PACK_THEMES[currentPackId] || PACK_THEMES["pack_01"];
+  const activeTheme = PACK_THEMES[currentPackId] || PACK_THEMES['pack_01'];
 
   // Enhanced Grouping Logic with Search, Sort, and Favorites Bubbling
   const processedData = useMemo(() => {
@@ -302,9 +295,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
     // 3. Sort Alphabetically
     filtered.sort((a, b) => {
-      return sortOrder === "az"
-        ? a.name.localeCompare(b.name)
-        : b.name.localeCompare(a.name);
+      return sortOrder === 'az' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
     });
 
     // 4. Grouping Logic
@@ -314,7 +305,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     if (currentPackId === FAVORITES_PACK_ID) {
       // In Favorites view, group by Category directly, no top-level "Pinned" section needed
       filtered.forEach((preset) => {
-        const category = preset.category || "General";
+        const category = preset.category || 'General';
         if (!groups[category]) groups[category] = [];
         groups[category].push(preset);
       });
@@ -330,21 +321,14 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       });
 
       nonFavs.forEach((preset) => {
-        const category = preset.category || "General";
+        const category = preset.category || 'General';
         if (!groups[category]) groups[category] = [];
         groups[category].push(preset);
       });
     }
 
     return { favorites: favs, groups };
-  }, [
-    activePack,
-    currentPackId,
-    searchQuery,
-    sortOrder,
-    favorites,
-    showFavoritesOnly,
-  ]);
+  }, [activePack, currentPackId, searchQuery, sortOrder, favorites, showFavoritesOnly]);
 
   const handleApplyStyle = async (preset: StylePresetDef) => {
     if (isGenerating) return;
@@ -358,25 +342,24 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const fallbackPreviewUrl = preset.category
       ? categoryBaseUrl || STYLE_CATEGORY_PREVIEWS[preset.category]
       : undefined;
-    const fallbackAttachment = !activeImage && fallbackPreviewUrl
-      ? await loadPreviewAttachment(fallbackPreviewUrl, preset)
-      : null;
+    const fallbackAttachment =
+      !activeImage && fallbackPreviewUrl
+        ? await loadPreviewAttachment(fallbackPreviewUrl, preset)
+        : null;
     const effectiveImage = activeImage || fallbackAttachment;
     const fidelity = effectiveImage?.strength || 0.5;
     const intensity = styleStrength;
-    const isPhotoPackFallback = ["pack_09", "pack_10", "pack_11"].includes(
-      currentPackId,
-    );
+    const isPhotoPackFallback = ['pack_09', 'pack_10', 'pack_11'].includes(currentPackId);
 
     const presetNegative =
       preset.negativePrompt ||
       (isPhotoPackFallback
-        ? "illustration, drawing, painting, sketch, cartoon, anime, 2d, graphic, flat, vector, ink"
-        : "");
+        ? 'illustration, drawing, painting, sketch, cartoon, anime, 2d, graphic, flat, vector, ink'
+        : '');
 
     // --- SEMANTIC ABSTRACTION PROMPTING ---
-    let roleInstruction = "";
-    let compositionRule = "";
+    let roleInstruction = '';
+    let compositionRule = '';
 
     if (!effectiveImage) {
       roleInstruction = `
@@ -384,7 +367,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         Ensure the style's DNA is the primary driver of the visual output.
         Focus on creating a high-quality, coherent image that embodies the aesthetic.
       `;
-      compositionRule = "Create a balanced and aesthetically pleasing composition.";
+      compositionRule = 'Create a balanced and aesthetically pleasing composition.';
     } else if (fallbackAttachment) {
       roleInstruction = `
         Use the provided pack/category base image as the baseline visual subject for this preset card.
@@ -392,7 +375,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         Re-render the image through the target style's visual DNA instead of merely displaying the reference.
       `;
       compositionRule =
-        "Keep the pack/category base composition recognizable while replacing the surface treatment, lighting, camera behavior, texture, and atmosphere according to the target style.";
+        'Keep the pack/category base composition recognizable while replacing the surface treatment, lighting, camera behavior, texture, and atmosphere according to the target style.';
     } else if (fidelity <= 0.25) {
       roleInstruction = `
         Treat the input image as a ROUGH CONCEPT SKETCH only. 
@@ -400,25 +383,23 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         COMPLETELY DISCARD the original lighting, texture, and background. 
         RE-IMAGINE the subject in a new environment or pose that fits the target style.
         `;
-      compositionRule =
-        "CHANGE the camera angle. CHANGE the lighting. DO NOT trace the input.";
+      compositionRule = 'CHANGE the camera angle. CHANGE the lighting. DO NOT trace the input.';
     } else if (fidelity <= 0.55) {
       roleInstruction = `
         Use the input image as a STRONG REFERENCE for composition.
         Keep the main subject's pose, but completely REPLACE all surface details, textures, and lighting materials.
         `;
-      compositionRule =
-        "Maintain the pose, but create new textures from scratch.";
+      compositionRule = 'Maintain the pose, but create new textures from scratch.';
     } else {
       roleInstruction = `
         Use the input image as the primary structural guide.
         Apply the requested style as a dense filter over the existing image structure.
         Preserve the original identity as closely as possible.
         `;
-      compositionRule = "Keep close to the input geometry.";
+      compositionRule = 'Keep close to the input geometry.';
     }
 
-    let styleEmphasis = "";
+    let styleEmphasis = '';
     if (intensity > 0.85) {
       styleEmphasis = `
         EXAGGERATE the style features. 
@@ -431,7 +412,13 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const styleRecipeParams = {
       presetId: preset.id,
       presetName: preset.name,
-      mode: fallbackAttachment ? 'PACK_CATEGORY_BASE_STYLE_APPLICATION' : activeImage ? (fidelity < 0.3 ? 'CREATIVE_REIMAGINING' : 'STRUCTURAL_PRESERVATION') : 'DIRECT_STYLE_SYNTHESIS',
+      mode: fallbackAttachment
+        ? 'PACK_CATEGORY_BASE_STYLE_APPLICATION'
+        : activeImage
+          ? fidelity < 0.3
+            ? 'CREATIVE_REIMAGINING'
+            : 'STRUCTURAL_PRESERVATION'
+          : 'DIRECT_STYLE_SYNTHESIS',
       roleInstruction: roleInstruction.trim(),
       compositionRule: compositionRule.trim(),
       styleEmphasis: styleEmphasis.trim(),
@@ -439,10 +426,13 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       subjectTreatment: preset.style.subject_treatment || preset.style.form_and_line || 'Standard',
       colorTone: preset.style.color_and_tone || preset.style.color_palette || 'Standard',
       lightingShadow: preset.style.lighting_and_shadow || preset.style.lighting_setup || 'Standard',
-      textureMaterial: preset.style.texture_and_material || preset.style.material_texture || 'Standard',
-      cameraComposition: preset.style.camera_and_composition || preset.style.spatial_distortion || 'Standard',
+      textureMaterial:
+        preset.style.texture_and_material || preset.style.material_texture || 'Standard',
+      cameraComposition:
+        preset.style.camera_and_composition || preset.style.spatial_distortion || 'Standard',
       atmosphereMood: preset.style.atmosphere_and_mood || preset.style.atmosphere || 'Standard',
-      renderingQuality: preset.style.rendering_and_quality || preset.style.render_quality || 'Standard',
+      renderingQuality:
+        preset.style.rendering_and_quality || preset.style.render_quality || 'Standard',
     };
 
     onGenerate(undefined, {
@@ -450,17 +440,14 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       recipeParams: styleRecipeParams,
       recipeContext: '',
       attachments: fallbackAttachment ? [fallbackAttachment] : config.attachments,
-      aspectRatio: fallbackAttachment ? "2:3" : config.aspectRatio,
+      aspectRatio: fallbackAttachment ? '2:3' : config.aspectRatio,
       negativePrompt: config.negativePrompt
         ? `${config.negativePrompt}, ${presetNegative}`
         : presetNegative,
     });
   };
 
-  const handleCopyStylePrompt = (
-    e: React.MouseEvent,
-    preset: StylePresetDef,
-  ) => {
+  const handleCopyStylePrompt = (e: React.MouseEvent, preset: StylePresetDef) => {
     e.stopPropagation();
     const promptText = `
 **Style:** ${preset.name}
@@ -481,9 +468,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
-    const files = Array.from(e.dataTransfer.files).filter((f: File) =>
-      f.type.startsWith("image/"),
-    );
+    const files = Array.from(e.dataTransfer.files).filter((f: File) => f.type.startsWith('image/'));
     if (files.length > 0) onFileSelect(files);
   };
 
@@ -492,27 +477,27 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     switch (id) {
       case FAVORITES_PACK_ID:
         return <Heart size={size} fill="currentColor" />;
-      case "pack_01":
+      case 'pack_01':
         return <Camera size={size} />;
-      case "pack_02":
+      case 'pack_02':
         return <Clapperboard size={size} />;
-      case "pack_03":
+      case 'pack_03':
         return <Box size={size} />;
-      case "pack_04":
+      case 'pack_04':
         return <PenTool size={size} />;
-      case "pack_05":
+      case 'pack_05':
         return <Sparkles size={size} />;
-      case "pack_06":
+      case 'pack_06':
         return <Palette size={size} />;
-      case "pack_07":
+      case 'pack_07':
         return <Building size={size} />;
-      case "pack_08":
+      case 'pack_08':
         return <Shirt size={size} />;
-      case "pack_09":
+      case 'pack_09':
         return <Layers size={size} />;
-      case "pack_10":
+      case 'pack_10':
         return <Wand2 size={size} />;
-      case "pack_11":
+      case 'pack_11':
         return <SmilePlus size={size} />;
       default:
         return <Layers size={size} />;
@@ -522,16 +507,19 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const getResultImageForPreset = (presetName: string) => {
     if (!images) return null;
     const targetStyle = `TARGET STYLE: ${presetName.toUpperCase()}`;
-    return images
-      .filter((img) => img.config.recipeContext?.includes(targetStyle))
-      .sort((a, b) => b.createdAt - a.createdAt)[0] || null;
+    return (
+      images
+        .filter((img) => img.config.recipeContext?.includes(targetStyle))
+        .sort((a, b) => b.createdAt - a.createdAt)[0] || null
+    );
   };
 
   const getPackIdForPreset = (preset: StylePresetDef) => {
     if (currentPackId !== FAVORITES_PACK_ID) return currentPackId;
-    return STYLE_PACKS.find((pack) =>
-      pack.presets.some((candidate) => candidate.id === preset.id),
-    )?.id || activePack.id;
+    return (
+      STYLE_PACKS.find((pack) => pack.presets.some((candidate) => candidate.id === preset.id))
+        ?.id || activePack.id
+    );
   };
 
   const renderPresetCard = React.useCallback(
@@ -555,13 +543,16 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           delay={200}
           content={
             <div className="flex flex-col gap-2 w-64 text-left p-3">
-              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">Prompt Preview</div>
+              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">
+                Prompt Preview
+              </div>
               <div className="text-[10px] text-zinc-300 leading-relaxed font-mono flex flex-col gap-1 max-h-48 overflow-y-auto custom-scrollbar">
                 {Object.entries(preset.style).map(([key, value]) => {
                   if (typeof value === 'object') return null;
                   return (
                     <div key={key}>
-                      <span className="text-zinc-500 capitalize">{key.replace(/_/g, ' ')}:</span> {String(value)}
+                      <span className="text-zinc-500 capitalize">{key.replace(/_/g, ' ')}:</span>{' '}
+                      {String(value)}
                     </div>
                   );
                 })}
@@ -572,10 +563,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           <div
             className={`
                   group relative aspect-[3/4] rounded-xl overflow-hidden text-left transition-all duration-300 flex flex-col
-                  ${isActive
-                ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace("border", "ring")} shadow-2xl scale-[1.02]`
-                : "bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1"
-              }
+                  ${
+                    isActive
+                      ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
+                      : 'bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1'
+                  }
               `}
           >
             <div className="flex-1 relative overflow-hidden bg-black">
@@ -676,12 +668,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                     e.stopPropagation();
                     toggleFavorite(preset.id);
                   }}
-                  className={`p-1.5 rounded-full transition-all duration-300 ${isFavorite ? "text-rose-500 bg-black/40" : "text-zinc-600 hover:text-rose-400 bg-transparent hover:bg-black/40"}`}
-                  title={isFavorite ? "Unpin" : "Pin to top"}
+                  className={`p-1.5 rounded-full transition-all duration-300 ${isFavorite ? 'text-rose-500 bg-black/40' : 'text-zinc-600 hover:text-rose-400 bg-transparent hover:bg-black/40'}`}
+                  title={isFavorite ? 'Unpin' : 'Pin to top'}
                 >
                   <Heart
                     size={14}
-                    fill={isFavorite ? "currentColor" : "none"}
+                    fill={isFavorite ? 'currentColor' : 'none'}
                     strokeWidth={isFavorite ? 0 : 2}
                   />
                 </button>
@@ -690,14 +682,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             <div className="relative h-20 p-4 bg-zinc-900/90 backdrop-blur-md border-t border-white/5 flex flex-col justify-center text-left hover:bg-zinc-800 transition-colors z-20 group/label w-full">
               <div
-                onClick={() =>
-                  !isGenerating && handleApplyStyle(preset)
-                }
-                className={`flex-1 flex flex-col justify-center ${!isGenerating ? "cursor-pointer" : ""}`}
+                onClick={() => !isGenerating && handleApplyStyle(preset)}
+                className={`flex-1 flex flex-col justify-center ${!isGenerating ? 'cursor-pointer' : ''}`}
               >
                 <div className="flex items-center justify-between w-full mb-1">
                   <span
-                    className={`text-[10px] font-black uppercase tracking-tight truncate pr-8 transition-colors ${isActive ? "text-white" : "text-zinc-400 group-hover/label:text-white"}`}
+                    className={`text-[10px] font-black uppercase tracking-tight truncate pr-8 transition-colors ${isActive ? 'text-white' : 'text-zinc-400 group-hover/label:text-white'}`}
                   >
                     {preset.name}
                   </span>
@@ -716,11 +706,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   className="p-1.5 rounded-md text-zinc-600 hover:text-white hover:bg-white/10 transition-all"
                   title="Copy Style Prompt"
                 >
-                  {isCopied ? (
-                    <Check size={12} className="text-green-500" />
-                  ) : (
-                    <Copy size={12} />
-                  )}
+                  {isCopied ? <Check size={12} className="text-green-500" /> : <Copy size={12} />}
                 </button>
               </div>
 
@@ -777,7 +763,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   alt=""
                 />
                 <button
-                  onClick={() => updateConfig("attachments", [])}
+                  onClick={() => updateConfig('attachments', [])}
                   className="absolute top-4 right-4 p-2 rounded-xl bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white border border-red-500/20 transition-all opacity-0 group-hover:opacity-100 shadow-xl"
                 >
                   <X size={16} />
@@ -793,9 +779,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 <input
                   type="file"
                   ref={fileInputRef}
-                  onChange={(e) =>
-                    e.target.files && onFileSelect(Array.from(e.target.files))
-                  }
+                  onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
                   className="hidden"
                   accept="image/*"
                 />
@@ -824,9 +808,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 min={0}
                 max={1}
                 step={0.05}
-                onChange={(v) =>
-                  updateAttachment(activeImage.id, { strength: v })
-                }
+                onChange={(v) => updateAttachment(activeImage.id, { strength: v })}
               />
 
               <Slider
@@ -842,12 +824,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               <div className="flex justify-between mt-2 text-[8px] font-black uppercase tracking-widest text-zinc-600">
                 <span>
                   {activeImage.strength < 0.3
-                    ? "Re-Imagine"
+                    ? 'Re-Imagine'
                     : activeImage.strength < 0.6
-                      ? "Remix"
-                      : "Filter"}
+                      ? 'Remix'
+                      : 'Filter'}
                 </span>
-                <span>{styleStrength > 0.8 ? "Exaggerated" : "Balanced"}</span>
+                <span>{styleStrength > 0.8 ? 'Exaggerated' : 'Balanced'}</span>
               </div>
             </div>
           )}
@@ -865,23 +847,19 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             onClick={() => {
               startViewTransition(() => {
                 setCurrentPackId(FAVORITES_PACK_ID);
-                setSearchQuery("");
+                setSearchQuery('');
               });
             }}
             className={`
                     h-9 px-3 rounded-lg flex items-center gap-2 transition-all duration-300 relative overflow-hidden group flex-shrink-0
-                    ${currentPackId === FAVORITES_PACK_ID
-                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                : "bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400"
-              }
+                    ${
+                      currentPackId === FAVORITES_PACK_ID
+                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+                    }
                 `}
           >
-            <Heart
-              size={16}
-              fill={
-                currentPackId === FAVORITES_PACK_ID ? "currentColor" : "none"
-              }
-            />
+            <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
             {currentPackId === FAVORITES_PACK_ID && (
               <span className="text-[9px] font-black uppercase tracking-widest whitespace-nowrap animate-in fade-in slide-in-from-left-2">
                 Favorites
@@ -892,7 +870,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           {/* Standard Packs */}
           {STYLE_PACKS.map((pack) => {
             const isActive = currentPackId === pack.id;
-            const theme = PACK_THEMES[pack.id] || PACK_THEMES["pack_01"];
+            const theme = PACK_THEMES[pack.id] || PACK_THEMES['pack_01'];
 
             return (
               <button
@@ -900,20 +878,19 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 onClick={() => {
                   startViewTransition(() => {
                     setCurrentPackId(pack.id);
-                    setSearchQuery("");
+                    setSearchQuery('');
                   });
                 }}
                 className={`
                             h-9 px-3 rounded-lg flex items-center gap-2 transition-all duration-300 relative overflow-hidden group flex-shrink-0
-                            ${isActive
-                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                    : "bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300"
-                  }
+                            ${
+                              isActive
+                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                            }
                         `}
               >
-                <div
-                  className={`relative z-10 transition-colors ${isActive ? theme.text : ""}`}
-                >
+                <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>
                   {getPackIcon(pack.id)}
                 </div>
 
@@ -952,7 +929,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 className="bg-transparent border-none outline-none text-[11px] text-white placeholder-zinc-600 w-full font-medium"
               />
               {searchQuery && (
-                <button onClick={() => setSearchQuery("")}>
+                <button onClick={() => setSearchQuery('')}>
                   <X size={12} className="text-zinc-500 hover:text-white" />
                 </button>
               )}
@@ -961,11 +938,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             <div className="h-6 w-px bg-white/5" />
 
             <button
-              onClick={() =>
-                setSortOrder((prev) => (prev === "az" ? "za" : "az"))
-              }
+              onClick={() => setSortOrder((prev) => (prev === 'az' ? 'za' : 'az'))}
               className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors"
-              title={sortOrder === "az" ? "Sort A-Z" : "Sort Z-A"}
+              title={sortOrder === 'az' ? 'Sort A-Z' : 'Sort Z-A'}
             >
               <ArrowUpDown size={16} />
             </button>
@@ -973,13 +948,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             {currentPackId !== FAVORITES_PACK_ID && (
               <button
                 onClick={() => setShowFavoritesOnly((prev) => !prev)}
-                className={`p-1.5 rounded-lg transition-colors ${showFavoritesOnly ? "text-rose-400 bg-rose-500/10" : "text-zinc-500 hover:text-white hover:bg-white/5"}`}
+                className={`p-1.5 rounded-lg transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
                 title="Filter Favorites in this Pack"
               >
-                <Heart
-                  size={16}
-                  fill={showFavoritesOnly ? "currentColor" : "none"}
-                />
+                <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
               </button>
             )}
           </div>
@@ -989,21 +961,20 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         <div className="flex-1 overflow-y-auto custom-scrollbar px-8 pb-12 pt-4">
           <div className="w-full pb-20 space-y-10">
             {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
-            {processedData.favorites.length > 0 &&
-              currentPackId !== FAVORITES_PACK_ID && (
-                <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                  <div className="flex items-center gap-3 mb-4 opacity-100 sticky top-0 backdrop-blur-xl py-2 z-10">
-                    <div className="w-1 h-4 rounded-full bg-rose-500" />
-                    <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-rose-400">
-                      Pinned / Favorites
-                    </h3>
-                    <div className="h-px flex-1 bg-gradient-to-r from-rose-500/20 to-transparent" />
-                  </div>
-                  <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-5 gap-4">
-                    {processedData.favorites.map(renderPresetCard)}
-                  </div>
+            {processedData.favorites.length > 0 && currentPackId !== FAVORITES_PACK_ID && (
+              <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                <div className="flex items-center gap-3 mb-4 opacity-100 sticky top-0 backdrop-blur-xl py-2 z-10">
+                  <div className="w-1 h-4 rounded-full bg-rose-500" />
+                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-rose-400">
+                    Pinned / Favorites
+                  </h3>
+                  <div className="h-px flex-1 bg-gradient-to-r from-rose-500/20 to-transparent" />
                 </div>
-              )}
+                <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-5 gap-4">
+                  {processedData.favorites.map(renderPresetCard)}
+                </div>
+              </div>
+            )}
 
             {/* OTHER CATEGORIES */}
             {Object.entries(processedData.groups).map(([category, presets]) => (

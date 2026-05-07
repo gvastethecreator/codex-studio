@@ -2,57 +2,92 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "studio:init",
+      "label": "🧱 init",
       "type": "shell",
       "command": "bun run studio:init",
       "problemMatcher": [],
       "group": "build"
     },
     {
-      "label": "dev: studio all",
+      "label": "🚀 dev",
       "type": "shell",
       "command": "bun run dev",
       "problemMatcher": [],
       "isBackground": true,
-      "dependsOn": ["studio:init"],
+      "dependsOn": ["🧱 init"],
       "group": {
         "kind": "build",
         "isDefault": true
       }
     },
     {
-      "label": "dev: ui",
+      "label": "🖥️ ui",
       "type": "shell",
       "command": "bun run dev:ui",
       "problemMatcher": [],
       "isBackground": true
     },
     {
-      "label": "dev: server",
+      "label": "🛠️ server",
       "type": "shell",
       "command": "bun run dev:server",
       "problemMatcher": [],
       "isBackground": true,
-      "dependsOn": ["studio:init"]
+      "dependsOn": ["🧱 init"]
     },
     {
-      "label": "check",
+      "label": "✨ fmt",
       "type": "shell",
-      "command": "bun run check",
-      "problemMatcher": "$tsc",
+      "command": "bun run fmt",
+      "problemMatcher": [],
       "group": "test"
     },
     {
-      "label": "build",
+      "label": "🧹 lint",
+      "type": "shell",
+      "command": "bun run lint",
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🔍 check",
+      "type": "shell",
+      "command": "bun run check",
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🧪 test",
+      "type": "shell",
+      "command": "bun run test",
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "📊 coverage",
+      "type": "shell",
+      "command": "bun run test:coverage",
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "⚡ validate",
+      "type": "shell",
+      "command": "bun run validate:fast",
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🏗️ build",
       "type": "shell",
       "command": "bun run build",
-      "problemMatcher": "$tsc",
+      "problemMatcher": [],
       "group": "build"
     },
     {
-      "label": "open: library logs",
+      "label": "📜 logs",
       "type": "shell",
-      "command": "explorer D:\\AI-Studio-Library\\logs",
+      "command": "bun run tooling:logs",
       "problemMatcher": []
     }
   ]

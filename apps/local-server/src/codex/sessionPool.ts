@@ -35,7 +35,9 @@ function loadPersistedImagegenSessions() {
   const imagegenSessionRegistryPath = getImagegenSessionRegistryPath();
   if (!existsSync(imagegenSessionRegistryPath)) return new Map<string, PersistedImagegenSession>();
   try {
-    const parsed = JSON.parse(readFileSync(imagegenSessionRegistryPath, 'utf8')) as PersistedImagegenSession[];
+    const parsed = JSON.parse(
+      readFileSync(imagegenSessionRegistryPath, 'utf8'),
+    ) as PersistedImagegenSession[];
     return new Map(parsed.map((entry) => [entry.sessionKey, entry]));
   } catch {
     return new Map<string, PersistedImagegenSession>();
@@ -133,11 +135,18 @@ export async function createImagegenSession(sessionKey: string): Promise<Session
   };
   imagegenSessions.set(sessionKey, session);
   rememberImagegenSession(sessionKey, session.threadId);
-  log('info', 'codex-session', `${persistedThreadId ? 'Reused' : 'Started'} persistent imagegen thread ${session.threadId ?? 'unknown'} for ${sessionKey}`);
+  log(
+    'info',
+    'codex-session',
+    `${persistedThreadId ? 'Reused' : 'Started'} persistent imagegen thread ${session.threadId ?? 'unknown'} for ${sessionKey}`,
+  );
   return session;
 }
 
-export function closeImagegenSession(sessionKey: string, options?: { invalidatePersistedThread?: boolean }) {
+export function closeImagegenSession(
+  sessionKey: string,
+  options?: { invalidatePersistedThread?: boolean },
+) {
   const session = imagegenSessions.get(sessionKey);
   if (!session) return;
   session.client.close();
@@ -160,7 +169,9 @@ export function createSessionPool(): SessionPool {
     async destroySession(threadIdOrSessionKey) {
       const sessionKey = imagegenSessions.has(threadIdOrSessionKey)
         ? threadIdOrSessionKey
-        : [...imagegenSessions.values()].find((session) => session.threadId === threadIdOrSessionKey)?.sessionKey;
+        : [...imagegenSessions.values()].find(
+            (session) => session.threadId === threadIdOrSessionKey,
+          )?.sessionKey;
       if (sessionKey) closeImagegenSession(sessionKey, { invalidatePersistedThread: true });
     },
   };

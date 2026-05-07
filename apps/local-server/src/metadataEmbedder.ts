@@ -89,7 +89,8 @@ function xmpPacket(metadata: ImageGenMetadata) {
 }
 
 function jpegMarker(marker: number, payload: Buffer) {
-  if (payload.length + 2 > 0xffff) throw new Error('JPEG metadata payload is too large for an APP marker');
+  if (payload.length + 2 > 0xffff)
+    throw new Error('JPEG metadata payload is too large for an APP marker');
   const segment = Buffer.alloc(payload.length + 4);
   segment[0] = 0xff;
   segment[1] = marker;
@@ -134,8 +135,10 @@ function buildXmpPayload(metadata: ImageGenMetadata) {
 
 function isCodexJpegApp1(payload: Buffer) {
   return (
-    (payload.subarray(0, XMP_HEADER.length).equals(XMP_HEADER) && payload.includes(Buffer.from('codex.studio/ns/imagegen/1.0/', 'utf8'))) ||
-    (payload.subarray(0, EXIF_HEADER.length).equals(EXIF_HEADER) && payload.includes(Buffer.from(METADATA_KEY, 'utf8')))
+    (payload.subarray(0, XMP_HEADER.length).equals(XMP_HEADER) &&
+      payload.includes(Buffer.from('codex.studio/ns/imagegen/1.0/', 'utf8'))) ||
+    (payload.subarray(0, EXIF_HEADER.length).equals(EXIF_HEADER) &&
+      payload.includes(Buffer.from(METADATA_KEY, 'utf8')))
   );
 }
 
@@ -148,8 +151,14 @@ function embedPng(filePath: string, metadata: ImageGenMetadata): EmbedResult {
   const chunks: Buffer[] = [PNG_SIGNATURE];
   let offset = 8;
   let inserted = false;
-  const textChunk = createPngChunk('tEXt', Buffer.from(`${METADATA_KEY}\0${metadataText(metadata)}`, 'utf8'));
-  const xmpChunk = createPngChunk('iTXt', Buffer.from(`XML:com.adobe.xmp\0\0\0\0\0${xmpPacket(metadata)}`, 'utf8'));
+  const textChunk = createPngChunk(
+    'tEXt',
+    Buffer.from(`${METADATA_KEY}\0${metadataText(metadata)}`, 'utf8'),
+  );
+  const xmpChunk = createPngChunk(
+    'iTXt',
+    Buffer.from(`XML:com.adobe.xmp\0\0\0\0\0${xmpPacket(metadata)}`, 'utf8'),
+  );
 
   while (offset < file.length) {
     const length = file.readUInt32BE(offset);
@@ -239,7 +248,10 @@ function isCodexWebpChunk(type: string, data: Buffer) {
 
 function embedWebp(filePath: string, metadata: ImageGenMetadata): EmbedResult {
   const file = readFileSync(filePath);
-  if (file.subarray(0, 4).toString('ascii') !== 'RIFF' || file.subarray(8, 12).toString('ascii') !== 'WEBP') {
+  if (
+    file.subarray(0, 4).toString('ascii') !== 'RIFF' ||
+    file.subarray(8, 12).toString('ascii') !== 'WEBP'
+  ) {
     throw new Error('Invalid WebP signature');
   }
 
@@ -262,7 +274,10 @@ function embedWebp(filePath: string, metadata: ImageGenMetadata): EmbedResult {
     }
     offset += 8 + paddedLength;
   }
-  chunks.push(riffChunk('EXIF', buildExifPayload(metadata)), riffChunk('XMP ', Buffer.from(xmpPacket(metadata), 'utf8')));
+  chunks.push(
+    riffChunk('EXIF', buildExifPayload(metadata)),
+    riffChunk('XMP ', Buffer.from(xmpPacket(metadata), 'utf8')),
+  );
 
   const body = Buffer.concat([Buffer.from('WEBP', 'ascii'), ...chunks]);
   const output = Buffer.alloc(8 + body.length);
@@ -273,7 +288,10 @@ function embedWebp(filePath: string, metadata: ImageGenMetadata): EmbedResult {
   return { filePath, bytesWritten: output.length, format: 'webp' };
 }
 
-export async function embedMetadata(filePath: string, metadata: ImageGenMetadata): Promise<EmbedResult> {
+export async function embedMetadata(
+  filePath: string,
+  metadata: ImageGenMetadata,
+): Promise<EmbedResult> {
   const ext = path.extname(filePath).toLowerCase();
   if (ext === '.png') return embedPng(filePath, metadata);
   if (ext === '.jpg' || ext === '.jpeg') return embedJpeg(filePath, metadata);
@@ -311,7 +329,11 @@ function extractJpegMetadata(file: Buffer): ImageGenMetadata | null {
 }
 
 function extractWebpMetadata(file: Buffer): ImageGenMetadata | null {
-  if (file.subarray(0, 4).toString('ascii') !== 'RIFF' || file.subarray(8, 12).toString('ascii') !== 'WEBP') return null;
+  if (
+    file.subarray(0, 4).toString('ascii') !== 'RIFF' ||
+    file.subarray(8, 12).toString('ascii') !== 'WEBP'
+  )
+    return null;
   let offset = 12;
   while (offset + 8 <= file.length) {
     const type = file.subarray(offset, offset + 4).toString('ascii');
@@ -354,11 +376,17 @@ export async function extractMetadata(filePath: string): Promise<ImageGenMetadat
   }
 }
 
-export async function embedJobAssets(jobId: string, metadata: ImageGenMetadata, libraryDir: string): Promise<EmbedResult[]> {
+export async function embedJobAssets(
+  jobId: string,
+  metadata: ImageGenMetadata,
+  libraryDir: string,
+): Promise<EmbedResult[]> {
   const assetsDir = path.join(libraryDir, 'assets');
   if (!existsSync(assetsDir)) return [];
   const results: EmbedResult[] = [];
-  for (const entry of await Array.fromAsync(new Bun.Glob(`${jobId}*.*`).scan({ cwd: assetsDir, onlyFiles: true }))) {
+  for (const entry of await Array.fromAsync(
+    new Bun.Glob(`${jobId}*.*`).scan({ cwd: assetsDir, onlyFiles: true }),
+  )) {
     const filePath = path.join(assetsDir, entry);
     try {
       results.push(await embedMetadata(filePath, metadata));

@@ -1,4 +1,3 @@
-
 /**
  * Creates a scaled down version of a base64 image for UI performance.
  * Optimized for space in IndexedDB and rendering speed.
@@ -12,9 +11,9 @@ export const createThumbnail = (dataUrl: string, maxDim: number = 320): Promise<
     let timeoutId: any;
 
     const cleanup = () => {
-        if (timeoutId) clearTimeout(timeoutId);
-        img.onload = null;
-        img.onerror = null;
+      if (timeoutId) clearTimeout(timeoutId);
+      img.onload = null;
+      img.onerror = null;
     };
 
     img.onload = () => {
@@ -39,34 +38,34 @@ export const createThumbnail = (dataUrl: string, maxDim: number = 320): Promise<
       canvas.height = height;
       const ctx = canvas.getContext('2d');
       if (!ctx) return resolve(dataUrl);
-      
+
       ctx.imageSmoothingEnabled = true;
       ctx.imageSmoothingQuality = 'high';
       ctx.drawImage(img, 0, 0, width, height);
-      
+
       // Use webp for superior compression in modern browsers
       // Fallback to jpeg if webp is not supported (though dataToURL usually handles it)
       try {
         const webpData = canvas.toDataURL('image/webp', 0.6);
         // If webp is not supported, it might return image/png or something else
         if (webpData.startsWith('data:image/webp')) {
-            return resolve(webpData);
+          return resolve(webpData);
         }
       } catch (e) {
-          console.warn("WebP thumbnail generation failed, falling back to JPEG");
+        console.warn('WebP thumbnail generation failed, falling back to JPEG');
       }
-      
+
       resolve(canvas.toDataURL('image/jpeg', 0.7));
     };
     img.onerror = () => {
-        cleanup();
-        resolve(dataUrl);
+      cleanup();
+      resolve(dataUrl);
     };
-    
+
     // 5 second timeout for image loading
     timeoutId = setTimeout(() => {
-        cleanup();
-        resolve(dataUrl);
+      cleanup();
+      resolve(dataUrl);
     }, 5000);
 
     img.src = dataUrl;

@@ -45,7 +45,12 @@ export function getCatalogWorkspace(id: string) {
   return row ? mapWorkspace(row) : null;
 }
 
-export function createCatalogWorkspace(input: { name: string; libraryId?: string | null; filterJson?: unknown; sortOrder?: string }) {
+export function createCatalogWorkspace(input: {
+  name: string;
+  libraryId?: string | null;
+  filterJson?: unknown;
+  sortOrder?: string;
+}) {
   const workspace: CatalogWorkspace = {
     id: randomUUID(),
     name: input.name.trim() || 'Untitled Workspace',
@@ -55,16 +60,30 @@ export function createCatalogWorkspace(input: { name: string; libraryId?: string
     createdAt: now(),
   };
   getDb()
-    .query('INSERT INTO workspaces (id, name, library_id, filter_json, sort_order, created_at) VALUES (?, ?, ?, ?, ?, ?)')
-    .run(workspace.id, workspace.name, workspace.libraryId, JSON.stringify(workspace.filterJson), workspace.sortOrder, workspace.createdAt);
+    .query(
+      'INSERT INTO workspaces (id, name, library_id, filter_json, sort_order, created_at) VALUES (?, ?, ?, ?, ?, ?)',
+    )
+    .run(
+      workspace.id,
+      workspace.name,
+      workspace.libraryId,
+      JSON.stringify(workspace.filterJson),
+      workspace.sortOrder,
+      workspace.createdAt,
+    );
   return workspace;
 }
 
-export function updateCatalogWorkspace(id: string, patch: { name?: string; libraryId?: string | null; filterJson?: unknown; sortOrder?: string }) {
+export function updateCatalogWorkspace(
+  id: string,
+  patch: { name?: string; libraryId?: string | null; filterJson?: unknown; sortOrder?: string },
+) {
   const current = getCatalogWorkspace(id);
   if (!current) return null;
   getDb()
-    .query('UPDATE workspaces SET name = ?, library_id = ?, filter_json = ?, sort_order = ? WHERE id = ?')
+    .query(
+      'UPDATE workspaces SET name = ?, library_id = ?, filter_json = ?, sort_order = ? WHERE id = ?',
+    )
     .run(
       patch.name ?? current.name,
       patch.libraryId === undefined ? current.libraryId : patch.libraryId,
@@ -87,12 +106,15 @@ export function createWorkspaceRoutes() {
   routes.get('/', (c) => c.json(listCatalogWorkspaces()));
   routes.post('/', async (c) => {
     const body = await c.req.json().catch(() => ({}));
-    return c.json(createCatalogWorkspace({
-      name: body.name || 'Untitled Workspace',
-      libraryId: body.libraryId ?? body.library_id,
-      filterJson: body.filterJson ?? body.filter_json ?? {},
-      sortOrder: body.sortOrder ?? body.sort_order ?? 'newest',
-    }), 201);
+    return c.json(
+      createCatalogWorkspace({
+        name: body.name || 'Untitled Workspace',
+        libraryId: body.libraryId ?? body.library_id,
+        filterJson: body.filterJson ?? body.filter_json ?? {},
+        sortOrder: body.sortOrder ?? body.sort_order ?? 'newest',
+      }),
+      201,
+    );
   });
   routes.get('/:id', (c) => {
     const workspace = getCatalogWorkspace(c.req.param('id'));
@@ -109,7 +131,9 @@ export function createWorkspaceRoutes() {
     return workspace ? c.json(workspace) : c.json({ error: 'Workspace not found' }, 404);
   });
   routes.delete('/:id', (c) => {
-    return deleteCatalogWorkspace(c.req.param('id')) ? c.json({ ok: true }) : c.json({ error: 'Workspace not found' }, 404);
+    return deleteCatalogWorkspace(c.req.param('id'))
+      ? c.json({ ok: true })
+      : c.json({ error: 'Workspace not found' }, 404);
   });
   return routes;
 }

@@ -1,8 +1,8 @@
-import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
-import { existsSync } from "node:fs";
-import path from "node:path";
-import { Database } from "bun:sqlite";
-import type { StylePack, StylePresetDef } from "../components/recipes/styles/types";
+import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import path from 'node:path';
+import { Database } from 'bun:sqlite';
+import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
 import {
   RECIPE_ASSET_EXTENSION,
   defaultsDir,
@@ -10,7 +10,7 @@ import {
   repoRelative,
   sanitizeCategory,
   writeRepoWebpAsset,
-} from "./style-default-utils";
+} from './style-default-utils';
 
 interface ManifestEntry {
   presetId: string;
@@ -21,7 +21,7 @@ interface ManifestEntry {
   file: string;
   jobId: string;
   sourceAsset: string;
-  generationMode: "text-to-image";
+  generationMode: 'text-to-image';
   model: string;
   reasoningEffort: string;
   generatedAt: string;
@@ -43,16 +43,17 @@ interface TranscriptImage {
   createdAt: string;
 }
 
-const libraryDir = process.env.STUDIO_LIBRARY_DIR || "D:\\AI-Studio-Library";
-const dbPath = path.join(libraryDir, "library.sqlite");
-const transcriptDir = path.join(libraryDir, "transcripts");
-const codexHome = process.env.CODEX_HOME || path.join(process.env.USERPROFILE || "C:\\Users\\user", ".codex");
-const generatedImagesDir = path.join(codexHome, "generated_images");
-const dryRun = process.argv.includes("--dry-run");
-const force = process.argv.includes("--force");
-const recoveredReportPath = path.join(defaultsDir, "cache-recovery-report.json");
-const model = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.4-mini";
-const reasoningEffort = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || "low";
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library';
+const dbPath = path.join(libraryDir, 'library.sqlite');
+const transcriptDir = path.join(libraryDir, 'transcripts');
+const codexHome =
+  process.env.CODEX_HOME || path.join(process.env.USERPROFILE || 'C:\\Users\\user', '.codex');
+const generatedImagesDir = path.join(codexHome, 'generated_images');
+const dryRun = process.argv.includes('--dry-run');
+const force = process.argv.includes('--force');
+const recoveredReportPath = path.join(defaultsDir, 'cache-recovery-report.json');
+const model = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini';
+const reasoningEffort = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
 
 function manifestPathForPack(packId: string) {
   return path.join(defaultsDir, `manifest-${packId}.json`);
@@ -60,7 +61,9 @@ function manifestPathForPack(packId: string) {
 
 async function loadManifest(packId: string) {
   try {
-    const parsed = JSON.parse(await readFile(manifestPathForPack(packId), "utf8")) as ManifestEntry[] | ManifestEntry;
+    const parsed = JSON.parse(await readFile(manifestPathForPack(packId), 'utf8')) as
+      | ManifestEntry[]
+      | ManifestEntry;
     return Array.isArray(parsed) ? parsed : [parsed];
   } catch {
     return [];
@@ -69,7 +72,7 @@ async function loadManifest(packId: string) {
 
 async function saveManifest(packId: string, entries: ManifestEntry[]) {
   entries.sort((a, b) => a.presetId.localeCompare(b.presetId));
-  await writeFile(manifestPathForPack(packId), `${JSON.stringify(entries, null, 2)}\n`, "utf8");
+  await writeFile(manifestPathForPack(packId), `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
 }
 
 function buildPresetIndex(packs: StylePack[]) {
@@ -96,9 +99,18 @@ function buildPresetIndex(packs: StylePack[]) {
 }
 
 function resolvePreset(finalPrompt: string, index: ReturnType<typeof buildPresetIndex>) {
-  const target = finalPrompt.match(/TARGET STYLE:\s*([^\n]+)/i)?.[1]?.trim().toUpperCase();
-  const packName = finalPrompt.match(/^PACK:\s*(.+)$/im)?.[1]?.trim().toLowerCase();
-  const category = finalPrompt.match(/^CATEGORY:\s*(.+)$/im)?.[1]?.trim().toLowerCase();
+  const target = finalPrompt
+    .match(/TARGET STYLE:\s*([^\n]+)/i)?.[1]
+    ?.trim()
+    .toUpperCase();
+  const packName = finalPrompt
+    .match(/^PACK:\s*(.+)$/im)?.[1]
+    ?.trim()
+    .toLowerCase();
+  const category = finalPrompt
+    .match(/^CATEGORY:\s*(.+)$/im)?.[1]
+    ?.trim()
+    .toLowerCase();
 
   if (target && packName && category) {
     const exact = index.byPackCategoryTarget.get(`${packName}::${category}::${target}`);
@@ -110,7 +122,9 @@ function resolvePreset(finalPrompt: string, index: ReturnType<typeof buildPreset
     if (matches?.length === 1) return matches[0];
   }
 
-  const explicit = finalPrompt.match(/Make the result immediately recognizable as "([^"]+)"/i)?.[1]?.trim();
+  const explicit = finalPrompt
+    .match(/Make the result immediately recognizable as "([^"]+)"/i)?.[1]
+    ?.trim();
   if (explicit) {
     const matches = index.byName.get(explicit);
     if (matches?.length === 1) return matches[0];
@@ -120,10 +134,10 @@ function resolvePreset(finalPrompt: string, index: ReturnType<typeof buildPreset
 }
 
 async function readTranscriptImage(jobId: string): Promise<TranscriptImage | null> {
-  const eventsPath = path.join(transcriptDir, jobId, "events.jsonl");
+  const eventsPath = path.join(transcriptDir, jobId, 'events.jsonl');
   if (!existsSync(eventsPath)) return null;
 
-  const lines = (await readFile(eventsPath, "utf8")).split(/\r?\n/).filter(Boolean);
+  const lines = (await readFile(eventsPath, 'utf8')).split(/\r?\n/).filter(Boolean);
   let threadId: string | null = null;
   let imageId: string | null = null;
 
@@ -135,7 +149,7 @@ async function readTranscriptImage(jobId: string): Promise<TranscriptImage | nul
       continue;
     }
     const item = event.params?.item;
-    if (item?.type !== "imageGeneration" || !item.id) continue;
+    if (item?.type !== 'imageGeneration' || !item.id) continue;
     threadId = event.params?.threadId || threadId;
     imageId = item.id;
   }
@@ -172,22 +186,28 @@ const jobs = db
 
 const manifestByPack = new Map<string, Map<string, ManifestEntry>>();
 for (const pack of packs) {
-  manifestByPack.set(pack.id, new Map((await loadManifest(pack.id)).map((entry) => [entry.presetId, entry])));
+  manifestByPack.set(
+    pack.id,
+    new Map((await loadManifest(pack.id)).map((entry) => [entry.presetId, entry])),
+  );
 }
 
-const latestByPreset = new Map<string, { pack: StylePack; preset: StylePresetDef; job: JobRow; image: TranscriptImage }>();
+const latestByPreset = new Map<
+  string,
+  { pack: StylePack; preset: StylePresetDef; job: JobRow; image: TranscriptImage }
+>();
 const unresolved: Array<{ jobId: string; status: string; reason: string }> = [];
 
 for (const job of jobs) {
   const resolved = resolvePreset(job.final_prompt_used, index);
   if (!resolved) {
-    unresolved.push({ jobId: job.id, status: job.status, reason: "preset_not_resolved" });
+    unresolved.push({ jobId: job.id, status: job.status, reason: 'preset_not_resolved' });
     continue;
   }
 
   const image = await readTranscriptImage(job.id);
   if (!image) {
-    unresolved.push({ jobId: job.id, status: job.status, reason: "cache_image_not_found" });
+    unresolved.push({ jobId: job.id, status: job.status, reason: 'cache_image_not_found' });
     continue;
   }
 
@@ -219,7 +239,7 @@ for (const { pack, preset, job, image } of latestByPreset.values()) {
         file: repoFile,
         jobId: job.id,
         sourceAsset: repoFile,
-        generationMode: "text-to-image",
+        generationMode: 'text-to-image',
         model,
         reasoningEffort,
         generatedAt: image.createdAt,
@@ -241,7 +261,7 @@ for (const { pack, preset, job, image } of latestByPreset.values()) {
     file: repoFile,
     jobId: job.id,
     sourceAsset: repoFile,
-    generationMode: "text-to-image",
+    generationMode: 'text-to-image',
     model,
     reasoningEffort,
     generatedAt: image.createdAt,
@@ -269,7 +289,7 @@ if (!dryRun) {
       null,
       2,
     )}\n`,
-    "utf8",
+    'utf8',
   );
 }
 

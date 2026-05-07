@@ -8,13 +8,17 @@ interface TooltipProps {
   contentClassName?: string;
 }
 
-const Tooltip: React.FC<TooltipProps> = ({ content, children, position = 'top', className = '', contentClassName = '' }) => {
+const Tooltip: React.FC<TooltipProps> = ({
+  content,
+  children,
+  position = 'top',
+  className = '',
+  contentClassName = '',
+}) => {
   return (
     <div className={`tooltip relative inline-flex ${className}`}>
       {children}
-      <div className={`tooltip-content ${position} ${contentClassName}`}>
-        {content}
-      </div>
+      <div className={`tooltip-content ${position} ${contentClassName}`}>{content}</div>
     </div>
   );
 };

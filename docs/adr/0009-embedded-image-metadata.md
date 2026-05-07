@@ -16,11 +16,11 @@ Crear un módulo `metadataEmbedder.ts` que escriba metadata en las imágenes gen
 
 ### Formatos y mecanismos
 
-| Formato | Mecanismo | Estándar |
-|---------|-----------|----------|
-| PNG | chunk `tEXt` / `iTXt` | PNG spec, compatible con SD WebUI |
-| JPEG | EXIF `UserComment` + XMP | EXIF 2.3, ISO 16684-1 (XMP) |
-| WebP | EXIF + XMP | WebP spec (hereda de RIFF) |
+| Formato | Mecanismo                | Estándar                          |
+| ------- | ------------------------ | --------------------------------- |
+| PNG     | chunk `tEXt` / `iTXt`    | PNG spec, compatible con SD WebUI |
+| JPEG    | EXIF `UserComment` + XMP | EXIF 2.3, ISO 16684-1 (XMP)       |
+| WebP    | EXIF + XMP               | WebP spec (hereda de RIFF)        |
 
 ### Schema de metadata
 
@@ -77,42 +77,40 @@ XMP es el estándar ISO para metadata en imágenes. Namespace `http://codex.stud
 // apps/local-server/src/metadataEmbedder.ts
 
 interface ImageGenMetadata {
-  prompt: string
-  negativePrompt?: string
-  aspectRatio: string
-  imageSize?: string
-  model: string
-  recipe?: string | null
-  batchId: string
-  generatedAt: string       // ISO 8601
-  studioVersion: string
-  libraryId?: string
-  catalogId?: string
+  prompt: string;
+  negativePrompt?: string;
+  aspectRatio: string;
+  imageSize?: string;
+  model: string;
+  recipe?: string | null;
+  batchId: string;
+  generatedAt: string; // ISO 8601
+  studioVersion: string;
+  libraryId?: string;
+  catalogId?: string;
 }
 
 interface EmbedResult {
-  filePath: string
-  bytesWritten: number
-  format: 'png' | 'jpeg' | 'webp'
+  filePath: string;
+  bytesWritten: number;
+  format: 'png' | 'jpeg' | 'webp';
 }
 
 // Interfaz principal
 function embedMetadata(
-  filePath: string,         // ruta absoluta al archivo de imagen
-  metadata: ImageGenMetadata
-): Promise<EmbedResult>
+  filePath: string, // ruta absoluta al archivo de imagen
+  metadata: ImageGenMetadata,
+): Promise<EmbedResult>;
 
 // Lectura (para importar/restaurar metadata de vuelta al catálogo)
-function extractMetadata(
-  filePath: string
-): Promise<ImageGenMetadata | null>
+function extractMetadata(filePath: string): Promise<ImageGenMetadata | null>;
 
 // Bulk: embeber en todos los assets de un job
 function embedJobAssets(
   jobId: string,
   metadata: ImageGenMetadata,
-  libraryDir: string
-): Promise<EmbedResult[]>
+  libraryDir: string,
+): Promise<EmbedResult[]>;
 ```
 
 ### Implementación interna
@@ -187,45 +185,46 @@ worker processJob()
 
 ```ts
 // PNG: embed y extract round-trip
-const tmpFile = path.join(tmpDir, 'test.png')
-await Bun.write(tmpFile, pngFixture)  // PNG de 1x1 pixel
+const tmpFile = path.join(tmpDir, 'test.png');
+await Bun.write(tmpFile, pngFixture); // PNG de 1x1 pixel
 await embedMetadata(tmpFile, {
   prompt: 'a test cat',
   aspectRatio: '1:1',
   model: 'codex-imagegen',
   batchId: 'b1',
   generatedAt: '2026-05-06T14:30:00.000Z',
-  studioVersion: '1.0.0'
-})
-const extracted = await extractMetadata(tmpFile)
-assert(extracted.prompt === 'a test cat')
-assert(extracted.aspectRatio === '1:1')
-assert(extracted.studioVersion === '1.0.0')
+  studioVersion: '1.0.0',
+});
+const extracted = await extractMetadata(tmpFile);
+assert(extracted.prompt === 'a test cat');
+assert(extracted.aspectRatio === '1:1');
+assert(extracted.studioVersion === '1.0.0');
 
 // PNG: no rompe la imagen al embeber
-const original = await Bun.file(pngFixture).arrayBuffer()
-await embedMetadata(tmpFile, sampleMetadata)
-const modified = await Bun.file(tmpFile).arrayBuffer()
+const original = await Bun.file(pngFixture).arrayBuffer();
+await embedMetadata(tmpFile, sampleMetadata);
+const modified = await Bun.file(tmpFile).arrayBuffer();
 // Los pixels deben ser idénticos (solo se agregaron chunks de metadata)
-assert(pixelDataEqual(original, modified))
+assert(pixelDataEqual(original, modified));
 
 // JPEG: embed y extract
-await embedMetadata(jpegFile, sampleMetadata)
-const meta = await extractMetadata(jpegFile)
-assert(meta.model === 'codex-imagegen')
+await embedMetadata(jpegFile, sampleMetadata);
+const meta = await extractMetadata(jpegFile);
+assert(meta.model === 'codex-imagegen');
 
 // extractMetadata en imagen sin metadata → null
-const plain = await extractMetadata(pngWithoutMetadata)
-assert(plain === null)
+const plain = await extractMetadata(pngWithoutMetadata);
+assert(plain === null);
 
 // extractMetadata en archivo corrupto → null (no lanza)
-const corrupt = await extractMetadata(path.join(tmpDir, 'not-an-image.bin'))
-assert(corrupt === null)
+const corrupt = await extractMetadata(path.join(tmpDir, 'not-an-image.bin'));
+assert(corrupt === null);
 ```
 
 ## Orden de ejecución
 
 Este plan es independiente y puede ejecutarse en cualquier momento. Dependencias:
+
 - **ADR 0002** (Callable App Factory) — facilita testear porque se puede inyectar un `libraryDir` temporal.
 - **ADR 0005** (Split Codex Client) — el Asset Extractor es donde se guardan las imágenes; si ya está extraído, el embed ocurre en el módulo correcto.
 - **ADR 0008** (Image Catalog) — el catálogo provee la metadata para la migración retroactiva. Pero no es blocker: el worker ya tiene los datos necesarios en el momento de generación.

@@ -20,26 +20,27 @@ Destructura **38 propiedades** de dos contextos (`useGlobal` 18 + `useGeneration
 
 ### Concerns mezclados (14)
 
-| Concern | Líneas aprox. | Debería estar en |
-|---------|--------------|------------------|
-| Hash-based routing | ~60 | `useHashRouter` hook |
-| Workspace CRUD | ~80 | `useWorkspaceManager` hook o `WorkspacePage` |
-| View navigation | ~40 | Router + page components |
-| Generation trigger | ~30 | `Toolbar` via callback |
-| Image editing orchestration | ~60 | `useGenerationPipeline` (ADR 0007) |
-| File import/export | ~100 | `useFileTransfer` hook |
-| Deep Scan recovery | ~80 | `useLocalStudioSync` |
-| Trash modal state | ~15 | Local state en `TrashModal` parent |
-| Limit modal state | ~15 | `useModalManager` |
-| Onboarding modal orchestration | ~20 | `useStudioOnboarding` |
-| Dashboard modal orchestration | ~15 | Local state |
-| Background toggle | ~10 | `HeaderToolbar` via callback |
-| Drop/paste handlers | ~40 | `DropZoneOverlay` + `Toolbar` |
-| Glue code | ~350 | Desaparece al decomponer |
+| Concern                        | Líneas aprox. | Debería estar en                             |
+| ------------------------------ | ------------- | -------------------------------------------- |
+| Hash-based routing             | ~60           | `useHashRouter` hook                         |
+| Workspace CRUD                 | ~80           | `useWorkspaceManager` hook o `WorkspacePage` |
+| View navigation                | ~40           | Router + page components                     |
+| Generation trigger             | ~30           | `Toolbar` via callback                       |
+| Image editing orchestration    | ~60           | `useGenerationPipeline` (ADR 0007)           |
+| File import/export             | ~100          | `useFileTransfer` hook                       |
+| Deep Scan recovery             | ~80           | `useLocalStudioSync`                         |
+| Trash modal state              | ~15           | Local state en `TrashModal` parent           |
+| Limit modal state              | ~15           | `useModalManager`                            |
+| Onboarding modal orchestration | ~20           | `useStudioOnboarding`                        |
+| Dashboard modal orchestration  | ~15           | Local state                                  |
+| Background toggle              | ~10           | `HeaderToolbar` via callback                 |
+| Drop/paste handlers            | ~40           | `DropZoneOverlay` + `Toolbar`                |
+| Glue code                      | ~350          | Desaparece al decomponer                     |
 
 ### Deletion test
 
 Si borramos `AppContent` y lo reemplazamos con un router + page components:
+
 - La complejidad de hash-routing reaparecería en un hook `useHashRouter` — locality ganada.
 - La complejidad de workspace CRUD reaparecería en `WorkspacePage` o `HeaderToolbar` — ya estaba ahí, solo que dispersa.
 - La complejidad de deep scan recovery reaparecería en `useLocalStudioSync` — donde CONTEXT.md dice que debe estar.
@@ -53,28 +54,28 @@ Hook con interfaz:
 
 ```ts
 function useHashRouter(): {
-  currentView: 'studio' | 'recipes' | 'recipe'
-  activeRecipeId: string | null
-  navigateTo: (view: string, params?: Record<string, string>) => void
-}
+  currentView: 'studio' | 'recipes' | 'recipe';
+  activeRecipeId: string | null;
+  navigateTo: (view: string, params?: Record<string, string>) => void;
+};
 ```
 
 Internamente maneja `hashchange` listener, parseo de fragmentos, y view transitions. Expone una interfaz declarativa que los page components consumen sin saber que la URL usa hash fragments.
 
 ### Fase 2: Crear page components
 
-| Page Component | Props | Responsabilidad |
-|----------------|-------|-----------------|
-| `StudioPage` | `batches, trash, isGenerating, ...` (10 props) | Grid + toolbar + queue + carousel |
-| `RecipesPage` | `onSelectRecipe` | Galería de recetas |
-| `RecipePage` | `activeRecipe, generationConfig, onGenerate, ...` (8 props) | RecipeRouter + toolbar |
+| Page Component | Props                                                       | Responsabilidad                   |
+| -------------- | ----------------------------------------------------------- | --------------------------------- |
+| `StudioPage`   | `batches, trash, isGenerating, ...` (10 props)              | Grid + toolbar + queue + carousel |
+| `RecipesPage`  | `onSelectRecipe`                                            | Galería de recetas                |
+| `RecipePage`   | `activeRecipe, generationConfig, onGenerate, ...` (8 props) | RecipeRouter + toolbar            |
 
 `AppContent` se reduce a:
 
 ```tsx
 function AppContent() {
   const { currentView, activeRecipeId, navigateTo } = useHashRouter()
-  
+
   return (
     <div className="app-shell">
       <HeaderToolbar currentView={currentView} onViewChange={navigateTo} ... />
@@ -96,15 +97,15 @@ Extender `useGenerationPipeline` con `executeEdit(image, maskDataUrl, editPrompt
 
 ### Archivos afectados
 
-| Archivo | Cambio |
-|---------|--------|
-| `hooks/useHashRouter.ts` | Nuevo — router basado en hash |
-| `components/StudioPage.tsx` | Nuevo — página principal de studio |
-| `components/RecipesPage.tsx` | Ya existe, adaptar props |
-| `components/RecipePage.tsx` | Nuevo — wrapper de RecipeRouter con toolbar |
-| `components/AppContent.tsx` | Reducción de 919 → ~100 líneas |
-| `hooks/useLocalStudioSync.ts` | Agregar `recoverOrphanedBatches` |
-| `hooks/useGenerationPipeline.ts` | Agregar `executeEdit` |
+| Archivo                          | Cambio                                      |
+| -------------------------------- | ------------------------------------------- |
+| `hooks/useHashRouter.ts`         | Nuevo — router basado en hash               |
+| `components/StudioPage.tsx`      | Nuevo — página principal de studio          |
+| `components/RecipesPage.tsx`     | Ya existe, adaptar props                    |
+| `components/RecipePage.tsx`      | Nuevo — wrapper de RecipeRouter con toolbar |
+| `components/AppContent.tsx`      | Reducción de 919 → ~100 líneas              |
+| `hooks/useLocalStudioSync.ts`    | Agregar `recoverOrphanedBatches`            |
+| `hooks/useGenerationPipeline.ts` | Agregar `executeEdit`                       |
 
 ## Consecuencias
 

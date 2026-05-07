@@ -1,311 +1,420 @@
 import React, { useState, useRef, useMemo } from 'react';
-import { Upload, X, RotateCw, ArrowUpFromLine, ZoomIn, Camera, Eye, Move3d, SlidersHorizontal, Loader2, Maximize2, MousePointer2 } from 'lucide-react';
+import {
+  Upload,
+  X,
+  RotateCw,
+  ArrowUpFromLine,
+  ZoomIn,
+  Camera,
+  Eye,
+  Move3d,
+  SlidersHorizontal,
+  Loader2,
+  Maximize2,
+  MousePointer2,
+} from 'lucide-react';
 import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import { useCameraViewport } from '../../hooks/useCameraViewport';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 
 interface CameraAnglesRecipeProps {
-    config: ImageGenerationConfig;
-    updateConfig: <K extends keyof ImageGenerationConfig>(key: K, value: ImageGenerationConfig[K]) => void;
-    updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
-    onFileSelect: (files: File[]) => void;
-    onGenerate: (prompt?: string) => void;
-    isGenerating: boolean;
-    images: GeneratedImageWithConfig[];
-    onSelectImage: (image: GeneratedImageWithConfig) => void;
+  config: ImageGenerationConfig;
+  updateConfig: <K extends keyof ImageGenerationConfig>(
+    key: K,
+    value: ImageGenerationConfig[K],
+  ) => void;
+  updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
+  onFileSelect: (files: File[]) => void;
+  onGenerate: (prompt?: string) => void;
+  isGenerating: boolean;
+  images: GeneratedImageWithConfig[];
+  onSelectImage: (image: GeneratedImageWithConfig) => void;
 }
 
 // Helper to translate raw math into director's language
 const getDirectorInstructions = (az: number, el: number, dist: number) => {
-    // 1. Camera Horizontal Position
-    let side = az > 0 ? "RIGHT" : "LEFT";
-    let hPos = "FRONT CENTER (0°)";
-    const absAz = Math.abs(az);
+  // 1. Camera Horizontal Position
+  let side = az > 0 ? 'RIGHT' : 'LEFT';
+  let hPos = 'FRONT CENTER (0°)';
+  const absAz = Math.abs(az);
 
-    if (absAz > 10 && absAz <= 45) hPos = `${side} 3/4 ANGLE (Oblique)`;
-    if (absAz > 45 && absAz <= 110) hPos = `${side} PROFILE (Side View)`;
-    if (absAz > 110 && absAz <= 160) hPos = `${side} REAR 3/4 ANGLE (Behind)`;
-    if (absAz > 160) hPos = "DIRECT BACK VIEW (Rear)";
+  if (absAz > 10 && absAz <= 45) hPos = `${side} 3/4 ANGLE (Oblique)`;
+  if (absAz > 45 && absAz <= 110) hPos = `${side} PROFILE (Side View)`;
+  if (absAz > 110 && absAz <= 160) hPos = `${side} REAR 3/4 ANGLE (Behind)`;
+  if (absAz > 160) hPos = 'DIRECT BACK VIEW (Rear)';
 
-    // 2. Camera Vertical Position
-    let vPos = "EYE-LEVEL";
-    if (el > 20) vPos = "HIGH-ANGLE (Looking Down)";
-    if (el > 60) vPos = "OVERHEAD / BIRD'S EYE (Top-Down)";
-    if (el < -20) vPos = "LOW-ANGLE (Looking Up)";
-    if (el < -60) vPos = "WORM'S EYE (Ground View)";
+  // 2. Camera Vertical Position
+  let vPos = 'EYE-LEVEL';
+  if (el > 20) vPos = 'HIGH-ANGLE (Looking Down)';
+  if (el > 60) vPos = "OVERHEAD / BIRD'S EYE (Top-Down)";
+  if (el < -20) vPos = 'LOW-ANGLE (Looking Up)';
+  if (el < -60) vPos = "WORM'S EYE (Ground View)";
 
-    // 3. Framing / Lens
-    let framing = "MEDIUM SHOT";
-    if (dist < 50) framing = "WIDE ANGLE (Environment visible)";
-    if (dist > 130) framing = "CLOSE-UP (Tight face framing)";
-    if (dist > 170) framing = "MACRO (Extreme detail)";
+  // 3. Framing / Lens
+  let framing = 'MEDIUM SHOT';
+  if (dist < 50) framing = 'WIDE ANGLE (Environment visible)';
+  if (dist > 130) framing = 'CLOSE-UP (Tight face framing)';
+  if (dist > 170) framing = 'MACRO (Extreme detail)';
 
-    return { hPos, vPos, framing };
+  return { hPos, vPos, framing };
 };
 
 // Helper to translate geometry into visual guidance for the prompt.
 const getGeometryConstraints = (az: number, el: number) => {
-    const constraints = [];
-    const absAz = Math.abs(az);
+  const constraints = [];
+  const absAz = Math.abs(az);
 
-    // Vertical Logic
-    if (el > 35) constraints.push("Favor a high camera view with visible top planes of the head and shoulders.");
-    else if (el < -35) constraints.push("Favor a low camera view with visible underside planes such as chin and jaw.");
+  // Vertical Logic
+  if (el > 35)
+    constraints.push('Favor a high camera view with visible top planes of the head and shoulders.');
+  else if (el < -35)
+    constraints.push('Favor a low camera view with visible underside planes such as chin and jaw.');
 
-    // Horizontal Logic
-    if (absAz > 150) constraints.push("Back view requested: emphasize the back of the head and body, with minimal face visibility.");
-    else if (absAz > 60 && absAz < 120) constraints.push("Profile view requested: favor a clear side silhouette and one-eye facial structure.");
-    else if (absAz < 20) constraints.push("Front view requested: favor a centered, symmetrical composition.");
+  // Horizontal Logic
+  if (absAz > 150)
+    constraints.push(
+      'Back view requested: emphasize the back of the head and body, with minimal face visibility.',
+    );
+  else if (absAz > 60 && absAz < 120)
+    constraints.push(
+      'Profile view requested: favor a clear side silhouette and one-eye facial structure.',
+    );
+  else if (absAz < 20)
+    constraints.push('Front view requested: favor a centered, symmetrical composition.');
 
-    return constraints.join(" ");
+  return constraints.join(' ');
 };
 
 export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
-    config,
-    updateConfig,
-    onFileSelect,
-    isGenerating,
-    images = [],
-    onSelectImage
+  config,
+  updateConfig,
+  onFileSelect,
+  isGenerating,
+  images = [],
+  onSelectImage,
 }) => {
-    const [isEstimating, setIsEstimating] = useState(false);
-    const fileInputRef = useRef<HTMLInputElement>(null);
+  const [isEstimating, setIsEstimating] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
-    const activeImage = config.attachments[0];
-    const hasReference = !!activeImage;
-    const {
-        mountRef,
-        cameraState: { azimuth, elevation, distance },
-        setAzimuth,
-        setElevation,
-        setDistance,
-    } = useCameraViewport({
-        aspectRatio: config.aspectRatio,
-        referenceImageSrc: activeImage?.dataUrl ?? null,
-    });
+  const activeImage = config.attachments[0];
+  const hasReference = !!activeImage;
+  const {
+    mountRef,
+    cameraState: { azimuth, elevation, distance },
+    setAzimuth,
+    setElevation,
+    setDistance,
+  } = useCameraViewport({
+    aspectRatio: config.aspectRatio,
+    referenceImageSrc: activeImage?.dataUrl ?? null,
+  });
 
-    // Calculate aspect ratio for the box
-    const ratioValue = useMemo(() => {
-        const [w, h] = config.aspectRatio.split(':').map(Number);
-        return w / h;
-    }, [config.aspectRatio]);
+  // Calculate aspect ratio for the box
+  const ratioValue = useMemo(() => {
+    const [w, h] = config.aspectRatio.split(':').map(Number);
+    return w / h;
+  }, [config.aspectRatio]);
 
-    // Find images generated by this recipe specifically
-    const cameraImages = useMemo(() => {
-        return images.filter(img => img.config.recipeContext?.includes("CAMERA VIEW PROMPT"));
-    }, [images]);
-    const roundedAz = Math.round(azimuth);
-    const roundedEl = Math.round(elevation);
-    const roundedDist = Math.round(distance);
-    const { hPos, vPos, framing } = getDirectorInstructions(roundedAz, roundedEl, roundedDist);
-    const geometryConstraints = getGeometryConstraints(roundedAz, roundedEl);
+  // Find images generated by this recipe specifically
+  const cameraImages = useMemo(() => {
+    return images.filter((img) => img.config.recipeContext?.includes('CAMERA VIEW PROMPT'));
+  }, [images]);
+  const roundedAz = Math.round(azimuth);
+  const roundedEl = Math.round(elevation);
+  const roundedDist = Math.round(distance);
+  const { hPos, vPos, framing } = getDirectorInstructions(roundedAz, roundedEl, roundedDist);
+  const geometryConstraints = getGeometryConstraints(roundedAz, roundedEl);
 
-    const recipeParams = useMemo(() => ({
-        azimuth: roundedAz,
-        elevation: roundedEl,
-        distance: roundedDist,
-        hasReference,
-        hPos,
-        vPos,
-        framing,
-        geometryConstraints,
-    }), [framing, geometryConstraints, hPos, hasReference, roundedAz, roundedDist, roundedEl, vPos]);
+  const recipeParams = useMemo(
+    () => ({
+      azimuth: roundedAz,
+      elevation: roundedEl,
+      distance: roundedDist,
+      hasReference,
+      hPos,
+      vPos,
+      framing,
+      geometryConstraints,
+    }),
+    [framing, geometryConstraints, hPos, hasReference, roundedAz, roundedDist, roundedEl, vPos],
+  );
 
-    useRecipeContextRegistration(updateConfig, 'camera', recipeParams);
+  useRecipeContextRegistration(updateConfig, 'camera', recipeParams);
 
-    const handleDrop = (e: React.DragEvent) => {
-        e.preventDefault();
-        const files = Array.from(e.dataTransfer.files).filter((f: File) => f.type.startsWith('image/'));
-        if (files.length > 0) onFileSelect(files);
-    };
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    const files = Array.from(e.dataTransfer.files).filter((f: File) => f.type.startsWith('image/'));
+    if (files.length > 0) onFileSelect(files);
+  };
 
-    const handleEstimateCamera = async () => {
-        if (!activeImage || isEstimating) return;
-        setIsEstimating(true);
+  const handleEstimateCamera = async () => {
+    if (!activeImage || isEstimating) return;
+    setIsEstimating(true);
 
-        try {
-            const image = new Image();
-            image.src = activeImage.dataUrl;
-            await image.decode();
+    try {
+      const image = new Image();
+      image.src = activeImage.dataUrl;
+      await image.decode();
 
-            const ratio = image.naturalWidth / Math.max(1, image.naturalHeight);
-            setAzimuth(ratio > 1.25 ? 25 : ratio < 0.8 ? -15 : 0);
-            setElevation(image.naturalHeight > image.naturalWidth ? 8 : 0);
-            setDistance(ratio > 1.6 ? 120 : ratio < 0.75 ? 85 : 100);
-        } catch (error) {
-            setAzimuth(0);
-            setElevation(0);
-            setDistance(100);
-        } finally {
-            setIsEstimating(false);
-        }
-    };
+      const ratio = image.naturalWidth / Math.max(1, image.naturalHeight);
+      setAzimuth(ratio > 1.25 ? 25 : ratio < 0.8 ? -15 : 0);
+      setElevation(image.naturalHeight > image.naturalWidth ? 8 : 0);
+      setDistance(ratio > 1.6 ? 120 : ratio < 0.75 ? 85 : 100);
+    } catch (error) {
+      setAzimuth(0);
+      setElevation(0);
+      setDistance(100);
+    } finally {
+      setIsEstimating(false);
+    }
+  };
 
-    const BottomDock = useMemo(() => (
-        <div className="w-full flex flex-wrap items-center gap-4">
-            <div className="flex-1 min-w-45 space-y-3">
-                <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                    <div className="flex items-center gap-2"><RotateCw size={12} className="text-cyan-400" /> Azimuth</div>
-                    <span className="text-cyan-400 font-mono">{Math.round(azimuth)}°</span>
-                </div>
-                <input type="range" min="-180" max="180" value={azimuth} onChange={(e) => setAzimuth(parseInt(e.target.value))} className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-cyan-400 hover:accent-cyan-300" />
+  const BottomDock = useMemo(
+    () => (
+      <div className="w-full flex flex-wrap items-center gap-4">
+        <div className="flex-1 min-w-45 space-y-3">
+          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-zinc-500">
+            <div className="flex items-center gap-2">
+              <RotateCw size={12} className="text-cyan-400" /> Azimuth
             </div>
-
-            <div className="flex-1 min-w-45 space-y-3">
-                <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                    <div className="flex items-center gap-2"><ArrowUpFromLine size={12} className="text-pink-400" /> Elevation</div>
-                    <span className="text-pink-400 font-mono">{Math.round(elevation)}°</span>
-                </div>
-                <input type="range" min="-85" max="85" value={elevation} onChange={(e) => setElevation(parseInt(e.target.value))} className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-pink-400 hover:accent-pink-300" />
-            </div>
-
-            <div className="flex-1 min-w-45 space-y-3">
-                <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                    <div className="flex items-center gap-2"><ZoomIn size={12} className="text-yellow-400" /> Zoom</div>
-                    <span className="text-yellow-400 font-mono">{Math.round(distance)}%</span>
-                </div>
-                <input type="range" min="20" max="200" value={distance} onChange={(e) => setDistance(parseInt(e.target.value))} className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-yellow-400 hover:accent-yellow-300" />
-            </div>
+            <span className="text-cyan-400 font-mono">{Math.round(azimuth)}°</span>
+          </div>
+          <input
+            type="range"
+            min="-180"
+            max="180"
+            value={azimuth}
+            onChange={(e) => setAzimuth(parseInt(e.target.value))}
+            className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-cyan-400 hover:accent-cyan-300"
+          />
         </div>
-    ), [azimuth, elevation, distance]);
 
-    return (
-        <RecipeLayout isGenerating={isGenerating} bottomDock={BottomDock} className="flex flex-col p-4 gap-6">
-            <div className="flex flex-col lg:flex-row h-full gap-6">
-                {/* LEFT: THREE.JS VIEWPORT */}
-                <div className="relative flex flex-1 flex-col overflow-hidden rounded-3xl border border-white/5 shadow-2xl min-h-100 lg:min-h-0">
-
-                    {/* Viewport Overlay Controls */}
-                    <div className="absolute top-6 left-6 z-20 flex flex-col gap-2 pointer-events-none">
-                        <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 bg-black/40 backdrop-blur-sm">
-                            <Move3d size={12} className="text-cyan-400" />
-                            <span className="text-[9px] font-black text-zinc-300 uppercase tracking-widest">Orbit & Zoom</span>
-                        </div>
-                        <div className="flex flex-col gap-1 text-[9px] font-mono text-zinc-500 bg-black/40 p-2 rounded-lg border border-white/5">
-                            <span className="text-cyan-400">AZ: {Math.round(azimuth)}°</span>
-                            <span className="text-pink-400">EL: {Math.round(elevation)}°</span>
-                            <span className="text-yellow-400">DIST: {Math.round(distance)}%</span>
-                        </div>
-                    </div>
-
-                    {/* CANVAS CONTAINER */}
-                    <div
-                        ref={mountRef}
-                        className="flex-1 w-full h-full relative cursor-move touch-none group"
-                    >
-                        <div className="pip-viewport absolute top-6 right-6 z-30 h-45 w-60 overflow-hidden rounded-lg border-2 border-white/10 bg-black/50 shadow-2xl backdrop-blur-sm pointer-events-none">
-                            <div className="absolute top-0 left-0 px-2 py-0.5 bg-black/50 text-cyan-400 text-[8px] font-black uppercase tracking-widest">CAM VIEW</div>
-                        </div>
-
-                        {/* Instruction Overlay */}
-                        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-xl bg-black/40 border border-white/5 backdrop-blur-sm text-zinc-400 text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
-                            <span className="flex items-center gap-1.5"><MousePointer2 size={12} className="text-white" /> Drag to Orbit</span>
-                            <span className="w-px h-3 bg-white/20" />
-                            <span className="flex items-center gap-1.5"><ZoomIn size={12} className="text-white" /> Scroll to Zoom</span>
-                        </div>
-                    </div>
-                </div>
-
-                {/* RIGHT: SIDEBAR (Reference & Gallery) */}
-                <div className="w-full lg:w-80 flex min-h-0 shrink-0 flex-col gap-4">
-                    {/* 1. Reference Image Panel */}
-                    <div
-                        className="group relative w-full shrink-0 overflow-hidden rounded-xl border border-white/5 bg-zinc-950 shadow-2xl"
-                        style={{ aspectRatio: ratioValue }}
-                    >
-                        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
-
-                        <div className="absolute top-0 left-0 right-0 h-10 bg-black/60 z-20 flex items-center px-4 justify-between border-b border-white/5">
-                            <span className="text-[9px] font-black text-white uppercase tracking-widest flex items-center gap-2">
-                                <Camera size={12} className="text-cyan-500" /> Subject
-                            </span>
-                            {hasReference && (
-                                <div className="flex items-center gap-2">
-                                    <button
-                                        onClick={handleEstimateCamera}
-                                        disabled={isEstimating}
-                                        className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border border-white/10 transition-all ${isEstimating ? 'bg-white/10' : 'bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 hover:border-cyan-500/30'}`}
-                                        title="Estimate initial view from image shape"
-                                    >
-                                        {isEstimating ? <Loader2 size={10} className="animate-spin" /> : <SlidersHorizontal size={10} />}
-                                        <span className="text-[8px] font-bold uppercase">Fit</span>
-                                    </button>
-                                    <button onClick={() => updateConfig('attachments', [])} className="text-zinc-500 hover:text-red-500 transition-colors"><X size={12} /></button>
-                                </div>
-                            )}
-                        </div>
-
-                        {hasReference ? (
-                            <div className="w-full h-full flex items-center justify-center p-6 bg-black/50">
-                                <img src={activeImage.dataUrl} className="max-w-full max-h-full object-contain rounded-lg shadow-2xl opacity-90" alt="ref" />
-                            </div>
-                        ) : (
-                            <div
-                                onClick={() => fileInputRef.current?.click()}
-                                onDragOver={(e) => e.preventDefault()}
-                                onDrop={handleDrop}
-                                className="relative z-10 flex h-full w-full cursor-pointer flex-col items-center justify-center p-6 transition-colors hover:bg-white/2"
-                            >
-                                <input type="file" ref={fileInputRef} onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))} className="hidden" accept="image/*" />
-                                <div className="w-16 h-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-4 shadow-xl group-hover:scale-110 group-hover:border-cyan-500/50 transition-all">
-                                    <Upload size={20} className="text-zinc-500 group-hover:text-white transition-colors" />
-                                </div>
-                                <h4 className="text-xs font-black text-zinc-400 uppercase tracking-widest text-center">Add Reference</h4>
-                                <p className="text-[8px] text-zinc-600 font-bold uppercase mt-1 text-center">Optional: upload a reference</p>
-                            </div>
-                        )}
-                    </div>
-
-                    {/* 2. Output Stats */}
-                    <div className="shrink-0 rounded-2xl border border-white/5 bg-zinc-900/40 p-5 shadow-xl">
-                        <div className="flex items-center gap-3 mb-3">
-                            <div className="p-2 bg-cyan-500/10 rounded-lg"><Eye size={14} className="text-cyan-400" /></div>
-                            <div>
-                                <h3 className="text-[10px] font-black text-white uppercase tracking-widest">Virtual Output</h3>
-                                <p className="text-[8px] text-zinc-500 font-bold uppercase">Prompt Translation</p>
-                            </div>
-                        </div>
-                        <div className="p-3 bg-black/40 rounded-xl border border-white/5 space-y-2">
-                            <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
-                                <span className="text-cyan-500">POS:</span> {hPos}
-                            </p>
-                            <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
-                                <span className="text-pink-500">ANG:</span> {vPos}
-                            </p>
-                            <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
-                                <span className="text-yellow-500">LENS:</span> {framing}
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* 3. Workspace Gallery (Vertical Filmstrip) */}
-                    {cameraImages.length > 0 && (
-                        <div className="flex-1 min-h-0 bg-black/40 border border-white/5 rounded-2xl p-2 flex flex-col gap-2 overflow-hidden shadow-inner">
-                            <div className="flex shrink-0 items-center justify-between px-2">
-                                <span className="text-[9px] font-black text-zinc-500 uppercase tracking-widest">Workspace Gallery</span>
-                                <span className="text-[9px] font-bold text-zinc-600 uppercase">{cameraImages.length} Renders</span>
-                            </div>
-
-                            <div className="flex-1 overflow-y-auto custom-scrollbar grid grid-cols-2 gap-2 p-1 content-start">
-                                {cameraImages.map((img) => (
-                                    <button
-                                        key={img.id}
-                                        onClick={() => onSelectImage(img)}
-                                        className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-all group shadow-sm hover:shadow-lg"
-                                    >
-                                        <img src={img.thumbnail || img.src} className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loading="lazy" />
-                                        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                                            <Maximize2 size={16} className="text-white drop-shadow-md" />
-                                        </div>
-                                        {img.isFavorite && <div className="absolute top-1 right-1 w-2 h-2 bg-cyan-500 rounded-full shadow-lg" />}
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-                </div>
+        <div className="flex-1 min-w-45 space-y-3">
+          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-zinc-500">
+            <div className="flex items-center gap-2">
+              <ArrowUpFromLine size={12} className="text-pink-400" /> Elevation
             </div>
-        </RecipeLayout>
-    );
+            <span className="text-pink-400 font-mono">{Math.round(elevation)}°</span>
+          </div>
+          <input
+            type="range"
+            min="-85"
+            max="85"
+            value={elevation}
+            onChange={(e) => setElevation(parseInt(e.target.value))}
+            className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-pink-400 hover:accent-pink-300"
+          />
+        </div>
+
+        <div className="flex-1 min-w-45 space-y-3">
+          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-zinc-500">
+            <div className="flex items-center gap-2">
+              <ZoomIn size={12} className="text-yellow-400" /> Zoom
+            </div>
+            <span className="text-yellow-400 font-mono">{Math.round(distance)}%</span>
+          </div>
+          <input
+            type="range"
+            min="20"
+            max="200"
+            value={distance}
+            onChange={(e) => setDistance(parseInt(e.target.value))}
+            className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-yellow-400 hover:accent-yellow-300"
+          />
+        </div>
+      </div>
+    ),
+    [azimuth, elevation, distance],
+  );
+
+  return (
+    <RecipeLayout
+      isGenerating={isGenerating}
+      bottomDock={BottomDock}
+      className="flex flex-col p-4 gap-6"
+    >
+      <div className="flex flex-col lg:flex-row h-full gap-6">
+        {/* LEFT: THREE.JS VIEWPORT */}
+        <div className="relative flex flex-1 flex-col overflow-hidden rounded-3xl border border-white/5 shadow-2xl min-h-100 lg:min-h-0">
+          {/* Viewport Overlay Controls */}
+          <div className="absolute top-6 left-6 z-20 flex flex-col gap-2 pointer-events-none">
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 bg-black/40 backdrop-blur-sm">
+              <Move3d size={12} className="text-cyan-400" />
+              <span className="text-[9px] font-black text-zinc-300 uppercase tracking-widest">
+                Orbit & Zoom
+              </span>
+            </div>
+            <div className="flex flex-col gap-1 text-[9px] font-mono text-zinc-500 bg-black/40 p-2 rounded-lg border border-white/5">
+              <span className="text-cyan-400">AZ: {Math.round(azimuth)}°</span>
+              <span className="text-pink-400">EL: {Math.round(elevation)}°</span>
+              <span className="text-yellow-400">DIST: {Math.round(distance)}%</span>
+            </div>
+          </div>
+
+          {/* CANVAS CONTAINER */}
+          <div
+            ref={mountRef}
+            className="flex-1 w-full h-full relative cursor-move touch-none group"
+          >
+            <div className="pip-viewport absolute top-6 right-6 z-30 h-45 w-60 overflow-hidden rounded-lg border-2 border-white/10 bg-black/50 shadow-2xl backdrop-blur-sm pointer-events-none">
+              <div className="absolute top-0 left-0 px-2 py-0.5 bg-black/50 text-cyan-400 text-[8px] font-black uppercase tracking-widest">
+                CAM VIEW
+              </div>
+            </div>
+
+            {/* Instruction Overlay */}
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-xl bg-black/40 border border-white/5 backdrop-blur-sm text-zinc-400 text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
+              <span className="flex items-center gap-1.5">
+                <MousePointer2 size={12} className="text-white" /> Drag to Orbit
+              </span>
+              <span className="w-px h-3 bg-white/20" />
+              <span className="flex items-center gap-1.5">
+                <ZoomIn size={12} className="text-white" /> Scroll to Zoom
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* RIGHT: SIDEBAR (Reference & Gallery) */}
+        <div className="w-full lg:w-80 flex min-h-0 shrink-0 flex-col gap-4">
+          {/* 1. Reference Image Panel */}
+          <div
+            className="group relative w-full shrink-0 overflow-hidden rounded-xl border border-white/5 bg-zinc-950 shadow-2xl"
+            style={{ aspectRatio: ratioValue }}
+          >
+            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
+
+            <div className="absolute top-0 left-0 right-0 h-10 bg-black/60 z-20 flex items-center px-4 justify-between border-b border-white/5">
+              <span className="text-[9px] font-black text-white uppercase tracking-widest flex items-center gap-2">
+                <Camera size={12} className="text-cyan-500" /> Subject
+              </span>
+              {hasReference && (
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={handleEstimateCamera}
+                    disabled={isEstimating}
+                    className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border border-white/10 transition-all ${isEstimating ? 'bg-white/10' : 'bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 hover:border-cyan-500/30'}`}
+                    title="Estimate initial view from image shape"
+                  >
+                    {isEstimating ? (
+                      <Loader2 size={10} className="animate-spin" />
+                    ) : (
+                      <SlidersHorizontal size={10} />
+                    )}
+                    <span className="text-[8px] font-bold uppercase">Fit</span>
+                  </button>
+                  <button
+                    onClick={() => updateConfig('attachments', [])}
+                    className="text-zinc-500 hover:text-red-500 transition-colors"
+                  >
+                    <X size={12} />
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {hasReference ? (
+              <div className="w-full h-full flex items-center justify-center p-6 bg-black/50">
+                <img
+                  src={activeImage.dataUrl}
+                  className="max-w-full max-h-full object-contain rounded-lg shadow-2xl opacity-90"
+                  alt="ref"
+                />
+              </div>
+            ) : (
+              <div
+                onClick={() => fileInputRef.current?.click()}
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={handleDrop}
+                className="relative z-10 flex h-full w-full cursor-pointer flex-col items-center justify-center p-6 transition-colors hover:bg-white/2"
+              >
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
+                  className="hidden"
+                  accept="image/*"
+                />
+                <div className="w-16 h-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-4 shadow-xl group-hover:scale-110 group-hover:border-cyan-500/50 transition-all">
+                  <Upload
+                    size={20}
+                    className="text-zinc-500 group-hover:text-white transition-colors"
+                  />
+                </div>
+                <h4 className="text-xs font-black text-zinc-400 uppercase tracking-widest text-center">
+                  Add Reference
+                </h4>
+                <p className="text-[8px] text-zinc-600 font-bold uppercase mt-1 text-center">
+                  Optional: upload a reference
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* 2. Output Stats */}
+          <div className="shrink-0 rounded-2xl border border-white/5 bg-zinc-900/40 p-5 shadow-xl">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="p-2 bg-cyan-500/10 rounded-lg">
+                <Eye size={14} className="text-cyan-400" />
+              </div>
+              <div>
+                <h3 className="text-[10px] font-black text-white uppercase tracking-widest">
+                  Virtual Output
+                </h3>
+                <p className="text-[8px] text-zinc-500 font-bold uppercase">Prompt Translation</p>
+              </div>
+            </div>
+            <div className="p-3 bg-black/40 rounded-xl border border-white/5 space-y-2">
+              <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
+                <span className="text-cyan-500">POS:</span> {hPos}
+              </p>
+              <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
+                <span className="text-pink-500">ANG:</span> {vPos}
+              </p>
+              <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
+                <span className="text-yellow-500">LENS:</span> {framing}
+              </p>
+            </div>
+          </div>
+
+          {/* 3. Workspace Gallery (Vertical Filmstrip) */}
+          {cameraImages.length > 0 && (
+            <div className="flex-1 min-h-0 bg-black/40 border border-white/5 rounded-2xl p-2 flex flex-col gap-2 overflow-hidden shadow-inner">
+              <div className="flex shrink-0 items-center justify-between px-2">
+                <span className="text-[9px] font-black text-zinc-500 uppercase tracking-widest">
+                  Workspace Gallery
+                </span>
+                <span className="text-[9px] font-bold text-zinc-600 uppercase">
+                  {cameraImages.length} Renders
+                </span>
+              </div>
+
+              <div className="flex-1 overflow-y-auto custom-scrollbar grid grid-cols-2 gap-2 p-1 content-start">
+                {cameraImages.map((img) => (
+                  <button
+                    key={img.id}
+                    onClick={() => onSelectImage(img)}
+                    className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-all group shadow-sm hover:shadow-lg"
+                  >
+                    <img
+                      src={img.thumbnail || img.src}
+                      className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                      <Maximize2 size={16} className="text-white drop-shadow-md" />
+                    </div>
+                    {img.isFavorite && (
+                      <div className="absolute top-1 right-1 w-2 h-2 bg-cyan-500 rounded-full shadow-lg" />
+                    )}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </RecipeLayout>
+  );
 };

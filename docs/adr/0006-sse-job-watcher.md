@@ -14,6 +14,7 @@ El frontend usa dos loops de polling separados para monitorear el backend, a pes
 Ambos loops son **shallow modules**: su interfaz (un `setInterval` + `fetch`) es casi idéntica a su implementación. No esconden complejidad — la empujan al caller.
 
 El endpoint SSE (`apps/local-server/src/index.ts`, líneas 131-153) emite eventos tipados:
+
 - `job.created`, `job.updated` con payload `Job`
 - `asset.created` con payload `Asset`
 - `log.created` con payload `SystemLog`
@@ -28,14 +29,14 @@ Crear un módulo `services/studioEventSource.ts` que encapsule la conexión SSE 
 
 ```ts
 interface StudioEventStream {
-  onJobUpdate(jobIdOrWildcard: string | '*', callback: (job: Job) => void): () => void
-  onAssetAdded(callback: (asset: Asset) => void): () => void
-  onLogAdded(callback: (log: SystemLog) => void): () => void
-  onConnectionChange(callback: (connected: boolean) => void): () => void
-  close(): void
+  onJobUpdate(jobIdOrWildcard: string | '*', callback: (job: Job) => void): () => void;
+  onAssetAdded(callback: (asset: Asset) => void): () => void;
+  onLogAdded(callback: (log: SystemLog) => void): () => void;
+  onConnectionChange(callback: (connected: boolean) => void): () => void;
+  close(): void;
 }
 
-function createStudioEventStream(apiBase?: string): StudioEventStream
+function createStudioEventStream(apiBase?: string): StudioEventStream;
 ```
 
 Cada `on*` retorna una función de unsubscribe. Múltiples suscriptores por tipo de evento. Reconexión automática con backoff exponencial (1s, 2s, 4s, 8s, cap 30s). `onConnectionChange` notifica cuando la conexión cae/se recupera.
@@ -46,8 +47,8 @@ Cada `on*` retorna una función de unsubscribe. Múltiples suscriptores por tipo
 function watchJob(
   stream: StudioEventStream,
   jobId: string,
-  timeoutMs?: number  // default 240000 (4 min)
-): Promise<Job>
+  timeoutMs?: number, // default 240000 (4 min)
+): Promise<Job>;
 ```
 
 Resuelve cuando el job llega a un estado terminal (`completed`, `failed`, `cancelled`, `needs_review`). Rechaza con `JobWatchTimeoutError` si se excede el timeout. Usa `onJobUpdate` internamente — comparte la misma conexión SSE.
@@ -69,13 +70,18 @@ Resuelve cuando el job llega a un estado terminal (`completed`, `failed`, `cance
 
 - **`hooks/useLocalStudioSync.ts`** — Reemplazar `setInterval` + `fetch` con suscripciones a `StudioEventStream`:
   ```ts
-  const stream = useRef(createStudioEventStream())
+  const stream = useRef(createStudioEventStream());
   useEffect(() => {
-    const unsub1 = stream.current.onAssetAdded(handleNewAsset)
-    const unsub2 = stream.current.onJobUpdate('*', handleJobUpdate)
-    const unsub3 = stream.current.onLogAdded(handleNewLog)
-    return () => { unsub1(); unsub2(); unsub3(); stream.current.close() }
-  }, [])
+    const unsub1 = stream.current.onAssetAdded(handleNewAsset);
+    const unsub2 = stream.current.onJobUpdate('*', handleJobUpdate);
+    const unsub3 = stream.current.onLogAdded(handleNewLog);
+    return () => {
+      unsub1();
+      unsub2();
+      unsub3();
+      stream.current.close();
+    };
+  }, []);
   ```
   El hook pasa de ~144 líneas a ~60 líneas.
 
@@ -108,32 +114,29 @@ Resuelve cuando el job llega a un estado terminal (`completed`, `failed`, `cance
 
 ```ts
 // watchJob resuelve cuando el job completa
-const stream = createMockStream()
-const jobPromise = watchJob(stream, 'job-1', 5000)
-stream.emit('job.updated', { id: 'job-1', status: 'running' })
-stream.emit('job.updated', { id: 'job-1', status: 'completed' })
-const job = await jobPromise
-assert(job.status === 'completed')
+const stream = createMockStream();
+const jobPromise = watchJob(stream, 'job-1', 5000);
+stream.emit('job.updated', { id: 'job-1', status: 'running' });
+stream.emit('job.updated', { id: 'job-1', status: 'completed' });
+const job = await jobPromise;
+assert(job.status === 'completed');
 
 // watchJob rechaza por timeout
-const stream = createMockStream()
-await assert.rejects(
-  watchJob(stream, 'job-1', 100),
-  { name: 'JobWatchTimeoutError' }
-)
+const stream = createMockStream();
+await assert.rejects(watchJob(stream, 'job-1', 100), { name: 'JobWatchTimeoutError' });
 
 // watchJob resuelve inmediatamente si el job ya está completo (fetch inicial)
-mockFetchOnce('/api/jobs', [{ id: 'job-1', status: 'completed' }])
-const stream = createMockStream()
-const job = await watchJob(stream, 'job-1', 5000)
-assert(job.status === 'completed')
+mockFetchOnce('/api/jobs', [{ id: 'job-1', status: 'completed' }]);
+const stream = createMockStream();
+const job = await watchJob(stream, 'job-1', 5000);
+assert(job.status === 'completed');
 
 // onAssetAdded notifica nuevo asset
-const stream = createMockStream()
-const assets: Asset[] = []
-stream.onAssetAdded(a => assets.push(a))
-stream.emit('asset.created', { id: 'a1', jobId: 'j1', publicUrl: '/library/assets/a1.png' })
-assert(assets.length === 1)
+const stream = createMockStream();
+const assets: Asset[] = [];
+stream.onAssetAdded((a) => assets.push(a));
+stream.emit('asset.created', { id: 'a1', jobId: 'j1', publicUrl: '/library/assets/a1.png' });
+assert(assets.length === 1);
 ```
 
 ## Riesgos

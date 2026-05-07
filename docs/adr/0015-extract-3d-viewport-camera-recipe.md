@@ -9,13 +9,16 @@ Propuesto.
 `CameraAnglesRecipe.tsx` tiene **904 líneas**, de las cuales aproximadamente **500 líneas** (55%) son código imperativo de THREE.js para un viewport 3D interactivo. La receta mezcla dos concerns fundamentalmente distintos:
 
 ### Concern 1: Configuración de receta (~400 líneas)
+
 - Selectores de shot type (9 tipos de plano)
 - Construcción de prompt con datos de cámara 3D
 - Galería de imágenes generadas con ángulos de cámara
 - Interfaz de usuario de la receta (controles, previews)
 
 ### Concern 2: Viewport 3D con THREE.js (~500 líneas)
+
 Implementado enteramente en un `useEffect` de ~500 líneas:
+
 - Construcción de escena: `Scene`, `Camera`, `Renderer`, luces, materiales
 - Geometría procedural: polar grid (círculos concéntricos + líneas radiales), modelo de cámara 3D (body + lens), frustum wireframe, ray desde la cámara al target, handles de posición
 - Texturas procedurales: grid texture (canvas 2D generado en runtime), gradient textures para fondo
@@ -29,6 +32,7 @@ Si otra receta necesita un viewport 3D (ej. para previsualizar iluminación, pos
 ### Deletion test
 
 Si extraemos el viewport 3D a un módulo reutilizable:
+
 - La complejidad de THREE.js (scene setup, orbit controls, animation loop, cleanup) se concentra en un hook o clase.
 - `CameraAnglesRecipe` se reduce a ~400 líneas de pura lógica de receta.
 - Una futura receta que necesite 3D importa el módulo, no copia 500 líneas.
@@ -42,44 +46,45 @@ Interfaz:
 ```ts
 interface CameraViewportConfig {
   /** Distancia inicial de la cámara al target */
-  initialDistance?: number
+  initialDistance?: number;
   /** Azimuth inicial en radianes */
-  initialAzimuth?: number
+  initialAzimuth?: number;
   /** Elevación inicial en radianes */
-  initialElevation?: number
+  initialElevation?: number;
   /** Límites de distancia [min, max] */
-  distanceRange?: [number, number]
+  distanceRange?: [number, number];
   /** Límites de elevación [min, max] en radianes */
-  elevationRange?: [number, number]
+  elevationRange?: [number, number];
   /** Escena personalizada (geometrías, luces) — se mergea con la escena base */
-  customScene?: (scene: THREE.Scene) => void | (() => void)  // cleanup opcional
+  customScene?: (scene: THREE.Scene) => void | (() => void); // cleanup opcional
   /** Callback cuando cambia el estado de cámara */
-  onCameraChange?: (state: CameraState) => void
+  onCameraChange?: (state: CameraState) => void;
 }
 
 interface CameraState {
-  azimuth: number
-  elevation: number
-  distance: number
+  azimuth: number;
+  elevation: number;
+  distance: number;
   /** Posición de la cámara en coordenadas mundiales */
-  cameraPosition: { x: number; y: number; z: number }
+  cameraPosition: { x: number; y: number; z: number };
   /** Punto al que mira la cámara */
-  target: { x: number; y: number; z: number }
+  target: { x: number; y: number; z: number };
 }
 
 function useCameraViewport(
   containerRef: RefObject<HTMLDivElement>,
-  config?: CameraViewportConfig
+  config?: CameraViewportConfig,
 ): {
-  cameraState: CameraState
+  cameraState: CameraState;
   /** Re-export para casos donde el caller necesita acceso directo a THREE */
-  scene: THREE.Scene | null
+  scene: THREE.Scene | null;
   /** Forzar resize (ej. después de cambiar el tamaño del contenedor programáticamente) */
-  resize: () => void
-}
+  resize: () => void;
+};
 ```
 
 El hook maneja internamente:
+
 - Creación/destrucción de `Scene`, `PerspectiveCamera`, `WebGLRenderer`
 - Orbit controls (mouse drag + wheel) con límites configurables
 - Animation loop con `requestAnimationFrame`
@@ -119,12 +124,12 @@ function CameraAnglesRecipe({ config, onGenerate, ... }) {
 
 ### Archivos afectados
 
-| Archivo | Cambio |
-|---------|--------|
-| `hooks/useCameraViewport.ts` | Nuevo — hook de viewport 3D con THREE.js |
-| `components/recipes/CameraAnglesRecipe.tsx` | Reducción de 904 → ~450 líneas |
+| Archivo                                          | Cambio                                                       |
+| ------------------------------------------------ | ------------------------------------------------------------ |
+| `hooks/useCameraViewport.ts`                     | Nuevo — hook de viewport 3D con THREE.js                     |
+| `components/recipes/CameraAnglesRecipe.tsx`      | Reducción de 904 → ~450 líneas                               |
 | `components/recipes/cameraAngles/cameraModel.ts` | Nuevo — geometría del modelo de cámara (extraído del recipe) |
-| `components/recipes/cameraAngles/sceneSetup.ts` | Nuevo — `customScene` callback (polar grid + cámara model) |
+| `components/recipes/cameraAngles/sceneSetup.ts`  | Nuevo — `customScene` callback (polar grid + cámara model)   |
 
 ## Consecuencias
 

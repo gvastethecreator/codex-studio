@@ -41,7 +41,11 @@ export function initStudio() {
     : `Studio initialized. Default project: ${defaultProject.id}. Codex CLI was not found in PATH.`;
 
   log(codexVersion ? 'info' : 'warn', 'init', message);
-  writeFileSync(resolveLibraryPath('logs', 'init.log'), `${new Date().toISOString()} ${message}\n`, { flag: 'a' });
+  writeFileSync(
+    resolveLibraryPath('logs', 'init.log'),
+    `${new Date().toISOString()} ${message}\n`,
+    { flag: 'a' },
+  );
 
   return {
     settings: getSettings(),

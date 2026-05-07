@@ -2,10 +2,11 @@
 logs
 *.log
 .tmp
+.tmp-*
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
-tmp/*.tsbuildinfo
+*.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -15,6 +16,12 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.vite
+coverage
+.env
+.env.local
+.env.*
+!.env.example
 *.local
 apps/studio-ui/dist
 components/recipes/styles/defaults/.locks/

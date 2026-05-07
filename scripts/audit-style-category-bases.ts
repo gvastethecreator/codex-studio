@@ -1,6 +1,6 @@
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
-import path from "node:path";
-import yaml from "js-yaml";
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import yaml from 'js-yaml';
 import {
   RECIPE_ASSET_EXTENSION,
   categoryBasesDir,
@@ -9,7 +9,7 @@ import {
   rootDir,
   sanitizeCategory,
   styleCategoryImageKey,
-} from "./style-default-utils";
+} from './style-default-utils';
 
 interface BaseRow {
   packId: string;
@@ -21,14 +21,14 @@ interface BaseRow {
   presetNames: string[];
 }
 
-const outDir = path.join(rootDir, "docs", "active");
-const outPath = path.join(outDir, "style-category-bases-audit.md");
+const outDir = path.join(rootDir, 'docs', 'active');
+const outPath = path.join(outDir, 'style-category-bases-audit.md');
 
-const packFiles = (await readdir(packsDir)).filter((file) => file.endsWith(".yaml")).sort();
+const packFiles = (await readdir(packsDir)).filter((file) => file.endsWith('.yaml')).sort();
 const rows: BaseRow[] = [];
 
 for (const file of packFiles) {
-  const packs = yaml.load(await readFile(path.join(packsDir, file), "utf8")) as any[];
+  const packs = yaml.load(await readFile(path.join(packsDir, file), 'utf8')) as any[];
   for (const pack of packs) {
     const groups = new Map<string, string[]>();
     for (const preset of pack.presets) {
@@ -58,31 +58,33 @@ const done = rows.filter((row) => row.exists);
 const missing = rows.filter((row) => !row.exists);
 
 const lines = [
-  "# Style Category Bases Audit",
-  "",
+  '# Style Category Bases Audit',
+  '',
   `Generated bases: ${done.length}/${rows.length}`,
   `Missing bases: ${missing.length}/${rows.length}`,
-  "",
-  "## Generated",
-  "",
+  '',
+  '## Generated',
+  '',
   ...done.flatMap((row) => [
     `### ${row.packName} / ${row.category}`,
-    "",
+    '',
     `Key: \`${row.key}\``,
-    "",
-    `![${row.key}](../../${row.file.replaceAll("\\", "/")})`,
-    "",
-    `Representative presets: ${row.presetNames.slice(0, 12).join(", ")}`,
-    "",
-    "Review: PENDING",
-    "",
+    '',
+    `![${row.key}](../../${row.file.replaceAll('\\', '/')})`,
+    '',
+    `Representative presets: ${row.presetNames.slice(0, 12).join(', ')}`,
+    '',
+    'Review: PENDING',
+    '',
   ]),
-  "## Missing",
-  "",
-  ...missing.map((row) => `- ${row.packName} / ${row.category} -> \`${row.key}${RECIPE_ASSET_EXTENSION}\``),
-  "",
+  '## Missing',
+  '',
+  ...missing.map(
+    (row) => `- ${row.packName} / ${row.category} -> \`${row.key}${RECIPE_ASSET_EXTENSION}\``,
+  ),
+  '',
 ];
 
 await mkdir(outDir, { recursive: true });
-await writeFile(outPath, lines.join("\n"), "utf8");
+await writeFile(outPath, lines.join('\n'), 'utf8');
 console.log(outPath);

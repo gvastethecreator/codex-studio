@@ -30,10 +30,11 @@ export class ReferenceProcessingError extends Error {
 
 function safeReferenceName(name: string, existing: Set<string>, index: number) {
   const parsed = path.parse(name || `reference-${index + 1}.png`);
-  const base = (parsed.name || `reference-${index + 1}`)
-    .replace(/[^a-z0-9._-]+/gi, '-')
-    .replace(/^\.+|\.+$/g, '')
-    .slice(0, 80) || `reference-${index + 1}`;
+  const base =
+    (parsed.name || `reference-${index + 1}`)
+      .replace(/[^a-z0-9._-]+/gi, '-')
+      .replace(/^\.+|\.+$/g, '')
+      .slice(0, 80) || `reference-${index + 1}`;
   const ext = parsed.ext && /^\.[a-z0-9]+$/i.test(parsed.ext) ? parsed.ext.toLowerCase() : '.png';
   let candidate = `${base}${ext}`;
   let suffix = 2;
@@ -46,9 +47,14 @@ function safeReferenceName(name: string, existing: Set<string>, index: number) {
 }
 
 function decodeDataUrl(reference: RawReference) {
-  const match = /^data:(image\/(?:png|jpe?g|webp|gif|svg\+xml));base64,([A-Za-z0-9+/=\s]+)$/i.exec(reference.dataUrl);
+  const match = /^data:(image\/(?:png|jpe?g|webp|gif|svg\+xml));base64,([A-Za-z0-9+/=\s]+)$/i.exec(
+    reference.dataUrl,
+  );
   if (!match) {
-    throw new ReferenceProcessingError(reference.name, 'expected image data URL with base64 payload');
+    throw new ReferenceProcessingError(
+      reference.name,
+      'expected image data URL with base64 payload',
+    );
   }
   try {
     const normalized = match[2].replace(/\s+/g, '');
@@ -65,7 +71,10 @@ function decodeDataUrl(reference: RawReference) {
 function buildPromptWithReferences(prompt: string, references: ProcessedReference[]) {
   if (references.length === 0) return prompt;
   const referenceBlock = references
-    .map((reference, index) => `${index + 1}. Reference image: ${reference.path} (${reference.name}, strength ${reference.strength.toFixed(2)})`)
+    .map(
+      (reference, index) =>
+        `${index + 1}. Reference image: ${reference.path} (${reference.name}, strength ${reference.strength.toFixed(2)})`,
+    )
     .join('\n');
   return `${prompt}
 

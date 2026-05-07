@@ -1,43 +1,41 @@
-import { copyFile, mkdir, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
-import path from "node:path";
-import sharp from "sharp";
+import { copyFile, mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import sharp from 'sharp';
 
 const rootDir = process.cwd();
 const WEBP_OPTIONS = { quality: 92, effort: 6 } as const;
 
 const recipeAssetMappings = [
   {
-    sourceDir: path.join(rootDir, "components", "recipes", "defaults"),
-    targetDir: path.join(rootDir, "assets", "recipes", "cards"),
+    sourceDir: path.join(rootDir, 'components', 'recipes', 'defaults'),
+    targetDir: path.join(rootDir, 'assets', 'recipes', 'cards'),
   },
   {
-    sourceDir: path.join(rootDir, "components", "recipes", "styles", "category-bases"),
-    targetDir: path.join(rootDir, "assets", "recipes", "styles", "category-bases"),
+    sourceDir: path.join(rootDir, 'components', 'recipes', 'styles', 'category-bases'),
+    targetDir: path.join(rootDir, 'assets', 'recipes', 'styles', 'category-bases'),
   },
   {
-    sourceDir: path.join(rootDir, "components", "recipes", "styles", "defaults"),
-    targetDir: path.join(rootDir, "assets", "recipes", "styles", "defaults"),
+    sourceDir: path.join(rootDir, 'components', 'recipes', 'styles', 'defaults'),
+    targetDir: path.join(rootDir, 'assets', 'recipes', 'styles', 'defaults'),
   },
   {
-    sourceDir: path.join(rootDir, "components", "recipes", "styles", "previews"),
-    targetDir: path.join(rootDir, "assets", "recipes", "styles", "previews"),
+    sourceDir: path.join(rootDir, 'components', 'recipes', 'styles', 'previews'),
+    targetDir: path.join(rootDir, 'assets', 'recipes', 'styles', 'previews'),
   },
 ];
 
 const inPlaceImageDirs = [
-  path.join(rootDir, "output", "imagegen"),
-  path.join(rootDir, "output", "style-audit"),
+  path.join(rootDir, 'output', 'imagegen'),
+  path.join(rootDir, 'output', 'style-audit'),
 ];
 
-const textFilesToRewrite = [
-  path.join(rootDir, "docs", "active", "style-category-bases-audit.md"),
-];
+const textFilesToRewrite = [path.join(rootDir, 'docs', 'active', 'style-category-bases-audit.md')];
 
 const pathReplacements = [
-  ["components/recipes/defaults/", "assets/recipes/cards/"],
-  ["components/recipes/styles/category-bases/", "assets/recipes/styles/category-bases/"],
-  ["components/recipes/styles/defaults/", "assets/recipes/styles/defaults/"],
-  ["components/recipes/styles/previews/", "assets/recipes/styles/previews/"],
+  ['components/recipes/defaults/', 'assets/recipes/cards/'],
+  ['components/recipes/styles/category-bases/', 'assets/recipes/styles/category-bases/'],
+  ['components/recipes/styles/defaults/', 'assets/recipes/styles/defaults/'],
+  ['components/recipes/styles/previews/', 'assets/recipes/styles/previews/'],
 ] as const;
 
 async function exists(targetPath: string) {
@@ -102,18 +100,18 @@ function rewriteAssetText(content: string) {
   for (const [from, to] of pathReplacements) {
     next = next.replaceAll(from, to);
   }
-  next = next.replace(/\.png\b/g, ".webp");
+  next = next.replace(/\.png\b/g, '.webp');
   return next;
 }
 
 async function rewriteTextFile(filePath: string) {
   if (!(await exists(filePath))) return false;
 
-  const original = await readFile(filePath, "utf8");
+  const original = await readFile(filePath, 'utf8');
   const rewritten = rewriteAssetText(original);
   if (rewritten === original) return false;
 
-  await writeFile(filePath, rewritten, "utf8");
+  await writeFile(filePath, rewritten, 'utf8');
   return true;
 }
 

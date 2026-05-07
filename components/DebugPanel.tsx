@@ -31,11 +31,18 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({ isOpen, onClose, logs, a
         <div className="p-4">
           <h3 className="text-lg font-semibold text-zinc-300 mb-2">Recent Events</h3>
           <div className="bg-zinc-900 rounded-md p-2 space-y-2 max-h-80 overflow-y-auto custom-scrollbar">
-            {logs.length > 0 ? [...logs].reverse().map((log) => (
-              <div key={log.id} className="text-xs text-zinc-400 font-mono pb-1">
-                <span className="text-cyan-400">{new Date(log.timestamp).toLocaleTimeString()}</span>: {log.message}
-              </div>
-            )) : <p className="text-xs text-zinc-500">No events recorded yet.</p>}
+            {logs.length > 0 ? (
+              [...logs].reverse().map((log) => (
+                <div key={log.id} className="text-xs text-zinc-400 font-mono pb-1">
+                  <span className="text-cyan-400">
+                    {new Date(log.timestamp).toLocaleTimeString()}
+                  </span>
+                  : {log.message}
+                </div>
+              ))
+            ) : (
+              <p className="text-xs text-zinc-500">No events recorded yet.</p>
+            )}
           </div>
         </div>
         {hasAppState && (

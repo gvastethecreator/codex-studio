@@ -8,15 +8,15 @@ Propuesto.
 
 Cada uno de los 7 módulos de receta construye su propio `recipeContext` string de forma independiente con formatos ad-hoc:
 
-| Receta | Formato de recipeContext | Líneas dedicadas |
-|--------|-------------------------|-------------------|
-| `StylesRecipe` | `*** STYLE TRANSFER PROTOCOL ***` (directivas en texto) | ~30 |
-| `RemasterRecipe` | Prompt en lenguaje natural con parámetros (estilo, lighting, cámara) | ~20 |
-| `SpritesheetRecipe` | JSON-schema `{ task_id, layout_constraints, visual_style, ... }` serializado a string | ~25 |
-| `CinematicRecipe` | `--- STORYBOARD CONTACT SHEET ---` (directivas en texto) | ~25 |
-| `CharacterSheetRecipe` | JSON-schema `{ task_id, sheet_type, design_constraints, ... }` | ~20 |
-| `CameraAnglesRecipe` | `--- CAMERA VIEW PROMPT ---` + datos de cámara 3D | ~30 |
-| `TimelineRecipe` | JSON-schema `{ task_id, sequence_index, direction, ... }` | ~25 |
+| Receta                 | Formato de recipeContext                                                              | Líneas dedicadas |
+| ---------------------- | ------------------------------------------------------------------------------------- | ---------------- |
+| `StylesRecipe`         | `*** STYLE TRANSFER PROTOCOL ***` (directivas en texto)                               | ~30              |
+| `RemasterRecipe`       | Prompt en lenguaje natural con parámetros (estilo, lighting, cámara)                  | ~20              |
+| `SpritesheetRecipe`    | JSON-schema `{ task_id, layout_constraints, visual_style, ... }` serializado a string | ~25              |
+| `CinematicRecipe`      | `--- STORYBOARD CONTACT SHEET ---` (directivas en texto)                              | ~25              |
+| `CharacterSheetRecipe` | JSON-schema `{ task_id, sheet_type, design_constraints, ... }`                        | ~20              |
+| `CameraAnglesRecipe`   | `--- CAMERA VIEW PROMPT ---` + datos de cámara 3D                                     | ~30              |
+| `TimelineRecipe`       | JSON-schema `{ task_id, sequence_index, direction, ... }`                             | ~25              |
 
 Cada receta tiene su propio `useEffect` que ensambla, formatea y limpia el string de contexto. Esto suma **~175 líneas de lógica de construcción de prompts duplicada conceptualmente** (no literalmente, pero sí en propósito).
 
@@ -25,6 +25,7 @@ Si se quiere cambiar el protocolo de prompts (ej. agregar un `task_id` global, c
 ### Deletion test
 
 Si borramos la lógica de construcción de `recipeContext` de cada receta y la reemplazamos con un builder compartido:
+
 - La complejidad de "cómo se serializa un recipeContext" se concentra en un módulo.
 - Cada receta solo provee sus parámetros específicos (`{ style: 'anime', strength: 0.8 }` o `{ grid: '4x4', perspective: 'isometric' }`).
 - Agregar una nueva receta es implementar un adapter que traduce parámetros de receta a un recipeContext string.
@@ -37,22 +38,22 @@ Definir una interfaz compartida en `lib/recipeContext.ts`:
 
 ```ts
 interface RecipeContextParams {
-  taskId: string
-  recipeId: string
-  basePrompt: string
-  negativePrompt?: string
+  taskId: string;
+  recipeId: string;
+  basePrompt: string;
+  negativePrompt?: string;
   // Cada receta extiende con sus parámetros específicos
 }
 
 interface RecipeContextBuilder<T extends RecipeContextParams = RecipeContextParams> {
   /** Nombre del protocolo (ej. "codex-recipe-v1") */
-  readonly protocol: string
-  
+  readonly protocol: string;
+
   /** Construye el recipeContext string a partir de los parámetros */
-  buildContext(params: T): string
-  
+  buildContext(params: T): string;
+
   /** Extrae parámetros de un recipeContext existente (para re-edición) */
-  parseContext?(context: string): T | null
+  parseContext?(context: string): T | null;
 }
 ```
 
@@ -72,9 +73,9 @@ const stylesContextBuilder: RecipeContextBuilder<StylesRecipeParams> = {
       `fidelity_level: ${params.fidelity}`,
       `strength: ${params.strength}`,
       `base_prompt: ${params.basePrompt}`,
-    ].join('\n')
+    ].join('\n');
   },
-}
+};
 ```
 
 ### Registro de builders
@@ -83,16 +84,16 @@ Un registry central asocia `recipeId` con su builder:
 
 ```ts
 // lib/recipeContextRegistry.ts
-const registry = new Map<string, RecipeContextBuilder>()
+const registry = new Map<string, RecipeContextBuilder>();
 
 export function registerRecipeContext(recipeId: string, builder: RecipeContextBuilder) {
-  registry.set(recipeId, builder)
+  registry.set(recipeId, builder);
 }
 
 export function buildRecipeContext(recipeId: string, params: RecipeContextParams): string {
-  const builder = registry.get(recipeId)
-  if (!builder) throw new Error(`No context builder registered for recipe: ${recipeId}`)
-  return builder.buildContext(params)
+  const builder = registry.get(recipeId);
+  if (!builder) throw new Error(`No context builder registered for recipe: ${recipeId}`);
+  return builder.buildContext(params);
 }
 ```
 
@@ -104,33 +105,33 @@ Cada receta registra su builder en un archivo colocado junto a la receta (ej. `c
 
 ```ts
 // ANTES: la receta ya puso el string en config
-const finalPrompt = `${config.prompt}\n\n${config.recipeContext}`
+const finalPrompt = `${config.prompt}\n\n${config.recipeContext}`;
 
 // DESPUÉS: el pipeline construye el contexto
 const recipeContext = buildRecipeContext(recipeId, {
   taskId: generateTaskId(),
   basePrompt: config.prompt,
   ...recipeSpecificParams,
-})
-const finalPrompt = `${config.prompt}\n\n${recipeContext}`
+});
+const finalPrompt = `${config.prompt}\n\n${recipeContext}`;
 ```
 
 ### Archivos afectados
 
-| Archivo | Cambio |
-|---------|--------|
-| `lib/recipeContext.ts` | Nuevo — interfaz `RecipeContextBuilder` y `RecipeContextParams` |
-| `lib/recipeContextRegistry.ts` | Nuevo — registry de builders |
-| `components/recipes/styles/stylesContext.ts` | Nuevo — builder de Styles con sus tipos |
-| `components/recipes/remaster/remasterContext.ts` | Nuevo — builder de Remaster |
-| `components/recipes/spritesheet/spritesheetContext.ts` | Nuevo — builder de Spritesheet |
-| `components/recipes/cinematic/cinematicContext.ts` | Nuevo — builder de Cinematic |
-| `components/recipes/characterSheet/characterSheetContext.ts` | Nuevo — builder de Character |
-| `components/recipes/cameraAngles/cameraAnglesContext.ts` | Nuevo — builder de Camera |
-| `components/recipes/timeline/timelineContext.ts` | Nuevo — builder de Timeline |
-| Cada `*Recipe.tsx` | Eliminar `useEffect` de construcción de contexto; pasar params al pipeline |
-| `services/localGenerationRun.ts` | Integrar `buildRecipeContext` en el armado del prompt |
-| `hooks/useGenerationPipeline.ts` | Pasar recipe params al pipeline en lugar de recipeContext pre-construído |
+| Archivo                                                      | Cambio                                                                     |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| `lib/recipeContext.ts`                                       | Nuevo — interfaz `RecipeContextBuilder` y `RecipeContextParams`            |
+| `lib/recipeContextRegistry.ts`                               | Nuevo — registry de builders                                               |
+| `components/recipes/styles/stylesContext.ts`                 | Nuevo — builder de Styles con sus tipos                                    |
+| `components/recipes/remaster/remasterContext.ts`             | Nuevo — builder de Remaster                                                |
+| `components/recipes/spritesheet/spritesheetContext.ts`       | Nuevo — builder de Spritesheet                                             |
+| `components/recipes/cinematic/cinematicContext.ts`           | Nuevo — builder de Cinematic                                               |
+| `components/recipes/characterSheet/characterSheetContext.ts` | Nuevo — builder de Character                                               |
+| `components/recipes/cameraAngles/cameraAnglesContext.ts`     | Nuevo — builder de Camera                                                  |
+| `components/recipes/timeline/timelineContext.ts`             | Nuevo — builder de Timeline                                                |
+| Cada `*Recipe.tsx`                                           | Eliminar `useEffect` de construcción de contexto; pasar params al pipeline |
+| `services/localGenerationRun.ts`                             | Integrar `buildRecipeContext` en el armado del prompt                      |
+| `hooks/useGenerationPipeline.ts`                             | Pasar recipe params al pipeline en lugar de recipeContext pre-construído   |
 
 ## Consecuencias
 

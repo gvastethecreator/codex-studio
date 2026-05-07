@@ -46,7 +46,9 @@ export interface CreateStudioAppOptions {
   runInit?: boolean;
 }
 
-export async function createStudioApp(options: CreateStudioAppOptions = {}): Promise<StudioAppInstance> {
+export async function createStudioApp(
+  options: CreateStudioAppOptions = {},
+): Promise<StudioAppInstance> {
   const initResult = options.runInit === false ? null : initStudio();
   const app = new Hono();
 
@@ -142,10 +144,15 @@ export async function createStudioApp(options: CreateStudioAppOptions = {}): Pro
     const job = createJob({ projectId, kind: body.kind, prompt });
     let finalPrompt = prompt;
     try {
-      finalPrompt = (await processReferences(job.id, prompt, body.references || [], getSettings().libraryDir)).augmentedPrompt;
+      finalPrompt = (
+        await processReferences(job.id, prompt, body.references || [], getSettings().libraryDir)
+      ).augmentedPrompt;
     } catch (error) {
       if (error instanceof ReferenceProcessingError) {
-        return c.json({ error: error.message, referenceName: error.referenceName, reason: error.reason }, 400);
+        return c.json(
+          { error: error.message, referenceName: error.referenceName, reason: error.reason },
+          400,
+        );
       }
       throw error;
     }
@@ -181,30 +188,41 @@ export async function createStudioApp(options: CreateStudioAppOptions = {}): Pro
   });
 
   app.delete('/api/libraries/:id', (c) => {
-    if (!removeLibrary(c.req.param('id'))) return c.json({ error: 'Library not found or default library cannot be removed' }, 400);
+    if (!removeLibrary(c.req.param('id')))
+      return c.json({ error: 'Library not found or default library cannot be removed' }, 400);
     return c.json({ ok: true });
   });
 
   app.get('/api/catalog', (c) => {
     const url = new URL(c.req.url);
-    return c.json(queryCatalog({
-      libraryId: url.searchParams.get('library_id'),
-      workspaceId: url.searchParams.get('workspace_id'),
-      jobId: url.searchParams.get('job_id'),
-      batchId: url.searchParams.get('batch_id'),
-      favorite: url.searchParams.has('favorite') ? url.searchParams.get('favorite') === 'true' : undefined,
-      isDeleted: url.searchParams.get('deleted') === 'true',
-      q: url.searchParams.get('q'),
-      offset: Number(url.searchParams.get('offset') || 0),
-      limit: Number(url.searchParams.get('limit') || 50),
-    }));
+    return c.json(
+      queryCatalog({
+        libraryId: url.searchParams.get('library_id'),
+        workspaceId: url.searchParams.get('workspace_id'),
+        jobId: url.searchParams.get('job_id'),
+        batchId: url.searchParams.get('batch_id'),
+        favorite: url.searchParams.has('favorite')
+          ? url.searchParams.get('favorite') === 'true'
+          : undefined,
+        isDeleted: url.searchParams.get('deleted') === 'true',
+        q: url.searchParams.get('q'),
+        offset: Number(url.searchParams.get('offset') || 0),
+        limit: Number(url.searchParams.get('limit') || 50),
+      }),
+    );
   });
 
   app.route('/api/workspaces', createWorkspaceRoutes());
 
   app.get('/api/catalog/search', (c) => {
     const url = new URL(c.req.url);
-    return c.json(queryCatalog({ q: url.searchParams.get('q'), offset: Number(url.searchParams.get('offset') || 0), limit: Number(url.searchParams.get('limit') || 50) }));
+    return c.json(
+      queryCatalog({
+        q: url.searchParams.get('q'),
+        offset: Number(url.searchParams.get('offset') || 0),
+        limit: Number(url.searchParams.get('limit') || 50),
+      }),
+    );
   });
 
   app.get('/api/catalog/:id', (c) => {
@@ -265,7 +283,11 @@ export async function createStudioApp(options: CreateStudioAppOptions = {}): Pro
         const send = (event: unknown) => {
           controller.enqueue(encoder.encode(`data: ${JSON.stringify(event)}\n\n`));
         };
-        send({ type: 'server.connected', payload: { ok: true }, createdAt: new Date().toISOString() });
+        send({
+          type: 'server.connected',
+          payload: { ok: true },
+          createdAt: new Date().toISOString(),
+        });
         const unsubscribe = subscribeEvents(send);
         c.req.raw.signal.addEventListener('abort', () => {
           unsubscribe();
@@ -290,10 +312,14 @@ export async function createStudioApp(options: CreateStudioAppOptions = {}): Pro
     if (!existsSync(filePath)) return c.notFound();
     const ext = path.extname(filePath).toLowerCase();
     const contentType =
-      ext === '.svg' ? 'image/svg+xml; charset=utf-8'
-        : ext === '.png' ? 'image/png'
-          : ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg'
-            : ext === '.webp' ? 'image/webp'
+      ext === '.svg'
+        ? 'image/svg+xml; charset=utf-8'
+        : ext === '.png'
+          ? 'image/png'
+          : ext === '.jpg' || ext === '.jpeg'
+            ? 'image/jpeg'
+            : ext === '.webp'
+              ? 'image/webp'
               : 'application/octet-stream';
     return new Response(Bun.file(filePath), {
       headers: {
