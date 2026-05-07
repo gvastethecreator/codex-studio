@@ -1,5 +1,5 @@
-import React from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import React, { useCallback } from "react";
+import { AnimatePresence, motion } from "motion/react";
 
 import type {
   AspectRatio,
@@ -8,16 +8,16 @@ import type {
   LogEntry,
   QueueJob,
   Workspace,
-} from '../types';
-import type { Job as StudioJob } from '../packages/shared/src';
+} from "../types";
+import type { Job as StudioJob } from "../packages/shared/src";
 
-import { downloadMultipleImagesAsZip, exportToJson } from '../utils/fileUtils';
-import { ErrorBoundary } from './ErrorBoundary';
-import { FormatPreview } from './FormatPreview';
-import { ImageGrid } from './ImageGrid';
-import { LeftDebugPanel } from './LeftDebugPanel';
-import { QueuePanel } from './QueuePanel';
-import { RightSystemPanel } from './RightSystemPanel';
+import { downloadMultipleImagesAsZip, exportToJson } from "../utils/fileUtils";
+import { ErrorBoundary } from "./ErrorBoundary";
+import { FormatPreview } from "./FormatPreview";
+import { ImageGrid } from "./ImageGrid";
+import { LeftDebugPanel } from "./LeftDebugPanel";
+import { QueuePanel } from "./QueuePanel";
+import { RightSystemPanel } from "./RightSystemPanel";
 
 interface StudioPageProps {
   isModalOpen: boolean;
@@ -32,11 +32,11 @@ interface StudioPageProps {
   handleSelectionChange: (id: string, selected: boolean) => void;
   handleGenerate: (
     promptOverride?: string,
-    configOverrides?: Partial<GeneratedImageWithConfig['config']>,
+    configOverrides?: Partial<GeneratedImageWithConfig["config"]>,
     options?: { force?: boolean; preventModal?: boolean },
   ) => void;
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
-  handleLoadRecipe: (config: GeneratedImageWithConfig['config']) => void;
+  handleLoadRecipe: (config: GeneratedImageWithConfig["config"]) => void;
   handleDelete: (imageId: string) => void;
   handleToggleFavorite: (imageId: string) => void;
   isGenerating: boolean;
@@ -107,6 +107,42 @@ export const StudioPage: React.FC<StudioPageProps> = ({
   setBackgroundEnabled,
   activeServerJobCount,
 }) => {
+  const handleGridRegenerate = useCallback(
+    (config: GeneratedImageWithConfig["config"]) => {
+      handleGenerate(config.prompt, config, { preventModal: true });
+    },
+    [handleGenerate],
+  );
+
+  const handleGridSelectAll = useCallback(() => {
+    handleSelectAll(allImages);
+  }, [allImages, handleSelectAll]);
+
+  const handleGridDownloadSelected = useCallback(() => {
+    const selectedImages = imagesWithConfig.filter((image) => selectedImageIds.includes(image.id));
+    if (selectedImages.length > 0) {
+      void downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
+    }
+  }, [imagesWithConfig, selectedImageIds]);
+
+  const handleGridDownloadAll = useCallback(() => {
+    if (imagesWithConfig.length > 0) {
+      void downloadMultipleImagesAsZip(imagesWithConfig, `assets-${Date.now()}.zip`);
+    }
+  }, [imagesWithConfig]);
+
+  const handleGridClearWorkspace = useCallback(() => {
+    handleClearWorkspace(activeWorkspaceId);
+  }, [activeWorkspaceId, handleClearWorkspace]);
+
+  const handleToggleBackground = useCallback(() => {
+    setBackgroundEnabled(!isBackgroundEnabled);
+  }, [isBackgroundEnabled, setBackgroundEnabled]);
+
+  const handleToggleQueue = useCallback(() => {
+    setIsQueueOpen((previous) => !previous);
+  }, [setIsQueueOpen]);
+
   return (
     <>
       {!isModalOpen && (
@@ -127,33 +163,20 @@ export const StudioPage: React.FC<StudioPageProps> = ({
               selectedImageIds={selectedImageIds}
               onImageClick={openModal}
               onSelectionChange={handleSelectionChange}
-              onRegenerate={(config) =>
-                handleGenerate(config.prompt, config, { preventModal: true })
-              }
+              onRegenerate={handleGridRegenerate}
               onAddToContext={handleAddToContext}
               onLoadConfig={handleLoadRecipe}
               onDelete={handleDelete}
               onToggleFavorite={handleToggleFavorite}
-              isGenerating={isGenerating || jobs.some((job) => job.status === 'processing')}
+              isGenerating={isGenerating || jobs.some((job) => job.status === "processing")}
               transitioningImageId={transitioningImageId}
               activeModalImageId={activeModalImageId}
-              onSelectAll={() => handleSelectAll(allImages)}
+              onSelectAll={handleGridSelectAll}
               onDeselectAll={handleDeselectAll}
-              onDownloadSelected={() => {
-                const selectedImages = imagesWithConfig.filter((image) =>
-                  selectedImageIds.includes(image.id),
-                );
-                if (selectedImages.length > 0) {
-                  void downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
-                }
-              }}
-              onDownloadAll={() => {
-                if (imagesWithConfig.length > 0) {
-                  void downloadMultipleImagesAsZip(imagesWithConfig, `assets-${Date.now()}.zip`);
-                }
-              }}
+              onDownloadSelected={handleGridDownloadSelected}
+              onDownloadAll={handleGridDownloadAll}
               onDeleteSelected={handleDeleteSelected}
-              onClearWorkspace={() => handleClearWorkspace(activeWorkspaceId)}
+              onClearWorkspace={handleGridClearWorkspace}
             />
           </ErrorBoundary>
         </div>
@@ -172,7 +195,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({
                 initial={{ width: 0, opacity: 0 }}
                 animate={{ width: 320, opacity: 1 }}
                 exit={{ width: 0, opacity: 0 }}
-                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 className="h-full overflow-hidden"
               >
                 <QueuePanel
@@ -191,9 +214,9 @@ export const StudioPage: React.FC<StudioPageProps> = ({
             onImportVault={handleImportVault}
             onExportVault={exportBatches}
             isBackgroundEnabled={isBackgroundEnabled}
-            onToggleBackground={() => setBackgroundEnabled(!isBackgroundEnabled)}
+            onToggleBackground={handleToggleBackground}
             isQueueOpen={isQueueOpen}
-            onToggleQueue={() => setIsQueueOpen((previous) => !previous)}
+            onToggleQueue={handleToggleQueue}
             queueCount={jobs.length + activeServerJobCount}
           />
         </div>
