@@ -97,7 +97,7 @@ export function ensureAppServer() {
     'app-server',
     `Started codex app-server on ${getCodexWsUrl()} with ${invocation.join(' ')} (pid ${appServerProcess.pid})`,
   );
-  appServerProcess.exited.then((code) => {
+  void appServerProcess.exited.then((code) => {
     diagnostics.pid = null;
     diagnostics.lastExitCode = code;
     diagnostics.lastExitAt = new Date().toISOString();

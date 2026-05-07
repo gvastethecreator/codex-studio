@@ -98,12 +98,12 @@ export async function request<T>(pathName: string, init?: RequestInit): Promise<
 
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
+      const headers = new Headers(init?.headers);
+      headers.set('Content-Type', 'application/json');
+
       const response = await fetch(`${apiBase}${pathName}`, {
         ...init,
-        headers: {
-          'Content-Type': 'application/json',
-          ...(init?.headers || {}),
-        },
+        headers,
       });
       if (!response.ok) {
         throw new Error(

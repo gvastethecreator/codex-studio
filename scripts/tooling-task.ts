@@ -7,6 +7,8 @@ type TaskStep = {
   label: string;
   command: string;
   args: string[];
+  consoleMode?: 'full' | 'tail';
+  tailLineCount?: number;
 };
 
 type TaskDefinition = {
@@ -16,7 +18,9 @@ type TaskDefinition = {
 
 const ROOT_DIR = process.cwd();
 const LOG_DIR = path.resolve(ROOT_DIR, 'logs', 'tooling');
+const DEFAULT_MAX_OXC_THREADS = 8;
 const DEFAULT_MAX_LINT_THREADS = 8;
+const DEFAULT_TAIL_LINE_COUNT = 12;
 
 const SERVER_TYPECHECK_ARGS = [
   'tsc',
@@ -37,16 +41,19 @@ const UNIT_TEST_FILES = [
   'services/localStudioService.test.ts',
 ];
 
+const FMT_THREADS = resolveToolThreads('OXFMT_THREADS', DEFAULT_MAX_OXC_THREADS);
 const LINT_THREADS = resolveLintThreads();
 
 const TASKS: Record<string, TaskDefinition> = {
   fmt: {
     description: 'Format all supported files with Oxfmt.',
-    steps: [{ label: 'Format', command: 'vp', args: ['fmt'] }],
+    steps: [{ label: 'Format', command: 'vp', args: ['fmt', '--threads', String(FMT_THREADS)] }],
   },
   'fmt:check': {
     description: 'Check formatting without writing files.',
-    steps: [{ label: 'Format Check', command: 'vp', args: ['fmt', '--check'] }],
+    steps: [
+      { label: 'Format Check', command: 'vp', args: ['fmt', '--threads', String(FMT_THREADS), '--check'] },
+    ],
   },
   lint: {
     description: 'Run Oxlint through Vite+.',
@@ -84,7 +91,7 @@ const TASKS: Record<string, TaskDefinition> = {
   },
   'build:ui': {
     description: 'Build the Vite application through Vite+.',
-    steps: [{ label: 'UI Build', command: 'vp', args: ['build'] }],
+    steps: [{ label: 'UI Build', command: 'vp', args: ['build'], consoleMode: 'tail' }],
   },
   'build:server': {
     description: 'Type-check the Bun/Hono local server build target.',
@@ -93,7 +100,7 @@ const TASKS: Record<string, TaskDefinition> = {
   build: {
     description: 'Build both the UI and the local server target.',
     steps: [
-      { label: 'UI Build', command: 'vp', args: ['build'] },
+      { label: 'UI Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
       { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
     ],
   },
@@ -109,7 +116,7 @@ const TASKS: Record<string, TaskDefinition> = {
     steps: [
       { label: 'Check', command: 'vp', args: ['check'] },
       { label: 'Test', command: 'vp', args: ['test', 'run'] },
-      { label: 'Build', command: 'vp', args: ['build'] },
+      { label: 'Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
       { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
     ],
   },
@@ -123,15 +130,68 @@ function safeFileName(value: string) {
     .toLowerCase();
 }
 
-function resolveLintThreads() {
-  const rawValue = process.env.OXLINT_THREADS?.trim();
+function appendTailLine(lines: string[], line: string, limit: number) {
+  lines.push(line);
+
+  if (lines.length > limit) {
+    lines.splice(0, lines.length - limit);
+  }
+}
+
+function createTailCapture(limit: number) {
+  const lines: string[] = [];
+  let remainder = '';
+
+  return {
+    push(chunk: string) {
+      remainder += chunk;
+      const parts = remainder.split(/\r?\n/);
+      remainder = parts.pop() ?? '';
+
+      for (const part of parts) {
+        appendTailLine(lines, part, limit);
+      }
+    },
+    flush() {
+      if (remainder.length > 0) {
+        appendTailLine(lines, remainder, limit);
+        remainder = '';
+      }
+
+      return [...lines];
+    },
+  };
+}
+
+function printCapturedTail(step: TaskStep, lines: string[], reason: 'success' | 'failure') {
+  if (lines.length === 0) {
+    return;
+  }
+
+  const suffix = reason === 'success' ? 'resumen' : 'últimos detalles';
+  writeConsoleBanner(`${step.label} ${suffix} (salida completa en log)`);
+
+  if (reason === 'success') {
+    console.log(lines.join('\n'));
+    return;
+  }
+
+  console.error(lines.join('\n'));
+}
+
+function resolveToolThreads(envName: string, defaultCap: number) {
+  const rawValue = process.env[envName]?.trim();
   const configured = rawValue ? Number.parseInt(rawValue, 10) : Number.NaN;
 
   if (Number.isInteger(configured) && configured > 0) {
     return configured;
   }
 
-  return Math.max(1, Math.min(availableParallelism() - 1, DEFAULT_MAX_LINT_THREADS));
+  return Math.max(1, Math.min(availableParallelism() - 1, defaultCap));
+}
+
+function resolveLintThreads() {
+  return resolveToolThreads('OXLINT_THREADS', DEFAULT_MAX_LINT_THREADS);
 }
 
 function formatDuration(durationMs: number) {
@@ -172,9 +232,15 @@ function writeConsoleBanner(title: string) {
 async function runStep(step: TaskStep, log: NodeJS.WritableStream) {
   const startedAt = performance.now();
   const printableCommand = `${step.command} ${step.args.join(' ')}`;
+  const mirrorOutputToConsole = step.consoleMode !== 'tail';
+  const tailCapture = createTailCapture(step.tailLineCount ?? DEFAULT_TAIL_LINE_COUNT);
 
   writeBanner(log, `${step.label}: ${step.command} ${step.args.join(' ')}`);
   writeConsoleBanner(`${step.label}: ${printableCommand}`);
+
+  if (!mirrorOutputToConsole) {
+    writeConsoleBanner(`${step.label}: salida detallada suprimida en terminal para evitar saturación; revisa el log si necesitas el detalle completo.`);
+  }
 
   const child = spawn(step.command, step.args, {
     cwd: ROOT_DIR,
@@ -183,24 +249,48 @@ async function runStep(step: TaskStep, log: NodeJS.WritableStream) {
   });
 
   child.stdout.on('data', (chunk) => {
-    process.stdout.write(chunk);
+    const text = String(chunk);
+
+    tailCapture.push(text);
+
+    if (mirrorOutputToConsole) {
+      process.stdout.write(chunk);
+    }
+
     log.write(chunk);
   });
 
   child.stderr.on('data', (chunk) => {
-    process.stderr.write(chunk);
+    const text = String(chunk);
+
+    tailCapture.push(text);
+
+    if (mirrorOutputToConsole) {
+      process.stderr.write(chunk);
+    }
+
     log.write(chunk);
   });
 
   return new Promise<void>((resolve, reject) => {
     child.on('error', reject);
     child.on('close', (code) => {
+      const tailLines = tailCapture.flush();
+
       if (code === 0) {
+        if (!mirrorOutputToConsole) {
+          printCapturedTail(step, tailLines, 'success');
+        }
+
         writeConsoleBanner(
           `${step.label} completado en ${formatDuration(performance.now() - startedAt)}`,
         );
         resolve();
         return;
+      }
+
+      if (!mirrorOutputToConsole) {
+        printCapturedTail(step, tailLines, 'failure');
       }
 
       writeConsoleBanner(
@@ -251,4 +341,10 @@ async function main() {
   }
 }
 
-await main();
+try {
+  await main();
+} catch (error) {
+  const message = error instanceof Error ? error.message : String(error);
+  console.error(`\n[tooling] ${message}`);
+  process.exitCode = 1;
+}

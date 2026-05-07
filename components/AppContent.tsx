@@ -10,6 +10,7 @@ import {
   validateVault,
   downloadMultipleImagesAsZip,
 } from '../utils/fileUtils';
+import { formatErrorMessage } from '../utils/runtimeLogger';
 import { detectRecipeFromContext } from '../utils/recipeUtils';
 import { startViewTransition } from '../utils/transitionUtils';
 
@@ -506,7 +507,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
       setHasDismissedLimitModal(true);
       addToast('Workspace cleared and downloaded successfully', 'success');
     } catch (error) {
-      console.error('Failed to download and clear:', error);
+      log(`Failed to download and clear workspace: ${formatErrorMessage(error)}`);
       addToast('Failed to download and clear workspace', 'error');
     }
   };

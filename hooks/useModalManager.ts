@@ -46,7 +46,7 @@ export const useModalManager = (activeRecipe: RecipeId = null) => {
     transition.ready.catch(() => {});
     transition.finished.catch(() => {});
 
-    transition.finished.finally(() => {
+    void transition.finished.finally(() => {
       isTransitioningRef.current = false;
       setIsGlobalTransitioning(false);
       setIsViewTransitioning(false);
@@ -96,7 +96,7 @@ export const useModalManager = (activeRecipe: RecipeId = null) => {
     transition.ready.catch(() => {});
     transition.finished.catch(() => {});
 
-    transition.finished.finally(() => {
+    void transition.finished.finally(() => {
       isTransitioningRef.current = false;
       setIsGlobalTransitioning(false);
       setIsViewTransitioning(false);

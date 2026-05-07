@@ -206,7 +206,7 @@ async function processJob(job: Job) {
     } else if (job.kind === 'codex_imagegen') {
       await runCodexJob(job);
     } else {
-      throw new Error(`Unsupported job kind: ${job.kind}`);
+      throw new Error('Unsupported job kind received by worker');
     }
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);

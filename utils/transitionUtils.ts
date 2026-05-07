@@ -26,7 +26,7 @@ export const startViewTransition = (callback: () => void) => {
   transition.ready.catch(() => {});
   transition.finished.catch(() => {});
 
-  transition.finished.finally(() => {
+  void transition.finished.finally(() => {
     isGlobalTransitioning = false;
   });
 

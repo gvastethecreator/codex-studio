@@ -15,9 +15,12 @@ import { resolveStudioApiBase } from './studioRuntime';
  */
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const apiBase = resolveStudioApiBase();
+  const headers = new Headers(init?.headers);
+  headers.set('Content-Type', 'application/json');
+
   const response = await fetch(`${apiBase}${path}`, {
-    headers: { 'Content-Type': 'application/json', ...(init?.headers || {}) },
     ...init,
+    headers,
   });
 
   if (!response.ok) {

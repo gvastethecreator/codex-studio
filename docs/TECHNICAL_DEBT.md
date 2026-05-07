@@ -30,6 +30,10 @@ Este documento enumera la deuda técnica que sigue siendo relevante tras la actu
    - Tras cada actualización mayor de Vite+, Rolldown u OXC conviene revisar compatibilidad real del repo y no asumir estabilidad total del ecosistema.
    - Próximo paso recomendado: revisar trimestralmente `bun outdated` y volver a ejecutar `validate:full`.
 
+4. **Auditoría final de artefactos para release open source**
+   - Ya se limpiaron `output/`, `tmp/` y `generated/`, pero antes del release conviene revisar de nuevo que no reaparezcan prompts locales, muestras derivadas o archivos de trabajo con nombres/franquicias de terceros.
+   - Próximo paso recomendado: ejecutar una revisión final de `git ls-files` sobre carpetas locales y validar que el release candidate no contenga artefactos generados ni material prescindible.
+
 ## Prioridad baja
 
 1. **Code splitting de recetas pesadas**

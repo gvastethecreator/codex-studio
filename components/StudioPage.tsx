@@ -144,12 +144,12 @@ export const StudioPage: React.FC<StudioPageProps> = ({
                   selectedImageIds.includes(image.id),
                 );
                 if (selectedImages.length > 0) {
-                  downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
+                  void downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
                 }
               }}
               onDownloadAll={() => {
                 if (imagesWithConfig.length > 0) {
-                  downloadMultipleImagesAsZip(imagesWithConfig, `assets-${Date.now()}.zip`);
+                  void downloadMultipleImagesAsZip(imagesWithConfig, `assets-${Date.now()}.zip`);
                 }
               }}
               onDeleteSelected={handleDeleteSelected}

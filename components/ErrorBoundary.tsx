@@ -1,5 +1,6 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
 import { AlertTriangle } from 'lucide-react';
+import { runtimeLogger } from '../utils/runtimeLogger';
 
 interface Props {
   children: ReactNode;
@@ -22,7 +23,10 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('Uncaught error:', error, errorInfo);
+    runtimeLogger.error('Uncaught render error', {
+      error,
+      componentStack: errorInfo.componentStack,
+    });
   }
 
   public render() {
@@ -35,7 +39,7 @@ export class ErrorBoundary extends Component<Props, State> {
           </h2>
           <p className="text-xs text-zinc-500 text-center max-w-md">
             {this.props.fallbackMessage ||
-              'A critical error occurred while rendering this component. Please check the console for details.'}
+              'A critical error occurred while rendering this component. Review the session logs or devtools output for details.'}
           </p>
           <button
             onClick={() => this.setState({ hasError: false, error: null })}

@@ -63,3 +63,13 @@ Esto permite:
 - `bun run validate:fast` es el loop corto recomendado durante refactors.
 - `bun run validate:full` es el gate local antes de cerrar una tanda grande de cambios.
 - Las tareas de VS Code en `.vscode/tasks.json` reflejan este mismo flujo con nombres cortos y emojis.
+
+## Estabilidad del terminal integrado
+
+Para evitar congelar el terminal integrado o saturar el IDE en Windows:
+
+- `bun run fmt` y `bun run fmt:check` limitan Oxfmt a un numero razonable de hilos; el valor por defecto es `8` y se puede sobrescribir con `OXFMT_THREADS`.
+- `bun run lint` y `bun run lint:fix` limitan Oxlint a un numero razonable de hilos; el valor por defecto es `8` y se puede sobrescribir con `OXLINT_THREADS`.
+- `bun run build` y el paso de build dentro de `validate:full` ya no vuelcan el listado completo de assets en la consola: el terminal muestra un resumen corto y el detalle total queda en `logs/tooling/`.
+
+Si necesitas el output completo de una corrida pesada, abre el log timestamped correspondiente en `logs/tooling/` en vez de repetir el comando solo para leer la consola.

@@ -78,6 +78,22 @@ Que revisar:
 
 Nota: las tareas principales de calidad se ejecutan a traves de `scripts/tooling-task.ts`, asi que todas dejan rastro persistente.
 
+### El terminal integrado o el IDE se ponen pesados durante `fmt` o `build`
+
+Sintoma:
+
+- VS Code se queda torpe o parece congelado al lanzar varios comandos seguidos;
+- `build` genera demasiado ruido visual en el terminal;
+- una corrida larga parece colgarse aunque el proceso siga trabajando.
+
+Que revisar:
+
+- usa los wrappers del repo (`bun run fmt`, `bun run lint`, `bun run build`, `bun run validate:*`) en vez de invocar `vp` manualmente, porque el wrapper ya limita hilos y reduce la salida más ruidosa;
+- si aun necesitas bajar la presion sobre la maquina, define `OXFMT_THREADS` y/o `OXLINT_THREADS` con un valor menor antes de ejecutar la tarea;
+- consulta `logs/tooling/*.latest.log` para el detalle completo del build o de una corrida pesada en lugar de depender del scroll del terminal integrado.
+
+Nota: `build` muestra ahora solo un resumen corto en consola para evitar que el listado completo de assets degrade el terminal; el detalle sigue quedando en el log persistente.
+
 ## Problemas con la biblioteca local
 
 ### La ruta por defecto no existe en tu sistema operativo

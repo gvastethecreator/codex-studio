@@ -38,7 +38,14 @@ async function toDataUrl(src: string) {
   return new Promise<string>((resolve, reject) => {
     const reader = new FileReader();
     reader.onerror = () => reject(new Error('Unable to encode input image'));
-    reader.onload = () => resolve(String(reader.result));
+    reader.onload = () => {
+      if (typeof reader.result !== 'string') {
+        reject(new Error('Unable to encode input image as a data URL'));
+        return;
+      }
+
+      resolve(reader.result);
+    };
     reader.readAsDataURL(blob);
   });
 }

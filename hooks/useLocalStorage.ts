@@ -1,5 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
+import { runtimeLogger } from '../utils/runtimeLogger';
 
+/**
+ * Persist a React state value in `localStorage` while keeping the API aligned
+ * with `useState`.
+ */
 export function useLocalStorage<T>(
   key: string,
   initialValue: T,
@@ -11,7 +16,7 @@ export function useLocalStorage<T>(
       const item = window.localStorage.getItem(key);
       return item ? JSON.parse(item) : initialValue;
     } catch (error) {
-      console.warn(`Error reading localStorage key "${key}":`, error);
+      runtimeLogger.warn(`Error reading localStorage key "${key}"`, error);
       return initialValue;
     }
   });
@@ -25,7 +30,7 @@ export function useLocalStorage<T>(
     try {
       window.localStorage.setItem(key, JSON.stringify(storedValue));
     } catch (error) {
-      console.warn(`Error setting localStorage key "${key}":`, error);
+      runtimeLogger.warn(`Error setting localStorage key "${key}"`, error);
     }
   }, [key, storedValue]);
 

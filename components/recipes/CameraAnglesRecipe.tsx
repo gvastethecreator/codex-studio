@@ -91,7 +91,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
   updateConfig,
   onFileSelect,
   isGenerating,
-  images = [],
+  images,
   onSelectImage,
 }) => {
   const [isEstimating, setIsEstimating] = useState(false);
