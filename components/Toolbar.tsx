@@ -52,7 +52,7 @@ import {
 import { getCodexModelCatalog } from '../services/localStudioService';
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 
-interface ToolbarProps {
+export interface ToolbarProps {
   generationConfig: ImageGenerationConfig;
   updateConfig: <K extends keyof ImageGenerationConfig>(
     key: K,
@@ -943,8 +943,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               key={model.id}
                               onClick={() => handleSelectExecutionModel(model)}
                               className={`w-full text-left px-3 py-2.5 rounded-xl transition-all border ${isSelected
-                                  ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
-                                  : 'hover:bg-white/5 text-zinc-400 border-transparent'
+                                ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
+                                : 'hover:bg-white/5 text-zinc-400 border-transparent'
                                 }`}
                             >
                               <div className="flex items-center justify-between gap-3 mb-1">
@@ -994,8 +994,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             key={effort}
                             onClick={() => updateConfig('executionReasoningEffort', effort)}
                             className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${generationConfig.executionReasoningEffort === effort
-                                ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
-                                : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                              ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                              : 'bg-white/5 text-zinc-400 hover:bg-white/10'
                               }`}
                           >
                             {effort}
@@ -1019,8 +1019,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             key={speed}
                             onClick={() => handleSelectExecutionSpeed(speed)}
                             className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${generationConfig.executionSpeed === speed
-                                ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
-                                : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                              ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                              : 'bg-white/5 text-zinc-400 hover:bg-white/10'
                               }`}
                           >
                             {formatCodexSpeedLabel(speed)}
