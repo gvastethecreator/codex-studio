@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { DEFAULT_GENERATION_CONFIG, MODELS } from '../constants';
 import {
   getStudioHealth,
   listStudioJobs,
@@ -10,7 +9,7 @@ import {
 import { createStudioEventStream } from '../services/studioEventSource';
 import type { GenerationBatch, LogEntry, Toast } from '../types';
 import type { Job as StudioJob, SystemLog as StudioLog } from '../packages/shared/src';
-import { normalizeImageGenRatio } from '../utils/imageGenSizing';
+import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
 import { validateVault } from '../utils/fileUtils';
 import { getAllEntries } from '../utils/idb';
 
@@ -47,23 +46,17 @@ function mapAssetToBatch(
   asset: Awaited<ReturnType<typeof queryCatalog>>['images'][number],
 ): GenerationBatch {
   const createdAt = Date.parse(asset.createdAt) || Date.now();
-  const batchId = `studio-${asset.jobId}`;
+  const batchId = asset.batchId || `studio-${asset.jobId ?? asset.id}`;
 
   return {
     id: batchId,
-    workspaceId: 'default',
-    config: {
-      ...DEFAULT_GENERATION_CONFIG,
-      prompt: asset.prompt ?? '',
-      model: MODELS.CODEX_IMAGEGEN,
-      aspectRatio: normalizeImageGenRatio(
-        asset.aspectRatio ?? asset.prompt?.match(/Aspect ratio:\s*([0-9]+:[0-9]+)/)?.[1],
-      ),
-    },
+    workspaceId: asset.workspaceId || 'default',
+    config: buildGenerationConfigFromCatalogImage(asset),
     images: [
       {
         id: asset.id,
         src: toStudioAssetUrl(asset.publicUrl),
+        thumbnail: asset.thumbnailUrl ? toStudioAssetUrl(asset.thumbnailUrl) : undefined,
         batchId,
         createdAt,
         isFavorite: false,
