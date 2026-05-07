@@ -8,7 +8,7 @@ import type { Workspace, RecipeId } from '../types';
 import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
 
-interface HeaderToolbarProps {
+export interface HeaderToolbarProps {
   isGenerating: boolean;
   workspaces: (Workspace & { imageCount?: number })[];
   activeWorkspaceId: string;

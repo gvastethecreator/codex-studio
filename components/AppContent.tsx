@@ -7,29 +7,24 @@ import { useStudioGallery } from '../hooks/useStudioGallery';
 import { useStudioGenerationActions } from '../hooks/useStudioGenerationActions';
 import { useStudioJobInspector } from '../hooks/useStudioJobInspector';
 import { useStudioNavigation } from '../hooks/useStudioNavigation';
+import { useStudioOverlayController } from '../hooks/useStudioOverlayController';
+import { useStudioHeaderToolbarConfig } from '../hooks/useStudioHeaderToolbarConfig';
 import { useStudioReset } from '../hooks/useStudioReset';
 import { useStudioRuntime } from '../hooks/useStudioRuntime';
 import { useVaultTransfer } from '../hooks/useVaultTransfer';
 import { useStudioViewState } from '../hooks/useStudioViewState';
 import { useWorkspaceStrip } from '../hooks/useWorkspaceStrip';
+import { useGenerationToolbarConfig } from '../hooks/useGenerationToolbarConfig';
 
-import { startViewTransition } from '../utils/transitionUtils';
 import { cancelStudioJob } from '../services/localStudioService';
 
 import type { RecipeId } from '../types';
 
-import {
-  AppOverlays,
-  type StudioConfirmationOverlayProps,
-  type StudioImageOverlaysProps,
-  type StudioSystemOverlaysProps,
-  type StudioWorkspaceOverlaysProps,
-} from './AppOverlays';
+import { AppOverlays } from './AppOverlays';
 import { type RecipePageProps } from './RecipePage';
 import { type StudioPageProps } from './StudioPage';
 import { StudioGenerationDock } from './shell/StudioGenerationDock';
 import { StudioViewport } from './shell/StudioViewport';
-import { type ToolbarProps } from './Toolbar';
 import { HeaderToolbar } from './HeaderToolbar';
 import LiquidBlackBackground from './LiquidBlackBackground';
 import ToastContainer from './ToastContainer';
@@ -297,69 +292,81 @@ export const AppContent: React.FC<AppContentProps> = () => {
   const { isDragging, handleDragOver, handleDragLeave, handleDrop } = useImageInputSurface({
     onFiles: config.handlePastedFiles,
   });
-  const imageOverlays: StudioImageOverlaysProps = {
-    modalImage: modal.modalImage,
-    imagesWithConfig,
-    activeGenerationConfig: pipeline.activeGenerationConfig,
-    closeModal: handleCloseModal,
-    handleDelete,
-    handleGenerate,
-    handleAddToContext: config.handleAddToContext,
-    handleLoadRecipe,
-    handleToggleFavorite,
-    setActiveCarouselId: modal.setActiveCarouselId,
-    isEditorOpen,
-    closeEditor,
-    imageToEdit,
-    handleExecuteEdit,
-    isEditingImage,
-  };
-  const systemOverlays: StudioSystemOverlaysProps = {
-    isDebugPanelOpen,
-    closeDebugPanel,
-    mergedLogs: sync.mergedLogs,
-    isDashboardModalOpen,
-    closeDashboard,
-    batches,
-    workspaces,
-    studioJobs: sync.studioJobs,
-    imagesCount: imagesWithConfig.length,
-    selectedJobDetail,
-    isLoadingSelectedJob,
-    onInspectJob: handleInspectStudioJob,
-    onClearSelectedJob: clearSelectedJob,
-    handleImportVault: importVault,
-    handleDeepScan: sync.recoverOrphanedBatches,
-    apiBase: onboarding.apiBase,
-    onboardingError: onboarding.error,
-    onboardingHealth: diagnostics.health,
-    isCheckingOnboarding: onboarding.isChecking,
-    isDesktopRuntime: onboarding.isDesktopRuntime,
-    isOnboardingOpen: onboarding.isOpen,
-    isOnboardingReady: onboarding.isReady,
-    isStartingAppServer: onboarding.isStartingAppServer,
-    closeOnboarding: () => startViewTransition(() => onboarding.closeOnboarding()),
-    completeOnboarding: () => startViewTransition(() => onboarding.completeOnboarding()),
-    refreshOnboardingHealth: () => void onboarding.refreshHealth(),
-    ensureAppServer: () => void onboarding.ensureAppServer(),
-  };
-  const workspaceOverlays: StudioWorkspaceOverlaysProps = {
-    isTrashModalOpen,
-    closeTrash,
-    trash,
-    restoreFromTrash,
-    restoreAllFromTrash: () => requestRestoreAllTrash(trash.length),
-    emptyTrash: () => requestEmptyTrash(trash.length),
-    isLimitModalOpen,
-    handleDismissLimitModal: dismissLimitModal,
-    handleDownloadAndClear,
-    batchCount: batches.length,
-  };
-  const confirmationOverlay: StudioConfirmationOverlayProps = {
-    pendingConfirmation,
-    closeConfirmation,
-    confirmPendingAction,
-  };
+  const overlayController = useStudioOverlayController({
+    image: {
+      modalImage: modal.modalImage,
+      imagesWithConfig,
+      activeGenerationConfig: pipeline.activeGenerationConfig,
+      closeModal: handleCloseModal,
+      handleDelete,
+      handleGenerate,
+      handleAddToContext: config.handleAddToContext,
+      handleLoadRecipe,
+      handleToggleFavorite,
+      setActiveCarouselId: modal.setActiveCarouselId,
+    },
+    editor: {
+      isEditorOpen,
+      closeEditor,
+      imageToEdit,
+      handleExecuteEdit,
+      isEditingImage,
+    },
+    debugPanel: {
+      isOpen: isDebugPanelOpen,
+      close: closeDebugPanel,
+    },
+    dashboard: {
+      isOpen: isDashboardModalOpen,
+      close: closeDashboard,
+    },
+    activity: {
+      mergedLogs: sync.mergedLogs,
+      studioJobs: sync.studioJobs,
+      selectedJobDetail,
+      isLoadingSelectedJob,
+      onInspectJob: handleInspectStudioJob,
+      onClearSelectedJob: clearSelectedJob,
+    },
+    vault: {
+      handleImportVault: importVault,
+      handleDeepScan: sync.recoverOrphanedBatches,
+    },
+    onboarding: {
+      apiBase: onboarding.apiBase,
+      error: onboarding.error,
+      health: diagnostics.health,
+      isChecking: onboarding.isChecking,
+      isDesktopRuntime: onboarding.isDesktopRuntime,
+      isOpen: onboarding.isOpen,
+      isReady: onboarding.isReady,
+      isStartingAppServer: onboarding.isStartingAppServer,
+      close: onboarding.closeOnboarding,
+      complete: onboarding.completeOnboarding,
+      refreshHealth: onboarding.refreshHealth,
+      ensureAppServer: onboarding.ensureAppServer,
+    },
+    workspace: {
+      batches,
+      workspaces,
+      trash,
+      restoreFromTrash,
+      isTrashModalOpen,
+      closeTrash,
+      isLimitModalOpen,
+      dismissLimitModal,
+      handleDownloadAndClear,
+    },
+    workspaceActions: {
+      requestRestoreAllTrash,
+      requestEmptyTrash,
+    },
+    confirmation: {
+      pendingConfirmation,
+      closeConfirmation,
+      confirmPendingAction,
+    },
+  });
   const recipePageProps: Omit<RecipePageProps, 'activeRecipe'> = {
     generationConfig: config.generationConfig,
     updateGenerationConfig: config.updateGenerationConfig,
@@ -418,30 +425,62 @@ export const AppContent: React.FC<AppContentProps> = () => {
     onResetStudio: requestResetStudio,
     isResettingStudio,
   };
-  const toolbarProps: ToolbarProps = {
-    generationConfig: config.generationConfig,
-    updateConfig: config.updateGenerationConfig,
-    updateAttachment: config.updateAttachment,
-    onGenerate: handleGenerate,
-    isGenerating: pipeline.isGenerating,
-    generationStartTime: pipeline.generationStartTime,
-    onFileSelect: config.handleFileSelect,
-    onFilesDrop: config.handlePastedFiles,
-    onRemoveAttachment: config.handleRemoveAttachment,
-    isEnhancingPrompt,
-    onEnhancePrompt: handleEnhancePrompt,
-    setPreviewRatio,
-    setIsInteracting: ui.setIsInteractingWithToolbar,
-    onOpenEditor: (att) => openEditor(att, openEditorRoute),
-    isKeyPopoverOpen: ui.isKeyPopoverOpen,
-    onOpenKeySelector: () =>
-      startViewTransition(() => ui.setIsKeyPopoverOpen(!ui.isKeyPopoverOpen)),
-    onSelectKey: async () => {
-      await sync.verifyCodexSession();
-      startViewTransition(() => ui.setIsKeyPopoverOpen(false));
+  const toolbarProps = useGenerationToolbarConfig({
+    config: {
+      generationConfig: config.generationConfig,
+      updateConfig: config.updateGenerationConfig,
+      updateAttachment: config.updateAttachment,
+      onFileSelect: config.handleFileSelect,
+      onFilesDrop: config.handlePastedFiles,
+      onRemoveAttachment: config.handleRemoveAttachment,
+      maxAttachments: config.maxAttachments,
     },
-    maxAttachments: config.maxAttachments,
-  };
+    actions: {
+      onGenerate: handleGenerate,
+      isGenerating: pipeline.isGenerating,
+      generationStartTime: pipeline.generationStartTime,
+      isEnhancingPrompt,
+      onEnhancePrompt: handleEnhancePrompt,
+    },
+    ui: {
+      setPreviewRatio,
+      setIsInteracting: ui.setIsInteractingWithToolbar,
+      isKeyPopoverOpen: ui.isKeyPopoverOpen,
+      setIsKeyPopoverOpen: ui.setIsKeyPopoverOpen,
+    },
+    editor: {
+      openEditor,
+      openEditorRoute,
+    },
+    sync: {
+      verifyCodexSession: sync.verifyCodexSession,
+    },
+  });
+  const headerToolbarProps = useStudioHeaderToolbarConfig({
+    view: {
+      isGenerating: pipeline.isGenerating,
+      currentView,
+      onViewChange: handleViewChange,
+      activeRecipe: recipe.activeRecipe,
+      onCloseRecipe: handleCloseRecipe,
+      usage: diagnostics.usage,
+    },
+    workspace: {
+      workspaces: workspacesWithThumbs,
+      activeWorkspaceId,
+      setActiveWorkspace,
+      onAddWorkspace: handleAddWorkspace,
+      onDeleteWorkspace: handleDeleteWorkspace,
+      onRenameWorkspace: handleRenameWorkspace,
+    },
+    overlays: {
+      onOpenDashboard: openDashboard,
+      openOnboarding: onboarding.openOnboarding,
+      onOpenTrash: openTrash,
+      trashCount: trash.length,
+      onToggleDebug: handleToggleDebugPanel,
+    },
+  });
 
   return (
     <div
@@ -460,25 +499,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
       <ToastContainer toasts={toasts} onDismiss={removeToast} />
 
       {!modal.isModalOpen && !pipeline.isGenerating && (
-        <HeaderToolbar
-          isGenerating={pipeline.isGenerating}
-          workspaces={workspacesWithThumbs}
-          activeWorkspaceId={activeWorkspaceId}
-          onSwitchWorkspace={(id) => startViewTransition(() => setActiveWorkspace(id))}
-          onAddWorkspace={handleAddWorkspace}
-          onDeleteWorkspace={handleDeleteWorkspace}
-          onRenameWorkspace={handleRenameWorkspace}
-          currentView={currentView}
-          onViewChange={handleViewChange}
-          activeRecipe={recipe.activeRecipe}
-          onCloseRecipe={handleCloseRecipe}
-          onOpenDashboard={openDashboard}
-          onOpenOnboarding={() => startViewTransition(() => onboarding.openOnboarding())}
-          onOpenTrash={openTrash}
-          trashCount={trash.length}
-          onToggleDebug={handleToggleDebugPanel}
-          usage={diagnostics.usage}
-        />
+        <HeaderToolbar {...headerToolbarProps} />
       )}
 
       <main
@@ -507,10 +528,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
       />
 
       <AppOverlays
-        imageOverlays={imageOverlays}
-        systemOverlays={systemOverlays}
-        workspaceOverlays={workspaceOverlays}
-        confirmationOverlay={confirmationOverlay}
+        controller={overlayController}
       />
     </div>
   );

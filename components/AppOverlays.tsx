@@ -6,30 +6,26 @@ import { StudioWorkspaceOverlays } from './overlays/StudioWorkspaceOverlays';
 import type {
   StudioConfirmationOverlayProps,
   StudioImageOverlaysProps,
+  StudioOverlayController,
   StudioSystemOverlaysProps,
   StudioWorkspaceOverlaysProps,
 } from './overlays/types';
 
 export interface AppOverlaysProps {
-  imageOverlays: StudioImageOverlaysProps;
-  systemOverlays: StudioSystemOverlaysProps;
-  workspaceOverlays: StudioWorkspaceOverlaysProps;
-  confirmationOverlay: StudioConfirmationOverlayProps;
+  controller: StudioOverlayController;
 }
 
 export type {
   StudioConfirmationOverlayProps,
   StudioImageOverlaysProps,
+  StudioOverlayController,
   StudioSystemOverlaysProps,
   StudioWorkspaceOverlaysProps,
 } from './overlays/types';
 
-export const AppOverlays: React.FC<AppOverlaysProps> = ({
-  imageOverlays,
-  systemOverlays,
-  workspaceOverlays,
-  confirmationOverlay,
-}) => {
+export const AppOverlays: React.FC<AppOverlaysProps> = ({ controller }) => {
+  const { imageOverlays, systemOverlays, workspaceOverlays, confirmationOverlay } = controller;
+
   return (
     <>
       <StudioImageOverlays {...imageOverlays} />

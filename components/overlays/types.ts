@@ -84,3 +84,10 @@ export interface StudioConfirmationOverlayProps {
   closeConfirmation: () => void;
   confirmPendingAction: () => void | Promise<void>;
 }
+
+export interface StudioOverlayController {
+  imageOverlays: StudioImageOverlaysProps;
+  systemOverlays: StudioSystemOverlaysProps;
+  workspaceOverlays: StudioWorkspaceOverlaysProps;
+  confirmationOverlay: StudioConfirmationOverlayProps;
+}
