@@ -191,7 +191,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
                                 <span className="shrink-0 select-none text-zinc-600">
                                     {new Date(log.timestamp).toLocaleTimeString([], { hour12: false })}
                                 </span>
-                                <span className="break-words text-zinc-400">{log.message}</span>
+                                <span className="wrap-break-word text-zinc-400">{log.message}</span>
                             </div>
                         ))
                     ) : (

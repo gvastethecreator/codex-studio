@@ -182,6 +182,7 @@ export async function runLocalGeneration({
   workspaceId,
   inputImage,
   signal,
+  onJobCreated,
   onProgress,
 }: RunLocalGenerationOptions): Promise<LocalGenerationRunResult> {
   const stream = createStudioEventStream();
@@ -199,7 +200,7 @@ export async function runLocalGeneration({
           config: resolvedConfig,
           batchId,
           signal,
-          onJobCreated: options.onJobCreated,
+          onJobCreated,
           onProgress,
           stream,
           inputImage,

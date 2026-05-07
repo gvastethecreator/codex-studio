@@ -66,7 +66,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
 
   return (
     <div
-      className="fixed inset-y-0 left-0 z-50 w-full max-w-[1080px] border-r border-white/10 bg-zinc-950/95 shadow-2xl backdrop-blur-xl"
+      className="fixed inset-y-0 left-0 z-50 w-full max-w-270 border-r border-white/10 bg-zinc-950/95 shadow-2xl backdrop-blur-xl"
       style={{ viewTransitionName: 'debug-panel' }}
     >
       <div className="flex items-center justify-between border-b border-white/5 px-5 py-4">
@@ -174,7 +174,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
                 <div className="mb-3 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
                   Prompt used
                 </div>
-                <pre className="custom-scrollbar overflow-x-auto whitespace-pre-wrap break-words rounded-xl border border-white/5 bg-black/30 p-3 text-[11px] leading-relaxed text-zinc-300">
+                <pre className="custom-scrollbar overflow-x-auto whitespace-pre-wrap wrap-break-word rounded-xl border border-white/5 bg-black/30 p-3 text-[11px] leading-relaxed text-zinc-300">
                   {selectedJobDetail.job.finalPromptUsed || selectedJobDetail.job.originalPrompt}
                 </pre>
               </div>
@@ -246,7 +246,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
                             </span>
                             <span className="text-[9px] text-white/45">{entry.source}</span>
                           </div>
-                          <p className="whitespace-pre-wrap break-words text-[11px] leading-relaxed">
+                          <p className="whitespace-pre-wrap wrap-break-word text-[11px] leading-relaxed">
                             {entry.text}
                           </p>
                           {entry.raw ? (

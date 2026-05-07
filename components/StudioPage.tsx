@@ -11,7 +11,7 @@ import type {
 } from "../types";
 import type { Job as StudioJob } from "../packages/shared/src";
 
-import { downloadMultipleImagesAsZip, exportToJson } from "../utils/fileUtils";
+import { downloadMultipleImagesAsZip } from "../utils/fileUtils";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FormatPreview } from "./FormatPreview";
 import { ImageGrid } from "./ImageGrid";
@@ -53,8 +53,10 @@ interface StudioPageProps {
   setIsQueueOpen: React.Dispatch<React.SetStateAction<boolean>>;
   jobs: QueueJob[];
   studioJobs: StudioJob[];
+  selectedStudioJobId: string | null;
   retry: (jobId: string) => void;
   cancelJob: (jobId: string) => void;
+  cancelPersistentJob: (jobId: string) => void;
   removeJob: (jobId: string) => void;
   clearCompleted: () => void;
   isResting: boolean;
@@ -64,6 +66,7 @@ interface StudioPageProps {
   isBackgroundEnabled: boolean;
   setBackgroundEnabled: (enabled: boolean) => void;
   activeServerJobCount: number;
+  onInspectJob: (jobId: string) => void;
 }
 
 export const StudioPage: React.FC<StudioPageProps> = ({
@@ -96,8 +99,10 @@ export const StudioPage: React.FC<StudioPageProps> = ({
   setIsQueueOpen,
   jobs,
   studioJobs,
+  selectedStudioJobId,
   retry,
   cancelJob,
+  cancelPersistentJob,
   removeJob,
   clearCompleted,
   isResting,
@@ -106,6 +111,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({
   isBackgroundEnabled,
   setBackgroundEnabled,
   activeServerJobCount,
+  onInspectJob,
 }) => {
   const handleGridRegenerate = useCallback(
     (config: GeneratedImageWithConfig["config"]) => {
@@ -149,8 +155,11 @@ export const StudioPage: React.FC<StudioPageProps> = ({
         <LeftDebugPanel
           workspaces={workspaces}
           logs={mergedLogs}
+          studioJobs={studioJobs}
           batchesCount={batchesCount}
           imagesCount={allImages.length}
+          onInspectJob={onInspectJob}
+          selectedJobId={selectedStudioJobId}
         />
       )}
 
@@ -201,10 +210,14 @@ export const StudioPage: React.FC<StudioPageProps> = ({
                 <QueuePanel
                   jobs={jobs}
                   serverJobs={studioJobs}
+                  selectedJobId={selectedStudioJobId}
                   onRetry={retry}
                   onCancel={cancelJob}
+                  onCancelServerJob={cancelPersistentJob}
                   onRemove={removeJob}
                   onClearCompleted={clearCompleted}
+                  onInspectJob={onInspectJob}
+                  onClose={handleToggleQueue}
                   isResting={isResting}
                 />
               </motion.div>
