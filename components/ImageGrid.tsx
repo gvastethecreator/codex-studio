@@ -1,5 +1,5 @@
-import React, { useRef, useState, useMemo, useEffect } from 'react';
-import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
+import React, { useRef, useState, useMemo, useEffect } from "react";
+import type { GeneratedImageWithConfig, ImageGenerationConfig } from "../types";
 import {
   Download,
   PlusCircle,
@@ -12,10 +12,10 @@ import {
   ArrowUpDown,
   CheckSquare,
   Square,
-} from 'lucide-react';
-import ActionButton from './ui/ActionButton';
-import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
-import Tooltip from './Tooltip';
+} from "lucide-react";
+import ActionButton from "./ui/ActionButton";
+import { downloadImage, generateSmartFilename } from "../utils/fileUtils";
+import Tooltip from "./Tooltip";
 
 interface ImageItemProps {
   image: GeneratedImageWithConfig;
@@ -81,7 +81,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     const handleCopyPrompt = (e: React.MouseEvent) => {
       e.stopPropagation();
       if (copiedPrompt) return;
-      void navigator.clipboard.writeText(image.config.prompt || '');
+      void navigator.clipboard.writeText(image.config.prompt || "");
       setCopiedPrompt(true);
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       timeoutRef.current = window.setTimeout(() => setCopiedPrompt(false), 2000);
@@ -91,7 +91,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       <div
         ref={itemRef}
         className={`masonry-item mb-4 relative group rounded-xl overflow-hidden cursor-pointer transition-all duration-700 ease-out-expo 
-        ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'shadow-lg'}
+        ${isSelected ? "ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10" : "shadow-lg"}
         animate-in fade-in-0 zoom-in-95
       `}
         onClick={handleImageClick}
@@ -101,17 +101,17 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           alt=""
           loading="lazy"
           decoding="async"
-          className={`w-full h-auto block bg-zinc-900 rounded-xl transition-all duration-700 ${isWorkspaceGenerating ? 'opacity-60 grayscale-[0.2]' : ''}`}
+          className={`w-full h-auto block bg-zinc-900 rounded-xl transition-all duration-700 ${isWorkspaceGenerating ? "opacity-60 grayscale-[0.2]" : ""}`}
           style={{ viewTransitionName: transitionName }}
         />
 
         <div
-          className={`absolute inset-0 transition-all duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100'}`}
+          className={`absolute inset-0 transition-all duration-300 ${isSelected ? "bg-accent-500/10" : "bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100"}`}
         ></div>
 
         <div className="absolute top-2 right-2 z-20 flex gap-2">
           <Tooltip
-            content={image.isFavorite ? 'Remove Favorite' : 'Add Favorite'}
+            content={image.isFavorite ? "Remove Favorite" : "Add Favorite"}
             position="bottom"
           >
             <button
@@ -120,24 +120,22 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                 onToggleFavorite(image.id);
               }}
               className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
-                      ${
-                        image.isFavorite
-                          ? 'bg-accent-500 border-accent-400 text-white scale-110'
-                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
-                      }`}
+                      ${image.isFavorite
+                  ? "bg-accent-500 border-accent-400 text-white scale-110"
+                  : "bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30"
+                }`}
             >
-              <Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} strokeWidth={3} />
+              <Heart size={14} fill={image.isFavorite ? "currentColor" : "none"} strokeWidth={3} />
             </button>
           </Tooltip>
-          <Tooltip content={isSelected ? 'Deselect' : 'Select'} position="bottom">
+          <Tooltip content={isSelected ? "Deselect" : "Select"} position="bottom">
             <button
               onClick={handleSelectClick}
               className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
-                      ${
-                        isSelected
-                          ? 'bg-accent-600 border-accent-400 text-white scale-110'
-                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
-                      }`}
+                      ${isSelected
+                  ? "bg-accent-600 border-accent-400 text-white scale-110"
+                  : "bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30"
+                }`}
             >
               <Check size={14} strokeWidth={3} />
             </button>
@@ -228,207 +226,209 @@ interface ImageGridProps {
   onClearWorkspace: () => void;
 }
 
-type SortOption = 'desc' | 'asc' | 'prompt' | 'ratio';
+type SortOption = "desc" | "asc" | "prompt" | "ratio";
 
-export const ImageGrid: React.FC<ImageGridProps> = ({
-  images,
-  selectedImageIds,
-  onImageClick,
-  onSelectionChange,
-  onRegenerate,
-  onAddToContext,
-  onLoadConfig,
-  onDelete,
-  onToggleFavorite,
-  isGenerating,
-  transitioningImageId,
-  activeModalImageId,
-  onSelectAll,
-  onDeselectAll,
-  onDownloadSelected,
-  onDownloadAll,
-  onDeleteSelected,
-  onClearWorkspace,
-}) => {
-  const [sortOrder, setSortOrder] = useState<SortOption>('desc');
-  const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
+export const ImageGrid: React.FC<ImageGridProps> = React.memo(
+  ({
+    images,
+    selectedImageIds,
+    onImageClick,
+    onSelectionChange,
+    onRegenerate,
+    onAddToContext,
+    onLoadConfig,
+    onDelete,
+    onToggleFavorite,
+    isGenerating,
+    transitioningImageId,
+    activeModalImageId,
+    onSelectAll,
+    onDeselectAll,
+    onDownloadSelected,
+    onDownloadAll,
+    onDeleteSelected,
+    onClearWorkspace,
+  }) => {
+    const [sortOrder, setSortOrder] = useState<SortOption>("desc");
+    const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
 
-  const imageCount = images.length;
-  const selectedImageCount = selectedImageIds.length;
-  const isAllSelected = imageCount > 0 && selectedImageCount === imageCount;
+    const imageCount = images.length;
+    const selectedImageCount = selectedImageIds.length;
+    const isAllSelected = imageCount > 0 && selectedImageCount === imageCount;
 
-  const sortedImages = useMemo(() => {
-    const imgs = [...images];
-    return imgs.sort((a, b) => {
-      if (a.isFavorite !== b.isFavorite) {
-        return a.isFavorite ? -1 : 1;
-      }
-      switch (sortOrder) {
-        case 'asc':
-          return a.createdAt - b.createdAt;
-        case 'desc':
-          return b.createdAt - a.createdAt;
-        case 'prompt':
-          return (a.config.prompt || '').localeCompare(b.config.prompt || '');
-        case 'ratio':
-          return a.config.aspectRatio.localeCompare(b.config.aspectRatio);
-        default:
-          return 0;
-      }
-    });
-  }, [images, sortOrder]);
+    const sortedImages = useMemo(() => {
+      const imgs = [...images];
+      return imgs.sort((a, b) => {
+        if (a.isFavorite !== b.isFavorite) {
+          return a.isFavorite ? -1 : 1;
+        }
+        switch (sortOrder) {
+          case "asc":
+            return a.createdAt - b.createdAt;
+          case "desc":
+            return b.createdAt - a.createdAt;
+          case "prompt":
+            return (a.config.prompt || "").localeCompare(b.config.prompt || "");
+          case "ratio":
+            return a.config.aspectRatio.localeCompare(b.config.aspectRatio);
+          default:
+            return 0;
+        }
+      });
+    }, [images, sortOrder]);
 
-  if (images.length === 0) return <div className="w-full h-full" />;
+    if (images.length === 0) return <div className="w-full h-full" />;
 
-  return (
-    <div className="w-full h-full relative">
-      <div className="absolute top-4 right-8 z-30 flex items-center gap-2">
-        {imageCount > 0 && (
-          <div className="flex items-center gap-1 p-1 bg-zinc-900/80 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl">
-            {imageCount > 1 && (
-              <ActionButton
-                onClick={isAllSelected ? onDeselectAll : onSelectAll}
-                icon={
-                  isAllSelected ? (
-                    <CheckSquare size={16} className="text-accent-400" />
-                  ) : (
-                    <Square size={16} />
-                  )
-                }
-                label={isAllSelected ? 'Deselect' : 'Select All'}
-                isActive={isAllSelected}
-                tooltipPosition="bottom"
-              />
-            )}
-            {selectedImageCount === 0 && imageCount > 0 && (
-              <>
+    return (
+      <div className="w-full h-full relative">
+        <div className="absolute top-4 right-8 z-30 flex items-center gap-2">
+          {imageCount > 0 && (
+            <div className="flex items-center gap-1 rounded-xl border border-white/10 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md">
+              {imageCount > 1 && (
                 <ActionButton
-                  onClick={onDownloadAll}
-                  icon={<Download size={16} />}
-                  label="Download All"
-                  tooltipPosition="bottom"
-                />
-                <ActionButton
-                  onClick={onClearWorkspace}
-                  icon={<Trash2 size={16} />}
-                  label="Clear Workspace"
-                  variant="danger"
-                  tooltipPosition="bottom"
-                />
-              </>
-            )}
-            {selectedImageCount > 0 && (
-              <>
-                <ActionButton
-                  onClick={onDownloadSelected}
+                  onClick={isAllSelected ? onDeselectAll : onSelectAll}
                   icon={
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                      <polyline points="7 10 12 15 17 10"></polyline>
-                      <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
+                    isAllSelected ? (
+                      <CheckSquare size={16} className="text-accent-400" />
+                    ) : (
+                      <Square size={16} />
+                    )
                   }
-                  label="Download Selected"
+                  label={isAllSelected ? "Deselect" : "Select All"}
+                  isActive={isAllSelected}
                   tooltipPosition="bottom"
                 />
-                <ActionButton
-                  onClick={onDeleteSelected}
-                  icon={<Trash2 size={16} />}
-                  label="Purge Selected"
-                  variant="danger"
-                  tooltipPosition="bottom"
-                />
-              </>
-            )}
-          </div>
-        )}
-        <div className="relative">
-          <Tooltip content="Sort Images" position="bottom">
-            <button
-              onClick={() => setIsSortMenuOpen(!isSortMenuOpen)}
-              className="p-2 rounded-xl bg-zinc-900/80 border border-white/10 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors backdrop-blur-md"
-            >
-              <ArrowUpDown size={16} />
-            </button>
-          </Tooltip>
-          {isSortMenuOpen && (
-            <div className="absolute top-full right-0 mt-2 w-48 bg-zinc-900 border border-white/10 rounded-xl shadow-2xl overflow-hidden z-50">
-              <div className="p-1 flex flex-col">
-                <button
-                  onClick={() => {
-                    setSortOrder('desc');
-                    setIsSortMenuOpen(false);
-                  }}
-                  className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === 'desc' ? 'bg-accent-500/20 text-accent-300' : 'text-zinc-400 hover:bg-white/5 hover:text-white'}`}
-                >
-                  Newest First (Default)
-                </button>
-                <button
-                  onClick={() => {
-                    setSortOrder('asc');
-                    setIsSortMenuOpen(false);
-                  }}
-                  className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === 'asc' ? 'bg-accent-500/20 text-accent-300' : 'text-zinc-400 hover:bg-white/5 hover:text-white'}`}
-                >
-                  Oldest First
-                </button>
-                <button
-                  onClick={() => {
-                    setSortOrder('prompt');
-                    setIsSortMenuOpen(false);
-                  }}
-                  className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === 'prompt' ? 'bg-accent-500/20 text-accent-300' : 'text-zinc-400 hover:bg-white/5 hover:text-white'}`}
-                >
-                  Prompt Similarity
-                </button>
-                <button
-                  onClick={() => {
-                    setSortOrder('ratio');
-                    setIsSortMenuOpen(false);
-                  }}
-                  className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === 'ratio' ? 'bg-accent-500/20 text-accent-300' : 'text-zinc-400 hover:bg-white/5 hover:text-white'}`}
-                >
-                  Aspect Ratio
-                </button>
-              </div>
+              )}
+              {selectedImageCount === 0 && imageCount > 0 && (
+                <>
+                  <ActionButton
+                    onClick={onDownloadAll}
+                    icon={<Download size={16} />}
+                    label="Download All"
+                    tooltipPosition="bottom"
+                  />
+                  <ActionButton
+                    onClick={onClearWorkspace}
+                    icon={<Trash2 size={16} />}
+                    label="Clear Workspace"
+                    variant="danger"
+                    tooltipPosition="bottom"
+                  />
+                </>
+              )}
+              {selectedImageCount > 0 && (
+                <>
+                  <ActionButton
+                    onClick={onDownloadSelected}
+                    icon={
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                      </svg>
+                    }
+                    label="Download Selected"
+                    tooltipPosition="bottom"
+                  />
+                  <ActionButton
+                    onClick={onDeleteSelected}
+                    icon={<Trash2 size={16} />}
+                    label="Purge Selected"
+                    variant="danger"
+                    tooltipPosition="bottom"
+                  />
+                </>
+              )}
             </div>
           )}
+          <div className="relative">
+            <Tooltip content="Sort Images" position="bottom">
+              <button
+                onClick={() => setIsSortMenuOpen(!isSortMenuOpen)}
+                className="rounded-xl border border-white/10 bg-zinc-900/80 p-2 text-zinc-400 transition-colors backdrop-blur-md hover:bg-zinc-800 hover:text-white"
+              >
+                <ArrowUpDown size={16} />
+              </button>
+            </Tooltip>
+            {isSortMenuOpen && (
+              <div className="absolute top-full right-0 z-50 mt-2 w-48 overflow-hidden rounded-xl border border-white/10 bg-zinc-900 shadow-2xl">
+                <div className="flex flex-col p-1">
+                  <button
+                    onClick={() => {
+                      setSortOrder("desc");
+                      setIsSortMenuOpen(false);
+                    }}
+                    className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === "desc" ? "bg-accent-500/20 text-accent-300" : "text-zinc-400 hover:bg-white/5 hover:text-white"}`}
+                  >
+                    Newest First (Default)
+                  </button>
+                  <button
+                    onClick={() => {
+                      setSortOrder("asc");
+                      setIsSortMenuOpen(false);
+                    }}
+                    className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === "asc" ? "bg-accent-500/20 text-accent-300" : "text-zinc-400 hover:bg-white/5 hover:text-white"}`}
+                  >
+                    Oldest First
+                  </button>
+                  <button
+                    onClick={() => {
+                      setSortOrder("prompt");
+                      setIsSortMenuOpen(false);
+                    }}
+                    className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === "prompt" ? "bg-accent-500/20 text-accent-300" : "text-zinc-400 hover:bg-white/5 hover:text-white"}`}
+                  >
+                    Prompt Similarity
+                  </button>
+                  <button
+                    onClick={() => {
+                      setSortOrder("ratio");
+                      setIsSortMenuOpen(false);
+                    }}
+                    className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === "ratio" ? "bg-accent-500/20 text-accent-300" : "text-zinc-400 hover:bg-white/5 hover:text-white"}`}
+                  >
+                    Aspect Ratio
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="custom-scrollbar h-full w-full overflow-y-auto px-4 pt-16 pb-8 sm:px-8">
+          <div className="columns-2 gap-4 sm:columns-3 md:columns-4 lg:columns-5 xl:columns-6">
+            {sortedImages.map((image) => (
+              <div
+                key={image.id}
+                className={`break-inside-avoid ${activeModalImageId === image.id ? "opacity-0" : "opacity-100"}`}
+              >
+                <ImageItem
+                  image={image}
+                  isSelected={selectedImageIds.includes(image.id)}
+                  onImageClick={onImageClick}
+                  onSelectionChange={onSelectionChange}
+                  onRegenerate={onRegenerate}
+                  onAddToContext={onAddToContext}
+                  onLoadConfig={onLoadConfig}
+                  onDelete={onDelete}
+                  onToggleFavorite={onToggleFavorite}
+                  isWorkspaceGenerating={isGenerating}
+                  transitionName={transitioningImageId === image.id ? "master-canvas" : undefined}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="w-full h-full px-4 sm:px-8 pt-16 pb-8 overflow-y-auto custom-scrollbar">
-        <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 xl:columns-6 gap-4">
-          {sortedImages.map((image) => (
-            <div
-              key={image.id}
-              className={`break-inside-avoid ${activeModalImageId === image.id ? 'opacity-0' : 'opacity-100'}`}
-            >
-              <ImageItem
-                image={image}
-                isSelected={selectedImageIds.includes(image.id)}
-                onImageClick={onImageClick}
-                onSelectionChange={onSelectionChange}
-                onRegenerate={onRegenerate}
-                onAddToContext={onAddToContext}
-                onLoadConfig={onLoadConfig}
-                onDelete={onDelete}
-                onToggleFavorite={onToggleFavorite}
-                isWorkspaceGenerating={isGenerating}
-                transitionName={transitioningImageId === image.id ? 'master-canvas' : undefined}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+    );
+  },
+);

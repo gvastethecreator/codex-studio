@@ -4,7 +4,7 @@ import type {
   GenerationBatch,
   LogEntry,
   Workspace,
-} from '../types';
+} from "../types";
 
 export interface GlobalState {
   logs: LogEntry[];
@@ -17,38 +17,38 @@ export interface GlobalState {
 }
 
 export type GlobalAction =
-  | { type: 'HYDRATE_STATE'; state: Partial<GlobalState> }
-  | { type: 'ADD_LOG'; entry: LogEntry }
-  | { type: 'CREATE_WORKSPACE'; workspace: Workspace; activate?: boolean }
-  | { type: 'DELETE_WORKSPACE'; id: string }
-  | { type: 'RENAME_WORKSPACE'; id: string; name: string }
-  | { type: 'SET_ACTIVE_WORKSPACE'; id: string }
-  | { type: 'PREPEND_BATCH'; batch: GenerationBatch; maxPerWorkspace?: number }
+  | { type: "HYDRATE_STATE"; state: Partial<GlobalState> }
+  | { type: "ADD_LOG"; entry: LogEntry }
+  | { type: "CREATE_WORKSPACE"; workspace: Workspace; activate?: boolean }
+  | { type: "DELETE_WORKSPACE"; id: string }
+  | { type: "RENAME_WORKSPACE"; id: string; name: string }
+  | { type: "SET_ACTIVE_WORKSPACE"; id: string }
+  | { type: "PREPEND_BATCH"; batch: GenerationBatch; maxPerWorkspace?: number }
   | {
-      type: 'MERGE_BATCHES';
+      type: "MERGE_BATCHES";
       batches: GenerationBatch[];
       prepend?: boolean;
       maxTotal?: number;
       ensureWorkspaces?: boolean;
     }
-  | { type: 'REPLACE_BATCHES'; batches: GenerationBatch[]; ensureWorkspaces?: boolean }
-  | { type: 'ARCHIVE_BATCHES'; batches: GenerationBatch[] }
-  | { type: 'DELETE_IMAGE'; imageId: string }
-  | { type: 'DELETE_IMAGES'; imageIds: string[] }
-  | { type: 'TOGGLE_IMAGE_FAVORITE'; imageId: string }
-  | { type: 'CLEAR_WORKSPACE'; workspaceId: string }
-  | { type: 'CLEAR_ALL_BATCHES' }
-  | { type: 'RESTORE_FROM_TRASH'; batchId: string }
-  | { type: 'RESTORE_ALL_FROM_TRASH' }
-  | { type: 'EMPTY_TRASH' }
-  | { type: 'SET_BACKGROUND_ENABLED'; enabled: boolean }
-  | { type: 'UPDATE_BACKGROUND_CONFIG'; patch: Partial<BackgroundConfig> };
+  | { type: "REPLACE_BATCHES"; batches: GenerationBatch[]; ensureWorkspaces?: boolean }
+  | { type: "ARCHIVE_BATCHES"; batches: GenerationBatch[] }
+  | { type: "DELETE_IMAGE"; imageId: string }
+  | { type: "DELETE_IMAGES"; imageIds: string[] }
+  | { type: "TOGGLE_IMAGE_FAVORITE"; imageId: string }
+  | { type: "CLEAR_WORKSPACE"; workspaceId: string }
+  | { type: "CLEAR_ALL_BATCHES" }
+  | { type: "RESTORE_FROM_TRASH"; batchId: string }
+  | { type: "RESTORE_ALL_FROM_TRASH" }
+  | { type: "EMPTY_TRASH" }
+  | { type: "SET_BACKGROUND_ENABLED"; enabled: boolean }
+  | { type: "UPDATE_BACKGROUND_CONFIG"; patch: Partial<BackgroundConfig> };
 
 export function createInitialGlobalState(): GlobalState {
   return {
     logs: [],
-    workspaces: ensureDefaultWorkspace([{ id: 'default', createdAt: Date.now() }]),
-    activeWorkspaceId: 'default',
+    workspaces: ensureDefaultWorkspace([{ id: "default", createdAt: Date.now() }]),
+    activeWorkspaceId: "default",
     batches: [],
     trash: [],
     isBackgroundEnabled: true,
@@ -57,15 +57,15 @@ export function createInitialGlobalState(): GlobalState {
 }
 
 export function ensureDefaultWorkspace(workspaces: Workspace[]): Workspace[] {
-  if (workspaces.some((workspace) => workspace.id === 'default')) {
+  if (workspaces.some((workspace) => workspace.id === "default")) {
     return workspaces;
   }
 
-  return [{ id: 'default', createdAt: Date.now() }, ...workspaces];
+  return [{ id: "default", createdAt: Date.now() }, ...workspaces];
 }
 
 function normalizeWorkspaceId(workspaceId?: string | null) {
-  return workspaceId || 'default';
+  return workspaceId || "default";
 }
 
 function belongsToWorkspace(batch: GenerationBatch, workspaceId: string) {
@@ -137,7 +137,7 @@ function mergeBatchCollections(
   });
 
   const merged = order.map((id) => batchMap.get(id)!).filter(Boolean);
-  return typeof options?.maxTotal === 'number' ? merged.slice(0, options.maxTotal) : merged;
+  return typeof options?.maxTotal === "number" ? merged.slice(0, options.maxTotal) : merged;
 }
 
 function withWorkspaceLimit(
@@ -175,7 +175,7 @@ function ensureWorkspacesForBatches(workspaces: Workspace[], batches: Generation
     missing.push({
       id: workspaceId,
       createdAt: Date.now(),
-      name: workspaceId === 'default' ? undefined : `Imported (${workspaceId.slice(-4)})`,
+      name: workspaceId === "default" ? undefined : `Imported (${workspaceId.slice(-4)})`,
     });
     existingIds.add(workspaceId);
   }
@@ -224,7 +224,7 @@ function deleteImages(state: GlobalState, imageIds: string[]) {
 
 export function globalReducer(state: GlobalState, action: GlobalAction): GlobalState {
   switch (action.type) {
-    case 'HYDRATE_STATE': {
+    case "HYDRATE_STATE": {
       const hydratedWorkspaces = ensureDefaultWorkspace(
         action.state.workspaces ?? state.workspaces,
       );
@@ -234,23 +234,26 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         ? action.state.activeWorkspaceId!
         : hydratedWorkspaces.some((workspace) => workspace.id === state.activeWorkspaceId)
           ? state.activeWorkspaceId
-          : 'default';
+          : "default";
 
       return {
-        ...state,
-        ...action.state,
+        logs: action.state.logs ?? state.logs,
         workspaces: hydratedWorkspaces,
         activeWorkspaceId: hydratedActiveWorkspaceId,
+        batches: action.state.batches ?? state.batches,
+        trash: action.state.trash ?? state.trash,
+        isBackgroundEnabled: action.state.isBackgroundEnabled ?? state.isBackgroundEnabled,
+        bgConfig: action.state.bgConfig ?? state.bgConfig,
       };
     }
 
-    case 'ADD_LOG':
+    case "ADD_LOG":
       return {
         ...state,
         logs: [action.entry, ...state.logs].slice(0, 500),
       };
 
-    case 'CREATE_WORKSPACE': {
+    case "CREATE_WORKSPACE": {
       const workspaces = ensureDefaultWorkspace(
         state.workspaces.some((workspace) => workspace.id === action.workspace.id)
           ? state.workspaces
@@ -265,8 +268,8 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
       };
     }
 
-    case 'DELETE_WORKSPACE': {
-      if (action.id === 'default') {
+    case "DELETE_WORKSPACE": {
+      if (action.id === "default") {
         return state;
       }
 
@@ -279,11 +282,11 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         workspaces,
         batches: state.batches.filter((batch) => !belongsToWorkspace(batch, action.id)),
         activeWorkspaceId:
-          state.activeWorkspaceId === action.id ? 'default' : state.activeWorkspaceId,
+          state.activeWorkspaceId === action.id ? "default" : state.activeWorkspaceId,
       };
     }
 
-    case 'RENAME_WORKSPACE':
+    case "RENAME_WORKSPACE":
       return {
         ...state,
         workspaces: state.workspaces.map((workspace) =>
@@ -291,7 +294,7 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         ),
       };
 
-    case 'SET_ACTIVE_WORKSPACE':
+    case "SET_ACTIVE_WORKSPACE":
       return {
         ...state,
         activeWorkspaceId: state.workspaces.some((workspace) => workspace.id === action.id)
@@ -299,7 +302,7 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
           : state.activeWorkspaceId,
       };
 
-    case 'PREPEND_BATCH': {
+    case "PREPEND_BATCH": {
       const batches = mergeBatchCollections(state.batches, [action.batch], { prepend: true });
       return {
         ...state,
@@ -308,7 +311,7 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
       };
     }
 
-    case 'MERGE_BATCHES':
+    case "MERGE_BATCHES":
       return {
         ...state,
         workspaces: action.ensureWorkspaces
@@ -320,7 +323,7 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         }),
       };
 
-    case 'REPLACE_BATCHES':
+    case "REPLACE_BATCHES":
       return {
         ...state,
         workspaces: action.ensureWorkspaces
@@ -329,16 +332,16 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         batches: mergeBatchCollections([], action.batches, { prepend: true }),
       };
 
-    case 'ARCHIVE_BATCHES':
+    case "ARCHIVE_BATCHES":
       return archiveBatches(state, action.batches);
 
-    case 'DELETE_IMAGE':
+    case "DELETE_IMAGE":
       return deleteImages(state, [action.imageId]);
 
-    case 'DELETE_IMAGES':
+    case "DELETE_IMAGES":
       return deleteImages(state, action.imageIds);
 
-    case 'TOGGLE_IMAGE_FAVORITE':
+    case "TOGGLE_IMAGE_FAVORITE":
       return {
         ...state,
         batches: state.batches.map((batch) => ({
@@ -349,7 +352,7 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         })),
       };
 
-    case 'CLEAR_WORKSPACE': {
+    case "CLEAR_WORKSPACE": {
       const batchesToArchive = state.batches.filter((batch) =>
         belongsToWorkspace(batch, action.workspaceId),
       );
@@ -360,13 +363,13 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
       return archiveBatches(nextState, batchesToArchive);
     }
 
-    case 'CLEAR_ALL_BATCHES':
+    case "CLEAR_ALL_BATCHES":
       return {
         ...state,
         batches: [],
       };
 
-    case 'RESTORE_FROM_TRASH': {
+    case "RESTORE_FROM_TRASH": {
       const batchToRestore = state.trash.find((batch) => batch.id === action.batchId);
       if (!batchToRestore) {
         return state;
@@ -380,7 +383,7 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
       };
     }
 
-    case 'RESTORE_ALL_FROM_TRASH':
+    case "RESTORE_ALL_FROM_TRASH":
       return {
         ...state,
         trash: [],
@@ -388,19 +391,19 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         workspaces: ensureWorkspacesForBatches(state.workspaces, state.trash),
       };
 
-    case 'EMPTY_TRASH':
+    case "EMPTY_TRASH":
       return {
         ...state,
         trash: [],
       };
 
-    case 'SET_BACKGROUND_ENABLED':
+    case "SET_BACKGROUND_ENABLED":
       return {
         ...state,
         isBackgroundEnabled: action.enabled,
       };
 
-    case 'UPDATE_BACKGROUND_CONFIG':
+    case "UPDATE_BACKGROUND_CONFIG":
       return {
         ...state,
         bgConfig: {
