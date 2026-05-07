@@ -8,6 +8,7 @@ import { resolveLibraryPath, toPublicAssetUrl } from './library';
 import { log } from './logger';
 import { createCodexTurn } from './codex';
 import { embedMetadata } from './metadataEmbedder';
+import { parsePromptTransport } from '../../../packages/shared/src';
 import type { Job } from '../../../packages/shared/src';
 
 const runningJobs = new Set<string>();
@@ -56,21 +57,46 @@ function createDryRunAsset(job: Job) {
   });
 }
 
+function buildCatalogGenerationConfig(prompt: string) {
+  const parsedPrompt = parsePromptTransport(prompt);
+
+  return {
+    prompt: parsedPrompt.prompt,
+    recipeContext: parsedPrompt.recipeContext,
+    recipeId: parsedPrompt.recipeId,
+    recipeParams: null,
+    attachments: [],
+    aspectRatio: parsedPrompt.aspectRatio,
+    imageSize: parsedPrompt.imageSize,
+    negativePrompt: parsedPrompt.negativePrompt,
+    temperature: 0.8,
+    model: 'codex-imagegen',
+    batchCount: 1,
+    useThinkingAndSearch: false,
+  };
+}
+
 async function runDryJob(job: Job) {
   addJobEvent(job.id, 'dry_run.started', 'Dry run asset creation started.');
   log('info', 'worker', 'Dry run job started.', job.id);
   await Bun.sleep(500);
   const asset = createDryRunAsset(job);
+  const parsedPrompt = parsePromptTransport(job.finalPromptUsed);
   const catalogImage = registerCatalogImage({
     filePath: asset.filePath,
     thumbnailPath: asset.thumbnailPath,
     prompt: asset.prompt,
+    negativePrompt: parsedPrompt.negativePrompt || null,
+    aspectRatio: parsedPrompt.aspectRatio,
+    imageSize: parsedPrompt.imageSize,
     width: asset.width,
     height: asset.height,
     mimeType: asset.mimeType,
     fileSizeBytes: statSync(asset.filePath).size,
     jobId: asset.jobId,
     workspaceId: asset.projectId,
+    recipeId: parsedPrompt.recipeId,
+    generationConfig: buildCatalogGenerationConfig(job.finalPromptUsed),
   });
   addJobEvent(job.id, 'asset.created', 'Dry run asset created.', { assetId: asset.id });
   publishEvent('asset.created', asset);
@@ -126,22 +152,30 @@ async function runCodexJob(job: Job) {
     height: null,
     mimeType,
   });
+  const parsedPrompt = parsePromptTransport(job.finalPromptUsed);
   const catalogImage = registerCatalogImage({
     filePath: asset.filePath,
     thumbnailPath: asset.thumbnailPath,
     prompt: asset.prompt,
+    negativePrompt: parsedPrompt.negativePrompt || null,
+    aspectRatio: parsedPrompt.aspectRatio,
+    imageSize: parsedPrompt.imageSize,
     width: asset.width,
     height: asset.height,
     mimeType: asset.mimeType,
     fileSizeBytes: statSync(asset.filePath).size,
     jobId: asset.jobId,
     workspaceId: asset.projectId,
+    recipeId: parsedPrompt.recipeId,
+    generationConfig: buildCatalogGenerationConfig(job.finalPromptUsed),
   });
   void embedMetadata(asset.filePath, {
     prompt: job.finalPromptUsed,
-    aspectRatio: job.finalPromptUsed.match(/Aspect ratio:\s*([0-9]+:[0-9]+)/)?.[1] ?? null,
-    imageSize: job.finalPromptUsed.match(/ImageGen output size:\s*([^\n]+)/)?.[1]?.trim() ?? null,
+    negativePrompt: parsedPrompt.negativePrompt || null,
+    aspectRatio: parsedPrompt.aspectRatio,
+    imageSize: parsedPrompt.imageSize,
     model: 'codex-imagegen',
+    recipe: parsedPrompt.recipeId,
     batchId: job.id,
     generatedAt: new Date().toISOString(),
     studioVersion: '0.0.0',
