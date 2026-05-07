@@ -85,7 +85,7 @@ export interface CatalogImage {
   isDeleted: boolean;
   deletedAt: string | null;
   tags: string[];
-  generationConfig: unknown | null;
+  generationConfig: Record<string, unknown> | null;
   createdAt: string;
 }
 

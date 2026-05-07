@@ -352,12 +352,12 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   };
 
   const handleDownloadClick = () => {
-    executeDownload();
+    void executeDownload();
   };
 
   const handleCopyPrompt = () => {
     if (!currentImage || copiedPrompt) return;
-    navigator.clipboard.writeText(currentImage.config.prompt || '');
+    void navigator.clipboard.writeText(currentImage.config.prompt || '');
     setCopiedPrompt(true);
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = window.setTimeout(() => setCopiedPrompt(false), 2000);
@@ -389,11 +389,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 key={img.id}
                 onClick={() => handleJumpTo(idx)}
                 className={`relative h-10 w-10 flex-shrink-0 rounded-xl overflow-hidden transition-all duration-300 snap-center border cursor-pointer
-                            ${
-                              idx === currentIndex
-                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
-                                : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
-                            }
+                            ${idx === currentIndex
+                    ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
+                    : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
+                  }
                         `}
               >
                 <img
@@ -413,8 +412,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           <div className="flex items-center gap-1">
             <button
               onClick={() => {
-                if (!document.fullscreenElement) containerRef.current?.requestFullscreen();
-                else document.exitFullscreen();
+                if (!document.fullscreenElement) void containerRef.current?.requestFullscreen();
+                else void document.exitFullscreen();
                 setIsFullscreen(!isFullscreen);
               }}
               className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-zinc-500 hover:text-white transition-all cursor-pointer"

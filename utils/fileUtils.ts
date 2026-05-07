@@ -1,6 +1,11 @@
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 import type { GenerationBatch, GeneratedImageWithConfig } from '../types';
+import { runtimeLogger } from './runtimeLogger';
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null;
+}
 
 export const downloadImage = (src: string, filename: string) => {
   const link = document.createElement('a');
@@ -66,7 +71,7 @@ export const downloadMultipleImagesAsZip = async (
       );
       zip.file(filename, blob);
     } catch (err) {
-      console.error(`Failed to fetch image ${img.id} for zip:`, err);
+      runtimeLogger.error(`Failed to fetch image ${img.id} for zip`, err);
     }
   });
 
@@ -75,7 +80,10 @@ export const downloadMultipleImagesAsZip = async (
   saveAs(content, zipFilename);
 };
 
-export const exportToJson = (data: any, filename: string) => {
+/**
+ * Export any serializable payload as a downloadable JSON file.
+ */
+export const exportToJson = <T>(data: T, filename: string) => {
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
@@ -87,18 +95,21 @@ export const exportToJson = (data: any, filename: string) => {
   URL.revokeObjectURL(url);
 };
 
-export const validateVault = (data: any): data is GenerationBatch[] => {
+/**
+ * Validate the persisted vault payload before replacing the current batch cache.
+ */
+export const validateVault = (data: unknown): data is GenerationBatch[] => {
   if (!Array.isArray(data)) return false;
 
   return data.every((batch) => {
-    if (typeof batch !== 'object' || batch === null) return false;
+    if (!isRecord(batch)) return false;
     if (typeof batch.id !== 'string') return false;
     if (typeof batch.createdAt !== 'number') return false;
-    if (typeof batch.config !== 'object' || batch.config === null) return false;
+    if (!isRecord(batch.config)) return false;
     if (!Array.isArray(batch.images)) return false;
 
-    return batch.images.every((img: any) => {
-      if (typeof img !== 'object' || img === null) return false;
+    return batch.images.every((img) => {
+      if (!isRecord(img)) return false;
       if (typeof img.id !== 'string') return false;
       if (typeof img.src !== 'string') return false;
       if (typeof img.batchId !== 'string') return false;
@@ -108,14 +119,17 @@ export const validateVault = (data: any): data is GenerationBatch[] => {
   });
 };
 
-export const readJsonFile = (file: File): Promise<any> => {
+/**
+ * Read a user-provided JSON file and parse it into a typed payload.
+ */
+export const readJsonFile = <T = unknown>(file: File): Promise<T> => {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = (e) => {
       try {
-        const json = JSON.parse(e.target?.result as string);
+        const json = JSON.parse(e.target?.result as string) as T;
         resolve(json);
-      } catch (err) {
+      } catch {
         reject(new Error('Invalid JSON file format'));
       }
     };

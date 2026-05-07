@@ -33,7 +33,8 @@ Este archivo resume la tanda de mejoras aplicada durante la revisión integral d
 7. **Higiene del repositorio**
    - creación de `.env` base con placeholders seguros;
    - mejora de `.gitignore`;
-   - eliminación de logs y artefactos temporales que no debían seguir en el repositorio.
+   - eliminación de logs y artefactos temporales que no debían seguir en el repositorio;
+   - limpieza de `output/`, `tmp/` y `generated/` para sacar del árbol trackeado imágenes de trabajo, prompts temporales y otros restos locales incompatibles con un release open source.
 
 8. **Documentación**
    - actualización de `README.md`, `CONTRIBUTING.md`, `docs/DEV_GUIDE.md` y `docs/TROUBLESHOOTING.md`;

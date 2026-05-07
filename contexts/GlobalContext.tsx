@@ -12,6 +12,7 @@ import React, {
 import { useToasts, ToastMessage } from '../hooks/useToasts';
 import { usePanelManager } from '../hooks/usePanelManager';
 import { addLogEntry } from '../utils/logger';
+import { runtimeLogger } from '../utils/runtimeLogger';
 import { DEFAULT_BACKGROUND_CONFIG } from '../constants';
 import { get, set } from '../utils/idb';
 import type { LogEntry, Workspace, GenerationBatch, BackgroundConfig } from '../types';
@@ -67,6 +68,10 @@ interface GlobalContextType {
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);
 
+/**
+ * Persist a hydrated slice of global state into IndexedDB with a small debounce
+ * so rapid UI changes do not spam writes.
+ */
 function usePersistedIdbValue<T>(key: string, value: T, isHydrated: boolean) {
   const timeoutRef = useRef<number | null>(null);
 
@@ -79,7 +84,7 @@ function usePersistedIdbValue<T>(key: string, value: T, isHydrated: boolean) {
 
     timeoutRef.current = window.setTimeout(() => {
       set(key, value).catch((error) => {
-        console.error(`Error setting IndexedDB key “${key}”:`, error);
+        runtimeLogger.error(`Error setting IndexedDB key "${key}"`, error);
       });
     }, 300);
 
@@ -127,7 +132,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
           },
         });
       } catch (error) {
-        console.error('Error hydrating global state:', error);
+        runtimeLogger.error('Error hydrating global state', error);
       } finally {
         if (!cancelled) {
           setIsHydrated(true);
@@ -153,7 +158,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
     try {
       window.localStorage.setItem('isBackgroundEnabled', JSON.stringify(state.isBackgroundEnabled));
     } catch (error) {
-      console.warn('Error setting localStorage key "isBackgroundEnabled":', error);
+      runtimeLogger.warn('Error setting localStorage key "isBackgroundEnabled"', error);
     }
   }, [isHydrated, state.isBackgroundEnabled]);
 

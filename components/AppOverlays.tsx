@@ -1,4 +1,5 @@
 import React from 'react';
+import type { HealthResponse } from '../packages/shared/src';
 
 import type {
   Attachment,
@@ -48,7 +49,7 @@ interface AppOverlaysProps {
   handleDeepScan: () => void | Promise<void>;
   apiBase: string;
   onboardingError: string | null;
-  onboardingHealth: any;
+  onboardingHealth: HealthResponse | null;
   isCheckingOnboarding: boolean;
   isDesktopRuntime: boolean;
   isOnboardingOpen: boolean;

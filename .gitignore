@@ -18,6 +18,10 @@ dist
 dist-ssr
 .vite
 coverage
+output/
+outputs/
+tmp/
+generated/
 .env
 .env.local
 .env.*

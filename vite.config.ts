@@ -34,12 +34,14 @@ export default defineConfig({
   lint: {
     plugins: ['oxc', 'typescript', 'react'],
     categories: {
-      correctness: 'off',
+      correctness: 'error',
     },
     env: {
       builtin: true,
     },
     rules: {
+      'no-console': 'error',
+      'no-debugger': 'error',
       'no-control-regex': 'off',
       'no-unused-vars': 'off',
       'no-useless-escape': 'off',
@@ -70,7 +72,15 @@ export default defineConfig({
         },
       },
       {
-        files: ['apps/local-server/src/**/*.ts', 'scripts/**/*.ts'],
+        files: [
+          'apps/local-server/src/**/*.ts',
+          'scripts/**/*.ts',
+          'electron/**/*.cjs',
+          'utils/runtimeLogger.ts',
+        ],
+        rules: {
+          'no-console': 'off',
+        },
         env: {
           es2022: true,
           node: true,

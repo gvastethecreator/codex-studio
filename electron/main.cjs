@@ -76,7 +76,7 @@ function createMainWindow() {
   return mainWindow;
 }
 
-app.whenReady().then(() => {
+void app.whenReady().then(() => {
   createMainWindow();
 
   app.on('activate', () => {

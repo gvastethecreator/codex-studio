@@ -31,7 +31,7 @@ type MotionState = {
   transition?: MotionTransition;
 };
 
-type VariantResolver = MotionState | ((...args: any[]) => MotionState);
+type VariantResolver = MotionState | ((custom: never) => MotionState);
 
 export type Variants = Record<string, VariantResolver>;
 
@@ -158,7 +158,7 @@ function resolveState(
   if (typeof state === 'string') {
     const variant = variants?.[state];
     if (!variant) return null;
-    return typeof variant === 'function' ? variant(custom) : variant;
+    return typeof variant === 'function' ? variant(custom as never) : variant;
   }
 
   return state;

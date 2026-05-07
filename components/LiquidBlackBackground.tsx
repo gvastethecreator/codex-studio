@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { BackgroundConfig } from '../types';
 import { MODELS } from '../constants';
+import { runtimeLogger } from '../utils/runtimeLogger';
 
 // --- CONFIGURACIÓN DEL FONDO LÍQUIDO (MATRIX) ---
 // Modifica estos valores para cambiar la apariencia del fondo
@@ -264,7 +265,7 @@ export default function LiquidBackground({
       gl.shaderSource(shader, source);
       gl.compileShader(shader);
       if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-        console.error('Shader compile error:', gl.getShaderInfoLog(shader));
+        runtimeLogger.error('Shader compile error', gl.getShaderInfoLog(shader));
         gl.deleteShader(shader);
         return null;
       }
@@ -284,7 +285,7 @@ export default function LiquidBackground({
     gl.linkProgram(program);
 
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-      console.error('Program link error:', gl.getProgramInfoLog(program));
+      runtimeLogger.error('Program link error', gl.getProgramInfoLog(program));
       return;
     }
 

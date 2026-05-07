@@ -28,7 +28,7 @@ export interface CatalogImage {
   isDeleted: boolean;
   deletedAt: string | null;
   tags: string[];
-  generationConfig: unknown | null;
+  generationConfig: Record<string, unknown> | null;
   createdAt: string;
 }
 
@@ -75,7 +75,7 @@ function mapCatalogImage(row: any): CatalogImage {
     isDeleted: Boolean(row.is_deleted),
     deletedAt: row.deleted_at,
     tags: parseJson<string[]>(row.tags, []),
-    generationConfig: parseJson<unknown | null>(row.generation_config, null),
+    generationConfig: parseJson<Record<string, unknown> | null>(row.generation_config, null),
     createdAt: row.created_at,
   };
 }
@@ -97,7 +97,7 @@ export function registerCatalogImage(input: {
   batchId?: string | null;
   recipeId?: string | null;
   tags?: string[];
-  generationConfig?: unknown | null;
+  generationConfig?: Record<string, unknown> | null;
 }) {
   const library = input.libraryId ? getLibrary(input.libraryId) : getDefaultLibrary();
   if (!library) throw new Error('No studio library registered.');

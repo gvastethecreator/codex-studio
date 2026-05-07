@@ -9,6 +9,7 @@ import type {
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import useIndexedDBStorage from './useIndexedDBStorage';
 import { normalizeImageGenRatio } from '../utils/imageGenSizing';
+import { formatErrorMessage } from '../utils/runtimeLogger';
 
 interface UseGenerationConfigProps {
   log: (message: string) => void;
@@ -34,7 +35,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
       }));
       log(`Context trimmed to ${maxAttachments} for current model.`);
     }
-  }, [maxAttachments, log, setGenerationConfig]);
+  }, [generationConfig.attachments.length, maxAttachments, log, setGenerationConfig]);
 
   useEffect(() => {
     const normalizedRatio = normalizeImageGenRatio(generationConfig.aspectRatio);
@@ -91,7 +92,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
             strength: 0.25,
           });
         } catch (err) {
-          console.error('Error reading file:', err);
+          log(`Failed to read attachment "${file.name}": ${formatErrorMessage(err)}`);
         }
       }
 
@@ -117,7 +118,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const files = event.target.files;
       if (files) {
-        processFiles(Array.from(files));
+        void processFiles(Array.from(files));
         event.target.value = '';
       }
     },
@@ -126,7 +127,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
 
   const handlePastedFiles = useCallback(
     (files: File[]) => {
-      processFiles(files);
+      void processFiles(files);
     },
     [processFiles],
   );

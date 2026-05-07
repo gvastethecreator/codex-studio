@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { get, set } from '../utils/idb';
+import { runtimeLogger } from '../utils/runtimeLogger';
 
 /**
  * A custom hook to manage state persistence in IndexedDB.
@@ -32,7 +33,7 @@ function useIndexedDBStorage<T>(
         }
       })
       .catch((error) => {
-        console.error(`Error reading IndexedDB key “${key}”:`, error);
+        runtimeLogger.error(`Error reading IndexedDB key "${key}"`, error);
         if (isMounted) setIsInitialized(true);
       });
 
@@ -41,15 +42,18 @@ function useIndexedDBStorage<T>(
     };
   }, [key]);
 
-  const setValue = useCallback((value: T | ((val: T) => T)) => {
-    try {
-      setStoredValue((prev) => {
-        return value instanceof Function ? value(prev) : value;
-      });
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
+  const setValue = useCallback(
+    (value: T | ((val: T) => T)) => {
+      try {
+        setStoredValue((prev) => {
+          return value instanceof Function ? value(prev) : value;
+        });
+      } catch (error) {
+        runtimeLogger.error(`Error updating IndexedDB-backed state for "${key}"`, error);
+      }
+    },
+    [key],
+  );
 
   // Use an effect to save to IDB whenever storedValue changes
   useEffect(() => {
@@ -60,7 +64,7 @@ function useIndexedDBStorage<T>(
     }
     timeoutRef.current = window.setTimeout(() => {
       set(key, storedValue).catch((error) => {
-        console.error(`Error setting IndexedDB key “${key}”:`, error);
+        runtimeLogger.error(`Error setting IndexedDB key "${key}"`, error);
       });
     }, 300);
 

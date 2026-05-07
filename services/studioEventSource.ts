@@ -14,7 +14,7 @@ export class JobWatchTimeoutError extends Error {
 }
 
 export interface StudioEventStream {
-  onJobUpdate(jobIdOrWildcard: string | '*', callback: Listener<Job>): Unsubscribe;
+  onJobUpdate(jobIdOrWildcard: string, callback: Listener<Job>): Unsubscribe;
   onAssetAdded(callback: Listener<Asset>): Unsubscribe;
   onLogAdded(callback: Listener<SystemLog>): Unsubscribe;
   onConnectionChange(callback: Listener<boolean>): Unsubscribe;
@@ -39,7 +39,7 @@ class BrowserStudioEventStream implements StudioEventStream {
     this.connect();
   }
 
-  onJobUpdate(jobIdOrWildcard: string | '*', callback: Listener<Job>) {
+  onJobUpdate(jobIdOrWildcard: string, callback: Listener<Job>) {
     const listeners = this.jobListeners.get(jobIdOrWildcard) ?? new Set<Listener<Job>>();
     listeners.add(callback);
     this.jobListeners.set(jobIdOrWildcard, listeners);

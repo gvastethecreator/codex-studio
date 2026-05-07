@@ -147,6 +147,47 @@ import { startViewTransition } from '../../utils/transitionUtils';
 
 const previewDataUrlCache = new Map<string, string>();
 
+function describeStyleValue(value: unknown, fallback = 'Standard'): string {
+  if (typeof value === 'string') {
+    return value.trim() || fallback;
+  }
+
+  if (typeof value === 'number' || typeof value === 'boolean') {
+    return `${value}`;
+  }
+
+  if (Array.isArray(value)) {
+    const flattened = value
+      .map((entry) => describeStyleValue(entry, ''))
+      .filter(Boolean)
+      .join(', ');
+
+    return flattened || fallback;
+  }
+
+  if (value && typeof value === 'object') {
+    try {
+      return JSON.stringify(value);
+    } catch {
+      return fallback;
+    }
+  }
+
+  return fallback;
+}
+
+function describePreviewValue(value: unknown): string | null {
+  if (typeof value === 'string') {
+    return value.trim() || null;
+  }
+
+  if (typeof value === 'number' || typeof value === 'boolean') {
+    return `${value}`;
+  }
+
+  return null;
+}
+
 async function loadPreviewAttachment(previewUrl: string, preset: StylePresetDef) {
   let dataUrl = previewDataUrlCache.get(previewUrl);
 
@@ -159,7 +200,14 @@ async function loadPreviewAttachment(previewUrl: string, preset: StylePresetDef)
     const blob = await response.blob();
     dataUrl = await new Promise<string>((resolve, reject) => {
       const reader = new FileReader();
-      reader.onload = () => resolve(String(reader.result));
+      reader.onload = () => {
+        if (typeof reader.result !== 'string') {
+          reject(new Error('Unable to convert style preview into a data URL'));
+          return;
+        }
+
+        resolve(reader.result);
+      };
       reader.onerror = () => reject(reader.error);
       reader.readAsDataURL(blob);
     });
@@ -350,6 +398,27 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const fidelity = effectiveImage?.strength || 0.5;
     const intensity = styleStrength;
     const isPhotoPackFallback = ['pack_09', 'pack_10', 'pack_11'].includes(currentPackId);
+    const subjectTreatment = describeStyleValue(
+      preset.style.subject_treatment ?? preset.style.form_and_line,
+    );
+    const colorTone = describeStyleValue(
+      preset.style.color_and_tone ?? preset.style.color_palette,
+    );
+    const lightingShadow = describeStyleValue(
+      preset.style.lighting_and_shadow ?? preset.style.lighting_setup,
+    );
+    const textureMaterial = describeStyleValue(
+      preset.style.texture_and_material ?? preset.style.material_texture,
+    );
+    const cameraComposition = describeStyleValue(
+      preset.style.camera_and_composition ?? preset.style.spatial_distortion,
+    );
+    const atmosphereMood = describeStyleValue(
+      preset.style.atmosphere_and_mood ?? preset.style.atmosphere,
+    );
+    const renderingQuality = describeStyleValue(
+      preset.style.rendering_and_quality ?? preset.style.render_quality,
+    );
 
     const presetNegative =
       preset.negativePrompt ||
@@ -423,16 +492,13 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       compositionRule: compositionRule.trim(),
       styleEmphasis: styleEmphasis.trim(),
       aesthetic: preset.style.aesthetic,
-      subjectTreatment: preset.style.subject_treatment || preset.style.form_and_line || 'Standard',
-      colorTone: preset.style.color_and_tone || preset.style.color_palette || 'Standard',
-      lightingShadow: preset.style.lighting_and_shadow || preset.style.lighting_setup || 'Standard',
-      textureMaterial:
-        preset.style.texture_and_material || preset.style.material_texture || 'Standard',
-      cameraComposition:
-        preset.style.camera_and_composition || preset.style.spatial_distortion || 'Standard',
-      atmosphereMood: preset.style.atmosphere_and_mood || preset.style.atmosphere || 'Standard',
-      renderingQuality:
-        preset.style.rendering_and_quality || preset.style.render_quality || 'Standard',
+      subjectTreatment,
+      colorTone,
+      lightingShadow,
+      textureMaterial,
+      cameraComposition,
+      atmosphereMood,
+      renderingQuality,
     };
 
     onGenerate(undefined, {
@@ -452,15 +518,15 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const promptText = `
 **Style:** ${preset.name}
 **Aesthetic:** ${preset.style.aesthetic}
-**Subject:** ${preset.style.subject_treatment || preset.style.form_and_line || 'Standard'}
-**Color:** ${preset.style.color_and_tone || preset.style.color_palette || 'Standard'}
-**Lighting:** ${preset.style.lighting_and_shadow || preset.style.lighting_setup || 'Standard'}
-**Texture:** ${preset.style.texture_and_material || preset.style.material_texture || 'Standard'}
-**Camera:** ${preset.style.camera_and_composition || preset.style.spatial_distortion || 'Standard'}
-**Mood:** ${preset.style.atmosphere_and_mood || preset.style.atmosphere || 'Standard'}
-**Quality:** ${preset.style.rendering_and_quality || preset.style.render_quality || 'Standard'}
+**Subject:** ${describeStyleValue(preset.style.subject_treatment ?? preset.style.form_and_line)}
+**Color:** ${describeStyleValue(preset.style.color_and_tone ?? preset.style.color_palette)}
+**Lighting:** ${describeStyleValue(preset.style.lighting_and_shadow ?? preset.style.lighting_setup)}
+**Texture:** ${describeStyleValue(preset.style.texture_and_material ?? preset.style.material_texture)}
+**Camera:** ${describeStyleValue(preset.style.camera_and_composition ?? preset.style.spatial_distortion)}
+**Mood:** ${describeStyleValue(preset.style.atmosphere_and_mood ?? preset.style.atmosphere)}
+**Quality:** ${describeStyleValue(preset.style.rendering_and_quality ?? preset.style.render_quality)}
 `.trim();
-    navigator.clipboard.writeText(promptText);
+    void navigator.clipboard.writeText(promptText);
     setCopiedStyleId(preset.id);
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = window.setTimeout(() => setCopiedStyleId(null), 2000);
@@ -548,11 +614,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               </div>
               <div className="text-[10px] text-zinc-300 leading-relaxed font-mono flex flex-col gap-1 max-h-48 overflow-y-auto custom-scrollbar">
                 {Object.entries(preset.style).map(([key, value]) => {
-                  if (typeof value === 'object') return null;
+                  const previewValue = describePreviewValue(value);
+                  if (!previewValue) return null;
                   return (
                     <div key={key}>
                       <span className="text-zinc-500 capitalize">{key.replace(/_/g, ' ')}:</span>{' '}
-                      {String(value)}
+                      {previewValue}
                     </div>
                   );
                 })}
@@ -563,11 +630,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           <div
             className={`
                   group relative aspect-[3/4] rounded-xl overflow-hidden text-left transition-all duration-300 flex flex-col
-                  ${
-                    isActive
-                      ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
-                      : 'bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1'
-                  }
+                  ${isActive
+                ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
+                : 'bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1'
+              }
               `}
           >
             <div className="flex-1 relative overflow-hidden bg-black">
@@ -595,7 +661,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
-                          handleApplyStyle(preset);
+                          void handleApplyStyle(preset);
                         }}
                         className="p-1.5 bg-black/60 backdrop-blur-md rounded-lg hover:bg-accent-600 text-white transition-colors border border-white/10 shadow-lg"
                         title="Regenerate Style"
@@ -607,7 +673,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 </>
               ) : defaultImage ? (
                 <button
-                  onClick={() => handleApplyStyle(preset)}
+                  onClick={() => void handleApplyStyle(preset)}
                   disabled={isGenerating}
                   className="absolute inset-0 w-full h-full bg-zinc-900 cursor-pointer disabled:cursor-not-allowed"
                 >
@@ -624,7 +690,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 </button>
               ) : previewImage ? (
                 <button
-                  onClick={() => handleApplyStyle(preset)}
+                  onClick={() => void handleApplyStyle(preset)}
                   disabled={isGenerating}
                   className="absolute inset-0 w-full h-full bg-zinc-900 cursor-pointer disabled:cursor-not-allowed"
                 >
@@ -647,7 +713,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 </button>
               ) : (
                 <button
-                  onClick={() => handleApplyStyle(preset)}
+                  onClick={() => void handleApplyStyle(preset)}
                   disabled={isGenerating}
                   className="absolute inset-0 w-full h-full flex flex-col items-center justify-center gap-3 bg-zinc-900/50 hover:bg-zinc-800 transition-colors cursor-pointer"
                 >
@@ -682,7 +748,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             <div className="relative h-20 p-4 bg-zinc-900/90 backdrop-blur-md border-t border-white/5 flex flex-col justify-center text-left hover:bg-zinc-800 transition-colors z-20 group/label w-full">
               <div
-                onClick={() => !isGenerating && handleApplyStyle(preset)}
+                onClick={() => !isGenerating && void handleApplyStyle(preset)}
                 className={`flex-1 flex flex-col justify-center ${!isGenerating ? 'cursor-pointer' : ''}`}
               >
                 <div className="flex items-center justify-between w-full mb-1">
@@ -731,7 +797,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       toggleFavorite,
       handleCopyStylePrompt,
       isGenerating,
-      activeImage,
     ],
   );
 
@@ -852,11 +917,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             }}
             className={`
                     h-9 px-3 rounded-lg flex items-center gap-2 transition-all duration-300 relative overflow-hidden group flex-shrink-0
-                    ${
-                      currentPackId === FAVORITES_PACK_ID
-                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-                    }
+                    ${currentPackId === FAVORITES_PACK_ID
+                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+              }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -883,11 +947,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 }}
                 className={`
                             h-9 px-3 rounded-lg flex items-center gap-2 transition-all duration-300 relative overflow-hidden group flex-shrink-0
-                            ${
-                              isActive
-                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                            }
+                            ${isActive
+                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                  }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>

@@ -1,3 +1,5 @@
+import { runtimeLogger } from './runtimeLogger';
+
 /**
  * Creates a scaled down version of a base64 image for UI performance.
  * Optimized for space in IndexedDB and rendering speed.
@@ -8,7 +10,7 @@ export const createThumbnail = (dataUrl: string, maxDim: number = 320): Promise<
     if (!dataUrl.startsWith('data:')) {
       img.crossOrigin = 'anonymous';
     }
-    let timeoutId: any;
+    let timeoutId: ReturnType<typeof window.setTimeout> | null = null;
 
     const cleanup = () => {
       if (timeoutId) clearTimeout(timeoutId);
@@ -51,8 +53,8 @@ export const createThumbnail = (dataUrl: string, maxDim: number = 320): Promise<
         if (webpData.startsWith('data:image/webp')) {
           return resolve(webpData);
         }
-      } catch (e) {
-        console.warn('WebP thumbnail generation failed, falling back to JPEG');
+      } catch (error) {
+        runtimeLogger.warn('WebP thumbnail generation failed, falling back to JPEG', error);
       }
 
       resolve(canvas.toDataURL('image/jpeg', 0.7));
