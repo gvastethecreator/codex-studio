@@ -84,7 +84,7 @@ export function WorkspaceStrip({
                 return (
                     <div key={workspace.id} className="relative group shrink-0">
                         <Tooltip
-                            content={`Workspace ${workspace.name || label}: ${new Date(workspace.createdAt).toLocaleDateString()}`}
+                            content={`${workspace.name || `Workspace ${label}`} · created ${new Date(workspace.createdAt).toLocaleDateString()}`}
                             position="bottom"
                         >
                             <button
@@ -125,7 +125,7 @@ export function WorkspaceStrip({
                                         if (event.key === 'Escape') setEditingWorkspaceId(null);
                                     }}
                                     className="bg-black/50 border border-white/10 rounded-lg px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500 w-40"
-                                    placeholder="Workspace Name"
+                                    placeholder="Workspace name"
                                 />
                             </div>
                         )}
@@ -136,7 +136,7 @@ export function WorkspaceStrip({
                                     onDeleteWorkspace(workspace.id);
                                 }}
                                 className="absolute -top-1.5 -right-1.5 w-4.5 h-4.5 bg-red-500 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10 shadow-sm cursor-pointer"
-                                title="Delete Workspace"
+                                title="Delete workspace"
                             >
                                 <X size={11} strokeWidth={3} />
                             </button>
@@ -144,7 +144,7 @@ export function WorkspaceStrip({
                     </div>
                 );
             })}
-            <Tooltip content="Synthesize New Workspace" position="bottom">
+            <Tooltip content="Create workspace" position="bottom">
                 <button
                     onClick={onAddWorkspace}
                     className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/5 hover:bg-accent-500/20 text-zinc-600 border border-dashed border-white/10 transition-all cursor-pointer"

@@ -12,6 +12,7 @@ interface UseStudioGalleryProps {
   log: (message: string) => void;
   modalImage: GeneratedImageWithConfig | null;
   closeModal: () => void;
+  onRequestClearWorkspace?: (workspaceId: string, imageCount: number) => void;
 }
 
 /**
@@ -28,6 +29,7 @@ export function useStudioGallery({
   log,
   modalImage,
   closeModal,
+  onRequestClearWorkspace,
 }: UseStudioGalleryProps) {
   const workspaceBatches = useMemo(() => {
     return batches.filter(
@@ -56,6 +58,7 @@ export function useStudioGallery({
     log,
     modalImage,
     handleCloseModal: closeModal,
+    onRequestClearWorkspace,
   });
 
   const imagesWithConfig = useMemo(() => {

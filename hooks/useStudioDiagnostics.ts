@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { buildStudioDiagnosticsSnapshot } from '../lib/studioDiagnostics';
 import type { CodexAccountStatusResponse, HealthResponse } from '../packages/shared/src';
 import { getCodexAccountStatus, getStudioHealth } from '../services/localStudioService';
 
 interface UseStudioDiagnosticsOptions {
   initialHealth?: HealthResponse | null;
+  isBackendConnected?: boolean;
   refreshIntervalMs?: number;
 }
 
@@ -24,9 +26,10 @@ function buildFallbackAccountStatus(error: unknown): CodexAccountStatusResponse 
  */
 export function useStudioDiagnostics({
   initialHealth = null,
+  isBackendConnected = false,
   refreshIntervalMs = 30_000,
 }: UseStudioDiagnosticsOptions = {}) {
-  const [systemHealth, setSystemHealth] = useState<HealthResponse | null>(initialHealth);
+  const [health, setHealth] = useState<HealthResponse | null>(initialHealth);
   const [codexAccountStatus, setCodexAccountStatus] =
     useState<CodexAccountStatusResponse | null>(null);
   const [hasFetchedDiagnostics, setHasFetchedDiagnostics] = useState(false);
@@ -40,7 +43,7 @@ export function useStudioDiagnostics({
 
   useEffect(() => {
     if (initialHealth) {
-      setSystemHealth(initialHealth);
+      setHealth(initialHealth);
     }
   }, [initialHealth]);
 
@@ -52,7 +55,7 @@ export function useStudioDiagnostics({
 
     if (!isMountedRef.current) return;
 
-    setSystemHealth(healthResult.status === 'fulfilled' ? healthResult.value : null);
+    setHealth(healthResult.status === 'fulfilled' ? healthResult.value : null);
     setCodexAccountStatus(
       accountResult.status === 'fulfilled'
         ? accountResult.value
@@ -73,10 +76,18 @@ export function useStudioDiagnostics({
     };
   }, [refreshDiagnostics, refreshIntervalMs]);
 
+  const snapshot = buildStudioDiagnosticsSnapshot({
+    health,
+    codexAccountStatus,
+    hasFetchedDiagnostics,
+    isBackendConnected,
+  });
+
   return {
-    systemHealth,
+    health,
     codexAccountStatus,
     hasFetchedDiagnostics,
     refreshDiagnostics,
+    snapshot,
   };
 }

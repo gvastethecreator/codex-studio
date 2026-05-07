@@ -1,5 +1,6 @@
 import React from "react";
 
+import type { StudioDiagnosticsSnapshot } from '../lib/studioDiagnostics';
 import type {
   AspectRatio,
   GeneratedImage,
@@ -8,7 +9,7 @@ import type {
   QueueJob,
   Workspace,
 } from "../types";
-import type { HealthResponse, Job as StudioJob } from "../packages/shared/src";
+import type { Job as StudioJob } from "../packages/shared/src";
 
 import { LeftDebugPanel } from "./LeftDebugPanel";
 import { StudioGridSurface } from "./studio/StudioGridSurface";
@@ -61,8 +62,7 @@ export interface StudioPageProps {
   setBackgroundEnabled: (enabled: boolean) => void;
   activeServerJobCount: number;
   onInspectJob: (jobId: string) => void;
-  health: HealthResponse | null;
-  isBackendConnected: boolean;
+  diagnostics: StudioDiagnosticsSnapshot;
   onResetStudio: () => void | Promise<void>;
   isResettingStudio: boolean;
 }
@@ -110,8 +110,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({
   setBackgroundEnabled,
   activeServerJobCount,
   onInspectJob,
-  health,
-  isBackendConnected,
+  diagnostics,
   onResetStudio,
   isResettingStudio,
 }) => {
@@ -176,8 +175,7 @@ export const StudioPage: React.FC<StudioPageProps> = ({
         setBackgroundEnabled={setBackgroundEnabled}
         activeServerJobCount={activeServerJobCount}
         onInspectJob={onInspectJob}
-        health={health}
-        isBackendConnected={isBackendConnected}
+        diagnostics={diagnostics}
         onResetStudio={onResetStudio}
         isResettingStudio={isResettingStudio}
       />

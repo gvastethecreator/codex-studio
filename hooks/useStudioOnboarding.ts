@@ -78,7 +78,7 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
       const result = await startStudioAppServer();
       await refreshHealth();
       addToast(
-        result.running ? 'codex app-server started' : 'Could not start codex app-server',
+        result.running ? 'Codex app-server started' : 'Could not start Codex app-server',
         result.running ? 'success' : 'warning',
       );
     } catch (startError) {

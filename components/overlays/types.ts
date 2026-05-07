@@ -12,6 +12,7 @@ import type {
   LogEntry,
   Workspace,
 } from '../../types';
+import type { ConfirmationRequest } from '../../hooks/useStudioActionConfirmations';
 
 export interface StudioImageOverlaysProps {
   modalImage: GeneratedImageWithConfig | null;
@@ -76,4 +77,10 @@ export interface StudioWorkspaceOverlaysProps {
   handleDismissLimitModal: () => void;
   handleDownloadAndClear: () => void | Promise<void>;
   batchCount: number;
+}
+
+export interface StudioConfirmationOverlayProps {
+  pendingConfirmation: ConfirmationRequest | null;
+  closeConfirmation: () => void;
+  confirmPendingAction: () => void | Promise<void>;
 }

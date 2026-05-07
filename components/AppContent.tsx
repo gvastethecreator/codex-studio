@@ -2,12 +2,13 @@ import React, { useCallback } from 'react';
 
 import { useHashRouter } from '../hooks/useHashRouter';
 import { useImageInputSurface } from '../hooks/useImageInputSurface';
-import { useStudioDiagnostics } from '../hooks/useStudioDiagnostics';
+import { useStudioActionConfirmations } from '../hooks/useStudioActionConfirmations';
 import { useStudioGallery } from '../hooks/useStudioGallery';
 import { useStudioGenerationActions } from '../hooks/useStudioGenerationActions';
 import { useStudioJobInspector } from '../hooks/useStudioJobInspector';
 import { useStudioNavigation } from '../hooks/useStudioNavigation';
 import { useStudioReset } from '../hooks/useStudioReset';
+import { useStudioRuntime } from '../hooks/useStudioRuntime';
 import { useVaultTransfer } from '../hooks/useVaultTransfer';
 import { useStudioViewState } from '../hooks/useStudioViewState';
 import { useWorkspaceStrip } from '../hooks/useWorkspaceStrip';
@@ -19,6 +20,7 @@ import type { RecipeId } from '../types';
 
 import {
   AppOverlays,
+  type StudioConfirmationOverlayProps,
   type StudioImageOverlaysProps,
   type StudioSystemOverlaysProps,
   type StudioWorkspaceOverlaysProps,
@@ -34,8 +36,6 @@ import ToastContainer from './ToastContainer';
 import { useGlobal } from '../contexts/GlobalContext';
 import { useGeneration } from '../contexts/GenerationContext';
 import { useQueueManager } from '../hooks/useQueueManager';
-import { useStudioOnboarding } from '../hooks/useStudioOnboarding';
-import { useLocalStudioSync } from '../hooks/useLocalStudioSync';
 
 interface AppContentProps { }
 
@@ -101,45 +101,14 @@ export const AppContent: React.FC<AppContentProps> = () => {
       addToast,
       cancelPersistentJob: handleCancelPersistentJob,
     });
-  const {
-    studioJobs,
-    mergedLogs,
-    activeServerJobCount,
-    isBackendConnected,
-    verifyCodexSession,
-    recoverOrphanedBatches,
-  } = useLocalStudioSync({
+  const { sync, onboarding, diagnostics, refreshRuntime } = useStudioRuntime({
     logs,
     log,
     batches,
     mergeBatches,
     addToast,
-  });
-  const {
-    apiBase,
-    closeOnboarding,
-    completeOnboarding,
-    ensureAppServer,
-    error: onboardingError,
-    health: onboardingHealth,
-    isChecking: isCheckingOnboarding,
-    isDesktopRuntime,
-    isOpen: isOnboardingOpen,
-    isReady: isOnboardingReady,
-    isStartingAppServer,
-    openOnboarding,
-    refreshHealth: refreshOnboardingHealth,
-  } = useStudioOnboarding({
-    log,
-    addToast,
     shouldAutoOpen: batches.length === 0,
   });
-  const { systemHealth, codexAccountStatus, hasFetchedDiagnostics, refreshDiagnostics } =
-    useStudioDiagnostics({
-      initialHealth: onboardingHealth,
-    });
-
-  const effectiveStudioHealth = systemHealth ?? onboardingHealth;
   const {
     selectedStudioJobId,
     selectedJobDetail,
@@ -147,7 +116,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
     inspectStudioJob,
     clearSelectedJob,
   } = useStudioJobInspector({
-    studioJobs,
+    studioJobs: sync.studioJobs,
     addToast,
   });
   const { importVault, exportVault, downloadAndClearWorkspace } = useVaultTransfer({
@@ -157,19 +126,6 @@ export const AppContent: React.FC<AppContentProps> = () => {
     clearAllBatches,
     addToast,
     log,
-  });
-  const {
-    workspacesWithThumbs,
-    handleAddWorkspace,
-    handleDeleteWorkspace,
-    handleRenameWorkspace,
-  } = useWorkspaceStrip({
-    workspaces,
-    batches,
-    createWorkspace,
-    deleteWorkspace,
-    renameWorkspace,
-    addToast,
   });
   const {
     isQueueOpen,
@@ -261,10 +217,39 @@ export const AppContent: React.FC<AppContentProps> = () => {
     addToast,
     resetStudioState,
     resetQueue,
-    refreshOnboardingHealth,
-    refreshDiagnostics,
+    refreshRuntime,
     clearGenerationState: resetGenerationUi,
     clearUiState: clearStudioUiState,
+  });
+  const {
+    pendingConfirmation,
+    closeConfirmation,
+    confirmPendingAction,
+    requestClearWorkspace,
+    requestDeleteWorkspace,
+    requestRestoreAllTrash,
+    requestEmptyTrash,
+    requestResetStudio,
+  } = useStudioActionConfirmations({
+    clearWorkspace,
+    deleteWorkspace,
+    resetStudio,
+    restoreAllFromTrash,
+    emptyTrash,
+  });
+  const {
+    workspacesWithThumbs,
+    handleAddWorkspace,
+    handleDeleteWorkspace,
+    handleRenameWorkspace,
+  } = useWorkspaceStrip({
+    workspaces,
+    batches,
+    createWorkspace,
+    deleteWorkspace,
+    renameWorkspace,
+    addToast,
+    onRequestDeleteWorkspace: requestDeleteWorkspace,
   });
 
   const handleInspectStudioJob = useCallback(
@@ -306,6 +291,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
     log,
     modalImage: modal.modalImage,
     closeModal: handleCloseModal,
+    onRequestClearWorkspace: requestClearWorkspace,
   });
 
   const { isDragging, handleDragOver, handleDragLeave, handleDrop } = useImageInputSurface({
@@ -331,43 +317,48 @@ export const AppContent: React.FC<AppContentProps> = () => {
   const systemOverlays: StudioSystemOverlaysProps = {
     isDebugPanelOpen,
     closeDebugPanel,
-    mergedLogs,
+    mergedLogs: sync.mergedLogs,
     isDashboardModalOpen,
     closeDashboard,
     batches,
     workspaces,
-    studioJobs,
+    studioJobs: sync.studioJobs,
     imagesCount: imagesWithConfig.length,
     selectedJobDetail,
     isLoadingSelectedJob,
     onInspectJob: handleInspectStudioJob,
     onClearSelectedJob: clearSelectedJob,
     handleImportVault: importVault,
-    handleDeepScan: recoverOrphanedBatches,
-    apiBase,
-    onboardingError,
-    onboardingHealth: effectiveStudioHealth,
-    isCheckingOnboarding,
-    isDesktopRuntime,
-    isOnboardingOpen,
-    isOnboardingReady,
-    isStartingAppServer,
-    closeOnboarding: () => startViewTransition(() => closeOnboarding()),
-    completeOnboarding: () => startViewTransition(() => completeOnboarding()),
-    refreshOnboardingHealth: () => void refreshOnboardingHealth(),
-    ensureAppServer: () => void ensureAppServer(),
+    handleDeepScan: sync.recoverOrphanedBatches,
+    apiBase: onboarding.apiBase,
+    onboardingError: onboarding.error,
+    onboardingHealth: diagnostics.health,
+    isCheckingOnboarding: onboarding.isChecking,
+    isDesktopRuntime: onboarding.isDesktopRuntime,
+    isOnboardingOpen: onboarding.isOpen,
+    isOnboardingReady: onboarding.isReady,
+    isStartingAppServer: onboarding.isStartingAppServer,
+    closeOnboarding: () => startViewTransition(() => onboarding.closeOnboarding()),
+    completeOnboarding: () => startViewTransition(() => onboarding.completeOnboarding()),
+    refreshOnboardingHealth: () => void onboarding.refreshHealth(),
+    ensureAppServer: () => void onboarding.ensureAppServer(),
   };
   const workspaceOverlays: StudioWorkspaceOverlaysProps = {
     isTrashModalOpen,
     closeTrash,
     trash,
     restoreFromTrash,
-    restoreAllFromTrash,
-    emptyTrash,
+    restoreAllFromTrash: () => requestRestoreAllTrash(trash.length),
+    emptyTrash: () => requestEmptyTrash(trash.length),
     isLimitModalOpen,
     handleDismissLimitModal: dismissLimitModal,
     handleDownloadAndClear,
     batchCount: batches.length,
+  };
+  const confirmationOverlay: StudioConfirmationOverlayProps = {
+    pendingConfirmation,
+    closeConfirmation,
+    confirmPendingAction,
   };
   const recipePageProps: Omit<RecipePageProps, 'activeRecipe'> = {
     generationConfig: config.generationConfig,
@@ -383,7 +374,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
   const studioPageProps: StudioPageProps = {
     isModalOpen: modal.isModalOpen,
     workspaces,
-    mergedLogs,
+    mergedLogs: sync.mergedLogs,
     batchesCount: batches.length,
     allImages,
     imagesWithConfig,
@@ -421,11 +412,10 @@ export const AppContent: React.FC<AppContentProps> = () => {
     handleImportVault: importVault,
     isBackgroundEnabled,
     setBackgroundEnabled,
-    activeServerJobCount,
+    activeServerJobCount: sync.activeServerJobCount,
     onInspectJob: handleInspectStudioJob,
-    health: effectiveStudioHealth,
-    isBackendConnected,
-    onResetStudio: resetStudio,
+    diagnostics,
+    onResetStudio: requestResetStudio,
     isResettingStudio,
   };
   const toolbarProps: ToolbarProps = {
@@ -447,7 +437,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
     onOpenKeySelector: () =>
       startViewTransition(() => ui.setIsKeyPopoverOpen(!ui.isKeyPopoverOpen)),
     onSelectKey: async () => {
-      await verifyCodexSession();
+      await sync.verifyCodexSession();
       startViewTransition(() => ui.setIsKeyPopoverOpen(false));
     },
     maxAttachments: config.maxAttachments,
@@ -483,13 +473,11 @@ export const AppContent: React.FC<AppContentProps> = () => {
           activeRecipe={recipe.activeRecipe}
           onCloseRecipe={handleCloseRecipe}
           onOpenDashboard={openDashboard}
-          onOpenOnboarding={() => startViewTransition(() => openOnboarding())}
+          onOpenOnboarding={() => startViewTransition(() => onboarding.openOnboarding())}
           onOpenTrash={openTrash}
           trashCount={trash.length}
           onToggleDebug={handleToggleDebugPanel}
-          codexAccountStatus={codexAccountStatus}
-          isUsageLoading={!hasFetchedDiagnostics}
-          isBackendConnected={isBackendConnected}
+          usage={diagnostics.usage}
         />
       )}
 
@@ -522,6 +510,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
         imageOverlays={imageOverlays}
         systemOverlays={systemOverlays}
         workspaceOverlays={workspaceOverlays}
+        confirmationOverlay={confirmationOverlay}
       />
     </div>
   );

@@ -1,7 +1,8 @@
 import React, { useCallback } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 
-import type { HealthResponse, Job as StudioJob } from '../../packages/shared/src';
+import type { StudioDiagnosticsSnapshot } from '../../lib/studioDiagnostics';
+import type { Job as StudioJob } from '../../packages/shared/src';
 import type { QueueJob } from '../../types';
 import { QueuePanel } from '../QueuePanel';
 import { RightSystemPanel } from '../RightSystemPanel';
@@ -25,8 +26,7 @@ interface StudioOperationsRailProps {
     setBackgroundEnabled: (enabled: boolean) => void;
     activeServerJobCount: number;
     onInspectJob: (jobId: string) => void;
-    health: HealthResponse | null;
-    isBackendConnected: boolean;
+    diagnostics: StudioDiagnosticsSnapshot;
     onResetStudio: () => void | Promise<void>;
     isResettingStudio: boolean;
 }
@@ -50,8 +50,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
     setBackgroundEnabled,
     activeServerJobCount,
     onInspectJob,
-    health,
-    isBackendConnected,
+    diagnostics,
     onResetStudio,
     isResettingStudio,
 }) => {
@@ -102,8 +101,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
                 isQueueOpen={isQueueOpen}
                 onToggleQueue={handleToggleQueue}
                 queueCount={jobs.length + activeServerJobCount}
-                health={health}
-                isBackendConnected={isBackendConnected}
+                diagnostics={diagnostics}
                 onResetStudio={onResetStudio}
                 isResettingStudio={isResettingStudio}
             />
