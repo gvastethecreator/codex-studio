@@ -12,7 +12,7 @@
         color_palette: Bold, artistic, expensive
         lighting_setup: Runway spotlights
         material_texture: Silk, feathers, embroidery
-        render_quality: Vogue, Met Gala, masterpiece
+        render_quality: Runway editorial, gala spectacle, masterpiece
         spatial_distortion: Exaggerated silhouette
         atmosphere: Dramatic, expensive, artistic
         key_features: High fashion pose
@@ -26,7 +26,7 @@
         color_palette: Black, White, Red, Neon
         lighting_setup: Street lights or flash
         material_texture: Cotton, nylon, leather
-        render_quality: Supreme, Off-White, trendy
+        render_quality: Luxury streetwear, trendy
         spatial_distortion: Baggy clothes
         atmosphere: Cool, rebellious, rich
         key_features: Sneaker focus
@@ -40,7 +40,7 @@
         color_palette: Beige, White, Grey, Black
         lighting_setup: Soft natural light
         material_texture: Linen, wool, cashmere
-        render_quality: COS, Jil Sander, expensive
+        render_quality: Pared-back designer minimalism, expensive
         spatial_distortion: None
         atmosphere: Calm, sophisticated, clean
         key_features: Neutral palette
@@ -49,12 +49,12 @@
       category: 1. Contemporary Fashion
       negativePrompt: suit, strict, dark
       style:
-        aesthetic: Coachella festival outfit
+        aesthetic: Desert festival outfit
         form_and_line: Flowing layers, fringe
         color_palette: Earth tones, floral prints
         lighting_setup: Golden hour sun
         material_texture: Lace, crochet, denim
-        render_quality: Free people, hippie, summer
+        render_quality: Bohemian editorial, hippie, summer
         spatial_distortion: None
         atmosphere: Free, happy, natural
         key_features: Accessories (hats, jewelry)
@@ -68,7 +68,7 @@
         color_palette: Black, Neon accents, Grey
         lighting_setup: Gym lights or outdoor
         material_texture: Spandex, mesh, sweat
-        render_quality: Nike, Lululemon, fit
+        render_quality: Performance-luxury activewear
         spatial_distortion: None
         atmosphere: Active, healthy, modern
         key_features: Sleek silhouette
@@ -82,7 +82,7 @@
         color_palette: Matte Black, Dark Grey
         lighting_setup: Neon city lights
         material_texture: Waterproof technical fabric
-        render_quality: Acronym, dystopian, functional
+        render_quality: Technical utility, dystopian, functional
         spatial_distortion: Masked face
         atmosphere: Dark, prepared, cool
         key_features: Utility focus
@@ -110,7 +110,7 @@
         color_palette: Black, Red Plaid, Silver
         lighting_setup: Flash bulb
         material_texture: Denim, studs, safety pins
-        render_quality: Vivienne Westwood, rebellious
+        render_quality: Punk-boutique, rebellious
         spatial_distortion: Mohawk hair
         atmosphere: Angry, loud, chaotic
         key_features: DIY aesthetic
@@ -138,7 +138,7 @@
         color_palette: Navy, White, Khaki, Red
         lighting_setup: Daylight, campus
         material_texture: Cotton, wool knit
-        render_quality: Ralph Lauren, rich, classic
+        render_quality: Heritage prep, rich, classic
         spatial_distortion: None
         atmosphere: Smart, wealthy, traditional
         key_features: Collared shirt
@@ -180,7 +180,7 @@
         color_palette: White, Silver, Pale Blue
         lighting_setup: Glowing, backlight
         material_texture: Chiffon, silk, light
-        render_quality: Lord of the Rings, magical
+        render_quality: Epic fantasy, magical
         spatial_distortion: Floating fabric
         atmosphere: Magical, soft, dreamlike
         key_features: Translucency
@@ -217,7 +217,7 @@
       category: 1. Contemporary Fashion
       negativePrompt: flashy, expensive
       style:
-        aesthetic: Seinfeld style
+        aesthetic: Everyday sitcom casual
         form_and_line: Loose fit
         color_palette: Grey, Blue denim
         lighting_setup: Flat
@@ -231,7 +231,7 @@
       category: 1. Contemporary Fashion
       negativePrompt: suit, tie
       style:
-        aesthetic: Steve Jobs/Zuckerberg
+        aesthetic: Tech-founder uniform
         form_and_line: Simple silhouette
         color_palette: Black, Grey, Navy
         lighting_setup: Stage light
@@ -273,7 +273,7 @@
       category: 1. Contemporary Fashion
       negativePrompt: casual, short
       style:
-        aesthetic: Oscars dress
+        aesthetic: Awards-night gown
         form_and_line: Flowing train
         color_palette: Red, Gold, Black
         lighting_setup: Flash photography
@@ -301,7 +301,7 @@
       category: 2. Subcultures
       negativePrompt: clean, ironed
       style:
-        aesthetic: Kurt Cobain style
+        aesthetic: 90s slouch-grunge
         form_and_line: Loose, layered
         color_palette: Faded plaid, denim
         lighting_setup: Dim, overcast
@@ -371,7 +371,7 @@
       category: 2. Subcultures
       negativePrompt: tight clothes
       style:
-        aesthetic: Thrasher magazine
+        aesthetic: Skate-zine style
         form_and_line: Baggy
         color_palette: Grey, Black, Graphic Tee
         lighting_setup: Outdoor sun
@@ -379,7 +379,7 @@
         render_quality: Casual, active
         spatial_distortion: None
         atmosphere: Chill, active
-        key_features: Vans shoes
+        key_features: Skate shoes
     - id: SP08-028
       name: Cottagecore
       category: 2. Subcultures
@@ -553,7 +553,7 @@
       category: 3. Historical & Fantasy
       negativePrompt: modern sleek
       style:
-        aesthetic: Apollo mission
+        aesthetic: Retro moon mission
         form_and_line: Bulky suit
         color_palette: White
         lighting_setup: Harsh space sun
@@ -581,7 +581,7 @@
       category: 4. Fantasy/Sci-Fi Costume
       negativePrompt: clean, new
       style:
-        aesthetic: Mad Max style
+        aesthetic: Wasteland survivor gear
         form_and_line: Rags, armor
         color_palette: Dust, Brown, Rust
         lighting_setup: Desert sun
@@ -595,7 +595,7 @@
       category: 4. Fantasy/Sci-Fi Costume
       negativePrompt: simple, earth
       style:
-        aesthetic: Padme Amidala style
+        aesthetic: Operatic space-court couture
         form_and_line: Elaborate headpiece
         color_palette: Red, Gold, Alien
         lighting_setup: Dramatic
@@ -637,7 +637,7 @@
       category: 4. Fantasy/Sci-Fi Costume
       negativePrompt: casual
       style:
-        aesthetic: Evangelion plugsuit
+        aesthetic: Sleek biomech pilot suit
         form_and_line: Panel lines
         color_palette: Glossy White/Red
         lighting_setup: Cockpit glow
@@ -665,7 +665,7 @@
       category: 4. Fantasy/Sci-Fi Costume
       negativePrompt: clean
       style:
-        aesthetic: Walking Dead style
+        aesthetic: Post-outbreak survivor wear
         form_and_line: Dirty layers
         color_palette: Grey, Blood stain
         lighting_setup: Gritty
@@ -693,7 +693,7 @@
       category: 4. Fantasy/Sci-Fi Costume
       negativePrompt: human clothes
       style:
-        aesthetic: Fifth Element style
+        aesthetic: Bold alien runway costuming
         form_and_line: Strange cutouts
         color_palette: Orange, Plastic
         lighting_setup: Bright
@@ -903,7 +903,7 @@
       category: 5. Fabric & Texture Focus
       negativePrompt: dark
       style:
-        aesthetic: Tron style
+        aesthetic: Light-grid bodysuit
         form_and_line: Glowing lines
         color_palette: Black + Cyan
         lighting_setup: Self-illuminated
@@ -973,7 +973,7 @@
       category: 5. Fabric & Texture Focus
       negativePrompt: cold
       style:
-        aesthetic: Hunger Games style
+        aesthetic: Ceremonial flame couture
         form_and_line: Flames
         color_palette: Orange, Yellow
         lighting_setup: Self-illuminated
@@ -1085,7 +1085,7 @@
       category: 5. Fabric & Texture Focus
       negativePrompt: solid
       style:
-        aesthetic: Star Wars hologram
+        aesthetic: Monochrome sci-fi hologram
         form_and_line: Scanlines
         color_palette: Blue monochrome
         lighting_setup: Self-lit

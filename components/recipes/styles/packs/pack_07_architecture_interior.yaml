@@ -12,7 +12,7 @@
         color_palette: White, Beige, Grey
         lighting_setup: Soft diffuse daylight
         material_texture: Smooth plaster, matte paint
-        render_quality: Architectural Digest, clean
+        render_quality: Design-editorial clean
         spatial_distortion: None
         atmosphere: Calm, spacious, expensive
         key_features: Empty space
@@ -40,7 +40,7 @@
         color_palette: Teak wood, Mustard Yellow, Olive Green
         lighting_setup: Sputnik chandelier, warm lamp
         material_texture: Wood grain, tweed fabric
-        render_quality: Mad Men, stylish, retro
+        render_quality: Mid-century editorial, stylish, retro
         spatial_distortion: None
         atmosphere: Stylish, nostalgic, warm
         key_features: Iconic furniture shapes
@@ -54,7 +54,7 @@
         color_palette: White, Light Wood, Pastel
         lighting_setup: Candlelight, soft window light
         material_texture: Knitted wool, sheepskin, pine
-        render_quality: IKEA catalog, cozy, bright
+        render_quality: Catalog-clean, cozy, bright
         spatial_distortion: None
         atmosphere: Comfortable, safe, warm
         key_features: Textiles everywhere
@@ -96,7 +96,7 @@
         color_palette: Gold, Black, Emerald Green
         lighting_setup: Dramatic uplighting
         material_texture: Polished brass, marble, velvet
-        render_quality: Great Gatsby, luxurious, ornate
+        render_quality: Jazz-age luxurious, ornate
         spatial_distortion: None
         atmosphere: Expensive, party, jazz age
         key_features: Geometric ornamentation
@@ -250,7 +250,7 @@
         color_palette: White, Cream, Wood
         lighting_setup: Bright airy
         material_texture: Distressed wood, linen
-        render_quality: Magnolia, family, clean
+        render_quality: Farmhouse editorial, family, clean
         spatial_distortion: None
         atmosphere: Welcoming, soft, home
         key_features: Sliding barn door
@@ -264,7 +264,7 @@
         color_palette: Sage, Gold, Wood
         lighting_setup: Stained glass light
         material_texture: Carved wood, glass
-        render_quality: Horta, decorative, flow
+        render_quality: Decorative, flowing, turn-of-century
         spatial_distortion: Melting shapes
         atmosphere: Romantic, nature, soft
         key_features: Curved wood
@@ -287,7 +287,7 @@
       category: 2. Architectural Styles
       negativePrompt: box, symmetrical
       style:
-        aesthetic: Frank Gehry building
+        aesthetic: Sculptural deconstructivist landmark
         form_and_line: Distorted geometry
         color_palette: Titanium, Steel
         lighting_setup: Reflective sun
@@ -315,7 +315,7 @@
       category: 2. Architectural Styles
       negativePrompt: brick, square
       style:
-        aesthetic: Zaha Hadid style
+        aesthetic: Fluid parametric futurism
         form_and_line: Flowing curves
         color_palette: White, Glass
         lighting_setup: Soft ambient
@@ -427,7 +427,7 @@
       category: 3. Environment
       negativePrompt: wood, brick
       style:
-        aesthetic: ISS module
+        aesthetic: Orbital station module
         form_and_line: Wires, panels
         color_palette: White, Velcro Blue
         lighting_setup: Harsh LED
@@ -441,7 +441,7 @@
       category: 3. Environment
       negativePrompt: clean, sunny
       style:
-        aesthetic: NYC/London underground
+        aesthetic: Grime-worn metropolitan underground
         form_and_line: Perspective tunnel
         color_palette: Tile White, Grime
         lighting_setup: Fluorescent flicker
@@ -567,7 +567,7 @@
       category: 4. Landscape Architecture
       negativePrompt: wild, messy
       style:
-        aesthetic: Versailles garden
+        aesthetic: Grand formal palace garden
         form_and_line: Symmetry, patterns
         color_palette: Green, Gravel Beige
         lighting_setup: Flat sun
@@ -703,7 +703,7 @@
         atmosphere: Lush, enclosed
         key_features: Iron structure
     - id: SP07-051
-      name: Elven City (Rivendell)
+      name: Verdant Elven Refuge
       category: 5. Fantasy Architecture
       negativePrompt: industrial, blocky
       style:
@@ -777,7 +777,7 @@
       category: 5. Fantasy Architecture
       negativePrompt: sky, dry
       style:
-        aesthetic: Atlantis/Rapture
+        aesthetic: Submerged lost-city grandeur
         form_and_line: Domes, coral
         color_palette: Blue, Gold, Biolum
         lighting_setup: Water filtered
@@ -815,7 +815,7 @@
         atmosphere: Cold, magical
         key_features: Translucency
     - id: SP07-059
-      name: Hobbit Hole
+      name: Hillside Roundhouse
       category: 5. Fantasy Architecture
       negativePrompt: square, tall
       style:
@@ -833,7 +833,7 @@
       category: 5. Fantasy Architecture
       negativePrompt: scary realistic
       style:
-        aesthetic: Scooby Doo house
+        aesthetic: Spooky cartoon manor
         form_and_line: Wonky angles
         color_palette: Purple, Green, Black
         lighting_setup: Lightning flash
@@ -857,7 +857,7 @@
         atmosphere: Frozen, regal
         key_features: Icicles
     - id: SP07-062
-      name: Tree Village (Ewok)
+      name: Canopy Rope Village
       category: 5. Fantasy Architecture
       negativePrompt: metal
       style:
@@ -885,7 +885,7 @@
         atmosphere: Dread, death
         key_features: Green fog
     - id: SP07-064
-      name: Cloud City (Bespin)
+      name: Sunset Cloud Metropolis
       category: 5. Fantasy Architecture
       negativePrompt: ground
       style:
@@ -913,11 +913,11 @@
         atmosphere: Quiet, delicate
         key_features: Fold lines
     - id: SP07-066
-      name: Lego City
+      name: Brick-Built City
       category: 5. Fantasy Architecture
       negativePrompt: smooth, realistic
       style:
-        aesthetic: Brick built world
+        aesthetic: Toy brick world
         form_and_line: Brick seams
         color_palette: Primary plastic
         lighting_setup: Glossy
@@ -987,7 +987,7 @@
       category: 5. Fantasy Architecture
       negativePrompt: square
       style:
-        aesthetic: Smurf house
+        aesthetic: Whimsical mushroom cottage
         form_and_line: Organic
         color_palette: Red cap, White stalk
         lighting_setup: Forest floor
@@ -1081,7 +1081,7 @@
         atmosphere: Awe, scale
         key_features: Sky arch
     - id: SP07-078
-      name: Borg Cube
+      name: Industrial Hive Cube
       category: 5. Fantasy Architecture
       negativePrompt: smooth
       style:
@@ -1092,7 +1092,7 @@
         material_texture: Greebles
         render_quality: Complex, scary
         spatial_distortion: None
-        atmosphere: Resistance is futile
+        atmosphere: Ominous, assimilating
         key_features: Cube
     - id: SP07-079
       name: Monolith
@@ -1109,11 +1109,11 @@
         atmosphere: Ominous, mystery
         key_features: 1:4:9 ratio
     - id: SP07-080
-      name: Tardis Interior
+      name: Infinite Console Chamber
       category: 5. Fantasy Architecture
       negativePrompt: small
       style:
-        aesthetic: Bigger on the inside
+        aesthetic: Impossible interior beyond outer shell
         form_and_line: Hexagons/Roundels
         color_palette: Orange/Teal
         lighting_setup: Console glow

@@ -1,7 +1,6 @@
 import React, { useState, useRef, useMemo } from 'react';
 import { Layout, Brush, Palette, X, Camera, ScanFace } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
-import type { Attachment, ImageGenerationConfig, AspectRatio } from '../../types';
+import type { Attachment, ImageGenerationConfig } from '../../types';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
@@ -38,12 +37,12 @@ const STYLE_OPTIONS = [
   'Preserve Source Style',
   'Concept Art (Digital)',
   'Anime (90s Retro)',
-  'Anime (Studio Ghibli)',
-  'Anime (Modern Kyoto)',
+  'Anime (Painterly Fantasy)',
+  'Anime (Modern Luminous)',
   'Comic Book (Western)',
   'Graphic Novel (Noir)',
-  '3D Render (Pixar-Style)',
-  '3D Render (Unreal Engine 5)',
+  '3D Render (Feature Animation)',
+  '3D Render (Next-Gen Engine)',
   'Fantasy Oil Painting',
   'Watercolor Illustration',
   'Pencil Sketch',
@@ -67,9 +66,7 @@ import { RATIO_MAP } from '../../constants';
 export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
   config,
   updateConfig,
-  updateAttachment,
   onFileSelect,
-  onGenerate,
   isGenerating,
 }) => {
   const [params, setParams] = useState({
@@ -160,9 +157,9 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
       className="p-6 md:p-12 pb-48 flex items-center justify-center"
     >
       {/* CENTER: Reference / Input Area */}
-      <div className="relative w-full max-w-[1600px] h-full flex flex-col items-center justify-center group">
+      <div className="relative w-full max-w-400 h-full flex flex-col items-center justify-center group">
         <div
-          className={`relative rounded-3xl overflow-hidden border shadow-2xl transition-all duration-500 flex items-center justify-center bg-white/[0.02]`}
+          className={`relative flex items-center justify-center overflow-hidden rounded-3xl border bg-white/2 shadow-2xl transition-all duration-500`}
           style={{
             aspectRatio: ratioValue,
             width: `min(80vw, (100vh - 350px) * ${ratioValue})`,
@@ -195,9 +192,9 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
-              className="absolute inset-0 flex flex-col items-center justify-center gap-6 cursor-pointer hover:bg-white/[0.01] transition-colors"
+              className="absolute inset-0 flex cursor-pointer flex-col items-center justify-center gap-6 transition-colors hover:bg-white/1"
             >
-              <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[40px_40px]" />
               <input
                 type="file"
                 ref={fileInputRef}

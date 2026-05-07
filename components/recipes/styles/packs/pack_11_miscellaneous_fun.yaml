@@ -3,21 +3,21 @@
   description: Playful, toy-like, and niche aesthetic styles.
   presets:
     - id: SP11-001
-      name: Lego Brick
+      name: Toy Brick Build
       category: 1. Toys & Crafts
       negativePrompt: melted, smooth, organic
       style:
-        aesthetic: Scene built entirely of LEGO bricks
+        aesthetic: Scene built entirely from toy bricks
         form_and_line: Brick seams, studs
-        color_palette: Standard LEGO palette (Red, Blue, Yellow)
+        color_palette: Classic toy-brick primaries (Red, Blue, Yellow)
         lighting_setup: Glossy plastic reflection
         material_texture: ABS plastic, studs
-        render_quality: The LEGO Movie, stop motion
+        render_quality: Toy-brick stop-motion energy
         spatial_distortion: Blocky, minifigure proportions
         atmosphere: Playful, creative, childhood
         key_features: Studs on top surfaces
     - id: SP11-002
-      name: Funko Pop
+      name: Vinyl Collectible Figure
       category: 1. Toys & Crafts
       negativePrompt: realistic proportions, small head
       style:
@@ -27,7 +27,7 @@
         lighting_setup: Studio box lighting
         material_texture: Vinyl plastic
         render_quality: Collectible, cute, merchandise
-        spatial_distortion: Giant square head, black button eyes
+        spatial_distortion: Giant square head, simple button eyes
         atmosphere: Cute, static, display
         key_features: Box packaging (optional)
     - id: SP11-003
@@ -54,7 +54,7 @@
         color_palette: Flat paper colors
         lighting_setup: Soft shadows
         material_texture: Paper grain, glue tabs
-        render_quality: Pepakura, craft, geometric
+        render_quality: Papercraft, geometric
         spatial_distortion: Faceted geometry
         atmosphere: Delicate, handmade, clean
         key_features: Visible fold lines
@@ -96,7 +96,7 @@
         color_palette: Red, Green, Yellow, Black shading
         lighting_setup: Paper stain (coffee)
         material_texture: Watercolor paper, skin
-        render_quality: Sailor Jerry, bold, classic
+        render_quality: Bold-traditional flash, classic
         spatial_distortion: 2D flat design
         atmosphere: Tough, classic, bold
         key_features: Pepper shading (dots)
@@ -124,7 +124,7 @@
         color_palette: Bright Yellow, Blue, Red
         lighting_setup: Studio softbox, rim light
         material_texture: Shiny plastic or glass
-        render_quality: Apple emoji, UI design
+        render_quality: Platform emoji, UI design
         spatial_distortion: Sphere based
         atmosphere: Happy, expressive, digital
         key_features: Glossy reflection
@@ -259,7 +259,7 @@
       category: 1. Toys & Crafts
       negativePrompt: cgi, smooth
       style:
-        aesthetic: Muppet style
+        aesthetic: Television puppet workshop
         form_and_line: Fuzzy edges
         color_palette: Bright felt
         lighting_setup: TV studio
@@ -297,16 +297,16 @@
         atmosphere: Cool, decorative
         key_features: White outline
     - id: SP11-022
-      name: Claymation (Aardman)
+      name: Clay Stop-Motion
       category: 1. Toys & Crafts
       negativePrompt: smooth cgi
       style:
-        aesthetic: Wallace & Gromit style
+        aesthetic: Cozy clay stop-motion comedy
         form_and_line: Wide mouths
         color_palette: Matte clay colors
         lighting_setup: Stop motion set
         material_texture: Fingerprints in clay
-        render_quality: British humor, tactile
+        render_quality: Dry humor, tactile
         spatial_distortion: Tooth gap
         atmosphere: Funny, charming
         key_features: Plasticine
@@ -343,7 +343,7 @@
       category: 1. Toys & Crafts
       negativePrompt: human eyes
       style:
-        aesthetic: Coraline style
+        aesthetic: Uncanny button-eyed dollhouse fantasy
         form_and_line: Stitched mouth
         color_palette: Muted, creepy
         lighting_setup: Cinematic dark
@@ -553,7 +553,7 @@
       category: 3. Aesthetics
       negativePrompt: dark, scary
       style:
-        aesthetic: Sanrio style
+        aesthetic: Ultra-cute mascot illustration
         form_and_line: Thick soft lines
         color_palette: Pastel Pink, Blue, Yellow
         lighting_setup: Bright, flat
@@ -567,7 +567,7 @@
       category: 3. Aesthetics
       negativePrompt: hope, light
       style:
-        aesthetic: Warhammer 40k style
+        aesthetic: Cathedral-industrial war fantasy
         form_and_line: Heavy, dirty
         color_palette: Mud, Blood, Rust
         lighting_setup: Dark, harsh
@@ -633,7 +633,7 @@
         atmosphere: Crazy, expanding
         key_features: Eyes everywhere
     - id: SP11-046
-      name: Food Photography (Michelin)
+      name: Fine-Dining Editorial
       category: 4. Food & Drink
       negativePrompt: messy, cafeteria
       style:

@@ -15,7 +15,7 @@ La app mantiene el enrutamiento liviano por hash para `studio`, `recipes`, recet
 1. La UI crea un job visual en `useQueueManager`.
 2. El pipeline crea un job persistente `codex_imagegen` en el backend local.
 3. El worker usa `codex app-server` y la skill local de imagenes.
-4. El asset se guarda en `D:\AI-Studio-Library\assets`.
+4. El asset se guarda en `assets/` dentro de la Studio Library configurada (por ejemplo `%USERPROFILE%\AI-Studio-Library\assets` en Windows).
 5. La UI registra el asset como `GenerationBatch` en IndexedDB.
 
 ## Cola Persistente
@@ -24,7 +24,7 @@ La cola visible conserva jobs efimeros de UI y, en paralelo, muestra los jobs pe
 
 ## Logs
 
-La consola visual mezcla logs de UI con logs del backend local. El backend tambien escribe en disco bajo `D:\AI-Studio-Library\logs`.
+La consola visual mezcla logs de UI con logs del backend local. El backend tambien escribe en disco bajo la carpeta `logs/` de la Studio Library configurada.
 
 ## Vault
 

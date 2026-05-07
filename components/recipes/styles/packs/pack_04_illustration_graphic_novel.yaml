@@ -7,7 +7,7 @@
       category: 1. Comic Book Styles
       negativePrompt: modern digital color
       style:
-        aesthetic: 1940s Superman style
+        aesthetic: 1940s flagship hero comic
         form_and_line: Thick ink
         color_palette: CMYK dots (Ben-Day)
         lighting_setup: Flat
@@ -21,8 +21,8 @@
       category: 1. Comic Book Styles
       negativePrompt: dark, gritty
       style:
-        aesthetic: Kirby style
-        form_and_line: Dynamic energy (Kirby dots)
+        aesthetic: Cosmic silver-age dynamism
+        form_and_line: Dynamic energy dots
         color_palette: Bright primary
         lighting_setup: Dramatic
         material_texture: Newsprint
@@ -35,7 +35,7 @@
       category: 1. Comic Book Styles
       negativePrompt: flat, retro
       style:
-        aesthetic: DC/Marvel modern
+        aesthetic: Modern caped-hero digital comic
         form_and_line: Clean digital ink
         color_palette: Digital gradient
         lighting_setup: Cinematic
@@ -91,17 +91,17 @@
       category: 1. Comic Book Styles
       negativePrompt: shading, gradient
       style:
-        aesthetic: Tintin style
+        aesthetic: Clean-line European adventure comic
         form_and_line: Uniform thickness
         color_palette: Flat, bright
         lighting_setup: No shadows
         material_texture: Clean
-        render_quality: Hergé, precise
+        render_quality: Precise, clear-line
         spatial_distortion: Cartoon
         atmosphere: Adventure, clear
         key_features: No hatching
     - id: SP04-008
-      name: Noir Comic (Sin City)
+      name: Noir Comic (High Contrast)
       category: 1. Comic Book Styles
       negativePrompt: grey, color
       style:
@@ -110,7 +110,7 @@
         color_palette: Black and White only
         lighting_setup: Harsh
         material_texture: Ink splatter
-        render_quality: Frank Miller, gritty
+        render_quality: Ultra-contrast, gritty
         spatial_distortion: Silhouette
         atmosphere: Dark, violent
         key_features: No greyscale
@@ -119,7 +119,7 @@
       category: 1. Comic Book Styles
       negativePrompt: clean, mainstream
       style:
-        aesthetic: Crumb style
+        aesthetic: Underground comix crosshatching
         form_and_line: Crosshatching, wobble
         color_palette: Black and White
         lighting_setup: Texture heavy
@@ -133,7 +133,7 @@
       category: 1. Comic Book Styles
       negativePrompt: line art, cartoon
       style:
-        aesthetic: Alex Ross style
+        aesthetic: Painted realism comic cover
         form_and_line: None (painted)
         color_palette: Realistic gouache
         lighting_setup: Realistic
@@ -143,7 +143,7 @@
         atmosphere: Epic, serious
         key_features: No outlines
     - id: SP04-011
-      name: Horror Manga (Junji Ito)
+      name: Horror Manga (Obsessive Ink)
       category: 1. Comic Book Styles
       negativePrompt: cute, clean
       style:
@@ -157,7 +157,7 @@
         atmosphere: Unsettling, nightmare
         key_features: Dense lines
     - id: SP04-012
-      name: Retro Sci-Fi Comic (Moebius)
+      name: Retro Sci-Fi Comic (Dreamline)
       category: 1. Comic Book Styles
       negativePrompt: dark, heavy shadows
       style:
@@ -222,7 +222,7 @@
         color_palette: Neon on Black
         lighting_setup: City lights
         material_texture: Rain, grit
-        render_quality: Blade Runner, dark
+        render_quality: Neon-noir, dark
         spatial_distortion: None
         atmosphere: Dystopian, cool
         key_features: Rain
@@ -231,7 +231,7 @@
       category: 2. Children's Illustration
       negativePrompt: digital, sharp
       style:
-        aesthetic: Beatrix Potter style
+        aesthetic: Classic watercolor animal storybook
         form_and_line: Pencil sketch
         color_palette: Soft wash
         lighting_setup: Gentle
@@ -245,7 +245,7 @@
       category: 2. Children's Illustration
       negativePrompt: drawn, painted
       style:
-        aesthetic: Eric Carle style
+        aesthetic: Painted paper collage storybook
         form_and_line: Scissor edges
         color_palette: Painted paper textures
         lighting_setup: Drop shadows
@@ -269,7 +269,7 @@
         atmosphere: Innocent, fun
         key_features: Paper grain
     - id: SP04-020
-      name: Vector Flat (Kurzgesagt)
+      name: Vector Flat (Infographic)
       category: 2. Children's Illustration
       negativePrompt: outline, texture
       style:
@@ -292,7 +292,7 @@
         color_palette: Opaque, matte
         lighting_setup: Flat
         material_texture: Chalky paint
-        render_quality: Mary Blair, retro
+        render_quality: Mid-century, retro
         spatial_distortion: Stylized shapes
         atmosphere: Colorful, design
         key_features: Brush texture
@@ -334,7 +334,7 @@
         color_palette: Clay colors
         lighting_setup: Studio
         material_texture: Fingerprints
-        render_quality: Aardman, tactile
+        render_quality: Tactile stop-motion
         spatial_distortion: Chunky
         atmosphere: Funny, physical
         key_features: Thumbprints
@@ -371,12 +371,12 @@
       category: 2. Children's Illustration
       negativePrompt: heavy, dark
       style:
-        aesthetic: Quentin Blake style
+        aesthetic: Loose spiky ink storybook
         form_and_line: Scratchy, loose
         color_palette: Watercolor splash
         lighting_setup: None
         material_texture: Ink nib
-        render_quality: Roald Dahl, messy
+        render_quality: Mischievous storybook, messy
         spatial_distortion: Spiky
         atmosphere: Funny, energetic
         key_features: Loose lines
@@ -390,7 +390,7 @@
         color_palette: Soft, dusty
         lighting_setup: Soft
         material_texture: Paper tooth
-        render_quality: The Snowman, dreamy
+        render_quality: Wintery, dreamy
         spatial_distortion: Blurred
         atmosphere: Soft, winter
         key_features: Smudge
@@ -432,16 +432,16 @@
         color_palette: Gold, Black, Teal
         lighting_setup: Gradient
         material_texture: Airbrush
-        render_quality: Gatsby, luxury
+        render_quality: Jazz-age luxury
         spatial_distortion: Streamlined
         atmosphere: Elegant, fast
         key_features: Sunburst
     - id: SP04-032
-      name: Art Nouveau (Mucha)
+      name: Art Nouveau Poster
       category: 3. Editorial & Poster
       negativePrompt: straight lines, minimal
       style:
-        aesthetic: Alphonse Mucha style
+        aesthetic: Flowing decorative lithograph
         form_and_line: Flowing hair/vines
         color_palette: Peach, Sage, Gold
         lighting_setup: Flat
@@ -460,7 +460,7 @@
         color_palette: Red, Black, Cream
         lighting_setup: High contrast
         material_texture: Screenprint
-        render_quality: Shepard Fairey, bold
+        render_quality: Propagandistic, bold
         spatial_distortion: Heroic angle
         atmosphere: Strong, commanding
         key_features: Rays
@@ -539,12 +539,12 @@
       category: 3. Editorial & Poster
       negativePrompt: photo collage
       style:
-        aesthetic: Drew Struzan style
+        aesthetic: Painted adventure poster
         form_and_line: Airbrush
         color_palette: Warm/Cool contrast
         lighting_setup: Rim light
         material_texture: Canvas
-        render_quality: Star Wars, epic
+        render_quality: Space-opera epic
         spatial_distortion: Floating heads
         atmosphere: Cinematic, classic
         key_features: Lens flare
@@ -581,12 +581,12 @@
       category: 3. Editorial & Poster
       negativePrompt: photo, boring
       style:
-        aesthetic: Pink Floyd style
+        aesthetic: Surreal album-art dreamscape
         form_and_line: Sharp
         color_palette: Surreal
         lighting_setup: Dramatic
         material_texture: Grainy photo
-        render_quality: Hipgnosis, iconic
+        render_quality: Iconic surreal album cover
         spatial_distortion: Impossible object
         atmosphere: Deep, weird
         key_features: Square crop
@@ -698,7 +698,7 @@
         color_palette: Industrial
         lighting_setup: Studio
         material_texture: Metal, dirt
-        render_quality: Syd Mead, functional
+        render_quality: Futurist industrial design
         spatial_distortion: None
         atmosphere: Fast, tech
         key_features: Perspective
@@ -721,7 +721,7 @@
       category: 4. Concept Art
       negativePrompt: perspective, flat
       style:
-        aesthetic: SimCity view
+        aesthetic: Simulation-city view
         form_and_line: Clean pixel/vector
         color_palette: Bright, clear
         lighting_setup: Top-left sun
@@ -810,7 +810,7 @@
         color_palette: Flat shading
         lighting_setup: Vertex light
         material_texture: Pixelated
-        render_quality: PS1 style, retro
+        render_quality: Early 3D console retro
         spatial_distortion: Blocky
         atmosphere: Nostalgic, simple
         key_features: Polygons
@@ -866,21 +866,21 @@
         color_palette: Black ink
         lighting_setup: Line density
         material_texture: Paper
-        render_quality: Durer, classic
+        render_quality: Engraved old-master classic
         spatial_distortion: None
         atmosphere: Serious, valuable
         key_features: Hatching
     - id: SP04-063
-      name: Woodcut (Ukiyo-e)
+      name: Woodcut (Floating World)
       category: 5. Ink & Print
       negativePrompt: western, 3d
       style:
-        aesthetic: Hokusai style
+        aesthetic: Classical woodblock seascape language
         form_and_line: Variable width
         color_palette: Flat gradients (Bokashi)
         lighting_setup: Flat
         material_texture: Wood grain
-        render_quality: Japanese, masterpiece
+        render_quality: Classical woodblock masterpiece
         spatial_distortion: Flattened perspective
         atmosphere: Nature, calm
         key_features: Outline
@@ -908,7 +908,7 @@
         color_palette: Black or Sepia
         lighting_setup: Soft grain
         material_texture: Stone grain
-        render_quality: Escher, print
+        render_quality: Labyrinthine print
         spatial_distortion: None
         atmosphere: Classic, soft
         key_features: Grain
@@ -917,7 +917,7 @@
       category: 5. Ink & Print
       negativePrompt: gradient, painting
       style:
-        aesthetic: Warhol style
+        aesthetic: Pop-art print
         form_and_line: None
         color_palette: Misaligned layers
         lighting_setup: Halftone
@@ -992,7 +992,7 @@
         color_palette: Watercolor-like ink
         lighting_setup: Soft wash
         material_texture: Rosin grain
-        render_quality: Goya, tonal
+        render_quality: Dark tonal print
         spatial_distortion: None
         atmosphere: Somber, tonal
         key_features: Wash effect
@@ -1003,7 +1003,7 @@
       style:
         aesthetic: Doodle
         form_and_line: Thin blue lines
-        color_palette: Bic Blue
+        color_palette: Ballpoint Blue
         lighting_setup: Crosshatching
         material_texture: Paper indent
         render_quality: Sketchy, obsessive
@@ -1043,7 +1043,7 @@
       category: 5. Ink & Print
       negativePrompt: realistic, soft
       style:
-        aesthetic: Sailor Jerry style
+        aesthetic: Bold-traditional tattoo flash
         form_and_line: Bold black outline
         color_palette: Red, Yellow, Green, Black
         lighting_setup: Skin fade (whip shading)
@@ -1081,7 +1081,7 @@
         atmosphere: Hip hop, bold
         key_features: Arrows
     - id: SP04-078
-      name: Stencil Art (Banksy)
+      name: Stencil Art (Street Protest)
       category: 5. Ink & Print
       negativePrompt: freehand
       style:
@@ -1113,7 +1113,7 @@
       category: 5. Ink & Print
       negativePrompt: stiff, pencil
       style:
-        aesthetic: Sumi-e style
+        aesthetic: Ink wash gesture
         form_and_line: Variable pressure
         color_palette: Black ink
         lighting_setup: Dry brush

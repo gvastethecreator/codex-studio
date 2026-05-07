@@ -1,6 +1,6 @@
 - id: pack_02
   name: Cinematic & Media
-  description: A collection of 80+ styles inspired by film, television, animation, and historical photography.
+  description: A collection of 80+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.
   presets:
     - id: SP02-001
       name: Film Noir
@@ -21,7 +21,7 @@
       category: 1. Film Genres
       negativePrompt: modern, clean
       style:
-        aesthetic: Sergio Leone film
+        aesthetic: Dusty operatic frontier cinema
         form_and_line: None
         color_palette: Warm, dusty yellow
         lighting_setup: Harsh sun
@@ -35,7 +35,7 @@
       category: 1. Film Genres
       negativePrompt: modern cgi
       style:
-        aesthetic: Blade Runner aesthetic
+        aesthetic: Rain-soaked neon dystopia
         form_and_line: None
         color_palette: Neon Blue/Pink + Smoke
         lighting_setup: Low key + Neon
@@ -49,7 +49,7 @@
       category: 1. Film Genres
       negativePrompt: faded, dark
       style:
-        aesthetic: Wizard of Oz style
+        aesthetic: Golden-age technicolor fantasy
         form_and_line: None
         color_palette: Hyper-saturated
         lighting_setup: High key studio
@@ -63,7 +63,7 @@
       category: 1. Film Genres
       negativePrompt: studio lighting, stable
       style:
-        aesthetic: Godard film
+        aesthetic: Jump-cut nouvelle vague street cinema
         form_and_line: None
         color_palette: Black and White high contrast
         lighting_setup: Natural light
@@ -105,7 +105,7 @@
       category: 1. Film Genres
       negativePrompt: steady, cinematic
       style:
-        aesthetic: Blair Witch style
+        aesthetic: Improvised panic-horror footage
         form_and_line: None
         color_palette: Low light digital
         lighting_setup: Flashlight only
@@ -119,7 +119,7 @@
       category: 1. Film Genres
       negativePrompt: cgi, realistic
       style:
-        aesthetic: Godzilla 1954
+        aesthetic: Black-and-white suitmation monster spectacle
         form_and_line: None
         color_palette: B&W or Eastmancolor
         lighting_setup: Miniature set
@@ -129,11 +129,11 @@
         atmosphere: Epic, destruction
         key_features: Low angle
     - id: SP02-010
-      name: Kung Fu (Shaw Brothers)
+      name: Kung Fu Studio Epic
       category: 1. Film Genres
       negativePrompt: modern action
       style:
-        aesthetic: 70s martial arts
+        aesthetic: 70s studio martial arts cinema
         form_and_line: None
         color_palette: Zoom lens
         lighting_setup: Studio set
@@ -147,7 +147,7 @@
       category: 1. Film Genres
       negativePrompt: modern digital
       style:
-        aesthetic: Ghost in the Shell style
+        aesthetic: Dense cel-animated cyber noir
         form_and_line: Cel shaded
         color_palette: Green tint, dark
         lighting_setup: City glow
@@ -157,7 +157,7 @@
         atmosphere: Tech, moody
         key_features: Bloom
     - id: SP02-012
-      name: Wes Anderson Style
+      name: Symmetrical Storybook Cinema
       category: 1. Film Genres
       negativePrompt: asymmetrical, messy
       style:
@@ -180,7 +180,7 @@
         color_palette: Teal shadows, Orange skin
         lighting_setup: High contrast
         material_texture: Digital clean
-        render_quality: Michael Bay, epic
+        render_quality: Bombastic, epic
         spatial_distortion: Lens flare
         atmosphere: Intense, cinematic
         key_features: Color grade
@@ -217,7 +217,7 @@
       category: 1. Film Genres
       negativePrompt: cgi
       style:
-        aesthetic: Star Wars A New Hope
+        aesthetic: Scrappy analog space opera
         form_and_line: None
         color_palette: Used future
         lighting_setup: Studio
@@ -231,7 +231,7 @@
       category: 2. TV & Broadcast
       negativePrompt: cinematic, dark
       style:
-        aesthetic: Friends/Seinfeld set
+        aesthetic: Cozy multi-camera apartment set
         form_and_line: None
         color_palette: Bright, flat
         lighting_setup: Multi-camera lighting
@@ -283,11 +283,11 @@
         atmosphere: Gossip, drama
         key_features: Eye contact
     - id: SP02-021
-      name: Music Video (Hype Williams)
+      name: Fisheye Glam Video
       category: 2. TV & Broadcast
       negativePrompt: boring, normal
       style:
-        aesthetic: Late 90s rap video
+        aesthetic: Late-90s luxury music video
         form_and_line: None
         color_palette: Shiny suits
         lighting_setup: Studio tunnel
@@ -381,7 +381,7 @@
         atmosphere: Informative
         key_features: Map
     - id: SP02-028
-      name: MTV 90s Grunge
+      name: 90s Grunge Broadcast
       category: 2. TV & Broadcast
       negativePrompt: clean
       style:
@@ -413,21 +413,21 @@
       category: 2. TV & Broadcast
       negativePrompt: human, city
       style:
-        aesthetic: BBC Earth
+        aesthetic: Premium nature documentary
         form_and_line: None
         color_palette: Natural, vibrant
         lighting_setup: Golden hour
         material_texture: Ultra HD
-        render_quality: Attenborough, epic
+        render_quality: Cinematic wildlife, epic
         spatial_distortion: Slow motion
         atmosphere: Majestic, wild
         key_features: Telephoto
     - id: SP02-031
-      name: Classic Disney (Cel)
+      name: Golden Age Cel Feature
       category: 3. Animation Styles
       negativePrompt: 3d, digital
       style:
-        aesthetic: Snow White style
+        aesthetic: Hand-inked storybook cel animation
         form_and_line: Hand inked
         color_palette: Technicolor paint
         lighting_setup: Multiplane camera
@@ -437,25 +437,25 @@
         atmosphere: Magical, classic
         key_features: Painted background
     - id: SP02-032
-      name: Studio Ghibli
+      name: Painterly Nature Anime
       category: 3. Animation Styles
       negativePrompt: ugly, dark
       style:
-        aesthetic: Miyazaki film
+        aesthetic: Hand-painted nature-forward animated feature
         form_and_line: Delicate
         color_palette: Natural, lush green
         lighting_setup: Dappled sunlight
         material_texture: Watercolor background
-        render_quality: Beautiful, food looks good
+        render_quality: Luminous, lovingly observed
         spatial_distortion: None
         atmosphere: Nostalgic, peaceful
         key_features: Clouds
     - id: SP02-033
-      name: Pixar Style (3D)
+      name: Family Feature CG
       category: 3. Animation Styles
       negativePrompt: 2d, anime
       style:
-        aesthetic: Toy Story/Up
+        aesthetic: Stylized family-animation CG
         form_and_line: None
         color_palette: Vibrant, subsurface
         lighting_setup: Cinematic 3D
@@ -465,11 +465,11 @@
         atmosphere: Heartwarming, fun
         key_features: Soft shadows
     - id: SP02-034
-      name: Stop Motion (Laika)
+      name: Moody Stop-Motion
       category: 3. Animation Styles
       negativePrompt: smooth 3d
       style:
-        aesthetic: Coraline style
+        aesthetic: Moody miniature stop-motion fantasy
         form_and_line: None
         color_palette: Texture rich
         lighting_setup: Miniature studio
@@ -479,11 +479,11 @@
         atmosphere: Dark, handmade
         key_features: Imperfection
     - id: SP02-035
-      name: Looney Tunes (Chuck Jones)
+      name: Golden Age Cartoon Frenzy
       category: 3. Animation Styles
       negativePrompt: realistic
       style:
-        aesthetic: Bugs Bunny
+        aesthetic: Elastic golden-age studio cartoon
         form_and_line: Thick black
         color_palette: Flat
         lighting_setup: None
@@ -493,16 +493,16 @@
         atmosphere: Funny, violent
         key_features: Abstract background
     - id: SP02-036
-      name: Fleischer (Rubber Hose)
+      name: Rubber Hose Cartoon
       category: 3. Animation Styles
       negativePrompt: color, modern
       style:
-        aesthetic: 1930s Mickey/Betty Boop
+        aesthetic: 1930s monochrome bounce-cartoon
         form_and_line: Thick, bouncy
         color_palette: Black and White
         lighting_setup: None
         material_texture: Film grain
-        render_quality: Cuphead, retro
+        render_quality: Retro, bouncy
         spatial_distortion: Noodle limbs
         atmosphere: Happy, weird
         key_features: Pie eyes
@@ -511,7 +511,7 @@
       category: 3. Animation Styles
       negativePrompt: modern digital
       style:
-        aesthetic: Sailor Moon/Eva
+        aesthetic: Pastel-neon retro anime blend
         form_and_line: Cel outline
         color_palette: Pastel/Neon
         lighting_setup: Hard shadows
@@ -521,7 +521,7 @@
         atmosphere: Nostalgic, aesthetic
         key_features: Bloom
     - id: SP02-038
-      name: Spider-Verse Style
+      name: Comic Offset 3D
       category: 3. Animation Styles
       negativePrompt: smooth 3d
       style:
@@ -567,7 +567,7 @@
       category: 3. Animation Styles
       negativePrompt: smooth, 3d
       style:
-        aesthetic: A Scanner Darkly style
+        aesthetic: Posterized traced live action
         form_and_line: Wobbly trace
         color_palette: Flat blocks
         lighting_setup: Realistic (traced)
@@ -595,7 +595,7 @@
       category: 3. Animation Styles
       negativePrompt: textured, soft
       style:
-        aesthetic: Newgrounds style
+        aesthetic: Flash-era web animation
         form_and_line: Thick vector
         color_palette: Web safe colors
         lighting_setup: Gradient tool
@@ -609,7 +609,7 @@
       category: 3. Animation Styles
       negativePrompt: digital, sharp
       style:
-        aesthetic: Loving Vincent style
+        aesthetic: Moving oil-paint canvas
         form_and_line: Brush strokes
         color_palette: Impressionist
         lighting_setup: Painted light
@@ -1015,7 +1015,7 @@
       category: 5. Lighting & Atmosphere
       negativePrompt: sunlight
       style:
-        aesthetic: Avatar forest
+        aesthetic: Bioluminescent jungle night
         form_and_line: None
         color_palette: Neon Blue/Green
         lighting_setup: Internal glow
@@ -1109,11 +1109,11 @@
         atmosphere: Commercial, perfect
         key_features: Soft shadows
     - id: SP02-080
-      name: Lens Flare (JJ Abrams)
+      name: Anamorphic Overflare
       category: 5. Lighting & Atmosphere
       negativePrompt: matte
       style:
-        aesthetic: Star Trek reboot
+        aesthetic: Glossy sci-fi reboot spectacle
         form_and_line: Horizontal lines
         color_palette: Blue anamorphic
         lighting_setup: Blinding

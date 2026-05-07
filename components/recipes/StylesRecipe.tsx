@@ -401,9 +401,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const subjectTreatment = describeStyleValue(
       preset.style.subject_treatment ?? preset.style.form_and_line,
     );
-    const colorTone = describeStyleValue(
-      preset.style.color_and_tone ?? preset.style.color_palette,
-    );
+    const colorTone = describeStyleValue(preset.style.color_and_tone ?? preset.style.color_palette);
     const lightingShadow = describeStyleValue(
       preset.style.lighting_and_shadow ?? preset.style.lighting_setup,
     );
@@ -629,11 +627,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         >
           <div
             className={`
-                  group relative aspect-[3/4] rounded-xl overflow-hidden text-left transition-all duration-300 flex flex-col
-                  ${isActive
-                ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
-                : 'bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1'
-              }
+                  group relative aspect-3/4 rounded-xl overflow-hidden text-left transition-all duration-300 flex flex-col
+                  ${
+                    isActive
+                      ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
+                      : 'bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1'
+                  }
               `}
           >
             <div className="flex-1 relative overflow-hidden bg-black">
@@ -817,7 +816,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           </div>
 
           <div
-            className="w-full relative group max-h-[40vh] flex-shrink-0"
+            className="group relative w-full max-h-[40vh] shrink-0"
             style={{ aspectRatio: ratioValue }}
           >
             {activeImage ? (
@@ -839,7 +838,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={handleDrop}
                 onClick={() => fileInputRef.current?.click()}
-                className="w-full h-full rounded-3xl border-2 border-dashed border-white/5 hover:border-white/20 bg-white/[0.01] hover:bg-white/[0.03] flex flex-col items-center justify-center gap-4 cursor-pointer transition-all group overflow-hidden"
+                className="group flex h-full w-full cursor-pointer flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border-2 border-dashed border-white/5 bg-white/1 transition-all hover:border-white/20 hover:bg-white/3"
               >
                 <input
                   type="file"
@@ -916,11 +915,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               });
             }}
             className={`
-                    h-9 px-3 rounded-lg flex items-center gap-2 transition-all duration-300 relative overflow-hidden group flex-shrink-0
-                    ${currentPackId === FAVORITES_PACK_ID
-                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-              }
+                  group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
+                    ${
+                      currentPackId === FAVORITES_PACK_ID
+                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+                    }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -946,11 +946,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   });
                 }}
                 className={`
-                            h-9 px-3 rounded-lg flex items-center gap-2 transition-all duration-300 relative overflow-hidden group flex-shrink-0
-                            ${isActive
-                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                  }
+                      group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
+                            ${
+                              isActive
+                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                            }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>
@@ -982,7 +983,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
           {/* Search & Filter Toolbar */}
           <div className="flex items-center gap-2 p-1 rounded-xl border border-white/5">
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-black/40 rounded-lg border border-white/5 flex-1 min-w-[200px]">
+            <div className="flex min-w-50 flex-1 items-center gap-2 rounded-lg border border-white/5 bg-black/40 px-3 py-1.5">
               <Search size={14} className="text-zinc-500" />
               <input
                 type="text"
@@ -1031,7 +1032,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-rose-400">
                     Pinned / Favorites
                   </h3>
-                  <div className="h-px flex-1 bg-gradient-to-r from-rose-500/20 to-transparent" />
+                  <div className="h-px flex-1 bg-linear-to-r from-rose-500/20 to-transparent" />
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-5 gap-4">
                   {processedData.favorites.map(renderPresetCard)}

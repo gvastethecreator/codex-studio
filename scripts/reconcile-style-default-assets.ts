@@ -4,6 +4,7 @@ import { Database } from 'bun:sqlite';
 import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
 import {
   RECIPE_ASSET_EXTENSION,
+  defaultStudioLibraryDir,
   defaultsDir,
   loadPacks,
   repoRelative,
@@ -34,7 +35,7 @@ interface JobAssetRow {
   asset_created_at: string;
 }
 
-const libraryDir = process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library';
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
 const dbPath = path.join(libraryDir, 'library.sqlite');
 const dryRun = process.argv.includes('--dry-run');
 const sinceArg = process.argv.find((arg) => arg.startsWith('--since='))?.slice('--since='.length);

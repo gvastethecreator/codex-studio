@@ -1,9 +1,9 @@
 - id: pack_03
   name: 3D & CGI Rendering
-  description: A comprehensive collection of 80+ 3D render styles, engines, and material simulations.
+  description: A comprehensive collection of 80+ 3D rendering pipelines, visual looks, and material simulations.
   presets:
     - id: SP03-001
-      name: Octane Render
+      name: Spectral GPU Path Tracer
       category: 1. Render Engines
       negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
       style:
@@ -12,12 +12,12 @@
         color_palette: Vibrant, high contrast
         lighting_setup: Bloom, spectral dispersion
         material_texture: Glossy, detailed
-        render_quality: ArtStation trending, 4K
+        render_quality: Portfolio-ready, 4K
         spatial_distortion: None
         atmosphere: Cinematic, slick
-        key_features: Octane signature glow
+        key_features: Spectral bloom
     - id: SP03-002
-      name: Unreal Engine 5
+      name: Next-Gen Real-Time Engine
       category: 1. Render Engines
       negativePrompt: pre-rendered, low poly
       style:
@@ -31,7 +31,7 @@
         atmosphere: Immersive, interactive
         key_features: High fidelity
     - id: SP03-003
-      name: Redshift Render
+      name: Biased GPU Renderer
       category: 1. Render Engines
       negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
       style:
@@ -45,7 +45,7 @@
         atmosphere: Professional, studio
         key_features: Fast blur
     - id: SP03-004
-      name: Arnold Render
+      name: Feature Film Path Tracer
       category: 1. Render Engines
       negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
       style:
@@ -59,7 +59,7 @@
         atmosphere: Realistic, grounded
         key_features: Physical accuracy
     - id: SP03-005
-      name: Blender Cycles
+      name: Open Path Tracer
       category: 1. Render Engines
       negativePrompt: eevee, realtime
       style:
@@ -68,12 +68,12 @@
         color_palette: Filmic log encoding
         lighting_setup: Global Illumination
         material_texture: Procedural nodes
-        render_quality: Blender Guru, detailed
+        render_quality: Creator-friendly, detailed
         spatial_distortion: None
         atmosphere: Creative, solid
         key_features: Principled BSDF
     - id: SP03-006
-      name: V-Ray
+      name: ArchViz Raytracer
       category: 1. Render Engines
       negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
       style:
@@ -87,7 +87,7 @@
         atmosphere: Inviting, expensive
         key_features: Clean lines
     - id: SP03-007
-      name: KeyShot
+      name: Product Studio Renderer
       category: 1. Render Engines
       negativePrompt: environment, messy
       style:
@@ -101,7 +101,7 @@
         atmosphere: Clean, commercial
         key_features: Product focus
     - id: SP03-008
-      name: Pixar RenderMan
+      name: Feature Animation Renderer
       category: 1. Render Engines
       negativePrompt: anime, 2d
       style:
@@ -110,12 +110,12 @@
         color_palette: Vibrant, cinematic
         lighting_setup: Artistic control
         material_texture: Stylized realism
-        render_quality: Disney/Pixar movie
+        render_quality: Family feature animation
         spatial_distortion: Squash and stretch
         atmosphere: Magical, story
         key_features: Subsurface scattering
     - id: SP03-009
-      name: ZBrush Sculpt
+      name: Digital Clay Sculpt
       category: 1. Render Engines
       negativePrompt: textured, low poly
       style:
@@ -129,7 +129,7 @@
         atmosphere: Artistic, raw
         key_features: Matcap material
     - id: SP03-010
-      name: Unity HDRP
+      name: High-End Game Pipeline
       category: 1. Render Engines
       negativePrompt: mobile game
       style:
@@ -166,7 +166,7 @@
         color_palette: Clear or colored liquid
         lighting_setup: Specular highlights
         material_texture: Wet
-        render_quality: Realflow simulation
+        render_quality: Fluid simulation
         spatial_distortion: Fluid dynamics
         atmosphere: Dynamic, wet
         key_features: Splash shape
@@ -208,7 +208,7 @@
         color_palette: Matte clay colors
         lighting_setup: Studio miniature
         material_texture: Imperfections, dust
-        render_quality: Aardman style
+        render_quality: Tactile stop-motion
         spatial_distortion: Handmade look
         atmosphere: Playful, tactile
         key_features: Fingerprints
@@ -222,7 +222,7 @@
         color_palette: Soft gradient
         lighting_setup: Rim light on fuzz
         material_texture: Fluffy, soft
-        render_quality: XGen simulation
+        render_quality: Groom simulation
         spatial_distortion: Wind blown
         atmosphere: Cozy, creature
         key_features: Hair strands
@@ -236,7 +236,7 @@
         color_palette: Neon Green/Pink
         lighting_setup: Glossy
         material_texture: Sticky, wet
-        render_quality: Nickelodeon, gross
+        render_quality: Gooey cartoon gross-out
         spatial_distortion: Dripping
         atmosphere: Fun, gross
         key_features: Drips
@@ -306,7 +306,7 @@
         color_palette: Vibrant
         lighting_setup: Global illumination
         material_texture: None
-        render_quality: Minecraft, MagicaVoxel
+        render_quality: Block-world voxel art
         spatial_distortion: Blocky
         atmosphere: Cute, digital
         key_features: Cubes
@@ -460,7 +460,7 @@
         color_palette: Pink, Cyan, Purple
         lighting_setup: Emissive signs
         material_texture: Wet asphalt
-        render_quality: Blade Runner style
+        render_quality: Rain-soaked neon megacity
         spatial_distortion: None
         atmosphere: Dystopian, cool
         key_features: Neon glow
@@ -539,7 +539,7 @@
       category: 4. Lighting & Atmosphere
       negativePrompt: day, sun
       style:
-        aesthetic: Avatar Pandora style
+        aesthetic: Luminous alien forest
         form_and_line: Glowing plants
         color_palette: Blue, Purple night
         lighting_setup: Plant glow
@@ -558,7 +558,7 @@
         color_palette: Flat bands of color
         lighting_setup: Hard shadow edge
         material_texture: Flat
-        render_quality: Guilty Gear, Zelda
+        render_quality: Stylized cel-shaded game art
         spatial_distortion: None
         atmosphere: Illustrated, fun
         key_features: Banded shading
@@ -640,7 +640,7 @@
         aesthetic: Optimized prop
         form_and_line: Normal map details
         color_palette: Albedo map
-        lighting_setup: Marmoset viewer
+        lighting_setup: Asset viewer lighting
         material_texture: Roughness/Metalness
         render_quality: Game ready
         spatial_distortion: None
@@ -670,7 +670,7 @@
         color_palette: Brand colors
         lighting_setup: Studio reflection
         material_texture: Matte plastic, aluminum
-        render_quality: Apple website
+        render_quality: Flagship product launch
         spatial_distortion: None
         atmosphere: Desirable, expensive
         key_features: White background
@@ -698,7 +698,7 @@
         color_palette: Vibrant, gradient
         lighting_setup: Studio
         material_texture: Glossy
-        render_quality: Cinema 4D, mograph
+        render_quality: Motion-design showcase
         spatial_distortion: Squash/Stretch
         atmosphere: Energetic, corporate
         key_features: Abstract shapes
@@ -754,7 +754,7 @@
         color_palette: Saturated, fresh
         lighting_setup: Backlit steam
         material_texture: Wet, condensation
-        render_quality: McDonalds ad, appetizing
+        render_quality: Fast-food hero ad, appetizing
         spatial_distortion: Flying ingredients
         atmosphere: Delicious, hyperreal
         key_features: Water droplets
@@ -768,7 +768,7 @@
         color_palette: Vibrant
         lighting_setup: Baked
         material_texture: Optimized
-        render_quality: Oculus, immersive
+        render_quality: Headset-ready, immersive
         spatial_distortion: Wide FOV
         atmosphere: Presence, digital
         key_features: Player scale
@@ -782,12 +782,12 @@
         color_palette: False color data
         lighting_setup: Self illuminated
         material_texture: Particle cloud
-        render_quality: NASA, accurate
+        render_quality: Lab-grade, accurate
         spatial_distortion: None
         atmosphere: Smart, complex
         key_features: Data points
     - id: SP03-057
-      name: NFT Art Style
+      name: Collectible Avatar Render
       category: 5. Applications
       negativePrompt: traditional art
       style:
@@ -796,7 +796,7 @@
         color_palette: Neon, Gold, Rare traits
         lighting_setup: Studio
         material_texture: Plastic, Metal
-        render_quality: Bored Ape 3D, collectible
+        render_quality: Collectible, avatar-centric
         spatial_distortion: None
         atmosphere: Hype, digital
         key_features: Profile view
@@ -824,7 +824,7 @@
         color_palette: Iridescent, impossible fabric
         lighting_setup: Runway
         material_texture: Digital fabric
-        render_quality: Clo3D, Marvelous Designer
+        render_quality: Digital garment simulation
         spatial_distortion: Floating cloth
         atmosphere: Futuristic, fashion
         key_features: Drape
@@ -866,7 +866,7 @@
         color_palette: Skin tones, green
         lighting_setup: Subsurface scattering
         material_texture: Skin, bark
-        render_quality: ZBrush, natural
+        render_quality: Digital sculpt, natural
         spatial_distortion: None
         atmosphere: Alive, natural
         key_features: Muscle/Growth flow
@@ -908,7 +908,7 @@
         color_palette: Vibrant, gradient
         lighting_setup: Soft studio
         material_texture: Smooth plastic/glass
-        render_quality: macOS Big Sur, modern
+        render_quality: Glossy modern platform icon
         spatial_distortion: Squircle
         atmosphere: Friendly, UI
         key_features: Front facing
@@ -936,7 +936,7 @@
         color_palette: Chrome, LED
         lighting_setup: Sci-fi
         material_texture: Metal/Skin transition
-        render_quality: Deus Ex, transhuman
+        render_quality: Transhuman sci-fi
         spatial_distortion: Prosthetic
         atmosphere: Futuristic, body horror
         key_features: Seamless blend
@@ -950,7 +950,7 @@
         color_palette: Photo texture
         lighting_setup: Baked lighting (delit)
         material_texture: Real world noise
-        render_quality: Quixel Megascans
+        render_quality: Scan-library realism
         spatial_distortion: Mesh errors (optional)
         atmosphere: Real, grounded
         key_features: Photo realism
@@ -973,7 +973,7 @@
       category: 5. Applications
       negativePrompt: modern, ambient occlusion
       style:
-        aesthetic: Reboot/Toy Story 1 era
+        aesthetic: Early feature-era CGI
         form_and_line: Simple geometry
         color_palette: Primary colors
         lighting_setup: Phong shading
@@ -1062,21 +1062,21 @@
         color_palette: Metallic foil
         lighting_setup: High reflection
         material_texture: Wrinkled foil
-        render_quality: Party, Jeff Koons
+        render_quality: Party, gallery-scale pop
         spatial_distortion: Inflated
         atmosphere: Fun, pop art
         key_features: Seams
     - id: SP03-077
-      name: Lego 3D
+      name: Brick-Built 3D
       category: 5. Applications
       negativePrompt: smooth, melted
       style:
-        aesthetic: Built of bricks
+        aesthetic: Built from toy bricks
         form_and_line: Studs
         color_palette: Plastic primary colors
         lighting_setup: Plastic gloss
         material_texture: Plastic, fingerprints
-        render_quality: Lego Movie style
+        render_quality: Toy-brick feature energy
         spatial_distortion: Brick steps
         atmosphere: Playful, constructive
         key_features: Studs on top

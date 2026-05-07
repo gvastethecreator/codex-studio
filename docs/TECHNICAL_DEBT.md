@@ -31,8 +31,8 @@ Este documento enumera la deuda técnica que sigue siendo relevante tras la actu
    - Próximo paso recomendado: revisar trimestralmente `bun outdated` y volver a ejecutar `validate:full`.
 
 4. **Auditoría final de artefactos para release open source**
-   - Ya se limpiaron `output/`, `tmp/` y `generated/`, pero antes del release conviene revisar de nuevo que no reaparezcan prompts locales, muestras derivadas o archivos de trabajo con nombres/franquicias de terceros.
-   - Próximo paso recomendado: ejecutar una revisión final de `git ls-files` sobre carpetas locales y validar que el release candidate no contenga artefactos generados ni material prescindible.
+   - Ya se limpiaron `output/`, `tmp/` y `generated/`, y se purgó el historial de `*.png`, pero antes del release conviene revisar de nuevo que no reaparezcan prompts locales, muestras derivadas, cards PNG o archivos de trabajo con nombres/franquicias de terceros.
+   - Próximo paso recomendado: ejecutar una revisión final de `git ls-files` y `git rev-list --objects --all` sobre artefactos locales para validar que el release candidate conserve únicamente las cards versionadas en `webp`.
 
 ## Prioridad baja
 

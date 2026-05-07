@@ -2,7 +2,7 @@
 
 ## Domain Terms
 
-- **Studio Library**: External local folder that stores assets, transcripts, logs and SQLite state for the studio. Default: `D:\AI-Studio-Library`. Multiple libraries can be registered; each has its own `assets/`, `thumbnails/`, `references/`, `.trash/` structure.
+- **Studio Library**: External local folder that stores assets, transcripts, logs and SQLite state for the studio. Default: `~/AI-Studio-Library` (for example `%USERPROFILE%\AI-Studio-Library` on Windows). Multiple libraries can be registered; each has its own `assets/`, `thumbnails/`, `references/`, `.trash/` structure.
 - **Library Registry**: SQLite table that tracks multiple Studio Library directories. One is default for new generations.
 - **Image Catalog**: SQLite table `catalog_images` that indexes every generated image with full metadata — prompt, dimensions, aspect ratio, tags, favorite status, workspace, generation config snapshot. Replaces IndexedDB as the durable image index.
 - **Catalog Entry**: One row in the Image Catalog. The frontend renders grids from catalog query results rather than from in-memory `GenerationBatch` arrays.

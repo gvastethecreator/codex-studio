@@ -26,7 +26,7 @@ Con 100+ batches de 4 imágenes cada uno, el blob JSON puede alcanzar megabytes.
 
 ### Problema 3: Una sola biblioteca
 
-Solo existe una carpeta de Studio Library (`D:\AI-Studio-Library` por defecto). El usuario no puede tener múltiples bibliotecas para distintos proyectos o separar outputs por categoría. Esto fuerza a mezclar todas las generaciones en una misma carpeta y un mismo índice.
+Solo existe una carpeta de Studio Library (por defecto `~/AI-Studio-Library`, por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows). El usuario no puede tener múltiples bibliotecas para distintos proyectos o separar outputs por categoría. Esto fuerza a mezclar todas las generaciones en una misma carpeta y un mismo índice.
 
 ### Deletion test
 

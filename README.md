@@ -43,9 +43,9 @@ Despues de eso deberias tener:
 
 - UI: <http://localhost:3000>
 - API local: <http://localhost:4317/api/health>
-- Biblioteca por defecto en Windows: `D:\AI-Studio-Library`
-- Logs: `D:\AI-Studio-Library\logs`
-- SQLite: `D:\AI-Studio-Library\db\studio.sqlite`
+- Biblioteca por defecto: `~/AI-Studio-Library` (en Windows normalmente `%USERPROFILE%\AI-Studio-Library`)
+- Logs: `~/AI-Studio-Library/logs`
+- SQLite: `~/AI-Studio-Library/db/studio.sqlite`
 
 ### Primer arranque
 
@@ -78,7 +78,7 @@ Variables opcionales para la shell Electron:
 
 Ejemplos de ruta para la biblioteca:
 
-- Windows: `D:\AI-Studio-Library`
+- Windows: `%USERPROFILE%\AI-Studio-Library`
 - macOS: `/Users/<tu-usuario>/AI-Studio-Library`
 - Linux: `/home/<tu-usuario>/AI-Studio-Library`
 

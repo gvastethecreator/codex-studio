@@ -11,7 +11,7 @@ graph TD
     GC --> LS["services/localStudioService.ts"]
     LS --> API["Bun/Hono local API :4317"]
     API --> DB["SQLite studio.sqlite"]
-    API --> FS["D:\\AI-Studio-Library assets/logs/transcripts"]
+    API --> FS["Studio Library assets/logs/transcripts"]
     API --> CX["codex app-server ws://127.0.0.1:4318"]
     CX --> IMG["Codex local imagegen skill"]
     API --> UIQ["UI backend jobs/logs polling"]
@@ -25,7 +25,7 @@ graph TD
 - `services/localStudioService.ts`: unico adaptador frontend hacia el backend local.
 - `apps/local-server/src/`: API local, worker, DB, logging, supervisor de `codex app-server`.
 - `packages/shared/src/types.ts`: tipos compartidos para jobs, assets, logs y health.
-- `D:\AI-Studio-Library`: biblioteca externa configurable; contiene `assets/`, `logs/`, `transcripts/` y `db/studio.sqlite`.
+- `Studio Library`: biblioteca externa configurable; por defecto vive bajo el home del usuario (por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows) y contiene `assets/`, `logs/`, `transcripts/` y `db/studio.sqlite`.
 
 ## Flujo de Generacion
 

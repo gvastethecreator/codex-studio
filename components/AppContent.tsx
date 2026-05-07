@@ -73,7 +73,7 @@ const viewVariants: Variants = {
   }),
 };
 
-interface AppContentProps { }
+interface AppContentProps {}
 
 export const AppContent: React.FC<AppContentProps> = () => {
   const {

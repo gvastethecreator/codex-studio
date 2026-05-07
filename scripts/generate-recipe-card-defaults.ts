@@ -3,6 +3,8 @@ import path from 'node:path';
 import type { Asset, Job, Project } from '../packages/shared/src';
 import {
   RECIPE_ASSET_EXTENSION,
+  defaultCodexHome,
+  defaultStudioLibraryDir,
   recipeCardsDir,
   repoRelative,
   request,
@@ -28,7 +30,7 @@ interface ManifestEntry {
 
 const manifestPath = path.join(recipeCardsDir, 'manifest.json');
 const failuresPath = path.join(recipeCardsDir, 'failures.json');
-const libraryDir = process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library';
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
 const parallelArg = process.argv.find((arg) => arg.startsWith('--parallel='));
 const parallel = Math.max(1, Number(parallelArg?.split('=')[1] || 4));
 const replaceExisting = process.argv.includes('--replace');
@@ -209,8 +211,7 @@ async function exists(filePath: string) {
 
 async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
   const transcriptPath = path.join(libraryDir, 'transcripts', jobId, 'events.jsonl');
-  const codexHome =
-    process.env.CODEX_HOME || path.join(process.env.USERPROFILE || 'C:\\Users\\user', '.codex');
+  const codexHome = process.env.CODEX_HOME || defaultCodexHome;
   const transcript = await readFile(transcriptPath, 'utf8').catch(() => '');
   for (const line of transcript.split(/\r?\n/)) {
     if (!line.trim()) continue;

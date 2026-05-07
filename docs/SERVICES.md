@@ -57,7 +57,7 @@ SQLite local con tablas para settings, projects, jobs, assets, job events y syst
 
 ### `logger.ts`
 
-Escribe logs en SQLite y en disco bajo `D:\AI-Studio-Library\logs`.
+Escribe logs en SQLite y en disco bajo la carpeta `logs/` de la Studio Library configurada.
 
 ## Servicios Legacy
 

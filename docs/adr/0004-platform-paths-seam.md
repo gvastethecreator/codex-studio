@@ -6,14 +6,12 @@ Propuesto.
 
 ## Contexto
 
-Actualmente existen paths hardcodeados para Windows y para la máquina específica del usuario `user` en múltiples archivos:
+Actualmente existen paths hardcodeados para Windows y para una máquina específica de desarrollo en múltiples archivos:
 
-| Archivo              | Línea   | Path                                                                |
-| -------------------- | ------- | ------------------------------------------------------------------- |
-| `codexExecutable.ts` | 3-7     | `C:\Users\user\AppData\Roaming\npm\...\codex.exe` (4 variantes) |
-| `codexClient.ts`     | 320     | `IMAGEGEN_SKILL_PATH = "C:\Users\user\.codex\skills\..."`       |
-| `codexClient.ts`     | 301-304 | Regex de extracción que asume paths Windows (`[A-Z]:\\...`)         |
-| `codexClient.ts`     | 417     | Instrucciones al developer con paths hardcodeados                   |
+- `codexExecutable.ts` (líneas 3-7): `C:\Users\<user>\AppData\Roaming\npm\...\codex.exe` (4 variantes).
+- `codexClient.ts` (línea 320): `IMAGEGEN_SKILL_PATH = "C:\Users\<user>\.codex\skills\..."`.
+- `codexClient.ts` (líneas 301-304): regex de extracción que asume paths Windows (`[A-Z]:\\...`).
+- `codexClient.ts` (línea 417): instrucciones al developer con paths hardcodeados.
 
 Esto viola el principio de locality: el conocimiento de dónde vive el binario de `codex` está disperso en 4 lugares. Si el usuario cambia, si Codex cambia su ruta de instalación, o si se quiere soportar macOS/Linux, hay que editar cada archivo individualmente.
 
