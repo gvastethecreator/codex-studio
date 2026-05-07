@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vite-plus/test";
 
+import { DEFAULT_GENERATION_CONFIG } from "../constants";
 import type { GenerationBatch } from "../types";
 import { createInitialGlobalState, globalReducer } from "./globalReducer";
 
@@ -13,16 +14,7 @@ function createBatch(
     workspaceId,
     createdAt: 1,
     config: {
-      prompt: "",
-      recipeContext: "",
-      recipeId: null,
-      recipeParams: null,
-      attachments: [],
-      aspectRatio: "1:1",
-      imageSize: "1K",
-      negativePrompt: "",
-      temperature: 0.8,
-      model: "codex-imagegen",
+      ...DEFAULT_GENERATION_CONFIG,
       batchCount: 1,
       useThinkingAndSearch: false,
     },

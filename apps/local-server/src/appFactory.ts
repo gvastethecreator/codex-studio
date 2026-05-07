@@ -148,8 +148,8 @@ export async function createStudioApp(
 
   app.get("/api/jobs", (c) => c.json(listJobs()));
 
-  app.get('/api/jobs/:id', (c) => {
-    const detail = getJobDetail(c.req.param('id'));
+  app.get('/api/jobs/:id', async (c) => {
+    const detail = await getJobDetail(c.req.param('id'));
     if (!detail) return c.json({ error: 'Job not found' }, 404);
     return c.json(detail);
   });

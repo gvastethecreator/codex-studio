@@ -1,9 +1,4 @@
 import { existsSync, readFileSync } from 'node:fs';
-import {
-  getCodexTurnByJobId,
-  getJob,
-  listJobEvents,
-} from './db';
 import type { JobDetailResponse, JobTranscriptEntry } from '../../../packages/shared/src';
 
 type RecordLike = Record<string, unknown>;
@@ -155,7 +150,8 @@ export function parseJobTranscript(transcriptText: string) {
     .filter((entry): entry is JobTranscriptEntry => Boolean(entry));
 }
 
-export function getJobDetail(jobId: string): JobDetailResponse | null {
+export async function getJobDetail(jobId: string): Promise<JobDetailResponse | null> {
+  const { getCodexTurnByJobId, getJob, listJobEvents } = await import('./db');
   const job = getJob(jobId);
   if (!job) return null;
 

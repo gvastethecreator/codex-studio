@@ -13,6 +13,7 @@ import {
 import { formatErrorMessage } from '../utils/runtimeLogger';
 import { detectRecipeFromContext } from '../utils/recipeUtils';
 import { startViewTransition } from '../utils/transitionUtils';
+import { cancelStudioJob, getStudioJobDetail } from '../services/localStudioService';
 
 import type {
   ImageGenerationConfig,
@@ -21,6 +22,7 @@ import type {
   AspectRatio,
   RecipeId,
 } from '../types';
+import type { JobDetailResponse } from '../packages/shared/src';
 
 import { AppOverlays } from './AppOverlays';
 import { BottomToolbar } from './ui/BottomToolbar';
@@ -73,7 +75,7 @@ const viewVariants: Variants = {
   }),
 };
 
-interface AppContentProps {}
+interface AppContentProps { }
 
 export const AppContent: React.FC<AppContentProps> = () => {
   const {
@@ -105,7 +107,8 @@ export const AppContent: React.FC<AppContentProps> = () => {
     removeToast,
     addToast,
     isDebugPanelOpen,
-    toggleDebugPanel,
+    openDebugPanel,
+    closeDebugPanel,
   } = useGlobal();
 
   const {
@@ -124,11 +127,24 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
   const { config, pipeline, recipe, ui, modal } = useGeneration();
 
+  const [selectedStudioJobId, setSelectedStudioJobId] = useState<string | null>(null);
+  const [selectedJobDetail, setSelectedJobDetail] = useState<JobDetailResponse | null>(null);
+  const [isLoadingSelectedJob, setIsLoadingSelectedJob] = useState(false);
+
+  const handleCancelPersistentJob = useCallback(
+    async (jobId: string) => {
+      const job = await cancelStudioJob(jobId);
+      addToast(job.status === 'cancelled' ? 'Backend job cancelled' : 'Cancellation requested', 'info');
+    },
+    [addToast],
+  );
+
   const { jobs, enqueue, retry, cancelJob, removeJob, clearCompleted, isResting } = useQueueManager(
     {
       executeGeneration: pipeline.executeGeneration,
       isGenerating: pipeline.isGenerating,
       addToast,
+      cancelPersistentJob: handleCancelPersistentJob,
     },
   );
 
@@ -175,6 +191,73 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
   const [direction, setDirection] = useState(0);
   const previousViewIndexRef = useRef(0);
+  const selectedStudioJobUpdatedAt = useMemo(
+    () => studioJobs.find((job) => job.id === selectedStudioJobId)?.updatedAt ?? null,
+    [selectedStudioJobId, studioJobs],
+  );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    if (!selectedStudioJobId) {
+      setSelectedJobDetail(null);
+      setIsLoadingSelectedJob(false);
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    setIsLoadingSelectedJob(true);
+
+    void getStudioJobDetail(selectedStudioJobId)
+      .then((detail) => {
+        if (!cancelled) {
+          setSelectedJobDetail(detail);
+        }
+      })
+      .catch((error) => {
+        if (!cancelled) {
+          setSelectedJobDetail(null);
+          addToast(
+            error instanceof Error ? error.message : 'Unable to load the selected job detail',
+            'error',
+          );
+        }
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setIsLoadingSelectedJob(false);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedStudioJobId, selectedStudioJobUpdatedAt, addToast]);
+
+  const handleInspectStudioJob = useCallback(
+    (jobId: string) => {
+      setSelectedStudioJobId(jobId);
+      openDebugPanel();
+    },
+    [openDebugPanel],
+  );
+
+  const handleToggleDebugPanel = useCallback(() => {
+    if (isDebugPanelOpen) {
+      closeDebugPanel();
+      return;
+    }
+
+    setSelectedStudioJobId(null);
+    setSelectedJobDetail(null);
+    openDebugPanel();
+  }, [closeDebugPanel, isDebugPanelOpen, openDebugPanel]);
+
+  const handleClearSelectedJob = useCallback(() => {
+    setSelectedStudioJobId(null);
+    setSelectedJobDetail(null);
+  }, []);
 
   const handleViewChange = useCallback(
     (newView: 'studio' | 'recipes') => {
@@ -587,7 +670,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
           onOpenOnboarding={() => startViewTransition(() => openOnboarding())}
           onOpenTrash={() => startViewTransition(() => setIsTrashModalOpen(true))}
           trashCount={trash.length}
-          onToggleDebug={toggleDebugPanel}
+          onToggleDebug={handleToggleDebugPanel}
         />
       )}
 
@@ -662,8 +745,10 @@ export const AppContent: React.FC<AppContentProps> = () => {
                 setIsQueueOpen={setIsQueueOpen}
                 jobs={jobs}
                 studioJobs={studioJobs}
+                selectedStudioJobId={selectedStudioJobId}
                 retry={retry}
                 cancelJob={cancelJob}
+                cancelPersistentJob={(jobId) => void handleCancelPersistentJob(jobId)}
                 removeJob={removeJob}
                 clearCompleted={clearCompleted}
                 isResting={isResting}
@@ -673,6 +758,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
                 isBackgroundEnabled={isBackgroundEnabled}
                 setBackgroundEnabled={setBackgroundEnabled}
                 activeServerJobCount={activeServerJobCount}
+                onInspectJob={handleInspectStudioJob}
               />
             </motion.div>
           ) : (
@@ -753,12 +839,17 @@ export const AppContent: React.FC<AppContentProps> = () => {
         handleExecuteEdit={handleExecuteEdit}
         isEditingImage={isEditingImage}
         isDebugPanelOpen={isDebugPanelOpen}
-        toggleDebugPanel={toggleDebugPanel}
+        closeDebugPanel={closeDebugPanel}
         mergedLogs={mergedLogs}
         isDashboardModalOpen={isDashboardModalOpen}
         closeDashboard={() => startViewTransition(() => setIsDashboardModalOpen(false))}
         batches={batches}
         workspaces={workspaces}
+        studioJobs={studioJobs}
+        selectedJobDetail={selectedJobDetail}
+        isLoadingSelectedJob={isLoadingSelectedJob}
+        onInspectJob={handleInspectStudioJob}
+        onClearSelectedJob={handleClearSelectedJob}
         handleImportVault={handleImportVault}
         handleDeepScan={recoverOrphanedBatches}
         apiBase={apiBase}

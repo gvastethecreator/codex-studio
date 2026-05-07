@@ -1,5 +1,5 @@
 import React from 'react';
-import type { HealthResponse } from '../packages/shared/src';
+import type { HealthResponse, Job as StudioJob, JobDetailResponse } from '../packages/shared/src';
 
 import type {
   Attachment,
@@ -39,12 +39,17 @@ interface AppOverlaysProps {
   handleExecuteEdit: (original: Attachment, mask: string, prompt: string) => Promise<void>;
   isEditingImage: boolean;
   isDebugPanelOpen: boolean;
-  toggleDebugPanel: () => void;
+  closeDebugPanel: () => void;
   mergedLogs: LogEntry[];
   isDashboardModalOpen: boolean;
   closeDashboard: () => void;
   batches: GenerationBatch[];
   workspaces: Workspace[];
+  studioJobs: StudioJob[];
+  selectedJobDetail: JobDetailResponse | null;
+  isLoadingSelectedJob: boolean;
+  onInspectJob: (jobId: string) => void;
+  onClearSelectedJob: () => void;
   handleImportVault: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handleDeepScan: () => void | Promise<void>;
   apiBase: string;
@@ -87,12 +92,17 @@ export const AppOverlays: React.FC<AppOverlaysProps> = ({
   handleExecuteEdit,
   isEditingImage,
   isDebugPanelOpen,
-  toggleDebugPanel,
+  closeDebugPanel,
   mergedLogs,
   isDashboardModalOpen,
   closeDashboard,
   batches,
   workspaces,
+  studioJobs,
+  selectedJobDetail,
+  isLoadingSelectedJob,
+  onInspectJob,
+  onClearSelectedJob,
   handleImportVault,
   handleDeepScan,
   apiBase,
@@ -149,9 +159,16 @@ export const AppOverlays: React.FC<AppOverlaysProps> = ({
       />
       <DebugPanel
         isOpen={isDebugPanelOpen}
-        onClose={toggleDebugPanel}
+        onClose={closeDebugPanel}
         logs={mergedLogs}
-        appState={{}}
+        workspaces={workspaces}
+        studioJobs={studioJobs}
+        batchesCount={batches.length}
+        imagesCount={imagesWithConfig.length}
+        selectedJobDetail={selectedJobDetail}
+        isLoadingSelectedJob={isLoadingSelectedJob}
+        onInspectJob={onInspectJob}
+        onClearSelectedJob={onClearSelectedJob}
       />
       <DashboardModal
         isOpen={isDashboardModalOpen}
