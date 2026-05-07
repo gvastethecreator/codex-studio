@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Banana, Sparkles, Square } from 'lucide-react';
+import logoSvg from '../assets/logo.svg?raw';
 import { useTheme } from '../hooks/useTheme';
 
 interface LogoProps {
@@ -24,33 +24,21 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
   return (
     <button
       onClick={handleClick}
-      className={`group relative flex items-center gap-2 p-1 rounded-xl outline-none select-none transition-transform active:scale-95 ${isAnimating ? 'animate-logo-pop' : ''}`}
+      className={`group relative flex items-center gap-2.5 rounded-xl p-1 outline-none select-none transition-transform active:scale-95 ${isAnimating ? 'animate-logo-pop' : ''}`}
       aria-label="Change Theme"
       title="Click to cycle theme"
     >
-      {/* Icon Container - Scaled down */}
-      <div className="relative w-8 h-8 flex items-center justify-center">
-        {/* Layer 1: Back (Squircle/Square) */}
-        <Square
-          strokeWidth={1.5}
-          className="absolute w-8 h-8 text-accent-500/20 fill-accent-500/10 rounded-lg transition-all duration-500 ease-out-expo group-hover:rotate-12 group-hover:scale-110"
+      <div className="relative flex h-8 w-8 items-center justify-center">
+        <div className="absolute inset-0 rounded-2xl bg-accent-500/18 transition-all duration-500 ease-out-expo group-hover:scale-110 group-hover:opacity-100" />
+        <div className="absolute inset-[1.5px] rounded-xl border border-white/10 bg-zinc-950/85 backdrop-blur-sm transition-all duration-500 ease-out-expo group-hover:border-white/15 group-hover:bg-zinc-900/85" />
+        <div
+          aria-hidden="true"
+          className={`relative z-10 h-5 w-5 text-accent-300 transition-all duration-300 ease-out-expo group-hover:-translate-y-0.5 group-hover:scale-110 group-hover:text-white ${isGenerating ? 'animate-pulse text-accent-100' : ''}`}
+          dangerouslySetInnerHTML={{ __html: logoSvg }}
         />
-
-        {/* Layer 2: Mid (Sparkle) */}
-        <Sparkles
-          strokeWidth={2}
-          className={`absolute w-3.5 h-3.5 -top-0.5 -right-0.5 text-accent-300 fill-accent-100/50 transition-all duration-300 ease-out group-hover:scale-125 group-hover:rotate-12 group-hover:text-white ${isGenerating ? 'animate-spin' : 'animate-pulse'}`}
+        <div
+          className={`absolute -top-0.5 -right-0.5 h-2.5 w-2.5 rounded-full bg-accent-400 shadow-[0_0_10px_rgba(var(--accent-500),0.45)] transition-all duration-300 ${isGenerating ? 'animate-pulse opacity-100' : 'opacity-75 group-hover:scale-110 group-hover:opacity-100'}`}
         />
-
-        {/* Layer 3: Front (Banana) */}
-        <div className="relative z-10 transition-transform duration-300 ease-out-expo group-hover:-rotate-12 group-hover:-translate-y-0.5">
-          <Banana
-            strokeWidth={2}
-            className="w-5 h-5 text-accent-400 fill-accent-400/20 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] transition-colors duration-300 group-hover:text-accent-300 group-hover:fill-accent-400/40"
-          />
-        </div>
-
-        {/* Center Glow */}
         <div
           className={`absolute inset-0 bg-accent-500/20 blur-xl rounded-full transition-opacity duration-500 ${isGenerating ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
         />
@@ -59,7 +47,7 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
       {/* Text Label */}
       <div className="flex flex-col items-start leading-none">
         <span className="text-xs font-black tracking-tight text-zinc-100 group-hover:text-white transition-colors font-sans uppercase">
-          CHORITA
+          CODEX
         </span>
         <span className="text-[7.5px] font-black text-accent-500 uppercase tracking-widest transition-colors duration-300 group-hover:text-accent-400">
           STUDIO

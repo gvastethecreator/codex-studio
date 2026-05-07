@@ -1,4 +1,4 @@
-# PRD: Codex Image Studio Local
+# PRD: Codex Studio Local
 
 ## Proposito
 

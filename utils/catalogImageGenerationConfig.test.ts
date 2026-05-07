@@ -1,15 +1,16 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import type { CatalogImage } from '../packages/shared/src';
+import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import { buildGenerationConfigFromCatalogImage } from './catalogImageGenerationConfig';
 
 function createCatalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   return {
     id: 'asset-1',
-    libraryId: 'lib-1',
-    filePath: 'D:/tmp/image.png',
+    libraryId: 'library-1',
+    filePath: 'D:/tmp/asset.png',
     thumbnailPath: null,
-    publicUrl: '/library/assets/image.png',
+    publicUrl: '/library/assets/asset.png',
     thumbnailUrl: null,
     prompt: 'Plain prompt',
     negativePrompt: null,
@@ -20,7 +21,7 @@ function createCatalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage
     mimeType: 'image/png',
     fileSizeBytes: 1234,
     jobId: 'job-1',
-    workspaceId: 'default',
+    workspaceId: 'workspace-1',
     batchId: null,
     recipeId: null,
     isFavorite: false,
@@ -84,5 +85,35 @@ describe('buildGenerationConfigFromCatalogImage', () => {
     expect(config.aspectRatio).toBe('3:2');
     expect(config.negativePrompt).toBe('noise');
     expect(config.batchCount).toBe(3);
+  });
+
+  it('rehydrates execution model, reasoning, and speed from catalog generation config', () => {
+    const config = buildGenerationConfigFromCatalogImage(
+      createCatalogImage({
+        generationConfig: {
+          prompt: 'Hero portrait',
+          aspectRatio: '1:1',
+          imageSize: '1K',
+          model: 'codex-imagegen',
+          executionModel: 'gpt-5.3-codex-spark',
+          executionReasoningEffort: 'medium',
+          executionSpeed: 'fast',
+        },
+      }),
+    );
+
+    expect(config.executionModel).toBe('gpt-5.3-codex-spark');
+    expect(config.executionReasoningEffort).toBe('medium');
+    expect(config.executionSpeed).toBe('fast');
+  });
+
+  it('falls back to generation defaults when execution fields are missing', () => {
+    const config = buildGenerationConfigFromCatalogImage(createCatalogImage());
+
+    expect(config.executionModel).toBe(DEFAULT_GENERATION_CONFIG.executionModel);
+    expect(config.executionReasoningEffort).toBe(
+      DEFAULT_GENERATION_CONFIG.executionReasoningEffort,
+    );
+    expect(config.executionSpeed).toBe(DEFAULT_GENERATION_CONFIG.executionSpeed);
   });
 });

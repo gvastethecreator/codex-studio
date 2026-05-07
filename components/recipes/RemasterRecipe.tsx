@@ -28,29 +28,29 @@ interface RemasterRecipeProps {
 
 const CONTROL_OPTIONS = {
   style: [
-    'Reconstrucción Realista',
-    'Renderizado Cinematográfico',
-    'Arte Digital Pro',
-    'Restauración de Archivo',
-    'Película Analógica',
-    'Detalle de Óleo',
+    'Realistic Reconstruction',
+    'Cinematic Rendering',
+    'Pro Digital Art',
+    'Archive Restoration',
+    'Analog Film',
+    'Oil Detail',
   ],
   lighting: [
-    'Corrección de Iluminación',
-    'Luz Volumétrica',
-    'Iluminación de Estudio',
-    'Luz Natural',
-    'Hora Dorada',
-    'Contraste Dramático',
+    'Lighting Correction',
+    'Volumetric Light',
+    'Studio Lighting',
+    'Natural Light',
+    'Golden Hour',
+    'Dramatic Contrast',
   ],
-  camera: ['Enfoque Nítido', 'Profundidad de Campo', 'Aumento de Texturas', 'Gran Angular'],
-  anatomy: ['Corregir Anatomía', 'Mejorar Rostros y Ojos', 'Corregir Manos', 'Detalle de Piel'],
-  text: ['Mantener Original', 'Eliminar Textos', 'Reescribir Lógicamente'],
+  camera: ['Sharp Focus', 'Depth of Field', 'Texture Enhancement', 'Wide Angle'],
+  anatomy: ['Fix Anatomy', 'Improve Faces and Eyes', 'Fix Hands', 'Skin Detail'],
+  text: ['Keep Original', 'Remove Text', 'Rewrite Logically'],
   color: [
-    'Rango Dinámico Ampliado',
-    'Colores Naturales',
-    'Vibrancia Profunda',
-    'Corrección de Color',
+    'Expanded Dynamic Range',
+    'Natural Colors',
+    'Deep Vibrance',
+    'Color Correction',
   ],
 };
 
@@ -65,12 +65,12 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
   isGenerating,
 }) => {
   const [params, setParams] = useState({
-    style: 'Reconstrucción Realista',
-    lighting: 'Corrección de Iluminación',
-    camera: 'Enfoque Nítido',
-    anatomy: 'Corregir Anatomía',
-    text: 'Reescribir Lógicamente',
-    color: 'Rango Dinámico Ampliado',
+    style: 'Realistic Reconstruction',
+    lighting: 'Lighting Correction',
+    camera: 'Sharp Focus',
+    anatomy: 'Fix Anatomy',
+    text: 'Rewrite Logically',
+    color: 'Expanded Dynamic Range',
     fidelity: 35,
   });
 
@@ -227,10 +227,10 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             </div>
             <div className="text-center">
               <h3 className="text-xl font-black text-zinc-500 group-hover:text-white uppercase tracking-tight">
-                Cargar imagen o escribir un prompt
+                Load image or type a prompt
               </h3>
               <p className="text-[10px] text-zinc-700 font-bold uppercase tracking-[0.2em] mt-2">
-                Formatos soportados: JPG, PNG, WEBP
+                Supported formats: JPG, PNG, WEBP
               </p>
             </div>
           </div>

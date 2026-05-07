@@ -18,7 +18,7 @@ if (await probeHttp(`${apiBase}/api/health`)) {
   processes.push(spawnManagedProcess('local-server', ['bun', 'run', 'dev:server']));
 }
 
-if (await probeHttp(rendererUrl, { expectedText: 'Codex Image Studio' })) {
+if (await probeHttp(rendererUrl, { expectedText: 'Codex Studio' })) {
   console.log(`[dev:electron] Reusing existing renderer at ${rendererUrl}`);
 } else {
   processes.push(spawnManagedProcess('renderer', ['bun', 'run', 'dev:ui']));

@@ -3,7 +3,10 @@ import { randomUUID } from 'node:crypto';
 import { resolveLibraryPath } from './library';
 import type {
   Asset,
+  CodexTurnRecord,
   Job,
+  JobEventRecord,
+  JobExecutionOptions,
   JobKind,
   JobStatus,
   Project,
@@ -14,6 +17,22 @@ let db: Database | null = null;
 
 function now() {
   return new Date().toISOString();
+}
+
+function parseJson<T>(value: string | null | undefined, fallback: T): T {
+  if (!value) return fallback;
+  try {
+    return JSON.parse(value) as T;
+  } catch {
+    return fallback;
+  }
+}
+
+function ensureColumn(database: Database, tableName: string, columnName: string, definition: string) {
+  const columns = database.query(`PRAGMA table_info(${tableName})`).all() as { name: string }[];
+  if (!columns.some((column) => column.name === columnName)) {
+    database.run(`ALTER TABLE ${tableName} ADD COLUMN ${columnName} ${definition}`);
+  }
 }
 
 export function getDb() {
@@ -49,6 +68,7 @@ export function migrateDb() {
       project_id TEXT NOT NULL REFERENCES projects(id),
       kind TEXT NOT NULL,
       status TEXT NOT NULL,
+      execution_json TEXT,
       original_prompt TEXT NOT NULL,
       expanded_prompt TEXT,
       final_prompt_used TEXT NOT NULL,
@@ -168,6 +188,7 @@ export function migrateDb() {
       created_at TEXT NOT NULL
     )
   `);
+  ensureColumn(database, 'jobs', 'execution_json', 'TEXT');
 }
 
 function mapProject(row: any): Project {
@@ -186,6 +207,7 @@ function mapJob(row: any): Job {
     projectId: row.project_id,
     kind: row.kind,
     status: row.status,
+    execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
     originalPrompt: row.original_prompt,
     expandedPrompt: row.expanded_prompt,
     finalPromptUsed: row.final_prompt_used,
@@ -224,12 +246,36 @@ function mapLog(row: any): SystemLog {
   };
 }
 
+function mapJobEvent(row: any): JobEventRecord {
+  return {
+    id: row.id,
+    jobId: row.job_id,
+    type: row.type,
+    message: row.message,
+    metadata: parseJson<Record<string, unknown> | null>(row.metadata, null),
+    createdAt: row.created_at,
+  };
+}
+
+function mapCodexTurn(row: any): CodexTurnRecord {
+  return {
+    id: row.id,
+    jobId: row.job_id,
+    codexThreadId: row.codex_thread_id,
+    codexTurnId: row.codex_turn_id,
+    transcriptPath: row.transcript_path,
+    status: row.status,
+    createdAt: row.created_at,
+    updatedAt: row.updated_at,
+  };
+}
+
 export function ensureDefaultProject() {
   const existing = getDb().query('SELECT * FROM projects ORDER BY created_at LIMIT 1').get();
   if (existing) return mapProject(existing);
   return createProject(
     'Default Studio Project',
-    'Initial local project for Codex Image Studio jobs.',
+    'Initial local project for Codex Studio jobs.',
   );
 }
 
@@ -253,12 +299,18 @@ export function listProjects() {
   return getDb().query('SELECT * FROM projects ORDER BY updated_at DESC').all().map(mapProject);
 }
 
-export function createJob(input: { projectId: string; kind: JobKind; prompt: string }) {
+export function createJob(input: {
+  projectId: string;
+  kind: JobKind;
+  prompt: string;
+  execution?: JobExecutionOptions | null;
+}) {
   const job: Job = {
     id: randomUUID(),
     projectId: input.projectId,
     kind: input.kind,
     status: 'queued',
+    execution: input.execution ?? null,
     originalPrompt: input.prompt,
     expandedPrompt: null,
     finalPromptUsed: input.prompt,
@@ -269,14 +321,15 @@ export function createJob(input: { projectId: string; kind: JobKind; prompt: str
   };
   getDb()
     .query(`
-      INSERT INTO jobs (id, project_id, kind, status, original_prompt, expanded_prompt, final_prompt_used, error, created_at, updated_at, completed_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO jobs (id, project_id, kind, status, execution_json, original_prompt, expanded_prompt, final_prompt_used, error, created_at, updated_at, completed_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `)
     .run(
       job.id,
       job.projectId,
       job.kind,
       job.status,
+      job.execution ? JSON.stringify(job.execution) : null,
       job.originalPrompt,
       job.expandedPrompt,
       job.finalPromptUsed,
@@ -392,6 +445,20 @@ export function addSystemLog(input: {
 
 export function listLogs() {
   return getDb().query('SELECT * FROM system_logs ORDER BY id DESC LIMIT 300').all().map(mapLog);
+}
+
+export function listJobEvents(jobId: string) {
+  return getDb()
+    .query('SELECT * FROM job_events WHERE job_id = ? ORDER BY id ASC')
+    .all(jobId)
+    .map(mapJobEvent);
+}
+
+export function getCodexTurnByJobId(jobId: string) {
+  const row = getDb()
+    .query('SELECT * FROM codex_turns WHERE job_id = ? ORDER BY updated_at DESC LIMIT 1')
+    .get(jobId);
+  return row ? mapCodexTurn(row) : null;
 }
 
 export function upsertCodexTurn(input: {

@@ -2,7 +2,7 @@
 
 ## 1. Filosofía de Diseño
 
-El diseño de Codex Image Studio se inspira en interfaces de software profesional (como herramientas de edición de video, DAWs o motores de juego). Prioriza la densidad de información, la precisión técnica y una estética oscura ("Dark Mode" por defecto) para reducir la fatiga visual y hacer que las imágenes generadas destaquen sobre la interfaz.
+El diseño de Codex Studio se inspira en interfaces de software profesional (como herramientas de edición de video, DAWs o motores de juego). Prioriza la densidad de información, la precisión técnica y una estética oscura ("Dark Mode" por defecto) para reducir la fatiga visual y hacer que las imágenes generadas destaquen sobre la interfaz.
 
 ## 2. Paleta de Colores
 

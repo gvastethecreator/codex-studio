@@ -1,4 +1,4 @@
-# Contribuir a Codex Image Studio
+# Contribuir a Codex Studio
 
 Gracias por ayudar a convertir este repo en un producto open-source mas solido y mas facil de instalar.
 

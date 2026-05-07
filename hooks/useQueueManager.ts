@@ -1,14 +1,20 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import type { ImageGenerationConfig, QueueJob, QueueJobStatus } from '../types';
+import type { Job as StudioJob } from '../packages/shared/src';
 import { startViewTransition } from '../utils/transitionUtils';
 
 interface UseQueueManagerProps {
   executeGeneration: (
     config: Partial<ImageGenerationConfig>,
-    options?: { preventModal?: boolean; signal?: AbortSignal },
+    options?: {
+      preventModal?: boolean;
+      signal?: AbortSignal;
+      onJobCreated?: (job: StudioJob) => void;
+    },
   ) => Promise<void>;
   isGenerating: boolean;
   addToast: (message: string, type: 'success' | 'error' | 'info') => void;
+  cancelPersistentJob: (jobId: string) => Promise<void>;
 }
 
 const MAX_CONCURRENT_JOBS = 3;
@@ -17,12 +23,14 @@ export const useQueueManager = ({
   executeGeneration,
   isGenerating,
   addToast,
+  cancelPersistentJob,
 }: UseQueueManagerProps) => {
   const [jobs, setJobs] = useState<QueueJob[]>([]);
   const [isResting, setIsResting] = useState(false);
   const [queueTick, setQueueTick] = useState(0);
   const restTimerRef = useRef<NodeJS.Timeout | null>(null);
   const abortControllersRef = useRef<Map<string, AbortController>>(new Map());
+  const linkedServerJobIdsRef = useRef<Map<string, string>>(new Map());
   const processingJobsRef = useRef<Set<string>>(new Set());
 
   const enqueue = useCallback(
@@ -60,9 +68,19 @@ export const useQueueManager = ({
   const cancelJob = useCallback(
     (jobId: string) => {
       const controller = abortControllersRef.current.get(jobId);
+      const linkedServerJobId = linkedServerJobIdsRef.current.get(jobId);
       if (controller) {
         controller.abort();
         abortControllersRef.current.delete(jobId);
+      }
+
+      if (linkedServerJobId) {
+        void cancelPersistentJob(linkedServerJobId).catch((error) => {
+          addToast(
+            error instanceof Error ? error.message : 'Unable to cancel backend job',
+            'error',
+          );
+        });
       }
 
       startViewTransition(() => {
@@ -72,7 +90,7 @@ export const useQueueManager = ({
         addToast('Job cancelled', 'info');
       });
     },
-    [addToast],
+    [addToast, cancelPersistentJob],
   );
 
   const removeJob = useCallback((jobId: string) => {
@@ -81,6 +99,7 @@ export const useQueueManager = ({
       controller.abort();
       abortControllersRef.current.delete(jobId);
     }
+    linkedServerJobIdsRef.current.delete(jobId);
 
     startViewTransition(() => {
       setJobs((prev) => prev.filter((job) => job.id !== jobId));
@@ -89,9 +108,19 @@ export const useQueueManager = ({
 
   const clearCompleted = useCallback(() => {
     startViewTransition(() => {
+      const remaining = new Set<string>();
       setJobs((prev) =>
-        prev.filter((job) => job.status !== 'completed' && job.status !== 'cancelled'),
+        prev.filter((job) => {
+          const keep = job.status !== 'completed' && job.status !== 'cancelled';
+          if (keep) remaining.add(job.id);
+          return keep;
+        }),
       );
+      for (const key of [...linkedServerJobIdsRef.current.keys()]) {
+        if (!remaining.has(key)) {
+          linkedServerJobIdsRef.current.delete(key);
+        }
+      }
     });
   }, []);
 
@@ -157,6 +186,14 @@ export const useQueueManager = ({
         await executeGeneration(nextJob.config, {
           preventModal: true,
           signal: controller.signal,
+          onJobCreated: (studioJob) => {
+            linkedServerJobIdsRef.current.set(nextJob.id, studioJob.id);
+            setJobs((prev) =>
+              prev.map((job) =>
+                job.id === nextJob.id ? { ...job, serverJobId: studioJob.id } : job,
+              ),
+            );
+          },
         });
 
         setJobs((prev) =>
@@ -181,7 +218,9 @@ export const useQueueManager = ({
         }
       } catch (error: any) {
         const isAbort =
-          error.name === 'AbortError' || error.message === 'Operation cancelled by user';
+          error.name === 'AbortError' ||
+          error.message === 'Operation cancelled by user' ||
+          /job cancelled/i.test(error.message || '');
 
         setJobs((prev) =>
           prev.map((j) => {

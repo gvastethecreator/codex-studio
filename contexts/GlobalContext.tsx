@@ -64,6 +64,8 @@ interface GlobalContextType {
 
   isDebugPanelOpen: boolean;
   toggleDebugPanel: () => void;
+  openDebugPanel: () => void;
+  closeDebugPanel: () => void;
 }
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);
@@ -237,7 +239,8 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
   }, []);
 
   const { toasts, addToast, removeToast } = useToasts();
-  const { isDebugPanelOpen, toggleDebugPanel } = usePanelManager();
+  const { isDebugPanelOpen, toggleDebugPanel, openDebugPanel, closeDebugPanel } =
+    usePanelManager();
 
   const restoreFromTrash = useCallback(
     (batchId: string) => {
@@ -297,6 +300,8 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       removeToast,
       isDebugPanelOpen,
       toggleDebugPanel,
+      openDebugPanel,
+      closeDebugPanel,
     }),
     [
       state.logs,
@@ -330,6 +335,8 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       removeToast,
       isDebugPanelOpen,
       toggleDebugPanel,
+      openDebugPanel,
+      closeDebugPanel,
     ],
   );
 

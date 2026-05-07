@@ -1,4 +1,4 @@
-# Codex Image Studio
+# Codex Studio
 
 Studio local-first para generar, revisar y administrar imagenes con la sesion autenticada de Codex/ChatGPT del usuario a traves de `codex app-server`.
 
@@ -139,7 +139,7 @@ Los comandos de calidad y build (`fmt`, `lint`, `check`, `test`, `build`, `valid
 - [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md) — errores comunes de setup y ejecucion.
 - [`docs/IMPLEMENTATION_LOG.md`](./docs/IMPLEMENTATION_LOG.md) — registro de tareas aplicadas en la puesta al dia.
 - [`docs/TECHNICAL_DEBT.md`](./docs/TECHNICAL_DEBT.md) — deuda tecnica conocida y siguientes focos.
-- [`docs/adr/0001-local-codex-image-studio.md`](./docs/adr/0001-local-codex-image-studio.md) — decision arquitectonica fundacional.
+- [`docs/adr/0001-local-codex-studio.md`](./docs/adr/0001-local-codex-studio.md) — decision arquitectonica fundacional.
 - [`ROADMAP.md`](./ROADMAP.md) — prioridades del producto para la etapa open-source.
 
 ## Contribuir

@@ -1,4 +1,4 @@
-# Codex Image Studio Local Plan
+# Codex Studio Local Plan
 
 ## Objetivo
 

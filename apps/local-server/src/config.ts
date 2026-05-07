@@ -12,6 +12,7 @@ const DEFAULT_CODEX_WS_PORT = 4318;
 const DEFAULT_CODEX_IMAGEGEN_MODEL = 'gpt-5.4-mini';
 const DEFAULT_CODEX_IMAGEGEN_REASONING_EFFORT: StudioSettings['codexImagegenReasoningEffort'] =
   'low';
+const DEFAULT_CODEX_IMAGEGEN_SERVICE_TIER: StudioSettings['codexImagegenServiceTier'] = null;
 const DEFAULT_MAX_CONCURRENT_CODEX_JOBS = 4;
 
 let envLocalLoaded = false;
@@ -48,7 +49,11 @@ export function loadDotEnvLocal() {
   }
 }
 
-function warnInvalidSetting(key: string, value: string | undefined, fallback: string | number) {
+function warnInvalidSetting(
+  key: string,
+  value: string | undefined,
+  fallback: string | number | null,
+) {
   const renderedValue = value === undefined ? 'undefined' : JSON.stringify(value);
   console.warn(
     `[studio-config] Invalid ${key}=${renderedValue}. Using ${JSON.stringify(fallback)}.`,
@@ -79,7 +84,19 @@ function readReasoningEffortSetting(
 ) {
   const raw = process.env[key]?.trim().toLowerCase();
   if (!raw) return fallback;
-  if (raw === 'low' || raw === 'medium' || raw === 'high') return raw;
+  if (raw === 'low' || raw === 'medium' || raw === 'high' || raw === 'xhigh') return raw;
+  warnInvalidSetting(key, raw, fallback);
+  return fallback;
+}
+
+function readServiceTierSetting(
+  key: string,
+  fallback: StudioSettings['codexImagegenServiceTier'],
+) {
+  const raw = process.env[key]?.trim().toLowerCase();
+  if (!raw) return fallback;
+  if (raw === 'fast' || raw === 'flex') return raw;
+  if (raw === 'standard' || raw === 'default' || raw === 'auto' || raw === 'none') return null;
   warnInvalidSetting(key, raw, fallback);
   return fallback;
 }
@@ -95,6 +112,10 @@ export function getSettings(): StudioSettings {
     codexImagegenReasoningEffort: readReasoningEffortSetting(
       'CODEX_IMAGEGEN_REASONING_EFFORT',
       DEFAULT_CODEX_IMAGEGEN_REASONING_EFFORT,
+    ),
+    codexImagegenServiceTier: readServiceTierSetting(
+      'CODEX_IMAGEGEN_SERVICE_TIER',
+      DEFAULT_CODEX_IMAGEGEN_SERVICE_TIER,
     ),
     codexMaxConcurrentJobs: readPositiveIntSetting(
       'STUDIO_MAX_CONCURRENT_CODEX_JOBS',

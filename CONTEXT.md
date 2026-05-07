@@ -1,4 +1,4 @@
-# Codex Image Studio Context
+# Codex Studio Context
 
 ## Domain Terms
 

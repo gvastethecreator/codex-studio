@@ -1,9 +1,10 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { CodexRpcClient } from './rpcClient';
-import { getSettings } from '../config';
+import { resolveJobExecutionOptions } from './executionOptions';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
+import type { JobExecutionOptions } from '../../../../packages/shared/src';
 
 export interface SessionHandle {
   client: CodexRpcClient;
@@ -14,7 +15,7 @@ export interface SessionHandle {
 }
 
 export interface SessionPool {
-  getOrCreateSession(projectId: string): Promise<SessionHandle>;
+  getOrCreateSession(projectId: string, execution?: JobExecutionOptions | null): Promise<SessionHandle>;
   releaseSession(handle: SessionHandle): void;
   destroySession(threadId: string): Promise<void>;
 }
@@ -89,14 +90,17 @@ export function getImagegenSessionKey(prompt: string) {
   return pack || 'unknown_pack';
 }
 
-export async function createImagegenSession(sessionKey: string): Promise<SessionHandle> {
+export async function createImagegenSession(
+  sessionKey: string,
+  execution?: JobExecutionOptions | null,
+): Promise<SessionHandle> {
   const client = new CodexRpcClient();
   await client.connect();
 
   const init = await client.request('initialize', {
     clientInfo: {
-      name: 'codex-image-studio',
-      title: 'Codex Image Studio',
+      name: 'codex-studio',
+      title: 'Codex Studio',
       version: '0.1.0',
     },
     capabilities: null,
@@ -108,15 +112,16 @@ export async function createImagegenSession(sessionKey: string): Promise<Session
   let threadId = persistedThreadId;
 
   if (!threadId) {
-    const settings = getSettings();
+    const executionOptions = resolveJobExecutionOptions(execution);
     const thread = await client.request('thread/start', {
-      model: settings.codexImagegenModel,
+      model: executionOptions.model,
+      serviceTier: executionOptions.serviceTier ?? undefined,
       cwd: process.cwd(),
       approvalPolicy: 'never',
       sandbox: 'danger-full-access',
       sessionStartSource: 'startup',
       developerInstructions:
-        `You are running inside Codex Image Studio in a persistent style-pack thread (${sessionKey}). ` +
+        `You are running inside Codex Studio in a persistent style-pack thread (${sessionKey}). ` +
         'Generate exactly one image per user turn through the provided imagegen skill. ' +
         'Treat every turn independently and use only the current user prompt for the requested style card. ' +
         'Do not run shell commands to locate or copy the newest generated image. ' +
@@ -156,10 +161,10 @@ export function closeImagegenSession(
   }
 }
 
-export async function getImagegenSession(sessionKey: string) {
+export async function getImagegenSession(sessionKey: string, execution?: JobExecutionOptions | null) {
   const existing = imagegenSessions.get(sessionKey);
   if (existing) return existing;
-  return createImagegenSession(sessionKey);
+  return createImagegenSession(sessionKey, execution);
 }
 
 export function createSessionPool(): SessionPool {

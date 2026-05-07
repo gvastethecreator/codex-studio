@@ -1,5 +1,7 @@
 import type {
   CatalogPage,
+  CodexModelCatalogResponse,
+  JobDetailResponse,
   CreateJobRequest,
   HealthResponse,
   Job,
@@ -60,6 +62,13 @@ export async function getStudioHealth() {
 }
 
 /**
+ * Discover the Codex execution models available to the local app-server.
+ */
+export async function getCodexModelCatalog() {
+  return request<CodexModelCatalogResponse>('/api/codex/models');
+}
+
+/**
  * Ask the local backend to bootstrap `codex app-server` when possible.
  */
 export async function startStudioAppServer() {
@@ -83,6 +92,22 @@ export async function createStudioJob(body: CreateJobRequest) {
  */
 export async function listStudioJobs() {
   return request<Job[]>('/api/jobs');
+}
+
+/**
+ * Fetch the detailed session/events/transcript view for one backend job.
+ */
+export async function getStudioJobDetail(jobId: string) {
+  return request<JobDetailResponse>(`/api/jobs/${jobId}`);
+}
+
+/**
+ * Ask the backend worker to cancel a queued or running job.
+ */
+export async function cancelStudioJob(jobId: string) {
+  return request<Job>(`/api/jobs/${jobId}/cancel`, {
+    method: 'POST',
+  });
 }
 
 /**

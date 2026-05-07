@@ -1,10 +1,10 @@
 import { copyFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import { getSettings } from '../config';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
 import { resolvePlatformPath } from '../platformPaths';
 import { createAssetExtractor } from './assetExtractor';
+import { resolveJobExecutionOptions } from './executionOptions';
 import {
   closeImagegenSession,
   getImagegenSession,
@@ -12,6 +12,7 @@ import {
   type SessionHandle,
 } from './sessionPool';
 import type { JsonRpcMessage } from './rpcClient';
+import type { JobExecutionOptions } from '../../../../packages/shared/src';
 
 const IMAGEGEN_SKILL_PATH = path.join(
   resolvePlatformPath('codex-skills-dir'),
@@ -25,6 +26,8 @@ export interface TurnParams {
   prompt: string;
   jobId: string;
   sessionKey?: string;
+  execution?: JobExecutionOptions | null;
+  signal?: AbortSignal;
 }
 
 export interface TurnResult {
@@ -37,6 +40,48 @@ export interface TurnResult {
 
 export interface CodexTurn {
   runTurn(params: TurnParams): Promise<TurnResult>;
+}
+
+function createAbortError() {
+  const error = new Error('Operation cancelled by user');
+  error.name = 'AbortError';
+  return error;
+}
+
+function isAbortError(error: unknown) {
+  return error instanceof Error && error.name === 'AbortError';
+}
+
+function throwIfAborted(signal?: AbortSignal) {
+  if (signal?.aborted) {
+    throw createAbortError();
+  }
+}
+
+async function raceWithAbort<T>(promise: Promise<T>, signal?: AbortSignal, onAbort?: () => void) {
+  if (!signal) return promise;
+  throwIfAborted(signal);
+
+  return new Promise<T>((resolve, reject) => {
+    const handleAbort = () => {
+      signal.removeEventListener('abort', handleAbort);
+      onAbort?.();
+      reject(createAbortError());
+    };
+
+    signal.addEventListener('abort', handleAbort, { once: true });
+
+    promise.then(
+      (value) => {
+        signal.removeEventListener('abort', handleAbort);
+        resolve(value);
+      },
+      (error) => {
+        signal.removeEventListener('abort', handleAbort);
+        reject(error);
+      },
+    );
+  });
 }
 
 function mimeForPath(filePath: string) {
@@ -62,41 +107,59 @@ function extractAssistantText(notifications: JsonRpcMessage[]) {
 
 async function runCodexImagegenTurn(
   session: SessionHandle,
-  job: { id: string; prompt: string; projectId: string },
+  job: { id: string; prompt: string; projectId: string; execution?: JobExecutionOptions | null },
   transcriptPath: string,
   startedAt: number,
+  sessionKey: string,
+  signal?: AbortSignal,
 ): Promise<TurnResult> {
-  const settings = getSettings();
+  const executionOptions = resolveJobExecutionOptions(job.execution);
   const assetExtractor = createAssetExtractor(job.id);
   const notificationStart = session.client.getNotificationCount();
   let turnId: string | null = null;
 
-  const turn = await session.client.request('turn/start', {
-    threadId: session.threadId,
-    input: [
-      { type: 'skill', name: 'imagegen', path: IMAGEGEN_SKILL_PATH },
-      {
-        type: 'text',
-        text:
-          'Generate exactly one portrait image for this Codex Image Studio style preset. ' +
-          'Use txt2img from the full prompt below. Save or expose the resulting image so the local studio can import it, ' +
-          'then report the exact local file path.\n\n' +
-          `Prompt:\n${job.prompt}`,
-        text_elements: [],
-      },
-    ],
-    cwd: process.cwd(),
-    approvalPolicy: 'never',
-    model: settings.codexImagegenModel,
-    effort: settings.codexImagegenReasoningEffort,
-  });
+  const invalidateSession = () =>
+    closeImagegenSession(sessionKey, {
+      invalidatePersistedThread: true,
+    });
+
+  const turn = await raceWithAbort(
+    session.client.request('turn/start', {
+      threadId: session.threadId,
+      input: [
+        { type: 'skill', name: 'imagegen', path: IMAGEGEN_SKILL_PATH },
+        {
+          type: 'text',
+          text:
+            'Generate exactly one portrait image for this Codex Studio style preset. ' +
+            'Use txt2img from the full prompt below. Save or expose the resulting image so the local studio can import it, ' +
+            'then report the exact local file path.\n\n' +
+            `Prompt:\n${job.prompt}`,
+          text_elements: [],
+        },
+      ],
+      cwd: process.cwd(),
+      approvalPolicy: 'never',
+      model: executionOptions.model,
+      effort: executionOptions.reasoningEffort,
+      serviceTier: executionOptions.serviceTier ?? undefined,
+    }),
+    signal,
+    invalidateSession,
+  );
   turnId = turn?.turn?.id ?? null;
 
-  await session.client.waitForNotification(
-    (message) =>
-      message.method === 'turn/completed' && (!turnId || message.params?.turn?.id === turnId),
-    600_000,
+  await raceWithAbort(
+    session.client.waitForNotification(
+      (message) =>
+        message.method === 'turn/completed' && (!turnId || message.params?.turn?.id === turnId),
+      600_000,
+    ),
+    signal,
+    invalidateSession,
   );
+
+  throwIfAborted(signal);
 
   const notifications = session.client.getNotificationsSince(notificationStart);
   for (const notification of notifications) {
@@ -168,6 +231,8 @@ async function runImagegenJob(job: {
   id: string;
   prompt: string;
   projectId: string;
+  execution?: JobExecutionOptions | null;
+  signal?: AbortSignal;
 }): Promise<TurnResult> {
   const startedAt = Date.now();
   const transcriptDir = resolveLibraryPath('transcripts', job.id);
@@ -178,11 +243,21 @@ async function runImagegenJob(job: {
 
   for (let attempt = 1; attempt <= 2; attempt += 1) {
     let runResult!: TurnResult;
-    const session = await getImagegenSession(sessionKey);
+    const session = await getImagegenSession(sessionKey, job.execution);
     const run = session.queue.then(async () => {
       try {
-        runResult = await runCodexImagegenTurn(session, job, transcriptPath, startedAt);
+        runResult = await runCodexImagegenTurn(
+          session,
+          job,
+          transcriptPath,
+          startedAt,
+          sessionKey,
+          job.signal,
+        );
       } catch (error) {
+        if (isAbortError(error)) {
+          throw error;
+        }
         const message = error instanceof Error ? error.message : String(error);
         const invalidatePersistedThread = /thread.+not found|unknown thread|invalid thread/i.test(
           message,
@@ -198,6 +273,7 @@ async function runImagegenJob(job: {
       return runResult;
     } catch (error) {
       lastError = error;
+      if (isAbortError(error)) throw error;
       const message = error instanceof Error ? error.message : String(error);
       const retryable =
         /stream disconnected|Timed out waiting for Codex notification|thread.+not found|unknown thread|invalid thread/i.test(
@@ -224,6 +300,8 @@ export function createCodexTurn(): CodexTurn {
         id: params.jobId,
         projectId: params.projectId,
         prompt: params.prompt,
+        execution: params.execution,
+        signal: params.signal,
       });
     },
   };

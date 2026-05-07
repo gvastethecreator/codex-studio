@@ -1,4 +1,4 @@
-# ADR 0001: Codex Image Studio local sin API key
+# ADR 0001: Codex Studio local sin API key
 
 ## Estado
 

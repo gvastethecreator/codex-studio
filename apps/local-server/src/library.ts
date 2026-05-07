@@ -32,7 +32,7 @@ export function ensureLibrary() {
   if (!existsSync(readmePath)) {
     writeFileSync(
       readmePath,
-      'Codex Image Studio local library. Assets, SQLite, logs and transcripts are managed by the local studio server.\n',
+      'Codex Studio local library. Assets, SQLite, logs and transcripts are managed by the local studio server.\n',
       'utf8',
     );
   }

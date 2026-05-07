@@ -34,7 +34,6 @@ import type {
   ImageGenerationConfig,
   GeneratedImageWithConfig,
   Attachment,
-  AspectRatio,
 } from '../../types';
 import {
   STYLE_CATEGORY_IMAGES,
@@ -140,12 +139,19 @@ const PACK_THEMES: Record<string, { color: string; bg: string; border: string; t
   }, // Miscellaneous & Fun
 };
 
-import { RATIO_MAP } from '../../constants';
-
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { startViewTransition } from '../../utils/transitionUtils';
 
 const previewDataUrlCache = new Map<string, string>();
+
+interface StyleCardHoverPreview {
+  id: string;
+  name: string;
+  category: string;
+  packName: string;
+  aesthetic: string;
+  imageSrc: string | null;
+}
 
 function describeStyleValue(value: unknown, fallback = 'Standard'): string {
   if (typeof value === 'string') {
@@ -239,6 +245,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const [currentPackId, setCurrentPackId] = useState('pack_01');
   const [activePresetId, setActivePresetId] = useState<string | null>(null);
   const [copiedStyleId, setCopiedStyleId] = useState<string | null>(null);
+  const [hoveredPresetPreview, setHoveredPresetPreview] = useState<StyleCardHoverPreview | null>(
+    null,
+  );
+  const [lastHoveredPresetPreview, setLastHoveredPresetPreview] = useState<
+    StyleCardHoverPreview | null
+  >(null);
   const timeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -249,13 +261,17 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     };
   }, []);
 
+  useEffect(() => {
+    if (hoveredPresetPreview) {
+      setLastHoveredPresetPreview(hoveredPresetPreview);
+    }
+  }, [hoveredPresetPreview]);
+
   // -- FILTERS & STATE --
   const [searchQuery, setSearchQuery] = useState('');
   const [sortOrder, setSortOrder] = useState<'az' | 'za'>('az');
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [favorites, setFavorites] = useLocalStorage<string[]>('style-favorites', []);
-
-  const ratioValue = useMemo(() => RATIO_MAP[config.aspectRatio] || 1, [config.aspectRatio]);
 
   // Style Influence (Default 80%)
   const [styleStrength, setStyleStrength] = useState(0.8);
@@ -308,6 +324,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   }, [currentPackId]);
 
   const activeTheme = PACK_THEMES[currentPackId] || PACK_THEMES['pack_01'];
+  const resolvedHoveredPresetPreview = hoveredPresetPreview ?? lastHoveredPresetPreview;
+
+  useEffect(() => {
+    setHoveredPresetPreview(null);
+  }, [currentPackId, searchQuery, sortOrder, showFavoritesOnly]);
 
   // Enhanced Grouping Logic with Search, Sort, and Favorites Bubbling
   const processedData = useMemo(() => {
@@ -568,7 +589,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     }
   };
 
-  const getResultImageForPreset = (presetName: string) => {
+  const getResultImageForPreset = React.useCallback((presetName: string) => {
     if (!images) return null;
     const targetStyle = `TARGET STYLE: ${presetName.toUpperCase()}`;
     return (
@@ -576,27 +597,60 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         .filter((img) => img.config.recipeContext?.includes(targetStyle))
         .sort((a, b) => b.createdAt - a.createdAt)[0] || null
     );
-  };
+  }, [images]);
 
-  const getPackIdForPreset = (preset: StylePresetDef) => {
+  const getPackIdForPreset = React.useCallback((preset: StylePresetDef) => {
     if (currentPackId !== FAVORITES_PACK_ID) return currentPackId;
     return (
       STYLE_PACKS.find((pack) => pack.presets.some((candidate) => candidate.id === preset.id))
         ?.id || activePack.id
     );
-  };
+  }, [activePack.id, currentPackId]);
 
-  const renderPresetCard = React.useCallback(
+  const getPresetVisualState = React.useCallback(
     (preset: StylePresetDef) => {
+      const presetPackId = getPackIdForPreset(preset);
+      const presetPack = STYLE_PACKS.find((pack) => pack.id === presetPackId) ?? activePack;
       const resultImage = getResultImageForPreset(preset.name);
       const defaultImage = STYLE_DEFAULT_IMAGES[preset.id];
-      const presetPackId = getPackIdForPreset(preset);
       const categoryImage = preset.category
         ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
         : undefined;
       const previewImage = preset.category
         ? categoryImage || STYLE_CATEGORY_PREVIEWS[preset.category]
         : undefined;
+
+      return {
+        presetPack,
+        resultImage,
+        defaultImage,
+        previewImage,
+        exampleImageSrc:
+          defaultImage || previewImage || resultImage?.thumbnail || resultImage?.src || null,
+      };
+    },
+    [activePack, getPackIdForPreset, getResultImageForPreset],
+  );
+
+  const buildHoverPreview = React.useCallback(
+    (preset: StylePresetDef): StyleCardHoverPreview => {
+      const { presetPack, exampleImageSrc } = getPresetVisualState(preset);
+
+      return {
+        id: preset.id,
+        name: preset.name,
+        category: preset.category || 'General',
+        packName: presetPack.name,
+        aesthetic: preset.style.aesthetic,
+        imageSrc: exampleImageSrc,
+      };
+    },
+    [getPresetVisualState],
+  );
+
+  const renderPresetCard = React.useCallback(
+    (preset: StylePresetDef) => {
+      const { resultImage, defaultImage, previewImage } = getPresetVisualState(preset);
       const isActive = activePresetId === preset.id;
       const isCopied = copiedStyleId === preset.id;
       const isFavorite = favorites.includes(preset.id);
@@ -626,13 +680,18 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           }
         >
           <div
+            onPointerEnter={() => setHoveredPresetPreview(buildHoverPreview(preset))}
+            onPointerLeave={() =>
+              setHoveredPresetPreview((currentPreview) =>
+                currentPreview?.id === preset.id ? null : currentPreview,
+              )
+            }
             className={`
                   group relative aspect-3/4 rounded-xl overflow-hidden text-left transition-all duration-300 flex flex-col
-                  ${
-                    isActive
-                      ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
-                      : 'bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1'
-                  }
+                  ${isActive
+                ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
+                : 'bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1'
+              }
               `}
           >
             <div className="flex-1 relative overflow-hidden bg-black">
@@ -787,15 +846,16 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     },
     [
       activePresetId,
+      buildHoverPreview,
       copiedStyleId,
       favorites,
       activeTheme,
-      images,
+      getPresetVisualState,
       onOpenImage,
       handleApplyStyle,
-      toggleFavorite,
       handleCopyStylePrompt,
       isGenerating,
+      toggleFavorite,
     ],
   );
 
@@ -803,7 +863,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     <RecipeLayout isGenerating={isGenerating} className="flex h-full w-full">
       {/* LEFT: VISUAL CONTEXT PREVIEW */}
       <div className="w-[30%] 2xl:w-[25%] h-full flex flex-col p-6 relative z-10 overflow-y-auto custom-scrollbar">
-        <div className="w-full flex flex-col gap-6 my-auto">
+        <div className="w-full min-h-full flex flex-col gap-6">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-lg font-black text-white uppercase tracking-tighter">
@@ -815,51 +875,104 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             </div>
           </div>
 
-          <div
-            className="group relative w-full max-h-[40vh] shrink-0"
-            style={{ aspectRatio: ratioValue }}
-          >
-            {activeImage ? (
-              <div className="w-full h-full relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-900/20">
-                <img
-                  src={activeImage.dataUrl}
-                  className="w-full h-full object-contain p-2 opacity-90 group-hover:opacity-100 transition-opacity"
-                  alt=""
-                />
-                <button
-                  onClick={() => updateConfig('attachments', [])}
-                  className="absolute top-4 right-4 p-2 rounded-xl bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white border border-red-500/20 transition-all opacity-0 group-hover:opacity-100 shadow-xl"
-                >
-                  <X size={16} />
-                </button>
-              </div>
-            ) : (
-              <div
-                onDragOver={(e) => e.preventDefault()}
-                onDrop={handleDrop}
-                onClick={() => fileInputRef.current?.click()}
-                className="group flex h-full w-full cursor-pointer flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border-2 border-dashed border-white/5 bg-white/1 transition-all hover:border-white/20 hover:bg-white/3"
-              >
-                <input
-                  type="file"
-                  ref={fileInputRef}
-                  onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
-                  className="hidden"
-                  accept="image/*"
-                />
-                <div className="w-16 h-16 rounded-2xl bg-zinc-900 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:border-white/20 transition-all shadow-2xl">
-                  <Upload
-                    size={24}
-                    className="text-zinc-600 group-hover:text-white transition-colors"
+          <div className="group relative w-full min-h-96 flex-1 shrink-0">
+            <div className="relative h-full w-full overflow-hidden rounded-3xl">
+              {activeImage ? (
+                <div className="w-full h-full relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-900/20">
+                  <img
+                    src={activeImage.dataUrl}
+                    className="w-full h-full object-contain p-2 opacity-90 group-hover:opacity-100 transition-opacity"
+                    alt=""
                   />
+                  <button
+                    onClick={() => updateConfig('attachments', [])}
+                    className="absolute top-4 right-4 p-2 rounded-xl bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white border border-red-500/20 transition-all opacity-0 group-hover:opacity-100 shadow-xl"
+                  >
+                    <X size={16} />
+                  </button>
                 </div>
-                <div className="text-center">
-                  <h3 className="text-base font-black text-zinc-500 group-hover:text-white uppercase tracking-tight transition-colors">
-                    Upload or enter prompt
-                  </h3>
+              ) : (
+                <div
+                  onDragOver={(e) => e.preventDefault()}
+                  onDrop={handleDrop}
+                  onClick={() => fileInputRef.current?.click()}
+                  className="group flex h-full w-full cursor-pointer flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border-2 border-dashed border-white/5 bg-white/1 transition-all hover:border-white/20 hover:bg-white/3"
+                >
+                  <input
+                    type="file"
+                    ref={fileInputRef}
+                    onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
+                    className="hidden"
+                    accept="image/*"
+                  />
+                  <div className="w-16 h-16 rounded-2xl bg-zinc-900 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:border-white/20 transition-all shadow-2xl">
+                    <Upload
+                      size={24}
+                      className="text-zinc-600 group-hover:text-white transition-colors"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <h3 className="text-base font-black text-zinc-500 group-hover:text-white uppercase tracking-tight transition-colors">
+                      Upload or enter prompt
+                    </h3>
+                  </div>
+                </div>
+              )}
+
+              <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-3xl">
+                <div
+                  className="t-panel-slide relative h-full w-full overflow-hidden rounded-3xl border border-white/10 bg-black shadow-2xl"
+                  data-open={hoveredPresetPreview ? 'true' : 'false'}
+                  style={{ '--panel-translate-y': '48px' } as React.CSSProperties}
+                >
+                  {resolvedHoveredPresetPreview && (
+                    <>
+                      {resolvedHoveredPresetPreview.imageSrc ? (
+                        <img
+                          src={resolvedHoveredPresetPreview.imageSrc}
+                          className="absolute inset-0 h-full w-full object-cover"
+                          alt={resolvedHoveredPresetPreview.name}
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center bg-zinc-950 text-zinc-500">
+                          <div className="flex flex-col items-center gap-3">
+                            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
+                              <Palette size={28} />
+                            </div>
+                            <span className="text-[10px] font-black uppercase tracking-[0.24em]">
+                              Style Preview
+                            </span>
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/5" />
+
+                      <div className="absolute inset-x-0 bottom-0 p-3 md:p-4">
+                        <div className="max-w-[76%] rounded-2xl border border-white/10 bg-black/35 px-3.5 py-3 backdrop-blur-2xl shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
+                          <div className="flex min-w-0 flex-wrap items-center gap-2">
+                            <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.22em] text-white/65">
+                              {resolvedHoveredPresetPreview.packName}
+                            </span>
+                            <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.22em] text-zinc-300/80">
+                              {resolvedHoveredPresetPreview.category}
+                            </span>
+                          </div>
+
+                          <h3 className="mt-2.5 truncate text-xs font-black uppercase tracking-[0.02em] text-white">
+                            {resolvedHoveredPresetPreview.name}
+                          </h3>
+
+                          <p className="mt-1.5 line-clamp-2 text-[9px] leading-relaxed text-zinc-200/78">
+                            {resolvedHoveredPresetPreview.aesthetic}
+                          </p>
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
-            )}
+            </div>
           </div>
 
           {/* CONTROL SLIDERS */}
@@ -916,11 +1029,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             }}
             className={`
                   group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                    ${
-                      currentPackId === FAVORITES_PACK_ID
-                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-                    }
+                    ${currentPackId === FAVORITES_PACK_ID
+                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+              }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -947,11 +1059,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 }}
                 className={`
                       group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                            ${
-                              isActive
-                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                            }
+                            ${isActive
+                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                  }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>
@@ -1034,7 +1145,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   </h3>
                   <div className="h-px flex-1 bg-linear-to-r from-rose-500/20 to-transparent" />
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {processedData.favorites.map(renderPresetCard)}
                 </div>
               </div>
@@ -1053,7 +1164,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   </h3>
                   <div className="h-px flex-1 bg-white/10" />
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {(presets as StylePresetDef[]).map(renderPresetCard)}
                 </div>
               </div>
