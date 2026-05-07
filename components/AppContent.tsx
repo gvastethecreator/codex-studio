@@ -3,25 +3,18 @@ import { AnimatePresence, motion, type Variants } from 'motion/react';
 
 import { useImageManager } from '../hooks/useImageManager';
 import { useHashRouter } from '../hooks/useHashRouter';
+import { useImageInputSurface } from '../hooks/useImageInputSurface';
+import { useStudioDiagnostics } from '../hooks/useStudioDiagnostics';
+import { useStudioJobInspector } from '../hooks/useStudioJobInspector';
+import { useStudioNavigation } from '../hooks/useStudioNavigation';
+import { useStudioReset } from '../hooks/useStudioReset';
+import { useVaultTransfer } from '../hooks/useVaultTransfer';
+import { useWorkspaceStrip } from '../hooks/useWorkspaceStrip';
 
-import {
-  exportToJson,
-  readJsonFile,
-  validateVault,
-  downloadMultipleImagesAsZip,
-} from '../utils/fileUtils';
-import { formatErrorMessage } from '../utils/runtimeLogger';
 import { detectRecipeFromContext } from '../utils/recipeUtils';
 import { startViewTransition } from '../utils/transitionUtils';
-import {
-  cancelStudioJob,
-  getCodexAccountStatus,
-  getStudioHealth,
-  getStudioJobDetail,
-  resetStudioData as requestStudioReset,
-} from '../services/localStudioService';
+import { cancelStudioJob } from '../services/localStudioService';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import { clearAll as clearAllIndexedDb } from '../utils/idb';
 
 import type {
   ImageGenerationConfig,
@@ -30,11 +23,6 @@ import type {
   AspectRatio,
   RecipeId,
 } from '../types';
-import type {
-  CodexAccountStatusResponse,
-  HealthResponse,
-  JobDetailResponse,
-} from '../packages/shared/src';
 
 import { AppOverlays } from './AppOverlays';
 import { BottomToolbar } from './ui/BottomToolbar';
@@ -89,13 +77,6 @@ const viewVariants: Variants = {
 
 interface AppContentProps { }
 
-const STUDIO_DIAGNOSTICS_REFRESH_MS = 30_000;
-const STUDIO_RESET_LOCAL_STORAGE_KEYS = [
-  'generation-config',
-  'isBackgroundEnabled',
-  'user-wallet-balance',
-] as const;
-
 export const AppContent: React.FC<AppContentProps> = () => {
   const {
     logs,
@@ -146,22 +127,6 @@ export const AppContent: React.FC<AppContentProps> = () => {
   const [hasDismissedLimitModal, setHasDismissedLimitModal] = useState(false);
 
   const { config, pipeline, recipe, ui, modal } = useGeneration();
-
-  const [selectedStudioJobId, setSelectedStudioJobId] = useState<string | null>(null);
-  const [selectedJobDetail, setSelectedJobDetail] = useState<JobDetailResponse | null>(null);
-  const [isLoadingSelectedJob, setIsLoadingSelectedJob] = useState(false);
-  const [systemHealth, setSystemHealth] = useState<HealthResponse | null>(null);
-  const [codexAccountStatus, setCodexAccountStatus] =
-    useState<CodexAccountStatusResponse | null>(null);
-  const [hasFetchedDiagnostics, setHasFetchedDiagnostics] = useState(false);
-  const [isResettingStudio, setIsResettingStudio] = useState(false);
-  const isMountedRef = useRef(true);
-
-  useEffect(() => {
-    return () => {
-      isMountedRef.current = false;
-    };
-  }, []);
 
   const handleCancelPersistentJob = useCallback(
     async (jobId: string) => {
@@ -220,105 +185,112 @@ export const AppContent: React.FC<AppContentProps> = () => {
     addToast,
     shouldAutoOpen: batches.length === 0,
   });
+  const { systemHealth, codexAccountStatus, hasFetchedDiagnostics, refreshDiagnostics } =
+    useStudioDiagnostics({
+      initialHealth: onboardingHealth,
+    });
 
-  const refreshStudioDiagnostics = useCallback(async () => {
-    const [healthResult, accountResult] = await Promise.allSettled([
-      getStudioHealth(),
-      getCodexAccountStatus(),
-    ]);
-
-    if (!isMountedRef.current) return;
-
-    setSystemHealth(healthResult.status === 'fulfilled' ? healthResult.value : null);
-    setCodexAccountStatus(
-      accountResult.status === 'fulfilled'
-        ? accountResult.value
-        : {
-          authMode: null,
-          planType: null,
-          usage: null,
-          source: 'fallback',
-          fetchedAt: new Date().toISOString(),
-          error:
-            accountResult.reason instanceof Error
-              ? accountResult.reason.message
-              : String(accountResult.reason),
-        },
-    );
-    setHasFetchedDiagnostics(true);
-  }, []);
-
-  useEffect(() => {
-    if (onboardingHealth) {
-      setSystemHealth(onboardingHealth);
-    }
-  }, [onboardingHealth]);
-
-  useEffect(() => {
-    void refreshStudioDiagnostics();
-
-    const interval = window.setInterval(() => {
-      void refreshStudioDiagnostics();
-    }, STUDIO_DIAGNOSTICS_REFRESH_MS);
-
-    return () => {
-      window.clearInterval(interval);
-    };
-  }, [refreshStudioDiagnostics]);
-
-  const [direction, setDirection] = useState(0);
-  const previousViewIndexRef = useRef(0);
   const effectiveStudioHealth = systemHealth ?? onboardingHealth;
-  const selectedStudioJobUpdatedAt = useMemo(
-    () => studioJobs.find((job) => job.id === selectedStudioJobId)?.updatedAt ?? null,
-    [selectedStudioJobId, studioJobs],
-  );
-
-  useEffect(() => {
-    let cancelled = false;
-
-    if (!selectedStudioJobId) {
-      setSelectedJobDetail(null);
-      setIsLoadingSelectedJob(false);
-      return () => {
-        cancelled = true;
-      };
-    }
-
-    setIsLoadingSelectedJob(true);
-
-    void getStudioJobDetail(selectedStudioJobId)
-      .then((detail) => {
-        if (!cancelled) {
-          setSelectedJobDetail(detail);
-        }
-      })
-      .catch((error) => {
-        if (!cancelled) {
-          setSelectedJobDetail(null);
-          addToast(
-            error instanceof Error ? error.message : 'Unable to load the selected job detail',
-            'error',
-          );
-        }
-      })
-      .finally(() => {
-        if (!cancelled) {
-          setIsLoadingSelectedJob(false);
-        }
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [selectedStudioJobId, selectedStudioJobUpdatedAt, addToast]);
+  const {
+    selectedStudioJobId,
+    selectedJobDetail,
+    isLoadingSelectedJob,
+    inspectStudioJob,
+    clearSelectedJob,
+  } = useStudioJobInspector({
+    studioJobs,
+    addToast,
+  });
+  const { importVault, exportVault, downloadAndClearWorkspace } = useVaultTransfer({
+    batches,
+    replaceBatches,
+    archiveBatches,
+    clearAllBatches,
+    addToast,
+    log,
+  });
+  const {
+    workspacesWithThumbs,
+    handleAddWorkspace,
+    handleDeleteWorkspace,
+    handleRenameWorkspace,
+  } = useWorkspaceStrip({
+    workspaces,
+    batches,
+    createWorkspace,
+    deleteWorkspace,
+    renameWorkspace,
+    addToast,
+  });
+  const clearGenerationState = useCallback(() => {
+    config.setGenerationConfig({
+      ...DEFAULT_GENERATION_CONFIG,
+      attachments: [],
+      recipeParams: null,
+    });
+  }, [config]);
+  const clearStudioUiState = useCallback(() => {
+    recipe.setActiveRecipe(null);
+    ui.setIsInteractingWithToolbar(false);
+    ui.setIsKeyPopoverOpen(false);
+    modal.closeModal();
+    navigateToStudio();
+    closeOverlay();
+    clearSelectedJob();
+    setIsQueueOpen(true);
+    setIsEditorOpen(false);
+    setImageToEdit(null);
+    setPreviewRatio(null);
+    setIsToolbarVisible(true);
+    setIsEnhancingPrompt(false);
+    setIsEditingImage(false);
+    setIsDashboardModalOpen(false);
+    setIsTrashModalOpen(false);
+    setIsLimitModalOpen(false);
+    setHasDismissedLimitModal(false);
+  }, [clearSelectedJob, closeOverlay, modal, navigateToStudio, recipe, ui]);
+  const { isResettingStudio, resetStudio } = useStudioReset({
+    addToast,
+    resetStudioState,
+    resetQueue,
+    refreshOnboardingHealth,
+    refreshDiagnostics,
+    clearGenerationState,
+    clearUiState: clearStudioUiState,
+  });
+  const {
+    direction,
+    currentView,
+    handleViewChange,
+    handleRecipeSelection,
+    handleCloseRecipe,
+    handleOpenModal,
+    handleCloseModal,
+  } = useStudioNavigation({
+    route,
+    activeRecipe: recipe.activeRecipe,
+    setActiveRecipe: recipe.setActiveRecipe,
+    modalImage: modal.modalImage,
+    isModalOpen: modal.isModalOpen,
+    openModal: modal.openModal,
+    closeModal: modal.closeModal,
+    imageToEdit,
+    isEditorOpen,
+    setIsEditorOpen,
+    setImageToEdit,
+    navigateToStudio,
+    navigateToRecipes,
+    navigateToRecipe,
+    openModalRoute,
+    closeOverlay,
+  });
 
   const handleInspectStudioJob = useCallback(
     (jobId: string) => {
-      setSelectedStudioJobId(jobId);
+      inspectStudioJob(jobId);
       openDebugPanel();
     },
-    [openDebugPanel],
+    [inspectStudioJob, openDebugPanel],
   );
 
   const handleToggleDebugPanel = useCallback(() => {
@@ -327,105 +299,9 @@ export const AppContent: React.FC<AppContentProps> = () => {
       return;
     }
 
-    setSelectedStudioJobId(null);
-    setSelectedJobDetail(null);
+    clearSelectedJob();
     openDebugPanel();
-  }, [closeDebugPanel, isDebugPanelOpen, openDebugPanel]);
-
-  const handleClearSelectedJob = useCallback(() => {
-    setSelectedStudioJobId(null);
-    setSelectedJobDetail(null);
-  }, []);
-
-  const handleViewChange = useCallback(
-    (newView: 'studio' | 'recipes') => {
-      if (newView === 'studio') {
-        navigateToStudio();
-        return;
-      }
-
-      navigateToRecipes();
-    },
-    [navigateToRecipes, navigateToStudio],
-  );
-
-  const handleRecipeSelection = useCallback(
-    (id: RecipeId) => {
-      if (!id) return;
-      navigateToRecipe(id);
-    },
-    [navigateToRecipe],
-  );
-
-  const handleCloseRecipe = useCallback(() => {
-    navigateToRecipes();
-  }, [navigateToRecipes]);
-
-  const handleOpenModal = useCallback(
-    (image: GeneratedImageWithConfig) => {
-      modal.openModal(image);
-      openModalRoute();
-    },
-    [modal, openModalRoute],
-  );
-
-  const handleCloseModal = useCallback(() => {
-    modal.closeModal();
-    closeOverlay();
-  }, [closeOverlay, modal]);
-
-  useEffect(() => {
-    const currentIndex = route.view === 'studio' ? 0 : route.view === 'recipes' ? 1 : 2;
-    if (currentIndex !== previousViewIndexRef.current) {
-      setDirection(currentIndex > previousViewIndexRef.current ? 1 : -1);
-      previousViewIndexRef.current = currentIndex;
-    }
-  }, [route.view]);
-
-  useEffect(() => {
-    startViewTransition(() => {
-      if (route.view === 'recipe' && route.activeRecipeId) {
-        if (recipe.activeRecipe !== route.activeRecipeId) {
-          recipe.setActiveRecipe(route.activeRecipeId);
-        }
-        return;
-      }
-
-      if (recipe.activeRecipe) {
-        recipe.setActiveRecipe(null);
-      }
-    });
-  }, [recipe, route.activeRecipeId, route.view]);
-
-  useEffect(() => {
-    startViewTransition(() => {
-      if (route.overlay === 'editor') {
-        if (!imageToEdit) {
-          closeOverlay();
-          return;
-        }
-
-        setIsEditorOpen(true);
-        return;
-      }
-
-      if (route.overlay === 'modal') {
-        if (!modal.modalImage) {
-          closeOverlay();
-        }
-        return;
-      }
-
-      if (modal.isModalOpen) {
-        modal.closeModal();
-      }
-
-      if (isEditorOpen) {
-        setIsEditorOpen(false);
-        setImageToEdit(null);
-      }
-    });
-  }, [closeOverlay, imageToEdit, isEditorOpen, modal, route.overlay]);
+  }, [clearSelectedJob, closeDebugPanel, isDebugPanelOpen, openDebugPanel]);
 
   const workspaceBatches = useMemo(() => {
     return batches.filter(
@@ -467,72 +343,9 @@ export const AppContent: React.FC<AppContentProps> = () => {
       });
   }, [allImages, batches]);
 
-  const workspacesWithThumbs = useMemo(() => {
-    return workspaces.map((ws) => {
-      const wBatches = batches.filter(
-        (b) => b.workspaceId === ws.id || (!b.workspaceId && ws.id === 'default'),
-      );
-      const sorted = wBatches.sort((a, b) => b.createdAt - a.createdAt);
-      const lastBatch = sorted[0];
-      const lastImg = lastBatch?.images[0]?.thumbnail || lastBatch?.images[0]?.src;
-      const count = wBatches.reduce((acc, b) => acc + b.images.length, 0);
-      return { ...ws, lastImage: lastImg, imageCount: count };
-    });
-  }, [workspaces, batches]);
-
-  useEffect(() => {
-    const handleGlobalPaste = (event: ClipboardEvent) => {
-      const items = event.clipboardData?.items;
-      if (!items) return;
-
-      const files: File[] = [];
-      for (let i = 0; i < items.length; i++) {
-        if (items[i].type.indexOf('image') !== -1) {
-          const file = items[i].getAsFile();
-          if (file) files.push(file);
-        }
-      }
-
-      if (files.length > 0) {
-        config.handlePastedFiles(files);
-      }
-    };
-
-    window.addEventListener('paste', handleGlobalPaste);
-    return () => window.removeEventListener('paste', handleGlobalPaste);
-  }, [config]);
-
-  const handleAddWorkspace = useCallback(() => {
-    startViewTransition(() => {
-      const newId = `ws-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
-      createWorkspace({ id: newId, createdAt: Date.now() }, { activate: true });
-      addToast('New workspace synthesized', 'success');
-    });
-  }, [createWorkspace, addToast]);
-
-  const handleDeleteWorkspace = useCallback(
-    (id: string) => {
-      if (id === 'default') {
-        addToast('The Default Matrix cannot be purged', 'error');
-        return;
-      }
-      startViewTransition(() => {
-        deleteWorkspace(id);
-        addToast('Workspace purged from archives', 'info');
-      });
-    },
-    [deleteWorkspace, addToast],
-  );
-
-  const handleRenameWorkspace = useCallback(
-    (id: string, newName: string) => {
-      startViewTransition(() => {
-        renameWorkspace(id, newName);
-        addToast('Workspace renamed', 'success');
-      });
-    },
-    [renameWorkspace, addToast],
-  );
+  const { isDragging, handleDragOver, handleDragLeave, handleDrop } = useImageInputSurface({
+    onFiles: config.handlePastedFiles,
+  });
 
   const handleGenerate = useCallback(
     (
@@ -622,171 +435,24 @@ export const AppContent: React.FC<AppContentProps> = () => {
     },
     [addToast, config, handleRecipeSelection, handleViewChange],
   );
-
-  const handleResetStudio = useCallback(async () => {
-    if (isResettingStudio) return;
-
-    const confirmed = window.confirm(
-      'This will erase local workspaces, cached assets, backend jobs, logs, and the Codex Studio database. Continue?',
-    );
-
-    if (!confirmed) return;
-
-    setIsResettingStudio(true);
-
-    try {
-      await requestStudioReset();
-      await clearAllIndexedDb();
-
-      for (const key of STUDIO_RESET_LOCAL_STORAGE_KEYS) {
-        try {
-          window.localStorage.removeItem(key);
-        } catch {
-          // Ignore storage cleanup failures; state reset still proceeds.
-        }
-      }
-
-      resetQueue();
-      config.setGenerationConfig({
-        ...DEFAULT_GENERATION_CONFIG,
-        attachments: [],
-        recipeParams: null,
-      });
-
-      startViewTransition(() => {
-        resetStudioState();
-        recipe.setActiveRecipe(null);
-        ui.setIsInteractingWithToolbar(false);
-        ui.setIsKeyPopoverOpen(false);
-        modal.closeModal();
-        navigateToStudio();
-        closeOverlay();
-        setSelectedStudioJobId(null);
-        setSelectedJobDetail(null);
-        setIsQueueOpen(true);
-        setIsEditorOpen(false);
-        setImageToEdit(null);
-        setPreviewRatio(null);
-        setIsToolbarVisible(true);
-        setIsEnhancingPrompt(false);
-        setIsEditingImage(false);
-        setIsDashboardModalOpen(false);
-        setIsTrashModalOpen(false);
-        setIsLimitModalOpen(false);
-        setHasDismissedLimitModal(false);
-      });
-
-      await Promise.allSettled([refreshOnboardingHealth(), refreshStudioDiagnostics()]);
-      addToast('Studio reset complete. Local workspace and database were rebuilt.', 'success');
-    } catch (error) {
-      addToast(error instanceof Error ? error.message : 'Studio reset failed', 'error');
-    } finally {
-      if (isMountedRef.current) {
-        setIsResettingStudio(false);
-      }
-    }
-  }, [
-    addToast,
-    closeOverlay,
-    config,
-    isResettingStudio,
-    modal,
-    navigateToStudio,
-    recipe,
-    refreshOnboardingHealth,
-    refreshStudioDiagnostics,
-    resetQueue,
-    resetStudioState,
-    ui,
-  ]);
-
-  const handleImportVault = useCallback(
-    async (e: React.ChangeEvent<HTMLInputElement>) => {
-      const file = e.target.files?.[0];
-      if (!file) return;
-      try {
-        const data = await readJsonFile(file);
-
-        if (!validateVault(data)) {
-          throw new Error('Invalid vault format');
-        }
-
-        replaceBatches(data, { ensureWorkspaces: true });
-        addToast('Vault Imported Successfully', 'success');
-      } catch (err: unknown) {
-        addToast('Invalid Vault File', 'error');
-      }
-    },
-    [addToast, replaceBatches],
-  );
-
-  const [isDragging, setIsDragging] = useState(false);
-
   useEffect(() => {
     if (batches.length > 100 && !hasDismissedLimitModal && !isLimitModalOpen) {
       setIsLimitModalOpen(true);
     }
   }, [batches.length, hasDismissedLimitModal, isLimitModalOpen]);
 
-  const handleDownloadAndClear = async () => {
-    try {
-      const allImages = batches.flatMap((b) =>
-        b.images.map((img) => ({ ...img, config: b.config }) as GeneratedImageWithConfig),
-      );
-      if (allImages.length > 0) {
-        await downloadMultipleImagesAsZip(allImages, `workspace-export-${Date.now()}.zip`);
-      }
+  const handleDownloadAndClear = useCallback(async () => {
+    const didClear = await downloadAndClearWorkspace();
+    if (!didClear) return;
 
-      // Move all to trash
-      archiveBatches(batches);
-      clearAllBatches();
-
-      setIsLimitModalOpen(false);
-      setHasDismissedLimitModal(true);
-      addToast('Workspace cleared and downloaded successfully', 'success');
-    } catch (error) {
-      log(`Failed to download and clear workspace: ${formatErrorMessage(error)}`);
-      addToast('Failed to download and clear workspace', 'error');
-    }
-  };
+    setIsLimitModalOpen(false);
+    setHasDismissedLimitModal(true);
+  }, [downloadAndClearWorkspace]);
 
   const handleDismissLimitModal = () => {
     setIsLimitModalOpen(false);
     setHasDismissedLimitModal(true);
   };
-
-  const handleDragOver = useCallback(
-    (e: React.DragEvent) => {
-      e.preventDefault();
-      e.stopPropagation();
-      if (!isDragging) setIsDragging(true);
-    },
-    [isDragging],
-  );
-
-  const handleDragLeave = useCallback((e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setIsDragging(false);
-  }, []);
-
-  const handleDrop = useCallback(
-    (e: React.DragEvent) => {
-      e.preventDefault();
-      e.stopPropagation();
-      setIsDragging(false);
-
-      const files = Array.from(e.dataTransfer.files as Iterable<File>).filter((file) =>
-        file.type.startsWith('image/'),
-      );
-      if (files.length > 0) {
-        config.handlePastedFiles(files);
-      }
-    },
-    [config],
-  );
-
-  const currentView = route.view === 'studio' ? 'studio' : 'recipes';
 
   return (
     <div
@@ -911,15 +577,15 @@ export const AppContent: React.FC<AppContentProps> = () => {
                 clearCompleted={clearCompleted}
                 isResting={isResting}
                 batchesForExport={imagesWithConfig}
-                exportBatches={() => exportToJson(batches, `vault-${Date.now()}.json`)}
-                handleImportVault={handleImportVault}
+                exportBatches={exportVault}
+                handleImportVault={importVault}
                 isBackgroundEnabled={isBackgroundEnabled}
                 setBackgroundEnabled={setBackgroundEnabled}
                 activeServerJobCount={activeServerJobCount}
                 onInspectJob={handleInspectStudioJob}
                 health={effectiveStudioHealth}
                 isBackendConnected={isBackendConnected}
-                onResetStudio={handleResetStudio}
+                onResetStudio={resetStudio}
                 isResettingStudio={isResettingStudio}
               />
             </motion.div>
@@ -1011,8 +677,8 @@ export const AppContent: React.FC<AppContentProps> = () => {
         selectedJobDetail={selectedJobDetail}
         isLoadingSelectedJob={isLoadingSelectedJob}
         onInspectJob={handleInspectStudioJob}
-        onClearSelectedJob={handleClearSelectedJob}
-        handleImportVault={handleImportVault}
+        onClearSelectedJob={clearSelectedJob}
+        handleImportVault={importVault}
         handleDeepScan={recoverOrphanedBatches}
         apiBase={apiBase}
         onboardingError={onboardingError}
