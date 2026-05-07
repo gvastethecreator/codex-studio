@@ -1,28 +1,22 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback } from 'react';
 import { AnimatePresence, motion, type Variants } from 'motion/react';
 
-import { useImageManager } from '../hooks/useImageManager';
 import { useHashRouter } from '../hooks/useHashRouter';
 import { useImageInputSurface } from '../hooks/useImageInputSurface';
 import { useStudioDiagnostics } from '../hooks/useStudioDiagnostics';
+import { useStudioGallery } from '../hooks/useStudioGallery';
+import { useStudioGenerationActions } from '../hooks/useStudioGenerationActions';
 import { useStudioJobInspector } from '../hooks/useStudioJobInspector';
 import { useStudioNavigation } from '../hooks/useStudioNavigation';
 import { useStudioReset } from '../hooks/useStudioReset';
 import { useVaultTransfer } from '../hooks/useVaultTransfer';
+import { useStudioViewState } from '../hooks/useStudioViewState';
 import { useWorkspaceStrip } from '../hooks/useWorkspaceStrip';
 
-import { detectRecipeFromContext } from '../utils/recipeUtils';
 import { startViewTransition } from '../utils/transitionUtils';
 import { cancelStudioJob } from '../services/localStudioService';
-import { DEFAULT_GENERATION_CONFIG } from '../constants';
 
-import type {
-  ImageGenerationConfig,
-  GeneratedImageWithConfig,
-  Attachment,
-  AspectRatio,
-  RecipeId,
-} from '../types';
+import type { RecipeId } from '../types';
 
 import { AppOverlays } from './AppOverlays';
 import { BottomToolbar } from './ui/BottomToolbar';
@@ -122,10 +116,6 @@ export const AppContent: React.FC<AppContentProps> = () => {
     closeOverlay,
   } = useHashRouter();
 
-  const [isTrashModalOpen, setIsTrashModalOpen] = useState(false);
-  const [isLimitModalOpen, setIsLimitModalOpen] = useState(false);
-  const [hasDismissedLimitModal, setHasDismissedLimitModal] = useState(false);
-
   const { config, pipeline, recipe, ui, modal } = useGeneration();
 
   const handleCancelPersistentJob = useCallback(
@@ -143,15 +133,6 @@ export const AppContent: React.FC<AppContentProps> = () => {
       addToast,
       cancelPersistentJob: handleCancelPersistentJob,
     });
-
-  const [isQueueOpen, setIsQueueOpen] = useState(true);
-  const [isEditorOpen, setIsEditorOpen] = useState(false);
-  const [imageToEdit, setImageToEdit] = useState<Attachment | null>(null);
-  const [previewRatio, setPreviewRatio] = useState<AspectRatio | null>(null);
-  const [isToolbarVisible, setIsToolbarVisible] = useState(true);
-  const [isEnhancingPrompt, setIsEnhancingPrompt] = useState(false);
-  const [isEditingImage, setIsEditingImage] = useState(false);
-  const [isDashboardModalOpen, setIsDashboardModalOpen] = useState(false);
   const {
     studioJobs,
     mergedLogs,
@@ -222,42 +203,43 @@ export const AppContent: React.FC<AppContentProps> = () => {
     renameWorkspace,
     addToast,
   });
-  const clearGenerationState = useCallback(() => {
-    config.setGenerationConfig({
-      ...DEFAULT_GENERATION_CONFIG,
-      attachments: [],
-      recipeParams: null,
-    });
-  }, [config]);
+  const {
+    isQueueOpen,
+    setIsQueueOpen,
+    isEditorOpen,
+    setIsEditorOpen,
+    imageToEdit,
+    setImageToEdit,
+    previewRatio,
+    setPreviewRatio,
+    isToolbarVisible,
+    toggleToolbar,
+    isDashboardModalOpen,
+    openDashboard,
+    closeDashboard,
+    isTrashModalOpen,
+    openTrash,
+    closeTrash,
+    isLimitModalOpen,
+    openEditor,
+    closeEditor,
+    dismissLimitModal,
+    handleDownloadAndClear,
+    resetViewState,
+  } = useStudioViewState({
+    batchCount: batches.length,
+    downloadAndClearWorkspace,
+    closeOverlay,
+  });
   const clearStudioUiState = useCallback(() => {
     recipe.setActiveRecipe(null);
     ui.setIsInteractingWithToolbar(false);
     ui.setIsKeyPopoverOpen(false);
     modal.closeModal();
     navigateToStudio();
-    closeOverlay();
     clearSelectedJob();
-    setIsQueueOpen(true);
-    setIsEditorOpen(false);
-    setImageToEdit(null);
-    setPreviewRatio(null);
-    setIsToolbarVisible(true);
-    setIsEnhancingPrompt(false);
-    setIsEditingImage(false);
-    setIsDashboardModalOpen(false);
-    setIsTrashModalOpen(false);
-    setIsLimitModalOpen(false);
-    setHasDismissedLimitModal(false);
-  }, [clearSelectedJob, closeOverlay, modal, navigateToStudio, recipe, ui]);
-  const { isResettingStudio, resetStudio } = useStudioReset({
-    addToast,
-    resetStudioState,
-    resetQueue,
-    refreshOnboardingHealth,
-    refreshDiagnostics,
-    clearGenerationState,
-    clearUiState: clearStudioUiState,
-  });
+    resetViewState();
+  }, [clearSelectedJob, modal, navigateToStudio, recipe, resetViewState, ui]);
   const {
     direction,
     currentView,
@@ -284,6 +266,40 @@ export const AppContent: React.FC<AppContentProps> = () => {
     openModalRoute,
     closeOverlay,
   });
+  const {
+    isEnhancingPrompt,
+    isEditingImage,
+    handleGenerate,
+    handleEnhancePrompt,
+    handleExecuteEdit,
+    handleLoadRecipe,
+    resetGenerationUi,
+  } = useStudioGenerationActions({
+    generationConfig: config.generationConfig,
+    setGenerationConfig: config.setGenerationConfig,
+    updateGenerationConfig: config.updateGenerationConfig,
+    executeEdit: pipeline.executeEdit,
+    enqueue,
+    addToast,
+    closeModal: handleCloseModal,
+    closeOverlay,
+    isModalOpen: modal.isModalOpen,
+    onRecipeSelection: handleRecipeSelection,
+    onViewChange: handleViewChange,
+    onEditSettled: () => {
+      setIsEditorOpen(false);
+      setImageToEdit(null);
+    },
+  });
+  const { isResettingStudio, resetStudio } = useStudioReset({
+    addToast,
+    resetStudioState,
+    resetQueue,
+    refreshOnboardingHealth,
+    refreshDiagnostics,
+    clearGenerationState: resetGenerationUi,
+    clearUiState: clearStudioUiState,
+  });
 
   const handleInspectStudioJob = useCallback(
     (jobId: string) => {
@@ -303,15 +319,9 @@ export const AppContent: React.FC<AppContentProps> = () => {
     openDebugPanel();
   }, [clearSelectedJob, closeDebugPanel, isDebugPanelOpen, openDebugPanel]);
 
-  const workspaceBatches = useMemo(() => {
-    return batches.filter(
-      (b) =>
-        b.workspaceId === activeWorkspaceId || (!b.workspaceId && activeWorkspaceId === 'default'),
-    );
-  }, [batches, activeWorkspaceId]);
-
   const {
     allImages,
+    imagesWithConfig,
     selectedImageIds,
     handleSelectionChange,
     handleDelete,
@@ -320,139 +330,21 @@ export const AppContent: React.FC<AppContentProps> = () => {
     handleDeselectAll,
     handleToggleFavorite,
     handleClearWorkspace,
-  } = useImageManager({
-    batches: workspaceBatches,
+  } = useStudioGallery({
+    batches,
+    activeWorkspaceId,
     deleteImage,
     deleteImages,
     toggleImageFavorite,
     clearWorkspace,
     log,
     modalImage: modal.modalImage,
-    handleCloseModal,
+    closeModal: handleCloseModal,
   });
-
-  const imagesWithConfig = useMemo(() => {
-    return allImages
-      .map((img) => {
-        const batch = batches.find((b) => b.id === img.batchId);
-        return { ...img, config: batch?.config } as GeneratedImageWithConfig;
-      })
-      .sort((a, b) => {
-        if (a.isFavorite === b.isFavorite) return b.createdAt - a.createdAt;
-        return a.isFavorite ? -1 : 1;
-      });
-  }, [allImages, batches]);
 
   const { isDragging, handleDragOver, handleDragLeave, handleDrop } = useImageInputSurface({
     onFiles: config.handlePastedFiles,
   });
-
-  const handleGenerate = useCallback(
-    (
-      promptOverride?: string,
-      configOverrides?: Partial<ImageGenerationConfig>,
-      options?: { force?: boolean; preventModal?: boolean },
-    ) => {
-      if (modal.isModalOpen && !options?.preventModal) {
-        handleCloseModal();
-      }
-
-      const finalPrompt =
-        (promptOverride !== undefined ? promptOverride : config.generationConfig.prompt)?.trim() ??
-        '';
-      if (!finalPrompt) {
-        addToast('Type a prompt before generating', 'info');
-        return;
-      }
-
-      const finalConfig: ImageGenerationConfig = {
-        ...config.generationConfig,
-        ...configOverrides,
-        prompt: finalPrompt,
-      };
-      enqueue(finalPrompt, finalConfig, options?.force);
-    },
-    [addToast, config.generationConfig, enqueue, handleCloseModal, modal.isModalOpen],
-  );
-
-  const handleEnhancePrompt = useCallback(async () => {
-    if (isEnhancingPrompt) return;
-    setIsEnhancingPrompt(true);
-    try {
-      const currentPrompt = (config.generationConfig.prompt ?? '').trim();
-      if (!currentPrompt) {
-        addToast('Type a prompt before refining it', 'info');
-        return;
-      }
-
-      config.updateGenerationConfig(
-        'prompt',
-        [
-          currentPrompt,
-          '',
-          'Refinement notes:',
-          '- High-quality local image generation through Codex ImageGen.',
-          '- Preserve the requested subject, composition, lighting, material detail, and aspect ratio.',
-        ].join('\n'),
-      );
-      addToast('Prompt preparado para Codex ImageGen', 'success');
-    } catch (error) {
-      addToast(error instanceof Error ? error.message : 'Prompt refinement failed', 'error');
-    } finally {
-      setIsEnhancingPrompt(false);
-    }
-  }, [addToast, config, isEnhancingPrompt]);
-
-  const handleExecuteEdit = useCallback(
-    async (original: Attachment, mask: string, prompt: string) => {
-      setIsEditingImage(true);
-      try {
-        await pipeline.executeEdit(original, mask, prompt);
-        closeOverlay();
-        setIsEditorOpen(false);
-        setImageToEdit(null);
-      } catch {
-        // Pipeline already reports failures.
-      } finally {
-        setIsEditingImage(false);
-      }
-    },
-    [closeOverlay, pipeline],
-  );
-
-  const handleLoadRecipe = useCallback(
-    (nextConfig: ImageGenerationConfig) => {
-      config.setGenerationConfig(nextConfig);
-      addToast('Recipe restored', 'success');
-
-      const detectedRecipe =
-        nextConfig.recipeId ?? detectRecipeFromContext(nextConfig.recipeContext);
-      if (detectedRecipe) {
-        handleRecipeSelection(detectedRecipe);
-      } else {
-        handleViewChange('studio');
-      }
-    },
-    [addToast, config, handleRecipeSelection, handleViewChange],
-  );
-  useEffect(() => {
-    if (batches.length > 100 && !hasDismissedLimitModal && !isLimitModalOpen) {
-      setIsLimitModalOpen(true);
-    }
-  }, [batches.length, hasDismissedLimitModal, isLimitModalOpen]);
-
-  const handleDownloadAndClear = useCallback(async () => {
-    const didClear = await downloadAndClearWorkspace();
-    if (!didClear) return;
-
-    setIsLimitModalOpen(false);
-    setHasDismissedLimitModal(true);
-  }, [downloadAndClearWorkspace]);
-
-  const handleDismissLimitModal = () => {
-    setIsLimitModalOpen(false);
-    setHasDismissedLimitModal(true);
-  };
 
   return (
     <div
@@ -476,7 +368,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
           selectedImageCount={selectedImageIds.length}
           isGenerating={pipeline.isGenerating}
           isToolbarVisible={isToolbarVisible}
-          onToggleToolbar={() => startViewTransition(() => setIsToolbarVisible((p) => !p))}
+          onToggleToolbar={toggleToolbar}
           workspaces={workspacesWithThumbs}
           activeWorkspaceId={activeWorkspaceId}
           onSwitchWorkspace={(id) => startViewTransition(() => setActiveWorkspace(id))}
@@ -487,9 +379,9 @@ export const AppContent: React.FC<AppContentProps> = () => {
           onViewChange={handleViewChange}
           activeRecipe={recipe.activeRecipe}
           onCloseRecipe={handleCloseRecipe}
-          onOpenDashboard={() => startViewTransition(() => setIsDashboardModalOpen(true))}
+          onOpenDashboard={openDashboard}
           onOpenOnboarding={() => startViewTransition(() => openOnboarding())}
-          onOpenTrash={() => startViewTransition(() => setIsTrashModalOpen(true))}
+          onOpenTrash={openTrash}
           trashCount={trash.length}
           onToggleDebug={handleToggleDebugPanel}
           codexAccountStatus={codexAccountStatus}
@@ -624,13 +516,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
               onEnhancePrompt={handleEnhancePrompt}
               setPreviewRatio={setPreviewRatio}
               setIsInteracting={ui.setIsInteractingWithToolbar}
-              onOpenEditor={(att) => {
-                startViewTransition(() => {
-                  setImageToEdit(att);
-                  setIsEditorOpen(true);
-                  openEditorRoute();
-                });
-              }}
+              onOpenEditor={(att) => openEditor(att, openEditorRoute)}
               isKeyPopoverOpen={ui.isKeyPopoverOpen}
               onOpenKeySelector={() =>
                 startViewTransition(() => ui.setIsKeyPopoverOpen(!ui.isKeyPopoverOpen))
@@ -656,13 +542,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
         handleToggleFavorite={handleToggleFavorite}
         setActiveCarouselId={modal.setActiveCarouselId}
         isEditorOpen={isEditorOpen}
-        closeEditor={() => {
-          startViewTransition(() => {
-            setIsEditorOpen(false);
-            setImageToEdit(null);
-            closeOverlay();
-          });
-        }}
+        closeEditor={closeEditor}
         imageToEdit={imageToEdit}
         handleExecuteEdit={handleExecuteEdit}
         isEditingImage={isEditingImage}
@@ -670,7 +550,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
         closeDebugPanel={closeDebugPanel}
         mergedLogs={mergedLogs}
         isDashboardModalOpen={isDashboardModalOpen}
-        closeDashboard={() => startViewTransition(() => setIsDashboardModalOpen(false))}
+        closeDashboard={closeDashboard}
         batches={batches}
         workspaces={workspaces}
         studioJobs={studioJobs}
@@ -693,13 +573,13 @@ export const AppContent: React.FC<AppContentProps> = () => {
         refreshOnboardingHealth={() => void refreshOnboardingHealth()}
         ensureAppServer={() => void ensureAppServer()}
         isTrashModalOpen={isTrashModalOpen}
-        closeTrash={() => startViewTransition(() => setIsTrashModalOpen(false))}
+        closeTrash={closeTrash}
         trash={trash}
         restoreFromTrash={restoreFromTrash}
         restoreAllFromTrash={restoreAllFromTrash}
         emptyTrash={emptyTrash}
         isLimitModalOpen={isLimitModalOpen}
-        handleDismissLimitModal={handleDismissLimitModal}
+        handleDismissLimitModal={dismissLimitModal}
         handleDownloadAndClear={handleDownloadAndClear}
       />
     </div>
