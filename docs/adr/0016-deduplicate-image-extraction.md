@@ -19,6 +19,7 @@ Tiene 5 estrategias de extracción dentro de `runImagegenJob`:
 5. **Saved paths from text**: regex para encontrar paths de archivos guardados en el texto de la notificación, excluyendo paths que contengan `_image_id_`.
 
 Features avanzadas que solo existen en `turn.ts`:
+
 - **ANSI stripping**: limpia secuencias de escape antes de aplicar regex.
 - **Timestamp filtering**: solo acepta imágenes generadas después de que el turno empezó.
 - **_image_id_ exclusion**: ignora imágenes intermedias de Codex.
@@ -42,6 +43,7 @@ Tiene 3 estrategias con el factory `createAssetExtractor(jobId)`:
 ### Deletion test
 
 Si eliminamos la lógica de extracción de `turn.ts` y delegamos completamente a `assetExtractor.ts`:
+
 - La complejidad de extracción se concentra en `assetExtractor.ts` (locality).
 - `turn.ts` se reduce a orquestación pura (session → RPC → extract → transcript).
 - Agregar una nueva estrategia de extracción se hace en un solo lugar.
@@ -54,37 +56,40 @@ Si eliminamos la lógica de extracción de `turn.ts` y delegamos completamente a
 
 ```ts
 interface ExtractionStrategy {
-  name: string
-  extract(notification: unknown, context: ExtractionContext): ExtractedImage[]
+  name: string;
+  extract(notification: unknown, context: ExtractionContext): ExtractedImage[];
 }
 
 interface ExtractionContext {
-  jobId: string
-  turnStartedAt: Date
-  libraryDir: string
+  jobId: string;
+  turnStartedAt: Date;
+  libraryDir: string;
 }
 
 interface ExtractedImage {
-  source: 'inline' | 'generated_items' | 'saved_path'
-  data?: Buffer        // para inline base64
-  filePath?: string    // para generated_items y saved_path
-  mimeType?: string
+  source: 'inline' | 'generated_items' | 'saved_path';
+  data?: Buffer; // para inline base64
+  filePath?: string; // para generated_items y saved_path
+  mimeType?: string;
 }
 
-function createAssetExtractor(jobId: string, deps?: {
-  strategies?: ExtractionStrategy[]  // inyectable para tests
-}): AssetExtractor
+function createAssetExtractor(
+  jobId: string,
+  deps?: {
+    strategies?: ExtractionStrategy[]; // inyectable para tests
+  },
+): AssetExtractor;
 ```
 
 Estrategias (en prioridad):
 
-| # | Estrategia | Fuente | Features |
-|---|-----------|--------|---------|
-| 1 | `InlineBase64Strategy` | `data:image/...;base64,...` en texto | ANSI stripping, regex para PNG/JPEG/WebP |
-| 2 | `GeneratedItemsStrategy` | `generated_images` en JSON notificación | Timestamp filtering (> turn start) |
-| 3 | `SavedPathsStrategy` | Paths de archivo en texto | `_image_id_` exclusion, multi-path regex |
-| 4 | `MultiLineBase64Strategy` | Base64 multilinea (fallback) | ANSI stripping + re-join lines |
-| 5 | `FilenamePatternStrategy` | Nombres de archivo tipo `image_001.png` en texto | Regex de nombres comunes |
+| #   | Estrategia                | Fuente                                           | Features                                 |
+| --- | ------------------------- | ------------------------------------------------ | ---------------------------------------- |
+| 1   | `InlineBase64Strategy`    | `data:image/...;base64,...` en texto             | ANSI stripping, regex para PNG/JPEG/WebP |
+| 2   | `GeneratedItemsStrategy`  | `generated_images` en JSON notificación          | Timestamp filtering (> turn start)       |
+| 3   | `SavedPathsStrategy`      | Paths de archivo en texto                        | `_image_id_` exclusion, multi-path regex |
+| 4   | `MultiLineBase64Strategy` | Base64 multilinea (fallback)                     | ANSI stripping + re-join lines           |
+| 5   | `FilenamePatternStrategy` | Nombres de archivo tipo `image_001.png` en texto | Regex de nombres comunes                 |
 
 ### Simplificar `turn.ts`
 
@@ -105,10 +110,10 @@ const extractedImages = extractor.extractFromNotifications(notifications, {
 
 ### Archivos afectados
 
-| Archivo | Cambio |
-|---------|--------|
-| `codex/assetExtractor.ts` | Expandir de 3 a 5 estrategias; hacerlo el canonical extractor |
-| `codex/turn.ts` | Eliminar lógica de extracción inline; delegar a `AssetExtractor` |
+| Archivo                        | Cambio                                                                          |
+| ------------------------------ | ------------------------------------------------------------------------------- |
+| `codex/assetExtractor.ts`      | Expandir de 3 a 5 estrategias; hacerlo el canonical extractor                   |
+| `codex/turn.ts`                | Eliminar lógica de extracción inline; delegar a `AssetExtractor`                |
 | `codex/assetExtractor.test.ts` | Nuevo — tests para las 5 estrategias (incluyendo ANSI, timestamps, exclusiones) |
 
 ### Estrategia de tests
@@ -155,6 +160,7 @@ describe('SavedPathsStrategy', () => {
 ### Riesgo
 
 **Medio**. El riesgo no está en la complejidad del código (es movimiento mecánico de funciones de extracción) sino en la fidelidad del comportamiento. Se recomienda:
+
 1. Escribir tests para `assetExtractor.ts` con las 5 estrategias primero (contra fixtures de notificaciones reales).
 2. Hacer que `turn.ts` delegue a `assetExtractor.ts` con un flag (`useCanonicalExtractor: true`).
 3. Correr generaciones reales y comparar resultados entre el extractor viejo y el nuevo.

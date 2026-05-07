@@ -1,5 +1,15 @@
 import React, { useRef } from 'react';
-import { X, User, Settings, Activity, Download, Upload, Database, Layers, HardDrive } from 'lucide-react';
+import {
+  X,
+  User,
+  Settings,
+  Activity,
+  Download,
+  Upload,
+  Database,
+  Layers,
+  HardDrive,
+} from 'lucide-react';
 import type { GenerationBatch, Workspace } from '../types';
 
 interface DashboardModalProps {
@@ -12,14 +22,14 @@ interface DashboardModalProps {
   onDeepScan: () => void;
 }
 
-export const DashboardModal: React.FC<DashboardModalProps> = ({ 
-    isOpen, 
-    onClose, 
-    batches, 
-    workspaces, 
-    onImportVault,
-    onExportVault,
-    onDeepScan
+export const DashboardModal: React.FC<DashboardModalProps> = ({
+  isOpen,
+  onClose,
+  batches,
+  workspaces,
+  onImportVault,
+  onExportVault,
+  onDeepScan,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   if (!isOpen) return null;
@@ -32,18 +42,20 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
         <div className="flex items-center justify-between p-6 border-b border-white/5">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-xl bg-accent-500/10 text-accent-400">
-                <User size={20} />
+              <User size={20} />
             </div>
-            <h2 className="text-sm font-black uppercase tracking-widest text-white">User Dashboard</h2>
+            <h2 className="text-sm font-black uppercase tracking-widest text-white">
+              User Dashboard
+            </h2>
           </div>
-          <button 
+          <button
             onClick={onClose}
             className="p-2 rounded-xl text-zinc-500 hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
           >
             <X size={20} />
           </button>
         </div>
-        
+
         <div className="p-8 flex flex-col gap-8">
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-2xl bg-zinc-800 border border-white/10 flex items-center justify-center text-zinc-400 relative overflow-hidden">
@@ -53,7 +65,9 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             <div>
               <h3 className="text-xl font-black text-white uppercase tracking-tight">Guest User</h3>
               <div className="flex items-center gap-2 mt-1">
-                <span className="px-2 py-0.5 rounded-md bg-accent-500/10 text-accent-400 text-[10px] font-black uppercase tracking-widest">Local Codex</span>
+                <span className="px-2 py-0.5 rounded-md bg-accent-500/10 text-accent-400 text-[10px] font-black uppercase tracking-widest">
+                  Local Codex
+                </span>
                 <span className="w-1 h-1 rounded-full bg-zinc-700" />
                 <span className="text-xs text-zinc-500 font-medium">Active Session</span>
               </div>
@@ -64,57 +78,71 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             <div className="p-4 rounded-2xl bg-white/5 border border-white/5 flex flex-col gap-1">
               <div className="flex items-center gap-2">
                 <HardDrive size={14} className="text-emerald-400" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">Library</span>
+                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                  Library
+                </span>
               </div>
               <p className="text-lg font-mono font-black text-white">Local</p>
             </div>
             <div className="p-4 rounded-2xl bg-white/5 border border-white/5 flex flex-col gap-1">
               <div className="flex items-center gap-2">
                 <Layers size={14} className="text-blue-400" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">Images</span>
+                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                  Images
+                </span>
               </div>
               <p className="text-lg font-mono font-black text-white">{totalImages}</p>
             </div>
             <div className="p-4 rounded-2xl bg-white/5 border border-white/5 flex flex-col gap-1">
               <div className="flex items-center gap-2">
                 <Database size={14} className="text-purple-400" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">Matrices</span>
+                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                  Matrices
+                </span>
               </div>
               <p className="text-lg font-mono font-black text-white">{workspaces.length}</p>
             </div>
           </div>
 
           <div className="space-y-3">
-            <h4 className="text-[10px] font-black uppercase tracking-widest text-zinc-600 px-1">Vault Management</h4>
+            <h4 className="text-[10px] font-black uppercase tracking-widest text-zinc-600 px-1">
+              Vault Management
+            </h4>
             <div className="grid grid-cols-2 gap-3">
-                <button 
-                    onClick={onExportVault}
-                    className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
-                >
-                    <Download size={16} className="text-blue-400 group-hover:scale-110 transition-transform" />
-                    Export Vault
-                </button>
-                <button 
-                    onClick={() => fileInputRef.current?.click()}
-                    className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
-                >
-                    <Upload size={16} className="text-emerald-400 group-hover:scale-110 transition-transform" />
-                    Import Vault
-                    <input 
-                        type="file" 
-                        ref={fileInputRef} 
-                        onChange={onImportVault} 
-                        accept=".json" 
-                        className="hidden" 
-                    />
-                </button>
+              <button
+                onClick={onExportVault}
+                className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
+              >
+                <Download
+                  size={16}
+                  className="text-blue-400 group-hover:scale-110 transition-transform"
+                />
+                Export Vault
+              </button>
+              <button
+                onClick={() => fileInputRef.current?.click()}
+                className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
+              >
+                <Upload
+                  size={16}
+                  className="text-emerald-400 group-hover:scale-110 transition-transform"
+                />
+                Import Vault
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  onChange={onImportVault}
+                  accept=".json"
+                  className="hidden"
+                />
+              </button>
             </div>
-            <button 
-                onClick={onDeepScan}
-                className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-accent-500/5 hover:bg-accent-500/10 border border-accent-500/10 text-accent-400 hover:text-accent-300 transition-all text-[10px] font-black uppercase tracking-widest cursor-pointer group mt-2"
+            <button
+              onClick={onDeepScan}
+              className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-accent-500/5 hover:bg-accent-500/10 border border-accent-500/10 text-accent-400 hover:text-accent-300 transition-all text-[10px] font-black uppercase tracking-widest cursor-pointer group mt-2"
             >
-                <Activity size={14} className="animate-pulse" />
-                Deep Scan Recovery
+              <Activity size={14} className="animate-pulse" />
+              Deep Scan Recovery
             </button>
           </div>
 
@@ -123,7 +151,9 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
               <Settings size={16} />
               Settings
             </button>
-            <p className="text-[10px] text-zinc-700 font-bold uppercase tracking-widest">AutoForge v2.4.0</p>
+            <p className="text-[10px] text-zinc-700 font-bold uppercase tracking-widest">
+              AutoForge v2.4.0
+            </p>
           </div>
         </div>
       </div>

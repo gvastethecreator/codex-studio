@@ -31,6 +31,7 @@ Solo existe una carpeta de Studio Library (`D:\AI-Studio-Library` por defecto). 
 ### Deletion test
 
 Si borramos IndexedDB como store de imágenes:
+
 - La complejidad de serializar/deserializar batches enormes desaparece.
 - Pero reaparece en: el grid necesita saber qué imágenes mostrar, el carousel necesita cargar full-res, los workspaces necesitan filtrar, el trash necesita mover/restaurar.
 - La complejidad debe reaparecer en SQLite (catálogo indexado) y en el sistema de archivos (disk storage), no en IndexedDB.
@@ -54,6 +55,7 @@ CREATE TABLE libraries (
 El usuario puede registrar múltiples directorios de salida. Cada biblioteca tiene su propia estructura interna (`assets/`, `thumbnails/`, `references/`, `exports/`, `.trash/`). Una biblioteca es default para nuevas generaciones.
 
 **API REST**:
+
 - `GET /api/libraries` — lista bibliotecas
 - `POST /api/libraries` — registra nueva biblioteca (crea estructura en disco)
 - `DELETE /api/libraries/:id` — desregistra (no borra archivos)
@@ -101,6 +103,7 @@ CREATE INDEX idx_catalog_tags ON catalog_images(tags);  -- JSON index o FTS
 Esta tabla es el índice durable de todas las imágenes generadas. Sobrevive a limpiezas de IndexedDB. Contiene metadata completa para filtrar, ordenar y buscar sin cargar las imágenes.
 
 **API REST**:
+
 - `GET /api/catalog?library_id=X&workspace_id=Y&favorite=true&sort=newest&offset=0&limit=50` — catálogo paginado
 - `GET /api/catalog/:id` — metadata de una imagen
 - `PATCH /api/catalog/:id` — actualiza `is_favorite`, `tags`, `workspace_id`
@@ -131,17 +134,18 @@ Esto reemplaza el modelo actual donde cada `Workspace` tiene una copia del array
 
 IndexedDB se reduce a:
 
-| Key | Tipo | Propósito |
-|-----|------|-----------|
-| `catalog-cache` | `CatalogImage[]` (últimos N) | Cache de la última página consultada |
-| `app-workspaces` | `{ id, name }[]` | Solo nombres de workspaces (sin imágenes) |
-| `ui-state` | `{ activeWorkspaceId, currentView, ... }` | Estado de UI no crítico |
-| `session-logs` | `LogEntry[]` | Logs de sesión (efímeros) |
-| `bg-config` | `BackgroundConfig` | Config de fondo animado |
-| ~~`generation-batches`~~ | — | **Eliminado**. Reemplazado por SQLite catalog. |
-| ~~`generation-trash`~~ | — | **Eliminado**. Soft delete en SQLite. |
+| Key                      | Tipo                                      | Propósito                                      |
+| ------------------------ | ----------------------------------------- | ---------------------------------------------- |
+| `catalog-cache`          | `CatalogImage[]` (últimos N)              | Cache de la última página consultada           |
+| `app-workspaces`         | `{ id, name }[]`                          | Solo nombres de workspaces (sin imágenes)      |
+| `ui-state`               | `{ activeWorkspaceId, currentView, ... }` | Estado de UI no crítico                        |
+| `session-logs`           | `LogEntry[]`                              | Logs de sesión (efímeros)                      |
+| `bg-config`              | `BackgroundConfig`                        | Config de fondo animado                        |
+| ~~`generation-batches`~~ | —                                         | **Eliminado**. Reemplazado por SQLite catalog. |
+| ~~`generation-trash`~~   | —                                         | **Eliminado**. Soft delete en SQLite.          |
 
 La migración debe:
+
 1. Leer todos los `GenerationBatch` existentes de IndexedDB.
 2. Para cada imagen con `src` que sea un data URL o URL de library, registrarla en `catalog_images`.
 3. Si la imagen no existe en disco, copiarla del data URL a `assets/`.
@@ -152,22 +156,22 @@ La migración debe:
 
 ```ts
 // Antes: todo en memoria
-const batches: GenerationBatch[] = useIDB('generation-batches')
-const allImages = batches.flatMap(b => b.images) // 400+ imágenes en RAM
+const batches: GenerationBatch[] = useIDB('generation-batches');
+const allImages = batches.flatMap((b) => b.images); // 400+ imágenes en RAM
 
 // Después: catálogo paginado
 interface CatalogPage {
-  images: CatalogImage[]    // metadata (sin pixels)
-  total: number
-  hasMore: boolean
+  images: CatalogImage[]; // metadata (sin pixels)
+  total: number;
+  hasMore: boolean;
 }
 
 function useCatalog(filters: CatalogFilters): {
-  pages: CatalogImage[][]
-  total: number
-  loadMore(): Promise<void>  // siguiente página
-  isLoading: boolean
-}
+  pages: CatalogImage[][];
+  total: number;
+  loadMore(): Promise<void>; // siguiente página
+  isLoading: boolean;
+};
 ```
 
 El grid renderiza thumbnails como `<img src={img.thumbnail_url}>` — URLs HTTP servidas por el backend desde disco. Sin blobs en memoria. Sin data URLs.
@@ -249,39 +253,40 @@ await catalog.registerImage({
   thumbnailPath: '/thumbnails/job-1-0.png',
   prompt: 'a cat wearing a hat',
   aspectRatio: '1:1',
-  width: 1024, height: 1024,
+  width: 1024,
+  height: 1024,
   mimeType: 'image/png',
   jobId: 'job-1',
-  workspaceId: 'ws-1'
-})
-const page = await catalog.queryCatalog({ workspaceId: 'ws-1', limit: 10 })
-assert(page.images.length === 1)
-assert(page.images[0].prompt === 'a cat wearing a hat')
+  workspaceId: 'ws-1',
+});
+const page = await catalog.queryCatalog({ workspaceId: 'ws-1', limit: 10 });
+assert(page.images.length === 1);
+assert(page.images[0].prompt === 'a cat wearing a hat');
 
 // Catalog: paginación
-const page1 = await catalog.queryCatalog({ limit: 50, offset: 0 })
-const page2 = await catalog.queryCatalog({ limit: 50, offset: 50 })
-assert(page1.images.length <= 50)
-assert(page1.images[0].id !== page2.images[0]?.id) // sin solapamiento
+const page1 = await catalog.queryCatalog({ limit: 50, offset: 0 });
+const page2 = await catalog.queryCatalog({ limit: 50, offset: 50 });
+assert(page1.images.length <= 50);
+assert(page1.images[0].id !== page2.images[0]?.id); // sin solapamiento
 
 // Catalog: soft delete y restore
-await catalog.softDeleteImage('img-1')
-const deleted = await catalog.queryCatalog({ isDeleted: true })
-assert(deleted.images.some(i => i.id === 'img-1'))
-await catalog.restoreImage('img-1')
-const active = await catalog.queryCatalog({ isDeleted: false })
-assert(active.images.some(i => i.id === 'img-1'))
+await catalog.softDeleteImage('img-1');
+const deleted = await catalog.queryCatalog({ isDeleted: true });
+assert(deleted.images.some((i) => i.id === 'img-1'));
+await catalog.restoreImage('img-1');
+const active = await catalog.queryCatalog({ isDeleted: false });
+assert(active.images.some((i) => i.id === 'img-1'));
 
 // Libraries: registrar múltiples
-await libraries.registerLibrary({ name: 'Personajes', path: '/tmp/lib-personajes' })
-await libraries.registerLibrary({ name: 'Escenarios', path: '/tmp/lib-escenarios' })
-const all = await libraries.listLibraries()
-assert(all.length === 3) // default + 2 nuevas
+await libraries.registerLibrary({ name: 'Personajes', path: '/tmp/lib-personajes' });
+await libraries.registerLibrary({ name: 'Escenarios', path: '/tmp/lib-escenarios' });
+const all = await libraries.listLibraries();
+assert(all.length === 3); // default + 2 nuevas
 
 // Workspaces: filtros guardados
-await workspaces.create({ name: 'Favoritos', libraryId: 'lib-1', filterJson: { favorite: true } })
-const ws = await workspaces.get('ws-fav')
-assert(ws.filterJson.favorite === true)
+await workspaces.create({ name: 'Favoritos', libraryId: 'lib-1', filterJson: { favorite: true } });
+const ws = await workspaces.get('ws-fav');
+assert(ws.filterJson.favorite === true);
 ```
 
 ## Riesgos

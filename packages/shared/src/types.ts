@@ -1,4 +1,10 @@
-export type JobStatus = 'queued' | 'running' | 'needs_review' | 'completed' | 'failed' | 'cancelled';
+export type JobStatus =
+  | 'queued'
+  | 'running'
+  | 'needs_review'
+  | 'completed'
+  | 'failed'
+  | 'cancelled';
 
 export type JobKind = 'dry_run' | 'codex_imagegen';
 

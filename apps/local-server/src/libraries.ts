@@ -40,7 +40,9 @@ export function ensureDefaultLibrary() {
   if (existing) return mapLibrary(existing);
 
   const configuredPath = getSettings().libraryDir;
-  const byPath = database.query('SELECT * FROM libraries WHERE path = ? LIMIT 1').get(configuredPath);
+  const byPath = database
+    .query('SELECT * FROM libraries WHERE path = ? LIMIT 1')
+    .get(configuredPath);
   if (byPath) {
     database.run('UPDATE libraries SET is_default = 0');
     database.query('UPDATE libraries SET is_default = 1 WHERE id = ?').run((byPath as any).id);
@@ -71,7 +73,10 @@ export function registerLibrary(input: { name: string; path: string; isDefault?:
 }
 
 export function listLibraries() {
-  return getDb().query('SELECT * FROM libraries ORDER BY is_default DESC, created_at ASC').all().map(mapLibrary);
+  return getDb()
+    .query('SELECT * FROM libraries ORDER BY is_default DESC, created_at ASC')
+    .all()
+    .map(mapLibrary);
 }
 
 export function getDefaultLibrary() {

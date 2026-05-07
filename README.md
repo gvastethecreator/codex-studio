@@ -51,6 +51,8 @@ Despues de eso deberias tener:
 
 `bun run studio:init` crea la estructura de la biblioteca local, inicializa SQLite, genera un proyecto default y crea `.env.local` si todavia no existe.
 
+El repositorio ahora tambien incluye un `.env` base con placeholders seguros para que herramientas, tareas y nuevos entornos tengan variables explicitas desde el primer clone. Los valores específicos de tu máquina deben seguir yendo en `.env.local`.
+
 La UI abre automaticamente una guia de primer arranque para verificar backend local, Codex CLI, `codex app-server` y la ruta de biblioteca. Tambien puedes reabrirla desde el boton `Setup` del header.
 
 Si solo quieres levantar una parte del sistema:
@@ -85,20 +87,33 @@ Ejemplos de ruta para la biblioteca:
 ```bash
 bun run dev          # backend local + UI integrada
 bun run dev:server   # Hono API + codex app-server supervisor
-bun run dev:ui       # UI Vite
+bun run dev:ui       # UI Vite+ (vp dev)
 bun run dev:electron # shell Electron para desarrollo local
 bun run studio:init  # crea biblioteca, SQLite y proyecto default
-bun run test:unit    # tests unitarios puros y rapidos
-bun run validate:fast # loop rapido: tests puros + check del server
-bun run check        # typecheck completo (incremental, mas pesado)
-bun run validate:full # gate completo: todos los tests + typecheck global
-bun run build        # build UI + verificacion backend
+bun run fmt          # formato con Oxfmt via Vite+
+bun run lint         # lint con Oxlint via Vite+
+bun run check        # formato + lint + type-check unificados via Vite+
+bun run test         # suite de unit tests con Vitest via Vite+
+bun run test:unit    # subset rapido para iteracion
+bun run test:coverage # cobertura HTML + resumen en consola
+bun run validate:fast # loop rapido: unit tests + verificacion server
+bun run validate:full # gate completo: check + tests + build
+bun run build        # build UI (Vite+/Rolldown) + verificacion backend
 bun run preview:electron # prueba la shell Electron cargando `dist/`
+bun run tooling:logs # abre `logs/tooling` con los ultimos logs de comandos
 ```
 
-Para iterar durante un refactor grande, usa `bun run validate:fast` y deja `bun run validate:full` para el cierre final. Evita disparar `bun run check` tras cada cambio pequeño: es el chequeo mas costoso del repo.
+Para iterar durante un refactor grande, usa `bun run validate:fast` y deja `bun run validate:full` para el cierre final. `bun run check` ahora corre el loop unificado de formato, lint y type-check sobre Vite+, asi que es el comando recomendado para validar cambios de forma local.
 
 Tambien hay tareas de VS Code en `.vscode/tasks.json` para inicializar, levantar, validar y abrir los logs de la biblioteca.
+
+### Logs de tooling
+
+Los comandos de calidad y build (`fmt`, `lint`, `check`, `test`, `build`, `validate:*`) escriben logs persistentes en `logs/tooling/`.
+
+- cada ejecucion genera un archivo timestamped;
+- ademas se actualiza un `*.latest.log` por tarea;
+- esto facilita depurar fallos intermitentes sin tener que repetir una corrida solo para leer la consola.
 
 ## Estructura del repositorio
 
@@ -119,8 +134,11 @@ Tambien hay tareas de VS Code en `.vscode/tasks.json` para inicializar, levantar
 - [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — vista general del sistema.
 - [`docs/SERVICES.md`](./docs/SERVICES.md) — mapa de servicios y puntos de integracion.
 - [`docs/DEV_GUIDE.md`](./docs/DEV_GUIDE.md) — convenciones para extender recetas y UI.
+- [`docs/TOOLING.md`](./docs/TOOLING.md) — stack de tooling actual, comandos y logs.
 - [`docs/ELECTRON.md`](./docs/ELECTRON.md) — estrategia y restricciones para una futura build desktop.
 - [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md) — errores comunes de setup y ejecucion.
+- [`docs/IMPLEMENTATION_LOG.md`](./docs/IMPLEMENTATION_LOG.md) — registro de tareas aplicadas en la puesta al dia.
+- [`docs/TECHNICAL_DEBT.md`](./docs/TECHNICAL_DEBT.md) — deuda tecnica conocida y siguientes focos.
 - [`docs/adr/0001-local-codex-image-studio.md`](./docs/adr/0001-local-codex-image-studio.md) — decision arquitectonica fundacional.
 - [`ROADMAP.md`](./ROADMAP.md) — prioridades del producto para la etapa open-source.
 

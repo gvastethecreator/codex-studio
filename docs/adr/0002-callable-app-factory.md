@@ -33,9 +33,9 @@ Crear una factory `createStudioApp(config?)` que:
 `index.ts` se reduce a:
 
 ```ts
-import { createStudioApp } from './appFactory'
-const studio = await createStudioApp()
-Bun.serve({ port: studio.config.port, fetch: studio.app.fetch })
+import { createStudioApp } from './appFactory';
+const studio = await createStudioApp();
+Bun.serve({ port: studio.config.port, fetch: studio.app.fetch });
 ```
 
 ## Cambios archivo por archivo
@@ -76,15 +76,15 @@ Bun.serve({ port: studio.config.port, fetch: studio.app.fetch })
 
 ```ts
 // Integration test: crear app, pegarle a una ruta, verificar DB
-const app = await createStudioApp({ libraryDir: tmpDir })
-const res = await app.app.request('/api/health')
-const body = await res.json()
-assert(body.ok === true)
-await app.shutdown()
+const app = await createStudioApp({ libraryDir: tmpDir });
+const res = await app.app.request('/api/health');
+const body = await res.json();
+assert(body.ok === true);
+await app.shutdown();
 
 // Unit test con EventBus fake
-const fakeBus = { publish: spy(), subscribe: spy() }
-const logger = createLogger({ db: fakeDb, eventBus: fakeBus })
+const fakeBus = { publish: spy(), subscribe: spy() };
+const logger = createLogger({ db: fakeDb, eventBus: fakeBus });
 ```
 
 ## Riesgos

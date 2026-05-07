@@ -12,12 +12,18 @@ interface RecipeContextBuilder {
 const PROTOCOL = 'codex-recipe-v1';
 
 const CHARACTER_LAYOUT_PROMPTS: Record<string, string> = {
-  'Classic Turnaround': 'a character turnaround reference sheet. Aim for 3 full-body views of the character in a neutral A-pose, arranged horizontally: 1. Front View 2. Side View (Left Profile) 3. Back View. Keep the head and feet visually aligned where possible.',
-  'Isometric Sheet': 'a full character sheet with multiple isometric views of the same character in a neutral A-pose. Aim for 4 views: 1. Front-Right Isometric 2. Front-Left Isometric 3. Back-Right Isometric 4. Back-Left Isometric. Prefer a clean 2x2 grid.',
-  'Dynamic Sheet': 'a dynamic character pose sheet. Aim for 3 views of the character: 1. A main, full-body dynamic action pose. 2. A close-up portrait with a neutral expression. 3. A three-quarter back view.',
-  'Expression Sheet': 'a facial expression sheet. Focus on the head and shoulders. Aim for 6 distinct emotional states (e.g., Neutral, Angry, Happy, Sad, Surprised, Combat-Ready) arranged in a readable 2x3 grid.',
-  'Wireframe Sheet': "the character visualized as a 3D wireframe-style model, with the form suggested through polygon mesh lines and a visible grid pattern.",
-  'Anatomy Sheet': "an anatomical reference sheet in the style of a medical or artist's illustration. Show a detailed view of the character's musculature and skeletal structure.",
+  'Classic Turnaround':
+    'a character turnaround reference sheet. Aim for 3 full-body views of the character in a neutral A-pose, arranged horizontally: 1. Front View 2. Side View (Left Profile) 3. Back View. Keep the head and feet visually aligned where possible.',
+  'Isometric Sheet':
+    'a full character sheet with multiple isometric views of the same character in a neutral A-pose. Aim for 4 views: 1. Front-Right Isometric 2. Front-Left Isometric 3. Back-Right Isometric 4. Back-Left Isometric. Prefer a clean 2x2 grid.',
+  'Dynamic Sheet':
+    'a dynamic character pose sheet. Aim for 3 views of the character: 1. A main, full-body dynamic action pose. 2. A close-up portrait with a neutral expression. 3. A three-quarter back view.',
+  'Expression Sheet':
+    'a facial expression sheet. Focus on the head and shoulders. Aim for 6 distinct emotional states (e.g., Neutral, Angry, Happy, Sad, Surprised, Combat-Ready) arranged in a readable 2x3 grid.',
+  'Wireframe Sheet':
+    'the character visualized as a 3D wireframe-style model, with the form suggested through polygon mesh lines and a visible grid pattern.',
+  'Anatomy Sheet':
+    "an anatomical reference sheet in the style of a medical or artist's illustration. Show a detailed view of the character's musculature and skeletal structure.",
   'Clothing Layers': "a character sheet showing an 'exploded view' of the character's clothing.",
 };
 
@@ -39,7 +45,7 @@ function getBoolean(params: RecipeContextParams, key: string, fallback = false) 
 function getRecord(params: RecipeContextParams, key: string) {
   const value = params[key];
   return value && typeof value === 'object' && !Array.isArray(value)
-    ? value as Record<string, unknown>
+    ? (value as Record<string, unknown>)
     : {};
 }
 
@@ -61,10 +67,12 @@ function buildCharacterContext(params: RecipeContextParams) {
   const shot = getString(params, 'shot', 'Full Body');
   const focus = getString(params, 'focus', 'General Design');
   const hasReference = getBoolean(params, 'hasReference');
-  const layoutInstruction = CHARACTER_LAYOUT_PROMPTS[layout] || CHARACTER_LAYOUT_PROMPTS['Classic Turnaround'];
-  const styleInstruction = style === 'Preserve Source Style'
-    ? "Use the reference image's art style (line weight, shading, color palette) as the main style guide."
-    : `RENDER STYLE: ${style.toUpperCase()}. Ignore reference image style if it conflicts.`;
+  const layoutInstruction =
+    CHARACTER_LAYOUT_PROMPTS[layout] || CHARACTER_LAYOUT_PROMPTS['Classic Turnaround'];
+  const styleInstruction =
+    style === 'Preserve Source Style'
+      ? "Use the reference image's art style (line weight, shading, color palette) as the main style guide."
+      : `RENDER STYLE: ${style.toUpperCase()}. Ignore reference image style if it conflicts.`;
 
   const recipeSchema = {
     task_id: 'CHARACTER_DESIGN_SHEET',
@@ -96,11 +104,15 @@ function buildCharacterContext(params: RecipeContextParams) {
     ],
   };
 
-  return recipeDocument('character', 'CHARACTER SHEET PROMPT', [
-    'Target: Concept Art Asset',
-    `Context: ${JSON.stringify(recipeSchema, null, 2)}`,
-    'Output: one clean character sheet image.',
-  ].join('\n'));
+  return recipeDocument(
+    'character',
+    'CHARACTER SHEET PROMPT',
+    [
+      'Target: Concept Art Asset',
+      `Context: ${JSON.stringify(recipeSchema, null, 2)}`,
+      'Output: one clean character sheet image.',
+    ].join('\n'),
+  );
 }
 
 function buildCinematicContext(params: RecipeContextParams) {
@@ -118,21 +130,28 @@ function buildCinematicContext(params: RecipeContextParams) {
   const lens = getString(params, 'lens', 'Auto-Detect');
 
   const layoutDescription = `${rows} rows by ${cols} columns`;
-  const layoutInstruction = frames === 3
-    ? `Create a cinematic triptych (${layoutDescription}).`
-    : frames === 6
-      ? `Create a 6-frame storyboard grid (${layoutDescription}).`
-      : 'Create a 9-frame storyboard contact sheet (3x3 grid).';
+  const layoutInstruction =
+    frames === 3
+      ? `Create a cinematic triptych (${layoutDescription}).`
+      : frames === 6
+        ? `Create a 6-frame storyboard grid (${layoutDescription}).`
+        : 'Create a 9-frame storyboard contact sheet (3x3 grid).';
 
   const frameDirectives = Object.entries(frameShots)
-    .map(([index, shot]) => typeof shot === 'string' && shot !== 'Auto' ? `- Frame ${Number(index) + 1}: ${shot} Shot` : null)
+    .map(([index, shot]) =>
+      typeof shot === 'string' && shot !== 'Auto'
+        ? `- Frame ${Number(index) + 1}: ${shot} Shot`
+        : null,
+    )
     .filter(Boolean);
 
-  const frameInstructions = frameDirectives.length > 0
-    ? `\nSPECIFIC FRAME SHOTS:\n${frameDirectives.join('\n')}`
-    : '';
+  const frameInstructions =
+    frameDirectives.length > 0 ? `\nSPECIFIC FRAME SHOTS:\n${frameDirectives.join('\n')}` : '';
 
-  return recipeDocument('cinematic', 'STORYBOARD CONTACT SHEET', `
+  return recipeDocument(
+    'cinematic',
+    'STORYBOARD CONTACT SHEET',
+    `
 ROLE: Director of Photography, Colorist, and Storyboard Artist.
 TASK: Create a storyboard-style image sequence based on the prompt/reference.
 LAYOUT: ${layoutInstruction}
@@ -154,7 +173,8 @@ DIRECTIVES:
 3. AESTHETIC: High fidelity photorealism with professional color grading matching the chosen Tone and Genre.
 4. COMPOSITION: Apply rule of thirds, leading lines, and cinematic framing techniques. Respect the specific frame shots if provided.
 5. NO TEXT: Avoid text, UI elements, and watermarks in the generated frames.
-  `);
+  `,
+  );
 }
 
 function buildRemasterContext(params: RecipeContextParams) {
@@ -168,7 +188,10 @@ function buildRemasterContext(params: RecipeContextParams) {
   const adherence = fidelity / 100;
   const creativity = (100 - fidelity) / 100;
 
-  return recipeDocument('remaster', 'PRO RESTORATION', `
+  return recipeDocument(
+    'remaster',
+    'PRO RESTORATION',
+    `
 **Task:** Image Remastering and Restoration.
 **Role:** Use the reference image as the main source for a polished local remaster.
 **Goal:** Enhance the provided reference image while keeping its original composition and subject matter recognizable.
@@ -186,7 +209,8 @@ function buildRemasterContext(params: RecipeContextParams) {
 - **Creative Enhancement Freedom:** ${creativity.toFixed(2)} (High value allows for more stylistic interpretation and hallucination of missing details).
 
 **Final Instruction:** Generate one clean remastered image, not a description. Avoid watermarks or added text unless explicitly requested.
-  `);
+  `,
+  );
 }
 
 function buildSpritesheetContext(params: RecipeContextParams) {
@@ -197,7 +221,9 @@ function buildSpritesheetContext(params: RecipeContextParams) {
   const dividers = getString(params, 'dividers', 'No Dividers');
   const customColor = getString(params, 'customColor', '#3f3f46');
   const cellPrompts = getRecord(params, 'cellPrompts');
-  const [gridCols, gridRows] = grid.includes('Strip') ? [6, 1] : grid.split('x').map((value) => Number(value));
+  const [gridCols, gridRows] = grid.includes('Strip')
+    ? [6, 1]
+    : grid.split('x').map((value) => Number(value));
   const hasDividers = dividers !== 'No Dividers';
   const dividerColor = dividers.split(' ')[0].toUpperCase();
 
@@ -225,25 +251,34 @@ function buildSpritesheetContext(params: RecipeContextParams) {
       rendering: style === 'Preserve Style' ? 'SOURCE_CONSISTENT' : style.toUpperCase(),
       background_color: bgDirective,
     },
-    cell_specifics: cellDirectives.length > 0
-      ? cellDirectives
-      : 'Suggest a readable pose or animation cycle (e.g., walk, run, idle, or attack).',
+    cell_specifics:
+      cellDirectives.length > 0
+        ? cellDirectives
+        : 'Suggest a readable pose or animation cycle (e.g., walk, run, idle, or attack).',
     directives: [
       'Generate a clean 2D game sprite sheet concept.',
       `Target layout is ${gridCols} columns by ${gridRows} rows; keep the grid easy to read and crop.`,
       'Aim to keep proportions, colors, and design details consistent across cells.',
-      view === 'Match Source' ? 'Use the input image perspective as a guide across all frames.' : `Use ${view} as the target perspective.`,
-      hasDividers ? `Draw clear ${dividerColor} divider lines between cells as a slicing guide.` : 'Avoid visible grid lines or dividers.',
+      view === 'Match Source'
+        ? 'Use the input image perspective as a guide across all frames.'
+        : `Use ${view} as the target perspective.`,
+      hasDividers
+        ? `Draw clear ${dividerColor} divider lines between cells as a slicing guide.`
+        : 'Avoid visible grid lines or dividers.',
       'Keep clear separation and alignment for local asset review.',
       'Keep the background uniform and clean.',
     ],
   };
 
-  return recipeDocument('spritesheet', 'SPRITE SHEET PROMPT', [
-    'Target: Game Asset Generation',
-    `Context: ${JSON.stringify(recipeSchema, null, 2)}`,
-    'Output: one clean sprite sheet image with readable cells.',
-  ].join('\n'));
+  return recipeDocument(
+    'spritesheet',
+    'SPRITE SHEET PROMPT',
+    [
+      'Target: Game Asset Generation',
+      `Context: ${JSON.stringify(recipeSchema, null, 2)}`,
+      'Output: one clean sprite sheet image with readable cells.',
+    ].join('\n'),
+  );
 }
 
 function buildCameraContext(params: RecipeContextParams) {
@@ -256,7 +291,10 @@ function buildCameraContext(params: RecipeContextParams) {
   const framing = getString(params, 'framing', 'MEDIUM SHOT');
   const geometryConstraints = getString(params, 'geometryConstraints');
 
-  return recipeDocument('camera', 'CAMERA VIEW PROMPT', `
+  return recipeDocument(
+    'camera',
+    'CAMERA VIEW PROMPT',
+    `
 ROLE: Image art director translating a reference and camera position into a plausible generated still.
 ${hasReference ? 'INPUT: A 2D reference image used as visual guidance for subject identity, style, and lighting.' : 'INPUT: A text description of the subject to be composed.'}
 OBJECTIVE: Generate a ${hasReference ? 'plausible alternate view of the referenced subject' : 'subject image'} using the camera guidance below.
@@ -274,7 +312,8 @@ GENERATION DIRECTIVES:
 2. Use the requested orbit, pitch, and zoom as strong composition guidance.
 3. Add plausible matching details for areas not visible in the reference.
 4. Preserve the reference style where possible; prefer a neutral background when the source background is ambiguous.
-  `);
+  `,
+  );
 }
 
 function buildTimelineContext(params: RecipeContextParams) {
@@ -286,9 +325,10 @@ function buildTimelineContext(params: RecipeContextParams) {
   const motionAmount = getString(params, 'motionAmount', 'Subtle');
   const lightingMode = getString(params, 'lightingMode', 'Locked');
   const isAnchored = getBoolean(params, 'isAnchored');
-  const directionPrompt = direction === 'forward'
-    ? 'NEXT FRAME: Generate a plausible future state.'
-    : 'PREVIOUS FRAME: Generate a plausible past state.';
+  const directionPrompt =
+    direction === 'forward'
+      ? 'NEXT FRAME: Generate a plausible future state.'
+      : 'PREVIOUS FRAME: Generate a plausible past state.';
 
   const recipeSchema = {
     task_id: 'TIMELINE_FRAME_GUIDANCE',
@@ -306,7 +346,9 @@ function buildTimelineContext(params: RecipeContextParams) {
       `Time elapsed: ${timeDeltaLabel}. Use this to guide the amount of scene change.`,
       `Motion Level: ${motionAmount}. Use this as a cue for pose, position, or state change.`,
       `Lighting: ${lightingMode}. Keep shadows and highlights coherent if time has passed.`,
-      isAnchored ? "Use the 'Anchor' image as the identity/style guide, and the 'Ref' image as the current state guide." : 'Keep visual identity and style close to the reference image.',
+      isAnchored
+        ? "Use the 'Anchor' image as the identity/style guide, and the 'Ref' image as the current state guide."
+        : 'Keep visual identity and style close to the reference image.',
       'Output should read like a neighboring storyboard frame in the same sequence.',
       'Avoid text, UI, and watermarks.',
     ],
@@ -330,7 +372,10 @@ function buildStylesContext(params: RecipeContextParams) {
   const atmosphereMood = getString(params, 'atmosphereMood', 'Standard');
   const renderingQuality = getString(params, 'renderingQuality', 'Standard');
 
-  return recipeDocument('styles', 'STYLE TRANSFER PROTOCOL', `
+  return recipeDocument(
+    'styles',
+    'STYLE TRANSFER PROTOCOL',
+    `
 TARGET STYLE: ${presetName.toUpperCase()}
 MODE: ${mode}
 
@@ -351,7 +396,8 @@ ${roleInstruction}
 ${compositionRule}
 ${styleEmphasis}
 DO NOT output text or explanations. Just the image.
-  `);
+  `,
+  );
 }
 
 const builders: Record<RegisteredRecipeId, RecipeContextBuilder> = {
@@ -392,7 +438,10 @@ const builders: Record<RegisteredRecipeId, RecipeContextBuilder> = {
   },
 };
 
-export function buildRecipeContext(recipeId: RegisteredRecipeId | null | undefined, params: RecipeContextParams | null | undefined) {
+export function buildRecipeContext(
+  recipeId: RegisteredRecipeId | null | undefined,
+  params: RecipeContextParams | null | undefined,
+) {
   if (!recipeId || !params) {
     return '';
   }
@@ -428,7 +477,8 @@ export function parseRecipeIdFromContext(context: string = ''): RecipeId {
   if (context.includes('SPRITE SHEET PROMPT')) return 'spritesheet';
   if (context.includes('STORYBOARD CONTACT SHEET')) return 'cinematic';
   if (context.includes('CHARACTER SHEET PROMPT')) return 'character';
-  if (context.includes('Image Remastering and Restoration') || context.includes('PRO RESTORATION')) return 'remaster';
+  if (context.includes('Image Remastering and Restoration') || context.includes('PRO RESTORATION'))
+    return 'remaster';
   return null;
 }
 

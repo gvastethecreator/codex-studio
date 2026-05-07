@@ -1,7 +1,7 @@
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
-import path from "node:path";
-import { Database } from "bun:sqlite";
-import type { StylePack, StylePresetDef } from "../components/recipes/styles/types";
+import { mkdir, readFile, stat, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import { Database } from 'bun:sqlite';
+import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
 import {
   RECIPE_ASSET_EXTENSION,
   defaultsDir,
@@ -9,7 +9,7 @@ import {
   repoRelative,
   sanitizeCategory,
   writeRepoWebpAsset,
-} from "./style-default-utils";
+} from './style-default-utils';
 
 interface ManifestEntry {
   presetId: string;
@@ -20,7 +20,7 @@ interface ManifestEntry {
   file: string;
   jobId: string;
   sourceAsset: string;
-  generationMode: "text-to-image";
+  generationMode: 'text-to-image';
   model: string;
   reasoningEffort: string;
   generatedAt: string;
@@ -34,13 +34,13 @@ interface JobAssetRow {
   asset_created_at: string;
 }
 
-const libraryDir = process.env.STUDIO_LIBRARY_DIR || "D:\\AI-Studio-Library";
-const dbPath = path.join(libraryDir, "library.sqlite");
-const dryRun = process.argv.includes("--dry-run");
-const sinceArg = process.argv.find((arg) => arg.startsWith("--since="))?.slice("--since=".length);
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library';
+const dbPath = path.join(libraryDir, 'library.sqlite');
+const dryRun = process.argv.includes('--dry-run');
+const sinceArg = process.argv.find((arg) => arg.startsWith('--since='))?.slice('--since='.length);
 const sinceTime = sinceArg ? Date.parse(sinceArg) : Number.NEGATIVE_INFINITY;
-const reconciledModel = process.env.CODEX_IMAGEGEN_MODEL || "gpt-5.4-mini";
-const reconciledReasoningEffort = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || "low";
+const reconciledModel = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini';
+const reconciledReasoningEffort = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
 
 function manifestPathForPack(packId: string) {
   return path.join(defaultsDir, `manifest-${packId}.json`);
@@ -57,7 +57,9 @@ async function exists(filePath: string) {
 
 async function loadManifest(packId: string) {
   try {
-    const parsed = JSON.parse(await readFile(manifestPathForPack(packId), "utf8")) as ManifestEntry[] | ManifestEntry;
+    const parsed = JSON.parse(await readFile(manifestPathForPack(packId), 'utf8')) as
+      | ManifestEntry[]
+      | ManifestEntry;
     return Array.isArray(parsed) ? parsed : [parsed];
   } catch {
     return [];
@@ -66,7 +68,7 @@ async function loadManifest(packId: string) {
 
 async function saveManifest(packId: string, entries: ManifestEntry[]) {
   entries.sort((a, b) => a.presetId.localeCompare(b.presetId));
-  await writeFile(manifestPathForPack(packId), `${JSON.stringify(entries, null, 2)}\n`, "utf8");
+  await writeFile(manifestPathForPack(packId), `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
 }
 
 function buildPresetIndex(packs: StylePack[]) {
@@ -93,9 +95,18 @@ function buildPresetIndex(packs: StylePack[]) {
 }
 
 function resolvePreset(row: JobAssetRow, index: ReturnType<typeof buildPresetIndex>) {
-  const target = row.final_prompt_used.match(/TARGET STYLE:\s*([^\n]+)/i)?.[1]?.trim().toUpperCase();
-  const packName = row.final_prompt_used.match(/^PACK:\s*(.+)$/im)?.[1]?.trim().toLowerCase();
-  const category = row.final_prompt_used.match(/^CATEGORY:\s*(.+)$/im)?.[1]?.trim().toLowerCase();
+  const target = row.final_prompt_used
+    .match(/TARGET STYLE:\s*([^\n]+)/i)?.[1]
+    ?.trim()
+    .toUpperCase();
+  const packName = row.final_prompt_used
+    .match(/^PACK:\s*(.+)$/im)?.[1]
+    ?.trim()
+    .toLowerCase();
+  const category = row.final_prompt_used
+    .match(/^CATEGORY:\s*(.+)$/im)?.[1]
+    ?.trim()
+    .toLowerCase();
 
   if (target && packName && category) {
     const exact = index.byPackCategoryTarget.get(`${packName}::${category}::${target}`);
@@ -107,7 +118,9 @@ function resolvePreset(row: JobAssetRow, index: ReturnType<typeof buildPresetInd
     if (matches?.length === 1) return matches[0];
   }
 
-  const explicit = row.final_prompt_used.match(/Make the result immediately recognizable as "([^"]+)"/i)?.[1]?.trim();
+  const explicit = row.final_prompt_used
+    .match(/Make the result immediately recognizable as "([^"]+)"/i)?.[1]
+    ?.trim();
   if (explicit) {
     const matches = index.byName.get(explicit);
     if (matches?.length === 1) return matches[0];
@@ -140,14 +153,20 @@ const rows = db
 
 const manifestByPack = new Map<string, Map<string, ManifestEntry>>();
 for (const pack of packs) {
-  manifestByPack.set(pack.id, new Map((await loadManifest(pack.id)).map((entry) => [entry.presetId, entry])));
+  manifestByPack.set(
+    pack.id,
+    new Map((await loadManifest(pack.id)).map((entry) => [entry.presetId, entry])),
+  );
 }
 
 let copied = 0;
 let skippedExisting = 0;
 let unresolved = 0;
-const unresolvedRows: Pick<JobAssetRow, "job_id" | "file_path" | "status">[] = [];
-const latestByPreset = new Map<string, { pack: StylePack; preset: StylePresetDef; row: JobAssetRow }>();
+const unresolvedRows: Pick<JobAssetRow, 'job_id' | 'file_path' | 'status'>[] = [];
+const latestByPreset = new Map<
+  string,
+  { pack: StylePack; preset: StylePresetDef; row: JobAssetRow }
+>();
 
 for (const row of rows) {
   if (Date.parse(row.asset_created_at) < sinceTime) continue;
@@ -183,7 +202,7 @@ for (const { pack, preset, row } of latestByPreset.values()) {
         file: repoFile,
         jobId: row.job_id,
         sourceAsset: repoFile,
-        generationMode: "text-to-image",
+        generationMode: 'text-to-image',
         model: reconciledModel,
         reasoningEffort: reconciledReasoningEffort,
         generatedAt: row.asset_created_at,
@@ -204,7 +223,7 @@ for (const { pack, preset, row } of latestByPreset.values()) {
     file: repoFile,
     jobId: row.job_id,
     sourceAsset: repoFile,
-    generationMode: "text-to-image",
+    generationMode: 'text-to-image',
     model: reconciledModel,
     reasoningEffort: reconciledReasoningEffort,
     generatedAt: row.asset_created_at,
@@ -218,7 +237,9 @@ if (!dryRun) {
   }
 }
 
-console.log(`[done] rows=${rows.length} considered=${latestByPreset.size} copied=${copied} skippedExisting=${skippedExisting} unresolved=${unresolved} dryRun=${dryRun} since=${sinceArg || "all"}`);
+console.log(
+  `[done] rows=${rows.length} considered=${latestByPreset.size} copied=${copied} skippedExisting=${skippedExisting} unresolved=${unresolved} dryRun=${dryRun} since=${sinceArg || 'all'}`,
+);
 if (unresolvedRows.length > 0) {
   console.log(JSON.stringify(unresolvedRows.slice(0, 20), null, 2));
 }

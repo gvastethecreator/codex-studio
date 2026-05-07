@@ -10,7 +10,11 @@ if (import.meta.main) {
   const studio = await createStudioApp();
   const port = getSettings().serverPort;
 
-  log('info', 'server', `Local server starting on http://localhost:${port}. Library: ${studio.config.libraryDir}`);
+  log(
+    'info',
+    'server',
+    `Local server starting on http://localhost:${port}. Library: ${studio.config.libraryDir}`,
+  );
 
   Bun.serve({
     port,
@@ -24,6 +28,10 @@ if (import.meta.main) {
     enqueueJob(job);
   }
   if (recoverableJobs.length > 0) {
-    log('info', 'worker', `Recovered ${recoverableJobs.length} queued/running job(s) from the local database.`);
+    log(
+      'info',
+      'worker',
+      `Recovered ${recoverableJobs.length} queued/running job(s) from the local database.`,
+    );
   }
 }

@@ -1,4 +1,3 @@
-
 const DB_NAME = 'AIImageStudioDB';
 const DB_VERSION = 1;
 const STORE_NAME = 'keyval';
@@ -11,7 +10,7 @@ function getDB(): Promise<IDBDatabase> {
       if (typeof window === 'undefined' || !window.indexedDB) {
         return reject('IndexedDB is not supported');
       }
-      
+
       const request = indexedDB.open(DB_NAME, DB_VERSION);
 
       request.onupgradeneeded = () => {
@@ -76,15 +75,15 @@ async function getAllKeys(): Promise<IDBValidKey[]> {
   });
 }
 
-export async function getAllEntries(): Promise<{ key: IDBValidKey, value: any }[]> {
+export async function getAllEntries(): Promise<{ key: IDBValidKey; value: any }[]> {
   const db = await getDB();
   const keys = await getAllKeys();
-  const entries: { key: IDBValidKey, value: any }[] = [];
-  
+  const entries: { key: IDBValidKey; value: any }[] = [];
+
   for (const key of keys) {
     const value = await get(key);
     entries.push({ key, value });
   }
-  
+
   return entries;
 }

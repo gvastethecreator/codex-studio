@@ -1,14 +1,26 @@
 import React from 'react';
-import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig, RecipeId } from '../types';
+import type {
+  Attachment,
+  GeneratedImageWithConfig,
+  ImageGenerationConfig,
+  RecipeId,
+} from '../types';
 import { RecipeRouter } from './RecipeRouter';
 
 interface RecipePageProps {
   activeRecipe: RecipeId;
   generationConfig: ImageGenerationConfig;
-  updateGenerationConfig: <K extends keyof ImageGenerationConfig>(key: K, value: ImageGenerationConfig[K]) => void;
+  updateGenerationConfig: <K extends keyof ImageGenerationConfig>(
+    key: K,
+    value: ImageGenerationConfig[K],
+  ) => void;
   updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
   handlePastedFiles: (files: File[]) => void;
-  handleGenerate: (promptOverride?: string, configOverrides?: Partial<ImageGenerationConfig>, options?: { force?: boolean; preventModal?: boolean }) => void;
+  handleGenerate: (
+    promptOverride?: string,
+    configOverrides?: Partial<ImageGenerationConfig>,
+    options?: { force?: boolean; preventModal?: boolean },
+  ) => void;
   isGenerating: boolean;
   imagesWithConfig: GeneratedImageWithConfig[];
   openModal: (image: GeneratedImageWithConfig) => void;

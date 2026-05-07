@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { X, AlertCircle, CheckCircle, Info, AlertTriangle } from 'lucide-react';
 import type { ToastMessage } from '../hooks/useToasts';
@@ -76,8 +75,8 @@ const Toast: React.FC<ToastProps> = ({ toast, onDismiss }) => {
         </button>
       </div>
       <div className="absolute bottom-0 left-0 h-1 w-full bg-zinc-700/50">
-        <div 
-          className={`h-full ${progressColors[toast.type]} transition-all duration-75 ease-linear`} 
+        <div
+          className={`h-full ${progressColors[toast.type]} transition-all duration-75 ease-linear`}
           style={{ width: `${progress}%` }}
         />
       </div>

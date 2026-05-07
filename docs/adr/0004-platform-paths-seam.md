@@ -8,12 +8,12 @@ Propuesto.
 
 Actualmente existen paths hardcodeados para Windows y para la máquina específica del usuario `cristian` en múltiples archivos:
 
-| Archivo | Línea | Path |
-|---------|-------|------|
-| `codexExecutable.ts` | 3-7 | `C:\Users\cristian\AppData\Roaming\npm\...\codex.exe` (4 variantes) |
-| `codexClient.ts` | 320 | `IMAGEGEN_SKILL_PATH = "C:\Users\cristian\.codex\skills\..."` |
-| `codexClient.ts` | 301-304 | Regex de extracción que asume paths Windows (`[A-Z]:\\...`) |
-| `codexClient.ts` | 417 | Instrucciones al developer con paths hardcodeados |
+| Archivo              | Línea   | Path                                                                |
+| -------------------- | ------- | ------------------------------------------------------------------- |
+| `codexExecutable.ts` | 3-7     | `C:\Users\cristian\AppData\Roaming\npm\...\codex.exe` (4 variantes) |
+| `codexClient.ts`     | 320     | `IMAGEGEN_SKILL_PATH = "C:\Users\cristian\.codex\skills\..."`       |
+| `codexClient.ts`     | 301-304 | Regex de extracción que asume paths Windows (`[A-Z]:\\...`)         |
+| `codexClient.ts`     | 417     | Instrucciones al developer con paths hardcodeados                   |
 
 Esto viola el principio de locality: el conocimiento de dónde vive el binario de `codex` está disperso en 4 lugares. Si el usuario cambia, si Codex cambia su ruta de instalación, o si se quiere soportar macOS/Linux, hay que editar cada archivo individualmente.
 
@@ -25,13 +25,13 @@ Crear un módulo `platformPaths.ts` con una interfaz única:
 
 ```ts
 type PlatformPathKey =
-  | 'codex-binary'           // ruta al ejecutable codex
-  | 'codex-skills-dir'       // directorio de skills (~/.codex/skills)
+  | 'codex-binary' // ruta al ejecutable codex
+  | 'codex-skills-dir' // directorio de skills (~/.codex/skills)
   | 'codex-generated-images' // directorio de imágenes generadas (~/.codex/generated_images)
-  | 'codex-config-dir'       // directorio de configuración (~/.codex)
+  | 'codex-config-dir'; // directorio de configuración (~/.codex)
 
-function resolvePlatformPath(key: PlatformPathKey): string
-function getPlatformPathSeparator(): string
+function resolvePlatformPath(key: PlatformPathKey): string;
+function getPlatformPathSeparator(): string;
 ```
 
 ### Implementación interna
@@ -39,12 +39,14 @@ function getPlatformPathSeparator(): string
 Dos adapters internos, seleccionados por `process.platform`:
 
 **Windows adapter** (existe hoy):
+
 - `codex-binary`: intenta npm global → Windows App Store → PATH fallback.
 - `codex-skills-dir`: `%USERPROFILE%\.codex\skills`.
 - `codex-generated-images`: `%USERPROFILE%\.codex\generated_images`.
 - `codex-config-dir`: `%USERPROFILE%\.codex`.
 
 **Unix adapter** (futuro, macOS/Linux):
+
 - `codex-binary`: `~/.local/share/npm/...` → `~/.local/bin/codex` → PATH fallback.
 - `codex-skills-dir`: `~/.codex/skills`.
 - `codex-generated-images`: `~/.codex/generated_images`.
@@ -88,17 +90,17 @@ El regex Windows debe moverse detrás del adapter: `resolvePlatformPath('codex-g
 
 ```ts
 // Adapter Windows
-mock('process.platform', 'win32')
-assert(resolvePlatformPath('codex-skills-dir').includes('.codex\\skills'))
+mock('process.platform', 'win32');
+assert(resolvePlatformPath('codex-skills-dir').includes('.codex\\skills'));
 
 // Adapter Unix
-mock('process.platform', 'darwin')
-assert(resolvePlatformPath('codex-skills-dir').includes('.codex/skills'))
+mock('process.platform', 'darwin');
+assert(resolvePlatformPath('codex-skills-dir').includes('.codex/skills'));
 
 // codex-binary fallback a PATH
-mock('process.platform', 'linux')
+mock('process.platform', 'linux');
 // Si no existe en npm global ni ~/.local/bin, debe caer en 'codex'
-assert(resolvePlatformPath('codex-binary') === 'codex')
+assert(resolvePlatformPath('codex-binary') === 'codex');
 ```
 
 ## Riesgos

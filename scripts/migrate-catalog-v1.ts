@@ -8,12 +8,16 @@ initStudio();
 
 const database = getDb();
 const library = getDefaultLibrary();
-const assets = database.query('SELECT * FROM assets WHERE deleted_at IS NULL ORDER BY created_at ASC').all() as any[];
+const assets = database
+  .query('SELECT * FROM assets WHERE deleted_at IS NULL ORDER BY created_at ASC')
+  .all() as any[];
 let inserted = 0;
 let skipped = 0;
 
 for (const asset of assets) {
-  const existing = database.query('SELECT id FROM catalog_images WHERE job_id = ? AND file_path = ? LIMIT 1').get(asset.job_id, asset.file_path);
+  const existing = database
+    .query('SELECT id FROM catalog_images WHERE job_id = ? AND file_path = ? LIMIT 1')
+    .get(asset.job_id, asset.file_path);
   if (existing || !existsSync(asset.file_path)) {
     skipped += 1;
     continue;

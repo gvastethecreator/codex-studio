@@ -8,7 +8,7 @@ Propuesto.
 
 La arquitectura documentada en `CONTEXT.md` establece:
 
-> *"The generation pipeline should not know Persistent Job creation, polling, Local Asset filtering or thumbnail creation outside the Local Generation Run module."*
+> _"The generation pipeline should not know Persistent Job creation, polling, Local Asset filtering or thumbnail creation outside the Local Generation Run module."_
 
 Sin embargo, `components/AppContent.tsx` (líneas 417-476, función `handleExecuteEdit`) implementa un pipeline de generación completo inline para el flujo de edición de imágenes:
 
@@ -25,6 +25,7 @@ const handleExecuteEdit = async (editPrompt, editImageSrc, hotspotCoords, size) 
 ```
 
 Esto duplica la lógica de `services/localGenerationRun.ts`:
+
 - `runSingleCodexImagegenJob` ya hace: `listProjects()` → `createStudioJob()` → `waitForStudioJob()` → `listStudioAssets()` (filtrado por jobId) → `createThumbnail()` → retorna `GeneratedImage[]`.
 - `runLocalGeneration` ya hace: loop de `batchCount` → construye `GenerationBatch`.
 
@@ -38,20 +39,21 @@ Extender la interfaz de `runSingleCodexImagegenJob` para soportar generación co
 
 ```ts
 interface CodexImagegenJobOptions {
-  config: ImageGenerationConfig
-  workspaceId: string
+  config: ImageGenerationConfig;
+  workspaceId: string;
   inputImage?: {
-    src: string        // URL o dataUrl de la imagen a editar
-    prompt?: string    // instrucción de edición (opcional, se combina con config.prompt)
-  }
-  signal?: AbortSignal
-  onProgress?: ProgressCallback
+    src: string; // URL o dataUrl de la imagen a editar
+    prompt?: string; // instrucción de edición (opcional, se combina con config.prompt)
+  };
+  signal?: AbortSignal;
+  onProgress?: ProgressCallback;
 }
 
-function runSingleCodexImagegenJob(opts: CodexImagegenJobOptions): Promise<GeneratedImage[]>
+function runSingleCodexImagegenJob(opts: CodexImagegenJobOptions): Promise<GeneratedImage[]>;
 ```
 
 Cuando `inputImage` está presente, el módulo:
+
 1. Convierte `inputImage.src` a un dataUrl (si es URL de library, fetchea la imagen).
 2. Crea una referencia con la imagen de entrada (usa el Reference Manager de ADR 0003).
 3. Construye el prompt combinando `inputImage.prompt` (instrucción de edición) con `config.prompt`.
@@ -61,24 +63,24 @@ Cuando `inputImage` está presente, el módulo:
 
 ```ts
 const handleExecuteEdit = async (editPrompt, editImageSrc, hotspotCoords, size) => {
-  setBatches(prev => [...prev, placeholderBatch])
+  setBatches((prev) => [...prev, placeholderBatch]);
   await runLocalGeneration({
     config: { ...currentConfig, prompt: combinePrompt(currentConfig.prompt, editPrompt) },
     workspaceId: activeWorkspaceId,
     inputImage: { src: editImageSrc, prompt: editPrompt },
-    onProgress: updatePlaceholderBatch
-  })
-}
+    onProgress: updatePlaceholderBatch,
+  });
+};
 ```
 
 ### Diferencias con el flujo de generación normal
 
-| Aspecto | Generación normal | Edición |
-|---------|-------------------|---------|
-| Prompt | `config.prompt` + recipe + sizing | `editPrompt` + `config.prompt` + sizing |
-| Referencias | `config.attachments` | `config.attachments` + `inputImage.src` como referencia |
-| batchCount | `config.batchCount` | Siempre 1 (override) |
-| Placeholder | Muestra un placeholder por batch | Muestra el placeholder inmediatamente |
+| Aspecto     | Generación normal                 | Edición                                                 |
+| ----------- | --------------------------------- | ------------------------------------------------------- |
+| Prompt      | `config.prompt` + recipe + sizing | `editPrompt` + `config.prompt` + sizing                 |
+| Referencias | `config.attachments`              | `config.attachments` + `inputImage.src` como referencia |
+| batchCount  | `config.batchCount`               | Siempre 1 (override)                                    |
+| Placeholder | Muestra un placeholder por batch  | Muestra el placeholder inmediatamente                   |
 
 La función `runLocalGeneration` ya recibe `config` con `batchCount`; para ediciones el caller pasa `batchCount: 1` en el config.
 
@@ -91,7 +93,6 @@ La función `runLocalGeneration` ya recibe `config` con `batchCount`; para edici
   - Si `inputImage.src` es una URL de library, la fetchea y convierte a dataUrl.
   - Si hay `inputImage`, lo agrega como referencia usando `processReferences` (ADR 0003).
   - Si hay `inputImage.prompt`, lo combina con `config.prompt` (instrucción de edición como prefijo).
-  
 - **`components/AppContent.tsx`**:
   - `handleExecuteEdit` (líneas 417-476) se reemplaza con una llamada a `runLocalGeneration`.
   - Se eliminan los imports directos de `createStudioJob`, `listProjects`, `listStudioAssets`, `waitForStudioJob`, `toStudioAssetUrl` desde `AppContent.tsx`.
@@ -124,18 +125,18 @@ La función `runLocalGeneration` ya recibe `config` con `batchCount`; para edici
 const result = await runSingleCodexImagegenJob({
   config: { ...defaultConfig, prompt: 'add a hat', batchCount: 1 },
   workspaceId: 'ws-1',
-  inputImage: { src: 'data:image/png;base64,...', prompt: 'add a hat to this cat' }
-})
-assert(result.length === 1)
-assert(result[0].src)  // tiene imagen generada
+  inputImage: { src: 'data:image/png;base64,...', prompt: 'add a hat to this cat' },
+});
+assert(result.length === 1);
+assert(result[0].src); // tiene imagen generada
 
 // Edición con URL de library (debe fetchear)
-mockFetch('/library/assets/img.png', pngBuffer)
+mockFetch('/library/assets/img.png', pngBuffer);
 const result = await runSingleCodexImagegenJob({
   config: { ...defaultConfig, prompt: 'remove background' },
   workspaceId: 'ws-1',
-  inputImage: { src: 'http://localhost:4317/library/assets/img.png' }
-})
+  inputImage: { src: 'http://localhost:4317/library/assets/img.png' },
+});
 // Verifica que se creó referencia con la imagen fetcheada
 ```
 

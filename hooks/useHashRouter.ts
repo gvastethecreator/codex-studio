@@ -16,7 +16,10 @@ const DEFAULT_ROUTE: HashRouterState = {
   overlay: 'none',
 };
 
-export function resolveHashRouterState(previous: HashRouterState, rawHash: string): HashRouterState {
+export function resolveHashRouterState(
+  previous: HashRouterState,
+  rawHash: string,
+): HashRouterState {
   const hash = rawHash.replace(/^#/, '');
 
   if (!hash) {
@@ -67,7 +70,9 @@ function replaceHash(hash: string) {
 }
 
 export function useHashRouter() {
-  const [route, setRoute] = useState<HashRouterState>(() => resolveHashRouterState(DEFAULT_ROUTE, window.location.hash));
+  const [route, setRoute] = useState<HashRouterState>(() =>
+    resolveHashRouterState(DEFAULT_ROUTE, window.location.hash),
+  );
 
   useEffect(() => {
     const syncRoute = () => {

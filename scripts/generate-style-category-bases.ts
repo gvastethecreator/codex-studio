@@ -1,6 +1,6 @@
-import { mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
-import path from "node:path";
-import type { Asset, Job, Project } from "../packages/shared/src";
+import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import type { Asset, Job, Project } from '../packages/shared/src';
 import {
   RECIPE_ASSET_EXTENSION,
   categoryBasesDir,
@@ -12,7 +12,7 @@ import {
   subjectForCategory,
   valueOf,
   writeRepoWebpAsset,
-} from "./style-default-utils";
+} from './style-default-utils';
 
 interface ManifestEntry {
   packId: string;
@@ -25,9 +25,9 @@ interface ManifestEntry {
   generatedAt: string;
 }
 
-const manifestPath = path.join(categoryBasesDir, "manifest.json");
-const failuresPath = path.join(categoryBasesDir, "failures.json");
-const libraryDir = process.env.STUDIO_LIBRARY_DIR || "D:\\AI-Studio-Library";
+const manifestPath = path.join(categoryBasesDir, 'manifest.json');
+const failuresPath = path.join(categoryBasesDir, 'failures.json');
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library';
 
 async function exists(filePath: string) {
   try {
@@ -39,45 +39,50 @@ async function exists(filePath: string) {
 }
 
 async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
-  const transcriptPath = path.join(libraryDir, "transcripts", jobId, "events.jsonl");
-  const codexHome = process.env.CODEX_HOME || path.join(process.env.USERPROFILE || "C:\\Users\\cristian", ".codex");
-  const transcript = await readFile(transcriptPath, "utf8").catch(() => "");
+  const transcriptPath = path.join(libraryDir, 'transcripts', jobId, 'events.jsonl');
+  const codexHome =
+    process.env.CODEX_HOME || path.join(process.env.USERPROFILE || 'C:\\Users\\cristian', '.codex');
+  const transcript = await readFile(transcriptPath, 'utf8').catch(() => '');
   for (const line of transcript.split(/\r?\n/)) {
     if (!line.trim()) continue;
     try {
       const event = JSON.parse(line) as any;
       const item = event.params?.item;
-      if (item?.type !== "imageGeneration" || !item.id || !event.params?.threadId) continue;
-      await rm(path.join(codexHome, "generated_images", event.params.threadId, `${item.id}.png`), { force: true }).catch(() => {});
+      if (item?.type !== 'imageGeneration' || !item.id || !event.params?.threadId) continue;
+      await rm(path.join(codexHome, 'generated_images', event.params.threadId, `${item.id}.png`), {
+        force: true,
+      }).catch(() => {});
     } catch {
       // Ignore malformed transcript lines; cleanup is best-effort after the repo copy succeeds.
     }
   }
   await rm(sourceAssetPath, { force: true }).catch(() => {});
-  await rm(path.join(libraryDir, "transcripts", jobId), { recursive: true, force: true }).catch(() => {});
+  await rm(path.join(libraryDir, 'transcripts', jobId), { recursive: true, force: true }).catch(
+    () => {},
+  );
 }
 
 async function waitForJob(jobId: string) {
   while (true) {
-    const jobs = await request<Job[]>("/api/jobs");
+    const jobs = await request<Job[]>('/api/jobs');
     const job = jobs.find((candidate) => candidate.id === jobId);
     if (!job) throw new Error(`Job ${jobId} disappeared from /api/jobs`);
-    if (job.status === "completed") return job;
-    if (job.status === "failed" || job.status === "cancelled" || job.status === "needs_review") {
-      throw new Error(`Job ${jobId} ended as ${job.status}: ${job.error || "no error"}`);
+    if (job.status === 'completed') return job;
+    if (job.status === 'failed' || job.status === 'cancelled' || job.status === 'needs_review') {
+      throw new Error(`Job ${jobId} ended as ${job.status}: ${job.error || 'no error'}`);
     }
     await Bun.sleep(3000);
   }
 }
 
 async function newestAssetForJob(jobId: string) {
-  const assets = await request<Asset[]>("/api/assets");
+  const assets = await request<Asset[]>('/api/assets');
   return assets.find((asset) => asset.jobId === jobId);
 }
 
 async function loadManifest() {
   try {
-    return JSON.parse(await readFile(manifestPath, "utf8")) as ManifestEntry[];
+    return JSON.parse(await readFile(manifestPath, 'utf8')) as ManifestEntry[];
   } catch {
     return [];
   }
@@ -85,12 +90,12 @@ async function loadManifest() {
 
 async function saveManifest(entries: ManifestEntry[]) {
   entries.sort((a, b) => a.key.localeCompare(b.key));
-  await writeFile(manifestPath, `${JSON.stringify(entries, null, 2)}\n`, "utf8");
+  await writeFile(manifestPath, `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
 }
 
 async function loadFailures() {
   try {
-    return JSON.parse(await readFile(failuresPath, "utf8")) as unknown[];
+    return JSON.parse(await readFile(failuresPath, 'utf8')) as unknown[];
   } catch {
     return [];
   }
@@ -99,21 +104,30 @@ async function loadFailures() {
 async function saveFailure(entry: unknown) {
   const failures = await loadFailures();
   failures.push(entry);
-  await writeFile(failuresPath, `${JSON.stringify(failures, null, 2)}\n`, "utf8");
+  await writeFile(failuresPath, `${JSON.stringify(failures, null, 2)}\n`, 'utf8');
 }
 
 function summarizePreset(preset: { name: string; style: Record<string, unknown> }) {
   return [
     preset.name,
-    valueOf(preset.style as any, "aesthetic"),
-    valueOf(preset.style as any, "subject_treatment", "form_and_line"),
-    valueOf(preset.style as any, "camera_and_composition", "spatial_distortion"),
-    valueOf(preset.style as any, "atmosphere_and_mood", "atmosphere"),
-  ].filter(Boolean).join(" | ");
+    valueOf(preset.style as any, 'aesthetic'),
+    valueOf(preset.style as any, 'subject_treatment', 'form_and_line'),
+    valueOf(preset.style as any, 'camera_and_composition', 'spatial_distortion'),
+    valueOf(preset.style as any, 'atmosphere_and_mood', 'atmosphere'),
+  ]
+    .filter(Boolean)
+    .join(' | ');
 }
 
-function buildCategoryPrompt(packName: string, category: string, presets: { name: string; style: Record<string, unknown> }[]) {
-  const presetExamples = presets.slice(0, 18).map((preset, index) => `${index + 1}. ${summarizePreset(preset)}`).join("\n");
+function buildCategoryPrompt(
+  packName: string,
+  category: string,
+  presets: { name: string; style: Record<string, unknown> }[],
+) {
+  const presetExamples = presets
+    .slice(0, 18)
+    .map((preset, index) => `${index + 1}. ${summarizePreset(preset)}`)
+    .join('\n');
   return `Generate one representative base reference image for a style browser category.
 
 PACK: ${packName}
@@ -137,14 +151,14 @@ ImageGen output size: 1024x1536
 Aspect ratio: 2:3 (portrait)`;
 }
 
-const limitArg = process.argv.find((arg) => arg.startsWith("--limit="));
-const limit = limitArg ? Number(limitArg.split("=")[1]) : Number.POSITIVE_INFINITY;
+const limitArg = process.argv.find((arg) => arg.startsWith('--limit='));
+const limit = limitArg ? Number(limitArg.split('=')[1]) : Number.POSITIVE_INFINITY;
 
 await mkdir(categoryBasesDir, { recursive: true });
-const health = await request<{ ok: boolean }>("/api/health");
-if (!health.ok) throw new Error("Local studio server is not healthy.");
+const health = await request<{ ok: boolean }>('/api/health');
+if (!health.ok) throw new Error('Local studio server is not healthy.');
 
-const projects = await request<Project[]>("/api/projects");
+const projects = await request<Project[]>('/api/projects');
 const projectId = projects[0]?.id;
 const packs = await loadPacks();
 const manifestByKey = new Map((await loadManifest()).map((entry) => [entry.key, entry]));
@@ -153,7 +167,9 @@ let generated = 0;
 let skipped = 0;
 
 for (const pack of packs) {
-  const categories = Array.from(new Set(pack.presets.map((preset) => sanitizeCategory(preset.category))));
+  const categories = Array.from(
+    new Set(pack.presets.map((preset) => sanitizeCategory(preset.category))),
+  );
   for (const category of categories) {
     const key = styleCategoryImageKey(pack.id, category);
     const destination = path.join(categoryBasesDir, `${key}${RECIPE_ASSET_EXTENSION}`);
@@ -164,13 +180,15 @@ for (const pack of packs) {
     if (generated >= limit) break;
 
     console.log(`[base] ${pack.id} ${pack.name} / ${category}`);
-    const categoryPresets = pack.presets.filter((preset) => sanitizeCategory(preset.category) === category);
+    const categoryPresets = pack.presets.filter(
+      (preset) => sanitizeCategory(preset.category) === category,
+    );
     try {
-      const created = await request<Job>("/api/jobs", {
-        method: "POST",
+      const created = await request<Job>('/api/jobs', {
+        method: 'POST',
         body: JSON.stringify({
           projectId,
-          kind: "codex_imagegen",
+          kind: 'codex_imagegen',
           prompt: buildCategoryPrompt(pack.name, category, categoryPresets),
         }),
       });
@@ -210,4 +228,6 @@ for (const pack of packs) {
   if (generated >= limit) break;
 }
 
-console.log(`[done] generated=${generated} skipped=${skipped} totalCategories=${packs.reduce((sum, pack) => sum + new Set(pack.presets.map((preset) => sanitizeCategory(preset.category))).size, 0)}`);
+console.log(
+  `[done] generated=${generated} skipped=${skipped} totalCategories=${packs.reduce((sum, pack) => sum + new Set(pack.presets.map((preset) => sanitizeCategory(preset.category))).size, 0)}`,
+);

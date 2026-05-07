@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --font-sans: 'Manrope', system-ui, sans-serif;
@@ -13,7 +13,7 @@
   --color-accent-800: rgb(var(--accent-800));
   --color-accent-900: rgb(var(--accent-900));
   --color-accent-950: rgb(var(--accent-950));
-  
+
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out-smooth: cubic-bezier(0.65, 0, 0.35, 1);
 
@@ -22,17 +22,31 @@
   --animate-shimmer: shimmer 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 
   @keyframes scan {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(100%); }
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
   }
   @keyframes logo-pop {
-    0% { transform: scale(0.9); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   @keyframes shimmer {
-    0% { transform: translateX(-100%) skewX(-15deg); }
-    100% { transform: translateX(200%) skewX(-15deg); }
+    0% {
+      transform: translateX(-100%) skewX(-15deg);
+    }
+    100% {
+      transform: translateX(200%) skewX(-15deg);
+    }
   }
 }
 
@@ -40,7 +54,7 @@
   :root {
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
     --ease-in-out-smooth: cubic-bezier(0.65, 0, 0.35, 1);
-    
+
     --accent-50: 250 250 250;
     --accent-100: 245 245 245;
     --accent-200: 229 229 229;
@@ -61,7 +75,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   #root {
     height: 100vh;
     width: 100vw;
@@ -72,14 +86,18 @@
     color: #fff;
   }
 
-  *, ::before, ::after {
+  *,
+  ::before,
+  ::after {
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
     -webkit-tap-highlight-color: transparent;
   }
 
-  button, a, .ghost-btn {
+  button,
+  a,
+  .ghost-btn {
     transition-property: color, background-color, opacity, transform, border-color;
     transition-timing-function: var(--ease-in-out-smooth);
     transition-duration: 200ms;
@@ -113,9 +131,11 @@
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
   }
-  
+
   .input-groove {
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.05);
+    box-shadow:
+      inset 0 2px 4px rgba(0, 0, 0, 0.3),
+      0 1px 0 rgba(255, 255, 255, 0.05);
   }
 
   .ghost-btn {
@@ -130,56 +150,86 @@
   }
 
   .tooltip-content {
-    position: absolute; background: rgba(10, 10, 12, 0.95);
+    position: absolute;
+    background: rgba(10, 10, 12, 0.95);
     backdrop-filter: blur(12px);
-    color: #e5e7eb; padding: 6px 12px;
-    border-radius: 8px; font-size: 11px; white-space: nowrap; z-index: 100;
-    pointer-events: none; opacity: 0; transform: scale(0.95);
+    color: #e5e7eb;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 11px;
+    white-space: nowrap;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(0.95);
     transition: all 0.2s var(--ease-out-expo);
     border: 1px border-white/5;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
-  .tooltip:hover .tooltip-content { opacity: 1; transform: scale(1); }
-  
-  .tooltip-content.top { bottom: calc(100% + 12px); left: 50%; transform: translateX(-50%) scale(0.95); }
-  .tooltip:hover .tooltip-content.top { transform: translateX(-50%) scale(1); }
-  
-  .tooltip-content.bottom { top: calc(100% + 12px); left: 50%; transform: translateX(-50%) scale(0.95); }
-  .tooltip:hover .tooltip-content.bottom { transform: translateX(-50%) scale(1); }
+  .tooltip:hover .tooltip-content {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .tooltip-content.top {
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+  }
+  .tooltip:hover .tooltip-content.top {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .tooltip-content.bottom {
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+  }
+  .tooltip:hover .tooltip-content.bottom {
+    transform: translateX(-50%) scale(1);
+  }
 
   ::view-transition-group(master-canvas),
   ::view-transition-group(modal-backdrop),
   ::view-transition-group(top-toolbar),
-  ::view-transition-group(bottom-toolbar) { 
-    animation-duration: 0.5s; 
-    animation-timing-function: var(--ease-out-expo); 
+  ::view-transition-group(bottom-toolbar) {
+    animation-duration: 0.5s;
+    animation-timing-function: var(--ease-out-expo);
   }
 
   @keyframes custom-fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   @keyframes custom-fade-out {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 
-  html[data-transition-type="open-modal"] ::view-transition-group(master-canvas) {
+  html[data-transition-type='open-modal'] ::view-transition-group(master-canvas) {
     animation-duration: 0.7s;
   }
 
-  html[data-transition-type="open-modal"] ::view-transition-new(modal-backdrop),
-  html[data-transition-type="open-modal"] ::view-transition-new(top-toolbar),
-  html[data-transition-type="open-modal"] ::view-transition-new(bottom-toolbar) {
+  html[data-transition-type='open-modal'] ::view-transition-new(modal-backdrop),
+  html[data-transition-type='open-modal'] ::view-transition-new(top-toolbar),
+  html[data-transition-type='open-modal'] ::view-transition-new(bottom-toolbar) {
     animation: custom-fade-in 0.4s var(--ease-out-expo) 0.3s both;
   }
 
-  html[data-transition-type="close-modal"] ::view-transition-old(modal-backdrop) {
+  html[data-transition-type='close-modal'] ::view-transition-old(modal-backdrop) {
     animation: custom-fade-out 0.3s var(--ease-out-expo) both;
   }
 
-  html[data-transition-type="close-modal"] ::view-transition-old(top-toolbar),
-  html[data-transition-type="close-modal"] ::view-transition-old(bottom-toolbar) {
+  html[data-transition-type='close-modal'] ::view-transition-old(top-toolbar),
+  html[data-transition-type='close-modal'] ::view-transition-old(bottom-toolbar) {
     animation: custom-fade-out 0s linear both;
   }
 
@@ -194,13 +244,27 @@
     z-index: 120;
   }
 
-  .vt-nav-studio { view-transition-name: nav-studio; }
-  .vt-nav-recipes { view-transition-name: nav-recipes; }
-  .vt-dashboard-modal { view-transition-name: dashboard-modal; }
-  .vt-recipe-tabs { view-transition-name: recipe-tabs; }
-  .vt-workspace-list { view-transition-name: workspace-list; }
-  .vt-top-toolbar { view-transition-name: top-toolbar; }
-  .vt-bottom-toolbar { view-transition-name: bottom-toolbar; }
+  .vt-nav-studio {
+    view-transition-name: nav-studio;
+  }
+  .vt-nav-recipes {
+    view-transition-name: nav-recipes;
+  }
+  .vt-dashboard-modal {
+    view-transition-name: dashboard-modal;
+  }
+  .vt-recipe-tabs {
+    view-transition-name: recipe-tabs;
+  }
+  .vt-workspace-list {
+    view-transition-name: workspace-list;
+  }
+  .vt-top-toolbar {
+    view-transition-name: top-toolbar;
+  }
+  .vt-bottom-toolbar {
+    view-transition-name: bottom-toolbar;
+  }
 
   ::view-transition-group(nav-studio),
   ::view-transition-group(nav-recipes),

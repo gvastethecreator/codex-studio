@@ -16,13 +16,19 @@ export interface RpcSession {
 }
 
 export interface RpcClient {
-  connect(wsUrl: string, retryConfig?: { maxRetries?: number; retryDelayMs?: number }): Promise<RpcSession>;
+  connect(
+    wsUrl: string,
+    retryConfig?: { maxRetries?: number; retryDelayMs?: number },
+  ): Promise<RpcSession>;
 }
 
 export class CodexRpcClient {
   private socket: WebSocket | null = null;
   private nextId = 1;
-  private pending = new Map<number, { resolve: (value: any) => void; reject: (error: Error) => void }>();
+  private pending = new Map<
+    number,
+    { resolve: (value: any) => void; reject: (error: Error) => void }
+  >();
   private notifications: JsonRpcMessage[] = [];
 
   async connect() {

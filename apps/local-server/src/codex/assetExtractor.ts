@@ -18,7 +18,10 @@ export interface AssetExtractionContext {
 }
 
 export interface AssetExtractor {
-  extract(turnNotifications: JsonRpcMessage[], context?: AssetExtractionContext): Promise<AssetSource[]>;
+  extract(
+    turnNotifications: JsonRpcMessage[],
+    context?: AssetExtractionContext,
+  ): Promise<AssetSource[]>;
 }
 
 function stripAnsi(value: string) {
@@ -35,7 +38,11 @@ function decodeJsonPath(value: string) {
 
 function mimeForPath(filePath: string) {
   const ext = path.extname(filePath).toLowerCase();
-  return ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : ext === '.webp' ? 'image/webp' : 'image/png';
+  return ext === '.jpg' || ext === '.jpeg'
+    ? 'image/jpeg'
+    : ext === '.webp'
+      ? 'image/webp'
+      : 'image/png';
 }
 
 function isRecentEnough(filePath: string, sinceMs?: number) {
@@ -52,12 +59,17 @@ function extractInline(notifications: JsonRpcMessage[], jobId: string): AssetSou
     const ext = format === 'jpeg' ? 'jpg' : format;
     const outputPath = resolveLibraryPath('assets', `${jobId}-codex.${ext}`);
     writeFileSync(outputPath, Buffer.from(match[2], 'base64'));
-    return [{ type: 'file', sourcePath: outputPath, mimeType: `image/${format}`, origin: 'inline' }];
+    return [
+      { type: 'file', sourcePath: outputPath, mimeType: `image/${format}`, origin: 'inline' },
+    ];
   }
   return [];
 }
 
-function extractGeneratedItems(notifications: JsonRpcMessage[], context: AssetExtractionContext): AssetSource[] {
+function extractGeneratedItems(
+  notifications: JsonRpcMessage[],
+  context: AssetExtractionContext,
+): AssetSource[] {
   const generatedDir = resolvePlatformPath('codex-generated-images');
   for (let index = notifications.length - 1; index >= 0; index -= 1) {
     const message = notifications[index];
@@ -71,7 +83,10 @@ function extractGeneratedItems(notifications: JsonRpcMessage[], context: AssetEx
   return [];
 }
 
-function extractSavedPaths(notifications: JsonRpcMessage[], context: AssetExtractionContext): AssetSource[] {
+function extractSavedPaths(
+  notifications: JsonRpcMessage[],
+  context: AssetExtractionContext,
+): AssetSource[] {
   const raw = stripAnsi(JSON.stringify(notifications));
   const generatedImagesDir = resolvePlatformPath('codex-generated-images');
   const matches = [
@@ -82,7 +97,9 @@ function extractSavedPaths(notifications: JsonRpcMessage[], context: AssetExtrac
 
   const candidates = [...new Set(matches.map((match) => decodeJsonPath(match[0])))]
     .filter((filePath) => !/_image_id_\.(?:png|jpg|jpeg|webp)$/i.test(filePath))
-    .filter((filePath) => filePath.includes(generatedImagesDir) || /(?:generated_images)/i.test(filePath))
+    .filter(
+      (filePath) => filePath.includes(generatedImagesDir) || /(?:generated_images)/i.test(filePath),
+    )
     .filter((filePath) => existsSync(filePath) && isRecentEnough(filePath, context.sinceMs))
     .sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs);
 

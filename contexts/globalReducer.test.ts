@@ -1,9 +1,13 @@
-import { describe, expect, it } from 'bun:test';
+import { describe, expect, it } from 'vite-plus/test';
 
 import type { GenerationBatch } from '../types';
 import { createInitialGlobalState, globalReducer } from './globalReducer';
 
-function createBatch(id: string, workspaceId = 'default', imageIds: string[] = [id]): GenerationBatch {
+function createBatch(
+  id: string,
+  workspaceId = 'default',
+  imageIds: string[] = [id],
+): GenerationBatch {
   return {
     id,
     workspaceId,

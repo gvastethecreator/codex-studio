@@ -144,17 +144,19 @@ export function getCatalogImage(id: string) {
   return row ? mapCatalogImage(row) : null;
 }
 
-export function queryCatalog(filters: {
-  libraryId?: string | null;
-  workspaceId?: string | null;
-  jobId?: string | null;
-  batchId?: string | null;
-  favorite?: boolean;
-  isDeleted?: boolean;
-  q?: string | null;
-  offset?: number;
-  limit?: number;
-} = {}): CatalogPage {
+export function queryCatalog(
+  filters: {
+    libraryId?: string | null;
+    workspaceId?: string | null;
+    jobId?: string | null;
+    batchId?: string | null;
+    favorite?: boolean;
+    isDeleted?: boolean;
+    q?: string | null;
+    offset?: number;
+    limit?: number;
+  } = {},
+): CatalogPage {
   const clauses: string[] = [];
   const params: any[] = [];
   if (filters.libraryId) {
@@ -186,7 +188,12 @@ export function queryCatalog(filters: {
   const where = `WHERE ${clauses.join(' AND ')}`;
   const limit = Math.min(Math.max(Number(filters.limit ?? 50), 1), 200);
   const offset = Math.max(Number(filters.offset ?? 0), 0);
-  const total = (getDb().query(`SELECT COUNT(*) as count FROM catalog_images ${where}`).get(...params) as any)?.count ?? 0;
+  const total =
+    (
+      getDb()
+        .query(`SELECT COUNT(*) as count FROM catalog_images ${where}`)
+        .get(...params) as any
+    )?.count ?? 0;
   const images = getDb()
     .query(`SELECT * FROM catalog_images ${where} ORDER BY created_at DESC LIMIT ? OFFSET ?`)
     .all(...params, limit, offset)
@@ -194,7 +201,10 @@ export function queryCatalog(filters: {
   return { images, total, hasMore: offset + images.length < total };
 }
 
-export function updateCatalogImage(id: string, patch: { isFavorite?: boolean; tags?: string[]; workspaceId?: string | null }) {
+export function updateCatalogImage(
+  id: string,
+  patch: { isFavorite?: boolean; tags?: string[]; workspaceId?: string | null },
+) {
   const image = getCatalogImage(id);
   if (!image) return null;
   getDb()
@@ -225,7 +235,9 @@ export function softDeleteCatalogImage(id: string) {
     renameSync(image.filePath, trashedPath);
   }
   getDb()
-    .query('UPDATE catalog_images SET is_deleted = 1, deleted_at = ?, file_path = ?, public_url = ? WHERE id = ?')
+    .query(
+      'UPDATE catalog_images SET is_deleted = 1, deleted_at = ?, file_path = ?, public_url = ? WHERE id = ?',
+    )
     .run(now(), trashedPath, toPublicAssetUrl(trashedPath), id);
   return getCatalogImage(id);
 }
@@ -241,7 +253,9 @@ export function restoreCatalogImage(id: string) {
     renameSync(image.filePath, restoredPath);
   }
   getDb()
-    .query('UPDATE catalog_images SET is_deleted = 0, deleted_at = NULL, file_path = ?, public_url = ? WHERE id = ?')
+    .query(
+      'UPDATE catalog_images SET is_deleted = 0, deleted_at = NULL, file_path = ?, public_url = ? WHERE id = ?',
+    )
     .run(restoredPath, toPublicAssetUrl(restoredPath), id);
   return getCatalogImage(id);
 }

@@ -3,7 +3,10 @@ import type { ImageGenerationConfig, RecipeId } from '../types';
 
 type RegisteredRecipeId = Exclude<RecipeId, null>;
 
-type UpdateConfig = <K extends keyof ImageGenerationConfig>(key: K, value: ImageGenerationConfig[K]) => void;
+type UpdateConfig = <K extends keyof ImageGenerationConfig>(
+  key: K,
+  value: ImageGenerationConfig[K],
+) => void;
 
 export function useRecipeContextRegistration(
   updateConfig: UpdateConfig,

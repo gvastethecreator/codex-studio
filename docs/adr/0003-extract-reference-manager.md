@@ -22,22 +22,22 @@ Crear un módulo `referenceManager.ts` con una única interfaz:
 
 ```ts
 interface ProcessedReference {
-  name: string
-  path: string       // ruta absoluta en disco
-  strength: number   // 0-1
+  name: string;
+  path: string; // ruta absoluta en disco
+  strength: number; // 0-1
 }
 
 interface ReferenceResult {
-  persistedRefs: ProcessedReference[]
-  augmentedPrompt: string  // prompt original + inyección de paths de referencia
+  persistedRefs: ProcessedReference[];
+  augmentedPrompt: string; // prompt original + inyección de paths de referencia
 }
 
 function processReferences(
   jobId: string,
   prompt: string,
   references: { name: string; dataUrl: string; strength: number }[],
-  libraryDir: string
-): Promise<ReferenceResult>
+  libraryDir: string,
+): Promise<ReferenceResult>;
 ```
 
 ### Comportamiento interno (implementation)
@@ -85,24 +85,35 @@ function processReferences(
 
 ```ts
 // Escenario 1: referencia única válida
-const result = await processReferences('job-1', 'Generate a cat', [
-  { name: 'ref.png', dataUrl: 'data:image/png;base64,iVBOR...', strength: 0.8 }
-], tmpDir)
-assert(result.persistedRefs.length === 1)
-assert(result.augmentedPrompt.includes('Reference image:'))
-assert(await Bun.file(result.persistedRefs[0].path).exists())
+const result = await processReferences(
+  'job-1',
+  'Generate a cat',
+  [{ name: 'ref.png', dataUrl: 'data:image/png;base64,iVBOR...', strength: 0.8 }],
+  tmpDir,
+);
+assert(result.persistedRefs.length === 1);
+assert(result.augmentedPrompt.includes('Reference image:'));
+assert(await Bun.file(result.persistedRefs[0].path).exists());
 
 // Escenario 2: base64 inválido → ReferenceError
 await assert.rejects(
-  processReferences('job-1', 'prompt', [{ name: 'x.png', dataUrl: 'data:image/png;base64,!!!', strength: 0.5 }], tmpDir),
-  { name: 'ReferenceError' }
-)
+  processReferences(
+    'job-1',
+    'prompt',
+    [{ name: 'x.png', dataUrl: 'data:image/png;base64,!!!', strength: 0.5 }],
+    tmpDir,
+  ),
+  { name: 'ReferenceError' },
+);
 
 // Escenario 3: nombre con path traversal → sanitizado
-const result = await processReferences('job-1', 'p', [
-  { name: '../../../etc/passwd', dataUrl: validPng, strength: 1 }
-], tmpDir)
-assert(!result.persistedRefs[0].path.includes('..'))
+const result = await processReferences(
+  'job-1',
+  'p',
+  [{ name: '../../../etc/passwd', dataUrl: validPng, strength: 1 }],
+  tmpDir,
+);
+assert(!result.persistedRefs[0].path.includes('..'));
 ```
 
 ## Riesgos

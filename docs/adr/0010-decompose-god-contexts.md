@@ -10,24 +10,27 @@ Propuesto.
 
 ```ts
 // GlobalContext.tsx — miembros expuestos
-setWorkspaces: React.Dispatch<SetStateAction<Workspace[]>>
-setActiveWorkspaceId: React.Dispatch<SetStateAction<string>>
-setBatches: React.Dispatch<SetStateAction<GenerationBatch[]>>
-setTrash: React.Dispatch<SetStateAction<GenerationBatch[]>>
-setIsBackgroundEnabled: React.Dispatch<SetStateAction<boolean>>
-setBgConfig: React.Dispatch<SetStateAction<BackgroundConfig>>
+setWorkspaces: React.Dispatch<SetStateAction<Workspace[]>>;
+setActiveWorkspaceId: React.Dispatch<SetStateAction<string>>;
+setBatches: React.Dispatch<SetStateAction<GenerationBatch[]>>;
+setTrash: React.Dispatch<SetStateAction<GenerationBatch[]>>;
+setIsBackgroundEnabled: React.Dispatch<SetStateAction<boolean>>;
+setBgConfig: React.Dispatch<SetStateAction<BackgroundConfig>>;
 ```
 
-Esto significa que **cualquier componente en cualquier parte del árbol puede mutar `batches` o `trash` directamente**, sin guardrails, validación, o manejo de side effects. El callback `restoreFromTrash` es un hack que llama `setBatches` *dentro* del updater de `setTrash` — un patrón que funciona accidentalmente pero es frágil:
+Esto significa que **cualquier componente en cualquier parte del árbol puede mutar `batches` o `trash` directamente**, sin guardrails, validación, o manejo de side effects. El callback `restoreFromTrash` es un hack que llama `setBatches` _dentro_ del updater de `setTrash` — un patrón que funciona accidentalmente pero es frágil:
 
 ```ts
-const restoreFromTrash = useCallback((batchId: string) => {
-  setTrash(prev => prev.filter(b => b.id !== batchId))
-  setBatches(prev => {
-    const restored = trash.find(b => b.id === batchId)
-    return restored ? [restored, ...prev] : prev
-  })
-}, [trash, setBatches, setTrash])
+const restoreFromTrash = useCallback(
+  (batchId: string) => {
+    setTrash((prev) => prev.filter((b) => b.id !== batchId));
+    setBatches((prev) => {
+      const restored = trash.find((b) => b.id === batchId);
+      return restored ? [restored, ...prev] : prev;
+    });
+  },
+  [trash, setBatches, setTrash],
+);
 ```
 
 `GenerationContext` hace **spread de 3 hooks** en un solo objeto de 25 miembros:
@@ -45,6 +48,7 @@ Esto crea un contrato implícito y frágil: si dos hooks agregan una propiedad c
 ### Deletion test
 
 Si borramos los raw dispatch setters y los reemplazamos con action creators:
+
 - La complejidad de coordinar transiciones multi-estado (restaurar de trash actualiza batches y trash simultáneamente) se concentra en un reducer.
 - Los callers ganan una interfaz semántica (`addBatch(batch)` en vez de `setBatches(prev => [...prev, batch])`).
 - Las reglas de negocio (deduplicación al agregar batches, límite de logs en 500 entradas) se aplican en un solo lugar.
@@ -65,33 +69,34 @@ type GlobalAction =
   | { type: 'DELETE_WORKSPACE'; id: string }
   | { type: 'RENAME_WORKSPACE'; id: string; name: string }
   | { type: 'ADD_LOG'; entry: LogEntry }
-  | { type: 'SET_BG_CONFIG'; config: BackgroundConfig }
-  // ...
+  | { type: 'SET_BG_CONFIG'; config: BackgroundConfig };
+// ...
 
 interface GlobalContextType {
   // State (read-only)
-  logs: LogEntry[]
-  workspaces: Workspace[]
-  activeWorkspaceId: string
-  batches: GenerationBatch[]
-  trash: GenerationBatch[]
+  logs: LogEntry[];
+  workspaces: Workspace[];
+  activeWorkspaceId: string;
+  batches: GenerationBatch[];
+  trash: GenerationBatch[];
   // ...
-  
+
   // Actions (lo único que muta)
-  addBatch: (batch: GenerationBatch) => void
-  trashBatch: (batchId: string) => void
-  restoreFromTrash: (batchId: string) => void
-  restoreAllFromTrash: () => void
-  createWorkspace: (workspace: Workspace) => void
-  deleteWorkspace: (id: string) => void
-  renameWorkspace: (id: string, name: string) => void
-  addLog: (entry: LogEntry) => void
-  setBgConfig: (config: BackgroundConfig) => void
+  addBatch: (batch: GenerationBatch) => void;
+  trashBatch: (batchId: string) => void;
+  restoreFromTrash: (batchId: string) => void;
+  restoreAllFromTrash: () => void;
+  createWorkspace: (workspace: Workspace) => void;
+  deleteWorkspace: (id: string) => void;
+  renameWorkspace: (id: string, name: string) => void;
+  addLog: (entry: LogEntry) => void;
+  setBgConfig: (config: BackgroundConfig) => void;
   // ...
 }
 ```
 
 El reducer maneja toda la lógica de transición, incluyendo:
+
 - **Deduplicación**: `ADD_BATCH` verifica que no exista un batch con el mismo `batch_id` en batches ni en trash.
 - **Transiciones multi-estado**: `RESTORE_FROM_TRASH` remueve de trash y agrega a batches en una sola acción atómica.
 - **Límite de logs**: `ADD_LOG` mantiene el cap de 500 entradas.
@@ -121,7 +126,7 @@ const value = {
 Los consumidores scoped su re-render al sub-objeto que necesitan:
 
 ```ts
-const { config } = useGeneration()
+const { config } = useGeneration();
 // Solo re-renderiza cuando config.generationConfig cambia,
 // no cuando pipeline.isGenerating cambia.
 ```
@@ -135,13 +140,13 @@ const pipelineValue = useMemo(() => ({ executeGeneration, isGenerating, ... }), 
 
 ### Archivos afectados
 
-| Archivo | Cambio |
-|---------|--------|
-| `contexts/GlobalContext.tsx` | `useState` → `useReducer`, exponer action creators, eliminar raw setters |
-| `contexts/GenerationContext.tsx` | Spread → 4 sub-objetos con `useMemo` |
-| `components/AppContent.tsx` | Adaptar consumo de setters → action creators |
-| `components/Toolbar.tsx` | `useGlobal().addToast` ya viene por props; sin cambios |
-| Todos los consumidores de `useGlobal()` | Reemplazar `setBatches(...)` por `addBatch(...)`, etc. |
+| Archivo                                 | Cambio                                                                   |
+| --------------------------------------- | ------------------------------------------------------------------------ |
+| `contexts/GlobalContext.tsx`            | `useState` → `useReducer`, exponer action creators, eliminar raw setters |
+| `contexts/GenerationContext.tsx`        | Spread → 4 sub-objetos con `useMemo`                                     |
+| `components/AppContent.tsx`             | Adaptar consumo de setters → action creators                             |
+| `components/Toolbar.tsx`                | `useGlobal().addToast` ya viene por props; sin cambios                   |
+| Todos los consumidores de `useGlobal()` | Reemplazar `setBatches(...)` por `addBatch(...)`, etc.                   |
 
 ## Consecuencias
 

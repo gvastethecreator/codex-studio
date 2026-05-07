@@ -102,7 +102,9 @@ const disposeScene = (scene: THREE.Scene) => {
     }
 
     if ('material' in object) {
-      disposeMaterial((object as THREE.Mesh).material as THREE.Material | THREE.Material[] | undefined);
+      disposeMaterial(
+        (object as THREE.Mesh).material as THREE.Material | THREE.Material[] | undefined,
+      );
     }
   });
 };
@@ -118,11 +120,13 @@ export const useCameraViewport = ({
 
   const mountRef = useRef<HTMLDivElement>(null);
   const sceneObjects = useRef<Record<string, any>>({});
-  const stateRef = useRef<CameraViewportState & {
-    lastRenderedAz?: number;
-    lastRenderedEl?: number;
-    lastRenderedDist?: number;
-  }>({
+  const stateRef = useRef<
+    CameraViewportState & {
+      lastRenderedAz?: number;
+      lastRenderedEl?: number;
+      lastRenderedDist?: number;
+    }
+  >({
     azimuth: initialState?.azimuth ?? 0,
     elevation: initialState?.elevation ?? 0,
     distance: initialState?.distance ?? 100,
@@ -211,14 +215,22 @@ export const useCameraViewport = ({
       new THREE.Vector3(0, 0.03, 0),
       new THREE.Vector3(0, 0.03, 50),
     ]);
-    const axisMaterial = new THREE.LineBasicMaterial({ color: 0xffffff, opacity: 0.6, transparent: true });
+    const axisMaterial = new THREE.LineBasicMaterial({
+      color: 0xffffff,
+      opacity: 0.6,
+      transparent: true,
+    });
     const frontAxis = new THREE.Line(axisGeometry, axisMaterial);
     scene.add(frontAxis);
 
     const subjectGroup = new THREE.Group();
 
     const baseGeometry = new THREE.CylinderGeometry(2, 2.5, 0.2, 32);
-    const baseMaterial = new THREE.MeshStandardMaterial({ color: 0x111111, metalness: 0.8, roughness: 0.2 });
+    const baseMaterial = new THREE.MeshStandardMaterial({
+      color: 0x111111,
+      metalness: 0.8,
+      roughness: 0.2,
+    });
     const base = new THREE.Mesh(baseGeometry, baseMaterial);
     base.receiveShadow = true;
     subjectGroup.add(base);
@@ -251,7 +263,10 @@ export const useCameraViewport = ({
 
     const ringCurve = new THREE.EllipseCurve(0, 0, 8, 8, 0, 2 * Math.PI, false, 0);
     const ringPoints = ringCurve.getPoints(64);
-    const ringCurve3 = new THREE.CatmullRomCurve3(ringPoints.map((point) => new THREE.Vector3(point.x, point.y, 0)), true);
+    const ringCurve3 = new THREE.CatmullRomCurve3(
+      ringPoints.map((point) => new THREE.Vector3(point.x, point.y, 0)),
+      true,
+    );
     const ringGeometry = new THREE.TubeGeometry(ringCurve3, 64, 0.08, 8, true);
     const azimuthTexture = createGradientTexture('#083344', '#22d3ee');
     const ringMaterial = new THREE.MeshBasicMaterial({
@@ -275,11 +290,7 @@ export const useCameraViewport = ({
     const curvePoints: THREE.Vector3[] = [];
     for (let index = 0; index <= 64; index += 1) {
       const t = (index / 64) * Math.PI;
-      curvePoints.push(new THREE.Vector3(
-        Math.cos(t) * arcRadius,
-        Math.sin(t) * arcRadius,
-        0,
-      ));
+      curvePoints.push(new THREE.Vector3(Math.cos(t) * arcRadius, Math.sin(t) * arcRadius, 0));
     }
     const arcCurve = new THREE.CatmullRomCurve3(curvePoints);
     const arcGeometry = new THREE.TubeGeometry(arcCurve, 64, 0.06, 8, false);
@@ -380,15 +391,28 @@ export const useCameraViewport = ({
     const azimuthCoreGeometry = new THREE.CylinderGeometry(0.03, 0.03, gridRadius, 32);
     azimuthCoreGeometry.rotateX(Math.PI / 2);
     azimuthCoreGeometry.translate(0, 0, gridRadius / 2);
-    applyGradientToGeometry(azimuthCoreGeometry, new THREE.Color(0x22d3ee), new THREE.Color(0x0e7490), 'z', true);
-    const azimuthCoreMaterial = new THREE.MeshBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.9 });
+    applyGradientToGeometry(
+      azimuthCoreGeometry,
+      new THREE.Color(0x22d3ee),
+      new THREE.Color(0x0e7490),
+      'z',
+      true,
+    );
+    const azimuthCoreMaterial = new THREE.MeshBasicMaterial({
+      vertexColors: true,
+      transparent: true,
+      opacity: 0.9,
+    });
     const azimuthCore = new THREE.Mesh(azimuthCoreGeometry, azimuthCoreMaterial);
     azimuthGroup.add(azimuthCore);
 
     const azimuthOutlineGeometry = new THREE.CylinderGeometry(0.05, 0.05, gridRadius, 32);
     azimuthOutlineGeometry.rotateX(Math.PI / 2);
     azimuthOutlineGeometry.translate(0, 0, gridRadius / 2);
-    const azimuthOutlineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.BackSide });
+    const azimuthOutlineMaterial = new THREE.MeshBasicMaterial({
+      color: 0x000000,
+      side: THREE.BackSide,
+    });
     const azimuthOutline = new THREE.Mesh(azimuthOutlineGeometry, azimuthOutlineMaterial);
     azimuthGroup.add(azimuthOutline);
 
@@ -404,7 +428,10 @@ export const useCameraViewport = ({
     distanceGroup.add(distanceCore);
     const distanceOutlineGeometry = new THREE.TorusGeometry(1, 0.03, 32, 128);
     distanceOutlineGeometry.rotateX(Math.PI / 2);
-    const distanceOutlineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.BackSide });
+    const distanceOutlineMaterial = new THREE.MeshBasicMaterial({
+      color: 0x000000,
+      side: THREE.BackSide,
+    });
     const distanceOutline = new THREE.Mesh(distanceOutlineGeometry, distanceOutlineMaterial);
     distanceGroup.add(distanceOutline);
 
@@ -414,13 +441,22 @@ export const useCameraViewport = ({
     const heightGroup = new THREE.Group();
     const heightCoreGeometry = new THREE.CylinderGeometry(0.02, 0.02, 1, 16);
     heightCoreGeometry.translate(0, 0.5, 0);
-    applyGradientToGeometry(heightCoreGeometry, new THREE.Color(0xec4899), new THREE.Color(0xfacc15), 'y', true);
+    applyGradientToGeometry(
+      heightCoreGeometry,
+      new THREE.Color(0xec4899),
+      new THREE.Color(0xfacc15),
+      'y',
+      true,
+    );
     const heightCoreMaterial = new THREE.MeshBasicMaterial({ vertexColors: true });
     const heightCore = new THREE.Mesh(heightCoreGeometry, heightCoreMaterial);
     heightGroup.add(heightCore);
     const heightOutlineGeometry = new THREE.CylinderGeometry(0.035, 0.035, 1, 16);
     heightOutlineGeometry.translate(0, 0.5, 0);
-    const heightOutlineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.BackSide });
+    const heightOutlineMaterial = new THREE.MeshBasicMaterial({
+      color: 0x000000,
+      side: THREE.BackSide,
+    });
     const heightOutline = new THREE.Mesh(heightOutlineGeometry, heightOutlineMaterial);
     heightGroup.add(heightOutline);
 
@@ -431,17 +467,24 @@ export const useCameraViewport = ({
     let needsUpdate = true;
 
     const animate = () => {
-      const { azimuth: currentAzimuth, elevation: currentElevation, distance: currentDistance } = stateRef.current;
+      const {
+        azimuth: currentAzimuth,
+        elevation: currentElevation,
+        distance: currentDistance,
+      } = stateRef.current;
 
-      if (sceneObjects.current.subject && sceneObjects.current.subject.visible !== hasReferenceRef.current) {
+      if (
+        sceneObjects.current.subject &&
+        sceneObjects.current.subject.visible !== hasReferenceRef.current
+      ) {
         sceneObjects.current.subject.visible = hasReferenceRef.current;
         needsUpdate = true;
       }
 
       if (
-        currentAzimuth !== stateRef.current.lastRenderedAz
-        || currentElevation !== stateRef.current.lastRenderedEl
-        || currentDistance !== stateRef.current.lastRenderedDist
+        currentAzimuth !== stateRef.current.lastRenderedAz ||
+        currentElevation !== stateRef.current.lastRenderedEl ||
+        currentDistance !== stateRef.current.lastRenderedDist
       ) {
         needsUpdate = true;
         stateRef.current.lastRenderedAz = currentAzimuth;
@@ -464,7 +507,7 @@ export const useCameraViewport = ({
         cameraGroup.lookAt(0, targetY, 0);
 
         if (arcLine) {
-          arcLine.rotation.y = theta + (Math.PI / 2);
+          arcLine.rotation.y = theta + Math.PI / 2;
           arcLine.position.y = targetY;
         }
 
@@ -474,11 +517,7 @@ export const useCameraViewport = ({
         elevationHandle.position.set(elevationX, elevationY + targetY, elevationZ);
         elevationHandle.lookAt(0, targetY, 0);
 
-        azimuthHandle.position.set(
-          radius * Math.sin(theta),
-          0,
-          radius * Math.cos(theta),
-        );
+        azimuthHandle.position.set(radius * Math.sin(theta), 0, radius * Math.cos(theta));
 
         if (azimuthGroup) {
           azimuthGroup.rotation.y = theta;
@@ -636,7 +675,9 @@ export const useCameraViewport = ({
   }, [aspectRatio, hasReference]);
 
   useEffect(() => {
-    const subject = sceneObjects.current.subject as THREE.Mesh<THREE.PlaneGeometry, THREE.MeshBasicMaterial> | undefined;
+    const subject = sceneObjects.current.subject as
+      | THREE.Mesh<THREE.PlaneGeometry, THREE.MeshBasicMaterial>
+      | undefined;
     if (!subject) return;
 
     if (!referenceImageSrc) {

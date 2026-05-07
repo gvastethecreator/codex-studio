@@ -53,7 +53,9 @@ export function inspectLibrary() {
     }
   }
 
-  const missingFolders = LIBRARY_FOLDERS.filter((folder) => !existsSync(path.join(libraryDir, folder)));
+  const missingFolders = LIBRARY_FOLDERS.filter(
+    (folder) => !existsSync(path.join(libraryDir, folder)),
+  );
 
   return {
     exists,

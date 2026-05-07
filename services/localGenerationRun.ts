@@ -26,6 +26,10 @@ export interface LocalGenerationRunResult {
   generatedCount: number;
 }
 
+/**
+ * Convert an image source into a data URL payload accepted by the local
+ * generation backend.
+ */
 async function toDataUrl(src: string) {
   if (src.startsWith('data:')) return src;
   const response = await fetch(src);
@@ -39,6 +43,10 @@ async function toDataUrl(src: string) {
   });
 }
 
+/**
+ * Run a single persistent Codex ImageGen backend job and materialize its assets
+ * into the UI image shape consumed by the visual batch cache.
+ */
 export async function runSingleCodexImagegenJob(options: {
   config: ImageGenerationConfig;
   batchId: string;
@@ -61,21 +69,26 @@ export async function runSingleCodexImagegenJob(options: {
     `Aspect ratio: ${imageGenSize.ratio} (${imageGenSize.label.toLowerCase()})`,
   ].filter(Boolean);
   const inputReference = inputImage
-    ? [{
-        name: 'input-image.png',
-        dataUrl: await toDataUrl(inputImage.src),
-        strength: 1,
-      }]
+    ? [
+        {
+          name: 'input-image.png',
+          dataUrl: await toDataUrl(inputImage.src),
+          strength: 1,
+        },
+      ]
     : [];
   const createdJob = await createStudioJob({
     projectId,
     kind: 'codex_imagegen',
     prompt: promptParts.join('\n\n'),
-    references: [...inputReference, ...config.attachments.map(attachment => ({
-      name: attachment.name,
-      dataUrl: attachment.dataUrl,
-      strength: attachment.strength,
-    }))],
+    references: [
+      ...inputReference,
+      ...config.attachments.map((attachment) => ({
+        name: attachment.name,
+        dataUrl: attachment.dataUrl,
+        strength: attachment.strength,
+      })),
+    ],
   });
 
   onProgress?.(`Codex job queued: ${createdJob.id}`);
@@ -105,7 +118,17 @@ export async function runSingleCodexImagegenJob(options: {
   return images;
 }
 
-export async function runLocalGeneration({ config, workspaceId, inputImage, signal, onProgress }: RunLocalGenerationOptions): Promise<LocalGenerationRunResult> {
+/**
+ * Resolve recipe context, enqueue the required backend jobs, and return the
+ * visual batch that the UI persists in its local cache.
+ */
+export async function runLocalGeneration({
+  config,
+  workspaceId,
+  inputImage,
+  signal,
+  onProgress,
+}: RunLocalGenerationOptions): Promise<LocalGenerationRunResult> {
   const stream = createStudioEventStream();
   try {
     const resolvedConfig = resolveGenerationConfig(config);
@@ -116,7 +139,14 @@ export async function runLocalGeneration({ config, workspaceId, inputImage, sign
 
     for (let index = 0; index < batchCount; index += 1) {
       try {
-        const images = await runSingleCodexImagegenJob({ config: resolvedConfig, batchId, signal, onProgress, stream, inputImage });
+        const images = await runSingleCodexImagegenJob({
+          config: resolvedConfig,
+          batchId,
+          signal,
+          onProgress,
+          stream,
+          inputImage,
+        });
         batchImages.push(...images);
       } catch (error) {
         lastError = error instanceof Error ? error : new Error(String(error));
@@ -125,7 +155,7 @@ export async function runLocalGeneration({ config, workspaceId, inputImage, sign
       }
 
       if (index < batchCount - 1) {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise((resolve) => setTimeout(resolve, 2000));
       }
     }
 

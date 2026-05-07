@@ -1,4 +1,3 @@
-
 // FIX: Add type definitions for the View Transitions API to avoid TypeScript errors.
 interface ViewTransition {
   ready: Promise<void>;
@@ -23,14 +22,21 @@ export interface Attachment {
   strength: number; // Value from 0 to 1
 }
 
-export type GenerationModel = typeof MODELS[keyof typeof MODELS];
+export type GenerationModel = (typeof MODELS)[keyof typeof MODELS];
 
-export type AspectRatio = 
-  | '1:1' | '3:2' | '2:3';
+export type AspectRatio = '1:1' | '3:2' | '2:3';
 
 export type ImageSize = '512px' | '1K' | '2K' | '4K';
 
-export type RecipeId = 'remaster' | 'spritesheet' | 'cinematic' | 'character' | 'styles' | 'camera' | 'timeline' | null;
+export type RecipeId =
+  | 'remaster'
+  | 'spritesheet'
+  | 'cinematic'
+  | 'character'
+  | 'styles'
+  | 'camera'
+  | 'timeline'
+  | null;
 
 export interface ImageGenerationConfig {
   prompt?: string;
@@ -50,7 +56,7 @@ export interface ImageGenerationConfig {
 export interface GeneratedImage {
   id: string;
   src: string;
-  thumbnail?: string; 
+  thumbnail?: string;
   batchId: string;
   createdAt: number;
   isFavorite?: boolean; // Added for pinning

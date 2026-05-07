@@ -11,39 +11,39 @@ Roadmap de refactors arquitectónicos para convertir módulos shallow en módulo
 
 ## Planes — Fase 1 (Backend)
 
-| # | ADR | Nombre | Riesgo | Depende de |
-|---|-----|--------|--------|------------|
-| 1 | 0002 | Callable App Factory | Medio | — |
-| 2 | 0003 | Extract Reference Manager | Bajo | — (se beneficia de 0002 para tests) |
-| 3 | 0004 | Platform Paths Seam | Bajo | — |
-| 4 | 0005 | Split Codex Client Module | Alto | 0004 |
-| 5 | 0014 | Backend Dependency Injection Seams | Medio | 0002, 0017 |
-| 6 | 0016 | Deduplicate Image Extraction | Medio | 0005 |
-| 7 | 0017 | Centralize Configuration | Bajo | — |
+| #   | ADR  | Nombre                             | Riesgo | Depende de                          |
+| --- | ---- | ---------------------------------- | ------ | ----------------------------------- |
+| 1   | 0002 | Callable App Factory               | Medio  | —                                   |
+| 2   | 0003 | Extract Reference Manager          | Bajo   | — (se beneficia de 0002 para tests) |
+| 3   | 0004 | Platform Paths Seam                | Bajo   | —                                   |
+| 4   | 0005 | Split Codex Client Module          | Alto   | 0004                                |
+| 5   | 0014 | Backend Dependency Injection Seams | Medio  | 0002, 0017                          |
+| 6   | 0016 | Deduplicate Image Extraction       | Medio  | 0005                                |
+| 7   | 0017 | Centralize Configuration           | Bajo   | —                                   |
 
 ## Planes — Fase 2 (Frontend State & Components)
 
-| # | ADR | Nombre | Riesgo | Depende de |
-|---|-----|--------|--------|------------|
-| 8 | 0006 | SSE Job Watcher | Medio | — |
-| 9 | 0010 | Decompose God-Object Contexts | Medio | — |
-| 10 | 0011 | Decompose AppContent God Component | Medio | 0010, 0006, 0007 |
-| 11 | 0007 | Consolidate Generation Flows | Bajo | 0003, se beneficia de 0006 |
+| #   | ADR  | Nombre                             | Riesgo | Depende de                 |
+| --- | ---- | ---------------------------------- | ------ | -------------------------- |
+| 8   | 0006 | SSE Job Watcher                    | Medio  | —                          |
+| 9   | 0010 | Decompose God-Object Contexts      | Medio  | —                          |
+| 10  | 0011 | Decompose AppContent God Component | Medio  | 0010, 0006, 0007           |
+| 11  | 0007 | Consolidate Generation Flows       | Bajo   | 0003, se beneficia de 0006 |
 
 ## Planes — Fase 3 (Recipes & UI Modules)
 
-| # | ADR | Nombre | Riesgo | Depende de |
-|---|-----|--------|--------|------------|
-| 12 | 0012 | RecipeContextBuilder Seam | Bajo | 0010, 0007 |
-| 13 | 0015 | Extract 3D Viewport from CameraAnglesRecipe | Bajo | 0011 |
-| 14 | 0009 | Embedded Image Metadata | Bajo | 0002 |
+| #   | ADR  | Nombre                                      | Riesgo | Depende de |
+| --- | ---- | ------------------------------------------- | ------ | ---------- |
+| 12  | 0012 | RecipeContextBuilder Seam                   | Bajo   | 0010, 0007 |
+| 13  | 0015 | Extract 3D Viewport from CameraAnglesRecipe | Bajo   | 0011       |
+| 14  | 0009 | Embedded Image Metadata                     | Bajo   | 0002       |
 
 ## Planes — Fase 4 (Data Model Migration)
 
-| # | ADR | Nombre | Riesgo | Depende de |
-|---|-----|--------|--------|------------|
-| 15 | 0008 | Multi-Library Image Catalog | Alto | 0002, 0006 |
-| 16 | 0013 | Resolve Catalog-Batch Dual Model | Alto | 0008, 0010, 0011 |
+| #   | ADR  | Nombre                           | Riesgo | Depende de       |
+| --- | ---- | -------------------------------- | ------ | ---------------- |
+| 15  | 0008 | Multi-Library Image Catalog      | Alto   | 0002, 0006       |
+| 16  | 0013 | Resolve Catalog-Batch Dual Model | Alto   | 0008, 0010, 0011 |
 
 ## Orden de ejecución recomendado
 

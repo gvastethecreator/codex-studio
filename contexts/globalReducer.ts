@@ -1,4 +1,10 @@
-import type { BackgroundConfig, GeneratedImage, GenerationBatch, LogEntry, Workspace } from '../types';
+import type {
+  BackgroundConfig,
+  GeneratedImage,
+  GenerationBatch,
+  LogEntry,
+  Workspace,
+} from '../types';
 
 export interface GlobalState {
   logs: LogEntry[];
@@ -18,7 +24,13 @@ export type GlobalAction =
   | { type: 'RENAME_WORKSPACE'; id: string; name: string }
   | { type: 'SET_ACTIVE_WORKSPACE'; id: string }
   | { type: 'PREPEND_BATCH'; batch: GenerationBatch; maxPerWorkspace?: number }
-  | { type: 'MERGE_BATCHES'; batches: GenerationBatch[]; prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean }
+  | {
+      type: 'MERGE_BATCHES';
+      batches: GenerationBatch[];
+      prepend?: boolean;
+      maxTotal?: number;
+      ensureWorkspaces?: boolean;
+    }
   | { type: 'REPLACE_BATCHES'; batches: GenerationBatch[]; ensureWorkspaces?: boolean }
   | { type: 'ARCHIVE_BATCHES'; batches: GenerationBatch[] }
   | { type: 'DELETE_IMAGE'; imageId: string }
@@ -93,7 +105,11 @@ function mergeBatch(existing: GenerationBatch, incoming: GenerationBatch): Gener
   };
 }
 
-function mergeBatchCollections(current: GenerationBatch[], incoming: GenerationBatch[], options?: { prepend?: boolean; maxTotal?: number }) {
+function mergeBatchCollections(
+  current: GenerationBatch[],
+  incoming: GenerationBatch[],
+  options?: { prepend?: boolean; maxTotal?: number },
+) {
   const prepend = options?.prepend ?? false;
   const order: string[] = [];
   const batchMap = new Map<string, GenerationBatch>();
@@ -124,7 +140,11 @@ function mergeBatchCollections(current: GenerationBatch[], incoming: GenerationB
   return typeof options?.maxTotal === 'number' ? merged.slice(0, options.maxTotal) : merged;
 }
 
-function withWorkspaceLimit(batches: GenerationBatch[], workspaceId: string, maxPerWorkspace?: number) {
+function withWorkspaceLimit(
+  batches: GenerationBatch[],
+  workspaceId: string,
+  maxPerWorkspace?: number,
+) {
   if (!maxPerWorkspace || maxPerWorkspace <= 0) {
     return batches;
   }
@@ -193,17 +213,24 @@ function deleteImages(state: GlobalState, imageIds: string[]) {
     })
     .filter((batch) => batch.images.length > 0);
 
-  return archiveBatches({
-    ...state,
-    batches: nextBatches,
-  }, batchesToArchive);
+  return archiveBatches(
+    {
+      ...state,
+      batches: nextBatches,
+    },
+    batchesToArchive,
+  );
 }
 
 export function globalReducer(state: GlobalState, action: GlobalAction): GlobalState {
   switch (action.type) {
     case 'HYDRATE_STATE': {
-      const hydratedWorkspaces = ensureDefaultWorkspace(action.state.workspaces ?? state.workspaces);
-      const hydratedActiveWorkspaceId = hydratedWorkspaces.some((workspace) => workspace.id === action.state.activeWorkspaceId)
+      const hydratedWorkspaces = ensureDefaultWorkspace(
+        action.state.workspaces ?? state.workspaces,
+      );
+      const hydratedActiveWorkspaceId = hydratedWorkspaces.some(
+        (workspace) => workspace.id === action.state.activeWorkspaceId,
+      )
         ? action.state.activeWorkspaceId!
         : hydratedWorkspaces.some((workspace) => workspace.id === state.activeWorkspaceId)
           ? state.activeWorkspaceId
@@ -233,7 +260,8 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
       return {
         ...state,
         workspaces,
-        activeWorkspaceId: action.activate ?? true ? action.workspace.id : state.activeWorkspaceId,
+        activeWorkspaceId:
+          (action.activate ?? true) ? action.workspace.id : state.activeWorkspaceId,
       };
     }
 
@@ -250,7 +278,8 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         ...state,
         workspaces,
         batches: state.batches.filter((batch) => !belongsToWorkspace(batch, action.id)),
-        activeWorkspaceId: state.activeWorkspaceId === action.id ? 'default' : state.activeWorkspaceId,
+        activeWorkspaceId:
+          state.activeWorkspaceId === action.id ? 'default' : state.activeWorkspaceId,
       };
     }
 
@@ -265,7 +294,9 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
     case 'SET_ACTIVE_WORKSPACE':
       return {
         ...state,
-        activeWorkspaceId: state.workspaces.some((workspace) => workspace.id === action.id) ? action.id : state.activeWorkspaceId,
+        activeWorkspaceId: state.workspaces.some((workspace) => workspace.id === action.id)
+          ? action.id
+          : state.activeWorkspaceId,
       };
 
     case 'PREPEND_BATCH': {
@@ -280,7 +311,9 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
     case 'MERGE_BATCHES':
       return {
         ...state,
-        workspaces: action.ensureWorkspaces ? ensureWorkspacesForBatches(state.workspaces, action.batches) : state.workspaces,
+        workspaces: action.ensureWorkspaces
+          ? ensureWorkspacesForBatches(state.workspaces, action.batches)
+          : state.workspaces,
         batches: mergeBatchCollections(state.batches, action.batches, {
           prepend: action.prepend,
           maxTotal: action.maxTotal,
@@ -290,7 +323,9 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
     case 'REPLACE_BATCHES':
       return {
         ...state,
-        workspaces: action.ensureWorkspaces ? ensureWorkspacesForBatches(state.workspaces, action.batches) : state.workspaces,
+        workspaces: action.ensureWorkspaces
+          ? ensureWorkspacesForBatches(state.workspaces, action.batches)
+          : state.workspaces,
         batches: mergeBatchCollections([], action.batches, { prepend: true }),
       };
 
@@ -309,15 +344,15 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         batches: state.batches.map((batch) => ({
           ...batch,
           images: batch.images.map((image) =>
-            image.id === action.imageId
-              ? { ...image, isFavorite: !image.isFavorite }
-              : image,
+            image.id === action.imageId ? { ...image, isFavorite: !image.isFavorite } : image,
           ),
         })),
       };
 
     case 'CLEAR_WORKSPACE': {
-      const batchesToArchive = state.batches.filter((batch) => belongsToWorkspace(batch, action.workspaceId));
+      const batchesToArchive = state.batches.filter((batch) =>
+        belongsToWorkspace(batch, action.workspaceId),
+      );
       const nextState = {
         ...state,
         batches: state.batches.filter((batch) => !belongsToWorkspace(batch, action.workspaceId)),

@@ -1319,7 +1319,7 @@
         atmosphere: Comedy, parody
         key_features: Studio animation quality
     - id: SP05-095
-      name: 'Frieren: Beyond Journey''s End'
+      name: "Frieren: Beyond Journey's End"
       category: 10. Isekai & High Fantasy
       negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy
       style:

@@ -1,13 +1,13 @@
-import { mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
-import path from "node:path";
-import type { Asset, Job, Project } from "../packages/shared/src";
+import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import type { Asset, Job, Project } from '../packages/shared/src';
 import {
   RECIPE_ASSET_EXTENSION,
   recipeCardsDir,
   repoRelative,
   request,
   writeRepoWebpAsset,
-} from "./style-default-utils";
+} from './style-default-utils';
 
 interface RecipeCardDef {
   id: string;
@@ -26,12 +26,12 @@ interface ManifestEntry {
   generatedAt: string;
 }
 
-const manifestPath = path.join(recipeCardsDir, "manifest.json");
-const failuresPath = path.join(recipeCardsDir, "failures.json");
-const libraryDir = process.env.STUDIO_LIBRARY_DIR || "D:\\AI-Studio-Library";
-const parallelArg = process.argv.find((arg) => arg.startsWith("--parallel="));
-const parallel = Math.max(1, Number(parallelArg?.split("=")[1] || 4));
-const replaceExisting = process.argv.includes("--replace");
+const manifestPath = path.join(recipeCardsDir, 'manifest.json');
+const failuresPath = path.join(recipeCardsDir, 'failures.json');
+const libraryDir = process.env.STUDIO_LIBRARY_DIR || 'D:\\AI-Studio-Library';
+const parallelArg = process.argv.find((arg) => arg.startsWith('--parallel='));
+const parallel = Math.max(1, Number(parallelArg?.split('=')[1] || 4));
+const replaceExisting = process.argv.includes('--replace');
 
 const ILLUSTRATION_STYLE_BLOCK = `
 GLOBAL ART DIRECTION:
@@ -46,10 +46,10 @@ GLOBAL ART DIRECTION:
 
 const RECIPE_CARDS: RecipeCardDef[] = [
   {
-    id: "styles",
-    title: "Styles",
+    id: 'styles',
+    title: 'Styles',
     fileName: `recipe-styles${RECIPE_ASSET_EXTENSION}`,
-    accentColor: "purple",
+    accentColor: 'purple',
     prompt: `Generate one default cover image for the STYLES recipe card in a local AI image studio.
 
 RECIPE: STYLES
@@ -66,11 +66,12 @@ Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
   },
   {
-    id: "remaster",
-    title: "Remaster",
+    id: 'remaster',
+    title: 'Remaster',
     fileName: `recipe-remaster${RECIPE_ASSET_EXTENSION}`,
-    accentColor: "amber",
-    prompt: `Generate one default cover image for the REMASTER recipe card in a local AI image studio.
+    accentColor: 'amber',
+    prompt:
+      `Generate one default cover image for the REMASTER recipe card in a local AI image studio.
 
 RECIPE: REMASTER
 ROLE: image restoration and enhancement cover
@@ -87,10 +88,10 @@ Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
   },
   {
-    id: "camera",
-    title: "Camera",
+    id: 'camera',
+    title: 'Camera',
     fileName: `recipe-camera${RECIPE_ASSET_EXTENSION}`,
-    accentColor: "cyan",
+    accentColor: 'cyan',
     prompt: `Generate one default cover image for the CAMERA recipe card in a local AI image studio.
 
 RECIPE: CAMERA
@@ -107,11 +108,12 @@ Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
   },
   {
-    id: "cinematic",
-    title: "Cinematic",
+    id: 'cinematic',
+    title: 'Cinematic',
     fileName: `recipe-cinematic${RECIPE_ASSET_EXTENSION}`,
-    accentColor: "rose",
-    prompt: `Generate one default cover image for the CINEMATIC recipe card in a local AI image studio.
+    accentColor: 'rose',
+    prompt:
+      `Generate one default cover image for the CINEMATIC recipe card in a local AI image studio.
 
 RECIPE: CINEMATIC
 ROLE: storyboard contact sheet cover
@@ -128,11 +130,12 @@ Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no interface overlays.`.trim(),
   },
   {
-    id: "timeline",
-    title: "Timeline",
+    id: 'timeline',
+    title: 'Timeline',
     fileName: `recipe-timeline${RECIPE_ASSET_EXTENSION}`,
-    accentColor: "teal",
-    prompt: `Generate one default cover image for the TIMELINE recipe card in a local AI image studio.
+    accentColor: 'teal',
+    prompt:
+      `Generate one default cover image for the TIMELINE recipe card in a local AI image studio.
 
 RECIPE: TIMELINE
 ROLE: temporal extrapolation cover
@@ -149,11 +152,12 @@ Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
   },
   {
-    id: "spritesheet",
-    title: "Sprite Sheet",
+    id: 'spritesheet',
+    title: 'Sprite Sheet',
     fileName: `recipe-spritesheet${RECIPE_ASSET_EXTENSION}`,
-    accentColor: "emerald",
-    prompt: `Generate one default cover image for the SPRITE SHEET recipe card in a local AI image studio.
+    accentColor: 'emerald',
+    prompt:
+      `Generate one default cover image for the SPRITE SHEET recipe card in a local AI image studio.
 
 RECIPE: SPRITE SHEET
 ROLE: game asset sheet cover
@@ -171,11 +175,12 @@ Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
   },
   {
-    id: "character",
-    title: "Character",
+    id: 'character',
+    title: 'Character',
     fileName: `recipe-character${RECIPE_ASSET_EXTENSION}`,
-    accentColor: "indigo",
-    prompt: `Generate one default cover image for the CHARACTER recipe card in a local AI image studio.
+    accentColor: 'indigo',
+    prompt:
+      `Generate one default cover image for the CHARACTER recipe card in a local AI image studio.
 
 RECIPE: CHARACTER
 ROLE: character sheet designer cover
@@ -203,45 +208,50 @@ async function exists(filePath: string) {
 }
 
 async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
-  const transcriptPath = path.join(libraryDir, "transcripts", jobId, "events.jsonl");
-  const codexHome = process.env.CODEX_HOME || path.join(process.env.USERPROFILE || "C:\\Users\\cristian", ".codex");
-  const transcript = await readFile(transcriptPath, "utf8").catch(() => "");
+  const transcriptPath = path.join(libraryDir, 'transcripts', jobId, 'events.jsonl');
+  const codexHome =
+    process.env.CODEX_HOME || path.join(process.env.USERPROFILE || 'C:\\Users\\cristian', '.codex');
+  const transcript = await readFile(transcriptPath, 'utf8').catch(() => '');
   for (const line of transcript.split(/\r?\n/)) {
     if (!line.trim()) continue;
     try {
       const event = JSON.parse(line) as any;
       const item = event.params?.item;
-      if (item?.type !== "imageGeneration" || !item.id || !event.params?.threadId) continue;
-      await rm(path.join(codexHome, "generated_images", event.params.threadId, `${item.id}.png`), { force: true }).catch(() => {});
+      if (item?.type !== 'imageGeneration' || !item.id || !event.params?.threadId) continue;
+      await rm(path.join(codexHome, 'generated_images', event.params.threadId, `${item.id}.png`), {
+        force: true,
+      }).catch(() => {});
     } catch {
       // Best-effort cleanup.
     }
   }
   await rm(sourceAssetPath, { force: true }).catch(() => {});
-  await rm(path.join(libraryDir, "transcripts", jobId), { recursive: true, force: true }).catch(() => {});
+  await rm(path.join(libraryDir, 'transcripts', jobId), { recursive: true, force: true }).catch(
+    () => {},
+  );
 }
 
 async function waitForJob(jobId: string) {
   while (true) {
-    const jobs = await request<Job[]>("/api/jobs");
+    const jobs = await request<Job[]>('/api/jobs');
     const job = jobs.find((candidate) => candidate.id === jobId);
     if (!job) throw new Error(`Job ${jobId} disappeared from /api/jobs`);
-    if (job.status === "completed") return job;
-    if (job.status === "failed" || job.status === "cancelled" || job.status === "needs_review") {
-      throw new Error(`Job ${jobId} ended as ${job.status}: ${job.error || "no error"}`);
+    if (job.status === 'completed') return job;
+    if (job.status === 'failed' || job.status === 'cancelled' || job.status === 'needs_review') {
+      throw new Error(`Job ${jobId} ended as ${job.status}: ${job.error || 'no error'}`);
     }
     await Bun.sleep(2000);
   }
 }
 
 async function newestAssetForJob(jobId: string) {
-  const assets = await request<Asset[]>("/api/assets");
+  const assets = await request<Asset[]>('/api/assets');
   return assets.find((asset) => asset.jobId === jobId);
 }
 
 async function loadManifest() {
   try {
-    return JSON.parse(await readFile(manifestPath, "utf8")) as ManifestEntry[];
+    return JSON.parse(await readFile(manifestPath, 'utf8')) as ManifestEntry[];
   } catch {
     return [];
   }
@@ -249,12 +259,12 @@ async function loadManifest() {
 
 async function saveManifest(entries: ManifestEntry[]) {
   entries.sort((a, b) => a.id.localeCompare(b.id));
-  await writeFile(manifestPath, `${JSON.stringify(entries, null, 2)}\n`, "utf8");
+  await writeFile(manifestPath, `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
 }
 
 async function loadFailures() {
   try {
-    return JSON.parse(await readFile(failuresPath, "utf8")) as unknown[];
+    return JSON.parse(await readFile(failuresPath, 'utf8')) as unknown[];
   } catch {
     return [];
   }
@@ -263,22 +273,26 @@ async function loadFailures() {
 async function saveFailure(entry: unknown) {
   const failures = await loadFailures();
   failures.push(entry);
-  await writeFile(failuresPath, `${JSON.stringify(failures, null, 2)}\n`, "utf8");
+  await writeFile(failuresPath, `${JSON.stringify(failures, null, 2)}\n`, 'utf8');
 }
 
-async function generateOne(projectId: string, recipe: RecipeCardDef, manifestById: Map<string, ManifestEntry>) {
+async function generateOne(
+  projectId: string,
+  recipe: RecipeCardDef,
+  manifestById: Map<string, ManifestEntry>,
+) {
   const destination = path.join(recipeCardsDir, recipe.fileName);
-  if (!replaceExisting && await exists(destination)) {
+  if (!replaceExisting && (await exists(destination))) {
     console.log(`[skip] ${recipe.id}`);
-    return "skipped";
+    return 'skipped';
   }
 
   console.log(`[recipe-card] ${recipe.id}`);
-  const created = await request<Job>("/api/jobs", {
-    method: "POST",
+  const created = await request<Job>('/api/jobs', {
+    method: 'POST',
     body: JSON.stringify({
       projectId,
-      kind: "codex_imagegen",
+      kind: 'codex_imagegen',
       prompt: recipe.prompt,
     }),
   });
@@ -300,16 +314,16 @@ async function generateOne(projectId: string, recipe: RecipeCardDef, manifestByI
     generatedAt: new Date().toISOString(),
   });
   await saveManifest(Array.from(manifestById.values()));
-  return "generated";
+  return 'generated';
 }
 
 await mkdir(recipeCardsDir, { recursive: true });
-const health = await request<{ ok: boolean }>("/api/health");
-if (!health.ok) throw new Error("Local studio server is not healthy.");
+const health = await request<{ ok: boolean }>('/api/health');
+if (!health.ok) throw new Error('Local studio server is not healthy.');
 
-const projects = await request<Project[]>("/api/projects");
+const projects = await request<Project[]>('/api/projects');
 const projectId = projects[0]?.id;
-if (!projectId) throw new Error("No default project available.");
+if (!projectId) throw new Error('No default project available.');
 
 const manifestById = new Map((await loadManifest()).map((entry) => [entry.id, entry]));
 const queue = [...RECIPE_CARDS];
@@ -323,8 +337,8 @@ async function worker() {
     if (!recipe) return;
     try {
       const result = await generateOne(projectId, recipe, manifestById);
-      if (result === "generated") generated += 1;
-      if (result === "skipped") skipped += 1;
+      if (result === 'generated') generated += 1;
+      if (result === 'skipped') skipped += 1;
     } catch (error) {
       failed += 1;
       const message = error instanceof Error ? error.message : String(error);
@@ -341,4 +355,6 @@ async function worker() {
 
 await Promise.all(Array.from({ length: Math.min(parallel, RECIPE_CARDS.length) }, () => worker()));
 
-console.log(`[done] generated=${generated} skipped=${skipped} failed=${failed} total=${RECIPE_CARDS.length}`);
+console.log(
+  `[done] generated=${generated} skipped=${skipped} failed=${failed} total=${RECIPE_CARDS.length}`,
+);

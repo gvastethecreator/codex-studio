@@ -1,7 +1,14 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 
-import type { AspectRatio, GeneratedImage, GeneratedImageWithConfig, LogEntry, QueueJob, Workspace } from '../types';
+import type {
+  AspectRatio,
+  GeneratedImage,
+  GeneratedImageWithConfig,
+  LogEntry,
+  QueueJob,
+  Workspace,
+} from '../types';
 import type { Job as StudioJob } from '../packages/shared/src';
 
 import { downloadMultipleImagesAsZip, exportToJson } from '../utils/fileUtils';
@@ -23,7 +30,11 @@ interface StudioPageProps {
   activeWorkspaceId: string;
   openModal: (image: GeneratedImageWithConfig) => void;
   handleSelectionChange: (id: string, selected: boolean) => void;
-  handleGenerate: (promptOverride?: string, configOverrides?: Partial<GeneratedImageWithConfig['config']>, options?: { force?: boolean; preventModal?: boolean }) => void;
+  handleGenerate: (
+    promptOverride?: string,
+    configOverrides?: Partial<GeneratedImageWithConfig['config']>,
+    options?: { force?: boolean; preventModal?: boolean },
+  ) => void;
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
   handleLoadRecipe: (config: GeneratedImageWithConfig['config']) => void;
   handleDelete: (imageId: string) => void;
@@ -116,7 +127,9 @@ export const StudioPage: React.FC<StudioPageProps> = ({
               selectedImageIds={selectedImageIds}
               onImageClick={openModal}
               onSelectionChange={handleSelectionChange}
-              onRegenerate={(config) => handleGenerate(config.prompt, config, { preventModal: true })}
+              onRegenerate={(config) =>
+                handleGenerate(config.prompt, config, { preventModal: true })
+              }
               onAddToContext={handleAddToContext}
               onLoadConfig={handleLoadRecipe}
               onDelete={handleDelete}
@@ -127,7 +140,9 @@ export const StudioPage: React.FC<StudioPageProps> = ({
               onSelectAll={() => handleSelectAll(allImages)}
               onDeselectAll={handleDeselectAll}
               onDownloadSelected={() => {
-                const selectedImages = imagesWithConfig.filter((image) => selectedImageIds.includes(image.id));
+                const selectedImages = imagesWithConfig.filter((image) =>
+                  selectedImageIds.includes(image.id),
+                );
                 if (selectedImages.length > 0) {
                   downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
                 }

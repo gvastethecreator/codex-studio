@@ -5,10 +5,20 @@ import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
 import { resolvePlatformPath } from '../platformPaths';
 import { createAssetExtractor } from './assetExtractor';
-import { closeImagegenSession, getImagegenSession, getImagegenSessionKey, type SessionHandle } from './sessionPool';
+import {
+  closeImagegenSession,
+  getImagegenSession,
+  getImagegenSessionKey,
+  type SessionHandle,
+} from './sessionPool';
 import type { JsonRpcMessage } from './rpcClient';
 
-const IMAGEGEN_SKILL_PATH = path.join(resolvePlatformPath('codex-skills-dir'), '.system', 'imagegen', 'SKILL.md');
+const IMAGEGEN_SKILL_PATH = path.join(
+  resolvePlatformPath('codex-skills-dir'),
+  '.system',
+  'imagegen',
+  'SKILL.md',
+);
 
 export interface TurnParams {
   projectId: string;
@@ -31,7 +41,11 @@ export interface CodexTurn {
 
 function mimeForPath(filePath: string) {
   const ext = path.extname(filePath).toLowerCase();
-  return ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : ext === '.webp' ? 'image/webp' : 'image/png';
+  return ext === '.jpg' || ext === '.jpeg'
+    ? 'image/jpeg'
+    : ext === '.webp'
+      ? 'image/webp'
+      : 'image/png';
 }
 
 function extractAssistantText(notifications: JsonRpcMessage[]) {
@@ -79,7 +93,8 @@ async function runCodexImagegenTurn(
   turnId = turn?.turn?.id ?? null;
 
   await session.client.waitForNotification(
-    (message) => message.method === 'turn/completed' && (!turnId || message.params?.turn?.id === turnId),
+    (message) =>
+      message.method === 'turn/completed' && (!turnId || message.params?.turn?.id === turnId),
     600_000,
   );
 
@@ -96,7 +111,13 @@ async function runCodexImagegenTurn(
 
   if (discoveredAsset?.origin === 'inline' && discoveredAsset.sourcePath) {
     return {
-      assets: [{ type: 'file', sourcePath: discoveredAsset.sourcePath, mimeType: discoveredAsset.mimeType }],
+      assets: [
+        {
+          type: 'file',
+          sourcePath: discoveredAsset.sourcePath,
+          mimeType: discoveredAsset.mimeType,
+        },
+      ],
       transcript: transcriptPath,
       turnId,
       threadId: session.threadId,
@@ -106,19 +127,36 @@ async function runCodexImagegenTurn(
 
   const assistantText = extractAssistantText(notifications);
   if (
-    /can[’']?t directly generate|image generation runtime\/tool isn[’']?t available|OPENAI_API_KEY/i.test(assistantText)
+    /can[’']?t directly generate|image generation runtime\/tool isn[’']?t available|OPENAI_API_KEY/i.test(
+      assistantText,
+    )
   ) {
     throw new Error(`Codex app-server thread lacks image generation capability for job ${job.id}`);
   }
 
   if (!discoveredAsset?.sourcePath) {
-    return { assets: [], transcript: transcriptPath, turnId, threadId: session.threadId, durationMs: Date.now() - startedAt };
+    return {
+      assets: [],
+      transcript: transcriptPath,
+      turnId,
+      threadId: session.threadId,
+      durationMs: Date.now() - startedAt,
+    };
   }
 
-  const outputPath = resolveLibraryPath('assets', `${job.id}-codex${path.extname(discoveredAsset.sourcePath).toLowerCase() || '.png'}`);
+  const outputPath = resolveLibraryPath(
+    'assets',
+    `${job.id}-codex${path.extname(discoveredAsset.sourcePath).toLowerCase() || '.png'}`,
+  );
   copyFileSync(discoveredAsset.sourcePath, outputPath);
   return {
-    assets: [{ type: 'file', sourcePath: outputPath, mimeType: discoveredAsset.mimeType || mimeForPath(outputPath) }],
+    assets: [
+      {
+        type: 'file',
+        sourcePath: outputPath,
+        mimeType: discoveredAsset.mimeType || mimeForPath(outputPath),
+      },
+    ],
     transcript: transcriptPath,
     turnId,
     threadId: session.threadId,
@@ -126,7 +164,11 @@ async function runCodexImagegenTurn(
   };
 }
 
-async function runImagegenJob(job: { id: string; prompt: string; projectId: string }): Promise<TurnResult> {
+async function runImagegenJob(job: {
+  id: string;
+  prompt: string;
+  projectId: string;
+}): Promise<TurnResult> {
   const startedAt = Date.now();
   const transcriptDir = resolveLibraryPath('transcripts', job.id);
   mkdirSync(transcriptDir, { recursive: true });
@@ -142,7 +184,9 @@ async function runImagegenJob(job: { id: string; prompt: string; projectId: stri
         runResult = await runCodexImagegenTurn(session, job, transcriptPath, startedAt);
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
-        const invalidatePersistedThread = /thread.+not found|unknown thread|invalid thread/i.test(message);
+        const invalidatePersistedThread = /thread.+not found|unknown thread|invalid thread/i.test(
+          message,
+        );
         closeImagegenSession(sessionKey, { invalidatePersistedThread });
         throw error;
       }
@@ -155,9 +199,17 @@ async function runImagegenJob(job: { id: string; prompt: string; projectId: stri
     } catch (error) {
       lastError = error;
       const message = error instanceof Error ? error.message : String(error);
-      const retryable = /stream disconnected|Timed out waiting for Codex notification|thread.+not found|unknown thread|invalid thread/i.test(message);
+      const retryable =
+        /stream disconnected|Timed out waiting for Codex notification|thread.+not found|unknown thread|invalid thread/i.test(
+          message,
+        );
       if (!retryable || attempt === 2) throw error;
-      log('warn', 'codex-session', `Retrying ${job.id} after transient Codex failure on ${sessionKey}: ${message}`, job.id);
+      log(
+        'warn',
+        'codex-session',
+        `Retrying ${job.id} after transient Codex failure on ${sessionKey}: ${message}`,
+        job.id,
+      );
       await Bun.sleep(1_500);
     }
   }

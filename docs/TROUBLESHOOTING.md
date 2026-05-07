@@ -63,6 +63,21 @@ Que revisar:
 - cambia `STUDIO_SERVER_PORT` y/o `STUDIO_CODEX_WS_PORT` en `.env.local`;
 - evita conflictos con otros servicios locales.
 
+### `bun run check` / `bun run lint` / `bun run test` fallan y la consola no alcanza
+
+Sintoma:
+
+- el output en terminal se corta o no queda claro que fallo primero;
+- quieres compartir el error exacto sin relanzar el comando.
+
+Que revisar:
+
+- abre `logs/tooling/`;
+- usa el archivo `*.latest.log` de la tarea que fallo;
+- si necesitas el historico completo, busca el archivo timestamped mas reciente.
+
+Nota: las tareas principales de calidad se ejecutan a traves de `scripts/tooling-task.ts`, asi que todas dejan rastro persistente.
+
 ## Problemas con la biblioteca local
 
 ### La ruta por defecto no existe en tu sistema operativo
@@ -94,16 +109,20 @@ Que revisar:
 bun run studio:init
 bun run dev:server
 bun run dev:ui
+bun run fmt:check
+bun run lint
 bun run test:unit
 bun run validate:fast
 bun run check
+bun run test
 bun run build
 ```
 
-Nota de rendimiento: `bun run check` es el typecheck global y es bastante mas pesado que los tests unitarios o `bun run build:server`. Para debugging iterativo conviene usar `bun run validate:fast` y reservar `bun run check` para la verificacion final.
+Nota de rendimiento: `bun run check` ahora concentra formato, lint y type-check en un solo paso. Para debugging iterativo conviene usar `bun run validate:fast` y reservar `bun run validate:full` para la verificacion final.
 
 Tambien puedes consultar:
 
 - `http://localhost:4317/api/health`
 - la carpeta de logs dentro de tu biblioteca local
+- `logs/tooling/` para logs de calidad/build del repo
 - `README.md` para el flujo de setup completo

@@ -4,7 +4,9 @@ import { embedMetadata, extractMetadata } from '../apps/local-server/src/metadat
 
 initStudio();
 
-const rows = getDb().query('SELECT * FROM catalog_images WHERE is_deleted = 0 ORDER BY created_at ASC').all() as any[];
+const rows = getDb()
+  .query('SELECT * FROM catalog_images WHERE is_deleted = 0 ORDER BY created_at ASC')
+  .all() as any[];
 let embedded = 0;
 let skipped = 0;
 let failed = 0;
@@ -35,4 +37,6 @@ for (const row of rows) {
   }
 }
 
-console.log(JSON.stringify({ migration: 'embed_metadata_bulk', embedded, skipped, failed }, null, 2));
+console.log(
+  JSON.stringify({ migration: 'embed_metadata_bulk', embedded, skipped, failed }, null, 2),
+);

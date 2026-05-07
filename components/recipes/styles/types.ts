@@ -1,4 +1,3 @@
-
 export interface StylePresetDef {
   id: string;
   name: string;
