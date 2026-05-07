@@ -147,6 +147,8 @@ export function getCatalogImage(id: string) {
 export function queryCatalog(filters: {
   libraryId?: string | null;
   workspaceId?: string | null;
+  jobId?: string | null;
+  batchId?: string | null;
   favorite?: boolean;
   isDeleted?: boolean;
   q?: string | null;
@@ -162,6 +164,14 @@ export function queryCatalog(filters: {
   if (filters.workspaceId) {
     clauses.push('workspace_id = ?');
     params.push(filters.workspaceId);
+  }
+  if (filters.jobId) {
+    clauses.push('job_id = ?');
+    params.push(filters.jobId);
+  }
+  if (filters.batchId) {
+    clauses.push('batch_id = ?');
+    params.push(filters.batchId);
   }
   if (filters.favorite !== undefined) {
     clauses.push('is_favorite = ?');

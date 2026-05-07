@@ -190,6 +190,8 @@ export async function createStudioApp(options: CreateStudioAppOptions = {}): Pro
     return c.json(queryCatalog({
       libraryId: url.searchParams.get('library_id'),
       workspaceId: url.searchParams.get('workspace_id'),
+      jobId: url.searchParams.get('job_id'),
+      batchId: url.searchParams.get('batch_id'),
       favorite: url.searchParams.has('favorite') ? url.searchParams.get('favorite') === 'true' : undefined,
       isDeleted: url.searchParams.get('deleted') === 'true',
       q: url.searchParams.get('q'),

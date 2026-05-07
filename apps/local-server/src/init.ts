@@ -20,7 +20,15 @@ export function initStudio() {
     const settings = getSettings();
     writeFileSync(
       envPath,
-      `STUDIO_LIBRARY_DIR=${settings.libraryDir}\nSTUDIO_SERVER_PORT=${settings.serverPort}\nSTUDIO_CODEX_WS_PORT=${settings.codexWsPort}\n`,
+      [
+        `STUDIO_LIBRARY_DIR=${settings.libraryDir}`,
+        `STUDIO_SERVER_PORT=${settings.serverPort}`,
+        `STUDIO_CODEX_WS_PORT=${settings.codexWsPort}`,
+        `STUDIO_MAX_CONCURRENT_CODEX_JOBS=${settings.codexMaxConcurrentJobs}`,
+        `CODEX_IMAGEGEN_MODEL=${settings.codexImagegenModel}`,
+        `CODEX_IMAGEGEN_REASONING_EFFORT=${settings.codexImagegenReasoningEffort}`,
+        '',
+      ].join('\n'),
       'utf8',
     );
   }

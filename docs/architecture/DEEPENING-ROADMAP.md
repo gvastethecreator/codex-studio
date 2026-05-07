@@ -9,7 +9,7 @@ Roadmap de refactors arquitectónicos para convertir módulos shallow en módulo
 - **Seam**: lugar donde vive una interfaz; punto donde se puede alterar comportamiento sin editar in place.
 - **Deletion test**: si borrás el módulo y la complejidad desaparece, era un pass-through. Si la complejidad reaparece en N callers, ganaba su lugar.
 
-## Planes
+## Planes — Fase 1 (Backend)
 
 | # | ADR | Nombre | Riesgo | Depende de |
 |---|-----|--------|--------|------------|
@@ -17,38 +17,80 @@ Roadmap de refactors arquitectónicos para convertir módulos shallow en módulo
 | 2 | 0003 | Extract Reference Manager | Bajo | — (se beneficia de 0002 para tests) |
 | 3 | 0004 | Platform Paths Seam | Bajo | — |
 | 4 | 0005 | Split Codex Client Module | Alto | 0004 |
-| 5 | 0006 | SSE Job Watcher | Medio | — |
-| 6 | 0007 | Consolidate Generation Flows | Bajo | 0003, se beneficia de 0006 |
-| 7 | 0008 | Multi-Library Image Catalog | Alto | 0002, 0006 |
-| 8 | 0009 | Embedded Image Metadata | Bajo | 0002 |
+| 5 | 0014 | Backend Dependency Injection Seams | Medio | 0002, 0017 |
+| 6 | 0016 | Deduplicate Image Extraction | Medio | 0005 |
+| 7 | 0017 | Centralize Configuration | Bajo | — |
+
+## Planes — Fase 2 (Frontend State & Components)
+
+| # | ADR | Nombre | Riesgo | Depende de |
+|---|-----|--------|--------|------------|
+| 8 | 0006 | SSE Job Watcher | Medio | — |
+| 9 | 0010 | Decompose God-Object Contexts | Medio | — |
+| 10 | 0011 | Decompose AppContent God Component | Medio | 0010, 0006, 0007 |
+| 11 | 0007 | Consolidate Generation Flows | Bajo | 0003, se beneficia de 0006 |
+
+## Planes — Fase 3 (Recipes & UI Modules)
+
+| # | ADR | Nombre | Riesgo | Depende de |
+|---|-----|--------|--------|------------|
+| 12 | 0012 | RecipeContextBuilder Seam | Bajo | 0010, 0007 |
+| 13 | 0015 | Extract 3D Viewport from CameraAnglesRecipe | Bajo | 0011 |
+| 14 | 0009 | Embedded Image Metadata | Bajo | 0002 |
+
+## Planes — Fase 4 (Data Model Migration)
+
+| # | ADR | Nombre | Riesgo | Depende de |
+|---|-----|--------|--------|------------|
+| 15 | 0008 | Multi-Library Image Catalog | Alto | 0002, 0006 |
+| 16 | 0013 | Resolve Catalog-Batch Dual Model | Alto | 0008, 0010, 0011 |
 
 ## Orden de ejecución recomendado
 
 ```
-0002 (App Factory)
- │
- ├─► 0003 (Reference Manager)   ─── independiente, bajo riesgo
- ├─► 0004 (Platform Paths)      ─── independiente, bajo riesgo
- │
- ├─► 0005 (Split Codex Client)  ─── depende de 0004, alto riesgo
- │
- └─► 0006 (SSE Job Watcher)     ─── independiente, bajo riesgo
-      │
-      ├─► 0007 (Consolidate Flows) ─── usa SSE de 0006, reference manager de 0003
-      │
-      └─► 0008 (Multi-Library Catalog) ─── usa SSE de 0006, app factory de 0002
-           │
-           └─► Fase 1: backend (tablas + endpoints + indexación automática)
-           └─► Fase 2: script de migración IndexedDB → SQLite
-           └─► Fase 3: frontend híbrido (IndexedDB + catálogo)
-           └─► Fase 4: eliminar IndexedDB de imágenes
+Fase 1: Backend Foundation
+─────────────────────────
+0017 (Centralize Config)   ─── sin dependencias, habilita 0014
+  │
+0002 (App Factory)         ─── sin dependencias, habilita tests
+  │
+  ├─► 0003 (Reference Manager)   ─── bajo riesgo, extracción mecánica
+  ├─► 0004 (Platform Paths)      ─── bajo riesgo, extracción mecánica
+  │
+  ├─► 0005 (Split Codex Client)  ─── ya implementado, queda 0016
+  │     │
+  │     └─► 0016 (Deduplicate Extraction) ─── completa 0005
+  │
+  └─► 0014 (Backend DI Seams)   ─── usa 0002 + 0017, habilita tests en todo el backend
 
-0009 (Embedded Metadata) ─── independiente, puede ejecutarse en paralelo con cualquier plan post-0002
+Fase 2: Frontend State
+──────────────────────
+0010 (Decompose Contexts)   ─── sin dependencias, habilita 0011
+  │
+  └─► 0011 (Decompose AppContent)  ─── usa 0010, limpia el god component
+       │
+       └─► 0007 (Consolidate Generation) ─── complementa 0011 en la parte de pipeline
+
+0006 (SSE Job Watcher)      ─── ya implementado, consumido por 0011 y 0013
+
+Fase 3: Recipes & UI
+────────────────────
+0012 (RecipeContextBuilder) ─── puede correr en paralelo con Fase 2
+0015 (Extract 3D Viewport)  ─── puede correr en paralelo con Fase 2
+0009 (Embedded Metadata)    ─── ya implementado
+
+Fase 4: Data Model
+──────────────────
+0008 (Multi-Library Catalog) ─── backend ya implementado, pendiente frontend
+  │
+  └─► 0013 (Resolve Dual Model)  ─── completa 0008, elimina GenerationBatch de IndexedDB
 ```
 
-Los planes 0003, 0004, 0006 y 0009 pueden ejecutarse en paralelo una vez que 0002 esté completo (porque 0002 habilita testear todo lo demás).
+Las fases son secuenciales (cada una construye sobre la anterior), pero dentro de cada fase los ADRs pueden ejecutarse en paralelo.
 
-0008 es el cambio más profundo y se recomienda atacarlo en 4 fases incrementales. La fase 1 (backend) puede empezar apenas 0002 esté listo. Las fases 3-4 (frontend) se benefician de 0006 (SSE) y 0007 (pipeline unificado).
+0017, 0010, y 0012 son los de menor riesgo y mayor impacto inmediato — pueden empezar sin esperar nada.
+
+0008 + 0013 son el cambio más profundo y se recomienda atacarlos en 4 fases incrementales como propone ADR 0008. La fase 1 (backend) ya está completa. Las fases 3-4 (frontend) se benefician de 0006 (SSE), 0010 (contextos limpios), y 0011 (page components).
 
 ## Resumen de cada plan
 
@@ -99,6 +141,54 @@ Los planes 0003, 0004, 0006 y 0009 pueden ejecutarse en paralelo una vez que 000
 **Problema**: Las imágenes generadas son archivos planos sin metadata. Si una imagen sale de la biblioteca (se comparte, se mueve), se pierde el prompt, la config, la fecha y todo el contexto de generación.
 
 **Solución**: Módulo `metadataEmbedder.ts` que incrusta metadata en el archivo de imagen al guardarlo — PNG chunks `tEXt`/`iTXt`, EXIF `UserComment` + XMP en JPEG/WebP. Schema compatible con SD WebUI/ComfyUI. Round-trip: `embedMetadata()` escribe, `extractMetadata()` lee para restaurar al catálogo.
+
+### 0010 — Decompose God-Object Contexts
+
+**Problema**: `GlobalContext` expone 7 raw dispatch setters (`setBatches`, `setTrash`, etc.) permitiendo que cualquier componente mute estado global sin guardrails. `GenerationContext` hace spread de 3 hooks en 25 miembros sin contrato explícito — re-renders masivos, silent overrides.
+
+**Solución**: `useReducer` con action creators para `GlobalContext`. Named sub-objects (`config`, `pipeline`, `modal`, `recipe`) en lugar de spread para `GenerationContext`.
+
+### 0011 — Decompose AppContent God Component
+
+**Problema**: `AppContent.tsx` tiene 919 líneas, 14 concerns, 38 propiedades de contexto, y viola CONTEXT.md al llamar `runLocalGeneration` directamente y escanear IndexedDB/localStorage.
+
+**Solución**: Extraer `useHashRouter`, crear page components (`StudioPage`, `RecipesPage`, `RecipePage`), migrar deep scan a `useLocalStudioSync`, delegar edición a `useGenerationPipeline`.
+
+### 0012 — RecipeContextBuilder Seam
+
+**Problema**: 7 recetas construyen `recipeContext` de forma independiente con formatos ad-hoc (~175 líneas de lógica duplicada conceptualmente). Cambiar el protocolo de prompts requiere tocar 7 archivos.
+
+**Solución**: Interfaz `RecipeContextBuilder` con método `buildContext(params) → string`. Registry asocia `recipeId` con su builder. Cada receta implementa un adapter (~30 líneas).
+
+### 0013 — Resolve Catalog-Batch Dual Model
+
+**Problema**: El Image Catalog existe en SQLite pero el frontend lo importa y convierte a `GenerationBatch[]` en IndexedDB como modelo primario. Tres lugares hacen mapping manual `CatalogImage → GeneratedImage`. `runSingleCodexImagegenJob` filtra client-side con límite de 50 entries.
+
+**Solución**: Agregar filtro `jobId` a `/api/catalog`. Hook `useCatalog` para consulta paginada directa. Eliminar `GenerationBatch` de IndexedDB.
+
+### 0014 — Backend Dependency Injection Seams
+
+**Problema**: 5+ interfaces existen (`CodexTurn`, `RpcClient`, `SessionPool`, ...) pero ninguna se usa como punto de inyección. `getDb()` es singleton global. `worker.ts` tiene module-level side effects. Ningún módulo del backend es testeable sin module mocking.
+
+**Solución**: Parámetros opcionales en funciones de DB. Factories que reciben dependencias. Eliminar module-level side effects en `worker.ts` y `codex/turn.ts`. Usar interfaces como tipos de parámetro.
+
+### 0015 — Extract 3D Viewport from CameraAnglesRecipe
+
+**Problema**: `CameraAnglesRecipe.tsx` mezcla ~400 líneas de lógica de receta con ~500 líneas de THREE.js imperativo en un `useEffect`. Si otra receta necesita 3D, debe copiar 500 líneas.
+
+**Solución**: Hook `useCameraViewport(containerRef, config)` que encapsula scene setup, orbit controls, animation loop, y cleanup. El recipe solo provee `customScene` y `onCameraChange`.
+
+### 0016 — Deduplicate Image Extraction Logic
+
+**Problema**: ADR 0005 creó `assetExtractor.ts` pero `turn.ts` retiene su propia lógica de extracción con 5 estrategias (más avanzadas que las 3 de `assetExtractor`). ANSI stripping, timestamp filtering, y `_image_id_` exclusion solo existen en `turn.ts`.
+
+**Solución**: Mover las 5 estrategias a `assetExtractor.ts` como canonical extractor. `turn.ts` delega extracción al `AssetExtractor`.
+
+### 0017 — Centralize Configuration
+
+**Problema**: `process.env` reads dispersas en 5 archivos más allá de `config.ts`. `CODEX_IMAGEGEN_MODEL` duplicado en `turn.ts` y `sessionPool.ts` con defaults independientes. Sin validación de valores. Module-level evaluation causa lecturas antes de `loadDotEnvLocal()`.
+
+**Solución**: Expandir `getSettings()` con todas las variables de entorno + validación. Consumir `getSettings()` en lugar de `process.env` directo. Eliminar defaults duplicados.
 
 ## Métricas de éxito
 

@@ -28,6 +28,8 @@ export const DEFAULT_BACKGROUND_CONFIG = {
 export const DEFAULT_GENERATION_CONFIG = {
     prompt: '',
     recipeContext: '',
+    recipeId: null,
+    recipeParams: null,
     attachments: [],
     aspectRatio: '1:1' as AspectRatio,
     imageSize: '1K' as const,

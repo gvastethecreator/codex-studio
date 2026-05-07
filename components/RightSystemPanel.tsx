@@ -3,7 +3,7 @@ import { FolderSync, Share, Sparkles, Layers } from 'lucide-react';
 import { SidePanel } from './SidePanel';
 
 interface RightSystemPanelProps {
-    onImportVault: (e: React.ChangeEvent<HTMLInputElement>) => Promise<void>;
+    onImportVault: (e: React.ChangeEvent<HTMLInputElement>) => void | Promise<void>;
     onExportVault: () => void;
     isBackgroundEnabled: boolean;
     onToggleBackground: () => void;
@@ -30,14 +30,14 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = ({
                     <h3 className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-2 px-1">Data Vault</h3>
                     <div className="flex flex-col gap-2">
                         <input type="file" ref={vaultInputRef} onChange={onImportVault} className="hidden" accept=".json" />
-                        <button 
+                        <button
                             onClick={() => vaultInputRef.current?.click()}
                             className="w-full h-10 flex items-center px-4 gap-3 bg-white/5 hover:bg-white/10 rounded-xl transition-all group"
                         >
                             <FolderSync size={16} className="text-zinc-500 group-hover:text-white transition-colors" />
                             <span className="text-[10px] font-black text-zinc-300 uppercase tracking-widest group-hover:text-white">Import Vault</span>
                         </button>
-                        <button 
+                        <button
                             onClick={onExportVault}
                             className="w-full h-10 flex items-center px-4 gap-3 bg-white/5 hover:bg-white/10 rounded-xl transition-all group"
                         >
@@ -51,8 +51,8 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = ({
 
                 <div>
                     <h3 className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-3 px-1">Environment</h3>
-                    
-                    <button 
+
+                    <button
                         onClick={onToggleQueue}
                         className={`w-full h-10 flex items-center justify-between px-4 rounded-xl transition-all group mb-2 ${isQueueOpen ? 'bg-accent-500/10 border border-accent-500/20' : 'bg-white/5 hover:bg-white/10'}`}
                     >
@@ -66,7 +66,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = ({
                         </div>
                     </button>
 
-                    <button 
+                    <button
                         onClick={onToggleBackground}
                         className={`w-full h-10 flex items-center justify-between px-4 rounded-xl transition-all group mb-4 ${isBackgroundEnabled ? 'bg-accent-500/10 border border-accent-500/20' : 'bg-white/5 hover:bg-white/10'}`}
                     >

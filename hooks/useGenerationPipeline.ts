@@ -1,6 +1,6 @@
 
 import { useState, useCallback } from 'react';
-import type { ImageGenerationConfig, GenerationBatch, GeneratedImageWithConfig, RecipeId } from '../types';
+import type { Attachment, ImageGenerationConfig, GenerationBatch, GeneratedImageWithConfig, RecipeId } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
 import { runLocalGeneration } from '../services/localGenerationRun';
 
@@ -12,8 +12,7 @@ interface GenerationOptions {
 interface UseGenerationPipelineProps {
     generationConfig: ImageGenerationConfig;
     activeWorkspaceId: string;
-    setBatches: (val: GenerationBatch[] | ((prev: GenerationBatch[]) => GenerationBatch[])) => void;
-    setTrash: (val: GenerationBatch[] | ((prev: GenerationBatch[]) => GenerationBatch[])) => void;
+    prependBatch: (batch: GenerationBatch, options?: { maxPerWorkspace?: number }) => void;
     addToast: (msg: string, type: 'success' | 'error' | 'info') => void;
     log: (msg: string) => void;
     activeRecipe: RecipeId;
@@ -24,7 +23,7 @@ interface UseGenerationPipelineProps {
 export const useGenerationPipeline = ({
     generationConfig,
     activeWorkspaceId,
-    setBatches,
+    prependBatch,
     addToast,
     log,
     activeRecipe,
@@ -37,17 +36,35 @@ export const useGenerationPipeline = ({
     const [activeGenerationConfig, setActiveGenerationConfig] = useState<ImageGenerationConfig | null>(null);
     const [generationStartTime, setGenerationStartTime] = useState<number | null>(null);
 
-    const executeGeneration = useCallback(async (configOverrides: Partial<ImageGenerationConfig>, options?: GenerationOptions) => {
-        const configToUse = { ...generationConfig, ...configOverrides };
-
+    const beginRun = useCallback((configToUse: ImageGenerationConfig) => {
         setActiveGenerationConfig(configToUse);
         setActiveCount(prev => prev + 1);
         const startTime = Date.now();
         setGenerationStartTime(startTime);
+        return startTime;
+    }, []);
+
+    const finishRun = useCallback(() => {
+        setActiveCount(prev => Math.max(0, prev - 1));
+        setActiveGenerationConfig(null);
+        setGenerationStartTime(null);
+    }, []);
+
+    const handleGenerationError = useCallback((error: unknown) => {
+        const message = error instanceof Error ? error.message : String(error);
+        addToast(message, 'error');
+        log(`Generation Error: ${message}`);
+        throw error;
+    }, [addToast, log]);
+
+    const executeGeneration = useCallback(async (configOverrides: Partial<ImageGenerationConfig>, options?: GenerationOptions) => {
+        const configToUse = { ...generationConfig, ...configOverrides };
+        const startTime = beginRun(configToUse);
+        const recipeId = configToUse.recipeId ?? activeRecipe;
         
         try {
             // Validate Recipe Requirements
-            if (activeRecipe && configToUse.attachments.length === 0 && !configToUse.prompt?.trim()) {
+            if (recipeId && configToUse.attachments.length === 0 && !configToUse.prompt?.trim()) {
                 throw new Error("This recipe requires a reference image or a prompt to synthesize.");
             }
 
@@ -59,11 +76,7 @@ export const useGenerationPipeline = ({
             });
 
             startViewTransition(() => {
-                setBatches(prevBatches => {
-                    const newBatches = [batch, ...prevBatches];
-                    
-                    return newBatches;
-                });
+                prependBatch(batch);
             });
             
             if (batch.images.length > 0 && !options?.preventModal) {
@@ -77,25 +90,74 @@ export const useGenerationPipeline = ({
             addToast(`Matrix update: ${generatedCount} assets ready in ${duration}s`, "success");
 
         } catch (error) {
-            const message = error instanceof Error ? error.message : String(error);
-            addToast(message, 'error');
-            log(`Generation Error: ${message}`);
-            // Re-throw so the queue manager knows it failed
-            throw error;
+            handleGenerationError(error);
         } finally {
-            setActiveCount(prev => Math.max(0, prev - 1));
-            setActiveGenerationConfig(null);
-            setGenerationStartTime(null);
+            finishRun();
         }
     }, [
-        generationConfig, activeWorkspaceId, activeRecipe, setBatches, addToast, log,
-        openModal, setIsInteractingWithToolbar
+        generationConfig, activeWorkspaceId, activeRecipe, prependBatch, addToast, log,
+        openModal, setIsInteractingWithToolbar, beginRun, finishRun, handleGenerationError
     ]);
+
+    const executeEdit = useCallback(async (original: Attachment, mask: string, prompt: string) => {
+        const configToUse: ImageGenerationConfig = {
+            ...generationConfig,
+            prompt,
+            recipeId: null,
+            recipeParams: null,
+            recipeContext: '',
+            batchCount: 1,
+            attachments: mask
+                ? [
+                    ...generationConfig.attachments,
+                    {
+                        id: `mask-${Date.now()}`,
+                        name: `${original.name.replace(/\.[^.]+$/, '')}-mask.png`,
+                        dataUrl: mask,
+                        strength: 1,
+                    },
+                ]
+                : generationConfig.attachments,
+        };
+
+        const startTime = beginRun(configToUse);
+
+        try {
+            const { batch, generatedCount } = await runLocalGeneration({
+                workspaceId: activeWorkspaceId,
+                config: configToUse,
+                inputImage: {
+                    src: original.dataUrl,
+                    prompt: [
+                        prompt,
+                        '',
+                        'Use the input image as the edit source.',
+                        `Original attachment: ${original.name}`,
+                        `Mask reference: ${mask ? 'provided' : 'not provided'}`,
+                    ].join('\n'),
+                },
+            });
+
+            startViewTransition(() => {
+                prependBatch(batch, { maxPerWorkspace: 20 });
+            });
+
+            const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+            log(`Edit synthesized: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
+            addToast('Matrix edit complete', 'success');
+            return batch;
+        } catch (error) {
+            handleGenerationError(error);
+        } finally {
+            finishRun();
+        }
+    }, [generationConfig, activeWorkspaceId, prependBatch, addToast, log, beginRun, finishRun, handleGenerationError]);
 
     return {
         isGenerating,
         activeGenerationConfig,
         generationStartTime,
-        executeGeneration
+        executeGeneration,
+        executeEdit
     };
 };

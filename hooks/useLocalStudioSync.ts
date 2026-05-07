@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { DEFAULT_GENERATION_CONFIG, MODELS } from '../constants';
 import {
   getStudioHealth,
@@ -11,13 +11,16 @@ import { createStudioEventStream } from '../services/studioEventSource';
 import type { GenerationBatch, LogEntry, Toast } from '../types';
 import type { Job as StudioJob, SystemLog as StudioLog } from '../packages/shared/src';
 import { normalizeImageGenRatio } from '../utils/imageGenSizing';
+import { validateVault } from '../utils/fileUtils';
+import { getAllEntries } from '../utils/idb';
 
-type SetBatches = (value: GenerationBatch[] | ((previous: GenerationBatch[]) => GenerationBatch[])) => void;
+type MergeBatches = (batches: GenerationBatch[], options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean }) => void;
 
 interface UseLocalStudioSyncProps {
   logs: LogEntry[];
   log: (message: string) => void;
-  setBatches: SetBatches;
+  batches: GenerationBatch[];
+  mergeBatches: MergeBatches;
   addToast: (message: string, type: Toast['type']) => void;
 }
 
@@ -53,9 +56,14 @@ function mapAssetToBatch(asset: Awaited<ReturnType<typeof queryCatalog>>['images
   };
 }
 
-export function useLocalStudioSync({ logs, log, setBatches, addToast }: UseLocalStudioSyncProps) {
+export function useLocalStudioSync({ logs, log, batches, mergeBatches, addToast }: UseLocalStudioSyncProps) {
   const [studioJobs, setStudioJobs] = useState<StudioJob[]>([]);
   const [studioLogs, setStudioLogs] = useState<StudioLog[]>([]);
+  const batchesRef = useRef(batches);
+
+  useEffect(() => {
+    batchesRef.current = batches;
+  }, [batches]);
 
   const mergedLogs = useMemo(() => {
     return [...studioLogs.map(mapStudioLog), ...logs]
@@ -74,16 +82,15 @@ export function useLocalStudioSync({ logs, log, setBatches, addToast }: UseLocal
       const assets = (await queryCatalog({ limit: 200 })).images;
       if (assets.length === 0 || cancelled) return;
 
-      let importedCount = 0;
-      setBatches(prev => {
-        const existingImageIds = new Set(prev.flatMap(batch => batch.images.map(image => image.id)));
-        const newBatches = assets
-          .filter(asset => !existingImageIds.has(asset.id))
-          .map(mapAssetToBatch);
+      const existingImageIds = new Set(batchesRef.current.flatMap(batch => batch.images.map(image => image.id)));
+      const newBatches = assets
+        .filter(asset => !existingImageIds.has(asset.id))
+        .map(mapAssetToBatch);
+      const importedCount = newBatches.length;
 
-        importedCount = newBatches.length;
-        return importedCount > 0 ? [...newBatches, ...prev] : prev;
-      });
+      if (importedCount > 0) {
+        mergeBatches(newBatches, { prepend: true, ensureWorkspaces: true });
+      }
 
       if (importedCount > 0 && !cancelled) {
         log(`Imported ${importedCount} local Codex asset(s) from the studio library`);
@@ -132,7 +139,63 @@ export function useLocalStudioSync({ logs, log, setBatches, addToast }: UseLocal
       unsubscribeConnection();
       stream.close();
     };
-  }, [log, setBatches]);
+  }, [log, mergeBatches]);
+
+  const recoverOrphanedBatches = useCallback(async () => {
+    addToast('Iniciando Deep Scan Recovery...', 'info');
+
+    try {
+      const entries = await getAllEntries();
+      const knownKeys = ['session-logs', 'app-workspaces', 'catalog-cache', 'catalog-trash', 'user-wallet-balance', 'bg-config', 'isBackgroundEnabled', 'generation-config'];
+      const recoveredCandidates: GenerationBatch[] = [];
+
+      for (const entry of entries) {
+        if (typeof entry.key === 'string' && !knownKeys.includes(entry.key)) {
+          if (Array.isArray(entry.value) && validateVault(entry.value)) {
+            recoveredCandidates.push(...entry.value);
+          } else if (validateVault([entry.value])) {
+            recoveredCandidates.push(entry.value);
+          }
+        }
+      }
+
+      for (let index = 0; index < localStorage.length; index += 1) {
+        const key = localStorage.key(index);
+        if (!key || knownKeys.includes(key)) continue;
+
+        try {
+          const item = localStorage.getItem(key);
+          if (!item) continue;
+
+          const parsed = JSON.parse(item);
+          if (Array.isArray(parsed) && validateVault(parsed)) {
+            recoveredCandidates.push(...parsed);
+          } else if (validateVault([parsed])) {
+            recoveredCandidates.push(parsed);
+          }
+        } catch {
+          // Ignore invalid storage payloads.
+        }
+      }
+
+      const existingIds = new Set(batchesRef.current.map(batch => batch.id));
+      const uniqueRecovered = recoveredCandidates.filter(batch => !existingIds.has(batch.id));
+
+      if (uniqueRecovered.length > 0) {
+        mergeBatches(uniqueRecovered, { prepend: true, maxTotal: 100, ensureWorkspaces: true });
+      }
+
+      addToast(
+        uniqueRecovered.length > 0
+          ? `¡Éxito! Se recuperaron ${uniqueRecovered.length} lotes.`
+          : 'Deep Scan completado: No se encontraron nuevos fragmentos.',
+        uniqueRecovered.length > 0 ? 'success' : 'info',
+      );
+    } catch (error) {
+      console.error('Deep Scan Error:', error);
+      addToast('Error durante el Deep Scan', 'error');
+    }
+  }, [addToast, mergeBatches]);
 
   const verifyCodexSession = useCallback(async () => {
     try {
@@ -157,5 +220,6 @@ export function useLocalStudioSync({ logs, log, setBatches, addToast }: UseLocal
     mergedLogs,
     activeServerJobCount,
     verifyCodexSession,
+    recoverOrphanedBatches,
   };
 }

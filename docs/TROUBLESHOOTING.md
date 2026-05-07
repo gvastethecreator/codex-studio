@@ -94,9 +94,13 @@ Que revisar:
 bun run studio:init
 bun run dev:server
 bun run dev:ui
+bun run test:unit
+bun run validate:fast
 bun run check
 bun run build
 ```
+
+Nota de rendimiento: `bun run check` es el typecheck global y es bastante mas pesado que los tests unitarios o `bun run build:server`. Para debugging iterativo conviene usar `bun run validate:fast` y reservar `bun run check` para la verificacion final.
 
 Tambien puedes consultar:
 

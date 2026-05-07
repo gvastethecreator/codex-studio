@@ -88,10 +88,15 @@ bun run dev:server   # Hono API + codex app-server supervisor
 bun run dev:ui       # UI Vite
 bun run dev:electron # shell Electron para desarrollo local
 bun run studio:init  # crea biblioteca, SQLite y proyecto default
-bun run check        # typecheck completo
+bun run test:unit    # tests unitarios puros y rapidos
+bun run validate:fast # loop rapido: tests puros + check del server
+bun run check        # typecheck completo (incremental, mas pesado)
+bun run validate:full # gate completo: todos los tests + typecheck global
 bun run build        # build UI + verificacion backend
 bun run preview:electron # prueba la shell Electron cargando `dist/`
 ```
+
+Para iterar durante un refactor grande, usa `bun run validate:fast` y deja `bun run validate:full` para el cierre final. Evita disparar `bun run check` tras cada cambio pequeño: es el chequeo mas costoso del repo.
 
 Tambien hay tareas de VS Code en `.vscode/tasks.json` para inicializar, levantar, validar y abrir los logs de la biblioteca.
 

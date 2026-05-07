@@ -53,10 +53,22 @@ export async function listLibraries() {
   return request<StudioLibrary[]>('/api/libraries');
 }
 
-export async function queryCatalog(params: { workspaceId?: string; libraryId?: string; favorite?: boolean; deleted?: boolean; q?: string; offset?: number; limit?: number } = {}) {
+export async function queryCatalog(params: {
+  workspaceId?: string;
+  libraryId?: string;
+  jobId?: string;
+  batchId?: string;
+  favorite?: boolean;
+  deleted?: boolean;
+  q?: string;
+  offset?: number;
+  limit?: number;
+} = {}) {
   const search = new URLSearchParams();
   if (params.workspaceId) search.set('workspace_id', params.workspaceId);
   if (params.libraryId) search.set('library_id', params.libraryId);
+  if (params.jobId) search.set('job_id', params.jobId);
+  if (params.batchId) search.set('batch_id', params.batchId);
   if (params.favorite !== undefined) search.set('favorite', String(params.favorite));
   if (params.deleted !== undefined) search.set('deleted', String(params.deleted));
   if (params.q) search.set('q', params.q);
