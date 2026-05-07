@@ -37,7 +37,7 @@ function createMainWindow() {
     minHeight: 760,
     autoHideMenuBar: true,
     backgroundColor: '#09090b',
-    title: 'Codex Image Studio',
+    title: 'Codex Studio',
     webPreferences: {
       preload: preloadPath,
       nodeIntegration: false,

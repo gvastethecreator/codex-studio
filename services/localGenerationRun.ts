@@ -1,4 +1,5 @@
 import type { GeneratedImage, GenerationBatch, ImageGenerationConfig } from '../types';
+import type { Job as StudioJob } from '../packages/shared/src';
 import { createThumbnail } from '../utils/imageUtils';
 import { resolveGenerationConfig } from '../lib/recipeContext';
 import {
@@ -18,12 +19,50 @@ interface RunLocalGenerationOptions {
     prompt?: string;
   };
   signal?: AbortSignal;
+  onJobCreated?: (job: StudioJob) => void;
   onProgress?: (message: string) => void;
 }
 
 export interface LocalGenerationRunResult {
   batch: GenerationBatch;
   generatedCount: number;
+}
+
+function createAbortError() {
+  const error = new Error('Operation cancelled by user');
+  error.name = 'AbortError';
+  return error;
+}
+
+function throwIfAborted(signal?: AbortSignal) {
+  if (signal?.aborted) {
+    throw createAbortError();
+  }
+}
+
+function waitWithAbort(durationMs: number, signal?: AbortSignal) {
+  if (!signal) {
+    return new Promise<void>((resolve) => {
+      window.setTimeout(resolve, durationMs);
+    });
+  }
+
+  throwIfAborted(signal);
+
+  return new Promise<void>((resolve, reject) => {
+    const timeout = window.setTimeout(() => {
+      signal.removeEventListener('abort', handleAbort);
+      resolve();
+    }, durationMs);
+
+    const handleAbort = () => {
+      window.clearTimeout(timeout);
+      signal.removeEventListener('abort', handleAbort);
+      reject(createAbortError());
+    };
+
+    signal.addEventListener('abort', handleAbort, { once: true });
+  });
 }
 
 /**
@@ -60,9 +99,11 @@ export async function runSingleCodexImagegenJob(options: {
   inputImage?: RunLocalGenerationOptions['inputImage'];
   stream?: StudioEventStream;
   signal?: AbortSignal;
+  onJobCreated?: (job: StudioJob) => void;
   onProgress?: (message: string) => void;
 }) {
   const { config, batchId, inputImage, signal, onProgress } = options;
+  throwIfAborted(signal);
   const projects = await listProjects();
   const projectId = projects[0]?.id;
   const imageGenSize = getImageGenSizeForRatio(config.aspectRatio);
@@ -88,6 +129,11 @@ export async function runSingleCodexImagegenJob(options: {
     projectId,
     kind: 'codex_imagegen',
     prompt: promptParts.join('\n\n'),
+    execution: {
+      model: config.executionModel,
+      reasoningEffort: config.executionReasoningEffort,
+      serviceTier: config.executionSpeed === 'standard' ? null : config.executionSpeed,
+    },
     references: [
       ...inputReference,
       ...config.attachments.map((attachment) => ({
@@ -97,6 +143,8 @@ export async function runSingleCodexImagegenJob(options: {
       })),
     ],
   });
+
+  options.onJobCreated?.(createdJob);
 
   onProgress?.(`Codex job queued: ${createdJob.id}`);
   const stream = options.stream ?? createStudioEventStream();
@@ -138,6 +186,7 @@ export async function runLocalGeneration({
 }: RunLocalGenerationOptions): Promise<LocalGenerationRunResult> {
   const stream = createStudioEventStream();
   try {
+    throwIfAborted(signal);
     const resolvedConfig = resolveGenerationConfig(config);
     const batchId = `${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
     const batchCount = inputImage ? 1 : resolvedConfig.batchCount || 1;
@@ -150,6 +199,7 @@ export async function runLocalGeneration({
           config: resolvedConfig,
           batchId,
           signal,
+          onJobCreated: options.onJobCreated,
           onProgress,
           stream,
           inputImage,
@@ -162,7 +212,7 @@ export async function runLocalGeneration({
       }
 
       if (index < batchCount - 1) {
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await waitWithAbort(2000, signal);
       }
     }
 

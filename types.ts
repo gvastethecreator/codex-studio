@@ -13,6 +13,7 @@ declare global {
 }
 
 import React from 'react';
+import type { CodexReasoningEffort, CodexServiceTier } from './packages/shared/src';
 import { MODELS } from './constants';
 
 export interface Attachment {
@@ -49,6 +50,9 @@ export interface ImageGenerationConfig {
   negativePrompt?: string;
   temperature?: number;
   model: GenerationModel;
+  executionModel: string;
+  executionReasoningEffort: CodexReasoningEffort;
+  executionSpeed: CodexServiceTier;
   batchCount: number;
   useThinkingAndSearch?: boolean;
 }
@@ -88,6 +92,7 @@ export interface QueueJob {
   prompt: string;
   config: ImageGenerationConfig;
   status: QueueJobStatus;
+  serverJobId?: string | null;
   error?: string;
   createdAt: number;
   completedAt?: number;

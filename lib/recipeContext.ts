@@ -178,12 +178,12 @@ DIRECTIVES:
 }
 
 function buildRemasterContext(params: RecipeContextParams) {
-  const style = getString(params, 'style', 'Reconstrucción Realista');
-  const lighting = getString(params, 'lighting', 'Corrección de Iluminación');
-  const camera = getString(params, 'camera', 'Enfoque Nítido');
-  const anatomy = getString(params, 'anatomy', 'Corregir Anatomía');
-  const text = getString(params, 'text', 'Reescribir Lógicamente');
-  const color = getString(params, 'color', 'Rango Dinámico Ampliado');
+  const style = getString(params, 'style', 'Realistic Reconstruction');
+  const lighting = getString(params, 'lighting', 'Lighting Correction');
+  const camera = getString(params, 'camera', 'Sharp Focus');
+  const anatomy = getString(params, 'anatomy', 'Fix Anatomy');
+  const text = getString(params, 'text', 'Rewrite Logically');
+  const color = getString(params, 'color', 'Expanded Dynamic Range');
   const fidelity = Math.max(0, Math.min(100, getNumber(params, 'fidelity', 35)));
   const adherence = fidelity / 100;
   const creativity = (100 - fidelity) / 100;

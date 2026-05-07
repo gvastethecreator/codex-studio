@@ -27,7 +27,7 @@ if (import.meta.main) {
     },
   });
 
-  console.log(`Codex Image Studio local-server listening on http://localhost:${port}`);
+  console.log(`Codex Studio local-server listening on http://localhost:${port}`);
 
   const recoverableJobs = listRecoverableJobs();
   for (const job of recoverableJobs) {

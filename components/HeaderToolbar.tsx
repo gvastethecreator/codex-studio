@@ -118,12 +118,12 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
             <Logo isGenerating={isGenerating} />
-            <Tooltip content="Setup Guide" position="bottom">
+            <Tooltip content="Help" position="bottom">
               <button
                 onClick={onOpenOnboarding}
                 className="rounded-lg border border-white/10 bg-white/5 px-2.5 py-1 text-[9px] font-black uppercase tracking-widest text-zinc-400 transition-colors hover:border-accent-500/30 hover:bg-accent-500/10 hover:text-white cursor-pointer"
               >
-                Setup
+                Help
               </button>
             </Tooltip>
             <Tooltip content="Session Activity" position="bottom">

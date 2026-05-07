@@ -8,12 +8,52 @@ export type JobStatus =
 
 export type JobKind = 'dry_run' | 'codex_imagegen';
 
+export type CodexReasoningEffort = string;
+export type CodexServiceTier = 'standard' | 'fast' | 'flex';
+export type CodexAuthMode = 'apikey' | 'chatgpt' | 'chatgptAuthTokens' | null;
+
+export interface JobExecutionOptions {
+  model: string;
+  reasoningEffort: CodexReasoningEffort;
+  serviceTier?: Exclude<CodexServiceTier, 'standard'> | null;
+}
+
+export interface CodexModelReasoningOption {
+  reasoningEffort: CodexReasoningEffort;
+  description: string | null;
+}
+
+export interface CodexModel {
+  id: string;
+  model: string;
+  displayName: string;
+  description: string | null;
+  hidden: boolean;
+  defaultReasoningEffort: CodexReasoningEffort | null;
+  supportedReasoningEfforts: CodexModelReasoningOption[];
+  additionalSpeedTiers: Exclude<CodexServiceTier, 'standard'>[];
+  inputModalities: string[];
+  supportsPersonality: boolean;
+  isDefault: boolean;
+}
+
+export interface CodexModelCatalogResponse {
+  models: CodexModel[];
+  authMode: CodexAuthMode;
+  planType: string | null;
+  recommendedDefaultModel: string | null;
+  source: 'app-server' | 'fallback';
+  fetchedAt: string;
+  error: string | null;
+}
+
 export interface StudioSettings {
   libraryDir: string;
   serverPort: number;
   codexWsPort: number;
   codexImagegenModel: string;
-  codexImagegenReasoningEffort: 'low' | 'medium' | 'high';
+  codexImagegenReasoningEffort: CodexReasoningEffort;
+  codexImagegenServiceTier: Exclude<CodexServiceTier, 'standard'> | null;
   codexMaxConcurrentJobs: number;
 }
 
@@ -30,6 +70,7 @@ export interface Job {
   projectId: string;
   kind: JobKind;
   status: JobStatus;
+  execution: JobExecutionOptions | null;
   originalPrompt: string;
   expandedPrompt: string | null;
   finalPromptUsed: string;
@@ -37,6 +78,43 @@ export interface Job {
   createdAt: string;
   updatedAt: string;
   completedAt: string | null;
+}
+
+export interface JobEventRecord {
+  id: number;
+  jobId: string | null;
+  type: string;
+  message: string;
+  metadata: Record<string, unknown> | null;
+  createdAt: string;
+}
+
+export interface CodexTurnRecord {
+  id: string;
+  jobId: string;
+  codexThreadId: string | null;
+  codexTurnId: string | null;
+  transcriptPath: string | null;
+  status: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface JobTranscriptEntry {
+  id: string;
+  kind: 'reasoning' | 'message' | 'tool' | 'event';
+  label: string;
+  text: string;
+  source: string;
+  timestamp: string | null;
+  raw: Record<string, unknown> | null;
+}
+
+export interface JobDetailResponse {
+  job: Job;
+  events: JobEventRecord[];
+  turn: CodexTurnRecord | null;
+  transcriptEntries: JobTranscriptEntry[];
 }
 
 export interface Asset {
@@ -159,6 +237,7 @@ export interface CreateJobRequest {
   projectId?: string;
   kind: JobKind;
   prompt: string;
+  execution?: JobExecutionOptions | null;
   references?: {
     name: string;
     dataUrl: string;

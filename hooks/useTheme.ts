@@ -1,7 +1,29 @@
 import { useCallback, useEffect } from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
-const STORAGE_KEY = 'chorita-theme-index';
+const STORAGE_KEY = 'codex-studio-theme-index';
+const LEGACY_STORAGE_KEY = 'chorita-theme-index';
+
+function parseStoredPaletteIndex(value: string | null) {
+  if (!value) return null;
+
+  try {
+    const parsed = JSON.parse(value);
+    return typeof parsed === 'number' && Number.isFinite(parsed) ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+function readStoredPaletteIndex() {
+  if (typeof window === 'undefined') return 0;
+
+  return (
+    parseStoredPaletteIndex(window.localStorage.getItem(STORAGE_KEY)) ??
+    parseStoredPaletteIndex(window.localStorage.getItem(LEGACY_STORAGE_KEY)) ??
+    0
+  );
+}
 
 const PALETTES = [
   {
@@ -151,17 +173,21 @@ const PALETTES = [
 ];
 
 export const useTheme = () => {
-  const [currentPaletteIndex, setCurrentPaletteIndex] = useLocalStorage<number>(STORAGE_KEY, 0);
+  const [currentPaletteIndex, setCurrentPaletteIndex] = useLocalStorage<number>(
+    STORAGE_KEY,
+    readStoredPaletteIndex(),
+  );
 
   const applyTheme = useCallback(
     (index: number) => {
-      const palette = PALETTES[index];
+      const safeIndex = ((index % PALETTES.length) + PALETTES.length) % PALETTES.length;
+      const palette = PALETTES[safeIndex];
       const root = document.documentElement;
 
       Object.entries(palette.colors).forEach(([shade, value]) => {
         root.style.setProperty(`--accent-${shade}`, value);
       });
-      setCurrentPaletteIndex(index);
+      setCurrentPaletteIndex(safeIndex);
     },
     [setCurrentPaletteIndex],
   );
@@ -173,6 +199,16 @@ export const useTheme = () => {
       return nextIndex;
     });
   }, [applyTheme, setCurrentPaletteIndex]);
+
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem(LEGACY_STORAGE_KEY) !== null) {
+        window.localStorage.removeItem(LEGACY_STORAGE_KEY);
+      }
+    } catch {
+      // noop: theme persistence is non-critical
+    }
+  }, []);
 
   useEffect(() => {
     applyTheme(currentPaletteIndex);

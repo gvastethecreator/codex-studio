@@ -3,10 +3,10 @@ import { BackgroundConfig } from '../types';
 import { MODELS } from '../constants';
 import { runtimeLogger } from '../utils/runtimeLogger';
 
-// --- CONFIGURACIÓN DEL FONDO LÍQUIDO (MATRIX) ---
-// Modifica estos valores para cambiar la apariencia del fondo
+// --- LIQUID BACKGROUND CONFIGURATION (MATRIX) ---
+// Modify these values to change the background appearance
 const LIQUID_CONFIG = {
-  // Configuración por estado (reposo vs generando)
+  // State-based configuration (idle vs generating)
   state: {
     idle: {
       speedMultiplier: 1.0,
@@ -19,22 +19,22 @@ const LIQUID_CONFIG = {
       transition: 'opacity 1s ease',
     },
   },
-  // Configuración específica por modelo (Colores RGB normalizados 0.0 - 1.0)
-  // Este color se añade como un brillo extra cuando el modelo está generando
+  // Model-specific configuration (Normalized RGB colors 0.0 - 1.0)
+  // This color is added as extra glow when the model is generating
   models: {
     [MODELS.CODEX_IMAGEGEN]: { tint: [0.1, 0.5, 0.45] },
-    default: { tint: [0.1, 0.3, 0.5] }, // Azul (por defecto)
+    default: { tint: [0.1, 0.3, 0.5] }, // Blue (default)
   },
-  // Colores base (en formato código GLSL vec3)
+  // Base colors (in GLSL vec3 code format)
   colors: {
-    darkest: 'vec3(0.01, 0.01, 0.015)', // Color más oscuro (fondo profundo)
+    darkest: 'vec3(0.01, 0.01, 0.015)', // Darkest color (deep background)
     midTone: 'vec3(0.15, 0.15, 0.18)', // Tono medio del fluido
     highlight: 'vec3(0.40, 0.40, 0.45)', // Brillos del fluido
   },
   // Caracteres estilo Matrix
   matrix: {
-    scaleX: '3.0', // Escala X de los píxeles del caracter
-    scaleY: '5.0', // Escala Y de los píxeles del caracter
+    scaleX: '3.0', // Character pixel scale X
+    scaleY: '5.0', // Character pixel scale Y
     charWidth: '0.3', // Ancho del caracter en su celda
     charHeight: '0.5', // Alto del caracter en su celda
     intensityBase: '0.3', // Intensidad base de brillo
@@ -42,9 +42,9 @@ const LIQUID_CONFIG = {
   },
   // Comportamiento del fluido
   fluid: {
-    mouseDistortion: '0.1', // Cuánto distorsiona el ratón el fluido
-    charDistortion: '0.4', // Cuánto distorsionan los caracteres el fluido
-    mouseRadius: '0.5', // Radio de efecto del ratón
+    mouseDistortion: '0.1', // How much the mouse distorts the fluid
+    charDistortion: '0.4', // How much characters distort the fluid
+    mouseRadius: '0.5', // Mouse effect radius
   },
 };
 
@@ -52,6 +52,8 @@ const DEFAULT_BACKGROUND_CONFIG = {
   density: 0.1,
   speed: 0.0005,
 };
+
+const BACKGROUND_RENDER_SCALE = 0.5;
 
 interface LiquidBackgroundProps {
   isGenerating?: boolean;
@@ -326,8 +328,8 @@ export default function LiquidBackground({
     window.addEventListener('mousemove', handleMouseMove);
 
     const resize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = Math.max(1, Math.floor(window.innerWidth * BACKGROUND_RENDER_SCALE));
+      canvas.height = Math.max(1, Math.floor(window.innerHeight * BACKGROUND_RENDER_SCALE));
       gl.viewport(0, 0, canvas.width, canvas.height);
       gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
     };

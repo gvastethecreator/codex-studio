@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
+  BrainCircuit,
   Clock,
   CheckCircle2,
   XCircle,
@@ -23,16 +24,35 @@ interface QueuePanelProps {
   onClearCompleted: () => void;
   isResting: boolean;
   serverJobs?: StudioJob[];
+  selectedJobId?: string | null;
+  onInspectJob: (jobId: string) => void;
+  onCancelServerJob: (jobId: string) => void;
+  onClose: () => void;
 }
 
 export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
-  ({ jobs, onRetry, onCancel, onRemove, onClearCompleted, isResting, serverJobs = [] }) => {
+  ({
+    jobs,
+    onRetry,
+    onCancel,
+    onRemove,
+    onClearCompleted,
+    isResting,
+    serverJobs = [],
+    selectedJobId,
+    onInspectJob,
+    onCancelServerJob,
+    onClose,
+  }) => {
+    const [isLocalQueueOpen, setIsLocalQueueOpen] = useState(true);
+    const [isServerQueueOpen, setIsServerQueueOpen] = useState(true);
     const pendingCount = jobs.filter((j) => j.status === "pending").length;
     const processingCount = jobs.filter((j) => j.status === "processing").length;
     const completedCount = jobs.filter((j) => j.status === "completed").length;
     const failedCount = jobs.filter(
       (j) => j.status === "failed" || j.status === "cancelled",
     ).length;
+    const totalJobs = jobs.length + serverJobs.length;
 
     return (
       <div className="flex h-full w-80 flex-col border-l border-white/10 bg-black/40 backdrop-blur-xl">
@@ -45,19 +65,28 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <div>
               <h3 className="text-sm font-semibold text-white/90">Generation Queue</h3>
               <p className="text-[10px] font-medium uppercase tracking-wider text-white/40">
-                {jobs.length} total jobs • 3 max concurrent
+                {totalJobs} visible jobs • 3 local concurrent
               </p>
             </div>
           </div>
-          {(completedCount > 0 || jobs.some((j) => j.status === "cancelled")) && (
+          <div className="flex items-center gap-1">
+            {(completedCount > 0 || jobs.some((j) => j.status === "cancelled")) && (
+              <button
+                onClick={onClearCompleted}
+                className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
+                title="Clear completed"
+              >
+                <Trash2 size={16} />
+              </button>
+            )}
             <button
-              onClick={onClearCompleted}
+              onClick={onClose}
               className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
-              title="Clear completed"
+              title="Collapse queue"
             >
-              <Trash2 size={16} />
+              <ChevronRight size={16} />
             </button>
-          )}
+          </div>
         </div>
 
         {/* Stats Bar */}
@@ -87,55 +116,125 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
 
         {/* Job List */}
         <div className="custom-scrollbar flex-1 space-y-2 overflow-y-auto p-2">
-          {serverJobs.length > 0 && (
-            <div className="mb-3 rounded-xl border border-white/10 bg-white/[0.03] p-2">
-              <div className="mb-2 flex items-center justify-between px-1">
-                <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
-                  Persistent Backend
-                </span>
+          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-2">
+            <button
+              onClick={() => setIsServerQueueOpen((value) => !value)}
+              className="mb-2 flex w-full items-center justify-between rounded-lg px-1 py-1 text-left transition-colors hover:bg-white/5"
+            >
+              <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
+                Backend Session Jobs
+              </span>
+              <div className="flex items-center gap-2">
                 <span className="text-[9px] font-bold text-accent-400">{serverJobs.length}</span>
+                <ChevronRight
+                  size={14}
+                  className={cn('text-zinc-500 transition-transform', isServerQueueOpen && 'rotate-90')}
+                />
               </div>
-              <div className="space-y-2">
-                {serverJobs.slice(0, 10).map((job) => (
-                  <ServerJobItem key={job.id} job={job} />
-                ))}
+            </button>
+            <AnimatePresence initial={false}>
+              {isServerQueueOpen && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  className="overflow-hidden"
+                >
+                  <div className="space-y-2">
+                    {serverJobs.length > 0 ? (
+                      serverJobs.slice(0, 20).map((job) => (
+                        <ServerJobItem
+                          key={job.id}
+                          job={job}
+                          isSelected={selectedJobId === job.id}
+                          onInspect={() => onInspectJob(job.id)}
+                          onCancel={() => onCancelServerJob(job.id)}
+                        />
+                      ))
+                    ) : (
+                      <div className="rounded-lg border border-dashed border-white/5 bg-black/20 px-3 py-3 text-[10px] text-zinc-600">
+                        No persistent backend jobs yet.
+                      </div>
+                    )}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-2">
+            <button
+              onClick={() => setIsLocalQueueOpen((value) => !value)}
+              className="mb-2 flex w-full items-center justify-between rounded-lg px-1 py-1 text-left transition-colors hover:bg-white/5"
+            >
+              <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
+                Browser Queue
+              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-[9px] font-bold text-accent-400">{jobs.length}</span>
+                <ChevronRight
+                  size={14}
+                  className={cn('text-zinc-500 transition-transform', isLocalQueueOpen && 'rotate-90')}
+                />
               </div>
-            </div>
-          )}
-          <AnimatePresence initial={false}>
-            {jobs.length === 0 ? (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="flex h-full flex-col items-center justify-center p-8 text-center opacity-20"
-              >
-                <Layers size={48} className="mb-4" />
-                <p className="text-sm font-medium">Queue is empty</p>
-                <p className="text-xs">Jobs will appear here</p>
-              </motion.div>
-            ) : (
-              [...jobs]
-                .reverse()
-                .map((job) => (
-                  <JobItem
-                    key={job.id}
-                    job={job}
-                    onRetry={() => onRetry(job.id)}
-                    onCancel={() => onCancel(job.id)}
-                    onRemove={() => onRemove(job.id)}
-                  />
-                ))
-            )}
-          </AnimatePresence>
+            </button>
+            <AnimatePresence initial={false}>
+              {isLocalQueueOpen && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  className="overflow-hidden"
+                >
+                  <div className="space-y-2">
+                    <AnimatePresence initial={false}>
+                      {jobs.length === 0 && serverJobs.length === 0 ? (
+                        <motion.div
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          className="flex h-full flex-col items-center justify-center p-8 text-center opacity-20"
+                        >
+                          <Layers size={48} className="mb-4" />
+                          <p className="text-sm font-medium">Queue is empty</p>
+                          <p className="text-xs">Jobs will appear here</p>
+                        </motion.div>
+                      ) : jobs.length === 0 ? (
+                        <div className="rounded-lg border border-dashed border-white/5 bg-black/20 px-3 py-3 text-[10px] text-zinc-600">
+                          No browser-side queued items.
+                        </div>
+                      ) : (
+                        [...jobs].reverse().map((job) => (
+                          <JobItem
+                            key={job.id}
+                            job={job}
+                            isSelected={selectedJobId === job.serverJobId}
+                            onInspect={job.serverJobId ? () => onInspectJob(job.serverJobId!) : undefined}
+                            onRetry={() => onRetry(job.id)}
+                            onCancel={() => onCancel(job.id)}
+                            onRemove={() => onRemove(job.id)}
+                          />
+                        ))
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         </div>
       </div>
     );
   },
 );
 
-const ServerJobItem: React.FC<{ job: StudioJob }> = ({ job }) => {
+const ServerJobItem: React.FC<{
+  job: StudioJob;
+  isSelected: boolean;
+  onInspect: () => void;
+  onCancel: () => void;
+}> = ({ job, isSelected, onInspect, onCancel }) => {
   const isActive =
-    job.status === "queued" || job.status === "running" || job.status === "needs_review";
+    job.status === "queued" || job.status === "running";
   const statusColor =
     job.status === "completed"
       ? "text-emerald-400"
@@ -144,7 +243,15 @@ const ServerJobItem: React.FC<{ job: StudioJob }> = ({ job }) => {
         : "text-accent-400";
 
   return (
-    <div className="rounded-lg border border-white/5 bg-black/20 p-2">
+    <button
+      onClick={onInspect}
+      className={cn(
+        'w-full rounded-lg border p-2 text-left transition-colors',
+        isSelected
+          ? 'border-accent-500/30 bg-accent-500/10'
+          : 'border-white/5 bg-black/20 hover:border-white/10 hover:bg-white/5',
+      )}
+    >
       <div className="flex items-start gap-2">
         {isActive ? (
           <Loader2 size={13} className="mt-0.5 shrink-0 animate-spin text-accent-400" />
@@ -162,6 +269,7 @@ const ServerJobItem: React.FC<{ job: StudioJob }> = ({ job }) => {
               {job.status}
             </span>
             <span className="text-[9px] text-white/25">{job.kind}</span>
+            {job.execution?.model ? <span className="text-[9px] text-zinc-500">{job.execution.model}</span> : null}
           </div>
           {job.error && (
             <p className="mt-1 rounded border border-rose-500/10 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
@@ -169,8 +277,23 @@ const ServerJobItem: React.FC<{ job: StudioJob }> = ({ job }) => {
             </p>
           )}
         </div>
+        <div className="flex shrink-0 flex-col items-end gap-1">
+          <BrainCircuit size={13} className="text-zinc-500" />
+          {isActive ? (
+            <button
+              onClick={(event) => {
+                event.stopPropagation();
+                onCancel();
+              }}
+              className="rounded-lg p-1.5 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400"
+              title="Cancel backend job"
+            >
+              <XCircle size={13} />
+            </button>
+          ) : null}
+        </div>
       </div>
-    </div>
+    </button>
   );
 };
 
@@ -183,10 +306,12 @@ const StatItem = ({ label, value, color }: { label: string; value: number; color
 
 const JobItem: React.FC<{
   job: QueueJob;
+  isSelected: boolean;
+  onInspect?: () => void;
   onRetry: () => void;
   onCancel: () => void;
   onRemove: () => void;
-}> = ({ job, onRetry, onCancel, onRemove }) => {
+}> = ({ job, isSelected, onInspect, onRetry, onCancel, onRemove }) => {
   const statusConfig: Record<
     string,
     { icon: any; color: string; bg: string; border: string; spin?: boolean }
@@ -229,10 +354,12 @@ const JobItem: React.FC<{
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, scale: 0.95 }}
       className={cn(
-        "group relative p-3 rounded-xl border transition-all duration-300",
+        "group relative rounded-xl border p-3 transition-all duration-300",
         config.bg,
-        config.border,
+        isSelected ? 'border-accent-500/30 ring-1 ring-accent-500/20' : config.border,
+        onInspect && 'cursor-pointer hover:border-white/15',
       )}
+      onClick={onInspect}
     >
       <div className="flex items-start gap-3">
         <div className={cn("mt-0.5", config.color)}>
@@ -254,6 +381,7 @@ const JobItem: React.FC<{
                 minute: "2-digit",
               })}
             </span>
+            {job.serverJobId ? <span className="text-[10px] text-accent-400">#{job.serverJobId.slice(0, 8)}</span> : null}
           </div>
 
           {job.error && (
@@ -261,12 +389,22 @@ const JobItem: React.FC<{
               {job.error}
             </p>
           )}
+
+          {job.serverJobId ? (
+            <div className="mt-2 flex items-center gap-2 text-[9px] font-bold uppercase tracking-wider text-zinc-500">
+              <BrainCircuit size={11} className="text-accent-400" />
+              Click to inspect backend transcript
+            </div>
+          ) : null}
         </div>
 
         <div className="flex flex-col gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
           {(job.status === "processing" || job.status === "pending") && (
             <button
-              onClick={onCancel}
+              onClick={(event) => {
+                event.stopPropagation();
+                onCancel();
+              }}
               className="p-1.5 hover:bg-white/10 rounded-lg text-white/40 hover:text-rose-400 transition-colors"
               title="Cancel"
             >
@@ -275,7 +413,10 @@ const JobItem: React.FC<{
           )}
           {(job.status === "failed" || job.status === "cancelled") && (
             <button
-              onClick={onRetry}
+              onClick={(event) => {
+                event.stopPropagation();
+                onRetry();
+              }}
               className="p-1.5 hover:bg-white/10 rounded-lg text-white/40 hover:text-accent-400 transition-colors"
               title="Retry"
             >
@@ -283,7 +424,10 @@ const JobItem: React.FC<{
             </button>
           )}
           <button
-            onClick={onRemove}
+            onClick={(event) => {
+              event.stopPropagation();
+              onRemove();
+            }}
             className="p-1.5 hover:bg-white/10 rounded-lg text-white/40 hover:text-rose-400 transition-colors"
             title="Remove"
           >

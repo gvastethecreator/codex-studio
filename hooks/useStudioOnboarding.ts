@@ -15,7 +15,7 @@ interface UseStudioOnboardingProps {
 }
 
 export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudioOnboardingProps) {
-  const [hasCompletedOnboarding, setHasCompletedOnboarding] = useLocalStorage(
+  const [hasSeenOnboarding, setHasSeenOnboarding] = useLocalStorage(
     'studio-onboarding-complete',
     false,
   );
@@ -42,7 +42,7 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
       const message =
         refreshError instanceof Error
           ? refreshError.message
-          : 'No se pudo consultar el backend local';
+          : 'Could not query the local backend';
       setError(message);
       log(`Studio onboarding health failed: ${message}`);
     } finally {
@@ -51,11 +51,12 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
   }, [log]);
 
   useEffect(() => {
-    if (!hasCompletedOnboarding && shouldAutoOpen) {
+    if (!hasSeenOnboarding && shouldAutoOpen) {
+      setHasSeenOnboarding(true);
       setIsOpen(true);
       void refreshHealth();
     }
-  }, [hasCompletedOnboarding, shouldAutoOpen, refreshHealth]);
+  }, [hasSeenOnboarding, refreshHealth, setHasSeenOnboarding, shouldAutoOpen]);
 
   const openOnboarding = useCallback(() => {
     setIsOpen(true);
@@ -67,10 +68,9 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
   }, []);
 
   const completeOnboarding = useCallback(() => {
-    setHasCompletedOnboarding(true);
+    setHasSeenOnboarding(true);
     setIsOpen(false);
-    addToast('Onboarding inicial completado', 'success');
-  }, [addToast, setHasCompletedOnboarding]);
+  }, [setHasSeenOnboarding]);
 
   const ensureAppServer = useCallback(async () => {
     setIsStartingAppServer(true);
@@ -78,12 +78,12 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
       const result = await startStudioAppServer();
       await refreshHealth();
       addToast(
-        result.running ? 'codex app-server iniciado' : 'No se pudo iniciar codex app-server',
+        result.running ? 'codex app-server started' : 'Could not start codex app-server',
         result.running ? 'success' : 'warning',
       );
     } catch (startError) {
       const message =
-        startError instanceof Error ? startError.message : 'No se pudo iniciar codex app-server';
+        startError instanceof Error ? startError.message : 'Could not start codex app-server';
       addToast(message, 'error');
       log(`Studio onboarding failed to start app-server: ${message}`);
     } finally {
@@ -97,7 +97,6 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
     completeOnboarding,
     ensureAppServer,
     error,
-    hasCompletedOnboarding,
     health,
     isChecking,
     isDesktopRuntime,

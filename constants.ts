@@ -4,6 +4,10 @@ export const MODELS = {
   CODEX_IMAGEGEN: 'codex-imagegen',
 } as const;
 
+export const DEFAULT_CODEX_EXECUTION_MODEL = 'gpt-5.4-mini';
+export const DEFAULT_CODEX_EXECUTION_REASONING_EFFORT = 'low';
+export const DEFAULT_CODEX_EXECUTION_SPEED = 'standard' as const;
+
 const DEFAULT_ASPECT_RATIO: AspectRatio = '1:1';
 
 export const ALL_RATIOS: AspectRatio[] = ['1:1', '3:2', '2:3'];
@@ -33,6 +37,9 @@ export const DEFAULT_GENERATION_CONFIG = {
   negativePrompt: '',
   temperature: 0.8,
   model: MODELS.CODEX_IMAGEGEN,
+  executionModel: DEFAULT_CODEX_EXECUTION_MODEL,
+  executionReasoningEffort: DEFAULT_CODEX_EXECUTION_REASONING_EFFORT,
+  executionSpeed: DEFAULT_CODEX_EXECUTION_SPEED,
   batchCount: 1,
   useThinkingAndSearch: false,
 };

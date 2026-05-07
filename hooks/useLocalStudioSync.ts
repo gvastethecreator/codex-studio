@@ -169,7 +169,7 @@ export function useLocalStudioSync({
   }, [log, mergeBatches]);
 
   const recoverOrphanedBatches = useCallback(async () => {
-    addToast('Iniciando Deep Scan Recovery...', 'info');
+    addToast('Starting Deep Scan Recovery...', 'info');
 
     try {
       const entries = await getAllEntries();
@@ -223,13 +223,13 @@ export function useLocalStudioSync({
 
       addToast(
         uniqueRecovered.length > 0
-          ? `¡Éxito! Se recuperaron ${uniqueRecovered.length} lotes.`
-          : 'Deep Scan completado: No se encontraron nuevos fragmentos.',
+          ? `Success! Recovered ${uniqueRecovered.length} batches.`
+          : 'Deep Scan complete: No new fragments found.',
         uniqueRecovered.length > 0 ? 'success' : 'info',
       );
     } catch (error) {
       log(`Deep scan failed: ${error instanceof Error ? error.message : String(error)}`);
-      addToast('Error durante el Deep Scan', 'error');
+      addToast('Error during Deep Scan', 'error');
     }
   }, [addToast, log, mergeBatches]);
 
@@ -238,19 +238,19 @@ export function useLocalStudioSync({
       const health = await getStudioHealth();
       const isReady = health.ok && health.checks.onboardingReady;
       const message = isReady
-        ? 'Sesion local Codex disponible'
+        ? 'Local Codex session available'
         : !health.checks.codexReady
-          ? 'Codex CLI no disponible todavia'
+          ? 'Codex CLI not available yet'
           : !health.appServer.running
-            ? 'Backend local disponible, app-server no activo'
-            : 'La biblioteca local necesita atencion';
+            ? 'Local backend available, app-server not active'
+            : 'The local library needs attention';
       addToast(message, isReady ? 'success' : 'error');
       log(
         `Codex health: cli=${health.codexCli.available ? health.codexCli.version || 'available' : 'missing'}, appServer=${health.appServer.running ? health.appServer.wsUrl : 'stopped'}, libraryReady=${health.checks.libraryReady}`,
       );
     } catch (error) {
       addToast(
-        error instanceof Error ? error.message : 'No se pudo verificar Codex local',
+        error instanceof Error ? error.message : 'Could not verify local Codex',
         'error',
       );
     }

@@ -11,7 +11,7 @@ Este roadmap describe la direccion del producto mientras preparamos una version 
 
 ## Ahora
 
-- Mejorar onboarding para usuarios nuevos de Codex Image Studio.
+- Mejorar onboarding para usuarios nuevos de Codex Studio.
 - Pulir README, troubleshooting y documentacion de contribucion.
 - Reducir lenguaje y affordances demasiado internos en la UI.
 - Hacer mas clara la separacion entre UI, backend local y biblioteca externa.

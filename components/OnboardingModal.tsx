@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from 'motion/react';
 import {
   Activity,
   ArrowRight,
-  ExternalLink,
   HardDrive,
   Play,
   RefreshCw,
@@ -33,18 +32,20 @@ type StepTone = 'ready' | 'warning' | 'error' | 'pending';
 function StepRow({
   detail,
   icon,
+  meta,
   title,
   tone,
 }: {
   detail: string;
   icon: React.ReactNode;
+  meta?: string;
   title: string;
   tone: StepTone;
 }) {
   const toneClasses = {
-    ready: 'border-emerald-500/20 bg-emerald-500/5 text-emerald-300',
-    warning: 'border-amber-500/20 bg-amber-500/5 text-amber-300',
-    error: 'border-red-500/20 bg-red-500/5 text-red-300',
+    ready: 'border-emerald-500/20 bg-emerald-500/6 text-emerald-200',
+    warning: 'border-amber-500/20 bg-amber-500/6 text-amber-200',
+    error: 'border-red-500/20 bg-red-500/6 text-red-200',
     pending: 'border-white/10 bg-white/5 text-zinc-300',
   } as const;
 
@@ -56,19 +57,22 @@ function StepRow({
   } as const;
 
   return (
-    <div className={`rounded-2xl border p-4 ${toneClasses[tone]}`}>
+    <div className={`rounded-2xl border p-3.5 sm:p-4 ${toneClasses[tone]}`}>
       <div className="flex items-start gap-3">
-        <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-black/20">
+        <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-black/20">
           {icon}
         </div>
         <div className="min-w-0 flex-1">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <span className={`h-2.5 w-2.5 rounded-full ${dotClasses[tone]}`} />
             <p className="text-[11px] font-black uppercase tracking-widest text-white">{title}</p>
           </div>
-          <p className="mt-2 wrap-break-word font-mono text-[11px] leading-relaxed text-current/85">
-            {detail}
-          </p>
+          <p className="mt-2 wrap-break-word text-sm leading-relaxed text-current/90">{detail}</p>
+          {meta ? (
+            <p className="mt-1 wrap-break-word font-mono text-[11px] leading-relaxed text-current/70">
+              {meta}
+            </p>
+          ) : null}
         </div>
       </div>
     </div>
@@ -89,241 +93,240 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   onRefresh,
   onStartAppServer,
 }) => {
-  if (!isOpen) return null;
-
   const backendReachable = !error && Boolean(health);
   const canStartAppServer = backendReachable && !health?.appServer.running;
   const missingFolders = health?.library.missingFolders ?? [];
+  const runtimeLabel = isDesktopRuntime ? 'Desktop runtime' : 'Web runtime';
   const libraryDetail = !backendReachable
-    ? 'La ruta de biblioteca se mostrara cuando el health-check responda.'
+    ? 'Waiting for health-check response.'
     : health?.checks.libraryReady
-      ? `${health.libraryDir} (escritura OK)`
-      : `${health?.libraryDir || 'ruta no informada'}${missingFolders.length > 0 ? ` · faltan: ${missingFolders.join(', ')}` : ''}${health?.library.writable ? '' : ' · sin permiso de escritura'}`;
+      ? 'Ready for read and write.'
+      : missingFolders.length > 0
+        ? `Missing folders: ${missingFolders.join(', ')}`
+        : health?.library.writable
+          ? 'Path detected, but checks are missing.'
+          : 'The path does not have write permission.';
   const appServerDetail = !backendReachable
-    ? 'El backend local debe responder antes de iniciar app-server.'
+    ? 'Local backend required first.'
     : health?.appServer.running
-      ? `Escuchando en ${health.appServer.wsUrl}${health.appServer.pid ? ` · pid ${health.appServer.pid}` : ''}`
+      ? 'Running and ready to generate.'
       : health?.appServer.lastStartError
-        ? `No arranco: ${health.appServer.lastStartError}`
-        : 'Todavia no esta corriendo. Puedes iniciarlo desde aqui.';
+        ? 'Failed to start correctly.'
+        : 'Not running yet.';
+  const cliDetail = !backendReachable
+    ? 'Waiting for local backend.'
+    : health?.codexCli.available
+      ? `Available${health.codexCli.version ? ` · ${health.codexCli.version}` : ''}`
+      : 'Install or re-authenticate Codex CLI.';
+  const statusMessage = isChecking
+    ? 'Updating studio status...'
+    : isReady
+      ? 'All set to generate your first job.'
+      : error
+        ? 'Could not query the local backend.'
+        : 'Some checks are still missing before generating.';
+  const quickHint = isReady
+    ? 'You can reopen this guide from Help anytime.'
+    : canStartAppServer
+      ? 'If everything else is ready, start the app-server from here.'
+      : 'Fix what is missing and then refresh the status.';
+  const commandHints = [
+    'bun run studio:init',
+    'bun run dev',
+    !health?.codexCli.available ? 'codex login' : null,
+  ].filter(Boolean) as string[];
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-120 flex items-center justify-center p-4 md:p-8">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          onClick={onClose}
-          className="absolute inset-0 bg-black/80 backdrop-blur-md"
-        />
+      {isOpen ? (
+        <div className="fixed inset-0 z-120 p-3 sm:p-6">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="absolute inset-0 bg-black/80 backdrop-blur-md"
+          />
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.96, y: 20 }}
-          className="relative z-10 flex w-full max-w-4xl flex-col overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 shadow-2xl"
-        >
-          <div className="flex items-start justify-between gap-4 border-b border-white/5 bg-white/3 px-6 py-5 md:px-8">
-            <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent-500/10 text-accent-400">
-                <Sparkles size={22} />
-              </div>
-              <div>
-                <div className="flex flex-wrap items-center gap-2">
-                  <h2 className="text-lg font-black uppercase tracking-widest text-white md:text-xl">
-                    Primer arranque
-                  </h2>
-                  <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-zinc-400">
-                    {isDesktopRuntime ? 'Desktop runtime' : 'Web runtime'}
-                  </span>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.96, y: 20 }}
+            className="relative z-10 mx-auto flex h-full max-h-[calc(100vh-1.5rem)] w-full max-w-4xl flex-col overflow-hidden rounded-[28px] border border-white/10 bg-zinc-950/95 shadow-2xl sm:max-h-[min(88vh,860px)]"
+          >
+            <div className="flex items-start justify-between gap-4 border-b border-white/5 bg-white/3 px-4 py-4 sm:px-6 sm:py-5">
+              <div className="flex min-w-0 items-start gap-3 sm:gap-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-accent-500/10 text-accent-400 sm:h-12 sm:w-12">
+                  <Sparkles size={20} />
                 </div>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-400">
-                  Verifica que el studio local pueda hablar con Codex, que la biblioteca este
-                  accesible y que el runtime actual quede listo para una futura build Electron sin
-                  reescribir el renderer.
-                </p>
+                <div className="min-w-0">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h2 className="text-base font-black uppercase tracking-widest text-white sm:text-lg">
+                      First Launch
+                    </h2>
+                    <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-zinc-400">
+                      {runtimeLabel}
+                    </span>
+                  </div>
+                  <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-400">
+                    Check the minimum setup to get the studio ready. You can reopen this guide from
+                    Help later.
+                  </p>
+                </div>
               </div>
+
+              <button
+                onClick={onClose}
+                className="rounded-xl p-2 text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
+              >
+                <X size={18} />
+              </button>
             </div>
 
-            <button
-              onClick={onClose}
-              className="rounded-xl p-2 text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
-            >
-              <X size={18} />
-            </button>
-          </div>
+            <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4 sm:px-6 sm:py-5">
+              <div className="grid gap-4 xl:grid-cols-[minmax(0,1.15fr)_minmax(280px,0.85fr)]">
+                <div className="space-y-4">
+                  {error ? (
+                    <div className="rounded-2xl border border-red-500/20 bg-red-500/6 p-4 sm:p-5">
+                      <p className="text-[11px] font-black uppercase tracking-widest text-red-300">
+                        Local backend unavailable
+                      </p>
+                      <p className="mt-2 text-sm leading-relaxed text-red-100/85">{error}</p>
+                    </div>
+                  ) : null}
 
-          <div className="grid gap-6 p-6 md:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.9fr)] md:px-8 md:py-7">
-            <div className="space-y-4">
-              {error && (
-                <div className="rounded-2xl border border-red-500/20 bg-red-500/5 p-4">
-                  <p className="text-[11px] font-black uppercase tracking-widest text-red-300">
-                    No pude consultar el backend local
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-red-100/85">{error}</p>
-                  <div className="mt-3 rounded-xl bg-black/20 p-3 font-mono text-[11px] leading-relaxed text-zinc-300">
-                    <div>bun run studio:init</div>
-                    <div>bun run dev</div>
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    <StepRow
+                      icon={<Activity size={16} />}
+                      title="Backend local"
+                      tone={backendReachable ? 'ready' : error ? 'error' : 'pending'}
+                      detail={backendReachable ? 'Connected and responding.' : 'Not responding yet.'}
+                      meta={apiBase}
+                    />
+                    <StepRow
+                      icon={<Terminal size={16} />}
+                      title="Codex CLI"
+                      tone={
+                        !backendReachable
+                          ? 'pending'
+                          : health?.codexCli.available
+                            ? 'ready'
+                            : 'warning'
+                      }
+                      detail={cliDetail}
+                      meta={backendReachable ? health?.codexCli.command || 'codex --version' : undefined}
+                    />
+                    <StepRow
+                      icon={<Activity size={16} />}
+                      title="codex app-server"
+                      tone={
+                        !backendReachable
+                          ? 'pending'
+                          : health?.appServer.running
+                            ? 'ready'
+                            : 'warning'
+                      }
+                      detail={appServerDetail}
+                      meta={
+                        health?.appServer.running
+                          ? `${health.appServer.wsUrl}${health.appServer.pid ? ` · pid ${health.appServer.pid}` : ''}`
+                          : health?.appServer.lastStartError || undefined
+                      }
+                    />
+                    <StepRow
+                      icon={<HardDrive size={16} />}
+                      title="Local Library"
+                      tone={!backendReachable ? 'pending' : health?.checks.libraryReady ? 'ready' : 'warning'}
+                      detail={libraryDetail}
+                      meta={health?.libraryDir || 'path not set'}
+                    />
                   </div>
                 </div>
-              )}
 
-              <div className="grid gap-3">
-                <StepRow
-                  icon={<Activity size={16} />}
-                  title="Backend local"
-                  tone={backendReachable ? 'ready' : error ? 'error' : 'pending'}
-                  detail={
-                    backendReachable
-                      ? `Disponible en ${apiBase}`
-                      : `Pendiente: necesito poder consultar ${apiBase}`
-                  }
-                />
-                <StepRow
-                  icon={<Terminal size={16} />}
-                  title="Codex CLI"
-                  tone={
-                    !backendReachable ? 'pending' : health?.codexCli.available ? 'ready' : 'warning'
-                  }
-                  detail={
-                    !backendReachable
-                      ? 'Primero necesito alcanzar el backend local.'
-                      : health?.codexCli.available
-                        ? `Detectado: ${health.codexCli.version || 'version no informada'} · ${health.codexCli.command}`
-                        : `Instala o reautentica Codex en esta maquina. Intento actual: ${health?.codexCli.command || 'codex --version'}`
-                  }
-                />
-                <StepRow
-                  icon={<Activity size={16} />}
-                  title="codex app-server"
-                  tone={
-                    !backendReachable ? 'pending' : health?.appServer.running ? 'ready' : 'warning'
-                  }
-                  detail={appServerDetail}
-                />
-                <StepRow
-                  icon={<HardDrive size={16} />}
-                  title="Biblioteca local"
-                  tone={!backendReachable ? 'pending' : health?.libraryDir ? 'ready' : 'warning'}
-                  detail={libraryDetail}
-                />
+                <div className="space-y-4">
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+                    <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
+                      Resumen
+                    </p>
+                    <p className="mt-2 text-sm leading-relaxed text-zinc-200">{statusMessage}</p>
+
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[11px] font-medium text-zinc-300">
+                        API {apiBase}
+                      </span>
+                      <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[11px] font-medium text-zinc-300">
+                        {health?.runtime.envLocalPresent ? '.env local OK' : '.env local missing'}
+                      </span>
+                      {health ? (
+                        <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[11px] font-medium text-zinc-300">
+                          HTTP {health.config.serverPort} · WS {health.config.codexWsPort}
+                        </span>
+                      ) : null}
+                    </div>
+                  </div>
+
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+                    <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
+                      Quick Actions
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {commandHints.map((command) => (
+                        <span
+                          key={command}
+                          className="rounded-full border border-white/10 bg-black/20 px-3 py-1 font-mono text-[11px] text-zinc-300"
+                        >
+                          {command}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-zinc-400">{quickHint}</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="space-y-4">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
-                  Checklist rapido
-                </p>
-                <ul className="mt-3 space-y-3 text-sm leading-relaxed text-zinc-300">
-                  <li>1. Instala Bun y Codex CLI.</li>
-                  <li>2. Ejecuta `bun run studio:init` la primera vez.</li>
-                  <li>3. Levanta `bun run dev` para UI + backend.</li>
-                  <li>4. Si falta `app-server`, inícialo desde este modal.</li>
-                </ul>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
-                  Siguiente paso
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-zinc-300">
+            <div className="border-t border-white/5 bg-black/20 px-4 py-4 sm:px-6 sm:py-5">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div className="text-xs leading-relaxed text-zinc-500">
                   {isReady
-                    ? 'Todo listo: escribe un prompt, añade referencias si quieres y dispara tu primer job local.'
-                    : 'Aunque la UI cargue, la generacion real no estara lista hasta que Codex CLI y app-server respondan bien.'}
-                </p>
-              </div>
-
-              {health && (
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                  <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
-                    Runtime actual
-                  </p>
-                  <div className="mt-3 space-y-2 font-mono text-[11px] leading-relaxed text-zinc-300">
-                    <div className="wrap-break-word">API base: {apiBase}</div>
-                    <div className="wrap-break-word">
-                      Env local:{' '}
-                      {health.runtime.envLocalPresent
-                        ? health.runtime.envLocalPath
-                        : `faltante (${health.runtime.envLocalPath})`}
-                    </div>
-                    <div>
-                      Puertos: HTTP {health.config.serverPort} · WS {health.config.codexWsPort}
-                    </div>
-                    <div>
-                      Runtime: Bun {health.runtime.bunVersion || 'desconocida'} · Node{' '}
-                      {health.runtime.nodeVersion}
-                    </div>
-                    <div>
-                      {health.runtime.platform} · {health.runtime.arch}
-                    </div>
-                  </div>
+                    ? 'Ready. The guide will remain available from Help.'
+                    : 'This guide will appear automatically only this once.'}
                 </div>
-              )}
 
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
-                  Pensando en Electron
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-zinc-300">
-                  El renderer ya puede resolver su API base desde runtime en lugar de asumir siempre
-                  `localhost`. Eso nos deja una costura limpia para que un preload de Electron
-                  inyecte configuracion sin abrir la puerta a Node en la UI.
-                </p>
-                <a
-                  href="https://www.electronjs.org/docs/latest/tutorial/security"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-accent-400 transition-colors hover:text-accent-300"
-                >
-                  Guia oficial de seguridad de Electron <ExternalLink size={12} />
-                </a>
+                <div className="flex flex-col gap-2 sm:flex-row">
+                  <button
+                    onClick={onRefresh}
+                    disabled={isChecking}
+                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/5 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-white transition-all hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-60"
+                  >
+                    <RefreshCw size={15} className={isChecking ? 'animate-spin' : ''} />
+                    Refresh
+                  </button>
+
+                  {canStartAppServer ? (
+                    <button
+                      onClick={onStartAppServer}
+                      disabled={isStartingAppServer}
+                      className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500/15 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-accent-300 transition-all hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      <Play size={15} />
+                      {isStartingAppServer ? 'Starting app-server' : 'Start app-server'}
+                    </button>
+                  ) : null}
+
+                  <button
+                    onClick={onComplete}
+                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-black transition-all hover:bg-accent-400"
+                  >
+                    <ArrowRight size={15} />
+                    {isReady ? 'Open Studio' : 'Got it'}
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="flex flex-col gap-3 border-t border-white/5 bg-black/20 px-6 py-5 md:flex-row md:items-center md:justify-between md:px-8">
-            <div className="text-xs text-zinc-500">
-              {isChecking
-                ? 'Actualizando estado del studio...'
-                : isReady
-                  ? 'Estado listo para generar.'
-                  : 'Aun faltan checks antes de la primera generacion.'}
-            </div>
-
-            <div className="flex flex-col gap-2 sm:flex-row">
-              <button
-                onClick={onRefresh}
-                disabled={isChecking}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/5 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-white transition-all hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-60"
-              >
-                <RefreshCw size={15} className={isChecking ? 'animate-spin' : ''} />
-                Actualizar estado
-              </button>
-
-              {canStartAppServer && (
-                <button
-                  onClick={onStartAppServer}
-                  disabled={isStartingAppServer}
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500/15 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-accent-300 transition-all hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:opacity-60"
-                >
-                  <Play size={15} />
-                  {isStartingAppServer ? 'Iniciando app-server' : 'Iniciar app-server'}
-                </button>
-              )}
-
-              <button
-                onClick={onComplete}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-black transition-all hover:bg-accent-400"
-              >
-                <ArrowRight size={15} />
-                {isReady ? 'Ir al studio' : 'Marcar guia como vista'}
-              </button>
-            </div>
-          </div>
-        </motion.div>
-      </div>
+          </motion.div>
+        </div>
+      ) : null}
     </AnimatePresence>
   );
 };

@@ -24,7 +24,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
             <div className="flex items-center gap-2">
               <Key size={14} className="text-accent-400" />
               <span className="text-[10px] font-black text-white uppercase tracking-widest">
-                Credenciales Pro
+                Pro Credentials
               </span>
             </div>
             <button onClick={onClose} className="text-zinc-500 hover:text-white transition-colors">
@@ -34,23 +34,23 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
 
           <div className="p-4 space-y-4">
             <p className="text-[10px] text-zinc-400 leading-relaxed">
-              Codex ImageGen usa tu sesion local de{' '}
-              <span className="text-accent-400 font-bold">Codex/ChatGPT</span>. No requiere API key;
-              el backend local supervisa codex app-server.
+              Codex ImageGen uses your local session of{' '}
+              <span className="text-accent-400 font-bold">Codex/ChatGPT</span>. No API key required;
+              the local backend supervises codex app-server.
             </p>
 
             <button
               onClick={onSelectKey}
               className="w-full h-9 bg-accent-600 hover:bg-accent-500 text-white text-[9px] font-black tracking-widest uppercase rounded-lg transition-all active:scale-95 shadow-lg shadow-accent-900/20"
             >
-              Verificar Sesion Local
+              Verify Local Session
             </button>
 
             <div className="pt-2 border-t border-white/5 flex flex-col gap-2">
               <div className="flex items-center gap-2 opacity-60">
                 <ShieldCheck size={12} className="text-accent-500" />
                 <span className="text-[8px] font-bold text-zinc-400 uppercase">
-                  Gestion Local por Codex
+                  Local Management by Codex
                 </span>
               </div>
               <a
@@ -59,7 +59,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-[8px] font-bold text-zinc-500 hover:text-white transition-colors"
               >
-                Documentacion app-server <ExternalLink size={10} />
+                app-server Documentation <ExternalLink size={10} />
               </a>
             </div>
           </div>

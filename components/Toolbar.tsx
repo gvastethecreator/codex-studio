@@ -30,6 +30,7 @@ import {
   Loader2,
 } from 'lucide-react';
 import { motion, AnimatePresence, Variants } from 'motion/react';
+import type { CodexModel, CodexModelCatalogResponse, CodexServiceTier } from '../packages/shared/src';
 import {
   ImageGenerationConfig,
   Attachment,
@@ -39,6 +40,16 @@ import {
 } from '../types';
 import Tooltip from './Tooltip';
 import KeyPopover from './KeyPopover';
+import {
+  formatCodexModelLabel,
+  formatCodexSpeedLabel,
+  getCodexReasoningOptions,
+  getCodexSpeedOptions,
+  normalizeCodexReasoningEffort,
+  normalizeCodexSpeed,
+  pickPreferredCodexModel,
+} from '../lib/codexExecution';
+import { getCodexModelCatalog } from '../services/localStudioService';
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 
 interface ToolbarProps {
@@ -112,6 +123,14 @@ const RATIOS = IMAGE_GEN_RATIO_OPTIONS;
 const PRO_SIZES: ImageSize[] = ['1K'];
 const BATCH_COUNTS = [1, 2, 3, 4];
 
+function buildCodexFallbackCatalogErrorMessage(catalog: CodexModelCatalogResponse | null) {
+  if (!catalog || catalog.source !== 'fallback' || !catalog.error) {
+    return null;
+  }
+
+  return 'Using documented catalog while Codex app-server is not responding live.';
+}
+
 const popoverVariants: Variants = {
   initial: { opacity: 0, scale: 0.95, y: 10 },
   animate: {
@@ -157,6 +176,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     // Menu States
     const [isAspectRatioOpen, setIsAspectRatioOpen] = useState(false);
     const [isModelOpen, setIsModelOpen] = useState(false);
+    const [isExecutionOpen, setIsExecutionOpen] = useState(false);
     const [isSizeOpen, setIsSizeOpen] = useState(false);
     const [isBatchOpen, setIsBatchOpen] = useState(false);
     const [isForcedMode, setIsForcedMode] = useState(false);
@@ -167,9 +187,41 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
     const [magicInstruction, setMagicInstruction] = useState('');
     const [isRefactoring, setIsRefactoring] = useState(false);
+    const [codexModelCatalog, setCodexModelCatalog] = useState<CodexModelCatalogResponse | null>(
+      null,
+    );
+    const [isLoadingCodexModelCatalog, setIsLoadingCodexModelCatalog] = useState(false);
+    const [codexModelCatalogError, setCodexModelCatalogError] = useState<string | null>(null);
 
     const [elapsedTime, setElapsedTime] = useState<string>('0.0');
     const [scrambleText, setScrambleText] = useState('');
+
+    const codexModels = codexModelCatalog?.models ?? [];
+    const preferredExecutionModelId = pickPreferredCodexModel(
+      codexModels,
+      generationConfig.executionModel,
+    );
+    const selectedExecutionModel =
+      codexModels.find((model) => model.id === generationConfig.executionModel) ??
+      codexModels.find((model) => model.id === preferredExecutionModelId) ??
+      null;
+    const executionReasoningOptions = getCodexReasoningOptions(selectedExecutionModel);
+    const executionSpeedOptions = getCodexSpeedOptions(selectedExecutionModel);
+    const executionModelLabel = formatCodexModelLabel(
+      generationConfig.executionModel,
+      selectedExecutionModel?.displayName,
+    );
+    const executionSourceMessage =
+      buildCodexFallbackCatalogErrorMessage(codexModelCatalog) || codexModelCatalogError;
+    const executionSummary = [
+      executionModelLabel,
+      generationConfig.executionReasoningEffort?.toUpperCase(),
+      generationConfig.executionSpeed !== 'standard'
+        ? formatCodexSpeedLabel(generationConfig.executionSpeed)
+        : null,
+    ]
+      .filter(Boolean)
+      .join(' · ');
 
     useEffect(() => {
       let interval: number;
@@ -206,9 +258,90 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       return () => clearInterval(interval);
     }, [isGenerating, generationStartTime]);
 
+    useEffect(() => {
+      let isCancelled = false;
+      setIsLoadingCodexModelCatalog(true);
+
+      void getCodexModelCatalog()
+        .then((catalog) => {
+          if (isCancelled) return;
+          setCodexModelCatalog(catalog);
+          setCodexModelCatalogError(catalog.error);
+        })
+        .catch((error) => {
+          if (isCancelled) return;
+          setCodexModelCatalogError(
+            error instanceof Error ? error.message : 'Unable to read the Codex model catalog.',
+          );
+        })
+        .finally(() => {
+          if (!isCancelled) {
+            setIsLoadingCodexModelCatalog(false);
+          }
+        });
+
+      return () => {
+        isCancelled = true;
+      };
+    }, []);
+
+    useEffect(() => {
+      if (codexModels.length === 0) return;
+
+      if (preferredExecutionModelId && preferredExecutionModelId !== generationConfig.executionModel) {
+        updateConfig('executionModel', preferredExecutionModelId);
+        return;
+      }
+
+      const normalizedReasoning = normalizeCodexReasoningEffort(
+        selectedExecutionModel,
+        generationConfig.executionReasoningEffort,
+      );
+      if (normalizedReasoning !== generationConfig.executionReasoningEffort) {
+        updateConfig('executionReasoningEffort', normalizedReasoning);
+        return;
+      }
+
+      const normalizedSpeed = normalizeCodexSpeed(
+        selectedExecutionModel,
+        generationConfig.executionSpeed,
+      );
+      if (normalizedSpeed !== generationConfig.executionSpeed) {
+        updateConfig('executionSpeed', normalizedSpeed);
+      }
+    }, [
+      codexModels,
+      generationConfig.executionModel,
+      generationConfig.executionReasoningEffort,
+      generationConfig.executionSpeed,
+      preferredExecutionModelId,
+      selectedExecutionModel,
+      updateConfig,
+    ]);
+
+    const handleSelectExecutionModel = useCallback(
+      (model: CodexModel) => {
+        updateConfig('executionModel', model.id);
+        updateConfig(
+          'executionReasoningEffort',
+          normalizeCodexReasoningEffort(model, generationConfig.executionReasoningEffort),
+        );
+        updateConfig('executionSpeed', normalizeCodexSpeed(model, generationConfig.executionSpeed));
+      },
+      [generationConfig.executionReasoningEffort, generationConfig.executionSpeed, updateConfig],
+    );
+
+    const handleSelectExecutionSpeed = useCallback(
+      (speed: CodexServiceTier) => {
+        updateConfig('executionSpeed', normalizeCodexSpeed(selectedExecutionModel, speed));
+      },
+      [selectedExecutionModel, updateConfig],
+    );
+
     const closeAllMenus = useCallback(() => {
       setIsAspectRatioOpen(false);
       setIsModelOpen(false);
+      setIsExecutionOpen(false);
       setIsSizeOpen(false);
       setIsBatchOpen(false);
       setIsInteracting(false);
@@ -568,6 +701,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 onClick={() => {
                   setIsAspectRatioOpen(!isAspectRatioOpen);
                   setIsModelOpen(false);
+                  setIsExecutionOpen(false);
                   setIsBatchOpen(false);
                 }}
                 className={btnClass}
@@ -595,11 +729,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         onMouseEnter={() => setPreviewRatio(option.ratio)}
                         title={`${option.label}: ${option.size}`}
                         className={`aspect-square rounded-lg flex flex-col items-center justify-center gap-1 transition-all 
-                                    ${
-                                      generationConfig.aspectRatio === option.ratio
-                                        ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/50 text-white shadow-lg'
-                                        : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
-                                    }`}
+                                    ${generationConfig.aspectRatio === option.ratio
+                            ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/50 text-white shadow-lg'
+                            : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
+                          }`}
                       >
                         <AspectRatioIcon ratio={option.ratio} />
                         <span className="text-[8px] font-black">{option.ratio}</span>
@@ -618,6 +751,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   onClick={() => {
                     setIsSizeOpen(!isSizeOpen);
                     setIsModelOpen(false);
+                    setIsExecutionOpen(false);
                   }}
                   className={btnClass}
                 >
@@ -657,6 +791,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 onClick={() => {
                   setIsBatchOpen(!isBatchOpen);
                   setIsModelOpen(false);
+                  setIsExecutionOpen(false);
                 }}
                 className={btnClass}
               >
@@ -695,6 +830,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 onClick={() => {
                   setIsModelOpen(!isModelOpen);
                   setIsAspectRatioOpen(false);
+                  setIsExecutionOpen(false);
                 }}
                 className={btnClass}
               >
@@ -742,17 +878,171 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </AnimatePresence>
             </div>
 
+            {/* Codex Task Execution Selector */}
+            <div className="relative">
+              <button
+                onClick={() => {
+                  setIsExecutionOpen(!isExecutionOpen);
+                  setIsModelOpen(false);
+                  setIsAspectRatioOpen(false);
+                  setIsBatchOpen(false);
+                }}
+                className={btnClass}
+              >
+                <BrainCircuit size={14} />
+                <span className="hidden 2xl:inline text-[8px]">{executionSummary}</span>
+              </button>
+              <AnimatePresence>
+                {isExecutionOpen && (
+                  <motion.div
+                    variants={popoverVariants}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    className="absolute bottom-full mb-4 right-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 min-w-[360px] max-w-[420px] shadow-2xl z-[110]"
+                  >
+                    <div className="flex items-start justify-between gap-4 mb-3">
+                      <div>
+                        <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500 mb-1">
+                          Codex Task Execution
+                        </div>
+                        <div className="text-[11px] font-black text-zinc-100 uppercase tracking-wide">
+                          {selectedExecutionModel?.displayName || executionModelLabel}
+                        </div>
+                        <div className="text-[8px] text-zinc-500 font-bold mt-1 max-w-[280px] leading-relaxed">
+                          {selectedExecutionModel?.description ||
+                            'Choose the Codex model that executes the generation task, plus its thinking effort and speed tier.'}
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2 shrink-0">
+                        {isLoadingCodexModelCatalog && (
+                          <Loader2 size={12} className="animate-spin text-accent-300" />
+                        )}
+                        <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                          {codexModelCatalog?.source === 'fallback' ? 'Docs fallback' : 'Live'}
+                        </div>
+                      </div>
+                    </div>
+
+                    {executionSourceMessage && (
+                      <div className="mb-3 rounded-xl border border-amber-500/20 bg-amber-500/10 px-3 py-2 text-[8px] font-bold text-amber-200">
+                        {executionSourceMessage}
+                      </div>
+                    )}
+
+                    <div className="mb-3">
+                      <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
+                        Available Codex Models
+                      </div>
+                      <div className="max-h-[220px] overflow-y-auto pr-1 space-y-1.5 custom-scrollbar">
+                        {codexModels.map((model) => {
+                          const isSelected = model.id === selectedExecutionModel?.id;
+                          const modelSpeedOptions = getCodexSpeedOptions(model);
+                          return (
+                            <button
+                              key={model.id}
+                              onClick={() => handleSelectExecutionModel(model)}
+                              className={`w-full text-left px-3 py-2.5 rounded-xl transition-all border ${isSelected
+                                  ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
+                                  : 'hover:bg-white/5 text-zinc-400 border-transparent'
+                                }`}
+                            >
+                              <div className="flex items-center justify-between gap-3 mb-1">
+                                <div
+                                  className={`text-[10px] font-black uppercase tracking-wide ${isSelected ? 'text-accent-300' : 'text-zinc-200'
+                                    }`}
+                                >
+                                  {model.displayName}
+                                </div>
+                                {isSelected ? (
+                                  <Check size={12} className="text-accent-300 shrink-0" />
+                                ) : null}
+                              </div>
+                              <div className="text-[8px] text-zinc-500 font-bold leading-relaxed">
+                                {model.description || 'Codex execution model'}
+                              </div>
+                              <div className="mt-2 flex flex-wrap gap-1.5">
+                                {model.isDefault && (
+                                  <span className="px-1.5 py-0.5 rounded-md bg-accent-500/15 text-accent-200 text-[7px] font-black uppercase tracking-wide">
+                                    Default
+                                  </span>
+                                )}
+                                {modelSpeedOptions.includes('fast') && (
+                                  <span className="px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-200 text-[7px] font-black uppercase tracking-wide">
+                                    Fast
+                                  </span>
+                                )}
+                                {codexModelCatalog?.planType && model.id === 'gpt-5.3-codex-spark' && (
+                                  <span className="px-1.5 py-0.5 rounded-md bg-fuchsia-500/10 text-fuchsia-200 text-[7px] font-black uppercase tracking-wide">
+                                    {codexModelCatalog.planType}
+                                  </span>
+                                )}
+                              </div>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    <div className="border-t border-white/5 pt-3 mb-3">
+                      <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
+                        Thinking
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {executionReasoningOptions.map((effort) => (
+                          <button
+                            key={effort}
+                            onClick={() => updateConfig('executionReasoningEffort', effort)}
+                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${generationConfig.executionReasoningEffort === effort
+                                ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                                : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                              }`}
+                          >
+                            {effort}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="border-t border-white/5 pt-3">
+                      <div className="flex items-center justify-between gap-3 mb-2">
+                        <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                          Speed
+                        </div>
+                        <div className="text-[8px] font-bold text-zinc-600">
+                          Fast mode depends on the selected model and Codex sign-in.
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {executionSpeedOptions.map((speed) => (
+                          <button
+                            key={speed}
+                            onClick={() => handleSelectExecutionSpeed(speed)}
+                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${generationConfig.executionSpeed === speed
+                                ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                                : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                              }`}
+                          >
+                            {formatCodexSpeedLabel(speed)}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             {/* GENERATE BUTTON - Dark Gradient Premium */}
             <button
               onClick={handleTriggerGenerate}
               className={`
                     group relative h-11 px-6 rounded-2xl flex items-center justify-center gap-2.5 ml-2 overflow-hidden
                     text-[10px] tracking-[0.2em] font-black uppercase transition-all cursor-pointer
-                    ${
-                      isGenerating
-                        ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-400 border border-accent-700/30 shadow-lg'
-                        : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/20 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
-                    }
+                    ${isGenerating
+                  ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-400 border border-accent-700/30 shadow-lg'
+                  : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/20 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
+                }
                 `}
             >
               {/* Progress Bar Layer */}

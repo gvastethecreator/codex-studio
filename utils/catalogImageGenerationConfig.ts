@@ -41,6 +41,12 @@ function normalizeImageSize(value: unknown): ImageSize {
   return DEFAULT_GENERATION_CONFIG.imageSize;
 }
 
+function normalizeExecutionSpeed(value: unknown): ImageGenerationConfig['executionSpeed'] {
+  return value === 'fast' || value === 'flex' || value === 'standard'
+    ? value
+    : DEFAULT_GENERATION_CONFIG.executionSpeed;
+}
+
 function normalizeRecipeId(candidate: unknown, recipeContext: string): RecipeId {
   if (typeof candidate === 'string') {
     const normalized = candidate as Exclude<RecipeId, null>;
@@ -82,6 +88,12 @@ export function buildGenerationConfigFromCatalogImage(asset: CatalogImage): Imag
   const useThinkingAndSearch =
     readBoolean(storedConfig, 'useThinkingAndSearch') ??
     DEFAULT_GENERATION_CONFIG.useThinkingAndSearch;
+  const executionModel =
+    readString(storedConfig, 'executionModel') || DEFAULT_GENERATION_CONFIG.executionModel;
+  const executionReasoningEffort =
+    readString(storedConfig, 'executionReasoningEffort') ||
+    DEFAULT_GENERATION_CONFIG.executionReasoningEffort;
+  const executionSpeed = normalizeExecutionSpeed(storedConfig?.executionSpeed);
 
   return {
     ...DEFAULT_GENERATION_CONFIG,
@@ -97,6 +109,9 @@ export function buildGenerationConfigFromCatalogImage(asset: CatalogImage): Imag
     negativePrompt,
     temperature,
     model: MODELS.CODEX_IMAGEGEN,
+    executionModel,
+    executionReasoningEffort,
+    executionSpeed,
     batchCount,
     useThinkingAndSearch,
   };

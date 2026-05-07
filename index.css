@@ -54,6 +54,11 @@
   :root {
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
     --ease-in-out-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+    --panel-open-dur: 400ms;
+    --panel-close-dur: 350ms;
+    --panel-translate-y: 100px;
+    --panel-blur: 2px;
+    --panel-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
     --accent-50: 250 250 250;
     --accent-100: 245 245 245;
@@ -147,6 +152,34 @@
   }
   .ghost-btn:active:not(:disabled) {
     transform: scale(0.96);
+  }
+
+  .t-panel-slide {
+    transform: translateY(var(--panel-translate-y));
+    opacity: 0;
+    filter: blur(var(--panel-blur));
+    pointer-events: none;
+    transition:
+      transform var(--panel-close-dur) var(--panel-ease),
+      opacity var(--panel-close-dur) var(--panel-ease),
+      filter var(--panel-close-dur) var(--panel-ease);
+    will-change: transform, opacity, filter;
+  }
+  .t-panel-slide[data-open='true'] {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+    pointer-events: auto;
+    transition:
+      transform var(--panel-open-dur) var(--panel-ease),
+      opacity var(--panel-open-dur) var(--panel-ease),
+      filter var(--panel-open-dur) var(--panel-ease);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .t-panel-slide {
+      transition: none !important;
+    }
   }
 
   .tooltip-content {

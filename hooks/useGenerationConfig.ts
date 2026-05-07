@@ -48,6 +48,38 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     }
   }, [generationConfig.aspectRatio, log, setGenerationConfig]);
 
+  useEffect(() => {
+    const executionModel = generationConfig.executionModel?.trim();
+    const executionReasoningEffort = generationConfig.executionReasoningEffort?.trim();
+    const executionSpeed = generationConfig.executionSpeed;
+
+    if (
+      executionModel &&
+      executionReasoningEffort &&
+      (executionSpeed === 'standard' || executionSpeed === 'fast' || executionSpeed === 'flex')
+    ) {
+      return;
+    }
+
+    setGenerationConfig((prev) => ({
+      ...prev,
+      executionModel: executionModel || DEFAULT_GENERATION_CONFIG.executionModel,
+      executionReasoningEffort:
+        executionReasoningEffort || DEFAULT_GENERATION_CONFIG.executionReasoningEffort,
+      executionSpeed:
+        executionSpeed === 'standard' || executionSpeed === 'fast' || executionSpeed === 'flex'
+          ? executionSpeed
+          : DEFAULT_GENERATION_CONFIG.executionSpeed,
+    }));
+    log('Codex execution settings normalized to defaults.');
+  }, [
+    generationConfig.executionModel,
+    generationConfig.executionReasoningEffort,
+    generationConfig.executionSpeed,
+    log,
+    setGenerationConfig,
+  ]);
+
   const updateGenerationConfig = useCallback(
     <K extends keyof ImageGenerationConfig>(key: K, value: ImageGenerationConfig[K]) => {
       setGenerationConfig((prev) => ({ ...prev, [key]: value }));

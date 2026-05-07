@@ -17,6 +17,7 @@ import {
   createJob,
   createProject,
   ensureDefaultProject,
+  getJob,
   listAssets,
   listJobs,
   listLogs,
@@ -28,9 +29,15 @@ import { initStudio } from "./init";
 import { inspectLibrary, resolveLibraryPath } from "./library";
 import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from "./libraries";
 import { log } from "./logger";
-import { enqueueJob, getWorkerStatus } from "./worker";
-import { ensureAppServer, getAppServerDiagnostics, isAppServerRunning } from "./codex";
+import { cancelQueuedOrRunningJob, enqueueJob, getWorkerStatus } from "./worker";
+import {
+  ensureAppServer,
+  getAppServerDiagnostics,
+  getCodexModelCatalog,
+  isAppServerRunning,
+} from "./codex";
 import { embedMetadata } from "./metadataEmbedder";
+import { getJobDetail } from './jobDetails';
 import { processReferences, ReferenceProcessingError } from "./referenceManager";
 import { createWorkspaceRoutes } from "./workspaceRoutes";
 import type { CreateJobRequest } from "../../../packages/shared/src";
@@ -125,6 +132,10 @@ export async function createStudioApp(
 
   app.get("/api/settings", (c) => c.json(getSettings()));
 
+  app.get("/api/codex/models", async (c) => {
+    return c.json(await getCodexModelCatalog());
+  });
+
   app.get("/api/projects", (c) => c.json(listProjects()));
 
   app.post("/api/projects", async (c) => {
@@ -137,12 +148,40 @@ export async function createStudioApp(
 
   app.get("/api/jobs", (c) => c.json(listJobs()));
 
+  app.get('/api/jobs/:id', (c) => {
+    const detail = getJobDetail(c.req.param('id'));
+    if (!detail) return c.json({ error: 'Job not found' }, 404);
+    return c.json(detail);
+  });
+
+  app.post('/api/jobs/:id/cancel', (c) => {
+    const jobId = c.req.param('id');
+    const job = getJob(jobId);
+    if (!job) return c.json({ error: 'Job not found' }, 404);
+
+    if (job.status === 'completed' || job.status === 'failed' || job.status === 'cancelled') {
+      return c.json(job);
+    }
+
+    const updatedJob = cancelQueuedOrRunningJob(jobId);
+    if (!updatedJob) {
+      return c.json({ error: 'Job cannot be cancelled right now' }, 409);
+    }
+
+    return c.json(updatedJob);
+  });
+
   app.post("/api/jobs", async (c) => {
     const body = (await c.req.json()) as CreateJobRequest;
     const projectId = body.projectId || ensureDefaultProject().id;
     const prompt = body.prompt?.trim();
     if (!prompt) return c.json({ error: "Prompt is required" }, 400);
-    const job = createJob({ projectId, kind: body.kind, prompt });
+    const job = createJob({
+      projectId,
+      kind: body.kind,
+      prompt,
+      execution: body.execution ?? null,
+    });
     let finalPrompt = prompt;
     try {
       finalPrompt = (

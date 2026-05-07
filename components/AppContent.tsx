@@ -387,7 +387,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
         (promptOverride !== undefined ? promptOverride : config.generationConfig.prompt)?.trim() ??
         '';
       if (!finalPrompt) {
-        addToast('Escribe un prompt antes de generar', 'info');
+        addToast('Type a prompt before generating', 'info');
         return;
       }
 
@@ -407,7 +407,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
     try {
       const currentPrompt = (config.generationConfig.prompt ?? '').trim();
       if (!currentPrompt) {
-        addToast('Escribe un prompt antes de refinarlo', 'info');
+        addToast('Type a prompt before refining it', 'info');
         return;
       }
 

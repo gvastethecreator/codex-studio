@@ -6,12 +6,14 @@ import type {
   GeneratedImageWithConfig,
   RecipeId,
 } from '../types';
+import type { Job as StudioJob } from '../packages/shared/src';
 import { startViewTransition } from '../utils/transitionUtils';
 import { runLocalGeneration } from '../services/localGenerationRun';
 
 interface GenerationOptions {
   preventModal?: boolean;
   signal?: AbortSignal;
+  onJobCreated?: (job: StudioJob) => void;
 }
 
 interface UseGenerationPipelineProps {
@@ -58,6 +60,16 @@ export const useGenerationPipeline = ({
   const handleGenerationError = useCallback(
     (error: unknown) => {
       const message = error instanceof Error ? error.message : String(error);
+      const isCancellation =
+        error instanceof Error &&
+        (error.name === 'AbortError' || /cancel/i.test(error.message));
+
+      if (isCancellation) {
+        addToast('Generation cancelled', 'info');
+        log(`Generation cancelled: ${message}`);
+        throw error;
+      }
+
       addToast(message, 'error');
       log(`Generation Error: ${message}`);
       throw error;
@@ -81,6 +93,7 @@ export const useGenerationPipeline = ({
           config: configToUse,
           workspaceId: activeWorkspaceId,
           signal: options?.signal,
+          onJobCreated: options?.onJobCreated,
           onProgress: log,
         });
 
