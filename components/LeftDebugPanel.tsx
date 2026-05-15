@@ -5,7 +5,7 @@ import type { LogEntry, Workspace } from '../types';
 import { SessionOverview } from './SessionOverview';
 import { SidePanel } from './SidePanel';
 
-interface LeftDebugPanelProps {
+export interface LeftDebugPanelProps {
   workspaces: Workspace[];
   logs: LogEntry[];
   studioJobs: StudioJob[];

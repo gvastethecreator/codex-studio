@@ -1,16 +1,17 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { HealthResponse } from '../packages/shared/src';
+import type { Toast } from '../types';
 import {
   getStudioApiBase,
   getStudioHealth,
   startStudioAppServer,
 } from '../services/localStudioService';
-import { isDesktopStudioRuntime } from '../services/studioRuntime';
+import { resolveStudioRuntime } from '../services/studioRuntime';
 import { useLocalStorage } from './useLocalStorage';
 
 interface UseStudioOnboardingProps {
   log: (message: string) => void;
-  addToast: (message: string, type: 'success' | 'error' | 'info' | 'warning') => void;
+  addToast: (message: string, type?: Toast['type']) => void;
   shouldAutoOpen: boolean;
 }
 
@@ -25,8 +26,9 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
   const [isChecking, setIsChecking] = useState(false);
   const [isStartingAppServer, setIsStartingAppServer] = useState(false);
 
+  const runtime = useMemo(() => resolveStudioRuntime(), []);
   const apiBase = useMemo(() => getStudioApiBase(), []);
-  const isDesktopRuntime = useMemo(() => isDesktopStudioRuntime(), []);
+  const isDesktopRuntime = runtime.isDesktop;
   const isReady = Boolean(health?.ok && health.checks.onboardingReady);
 
   const refreshHealth = useCallback(async () => {
@@ -79,7 +81,7 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
       await refreshHealth();
       addToast(
         result.running ? 'Codex app-server started' : 'Could not start Codex app-server',
-        result.running ? 'success' : 'warning',
+        result.running ? 'success' : 'info',
       );
     } catch (startError) {
       const message =
@@ -105,5 +107,6 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
     isStartingAppServer,
     openOnboarding,
     refreshHealth,
+    runtime,
   };
 }

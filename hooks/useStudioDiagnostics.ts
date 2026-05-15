@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { buildStudioDiagnosticsSnapshot } from '../lib/studioDiagnostics';
-import type { CodexAccountStatusResponse, HealthResponse } from '../packages/shared/src';
-import { getCodexAccountStatus, getStudioHealth } from '../services/localStudioService';
+import type { HealthResponse, LocalCodexSessionResponse } from '../packages/shared/src';
+import { getLocalCodexSession, getStudioHealth } from '../services/localStudioService';
 
 interface UseStudioDiagnosticsOptions {
   initialHealth?: HealthResponse | null;
@@ -9,7 +9,7 @@ interface UseStudioDiagnosticsOptions {
   refreshIntervalMs?: number;
 }
 
-function buildFallbackAccountStatus(error: unknown): CodexAccountStatusResponse {
+function buildFallbackLocalCodexSession(error: unknown): LocalCodexSessionResponse {
   return {
     authMode: null,
     planType: null,
@@ -17,11 +17,17 @@ function buildFallbackAccountStatus(error: unknown): CodexAccountStatusResponse 
     source: 'fallback',
     fetchedAt: new Date().toISOString(),
     error: error instanceof Error ? error.message : String(error),
+    authLabel: 'Not signed in',
+    state: 'unavailable',
+    reason: 'app_server_unavailable',
+    isChatgptLogin: false,
+    isSupportedAuthMode: false,
+    canRunLocalJobs: false,
   };
 }
 
 /**
- * Poll the local studio health and Codex account status so the shell can
+ * Refresh the local studio health and Local Codex Session so the shell can
  * render one diagnostics view without duplicating request choreography.
  */
 export function useStudioDiagnostics({
@@ -30,8 +36,7 @@ export function useStudioDiagnostics({
   refreshIntervalMs = 30_000,
 }: UseStudioDiagnosticsOptions = {}) {
   const [health, setHealth] = useState<HealthResponse | null>(initialHealth);
-  const [codexAccountStatus, setCodexAccountStatus] =
-    useState<CodexAccountStatusResponse | null>(null);
+  const [localCodexSession, setLocalCodexSession] = useState<LocalCodexSessionResponse | null>(null);
   const [hasFetchedDiagnostics, setHasFetchedDiagnostics] = useState(false);
   const isMountedRef = useRef(true);
 
@@ -48,18 +53,18 @@ export function useStudioDiagnostics({
   }, [initialHealth]);
 
   const refreshDiagnostics = useCallback(async () => {
-    const [healthResult, accountResult] = await Promise.allSettled([
+    const [healthResult, sessionResult] = await Promise.allSettled([
       getStudioHealth(),
-      getCodexAccountStatus(),
+      getLocalCodexSession(),
     ]);
 
     if (!isMountedRef.current) return;
 
     setHealth(healthResult.status === 'fulfilled' ? healthResult.value : null);
-    setCodexAccountStatus(
-      accountResult.status === 'fulfilled'
-        ? accountResult.value
-        : buildFallbackAccountStatus(accountResult.reason),
+    setLocalCodexSession(
+      sessionResult.status === 'fulfilled'
+        ? sessionResult.value
+        : buildFallbackLocalCodexSession(sessionResult.reason),
     );
     setHasFetchedDiagnostics(true);
   }, []);
@@ -78,14 +83,14 @@ export function useStudioDiagnostics({
 
   const snapshot = buildStudioDiagnosticsSnapshot({
     health,
-    codexAccountStatus,
+    localCodexSession,
     hasFetchedDiagnostics,
     isBackendConnected,
   });
 
   return {
     health,
-    codexAccountStatus,
+    localCodexSession,
     hasFetchedDiagnostics,
     refreshDiagnostics,
     snapshot,

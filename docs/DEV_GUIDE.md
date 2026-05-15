@@ -7,6 +7,9 @@ Este documento contiene las reglas, convenciones e instrucciones para entender e
 - **Strict Typing:** Prohibido usar `any`. Cada interfaz consumida debe contar con Type Check definido en `/types.ts`.
 - **Barrel Imports:** Aconsejable centralizar los exports pero para utilidades referir al path específico y evitar circularidad.
 - **Imports Locales y Tooling:** Cargar las definiciones UI siempre en `components/ui/` y las utilidades `utils/`.
+- **Documentacion Canonica:** `CONTEXT.md` es el glosario del proyecto; `docs/ARCHITECTURE.md` describe el comportamiento actual del sistema; los ADRs en `docs/adr/` registran decisiones dificiles de revertir. No mezclar esas capas en un solo archivo.
+- **Frontend local-first:** Las llamadas al backend deben pasar por `services/localStudioService.ts` o `services/studioEventSource.ts`; evita `fetch()` directo desde componentes salvo casos de infraestructura muy justificados.
+- **Catalogo vs cache visual:** SQLite/Image Catalog es la fuente duradera de verdad. `GenerationBatch[]` en IndexedDB sigue siendo una cache de compatibilidad del grid actual, no el modelo duradero para nuevas decisiones de producto.
 - **Toolchain Unificado:** La UI se valida y construye con **Vite+**. Usa `bun run check`, `bun run test` y `bun run build` como comandos principales; evita reintroducir configuraciones separadas de ESLint, Prettier o Vitest fuera de `vite.config.ts`.
 - **Animación:** El proyecto usa **GSAP** para animaciones React. No reintroducir `motion/react` ni otras capas de animación similares.
 - **Tests:** Las pruebas unitarias deben importar helpers desde `vite-plus/test`.

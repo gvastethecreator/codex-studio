@@ -7,7 +7,7 @@ import type { QueueJob } from '../../types';
 import { QueuePanel } from '../QueuePanel';
 import { RightSystemPanel } from '../RightSystemPanel';
 
-interface StudioOperationsRailProps {
+export interface StudioOperationsRailProps {
     isModalOpen: boolean;
     isQueueOpen: boolean;
     setIsQueueOpen: React.Dispatch<React.SetStateAction<boolean>>;

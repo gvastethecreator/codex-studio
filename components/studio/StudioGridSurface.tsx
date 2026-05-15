@@ -6,7 +6,7 @@ import { ErrorBoundary } from '../ErrorBoundary';
 import { FormatPreview } from '../FormatPreview';
 import { ImageGrid } from '../ImageGrid';
 
-interface StudioGridSurfaceProps {
+export interface StudioGridSurfaceProps {
     isModalOpen: boolean;
     activeWorkspaceId: string;
     allImages: GeneratedImage[];

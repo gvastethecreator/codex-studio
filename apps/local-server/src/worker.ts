@@ -10,13 +10,39 @@ import { createCodexTurn, resolveJobExecutionOptions } from './codex';
 import { embedMetadata } from './metadataEmbedder';
 import { parsePromptTransport } from '../../../packages/shared/src';
 import type { Job } from '../../../packages/shared/src';
+import type { CodexTurn } from './codex';
 
-const runningJobs = new Set<string>();
-const jobQueue: Job[] = [];
-const runningJobControllers = new Map<string, AbortController>();
-const activeJobPromises = new Map<string, Promise<void>>();
-let activeWorkerCount = 0;
-const codexTurn = createCodexTurn();
+export interface WorkerStatus {
+  maxConcurrentJobs: number;
+  activeWorkerCount: number;
+  queuedJobs: number;
+  trackedJobs: number;
+}
+
+export interface WorkerController {
+  enqueueJob(job: Job): void;
+  cancelQueuedOrRunningJob(jobId: string): ReturnType<typeof getJob>;
+  getWorkerStatus(): WorkerStatus;
+  resetWorkerState(): Promise<void>;
+}
+
+export interface CreateWorkerControllerDependencies {
+  createTurn?: () => CodexTurn;
+  getSettings?: typeof getSettings;
+  registerCatalogImage?: typeof registerCatalogImage;
+  addAsset?: typeof addAsset;
+  addJobEvent?: typeof addJobEvent;
+  getJob?: typeof getJob;
+  updateJobStatus?: typeof updateJobStatus;
+  upsertCodexTurn?: typeof upsertCodexTurn;
+  publishEvent?: typeof publishEvent;
+  resolveLibraryPath?: typeof resolveLibraryPath;
+  toPublicAssetUrl?: typeof toPublicAssetUrl;
+  logger?: typeof log;
+  resolveExecutionOptions?: typeof resolveJobExecutionOptions;
+  embedMetadata?: typeof embedMetadata;
+  parsePromptTransport?: typeof parsePromptTransport;
+}
 
 function createAbortError() {
   const error = new Error('Operation cancelled by user');
@@ -54,10 +80,6 @@ function waitWithAbort(durationMs: number, signal?: AbortSignal) {
   });
 }
 
-function getMaxConcurrentJobs() {
-  return getSettings().codexMaxConcurrentJobs;
-}
-
 function svgForPrompt(prompt: string) {
   const safePrompt = prompt
     .replaceAll('&', '&amp;')
@@ -78,307 +100,357 @@ function svgForPrompt(prompt: string) {
 </svg>`;
 }
 
-function createDryRunAsset(job: Job) {
-  mkdirSync(resolveLibraryPath('assets'), { recursive: true });
-  const filePath = resolveLibraryPath('assets', `${job.id}-dry-run.svg`);
-  writeFileSync(filePath, svgForPrompt(job.finalPromptUsed), 'utf8');
-  return addAsset({
-    projectId: job.projectId,
-    jobId: job.id,
-    filePath,
-    thumbnailPath: null,
-    publicUrl: toPublicAssetUrl(filePath),
-    prompt: job.finalPromptUsed,
-    width: 1200,
-    height: 800,
-    mimeType: 'image/svg+xml',
-  });
-}
+export function createWorkerController({
+  createTurn = createCodexTurn,
+  getSettings: getSettingsFn = getSettings,
+  registerCatalogImage: registerCatalogImageFn = registerCatalogImage,
+  addAsset: addAssetFn = addAsset,
+  addJobEvent: addJobEventFn = addJobEvent,
+  getJob: getJobFn = getJob,
+  updateJobStatus: updateJobStatusFn = updateJobStatus,
+  upsertCodexTurn: upsertCodexTurnFn = upsertCodexTurn,
+  publishEvent: publishEventFn = publishEvent,
+  resolveLibraryPath: resolveLibraryPathFn = resolveLibraryPath,
+  toPublicAssetUrl: toPublicAssetUrlFn = toPublicAssetUrl,
+  logger = log,
+  resolveExecutionOptions = resolveJobExecutionOptions,
+  embedMetadata: embedMetadataFn = embedMetadata,
+  parsePromptTransport: parsePromptTransportFn = parsePromptTransport,
+}: CreateWorkerControllerDependencies = {}): WorkerController {
+  const runningJobs = new Set<string>();
+  const jobQueue: Job[] = [];
+  const runningJobControllers = new Map<string, AbortController>();
+  const activeJobPromises = new Map<string, Promise<void>>();
+  let activeWorkerCount = 0;
+  const codexTurn = createTurn();
 
-function buildCatalogGenerationConfig(prompt: string) {
-  const parsedPrompt = parsePromptTransport(prompt);
-  const executionOptions = resolveJobExecutionOptions();
-
-  return {
-    prompt: parsedPrompt.prompt,
-    recipeContext: parsedPrompt.recipeContext,
-    recipeId: parsedPrompt.recipeId,
-    recipeParams: null,
-    attachments: [],
-    aspectRatio: parsedPrompt.aspectRatio,
-    imageSize: parsedPrompt.imageSize,
-    negativePrompt: parsedPrompt.negativePrompt,
-    temperature: 0.8,
-    model: 'codex-imagegen',
-    executionModel: executionOptions.model,
-    executionReasoningEffort: executionOptions.reasoningEffort,
-    executionSpeed: executionOptions.serviceTier ?? 'standard',
-    batchCount: 1,
-    useThinkingAndSearch: false,
-  };
-}
-
-function buildCatalogGenerationConfigFromJob(job: Job) {
-  const parsedPrompt = parsePromptTransport(job.finalPromptUsed);
-  const executionOptions = resolveJobExecutionOptions(job.execution);
-
-  return {
-    prompt: parsedPrompt.prompt,
-    recipeContext: parsedPrompt.recipeContext,
-    recipeId: parsedPrompt.recipeId,
-    recipeParams: null,
-    attachments: [],
-    aspectRatio: parsedPrompt.aspectRatio,
-    imageSize: parsedPrompt.imageSize,
-    negativePrompt: parsedPrompt.negativePrompt,
-    temperature: 0.8,
-    model: 'codex-imagegen',
-    executionModel: executionOptions.model,
-    executionReasoningEffort: executionOptions.reasoningEffort,
-    executionSpeed: executionOptions.serviceTier ?? 'standard',
-    batchCount: 1,
-    useThinkingAndSearch: false,
-  };
-}
-
-async function runDryJob(job: Job, signal?: AbortSignal) {
-  addJobEvent(job.id, 'dry_run.started', 'Dry run asset creation started.');
-  log('info', 'worker', 'Dry run job started.', job.id);
-  await waitWithAbort(500, signal);
-  throwIfAborted(signal);
-  const asset = createDryRunAsset(job);
-  const parsedPrompt = parsePromptTransport(job.finalPromptUsed);
-  const catalogImage = registerCatalogImage({
-    filePath: asset.filePath,
-    thumbnailPath: asset.thumbnailPath,
-    prompt: asset.prompt,
-    negativePrompt: parsedPrompt.negativePrompt || null,
-    aspectRatio: parsedPrompt.aspectRatio,
-    imageSize: parsedPrompt.imageSize,
-    width: asset.width,
-    height: asset.height,
-    mimeType: asset.mimeType,
-    fileSizeBytes: statSync(asset.filePath).size,
-    jobId: asset.jobId,
-    workspaceId: asset.projectId,
-    recipeId: parsedPrompt.recipeId,
-    generationConfig: buildCatalogGenerationConfig(job.finalPromptUsed),
-  });
-  addJobEvent(job.id, 'asset.created', 'Dry run asset created.', { assetId: asset.id });
-  publishEvent('asset.created', asset);
-  publishEvent('catalog.created', catalogImage);
-  updateJobStatus(job.id, 'completed');
-  publishEvent('job.completed', getJob(job.id));
-  log('info', 'worker', `Dry run job completed. Asset: ${path.basename(asset.filePath)}`, job.id);
-}
-
-async function runCodexJob(job: Job, signal?: AbortSignal) {
-  addJobEvent(job.id, 'codex.started', 'Codex image generation started.');
-  log('info', 'worker', 'Codex imagegen job started.', job.id);
-  const turnRecordId = upsertCodexTurn({ jobId: job.id, status: 'running' });
-  const executionOptions = resolveJobExecutionOptions(job.execution);
-  const result = await codexTurn.runTurn({
-    jobId: job.id,
-    projectId: job.projectId,
-    prompt: job.finalPromptUsed,
-    execution: job.execution,
-    signal,
-  });
-
-  throwIfAborted(signal);
-
-  upsertCodexTurn({
-    id: turnRecordId,
-    jobId: job.id,
-    codexThreadId: result.threadId,
-    codexTurnId: result.turnId,
-    transcriptPath: result.transcript,
-    status: result.assets.length > 0 ? 'completed' : 'needs_review',
-  });
-
-  const discoveredImagePath = result.assets[0]?.sourcePath ?? null;
-  if (!discoveredImagePath) {
-    updateJobStatus(job.id, 'needs_review');
-    publishEvent('job.progress', getJob(job.id));
-    log(
-      'warn',
-      'worker',
-      `Codex turn completed but no image file was discovered. Transcript: ${result.transcript}`,
-      job.id,
-    );
-    return;
+  function getMaxConcurrentJobs() {
+    return getSettingsFn().codexMaxConcurrentJobs;
   }
 
-  const ext = path.extname(discoveredImagePath).toLowerCase();
-  const mimeType =
-    ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : ext === '.webp' ? 'image/webp' : 'image/png';
-  const asset = addAsset({
-    projectId: job.projectId,
-    jobId: job.id,
-    filePath: discoveredImagePath,
-    thumbnailPath: null,
-    publicUrl: toPublicAssetUrl(discoveredImagePath),
-    prompt: job.finalPromptUsed,
-    width: null,
-    height: null,
-    mimeType,
-  });
-  const parsedPrompt = parsePromptTransport(job.finalPromptUsed);
-  const catalogImage = registerCatalogImage({
-    filePath: asset.filePath,
-    thumbnailPath: asset.thumbnailPath,
-    prompt: asset.prompt,
-    negativePrompt: parsedPrompt.negativePrompt || null,
-    aspectRatio: parsedPrompt.aspectRatio,
-    imageSize: parsedPrompt.imageSize,
-    width: asset.width,
-    height: asset.height,
-    mimeType: asset.mimeType,
-    fileSizeBytes: statSync(asset.filePath).size,
-    jobId: asset.jobId,
-    workspaceId: asset.projectId,
-    recipeId: parsedPrompt.recipeId,
-    generationConfig: buildCatalogGenerationConfigFromJob(job),
-  });
-  void embedMetadata(asset.filePath, {
-    prompt: job.finalPromptUsed,
-    negativePrompt: parsedPrompt.negativePrompt || null,
-    aspectRatio: parsedPrompt.aspectRatio,
-    imageSize: parsedPrompt.imageSize,
-    model: executionOptions.model,
-    recipe: parsedPrompt.recipeId,
-    batchId: job.id,
-    generatedAt: new Date().toISOString(),
-    studioVersion: '0.0.0',
-    libraryId: catalogImage.libraryId,
-    catalogId: catalogImage.id,
-  }).catch((error) => {
-    log(
-      'warn',
-      'metadata',
-      `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`,
-      job.id,
-    );
-  });
+  function createDryRunAsset(job: Job) {
+    mkdirSync(resolveLibraryPathFn('assets'), { recursive: true });
+    const filePath = resolveLibraryPathFn('assets', `${job.id}-dry-run.svg`);
+    writeFileSync(filePath, svgForPrompt(job.finalPromptUsed), 'utf8');
+    return addAssetFn({
+      projectId: job.projectId,
+      jobId: job.id,
+      filePath,
+      thumbnailPath: null,
+      publicUrl: toPublicAssetUrlFn(filePath),
+      prompt: job.finalPromptUsed,
+      width: 1200,
+      height: 800,
+      mimeType: 'image/svg+xml',
+    });
+  }
 
-  addJobEvent(job.id, 'asset.created', 'Codex image asset imported.', { assetId: asset.id });
-  publishEvent('asset.created', asset);
-  publishEvent('catalog.created', catalogImage);
-  updateJobStatus(job.id, 'completed');
-  publishEvent('job.completed', getJob(job.id));
-  log('info', 'worker', `Codex job completed. Asset: ${path.basename(asset.filePath)}`, job.id);
+  function buildCatalogGenerationConfig(prompt: string) {
+    const parsedPrompt = parsePromptTransportFn(prompt);
+    const executionOptions = resolveExecutionOptions();
+
+    return {
+      prompt: parsedPrompt.prompt,
+      recipeContext: parsedPrompt.recipeContext,
+      recipeId: parsedPrompt.recipeId,
+      recipeParams: null,
+      attachments: [],
+      aspectRatio: parsedPrompt.aspectRatio,
+      imageSize: parsedPrompt.imageSize,
+      negativePrompt: parsedPrompt.negativePrompt,
+      temperature: 0.8,
+      model: 'codex-imagegen',
+      executionModel: executionOptions.model,
+      executionReasoningEffort: executionOptions.reasoningEffort,
+      executionSpeed: executionOptions.serviceTier ?? 'standard',
+      batchCount: 1,
+      useThinkingAndSearch: false,
+    };
+  }
+
+  function buildCatalogGenerationConfigFromJob(job: Job) {
+    const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
+    const executionOptions = resolveExecutionOptions(job.execution);
+
+    return {
+      prompt: parsedPrompt.prompt,
+      recipeContext: parsedPrompt.recipeContext,
+      recipeId: parsedPrompt.recipeId,
+      recipeParams: null,
+      attachments: [],
+      aspectRatio: parsedPrompt.aspectRatio,
+      imageSize: parsedPrompt.imageSize,
+      negativePrompt: parsedPrompt.negativePrompt,
+      temperature: 0.8,
+      model: 'codex-imagegen',
+      executionModel: executionOptions.model,
+      executionReasoningEffort: executionOptions.reasoningEffort,
+      executionSpeed: executionOptions.serviceTier ?? 'standard',
+      batchCount: 1,
+      useThinkingAndSearch: false,
+    };
+  }
+
+  async function runDryJob(job: Job, signal?: AbortSignal) {
+    addJobEventFn(job.id, 'dry_run.started', 'Dry run asset creation started.');
+    logger('info', 'worker', 'Dry run job started.', job.id);
+    await waitWithAbort(500, signal);
+    throwIfAborted(signal);
+    const asset = createDryRunAsset(job);
+    const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
+    const catalogImage = registerCatalogImageFn({
+      filePath: asset.filePath,
+      thumbnailPath: asset.thumbnailPath,
+      prompt: asset.prompt,
+      negativePrompt: parsedPrompt.negativePrompt || null,
+      aspectRatio: parsedPrompt.aspectRatio,
+      imageSize: parsedPrompt.imageSize,
+      width: asset.width,
+      height: asset.height,
+      mimeType: asset.mimeType,
+      fileSizeBytes: statSync(asset.filePath).size,
+      jobId: asset.jobId,
+      workspaceId: asset.projectId,
+      recipeId: parsedPrompt.recipeId,
+      generationConfig: buildCatalogGenerationConfig(job.finalPromptUsed),
+    });
+    addJobEventFn(job.id, 'asset.created', 'Dry run asset created.', { assetId: asset.id });
+    publishEventFn('asset.created', asset);
+    publishEventFn('catalog.created', catalogImage);
+    updateJobStatusFn(job.id, 'completed');
+    publishEventFn('job.completed', getJobFn(job.id));
+    logger('info', 'worker', `Dry run job completed. Asset: ${path.basename(asset.filePath)}`, job.id);
+  }
+
+  async function runCodexJob(job: Job, signal?: AbortSignal) {
+    addJobEventFn(job.id, 'codex.started', 'Codex image generation started.');
+    logger('info', 'worker', 'Codex imagegen job started.', job.id);
+    const turnRecordId = upsertCodexTurnFn({ jobId: job.id, status: 'running' });
+    const executionOptions = resolveExecutionOptions(job.execution);
+    const result = await codexTurn.runTurn({
+      jobId: job.id,
+      projectId: job.projectId,
+      prompt: job.finalPromptUsed,
+      execution: job.execution,
+      signal,
+    });
+
+    throwIfAborted(signal);
+
+    upsertCodexTurnFn({
+      id: turnRecordId,
+      jobId: job.id,
+      codexThreadId: result.threadId,
+      codexTurnId: result.turnId,
+      transcriptPath: result.transcript,
+      status: result.assets.length > 0 ? 'completed' : 'needs_review',
+    });
+
+    const discoveredImagePath = result.assets[0]?.sourcePath ?? null;
+    if (!discoveredImagePath) {
+      updateJobStatusFn(job.id, 'needs_review');
+      publishEventFn('job.progress', getJobFn(job.id));
+      logger(
+        'warn',
+        'worker',
+        `Codex turn completed but no image file was discovered. Transcript: ${result.transcript}`,
+        job.id,
+      );
+      return;
+    }
+
+    const ext = path.extname(discoveredImagePath).toLowerCase();
+    const mimeType =
+      ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : ext === '.webp' ? 'image/webp' : 'image/png';
+    const asset = addAssetFn({
+      projectId: job.projectId,
+      jobId: job.id,
+      filePath: discoveredImagePath,
+      thumbnailPath: null,
+      publicUrl: toPublicAssetUrlFn(discoveredImagePath),
+      prompt: job.finalPromptUsed,
+      width: null,
+      height: null,
+      mimeType,
+    });
+    const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
+    const catalogImage = registerCatalogImageFn({
+      filePath: asset.filePath,
+      thumbnailPath: asset.thumbnailPath,
+      prompt: asset.prompt,
+      negativePrompt: parsedPrompt.negativePrompt || null,
+      aspectRatio: parsedPrompt.aspectRatio,
+      imageSize: parsedPrompt.imageSize,
+      width: asset.width,
+      height: asset.height,
+      mimeType: asset.mimeType,
+      fileSizeBytes: statSync(asset.filePath).size,
+      jobId: asset.jobId,
+      workspaceId: asset.projectId,
+      recipeId: parsedPrompt.recipeId,
+      generationConfig: buildCatalogGenerationConfigFromJob(job),
+    });
+    void embedMetadataFn(asset.filePath, {
+      prompt: job.finalPromptUsed,
+      negativePrompt: parsedPrompt.negativePrompt || null,
+      aspectRatio: parsedPrompt.aspectRatio,
+      imageSize: parsedPrompt.imageSize,
+      model: executionOptions.model,
+      recipe: parsedPrompt.recipeId,
+      batchId: job.id,
+      generatedAt: new Date().toISOString(),
+      studioVersion: '0.0.0',
+      libraryId: catalogImage.libraryId,
+      catalogId: catalogImage.id,
+    }).catch((error) => {
+      logger(
+        'warn',
+        'metadata',
+        `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`,
+        job.id,
+      );
+    });
+
+    addJobEventFn(job.id, 'asset.created', 'Codex image asset imported.', { assetId: asset.id });
+    publishEventFn('asset.created', asset);
+    publishEventFn('catalog.created', catalogImage);
+    updateJobStatusFn(job.id, 'completed');
+    publishEventFn('job.completed', getJobFn(job.id));
+    logger('info', 'worker', `Codex job completed. Asset: ${path.basename(asset.filePath)}`, job.id);
+  }
+
+  async function processJob(job: Job) {
+    const controller = new AbortController();
+    runningJobControllers.set(job.id, controller);
+
+    try {
+      updateJobStatusFn(job.id, 'running');
+      publishEventFn('job.running', getJobFn(job.id));
+      if (job.kind === 'dry_run') {
+        await runDryJob(job, controller.signal);
+      } else if (job.kind === 'codex_imagegen') {
+        await runCodexJob(job, controller.signal);
+      } else {
+        throw new Error('Unsupported job kind received by worker');
+      }
+    } catch (error) {
+      if (isAbortError(error)) {
+        addJobEventFn(job.id, 'job.cancelled', 'Job cancelled by user.');
+        updateJobStatusFn(job.id, 'cancelled');
+        publishEventFn('job.cancelled', getJobFn(job.id));
+        logger('info', 'worker', 'Job cancelled by user.', job.id);
+      } else {
+        const message = error instanceof Error ? error.message : String(error);
+        updateJobStatusFn(job.id, 'failed', message);
+        publishEventFn('job.failed', getJobFn(job.id));
+        logger('error', 'worker', message, job.id);
+      }
+    } finally {
+      runningJobControllers.delete(job.id);
+      runningJobs.delete(job.id);
+    }
+  }
+
+  async function processQueue() {
+    while (activeWorkerCount < getMaxConcurrentJobs() && jobQueue.length > 0) {
+      const job = jobQueue.shift();
+      if (!job) continue;
+
+      activeWorkerCount += 1;
+      const workPromise = Promise.resolve().then(async () => {
+        try {
+          await processJob(job);
+        } finally {
+          activeWorkerCount -= 1;
+          activeJobPromises.delete(job.id);
+          queueMicrotask(processQueue);
+        }
+      });
+      activeJobPromises.set(job.id, workPromise);
+    }
+  }
+
+  return {
+    enqueueJob(job: Job) {
+      if (runningJobs.has(job.id)) return;
+      runningJobs.add(job.id);
+      jobQueue.push(job);
+      queueMicrotask(processQueue);
+    },
+    cancelQueuedOrRunningJob(jobId: string) {
+      const queuedIndex = jobQueue.findIndex((job) => job.id === jobId);
+      if (queuedIndex >= 0) {
+        jobQueue.splice(queuedIndex, 1);
+        runningJobs.delete(jobId);
+        addJobEventFn(jobId, 'job.cancelled', 'Queued job cancelled before execution.');
+        const job = updateJobStatusFn(jobId, 'cancelled');
+        publishEventFn('job.cancelled', job);
+        logger('info', 'worker', 'Queued job cancelled before execution.', jobId);
+        return job;
+      }
+
+      const controller = runningJobControllers.get(jobId);
+      if (controller) {
+        addJobEventFn(jobId, 'job.cancel.requested', 'Cancellation requested for running job.');
+        controller.abort();
+        logger('info', 'worker', 'Cancellation requested for running job.', jobId);
+        return getJobFn(jobId);
+      }
+
+      return getJobFn(jobId);
+    },
+    getWorkerStatus() {
+      return {
+        maxConcurrentJobs: getMaxConcurrentJobs(),
+        activeWorkerCount,
+        queuedJobs: jobQueue.length,
+        trackedJobs: runningJobs.size,
+      };
+    },
+    async resetWorkerState() {
+      const queuedJobs = jobQueue.splice(0, jobQueue.length);
+
+      for (const queuedJob of queuedJobs) {
+        runningJobs.delete(queuedJob.id);
+        addJobEventFn(queuedJob.id, 'job.cancelled', 'Queued job cancelled during studio reset.');
+        updateJobStatusFn(queuedJob.id, 'cancelled');
+        publishEventFn('job.cancelled', getJobFn(queuedJob.id));
+      }
+
+      for (const [jobId, controller] of runningJobControllers.entries()) {
+        if (!controller.signal.aborted) {
+          addJobEventFn(jobId, 'job.cancel.requested', 'Studio reset requested cancellation.');
+          controller.abort();
+        }
+      }
+
+      if (activeJobPromises.size > 0) {
+        await Promise.allSettled(activeJobPromises.values());
+      }
+
+      runningJobs.clear();
+    },
+  };
+}
+
+const defaultWorkerController = createWorkerController();
+
+export function getDefaultWorkerController() {
+  return defaultWorkerController;
 }
 
 export function enqueueJob(job: Job) {
-  if (runningJobs.has(job.id)) return;
-  runningJobs.add(job.id);
-  jobQueue.push(job);
-  queueMicrotask(processQueue);
+  defaultWorkerController.enqueueJob(job);
 }
 
 export function cancelQueuedOrRunningJob(jobId: string) {
-  const queuedIndex = jobQueue.findIndex((job) => job.id === jobId);
-  if (queuedIndex >= 0) {
-    jobQueue.splice(queuedIndex, 1);
-    runningJobs.delete(jobId);
-    addJobEvent(jobId, 'job.cancelled', 'Queued job cancelled before execution.');
-    const job = updateJobStatus(jobId, 'cancelled');
-    publishEvent('job.cancelled', job);
-    log('info', 'worker', 'Queued job cancelled before execution.', jobId);
-    return job;
-  }
-
-  const controller = runningJobControllers.get(jobId);
-  if (controller) {
-    addJobEvent(jobId, 'job.cancel.requested', 'Cancellation requested for running job.');
-    controller.abort();
-    log('info', 'worker', 'Cancellation requested for running job.', jobId);
-    return getJob(jobId);
-  }
-
-  return getJob(jobId);
+  return defaultWorkerController.cancelQueuedOrRunningJob(jobId);
 }
 
 export function getWorkerStatus() {
-  return {
-    maxConcurrentJobs: getMaxConcurrentJobs(),
-    activeWorkerCount,
-    queuedJobs: jobQueue.length,
-    trackedJobs: runningJobs.size,
-  };
+  return defaultWorkerController.getWorkerStatus();
 }
 
 export async function resetWorkerState() {
-  const queuedJobs = jobQueue.splice(0, jobQueue.length);
-
-  for (const queuedJob of queuedJobs) {
-    runningJobs.delete(queuedJob.id);
-    addJobEvent(queuedJob.id, 'job.cancelled', 'Queued job cancelled during studio reset.');
-    updateJobStatus(queuedJob.id, 'cancelled');
-    publishEvent('job.cancelled', getJob(queuedJob.id));
-  }
-
-  for (const [jobId, controller] of runningJobControllers.entries()) {
-    if (!controller.signal.aborted) {
-      addJobEvent(jobId, 'job.cancel.requested', 'Studio reset requested cancellation.');
-      controller.abort();
-    }
-  }
-
-  if (activeJobPromises.size > 0) {
-    await Promise.allSettled(activeJobPromises.values());
-  }
-
-  runningJobs.clear();
-}
-
-async function processQueue() {
-  while (activeWorkerCount < getMaxConcurrentJobs() && jobQueue.length > 0) {
-    const job = jobQueue.shift();
-    if (!job) continue;
-
-    activeWorkerCount += 1;
-    const workPromise = Promise.resolve().then(async () => {
-      try {
-        await processJob(job);
-      } finally {
-        activeWorkerCount -= 1;
-        activeJobPromises.delete(job.id);
-        queueMicrotask(processQueue);
-      }
-    });
-    activeJobPromises.set(job.id, workPromise);
-  }
-}
-
-async function processJob(job: Job) {
-  const controller = new AbortController();
-  runningJobControllers.set(job.id, controller);
-
-  try {
-    updateJobStatus(job.id, 'running');
-    publishEvent('job.running', getJob(job.id));
-    if (job.kind === 'dry_run') {
-      await runDryJob(job, controller.signal);
-    } else if (job.kind === 'codex_imagegen') {
-      await runCodexJob(job, controller.signal);
-    } else {
-      throw new Error('Unsupported job kind received by worker');
-    }
-  } catch (error) {
-    if (isAbortError(error)) {
-      addJobEvent(job.id, 'job.cancelled', 'Job cancelled by user.');
-      updateJobStatus(job.id, 'cancelled');
-      publishEvent('job.cancelled', getJob(job.id));
-      log('info', 'worker', 'Job cancelled by user.', job.id);
-    } else {
-      const message = error instanceof Error ? error.message : String(error);
-      updateJobStatus(job.id, 'failed', message);
-      publishEvent('job.failed', getJob(job.id));
-      log('error', 'worker', message, job.id);
-    }
-  } finally {
-    runningJobControllers.delete(job.id);
-    runningJobs.delete(job.id);
-  }
+  return defaultWorkerController.resetWorkerState();
 }

@@ -1,9 +1,12 @@
 import { useCallback } from 'react';
 
 import type { GenerationBatch, LogEntry, Toast } from '../types';
+import { buildStudioReadinessSnapshot } from '../lib/studioReadiness';
 import { useLocalStudioSync } from './useLocalStudioSync';
 import { useStudioDiagnostics } from './useStudioDiagnostics';
 import { useStudioOnboarding } from './useStudioOnboarding';
+import { useStudioSessionVerifier } from './useStudioSessionVerifier';
+import { useStudioStorageRecovery } from './useStudioStorageRecovery';
 
 type MergeBatches = (
   batches: GenerationBatch[],
@@ -20,9 +23,9 @@ interface UseStudioRuntimeProps {
 }
 
 /**
- * Concentrate the Studio runtime seams that talk to the local backend so the
- * shell consumes one grouped interface instead of stitching sync, onboarding,
- * and diagnostics manually.
+ * Concentrate the Studio Runtime seams that talk to the local backend so the
+ * shell consumes grouped activity, status, onboarding, and maintenance
+ * interfaces instead of stitching multiple adapters inline.
  */
 export function useStudioRuntime({
   logs,
@@ -37,29 +40,70 @@ export function useStudioRuntime({
     log,
     batches,
     mergeBatches,
-    addToast,
   });
-
+  const recovery = useStudioStorageRecovery({
+    batches,
+    mergeBatches,
+    addToast,
+    log,
+  });
+  const sessionVerifier = useStudioSessionVerifier({
+    addToast,
+    log,
+  });
   const onboarding = useStudioOnboarding({
     log,
     addToast,
     shouldAutoOpen,
   });
-
   const diagnosticsState = useStudioDiagnostics({
     initialHealth: onboarding.health,
-    isBackendConnected: sync.isBackendConnected,
+    isBackendConnected: sync.activity.isBackendConnected,
+  });
+
+  const readiness = buildStudioReadinessSnapshot({
+    health: diagnosticsState.health,
+    isBackendConnected: sync.activity.isBackendConnected,
+    localCodexSession: diagnosticsState.localCodexSession,
+    runtime: onboarding.runtime,
   });
 
   const refreshRuntime = useCallback(async () => {
-    await Promise.allSettled([onboarding.refreshHealth(), diagnosticsState.refreshDiagnostics()]);
-  }, [diagnosticsState, onboarding]);
+    await Promise.allSettled([
+      onboarding.refreshHealth(),
+      diagnosticsState.refreshDiagnostics(),
+      sync.refreshBackendState(),
+    ]);
+  }, [diagnosticsState, onboarding, sync]);
 
   return {
-    sync,
-    onboarding,
-    diagnostics: diagnosticsState.snapshot,
-    refreshDiagnostics: diagnosticsState.refreshDiagnostics,
-    refreshRuntime,
+    activity: sync.activity,
+    status: {
+      diagnostics: diagnosticsState.snapshot,
+      localCodexSession: diagnosticsState.localCodexSession,
+      readiness,
+      runtime: onboarding.runtime,
+    },
+    onboarding: {
+      apiBase: onboarding.apiBase,
+      error: onboarding.error,
+      health: onboarding.health,
+      isChecking: onboarding.isChecking,
+      isDesktopRuntime: onboarding.isDesktopRuntime,
+      isOpen: onboarding.isOpen,
+      isReady: onboarding.isReady,
+      isStartingAppServer: onboarding.isStartingAppServer,
+      open: onboarding.openOnboarding,
+      close: onboarding.closeOnboarding,
+      complete: onboarding.completeOnboarding,
+      refreshHealth: onboarding.refreshHealth,
+      ensureAppServer: onboarding.ensureAppServer,
+    },
+    maintenance: {
+      recoverWorkspace: recovery.recoverOrphanedBatches,
+      verifyCodexSession: sessionVerifier.verifyCodexSession,
+      refreshDiagnostics: diagnosticsState.refreshDiagnostics,
+      refreshRuntime,
+    },
   };
 }

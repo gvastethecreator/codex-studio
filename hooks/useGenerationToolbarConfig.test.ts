@@ -20,7 +20,7 @@ describe('buildGenerationToolbarProps', () => {
           executionSpeed: 'standard',
           batchCount: 1,
         },
-        updateConfig: (key, value) => calls.push(`update:${String(key)}:${String(value)}`),
+        updateConfig: (key, value) => calls.push(`update:${String(key)}:${JSON.stringify(value)}`),
         updateAttachment: (id) => calls.push(`updateAttachment:${id}`),
         onFileSelect: () => calls.push('fileSelect'),
         onFilesDrop: () => calls.push('filesDrop'),

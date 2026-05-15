@@ -3,7 +3,7 @@ import path from 'node:path';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
 import { resolvePlatformPath } from '../platformPaths';
-import { createAssetExtractor } from './assetExtractor';
+import { createAssetExtractor, type AssetExtractor } from './assetExtractor';
 import { resolveJobExecutionOptions } from './executionOptions';
 import {
   closeImagegenSession,
@@ -40,6 +40,19 @@ export interface TurnResult {
 
 export interface CodexTurn {
   runTurn(params: TurnParams): Promise<TurnResult>;
+}
+
+export interface CodexTurnDependencies {
+  createAssetExtractor?: (jobId?: string) => AssetExtractor;
+  resolveExecutionOptions?: typeof resolveJobExecutionOptions;
+  closeSession?: typeof closeImagegenSession;
+  getSession?: typeof getImagegenSession;
+  getSessionKey?: typeof getImagegenSessionKey;
+  resolveLibraryPath?: typeof resolveLibraryPath;
+  resolveProcessCwd?: () => string;
+  imagegenSkillPath?: string;
+  logger?: typeof log;
+  sleep?: (durationMs: number) => Promise<unknown>;
 }
 
 function createAbortError() {
@@ -105,21 +118,35 @@ function extractAssistantText(notifications: JsonRpcMessage[]) {
     .join('\n');
 }
 
+interface ResolvedCodexTurnDependencies {
+  createAssetExtractor: (jobId?: string) => AssetExtractor;
+  resolveExecutionOptions: typeof resolveJobExecutionOptions;
+  closeSession: typeof closeImagegenSession;
+  getSession: typeof getImagegenSession;
+  getSessionKey: typeof getImagegenSessionKey;
+  resolveLibraryPath: typeof resolveLibraryPath;
+  resolveProcessCwd: () => string;
+  imagegenSkillPath: string;
+  logger: typeof log;
+  sleep: (durationMs: number) => Promise<unknown>;
+}
+
 async function runCodexImagegenTurn(
   session: SessionHandle,
   job: { id: string; prompt: string; projectId: string; execution?: JobExecutionOptions | null },
   transcriptPath: string,
   startedAt: number,
   sessionKey: string,
+  dependencies: ResolvedCodexTurnDependencies,
   signal?: AbortSignal,
 ): Promise<TurnResult> {
-  const executionOptions = resolveJobExecutionOptions(job.execution);
-  const assetExtractor = createAssetExtractor(job.id);
+  const executionOptions = dependencies.resolveExecutionOptions(job.execution);
+  const assetExtractor = dependencies.createAssetExtractor(job.id);
   const notificationStart = session.client.getNotificationCount();
   let turnId: string | null = null;
 
   const invalidateSession = () =>
-    closeImagegenSession(sessionKey, {
+    dependencies.closeSession(sessionKey, {
       invalidatePersistedThread: true,
     });
 
@@ -127,7 +154,7 @@ async function runCodexImagegenTurn(
     session.client.request('turn/start', {
       threadId: session.threadId,
       input: [
-        { type: 'skill', name: 'imagegen', path: IMAGEGEN_SKILL_PATH },
+        { type: 'skill', name: 'imagegen', path: dependencies.imagegenSkillPath },
         {
           type: 'text',
           text:
@@ -138,7 +165,7 @@ async function runCodexImagegenTurn(
           text_elements: [],
         },
       ],
-      cwd: process.cwd(),
+      cwd: dependencies.resolveProcessCwd(),
       approvalPolicy: 'never',
       model: executionOptions.model,
       effort: executionOptions.reasoningEffort,
@@ -207,7 +234,7 @@ async function runCodexImagegenTurn(
     };
   }
 
-  const outputPath = resolveLibraryPath(
+  const outputPath = dependencies.resolveLibraryPath(
     'assets',
     `${job.id}-codex${path.extname(discoveredAsset.sourcePath).toLowerCase() || '.png'}`,
   );
@@ -227,23 +254,26 @@ async function runCodexImagegenTurn(
   };
 }
 
-async function runImagegenJob(job: {
-  id: string;
-  prompt: string;
-  projectId: string;
-  execution?: JobExecutionOptions | null;
-  signal?: AbortSignal;
-}): Promise<TurnResult> {
+async function runImagegenJob(
+  job: {
+    id: string;
+    prompt: string;
+    projectId: string;
+    execution?: JobExecutionOptions | null;
+    signal?: AbortSignal;
+  },
+  dependencies: ResolvedCodexTurnDependencies,
+): Promise<TurnResult> {
   const startedAt = Date.now();
-  const transcriptDir = resolveLibraryPath('transcripts', job.id);
+  const transcriptDir = dependencies.resolveLibraryPath('transcripts', job.id);
   mkdirSync(transcriptDir, { recursive: true });
   const transcriptPath = path.join(transcriptDir, 'events.jsonl');
-  const sessionKey = getImagegenSessionKey(job.prompt);
+  const sessionKey = dependencies.getSessionKey(job.prompt);
   let lastError: unknown = null;
 
   for (let attempt = 1; attempt <= 2; attempt += 1) {
     let runResult!: TurnResult;
-    const session = await getImagegenSession(sessionKey, job.execution);
+    const session = await dependencies.getSession(sessionKey, job.execution);
     const run = session.queue.then(async () => {
       try {
         runResult = await runCodexImagegenTurn(
@@ -252,6 +282,7 @@ async function runImagegenJob(job: {
           transcriptPath,
           startedAt,
           sessionKey,
+          dependencies,
           job.signal,
         );
       } catch (error) {
@@ -262,7 +293,7 @@ async function runImagegenJob(job: {
         const invalidatePersistedThread = /thread.+not found|unknown thread|invalid thread/i.test(
           message,
         );
-        closeImagegenSession(sessionKey, { invalidatePersistedThread });
+        dependencies.closeSession(sessionKey, { invalidatePersistedThread });
         throw error;
       }
     });
@@ -280,29 +311,56 @@ async function runImagegenJob(job: {
           message,
         );
       if (!retryable || attempt === 2) throw error;
-      log(
+      dependencies.logger(
         'warn',
         'codex-session',
         `Retrying ${job.id} after transient Codex failure on ${sessionKey}: ${message}`,
         job.id,
       );
-      await Bun.sleep(1_500);
+      await dependencies.sleep(1_500);
     }
   }
 
   throw lastError instanceof Error ? lastError : new Error(String(lastError));
 }
 
-export function createCodexTurn(): CodexTurn {
+export function createCodexTurn({
+  createAssetExtractor: createAssetExtractorFn = createAssetExtractor,
+  resolveExecutionOptions = resolveJobExecutionOptions,
+  closeSession = closeImagegenSession,
+  getSession = getImagegenSession,
+  getSessionKey = getImagegenSessionKey,
+  resolveLibraryPath: resolveLibrary = resolveLibraryPath,
+  resolveProcessCwd = () => process.cwd(),
+  imagegenSkillPath = IMAGEGEN_SKILL_PATH,
+  logger = log,
+  sleep = (durationMs: number) => Bun.sleep(durationMs),
+}: CodexTurnDependencies = {}): CodexTurn {
+  const dependencies: ResolvedCodexTurnDependencies = {
+    createAssetExtractor: createAssetExtractorFn,
+    resolveExecutionOptions,
+    closeSession,
+    getSession,
+    getSessionKey,
+    resolveLibraryPath: resolveLibrary,
+    resolveProcessCwd,
+    imagegenSkillPath,
+    logger,
+    sleep,
+  };
+
   return {
     runTurn(params) {
-      return runImagegenJob({
-        id: params.jobId,
-        projectId: params.projectId,
-        prompt: params.prompt,
-        execution: params.execution,
-        signal: params.signal,
-      });
+      return runImagegenJob(
+        {
+          id: params.jobId,
+          projectId: params.projectId,
+          prompt: params.prompt,
+          execution: params.execution,
+          signal: params.signal,
+        },
+        dependencies,
+      );
     },
   };
 }

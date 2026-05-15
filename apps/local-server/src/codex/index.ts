@@ -1,6 +1,7 @@
 export * from './accountStatus';
 export * from './assetExtractor';
 export * from './executionOptions';
+export * from './localCodexSession';
 export * from './modelCatalog';
 export * from './processSupervisor';
 export * from './rpcClient';

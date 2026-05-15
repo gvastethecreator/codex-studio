@@ -1,5 +1,6 @@
 import { getCodexWsUrl } from '../config';
 import { ensureAppServer } from './processSupervisor';
+import type { AppServerEnsureReason } from '../../../../packages/shared/src';
 
 export interface JsonRpcMessage {
   jsonrpc?: '2.0';
@@ -8,6 +9,14 @@ export interface JsonRpcMessage {
   params?: any;
   result?: any;
   error?: any;
+}
+
+export interface RpcClientDependencies {
+  ensureAppServer?: (reason?: AppServerEnsureReason) => void;
+  wsUrl?: string;
+  ensureReason?: AppServerEnsureReason;
+  retryDelayMs?: number;
+  maxConnectAttempts?: number;
 }
 
 export interface RpcSession {
@@ -25,30 +34,49 @@ export interface RpcClient {
 export class CodexRpcClient {
   private socket: WebSocket | null = null;
   private nextId = 1;
+  private readonly ensureAppServerFn: (reason?: AppServerEnsureReason) => void;
+  private readonly wsUrl: string;
+  private readonly ensureReason: AppServerEnsureReason;
+  private readonly retryDelayMs: number;
+  private readonly maxConnectAttempts: number;
   private pending = new Map<
     number,
     { resolve: (value: any) => void; reject: (error: Error) => void }
   >();
   private notifications: JsonRpcMessage[] = [];
 
-  async connect() {
-    ensureAppServer();
+  constructor({
+    ensureAppServer: ensureAppServerFn = ensureAppServer,
+    wsUrl = getCodexWsUrl(),
+    ensureReason = 'rpc',
+    retryDelayMs = 200,
+    maxConnectAttempts = 25,
+  }: RpcClientDependencies = {}) {
+    this.ensureAppServerFn = ensureAppServerFn;
+    this.wsUrl = wsUrl;
+    this.ensureReason = ensureReason;
+    this.retryDelayMs = retryDelayMs;
+    this.maxConnectAttempts = maxConnectAttempts;
+  }
 
-    for (let attempt = 0; attempt < 25; attempt += 1) {
+  async connect() {
+    this.ensureAppServerFn(this.ensureReason);
+
+    for (let attempt = 0; attempt < this.maxConnectAttempts; attempt += 1) {
       try {
         await this.tryConnect();
         return;
       } catch {
-        await Bun.sleep(200);
+        await Bun.sleep(this.retryDelayMs);
       }
     }
 
-    throw new Error(`Unable to connect to ${getCodexWsUrl()}`);
+    throw new Error(`Unable to connect to ${this.wsUrl}`);
   }
 
   private tryConnect() {
     return new Promise<void>((resolve, reject) => {
-      const socket = new WebSocket(getCodexWsUrl());
+      const socket = new WebSocket(this.wsUrl);
       const timeout = setTimeout(() => {
         socket.close();
         reject(new Error('Timed out connecting to codex app-server'));

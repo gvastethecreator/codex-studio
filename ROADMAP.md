@@ -178,7 +178,7 @@ Ademas del plan por fases, estas son mejoras puntuales que hoy tendrian muy buen
 
 ### Confiabilidad
 
-- [ ] consolidar polling/revalidacion de health y account status;
+- [ ] consolidar revalidacion de health, Local Codex Session y reconexion SSE;
 - [ ] hacer mas visible cuando el backend se desconecta y cuando vuelve;
 - [ ] dejar mejor definido que significa un reset exitoso del lado frontend y backend;
 - [ ] agregar mas pruebas sobre reconexion, cancelacion y jobs persistentes.

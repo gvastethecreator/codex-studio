@@ -1,8 +1,8 @@
-import type { CodexAccountStatusResponse, HealthResponse } from '../packages/shared/src';
+import type { HealthResponse, LocalCodexSessionResponse } from '../packages/shared/src';
 
 export type StudioStatusTone = 'success' | 'warning' | 'danger';
 export type StudioUsageTone = 'available' | 'neutral' | 'offline';
-export type StudioRuntimeStatusKey = 'backend' | 'codexCli' | 'appServer';
+export type StudioRuntimeStatusKey = 'backend' | 'codexCli' | 'appServer' | 'localCodexSession';
 
 export interface StudioRuntimeStatusItem {
   key: StudioRuntimeStatusKey;
@@ -25,14 +25,14 @@ export interface StudioDiagnosticsSnapshot {
   health: HealthResponse | null;
   backendConnected: boolean;
   hasFetchedDiagnostics: boolean;
-  codexAccountStatus: CodexAccountStatusResponse | null;
+  localCodexSession: LocalCodexSessionResponse | null;
   statusItems: StudioRuntimeStatusItem[];
   usage: StudioUsageSummary;
 }
 
 interface BuildStudioDiagnosticsSnapshotArgs {
   health: HealthResponse | null;
-  codexAccountStatus: CodexAccountStatusResponse | null;
+  localCodexSession: LocalCodexSessionResponse | null;
   hasFetchedDiagnostics: boolean;
   isBackendConnected: boolean;
 }
@@ -48,10 +48,53 @@ export function formatCodexPlan(planType: string | null | undefined) {
 
 export function buildStudioDiagnosticsSnapshot({
   health,
-  codexAccountStatus,
+  localCodexSession,
   hasFetchedDiagnostics,
   isBackendConnected,
 }: BuildStudioDiagnosticsSnapshotArgs): StudioDiagnosticsSnapshot {
+  const localSessionStatus = !localCodexSession
+    ? {
+        value: 'Checking',
+        detail: 'Waiting for the first Local Codex Session check from the local backend.',
+        tone: 'warning' as const,
+      }
+    : localCodexSession.canRunLocalJobs
+      ? {
+          value: 'ChatGPT Login',
+          detail: localCodexSession.planType
+            ? `Local session ready · ${formatCodexPlan(localCodexSession.planType)}`
+            : 'Local ChatGPT login ready for Codex turns.',
+          tone: 'success' as const,
+        }
+      : localCodexSession.reason === 'chatgpt_login_required'
+        ? {
+            value: 'Login Required',
+            detail: 'Run `codex login` and choose ChatGPT before running local image tasks.',
+            tone: 'warning' as const,
+          }
+        : localCodexSession.reason === 'api_key_not_supported'
+          ? {
+              value: 'API Key',
+              detail:
+                'Local-only mode does not use API key sessions. Re-authenticate the local Codex CLI with ChatGPT.',
+              tone: 'danger' as const,
+            }
+          : localCodexSession.reason === 'external_tokens_not_supported'
+            ? {
+                value: 'External Tokens',
+                detail:
+                  'Codex Studio expects the user-managed ChatGPT login from the local Codex CLI.',
+                tone: 'danger' as const,
+              }
+            : {
+                value: 'Unavailable',
+                detail:
+                  localCodexSession.error
+                    ? `Could not read the local session: ${localCodexSession.error}`
+                    : 'The Local Codex Session is unavailable right now.',
+                tone: 'danger' as const,
+              };
+
   const statusItems: StudioRuntimeStatusItem[] = [
     {
       key: 'backend',
@@ -84,33 +127,45 @@ export function buildStudioDiagnosticsSnapshot({
         health?.appServer.running === true
           ? health.appServer.wsUrl || 'Codex app-server websocket is live.'
           : health
-            ? 'The Codex app-server will start automatically when a generation or account check needs it.'
+            ? 'The App-Server Lifecycle will start codex app-server automatically when a generation or Local Codex Session check needs it.'
             : 'Waiting for the first runtime check from the local backend.',
       tone: health?.appServer.running === true ? 'success' : 'warning',
+    },
+    {
+      key: 'localCodexSession',
+      label: 'Local Session',
+      value: localSessionStatus.value,
+      detail: localSessionStatus.detail,
+      tone: localSessionStatus.tone,
     },
   ];
 
   const usageIsLoading = isBackendConnected && !hasFetchedDiagnostics;
   const usageMeta = !isBackendConnected
     ? 'Local backend offline'
-    : codexAccountStatus?.planType
-      ? formatCodexPlan(codexAccountStatus.planType)
-      : codexAccountStatus?.authMode === 'apikey'
-        ? 'API key session'
-        : 'Codex account';
+    : localCodexSession?.planType
+      ? formatCodexPlan(localCodexSession.planType)
+      : localCodexSession?.reason === 'chatgpt_login_required'
+        ? 'ChatGPT login required'
+        : localCodexSession?.reason === 'api_key_not_supported'
+          ? 'Unsupported API key session'
+          : 'Local Codex session';
   const usageValue = !isBackendConnected
     ? 'Offline'
     : usageIsLoading
       ? 'Checking…'
-      : codexAccountStatus?.usage?.display ?? 'Unavailable';
+      : localCodexSession?.usage?.display ??
+        (localCodexSession?.reason === 'chatgpt_login_required'
+          ? 'Sign in with ChatGPT'
+          : 'Unavailable');
   const usageTooltip = !isBackendConnected
     ? 'Reconnect the local backend to refresh health, usage, and app-server status.'
-    : codexAccountStatus?.error
-      ? `Usage unavailable: ${codexAccountStatus.error}`
+    : localCodexSession?.error
+      ? `Usage unavailable: ${localCodexSession.error}`
       : `Available usage for ${usageMeta}`;
   const usageTone: StudioUsageTone = !isBackendConnected
     ? 'offline'
-    : codexAccountStatus?.usage?.display
+    : localCodexSession?.usage?.display
       ? 'available'
       : 'neutral';
 
@@ -118,14 +173,14 @@ export function buildStudioDiagnosticsSnapshot({
     health,
     backendConnected: isBackendConnected,
     hasFetchedDiagnostics,
-    codexAccountStatus,
+    localCodexSession,
     statusItems,
     usage: {
       value: usageValue,
       meta: usageMeta,
       tooltip: usageTooltip,
       unitLabel:
-        !usageIsLoading && codexAccountStatus?.usage?.unit === 'credits' ? 'credits' : null,
+        !usageIsLoading && localCodexSession?.usage?.unit === 'credits' ? 'credits' : null,
       tone: usageTone,
       isLoading: usageIsLoading,
     },

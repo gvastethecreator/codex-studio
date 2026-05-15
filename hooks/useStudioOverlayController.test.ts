@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
+import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import { buildStudioOverlayController } from './useStudioOverlayController';
 
 describe('buildStudioOverlayController', () => {
@@ -13,23 +14,22 @@ describe('buildStudioOverlayController', () => {
           {
             id: 'img-1',
             src: 'file://image-1.png',
+            batchId: 'batch-1',
+            createdAt: 1,
             config: {
+              ...DEFAULT_GENERATION_CONFIG,
               prompt: 'city skyline',
-              aspectRatio: '1:1',
-              numberOfImages: 1,
-              seed: 1,
-              safetyChecker: false,
             },
           },
           {
             id: 'img-2',
             src: 'file://image-2.png',
+            batchId: 'batch-2',
+            createdAt: 2,
             config: {
+              ...DEFAULT_GENERATION_CONFIG,
               prompt: 'forest trail',
-              aspectRatio: '16:9',
-              numberOfImages: 1,
-              seed: 2,
-              safetyChecker: false,
+              aspectRatio: '3:2',
             },
           },
         ],
@@ -47,11 +47,9 @@ describe('buildStudioOverlayController', () => {
         closeEditor: () => calls.push('closeEditor'),
         imageToEdit: {
           id: 'attachment-1',
-          type: 'image',
-          mimeType: 'image/png',
-          base64: 'abc123',
           name: 'edit.png',
           dataUrl: 'data:image/png;base64,abc123',
+          strength: 1,
         },
         handleExecuteEdit: async () => {
           calls.push('executeEdit');
@@ -67,14 +65,21 @@ describe('buildStudioOverlayController', () => {
         close: () => calls.push('closeDashboard'),
       },
       activity: {
-        mergedLogs: [{ id: 'log-1', message: 'hello', type: 'info', timestamp: 1 }],
+        mergedLogs: [{ id: 'log-1', message: 'hello', timestamp: 1 }],
         studioJobs: [
           {
             id: 'job-1',
+            projectId: 'default',
             kind: 'dry_run',
             status: 'queued',
+            execution: null,
+            originalPrompt: 'hello',
+            expandedPrompt: null,
+            finalPromptUsed: 'hello',
+            error: null,
             createdAt: '2026-05-07T00:00:00.000Z',
             updatedAt: '2026-05-07T00:00:00.000Z',
+            completedAt: null,
           },
         ],
         selectedJobDetail: null,
@@ -83,13 +88,26 @@ describe('buildStudioOverlayController', () => {
         onClearSelectedJob: () => calls.push('clearSelectedJob'),
       },
       vault: {
-        handleImportVault: () => calls.push('importVault'),
-        handleDeepScan: () => calls.push('deepScan'),
+        handleImportVault: () => {
+          calls.push('importVault');
+        },
+        handleDeepScan: () => {
+          calls.push('deepScan');
+        },
       },
       onboarding: {
         apiBase: 'http://localhost:4317',
         error: null,
         health: null,
+        localCodexSession: null,
+        readiness: {
+          stage: 'checking',
+          isReady: false,
+          nextAction: null,
+          title: 'Desktop runtime checking',
+          description: 'Refreshing backend health, app-server diagnostics, and the Local Codex Session.',
+          checks: [],
+        },
         isChecking: false,
         isDesktopRuntime: false,
         isOpen: true,
@@ -97,48 +115,52 @@ describe('buildStudioOverlayController', () => {
         isStartingAppServer: false,
         close: () => calls.push('closeOnboarding'),
         complete: () => calls.push('completeOnboarding'),
-        refreshHealth: () => calls.push('refreshOnboardingHealth'),
-        ensureAppServer: () => calls.push('ensureAppServer'),
+        refreshHealth: () => {
+          calls.push('refreshOnboardingHealth');
+        },
+        ensureAppServer: () => {
+          calls.push('ensureAppServer');
+        },
       },
       workspace: {
         batches: [
           {
             id: 'batch-1',
-            timestamp: 1,
+            workspaceId: 'default',
+            config: DEFAULT_GENERATION_CONFIG,
             images: [],
-            prompt: 'prompt',
-            aspectRatio: '1:1',
+            createdAt: 1,
           },
           {
             id: 'batch-2',
-            timestamp: 2,
+            workspaceId: 'default',
+            config: DEFAULT_GENERATION_CONFIG,
             images: [],
-            prompt: 'prompt',
-            aspectRatio: '1:1',
+            createdAt: 2,
           },
           {
             id: 'batch-3',
-            timestamp: 3,
+            workspaceId: 'default',
+            config: DEFAULT_GENERATION_CONFIG,
             images: [],
-            prompt: 'prompt',
-            aspectRatio: '1:1',
+            createdAt: 3,
           },
         ],
-        workspaces: [{ id: 'default', name: 'Default' }],
+        workspaces: [{ id: 'default', name: 'Default', createdAt: 1 }],
         trash: [
           {
             id: 'trash-1',
-            timestamp: 1,
+            workspaceId: 'default',
+            config: DEFAULT_GENERATION_CONFIG,
             images: [],
-            prompt: 'prompt',
-            aspectRatio: '1:1',
+            createdAt: 1,
           },
           {
             id: 'trash-2',
-            timestamp: 2,
+            workspaceId: 'default',
+            config: DEFAULT_GENERATION_CONFIG,
             images: [],
-            prompt: 'prompt',
-            aspectRatio: '1:1',
+            createdAt: 2,
           },
         ],
         restoreFromTrash: (batchId) => calls.push(`restore:${batchId}`),
@@ -146,7 +168,9 @@ describe('buildStudioOverlayController', () => {
         closeTrash: () => calls.push('closeTrash'),
         isLimitModalOpen: true,
         dismissLimitModal: () => calls.push('dismissLimit'),
-        handleDownloadAndClear: () => calls.push('downloadAndClear'),
+        handleDownloadAndClear: () => {
+          calls.push('downloadAndClear');
+        },
       },
       workspaceActions: {
         requestRestoreAllTrash: (count) => calls.push(`restoreAll:${count}`),
@@ -159,7 +183,9 @@ describe('buildStudioOverlayController', () => {
           confirmLabel: 'Do it',
         },
         closeConfirmation: () => calls.push('closeConfirmation'),
-        confirmPendingAction: () => calls.push('confirmPendingAction'),
+        confirmPendingAction: () => {
+          calls.push('confirmPendingAction');
+        },
       },
       startTransition: (callback) => {
         calls.push('transition');

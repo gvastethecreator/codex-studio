@@ -3,19 +3,22 @@ import { getCodexWsUrl } from '../config';
 import { resolveCodexInvocation } from '../codexExecutable';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
+import type { AppServerEnsureReason } from '../../../../packages/shared/src';
 
 export interface ProcessInfo {
   pid: number | null;
   status: 'running' | 'stopped' | 'error';
   lastExitCode: number | null;
   lastExitAt: string | null;
+  lastEnsureAt: string | null;
+  lastEnsureReason: AppServerEnsureReason | null;
   lastStartError: string | null;
   lastInvocation: string[] | null;
   lastStartAt: string | null;
 }
 
 export interface ProcessSupervisor {
-  ensureAppServer(wsPort?: number): Promise<ProcessInfo>;
+  ensureAppServer(reason?: AppServerEnsureReason): Promise<ProcessInfo>;
   stopAppServer(): Promise<void>;
   onDiagnostics(cb: (info: ProcessInfo) => void): () => void;
 }
@@ -25,6 +28,8 @@ const diagnostics: Omit<ProcessInfo, 'status'> = {
   pid: null,
   lastExitCode: null,
   lastExitAt: null,
+  lastEnsureAt: null,
+  lastEnsureReason: null,
   lastInvocation: null,
   lastStartAt: null,
   lastStartError: null,
@@ -52,7 +57,10 @@ function currentInfo(): ProcessInfo {
   };
 }
 
-export function ensureAppServer() {
+export function ensureAppServer(reason: AppServerEnsureReason = 'session') {
+  diagnostics.lastEnsureAt = new Date().toISOString();
+  diagnostics.lastEnsureReason = reason;
+
   if (isAppServerRunning()) return;
 
   const logPath = resolveLibraryPath('logs', 'app-server.log');
@@ -130,8 +138,8 @@ export function createProcessSupervisor(): ProcessSupervisor {
   const listeners = new Set<(info: ProcessInfo) => void>();
   const publish = () => listeners.forEach((listener) => listener(currentInfo()));
   return {
-    async ensureAppServer() {
-      ensureAppServer();
+    async ensureAppServer(reason) {
+      ensureAppServer(reason);
       publish();
       return currentInfo();
     },

@@ -11,6 +11,33 @@ export type JobKind = 'dry_run' | 'codex_imagegen';
 export type CodexReasoningEffort = string;
 export type CodexServiceTier = 'standard' | 'fast' | 'flex';
 export type CodexAuthMode = 'apikey' | 'chatgpt' | 'chatgptAuthTokens' | null;
+export type AppServerEnsureReason = 'user' | 'rpc' | 'health' | 'session';
+export type LocalCodexSessionState =
+  | 'ready'
+  | 'requires_chatgpt_login'
+  | 'unsupported_auth'
+  | 'unavailable';
+export type LocalCodexSessionReason =
+  | 'chatgpt_login_required'
+  | 'api_key_not_supported'
+  | 'external_tokens_not_supported'
+  | 'app_server_unavailable'
+  | 'unknown'
+  | null;
+export type StudioReadinessStage = 'checking' | 'ready' | 'action_required' | 'offline';
+export type StudioReadinessAction =
+  | 'retry'
+  | 'install-codex'
+  | 'start-app-server'
+  | 'login-chatgpt'
+  | 'fix-library'
+  | null;
+export type StudioReadinessCheckKey =
+  | 'backend'
+  | 'library'
+  | 'codexCli'
+  | 'appServer'
+  | 'localCodexSession';
 
 export interface JobExecutionOptions {
   model: string;
@@ -52,16 +79,41 @@ export interface CodexUsageSnapshot {
   unit: string | null;
   display: string | null;
   path: string | null;
-  raw: unknown | null;
+  raw: unknown;
 }
 
-export interface CodexAccountStatusResponse {
+export interface LocalCodexSessionResponse {
   authMode: CodexAuthMode;
   planType: string | null;
   usage: CodexUsageSnapshot | null;
   source: 'app-server' | 'fallback';
   fetchedAt: string;
   error: string | null;
+  authLabel: string;
+  state: LocalCodexSessionState;
+  reason: LocalCodexSessionReason;
+  isChatgptLogin: boolean;
+  isSupportedAuthMode: boolean;
+  canRunLocalJobs: boolean;
+}
+
+export type CodexAccountStatusResponse = LocalCodexSessionResponse;
+
+export interface StudioReadinessCheck {
+  key: StudioReadinessCheckKey;
+  label: string;
+  ok: boolean;
+  detail: string;
+  blocking: boolean;
+}
+
+export interface StudioReadinessSnapshot {
+  stage: StudioReadinessStage;
+  isReady: boolean;
+  nextAction: StudioReadinessAction;
+  title: string;
+  description: string;
+  checks: StudioReadinessCheck[];
 }
 
 export interface StudioSettings {
@@ -242,6 +294,8 @@ export interface HealthResponse {
     lastInvocation: string | null;
     lastStartAt: string | null;
     lastStartError: string | null;
+    lastEnsureAt: string | null;
+    lastEnsureReason: AppServerEnsureReason | null;
   };
   checks: {
     libraryReady: boolean;

@@ -29,12 +29,13 @@ import { initStudio } from "./init";
 import { inspectLibrary, resolveLibraryPath } from "./library";
 import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from "./libraries";
 import { log } from "./logger";
-import { cancelQueuedOrRunningJob, enqueueJob, getWorkerStatus } from "./worker";
+import { getDefaultWorkerController, getWorkerStatus, type WorkerController } from "./worker";
 import {
   getCodexAccountStatus,
   ensureAppServer,
   getAppServerDiagnostics,
   getCodexModelCatalog,
+  getLocalCodexSession,
   isAppServerRunning,
 } from "./codex";
 import { embedMetadata } from "./metadataEmbedder";
@@ -42,7 +43,12 @@ import { getJobDetail } from './jobDetails';
 import { processReferences, ReferenceProcessingError } from "./referenceManager";
 import { createWorkspaceRoutes } from "./workspaceRoutes";
 import { resetStudioData } from './reset';
-import type { CreateJobRequest } from "../../../packages/shared/src";
+import type {
+  AppServerEnsureReason,
+  CodexModelCatalogResponse,
+  CreateJobRequest,
+  LocalCodexSessionResponse,
+} from "../../../packages/shared/src";
 
 export interface StudioAppInstance {
   app: Hono;
@@ -54,6 +60,17 @@ export interface StudioAppInstance {
 
 export interface CreateStudioAppOptions {
   runInit?: boolean;
+  dependencies?: {
+    readLocalCodexSession?: () => Promise<LocalCodexSessionResponse>;
+    readCodexModelCatalog?: () => Promise<CodexModelCatalogResponse>;
+    ensureAppServer?: (reason?: AppServerEnsureReason) => void;
+    getAppServerDiagnostics?: typeof getAppServerDiagnostics;
+    isAppServerRunning?: typeof isAppServerRunning;
+    worker?: Pick<
+      WorkerController,
+      'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus'
+    >;
+  };
 }
 
 export async function createStudioApp(
@@ -61,6 +78,13 @@ export async function createStudioApp(
 ): Promise<StudioAppInstance> {
   const initResult = options.runInit === false ? null : initStudio();
   const app = new Hono();
+  const readLocalCodexSession = options.dependencies?.readLocalCodexSession ?? getLocalCodexSession;
+  const readCodexModelCatalog = options.dependencies?.readCodexModelCatalog ?? getCodexModelCatalog;
+  const ensureLocalAppServer = options.dependencies?.ensureAppServer ?? ensureAppServer;
+  const readAppServerDiagnostics =
+    options.dependencies?.getAppServerDiagnostics ?? getAppServerDiagnostics;
+  const isLocalAppServerRunning = options.dependencies?.isAppServerRunning ?? isAppServerRunning;
+  const workerController = options.dependencies?.worker ?? getDefaultWorkerController();
 
   app.use("*", cors());
 
@@ -70,9 +94,9 @@ export async function createStudioApp(
     const [command, ...args] = resolveCodexInvocation(["--version"]);
     const codex = spawnSync(command, args, { encoding: "utf8" });
     const codexAvailable = codex.status === 0;
-    const appServerDiagnostics = getAppServerDiagnostics();
+    const appServerDiagnostics = readAppServerDiagnostics();
     const libraryReady = library.exists && library.writable && library.missingFolders.length === 0;
-    const appServerRunning = isAppServerRunning();
+    const appServerRunning = isLocalAppServerRunning();
 
     return c.json({
       ok: true,
@@ -111,21 +135,23 @@ export async function createStudioApp(
         lastInvocation: appServerDiagnostics.lastInvocation?.join(" ") ?? null,
         lastStartAt: appServerDiagnostics.lastStartAt,
         lastStartError: appServerDiagnostics.lastStartError,
+        lastEnsureAt: appServerDiagnostics.lastEnsureAt,
+        lastEnsureReason: appServerDiagnostics.lastEnsureReason,
       },
       checks: {
         libraryReady,
         codexReady: codexAvailable,
         onboardingReady: libraryReady && codexAvailable && appServerRunning,
       },
-      worker: getWorkerStatus(),
+      worker: workerController.getWorkerStatus(),
     });
   });
 
   app.post("/api/app-server/start", (c) => {
-    ensureAppServer();
-    const diagnostics = getAppServerDiagnostics();
+    ensureLocalAppServer('user');
+    const diagnostics = readAppServerDiagnostics();
     return c.json({
-      running: isAppServerRunning(),
+      running: isLocalAppServerRunning(),
       wsUrl: getCodexWsUrl(),
       pid: diagnostics.pid,
       lastStartError: diagnostics.lastStartError,
@@ -135,7 +161,11 @@ export async function createStudioApp(
   app.get("/api/settings", (c) => c.json(getSettings()));
 
   app.get("/api/codex/models", async (c) => {
-    return c.json(await getCodexModelCatalog());
+    return c.json(await readCodexModelCatalog());
+  });
+
+  app.get('/api/codex/session', async (c) => {
+    return c.json(await readLocalCodexSession());
   });
 
   app.get('/api/codex/account', async (c) => {
@@ -173,7 +203,7 @@ export async function createStudioApp(
       return c.json(job);
     }
 
-    const updatedJob = cancelQueuedOrRunningJob(jobId);
+    const updatedJob = workerController.cancelQueuedOrRunningJob(jobId);
     if (!updatedJob) {
       return c.json({ error: 'Job cannot be cancelled right now' }, 409);
     }
@@ -209,7 +239,7 @@ export async function createStudioApp(
     const queuedJob = updateJobFinalPrompt(job.id, finalPrompt) || job;
     publishEvent("job.created", queuedJob);
     log("info", "api", `Job created: ${queuedJob.kind}`, queuedJob.id);
-    enqueueJob(queuedJob);
+    workerController.enqueueJob(queuedJob);
     return c.json(queuedJob, 201);
   });
 
@@ -408,7 +438,7 @@ export async function createStudioApp(
     app,
     config: getSettings(),
     initResult: initResult ?? ({} as ReturnType<typeof initStudio>),
-    worker: getWorkerStatus(),
+    worker: workerController.getWorkerStatus(),
     async shutdown() {},
   };
 }

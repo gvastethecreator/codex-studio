@@ -1,5 +1,5 @@
 import React from 'react';
-import { Key, ExternalLink, ShieldCheck, Zap, X } from 'lucide-react';
+import { Key, ExternalLink, ShieldCheck, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface KeyPopoverProps {
@@ -17,14 +17,14 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
           animate={{ opacity: 1, scale: 1, y: 0, filter: 'blur(0px)' }}
           exit={{ opacity: 0, scale: 0.95, y: 10, filter: 'blur(10px)' }}
           transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-          className="absolute bottom-full mb-3 right-0 w-72 bg-zinc-900 border border-white/10 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-3xl z-[100] origin-bottom-right"
+          className="absolute bottom-full right-0 z-100 mb-3 w-72 origin-bottom-right rounded-xl border border-white/10 bg-zinc-900 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-3xl"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="p-4 border-b border-white/5 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Key size={14} className="text-accent-400" />
               <span className="text-[10px] font-black text-white uppercase tracking-widest">
-                Pro Credentials
+                Local Session
               </span>
             </div>
             <button onClick={onClose} className="text-zinc-500 hover:text-white transition-colors">
