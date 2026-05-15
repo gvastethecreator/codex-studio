@@ -10,12 +10,18 @@ import {
   Terminal,
   X,
 } from 'lucide-react';
-import type { HealthResponse } from '../packages/shared/src';
+import type {
+  HealthResponse,
+  LocalCodexSessionResponse,
+  StudioReadinessSnapshot,
+} from '../packages/shared/src';
 
 interface OnboardingModalProps {
   apiBase: string;
   error: string | null;
   health: HealthResponse | null;
+  localCodexSession: LocalCodexSessionResponse | null;
+  readiness: StudioReadinessSnapshot;
   isChecking: boolean;
   isDesktopRuntime: boolean;
   isOpen: boolean;
@@ -83,6 +89,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   apiBase,
   error,
   health,
+  localCodexSession,
+  readiness,
   isChecking,
   isDesktopRuntime,
   isOpen,
@@ -118,22 +126,41 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
     : health?.codexCli.available
       ? `Available${health.codexCli.version ? ` · ${health.codexCli.version}` : ''}`
       : 'Install or re-authenticate Codex CLI.';
+  const sessionDetail = !backendReachable
+    ? 'Waiting for the local backend.'
+    : localCodexSession?.canRunLocalJobs
+      ? localCodexSession.planType
+        ? `ChatGPT login active · ${localCodexSession.planType}`
+        : 'ChatGPT login active in the local Codex CLI.'
+      : localCodexSession?.reason === 'chatgpt_login_required'
+        ? 'Run `codex login` and choose ChatGPT.'
+        : localCodexSession?.reason === 'api_key_not_supported'
+          ? 'API key mode is unsupported here; re-authenticate with ChatGPT.'
+          : localCodexSession?.reason === 'external_tokens_not_supported'
+            ? 'Externally managed ChatGPT tokens are unsupported in this local-only flow.'
+            : localCodexSession?.error || 'Local session unavailable.';
   const statusMessage = isChecking
     ? 'Updating studio status...'
     : isReady
-      ? 'All set to generate your first job.'
+      ? readiness.description
       : error
         ? 'Could not query the local backend.'
-        : 'Some checks are still missing before generating.';
+        : readiness.description;
   const quickHint = isReady
     ? 'You can reopen this guide from Help anytime.'
-    : canStartAppServer
+    : readiness.nextAction === 'start-app-server'
       ? 'If everything else is ready, start the app-server from here.'
-      : 'Fix what is missing and then refresh the status.';
+      : readiness.nextAction === 'login-chatgpt'
+        ? 'This product only supports ChatGPT login inside the local Codex CLI.'
+        : readiness.nextAction === 'install-codex'
+          ? 'Install or restore Codex CLI first, then refresh the checks.'
+          : readiness.nextAction === 'fix-library'
+            ? 'Repair the Studio Library path and permissions, then refresh.'
+            : 'Fix what is missing and then refresh the status.';
   const commandHints = [
     'bun run studio:init',
     'bun run dev',
-    !health?.codexCli.available ? 'codex login' : null,
+    !health?.codexCli.available || !localCodexSession?.canRunLocalJobs ? 'codex login' : null,
   ].filter(Boolean) as string[];
 
   return (
@@ -240,6 +267,21 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       detail={libraryDetail}
                       meta={health?.libraryDir || 'path not set'}
                     />
+                    <StepRow
+                      icon={<Sparkles size={16} />}
+                      title="Local Codex Session"
+                      tone={
+                        !backendReachable
+                          ? 'pending'
+                          : localCodexSession?.canRunLocalJobs
+                            ? 'ready'
+                            : localCodexSession?.state === 'unsupported_auth'
+                              ? 'error'
+                              : 'warning'
+                      }
+                      detail={sessionDetail}
+                      meta={localCodexSession?.authLabel}
+                    />
                   </div>
                 </div>
 
@@ -247,6 +289,9 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
                     <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
                       Resumen
+                    </p>
+                    <p className="mt-2 text-[11px] font-black uppercase tracking-widest text-accent-300">
+                      {readiness.title}
                     </p>
                     <p className="mt-2 text-sm leading-relaxed text-zinc-200">{statusMessage}</p>
 

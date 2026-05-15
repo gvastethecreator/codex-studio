@@ -3,6 +3,8 @@ import type {
   HealthResponse,
   Job as StudioJob,
   JobDetailResponse,
+  LocalCodexSessionResponse,
+  StudioReadinessSnapshot,
 } from '../../packages/shared/src';
 import type {
   Attachment,
@@ -32,7 +34,7 @@ export interface StudioImageOverlaysProps {
   isEditorOpen: boolean;
   closeEditor: () => void;
   imageToEdit: Attachment | null;
-  handleExecuteEdit: (original: Attachment, mask: string, prompt: string) => Promise<void>;
+  handleExecuteEdit: (original: Attachment, mask: string, prompt: string) => Promise<unknown>;
   isEditingImage: boolean;
 }
 
@@ -55,6 +57,8 @@ export interface StudioSystemOverlaysProps {
   apiBase: string;
   onboardingError: string | null;
   onboardingHealth: HealthResponse | null;
+  localCodexSession: LocalCodexSessionResponse | null;
+  readiness: StudioReadinessSnapshot;
   isCheckingOnboarding: boolean;
   isDesktopRuntime: boolean;
   isOnboardingOpen: boolean;

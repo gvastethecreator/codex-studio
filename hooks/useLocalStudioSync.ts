@@ -1,17 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import {
-  getStudioHealth,
-  listStudioJobs,
-  listStudioLogs,
-  queryCatalog,
-  toStudioAssetUrl,
-} from '../services/localStudioService';
+import { listStudioJobs, listStudioLogs, queryCatalog } from '../services/localStudioService';
 import { createStudioEventStream } from '../services/studioEventSource';
-import type { GenerationBatch, LogEntry, Toast } from '../types';
+import type { GenerationBatch, LogEntry } from '../types';
 import type { Job as StudioJob, SystemLog as StudioLog } from '../packages/shared/src';
-import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
-import { validateVault } from '../utils/fileUtils';
-import { getAllEntries } from '../utils/idb';
+import { materializeVisualBatches } from '../lib/studioVisualBatchCatalog';
 
 type MergeBatches = (
   batches: GenerationBatch[],
@@ -23,7 +15,18 @@ interface UseLocalStudioSyncProps {
   log: (message: string) => void;
   batches: GenerationBatch[];
   mergeBatches: MergeBatches;
-  addToast: (message: string, type: Toast['type']) => void;
+}
+
+export interface LocalStudioSyncActivity {
+  studioJobs: StudioJob[];
+  mergedLogs: LogEntry[];
+  activeServerJobCount: number;
+  isBackendConnected: boolean;
+}
+
+export interface LocalStudioSyncResult {
+  activity: LocalStudioSyncActivity;
+  refreshBackendState: () => Promise<void>;
 }
 
 /**
@@ -39,52 +42,30 @@ function mapStudioLog(entry: StudioLog): LogEntry {
 }
 
 /**
- * Materialize one catalog asset into the legacy visual batch model used by the
- * current studio grid while the catalog migration is still in flight.
- */
-function mapAssetToBatch(
-  asset: Awaited<ReturnType<typeof queryCatalog>>['images'][number],
-): GenerationBatch {
-  const createdAt = Date.parse(asset.createdAt) || Date.now();
-  const batchId = asset.batchId || `studio-${asset.jobId ?? asset.id}`;
-
-  return {
-    id: batchId,
-    workspaceId: asset.workspaceId || 'default',
-    config: buildGenerationConfigFromCatalogImage(asset),
-    images: [
-      {
-        id: asset.id,
-        src: toStudioAssetUrl(asset.publicUrl),
-        thumbnail: asset.thumbnailUrl ? toStudioAssetUrl(asset.thumbnailUrl) : undefined,
-        batchId,
-        createdAt,
-        isFavorite: false,
-      },
-    ],
-    createdAt,
-  };
-}
-
-/**
- * Keep the React UI synchronized with persistent backend jobs, logs, and
- * imported local assets.
+ * Keep Local Studio Sync focused on mirroring backend jobs, logs, and Catalog
+ * Entries into the Visual Batch cache consumed by the current Studio grid.
  */
 export function useLocalStudioSync({
   logs,
   log,
   batches,
   mergeBatches,
-  addToast,
-}: UseLocalStudioSyncProps) {
+}: UseLocalStudioSyncProps): LocalStudioSyncResult {
   const [studioJobs, setStudioJobs] = useState<StudioJob[]>([]);
   const [studioLogs, setStudioLogs] = useState<StudioLog[]>([]);
   const [isBackendConnected, setIsBackendConnected] = useState(false);
   const batchesRef = useRef(batches);
+  const isMountedRef = useRef(true);
 
   useEffect(() => {
     batchesRef.current = batches;
   }, [batches]);
+
+  useEffect(() => {
+    return () => {
+      isMountedRef.current = false;
+    };
+  }, []);
 
   const mergedLogs = useMemo(() => {
     return [...studioLogs.map(mapStudioLog), ...logs]
@@ -98,52 +79,53 @@ export function useLocalStudioSync({
     ).length;
   }, [studioJobs]);
 
-  useEffect(() => {
-    let cancelled = false;
+  const importCatalogEntries = useCallback(async () => {
+    const assets = (await queryCatalog({ limit: 200 })).images;
+    if (assets.length === 0 || !isMountedRef.current) {
+      return;
+    }
 
-    const importLocalAssets = async () => {
-      const assets = (await queryCatalog({ limit: 200 })).images;
-      if (assets.length === 0 || cancelled) return;
+    const existingImageIds = new Set(
+      batchesRef.current.flatMap((batch) => batch.images.map((image) => image.id)),
+    );
+    const newBatches = materializeVisualBatches(assets, {
+      excludeImageIds: existingImageIds,
+    });
 
-      const existingImageIds = new Set(
-        batchesRef.current.flatMap((batch) => batch.images.map((image) => image.id)),
+    if (newBatches.length > 0 && isMountedRef.current) {
+      mergeBatches(newBatches, { prepend: true, ensureWorkspaces: true });
+      log(`Imported ${newBatches.length} local Codex asset(s) from the studio library`);
+    }
+  }, [log, mergeBatches]);
+
+  const refreshBackendState = useCallback(async () => {
+    try {
+      const [backendJobs, backendLogs] = await Promise.all([listStudioJobs(), listStudioLogs()]);
+
+      if (!isMountedRef.current) {
+        return;
+      }
+
+      setStudioJobs(backendJobs);
+      setStudioLogs(backendLogs);
+      setIsBackendConnected(true);
+
+      await importCatalogEntries();
+    } catch (error) {
+      if (!isMountedRef.current) {
+        return;
+      }
+
+      setIsBackendConnected(false);
+      log(
+        `Local Codex backend sync failed: ${error instanceof Error ? error.message : String(error)}`,
       );
-      const newBatches = assets
-        .filter((asset) => !existingImageIds.has(asset.id))
-        .map(mapAssetToBatch);
-      const importedCount = newBatches.length;
+    }
+  }, [importCatalogEntries, log]);
 
-      if (importedCount > 0) {
-        mergeBatches(newBatches, { prepend: true, ensureWorkspaces: true });
-      }
-
-      if (importedCount > 0 && !cancelled) {
-        log(`Imported ${importedCount} local Codex asset(s) from the studio library`);
-      }
-    };
-
-    const refreshBackendState = async () => {
-      try {
-        const [backendJobs, backendLogs] = await Promise.all([listStudioJobs(), listStudioLogs()]);
-
-        if (!cancelled) {
-          setStudioJobs(backendJobs);
-          setStudioLogs(backendLogs);
-          setIsBackendConnected(true);
-        }
-
-        await importLocalAssets();
-      } catch (error) {
-        if (!cancelled) {
-          setIsBackendConnected(false);
-          log(
-            `Local Codex backend sync failed: ${error instanceof Error ? error.message : String(error)}`,
-          );
-        }
-      }
-    };
-
+  useEffect(() => {
     void refreshBackendState();
+
     const stream = createStudioEventStream();
     const unsubscribeJob = stream.onJobUpdate('*', (job) => {
       setStudioJobs((prev) =>
@@ -151,7 +133,7 @@ export function useLocalStudioSync({
       );
     });
     const unsubscribeAsset = stream.onAssetAdded(() => {
-      void importLocalAssets();
+      void importCatalogEntries();
     });
     const unsubscribeLog = stream.onLogAdded((entry) => {
       setStudioLogs((prev) =>
@@ -160,112 +142,27 @@ export function useLocalStudioSync({
     });
     const unsubscribeConnection = stream.onConnectionChange((connected) => {
       setIsBackendConnected(connected);
-      if (!connected) void refreshBackendState();
+      if (!connected) {
+        void refreshBackendState();
+      }
     });
+
     return () => {
-      cancelled = true;
       unsubscribeJob();
       unsubscribeAsset();
       unsubscribeLog();
       unsubscribeConnection();
       stream.close();
     };
-  }, [log, mergeBatches]);
-
-  const recoverOrphanedBatches = useCallback(async () => {
-    addToast('Starting workspace recovery scan...', 'info');
-
-    try {
-      const entries = await getAllEntries();
-      const knownKeys = [
-        'session-logs',
-        'app-workspaces',
-        'catalog-cache',
-        'catalog-trash',
-        'user-wallet-balance',
-        'bg-config',
-        'isBackgroundEnabled',
-        'generation-config',
-      ];
-      const recoveredCandidates: GenerationBatch[] = [];
-
-      for (const entry of entries) {
-        if (typeof entry.key === 'string' && !knownKeys.includes(entry.key)) {
-          if (Array.isArray(entry.value) && validateVault(entry.value)) {
-            recoveredCandidates.push(...entry.value);
-          } else if (validateVault([entry.value])) {
-            recoveredCandidates.push(entry.value);
-          }
-        }
-      }
-
-      for (let index = 0; index < localStorage.length; index += 1) {
-        const key = localStorage.key(index);
-        if (!key || knownKeys.includes(key)) continue;
-
-        try {
-          const item = localStorage.getItem(key);
-          if (!item) continue;
-
-          const parsed = JSON.parse(item);
-          if (Array.isArray(parsed) && validateVault(parsed)) {
-            recoveredCandidates.push(...parsed);
-          } else if (validateVault([parsed])) {
-            recoveredCandidates.push(parsed);
-          }
-        } catch {
-          // Ignore invalid storage payloads.
-        }
-      }
-
-      const existingIds = new Set(batchesRef.current.map((batch) => batch.id));
-      const uniqueRecovered = recoveredCandidates.filter((batch) => !existingIds.has(batch.id));
-
-      if (uniqueRecovered.length > 0) {
-        mergeBatches(uniqueRecovered, { prepend: true, maxTotal: 100, ensureWorkspaces: true });
-      }
-
-      addToast(
-        uniqueRecovered.length > 0
-          ? `Recovery complete: restored ${uniqueRecovered.length} saved workspace batch${uniqueRecovered.length === 1 ? '' : 'es'}.`
-          : 'Recovery scan complete: no additional saved workspace snapshots were found.',
-        uniqueRecovered.length > 0 ? 'success' : 'info',
-      );
-    } catch (error) {
-      log(`Workspace recovery scan failed: ${error instanceof Error ? error.message : String(error)}`);
-      addToast('Workspace recovery scan failed', 'error');
-    }
-  }, [addToast, log, mergeBatches]);
-
-  const verifyCodexSession = useCallback(async () => {
-    try {
-      const health = await getStudioHealth();
-      const isReady = health.ok && health.checks.onboardingReady;
-      const message = isReady
-        ? 'Local Codex session available'
-        : !health.checks.codexReady
-          ? 'Codex CLI not available yet'
-          : !health.appServer.running
-            ? 'Local backend available, app-server not active'
-            : 'The local library needs attention';
-      addToast(message, isReady ? 'success' : 'error');
-      log(
-        `Codex health: cli=${health.codexCli.available ? health.codexCli.version || 'available' : 'missing'}, appServer=${health.appServer.running ? health.appServer.wsUrl : 'stopped'}, libraryReady=${health.checks.libraryReady}`,
-      );
-    } catch (error) {
-      addToast(
-        error instanceof Error ? error.message : 'Could not verify local Codex',
-        'error',
-      );
-    }
-  }, [addToast, log]);
+  }, [importCatalogEntries, refreshBackendState]);
 
   return {
-    studioJobs,
-    mergedLogs,
-    activeServerJobCount,
-    isBackendConnected,
-    verifyCodexSession,
-    recoverOrphanedBatches,
+    activity: {
+      studioJobs,
+      mergedLogs,
+      activeServerJobCount,
+      isBackendConnected,
+    },
+    refreshBackendState,
   };
 }

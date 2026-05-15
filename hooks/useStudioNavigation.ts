@@ -48,6 +48,7 @@ export function useStudioNavigation({
 }: UseStudioNavigationProps) {
   const [direction, setDirection] = useState(0);
   const previousViewIndexRef = useRef(0);
+  const currentView: 'studio' | 'recipes' = route.view === 'studio' ? 'studio' : 'recipes';
 
   useEffect(() => {
     const currentIndex = route.view === 'studio' ? 0 : route.view === 'recipes' ? 1 : 2;
@@ -151,7 +152,7 @@ export function useStudioNavigation({
 
   return {
     direction,
-    currentView: route.view === 'studio' ? 'studio' : 'recipes',
+    currentView,
     handleViewChange,
     handleRecipeSelection,
     handleCloseRecipe,

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import type { CodexAccountStatusResponse, HealthResponse } from '../packages/shared/src';
+import type { HealthResponse, LocalCodexSessionResponse } from '../packages/shared/src';
 import { buildStudioDiagnosticsSnapshot, formatCodexPlan } from './studioDiagnostics';
 
 function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
@@ -41,6 +41,8 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       lastInvocation: 'codex app-server',
       lastStartAt: '2026-05-07T00:00:00.000Z',
       lastStartError: null,
+      lastEnsureAt: '2026-05-07T00:00:00.000Z',
+      lastEnsureReason: 'session',
     },
     checks: {
       libraryReady: true,
@@ -51,9 +53,9 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
   };
 }
 
-function createAccountStatus(
-  overrides?: Partial<CodexAccountStatusResponse>,
-): CodexAccountStatusResponse {
+function createLocalCodexSession(
+  overrides?: Partial<LocalCodexSessionResponse>,
+): LocalCodexSessionResponse {
   return {
     authMode: 'chatgpt',
     planType: 'chatgpt_pro',
@@ -67,6 +69,12 @@ function createAccountStatus(
     source: 'app-server',
     fetchedAt: '2026-05-07T00:00:00.000Z',
     error: null,
+    authLabel: 'ChatGPT login',
+    state: 'ready',
+    reason: null,
+    isChatgptLogin: true,
+    isSupportedAuthMode: true,
+    canRunLocalJobs: true,
     ...overrides,
   };
 }
@@ -80,7 +88,7 @@ describe('studioDiagnostics', () => {
   it('builds an offline snapshot when the backend is unavailable', () => {
     const snapshot = buildStudioDiagnosticsSnapshot({
       health: null,
-      codexAccountStatus: null,
+      localCodexSession: null,
       hasFetchedDiagnostics: false,
       isBackendConnected: false,
     });
@@ -95,13 +103,14 @@ describe('studioDiagnostics', () => {
       expect.objectContaining({ key: 'backend', value: 'Offline', tone: 'danger' }),
       expect.objectContaining({ key: 'codexCli', value: 'Checking', tone: 'warning' }),
       expect.objectContaining({ key: 'appServer', value: 'Checking', tone: 'warning' }),
+      expect.objectContaining({ key: 'localCodexSession', value: 'Checking', tone: 'warning' }),
     ]);
   });
 
   it('builds a ready snapshot from health and account data', () => {
     const snapshot = buildStudioDiagnosticsSnapshot({
       health: createHealth(),
-      codexAccountStatus: createAccountStatus(),
+      localCodexSession: createLocalCodexSession(),
       hasFetchedDiagnostics: true,
       isBackendConnected: true,
     });
@@ -117,10 +126,11 @@ describe('studioDiagnostics', () => {
       expect.objectContaining({ key: 'backend', value: 'Connected', tone: 'success' }),
       expect.objectContaining({ key: 'codexCli', value: 'Ready', tone: 'success' }),
       expect.objectContaining({ key: 'appServer', value: 'Running', tone: 'success' }),
+      expect.objectContaining({ key: 'localCodexSession', value: 'ChatGPT Login', tone: 'success' }),
     ]);
   });
 
-  it('surfaces account fallback errors while keeping the backend online', () => {
+  it('surfaces local session fallback errors while keeping the backend online', () => {
     const snapshot = buildStudioDiagnosticsSnapshot({
       health: createHealth({
         appServer: {
@@ -128,24 +138,33 @@ describe('studioDiagnostics', () => {
           running: false,
         },
       }),
-      codexAccountStatus: createAccountStatus({
+      localCodexSession: createLocalCodexSession({
         planType: null,
         usage: null,
         error: 'rate limits unavailable',
         source: 'fallback',
+        authLabel: 'Not signed in',
+        state: 'requires_chatgpt_login',
+        reason: 'chatgpt_login_required',
+        isChatgptLogin: false,
+        isSupportedAuthMode: true,
+        canRunLocalJobs: false,
       }),
       hasFetchedDiagnostics: true,
       isBackendConnected: true,
     });
 
     expect(snapshot.usage).toMatchObject({
-      value: 'Unavailable',
-      meta: 'Codex account',
+      value: 'Sign in with ChatGPT',
+      meta: 'ChatGPT login required',
       tone: 'neutral',
     });
     expect(snapshot.usage.tooltip).toContain('rate limits unavailable');
     expect(snapshot.statusItems[2]).toEqual(
       expect.objectContaining({ key: 'appServer', value: 'Standby', tone: 'warning' }),
+    );
+    expect(snapshot.statusItems[3]).toEqual(
+      expect.objectContaining({ key: 'localCodexSession', value: 'Login Required', tone: 'warning' }),
     );
   });
 });

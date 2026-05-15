@@ -4,6 +4,11 @@ import type {
   CodexModel,
   CodexModelCatalogResponse,
 } from '../../../../packages/shared/src';
+import {
+  resolveCodexAuthMode,
+  type CodexRpcTransportFactory,
+  withInitializedCodexClient,
+} from './localCodexSession';
 
 const FALLBACK_MODELS: CodexModel[] = [
   {
@@ -113,14 +118,6 @@ function now() {
   return new Date().toISOString();
 }
 
-function resolveAuthMode(account: any): CodexAuthMode {
-  if (!account || typeof account !== 'object') return null;
-  if (account.type === 'apiKey') return 'apikey';
-  if (account.type === 'chatgpt') return 'chatgpt';
-  if (account.type === 'chatgptAuthTokens') return 'chatgptAuthTokens';
-  return null;
-}
-
 function normalizeSpeedTiers(value: unknown): CodexModel['additionalSpeedTiers'] {
   if (!Array.isArray(value)) return [];
   return value.filter((tier): tier is CodexModel['additionalSpeedTiers'][number] => {
@@ -194,45 +191,42 @@ function buildFallbackCatalog(error: unknown): CodexModelCatalogResponse {
 }
 
 export async function getCodexModelCatalog(): Promise<CodexModelCatalogResponse> {
-  const client = new CodexRpcClient();
+  return createCodexModelCatalogReader()();
+}
 
-  try {
-    await client.connect();
-    await client.request('initialize', {
-      clientInfo: {
-        name: 'codex-studio',
-        title: 'Codex Studio',
-        version: '0.1.0',
-      },
-      capabilities: null,
-    });
-    client.notify('initialized');
+export function createCodexModelCatalogReader({
+  createClient = () => new CodexRpcClient(),
+}: {
+  createClient?: CodexRpcTransportFactory;
+} = {}) {
+  return async function readCodexModelCatalog(): Promise<CodexModelCatalogResponse> {
+    try {
+      return await withInitializedCodexClient({ createClient }, async (client) => {
+        const [modelResponse, accountResponse] = await Promise.all([
+          client.request('model/list', { limit: 100, includeHidden: false }),
+          client.request('account/read', { refreshToken: false }).catch(() => null),
+        ]);
 
-    const [modelResponse, accountResponse] = await Promise.all([
-      client.request('model/list', { limit: 100, includeHidden: false }),
-      client.request('account/read', { refreshToken: false }).catch(() => null),
-    ]);
+        const models = Array.isArray((modelResponse as any)?.data)
+          ? ((modelResponse as any).data as any[])
+              .map(mapModel)
+              .filter((model): model is CodexModel => Boolean(model))
+          : [];
 
-    const models = Array.isArray((modelResponse as any)?.data)
-      ? ((modelResponse as any).data as any[])
-          .map(mapModel)
-          .filter((model): model is CodexModel => Boolean(model))
-      : [];
+        const account = accountResponse?.account ?? null;
 
-    const account = (accountResponse as any)?.account ?? null;
-
-    return {
-      models,
-      authMode: resolveAuthMode(account),
-      planType: typeof account?.planType === 'string' ? account.planType : null,
-      recommendedDefaultModel: pickRecommendedModel(models),
-      source: 'app-server',
-      fetchedAt: now(),
-      error: null,
-    };
-  } catch (error) {
-    return buildFallbackCatalog(error);
-  } finally {
-    client.close();
-  }
+        return {
+          models,
+          authMode: resolveCodexAuthMode(account),
+          planType: typeof account?.planType === 'string' ? account.planType : null,
+          recommendedDefaultModel: pickRecommendedModel(models),
+          source: 'app-server',
+          fetchedAt: now(),
+          error: null,
+        };
+      });
+    } catch (error) {
+      return buildFallbackCatalog(error);
+    }
+  };
 }

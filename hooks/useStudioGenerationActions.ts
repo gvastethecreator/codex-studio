@@ -10,7 +10,7 @@ interface UseStudioGenerationActionsProps {
     key: K,
     value: ImageGenerationConfig[K],
   ) => void;
-  executeEdit: (original: Attachment, mask: string, prompt: string) => Promise<void>;
+  executeEdit: (original: Attachment, mask: string, prompt: string) => Promise<unknown>;
   enqueue: (prompt: string, config: ImageGenerationConfig, force?: boolean) => void;
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   closeModal: () => void;

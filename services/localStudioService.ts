@@ -2,6 +2,7 @@ import type {
   CatalogPage,
   CodexAccountStatusResponse,
   CodexModelCatalogResponse,
+  LocalCodexSessionResponse,
   JobDetailResponse,
   CreateJobRequest,
   HealthResponse,
@@ -68,6 +69,13 @@ export async function getStudioHealth() {
  */
 export async function getCodexModelCatalog() {
   return request<CodexModelCatalogResponse>('/api/codex/models');
+}
+
+/**
+ * Read the Local Codex Session that powers local-only ChatGPT login flows.
+ */
+export async function getLocalCodexSession() {
+  return request<LocalCodexSessionResponse>('/api/codex/session');
 }
 
 /**

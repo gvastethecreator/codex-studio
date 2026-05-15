@@ -8,6 +8,7 @@ import {
   RotateCcw,
   Server,
   Share,
+  ShieldCheck,
   Sparkles,
   Terminal,
 } from "lucide-react";
@@ -41,6 +42,7 @@ const STATUS_ICONS: Record<StudioRuntimeStatusItem['key'], React.ComponentType<{
   backend: Server,
   codexCli: Terminal,
   appServer: Cpu,
+  localCodexSession: ShieldCheck,
 };
 
 const STATUS_TONE_STYLES: Record<StatusTone, { dot: string; value: string }> = {

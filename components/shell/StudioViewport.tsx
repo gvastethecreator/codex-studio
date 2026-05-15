@@ -2,10 +2,11 @@ import React from 'react';
 import { AnimatePresence, motion, type Variants } from 'motion/react';
 
 import type { AppPageView } from '../../hooks/useHashRouter';
+import type { StudioPageController } from '../../hooks/useStudioPageController';
 import type { RecipeId } from '../../types';
 import { RecipePage, type RecipePageProps } from '../RecipePage';
 import { RecipesView } from '../RecipesView';
-import { StudioPage, type StudioPageProps } from '../StudioPage';
+import { StudioPage } from '../StudioPage';
 
 const viewVariants: Variants = {
     enter: (direction: number) => ({
@@ -47,7 +48,7 @@ interface StudioViewportProps {
     direction: number;
     activeRecipe: RecipeId | null;
     recipePageProps: Omit<RecipePageProps, 'activeRecipe'>;
-    studioPageProps: StudioPageProps;
+    studioPageController: StudioPageController;
     onSelectRecipe: (recipeId: RecipeId) => void;
 }
 
@@ -56,7 +57,7 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
     direction,
     activeRecipe,
     recipePageProps,
-    studioPageProps,
+    studioPageController,
     onSelectRecipe,
 }) => {
     return (
@@ -83,7 +84,7 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
                     exit="exit"
                     className="absolute inset-0 w-full h-full flex flex-row overflow-hidden"
                 >
-                    <StudioPage {...studioPageProps} />
+                    <StudioPage controller={studioPageController} />
                 </motion.div>
             ) : (
                 <motion.div

@@ -18,14 +18,21 @@ Studio local-first para generar, revisar y administrar imagenes con la sesion au
 2. El backend local Bun/Hono crea y supervisa jobs persistentes.
 3. `codex app-server` ejecuta los turns reales de Codex para generar o editar imagenes.
 4. La biblioteca local guarda assets, SQLite, transcripts y logs operativos.
-5. La UI sincroniza jobs, assets y actividad para que el studio siga siendo usable aunque la generacion ocurra fuera del navegador.
+5. La UI hace catch-up por HTTP, escucha actividad viva por SSE y mantiene un cache visual compatible para que el studio siga siendo usable aunque la generacion ocurra fuera del navegador.
+
+## Modelo de datos actual
+
+- **SQLite + Image Catalog** son la fuente duradera de verdad para jobs, imagenes catalogadas, libraries y logs.
+- **IndexedDB** sigue guardando `GenerationBatch[]` en `catalog-cache` como cache visual de compatibilidad para el grid actual.
+- **`GET /api/events`** distribuye eventos vivos de jobs, logs y assets para el frontend.
+- **`/api/codex/session`** es la lectura canonica de la sesion local Codex/ChatGPT usada por onboarding y diagnosticos.
 
 ## Requisitos previos
 
 Antes de levantar el studio conviene tener esto listo:
 
 - **Bun** instalado y disponible en PATH.
-- **Codex CLI** instalado y autenticado en la misma maquina.
+- **Codex CLI** instalado y autenticado con **ChatGPT login** en la misma maquina.
 - Soporte para `codex app-server` desde esa instalacion de Codex.
 - Un navegador moderno con soporte para IndexedDB.
 
@@ -131,6 +138,7 @@ Los comandos de calidad y build (`fmt`, `lint`, `check`, `test`, `build`, `valid
 
 ## Documentacion recomendada
 
+- [`CONTEXT.md`](./CONTEXT.md) — lenguaje y terminos canonicos del proyecto.
 - [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — vista general del sistema.
 - [`docs/SERVICES.md`](./docs/SERVICES.md) — mapa de servicios y puntos de integracion.
 - [`docs/DEV_GUIDE.md`](./docs/DEV_GUIDE.md) — convenciones para extender recetas y UI.

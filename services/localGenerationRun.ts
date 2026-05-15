@@ -2,11 +2,11 @@ import type { GeneratedImage, GenerationBatch, ImageGenerationConfig } from '../
 import type { Job as StudioJob } from '../packages/shared/src';
 import { createThumbnail } from '../utils/imageUtils';
 import { resolveGenerationConfig } from '../lib/recipeContext';
+import { materializeVisualBatchImage } from '../lib/studioVisualBatchCatalog';
 import {
   createStudioJob,
   listProjects,
   queryCatalog,
-  toStudioAssetUrl,
 } from './localStudioService';
 import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
 import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
@@ -158,16 +158,16 @@ export async function runSingleCodexImagegenJob(options: {
 
   const images: GeneratedImage[] = [];
   for (const asset of jobAssets) {
-    const url = toStudioAssetUrl(asset.publicUrl);
-    const thumbnail = await createThumbnail(url);
-    images.push({
-      id: asset.id,
-      src: url,
-      thumbnail: asset.thumbnailUrl ? toStudioAssetUrl(asset.thumbnailUrl) : thumbnail,
-      batchId,
-      createdAt: Date.now(),
-      isFavorite: false,
-    });
+    const fallbackThumbnail = asset.thumbnailUrl
+      ? undefined
+      : await createThumbnail(materializeVisualBatchImage(asset, { batchId }).src);
+    images.push(
+      materializeVisualBatchImage(asset, {
+        batchId,
+        createdAt: Date.now(),
+        thumbnail: fallbackThumbnail,
+      }),
+    );
   }
 
   return images;
