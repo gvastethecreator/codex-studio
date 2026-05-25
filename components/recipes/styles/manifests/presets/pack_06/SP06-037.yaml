@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-037
+packId: pack_06
+name: Aquatint
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Tonal etching
+  form_and_line: None, tonal areas
+  color_palette: Greyscale, sepia
+  lighting_setup: Soft gradients
+  material_texture: Rosin dust, granular
+  render_quality: Goya, atmospheric
+  spatial_distortion: None
+  atmosphere: Dark, moody
+  key_features: Granular tone
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-037.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

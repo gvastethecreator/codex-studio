@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP07-021
+packId: pack_07
+name: Deconstructivism
+category: 2. Architectural Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - architectural-styles
+visualDna:
+  aesthetic: Frank Gehry sculptural deconstructivist landmark, titanium wildness, Bilbao effect
+  form_and_line: Distorted geometry, collapsing volumes, twisting towers, exploding facets, folded planes
+  color_palette: Titanium, Steel, Champagne Silver, Warm Ochre stone, Mirror Sky
+  lighting_setup: Reflective sun, surface-dancing light, angled shadow drama, metallic shimmer
+  material_texture: Metal panels, titanium shingles, zinc cladding, glass shards, bent steel
+  render_quality: Chaotic, fluid, modern, sculptural explosion, gravity-defying, architectural fireworks
+  spatial_distortion: Melting/Twisting
+  atmosphere: Disorienting, dynamic, cerebral, exhilarating, rule-breaking, impossible beauty
+  key_features: No right angles, folding titanium skin, explosive volumes, shimmering surfaces, sculptural roofscape
+avoidRules:
+  - box
+  - symmetrical
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-021.webp
+attributes:
+  negativePrompt: box, symmetrical

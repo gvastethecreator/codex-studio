@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-004
+packId: pack_08
+name: Boho Festival
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Coachella desert festival outfit, flower-crown freedom, golden-hour bohemia, fringe-and-lace reverie
+  form_and_line: Flowing layers, fringe, tiered maxi dress, bell-sleeve drama, off-shoulder ease
+  color_palette: Earth tones, floral prints, terracotta, ochre, dusty rose, sun-bleached coral
+  lighting_setup: Golden hour sun, lens flare warmth, backlit halo, dust-mote glow
+  material_texture: Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze
+  render_quality: Free People bohemian editorial, hippie, summer, festival romance, sun-drenched nostalgia
+  spatial_distortion: None
+  atmosphere: Free, happy, natural, carefree wanderlust, desert-magic dusk, barefoot abandon
+  key_features: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings
+avoidRules:
+  - suit
+  - strict
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-004.webp
+attributes:
+  negativePrompt: suit, strict, dark

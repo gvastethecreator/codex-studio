@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-036
+packId: pack_09
+name: Water Damage
+category: 4. Weathering & Decay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - weathering-and-decay
+visualDna:
+  aesthetic: Ceiling stain
+  form_and_line: Ring edges
+  color_palette: Yellow, Brown stain
+  lighting_setup: Matte
+  material_texture: Swollen drywall
+  render_quality: Ruined, leak
+  spatial_distortion: Bubbling paint
+  atmosphere: Gross, old
+  key_features: Tide lines
+avoidRules:
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-036.webp
+attributes:
+  negativePrompt: dry

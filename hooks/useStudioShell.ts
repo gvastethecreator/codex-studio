@@ -20,6 +20,7 @@ import { useStudioOverlayController } from './useStudioOverlayController';
 import { useStudioPageController, type StudioPageController } from './useStudioPageController';
 import { useStudioReset } from './useStudioReset';
 import { useStudioRuntime } from './useStudioRuntime';
+import { useStudioSettings } from './useStudioSettings';
 import { useStudioViewState } from './useStudioViewState';
 import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
@@ -31,6 +32,24 @@ import {
   restoreCatalogImage as restoreCatalogImageRequest,
   updateCatalogImage as updateCatalogImageRequest,
 } from '../services/localStudioService';
+
+function summarizeRuntimeStatus(
+  statusItems: ReturnType<typeof useStudioRuntime>['status']['diagnostics']['statusItems'],
+): HeaderToolbarProps['runtimeStatus'] {
+  if (statusItems.length === 0) {
+    return { label: 'Checking', tone: 'warning' };
+  }
+
+  if (statusItems.some((item) => item.tone === 'danger')) {
+    return { label: 'Attention', tone: 'danger' };
+  }
+
+  if (statusItems.some((item) => item.tone === 'warning')) {
+    return { label: 'Standby', tone: 'warning' };
+  }
+
+  return { label: 'Ready', tone: 'success' };
+}
 
 export interface StudioShellController {
   root: {
@@ -260,6 +279,7 @@ export function useStudioShell(): StudioShellController {
     shouldAutoOpen: catalogBatches.length === 0 && batches.length === 0,
     onCatalogChanged: refreshCatalogs,
   });
+  const studioSettings = useStudioSettings({ addToast });
 
   const activitySession = useStudioActivitySession({
     studioJobs: studioRuntime.activity.studioJobs,
@@ -290,6 +310,9 @@ export function useStudioShell(): StudioShellController {
     isDashboardModalOpen,
     openDashboard,
     closeDashboard,
+    isSettingsModalOpen,
+    openSettings,
+    closeSettings,
     isTrashModalOpen,
     openTrash,
     closeTrash,
@@ -304,6 +327,9 @@ export function useStudioShell(): StudioShellController {
     downloadAndClearWorkspace,
     closeOverlay,
   });
+  const toggleQueue = useCallback(() => {
+    setIsQueueOpen((previous) => !previous);
+  }, [setIsQueueOpen]);
 
   const clearStudioUiState = useCallback(() => {
     recipe.setActiveRecipe(null);
@@ -493,6 +519,33 @@ export function useStudioShell(): StudioShellController {
       refreshHealth: studioRuntime.onboarding.refreshHealth,
       ensureAppServer: studioRuntime.onboarding.ensureAppServer,
     },
+    settings: {
+      isOpen: isSettingsModalOpen,
+      close: closeSettings,
+      settings: studioSettings.settings,
+      error: studioSettings.error,
+      isLoading: studioSettings.isLoading,
+      isSaving: studioSettings.isSaving,
+      outputSources: studioSettings.outputSources,
+      outputSourceFiles: studioSettings.outputSourceFiles,
+      isLoadingOutputSources: studioSettings.isLoadingOutputSources,
+      loadingOutputSourceFiles: studioSettings.loadingOutputSourceFiles,
+      isRegisteringOutputSource: studioSettings.isRegisteringOutputSource,
+      importingOutputSources: studioSettings.importingOutputSources,
+      libraryDir:
+        studioRuntime.status.diagnostics.health?.libraryDir ??
+        studioRuntime.onboarding.health?.libraryDir ??
+        null,
+      refresh: studioSettings.refreshSettings,
+      update: studioSettings.updateSettings,
+      registerOutputSource: studioSettings.registerOutputSource,
+      loadOutputSourceFiles: studioSettings.loadOutputSourceFiles,
+      importOutputSourceFiles: studioSettings.importOutputSourceFiles,
+      isBackgroundEnabled,
+      onToggleBackground: () => setBackgroundEnabled(!isBackgroundEnabled),
+      onResetStudio: requestResetStudio,
+      isResettingStudio,
+    },
     workspace: {
       batches: catalogBatches,
       workspaces,
@@ -630,6 +683,14 @@ export function useStudioShell(): StudioShellController {
       onOpenTrash: openTrash,
       trashCount: catalogTrash.length,
       onToggleDebug: activitySession.handleToggleDebugPanel,
+    },
+    commandCenter: {
+      activeProviderId: studioSettings.settings?.defaultProviderId ?? 'codex',
+      runtimeStatus: summarizeRuntimeStatus(studioRuntime.status.diagnostics.statusItems),
+      queueCount: jobs.length + studioRuntime.activity.activeServerJobCount,
+      isQueueOpen,
+      onToggleQueue: toggleQueue,
+      onOpenSettings: openSettings,
     },
   });
 

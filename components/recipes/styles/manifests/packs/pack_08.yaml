@@ -1,0 +1,181 @@
+schemaVersion: 1
+id: pack_08
+name: Fashion & Costume
+description: Diverse fashion styles from historical to futuristic.
+categories:
+  - id: contemporary-fashion
+    name: 1. Contemporary Fashion
+    presetRefs:
+      - pack_08/SP08-004.yaml
+      - pack_08/SP08-001.yaml
+      - pack_08/SP08-020.yaml
+      - pack_08/SP08-019.yaml
+      - pack_08/SP08-002.yaml
+      - pack_08/SP08-005.yaml
+      - pack_08/SP08-017.yaml
+      - pack_08/SP08-018.yaml
+      - pack_08/SP08-003.yaml
+      - pack_08/SP08-016.yaml
+  - id: historical-and-fantasy
+    name: 2. Historical & Fantasy
+    presetRefs:
+      - pack_08/SP08-033.yaml
+      - pack_08/SP08-037.yaml
+      - pack_08/SP08-040.yaml
+      - pack_08/SP08-035.yaml
+      - pack_08/SP08-012.yaml
+      - pack_08/SP08-015.yaml
+      - pack_08/SP08-032.yaml
+      - pack_08/SP08-011.yaml
+      - pack_08/SP08-031.yaml
+      - pack_08/SP08-034.yaml
+      - pack_08/SP08-013.yaml
+      - pack_08/SP08-038.yaml
+      - pack_08/SP08-039.yaml
+      - pack_08/SP08-014.yaml
+      - pack_08/SP08-036.yaml
+  - id: subcultures
+    name: 3. Subcultures
+    presetRefs:
+      - pack_08/SP08-028.yaml
+      - pack_08/SP08-010.yaml
+      - pack_08/SP08-024.yaml
+      - pack_08/SP08-021.yaml
+      - pack_08/SP08-008.yaml
+      - pack_08/SP08-029.yaml
+      - pack_08/SP08-026.yaml
+      - pack_08/SP08-027.yaml
+      - pack_08/SP08-030.yaml
+      - pack_08/SP08-009.yaml
+      - pack_08/SP08-023.yaml
+      - pack_08/SP08-025.yaml
+      - pack_08/SP08-007.yaml
+      - pack_08/SP08-022.yaml
+      - pack_08/SP08-006.yaml
+  - id: fabric-and-texture-focus
+    name: 4. Fabric & Texture Focus
+    presetRefs:
+      - pack_08/SP08-077.yaml
+      - pack_08/SP08-052.yaml
+      - pack_08/SP08-051.yaml
+      - pack_08/SP08-053.yaml
+      - pack_08/SP08-056.yaml
+      - pack_08/SP08-059.yaml
+      - pack_08/SP08-073.yaml
+      - pack_08/SP08-057.yaml
+      - pack_08/SP08-072.yaml
+      - pack_08/SP08-062.yaml
+      - pack_08/SP08-074.yaml
+      - pack_08/SP08-079.yaml
+      - pack_08/SP08-064.yaml
+      - pack_08/SP08-061.yaml
+      - pack_08/SP08-054.yaml
+      - pack_08/SP08-055.yaml
+      - pack_08/SP08-060.yaml
+      - pack_08/SP08-065.yaml
+      - pack_08/SP08-066.yaml
+      - pack_08/SP08-068.yaml
+      - pack_08/SP08-071.yaml
+      - pack_08/SP08-076.yaml
+      - pack_08/SP08-078.yaml
+      - pack_08/SP08-080.yaml
+      - pack_08/SP08-058.yaml
+      - pack_08/SP08-063.yaml
+      - pack_08/SP08-067.yaml
+      - pack_08/SP08-070.yaml
+      - pack_08/SP08-075.yaml
+      - pack_08/SP08-069.yaml
+  - id: fantasy-sci-fi-costume
+    name: 5. Fantasy/Sci-Fi Costume
+    presetRefs:
+      - pack_08/SP08-044.yaml
+      - pack_08/SP08-048.yaml
+      - pack_08/SP08-043.yaml
+      - pack_08/SP08-045.yaml
+      - pack_08/SP08-050.yaml
+      - pack_08/SP08-042.yaml
+      - pack_08/SP08-047.yaml
+      - pack_08/SP08-046.yaml
+      - pack_08/SP08-041.yaml
+      - pack_08/SP08-049.yaml
+presetRefs:
+  - pack_08/SP08-004.yaml
+  - pack_08/SP08-001.yaml
+  - pack_08/SP08-020.yaml
+  - pack_08/SP08-019.yaml
+  - pack_08/SP08-002.yaml
+  - pack_08/SP08-005.yaml
+  - pack_08/SP08-017.yaml
+  - pack_08/SP08-018.yaml
+  - pack_08/SP08-003.yaml
+  - pack_08/SP08-016.yaml
+  - pack_08/SP08-033.yaml
+  - pack_08/SP08-037.yaml
+  - pack_08/SP08-040.yaml
+  - pack_08/SP08-035.yaml
+  - pack_08/SP08-012.yaml
+  - pack_08/SP08-015.yaml
+  - pack_08/SP08-032.yaml
+  - pack_08/SP08-011.yaml
+  - pack_08/SP08-031.yaml
+  - pack_08/SP08-034.yaml
+  - pack_08/SP08-013.yaml
+  - pack_08/SP08-038.yaml
+  - pack_08/SP08-039.yaml
+  - pack_08/SP08-014.yaml
+  - pack_08/SP08-036.yaml
+  - pack_08/SP08-028.yaml
+  - pack_08/SP08-010.yaml
+  - pack_08/SP08-024.yaml
+  - pack_08/SP08-021.yaml
+  - pack_08/SP08-008.yaml
+  - pack_08/SP08-029.yaml
+  - pack_08/SP08-026.yaml
+  - pack_08/SP08-027.yaml
+  - pack_08/SP08-030.yaml
+  - pack_08/SP08-009.yaml
+  - pack_08/SP08-023.yaml
+  - pack_08/SP08-025.yaml
+  - pack_08/SP08-007.yaml
+  - pack_08/SP08-022.yaml
+  - pack_08/SP08-006.yaml
+  - pack_08/SP08-077.yaml
+  - pack_08/SP08-052.yaml
+  - pack_08/SP08-051.yaml
+  - pack_08/SP08-053.yaml
+  - pack_08/SP08-056.yaml
+  - pack_08/SP08-059.yaml
+  - pack_08/SP08-073.yaml
+  - pack_08/SP08-057.yaml
+  - pack_08/SP08-072.yaml
+  - pack_08/SP08-062.yaml
+  - pack_08/SP08-074.yaml
+  - pack_08/SP08-079.yaml
+  - pack_08/SP08-064.yaml
+  - pack_08/SP08-061.yaml
+  - pack_08/SP08-054.yaml
+  - pack_08/SP08-055.yaml
+  - pack_08/SP08-060.yaml
+  - pack_08/SP08-065.yaml
+  - pack_08/SP08-066.yaml
+  - pack_08/SP08-068.yaml
+  - pack_08/SP08-071.yaml
+  - pack_08/SP08-076.yaml
+  - pack_08/SP08-078.yaml
+  - pack_08/SP08-080.yaml
+  - pack_08/SP08-058.yaml
+  - pack_08/SP08-063.yaml
+  - pack_08/SP08-067.yaml
+  - pack_08/SP08-070.yaml
+  - pack_08/SP08-075.yaml
+  - pack_08/SP08-069.yaml
+  - pack_08/SP08-044.yaml
+  - pack_08/SP08-048.yaml
+  - pack_08/SP08-043.yaml
+  - pack_08/SP08-045.yaml
+  - pack_08/SP08-050.yaml
+  - pack_08/SP08-042.yaml
+  - pack_08/SP08-047.yaml
+  - pack_08/SP08-046.yaml
+  - pack_08/SP08-041.yaml
+  - pack_08/SP08-049.yaml

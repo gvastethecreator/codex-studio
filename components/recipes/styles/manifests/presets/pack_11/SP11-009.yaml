@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-009
+packId: pack_11
+name: Emoji 3D
+category: 3. Artistic Mediums
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+visualDna:
+  aesthetic: Glossy 3D icon, emoji communication, playful glyph, digital hieroglyph
+  form_and_line: Round, smooth, pill-shaped, sphere-based, soft extrusion
+  color_palette: Bright Yellow, Blue, Red, vivid primaries, gradient-rich, punchy saturation
+  lighting_setup: Studio softbox, rim light, gradient sky reflection, glossy hotspot
+  material_texture: Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell
+  render_quality: Apple platform emoji, UI design, glossy smile, message-bubble charm, keycap precision
+  spatial_distortion: Sphere based, anthropomorphic objects, simplified features, chunky proportions
+  atmosphere: Happy, expressive, digital, instant communication, friendly warmth, pixel joy
+  key_features: Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette
+avoidRules:
+  - flat
+  - 2d
+  - sketch
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-009.webp
+attributes:
+  negativePrompt: flat, 2d, sketch

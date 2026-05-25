@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-052
+packId: pack_06
+name: Voxel Art
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: 3D cubes
+  form_and_line: Cubes
+  color_palette: Vibrant
+  lighting_setup: AO
+  material_texture: None
+  render_quality: Minecraft style
+  spatial_distortion: Blocky
+  atmosphere: Cute, digital
+  key_features: Cubes
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-052.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

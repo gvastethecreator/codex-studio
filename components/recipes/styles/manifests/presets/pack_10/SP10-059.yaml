@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-059
+packId: pack_10
+name: Leather Texture
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Animal hide
+  form_and_line: Pores and creases
+  color_palette: Brown, Black
+  lighting_setup: Sheen
+  material_texture: Skin pattern
+  render_quality: Luxury, durable
+  spatial_distortion: Wrinkles
+  atmosphere: Classic, rich
+  key_features: Pores
+avoidRules:
+  - fabric
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-059.webp
+attributes:
+  negativePrompt: fabric, smooth

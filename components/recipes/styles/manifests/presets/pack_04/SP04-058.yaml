@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-058
+packId: pack_04
+name: Low Poly Concept
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Early 3D game
+  form_and_line: None
+  color_palette: Flat shading, vertex-colored, low-spec palette
+  lighting_setup: Vertex light, gouraud shading, no real-time lighting
+  material_texture: Pixelated
+  render_quality: PS1 early 3D console retro, jagged nostalgia, pioneer polygons
+  spatial_distortion: Blocky
+  atmosphere: Nostalgic, simple, CD-ROM childhood, fifth-gen warmth
+  key_features: Polygons, unfiltered textures, affine warping
+avoidRules:
+  - smooth
+  - high res
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-058.webp
+attributes:
+  negativePrompt: smooth, high res

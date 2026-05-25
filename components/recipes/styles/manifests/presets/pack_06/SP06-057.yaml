@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-057
+packId: pack_06
+name: Double Exposure
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: Blended images
+  form_and_line: Silhouette
+  color_palette: Mixed palettes
+  lighting_setup: Contrast
+  material_texture: Mixed
+  render_quality: Artistic
+  spatial_distortion: Image inside shape
+  atmosphere: Dreamy
+  key_features: Silhouette container
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-057.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

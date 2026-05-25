@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-056
+packId: pack_10
+name: Carbon Fiber
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Woven tech material
+  form_and_line: Diagonal weave
+  color_palette: Black, Grey
+  lighting_setup: Anisotropic
+  material_texture: Synthetic
+  render_quality: High tech, fast
+  spatial_distortion: None
+  atmosphere: Sporty, modern
+  key_features: Weave
+avoidRules:
+  - organic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-056.webp
+attributes:
+  negativePrompt: organic

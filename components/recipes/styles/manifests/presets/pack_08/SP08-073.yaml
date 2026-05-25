@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-073
+packId: pack_08
+name: Body Paint
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Painted clothes, trompe-l-oeil illusion, skin-as-canvas transformation
+  form_and_line: Brush strokes on skin, painted-lapel line, faux-button stroke, body-contour follow, wet-paint flow
+  color_palette: Vibrant, primary-bold, acrylic-bright, UV-reactive, metallic-body, matte-flat, dayglo
+  lighting_setup: Studio, diffused-even light, ring-flash catch, body-paint evenness, exhibition-gallery spot
+  material_texture: Matte paint, body-paint film, glycerin-sheen, airbrush-gradient, brush-stroke relief, skin-oil through paint
+  render_quality: Artistic, illusion, living-canvas spectacle, body-art mastery
+  spatial_distortion: None
+  atmosphere: Creative, naked, painted-vulnerability confidence, art-gallery hush, body-ceremony ritual
+  key_features: Paint, brush strokes, trompe-l-oeil effect, painted seams, skin-texture beneath
+avoidRules:
+  - clothes
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-073.webp
+attributes:
+  negativePrompt: clothes

@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-001
+packId: pack_11
+name: Lego Toy Brick Build
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Scene built entirely from LEGO toy bricks, ABS-plastic diorama, brick-for-brick construction, snap-together storytelling
+  form_and_line: Brick seams, studs, interlocking grid, sharp-corner geometry
+  color_palette: Classic LEGO toy-brick primaries (Red, Blue, Yellow), bright-plastic spectrum, high-saturation glossy
+  lighting_setup: Glossy plastic reflection, studio key light, rim highlights, shallow depth of field
+  material_texture: ABS plastic, studs, injection-molded precision, glossy shell finish, clutch-power grip
+  render_quality: The LEGO Movie toy-brick stop-motion energy, everything-is-awesome kinetic, brick-built wonder
+  spatial_distortion: Blocky, minifigure proportions, cubic abstraction, top-stud resolution, snap-grid logic
+  atmosphere: Playful, creative, childhood, imaginative nostalgia, colorful joy, constructive wonder
+  key_features: Studs on top surfaces, tubular undersides, brick-seam shadows, minifigure scale
+avoidRules:
+  - melted
+  - smooth
+  - organic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-001.webp
+attributes:
+  negativePrompt: melted, smooth, organic

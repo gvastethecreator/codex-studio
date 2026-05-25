@@ -1,0 +1,28 @@
+schemaVersion: 1
+id: SP03-035
+packId: pack_03
+name: HDRI Environment
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Object in real location
+  form_and_line: Realistic reflections
+  color_palette: Natural, environment-derived
+  lighting_setup: Image based lighting, spherical harmony
+  material_texture: Real world reflection, ambient integration
+  render_quality: Photorealistic integration, composited realism
+  atmosphere: Grounded, location-accurate
+  key_features: Matched lighting, reflection authenticity
+avoidRules:
+  - studio background
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-035.webp
+attributes:
+  negativePrompt: studio background

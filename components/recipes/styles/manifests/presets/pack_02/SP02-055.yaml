@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-055
+packId: pack_02
+name: Cyanotype (Photo)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Blue print photo
+  form_and_line: None
+  color_palette: Prussian Blue/White, deep indigo, cerulean, paper-white
+  lighting_setup: Sunlight, UV exposure, contact-print daylight
+  material_texture: Paper fiber, watercolor paper, pulp grain
+  render_quality: Blueprint, art, scientific aesthetic, photogram precision
+  spatial_distortion: None
+  atmosphere: Calm, blue, botanical serenity, Victorian catalog
+  key_features: Monochrome, fern silhouette, botanical specimen
+avoidRules:
+  - color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-055.webp
+attributes:
+  negativePrompt: color

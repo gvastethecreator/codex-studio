@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-019
+packId: pack_02
+name: Soap Opera
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Daytime TV
+  form_and_line: None
+  color_palette: Soft focus, pastel wash, peach glow, pearl sheen
+  lighting_setup: High key, backlit, halo separation, glamour diffusion
+  material_texture: 60fps video (Soap effect), hyper-smooth motion, interlaced
+  render_quality: Dreamy, cheap, high-frame-rate unreality, studio artifice
+  spatial_distortion: Soft glow, diffusion filter haze, vaseline smear
+  atmosphere: Dramatic, romance, cliffhanger stare, scandalous pause
+  key_features: Vaseline lens, melodramatic zoom, doorway entrance
+avoidRules:
+  - film look
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-019.webp
+attributes:
+  negativePrompt: film look

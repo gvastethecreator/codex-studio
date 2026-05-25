@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-036
+packId: pack_04
+name: Collage Art (Dada)
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Cut and paste
+  form_and_line: Scissor cuts
+  color_palette: Vintage photo, sepia-toned fragment, found-image palette
+  lighting_setup: Mismatched, multiple light sources, irreverent continuity
+  material_texture: Halftone
+  render_quality: Punk, surreal, anti-aesthetic rebellion, found-object poetry
+  spatial_distortion: Hybrid objects
+  atmosphere: Rebellious, weird, dada absurdism, anti-art provocation
+  key_features: Paper edges, scissor-cut seams, photo-fragment juxtaposition
+avoidRules:
+  - seamless
+  - painted
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-036.webp
+attributes:
+  negativePrompt: seamless, painted

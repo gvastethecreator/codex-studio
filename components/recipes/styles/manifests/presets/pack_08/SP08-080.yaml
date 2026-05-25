@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-080
+packId: pack_08
+name: Shadow Form
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Made of shadow, void-walker mystery, darkness-incarnate form
+  form_and_line: Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape
+  color_palette: Black, void, abyss, pitch, ink, unlit, dark-matter
+  lighting_setup: None, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge
+  material_texture: Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black, depth-without-surface
+  render_quality: Scary, void, light-swallowing menace, heart-of-darkness poetry
+  spatial_distortion: Silhouette
+  atmosphere: Evil, mystery, primeval-darkness dread, unnamed-fear stillness, shadow-realm silence
+  key_features: No details, featureless void, light-absorbing depth, negative shape, silhouette-only form
+avoidRules:
+  - light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-080.webp
+attributes:
+  negativePrompt: light

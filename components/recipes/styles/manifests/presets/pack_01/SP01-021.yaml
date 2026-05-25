@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP01-021
+packId: pack_01
+name: Large Format (4x5)
+category: 5. Camera Types
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - camera-types
+visualDna:
+  aesthetic: View camera photo
+  form_and_line: Incredible detail
+  color_palette: Rich, smooth tones
+  lighting_setup: Controlled
+  material_texture: Zero grain
+  render_quality: Ansel Adams, fine art
+  spatial_distortion: Tilt-shift potential
+  atmosphere: Grand, still
+  key_features: Extreme resolution
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-021.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

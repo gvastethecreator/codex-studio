@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-009
+packId: pack_06
+name: Impressionist Oil
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Monet style impressionism
+  form_and_line: Short, broken brushstrokes
+  color_palette: Vibrant, unblended optical mixing
+  lighting_setup: Natural outdoor light
+  material_texture: Thick paint dabs
+  render_quality: Artistic, plein air
+  spatial_distortion: Loss of detail
+  atmosphere: Light, airy, fleeting
+  key_features: Dabbed paint texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-009.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-053
+packId: pack_11
+name: Chocolate Flow
+category: 1. Food & Drink
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - food-and-drink
+visualDna:
+  aesthetic: Melting chocolate river, patisserie-waterfall, temper-dark-flow, molten-cocoa, fondue-dream
+  form_and_line: Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex
+  color_palette: Dark Brown, couverture-ebony, ganache-mahogany, milk-chocolate amber, cocoa-dust, tempered-sheen
+  lighting_setup: Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface mirror
+  material_texture: Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity
+  render_quality: Rich, decadent, chocolatier-art, tempering-perfection, dessert-seduction, cocoa-bean poetry
+  spatial_distortion: Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple
+  atmosphere: Indulgent, sweet, pâtisserie-afternoon, truffle-luxury, cocoa-comfort, melting-moment
+  key_features: Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin, chocolate-shavings curl
+avoidRules:
+  - watery
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-053.webp
+attributes:
+  negativePrompt: watery

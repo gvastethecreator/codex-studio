@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-074
+packId: pack_11
+name: Velcro
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Hooks and loops, fastener-macro, textile-engineering, velcro-close-up, grip-technology
+  form_and_line: Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface
+  color_palette: Black/White, nylon-spectrum, hook-base color, loop-color contrast, industrial-grey, neon-accent
+  lighting_setup: Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for interlock
+  material_texture: Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density, adhesive-back
+  render_quality: Industrial, texture, hook-and-loop engineering, biomimetic-design, fastener-science
+  spatial_distortion: Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth
+  atmosphere: Functional, close, design-cleverness, burdock-inspiration, Swiss-engineer wonder
+  key_features: Hooks, mushroom-cap tips, loop-pile, interlock-point, woven-backing, hook-shank, adhesive-layer, edge-trim
+avoidRules:
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-074.webp
+attributes:
+  negativePrompt: smooth

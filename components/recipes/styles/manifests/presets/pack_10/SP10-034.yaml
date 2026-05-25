@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-034
+packId: pack_10
+name: Dreamcore
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Nostalgic nightmare
+  form_and_line: Soft
+  color_palette: Pastel, bloom
+  lighting_setup: Overexposed
+  material_texture: Low res photo
+  render_quality: Internet aesthetic
+  spatial_distortion: Eye objects
+  atmosphere: Nostalgic, wrong
+  key_features: Blue sky
+avoidRules:
+  - realism
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-034.webp
+attributes:
+  negativePrompt: realism, dark

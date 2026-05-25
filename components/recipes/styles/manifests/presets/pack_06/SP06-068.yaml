@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-068
+packId: pack_06
+name: Zine Aesthetic
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Photocopied booklet
+  form_and_line: High contrast, grainy
+  color_palette: Black and White
+  lighting_setup: Xerox flash
+  material_texture: Toner, tape
+  render_quality: DIY, punk
+  spatial_distortion: Rough cuts
+  atmosphere: Raw, underground
+  key_features: Xerox grain
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-068.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

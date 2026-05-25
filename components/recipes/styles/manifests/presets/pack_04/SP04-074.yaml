@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP04-074
+packId: pack_04
+name: Sharpie Art
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Permanent marker
+  form_and_line: Thick, bleeding
+  color_palette: Black, smelly, solvent-fume authenticity, permanent-pigment assertion
+  lighting_setup: None, marker-raw, no correction, bold-gesture confidence
+  material_texture: Paper bleed
+  render_quality: Bold, rough, sharpie swagger, street-tag attitude
+  spatial_distortion: Blobby
+  atmosphere: Permanent, loud, marker-commitment, no-going-back energy
+  key_features: Thick lines, marker-nib character, bleed-through honesty
+avoidRules:
+  - fine detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-074.webp
+attributes:
+  negativePrompt: fine detail

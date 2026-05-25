@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-001
+packId: pack_08
+name: Haute Couture
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Avant-garde runway look, Paris Fashion Week centerpiece, high-drama presentation
+  form_and_line: Structural, architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette
+  color_palette: Bold jewel tones, artistic color-blocking, expensive saturated hues, deep emerald, sapphire
+  lighting_setup: Runway spotlights, high-contrast key light, dramatic shadow falloff, catwalk haze
+  material_texture: Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth
+  render_quality: Vogue runway editorial, Met Gala gala spectacle, masterpiece, fashion-week apex, haute-couture precision
+  spatial_distortion: Exaggerated silhouette
+  atmosphere: Dramatic, expensive, artistic, front-row murmur, reverent silence, aspirational awe
+  key_features: High fashion pose, exaggerated contrapposto, editorial gaze, avant-garde headpiece
+avoidRules:
+  - ready-to-wear
+  - cheap
+  - simple
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-001.webp
+attributes:
+  negativePrompt: ready-to-wear, cheap, simple

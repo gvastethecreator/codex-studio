@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-063
+packId: pack_10
+name: Chainmail
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Interlinked rings
+  form_and_line: Rings
+  color_palette: Steel
+  lighting_setup: Metallic
+  material_texture: Metal links
+  render_quality: Medieval, armor
+  spatial_distortion: Drape
+  atmosphere: Strong, protective
+  key_features: Ring pattern
+avoidRules:
+  - plate armor
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-063.webp
+attributes:
+  negativePrompt: plate armor

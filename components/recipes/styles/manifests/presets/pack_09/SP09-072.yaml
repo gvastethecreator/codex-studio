@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-072
+packId: pack_09
+name: OSB Board
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Chipboard
+  form_and_line: Wood chips
+  color_palette: Tan, Brown
+  lighting_setup: Rough
+  material_texture: Compressed chips
+  render_quality: Construction, rough
+  spatial_distortion: None
+  atmosphere: Industrial, cheap
+  key_features: Random chips
+avoidRules:
+  - plywood
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-072.webp
+attributes:
+  negativePrompt: plywood

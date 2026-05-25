@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-049
+packId: pack_03
+name: Character Design (T-Pose)
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Character model sheet
+  form_and_line: Anatomical
+  color_palette: Neutral light, skin-tone accuracy
+  lighting_setup: Flat, character-sheet evenness
+  material_texture: Skin, cloth, character assembly
+  render_quality: Concept art, production, model-sheet
+  atmosphere: Neutral, design, audition-ready
+  key_features: T-Pose or A-Pose, turn-around clarity
+avoidRules:
+  - action pose
+  - background
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-049.webp
+attributes:
+  negativePrompt: action pose, background

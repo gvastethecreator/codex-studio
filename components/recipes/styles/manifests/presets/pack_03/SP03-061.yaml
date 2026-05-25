@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-061
+packId: pack_03
+name: Hard Surface Modeling
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Robot or gun
+  form_and_line: Bevels, panel lines
+  color_palette: Gunmetal, painted metal, military-grade
+  lighting_setup: Rim light, mechanical edge-pop
+  material_texture: Scratched metal, machined wear
+  render_quality: Mech design, precise, weapon-grade
+  atmosphere: Industrial, military, tactical grit
+  key_features: Functional parts, panel-line definition
+avoidRules:
+  - organic
+  - soft
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-061.webp
+attributes:
+  negativePrompt: organic, soft

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-048
+packId: pack_02
+name: Autochrome (1900s)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: First color photo
+  form_and_line: None
+  color_palette: Pointillist grain, stippled pastel, lavender, rose, moss
+  lighting_setup: Soft, dreamy, diffuse daylight, window glow
+  material_texture: Potato starch grain, dyed starch, random RGB mosaic
+  render_quality: Impressionist photo, pointillism, painterly light capture
+  spatial_distortion: None
+  atmosphere: Dreamy, vintage, Belle Époque warmth, garden idyll
+  key_features: Grainy color, starch-speckle, luminous pastels
+avoidRules:
+  - sharp
+  - digital color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-048.webp
+attributes:
+  negativePrompt: sharp, digital color

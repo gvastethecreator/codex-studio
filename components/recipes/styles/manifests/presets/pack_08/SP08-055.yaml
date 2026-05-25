@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-055
+packId: pack_08
+name: Knitted Wool
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Chunky sweater, hygge-comfort warmth, Nordic-cabin coziness
+  form_and_line: Cable knit pattern, oversized-sweater volume, drop-shoulder ease, ribbed-cuff taper, turtleneck cylinder
+  color_palette: Cream, Grey, oatmeal, charcoal, forest, mustard, rust, undyed-wool ivory
+  lighting_setup: Soft, window-light overcast, fireplace-warm amber, candle-flicker glow, afternoon-knit session
+  material_texture: Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief
+  render_quality: Cozy, warm, cabin-retreat comfort, Aran-island authenticity
+  spatial_distortion: None
+  atmosphere: Comfortable, winter, fireside-contentment, cocoa-and-wool warmth, snowed-in serenity
+  key_features: Knit loops, cable braid, ribbed hem, wooden buttons, rolled neck
+avoidRules:
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-055.webp
+attributes:
+  negativePrompt: smooth

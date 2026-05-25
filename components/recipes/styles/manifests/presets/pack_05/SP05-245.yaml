@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-245
+packId: pack_05
+name: The Vision of Escaflowne - Windblown Tarot Fantasy
+category: 8. Isekai & High Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - isekai-and-high-fantasy
+visualDna:
+  aesthetic: Prophetic romance, knight armor, giant dragon mechs, red skies and courtly longing, 90s fantasy-shojo hybridity with wind-swept pageantry
+  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
+  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
+  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
+  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
+  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
+  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
+  atmosphere: Windswept, romantic, mystical, heroic
+  key_features: Tarot symbolism, wind-swept capes, knight-mecha contrast, red-sky horizons, courtly emotional poses
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-245.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

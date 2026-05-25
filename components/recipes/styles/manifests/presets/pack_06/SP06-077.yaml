@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-077
+packId: pack_06
+name: Coffee Painting
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Painted with coffee
+  form_and_line: Liquid stains
+  color_palette: Sepia, brown
+  lighting_setup: Soft
+  material_texture: Watercolor paper, granules
+  render_quality: Organic, warm
+  spatial_distortion: Fluid
+  atmosphere: Cozy, rustic
+  key_features: Monochrome brown
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-077.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

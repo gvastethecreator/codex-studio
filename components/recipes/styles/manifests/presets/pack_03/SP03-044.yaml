@@ -1,0 +1,28 @@
+schemaVersion: 1
+id: SP03-044
+packId: pack_03
+name: Thermal Vision
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Heat map 3D
+  form_and_line: Heat gradients
+  color_palette: Rainbow (Blue cold, Red hot), thermal gradient
+  lighting_setup: Emissive temperature, heat-source mapping
+  material_texture: None, temperature-emissive
+  render_quality: Predator vision, tactical overlay
+  atmosphere: Tactical, alien, reconnaissance
+  key_features: Heat map, cold-to-hot spectrum
+avoidRules:
+  - realistic color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-044.webp
+attributes:
+  negativePrompt: realistic color

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-047
+packId: pack_06
+name: Speedpaint
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: Quick digital sketch
+  form_and_line: Rough, energetic
+  color_palette: Bold, unrefined
+  lighting_setup: Dramatic
+  material_texture: Brush strokes
+  render_quality: Concept, loose
+  spatial_distortion: Unfinished edges
+  atmosphere: Dynamic, fast
+  key_features: Loose strokes
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-047.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

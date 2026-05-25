@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-031
+packId: pack_08
+name: Roaring 20s (Flapper)
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Jazz age party, speakeasy decadence, Gatsby-ball splendor
+  form_and_line: Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation
+  color_palette: Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum
+  lighting_setup: Dim party, chandelier sparkle, feathered-lamp glow, champagne-bubble ambiance
+  material_texture: Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon
+  render_quality: Fun, vintage, speakeasy glamour, Fitzgerald-era elegance
+  spatial_distortion: None
+  atmosphere: Party, retro, champagne-fizz excitement, dance-marathon energy, illicit-night thrill
+  key_features: Bobbed hair, cloche hat, long cigarette holder, T-strap heels, feather headband
+avoidRules:
+  - long dress
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-031.webp
+attributes:
+  negativePrompt: long dress, modern

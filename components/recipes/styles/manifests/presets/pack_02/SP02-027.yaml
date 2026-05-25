@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-027
+packId: pack_02
+name: Weather Channel
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Forecast map
+  form_and_line: Isobars
+  color_palette: Radar Green/Red, precipitation blue, severe-weather magenta
+  lighting_setup: Digital map, emissive screen, composited background
+  material_texture: Screen, broadcast graphics, crisp vector overlay
+  render_quality: Info, graphics, Doppler sweep, forecast animation
+  spatial_distortion: None
+  atmosphere: Informative, reassuring, storm-track urgency, weekend outlook
+  key_features: Map, isobars, temperature crawl, 7-day forecast
+avoidRules:
+  - indoors
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-027.webp
+attributes:
+  negativePrompt: indoors

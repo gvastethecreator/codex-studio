@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-031
+packId: pack_10
+name: Surrealism (Dali)
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Melting clocks style
+  form_and_line: Realistic rendering
+  color_palette: Desert warm
+  lighting_setup: Long shadows
+  material_texture: Smooth oil
+  render_quality: Fine art, bizarre
+  spatial_distortion: Melting, elongated
+  atmosphere: Dreamlike, weird
+  key_features: Desert horizon
+avoidRules:
+  - normal
+  - logical
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-031.webp
+attributes:
+  negativePrompt: normal, logical

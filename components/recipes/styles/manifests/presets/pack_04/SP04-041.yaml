@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-041
+packId: pack_04
+name: Fashion Illustration
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Runway sketch
+  form_and_line: Loose, gestural
+  color_palette: Watercolor splash, runway accent, gestural pigment
+  lighting_setup: None, spontaneous stroke, fashion-line attitude
+  material_texture: Paper
+  render_quality: Vogue, stylish, runway fluidity, editorial confidence
+  spatial_distortion: Elongated legs
+  atmosphere: Chic, fast, atelier energy, catwalk motion
+  key_features: 9 heads tall, loose gesture, editorial whitespace
+avoidRules:
+  - short
+  - realistic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-041.webp
+attributes:
+  negativePrompt: short, realistic

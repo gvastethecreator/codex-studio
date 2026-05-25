@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-020
+packId: pack_02
+name: Reality TV Confessional
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Interview chair
+  form_and_line: None
+  color_palette: Saturated, pumped skin tones, jewel accent, matte shadow
+  lighting_setup: Ring light, catchlight halo, soft face wrap
+  material_texture: HD Video, sharp digital, retouched skin
+  render_quality: Produced, fake, manufactured drama, confessional intimacy
+  spatial_distortion: Green screen back, chroma-key spill, composited backdrop
+  atmosphere: Gossip, drama, backstabbing tears, producer manipulation
+  key_features: Eye contact, direct-to-camera, tearful close-up
+avoidRules:
+  - scripted
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-020.webp
+attributes:
+  negativePrompt: scripted

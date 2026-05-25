@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-016
+packId: pack_06
+name: Graphite Pencil
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Realistic pencil drawing
+  form_and_line: Precise shading, sharp lines
+  color_palette: Greyscale, graphite sheen
+  lighting_setup: Value based
+  material_texture: Paper tooth, smudge
+  render_quality: Academic, detailed
+  spatial_distortion: None
+  atmosphere: Studious, quiet
+  key_features: Graphite texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-016.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

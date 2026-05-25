@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-068
+packId: pack_03
+name: 3D Scan (Photogrammetry)
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Scanned real object
+  form_and_line: Realistic geometry
+  color_palette: Photo texture
+  lighting_setup: Baked lighting (delit)
+  material_texture: Real world noise, photogrammetry texture
+  render_quality: Quixel Megascans scan-library realism
+  spatial_distortion: Mesh errors (optional)
+  atmosphere: Real, grounded, authentic capture
+  key_features: Photo realism, surface-level scan detail
+avoidRules:
+  - perfect
+  - modeled
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-068.webp
+attributes:
+  negativePrompt: perfect, modeled

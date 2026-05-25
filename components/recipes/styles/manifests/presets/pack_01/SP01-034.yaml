@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-034
+packId: pack_01
+name: Neon Noir
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Cyberpunk city lighting
+  form_and_line: Rim lights
+  color_palette: Pink and Teal
+  lighting_setup: Colored practical lights
+  material_texture: Wet pavement reflection
+  render_quality: Cinematic, stylized
+  spatial_distortion: None
+  atmosphere: Cool, futuristic
+  key_features: Dual color light
+avoidRules:
+  - daylight
+  - sun
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-034.webp
+attributes:
+  negativePrompt: daylight, sun

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-054
+packId: pack_09
+name: Water Splash
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: High speed liquid
+  form_and_line: Droplets
+  color_palette: Clear, Blue tint
+  lighting_setup: Refractive, Caustic
+  material_texture: Liquid
+  render_quality: Fresh, clean
+  spatial_distortion: Surface tension
+  atmosphere: Refreshing, dynamic
+  key_features: Droplets
+avoidRules:
+  - still water
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-054.webp
+attributes:
+  negativePrompt: still water

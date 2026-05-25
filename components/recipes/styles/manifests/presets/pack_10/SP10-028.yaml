@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-028
+packId: pack_10
+name: Scanography
+category: 5. Digital Glitch & Noise
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+visualDna:
+  aesthetic: Object on flatbed scanner
+  form_and_line: Distorted motion
+  color_palette: High contrast, dark background
+  lighting_setup: Moving light bar
+  material_texture: Dust on glass
+  render_quality: Distorted, shallow
+  spatial_distortion: Squashed
+  atmosphere: Eerie, surreal
+  key_features: Black background
+avoidRules:
+  - camera photo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-028.webp
+attributes:
+  negativePrompt: camera photo

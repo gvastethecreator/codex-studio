@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-129
+packId: pack_05
+name: One-Punch Man - Prestige Hero Impact Satire
+category: 1. Modern Shonen & Action
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - modern-shonen-and-action
+visualDna:
+  aesthetic: Prestige-action animation colliding with bored overpowered comedy, monster-of-the-week destruction, caped simplicity, city-smashing impact clarity, sincerity and satire sharing the same frame
+  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
+  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
+  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
+  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
+  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
+  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  atmosphere: Deadpan, explosive, absurd, triumphant
+  key_features: Huge impact craters, cape silhouette, serious-monster design, anticlimactic hero expression, blockbuster destruction staging
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-129.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

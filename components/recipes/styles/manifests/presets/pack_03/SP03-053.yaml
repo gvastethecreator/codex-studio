@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-053
+packId: pack_03
+name: Jewelry Render
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Diamond ring macro
+  form_and_line: Facets
+  color_palette: Sparkle, Gold, Silver, gemstone fire
+  lighting_setup: Caustics, dispersion, brilliant-cut
+  material_texture: Metal polish, carat-level clarity
+  render_quality: Luxury, expensive, high-jewelry showcase
+  atmosphere: Elegant, rich, bridal-prestige
+  key_features: Sparkle, facet-fire dispersion
+avoidRules:
+  - dull
+  - plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-053.webp
+attributes:
+  negativePrompt: dull, plastic

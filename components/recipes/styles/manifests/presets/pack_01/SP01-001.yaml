@@ -1,0 +1,42 @@
+schemaVersion: 1
+id: SP01-001
+packId: pack_01
+name: Studio Headshot
+category: 1. Portrait Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - portrait-styles
+visualDna:
+  aesthetic: High-end professional studio headshot photography, corporate portraiture, clean and polished look
+  subject_treatment: Tack-sharp focus on the eyes and facial features, precise edge definition, natural proportions
+  color_and_tone: True-to-life neutral skin tones, balanced color grading, subtle gradients, solid seamless grey background
+  lighting_and_shadow: Studio strobe lighting, softbox illumination, classic butterfly lighting pattern, flattering catchlights in the eyes
+  texture_and_material: Hyper-realistic skin texture, visible pores, fine hair details, crisp fabric textures
+  camera_and_composition: Shot on 85mm or 105mm portrait lens, flat field of view, undistorted perspective, centered composition
+  atmosphere_and_mood: Professional, confident, approachable, clean, formal
+  rendering_and_quality: 8k resolution, commercial photography standard, flawless retouching, photorealistic
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-001.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-007
+packId: pack_11
+name: Tattoo Flash (Old School)
+category: 3. Artistic Mediums
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+visualDna:
+  aesthetic: Traditional American tattoo design, sailor flash art, street-shop heritage, anchor-and-swallow iconography
+  form_and_line: Bold black outlines, heavy contour weight, ribbony banners, coiled snakes
+  color_palette: Red, Green, Yellow, Black shading, limited triad palette, spit-shaded gradients
+  lighting_setup: Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow
+  material_texture: Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges
+  render_quality: Sailor Jerry bold-traditional flash, classic, nautical soul, iron-wrought toughness
+  spatial_distortion: 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout
+  atmosphere: Tough, classic, bold, salt-air romance, port-town grit, permanent devotion
+  key_features: Pepper shading (dots), rose-and-dagger motifs, banner text, swallow silhouettes
+avoidRules:
+  - realistic
+  - photo
+  - 3d
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-007.webp
+attributes:
+  negativePrompt: realistic, photo, 3d

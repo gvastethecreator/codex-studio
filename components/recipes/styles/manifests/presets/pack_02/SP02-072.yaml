@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-072
+packId: pack_02
+name: Candlelight
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Period drama
+  form_and_line: None
+  color_palette: Warm Orange, amber flame, honey glow, deep umber falloff
+  lighting_setup: Flickering low, single-candle key, flame dance, warm underlight
+  material_texture: Soft shadows, gentle roll-off, intimate darkness
+  render_quality: Intimate, old, pre-electric warmth, historical authenticity
+  spatial_distortion: None
+  atmosphere: Romantic, secret, whispered conspiracy, flickering intimacy
+  key_features: Bottom up light, flame flicker, glowing hand, wax drip
+avoidRules:
+  - electric light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-072.webp
+attributes:
+  negativePrompt: electric light

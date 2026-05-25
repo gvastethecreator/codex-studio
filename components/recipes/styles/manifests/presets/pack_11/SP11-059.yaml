@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-059
+packId: pack_11
+name: Snowflake
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Ice crystal macro, frozen-star, winter-hexagon, snowflake-photography, dendrite-sculpture
+  form_and_line: Fractal symmetry, six-fold-branching, fern-dendrite, plate-plane, needle-spike extension
+  color_palette: Clear, Blue background, ice-spectrum, prism-rainbow, hoar-frost white, birefringence-color, dark-field sapphire
+  lighting_setup: Sparkle, dark-field, refracted-rainbow spot, prism-split beam, supermacro-LED ring
+  material_texture: Ice crystal, hexagonal-plate, dendrite-branch, rime-coating, surface-etch, melt-rounding, sublimation-pit
+  render_quality: Perfect, fragile, Wilson-Bentley devotion, snowflake-photomicrograph, crystalline-geometry, winter-laboratory
+  spatial_distortion: Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal
+  atmosphere: Winter, beauty, falling-snow silence, crystal-uniqueness, frozen-moment, microscopic-wonder
+  key_features: Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow, melt-edge rounding
+avoidRules:
+  - melted
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-059.webp
+attributes:
+  negativePrompt: melted

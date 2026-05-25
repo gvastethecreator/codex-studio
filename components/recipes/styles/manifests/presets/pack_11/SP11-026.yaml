@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-026
+packId: pack_11
+name: Spray Paint / Graffiti
+category: 3. Artistic Mediums
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+visualDna:
+  aesthetic: Street mural, aerosol rebellion, urban-gallery, spray-can symphony, concrete-canyon art
+  form_and_line: Drips, overspray, fat-cap strokes, skinny-cap detail, can-control finesse
+  color_palette: Neon, Black outline, Montana-gold spectrum, chrome-silver, infrared-purple, alien-green, safety-yellow
+  lighting_setup: Outdoor wall, daylight-blast, brick-texture shadow, alley-gloom ambient, night-security light
+  material_texture: Concrete wall, aerosol, brick-surface tooth, stucco grain, cap-spatter speckle, buffed-over ghost
+  render_quality: Urban, rebellious, yard-burner energy, piece-book precision, freight-train rolling gallery
+  spatial_distortion: Wildstyle lettering, interlocking form, letter-morph chaos, arrow-flow motion
+  atmosphere: Cool, illegal, midnight mission, painted-steel thunder, huff-and-rattle cadence
+  key_features: Drips, fat-cap-to-skinny-cap transitions, halo-fade background, tag-handstyle flourish
+avoidRules:
+  - brush strokes
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-026.webp
+attributes:
+  negativePrompt: brush strokes, clean

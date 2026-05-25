@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-022
+packId: pack_02
+name: CCTV/Security Cam
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Surveillance footage
+  form_and_line: None
+  color_palette: Black and White, crushed greys, no midtones, hot whites
+  lighting_setup: Low dynamic range, flat sensor, blown highlights
+  material_texture: Scanlines, noise, interlacing artifacts, pixel smear
+  render_quality: Low res, grainy, surveillance-grade, compressed blockiness
+  spatial_distortion: Wide angle distortion, convex warp, overhead mount
+  atmosphere: Creepy, voyeur, institutional coldness, anonymous watching
+  key_features: Timestamp, camera ID overlay, motion detection box
+avoidRules:
+  - color
+  - hd
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-022.webp
+attributes:
+  negativePrompt: color, hd

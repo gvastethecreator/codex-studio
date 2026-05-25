@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-037
+packId: pack_11
+name: Steampunk
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: Victorian sci-fi, brass-and-steam future, airship-dream, Jules-Verne workshop
+  form_and_line: Gears, pipes, cog-train silhouettes, steam-vent contours, clock-face profiles
+  color_palette: Brass, Copper, Brown leather, verdigris-patina green, steam-whistle silver, mahogany-wood, boiler-plate iron
+  lighting_setup: Gaslight, steam, mantle-flame glow, hissing-vent haze, Edison-bulb warmth, lantern-swing shadows
+  material_texture: Metal, leather, steam, polished-brass luster, rivet-head bumps, pressure-gauge glass, oiled-gear teeth
+  render_quality: Intricate, mechanical, gear-by-gear wonder, differential-engine complexity, aether-science elegance
+  spatial_distortion: Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve precision
+  atmosphere: Adventure, invention, zeppelin-dock excitement, mad-scientist workshop, tea-and-gears coziness
+  key_features: Goggles, top-hat-with-gears, pocket-watch chain, brass-fittings, steam-whistle, cog-wheel motifs
+avoidRules:
+  - plastic
+  - digital
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-037.webp
+attributes:
+  negativePrompt: plastic, digital

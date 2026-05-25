@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP04-099
+packId: pack_04
+name: UI/HUD Wireframe Concept
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Game-UI-HUD-wireframe-concept, diegetic-in-world-interface-versus-non-diegetic-screen-overlay, health-bar-ammo-counter-stamina-meter-explorations, radial-menu-vs-linear-menu-comparison, minimalist-data-presentation-versus-diagetic-in-world-clues, Dead-Space-diegetic-UI-health-on-spine, minimal-screen-clutter-philosophy, player-experience-design-sketch
+  form_and_line: Clean-wireframe-lines, UI-element-bounding-boxes, hierarchy-readability-strokes, flow-arrow-between-screens, wireframe-grid-alignment, consistent-padding-markers
+  color_palette: Wireframe-grey, functional-cyan, warning-red, neutral-green, blueprint-blue, screen-black-background, UI-element-transparency-alpha
+  lighting_setup: None, flat-UI-lighting, glow-effect-on-interactive-elements, screen-ambient-illumination, dark-background-for-contrast
+  material_texture: Screen-pixel-grid, wireframe-line-precision, UI-glass-transparency, holographic-translucency, screen-glare-subtle, minimal-texture-functional
+  render_quality: UI-UX-wireframe-aesthetic, game-HUD-concept-design, Dead-Space-diegetic-inspiration, player-experience-clarity, functional-beauty-rendering
+  spatial_distortion: Screen-space-composition, diegetic-world-space-vs-screen-overlay, UI-element-hierarchy-layout, radial-vs-linear-menu-placement, safe-zone-margin-framing
+  atmosphere: Functional, player-centered, information-clarity, game-design-thinking, UX-problem-solving, elegant-minimalism
+  key_features: Diegetic-vs-non-diegetic-UI-comparison, wireframe-bounding-boxes, health-bar-mana-stamina-layouts, radial-menu-exploration, Dead-Space-health-on-spine-reference, screen-safe-zone, element-hierarchy-callouts
+avoidRules:
+  - finished
+  - polished
+  - colorful
+  - final UI
+  - rendered
+  - textured
+  - photo
+  - busy
+  - cluttered
+  - beautiful art
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-099.webp
+attributes:
+  negativePrompt: finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art

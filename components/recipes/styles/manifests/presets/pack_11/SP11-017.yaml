@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-017
+packId: pack_11
+name: Action Figure (90s)
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Plastic hero toy, blister-pack icon, Saturday-morning warrior, molded-champion
+  form_and_line: Muscle definition, heroic physique, sculpted-hero contours, punch-ready stance
+  color_palette: Bright plastic, primary-suit colors, flesh-tan plastic, metallic-sword silver, cape-blue
+  lighting_setup: Blister pack reflection, card-back gloss, overhead retail fluorescents, plastic-bubble glare
+  material_texture: Glossy plastic, injection-mold shell, hollow-torso lightweight, paint-application sheen
+  render_quality: Mass produced, toy, peg-hook nostalgia, action-figure charm, punch-kick-pose energy
+  spatial_distortion: 5 points of articulation, shoulder-hip-knee hinges, swivel-neck, weapon-grip hands
+  atmosphere: Exciting, play, adventure aisle, birthday-morning thrill, living-room-battle diorama
+  key_features: Joints visible, thigh-swivel seams, molded-cape detail, accessory-weapon grip
+avoidRules:
+  - realistic skin
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-017.webp
+attributes:
+  negativePrompt: realistic skin

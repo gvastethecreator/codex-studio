@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-022
+packId: pack_03
+name: Voxel Art
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Made of cubes
+  form_and_line: Grid aligned
+  color_palette: Vibrant
+  lighting_setup: Global illumination
+  material_texture: None, clean grid faces
+  render_quality: Minecraft/MagicaVoxel block-world voxel art, cube poetry
+  spatial_distortion: Blocky
+  atmosphere: Cute, digital, nostalgic sandbox
+  key_features: Cubes
+avoidRules:
+  - curves
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-022.webp
+attributes:
+  negativePrompt: curves, smooth

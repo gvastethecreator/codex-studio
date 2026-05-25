@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-027
+packId: pack_04
+name: Whimsical Ink
+category: 2. Children's Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - children-s-illustration
+visualDna:
+  aesthetic: Loose spiky ink storybook, Quentin Blake style, Roald Dahl energy, expressive scrawl, joyful mess
+  form_and_line: Scratchy, loose
+  color_palette: Watercolor splash, ink-wash spontaneity, playful spill
+  lighting_setup: None, raw paper, uncontrolled wash flow
+  material_texture: Ink nib
+  render_quality: Roald Dahl mischievous storybook mess, giggling anarchy
+  spatial_distortion: Spiky
+  atmosphere: Funny, energetic, ink-flick irreverence, chaotic joy
+  key_features: Loose lines, ink splatter, expressive scratch
+avoidRules:
+  - heavy
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-027.webp
+attributes:
+  negativePrompt: heavy, dark

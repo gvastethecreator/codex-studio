@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-047
+packId: pack_11
+name: Candy Land
+category: 1. Food & Drink
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - food-and-drink
+visualDna:
+  aesthetic: World made of sweets, confectionery-kingdom, gumdrop-forest, gingerbread-architecture, sugar-plum-fairy
+  form_and_line: Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles
+  color_palette: Pink, Blue, Sugar, candy-floss spectrum, marshmallow-white, licorice-black, jellybean-rainbow, cotton-candy pastel
+  lighting_setup: Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow backlight
+  material_texture: Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell snap, sprinkle-crunch
+  render_quality: Sweet, magical, Willy-Wonka wonder, candy-land fantasy, sugar-rush dream, gumdrop-path joy
+  spatial_distortion: Everything is edible, lollipop-tree scale, gingerbread-house proportions, chocolate-river flow, candy-cane columns
+  atmosphere: Happy, hungry, sugar-plum dreams, everlasting-gobstopper hope, candy-shop awe
+  key_features: Lollipops, gumdrop-path, frosting-icicle drip, candy-cane arch, chocolate-waterfall, sprinkle-confetti
+avoidRules:
+  - healthy
+  - savory
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-047.webp
+attributes:
+  negativePrompt: healthy, savory

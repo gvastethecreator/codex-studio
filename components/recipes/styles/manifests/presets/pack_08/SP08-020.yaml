@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-020
+packId: pack_08
+name: Red Carpet Gown
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Oscars awards-night gown, red-carpet moment, blinding-flash elegance, step-and-repeat royalty
+  form_and_line: Flowing train, mermaid sweep, column-drape silhouette, chapel-length train, plunging neckline
+  color_palette: Red, Gold, Black, ruby, champagne, midnight sapphire, liquid-silver, emerald
+  lighting_setup: Flash photography, paparazzi-wall strobe, step-and-repeat glow, golden-hour arrivals
+  material_texture: Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh
+  render_quality: Glamorous, expensive, best-dressed-list caliber, diamond-season perfection
+  spatial_distortion: None
+  atmosphere: Celebrity, fame, awards-show electricity, telecast anticipation, career-defining moment
+  key_features: Long train, statement jewels, strapless bodice, red-soled heels
+avoidRules:
+  - casual
+  - short
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-020.webp
+attributes:
+  negativePrompt: casual, short

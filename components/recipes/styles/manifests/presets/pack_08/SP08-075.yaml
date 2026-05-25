@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-075
+packId: pack_08
+name: Gold Leaf
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Covered in gold, gilded-divinity fantasy, living-statue opulence
+  form_and_line: Flakes, body-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap
+  color_palette: Metallic Gold, 24k-yellow, rose-gold, white-gold, champagne-foil, burnished-bronze, copper-patina
+  lighting_setup: Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection
+  material_texture: Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust
+  render_quality: Expensive, statue, Klimt-gold luxuriance, gilded-age opulence
+  spatial_distortion: None
+  atmosphere: Divine, rich, alchemical-wonder awe, temple-treasure sanctity, immortal-beauty stillness
+  key_features: Gold skin, leafing seams, burnished reflection, flake edges, gilded contour
+avoidRules:
+  - dull
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-075.webp
+attributes:
+  negativePrompt: dull

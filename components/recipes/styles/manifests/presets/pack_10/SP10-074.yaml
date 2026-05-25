@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-074
+packId: pack_10
+name: Stained Glass
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Colored glass window
+  form_and_line: Black lead came
+  color_palette: Glowing, saturated
+  lighting_setup: Backlit
+  material_texture: Glass imperfections
+  render_quality: Religious, colorful
+  spatial_distortion: Simplified shapes
+  atmosphere: Holy, bright
+  key_features: Lead lines
+avoidRules:
+  - opaque
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-074.webp
+attributes:
+  negativePrompt: opaque

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-065
+packId: pack_03
+name: 3D Icon
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: App icon render
+  form_and_line: Rounded corners
+  color_palette: Vibrant, gradient
+  lighting_setup: Soft studio
+  material_texture: Smooth plastic/glass, UI-grade finish
+  render_quality: macOS Big Sur glossy modern platform icon, squircle elegance
+  spatial_distortion: Squircle
+  atmosphere: Friendly, UI, app-store ready
+  key_features: Front facing, soft shadow base
+avoidRules:
+  - flat
+  - 2d icon
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-065.webp
+attributes:
+  negativePrompt: flat, 2d icon

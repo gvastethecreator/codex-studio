@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-022
+packId: pack_11
+name: Aardman Clay Stop-Motion
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Wallace & Gromit cozy clay stop-motion comedy, cheese-and-crackers warmth
+  form_and_line: Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles
+  color_palette: Matte clay colors, plasticine spectrum, earth-pigment tones, muted primary blends
+  lighting_setup: Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth
+  material_texture: Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability
+  render_quality: British dry humor tactile, Aardman charm, thumbprint poetry, frame-by-frame soul
+  spatial_distortion: Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands
+  atmosphere: Funny, charming, tea-time warmth, vegetable-garden mischief, inventive optimism
+  key_features: Plasticine, visible thumbprints, painted-backdrop sets, wire-armature shadows
+avoidRules:
+  - smooth cgi
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-022.webp
+attributes:
+  negativePrompt: smooth cgi

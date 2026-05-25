@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-005
+packId: pack_09
+name: Sandstone (Rough)
+category: 1. Natural Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - natural-materials
+visualDna:
+  aesthetic: Desert rock
+  form_and_line: Sediment layers
+  color_palette: Red, Orange, Tan
+  lighting_setup: Harsh sun
+  material_texture: Gritty, porous
+  render_quality: Canyon, dry
+  spatial_distortion: Eroded
+  atmosphere: Warm, ancient
+  key_features: Layers
+avoidRules:
+  - shiny
+  - wet
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-005.webp
+attributes:
+  negativePrompt: shiny, wet

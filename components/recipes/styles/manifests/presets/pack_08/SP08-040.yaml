@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-040
+packId: pack_08
+name: Space Suit (Retro)
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Apollo retro moon mission, one-small-step romance, Cape-Canaveral optimism
+  form_and_line: Bulky suit, pressurized-ring segmentation, hose-connector geometry, glove-gasket bulk, backpack-box volume
+  color_palette: White, silver, American-flag accent, visor-gold, beta-cloth cream, mission-patch color
+  lighting_setup: Harsh space sun, lunar-surface contrast, unfiltered-solar glare, helmet-interior bounce
+  material_texture: Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing, Velcro patches
+  render_quality: Historic, tech, NASA-archive authenticity, vacuum-silence clarity
+  spatial_distortion: None
+  atmosphere: Heroic, exploration, sea-of-tranquility wonder, mission-control suspense, giant-leap awe
+  key_features: Bubble helmet, gold visor, mission patch, umbilical hoses, moon boots
+avoidRules:
+  - modern sleek
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-040.webp
+attributes:
+  negativePrompt: modern sleek

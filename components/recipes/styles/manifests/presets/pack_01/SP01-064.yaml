@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-064
+packId: pack_01
+name: Concert Photography
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Band on stage
+  form_and_line: Silhouettes in fog
+  color_palette: Stage lights (Red/Blue)
+  lighting_setup: Beams, spots
+  material_texture: Fog, sweat, grain
+  render_quality: Rock n roll, loud
+  spatial_distortion: None
+  atmosphere: Energetic, loud
+  key_features: Crowd hands
+avoidRules:
+  - quiet
+  - bright
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-064.webp
+attributes:
+  negativePrompt: quiet, bright

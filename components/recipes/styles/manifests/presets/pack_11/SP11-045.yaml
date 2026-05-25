@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-045
+packId: pack_11
+name: Psychedelic
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: LSD trip art, acid-test poster, Fillmore-ballroom, liquid-light-show, consciousness-expanded
+  form_and_line: Melting, swirling, paisley-whorl, flame-tongue contours, morphing-edges, fluid-mandala
+  color_palette: Rainbow, shifting, Day-Glo spectrum, magenta-cyan-yellow trippy, neon-chartreuse, blacklight-purple, op-art contrast
+  lighting_setup: Glowing, blacklight-fluorescence, lava-lamp convection, strobe-freeze, pulse-blink rhythm
+  material_texture: Fractals, liquid-emulsion, oil-projection blob, poster-ink bleed, light-machine swirl
+  render_quality: Mind-bending, trippy, blotter-art, Fillmore-poster, psychedelic-therapy, Jimi-Hendrix visuals
+  spatial_distortion: Melting reality, Dali-clock droop, kaleidoscopic fragmentation, mirror-room infinity, perspective-liquefaction
+  atmosphere: Crazy, expanding, cosmic-consciousness, ego-dissolution, doors-of-perception, heightened-awareness
+  key_features: Eyes everywhere, melting-clock motif, paisley-pattern, fractal-spiral recursion, blacklight-poster glow, mandala-center, flame-tongue edges
+avoidRules:
+  - boring
+  - straight
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-045.webp
+attributes:
+  negativePrompt: boring, straight

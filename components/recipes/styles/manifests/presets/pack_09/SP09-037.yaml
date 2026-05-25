@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-037
+packId: pack_09
+name: Scratched Metal
+category: 4. Weathering & Decay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - weathering-and-decay
+visualDna:
+  aesthetic: Used machinery
+  form_and_line: Random scratches
+  color_palette: Steel
+  lighting_setup: Caught in scratches
+  material_texture: Abrasive
+  render_quality: Worn, used
+  spatial_distortion: None
+  atmosphere: Industrial, hard
+  key_features: Random direction
+avoidRules:
+  - mirror finish
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-037.webp
+attributes:
+  negativePrompt: mirror finish

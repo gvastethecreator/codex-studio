@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-008
+packId: pack_09
+name: Mossy Rock
+category: 1. Natural Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - natural-materials
+visualDna:
+  aesthetic: Stone covered in green
+  form_and_line: Fuzzy outline
+  color_palette: Grey stone, Green moss
+  lighting_setup: Dappled forest
+  material_texture: Velvet moss on hard stone
+  render_quality: Forest floor, damp
+  spatial_distortion: Softened edges
+  atmosphere: Ancient, quiet
+  key_features: Growth pattern
+avoidRules:
+  - dry
+  - city
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-008.webp
+attributes:
+  negativePrompt: dry, city

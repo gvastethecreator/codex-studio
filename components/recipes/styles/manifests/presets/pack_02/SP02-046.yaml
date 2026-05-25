@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-046
+packId: pack_02
+name: Daguerreotype (1840s)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Silver plate photo
+  form_and_line: None
+  color_palette: Metallic B&W, mirrored silver, smoky shadow, mercury gleam
+  lighting_setup: Long exposure, skylight studio, minutes-long stillness
+  material_texture: Scratches, tarnish, silver plate, copper backing
+  render_quality: Ghostly, ancient, mirror-reflection depth, 1840s stillness
+  spatial_distortion: Blurry eyes, sitter motion, breath ghost
+  atmosphere: Haunting, history, frozen mortality, Victorian silence
+  key_features: Vignette, brass frame, chemical bloom, tarnished edge
+avoidRules:
+  - color
+  - paper
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-046.webp
+attributes:
+  negativePrompt: color, paper

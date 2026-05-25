@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-040
+packId: pack_03
+name: Toon Shader (Cel Shaded)
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Anime style 3D
+  form_and_line: Black outlines
+  color_palette: Flat bands of color
+  lighting_setup: Hard shadow edge
+  material_texture: Flat, comic-book clarity
+  render_quality: Guilty Gear/Zelda stylized cel-shaded game art, bold outlines, flat magic
+  spatial_distortion: None
+  atmosphere: Illustrated, fun, anime energy
+  key_features: Banded shading, ink-line edges
+avoidRules:
+  - realistic
+  - gradient
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-040.webp
+attributes:
+  negativePrompt: realistic, gradient

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-017
+packId: pack_10
+name: Acrylic Pour
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Fluid art
+  form_and_line: Cells
+  color_palette: Mixed, marbled
+  lighting_setup: Glossy
+  material_texture: Paint skin
+  render_quality: DIY art, colorful
+  spatial_distortion: Flow
+  atmosphere: Creative, messy
+  key_features: Cells
+avoidRules:
+  - brush strokes
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-017.webp
+attributes:
+  negativePrompt: brush strokes

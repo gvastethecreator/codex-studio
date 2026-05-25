@@ -71,6 +71,8 @@ describe('buildStudioOverlayController', () => {
             id: 'job-1',
             projectId: 'default',
             kind: 'dry_run',
+            providerId: null,
+            sourceSpec: null,
             status: 'queued',
             execution: null,
             originalPrompt: 'hello',
@@ -105,7 +107,8 @@ describe('buildStudioOverlayController', () => {
           isReady: false,
           nextAction: null,
           title: 'Desktop runtime checking',
-          description: 'Refreshing backend health, app-server diagnostics, and the Local Codex Session.',
+          description:
+            'Refreshing backend health, app-server diagnostics, and the Local Codex Session.',
           checks: [],
         },
         isChecking: false,
@@ -121,6 +124,42 @@ describe('buildStudioOverlayController', () => {
         ensureAppServer: () => {
           calls.push('ensureAppServer');
         },
+      },
+      settings: {
+        isOpen: false,
+        close: () => calls.push('closeSettings'),
+        settings: null,
+        error: null,
+        isLoading: false,
+        isSaving: false,
+        outputSources: null,
+        outputSourceFiles: {},
+        isLoadingOutputSources: false,
+        loadingOutputSourceFiles: {},
+        isRegisteringOutputSource: false,
+        importingOutputSources: {},
+        libraryDir: 'D:/AI-Studio-Library',
+        refresh: () => {
+          calls.push('refreshSettings');
+        },
+        update: () => {
+          calls.push('updateSettings');
+        },
+        registerOutputSource: () => {
+          calls.push('registerOutputSource');
+        },
+        loadOutputSourceFiles: () => {
+          calls.push('loadOutputSourceFiles');
+        },
+        importOutputSourceFiles: () => {
+          calls.push('importOutputSourceFiles');
+        },
+        isBackgroundEnabled: true,
+        onToggleBackground: () => calls.push('toggleBackground'),
+        onResetStudio: () => {
+          calls.push('resetStudio');
+        },
+        isResettingStudio: false,
       },
       workspace: {
         batches: [
@@ -200,6 +239,8 @@ describe('buildStudioOverlayController', () => {
     controller.systemOverlays.completeOnboarding();
     controller.systemOverlays.refreshOnboardingHealth();
     controller.systemOverlays.ensureAppServer();
+    controller.systemOverlays.closeSettings();
+    void controller.systemOverlays.refreshSettings();
     controller.workspaceOverlays.restoreAllFromTrash();
     controller.workspaceOverlays.emptyTrash();
 
@@ -210,6 +251,8 @@ describe('buildStudioOverlayController', () => {
       'completeOnboarding',
       'refreshOnboardingHealth',
       'ensureAppServer',
+      'closeSettings',
+      'refreshSettings',
       'restoreAll:2',
       'emptyTrash:2',
     ]);

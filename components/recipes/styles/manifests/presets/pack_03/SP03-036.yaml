@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-036
+packId: pack_03
+name: Caustics
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Light focusing through glass/water
+  form_and_line: Bright patterns
+  color_palette: Prismatic, light-concentration bands
+  lighting_setup: Focused intensity, photon convergence
+  material_texture: Light patterns, refractive surfaces
+  render_quality: Physically correct, optical precision
+  atmosphere: Ethereal, complex, underwater magic
+  key_features: Light dancing, photon mapping
+avoidRules:
+  - diffuse
+  - matte
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-036.webp
+attributes:
+  negativePrompt: diffuse, matte

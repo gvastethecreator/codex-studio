@@ -10,16 +10,24 @@ import {
   getCatalogImage,
   purgeCatalogImage,
   queryCatalog,
+  registerCatalogImage,
   restoreCatalogImage,
   softDeleteCatalogImage,
   updateCatalogImage,
 } from './catalog';
+import { createCatalogCommands } from './catalogCommands';
 import { createDefaultDbStore, type StudioDbStore } from './dbStore';
+import { getSettingValue, setSettingValue } from './db';
 import { publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
 import { inspectLibrary, resolveLibraryPath } from './library';
 import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from './libraries';
 import { log } from './logger';
+import {
+  readEditableStudioSettings,
+  updateEditableStudioSettings,
+  type StudioSettingsStorage,
+} from './studioSettingsStore';
 import type { WorkerController, WorkerStatus } from './worker';
 import {
   getCodexAccountStatus,
@@ -34,6 +42,13 @@ import { getJobDetail } from './jobDetails';
 import { processReferences, ReferenceProcessingError } from './referenceManager';
 import { createWorkspaceRoutes } from './workspaceRoutes';
 import { resetStudioData } from './reset';
+import {
+  detectExternalOutputSourceCandidates,
+  importExternalOutputSourceFiles,
+  listExternalOutputSourceFiles,
+  readExternalOutputSourceRegistry,
+  registerExternalOutputSource,
+} from './outputSources';
 import type {
   AppServerEnsureReason,
   CodexModelCatalogResponse,
@@ -58,6 +73,7 @@ export interface CreateStudioAppOptions {
     getAppServerDiagnostics?: typeof getAppServerDiagnostics;
     isAppServerRunning?: typeof isAppServerRunning;
     dbStore?: StudioDbStore;
+    settingsStorage?: StudioSettingsStorage;
     worker?: Pick<WorkerController, 'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus'>;
   };
 }
@@ -74,8 +90,19 @@ export async function createStudioApp(
     options.dependencies?.getAppServerDiagnostics ?? getAppServerDiagnostics;
   const isLocalAppServerRunning = options.dependencies?.isAppServerRunning ?? isAppServerRunning;
   const dbStore = options.dependencies?.dbStore ?? (await createDefaultDbStore());
+  const settingsStorage = options.dependencies?.settingsStorage ?? {
+    getSetting: getSettingValue,
+    setSetting: setSettingValue,
+  };
   const workerController =
     options.dependencies?.worker ?? (await import('./worker')).getDefaultWorkerController();
+  const catalogCommands = createCatalogCommands({
+    updateCatalogImage,
+    softDeleteCatalogImage,
+    restoreCatalogImage,
+    purgeCatalogImage,
+    publishEvent,
+  });
 
   app.use('*', cors());
 
@@ -149,7 +176,66 @@ export async function createStudioApp(
     });
   });
 
-  app.get('/api/settings', (c) => c.json(getSettings()));
+  app.get('/api/bootstrap-config', (c) => c.json(getSettings()));
+
+  app.get('/api/settings', (c) => c.json(readEditableStudioSettings(settingsStorage)));
+
+  app.patch('/api/settings', async (c) => {
+    const body = await c.req.json().catch(() => ({}));
+    return c.json(updateEditableStudioSettings(settingsStorage, body));
+  });
+
+  app.get('/api/output-sources', (c) => {
+    const settings = readEditableStudioSettings(settingsStorage);
+    return c.json({
+      registry: readExternalOutputSourceRegistry(settingsStorage),
+      candidates: detectExternalOutputSourceCandidates({
+        libraryDir: getSettings().libraryDir,
+        settings,
+      }),
+    });
+  });
+
+  app.post('/api/output-sources', async (c) => {
+    const body = await c.req.json().catch(() => ({}));
+    const result = registerExternalOutputSource({
+      storage: settingsStorage,
+      libraryDir: getSettings().libraryDir,
+      input: body,
+    });
+
+    if (!result.ok) {
+      return c.json({ error: result.reason }, 400);
+    }
+
+    publishEvent('output-source.registered', result.source);
+    return c.json(result.source, 201);
+  });
+
+  app.get('/api/output-sources/:id/files', (c) => {
+    const url = new URL(c.req.url);
+    const result = listExternalOutputSourceFiles({
+      storage: settingsStorage,
+      sourceId: c.req.param('id'),
+      limit: Number(url.searchParams.get('limit') || 100),
+    });
+    if (!result.ok) return c.json({ error: result.reason }, 404);
+    return c.json({ source: result.source, files: result.files });
+  });
+
+  app.post('/api/output-sources/:id/import', async (c) => {
+    const body = await c.req.json().catch(() => ({}));
+    const result = importExternalOutputSourceFiles({
+      storage: settingsStorage,
+      sourceId: c.req.param('id'),
+      libraryDir: getSettings().libraryDir,
+      input: body,
+      registerCatalogImage,
+    });
+    if (!result.ok) return c.json({ error: result.reason }, 400);
+    publishEvent('output-source.imported', result.result);
+    return c.json(result.result, 201);
+  });
 
   app.get('/api/codex/models', async (c) => {
     return c.json(await readCodexModelCatalog());
@@ -208,11 +294,25 @@ export async function createStudioApp(
   app.post('/api/jobs', async (c) => {
     const body = (await c.req.json()) as CreateJobRequest;
     const projectId = body.projectId || dbStore.ensureDefaultProject().id;
-    const prompt = body.prompt?.trim();
+    const prompt = (body.prompt || body.sourceSpec?.prompt || '').trim();
     if (!prompt) return c.json({ error: 'Prompt is required' }, 400);
+    // Legacy clients may still post only { kind, prompt }. Keep the local runtime
+    // Codex-first by normalizing those jobs onto the current provider boundary.
+    const providerId =
+      body.kind === 'dry_run'
+        ? 'dry_run'
+        : (body.providerId ?? body.sourceSpec?.providerId ?? 'codex');
+    const sourceSpec = body.sourceSpec
+      ? {
+          ...body.sourceSpec,
+          providerId: body.sourceSpec.providerId ?? providerId,
+        }
+      : null;
     const job = dbStore.createJob({
       projectId,
       kind: body.kind,
+      providerId,
+      sourceSpec,
       prompt,
       execution: body.execution ?? null,
     });
@@ -307,35 +407,31 @@ export async function createStudioApp(
 
   app.patch('/api/catalog/:id', async (c) => {
     const body = await c.req.json().catch(() => ({}));
-    const image = updateCatalogImage(c.req.param('id'), {
+    const result = catalogCommands.update(c.req.param('id'), {
       isFavorite: body.isFavorite,
       tags: body.tags,
       workspaceId: body.workspaceId,
     });
-    if (!image) return c.json({ error: 'Catalog image not found' }, 404);
-    publishEvent('catalog.updated', image);
-    return c.json(image);
+    if (!result.ok) return c.json({ error: 'Catalog image not found' }, 404);
+    return c.json(result.image);
   });
 
   app.delete('/api/catalog/:id', (c) => {
-    const image = softDeleteCatalogImage(c.req.param('id'));
-    if (!image) return c.json({ error: 'Catalog image not found' }, 404);
-    publishEvent('catalog.updated', image);
-    return c.json(image);
+    const result = catalogCommands.softDelete(c.req.param('id'));
+    if (!result.ok) return c.json({ error: 'Catalog image not found' }, 404);
+    return c.json(result.image);
   });
 
   app.delete('/api/catalog/:id/permanent', (c) => {
-    const image = purgeCatalogImage(c.req.param('id'));
-    if (!image) return c.json({ error: 'Catalog image not found' }, 404);
-    publishEvent('catalog.deleted', image);
-    return c.json(image);
+    const result = catalogCommands.purge(c.req.param('id'));
+    if (!result.ok) return c.json({ error: 'Catalog image not found' }, 404);
+    return c.json(result.image);
   });
 
   app.post('/api/catalog/:id/restore', (c) => {
-    const image = restoreCatalogImage(c.req.param('id'));
-    if (!image) return c.json({ error: 'Catalog image not found' }, 404);
-    publishEvent('catalog.updated', image);
-    return c.json(image);
+    const result = catalogCommands.restore(c.req.param('id'));
+    if (!result.ok) return c.json({ error: 'Catalog image not found' }, 404);
+    return c.json(result.image);
   });
 
   app.post('/api/catalog/:id/embed', async (c) => {

@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-331
+packId: pack_05
+name: Yusuke Murata - Chrome Impact Hero Frame
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Hyper-finished modern hero illustration, chrome musculature, destructive perspective, city-cleaving punch clarity, lavish draftsmanship aimed at maximum spectacle
+  form_and_line: Precision contour, anatomy-rich detailing, ultra-clean action line control
+  color_palette: Steel grey, explosion orange, hero red, electric cyan, soot black, flash white
+  lighting_setup: HDR impact lighting, specular hero sheen, explosion backlight, debris-lit action
+  material_texture: Polished metal and skin finish, debris granularity, smoke plumes, high-detail rubble
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Extreme foreshortening, fist-to-camera compression, spectacle-first city scale, perfect action readability
+  atmosphere: Polished, explosive, metallic, triumphant
+  key_features: Chrome-like anatomy finish, giant impact craters, city-shatter perspective, lavish detail density, poster-hero posing
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-331.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

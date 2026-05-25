@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: SP02-093
+packId: pack_02
+name: Prehistoric Cave Painting
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Paleolithic cave-wall art, ochre-pigment hand stencils, rudimentary animal figures with too-many-legs, stick-figure hunters with spears, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, humanity's first cartoonists, thirty-thousand-year-old doodle energy
+  form_and_line: Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural pigment strokes
+  color_palette: Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness
+  lighting_setup: Torchlight flicker on cave wall, deep-shadow crevices, uneven stone illumination, dancing-flame warmth
+  material_texture: Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating
+  render_quality: Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment authenticity
+  spatial_distortion: Animals with impossible leg counts, headless hunters, overlapping-time narrative on same wall, no ground-line suspension
+  atmosphere: Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence
+  key_features: Hand-stencil negative prints, ochre-red animal outlines, charcoal-stick roughness, limestone rock texture, torchlight flicker, no ground plane
+avoidRules:
+  - modern
+  - digital
+  - clean
+  - sharp
+  - polished
+  - 3d
+  - realistic
+  - refined
+  - precise
+  - smooth
+  - contemporary
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-093.webp
+attributes:
+  negativePrompt: modern, digital, clean, sharp, polished, 3d, realistic, refined, precise, smooth, contemporary

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-065
+packId: pack_08
+name: Neon Light Suit
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Tron light-grid bodysuit, identity-disc glow, digital frontier, Grid-terminal icon
+  form_and_line: Glowing lines, hex-circuit geometry, body-con compression, disc-mount backplate, luminescent-stripe contour
+  color_palette: Black + Cyan, grid-blue, identity-disc white, amber-iso, CLU-orange, deep-circuit black
+  lighting_setup: Self-illuminated, emissive-glow bloom, dark-grid contrast, disc-edge rim light, neon-floor reflection
+  material_texture: Light, electroluminescent panel, matte neoprene, polycarbonate disc, luminous-flex circuit, silicone grip
+  render_quality: Sci-fi, digital, Flynn-lives luminescence, light-cycle precision
+  spatial_distortion: None
+  atmosphere: Future, tech, Grid-frontier freedom, data-stream electricity, user-vs-program drama
+  key_features: Glow, identity disc, circuit-line grid, illuminated piping, dark-helmet visor
+avoidRules:
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-065.webp
+attributes:
+  negativePrompt: dark

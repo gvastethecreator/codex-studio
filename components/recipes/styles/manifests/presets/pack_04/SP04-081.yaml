@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP04-081
+packId: pack_04
+name: Thumbnail Silhouette Exploration
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Five-minute value thumbnail, pure silhouette blocking, 20 variations of same subject, composition-first exploration, black-shape character designs, negative-space discovery, Feng Zhu rapid iteration, no detail only shape, greyscale priority, design-before-detail philosophy, filling pages with possibility
+  form_and_line: Rough value-blocking, chunky silhouette contours, no internal detail lines, pure-shape communication, lasso-tool fill shapes
+  color_palette: 3-value greyscale, black silhouette, mid-gray background fill, white negative space, no color distraction
+  lighting_setup: Value-only light separation, rim-light silhouette reading, no rendering just mass indication
+  material_texture: Brush-block roughness, lasso-selection sharp edges, digital-canvas tooth, speed-painting surface, no refinement
+  render_quality: Rapid-iteration concept thumbnail, design-exploration aesthetic, ideation-first rendering, no polish allowed
+  spatial_distortion: Silhouette variation across grid, proportion exploration, mass-tweaking between iterations, shape-language comparison
+  atmosphere: Energetic, exploratory, possibility-rich, pre-decision excitement, creative-sprint focus
+  key_features: Greyscale-only silhouettes, multiple-iteration grid, composition thumbnails, value-grouping clarity, shape-language experimentation
+avoidRules:
+  - detailed
+  - polished
+  - colored
+  - finished
+  - rendered
+  - final
+  - clean
+  - refined
+  - tight
+  - one version
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-081.webp
+attributes:
+  negativePrompt: detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version

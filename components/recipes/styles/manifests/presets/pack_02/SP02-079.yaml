@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-079
+packId: pack_02
+name: Softbox Studio
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Product photography
+  form_and_line: None
+  color_palette: Perfect white balance, neutral grey, accurate skin, pure product tones
+  lighting_setup: Large diffuse source, softbox wrap, shadowless fill
+  material_texture: Smooth gradients, seamless paper, clean backdrop
+  render_quality: Professional, clean, commercial polish, catalog-perfect
+  spatial_distortion: None
+  atmosphere: Commercial, perfect, aspirational product, sterile beauty
+  key_features: Soft shadows, seamless sweep, product isolation
+avoidRules:
+  - harsh shadows
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-079.webp
+attributes:
+  negativePrompt: harsh shadows

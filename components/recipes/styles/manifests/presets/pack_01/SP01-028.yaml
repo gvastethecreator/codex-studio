@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP01-028
+packId: pack_01
+name: Thermal Camera
+category: 5. Camera Types
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - camera-types
+visualDna:
+  aesthetic: Heat map imaging
+  form_and_line: Blobby heat signatures
+  color_palette: Ironbow (Purple to Yellow)
+  lighting_setup: Emissive
+  material_texture: Digital noise
+  render_quality: Military, scientific
+  spatial_distortion: No surface detail
+  atmosphere: Predator, tech
+  key_features: Heat gradient
+avoidRules:
+  - realistic colors
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-028.webp
+attributes:
+  negativePrompt: realistic colors

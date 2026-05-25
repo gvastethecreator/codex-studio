@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-042
+packId: pack_09
+name: Bubble Wrap
+category: 3. Tactile Surfaces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - tactile-surfaces
+visualDna:
+  aesthetic: Packing material
+  form_and_line: Circles
+  color_palette: Clear plastic
+  lighting_setup: Highlights on bubbles
+  material_texture: Plastic, air filled
+  render_quality: Disposable, fun
+  spatial_distortion: Bubbles
+  atmosphere: Protective, cheap
+  key_features: Grid of bubbles
+avoidRules:
+  - flat plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-042.webp
+attributes:
+  negativePrompt: flat plastic

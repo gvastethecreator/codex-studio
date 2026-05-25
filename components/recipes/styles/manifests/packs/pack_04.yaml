@@ -1,0 +1,221 @@
+schemaVersion: 1
+id: pack_04
+name: Illustration & Graphic Novel
+description: A versatile collection of 80+ illustration styles, covering comics, children's books, editorial art, and printmaking.
+categories:
+  - id: comic-book-styles
+    name: 1. Comic Book Styles
+    presetRefs:
+      - pack_04/SP04-004.yaml
+      - pack_04/SP04-013.yaml
+      - pack_04/SP04-010.yaml
+      - pack_04/SP04-006.yaml
+      - pack_04/SP04-001.yaml
+      - pack_04/SP04-003.yaml
+      - pack_04/SP04-007.yaml
+      - pack_04/SP04-002.yaml
+      - pack_04/SP04-005.yaml
+      - pack_04/SP04-015.yaml
+      - pack_04/SP04-008.yaml
+      - pack_04/SP04-016.yaml
+      - pack_04/SP04-011.yaml
+      - pack_04/SP04-012.yaml
+      - pack_04/SP04-009.yaml
+      - pack_04/SP04-014.yaml
+  - id: children-s-illustration
+    name: 2. Children's Illustration
+    presetRefs:
+      - pack_04/SP04-025.yaml
+      - pack_04/SP04-017.yaml
+      - pack_04/SP04-018.yaml
+      - pack_04/SP04-023.yaml
+      - pack_04/SP04-026.yaml
+      - pack_04/SP04-027.yaml
+      - pack_04/SP04-028.yaml
+      - pack_04/SP04-021.yaml
+      - pack_04/SP04-030.yaml
+      - pack_04/SP04-019.yaml
+      - pack_04/SP04-022.yaml
+      - pack_04/SP04-020.yaml
+      - pack_04/SP04-024.yaml
+      - pack_04/SP04-029.yaml
+  - id: editorial-and-poster
+    name: 3. Editorial & Poster
+    presetRefs:
+      - pack_04/SP04-039.yaml
+      - pack_04/SP04-043.yaml
+      - pack_04/SP04-044.yaml
+      - pack_04/SP04-031.yaml
+      - pack_04/SP04-032.yaml
+      - pack_04/SP04-033.yaml
+      - pack_04/SP04-037.yaml
+      - pack_04/SP04-041.yaml
+      - pack_04/SP04-045.yaml
+      - pack_04/SP04-038.yaml
+      - pack_04/SP04-042.yaml
+      - pack_04/SP04-040.yaml
+      - pack_04/SP04-034.yaml
+      - pack_04/SP04-036.yaml
+      - pack_04/SP04-035.yaml
+  - id: concept-art
+    name: 4. Concept Art
+    presetRefs:
+      - pack_04/SP04-053.yaml
+      - pack_04/SP04-047.yaml
+      - pack_04/SP04-082.yaml
+      - pack_04/SP04-055.yaml
+      - pack_04/SP04-083.yaml
+      - pack_04/SP04-056.yaml
+      - pack_04/SP04-046.yaml
+      - pack_04/SP04-049.yaml
+      - pack_04/SP04-060.yaml
+      - pack_04/SP04-048.yaml
+      - pack_04/SP04-058.yaml
+      - pack_04/SP04-090.yaml
+      - pack_04/SP04-092.yaml
+      - pack_04/SP04-051.yaml
+      - pack_04/SP04-050.yaml
+      - pack_04/SP04-091.yaml
+      - pack_04/SP04-095.yaml
+      - pack_04/SP04-054.yaml
+      - pack_04/SP04-081.yaml
+      - pack_04/SP04-098.yaml
+      - pack_04/SP04-088.yaml
+      - pack_04/SP04-057.yaml
+      - pack_04/SP04-087.yaml
+      - pack_04/SP04-093.yaml
+      - pack_04/SP04-097.yaml
+      - pack_04/SP04-059.yaml
+      - pack_04/SP04-085.yaml
+      - pack_04/SP04-084.yaml
+      - pack_04/SP04-052.yaml
+      - pack_04/SP04-086.yaml
+      - pack_04/SP04-100.yaml
+      - pack_04/SP04-096.yaml
+      - pack_04/SP04-099.yaml
+      - pack_04/SP04-089.yaml
+      - pack_04/SP04-094.yaml
+  - id: ink-and-print
+    name: 5. Ink & Print
+    presetRefs:
+      - pack_04/SP04-078.yaml
+      - pack_04/SP04-062.yaml
+      - pack_04/SP04-073.yaml
+      - pack_04/SP04-079.yaml
+      - pack_04/SP04-069.yaml
+      - pack_04/SP04-065.yaml
+      - pack_04/SP04-064.yaml
+      - pack_04/SP04-066.yaml
+      - pack_04/SP04-070.yaml
+      - pack_04/SP04-074.yaml
+      - pack_04/SP04-075.yaml
+      - pack_04/SP04-067.yaml
+      - pack_04/SP04-076.yaml
+      - pack_04/SP04-061.yaml
+      - pack_04/SP04-063.yaml
+      - pack_04/SP04-080.yaml
+      - pack_04/SP04-071.yaml
+      - pack_04/SP04-077.yaml
+      - pack_04/SP04-068.yaml
+      - pack_04/SP04-072.yaml
+presetRefs:
+  - pack_04/SP04-004.yaml
+  - pack_04/SP04-013.yaml
+  - pack_04/SP04-010.yaml
+  - pack_04/SP04-006.yaml
+  - pack_04/SP04-001.yaml
+  - pack_04/SP04-003.yaml
+  - pack_04/SP04-007.yaml
+  - pack_04/SP04-002.yaml
+  - pack_04/SP04-005.yaml
+  - pack_04/SP04-015.yaml
+  - pack_04/SP04-008.yaml
+  - pack_04/SP04-016.yaml
+  - pack_04/SP04-011.yaml
+  - pack_04/SP04-012.yaml
+  - pack_04/SP04-009.yaml
+  - pack_04/SP04-014.yaml
+  - pack_04/SP04-025.yaml
+  - pack_04/SP04-017.yaml
+  - pack_04/SP04-018.yaml
+  - pack_04/SP04-023.yaml
+  - pack_04/SP04-026.yaml
+  - pack_04/SP04-027.yaml
+  - pack_04/SP04-028.yaml
+  - pack_04/SP04-021.yaml
+  - pack_04/SP04-030.yaml
+  - pack_04/SP04-019.yaml
+  - pack_04/SP04-022.yaml
+  - pack_04/SP04-020.yaml
+  - pack_04/SP04-024.yaml
+  - pack_04/SP04-029.yaml
+  - pack_04/SP04-039.yaml
+  - pack_04/SP04-043.yaml
+  - pack_04/SP04-044.yaml
+  - pack_04/SP04-031.yaml
+  - pack_04/SP04-032.yaml
+  - pack_04/SP04-033.yaml
+  - pack_04/SP04-037.yaml
+  - pack_04/SP04-041.yaml
+  - pack_04/SP04-045.yaml
+  - pack_04/SP04-038.yaml
+  - pack_04/SP04-042.yaml
+  - pack_04/SP04-040.yaml
+  - pack_04/SP04-034.yaml
+  - pack_04/SP04-036.yaml
+  - pack_04/SP04-035.yaml
+  - pack_04/SP04-053.yaml
+  - pack_04/SP04-047.yaml
+  - pack_04/SP04-082.yaml
+  - pack_04/SP04-055.yaml
+  - pack_04/SP04-083.yaml
+  - pack_04/SP04-056.yaml
+  - pack_04/SP04-046.yaml
+  - pack_04/SP04-049.yaml
+  - pack_04/SP04-060.yaml
+  - pack_04/SP04-048.yaml
+  - pack_04/SP04-058.yaml
+  - pack_04/SP04-090.yaml
+  - pack_04/SP04-092.yaml
+  - pack_04/SP04-051.yaml
+  - pack_04/SP04-050.yaml
+  - pack_04/SP04-091.yaml
+  - pack_04/SP04-095.yaml
+  - pack_04/SP04-054.yaml
+  - pack_04/SP04-081.yaml
+  - pack_04/SP04-098.yaml
+  - pack_04/SP04-088.yaml
+  - pack_04/SP04-057.yaml
+  - pack_04/SP04-087.yaml
+  - pack_04/SP04-093.yaml
+  - pack_04/SP04-097.yaml
+  - pack_04/SP04-059.yaml
+  - pack_04/SP04-085.yaml
+  - pack_04/SP04-084.yaml
+  - pack_04/SP04-052.yaml
+  - pack_04/SP04-086.yaml
+  - pack_04/SP04-100.yaml
+  - pack_04/SP04-096.yaml
+  - pack_04/SP04-099.yaml
+  - pack_04/SP04-089.yaml
+  - pack_04/SP04-094.yaml
+  - pack_04/SP04-078.yaml
+  - pack_04/SP04-062.yaml
+  - pack_04/SP04-073.yaml
+  - pack_04/SP04-079.yaml
+  - pack_04/SP04-069.yaml
+  - pack_04/SP04-065.yaml
+  - pack_04/SP04-064.yaml
+  - pack_04/SP04-066.yaml
+  - pack_04/SP04-070.yaml
+  - pack_04/SP04-074.yaml
+  - pack_04/SP04-075.yaml
+  - pack_04/SP04-067.yaml
+  - pack_04/SP04-076.yaml
+  - pack_04/SP04-061.yaml
+  - pack_04/SP04-063.yaml
+  - pack_04/SP04-080.yaml
+  - pack_04/SP04-071.yaml
+  - pack_04/SP04-077.yaml
+  - pack_04/SP04-068.yaml
+  - pack_04/SP04-072.yaml

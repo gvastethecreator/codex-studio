@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-044
+packId: pack_06
+name: Drypoint
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Scratched metal print
+  form_and_line: Velvety, burred lines
+  color_palette: Black ink, warm paper
+  lighting_setup: Soft
+  material_texture: Ink blur
+  render_quality: Expressive, short-run
+  spatial_distortion: None
+  atmosphere: Soft, rich
+  key_features: Burr texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-044.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

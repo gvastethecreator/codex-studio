@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-042
+packId: pack_02
+name: Papercraft Animation
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Folded paper world
+  form_and_line: Fold lines
+  color_palette: Origami paper, washi tones, muted coral, indigo, rice white
+  lighting_setup: Soft studio, gentle fill, paper-diffuse bounce
+  material_texture: Paper grain, fold crease, fibrous edge, handmade pulp
+  render_quality: Delicate, craft, handmade patience, precision folding
+  spatial_distortion: Low poly (paper), geometric faceting, folded terrain
+  atmosphere: Cute, handmade, storybook craft, gentle wonder
+  key_features: Folds, crease shadow, paper thickness, origami creature
+avoidRules:
+  - drawn
+  - 3d
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-042.webp
+attributes:
+  negativePrompt: drawn, 3d

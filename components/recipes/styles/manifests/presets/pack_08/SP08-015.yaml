@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-015
+packId: pack_08
+name: Cosplay Anime
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: High quality cosplay photo, character-faithful replication, convention-floor spectacle
+  form_and_line: Accurate to character, silhouette-matched precision, exaggerated anime proportions
+  color_palette: Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues
+  lighting_setup: Convention floor or studio, three-point studio rig, colored gel accents, anime-style rim
+  material_texture: Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex
+  render_quality: Fan art, detailed, fun, craftsmanship pride, competition-grade finish
+  spatial_distortion: Big props
+  atmosphere: Playful, character, fake, joyful transformation, fandom devotion, costume-hall electricity
+  key_features: Wig texture, styled fiber sheen, armor seam lines, prop replica detail
+avoidRules:
+  - realistic clothes
+  - dull
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-015.webp
+attributes:
+  negativePrompt: realistic clothes, dull

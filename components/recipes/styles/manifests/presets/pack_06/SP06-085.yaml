@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-085
+packId: pack_06
+name: Visual Novel Screen
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Japanese visual novel frame, cel-style character sprite on soft-focus photograph background, ADV dialogue-box framing, emotional portrait composition, dating-sim intimacy, Key visual-arts large-eye tenderness, Fate/stay night nighttime atmosphere, choice-branch tension
+  form_and_line: Clean cel-style character outlines on photo backgrounds, UI-frame division, dialogue-box anchoring, sprite-expression sheets
+  color_palette: Anime cel colors, soft-photo background desaturation, UI-box translucent gradients, gentle evening tones, school-uniform palette
+  lighting_setup: Diffuse-filtered photographic backgrounds, soft character sprite lighting independent of scene, gentle vignette framing
+  material_texture: Vector-clean character against JPEG-grain background, UI-glass translucency, soft photographic bokeh, mixed-media texture
+  render_quality: Visual-novel screenshot, ADV-game aesthetic, emotional portrait-focused rendering, mixed-media anime-game still
+  spatial_distortion: Character sprite layered over static background, dialogue box occupying lower third, choice-button overlay, flat composite depth
+  atmosphere: Intimate, emotional, narrative-focused, quiet tension, relationship-weighted silence
+  key_features: Character sprite over photo background, dialogue-box framing, ADV text interface, emotional facial expressions, romantic-ambient lighting
+avoidRules:
+  - action
+  - motion
+  - dynamic
+  - 3d
+  - real-time
+  - intense
+  - fast
+  - combat
+  - epic
+  - cinematic camera
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-085.webp
+attributes:
+  negativePrompt: action, motion, dynamic, 3d, real-time, intense, fast, combat, epic, cinematic camera

@@ -17,6 +17,13 @@ export interface StudioUsageSummary {
   meta: string;
   tooltip: string;
   unitLabel: string | null;
+  limits: {
+    id: string;
+    label: string;
+    availablePercent: number;
+    usedPercent: number;
+    resetLabel: string | null;
+  }[];
   tone: StudioUsageTone;
   isLoading: boolean;
 }
@@ -44,6 +51,21 @@ export function formatCodexPlan(planType: string | null | undefined) {
     .replace(/chatgpt/gi, 'ChatGPT')
     .replace(/[_-]+/g, ' ')
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function formatResetLabel(resetsAt: number | null | undefined, now = Date.now()) {
+  if (!resetsAt) return null;
+
+  const resetMs = resetsAt * 1000;
+  if (!Number.isFinite(resetMs)) return null;
+
+  const remainingMinutes = Math.max(0, Math.ceil((resetMs - now) / 60000));
+  if (remainingMinutes < 60) return `${remainingMinutes}m reset`;
+
+  const remainingHours = Math.ceil(remainingMinutes / 60);
+  if (remainingHours < 48) return `${remainingHours}h reset`;
+
+  return `${Math.ceil(remainingHours / 24)}d reset`;
 }
 
 export function buildStudioDiagnosticsSnapshot({
@@ -88,10 +110,9 @@ export function buildStudioDiagnosticsSnapshot({
               }
             : {
                 value: 'Unavailable',
-                detail:
-                  localCodexSession.error
-                    ? `Could not read the local session: ${localCodexSession.error}`
-                    : 'The Local Codex Session is unavailable right now.',
+                detail: localCodexSession.error
+                  ? `Could not read the local session: ${localCodexSession.error}`
+                  : 'The Local Codex Session is unavailable right now.',
                 tone: 'danger' as const,
               };
 
@@ -108,16 +129,14 @@ export function buildStudioDiagnosticsSnapshot({
     {
       key: 'codexCli',
       label: 'Codex CLI',
-      value:
-        health?.codexCli.available === true ? 'Ready' : health ? 'Unavailable' : 'Checking',
+      value: health?.codexCli.available === true ? 'Ready' : health ? 'Unavailable' : 'Checking',
       detail:
         health?.codexCli.available === true
-          ? health.codexCli.version ?? health.codexCli.command ?? 'Codex CLI detected.'
+          ? (health.codexCli.version ?? health.codexCli.command ?? 'Codex CLI detected.')
           : health
             ? 'Install Codex CLI or confirm it is available on your PATH before running image tasks.'
             : 'Waiting for the first runtime check from the local backend.',
-      tone:
-        health?.codexCli.available === true ? 'success' : health ? 'danger' : 'warning',
+      tone: health?.codexCli.available === true ? 'success' : health ? 'danger' : 'warning',
     },
     {
       key: 'appServer',
@@ -154,10 +173,10 @@ export function buildStudioDiagnosticsSnapshot({
     ? 'Offline'
     : usageIsLoading
       ? 'Checking…'
-      : localCodexSession?.usage?.display ??
+      : (localCodexSession?.usage?.display ??
         (localCodexSession?.reason === 'chatgpt_login_required'
           ? 'Sign in with ChatGPT'
-          : 'Unavailable');
+          : 'Unavailable'));
   const usageTooltip = !isBackendConnected
     ? 'Reconnect the local backend to refresh health, usage, and app-server status.'
     : localCodexSession?.error
@@ -168,6 +187,14 @@ export function buildStudioDiagnosticsSnapshot({
     : localCodexSession?.usage?.display
       ? 'available'
       : 'neutral';
+  const usageLimits =
+    localCodexSession?.usage?.limits?.map((limit) => ({
+      id: limit.id,
+      label: limit.label,
+      availablePercent: limit.availablePercent,
+      usedPercent: limit.usedPercent,
+      resetLabel: formatResetLabel(limit.resetsAt),
+    })) ?? [];
 
   return {
     health,
@@ -179,8 +206,8 @@ export function buildStudioDiagnosticsSnapshot({
       value: usageValue,
       meta: usageMeta,
       tooltip: usageTooltip,
-      unitLabel:
-        !usageIsLoading && localCodexSession?.usage?.unit === 'credits' ? 'credits' : null,
+      unitLabel: !usageIsLoading && localCodexSession?.usage?.unit === 'credits' ? 'credits' : null,
+      limits: usageLimits,
       tone: usageTone,
       isLoading: usageIsLoading,
     },

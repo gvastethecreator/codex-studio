@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-093
+packId: pack_06
+name: MSX2 Japanese Computer
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: MSX2-Japanese-8-bit-computer-art, bright-vibrant-pixel-palette unique to Japanese-home-computers, Metal-Gear-original-stealth-sprites, Ys-ancient- adventure-RPG-tiles, Konami-MSX-era-charm, slightly-compact-Japanese-pixel-style, SCREEN-mode-graphics-layered, disk-BASIC-and-cassette-tape-loading
+  form_and_line: Compact-pixel-sprite-design, 256x212-screen-resolution, Japanese-text-8x8-character-cells, sprite-pattern-table-limits
+  color_palette: MSX2-bright-palette, vivid-saturated-japanese-8-bit, emerald-greens, cherry-reds, sky-blues, golden-yellows, pastel-pinks unique to platform, 256-colors-from-palette
+  lighting_setup: Flat-sprite-lighting, bright-color-fields, no-shading-on-simple-sprites, SCREEN-layer-transparency-overlay
+  material_texture: MSX-pixel-grid, Kanji-character-texture, disk-BASIC-interface-framing, cassette-data-screech-sonic-texture, YM2413-FM-synth-chip-sound-visual-equivalent
+  render_quality: MSX2-Japanese-computer pixel aesthetic, Konami-8-bit-beauty, bright-home-computer art, 1985-Japan-tech nostalgia
+  spatial_distortion: 256x212-Japanese-resolution, SCREEN-mode-layering, vertical-scanline-rendering, Kanji-text-overlay, pixel-aspect-specific-to-MSX
+  atmosphere: 80s-Japan-tech wonder, Konami-office-creativity, cassette-tape-patience, early-Kojima-stealth-atmosphere, Akihabara-electronics-district soul
+  key_features: MSX2-vibrant-palette, compact-pixel-resolution, SCREEN-mode-layering, Kanji-character-support, Konami-charm, Japanese-8-bit-brightness, 256x212-proportions
+avoidRules:
+  - western
+  - modern
+  - 3d
+  - realistic
+  - low color
+  - dark
+  - muted
+  - gritty
+  - photo
+  - smooth gradient
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-093.webp
+attributes:
+  negativePrompt: western, modern, 3d, realistic, low color, dark, muted, gritty, photo, smooth gradient

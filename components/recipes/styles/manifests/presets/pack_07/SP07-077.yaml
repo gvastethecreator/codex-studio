@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-077
+packId: pack_07
+name: Ringworld
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Halo ring, Niven megastructure, orbital-band world, habitable-ring landscape, cosmic-ribbon
+  form_and_line: Upward horizon, arch-in-sky curve, ribbon-land strip, edge-wall lines, sun-shadow band
+  color_palette: Blue, Green strip, Space Black, Ocean-band, Atmosphere-white rim, Shadow-wall Dark
+  lighting_setup: Sunlight, ring-self-shadow, edge-wall glow, atmosphere-scatter blue, void-black contrast
+  material_texture: Atmosphere, continental land, orbital-plate metal, sea-surface, cloud-swirl, mountain-shadow
+  render_quality: Vast, artificial, Niven-scale imagination, ringworld-wonder, habitable-engineering, landscape-megastructure
+  spatial_distortion: Ring shape
+  atmosphere: Awe, scale, world-builder, cosmic-horizon, engineering-sublime, infinite-land, ring-citizen perspective
+  key_features: Sky arch, upward-curving land, edge wall, sun-shadow band, ocean strip, ring curvature, mountain-on-horizon
+avoidRules:
+  - globe
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-077.webp
+attributes:
+  negativePrompt: globe

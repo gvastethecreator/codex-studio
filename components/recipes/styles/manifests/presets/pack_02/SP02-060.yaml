@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-060
+packId: pack_02
+name: Night Vision (Green)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Intensifier tube
+  form_and_line: None
+  color_palette: Phosphor Green, monochrome green, bright-green highlight, black-green shadow
+  lighting_setup: Grainy gain, image intensifier, amplified starlight
+  material_texture: Scintillation noise, electron cascade, static snow
+  render_quality: Military, spy, low-light clarity, ghost-proxy war
+  spatial_distortion: Bloom, tube flare, halo around bright sources
+  atmosphere: Stealth, hidden, nocturnal ops, predator unseen
+  key_features: Green, tube whine, IR illuminator beam
+avoidRules:
+  - color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-060.webp
+attributes:
+  negativePrompt: color

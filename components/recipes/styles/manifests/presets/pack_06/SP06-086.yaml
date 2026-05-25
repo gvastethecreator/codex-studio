@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP06-086
+packId: pack_06
+name: RPG Maker Chibi Tileworld
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Classic RPG Maker top-down tile world, chibi two-head-tall sprites, cute 16x16 tile forests, tiny treasure chests, innkeeper NPC behind counter, nostalgic indie-RPG charm, Yume Nikki dreamscape simplicity, Ib horror-cute dissonance
+  form_and_line: Small-pixel sprite outlines, tile-grid construction, chunky square tiles, simple sprite animation frames, grid-locked everything
+  color_palette: Cute saturated tiles, bright green grass, blue water tiles, brown village roofs, character-specific palette swaps, RTP default charm
+  lighting_setup: Flat ambient tile lighting, occasional window-yellow glow tiles, no dynamic lighting, pre-baked atmosphere
+  material_texture: Tile-repetition grids, sprite-pixel squareness, grid-aligned collision edges, chunky-block construction feel
+  render_quality: RPG Maker game screen, indie-RPG nostalgia, chibi-pixel charm, do-it-yourself game-aesthetic warmth
+  spatial_distortion: Top-down orthographic grid, tile-based movement snapping, screen-transition fade, flat-isometric hybrid worldview
+  atmosphere: Cozy, nostalgic, do-it-yourself creativity, small-town adventure warmth, indie-game soul
+  key_features: Grid-based tile world, chibi two-head-tall sprites, top-down orthographic perspective, tile-repetition patterns, dialogue-box overlay
+avoidRules:
+  - realistic
+  - 3d
+  - photorealistic
+  - smooth
+  - modern
+  - high resolution
+  - detailed
+  - serious
+  - gritty
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-086.webp
+attributes:
+  negativePrompt: realistic, 3d, photorealistic, smooth, modern, high resolution, detailed, serious, gritty

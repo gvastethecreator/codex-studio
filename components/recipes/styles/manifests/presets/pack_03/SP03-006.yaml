@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP03-006
+packId: pack_03
+name: V-Ray ArchViz Raytracer
+category: 5. Render Engines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+visualDna:
+  aesthetic: Architectural visualization
+  form_and_line: Precise
+  color_palette: Warm interior, balanced exposure
+  lighting_setup: IES lights, sun, adaptive dome
+  material_texture: Photorealistic materials, layered BRDF
+  render_quality: ArchViz, catalog, interior design
+  spatial_distortion: None
+  atmosphere: Inviting, expensive, aspirational living
+  key_features: Clean lines, adaptive sampling
+avoidRules:
+  - photo
+  - drawing
+  - painting
+  - sketch
+  - 2d
+  - flat
+  - noise
+  - grain
+  - low resolution
+  - jpeg artifacts
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-006.webp
+attributes:
+  negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text

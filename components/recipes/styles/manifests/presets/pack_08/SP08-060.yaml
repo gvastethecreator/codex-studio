@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-060
+packId: pack_08
+name: Velvet
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Evening jacket, after-dark luxury, candlelit-sophistication
+  form_and_line: Soft highlights, shawl-collar wrap, smoking-jacket taper, jacquard-relief silhouette, silk-faced lapel roll
+  color_palette: Deep Blue, Burgundy, midnight, amethyst, forest, oxblood, cognac
+  lighting_setup: Soft edge glow, candle-halo warmth, chandelier-dimmer ambiance, piano-bar amber
+  material_texture: Plush velvet pile, crushed velvet, silk-velvet devoré, jacquard weave, satin-faced lapel, grosgrain trim
+  render_quality: Rich, soft, smoking-room luxury, velvet-pile depth
+  spatial_distortion: None
+  atmosphere: Luxury, night, after-hours refinement, aged-whiskey warmth, private-club exclusivity
+  key_features: Soft sheen, pile-direction gleam, satin lapel, jacquard pattern, frog closure
+avoidRules:
+  - shiny
+  - hard
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-060.webp
+attributes:
+  negativePrompt: shiny, hard

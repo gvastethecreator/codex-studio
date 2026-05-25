@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-069
+packId: pack_03
+name: VFX Simulation (Fire/Smoke)
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Explosion or fire
+  form_and_line: Turbulence
+  color_palette: Orange, Black smoke
+  lighting_setup: Self illuminated
+  material_texture: Volume, pyroclastic density
+  render_quality: Houdini VFX simulation, pyro mastery
+  spatial_distortion: Expanding
+  atmosphere: Dangerous, dynamic, cinematic destruction
+  key_features: Physics, turbulence control
+avoidRules:
+  - solid
+  - cartoon fire
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-069.webp
+attributes:
+  negativePrompt: solid, cartoon fire

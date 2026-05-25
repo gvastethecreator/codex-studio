@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-063
+packId: pack_01
+name: Real Estate (HDR)
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: House interior
+  form_and_line: Wide angle
+  color_palette: Saturated, even
+  lighting_setup: No shadows (HDR)
+  material_texture: Sharp
+  render_quality: Zillow, oversaturated
+  spatial_distortion: Unnatural dynamic range
+  atmosphere: Bright, selling
+  key_features: Windows visible
+avoidRules:
+  - shadows
+  - dark corners
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-063.webp
+attributes:
+  negativePrompt: shadows, dark corners

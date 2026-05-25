@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-016
+packId: pack_10
+name: Ferrofluid
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Magnetic liquid spikes
+  form_and_line: Spikes
+  color_palette: Black, reflective
+  lighting_setup: Studio highlight
+  material_texture: Liquid metal
+  render_quality: Scientific, alien
+  spatial_distortion: Magnetic field
+  atmosphere: Dark, sci-fi
+  key_features: Spikes
+avoidRules:
+  - soft
+  - colorful
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-016.webp
+attributes:
+  negativePrompt: soft, colorful

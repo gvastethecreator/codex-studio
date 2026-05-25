@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-079
+packId: pack_10
+name: Foil Stamping
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Metallic imprint on paper
+  form_and_line: Debossed
+  color_palette: Gold, Silver, Rose Gold
+  lighting_setup: Reflective
+  material_texture: Matte paper contrast
+  render_quality: Premium, invite
+  spatial_distortion: None
+  atmosphere: Expensive, elegant
+  key_features: Metallic shine
+avoidRules:
+  - print
+  - ink
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-079.webp
+attributes:
+  negativePrompt: print, ink

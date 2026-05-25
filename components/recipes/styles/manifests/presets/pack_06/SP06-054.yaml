@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-054
+packId: pack_06
+name: Isometric
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: 3D parallel projection
+  form_and_line: Parallel lines
+  color_palette: Vibrant
+  lighting_setup: Studio
+  material_texture: Smooth
+  render_quality: Game asset
+  spatial_distortion: No perspective
+  atmosphere: Organized, toy-like
+  key_features: 30 degree angle
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-054.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

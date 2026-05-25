@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-056
+packId: pack_02
+name: Early Digital (2000s)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: 2 Megapixel camera
+  form_and_line: None
+  color_palette: Noisy shadows, purple fringing, CCD magenta, muddy chroma
+  lighting_setup: Flat, pop-up flash, no dynamic range
+  material_texture: Jpeg artifacts, compression blocks, color banding
+  render_quality: Low res, nostalgic, 2MP chunky, digital infancy
+  spatial_distortion: Pixelation, stair-step edge, aliasing jaggies
+  atmosphere: Y2K, candid, AIM-era, early Facebook album
+  key_features: Date stamp, 640x480, silver camera body
+avoidRules:
+  - film grain
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-056.webp
+attributes:
+  negativePrompt: film grain

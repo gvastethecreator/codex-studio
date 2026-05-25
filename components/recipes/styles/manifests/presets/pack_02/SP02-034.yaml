@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-034
+packId: pack_02
+name: Laika Moody Stop-Motion
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Moody miniature stop-motion fantasy, Coraline style, handcrafted dread, wool sweaters, button eyes
+  form_and_line: None
+  color_palette: Texture rich, muted jewel, deep violet, moss green, rust orange
+  lighting_setup: Miniature studio, practical dollhouse, keyed drama, soft fill
+  material_texture: Fabric, 3D print, wool knit, silicone skin, real hair
+  render_quality: Tactile, creepy, frame-by-frame labor, physical imperfection
+  spatial_distortion: Replacement face, expression swap, incremental sculpt
+  atmosphere: Dark, handmade, gothic whimsy, craft horror
+  key_features: Imperfection, fingerprint texture, miniature prop detail
+avoidRules:
+  - smooth 3d
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-034.webp
+attributes:
+  negativePrompt: smooth 3d

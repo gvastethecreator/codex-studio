@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-011
+packId: pack_04
+name: Junji Ito Horror Manga (Obsessive Ink)
+category: 1. Comic Book Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+visualDna:
+  aesthetic: Body horror
+  form_and_line: Fine, obsessive
+  color_palette: Black and White, ink-drown darkness, obsessive monotone
+  lighting_setup: Creepy, ambient dread, unsettling undertow
+  material_texture: Lines, spirals
+  render_quality: Terrifying, detailed, body-horror intricacy, uncanny precision
+  spatial_distortion: Spiral/Holes
+  atmosphere: Unsettling, nightmare, cosmic dread, inescapable doom
+  key_features: Dense lines, spiral motif, anatomical distortion
+avoidRules:
+  - cute
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-011.webp
+attributes:
+  negativePrompt: cute, clean

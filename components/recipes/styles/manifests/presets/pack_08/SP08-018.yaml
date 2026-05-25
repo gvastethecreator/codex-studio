@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-018
+packId: pack_08
+name: K-Pop Idol
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Music video outfit, comeback-stage spectacle, fan-chant energy
+  form_and_line: Sharp, layered, cropped jacket, high-waist trouser, asymmetric hem, fitted silhouette
+  color_palette: Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink
+  lighting_setup: Studio bright, music-show array, high-key beauty light, color-shifting cyc wall
+  material_texture: Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones
+  render_quality: Perfect, trendy, coordinated, music-show polish, fan-cam ready, synchronized precision
+  spatial_distortion: None
+  atmosphere: Energetic, cute, cool, high-polish perfection, synchronized charisma, stadium-scale joy
+  key_features: Dyed hair, pastel or jewel-tone color, matching group coordination, statement earrings
+avoidRules:
+  - boring
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-018.webp
+attributes:
+  negativePrompt: boring, dark

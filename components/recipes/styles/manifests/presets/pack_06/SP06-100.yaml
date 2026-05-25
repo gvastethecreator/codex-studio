@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-100
+packId: pack_06
+name: Game Boy Camera Thermal Print
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Nintendo-Game-Boy-Camera aesthetic, 128x112-CMOS-sensor-digital-photo, 4-shade-greyscale-thermal-printer-dot-matrix, tiny-Game-Boy-Printer-paper-roll, low-res-face-selfie-with-fisheye-lens, stamp-mode-photo-booth, hot-sauce-nickname-energy, 1998-handheld-photography-miracle, thermal-paper-fading-over-time, chiptune-photo-shoot-vibes
+  form_and_line: 128x112-extreme-low-resolution, Game-Boy-Camera-CMOS-sensor-contours, thermal-printer-dot-matrix-lines, fisheye-lens-panorama-distortion, stamp-mode-tile-grid
+  color_palette: 4-shade-Game-Boy-greyscale, thermal-dot-white, light-grey, dark-grey, black, paper-white-background, thermal-chemical-blue-when-fresh
+  lighting_setup: CMOS-sensor-low-dynamic-range, Game-Boy-screen-backlit-display, flash-none-available, ambient-CRT-or-outdoor-light, terrible-low-light-noise
+  material_texture: Thermal-printer-dot-matrix, Game-Boy-Printer-paper-roll-texture, fading-thermal-print-chemical, CMOS-sensor-noise-grain, Game-Boy-Camera-plastic-lens, sticker-print-peel-backing
+  render_quality: Game-Boy-Camera-photo aesthetic, thermal-printer-dot-art, 128x112-extreme-low-resolution, 1998-digital-photography-beauty
+  spatial_distortion: Fisheye-CMOS-lens-distortion, 128x112-proportions, stamp-mode-tile-arrangement, Game-Boy-Printer-paper-roll-curling, mini-thermal-print-scale
+  atmosphere: 1998-tech-wonder, playground-selfie-creativity, hot-sauce-silliness, thermal-print-memory-fading, Game-Boy-peripheral-magic
+  key_features: 128x112-thermal-greyscale, Game-Boy-Camera-CMOS-grain, thermal-printer-dot-matrix, fisheye-lens-distortion, stamp-mode-tiling, 4-shade-greyscale-only, thermal-paper-texture
+avoidRules:
+  - smooth
+  - HD
+  - color
+  - gradient
+  - modern
+  - clean
+  - sharp
+  - anti-aliased
+  - realistic
+  - film grain
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-100.webp
+attributes:
+  negativePrompt: smooth, HD, color, gradient, modern, clean, sharp, anti-aliased, realistic, film grain

@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-003
+packId: pack_08
+name: Minimalist Chic
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Clean scandinavian fashion, soft architectural purity, wabi-sabi restraint
+  form_and_line: Straight cuts, simple geometry, fluid column silhouette, knife-pleat precision
+  color_palette: Beige, White, Grey, Black, ecru, oatmeal, dove grey, bone-white, muted sand
+  lighting_setup: Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow
+  material_texture: Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe
+  render_quality: COS/Jil Sander pared-back designer minimalism, expensive, quiet luxury, stealth-wealth subtlety
+  spatial_distortion: None
+  atmosphere: Calm, sophisticated, clean, meditative stillness, curated emptiness, whispered elegance
+  key_features: Neutral palette, tonal layering, absence of hardware, invisible fastenings
+avoidRules:
+  - pattern
+  - logo
+  - bright colors
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-003.webp
+attributes:
+  negativePrompt: pattern, logo, bright colors

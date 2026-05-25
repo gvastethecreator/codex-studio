@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-030
+packId: pack_08
+name: Raver (90s)
+category: 3. Subcultures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+visualDna:
+  aesthetic: PLUR vibes, warehouse-rave euphoria, sunrise-set transcendence
+  form_and_line: Baggy pants, phat-pant flare, crop-top crop, bucket-hat circumference, platform-sole stomp
+  color_palette: Neon, Reflective, hi-vis yellow, electric cyan, safety-orange, silver-reflective, blacklight-reactive
+  lighting_setup: Blacklight, UV-reactive glow, strobe-pulse fragmentation, fog-machine haze, colored-laser grid
+  material_texture: PVC plastic, faux fur, mesh, reflective 3M, nylon parachute, fuzzy knit
+  render_quality: Energetic, loud, rave-flyer saturation, peak-time euphoria
+  spatial_distortion: None
+  atmosphere: Party, happy, warehouse-bass unity, 4AM transcendence, collective-euphoria embrace
+  key_features: Kandi bracelets, pacifier, bucket hat, phat pants, neon hair extensions
+avoidRules:
+  - boring
+  - grey
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-030.webp
+attributes:
+  negativePrompt: boring, grey

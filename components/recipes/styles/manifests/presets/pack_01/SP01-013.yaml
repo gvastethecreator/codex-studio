@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-013
+packId: pack_01
+name: Ilford HP5 Plus
+category: 3. Film Stocks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - film-stocks
+visualDna:
+  aesthetic: Black and White film
+  form_and_line: Medium contrast
+  color_palette: Greyscale
+  lighting_setup: Versatile
+  material_texture: Visible grain
+  render_quality: Journalism, street
+  spatial_distortion: None
+  atmosphere: Classic, gritty
+  key_features: Monochrome
+avoidRules:
+  - color
+  - chromatic aberration
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-013.webp
+attributes:
+  negativePrompt: color, chromatic aberration

@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-009
+packId: pack_08
+name: Steampunk Inventor
+category: 3. Subcultures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+visualDna:
+  aesthetic: Victorian sci-fi costume, Jules Verne expedition, airship-admiral regalia
+  form_and_line: Gears, goggles, corsets, pocket-watch chains, top-hat elongation, bustle-back volume
+  color_palette: Bronze, Brown Leather, Copper, brass patina, burnished mahogany, verdigris green
+  lighting_setup: Sepia tone, steam, gaslight warmth, amber glow, workshop lantern
+  material_texture: Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper, pocket-watch crystal
+  render_quality: Detailed, costume, fantasy, cogs-and-corsets craftsmanship, retro-futurist opulence
+  spatial_distortion: Mechanical limbs (optional)
+  atmosphere: Adventurous, retro, inventive, clockwork wonder, zeppelin-hangar ambition, tea-and-tinker curiosity
+  key_features: Brass accessories, aviator goggles, gear-motif jewelry, leather tool belt
+avoidRules:
+  - modern
+  - plastic
+  - digital
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-009.webp
+attributes:
+  negativePrompt: modern, plastic, digital

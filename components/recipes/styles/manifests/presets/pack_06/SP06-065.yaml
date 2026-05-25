@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-065
+packId: pack_06
+name: Scrapbook
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Memory book page
+  form_and_line: Tape, stickers
+  color_palette: Pastel, vintage
+  lighting_setup: Flat lay
+  material_texture: Paper, photos, handwriting
+  render_quality: Personal, cute
+  spatial_distortion: Layered
+  atmosphere: Nostalgic, sweet
+  key_features: Page layout
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-065.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

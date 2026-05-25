@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-034
+packId: pack_03
+name: Studio Lighting (3 Point)
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Perfect product/portrait
+  form_and_line: Key, Fill, Rim
+  color_palette: Balanced, broadcast-safe
+  lighting_setup: Controlled, key-fill-rim triangle
+  material_texture: Clean, studio-perfect
+  render_quality: Commercial, professional, portrait-ready
+  atmosphere: Professional, polished confidence
+  key_features: Rim light, three-point separation
+avoidRules:
+  - flat
+  - outdoor
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-034.webp
+attributes:
+  negativePrompt: flat, outdoor

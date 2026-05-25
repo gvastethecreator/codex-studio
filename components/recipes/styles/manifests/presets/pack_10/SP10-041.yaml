@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-041
+packId: pack_10
+name: Metaphysical Art
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Empty city square
+  form_and_line: Long shadows
+  color_palette: Yellow, Green, Dark
+  lighting_setup: Afternoon sun
+  material_texture: Plaster, stone
+  render_quality: De Chirico, silent
+  spatial_distortion: Mannequins
+  atmosphere: Silent, philosophical
+  key_features: Arches
+avoidRules:
+  - busy
+  - detailed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-041.webp
+attributes:
+  negativePrompt: busy, detailed

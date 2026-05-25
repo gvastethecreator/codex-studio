@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-073
+packId: pack_06
+name: Embroidery on Photo
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Thread stitched over photo
+  form_and_line: Thread lines
+  color_palette: Photo + Thread accent
+  lighting_setup: Photo lighting
+  material_texture: Glossy photo, matte thread
+  render_quality: Artistic, altered
+  spatial_distortion: Stitched details
+  atmosphere: Personal, tactile
+  key_features: Thread texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-073.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

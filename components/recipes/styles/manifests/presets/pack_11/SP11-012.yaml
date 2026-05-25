@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-012
+packId: pack_11
+name: Solarpunk
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: Eco-futurist utopia, green-tech dreamscape, harmonious tomorrow, nature-integrated civilization
+  form_and_line: Art Nouveau curves + tech, organic spirals, flowing botanicals, branch-like infrastructure
+  color_palette: Lush Green, Gold, White, Blue, chlorophyll spectrum, sunlight-through-leaf, clear-sky optimism
+  lighting_setup: Bright sunlight, lens flare, canopy-dappled light, bioluminescent accent, golden-hour hope
+  material_texture: Leaves, glass, solar panels, living walls, polished bamboo, mycelium-grown structures
+  render_quality: Optimistic, clean, nature, eco-utopia clarity, Studio-Ghibli green, thriving-earth beauty
+  spatial_distortion: Plants growing on buildings, vertical-forest integration, root-network architecture, canopy-bound city
+  atmosphere: Hopeful, bright, sustainable, regenerative calm, symbiotic warmth, tomorrow's garden
+  key_features: Nature integration, solar-panel mosaics, green-roof cascades, butterfly-accompaniment
+avoidRules:
+  - dark
+  - industrial
+  - pollution
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-012.webp
+attributes:
+  negativePrompt: dark, industrial, pollution

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-005
+packId: pack_03
+name: Blender Cycles Open Path Tracer
+category: 5. Render Engines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+visualDna:
+  aesthetic: Open source path tracing
+  form_and_line: Sharp
+  color_palette: Filmic log encoding, view-transform ready
+  lighting_setup: Global Illumination, denoised
+  material_texture: Procedural nodes, shader graph
+  render_quality: Blender Guru creator-friendly, detailed, community-driven excellence
+  spatial_distortion: None
+  atmosphere: Creative, solid, accessible artistry
+  key_features: Principled BSDF, GPU+CPU hybrid
+avoidRules:
+  - eevee
+  - realtime
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-005.webp
+attributes:
+  negativePrompt: eevee, realtime

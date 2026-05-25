@@ -1,0 +1,181 @@
+schemaVersion: 1
+id: pack_01
+name: Photography & Realism
+description: A comprehensive collection of 80+ photographic styles, film stocks, and lighting setups.
+categories:
+  - id: portrait-styles
+    name: 1. Portrait Styles
+    presetRefs:
+      - pack_01/SP01-001.yaml
+      - pack_01/SP01-009.yaml
+      - pack_01/SP01-010.yaml
+      - pack_01/SP01-005.yaml
+      - pack_01/SP01-002.yaml
+      - pack_01/SP01-003.yaml
+      - pack_01/SP01-004.yaml
+      - pack_01/SP01-006.yaml
+      - pack_01/SP01-007.yaml
+      - pack_01/SP01-008.yaml
+  - id: lighting
+    name: 2. Lighting
+    presetRefs:
+      - pack_01/SP01-035.yaml
+      - pack_01/SP01-043.yaml
+      - pack_01/SP01-033.yaml
+      - pack_01/SP01-044.yaml
+      - pack_01/SP01-034.yaml
+      - pack_01/SP01-031.yaml
+      - pack_01/SP01-032.yaml
+      - pack_01/SP01-036.yaml
+      - pack_01/SP01-037.yaml
+      - pack_01/SP01-038.yaml
+      - pack_01/SP01-039.yaml
+      - pack_01/SP01-040.yaml
+      - pack_01/SP01-041.yaml
+      - pack_01/SP01-042.yaml
+      - pack_01/SP01-045.yaml
+  - id: film-stocks
+    name: 3. Film Stocks
+    presetRefs:
+      - pack_01/SP01-014.yaml
+      - pack_01/SP01-018.yaml
+      - pack_01/SP01-013.yaml
+      - pack_01/SP01-015.yaml
+      - pack_01/SP01-011.yaml
+      - pack_01/SP01-012.yaml
+      - pack_01/SP01-016.yaml
+      - pack_01/SP01-017.yaml
+      - pack_01/SP01-019.yaml
+      - pack_01/SP01-020.yaml
+  - id: genres
+    name: 4. Genres
+    presetRefs:
+      - pack_01/SP01-050.yaml
+      - pack_01/SP01-056.yaml
+      - pack_01/SP01-046.yaml
+      - pack_01/SP01-065.yaml
+      - pack_01/SP01-066.yaml
+      - pack_01/SP01-069.yaml
+      - pack_01/SP01-057.yaml
+      - pack_01/SP01-049.yaml
+      - pack_01/SP01-051.yaml
+      - pack_01/SP01-060.yaml
+      - pack_01/SP01-061.yaml
+      - pack_01/SP01-063.yaml
+      - pack_01/SP01-074.yaml
+      - pack_01/SP01-078.yaml
+      - pack_01/SP01-052.yaml
+      - pack_01/SP01-053.yaml
+      - pack_01/SP01-064.yaml
+      - pack_01/SP01-067.yaml
+      - pack_01/SP01-068.yaml
+      - pack_01/SP01-070.yaml
+      - pack_01/SP01-076.yaml
+      - pack_01/SP01-062.yaml
+      - pack_01/SP01-071.yaml
+      - pack_01/SP01-047.yaml
+      - pack_01/SP01-058.yaml
+      - pack_01/SP01-072.yaml
+      - pack_01/SP01-073.yaml
+      - pack_01/SP01-080.yaml
+      - pack_01/SP01-075.yaml
+      - pack_01/SP01-054.yaml
+      - pack_01/SP01-055.yaml
+      - pack_01/SP01-048.yaml
+      - pack_01/SP01-059.yaml
+      - pack_01/SP01-079.yaml
+      - pack_01/SP01-077.yaml
+  - id: camera-types
+    name: 5. Camera Types
+    presetRefs:
+      - pack_01/SP01-027.yaml
+      - pack_01/SP01-023.yaml
+      - pack_01/SP01-025.yaml
+      - pack_01/SP01-021.yaml
+      - pack_01/SP01-022.yaml
+      - pack_01/SP01-024.yaml
+      - pack_01/SP01-030.yaml
+      - pack_01/SP01-026.yaml
+      - pack_01/SP01-029.yaml
+      - pack_01/SP01-028.yaml
+presetRefs:
+  - pack_01/SP01-001.yaml
+  - pack_01/SP01-009.yaml
+  - pack_01/SP01-010.yaml
+  - pack_01/SP01-005.yaml
+  - pack_01/SP01-002.yaml
+  - pack_01/SP01-003.yaml
+  - pack_01/SP01-004.yaml
+  - pack_01/SP01-006.yaml
+  - pack_01/SP01-007.yaml
+  - pack_01/SP01-008.yaml
+  - pack_01/SP01-035.yaml
+  - pack_01/SP01-043.yaml
+  - pack_01/SP01-033.yaml
+  - pack_01/SP01-044.yaml
+  - pack_01/SP01-034.yaml
+  - pack_01/SP01-031.yaml
+  - pack_01/SP01-032.yaml
+  - pack_01/SP01-036.yaml
+  - pack_01/SP01-037.yaml
+  - pack_01/SP01-038.yaml
+  - pack_01/SP01-039.yaml
+  - pack_01/SP01-040.yaml
+  - pack_01/SP01-041.yaml
+  - pack_01/SP01-042.yaml
+  - pack_01/SP01-045.yaml
+  - pack_01/SP01-014.yaml
+  - pack_01/SP01-018.yaml
+  - pack_01/SP01-013.yaml
+  - pack_01/SP01-015.yaml
+  - pack_01/SP01-011.yaml
+  - pack_01/SP01-012.yaml
+  - pack_01/SP01-016.yaml
+  - pack_01/SP01-017.yaml
+  - pack_01/SP01-019.yaml
+  - pack_01/SP01-020.yaml
+  - pack_01/SP01-050.yaml
+  - pack_01/SP01-056.yaml
+  - pack_01/SP01-046.yaml
+  - pack_01/SP01-065.yaml
+  - pack_01/SP01-066.yaml
+  - pack_01/SP01-069.yaml
+  - pack_01/SP01-057.yaml
+  - pack_01/SP01-049.yaml
+  - pack_01/SP01-051.yaml
+  - pack_01/SP01-060.yaml
+  - pack_01/SP01-061.yaml
+  - pack_01/SP01-063.yaml
+  - pack_01/SP01-074.yaml
+  - pack_01/SP01-078.yaml
+  - pack_01/SP01-052.yaml
+  - pack_01/SP01-053.yaml
+  - pack_01/SP01-064.yaml
+  - pack_01/SP01-067.yaml
+  - pack_01/SP01-068.yaml
+  - pack_01/SP01-070.yaml
+  - pack_01/SP01-076.yaml
+  - pack_01/SP01-062.yaml
+  - pack_01/SP01-071.yaml
+  - pack_01/SP01-047.yaml
+  - pack_01/SP01-058.yaml
+  - pack_01/SP01-072.yaml
+  - pack_01/SP01-073.yaml
+  - pack_01/SP01-080.yaml
+  - pack_01/SP01-075.yaml
+  - pack_01/SP01-054.yaml
+  - pack_01/SP01-055.yaml
+  - pack_01/SP01-048.yaml
+  - pack_01/SP01-059.yaml
+  - pack_01/SP01-079.yaml
+  - pack_01/SP01-077.yaml
+  - pack_01/SP01-027.yaml
+  - pack_01/SP01-023.yaml
+  - pack_01/SP01-025.yaml
+  - pack_01/SP01-021.yaml
+  - pack_01/SP01-022.yaml
+  - pack_01/SP01-024.yaml
+  - pack_01/SP01-030.yaml
+  - pack_01/SP01-026.yaml
+  - pack_01/SP01-029.yaml
+  - pack_01/SP01-028.yaml

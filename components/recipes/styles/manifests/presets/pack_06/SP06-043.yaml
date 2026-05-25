@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-043
+packId: pack_06
+name: Engraving (Banknote)
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Money or certificate art
+  form_and_line: Precise parallel lines
+  color_palette: Green, Grey, Monochrome
+  lighting_setup: Linear shading
+  material_texture: Cotton paper
+  render_quality: Official, detailed
+  spatial_distortion: None
+  atmosphere: Serious, valuable
+  key_features: Guilloche patterns
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-043.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

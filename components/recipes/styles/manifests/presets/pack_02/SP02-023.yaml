@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-023
+packId: pack_02
+name: VHS Home Video
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: 1990s camcorder
+  form_and_line: None
+  color_palette: Color bleed, magenta shift, yellowed warmth, cyan fringe
+  lighting_setup: On-camera flash, built-in spotlight, overexposed faces
+  material_texture: Tracking lines, head-switching noise, tape dropout
+  render_quality: Nostalgic, bad, 240p mush, magnetic degradation
+  spatial_distortion: Glitch, tearing, horizontal displacement, time-base error
+  atmosphere: Memory, raw, birthday party, unguarded childhood
+  key_features: Date stamp, REC indicator, zoom wobble
+avoidRules:
+  - hd
+  - digital
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-023.webp
+attributes:
+  negativePrompt: hd, digital

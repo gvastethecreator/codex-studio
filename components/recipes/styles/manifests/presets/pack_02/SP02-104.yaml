@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-104
+packId: pack_02
+name: Rugrats - Toddler Crayon Panic
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Toddlers seeing the world as wobbly adventure, chunky baby heads, domestic danger made epic, scribbly suburban interiors, nervous hand-drawn innocence, diaper-age imagination logic, toy-scale heroism
+  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
+  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
+  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
+  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
+  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
+  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  atmosphere: Curious, rambunctious, innocent, chaotic
+  key_features: Toddler-scale perspective, chunky outlines, toy clutter everywhere, domestic spaces made huge, crayon-ish uncertainty
+avoidRules:
+  - digital
+  - HD
+  - smooth
+  - 3d
+  - realistic
+  - painted
+  - single panel
+  - vertical scrolling
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-104.webp
+attributes:
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern

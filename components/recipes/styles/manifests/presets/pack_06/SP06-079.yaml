@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-079
+packId: pack_06
+name: Paper Marbling
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Suminagashi or Ebru
+  form_and_line: Fluid swirls
+  color_palette: Psychedelic, oil
+  lighting_setup: Flat
+  material_texture: Paper, oil slick
+  render_quality: Abstract, pattern
+  spatial_distortion: Liquid distortion
+  atmosphere: Trippy, fluid
+  key_features: Oil patterns
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-079.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

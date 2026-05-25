@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-033
+packId: pack_11
+name: Blueprint
+category: 3. Artistic Mediums
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+visualDna:
+  aesthetic: Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination
+  form_and_line: White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges
+  color_palette: Cyan Blue background, blueprint-cyan, ammonia-developer blue, white-line contrast, title-block white
+  lighting_setup: Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination
+  material_texture: Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold
+  render_quality: Technical, precise, ruler-and-compass rigor, drafting-arm sweep, revision-cloud care
+  spatial_distortion: 2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay
+  atmosphere: Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin
+  key_features: Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar reference
+avoidRules:
+  - color
+  - photo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-033.webp
+attributes:
+  negativePrompt: color, photo

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-049
+packId: pack_08
+name: Mermaid Tail
+category: 5. Fantasy/Sci-Fi Costume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fantasy-sci-fi-costume
+visualDna:
+  aesthetic: Fantasy mermaid, deep-ocean enchantment, shipwreck-siren allure
+  form_and_line: Scales, fishtail-flare silhouette, fin-ridge undulation, bandeau-top line, hair-float weightlessness
+  color_palette: Iridescent Green, teal, abalone, moonlight-pearl, aquamarine, bioluminescent-blue, coral-pink
+  lighting_setup: Underwater, caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise
+  material_texture: Iridescent scales, wet-look silicone, pearlescent finish, seaweed hair, shell texture, liquid organza
+  render_quality: Magical, mythical, lagoon-dream ethereality, siren-song enchantment
+  spatial_distortion: Fish tail
+  atmosphere: Beautiful, wet, deep-ocean mystery, coral-reef serenity, moon-tide magic
+  key_features: Tail, fin, seashell top, flowing hair underwater, scale texture
+avoidRules:
+  - legs
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-049.webp
+attributes:
+  negativePrompt: legs

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-019
+packId: pack_03
+name: Hologram
+category: 1. Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+visualDna:
+  aesthetic: Projected light construct
+  form_and_line: Scanlines, interference
+  color_palette: Cyan, Blue transparent, interference spectrum
+  lighting_setup: Emissive, volumetric projection
+  material_texture: Digital noise, scanline grain
+  render_quality: Sci-fi interface, AR overlay
+  atmosphere: Futuristic, tech, ghost-data
+  key_features: Transparency, flickering projection
+avoidRules:
+  - solid
+  - opaque
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-019.webp
+attributes:
+  negativePrompt: solid, opaque

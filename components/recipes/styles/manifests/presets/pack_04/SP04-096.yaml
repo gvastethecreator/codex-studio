@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP04-096
+packId: pack_04
+name: Weapon Tier Progression
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: RPG-weapon-tier-progression-sheet, rusted-common-to-legendary-glow, same-weapon-eight-ascension-levels, material-evolution-from-cracked-iron-to-celestial-gold, RPG-loot-visual-progression, Monster-Hunter-weapon-tree-design, Diablo-common-to-unique visual arc, game-design-reward-visualization, player-motivation-through-visual-upgrade
+  form_and_line: Same-base-silhouette-with-increasing-detail, line-complexity-growing-per-tier, common-item-simple-to-legendary-intricate, ornamentation-progression
+  color_palette: Rusted-common-grey, iron-steel-blue, reinforced-silver, enchanted-purple-glow, dragon-bone-ivory, demonic-crimson, celestial-gold-white, divine-rainbow-iridescent, tier-progression-color-story
+  lighting_setup: Consistent-studio-lighting-for-comparison, specular-highlight-increasing-on-polished-tiers, glow-effect-on-magical-items, matte-diffuse-on-common-rusted
+  material_texture: Rust-pitted-iron, hammered-steel-grain, polished-silver-mirror, dragon-bone-porous-ivory, obsidian-volcanic-glass, celestial-gold-leaf, gem-encrusted-inlay, leather-wrap-grip
+  render_quality: Weapon-tier-progression-sheet aesthetic, RPG-game-loot-design, item-evolution-beauty, Diablo-to-Monster-Hunter design language, player-reward visualization art
+  spatial_distortion: Horizontal-tier-progression-row, same-view-for-comparison, material-magnification-callout-circles, scale-reference, handle-to-blade-proportions
+  atmosphere: Progression, aspiration, hard-earned-reward, game-design-psychology, loot-lust-satisfaction, legendary-achievement
+  key_features: Eight-tier-progression-row, material-evolution-from-common-to-legendary, glow-ramping-per-tier, consistent-view-for-comparison, material-callout-circles, tier-color-story, RPG-loot-language
+avoidRules:
+  - one version
+  - static
+  - no comparison
+  - flat
+  - no materials
+  - unlabeled
+  - single option
+  - no evolution
+  - just final
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-096.webp
+attributes:
+  negativePrompt: one version, static, no comparison, flat, no materials, unlabeled, single option, no evolution, just final

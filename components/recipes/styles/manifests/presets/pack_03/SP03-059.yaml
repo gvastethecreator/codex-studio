@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-059
+packId: pack_03
+name: Digital Fashion
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Virtual clothing
+  form_and_line: Cloth simulation
+  color_palette: Iridescent, impossible fabric
+  lighting_setup: Runway
+  material_texture: Digital fabric, weave simulation
+  render_quality: Clo3D/Marvelous Designer digital garment simulation
+  spatial_distortion: Floating cloth
+  atmosphere: Futuristic, fashion, runway spectacle
+  key_features: Drape, cloth dynamics
+avoidRules:
+  - stiff cloth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-059.webp
+attributes:
+  negativePrompt: stiff cloth

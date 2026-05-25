@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-020
+packId: pack_11
+name: Wooden Toy
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Carved wood figure, traditional toy, whittled companion, heirloom plaything
+  form_and_line: Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms
+  color_palette: Natural wood, painted details, warm-oak honey, beech-cream, hand-painted folk-accents
+  lighting_setup: Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth
+  material_texture: Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina
+  render_quality: Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm
+  spatial_distortion: Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry
+  atmosphere: Nostalgic, simple, fireside quiet, grandfather's workshop, old-world tenderness
+  key_features: Wood texture, visible grain rings, dovetail joints, paint-wear edges
+avoidRules:
+  - plastic
+  - metal
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-020.webp
+attributes:
+  negativePrompt: plastic, metal

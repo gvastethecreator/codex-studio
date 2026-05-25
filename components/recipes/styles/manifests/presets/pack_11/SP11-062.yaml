@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-062
+packId: pack_11
+name: Fiber/Fabric Macro
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape
+  form_and_line: Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end
+  color_palette: Thread color, indigo-denim, linen-natural, wool-heathered, silk-ivory, yarn-dyed spectrum
+  lighting_setup: Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow
+  material_texture: Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end tufts
+  render_quality: Tactile, soft, textile-grid, weave-architecture, close-look, fiber-beauty
+  spatial_distortion: Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v
+  atmosphere: Cozy, close, fabric-store, textile-tradition, thread-history, warp-weighted loom
+  key_features: Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge
+avoidRules:
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-062.webp
+attributes:
+  negativePrompt: smooth

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-066
+packId: pack_08
+name: Origami Paper
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Paper dress, washi-sculpture fragility, geometric-origami couture
+  form_and_line: Sharp folds, mountain-valley crease, triangular-panel construction, accordion-pleat compression, angular-bodice geometry
+  color_palette: White paper, rice-paper cream, kraft-brown, washi-natural, metallic-gold foil, indigo-dyed edge
+  lighting_setup: Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama
+  material_texture: Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge
+  render_quality: Artistic, fragile, Issey-Miyake-pleat poetry, paper-sculpture wonder
+  spatial_distortion: Rigid
+  atmosphere: Creative, stiff, museum-gallery hush, delicate-construction tension, ephemeral-material poetry
+  key_features: Folds, crisp crease lines, paper edges, origami geometry, tear-away reveal
+avoidRules:
+  - fabric
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-066.webp
+attributes:
+  negativePrompt: fabric

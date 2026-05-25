@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-040
+packId: pack_04
+name: Infographic
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Data visualization
+  form_and_line: Thin icons
+  color_palette: Consistent palette, data-viz spectrum, categorical distinction
+  lighting_setup: Flat, no shadow, pure information design
+  material_texture: Vector
+  render_quality: Information, clean, dashboard clarity, explainer-article crispness
+  spatial_distortion: Isometric
+  atmosphere: Smart, data, editorial authority, knowledge elegance
+  key_features: Charts, iconography, data-flow arrows
+avoidRules:
+  - messy
+  - art
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-040.webp
+attributes:
+  negativePrompt: messy, art

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-005
+packId: pack_06
+name: Tempera (Egg)
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Renaissance egg tempera
+  form_and_line: Fine cross-hatching strokes
+  color_palette: Bright, pure pigments, gold leaf
+  lighting_setup: Soft, internal glow
+  material_texture: Wood panel, smooth gesso
+  render_quality: Historical, religious art
+  spatial_distortion: Stiff poses
+  atmosphere: Sacred, ancient
+  key_features: Fine linear brushwork
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-005.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

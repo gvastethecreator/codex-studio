@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP01-020
+packId: pack_01
+name: Expired Film
+category: 3. Film Stocks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - film-stocks
+visualDna:
+  aesthetic: Damaged film stock
+  form_and_line: Soft
+  color_palette: Green/Magenta shift
+  lighting_setup: Fogged
+  material_texture: Heavy grain, mold
+  render_quality: Grungy, broken
+  spatial_distortion: Color cast
+  atmosphere: Decay, lost memory
+  key_features: Color shift
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-020.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

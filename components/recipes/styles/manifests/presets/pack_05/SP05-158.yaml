@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-158
+packId: pack_05
+name: Mushi-Shi - Whispering Forest Healing
+category: 2. 2000s Classics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - 2000s-classics
+visualDna:
+  aesthetic: Quiet wandering folkloric medicine, pale supernatural ecology, mossy villages, soft light over invisible lifeforms, contemplative 2000s fantasy naturalism
+  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
+  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
+  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
+  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
+  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
+  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
+  atmosphere: Quiet, mystical, healing, solitary
+  key_features: Forest hush, pale spirit traces, herbal-traveler framing, misty villages, contemplative body language
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-158.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

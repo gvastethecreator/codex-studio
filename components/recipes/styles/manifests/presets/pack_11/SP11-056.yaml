@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-056
+packId: pack_11
+name: Electron Microscope
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: SEM scan, electron-micrograph, nano-landscape, sub-micron-world, vacuum-chamber art
+  form_and_line: Tiny details, micro-sphere contours, crystalline-facet edges, dendrite-branch, nanowire strands
+  color_palette: Black and White, monochrome-grey gradient, false-color overlay, tungsten-filament shadow, gold-sputter-coat sheen
+  lighting_setup: Scanning beam, raster-scan lines, secondary-electron emission, top-down detector, spot-mode shadow
+  material_texture: Alien landscape, nanometer-roughness, sputter-coated surface, carbon-tape background, electron-discharge artifact
+  render_quality: Scientific, tiny, micrograph-journal, resolution-test beauty, lens-astigmatism correction, vacuum-seal cleanliness
+  spatial_distortion: Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe
+  atmosphere: Scientific, weird, electron-beam silence, nano-frontier, magnification-horizon
+  key_features: Scale bar, micron-marker, acceleration-voltage label, detector-mode annotation, sputter-coating grain, magnification-readout, charging-artifact bands
+avoidRules:
+  - color
+  - far away
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-056.webp
+attributes:
+  negativePrompt: color, far away

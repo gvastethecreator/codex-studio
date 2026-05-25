@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-075
+packId: pack_04
+name: Tattoo Flash (Traditional)
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Sailor Jerry bold-traditional tattoo flash, nautical boldness, old-school commitment
+  form_and_line: Bold black outline
+  color_palette: Red, Yellow, Green, Black, classic-flash palette, shop-staple primaries
+  lighting_setup: Skin fade (whip shading), pepper-shading gradation, flash-sheet lighting
+  material_texture: Paper stain
+  render_quality: Old school, bold, sailor-sleeve heritage, lasting-hold tradition
+  spatial_distortion: 2D
+  atmosphere: Tough, classic, boardwalk tradition, anchor-tattoo loyalty
+  key_features: Bold will hold, thick outline, limited-palette flash
+avoidRules:
+  - realistic
+  - soft
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-075.webp
+attributes:
+  negativePrompt: realistic, soft

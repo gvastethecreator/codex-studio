@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP04-090
+packId: pack_04
+name: Prop Variant Design Sheet
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Prop-variant exploration sheet, iterative-object design comparison, material-breakout detail circles, scale-reference silhouette, RPG-item tier progression, common-to-legendary upgrade path, functional-part callouts, grip-ergonomic note, designer-decision documentation
+  form_and_line: Clean design-drawing contours, variant-comparison alignment, material-callout leader lines, ergonomic-arc construction, orthographic side-view precision
+  color_palette: Material-specific colors, wood-handle brown, steel-blade grey, bronze-fitting gold, leather-wrap dark, gem-inset jewel tones, tier-progression color coding
+  lighting_setup: Consistent studio light for comparison, metallic-specular highlight, subsurface on translucent gems, matte-diffuse on wood
+  material_texture: Wood-grain variation, metal-brushed directional, leather-stitching detail, gem-facet refraction, rust-wear edge patina
+  render_quality: Prop-design variant sheet, iterative-object exploration, material-breakdown rendering, production-reference specification
+  spatial_distortion: Orthographic side-view alignment, variant-row comparison, detail-circle magnification, scale-reference figure, exploded-part disassembly
+  atmosphere: Methodical, iterative, design-problem-solving, craftsperson precision, production-clarity
+  key_features: Variant-row comparison, material-callout circles, scale-reference silhouette, tier-progression layout, exploded-part views
+avoidRules:
+  - one version
+  - single design
+  - no comparison
+  - no annotation
+  - unclear
+  - vague
+  - floating
+  - contextless
+  - unlabeled
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-090.webp
+attributes:
+  negativePrompt: one version, single design, no comparison, no annotation, unclear, vague, floating, contextless, unlabeled

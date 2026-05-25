@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-031
+packId: pack_04
+name: Art Deco Poster
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: 1920s travel poster
+  form_and_line: Geometric curves
+  color_palette: Gold, Black, Teal, deco opulence, champagne shimmer
+  lighting_setup: Gradient, metallic sheen, sunburst radiance
+  material_texture: Airbrush
+  render_quality: Gatsby jazz-age luxury, champagne shimmer, deco decadence
+  spatial_distortion: Streamlined
+  atmosphere: Elegant, fast, roaring-twenties glamour, ocean-liner sophistication
+  key_features: Sunburst, geometric framing, speed lines
+avoidRules:
+  - messy
+  - organic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-031.webp
+attributes:
+  negativePrompt: messy, organic

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP04-065
+packId: pack_04
+name: Lithograph
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Grease pencil on stone
+  form_and_line: Grainy crayon
+  color_palette: Black or Sepia, single-stone tone, litho-crayon warmth
+  lighting_setup: Soft grain, stone-texture diffusion, atmospheric softness
+  material_texture: Stone grain
+  render_quality: Escher labyrinthine print, impossible geometries, mind-bending precision
+  spatial_distortion: None
+  atmosphere: Classic, soft, print-studio quiet, optical wonder
+  key_features: Grain, stone texture, crayon registration
+avoidRules:
+  - sharp lines
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-065.webp
+attributes:
+  negativePrompt: sharp lines

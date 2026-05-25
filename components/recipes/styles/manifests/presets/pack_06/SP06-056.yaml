@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-056
+packId: pack_06
+name: Synthwave
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: 80s retro-futurism
+  form_and_line: Grid lines
+  color_palette: Purple, Pink, Cyan
+  lighting_setup: Neon glow
+  material_texture: Scanlines
+  render_quality: Retro, aesthetic
+  spatial_distortion: Chrome reflection
+  atmosphere: Nostalgic, cool
+  key_features: Sunset gradient
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-056.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

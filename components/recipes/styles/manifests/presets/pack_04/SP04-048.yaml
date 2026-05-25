@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-048
+packId: pack_04
+name: Character Sheet
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Front/Side/Back view
+  form_and_line: Clean line
+  color_palette: Flat + Occlusion, neutral reference palette, material IDs
+  lighting_setup: Neutral, studio-reference, shadow-accurate fidelity
+  material_texture: Material callouts
+  render_quality: Production ready, pipeline clarity, handoff precision
+  spatial_distortion: T-Pose
+  atmosphere: Neutral, design, professional review, iterative feedback
+  key_features: Scale, turnaround views, callout annotations
+avoidRules:
+  - background
+  - action
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-048.webp
+attributes:
+  negativePrompt: background, action

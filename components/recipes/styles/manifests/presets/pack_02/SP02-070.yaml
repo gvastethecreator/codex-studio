@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-070
+packId: pack_02
+name: Butterfly Lighting
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Glamour portrait
+  form_and_line: None
+  color_palette: Flattering, porcelain skin, peach glow, pearl highlight
+  lighting_setup: High front key, overhead beauty dish, butterfly shadow under nose
+  material_texture: Smooth skin, retouched surface, soft diffusion
+  render_quality: Beauty, studio, magazine-cover polish, glamour perfection
+  spatial_distortion: None
+  atmosphere: Beautiful, clean, aspirational elegance, fashion confidence
+  key_features: Nose shadow, catchlight, cheekbone highlight, clavicle glow
+avoidRules:
+  - harsh shadows
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-070.webp
+attributes:
+  negativePrompt: harsh shadows

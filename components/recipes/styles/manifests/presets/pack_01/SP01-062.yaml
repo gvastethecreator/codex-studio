@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP01-062
+packId: pack_01
+name: Corporate Stock Photo
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Happy people working
+  form_and_line: Clean
+  color_palette: Bright, blue tint
+  lighting_setup: Office bright
+  material_texture: Clean
+  render_quality: Generic, safe
+  spatial_distortion: Fake smiles
+  atmosphere: Professional, fake
+  key_features: Handshake
+avoidRules:
+  - sad
+  - dark
+  - weird
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-062.webp
+attributes:
+  negativePrompt: sad, dark, weird

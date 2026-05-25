@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-019
+packId: pack_10
+name: Cymatics (Sound)
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Sand on vibrating plate
+  form_and_line: Geometric nodes
+  color_palette: White sand, Black plate
+  lighting_setup: Top down
+  material_texture: Grainy
+  render_quality: Physics, pattern
+  spatial_distortion: Symmetrical
+  atmosphere: Scientific, orderly
+  key_features: Mandala
+avoidRules:
+  - random
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-019.webp
+attributes:
+  negativePrompt: random

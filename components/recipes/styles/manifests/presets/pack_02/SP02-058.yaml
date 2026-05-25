@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-058
+packId: pack_02
+name: X-Ray Photography
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Internal structure
+  form_and_line: Bones/Structure
+  color_palette: Black/White/Blue, indigo ghost, bone-white, translucent cyan
+  lighting_setup: Translucent, backlit negative, see-through glow
+  material_texture: Film, radiographic sheet, phosphor plate
+  render_quality: Medical, scientific, diagnostic clarity, ghostly penetration
+  spatial_distortion: Transparency, density mapping, interior-only view
+  atmosphere: Clinical, spooky, anatomical wonder, hidden structure
+  key_features: Inverted, skeleton visible, swallowed object, airport scan
+avoidRules:
+  - surface detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-058.webp
+attributes:
+  negativePrompt: surface detail

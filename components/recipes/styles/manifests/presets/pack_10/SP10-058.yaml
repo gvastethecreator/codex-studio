@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-058
+packId: pack_10
+name: Denim Texture
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Blue jean fabric
+  form_and_line: Diagonal twill
+  color_palette: Indigo, White
+  lighting_setup: Flat
+  material_texture: Cotton twill
+  render_quality: Casual, durable
+  spatial_distortion: Fades
+  atmosphere: Casual, tough
+  key_features: Twill lines
+avoidRules:
+  - silk
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-058.webp
+attributes:
+  negativePrompt: silk, smooth

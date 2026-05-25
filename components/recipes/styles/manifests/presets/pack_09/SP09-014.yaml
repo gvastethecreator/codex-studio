@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-014
+packId: pack_09
+name: Coral Reef
+category: 1. Natural Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - natural-materials
+visualDna:
+  aesthetic: Marine structure
+  form_and_line: Pores and branches
+  color_palette: Pink, Orange, Purple
+  lighting_setup: Underwater caustic
+  material_texture: Rough, porous
+  render_quality: Ocean, vibrant
+  spatial_distortion: Branching
+  atmosphere: Alive, colorful
+  key_features: Porous
+avoidRules:
+  - dead
+  - bleached
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-014.webp
+attributes:
+  negativePrompt: dead, bleached

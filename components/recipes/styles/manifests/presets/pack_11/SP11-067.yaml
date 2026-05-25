@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-067
+packId: pack_11
+name: Feather Macro
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather
+  form_and_line: Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array
+  color_palette: Iridescent, peacock-structural, hummingbird-metallic, macaw-spectrum, melanin-earth, carotenoid-bright
+  lighting_setup: Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead
+  material_texture: Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil
+  render_quality: Nature, detailed, ornithology-close-up, feather-microstructure, barb-by-barb, structural-color marvel
+  spatial_distortion: None, natural-contour, feather-curve, vane-width taper, rachis-diameter
+  atmosphere: Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy
+  key_features: Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather, calamus-base
+avoidRules:
+  - blurry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-067.webp
+attributes:
+  negativePrompt: blurry

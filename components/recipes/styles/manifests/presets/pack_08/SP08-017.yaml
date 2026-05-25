@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-017
+packId: pack_08
+name: Tech CEO
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Steve Jobs/Zuckerberg tech-founder uniform, black turtleneck authority, keynote-stage iconography
+  form_and_line: Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve
+  color_palette: Black, Grey, Navy, charcoal, midnight navy, washed black, graphite
+  lighting_setup: Stage light, keynote spotlight, product-launch haze, auditorium backlight
+  material_texture: Cotton t-shirt, merino turtleneck, selvedge denim, New Balance suede, brushed cashmere
+  render_quality: Minimal, rich, billionaire-casual precision, uniform dressing philosophy
+  spatial_distortion: None
+  atmosphere: Serious, visionary, keynote gravitas, disruptive calm, controlled intensity
+  key_features: Turtle neck/Hoodie, round-frame glasses, minimalist sneakers, no visible branding
+avoidRules:
+  - suit
+  - tie
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-017.webp
+attributes:
+  negativePrompt: suit, tie

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-033
+packId: pack_08
+name: Ancient Egyptian
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Pharaoh or Queen, Nile-divinity splendor, temple-relief majesty
+  form_and_line: Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette
+  color_palette: White, Gold, Lapis Blue, turquoise, carnelian red, malachite green, ebony, electrum
+  lighting_setup: Desert sun, temple-interior shadow, golden-hour sand, torchlight flicker
+  material_texture: Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals
+  render_quality: Royal, ancient, tomb-painting precision, pharaonic grandeur
+  spatial_distortion: None
+  atmosphere: Regal, divine, eternal-Nile serenity, temple-incense reverence, absolute-power stillness
+  key_features: Gold collar, kohl-lined eyes, uraeus crown, crook and flail, pleated kalasiris
+avoidRules:
+  - pants
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-033.webp
+attributes:
+  negativePrompt: pants, modern

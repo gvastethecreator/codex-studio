@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-030
+packId: pack_03
+name: Glitch 3D
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Broken geometry
+  form_and_line: Vertex explosion
+  color_palette: Texture stretching, corrupted-channel hues
+  lighting_setup: Broken, glitch-light
+  material_texture: Corrupted UVs, vertex-color errors
+  render_quality: Data moshing, digital decay
+  atmosphere: Chaotic, broken, signal failure
+  key_features: Artifacts, vertex explosion
+avoidRules:
+  - clean
+  - perfect
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-030.webp
+attributes:
+  negativePrompt: clean, perfect

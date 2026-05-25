@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP07-054
+packId: pack_07
+name: Cyberpunk Slums
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Stacked containers, megacity underbelly, vertical shantytown, Kowloon-inspired density, neon-blight
+  form_and_line: Wires, neon, fire-escape zigzag, shipping-container grid, AC-unit cascade, laundry lines
+  color_palette: Dark, Neon, Rain-wet Black, Sickly Green, Magenta sign, Rust Brown, Blue smog
+  lighting_setup: Artificial, neon-bath, hologram flicker, rain-streak LED, shadowed alley, 24-hour unnatural twilight
+  material_texture: Rust, metal, rain, grimy plastic, corrugated shutter, wet pavement, peeling poster
+  render_quality: Dense, dangerous, high-tech low-life, rain-slick neon, social-compression horror, Blade Runner overcrowding
+  spatial_distortion: None
+  atmosphere: Oppressive, tech, desperate, hunted, data-saturated, no-sky, breathing-each-other's-air
+  key_features: Vertical density, neon signs, stacked AC units, fire escapes, cable chaos, street-level market stalls
+avoidRules:
+  - clean
+  - wide streets
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-054.webp
+attributes:
+  negativePrompt: clean, wide streets

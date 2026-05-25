@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-041
+packId: pack_01
+name: Bioluminescence
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Glowing organic light
+  form_and_line: Soft glow
+  color_palette: Neon Blue, Green
+  lighting_setup: Self-illuminated
+  material_texture: Water, skin
+  render_quality: Avatar, underwater
+  spatial_distortion: None
+  atmosphere: Magical, alien
+  key_features: Dark background
+avoidRules:
+  - sun
+  - day
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-041.webp
+attributes:
+  negativePrompt: sun, day

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-002
+packId: pack_06
+name: Watercolor (Soft)
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Soft watercolor painting
+  form_and_line: Fluid, bleeding edges
+  color_palette: Translucent, pastel, washed out
+  lighting_setup: Soft, diffuse, paper white highlights
+  material_texture: Cold press paper grain, water stains
+  render_quality: Delicate, artistic
+  spatial_distortion: Colors bleeding outside lines
+  atmosphere: Dreamy, soft, nostalgic
+  key_features: Watery texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-002.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

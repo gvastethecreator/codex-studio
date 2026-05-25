@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-266
+packId: pack_05
+name: Ajin - Black-Particle Pursuit
+category: 9. Dark Fantasy & Seinen
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - dark-fantasy-and-seinen
+visualDna:
+  aesthetic: Modern fugitive thriller with immortal black entities, clinical modern spaces, matte-black supernatural forms, tactical government chase and identity terror
+  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
+  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  atmosphere: Hunted, modern, sharp, remorseless
+  key_features: Black-particle beings, fugitive staging, modern architecture, tactical pursuit framing, clinical dread
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-266.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-070
+packId: pack_08
+name: Fire Dress
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Hunger Games ceremonial flame couture, Capitol excess, girl-on-fire moment, tribute-parade spectacle
+  form_and_line: Flames, flicker-tongue silhouette, cape-sweep conflagration, rising-heat verticality, ember-trail train
+  color_palette: Orange, Yellow, crimson-core, gold-white heat, sapphire-blue base, ember-red edge, coal-black ground
+  lighting_setup: Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter
+  material_texture: Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile
+  render_quality: Dangerous, hot, Cinna-design spectacle, Capitol-television perfection
+  spatial_distortion: Burning
+  atmosphere: Powerful, magic, arena-entrance electricity, revolutionary-symbol awe, controlled-combustion beauty
+  key_features: Flames, cape ignition, ember trail, heat shimmer, synthetic flame effect
+avoidRules:
+  - cold
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-070.webp
+attributes:
+  negativePrompt: cold

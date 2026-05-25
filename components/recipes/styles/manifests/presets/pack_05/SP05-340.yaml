@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-340
+packId: pack_05
+name: Akio Sugino - Velvet Lash Elegance
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Classic beauty-anime portraiture, velvet eyelashes, painterly glamour, aristocratic poise, mature romantic intensity and old-school sophistication in every pose
+  form_and_line: Lash-rich contour, elegant facial precision, glamour-focused line softness
+  color_palette: Burgundy, ivory, smoky mauve, navy silk, gold trim, warm peach
+  lighting_setup: Beauty-portrait spotlighting, soft velvet shadow, glamour rim light, painterly cheek glow
+  material_texture: Velvet drape, glossy hair sheen, satin costume detail, old-cel portrait softness
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Beauty-first portrait proportions, swan-neck posing, luxuriant hair framing, noble silhouette emphasis
+  atmosphere: Velvety, elegant, mature, dramatic
+  key_features: Lash-heavy portraits, aristocratic pose language, glamour close-ups, old-school beauty rendering, velvet mood
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-340.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

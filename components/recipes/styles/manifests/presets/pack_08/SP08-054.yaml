@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-054
+packId: pack_08
+name: Chainmail
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Armor mesh, medieval-smithy craft, interlocked-defense beauty
+  form_and_line: Tiny rings, butted-ring grid, riveted-flat drape, hauberk-length column, coif-hood circumference
+  color_palette: Silver, steel-grey, polished-iron, oiled-black, bronze-ring, galvanized-sheen
+  lighting_setup: Sparkle, forge-fire warmth, ring-reflection glint, torch-lit corridor, overcast-daylight evenness
+  material_texture: Metal rings, riveted steel links, butted-iron rings, oiled-mail, brass-trim rings, leather-backing strap
+  render_quality: Detailed, heavy, forge-craft authenticity, ring-by-ring precision
+  spatial_distortion: None
+  atmosphere: Protective, historic, castle-garrison readiness, crusade-road weariness, anvil-song pride
+  key_features: Mesh pattern, ring grid, coif hood, riveted links, mail curtain
+avoidRules:
+  - cloth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-054.webp
+attributes:
+  negativePrompt: cloth

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-020
+packId: pack_04
+name: Kurzgesagt Vector Flat (Infographic)
+category: 2. Children's Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - children-s-illustration
+visualDna:
+  aesthetic: Infographic style
+  form_and_line: None
+  color_palette: Vibrant, flat, infographic spectrum, pedagogy primaries
+  lighting_setup: Flat shading, even illumination, vector clarity
+  material_texture: Vector clean
+  render_quality: Educational, modern, screen-friendly crispness, animated-explainer sheen
+  spatial_distortion: Rounded geometry
+  atmosphere: Smart, clean, science-communication clarity, optimistic didacticism
+  key_features: Geometric, simplified shapes, isometric modules
+avoidRules:
+  - outline
+  - texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-020.webp
+attributes:
+  negativePrompt: outline, texture

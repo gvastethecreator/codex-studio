@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-067
+packId: pack_06
+name: Mixed Media Canvas
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Paint plus objects
+  form_and_line: Varied
+  color_palette: Messy, layered
+  lighting_setup: Texture relief
+  material_texture: Sand, paper, paint
+  render_quality: Fine art, abstract
+  spatial_distortion: None
+  atmosphere: Expressive
+  key_features: Heavy texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-067.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

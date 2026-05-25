@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-032
+packId: pack_11
+name: Latte Art
+category: 3. Artistic Mediums
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+visualDna:
+  aesthetic: Coffee foam drawing, espresso-canvas art, barista-crema, morning-ritual beauty
+  form_and_line: Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry
+  color_palette: Brown, White, Cream, espresso-crema tiger-stripe, caramel-drizzle amber, milk-foam ivory
+  lighting_setup: Overhead cafe, counter-spot warmth, crema-gloss catch, steamed-milk sheen
+  material_texture: Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas
+  render_quality: Tasty, temporary, sip-away impermanence, barista-throwdown art, third-wave-craft
+  spatial_distortion: Liquid surface, pour-path flow, surface-tension boundary, ceramic-cup curvature
+  atmosphere: Cozy, morning, cafe-hum warmth, espresso-machine rhythm, first-sip quiet
+  key_features: Cup rim, crema ring, latte-art rosetta, saucer-spoon, steamed-milk gloss, pour-steam wisps
+avoidRules:
+  - solid
+  - paint
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-032.webp
+attributes:
+  negativePrompt: solid, paint

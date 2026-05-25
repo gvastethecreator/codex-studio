@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-079
+packId: pack_07
+name: Monolith
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: 2001 slab, alien artifact, absolute-geometry presence, evolution-catalyst object, cosmic-marker
+  form_and_line: Sharp rectangle, perfect-edges, zero-feature surface, 1:4:9 proportion, impossible-vertical, crisp-corners
+  color_palette: Matte Black, Absolute-void Black, Light-absorbing surface, Starlight-reflection edge, Moon-surface Grey
+  lighting_setup: Absorbs light, anti-reflective void, sun-alignment glow, stark-side shadow, dawn-touch edge
+  material_texture: Perfectly smooth, non-material surface, frictionless, impossibly-dense, alien-substance, crystalline-matte
+  render_quality: Alien, minimal, Kubrick-mystery, absolute-simplicity, cosmic-enigma, evolution-precision
+  spatial_distortion: None
+  atmosphere: Ominous, mystery, cosmic-wonder, evolutionary-pause, unknowable-intelligence, silent-revelation, transcendent-fear
+  key_features: 1:4:9 ratio, perfectly black, sharp edges, featureless surface, rectangular slab, alien presence, vertical dominance
+avoidRules:
+  - detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-079.webp
+attributes:
+  negativePrompt: detail

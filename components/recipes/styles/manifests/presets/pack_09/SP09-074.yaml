@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-074
+packId: pack_09
+name: Carpet (Shag)
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: 70s rug
+  form_and_line: Long fibers
+  color_palette: Orange or Green
+  lighting_setup: Soft
+  material_texture: Deep pile
+  render_quality: Retro, soft
+  spatial_distortion: Matted
+  atmosphere: Cozy, retro
+  key_features: Messy pile
+avoidRules:
+  - berber
+  - flat
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-074.webp
+attributes:
+  negativePrompt: berber, flat

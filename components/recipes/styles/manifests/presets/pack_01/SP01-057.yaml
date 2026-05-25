@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-057
+packId: pack_01
+name: Interior Design
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Designed room
+  form_and_line: Wide angle
+  color_palette: Balanced palette
+  lighting_setup: Mixed window/interior
+  material_texture: Fabric, wood
+  render_quality: Real estate, cozy
+  spatial_distortion: None
+  atmosphere: Welcoming, expensive
+  key_features: Clean layout
+avoidRules:
+  - clutter
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-057.webp
+attributes:
+  negativePrompt: clutter, dark

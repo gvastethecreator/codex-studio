@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-074
+packId: pack_03
+name: Neon Sign 3D
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Glowing glass tubes
+  form_and_line: Tube shape
+  color_palette: Neon Red/Blue, electric glow
+  lighting_setup: Glow, wall reflection, ambient spill
+  material_texture: Glass, metal supports, tube fittings
+  render_quality: Nightlife, sign, urban-branding
+  atmosphere: Urban, cool, nighttime energy
+  key_features: Tube connections, gas-glow realism
+avoidRules:
+  - flat
+  - print
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-074.webp
+attributes:
+  negativePrompt: flat, print

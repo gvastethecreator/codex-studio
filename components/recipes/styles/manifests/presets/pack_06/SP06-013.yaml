@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-013
+packId: pack_06
+name: Airbrush (80s)
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Retro 80s airbrush art
+  form_and_line: Soft gradients, no brush marks
+  color_palette: Chrome, neon, sunset
+  lighting_setup: Hyper-real, glossy
+  material_texture: Smooth, grainless
+  render_quality: Sci-fi cover, van art
+  spatial_distortion: Idealized forms
+  atmosphere: Retro, slick
+  key_features: Smooth gradients
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-013.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

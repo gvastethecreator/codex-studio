@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-017
+packId: pack_03
+name: Slime & Goo
+category: 1. Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+visualDna:
+  aesthetic: Viscous sticky fluid
+  form_and_line: Stretching strands
+  color_palette: Neon Green/Pink
+  lighting_setup: Glossy
+  material_texture: Sticky, wet, viscous elasticity
+  render_quality: Nickelodeon gooey cartoon gross-out, slime fun
+  spatial_distortion: Dripping
+  atmosphere: Fun, gross, messy joy
+  key_features: Drips, stretch strings
+avoidRules:
+  - dry
+  - solid
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-017.webp
+attributes:
+  negativePrompt: dry, solid

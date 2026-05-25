@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-035
+packId: pack_01
+name: Rembrandt Lighting
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Classic portrait lighting
+  form_and_line: Triangle of light on cheek
+  color_palette: Warm, dark shadows
+  lighting_setup: 45 degree single source
+  material_texture: Painterly
+  render_quality: Dramatic, classic
+  spatial_distortion: None
+  atmosphere: Serious, artistic
+  key_features: Chiaroscuro
+avoidRules:
+  - flat
+  - bright
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-035.webp
+attributes:
+  negativePrompt: flat, bright

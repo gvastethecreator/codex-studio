@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-002
+packId: pack_08
+name: Streetwear Hypebeast
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Urban youth fashion, capsule-drop exclusivity, sneakerhead culture
+  form_and_line: Oversized silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo
+  color_palette: Black, White, Red, Neon accents, high-vis lime, saturated electric blue
+  lighting_setup: Street lights or flash, harsh direct flash, nighttime city bounce, billboard glow
+  material_texture: Heavyweight cotton, ripstop nylon, pebbled leather, reflective 3M, mesh paneling
+  render_quality: Supreme/Off-White luxury streetwear, trendy, hype-drop energy, drop-day precision
+  spatial_distortion: Baggy clothes
+  atmosphere: Cool, rebellious, rich, exclusivity hunger, block-party confidence, line-wait tension
+  key_features: Sneaker focus, hyped collab footwear, visible branding, crossbody bag
+avoidRules:
+  - suit
+  - formal
+  - old
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-002.webp
+attributes:
+  negativePrompt: suit, formal, old

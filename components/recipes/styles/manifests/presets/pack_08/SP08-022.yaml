@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-022
+packId: pack_08
+name: Grunge (90s)
+category: 3. Subcultures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+visualDna:
+  aesthetic: Kurt Cobain 90s slouch-grunge, flannel melancholy, Seattle apathy, Nevermind-era dishevelment
+  form_and_line: Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette
+  color_palette: Faded plaid, denim, olive drab, washed-out black, mustard, vintage-burgundy check
+  lighting_setup: Dim, overcast, Pacific-Northwest grey, basement-rehearsal amber, rainy-street flatness
+  material_texture: Brushed flannel, distressed knit, stonewashed denim, thermal waffle, Converse canvas
+  render_quality: Messy, cool, apathy, lo-fi honesty, garage-band authenticity
+  spatial_distortion: None
+  atmosphere: Angst, relaxed, quiet desperation, rainy-afternoon numbness, feedback-hum ennui
+  key_features: Flannel shirt, ripped jeans, cardigan, beanie, Converse sneakers
+avoidRules:
+  - clean
+  - ironed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-022.webp
+attributes:
+  negativePrompt: clean, ironed

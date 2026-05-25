@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-063
+packId: pack_03
+name: 3D Map
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Isometric terrain map
+  form_and_line: Topography
+  color_palette: Map colors, topographic contrast
+  lighting_setup: Sunlight, terrain-shadow casting
+  material_texture: Low poly terrain, topographic layers
+  render_quality: Game map, cute, cartographic style
+  atmosphere: Informative, toy, exploration-inviting
+  key_features: Grid, elevation readability
+avoidRules:
+  - 2d map
+  - paper
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-063.webp
+attributes:
+  negativePrompt: 2d map, paper

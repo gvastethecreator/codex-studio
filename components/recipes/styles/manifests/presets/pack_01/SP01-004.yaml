@@ -1,0 +1,42 @@
+schemaVersion: 1
+id: SP01-004
+packId: pack_01
+name: Glamour Shot
+category: 1. Portrait Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - portrait-styles
+visualDna:
+  aesthetic: High-fashion beauty portraiture, glamorous and luxurious magazine cover style
+  subject_treatment: Idealized features, soft focus on skin while keeping eyes and lips tack-sharp
+  color_and_tone: Vibrant makeup colors, saturated and rich tones, high-end color grading
+  lighting_and_shadow: Ring light or beauty dish illumination, even and flattering light, minimal harsh shadows
+  texture_and_material: Flawless smooth skin, glossy lips, shimmering makeup, luxurious fabric textures
+  camera_and_composition: Close-up beauty crop, flattering angles, undistorted perspective
+  atmosphere_and_mood: Beautiful, expensive, alluring, polished, high-end
+  rendering_and_quality: Magazine cover quality, heavily retouched, 8k resolution, hyper-realistic
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-004.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

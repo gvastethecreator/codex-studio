@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-056
+packId: pack_04
+name: Photobash
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Mixed photos
+  form_and_line: None
+  color_palette: Unified grading, photobash-comped, multi-source harmony
+  lighting_setup: Realistic, ambient-match, multi-photo consistency
+  material_texture: Photo
+  render_quality: Realistic, fast, iterative pitching, concept-development speed
+  spatial_distortion: Mismatched resolution
+  atmosphere: Realism, concept, speculative design, art-department urgency
+  key_features: Texture clash, photo-fragment seam, value-unify grading
+avoidRules:
+  - painted
+  - cartoon
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-056.webp
+attributes:
+  negativePrompt: painted, cartoon

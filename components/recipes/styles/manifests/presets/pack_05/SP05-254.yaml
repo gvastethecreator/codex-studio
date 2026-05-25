@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-254
+packId: pack_05
+name: Fushigi Yuugi - Celestial Maiden Portal Epic
+category: 8. Isekai & High Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - isekai-and-high-fantasy
+visualDna:
+  aesthetic: Book-portal romance fantasy, celestial symbols, guardian warriors, earnest devotion, soft 90s magical drama and travel-heavy emotional stakes
+  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
+  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
+  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
+  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
+  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
+  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
+  atmosphere: Fated, romantic, bright, dramatic
+  key_features: Celestial motifs, guardian ensemble, portal iconography, travel-costume detail, soft dramatic glances
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-254.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

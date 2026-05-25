@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-081
+packId: pack_06
+name: Game Boy Green Monochrome
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Original DMG Game Boy palette, four shades of olive-green, 160x144 low-resolution vision, chunky pixel characters, pea-soup display, Nintendo handheld nostalgia, 1989 portable gaming, sprites as blocky silhouettes of heroism
+  form_and_line: Rigid pixel-grid alignment, 8x8 or 16x16 tile construction, sprite boundary boxing, no sub-pixel rendering
+  color_palette: Four-shade green gradient, pea-soup olive, sickly lime, bile yellow highlight, shadow-moss dark, no other colors exist
+  lighting_setup: Self-illuminated LCD screen, reflective green phosphor glow, pocket-light on plastic screen
+  material_texture: LCD pixel grid gap, dusty plastic screen overlay, passive-matrix ghost trail, screen-burn memory
+  render_quality: Game Boy screen capture, retro handheld nostalgia, 8-bit portable aesthetic, chunky-pixel charm
+  spatial_distortion: Screen-edge vignette, LCD-viewing-angle washout, reflective plastic frame reflection, pocket-sized display
+  atmosphere: Nostalgic, portable, childhood road-trip, under-the-covers gaming, battery-life anxiety
+  key_features: Four-shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen bezel framing, monochrome dot-matrix
+avoidRules:
+  - color
+  - hd
+  - smooth
+  - gradient
+  - realistic
+  - high resolution
+  - detailed
+  - photorealistic
+  - 3d
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-081.webp
+attributes:
+  negativePrompt: color, hd, smooth, gradient, realistic, high resolution, detailed, photorealistic, 3d, modern

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-036
+packId: pack_06
+name: Monotype
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Single painterly print
+  form_and_line: Soft, smashed paint
+  color_palette: Muted, blended
+  lighting_setup: Soft
+  material_texture: Glass transfer, paper
+  render_quality: Unique, expressive
+  spatial_distortion: Blurred
+  atmosphere: Ghostly, soft
+  key_features: Transfer texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-036.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP01-015
+packId: pack_01
+name: Kodachrome 64
+category: 3. Film Stocks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - film-stocks
+visualDna:
+  aesthetic: Vintage slide film
+  form_and_line: Sharp, archival
+  color_palette: Rich reds, realistic
+  lighting_setup: Direct sun
+  material_texture: Fine grain
+  render_quality: National Geographic 80s
+  spatial_distortion: High contrast
+  atmosphere: Historic, vivid
+  key_features: Red pop
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-015.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

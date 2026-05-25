@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-076
+packId: pack_06
+name: Fumage (Smoke Art)
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Soot on paper
+  form_and_line: Soft smoke trails
+  color_palette: Black soot, white paper
+  lighting_setup: Soft
+  material_texture: Smoke residue
+  render_quality: Surreal, delicate
+  spatial_distortion: Ghostly
+  atmosphere: Ethereal, dark
+  key_features: Smoke patterns
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-076.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

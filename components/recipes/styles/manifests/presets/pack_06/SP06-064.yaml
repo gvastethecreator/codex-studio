@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-064
+packId: pack_06
+name: Assemblage
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: 3D object collage
+  form_and_line: Physical objects
+  color_palette: Found object colors
+  lighting_setup: Box lighting
+  material_texture: Rust, wood, plastic
+  render_quality: Sculptural, box art
+  spatial_distortion: None
+  atmosphere: Mysterious, collection
+  key_features: Shadow box
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-064.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

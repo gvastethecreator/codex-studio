@@ -1,0 +1,34 @@
+schemaVersion: 1
+id: SP04-085
+packId: pack_04
+name: Mood Color Script Pass
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Color-script concept art, lighting-first storytelling, atmospheric-color temperature study, film-color progression across time-of-day, Pixar color-script methodology, environment-emotion mapping, no characters just light, pure atmosphere painting
+  form_and_line: Soft atmospheric shape blocking, edge-dissolving fog, value-first massing, light-beams as composition vectors
+  color_palette: Scene-color mapping, dawn-cool to noon-warm progression, twilight-magenta transition, night-blue desaturation, emotional-color temperature shifts
+  lighting_setup: Time-of-day light study, atmospheric scattering, volumetric light-beam emphasis, shadow-temperature exploration
+  material_texture: Atmospheric density gradients, fog-volume softness, light-particle dust motes, cloud-layer texture, haze-depth texture
+  render_quality: Color-script painting, atmospheric-study beauty, lighting-first environment art, emotional-color rendering
+  spatial_distortion: Depth-through-atmosphere, color-temperature spatial separation, fog-layered recession, light-defined space creation
+  atmosphere: Evocative, emotional, lighting-first, atmospheric storytelling, temporal-transition poetry
+  key_features: Color-temperature mapping, time-of-day light progression, atmospheric-perspective depth, fog-layer separation, no character subjects
+avoidRules:
+  - detailed linework
+  - finished rendering
+  - sharp focus
+  - character close-up
+  - subject-dominant
+  - tight composition
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-085.webp
+attributes:
+  negativePrompt: detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight composition

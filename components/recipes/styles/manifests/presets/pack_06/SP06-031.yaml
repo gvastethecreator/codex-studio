@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-031
+packId: pack_06
+name: Etching
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Intaglio print
+  form_and_line: Fine, fuzzy bitten lines
+  color_palette: Black ink, cream paper
+  lighting_setup: Linear shading
+  material_texture: Plate tone, embossed paper
+  render_quality: Rembrandt, detailed
+  spatial_distortion: None
+  atmosphere: Antique, classic
+  key_features: Plate mark
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-031.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

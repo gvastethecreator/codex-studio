@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-053
+packId: pack_09
+name: Smoke/Fog
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Thick fog
+  form_and_line: Soft gradients
+  color_palette: Grey, White
+  lighting_setup: Diffused
+  material_texture: Gaseous
+  render_quality: Atmospheric, soft
+  spatial_distortion: Turbulence
+  atmosphere: Mysterious, blind
+  key_features: Density
+avoidRules:
+  - solid object
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-053.webp
+attributes:
+  negativePrompt: solid object

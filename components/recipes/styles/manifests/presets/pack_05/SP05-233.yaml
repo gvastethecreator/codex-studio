@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-233
+packId: pack_05
+name: Knights of Sidonia - Vacuum Fortress Survival
+category: 7. Mecha & Cyberpunk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - mecha-and-cyberpunk
+visualDna:
+  aesthetic: Starfortress life, austere uniforms, biomechanical space combat, humanity surviving in a giant drifting ship, stark cosmic isolation and disciplined action
+  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
+  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
+  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
+  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
+  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
+  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  atmosphere: Austere, cosmic, disciplined, lonely
+  key_features: Fortress interior scale, biomechanical suits, starfield void contrast, military formation staging, sparse cosmic lighting
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-233.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

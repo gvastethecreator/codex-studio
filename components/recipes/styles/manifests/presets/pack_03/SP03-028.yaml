@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-028
+packId: pack_03
+name: Nurbs Surface
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Mathematically perfect curves
+  form_and_line: Flow lines
+  color_palette: Zebra stripe reflection, curvature analysis
+  lighting_setup: Studio check, highlight continuity
+  material_texture: Glossy, class-A surface
+  render_quality: CAD, automotive, manufacturing-grade
+  atmosphere: Perfect, engineered, mathematical precision
+  key_features: Smoothness, G2 continuity
+avoidRules:
+  - polygons
+  - sharp
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-028.webp
+attributes:
+  negativePrompt: polygons, sharp

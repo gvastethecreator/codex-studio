@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-071
+packId: pack_11
+name: Fungi/Mold
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Petri dish, mycology-lab, mold-colony, fungal-garden, agar-culture
+  form_and_line: Fuzzy growth, hyphal-fringe, colony-circular, radial-extension, sporangiophore-stalk
+  color_palette: White, Green, Blue, sporulation-spectrum, conidia-ochre, penicillin-mint, aspergillus-charcoal, fusarium-rose
+  lighting_setup: Macro, ring-light, petri-dish reflection, agar-surface gloss, top-down-laboratory
+  material_texture: Fuzzy, spores, aerial-mycelium, powdery-conidia, slimy-yeast, agar-surface, colony-elevation
+  render_quality: Gross, fascinating, microbiology-aesthetic, petri-dish-art, contamination-beauty
+  spatial_distortion: Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin
+  atmosphere: Biological, decay, lab-incubator warmth, agar-dawn, invisible-kingdom, decomposition-cycle
+  key_features: Spores, colony-margin, aerial-hyphae, conidia-powder, petri-dish-lid, inhibition-zone, contamination-sector, sporulation-color
+avoidRules:
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-071.webp
+attributes:
+  negativePrompt: clean

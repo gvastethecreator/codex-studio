@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-076
+packId: pack_10
+name: Blueprint
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Technical drawing
+  form_and_line: White lines
+  color_palette: Blue background
+  lighting_setup: Flat
+  material_texture: Paper
+  render_quality: Architectural, plan
+  spatial_distortion: None
+  atmosphere: Planning, technical
+  key_features: White on Blue
+avoidRules:
+  - color
+  - 3d
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-076.webp
+attributes:
+  negativePrompt: color, 3d

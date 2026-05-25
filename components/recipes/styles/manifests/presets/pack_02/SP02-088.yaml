@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-088
+packId: pack_02
+name: Crude Crayon Monster
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Monster drawn by a six-year-old, jagged teeth shaped like triangles, eyes as uneven circles stabbed with crayon, fur as chaotic orange scribbles, claws as five mismatched lines, pure childhood nightmare-art, kindergarten fridge gallery horror
+  form_and_line: Heavy greasy crayon pressure, wax-clogged paper grain, multiple angry coloring attempts, drawing-off-the-page energy
+  color_palette: Broken crayon colors, orange-purple-green chaos, heavy-handed single-pass coloring, mixed-brand crayon clash
+  lighting_setup: None, aggressive coloring regardless of light logic, pure expression over representation
+  material_texture: Construction-paper tooth, crayon wax smears, graphite pencil underdrawing, ripped-paper tension
+  render_quality: First-grade art class, refrigerator-door masterpiece, pure unfiltered expression, zero technique maximum soul
+  spatial_distortion: Head too big for body, legs two different sizes, arms sprouting from neck, tail from forehead
+  atmosphere: Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong
+  key_features: Triangle teeth, uneven circle eyes, scribble-crayon fur texture, construction-paper background, forgot-to-color sections
+avoidRules:
+  - digital
+  - smooth
+  - polished
+  - professional
+  - proportional
+  - realistic
+  - refined
+  - clean
+  - adult
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-088.webp
+attributes:
+  negativePrompt: digital, smooth, polished, professional, proportional, realistic, refined, clean, adult

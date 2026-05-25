@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-065
+packId: pack_10
+name: Basket Weave
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Woven plant fiber
+  form_and_line: Over/Under
+  color_palette: Straw, Tan
+  lighting_setup: Texture shadow
+  material_texture: Dry fiber
+  render_quality: Craft, natural
+  spatial_distortion: None
+  atmosphere: Rustic, simple
+  key_features: Weave pattern
+avoidRules:
+  - solid
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-065.webp
+attributes:
+  negativePrompt: solid

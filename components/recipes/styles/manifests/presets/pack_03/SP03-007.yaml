@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-007
+packId: pack_03
+name: KeyShot Product Studio Renderer
+category: 5. Render Engines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+visualDna:
+  aesthetic: Product design render
+  form_and_line: Studio setup
+  color_palette: Accurate plastics/metals, brand-specific
+  lighting_setup: HDRI studio, real-time ray tracing
+  material_texture: Mold tech textures, scientifically accurate
+  render_quality: Industrial design, packaging comp
+  spatial_distortion: None
+  atmosphere: Clean, commercial, premium retail
+  key_features: Product focus, interactive rendering
+avoidRules:
+  - environment
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-007.webp
+attributes:
+  negativePrompt: environment, messy

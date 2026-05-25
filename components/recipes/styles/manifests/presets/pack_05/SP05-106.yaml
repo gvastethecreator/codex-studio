@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-106
+packId: pack_05
+name: Deco-Inspired Geometric Anime
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Art-deco anime fusion, characters built from geometric planes, hair as angular fans, eyes as faceted jewels, posterized color separation, theatrical stage-design composition, Rose of Versailles elegance meets geometric abstraction, Utena theatricality
+  form_and_line: Precise geometric contour, ruler-straight ink lines, compass-circle precision, angular facet construction
+  color_palette: Gold leaf, lapis lazuli blue, ruby red, emerald facet green, black enamel, geometric color-blocking, jewel-tone exclusivity
+  lighting_setup: Theatrical spotlight, dramatic shadow geometry, stage-light precision, jewel-refraction highlights
+  material_texture: Metallic gold inlay, stained-glass segmentation, enamel gloss, faceted crystal surface, polished stone
+  render_quality: Deco-styled anime frame, theatrical-stage rendering, geometric-abstraction beauty, crystalline visual precision
+  spatial_distortion: Characters composed of faceted planes, hair as geometric fan-shapes, faces as jewel-cut surfaces
+  atmosphere: Grand, theatrical, elegant severity, crystalline beauty, staged perfection
+  key_features: Geometric hair fans, faceted-jewel eyes, ruler-straight lines, stained-glass color separation, stage-set compositions
+avoidRules:
+  - organic
+  - round
+  - soft
+  - flowing
+  - natural
+  - irregular
+  - curved
+  - messy
+  - sketchy
+  - unplanned
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-106.webp
+attributes:
+  negativePrompt: organic, round, soft, flowing, natural, irregular, curved, messy, sketchy, unplanned

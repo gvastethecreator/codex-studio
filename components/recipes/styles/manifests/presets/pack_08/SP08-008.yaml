@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-008
+packId: pack_08
+name: Punk Rock
+category: 3. Subcultures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+visualDna:
+  aesthetic: 1970s London Punk, King's Road insurrection, DIY anarchy boutique
+  form_and_line: Ripped, torn, pinned, shredded asymmetry, bondage-strap tension, drainpipe jeans
+  color_palette: Black, Red Plaid, Silver, safety-orange accent, bleached-out tartan, rusted chrome
+  lighting_setup: Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe
+  material_texture: Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, union jack patches
+  render_quality: Vivienne Westwood punk-boutique, rebellious, safety-pin haute couture, SEX boutique rawness
+  spatial_distortion: Mohawk hair
+  atmosphere: Angry, loud, chaotic, confrontational snarl, three-chord fury, spit-and-sawdust electricity
+  key_features: DIY aesthetic, hand-scrawled slogans, padlock necklace, torn fishnets
+avoidRules:
+  - clean
+  - expensive
+  - nice
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-008.webp
+attributes:
+  negativePrompt: clean, expensive, nice

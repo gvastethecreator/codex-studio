@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-048
+packId: pack_09
+name: Cork Board
+category: 3. Tactile Surfaces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - tactile-surfaces
+visualDna:
+  aesthetic: Bulletin board
+  form_and_line: None
+  color_palette: Tan, Brown chips
+  lighting_setup: Matte
+  material_texture: Compressed granules
+  render_quality: Office, school
+  spatial_distortion: Pinhole
+  atmosphere: Functional, dry
+  key_features: Granules
+avoidRules:
+  - wood grain
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-048.webp
+attributes:
+  negativePrompt: wood grain

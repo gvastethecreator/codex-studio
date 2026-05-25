@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-078
+packId: pack_10
+name: Neon Light Lines
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Glowing lines in dark
+  form_and_line: Light tubes
+  color_palette: Neon colors
+  lighting_setup: Self illuminated
+  material_texture: Glow
+  render_quality: Nightlife, cyber
+  spatial_distortion: None
+  atmosphere: Cool, dark
+  key_features: Dark background
+avoidRules:
+  - bulb
+  - sun
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-078.webp
+attributes:
+  negativePrompt: bulb, sun

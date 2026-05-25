@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP02-090
+packId: pack_02
+name: Spiky Edgy Attitude Cartoon
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Aggressively angular character design, everything composed of sharp triangles and jagged edges, permanent scowl carved into face, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy
+  form_and_line: Razor-sharp angular contours, triangular composition everywhere, spiked hair drawn as caltrops, jagged motion lines, aggressive hatch shading
+  color_palette: Black-heavy palette, blood red, acid green, toxic waste yellow, bruised purple, no soft colors allowed, high-contrast edgelord spectrum
+  lighting_setup: Harsh under-lighting for menace, sharp cast shadows, rim light on angular edges, dramatic noir contrast
+  material_texture: Scratchy ink pen strokes, marker bleed on cheap paper, distressed photocopy grain, DIY zine texture
+  render_quality: Edgy underground comic, Hot Topic t-shirt art, deliberately aggressive rendering, anti-cute manifesto
+  spatial_distortion: Characters as walking collections of triangles, hair as impossible razor fans, limbs narrowing to needle points
+  atmosphere: Angry, rebellious, anti-establishment sneer, teenage wasteland cool, too-much-energy rage
+  key_features: Triangular everything, permanent angry eyebrows, spiked-hair crowns, jagged speech bubbles, crosshatched shadows, no curves allowed
+avoidRules:
+  - soft
+  - gentle
+  - calm
+  - rounded
+  - cute
+  - peaceful
+  - subtle
+  - quiet
+  - reserved
+  - polite
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-090.webp
+attributes:
+  negativePrompt: soft, gentle, calm, rounded, cute, peaceful, subtle, quiet, reserved, polite

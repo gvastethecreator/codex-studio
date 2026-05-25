@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-005
+packId: pack_04
+name: Manga (Shojo)
+category: 1. Comic Book Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+visualDna:
+  aesthetic: Romance manga
+  form_and_line: Thin, delicate
+  color_palette: Black and White, soft grey tones, pearlescent accent
+  lighting_setup: Soft bloom, luminous glow, dreamy highlight
+  material_texture: Flower screentones
+  render_quality: Beautiful, emotional, delicate linework, expressive eyes
+  spatial_distortion: Big eyes
+  atmosphere: Romantic, soft, shoujo longing, petal-strewn reverie
+  key_features: Sparkles, flower petals, decorative panel borders
+avoidRules:
+  - rough
+  - ugly
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-005.webp
+attributes:
+  negativePrompt: rough, ugly

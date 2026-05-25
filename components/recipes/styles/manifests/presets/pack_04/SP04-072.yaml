@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-072
+packId: pack_04
+name: Ballpoint Pen
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Doodle
+  form_and_line: Thin blue lines
+  color_palette: Bic Ballpoint Blue, notebook authenticity
+  lighting_setup: Crosshatching, pen-pressure shadow, desk-lamp intimacy
+  material_texture: Paper indent
+  render_quality: Sketchy, obsessive, margin-doodle honesty, school-desk artistry
+  spatial_distortion: Ink blobs
+  atmosphere: Bored, detailed, lecture-hall drift, idle-hands devotion
+  key_features: Blue ink, ballpoint texture, pressure-line weight
+avoidRules:
+  - paint
+  - thick
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-072.webp
+attributes:
+  negativePrompt: paint, thick

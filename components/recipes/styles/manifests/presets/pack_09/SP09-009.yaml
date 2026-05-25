@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-009
+packId: pack_09
+name: River Stones
+category: 1. Natural Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - natural-materials
+visualDna:
+  aesthetic: Smooth pebbles
+  form_and_line: Rounded shapes
+  color_palette: Multi-colored grey/brown
+  lighting_setup: Wet gloss
+  material_texture: Smooth, wet
+  render_quality: Riverbed, zen
+  spatial_distortion: Rounded
+  atmosphere: Calm, wet
+  key_features: Pile
+avoidRules:
+  - jagged
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-009.webp
+attributes:
+  negativePrompt: jagged, dry

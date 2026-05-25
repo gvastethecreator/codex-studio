@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP01-045
+packId: pack_01
+name: Light Painting
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Long exposure light trails
+  form_and_line: Glowing streaks
+  color_palette: Neon trails
+  lighting_setup: Moving source
+  material_texture: Smooth light
+  render_quality: Creative, night
+  spatial_distortion: Light scribbles
+  atmosphere: Magical, kinetic
+  key_features: Dark background
+avoidRules:
+  - static light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-045.webp
+attributes:
+  negativePrompt: static light

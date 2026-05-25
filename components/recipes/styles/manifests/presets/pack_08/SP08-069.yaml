@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-069
+packId: pack_08
+name: Water Dress
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Dress made of water, liquid-sculpture illusion, elemental-body transformation
+  form_and_line: Splashes, cascade-fall drape, droplet-spray volume, surface-tension curve, sheet-flow silhouette, rippling-hem line
+  color_palette: Clear Blue, aquamarine, crystal-clear, deep-ocean, turquoise, glacier-blue, refractive-white
+  lighting_setup: Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce
+  material_texture: Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature
+  render_quality: Magical, fluid, hydro-sculpture wonder, elemental-transformation poetry
+  spatial_distortion: Flowing
+  atmosphere: Pure, fantasy, ocean-spirit serenity, water-nymph magic, dissolving-identity mystique
+  key_features: Droplets, splash arrest, surface tension, liquid-sheet transparency, flow lines
+avoidRules:
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-069.webp
+attributes:
+  negativePrompt: dry

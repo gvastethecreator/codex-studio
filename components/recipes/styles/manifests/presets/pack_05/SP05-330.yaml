@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-330
+packId: pack_05
+name: Shigeru Mizuki - Yokai Night Parade Ink
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Folkloric yokai procession with documentary oddness, soft rural night, grotesque spirits treated with deadpan familiarity, brush-ink humor and ghostly taxonomy
+  form_and_line: Brushy folklore contour, blunt creature detailing, ink-wash edge diffusion
+  color_palette: Sumi black, lantern orange, moss green, moon grey, mud brown, ghostly cyan
+  lighting_setup: Lantern-and-moon dual lighting, ink-dark negative space, rural-night haze
+  material_texture: Brush-ink bleeds, washi paper tooth, damp earth texture, mossy wood grain
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Odd spirit anatomy, procession depth, deadpan human-scale contrast, uncanny silhouette spacing
+  atmosphere: Folkloric, eerie, amused, nocturnal
+  key_features: Yokai parade silhouettes, rural-night backdrops, brush-ink humor, lantern glow, documentary-spirit staging
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-330.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

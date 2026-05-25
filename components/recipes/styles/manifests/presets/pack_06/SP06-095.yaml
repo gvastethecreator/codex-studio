@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: SP06-095
+packId: pack_06
+name: Sega Genesis Dither-Heavy
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Sega-Genesis-Mega-Drive-16-bit aesthetic, heavy-dithering-for-transparency-fake, 64-colors-simultaneous-on-screen, crunchy-FM-synth-soundtrack-visual-equivalent, Sonic-spiky-pixel-design, Streets-of-Rage-palette-grit, 9-bit-color-depth-9-bit-attitude, Genesis-does-what-Nintendon't philosophy, blast-processing-images
+  form_and_line: Chunky-16-bit-sprites, heavy-dither-pattern-edges, 320x224-resolution, sprite-scaling-hardware, two-layer-parallax-backgrounds
+  color_palette: 512-color-total-palette, 64-on-screen, heavy-dither-to-fake-more, Genesis-signature-dark-gritty, Electric-blue-Sonic, Streets-of-Rage-orange-sunset, golden-cartridge-bronze
+  lighting_setup: Dither-pattern-as-lighting-gradient, highlight-shadow-mode-palette-swap, palette-cycling-for-glow, per-tile-palette-limitation-workaround
+  material_texture: Dither-pattern-grid-texture, Genesis-composite-video-blur, cartridge-connector-blinking-artifacts, CRAM-dot-crawl, scanline-overlay, checkerboard-transparency-dither
+  render_quality: Sega-Genesis-dither aesthetic, blast-processing-beauty, 16-bit-attitude-rendering, crunchy-pixel-charm, checkerboard-transparency-magic
+  spatial_distortion: 320x224-Genesis-resolution, two-layer-parallax-depth, sprite-scaling-horizontal-line, vertical-border-overscan, PAL-letterbox
+  atmosphere: 90s-console-war-attitude, arcade-at-home energy, blast-processing-teenage excitement, FM-synth-funk, Sonic-speed-swagger
+  key_features: Heavy-dither-patterns, 64-color-on-screen, Genesis-composite-video-artifacts, checkerboard-transparency, two-layer-parallax, Sonic-spiky-pixel-design, FM-synth- crunchy-visual
+avoidRules:
+  - smooth
+  - gradient
+  - modern
+  - HD
+  - anti-aliased
+  - high color
+  - photo
+  - soft
+  - realistic
+  - clean
+  - minimal dither
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-095.webp
+attributes:
+  negativePrompt: smooth, gradient, modern, HD, anti-aliased, high color, photo, soft, realistic, clean, minimal dither

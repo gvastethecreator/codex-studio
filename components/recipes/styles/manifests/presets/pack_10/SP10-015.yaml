@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-015
+packId: pack_10
+name: Mycelium Network
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Fungal roots
+  form_and_line: Webbing
+  color_palette: White, earthy
+  lighting_setup: Subsurface scattering
+  material_texture: Fuzzy, organic
+  render_quality: Nature, macro
+  spatial_distortion: Branching
+  atmosphere: Connected, growth
+  key_features: Web pattern
+avoidRules:
+  - man made
+  - straight lines
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-015.webp
+attributes:
+  negativePrompt: man made, straight lines

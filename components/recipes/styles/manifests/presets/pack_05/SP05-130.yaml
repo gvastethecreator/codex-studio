@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-130
+packId: pack_05
+name: Mob Psycho 100 - Psychic Paint-Surge Meltdown
+category: 1. Modern Shonen & Action
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - modern-shonen-and-action
+visualDna:
+  aesthetic: Middle-school psychic awkwardness exploding into paint-like energy storms, emotional overload meter, sketchy sincerity, abstract telekinetic outbursts, humility versus apocalypse
+  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
+  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
+  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
+  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
+  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
+  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  atmosphere: Earnest, explosive, weird, cathartic
+  key_features: Paint-surge psychic effects, simple sincere faces, emotion-meter tension, abstract motion bursts, telekinetic debris halos
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-130.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

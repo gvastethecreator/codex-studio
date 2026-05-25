@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-005
+packId: pack_02
+name: French New Wave
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Jump-cut nouvelle vague street cinema, Godard film energy, Paris streets, natural light rebellion, existential cool
+  form_and_line: None
+  color_palette: Black and White high contrast, gritty grey, silver halide
+  lighting_setup: Natural light, available window, street-level ambience
+  material_texture: 16mm grain, handheld texture, raw documentary feel
+  render_quality: Handheld, raw, unpolished vérité, rebellious imperfection
+  spatial_distortion: Jump cut feel, temporal rupture, axis-breaking edit
+  atmosphere: Cool, intellectual, existential, restless
+  key_features: Natural, location shooting, cigarette smoke
+avoidRules:
+  - studio lighting
+  - stable
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-005.webp
+attributes:
+  negativePrompt: studio lighting, stable

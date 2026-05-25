@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-074
+packId: pack_02
+name: Strobe Light
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Club/Action freeze
+  form_and_line: None
+  color_palette: High contrast White, hard flash, bleached moment, deep shadow gaps
+  lighting_setup: Flash freeze, strobe burst, millisecond illumination
+  material_texture: Sharp motion, frozen water, mid-air suspension
+  render_quality: Intense, frozen, time-slice, action-arrested
+  spatial_distortion: Motion trails, ghost frame, multiple-exposure overlay
+  atmosphere: Party, panic, disorienting rhythm, seizure flicker
+  key_features: Frozen action, dancer mid-air, splashing liquid
+avoidRules:
+  - continuous light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-074.webp
+attributes:
+  negativePrompt: continuous light

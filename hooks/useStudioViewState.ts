@@ -17,11 +17,12 @@ export function useStudioViewState({
   downloadAndClearWorkspace,
   closeOverlay,
 }: UseStudioViewStateProps) {
-  const [isQueueOpen, setIsQueueOpen] = useState(true);
+  const [isQueueOpen, setIsQueueOpen] = useState(false);
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [imageToEdit, setImageToEdit] = useState<Attachment | null>(null);
   const [previewRatio, setPreviewRatio] = useState<AspectRatio | null>(null);
   const [isDashboardModalOpen, setIsDashboardModalOpen] = useState(false);
+  const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [isTrashModalOpen, setIsTrashModalOpen] = useState(false);
   const [isLimitModalOpen, setIsLimitModalOpen] = useState(false);
   const [hasDismissedLimitModal, setHasDismissedLimitModal] = useState(false);
@@ -38,6 +39,14 @@ export function useStudioViewState({
 
   const closeDashboard = useCallback(() => {
     startViewTransition(() => setIsDashboardModalOpen(false));
+  }, []);
+
+  const openSettings = useCallback(() => {
+    startViewTransition(() => setIsSettingsModalOpen(true));
+  }, []);
+
+  const closeSettings = useCallback(() => {
+    startViewTransition(() => setIsSettingsModalOpen(false));
   }, []);
 
   const openTrash = useCallback(() => {
@@ -81,11 +90,12 @@ export function useStudioViewState({
   }, [downloadAndClearWorkspace]);
 
   const resetViewState = useCallback(() => {
-    setIsQueueOpen(true);
+    setIsQueueOpen(false);
     setIsEditorOpen(false);
     setImageToEdit(null);
     setPreviewRatio(null);
     setIsDashboardModalOpen(false);
+    setIsSettingsModalOpen(false);
     setIsTrashModalOpen(false);
     setIsLimitModalOpen(false);
     setHasDismissedLimitModal(false);
@@ -103,6 +113,9 @@ export function useStudioViewState({
     isDashboardModalOpen,
     openDashboard,
     closeDashboard,
+    isSettingsModalOpen,
+    openSettings,
+    closeSettings,
     isTrashModalOpen,
     openTrash,
     closeTrash,

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-033
+packId: pack_04
+name: Propaganda Poster
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Constructivist
+  form_and_line: Bold
+  color_palette: Red, Black, Cream, revolutionary tension, stark authority
+  lighting_setup: High contrast, heroic low-angle, dramatic light-beam
+  material_texture: Screenprint
+  render_quality: Shepard Fairey propagandistic bold, OBEY aesthetic, street authority
+  spatial_distortion: Heroic angle
+  atmosphere: Strong, commanding, revolutionary urgency, mass-movement energy
+  key_features: Rays, bold typography, constructivist geometry
+avoidRules:
+  - subtle
+  - weak
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-033.webp
+attributes:
+  negativePrompt: subtle, weak

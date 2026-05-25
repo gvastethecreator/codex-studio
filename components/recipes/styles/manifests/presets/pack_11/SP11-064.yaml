@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-064
+packId: pack_11
+name: Iris/Eye Macro
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape
+  form_and_line: Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone
+  color_palette: Blue/Green/Brown, amber-hazel, grey-steel, heterochromia, central-heterochromia gold, iris-texture spectrum
+  lighting_setup: Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow
+  material_texture: Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade
+  render_quality: Intense, soul, iris-photography, eye-contact-intimacy, macro-eye-portrait, cornea-reflection perfect
+  spatial_distortion: Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve
+  atmosphere: Personal, deep, eye-contact stillness, window-to-soul, iris-garden, blink-moment
+  key_features: Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern, conjunctiva-vessels, lacrimal-caruncle
+avoidRules:
+  - skin
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-064.webp
+attributes:
+  negativePrompt: skin

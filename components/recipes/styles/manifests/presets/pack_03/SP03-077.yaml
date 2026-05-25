@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-077
+packId: pack_03
+name: Lego Brick-Built 3D
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Built from toy bricks, Lego world, snap-together reality, stud-and-tube logic
+  form_and_line: Studs
+  color_palette: Plastic primary colors, brick-bright palette
+  lighting_setup: Plastic gloss, animated-film lighting
+  material_texture: Plastic, fingerprints, ABS material
+  render_quality: Lego Movie toy-brick feature energy, everything is awesome
+  spatial_distortion: Brick steps
+  atmosphere: Playful, constructive, brick-by-brick magic
+  key_features: Studs on top, clutch power
+avoidRules:
+  - smooth
+  - melted
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-077.webp
+attributes:
+  negativePrompt: smooth, melted

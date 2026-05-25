@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-038
+packId: pack_06
+name: Mezzotint
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Dark to light engraving
+  form_and_line: None, rich blacks
+  color_palette: Deep black, velvet grey
+  lighting_setup: Dramatic, emerging from dark
+  material_texture: Rocker tool marks
+  render_quality: Velvety, detailed
+  spatial_distortion: None
+  atmosphere: Night, dramatic
+  key_features: Rich blacks
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-038.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

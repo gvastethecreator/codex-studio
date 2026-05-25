@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-057
+packId: pack_11
+name: Insect Eye
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering
+  form_and_line: Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses
+  color_palette: Iridescent, beetle-spectrum, metallic-green, structural-blue, chitin-rainbow, interference-film
+  lighting_setup: Macro flash, ring-light reflection, lens-facet sparkle, ommatidia-catchlight array, diffused-twin-flash
+  material_texture: Facet grid, chitin-surface, hexagonal-lens, bristle-insertion, structural-color sheen
+  render_quality: Detailed, alien, micro-four-thirds, insect-vision-portrait, arthropod-beauty, focus-stacking perfection
+  spatial_distortion: Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature
+  atmosphere: Nature, intense, macro-silence, compound-gaze, arthropod-alert, alien-familiarity
+  key_features: Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail
+avoidRules:
+  - human eye
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-057.webp
+attributes:
+  negativePrompt: human eye

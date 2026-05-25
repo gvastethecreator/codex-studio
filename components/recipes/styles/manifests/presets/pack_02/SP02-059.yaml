@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-059
+packId: pack_02
+name: Thermal Camera
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Heat map
+  form_and_line: None
+  color_palette: Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold
+  lighting_setup: Emissive heat, self-illumination, temperature glow
+  material_texture: Digital, sensor noise, microbolometer grid
+  render_quality: Military, predator, FLIR aesthetic, heat-signature tracking
+  spatial_distortion: None
+  atmosphere: Tech, hunting, surveillance, predator-vision
+  key_features: Hot is white, cold is black, body-glow silhouette
+avoidRules:
+  - visible light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-059.webp
+attributes:
+  negativePrompt: visible light

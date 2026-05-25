@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-059
+packId: pack_08
+name: Transparent Plastic
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Raincoat, weather-ready futurism, urban-downpour chic
+  form_and_line: Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc
+  color_palette: Clear, tint, optic-clear, smoked-grey, amber-tint, cyan, translucent-white, rose
+  lighting_setup: Reflective, wet-surface glare, rain-streak catchlights, streetlamp-refraction, overcast-diffusion
+  material_texture: Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC
+  render_quality: Waterproof, modern, wet-weather editorial, transparent-tech sophistication
+  spatial_distortion: See-through
+  atmosphere: Wet, tech, urban-rain serenity, downpour-preparedness, future-commute cool
+  key_features: Transparency, heat-sealed seams, layered visibility, rain droplets, reflective trim
+avoidRules:
+  - opaque
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-059.webp
+attributes:
+  negativePrompt: opaque

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-016
+packId: pack_02
+name: Space Opera (70s)
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Scrappy analog space opera, Star Wars A New Hope, used-future rebellion, practical model magic
+  form_and_line: None
+  color_palette: Used future, worn ochre, grey panel, rebel olive, droid beige
+  lighting_setup: Studio, practical spacecraft, cockpit glow
+  material_texture: Model kitbash, plastic parts, weathered metal, found-object greeble
+  render_quality: Practical FX, optical composite, matte painting, miniature magic
+  spatial_distortion: None
+  atmosphere: Adventure, dirty, swashbuckling rebellion, cantina grit
+  key_features: Greebles, astromech, hyperspace streak
+avoidRules:
+  - cgi
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-016.webp
+attributes:
+  negativePrompt: cgi

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-025
+packId: pack_11
+name: Button Eye Doll
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Coraline uncanny button-eyed dollhouse fantasy, other-mother tension
+  form_and_line: Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace
+  color_palette: Muted, creepy, faded-indigo, storm-purple, bone-cream, dust-mote grey, spiderweb-silver
+  lighting_setup: Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill
+  material_texture: Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine
+  render_quality: Spooky, stop motion, Laika-studio magic, beautiful-nightmare, handcrafted-horror, dark-whimsy
+  spatial_distortion: Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints
+  atmosphere: Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for
+  key_features: Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces
+avoidRules:
+  - human eyes
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-025.webp
+attributes:
+  negativePrompt: human eyes

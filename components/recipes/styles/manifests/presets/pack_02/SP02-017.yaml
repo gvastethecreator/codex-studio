@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-017
+packId: pack_02
+name: 90s Sitcom
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Cozy multi-camera apartment set, Friends/Seinfeld warmth, laugh-track comfort, 90s New York vibe
+  form_and_line: None
+  color_palette: Bright, flat, warm beige wall, purple door, cream sofa
+  lighting_setup: Multi-camera lighting, broad even wash, audience-ready spill
+  material_texture: Videotape, SD broadcast, soft analog edges
+  render_quality: Studio audience feel, live-tap energy, punch-line timing
+  spatial_distortion: None
+  atmosphere: Comfort, funny, hangout warmth, nostalgic security
+  key_features: 3-wall set, central sofa, kitchen doorway
+avoidRules:
+  - cinematic
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-017.webp
+attributes:
+  negativePrompt: cinematic, dark

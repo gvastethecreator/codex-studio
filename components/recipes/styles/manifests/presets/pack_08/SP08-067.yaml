@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-067
+packId: pack_08
+name: Bubble Wrap
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Plastic fashion, pop-art materialism, bubble-texture absurdity
+  form_and_line: Circles, bubble-sphere cluster volume, inflatable-cushion silhouette, rounded-bodice geometry, air-filled dimension
+  color_palette: Clear plastic, optic-clear, tinted-rose, sky-blue, translucent-mint, iridescent-oil, milky-white
+  lighting_setup: Highlights, point-reflection catchlights, studio-softbox pop, plastic-sheen bounce, gallery-overhead
+  material_texture: Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam
+  render_quality: Weird, pop art, Warhol-factory irreverence, inflated-sculpture playfulness
+  spatial_distortion: Bulky
+  atmosphere: Fun, strange, childlike-wonder whimsy, packaging-material poetry, pop-culture satire
+  key_features: Bubbles, air-filled domes, crinkle texture, heat-sealed grid, translucent layers
+avoidRules:
+  - fabric
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-067.webp
+attributes:
+  negativePrompt: fabric

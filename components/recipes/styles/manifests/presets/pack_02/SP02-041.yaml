@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-041
+packId: pack_02
+name: Rotoscoping
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Posterized traced live action, A Scanner Darkly style, wobbly reality, shifting identity, digital uncanny valley
+  form_and_line: Wobbly trace
+  color_palette: Flat blocks, posterized palette, unnatural skin, comic-book reduction
+  lighting_setup: Realistic (traced), live-action source, practical on-set
+  material_texture: Digital paint, vector fill, smooth gradient zone
+  render_quality: Uncanny, dream, floating-reality disconnect, liquid edge
+  spatial_distortion: Floating shapes, paint-drift, unstable outline, image swim
+  atmosphere: Surreal, trippy, identity fracture, psychological unease
+  key_features: Jitter, boil, line tremble, frame-to-frame instability
+avoidRules:
+  - smooth
+  - 3d
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-041.webp
+attributes:
+  negativePrompt: smooth, 3d

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-025
+packId: pack_09
+name: Porcelain (Cracked)
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Old doll or vase
+  form_and_line: Craquelure
+  color_palette: Pale white/cream
+  lighting_setup: Glossy
+  material_texture: Smooth glaze
+  render_quality: Antique, fragile
+  spatial_distortion: Fine cracks
+  atmosphere: Creepy, old
+  key_features: Crack network
+avoidRules:
+  - plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-025.webp
+attributes:
+  negativePrompt: plastic

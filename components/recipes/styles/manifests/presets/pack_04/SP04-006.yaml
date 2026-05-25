@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP04-006
+packId: pack_04
+name: Webtoon Style
+category: 1. Comic Book Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+visualDna:
+  aesthetic: Vertical scroll comic
+  form_and_line: Clean digital
+  color_palette: Full color, flat, webtoon cel-shade, vibrant gradient
+  lighting_setup: Soft cell shade, rim glint, subtle ambient occlusion
+  material_texture: Digital
+  render_quality: Manhwa, modern, sleek scrolling sheen, influencer polish
+  spatial_distortion: Pretty characters
+  atmosphere: Drama, fantasy, romantic tension, digital-native storytelling
+  key_features: Vertical flow, scrolling panel gap, animated layer
+avoidRules:
+  - black and white
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-006.webp
+attributes:
+  negativePrompt: black and white

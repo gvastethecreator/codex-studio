@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-021
+packId: pack_06
+name: Pastel (Soft)
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Chalk pastel drawing
+  form_and_line: Smudged, powdery
+  color_palette: Matte, vibrant, blended
+  lighting_setup: Soft, diffuse
+  material_texture: Textured paper, dust
+  render_quality: Fine art, degas style
+  spatial_distortion: Soft edges
+  atmosphere: Dreamy, atmospheric
+  key_features: Chalky finish
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-021.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

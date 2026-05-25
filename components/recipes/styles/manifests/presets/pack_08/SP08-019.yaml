@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-019
+packId: pack_08
+name: Business Casual
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Office wear, boardroom presence, corporate-modern uniformity
+  form_and_line: Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column
+  color_palette: Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey
+  lighting_setup: Office fluorescent, window-filtered daylight, conference-room downlight, lobby atrium glow
+  material_texture: Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit
+  render_quality: Professional, safe, competent polish, LinkedIn-headshot ready
+  spatial_distortion: None
+  atmosphere: Work, standard, professional calm, deadline focus, water-cooler normalcy
+  key_features: Blazer, structured shoulder, pointed-toe pump, leather portfolio bag
+avoidRules:
+  - t-shirt
+  - shorts
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-019.webp
+attributes:
+  negativePrompt: t-shirt, shorts

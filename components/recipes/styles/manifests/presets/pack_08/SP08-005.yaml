@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-005
+packId: pack_08
+name: Athleisure Sport
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Gym to street look, pre-to-post-workout fluidity, wellness-as-status
+  form_and_line: Tight fitting, ergonomic, compressive sculpt, racerback lines, high-waist compression
+  color_palette: Black, Neon accents, Grey, volt yellow, infrared flash, carbon grey, heathered charcoal
+  lighting_setup: Gym lights or outdoor, sweat-sheen reflection, early-morning clarity, golden-hour pavement
+  material_texture: Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib
+  render_quality: Nike/Lululemon performance-luxury activewear, fit-tech, always-ready, motion-capture sharpness
+  spatial_distortion: None
+  atmosphere: Active, healthy, modern, endorphin glow, urban discipline, pre-dawn determination
+  key_features: Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs
+avoidRules:
+  - dress
+  - jeans
+  - formal
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-005.webp
+attributes:
+  negativePrompt: dress, jeans, formal

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-042
+packId: pack_08
+name: Post-Apocalyptic Scavenger
+category: 5. Fantasy/Sci-Fi Costume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fantasy-sci-fi-costume
+visualDna:
+  aesthetic: Mad Max wasteland survivor gear, guzzoline grit, Fury Road desperation, chrome-sprayed myth
+  form_and_line: Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding, improvised asymmetry
+  color_palette: Dust, Brown, Rust, sun-bleached tan, oxidized copper, blood-rust, war-boy white, desert-ochre
+  lighting_setup: Desert sun, heat-shimmer distortion, dust-storm diffusion, engine-fire orange, post-blast haze
+  material_texture: Dirty canvas, torn leather, salvaged tire rubber, rusty chain, car-part armor, gauze wraps, weathered denim
+  render_quality: Survival, gritty, post-apocalypse vérité, guzzoline-desperation rawness
+  spatial_distortion: None
+  atmosphere: Desperate, tough, resource-scarcity tension, wasteland-wind solitude, witness-me ferocity
+  key_features: Goggles, shoulder pad, bandolier, gas-mask, improvised weapon
+avoidRules:
+  - clean
+  - new
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-042.webp
+attributes:
+  negativePrompt: clean, new

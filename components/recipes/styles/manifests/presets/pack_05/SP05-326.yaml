@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-326
+packId: pack_05
+name: Masaaki Yuasa - Rubber Reality Sprint
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Morphing anatomy and ecstatic motion, dance-like action, color bursts, reality bending under pure expressive velocity, anti-stiff animation freedom made visual
+  form_and_line: Elastic contour, rough brush taper, unstable shape language, rhythm-led line motion
+  color_palette: Acid cyan, burnt orange, grape purple, hot pink, black ink, fever yellow
+  lighting_setup: Graphic color-flash lighting, abrupt stage-like shifts, expression-over-realism illumination
+  material_texture: Paint-smear energy, rough digital brush, poster-flat color blocks, animation-boil traces
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Constant anatomical morphing, melting perspective, dance-curve poses, explosive timing shapes
+  atmosphere: Elastic, ecstatic, surreal, alive
+  key_features: Morphing anatomy, dance-motion arcs, wild color bursts, anti-model dynamism, velocity-first staging
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-326.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

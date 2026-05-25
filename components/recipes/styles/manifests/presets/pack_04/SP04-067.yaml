@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-067
+packId: pack_04
+name: Monotype
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: One off print
+  form_and_line: Smudged
+  color_palette: Ink wash, single-pass tone, monoprint spontaneity
+  lighting_setup: Unpredictable, plate-pressure variation, unique ghost-artifact
+  material_texture: Plate texture
+  render_quality: Painterly print, one-chance drama, artistic gamble
+  spatial_distortion: Squashed ink
+  atmosphere: Expressive, unique, printmaking surprise, serendipitous beauty
+  key_features: Ghost image, ink-bleed edge, plate-memory residue
+avoidRules:
+  - repeatable
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-067.webp
+attributes:
+  negativePrompt: repeatable, clean

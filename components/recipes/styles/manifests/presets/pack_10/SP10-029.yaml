@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-029
+packId: pack_10
+name: Halftone Pattern
+category: 5. Digital Glitch & Noise
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+visualDna:
+  aesthetic: CMYK dots
+  form_and_line: Dot grid
+  color_palette: Cyan, Magenta, Yellow, Black
+  lighting_setup: Flat
+  material_texture: Paper print
+  render_quality: Pop art, print
+  spatial_distortion: Moire pattern
+  atmosphere: Retro, graphic
+  key_features: Rosette pattern
+avoidRules:
+  - smooth gradient
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-029.webp
+attributes:
+  negativePrompt: smooth gradient

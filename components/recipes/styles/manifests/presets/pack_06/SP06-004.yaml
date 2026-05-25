@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-004
+packId: pack_06
+name: Gouache (Flat)
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Opaque gouache illustration
+  form_and_line: Crisp edges, matte finish
+  color_palette: Vibrant, solid, chalky
+  lighting_setup: Flat, graphic
+  material_texture: Smooth paper, matte paint
+  render_quality: Illustrative, design-focused
+  spatial_distortion: Simplified forms
+  atmosphere: Playful, graphic
+  key_features: Matte opacity
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-004.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

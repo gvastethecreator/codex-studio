@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-069
+packId: pack_07
+name: Inflatable Castle
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Bouncy house, party inflatable, air-filled fun palace, childhood carnival, birthday-bounce kingdom
+  form_and_line: Seams, inflated tube curves, turret-bulge cylinders, rounded-battlement bumps, fan-hose snake
+  color_palette: Neon vinyl, Hot Pink, Electric Yellow, Safety Orange, Royal Blue inflatable, Bright Green
+  lighting_setup: Glossy, vinyl-shine reflection, sun-through-vinyl translucency, party-string lights, fan-inflated tension
+  material_texture: Plastic vinyl, glossy PVC, seam-weld ridge, inflatable-taut surface, bouncy-air resistance, nylon-web tie
+  render_quality: Soft, air filled, bounce-house joy, backyard-carnival, inflatable-castle kitsch, birthday-party centerpiece
+  spatial_distortion: Bulging
+  atmosphere: Fun, bouncy, party-excitement, air-pressure, squeaky-joy, kid-energy, temporary-amusement
+  key_features: Wrinkles, seam lines, blower fan, bright color panels, turrets, slide opening, net windows
+avoidRules:
+  - hard edges
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-069.webp
+attributes:
+  negativePrompt: hard edges

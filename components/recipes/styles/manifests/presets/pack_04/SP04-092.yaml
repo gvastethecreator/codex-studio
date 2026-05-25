@@ -1,0 +1,36 @@
+schemaVersion: 1
+id: SP04-092
+packId: pack_04
+name: Costume Design Exploration Board
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Costume-design-concept-board, fabric-swatch-pinned-to-corkboard, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images-alongside-new-designs, trim-and-notion-samples, dye-lot-variation-chips, fashion-studio- wall energy, character-costume-evolution-across-film-timeline, designer-notes-and-question-marks-in-margins
+  form_and_line: Fashion-croquis-figure-templates, silhouette-exploration-variations, swatch-square-grids, annotation-leader-lines-from-fabric-to-design, design-line-clean-contours
+  color_palette: Fabric-swatch-spectrum, historical-dye-reference, costume-character-color-ways, silk-satin-cotton-wool-leather colors, dye-lot-variation, trim-metallic-accents, button-and-hook-color-comparison
+  lighting_setup: Designer-studio-daylight, task-lamp-on-pinned-swatches, fabric-sheen-in-light, consistent-lighting-for-comparison
+  material_texture: Fabric-switch-square-textures, silk-sheen, wool-tweed, cotton-weave, leather-grain, lace-pattern-pinned, velvet-nap, corkboard-texture-behind
+  render_quality: Costume-design-board aesthetic, fashion-concept-rendering, character-wardrobe-exploration, historical-costume-research, film-production costume-art
+  spatial_distortion: Corkboard-pin-arrangement, swatch-grid-layout, silhouette-row-comparison, reference-image-cluster, annotation-space, design-evolution-progression
+  atmosphere: Creative, historical-research, character-through-clothing, costume-department-workshop, fitting-room-energy, fabric-store-inspiration
+  key_features: Fabric-swatch-squares-pinned, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images, corkboard-pin-texture, annotation-leader-lines, notion-sample-accents
+avoidRules:
+  - finished
+  - one version
+  - no comparison
+  - no swatches
+  - unlabeled
+  - vague
+  - single option
+  - no fabric
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-092.webp
+attributes:
+  negativePrompt: finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-059
+packId: pack_09
+name: Soap Bubbles
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Floating spheres
+  form_and_line: Thin film
+  color_palette: Iridescent
+  lighting_setup: Reflective
+  material_texture: Liquid surface
+  render_quality: Delicate, childhood
+  spatial_distortion: Sphere
+  atmosphere: Light, fun
+  key_features: Transparency
+avoidRules:
+  - plastic ball
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-059.webp
+attributes:
+  negativePrompt: plastic ball

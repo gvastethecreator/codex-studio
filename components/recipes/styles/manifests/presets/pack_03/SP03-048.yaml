@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-048
+packId: pack_03
+name: Product Render
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Consumer electronics
+  form_and_line: Sleek curves
+  color_palette: Brand colors
+  lighting_setup: Studio reflection
+  material_texture: Matte plastic, aluminum, premium finish
+  render_quality: Apple flagship product launch, minimalist perfection
+  spatial_distortion: None
+  atmosphere: Desirable, expensive, luxury reveal
+  key_features: White background
+avoidRules:
+  - dust
+  - scratches
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-048.webp
+attributes:
+  negativePrompt: dust, scratches

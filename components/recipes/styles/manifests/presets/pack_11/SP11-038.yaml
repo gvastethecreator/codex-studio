@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-038
+packId: pack_11
+name: Biopunk
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: Genetic engineering, flesh-machine hybrid, wet-lab nightmare, chromosome-gothic
+  form_and_line: Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks
+  color_palette: Pink, Green, Flesh, viscera-spectrum, bile-yellow, hemoglobin-crimson, amniotic-amber, bruise-purple
+  lighting_setup: Wet, slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow
+  material_texture: Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface
+  render_quality: Gross, fascinating, Cronenberg-body, petri-dish horror, genetic-recombination, bio-lab art
+  spatial_distortion: Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy
+  atmosphere: Unsettling, biological, vivisection-table dread, accelerated-evolution, recombinant-anxiety
+  key_features: Flesh tubes, umbilical-cord coils, amniotic-fluid drip, pulsating-vein networks, grown-eye clusters, chitin-plate armor
+avoidRules:
+  - metal
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-038.webp
+attributes:
+  negativePrompt: metal, dry

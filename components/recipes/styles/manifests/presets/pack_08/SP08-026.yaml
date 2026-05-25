@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-026
+packId: pack_08
+name: Biker Gang
+category: 3. Subcultures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+visualDna:
+  aesthetic: Motorcycle club, outlaw-brotherhood iconography, open-road defiance
+  form_and_line: Heavy leather, cut-off vest, engineer-boot stomp, bandana-mask line
+  color_palette: Black leather, Silver, denim-blue, club-patch color, chrome, grease-black
+  lighting_setup: Harsh, midday-sun glare, chrome-reflection highlights, bar-sign neon, desert-highway heat
+  material_texture: Heavyweight cowhide leather, embroidered patches, metal studs, chain, dirty denim, brass zippers
+  render_quality: Tough, dangerous, asphalt-authenticity, Sons of Anarchy grittiness
+  spatial_distortion: None
+  atmosphere: Intimidating, cool, road-dog brotherhood, exhaust-fume authority, clubhouse gravity
+  key_features: Leather vest, three-piece patch, engineer boots, chain wallet
+avoidRules:
+  - soft
+  - colorful
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-026.webp
+attributes:
+  negativePrompt: soft, colorful

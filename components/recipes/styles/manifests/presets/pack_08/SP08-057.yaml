@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-057
+packId: pack_08
+name: Tweed Suit
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Professor suit, donnish-academia charm, country-estate weekend
+  form_and_line: Herringbone pattern, structured-shoulder drape, notch-lapel angle, three-roll-two button stance, trouser-break hem
+  color_palette: Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss
+  lighting_setup: Flat, study-lamp pool, rainy-window grey, library-wingback warmth
+  material_texture: Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining
+  render_quality: Classic, textured, Savile Row heritage, country-house authenticity
+  spatial_distortion: None
+  atmosphere: Smart, old school, leather-armchair comfort, pipe-smoke contemplation, donnish eccentricity
+  key_features: Herringbone, elbow patches, ticket pocket, knitted tie, brogues
+avoidRules:
+  - smooth
+  - shiny
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-057.webp
+attributes:
+  negativePrompt: smooth, shiny

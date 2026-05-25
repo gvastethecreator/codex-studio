@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-030
+packId: pack_09
+name: Burlap Sack
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Potato sack
+  form_and_line: Coarse weave
+  color_palette: Tan, Brown
+  lighting_setup: Matte
+  material_texture: Rough fiber
+  render_quality: Rustic, cheap
+  spatial_distortion: Loose weave
+  atmosphere: Poor, rural
+  key_features: Grid weave
+avoidRules:
+  - silk
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-030.webp
+attributes:
+  negativePrompt: silk, smooth

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-062
+packId: pack_02
+name: Blue Hour
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Twilight
+  form_and_line: None
+  color_palette: Deep Blue/Purple, ultramarine sky, violet horizon, warm window amber
+  lighting_setup: Soft ambient, skydome fill, no shadows, twilight wrap
+  material_texture: Smooth, noise-free, silky gradient
+  render_quality: Calm, city lights, transition-moment stillness
+  spatial_distortion: None
+  atmosphere: Quiet, cool, liminal pause, between-day-and-night
+  key_features: Streetlights on, lit windows, fading sky gradient
+avoidRules:
+  - orange
+  - sun
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-062.webp
+attributes:
+  negativePrompt: orange, sun

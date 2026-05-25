@@ -1,0 +1,35 @@
+schemaVersion: 1
+id: SP04-093
+packId: pack_04
+name: Lighting Scenario Pass
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Same-scene-eight-different-lighting-pass, dawn-morning-noon-afternoon-dusk-night-midnight-storm variations, pure-atmosphere-comparison-grid, Pixar-lighting-color-script philosophy, environment-emotional-impact-through-light-only, golden-hour-vs-overcast-vs-neon-night, shadow-direction-and-temperature study, lighting-as-storytelling-tool, cinematography-reference-sheet
+  form_and_line: Same-composition-repeated-with-atmospheric-variation, consistent-scene-geometry-under-different-light, atmospheric-edge-dissolve, shadow-direction-arc-across-variations
+  color_palette: Dawn-cool-lavender, morning-gold-warm, noon-neutral-white, afternoon-amber-warm, dusk-magenta-purple, night-blue-desaturation, midnight- deep-indigo, storm-green-grey-menace
+  lighting_setup: Eight-different-key-light-directions, shadow-temperature-warm-to-cool, volumetric-fog-varying-density, time-of-day-color-temperature-spectrum
+  material_texture: Atmospheric-density-variation, fog-soft-to-clear, cloud-diffusion-amount, shadow-sharpness-variation, light-ray- visibility-morning-vs-noon
+  render_quality: Lighting-scenario-study, color-script-beauty, atmospheric-comparison-rendering, film-lighting-reference, Pixar-philosophy-color-script
+  spatial_distortion: Repeated-scene-composition-grid, lighting- angle-rotation-across-scenes, atmospheric-perspective-depth-varying, shadow-length-arc-across-day
+  atmosphere: Moody, time-passage, emotional-light-shift, atmospheric-storytelling, dawn-hope-to-midnight-mystery, lighting-as-emotion-language
+  key_features: Same-scene-different lighting, eight-variation-grid, dawn-to-midnight progression, atmospheric-density comparison, shadow-direction-arc, color-temperature-spectrum, Pixar-color-script-philosophy
+avoidRules:
+  - single lighting
+  - one time of day
+  - consistent mood
+  - no comparison
+  - flat
+  - character focused
+  - subject prominent
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-093.webp
+attributes:
+  negativePrompt: single lighting, one time of day, consistent mood, no comparison, flat, character focused, subject prominent

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-028
+packId: pack_04
+name: Chalk Pastel
+category: 2. Children's Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - children-s-illustration
+visualDna:
+  aesthetic: Soft blending
+  form_and_line: Thick dust
+  color_palette: Soft, dusty, pastel-mist spectrum, muted winter warmth
+  lighting_setup: Soft, diffuse glow, paper-tooth scatter, feather-light
+  material_texture: Paper tooth
+  render_quality: The Snowman wintery dreamy softness, pastel flight
+  spatial_distortion: Blurred
+  atmosphere: Soft, winter, snow-globe stillness, nostalgic bedtime
+  key_features: Smudge, chalk-dust bloom, soft-edge blending
+avoidRules:
+  - sharp
+  - pen
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-028.webp
+attributes:
+  negativePrompt: sharp, pen

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-064
+packId: pack_09
+name: Mud (Cracked)
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Dried lake bed
+  form_and_line: Puzzle cracks
+  color_palette: Tan, Brown
+  lighting_setup: Harsh sun
+  material_texture: Dry clay
+  render_quality: Drought, desert
+  spatial_distortion: Curled plates
+  atmosphere: Thirsty, hot
+  key_features: Crack pattern
+avoidRules:
+  - wet mud
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-064.webp
+attributes:
+  negativePrompt: wet mud

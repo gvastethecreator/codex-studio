@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-103
+packId: pack_05
+name: Neon Hyperpop Anime
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Internet-age saturated excess, glitch-effect overlays, VHS color-bleed corruption, vaporwave anime avatar, TikTok filter maximalism, chromatic aberration on every edge, holographic sparkles, song-cover-art energy, vocaloid pop-concert color explosion
+  form_and_line: Sharp digital vector outlines, occasional scanline breakage, datamosh distortion zones, pixel-sorted edge artifacts
+  color_palette: '#FF00FF magenta, #00FFFF cyan, toxic-slime green, electric lavender, candy-flip spectrum, RGB-split borders, eye-searing saturation'
+  lighting_setup: Ring-light selfie glow, neon tube accent, bounce-reflected magenta, screen-glow on face, club-strobe rhythm
+  material_texture: Holographic foil shimmer, plastic-LCD screen diffusion, glitter-dust particle overlay, glossy phone-screen reflection
+  render_quality: Hyper-digital anime frame, TikTok-filter aesthetic, internet-native visual language, saturated-beyond-natural rendering
+  spatial_distortion: Glitch-displaced body parts, RGB-channel-offset doubling, screen-wrap distortion, fish-eye music-video lens
+  atmosphere: Euphoric, overstimulated, terminally-online joy, digital-nativity celebration
+  key_features: Chromatic aberration edges, RGB channel split, holographic overlay, internet-culture visual references, digital glitch artifacts
+avoidRules:
+  - muted
+  - subtle
+  - soft
+  - vintage
+  - film grain
+  - dark
+  - moody
+  - restrained
+  - traditional
+  - quiet
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-103.webp
+attributes:
+  negativePrompt: muted, subtle, soft, vintage, film grain, dark, moody, restrained, traditional, quiet

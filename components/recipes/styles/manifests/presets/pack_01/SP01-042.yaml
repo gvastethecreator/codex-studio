@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-042
+packId: pack_01
+name: Strobe Light
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Frozen motion
+  form_and_line: Sharp edges
+  color_palette: Cool white
+  lighting_setup: Instant flash
+  material_texture: Frozen droplets
+  render_quality: High speed photography
+  spatial_distortion: None
+  atmosphere: Energetic, frozen
+  key_features: Motion freeze
+avoidRules:
+  - blur
+  - soft
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-042.webp
+attributes:
+  negativePrompt: blur, soft

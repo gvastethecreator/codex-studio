@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-065
+packId: pack_09
+name: Tar
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Sticky black goo
+  form_and_line: Thick drips
+  color_palette: Black
+  lighting_setup: Glossy
+  material_texture: Viscous
+  render_quality: Road work, trap
+  spatial_distortion: Slow flow
+  atmosphere: Heavy, sticky
+  key_features: Thick
+avoidRules:
+  - water
+  - oil
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-065.webp
+attributes:
+  negativePrompt: water, oil

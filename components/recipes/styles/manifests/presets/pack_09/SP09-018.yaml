@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-018
+packId: pack_09
+name: Rusty Iron
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Corroded metal
+  form_and_line: Pitting
+  color_palette: Orange, Brown, Black
+  lighting_setup: Matte
+  material_texture: Rough, flaky
+  render_quality: Old, abandoned
+  spatial_distortion: Eaten away
+  atmosphere: Decay, heavy
+  key_features: Random rust
+avoidRules:
+  - new
+  - shiny
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-018.webp
+attributes:
+  negativePrompt: new, shiny

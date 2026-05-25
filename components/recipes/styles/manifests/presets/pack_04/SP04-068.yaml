@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-068
+packId: pack_04
+name: Cyanotype (Blueprint)
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Sun print
+  form_and_line: Silhouette (white)
+  color_palette: Prussian Blue, monochrome cyan, sun-print depth
+  lighting_setup: Negative, UV exposure, solar-contact alchemy
+  material_texture: Watercolor paper
+  render_quality: Botanical, photo, photogram heritage, Anna Atkins legacy
+  spatial_distortion: Soft edges
+  atmosphere: Dreamy, blue, alternative-process magic, Victorian science
+  key_features: Blue only, contact shadow, silhouette photogram
+avoidRules:
+  - red
+  - yellow
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-068.webp
+attributes:
+  negativePrompt: red, yellow

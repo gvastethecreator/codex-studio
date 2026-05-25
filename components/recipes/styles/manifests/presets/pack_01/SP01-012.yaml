@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP01-012
+packId: pack_01
+name: Fujifilm Velvia 50
+category: 3. Film Stocks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - film-stocks
+visualDna:
+  aesthetic: High saturation landscape film
+  form_and_line: High contrast
+  color_palette: Vivid Green, Blue, Red
+  lighting_setup: Daylight
+  material_texture: Very fine grain
+  render_quality: Nature photography
+  spatial_distortion: Crushed blacks
+  atmosphere: Vibrant, punchy
+  key_features: Magenta bias
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-012.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

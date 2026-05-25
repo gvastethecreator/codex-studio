@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-035
+packId: pack_09
+name: Burnt Wood (Shou Sugi Ban)
+category: 4. Weathering & Decay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - weathering-and-decay
+visualDna:
+  aesthetic: Charred timber
+  form_and_line: Deep cracks (alligator skin)
+  color_palette: Deep Black
+  lighting_setup: Matte/Satin
+  material_texture: Charcoal
+  render_quality: Preserved, texture
+  spatial_distortion: Cracked blocks
+  atmosphere: Dark, fire
+  key_features: Rectangular cracks
+avoidRules:
+  - ash
+  - grey
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-035.webp
+attributes:
+  negativePrompt: ash, grey

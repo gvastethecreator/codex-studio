@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-019
+packId: pack_09
+name: Gold Leaf
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Thin foil application
+  form_and_line: Crinkles and overlaps
+  color_palette: Rich Gold
+  lighting_setup: Metallic reflection
+  material_texture: Wrinkled foil
+  render_quality: Gilded, delicate
+  spatial_distortion: Flaking
+  atmosphere: Expensive, fragile
+  key_features: Square sheets
+avoidRules:
+  - solid gold bar
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-019.webp
+attributes:
+  negativePrompt: solid gold bar

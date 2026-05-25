@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-334
+packId: pack_05
+name: Hideaki Anno - Storyboard Emergency Sketch
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Raw production-board intensity, monochrome urgency, missiles and tears, technical notes hiding beneath emotional catastrophe, anxious linework driving apocalyptic planning
+  form_and_line: Raw pencil contour, notation-heavy marks, urgent hatch emphasis, production-sketch looseness
+  color_palette: Pencil grey, warning red, photocopy black, paper white, rust sepia, alarm orange
+  lighting_setup: Harsh conceptual spotlighting, emergency-red accent bursts, no-finish production glare
+  material_texture: Pencil smudge, copier grain, paper crease, marker annotation bleed, erased construction lines
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Storyboard panel shifts, missile-angle perspective, rough dramatic framing, note-margin compression
+  atmosphere: Urgent, anxious, skeletal, apocalyptic
+  key_features: Storyboard panels, emergency arrows, technical notations, monochrome anxiety, explosive conceptual framing
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-334.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

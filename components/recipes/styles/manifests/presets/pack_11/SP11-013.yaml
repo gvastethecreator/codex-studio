@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-013
+packId: pack_11
+name: Dieselpunk
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: 1940s retro-future war, diesel-powered dystopia, iron-giant nightmare, wartime brutalist future
+  form_and_line: Rivets, heavy metal plates, cast-iron curves, bolted seams, industrial silhouettes
+  color_palette: Oil, Grease, Steel, Rust, soot-black, oxidized copper, military-olive stain, burnt-sienna corrosion
+  lighting_setup: Sooty, dark, industrial, caged-bulb gloom, exhaust-haze diffusion, furnace-glow warmth
+  material_texture: Grime, smoke, metal, cold-stamped steel, oil-slick puddles, sweat-stained leather, caked rust
+  render_quality: War, heavy, mechanical, piston-driven nightmare, totalitarian engineering, colossal dread
+  spatial_distortion: Bulky machinery, oversized engines, vertical oppression, crushing-mass architecture
+  atmosphere: Dirty, loud, powerful, oppressive weight, grinding fatigue, iron-willed endurance
+  key_features: Exhaust smoke, bolted armor plates, pressure gauges, colossal treads
+avoidRules:
+  - clean
+  - digital
+  - plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-013.webp
+attributes:
+  negativePrompt: clean, digital, plastic

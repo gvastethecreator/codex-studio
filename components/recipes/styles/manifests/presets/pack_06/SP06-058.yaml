@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-058
+packId: pack_06
+name: Polygon Art
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: 2D geometric triangulation
+  form_and_line: Triangles
+  color_palette: Gradients per triangle
+  lighting_setup: Flat
+  material_texture: None
+  render_quality: Vector, modern
+  spatial_distortion: Geometric
+  atmosphere: Clean, sharp
+  key_features: Triangular mesh
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-058.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

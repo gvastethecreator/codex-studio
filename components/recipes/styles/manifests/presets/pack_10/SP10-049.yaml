@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-049
+packId: pack_10
+name: Houndstooth
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Broken check pattern
+  form_and_line: Jagged checks
+  color_palette: Black and White
+  lighting_setup: Flat
+  material_texture: Wool
+  render_quality: Fashion, classic
+  spatial_distortion: Repeat
+  atmosphere: Professional
+  key_features: Grid
+avoidRules:
+  - floral
+  - organic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-049.webp
+attributes:
+  negativePrompt: floral, organic

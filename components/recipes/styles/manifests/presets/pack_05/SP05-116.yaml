@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-116
+packId: pack_05
+name: Sumi-e Brushstroke Combat
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Pure-ink-wash fighting scene, single-brushstroke capturing entire combat arc, characters suggested by gestural-sumi marks, black-ink-explosions where strikes land, negative-space-as-impact-zones, zen-calligraphy-meets-shonen-battle, brushstroke-drag-texture becoming speed-lines, bamboo-brush-mastery, Musashi-philosophy-in-ink, sword-cut-as-ink-splash
+  form_and_line: Single-gesture-brushstroke contours, variable-pressure-from-brush, dry-brush-scattering at stroke-end, wet-ink-pooling at stroke-start, economy-of-line philosophy
+  color_palette: Sumi-ink-black, rice-paper-white, vermillion-seal-stamp-red, grey-wash-dilutions, no other colors exist, monochrome-poetry
+  lighting_setup: No lighting, ink-density-as-value, dry-brush-lightness, wet-pool-darkness, negative-space-as illumination
+  material_texture: Rice-paper-fiber-absorption, ink-bleed-feathering, dry-brush-splinter-texture, sumi-stick-grind-grain, bamboo-brush-hair-texture, paper-buckling-from-moisture
+  render_quality: Sumi-e-brushstroke-anime, zen-combat-aesthetic, ink-wash-masterpiece, single-breath-rendering, calligraphic-fighting-essence
+  spatial_distortion: Ink-splash-suggesting-impact-zones, negative-space-as-form, brushstroke-gesture-as-anatomy, no-filled-forms, economy-of-space
+  atmosphere: Zen-discipline, explosive-silence, one-strike-certainty, ink-grind-meditation, master's-quiet-confidence
+  key_features: Sumi-ink-monochrome, single-brushstroke-gestures, dry-brush-splinter-edges, ink-pool-wetness, rice-paper-texture, negative-space-as-light, vermillion-seal-stamp
+avoidRules:
+  - detailed
+  - filled
+  - colorful
+  - gradient
+  - cel-shaded
+  - clean outlines
+  - rendered
+  - polished
+  - busy
+  - noisy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-116.webp
+attributes:
+  negativePrompt: detailed, filled, colorful, gradient, cel-shaded, clean outlines, rendered, polished, busy, noisy

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-016
+packId: pack_11
+name: Plushie
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Stuffed animal, plush companion, toy-store mascot, bedtime best-friend
+  form_and_line: Seams, stuffed-round contours, soft-pillow silhouette
+  color_palette: Soft pastel, nursery spectrum, blush-pink, duckling-yellow, cloud-white, baby-blue
+  lighting_setup: Soft studio, nursery-window glow, gentle diffusion, warm-overhead comfort
+  material_texture: Faux fur, fabric, velvet-soft nap, squishy filling, micro-fiber fuzz
+  render_quality: Cute, huggable, snuggle-ready charm, crane-game prize, velvet-touch tenderness
+  spatial_distortion: Round shapes, oversize-head proportions, stubby limbs, chunky paws
+  atmosphere: Comforting, soft, security-blanket warmth, bedtime safety, unconditional love
+  key_features: Button eyes, stitched smile, bean-bag weight, satin-bow accent
+avoidRules:
+  - hard
+  - plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-016.webp
+attributes:
+  negativePrompt: hard, plastic

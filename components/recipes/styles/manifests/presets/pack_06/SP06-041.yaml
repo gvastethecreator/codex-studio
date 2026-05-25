@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-041
+packId: pack_06
+name: Rubber Stamp
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Hand stamped image
+  form_and_line: Broken, uneven ink
+  color_palette: Red, Black, Blue ink
+  lighting_setup: Flat
+  material_texture: Ink pad, paper grain
+  render_quality: Rough, bureaucratic
+  spatial_distortion: Incomplete impression
+  atmosphere: Official, rough
+  key_features: Stamp border
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-041.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

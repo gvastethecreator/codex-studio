@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-006
+packId: pack_11
+name: Chalkboard Art
+category: 3. Artistic Mediums
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+visualDna:
+  aesthetic: Drawing on black slate board, sidewalk art, vintage classroom, chalk-dust magic
+  form_and_line: Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections
+  color_palette: White chalk on Black board, soft pastel chalks, muted color spectrum, dusty desaturation
+  lighting_setup: Flat, even overhead fluorescents, no glare, diffused ambient
+  material_texture: Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth
+  render_quality: Cafe menu, school, rustic, ephemeral artistry, wiped-clean impermanence, sidewalk festival
+  spatial_distortion: Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing
+  atmosphere: Casual, temporary, rustic, creative, fleeting, nostalgic melancholy
+  key_features: Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending
+avoidRules:
+  - paper
+  - ink
+  - digital
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-006.webp
+attributes:
+  negativePrompt: paper, ink, digital

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-024
+packId: pack_09
+name: Asphalt (Wet)
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Rainy road
+  form_and_line: Road markings
+  color_palette: Black, Grey
+  lighting_setup: Reflection of lights
+  material_texture: Grainy tar
+  render_quality: City night, noir
+  spatial_distortion: Puddles
+  atmosphere: Urban, dark
+  key_features: Gravel grain
+avoidRules:
+  - dry
+  - desert
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-024.webp
+attributes:
+  negativePrompt: dry, desert

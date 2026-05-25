@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-080
+packId: pack_07
+name: Tardis Infinite Console Chamber
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Bigger on the inside, impossible interior beyond outer shell, dimensional transcendence
+  form_and_line: Hexagons/Roundels, organic-coral architecture, console-pedestal, gallery-level curves, time-rotor column, infinite-arches
+  color_palette: Orange/Teal, Coral-amber glow, Deep-ocean Teal, Console-copper, Roundel-warm gold, Time-vortex blue
+  lighting_setup: Console glow, time-rotor pulse, roundel-indirect, gallery-level ambient, regeneration-energy gold, warm coral wash
+  material_texture: Tech, organic, grown-coral surface, control-console brass, glass roundel, copper wire, gel-pack
+  render_quality: Sci-fi, chaotic, Doctor-Who wonder, impossible-dimensions, time-machine Baroque, bigger-on-the-inside magic
+  spatial_distortion: Time rotor
+  atmosphere: Adventure, time, wonder-awe, time-lord, infinite-explore, dimensional-impossible, home-among-stars
+  key_features: Central column, roundel walls, hexagonal console, time rotor, gallery levels, organic architecture, infinite depth
+avoidRules:
+  - small
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-080.webp
+attributes:
+  negativePrompt: small

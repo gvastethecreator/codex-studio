@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-028
+packId: pack_02
+name: MTV 90s Grunge Broadcast
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Alternative video
+  form_and_line: Scribbles
+  color_palette: Desaturated + Neon, bleach bypass, acid green, safety orange
+  lighting_setup: Strobe, flicker, flash-frame, concert par-can
+  material_texture: Distressed film, scratched negative, hand-processed
+  render_quality: Edgy, fast, rapid-fire montage, music-video relentlessness
+  spatial_distortion: Morphing, image warp, video feedback, liquid dissolve
+  atmosphere: Rebellious, cool, anti-establishment, mosh-pit energy
+  key_features: Fast cuts, graffiti text, band logo, fisheye crowd
+avoidRules:
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-028.webp
+attributes:
+  negativePrompt: clean

@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP04-082
+packId: pack_04
+name: Photobash Paintover Iteration
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Photography-based concept art, real-photo fragments assembled into new designs, painted-over photo plates, texture-library construction, matte-painting technique applied to character and vehicle design, mixed-media production speed, reality-sampling creative workflow
+  form_and_line: Photo-edge cutout contours, painted-over photo transitions, adjustment-layer blend, lasso-masked compositing, mixed-resolution edge collision
+  color_palette: Photo-base color gamut, unified grade adjustment layer, paint-stroke color harmony over photo, realistic-then-stylized color bridge
+  lighting_setup: Photo-real light base, painted light adjustment, mixed-source illumination, environment-lighting matched across elements
+  material_texture: Photographic surface detail, painted-over brush strokes, resolution-mismatch texture patches, clone-stamp repair marks
+  render_quality: Photobash concept art, production-speed visualization, mixed-media concept, fast-iteration professional workflow
+  spatial_distortion: Assembled from disparate photo perspectives, unified through paint-over, forced-perspective composite, scale-blended elements
+  atmosphere: Industrial, practical, production-ready, fast-turnaround creative, resourceful problem-solving
+  key_features: Visible photo seams, paint-over strokes, resolution-mismatch patches, texture-library compositing, adjustment-layer grading
+avoidRules:
+  - clean
+  - pure illustration
+  - single medium
+  - hand-painted only
+  - smooth
+  - finished
+  - final
+  - one-pass
+  - unlayered
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-082.webp
+attributes:
+  negativePrompt: clean, pure illustration, single medium, hand-painted only, smooth, finished, final, one-pass, unlayered

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-044
+packId: pack_02
+name: Oil Paint Animation
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Moving oil-paint canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer artistic devotion
+  form_and_line: Brush strokes
+  color_palette: Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk
+  lighting_setup: Painted light, brush-rendered glow, canvas-luminosity
+  material_texture: Thick impasto, palette-knife ridges, bristle strokes, layered scumble
+  render_quality: Masterpiece, moving art, frame-by-frame painting, gallery-grade
+  spatial_distortion: Swirling, van Gogh sky, brush current, paint-flow drift
+  atmosphere: Artistic, emotional, painterly devotion, melancholic beauty
+  key_features: Brush direction, visible stroke, canvas weave, palette texture
+avoidRules:
+  - digital
+  - sharp
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-044.webp
+attributes:
+  negativePrompt: digital, sharp

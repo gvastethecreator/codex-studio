@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-053
+packId: pack_10
+name: Tie Dye
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Spiral dye pattern
+  form_and_line: Bleeding edges
+  color_palette: Rainbow, vibrant
+  lighting_setup: Flat
+  material_texture: Cotton
+  render_quality: Hippie, handmade
+  spatial_distortion: Spiral
+  atmosphere: Groovy, fun
+  key_features: Spiral center
+avoidRules:
+  - sharp lines
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-053.webp
+attributes:
+  negativePrompt: sharp lines

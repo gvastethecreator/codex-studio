@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-101
+packId: pack_02
+name: Ren & Stimpy - Veiny Close-Up Grossout
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Hyper-detailed gross close-up reaction frame, stretched gums, trembling lips, oversized pores, saliva-string disgust, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy
+  form_and_line: Wobbling brush contours, vibrating line weight, swollen micro-detail lines, irregular fleshy edging
+  color_palette: Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red irritation, greasy beige skin
+  lighting_setup: Harsh proximity lighting, bright skin sheen on noses and gums, overexposed forehead glare, ugly reaction-frame illumination
+  material_texture: Pore-heavy skin, lip-crack detail, greasy cheek shine, dried-saliva gloss, wobbling paint texture
+  render_quality: Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction absurdity, ugly on purpose
+  spatial_distortion: Face crushing into lens space, gums bulging beyond teeth, nose swelling forward, eyes drifting on different axes
+  atmosphere: Disgusted, frantic, hilarious, deeply unflattering
+  key_features: Extreme close-up face distortion, swollen gums, pore-level texture, trembling lip folds, cartoon spit strings
+avoidRules:
+  - subtle
+  - flattering
+  - glamorous
+  - cute
+  - realistic anatomy
+  - smooth skin
+  - elegant
+  - restrained
+  - pretty
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-101.webp
+attributes:
+  negativePrompt: subtle, flattering, glamorous, cute, realistic anatomy, smooth skin, elegant, restrained, pretty

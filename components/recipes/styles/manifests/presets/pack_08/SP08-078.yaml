@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-078
+packId: pack_08
+name: Hologram
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Star Wars monochrome sci-fi hologram, help-me-Obi-Wan shimmer, rebel-transmission urgency
+  form_and_line: Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent-body silhouette, projection-cone taper
+  color_palette: Blue monochrome, R2-D2-cyan, hologram-azure, transmission-static white, fade-to-transparent edge, flicker-blue
+  lighting_setup: Self-lit, emissive-blue glow, projection-cone light, dark-room contrast, flicker-instability pulse
+  material_texture: Light interference, scanline-grid pattern, signal-degradation static, transparency-fade, projection-grain, chromatic-fringe
+  render_quality: Sci-fi, glitchy, stolen-plans urgency, long-time-ago transmission
+  spatial_distortion: Transparent
+  atmosphere: Tech, message, desperate-plea intimacy, rebel-hope transmission, galaxy-far-away nostalgia
+  key_features: Scanlines, blue monochrome, flicker instability, transparent body, projection base
+avoidRules:
+  - solid
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-078.webp
+attributes:
+  negativePrompt: solid

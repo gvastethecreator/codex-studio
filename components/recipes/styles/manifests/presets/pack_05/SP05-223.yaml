@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-223
+packId: pack_05
+name: Bubblegum Crisis - Neon Power-Suit Hunt
+category: 7. Mecha & Cyberpunk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - mecha-and-cyberpunk
+visualDna:
+  aesthetic: Night-city women in armored suits, synth neon, biker cool, corporate conspiracies, 80s cyber-noir glamour with hard-chrome aggression
+  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
+  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
+  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
+  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
+  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
+  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  atmosphere: Glossy, dangerous, neon, rebellious
+  key_features: Power-suit silhouettes, neon skyline reflections, biker fashion accents, corporate high-rise staging, chase-scene motion
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-223.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

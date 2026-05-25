@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-064
+packId: pack_10
+name: Snake Skin
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Scales
+  form_and_line: Overlapping scales
+  color_palette: Patterned
+  lighting_setup: Sheen
+  material_texture: Scaly
+  render_quality: Exotic, dangerous
+  spatial_distortion: None
+  atmosphere: Wild, luxury
+  key_features: Scale grid
+avoidRules:
+  - fur
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-064.webp
+attributes:
+  negativePrompt: fur, smooth

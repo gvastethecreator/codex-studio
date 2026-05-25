@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-052
+packId: pack_08
+name: Denim on Denim
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Canadian Tuxedo, denim-on-denim confidence, Americana-workwear cool
+  form_and_line: Stitching, trucker-jacket box, straight-leg column, western-yoke line, contrast-thread geometry
+  color_palette: Indigo Blue, raw-indigo, faded-wash blue, ecru weft, copper-orange stitching, stonewashed sky
+  lighting_setup: Studio, softbox-even, denim-texture side-light, garage-daylight
+  material_texture: Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch
+  render_quality: Textured, casual, heritage-workwear authenticity, Americana-denim fidelity
+  spatial_distortion: None
+  atmosphere: Cool, blue, blue-collar pride, weekend-ease, American-classic confidence
+  key_features: Orange stitching, selvedge ID, copper rivets, leather patch, double-denim coordination
+avoidRules:
+  - silk
+  - suit
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-052.webp
+attributes:
+  negativePrompt: silk, suit

@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-083
+packId: pack_06
+name: Vector Arcade Wireframe
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Glowing vector cathode-ray lines, Asteroids-era phosphor geometry, Tempest wireframe tunnels, Battlezone green-grid battlefield, pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron-beam drawing in real-time
+  form_and_line: Pure glowing geometric strokes, wireframe polygon meshes, no filled surfaces, beam-drawn contour lines only, vector-coordinate precision
+  color_palette: Phosphor green on void black, occasional amber-orange screens, blue-white vector glow, single-color per display, no RGB mixing
+  lighting_setup: Self-illuminated phosphor lines, electron-beam persistence glow, brighter at stroke starts, dimming at stroke ends
+  material_texture: CRT phosphor glow, analog vector display bloom, line-intersection brightening, phosphor-persistence afterglow, no pixels just beams
+  render_quality: Vector arcade display, analog CRT beauty, electron-beam line art, retro-electronic aesthetic
+  spatial_distortion: Vector-perspective wireframe grids, rotating wireframe models, infinite blank black space, no occlusion just transparency
+  atmosphere: Retro-futuristic, electronic, arcade-darkness, analog-computing soul, early-CGI wonder
+  key_features: Glowing vector lines on black, wireframe-only geometry, phosphor bloom at line intersections, no filled surfaces, raster-scan absent
+avoidRules:
+  - filled
+  - solid
+  - textured
+  - colorful
+  - raster
+  - bitmap
+  - shading
+  - filled polygons
+  - complex
+  - photo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-083.webp
+attributes:
+  negativePrompt: filled, solid, textured, colorful, raster, bitmap, shading, filled polygons, complex, photo

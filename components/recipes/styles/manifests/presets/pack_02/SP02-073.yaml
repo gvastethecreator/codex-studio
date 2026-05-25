@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-073
+packId: pack_02
+name: Bioluminescence
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Bioluminescent jungle night, Avatar forest, Pandora glow, floating spores, otherworldly photosynthesis
+  form_and_line: None
+  color_palette: Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night
+  lighting_setup: Internal glow, self-illuminating organisms, no external source
+  material_texture: Organic glow, phosphorescent skin, luminous fungus
+  render_quality: Magical, nature, alien ecosystem, glowing wonder
+  spatial_distortion: None
+  atmosphere: Wonder, night, Pandora dream, silent biosphere
+  key_features: Glowing plants, floating spores, bioluminescent trail
+avoidRules:
+  - sunlight
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-073.webp
+attributes:
+  negativePrompt: sunlight

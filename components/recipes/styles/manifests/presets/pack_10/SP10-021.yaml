@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-021
+packId: pack_10
+name: Datamosh
+category: 5. Digital Glitch & Noise
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+visualDna:
+  aesthetic: Video compression artifact
+  form_and_line: Motion vectors
+  color_palette: Bleeding pixels
+  lighting_setup: Broken
+  material_texture: Macroblocks
+  render_quality: Glitch art, broken
+  spatial_distortion: Pixel drag
+  atmosphere: Chaotic, digital
+  key_features: I-Frame destruction
+avoidRules:
+  - clean
+  - perfect
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-021.webp
+attributes:
+  negativePrompt: clean, perfect

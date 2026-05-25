@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-044
+packId: pack_07
+name: Urban Park (High Line)
+category: 4. Landscape Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - landscape-architecture
+visualDna:
+  aesthetic: City green space, elevated oasis, urban-meadow, infrastructure-to-garden, railway-bloom
+  form_and_line: Concrete paths, linear-meander, rail-track planting lines, overlook platforms, bridge-span views
+  color_palette: Concrete, Grass, Rust, Corten steel orange, Prairie-flower Yellow, Skyline Grey
+  lighting_setup: City sun, building-reflected glow, street-lamp pools, sunset-skyline silhouette
+  material_texture: Steel, plants, weathered wood, gravel path, ornamental grasses, raw concrete plank
+  render_quality: Modern, public, post-industrial poetry, green-infrastructure, urban-ecology beauty
+  spatial_distortion: None
+  atmosphere: Relaxed, urban, elevated, strolling, above-the-street, collective breathing space
+  key_features: Bench, planted rail tracks, city overlook, concrete planks, native grasses, public art
+avoidRules:
+  - wild forest
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-044.webp
+attributes:
+  negativePrompt: wild forest

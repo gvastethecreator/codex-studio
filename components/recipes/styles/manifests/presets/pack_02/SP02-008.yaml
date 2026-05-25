@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-008
+packId: pack_02
+name: Found Footage Horror
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Improvised panic-horror footage, Blair Witch style, shaking handheld dread, forest panic, raw survival terror
+  form_and_line: None
+  color_palette: Low light digital, crushed blacks, sickly green tint
+  lighting_setup: Flashlight only, single beam cone, terrified sweep
+  material_texture: Video noise, CMOS sensor grain, digital mud
+  render_quality: Shaky, amateur, disorienting, raw panic-cam
+  spatial_distortion: Motion blur, smear, headlamp judder
+  atmosphere: Terrifying, real, primal fear, unseen threat
+  key_features: Timestamp, running footsteps, heavy breathing
+avoidRules:
+  - steady
+  - cinematic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-008.webp
+attributes:
+  negativePrompt: steady, cinematic

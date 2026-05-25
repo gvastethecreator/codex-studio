@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-014
+packId: pack_02
+name: Giallo Horror
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Italian horror
+  form_and_line: None
+  color_palette: Deep Red, Blue, Green gels, saturated primaries, blood crimson
+  lighting_setup: Unnatural colored light, gel-drenched, theatrical splash
+  material_texture: Film grain, leather gloves, polished blade
+  render_quality: Stylish, bloody, baroque violence, operatic death
+  spatial_distortion: Black gloves, POV killer, obscured face
+  atmosphere: Mystery, stylish, psychosexual dread, hallucinatory
+  key_features: Color gels, gloved hand, ornate weapon
+avoidRules:
+  - natural lighting
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-014.webp
+attributes:
+  negativePrompt: natural lighting

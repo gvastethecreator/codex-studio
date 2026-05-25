@@ -1,0 +1,28 @@
+schemaVersion: 1
+id: SP03-045
+packId: pack_03
+name: Wireframe on Shaded
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Model with visible topology
+  form_and_line: White wires over grey model
+  color_palette: Grey and White, wire-color contrast
+  lighting_setup: Studio, dual-pass render
+  material_texture: Grid overlay, topology linework
+  render_quality: Making-of, technical, breakdown beauty
+  atmosphere: Educational, process, design-transparency
+  key_features: Wire overlay, shaded+wireframe combo
+avoidRules:
+  - clean render
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-045.webp
+attributes:
+  negativePrompt: clean render

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-062
+packId: pack_10
+name: Holographic Foil
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Rainbow reflection
+  form_and_line: Smooth
+  color_palette: Spectrum
+  lighting_setup: Iridescent
+  material_texture: Smooth plastic
+  render_quality: Sticker, card
+  spatial_distortion: Color shift
+  atmosphere: Cool, collectible
+  key_features: Rainbow gradient
+avoidRules:
+  - matte paper
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-062.webp
+attributes:
+  negativePrompt: matte paper

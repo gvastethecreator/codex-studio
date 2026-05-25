@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-072
+packId: pack_08
+name: Tattoo Skin
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Full body suit tattoo, living-canvas autobiography, ink-and-skin devotion
+  form_and_line: Ink lines, bodysuit-coverage contour, sleeve-to-chest flow, back-piece canvas, Japanese-traditional background
+  color_palette: Blue/Black ink, tebori-indigo, iron-black, old-school red, yellow, green accent, skin-tone canvas
+  lighting_setup: Skin, studio-softbox evenness, rim-light muscle definition, tattoo-parlor fluorescent, healed-ink saturation
+  material_texture: Skin, healed-ink surface, needle-point texture, raised-line keloid, skin-sheen, stippled-shading dotwork
+  render_quality: Artistic, permanent, irezumi-master precision, living-canvas dedication
+  spatial_distortion: None
+  atmosphere: Edgy, committed, ink-commitment gravity, bodysuit-ritual patience, living-art pride
+  key_features: Ink, full-coverage bodysuit, Japanese background, sleeve-to-chest connection, healed-settle depth
+avoidRules:
+  - clean skin
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-072.webp
+attributes:
+  negativePrompt: clean skin

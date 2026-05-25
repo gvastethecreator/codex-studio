@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-074
+packId: pack_08
+name: Bandage/Mummy
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Wrapped in bandages, tomb-risen horror, ancient-curse concealment
+  form_and_line: Wrapping lines, body-enveloping spiral, mummiform-silhouette, crossing-bandage grid, trailing-wrap end
+  color_palette: White, Dirty, aged-linen, dried-blood brown, desert-dust tan, tomb-shadow grey, ancient-yellow
+  lighting_setup: Flat, tomb-interior dimness, torch-flicker amber, sarcophagus-shadow mystery, excavation-site daylight
+  material_texture: Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk
+  render_quality: Spooky, hurt, Universal-monster atmosphere, curse-of-the-pharaoh dread
+  spatial_distortion: None
+  atmosphere: Horror, hidden, sarcophagus-confinement dread, ancient-awakening tension, wrapped-identity mystery
+  key_features: Wraps, layered bandages, trailing ends, gap-showing skin, wrapped-face silhouette
+avoidRules:
+  - skin
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-074.webp
+attributes:
+  negativePrompt: skin

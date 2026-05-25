@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-332
+packId: pack_05
+name: Kunihiko Ikuhara - Rose-Altar Allegory
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Theatrical symbolic staging, roses, trains, ritual arenas, emotional conflict expressed through icon systems rather than realism, operatic adolescent psyche rendered as ceremony
+  form_and_line: Elegant symbolic contour, ceremonial costume precision, flourish-heavy ornament lines
+  color_palette: Rose crimson, cathedral violet, candle gold, ivory, shadow navy, ceremonial black
+  lighting_setup: Stage spotlighting, ritual backlight, stained-symbol glow, theatrical curtain darkness
+  material_texture: Velvet drape, rose-petal softness, marble stage sheen, candle smoke haze
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Ceremonial symmetry, impossible stage transitions, allegorical scale changes, posed ritual spacing
+  atmosphere: Symbolic, theatrical, intoxicating, unstable
+  key_features: Rose altars, train symbolism, ritual arenas, icon-heavy staging, emotionally coded props
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-332.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

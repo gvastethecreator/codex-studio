@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-043
+packId: pack_08
+name: Space Opera Royal
+category: 5. Fantasy/Sci-Fi Costume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fantasy-sci-fi-costume
+visualDna:
+  aesthetic: Padme Amidala operatic space-court couture, Naboo regality, senatorial authority
+  form_and_line: Elaborate headpiece, issei-crown halo, gown-train sweep, corset-waist architecture, bell-sleeve drama
+  color_palette: Red, Gold, Alien, crimson, electrum, pearl, plasma-pink, Naboo-teal, midnight-velvet
+  lighting_setup: Dramatic, senatorial-chamber glow, stained-glass fantasy light, throne-room backlight
+  material_texture: Exotic fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk
+  render_quality: Regal, alien, galactic-court opulence, Coruscant-high-fashion
+  spatial_distortion: Strange hair
+  atmosphere: Serious, political, galactic-senate gravity, doomed-romance elegance, diplomatic tension
+  key_features: Face paint, issei headpiece, throne-room gown, Naboo sigil, feathered cape
+avoidRules:
+  - simple
+  - earth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-043.webp
+attributes:
+  negativePrompt: simple, earth

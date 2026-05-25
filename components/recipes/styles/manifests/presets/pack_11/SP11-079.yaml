@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-079
+packId: pack_11
+name: Carbon Fiber
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Weave pattern, composite-macro, aerospace-material, tow-fiber, high-modulus structure
+  form_and_line: Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary
+  color_palette: Black, Grey, PAN-carbon, pitch-fiber dark, oxidized-surface, resin-matrix amber, intermediate-modulus sheen
+  lighting_setup: Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer
+  material_texture: Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp
+  render_quality: High tech, strong, Formula-1 engineering, aerospace-composite, strength-to-weight art
+  spatial_distortion: None, flat-laminate, weave-repeat, tow-orientation, ply-stack
+  atmosphere: Fast, expensive, autoclave-cure, racing-engineering, carbon-fiber exclusivity
+  key_features: Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack surface
+avoidRules:
+  - metal
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-079.webp
+attributes:
+  negativePrompt: metal

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-055
+packId: pack_09
+name: Crystal/Gemstone
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Raw amethyst
+  form_and_line: Facets
+  color_palette: Purple, White base
+  lighting_setup: Internal reflection
+  material_texture: Geometric growth
+  render_quality: Precious, magic
+  spatial_distortion: Sharp points
+  atmosphere: Mystical, valuable
+  key_features: Cluster
+avoidRules:
+  - glass
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-055.webp
+attributes:
+  negativePrompt: glass, smooth

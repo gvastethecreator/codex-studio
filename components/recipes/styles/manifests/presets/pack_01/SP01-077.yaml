@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-077
+packId: pack_01
+name: Medical Photography
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Surgery or anatomy
+  form_and_line: Clean, gross
+  color_palette: Red, Blue scrubs
+  lighting_setup: Bright surgical light
+  material_texture: Flesh, metal
+  render_quality: Clinical, sharp
+  spatial_distortion: None
+  atmosphere: Sterile, intense
+  key_features: Clean background
+avoidRules:
+  - artistic
+  - shadow
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-077.webp
+attributes:
+  negativePrompt: artistic, shadow

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-038
+packId: pack_01
+name: Butterfly Lighting
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Glamour lighting
+  form_and_line: Shadow under nose
+  color_palette: Flattering
+  lighting_setup: High frontal
+  material_texture: Smooth
+  render_quality: Beauty, Paramount
+  spatial_distortion: None
+  atmosphere: Beautiful
+  key_features: Symmetrical shadow
+avoidRules:
+  - side light
+  - shadow
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-038.webp
+attributes:
+  negativePrompt: side light, shadow

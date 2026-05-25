@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-026
+packId: pack_02
+name: Sports Broadcast
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Live game
+  form_and_line: Score overlay
+  color_palette: Saturated turf, vivid green, team-color accents, sky blue
+  lighting_setup: Stadium lights, multi-source flood, uniform exposure
+  material_texture: HD Slow mo, Phantom camera crisp, droplet-perfect
+  render_quality: Telephoto, action, field-level compression, athlete isolation
+  spatial_distortion: None
+  atmosphere: Exciting, live, roaring crowd, championship tension
+  key_features: Scoreboard, replay wipe, telestrator circle
+avoidRules:
+  - movie
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-026.webp
+attributes:
+  negativePrompt: movie

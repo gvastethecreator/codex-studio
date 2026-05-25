@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-078
+packId: pack_09
+name: Solar Panel
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Photovoltaic cell
+  form_and_line: Grid lines
+  color_palette: Dark Blue/Black
+  lighting_setup: Anti-reflective
+  material_texture: Glass grid
+  render_quality: Tech, green energy
+  spatial_distortion: None
+  atmosphere: Modern, eco
+  key_features: Grid
+avoidRules:
+  - window
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-078.webp
+attributes:
+  negativePrompt: window

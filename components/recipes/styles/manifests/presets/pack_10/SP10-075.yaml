@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-075
+packId: pack_10
+name: Cross Stitch
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Pixel art with thread
+  form_and_line: X stitches
+  color_palette: Thread colors
+  lighting_setup: Fabric texture
+  material_texture: Aida cloth
+  render_quality: Craft, homey
+  spatial_distortion: Low resolution
+  atmosphere: Traditional, cute
+  key_features: X pattern
+avoidRules:
+  - smooth
+  - drawn
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-075.webp
+attributes:
+  negativePrompt: smooth, drawn

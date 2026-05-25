@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-051
+packId: pack_09
+name: Fire & Magma
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Lava flow
+  form_and_line: Crust cracks
+  color_palette: Orange, Black, Red
+  lighting_setup: Emissive glow
+  material_texture: Rock and liquid
+  render_quality: Volcanic, hot
+  spatial_distortion: Melting rock
+  atmosphere: Dangerous, intense
+  key_features: Heat
+avoidRules:
+  - cold
+  - blue
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-051.webp
+attributes:
+  negativePrompt: cold, blue

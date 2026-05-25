@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-336
+packId: pack_05
+name: Takeshi Koike - Razorline Velocity Poster
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Poster-hot speed, brutal shadows, graphic car or fist momentum, razor-sliced anatomy, neon pulp adrenaline, every frame built like a racing poster explosion
+  form_and_line: Razor contour, thick-thin poster ink, aggressive silhouette carving
+  color_palette: Racing red, black ink, chrome white, toxic yellow, electric blue, asphalt violet
+  lighting_setup: Poster-contrast spotlighting, hard rim edges, race-night neon glare, shadow blocks
+  material_texture: Gloss paint, tire-rubber hints, screenprint boldness, polished poster surfaces
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Velocity-smeared perspective, lunging anatomy, poster-compressed depth, impact-first framing
+  atmosphere: Aggressive, sleek, adrenalized, loud
+  key_features: Razorline anatomy, heavy shadow wedges, poster-speed motion, neon pulp attitude, impossible velocity cues
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-336.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

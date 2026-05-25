@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP07-007
+packId: pack_07
+name: Art Deco
+category: 2. Architectural Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - architectural-styles
+visualDna:
+  aesthetic: 1920s glamour architecture, skyscraper age, jazz modernity, speakeasy elegance
+  form_and_line: Geometric patterns, sunbursts, stepped ziggurats, chevron flows, fountain motifs
+  color_palette: Gold, Black, Emerald Green, Chrome, Deep Navy, Ivory
+  lighting_setup: Dramatic uplighting, sconce glow, mirrored reflection, marquee brilliance, frosted panels
+  material_texture: Polished brass, marble, velvet, lacquered wood, etched glass, chrome inlay
+  render_quality: Great Gatsby jazz-age luxurious, ornate, Art Deco decadence
+  spatial_distortion: None
+  atmosphere: Expensive, party, jazz age, extravagant, champagne fizz, midnight glamour
+  key_features: Geometric ornamentation, sunburst mirrors, chevron floors, gold accents, tiered chandeliers
+avoidRules:
+  - minimal
+  - rustic
+  - plain
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-007.webp
+attributes:
+  negativePrompt: minimal, rustic, plain

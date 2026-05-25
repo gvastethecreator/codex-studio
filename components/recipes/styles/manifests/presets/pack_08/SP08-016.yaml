@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-016
+packId: pack_08
+name: Normcore
+category: 1. Contemporary Fashion
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - contemporary-fashion
+visualDna:
+  aesthetic: Seinfeld everyday sitcom casual, 90s New York normcore, puffy jacket charm, nothing-to-prove comfort
+  form_and_line: Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape
+  color_palette: Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo
+  lighting_setup: Flat, fluorescent-office overhead, overcast sidewalk, diner-booth warmth
+  material_texture: Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas
+  render_quality: Boring, ironic, comfortable, deliberately average, anti-fashion confidence
+  spatial_distortion: None
+  atmosphere: Casual, unpretentious, genuine, coffee-shop routine, unbothered authenticity
+  key_features: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker
+avoidRules:
+  - flashy
+  - expensive
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-016.webp
+attributes:
+  negativePrompt: flashy, expensive

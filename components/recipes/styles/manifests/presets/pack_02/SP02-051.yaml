@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-051
+packId: pack_02
+name: Disposable Camera (90s)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Party photo
+  form_and_line: None
+  color_palette: High contrast, punchy saturation, blown-out skin, muddy shadow
+  lighting_setup: Harsh flash, direct frontal, overexposed 3-feet-away
+  material_texture: Grainy 400 ISO, plastic-lens softness, color fringe
+  render_quality: Candid, fun, unposed spontaneity, party chaos
+  spatial_distortion: Red eye, pupil reflection, demon-eye flash
+  atmosphere: Party, memory, 90s sleepover, disposable youth
+  key_features: Vignette, flash hotspot, crooked horizon, group selfie
+avoidRules:
+  - professional lighting
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-051.webp
+attributes:
+  negativePrompt: professional lighting

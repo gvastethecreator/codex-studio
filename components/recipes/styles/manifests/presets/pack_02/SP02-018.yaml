@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-018
+packId: pack_02
+name: News Broadcast
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Breaking news
+  form_and_line: Chyron overlay
+  color_palette: Studio Blue, anchor navy, red accent, white desk
+  lighting_setup: Flat studio, even key, hair light separation
+  material_texture: HD Video, crisp digital, broadcast sharpness
+  render_quality: Live, urgent, breaking-news tension, satellite delay
+  spatial_distortion: Ticker tape, scrolling crawl, side panel
+  atmosphere: Serious, info, authoritative urgency, global anxiety
+  key_features: Lower third, desk logo, anchor duo
+avoidRules:
+  - movie
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-018.webp
+attributes:
+  negativePrompt: movie

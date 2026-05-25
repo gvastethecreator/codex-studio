@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-042
+packId: pack_11
+name: Frutiger Aero
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: 2000s Tech UI, XP-era optimism, glossy-future, start-up-aesthetic, skeuomorphic-harmony
+  form_and_line: Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles
+  color_palette: Cyan, Green, White, aqua-bubble blue, grass-green, brushed-metal grey, traffic-light amber
+  lighting_setup: Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth
+  material_texture: Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens
+  render_quality: Optimistic, corporate tech, Y2K-fresh, start-up-utopia, human-friendly-machine, skeuomorphic-beauty
+  spatial_distortion: Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation
+  atmosphere: Fresh, clean, future, login-screen possibility, broadband-dawn, digital-optimism
+  key_features: Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection
+avoidRules:
+  - flat
+  - matte
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-042.webp
+attributes:
+  negativePrompt: flat, matte

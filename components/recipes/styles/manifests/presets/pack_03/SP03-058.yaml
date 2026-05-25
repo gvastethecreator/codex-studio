@@ -1,0 +1,28 @@
+schemaVersion: 1
+id: SP03-058
+packId: pack_03
+name: 3D Typography
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Letters made of objects
+  form_and_line: Bold font
+  color_palette: Vibrant, brand-expression hues
+  lighting_setup: Studio, typographic readability
+  material_texture: Material letters, physical texture
+  render_quality: Adobe, design, headline-striking
+  atmosphere: Bold, message, visual proclamation
+  key_features: Readable, letterform sculpting
+avoidRules:
+  - flat text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-058.webp
+attributes:
+  negativePrompt: flat text

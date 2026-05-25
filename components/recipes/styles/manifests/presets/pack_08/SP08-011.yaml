@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-011
+packId: pack_08
+name: Vintage 1950s
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Rockabilly or housewife dress, soda-fountain sweetness, Eisenhower-era femininity
+  form_and_line: Cinched waist, full skirt, circle-skirt volume, petticoat layers, sweetheart neckline
+  color_palette: Polka dots, pastel pink/blue, cherry red, mint green, buttercup yellow, gingham check
+  lighting_setup: Bright, happy, Technicolor saturation, diner-neon cheer, sun-drenched suburbia
+  material_texture: Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim
+  render_quality: Retro, pin-up, cute, Kodachrome nostalgia, malt-shop charm
+  spatial_distortion: Hourglass figure
+  atmosphere: Nostalgic, fun, feminine, jukebox innocence, sock-hop excitement, cherry-cola sweetness
+  key_features: Red lipstick, cat-eye liner, victory rolls, polka-dot headband
+avoidRules:
+  - modern
+  - pants
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-011.webp
+attributes:
+  negativePrompt: modern, pants, messy

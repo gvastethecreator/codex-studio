@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-034
+packId: pack_04
+name: Psychedelic Poster (60s)
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Fillmore poster
+  form_and_line: Warped text
+  color_palette: Neon clash, acid-rock spectrum, vibrating complementaries
+  lighting_setup: Flat, color-field vibration, optical tension
+  material_texture: Screenprint
+  render_quality: Trippy, retro, visual-overload euphoria, summer-of-love energy
+  spatial_distortion: Liquid
+  atmosphere: Groovy, music, hallucinogenic bliss, counterculture festival
+  key_features: Illegible font, warped lettering, swirling typography
+avoidRules:
+  - straight
+  - readable
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-034.webp
+attributes:
+  negativePrompt: straight, readable

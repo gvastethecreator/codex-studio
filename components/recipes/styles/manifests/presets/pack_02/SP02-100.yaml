@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: SP02-100
+packId: pack_02
+name: Flipbook Rough Animation
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Rough-animation flipbook page, sequential gesture frames showing motion arc, stick-figure-jumping-progression, page-corner-numbers counting frames, onion-skin-ghosts of previous and next poses, timing-chart-notation in margins, animation-desk peg-bar holes, rough-breakdown-between-keyframes, pure-motion-study energy, Glen-Keane-rough-animation-philosophy, line-boiling texture from hand-drawn frame-by-frame
+  form_and_line: Rapid-fire gesture lines, motion-arc construction curves, timing-chart-hash-marks, multiple-search-lines-per-frame, onion-skin-transparency-implied overlapping
+  color_palette: Animation-paper blue-line underdrawing, graphite-pencil grey, Col-Erase blue, red-pencil breakdown lines, paper-buff background
+  lighting_setup: Animation-desk backlight transmitting through paper layers, peg-bar registration shadow, no rendered lighting
+  material_texture: Animation-paper tooth, graphite-smudge buildup across frames, eraser-crumb dust, peg-bar-hole wear, paper-edge-dog-ear from flipping
+  render_quality: Flipbook-rough-animation aesthetic, motion-study-beauty, hand-drawn-frame energy, pre-cleanup-animation soul
+  spatial_distortion: Sequential-frame-progression-across-page, motion-arc-ghost-overlays, onion-skin-transparency-depth, timing-chart-margin-notes
+  atmosphere: Creative-process intimacy, animation-desk focus, pure-motion-observation, pre-digital-handcraft, animator's-private-study
+  key_features: Sequential-drawing-progression, animation-arc-lines, timing-charts-in-margins, onion-skin-ghost-overlays, peg-bar-registration-holes, blue-pencil-construction-lines, rough-boiling-line-texture
+avoidRules:
+  - finished
+  - polished
+  - clean
+  - rendered
+  - smooth
+  - digital
+  - final
+  - single frame
+  - static
+  - tight
+  - tweened
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-100.webp
+attributes:
+  negativePrompt: finished, polished, clean, rendered, smooth, digital, final, single frame, static, tight, tweened

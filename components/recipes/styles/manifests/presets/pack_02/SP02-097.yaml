@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-097
+packId: pack_02
+name: Rejected Corporate Mascot
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Corporate mascot that should never have been approved, dead-soulless-eyes with corporate-smile stretched too wide, unsettling hybrid of human-and-product, clip-art-from-hell energy, Duolingo-owl-menace turned up to eleven, fast-food-mascot abandoned in storage unit, insurance-gecko's-evil-twin, unblinking-happiness that registers as threat
+  form_and_line: Too-smooth vector contours, mathematically-perfect symmetry that feels wrong, clip-art simplicity taken to uncanny extreme
+  color_palette: Corporate-primary blue and red, too-bright yellow, sterile white, uncanny-skin peach, glossy-plastic green
+  lighting_setup: Product-photography studio, perfect shadowless lighting, hyperreal gloss on dead eyes, no atmosphere
+  material_texture: Glossy plastic-vector surface, mascot-costume-foam texture, cheap-fleece fabric, hollow-soul emptiness
+  render_quality: Rejected-corporate-mascot aesthetic, clip-art-through-nightmare, uncanny-branding-horror, marketing-department-mistake
+  spatial_distortion: Giant-head-too-small-body mascot proportions, hands permanently in thumbs-up, costume-seam-zipper visible
+  atmosphere: Deeply wrong, corporate-horror, abandoned-by-marketing sadness, unsettling-brand-silence, focus-group-rejection
+  key_features: Dead glossy eyes, too-wide corporate smile, thumbs-up frozen pose, mascot-costume seams, plastic-vector perfection, soulless brand energy
+avoidRules:
+  - professional
+  - friendly
+  - appealing
+  - trustworthy
+  - polished
+  - market-tested
+  - focus-grouped
+  - appropriate
+  - wholesome
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-097.webp
+attributes:
+  negativePrompt: professional, friendly, appealing, trustworthy, polished, market-tested, focus-grouped, appropriate, wholesome

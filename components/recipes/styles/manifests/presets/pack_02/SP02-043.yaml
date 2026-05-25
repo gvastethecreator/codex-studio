@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-043
+packId: pack_02
+name: Flash Animation (2000s)
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Flash-era web animation, Newgrounds style, vector crude, 2000s internet, tweened rebellion
+  form_and_line: Thick vector
+  color_palette: Web safe colors, 216 palette, lime green, hot pink, electric blue
+  lighting_setup: Gradient tool, radial fill, linear ramp, flat vector
+  material_texture: Vector smooth, anti-aliased edge, Flash player crisp
+  render_quality: Internet, crude, preload-bar aesthetic, tween-driven motion
+  spatial_distortion: Tweening, linear interpolation, shape morph, motion guide
+  atmosphere: Nostalgic, simple, dial-up rebellion, forum culture, sprite humor
+  key_features: Symbol reuse, stick figure, loading screen, play button
+avoidRules:
+  - textured
+  - soft
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-043.webp
+attributes:
+  negativePrompt: textured, soft

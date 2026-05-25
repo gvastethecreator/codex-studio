@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-068
+packId: pack_11
+name: Leaf Veins
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Backlit leaf, chloroplast-window, vein-map, photosynthesis-architecture, leaf-botany
+  form_and_line: Vein network, midrib-spine, secondary-vein branching, areole-polygon mesh, margin-serration
+  color_palette: Chlorophyll Green, carotenoid-orange, xanthophyll-yellow, autumn-red, variegation-cream, mesophyll-translucency
+  lighting_setup: Translucent, backlit-through-leaf, sun-behind-canopy, chlorophyll-glow, diffused-morning
+  material_texture: Plant cells, epidermal-layer, stomata-pores, cuticle-wax, mesophyll-spongy, vein-scaffold, trichome-hairs
+  render_quality: Life, nature, photosynthesis-revealed, leaf-anatomy, pixel-leaf, botanical-illustration
+  spatial_distortion: None, leaf-plane, blade-expansion, lobe-geometry, venation-pattern
+  atmosphere: Fresh, organic, forest-floor quiet, photosynthesis-magic, chloroplast-glow, green-life
+  key_features: Veins, midrib-center, secondary-vein, areole-polygon, stomata-pores, margin-edge, backlit-translucency
+avoidRules:
+  - dead
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-068.webp
+attributes:
+  negativePrompt: dead

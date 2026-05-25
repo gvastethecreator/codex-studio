@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-050
+packId: pack_08
+name: Alien Fashion
+category: 5. Fantasy/Sci-Fi Costume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fantasy-sci-fi-costume
+visualDna:
+  aesthetic: Fifth Element bold alien runway costuming, Jean-Paul Gaultier sci-fi, interstellar-couture rebellion
+  form_and_line: Strange cutouts, geometric-negative-space, body-harness wrapping, asymmetrical neckline, tab-constructed sleeves
+  color_palette: Orange, Plastic, optic-white, safety-yellow, chrome, rubber-black, sky-blue, metallic-mint
+  lighting_setup: Bright, space-terminal glow, chrome-reflection bounce, sterile-lab overhead, neon-advertisement spill
+  material_texture: Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC
+  render_quality: Weird, futuristic, Gaultier-costume genius, space-opera runway spectacle
+  spatial_distortion: None
+  atmosphere: Alien, fashion, interstellar-transit bustle, zero-g couture attitude, cosmic-terminal glamour
+  key_features: Straps, body harness, cutout geometry, contrast stitching, utility ring
+avoidRules:
+  - human clothes
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-050.webp
+attributes:
+  negativePrompt: human clothes

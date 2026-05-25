@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-073
+packId: pack_09
+name: Linoleum Floor
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Kitchen floor 70s
+  form_and_line: Printed pattern
+  color_palette: Beige, pattern
+  lighting_setup: Waxy sheen
+  material_texture: Smooth plastic
+  render_quality: Retro, cheap
+  spatial_distortion: Peeling corner
+  atmosphere: Nostalgic, home
+  key_features: Repeat pattern
+avoidRules:
+  - tile
+  - wood
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-073.webp
+attributes:
+  negativePrompt: tile, wood

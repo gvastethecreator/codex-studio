@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP01-043
+packId: pack_01
+name: Ring Light
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Influencer lighting
+  form_and_line: Halo in eyes
+  color_palette: Even, bright
+  lighting_setup: Frontal circle
+  material_texture: Smooth skin
+  render_quality: YouTube, makeup tutorial
+  spatial_distortion: Flat features
+  atmosphere: Modern, clean
+  key_features: Eye catchlight
+avoidRules:
+  - shadows
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-043.webp
+attributes:
+  negativePrompt: shadows

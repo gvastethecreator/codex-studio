@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-023
+packId: pack_10
+name: VHS Glitch
+category: 5. Digital Glitch & Noise
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+visualDna:
+  aesthetic: Bad tracking tape
+  form_and_line: Warping at bottom
+  color_palette: Chroma noise, bleeding
+  lighting_setup: Flicker
+  material_texture: Static, scanlines
+  render_quality: Retro, lo-fi
+  spatial_distortion: Tracking error
+  atmosphere: Nostalgic, horror
+  key_features: Time stamp
+avoidRules:
+  - hd
+  - 4k
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-023.webp
+attributes:
+  negativePrompt: hd, 4k

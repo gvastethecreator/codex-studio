@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-277
+packId: pack_05
+name: Boogiepop Phantom - Rusted Neon Adolescent Dread
+category: 9. Dark Fantasy & Seinen
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - dark-fantasy-and-seinen
+visualDna:
+  aesthetic: Urban legend melancholy, industrial corridors, broken youth interiority, violet night, fractured chronology, faint supernatural presence threading through damaged city life
+  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
+  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  atmosphere: Melancholic, fragmented, nocturnal, ghostly
+  key_features: Industrial school-city spaces, violet night tones, urban legend hints, fragmented framing, interior dread expressions
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-277.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

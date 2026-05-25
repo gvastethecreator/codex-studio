@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP07-022
+packId: pack_07
+name: Neoclassical
+category: 2. Architectural Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - architectural-styles
+visualDna:
+  aesthetic: Government building/Museum, temple-front authority, Enlightenment reason, civic monument
+  form_and_line: Columns, pediments, triangular tympanum, stepped plinths, axial vistas
+  color_palette: White Marble, Stone, Portland limestone, Gilded bronze, Cool Grey shadow
+  lighting_setup: Sunlight and shadow, column-cast stripes, portico shade, floodlit night drama
+  material_texture: Smooth stone, chiseled marble, polished granite, cast plaster, verdigris copper
+  render_quality: Grand, symmetrical, order, eternal authority, democratic dignity, timeless proportion
+  spatial_distortion: None
+  atmosphere: Serious, powerful, timeless, institutionally calm, Athenian echo, civic pride
+  key_features: Columns, triangular pediment, domed rotunda, grand staircase, axial symmetry
+avoidRules:
+  - modern
+  - asymmetry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-022.webp
+attributes:
+  negativePrompt: modern, asymmetry

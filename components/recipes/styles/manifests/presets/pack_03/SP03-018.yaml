@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-018
+packId: pack_03
+name: Carbon Fiber
+category: 1. Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+visualDna:
+  aesthetic: Woven composite material
+  form_and_line: Weave pattern
+  color_palette: Black/Grey anisotropic, carbon weave contrast
+  lighting_setup: Clear coat reflection, directional anisotropy
+  material_texture: Geometric weave, layered composite
+  render_quality: High tech, automotive, motorsport-grade
+  atmosphere: Fast, strong, engineering precision
+  key_features: Weave pattern, carbon-fiber direction
+avoidRules:
+  - smooth
+  - paint
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-018.webp
+attributes:
+  negativePrompt: smooth, paint

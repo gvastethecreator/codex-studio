@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-064
+packId: pack_02
+name: Neon Noir
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Wet city street
+  form_and_line: None
+  color_palette: Cyan/Magenta reflections, electric blue, hot pink neon, wet-black pavement
+  lighting_setup: Signage glow, scattered neon bounce, pooled reflection
+  material_texture: Wet pavement, rain-slicked asphalt, mirror puddles
+  render_quality: Cinematic, cool, after-midnight aesthetic, rain-drenched
+  spatial_distortion: None
+  atmosphere: Urban, lonely, neon solitude, night-walker melancholy
+  key_features: Reflections, neon signs, rain streaks, empty crosswalk
+avoidRules:
+  - daylight
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-064.webp
+attributes:
+  negativePrompt: daylight

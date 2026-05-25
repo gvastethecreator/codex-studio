@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-080
+packId: pack_11
+name: Dandelion Seed
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock
+  form_and_line: Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff
+  color_palette: White, translucent-silver, seed-brown, backlit-gold, stem-green, sky-blue bokeh
+  lighting_setup: Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour
+  material_texture: Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus
+  render_quality: Delicate, wind, time-lapse flight, dandelion-wish, botanical-aeronautics, airborne-seed
+  spatial_distortion: Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity
+  atmosphere: Wish, soft, meadow-breeze, spring-dispersal, make-a-wish, childhood-breath, floating-dream
+  key_features: Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift, dandelion-stem
+avoidRules:
+  - heavy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-080.webp
+attributes:
+  negativePrompt: heavy

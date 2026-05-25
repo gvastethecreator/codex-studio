@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP01-050
+packId: pack_01
+name: Product Photography
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Clean commercial object
+  form_and_line: Sharp edges
+  color_palette: Accurate, clean
+  lighting_setup: Studio softbox
+  material_texture: Perfect surface
+  render_quality: Apple ad, commercial
+  spatial_distortion: None
+  atmosphere: Professional, desire
+  key_features: White/Grey background
+avoidRules:
+  - dust
+  - scratches
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-050.webp
+attributes:
+  negativePrompt: dust, scratches, messy

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-043
+packId: pack_04
+name: Pulp Magazine Cover
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Cheap detective novel
+  form_and_line: Painted
+  color_palette: Saturated Red/Yellow, pulpy blood-and-fire, lurid primaries
+  lighting_setup: Dramatic shadow, femme-fatale noir, half-lit menace
+  material_texture: Cheap paper
+  render_quality: Trashy, exciting, high-octane pulp, dime-store thrill
+  spatial_distortion: Action pose
+  atmosphere: Dangerous, cheap, newsstand suspense, lurid desperation
+  key_features: Title space, cover blurb, dramatic composition
+avoidRules:
+  - modern
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-043.webp
+attributes:
+  negativePrompt: modern, clean

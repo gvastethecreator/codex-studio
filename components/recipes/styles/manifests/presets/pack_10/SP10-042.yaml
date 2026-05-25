@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-042
+packId: pack_10
+name: Lowbrow (Pop Surrealism)
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Cartoonish fine art
+  form_and_line: Smooth painting
+  color_palette: Vibrant, candy
+  lighting_setup: Soft
+  material_texture: Acrylic
+  render_quality: Juxtapoz, weird
+  spatial_distortion: Big eyes
+  atmosphere: Playful, creepy
+  key_features: Cute but dark
+avoidRules:
+  - serious
+  - fine art
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-042.webp
+attributes:
+  negativePrompt: serious, fine art

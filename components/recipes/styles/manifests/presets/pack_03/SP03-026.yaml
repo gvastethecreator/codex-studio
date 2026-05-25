@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-026
+packId: pack_03
+name: Knolling (Flat Lay)
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Disassembled parts arranged
+  form_and_line: 90 degree angles
+  color_palette: Clean background, component contrast
+  lighting_setup: Top down, shadow-free
+  material_texture: Clean parts, disassembly beauty
+  render_quality: Organization porn, product-exploded
+  atmosphere: Satisfying, organized, design-museum
+  key_features: Grid layout, 90-degree arrangement
+avoidRules:
+  - messy
+  - piled
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-026.webp
+attributes:
+  negativePrompt: messy, piled

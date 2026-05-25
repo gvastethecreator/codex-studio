@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-061
+packId: pack_01
+name: Paparazzi Style
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Telephoto street shot
+  form_and_line: Subject isolated
+  color_palette: Flash washed
+  lighting_setup: Direct flash at night
+  material_texture: High ISO noise
+  render_quality: Tabloid, intrusive
+  spatial_distortion: Motion blur
+  atmosphere: Urgent, chaotic
+  key_features: Subject surprised
+avoidRules:
+  - posed
+  - studio
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-061.webp
+attributes:
+  negativePrompt: posed, studio

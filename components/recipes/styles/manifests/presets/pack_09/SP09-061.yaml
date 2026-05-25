@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-061
+packId: pack_09
+name: Dry Ice Fog
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Heavy floor fog
+  form_and_line: Rolling clouds
+  color_palette: White
+  lighting_setup: Soft
+  material_texture: Dense gas
+  render_quality: Stage effect, spooky
+  spatial_distortion: Heavy gas
+  atmosphere: Eerie, stage
+  key_features: Low lying
+avoidRules:
+  - steam
+  - hot
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-061.webp
+attributes:
+  negativePrompt: steam, hot

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-036
+packId: pack_08
+name: Viking Warrior
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Norse raider, fjord-borne fury, shield-wall legend
+  form_and_line: Furs, leather, tunic-length drape, cross-body belt tension, leg-wrap binding, cloak-pin gather
+  color_palette: Brown, Grey, Blue, moss, woad, rust, iron, wolf-pelt grey, amber
+  lighting_setup: Cold overcast, North-Sea grey, longhouse firelight, misty-fjord diffusion
+  material_texture: Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle
+  render_quality: Rugged, dirty, saga-page authenticity, shield-wall grit
+  spatial_distortion: None
+  atmosphere: Tough, cold, sea-spray resolve, mead-hall warmth, raven-flight omen
+  key_features: Beard/Braids, Thor's hammer pendant, round shield, bearded axe, fur mantle
+avoidRules:
+  - clean
+  - shiny
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-036.webp
+attributes:
+  negativePrompt: clean, shiny

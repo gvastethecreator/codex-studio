@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-035
+packId: pack_06
+name: Screenprint (Serigraphy)
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Silkscreen poster
+  form_and_line: No outlines, color shapes
+  color_palette: Flat, vibrant, layered
+  lighting_setup: None
+  material_texture: Mesh pattern, ink overlay
+  render_quality: Warhol, pop art
+  spatial_distortion: Misregistration (offset)
+  atmosphere: Commercial, bold
+  key_features: Layered colors
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-035.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

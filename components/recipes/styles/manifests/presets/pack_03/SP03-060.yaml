@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-060
+packId: pack_03
+name: Environment Design
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Game level art
+  form_and_line: Compositional path
+  color_palette: Atmospheric perspective, distance-blue fade
+  lighting_setup: Baked global illumination, environment-lighting
+  material_texture: Tileable textures, world-building materials
+  render_quality: Level art, immersive, game-world ready
+  atmosphere: Adventure, place, explorable wonder
+  key_features: Walkable path, environment storytelling
+avoidRules:
+  - empty
+  - boring
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-060.webp
+attributes:
+  negativePrompt: empty, boring

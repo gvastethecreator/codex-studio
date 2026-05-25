@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-037
+packId: pack_02
+name: Anime (90s Aesthetic)
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, big reflective eyes, VHS grain
+  form_and_line: Cel outline
+  color_palette: Pastel/Neon, bubblegum pink, electric cyan, lavender, coral
+  lighting_setup: Hard shadows, cel-shading contrast, dramatic underlight
+  material_texture: Film grain, cel texture, painted acetate, analogue warmth
+  render_quality: Retro anime, cel-painted, VHS broadcast, handcrafted depth
+  spatial_distortion: Big eyes, reflective highlight, expression exaggeration, hair volume
+  atmosphere: Nostalgic, aesthetic, shojo romance, mecha melancholy, 90s optimism
+  key_features: Bloom, transformation sequence, sparkle overlay, speed lines
+avoidRules:
+  - modern digital
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-037.webp
+attributes:
+  negativePrompt: modern digital

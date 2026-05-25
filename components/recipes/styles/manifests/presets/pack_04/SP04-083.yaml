@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: SP04-083
+packId: pack_04
+name: Loose Gesture Energy Sketch
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: 30-second gesture drawing, pure motion capture, dynamic sweeping lines, figure-in-action energy, life-drawing studio urgency, Glen Keane animation roughs, flowing kinetic scribbles, pose-before-anatomy priority, capturing the moment not the form
+  form_and_line: Sweeping gesture arcs, repeated motion-search lines, scribble-density for mass, fast single-stroke confidence, no erasing no correction
+  color_palette: Single graphite tone, ochre conte crayon, charcoal black, newsprint buff background, no color distraction from motion
+  lighting_setup: Implied through scribble density and line pressure, no rendered lighting, value-from-urgency technique
+  material_texture: Rough newsprint tooth, graphite smudge trail, chalk-dust particulate, gesture-line velocity texture
+  render_quality: Figure-drawing studio sketch, motion-capture aesthetic, animation-rough beauty, kinetic-energy rendering
+  spatial_distortion: Action-line curvature, foreshortened gesture exaggeration, motion-trail afterimages, dynamic-tension pose compression
+  atmosphere: Urgent, alive, fleeting-capture, creative-flow state, pure-motion celebration
+  key_features: Sweeping gesture arcs, multiple search-lines, scribble-density value, no correction marks, pure-motion energy
+avoidRules:
+  - tight
+  - clean
+  - finished
+  - rendered
+  - precise
+  - controlled
+  - refined
+  - polished
+  - perfect
+  - measured
+  - careful
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-083.webp
+attributes:
+  negativePrompt: tight, clean, finished, rendered, precise, controlled, refined, polished, perfect, measured, careful

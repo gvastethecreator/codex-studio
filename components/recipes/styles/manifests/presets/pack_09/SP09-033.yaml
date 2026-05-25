@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-033
+packId: pack_09
+name: Peeling Paint
+category: 4. Weathering & Decay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - weathering-and-decay
+visualDna:
+  aesthetic: Old house wall
+  form_and_line: Cracked flakes
+  color_palette: White paint, Grey wood under
+  lighting_setup: Shadows under flakes
+  material_texture: Flaky
+  render_quality: Abandoned, old
+  spatial_distortion: Curled edges
+  atmosphere: Neglected, textured
+  key_features: Random peeling
+avoidRules:
+  - fresh paint
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-033.webp
+attributes:
+  negativePrompt: fresh paint

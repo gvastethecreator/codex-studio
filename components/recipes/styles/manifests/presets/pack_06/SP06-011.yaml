@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-011
+packId: pack_06
+name: Palette Knife
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Thick impasto knife painting
+  form_and_line: Sharp geometric paint slabs
+  color_palette: Pure unmixed paint
+  lighting_setup: High contrast texture
+  material_texture: Extreme relief, sculptural paint
+  render_quality: Expressive, modern
+  spatial_distortion: Abstracted details
+  atmosphere: Bold, energetic
+  key_features: Knife marks
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-011.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

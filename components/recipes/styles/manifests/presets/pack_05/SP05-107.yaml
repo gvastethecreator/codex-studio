@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: SP05-107
+packId: pack_05
+name: Visceral Guro Horror
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Extreme body-horror anime, exposed viscera rendered with biological accuracy, crimson-black palette, anatomical detail obsession, ero-guro tradition, Shintaro Kago manga excess, medical-textbook meets nightmare, beautiful gore, Junji Ito spiral contamination
+  form_and_line: Hyper-precise anatomical linework, muscle-fiber stippling, vein-network crosshatching, bone-texture rendering, obsessive biological detail
+  color_palette: Fresh-blood crimson, viscera pink, bone-bleach white, bruise-spectrum purple-to-black, bile yellow-green, iron-oxide rust, surgical steel blue
+  lighting_setup: Clinical operating-theater light, harsh single-source casting deep shadows into wounds, wet-glint highlights on exposed tissue
+  material_texture: Wet muscle striation, exposed bone porosity, coagulating blood surface, membrane translucency, organ-gleam wetness
+  render_quality: Medical-textbook horror anime, anatomically-precise gore, beautiful-disgusting rendering, nightmare-poetry visual
+  spatial_distortion: Body cavities opening impossibly, anatomical diagrams overlaid on living figures, spiral distortion consuming space
+  atmosphere: Horrifying, transgressive, darkly beautiful, mesmerizing disgust, anatomical nightmare
+  key_features: Exposed musculature, arterial spray detail, bone-texture rendering, biological-precision gore, spiral contamination motifs
+avoidRules:
+  - cute
+  - clean
+  - gentle
+  - soft
+  - kawaii
+  - moe
+  - pleasant
+  - wholesome
+  - safe
+  - comfortable
+  - beautiful
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-107.webp
+attributes:
+  negativePrompt: cute, clean, gentle, soft, kawaii, moe, pleasant, wholesome, safe, comfortable, beautiful

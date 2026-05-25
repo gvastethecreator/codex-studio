@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-037
+packId: pack_08
+name: Wild West Cowboy
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Gunslinger, frontier-justice mythology, tumbleweed-silence drama
+  form_and_line: Dusty coat, duster-length sweep, waistcoat taper, boot-cut trouser, bandana-neck triangle
+  color_palette: Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print
+  lighting_setup: High noon, merciless desert sun, saloon-interior amber, campfire flicker
+  material_texture: Oilskin leather, trail dust, brass-cartridge metal, raw denim, wool serape, spur rowel
+  render_quality: Iconic, rugged, Leone-widescreen grit, frontier-photograph honesty
+  spatial_distortion: None
+  atmosphere: Tough, lonely, high-noon standoff tension, desert-expanse solitude, whiskey-bottle weariness
+  key_features: Stetson hat, gun belt and holster, spurred boots, bandana, tin star badge
+avoidRules:
+  - city
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-037.webp
+attributes:
+  negativePrompt: city, clean

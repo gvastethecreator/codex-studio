@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-035
+packId: pack_02
+name: Looney Tunes Chuck Jones Golden Age Cartoon Frenzy
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Elastic golden-age studio cartoon, Bugs Bunny physics, painted backgrounds, anvil comedy
+  form_and_line: Thick black
+  color_palette: Flat, primary pop, canary yellow, ACME red, sky cel blue
+  lighting_setup: None, flat cel color, no shading, graphic clarity
+  material_texture: Cel, painted acetate, glossy finish, gouache background
+  render_quality: Zany, fast, breakneck timing, held-smear blur
+  spatial_distortion: Extreme squash/stretch, full-body deformation, eye-pop take
+  atmosphere: Funny, violent, anarchic slapstick, coyote resilience
+  key_features: Abstract background, painted backdrop, pencil-test energy
+avoidRules:
+  - realistic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-035.webp
+attributes:
+  negativePrompt: realistic

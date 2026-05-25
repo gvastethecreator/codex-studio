@@ -97,6 +97,7 @@ bun run dev:server   # Hono API + codex app-server supervisor
 bun run dev:ui       # UI Vite+ (vp dev)
 bun run dev:electron # shell Electron para desarrollo local
 bun run studio:init  # crea biblioteca, SQLite y proyecto default
+bun run styles:split # regenera Style Pack/Preset Manifests desde YAML legacy
 bun run fmt          # formato con Oxfmt via Vite+
 bun run lint         # lint con Oxlint via Vite+
 bun run check        # formato + lint + type-check unificados via Vite+
@@ -136,9 +137,20 @@ Los comandos de calidad y build (`fmt`, `lint`, `check`, `test`, `build`, `valid
 └─ services/              # adaptadores frontend hacia el backend local
 ```
 
+### Style preset manifests
+
+Los packs legacy siguen en `components/recipes/styles/packs/*.yaml`, pero el loader principal ya consume primero la estructura granular:
+
+- `components/recipes/styles/manifests/packs/*.yaml` — Style Pack Manifests livianos, categorias y referencias.
+- `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` — Style Preset Manifests editables uno por archivo.
+
+Usa `bun run styles:split` cuando un pack legacy cambie. La UI mantiene `STYLE_PACKS` como compat, compuesto desde los manifests granulares.
+
 ## Documentacion recomendada
 
 - [`CONTEXT.md`](./CONTEXT.md) — lenguaje y terminos canonicos del proyecto.
+- [`AGENTS.md`](./AGENTS.md) — reglas para agentes y colaboradores automaticos.
+- [`SKILLS.md`](./SKILLS.md) — workflows especializados para providers, recetas, presets, settings y outputs.
 - [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — vista general del sistema.
 - [`docs/SERVICES.md`](./docs/SERVICES.md) — mapa de servicios y puntos de integracion.
 - [`docs/DEV_GUIDE.md`](./docs/DEV_GUIDE.md) — convenciones para extender recetas y UI.

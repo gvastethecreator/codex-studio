@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-039
+packId: pack_08
+name: French Revolution
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Marie Antoinette, Versailles-excess dream, let-them-eat-cake glamour
+  form_and_line: Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep
+  color_palette: Pastel Silk, powder blue, rose pompadour, celadon, buttercream, silver tissue, dove
+  lighting_setup: Chandelier, candlelit-hall sparkle, mirrored-gallery bounce, gilded-reflection warmth
+  material_texture: Silk taffeta, lace engageantes, powdered hair, ostrich plume, ribbon garlands, paste-jewel stomacher
+  render_quality: Excessive, royal, Rococo-froth magnificence, petit-Trianon fantasy
+  spatial_distortion: Huge wig
+  atmosphere: Decadent, fragile, champagne-bubble impermanence, gilded-cage beauty, pre-revolution tension
+  key_features: Powdered wig, beauty patch, ribbon choker, fan, pannier side-hoops
+avoidRules:
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-039.webp
+attributes:
+  negativePrompt: modern

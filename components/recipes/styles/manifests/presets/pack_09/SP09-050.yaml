@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-050
+packId: pack_09
+name: Chalk (Dry)
+category: 3. Tactile Surfaces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - tactile-surfaces
+visualDna:
+  aesthetic: Sidewalk drawing
+  form_and_line: Dusty stroke
+  color_palette: Pastel
+  lighting_setup: Matte
+  material_texture: Powdery
+  render_quality: Temporary, dry
+  spatial_distortion: Smear
+  atmosphere: Playful, temporary
+  key_features: Dust
+avoidRules:
+  - wet paint
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-050.webp
+attributes:
+  negativePrompt: wet paint

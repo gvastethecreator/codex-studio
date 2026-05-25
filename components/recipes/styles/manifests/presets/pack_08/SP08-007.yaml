@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-007
+packId: pack_08
+name: Goth Darkwave
+category: 3. Subcultures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+visualDna:
+  aesthetic: Traditional goth style, Victorian mourning revival, batcave cathedral
+  form_and_line: Sharp edges, spikes, fishtail hem, coffin-cut shoulders, corseted waist silhouette
+  color_palette: Black on Black, jet black, raven, midnight, void-black, deep aubergine shadow
+  lighting_setup: Moonlight, pale skin, silver rim light, candle-flicker ambiance, graveyard mist
+  material_texture: Velvet devore, Chantilly lace, patent leather, polished silver, pewter hardware, fishnet
+  render_quality: Dramatic, spooky, elegant, undead refinement, crypt-chic atmosphere
+  spatial_distortion: Corset waist
+  atmosphere: Melancholic, dark, romantic, moonlit longing, eternal twilight, beautiful decay
+  key_features: Pale skin contrast, black lipstick, silver ankh pendant, platform boots
+avoidRules:
+  - happy
+  - pink
+  - sun
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-007.webp
+attributes:
+  negativePrompt: happy, pink, sun

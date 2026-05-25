@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-029
+packId: pack_06
+name: Silhouette
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Paper cutout profile
+  form_and_line: Outline only
+  color_palette: Solid Black on White
+  lighting_setup: Backlit
+  material_texture: Paper edge
+  render_quality: Victorian, simple
+  spatial_distortion: No internal details
+  atmosphere: Graphic, stark
+  key_features: Solid shape
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-029.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

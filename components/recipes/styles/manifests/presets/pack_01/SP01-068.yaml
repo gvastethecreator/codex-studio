@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-068
+packId: pack_01
+name: Newborn Photography
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Sleeping baby
+  form_and_line: Curled up
+  color_palette: Cream, beige, soft
+  lighting_setup: Window light
+  material_texture: Knitted blanket, skin
+  render_quality: Anne Geddes, peaceful
+  spatial_distortion: None
+  atmosphere: Tiny, fragile
+  key_features: Sleeping
+avoidRules:
+  - awake
+  - crying
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-068.webp
+attributes:
+  negativePrompt: awake, crying

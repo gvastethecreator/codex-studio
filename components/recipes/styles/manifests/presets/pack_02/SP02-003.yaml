@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-003
+packId: pack_02
+name: 80s Sci-Fi
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk city, perpetual night, towering megastructures, synth underscore
+  form_and_line: None
+  color_palette: Neon Blue/Pink + Smoke, electric magenta, toxic green
+  lighting_setup: Low key + Neon, volumetric haze, wet reflections
+  material_texture: Anamorphic lens flare, rain-slicked surfaces, brushed metal
+  render_quality: Atmospheric, practical FX, miniatures, matte painting
+  spatial_distortion: None
+  atmosphere: Dystopian, cool, synthetic, nocturnal
+  key_features: Smoke, towering ads, spinner vehicle
+avoidRules:
+  - modern cgi
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-003.webp
+attributes:
+  negativePrompt: modern cgi

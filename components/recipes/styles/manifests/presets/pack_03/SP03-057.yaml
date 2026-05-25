@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-057
+packId: pack_03
+name: NFT Collectible Avatar Render
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: 3D character portrait
+  form_and_line: Clean
+  color_palette: Neon, Gold, Rare traits, rarity gradient
+  lighting_setup: Studio, promo-ready
+  material_texture: Plastic, Metal, collectible finish
+  render_quality: Bored Ape 3D collectible, avatar-centric hype
+  spatial_distortion: None
+  atmosphere: Hype, digital, exclusive drop
+  key_features: Profile view, trait accessories
+avoidRules:
+  - traditional art
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-057.webp
+attributes:
+  negativePrompt: traditional art

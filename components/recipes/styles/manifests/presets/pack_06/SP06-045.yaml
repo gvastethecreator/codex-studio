@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-045
+packId: pack_06
+name: Collagraph
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Textured collage print
+  form_and_line: Embossed textures
+  color_palette: Earthy, multi-colored
+  lighting_setup: Relief
+  material_texture: Sand, glue, fabric
+  render_quality: Experimental, tactile
+  spatial_distortion: Abstracted
+  atmosphere: Rough, organic
+  key_features: Heavy texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-045.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

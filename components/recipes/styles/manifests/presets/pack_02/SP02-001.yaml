@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP02-001
+packId: pack_02
+name: Film Noir
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: 1940s crime drama
+  form_and_line: None
+  color_palette: Black and White, deep charcoal, silver highlights
+  lighting_setup: Venetian blinds shadow, directional key, slatted light
+  material_texture: Film grain, silver gelatin, soft halation
+  render_quality: Cinematic, moody, high-contrast, shadow-rich
+  spatial_distortion: None
+  atmosphere: Suspense, dark, moral ambiguity, wet asphalt
+  key_features: High contrast, hard-boiled detective, femme fatale silhouette
+avoidRules:
+  - color
+  - bright
+  - happy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-001.webp
+attributes:
+  negativePrompt: color, bright, happy

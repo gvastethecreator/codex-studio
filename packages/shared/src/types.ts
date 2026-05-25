@@ -1,3 +1,9 @@
+import type {
+  GenerationProviderId,
+  GenerationTaskKind,
+  GenerationTaskSpec,
+} from './generationContracts';
+
 export type JobStatus =
   | 'queued'
   | 'running'
@@ -6,7 +12,7 @@ export type JobStatus =
   | 'failed'
   | 'cancelled';
 
-export type JobKind = 'dry_run' | 'codex_imagegen';
+export type JobKind = 'dry_run' | 'codex_imagegen' | GenerationTaskKind;
 
 export type CodexReasoningEffort = string;
 export type CodexServiceTier = 'standard' | 'fast' | 'flex';
@@ -74,11 +80,22 @@ export interface CodexModelCatalogResponse {
   error: string | null;
 }
 
+export interface CodexUsageLimitWindow {
+  id: string;
+  label: string;
+  usedPercent: number;
+  availablePercent: number;
+  windowMinutes: number | null;
+  resetsAt: number | null;
+  path: string | null;
+}
+
 export interface CodexUsageSnapshot {
   available: number | string | null;
   unit: string | null;
   display: string | null;
   path: string | null;
+  limits?: CodexUsageLimitWindow[];
   raw: unknown;
 }
 
@@ -138,6 +155,8 @@ export interface Job {
   id: string;
   projectId: string;
   kind: JobKind;
+  providerId: GenerationProviderId | null;
+  sourceSpec: GenerationTaskSpec | null;
   status: JobStatus;
   execution: JobExecutionOptions | null;
   originalPrompt: string;
@@ -314,6 +333,8 @@ export interface StudioResetResponse {
 export interface CreateJobRequest {
   projectId?: string;
   kind: JobKind;
+  providerId?: GenerationProviderId | null;
+  sourceSpec?: GenerationTaskSpec | null;
   prompt: string;
   execution?: JobExecutionOptions | null;
   references?: {

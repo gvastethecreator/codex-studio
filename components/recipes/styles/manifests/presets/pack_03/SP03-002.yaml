@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-002
+packId: pack_03
+name: Unreal Engine 5 Next-Gen Real-Time Engine
+category: 5. Render Engines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+visualDna:
+  aesthetic: Real-time next-gen game
+  form_and_line: Lumen global illumination
+  color_palette: Realistic, dynamic, physically based
+  lighting_setup: Ray traced shadows, Nanite-lit
+  material_texture: Nanite geometry detail
+  render_quality: AAA Game, screenshot, virtual production
+  spatial_distortion: None
+  atmosphere: Immersive, interactive, cinematic depth
+  key_features: High fidelity, real-time path tracing
+avoidRules:
+  - pre-rendered
+  - low poly
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-002.webp
+attributes:
+  negativePrompt: pre-rendered, low poly

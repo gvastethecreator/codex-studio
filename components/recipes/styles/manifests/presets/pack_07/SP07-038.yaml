@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-038
+packId: pack_07
+name: Catacombs
+category: 3. Environment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - environment
+visualDna:
+  aesthetic: Bone walls, empire of the dead, skull architecture, underground ossuary, silence of centuries
+  form_and_line: Skulls, stacked femur patterns, arch niches, skull-and-crossbone geometry, tunnel perspective
+  color_palette: Bone White, Dirt, Sepia age, Calcium Yellow, Shadow Brown, Cartilage Cream
+  lighting_setup: Torch/Flashlight, flame-flicker on bone, LED beam, dramatic shadow-cast, warm death-glow
+  material_texture: Bone, dirt, calcium deposit, cold stone, crumbling mortar, dry-earth scent
+  render_quality: Macabre, claustrophobic, bone-chamber realism, death-density, ancient silence
+  spatial_distortion: None
+  atmosphere: Death, silence, below-ground, ossuary-reverence, chilling peace, mortal reminder
+  key_features: Skulls, stacked long bones, arched niches, low ceiling, tunnel shaft, decorative bone patterns
+avoidRules:
+  - living
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-038.webp
+attributes:
+  negativePrompt: living

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-079
+packId: pack_09
+name: Mother of Pearl
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Inside of shell
+  form_and_line: Layers
+  color_palette: Iridescent White/Pink
+  lighting_setup: Pearlescent
+  material_texture: Smooth, organic
+  render_quality: Precious, natural
+  spatial_distortion: Curved
+  atmosphere: Delicate, ocean
+  key_features: Luster
+avoidRules:
+  - plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-079.webp
+attributes:
+  negativePrompt: plastic

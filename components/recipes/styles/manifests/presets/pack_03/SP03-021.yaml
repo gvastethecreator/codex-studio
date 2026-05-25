@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-021
+packId: pack_03
+name: Low Poly
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Minimalist mesh
+  form_and_line: Visible triangles
+  color_palette: Flat shading, vibrant stylized tones
+  lighting_setup: Baked AO, ambient-fill
+  material_texture: None or gradient, facet-clean
+  render_quality: Indie game, retro, geometric charm
+  atmosphere: Simple, clean, polygon purity
+  key_features: Facets, edge visibility
+avoidRules:
+  - high poly
+  - smooth
+  - detailed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-021.webp
+attributes:
+  negativePrompt: high poly, smooth, detailed

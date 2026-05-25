@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-041
+packId: pack_03
+name: God Rays (Volumetric)
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Sunbeams through window/trees
+  form_and_line: Shafts of light
+  color_palette: Warm or Cool beams, gradient shafts
+  lighting_setup: Directional, atmosphere-piercing
+  material_texture: Dust motes, particulate volume
+  render_quality: Epic, spiritual, cathedral grandeur
+  atmosphere: Hopeful, grand, transcendent awe
+  key_features: Light beams, atmospheric scattering
+avoidRules:
+  - clear
+  - sharp
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-041.webp
+attributes:
+  negativePrompt: clear, sharp

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-032
+packId: pack_02
+name: Studio Ghibli Painterly Nature Anime
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, food that looks delicious, soaring flight
+  form_and_line: Delicate
+  color_palette: Natural, lush green, sky blue, cherry blossom pink, earth brown
+  lighting_setup: Dappled sunlight, leaf-filtered glow, golden late-afternoon
+  material_texture: Watercolor background, soft wash, pencil underdraw, cel overlay
+  render_quality: Luminous, lovingly observed, detailed stillness, wind-through-grass
+  spatial_distortion: None
+  atmosphere: Nostalgic, peaceful, childhood summer, bittersweet wonder
+  key_features: Clouds, flying sequence, bento detail, train through countryside
+avoidRules:
+  - ugly
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-032.webp
+attributes:
+  negativePrompt: ugly, dark
