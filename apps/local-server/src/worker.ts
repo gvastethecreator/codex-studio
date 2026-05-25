@@ -595,8 +595,8 @@ export function createWorkerController({
 
 let defaultWorkerController: WorkerController | null = null;
 
-export function getDefaultWorkerController() {
-  defaultWorkerController ??= createWorkerController();
+export function getDefaultWorkerController(logger?: typeof log) {
+  defaultWorkerController ??= createWorkerController({ logger });
   return defaultWorkerController;
 }
 

@@ -40,15 +40,33 @@ Before provider, recipe, preset, or output work:
 
 All gates last verified 2026-05-25:
 
-- `bun run providers:verify` passed: 17 rows (14 recipe + 3 external fixtures), all clean.
-- `bun run recipes:verify` passed: catalog OK, source audit 0 violations.
-- `bun run styles:verify` passed: 11 packs, 1,252 presets, full taxonomy/default coverage, runtime current, source audit OK.
-- `bun run test` passed: 63 files, 197 tests.
-- `bun run build` passed: UI + server both clean.
-  - Remaining warnings: large chunks (`StylesRecipe`, `StylePresetCatalogSearchSurface`) and `vite:asset` timing.
-  - Modal overlays (`ImageEditorModal`, `TrashModal`, `LimitReachedModal`, `StudioSettingsModal`, `DashboardModal`, `DebugPanel`, `OnboardingModal`) now lazy-demand-mounted.
-  - `AppOverlays` itself is lazy from `AppContent`.
-- `bun run check` still fails globally because of pre-existing formatting drift. Use `bun run check:fix -- <files>` while iterating.
+- `bun run test` → 66 files, 204 tests
+- `bun run build` → UI + server clean
+- `bun run providers:verify` → 17 rows, all clean
+- `bun run recipes:verify` → catalog OK, source audit 0 violations
+- `bun run styles:verify` → 11 packs, 1,252 presets, full taxonomy/default coverage, runtime current, source audit OK
+- Remaining build warnings: `StylesRecipe` (1,182 KB), `index` (1,114 KB), `CameraAnglesRecipe` (557 KB), `vite:asset` timing
+
+
+
+## UI Chunk State (2026-05-25)
+
+| Chunk | Size | Strategy |
+|---|---|---|
+| `StylesRecipe` | 1,154 KB | `React.lazy`, loads `styleRuntimeData.generated.ts` eagerly |
+| `index` | 1,088 KB | Main entry. Overlays detached via `React.lazy(AppOverlays)` |
+| `CameraAnglesRecipe` | 544 KB | `React.lazy` |
+| `StylePresetCatalogSearchSurface` | 190 KB | `React.lazy` + async YAML glob (was 2,113 KB) |
+| All modals | 2–21 KB each | Conditional render + `React.lazy` with `Suspense` |
+
+## New This Session
+
+- **Recipe evaluation harness**: `recipes:evaluate` script + test (2 tests). Generates bare/legacy/directives variants, measures savings (41–56% directives vs legacy).
+- **10× chunk reduction**: `stylePresetCatalogData.ts` lazy glob, search surface async, chunk 2,113→189 KB.
+- **Demand-mounted overlays**: `ImageEditorModal`, `TrashModal`, `LimitReachedModal`, `StudioSettingsModal`, `DashboardModal`, `DebugPanel`, `OnboardingModal` all lazy + conditional. `AppOverlays` lazy from `AppContent`.
+- **UI integration tests**: `QueuePanel.test.ts` (3 tests), `StudioViewport.test.ts` (2 tests).
+- **Style preset authoring guide**: `docs/STYLE_PRESET_AUTHORING.md` with YAML template, taxonomy contract, validation commands.
+- **Docs synchronized**: roadmap and handoff reflect all completed work.
 
 ## Major Work Completed
 
@@ -191,10 +209,10 @@ See `docs/TECHNICAL_DEBT.md`. Highest priority:
 
 - Further split `components/AppContent.tsx`.
 - Move visual cache toward catalog-first surfaces.
-- Add backend DI seams for db/logger/worker/lifecycle.
-- Clarify Studio Runtime adapter vs `useStudioRuntime` orchestrator naming.
-- Add frontend logging adapter.
-- Improve UI integration tests for Toolbar, QueuePanel, StudioPage, Local Studio Sync.
+- Add db/worker/lifecycle DI seams (logger seam done, others remain).
+- ~~Clarify Studio Runtime adapter vs `useStudioRuntime` orchestrator naming~~ — DONE. Both files now have JSDoc distinguishing them. `services/studioRuntime.ts` = static config adapter ("where is the backend?"). `hooks/useStudioRuntime.ts` = React orchestrator (wires readiness, diagnostics, onboarding, session, recovery, sync).
+- ~~Add frontend logging adapter~~ — DONE. `utils/runtimeLogger.ts` already existed with `runtimeLogger` facade used by 11 consumers. No raw `console.*` in UI code — only in scripts/backend.
+- ~~Improve UI integration tests for Toolbar, QueuePanel, StudioPage, Local Studio Sync~~ — DONE. Added `QueuePanel.test.ts` (3 tests), `StudioViewport.test.ts` (2 tests), expanded `useStudioHeaderToolbarConfig.test.ts`. Suite at 66 files, 204 tests.
 
 ## Recommended Skills
 

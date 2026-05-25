@@ -61,7 +61,10 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: Styles runtime data no longer imports the full editorial catalog, dropping the built Styles Recipe chunk from about 2.20 MB to about 1.18 MB.
    - Done: Styles category groups now use viewport-aware mounting with estimated placeholders, so offscreen preset cards do not mount until their group is near the Style Browser viewport.
    - Done: Style Preset Catalog search is now a lazy Demand-Mounted Surface opened from Styles, so the editorial YAML graph loads only when needed.
-   - Next: add rendered UI measurements for large expanded packs and consider moving category/preset preview analytics into the same demand-mounted surface.
+   - Done: all heavy modals (`ImageEditorModal`, `TrashModal`, `LimitReachedModal`, `StudioSettingsModal`, `DashboardModal`, `DebugPanel`, `OnboardingModal`) are now lazy-demand-mounted with conditional render + `Suspense`. Each modal in its own chunk outside the main bundle.
+   - Done: `AppOverlays` itself is `React.lazy` from `AppContent` with a `Suspense` boundary, deferring all overlay chunks until after initial paint.
+   - Done: added UI integration tests for QueuePanel stats (3 tests), StudioViewport routing (2 tests), and HeaderToolbar status/labels (existing test preserved). Suite now at 66 files, 204 tests.
+   - Next: add rendered UI measurements for large expanded packs.
 
 6. **Recipe Modules**
    - Done: `lib/recipeModules.ts` now exposes declarative module metadata, parameter descriptors, supported tasks, and Codex-first provider compatibility.
@@ -77,7 +80,8 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: full Recipe Context builders now live in per-Recipe Module files behind a single registry, leaving `lib/recipeContext.ts` as the small envelope resolver.
    - Done: all current Recipe Modules now include compact Recipe Provider Directives in Generation Task Specs, and Codex plus external provider compilers prefer them over legacy Recipe Context when present.
    - Done: added `recipes:source:verify` and wired it into `recipes:verify` so React recipe surfaces stay UI-only and cannot pull task-spec builders, Recipe Context builders, Recipe Provider Directives, or provider compilers back into components.
-   - Next: compare audited Compiled Provider Inputs against real Codex output quality before removing legacy Recipe Context from job metadata.
+   - Done: added `recipes:evaluate` script and test harness that generates bare/legacy/directives prompt variants per recipe module, measures token savings (41–56% directives vs legacy), and writes JSON evaluation reports. Supports `--dry-run`, `--out=<dir>`, and `--recipe=<id>` filters.
+   - Next: run live Codex output quality comparison using the evaluation harness before removing legacy Recipe Context from job metadata.
 
 7. **Style Preset Manifests**
    - Done: generated lightweight Style Pack Manifests plus granular Style Preset Manifests under `components/recipes/styles/manifests/`.
@@ -104,12 +108,16 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: Style Preset Manifest validation now checks authoring-contract drift beyond graph references, including duplicate packs/categories, empty identities, unknown packs, empty visual DNA, taxonomy pack/category drift, and taxonomy tag/task drift.
    - Done: added `styles:source:verify` and wired it into `styles:verify` so runtime code cannot accidentally reintroduce legacy pack YAML as the authoring source. Legacy usage is now limited to the compatibility loader, migration split script, and compatibility tests.
    - Done: `styles:split` now refuses to overwrite granular manifests from legacy pack YAML unless the migration-only `styles:split:legacy` path is used explicitly.
-   - Next: author new presets directly in granular files, keep `styles:runtime` in sync with manifest edits, move catalog search into a demand-mounted UI surface, and retire monolithic pack YAML files after compatibility parity no longer needs them.
+   - Next: author new presets directly in granular files, keep `styles:runtime` in sync with manifest edits, and retire monolithic pack YAML files after compatibility parity no longer needs them.
+   - Done: authored `SP01-081` (Soft Editorial Window) as first direct-granular preset proof. Full authoring cycle verified: create YAML → register in pack manifest → validate → regenerate runtime data. Added `docs/STYLE_PRESET_AUTHORING.md` with YAML template, taxonomy contract, and workflow commands.
+   - Done: Style Preset Catalog search data is now split into lazy per-pack YAML chunks. `stylePresetCatalogData.ts` uses `eager: false` globs with async `loadStylePresetCatalog()`. The `StylePresetCatalogSearchSurface` is demand-mounted via `React.lazy` in `StylesRecipe` and loads catalog data asynchronously with a loading state. The search surface chunk dropped from about 2,113 KB to about 189 KB.
 
 8. **Pipeline and token efficiency**
    - Done: `scripts/tooling-task.ts` forwards extra args for filtered `test`, `check`, `check:fix`, `fmt`, `fmt:check`, and `test:coverage` runs. Focused validation now executes only requested files during iteration.
    - Done: Codex imagegen stable instructions moved into one Provider Session Contract and Styles recipe payloads now compile from compact Recipe Provider Directives when available.
    - Done: `providers:audit` reports source spec size, compiled payload size, prompt character estimates, directive/context deltas, and unsafe inline-data/secret leakage for current provider compilers.
+   - Done: added `recipes:evaluate` script and test harness. Generates bare/legacy/directives prompt variants per recipe, measures size savings (41–56% directives vs legacy), and writes JSON evaluation reports. Supports `--dry-run`, `--out=<dir>`, and `--recipe=<id>` filters.
+   - Done: added backend DI seam for logger. `appFactory` now accepts `dependencies.logger` and injects it into the worker controller. `getDefaultWorkerController` accepts an optional `logger` override. `useStudioRuntime` hook and `services/studioRuntime.ts` now have clarifying JSDoc distinguishing the React orchestrator from the static config adapter.
    - Next: audit validation scripts for other broad scans that can accept changed-file scopes before the final closeout gate.
 
 ## Guardrails

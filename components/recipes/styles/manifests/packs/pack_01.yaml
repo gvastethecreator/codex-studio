@@ -16,6 +16,7 @@ categories:
       - pack_01/SP01-006.yaml
       - pack_01/SP01-007.yaml
       - pack_01/SP01-008.yaml
+      - pack_01/SP01-081.yaml
   - id: lighting
     name: 2. Lighting
     presetRefs:
@@ -109,6 +110,7 @@ presetRefs:
   - pack_01/SP01-006.yaml
   - pack_01/SP01-007.yaml
   - pack_01/SP01-008.yaml
+  - pack_01/SP01-081.yaml
   - pack_01/SP01-035.yaml
   - pack_01/SP01-043.yaml
   - pack_01/SP01-033.yaml
