@@ -7,5 +7,194 @@
     "category": "3. Printmaking",
     "error": "Job a21ea091-83c4-49eb-a0d2-7105deede182 ended as cancelled: Cancelled during server cutover to persistent category threads.",
     "failedAt": "2026-05-06T03:17:13.936Z"
+  },
+  {
+    "presetId": "SP06-081",
+    "presetName": "Game Boy Green Monochrome",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job df363d3b-7825-475a-9e7f-4bdb7f17b419 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.440Z"
+  },
+  {
+    "presetId": "SP06-082",
+    "presetName": "SNES Mode 7 Vista",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job f7b2861a-5ede-4c0a-a258-a6c5391a6582 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.515Z"
+  },
+  {
+    "presetId": "SP06-083",
+    "presetName": "Vector Arcade Wireframe",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 1499ff7d-6a4a-4182-ac7b-531b53aef9c3 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.530Z"
+  },
+  {
+    "presetId": "SP06-084",
+    "presetName": "FMV Pre-Rendered Sprites",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job c760577a-730f-4f13-919e-b241fe064f31 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.551Z"
+  },
+  {
+    "presetId": "SP06-085",
+    "presetName": "Visual Novel Screen",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 50d5175d-a0f2-402c-ae24-cb4db87744bb ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.568Z"
+  },
+  {
+    "presetId": "SP06-086",
+    "presetName": "RPG Maker Chibi Tileworld",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 1ac3046c-da7f-476c-b4b1-7d703ebcb838 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.641Z"
+  },
+  {
+    "presetId": "SP06-087",
+    "presetName": "GBA Tactical Pixel",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job c4dc01a7-f61b-4132-b946-a4baf434e3d3 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.658Z"
+  },
+  {
+    "presetId": "SP06-088",
+    "presetName": "PSX Vertex Wobble",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 30890aa0-4814-4b02-b56b-a89aae0720e8 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.678Z"
+  },
+  {
+    "presetId": "SP06-089",
+    "presetName": "Text-Mode Roguelike ANSI",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job b35542ce-ef8d-4931-8396-ec1779eeb7d2 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.690Z"
+  },
+  {
+    "presetId": "SP06-090",
+    "presetName": "Voxel Block Sprites",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 1749f505-ebff-47ee-b7c6-ea3515127297 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.765Z"
+  },
+  {
+    "presetId": "SP06-091",
+    "presetName": "Vectrex Vector Display",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 87eab15c-7d69-422f-96fe-99ee7742d579 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.775Z"
+  },
+  {
+    "presetId": "SP06-092",
+    "presetName": "C64 Commodore Palette",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job cadedea1-b01c-430d-b3ff-ce3b52364fe0 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.790Z"
+  },
+  {
+    "presetId": "SP06-093",
+    "presetName": "MSX2 Japanese Computer",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job e92268d1-0dc1-4f06-a4e0-af83fd9d3658 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.808Z"
+  },
+  {
+    "presetId": "SP06-094",
+    "presetName": "Atari 2600 Extreme Limitation",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 3b584335-004d-4341-9059-d2129e8a5621 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.887Z"
+  },
+  {
+    "presetId": "SP06-095",
+    "presetName": "Sega Genesis Dither-Heavy",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 9f82b7d7-956f-4d18-ab38-4e2c8872d164 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.902Z"
+  },
+  {
+    "presetId": "SP06-096",
+    "presetName": "Neo Geo Sprite King",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 29823dc5-9597-4b59-a415-4b261f3c1f97 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.927Z"
+  },
+  {
+    "presetId": "SP06-097",
+    "presetName": "Amiga DeluxePaint HAM",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job d55412ef-7174-4df4-b6e5-5f2c925b7452 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:58.936Z"
+  },
+  {
+    "presetId": "SP06-098",
+    "presetName": "TurboGrafx PC Engine",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job c46ff4b8-19c4-4640-a10f-d033ba6b8498 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:59.007Z"
+  },
+  {
+    "presetId": "SP06-099",
+    "presetName": "DS Flipnote Studio",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 3e4a9ba2-e675-4113-a38e-f175282366e4 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:59.021Z"
+  },
+  {
+    "presetId": "SP06-100",
+    "presetName": "Game Boy Camera Thermal Print",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job 4ec65eaf-86e3-44b2-8a2e-6764fd9a6e4b ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:59.033Z"
+  },
+  {
+    "presetId": "SP06-083",
+    "presetName": "Vector Arcade Wireframe",
+    "packId": "pack_06",
+    "packName": "Essential Art Styles",
+    "category": "6. Video Game & Pixel Art Styles",
+    "error": "Job e746cbe3-3bdd-43bd-9573-cd153c5489df disappeared from /api/jobs",
+    "failedAt": "2026-05-24T02:30:10.059Z"
   }
 ]

@@ -3,7 +3,15 @@ import path from 'node:path';
 import type { Asset, Job, Project } from '../packages/shared/src';
 import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
 import {
+  createStyleDefaultFailureEntry,
+  createStyleDefaultJobRequest,
+  createStyleDefaultManifestEntry,
+  createStyleDefaultTargets,
+  type StyleDefaultManifestEntry,
+} from '../lib/styleDefaultAssetPipeline';
+import {
   RECIPE_ASSET_EXTENSION,
+  appendImagegenDenoiseDirective,
   defaultCodexHome,
   defaultStudioLibraryDir,
   defaultsDir,
@@ -15,21 +23,6 @@ import {
   valueOf,
   writeRepoWebpAsset,
 } from './style-default-utils';
-
-interface ManifestEntry {
-  presetId: string;
-  presetName: string;
-  packId: string;
-  packName: string;
-  category: string;
-  file: string;
-  jobId: string;
-  sourceAsset: string;
-  generationMode: 'text-to-image';
-  model: string;
-  reasoningEffort: string;
-  generatedAt: string;
-}
 
 interface PendingPreset {
   pack: StylePack;
@@ -108,6 +101,8 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'A poetic anime film still with one original traveler in a richly painted natural or urban environment, wind, sky, warm human detail, layered depth, and quiet cinematic emotion.',
   pack_05__slice_of_life_and_moe:
     'A cozy everyday anime scene with one original character in a room, cafe, school-adjacent, or street setting, expressive pose, small props, warm light, and gentle background detail.',
+  pack_05__sports_competition_and_performance:
+    'A dynamic anime sports or performance scene with one original competitor or performer, strong body language, venue context, discipline-specific gear or stage cues, audience or ensemble depth, and clean motion readability.',
   pack_05__isekai_and_high_fantasy:
     'A vertical fantasy anime scene with one original traveler, magical city, forest, dungeon, or floating landscape, costume detail, glowing artifact, atmospheric depth, and adventure mood.',
 
@@ -294,6 +289,11 @@ const HERO_VARIANTS: Record<string, string[]> = {
     'An original school-age or young-adult figure with expressive posture and cozy visual rhythm.',
     'An original slice-of-life lead whose face, clothing, and gesture feel instantly personable.',
   ],
+  anime_sports: [
+    'An original competitor or performer caught in a readable peak moment, with strong anatomy, clear discipline-specific gear, and decisive body language.',
+    'An original sports or stage lead whose silhouette instantly communicates motion, confidence, and event type at card size.',
+    'An original athlete, musician, or performer with venue-aware costume logic, expressive posture, and a strong hero read.',
+  ],
   anime_fantasy: [
     'An original fantasy adventurer with layered costume logic, one magical prop, and a clear quest vibe.',
     'An original mage or traveler with readable gear, elegant silhouette, and story-driven pose.',
@@ -331,6 +331,11 @@ const ENVIRONMENT_VARIANTS: Record<string, string[]> = {
     'Make the setting intimate and lived-in, with small everyday props and gentle light falloff.',
     'Use a cozy room, cafe, street corner, or courtyard that feels specific without clutter.',
     'Build a warm daily-life environment with small asymmetries and friendly material cues.',
+  ],
+  anime_sports: [
+    'Use a venue with immediate competitive or performance read: court, field, pool, track, rink, stage, gym, rehearsal hall, or arena depth.',
+    'Build the environment around motion lanes, audience or teammate cues, and a clear support structure that reinforces the discipline.',
+    'Give the scene enough event context to feel live and kinetic, while keeping the focal hierarchy clean and card-readable.',
   ],
   anime_fantasy: [
     'Place the subject in a magical environment with clear worldbuilding layers and one glowing focal cue.',
@@ -391,6 +396,7 @@ function broadPromptFamily(pack: StylePack, category: string) {
   if (key === 'pack_05__dark_fantasy_and_seinen') return 'anime_dark_fantasy';
   if (key === 'pack_05__studio_masterpieces') return 'anime_masterpieces';
   if (key === 'pack_05__slice_of_life_and_moe') return 'anime_slice';
+  if (key === 'pack_05__sports_competition_and_performance') return 'anime_sports';
   if (key === 'pack_05__isekai_and_high_fantasy') return 'anime_fantasy';
   if (key === 'pack_04__ink_and_print') return 'illustration_print';
   if (key === 'pack_08__fabric_and_texture_focus') return 'fashion_texture';
@@ -440,9 +446,71 @@ function buildStylePrompt(pack: StylePack, preset: StylePresetDef, attempt: numb
     : ' Avoid books, bookshelves, libraries, reading rooms, archives, and stacked volumes.';
   const variantSeed = `${pack.id}:${preset.id}:${preset.name}:${attempt}`;
   const family = broadPromptFamily(pack, category);
+  const isGuroPreset = preset.id === 'SP05-107';
+  const isAmanoPreset = preset.id === 'SP05-321';
+  const targetStyleLabel = isGuroPreset
+    ? 'UNSETTLING HORROR ANIME'
+    : isAmanoPreset
+      ? 'ETHER-WISP GOTHIC FANTASY ANIME'
+      : preset.name.toUpperCase();
+  const recognitionLabel = isGuroPreset
+    ? 'an unsettling horror anime style-card'
+    : isAmanoPreset
+      ? 'an ether-wisp gothic fantasy anime style-card'
+      : `"${preset.name}"`;
+  const styleAesthetic = isGuroPreset
+    ? 'Unsettling body-horror anime with distorted anatomy, organic corruption, eerie clinical unease, shadowed biological forms, surreal nightmare tension, and implied transformation rather than explicit gore'
+    : isAmanoPreset
+      ? 'Ethereal gothic fantasy anime with elongated silhouettes, ornamental drapery, moonlit melancholy, gilded accents, celestial voids, and weightless dreamlike elegance'
+      : valueOf(preset.style, 'aesthetic');
+  const styleSubject = isGuroPreset
+    ? 'Distorted human or creature silhouette, shadowed anatomy, unsettling posture, and a clear horror read without explicit graphic detail'
+    : isAmanoPreset
+      ? 'Elegant fantasy figure with elongated silhouette, feather-light gesture, ornamental costume logic, and a strong card-readable profile'
+      : valueOf(preset.style, 'subject_treatment', 'form_and_line');
+  const styleColor = isGuroPreset
+    ? 'Sickly crimson accents, bruise-spectrum shadows, bone-white contrast, deep black voids, and restrained biological color cues'
+    : isAmanoPreset
+      ? 'Ivory, antique gold, moon-silver, abyssal indigo, pale orchid haze, and restrained gothic jewel tones'
+      : valueOf(preset.style, 'color_and_tone', 'color_palette');
+  const styleLighting = isGuroPreset
+    ? 'Clinical single-source lighting, hard shadow edges, wet sheen highlights, and deep contrast that keeps the image eerie but readable'
+    : isAmanoPreset
+      ? 'Moonlit haze, diffuse celestial glow, soft metallic gleam, and spectral backlighting that preserves silhouette clarity'
+      : valueOf(preset.style, 'lighting_and_shadow', 'lighting_setup');
+  const styleTexture = isGuroPreset
+    ? 'Organic membrane textures, slick surfaces, faint muscle-like striations, and corrupted biological surfaces without explicit gore'
+    : isAmanoPreset
+      ? 'Silk translucency, feathered ink edges, gilded ornament hints, velvet void gradients, and airbrushed dream textures'
+      : valueOf(preset.style, 'texture_and_material', 'material_texture');
+  const styleCamera = isGuroPreset
+    ? 'Tight vertical framing, oppressive perspective, and silhouette-first composition that preserves card readability'
+    : isAmanoPreset
+      ? 'Tight vertical framing, floating negative space, graceful elongation, and silhouette-first composition for immediate card recognition'
+      : valueOf(preset.style, 'camera_and_composition', 'spatial_distortion');
+  const styleMood = isGuroPreset
+    ? 'Horrifying, transgressive, darkly beautiful, mesmerizing, and intentionally non-graphic'
+    : isAmanoPreset
+      ? 'Ethereal, sorrowful, celestial, dreamlike, and quietly majestic'
+      : valueOf(preset.style, 'atmosphere_and_mood', 'atmosphere');
+  const styleRender = isGuroPreset
+    ? 'Nightmare-poetry anime rendering with unsettling precision, high detail, and no explicit gore'
+    : isAmanoPreset
+      ? 'Delicate fantasy-anime rendering with ornamental precision, dreamy softness, elegant detail, and no copyrighted character identity'
+      : valueOf(preset.style, 'rendering_and_quality', 'render_quality');
+  const styleFeatures = isGuroPreset
+    ? 'Distorted anatomy, organic corruption, spiral contamination motifs, shadowed transformation cues, and horror atmosphere without exposed organs or blood spray'
+    : isAmanoPreset
+      ? 'Elongated figures, ornamental drapery, moonlit voids, feather-light motion, gilded detail accents, and ethereal gothic fantasy poise'
+      : valueOf(preset.style, 'key_features');
+  const safeCompatibilityNote = isGuroPreset
+    ? 'Keep it horror-forward but non-graphic: no exposed organs, no blood spray, no dismemberment, no explicit gore. Favor implication, distortion, shadow, and atmospheric unease.'
+    : isAmanoPreset
+      ? 'Keep it original and non-derivative: no recognizable franchise characters, no copyrighted costume designs, and no direct imitation of any named artist. Favor broad ethereal gothic fantasy language instead.'
+      : '';
 
-  return `Generate one portrait default style-card image.
-TARGET STYLE: ${preset.name.toUpperCase()}
+  return appendImagegenDenoiseDirective(`Generate one portrait default style-card image.
+TARGET STYLE: ${targetStyleLabel}
 PACK: ${pack.name}
 CATEGORY: ${category}
 MODE: text-to-image
@@ -459,10 +527,11 @@ FEELING: ${pickVariant(FEELING_VARIANTS, `${variantSeed}:feeling`)}
 CAMERA FOCUS: ${pickVariant(CAMERA_FOCUS_VARIANTS, `${variantSeed}:focus`)}
 ACTION: ${pickVariant(ACTION_VARIANTS, `${variantSeed}:action`)}
 COLOR SEPARATION: ${pickVariant(COLOR_SEPARATION_VARIANTS, `${variantSeed}:color`)}
+${safeCompatibilityNote ? `\nCOMPATIBILITY NOTE: ${safeCompatibilityNote}` : ''}
 
-Style DNA: aesthetic=${valueOf(preset.style, 'aesthetic')}; subject=${valueOf(preset.style, 'subject_treatment', 'form_and_line')}; color=${valueOf(preset.style, 'color_and_tone', 'color_palette')}; light=${valueOf(preset.style, 'lighting_and_shadow', 'lighting_setup')}; texture=${valueOf(preset.style, 'texture_and_material', 'material_texture')}; camera=${valueOf(preset.style, 'camera_and_composition', 'spatial_distortion')}; mood=${valueOf(preset.style, 'atmosphere_and_mood', 'atmosphere')}; render=${valueOf(preset.style, 'rendering_and_quality', 'render_quality')}; features=${valueOf(preset.style, 'key_features')}.
+Style DNA: aesthetic=${styleAesthetic}; subject=${styleSubject}; color=${styleColor}; light=${styleLighting}; texture=${styleTexture}; camera=${styleCamera}; mood=${styleMood}; render=${styleRender}; features=${styleFeatures}.
 
-Make it immediately recognizable as "${preset.name}". Keep the anchor, but do not reuse generic staging from neighboring presets in this category; vary subject design, environment read, action cue, and color identity for this preset specifically. Apply the style through rendering, mood, materials, camera, and treatment. Distinct motif to avoid cross-pack convergence: ${presetMotif(preset)}. No franchise, brand, character, logo, or copyrighted identity.${avoidRepeatedLibrary} Output only the image, 1024x1536 portrait.${negative}`;
+Make it immediately recognizable as ${recognitionLabel}. Keep the anchor, but do not reuse generic staging from neighboring presets in this category; vary subject design, environment read, action cue, and color identity for this preset specifically. Apply the style through rendering, mood, materials, camera, and treatment. Distinct motif to avoid cross-pack convergence: ${presetMotif(preset)}. No franchise, brand, character, logo, or copyrighted identity.${avoidRepeatedLibrary} Output only the image, 1024x1536 portrait.${negative}`);
 }
 
 async function exists(filePath: string) {
@@ -529,15 +598,15 @@ function failuresPathForPack(packId: string) {
 async function loadManifest(packId: string) {
   try {
     const parsed = JSON.parse(await readFile(manifestPathForPack(packId), 'utf8')) as
-      | ManifestEntry[]
-      | ManifestEntry;
+      | StyleDefaultManifestEntry[]
+      | StyleDefaultManifestEntry;
     return Array.isArray(parsed) ? parsed : [parsed];
   } catch {
     return [];
   }
 }
 
-async function saveManifest(packId: string, entries: ManifestEntry[]) {
+async function saveManifest(packId: string, entries: StyleDefaultManifestEntry[]) {
   entries.sort((a, b) => a.presetId.localeCompare(b.presetId));
   await writeFile(manifestPathForPack(packId), `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
 }
@@ -557,6 +626,17 @@ function argValue(name: string) {
 const limitArg = argValue('limit');
 const limit = limitArg ? Number(limitArg) : Number.POSITIVE_INFINITY;
 const packFilter = argValue('pack');
+const categoryFilterArg = argValue('category');
+const categoryFilters = new Set(
+  (categoryFilterArg
+    ? categoryFilterArg.includes('|')
+      ? categoryFilterArg.split('|')
+      : [categoryFilterArg]
+    : []
+  )
+    .map((value) => value.trim())
+    .filter(Boolean),
+);
 const force = process.argv.includes('--force');
 const parallel = Math.max(1, Number(argValue('parallel') || 1));
 const lockDir = path.join(defaultsDir, '.locks');
@@ -571,7 +651,7 @@ const projects = await request<Project[]>('/api/projects');
 const projectId = projects[0]?.id;
 const packs = (await loadPacks()).filter((pack) => !packFilter || pack.id === packFilter);
 
-const manifestByPack = new Map<string, Map<string, ManifestEntry>>();
+const manifestByPack = new Map<string, Map<string, StyleDefaultManifestEntry>>();
 const failuresByPack = new Map<string, unknown[]>();
 const targetPresets: PendingPreset[] = [];
 let attempted = 0;
@@ -584,23 +664,36 @@ for (const pack of packs) {
   const manifestEntries = await loadManifest(pack.id);
   manifestByPack.set(pack.id, new Map(manifestEntries.map((entry) => [entry.presetId, entry])));
   failuresByPack.set(pack.id, await loadFailures(pack.id));
+}
 
+const existingDefaultFiles = new Set<string>();
+for (const pack of packs) {
   for (const preset of pack.presets) {
     const category = sanitizeCategory(preset.category);
     const destination = path.join(defaultsDir, `${preset.id}${RECIPE_ASSET_EXTENSION}`);
 
-    if (!force && (await exists(destination))) {
-      skipped += 1;
+    if (categoryFilters.size > 0 && !categoryFilters.has(category)) {
       continue;
     }
 
-    targetPresets.push({ pack, preset, category, destination });
+    if (!force && (await exists(destination))) {
+      existingDefaultFiles.add(destination);
+      skipped += 1;
+    }
   }
 }
 
-if (Number.isFinite(limit)) {
-  targetPresets.splice(limit);
-}
+targetPresets.push(
+  ...createStyleDefaultTargets({
+    packs,
+    existingFiles: existingDefaultFiles,
+    force,
+    categoryFilters,
+    limit,
+    defaultsDir,
+    assetExtension: RECIPE_ASSET_EXTENSION,
+  }),
+);
 
 async function processPreset(target: PendingPreset) {
   const { pack, preset, category, destination } = target;
@@ -620,11 +713,12 @@ async function processPreset(target: PendingPreset) {
 
       const created = await request<Job>('/api/jobs', {
         method: 'POST',
-        body: JSON.stringify({
-          projectId,
-          kind: 'codex_imagegen',
-          prompt: buildStylePrompt(pack, preset, attempt),
-        }),
+        body: JSON.stringify(
+          createStyleDefaultJobRequest({
+            projectId,
+            prompt: buildStylePrompt(pack, preset, attempt),
+          }),
+        ),
       });
 
       await waitForJob(created.id);
@@ -634,20 +728,20 @@ async function processPreset(target: PendingPreset) {
       await writeRepoWebpAsset(asset.filePath, destination);
       await cleanupExternalJobArtifacts(created.id, asset.filePath);
       const repoFile = repoRelative(destination);
-      manifestByPreset.set(preset.id, {
-        presetId: preset.id,
-        presetName: preset.name,
-        packId: pack.id,
-        packName: pack.name,
-        category,
-        file: repoFile,
-        jobId: created.id,
-        sourceAsset: repoFile,
-        generationMode: 'text-to-image',
-        model: IMAGEGEN_MODEL,
-        reasoningEffort: IMAGEGEN_REASONING_EFFORT,
-        generatedAt: new Date().toISOString(),
-      });
+      manifestByPreset.set(
+        preset.id,
+        createStyleDefaultManifestEntry({
+          pack,
+          preset,
+          category,
+          file: repoFile,
+          jobId: created.id,
+          sourceAsset: repoFile,
+          model: IMAGEGEN_MODEL,
+          reasoningEffort: IMAGEGEN_REASONING_EFFORT,
+          generatedAt: new Date().toISOString(),
+        }),
+      );
       generated += 1;
       lastError = null;
       return;
@@ -672,15 +766,15 @@ async function processPreset(target: PendingPreset) {
   );
   const failures = failuresByPack.get(pack.id);
   if (Array.isArray(failures)) {
-    failures.push({
-      presetId: preset.id,
-      presetName: preset.name,
-      packId: pack.id,
-      packName: pack.name,
-      category,
-      error: lastError || 'unknown',
-      failedAt: new Date().toISOString(),
-    });
+    failures.push(
+      createStyleDefaultFailureEntry({
+        pack,
+        preset,
+        category,
+        error: lastError || 'unknown',
+        failedAt: new Date().toISOString(),
+      }),
+    );
   }
 }
 

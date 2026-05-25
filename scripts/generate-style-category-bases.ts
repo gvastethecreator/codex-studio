@@ -3,6 +3,7 @@ import path from 'node:path';
 import type { Asset, Job, Project } from '../packages/shared/src';
 import {
   RECIPE_ASSET_EXTENSION,
+  appendImagegenDenoiseDirective,
   categoryBasesDir,
   defaultCodexHome,
   defaultStudioLibraryDir,
@@ -129,7 +130,7 @@ function buildCategoryPrompt(
     .slice(0, 18)
     .map((preset, index) => `${index + 1}. ${summarizePreset(preset)}`)
     .join('\n');
-  return `Generate one representative base reference image for a style browser category.
+  return appendImagegenDenoiseDirective(`Generate one representative base reference image for a style browser category.
 
 PACK: ${packName}
 CATEGORY: ${category}
@@ -149,7 +150,7 @@ No text, no watermark, no logos, no UI, no labels.
 Neutral baseline unless the category explicitly requires non-photographic art. Avoid applying any single preset too strongly.
 
 ImageGen output size: 1024x1536
-Aspect ratio: 2:3 (portrait)`;
+Aspect ratio: 2:3 (portrait)`);
 }
 
 const limitArg = process.argv.find((arg) => arg.startsWith('--limit='));

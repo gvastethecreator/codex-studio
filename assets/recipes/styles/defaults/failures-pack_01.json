@@ -4,7 +4,7 @@
     "presetName": "Bioluminescence",
     "packId": "pack_01",
     "packName": "Photography & Realism",
-    "category": "4. Lighting",
+    "category": "2. Lighting",
     "error": "Job b5a93e40-d486-4a23-bfd6-6b6a875c9f3e ended as cancelled: Cancelled during server cutover to persistent category threads.",
     "failedAt": "2026-05-06T03:17:13.945Z"
   }

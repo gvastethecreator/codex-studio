@@ -52,9 +52,17 @@ export function useStudioGenerationActions({
         closeModal();
       }
 
-      const finalPrompt =
-        (promptOverride !== undefined ? promptOverride : generationConfig.prompt)?.trim() ?? '';
-      if (!finalPrompt) {
+      const promptSource =
+        promptOverride !== undefined
+          ? promptOverride
+          : typeof configOverrides?.prompt === 'string'
+            ? configOverrides.prompt
+            : generationConfig.prompt;
+      const finalPrompt = promptSource?.trim() ?? '';
+      const finalAttachments = configOverrides?.attachments ?? generationConfig.attachments;
+      const hasReferenceImage = finalAttachments.length > 0;
+
+      if (!finalPrompt && !hasReferenceImage) {
         addToast('Type a prompt before generating', 'info');
         return;
       }
@@ -64,7 +72,9 @@ export function useStudioGenerationActions({
         ...configOverrides,
         prompt: finalPrompt,
       };
-      enqueue(finalPrompt, finalConfig, options?.force);
+
+      const queuePrompt = finalPrompt || 'Image-guided generation';
+      enqueue(queuePrompt, finalConfig, options?.force);
     },
     [addToast, closeModal, enqueue, generationConfig, isModalOpen],
   );

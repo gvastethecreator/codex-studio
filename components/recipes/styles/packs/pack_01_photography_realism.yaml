@@ -15,6 +15,45 @@
         camera_and_composition: Shot on 85mm or 105mm portrait lens, flat field of view, undistorted perspective, centered composition
         atmosphere_and_mood: Professional, confident, approachable, clean, formal
         rendering_and_quality: 8k resolution, commercial photography standard, flawless retouching, photorealistic
+    - id: SP01-009
+      name: High Key Portrait
+      category: 1. Portrait Styles
+      negativePrompt: dark, shadows, black
+      style:
+        aesthetic: High key studio portraiture, bright and airy photography
+        subject_treatment: Low contrast edges, soft features, minimal shadows on the face
+        color_and_tone: Predominantly white and pastel tones, light skin tones, pure white background
+        lighting_and_shadow: Overexposed wrap-around lighting, multiple softboxes, shadowless environment
+        texture_and_material: Soft and airy textures, smooth skin, bright fabrics
+        camera_and_composition: Blown out highlights in the background, clean and minimal framing
+        atmosphere_and_mood: Happy, pure, clean, optimistic, ethereal
+        rendering_and_quality: Commercial beauty standard, crisp but soft, high resolution
+    - id: SP01-010
+      name: Low Key Portrait
+      category: 1. Portrait Styles
+      negativePrompt: bright, white, day
+      style:
+        aesthetic: Low key moody portraiture, dark and dramatic photography
+        subject_treatment: Features partially hidden in deep shadow, strong emphasis on form and shape
+        color_and_tone: Deep blacks, rich dark tones, minimal color saturation, pure black background
+        lighting_and_shadow: Single source rim light or side light, harsh shadows, high contrast chiaroscuro
+        texture_and_material: Shadow noise, highlighted textures on the lit side of the subject
+        camera_and_composition: Obscured features, tight framing, focus on the interplay of light and dark
+        atmosphere_and_mood: Mysterious, intense, serious, cinematic, brooding
+        rendering_and_quality: Dramatic fine art photography, deep rich blacks, high resolution
+    - id: SP01-005
+      name: Cinematic Close-up
+      category: 1. Portrait Styles
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: Cinematic movie still close-up, dramatic film photography
+        subject_treatment: Extremely shallow depth of field, sharp focus on the eyes, soft out-of-focus background
+        color_and_tone: Cinematic color grading, teal and orange split toning, rich cinematic contrast
+        lighting_and_shadow: Dramatic Rembrandt lighting, strong directional light, deep shadows
+        texture_and_material: Cinematic film grain, detailed skin texture, anamorphic lens flares
+        camera_and_composition: Shot on anamorphic lens, beautiful bokeh background, tight emotional framing
+        atmosphere_and_mood: Emotional, dramatic, intense, narrative, moody
+        rendering_and_quality: 4K cinematic render, filmic look, high production value
     - id: SP01-002
       name: Candid Street Portrait
       category: 1. Portrait Styles
@@ -54,19 +93,6 @@
         camera_and_composition: Close-up beauty crop, flattering angles, undistorted perspective
         atmosphere_and_mood: Beautiful, expensive, alluring, polished, high-end
         rendering_and_quality: Magazine cover quality, heavily retouched, 8k resolution, hyper-realistic
-    - id: SP01-005
-      name: Cinematic Close-up
-      category: 1. Portrait Styles
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Cinematic movie still close-up, dramatic film photography
-        subject_treatment: Extremely shallow depth of field, sharp focus on the eyes, soft out-of-focus background
-        color_and_tone: Cinematic color grading, teal and orange split toning, rich cinematic contrast
-        lighting_and_shadow: Dramatic Rembrandt lighting, strong directional light, deep shadows
-        texture_and_material: Cinematic film grain, detailed skin texture, anamorphic lens flares
-        camera_and_composition: Shot on anamorphic lens, beautiful bokeh background, tight emotional framing
-        atmosphere_and_mood: Emotional, dramatic, intense, narrative, moody
-        rendering_and_quality: 4K cinematic render, filmic look, high production value
     - id: SP01-006
       name: Selfie Style
       category: 1. Portrait Styles
@@ -106,315 +132,79 @@
         camera_and_composition: Surreal blending of two distinct perspectives, creative masking
         atmosphere_and_mood: Dreamy, conceptual, surreal, poetic, melancholic
         rendering_and_quality: Fine art photography, seamless blending, highly detailed
-    - id: SP01-009
-      name: High Key Portrait
-      category: 1. Portrait Styles
-      negativePrompt: dark, shadows, black
+    - id: SP01-035
+      name: Rembrandt Lighting
+      category: 2. Lighting
+      negativePrompt: flat, bright
       style:
-        aesthetic: High key studio portraiture, bright and airy photography
-        subject_treatment: Low contrast edges, soft features, minimal shadows on the face
-        color_and_tone: Predominantly white and pastel tones, light skin tones, pure white background
-        lighting_and_shadow: Overexposed wrap-around lighting, multiple softboxes, shadowless environment
-        texture_and_material: Soft and airy textures, smooth skin, bright fabrics
-        camera_and_composition: Blown out highlights in the background, clean and minimal framing
-        atmosphere_and_mood: Happy, pure, clean, optimistic, ethereal
-        rendering_and_quality: Commercial beauty standard, crisp but soft, high resolution
-    - id: SP01-010
-      name: Low Key Portrait
-      category: 1. Portrait Styles
-      negativePrompt: bright, white, day
-      style:
-        aesthetic: Low key moody portraiture, dark and dramatic photography
-        subject_treatment: Features partially hidden in deep shadow, strong emphasis on form and shape
-        color_and_tone: Deep blacks, rich dark tones, minimal color saturation, pure black background
-        lighting_and_shadow: Single source rim light or side light, harsh shadows, high contrast chiaroscuro
-        texture_and_material: Shadow noise, highlighted textures on the lit side of the subject
-        camera_and_composition: Obscured features, tight framing, focus on the interplay of light and dark
-        atmosphere_and_mood: Mysterious, intense, serious, cinematic, brooding
-        rendering_and_quality: Dramatic fine art photography, deep rich blacks, high resolution
-    - id: SP01-011
-      name: Kodak Portra 400
-      category: 2. Film Stocks
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Warm analog film look
-        form_and_line: Soft but sharp
-        color_palette: Great skin tones, pastel highlights
-        lighting_setup: Natural, forgiving
-        material_texture: Fine grain
-        render_quality: Professional film
+        aesthetic: Classic portrait lighting
+        form_and_line: Triangle of light on cheek
+        color_palette: Warm, dark shadows
+        lighting_setup: 45 degree single source
+        material_texture: Painterly
+        render_quality: Dramatic, classic
         spatial_distortion: None
-        atmosphere: Nostalgic, warm
-        key_features: Yellow/Red bias
-    - id: SP01-012
-      name: Fujifilm Velvia 50
-      category: 2. Film Stocks
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+        atmosphere: Serious, artistic
+        key_features: Chiaroscuro
+    - id: SP01-043
+      name: Ring Light
+      category: 2. Lighting
+      negativePrompt: shadows
       style:
-        aesthetic: High saturation landscape film
-        form_and_line: High contrast
-        color_palette: Vivid Green, Blue, Red
-        lighting_setup: Daylight
-        material_texture: Very fine grain
-        render_quality: Nature photography
-        spatial_distortion: Crushed blacks
-        atmosphere: Vibrant, punchy
-        key_features: Magenta bias
-    - id: SP01-013
-      name: Ilford HP5 Plus
-      category: 2. Film Stocks
-      negativePrompt: color, chromatic aberration
+        aesthetic: Influencer lighting
+        form_and_line: Halo in eyes
+        color_palette: Even, bright
+        lighting_setup: Frontal circle
+        material_texture: Smooth skin
+        render_quality: YouTube, makeup tutorial
+        spatial_distortion: Flat features
+        atmosphere: Modern, clean
+        key_features: Eye catchlight
+    - id: SP01-033
+      name: Hard Flash
+      category: 2. Lighting
+      negativePrompt: soft, natural, ambient
       style:
-        aesthetic: Black and White film
-        form_and_line: Medium contrast
-        color_palette: Greyscale
-        lighting_setup: Versatile
-        material_texture: Visible grain
-        render_quality: Journalism, street
+        aesthetic: Direct camera flash
+        form_and_line: Hard shadow outlines
+        color_palette: High contrast, saturated
+        lighting_setup: Frontal, harsh
+        material_texture: Shiny skin
+        render_quality: Paparazzi, fashion
+        spatial_distortion: Flat depth
+        atmosphere: Raw, exposed
+        key_features: Drop shadow
+    - id: SP01-044
+      name: Projector Light
+      category: 2. Lighting
+      negativePrompt: clean light
+      style:
+        aesthetic: Image projected on face
+        form_and_line: Pattern overlay
+        color_palette: Mixed light/skin
+        lighting_setup: Patterned source
+        material_texture: Pixel grid (optional)
+        render_quality: Artistic, music video
+        spatial_distortion: Face distortion by light
+        atmosphere: Conceptual, trippy
+        key_features: Light pattern
+    - id: SP01-034
+      name: Neon Noir
+      category: 2. Lighting
+      negativePrompt: daylight, sun
+      style:
+        aesthetic: Cyberpunk city lighting
+        form_and_line: Rim lights
+        color_palette: Pink and Teal
+        lighting_setup: Colored practical lights
+        material_texture: Wet pavement reflection
+        render_quality: Cinematic, stylized
         spatial_distortion: None
-        atmosphere: Classic, gritty
-        key_features: Monochrome
-    - id: SP01-014
-      name: Cinestill 800T
-      category: 2. Film Stocks
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Night photography film
-        form_and_line: Halation around lights
-        color_palette: Cool tungsten balance
-        lighting_setup: Artificial light
-        material_texture: Medium grain
-        render_quality: Cinematic, moody
-        spatial_distortion: Red halation glow
-        atmosphere: Night, urban
-        key_features: Red halos
-    - id: SP01-015
-      name: Kodachrome 64
-      category: 2. Film Stocks
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Vintage slide film
-        form_and_line: Sharp, archival
-        color_palette: Rich reds, realistic
-        lighting_setup: Direct sun
-        material_texture: Fine grain
-        render_quality: National Geographic 80s
-        spatial_distortion: High contrast
-        atmosphere: Historic, vivid
-        key_features: Red pop
-    - id: SP01-016
-      name: Polaroid 600
-      category: 2. Film Stocks
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Instant film photo
-        form_and_line: Soft focus
-        color_palette: Washed out, color shift
-        lighting_setup: Direct flash
-        material_texture: Chemical spread marks
-        render_quality: Vintage, casual
-        spatial_distortion: Vignette
-        atmosphere: Memory, retro
-        key_features: Square crop
-    - id: SP01-017
-      name: Lomo LC-A
-      category: 2. Film Stocks
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Toy camera film
-        form_and_line: Blurry edges
-        color_palette: Cross-processed, saturated
-        lighting_setup: Vignette
-        material_texture: Light leaks
-        render_quality: Lo-fi, experimental
-        spatial_distortion: Heavy vignette
-        atmosphere: Fun, unpredictable
-        key_features: Tunnel vision
-    - id: SP01-018
-      name: Wet Plate Collodion
-      category: 2. Film Stocks
-      negativePrompt: color, modern, digital
-      style:
-        aesthetic: 19th century tintype
-        form_and_line: Extremely shallow focus
-        color_palette: Sepia, silver
-        lighting_setup: Long exposure
-        material_texture: Chemical pours, scratches
-        render_quality: Antique, haunting
-        spatial_distortion: Blurry edges (Petzval)
-        atmosphere: Ghostly, ancient
-        key_features: Chemical artifacts
-    - id: SP01-019
-      name: Infrared Film
-      category: 2. Film Stocks
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Aerochrome style
-        form_and_line: Glowing foliage
-        color_palette: Pink/Red foliage, dark sky
-        lighting_setup: Surreal
-        material_texture: Grainy
-        render_quality: Psychedelic, scientific
-        spatial_distortion: False color
-        atmosphere: Alien, dreamlike
-        key_features: Red trees
-    - id: SP01-020
-      name: Expired Film
-      category: 2. Film Stocks
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Damaged film stock
-        form_and_line: Soft
-        color_palette: Green/Magenta shift
-        lighting_setup: Fogged
-        material_texture: Heavy grain, mold
-        render_quality: Grungy, broken
-        spatial_distortion: Color cast
-        atmosphere: Decay, lost memory
-        key_features: Color shift
-    - id: SP01-021
-      name: Large Format (4x5)
-      category: 3. Camera Types
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: View camera photo
-        form_and_line: Incredible detail
-        color_palette: Rich, smooth tones
-        lighting_setup: Controlled
-        material_texture: Zero grain
-        render_quality: Ansel Adams, fine art
-        spatial_distortion: Tilt-shift potential
-        atmosphere: Grand, still
-        key_features: Extreme resolution
-    - id: SP01-022
-      name: Disposable Camera
-      category: 3. Camera Types
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Cheap plastic lens photo
-        form_and_line: Soft corners
-        color_palette: High contrast, cheap flash
-        lighting_setup: Direct flash
-        material_texture: Grainy
-        render_quality: Party photo, candid
-        spatial_distortion: Chromatic aberration
-        atmosphere: Fun, cheap
-        key_features: Flash falloff
-    - id: SP01-023
-      name: GoPro Wide
-      category: 3. Camera Types
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Action camera POV
-        form_and_line: Fisheye distortion
-        color_palette: Vibrant, sharp
-        lighting_setup: Outdoor, harsh
-        material_texture: Digital sharpening
-        render_quality: Action sports, vlog
-        spatial_distortion: Curved horizon
-        atmosphere: Active, immersive
-        key_features: Wide FOV
-    - id: SP01-024
-      name: Drone Aerial
-      category: 3. Camera Types
-      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
-      style:
-        aesthetic: Top-down view
-        form_and_line: Geometric landscape
-        color_palette: Saturated
-        lighting_setup: Flat (noon) or long shadows
-        material_texture: Sharp digital
-        render_quality: DJI, travel
-        spatial_distortion: Flattened perspective
-        atmosphere: Epic, overview
-        key_features: Bird's eye view
-    - id: SP01-025
-      name: CCTV Security
-      category: 3. Camera Types
-      negativePrompt: hd, 4k, clean
-      style:
-        aesthetic: Surveillance footage
-        form_and_line: Low resolution, interlaced
-        color_palette: Desaturated or B&W
-        lighting_setup: High contrast, night vision
-        material_texture: Compression artifacts, scanlines
-        render_quality: Gritty, crime
-        spatial_distortion: Wide angle distortion
-        atmosphere: Creepy, voyeuristic
-        key_features: Timestamp overlay
-    - id: SP01-026
-      name: Pinhole Camera
-      category: 3. Camera Types
-      negativePrompt: sharp, lens flare
-      style:
-        aesthetic: Lensless photography
-        form_and_line: Soft everywhere
-        color_palette: Vignetted
-        lighting_setup: Long exposure motion blur
-        material_texture: Diffraction blur
-        render_quality: Dreamy, experimental
-        spatial_distortion: Infinite depth of field (soft)
-        atmosphere: Surreal, time passing
-        key_features: Soft focus
-    - id: SP01-027
-      name: Dashcam
-      category: 3. Camera Types
-      negativePrompt: portrait, studio
-      style:
-        aesthetic: Car windshield view
-        form_and_line: Wide angle
-        color_palette: Digital, utilitarian
-        lighting_setup: Headlights or street
-        material_texture: Windshield reflection, rain
-        render_quality: Raw, accident footage
-        spatial_distortion: Motion blur
-        atmosphere: Real, urgent
-        key_features: Dashboard visible
-    - id: SP01-028
-      name: Thermal Camera
-      category: 3. Camera Types
-      negativePrompt: realistic colors
-      style:
-        aesthetic: Heat map imaging
-        form_and_line: Blobby heat signatures
-        color_palette: Ironbow (Purple to Yellow)
-        lighting_setup: Emissive
-        material_texture: Digital noise
-        render_quality: Military, scientific
-        spatial_distortion: No surface detail
-        atmosphere: Predator, tech
-        key_features: Heat gradient
-    - id: SP01-029
-      name: Microscope (SEM)
-      category: 3. Camera Types
-      negativePrompt: color, macro
-      style:
-        aesthetic: Electron microscope scan
-        form_and_line: Incredible texture detail
-        color_palette: Greyscale
-        lighting_setup: Directional electron beam
-        material_texture: Fractal patterns
-        render_quality: Scientific, alien
-        spatial_distortion: Extreme magnification
-        atmosphere: Scientific, scary
-        key_features: B&W depth
-    - id: SP01-030
-      name: Telescope (Hubble)
-      category: 3. Camera Types
-      negativePrompt: earth, ground
-      style:
-        aesthetic: Deep space astrophotography
-        form_and_line: Nebula clouds
-        color_palette: False color (NASA palette)
-        lighting_setup: Star glow
-        material_texture: Gas, dust, stars
-        render_quality: Cosmic, epic
-        spatial_distortion: None
-        atmosphere: Awe-inspiring, vast
-        key_features: Star field
+        atmosphere: Cool, futuristic
+        key_features: Dual color light
     - id: SP01-031
       name: Golden Hour
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: blue, cold, noon
       style:
         aesthetic: Sunset/Sunrise light
@@ -428,7 +218,7 @@
         key_features: Warm cast
     - id: SP01-032
       name: Blue Hour
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: sun, orange, warm
       style:
         aesthetic: Twilight before sunrise/after sunset
@@ -440,51 +230,9 @@
         spatial_distortion: None
         atmosphere: Quiet, cold
         key_features: Blue cast
-    - id: SP01-033
-      name: Hard Flash
-      category: 4. Lighting
-      negativePrompt: soft, natural, ambient
-      style:
-        aesthetic: Direct camera flash
-        form_and_line: Hard shadow outlines
-        color_palette: High contrast, saturated
-        lighting_setup: Frontal, harsh
-        material_texture: Shiny skin
-        render_quality: Paparazzi, fashion
-        spatial_distortion: Flat depth
-        atmosphere: Raw, exposed
-        key_features: Drop shadow
-    - id: SP01-034
-      name: Neon Noir
-      category: 4. Lighting
-      negativePrompt: daylight, sun
-      style:
-        aesthetic: Cyberpunk city lighting
-        form_and_line: Rim lights
-        color_palette: Pink and Teal
-        lighting_setup: Colored practical lights
-        material_texture: Wet pavement reflection
-        render_quality: Cinematic, stylized
-        spatial_distortion: None
-        atmosphere: Cool, futuristic
-        key_features: Dual color light
-    - id: SP01-035
-      name: Rembrandt Lighting
-      category: 4. Lighting
-      negativePrompt: flat, bright
-      style:
-        aesthetic: Classic portrait lighting
-        form_and_line: Triangle of light on cheek
-        color_palette: Warm, dark shadows
-        lighting_setup: 45 degree single source
-        material_texture: Painterly
-        render_quality: Dramatic, classic
-        spatial_distortion: None
-        atmosphere: Serious, artistic
-        key_features: Chiaroscuro
     - id: SP01-036
       name: Split Lighting
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: flat, fill light
       style:
         aesthetic: Half face in shadow
@@ -498,7 +246,7 @@
         key_features: Half dark
     - id: SP01-037
       name: Silhouette (Backlit)
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: front light, detail
       style:
         aesthetic: Subject against light
@@ -512,7 +260,7 @@
         key_features: Dark subject
     - id: SP01-038
       name: Butterfly Lighting
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: side light, shadow
       style:
         aesthetic: Glamour lighting
@@ -526,7 +274,7 @@
         key_features: Symmetrical shadow
     - id: SP01-039
       name: Candlelight
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: electric light, blue
       style:
         aesthetic: Lit by fire
@@ -540,7 +288,7 @@
         key_features: Warm glow
     - id: SP01-040
       name: God Rays (Volumetric)
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: clear air
       style:
         aesthetic: Light beams through fog
@@ -554,7 +302,7 @@
         key_features: Light shafts
     - id: SP01-041
       name: Bioluminescence
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: sun, day
       style:
         aesthetic: Glowing organic light
@@ -568,7 +316,7 @@
         key_features: Dark background
     - id: SP01-042
       name: Strobe Light
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: blur, soft
       style:
         aesthetic: Frozen motion
@@ -580,37 +328,9 @@
         spatial_distortion: None
         atmosphere: Energetic, frozen
         key_features: Motion freeze
-    - id: SP01-043
-      name: Ring Light
-      category: 4. Lighting
-      negativePrompt: shadows
-      style:
-        aesthetic: Influencer lighting
-        form_and_line: Halo in eyes
-        color_palette: Even, bright
-        lighting_setup: Frontal circle
-        material_texture: Smooth skin
-        render_quality: YouTube, makeup tutorial
-        spatial_distortion: Flat features
-        atmosphere: Modern, clean
-        key_features: Eye catchlight
-    - id: SP01-044
-      name: Projector Light
-      category: 4. Lighting
-      negativePrompt: clean light
-      style:
-        aesthetic: Image projected on face
-        form_and_line: Pattern overlay
-        color_palette: Mixed light/skin
-        lighting_setup: Patterned source
-        material_texture: Pixel grid (optional)
-        render_quality: Artistic, music video
-        spatial_distortion: Face distortion by light
-        atmosphere: Conceptual, trippy
-        key_features: Light pattern
     - id: SP01-045
       name: Light Painting
-      category: 4. Lighting
+      category: 2. Lighting
       negativePrompt: static light
       style:
         aesthetic: Long exposure light trails
@@ -622,65 +342,149 @@
         spatial_distortion: Light scribbles
         atmosphere: Magical, kinetic
         key_features: Dark background
-    - id: SP01-046
-      name: Street Photography
-      category: 5. Genres
-      negativePrompt: posed, studio
+    - id: SP01-014
+      name: Cinestill 800T
+      category: 3. Film Stocks
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
       style:
-        aesthetic: Urban candid moment
-        form_and_line: Messy composition
-        color_palette: High contrast B&W or gritty color
-        lighting_setup: Natural
-        material_texture: Grain
-        render_quality: Cartier-Bresson, decisive moment
-        spatial_distortion: Motion blur
-        atmosphere: Real, fleeting
-        key_features: Urban context
-    - id: SP01-047
-      name: Landscape (Ansel Adams)
-      category: 5. Genres
-      negativePrompt: color, city
+        aesthetic: Night photography film
+        form_and_line: Halation around lights
+        color_palette: Cool tungsten balance
+        lighting_setup: Artificial light
+        material_texture: Medium grain
+        render_quality: Cinematic, moody
+        spatial_distortion: Red halation glow
+        atmosphere: Night, urban
+        key_features: Red halos
+    - id: SP01-018
+      name: Wet Plate Collodion
+      category: 3. Film Stocks
+      negativePrompt: color, modern, digital
       style:
-        aesthetic: Epic nature vista
-        form_and_line: Sharp f/64 focus
-        color_palette: Black and White Zone System
-        lighting_setup: Dramatic sun/cloud
-        material_texture: Rock, cloud detail
-        render_quality: Masterpiece, sharp
+        aesthetic: 19th century tintype
+        form_and_line: Extremely shallow focus
+        color_palette: Sepia, silver
+        lighting_setup: Long exposure
+        material_texture: Chemical pours, scratches
+        render_quality: Antique, haunting
+        spatial_distortion: Blurry edges (Petzval)
+        atmosphere: Ghostly, ancient
+        key_features: Chemical artifacts
+    - id: SP01-013
+      name: Ilford HP5 Plus
+      category: 3. Film Stocks
+      negativePrompt: color, chromatic aberration
+      style:
+        aesthetic: Black and White film
+        form_and_line: Medium contrast
+        color_palette: Greyscale
+        lighting_setup: Versatile
+        material_texture: Visible grain
+        render_quality: Journalism, street
         spatial_distortion: None
-        atmosphere: Grand, timeless
-        key_features: High contrast sky
-    - id: SP01-048
-      name: Macro Photography
-      category: 5. Genres
-      negativePrompt: wide angle, blurry subject
+        atmosphere: Classic, gritty
+        key_features: Monochrome
+    - id: SP01-015
+      name: Kodachrome 64
+      category: 3. Film Stocks
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
       style:
-        aesthetic: Extreme close-up
-        form_and_line: Shallow depth of field
-        color_palette: Vibrant detail
-        lighting_setup: Ring flash
-        material_texture: Insect eye, leaf vein
-        render_quality: Scientific, abstract
-        spatial_distortion: Blurry background
-        atmosphere: Alien, detailed
-        key_features: Tiny world
-    - id: SP01-049
-      name: Food Photography
-      category: 5. Genres
-      negativePrompt: unappetizing, dark, dirty
+        aesthetic: Vintage slide film
+        form_and_line: Sharp, archival
+        color_palette: Rich reds, realistic
+        lighting_setup: Direct sun
+        material_texture: Fine grain
+        render_quality: National Geographic 80s
+        spatial_distortion: High contrast
+        atmosphere: Historic, vivid
+        key_features: Red pop
+    - id: SP01-011
+      name: Kodak Portra 400
+      category: 3. Film Stocks
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
       style:
-        aesthetic: Delicious plated food
-        form_and_line: Soft focus background
-        color_palette: Warm, saturated, fresh
-        lighting_setup: Window light, reflector
-        material_texture: Steam, sauce gloss
-        render_quality: Cookbook, appetizing
+        aesthetic: Warm analog film look
+        form_and_line: Soft but sharp
+        color_palette: Great skin tones, pastel highlights
+        lighting_setup: Natural, forgiving
+        material_texture: Fine grain
+        render_quality: Professional film
         spatial_distortion: None
-        atmosphere: Hungry, cozy
-        key_features: Top down or 45 degree
+        atmosphere: Nostalgic, warm
+        key_features: Yellow/Red bias
+    - id: SP01-012
+      name: Fujifilm Velvia 50
+      category: 3. Film Stocks
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: High saturation landscape film
+        form_and_line: High contrast
+        color_palette: Vivid Green, Blue, Red
+        lighting_setup: Daylight
+        material_texture: Very fine grain
+        render_quality: Nature photography
+        spatial_distortion: Crushed blacks
+        atmosphere: Vibrant, punchy
+        key_features: Magenta bias
+    - id: SP01-016
+      name: Polaroid 600
+      category: 3. Film Stocks
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: Instant film photo
+        form_and_line: Soft focus
+        color_palette: Washed out, color shift
+        lighting_setup: Direct flash
+        material_texture: Chemical spread marks
+        render_quality: Vintage, casual
+        spatial_distortion: Vignette
+        atmosphere: Memory, retro
+        key_features: Square crop
+    - id: SP01-017
+      name: Lomo LC-A
+      category: 3. Film Stocks
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: Toy camera film
+        form_and_line: Blurry edges
+        color_palette: Cross-processed, saturated
+        lighting_setup: Vignette
+        material_texture: Light leaks
+        render_quality: Lo-fi, experimental
+        spatial_distortion: Heavy vignette
+        atmosphere: Fun, unpredictable
+        key_features: Tunnel vision
+    - id: SP01-019
+      name: Infrared Film
+      category: 3. Film Stocks
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: Aerochrome style
+        form_and_line: Glowing foliage
+        color_palette: Pink/Red foliage, dark sky
+        lighting_setup: Surreal
+        material_texture: Grainy
+        render_quality: Psychedelic, scientific
+        spatial_distortion: False color
+        atmosphere: Alien, dreamlike
+        key_features: Red trees
+    - id: SP01-020
+      name: Expired Film
+      category: 3. Film Stocks
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: Damaged film stock
+        form_and_line: Soft
+        color_palette: Green/Magenta shift
+        lighting_setup: Fogged
+        material_texture: Heavy grain, mold
+        render_quality: Grungy, broken
+        spatial_distortion: Color cast
+        atmosphere: Decay, lost memory
+        key_features: Color shift
     - id: SP01-050
       name: Product Photography
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: dust, scratches, messy
       style:
         aesthetic: Clean commercial object
@@ -692,79 +496,9 @@
         spatial_distortion: None
         atmosphere: Professional, desire
         key_features: White/Grey background
-    - id: SP01-051
-      name: Fashion Editorial
-      category: 5. Genres
-      negativePrompt: boring, plain
-      style:
-        aesthetic: Magazine spread
-        form_and_line: Dynamic pose
-        color_palette: Color graded, trendy
-        lighting_setup: Creative studio
-        material_texture: Fabric detail
-        render_quality: Vogue, high end
-        spatial_distortion: Elongated limbs
-        atmosphere: Cool, expensive
-        key_features: Clothes focus
-    - id: SP01-052
-      name: Sports Action
-      category: 5. Genres
-      negativePrompt: static, slow
-      style:
-        aesthetic: High speed athlete
-        form_and_line: Frozen muscle
-        color_palette: Vibrant jersey colors
-        lighting_setup: Stadium floodlights
-        material_texture: Sweat, dirt
-        render_quality: Sports Illustrated, sharp
-        spatial_distortion: Motion blur background
-        atmosphere: Intense, fast
-        key_features: Action freeze
-    - id: SP01-053
-      name: Wildlife Photography
-      category: 5. Genres
-      negativePrompt: zoo, cage, pet
-      style:
-        aesthetic: Animal in nature
-        form_and_line: Telephoto compression
-        color_palette: Natural camouflage
-        lighting_setup: Golden hour
-        material_texture: Fur, feather detail
-        render_quality: Nat Geo, wild
-        spatial_distortion: None
-        atmosphere: Wild, patient
-        key_features: Blurred background
-    - id: SP01-054
-      name: Astrophotography
-      category: 5. Genres
-      negativePrompt: day, clouds
-      style:
-        aesthetic: Milky Way landscape
-        form_and_line: Star trails (optional)
-        color_palette: Deep Blue, Purple, White stars
-        lighting_setup: Starlight
-        material_texture: Noise (stars)
-        render_quality: Long exposure, epic
-        spatial_distortion: None
-        atmosphere: Cosmic, silent
-        key_features: Night sky
-    - id: SP01-055
-      name: Underwater
-      category: 5. Genres
-      negativePrompt: dry, land
-      style:
-        aesthetic: Submerged subject
-        form_and_line: Floating hair/cloth
-        color_palette: Cyan, Blue cast
-        lighting_setup: Caustics (light rays)
-        material_texture: Bubbles, refraction
-        render_quality: Dreamy, weightless
-        spatial_distortion: Refraction distortion
-        atmosphere: Silent, deep
-        key_features: Blue tint
     - id: SP01-056
       name: Architecture (Modern)
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: people, messy
       style:
         aesthetic: Building facade
@@ -776,121 +510,23 @@
         spatial_distortion: Perspective correction
         atmosphere: Imposing, structured
         key_features: Vertical lines
-    - id: SP01-057
-      name: Interior Design
-      category: 5. Genres
-      negativePrompt: clutter, dark
-      style:
-        aesthetic: Designed room
-        form_and_line: Wide angle
-        color_palette: Balanced palette
-        lighting_setup: Mixed window/interior
-        material_texture: Fabric, wood
-        render_quality: Real estate, cozy
-        spatial_distortion: None
-        atmosphere: Welcoming, expensive
-        key_features: Clean layout
-    - id: SP01-058
-      name: Minimalist Photo
-      category: 5. Genres
-      negativePrompt: busy, detailed
-      style:
-        aesthetic: Simple composition
-        form_and_line: Negative space
-        color_palette: Two or three tones
-        lighting_setup: Flat
-        material_texture: Smooth
-        render_quality: Fine art, graphic
-        spatial_distortion: None
-        atmosphere: Calm, empty
-        key_features: Isolation
-    - id: SP01-059
-      name: Abstract Photo
-      category: 5. Genres
-      negativePrompt: recognizable object
-      style:
-        aesthetic: Unrecognizable forms
-        form_and_line: Shape and color
-        color_palette: Bold
-        lighting_setup: Experimental
-        material_texture: Macro or motion blur
-        render_quality: Artistic, confusion
-        spatial_distortion: Total abstraction
-        atmosphere: Conceptual
-        key_features: No subject
-    - id: SP01-060
-      name: Documentary (War)
-      category: 5. Genres
-      negativePrompt: posed, happy
-      style:
-        aesthetic: Conflict zone photo
-        form_and_line: Chaos
-        color_palette: Desaturated, dusty
-        lighting_setup: Harsh sun
-        material_texture: Dirt, smoke, grain
-        render_quality: Raw, emotional
-        spatial_distortion: None
-        atmosphere: Tragic, intense
-        key_features: Realism
-    - id: SP01-061
-      name: Paparazzi Style
-      category: 5. Genres
+    - id: SP01-046
+      name: Street Photography
+      category: 4. Genres
       negativePrompt: posed, studio
       style:
-        aesthetic: Telephoto street shot
-        form_and_line: Subject isolated
-        color_palette: Flash washed
-        lighting_setup: Direct flash at night
-        material_texture: High ISO noise
-        render_quality: Tabloid, intrusive
+        aesthetic: Urban candid moment
+        form_and_line: Messy composition
+        color_palette: High contrast B&W or gritty color
+        lighting_setup: Natural
+        material_texture: Grain
+        render_quality: Cartier-Bresson, decisive moment
         spatial_distortion: Motion blur
-        atmosphere: Urgent, chaotic
-        key_features: Subject surprised
-    - id: SP01-062
-      name: Corporate Stock Photo
-      category: 5. Genres
-      negativePrompt: sad, dark, weird
-      style:
-        aesthetic: Happy people working
-        form_and_line: Clean
-        color_palette: Bright, blue tint
-        lighting_setup: Office bright
-        material_texture: Clean
-        render_quality: Generic, safe
-        spatial_distortion: Fake smiles
-        atmosphere: Professional, fake
-        key_features: Handshake
-    - id: SP01-063
-      name: Real Estate (HDR)
-      category: 5. Genres
-      negativePrompt: shadows, dark corners
-      style:
-        aesthetic: House interior
-        form_and_line: Wide angle
-        color_palette: Saturated, even
-        lighting_setup: No shadows (HDR)
-        material_texture: Sharp
-        render_quality: Zillow, oversaturated
-        spatial_distortion: Unnatural dynamic range
-        atmosphere: Bright, selling
-        key_features: Windows visible
-    - id: SP01-064
-      name: Concert Photography
-      category: 5. Genres
-      negativePrompt: quiet, bright
-      style:
-        aesthetic: Band on stage
-        form_and_line: Silhouettes in fog
-        color_palette: Stage lights (Red/Blue)
-        lighting_setup: Beams, spots
-        material_texture: Fog, sweat, grain
-        render_quality: Rock n roll, loud
-        spatial_distortion: None
-        atmosphere: Energetic, loud
-        key_features: Crowd hands
+        atmosphere: Real, fleeting
+        key_features: Urban context
     - id: SP01-065
       name: Pet Photography
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: scary, wild
       style:
         aesthetic: Cute dog/cat portrait
@@ -904,7 +540,7 @@
         key_features: Looking at camera
     - id: SP01-066
       name: Automotive Photography
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: dirty, stationary
       style:
         aesthetic: Car commercial
@@ -916,9 +552,177 @@
         spatial_distortion: Motion blur wheels
         atmosphere: Fast, powerful
         key_features: Car isolated
+    - id: SP01-069
+      name: Boudoir Photography
+      category: 4. Genres
+      negativePrompt: explicit, harsh
+      style:
+        aesthetic: Intimate portrait
+        form_and_line: Curves
+        color_palette: Warm, dark, red
+        lighting_setup: Moody, window
+        material_texture: Lace, sheets, skin
+        render_quality: Sensual, private
+        spatial_distortion: None
+        atmosphere: Intimate, soft
+        key_features: Bed or window
+    - id: SP01-057
+      name: Interior Design
+      category: 4. Genres
+      negativePrompt: clutter, dark
+      style:
+        aesthetic: Designed room
+        form_and_line: Wide angle
+        color_palette: Balanced palette
+        lighting_setup: Mixed window/interior
+        material_texture: Fabric, wood
+        render_quality: Real estate, cozy
+        spatial_distortion: None
+        atmosphere: Welcoming, expensive
+        key_features: Clean layout
+    - id: SP01-049
+      name: Food Photography
+      category: 4. Genres
+      negativePrompt: unappetizing, dark, dirty
+      style:
+        aesthetic: Delicious plated food
+        form_and_line: Soft focus background
+        color_palette: Warm, saturated, fresh
+        lighting_setup: Window light, reflector
+        material_texture: Steam, sauce gloss
+        render_quality: Cookbook, appetizing
+        spatial_distortion: None
+        atmosphere: Hungry, cozy
+        key_features: Top down or 45 degree
+    - id: SP01-051
+      name: Fashion Editorial
+      category: 4. Genres
+      negativePrompt: boring, plain
+      style:
+        aesthetic: Magazine spread
+        form_and_line: Dynamic pose
+        color_palette: Color graded, trendy
+        lighting_setup: Creative studio
+        material_texture: Fabric detail
+        render_quality: Vogue, high end
+        spatial_distortion: Elongated limbs
+        atmosphere: Cool, expensive
+        key_features: Clothes focus
+    - id: SP01-060
+      name: Documentary (War)
+      category: 4. Genres
+      negativePrompt: posed, happy
+      style:
+        aesthetic: Conflict zone photo
+        form_and_line: Chaos
+        color_palette: Desaturated, dusty
+        lighting_setup: Harsh sun
+        material_texture: Dirt, smoke, grain
+        render_quality: Raw, emotional
+        spatial_distortion: None
+        atmosphere: Tragic, intense
+        key_features: Realism
+    - id: SP01-061
+      name: Paparazzi Style
+      category: 4. Genres
+      negativePrompt: posed, studio
+      style:
+        aesthetic: Telephoto street shot
+        form_and_line: Subject isolated
+        color_palette: Flash washed
+        lighting_setup: Direct flash at night
+        material_texture: High ISO noise
+        render_quality: Tabloid, intrusive
+        spatial_distortion: Motion blur
+        atmosphere: Urgent, chaotic
+        key_features: Subject surprised
+    - id: SP01-063
+      name: Real Estate (HDR)
+      category: 4. Genres
+      negativePrompt: shadows, dark corners
+      style:
+        aesthetic: House interior
+        form_and_line: Wide angle
+        color_palette: Saturated, even
+        lighting_setup: No shadows (HDR)
+        material_texture: Sharp
+        render_quality: Zillow, oversaturated
+        spatial_distortion: Unnatural dynamic range
+        atmosphere: Bright, selling
+        key_features: Windows visible
+    - id: SP01-074
+      name: Bokeh Panorama (Brenizer)
+      category: 4. Genres
+      negativePrompt: deep focus
+      style:
+        aesthetic: Wide angle with shallow depth
+        form_and_line: Subject pop
+        color_palette: Vibrant
+        lighting_setup: Natural
+        material_texture: Blurry background
+        render_quality: Impossible depth of field
+        spatial_distortion: Swirly bokeh
+        atmosphere: Epic portrait
+        key_features: Thin focus plane
+    - id: SP01-078
+      name: School Portrait
+      category: 4. Genres
+      negativePrompt: cool, candid
+      style:
+        aesthetic: Awkward yearbook photo
+        form_and_line: Stiff pose
+        color_palette: Blue mottled background
+        lighting_setup: Flat studio
+        material_texture: Bad hair day
+        render_quality: Nostalgic, cheesy
+        spatial_distortion: Forced smile
+        atmosphere: Awkward, funny
+        key_features: Laser background
+    - id: SP01-052
+      name: Sports Action
+      category: 4. Genres
+      negativePrompt: static, slow
+      style:
+        aesthetic: High speed athlete
+        form_and_line: Frozen muscle
+        color_palette: Vibrant jersey colors
+        lighting_setup: Stadium floodlights
+        material_texture: Sweat, dirt
+        render_quality: Sports Illustrated, sharp
+        spatial_distortion: Motion blur background
+        atmosphere: Intense, fast
+        key_features: Action freeze
+    - id: SP01-053
+      name: Wildlife Photography
+      category: 4. Genres
+      negativePrompt: zoo, cage, pet
+      style:
+        aesthetic: Animal in nature
+        form_and_line: Telephoto compression
+        color_palette: Natural camouflage
+        lighting_setup: Golden hour
+        material_texture: Fur, feather detail
+        render_quality: Nat Geo, wild
+        spatial_distortion: None
+        atmosphere: Wild, patient
+        key_features: Blurred background
+    - id: SP01-064
+      name: Concert Photography
+      category: 4. Genres
+      negativePrompt: quiet, bright
+      style:
+        aesthetic: Band on stage
+        form_and_line: Silhouettes in fog
+        color_palette: Stage lights (Red/Blue)
+        lighting_setup: Beams, spots
+        material_texture: Fog, sweat, grain
+        render_quality: Rock n roll, loud
+        spatial_distortion: None
+        atmosphere: Energetic, loud
+        key_features: Crowd hands
     - id: SP01-067
       name: Wedding Photography
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: sad, dark
       style:
         aesthetic: Bride and Groom
@@ -932,7 +736,7 @@
         key_features: Veil
     - id: SP01-068
       name: Newborn Photography
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: awake, crying
       style:
         aesthetic: Sleeping baby
@@ -944,23 +748,9 @@
         spatial_distortion: None
         atmosphere: Tiny, fragile
         key_features: Sleeping
-    - id: SP01-069
-      name: Boudoir Photography
-      category: 5. Genres
-      negativePrompt: explicit, harsh
-      style:
-        aesthetic: Intimate portrait
-        form_and_line: Curves
-        color_palette: Warm, dark, red
-        lighting_setup: Moody, window
-        material_texture: Lace, sheets, skin
-        render_quality: Sensual, private
-        spatial_distortion: None
-        atmosphere: Intimate, soft
-        key_features: Bed or window
     - id: SP01-070
       name: Travel Photography
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: tourist trap, selfie
       style:
         aesthetic: Exotic location
@@ -972,9 +762,37 @@
         spatial_distortion: None
         atmosphere: Adventurous, beautiful
         key_features: Landmark
+    - id: SP01-076
+      name: Forensic Photography
+      category: 4. Genres
+      negativePrompt: artistic, emotional
+      style:
+        aesthetic: Crime scene evidence
+        form_and_line: Clinical, ruler scale
+        color_palette: Neutral, flash
+        lighting_setup: Flat flash
+        material_texture: Detail focus
+        render_quality: Objective, cold
+        spatial_distortion: None
+        atmosphere: Unsettling, factual
+        key_features: Evidence marker
+    - id: SP01-062
+      name: Corporate Stock Photo
+      category: 4. Genres
+      negativePrompt: sad, dark, weird
+      style:
+        aesthetic: Happy people working
+        form_and_line: Clean
+        color_palette: Bright, blue tint
+        lighting_setup: Office bright
+        material_texture: Clean
+        render_quality: Generic, safe
+        spatial_distortion: Fake smiles
+        atmosphere: Professional, fake
+        key_features: Handshake
     - id: SP01-071
       name: Flat Lay
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: perspective, messy
       style:
         aesthetic: Objects arranged on table
@@ -986,9 +804,37 @@
         spatial_distortion: None
         atmosphere: Satisfying, clean
         key_features: 90 degree angle
+    - id: SP01-047
+      name: Landscape (Ansel Adams)
+      category: 4. Genres
+      negativePrompt: color, city
+      style:
+        aesthetic: Epic nature vista
+        form_and_line: Sharp f/64 focus
+        color_palette: Black and White Zone System
+        lighting_setup: Dramatic sun/cloud
+        material_texture: Rock, cloud detail
+        render_quality: Masterpiece, sharp
+        spatial_distortion: None
+        atmosphere: Grand, timeless
+        key_features: High contrast sky
+    - id: SP01-058
+      name: Minimalist Photo
+      category: 4. Genres
+      negativePrompt: busy, detailed
+      style:
+        aesthetic: Simple composition
+        form_and_line: Negative space
+        color_palette: Two or three tones
+        lighting_setup: Flat
+        material_texture: Smooth
+        render_quality: Fine art, graphic
+        spatial_distortion: None
+        atmosphere: Calm, empty
+        key_features: Isolation
     - id: SP01-072
       name: Tilt-Shift (Miniature)
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: sharp everywhere
       style:
         aesthetic: City looks like toys
@@ -1002,7 +848,7 @@
         key_features: Miniature effect
     - id: SP01-073
       name: Long Exposure (Water)
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: frozen water, sharp waves
       style:
         aesthetic: Silky waterfall or sea
@@ -1014,93 +860,9 @@
         spatial_distortion: Motion blur water
         atmosphere: Calm, ethereal
         key_features: Silky water
-    - id: SP01-074
-      name: Bokeh Panorama (Brenizer)
-      category: 5. Genres
-      negativePrompt: deep focus
-      style:
-        aesthetic: Wide angle with shallow depth
-        form_and_line: Subject pop
-        color_palette: Vibrant
-        lighting_setup: Natural
-        material_texture: Blurry background
-        render_quality: Impossible depth of field
-        spatial_distortion: Swirly bokeh
-        atmosphere: Epic portrait
-        key_features: Thin focus plane
-    - id: SP01-075
-      name: Urbex (Urban Exploration)
-      category: 5. Genres
-      negativePrompt: clean, new, people
-      style:
-        aesthetic: Abandoned building interior
-        form_and_line: Decay, peeling paint
-        color_palette: Desaturated, rust
-        lighting_setup: Shafts of light
-        material_texture: Dust, debris
-        render_quality: Gritty, haunting
-        spatial_distortion: None
-        atmosphere: Lonely, post-apocalyptic
-        key_features: Ruins
-    - id: SP01-076
-      name: Forensic Photography
-      category: 5. Genres
-      negativePrompt: artistic, emotional
-      style:
-        aesthetic: Crime scene evidence
-        form_and_line: Clinical, ruler scale
-        color_palette: Neutral, flash
-        lighting_setup: Flat flash
-        material_texture: Detail focus
-        render_quality: Objective, cold
-        spatial_distortion: None
-        atmosphere: Unsettling, factual
-        key_features: Evidence marker
-    - id: SP01-077
-      name: Medical Photography
-      category: 5. Genres
-      negativePrompt: artistic, shadow
-      style:
-        aesthetic: Surgery or anatomy
-        form_and_line: Clean, gross
-        color_palette: Red, Blue scrubs
-        lighting_setup: Bright surgical light
-        material_texture: Flesh, metal
-        render_quality: Clinical, sharp
-        spatial_distortion: None
-        atmosphere: Sterile, intense
-        key_features: Clean background
-    - id: SP01-078
-      name: School Portrait
-      category: 5. Genres
-      negativePrompt: cool, candid
-      style:
-        aesthetic: Awkward yearbook photo
-        form_and_line: Stiff pose
-        color_palette: Blue mottled background
-        lighting_setup: Flat studio
-        material_texture: Bad hair day
-        render_quality: Nostalgic, cheesy
-        spatial_distortion: Forced smile
-        atmosphere: Awkward, funny
-        key_features: Laser background
-    - id: SP01-079
-      name: Mugshot
-      category: 5. Genres
-      negativePrompt: happy, posed
-      style:
-        aesthetic: Police booking photo
-        form_and_line: Height chart
-        color_palette: Grey, flat
-        lighting_setup: Flat
-        material_texture: Rough skin
-        render_quality: Criminal, raw
-        spatial_distortion: Dead eyes
-        atmosphere: Serious, trouble
-        key_features: Height lines
     - id: SP01-080
       name: Passport Photo
-      category: 5. Genres
+      category: 4. Genres
       negativePrompt: smiling, artistic
       style:
         aesthetic: ID photo
@@ -1112,3 +874,241 @@
         spatial_distortion: Neutral expression
         atmosphere: Official, deadpan
         key_features: White background
+    - id: SP01-075
+      name: Urbex (Urban Exploration)
+      category: 4. Genres
+      negativePrompt: clean, new, people
+      style:
+        aesthetic: Abandoned building interior
+        form_and_line: Decay, peeling paint
+        color_palette: Desaturated, rust
+        lighting_setup: Shafts of light
+        material_texture: Dust, debris
+        render_quality: Gritty, haunting
+        spatial_distortion: None
+        atmosphere: Lonely, post-apocalyptic
+        key_features: Ruins
+    - id: SP01-054
+      name: Astrophotography
+      category: 4. Genres
+      negativePrompt: day, clouds
+      style:
+        aesthetic: Milky Way landscape
+        form_and_line: Star trails (optional)
+        color_palette: Deep Blue, Purple, White stars
+        lighting_setup: Starlight
+        material_texture: Noise (stars)
+        render_quality: Long exposure, epic
+        spatial_distortion: None
+        atmosphere: Cosmic, silent
+        key_features: Night sky
+    - id: SP01-055
+      name: Underwater
+      category: 4. Genres
+      negativePrompt: dry, land
+      style:
+        aesthetic: Submerged subject
+        form_and_line: Floating hair/cloth
+        color_palette: Cyan, Blue cast
+        lighting_setup: Caustics (light rays)
+        material_texture: Bubbles, refraction
+        render_quality: Dreamy, weightless
+        spatial_distortion: Refraction distortion
+        atmosphere: Silent, deep
+        key_features: Blue tint
+    - id: SP01-048
+      name: Macro Photography
+      category: 4. Genres
+      negativePrompt: wide angle, blurry subject
+      style:
+        aesthetic: Extreme close-up
+        form_and_line: Shallow depth of field
+        color_palette: Vibrant detail
+        lighting_setup: Ring flash
+        material_texture: Insect eye, leaf vein
+        render_quality: Scientific, abstract
+        spatial_distortion: Blurry background
+        atmosphere: Alien, detailed
+        key_features: Tiny world
+    - id: SP01-059
+      name: Abstract Photo
+      category: 4. Genres
+      negativePrompt: recognizable object
+      style:
+        aesthetic: Unrecognizable forms
+        form_and_line: Shape and color
+        color_palette: Bold
+        lighting_setup: Experimental
+        material_texture: Macro or motion blur
+        render_quality: Artistic, confusion
+        spatial_distortion: Total abstraction
+        atmosphere: Conceptual
+        key_features: No subject
+    - id: SP01-079
+      name: Mugshot
+      category: 4. Genres
+      negativePrompt: happy, posed
+      style:
+        aesthetic: Police booking photo
+        form_and_line: Height chart
+        color_palette: Grey, flat
+        lighting_setup: Flat
+        material_texture: Rough skin
+        render_quality: Criminal, raw
+        spatial_distortion: Dead eyes
+        atmosphere: Serious, trouble
+        key_features: Height lines
+    - id: SP01-077
+      name: Medical Photography
+      category: 4. Genres
+      negativePrompt: artistic, shadow
+      style:
+        aesthetic: Surgery or anatomy
+        form_and_line: Clean, gross
+        color_palette: Red, Blue scrubs
+        lighting_setup: Bright surgical light
+        material_texture: Flesh, metal
+        render_quality: Clinical, sharp
+        spatial_distortion: None
+        atmosphere: Sterile, intense
+        key_features: Clean background
+    - id: SP01-027
+      name: Dashcam
+      category: 5. Camera Types
+      negativePrompt: portrait, studio
+      style:
+        aesthetic: Car windshield view
+        form_and_line: Wide angle
+        color_palette: Digital, utilitarian
+        lighting_setup: Headlights or street
+        material_texture: Windshield reflection, rain
+        render_quality: Raw, accident footage
+        spatial_distortion: Motion blur
+        atmosphere: Real, urgent
+        key_features: Dashboard visible
+    - id: SP01-023
+      name: GoPro Wide
+      category: 5. Camera Types
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: Action camera POV
+        form_and_line: Fisheye distortion
+        color_palette: Vibrant, sharp
+        lighting_setup: Outdoor, harsh
+        material_texture: Digital sharpening
+        render_quality: Action sports, vlog
+        spatial_distortion: Curved horizon
+        atmosphere: Active, immersive
+        key_features: Wide FOV
+    - id: SP01-025
+      name: CCTV Security
+      category: 5. Camera Types
+      negativePrompt: hd, 4k, clean
+      style:
+        aesthetic: Surveillance footage
+        form_and_line: Low resolution, interlaced
+        color_palette: Desaturated or B&W
+        lighting_setup: High contrast, night vision
+        material_texture: Compression artifacts, scanlines
+        render_quality: Gritty, crime
+        spatial_distortion: Wide angle distortion
+        atmosphere: Creepy, voyeuristic
+        key_features: Timestamp overlay
+    - id: SP01-021
+      name: Large Format (4x5)
+      category: 5. Camera Types
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: View camera photo
+        form_and_line: Incredible detail
+        color_palette: Rich, smooth tones
+        lighting_setup: Controlled
+        material_texture: Zero grain
+        render_quality: Ansel Adams, fine art
+        spatial_distortion: Tilt-shift potential
+        atmosphere: Grand, still
+        key_features: Extreme resolution
+    - id: SP01-022
+      name: Disposable Camera
+      category: 5. Camera Types
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: Cheap plastic lens photo
+        form_and_line: Soft corners
+        color_palette: High contrast, cheap flash
+        lighting_setup: Direct flash
+        material_texture: Grainy
+        render_quality: Party photo, candid
+        spatial_distortion: Chromatic aberration
+        atmosphere: Fun, cheap
+        key_features: Flash falloff
+    - id: SP01-024
+      name: Drone Aerial
+      category: 5. Camera Types
+      negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+      style:
+        aesthetic: Top-down view
+        form_and_line: Geometric landscape
+        color_palette: Saturated
+        lighting_setup: Flat (noon) or long shadows
+        material_texture: Sharp digital
+        render_quality: DJI, travel
+        spatial_distortion: Flattened perspective
+        atmosphere: Epic, overview
+        key_features: Bird's eye view
+    - id: SP01-030
+      name: Telescope (Hubble)
+      category: 5. Camera Types
+      negativePrompt: earth, ground
+      style:
+        aesthetic: Deep space astrophotography
+        form_and_line: Nebula clouds
+        color_palette: False color (NASA palette)
+        lighting_setup: Star glow
+        material_texture: Gas, dust, stars
+        render_quality: Cosmic, epic
+        spatial_distortion: None
+        atmosphere: Awe-inspiring, vast
+        key_features: Star field
+    - id: SP01-026
+      name: Pinhole Camera
+      category: 5. Camera Types
+      negativePrompt: sharp, lens flare
+      style:
+        aesthetic: Lensless photography
+        form_and_line: Soft everywhere
+        color_palette: Vignetted
+        lighting_setup: Long exposure motion blur
+        material_texture: Diffraction blur
+        render_quality: Dreamy, experimental
+        spatial_distortion: Infinite depth of field (soft)
+        atmosphere: Surreal, time passing
+        key_features: Soft focus
+    - id: SP01-029
+      name: Microscope (SEM)
+      category: 5. Camera Types
+      negativePrompt: color, macro
+      style:
+        aesthetic: Electron microscope scan
+        form_and_line: Incredible texture detail
+        color_palette: Greyscale
+        lighting_setup: Directional electron beam
+        material_texture: Fractal patterns
+        render_quality: Scientific, alien
+        spatial_distortion: Extreme magnification
+        atmosphere: Scientific, scary
+        key_features: B&W depth
+    - id: SP01-028
+      name: Thermal Camera
+      category: 5. Camera Types
+      negativePrompt: realistic colors
+      style:
+        aesthetic: Heat map imaging
+        form_and_line: Blobby heat signatures
+        color_palette: Ironbow (Purple to Yellow)
+        lighting_setup: Emissive
+        material_texture: Digital noise
+        render_quality: Military, scientific
+        spatial_distortion: No surface detail
+        atmosphere: Predator, tech
+        key_features: Heat gradient

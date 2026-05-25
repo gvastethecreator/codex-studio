@@ -1,4 +1,5 @@
 import type { ImageGenerationConfig, RecipeId } from '../types';
+import { extractRecipeIdFromRecipeContext } from '../packages/shared/src';
 
 type RegisteredRecipeId = Exclude<RecipeId, null>;
 type RecipeContextParams = Record<string, unknown>;
@@ -466,19 +467,8 @@ export function resolveGenerationConfig(config: ImageGenerationConfig): ImageGen
 }
 
 export function parseRecipeIdFromContext(context: string = ''): RecipeId {
-  const match = context.match(/^recipe:\s*(\w+)$/m);
-  if (match?.[1] && match[1] in builders) {
-    return match[1] as RegisteredRecipeId;
-  }
-
-  if (context.includes('STYLE TRANSFER PROTOCOL')) return 'styles';
-  if (context.includes('TIMELINE FRAME PROMPT')) return 'timeline';
-  if (context.includes('CAMERA VIEW PROMPT')) return 'camera';
-  if (context.includes('SPRITE SHEET PROMPT')) return 'spritesheet';
-  if (context.includes('STORYBOARD CONTACT SHEET')) return 'cinematic';
-  if (context.includes('CHARACTER SHEET PROMPT')) return 'character';
-  if (context.includes('Image Remastering and Restoration') || context.includes('PRO RESTORATION'))
-    return 'remaster';
+  const recipeId = extractRecipeIdFromRecipeContext(context);
+  if (recipeId && recipeId in builders) return recipeId as RegisteredRecipeId;
   return null;
 }
 

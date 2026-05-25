@@ -79,5 +79,203 @@
     "category": "5. Ink & Print",
     "error": "Job e28e32b2-7131-4fa0-8eb0-cc2da9695e9f status needs_review",
     "failedAt": "2026-05-06T15:25:36.405Z"
+  },
+  {
+    "presetId": "SP04-081",
+    "presetName": "Thumbnail Silhouette Exploration",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 5637aa42-71ad-470f-a676-5aa926025f5a ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.235Z"
+  },
+  {
+    "presetId": "SP04-082",
+    "presetName": "Photobash Paintover Iteration",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 5138a0b1-ae60-41d9-88b6-3cd346330407 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.311Z"
+  },
+  {
+    "presetId": "SP04-083",
+    "presetName": "Loose Gesture Energy Sketch",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 2e8241d9-7133-4d62-93ae-5dbda44d369b ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.333Z"
+  },
+  {
+    "presetId": "SP04-084",
+    "presetName": "Material Texture Exploration Sheet",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job ca3e4023-98fb-4b94-ad8a-ba140c13bd03 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.338Z"
+  },
+  {
+    "presetId": "SP04-085",
+    "presetName": "Mood Color Script Pass",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 2b7d15a0-5f55-4fb5-9693-da753be7d983 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.352Z"
+  },
+  {
+    "presetId": "SP04-086",
+    "presetName": "Callout Detail Sheet",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job fc52e2c4-cd42-4a7e-804a-aa6aa4ce14e4 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.421Z"
+  },
+  {
+    "presetId": "SP04-087",
+    "presetName": "Silhouette Iteration Sheet",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 293d2935-a25e-46e3-b85d-375b0a5277f8 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.434Z"
+  },
+  {
+    "presetId": "SP04-088",
+    "presetName": "Rough Environment Pass",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 2f5c702a-54b9-4c6d-840f-fde6b6ea7d9d ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.450Z"
+  },
+  {
+    "presetId": "SP04-089",
+    "presetName": "Creature Design Iteration",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job cb3bbbd4-fe3a-42e8-803f-a64c9f3148ca ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.466Z"
+  },
+  {
+    "presetId": "SP04-090",
+    "presetName": "Prop Variant Design Sheet",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 66cef017-f39a-455e-8720-c982a97d77db ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.549Z"
+  },
+  {
+    "presetId": "SP04-091",
+    "presetName": "Architecture Massing Model",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job de18f8f7-25d6-4618-9f34-1901691a6295 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.569Z"
+  },
+  {
+    "presetId": "SP04-092",
+    "presetName": "Costume Design Exploration Board",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job e02142ce-56ad-4f69-90d3-1f9fafa60e6a ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.572Z"
+  },
+  {
+    "presetId": "SP04-093",
+    "presetName": "Lighting Scenario Pass",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job d9c7641f-8bd2-454a-ae03-bb7e82516601 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.587Z"
+  },
+  {
+    "presetId": "SP04-094",
+    "presetName": "Anatomy Reference Sheet",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job e3ceec63-7a51-4d20-8a83-768ec077c518 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.663Z"
+  },
+  {
+    "presetId": "SP04-095",
+    "presetName": "Foliage Design Kit",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 8cea181e-1118-400d-8035-6e6838d8ca51 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.679Z"
+  },
+  {
+    "presetId": "SP04-096",
+    "presetName": "Weapon Tier Progression",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job b3c337ce-a336-4868-b4f4-ec6adb9ecc94 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.690Z"
+  },
+  {
+    "presetId": "SP04-097",
+    "presetName": "Composition Thumbnail Grid",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job b8269dfe-e746-4409-863a-473da91094d4 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.709Z"
+  },
+  {
+    "presetId": "SP04-098",
+    "presetName": "World Map Concept",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 9802993e-914c-4f01-b162-557d7f6af782 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.779Z"
+  },
+  {
+    "presetId": "SP04-099",
+    "presetName": "UI/HUD Wireframe Concept",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job 8a34decb-0e71-4200-9bf3-a22f10764c48 ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.790Z"
+  },
+  {
+    "presetId": "SP04-100",
+    "presetName": "Monster Size Comparison Chart",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job b8925ed8-3b6b-415e-a0b6-ba63513920ed ended as failed: ENOENT: no such file or directory, uv_spawn 'C:\\Users\\cristian\\AppData\\Roaming\\npm\\codex'",
+    "failedAt": "2026-05-24T00:26:57.804Z"
+  },
+  {
+    "presetId": "SP04-086",
+    "presetName": "Callout Detail Sheet",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job f22028ff-c18e-4cdd-a906-08b670b173c9 status needs_review",
+    "failedAt": "2026-05-24T00:45:17.731Z"
+  },
+  {
+    "presetId": "SP04-083",
+    "presetName": "Loose Gesture Energy Sketch",
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Concept Art",
+    "error": "Job a4470db2-078e-4d10-a808-015f9f32d7c3 disappeared from /api/jobs",
+    "failedAt": "2026-05-24T02:32:05.498Z"
   }
 ]

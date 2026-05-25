@@ -219,7 +219,12 @@ export function createWorkerController({
     publishEventFn('catalog.created', catalogImage);
     updateJobStatusFn(job.id, 'completed');
     publishEventFn('job.completed', getJobFn(job.id));
-    logger('info', 'worker', `Dry run job completed. Asset: ${path.basename(asset.filePath)}`, job.id);
+    logger(
+      'info',
+      'worker',
+      `Dry run job completed. Asset: ${path.basename(asset.filePath)}`,
+      job.id,
+    );
   }
 
   async function runCodexJob(job: Job, signal?: AbortSignal) {
@@ -261,7 +266,11 @@ export function createWorkerController({
 
     const ext = path.extname(discoveredImagePath).toLowerCase();
     const mimeType =
-      ext === '.jpg' || ext === '.jpeg' ? 'image/jpeg' : ext === '.webp' ? 'image/webp' : 'image/png';
+      ext === '.jpg' || ext === '.jpeg'
+        ? 'image/jpeg'
+        : ext === '.webp'
+          ? 'image/webp'
+          : 'image/png';
     const asset = addAssetFn({
       projectId: job.projectId,
       jobId: job.id,
@@ -316,7 +325,12 @@ export function createWorkerController({
     publishEventFn('catalog.created', catalogImage);
     updateJobStatusFn(job.id, 'completed');
     publishEventFn('job.completed', getJobFn(job.id));
-    logger('info', 'worker', `Codex job completed. Asset: ${path.basename(asset.filePath)}`, job.id);
+    logger(
+      'info',
+      'worker',
+      `Codex job completed. Asset: ${path.basename(asset.filePath)}`,
+      job.id,
+    );
   }
 
   async function processJob(job: Job) {
@@ -433,24 +447,25 @@ export function createWorkerController({
   };
 }
 
-const defaultWorkerController = createWorkerController();
+let defaultWorkerController: WorkerController | null = null;
 
 export function getDefaultWorkerController() {
+  defaultWorkerController ??= createWorkerController();
   return defaultWorkerController;
 }
 
 export function enqueueJob(job: Job) {
-  defaultWorkerController.enqueueJob(job);
+  getDefaultWorkerController().enqueueJob(job);
 }
 
 export function cancelQueuedOrRunningJob(jobId: string) {
-  return defaultWorkerController.cancelQueuedOrRunningJob(jobId);
+  return getDefaultWorkerController().cancelQueuedOrRunningJob(jobId);
 }
 
 export function getWorkerStatus() {
-  return defaultWorkerController.getWorkerStatus();
+  return getDefaultWorkerController().getWorkerStatus();
 }
 
 export async function resetWorkerState() {
-  return defaultWorkerController.resetWorkerState();
+  return getDefaultWorkerController().resetWorkerState();
 }

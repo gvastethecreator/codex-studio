@@ -61,6 +61,13 @@ export function ensureAppServer(reason: AppServerEnsureReason = 'session') {
   diagnostics.lastEnsureAt = new Date().toISOString();
   diagnostics.lastEnsureReason = reason;
 
+  if (process.env.STUDIO_ASSUME_APP_SERVER_RUNNING === '1') {
+    diagnostics.lastStartError = null;
+    diagnostics.lastStartAt = diagnostics.lastStartAt || new Date().toISOString();
+    diagnostics.lastInvocation = diagnostics.lastInvocation || ['existing app-server'];
+    return;
+  }
+
   if (isAppServerRunning()) return;
 
   const logPath = resolveLibraryPath('logs', 'app-server.log');

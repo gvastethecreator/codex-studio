@@ -1,31 +1,21 @@
 import { mkdir, readFile, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { Database } from 'bun:sqlite';
-import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
+import {
+  buildStyleDefaultPresetIndex,
+  createStyleDefaultManifestEntry,
+  resolveStyleDefaultPresetFromPrompt,
+  type StyleDefaultManifestEntry,
+  type StyleDefaultPresetMatch,
+} from '../lib/styleDefaultAssetPipeline';
 import {
   RECIPE_ASSET_EXTENSION,
   defaultStudioLibraryDir,
   defaultsDir,
   loadPacks,
   repoRelative,
-  sanitizeCategory,
   writeRepoWebpAsset,
 } from './style-default-utils';
-
-interface ManifestEntry {
-  presetId: string;
-  presetName: string;
-  packId: string;
-  packName: string;
-  category: string;
-  file: string;
-  jobId: string;
-  sourceAsset: string;
-  generationMode: 'text-to-image';
-  model: string;
-  reasoningEffort: string;
-  generatedAt: string;
-}
 
 interface JobAssetRow {
   job_id: string;
@@ -59,81 +49,23 @@ async function exists(filePath: string) {
 async function loadManifest(packId: string) {
   try {
     const parsed = JSON.parse(await readFile(manifestPathForPack(packId), 'utf8')) as
-      | ManifestEntry[]
-      | ManifestEntry;
+      | StyleDefaultManifestEntry[]
+      | StyleDefaultManifestEntry;
     return Array.isArray(parsed) ? parsed : [parsed];
   } catch {
     return [];
   }
 }
 
-async function saveManifest(packId: string, entries: ManifestEntry[]) {
+async function saveManifest(packId: string, entries: StyleDefaultManifestEntry[]) {
   entries.sort((a, b) => a.presetId.localeCompare(b.presetId));
   await writeFile(manifestPathForPack(packId), `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
-}
-
-function buildPresetIndex(packs: StylePack[]) {
-  const byTarget = new Map<string, { pack: StylePack; preset: StylePresetDef }[]>();
-  const byPackCategoryTarget = new Map<string, { pack: StylePack; preset: StylePresetDef }>();
-  const byName = new Map<string, { pack: StylePack; preset: StylePresetDef }[]>();
-
-  for (const pack of packs) {
-    for (const preset of pack.presets) {
-      const target = preset.name.toUpperCase();
-      const category = sanitizeCategory(preset.category).toLowerCase();
-      const packName = pack.name.toLowerCase();
-      const targetList = byTarget.get(target) || [];
-      targetList.push({ pack, preset });
-      byTarget.set(target, targetList);
-      byPackCategoryTarget.set(`${packName}::${category}::${target}`, { pack, preset });
-      const list = byName.get(preset.name) || [];
-      list.push({ pack, preset });
-      byName.set(preset.name, list);
-    }
-  }
-
-  return { byTarget, byPackCategoryTarget, byName };
-}
-
-function resolvePreset(row: JobAssetRow, index: ReturnType<typeof buildPresetIndex>) {
-  const target = row.final_prompt_used
-    .match(/TARGET STYLE:\s*([^\n]+)/i)?.[1]
-    ?.trim()
-    .toUpperCase();
-  const packName = row.final_prompt_used
-    .match(/^PACK:\s*(.+)$/im)?.[1]
-    ?.trim()
-    .toLowerCase();
-  const category = row.final_prompt_used
-    .match(/^CATEGORY:\s*(.+)$/im)?.[1]
-    ?.trim()
-    .toLowerCase();
-
-  if (target && packName && category) {
-    const exact = index.byPackCategoryTarget.get(`${packName}::${category}::${target}`);
-    if (exact) return exact;
-  }
-
-  if (target) {
-    const matches = index.byTarget.get(target);
-    if (matches?.length === 1) return matches[0];
-  }
-
-  const explicit = row.final_prompt_used
-    .match(/Make the result immediately recognizable as "([^"]+)"/i)?.[1]
-    ?.trim();
-  if (explicit) {
-    const matches = index.byName.get(explicit);
-    if (matches?.length === 1) return matches[0];
-  }
-
-  return undefined;
 }
 
 await mkdir(defaultsDir, { recursive: true });
 
 const packs = await loadPacks();
-const index = buildPresetIndex(packs);
+const index = buildStyleDefaultPresetIndex(packs);
 const db = new Database(dbPath, { readonly: true });
 const rows = db
   .query(`
@@ -152,7 +84,7 @@ const rows = db
   `)
   .all() as JobAssetRow[];
 
-const manifestByPack = new Map<string, Map<string, ManifestEntry>>();
+const manifestByPack = new Map<string, Map<string, StyleDefaultManifestEntry>>();
 for (const pack of packs) {
   manifestByPack.set(
     pack.id,
@@ -164,14 +96,11 @@ let copied = 0;
 let skippedExisting = 0;
 let unresolved = 0;
 const unresolvedRows: Pick<JobAssetRow, 'job_id' | 'file_path' | 'status'>[] = [];
-const latestByPreset = new Map<
-  string,
-  { pack: StylePack; preset: StylePresetDef; row: JobAssetRow }
->();
+const latestByPreset = new Map<string, StyleDefaultPresetMatch & { row: JobAssetRow }>();
 
 for (const row of rows) {
   if (Date.parse(row.asset_created_at) < sinceTime) continue;
-  const resolved = resolvePreset(row, index);
+  const resolved = resolveStyleDefaultPresetFromPrompt(row.final_prompt_used, index);
   if (!resolved) {
     unresolved += 1;
     unresolvedRows.push({ job_id: row.job_id, file_path: row.file_path, status: row.status });
@@ -181,11 +110,11 @@ for (const row of rows) {
   const { pack, preset } = resolved;
   const current = latestByPreset.get(preset.id);
   if (!current || Date.parse(row.asset_created_at) > Date.parse(current.row.asset_created_at)) {
-    latestByPreset.set(preset.id, { pack, preset, row });
+    latestByPreset.set(preset.id, { ...resolved, row });
   }
 }
 
-for (const { pack, preset, row } of latestByPreset.values()) {
+for (const { pack, preset, category, row } of latestByPreset.values()) {
   const destination = path.join(defaultsDir, `${preset.id}${RECIPE_ASSET_EXTENSION}`);
   const manifest = manifestByPack.get(pack.id);
   if (!manifest) continue;
@@ -194,20 +123,20 @@ for (const { pack, preset, row } of latestByPreset.values()) {
     skippedExisting += 1;
     if (!manifest.has(preset.id)) {
       const repoFile = repoRelative(destination);
-      manifest.set(preset.id, {
-        presetId: preset.id,
-        presetName: preset.name,
-        packId: pack.id,
-        packName: pack.name,
-        category: sanitizeCategory(preset.category),
-        file: repoFile,
-        jobId: row.job_id,
-        sourceAsset: repoFile,
-        generationMode: 'text-to-image',
-        model: reconciledModel,
-        reasoningEffort: reconciledReasoningEffort,
-        generatedAt: row.asset_created_at,
-      });
+      manifest.set(
+        preset.id,
+        createStyleDefaultManifestEntry({
+          pack,
+          preset,
+          category,
+          file: repoFile,
+          jobId: row.job_id,
+          sourceAsset: repoFile,
+          model: reconciledModel,
+          reasoningEffort: reconciledReasoningEffort,
+          generatedAt: row.asset_created_at,
+        }),
+      );
     }
     continue;
   }
@@ -215,20 +144,20 @@ for (const { pack, preset, row } of latestByPreset.values()) {
   console.log(`[copy] ${preset.id} ${pack.id} ${preset.name} <- ${path.basename(row.file_path)}`);
   if (!dryRun) await writeRepoWebpAsset(row.file_path, destination);
   const repoFile = repoRelative(destination);
-  manifest.set(preset.id, {
-    presetId: preset.id,
-    presetName: preset.name,
-    packId: pack.id,
-    packName: pack.name,
-    category: sanitizeCategory(preset.category),
-    file: repoFile,
-    jobId: row.job_id,
-    sourceAsset: repoFile,
-    generationMode: 'text-to-image',
-    model: reconciledModel,
-    reasoningEffort: reconciledReasoningEffort,
-    generatedAt: row.asset_created_at,
-  });
+  manifest.set(
+    preset.id,
+    createStyleDefaultManifestEntry({
+      pack,
+      preset,
+      category,
+      file: repoFile,
+      jobId: row.job_id,
+      sourceAsset: repoFile,
+      model: reconciledModel,
+      reasoningEffort: reconciledReasoningEffort,
+      generatedAt: row.asset_created_at,
+    }),
+  );
   copied += 1;
 }
 

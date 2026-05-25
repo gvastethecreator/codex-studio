@@ -4,7 +4,7 @@
     "presetName": "Water Damage",
     "packId": "pack_09",
     "packName": "Texture & Materiality",
-    "category": "3. Weathering & Decay",
+    "category": "4. Weathering & Decay",
     "error": "Job 77b80370-7340-4d07-895b-4d1e2513bd57 ended as cancelled: Cancelled during server cutover to persistent category threads.",
     "failedAt": "2026-05-06T03:17:13.853Z"
   }

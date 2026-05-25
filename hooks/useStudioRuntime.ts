@@ -20,6 +20,7 @@ interface UseStudioRuntimeProps {
   mergeBatches: MergeBatches;
   addToast: (message: string, type?: Toast['type']) => void;
   shouldAutoOpen: boolean;
+  onCatalogChanged?: () => void;
 }
 
 /**
@@ -34,12 +35,12 @@ export function useStudioRuntime({
   mergeBatches,
   addToast,
   shouldAutoOpen,
+  onCatalogChanged,
 }: UseStudioRuntimeProps) {
   const sync = useLocalStudioSync({
     logs,
     log,
-    batches,
-    mergeBatches,
+    onCatalogChanged,
   });
   const recovery = useStudioStorageRecovery({
     batches,

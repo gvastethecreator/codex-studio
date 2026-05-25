@@ -16,6 +16,7 @@ export const categoryBasesDir = path.join(recipeStylesDir, 'category-bases');
 export const defaultsDir = path.join(recipeStylesDir, 'defaults');
 export const previewsDir = path.join(recipeStylesDir, 'previews');
 export const RECIPE_ASSET_EXTENSION = '.webp';
+export const IMAGEGEN_DENOISE_SUFFIX = 'Apply a heavy strong denoise to the image.';
 export const defaultStudioLibraryDir = path.join(homeDir, 'AI-Studio-Library');
 export const defaultCodexHome = path.join(homeDir, '.codex');
 
@@ -127,4 +128,8 @@ export async function request<T>(pathName: string, init?: RequestInit): Promise<
 
 export function dataUrlFromBytes(bytes: Uint8Array, mimeType = 'image/png') {
   return `data:${mimeType};base64,${Buffer.from(bytes).toString('base64')}`;
+}
+
+export function appendImagegenDenoiseDirective(prompt: string) {
+  return `${prompt.trim()}\n\nPOST-PROCESSING:\n${IMAGEGEN_DENOISE_SUFFIX}`;
 }
