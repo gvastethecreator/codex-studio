@@ -1,5 +1,6 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import type { GenerationTaskSpec } from '../../../packages/shared/src';
 
 export interface RawReference {
   name: string;
@@ -111,5 +112,56 @@ export async function processReferences(
   return {
     persistedRefs,
     augmentedPrompt: buildPromptWithReferences(prompt, persistedRefs),
+  };
+}
+
+export function hydrateSourceSpecAssetPaths(
+  sourceSpec: GenerationTaskSpec | null | undefined,
+  references: RawReference[],
+  persistedRefs: ProcessedReference[],
+) {
+  if (!sourceSpec || sourceSpec.assets.length === 0 || references.length === 0) {
+    return sourceSpec ?? null;
+  }
+
+  let referenceIndex = 0;
+
+  const hydratedAssets = sourceSpec.assets.map((asset) => {
+    if (!asset.dataUrl) {
+      return asset;
+    }
+
+    while (referenceIndex < references.length) {
+      const rawReference = references[referenceIndex];
+      const persistedRef = persistedRefs[referenceIndex] ?? null;
+      referenceIndex += 1;
+
+      const nameMatches = !asset.name || !rawReference?.name || asset.name === rawReference.name;
+      const strengthMatches =
+        asset.strength == null ||
+        rawReference?.strength == null ||
+        Math.abs(asset.strength - rawReference.strength) < 0.000_001;
+
+      if (!nameMatches || !strengthMatches) {
+        continue;
+      }
+
+      if (!persistedRef) {
+        return asset;
+      }
+
+      return {
+        ...asset,
+        localPath: persistedRef.path,
+        strength: asset.strength ?? rawReference.strength ?? persistedRef.strength,
+      };
+    }
+
+    return asset;
+  });
+
+  return {
+    ...sourceSpec,
+    assets: hydratedAssets,
   };
 }

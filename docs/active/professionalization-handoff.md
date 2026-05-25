@@ -44,20 +44,27 @@ All gates last verified 2026-05-25:
 - `bun run build` → UI + server clean
 - `bun run providers:verify` → 17 rows, all clean
 - `bun run recipes:verify` → catalog OK, source audit 0 violations
-- `bun run styles:verify` → 11 packs, 1,252 presets, full taxonomy/default coverage, runtime current, source audit OK
-- Remaining build warnings: `StylesRecipe` (1,182 KB), `index` (1,114 KB), `CameraAnglesRecipe` (557 KB), `vite:asset` timing
+- `bun run styles:verify` → 11 packs, 1,253 presets, full taxonomy/default coverage (1 new preset without image), runtime current, source audit OK
 
 
+
+## Providers State (2026-05-25)
+
+- **Codex**: full provider boundary with compiled inputs, stable session contract, Recipe Provider Directives preferred over legacy context.
+- **Dry run**: diagnostic adapter active.
+- **fal.ai**: hosted executor complete — retries, CDN upload, hosted result normalization, asset role mapping (`input`→`image_url`, `mask`→`mask_url`, `control`→`control_image_url`, `reference`→`reference_image_urls`), no-secret transcripts.
+- **Google Gemini**: hosted executor complete — `generateContent`, inline local assets, `image_edit` with image-first parts ordering by role priority + explicit edit-mode instruction suffix, no-secret transcripts.
+- **ComfyUI**: local workflow executor complete — template loading, prompt submission, history polling, view/download, Studio Library import. Blocked until both `COMFY_API_URL`/`COMFYUI_API_URL` and `COMFY_WORKFLOW_TEMPLATE_PATH` configured.
 
 ## UI Chunk State (2026-05-25)
 
 | Chunk | Size | Strategy |
 |---|---|---|
-| `StylesRecipe` | 1,154 KB | `React.lazy`, loads `styleRuntimeData.generated.ts` eagerly |
-| `index` | 1,088 KB | Main entry. Overlays detached via `React.lazy(AppOverlays)` |
-| `CameraAnglesRecipe` | 544 KB | `React.lazy` |
+| `StylesRecipe` | 1,183 KB | `React.lazy`, eagerly loads 1.37MB `styleRuntimeData.generated.ts` |
+| `index` | 1,114 KB | Main entry. Overlays detached via `React.lazy(AppOverlays)` |
+| `CameraAnglesRecipe` | 557 KB | `React.lazy` |
 | `StylePresetCatalogSearchSurface` | 190 KB | `React.lazy` + async YAML glob (was 2,113 KB) |
-| All modals | 2–21 KB each | Conditional render + `React.lazy` with `Suspense` |
+| All modals | 2–21 KB each | Conditional render + `React.lazy` with `Suspense`
 
 ## New This Session
 

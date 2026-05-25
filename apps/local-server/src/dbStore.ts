@@ -15,6 +15,7 @@ export interface StudioDbStore {
   createProject(name: string, description?: string | null): Project;
   listProjects(): Project[];
   createJob(input: {
+    id?: string;
     projectId: string;
     kind: JobKind;
     providerId?: GenerationProviderId | null;
@@ -239,7 +240,7 @@ export function createSqliteDbStore({
 
       const timestamp = now();
       const job: Job = {
-        id: randomUUID(),
+        id: input.id ?? randomUUID(),
         projectId: input.projectId,
         kind: input.kind,
         providerId: input.providerId ?? null,
