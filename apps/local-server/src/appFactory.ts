@@ -77,6 +77,7 @@ export interface CreateStudioAppOptions {
     dbStore?: StudioDbStore;
     settingsStorage?: StudioSettingsStorage;
     worker?: Pick<WorkerController, 'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus'>;
+    logger?: typeof log;
   };
 }
 
@@ -92,12 +93,13 @@ export async function createStudioApp(
     options.dependencies?.getAppServerDiagnostics ?? getAppServerDiagnostics;
   const isLocalAppServerRunning = options.dependencies?.isAppServerRunning ?? isAppServerRunning;
   const dbStore = options.dependencies?.dbStore ?? (await createDefaultDbStore());
+  const appLogger = options.dependencies?.logger ?? log;
   const settingsStorage = options.dependencies?.settingsStorage ?? {
     getSetting: getSettingValue,
     setSetting: setSettingValue,
   };
   const workerController =
-    options.dependencies?.worker ?? (await import('./worker')).getDefaultWorkerController();
+    options.dependencies?.worker ?? (await import('./worker')).getDefaultWorkerController(appLogger);
   const catalogCommands = createCatalogCommands({
     updateCatalogImage,
     softDeleteCatalogImage,
@@ -272,7 +274,7 @@ export async function createStudioApp(
       body.description || null,
     );
     publishEvent('project.created', project);
-    log('info', 'api', `Project created: ${project.name}`);
+    appLogger('info', 'api', `Project created: ${project.name}`);
     return c.json(project, 201);
   });
 
@@ -348,7 +350,7 @@ export async function createStudioApp(
     }
     const queuedJob = dbStore.updateJobFinalPrompt(job.id, finalPrompt) || job;
     publishEvent('job.created', queuedJob);
-    log('info', 'api', `Job created: ${queuedJob.kind}`, queuedJob.id);
+    appLogger('info', 'api', `Job created: ${queuedJob.kind}`, queuedJob.id);
     workerController.enqueueJob(queuedJob);
     return c.json(queuedJob, 201);
   });

@@ -24,9 +24,18 @@ interface UseStudioRuntimeProps {
 }
 
 /**
- * Concentrate the Studio Runtime seams that talk to the local backend so the
- * shell consumes grouped activity, status, onboarding, and maintenance
- * interfaces instead of stitching multiple adapters inline.
+ * Studio Runtime Orchestrator — React hook that wires the full local-backend
+ * lifecycle (readiness, diagnostics, onboarding, session verification, storage
+ * recovery, and local studio sync) into a single consumer API consumed by
+ * `useStudioShell`.
+ *
+ * @file hooks/useStudioRuntime.ts
+ *
+ * This is a REACT ORCHESTRATOR. It depends on multiple sub-hooks and takes
+ * external state sinks (batches, mergeBatches, logs, toasts) as props.
+ *
+ * DO NOT confuse with services/studioRuntime.ts, which is a STATIC CONFIG
+ * ADAPTER that only resolves the backend API base and desktop-vs-web runtime kind.
  */
 export function useStudioRuntime({
   logs,

@@ -357,8 +357,8 @@ describe('stylePresetManifests', () => {
 
     expect(catalog.graph.errors).toEqual([]);
     expect(catalog.packManifests).toHaveLength(LEGACY_STYLE_PACKS.length);
-    expect(catalog.presetManifests).toHaveLength(legacyPresetCount);
-    expect(composedPresetCount).toBe(legacyPresetCount);
+    expect(catalog.presetManifests).toHaveLength(legacyPresetCount + 1);
+    expect(composedPresetCount).toBe(legacyPresetCount + 1);
     expect(STYLE_PACKS).toEqual(recomposedPacks);
     expect(STYLE_PRESET_BY_ID.get('SP01-001')?.name).toBeTruthy();
     expect(STYLE_PRESET_PACK_ID_BY_ID.get('SP01-001')).toBe('pack_01');

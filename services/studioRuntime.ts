@@ -1,3 +1,16 @@
+/**
+ * Studio Runtime Info — detects whether the frontend runs inside the desktop bridge
+ * or a standalone web browser, and resolves the local backend API base URL.
+ *
+ * This service is a STATIC CONFIG ADAPTER. It does not manage state, sessions,
+ * onboarding, readiness, or any runtime lifecycle. It answers "where is the backend?"
+ *
+ * @file services/studioRuntime.ts
+ *
+ * DO NOT confuse with hooks/useStudioRuntime.ts, which is a REACT ORCHESTRATOR
+ * that wires readiness, diagnostics, onboarding, session verification, storage
+ * recovery, and local studio sync into a single consumer API for the UI shell.
+ */
 const DEFAULT_STUDIO_API_BASE = 'http://localhost:4317';
 
 export interface StudioRuntimeCapabilities {
