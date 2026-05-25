@@ -41,7 +41,7 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: fal.ai `image_edit` now fails before network when no `input` or `external_output` asset can map to `image_url`, and inline assets produce an actionable compact-input policy error instead of pretending upload can happen from omitted bytes.
    - Done: hosted transcripts can include no-secret provider diagnostics. fal.ai records asset counts, asset roles, request field names, and image/mask/reference usage without storing hosted input URLs or secret values.
    - Done: Google Gemini image API now has a concrete hosted executor. It calls `generateContent`, stores inline image data as Local Assets, supports text-to-image plus localPath-backed `image_edit`, and marks Google executable only when backend preflight finds a configured Provider Secret.
-   - Done: Google `image_edit` sends image assets before the prompt text to match edit-mode conventions.
+   - Done: Google `image_edit` now sends image assets before the prompt text to match edit-mode conventions, orders assets by role priority, and appends explicit edit-mode instructions to the prompt for better Gemini edit fidelity.
    - Done: ComfyUI now has a concrete executor that reads `COMFY_WORKFLOW_TEMPLATE_PATH` to load and merge user prompt/negative-prompt into a JSON workflow template for local runtimes. It submits the workflow via `/prompt`, polls `/history`, finds the first image output, and streams the result into the Studio Library via the shared `storeHostedImageResult` normalizer. Comfy remains blocked from execution until both `COMFY_API_URL`/`COMFYUI_API_URL` and `COMFY_WORKFLOW_TEMPLATE_PATH` are configured.
    - Done: ComfyUI capability is executable only when a concrete executor exists and preflight passes both local endpoint and workflow template config.
 
@@ -118,7 +118,8 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: `providers:audit` reports source spec size, compiled payload size, prompt character estimates, directive/context deltas, and unsafe inline-data/secret leakage for current provider compilers.
    - Done: added `recipes:evaluate` script and test harness. Generates bare/legacy/directives prompt variants per recipe, measures size savings (41–56% directives vs legacy), and writes JSON evaluation reports. Supports `--dry-run`, `--out=<dir>`, and `--recipe=<id>` filters.
    - Done: added backend DI seam for logger. `appFactory` now accepts `dependencies.logger` and injects it into the worker controller. `getDefaultWorkerController` accepts an optional `logger` override. `useStudioRuntime` hook and `services/studioRuntime.ts` now have clarifying JSDoc distinguishing the React orchestrator from the static config adapter.
-   - Next: audit validation scripts for other broad scans that can accept changed-file scopes before the final closeout gate.
+   - Done: audited all broad validation scripts — `validate-style-preset-manifests.ts` already supports `--pack=` / `--preset=` filters, `audit-provider-inputs.ts` supports `--provider=` / `--recipe=` / `--no-external-fixtures`, `query-recipe-modules.ts` supports `--provider=` / `--query=` / `--task=` / `--parameter=`. All can be scoped to changed files.
+   - Next: run live Codex output quality comparison using the evaluation harness, split StylesRecipe runtime data per-pack.
 
 ## Guardrails
 

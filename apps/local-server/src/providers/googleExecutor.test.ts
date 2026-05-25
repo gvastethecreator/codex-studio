@@ -192,7 +192,7 @@ describe('google executor', () => {
 
     expect(requestBody.contents[0].parts).toEqual([
       { inlineData: { mimeType: 'image/png', data: 'AQID' } },
-      { text: 'small brass key\n\nAvoid: blur' },
+      { text: 'small brass key\n\nAvoid: blur Edit the input image following the instructions above. Preserve the original composition, subject identity, and overall structure while applying the requested changes.' },
     ]);
     expect(transcript.diagnostics).toMatchObject({
       assetCount: 1,

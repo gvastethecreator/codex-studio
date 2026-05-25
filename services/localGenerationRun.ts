@@ -2,6 +2,7 @@ import type { GeneratedImage, GenerationBatch, ImageGenerationConfig } from '../
 import type {
   EditableStudioSettings,
   GenerationProviderId,
+  GenerationTaskAssetRef,
   Job as StudioJob,
 } from '../packages/shared/src';
 import { createThumbnail } from '../utils/imageUtils';
@@ -106,6 +107,36 @@ async function toDataUrl(src: string) {
   });
 }
 
+async function buildJobAssets({
+  config,
+  inputImage,
+}: {
+  config: ImageGenerationConfig;
+  inputImage?: RunLocalGenerationOptions['inputImage'];
+}): Promise<GenerationTaskAssetRef[]> {
+  const assets: GenerationTaskAssetRef[] = [];
+
+  if (inputImage) {
+    assets.push({
+      role: 'input',
+      name: 'input-image.png',
+      dataUrl: await toDataUrl(inputImage.src),
+      strength: 1,
+    });
+  }
+
+  for (const attachment of config.attachments) {
+    assets.push({
+      role: attachment.id.startsWith('mask-') ? 'mask' : 'reference',
+      name: attachment.name,
+      dataUrl: attachment.dataUrl,
+      strength: attachment.strength,
+    });
+  }
+
+  return assets;
+}
+
 /**
  * Run a single persistent local generation backend job and materialize its assets
  * into the UI image shape consumed by the visual batch cache.
@@ -134,16 +165,8 @@ export async function runSingleCodexImagegenJob(options: {
     `ImageGen output size: ${imageGenSize.size}`,
     `Aspect ratio: ${imageGenSize.ratio} (${imageGenSize.label.toLowerCase()})`,
   ].filter(Boolean);
-  const inputReference = inputImage
-    ? [
-        {
-          name: 'input-image.png',
-          dataUrl: await toDataUrl(inputImage.src),
-          strength: 1,
-        },
-      ]
-    : [];
   const finalPrompt = promptParts.join('\n\n');
+  const requestAssets = await buildJobAssets({ config, inputImage });
   const sourceSpec = buildGenerationTaskSpecFromRecipe({
     id: `${batchId}-${Date.now()}`,
     providerId,
@@ -160,15 +183,7 @@ export async function runSingleCodexImagegenJob(options: {
     providerId,
     sourceSpec: {
       ...sourceSpec,
-      assets: [
-        ...sourceSpec.assets,
-        ...inputReference.map((reference) => ({
-          role: 'input' as const,
-          name: reference.name,
-          dataUrl: reference.dataUrl,
-          strength: reference.strength,
-        })),
-      ],
+      assets: requestAssets,
     },
     prompt: finalPrompt,
     execution: {
@@ -176,14 +191,17 @@ export async function runSingleCodexImagegenJob(options: {
       reasoningEffort: config.executionReasoningEffort,
       serviceTier: config.executionSpeed === 'standard' ? null : config.executionSpeed,
     },
-    references: [
-      ...inputReference,
-      ...config.attachments.map((attachment) => ({
-        name: attachment.name,
-        dataUrl: attachment.dataUrl,
-        strength: attachment.strength,
-      })),
-    ],
+    references: requestAssets.flatMap((asset) =>
+      asset.dataUrl
+        ? [
+            {
+              name: asset.name,
+              dataUrl: asset.dataUrl,
+              strength: asset.strength ?? 0,
+            },
+          ]
+        : [],
+    ),
   });
 
   options.onJobCreated?.(createdJob);

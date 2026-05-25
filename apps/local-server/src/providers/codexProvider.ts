@@ -33,10 +33,53 @@ export function compileCodexImagegenInput(job: GenerationProviderJob): CodexImag
   });
 }
 
+function getCodexAssetRoleLabel(role: GenerationTaskSpec['assets'][number]['role']) {
+  switch (role) {
+    case 'input':
+    case 'external_output':
+      return 'Input image file';
+    case 'mask':
+      return 'Mask image file';
+    case 'control':
+      return 'Control image file';
+    case 'reference':
+    default:
+      return 'Reference image file';
+  }
+}
+
+function buildCodexAssetLines(sourceSpec: GenerationTaskSpec) {
+  return sourceSpec.assets.flatMap((asset) => {
+    const location = asset.localPath?.trim() || asset.sourceUrl?.trim() || null;
+
+    if (!location) {
+      return [];
+    }
+
+    const roleLabel = getCodexAssetRoleLabel(asset.role);
+    const details: string[] = [];
+
+    if (asset.role !== 'input' && asset.role !== 'external_output' && asset.name) {
+      details.push(asset.name);
+    }
+
+    if (asset.role !== 'input' && asset.role !== 'external_output' && asset.strength != null) {
+      details.push(`strength ${asset.strength.toFixed(2)}`);
+    }
+
+    return [
+      details.length > 0
+        ? `${roleLabel}: ${location} (${details.join(', ')})`
+        : `${roleLabel}: ${location}`,
+    ];
+  });
+}
+
 function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
   const parts = [`Task: ${sourceSpec.task}`, '', 'Prompt:', sourceSpec.prompt];
   const recipeProviderDirectives = sourceSpec.metadata.recipeProviderDirectives;
   const recipeContext = sourceSpec.metadata.recipeContext;
+  const assetLines = buildCodexAssetLines(sourceSpec);
 
   if (isRecipeProviderDirectives(recipeProviderDirectives)) {
     parts.push(
@@ -50,6 +93,10 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
 
   if (sourceSpec.negativePrompt) {
     parts.push('', 'Avoid:', sourceSpec.negativePrompt);
+  }
+
+  if (assetLines.length > 0) {
+    parts.push('', 'Local assets:', ...assetLines);
   }
 
   if (sourceSpec.recipeId) {

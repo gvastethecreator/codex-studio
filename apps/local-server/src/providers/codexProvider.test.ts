@@ -107,6 +107,43 @@ describe('codexProvider', () => {
     expect(compiled.payload.text).not.toContain('legacy context should stay out');
   });
 
+  it('includes persisted local asset paths from the durable Generation Task Spec', () => {
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-refs',
+      task: 'image_generate',
+      providerId: 'codex',
+      prompt: 'Create a dramatic cinematic frame.',
+      assets: [
+        {
+          role: 'input',
+          name: 'source.png',
+          localPath: 'D:/AI-Studio-Library/references/job-1/source.png',
+          strength: 1,
+        },
+        {
+          role: 'reference',
+          name: 'moodboard.png',
+          localPath: 'D:/AI-Studio-Library/references/job-1/moodboard.png',
+          strength: 0.4,
+        },
+      ],
+    });
+
+    const compiled = compileCodexImagegenInput({
+      id: 'job-refs',
+      projectId: 'project-1',
+      prompt: 'Prompt text after backend reference persistence',
+      execution: null,
+      sourceSpec,
+    });
+
+    expect(compiled.payload.text).toContain('Local assets:');
+    expect(compiled.payload.text).toContain('Input image file: D:/AI-Studio-Library/references/job-1/source.png');
+    expect(compiled.payload.text).toContain(
+      'Reference image file: D:/AI-Studio-Library/references/job-1/moodboard.png (moodboard.png, strength 0.40)',
+    );
+  });
+
   it('delegates execution to the Codex Product Runtime with compiled input text', async () => {
     const calls: TurnParams[] = [];
     const turn: CodexTurn = {

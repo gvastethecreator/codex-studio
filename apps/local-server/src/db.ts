@@ -345,6 +345,7 @@ export function listProjects() {
 }
 
 export function createJob(input: {
+  id?: string;
   projectId: string;
   kind: JobKind;
   providerId?: GenerationProviderId | null;
@@ -353,7 +354,7 @@ export function createJob(input: {
   execution?: JobExecutionOptions | null;
 }) {
   const job: Job = {
-    id: randomUUID(),
+    id: input.id ?? randomUUID(),
     projectId: input.projectId,
     kind: input.kind,
     providerId: input.providerId ?? null,

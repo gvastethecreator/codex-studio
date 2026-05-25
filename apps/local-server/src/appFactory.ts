@@ -1,5 +1,6 @@
 import { existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
+import { randomUUID } from 'node:crypto';
 import path from 'node:path';
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
@@ -39,7 +40,11 @@ import {
 } from './codex';
 import { embedMetadata } from './metadataEmbedder';
 import { getJobDetail } from './jobDetails';
-import { processReferences, ReferenceProcessingError } from './referenceManager';
+import {
+  hydrateSourceSpecAssetPaths,
+  processReferences,
+  ReferenceProcessingError,
+} from './referenceManager';
 import { createWorkspaceRoutes } from './workspaceRoutes';
 import { resetStudioData } from './reset';
 import {
@@ -55,6 +60,7 @@ import type {
   AppServerEnsureReason,
   CodexModelCatalogResponse,
   CreateJobRequest,
+  GenerationTaskSpec,
   LocalCodexSessionResponse,
 } from '../../../packages/shared/src';
 
@@ -308,16 +314,18 @@ export async function createStudioApp(
     const projectId = body.projectId || dbStore.ensureDefaultProject().id;
     const prompt = (body.prompt || body.sourceSpec?.prompt || '').trim();
     if (!prompt) return c.json({ error: 'Prompt is required' }, 400);
+    const jobId = randomUUID();
     // Legacy clients may still post only { kind, prompt }. Keep the local runtime
     // Codex-first by normalizing those jobs onto the current provider boundary.
     const providerId =
       body.kind === 'dry_run'
         ? 'dry_run'
         : (body.providerId ?? body.sourceSpec?.providerId ?? 'codex');
-    const sourceSpec = body.sourceSpec
+    let sourceSpec: GenerationTaskSpec | null = body.sourceSpec
       ? {
           ...body.sourceSpec,
           providerId: body.sourceSpec.providerId ?? providerId,
+          assets: body.sourceSpec.assets.map((asset) => ({ ...asset })),
         }
       : null;
     const capabilityReport = readProviderCapabilities(readEditableStudioSettings(settingsStorage));
@@ -326,19 +334,20 @@ export async function createStudioApp(
       return c.json(providerBlocker, 400);
     }
 
-    const job = dbStore.createJob({
-      projectId,
-      kind: body.kind,
-      providerId,
-      sourceSpec,
-      prompt,
-      execution: body.execution ?? null,
-    });
     let finalPrompt = prompt;
     try {
-      finalPrompt = (
-        await processReferences(job.id, prompt, body.references || [], getSettings().libraryDir)
-      ).augmentedPrompt;
+      const processedReferences = await processReferences(
+        jobId,
+        prompt,
+        body.references || [],
+        getSettings().libraryDir,
+      );
+      finalPrompt = processedReferences.augmentedPrompt;
+      sourceSpec = hydrateSourceSpecAssetPaths(
+        sourceSpec,
+        body.references || [],
+        processedReferences.persistedRefs,
+      );
     } catch (error) {
       if (error instanceof ReferenceProcessingError) {
         return c.json(
@@ -348,7 +357,18 @@ export async function createStudioApp(
       }
       throw error;
     }
-    const queuedJob = dbStore.updateJobFinalPrompt(job.id, finalPrompt) || job;
+
+    const job = dbStore.createJob({
+      id: jobId,
+      projectId,
+      kind: body.kind,
+      providerId,
+      sourceSpec,
+      prompt,
+      execution: body.execution ?? null,
+    });
+    const queuedJob =
+      finalPrompt === prompt ? job : (dbStore.updateJobFinalPrompt(job.id, finalPrompt) ?? job);
     publishEvent('job.created', queuedJob);
     appLogger('info', 'api', `Job created: ${queuedJob.kind}`, queuedJob.id);
     workerController.enqueueJob(queuedJob);
