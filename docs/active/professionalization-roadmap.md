@@ -41,7 +41,9 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: fal.ai `image_edit` now fails before network when no `input` or `external_output` asset can map to `image_url`, and inline assets produce an actionable compact-input policy error instead of pretending upload can happen from omitted bytes.
    - Done: hosted transcripts can include no-secret provider diagnostics. fal.ai records asset counts, asset roles, request field names, and image/mask/reference usage without storing hosted input URLs or secret values.
    - Done: Google Gemini image API now has a concrete hosted executor. It calls `generateContent`, stores inline image data as Local Assets, supports text-to-image plus localPath-backed `image_edit`, and marks Google executable only when backend preflight finds a configured Provider Secret.
-   - Next: add richer edit-mode request mapping and concrete ComfyUI executor before marking ComfyUI executable.
+   - Done: Google `image_edit` sends image assets before the prompt text to match edit-mode conventions.
+   - Done: ComfyUI now has a concrete executor that reads `COMFY_WORKFLOW_TEMPLATE_PATH` to load and merge user prompt/negative-prompt into a JSON workflow template for local runtimes. It submits the workflow via `/prompt`, polls `/history`, finds the first image output, and streams the result into the Studio Library via the shared `storeHostedImageResult` normalizer. Comfy remains blocked from execution until both `COMFY_API_URL`/`COMFYUI_API_URL` and `COMFY_WORKFLOW_TEMPLATE_PATH` are configured.
+   - Done: ComfyUI capability is executable only when a concrete executor exists and preflight passes both local endpoint and workflow template config.
 
 4. **Studio Settings**
    - Add backend/API support for editable Studio Settings stored with the Studio Library.

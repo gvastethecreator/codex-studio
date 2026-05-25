@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
 import { useStudioShell } from '../hooks/useStudioShell';
 
-import { AppOverlays } from './AppOverlays';
 import { HeaderToolbar } from './HeaderToolbar';
 import LiquidBlackBackground from './LiquidBlackBackground';
 import { StudioGenerationDock } from './shell/StudioGenerationDock';
 import { StudioViewport } from './shell/StudioViewport';
 import ToastContainer from './ToastContainer';
+
+const AppOverlays = React.lazy(() =>
+  import('./AppOverlays').then((m) => ({ default: m.AppOverlays })),
+);
 
 interface AppContentProps {}
 
@@ -41,7 +44,9 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
       <StudioGenerationDock {...shell.generationDock} />
 
-      <AppOverlays controller={shell.overlays} />
+      <Suspense fallback={null}>
+        <AppOverlays controller={shell.overlays} />
+      </Suspense>
     </div>
   );
 };

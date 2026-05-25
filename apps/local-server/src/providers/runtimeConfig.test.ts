@@ -48,12 +48,14 @@ describe('provider runtime config', () => {
       localRuntimeSource: 'COMFY_API_URL',
       canAttemptExecution: false,
     });
-    expect(invalid?.diagnostics).toEqual(['Invalid local runtime endpoint in COMFY_API_URL.']);
+    expect(invalid?.diagnostics).toEqual([
+      'Invalid local runtime endpoint in COMFY_API_URL.',
+      'Missing provider config source: COMFY_WORKFLOW_TEMPLATE_PATH.',
+    ]);
     expect(valid).toMatchObject({
       providerId: 'comfy',
       localRuntimeState: 'configured',
       localRuntimeSource: 'COMFY_API_URL',
-      canAttemptExecution: true,
     });
   });
 

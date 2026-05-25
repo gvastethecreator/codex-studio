@@ -142,11 +142,14 @@ function createGoogleRequestBody(
     .map((asset) => createGoogleAssetPart(asset, readFile))
     .filter((part): part is { inlineData: { mimeType: string; data: string } } => Boolean(part));
 
+  const promptPart = { text: createGooglePromptText(payload) };
+  const parts = task === 'image_edit' ? [...imageParts, promptPart] : [promptPart, ...imageParts];
+
   return {
     contents: [
       {
         role: 'user',
-        parts: [{ text: createGooglePromptText(payload) }, ...imageParts],
+        parts,
       },
     ],
     generationConfig: {
