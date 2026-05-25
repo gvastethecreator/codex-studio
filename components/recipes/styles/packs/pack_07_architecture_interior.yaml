@@ -2,1123 +2,1123 @@
   name: Architecture & Interior
   description: Architectural styles and interior design aesthetics.
   presets:
-    - id: SP07-001
-      name: Modern Minimalist
-      category: 1. Interior Design
-      negativePrompt: clutter, ornate, pattern, dark
-      style:
-        aesthetic: Clean white open space
-        form_and_line: Straight horizontal lines
-        color_palette: White, Beige, Grey
-        lighting_setup: Soft diffuse daylight
-        material_texture: Smooth plaster, matte paint
-        render_quality: Design-editorial clean
-        spatial_distortion: None
-        atmosphere: Calm, spacious, expensive
-        key_features: Empty space
-    - id: SP07-002
-      name: Industrial Loft
-      category: 1. Interior Design
-      negativePrompt: cozy, soft, carpet, wallpaper
-      style:
-        aesthetic: Converted warehouse apartment
-        form_and_line: Exposed pipes and beams
-        color_palette: Brick Red, Concrete Grey, Black Metal
-        lighting_setup: Large factory windows, Edison bulbs
-        material_texture: Rough brick, polished concrete, rust
-        render_quality: Trendy, urban, raw
-        spatial_distortion: None
-        atmosphere: Cool, masculine, urban
-        key_features: Exposed structure
-    - id: SP07-003
-      name: Mid-Century Modern
-      category: 1. Interior Design
-      negativePrompt: antique, victorian, industrial
-      style:
-        aesthetic: 1950s/60s designer interior
-        form_and_line: Organic curves, tapered legs
-        color_palette: Teak wood, Mustard Yellow, Olive Green
-        lighting_setup: Sputnik chandelier, warm lamp
-        material_texture: Wood grain, tweed fabric
-        render_quality: Mid-century editorial, stylish, retro
-        spatial_distortion: None
-        atmosphere: Stylish, nostalgic, warm
-        key_features: Iconic furniture shapes
-    - id: SP07-004
-      name: Scandinavian Hygge
-      category: 1. Interior Design
-      negativePrompt: dark, cold, metal, plastic
-      style:
-        aesthetic: Cozy Nordic home
-        form_and_line: Soft edges, textiles
-        color_palette: White, Light Wood, Pastel
-        lighting_setup: Candlelight, soft window light
-        material_texture: Knitted wool, sheepskin, pine
-        render_quality: Catalog-clean, cozy, bright
-        spatial_distortion: None
-        atmosphere: Comfortable, safe, warm
-        key_features: Textiles everywhere
-    - id: SP07-005
-      name: Bohemian Eclectic
-      category: 1. Interior Design
-      negativePrompt: minimalist, empty, sterile
-      style:
-        aesthetic: Plant-filled artistic room
-        form_and_line: Chaotic organic forms
-        color_palette: Earth tones, vibrant patterns
-        lighting_setup: Dappled sunlight through plants
-        material_texture: Rattan, macrame, leaves
-        render_quality: Pinterest, jungle, relaxed
-        spatial_distortion: Overgrown plants
-        atmosphere: Free, natural, messy
-        key_features: Plants in every corner
-    - id: SP07-006
-      name: Brutalist Architecture
-      category: 2. Architectural Styles
-      negativePrompt: delicate, painted, wood, glass
-      style:
-        aesthetic: Massive concrete structure
-        form_and_line: Heavy geometric blocks
-        color_palette: Raw Concrete Grey
-        lighting_setup: Harsh shadows, dramatic
-        material_texture: Rough concrete formwork
-        render_quality: Monumental, imposing, heavy
-        spatial_distortion: None
-        atmosphere: Oppressive, powerful, stoic
-        key_features: Concrete dominance
-    - id: SP07-007
-      name: Art Deco
-      category: 2. Architectural Styles
-      negativePrompt: minimal, rustic, plain
-      style:
-        aesthetic: 1920s glamour architecture
-        form_and_line: Geometric patterns, sunbursts
-        color_palette: Gold, Black, Emerald Green
-        lighting_setup: Dramatic uplighting
-        material_texture: Polished brass, marble, velvet
-        render_quality: Jazz-age luxurious, ornate
-        spatial_distortion: None
-        atmosphere: Expensive, party, jazz age
-        key_features: Geometric ornamentation
-    - id: SP07-008
-      name: Japanese Zen
-      category: 2. Architectural Styles
-      negativePrompt: clutter, western, plastic
-      style:
-        aesthetic: Traditional Japanese room
-        form_and_line: Grid of Shoji screens
-        color_palette: Bamboo, Rice Paper White, Tatami Green
-        lighting_setup: Diffused paper lantern light
-        material_texture: Tatami mat, wood, paper
-        render_quality: Peaceful, simple, natural
-        spatial_distortion: None
-        atmosphere: Meditative, quiet, disciplined
-        key_features: Low furniture
-    - id: SP07-009
-      name: Gothic Revival
-      category: 2. Architectural Styles
-      negativePrompt: modern, bright, simple
-      style:
-        aesthetic: Dark ornate cathedral or mansion
-        form_and_line: Pointed arches, intricate carving
-        color_palette: Dark stone, stained glass colors
-        lighting_setup: Dim, candlelight, mysterious
-        material_texture: Stone, dust, cobwebs
-        render_quality: Haunted, historic, detailed
-        spatial_distortion: Elongated vertical lines
-        atmosphere: Spooky, dramatic, ancient
-        key_features: Vertical emphasis
-    - id: SP07-010
-      name: Futuristic Pod
-      category: 2. Architectural Styles
-      negativePrompt: old, dirty, square corners
-      style:
-        aesthetic: Sci-fi living space
-        form_and_line: Seamless curves, no corners
-        color_palette: Glossy White, LED Blue
-        lighting_setup: Hidden strip lighting
-        material_texture: Plastic, glass, screen
-        render_quality: Space station, clean, utopia
-        spatial_distortion: None
-        atmosphere: Sterile, advanced, cold
-        key_features: Curved white surfaces
-    - id: SP07-011
-      name: Luxury Penthouse
-      category: 3. Environment
-      negativePrompt: basement, dark, cheap
-      style:
-        aesthetic: High-rise apartment with view
-        form_and_line: Floor to ceiling glass
-        color_palette: Neutral interior, blue city exterior
-        lighting_setup: City lights at night
-        material_texture: Glass, reflection, leather
-        render_quality: Expensive, exclusive, rich
-        spatial_distortion: None
-        atmosphere: Powerful, lonely, successful
-        key_features: City skyline view
-    - id: SP07-012
-      name: Rustic Cabin
-      category: 3. Environment
-      negativePrompt: city, modern, cold
-      style:
-        aesthetic: Log cabin interior
-        form_and_line: Rough log shapes
-        color_palette: Warm brown, fire orange
-        lighting_setup: Fireplace glow
-        material_texture: Rough wood, stone, fur
-        render_quality: Cozy, retreat, nature
-        spatial_distortion: None
-        atmosphere: Warm, safe, isolated
-        key_features: Wood everywhere
-    - id: SP07-013
-      name: Mediterranean Villa
-      category: 3. Environment
-      negativePrompt: rain, cold, dark, grey
-      style:
-        aesthetic: Greek or Italian coastal home
-        form_and_line: Soft plaster edges, arches
-        color_palette: White, Azure Blue, Terracotta
-        lighting_setup: Bright blinding sun
-        material_texture: Stucco, tile, sea water
-        render_quality: Vacation, sunny, airy
-        spatial_distortion: None
-        atmosphere: Relaxed, summer, hot
-        key_features: White walls and blue sea
-    - id: SP07-014
-      name: Cyberpunk Apartment
-      category: 3. Environment
-      negativePrompt: clean, organized, day
-      style:
-        aesthetic: Cluttered high-tech low-life room
-        form_and_line: Wires, screens, trash
-        color_palette: Dark, Neon Pink/Blue/Green
-        lighting_setup: Screen glow, neon from window
-        material_texture: Metal, junk, ramen cups
-        render_quality: Dystopian, messy, detailed
-        spatial_distortion: None
-        atmosphere: Depressing, cool, tech
-        key_features: Clutter density
-    - id: SP07-015
-      name: Victorian Mansion
-      category: 3. Environment
-      negativePrompt: minimal, bright, open
-      style:
-        aesthetic: 19th century cluttered room
-        form_and_line: Ornate patterns everywhere
-        color_palette: Dark Red, Gold, Mahogany
-        lighting_setup: Dim gaslight
-        material_texture: Velvet, wallpaper, dust
-        render_quality: Antique, heavy, stuffed
-        spatial_distortion: None
-        atmosphere: Oppressive, historic, rich
-        key_features: Pattern density
     - id: SP07-016
       name: Bauhaus Interior
       category: 1. Interior Design
       negativePrompt: ornate, cluttered
       style:
-        aesthetic: Functional modernist room
-        form_and_line: Geometric shapes
-        color_palette: Primary colors + Black/White
-        lighting_setup: Even, functional
-        material_texture: Steel, glass, leather
-        render_quality: Design classic, rational
+        aesthetic: Functional modernist room, form follows function, workshop aesthetic, design-for-all
+        form_and_line: Geometric shapes, pure circle and square, tubular arcs, flat planes intersect, grid logic
+        color_palette: Primary colors + Black/White, Clean Red, Canary Yellow, Cobalt Blue, Warm Grey
+        lighting_setup: Even, functional, task-focused spots, floating globe pendants, industrial-grade clarity
+        material_texture: Steel, glass, leather, bent plywood, canvas webbing, linoleum, chrome plate
+        render_quality: Design classic, rational, German-modern clarity, timeless efficiency, honest construction
         spatial_distortion: None
-        atmosphere: Smart, artistic, clean
-        key_features: Tubular steel
-    - id: SP07-017
-      name: Maximalist Decor
+        atmosphere: Smart, artistic, clean, workshop-fresh, purpose-driven, intellectual calm
+        key_features: Tubular steel, primary color accents, cantilever chairs, isometric clarity, interlocking forms
+    - id: SP07-004
+      name: Scandinavian Hygge
       category: 1. Interior Design
-      negativePrompt: empty, white, minimal
+      negativePrompt: dark, cold, metal, plastic
       style:
-        aesthetic: Pattern on pattern room
-        form_and_line: Complex layers
-        color_palette: Saturated jewel tones
-        lighting_setup: Warm lamps everywhere
-        material_texture: Velvet, wallpaper, rugs
-        render_quality: Eclectic, busy, rich
+        aesthetic: Cozy Nordic home, Danish contentment, winter refuge, candlelit warmth
+        form_and_line: Soft edges, textiles, rounded nooks, low profiles, organic gentle arcs
+        color_palette: White, Light Wood, Pastel, Dusty Rose, Muted Sage, Cream
+        lighting_setup: Candlelight, soft window light, warm pendant glow, fireplace flicker, salt-lamp amber
+        material_texture: Knitted wool, sheepskin, pine, oiled oak, brushed cotton, ceramic
+        render_quality: IKEA catalog-clean, cozy, bright, Swedish simplicity
         spatial_distortion: None
-        atmosphere: Exciting, personal, loud
-        key_features: No empty space
+        atmosphere: Comfortable, safe, warm, content, tucked-in, restorative quiet
+        key_features: Textiles everywhere, chunky knit throws, ceramic mugs, candle clusters, fur rugs
     - id: SP07-018
       name: Farmhouse Chic
       category: 1. Interior Design
       negativePrompt: modern, sleek, metal
       style:
-        aesthetic: Modern barn interior
-        form_and_line: Shiplap walls
-        color_palette: White, Cream, Wood
-        lighting_setup: Bright airy
-        material_texture: Distressed wood, linen
-        render_quality: Farmhouse editorial, family, clean
+        aesthetic: Modern barn interior, rural refinement, whitewashed nostalgia, homestead grace
+        form_and_line: Shiplap walls, gabled ceilings, apron-front lines, open shelving, X-brace details
+        color_palette: White, Cream, Wood, Galvanized Silver, Soft Linen, Black Iron accent
+        lighting_setup: Bright airy, oversized pendants, gooseneck barn lights, morning window wash
+        material_texture: Distressed wood, linen, chalk-painted furniture, cotton ticking, woven baskets, galvanized metal
+        render_quality: Magnolia farmhouse editorial, family, clean, Chip & Joanna warmth
         spatial_distortion: None
-        atmosphere: Welcoming, soft, home
-        key_features: Sliding barn door
+        atmosphere: Welcoming, soft, home, gathered-around-table, Sunday-morning peace, real-family living
+        key_features: Sliding barn door, shiplap accent wall, farmhouse sink, open shelving, beadboard ceiling
+    - id: SP07-002
+      name: Industrial Loft
+      category: 1. Interior Design
+      negativePrompt: cozy, soft, carpet, wallpaper
+      style:
+        aesthetic: Converted warehouse apartment, factory bones, urban sanctuary, creative reuse
+        form_and_line: Exposed pipes and beams, overhead gantry, raw steel trusses, riveted joints
+        color_palette: Brick Red, Concrete Grey, Black Metal, Oxidized Copper, Aged Zinc
+        lighting_setup: Large factory windows, Edison bulbs, caged pendants, clerestory glow, amber pools
+        material_texture: Rough brick, polished concrete, rust, reclaimed timber, worn saddle leather
+        render_quality: Trendy, urban, raw, warehouse-chic, authentic grit, patina beauty
+        spatial_distortion: None
+        atmosphere: Cool, masculine, urban, edgy, creative energy, after-hours calm
+        key_features: Exposed structure, open ductwork, mezzanine floor, rolling loft ladder
+    - id: SP07-005
+      name: Bohemian Eclectic
+      category: 1. Interior Design
+      negativePrompt: minimalist, empty, sterile
+      style:
+        aesthetic: Plant-filled artistic room, global traveler, collected over time, layered story
+        form_and_line: Chaotic organic forms, cascading vines, piled cushions, hanging macrame, soft heaps
+        color_palette: Earth tones, vibrant patterns, Terracotta, Turquoise, Spice, Indigo
+        lighting_setup: Dappled sunlight through plants, candle glow, Moroccan lantern, fairy string lights
+        material_texture: Rattan, macrame, leaves, handwoven kilim, raw linen, carved wood
+        render_quality: Pinterest, jungle, relaxed, layered, free-spirited, curated wanderlust
+        spatial_distortion: Overgrown plants
+        atmosphere: Free, natural, messy, worldly, creative, sun-drenched laziness
+        key_features: Plants in every corner, hanging rattan chair, layered Persian rugs, gallery wall
+    - id: SP07-017
+      name: Maximalist Decor
+      category: 1. Interior Design
+      negativePrompt: empty, white, minimal
+      style:
+        aesthetic: Pattern on pattern room, controlled chaos, collected gallery, riotous personality
+        form_and_line: Complex layers, framed overload, busy skirting, curio-shelf density, textile-on-textile
+        color_palette: Saturated jewel tones, Emerald, Sapphire, Ruby, Amethyst, Peacock Teal, Coral
+        lighting_setup: Warm lamps everywhere, picture lights, chandelier glitter, sconce pools, dimmer-warm glow
+        material_texture: Velvet, wallpaper, rugs, chintz, embroidered silk, gilt frame, cloisonné, book spines
+        render_quality: Eclectic, busy, rich, more-is-more, layered opulence, collected over generations
+        spatial_distortion: None
+        atmosphere: Exciting, personal, loud, intoxicating, treasure-gallery, unapologetic abundance
+        key_features: No empty space, gallery walls floor to ceiling, layered rugs, pattern mixing, objet collections
     - id: SP07-019
       name: Art Nouveau Interior
       category: 1. Interior Design
       negativePrompt: straight lines
       style:
-        aesthetic: 1900s organic room
-        form_and_line: Whiplash curves
-        color_palette: Sage, Gold, Wood
-        lighting_setup: Stained glass light
-        material_texture: Carved wood, glass
-        render_quality: Decorative, flowing, turn-of-century
+        aesthetic: 1900s organic room, Belle Epoque bloom, nature-as-structure, total-art Gesamtkunstwerk
+        form_and_line: Whiplash curves, tendril stair rails, floral doorframes, sinuous glass, flowing wrought iron
+        color_palette: Sage, Gold, Wood, Peacock Blue, Lilac, Amber glass, Moss green
+        lighting_setup: Stained glass light, Tiffany-lamp warmth, lotus-petal sconces, insect-wing glow
+        material_texture: Carved wood, glass, wrought iron, iridescent favrile glass, patinated bronze, floral marquetry
+        render_quality: Horta decorative flowing turn-of-century, whiplash beauty
         spatial_distortion: Melting shapes
-        atmosphere: Romantic, nature, soft
-        key_features: Curved wood
+        atmosphere: Romantic, nature, soft, enchanted, organic rhythm, floral intoxication
+        key_features: Curved wood, floral motifs everywhere, tendril staircase, stained glass skylight, organic lamp forms
+    - id: SP07-003
+      name: Mid-Century Modern
+      category: 1. Interior Design
+      negativePrompt: antique, victorian, industrial
+      style:
+        aesthetic: 1950s/60s designer interior, Palm Springs chic, atomic-era optimism, cocktail culture
+        form_and_line: Organic curves, tapered legs, sculptural silhouettes, floating sideboards, kidney shapes
+        color_palette: Teak wood, Mustard Yellow, Olive Green, Burnt Orange, Warm Walnut, Avocado
+        lighting_setup: Sputnik chandelier, warm lamp, arc floor lamp, filtered afternoon glow, bubble pendant
+        material_texture: Wood grain, tweed fabric, molded plywood, hairpin steel, shag wool, walnut veneer
+        render_quality: Mad Men mid-century editorial, stylish, retro, Don Draper warmth
+        spatial_distortion: None
+        atmosphere: Stylish, nostalgic, warm, confident, cocktail-hour ease, aspirational cool
+        key_features: Iconic furniture shapes, sunken lounge, breeze blocks, atomic starburst, tapered legs
     - id: SP07-020
       name: Memphis Design
       category: 1. Interior Design
       negativePrompt: boring, beige
       style:
-        aesthetic: 80s postmodern room
-        form_and_line: Squiggles and triangles
-        color_palette: Pastel + Black/White pattern
-        lighting_setup: Bright studio
-        material_texture: Laminate, plastic
-        render_quality: Playful, weird, retro
+        aesthetic: 80s postmodern room, Italian radical design, Sottsass irreverence, anti-taste manifesto
+        form_and_line: Squiggles and triangles, totemic shelves, asymmetrical bookcases, confetti geometry, playful offsets
+        color_palette: Pastel + Black/White pattern, Bubblegum Pink, Teal, Traffic Yellow, Vivid Orange
+        lighting_setup: Bright studio, neon accents, colored bulb glow, gallery-track spots, plastic-filtered light
+        material_texture: Laminate, plastic, terrazzo chip, printed Formica, glossy enamel, rubber
+        render_quality: Playful, weird, retro, radical-postmodern, joyous clash, ironic surface
         spatial_distortion: Asymmetry
-        atmosphere: Fun, chaotic, art
-        key_features: Bacterial pattern
-    - id: SP07-021
-      name: Deconstructivism
-      category: 2. Architectural Styles
-      negativePrompt: box, symmetrical
+        atmosphere: Fun, chaotic, art, rebellious, child-like, design manifesto energy
+        key_features: Bacterial pattern, asymmetrical shelving, squiggle mirror, color-blocked surfaces, totemic plinths
+    - id: SP07-001
+      name: Modern Minimalist
+      category: 1. Interior Design
+      negativePrompt: clutter, ornate, pattern, dark
       style:
-        aesthetic: Sculptural deconstructivist landmark
-        form_and_line: Distorted geometry
-        color_palette: Titanium, Steel
-        lighting_setup: Reflective sun
-        material_texture: Metal panels
-        render_quality: Chaotic, fluid, modern
-        spatial_distortion: Melting/Twisting
-        atmosphere: Disorienting, dynamic
-        key_features: No right angles
-    - id: SP07-022
-      name: Neoclassical
-      category: 2. Architectural Styles
-      negativePrompt: modern, asymmetry
-      style:
-        aesthetic: Government building/Museum
-        form_and_line: Columns, pediments
-        color_palette: White Marble, Stone
-        lighting_setup: Sunlight and shadow
-        material_texture: Smooth stone
-        render_quality: Grand, symmetrical, order
+        aesthetic: Clean white open space, airy volume, sculptural emptiness, light as material
+        form_and_line: Straight horizontal lines, floating planes, silent geometry, invisible junctions
+        color_palette: White, Warm Beige, Cool Grey, Muted Sand, Pale Oak
+        lighting_setup: Soft diffuse daylight, shadowless ambient, luminous ceiling, hidden cove glow
+        material_texture: Smooth plaster, matte paint, honed stone, micro-cement, tactile stucco
+        render_quality: Architectural Digest design-editorial clean, aspirational perfection
         spatial_distortion: None
-        atmosphere: Serious, powerful, timeless
-        key_features: Columns
-    - id: SP07-023
-      name: Parametric Architecture
-      category: 2. Architectural Styles
-      negativePrompt: brick, square
-      style:
-        aesthetic: Fluid parametric futurism
-        form_and_line: Flowing curves
-        color_palette: White, Glass
-        lighting_setup: Soft ambient
-        material_texture: Seamless material
-        render_quality: Futuristic, organic, math
-        spatial_distortion: Fluid form
-        atmosphere: Elegant, advanced, flow
-        key_features: Voronoi pattern
-    - id: SP07-024
-      name: Victorian Painted Lady
-      category: 2. Architectural Styles
-      negativePrompt: plain, grey
-      style:
-        aesthetic: San Francisco house
-        form_and_line: Gingerbread trim
-        color_palette: Pastel Blue/Pink/Yellow
-        lighting_setup: Sunny day
-        material_texture: Wood siding
-        render_quality: Charming, detailed, dollhouse
-        spatial_distortion: None
-        atmosphere: Happy, nostalgic, cute
-        key_features: Turret
-    - id: SP07-025
-      name: Bauhaus Architecture
-      category: 2. Architectural Styles
-      negativePrompt: decoration, roof tiles
-      style:
-        aesthetic: Dessau building
-        form_and_line: Grid windows, flat roof
-        color_palette: White, Grey, Black
-        lighting_setup: Flat daylight
-        material_texture: Concrete, glass
-        render_quality: Functional, honest, clean
-        spatial_distortion: None
-        atmosphere: Rational, modern, stark
-        key_features: Glass curtain wall
-    - id: SP07-026
-      name: Googie Architecture
-      category: 2. Architectural Styles
-      negativePrompt: square, boring
-      style:
-        aesthetic: 50s Diner/Gas station
-        form_and_line: Upswept roof, starbursts
-        color_palette: Neon, Chrome, Red
-        lighting_setup: Neon signs
-        material_texture: Glass, steel
-        render_quality: Space age, retro, optimistic
-        spatial_distortion: Boomerang shapes
-        atmosphere: Fun, fast, atomic
-        key_features: Cantilever
+        atmosphere: Calm, spacious, expensive, meditative, weightless, curated stillness
+        key_features: Empty space, hidden storage, frameless glazing, floating staircase
     - id: SP07-027
       name: Tudor Revival
       category: 2. Architectural Styles
       negativePrompt: modern
       style:
-        aesthetic: English cottage
-        form_and_line: Half-timbering
-        color_palette: Dark Wood, White Plaster
-        lighting_setup: Overcast soft
-        material_texture: Brick, wood, thatch
-        render_quality: Cozy, historic, storybook
+        aesthetic: English cottage, storybook charm, half-timbered romance, fairy-tale dwelling
+        form_and_line: Half-timbering, steep gables, diamond-pane windows, tall chimneys, crooked ridge lines
+        color_palette: Dark Wood, White Plaster, Warm Terracotta, Lichen Green, Ochre wash
+        lighting_setup: Overcast soft, leaded-glass glow, inglenook firelight, cottage-window candle
+        material_texture: Brick, wood, thatch, wattle-and-daub, leaded glass, hand-split shake
+        render_quality: Cozy, historic, storybook, idyllic England, hearth-and-home, weathered charm
         spatial_distortion: Crooked beams
-        atmosphere: Homey, old world
-        key_features: Timber frame
+        atmosphere: Homey, old world, hearth-warm, rooted, garden-sheltered, folk-tale safe
+        key_features: Timber frame, steep gables, tall chimney stack, diamond leaded windows, arched door hood
+    - id: SP07-021
+      name: Deconstructivism
+      category: 2. Architectural Styles
+      negativePrompt: box, symmetrical
+      style:
+        aesthetic: Frank Gehry sculptural deconstructivist landmark, titanium wildness, Bilbao effect
+        form_and_line: Distorted geometry, collapsing volumes, twisting towers, exploding facets, folded planes
+        color_palette: Titanium, Steel, Champagne Silver, Warm Ochre stone, Mirror Sky
+        lighting_setup: Reflective sun, surface-dancing light, angled shadow drama, metallic shimmer
+        material_texture: Metal panels, titanium shingles, zinc cladding, glass shards, bent steel
+        render_quality: Chaotic, fluid, modern, sculptural explosion, gravity-defying, architectural fireworks
+        spatial_distortion: Melting/Twisting
+        atmosphere: Disorienting, dynamic, cerebral, exhilarating, rule-breaking, impossible beauty
+        key_features: No right angles, folding titanium skin, explosive volumes, shimmering surfaces, sculptural roofscape
+    - id: SP07-022
+      name: Neoclassical
+      category: 2. Architectural Styles
+      negativePrompt: modern, asymmetry
+      style:
+        aesthetic: Government building/Museum, temple-front authority, Enlightenment reason, civic monument
+        form_and_line: Columns, pediments, triangular tympanum, stepped plinths, axial vistas
+        color_palette: White Marble, Stone, Portland limestone, Gilded bronze, Cool Grey shadow
+        lighting_setup: Sunlight and shadow, column-cast stripes, portico shade, floodlit night drama
+        material_texture: Smooth stone, chiseled marble, polished granite, cast plaster, verdigris copper
+        render_quality: Grand, symmetrical, order, eternal authority, democratic dignity, timeless proportion
+        spatial_distortion: None
+        atmosphere: Serious, powerful, timeless, institutionally calm, Athenian echo, civic pride
+        key_features: Columns, triangular pediment, domed rotunda, grand staircase, axial symmetry
+    - id: SP07-025
+      name: Bauhaus Architecture
+      category: 2. Architectural Styles
+      negativePrompt: decoration, roof tiles
+      style:
+        aesthetic: Dessau building, machine-age purity, stripped-function beauty, industrial clarity
+        form_and_line: Grid windows, flat roof, cubic masses, extruded strips, ribbon glazing, cantilevered corners
+        color_palette: White, Grey, Black, Steel Blue, signal Red accent, pale Yellow wall
+        lighting_setup: Flat daylight, even north-light, recessed-can shadow, strip-window rhythm
+        material_texture: Concrete, glass, steel sash, linoleum floors, mineral render, tubular handrails
+        render_quality: Functional, honest, clean, material-truth clarity, modernist manifesto, unadorned precision
+        spatial_distortion: None
+        atmosphere: Rational, modern, stark, workshop-clean, progressive idealism, disciplined calm
+        key_features: Glass curtain wall, asymmetrical composition, flat roof terrace, exposed structure, ribbon windows
+    - id: SP07-023
+      name: Parametric Architecture
+      category: 2. Architectural Styles
+      negativePrompt: brick, square
+      style:
+        aesthetic: Zaha Hadid fluid parametric futurism, flowing space, gravity defiance
+        form_and_line: Flowing curves, continuous surface, seamless skin, morphing volumes, ribbon-like transitions
+        color_palette: White, Glass, Cool Grey gradient, Liquid Silver, Soft Ice Blue
+        lighting_setup: Soft ambient, continuous glow lines, inner-illuminated volume, edge-highlighting
+        material_texture: Seamless material, fiberglass composite, poured concrete shell, GRP panels, tensile membrane
+        render_quality: Futuristic, organic, math, algorithmic elegance, digital-to-physical, insect-chitin precision
+        spatial_distortion: Fluid form
+        atmosphere: Elegant, advanced, flow, weightless, computational, liquid-space serenity
+        key_features: Voronoi pattern, fluid continuous surfaces, atrium vortex, organic facade pores, flowing interior canyons
+    - id: SP07-010
+      name: Futuristic Pod
+      category: 2. Architectural Styles
+      negativePrompt: old, dirty, square corners
+      style:
+        aesthetic: Sci-fi living space, 2001 aesthetics, zero-friction habitat, orbital minimalism
+        form_and_line: Seamless curves, no corners, egg-like capsules, organic blobs, continuous shells
+        color_palette: Glossy White, LED Blue, Cool Cyan, Holographic Silver, Soft Magenta accent
+        lighting_setup: Hidden strip lighting, embedded glow panels, mood-responsive ambient, sensor-activated zones
+        material_texture: Plastic, glass, screen, carbon fiber, gel polymer, smart-surface, touch-reactive
+        render_quality: Space station, clean, utopia, pristine future, anti-septic perfection
+        spatial_distortion: None
+        atmosphere: Sterile, advanced, cold, weightless, hum-free, intelligence-saturated
+        key_features: Curved white surfaces, embedded displays, voice-responsive lighting, pod bed, auto-tinting glass
+    - id: SP07-026
+      name: Googie Architecture
+      category: 2. Architectural Styles
+      negativePrompt: square, boring
+      style:
+        aesthetic: 50s Diner/Gas station, roadside futurism, car-culture optimism, atomic-age roadside
+        form_and_line: Upswept roof, starbursts, boomerang angles, flying-V canopies, diamond window walls
+        color_palette: Neon, Chrome, Red, Turquoise vinyl, Buttery Yellow, Atomic Orange
+        lighting_setup: Neon signs, backlit plastic panels, cantilevered roof glow, kitsch brilliance, animated chase lights
+        material_texture: Glass, steel, terrazzo, boomerang Formica, stucco rock, polished chrome
+        render_quality: Space age, retro, optimistic, mid-century ambition, Jetsons-come-true, car-hood shine
+        spatial_distortion: Boomerang shapes
+        atmosphere: Fun, fast, atomic, drive-in romance, rocket-ship tomorrow, diner coffee energy
+        key_features: Cantilever, upswept roof, neon signage, starburst ornament, angled glass walls, terrazzo floors
+    - id: SP07-006
+      name: Brutalist Architecture
+      category: 2. Architectural Styles
+      negativePrompt: delicate, painted, wood, glass
+      style:
+        aesthetic: Massive concrete structure, raw monument, bunker poetry, fortress presence
+        form_and_line: Heavy geometric blocks, board-marked walls, cantilevered masses, angular shadows
+        color_palette: Raw Concrete Grey, Charcoal, Slate, weathered Pewter, damp Ash
+        lighting_setup: Harsh shadows, dramatic, low-angle sun, deep recesses, stark contrast
+        material_texture: Rough concrete formwork, board imprints, tie-hole patterns, exposed aggregate, cold stone
+        render_quality: Monumental, imposing, heavy, sculptural weight, heroic scale, institutional power
+        spatial_distortion: None
+        atmosphere: Oppressive, powerful, stoic, enduring, fortress-like silence, territorial
+        key_features: Concrete dominance, monolithic volumes, rhythmic boardmarks, shadow geometry
+    - id: SP07-007
+      name: Art Deco
+      category: 2. Architectural Styles
+      negativePrompt: minimal, rustic, plain
+      style:
+        aesthetic: 1920s glamour architecture, skyscraper age, jazz modernity, speakeasy elegance
+        form_and_line: Geometric patterns, sunbursts, stepped ziggurats, chevron flows, fountain motifs
+        color_palette: Gold, Black, Emerald Green, Chrome, Deep Navy, Ivory
+        lighting_setup: Dramatic uplighting, sconce glow, mirrored reflection, marquee brilliance, frosted panels
+        material_texture: Polished brass, marble, velvet, lacquered wood, etched glass, chrome inlay
+        render_quality: Great Gatsby jazz-age luxurious, ornate, Art Deco decadence
+        spatial_distortion: None
+        atmosphere: Expensive, party, jazz age, extravagant, champagne fizz, midnight glamour
+        key_features: Geometric ornamentation, sunburst mirrors, chevron floors, gold accents, tiered chandeliers
     - id: SP07-028
       name: Sustainable Green
       category: 2. Architectural Styles
       negativePrompt: concrete, industrial
       style:
-        aesthetic: Vertical forest building
-        form_and_line: Organic + Grid
-        color_palette: Green plants, Wood
-        lighting_setup: Natural sun
-        material_texture: Leaves, timber
-        render_quality: Eco-friendly, alive
+        aesthetic: Vertical forest building, living architecture, Bosco Verticale, breathing tower, planted habitat
+        form_and_line: Organic + Grid, staggered planters, stepped terraces, living balconies, vegetated fins
+        color_palette: Green plants, Wood, Sky reflection, Soil Brown, Seasonal Blossom color
+        lighting_setup: Natural sun, leaf-filtered dapple, photosynthesis glow, seasonal-angle shadow
+        material_texture: Leaves, timber, living bark, bamboo cladding, rammed earth, recycled aggregate
+        render_quality: Eco-friendly, alive, biophilic wellness, carbon-negative beauty, nature-reclaimed
         spatial_distortion: Overgrown
-        atmosphere: Healthy, future, fresh
-        key_features: Trees on balcony
-    - id: SP07-029
-      name: Adobe/Pueblo
-      category: 2. Architectural Styles
-      negativePrompt: sharp edges, wood
-      style:
-        aesthetic: Desert mud house
-        form_and_line: Rounded corners
-        color_palette: Terracotta, Sand
-        lighting_setup: Harsh desert sun
-        material_texture: Mud plaster
-        render_quality: Natural, earthy, solid
-        spatial_distortion: Handmade walls
-        atmosphere: Warm, dry, grounded
-        key_features: Wood beams (vigas)
+        atmosphere: Healthy, future, fresh, oxygen-rich, symbiotic, planet-healing optimism
+        key_features: Trees on balcony, green walls, integrated planters, solar shading, rainwater harvesting, biodiversity habitat
     - id: SP07-030
       name: Soviet Constructivist
       category: 2. Architectural Styles
       negativePrompt: ornate, capitalist
       style:
-        aesthetic: Geometric concrete block
-        form_and_line: Bold diagonals
-        color_palette: Grey, Red accents
-        lighting_setup: Overcast
-        material_texture: Concrete
-        render_quality: Utopian, stark, heavy
+        aesthetic: Geometric concrete block, revolutionary architecture, communal machine, socialist monument
+        form_and_line: Bold diagonals, intersecting cylinders, floating cantilevers, pilotis grid, dynamic tension
+        color_palette: Grey, Red accents, Raw Concrete, Faded Ochre, Industrial Black, Propaganda Crimson
+        lighting_setup: Overcast, low-angle drama, stark shadow projection, factory-window rhythm
+        material_texture: Concrete, rough-cast render, steel frame, glass-block, bolted plate
+        render_quality: Utopian, stark, heavy, revolutionary monument, collectivist scale, heroic industry
         spatial_distortion: Floating masses
-        atmosphere: Serious, collective
-        key_features: Cylinder/Cube
-    - id: SP07-031
-      name: Space Station Interior
-      category: 3. Environment
-      negativePrompt: wood, brick
+        atmosphere: Serious, collective, revolutionary, communal purpose, factory-hall echo, historic weight
+        key_features: Cylinder/Cube, floating volumes, exposed structure, sky-bridge walkways, bold red accents
+    - id: SP07-009
+      name: Gothic Revival
+      category: 2. Architectural Styles
+      negativePrompt: modern, bright, simple
       style:
-        aesthetic: Orbital station module
-        form_and_line: Wires, panels
-        color_palette: White, Velcro Blue
-        lighting_setup: Harsh LED
-        material_texture: Padding, metal
-        render_quality: Scientific, cramped
-        spatial_distortion: Zero-G floating
-        atmosphere: Claustrophobic, tech
-        key_features: Handrails
+        aesthetic: Dark ornate cathedral or mansion, stone romance, medieval dream, vertical yearning
+        form_and_line: Pointed arches, intricate carving, ribbed vaults, flying buttresses, spires reaching
+        color_palette: Dark stone, stained glass colors, Deep Crimson, midnight Blue, burnished Gold, weathered Grey
+        lighting_setup: Dim, candlelight, mysterious, stained glass glow, moonlit shafts, flickering shadow
+        material_texture: Stone, dust, cobwebs, carved oak, cold iron, weathered limestone, tarnished brass
+        render_quality: Haunted, historic, detailed, cathedral awe, sacred darkness, ancient craft
+        spatial_distortion: Elongated vertical lines
+        atmosphere: Spooky, dramatic, ancient, sacred, echoing, time-layered reverence
+        key_features: Vertical emphasis, flying buttresses, gargoyle silhouettes, tracery windows, ribbed ceiling
+    - id: SP07-024
+      name: Victorian Painted Lady
+      category: 2. Architectural Styles
+      negativePrompt: plain, grey
+      style:
+        aesthetic: San Francisco house, candy-colored heritage, architectural confection, gingerbread fantasy
+        form_and_line: Gingerbread trim, spindle work, fish-scale shingles, bay windows, gable ornament, tall narrow
+        color_palette: Pastel Blue/Pink/Yellow, Lavender, Mint Green, Cream trim, Dusty Rose
+        lighting_setup: Sunny day, San Francisco fog-diffused, golden-hour facade glow, painted-lady sparkle
+        material_texture: Wood siding, painted redwood, scroll-sawn ornament, turned spindles, bracketed eaves
+        render_quality: Charming, detailed, dollhouse, postcard-perfect, neighborhood jewel, color-pop delight
+        spatial_distortion: None
+        atmosphere: Happy, nostalgic, cute, cheerful, preserved-history, whimsical pride
+        key_features: Turret, gingerbread trim, three-color paint scheme, bay windows, fish-scale shingles
+    - id: SP07-008
+      name: Japanese Zen
+      category: 2. Architectural Styles
+      negativePrompt: clutter, western, plastic
+      style:
+        aesthetic: Traditional Japanese room, wabi-sabi beauty, tea ceremony stillness, monastic restraint
+        form_and_line: Grid of Shoji screens, tatami modules, tokonoma alcove, vertical posts, sliding tracks
+        color_palette: Bamboo, Rice Paper White, Tatami Green, Charcoal Sumi, Warm Cedar, Indigo
+        lighting_setup: Diffused paper lantern light, shoji-filtered daylight, alcove spotlight, seasonal shadow play
+        material_texture: Tatami mat, wood, paper, hand-troweled clay, rush grass, raw silk
+        render_quality: Peaceful, simple, natural, meditative clarity, refined emptiness
+        spatial_distortion: None
+        atmosphere: Meditative, quiet, disciplined, reverent, breathing stillness, seasonal awareness
+        key_features: Low furniture, tokonoma alcove, sliding fusuma, irori hearth, zen garden view
+    - id: SP07-029
+      name: Adobe/Pueblo
+      category: 2. Architectural Styles
+      negativePrompt: sharp edges, wood
+      style:
+        aesthetic: Desert mud house, earthen sanctuary, pueblo revival, timeless Southwest, hand-shaped dwelling
+        form_and_line: Rounded corners, stepped massing, thick-wall masses, parapet silhouettes, organic contours
+        color_palette: Terracotta, Sand, Warm Ochre, Sage brush, Deep Cinnamon, Sunbaked Clay
+        lighting_setup: Harsh desert sun, deep window-reveal shadow, nicho candle glow, kiva fireplace flicker
+        material_texture: Mud plaster, hand-troweled adobe, vigas wood, saltillo tile, rough-hewn lintels
+        render_quality: Natural, earthy, solid, timeless-pueblo, sun-baked authenticity, ancestral craft
+        spatial_distortion: Handmade walls
+        atmosphere: Warm, dry, grounded, ancient-land, pueblo-silent, earth-connected peace
+        key_features: Wood beams (vigas), rounded edges, kiva fireplace, nicho alcoves, bancos, ladder access
     - id: SP07-032
       name: Subway Station
       category: 3. Environment
       negativePrompt: clean, sunny
       style:
-        aesthetic: Grime-worn metropolitan underground
-        form_and_line: Perspective tunnel
-        color_palette: Tile White, Grime
-        lighting_setup: Fluorescent flicker
-        material_texture: Tile, dirt
-        render_quality: Urban, gritty, public
+        aesthetic: NYC/London grime-worn metropolitan underground, tile echo, commuter solitude
+        form_and_line: Perspective tunnel, arched vault, column rhythm, vanishing track lines, signage grid
+        color_palette: Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone
+        lighting_setup: Fluorescent flicker, platform-edge pools, advertising-light glare, tunnel-black void
+        material_texture: Tile, dirt, ceramic glaze, metal rail, chewing-gum pavement, peeling paint
+        render_quality: Urban, gritty, public, transit-realism, commuter poetry, damp-platform grime
         spatial_distortion: Motion blur train
-        atmosphere: Lonely, transit
-        key_features: Tiles
-    - id: SP07-033
-      name: Greenhouse/Conservatory
+        atmosphere: Lonely, transit, anonymous, platform-wait, underground rhythm, metropolitan solitude
+        key_features: Tiles, vaulted ceiling, platform edge, bench, signage, track tunnel
+    - id: SP07-011
+      name: Luxury Penthouse
       category: 3. Environment
-      negativePrompt: dark, dry
+      negativePrompt: basement, dark, cheap
       style:
-        aesthetic: Glass house with plants
-        form_and_line: Glass grid
-        color_palette: Green, Glass
-        lighting_setup: Diffused bright
-        material_texture: Glass, leaves, mist
-        render_quality: Humid, lush, peaceful
-        spatial_distortion: Condensation
-        atmosphere: Alive, wet, calm
-        key_features: Plants
-    - id: SP07-034
-      name: Abandoned Asylum
+        aesthetic: High-rise apartment with view, sky home, vertical privilege, glass aerie
+        form_and_line: Floor to ceiling glass, floating planes, open-span living, cantilevered balcony
+        color_palette: Neutral interior, blue city exterior, Charcoal upholstery, Brass accent, Ivory cream
+        lighting_setup: City lights at night, recessed cove glow, art-spot accents, sky-reflected ambient, dim-to-warm LEDs
+        material_texture: Glass, reflection, leather, book-matched marble, brushed nickel, silk velvet
+        render_quality: Expensive, exclusive, rich, penthouse perfection, whispered wealth, skyline bragging
+        spatial_distortion: None
+        atmosphere: Powerful, lonely, successful, elevated, above-it-all quiet, rarefied air
+        key_features: City skyline view, private terrace, infinity-edge pool, wine room, automated blinds
+    - id: SP07-012
+      name: Rustic Cabin
       category: 3. Environment
-      negativePrompt: clean, new
+      negativePrompt: city, modern, cold
       style:
-        aesthetic: Decaying hallway
-        form_and_line: Peeling paint lines
-        color_palette: Desaturated Green/Grey
-        lighting_setup: Shafts of light
-        material_texture: Rot, rust, debris
-        render_quality: Scary, ruined, texture
-        spatial_distortion: Collapsed ceiling
-        atmosphere: Horror, sad, old
-        key_features: Wheelchair
+        aesthetic: Log cabin interior, wilderness retreat, pioneer warmth, mountain sanctuary
+        form_and_line: Rough log shapes, stacked stone, heavy timber trusses, hand-hewn beams, chunky proportions
+        color_palette: Warm brown, fire orange, Golden Amber, Forest Pine, Smoked Oat
+        lighting_setup: Fireplace glow, oil-lamp amber, candle flicker, window-filtered forest light, cast-iron stove warmth
+        material_texture: Rough wood, stone, fur, hammered copper, wool blanket, cast iron, leather hide
+        render_quality: Cozy, retreat, nature, crackling-warmth realism, off-grid tranquility
+        spatial_distortion: None
+        atmosphere: Warm, safe, isolated, stories-by-fire, pine-scented, snow-quiet
+        key_features: Wood everywhere, stone hearth fireplace, antler chandelier, fur throws, log walls
+    - id: SP07-013
+      name: Mediterranean Villa
+      category: 3. Environment
+      negativePrompt: rain, cold, dark, grey
+      style:
+        aesthetic: Greek or Italian coastal home, sun-drenched retreat, blue-shuttered simplicity, sea-facing sanctuary
+        form_and_line: Soft plaster edges, arches, barrel ceilings, colonnades, terraced courtyards
+        color_palette: White, Azure Blue, Terracotta, Bougainvillea Magenta, Warm Ochre, Sea-glass Green
+        lighting_setup: Bright blinding sun, deep shutter-shadow, courtyard dapple, candlelit terrace evening
+        material_texture: Stucco, tile, sea water, rough stone, hand-painted ceramic, wrought iron, bleached timber
+        render_quality: Vacation, sunny, airy, dolce vita warmth, coastal breeze realism, sun-bleached beauty
+        spatial_distortion: None
+        atmosphere: Relaxed, summer, hot, siesta-slow, salt-air, cicada-humming bliss
+        key_features: White walls and blue sea, terracotta roof tiles, bougainvillea cascade, olive grove, pergola shade
+    - id: SP07-031
+      name: Space Station Interior
+      category: 3. Environment
+      negativePrompt: wood, brick
+      style:
+        aesthetic: ISS orbital station module, zero-G clutter, Velcro walls, Earth through cupola
+        form_and_line: Wires, panels, equipment rack geometry, circular hatch rings, padded tunnel tubes
+        color_palette: White, Velcro Blue, Equipment Beige, Soft-glow Green LED, Black panel accents
+        lighting_setup: Harsh LED, panel-integrated task light, cupola-filtered Earth light, dim night-mode amber
+        material_texture: Padding, metal, velcro tape, cable bundles, control panel plastic, foil insulation
+        render_quality: Scientific, cramped, orbital-realism, functional density, engineering clutter, cosmic frontier
+        spatial_distortion: Zero-G floating
+        atmosphere: Claustrophobic, tech, weightless, frontier-isolation, science-hum, fragile habitation
+        key_features: Handrails, equipment racks, round hatches, observation cupola, floating cables, soft walls
     - id: SP07-035
       name: Library (Old)
       category: 3. Environment
       negativePrompt: digital, modern
       style:
-        aesthetic: Stacks of books
-        form_and_line: Vertical spines
-        color_palette: Brown, Gold, Dust
-        lighting_setup: Warm lamp
-        material_texture: Paper, wood, leather
-        render_quality: Quiet, intellectual
+        aesthetic: Stacks of books, bibliophile sanctuary, reading-room heaven, literary labyrinth, scholar's cathedral
+        form_and_line: Vertical spines, shelf-grid rhythm, arched alcoves, rolling ladders, barrel-vault ceiling
+        color_palette: Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather
+        lighting_setup: Warm lamp, banker's green glass shade, reading-table pool, high-window shaft, brass sconce
+        material_texture: Paper, wood, leather, vellum, gilt tooling, waxed oak, marble bust
+        render_quality: Quiet, intellectual, scholarly peace, book-scent serenity, timeless learning
         spatial_distortion: None
-        atmosphere: Studious, hush
-        key_features: Books everywhere
+        atmosphere: Studious, hush, absorbed, musty-sweet, inherited wisdom, reading-trance
+        key_features: Books everywhere, rolling ladder, reading tables, brass lamps, vaulted ceiling, globe
+    - id: SP07-015
+      name: Victorian Mansion
+      category: 3. Environment
+      negativePrompt: minimal, bright, open
+      style:
+        aesthetic: 19th century cluttered room, Empire excess, mourning elegance, parlour theatre
+        form_and_line: Ornate patterns everywhere, framed silhouettes, heavy draping swags, crowded picture rails
+        color_palette: Dark Red, Gold, Mahogany, Plum, Bottle Green, Antique Brass
+        lighting_setup: Dim gaslight, oil-lamp pools, fireplace flicker, heavy-curtained gloom, tarnished candelabra
+        material_texture: Velvet, wallpaper, dust, horsehair, brocade, marble mantels, chinoiserie
+        render_quality: Antique, heavy, stuffed, museum-dense, gaslit nostalgia, maximalist inheritance
+        spatial_distortion: None
+        atmosphere: Oppressive, historic, rich, cluttered memory, mothball, ancestral weight
+        key_features: Pattern density, overstuffed furniture, floor-to-ceiling drapes, gallery wall, taxidermy
+    - id: SP07-033
+      name: Greenhouse/Conservatory
+      category: 3. Environment
+      negativePrompt: dark, dry
+      style:
+        aesthetic: Glass house with plants, botanical sanctuary, Victorian Palm House, humid Eden, fern-filled paradise
+        form_and_line: Glass grid, curved glasshouse ribs, ironwork tracery, floor-to-glass, misty depth
+        color_palette: Green, Glass, Tropical Bloom accents, Dew-drop Silver, Mossy floor, Whitewashed iron
+        lighting_setup: Diffused bright, glass-filtered sun, condensation prisms, mist-softened rays
+        material_texture: Glass, leaves, mist, cast iron, terracotta pots, gravel path, moist bark
+        render_quality: Humid, lush, peaceful, botanical-specimen clarity, greenhouse glow, steaming-leaf vitality
+        spatial_distortion: Condensation
+        atmosphere: Alive, wet, calm, growing, oxygen-dense, fern-forest peace
+        key_features: Plants, iron framework, glass panels, mist hanging in air, terracotta pots, fern fronds
+    - id: SP07-014
+      name: Cyberpunk Apartment
+      category: 3. Environment
+      negativePrompt: clean, organized, day
+      style:
+        aesthetic: Cluttered high-tech low-life room, neon slum, analog-cable chaos, data-crimes den
+        form_and_line: Wires, screens, trash, stacked monitors, cable spaghetti, hacked-together racks, unfolded futons
+        color_palette: Dark, Neon Pink/Blue/Green, Amber CRT glow, Deep Violet, sickly Fluorescent
+        lighting_setup: Screen glow, neon from window, buzzing fluorescent strip, holiday lights strung up, server LED blink
+        material_texture: Metal, junk, ramen cups, peeling stickers, corrugated plastic, synth-leather, heatsinks
+        render_quality: Dystopian, messy, detailed, chrome-beyond, circuit-grime, wet pavement reflection
+        spatial_distortion: None
+        atmosphere: Depressing, cool, tech, hunted, data-saturated, 3AM desperation
+        key_features: Clutter density, multiple monitors, noodle cups, neon reflection in puddles, hacking rig
     - id: SP07-036
       name: Casino Floor
       category: 3. Environment
       negativePrompt: daylight, calm
       style:
-        aesthetic: Vegas gambling hall
-        form_and_line: Busy patterns
-        color_palette: Red, Gold, Neon
-        lighting_setup: Dark with bright spots
-        material_texture: Carpet, plastic
-        render_quality: Overstimulating, tacky
+        aesthetic: Vegas gambling hall, pleasure labyrinth, windowless empire, sensory-trap palace
+        form_and_line: Busy patterns, carpet maze, machine rows, mirrored columns, endless grid of chance
+        color_palette: Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple
+        lighting_setup: Dark with bright spots, ceiling wash, slot-machine glow, chandelier bling, ambient overstimulation
+        material_texture: Carpet, plastic, vinyl seating, mirrored ceiling, chrome trim, felt table
+        render_quality: Overstimulating, tacky, sensory-saturation, gambler's cathedral, neon-excess
         spatial_distortion: None
-        atmosphere: Greed, excitement, fake
-        key_features: No clocks
+        atmosphere: Greed, excitement, fake, disoriented, timeless, chance-buzzed numbness
+        key_features: No clocks, no windows, slot machines, busy carpet, mirrored ceiling, cocktail waitress
     - id: SP07-037
       name: Aquarium Tunnel
       category: 3. Environment
       negativePrompt: dry
       style:
-        aesthetic: Underwater glass tunnel
-        form_and_line: Curved glass
-        color_palette: Blue, Cyan
-        lighting_setup: Caustics
-        material_texture: Glass, water
-        render_quality: Immersive, blue
+        aesthetic: Underwater glass tunnel, submerged walkway, ocean-immersed passage, blue cathedral, marine immersion
+        form_and_line: Curved glass, arched acrylic, perspective tube, floor-to-ceiling curve, flowing water line
+        color_palette: Blue, Cyan, Aquamarine, Deep Navy shadow, Bioluminescent fleck, Sandy floor tan
+        lighting_setup: Caustics, rippling light nets, overhead-dappled, blue ambient, tank-glow
+        material_texture: Glass, water, acrylic, coral rock, sand bed, shimmering scale
+        render_quality: Immersive, blue, aquarium-clarity, oceanic wonder, deep-blue meditation
         spatial_distortion: Refraction
-        atmosphere: Wonder, deep
-        key_features: Fish overhead
-    - id: SP07-038
-      name: Catacombs
-      category: 3. Environment
-      negativePrompt: living
-      style:
-        aesthetic: Bone walls
-        form_and_line: Skulls
-        color_palette: Bone White, Dirt
-        lighting_setup: Torch/Flashlight
-        material_texture: Bone, dirt
-        render_quality: Macabre, claustrophobic
-        spatial_distortion: None
-        atmosphere: Death, silence
-        key_features: Skulls
+        atmosphere: Wonder, deep, floating, quiet-awe, blue-weightless, other-world calm
+        key_features: Fish overhead, glass tunnel, caustic light patterns, sharks, coral, stingrays
     - id: SP07-039
       name: Server Room
       category: 3. Environment
       negativePrompt: messy, organic
       style:
-        aesthetic: Data center aisles
-        form_and_line: Perspective lines
-        color_palette: Black, Blue LED
-        lighting_setup: Artificial cool
-        material_texture: Metal, plastic
-        render_quality: High tech, loud fan
+        aesthetic: Data center aisles, computational cathedral, silicon temple, digital infrastructure, cold aisles of data
+        form_and_line: Perspective lines, rack-grid infinity, cable-management channels, perforated door rhythm, raised floor grid
+        color_palette: Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal
+        lighting_setup: Artificial cool, rack-integrated glow, service-aisle strip, status-LED constellation, cold-corridor containment
+        material_texture: Metal, plastic, perforated steel, fiber optic, Kevlar cable jacket, heatsink fin
+        render_quality: High tech, loud fan, data-sovereign, server-farm precision, digital fortress
         spatial_distortion: None
-        atmosphere: Cold, data, power
-        key_features: Blinking lights
+        atmosphere: Cold, data, power, humming, computational, always-on vigilance
+        key_features: Blinking lights, server racks, cold aisle, cable management, raised floor, cooling fans
+    - id: SP07-038
+      name: Catacombs
+      category: 3. Environment
+      negativePrompt: living
+      style:
+        aesthetic: Bone walls, empire of the dead, skull architecture, underground ossuary, silence of centuries
+        form_and_line: Skulls, stacked femur patterns, arch niches, skull-and-crossbone geometry, tunnel perspective
+        color_palette: Bone White, Dirt, Sepia age, Calcium Yellow, Shadow Brown, Cartilage Cream
+        lighting_setup: Torch/Flashlight, flame-flicker on bone, LED beam, dramatic shadow-cast, warm death-glow
+        material_texture: Bone, dirt, calcium deposit, cold stone, crumbling mortar, dry-earth scent
+        render_quality: Macabre, claustrophobic, bone-chamber realism, death-density, ancient silence
+        spatial_distortion: None
+        atmosphere: Death, silence, below-ground, ossuary-reverence, chilling peace, mortal reminder
+        key_features: Skulls, stacked long bones, arched niches, low ceiling, tunnel shaft, decorative bone patterns
     - id: SP07-040
       name: Treehouse
       category: 3. Environment
       negativePrompt: ground level
       style:
-        aesthetic: House in canopy
-        form_and_line: Wood planks
-        color_palette: Brown, Green leaves
-        lighting_setup: Dappled sun
-        material_texture: Bark, wood
-        render_quality: Childhood, secret
+        aesthetic: House in canopy, child's secret kingdom, elevated hideaway, forest perch, arboreal adventure
+        form_and_line: Wood planks, branch-cradled platforms, ladder diagonals, suspension-bridge curves, wrap-around deck
+        color_palette: Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss
+        lighting_setup: Dappled sun, leaf-filtered shimmer, lantern glow, fairy-string twinkle, camping-lamp amber
+        material_texture: Bark, wood, rope ladder, canvas, salvaged plank, tree-sap
+        render_quality: Childhood, secret, summer-adventure, backyard-magic, freedom fantasy
         spatial_distortion: Crooked
-        atmosphere: Adventure, high
-        key_features: Ladder
-    - id: SP07-041
-      name: French Formal Garden
-      category: 4. Landscape Architecture
-      negativePrompt: wild, messy
+        atmosphere: Adventure, high, above-ground, secret-hideout, wind-in-leaves, kid-dream independence
+        key_features: Ladder, tree trunk through floor, rope swing, lanterns, wooden deck, lookout platform
+    - id: SP07-034
+      name: Abandoned Asylum
+      category: 3. Environment
+      negativePrompt: clean, new
       style:
-        aesthetic: Grand formal palace garden
-        form_and_line: Symmetry, patterns
-        color_palette: Green, Gravel Beige
-        lighting_setup: Flat sun
-        material_texture: Manicured hedge
-        render_quality: Controlled, royal
-        spatial_distortion: None
-        atmosphere: Order, grand
-        key_features: Topiary
-    - id: SP07-042
-      name: English Cottage Garden
-      category: 4. Landscape Architecture
-      negativePrompt: formal, concrete
-      style:
-        aesthetic: Overgrown flower beds
-        form_and_line: Organic clumps
-        color_palette: Pastel flowers, Green
-        lighting_setup: Soft sun
-        material_texture: Petals, leaves
-        render_quality: Romantic, messy
-        spatial_distortion: None
-        atmosphere: Peaceful, sweet
-        key_features: Flowers
-    - id: SP07-043
-      name: Zen Rock Garden
-      category: 4. Landscape Architecture
-      negativePrompt: plants, water
-      style:
-        aesthetic: Raked gravel
-        form_and_line: Rake lines (circles)
-        color_palette: Grey, White, Moss
-        lighting_setup: Shadows in grooves
-        material_texture: Gravel, stone
-        render_quality: Meditative, dry
-        spatial_distortion: None
-        atmosphere: Calm, focus
-        key_features: Rocks
+        aesthetic: Decaying hallway, institutional horror, peeling madness, sanitarium ruin, ghost of order
+        form_and_line: Peeling paint lines, institutional symmetry, long perspective corridor, collapsed grid, sagging ceiling
+        color_palette: Desaturated Green/Grey, Sickly Mint, Rust stain, Water-damage Brown, Faded Cream
+        lighting_setup: Shafts of light, dust-beam theater, broken-window blade, flickering emergency bulb, pitch corners
+        material_texture: Rot, rust, debris, flaking paint, water-stained plaster, shattered glass, mold bloom
+        render_quality: Scary, ruined, texture, abandonment beauty, decay-as-art, gothic institutional
+        spatial_distortion: Collapsed ceiling
+        atmosphere: Horror, sad, old, forgotten, echoing, institutional trauma, peeling silence
+        key_features: Wheelchair, peeling paint, long hallway, broken windows, institutional signs, collapsed ceiling
     - id: SP07-044
       name: Urban Park (High Line)
       category: 4. Landscape Architecture
       negativePrompt: wild forest
       style:
-        aesthetic: City green space
-        form_and_line: Concrete paths
-        color_palette: Concrete, Grass, Rust
-        lighting_setup: City sun
-        material_texture: Steel, plants
-        render_quality: Modern, public
+        aesthetic: City green space, elevated oasis, urban-meadow, infrastructure-to-garden, railway-bloom
+        form_and_line: Concrete paths, linear-meander, rail-track planting lines, overlook platforms, bridge-span views
+        color_palette: Concrete, Grass, Rust, Corten steel orange, Prairie-flower Yellow, Skyline Grey
+        lighting_setup: City sun, building-reflected glow, street-lamp pools, sunset-skyline silhouette
+        material_texture: Steel, plants, weathered wood, gravel path, ornamental grasses, raw concrete plank
+        render_quality: Modern, public, post-industrial poetry, green-infrastructure, urban-ecology beauty
         spatial_distortion: None
-        atmosphere: Relaxed, urban
-        key_features: Bench
-    - id: SP07-045
-      name: Desert Xeriscape
+        atmosphere: Relaxed, urban, elevated, strolling, above-the-street, collective breathing space
+        key_features: Bench, planted rail tracks, city overlook, concrete planks, native grasses, public art
+    - id: SP07-041
+      name: French Formal Garden
       category: 4. Landscape Architecture
-      negativePrompt: lawn, wet
+      negativePrompt: wild, messy
       style:
-        aesthetic: Cactus garden
-        form_and_line: Spikes
-        color_palette: Sage Green, Red Earth
-        lighting_setup: Hard sun
-        material_texture: Rocks, succulents
-        render_quality: Sustainable, dry
+        aesthetic: Versailles grand formal palace garden, geometric power, royal symmetry
+        form_and_line: Symmetry, patterns, axial vistas, parterre embroidery, reflecting-canal lines, allée perspectives
+        color_palette: Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone
+        lighting_setup: Flat sun, axial-light drama, fountain-sparkle, golden-hour hedge wash, statue-silhouette
+        material_texture: Manicured hedge, clipped boxwood, raked gravel, fountain stone, lead statue, grass parterre
+        render_quality: Controlled, royal, ordered-nature, Le Notre geometry, garden-as-architecture, courtly perfection
         spatial_distortion: None
-        atmosphere: Hot, resilient
-        key_features: Succulents
-    - id: SP07-046
-      name: Tropical Resort Pool
+        atmosphere: Order, grand, absolute, orchestrated nature, king's gaze, tamed creation
+        key_features: Topiary, reflecting pool, parterre de broderie, axial vista, fountain, statue, orangery
+    - id: SP07-043
+      name: Zen Rock Garden
       category: 4. Landscape Architecture
-      negativePrompt: cold, city
+      negativePrompt: plants, water
       style:
-        aesthetic: Infinity pool
-        form_and_line: Water edge
-        color_palette: Turquoise, Palm Green
-        lighting_setup: Bright sun
-        material_texture: Water, stone
-        render_quality: Luxury, vacation
+        aesthetic: Raked gravel, karesansui poetry, dry-landscape meditation, stone-island sea, temple stillness
+        form_and_line: Rake lines (circles), ripple patterns, island-composition, horizontal-plane geometry, moss-mound accents
+        color_palette: Grey, White, Moss, Granite Black, Silver sand, Lichen Green
+        lighting_setup: Shadows in grooves, low-angle raking light, temple-eave shade, early-morning crisp
+        material_texture: Gravel, stone, crisp sand, weathered granite, velvet moss, crushed quartz
+        render_quality: Meditative, dry, contemplative-minimal, mind-clearing, sand-grain perfection
         spatial_distortion: None
-        atmosphere: Relaxing, expensive
-        key_features: Palm trees
+        atmosphere: Calm, focus, emptied-mind, stone-presence, raked-order, timeless sitting
+        key_features: Rocks, raked gravel, ripple patterns, moss islands, boundary wall, no water
+    - id: SP07-042
+      name: English Cottage Garden
+      category: 4. Landscape Architecture
+      negativePrompt: formal, concrete
+      style:
+        aesthetic: Overgrown flower beds, romantic chaos, Gertrude Jekyll border, painterly planting, bee-hum profusion
+        form_and_line: Organic clumps, meandering paths, herbaceous mounds, self-seeded drifts, rose-arch curve
+        color_palette: Pastel flowers, Green, Lavender haze, Hollyhock Pink, Delphinium Blue, Cream Rose
+        lighting_setup: Soft sun, cloud-diffused English light, dappled under-tree, golden-hour petal glow
+        material_texture: Petals, leaves, rough stone path, mossy brick, bark mulch, feathery foliage
+        render_quality: Romantic, messy, cottage-idyll, painter's garden, informal abundance, bee-loud beauty
+        spatial_distortion: None
+        atmosphere: Peaceful, sweet, dreamy, rustling, scented, time-stands-still garden
+        key_features: Flowers, overflowing borders, rose arches, winding path, bird bath, foxgloves, lavender
     - id: SP07-047
       name: Maze/Labyrinth
       category: 4. Landscape Architecture
       negativePrompt: open field
       style:
-        aesthetic: Hedge maze
-        form_and_line: Vertical walls
-        color_palette: Dark Green
-        lighting_setup: Shadowy paths
-        material_texture: Leaves
-        render_quality: Mysterious, geometric
+        aesthetic: Hedge maze, living puzzle, green architecture, secret-garden labyrinth, puzzle palace
+        form_and_line: Vertical walls, right-angle corridors, dead-end geometry, spiral center, boxwood-perfect edges
+        color_palette: Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue
+        lighting_setup: Shadowy paths, light-at-end glow, sun-stripe corridor, dappled-floor pattern, mysterious dead-end
+        material_texture: Leaves, clipped hedge, dense foliage surface, gravel floor, mossy statue, bark-stem wall
+        render_quality: Mysterious, geometric, puzzle-chamber, green-architecture, perspective-trick, getting-lost poetry
         spatial_distortion: None
-        atmosphere: Lost, puzzle
-        key_features: High walls
-    - id: SP07-048
-      name: Rooftop Garden
-      category: 4. Landscape Architecture
-      negativePrompt: ground level
-      style:
-        aesthetic: City skyline view
-        form_and_line: Railing
-        color_palette: Green, Grey, Blue sky
-        lighting_setup: Sunset
-        material_texture: Decking, pots
-        render_quality: Urban oasis
-        spatial_distortion: None
-        atmosphere: Cool, escape
-        key_features: Skyline
+        atmosphere: Lost, puzzle, confused, curious, walls-closing-in, center-discovery
+        key_features: High walls, dead ends, gravel path, center fountain, statue focal point, clipped precision
     - id: SP07-049
       name: Golf Course
       category: 4. Landscape Architecture
       negativePrompt: weeds, forest
       style:
-        aesthetic: Manicured lawn
-        form_and_line: Rolling hills
-        color_palette: Vibrant Green, Sand
-        lighting_setup: Morning mist
-        material_texture: Short grass
-        render_quality: Artificial nature, rich
+        aesthetic: Manicured lawn, designed landscape, green cathedral, Augusta perfection, sculpted fairway
+        form_and_line: Rolling hills, bunker-sweep curves, tee-box rectangles, green-contour undulations, fairway ribbons
+        color_palette: Vibrant Green, Sand, Sky Blue, Pinstripe Mow lines, Water-hazard Teal, Flag Yellow
+        lighting_setup: Morning mist, low-angle fairway light, golden-hour green glow, dew-sparkle, shadow-bunker drama
+        material_texture: Short grass, crisp turf, sand, water surface, flagstick, raked-bunker pattern
+        render_quality: Artificial nature, rich, landscape-design perfection, tournament-ready, man-versus-nature beauty
         spatial_distortion: None
-        atmosphere: Quiet, sport
-        key_features: Sand trap
+        atmosphere: Quiet, sport, exclusive, morning-fresh, focused-walk, manicured nature
+        key_features: Sand trap, manicured green, pin flag, water hazard, fairway mow lines, white bunker edge
     - id: SP07-050
       name: Botanical Glasshouse
       category: 4. Landscape Architecture
       negativePrompt: outdoor
       style:
-        aesthetic: Victorian palm house
-        form_and_line: White iron frame
-        color_palette: White, Green
-        lighting_setup: Diffused
-        material_texture: Glass, condensation
-        render_quality: Scientific, humid
+        aesthetic: Victorian palm house, glass cathedral, botanical treasury, iron-and-glass jewel, tropical collection
+        form_and_line: White iron frame, curved glasshouse ribs, ridge-and-furrow roof, circular staircase, tiered planting
+        color_palette: White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver
+        lighting_setup: Diffused, glasshouse-bright, condensation-prism, rain-on-glass, golden-hour ironwork glow
+        material_texture: Glass, condensation, cast iron, terracotta tile, tropical bark, giant-leaf surface
+        render_quality: Scientific, humid, Kew-Gardens grandeur, botanical-collection beauty, ironwork elegance
         spatial_distortion: None
-        atmosphere: Lush, enclosed
-        key_features: Iron structure
-    - id: SP07-051
-      name: Verdant Elven Refuge
-      category: 5. Fantasy Architecture
-      negativePrompt: industrial, blocky
+        atmosphere: Lush, enclosed, transported, tropical-England, conservatory-hush, plant-wonder
+        key_features: Iron structure, curved glass roof, spiral staircase, giant ferns, orchid display, palm canopy
+    - id: SP07-045
+      name: Desert Xeriscape
+      category: 4. Landscape Architecture
+      negativePrompt: lawn, wet
       style:
-        aesthetic: Art Nouveau in nature
-        form_and_line: Elegant curves
-        color_palette: Autumn Gold, White
-        lighting_setup: Magical glow
-        material_texture: Carved stone, leaves
-        render_quality: Ethereal, ancient
+        aesthetic: Cactus garden, arid sculpture, spiny landscape, survival beauty, textural desert
+        form_and_line: Spikes, rosette geometry, vertical accent-columns, mounded clusters, gravel sweeps
+        color_palette: Sage Green, Red Earth, Blue Agave, Golden Barrel, Ochre rock, Prickly-pear Magenta fruit
+        lighting_setup: Hard sun, heat-shimmer, sunset-glow on spines, backlit-agave drama, starfield night
+        material_texture: Rocks, succulents, decomposed granite, spiny skin, waxy cuticle, rusted steel edge
+        render_quality: Sustainable, dry, arid-beauty, water-wise texture, desert-garden art
         spatial_distortion: None
-        atmosphere: Magical, safe
-        key_features: Waterfalls
-    - id: SP07-052
-      name: Dwarven Fortress
-      category: 5. Fantasy Architecture
-      negativePrompt: wood, light, delicate
+        atmosphere: Hot, resilient, sun-forged, silent-survival, ancient-patience, desert-truth
+        key_features: Succulents, agave rosettes, dry riverbed, golden barrel cacti, rusted steel, gravel mulch
+    - id: SP07-048
+      name: Rooftop Garden
+      category: 4. Landscape Architecture
+      negativePrompt: ground level
       style:
-        aesthetic: Underground hall
-        form_and_line: Geometric blocky
-        color_palette: Grey Stone, Gold, Fire
-        lighting_setup: Lava glow
-        material_texture: Hewn stone
-        render_quality: Heavy, industrial fantasy
+        aesthetic: City skyline view, urban aerie, high-rise garden escape, above-the-noise retreat, planted penthouse
+        form_and_line: Railing, planter-grid, lounge-seating rectangle, pergola frame, hedge-row horizon
+        color_palette: Green, Grey, Blue sky, Sunset Orange, Corten Rust, City-light Gold
+        lighting_setup: Sunset, string-light canopy, fire-table glow, city-sparkle below, dusk-to-dark transition
+        material_texture: Decking, pots, weathered ipe wood, zinc planter, outdoor fabric, gravel
+        render_quality: Urban oasis, skyline-sanctuary, elevated-escape, city-balcony dream
         spatial_distortion: None
-        atmosphere: Epic, strong
-        key_features: Pillars
-    - id: SP07-053
-      name: Floating Castle
-      category: 5. Fantasy Architecture
-      negativePrompt: grounded
+        atmosphere: Cool, escape, above-it-all, private-horizon, breeze, metropolitan quietude
+        key_features: Skyline, railing edge, ipe deck, planter beds, fire pit, lounge seating, string lights
+    - id: SP07-046
+      name: Tropical Resort Pool
+      category: 4. Landscape Architecture
+      negativePrompt: cold, city
       style:
-        aesthetic: Castle in sky
-        form_and_line: Vertical towers
-        color_palette: White, Blue sky
-        lighting_setup: Bright sun
-        material_texture: Stone, clouds
-        render_quality: Dreamy, impossible
-        spatial_distortion: Floating rocks
-        atmosphere: Magical, high
-        key_features: Clouds below
-    - id: SP07-054
-      name: Cyberpunk Slums
-      category: 5. Fantasy Architecture
-      negativePrompt: clean, wide streets
-      style:
-        aesthetic: Stacked containers
-        form_and_line: Wires, neon
-        color_palette: Dark, Neon
-        lighting_setup: Artificial
-        material_texture: Rust, metal, rain
-        render_quality: Dense, dangerous
+        aesthetic: Infinity pool, resort paradise, liquid-edge luxury, beach-club fantasy, turquoise dream
+        form_and_line: Water edge, vanishing horizon, Baja shelf, palm trunks vertical, curved lazy-river
+        color_palette: Turquoise, Palm Green, White cabana, Bougainvillea Pink, Sand Beige, Sky-reflected teal
+        lighting_setup: Bright sun, underwater glow, tiki-torch amber, fire-pit flicker, sunset-surface shimmer
+        material_texture: Water, stone, pebble-sheen plaster, pool tile, teak deck, canvas awning
+        render_quality: Luxury, vacation, resort-brochure, five-star paradise, pool-day perfection
         spatial_distortion: None
-        atmosphere: Oppressive, tech
-        key_features: Vertical density
-    - id: SP07-055
-      name: Candy Kingdom
-      category: 5. Fantasy Architecture
-      negativePrompt: scary, realistic
-      style:
-        aesthetic: Edible architecture
-        form_and_line: Rounded soft
-        color_palette: Pink, Pastel
-        lighting_setup: Soft sugar glow
-        material_texture: Frosting, cake
-        render_quality: Cute, delicious
-        spatial_distortion: Melting
-        atmosphere: Sweet, fun
-        key_features: Sprinkles
-    - id: SP07-056
-      name: Underwater City
-      category: 5. Fantasy Architecture
-      negativePrompt: sky, dry
-      style:
-        aesthetic: Submerged lost-city grandeur
-        form_and_line: Domes, coral
-        color_palette: Blue, Gold, Biolum
-        lighting_setup: Water filtered
-        material_texture: Wet stone, glass
-        render_quality: Mysterious, deep
-        spatial_distortion: None
-        atmosphere: Silent, pressure
-        key_features: Bubbles
-    - id: SP07-057
-      name: Steampunk City
-      category: 5. Fantasy Architecture
-      negativePrompt: clean energy
-      style:
-        aesthetic: Steam powered London
-        form_and_line: Pipes, gears
-        color_palette: Bronze, Brick, Smoke
-        lighting_setup: Gaslight
-        material_texture: Metal, brick
-        render_quality: Industrial, retro
-        spatial_distortion: None
-        atmosphere: Busy, smoky
-        key_features: Gears
-    - id: SP07-058
-      name: Crystal Spire
-      category: 5. Fantasy Architecture
-      negativePrompt: brick, wood
-      style:
-        aesthetic: Grown crystal tower
-        form_and_line: Sharp facets
-        color_palette: Purple/Blue/White
-        lighting_setup: Internal refraction
-        material_texture: Glassy
-        render_quality: Alien, pure
-        spatial_distortion: None
-        atmosphere: Cold, magical
-        key_features: Translucency
-    - id: SP07-059
-      name: Hillside Roundhouse
-      category: 5. Fantasy Architecture
-      negativePrompt: square, tall
-      style:
-        aesthetic: Round door in hill
-        form_and_line: Round
-        color_palette: Green, Wood, Earth
-        lighting_setup: Cozy warm
-        material_texture: Grass, wood
-        render_quality: Cozy, hidden
-        spatial_distortion: None
-        atmosphere: Homey, safe
-        key_features: Round door
+        atmosphere: Relaxing, expensive, sunkissed, cocktail-bliss, endless-summer, weightless-tranquility
+        key_features: Palm trees, infinity edge, submerged loungers, cabana, fire bowls, turquoise water
     - id: SP07-060
       name: Haunted House (Cartoon)
       category: 5. Fantasy Architecture
       negativePrompt: scary realistic
       style:
-        aesthetic: Spooky cartoon manor
-        form_and_line: Wonky angles
-        color_palette: Purple, Green, Black
-        lighting_setup: Lightning flash
-        material_texture: Painted
-        render_quality: Spooky, fun
+        aesthetic: Scooby Doo spooky cartoon manor, Mystery Inc. haunt, crooked fun
+        form_and_line: Wonky angles, crooked windows, leaning chimney, sagging roofline, cartoon-distort timbering
+        color_palette: Purple, Green, Black, Cartoon-Orange trim, Spooky-moon White, Dark-violet shadows
+        lighting_setup: Lightning flash, cartoon-moon glow, window-silhouette yellow, dramatic-thunder strobe, bat-shadow
+        material_texture: Painted, ink-line, cel-shade, flat-color, wood-siding cartoon, weathervane silhouette
+        render_quality: Spooky, fun, Hanna-Barbera charm, cartoon-haunt delight, flat-color perfection, nostalgic-scary
         spatial_distortion: Face in window
-        atmosphere: Spooky, classic
-        key_features: Bats
-    - id: SP07-061
-      name: Ice Palace
-      category: 5. Fantasy Architecture
-      negativePrompt: warm, fire
-      style:
-        aesthetic: Frozen castle
-        form_and_line: Sharp ice
-        color_palette: White, Cyan
-        lighting_setup: Glittering
-        material_texture: Ice, snow
-        render_quality: Cold, magical
-        spatial_distortion: None
-        atmosphere: Frozen, regal
-        key_features: Icicles
-    - id: SP07-062
-      name: Canopy Rope Village
-      category: 5. Fantasy Architecture
-      negativePrompt: metal
-      style:
-        aesthetic: Huts in redwoods
-        form_and_line: Rope bridges
-        color_palette: Brown, Green
-        lighting_setup: Forest filter
-        material_texture: Wood, rope
-        render_quality: Primitive, high
-        spatial_distortion: None
-        atmosphere: Tribal, nature
-        key_features: Bridges
-    - id: SP07-063
-      name: Necropolis
-      category: 5. Fantasy Architecture
-      negativePrompt: life, green
-      style:
-        aesthetic: City of dead
-        form_and_line: Sharp spires
-        color_palette: Green mist, Black stone
-        lighting_setup: Eerie Green
-        material_texture: Stone, bone
-        render_quality: Evil, dark
-        spatial_distortion: None
-        atmosphere: Dread, death
-        key_features: Green fog
-    - id: SP07-064
-      name: Sunset Cloud Metropolis
-      category: 5. Fantasy Architecture
-      negativePrompt: ground
-      style:
-        aesthetic: Floating sci-fi city
-        form_and_line: Clean curves
-        color_palette: Orange sunset, White
-        lighting_setup: Sunset
-        material_texture: Metal, cloud
-        render_quality: Utopian, mining
-        spatial_distortion: None
-        atmosphere: Beautiful, high
-        key_features: Orange sky
-    - id: SP07-065
-      name: Paper Town
-      category: 5. Fantasy Architecture
-      negativePrompt: realistic
-      style:
-        aesthetic: Model village
-        form_and_line: Cut edges
-        color_palette: White paper
-        lighting_setup: Studio soft
-        material_texture: Paper grain
-        render_quality: Fragile, craft
-        spatial_distortion: None
-        atmosphere: Quiet, delicate
-        key_features: Fold lines
-    - id: SP07-066
-      name: Brick-Built City
-      category: 5. Fantasy Architecture
-      negativePrompt: smooth, realistic
-      style:
-        aesthetic: Toy brick world
-        form_and_line: Brick seams
-        color_palette: Primary plastic
-        lighting_setup: Glossy
-        material_texture: Plastic studs
-        render_quality: Toy, blocky
-        spatial_distortion: None
-        atmosphere: Playful, constructed
-        key_features: Studs
-    - id: SP07-067
-      name: Sandcastle
-      category: 5. Fantasy Architecture
-      negativePrompt: stone
-      style:
-        aesthetic: Beach fort
-        form_and_line: Drip towers
-        color_palette: Sand beige
-        lighting_setup: Sunlight
-        material_texture: Sand grains
-        render_quality: Temporary, fragile
-        spatial_distortion: Crumbling
-        atmosphere: Summer, fun
-        key_features: Grainy
-    - id: SP07-068
-      name: Cardboard Fort
-      category: 5. Fantasy Architecture
-      negativePrompt: solid wall
-      style:
-        aesthetic: Box castle
-        form_and_line: Tape lines
-        color_palette: Brown cardboard
-        lighting_setup: Indoor
-        material_texture: Corrugated
-        render_quality: Childhood, rough
-        spatial_distortion: Sagging
-        atmosphere: Imaginative, cheap
-        key_features: Tape
-    - id: SP07-069
-      name: Inflatable Castle
-      category: 5. Fantasy Architecture
-      negativePrompt: hard edges
-      style:
-        aesthetic: Bouncy house
-        form_and_line: Seams
-        color_palette: Neon vinyl
-        lighting_setup: Glossy
-        material_texture: Plastic vinyl
-        render_quality: Soft, air filled
-        spatial_distortion: Bulging
-        atmosphere: Fun, bouncy
-        key_features: Wrinkles
-    - id: SP07-070
-      name: Gingerbread House
-      category: 5. Fantasy Architecture
-      negativePrompt: inedible
-      style:
-        aesthetic: Cookie house
-        form_and_line: Icing piping
-        color_palette: Brown, White, Candy
-        lighting_setup: Warm
-        material_texture: Cookie, sugar
-        render_quality: Christmas, sweet
-        spatial_distortion: None
-        atmosphere: Festive, yummy
-        key_features: Gumdrops
-    - id: SP07-071
-      name: Mushroom House
-      category: 5. Fantasy Architecture
-      negativePrompt: square
-      style:
-        aesthetic: Whimsical mushroom cottage
-        form_and_line: Organic
-        color_palette: Red cap, White stalk
-        lighting_setup: Forest floor
-        material_texture: Fungus
-        render_quality: Fantasy, cute
-        spatial_distortion: Bulbous
-        atmosphere: Magic, small
-        key_features: Spots
-    - id: SP07-072
-      name: Bottle Ship
-      category: 5. Fantasy Architecture
-      negativePrompt: ocean
-      style:
-        aesthetic: Ship inside glass
-        form_and_line: Glass reflection
-        color_palette: Wood, Glass
-        lighting_setup: Studio
-        material_texture: Glass, miniature
-        render_quality: Detailed, impossible
-        spatial_distortion: Distorted by glass
-        atmosphere: Precious, trapped
-        key_features: Glass bottle
+        atmosphere: Spooky, classic, cartoon-creepy, silly-scare, nostalgia, Saturday-morning thrill
+        key_features: Bats, crooked shutters, lightning bolt, full moon, weathervane, creepy tree, iron gate
     - id: SP07-073
       name: Ant Farm
       category: 5. Fantasy Architecture
       negativePrompt: surface
       style:
-        aesthetic: Tunnel cross section
-        form_and_line: Tunnels
-        color_palette: Sand, Dirt
-        lighting_setup: Side light
-        material_texture: Grainy
-        render_quality: Subterranean, busy
+        aesthetic: Tunnel cross section, subterranean city, insect engineering, soil labyrinth, colony metropolis
+        form_and_line: Tunnels, branching-chamber network, gallery-nodes, vertical shafts, fungus-garden alcoves, queen-chamber oval
+        color_palette: Sand, Dirt, Amber-gel fill, Chamber-dark Brown, Ant-black silhouette, Tunneling-fresh earth
+        lighting_setup: Side light, gel-illuminated cross-section, tunnel-depth shadow, chamber-glow, observation-pane backlit
+        material_texture: Grainy, sand-particle, soil-structure, gel-embedded clarity, tunnel-wall compact, mandible-scarred
+        render_quality: Subterranean, busy, ant-farm fascination, insect-city realism, colony-industry, cross-section beauty
         spatial_distortion: None
-        atmosphere: Busy, hidden
-        key_features: Tunnels
+        atmosphere: Busy, hidden, organized-chaos, colony-purpose, underfoot-world, instinct-hive, tunnel-darkness
+        key_features: Tunnels, chambers, queen's chamber, worker ants, fungus garden, brood cells, glass observation pane
+    - id: SP07-078
+      name: Borg Industrial Hive Cube
+      category: 5. Fantasy Architecture
+      negativePrompt: smooth
+      style:
+        aesthetic: Tech cube, cybernetic-collective vessel, assimilation architecture, networked sentience, adaptive geometry
+        form_and_line: Pipes, conduit-bundles, alcove-grid, regeneration-niche, data-node columns, tractor-beam emitter rings
+        color_palette: Dark Grey, Green light, Cybernetic-sick Green, Cold-metal Black, Plasma-blue, Necrotic-circuit glow
+        lighting_setup: Space, interior-green ambient, alcove-spot, plasma-conduit pulse, tractor-beam green wash, deep-space void
+        material_texture: Greebles, cybernetic-surface detail, bio-mechanical interface, tube-bundle, armor-plate, drone-socket, regeneration gel
+        render_quality: Complex, scary, Borg-collective menace, assimilation-horror, cybernetic-nightmare, hive-precision
+        spatial_distortion: None
+        atmosphere: Ominous, assimilating, resistance is futile
+        key_features: Cube, regeneration alcoves, conduit bundles, green plasma, drone figures, tractor beam, hive architecture
+    - id: SP07-080
+      name: Tardis Infinite Console Chamber
+      category: 5. Fantasy Architecture
+      negativePrompt: small
+      style:
+        aesthetic: Bigger on the inside, impossible interior beyond outer shell, dimensional transcendence
+        form_and_line: Hexagons/Roundels, organic-coral architecture, console-pedestal, gallery-level curves, time-rotor column, infinite-arches
+        color_palette: Orange/Teal, Coral-amber glow, Deep-ocean Teal, Console-copper, Roundel-warm gold, Time-vortex blue
+        lighting_setup: Console glow, time-rotor pulse, roundel-indirect, gallery-level ambient, regeneration-energy gold, warm coral wash
+        material_texture: Tech, organic, grown-coral surface, control-console brass, glass roundel, copper wire, gel-pack
+        render_quality: Sci-fi, chaotic, Doctor-Who wonder, impossible-dimensions, time-machine Baroque, bigger-on-the-inside magic
+        spatial_distortion: Time rotor
+        atmosphere: Adventure, time, wonder-awe, time-lord, infinite-explore, dimensional-impossible, home-among-stars
+        key_features: Central column, roundel walls, hexagonal console, time rotor, gallery levels, organic architecture, infinite depth
+    - id: SP07-064
+      name: Bespin Sunset Cloud Metropolis, carbon-freeze elegance, tibanna gas glow
+      category: 5. Fantasy Architecture
+      negativePrompt: ground
+      style:
+        aesthetic: Floating sci-fi city, gas-giant mining colony, cloud-top civilization, retro-future elegance, sky-mining hub
+        form_and_line: Clean curves, domed landing-pad circles, spire-vanes, rounded-hull geometry, floating-platform discs
+        color_palette: Orange sunset, White, Gas-giant Pink, Tibanna Gold, Sky-reflected Amber, Cloud-silver
+        lighting_setup: Sunset, orange-horizon bath, interior-warm gold, cloud-reflected glow, landing-beacon lights
+        material_texture: Metal, cloud, smooth hull, sleek alloy, transparisteel, polished deck
+        render_quality: Utopian, mining, Star-Wars Cloud-City beauty, sunset-metropolis elegance, retro-future luxury
+        spatial_distortion: None
+        atmosphere: Beautiful, high, administrative-calm, gas-giant-horizon, luxury-above-chaos, carbon-frozen serenity
+        key_features: Orange sky, cloud spires, landing platforms, smooth domes, skyline silhouette, tibanna refinery
+    - id: SP07-066
+      name: Lego Brick-Built City
+      category: 5. Fantasy Architecture
+      negativePrompt: smooth, realistic
+      style:
+        aesthetic: Lego toy brick world, ABS-plastic metropolis, snap-together skyline
+        form_and_line: Brick seams, stud-grid geometry, modular-block stacking, stepped-pyramid, interlocking corners
+        color_palette: Primary plastic, Bright Red, Yellow, Blue, Green, Black, White, Grey
+        lighting_setup: Glossy, plastic-surface reflection, light-pool on studs, playroom-filtered sun, specular shine
+        material_texture: Plastic studs, injection-mold surface, ABS sheen, clutch-power grip, brick-name logo, smooth-slope
+        render_quality: Toy, blocky, LEGO-catalog perfection, snap-together realism, brick-built charm, Danish toy beauty
+        spatial_distortion: None
+        atmosphere: Playful, constructed, childhood-creative, instruction-following, brick-searching, imaginative-build
+        key_features: Studs, brick texture, minifigure scale, interlocking bricks, modular builds, brick separator, baseplate
+    - id: SP07-057
+      name: Steampunk City
+      category: 5. Fantasy Architecture
+      negativePrompt: clean energy
+      style:
+        aesthetic: Steam powered London, brass-age metropolis, Victorian science fiction, Jules Verne future, clockwork empire
+        form_and_line: Pipes, gears, clock-face towers, dirigible-dock arches, chimney stacks, flywheel silhouettes
+        color_palette: Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright
+        lighting_setup: Gaslight, warm amber street-glow, gear-spark, hissing steam-vent light, amber window, smog-diffused
+        material_texture: Metal, brick, riveted copper, wood panel, leather, steam-whistle brass, soot-coat
+        render_quality: Industrial, retro, speculative-Victorian, gear-and-brass romance, steam-punk opulence
+        spatial_distortion: None
+        atmosphere: Busy, smoky, inventive, gear-turning, coal-breath, thrilling-progress, stoker's warmth
+        key_features: Gears, steam vents, brass pipes, clock tower, dirigible, copper boilers, cobblestone streets
+    - id: SP07-054
+      name: Cyberpunk Slums
+      category: 5. Fantasy Architecture
+      negativePrompt: clean, wide streets
+      style:
+        aesthetic: Stacked containers, megacity underbelly, vertical shantytown, Kowloon-inspired density, neon-blight
+        form_and_line: Wires, neon, fire-escape zigzag, shipping-container grid, AC-unit cascade, laundry lines
+        color_palette: Dark, Neon, Rain-wet Black, Sickly Green, Magenta sign, Rust Brown, Blue smog
+        lighting_setup: Artificial, neon-bath, hologram flicker, rain-streak LED, shadowed alley, 24-hour unnatural twilight
+        material_texture: Rust, metal, rain, grimy plastic, corrugated shutter, wet pavement, peeling poster
+        render_quality: Dense, dangerous, high-tech low-life, rain-slick neon, social-compression horror, Blade Runner overcrowding
+        spatial_distortion: None
+        atmosphere: Oppressive, tech, desperate, hunted, data-saturated, no-sky, breathing-each-other's-air
+        key_features: Vertical density, neon signs, stacked AC units, fire escapes, cable chaos, street-level market stalls
+    - id: SP07-065
+      name: Paper Town
+      category: 5. Fantasy Architecture
+      negativePrompt: realistic
+      style:
+        aesthetic: Model village, papercraft diorama, folded world, origami architecture, card-stock miniature
+        form_and_line: Cut edges, fold-score geometry, glue-tab seams, pop-up angles, diorama-depth layering
+        color_palette: White paper, Kraft Brown, Newsprint Grey, Colored-card stock tints, Tracing-paper Milk
+        lighting_setup: Studio soft, flat-model light, cut-shadow starkness, paper-translucency glow, tabletop spot
+        material_texture: Paper grain, card-stock tooth, fold-creases, cut-edge fiber, glue-bead, bristol surface
+        render_quality: Fragile, craft, miniature-precision, paper-sculpture art, architectural-model beauty
+        spatial_distortion: None
+        atmosphere: Quiet, delicate, handmade, still-life, cardboard-dream, patient-craft, tiny-perfection
+        key_features: Fold lines, cut edges, miniature scale, glue tabs, layered depth, pop-up elements, paper grain
+    - id: SP07-051
+      name: Rivendell Verdant Elven Refuge, Last Homely House
+      category: 5. Fantasy Architecture
+      negativePrompt: industrial, blocky
+      style:
+        aesthetic: Art Nouveau in nature, elven grace, valley sanctuary, waterfall palace, timeless woodland harmony
+        form_and_line: Elegant curves, filigree arches, natural-branch colonnades, cascading terraces, leaf-tracery windows
+        color_palette: Autumn Gold, White, Silver Birch, Moss-floor Green, Waterfall Mist, Soft Lavender dusk
+        lighting_setup: Magical glow, elf-lantern warmth, waterfall-reflected moonlight, star-dome canopy, inner-light radiance
+        material_texture: Carved stone, leaves, living wood, mother-of-pearl inlay, silver filigree, crystalline light
+        render_quality: Ethereal, ancient, Tolkien-beauty, elven-crafted perfection, sacred wood, Middle-earth elegance
+        spatial_distortion: None
+        atmosphere: Magical, safe, timeless, song-filled, story-sanctuary, hidden-peace, weary-traveler's rest
+        key_features: Waterfalls, delicate bridges, open-air halls, elven pavilions, tree-integrated architecture, star-viewing terrace
+    - id: SP07-052
+      name: Dwarven Fortress
+      category: 5. Fantasy Architecture
+      negativePrompt: wood, light, delicate
+      style:
+        aesthetic: Underground hall, mountain kingdom, stone-deep majesty, forge-heart stronghold, ancestral deep
+        form_and_line: Geometric blocky, megalithic pillars, vaulted axe-cut ceiling, rune-engraved arch, broad axes
+        color_palette: Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black
+        lighting_setup: Lava glow, forge-fire, crystal-lamp amber, torch-bracket rhythm, subterranean orange warmth
+        material_texture: Hewn stone, chisel-marked granite, hammered gold, molten iron, vein crystal, thick leather
+        render_quality: Heavy, industrial fantasy, Khazad-dum majesty, deep-delver craftsmanship, stone-song epic
+        spatial_distortion: None
+        atmosphere: Epic, strong, ancient-resolve, forge-breath, deep-root, clan-hall echoes, enduring pride
+        key_features: Pillars, great hall, golden hoard, forge anvil, rune carvings, lava channel, axe-trophies
+    - id: SP07-059
+      name: Hobbit Hole Hillside Roundhouse, Bag End comfort
+      category: 5. Fantasy Architecture
+      negativePrompt: square, tall
+      style:
+        aesthetic: Round door in hill, Shire dwelling, earth-sheltered home, cozy burrow, garden-roof cottage
+        form_and_line: Round, curved tunnel, arch windows, circular symmetry, low-earth dome, winding path
+        color_palette: Green, Wood, Earth, Brass knob, Buttercream plaster, Flower-garden colors, Warm brick
+        lighting_setup: Cozy warm, hearth-glow, round-window light, candle-sconce, tunnel-lantern, afternoon-gold
+        material_texture: Grass, wood, clay plaster, flagstone floor, brass fixtures, wattle, herb garden
+        render_quality: Cozy, hidden, Tolkien-Shire charm, hobbit-hole perfection, underground-warmth, storybook comfort
+        spatial_distortion: None
+        atmosphere: Homey, safe, garden-sheltered, tea-ready, pipe-smoke, fireside tales, earth-embrace
+        key_features: Round door, grass roof, round windows, hearth fireplace, pantry shelves, brass knob center
+    - id: SP07-062
+      name: Ewok Canopy Rope Village, Endor treetops, forest-moon tribe
+      category: 5. Fantasy Architecture
+      negativePrompt: metal
+      style:
+        aesthetic: Huts in redwoods, arboreal village, treetop tribe, giant-sequoia settlement, leaf-hidden community
+        form_and_line: Rope bridges, suspension curves, platform circles, trunk-wrap rings, ladder diagonals
+        color_palette: Brown, Green, Rope Tan, Bark Grey, Canopy-filtered Gold, Redwood Rust
+        lighting_setup: Forest filter, canopy-dappled, lantern-glow, sunset-through-leaves, campfire amber, star-through-branches
+        material_texture: Wood, rope, thatch, woven vine, leather hide, log, bark
+        render_quality: Primitive, high, Star-Wars Endor charm, forest-moon authenticity, tree-village adventure
+        spatial_distortion: None
+        atmosphere: Tribal, nature, canopy-home, forest-guardian, wind-through-bridge, leaf-whisper, tribe-gathering
+        key_features: Bridges, platform huts, rope ladders, trunk walkways, lookout platforms, thatched roofs, hanging lanterns
+    - id: SP07-069
+      name: Inflatable Castle
+      category: 5. Fantasy Architecture
+      negativePrompt: hard edges
+      style:
+        aesthetic: Bouncy house, party inflatable, air-filled fun palace, childhood carnival, birthday-bounce kingdom
+        form_and_line: Seams, inflated tube curves, turret-bulge cylinders, rounded-battlement bumps, fan-hose snake
+        color_palette: Neon vinyl, Hot Pink, Electric Yellow, Safety Orange, Royal Blue inflatable, Bright Green
+        lighting_setup: Glossy, vinyl-shine reflection, sun-through-vinyl translucency, party-string lights, fan-inflated tension
+        material_texture: Plastic vinyl, glossy PVC, seam-weld ridge, inflatable-taut surface, bouncy-air resistance, nylon-web tie
+        render_quality: Soft, air filled, bounce-house joy, backyard-carnival, inflatable-castle kitsch, birthday-party centerpiece
+        spatial_distortion: Bulging
+        atmosphere: Fun, bouncy, party-excitement, air-pressure, squeaky-joy, kid-energy, temporary-amusement
+        key_features: Wrinkles, seam lines, blower fan, bright color panels, turrets, slide opening, net windows
+    - id: SP07-070
+      name: Gingerbread House
+      category: 5. Fantasy Architecture
+      negativePrompt: inedible
+      style:
+        aesthetic: Cookie house, Christmas confection, Hansel-and-Gretel cottage, holiday bakery architecture, edible fairytale
+        form_and_line: Icing piping, scalloped roof-tile cookies, gumdrop border lines, candy-cane porch columns, pretzel-log walls
+        color_palette: Brown, White, Candy, Gumdrop Red/Green, Icing Pink, Peppermint Swirl, Golden cookie
+        lighting_setup: Warm, oven-glow, Christmas-light twinkle, sugar-sparkle, cozy-window amber, holiday-candle
+        material_texture: Cookie, sugar, royal icing, hard candy, pretzel, chocolate, sprinkled surface, gum paste
+        render_quality: Christmas, sweet, holiday-baking beauty, edible-architecture charm, gingerbread-perfection, festive-delicious
+        spatial_distortion: None
+        atmosphere: Festive, yummy, holiday-joy, kitchen-warm, candy-smell, childhood-December, sweet-tradition
+        key_features: Gumdrops, icing snow, candy cane columns, cookie roof, peppermint path, pretzel fence, sprinkle roof
+    - id: SP07-071
+      name: Mushroom House
+      category: 5. Fantasy Architecture
+      negativePrompt: square
+      style:
+        aesthetic: Smurf whimsical mushroom cottage, tiny blue village
+        form_and_line: Organic, stem-cylinder, cap-dome, gill-undercut, fairy-ring cluster, bulbous, soft-swell
+        color_palette: Red cap, White stalk, Spore Brown, Moss Green, Fairy Blue, Forest-floor Amber, Toadstool-spot Cream
+        lighting_setup: Forest floor, spotted-light dapple, mushroom-glow bioluminescent, shade-cool, firefly-twinkle, under-cap shadow
+        material_texture: Fungus, mushroom-cap skin, gill-ribs, velvet moss, spore-dust, forest loam, dewdrop
+        render_quality: Fantasy, cute, fairy-tale fungi, Smurf-village charm, woodland-magic, storybook-enchantment
+        spatial_distortion: Bulbous
+        atmosphere: Magic, small, hidden, fairy-glade, tiny-footstep, enchanted-forest, wee-folk safe
+        key_features: Spots, red cap, white stem, tiny round door, chimney smoke, mushroom village, moss carpet
     - id: SP07-074
       name: Dollhouse (Cutaway)
       category: 5. Fantasy Architecture
       negativePrompt: full wall
       style:
-        aesthetic: House cross section
-        form_and_line: Room dividers
-        color_palette: Pastel
-        lighting_setup: Flat
-        material_texture: Miniature
-        render_quality: Cute, organized
+        aesthetic: House cross section, peek-inside home, miniature rooms exposed, four-wall transparency, voyeur-dwelling
+        form_and_line: Room dividers, floor-level rectangles, staircase-diagonal, furniture-silhouette grid, doll-scale proportions
+        color_palette: Pastel, Wallpaper-print colors, Toy-furniture Wood, Miniature-carpet Beige, Doll-dress Pink
+        lighting_setup: Flat, even-room illumination, wall-mounted bead-light, room-box shadow, display brightness
+        material_texture: Miniature, dollhouse-wood, doll-fabric, tiny ceramic, paper wallpaper, plastic-toy, painted metal
+        render_quality: Cute, organized, dollhouse-precision, miniature-life, cross-section charm, play-scale perfection
         spatial_distortion: None
-        atmosphere: Playful, voyeur
-        key_features: No front wall
-    - id: SP07-075
-      name: Escher Staircase
-      category: 5. Fantasy Architecture
-      negativePrompt: logical physics
-      style:
-        aesthetic: Impossible architecture
-        form_and_line: Clean lines
-        color_palette: Greyscale
-        lighting_setup: Flat
-        material_texture: Stone
-        render_quality: Mind-bending, loop
-        spatial_distortion: Gravity defiance
-        atmosphere: Confusing, infinite
-        key_features: Stairs
+        atmosphere: Playful, voyeur, tiny-life, peek-through, imaginative-play, ordered-doll-world, childhood-make-believe
+        key_features: No front wall, miniature furniture, tiny staircase, room-by-room view, doll occupants, cross-section edge, tiny chandelier
     - id: SP07-076
       name: Dyson Sphere
       category: 5. Fantasy Architecture
       negativePrompt: planet surface
       style:
-        aesthetic: Megastructure around sun
-        form_and_line: Grid
-        color_palette: Black silhouette against sun
-        lighting_setup: Backlit
-        material_texture: Tech
-        render_quality: Cosmic, massive
+        aesthetic: Megastructure around sun, star-engineered shell, Kardashev-civilization monument, solar-harvest sphere, cosmic-engineering
+        form_and_line: Grid, panel-cell hexagons, curved-horizon lattice, inner-surface curvature, star-centered symmetry
+        color_palette: Black silhouette against sun, Solar-flare Orange/Gold, Edge-burn White, Dark-panel Grey, Corona-blue
+        lighting_setup: Backlit, star-brilliance edge, panel-silhouette drama, inner-surface self-illumination, cosmic-scale rim light
+        material_texture: Tech, ultra-structure, carbon-nanotube weave, solar-collector array, heat-sink fin, orbital-engineering metal
+        render_quality: Cosmic, massive, megastructure awe, Dyson-imagination, star-taming civilization, scale-horror sublime
         spatial_distortion: Curved horizon
-        atmosphere: Epic, sci-fi
-        key_features: Star inside
+        atmosphere: Epic, sci-fi, civilization-scale, star-furnace, engineering-god, unfathomable-ambition, majestic-isolation
+        key_features: Star inside, panel grid, curved horizon, solar collectors, hexagonal structure, silhouette against star, orbital ring
     - id: SP07-077
       name: Ringworld
       category: 5. Fantasy Architecture
       negativePrompt: globe
       style:
-        aesthetic: Halo ring
-        form_and_line: Upward horizon
-        color_palette: Blue, Green strip
-        lighting_setup: Sunlight
-        material_texture: Atmosphere
-        render_quality: Vast, artificial
+        aesthetic: Halo ring, Niven megastructure, orbital-band world, habitable-ring landscape, cosmic-ribbon
+        form_and_line: Upward horizon, arch-in-sky curve, ribbon-land strip, edge-wall lines, sun-shadow band
+        color_palette: Blue, Green strip, Space Black, Ocean-band, Atmosphere-white rim, Shadow-wall Dark
+        lighting_setup: Sunlight, ring-self-shadow, edge-wall glow, atmosphere-scatter blue, void-black contrast
+        material_texture: Atmosphere, continental land, orbital-plate metal, sea-surface, cloud-swirl, mountain-shadow
+        render_quality: Vast, artificial, Niven-scale imagination, ringworld-wonder, habitable-engineering, landscape-megastructure
         spatial_distortion: Ring shape
-        atmosphere: Awe, scale
-        key_features: Sky arch
-    - id: SP07-078
-      name: Industrial Hive Cube
+        atmosphere: Awe, scale, world-builder, cosmic-horizon, engineering-sublime, infinite-land, ring-citizen perspective
+        key_features: Sky arch, upward-curving land, edge wall, sun-shadow band, ocean strip, ring curvature, mountain-on-horizon
+    - id: SP07-075
+      name: Escher Staircase
       category: 5. Fantasy Architecture
-      negativePrompt: smooth
+      negativePrompt: logical physics
       style:
-        aesthetic: Tech cube
-        form_and_line: Pipes
-        color_palette: Dark Grey, Green light
-        lighting_setup: Space
-        material_texture: Greebles
-        render_quality: Complex, scary
+        aesthetic: Impossible architecture, optical-illusion maze, M.C. Escher dream, paradoxical geometry, mental-puzzle space
+        form_and_line: Clean lines, stair-paradox loops, arch-reversal, floor-wall-ceiling ambiguity, isometric-impossible, endless ascent
+        color_palette: Greyscale, Warm paper-cream, Ink-black line, Stone-tone gradient, Shadow-cool Grey, Lithograph-sepia
+        lighting_setup: Flat, lithograph-even, impossible-shadow, ambiguity-light, multiple-light-source confusion, print-studio clarity
+        material_texture: Stone, print-paper grain, lithograph-ink, carved-stone, woodcut-line, etched-detail
+        render_quality: Mind-bending, loop, optical-illusion genius, paradox-realized, impossible-print, brain-puzzle art
+        spatial_distortion: Gravity defiance
+        atmosphere: Confusing, infinite, wonder-perplexed, impossible-calm, mind-trapped, perspective-vertigo, delightful-bafflement
+        key_features: Stairs, impossible loops, multiple gravity, archways, courtyard paradox, ascending-descending figures, lithograph look
+    - id: SP07-068
+      name: Cardboard Fort
+      category: 5. Fantasy Architecture
+      negativePrompt: solid wall
+      style:
+        aesthetic: Box castle, appliance-box architecture, living-room fortress, recycled-carton stronghold, blanket-city
+        form_and_line: Tape lines, box-flap geometry, duct-tape seams, crayon-drawn details, stacked-rectangles, cut-window squares
+        color_palette: Brown cardboard, Packing-tape Tan, Marker-Black, Crayon colors, Shipping-label White
+        lighting_setup: Indoor, living-room lamp, blanket-filtered light, flashlight-fort interior, window-box glow
+        material_texture: Corrugated, kraft fiber, tape-adhesive, crayon wax, marker-ink, blanket-fabric drape
+        render_quality: Childhood, rough, make-believe reality, refrigerator-box magic, blanket-fort nostalgia, kid-crafted love
+        spatial_distortion: Sagging
+        atmosphere: Imaginative, cheap, pretend-kingdom, Saturday-morning, sibling-architect, proud-builder, temporary-realm
+        key_features: Tape, corrugated edges, duct tape, marker drawings, box flaps, blanket roof, crayon windows
+    - id: SP07-055
+      name: Candy Kingdom
+      category: 5. Fantasy Architecture
+      negativePrompt: scary, realistic
+      style:
+        aesthetic: Edible architecture, confectionery city, sugar-frosted fantasy, dessert landscape, gumdrop wonderland
+        form_and_line: Rounded soft, lollipop colonnades, icing-scallop trim, gumdrop spires, chocolate-bar block
+        color_palette: Pink, Pastel, Candy-apple Red, Gumdrop Green, Marshmallow White, Licorice Black
+        lighting_setup: Soft sugar glow, candy-store warm, frosting-sparkle, gumdrop-translucent, sugar-crystal shimmer
+        material_texture: Frosting, cake, hard candy shell, marshmallow, wafer, spun-sugar web, chocolate drip
+        render_quality: Cute, delicious, Willy-Wonka dream, sugar-rush beauty, confectionery perfection, edible fantasy
+        spatial_distortion: Melting
+        atmosphere: Sweet, fun, candy-store joy, whimsical, sugar-high delight, childhood wonder
+        key_features: Sprinkles, gumdrop path, icing trim, candy-cane columns, chocolate river, lollipop trees, gingerbread walls
+    - id: SP07-072
+      name: Bottle Ship
+      category: 5. Fantasy Architecture
+      negativePrompt: ocean
+      style:
+        aesthetic: Ship inside glass, impossible-in-bottle, maritime miniature, patience-craft, message-in-bottle mystery
+        form_and_line: Glass reflection, hull-curve silhouette, mast-rigging threads, bottle-neck constriction, cork-stopper circle
+        color_palette: Wood, Glass, Rigging-tan, Sail-cream, Sea-blue tint, Brass, Cork-brown
+        lighting_setup: Studio, glass-highlight streak, bottle-curve distortion-glint, display-shelf ambient, window-light catch
+        material_texture: Glass, miniature, cork, thread, wire, tissue-paper sail, tiny-metal, dust-in-bottle
+        render_quality: Detailed, impossible, ship-in-bottle wonder, maritime-craft miracle, patience-art, miniature-perfection
+        spatial_distortion: Distorted by glass
+        atmosphere: Precious, trapped, still-voyage, curio-cabinet, patient-hands, impossible-journey, nautical-dream
+        key_features: Glass bottle, miniature ship, cork, rigging threads, glass distortion, display stand, impossible construction
+    - id: SP07-067
+      name: Sandcastle
+      category: 5. Fantasy Architecture
+      negativePrompt: stone
+      style:
+        aesthetic: Beach fort, summer sculpture, tidal architecture, ephemeral citadel, shore-built kingdom
+        form_and_line: Drip towers, bucket-mold cylinders, scalloped turrets, battlement ridges, moat-trench circles
+        color_palette: Sand beige, Wet-sand Brown, Shell-white, Shore-gold, Driftwood Grey, Sea-glass fragment
+        lighting_setup: Sunlight, beach-glare, low-afternoon shadow, wave-reflected shimmer, seaside-haze
+        material_texture: Sand grains, wet-packed surface, shell bits, pebble, granular-drip, water-smooth
+        render_quality: Temporary, fragile, beach-day memory, tide-fated beauty, summer-childhood art, grain-by-grain
+        spatial_distortion: Crumbling
+        atmosphere: Summer, fun, beach-joy, tide-watch, salty-breeze, impermanent creation, bucket-and-spade
+        key_features: Grainy, drip-castle towers, moat, battlements, bucket-mold texture, seashell decoration, tide-line
+    - id: SP07-058
+      name: Crystal Spire
+      category: 5. Fantasy Architecture
+      negativePrompt: brick, wood
+      style:
+        aesthetic: Grown crystal tower, mineral skyscraper, geodesic fantasy, geological architecture, prism spire
+        form_and_line: Sharp facets, hexagonal columns, converging crystal points, geometric shard, pyramid cap
+        color_palette: Purple/Blue/White, Amethyst, Sapphire, Diamond-spark, Deep Crystal Violet, Iridescent flash
+        lighting_setup: Internal refraction, rainbow-dispersion, inner-glow core, facet-edge brilliance, dark-crystal depth
+        material_texture: Glassy, mineral crystal, gemstone face, translucent depth, faceted surface, amethyst geode
+        render_quality: Alien, pure, crystalline-perfection, geode-magic, otherworldly prism, mineral-beauty
         spatial_distortion: None
-        atmosphere: Ominous, assimilating
-        key_features: Cube
+        atmosphere: Cold, magical, gemstone-elegant, ancient-growth, silent-harmonic, other-realm
+        key_features: Translucency, crystal facets, inner glowing core, rainbow refraction, giant geode, prism spire
+    - id: SP07-061
+      name: Ice Palace
+      category: 5. Fantasy Architecture
+      negativePrompt: warm, fire
+      style:
+        aesthetic: Frozen castle, glacial fortress, winter queen's palace, crystalline ice-kingdom, permafrost monument
+        form_and_line: Sharp ice, icicle colonnade, frozen-cascade stairs, crystal-spike spires, frost-filigree arch
+        color_palette: White, Cyan, Ice Blue, Aurora Green, Deep-glacier Teal, Diamond-spark
+        lighting_setup: Glittering, aurora-shimmer, ice-internal refraction, moon-on-snow, frozen-sun brilliance
+        material_texture: Ice, snow, frost flower, hoarfrost, compacted snow-block, glacial glass, crystal rime
+        render_quality: Cold, magical, Narnia-Winter beauty, frozen-cathedral grandeur, ice-sculpture perfection
+        spatial_distortion: None
+        atmosphere: Frozen, regal, winter-eternal, enchanted-cold, silent-snow, crystalline-awe, frosted-breath
+        key_features: Icicles, frost crystals, ice chandelier, snowdrift stairs, frozen throne, aurora-lit hall, ice bridge
+    - id: SP07-056
+      name: Underwater City
+      category: 5. Fantasy Architecture
+      negativePrompt: sky, dry
+      style:
+        aesthetic: Atlantis/Rapture submerged lost-city grandeur, art-deco depths, leaking domes
+        form_and_line: Domes, coral, bubble-pods, glass-tunnel arteries, cathedral spires, ring-hub geometry
+        color_palette: Blue, Gold, Biolum, Coral Pink, Seaweed Green, Rust-orange decay, Gleaming Brass
+        lighting_setup: Water filtered, blue-ambient abyss, bioluminescent constellation, dome-interior gold glow, emergency red
+        material_texture: Wet stone, glass, copper-green patina, coral-encrust, riveted brass, leaking concrete
+        render_quality: Mysterious, deep, Rapture-dystopia, lost-civilization poetry, water-pressure beauty, abandoned majesty
+        spatial_distortion: None
+        atmosphere: Silent, pressure, awe-mixed-with-dread, water-weight, ghostly, decaying-utopia
+        key_features: Bubbles, glass domes, art deco details, leaking cracks, coral overgrowth, bathysphere docks
     - id: SP07-079
       name: Monolith
       category: 5. Fantasy Architecture
       negativePrompt: detail
       style:
-        aesthetic: 2001 slab
-        form_and_line: Sharp rectangle
-        color_palette: Matte Black
-        lighting_setup: Absorbs light
-        material_texture: Perfectly smooth
-        render_quality: Alien, minimal
+        aesthetic: 2001 slab, alien artifact, absolute-geometry presence, evolution-catalyst object, cosmic-marker
+        form_and_line: Sharp rectangle, perfect-edges, zero-feature surface, 1:4:9 proportion, impossible-vertical, crisp-corners
+        color_palette: Matte Black, Absolute-void Black, Light-absorbing surface, Starlight-reflection edge, Moon-surface Grey
+        lighting_setup: Absorbs light, anti-reflective void, sun-alignment glow, stark-side shadow, dawn-touch edge
+        material_texture: Perfectly smooth, non-material surface, frictionless, impossibly-dense, alien-substance, crystalline-matte
+        render_quality: Alien, minimal, Kubrick-mystery, absolute-simplicity, cosmic-enigma, evolution-precision
         spatial_distortion: None
-        atmosphere: Ominous, mystery
-        key_features: 1:4:9 ratio
-    - id: SP07-080
-      name: Infinite Console Chamber
+        atmosphere: Ominous, mystery, cosmic-wonder, evolutionary-pause, unknowable-intelligence, silent-revelation, transcendent-fear
+        key_features: 1:4:9 ratio, perfectly black, sharp edges, featureless surface, rectangular slab, alien presence, vertical dominance
+    - id: SP07-063
+      name: Necropolis
       category: 5. Fantasy Architecture
-      negativePrompt: small
+      negativePrompt: life, green
       style:
-        aesthetic: Impossible interior beyond outer shell
-        form_and_line: Hexagons/Roundels
-        color_palette: Orange/Teal
-        lighting_setup: Console glow
-        material_texture: Tech, organic
-        render_quality: Sci-fi, chaotic
-        spatial_distortion: Time rotor
-        atmosphere: Adventure, time
-        key_features: Central column
+        aesthetic: City of dead, tomb-city, death empire, mausoleum megalopolis, soul-river architecture
+        form_and_line: Sharp spires, obelisk avenues, crypt blocks, tomb-grid geometry, sarcophagus rows
+        color_palette: Green mist, Black stone, Bone-white marble, Faded Gold, Crypt-shadow Purple, Death-rust Red
+        lighting_setup: Eerie Green, witch-light glow, corpse-candle, moon-through-fog, underworld-ember, soul-flame
+        material_texture: Stone, bone, crumbling masonry, weathered marble, iron gate, skull-ornament, ash
+        render_quality: Evil, dark, tomb-city epic, death-cult architecture, sepulchral grandeur, gothic-necropolis
+        spatial_distortion: None
+        atmosphere: Dread, death, eternal-silence, soul-heavy, grave-chill, mourner's-land, un-living stillness
+        key_features: Green fog, obelisks, sarcophagi, death runes, skull motifs, crypt entrances, tomb-pyramids
+    - id: SP07-053
+      name: Floating Castle
+      category: 5. Fantasy Architecture
+      negativePrompt: grounded
+      style:
+        aesthetic: Castle in sky, celestial fortress, cloud realm, Laputa vision, aerial kingdom
+        form_and_line: Vertical towers, floating-island massing, air-bridge spans, waterfall-fall lines, spiral spires
+        color_palette: White, Blue sky, Cloud-silver, Golden sun edge, Waterfall-cascade White, Lapis above
+        lighting_setup: Bright sun, cloud-reflected brilliance, angel-ray beams, blue-sky ambient, golden-edge rim light
+        material_texture: Stone, clouds, gossamer, crystalline spire, floating rock, wisp-vapor base
+        render_quality: Dreamy, impossible, Miyazaki-beauty, sky-castle wonder, unfettered imagination, weightless grandeur
+        spatial_distortion: Floating rocks
+        atmosphere: Magical, high, sky-kingdom, impossible-dream, wind-borne, breathtakingly free
+        key_features: Clouds below, floating islands, waterfalls into void, air bridges, tallest spire, blue sky around

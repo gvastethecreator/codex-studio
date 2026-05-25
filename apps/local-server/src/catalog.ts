@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, renameSync } from 'node:fs';
+import { existsSync, mkdirSync, renameSync, rmSync } from 'node:fs';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { getDb } from './db';
@@ -258,4 +258,18 @@ export function restoreCatalogImage(id: string) {
     )
     .run(restoredPath, toPublicAssetUrl(restoredPath), id);
   return getCatalogImage(id);
+}
+
+export function purgeCatalogImage(id: string) {
+  const image = getCatalogImage(id);
+  if (!image) return null;
+
+  for (const filePath of [image.filePath, image.thumbnailPath]) {
+    if (filePath && existsSync(filePath)) {
+      rmSync(filePath, { force: true });
+    }
+  }
+
+  getDb().query('DELETE FROM catalog_images WHERE id = ?').run(id);
+  return image;
 }

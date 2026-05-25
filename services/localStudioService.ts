@@ -1,5 +1,6 @@
 import type {
   CatalogPage,
+  CatalogImage,
   CodexAccountStatusResponse,
   CodexModelCatalogResponse,
   LocalCodexSessionResponse,
@@ -178,6 +179,34 @@ export function buildCatalogQuery(params: CatalogQueryParams = {}) {
  */
 export async function queryCatalog(params: CatalogQueryParams = {}) {
   return request<CatalogPage>(`/api/catalog${buildCatalogQuery(params)}`);
+}
+
+export async function updateCatalogImage(
+  imageId: string,
+  patch: { isFavorite?: boolean; tags?: string[]; workspaceId?: string | null },
+) {
+  return request<CatalogImage>(`/api/catalog/${imageId}`, {
+    method: 'PATCH',
+    body: JSON.stringify(patch),
+  });
+}
+
+export async function deleteCatalogImage(imageId: string) {
+  return request<CatalogImage>(`/api/catalog/${imageId}`, {
+    method: 'DELETE',
+  });
+}
+
+export async function restoreCatalogImage(imageId: string) {
+  return request<CatalogImage>(`/api/catalog/${imageId}/restore`, {
+    method: 'POST',
+  });
+}
+
+export async function purgeCatalogImage(imageId: string) {
+  return request<CatalogImage>(`/api/catalog/${imageId}/permanent`, {
+    method: 'DELETE',
+  });
 }
 
 /**

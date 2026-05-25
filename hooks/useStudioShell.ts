@@ -11,10 +11,10 @@ import { useGeneration } from '../contexts/GenerationContext';
 import { useHashRouter, type AppPageView } from './useHashRouter';
 import { useImageInputSurface } from './useImageInputSurface';
 import { useStudioActionConfirmations } from './useStudioActionConfirmations';
+import { useStudioActivitySession } from './useStudioActivitySession';
 import { useStudioGallery } from './useStudioGallery';
-import { useStudioGenerationActions } from './useStudioGenerationActions';
+import { useStudioGenerationSession } from './useStudioGenerationSession';
 import { useStudioHeaderToolbarConfig } from './useStudioHeaderToolbarConfig';
-import { useStudioJobInspector } from './useStudioJobInspector';
 import { useStudioNavigation } from './useStudioNavigation';
 import { useStudioOverlayController } from './useStudioOverlayController';
 import { useStudioPageController, type StudioPageController } from './useStudioPageController';
@@ -24,8 +24,13 @@ import { useStudioViewState } from './useStudioViewState';
 import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
 import { useGenerationToolbarConfig } from './useGenerationToolbarConfig';
-import { useQueueManager } from './useQueueManager';
-import { cancelStudioJob } from '../services/localStudioService';
+import { useCatalog } from './useCatalog';
+import {
+  deleteCatalogImage as deleteCatalogImageRequest,
+  purgeCatalogImage as purgeCatalogImageRequest,
+  restoreCatalogImage as restoreCatalogImageRequest,
+  updateCatalogImage as updateCatalogImageRequest,
+} from '../services/localStudioService';
 
 export interface StudioShellController {
   root: {
@@ -115,45 +120,157 @@ export function useStudioShell(): StudioShellController {
   } = useHashRouter();
 
   const { config, pipeline, recipe, ui, modal } = useGeneration();
+  const activeCatalog = useCatalog({
+    workspaceId: activeWorkspaceId,
+    deleted: false,
+  });
+  const trashCatalog = useCatalog({
+    deleted: true,
+  });
+  const catalogBatches = activeCatalog.visualBatches;
+  const catalogTrash = trashCatalog.visualBatches;
+  const refreshCatalogs = useCallback(() => {
+    void activeCatalog.refresh();
+    void trashCatalog.refresh();
+  }, [activeCatalog.refresh, trashCatalog.refresh]);
 
-  const handleCancelPersistentJob = useCallback(
-    async (jobId: string) => {
-      const job = await cancelStudioJob(jobId);
-      addToast(job.status === 'cancelled' ? 'Backend job cancelled' : 'Cancellation requested', 'info');
+  const deleteCatalogImage = useCallback(
+    (imageId: string) => {
+      void deleteCatalogImageRequest(imageId)
+        .then(() => {
+          deleteImage(imageId);
+          refreshCatalogs();
+        })
+        .catch((error) => {
+          addToast(
+            error instanceof Error ? error.message : `Unable to archive image ${imageId}`,
+            'error',
+          );
+        });
     },
-    [addToast],
+    [addToast, deleteImage, refreshCatalogs],
   );
 
-  const { jobs, enqueue, retry, cancelJob, removeJob, clearCompleted, resetQueue, isResting } =
-    useQueueManager({
-      executeGeneration: pipeline.executeGeneration,
-      isGenerating: pipeline.isGenerating,
-      addToast,
-      cancelPersistentJob: handleCancelPersistentJob,
-    });
+  const deleteCatalogImages = useCallback(
+    (imageIds: string[]) => {
+      void Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId)))
+        .then(() => {
+          deleteImages(imageIds);
+          refreshCatalogs();
+        })
+        .catch((error) => {
+          addToast(
+            error instanceof Error ? error.message : 'Unable to archive selected images',
+            'error',
+          );
+        });
+    },
+    [addToast, deleteImages, refreshCatalogs],
+  );
+
+  const toggleCatalogFavorite = useCallback(
+    (imageId: string) => {
+      const current = activeCatalog.view.byId.get(imageId);
+      void updateCatalogImageRequest(imageId, {
+        isFavorite: !(current?.isFavorite ?? false),
+      })
+        .then(() => {
+          toggleImageFavorite(imageId);
+          refreshCatalogs();
+        })
+        .catch((error) => {
+          addToast(error instanceof Error ? error.message : 'Unable to update favorite', 'error');
+        });
+    },
+    [activeCatalog.view.byId, addToast, refreshCatalogs, toggleImageFavorite],
+  );
+
+  const clearCatalogWorkspace = useCallback(
+    (workspaceId: string) => {
+      const imageIds = activeCatalog.entries
+        .filter((entry) => entry.workspaceId === workspaceId)
+        .map((entry) => entry.id);
+
+      if (imageIds.length === 0) return;
+
+      void Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId)))
+        .then(() => {
+          clearWorkspace(workspaceId);
+          refreshCatalogs();
+        })
+        .catch((error) => {
+          addToast(
+            error instanceof Error ? error.message : 'Unable to archive workspace images',
+            'error',
+          );
+        });
+    },
+    [activeCatalog.entries, addToast, clearWorkspace, refreshCatalogs],
+  );
+
+  const restoreCatalogBatch = useCallback(
+    (batchId: string) => {
+      const entries = trashCatalog.view.byBatchId.get(batchId) ?? [];
+      void Promise.all(entries.map((entry) => restoreCatalogImageRequest(entry.id)))
+        .then(() => {
+          restoreFromTrash(batchId);
+          refreshCatalogs();
+        })
+        .catch((error) => {
+          addToast(
+            error instanceof Error ? error.message : 'Unable to restore catalog batch',
+            'error',
+          );
+        });
+    },
+    [addToast, refreshCatalogs, restoreFromTrash, trashCatalog.view.byBatchId],
+  );
+
+  const restoreAllCatalogTrash = useCallback(() => {
+    void Promise.all(trashCatalog.entries.map((entry) => restoreCatalogImageRequest(entry.id)))
+      .then(() => {
+        restoreAllFromTrash();
+        refreshCatalogs();
+      })
+      .catch((error) => {
+        addToast(
+          error instanceof Error ? error.message : 'Unable to restore catalog trash',
+          'error',
+        );
+      });
+  }, [addToast, refreshCatalogs, restoreAllFromTrash, trashCatalog.entries]);
+
+  const emptyCatalogTrash = useCallback(() => {
+    void Promise.all(trashCatalog.entries.map((entry) => purgeCatalogImageRequest(entry.id)))
+      .then(() => {
+        emptyTrash();
+        refreshCatalogs();
+      })
+      .catch((error) => {
+        addToast(error instanceof Error ? error.message : 'Unable to empty catalog trash', 'error');
+      });
+  }, [addToast, emptyTrash, refreshCatalogs, trashCatalog.entries]);
 
   const studioRuntime = useStudioRuntime({
     logs,
     log,
-    batches,
+    batches: catalogBatches,
     mergeBatches,
     addToast,
-    shouldAutoOpen: batches.length === 0,
+    shouldAutoOpen: catalogBatches.length === 0 && batches.length === 0,
+    onCatalogChanged: refreshCatalogs,
   });
 
-  const {
-    selectedStudioJobId,
-    selectedJobDetail,
-    isLoadingSelectedJob,
-    inspectStudioJob,
-    clearSelectedJob,
-  } = useStudioJobInspector({
+  const activitySession = useStudioActivitySession({
     studioJobs: studioRuntime.activity.studioJobs,
     addToast,
+    isDebugPanelOpen,
+    openDebugPanel,
+    closeDebugPanel,
   });
 
   const { importVault, exportVault, downloadAndClearWorkspace } = useVaultTransfer({
-    batches,
+    batches: catalogBatches,
     replaceBatches,
     archiveBatches,
     clearAllBatches,
@@ -183,7 +300,7 @@ export function useStudioShell(): StudioShellController {
     handleDownloadAndClear,
     resetViewState,
   } = useStudioViewState({
-    batchCount: batches.length,
+    batchCount: catalogBatches.length,
     downloadAndClearWorkspace,
     closeOverlay,
   });
@@ -194,9 +311,9 @@ export function useStudioShell(): StudioShellController {
     ui.setIsKeyPopoverOpen(false);
     modal.closeModal();
     navigateToStudio();
-    clearSelectedJob();
+    activitySession.clearSelectedJob();
     resetViewState();
-  }, [clearSelectedJob, modal, navigateToStudio, recipe, resetViewState, ui]);
+  }, [activitySession, modal, navigateToStudio, recipe, resetViewState, ui]);
 
   const {
     direction,
@@ -225,7 +342,26 @@ export function useStudioShell(): StudioShellController {
     closeOverlay,
   });
 
+  const generationSession = useStudioGenerationSession({
+    config,
+    pipeline,
+    modal,
+    addToast,
+    closeOverlay,
+    closeModal: handleCloseModal,
+    onRecipeSelection: handleRecipeSelection,
+    onViewChange: handleViewChange,
+    setIsEditorOpen,
+    setImageToEdit,
+  });
   const {
+    jobs,
+    retry,
+    cancelJob,
+    removeJob,
+    clearCompleted,
+    resetQueue,
+    isResting,
     isEnhancingPrompt,
     isEditingImage,
     handleGenerate,
@@ -233,23 +369,8 @@ export function useStudioShell(): StudioShellController {
     handleExecuteEdit,
     handleLoadRecipe,
     resetGenerationUi,
-  } = useStudioGenerationActions({
-    generationConfig: config.generationConfig,
-    setGenerationConfig: config.setGenerationConfig,
-    updateGenerationConfig: config.updateGenerationConfig,
-    executeEdit: pipeline.executeEdit,
-    enqueue,
-    addToast,
-    closeModal: handleCloseModal,
-    closeOverlay,
-    isModalOpen: modal.isModalOpen,
-    onRecipeSelection: handleRecipeSelection,
-    onViewChange: handleViewChange,
-    onEditSettled: () => {
-      setIsEditorOpen(false);
-      setImageToEdit(null);
-    },
-  });
+    handleCancelPersistentJob,
+  } = generationSession;
 
   const { isResettingStudio, resetStudio } = useStudioReset({
     addToast,
@@ -273,42 +394,20 @@ export function useStudioShell(): StudioShellController {
     clearWorkspace,
     deleteWorkspace,
     resetStudio,
-    restoreAllFromTrash,
-    emptyTrash,
+    restoreAllFromTrash: restoreAllCatalogTrash,
+    emptyTrash: emptyCatalogTrash,
   });
 
-  const {
-    workspacesWithThumbs,
-    handleAddWorkspace,
-    handleDeleteWorkspace,
-    handleRenameWorkspace,
-  } = useWorkspaceStrip({
-    workspaces,
-    batches,
-    createWorkspace,
-    deleteWorkspace,
-    renameWorkspace,
-    addToast,
-    onRequestDeleteWorkspace: requestDeleteWorkspace,
-  });
-
-  const handleInspectStudioJob = useCallback(
-    (jobId: string) => {
-      inspectStudioJob(jobId);
-      openDebugPanel();
-    },
-    [inspectStudioJob, openDebugPanel],
-  );
-
-  const handleToggleDebugPanel = useCallback(() => {
-    if (isDebugPanelOpen) {
-      closeDebugPanel();
-      return;
-    }
-
-    clearSelectedJob();
-    openDebugPanel();
-  }, [clearSelectedJob, closeDebugPanel, isDebugPanelOpen, openDebugPanel]);
+  const { workspacesWithThumbs, handleAddWorkspace, handleDeleteWorkspace, handleRenameWorkspace } =
+    useWorkspaceStrip({
+      workspaces,
+      batches: catalogBatches,
+      createWorkspace,
+      deleteWorkspace,
+      renameWorkspace,
+      addToast,
+      onRequestDeleteWorkspace: requestDeleteWorkspace,
+    });
 
   const {
     allImages,
@@ -322,12 +421,12 @@ export function useStudioShell(): StudioShellController {
     handleToggleFavorite,
     handleClearWorkspace,
   } = useStudioGallery({
-    batches,
+    batches: catalogBatches,
     activeWorkspaceId,
-    deleteImage,
-    deleteImages,
-    toggleImageFavorite,
-    clearWorkspace,
+    deleteImage: deleteCatalogImage,
+    deleteImages: deleteCatalogImages,
+    toggleImageFavorite: toggleCatalogFavorite,
+    clearWorkspace: clearCatalogWorkspace,
     log,
     modalImage: modal.modalImage,
     closeModal: handleCloseModal,
@@ -369,10 +468,10 @@ export function useStudioShell(): StudioShellController {
     activity: {
       mergedLogs: studioRuntime.activity.mergedLogs,
       studioJobs: studioRuntime.activity.studioJobs,
-      selectedJobDetail,
-      isLoadingSelectedJob,
-      onInspectJob: handleInspectStudioJob,
-      onClearSelectedJob: clearSelectedJob,
+      selectedJobDetail: activitySession.selectedJobDetail,
+      isLoadingSelectedJob: activitySession.isLoadingSelectedJob,
+      onInspectJob: activitySession.handleInspectStudioJob,
+      onClearSelectedJob: activitySession.clearSelectedJob,
     },
     vault: {
       handleImportVault: importVault,
@@ -395,10 +494,10 @@ export function useStudioShell(): StudioShellController {
       ensureAppServer: studioRuntime.onboarding.ensureAppServer,
     },
     workspace: {
-      batches,
+      batches: catalogBatches,
       workspaces,
-      trash,
-      restoreFromTrash,
+      trash: catalogTrash,
+      restoreFromTrash: restoreCatalogBatch,
       isTrashModalOpen,
       closeTrash,
       isLimitModalOpen,
@@ -432,7 +531,7 @@ export function useStudioShell(): StudioShellController {
     isModalOpen: modal.isModalOpen,
     workspaces,
     mergedLogs: studioRuntime.activity.mergedLogs,
-    batchesCount: batches.length,
+    batchesCount: catalogBatches.length,
     allImages,
     imagesWithConfig,
     selectedImageIds,
@@ -458,7 +557,7 @@ export function useStudioShell(): StudioShellController {
     setIsQueueOpen,
     jobs,
     studioJobs: studioRuntime.activity.studioJobs,
-    selectedStudioJobId,
+    selectedStudioJobId: activitySession.selectedStudioJobId,
     retry,
     cancelJob,
     cancelPersistentJob: (jobId) => void handleCancelPersistentJob(jobId),
@@ -470,7 +569,7 @@ export function useStudioShell(): StudioShellController {
     isBackgroundEnabled,
     setBackgroundEnabled,
     activeServerJobCount: studioRuntime.activity.activeServerJobCount,
-    onInspectJob: handleInspectStudioJob,
+    onInspectJob: activitySession.handleInspectStudioJob,
     diagnostics: studioRuntime.status.diagnostics,
     onResetStudio: requestResetStudio,
     isResettingStudio,
@@ -529,8 +628,8 @@ export function useStudioShell(): StudioShellController {
       onOpenDashboard: openDashboard,
       openOnboarding: studioRuntime.onboarding.open,
       onOpenTrash: openTrash,
-      trashCount: trash.length,
-      onToggleDebug: handleToggleDebugPanel,
+      trashCount: catalogTrash.length,
+      onToggleDebug: activitySession.handleToggleDebugPanel,
     },
   });
 

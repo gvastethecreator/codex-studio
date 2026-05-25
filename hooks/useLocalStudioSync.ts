@@ -1,20 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { listStudioJobs, listStudioLogs, queryCatalog } from '../services/localStudioService';
+import { listStudioJobs, listStudioLogs } from '../services/localStudioService';
 import { createStudioEventStream } from '../services/studioEventSource';
-import type { GenerationBatch, LogEntry } from '../types';
+import type { LogEntry } from '../types';
 import type { Job as StudioJob, SystemLog as StudioLog } from '../packages/shared/src';
-import { materializeVisualBatches } from '../lib/studioVisualBatchCatalog';
-
-type MergeBatches = (
-  batches: GenerationBatch[],
-  options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
-) => void;
 
 interface UseLocalStudioSyncProps {
   logs: LogEntry[];
   log: (message: string) => void;
-  batches: GenerationBatch[];
-  mergeBatches: MergeBatches;
+  onCatalogChanged?: () => void;
 }
 
 export interface LocalStudioSyncActivity {
@@ -42,24 +35,18 @@ function mapStudioLog(entry: StudioLog): LogEntry {
 }
 
 /**
- * Keep Local Studio Sync focused on mirroring backend jobs, logs, and Catalog
- * Entries into the Visual Batch cache consumed by the current Studio grid.
+ * Keep Local Studio Sync focused on mirroring backend jobs and logs while
+ * notifying the Image Catalog read model when backend assets change.
  */
 export function useLocalStudioSync({
   logs,
   log,
-  batches,
-  mergeBatches,
+  onCatalogChanged,
 }: UseLocalStudioSyncProps): LocalStudioSyncResult {
   const [studioJobs, setStudioJobs] = useState<StudioJob[]>([]);
   const [studioLogs, setStudioLogs] = useState<StudioLog[]>([]);
   const [isBackendConnected, setIsBackendConnected] = useState(false);
-  const batchesRef = useRef(batches);
   const isMountedRef = useRef(true);
-
-  useEffect(() => {
-    batchesRef.current = batches;
-  }, [batches]);
 
   useEffect(() => {
     return () => {
@@ -79,25 +66,6 @@ export function useLocalStudioSync({
     ).length;
   }, [studioJobs]);
 
-  const importCatalogEntries = useCallback(async () => {
-    const assets = (await queryCatalog({ limit: 200 })).images;
-    if (assets.length === 0 || !isMountedRef.current) {
-      return;
-    }
-
-    const existingImageIds = new Set(
-      batchesRef.current.flatMap((batch) => batch.images.map((image) => image.id)),
-    );
-    const newBatches = materializeVisualBatches(assets, {
-      excludeImageIds: existingImageIds,
-    });
-
-    if (newBatches.length > 0 && isMountedRef.current) {
-      mergeBatches(newBatches, { prepend: true, ensureWorkspaces: true });
-      log(`Imported ${newBatches.length} local Codex asset(s) from the studio library`);
-    }
-  }, [log, mergeBatches]);
-
   const refreshBackendState = useCallback(async () => {
     try {
       const [backendJobs, backendLogs] = await Promise.all([listStudioJobs(), listStudioLogs()]);
@@ -109,8 +77,7 @@ export function useLocalStudioSync({
       setStudioJobs(backendJobs);
       setStudioLogs(backendLogs);
       setIsBackendConnected(true);
-
-      await importCatalogEntries();
+      onCatalogChanged?.();
     } catch (error) {
       if (!isMountedRef.current) {
         return;
@@ -121,7 +88,7 @@ export function useLocalStudioSync({
         `Local Codex backend sync failed: ${error instanceof Error ? error.message : String(error)}`,
       );
     }
-  }, [importCatalogEntries, log]);
+  }, [log, onCatalogChanged]);
 
   useEffect(() => {
     void refreshBackendState();
@@ -133,7 +100,7 @@ export function useLocalStudioSync({
       );
     });
     const unsubscribeAsset = stream.onAssetAdded(() => {
-      void importCatalogEntries();
+      onCatalogChanged?.();
     });
     const unsubscribeLog = stream.onLogAdded((entry) => {
       setStudioLogs((prev) =>
@@ -154,7 +121,7 @@ export function useLocalStudioSync({
       unsubscribeConnection();
       stream.close();
     };
-  }, [importCatalogEntries, refreshBackendState]);
+  }, [onCatalogChanged, refreshBackendState]);
 
   return {
     activity: {

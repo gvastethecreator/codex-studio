@@ -28,7 +28,12 @@ function parseJson<T>(value: string | null | undefined, fallback: T): T {
   }
 }
 
-function ensureColumn(database: Database, tableName: string, columnName: string, definition: string) {
+function ensureColumn(
+  database: Database,
+  tableName: string,
+  columnName: string,
+  definition: string,
+) {
   const columns = database.query(`PRAGMA table_info(${tableName})`).all() as { name: string }[];
   if (!columns.some((column) => column.name === columnName)) {
     database.run(`ALTER TABLE ${tableName} ADD COLUMN ${columnName} ${definition}`);
@@ -56,8 +61,7 @@ export function closeDb() {
   }
 }
 
-export function migrateDb() {
-  const database = getDb();
+export function migrateDatabase(database: Database) {
   database.run(`
     CREATE TABLE IF NOT EXISTS settings (
       key TEXT PRIMARY KEY,
@@ -203,6 +207,10 @@ export function migrateDb() {
   ensureColumn(database, 'jobs', 'execution_json', 'TEXT');
 }
 
+export function migrateDb() {
+  migrateDatabase(getDb());
+}
+
 function mapProject(row: any): Project {
   return {
     id: row.id,
@@ -285,10 +293,7 @@ function mapCodexTurn(row: any): CodexTurnRecord {
 export function ensureDefaultProject() {
   const existing = getDb().query('SELECT * FROM projects ORDER BY created_at LIMIT 1').get();
   if (existing) return mapProject(existing);
-  return createProject(
-    'Default Studio Project',
-    'Initial local project for Codex Studio jobs.',
-  );
+  return createProject('Default Studio Project', 'Initial local project for Codex Studio jobs.');
 }
 
 export function createProject(name: string, description: string | null = null) {

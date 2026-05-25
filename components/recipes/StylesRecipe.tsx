@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import {
   Palette,
   Upload,
@@ -29,18 +29,17 @@ import {
   Building,
   Shirt,
   Wand2,
+  ChevronLeft,
+  ChevronRight,
 } from 'lucide-react';
-import type {
-  ImageGenerationConfig,
-  GeneratedImageWithConfig,
-  Attachment,
-} from '../../types';
+import type { ImageGenerationConfig, GeneratedImageWithConfig, Attachment } from '../../types';
 import {
   STYLE_CATEGORY_IMAGES,
   STYLE_CATEGORY_PREVIEWS,
   STYLE_DEFAULT_IMAGES,
 } from '../../lib/recipeAssetCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
+import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
 import { STYLE_PACKS, StylePresetDef } from './stylesData';
 import { RecipeLayout } from './RecipeLayout';
 import Slider from '../ui/Slider';
@@ -153,6 +152,342 @@ interface StyleCardHoverPreview {
   imageSrc: string | null;
 }
 
+interface StylePresetVisualState {
+  presetPackName: string;
+  resultImages: GeneratedImageWithConfig[];
+  defaultImage: string | undefined;
+  previewImage: string | undefined;
+  exampleImageSrc: string | null;
+}
+
+interface StylePresetCardProps {
+  preset: StylePresetDef;
+  visualState: StylePresetVisualState | undefined;
+  active: boolean;
+  copied: boolean;
+  favorite: boolean;
+  theme: { color: string; bg: string; border: string; text: string };
+  isGenerating: boolean;
+  onApply: (preset: StylePresetDef) => void;
+  onCopy: (e: React.MouseEvent, preset: StylePresetDef) => void;
+  onToggleFavorite: (presetId: string) => void;
+  onOpenImage?: (image: GeneratedImageWithConfig) => void;
+  onHoverPreviewChange: (preview: StyleCardHoverPreview | null) => void;
+}
+
+const StylePresetCard = React.memo(
+  ({
+    preset,
+    visualState,
+    active,
+    copied,
+    favorite,
+    theme,
+    isGenerating,
+    onApply,
+    onCopy,
+    onToggleFavorite,
+    onOpenImage,
+    onHoverPreviewChange,
+  }: StylePresetCardProps) => {
+    const [resultIndex, setResultIndex] = useState(0);
+    const isHoveredRef = useRef(false);
+
+    const resultImages = visualState?.resultImages ?? [];
+    const hasMultipleResults = resultImages.length > 1;
+    const activeResultImage = resultImages[resultIndex] ?? resultImages[0] ?? null;
+
+    useEffect(() => {
+      setResultIndex(0);
+    }, [preset.id, resultImages.length]);
+
+    const applyHoverPreview = useCallback(
+      (imageSrc: string | null) => {
+        onHoverPreviewChange({
+          id: preset.id,
+          name: preset.name,
+          category: preset.category || 'General',
+          packName: visualState?.presetPackName ?? 'Styles',
+          aesthetic: preset.style.aesthetic,
+          imageSrc,
+        });
+      },
+      [onHoverPreviewChange, preset, visualState?.presetPackName],
+    );
+
+    const syncHoverPreview = useCallback(
+      (nextIndex: number) => {
+        const nextImage = resultImages[nextIndex] ?? null;
+        applyHoverPreview(
+          nextImage?.thumbnail || nextImage?.src || visualState?.exampleImageSrc || null,
+        );
+      },
+      [applyHoverPreview, resultImages, visualState?.exampleImageSrc],
+    );
+
+    const handleCycle = useCallback(
+      (delta: number) => {
+        if (!hasMultipleResults) return;
+        setResultIndex((current) => {
+          const next = (current + delta + resultImages.length) % resultImages.length;
+          if (isHoveredRef.current) {
+            queueMicrotask(() => syncHoverPreview(next));
+          }
+          return next;
+        });
+      },
+      [hasMultipleResults, resultImages.length, syncHoverPreview],
+    );
+
+    const renderResultButton = () => {
+      if (activeResultImage) {
+        return (
+          <div
+            role="button"
+            tabIndex={0}
+            aria-label={`Open ${preset.name} preview`}
+            onClick={(e) => {
+              e.stopPropagation();
+              onOpenImage?.(activeResultImage);
+            }}
+            onKeyDown={(e) => {
+              if (e.key !== 'Enter' && e.key !== ' ') return;
+              e.preventDefault();
+              e.stopPropagation();
+              onOpenImage?.(activeResultImage);
+            }}
+            className="absolute inset-0 cursor-zoom-in group/image"
+          >
+            <img
+              src={activeResultImage.thumbnail || activeResultImage.src}
+              className="h-full w-full object-cover transition-transform duration-700 group-hover/image:scale-110"
+              alt={preset.name}
+            />
+            <div className="absolute inset-0 bg-black/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white backdrop-blur-md">
+                <Maximize2 size={18} />
+              </div>
+            </div>
+
+            {hasMultipleResults && (
+              <div className="absolute left-2 right-2 top-2 flex items-center justify-between gap-2 opacity-0 transition-opacity group-hover/image:opacity-100 z-20">
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleCycle(-1);
+                  }}
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/90 backdrop-blur-md transition-colors hover:bg-black/80"
+                  aria-label={`Previous result for ${preset.name}`}
+                >
+                  <ChevronLeft size={14} />
+                </button>
+                <div className="rounded-full border border-white/10 bg-black/60 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-white/70 backdrop-blur-md">
+                  {resultIndex + 1} / {resultImages.length}
+                </div>
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleCycle(1);
+                  }}
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/90 backdrop-blur-md transition-colors hover:bg-black/80"
+                  aria-label={`Next result for ${preset.name}`}
+                >
+                  <ChevronRight size={14} />
+                </button>
+              </div>
+            )}
+
+            <div className="absolute right-2 top-2 flex gap-1 opacity-0 transition-opacity group-hover/image:opacity-100 z-20">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onApply(preset);
+                }}
+                className="rounded-lg border border-white/10 bg-black/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
+                title="Regenerate Style"
+              >
+                <RefreshCw size={14} />
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      if (visualState?.defaultImage) {
+        return (
+          <button
+            onClick={() => onApply(preset)}
+            disabled={isGenerating}
+            className="absolute inset-0 h-full w-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
+          >
+            <img
+              src={visualState.defaultImage}
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt={preset.name}
+            />
+            <div className="absolute right-2 top-2 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100 z-20">
+              <div className="rounded-lg border border-white/10 bg-black/60 p-1.5 text-white shadow-lg backdrop-blur-md">
+                <RefreshCw size={14} />
+              </div>
+            </div>
+          </button>
+        );
+      }
+
+      if (visualState?.previewImage) {
+        return (
+          <button
+            onClick={() => onApply(preset)}
+            disabled={isGenerating}
+            className="absolute inset-0 h-full w-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
+          >
+            <img
+              src={visualState.previewImage}
+              className="h-full w-full object-cover opacity-75 saturate-[0.9] transition-all duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:saturate-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-black/15 transition-colors group-hover:bg-black/5" />
+            <div className="absolute inset-0 flex translate-y-2 flex-col items-center justify-center gap-3 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+              <div
+                className={`flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white backdrop-blur-md transition-transform duration-300 group-hover:scale-110 shadow-xl ${theme.text}`}
+              >
+                <Palette size={24} />
+              </div>
+              <span className="text-[9px] font-black uppercase tracking-widest text-white">
+                Apply
+              </span>
+            </div>
+          </button>
+        );
+      }
+
+      return (
+        <button
+          onClick={() => onApply(preset)}
+          disabled={isGenerating}
+          className="absolute inset-0 flex h-full w-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
+        >
+          <div
+            className={`flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-transform duration-300 group-hover:scale-110 ${theme.text}`}
+          >
+            <Palette size={24} />
+          </div>
+          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 translate-y-2">
+            Apply
+          </span>
+        </button>
+      );
+    };
+
+    return (
+      <FloatingTooltip
+        delay={200}
+        content={
+          <div className="flex w-64 flex-col gap-2 p-3 text-left">
+            <div className="mb-1 text-[10px] font-black uppercase tracking-widest text-zinc-500">
+              Prompt Preview
+            </div>
+            <div className="flex max-h-48 flex-col gap-1 overflow-y-auto font-mono text-[10px] leading-relaxed text-zinc-300 custom-scrollbar">
+              {Object.entries(preset.style).map(([key, value]) => {
+                const previewValue = describePreviewValue(value);
+                if (!previewValue) return null;
+                return (
+                  <div key={key}>
+                    <span className="capitalize text-zinc-500">{key.replace(/_/g, ' ')}:</span>{' '}
+                    {previewValue}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        }
+      >
+        <div
+          onPointerEnter={() => {
+            isHoveredRef.current = true;
+            syncHoverPreview(resultIndex);
+          }}
+          onPointerLeave={() => {
+            isHoveredRef.current = false;
+            onHoverPreviewChange(null);
+          }}
+          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-all duration-300 ${
+            active
+              ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
+              : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:-translate-y-1 hover:shadow-xl'
+          }`}
+        >
+          <div className="absolute inset-0 overflow-hidden bg-black">{renderResultButton()}</div>
+
+          <div className="absolute inset-x-0 bottom-0 z-20 p-3">
+            <div className="rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-left shadow-[0_10px_30px_rgba(0,0,0,0.35)] backdrop-blur-md">
+              <div
+                onClick={() => !isGenerating && onApply(preset)}
+                className={`flex flex-col justify-center ${!isGenerating ? 'cursor-pointer' : ''}`}
+              >
+                <div className="mb-1 flex w-full items-center justify-between gap-2">
+                  <span
+                    className={`truncate pr-2 text-[9px] font-black uppercase tracking-tight transition-colors ${active ? 'text-white' : 'text-zinc-200 group-hover:text-white'}`}
+                  >
+                    {preset.name}
+                  </span>
+                  {activeResultImage && (
+                    <div className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
+                  )}
+                </div>
+                <span className="line-clamp-2 pr-7 text-[8px] leading-relaxed text-zinc-300/80 group-hover:text-zinc-200/90">
+                  {preset.style.aesthetic}
+                </span>
+              </div>
+
+              <div className="absolute bottom-2 right-2 flex items-center gap-1">
+                {hasMultipleResults && (
+                  <span className="rounded-md border border-white/10 bg-black/50 px-1.5 py-1 text-[7px] font-black uppercase tracking-[0.18em] text-zinc-300/80">
+                    {resultIndex + 1}/{resultImages.length}
+                  </span>
+                )}
+                <button
+                  onClick={(e) => onCopy(e, preset)}
+                  className="rounded-md p-1 text-zinc-400 transition-all hover:bg-white/8 hover:text-white"
+                  title="Copy Style Prompt"
+                >
+                  {copied ? <Check size={12} className="text-green-500" /> : <Copy size={12} />}
+                </button>
+              </div>
+
+              <div className="absolute left-2 top-2">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onToggleFavorite(preset.id);
+                  }}
+                  className={`rounded-full p-1.5 transition-all duration-300 ${favorite ? 'bg-black/40 text-rose-500' : 'bg-transparent text-zinc-600 hover:bg-black/40 hover:text-rose-400'}`}
+                  title={favorite ? 'Unpin' : 'Pin to top'}
+                >
+                  <Heart
+                    size={14}
+                    fill={favorite ? 'currentColor' : 'none'}
+                    strokeWidth={favorite ? 0 : 2}
+                  />
+                </button>
+              </div>
+
+              {active && (
+                <div
+                  className={`absolute top-0 right-0 h-0.5 w-full ${theme.bg} shadow-[0_0_10px_currentColor]`}
+                />
+              )}
+            </div>
+          </div>
+        </div>
+      </FloatingTooltip>
+    );
+  },
+);
+
 function describeStyleValue(value: unknown, fallback = 'Standard'): string {
   if (typeof value === 'string') {
     return value.trim() || fallback;
@@ -248,9 +583,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const [hoveredPresetPreview, setHoveredPresetPreview] = useState<StyleCardHoverPreview | null>(
     null,
   );
-  const [lastHoveredPresetPreview, setLastHoveredPresetPreview] = useState<
-    StyleCardHoverPreview | null
-  >(null);
+  const [lastHoveredPresetPreview, setLastHoveredPresetPreview] =
+    useState<StyleCardHoverPreview | null>(null);
   const timeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -272,15 +606,19 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const [sortOrder, setSortOrder] = useState<'az' | 'za'>('az');
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [favorites, setFavorites] = useLocalStorage<string[]>('style-favorites', []);
+  const [gridColumns, setGridColumns] = useLocalStorage<number>('styles-grid-columns', 4);
 
   // Style Influence (Default 80%)
   const [styleStrength, setStyleStrength] = useState(0.8);
 
-  const toggleFavorite = (presetId: string) => {
-    setFavorites((prev) =>
-      prev.includes(presetId) ? prev.filter((id) => id !== presetId) : [...prev, presetId],
-    );
-  };
+  const toggleFavorite = React.useCallback(
+    (presetId: string) => {
+      setFavorites((prev) =>
+        prev.includes(presetId) ? prev.filter((id) => id !== presetId) : [...prev, presetId],
+      );
+    },
+    [setFavorites],
+  );
 
   // Force strength to 0.15 (15%) by default ONLY ONCE per new image
   useEffect(() => {
@@ -325,6 +663,71 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   const activeTheme = PACK_THEMES[currentPackId] || PACK_THEMES['pack_01'];
   const resolvedHoveredPresetPreview = hoveredPresetPreview ?? lastHoveredPresetPreview;
+
+  const getPackIdForPreset = React.useCallback(
+    (preset: StylePresetDef) => {
+      if (currentPackId !== FAVORITES_PACK_ID) return currentPackId;
+      return (
+        STYLE_PACKS.find((pack) => pack.presets.some((candidate) => candidate.id === preset.id))
+          ?.id || activePack.id
+      );
+    },
+    [activePack.id, currentPackId],
+  );
+
+  const presetVisualStateById = useMemo(() => {
+    const stateMap = new Map<string, StylePresetVisualState>();
+
+    const visiblePresets =
+      currentPackId === FAVORITES_PACK_ID
+        ? STYLE_PACKS.flatMap((pack) =>
+            pack.presets.filter((preset) => favorites.includes(preset.id)),
+          )
+        : activePack.presets || [];
+
+    visiblePresets.forEach((preset) => {
+      const presetPackId = getPackIdForPreset(preset);
+      const presetPack = STYLE_PACKS.find((pack) => pack.id === presetPackId) ?? activePack;
+      const resultImages = images
+        .filter((img) => hasStylePresetIdentity(img.config, preset.id))
+        .sort((a, b) => b.createdAt - a.createdAt);
+      const defaultImage = STYLE_DEFAULT_IMAGES[preset.id];
+      const categoryImage = preset.category
+        ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
+        : undefined;
+      const previewImage = preset.category
+        ? categoryImage || STYLE_CATEGORY_PREVIEWS[preset.category]
+        : undefined;
+
+      stateMap.set(preset.id, {
+        presetPackName: presetPack.name,
+        resultImages,
+        defaultImage,
+        previewImage,
+        exampleImageSrc:
+          defaultImage ||
+          previewImage ||
+          resultImages[0]?.thumbnail ||
+          resultImages[0]?.src ||
+          null,
+      });
+    });
+
+    return stateMap;
+  }, [activePack, currentPackId, favorites, getPackIdForPreset, images]);
+
+  useEffect(() => {
+    const sources = new Set<string>();
+    for (const state of presetVisualStateById.values()) {
+      if (state.exampleImageSrc) sources.add(state.exampleImageSrc);
+    }
+
+    sources.forEach((src) => {
+      const img = new Image();
+      img.decoding = 'async';
+      img.src = src;
+    });
+  }, [presetVisualStateById]);
 
   useEffect(() => {
     setHoveredPresetPreview(null);
@@ -589,273 +992,37 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     }
   };
 
-  const getResultImageForPreset = React.useCallback((presetName: string) => {
-    if (!images) return null;
-    const targetStyle = `TARGET STYLE: ${presetName.toUpperCase()}`;
-    return (
-      images
-        .filter((img) => img.config.recipeContext?.includes(targetStyle))
-        .sort((a, b) => b.createdAt - a.createdAt)[0] || null
-    );
-  }, [images]);
-
-  const getPackIdForPreset = React.useCallback((preset: StylePresetDef) => {
-    if (currentPackId !== FAVORITES_PACK_ID) return currentPackId;
-    return (
-      STYLE_PACKS.find((pack) => pack.presets.some((candidate) => candidate.id === preset.id))
-        ?.id || activePack.id
-    );
-  }, [activePack.id, currentPackId]);
-
-  const getPresetVisualState = React.useCallback(
-    (preset: StylePresetDef) => {
-      const presetPackId = getPackIdForPreset(preset);
-      const presetPack = STYLE_PACKS.find((pack) => pack.id === presetPackId) ?? activePack;
-      const resultImage = getResultImageForPreset(preset.name);
-      const defaultImage = STYLE_DEFAULT_IMAGES[preset.id];
-      const categoryImage = preset.category
-        ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
-        : undefined;
-      const previewImage = preset.category
-        ? categoryImage || STYLE_CATEGORY_PREVIEWS[preset.category]
-        : undefined;
-
-      return {
-        presetPack,
-        resultImage,
-        defaultImage,
-        previewImage,
-        exampleImageSrc:
-          defaultImage || previewImage || resultImage?.thumbnail || resultImage?.src || null,
-      };
-    },
-    [activePack, getPackIdForPreset, getResultImageForPreset],
-  );
-
-  const buildHoverPreview = React.useCallback(
-    (preset: StylePresetDef): StyleCardHoverPreview => {
-      const { presetPack, exampleImageSrc } = getPresetVisualState(preset);
-
-      return {
-        id: preset.id,
-        name: preset.name,
-        category: preset.category || 'General',
-        packName: presetPack.name,
-        aesthetic: preset.style.aesthetic,
-        imageSrc: exampleImageSrc,
-      };
-    },
-    [getPresetVisualState],
-  );
-
   const renderPresetCard = React.useCallback(
     (preset: StylePresetDef) => {
-      const { resultImage, defaultImage, previewImage } = getPresetVisualState(preset);
-      const isActive = activePresetId === preset.id;
-      const isCopied = copiedStyleId === preset.id;
-      const isFavorite = favorites.includes(preset.id);
-
       return (
-        <FloatingTooltip
+        <StylePresetCard
           key={preset.id}
-          delay={200}
-          content={
-            <div className="flex flex-col gap-2 w-64 text-left p-3">
-              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">
-                Prompt Preview
-              </div>
-              <div className="text-[10px] text-zinc-300 leading-relaxed font-mono flex flex-col gap-1 max-h-48 overflow-y-auto custom-scrollbar">
-                {Object.entries(preset.style).map(([key, value]) => {
-                  const previewValue = describePreviewValue(value);
-                  if (!previewValue) return null;
-                  return (
-                    <div key={key}>
-                      <span className="text-zinc-500 capitalize">{key.replace(/_/g, ' ')}:</span>{' '}
-                      {previewValue}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          }
-        >
-          <div
-            onPointerEnter={() => setHoveredPresetPreview(buildHoverPreview(preset))}
-            onPointerLeave={() =>
-              setHoveredPresetPreview((currentPreview) =>
-                currentPreview?.id === preset.id ? null : currentPreview,
-              )
-            }
-            className={`
-                  group relative aspect-3/4 rounded-xl overflow-hidden text-left transition-all duration-300 flex flex-col
-                  ${isActive
-                ? `ring-2 ring-offset-4 ring-offset-black ${activeTheme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
-                : 'bg-zinc-900 border border-white/5 hover:border-white/10 hover:shadow-xl hover:-translate-y-1'
-              }
-              `}
-          >
-            <div className="flex-1 relative overflow-hidden bg-black">
-              {resultImage ? (
-                <>
-                  <div
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      if (onOpenImage) onOpenImage(resultImage);
-                    }}
-                    className="absolute inset-0 cursor-zoom-in group/image"
-                  >
-                    <img
-                      src={resultImage.thumbnail || resultImage.src}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover/image:scale-110"
-                      alt={preset.name}
-                    />
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/image:opacity-100 transition-opacity flex items-center justify-center">
-                      <div className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white border border-white/20">
-                        <Maximize2 size={18} />
-                      </div>
-                    </div>
-
-                    <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover/image:opacity-100 transition-opacity z-20">
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          void handleApplyStyle(preset);
-                        }}
-                        className="p-1.5 bg-black/60 backdrop-blur-md rounded-lg hover:bg-accent-600 text-white transition-colors border border-white/10 shadow-lg"
-                        title="Regenerate Style"
-                      >
-                        <RefreshCw size={14} />
-                      </button>
-                    </div>
-                  </div>
-                </>
-              ) : defaultImage ? (
-                <button
-                  onClick={() => void handleApplyStyle(preset)}
-                  disabled={isGenerating}
-                  className="absolute inset-0 w-full h-full bg-zinc-900 cursor-pointer disabled:cursor-not-allowed"
-                >
-                  <img
-                    src={defaultImage}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    alt={preset.name}
-                  />
-                  <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity z-20">
-                    <div className="p-1.5 bg-black/60 backdrop-blur-md rounded-lg text-white border border-white/10 shadow-lg">
-                      <RefreshCw size={14} />
-                    </div>
-                  </div>
-                </button>
-              ) : previewImage ? (
-                <button
-                  onClick={() => void handleApplyStyle(preset)}
-                  disabled={isGenerating}
-                  className="absolute inset-0 w-full h-full bg-zinc-900 cursor-pointer disabled:cursor-not-allowed"
-                >
-                  <img
-                    src={previewImage}
-                    className="w-full h-full object-cover opacity-75 saturate-[0.9] transition-all duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:saturate-100"
-                    alt=""
-                  />
-                  <div className="absolute inset-0 bg-black/15 group-hover:bg-black/5 transition-colors" />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
-                    <div
-                      className={`w-14 h-14 rounded-full flex items-center justify-center bg-black/55 backdrop-blur-md border border-white/15 ${activeTheme.text} transition-transform duration-300 group-hover:scale-110 shadow-xl`}
-                    >
-                      <Palette size={24} />
-                    </div>
-                    <span className="text-[9px] font-black text-white uppercase tracking-widest">
-                      Apply
-                    </span>
-                  </div>
-                </button>
-              ) : (
-                <button
-                  onClick={() => void handleApplyStyle(preset)}
-                  disabled={isGenerating}
-                  className="absolute inset-0 w-full h-full flex flex-col items-center justify-center gap-3 bg-zinc-900/50 hover:bg-zinc-800 transition-colors cursor-pointer"
-                >
-                  <div
-                    className={`w-14 h-14 rounded-full flex items-center justify-center bg-white/5 border border-white/10 ${activeTheme.text} transition-transform duration-300 group-hover:scale-110`}
-                  >
-                    <Palette size={24} />
-                  </div>
-                  <span className="text-[9px] font-black text-zinc-600 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
-                    Apply
-                  </span>
-                </button>
-              )}
-
-              <div className="absolute top-2 left-2 z-30">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    toggleFavorite(preset.id);
-                  }}
-                  className={`p-1.5 rounded-full transition-all duration-300 ${isFavorite ? 'text-rose-500 bg-black/40' : 'text-zinc-600 hover:text-rose-400 bg-transparent hover:bg-black/40'}`}
-                  title={isFavorite ? 'Unpin' : 'Pin to top'}
-                >
-                  <Heart
-                    size={14}
-                    fill={isFavorite ? 'currentColor' : 'none'}
-                    strokeWidth={isFavorite ? 0 : 2}
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div className="relative h-20 p-4 bg-zinc-900/90 backdrop-blur-md border-t border-white/5 flex flex-col justify-center text-left hover:bg-zinc-800 transition-colors z-20 group/label w-full">
-              <div
-                onClick={() => !isGenerating && void handleApplyStyle(preset)}
-                className={`flex-1 flex flex-col justify-center ${!isGenerating ? 'cursor-pointer' : ''}`}
-              >
-                <div className="flex items-center justify-between w-full mb-1">
-                  <span
-                    className={`text-[10px] font-black uppercase tracking-tight truncate pr-8 transition-colors ${isActive ? 'text-white' : 'text-zinc-400 group-hover/label:text-white'}`}
-                  >
-                    {preset.name}
-                  </span>
-                  {resultImage && (
-                    <div className="w-1.5 h-1.5 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
-                  )}
-                </div>
-                <span className="text-[9px] text-zinc-600 line-clamp-2 leading-relaxed group-hover/label:text-zinc-500 pr-6">
-                  {preset.style.aesthetic}
-                </span>
-              </div>
-
-              <div className="absolute bottom-2 right-2">
-                <button
-                  onClick={(e) => handleCopyStylePrompt(e, preset)}
-                  className="p-1.5 rounded-md text-zinc-600 hover:text-white hover:bg-white/10 transition-all"
-                  title="Copy Style Prompt"
-                >
-                  {isCopied ? <Check size={12} className="text-green-500" /> : <Copy size={12} />}
-                </button>
-              </div>
-
-              {isActive && (
-                <div
-                  className={`absolute top-0 right-0 w-full h-0.5 ${activeTheme.bg} shadow-[0_0_10px_currentColor]`}
-                />
-              )}
-            </div>
-          </div>
-        </FloatingTooltip>
+          preset={preset}
+          visualState={presetVisualStateById.get(preset.id)}
+          active={activePresetId === preset.id}
+          copied={copiedStyleId === preset.id}
+          favorite={favorites.includes(preset.id)}
+          theme={activeTheme}
+          isGenerating={isGenerating}
+          onApply={handleApplyStyle}
+          onCopy={handleCopyStylePrompt}
+          onToggleFavorite={toggleFavorite}
+          onOpenImage={onOpenImage}
+          onHoverPreviewChange={setHoveredPresetPreview}
+        />
       );
     },
     [
       activePresetId,
-      buildHoverPreview,
       copiedStyleId,
       favorites,
       activeTheme,
-      getPresetVisualState,
       onOpenImage,
       handleApplyStyle,
       handleCopyStylePrompt,
       isGenerating,
       toggleFavorite,
+      presetVisualStateById,
     ],
   );
 
@@ -1029,10 +1196,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             }}
             className={`
                   group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                    ${currentPackId === FAVORITES_PACK_ID
-                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-              }
+                    ${
+                      currentPackId === FAVORITES_PACK_ID
+                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+                    }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -1059,10 +1227,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 }}
                 className={`
                       group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                            ${isActive
-                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                  }
+                            ${
+                              isActive
+                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                            }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>
@@ -1129,6 +1298,28 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
               </button>
             )}
+
+            <div className="h-6 w-px bg-white/5" />
+
+            <div className="flex items-center gap-2 rounded-lg border border-white/5 bg-black/40 px-2 py-1">
+              <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                Zoom
+              </span>
+              <input
+                type="range"
+                min={2}
+                max={7}
+                step={1}
+                value={gridColumns}
+                onChange={(e) => setGridColumns(Number(e.target.value))}
+                className="h-1.5 w-20 accent-white"
+                aria-label="Style grid zoom"
+                title="Style card columns"
+              />
+              <span className="w-4 text-[9px] font-black text-zinc-300 tabular-nums">
+                {gridColumns}
+              </span>
+            </div>
           </div>
         </div>
 
@@ -1145,7 +1336,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   </h3>
                   <div className="h-px flex-1 bg-linear-to-r from-rose-500/20 to-transparent" />
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div
+                  className="grid gap-4"
+                  style={{ gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))` }}
+                >
                   {processedData.favorites.map(renderPresetCard)}
                 </div>
               </div>
@@ -1164,7 +1358,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   </h3>
                   <div className="h-px flex-1 bg-white/10" />
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div
+                  className="grid gap-4"
+                  style={{ gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))` }}
+                >
                   {(presets as StylePresetDef[]).map(renderPresetCard)}
                 </div>
               </div>

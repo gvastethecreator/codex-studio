@@ -262,6 +262,15 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const navScrollRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    if (!activeImage) return;
+    const nextIndex = allImages.findIndex((img) => img.id === activeImage.id);
+    setCurrentIndex(nextIndex >= 0 ? nextIndex : 0);
+    setDirection(0);
+    setIsSliding(false);
+    setIsComparing(false);
+  }, [activeImage?.id, allImages]);
+
   // Sync state if images array changes significantly (e.g. deletion)
   useEffect(() => {
     if (currentIndex >= allImages.length && allImages.length > 0) {

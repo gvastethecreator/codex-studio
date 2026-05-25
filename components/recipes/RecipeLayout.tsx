@@ -19,9 +19,10 @@ export const RecipeLayout: React.FC<RecipeLayoutProps> = ({
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: isGenerating ? 0 : 1 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`w-full h-full flex flex-col relative ${isGenerating ? 'pointer-events-none' : ''}`}
+      className={`w-full h-full flex flex-col relative ${isGenerating ? 'data-[generating=true]:opacity-100' : ''}`}
+      data-generating={isGenerating ? 'true' : 'false'}
     >
       {/* Main Content Area */}
       <div className={`flex-1 w-full overflow-hidden relative ${className}`}>{children}</div>

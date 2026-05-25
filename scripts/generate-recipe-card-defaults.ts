@@ -3,6 +3,7 @@ import path from 'node:path';
 import type { Asset, Job, Project } from '../packages/shared/src';
 import {
   RECIPE_ASSET_EXTENSION,
+  appendImagegenDenoiseDirective,
   defaultCodexHome,
   defaultStudioLibraryDir,
   recipeCardsDir,
@@ -294,7 +295,7 @@ async function generateOne(
     body: JSON.stringify({
       projectId,
       kind: 'codex_imagegen',
-      prompt: recipe.prompt,
+      prompt: appendImagegenDenoiseDirective(recipe.prompt),
     }),
   });
 

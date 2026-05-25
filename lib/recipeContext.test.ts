@@ -37,6 +37,10 @@ describe('recipeContext', () => {
     expect(parseRecipeIdFromContext(context)).toBe('styles');
   });
 
+  it('does not parse recipe ids from title substrings without the protocol envelope', () => {
+    expect(parseRecipeIdFromContext('CAMERA VIEW PROMPT')).toBeNull();
+  });
+
   it('includes timeline guidance in timeline documents', () => {
     const context = buildRecipeContext('timeline', {
       nextIndex: 3,

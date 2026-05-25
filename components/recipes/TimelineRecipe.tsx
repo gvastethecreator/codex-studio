@@ -26,6 +26,7 @@ import type {
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
+import { getRecipeNumberParam, hasRecipeIdentity } from '../../lib/recipeIdentity';
 
 interface TimelineRecipeProps {
   config: ImageGenerationConfig;
@@ -121,26 +122,21 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   }, [config.attachments, sessionOrigin]);
 
   // Helper: Extract temporal index safely
-  const getSequenceIndex = (context?: string): number => {
-    if (!context) return 0;
-    const match = context.match(/"sequence_index":\s*(-?\d+)/);
-    return match ? parseInt(match[1]) : 0;
-  };
+  const getSequenceIndex = (imageConfig?: ImageGenerationConfig): number =>
+    imageConfig ? getRecipeNumberParam(imageConfig, 'nextIndex', 0) : 0;
 
   // 1. Calculate Logical Index of Active Frame
   const currentRefIndex = useMemo(() => {
     if (!activeImage) return 0;
     const matchedGen = images.find((img) => img.src === activeImage.dataUrl);
-    if (matchedGen) return getSequenceIndex(matchedGen.config.recipeContext);
+    if (matchedGen) return getSequenceIndex(matchedGen.config);
     if (sessionOrigin && activeImage.dataUrl === sessionOrigin.src) return 0;
     return 0;
   }, [activeImage, images, sessionOrigin]);
 
   // 2. Build the Unified Timeline Strip
   const timelineItems = useMemo(() => {
-    const generatedItems = images.filter((img) =>
-      img.config.recipeContext?.includes('TIMELINE_FRAME_GUIDANCE'),
-    );
+    const generatedItems = images.filter((img) => hasRecipeIdentity(img.config, 'timeline'));
     const itemsMap = new Map();
 
     generatedItems.forEach((img) => {
@@ -148,7 +144,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
         id: img.id,
         src: img.src,
         thumbnail: img.thumbnail || img.src,
-        index: getSequenceIndex(img.config.recipeContext),
+        index: getSequenceIndex(img.config),
         isOrigin: false,
         isGenerated: true,
         originalObj: img,
@@ -283,7 +279,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
     if (prevIsGenerating.current && !isGenerating) {
       // Generation just finished
       const newestImage = images[0];
-      if (newestImage && newestImage.config.recipeContext?.includes('TEMPORAL_INTERPOLATION')) {
+      if (newestImage && hasRecipeIdentity(newestImage.config, 'timeline')) {
         const matchedItem = timelineItems.find((item) => item.src === newestImage.src);
         if (matchedItem && activeImage?.dataUrl !== matchedItem.src) {
           handleItemClick(matchedItem);

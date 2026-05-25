@@ -108,11 +108,9 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
 
     const hydrate = async () => {
       try {
-        const [logs, workspaces, batches, trash, bgConfig] = await Promise.all([
+        const [logs, workspaces, bgConfig] = await Promise.all([
           get<LogEntry[]>('session-logs').catch(() => undefined),
           get<Workspace[]>('app-workspaces').catch(() => undefined),
-          get<GenerationBatch[]>('catalog-cache').catch(() => undefined),
-          get<GenerationBatch[]>('catalog-trash').catch(() => undefined),
           get<BackgroundConfig>('bg-config').catch(() => undefined),
         ]);
 
@@ -128,8 +126,8 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
           state: {
             logs: logs ?? [],
             workspaces,
-            batches,
-            trash,
+            batches: [],
+            trash: [],
             bgConfig: bgConfig ?? DEFAULT_BACKGROUND_CONFIG,
             isBackgroundEnabled,
           },
@@ -151,8 +149,6 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
 
   usePersistedIdbValue('session-logs', state.logs, isHydrated);
   usePersistedIdbValue('app-workspaces', state.workspaces, isHydrated);
-  usePersistedIdbValue('catalog-cache', state.batches, isHydrated);
-  usePersistedIdbValue('catalog-trash', state.trash, isHydrated);
   usePersistedIdbValue('bg-config', state.bgConfig, isHydrated);
 
   useEffect(() => {
@@ -244,8 +240,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
   }, []);
 
   const { toasts, addToast, removeToast } = useToasts();
-  const { isDebugPanelOpen, toggleDebugPanel, openDebugPanel, closeDebugPanel } =
-    usePanelManager();
+  const { isDebugPanelOpen, toggleDebugPanel, openDebugPanel, closeDebugPanel } = usePanelManager();
 
   const restoreFromTrash = useCallback(
     (batchId: string) => {
