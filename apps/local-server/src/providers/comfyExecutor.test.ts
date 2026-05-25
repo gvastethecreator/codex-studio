@@ -29,7 +29,7 @@ function imageResponse(bytes: Uint8Array) {
     headers: new Headers({ 'content-type': 'image/png' }),
     json: async () => ({}),
     text: async () => '',
-    arrayBuffer: async () => bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength),
+    arrayBuffer: async () => bytes.buffer as ArrayBuffer,
   };
 }
 
@@ -67,7 +67,7 @@ describe('comfyExecutor', () => {
       }
       if (url.endsWith('/history/prompt-1')) {
         historyCalls += 1;
-        if (historyCalls === 1) return jsonResponse({ prompt-1: { outputs: {} } });
+        if (historyCalls === 1) return jsonResponse({ 'prompt-1': { outputs: {} } });
         return jsonResponse({
           'prompt-1': {
             outputs: {

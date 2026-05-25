@@ -191,8 +191,8 @@ describe('google executor', () => {
     const transcript = JSON.parse(transcriptText);
 
     expect(requestBody.contents[0].parts).toEqual([
-      { text: 'small brass key\n\nAvoid: blur' },
       { inlineData: { mimeType: 'image/png', data: 'AQID' } },
+      { text: 'small brass key\n\nAvoid: blur' },
     ]);
     expect(transcript.diagnostics).toMatchObject({
       assetCount: 1,

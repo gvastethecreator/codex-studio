@@ -38,18 +38,17 @@ Before provider, recipe, preset, or output work:
 
 ## Recent Verified State
 
-Recent broad gates:
+All gates last verified 2026-05-25:
 
-- `bun run providers:verify` passed.
-- `bun run test` passed earlier after provider work: 59 files, 191 tests.
-- `bun run build` passed earlier. Remaining warnings: large chunks (`StylesRecipe`, `index`, `StylePresetCatalogSearchSurface`) and `vite:asset` timing.
-- `bun run check` still fails globally because of existing formatting drift across many files. Use focused `bun run check:fix -- <files>` while iterating.
-
-Recent domain gates:
-
-- `bun run styles:verify` passed: 11 packs, 1,252 presets, runtime current, source audit OK.
-- `bun run recipes:verify` passed: catalog OK, source audit OK.
-- Focused tests around style/recipe guards passed.
+- `bun run providers:verify` passed: 17 rows (14 recipe + 3 external fixtures), all clean.
+- `bun run recipes:verify` passed: catalog OK, source audit 0 violations.
+- `bun run styles:verify` passed: 11 packs, 1,252 presets, full taxonomy/default coverage, runtime current, source audit OK.
+- `bun run test` passed: 63 files, 197 tests.
+- `bun run build` passed: UI + server both clean.
+  - Remaining warnings: large chunks (`StylesRecipe`, `StylePresetCatalogSearchSurface`) and `vite:asset` timing.
+  - Modal overlays (`ImageEditorModal`, `TrashModal`, `LimitReachedModal`, `StudioSettingsModal`, `DashboardModal`, `DebugPanel`, `OnboardingModal`) now lazy-demand-mounted.
+  - `AppOverlays` itself is lazy from `AppContent`.
+- `bun run check` still fails globally because of pre-existing formatting drift. Use `bun run check:fix -- <files>` while iterating.
 
 ## Major Work Completed
 
@@ -57,8 +56,19 @@ Provider boundary:
 
 - Google Gemini/Nano Banana executor added behind external provider registry.
 - fal.ai executor exists with hosted result normalization, local asset upload, retry, and no-secret transcripts.
+- Google `image_edit` sends image assets before the prompt text to align with edit-mode conventions.
+- ComfyUI now has a concrete executor that loads a workflow template from `COMFY_WORKFLOW_TEMPLATE_PATH`, merges prompt/negative-prompt, submits to `/prompt`, polls `/history` for the first image, and downloads via `/view` into the Studio Library. Comfy remains blocked until both local endpoint and workflow template path are configured.
 - Shared hosted/inline result handling exists in `externalProviderResults.ts`.
 - External preflight exposes secret/runtime state without secret values.
+
+Command Center / demand-mounted UI:
+
+- Recipe surfaces are demand-loaded; initial UI bundle dropped from ~4.87 MB to ~1.10 MB.
+- Styles grid uses progressive expansion and viewport-aware mounting.
+- Style Preset Catalog search is a lazy Demand-Mounted Surface.
+- `AppOverlays` itself is lazy from `AppContent`.
+- All heavy modals (`ImageEditorModal`, `TrashModal`, `LimitReachedModal`, `StudioSettingsModal`, `DashboardModal`, `DebugPanel`, `OnboardingModal`) are lazy-demand-mounted with conditional render + `Suspense`.
+- Each modal now in its own chunk outside the main bundle.
 
 Style presets:
 
@@ -106,7 +116,7 @@ Next useful work:
 
 - Measure rendered UI for large expanded Styles packs.
 - Verify `StylePresetCatalogSearchSurface` is truly demand-mounted in browser.
-- Reduce remaining large chunks.
+- Reduce remaining large chunks (StylesRecipe + StylePresetCatalogSearchSurface).
 - Move any remaining global status/usage/provider/library/settings controls into Command Center.
 
 Likely files:
@@ -120,21 +130,12 @@ Likely files:
 
 ### Providers
 
+Completed.
+
 Next useful work:
 
-- Finish concrete ComfyUI executor work.
-- Require endpoint plus workflow template before Comfy becomes executable.
-- Keep Comfy behind local workflow boundary and no-secret transcript rules.
-- Improve Google edit-mode request mapping.
-
-Likely files:
-
-- `apps/local-server/src/providers/runtimeConfig.ts`
-- `apps/local-server/src/providers/externalProvider.ts`
-- `apps/local-server/src/providers/externalProviderExecutors.ts`
-- `apps/local-server/src/providers/externalProviderInputs.ts`
-- `apps/local-server/src/providers/googleExecutor.ts`
-- possible `apps/local-server/src/providers/comfyExecutor.ts`
+- Add richer edit-mode request mapping for Google (beyond basic text-position swap).
+- Wire provider-specific image_edit conventions per executor (mask roles, strength, compositing layers).
 
 Validate with:
 

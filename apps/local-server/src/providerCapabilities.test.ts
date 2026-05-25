@@ -24,7 +24,7 @@ describe('providerCapabilities', () => {
         }),
         expect.objectContaining({
           providerId: 'comfy',
-          status: 'planned',
+          status: 'not_configured',
         }),
       ]),
     );

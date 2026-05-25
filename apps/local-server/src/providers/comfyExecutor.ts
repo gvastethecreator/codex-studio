@@ -122,7 +122,7 @@ function createComfyViewUrl(baseUrl: string, image: ComfyImageRef) {
 export function createComfyWorkflowExecutor({
   fetch = globalThis.fetch as ExternalProviderFetch,
   env = process.env,
-  readFile = readFileSync,
+  readFile = (filePath: string) => readFileSync(filePath, 'utf8'),
   files = {
     resolveLibraryPath,
     mkdir: mkdirSync,
