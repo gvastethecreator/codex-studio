@@ -41,3 +41,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-018.webp
 attributes:
   negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: drawing-and-sketching
+  categoryName: 3. Drawing & Sketching
+  tags:
+    - essential-art-styles
+    - drawing-and-sketching
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

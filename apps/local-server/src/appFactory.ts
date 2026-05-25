@@ -49,6 +49,8 @@ import {
   readExternalOutputSourceRegistry,
   registerExternalOutputSource,
 } from './outputSources';
+import { getProviderExecutionBlocker, readProviderCapabilities } from './providerCapabilities';
+import { readExternalProviderRuntimePreflights } from './providers/runtimeConfig';
 import type {
   AppServerEnsureReason,
   CodexModelCatalogResponse,
@@ -185,6 +187,14 @@ export async function createStudioApp(
     return c.json(updateEditableStudioSettings(settingsStorage, body));
   });
 
+  app.get('/api/providers', (c) =>
+    c.json(readProviderCapabilities(readEditableStudioSettings(settingsStorage))),
+  );
+
+  app.get('/api/providers/preflight', (c) =>
+    c.json({ providers: readExternalProviderRuntimePreflights() }),
+  );
+
   app.get('/api/output-sources', (c) => {
     const settings = readEditableStudioSettings(settingsStorage);
     return c.json({
@@ -308,6 +318,12 @@ export async function createStudioApp(
           providerId: body.sourceSpec.providerId ?? providerId,
         }
       : null;
+    const capabilityReport = readProviderCapabilities(readEditableStudioSettings(settingsStorage));
+    const providerBlocker = getProviderExecutionBlocker(capabilityReport, providerId);
+    if (providerBlocker) {
+      return c.json(providerBlocker, 400);
+    }
+
     const job = dbStore.createJob({
       projectId,
       kind: body.kind,

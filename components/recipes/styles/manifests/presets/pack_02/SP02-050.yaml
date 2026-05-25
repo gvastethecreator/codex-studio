@@ -28,3 +28,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-050.webp
 attributes:
   negativePrompt: sharp, hd
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: photography-eras
+  categoryName: 5. Photography Eras
+  tags:
+    - cinematic-and-media
+    - photography-eras
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

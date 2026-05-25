@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-  Search,
-  FlaskConical,
   ArrowRight,
   Grid3X3,
   Clapperboard,
@@ -19,116 +17,31 @@ import {
 } from 'lucide-react';
 import type { RecipeId } from '../types';
 import { RECIPE_CARD_IMAGES } from '../lib/recipeAssetCatalog';
+import { RECIPE_CATALOG, type RecipeCatalogEntry } from '../lib/recipeCatalog';
 
 interface RecipesViewProps {
   onSelectRecipe: (id: RecipeId) => void;
 }
 
-interface RecipeDef {
-  id: RecipeId;
-  title: string;
-  subtitle: string;
-  description: string;
-  tag: string;
-  tagIcon?: LucideIcon;
-  buttonText: string;
-  buttonIcon: LucideIcon;
-  bgImage?: string;
-  bgPattern?: boolean;
-  accentColor: string; // Used for dynamic mapping
-}
+const RECIPE_TAG_ICONS: Record<Exclude<RecipeId, null>, LucideIcon> = {
+  styles: Palette,
+  remaster: Wand2,
+  camera: Video,
+  cinematic: Clapperboard,
+  timeline: Hourglass,
+  spritesheet: Grid3X3,
+  character: User,
+};
 
-const RECIPES: RecipeDef[] = [
-  {
-    id: 'styles',
-    title: 'STYLES',
-    subtitle: 'Style Transfer',
-    description:
-      'Reinterpret images with local style presets. Apply an aesthetic direction with a single click.',
-    tag: 'Fast',
-    tagIcon: Palette,
-    buttonText: 'Open Presets',
-    buttonIcon: Sparkles,
-    bgImage: RECIPE_CARD_IMAGES.styles,
-    accentColor: 'purple',
-  },
-  {
-    id: 'remaster',
-    title: 'REMASTER',
-    subtitle: 'Image Restoration',
-    description: 'Enhance lighting, color, and detail while keeping the source recognizable.',
-    tag: 'Enhance',
-    tagIcon: Wand2,
-    buttonText: 'Open Tool',
-    buttonIcon: Sparkles,
-    bgImage: RECIPE_CARD_IMAGES.remaster,
-    accentColor: 'amber',
-  },
-  {
-    id: 'camera',
-    title: 'CAMERA',
-    subtitle: 'Camera Guidance',
-    description:
-      'Compose plausible alternate views with a virtual camera guide for azimuth, elevation, and zoom.',
-    tag: 'Control',
-    tagIcon: Video,
-    buttonText: 'Open Viewfinder',
-    buttonIcon: Film,
-    bgImage: RECIPE_CARD_IMAGES.camera,
-    accentColor: 'cyan',
-  },
-  {
-    id: 'cinematic',
-    title: 'CINEMATIC',
-    subtitle: 'Storyboard Creator',
-    description:
-      'Create storyboard contact sheets with cinematic shot, lens, mood, and layout controls.',
-    tag: 'Director',
-    tagIcon: Clapperboard,
-    buttonText: 'Open Creator',
-    buttonIcon: Film,
-    bgImage: RECIPE_CARD_IMAGES.cinematic,
-    accentColor: 'rose',
-  },
-  {
-    id: 'timeline',
-    title: 'TIMELINE',
-    subtitle: 'Scene Extrapolation',
-    description: 'Generate plausible next or previous storyboard frames from a scene reference.',
-    tag: 'Temporal',
-    tagIcon: Hourglass,
-    buttonText: 'Open Timeline',
-    buttonIcon: Clock,
-    bgImage: RECIPE_CARD_IMAGES.timeline,
-    accentColor: 'teal',
-  },
-  {
-    id: 'spritesheet',
-    title: 'SPRITE SHEET',
-    subtitle: 'Game Assets',
-    description:
-      'Draft sprite sheet concepts with configurable grids, perspectives, backgrounds, and dividers.',
-    tag: 'Game Dev',
-    tagIcon: Grid3X3,
-    buttonText: 'Configure Grid',
-    buttonIcon: ArrowRight,
-    bgImage: RECIPE_CARD_IMAGES.spritesheet,
-    accentColor: 'emerald',
-  },
-  {
-    id: 'character',
-    title: 'CHARACTER',
-    subtitle: 'Sheet Designer',
-    description:
-      'Design guided character sheets with turnarounds, expressions, framing, and style controls.',
-    tag: 'Concept Art',
-    tagIcon: User,
-    buttonText: 'Open Designer',
-    buttonIcon: Users,
-    bgImage: RECIPE_CARD_IMAGES.character,
-    accentColor: 'indigo',
-  },
-];
+const RECIPE_BUTTON_ICONS: Record<Exclude<RecipeId, null>, LucideIcon> = {
+  styles: Sparkles,
+  remaster: Sparkles,
+  camera: Film,
+  cinematic: Film,
+  timeline: Clock,
+  spritesheet: ArrowRight,
+  character: Users,
+};
 
 export const RecipesView: React.FC<RecipesViewProps> = ({ onSelectRecipe }) => {
   return (
@@ -136,11 +49,11 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onSelectRecipe }) => {
       <div className="max-w-[1920px] mx-auto">
         {/* Grid Content */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 pt-4">
-          {RECIPES.map((recipe) => (
+          {RECIPE_CATALOG.map((recipe) => (
             <RecipeCard
               key={recipe.id}
               recipe={recipe}
-              onSelect={() => recipe.id && onSelectRecipe(recipe.id)}
+              onSelect={() => onSelectRecipe(recipe.id)}
             />
           ))}
         </div>
@@ -207,10 +120,11 @@ const COLOR_CLASSES: Record<
 
 const NOISE_SVG = `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.4'/%3E%3C/svg%3E")`;
 
-const RecipeCard: React.FC<{ recipe: RecipeDef; onSelect: (id: RecipeId) => void }> = React.memo(
-  ({ recipe, onSelect }) => {
-    const TagIcon = recipe.tagIcon || Sparkles;
-    const BtnIcon = recipe.buttonIcon;
+const RecipeCard: React.FC<{ recipe: RecipeCatalogEntry; onSelect: (id: RecipeId) => void }> =
+  React.memo(({ recipe, onSelect }) => {
+    const TagIcon = RECIPE_TAG_ICONS[recipe.id] || Sparkles;
+    const BtnIcon = RECIPE_BUTTON_ICONS[recipe.id] || ArrowRight;
+    const bgImage = RECIPE_CARD_IMAGES[recipe.cardImageKey];
 
     // Fallback if color is missing
     const colors = COLOR_CLASSES[recipe.accentColor] || COLOR_CLASSES['teal'];
@@ -240,13 +154,11 @@ const RecipeCard: React.FC<{ recipe: RecipeDef; onSelect: (id: RecipeId) => void
         />
 
         {/* 1. Background Image Layer */}
-        {recipe.bgImage ? (
+        {bgImage ? (
           <div
             className="absolute inset-0 bg-cover bg-center opacity-20 group-hover:opacity-40 transition-all duration-700 ease-out delay-100 group-hover:delay-0 group-hover:scale-110"
-            style={{ backgroundImage: `url('${recipe.bgImage}')` }}
+            style={{ backgroundImage: `url('${bgImage}')` }}
           />
-        ) : recipe.bgPattern ? (
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:20px_20px] opacity-20 group-hover:opacity-40 transition-opacity" />
         ) : null}
 
         {/* 2. Solid Overlay for Text Readability - Replaced Gradient with Solid */}
@@ -312,5 +224,4 @@ const RecipeCard: React.FC<{ recipe: RecipeDef; onSelect: (id: RecipeId) => void
         </div>
       </div>
     );
-  },
-);
+  });

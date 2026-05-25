@@ -16,6 +16,7 @@ const packsDir = path.join(repoRoot, 'components', 'recipes', 'styles', 'packs')
 const manifestsDir = path.join(repoRoot, 'components', 'recipes', 'styles', 'manifests');
 const packManifestDir = path.join(manifestsDir, 'packs');
 const presetManifestDir = path.join(manifestsDir, 'presets');
+const allowLegacySplit = process.argv.includes('--from-legacy');
 
 const passthroughAttributeKeys = [
   'camera',
@@ -87,6 +88,16 @@ function toPresetManifest(pack: StylePack, preset: StylePresetDef): StylePresetM
     assets: {
       defaultImage: `/assets/recipes/styles/defaults/${preset.id}.webp`,
     },
+    taxonomy: {
+      packId: pack.id,
+      packName: pack.name,
+      categoryId: slugify(category),
+      categoryName: category,
+      ...(preset.domain ? { domain: preset.domain } : {}),
+      tags: createTags(pack, preset, category),
+      supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
+      hasDefaultImage: true,
+    },
     ...(createAttributes(preset) ? { attributes: createAttributes(preset) } : {}),
   };
 }
@@ -139,6 +150,18 @@ async function writeYaml(filePath: string, value: unknown) {
 }
 
 async function main() {
+  if (!allowLegacySplit) {
+    console.error(
+      [
+        '[styles:split] Refusing to overwrite granular Style Preset Manifests from legacy pack YAML.',
+        'Edit components/recipes/styles/manifests/** directly for normal authoring.',
+        'For one-time migration from legacy packs, run: bun run styles:split:legacy',
+      ].join('\n'),
+    );
+    process.exitCode = 1;
+    return;
+  }
+
   const packs = await readLegacyPacks();
   await rm(manifestsDir, { recursive: true, force: true });
 
@@ -156,7 +179,10 @@ async function main() {
       presetCount += 1;
     }
 
-    await writeYaml(path.join(packManifestDir, `${pack.id}.yaml`), toPackManifest(pack, refsByCategory));
+    await writeYaml(
+      path.join(packManifestDir, `${pack.id}.yaml`),
+      toPackManifest(pack, refsByCategory),
+    );
   }
 
   console.log(`Style pack manifests: ${packs.length}`);

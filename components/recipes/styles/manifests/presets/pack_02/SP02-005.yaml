@@ -28,3 +28,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-005.webp
 attributes:
   negativePrompt: studio lighting, stable
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: film-genres
+  categoryName: 1. Film Genres
+  tags:
+    - cinematic-and-media
+    - film-genres
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

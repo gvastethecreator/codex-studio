@@ -27,3 +27,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-078.webp
 attributes:
   negativePrompt: curved, smooth
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: applications
+  categoryName: 4. Applications
+  tags:
+    - 3d-and-cgi-rendering
+    - applications
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

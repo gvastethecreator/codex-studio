@@ -526,6 +526,8 @@ export function useStudioShell(): StudioShellController {
       error: studioSettings.error,
       isLoading: studioSettings.isLoading,
       isSaving: studioSettings.isSaving,
+      providerCapabilities: studioSettings.providerCapabilities,
+      providerRuntimePreflight: studioSettings.providerRuntimePreflight,
       outputSources: studioSettings.outputSources,
       outputSourceFiles: studioSettings.outputSourceFiles,
       isLoadingOutputSources: studioSettings.isLoadingOutputSources,

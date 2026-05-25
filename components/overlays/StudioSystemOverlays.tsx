@@ -59,6 +59,8 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   settingsError,
   isLoadingSettings,
   isSavingSettings,
+  providerCapabilities,
+  providerRuntimePreflight,
   outputSources,
   outputSourceFiles,
   isLoadingOutputSources,
@@ -137,6 +139,8 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
           libraryDir={settingsLibraryDir}
           isLoading={isLoadingSettings}
           isSaving={isSavingSettings}
+          providerCapabilities={providerCapabilities}
+          providerRuntimePreflight={providerRuntimePreflight}
           outputSources={outputSources}
           outputSourceFiles={outputSourceFiles}
           isLoadingOutputSources={isLoadingOutputSources}

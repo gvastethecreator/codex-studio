@@ -97,7 +97,7 @@ bun run dev:server   # Hono API + codex app-server supervisor
 bun run dev:ui       # UI Vite+ (vp dev)
 bun run dev:electron # shell Electron para desarrollo local
 bun run studio:init  # crea biblioteca, SQLite y proyecto default
-bun run styles:split # regenera Style Pack/Preset Manifests desde YAML legacy
+bun run styles:split:legacy # migracion explicita desde YAML legacy hacia manifests granulares
 bun run fmt          # formato con Oxfmt via Vite+
 bun run lint         # lint con Oxlint via Vite+
 bun run check        # formato + lint + type-check unificados via Vite+
@@ -144,7 +144,7 @@ Los packs legacy siguen en `components/recipes/styles/packs/*.yaml`, pero el loa
 - `components/recipes/styles/manifests/packs/*.yaml` — Style Pack Manifests livianos, categorias y referencias.
 - `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` — Style Preset Manifests editables uno por archivo.
 
-Usa `bun run styles:split` cuando un pack legacy cambie. La UI mantiene `STYLE_PACKS` como compat, compuesto desde los manifests granulares.
+Edita los manifests granulares en `components/recipes/styles/manifests/`. `bun run styles:split` se niega a sobrescribirlos desde YAML legacy; usa `bun run styles:split:legacy` solo para migracion explicita. La UI mantiene `STYLE_PACKS` como compat, compuesto desde los manifests granulares.
 
 ## Documentacion recomendada
 

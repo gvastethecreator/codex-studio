@@ -36,3 +36,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-327.webp
 attributes:
   negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+taxonomy:
+  packId: pack_05
+  packName: Anime & Manga Spectrum
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-and-manga-spectrum
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

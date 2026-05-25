@@ -28,3 +28,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-030.webp
 attributes:
   negativePrompt: earth, ground
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: camera-types
+  categoryName: 5. Camera Types
+  tags:
+    - photography-and-realism
+    - camera-types
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -28,3 +28,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-011.webp
 attributes:
   negativePrompt: solid, dry
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: fluid-and-organic
+  categoryName: 2. Fluid & Organic
+  tags:
+    - abstract-and-experimental
+    - fluid-and-organic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

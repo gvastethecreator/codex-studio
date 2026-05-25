@@ -28,3 +28,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-009.webp
 attributes:
   negativePrompt: dark, shadows, black
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: portrait-styles
+  categoryName: 1. Portrait Styles
+  tags:
+    - photography-and-realism
+    - portrait-styles
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

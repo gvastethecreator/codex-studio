@@ -14,10 +14,18 @@ import {
   Upload,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import type { Attachment, ImageGenerationConfig, AspectRatio } from '../../types';
+import type { Attachment, ImageGenerationConfig } from '../../types';
+import { RATIO_MAP } from '../../constants';
+import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
-import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
+import {
+  getRecipeModuleUiModel,
+  getRecipeNumberDefault,
+  getRecipeNumberOptions,
+  getRecipeOptions,
+  getRecipeStringDefault,
+} from './recipeModuleUi';
 
 interface CinematicRecipeProps {
   config: ImageGenerationConfig;
@@ -31,116 +39,32 @@ interface CinematicRecipeProps {
   isGenerating: boolean;
 }
 
+const { module: CINEMATIC_MODULE, defaults: CINEMATIC_DEFAULTS } =
+  getRecipeModuleUiModel('cinematic');
+
 const CONTROL_OPTIONS = {
-  genre: [
-    'Auto-Detect',
-    'Sci-Fi',
-    'Cyberpunk',
-    'Fantasy',
-    'Dark Fantasy',
-    'Horror',
-    'Thriller',
-    'Action',
-    'Adventure',
-    'Drama',
-    'Mystery',
-    'Noir',
-    'Western',
-    'Documentary',
-    'Historical',
-  ],
-  tone: [
-    'Auto-Detect',
-    'Cinematic',
-    'Teal & Orange',
-    'Noir',
-    'Vibrant',
-    'Muted',
-    'High Contrast',
-    'Ethereal',
-    'Gritty',
-    'Melancholic',
-    'Dreamy',
-    'Retro',
-    'Desaturated',
-  ],
-  lighting: [
-    'Auto-Detect',
-    'Soft Window',
-    'Neon',
-    'Practical',
-    'Rembrandt',
-    'Silhouette',
-    'Volumetric Fog',
-    'Studio',
-    'Hard Light',
-  ],
-  time: [
-    'Auto-Detect',
-    'Golden Hour',
-    'Blue Hour',
-    'High Noon',
-    'Midnight',
-    'Dawn',
-    'Dusk',
-    'Overcast',
-  ],
-  weather: [
-    'Auto-Detect',
-    'Clear',
-    'Rain',
-    'Heavy Rain',
-    'Fog',
-    'Mist',
-    'Snow',
-    'Blizzard',
-    'Dust Storm',
-    'Sandstorm',
-    'Haze',
-  ],
-  movement: [
-    'Auto-Detect',
-    'Steadycam',
-    'Handheld',
-    'Drone Flyover',
-    'Dolly Zoom',
-    'Trucking',
-    'Whip Pan',
-    'Static Tripod',
-    'Crane Shot',
-    'POV',
-    'Slow Motion',
-    'Orbit',
-  ],
-  lens: [
-    'Auto-Detect',
-    'Anamorphic',
-    '35mm Standard',
-    '50mm Portrait',
-    '85mm Telephoto',
-    '24mm Wide',
-    '14mm Ultra-Wide',
-    'Macro',
-    'Tilt-Shift',
-    'Vintage Glass',
-    '70mm IMAX',
-  ],
+  genre: getRecipeOptions(CINEMATIC_MODULE, 'genre'),
+  tone: getRecipeOptions(CINEMATIC_MODULE, 'tone'),
+  lighting: getRecipeOptions(CINEMATIC_MODULE, 'lighting'),
+  time: getRecipeOptions(CINEMATIC_MODULE, 'time'),
+  weather: getRecipeOptions(CINEMATIC_MODULE, 'weather'),
+  movement: getRecipeOptions(CINEMATIC_MODULE, 'movement'),
+  lens: getRecipeOptions(CINEMATIC_MODULE, 'lens'),
 };
 
-import { RATIO_MAP } from '../../constants';
+const FRAME_COUNTS = getRecipeNumberOptions(CINEMATIC_MODULE, 'frames');
+const SHOT_TYPES = getRecipeOptions(CINEMATIC_MODULE, 'frameShots');
 
-const FRAME_COUNTS = [3, 6, 9];
-const SHOT_TYPES = [
-  'Auto',
-  'Extreme Wide',
-  'Wide',
-  'Full',
-  'Medium',
-  'Close-Up',
-  'Extreme Close-Up',
-  'POV',
-  'Over the Shoulder',
-];
+const DEFAULT_PARAMS = {
+  frames: getRecipeNumberDefault(CINEMATIC_DEFAULTS, 'frames', 9),
+  genre: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'genre', 'Auto-Detect'),
+  tone: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'tone', 'Auto-Detect'),
+  lighting: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'lighting', 'Auto-Detect'),
+  time: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'time', 'Auto-Detect'),
+  weather: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'weather', 'Auto-Detect'),
+  movement: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'movement', 'Auto-Detect'),
+  lens: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'lens', 'Auto-Detect'),
+};
 
 export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
   config,
@@ -150,17 +74,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
   onGenerate,
   isGenerating,
 }) => {
-  const [params, setParams] = useState({
-    frames: 9,
-    genre: 'Auto-Detect',
-    tone: 'Auto-Detect',
-    lighting: 'Auto-Detect',
-    time: 'Auto-Detect',
-    weather: 'Auto-Detect',
-    movement: 'Auto-Detect',
-    lens: 'Auto-Detect',
-    fx: 'Auto-Detect',
-  });
+  const [params, setParams] = useState(DEFAULT_PARAMS);
 
   const [frameShots, setFrameShots] = useState<Record<number, string>>({});
 

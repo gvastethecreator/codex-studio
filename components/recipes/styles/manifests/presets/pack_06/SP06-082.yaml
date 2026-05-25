@@ -32,3 +32,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-082.webp
 attributes:
   negativePrompt: realistic perspective, 3d rendering, smooth gradients, high resolution, modern graphics, photo textures
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: video-game-and-pixel-art-styles
+  categoryName: 6. Video Game & Pixel Art Styles
+  tags:
+    - essential-art-styles
+    - video-game-and-pixel-art-styles
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

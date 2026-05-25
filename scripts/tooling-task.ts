@@ -7,6 +7,7 @@ type TaskStep = {
   label: string;
   command: string;
   args: string[];
+  appendExtraArgs?: boolean;
   consoleMode?: 'full' | 'tail';
   tailLineCount?: number;
 };
@@ -47,7 +48,14 @@ const LINT_THREADS = resolveLintThreads();
 const TASKS: Record<string, TaskDefinition> = {
   fmt: {
     description: 'Format all supported files with Oxfmt.',
-    steps: [{ label: 'Format', command: 'vp', args: ['fmt', '--threads', String(FMT_THREADS)] }],
+    steps: [
+      {
+        label: 'Format',
+        command: 'vp',
+        args: ['fmt', '--threads', String(FMT_THREADS)],
+        appendExtraArgs: true,
+      },
+    ],
   },
   'fmt:check': {
     description: 'Check formatting without writing files.',
@@ -56,6 +64,7 @@ const TASKS: Record<string, TaskDefinition> = {
         label: 'Format Check',
         command: 'vp',
         args: ['fmt', '--threads', String(FMT_THREADS), '--check'],
+        appendExtraArgs: true,
       },
     ],
   },
@@ -75,15 +84,15 @@ const TASKS: Record<string, TaskDefinition> = {
   },
   check: {
     description: 'Run unified format, lint, and type checks.',
-    steps: [{ label: 'Check', command: 'vp', args: ['check'] }],
+    steps: [{ label: 'Check', command: 'vp', args: ['check'], appendExtraArgs: true }],
   },
   'check:fix': {
     description: 'Apply unified formatting and lint fixes.',
-    steps: [{ label: 'Check Fix', command: 'vp', args: ['check', '--fix'] }],
+    steps: [{ label: 'Check Fix', command: 'vp', args: ['check', '--fix'], appendExtraArgs: true }],
   },
   test: {
     description: 'Run the full unit test suite with Vitest via Vite+.',
-    steps: [{ label: 'Test', command: 'vp', args: ['test', 'run'] }],
+    steps: [{ label: 'Test', command: 'vp', args: ['test', 'run'], appendExtraArgs: true }],
   },
   'test:unit': {
     description: 'Run the focused fast unit suite used in iterative refactors.',
@@ -91,7 +100,14 @@ const TASKS: Record<string, TaskDefinition> = {
   },
   'test:coverage': {
     description: 'Run tests with coverage output.',
-    steps: [{ label: 'Coverage', command: 'vp', args: ['test', 'run', '--coverage'] }],
+    steps: [
+      {
+        label: 'Coverage',
+        command: 'vp',
+        args: ['test', 'run', '--coverage'],
+        appendExtraArgs: true,
+      },
+    ],
   },
   'build:ui': {
     description: 'Build the Vite application through Vite+.',
@@ -233,13 +249,18 @@ function writeConsoleBanner(title: string) {
  * Run one tooling step, mirroring stdout/stderr to both the terminal and the
  * persistent log file used for debugging CI-like local runs.
  */
-async function runStep(step: TaskStep, log: NodeJS.WritableStream) {
+function getStepArgs(step: TaskStep, extraArgs: string[]) {
+  return step.appendExtraArgs ? [...step.args, ...extraArgs] : step.args;
+}
+
+async function runStep(step: TaskStep, log: NodeJS.WritableStream, extraArgs: string[]) {
   const startedAt = performance.now();
-  const printableCommand = `${step.command} ${step.args.join(' ')}`;
+  const stepArgs = getStepArgs(step, extraArgs);
+  const printableCommand = `${step.command} ${stepArgs.join(' ')}`;
   const mirrorOutputToConsole = step.consoleMode !== 'tail';
   const tailCapture = createTailCapture(step.tailLineCount ?? DEFAULT_TAIL_LINE_COUNT);
 
-  writeBanner(log, `${step.label}: ${step.command} ${step.args.join(' ')}`);
+  writeBanner(log, `${step.label}: ${step.command} ${stepArgs.join(' ')}`);
   writeConsoleBanner(`${step.label}: ${printableCommand}`);
 
   if (!mirrorOutputToConsole) {
@@ -248,7 +269,7 @@ async function runStep(step: TaskStep, log: NodeJS.WritableStream) {
     );
   }
 
-  const child = spawn(step.command, step.args, {
+  const child = spawn(step.command, stepArgs, {
     cwd: ROOT_DIR,
     env: process.env,
     shell: false,
@@ -303,7 +324,7 @@ async function runStep(step: TaskStep, log: NodeJS.WritableStream) {
         `${step.label} failed after ${formatDuration(performance.now() - startedAt)}`,
       );
       reject(
-        new Error(`${step.command} ${step.args.join(' ')} exited with code ${code ?? 'unknown'}`),
+        new Error(`${step.command} ${stepArgs.join(' ')} exited with code ${code ?? 'unknown'}`),
       );
     });
   });
@@ -311,12 +332,18 @@ async function runStep(step: TaskStep, log: NodeJS.WritableStream) {
 
 async function main() {
   const taskName = process.argv[2];
+  const extraArgs = process.argv.slice(3);
   if (!taskName || !(taskName in TASKS)) {
     const available = Object.keys(TASKS).sort().join(', ');
     throw new Error(`Unknown tooling task "${taskName ?? ''}". Available tasks: ${available}`);
   }
 
   const task = TASKS[taskName];
+  const acceptsExtraArgs = task.steps.some((step) => step.appendExtraArgs);
+  if (extraArgs.length > 0 && !acceptsExtraArgs) {
+    throw new Error(`Task "${taskName}" does not accept extra arguments: ${extraArgs.join(' ')}`);
+  }
+
   const { runLogPath, latestLogPath } = getLogPaths(taskName);
   const log = createWriteStream(runLogPath, { flags: 'a' });
 
@@ -326,9 +353,12 @@ async function main() {
 
     writeBanner(log, `Task ${taskName}`);
     log.write(`${task.description}\n`);
+    if (extraArgs.length > 0) {
+      log.write(`Extra args: ${extraArgs.join(' ')}\n`);
+    }
 
     for (const step of task.steps) {
-      await runStep(step, log);
+      await runStep(step, log, extraArgs);
     }
 
     writeBanner(log, `Task ${taskName} completed successfully`);

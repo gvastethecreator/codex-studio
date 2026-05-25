@@ -5,11 +5,15 @@ import type {
   EditableStudioSettingsPatch,
   ExternalOutputSourceFile,
   ExternalOutputSourcesResponse,
+  GenerationProviderCapabilitiesResponse,
+  GenerationProviderRuntimePreflightResponse,
   RegisterExternalOutputSourceInput,
 } from '../packages/shared/src';
 import {
   getExternalOutputSources,
   getEditableStudioSettings,
+  getGenerationProviderCapabilities,
+  getGenerationProviderRuntimePreflight,
   importExternalOutputSourceFiles,
   listExternalOutputSourceFiles,
   registerExternalOutputSource,
@@ -26,6 +30,10 @@ export function useStudioSettings({ addToast }: UseStudioSettingsOptions = {}) {
   const [isLoading, setIsLoading] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [outputSources, setOutputSources] = useState<ExternalOutputSourcesResponse | null>(null);
+  const [providerCapabilities, setProviderCapabilities] =
+    useState<GenerationProviderCapabilitiesResponse | null>(null);
+  const [providerRuntimePreflight, setProviderRuntimePreflight] =
+    useState<GenerationProviderRuntimePreflightResponse | null>(null);
   const [outputSourceFiles, setOutputSourceFiles] = useState<
     Record<string, ExternalOutputSourceFile[]>
   >({});
@@ -73,13 +81,22 @@ export function useStudioSettings({ addToast }: UseStudioSettingsOptions = {}) {
     setError(null);
 
     try {
-      const [nextSettings, nextOutputSources] = await Promise.all([
+      const [
+        nextSettings,
+        nextOutputSources,
+        nextProviderCapabilities,
+        nextProviderRuntimePreflight,
+      ] = await Promise.all([
         getEditableStudioSettings(),
         getExternalOutputSources(),
+        getGenerationProviderCapabilities(),
+        getGenerationProviderRuntimePreflight(),
       ]);
       if (isMountedRef.current) {
         setSettings(nextSettings);
         setOutputSources(nextOutputSources);
+        setProviderCapabilities(nextProviderCapabilities);
+        setProviderRuntimePreflight(nextProviderRuntimePreflight);
       }
     } catch (refreshError) {
       const message =
@@ -101,10 +118,17 @@ export function useStudioSettings({ addToast }: UseStudioSettingsOptions = {}) {
 
       try {
         const nextSettings = await updateEditableStudioSettings(patch);
-        const nextOutputSources = await getExternalOutputSources();
+        const [nextOutputSources, nextProviderCapabilities, nextProviderRuntimePreflight] =
+          await Promise.all([
+            getExternalOutputSources(),
+            getGenerationProviderCapabilities(),
+            getGenerationProviderRuntimePreflight(),
+          ]);
         if (isMountedRef.current) {
           setSettings(nextSettings);
           setOutputSources(nextOutputSources);
+          setProviderCapabilities(nextProviderCapabilities);
+          setProviderRuntimePreflight(nextProviderRuntimePreflight);
           addToast?.('Studio Settings saved', 'success');
         }
       } catch (saveError) {
@@ -137,7 +161,9 @@ export function useStudioSettings({ addToast }: UseStudioSettingsOptions = {}) {
         }
       } catch (registerError) {
         const message =
-          registerError instanceof Error ? registerError.message : 'Unable to register output source';
+          registerError instanceof Error
+            ? registerError.message
+            : 'Unable to register output source';
         if (isMountedRef.current) {
           setError(message);
           addToast?.(message, 'error');
@@ -151,28 +177,31 @@ export function useStudioSettings({ addToast }: UseStudioSettingsOptions = {}) {
     [addToast],
   );
 
-  const loadOutputSourceFiles = useCallback(async (sourceId: string) => {
-    setLoadingOutputSourceFiles((current) => ({ ...current, [sourceId]: true }));
-    setError(null);
+  const loadOutputSourceFiles = useCallback(
+    async (sourceId: string) => {
+      setLoadingOutputSourceFiles((current) => ({ ...current, [sourceId]: true }));
+      setError(null);
 
-    try {
-      const response = await listExternalOutputSourceFiles(sourceId, 100);
-      if (isMountedRef.current) {
-        setOutputSourceFiles((current) => ({ ...current, [sourceId]: response.files }));
+      try {
+        const response = await listExternalOutputSourceFiles(sourceId, 100);
+        if (isMountedRef.current) {
+          setOutputSourceFiles((current) => ({ ...current, [sourceId]: response.files }));
+        }
+      } catch (loadError) {
+        const message =
+          loadError instanceof Error ? loadError.message : 'Unable to load output source files';
+        if (isMountedRef.current) {
+          setError(message);
+          addToast?.(message, 'error');
+        }
+      } finally {
+        if (isMountedRef.current) {
+          setLoadingOutputSourceFiles((current) => ({ ...current, [sourceId]: false }));
+        }
       }
-    } catch (loadError) {
-      const message =
-        loadError instanceof Error ? loadError.message : 'Unable to load output source files';
-      if (isMountedRef.current) {
-        setError(message);
-        addToast?.(message, 'error');
-      }
-    } finally {
-      if (isMountedRef.current) {
-        setLoadingOutputSourceFiles((current) => ({ ...current, [sourceId]: false }));
-      }
-    }
-  }, [addToast]);
+    },
+    [addToast],
+  );
 
   const importOutputSourceFiles = useCallback(
     async (sourceId: string, files: string[], workspaceId?: string | null) => {
@@ -219,6 +248,8 @@ export function useStudioSettings({ addToast }: UseStudioSettingsOptions = {}) {
     settings,
     isLoading,
     isSaving,
+    providerCapabilities,
+    providerRuntimePreflight,
     outputSources,
     outputSourceFiles,
     isLoadingOutputSources,

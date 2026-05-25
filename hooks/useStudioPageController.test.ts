@@ -82,6 +82,7 @@ describe('buildStudioPageController', () => {
           meta: 'ChatGPT Pro',
           tooltip: 'Available usage for ChatGPT Pro',
           unitLabel: 'credits',
+          limits: [],
           tone: 'available',
           isLoading: false,
         },
@@ -90,7 +91,7 @@ describe('buildStudioPageController', () => {
       isResettingStudio: false,
     });
 
-    expect(controller.debugPanel.isVisible).toBe(true);
+    expect(controller.debugPanel.isVisible).toBe(false);
     expect(controller.debugPanel.props.imagesCount).toBe(1);
     expect(controller.grid.hasProcessingJobs).toBe(true);
     expect(controller.operations.activeServerJobCount).toBe(1);

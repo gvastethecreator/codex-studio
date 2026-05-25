@@ -3,10 +3,13 @@ import { describe, expect, it } from 'vite-plus/test';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import {
   buildGenerationTaskSpecFromRecipe,
+  createRecipeDefaultParams,
   getRecipeModule,
+  getRecipeParameterOptions,
   isRecipeProviderSupported,
   isRecipeTaskSupported,
   listRecipeModules,
+  validateRecipeParams,
 } from './recipeModules';
 
 describe('recipeModules', () => {
@@ -16,22 +19,55 @@ describe('recipeModules', () => {
     const spritesheet = getRecipeModule('spritesheet');
 
     expect(modules.map((module) => module.id)).toEqual([
+      'styles',
       'remaster',
       'spritesheet',
       'cinematic',
       'character',
-      'styles',
       'camera',
       'timeline',
     ]);
     expect(styles).toMatchObject({
-      title: 'Style Preset',
+      title: 'Styles',
       defaultTask: 'image_generate',
       supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
       supportedProviders: ['codex', 'dry_run'],
     });
     expect(styles?.parameters.map((parameter) => parameter.id)).toContain('presetId');
     expect(spritesheet?.defaultTask).toBe('sprite_sheet');
+    expect(spritesheet && getRecipeParameterOptions(spritesheet, 'grid')).toContain('4x2');
+  });
+
+  it('exposes defaults, controls, and ranges as part of the Recipe Module interface', () => {
+    const remaster = getRecipeModule('remaster');
+    const camera = getRecipeModule('camera');
+
+    expect(remaster && createRecipeDefaultParams(remaster)).toMatchObject({
+      style: 'Realistic Reconstruction',
+      fidelity: 35,
+    });
+    expect(camera?.parameters.find((parameter) => parameter.id === 'azimuth')).toMatchObject({
+      control: 'slider',
+      group: 'orbit',
+      min: -180,
+      max: 180,
+    });
+  });
+
+  it('validates recipe params before building a Generation Task Spec', () => {
+    const camera = getRecipeModule('camera');
+    const spritesheet = getRecipeModule('spritesheet');
+    const styles = getRecipeModule('styles');
+
+    expect(camera && validateRecipeParams(camera, { azimuth: 400 }).errors).toEqual([
+      'Recipe Module camera parameter azimuth is above maximum 180.',
+    ]);
+    expect(spritesheet && validateRecipeParams(spritesheet, { grid: '13x13' }).errors).toEqual([
+      'Recipe Module spritesheet parameter grid has unsupported option: 13x13.',
+    ]);
+    expect(styles && validateRecipeParams(styles, { presetId: 'SP01-001' }).errors).toEqual([
+      'Recipe Module styles requires parameter presetName.',
+    ]);
   });
 
   it('checks task and provider compatibility at the module seam', () => {
@@ -80,10 +116,42 @@ describe('recipeModules', () => {
       },
     });
     expect(spec.metadata.recipeContext).toContain('recipe: camera');
+    expect(spec.metadata.recipeProviderDirectives).toMatchObject({
+      protocol: 'recipe-provider-directives/v1',
+      recipeId: 'camera',
+      title: 'Camera View',
+    });
     expect(spec.metadata.recipeModule).toMatchObject({
       id: 'camera',
       defaultTask: 'image_generate',
       supportedProviders: ['codex', 'dry_run'],
+    });
+  });
+
+  it('adds compact provider directives for style preset specs without dropping legacy context', () => {
+    const spec = buildGenerationTaskSpecFromRecipe({
+      id: 'spec-style',
+      providerId: 'codex',
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'a glass owl on a plinth',
+        recipeId: 'styles',
+        recipeParams: {
+          presetId: 'SP09-006',
+          presetName: 'Glass Owl',
+          mode: 'DIRECT_STYLE_SYNTHESIS',
+          aesthetic: 'polished glass object study',
+          colorTone: 'cool mineral blues',
+        },
+      },
+      task: 'style_preset_card',
+    });
+
+    expect(spec.metadata.recipeContext).toContain('STYLE TRANSFER PROTOCOL');
+    expect(spec.metadata.recipeProviderDirectives).toMatchObject({
+      protocol: 'recipe-provider-directives/v1',
+      recipeId: 'styles',
+      title: 'Styles',
     });
   });
 

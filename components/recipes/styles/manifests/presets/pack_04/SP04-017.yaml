@@ -28,3 +28,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-017.webp
 attributes:
   negativePrompt: digital, sharp
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: children-s-illustration
+  categoryName: 2. Children's Illustration
+  tags:
+    - illustration-and-graphic-novel
+    - children-s-illustration
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

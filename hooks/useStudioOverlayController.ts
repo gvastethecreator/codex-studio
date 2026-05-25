@@ -77,6 +77,8 @@ interface StudioOverlaySettingsContext {
   error: StudioSystemOverlaysProps['settingsError'];
   isLoading: StudioSystemOverlaysProps['isLoadingSettings'];
   isSaving: StudioSystemOverlaysProps['isSavingSettings'];
+  providerCapabilities: StudioSystemOverlaysProps['providerCapabilities'];
+  providerRuntimePreflight: StudioSystemOverlaysProps['providerRuntimePreflight'];
   outputSources: StudioSystemOverlaysProps['outputSources'];
   outputSourceFiles: StudioSystemOverlaysProps['outputSourceFiles'];
   isLoadingOutputSources: StudioSystemOverlaysProps['isLoadingOutputSources'];
@@ -205,6 +207,8 @@ export function buildStudioOverlayController({
       settingsError: settings.error,
       isLoadingSettings: settings.isLoading,
       isSavingSettings: settings.isSaving,
+      providerCapabilities: settings.providerCapabilities,
+      providerRuntimePreflight: settings.providerRuntimePreflight,
       outputSources: settings.outputSources,
       outputSourceFiles: settings.outputSourceFiles,
       isLoadingOutputSources: settings.isLoadingOutputSources,

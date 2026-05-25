@@ -29,3 +29,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-012.webp
 attributes:
   negativePrompt: city, modern, cold
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: environment
+  categoryName: 3. Environment
+  tags:
+    - architecture-and-interior
+    - environment
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

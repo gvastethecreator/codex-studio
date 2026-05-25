@@ -12,9 +12,11 @@ import {
   ChevronLeft,
 } from 'lucide-react';
 import type { ImageGenerationConfig, AspectRatio } from '../../types';
+import { RATIO_MAP } from '../../constants';
+import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown, MinimalColorPicker } from './RecipeUI';
-import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
+import { getRecipeModuleUiModel, getRecipeOptions, getRecipeStringDefault } from './recipeModuleUi';
 
 interface SpritesheetRecipeProps {
   config: ImageGenerationConfig;
@@ -26,31 +28,24 @@ interface SpritesheetRecipeProps {
   isGenerating?: boolean;
 }
 
+const { module: SPRITESHEET_MODULE, defaults: SPRITESHEET_DEFAULTS } =
+  getRecipeModuleUiModel('spritesheet');
+
 const CONTROL_OPTIONS = {
-  view: [
-    'Match Source',
-    'Isometric',
-    'Top Down',
-    'Side Scroll',
-    'Front View',
-    'Back View',
-    '3/4 View',
-  ],
-  style: [
-    'Preserve Style',
-    'Pixel Art (16-bit)',
-    'Pixel Art (32-bit)',
-    'Vector Flat',
-    'Hand Drawn',
-    'Voxel',
-    'Low Poly 3D',
-  ],
-  grid: ['2x2', '3x3', '4x4', '5x5', '6x4', '8x8', '1x6 Strip'],
-  background: ['Dark Grey', 'Black', 'Chroma Green', 'White', 'Checkerboard', 'Custom'],
-  dividers: ['No Dividers', 'Red Lines', 'Blue Lines', 'Black Lines', 'White Lines'],
+  view: getRecipeOptions(SPRITESHEET_MODULE, 'view'),
+  style: getRecipeOptions(SPRITESHEET_MODULE, 'style'),
+  grid: getRecipeOptions(SPRITESHEET_MODULE, 'grid'),
+  background: getRecipeOptions(SPRITESHEET_MODULE, 'background'),
+  dividers: getRecipeOptions(SPRITESHEET_MODULE, 'dividers'),
 };
 
-import { RATIO_MAP } from '../../constants';
+const DEFAULT_PARAMS = {
+  view: getRecipeStringDefault(SPRITESHEET_DEFAULTS, 'view', 'Match Source'),
+  style: getRecipeStringDefault(SPRITESHEET_DEFAULTS, 'style', 'Preserve Style'),
+  grid: getRecipeStringDefault(SPRITESHEET_DEFAULTS, 'grid', '2x2'),
+  background: getRecipeStringDefault(SPRITESHEET_DEFAULTS, 'background', 'Dark Grey'),
+  dividers: getRecipeStringDefault(SPRITESHEET_DEFAULTS, 'dividers', 'No Dividers'),
+};
 
 export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
   config,
@@ -58,13 +53,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
   onGenerate,
   isGenerating = false,
 }) => {
-  const [params, setParams] = useState({
-    view: 'Match Source',
-    style: 'Preserve Style',
-    grid: '2x2',
-    background: 'Dark Grey',
-    dividers: 'No Dividers',
-  });
+  const [params, setParams] = useState(DEFAULT_PARAMS);
 
   const [customColor, setCustomColor] = useState('#3f3f46');
   const [cellPrompts, setCellPrompts] = useState<Record<number, string>>({});

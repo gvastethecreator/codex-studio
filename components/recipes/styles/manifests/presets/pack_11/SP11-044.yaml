@@ -27,3 +27,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-044.webp
 attributes:
   negativePrompt: subtle
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: aesthetics
+  categoryName: 4. Aesthetics
+  tags:
+    - miscellaneous-and-fun
+    - aesthetics
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

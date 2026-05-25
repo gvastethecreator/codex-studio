@@ -33,3 +33,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-086.webp
 attributes:
   negativePrompt: beautiful, handsome, elegant, proportional, realistic anatomy, symmetrical, polished
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: caricature-and-cartoon-styles
+  categoryName: 6. Caricature & Cartoon Styles
+  tags:
+    - cinematic-and-media
+    - caricature-and-cartoon-styles
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

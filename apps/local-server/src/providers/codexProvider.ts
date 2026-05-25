@@ -1,26 +1,16 @@
 import {
   createCompiledProviderInput,
   createGenerationTaskSpec,
-  createProviderSessionContract,
+  isRecipeProviderDirectives,
+  serializeRecipeProviderDirectives,
   type CompiledProviderInput,
   type GenerationTaskSpec,
 } from '../../../../packages/shared/src';
+import { CODEX_IMAGEGEN_SESSION_CONTRACT } from '../codex/imagegenContract';
 import type { CodexTurn } from '../codex/turn';
 import type { GenerationProvider, GenerationProviderJob } from './types';
 
 export type CodexImagegenCompiledInput = CompiledProviderInput<{ text: string }>;
-
-export const CODEX_IMAGEGEN_SESSION_CONTRACT = createProviderSessionContract({
-  id: 'codex-imagegen-v1',
-  providerId: 'codex',
-  stableInstructions: [
-    'Use the provided imagegen skill.',
-    'Generate exactly one image for the current job.',
-    'Save or expose the resulting image so Codex Studio can import it.',
-    'Report the exact local file path when available.',
-  ],
-  outputRules: ['No text, labels, logos, watermark, or UI unless explicitly requested.'],
-});
 
 export function compileCodexImagegenInput(job: GenerationProviderJob): CodexImagegenCompiledInput {
   const sourceSpec =
@@ -45,9 +35,16 @@ export function compileCodexImagegenInput(job: GenerationProviderJob): CodexImag
 
 function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
   const parts = [`Task: ${sourceSpec.task}`, '', 'Prompt:', sourceSpec.prompt];
+  const recipeProviderDirectives = sourceSpec.metadata.recipeProviderDirectives;
   const recipeContext = sourceSpec.metadata.recipeContext;
 
-  if (typeof recipeContext === 'string' && recipeContext.trim()) {
+  if (isRecipeProviderDirectives(recipeProviderDirectives)) {
+    parts.push(
+      '',
+      'Recipe directives:',
+      serializeRecipeProviderDirectives(recipeProviderDirectives),
+    );
+  } else if (typeof recipeContext === 'string' && recipeContext.trim()) {
     parts.push('', 'Recipe instructions:', recipeContext.trim());
   }
 

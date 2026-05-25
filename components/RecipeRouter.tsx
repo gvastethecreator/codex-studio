@@ -1,20 +1,38 @@
 import React from 'react';
 import { ErrorBoundary } from './ErrorBoundary';
 
-import { RemasterRecipe } from './recipes/RemasterRecipe';
-import { SpritesheetRecipe } from './recipes/SpritesheetRecipe';
-import { CinematicRecipe } from './recipes/CinematicRecipe';
-import { CharacterSheetRecipe } from './recipes/CharacterSheetRecipe';
-import { StylesRecipe } from './recipes/StylesRecipe';
-import { CameraAnglesRecipe } from './recipes/CameraAnglesRecipe';
-import { TimelineRecipe } from './recipes/TimelineRecipe';
-
 import type {
   ImageGenerationConfig,
   GeneratedImageWithConfig,
   Attachment,
   RecipeId,
 } from '../types';
+
+const RemasterRecipe = React.lazy(() =>
+  import('./recipes/RemasterRecipe').then((module) => ({ default: module.RemasterRecipe })),
+);
+const SpritesheetRecipe = React.lazy(() =>
+  import('./recipes/SpritesheetRecipe').then((module) => ({ default: module.SpritesheetRecipe })),
+);
+const CinematicRecipe = React.lazy(() =>
+  import('./recipes/CinematicRecipe').then((module) => ({ default: module.CinematicRecipe })),
+);
+const CharacterSheetRecipe = React.lazy(() =>
+  import('./recipes/CharacterSheetRecipe').then((module) => ({
+    default: module.CharacterSheetRecipe,
+  })),
+);
+const StylesRecipe = React.lazy(() =>
+  import('./recipes/StylesRecipe').then((module) => ({ default: module.StylesRecipe })),
+);
+const CameraAnglesRecipe = React.lazy(() =>
+  import('./recipes/CameraAnglesRecipe').then((module) => ({
+    default: module.CameraAnglesRecipe,
+  })),
+);
+const TimelineRecipe = React.lazy(() =>
+  import('./recipes/TimelineRecipe').then((module) => ({ default: module.TimelineRecipe })),
+);
 
 interface RecipeRouterProps {
   activeRecipe: RecipeId | null;
@@ -36,6 +54,12 @@ interface RecipeRouterProps {
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
 }
 
+const RecipeLoadingSurface: React.FC = () => (
+  <div className="flex h-full min-h-[420px] items-center justify-center text-[10px] font-black uppercase tracking-widest text-zinc-500">
+    Loading recipe
+  </div>
+);
+
 export const RecipeRouter: React.FC<RecipeRouterProps> = ({
   activeRecipe,
   generationConfig,
@@ -52,80 +76,82 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
 
   return (
     <ErrorBoundary fallbackMessage="A critical error occurred while rendering this recipe.">
-      {activeRecipe === 'styles' && (
-        <StylesRecipe
-          config={generationConfig}
-          updateConfig={updateGenerationConfig}
-          updateAttachment={updateAttachment}
-          onFileSelect={handlePastedFiles}
-          onGenerate={handleGenerate}
-          isGenerating={isGenerating}
-          images={imagesWithConfig}
-          onOpenImage={openModal}
-        />
-      )}
-      {activeRecipe === 'remaster' && (
-        <RemasterRecipe
-          config={generationConfig}
-          updateConfig={updateGenerationConfig}
-          updateAttachment={updateAttachment}
-          onFileSelect={handlePastedFiles}
-          onGenerate={handleGenerate}
-          isGenerating={isGenerating}
-        />
-      )}
-      {activeRecipe === 'camera' && (
-        <CameraAnglesRecipe
-          config={generationConfig}
-          updateConfig={updateGenerationConfig}
-          updateAttachment={updateAttachment}
-          onFileSelect={handlePastedFiles}
-          onGenerate={(prompt) => handleGenerate(prompt, undefined, { preventModal: true })}
-          isGenerating={isGenerating}
-          images={imagesWithConfig}
-          onSelectImage={openModal}
-        />
-      )}
-      {activeRecipe === 'timeline' && (
-        <TimelineRecipe
-          config={generationConfig}
-          updateConfig={updateGenerationConfig}
-          updateAttachment={updateAttachment}
-          onFileSelect={handlePastedFiles}
-          onGenerate={(prompt) => handleGenerate(prompt, undefined, { preventModal: true })}
-          isGenerating={isGenerating}
-          images={imagesWithConfig}
-          onSelectImage={(img) => handleAddToContext(img)}
-        />
-      )}
-      {activeRecipe === 'spritesheet' && (
-        <SpritesheetRecipe
-          config={generationConfig}
-          updateConfig={updateGenerationConfig}
-          onGenerate={handleGenerate}
-          isGenerating={isGenerating}
-        />
-      )}
-      {activeRecipe === 'cinematic' && (
-        <CinematicRecipe
-          config={generationConfig}
-          updateConfig={updateGenerationConfig}
-          updateAttachment={updateAttachment}
-          onFileSelect={handlePastedFiles}
-          onGenerate={handleGenerate}
-          isGenerating={isGenerating}
-        />
-      )}
-      {activeRecipe === 'character' && (
-        <CharacterSheetRecipe
-          config={generationConfig}
-          updateConfig={updateGenerationConfig}
-          updateAttachment={updateAttachment}
-          onFileSelect={handlePastedFiles}
-          onGenerate={handleGenerate}
-          isGenerating={isGenerating}
-        />
-      )}
+      <React.Suspense fallback={<RecipeLoadingSurface />}>
+        {activeRecipe === 'styles' && (
+          <StylesRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
+            updateAttachment={updateAttachment}
+            onFileSelect={handlePastedFiles}
+            onGenerate={handleGenerate}
+            isGenerating={isGenerating}
+            images={imagesWithConfig}
+            onOpenImage={openModal}
+          />
+        )}
+        {activeRecipe === 'remaster' && (
+          <RemasterRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
+            updateAttachment={updateAttachment}
+            onFileSelect={handlePastedFiles}
+            onGenerate={handleGenerate}
+            isGenerating={isGenerating}
+          />
+        )}
+        {activeRecipe === 'camera' && (
+          <CameraAnglesRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
+            updateAttachment={updateAttachment}
+            onFileSelect={handlePastedFiles}
+            onGenerate={(prompt) => handleGenerate(prompt, undefined, { preventModal: true })}
+            isGenerating={isGenerating}
+            images={imagesWithConfig}
+            onSelectImage={openModal}
+          />
+        )}
+        {activeRecipe === 'timeline' && (
+          <TimelineRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
+            updateAttachment={updateAttachment}
+            onFileSelect={handlePastedFiles}
+            onGenerate={(prompt) => handleGenerate(prompt, undefined, { preventModal: true })}
+            isGenerating={isGenerating}
+            images={imagesWithConfig}
+            onSelectImage={(img) => handleAddToContext(img)}
+          />
+        )}
+        {activeRecipe === 'spritesheet' && (
+          <SpritesheetRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
+            onGenerate={handleGenerate}
+            isGenerating={isGenerating}
+          />
+        )}
+        {activeRecipe === 'cinematic' && (
+          <CinematicRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
+            updateAttachment={updateAttachment}
+            onFileSelect={handlePastedFiles}
+            onGenerate={handleGenerate}
+            isGenerating={isGenerating}
+          />
+        )}
+        {activeRecipe === 'character' && (
+          <CharacterSheetRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
+            updateAttachment={updateAttachment}
+            onFileSelect={handlePastedFiles}
+            onGenerate={handleGenerate}
+            isGenerating={isGenerating}
+          />
+        )}
+      </React.Suspense>
     </ErrorBoundary>
   );
 };

@@ -40,11 +40,21 @@ import {
 } from '../../lib/recipeAssetCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
-import { STYLE_PACKS, StylePresetDef } from './stylesData';
+import {
+  STYLE_PACKS,
+  STYLE_PRESET_BY_ID,
+  STYLE_PRESET_PACK_ID_BY_ID,
+  type StylePresetDef,
+} from './stylesData';
+import type { StylePresetCatalogSearchResult } from './stylePresetManifests';
 import { RecipeLayout } from './RecipeLayout';
 import Slider from '../ui/Slider';
 import Tooltip from '../Tooltip';
 import { FloatingTooltip } from '../ui/FloatingTooltip';
+import {
+  estimateStyleGroupPlaceholderHeight,
+  getVisibleStylePresets,
+} from './styleGridVirtualization';
 
 interface StylesRecipeProps {
   config: ImageGenerationConfig;
@@ -61,6 +71,15 @@ interface StylesRecipeProps {
 }
 
 const FAVORITES_PACK_ID = 'favorites';
+const STYLE_CATEGORY_INITIAL_RENDER_LIMIT = 4;
+const STYLE_GROUP_INITIAL_RENDER_LIMIT = 16;
+const STYLE_GROUP_VIEWPORT_ROOT_MARGIN = '900px 0px';
+
+const StylePresetCatalogSearchSurface = React.lazy(() =>
+  import('./StylePresetCatalogSearchSurface').then((module) => ({
+    default: module.StylePresetCatalogSearchSurface,
+  })),
+);
 
 // Color mapping for each pack to give them distinct identities
 const PACK_THEMES: Record<string, { color: string; bg: string; border: string; text: string }> = {
@@ -175,6 +194,24 @@ interface StylePresetCardProps {
   onHoverPreviewChange: (preview: StyleCardHoverPreview | null) => void;
 }
 
+interface StylePresetGroupSectionProps {
+  groupKey: string;
+  title: string;
+  presets: StylePresetDef[];
+  expanded: boolean;
+  gridColumns: number;
+  scrollRootRef: React.RefObject<HTMLDivElement | null>;
+  scrollContainerWidth: number;
+  initiallyVisible: boolean;
+  headerClassName: string;
+  accentClassName: string;
+  titleClassName: string;
+  dividerClassName: string;
+  showMoreClassName: string;
+  renderPresetCard: (preset: StylePresetDef) => React.ReactNode;
+  onShowAll: (groupKey: string) => void;
+}
+
 const StylePresetCard = React.memo(
   ({
     preset,
@@ -260,7 +297,7 @@ const StylePresetCard = React.memo(
           >
             <img
               src={activeResultImage.thumbnail || activeResultImage.src}
-              className="h-full w-full object-cover transition-transform duration-700 group-hover/image:scale-110"
+              className="style-preset-thumbnail h-full w-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02]"
               alt={preset.name}
             />
             <div className="absolute inset-0 bg-black/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
@@ -271,7 +308,7 @@ const StylePresetCard = React.memo(
             </div>
 
             {hasMultipleResults && (
-              <div className="absolute left-2 right-2 top-2 flex items-center justify-between gap-2 opacity-0 transition-opacity group-hover/image:opacity-100 z-20">
+              <div className="absolute left-2 right-12 top-2 z-20 flex items-center justify-between gap-2 opacity-0 transition-opacity group-hover/image:opacity-100">
                 <button
                   type="button"
                   onClick={(e) => {
@@ -300,7 +337,7 @@ const StylePresetCard = React.memo(
               </div>
             )}
 
-            <div className="absolute right-2 top-2 flex gap-1 opacity-0 transition-opacity group-hover/image:opacity-100 z-20">
+            <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover/image:opacity-100">
               <button
                 onClick={(e) => {
                   e.stopPropagation();
@@ -325,10 +362,10 @@ const StylePresetCard = React.memo(
           >
             <img
               src={visualState.defaultImage}
-              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+              className="style-preset-thumbnail h-full w-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-100 group-hover:brightness-[1.02] group-hover:saturate-[1.02]"
               alt={preset.name}
             />
-            <div className="absolute right-2 top-2 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100 z-20">
+            <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100">
               <div className="rounded-lg border border-white/10 bg-black/60 p-1.5 text-white shadow-lg backdrop-blur-md">
                 <RefreshCw size={14} />
               </div>
@@ -346,13 +383,13 @@ const StylePresetCard = React.memo(
           >
             <img
               src={visualState.previewImage}
-              className="h-full w-full object-cover opacity-75 saturate-[0.9] transition-all duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:saturate-100"
+              className="style-preset-thumbnail h-full w-full object-cover opacity-75 saturate-[0.9] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-[0.94] group-hover:brightness-[1.01] group-hover:saturate-100"
               alt=""
             />
-            <div className="absolute inset-0 bg-black/15 transition-colors group-hover:bg-black/5" />
+            <div className="absolute inset-0 bg-black/15 transition-colors group-hover:bg-black/8" />
             <div className="absolute inset-0 flex translate-y-2 flex-col items-center justify-center gap-3 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
               <div
-                className={`flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white backdrop-blur-md transition-transform duration-300 group-hover:scale-110 shadow-xl ${theme.text}`}
+                className={`flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white shadow-xl backdrop-blur-md transition-colors duration-300 group-hover:bg-black/62 ${theme.text}`}
               >
                 <Palette size={24} />
               </div>
@@ -371,7 +408,7 @@ const StylePresetCard = React.memo(
           className="absolute inset-0 flex h-full w-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
         >
           <div
-            className={`flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-transform duration-300 group-hover:scale-110 ${theme.text}`}
+            className={`flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
           >
             <Palette size={24} />
           </div>
@@ -414,16 +451,32 @@ const StylePresetCard = React.memo(
             isHoveredRef.current = false;
             onHoverPreviewChange(null);
           }}
-          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-all duration-300 ${
-            active
-              ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} shadow-2xl scale-[1.02]`
-              : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:-translate-y-1 hover:shadow-xl'
-          }`}
+          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${active
+            ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
+            : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
+            }`}
         >
           <div className="absolute inset-0 overflow-hidden bg-black">{renderResultButton()}</div>
 
-          <div className="absolute inset-x-0 bottom-0 z-20 p-3">
-            <div className="rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-left shadow-[0_10px_30px_rgba(0,0,0,0.35)] backdrop-blur-md">
+          <div className="absolute right-2 top-2 z-30">
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onToggleFavorite(preset.id);
+              }}
+              className={`rounded-full border border-white/10 p-1.5 backdrop-blur-md transition-all duration-300 ${favorite ? 'bg-black/60 text-rose-500' : 'bg-black/35 text-zinc-500 hover:bg-black/60 hover:text-rose-400'}`}
+              title={favorite ? 'Unpin' : 'Pin to top'}
+            >
+              <Heart
+                size={14}
+                fill={favorite ? 'currentColor' : 'none'}
+                strokeWidth={favorite ? 0 : 2}
+              />
+            </button>
+          </div>
+
+          <div className="absolute inset-x-0 bottom-0 z-20 px-3 pt-4 pb-0">
+            <div className="rounded-t-xl rounded-b-none border border-white/10 border-b-0 bg-black/34 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md">
               <div
                 onClick={() => !isGenerating && onApply(preset)}
                 className={`flex flex-col justify-center ${!isGenerating ? 'cursor-pointer' : ''}`}
@@ -458,23 +511,6 @@ const StylePresetCard = React.memo(
                 </button>
               </div>
 
-              <div className="absolute left-2 top-2">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onToggleFavorite(preset.id);
-                  }}
-                  className={`rounded-full p-1.5 transition-all duration-300 ${favorite ? 'bg-black/40 text-rose-500' : 'bg-transparent text-zinc-600 hover:bg-black/40 hover:text-rose-400'}`}
-                  title={favorite ? 'Unpin' : 'Pin to top'}
-                >
-                  <Heart
-                    size={14}
-                    fill={favorite ? 'currentColor' : 'none'}
-                    strokeWidth={favorite ? 0 : 2}
-                  />
-                </button>
-              </div>
-
               {active && (
                 <div
                   className={`absolute top-0 right-0 h-0.5 w-full ${theme.bg} shadow-[0_0_10px_currentColor]`}
@@ -484,6 +520,103 @@ const StylePresetCard = React.memo(
           </div>
         </div>
       </FloatingTooltip>
+    );
+  },
+);
+
+const StylePresetGroupSection = React.memo(
+  ({
+    groupKey,
+    title,
+    presets,
+    expanded,
+    gridColumns,
+    scrollRootRef,
+    scrollContainerWidth,
+    initiallyVisible,
+    headerClassName,
+    accentClassName,
+    titleClassName,
+    dividerClassName,
+    showMoreClassName,
+    renderPresetCard,
+    onShowAll,
+  }: StylePresetGroupSectionProps) => {
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const [isNearViewport, setIsNearViewport] = useState(initiallyVisible);
+    const visiblePresets = useMemo(
+      () => getVisibleStylePresets(presets, expanded, STYLE_GROUP_INITIAL_RENDER_LIMIT),
+      [expanded, presets],
+    );
+    const hiddenPresetCount = expanded ? 0 : presets.length - visiblePresets.length;
+    const placeholderHeight = estimateStyleGroupPlaceholderHeight({
+      renderedPresetCount: visiblePresets.length,
+      gridColumns,
+      containerWidth: scrollContainerWidth,
+      hasShowMore: hiddenPresetCount > 0,
+    });
+
+    useEffect(() => {
+      const node = sectionRef.current;
+      const root = scrollRootRef.current;
+      if (!node || typeof IntersectionObserver === 'undefined') {
+        setIsNearViewport(true);
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsNearViewport(Boolean(entry?.isIntersecting));
+        },
+        {
+          root,
+          rootMargin: STYLE_GROUP_VIEWPORT_ROOT_MARGIN,
+        },
+      );
+
+      observer.observe(node);
+      return () => observer.disconnect();
+    }, [scrollRootRef]);
+
+    return (
+      <div
+        ref={sectionRef}
+        className="animate-in fade-in slide-in-from-bottom-4 duration-500"
+        style={isNearViewport ? undefined : { minHeight: placeholderHeight }}
+      >
+        <div
+          className={`flex items-center gap-3 mb-4 sticky top-0 backdrop-blur-xl py-2 z-10 ${headerClassName}`}
+        >
+          <div className={`w-1 h-4 rounded-full ${accentClassName}`} />
+          <h3 className={`text-[10px] font-black uppercase tracking-[0.2em] ${titleClassName}`}>
+            {title}
+          </h3>
+          <div className={`h-px flex-1 ${dividerClassName}`} />
+        </div>
+
+        {isNearViewport ? (
+          <>
+            <div
+              className="grid gap-4"
+              style={{ gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))` }}
+            >
+              {visiblePresets.map(renderPresetCard)}
+            </div>
+            {hiddenPresetCount > 0 && (
+              <button onClick={() => onShowAll(groupKey)} className={showMoreClassName}>
+                <ChevronRight size={14} />
+                Show {hiddenPresetCount} more
+              </button>
+            )}
+          </>
+        ) : (
+          <div
+            aria-hidden="true"
+            className="rounded-2xl border border-white/5 bg-black/20"
+            style={{ height: Math.max(120, placeholderHeight - 40) }}
+          />
+        )}
+      </div>
     );
   },
 );
@@ -605,8 +738,13 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
   const [sortOrder, setSortOrder] = useState<'az' | 'za'>('az');
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+  const [isCatalogSearchOpen, setIsCatalogSearchOpen] = useState(false);
   const [favorites, setFavorites] = useLocalStorage<string[]>('style-favorites', []);
   const [gridColumns, setGridColumns] = useLocalStorage<number>('styles-grid-columns', 4);
+  const styleScrollRootRef = useRef<HTMLDivElement>(null);
+  const [styleScrollWidth, setStyleScrollWidth] = useState(0);
+  const [expandedStyleGroups, setExpandedStyleGroups] = useState<Set<string>>(new Set());
+  const [showAllStyleCategories, setShowAllStyleCategories] = useState(false);
 
   // Style Influence (Default 80%)
   const [styleStrength, setStyleStrength] = useState(0.8);
@@ -619,6 +757,22 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     },
     [setFavorites],
   );
+
+  const showAllStylesInGroup = useCallback((groupKey: string) => {
+    setExpandedStyleGroups((current) => new Set(current).add(groupKey));
+  }, []);
+
+  useEffect(() => {
+    const node = styleScrollRootRef.current;
+    if (!node || typeof ResizeObserver === 'undefined') return;
+
+    const updateWidth = () => setStyleScrollWidth(node.clientWidth);
+    updateWidth();
+
+    const observer = new ResizeObserver(updateWidth);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   // Force strength to 0.15 (15%) by default ONLY ONCE per new image
   useEffect(() => {
@@ -664,13 +818,19 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const activeTheme = PACK_THEMES[currentPackId] || PACK_THEMES['pack_01'];
   const resolvedHoveredPresetPreview = hoveredPresetPreview ?? lastHoveredPresetPreview;
 
+  const favoritePresets = useMemo(
+    () =>
+      favorites.flatMap((presetId) => {
+        const preset = STYLE_PRESET_BY_ID.get(presetId);
+        return preset ? [preset] : [];
+      }),
+    [favorites],
+  );
+
   const getPackIdForPreset = React.useCallback(
     (preset: StylePresetDef) => {
       if (currentPackId !== FAVORITES_PACK_ID) return currentPackId;
-      return (
-        STYLE_PACKS.find((pack) => pack.presets.some((candidate) => candidate.id === preset.id))
-          ?.id || activePack.id
-      );
+      return STYLE_PRESET_PACK_ID_BY_ID.get(preset.id) || activePack.id;
     },
     [activePack.id, currentPackId],
   );
@@ -679,11 +839,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const stateMap = new Map<string, StylePresetVisualState>();
 
     const visiblePresets =
-      currentPackId === FAVORITES_PACK_ID
-        ? STYLE_PACKS.flatMap((pack) =>
-            pack.presets.filter((preset) => favorites.includes(preset.id)),
-          )
-        : activePack.presets || [];
+      currentPackId === FAVORITES_PACK_ID ? favoritePresets : activePack.presets || [];
 
     visiblePresets.forEach((preset) => {
       const presetPackId = getPackIdForPreset(preset);
@@ -714,7 +870,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     });
 
     return stateMap;
-  }, [activePack, currentPackId, favorites, getPackIdForPreset, images]);
+  }, [activePack, currentPackId, favoritePresets, getPackIdForPreset, images]);
 
   useEffect(() => {
     const sources = new Set<string>();
@@ -733,19 +889,17 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     setHoveredPresetPreview(null);
   }, [currentPackId, searchQuery, sortOrder, showFavoritesOnly]);
 
+  useEffect(() => {
+    setExpandedStyleGroups(new Set());
+    setShowAllStyleCategories(false);
+  }, [currentPackId, searchQuery, sortOrder, showFavoritesOnly]);
+
   // Enhanced Grouping Logic with Search, Sort, and Favorites Bubbling
   const processedData = useMemo(() => {
     let rawPresets: StylePresetDef[] = [];
 
     if (currentPackId === FAVORITES_PACK_ID) {
-      // Aggregate ALL favorites from ALL packs
-      STYLE_PACKS.forEach((pack) => {
-        pack.presets.forEach((p) => {
-          if (favorites.includes(p.id)) {
-            rawPresets.push(p);
-          }
-        });
-      });
+      rawPresets = favoritePresets;
     } else {
       rawPresets = activePack.presets || [];
     }
@@ -800,7 +954,30 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     }
 
     return { favorites: favs, groups };
-  }, [activePack, currentPackId, searchQuery, sortOrder, favorites, showFavoritesOnly]);
+  }, [
+    activePack,
+    currentPackId,
+    favoritePresets,
+    searchQuery,
+    sortOrder,
+    favorites,
+    showFavoritesOnly,
+  ]);
+
+  const styleGroupEntries = useMemo(
+    () => Object.entries(processedData.groups) as [string, StylePresetDef[]][],
+    [processedData.groups],
+  );
+  const visibleStyleGroupEntries = showAllStyleCategories
+    ? styleGroupEntries
+    : styleGroupEntries.slice(0, STYLE_CATEGORY_INITIAL_RENDER_LIMIT);
+  const hiddenStyleGroupEntries = showAllStyleCategories
+    ? []
+    : styleGroupEntries.slice(STYLE_CATEGORY_INITIAL_RENDER_LIMIT);
+  const hiddenStylePresetCount = hiddenStyleGroupEntries.reduce(
+    (total, [, presets]) => total + presets.length,
+    0,
+  );
 
   const handleApplyStyle = async (preset: StylePresetDef) => {
     if (isGenerating) return;
@@ -933,6 +1110,27 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         ? `${config.negativePrompt}, ${presetNegative}`
         : presetNegative,
     });
+  };
+
+  const handleSelectCatalogPreset = (result: StylePresetCatalogSearchResult) => {
+    startViewTransition(() => {
+      setCurrentPackId(result.packId);
+      setSearchQuery(result.name);
+      setActivePresetId(result.id);
+      setShowAllStyleCategories(true);
+      setExpandedStyleGroups(new Set([result.categoryName]));
+    });
+    setIsCatalogSearchOpen(false);
+  };
+
+  const handleApplyCatalogPreset = (result: StylePresetCatalogSearchResult) => {
+    const preset = STYLE_PRESET_BY_ID.get(result.id);
+    if (!preset) return;
+
+    setCurrentPackId(result.packId);
+    setActivePresetId(result.id);
+    setIsCatalogSearchOpen(false);
+    void handleApplyStyle(preset);
   };
 
   const handleCopyStylePrompt = (e: React.MouseEvent, preset: StylePresetDef) => {
@@ -1196,11 +1394,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             }}
             className={`
                   group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                    ${
-                      currentPackId === FAVORITES_PACK_ID
-                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-                    }
+                    ${currentPackId === FAVORITES_PACK_ID
+                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+              }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -1227,11 +1424,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 }}
                 className={`
                       group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                            ${
-                              isActive
-                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                            }
+                            ${isActive
+                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                  }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>
@@ -1282,6 +1478,15 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             <div className="h-6 w-px bg-white/5" />
 
             <button
+              onClick={() => setIsCatalogSearchOpen(true)}
+              className="flex h-8 items-center gap-2 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
+              title="Open Style Catalog"
+            >
+              <BookOpen size={15} />
+              Catalog
+            </button>
+
+            <button
               onClick={() => setSortOrder((prev) => (prev === 'az' ? 'za' : 'az'))}
               className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors"
               title={sortOrder === 'az' ? 'Sort A-Z' : 'Sort Z-A'}
@@ -1324,48 +1529,64 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         </div>
 
         {/* The Grid - Grouped by Category */}
-        <div className="flex-1 overflow-y-auto custom-scrollbar px-8 pb-12 pt-4">
+        <div
+          ref={styleScrollRootRef}
+          className="flex-1 overflow-y-auto custom-scrollbar px-8 pb-12 pt-4"
+        >
           <div className="w-full pb-20 space-y-10">
             {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
             {processedData.favorites.length > 0 && currentPackId !== FAVORITES_PACK_ID && (
-              <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-                <div className="flex items-center gap-3 mb-4 opacity-100 sticky top-0 backdrop-blur-xl py-2 z-10">
-                  <div className="w-1 h-4 rounded-full bg-rose-500" />
-                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-rose-400">
-                    Pinned / Favorites
-                  </h3>
-                  <div className="h-px flex-1 bg-linear-to-r from-rose-500/20 to-transparent" />
-                </div>
-                <div
-                  className="grid gap-4"
-                  style={{ gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))` }}
-                >
-                  {processedData.favorites.map(renderPresetCard)}
-                </div>
-              </div>
+              <StylePresetGroupSection
+                groupKey="favorites"
+                title="Pinned / Favorites"
+                presets={processedData.favorites}
+                expanded={expandedStyleGroups.has('favorites')}
+                gridColumns={gridColumns}
+                scrollRootRef={styleScrollRootRef}
+                scrollContainerWidth={styleScrollWidth}
+                initiallyVisible
+                headerClassName="opacity-100"
+                accentClassName="bg-rose-500"
+                titleClassName="text-rose-400"
+                dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
+                showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-rose-500/20 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-300 transition-colors hover:bg-rose-500/20"
+                renderPresetCard={renderPresetCard}
+                onShowAll={showAllStylesInGroup}
+              />
             )}
 
             {/* OTHER CATEGORIES */}
-            {Object.entries(processedData.groups).map(([category, presets]) => (
-              <div
+            {visibleStyleGroupEntries.map(([category, presets], index) => (
+              <StylePresetGroupSection
                 key={category}
-                className="animate-in fade-in slide-in-from-bottom-4 duration-500"
-              >
-                <div className="flex items-center gap-3 mb-4 opacity-60 sticky top-0 backdrop-blur-xl py-2 z-10">
-                  <div className={`w-1 h-4 rounded-full ${activeTheme.bg}`} />
-                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-300">
-                    {category}
-                  </h3>
-                  <div className="h-px flex-1 bg-white/10" />
-                </div>
-                <div
-                  className="grid gap-4"
-                  style={{ gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))` }}
-                >
-                  {(presets as StylePresetDef[]).map(renderPresetCard)}
-                </div>
-              </div>
+                groupKey={category}
+                title={category}
+                presets={presets}
+                expanded={expandedStyleGroups.has(category)}
+                gridColumns={gridColumns}
+                scrollRootRef={styleScrollRootRef}
+                scrollContainerWidth={styleScrollWidth}
+                initiallyVisible={index === 0 && processedData.favorites.length === 0}
+                headerClassName="opacity-60"
+                accentClassName={activeTheme.bg}
+                titleClassName="text-zinc-300"
+                dividerClassName="bg-white/10"
+                showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                renderPresetCard={renderPresetCard}
+                onShowAll={showAllStylesInGroup}
+              />
             ))}
+
+            {hiddenStyleGroupEntries.length > 0 && (
+              <button
+                onClick={() => setShowAllStyleCategories(true)}
+                className="flex h-10 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+              >
+                <ChevronRight size={14} />
+                Show {hiddenStyleGroupEntries.length} more categories ({hiddenStylePresetCount}{' '}
+                styles)
+              </button>
+            )}
 
             {processedData.favorites.length === 0 &&
               Object.keys(processedData.groups).length === 0 && (
@@ -1378,6 +1599,22 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               )}
           </div>
         </div>
+
+        {isCatalogSearchOpen && (
+          <React.Suspense
+            fallback={
+              <div className="absolute inset-0 z-40 flex items-center justify-center bg-black/86 text-[10px] font-black uppercase tracking-widest text-zinc-500 backdrop-blur-xl">
+                Loading catalog
+              </div>
+            }
+          >
+            <StylePresetCatalogSearchSurface
+              onClose={() => setIsCatalogSearchOpen(false)}
+              onSelectPreset={handleSelectCatalogPreset}
+              onApplyPreset={handleApplyCatalogPreset}
+            />
+          </React.Suspense>
+        )}
       </div>
     </RecipeLayout>
   );

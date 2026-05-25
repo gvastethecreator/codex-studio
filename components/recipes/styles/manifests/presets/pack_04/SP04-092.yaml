@@ -34,3 +34,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-092.webp
 attributes:
   negativePrompt: finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: concept-art
+  categoryName: 4. Concept Art
+  tags:
+    - illustration-and-graphic-novel
+    - concept-art
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -5,6 +5,7 @@ import { log } from '../logger';
 import { resolvePlatformPath } from '../platformPaths';
 import { createAssetExtractor, type AssetExtractor } from './assetExtractor';
 import { resolveJobExecutionOptions } from './executionOptions';
+import { buildCodexImagegenFallbackPrompt } from './imagegenContract';
 import {
   closeImagegenSession,
   getImagegenSession,
@@ -164,12 +165,7 @@ async function runCodexImagegenTurn(
         { type: 'skill', name: 'imagegen', path: dependencies.imagegenSkillPath },
         {
           type: 'text',
-          text:
-            job.compiledInput?.payload.text ??
-            ('Generate exactly one portrait image for this Codex Studio style preset. ' +
-              'Use txt2img from the full prompt below. Save or expose the resulting image so the local studio can import it, ' +
-              'then report the exact local file path.\n\n' +
-              `Prompt:\n${job.prompt}`),
+          text: job.compiledInput?.payload.text ?? buildCodexImagegenFallbackPrompt(job.prompt),
           text_elements: [],
         },
       ],

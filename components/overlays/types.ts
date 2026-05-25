@@ -5,6 +5,8 @@ import type {
   EditableStudioSettingsPatch,
   ExternalOutputSourcesResponse,
   ExternalOutputSourceFile,
+  GenerationProviderCapabilitiesResponse,
+  GenerationProviderRuntimePreflightResponse,
   Job as StudioJob,
   JobDetailResponse,
   LocalCodexSessionResponse,
@@ -79,6 +81,8 @@ export interface StudioSystemOverlaysProps {
   settingsError: string | null;
   isLoadingSettings: boolean;
   isSavingSettings: boolean;
+  providerCapabilities: GenerationProviderCapabilitiesResponse | null;
+  providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
   outputSources: ExternalOutputSourcesResponse | null;
   outputSourceFiles: Record<string, ExternalOutputSourceFile[]>;
   isLoadingOutputSources: boolean;
