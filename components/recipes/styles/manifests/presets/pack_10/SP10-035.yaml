@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-035
+packId: pack_10
+name: Magical Realism
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Real world with magic
+  form_and_line: Realistic
+  color_palette: Natural
+  lighting_setup: Subtle glow
+  material_texture: Real
+  render_quality: Literary, subtle
+  spatial_distortion: One impossible element
+  atmosphere: Wonder, grounded
+  key_features: Real world context
+avoidRules:
+  - fantasy
+  - cartoon
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-035.webp
+attributes:
+  negativePrompt: fantasy, cartoon

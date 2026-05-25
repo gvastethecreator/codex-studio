@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-166
+packId: pack_05
+name: Rurouni Kenshin - Meiji Blade Redemption
+category: 3. 90s Golden Era
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - 90s-golden-era
+visualDna:
+  aesthetic: Meiji-era wandering swordsman drama, sakura and guilt, reverse-blade restraint, dojo warmth punctured by lethal memory, historical romance and steel discipline
+  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
+  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
+  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
+  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
+  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
+  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  atmosphere: Reflective, noble, restrained, fierce
+  key_features: Kimono-and-sword silhouettes, Meiji streets, reverse-blade stances, sakura accents, inner-conflict close-ups
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-166.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

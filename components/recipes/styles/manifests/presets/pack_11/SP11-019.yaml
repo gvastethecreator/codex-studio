@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-019
+packId: pack_11
+name: Felt Puppet
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Muppet television puppet workshop, felt-and-foam soul, Jim Henson heart
+  form_and_line: Fuzzy edges, fabric-cut contours, sewn-shape silhouettes, armature skeleton
+  color_palette: Bright felt, craft-store spectrum, neon-green, hot-pink, safety-orange, deep-purple
+  lighting_setup: TV studio, three-point broadcast, key-fill-backlight, warm-stage glow
+  material_texture: Felt fabric, foam padding, sewn-seam detail, ping-pong-ball eyes, fleece nap
+  render_quality: Handmade, expressive, hand-in-sock life, backstage magic, felt-and-fur personality
+  spatial_distortion: Flapping mouth, hand-driven jaw, rod-controlled arms, loose-neck wobble
+  atmosphere: Funny, alive, vaudeville warmth, backstage camaraderie, Muppet-theater chaos
+  key_features: Arm rods, seam-stitch detail, googly-eye placement, felt-color blocking
+avoidRules:
+  - cgi
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-019.webp
+attributes:
+  negativePrompt: cgi, smooth

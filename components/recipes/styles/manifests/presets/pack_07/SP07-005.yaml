@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP07-005
+packId: pack_07
+name: Bohemian Eclectic
+category: 1. Interior Design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - interior-design
+visualDna:
+  aesthetic: Plant-filled artistic room, global traveler, collected over time, layered story
+  form_and_line: Chaotic organic forms, cascading vines, piled cushions, hanging macrame, soft heaps
+  color_palette: Earth tones, vibrant patterns, Terracotta, Turquoise, Spice, Indigo
+  lighting_setup: Dappled sunlight through plants, candle glow, Moroccan lantern, fairy string lights
+  material_texture: Rattan, macrame, leaves, handwoven kilim, raw linen, carved wood
+  render_quality: Pinterest, jungle, relaxed, layered, free-spirited, curated wanderlust
+  spatial_distortion: Overgrown plants
+  atmosphere: Free, natural, messy, worldly, creative, sun-drenched laziness
+  key_features: Plants in every corner, hanging rattan chair, layered Persian rugs, gallery wall
+avoidRules:
+  - minimalist
+  - empty
+  - sterile
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-005.webp
+attributes:
+  negativePrompt: minimalist, empty, sterile

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-069
+packId: pack_09
+name: Fiberglass Insulation
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Pink wall insulation
+  form_and_line: Fibers
+  color_palette: Pink
+  lighting_setup: Soft
+  material_texture: Itchy glass fibers
+  render_quality: Construction, industrial
+  spatial_distortion: Fluffy batts
+  atmosphere: Unfinished, itchy
+  key_features: Fiber direction
+avoidRules:
+  - cotton candy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-069.webp
+attributes:
+  negativePrompt: cotton candy

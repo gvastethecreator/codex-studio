@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-055
+packId: pack_06
+name: Glitch Art
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: Corrupted data
+  form_and_line: Jagged, displaced
+  color_palette: RGB shift, neon
+  lighting_setup: Broken
+  material_texture: Pixels, noise
+  render_quality: Broken, cyber
+  spatial_distortion: Tearing
+  atmosphere: Chaotic, tech
+  key_features: Digital artifacts
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-055.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

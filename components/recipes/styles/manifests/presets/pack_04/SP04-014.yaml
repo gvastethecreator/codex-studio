@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-014
+packId: pack_04
+name: Pixel Art Comic
+category: 1. Comic Book Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+visualDna:
+  aesthetic: 16-bit game art
+  form_and_line: Pixel outline
+  color_palette: Limited palette, arcade memory, dithered index spectrum
+  lighting_setup: Dithered, pixel-baked shadow, no real-time illumination
+  material_texture: Pixel grid
+  render_quality: Retro game, sprite-constrained charm, pixel artistry
+  spatial_distortion: Sprite
+  atmosphere: Nostalgic, digital, 16-bit childhood, console-warm memory
+  key_features: Pixel grid, hard-edge aliasing, limited frame
+avoidRules:
+  - vector
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-014.webp
+attributes:
+  negativePrompt: vector, smooth

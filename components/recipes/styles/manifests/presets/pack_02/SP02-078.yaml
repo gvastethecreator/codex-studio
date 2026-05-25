@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-078
+packId: pack_02
+name: Light Painting
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Long exposure trails
+  form_and_line: Light streaks
+  color_palette: Neon lines, electric blue trails, magenta ribbon, RGB glow
+  lighting_setup: Dark background, total black, light-only visibility
+  material_texture: Glowing lines, light-tube smoothness, LED ribbon
+  render_quality: Creative, night, long-exposure artistry, motion-sculpture
+  spatial_distortion: None
+  atmosphere: Magic, art, drawing-with-light, nocturnal play
+  key_features: Trails, light ribbon, calligraphic light, motion-blur glow
+avoidRules:
+  - static light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-078.webp
+attributes:
+  negativePrompt: static light

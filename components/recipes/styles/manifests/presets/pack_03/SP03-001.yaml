@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP03-001
+packId: pack_03
+name: Octane Spectral GPU Path Tracer
+category: 5. Render Engines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+visualDna:
+  aesthetic: GPU path traced render
+  form_and_line: Sharp, physically correct
+  color_palette: Vibrant, high contrast
+  lighting_setup: Bloom, spectral dispersion
+  material_texture: Glossy, detailed
+  render_quality: ArtStation trending, portfolio-ready, 4K
+  spatial_distortion: None
+  atmosphere: Cinematic, slick, hyper-polished
+  key_features: Octane signature spectral bloom
+avoidRules:
+  - photo
+  - drawing
+  - painting
+  - sketch
+  - 2d
+  - flat
+  - noise
+  - grain
+  - low resolution
+  - jpeg artifacts
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-001.webp
+attributes:
+  negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text

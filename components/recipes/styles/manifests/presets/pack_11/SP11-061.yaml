@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-061
+packId: pack_11
+name: Water Drop Reflection
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic
+  form_and_line: Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet
+  color_palette: Clear, prismatic-dispersion, rainbow-caustic, inverted-scene spectrum, bokeh-chromatic
+  lighting_setup: Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight
+  material_texture: Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss
+  render_quality: Physics, beauty, droplet-lens, refraction-magic, macro-patience, liquid-optics
+  spatial_distortion: Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization
+  atmosphere: Calm, focus, macro-meditation, rain-pause, single-drop universe
+  key_features: Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight, chromatic-aberration fringing, surface-tension curvature
+avoidRules:
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-061.webp
+attributes:
+  negativePrompt: dry

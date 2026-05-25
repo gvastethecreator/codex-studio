@@ -1,0 +1,36 @@
+schemaVersion: 1
+id: SP04-088
+packId: pack_04
+name: Rough Environment Pass
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Broad-stroke environment blockout, atmospheric-perspective depth establishing, big-shape landscape composition, focal-point lighting direction, thumbnail-scale world-building, macro-brush confidence, Feng Zhu environment speedpaint, James Gurney atmosphere study
+  form_and_line: Large brush blocking, soft-contour atmospheric shapes, no detail lines, edge-dissolving into fog, compositional-flow curves
+  color_palette: Atmospheric-perspective gradients, warm-light cool-shadow separation, fog-desaturated distance, foreground-saturated depth cues
+  lighting_setup: Key-light direction establishing, atmospheric shadow depth, light-ray volumetric indication, backlit-rim atmospheric separation
+  material_texture: Big-brush stroke surface, atmospheric-softness texture, fog-volume gradation, cloud-layer softness, distance-lost detail texture
+  render_quality: Rough environment pass, atmospheric-blockout beauty, large-scale composition study, world-building speedpaint
+  spatial_distortion: Atmospheric-perspective depth compression, big-foreground small-background scale contrast, fog-layer recession planes
+  atmosphere: Vast, atmospheric, world-scale, exploratory, pre-production wonder, frontier-imagination
+  key_features: Atmospheric-perspective depth, big-brush shape blocking, fog-layer recession, key-light direction, thumbnail-scale composition
+avoidRules:
+  - detailed
+  - finished
+  - character-focused
+  - close-up
+  - tight brushwork
+  - polished
+  - small scale
+  - intimate
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-088.webp
+attributes:
+  negativePrompt: detailed, finished, character-focused, close-up, tight brushwork, polished, small scale, intimate

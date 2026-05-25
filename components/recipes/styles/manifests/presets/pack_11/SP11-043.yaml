@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-043
+packId: pack_11
+name: Memphis Design
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: 80s geometric pattern, post-modern furniture, anti-design rebellion, kindergarten-chic
+  form_and_line: Squiggles, triangles, zigzag-lines, polka-dot grids, confetti-burst contours, zany-circles
+  color_palette: Black + Primary Colors, hot-pink, teal-contrast, traffic-cone orange, acid-yellow, midnight-blue matte
+  lighting_setup: Flat, no-shadow graphic, offset-print registration, two-dimensional clarity, poster-flat
+  material_texture: Speckled pattern, terrazzo-chip, laminate-veneer, plastic-laminate gloss, rubber-paint finish
+  render_quality: Chaotic, fun, retro, Saved-by-the-Bell, Pee-wee's-Playhouse, post-modern-clash, anti-good-taste
+  spatial_distortion: Abstract shapes, floating-pattern planes, Op-art illusions, checkerboard-grid, squiggle-rhythm
+  atmosphere: Playful, energetic, rule-breaking joy, design-anarchy, sugar-cereal morning
+  key_features: Geometric patterns, squiggle-motif, terrazzo-speckle, black-white-checkerboard, contrasting-bold-outlines
+avoidRules:
+  - realistic
+  - 3d
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-043.webp
+attributes:
+  negativePrompt: realistic, 3d

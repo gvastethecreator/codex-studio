@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-041
+packId: pack_08
+name: Cybernetic Implant
+category: 5. Fantasy/Sci-Fi Costume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fantasy-sci-fi-costume
+visualDna:
+  aesthetic: Cyborg fashion, transhuman evolution, chrome-and-flesh fusion
+  form_and_line: Metal seams on skin, implant-ridge lines, carbon-fiber contour, prosthetic-limb silhouette
+  color_palette: Skin + Chrome, titanium, graphite, bio-luminescent blue, carbon-black, circuit-gold
+  lighting_setup: Studio, ring-light reflection, cold-lab overhead, LED-indicator glow, surgical-key sharpness
+  material_texture: Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface, anodized aluminum
+  render_quality: Sci-fi, body mod, Ghost-in-the-Shell precision, augment-realism clarity
+  spatial_distortion: Robot arm
+  atmosphere: Transhuman, cool, augmentation-identity tension, clinical-aesthetic chill, future-body wonder
+  key_features: Metal parts, seam-line integration, exposed circuitry, bionic eye, neural port
+avoidRules:
+  - fully human
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-041.webp
+attributes:
+  negativePrompt: fully human

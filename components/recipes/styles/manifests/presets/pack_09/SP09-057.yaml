@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-057
+packId: pack_09
+name: Oil on Water
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Puddle rainbow
+  form_and_line: Swirls
+  color_palette: Thin film interference
+  lighting_setup: Reflective
+  material_texture: Liquid
+  render_quality: Pollution, colorful
+  spatial_distortion: Fluid
+  atmosphere: Dirty but pretty
+  key_features: Rainbow
+avoidRules:
+  - clean water
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-057.webp
+attributes:
+  negativePrompt: clean water

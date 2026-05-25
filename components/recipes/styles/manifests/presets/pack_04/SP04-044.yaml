@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP04-044
+packId: pack_04
+name: Travel Poster (Vintage)
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Railway poster
+  form_and_line: None
+  color_palette: Flat, sunny, holiday-brochure, Mediterranean warmth
+  lighting_setup: Flat, eternal-summer illumination, postcard optimism
+  material_texture: Lithograph
+  render_quality: Optimistic, classic, wanderlust charm, golden-age tourism
+  spatial_distortion: Simplified view
+  atmosphere: Happy, vacation, seaside leisure, arrival excitement
+  key_features: Text at bottom, destination lettering, simplified landmark
+avoidRules:
+  - photo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-044.webp
+attributes:
+  negativePrompt: photo

@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP03-003
+packId: pack_03
+name: Redshift Biased GPU Renderer
+category: 5. Render Engines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+visualDna:
+  aesthetic: Biased GPU render
+  form_and_line: Clean, noise-free
+  color_palette: Production quality, cinematic tones
+  lighting_setup: Soft shadows, caustics, photon-mapped
+  material_texture: Production assets, complex shaders
+  render_quality: Motion graphics, clean, broadcast-ready
+  spatial_distortion: None
+  atmosphere: Professional, studio, fast-turnaround
+  key_features: Fast blur, out-of-core rendering
+avoidRules:
+  - photo
+  - drawing
+  - painting
+  - sketch
+  - 2d
+  - flat
+  - noise
+  - grain
+  - low resolution
+  - jpeg artifacts
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-003.webp
+attributes:
+  negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text

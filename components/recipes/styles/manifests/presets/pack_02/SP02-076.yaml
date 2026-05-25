@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-076
+packId: pack_02
+name: Rim Lighting
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Edge glow
+  form_and_line: None
+  color_palette: Dark with white edge, black core, silver perimeter, hair-light gold
+  lighting_setup: Backlight, rim-only separation, edge-defining key
+  material_texture: Silhouette detail, edge texture, hair halo
+  render_quality: Dramatic, separation, subject-pop, depth-carving
+  spatial_distortion: None
+  atmosphere: Heroic, mystery, defined presence, emerging-from-shadow
+  key_features: Halo, glowing outline, edge definition
+avoidRules:
+  - flat
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-076.webp
+attributes:
+  negativePrompt: flat

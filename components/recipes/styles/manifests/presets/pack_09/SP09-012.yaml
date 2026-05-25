@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-012
+packId: pack_09
+name: Snake Scales
+category: 1. Natural Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - natural-materials
+visualDna:
+  aesthetic: Reptile skin
+  form_and_line: Overlapping scales
+  color_palette: Green/Black pattern
+  lighting_setup: Iridescent sheen
+  material_texture: Smooth, dry
+  render_quality: Exotic, detailed
+  spatial_distortion: Flexible armor
+  atmosphere: Cold, sleek
+  key_features: Scale grid
+avoidRules:
+  - fur
+  - skin
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-012.webp
+attributes:
+  negativePrompt: fur, skin

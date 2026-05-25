@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-071
+packId: pack_06
+name: Mosaic (Paper)
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Torn paper image
+  form_and_line: Torn edges
+  color_palette: Magazine scraps
+  lighting_setup: Flat
+  material_texture: Paper fibers
+  render_quality: Craft, school
+  spatial_distortion: Pixelated by scraps
+  atmosphere: Creative, recycled
+  key_features: Torn bits
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-071.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

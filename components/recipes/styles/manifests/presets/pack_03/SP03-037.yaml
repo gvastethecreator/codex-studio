@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-037
+packId: pack_03
+name: Ambient Occlusion Pass
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Contact shadows only
+  form_and_line: Soft gradients in corners
+  color_palette: White and Grey, contact-depth tones
+  lighting_setup: Occlusion, uniform ambient skylight
+  material_texture: Clay, matte sculpting base
+  render_quality: Technical, form study, sculpt-review
+  atmosphere: Neutral, shape focus, pure geometry
+  key_features: Corner shadows, contact darkness
+avoidRules:
+  - color
+  - light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-037.webp
+attributes:
+  negativePrompt: color, light

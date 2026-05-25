@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-043
+packId: pack_10
+name: Dark Fantasy
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Souls game aesthetic
+  form_and_line: Detailed, scratchy
+  color_palette: Desaturated, Black
+  lighting_setup: Gloom
+  material_texture: Rot, rust
+  render_quality: Beksinski, nightmare
+  spatial_distortion: Skeleton
+  atmosphere: Hopeless, grand
+  key_features: Fog
+avoidRules:
+  - happy
+  - bright
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-043.webp
+attributes:
+  negativePrompt: happy, bright

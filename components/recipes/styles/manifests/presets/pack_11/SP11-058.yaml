@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-058
+packId: pack_11
+name: Cellular Life
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Biology textbook, microscope-slide, cellular-anatomy, histology-stain, inner-body-universe
+  form_and_line: Membrane walls, phospholipid-bilayer contour, organelle-circles, cilia-fringe, nuclear-envelope
+  color_palette: Pink, Purple stain, hematoxylin-blue, eosin-pink, mitochondria-glow, golgi-ribbon, sudan-orange
+  lighting_setup: Microscope light, condenser-brightfield, phase-contrast halo, fluorescence-excitation, oil-immersion glow
+  material_texture: Jelly, nucleus, cytoplasm-grain, vacuole-bubble, organelle-speckle, cover-slip compression, staining-granule
+  render_quality: Medical, tiny, histology-atlas, cellular-detail, pathology-lab, hematoxylin-eosin beauty
+  spatial_distortion: Blobs, amoeboid-shapes, pseudopod-extension, organelle-displacement, nuclear-eccentricity
+  atmosphere: Life, science, lab-bench quiet, cellular-metabolism, inner-space awe, microbiological wonder
+  key_features: Nucleus, nucleolus-dot, mitochondria-squiggle, vacuole-clear, cell-membrane edge, staining-artifact, scale-micron-bar
+avoidRules:
+  - animal
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-058.webp
+attributes:
+  negativePrompt: animal

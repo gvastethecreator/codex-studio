@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-058
+packId: pack_08
+name: Sequins
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Disco dress, mirror-ball fantasy, floor-filler magnetism
+  form_and_line: Sparkles, sequin-grid drrape, bodycon column, keyhole-back cutout, fringe-hem shake
+  color_palette: Silver, Gold, rose-gold, holographic, champagne, disco-ball prism, copper
+  lighting_setup: Glittering, disco-ball fragment light, dancefloor-spot sparkle, colored-gel shimmer, strobe-pulse refraction
+  material_texture: Small discs, holographic sequins, bugle-bead fringe, mirror-tile paillettes, crystal mesh, metallic thread
+  render_quality: Flashy, bright, dancefloor-electric energy, mirror-ball perfection
+  spatial_distortion: None
+  atmosphere: Party, attention, all-eyes-on-you magnetism, floor-filler confidence, New-Year's-Eve electricity
+  key_features: Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam
+avoidRules:
+  - matte
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-058.webp
+attributes:
+  negativePrompt: matte

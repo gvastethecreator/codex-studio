@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-069
+packId: pack_11
+name: Skin Pores
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Dermatology zoom, skin-terrain, pore-landscape, human-surface, epidermal-topography
+  form_and_line: Micro wrinkles, Langer's-line contours, sulcus-cutis furrow, crista-cutis ridge, fingerprint-ridge
+  color_palette: Skin tone, melanin-spectrum, Fitzpatrick-scale, undertone-warm, undertone-cool, capillary-blush
+  lighting_setup: Soft scattering, epidermal-diffusion, subsurface-scatter, cross-polarized, ring-light-flat
+  material_texture: Pores, hair, vellus-hair, sebaceous-filament, stratum-corneum flake, sweat-gland duct, desquamation-scale
+  render_quality: Hyperreal, human, macro-skin, dermatoscope-detail, epidermal-intimacy, skin-barrier architecture
+  spatial_distortion: None, natural-contour, dermatoglyphic-pattern, skin-tension line
+  atmosphere: Raw, real, mirror-close, skin-acceptance, dermatology-office, self-examination
+  key_features: Texture, pore-opening, hair-follicle, fingerprint-ridge, vellus-hair shaft, sebaceous-filament, desquamation-flake, sulcus-cutis groove
+avoidRules:
+  - smooth plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-069.webp
+attributes:
+  negativePrompt: smooth plastic

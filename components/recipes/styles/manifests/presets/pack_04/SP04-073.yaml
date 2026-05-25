@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-073
+packId: pack_04
+name: Fountain Pen
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Elegant writing/drawing
+  form_and_line: Variable width (flex)
+  color_palette: Black ink, nib-responsive, flex-width tonal richness
+  lighting_setup: Pools of ink, liquid-light reflection, wet-pool gloss
+  material_texture: Smooth paper
+  render_quality: Classy, fluid, stationery refinement, handwritten elegance
+  spatial_distortion: None
+  atmosphere: Elegant, old, penmanship tradition, correspondence gravitas
+  key_features: Line variation, flex-nib swell, hairline-to-broad
+avoidRules:
+  - pencil
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-073.webp
+attributes:
+  negativePrompt: pencil, dry

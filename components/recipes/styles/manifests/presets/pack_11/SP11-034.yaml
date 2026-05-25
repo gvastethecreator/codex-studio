@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-034
+packId: pack_11
+name: X-Ray
+category: 3. Artistic Mediums
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+visualDna:
+  aesthetic: Medical scan, radiograph-art, shadow-bone portrait, Roentgen's ghost
+  form_and_line: Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge
+  color_palette: Black and White negative, bone-white-on-void, tissue-grey gradient, lead-apron silhouette
+  lighting_setup: Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission
+  material_texture: Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain
+  render_quality: Medical, spooky, internal, diagnostic-penetration, see-through-magic, radiology-lab aesthetic
+  spatial_distortion: Skeleton visible, interior-revelation, nested-anatomy transparency, bone-stacked projection
+  atmosphere: Scientific, raw, clinical-mortality, hospital-quiet, body-interior mystery
+  key_features: Bones, joint-space gaps, dental-filling artifacts, fracture-line shadows, trabecular-bone grain
+avoidRules:
+  - skin
+  - color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-034.webp
+attributes:
+  negativePrompt: skin, color

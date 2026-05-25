@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-013
+packId: pack_08
+name: Ethereal Fantasy
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Elven or fairy gown, Rivendell ethereality, woodland-realm grace
+  form_and_line: Flowing, windblown, gossamer waterfall silhouette, bishop-sleeve billow, empire-line rise
+  color_palette: White, Silver, Pale Blue, moonstone, starlight silver, celadon mist, pearl essence
+  lighting_setup: Glowing, backlight, god-ray shafts, moonbeam dapple, faerie-light sparkle
+  material_texture: Silk chiffon, gossamer organza, liquid satin charmeuse, silver lamé thread, dew-beaded tulle
+  render_quality: Lord of the Rings epic fantasy, magical, elven grace, Middle-earth majesty, Weta Workshop caliber
+  spatial_distortion: Floating fabric
+  atmosphere: Magical, soft, dreamlike, ancient enchantment, starlit serenity, undying-lands longing
+  key_features: Translucency, flowing sleeves, circlet tiara, Elvish brooch
+avoidRules:
+  - heavy
+  - dark
+  - solid
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-013.webp
+attributes:
+  negativePrompt: heavy, dark, solid

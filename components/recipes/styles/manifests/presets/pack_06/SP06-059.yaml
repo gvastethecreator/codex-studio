@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-059
+packId: pack_06
+name: Paper Cutout (Digital)
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: Layered paper style
+  form_and_line: Cut edges
+  color_palette: Solid colors
+  lighting_setup: Drop shadows
+  material_texture: Paper grain
+  render_quality: Craft, cute
+  spatial_distortion: Simplified
+  atmosphere: Playful
+  key_features: Depth layers
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-059.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

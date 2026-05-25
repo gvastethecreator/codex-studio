@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-060
+packId: pack_06
+name: ASCII Art
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: Text based image
+  form_and_line: Characters
+  color_palette: Monochrome green/black
+  lighting_setup: Density based
+  material_texture: Text grid
+  render_quality: Retro, hacker
+  spatial_distortion: Low res
+  atmosphere: Tech, code
+  key_features: Text only
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-060.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

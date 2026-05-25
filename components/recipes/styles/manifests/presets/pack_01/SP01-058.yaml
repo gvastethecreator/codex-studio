@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-058
+packId: pack_01
+name: Minimalist Photo
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Simple composition
+  form_and_line: Negative space
+  color_palette: Two or three tones
+  lighting_setup: Flat
+  material_texture: Smooth
+  render_quality: Fine art, graphic
+  spatial_distortion: None
+  atmosphere: Calm, empty
+  key_features: Isolation
+avoidRules:
+  - busy
+  - detailed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-058.webp
+attributes:
+  negativePrompt: busy, detailed

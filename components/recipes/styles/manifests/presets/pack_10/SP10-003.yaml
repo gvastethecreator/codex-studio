@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-003
+packId: pack_10
+name: Constructivism
+category: 1. Geometric Abstraction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - geometric-abstraction
+visualDna:
+  aesthetic: Industrial propaganda
+  form_and_line: Diagonal lines
+  color_palette: Red, Black, White, Kraft
+  lighting_setup: Flat
+  material_texture: Rough paper
+  render_quality: Soviet poster, bold
+  spatial_distortion: Aggressive angles
+  atmosphere: Revolutionary, strong
+  key_features: Typography elements
+avoidRules:
+  - soft
+  - nature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-003.webp
+attributes:
+  negativePrompt: soft, nature

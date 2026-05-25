@@ -1,0 +1,42 @@
+schemaVersion: 1
+id: SP01-008
+packId: pack_01
+name: Double Exposure Portrait
+category: 1. Portrait Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - portrait-styles
+visualDna:
+  aesthetic: Artistic double exposure photography, portrait blended seamlessly with nature or cityscapes
+  subject_treatment: Ghostly overlay of forms, subject's silhouette filled with secondary imagery
+  color_and_tone: Dreamy and mixed color palette, ethereal tones, low contrast blending
+  lighting_and_shadow: High key lighting base, complex overlapping shadows and highlights
+  texture_and_material: Multiple exposure textures, blending of skin and environmental textures (e.g., trees, buildings)
+  camera_and_composition: Surreal blending of two distinct perspectives, creative masking
+  atmosphere_and_mood: Dreamy, conceptual, surreal, poetic, melancholic
+  rendering_and_quality: Fine art photography, seamless blending, highly detailed
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-008.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-076
+packId: pack_11
+name: Moss
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Forest floor zoom, moss-carpet, bryophyte-macro, soft-ground-cover, miniature-forest
+  form_and_line: Tiny leaves, phyllid-spiral, gametophyte-shoot, sporophyte-stalk, leaflet-arrangement
+  color_palette: Green, emerald-spectrum, moss-velvet, sporophyte-ochre, spring-moss bright, shadow-moss deep, dewdrop-crystal
+  lighting_setup: Dappled, canopy-shaft, diffused-understory, leaf-filtered, dewdrop-sparkle, morning-ground
+  material_texture: Velvet plant, leaflet-surface, rhizoid-felt, capsule-sporangium, water-film, soil-particle, detritus-grain
+  render_quality: Nature, soft, forest-floor macro, bryophyte-world, moss-garden, ground-cover beauty
+  spatial_distortion: Carpet, ground-cover continuity, terrain-following, rock-contour, hummock-mound
+  atmosphere: Quiet, tiny, moss-forest silence, dewdrop-morning, miniature-continent, ground-level peace
+  key_features: Greenery, phyllid-leaflets, sporophyte-capsule, dewdrop-bead, rhizoid-felt, soil-particle, detritus, capsule-teeth peristome
+avoidRules:
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-076.webp
+attributes:
+  negativePrompt: dry

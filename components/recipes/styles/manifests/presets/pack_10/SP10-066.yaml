@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-066
+packId: pack_10
+name: Honeycomb
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Hexagonal grid
+  form_and_line: Hexagons
+  color_palette: Yellow, Amber
+  lighting_setup: Translucent wax
+  material_texture: Wax
+  render_quality: Natural, geometric
+  spatial_distortion: None
+  atmosphere: Sweet, orderly
+  key_features: Hexagon grid
+avoidRules:
+  - square
+  - circle
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-066.webp
+attributes:
+  negativePrompt: square, circle

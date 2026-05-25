@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-066
+packId: pack_09
+name: Sand (Beach)
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Wet compacted sand
+  form_and_line: Ripples
+  color_palette: Beige
+  lighting_setup: Sunlight
+  material_texture: Grainy
+  render_quality: Beach, vacation
+  spatial_distortion: Footprints
+  atmosphere: Relaxing, warm
+  key_features: Grains
+avoidRules:
+  - desert dunes
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-066.webp
+attributes:
+  negativePrompt: desert dunes

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-071
+packId: pack_07
+name: Mushroom House
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Smurf whimsical mushroom cottage, tiny blue village
+  form_and_line: Organic, stem-cylinder, cap-dome, gill-undercut, fairy-ring cluster, bulbous, soft-swell
+  color_palette: Red cap, White stalk, Spore Brown, Moss Green, Fairy Blue, Forest-floor Amber, Toadstool-spot Cream
+  lighting_setup: Forest floor, spotted-light dapple, mushroom-glow bioluminescent, shade-cool, firefly-twinkle, under-cap shadow
+  material_texture: Fungus, mushroom-cap skin, gill-ribs, velvet moss, spore-dust, forest loam, dewdrop
+  render_quality: Fantasy, cute, fairy-tale fungi, Smurf-village charm, woodland-magic, storybook-enchantment
+  spatial_distortion: Bulbous
+  atmosphere: Magic, small, hidden, fairy-glade, tiny-footstep, enchanted-forest, wee-folk safe
+  key_features: Spots, red cap, white stem, tiny round door, chimney smoke, mushroom village, moss carpet
+avoidRules:
+  - square
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-071.webp
+attributes:
+  negativePrompt: square

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-026
+packId: pack_09
+name: Plastic (Injection Molded)
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Consumer product
+  form_and_line: Parting lines
+  color_palette: Bright, saturated
+  lighting_setup: Subsurface scattering (slight)
+  material_texture: Smooth or orange peel
+  render_quality: Mass produced, cheap
+  spatial_distortion: Sink marks
+  atmosphere: Artificial, toy
+  key_features: Uniform color
+avoidRules:
+  - metal
+  - wood
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-026.webp
+attributes:
+  negativePrompt: metal, wood

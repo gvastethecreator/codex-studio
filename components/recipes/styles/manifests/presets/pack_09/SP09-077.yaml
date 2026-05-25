@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-077
+packId: pack_09
+name: Barbed Wire
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Fencing wire
+  form_and_line: Twisted wire + barbs
+  color_palette: Rusty metal
+  lighting_setup: Sharp highlights
+  material_texture: Sharp
+  render_quality: Prison, war
+  spatial_distortion: Coiled
+  atmosphere: Dangerous, forbidden
+  key_features: Barbs every few inches
+avoidRules:
+  - smooth wire
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-077.webp
+attributes:
+  negativePrompt: smooth wire

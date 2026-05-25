@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-009
+packId: pack_04
+name: Underground Comix
+category: 1. Comic Book Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+visualDna:
+  aesthetic: Underground comix crosshatching, R. Crumb style, obsessive ink, counterculture texture, raw id
+  form_and_line: Crosshatching, wobble
+  color_palette: Black and White, obsessive ink, dense-hash texture
+  lighting_setup: Texture heavy, crosshatch shading, paranoid shadow web
+  material_texture: Gritty paper
+  render_quality: Counter-culture, ugly, hand-drawn funk, underground authenticity
+  spatial_distortion: Grotesque
+  atmosphere: Subversive, weird, countercultural absurdism, satirical bite
+  key_features: Dense detail, obsessive crosshatching, wobbling panel borders
+avoidRules:
+  - clean
+  - mainstream
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-009.webp
+attributes:
+  negativePrompt: clean, mainstream

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-034
+packId: pack_08
+name: Roman Gladiator
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Arena fighter, blood-and-sand spectacle, Colosseum-roar defiance
+  form_and_line: Muscles, armor, segmentata-plate articulation, balteus-waist cinch, greave-taper, subligaculum base
+  color_palette: Bronze, Red, Skin, iron-grey, oxblood, sun-bronzed flesh, leather-brown
+  lighting_setup: Harsh sun, arena-dust haze, high-noon contrast, torch-smoke shadows
+  material_texture: Bronze plate, oiled leather straps, sweat-sheen skin, iron chainmail, sand-grit coating, linen pteruges
+  render_quality: Tough, historical, arena-dust authenticity, Maximus grit
+  spatial_distortion: None
+  atmosphere: Violent, brave, crowd-roar intensity, mortal-peril tension, gladiator-honor gravity
+  key_features: Helmet, galea with crest, gladius, rectangular scutum, armored manica
+avoidRules:
+  - clean
+  - suit
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-034.webp
+attributes:
+  negativePrompt: clean, suit

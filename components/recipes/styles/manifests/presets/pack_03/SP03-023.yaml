@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-023
+packId: pack_03
+name: Isometric 3D
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Orthographic projection
+  form_and_line: Parallel lines
+  color_palette: Pastel, clean, gradient-friendly
+  lighting_setup: Soft studio, shadow-casting consistency
+  material_texture: Smooth, isometric-unity feel
+  render_quality: Mobile game, icon, asset-store ready
+  atmosphere: Organized, tiny, world-in-a-box
+  key_features: 30 degree angle, parallel projection
+avoidRules:
+  - perspective
+  - distortion
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-023.webp
+attributes:
+  negativePrompt: perspective, distortion

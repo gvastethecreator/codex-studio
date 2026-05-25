@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-077
+packId: pack_02
+name: Underwater Light
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Submerged
+  form_and_line: Caustics
+  color_palette: Cyan/Blue, aquamarine, deep navy, surface-silver, turquoise
+  lighting_setup: Refracted sun, surface-dappled, caustic-net projection
+  material_texture: Water distortion, fluid lens, suspended particles
+  render_quality: Muted, floating, weightless suspension, soundless depth
+  spatial_distortion: Warped, refractive bend, swim-goggle perspective
+  atmosphere: Calm, deep, abyssal peace, submerged solitude
+  key_features: Caustics, light-net, bubbles, floating hair
+avoidRules:
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-077.webp
+attributes:
+  negativePrompt: dry

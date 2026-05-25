@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP01-033
+packId: pack_01
+name: Hard Flash
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Direct camera flash
+  form_and_line: Hard shadow outlines
+  color_palette: High contrast, saturated
+  lighting_setup: Frontal, harsh
+  material_texture: Shiny skin
+  render_quality: Paparazzi, fashion
+  spatial_distortion: Flat depth
+  atmosphere: Raw, exposed
+  key_features: Drop shadow
+avoidRules:
+  - soft
+  - natural
+  - ambient
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-033.webp
+attributes:
+  negativePrompt: soft, natural, ambient

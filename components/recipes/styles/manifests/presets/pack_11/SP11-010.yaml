@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-010
+packId: pack_11
+name: 8-Bit Pixel Art
+category: 3. Artistic Mediums
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+visualDna:
+  aesthetic: NES game sprite, 8-bit wonder, cartridge-era arcade, pixelated memory
+  form_and_line: Pixel grid, sharp blocky edges, stair-step diagonals, hard-square corners
+  color_palette: Limited 56 color palette, restricted index, retro-chip saturation, dithered blends
+  lighting_setup: None, flat emission, self-illuminated pixel, screen-native glow
+  material_texture: Large pixels, visible grid cells, CRT phosphor grain, blocky texel surface
+  render_quality: Retro gaming, arcade, sprite-sheet charm, scanline nostalgia, chip-tune visual
+  spatial_distortion: Low resolution abstraction, blocky simplification, tile-based construction, forced grid logic
+  atmosphere: Nostalgic, fun, digital, childhood arcade, joypad romance, pixel-hero quest
+  key_features: Pixel grid alignment, dithering patterns, sprite boundaries, tile-map logic
+avoidRules:
+  - hd
+  - vector
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-010.webp
+attributes:
+  negativePrompt: hd, vector, smooth

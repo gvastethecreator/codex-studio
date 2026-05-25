@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-004
+packId: pack_02
+name: Technicolor Musical
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Golden-age technicolor fantasy, Wizard of Oz style, three-strip glory, hyper-saturated dream worlds, musical spectacle, storybook transition
+  form_and_line: None
+  color_palette: Hyper-saturated, ruby red, emerald green, sapphire blue
+  lighting_setup: High key studio, broad soft fill, painted backdrop
+  material_texture: 3-strip Technicolor, glossy dye transfer, vibrant saturation
+  render_quality: Vibrant, classic, theatrical, luminous
+  spatial_distortion: None
+  atmosphere: Joyful, theatrical, magical spectacle, storybook wonder
+  key_features: Red is very red, yellow brick road, ruby slippers
+avoidRules:
+  - faded
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-004.webp
+attributes:
+  negativePrompt: faded, dark

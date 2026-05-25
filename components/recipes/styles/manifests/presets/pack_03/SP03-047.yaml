@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-047
+packId: pack_03
+name: Architectural Visualization
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Modern house render
+  form_and_line: Straight verticals
+  color_palette: Beige, White, Wood, natural-material tones
+  lighting_setup: Sunlight, window-daylight simulation
+  material_texture: Realistic materials, lived-in warmth
+  render_quality: Real estate brochure, lifestyle luxury
+  atmosphere: Aspirational, clean, designer-curated
+  key_features: Perfect furniture, architectural storytelling
+avoidRules:
+  - messy
+  - lived in
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-047.webp
+attributes:
+  negativePrompt: messy, lived in

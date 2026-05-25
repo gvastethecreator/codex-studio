@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-022
+packId: pack_06
+name: Oil Pastel
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Crayon-like drawing
+  form_and_line: Thick, waxy, chunky
+  color_palette: Bold, unblended
+  lighting_setup: Flat
+  material_texture: Sticky wax, sgraffito
+  render_quality: Childlike, expressive
+  spatial_distortion: Rough shapes
+  atmosphere: Playful, bold
+  key_features: Chunky texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-022.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

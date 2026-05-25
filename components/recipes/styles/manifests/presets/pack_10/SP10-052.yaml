@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-052
+packId: pack_10
+name: Camouflage
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Military pattern
+  form_and_line: Blobs
+  color_palette: Green, Brown, Tan
+  lighting_setup: Flat
+  material_texture: Canvas
+  render_quality: Tactical
+  spatial_distortion: None
+  atmosphere: Hidden, military
+  key_features: Random blobs
+avoidRules:
+  - bright
+  - neon
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-052.webp
+attributes:
+  negativePrompt: bright, neon

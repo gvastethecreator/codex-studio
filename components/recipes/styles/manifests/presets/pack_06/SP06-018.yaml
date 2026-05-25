@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-018
+packId: pack_06
+name: Ink (Pen & Ink)
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Classic dip pen illustration
+  form_and_line: Cross-hatching, stippling
+  color_palette: Black ink on white
+  lighting_setup: High contrast
+  material_texture: Smooth paper
+  render_quality: Book illustration, detailed
+  spatial_distortion: Stylized shading
+  atmosphere: Classic, storybook
+  key_features: Line shading
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-018.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

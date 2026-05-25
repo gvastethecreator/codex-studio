@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-077
+packId: pack_04
+name: Graffiti (Piece)
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Wildstyle mural
+  form_and_line: Outline and fill
+  color_palette: Vibrant spray, wildstyle palette, fill-outline separation
+  lighting_setup: Highlights, 3D-bevel shine, spray-glow radiance
+  material_texture: Brick wall
+  render_quality: Masterpiece, complex, piece-book glory, production-level mural
+  spatial_distortion: Arrow shapes
+  atmosphere: Hip hop, bold, wall-of-fame prestige, block-party spectacle
+  key_features: Arrows, letter connections, dimension bevel
+avoidRules:
+  - tag
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-077.webp
+attributes:
+  negativePrompt: tag, messy

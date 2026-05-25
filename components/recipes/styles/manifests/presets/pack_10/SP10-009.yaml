@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-009
+packId: pack_10
+name: Islamic Geometric
+category: 1. Geometric Abstraction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - geometric-abstraction
+visualDna:
+  aesthetic: Tessellated star pattern
+  form_and_line: Interlaced lines
+  color_palette: Gold, Blue, Turquoise
+  lighting_setup: Flat
+  material_texture: Tile, mosaic
+  render_quality: Sacred geometry, precise
+  spatial_distortion: None
+  atmosphere: Divine, orderly
+  key_features: Radial symmetry
+avoidRules:
+  - figurative
+  - random
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-009.webp
+attributes:
+  negativePrompt: figurative, random

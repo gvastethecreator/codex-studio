@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-044
+packId: pack_11
+name: Pop Art
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: Andy Warhol style, Factory-silkscreen, soup-can-icon, celebrity-grid, mass-media shrine
+  form_and_line: Halftone dots, Ben-Day-dot grids, thick-outline contours, screen-registration edges
+  color_palette: High contrast neon, Marilyn-blonde, tomato-soup red, electric-chair yellow, mickey-mouse black, offset-CMYK
+  lighting_setup: Flat, silkscreen-exposure, photo-stencil light, pop-shop fluorescence, studio-flash
+  material_texture: Screenprint, ink-push-through canvas, squeegee-drag texture, canvas-tooth underlay, offset-print halftone
+  render_quality: Mass media, bold, repetition-grid, 15-minutes-of-fame, Factory-production, commodity-critique
+  spatial_distortion: Repetition, color-variation grid, multiple-exposure overlap, registration-offset, print-misalignment
+  atmosphere: Ironic, bold, Campbell's-soup nostalgia, celebrity-worship, mechanical-reproduction
+  key_features: Halftone, Ben-Day dots, silkscreen-registration marks, color-channel separation, ink-bleed edge, repetition-grid layout
+avoidRules:
+  - subtle
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-044.webp
+attributes:
+  negativePrompt: subtle

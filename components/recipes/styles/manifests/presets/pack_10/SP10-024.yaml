@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-024
+packId: pack_10
+name: CRT Monitor
+category: 5. Digital Glitch & Noise
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+visualDna:
+  aesthetic: Close up screen
+  form_and_line: RGB phosphor mask
+  color_palette: Glowing phosphors
+  lighting_setup: Screen glow
+  material_texture: Shadow mask grid
+  render_quality: Retro tech
+  spatial_distortion: Curved screen
+  atmosphere: Retro, tech
+  key_features: Scanlines
+avoidRules:
+  - lcd
+  - sharp pixels
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-024.webp
+attributes:
+  negativePrompt: lcd, sharp pixels

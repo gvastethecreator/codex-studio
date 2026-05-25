@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-047
+packId: pack_01
+name: Landscape (Ansel Adams)
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Epic nature vista
+  form_and_line: Sharp f/64 focus
+  color_palette: Black and White Zone System
+  lighting_setup: Dramatic sun/cloud
+  material_texture: Rock, cloud detail
+  render_quality: Masterpiece, sharp
+  spatial_distortion: None
+  atmosphere: Grand, timeless
+  key_features: High contrast sky
+avoidRules:
+  - color
+  - city
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-047.webp
+attributes:
+  negativePrompt: color, city

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-060
+packId: pack_10
+name: Glitter Texture
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Thousands of sparkles
+  form_and_line: None
+  color_palette: Metallic, rainbow
+  lighting_setup: Sparkles
+  material_texture: Rough, shiny
+  render_quality: Party, craft
+  spatial_distortion: None
+  atmosphere: Fun, cheap
+  key_features: Sparkle density
+avoidRules:
+  - matte
+  - dull
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-060.webp
+attributes:
+  negativePrompt: matte, dull

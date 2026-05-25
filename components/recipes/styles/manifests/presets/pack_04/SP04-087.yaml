@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP04-087
+packId: pack_04
+name: Silhouette Iteration Sheet
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: 20-silhouette iteration sheet, pure-shape design exploration, negative-space composition study, character-shape-language comparison, bulky-vs-sleek-vs-spiky-vs-round silhouette range, creature-design through silhouette only, Kienan Lafferty shape-exploration, form-before-detail discipline
+  form_and_line: Pure black fill shapes, no interior lines, varied contour exploration, chunky-vs-spindly silhouette spectrum, shape-contrast across iterations
+  color_palette: Black silhouettes on white, occasional mid-grey for secondary-read shapes, no color whatsoever
+  lighting_setup: None, pure silhouette reading against white background, no lighting information
+  material_texture: Flat-black fill, sharp-silhouette edges, no surface indication, pure two-dimensional shape reading
+  render_quality: Silhouette-iteration concept sheet, pure-shape design study, form-first rendering, industrial-design methodology
+  spatial_distortion: Grid-arranged silhouettes for comparison, scale-normalized across iterations, shape-language spectrum positioning
+  atmosphere: Methodical, exploratory, design-rigor, form-obsession, pre-detail discipline, professional-iteration mindset
+  key_features: Pure-black silhouettes on white, 20-variation grid, no internal detail, shape-language spectrum, scale-normalized comparison
+avoidRules:
+  - detailed
+  - rendered
+  - colored
+  - one design
+  - final
+  - finished
+  - internal detail
+  - texture
+  - single silhouette
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-087.webp
+attributes:
+  negativePrompt: detailed, rendered, colored, one design, final, finished, internal detail, texture, single silhouette

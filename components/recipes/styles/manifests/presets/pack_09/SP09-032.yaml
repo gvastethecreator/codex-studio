@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-032
+packId: pack_09
+name: Cardboard
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Shipping box
+  form_and_line: Corrugation lines
+  color_palette: Kraft brown
+  lighting_setup: Matte
+  material_texture: Paper pulp
+  render_quality: Cheap, disposable
+  spatial_distortion: Creased
+  atmosphere: Trash, storage
+  key_features: Corrugation
+avoidRules:
+  - wood
+  - plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-032.webp
+attributes:
+  negativePrompt: wood, plastic

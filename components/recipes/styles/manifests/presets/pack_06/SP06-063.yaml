@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-063
+packId: pack_06
+name: Decoupage
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Varnished paper on object
+  form_and_line: Torn edges
+  color_palette: Faded, yellowed
+  lighting_setup: Glossy varnish
+  material_texture: Crackle glaze
+  render_quality: Craft, vintage
+  spatial_distortion: Surface wrap
+  atmosphere: Antique, homey
+  key_features: Varnish shine
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-063.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

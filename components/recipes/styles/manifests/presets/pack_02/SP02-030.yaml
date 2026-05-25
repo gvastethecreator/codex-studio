@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-030
+packId: pack_02
+name: Nature Documentary
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Premium nature documentary, BBC Earth, wild kingdom, intimate wildlife, global spectacle
+  form_and_line: None
+  color_palette: Natural, vibrant, savannah gold, ocean teal, rainforest emerald
+  lighting_setup: Golden hour, magic-hour rim, dappled canopy, underwater shaft
+  material_texture: Ultra HD, 8K texture, feather detail, fur strand
+  spatial_distortion: Slow motion, wing-beat freeze, droplet suspension
+  atmosphere: Majestic, wild, patient reverence, untamed spectacle
+  key_features: Telephoto, animal portrait, migration panorama
+avoidRules:
+  - human
+  - city
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-030.webp
+attributes:
+  negativePrompt: human, city

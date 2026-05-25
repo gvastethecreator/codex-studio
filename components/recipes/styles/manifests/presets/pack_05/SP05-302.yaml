@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-302
+packId: pack_05
+name: Captain Harlock - Cape in the Star Wind
+category: 11. 70s & 80s Retro Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - 70s-and-80s-retro-anime
+visualDna:
+  aesthetic: Romantic outlaw in deep space, skull insignia, lonely heroic piracy, cape whipping against starfields, melancholic rebellion at operatic scale
+  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
+  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
+  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
+  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
+  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
+  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  atmosphere: Romantic, lonely, rebellious, cosmic
+  key_features: Cape silhouette, skull insignia, starfield loneliness, bridge-deck poses, outlaw idealism framing
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-302.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-072
+packId: pack_10
+name: Pointillism (Seurat)
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Made of tiny dots
+  form_and_line: None
+  color_palette: Optical mixing
+  lighting_setup: Soft
+  material_texture: Dots
+  render_quality: Impressionist, scientific
+  spatial_distortion: None
+  atmosphere: Calm, vibrant
+  key_features: Dots only
+avoidRules:
+  - brush strokes
+  - lines
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-072.webp
+attributes:
+  negativePrompt: brush strokes, lines

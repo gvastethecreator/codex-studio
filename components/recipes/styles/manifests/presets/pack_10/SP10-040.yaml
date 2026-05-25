@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-040
+packId: pack_10
+name: Collage Surrealism
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Vintage magazine cutouts
+  form_and_line: Scissor edges
+  color_palette: Faded print
+  lighting_setup: Mismatched
+  material_texture: Paper
+  render_quality: Dada, retro
+  spatial_distortion: Big heads
+  atmosphere: Absurd, funny
+  key_features: Cutout look
+avoidRules:
+  - seamless
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-040.webp
+attributes:
+  negativePrompt: seamless

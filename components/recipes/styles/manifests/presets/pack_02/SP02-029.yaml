@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-029
+packId: pack_02
+name: Cooking Show
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Food prep
+  form_and_line: None
+  color_palette: Warm, appetizing, golden crust, fresh herb green, tomato red
+  lighting_setup: Bright kitchen, soft overhead, product-key, steam halo
+  material_texture: Macro food, glistening oil, crumb detail, sauce drip
+  render_quality: Clean, delicious, mouth-watering, magazine-ready
+  spatial_distortion: None
+  atmosphere: Hungry, happy, cozy instruction, sizzle anticipation
+  key_features: Overhead shot, wooden board, fresh garnish, tasting spoon
+avoidRules:
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-029.webp
+attributes:
+  negativePrompt: messy

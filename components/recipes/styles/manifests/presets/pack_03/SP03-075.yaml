@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-075
+packId: pack_03
+name: Ice Sculpture
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Carved ice
+  form_and_line: Chiseled edges
+  color_palette: Clear, Blue tint, frosty translucence
+  lighting_setup: Refractive, ice-crystal dispersion
+  material_texture: Smooth, frosty, cold-surface
+  render_quality: Event, art, gala-tier sculpture
+  atmosphere: Cold, temporary, ephemeral beauty
+  key_features: Transparency, melt-edge detail
+avoidRules:
+  - warm
+  - melted
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-075.webp
+attributes:
+  negativePrompt: warm, melted

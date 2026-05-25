@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-014
+packId: pack_03
+name: Chrome & Metal
+category: 1. Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+visualDna:
+  aesthetic: Highly reflective surface
+  form_and_line: Sharp reflections
+  color_palette: Silver, Gold, Copper, anodized tones
+  lighting_setup: HDRI environment reflection, specular bounce
+  material_texture: Polished, mirror-grade chrome
+  render_quality: Automotive finish, showroom gloss
+  atmosphere: Sleek, futuristic, precision luxury
+  key_features: Reflection, anisotropic highlights
+avoidRules:
+  - matte
+  - rough
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-014.webp
+attributes:
+  negativePrompt: matte, rough

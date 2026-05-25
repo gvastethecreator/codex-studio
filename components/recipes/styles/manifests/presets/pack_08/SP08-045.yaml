@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-045
+packId: pack_08
+name: Superhero Spandex
+category: 5. Fantasy/Sci-Fi Costume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fantasy-sci-fi-costume
+visualDna:
+  aesthetic: Comic book hero, four-color idealism, panel-breaking dynamism
+  form_and_line: Tight muscles, muscle-sculpt silhouette, cape-sweep drama, boot-cut taper, briefs-over-tights line
+  color_palette: Primary Colors, flag-blue, signal-red, gold-yellow, ink-black, optic-white
+  lighting_setup: Rim light, heroic edge-highlight, two-source dramatic, comic-ink contrast
+  material_texture: Matte spandex, dimensional-print muscle shading, vinyl cape, rubber sole, metallic accents
+  render_quality: Heroic, bold, splash-page energy, Kirby-esque power
+  spatial_distortion: Muscles
+  atmosphere: Strong, brave, truth-and-justice clarity, action-pose dynamism, unwavering resolve
+  key_features: Logo on chest, cape, utility belt, domino mask, heroic boots
+avoidRules:
+  - loose clothes
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-045.webp
+attributes:
+  negativePrompt: loose clothes

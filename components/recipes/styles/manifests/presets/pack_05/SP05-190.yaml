@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-190
+packId: pack_05
+name: Ao Haru Ride - Clean Uniform Reunion Ache
+category: 4. Classic & Modern Shojo
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - classic-and-modern-shojo
+visualDna:
+  aesthetic: Polished school romance, former-crush reunion tension, clean uniforms, hallway silences, emotionally guarded adolescence, cool beauty hiding confusion
+  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
+  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
+  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
+  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
+  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
+  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  atmosphere: Pensive, attractive, hesitant, tender
+  key_features: Clean school styling, reunion glances, cool-guy silhouette contrast, airy campus spaces, heart-stopping close-ups
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-190.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

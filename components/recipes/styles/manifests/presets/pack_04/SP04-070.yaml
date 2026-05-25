@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-070
+packId: pack_04
+name: Mezzotint
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Dark print
+  form_and_line: None
+  color_palette: Velvety Black, infinite-depth dark, burnished revelation
+  lighting_setup: Burnished highlights, subtractive light, tonal emergence
+  material_texture: Rocker marks
+  render_quality: Dramatic, soft, tonal emergence, chiaroscuro majesty
+  spatial_distortion: None
+  atmosphere: Moody, night, candle-lit mystery, old-master depth
+  key_features: Dark base, burnished highlight, tonal reveal
+avoidRules:
+  - white background
+  - lines
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-070.webp
+attributes:
+  negativePrompt: white background, lines

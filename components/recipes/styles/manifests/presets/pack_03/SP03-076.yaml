@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-076
+packId: pack_03
+name: Balloon Art (Inflatable)
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Mylar balloons
+  form_and_line: Seams, wrinkles
+  color_palette: Metallic foil
+  lighting_setup: High reflection
+  material_texture: Wrinkled foil, mylar shimmer
+  render_quality: Jeff Koons gallery-scale pop, party spectacle
+  spatial_distortion: Inflated
+  atmosphere: Fun, pop art, celebration
+  key_features: Seams, reflective curves
+avoidRules:
+  - hard
+  - heavy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-076.webp
+attributes:
+  negativePrompt: hard, heavy

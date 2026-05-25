@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-079
+packId: pack_04
+name: Calligraphy (Blackletter)
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Gothic text
+  form_and_line: Broad nib
+  color_palette: Black ink, manuscript gold, parchment heritage
+  lighting_setup: Flat, candle-light allusion, illuminated-manuscript warmth
+  material_texture: Parchment
+  render_quality: Medieval, heavy, scriptorium authority, sacred-text gravity
+  spatial_distortion: Ornate
+  atmosphere: Serious, old, cathedral silence, monastic devotion
+  key_features: Verticals, broad-nib stroke, gothic architecturality
+avoidRules:
+  - round
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-079.webp
+attributes:
+  negativePrompt: round, modern

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-011
+packId: pack_03
+name: Glass & Crystal
+category: 1. Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+visualDna:
+  aesthetic: Transparent refractive object
+  form_and_line: Caustics
+  color_palette: Prismatic dispersion
+  lighting_setup: Refracted light
+  material_texture: Smooth, flawless, refractive clarity
+  render_quality: Raytraced, crystal-clear
+  spatial_distortion: Refraction
+  atmosphere: Elegant, fragile, luxury boutique
+  key_features: Transparency, dispersion rainbow
+avoidRules:
+  - opaque
+  - dull
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-011.webp
+attributes:
+  negativePrompt: opaque, dull

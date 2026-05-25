@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-018
+packId: pack_04
+name: Paper Cutout (Collage)
+category: 2. Children's Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - children-s-illustration
+visualDna:
+  aesthetic: Painted paper collage storybook, Eric Carle style, hungry caterpillar charm, tissue-paper poetry
+  form_and_line: Scissor edges
+  color_palette: Painted paper textures, tissue-paper spectrum, matte-wash vibrance
+  lighting_setup: Drop shadows, layered depth, paper-thickness relief
+  material_texture: Painted paper
+  render_quality: Handmade, layered, collage warmth, pre-school artistry
+  spatial_distortion: Simple shapes
+  atmosphere: Creative, bright, classroom joy, tactile discovery
+  key_features: Layer depth, scissor-cut edges, paper overlap
+avoidRules:
+  - drawn
+  - painted
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-018.webp
+attributes:
+  negativePrompt: drawn, painted

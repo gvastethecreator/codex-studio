@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-049
+packId: pack_09
+name: Velcro
+category: 3. Tactile Surfaces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - tactile-surfaces
+visualDna:
+  aesthetic: Hook and loop
+  form_and_line: Tiny hooks
+  color_palette: Black
+  lighting_setup: Plastic glint
+  material_texture: Scratchy
+  render_quality: Utility, fastener
+  spatial_distortion: None
+  atmosphere: Functional
+  key_features: Rows of hooks
+avoidRules:
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-049.webp
+attributes:
+  negativePrompt: smooth

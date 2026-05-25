@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-055
+packId: pack_10
+name: Wood Grain
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Tree rings
+  form_and_line: Flowing lines
+  color_palette: Brown, Tan
+  lighting_setup: Varnish gloss
+  material_texture: Wood
+  render_quality: Natural, warm
+  spatial_distortion: Knots
+  atmosphere: Rustic, solid
+  key_features: Directional grain
+avoidRules:
+  - metal
+  - stone
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-055.webp
+attributes:
+  negativePrompt: metal, stone

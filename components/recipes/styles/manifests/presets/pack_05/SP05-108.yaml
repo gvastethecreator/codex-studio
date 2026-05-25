@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: SP05-108
+packId: pack_05
+name: Fairy-Tale Storybook Soft
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Gentle watercolor-anime hybrid, illuminated-manuscript borders, floating flower petals on every frame, soft-focus dream sequences, shoujo fantasy at its most tender, children's-book warmth with anime expressiveness, Sugar Sugar Rune sweetness, Cardcaptor Sakura sparkle
+  form_and_line: Delicate hair-thin ink, scrollwork ornamental contours, lace-pattern borders, heart-motif motion lines
+  color_palette: Cotton-candy pink, buttercream yellow, lavender mist, robin-egg blue, mint-cream green, pearl-white shimmer, rose-quartz everything
+  lighting_setup: Soft diffused heavenly glow, bokeh fairy-light scatter, gentle dappled sunbeams, enchanted-morning radiance
+  material_texture: Watercolor paper grain, gold-foil stamping, lace-fabric overlay, sugar-spun thread texture, petal-soft surface
+  render_quality: Fairy-tale anime frame, children's-book elegance, shoujo-sparkle rendering, picture-book warmth
+  spatial_distortion: Floral-frame compositions, magical-girl transformation-space backgrounds, floating decorative elements
+  atmosphere: Enchanting, gentle, sweet-natured, storybook magic, pure-hearted wonder
+  key_features: Floating flower petals, sparkle-dust particles, lace-pattern borders, ribbon-framing devices, magical-transformation glow
+avoidRules:
+  - hard
+  - sharp
+  - dark
+  - gritty
+  - realistic
+  - adult
+  - serious
+  - edgy
+  - horror
+  - violent
+  - cynical
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-108.webp
+attributes:
+  negativePrompt: hard, sharp, dark, gritty, realistic, adult, serious, edgy, horror, violent, cynical

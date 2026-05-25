@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP01-049
+packId: pack_01
+name: Food Photography
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Delicious plated food
+  form_and_line: Soft focus background
+  color_palette: Warm, saturated, fresh
+  lighting_setup: Window light, reflector
+  material_texture: Steam, sauce gloss
+  render_quality: Cookbook, appetizing
+  spatial_distortion: None
+  atmosphere: Hungry, cozy
+  key_features: Top down or 45 degree
+avoidRules:
+  - unappetizing
+  - dark
+  - dirty
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-049.webp
+attributes:
+  negativePrompt: unappetizing, dark, dirty

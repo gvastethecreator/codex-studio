@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-048
+packId: pack_08
+name: Zombie Survivor
+category: 5. Fantasy/Sci-Fi Costume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fantasy-sci-fi-costume
+visualDna:
+  aesthetic: Walking Dead post-outbreak survivor wear, bite-mark paranoia, terminus-road desperation
+  form_and_line: Dirty layers, scavenged-onion bulk, duct-tape reinforcement, wrapped-forearm binding, boot-cut pragmatism
+  color_palette: Grey, Blood stain, mud-brown, rust, faded-olive, dried-crimson, ash-grey
+  lighting_setup: Gritty, overcast-dread grey, forest-shadow darkness, abandoned-building dust, campfire-orange
+  material_texture: Blood-crusted fabric, dirt-embedded denim, duct-tape patches, torn flannel, sweat-soaked cotton, leather holster wear
+  render_quality: Horror, survival, walker-apocalypse realism, exhaustion-verité
+  spatial_distortion: Wounds
+  atmosphere: Scared, tough, constant-vigilance exhaustion, survival-instinct clarity, herd-approach dread
+  key_features: Weapon, crossbow or knife, backpack, fingerless gloves, sheriff hat
+avoidRules:
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-048.webp
+attributes:
+  negativePrompt: clean

@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-103
+packId: pack_02
+name: Aaahh!!! Real Monsters - Sewer Kid Grotesque
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Nickelodeon monster-school grossness, eyeballs on weird stalks, toenail grime, urban sewer slime, childlike monster rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute body horror for kids
+  form_and_line: Chunky lopsided outlines, uneven monster curves, jittery slime accents, crude expressive contour
+  color_palette: Slime green, bruise purple, rust orange, toxic pink, sewer-water teal, moldy yellow
+  lighting_setup: Sewer-grate shafts, dank green underlight, junkyard reflected glare, moist tunnel shadows
+  material_texture: Sludge, pitted skin, peeling grime, sneaker-scuff dirt, wet brick, trash-bag shine
+  render_quality: 90s gross-kids-cartoon texture, tactile ugliness, lumpy creature-school charm, sewer-funk fidelity
+  spatial_distortion: Limbs of mismatched length, eyes stacked in impossible ways, torso shapes collapsing into blobs
+  atmosphere: Rowdy, gross, mischievous, lovable
+  key_features: Asymmetric monster anatomy, sewer grime, rubbery claws, weird eye placement, urban sludge detail
+avoidRules:
+  - digital
+  - HD
+  - smooth
+  - 3d
+  - realistic
+  - painted
+  - single panel
+  - vertical scrolling
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-103.webp
+attributes:
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern

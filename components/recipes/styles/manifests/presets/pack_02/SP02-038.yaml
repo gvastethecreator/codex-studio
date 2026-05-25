@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-038
+packId: pack_02
+name: Spider-Verse Comic Offset 3D
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Comic book 3D
+  form_and_line: Ink lines on 3D
+  color_palette: Halftone dots, CMYK offset, Ben-Day texture, pop art primaries
+  lighting_setup: Pop art, flat graphic, comic panel direction
+  material_texture: Paper grain, ink bleed, newsprint, screen-print texture
+  render_quality: Dynamic, glitch, stylized keyframe, stepped animation, frame-drop stutter
+  spatial_distortion: Chromatic aberration, misregistration, color fringe, RGB split
+  atmosphere: Energetic, modern, comic-panel momentum, multiverse chaos
+  key_features: Low framerate feel, onomatopoeia text, thought bubble, motion lines
+avoidRules:
+  - smooth 3d
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-038.webp
+attributes:
+  negativePrompt: smooth 3d

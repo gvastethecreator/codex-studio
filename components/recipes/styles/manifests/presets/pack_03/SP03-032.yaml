@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-032
+packId: pack_03
+name: Volumetric Fog
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Light beams in air
+  form_and_line: God rays
+  color_palette: Hazy, desaturated depth
+  lighting_setup: Scattered light, god-ray projection
+  material_texture: Fog density, volumetric depth
+  render_quality: Cinematic, atmospheric, immersive mystery
+  atmosphere: Mysterious, epic, cathedral scale
+  key_features: Light shafts, air-density sculpting
+avoidRules:
+  - clear
+  - vacuum
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-032.webp
+attributes:
+  negativePrompt: clear, vacuum

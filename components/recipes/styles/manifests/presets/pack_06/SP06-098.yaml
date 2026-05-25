@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: SP06-098
+packId: pack_06
+name: TurboGrafx PC Engine
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: PC-Engine-TurboGrafx-16-aesthetic, compact-Japanese-sprite-magic, bright-vibrant-482-color-palette, Bonk-PC-Genjin-headbutt-caveman-charm, Castlevania-Rondo-of-Blood-richness, Hudson-Soft-API-developer-bee-logo-soul, HuCard-thin-credit-card-cartridges, CD-ROM2-Red-Book-audio-RPG-golden-age, NEC-console-that-could-have-been-great
+  form_and_line: Compact-but-vibrant-pixel-sprites, 16-bit-sprite-hardware-in-8-bit-CPU-body, 320x256-or-256x240-resolution, CD-ROM-data-loaded-into-sprite-RAM
+  color_palette: 512-color-total, 482-displayable, PC-Engine-vibrant-bright, Bonk-orange-brown-caveman, Castlevania-gothic-red-purple, Dracula-X-CD-red-book-audio-visual-counterpart, Hudson-bee-yellow
+  lighting_setup: Sprite-pixel-art-directional-lighting, palette-gradient-for-depth, CD-ROM-loaded-backgrounds-complex, parallax-scrolling-lighting, no-blast-processing-but-elegant-rendering
+  material_texture: HuCard-thin-cartridge-texture, CD-ROM2-loading-screen, pixel-sprite-compactness, 8-bit-CPU-16-bit-graphics-schizophrenia, PC-Engine-LT-portable-LCD
+  render_quality: PC-Engine-TurboGrafx-pixel aesthetic, Japanese-16-bit-compact-beauty, HuCard-game-charm, CD-ROM-RPG- golden-era-rendering
+  spatial_distortion: 320x256-Japanese-resolution, CD-ROM-loaded-backgrounds-ceiling, vertical-oriented-Japanese-shmups, handheld-LT-LCD-screen, compact-sprite-proportions
+  atmosphere: Japanese-console-wonder, NEC-technical-ingenuity, Hudson-Soft- creativity, CD-ROM-RPG- golden-age, what-could-have-been nostalgia
+  key_features: Bright-482-color-palette, HuCard-cartridge, CD-ROM2-loaded-art, PC-Engine-compact-sprite-design, Bonk-PC-Genjin-style, 16-bit-graphics-in-8-bit-system, Japanese-console-charm
+avoidRules:
+  - western
+  - dark
+  - muted
+  - gritty
+  - limited
+  - simple
+  - low color
+  - CGA
+  - slow
+  - weak
+  - Nintendo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-098.webp
+attributes:
+  negativePrompt: western, dark, muted, gritty, limited, simple, low color, CGA, slow, weak, Nintendo

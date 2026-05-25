@@ -70,6 +70,31 @@ interface StudioOverlayOnboardingContext {
   ensureAppServer: () => void | Promise<void>;
 }
 
+interface StudioOverlaySettingsContext {
+  isOpen: StudioSystemOverlaysProps['isSettingsModalOpen'];
+  close: StudioSystemOverlaysProps['closeSettings'];
+  settings: StudioSystemOverlaysProps['settings'];
+  error: StudioSystemOverlaysProps['settingsError'];
+  isLoading: StudioSystemOverlaysProps['isLoadingSettings'];
+  isSaving: StudioSystemOverlaysProps['isSavingSettings'];
+  outputSources: StudioSystemOverlaysProps['outputSources'];
+  outputSourceFiles: StudioSystemOverlaysProps['outputSourceFiles'];
+  isLoadingOutputSources: StudioSystemOverlaysProps['isLoadingOutputSources'];
+  loadingOutputSourceFiles: StudioSystemOverlaysProps['loadingOutputSourceFiles'];
+  isRegisteringOutputSource: StudioSystemOverlaysProps['isRegisteringOutputSource'];
+  importingOutputSources: StudioSystemOverlaysProps['importingOutputSources'];
+  libraryDir: StudioSystemOverlaysProps['settingsLibraryDir'];
+  refresh: StudioSystemOverlaysProps['refreshSettings'];
+  update: StudioSystemOverlaysProps['updateSettings'];
+  registerOutputSource: StudioSystemOverlaysProps['registerOutputSource'];
+  loadOutputSourceFiles: StudioSystemOverlaysProps['loadOutputSourceFiles'];
+  importOutputSourceFiles: StudioSystemOverlaysProps['importOutputSourceFiles'];
+  isBackgroundEnabled: StudioSystemOverlaysProps['isBackgroundEnabled'];
+  onToggleBackground: StudioSystemOverlaysProps['onToggleBackground'];
+  onResetStudio: StudioSystemOverlaysProps['onResetStudio'];
+  isResettingStudio: StudioSystemOverlaysProps['isResettingStudio'];
+}
+
 interface StudioOverlayWorkspaceContext {
   batches: StudioSystemOverlaysProps['batches'];
   workspaces: StudioSystemOverlaysProps['workspaces'];
@@ -97,6 +122,7 @@ export interface BuildStudioOverlayControllerArgs {
   activity: StudioOverlayActivityContext;
   vault: StudioOverlayVaultContext;
   onboarding: StudioOverlayOnboardingContext;
+  settings: StudioOverlaySettingsContext;
   workspace: StudioOverlayWorkspaceContext;
   workspaceActions: StudioOverlayWorkspaceActions;
   confirmation: StudioConfirmationOverlayProps;
@@ -115,6 +141,7 @@ export function buildStudioOverlayController({
   activity,
   vault,
   onboarding,
+  settings,
   workspace,
   workspaceActions,
   confirmation,
@@ -172,6 +199,28 @@ export function buildStudioOverlayController({
       ensureAppServer: () => {
         void onboarding.ensureAppServer();
       },
+      isSettingsModalOpen: settings.isOpen,
+      closeSettings: settings.close,
+      settings: settings.settings,
+      settingsError: settings.error,
+      isLoadingSettings: settings.isLoading,
+      isSavingSettings: settings.isSaving,
+      outputSources: settings.outputSources,
+      outputSourceFiles: settings.outputSourceFiles,
+      isLoadingOutputSources: settings.isLoadingOutputSources,
+      loadingOutputSourceFiles: settings.loadingOutputSourceFiles,
+      isRegisteringOutputSource: settings.isRegisteringOutputSource,
+      importingOutputSources: settings.importingOutputSources,
+      settingsLibraryDir: settings.libraryDir,
+      refreshSettings: settings.refresh,
+      updateSettings: settings.update,
+      registerOutputSource: settings.registerOutputSource,
+      loadOutputSourceFiles: settings.loadOutputSourceFiles,
+      importOutputSourceFiles: settings.importOutputSourceFiles,
+      isBackgroundEnabled: settings.isBackgroundEnabled,
+      onToggleBackground: settings.onToggleBackground,
+      onResetStudio: settings.onResetStudio,
+      isResettingStudio: settings.isResettingStudio,
     },
     workspaceOverlays: {
       isTrashModalOpen: workspace.isTrashModalOpen,

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-022
+packId: pack_04
+name: Colored Pencil
+category: 2. Children's Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - children-s-illustration
+visualDna:
+  aesthetic: Soft sketch
+  form_and_line: Pencil strokes
+  color_palette: Soft, layered, crayon-adjacent warmth, gentle fade
+  lighting_setup: Paper white, natural ambient, soft diffuse
+  material_texture: Pencil grain
+  render_quality: Gentle, fuzzy, sketchbook intimacy, soft-focus warmth
+  spatial_distortion: Soft edges
+  atmosphere: Quiet, homey, afternoon sketch, personal journal
+  key_features: Crosshatching, pencil stroke direction, smudged blending
+avoidRules:
+  - ink
+  - paint
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-022.webp
+attributes:
+  negativePrompt: ink, paint

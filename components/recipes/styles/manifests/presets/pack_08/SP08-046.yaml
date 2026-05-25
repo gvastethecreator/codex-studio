@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-046
+packId: pack_08
+name: Mech Pilot Suit
+category: 5. Fantasy/Sci-Fi Costume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fantasy-sci-fi-costume
+visualDna:
+  aesthetic: Evangelion sleek biomech pilot suit, NERV interface, sync-ratio shine, plug-depth tension
+  form_and_line: Panel lines, entry-plug contour, form-fitting compression, shoulder-interface cutout, neck-seal band
+  color_palette: Glossy White/Red, EVA-purple, NERV orange, Unit-01 violet, caution-yellow, matte-black
+  lighting_setup: Cockpit glow, LCL-amber immersion, display-screen backlight, entry-plug bioluminescence
+  material_texture: Latex, plastic, neoprene compression, interface gel, carbon-fiber panel, memory-foam inner
+  render_quality: Anime, sci-fi, cel-shaded precision, mecha-pilot intimacy
+  spatial_distortion: None
+  atmosphere: Ready, tech, launch-tube tension, AT-field silence, impact-alert urgency
+  key_features: Interface headset, A10 nerve clips, plug-suit panel lines, LCL fluid sheen
+avoidRules:
+  - casual
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-046.webp
+attributes:
+  negativePrompt: casual

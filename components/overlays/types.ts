@@ -1,9 +1,14 @@
 import type { ChangeEvent } from 'react';
 import type {
   HealthResponse,
+  EditableStudioSettings,
+  EditableStudioSettingsPatch,
+  ExternalOutputSourcesResponse,
+  ExternalOutputSourceFile,
   Job as StudioJob,
   JobDetailResponse,
   LocalCodexSessionResponse,
+  RegisterExternalOutputSourceInput,
   StudioReadinessSnapshot,
 } from '../../packages/shared/src';
 import type {
@@ -68,6 +73,32 @@ export interface StudioSystemOverlaysProps {
   completeOnboarding: () => void;
   refreshOnboardingHealth: () => void;
   ensureAppServer: () => void;
+  isSettingsModalOpen: boolean;
+  closeSettings: () => void;
+  settings: EditableStudioSettings | null;
+  settingsError: string | null;
+  isLoadingSettings: boolean;
+  isSavingSettings: boolean;
+  outputSources: ExternalOutputSourcesResponse | null;
+  outputSourceFiles: Record<string, ExternalOutputSourceFile[]>;
+  isLoadingOutputSources: boolean;
+  loadingOutputSourceFiles: Record<string, boolean>;
+  isRegisteringOutputSource: boolean;
+  importingOutputSources: Record<string, boolean>;
+  settingsLibraryDir: string | null;
+  refreshSettings: () => void | Promise<void>;
+  updateSettings: (patch: EditableStudioSettingsPatch) => void | Promise<void>;
+  registerOutputSource: (input: RegisterExternalOutputSourceInput) => void | Promise<void>;
+  loadOutputSourceFiles: (sourceId: string) => void | Promise<void>;
+  importOutputSourceFiles: (
+    sourceId: string,
+    files: string[],
+    workspaceId?: string | null,
+  ) => void | Promise<void>;
+  isBackgroundEnabled: boolean;
+  onToggleBackground: () => void;
+  onResetStudio: () => void | Promise<void>;
+  isResettingStudio: boolean;
 }
 
 export interface StudioWorkspaceOverlaysProps {

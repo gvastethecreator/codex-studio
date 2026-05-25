@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-027
+packId: pack_10
+name: Chromatic Aberration
+category: 5. Digital Glitch & Noise
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+visualDna:
+  aesthetic: Lens error
+  form_and_line: Red/Cyan separation
+  color_palette: Fringing
+  lighting_setup: Normal
+  material_texture: Blurry edges
+  render_quality: Disoriented, 3D glasses
+  spatial_distortion: Color shift
+  atmosphere: Dizzy, intense
+  key_features: Edge fringe
+avoidRules:
+  - clean edges
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-027.webp
+attributes:
+  negativePrompt: clean edges

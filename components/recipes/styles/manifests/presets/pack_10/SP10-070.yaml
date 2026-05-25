@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-070
+packId: pack_10
+name: Azulejo Tile
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Portuguese ceramic tile
+  form_and_line: Blue painting
+  color_palette: Blue on White
+  lighting_setup: Glossy glaze
+  material_texture: Ceramic
+  render_quality: Historic, decorative
+  spatial_distortion: None
+  atmosphere: Classic, bright
+  key_features: Square grid
+avoidRules:
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-070.webp
+attributes:
+  negativePrompt: modern

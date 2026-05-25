@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-001
+packId: pack_06
+name: Oil Painting (Classic)
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Classic oil painting on canvas
+  form_and_line: Thick impasto brush strokes
+  color_palette: Rich, deep, blended traditional pigments
+  lighting_setup: Dramatic chiaroscuro
+  material_texture: Canvas grain, raised paint, brush bristles
+  render_quality: Masterpiece, museum quality
+  spatial_distortion: Slightly impressionistic
+  atmosphere: Timeless, expressive
+  key_features: Visible brushwork
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-001.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

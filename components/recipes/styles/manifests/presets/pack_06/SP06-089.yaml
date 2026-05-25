@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-089
+packId: pack_06
+name: Text-Mode Roguelike ANSI
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Terminal-based roguelike art, ASCII dungeon map, ANSI color-block monsters, CP437 code-page characters, Dwarf Fortress visual abstraction, NetHack @-symbol hero, ancient BBS door-game art, text-mode worldbuilding where ¥ is gold and D is dragon
+  form_and_line: Fixed-width character grid, monospace font construction, glyph-symbol representation, ASCII-art contour building, character-cell precision
+  color_palette: 16-color ANSI palette, DOS-blue background, bright-white @ hero, red D dragon, yellow ¥ gold, green forest hashes, cyan water tildes
+  lighting_setup: No lighting, pure symbolic display, color-coding for object type, ANSI-color depth cue, terminal-background ambient
+  material_texture: Monospace pixel-glyph grid, terminal-phosphor glow, text-mode character aliasing, CRT-character bleed bloom, scanline text overlay
+  render_quality: Text-mode game display, ANSI-art dungeon, terminal-gaming aesthetic, code-page visual language, pure-symbolic rendering
+  spatial_distortion: Character-grid dungeon floor, ASCII-symbol perspective, text-cell depth layering, fixed-width tile space, terminal-window framing
+  atmosphere: Arcane, scholarly, pure imagination, text-as-world, programmer-mystic, deep-systems reverence
+  key_features: ASCII/ANSI character representation, fixed-width grid, 16-color terminal palette, glyph-symbolic worldbuilding, code-page 437 characters
+avoidRules:
+  - graphical
+  - realistic
+  - 3d
+  - smooth
+  - photo
+  - painted
+  - modern
+  - high res
+  - sprites
+  - bitmap
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-089.webp
+attributes:
+  negativePrompt: graphical, realistic, 3d, smooth, photo, painted, modern, high res, sprites, bitmap

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-072
+packId: pack_03
+name: Clay UI
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Soft 3D interface
+  form_and_line: Rounded
+  color_palette: Pastel, matte, soft-interface tones
+  lighting_setup: Soft shadows, warm-ambient
+  material_texture: Smooth clay, molded-touch feel
+  render_quality: Friendly, app design, approachable UI
+  atmosphere: Friendly, soft, warm-invitation
+  key_features: Floating elements, pill-shape softness
+avoidRules:
+  - sharp
+  - flat
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-072.webp
+attributes:
+  negativePrompt: sharp, flat

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-020
+packId: pack_10
+name: Nebula Cloud
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Space gas
+  form_and_line: Soft edges
+  color_palette: Pink, Blue, Purple
+  lighting_setup: Internal star glow
+  material_texture: Gaseous
+  render_quality: Hubble, cosmic
+  spatial_distortion: Amorphous
+  atmosphere: Epic, vast
+  key_features: Stars
+avoidRules:
+  - solid
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-020.webp
+attributes:
+  negativePrompt: solid

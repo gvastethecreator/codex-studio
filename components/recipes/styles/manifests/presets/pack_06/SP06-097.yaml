@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-097
+packId: pack_06
+name: Amiga DeluxePaint HAM
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Commodore-Amiga-DeluxePaint aesthetic, HAM-6-Hold-And-Modify-mode 4096-colors, copper-list-rainbow-sky-gradients, 80s-computer-art-software, Defender-of-the-Crown-jewel-tones, Shadow-of-the-Beast-steel-grey-parallax, King-Tut-tomb-painting-pixel-art, Andy-Warhol-Amiga-1000-commodore-era, video-toaster-workstation-soul
+  form_and_line: Fat-Amiga-pixels, HAM-fringing-artifacts, copper-list-gradient-banding, 320x256-or-320x512-interlaced-workbench, 16-color-sprite-over-4096-background
+  color_palette: 4096-color-HAM-mode, rainbow-copper-list-gradients, King-Tut-treasure-gold, Defender-of-the-Crown-jewel, Amiga-Workbench-blue, video-toaster-spectrum, HAM-fringing-magenta-cyan edges
+  lighting_setup: Copper-list-gradient-as-sky-lighting, HAM-palette-gradient-shading, 16-color-sprite-lighting on 4096-backgrounds, no-real-time-light-but-beautiful-gradients
+  material_texture: HAM-fringing-edge-artifacts, copper-list-gradient-band-texture, DeluxePaint-brush-patterns, Amiga-hold-and-modify-color-bleed, NTSC-PAL-artifact-texture
+  render_quality: Amiga-DeluxePaint aesthetic, HAM-mode-beauty, 80s-computer-art software rendering, copper-list-rainbow, 4096-color-1985-miracle
+  spatial_distortion: 320x256-overscan-resolution, HAM-fringing-edge-pixels, copper-list-vertical-gradient-spatial, workbench-window-framing, PAL-interlace-spatial
+  atmosphere: 80s-computer-art-revolution, video-production-dream, boing-ball-demo-scene, Amiga-workbench-creativity, copper-list-programming-art
+  key_features: HAM6-Hold-And-Modify-fringing, copper-list-rainbow-gradients, 4096-color-mode, DeluxePaint-brush-patterns, Amiga-Workbench-blue, 320x256-resolution, video-toaster-aesthetic
+avoidRules:
+  - limited palette
+  - blocky
+  - simple
+  - modern
+  - smooth gradient
+  - dither
+  - PC
+  - low color
+  - '256'
+  - chunky
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-097.webp
+attributes:
+  negativePrompt: limited palette, blocky, simple, modern, smooth gradient, dither, PC, low color, 256, chunky

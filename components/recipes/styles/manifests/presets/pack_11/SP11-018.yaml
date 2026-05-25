@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-018
+packId: pack_11
+name: Balloon Art
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Twisted balloon animal, birthday-party clown, squeaky menagerie, latex zoo
+  form_and_line: Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends
+  color_palette: Shiny latex colors, carnival spectrum, bright-red, canary-yellow, sky-blue gloss
+  lighting_setup: High specular highlights, party-room glare, overhead fluorescent, balloon-surface reflection
+  material_texture: Stretched rubber, latex skin, powder-dusted finish, taut inflation tension
+  render_quality: Party, fragile, balloon-twisting magic, squeak-and-sculpt, festive impermanence
+  spatial_distortion: Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form
+  atmosphere: Fun, squeaky, celebration, birthday-cake excitement, carnival-joy, shared laughter
+  key_features: Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings
+avoidRules:
+  - sharp
+  - flat
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-018.webp
+attributes:
+  negativePrompt: sharp, flat

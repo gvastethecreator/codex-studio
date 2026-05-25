@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-056
+packId: pack_08
+name: Silk & Satin
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Slip dress, boudoir-elegance minimalism, liquid-light sensuality
+  form_and_line: Fluid drape, bias-cut column, cowl-neck waterfall, spaghetti-strap line, floor-grazing hem
+  color_palette: Champagne, Red, oyster, rose-quartz, midnight-navy, ivory, blush, emerald
+  lighting_setup: Soft sheen, candlelight ripple, vanity-bulb warmth, afternoon-window silk glow
+  material_texture: Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette
+  render_quality: Elegant, soft, boudoir-editorial luxury, light-caught-on-fabric poetry
+  spatial_distortion: None
+  atmosphere: Sensual, expensive, bedroom-secret intimacy, champagne-bubble delicacy, silk-against-skin luxury
+  key_features: Drape folds, bias-cut cling, cowl neck, spaghetti straps, liquid-sheen movement
+avoidRules:
+  - rough
+  - matte
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-056.webp
+attributes:
+  negativePrompt: rough, matte

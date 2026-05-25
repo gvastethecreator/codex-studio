@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-044
+packId: pack_08
+name: Wizard Robes
+category: 5. Fantasy/Sci-Fi Costume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fantasy-sci-fi-costume
+visualDna:
+  aesthetic: Classic mage, arcane-tower scholar, spellbook sanctum mystique
+  form_and_line: Flowing robes, bell-sleeve drape, hooded-cowl depth, floor-length column, pointed-hat apex
+  color_palette: Deep Blue, Stars, burgundy, amethyst, midnight, silver-thread constellations, emerald
+  lighting_setup: Magic glow, spell-light rim, candle-flicker ambiance, crystal-orb luminescence, staff-gem radiance
+  material_texture: Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay
+  render_quality: Magical, wise, illuminated-manuscript wonder, arcane-academia gravitas
+  spatial_distortion: None
+  atmosphere: Mysterious, powerful, forbidden-knowledge awe, tower-library silence, incantation tension
+  key_features: Staff, pointed hat, spellbook, crystal pendant, rune-embroidered robe
+avoidRules:
+  - pants
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-044.webp
+attributes:
+  negativePrompt: pants, modern

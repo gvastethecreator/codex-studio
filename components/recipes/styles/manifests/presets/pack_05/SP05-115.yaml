@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: SP05-115
+packId: pack_05
+name: Ice-Crystal Refractive
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Frozen-crystalline-anime, characters as living ice-sculptures, faceted-glass-surface-rendering, internal-light-refraction-splitting-into-rainbow, diamond-gem-cut-proportions-on-human-figures, frozen-in-motion poses, sub-zero-beauty, Ice-Queen-archetype taken to geometric extreme, Land-of-the-Lustrous-Houseki-no-Kuni gem-people energy
+  form_and_line: Faceted-crystal contours, sharp-geometric-edge-lines, no organic curves, prism-cut-surface-faceting, hexagonal-ice-crystal symmetry
+  color_palette: Ice-blue, cyan, frozen-lake-turquoise, polar-white, frost-mint, prism-refraction-rainbow-accents, glacier-deep-indigo, diamond-sparkle-spectrum
+  lighting_setup: Internal-refraction-rainbow-splitting, subsurface-scattering-in-ice, rim-light-on-crystal-edges, caustic-light-patterns, frozen-sun-backlight
+  material_texture: Glass-crystal-surface, internal-fracture-planes, frost-fern-pattern-texture, diamond-facet-micro-scratches, ice-core-bubble-imperfections
+  render_quality: Crystalline-ice-anime aesthetic, gem-cut-beauty, frozen-refractive-rendering, arctic-elegance, geometric-ice-sculpture-animation
+  spatial_distortion: Faceted-gem-cut body proportions, hexagonal-symmetry, prism-split-light-spatial-rainbows, ice-shard-fragmentation-composition
+  atmosphere: Frozen, pristine, otherworldly-cold, crystal-temple-silence, geometric-perfection-awe, winter-solitude-beauty
+  key_features: Faceted-crystal-contours, internal-light-refraction, prism-rainbow-splitting, ice-blue-monochrome-spectrum, hexagonal-ice-symmetry, frost-fern-textures
+avoidRules:
+  - warm
+  - soft
+  - organic
+  - round
+  - colorful
+  - dark
+  - muted
+  - earthy
+  - glowing
+  - fiery
+  - textured
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-115.webp
+attributes:
+  negativePrompt: warm, soft, organic, round, colorful, dark, muted, earthy, glowing, fiery, textured

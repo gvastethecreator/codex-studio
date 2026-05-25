@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-013
+packId: pack_04
+name: Chibi Style
+category: 1. Comic Book Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+visualDna:
+  aesthetic: Super deformed
+  form_and_line: Thick outline
+  color_palette: Bright, candy pop, hyper-saturated cute
+  lighting_setup: Simple, flat cel, soft ambient glow
+  material_texture: Smooth
+  render_quality: Cute, mascot, squishable charm, kawaii appeal
+  spatial_distortion: 2 heads tall
+  atmosphere: Kawaii, funny, playful slapstick, adorable chaos
+  key_features: Big head, tiny body, oversized props
+avoidRules:
+  - tall
+  - realistic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-013.webp
+attributes:
+  negativePrompt: tall, realistic

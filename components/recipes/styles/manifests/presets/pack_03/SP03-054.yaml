@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-054
+packId: pack_03
+name: Food CGI
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Perfect burger ad
+  form_and_line: Juicy details
+  color_palette: Saturated, fresh
+  lighting_setup: Backlit steam
+  material_texture: Wet, condensation, micro-droplets
+  render_quality: McDonalds fast-food hero ad, impossibly appetizing
+  spatial_distortion: Flying ingredients
+  atmosphere: Delicious, hyperreal, crave-inducing
+  key_features: Water droplets, steam wisps
+avoidRules:
+  - rotten
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-054.webp
+attributes:
+  negativePrompt: rotten, dry

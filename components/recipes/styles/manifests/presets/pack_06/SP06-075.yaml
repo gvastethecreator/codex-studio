@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-075
+packId: pack_06
+name: Digital Collage
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Photoshop composite
+  form_and_line: Clean cuts
+  color_palette: Vibrant, surreal
+  lighting_setup: Digital
+  material_texture: Screen
+  render_quality: Modern art, vaporwave
+  spatial_distortion: Scale play
+  atmosphere: Surreal, fun
+  key_features: Digital edges
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-075.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-047
+packId: pack_09
+name: Fur (Synthetic)
+category: 3. Tactile Surfaces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - tactile-surfaces
+visualDna:
+  aesthetic: Faux fur coat
+  form_and_line: Uniform strands
+  color_palette: Bright Pink/Blue
+  lighting_setup: Plastic sheen
+  material_texture: Soft but synthetic
+  render_quality: Fashion, fun
+  spatial_distortion: None
+  atmosphere: Trendy, soft
+  key_features: Uniform length
+avoidRules:
+  - real fur
+  - skin
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-047.webp
+attributes:
+  negativePrompt: real fur, skin

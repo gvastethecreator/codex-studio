@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-074
+packId: pack_06
+name: Paint over Photo
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Acrylic strokes on photo
+  form_and_line: Brush strokes
+  color_palette: Photo + Paint
+  lighting_setup: Mixed
+  material_texture: Paint texture
+  render_quality: Gerhard Richter, expressive
+  spatial_distortion: Obscured details
+  atmosphere: Abstracted reality
+  key_features: Smeared paint
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-074.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

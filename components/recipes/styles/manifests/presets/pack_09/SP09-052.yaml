@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-052
+packId: pack_09
+name: Electricity/Lightning
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Tesla coil arc
+  form_and_line: Jagged bolts
+  color_palette: Blue, White, Purple
+  lighting_setup: Bright flash
+  material_texture: Plasma
+  render_quality: High energy
+  spatial_distortion: None
+  atmosphere: Shocking, fast
+  key_features: Branching
+avoidRules:
+  - fire
+  - smoke
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-052.webp
+attributes:
+  negativePrompt: fire, smoke

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-016
+packId: pack_04
+name: Tech Noir Comic
+category: 1. Comic Book Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+visualDna:
+  aesthetic: Cyberpunk city
+  form_and_line: Sharp
+  color_palette: Neon on Black, cyan/magenta vapor, deep-night void
+  lighting_setup: City lights, neon reflection cascade, volumetric mist
+  material_texture: Rain, grit
+  render_quality: Blade Runner neon-noir dark, rainy dystopia, future-chic
+  spatial_distortion: None
+  atmosphere: Dystopian, cool, street-level future, chrome-and-wet-asphalt
+  key_features: Rain, neon reflection, persistent drizzle
+avoidRules:
+  - daylight
+  - nature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-016.webp
+attributes:
+  negativePrompt: daylight, nature

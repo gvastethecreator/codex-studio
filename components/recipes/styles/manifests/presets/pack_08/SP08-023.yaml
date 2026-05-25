@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-023
+packId: pack_08
+name: Lolita Fashion
+category: 3. Subcultures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+visualDna:
+  aesthetic: Victorian doll style, porcelain-dream sweetness, Harajuku tea-party fantasy
+  form_and_line: Ruffles, bell shape, tiered cupcake skirt, mutton-leg sleeve, high-neck lace collar
+  color_palette: Pink, White, Blue, mint, lavender, saxon blue, dusty rose, milk-white
+  lighting_setup: Soft, diffused window light, tea-room warmth, petal-pink bounce
+  material_texture: Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons
+  render_quality: Cute, elaborate, Angelic Pretty refinement, doll-like perfection
+  spatial_distortion: None
+  atmosphere: Sweet, innocent, candy-land gentility, storybook serenity, lace-gloved delicacy
+  key_features: Bonnet, lace gloves, Mary-Jane pumps, ribbon-laced corset back
+avoidRules:
+  - modern
+  - pants
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-023.webp
+attributes:
+  negativePrompt: modern, pants

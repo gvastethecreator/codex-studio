@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-012
+packId: pack_10
+name: Smoke Photography
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Wisps of smoke
+  form_and_line: Soft curves
+  color_palette: White on Black or Colored
+  lighting_setup: Studio flash
+  material_texture: Gaseous
+  render_quality: High speed photo
+  spatial_distortion: Turbulence
+  atmosphere: Mysterious, ephemeral
+  key_features: Black background
+avoidRules:
+  - solid object
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-012.webp
+attributes:
+  negativePrompt: solid object

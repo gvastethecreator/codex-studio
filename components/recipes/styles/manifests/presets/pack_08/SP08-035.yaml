@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-035
+packId: pack_08
+name: Samurai Armor
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Japanese warrior, bushido silence, floating-world legend
+  form_and_line: Laced plates, do-chest breadth, sode-shoulder square, haidate-thigh panel, menpo-mask severity
+  color_palette: Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory
+  lighting_setup: Dramatic, bamboo-forest dapple, castle-interior shadow, dawn-mist atmosphere
+  material_texture: Lacquered iron, silk odoshi lacing, ray-skin tsuka, hammered gold leaf, braided silk cord, iron menpo
+  render_quality: Intimidating, detailed, Kurosawa-frame gravitas, daimyo-level craft
+  spatial_distortion: None
+  atmosphere: Honorable, fierce, cherry-blossom impermanence, pre-dawn stillness, unblinking discipline
+  key_features: Kabuto helmet, maedate crest, mempo face mask, katana pair, sashimono back-banner
+avoidRules:
+  - european armor
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-035.webp
+attributes:
+  negativePrompt: european armor

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-045
+packId: pack_09
+name: Felt Fabric
+category: 3. Tactile Surfaces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - tactile-surfaces
+visualDna:
+  aesthetic: Compressed wool
+  form_and_line: Fuzzy edge
+  color_palette: Matte colors
+  lighting_setup: Soft absorption
+  material_texture: Fuzzy, dense
+  render_quality: Craft, soft
+  spatial_distortion: None
+  atmosphere: Warm, craft
+  key_features: No weave
+avoidRules:
+  - woven
+  - shiny
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-045.webp
+attributes:
+  negativePrompt: woven, shiny

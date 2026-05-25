@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-064
+packId: pack_03
+name: Exploded View
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Parts floating apart
+  form_and_line: Assembly lines
+  color_palette: Technical, assembly-color coding
+  lighting_setup: Flat, diagram clarity
+  material_texture: Internal parts, cross-section surfaces
+  render_quality: Engineering, diagram, instructional
+  atmosphere: Technical, complex, assembly logic
+  key_features: Alignment, explosion direction
+avoidRules:
+  - assembled
+  - solid
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-064.webp
+attributes:
+  negativePrompt: assembled, solid

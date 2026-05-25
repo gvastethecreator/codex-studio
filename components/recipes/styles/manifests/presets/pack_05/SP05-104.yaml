@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-104
+packId: pack_05
+name: Minimalist Indie Quiet
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Sparse economical animation, generous negative space, single-line character expressions, backgrounds reduced to color atmospheres, Makoto Shinkai skies stripped to essence, quiet indie-game cutscene, intentional emptiness, every line earned
+  form_and_line: Ultra-thin restrained ink lines, minimal contour economy, suggestion over statement, fewer strokes more impact
+  color_palette: Single-hue atmospheres, sky-gradient minimalism, off-white expanses, one accent color per scene, monochrome restraint
+  lighting_setup: Soft overcast diffusion, single-source window light, crepuscular quiet rays, ambient emptiness
+  material_texture: Smooth digital matte, untextured simplicity, paper-white void, subtle grain whisper if any
+  render_quality: Indie-anime minimalism, arthouse restraint, quiet-production beauty, less-is-more conviction
+  spatial_distortion: Characters small in vast empty spaces, loneliness-accentuating framing, negative-space compositions
+  atmosphere: Quiet, introspective, profoundly lonely, meditative stillness, held breath
+  key_features: Negative space dominance, minimalist line count, single-color atmospheres, tiny figures in big emptiness, intentional silence
+avoidRules:
+  - busy
+  - detailed
+  - complex
+  - epic
+  - flashy
+  - saturated
+  - dramatic
+  - crowded
+  - explosive
+  - maximalist
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-104.webp
+attributes:
+  negativePrompt: busy, detailed, complex, epic, flashy, saturated, dramatic, crowded, explosive, maximalist

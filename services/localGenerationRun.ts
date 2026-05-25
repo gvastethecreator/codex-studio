@@ -3,11 +3,8 @@ import type { Job as StudioJob } from '../packages/shared/src';
 import { createThumbnail } from '../utils/imageUtils';
 import { resolveGenerationConfig } from '../lib/recipeContext';
 import { materializeVisualBatchImage } from '../lib/studioVisualBatchCatalog';
-import {
-  createStudioJob,
-  listProjects,
-  queryCatalog,
-} from './localStudioService';
+import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
+import { createStudioJob, listProjects, queryCatalog } from './localStudioService';
 import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
 import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
 
@@ -125,10 +122,34 @@ export async function runSingleCodexImagegenJob(options: {
         },
       ]
     : [];
+  const finalPrompt = promptParts.join('\n\n');
+  const sourceSpec = buildGenerationTaskSpecFromRecipe({
+    id: `${batchId}-${Date.now()}`,
+    providerId: 'codex',
+    task: inputImage ? 'image_edit' : undefined,
+    config: {
+      ...config,
+      prompt: finalPrompt,
+      batchCount: 1,
+    },
+  });
   const createdJob = await createStudioJob({
     projectId,
-    kind: 'codex_imagegen',
-    prompt: promptParts.join('\n\n'),
+    kind: sourceSpec.task,
+    providerId: 'codex',
+    sourceSpec: {
+      ...sourceSpec,
+      assets: [
+        ...sourceSpec.assets,
+        ...inputReference.map((reference) => ({
+          role: 'input' as const,
+          name: reference.name,
+          dataUrl: reference.dataUrl,
+          strength: reference.strength,
+        })),
+      ],
+    },
+    prompt: finalPrompt,
     execution: {
       model: config.executionModel,
       reasoningEffort: config.executionReasoningEffort,

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-080
+packId: pack_10
+name: Letterpress
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Deep impression ink
+  form_and_line: Debossed
+  color_palette: Solid ink
+  lighting_setup: Shadow in impression
+  material_texture: Cotton paper
+  render_quality: Tactile, classic
+  spatial_distortion: None
+  atmosphere: Craft, quality
+  key_features: Impression depth
+avoidRules:
+  - flat print
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-080.webp
+attributes:
+  negativePrompt: flat print

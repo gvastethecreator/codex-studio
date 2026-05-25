@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-063
+packId: pack_08
+name: Feathers
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Showgirl costume, Folies-Bergere extravagance, stage-spectacle plumage
+  form_and_line: Soft barbs, feather-fan spread, headdress-arc corona, tail-train sweep, wing-cape silhouette
+  color_palette: Bright, Peacock, fuchsia, emerald-green, sapphire, gold, flamingo-pink, iridescent-oil
+  lighting_setup: Soft, stage-spotlight drama, feather-edge translucency, backstage-bulb warmth, curtain-call glow
+  material_texture: Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle
+  render_quality: Exotic, soft, cabaret-spectacle grandeur, Moulin-Rouge opulence
+  spatial_distortion: None
+  atmosphere: Grand, bird, stage-curtain anticipation, plumage-pride majesty, feathered-flight fantasy
+  key_features: Quills, feather fan, headdress, marabou trim, iridescent barb
+avoidRules:
+  - fur
+  - hair
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-063.webp
+attributes:
+  negativePrompt: fur, hair

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-017
+packId: pack_09
+name: Brushed Aluminum
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Metal surface
+  form_and_line: Micro scratches
+  color_palette: Silver Grey
+  lighting_setup: Anisotropic
+  material_texture: Fine lines
+  render_quality: Industrial, tech
+  spatial_distortion: None
+  atmosphere: Modern, clean
+  key_features: Directional scratch
+avoidRules:
+  - chrome
+  - mirror
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-017.webp
+attributes:
+  negativePrompt: chrome, mirror

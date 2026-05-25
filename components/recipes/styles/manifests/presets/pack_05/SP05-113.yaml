@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP05-113
+packId: pack_05
+name: Stained-Glass Cathedral Anime
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Anime rendered as gothic-cathedral stained-glass window, figures segmented by black-lead-came lines, jewel-toned-translucent color-fields, backlit-by-sunlight-streaming-through effect, rose-window-circular-composition-framing, medieval-manuscript illumination energy, saints-and-angels-iconography applied to anime archetypes, Notre-Dame-rose-window-rose-meets-shojo-sparkle
+  form_and_line: Thick-black-lead-came-segmentation lines, Gothic-arch-framing, geometric-rosette-divisions, hieratic-scale-proportions, decorative-border-filigree
+  color_palette: Sapphire-blue, ruby-red, emerald-green, amethyst-purple, gold-yellow, translucent-jewel-spectrum, cathedral-gloom-dark-edges, sun-through-color-glow
+  lighting_setup: Backlit-translucent-glow, sunlight-streaming-through-colored-glass, interior-cathedral-dimness-contrast, divine-light-ray-god-rays
+  material_texture: Textured-stained-glass surface, lead-came-metallic-joints, glass-bubble-imperfections, hand-blown-variation, stone-tracery-framing
+  render_quality: Stained-glass-anime-fusion, cathedral-window-beauty, translucent-color-rendering, sacred-art-aesthetic, jewel-toned-divine-light
+  spatial_distortion: Segmented-by-lead-lines, rose-window-circular-framing, Gothic-arch-vertical-emphasis, flat-icon-perspective, hieratic-scale-size-means-importance
+  atmosphere: Sacred, awe-inspiring, divine-light, cathedral-hush, medieval-reverence-meets-anime-emotion, transcendent-beauty
+  key_features: Black-lead-came-segmentation, jewel-toned-translucent-colors, backlit-by-sunlight-glow, Gothic-arch-framing, rose-window-circular-composition, glass-imperfection-texture
+avoidRules:
+  - flat
+  - opaque
+  - subtle
+  - muted
+  - dark
+  - realistic render
+  - soft lighting
+  - smooth gradient
+  - simple
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-113.webp
+attributes:
+  negativePrompt: flat, opaque, subtle, muted, dark, realistic render, soft lighting, smooth gradient, simple

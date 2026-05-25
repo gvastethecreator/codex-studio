@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP06-096
+packId: pack_06
+name: Neo Geo Sprite King
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Neo-Geo-arcade-perfection, massive-detailed-sprites-unmatched, Metal-Slug-animation-fluidity, King-of-Fighters-sprite-artistry, Samurai-Shodown-silhouette-power, 1990-arcade-king-machine, unlimited-sprite-budget-during-development, every-frame-hand-drawn-with-love, AES-cartridge-ridiculous-price-tag-energy
+  form_and_line: Enormous-detailed-sprite-pixels, massive-animation-frames-per-character, background-parallax-depth, no-hardware-sprite-limits-visible, pixel-art-at-its-peak
+  color_palette: 4096-color-simultaneous, 65K-total-palette, rich-vibrant-arcade-spectrum, SNK-deep-color-mastery, no-palette-compromise, unlimited-sprite-color-budget
+  lighting_setup: Sprite-pixel-art-lighting-finesse, hundreds-of-frames-animation, palette-gradient-depth, background-atmospheric-perspective, sprite-shadow-under-foot
+  material_texture: Massive-sprite-pixel-texture, hand-drawn-animation-frame-density, background-tile-variety-wealth, arcade-CRT-perfect-display, AES-home-cartridge-luxury, no-compromise-pixel-quality
+  render_quality: Neo-Geo-sprite-king aesthetic, peak-pixel-art rendering, arcade-perfection beauty, Metal-Slug-animation-masterpiece, unlimited-sprite-budget-luxury
+  spatial_distortion: Massive-sprite-on-screen-freedom, many-background-parallax-layers, no-object-limits-spatial, fluid-animation-without-spatial-compromise
+  atmosphere: Arcade-royalty, pixel-art-apotheosis, money-is-no-object-production, SNK-golden-age, MVS-cartridge-heavyweight-champion
+  key_features: Massive-detailed-sprites, Metal-Slug-animation-fluidity, 4096-simultaneous-colors, no-visible-sprite-limits, rich-arcade-palette, hundreds-of-animation-frames, SNK-sprite-artistry
+avoidRules:
+  - low detail
+  - limited sprite
+  - simple
+  - minimal
+  - retro
+  - small
+  - basic
+  - weak hardware
+  - few frames
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-096.webp
+attributes:
+  negativePrompt: low detail, limited sprite, simple, minimal, retro, small, basic, weak hardware, few frames

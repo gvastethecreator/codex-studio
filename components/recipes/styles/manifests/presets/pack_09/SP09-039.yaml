@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-039
+packId: pack_09
+name: Frozen/Frosted
+category: 4. Weathering & Decay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - weathering-and-decay
+visualDna:
+  aesthetic: Freezer burn
+  form_and_line: Ice crystals
+  color_palette: White, Blue
+  lighting_setup: Sparkle
+  material_texture: Crystalline
+  render_quality: Cold, winter
+  spatial_distortion: Surface buildup
+  atmosphere: Freezing, preserved
+  key_features: Crystal growth
+avoidRules:
+  - melted
+  - wet
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-039.webp
+attributes:
+  negativePrompt: melted, wet

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-067
+packId: pack_02
+name: Double Exposure
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Layered images
+  form_and_line: None
+  color_palette: Ghostly mix, overlapping hue, translucent blend, ethereal overlay
+  lighting_setup: Screen blend, additive exposure, in-camera double-strike
+  material_texture: Complex, layered transparency, film-sandwich density
+  render_quality: Artsy, dream, visual poetry, memory-merge
+  spatial_distortion: Overlap, face-in-landscape, figure-in-figure
+  atmosphere: Surreal, memory, dual identity, fleeting connection
+  key_features: Two subjects, silhouette-within-silhouette, nature-portrait fusion
+avoidRules:
+  - single image
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-067.webp
+attributes:
+  negativePrompt: single image

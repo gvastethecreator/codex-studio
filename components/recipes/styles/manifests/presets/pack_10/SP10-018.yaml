@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-018
+packId: pack_10
+name: Reaction Diffusion
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Turing pattern
+  form_and_line: Stripes and spots
+  color_palette: Two tone
+  lighting_setup: Flat
+  material_texture: Biological
+  render_quality: Generative, math
+  spatial_distortion: None
+  atmosphere: Hypnotic, natural
+  key_features: Fingerprint pattern
+avoidRules:
+  - random noise
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-018.webp
+attributes:
+  negativePrompt: random noise

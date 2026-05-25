@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP07-061
+packId: pack_07
+name: Ice Palace
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Frozen castle, glacial fortress, winter queen's palace, crystalline ice-kingdom, permafrost monument
+  form_and_line: Sharp ice, icicle colonnade, frozen-cascade stairs, crystal-spike spires, frost-filigree arch
+  color_palette: White, Cyan, Ice Blue, Aurora Green, Deep-glacier Teal, Diamond-spark
+  lighting_setup: Glittering, aurora-shimmer, ice-internal refraction, moon-on-snow, frozen-sun brilliance
+  material_texture: Ice, snow, frost flower, hoarfrost, compacted snow-block, glacial glass, crystal rime
+  render_quality: Cold, magical, Narnia-Winter beauty, frozen-cathedral grandeur, ice-sculpture perfection
+  spatial_distortion: None
+  atmosphere: Frozen, regal, winter-eternal, enchanted-cold, silent-snow, crystalline-awe, frosted-breath
+  key_features: Icicles, frost crystals, ice chandelier, snowdrift stairs, frozen throne, aurora-lit hall, ice bridge
+avoidRules:
+  - warm
+  - fire
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-061.webp
+attributes:
+  negativePrompt: warm, fire

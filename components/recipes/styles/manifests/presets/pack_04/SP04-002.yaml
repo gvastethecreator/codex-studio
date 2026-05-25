@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-002
+packId: pack_04
+name: Silver Age Comic
+category: 1. Comic Book Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+visualDna:
+  aesthetic: Cosmic silver-age dynamism, Jack Kirby style, crackling energy dots, cosmic scale, new-god ambition
+  form_and_line: Dynamic energy, Kirby dots, crackle, cosmic radiation lines
+  color_palette: Bright primary, comic pop spectrum, magenta/cyan punch
+  lighting_setup: Dramatic, cosmic backlight, heroic rim glow
+  material_texture: Newsprint
+  render_quality: Cosmic, energetic, crackling aura, silver-age spectacle
+  spatial_distortion: Exaggerated perspective
+  atmosphere: Epic, sci-fi, super-powered wonder, interstellar drama
+  key_features: Kirby Krackle, cosmic energy field, dynamic foreshortening
+avoidRules:
+  - dark
+  - gritty
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-002.webp
+attributes:
+  negativePrompt: dark, gritty

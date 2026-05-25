@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-021
+packId: pack_09
+name: Carbon Fiber (Forged)
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Chopped fiber composite
+  form_and_line: Random flakes
+  color_palette: Black/Grey marble look
+  lighting_setup: Glossy clear coat
+  material_texture: Smooth but visual depth
+  render_quality: Supercar, high tech
+  spatial_distortion: None
+  atmosphere: Fast, expensive
+  key_features: Random flakes
+avoidRules:
+  - woven pattern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-021.webp
+attributes:
+  negativePrompt: woven pattern

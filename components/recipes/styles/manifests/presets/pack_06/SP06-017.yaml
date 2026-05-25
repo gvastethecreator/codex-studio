@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-017
+packId: pack_06
+name: Charcoal (Expressive)
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Loose charcoal sketch
+  form_and_line: Thick, smudged, bold
+  color_palette: Deep black, grey
+  lighting_setup: Dramatic contrast
+  material_texture: Rough paper, dust
+  render_quality: Emotional, raw
+  spatial_distortion: Gestural
+  atmosphere: Dark, intense
+  key_features: Smudged texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-017.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

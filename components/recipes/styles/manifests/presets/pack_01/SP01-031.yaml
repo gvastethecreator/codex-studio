@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP01-031
+packId: pack_01
+name: Golden Hour
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Sunset/Sunrise light
+  form_and_line: Long shadows
+  color_palette: Warm Gold, Orange, Red
+  lighting_setup: Directional, soft
+  material_texture: Glowing atmosphere
+  render_quality: Romantic, travel
+  spatial_distortion: Lens flare
+  atmosphere: Warm, happy
+  key_features: Warm cast
+avoidRules:
+  - blue
+  - cold
+  - noon
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-031.webp
+attributes:
+  negativePrompt: blue, cold, noon

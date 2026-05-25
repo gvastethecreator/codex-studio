@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-063
+packId: pack_02
+name: Rembrandt Lighting
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Classic portrait
+  form_and_line: None
+  color_palette: Warm skin, dark bg, umber shadow, golden highlight, deep void
+  lighting_setup: Chiaroscuro triangle, 45-degree key, single-source drama
+  material_texture: Painterly light, oil-paint falloff, velvet darkness
+  render_quality: Dramatic, classic, old-master gravitas, portrait dignity
+  spatial_distortion: None
+  atmosphere: Serious, art, introspective stillness, Dutch-master soul
+  key_features: Triangle on cheek, one-lit-eye, dark-side mystery
+avoidRules:
+  - flat
+  - bright
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-063.webp
+attributes:
+  negativePrompt: flat, bright

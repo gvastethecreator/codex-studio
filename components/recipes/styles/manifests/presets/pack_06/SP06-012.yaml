@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-012
+packId: pack_06
+name: Spray Paint (Graffiti)
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Street art mural
+  form_and_line: Soft spray edges, drips
+  color_palette: Neon, vibrant, aerosol
+  lighting_setup: Outdoor city light
+  material_texture: Concrete wall, paint drips
+  render_quality: Urban, gritty
+  spatial_distortion: Stylized forms
+  atmosphere: Rebellious, cool
+  key_features: Spray texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-012.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

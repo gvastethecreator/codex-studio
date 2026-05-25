@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-038
+packId: pack_09
+name: Dusty Surface
+category: 4. Weathering & Decay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - weathering-and-decay
+visualDna:
+  aesthetic: Attic find
+  form_and_line: Finger swipes
+  color_palette: Grey layer
+  lighting_setup: Soft
+  material_texture: Particulate
+  render_quality: Old, forgotten
+  spatial_distortion: None
+  atmosphere: Quiet, time
+  key_features: Top surface only
+avoidRules:
+  - clean
+  - polished
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-038.webp
+attributes:
+  negativePrompt: clean, polished

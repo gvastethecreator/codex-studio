@@ -5,7 +5,6 @@ import type { StudioDiagnosticsSnapshot } from '../../lib/studioDiagnostics';
 import type { Job as StudioJob } from '../../packages/shared/src';
 import type { QueueJob } from '../../types';
 import { QueuePanel } from '../QueuePanel';
-import { RightSystemPanel } from '../RightSystemPanel';
 
 export interface StudioOperationsRailProps {
     isModalOpen: boolean;
@@ -44,20 +43,8 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
     removeJob,
     clearCompleted,
     isResting,
-    exportBatches,
-    handleImportVault,
-    isBackgroundEnabled,
-    setBackgroundEnabled,
-    activeServerJobCount,
     onInspectJob,
-    diagnostics,
-    onResetStudio,
-    isResettingStudio,
 }) => {
-    const handleToggleBackground = useCallback(() => {
-        setBackgroundEnabled(!isBackgroundEnabled);
-    }, [isBackgroundEnabled, setBackgroundEnabled]);
-
     const handleToggleQueue = useCallback(() => {
         setIsQueueOpen((previous) => !previous);
     }, [setIsQueueOpen]);
@@ -93,18 +80,6 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
                     </motion.div>
                 )}
             </AnimatePresence>
-            <RightSystemPanel
-                onImportVault={handleImportVault}
-                onExportVault={exportBatches}
-                isBackgroundEnabled={isBackgroundEnabled}
-                onToggleBackground={handleToggleBackground}
-                isQueueOpen={isQueueOpen}
-                onToggleQueue={handleToggleQueue}
-                queueCount={jobs.length + activeServerJobCount}
-                diagnostics={diagnostics}
-                onResetStudio={onResetStudio}
-                isResettingStudio={isResettingStudio}
-            />
         </div>
     );
 };

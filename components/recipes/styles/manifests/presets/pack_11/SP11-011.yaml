@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-011
+packId: pack_11
+name: Synthwave 80s
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: Retro-futurist 80s grid, neon-drenched nostalgia, cassette-punk dreamscape, outrun highway
+  form_and_line: Laser grid, wireframe mountains, chrome horizon, sun-striped plane, digital contour
+  color_palette: Magenta, Cyan, Purple, Black, hot-neon spectrum, cyan-to-magenta gradient, deep-void backdrop
+  lighting_setup: Neon sun, glow, grid-floor radiance, chrome reflection bounce, ambient synth-light
+  material_texture: VHS grain, scanlines, CRT phosphor, chrome gloss, magnetic-tape hiss
+  render_quality: Outrun, retro, cool, FM-synth aesthetic, drive-into-sunset bliss, retro-wave precision
+  spatial_distortion: Chrome reflection, infinite grid, sun-stripe layering, horizon-engine depth
+  atmosphere: Nostalgic, fast, digital, midnight drive, electromagnetic romance, hyper-color pulse
+  key_features: Sunset gradient, laser-grid floor, triangular sun bands, neon palm silhouettes
+avoidRules:
+  - nature
+  - green
+  - day
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-011.webp
+attributes:
+  negativePrompt: nature, green, day

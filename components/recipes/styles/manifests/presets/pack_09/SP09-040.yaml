@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-040
+packId: pack_09
+name: Oil Stains
+category: 4. Weathering & Decay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - weathering-and-decay
+visualDna:
+  aesthetic: Garage floor
+  form_and_line: Puddles
+  color_palette: Black, Rainbow sheen
+  lighting_setup: Glossy spots
+  material_texture: Wet spots
+  render_quality: Dirty, mechanical
+  spatial_distortion: Stained
+  atmosphere: Industrial, dirty
+  key_features: Drip pattern
+avoidRules:
+  - clean concrete
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-040.webp
+attributes:
+  negativePrompt: clean concrete

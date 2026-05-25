@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-012
+packId: pack_02
+name: Wes Anderson Symmetrical Storybook Cinema
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Symmetrical composition
+  form_and_line: None
+  color_palette: Pastel palette, butter yellow, mint green, dusty pink, warm ochre
+  lighting_setup: Flat, soft, diffused wrap, even exposure, no shadow drama
+  material_texture: Film, Kodak stock, matte surface, hand-painted props
+  render_quality: Quirky, precise, diorama-perfect, miniature precision
+  spatial_distortion: Center frame, locked-down composition, 90-degree pans
+  atmosphere: Whimsical, deadpan, storybook melancholy, curated nostalgia
+  key_features: Symmetry, cross-section sets, handwritten typography
+avoidRules:
+  - asymmetrical
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-012.webp
+attributes:
+  negativePrompt: asymmetrical, messy

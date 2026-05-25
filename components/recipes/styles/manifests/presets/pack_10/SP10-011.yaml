@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-011
+packId: pack_10
+name: Alcohol Ink
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Fluid painting
+  form_and_line: Hard drying edges
+  color_palette: Translucent, vibrant
+  lighting_setup: Backlit
+  material_texture: Fluid dynamics
+  render_quality: Abstract art, flow
+  spatial_distortion: Liquid
+  atmosphere: Dreamy, fluid
+  key_features: Gold veins
+avoidRules:
+  - solid
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-011.webp
+attributes:
+  negativePrompt: solid, dry

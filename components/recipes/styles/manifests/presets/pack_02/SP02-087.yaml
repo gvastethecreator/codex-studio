@@ -1,0 +1,36 @@
+schemaVersion: 1
+id: SP02-087
+packId: pack_02
+name: Rubber-Hose Insanity
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: 1930s rubber-hose cartoon pushed to mania, limbs like overcooked spaghetti, pupils detaching from eyes, feet expanding to piano size mid-stride, bodies folding into accordion shapes, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode
+  form_and_line: Noodle-thin bouncing outlines, squash-and-stretch taken beyond breaking point, elastic deformation extremes
+  color_palette: Vintage cel paint, off-registration cyan bleed, nicotine-stain sepia, fading technicolor, ink-smear black
+  lighting_setup: Nonexistent lighting logic, flat cel shading, occasional shadow blob where foot touches ground
+  material_texture: 16mm film grain, cel paint brush strokes visible, dust-scratched negative, old-reel flicker
+  render_quality: Vintage rubber-hose chaos, golden-age bounciness amplified tenfold, classic cartoon on fast-forward
+  spatial_distortion: Arms knotting like balloon animals, torso compressing into hockey puck, legs extending infinite staircases, pupils orbiting head
+  atmosphere: Frenzied, hysterical, pure kinetic madness, cartoon physics unleashed
+  key_features: Rubber-hose limbs with no joints, pie-cut eyes separating, torso accordion compression, object-head hammer impact
+avoidRules:
+  - realistic
+  - anatomical
+  - straight lines
+  - stiff
+  - rigid
+  - normal proportions
+  - restraint
+  - subtle movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-087.webp
+attributes:
+  negativePrompt: realistic, anatomical, straight lines, stiff, rigid, normal proportions, restraint, subtle movement

@@ -12,7 +12,7 @@ import {
   type SessionHandle,
 } from './sessionPool';
 import type { JsonRpcMessage } from './rpcClient';
-import type { JobExecutionOptions } from '../../../../packages/shared/src';
+import type { CompiledProviderInput, JobExecutionOptions } from '../../../../packages/shared/src';
 
 const IMAGEGEN_SKILL_PATH = path.join(
   resolvePlatformPath('codex-skills-dir'),
@@ -27,6 +27,7 @@ export interface TurnParams {
   jobId: string;
   sessionKey?: string;
   execution?: JobExecutionOptions | null;
+  compiledInput?: CompiledProviderInput<{ text: string }> | null;
   signal?: AbortSignal;
 }
 
@@ -133,7 +134,13 @@ interface ResolvedCodexTurnDependencies {
 
 async function runCodexImagegenTurn(
   session: SessionHandle,
-  job: { id: string; prompt: string; projectId: string; execution?: JobExecutionOptions | null },
+  job: {
+    id: string;
+    prompt: string;
+    projectId: string;
+    execution?: JobExecutionOptions | null;
+    compiledInput?: CompiledProviderInput<{ text: string }> | null;
+  },
   transcriptPath: string,
   startedAt: number,
   sessionKey: string,
@@ -158,10 +165,11 @@ async function runCodexImagegenTurn(
         {
           type: 'text',
           text:
-            'Generate exactly one portrait image for this Codex Studio style preset. ' +
-            'Use txt2img from the full prompt below. Save or expose the resulting image so the local studio can import it, ' +
-            'then report the exact local file path.\n\n' +
-            `Prompt:\n${job.prompt}`,
+            job.compiledInput?.payload.text ??
+            ('Generate exactly one portrait image for this Codex Studio style preset. ' +
+              'Use txt2img from the full prompt below. Save or expose the resulting image so the local studio can import it, ' +
+              'then report the exact local file path.\n\n' +
+              `Prompt:\n${job.prompt}`),
           text_elements: [],
         },
       ],
@@ -260,6 +268,7 @@ async function runImagegenJob(
     prompt: string;
     projectId: string;
     execution?: JobExecutionOptions | null;
+    compiledInput?: CompiledProviderInput<{ text: string }> | null;
     signal?: AbortSignal;
   },
   dependencies: ResolvedCodexTurnDependencies,
@@ -357,6 +366,7 @@ export function createCodexTurn({
           projectId: params.projectId,
           prompt: params.prompt,
           execution: params.execution,
+          compiledInput: params.compiledInput ?? null,
           signal: params.signal,
         },
         dependencies,

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-060
+packId: pack_04
+name: Weapon Design
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Gun or sword
+  form_and_line: Mechanical
+  color_palette: Gunmetal, tactical finish, weapon-grade metals
+  lighting_setup: Rim light, barrel gleam, tactical edge highlight
+  material_texture: Scratched metal
+  render_quality: FPS game, lethal, armory-model rigor, weapon-fan detail
+  spatial_distortion: None
+  atmosphere: Dangerous, heavy, trigger discipline, combat-readiness
+  key_features: Side view, mechanical detail, magazine/guard
+avoidRules:
+  - soft
+  - toy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-060.webp
+attributes:
+  negativePrompt: soft, toy

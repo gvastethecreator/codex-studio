@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-046
+packId: pack_06
+name: Digital Painting
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: Standard digital illustration
+  form_and_line: Clean, refined
+  color_palette: RGB, vibrant
+  lighting_setup: Studio
+  material_texture: Smooth
+  render_quality: ArtStation, professional
+  spatial_distortion: None
+  atmosphere: Polished
+  key_features: Digital look
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-046.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

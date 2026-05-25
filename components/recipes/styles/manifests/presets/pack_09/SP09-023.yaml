@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-023
+packId: pack_09
+name: Brick Wall (Aged)
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Old masonry
+  form_and_line: Mortar lines
+  color_palette: Red, Brown, White mortar
+  lighting_setup: Rough
+  material_texture: Rough clay
+  render_quality: Urban, historic
+  spatial_distortion: Chipped corners
+  atmosphere: Solid, history
+  key_features: Running bond
+avoidRules:
+  - new
+  - perfect
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-023.webp
+attributes:
+  negativePrompt: new, perfect

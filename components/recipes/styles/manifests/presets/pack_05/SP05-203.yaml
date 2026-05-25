@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-203
+packId: pack_05
+name: A Place Further Than the Universe - Youth Expedition Glow
+category: 5. Slice of Life & Moe
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - slice-of-life-and-moe
+visualDna:
+  aesthetic: Teen friendship turned expedition dream, bright skies, travel prep, school uniforms becoming adventure gear, emotional propulsion through ordinary sincerity
+  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
+  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
+  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
+  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
+  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
+  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  atmosphere: Hopeful, brave, bright, uplifting
+  key_features: Travel gear, sky-heavy framing, friendship ensemble, determination close-ups, journey-prep montages
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-203.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

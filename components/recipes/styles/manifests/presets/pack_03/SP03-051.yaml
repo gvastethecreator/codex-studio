@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-051
+packId: pack_03
+name: Medical Illustration 3D
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Clean anatomy render
+  form_and_line: Cutaway view
+  color_palette: Red, Blue, White, medical-chart palettes
+  lighting_setup: Soft, clear, shadowless diagnostic
+  material_texture: Translucent tissue, anatomical accuracy
+  render_quality: Textbook, educational, clinical-reference
+  atmosphere: Scientific, clean, knowledge-dense
+  key_features: Label space, cutaway clarity
+avoidRules:
+  - gross
+  - blood
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-051.webp
+attributes:
+  negativePrompt: gross, blood

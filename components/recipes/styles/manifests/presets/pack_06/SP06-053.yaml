@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-053
+packId: pack_06
+name: Concept Art
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: Movie design visualization
+  form_and_line: Painterly
+  color_palette: Mood lighting
+  lighting_setup: Cinematic
+  material_texture: Photobash
+  render_quality: AAA Game
+  spatial_distortion: None
+  atmosphere: Epic, storytelling
+  key_features: Focal point detail
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-053.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

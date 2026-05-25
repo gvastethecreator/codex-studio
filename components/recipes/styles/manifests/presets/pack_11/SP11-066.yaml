@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-066
+packId: pack_11
+name: Glitter Macro
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Pile of glitter, sparkle-drift, craft-mess, micro-mirror chaos, holographic-confetti
+  form_and_line: Tiny hexagons, polygonal-flake edges, irregular-cut shapes, star-confetti, micro-geometry
+  color_palette: Multi-color, holographic-spectrum, metallic-foil, iridescent-shift, confetti-rainbow, silver-mirror, neon-bright
+  lighting_setup: Sparkle bokeh, point-source-glint, macro-ring flash, multiple-catchlight, disco-ball scatter
+  material_texture: Rough, shiny, metallic-foil, PET-film edges, micro-scratch, glitter-dust, adhesive-residue
+  render_quality: Party, mess, craft-project aftermath, sparkle-explosion, disco-floor, kindergarten-chaos
+  spatial_distortion: None, random-scatter, pile-depth, flake-overlap, specular-point-cloud
+  atmosphere: Fun, bright, art-room joy, celebration-scatter, make-a-mess, glitter-in-everything
+  key_features: Bling, individual-flake shape, specular-sparkle hot-spot, hexagonal-glitter, holo-shift, bokeh-background, confetti-mix
+avoidRules:
+  - matte
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-066.webp
+attributes:
+  negativePrompt: matte

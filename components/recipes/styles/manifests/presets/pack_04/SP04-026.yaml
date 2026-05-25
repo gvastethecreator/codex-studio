@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP04-026
+packId: pack_04
+name: Pop-Up Book
+category: 2. Children's Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - children-s-illustration
+visualDna:
+  aesthetic: 3D paper engineering
+  form_and_line: Cut edges
+  color_palette: Cardstock, kraft-paper spectrum, die-cut primaries
+  lighting_setup: Paper shadows, crease-relief light, fold-structure shading
+  material_texture: Paper
+  render_quality: Intricate, dimensional, paper-engineering wonder, structural delight
+  spatial_distortion: Folded
+  atmosphere: Surprise, fun, page-turn anticipation, engineered magic
+  key_features: Tabs and slots, pop-up mechanisms, layering depth
+avoidRules:
+  - flat page
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-026.webp
+attributes:
+  negativePrompt: flat page

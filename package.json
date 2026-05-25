@@ -25,6 +25,7 @@
     "dev:electron": "bun run scripts/dev-electron.ts",
     "studio:init": "bun run scripts/studio-init.ts",
     "assets:migrate:webp": "bun run scripts/migrate-image-assets-to-webp.ts",
+    "styles:split": "bun run scripts/split-style-preset-manifests.ts",
     "fmt": "bun run scripts/tooling-task.ts fmt",
     "fmt:check": "bun run scripts/tooling-task.ts fmt:check",
     "lint": "bun run scripts/tooling-task.ts lint",

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-044
+packId: pack_10
+name: Solarpunk
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Nature and tech harmony
+  form_and_line: Art Nouveau curves
+  color_palette: Green, Gold, White
+  lighting_setup: Sunlight
+  material_texture: Leaves, glass
+  render_quality: Utopian, hopeful
+  spatial_distortion: None
+  atmosphere: Optimistic, bright
+  key_features: Plants everywhere
+avoidRules:
+  - industrial
+  - dirty
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-044.webp
+attributes:
+  negativePrompt: industrial, dirty

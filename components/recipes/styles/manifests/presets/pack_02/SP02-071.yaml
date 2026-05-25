@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-071
+packId: pack_02
+name: Day for Night
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Fake movie night
+  form_and_line: None
+  color_palette: Blue tint, tungsten-day conversion, cold moonlight, warm underexposure
+  lighting_setup: Underexposed sun, stop-down daylight, ND-filter trickery
+  material_texture: Film, pushed stock, grain-from-underexposure
+  render_quality: Cinematic, uncanny, old-Hollywood cheat, suspension of disbelief
+  spatial_distortion: Bright sky, dark foreground paradox, impossible contrast
+  atmosphere: Moonlight, fake, studio night, theatrical illusion
+  key_features: Blue cast, dark shadows at noon, noir-at-daylight
+avoidRules:
+  - real night
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-071.webp
+attributes:
+  negativePrompt: real night

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-054
+packId: pack_10
+name: Marble Texture
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Stone veins
+  form_and_line: Random veins
+  color_palette: White, Grey, Gold
+  lighting_setup: Polished reflection
+  material_texture: Stone
+  render_quality: Luxury, natural
+  spatial_distortion: None
+  atmosphere: Expensive, cold
+  key_features: Veins
+avoidRules:
+  - wood
+  - plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-054.webp
+attributes:
+  negativePrompt: wood, plastic

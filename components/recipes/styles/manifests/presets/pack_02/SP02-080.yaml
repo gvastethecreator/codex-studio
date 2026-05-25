@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-080
+packId: pack_02
+name: JJ Abrams Anamorphic Overflare
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Glossy sci-fi reboot spectacle, Star Trek reboot energy, blinding anamorphic, JJ Abrams lens-flare overload
+  form_and_line: Horizontal lines
+  color_palette: Blue anamorphic, cyan streak, warm skin, deep space black, magnesium white
+  lighting_setup: Blinding, overexposed key, intentional flare-induction
+  material_texture: Glass artifacts, multi-coated lens, element reflection
+  render_quality: Sci-fi, action, summer-blockbuster spectacle, visual overload
+  spatial_distortion: Washed out, flare-bleached, contrast-erased bloom
+  atmosphere: Future, bright, optimistic spectacle, epic scale
+  key_features: Horizontal flare, anamorphic streak, JJ Abrams blue-line bloom
+avoidRules:
+  - matte
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-080.webp
+attributes:
+  negativePrompt: matte

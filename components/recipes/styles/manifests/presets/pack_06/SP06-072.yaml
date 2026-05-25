@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-072
+packId: pack_06
+name: Tape Art
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Image made of tape
+  form_and_line: Straight tape lines
+  color_palette: Masking tape, duct tape
+  lighting_setup: Flat
+  material_texture: Tape layers
+  render_quality: Street art, installation
+  spatial_distortion: Geometric
+  atmosphere: Urban, temporary
+  key_features: Tape strips
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-072.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

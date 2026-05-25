@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-064
+packId: pack_08
+name: Burlap/Rags
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Peasant clothes, medieval-field humility, honest-labor simplicity
+  form_and_line: Loose weave, tunic-length drape, rope-belt cinch, hood-cowl silhouette, gathered-neckline ease
+  color_palette: Brown, Grey, undyed-flax, mud, oatmeal, ash, weathered-hemp
+  lighting_setup: Flat, overcast-field light, cottage-window dimness, hearth-fire amber
+  material_texture: Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord
+  render_quality: Poor, scratchy, honest-poverty texture, feudal-era authenticity
+  spatial_distortion: Holes
+  atmosphere: Sad, poverty, humble-endurance dignity, harvest-field weariness, simple-life resilience
+  key_features: Fraying, rope belt, rough patches, raw hem, homespun texture
+avoidRules:
+  - silk
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-064.webp
+attributes:
+  negativePrompt: silk, clean

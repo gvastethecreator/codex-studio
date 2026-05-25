@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-046
+packId: pack_09
+name: Sequins
+category: 3. Tactile Surfaces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - tactile-surfaces
+visualDna:
+  aesthetic: Disco dress
+  form_and_line: Overlapping discs
+  color_palette: Metallic, reversible
+  lighting_setup: Sparkle
+  material_texture: Scaly plastic
+  render_quality: Glam, cheap
+  spatial_distortion: Flipping
+  atmosphere: Party, flashy
+  key_features: Scale pattern
+avoidRules:
+  - matte fabric
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-046.webp
+attributes:
+  negativePrompt: matte fabric

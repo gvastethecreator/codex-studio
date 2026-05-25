@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-073
+packId: pack_11
+name: Vinyl Record Grooves
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface
+  form_and_line: Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral
+  color_palette: Black plastic, vinyl-carbon, groove-shadow grey, stylus-wear silver, dust-speckle white
+  lighting_setup: Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection
+  material_texture: Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle
+  render_quality: Audio, physical, turntable-macro, analog-ritual, sound-carved-in-plastic
+  spatial_distortion: Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove
+  atmosphere: Music, tech, needle-drop quiet, vinyl-warmth, listening-room, hi-fi reverence
+  key_features: Grooves, spiral-lead-in, modulation-wiggle, dust-particle, stylus-reflection, lock-groove-circle, label-edge, pressing-plant matrix number
+avoidRules:
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-073.webp
+attributes:
+  negativePrompt: smooth

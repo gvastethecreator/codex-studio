@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-047
+packId: pack_02
+name: Tintype (Civil War)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Metal plate photo
+  form_and_line: None
+  color_palette: Dark Sepia, iron grey, chocolate brown, muddy cream
+  lighting_setup: Flat daylight, harsh skylight, no fill, stark contrast
+  material_texture: Chemical stains, iron plate, collodion pour, hand-poured edge
+  render_quality: Rough, historic, battlefield authenticity, unvarnished truth
+  spatial_distortion: None
+  atmosphere: Serious, old, stoic endurance, wartime gravity
+  key_features: Black edges, iron oxidation, thumb-mark, plate wear
+avoidRules:
+  - clean
+  - white
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-047.webp
+attributes:
+  negativePrompt: clean, white

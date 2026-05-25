@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-068
+packId: pack_02
+name: Bokeh (Macro)
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Blurry lights
+  form_and_line: None
+  color_palette: Soft blobs, warm amber orbs, cool cyan discs, pastel circles
+  lighting_setup: Defocused points, out-of-focus lights, holiday-string glow
+  material_texture: Creamy blur, cat's-eye shape, soap-bubble edge
+  render_quality: Dreamy, abstract, lens-artist blur, optical softness
+  spatial_distortion: Circles, aperture shape projection, specular disc
+  atmosphere: Soft, night, magical blur, romantic haze
+  key_features: Shallow DOF, background abstraction, light orbs
+avoidRules:
+  - deep focus
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-068.webp
+attributes:
+  negativePrompt: deep focus

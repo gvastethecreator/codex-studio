@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-058
+packId: pack_09
+name: Sparks
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Grinder sparks
+  form_and_line: Trails
+  color_palette: Orange, Yellow, White
+  lighting_setup: Point lights
+  material_texture: Particle
+  render_quality: Industrial, hot
+  spatial_distortion: Motion blur
+  atmosphere: Intense, work
+  key_features: Trajectory
+avoidRules:
+  - fire
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-058.webp
+attributes:
+  negativePrompt: fire

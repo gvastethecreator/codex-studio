@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-046
+packId: pack_03
+name: Game Asset (PBR)
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Optimized prop
+  form_and_line: Normal map details
+  color_palette: Albedo map
+  lighting_setup: Marmoset asset viewer lighting, turntable glory
+  material_texture: Roughness/Metalness, PBR surfacing
+  render_quality: Game ready, portfolio turntable
+  spatial_distortion: None
+  atmosphere: Functional, clean, asset-showcase
+  key_features: Asset turntable, normal map detail
+avoidRules:
+  - high poly
+  - unoptimized
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-046.webp
+attributes:
+  negativePrompt: high poly, unoptimized

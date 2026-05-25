@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-053
+packId: pack_08
+name: Fur Coat
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Luxury fur, old-Hollywood opulence, cold-climate extravagance
+  form_and_line: Soft edges, voluminous-sleeve bulk, shawl-collar wrap, floor-length column, muff-hand enclosure
+  color_palette: Brown/White, sable, silver-fox, chinchilla grey, mink-champagne, arctic-white
+  lighting_setup: Soft, diffused-glamour light, fur-halo rim, vanity-mirror warmth, evening-interior amber
+  material_texture: Fur strands, mink guard hairs, fox underwool, chinchilla density, sable tips, shearling curl, silken guard
+  render_quality: Expensive, soft, fur-atelier luxury, tactile-lavish perfection
+  spatial_distortion: None
+  atmosphere: Rich, warm, fireside-comfort, champagne-evening ease, first-class decadence
+  key_features: Fluff, guard-hair sheen, dense underwool, dramatic collar, full-length sweep
+avoidRules:
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-053.webp
+attributes:
+  negativePrompt: smooth

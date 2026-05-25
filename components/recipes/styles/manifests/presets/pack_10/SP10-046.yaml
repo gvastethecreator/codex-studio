@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-046
+packId: pack_10
+name: Paisley Pattern
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Teardrop shapes
+  form_and_line: Intricate floral
+  color_palette: Multi-colored
+  lighting_setup: Flat
+  material_texture: Fabric
+  render_quality: Textile design
+  spatial_distortion: Pattern repeat
+  atmosphere: Boho, intricate
+  key_features: Seamless
+avoidRules:
+  - solid color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-046.webp
+attributes:
+  negativePrompt: solid color

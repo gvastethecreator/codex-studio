@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-061
+packId: pack_08
+name: Lace
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Wedding dress detail, heirloom-textile romance, cathedral-veil delicacy
+  form_and_line: Intricate web, Alencon-pattern spread, scalloped-edge hem, illusion-neckline line, chapel-train sweep
+  color_palette: White, Black, ivory, candlelight, champagne, jet, nude-illusion
+  lighting_setup: Backlit, window-light diffusion, veil-glow translucency, chapel-candle warmth, morning-light ethereality
+  material_texture: Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza appliqué, re-embroidered motifs
+  render_quality: Delicate, detailed, lacemaker-artisan precision, bridal-couture heritage
+  spatial_distortion: None
+  atmosphere: Romantic, fragile, heirloom-promise tenderness, veil-lift anticipation, cathedral-hush beauty
+  key_features: Pattern, floral motif, scalloped edge, illusion neckline, hand-embroidered detail
+avoidRules:
+  - solid
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-061.webp
+attributes:
+  negativePrompt: solid

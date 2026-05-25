@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-026
+packId: pack_06
+name: Marker (Copic)
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Alcohol marker rendering
+  form_and_line: Clean ink outlines
+  color_palette: Vibrant, blended streaks
+  lighting_setup: Glossy highlights
+  material_texture: Marker paper, bleed
+  render_quality: Product design, manga
+  spatial_distortion: None
+  atmosphere: Modern, slick
+  key_features: Marker streaks
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-026.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

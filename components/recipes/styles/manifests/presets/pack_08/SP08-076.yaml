@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-076
+packId: pack_08
+name: Slime/Goo
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Covered in slime, toxic-spill horror, ectoplasmic-goo body
+  form_and_line: Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation
+  color_palette: Neon Green, toxic-slime, chartreuse, radioactive-amber, bioluminescent-blue, nuclear-waste, sickly-yellow
+  lighting_setup: Glossy, wet-look specular, blacklight-UV fluorescence, under-shelf neon, lab-emergency flicker
+  material_texture: Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension
+  render_quality: Gross, sci-fi, Ghostbusters-ectoplasm goo, lab-accident horror
+  spatial_distortion: Melting
+  atmosphere: Weird, sticky, containment-breach disgust, slime-pit dread, oozing-drip tension
+  key_features: Drips, stringy tendrils, bubble suspension, wet-gloss surface, gravity-sag form
+avoidRules:
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-076.webp
+attributes:
+  negativePrompt: dry

@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-342
+packId: pack_05
+name: Satoshi Kon - Mirror Hallway Reality Slip
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Modern realism destabilized by performance and memory, mirrors and media screens leaking into one another, polished adult surfaces hiding identity fractures
+  form_and_line: Refined realistic contour, performance-ready facial detail, subtle disorientation in framing lines
+  color_palette: Cool steel, skin peach, screen blue, lipstick crimson, hallway beige, shadow plum
+  lighting_setup: Reflective practical lighting, TV-screen spill, dressing-room spotlights, polished suspense shadows
+  material_texture: Glass reflections, makeup sheen, hallway varnish, media-screen scan glow, urban polish
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Reality-slip match cuts, reflection-depth confusion, poised adult anatomy, cinematic frame logic with subtle breakage
+  atmosphere: Unsettling, polished, psychological, cinematic
+  key_features: Mirrors, media screens, adult urban spaces, reality-slip transitions, polished suspense framing
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-342.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

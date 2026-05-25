@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-053
+packId: pack_02
+name: Wet Plate Collodion
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Glass plate negative
+  form_and_line: None
+  color_palette: Cream/Black, warm ivory, amber shadow, silver nitrate
+  lighting_setup: Shallow DOF, wide-open brass lens, thin focal plane
+  material_texture: Chemical swirls, collodion pour, edge imperfection, hand-coating
+  render_quality: Handmade, fine art, alchemical process, one-of-one artifact
+  spatial_distortion: Peeling emulsion, lifted edge, craquelure decay
+  atmosphere: Timeless, soul, Civil War ghost, eternal stillness
+  key_features: Focus falloff, petzval swirl, glass-plate negative
+avoidRules:
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-053.webp
+attributes:
+  negativePrompt: clean

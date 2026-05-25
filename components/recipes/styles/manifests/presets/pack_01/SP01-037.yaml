@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-037
+packId: pack_01
+name: Silhouette (Backlit)
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Subject against light
+  form_and_line: Outline
+  color_palette: Black subject
+  lighting_setup: Behind subject
+  material_texture: Rim light
+  render_quality: Dramatic, shape based
+  spatial_distortion: No detail
+  atmosphere: Epic, anonymous
+  key_features: Dark subject
+avoidRules:
+  - front light
+  - detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-037.webp
+attributes:
+  negativePrompt: front light, detail

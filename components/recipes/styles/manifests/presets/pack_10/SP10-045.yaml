@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-045
+packId: pack_10
+name: Weirdcore
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Amateur photo edit
+  form_and_line: MS Paint text
+  color_palette: Flash photo
+  lighting_setup: Harsh flash
+  material_texture: Compression
+  render_quality: Uncanny, internet
+  spatial_distortion: Blacked out eyes
+  atmosphere: Confusing, unsafe
+  key_features: Text overlay
+avoidRules:
+  - high quality
+  - professional
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-045.webp
+attributes:
+  negativePrompt: high quality, professional

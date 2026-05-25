@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-094
+packId: pack_02
+name: Kindergarten Family Portrait
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Five-year-old's family drawing, stick-figure mom with triangle dress, dad as tallest line with glasses-circles, siblings in descending height order, giant yellow sun with rays in top corner, house as square-with-triangle-roof, flowers as lollipop-circles on green-line stems, ground as single green stripe across bottom, sky as blue stripe across top, pure childhood-art vocabulary
+  form_and_line: Heavy crayon pressure, uncertain wobbly circles, coloring-outside-the-lines chaos, multiple-passes-over-same-spot, fat-finger grip thickness
+  color_palette: Sun-yellow, sky-blue stripe, grass-green stripe, skin-peach crayon, dress-pink triangle, house-brown square, each color used straight from box
+  lighting_setup: No lighting logic whatsoever, sun drawn in corner regardless of shadow, flat-fill coloring, equal-brightness everything
+  material_texture: Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations, mixed-brand crayon texture clash
+  render_quality: Kindergarten art-class aesthetic, refrigerator-gallery masterpiece, pure-joy creation, zero-technique-maximum-soul
+  spatial_distortion: Ground-line at page bottom, sky-stripe at page top, family in height-order line, house bigger than people, sun sized like pizza
+  atmosphere: Pure innocence, unconditional love, proud-artist joy, childhood-wonder, mom-will-love-this confidence
+  key_features: Triangle-dress mom, stick-figure family, corner-sun with rays, square-triangle house, lollipop flowers, ground-line-sky-stripe
+avoidRules:
+  - realistic
+  - proportional
+  - accurate
+  - skilled
+  - professional
+  - 3d
+  - photo
+  - correct anatomy
+  - adult art
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-094.webp
+attributes:
+  negativePrompt: realistic, proportional, accurate, skilled, professional, 3d, photo, correct anatomy, adult art

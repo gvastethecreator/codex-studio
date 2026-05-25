@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-089
+packId: pack_02
+name: Grotesque Meat Puppet
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Body-horror cartoon, exposed musculature wrapped in sagging skin, too-many-teeth grin stretching cheek to ear, veins pulsing visibly under translucent flesh, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette
+  form_and_line: Hyper-detailed anatomical horror on cartoon proportions, sinew strands visible, meat-fiber linework
+  color_palette: Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green, fresh-bruise purple, surgical pink
+  lighting_setup: Clinical overhead, wet glistening surfaces catching light, meat-locker fluorescence
+  material_texture: Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel hyper-detail
+  render_quality: Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style grotesque, nightmare fuel
+  spatial_distortion: Jaw unhinging beyond physical limits, eyes bulging on stalks, ribcage visible through skin, flesh-puppet proportions
+  atmosphere: Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet compelling
+  key_features: Too-many-teeth smile, visible musculature, bulging veined eyes, meat-texture rendering, skin-stretch tension lines
+avoidRules:
+  - smooth
+  - clean
+  - cute
+  - soft
+  - simple
+  - minimal
+  - pleasant
+  - innocent
+  - gentle
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-089.webp
+attributes:
+  negativePrompt: smooth, clean, cute, soft, simple, minimal, pleasant, innocent, gentle

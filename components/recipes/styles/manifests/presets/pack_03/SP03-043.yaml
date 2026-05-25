@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-043
+packId: pack_03
+name: X-Ray Shader
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: See-through object
+  form_and_line: Internal structure
+  color_palette: Blue/White inverted, clinical spectrum
+  lighting_setup: Internal glow, self-illuminated core
+  material_texture: Bone, metal, density-based
+  render_quality: Medical, sci-fi, diagnostic scan
+  atmosphere: Analytical, cold, forensic insight
+  key_features: Internal view, see-through silhouette
+avoidRules:
+  - opaque
+  - skin
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-043.webp
+attributes:
+  negativePrompt: opaque, skin

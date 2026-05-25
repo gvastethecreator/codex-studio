@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-029
+packId: pack_03
+name: Fractal 3D
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Mandelbulb complexity
+  form_and_line: Infinite detail
+  color_palette: Psychedelic, infinite recursion tones
+  lighting_setup: Deep shadows, cave-detail
+  material_texture: Mathematical patterns, procedural surface
+  render_quality: Math art, infinite, algorithmic wonder
+  atmosphere: Trippy, alien, mind-bending
+  key_features: Self-similarity, fractal recursion
+avoidRules:
+  - simple
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-029.webp
+attributes:
+  negativePrompt: simple, clean

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-056
+packId: pack_09
+name: Plasma/Energy
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Sci-fi shield
+  form_and_line: Forcefield
+  color_palette: Neon Cyan/Magenta
+  lighting_setup: Glowing
+  material_texture: Energy ripple
+  render_quality: Sci-fi, shield
+  spatial_distortion: Warping
+  atmosphere: Futuristic, protected
+  key_features: Hex grid (optional)
+avoidRules:
+  - fire
+  - gas
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-056.webp
+attributes:
+  negativePrompt: fire, gas

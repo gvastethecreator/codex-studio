@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-014
+packId: pack_10
+name: Macro Bubble
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Soap film close up
+  form_and_line: Cell walls
+  color_palette: Interference colors
+  lighting_setup: Reflective
+  material_texture: Liquid
+  render_quality: Scientific, beautiful
+  spatial_distortion: Spherical
+  atmosphere: Delicate, colorful
+  key_features: Surface tension
+avoidRules:
+  - flat
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-014.webp
+attributes:
+  negativePrompt: flat

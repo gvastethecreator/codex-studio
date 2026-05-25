@@ -1,0 +1,28 @@
+schemaVersion: 1
+id: SP02-013
+packId: pack_02
+name: Blockbuster Teal & Orange
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Modern action movie
+  form_and_line: None
+  color_palette: Teal shadows, Orange skin, complementary grade, cyan bias
+  lighting_setup: High contrast, backlit rim, dramatic underlight
+  material_texture: Digital clean, noise-free, slick compositing
+  spatial_distortion: Lens flare, anamorphic streak, specular bloom
+  atmosphere: Intense, cinematic, bombastic spectacle, summer tentpole
+  key_features: Color grade, slow-motion hero walk, debris rain
+avoidRules:
+  - natural color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-013.webp
+attributes:
+  negativePrompt: natural color

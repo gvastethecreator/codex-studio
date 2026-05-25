@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-027
+packId: pack_08
+name: Skater Style
+category: 3. Subcultures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+visualDna:
+  aesthetic: Thrasher skate-zine style, deck-grip authenticity, parking-lot session culture
+  form_and_line: Baggy, relaxed-denim silhouette, oversized tee, hoodie-stack, beanie-slouch
+  color_palette: Grey, Black, Graphic Tee, heather, logo-white, washed-black, grip-tape grey
+  lighting_setup: Outdoor sun, fisheye-lens flare, golden-hour ledge, parking-lot shade
+  material_texture: Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy
+  render_quality: Casual, active, fisheye-video energy, street-credible rawness
+  spatial_distortion: None
+  atmosphere: Chill, active, session-flow zen, board-pop rhythm, endless-summer ease
+  key_features: Vans skate shoes, ollie-worn suede, five-panel cap, logo tee
+avoidRules:
+  - tight clothes
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-027.webp
+attributes:
+  negativePrompt: tight clothes

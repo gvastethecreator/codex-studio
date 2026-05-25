@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-052
+packId: pack_03
+name: Automotive Render
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Car commercial CGI
+  form_and_line: Aerodynamic lines
+  color_palette: Metallic paint, color-shift finish
+  lighting_setup: Studio sweep, highlight-catch reflections
+  material_texture: Car paint, rubber, glass laminate
+  render_quality: High end, pristine, launch-film quality
+  atmosphere: Fast, luxury, aerodynamic desire
+  key_features: Reflection lines, body-contour flow
+avoidRules:
+  - dirty
+  - dented
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-052.webp
+attributes:
+  negativePrompt: dirty, dented

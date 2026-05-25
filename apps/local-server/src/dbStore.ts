@@ -1,6 +1,8 @@
 import { randomUUID } from 'node:crypto';
 import type {
   Asset,
+  GenerationProviderId,
+  GenerationTaskSpec,
   Job,
   JobExecutionOptions,
   JobKind,
@@ -15,6 +17,8 @@ export interface StudioDbStore {
   createJob(input: {
     projectId: string;
     kind: JobKind;
+    providerId?: GenerationProviderId | null;
+    sourceSpec?: GenerationTaskSpec | null;
     prompt: string;
     execution?: JobExecutionOptions | null;
   }): Job;
@@ -69,6 +73,8 @@ function mapJob(row: any): Job {
     id: row.id,
     projectId: row.project_id,
     kind: row.kind,
+    providerId: row.provider_id,
+    sourceSpec: parseJson<GenerationTaskSpec | null>(row.source_spec_json, null),
     status: row.status,
     execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
     originalPrompt: row.original_prompt,
@@ -136,6 +142,8 @@ function migrateSqliteDbStore(database: SqliteDatabaseLike) {
       id TEXT PRIMARY KEY,
       project_id TEXT NOT NULL REFERENCES projects(id),
       kind TEXT NOT NULL,
+      provider_id TEXT,
+      source_spec_json TEXT,
       status TEXT NOT NULL,
       execution_json TEXT,
       original_prompt TEXT NOT NULL,
@@ -174,6 +182,8 @@ function migrateSqliteDbStore(database: SqliteDatabaseLike) {
     )
   `);
   ensureColumn(database, 'jobs', 'execution_json', 'TEXT');
+  ensureColumn(database, 'jobs', 'provider_id', 'TEXT');
+  ensureColumn(database, 'jobs', 'source_spec_json', 'TEXT');
 }
 
 export function createSqliteDbStore({
@@ -232,6 +242,8 @@ export function createSqliteDbStore({
         id: randomUUID(),
         projectId: input.projectId,
         kind: input.kind,
+        providerId: input.providerId ?? null,
+        sourceSpec: input.sourceSpec ?? null,
         status: 'queued',
         execution: input.execution ?? null,
         originalPrompt: input.prompt,
@@ -244,13 +256,15 @@ export function createSqliteDbStore({
       };
       database
         .query(`
-          INSERT INTO jobs (id, project_id, kind, status, execution_json, original_prompt, expanded_prompt, final_prompt_used, error, created_at, updated_at, completed_at)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          INSERT INTO jobs (id, project_id, kind, provider_id, source_spec_json, status, execution_json, original_prompt, expanded_prompt, final_prompt_used, error, created_at, updated_at, completed_at)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         `)
         .run(
           job.id,
           job.projectId,
           job.kind,
+          job.providerId,
+          job.sourceSpec ? JSON.stringify(job.sourceSpec) : null,
           job.status,
           job.execution ? JSON.stringify(job.execution) : null,
           job.originalPrompt,

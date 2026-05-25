@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-066
+packId: pack_02
+name: Silhouette
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Backlit subject
+  form_and_line: None
+  color_palette: Black foreground, vibrant background sky, orange sunset, stark contrast
+  lighting_setup: Strong backlight, no fill, rim-only separation
+  material_texture: Contrast, edge crispness, opaque block
+  render_quality: Graphic, bold, high-contrast drama, shape-first
+  spatial_distortion: None
+  atmosphere: Mystery, drama, anonymous figure, narrative suspense
+  key_features: No fill light, recognizable outline, dramatic sky
+avoidRules:
+  - detail in shadow
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-066.webp
+attributes:
+  negativePrompt: detail in shadow

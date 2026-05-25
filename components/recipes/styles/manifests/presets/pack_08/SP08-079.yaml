@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP08-079
+packId: pack_08
+name: Invisibility Cloak
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Partially invisible, refraction-mirage wonder, stealth-magic concealment
+  form_and_line: Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended-garment shape
+  color_palette: Background, environment-match, refractive-rainbow fringe, glass-blue edge, transparency-neutral, reveal-flesh
+  lighting_setup: Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge
+  material_texture: Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo
+  render_quality: Magic, stealth, optical-illusion wonder, wizard-cloak mystery
+  spatial_distortion: Missing parts
+  atmosphere: Hidden, magic, disappearing-presence wonder, see-but-not-see mystique, veil-between-worlds poetry
+  key_features: Distortion, bend-light edge, partial reveal, environment-through-body, glass-warp seam
+avoidRules:
+  - visible
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-079.webp
+attributes:
+  negativePrompt: visible

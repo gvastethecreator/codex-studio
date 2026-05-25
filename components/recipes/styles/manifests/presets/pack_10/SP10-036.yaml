@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-036
+packId: pack_10
+name: Double Exposure
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Two images blended
+  form_and_line: Silhouette
+  color_palette: Mixed
+  lighting_setup: Screen blend
+  material_texture: Layered
+  render_quality: True Detective intro
+  spatial_distortion: Ghosting
+  atmosphere: Psychological
+  key_features: Silhouette container
+avoidRules:
+  - single image
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-036.webp
+attributes:
+  negativePrompt: single image

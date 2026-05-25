@@ -1,0 +1,35 @@
+schemaVersion: 1
+id: SP02-084
+packId: pack_02
+name: Political Satire Cartoon
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Exaggerated political caricature, oversized jowls and fists, tiny bodies under giant scowling heads, newspaper editorial venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty
+  form_and_line: Aggressive crosshatching, heavy india ink, sharp vicious pen strokes, editorial deadline scratch
+  color_palette: Newsprint grey, bile green, angry red accents, tobacco-stain ochre, cheap pulp paper yellow
+  lighting_setup: Harsh side-light carving shadows into exaggerated features, unflattering key
+  material_texture: Coarse newsprint halftone, cheap ink bleeding into paper fibers, mechanical reproduction artifacts
+  render_quality: Deadline-rush energy, quickfire ink, rapid-fire satire, next-day print quality, no time for refinement
+  spatial_distortion: Giant heads atop tiny suited bodies, fists expanded to melon size, jowls dragging to collarbone
+  atmosphere: Biting, cynical, merciless observation, righteous mockery
+  key_features: Pointed political symbols, exaggerated real-world traits, crosshatched fury, text balloon with cutting caption
+avoidRules:
+  - flattering
+  - beautiful
+  - respectful
+  - dignified
+  - subtle
+  - elegant
+  - polished
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-084.webp
+attributes:
+  negativePrompt: flattering, beautiful, respectful, dignified, subtle, elegant, polished

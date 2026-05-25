@@ -7,10 +7,13 @@ import { publishEvent } from './events';
 import { resolveLibraryPath, toPublicAssetUrl } from './library';
 import { log } from './logger';
 import { createCodexTurn, resolveJobExecutionOptions } from './codex';
+import { createCodexGenerationProvider } from './providers/codexProvider';
+import type { GenerationProvider } from './providers/types';
 import { embedMetadata } from './metadataEmbedder';
 import { parsePromptTransport } from '../../../packages/shared/src';
 import type { Job } from '../../../packages/shared/src';
 import type { CodexTurn } from './codex';
+import { resolveWorkerRuntimeTarget } from './workerRouting';
 
 export interface WorkerStatus {
   maxConcurrentJobs: number;
@@ -42,6 +45,7 @@ export interface CreateWorkerControllerDependencies {
   resolveExecutionOptions?: typeof resolveJobExecutionOptions;
   embedMetadata?: typeof embedMetadata;
   parsePromptTransport?: typeof parsePromptTransport;
+  createGenerationProvider?: () => GenerationProvider;
 }
 
 function createAbortError() {
@@ -116,13 +120,15 @@ export function createWorkerController({
   resolveExecutionOptions = resolveJobExecutionOptions,
   embedMetadata: embedMetadataFn = embedMetadata,
   parsePromptTransport: parsePromptTransportFn = parsePromptTransport,
+  createGenerationProvider,
 }: CreateWorkerControllerDependencies = {}): WorkerController {
   const runningJobs = new Set<string>();
   const jobQueue: Job[] = [];
   const runningJobControllers = new Map<string, AbortController>();
   const activeJobPromises = new Map<string, Promise<void>>();
   let activeWorkerCount = 0;
-  const codexTurn = createTurn();
+  const generationProvider =
+    createGenerationProvider?.() ?? createCodexGenerationProvider({ turn: createTurn() });
 
   function getMaxConcurrentJobs() {
     return getSettingsFn().codexMaxConcurrentJobs;
@@ -169,6 +175,32 @@ export function createWorkerController({
   }
 
   function buildCatalogGenerationConfigFromJob(job: Job) {
+    if (job.sourceSpec) {
+      const executionOptions = resolveExecutionOptions(job.execution);
+      const recipeContext =
+        typeof job.sourceSpec.metadata.recipeContext === 'string'
+          ? job.sourceSpec.metadata.recipeContext
+          : null;
+
+      return {
+        prompt: job.sourceSpec.prompt,
+        recipeContext,
+        recipeId: job.sourceSpec.recipeId,
+        recipeParams: job.sourceSpec.recipeParams,
+        attachments: job.sourceSpec.assets,
+        aspectRatio: job.sourceSpec.output.aspectRatio,
+        imageSize: job.sourceSpec.output.imageSize,
+        negativePrompt: job.sourceSpec.negativePrompt,
+        temperature: 0.8,
+        model: 'codex-imagegen',
+        executionModel: executionOptions.model,
+        executionReasoningEffort: executionOptions.reasoningEffort,
+        executionSpeed: executionOptions.serviceTier ?? 'standard',
+        batchCount: job.sourceSpec.output.count,
+        useThinkingAndSearch: false,
+      };
+    }
+
     const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
     const executionOptions = resolveExecutionOptions(job.execution);
 
@@ -232,11 +264,13 @@ export function createWorkerController({
     logger('info', 'worker', 'Codex imagegen job started.', job.id);
     const turnRecordId = upsertCodexTurnFn({ jobId: job.id, status: 'running' });
     const executionOptions = resolveExecutionOptions(job.execution);
-    const result = await codexTurn.runTurn({
-      jobId: job.id,
+    const result = await generationProvider.run({
+      id: job.id,
       projectId: job.projectId,
       prompt: job.finalPromptUsed,
       execution: job.execution,
+      providerId: job.providerId ?? job.sourceSpec?.providerId ?? 'codex',
+      sourceSpec: job.sourceSpec,
       signal,
     });
 
@@ -282,7 +316,15 @@ export function createWorkerController({
       height: null,
       mimeType,
     });
-    const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
+    const parsedPrompt = job.sourceSpec
+      ? {
+          prompt: job.sourceSpec.prompt,
+          negativePrompt: job.sourceSpec.negativePrompt,
+          aspectRatio: job.sourceSpec.output.aspectRatio,
+          imageSize: job.sourceSpec.output.imageSize,
+          recipeId: job.sourceSpec.recipeId,
+        }
+      : parsePromptTransportFn(job.finalPromptUsed);
     const catalogImage = registerCatalogImageFn({
       filePath: asset.filePath,
       thumbnailPath: asset.thumbnailPath,
@@ -340,12 +382,16 @@ export function createWorkerController({
     try {
       updateJobStatusFn(job.id, 'running');
       publishEventFn('job.running', getJobFn(job.id));
-      if (job.kind === 'dry_run') {
+      const runtimeTarget = resolveWorkerRuntimeTarget(job);
+
+      if (runtimeTarget === 'dry_run') {
         await runDryJob(job, controller.signal);
-      } else if (job.kind === 'codex_imagegen') {
+      } else if (runtimeTarget === 'codex') {
         await runCodexJob(job, controller.signal);
       } else {
-        throw new Error('Unsupported job kind received by worker');
+        throw new Error(
+          `Unsupported job kind received by worker: kind=${job.kind} provider=${job.providerId ?? job.sourceSpec?.providerId ?? 'null'} sourceTask=${job.sourceSpec?.task ?? 'null'}`,
+        );
       }
     } catch (error) {
       if (isAbortError(error)) {

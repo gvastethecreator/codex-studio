@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-204
+packId: pack_05
+name: Aria - Canal Breeze Healing Reverie
+category: 5. Slice of Life & Moe
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - slice-of-life-and-moe
+visualDna:
+  aesthetic: Neo-Venezia gondola calm, watercolor water reflections, healing-company warmth, slow conversational days, beautiful emptiness and kindness drifting through every frame
+  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
+  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
+  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
+  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
+  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
+  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  atmosphere: Healing, airy, serene, luminous
+  key_features: Canal reflections, gondola silhouettes, white uniforms, water-breeze softness, peaceful city panoramas
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-204.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP01-032
+packId: pack_01
+name: Blue Hour
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Twilight before sunrise/after sunset
+  form_and_line: Soft contrast
+  color_palette: Deep Blue, Purple, cold
+  lighting_setup: Ambient, shadowless
+  material_texture: Smooth
+  render_quality: Calm, moody
+  spatial_distortion: None
+  atmosphere: Quiet, cold
+  key_features: Blue cast
+avoidRules:
+  - sun
+  - orange
+  - warm
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-032.webp
+attributes:
+  negativePrompt: sun, orange, warm

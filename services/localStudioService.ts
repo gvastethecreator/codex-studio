@@ -6,11 +6,19 @@ import type {
   LocalCodexSessionResponse,
   JobDetailResponse,
   CreateJobRequest,
+  EditableStudioSettings,
+  EditableStudioSettingsPatch,
+  ExternalOutputSourcesResponse,
+  ExternalOutputSourceFile,
   HealthResponse,
+  ImportExternalOutputSourceInput,
+  ImportExternalOutputSourceResult,
   Job,
   Project,
   StudioResetResponse,
   StudioLibrary,
+  RegisteredExternalOutputSource,
+  RegisterExternalOutputSourceInput,
   SystemLog,
 } from '../packages/shared/src';
 import { resolveStudioApiBase } from './studioRuntime';
@@ -63,6 +71,57 @@ export async function listProjects() {
  */
 export async function getStudioHealth() {
   return request<HealthResponse>('/api/health');
+}
+
+/**
+ * Read non-secret editable Studio Settings stored with the local Studio Library.
+ */
+export async function getEditableStudioSettings() {
+  return request<EditableStudioSettings>('/api/settings');
+}
+
+/**
+ * Persist non-secret editable Studio Settings. Provider secrets stay outside this API.
+ */
+export async function updateEditableStudioSettings(patch: EditableStudioSettingsPatch) {
+  return request<EditableStudioSettings>('/api/settings', {
+    method: 'PATCH',
+    body: JSON.stringify(patch),
+  });
+}
+
+/**
+ * Read registered and detected External Output Sources. Detection is read-only.
+ */
+export async function getExternalOutputSources() {
+  return request<ExternalOutputSourcesResponse>('/api/output-sources');
+}
+
+/**
+ * Register an existing External Output Source before future import workflows.
+ */
+export async function registerExternalOutputSource(input: RegisterExternalOutputSourceInput) {
+  return request<RegisteredExternalOutputSource>('/api/output-sources', {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
+}
+
+export async function listExternalOutputSourceFiles(sourceId: string, limit = 100) {
+  const search = new URLSearchParams({ limit: String(limit) });
+  return request<{ files: ExternalOutputSourceFile[] }>(
+    `/api/output-sources/${sourceId}/files?${search.toString()}`,
+  );
+}
+
+export async function importExternalOutputSourceFiles(
+  sourceId: string,
+  input: ImportExternalOutputSourceInput,
+) {
+  return request<ImportExternalOutputSourceResult>(`/api/output-sources/${sourceId}/import`, {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
 }
 
 /**

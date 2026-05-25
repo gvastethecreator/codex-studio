@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-030
+packId: pack_01
+name: Telescope (Hubble)
+category: 5. Camera Types
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - camera-types
+visualDna:
+  aesthetic: Deep space astrophotography
+  form_and_line: Nebula clouds
+  color_palette: False color (NASA palette)
+  lighting_setup: Star glow
+  material_texture: Gas, dust, stars
+  render_quality: Cosmic, epic
+  spatial_distortion: None
+  atmosphere: Awe-inspiring, vast
+  key_features: Star field
+avoidRules:
+  - earth
+  - ground
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-030.webp
+attributes:
+  negativePrompt: earth, ground

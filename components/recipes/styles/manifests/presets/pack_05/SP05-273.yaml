@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-273
+packId: pack_05
+name: Mushishi - Night Mushi Burial Calm
+category: 9. Dark Fantasy & Seinen
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - dark-fantasy-and-seinen
+visualDna:
+  aesthetic: Ethereal countryside folklore for adults, pale glowing lifeforms, grief softened by natural cycles, dark forest quiet and contemplative medicine under moon haze
+  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
+  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  atmosphere: Quiet, eerie, compassionate, nocturnal
+  key_features: Pale mushi traces, forest night atmosphere, healer-traveler pose language, natural-cycle motifs, moon-haze calm
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-273.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

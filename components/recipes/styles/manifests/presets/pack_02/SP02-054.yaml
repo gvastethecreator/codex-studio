@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-054
+packId: pack_02
+name: Infrared Film (Aerochrome)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: False color IR
+  form_and_line: None
+  color_palette: Pink/Red foliage, magenta vegetation, cyan sky, white chlorophyll
+  lighting_setup: Surreal, invisible-spectrum, infrared reflectance
+  material_texture: Grainy, false-color emulsion, IR-sensitive layer
+  render_quality: Psychedelic, weird, alien biosphere, dreamscape
+  spatial_distortion: None
+  atmosphere: Alien, dream, Mars-on-Earth, infrared hallucination
+  key_features: Red trees, cotton-candy forest, white grass
+avoidRules:
+  - green grass
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-054.webp
+attributes:
+  negativePrompt: green grass

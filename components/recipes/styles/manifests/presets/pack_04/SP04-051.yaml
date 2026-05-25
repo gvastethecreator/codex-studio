@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-051
+packId: pack_04
+name: Creature Design
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Monster concept
+  form_and_line: Anatomical
+  color_palette: Skin tones, organic chromatics, creature-flesh spectrum
+  lighting_setup: Rim light, silhouette reveal, ambient dread
+  material_texture: Scales, fur
+  render_quality: Scary, biological, anatomical conviction, apex-predator presence
+  spatial_distortion: Extra limbs
+  atmosphere: Dangerous, alive, predatory stillness, ecological tension
+  key_features: Silhouette, anatomical breakdown, adaptive feature
+avoidRules:
+  - human
+  - cute
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-051.webp
+attributes:
+  negativePrompt: human, cute

@@ -1,0 +1,42 @@
+schemaVersion: 1
+id: SP01-005
+packId: pack_01
+name: Cinematic Close-up
+category: 1. Portrait Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - portrait-styles
+visualDna:
+  aesthetic: Cinematic movie still close-up, dramatic film photography
+  subject_treatment: Extremely shallow depth of field, sharp focus on the eyes, soft out-of-focus background
+  color_and_tone: Cinematic color grading, teal and orange split toning, rich cinematic contrast
+  lighting_and_shadow: Dramatic Rembrandt lighting, strong directional light, deep shadows
+  texture_and_material: Cinematic film grain, detailed skin texture, anamorphic lens flares
+  camera_and_composition: Shot on anamorphic lens, beautiful bokeh background, tight emotional framing
+  atmosphere_and_mood: Emotional, dramatic, intense, narrative, moody
+  rendering_and_quality: 4K cinematic render, filmic look, high production value
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-005.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

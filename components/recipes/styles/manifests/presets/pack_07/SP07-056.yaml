@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP07-056
+packId: pack_07
+name: Underwater City
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Atlantis/Rapture submerged lost-city grandeur, art-deco depths, leaking domes
+  form_and_line: Domes, coral, bubble-pods, glass-tunnel arteries, cathedral spires, ring-hub geometry
+  color_palette: Blue, Gold, Biolum, Coral Pink, Seaweed Green, Rust-orange decay, Gleaming Brass
+  lighting_setup: Water filtered, blue-ambient abyss, bioluminescent constellation, dome-interior gold glow, emergency red
+  material_texture: Wet stone, glass, copper-green patina, coral-encrust, riveted brass, leaking concrete
+  render_quality: Mysterious, deep, Rapture-dystopia, lost-civilization poetry, water-pressure beauty, abandoned majesty
+  spatial_distortion: None
+  atmosphere: Silent, pressure, awe-mixed-with-dread, water-weight, ghostly, decaying-utopia
+  key_features: Bubbles, glass domes, art deco details, leaking cracks, coral overgrowth, bathysphere docks
+avoidRules:
+  - sky
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-056.webp
+attributes:
+  negativePrompt: sky, dry

@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP04-084
+packId: pack_04
+name: Material Texture Exploration Sheet
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Surface-study concept art, material-callout swatches around a design, leather next to metal next to fabric material comparison, RPG-item material breakdown, callout-lines to material type labels, texture-library exploration, rendering different surfaces exercise, prop-design material pass
+  form_and_line: Callout-leader lines from design to swatches, clean design contours, swatch-grid separation, annotation arrows, technical-drawing precision
+  color_palette: Material-accurate colors, leather brown, steel grey, brass gold, fabric cream, wood grain, glass clear, gem-facet sparkle, each material its own color world
+  lighting_setup: Consistent studio lighting across all swatches for comparison, specular highlight on metals, matte on fabrics, translucent on glass
+  material_texture: Leather grain close-up, metal-brushed surface, fabric weave macro, wood-end-grain, gem-facet refraction, rust-patina edge
+  render_quality: Material-study concept sheet, texture-library reference, production-ready surface breakdown, prop-design specification
+  spatial_distortion: Swatch-grid orthogonal layout, magnified-detail callout circles, annotation-leader lines, exploded-material separation
+  atmosphere: Analytical, educational, production-practical, designer-reference, texture-obsession
+  key_features: Callout lines to material swatches, magnified detail circles, annotation labels per material, comparison-grid layout, texture-macro insets
+avoidRules:
+  - uniform
+  - single material
+  - untextured
+  - flat
+  - smooth
+  - same everywhere
+  - homogeneous
+  - finished piece
+  - single surface
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-084.webp
+attributes:
+  negativePrompt: uniform, single material, untextured, flat, smooth, same everywhere, homogeneous, finished piece, single surface

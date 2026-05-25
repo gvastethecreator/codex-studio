@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-032
+packId: pack_04
+name: Mucha Art Nouveau Poster
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Flowing decorative lithograph, Alphonse Mucha style, botanical hair, organic ornament, belle epoque beauty
+  form_and_line: Flowing hair/vines
+  color_palette: Peach, Sage, Gold, botanical soft-metallic, organic gem
+  lighting_setup: Flat, stain-glass glow, halo radiance
+  material_texture: Lithograph
+  render_quality: Decorative, floral, sinuous refinement, fin-de-siecle elegance
+  spatial_distortion: Organic curves
+  atmosphere: Beautiful, romantic, belle-epoque reverie, ornamental trance
+  key_features: Circle halo, flowing hair-vines, organic border
+avoidRules:
+  - straight lines
+  - minimal
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-032.webp
+attributes:
+  negativePrompt: straight lines, minimal

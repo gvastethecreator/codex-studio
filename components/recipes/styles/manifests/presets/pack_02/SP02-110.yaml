@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-110
+packId: pack_02
+name: SpongeBob Gross-Up Freeze Frame
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, nautical nonsense colliding with fleshy realism, sea-salt weirdness, deranged reaction insert, undersea slapstick whiplash
+  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
+  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
+  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
+  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
+  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
+  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  atmosphere: Cheery, revolting, whiplash-funny, manic
+  key_features: Normal-to-gross style contrast, close-up flesh detail, cartoon sponge absurdity, reaction-frame jump scare, goofy undersea props
+avoidRules:
+  - digital
+  - HD
+  - smooth
+  - 3d
+  - realistic
+  - painted
+  - single panel
+  - vertical scrolling
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-110.webp
+attributes:
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern

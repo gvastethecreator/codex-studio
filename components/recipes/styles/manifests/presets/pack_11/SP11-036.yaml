@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-036
+packId: pack_11
+name: Vaporwave
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: 90s internet nostalgia, dead-mall surrealism, dial-up dream, corporate-abandoned utopia
+  form_and_line: Glitch art, datamosh edge, pixel-sort stripe, RGB-shift fringe, compression-artifact contour
+  color_palette: Pink, Teal, White, sunset-gradient, mall-fountain cyan, marble-vein grey, Windows-95 teal
+  lighting_setup: Bright, surreal, fluorescent-tube buzz, CRT-glow, chrome-reflection bloom, unnatural-backlight
+  material_texture: Marble, water, windows 95, pixelated-UI chrome, ROM-boot screen, CD-ROM iridescence
+  render_quality: A E S T H E T I C, full-width-spaced, bust-of-Helios,  s l o w e d  r e v e r b, broken-Internet poetry
+  spatial_distortion: Statue busts, Greco-Roman kitsch, floating-column fragments, checkerboard-plane floor
+  atmosphere: Chill, surreal, ironic, forgotten-future, elevator-music eternity, digital-liminal space
+  key_features: Palm trees, Fiji-water bottle, Arizona-iced-tea, checkerboard-tile floor, sunset-gradient sky, helios-bust placeholder
+avoidRules:
+  - serious
+  - dark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-036.webp
+attributes:
+  negativePrompt: serious, dark

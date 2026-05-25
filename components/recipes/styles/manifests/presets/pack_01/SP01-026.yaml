@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-026
+packId: pack_01
+name: Pinhole Camera
+category: 5. Camera Types
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - camera-types
+visualDna:
+  aesthetic: Lensless photography
+  form_and_line: Soft everywhere
+  color_palette: Vignetted
+  lighting_setup: Long exposure motion blur
+  material_texture: Diffraction blur
+  render_quality: Dreamy, experimental
+  spatial_distortion: Infinite depth of field (soft)
+  atmosphere: Surreal, time passing
+  key_features: Soft focus
+avoidRules:
+  - sharp
+  - lens flare
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-026.webp
+attributes:
+  negativePrompt: sharp, lens flare

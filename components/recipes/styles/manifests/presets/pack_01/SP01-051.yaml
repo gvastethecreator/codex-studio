@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-051
+packId: pack_01
+name: Fashion Editorial
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Magazine spread
+  form_and_line: Dynamic pose
+  color_palette: Color graded, trendy
+  lighting_setup: Creative studio
+  material_texture: Fabric detail
+  render_quality: Vogue, high end
+  spatial_distortion: Elongated limbs
+  atmosphere: Cool, expensive
+  key_features: Clothes focus
+avoidRules:
+  - boring
+  - plain
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-051.webp
+attributes:
+  negativePrompt: boring, plain

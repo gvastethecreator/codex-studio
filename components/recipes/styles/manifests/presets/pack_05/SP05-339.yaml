@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-339
+packId: pack_05
+name: Naoki Urasawa - Adult Suspense Close-Up
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Grounded mature faces, urban suspense, tiny emotional shifts under huge moral pressure, procedural detail and old fears quietly filling the frame
+  form_and_line: Measured contour, realistic feature detail, restrained expression marks
+  color_palette: Muted khaki, asphalt grey, skin-warm taupe, office white, rainy blue, burgundy accent
+  lighting_setup: Fluorescent office realism, rainy-day window light, interrogation-level practical shadows
+  material_texture: Suit fabric, office paper, cigarette smoke haze, rain-specked glass, lived-in walls
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Natural adult proportions, camera-close tension framing, realistic perspective, stillness-driven composition
+  atmosphere: Tense, grounded, adult, humane
+  key_features: Adult facial subtlety, urban procedural backdrops, moral-pressure close-ups, grounded body language, suspense in stillness
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-339.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

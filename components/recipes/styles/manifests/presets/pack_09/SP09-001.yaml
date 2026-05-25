@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-001
+packId: pack_09
+name: Oak Wood (Raw)
+category: 1. Natural Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - natural-materials
+visualDna:
+  aesthetic: Unfinished oak plank
+  form_and_line: Grain lines
+  color_palette: Pale brown
+  lighting_setup: Soft ambient
+  material_texture: Rough wood grain
+  render_quality: Lumber yard, natural
+  spatial_distortion: None
+  atmosphere: Rustic, solid
+  key_features: Grain direction
+avoidRules:
+  - varnish
+  - plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-001.webp
+attributes:
+  negativePrompt: varnish, plastic

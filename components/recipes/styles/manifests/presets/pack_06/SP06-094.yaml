@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-094
+packId: pack_06
+name: Atari 2600 Extreme Limitation
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Atari-VCS-2600 extreme limitation, 40-pixel-wide-player-sprites, single-color-per-scanline, stripe-color-technique for multicolor, Combat-tank-blocky, Pitfall-vine-simplicity, Adventure-square-dot-hero, hardware-limitation-as-aesthetic, 128-bytes-of-RAM-universe, only-two-player-sprites-on-screen
+  form_and_line: 40-fat-pixel-wide sprites, single-scanline-height-color-bands, blocky-rectangle-everything, missile-and-ball-hardware-objects, playfield-block-backgrounds
+  color_palette: NTSC-128-color-palette, 4-colors-per-scanline, rainbow-stripe-technique, bright-primaries, Atari-warmth-color-gen, black-background-standard, TIA-chip-color-generation
+  lighting_setup: No-lighting-whatsoever, sprite-color-as-background-separation, scanline-stripe-color-for-depth, no-gradients-no-shading
+  material_texture: TIA-graphics-chip-texture, scanline-stripe-artifacts, sprite-flicker-at-object-limit, phosphor-persistence-blur, NTSC-color-bleed, RF-modulator-static-noise
+  render_quality: Atari-2600-extreme-limitation aesthetic, 1977-hardware-constraint-beauty, minimal-pixel-poetry, 128-bytes-of-RAM art
+  spatial_distortion: 40-pixel-sprite-width, 160x192-playfield-resolution, scanline-color-stripe-proportions, object-flicker-at-sprite-limits, two-players-half-screen-context
+  atmosphere: Primitive, ingenious, constraint-creativity, first-generation-home-console wonder, cartridge-dust-and-static, woodgrain-console-nostalgia
+  key_features: 40-pixel-wide-sprites, scanline-color-stripes, sprite-flicker-multiplexing, 4-colors-per-scanline, TIA-hardware-artifacts, blocky-rectangle-everything, black-background-standard
+avoidRules:
+  - detailed
+  - smooth
+  - high-res
+  - modern
+  - 3d
+  - colorful
+  - rich palette
+  - complex
+  - anti-aliased
+  - HD
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-094.webp
+attributes:
+  negativePrompt: detailed, smooth, high-res, modern, 3d, colorful, rich palette, complex, anti-aliased, HD

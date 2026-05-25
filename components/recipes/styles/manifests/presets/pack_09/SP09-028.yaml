@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-028
+packId: pack_09
+name: Glass (Shattered)
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Broken window
+  form_and_line: Sharp cracks
+  color_palette: Clear, Green edge
+  lighting_setup: Refractive sparkles
+  material_texture: Sharp shards
+  render_quality: Destruction, accident
+  spatial_distortion: Fragmented
+  atmosphere: Dangerous, sudden
+  key_features: Spiderweb crack
+avoidRules:
+  - window
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-028.webp
+attributes:
+  negativePrompt: window, clean

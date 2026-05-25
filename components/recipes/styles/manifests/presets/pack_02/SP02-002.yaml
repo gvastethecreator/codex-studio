@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-002
+packId: pack_02
+name: Spaghetti Western
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Dusty operatic frontier cinema, Sergio Leone style, spaghetti western epic, extreme close-up showdowns, wide barren landscapes, Morricone mood
+  form_and_line: None
+  color_palette: Warm, dusty yellow, sun-bleached ochre, deep brown
+  lighting_setup: Harsh sun, unflinching overhead, high noon glare
+  material_texture: Techniscope grain, gritty sand, weathered leather
+  render_quality: Epic, gritty, widescreen desert, sun-baked
+  spatial_distortion: Extreme close-up, eyes-only, tension squeeze
+  atmosphere: Tense, hot, dry wind, looming death
+  key_features: Wide angle, lone figure, pistol holster
+avoidRules:
+  - modern
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-002.webp
+attributes:
+  negativePrompt: modern, clean

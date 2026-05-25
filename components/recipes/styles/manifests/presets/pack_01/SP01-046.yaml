@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-046
+packId: pack_01
+name: Street Photography
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Urban candid moment
+  form_and_line: Messy composition
+  color_palette: High contrast B&W or gritty color
+  lighting_setup: Natural
+  material_texture: Grain
+  render_quality: Cartier-Bresson, decisive moment
+  spatial_distortion: Motion blur
+  atmosphere: Real, fleeting
+  key_features: Urban context
+avoidRules:
+  - posed
+  - studio
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-046.webp
+attributes:
+  negativePrompt: posed, studio

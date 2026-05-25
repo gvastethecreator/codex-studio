@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-080
+packId: pack_01
+name: Passport Photo
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: ID photo
+  form_and_line: Face forward
+  color_palette: White background
+  lighting_setup: Flat, shadowless
+  material_texture: None
+  render_quality: Bureaucratic, boring
+  spatial_distortion: Neutral expression
+  atmosphere: Official, deadpan
+  key_features: White background
+avoidRules:
+  - smiling
+  - artistic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-080.webp
+attributes:
+  negativePrompt: smiling, artistic

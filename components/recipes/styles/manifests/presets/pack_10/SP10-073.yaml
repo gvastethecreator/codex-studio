@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-073
+packId: pack_10
+name: Mosaic (Tile)
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Small square tiles
+  form_and_line: Grout lines
+  color_palette: Vibrant glass
+  lighting_setup: Uneven reflection
+  material_texture: Glass/Stone tiles
+  render_quality: Roman, durable
+  spatial_distortion: Pixelated by tiles
+  atmosphere: Ancient, solid
+  key_features: Tile grid
+avoidRules:
+  - smooth painting
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-073.webp
+attributes:
+  negativePrompt: smooth painting

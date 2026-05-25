@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-041
+packId: pack_11
+name: Grimdark
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: Warhammer 40k cathedral-industrial war fantasy, grimdark future, eternal crusade
+  form_and_line: Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles
+  color_palette: Mud, Blood, Rust, boltgun-metal, purity-parchment cream, plasma-coil blue, heretic-ash grey, melta-glow orange
+  lighting_setup: Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools
+  material_texture: Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet
+  render_quality: Hopeless, war, eternal, forge-world industry, ten-thousand-year crusade, dark-millennium spectacle
+  spatial_distortion: Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks
+  atmosphere: Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor
+  key_features: Skulls, aquila-imperialis, purity-seals, servo-skulls, gothic-cathedral spires, chainsword, bolter-shell casings
+avoidRules:
+  - hope
+  - light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-041.webp
+attributes:
+  negativePrompt: hope, light

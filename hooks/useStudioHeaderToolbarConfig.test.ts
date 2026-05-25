@@ -40,6 +40,17 @@ describe('buildStudioHeaderToolbarProps', () => {
         trashCount: 2,
         onToggleDebug: () => calls.push('toggleDebug'),
       },
+      commandCenter: {
+        activeProviderId: 'codex',
+        runtimeStatus: {
+          label: 'Ready',
+          tone: 'success',
+        },
+        queueCount: 4,
+        isQueueOpen: false,
+        onToggleQueue: () => calls.push('toggleQueue'),
+        onOpenSettings: () => calls.push('openSettings'),
+      },
       startTransition: (callback) => {
         calls.push('transition');
         callback();
@@ -48,10 +59,25 @@ describe('buildStudioHeaderToolbarProps', () => {
 
     props.onSwitchWorkspace('shots');
     props.onOpenOnboarding();
+    props.onToggleQueue();
+    props.onOpenSettings();
 
     expect(props.activeWorkspaceId).toBe('default');
     expect(props.trashCount).toBe(2);
     expect(props.usage.value).toBe('120');
-    expect(calls).toEqual(['transition', 'switch:shots', 'transition', 'openOnboarding']);
+    expect(props.queueCount).toBe(4);
+    expect(props.activeProviderId).toBe('codex');
+    expect(props.runtimeStatus).toEqual({
+      label: 'Ready',
+      tone: 'success',
+    });
+    expect(calls).toEqual([
+      'transition',
+      'switch:shots',
+      'transition',
+      'openOnboarding',
+      'toggleQueue',
+      'openSettings',
+    ]);
   });
 });

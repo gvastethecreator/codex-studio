@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-007
+packId: pack_09
+name: Slate (Split)
+category: 1. Natural Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - natural-materials
+visualDna:
+  aesthetic: Roof tile stone
+  form_and_line: Jagged edges
+  color_palette: Dark Grey, Blue
+  lighting_setup: Matte
+  material_texture: Layered, flaky
+  render_quality: Natural, durable
+  spatial_distortion: Flat layers
+  atmosphere: Cold, strong
+  key_features: Layers
+avoidRules:
+  - smooth
+  - polished
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-007.webp
+attributes:
+  negativePrompt: smooth, polished

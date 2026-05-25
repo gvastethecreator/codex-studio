@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-009
+packId: pack_01
+name: High Key Portrait
+category: 1. Portrait Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - portrait-styles
+visualDna:
+  aesthetic: High key studio portraiture, bright and airy photography
+  subject_treatment: Low contrast edges, soft features, minimal shadows on the face
+  color_and_tone: Predominantly white and pastel tones, light skin tones, pure white background
+  lighting_and_shadow: Overexposed wrap-around lighting, multiple softboxes, shadowless environment
+  texture_and_material: Soft and airy textures, smooth skin, bright fabrics
+  camera_and_composition: Blown out highlights in the background, clean and minimal framing
+  atmosphere_and_mood: Happy, pure, clean, optimistic, ethereal
+  rendering_and_quality: Commercial beauty standard, crisp but soft, high resolution
+avoidRules:
+  - dark
+  - shadows
+  - black
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-009.webp
+attributes:
+  negativePrompt: dark, shadows, black

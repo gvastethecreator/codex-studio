@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-002
+packId: pack_10
+name: Bauhaus Style
+category: 1. Geometric Abstraction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - geometric-abstraction
+visualDna:
+  aesthetic: Functional design
+  form_and_line: Clean lines
+  color_palette: Red, Yellow, Blue, Black
+  lighting_setup: Flat
+  material_texture: Matte paper
+  render_quality: Modernist, clean
+  spatial_distortion: Simplified forms
+  atmosphere: Rational, bold
+  key_features: Primary colors
+avoidRules:
+  - organic
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-002.webp
+attributes:
+  negativePrompt: organic, messy

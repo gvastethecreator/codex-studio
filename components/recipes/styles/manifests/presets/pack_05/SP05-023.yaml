@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-023
+packId: pack_05
+name: Grand Pirate Adventure
+category: 2. 2000s Classics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - 2000s-classics
+visualDna:
+  aesthetic: Elastic anatomy, bright oceans, exaggerated faces, treasure-hunt exuberance, straw-hat silhouettes, pirate flags, sea-king monsters, devil-fruit powers
+  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
+  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
+  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
+  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
+  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
+  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
+  atmosphere: Joyful, adventurous, spirited, free
+  key_features: Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-023.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

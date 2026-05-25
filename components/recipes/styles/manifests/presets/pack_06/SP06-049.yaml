@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-049
+packId: pack_06
+name: Vector Art (Flat)
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: Adobe Illustrator style
+  form_and_line: Bezier curves
+  color_palette: Solid flat colors
+  lighting_setup: None
+  material_texture: None
+  render_quality: Icon, logo, clean
+  spatial_distortion: Simplified
+  atmosphere: Corporate, modern
+  key_features: Infinite resolution
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-049.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

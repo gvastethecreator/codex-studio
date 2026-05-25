@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP07-016
+packId: pack_07
+name: Bauhaus Interior
+category: 1. Interior Design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - interior-design
+visualDna:
+  aesthetic: Functional modernist room, form follows function, workshop aesthetic, design-for-all
+  form_and_line: Geometric shapes, pure circle and square, tubular arcs, flat planes intersect, grid logic
+  color_palette: Primary colors + Black/White, Clean Red, Canary Yellow, Cobalt Blue, Warm Grey
+  lighting_setup: Even, functional, task-focused spots, floating globe pendants, industrial-grade clarity
+  material_texture: Steel, glass, leather, bent plywood, canvas webbing, linoleum, chrome plate
+  render_quality: Design classic, rational, German-modern clarity, timeless efficiency, honest construction
+  spatial_distortion: None
+  atmosphere: Smart, artistic, clean, workshop-fresh, purpose-driven, intellectual calm
+  key_features: Tubular steel, primary color accents, cantilever chairs, isometric clarity, interlocking forms
+avoidRules:
+  - ornate
+  - cluttered
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-016.webp
+attributes:
+  negativePrompt: ornate, cluttered

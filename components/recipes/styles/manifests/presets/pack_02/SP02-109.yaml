@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-109
+packId: pack_02
+name: CatDog - Shared-Body Elastic Nonsense
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Single-body two-headed creature absurdity, opposite temperaments locked in one sausage body, suburban hijinks, long-body contortions, impossible shared anatomy, simple but deeply strange sitcom creature design
+  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
+  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
+  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
+  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
+  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
+  spatial_distortion: Sausage-body contortions, impossible shared spine bends, mirrored emotional poses at both ends, accordion-body compression
+  atmosphere: Goofy, elastic, odd-couple, playful
+  key_features: Shared-body anatomy, impossible body bends, head-to-tail personality contrast, suburban prop gags, elastic long-form silhouettes
+avoidRules:
+  - digital
+  - HD
+  - smooth
+  - 3d
+  - realistic
+  - painted
+  - single panel
+  - vertical scrolling
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-109.webp
+attributes:
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern

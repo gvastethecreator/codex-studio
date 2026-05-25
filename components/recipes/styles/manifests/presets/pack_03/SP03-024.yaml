@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-024
+packId: pack_03
+name: Wireframe Render
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Mesh topology view
+  form_and_line: Glowing lines
+  color_palette: Black background, Neon lines, glow contrast
+  lighting_setup: None, self-illuminated edges
+  material_texture: Grid, topology linework
+  render_quality: Technical, blueprint, debug-preview
+  atmosphere: Technical, cyber, developer aesthetic
+  key_features: Topology, edge-flow visibility
+avoidRules:
+  - solid
+  - textured
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-024.webp
+attributes:
+  negativePrompt: solid, textured

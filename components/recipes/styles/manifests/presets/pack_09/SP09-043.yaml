@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-043
+packId: pack_09
+name: Slime/Goo
+category: 3. Tactile Surfaces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - tactile-surfaces
+visualDna:
+  aesthetic: Nickelodeon slime
+  form_and_line: Drips
+  color_palette: Neon Green
+  lighting_setup: Wet gloss
+  material_texture: Viscous liquid
+  render_quality: Gross, fun
+  spatial_distortion: Melting
+  atmosphere: Playful, sticky
+  key_features: Drips
+avoidRules:
+  - solid
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-043.webp
+attributes:
+  negativePrompt: solid, dry

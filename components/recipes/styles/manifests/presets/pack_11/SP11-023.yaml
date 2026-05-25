@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-023
+packId: pack_11
+name: Tin Toy
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity
+  form_and_line: Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly
+  color_palette: Metallic, Red, Gold, stamped-tin spectrum, oxidized-brass patina, litho-ink fade
+  lighting_setup: Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce
+  material_texture: Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges
+  render_quality: Retro, mechanical, wind-up wonder, gear-train heart, toy-cabinet treasure
+  spatial_distortion: Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance
+  atmosphere: Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia
+  key_features: Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail
+avoidRules:
+  - plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-023.webp
+attributes:
+  negativePrompt: plastic

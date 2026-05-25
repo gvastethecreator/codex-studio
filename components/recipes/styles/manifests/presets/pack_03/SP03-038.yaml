@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-038
+packId: pack_03
+name: Rim Lighting
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Silhouette with edge glow
+  form_and_line: Glowing outline
+  color_palette: Dark subject, bright edge, silhouette contrast
+  lighting_setup: Backlight, edge-rim accent
+  material_texture: Contrast, rim-catch surfaces
+  render_quality: Dramatic, moody, hero-reveal
+  atmosphere: Mysterious, epic, cinematic tension
+  key_features: Edge highlight, halo definition
+avoidRules:
+  - front light
+  - flat
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-038.webp
+attributes:
+  negativePrompt: front light, flat

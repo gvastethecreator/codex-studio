@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-076
+packId: pack_09
+name: Chain Link Fence
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Metal diamond mesh
+  form_and_line: Wire diamonds
+  color_palette: Galvanized Grey
+  lighting_setup: Metallic
+  material_texture: Woven wire
+  render_quality: Urban, barrier
+  spatial_distortion: Bent
+  atmosphere: Restricted, urban
+  key_features: Diamond grid
+avoidRules:
+  - wood fence
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-076.webp
+attributes:
+  negativePrompt: wood fence

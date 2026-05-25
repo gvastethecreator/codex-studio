@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-021
+packId: pack_02
+name: Hype Williams Fisheye Glam Video
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Late-90s luxury music video, Hype Williams fishbowl, shiny suits, tunnel vision, hip-hop opulence
+  form_and_line: None
+  color_palette: Shiny suits, chrome, platinum, ice white, purple velvet
+  lighting_setup: Studio tunnel, keyed spot, dramatic back silhouette
+  material_texture: Fisheye lens, curved glass, spherical distortion
+  render_quality: Glossy, expensive, music-video maximalism, diamond-studded
+  spatial_distortion: Distorted wide angle, fishbowl warp, tunnel perspective
+  atmosphere: Cool, flashy, hip-hop royalty, aspirational excess
+  key_features: Fisheye, spinning rims, slow-motion strut
+avoidRules:
+  - boring
+  - normal
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-021.webp
+attributes:
+  negativePrompt: boring, normal

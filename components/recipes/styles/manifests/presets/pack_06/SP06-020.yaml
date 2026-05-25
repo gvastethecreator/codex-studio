@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-020
+packId: pack_06
+name: Colored Pencil
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Prismacolor drawing
+  form_and_line: Layered wax strokes
+  color_palette: Vibrant, blended
+  lighting_setup: Soft
+  material_texture: Wax buildup, paper grain
+  render_quality: Illustrative, soft
+  spatial_distortion: None
+  atmosphere: Gentle, colorful
+  key_features: Wax texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-020.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

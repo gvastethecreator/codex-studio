@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-014
+packId: pack_06
+name: Casein Paint
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Milk-based paint illustration
+  form_and_line: Matte, velvety
+  color_palette: High chroma, matte
+  lighting_setup: Soft, illustrative
+  material_texture: Smooth, durable
+  render_quality: Vintage illustration
+  spatial_distortion: Clean shapes
+  atmosphere: Classic, sturdy
+  key_features: Velvet matte finish
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-014.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

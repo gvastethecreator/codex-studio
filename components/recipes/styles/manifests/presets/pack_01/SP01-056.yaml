@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-056
+packId: pack_01
+name: Architecture (Modern)
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Building facade
+  form_and_line: Geometric lines
+  color_palette: Glass, Steel, Concrete
+  lighting_setup: Sunlight and shadow
+  material_texture: Smooth materials
+  render_quality: ArchDaily, clean
+  spatial_distortion: Perspective correction
+  atmosphere: Imposing, structured
+  key_features: Vertical lines
+avoidRules:
+  - people
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-056.webp
+attributes:
+  negativePrompt: people, messy

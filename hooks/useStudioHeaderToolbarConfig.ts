@@ -30,10 +30,20 @@ interface StudioHeaderToolbarOverlayContext {
   onToggleDebug: HeaderToolbarProps['onToggleDebug'];
 }
 
+interface StudioHeaderToolbarCommandCenterContext {
+  activeProviderId: HeaderToolbarProps['activeProviderId'];
+  runtimeStatus: HeaderToolbarProps['runtimeStatus'];
+  queueCount: HeaderToolbarProps['queueCount'];
+  isQueueOpen: HeaderToolbarProps['isQueueOpen'];
+  onToggleQueue: HeaderToolbarProps['onToggleQueue'];
+  onOpenSettings: HeaderToolbarProps['onOpenSettings'];
+}
+
 export interface BuildStudioHeaderToolbarPropsArgs {
   view: StudioHeaderToolbarViewContext;
   workspace: StudioHeaderToolbarWorkspaceContext;
   overlays: StudioHeaderToolbarOverlayContext;
+  commandCenter: StudioHeaderToolbarCommandCenterContext;
   startTransition?: StartTransition;
 }
 
@@ -45,6 +55,7 @@ export function buildStudioHeaderToolbarProps({
   view,
   workspace,
   overlays,
+  commandCenter,
   startTransition = startViewTransition,
 }: BuildStudioHeaderToolbarPropsArgs): HeaderToolbarProps {
   return {
@@ -65,6 +76,12 @@ export function buildStudioHeaderToolbarProps({
     trashCount: overlays.trashCount,
     onToggleDebug: overlays.onToggleDebug,
     usage: view.usage,
+    activeProviderId: commandCenter.activeProviderId,
+    runtimeStatus: commandCenter.runtimeStatus,
+    queueCount: commandCenter.queueCount,
+    isQueueOpen: commandCenter.isQueueOpen,
+    onToggleQueue: commandCenter.onToggleQueue,
+    onOpenSettings: commandCenter.onOpenSettings,
   };
 }
 

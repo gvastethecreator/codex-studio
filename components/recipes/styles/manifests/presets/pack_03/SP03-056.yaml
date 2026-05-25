@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-056
+packId: pack_03
+name: Scientific Visualization
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Molecule or galaxy
+  form_and_line: Data driven
+  color_palette: False color data
+  lighting_setup: Self illuminated
+  material_texture: Particle cloud, volumetric data
+  render_quality: NASA lab-grade accuracy, scientific storytelling
+  spatial_distortion: None
+  atmosphere: Smart, complex, knowledge-driven
+  key_features: Data points, scale-reference
+avoidRules:
+  - fantasy
+  - magic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-056.webp
+attributes:
+  negativePrompt: fantasy, magic

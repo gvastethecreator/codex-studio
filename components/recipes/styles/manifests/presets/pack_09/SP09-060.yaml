@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-060
+packId: pack_09
+name: Mercury (Liquid Metal)
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Toxic metal drops
+  form_and_line: Rounded blobs
+  color_palette: Chrome
+  lighting_setup: Mirror reflection
+  material_texture: Liquid metal
+  render_quality: T-1000, dangerous
+  spatial_distortion: Coalescing
+  atmosphere: Sci-fi, fluid
+  key_features: High surface tension
+avoidRules:
+  - solid silver
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-060.webp
+attributes:
+  negativePrompt: solid silver

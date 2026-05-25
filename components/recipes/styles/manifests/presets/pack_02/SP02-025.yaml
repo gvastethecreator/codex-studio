@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-025
+packId: pack_02
+name: Infomercial
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Product demo
+  form_and_line: None
+  color_palette: Bright, cheap, primary yellow, sale red, beige kitchen
+  lighting_setup: Flat, even wash, product spotlight, over-lit
+  material_texture: Video, SD sheen, low-budget smoothness
+  render_quality: Sales, cheesy, excited-host energy, demonstration pace
+  spatial_distortion: Before/After split, split-screen comparison, arrow overlay
+  atmosphere: Enthusiastic, fake, paid-actor sincerity, limited-time urgency
+  key_features: Call now, phone number crawl, money-back guarantee
+avoidRules:
+  - cinematic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-025.webp
+attributes:
+  negativePrompt: cinematic

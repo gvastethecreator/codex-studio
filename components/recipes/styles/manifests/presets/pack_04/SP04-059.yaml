@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-059
+packId: pack_04
+name: UI/HUD Design
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Game interface
+  form_and_line: Thin tech lines
+  color_palette: Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast
+  lighting_setup: Glow, emissive interface, screen-space radiance
+  material_texture: Screen
+  render_quality: Futuristic, functional, diegetic elegance, heads-up immersion
+  spatial_distortion: None
+  atmosphere: Tech, info, augmented awareness, mission-ops focus
+  key_features: Floating, thin rule-lines, data readout
+avoidRules:
+  - organic
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-059.webp
+attributes:
+  negativePrompt: organic, messy

@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-014
+packId: pack_11
+name: Cottagecore
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: Rural romantic life, pastoral dream, meadow-dwelling simplicity, countryside idyll
+  form_and_line: Soft, flowery, organic tendrils, billowing fabric, wildflower outlines
+  color_palette: Pastel, earth tones, floral, lavender-cream, sage-green, butter-yellow, rose-quartz blush
+  lighting_setup: Golden hour, soft, lace-curtain diffusion, candlelit tableaux, dawn-mist quiet
+  material_texture: Linen, flowers, wood, hand-thrown ceramics, embroidered cotton, pressed herbs, wicker weave
+  render_quality: Pinterest, cozy, traditional, bread-baking warmth, sun-kissed nostalgia, slow-living grace
+  spatial_distortion: None, natural proportions, garden-gate framing, window-light intimacy
+  atmosphere: Peaceful, slow, romantic, gentle contentment, wildflower freedom, hearthside safety
+  key_features: Flowers everywhere, mason-jar bouquets, wicker baskets, tea-stained doily lace
+avoidRules:
+  - city
+  - modern
+  - cold
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-014.webp
+attributes:
+  negativePrompt: city, modern, cold

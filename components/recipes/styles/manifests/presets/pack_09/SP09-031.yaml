@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-031
+packId: pack_09
+name: Latex (Shiny)
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Tight rubber
+  form_and_line: Stretch lines
+  color_palette: Black or Red
+  lighting_setup: High specularity
+  material_texture: Smooth, sticky
+  render_quality: Fetish, superhero
+  spatial_distortion: Tight fit
+  atmosphere: Intense, sleek
+  key_features: Highlights
+avoidRules:
+  - matte
+  - cloth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-031.webp
+attributes:
+  negativePrompt: matte, cloth

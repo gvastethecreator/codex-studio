@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-031
+packId: pack_11
+name: Ice Carving
+category: 3. Artistic Mediums
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - artistic-mediums
+visualDna:
+  aesthetic: Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle
+  form_and_line: Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve
+  color_palette: Clear, Blue tint, frozen-depth cyan, air-bubble white, internal-fracture silver, melt-water transparency
+  lighting_setup: Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance
+  material_texture: Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture
+  render_quality: Cold, temporary, crystal, melt-away impermanence, wedding-hall spectacle, ice-bar art
+  spatial_distortion: Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth
+  atmosphere: Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony
+  key_features: Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool reflection
+avoidRules:
+  - warm
+  - opaque
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-031.webp
+attributes:
+  negativePrompt: warm, opaque

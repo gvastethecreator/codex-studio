@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-072
+packId: pack_07
+name: Bottle Ship
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Ship inside glass, impossible-in-bottle, maritime miniature, patience-craft, message-in-bottle mystery
+  form_and_line: Glass reflection, hull-curve silhouette, mast-rigging threads, bottle-neck constriction, cork-stopper circle
+  color_palette: Wood, Glass, Rigging-tan, Sail-cream, Sea-blue tint, Brass, Cork-brown
+  lighting_setup: Studio, glass-highlight streak, bottle-curve distortion-glint, display-shelf ambient, window-light catch
+  material_texture: Glass, miniature, cork, thread, wire, tissue-paper sail, tiny-metal, dust-in-bottle
+  render_quality: Detailed, impossible, ship-in-bottle wonder, maritime-craft miracle, patience-art, miniature-perfection
+  spatial_distortion: Distorted by glass
+  atmosphere: Precious, trapped, still-voyage, curio-cabinet, patient-hands, impossible-journey, nautical-dream
+  key_features: Glass bottle, miniature ship, cork, rigging threads, glass distortion, display stand, impossible construction
+avoidRules:
+  - ocean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-072.webp
+attributes:
+  negativePrompt: ocean

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-042
+packId: pack_06
+name: Halftone (Newspaper)
+category: 5. Printmaking
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+visualDna:
+  aesthetic: Vintage newspaper photo
+  form_and_line: Dot pattern
+  color_palette: Black dots on newsprint
+  lighting_setup: Flat
+  material_texture: Cheap paper, ink smudge
+  render_quality: Low res, mass media
+  spatial_distortion: Pixelated by dots
+  atmosphere: Vintage, gritty
+  key_features: Visible dots
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-042.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

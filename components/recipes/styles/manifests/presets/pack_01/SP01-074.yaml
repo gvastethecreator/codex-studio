@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP01-074
+packId: pack_01
+name: Bokeh Panorama (Brenizer)
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Wide angle with shallow depth
+  form_and_line: Subject pop
+  color_palette: Vibrant
+  lighting_setup: Natural
+  material_texture: Blurry background
+  render_quality: Impossible depth of field
+  spatial_distortion: Swirly bokeh
+  atmosphere: Epic portrait
+  key_features: Thin focus plane
+avoidRules:
+  - deep focus
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-074.webp
+attributes:
+  negativePrompt: deep focus

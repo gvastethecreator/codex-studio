@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-024
+packId: pack_02
+name: Public Access TV
+category: 2. TV & Broadcast
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - tv-and-broadcast
+visualDna:
+  aesthetic: Weird local TV
+  form_and_line: None
+  color_palette: Bad white balance, green cast, orange skin, sickly fluorescent
+  lighting_setup: Harsh shadows, single ceiling tube, unflattering overhead
+  material_texture: Analog noise, composite video, RF interference
+  render_quality: Amateur, weird, Wayne's World cable-access, dead air
+  spatial_distortion: Chroma key fail, blue fringe, transparent hair halo
+  atmosphere: Surreal, awkward, uncanny local, midnight broadcast
+  key_features: Bad keying, folding chair, community bulletin
+avoidRules:
+  - professional
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-024.webp
+attributes:
+  negativePrompt: professional

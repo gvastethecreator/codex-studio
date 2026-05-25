@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-049
+packId: pack_02
+name: Kodachrome (50s)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: National Geographic slide
+  form_and_line: None
+  color_palette: Rich Red/Yellow, Kodachrome red, golden wheat, azure sky
+  lighting_setup: High contrast sun, travel-magazine daylight, crisp shadow
+  material_texture: Fine grain, dye-cloud smooth, archival stability
+  render_quality: Vivid, nostalgic, mid-century optimism, slide-projector glow
+  spatial_distortion: None
+  atmosphere: Sunny, classic, road-trip freedom, post-war Americana
+  key_features: Deep blacks, red pop, car tailfin, roadside motel
+avoidRules:
+  - faded
+  - digital
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-049.webp
+attributes:
+  negativePrompt: faded, digital

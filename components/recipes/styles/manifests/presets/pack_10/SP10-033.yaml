@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-033
+packId: pack_10
+name: Psychedelic Art
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: LSD trip visual
+  form_and_line: Flowing, melting
+  color_palette: Neon, rainbow
+  lighting_setup: Glowing
+  material_texture: Fractal
+  render_quality: Trippy, 60s
+  spatial_distortion: Melting walls
+  atmosphere: Intense, hallucination
+  key_features: Eyes everywhere
+avoidRules:
+  - dull
+  - grey
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-033.webp
+attributes:
+  negativePrompt: dull, grey

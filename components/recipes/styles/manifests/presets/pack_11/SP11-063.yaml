@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-063
+packId: pack_11
+name: Rust/Decay Macro
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty
+  form_and_line: Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers
+  color_palette: Orange, Brown, iron-oxide spectrum, verdigris-green, zinc-white bloom, crust-brown, patina-teal
+  lighting_setup: Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun
+  material_texture: Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal, patina-powder
+  render_quality: Texture, time, weathered-beauty, entropy-aesthetic, abandoned-place, wabi-sabi
+  spatial_distortion: Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau
+  atmosphere: Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay
+  key_features: Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network, peeling-edge curls, bubbled-paint texture
+avoidRules:
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-063.webp
+attributes:
+  negativePrompt: clean

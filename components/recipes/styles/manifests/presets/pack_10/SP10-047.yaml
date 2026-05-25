@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-047
+packId: pack_10
+name: Damask Pattern
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Ornate wallpaper
+  form_and_line: Symmetrical floral
+  color_palette: Two tone (e.g. Red/Gold)
+  lighting_setup: Flat
+  material_texture: Silk, velvet
+  render_quality: Luxury, classic
+  spatial_distortion: Repeat
+  atmosphere: Expensive, old
+  key_features: Symmetry
+avoidRules:
+  - modern
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-047.webp
+attributes:
+  negativePrompt: modern, messy

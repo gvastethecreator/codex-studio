@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-052
+packId: pack_02
+name: Lomography
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Toy camera (Holga)
+  form_and_line: None
+  color_palette: Cross processed, color-shifted, purple sky, green skin, unpredictable palette
+  lighting_setup: Leak, light-struck frame, accidental exposure, red window
+  material_texture: Plastic lens blur, toy-optics softness, zone focus mush
+  render_quality: Artsy, weird, lo-fi aesthetic, happy accident
+  spatial_distortion: Vignette blur, edge falloff, tunnel softness
+  atmosphere: Experimental, fun, rule-breaking, analog play
+  key_features: Light leaks, sprocket holes, film rebate, double-exposure ghost
+avoidRules:
+  - correct color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-052.webp
+attributes:
+  negativePrompt: correct color

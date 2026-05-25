@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-038
+packId: pack_10
+name: Vaporwave
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: 80s computer aesthetic
+  form_and_line: Grid
+  color_palette: Pink, Cyan
+  lighting_setup: Neon
+  material_texture: Marble bust, palm tree
+  render_quality: Aesthetic, retro
+  spatial_distortion: Glitch
+  atmosphere: Chill, nostalgic
+  key_features: Windows 95 UI
+avoidRules:
+  - modern
+  - nature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-038.webp
+attributes:
+  negativePrompt: modern, nature

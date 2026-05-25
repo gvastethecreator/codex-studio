@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP08-014
+packId: pack_08
+name: Military Surplus
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Tactical soldier gear, field-readiness doctrine, combat-proven silhouette
+  form_and_line: Boxy, pockets, armor, MOLLE grid, plate-carrier bulk, bloused-boot taper
+  color_palette: Olive Drab, Camo, Desert Tan, Multicam breakup, ranger green, coyote brown
+  lighting_setup: Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey
+  material_texture: Mil-spec canvas, Cordura nylon, dirt, parkerized metal, ballistic nylon, IR-treated fabric
+  render_quality: Tough, functional, war, battlefield authenticity, deployment-worn veracity
+  spatial_distortion: Bulky silhouette
+  atmosphere: Serious, dangerous, ready, operational tension, mission focus, silent professionalism
+  key_features: Utility pockets, magazine pouches, patrol cap, combat boots, unit patch
+avoidRules:
+  - bright
+  - delicate
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-014.webp
+attributes:
+  negativePrompt: bright, delicate, clean

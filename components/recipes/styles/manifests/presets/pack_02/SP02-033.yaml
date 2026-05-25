@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-033
+packId: pack_02
+name: Pixar Style Family Feature CG
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Stylized family-animation CG, Toy Story/Up warmth, emotional precision, lovable imperfection
+  form_and_line: None
+  color_palette: Vibrant, subsurface, warm bounce, saturated primaries, soft pastel accent
+  lighting_setup: Cinematic 3D, global illumination, soft bounce, ambient occlusion
+  material_texture: Stylized realism, clay-model surface, fabric nap, plastic toy sheen
+  render_quality: High budget, cute, emotionally precise, technically invisible
+  spatial_distortion: Big eyes, expressive pupil, exaggerated emotion
+  atmosphere: Heartwarming, fun, tear-jerking sincerity, family adventure
+  key_features: Soft shadows, character silhouette, montage sequence
+avoidRules:
+  - 2d
+  - anime
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-033.webp
+attributes:
+  negativePrompt: 2d, anime

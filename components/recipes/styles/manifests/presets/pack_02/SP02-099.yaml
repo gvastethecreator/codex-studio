@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP02-099
+packId: pack_02
+name: Punk Zine Cut-and-Paste
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: DIY photocopied-punk-zine aesthetic, ransom-note-cutout-lettering, deliberately-bad-photocopier-distortion, tape-marks-holding-collage-elements, found-magazine-image recontextualized, anarchist-pamphlet energy, glue-stick-residue-and-scissor-cuts, repeated-photocopy-generation-loss, too-dark-too-contrasty Xerox texture, early-riot-grrrl-manifesto
+  form_and_line: Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours
+  color_palette: Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern background
+  lighting_setup: Photocopier-flatbed harshness, high-contrast blown-out whites, detail-lost-in-shadow-blacks, no nuance
+  material_texture: Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint
+  render_quality: Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation
+  spatial_distortion: Cut-out-elements-tilted-angrily, ransom-letter-no-alignment, overlapping-collage depth, tape-holding-elements-askew
+  atmosphere: Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance
+  key_features: Photocopier high-contrast, ransom-note lettering, cut-and-paste collage, scotch-tape marks, staple-binding, toner-grain texture, glue-stick wrinkles
+avoidRules:
+  - digital
+  - clean
+  - smooth
+  - professional
+  - polished
+  - designed
+  - symmetrical
+  - orderly
+  - planned
+  - corporate
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-099.webp
+attributes:
+  negativePrompt: digital, clean, smooth, professional, polished, designed, symmetrical, orderly, planned, corporate

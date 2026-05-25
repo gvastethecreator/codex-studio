@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-038
+packId: pack_04
+name: National Park Poster (WPA)
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Screenprint landscape
+  form_and_line: None
+  color_palette: Separated layers, earth-toned screen spectrum, scenic flat-tint
+  lighting_setup: Flat gradient, dawn-dusk banding, atmospheric layering
+  material_texture: Screen mesh
+  render_quality: Vintage travel, bold, nostalgia-invoking vistas, WPA monumentality
+  spatial_distortion: Simplified mountains
+  atmosphere: Majestic, graphic, road-trip reverie, democratic grandeur
+  key_features: Serif font, layered silhouette, scenic horizontal banding
+avoidRules:
+  - photo
+  - detailed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-038.webp
+attributes:
+  negativePrompt: photo, detailed

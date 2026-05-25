@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-036
+packId: pack_02
+name: Fleischer Rubber Hose Cartoon
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: 1930s monochrome bounce-cartoon, Mickey/Betty Boop era, rubber-hose limbs, pie-cut eyes, cuphead energy
+  form_and_line: Thick, bouncy
+  color_palette: Black and White, charcoal fill, cream paper, no grey
+  lighting_setup: None, flat monochrome, stark graphic contrast
+  material_texture: Film grain, nitrate flicker, hand-painted cel
+  render_quality: Retro, bouncy, surreal rubber-band motion, hypnotic loop
+  spatial_distortion: Noodle limbs, rubber-hose arms, boneless contortion
+  atmosphere: Happy, weird, vaudeville rhythm, early-talkie energy
+  key_features: Pie eyes, white gloves, bouncing ball sync, surreal transformation
+avoidRules:
+  - color
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-036.webp
+attributes:
+  negativePrompt: color, modern

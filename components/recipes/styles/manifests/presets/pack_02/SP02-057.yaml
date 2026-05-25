@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-057
+packId: pack_02
+name: Pinhole Camera
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Lensless photo
+  form_and_line: None
+  color_palette: Soft, dark, muted monochrome, grey wash, charcoal
+  lighting_setup: Long exposure, minutes-to-hours, time-smear, star trails
+  material_texture: Soft everywhere, infinite softness, no lens character
+  render_quality: Dreamy, infinite DOF, everything-in-focus, timeless blur
+  spatial_distortion: Vignette, circular edge, keyhole darkening
+  atmosphere: Ethereal, time, solargraph, patient observation
+  key_features: Blur, no lens, oatmeal-tin camera, light-leak drama
+avoidRules:
+  - sharp focus
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-057.webp
+attributes:
+  negativePrompt: sharp focus

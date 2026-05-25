@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-032
+packId: pack_08
+name: Victorian Mourning
+category: 2. Historical & Fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+visualDna:
+  aesthetic: Widow weeds, Victorian grief ritual, gaslit-sorrow pageantry
+  form_and_line: Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure
+  color_palette: Black matte, jet, raven, deep crepe-black, jet-bead black, unrelieved midnight
+  lighting_setup: Gloomy, overcast-window grey, candle-flicker dimness, rain-streaked glass
+  material_texture: Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture
+  render_quality: Sad, formal, funereal stillness, grief-portrait gravity
+  spatial_distortion: None
+  atmosphere: Somber, gothic, rain-on-granite sorrow, drawn-curtain isolation, eternal-widow silence
+  key_features: Black veil, jet brooch, widow's cap, black-bordered handkerchief
+avoidRules:
+  - color
+  - happy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-032.webp
+attributes:
+  negativePrompt: color, happy

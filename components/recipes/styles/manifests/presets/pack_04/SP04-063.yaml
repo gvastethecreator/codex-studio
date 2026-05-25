@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-063
+packId: pack_04
+name: Hokusai Woodcut (Floating World)
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Classical woodblock seascape language, Hokusai style, Great Wave energy, floating-world poetry
+  form_and_line: Variable width
+  color_palette: Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth
+  lighting_setup: Flat, no shadow, graphic elegance, woodblock tradition
+  material_texture: Wood grain
+  render_quality: Japanese classical woodblock masterpiece, Edo precision
+  spatial_distortion: Flattened perspective
+  atmosphere: Nature, calm, ukiyo-e transience, seasonal reverence
+  key_features: Outline, gradient band, seal signature
+avoidRules:
+  - western
+  - 3d
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-063.webp
+attributes:
+  negativePrompt: western, 3d

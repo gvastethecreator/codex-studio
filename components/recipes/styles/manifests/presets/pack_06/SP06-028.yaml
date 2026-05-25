@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-028
+packId: pack_06
+name: Scratchboard
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Subtractive drawing
+  form_and_line: White lines scratched out of black
+  color_palette: Black and White
+  lighting_setup: High contrast
+  material_texture: Scratched clay
+  render_quality: Detailed, illustrative
+  spatial_distortion: Stylized texture
+  atmosphere: Dramatic, inverted
+  key_features: White on black
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-028.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

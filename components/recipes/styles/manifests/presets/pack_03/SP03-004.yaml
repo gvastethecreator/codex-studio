@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP03-004
+packId: pack_03
+name: Arnold Feature Film Path Tracer
+category: 5. Render Engines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+visualDna:
+  aesthetic: CPU path traced movie VFX
+  form_and_line: Incredibly realistic
+  color_palette: Natural, filmic, ACES color-managed
+  lighting_setup: Complex bounces, unclamped GI
+  material_texture: Micro-displacement, layered materials
+  render_quality: Hollywood VFX, film-standard
+  spatial_distortion: None
+  atmosphere: Realistic, grounded, cinematic gravitas
+  key_features: Physical accuracy, volume scattering
+avoidRules:
+  - photo
+  - drawing
+  - painting
+  - sketch
+  - 2d
+  - flat
+  - noise
+  - grain
+  - low resolution
+  - jpeg artifacts
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-004.webp
+attributes:
+  negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text

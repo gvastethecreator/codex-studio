@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP04-089
+packId: pack_04
+name: Creature Design Iteration
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Creature-design exploration sheet, anatomical-speculation sketching, muscle-study overlays, bone-structure ghost drawings, adaptation-to-environment design thinking, alien-biology brainstorming, Terryl Whitlatch anatomical fantasy, Monster-Hunter design iteration, evolution-pressure visualization
+  form_and_line: Anatomical construction lines, skeleton-ghost underdrawing, muscle-group overlay contours, movement-range indication arcs, biological-adaptation callouts
+  color_palette: Sketch-grey tonal range, ochre underdrawing, blue construction overlay, red muscle-highlight, neutral background, no final color
+  lighting_setup: Anatomical-study lighting, rim-light for form reading, subsurface-indication on thin membranes, translucent-tissue light
+  material_texture: Anatomical-texture variety, scale-plate overlap, fur-direction strokes, carapace-gloss indication, membrane-translucency, scar-tissue roughness
+  render_quality: Creature-design exploration sheet, biological-concept study, anatomical-speculation rendering, adaptive-evolution visualization
+  spatial_distortion: Multiple-pose iteration grid, anatomical-layering ghost views, skeleton-over-flesh transparency, evolution-variant comparison
+  atmosphere: Scientific, exploratory, biological-wonder, adaptive-imagination, speculative-zoology excitement
+  key_features: Anatomy-layering views, skeleton-ghost overlay, muscle-group callouts, multiple-pose iterations, adaptation-annotation notes
+avoidRules:
+  - human
+  - normal
+  - domestic
+  - cute
+  - ordinary
+  - recognizable
+  - existing animal
+  - final render
+  - single version
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-089.webp
+attributes:
+  negativePrompt: human, normal, domestic, cute, ordinary, recognizable, existing animal, final render, single version

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-069
+packId: pack_10
+name: QR Code Style
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Data matrix
+  form_and_line: Square pixels
+  color_palette: Black and White
+  lighting_setup: Flat
+  material_texture: Digital
+  render_quality: Machine readable
+  spatial_distortion: Blocky
+  atmosphere: Digital, code
+  key_features: Corner markers
+avoidRules:
+  - round
+  - analog
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-069.webp
+attributes:
+  negativePrompt: round, analog

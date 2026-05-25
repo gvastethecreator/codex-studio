@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-050
+packId: pack_02
+name: Polaroid (Instant)
+category: 5. Photography Eras
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+visualDna:
+  aesthetic: Instant film
+  form_and_line: None
+  color_palette: Green/Blue cast, cool shift, muted pastel, cream border
+  lighting_setup: Flash, direct pop, over-lit faces, redeye bounce
+  material_texture: Soft focus, plastic lens, diffusion, chemical developer
+  render_quality: Personal, memory, snapshot intimacy, instant nostalgia
+  spatial_distortion: Chemical leak, developer smear, edge imperfection
+  atmosphere: Nostalgic, fun, scrapbook moment, party memory
+  key_features: White border, sharpie caption, square format, dated corner
+avoidRules:
+  - sharp
+  - hd
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-050.webp
+attributes:
+  negativePrompt: sharp, hd

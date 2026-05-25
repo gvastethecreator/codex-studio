@@ -4,6 +4,7 @@ import type {
   LocalCodexSessionResponse,
 } from '../../../../packages/shared/src';
 import { CodexRpcClient } from './rpcClient';
+import { extractUsageSnapshot, pickRateLimitSnapshot } from './rateLimitUsage';
 
 export interface CodexRpcTransport {
   connect(): Promise<void>;
@@ -56,82 +57,6 @@ export function formatCodexAuthLabel(authMode: CodexAuthMode) {
     default:
       return 'Not signed in';
   }
-}
-
-export function pickRateLimitSnapshot(response: any) {
-  const byLimitId = response?.rateLimitsByLimitId;
-  if (byLimitId && typeof byLimitId === 'object') {
-    if (byLimitId.codex && typeof byLimitId.codex === 'object') {
-      return { snapshot: byLimitId.codex, path: 'rateLimitsByLimitId.codex' };
-    }
-
-    for (const [limitId, snapshot] of Object.entries(byLimitId)) {
-      if (snapshot && typeof snapshot === 'object') {
-        return { snapshot, path: `rateLimitsByLimitId.${limitId}` };
-      }
-    }
-  }
-
-  if (response?.rateLimits && typeof response.rateLimits === 'object') {
-    return { snapshot: response.rateLimits, path: 'rateLimits' };
-  }
-
-  return { snapshot: null, path: null };
-}
-
-export function extractUsageSnapshot(
-  snapshot: any,
-  pathPrefix: string | null,
-): CodexUsageSnapshot | null {
-  if (!snapshot || typeof snapshot !== 'object') return null;
-
-  const credits = snapshot.credits;
-  if (credits && typeof credits === 'object') {
-    if (credits.unlimited === true) {
-      return {
-        available: 'unlimited',
-        unit: 'credits',
-        display: 'Unlimited',
-        path: pathPrefix ? `${pathPrefix}.credits` : 'credits',
-        raw: credits,
-      };
-    }
-
-    if (typeof credits.balance === 'string' && credits.balance.trim().length > 0) {
-      const numericBalance = Number(credits.balance);
-      return {
-        available: Number.isFinite(numericBalance) ? numericBalance : credits.balance.trim(),
-        unit: 'credits',
-        display: credits.balance.trim(),
-        path: pathPrefix ? `${pathPrefix}.credits.balance` : 'credits.balance',
-        raw: credits,
-      };
-    }
-
-    if (credits.hasCredits === false) {
-      return {
-        available: 0,
-        unit: 'credits',
-        display: '0',
-        path: pathPrefix ? `${pathPrefix}.credits` : 'credits',
-        raw: credits,
-      };
-    }
-  }
-
-  const primary = snapshot.primary;
-  if (primary && typeof primary.usedPercent === 'number') {
-    const remaining = Math.max(0, Math.min(100, 100 - primary.usedPercent));
-    return {
-      available: remaining,
-      unit: 'window_percent',
-      display: `${Math.round(remaining)}% left`,
-      path: pathPrefix ? `${pathPrefix}.primary.usedPercent` : 'primary.usedPercent',
-      raw: primary,
-    };
-  }
-
-  return null;
 }
 
 export function buildLocalCodexSessionResponse(
@@ -218,7 +143,9 @@ export function createLocalCodexSessionReader({
               ? account.planType
               : typeof snapshot?.planType === 'string'
                 ? snapshot.planType
-                : null,
+                : typeof snapshot?.plan_type === 'string'
+                  ? snapshot.plan_type
+                  : null,
           usage: extractUsageSnapshot(snapshot, path),
           source: 'app-server',
           fetchedAt: now(),

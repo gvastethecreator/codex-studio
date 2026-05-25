@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-060
+packId: pack_11
+name: Circuit Board
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: CPU die shot, silicon-city, wafer-art, integrated-circuit landscape, chip-fab photography
+  form_and_line: Traces, paths, Manhattan-routing, 45-degree diagonal, via-grid, interconnect-highway
+  color_palette: Green, Gold, Silicon, copper-interconnect orange, solder-mask green, gold-bond-wire, silicon-substrate grey, immersion-tin silver
+  lighting_setup: Flat metallic, die-shot macro, ring-light, wafer-inspection, solder-mask reflection
+  material_texture: Silicon, solder, polysilicon gate, metal-interconnect stack, passivation-layer glaze, probe-mark indent, bond-pad gold
+  render_quality: Tech, complex, silicon-engineering, Moore's-law beauty, nanometer-design, EDA-art
+  spatial_distortion: City-like, macro-block placement, standard-cell grid, routing-congestion channel, floor-plan region
+  atmosphere: Digital, logic, clean-room silence, wafer-fab precision, clock-tree rhythm, silicon-dream
+  key_features: Chips, bond-pads, via-arrays, standard-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial
+avoidRules:
+  - organic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-060.webp
+attributes:
+  negativePrompt: organic

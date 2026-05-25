@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-015
+packId: pack_11
+name: Dark Academia
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: Classic university library, gothic-campus romance, candlelit scholarship, Oxford-common-room
+  form_and_line: Detailed, gothic, arch-window contours, columnar rhythm, ornate typography
+  color_palette: Brown, Tweed, Black, Gold, mahogany-warm, oxblood-leather, brass-fixture shimmer, parchment-cream
+  lighting_setup: Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama
+  material_texture: Old paper, leather books, wood, wax-drip candle stacks, wool-blend jackets, ink-stained fingertips
+  render_quality: Intellectual, moody, historic, dusty-spine mystery, thesis-night ambiance, secret-society elegance
+  spatial_distortion: None, towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy
+  atmosphere: Serious, studious, mysterious, rain-on-glass melancholy, ancient-knowledge reverence, midnight revelation
+  key_features: Books and coffee, quill-and-inkwell, brass reading lamps, leather-bound stacks
+avoidRules:
+  - bright
+  - modern
+  - neon
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-015.webp
+attributes:
+  negativePrompt: bright, modern, neon

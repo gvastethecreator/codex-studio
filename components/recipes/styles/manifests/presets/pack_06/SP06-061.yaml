@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-061
+packId: pack_06
+name: Collage (Analog)
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Cut and paste magazine
+  form_and_line: Scissor cuts
+  color_palette: Vintage print
+  lighting_setup: Inconsistent
+  material_texture: Paper, glue
+  render_quality: Dada, punk
+  spatial_distortion: Disjointed
+  atmosphere: Chaotic, surreal
+  key_features: Cutout edges
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-061.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

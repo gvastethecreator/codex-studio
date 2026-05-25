@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-069
+packId: pack_02
+name: Split Lighting
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Half face shadow
+  form_and_line: None
+  color_palette: High contrast, deep shadow, bright highlight, no midtone bridge
+  lighting_setup: 90 degree key, side-only illumination, perfect split
+  material_texture: Skin texture, pore detail, stubble relief
+  render_quality: Dramatic, villain, two-face tension, moral duality
+  spatial_distortion: None
+  atmosphere: Tense, hidden, internal conflict, shadow self
+  key_features: Half black, half lit, eye in shadow, dramatic side-profile
+avoidRules:
+  - flat light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-069.webp
+attributes:
+  negativePrompt: flat light

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-065
+packId: pack_11
+name: Soap Bubble
+category: 5. Micro/Macro
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - micro-macro
+visualDna:
+  aesthetic: Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence
+  form_and_line: Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl
+  color_palette: Rainbow iridescent, thin-film spectrum, magenta-cyan-yellow, soap-film pastel, interference-order colors
+  lighting_setup: Reflection, dark-background, specular-catch, diffuse-overhead, ring-light iridescence
+  material_texture: Thin film liquid, soap-membrane, glycerin-viscosity, fluid-dynamics surface, micelle-layer
+  render_quality: Fragile, colorful, bubble-poetry, interference-physics, iridescent-beauty, floating-second
+  spatial_distortion: Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature
+  atmosphere: Dreamy, fleeting, pop-second, bubble-bath quiet, childhood-wonder, vanishing-beauty
+  key_features: Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp
+avoidRules:
+  - popped
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-065.webp
+attributes:
+  negativePrompt: popped

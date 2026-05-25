@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-039
+packId: pack_02
+name: UPA Style (Mid-Century)
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: 50s minimalism
+  form_and_line: Graphic
+  color_palette: Offset blocks, teal, mustard, brick red, charcoal, cream
+  lighting_setup: None, flat graphic, negative space contrast
+  material_texture: Paper, matte, poster-print, graphic-design surface
+  render_quality: Design, flat, modernist composition, elegant simplicity
+  spatial_distortion: Abstract shapes, geometric reduction, angular stylization
+  atmosphere: Jazz, modern, mid-century optimism, cool intellectual
+  key_features: Flatness, limited animation, graphic silhouette
+avoidRules:
+  - realistic
+  - 3d
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-039.webp
+attributes:
+  negativePrompt: realistic, 3d

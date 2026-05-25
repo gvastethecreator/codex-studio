@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-029
+packId: pack_01
+name: Microscope (SEM)
+category: 5. Camera Types
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - camera-types
+visualDna:
+  aesthetic: Electron microscope scan
+  form_and_line: Incredible texture detail
+  color_palette: Greyscale
+  lighting_setup: Directional electron beam
+  material_texture: Fractal patterns
+  render_quality: Scientific, alien
+  spatial_distortion: Extreme magnification
+  atmosphere: Scientific, scary
+  key_features: B&W depth
+avoidRules:
+  - color
+  - macro
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-029.webp
+attributes:
+  negativePrompt: color, macro

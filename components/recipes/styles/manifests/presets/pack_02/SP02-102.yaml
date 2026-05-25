@@ -1,0 +1,36 @@
+schemaVersion: 1
+id: SP02-102
+packId: pack_02
+name: Smiling Friends - Flat Weird Dayjob Chaos
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Slack-off office cartoon with flat digital color, awkward little guys, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan workplace nonsense, casually cursed side characters, adult-swim anti-spectacle simplicity
+  form_and_line: Thin simple contour lines, deliberately plain shape language, occasional scribbly panic accents
+  color_palette: Flat sour pastels, nicotine yellow, dusty salmon, office beige, washed-out green, cheap digital cyan
+  lighting_setup: Flat no-drama lighting, fluorescent office wash, occasional dingy hallway glow, unheroic ambient fill
+  material_texture: Simple digital fills, lightly dirty edges, cheap office carpet texture, flat wall paint, low-fuss line art
+  render_quality: Lo-fi weird-comedy cartoon, clean enough to read, ugly enough to feel wrong, internet-age anti-polish
+  spatial_distortion: Stubby limb proportions, tiny torsos, off-model expressions, abrupt perspective jumps for punchlines
+  atmosphere: Awkward, deadpan, bizarre, mildly cursed
+  key_features: Simple oddball silhouettes, blank stares, mundane office props, anti-climactic gag framing, uncomfortable pauses made visual
+avoidRules:
+  - epic
+  - slick
+  - cinematic
+  - beautiful
+  - painterly
+  - photorealistic
+  - cute mascot polish
+  - superhero rendering
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-102.webp
+attributes:
+  negativePrompt: epic, slick, cinematic, beautiful, painterly, photorealistic, cute mascot polish, superhero rendering

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-007
+packId: pack_10
+name: Low Poly Abstract
+category: 1. Geometric Abstraction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - geometric-abstraction
+visualDna:
+  aesthetic: Triangulated mesh
+  form_and_line: Edges visible
+  color_palette: Facet gradients
+  lighting_setup: Global illumination
+  material_texture: Paper or plastic
+  render_quality: Digital art, clean
+  spatial_distortion: Geometric reduction
+  atmosphere: Modern, tech
+  key_features: Triangles
+avoidRules:
+  - curved
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-007.webp
+attributes:
+  negativePrompt: curved, smooth

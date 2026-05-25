@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-065
+packId: pack_02
+name: God Rays (Volumetric)
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Light shafts
+  form_and_line: None
+  color_palette: Dusty White, warm cream beam, cool shadow, golden particulate
+  lighting_setup: Beams through dust, volumetric shaft, window-cathedral light
+  material_texture: Atmospheric, particulate haze, floating dust motes
+  render_quality: Epic, divine, heavenly visitation, cathedral awe
+  spatial_distortion: None
+  atmosphere: Holy, forest, sacred stillness, revelation moment
+  key_features: Beams, visible light rays, dust dance
+avoidRules:
+  - clear air
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-065.webp
+attributes:
+  negativePrompt: clear air

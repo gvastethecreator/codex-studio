@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-071
+packId: pack_10
+name: Kintsugi
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Broken pottery repaired with gold
+  form_and_line: Gold cracks
+  color_palette: Ceramic + Gold
+  lighting_setup: Gold reflection
+  material_texture: Ceramic
+  render_quality: Wabi-sabi, precious
+  spatial_distortion: Cracked
+  atmosphere: Healing, beautiful
+  key_features: Gold veins
+avoidRules:
+  - perfect
+  - new
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-071.webp
+attributes:
+  negativePrompt: perfect, new

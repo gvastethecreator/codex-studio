@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-029
+packId: pack_08
+name: Dark Academia
+category: 3. Subcultures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - subcultures
+visualDna:
+  aesthetic: University student 1940s, Oxford-common-room nostalgia, candlelit-scholar romance
+  form_and_line: Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap
+  color_palette: Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal
+  lighting_setup: Library dim, reading-lamp pool, stained-glass amber, fireplace glow, overcast-window grey
+  material_texture: Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons
+  render_quality: Intellectual, moody, library-quiet gravitas, Brideshead nostalgia
+  spatial_distortion: None
+  atmosphere: Studious, serious, ink-and-parchment solitude, rainy-window contemplation, secret-history tension
+  key_features: Glasses, wire-rim frames, worn-leather satchel, fountain pen
+avoidRules:
+  - bright
+  - sport
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-029.webp
+attributes:
+  negativePrompt: bright, sport

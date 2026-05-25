@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP02-107
+packId: pack_02
+name: Courage the Cowardly Dog - Rural Nightmare Pastel
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Lonely farmhouse horror cartoon, pink dog panic, grotesque villains in empty landscapes, Midwestern doom silence, haunted domesticity, uncanny CGI inserts, fear made cute and shrill
+  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
+  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
+  lighting_setup: Moonlit rural isolation, dusty lamp glow, sudden horror spotlights, red-alert interior panic lighting
+  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
+  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
+  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  atmosphere: Terrified, lonely, surreal, absurd
+  key_features: Isolated farmhouse staging, screaming reaction poses, uncanny intruders, pastel panic, dead-field emptiness
+avoidRules:
+  - digital
+  - HD
+  - smooth
+  - 3d
+  - realistic
+  - painted
+  - single panel
+  - vertical scrolling
+  - modern
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-107.webp
+attributes:
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern

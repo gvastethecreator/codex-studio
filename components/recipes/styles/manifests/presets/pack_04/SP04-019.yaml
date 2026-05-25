@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-019
+packId: pack_04
+name: Crayon Drawing
+category: 2. Children's Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - children-s-illustration
+visualDna:
+  aesthetic: Child's drawing
+  form_and_line: Waxy, messy
+  color_palette: Vibrant wax, crayon spectrum, primary finger-paint
+  lighting_setup: Flat, paper-white bounce, no synthetic shadow
+  material_texture: Wax buildup
+  render_quality: Naive, cute, hand-drawn authenticity, childhood sincerity
+  spatial_distortion: Stick figures
+  atmosphere: Innocent, fun, refrigerator-gallery pride, joyful scribble
+  key_features: Paper grain, waxy stroke, uneven fill
+avoidRules:
+  - professional
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-019.webp
+attributes:
+  negativePrompt: professional, smooth

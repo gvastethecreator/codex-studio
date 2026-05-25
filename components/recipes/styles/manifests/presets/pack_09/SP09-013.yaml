@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-013
+packId: pack_09
+name: Bird Feathers
+category: 1. Natural Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - natural-materials
+visualDna:
+  aesthetic: Plumage
+  form_and_line: Barbs and rachis
+  color_palette: Iridescent Blue/Green
+  lighting_setup: Sheen
+  material_texture: Soft but structured
+  render_quality: Bird wing, delicate
+  spatial_distortion: Layered
+  atmosphere: Light, natural
+  key_features: Overlapping
+avoidRules:
+  - fur
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-013.webp
+attributes:
+  negativePrompt: fur, messy

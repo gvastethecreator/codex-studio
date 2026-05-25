@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP02-091
+packId: pack_02
+name: Office Whiteboard Doodle
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Dry-erase marker on whiteboard, conference-room meeting doodles, stick-figure presentations with arrows everywhere, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, Venn-diagram jokes, SWOT-analysis-gone-wrong energy
+  form_and_line: Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition
+  color_palette: Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails
+  lighting_setup: Harsh office fluorescent overhead, glossy board reflection, shadow of the person drawing cast on board
+  material_texture: Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection
+  render_quality: Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-room creativity, corporate-absurdism humor
+  spatial_distortion: Stick figures with comically oversized heads, arrows looping in impossible circles, text squeezed into board corners
+  atmosphere: Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling
+  key_features: Dry-erase marker strokes, eraser ghost trails, stick figures everywhere, flowchart arrows, Venn-diagram joke circles, glossy board reflection
+avoidRules:
+  - digital
+  - clean
+  - polished
+  - professional
+  - realistic
+  - painted
+  - 3d
+  - photo
+  - refined
+  - color rich
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-091.webp
+attributes:
+  negativePrompt: digital, clean, polished, professional, realistic, painted, 3d, photo, refined, color rich

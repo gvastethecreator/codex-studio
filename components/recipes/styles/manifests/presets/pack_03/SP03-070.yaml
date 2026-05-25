@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-070
+packId: pack_03
+name: Retro CGI (90s)
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Reboot/Toy Story 1 early feature-era CGI, pioneer polygons, awkward charm
+  form_and_line: Simple geometry
+  color_palette: Primary colors, flat 90s palette
+  lighting_setup: Phong shading, ambient-fill
+  material_texture: Checkerboard, procedural era
+  render_quality: Vintage CGI, uncanny, nostalgic retro
+  spatial_distortion: Stiff animation
+  atmosphere: Nostalgic, weird, pioneering spirit
+  key_features: No shadows, jitter-free geometry
+avoidRules:
+  - modern
+  - ambient occlusion
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-070.webp
+attributes:
+  negativePrompt: modern, ambient occlusion

@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP06-091
+packId: pack_06
+name: Vectrex Vector Display
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Vectrex-console vector-CRT display, pure-white-glowing-lines on pitch-black-screen, single-color-vector-drawing, Asteroids-style-wireframe, Tempest-tunnel-perspective, analog-electron-beam-drawing-in-real-time, plastic-screen-overlay-color-gels for faux-color, no-pixels-no-bitmap-just-lines, 1982-console-limitation-beauty, cathode-ray-tube-vector-magic
+  form_and_line: Pure-glowing-vector-lines-only, wireframe-geometry, electron-beam-drawn-contours, no-filled-surfaces, transparency-through-wireframe, line-brightness-peaking-at-stroke-centers
+  color_palette: Phosphor-white-on-void-black, Vectrex-screen-overlay blue or green or red transparent-plastic-gel, single-color-per-display, no-gradients-pure-beam
+  lighting_setup: Self-illuminated-phosphor-glow, brighter-at-line-intersections, beam-persistence-afterglow, CRT-screen-curvature-reflective-light
+  material_texture: CRT-phosphor-glow-bloom, vector-display-line-artifact, transparent-plastic-screen-overlay-scratches, electron-beam-persistence-trail, analog-vector-drift-wobble
+  render_quality: Vectrex-vector-display aesthetic, analog-CRT-beam-beauty, wireframe-only-rendering, 1982-vector-console nostalgia
+  spatial_distortion: Vector-wireframe-perspective, infinite-black-void-space, rotating-wireframe-objects, CRT-screen-curvature, plastic-overlay-frame
+  atmosphere: Retro-futuristic, analog-electronic, arcade-darkness, vector-glow-hypnosis, pre-pixel-computing soul
+  key_features: Pure-white-vector-lines-on-black, wireframe-only-geometry, CRT-phosphor-glow-bloom, plastic-screen-overlay-framing, single-color-display, line-intersection brightening, electron-beam-persistence
+avoidRules:
+  - raster
+  - pixel
+  - filled
+  - color
+  - modern
+  - 3d
+  - photo
+  - smooth
+  - realistic
+  - solid
+  - bitmap
+  - shaded
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-091.webp
+attributes:
+  negativePrompt: raster, pixel, filled, color, modern, 3d, photo, smooth, realistic, solid, bitmap, shaded

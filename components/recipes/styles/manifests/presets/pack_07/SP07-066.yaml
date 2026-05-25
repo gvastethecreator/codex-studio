@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP07-066
+packId: pack_07
+name: Lego Brick-Built City
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Lego toy brick world, ABS-plastic metropolis, snap-together skyline
+  form_and_line: Brick seams, stud-grid geometry, modular-block stacking, stepped-pyramid, interlocking corners
+  color_palette: Primary plastic, Bright Red, Yellow, Blue, Green, Black, White, Grey
+  lighting_setup: Glossy, plastic-surface reflection, light-pool on studs, playroom-filtered sun, specular shine
+  material_texture: Plastic studs, injection-mold surface, ABS sheen, clutch-power grip, brick-name logo, smooth-slope
+  render_quality: Toy, blocky, LEGO-catalog perfection, snap-together realism, brick-built charm, Danish toy beauty
+  spatial_distortion: None
+  atmosphere: Playful, constructed, childhood-creative, instruction-following, brick-searching, imaginative-build
+  key_features: Studs, brick texture, minifigure scale, interlocking bricks, modular builds, brick separator, baseplate
+avoidRules:
+  - smooth
+  - realistic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-066.webp
+attributes:
+  negativePrompt: smooth, realistic

@@ -1,0 +1,39 @@
+schemaVersion: 1
+id: SP04-098
+packId: pack_04
+name: World Map Concept
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Fantasy-world-map-concept-art, Tolkien-Middle-Earth-map-heritage, sea-monster-and-ship-illustrations-in-ocean-margins, compass-rose-and-rhumb-lines, mountain-range-profile-illustrations, stylized-forest-cluster-icons, ancient-cartography-energy, here-be-dragons-text-annotation, parchment-map-with-burnt-edges, fantasy-novel-endpaper-map-aesthetic
+  form_and_line: Parchment-border-outline, coastline-wavy-contour, river-meandering-path, mountain-range-hatching, forest-icon-cluster, compass-rose- geometric, rhumb-line-radiating-grid, cartouche-decoration
+  color_palette: Parchment-cream-aged, sepia-brown-ink, ocean-margin-teal, forest-icon-green, mountain-hatch-grey, compass-rose-gold, burnt-edge-charcoal-black, decorative-border vermillion
+  lighting_setup: Flat-top-down-cartographic-lighting, soft-aged-parchment-ambient, shadow-under-compass-rose-for-depth-bump, burnt-edge-shadow
+  material_texture: Aged-parchment-paper, burnt-edge-char, ink-bleed-into-fibers, wax-seal-residue, tea-stain-weathering, fold-crease-wear, leather-binding- edge
+  render_quality: Fantasy-cartography aesthetic, Tolkien-map-heritage, novel-endpaper-beauty, world-building-cartographic-art, here-be-dragons charm
+  spatial_distortion: Top-down-cartographic-projection, ocean-margin-illustration-boundary, compass-overlay, scale-league-bar, rhumb-line-navigation-grid
+  atmosphere: Adventurous, mysterious, unexplored-territory-wonder, ancient-knowledge, quest-planning, map-unfolding-anticipation, world-immersion
+  key_features: Sea-monster-ocean-illustrations, compass-rose, rhumb-lines, mountain-range-profile-drawings, stylized-forest-icons, parchment-aged-texture, burnt-edges, cartouche-title-decoration, Tolkien-map-heritage
+avoidRules:
+  - accurate
+  - satellite
+  - photo
+  - modern map
+  - GPS
+  - clean
+  - clinical
+  - boring
+  - flat
+  - atlas
+  - political borders
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-098.webp
+attributes:
+  negativePrompt: accurate, satellite, photo, modern map, GPS, clean, clinical, boring, flat, atlas, political borders

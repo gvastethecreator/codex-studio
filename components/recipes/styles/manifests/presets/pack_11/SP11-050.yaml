@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP11-050
+packId: pack_11
+name: Cocktail Macro
+category: 1. Food & Drink
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - food-and-drink
+visualDna:
+  aesthetic: Drink closeup, cocktail-porn, mixology-art, back-bar-beauty, happy-hour-glamour
+  form_and_line: Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral
+  color_palette: Liquid gradient, negroni-crimson, gin-clear, blue-curacao ocean, Campari-ruby, mint-green, lime-wheel bright
+  lighting_setup: Backlit refraction, through-glass beam, ice-cube caustic, rim-light-on-condensation, bar-shelf amber
+  material_texture: Condensation, ice, frosted-glass chill, sugar-rim crystal, mint-leaf vein, citrus-oil slick
+  render_quality: Refreshing, cold, happy-hour glamour, sip-ready desire, liquid-lens beauty
+  spatial_distortion: Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension
+  atmosphere: Party, relax, cocktail-hour murmur, ice-clink rhythm, Friday-evening freedom
+  key_features: Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap bruise
+avoidRules:
+  - opaque
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-050.webp
+attributes:
+  negativePrompt: opaque

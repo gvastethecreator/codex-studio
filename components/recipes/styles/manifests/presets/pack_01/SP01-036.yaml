@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-036
+packId: pack_01
+name: Split Lighting
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Half face in shadow
+  form_and_line: Sharp transition
+  color_palette: High contrast
+  lighting_setup: 90 degree side light
+  material_texture: Drama
+  render_quality: Villain, dramatic
+  spatial_distortion: Hidden side
+  atmosphere: Conflict, mystery
+  key_features: Half dark
+avoidRules:
+  - flat
+  - fill light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-036.webp
+attributes:
+  negativePrompt: flat, fill light

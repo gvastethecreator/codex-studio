@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP01-044
+packId: pack_01
+name: Projector Light
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Image projected on face
+  form_and_line: Pattern overlay
+  color_palette: Mixed light/skin
+  lighting_setup: Patterned source
+  material_texture: Pixel grid (optional)
+  render_quality: Artistic, music video
+  spatial_distortion: Face distortion by light
+  atmosphere: Conceptual, trippy
+  key_features: Light pattern
+avoidRules:
+  - clean light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-044.webp
+attributes:
+  negativePrompt: clean light

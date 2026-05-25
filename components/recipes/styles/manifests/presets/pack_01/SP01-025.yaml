@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP01-025
+packId: pack_01
+name: CCTV Security
+category: 5. Camera Types
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - camera-types
+visualDna:
+  aesthetic: Surveillance footage
+  form_and_line: Low resolution, interlaced
+  color_palette: Desaturated or B&W
+  lighting_setup: High contrast, night vision
+  material_texture: Compression artifacts, scanlines
+  render_quality: Gritty, crime
+  spatial_distortion: Wide angle distortion
+  atmosphere: Creepy, voyeuristic
+  key_features: Timestamp overlay
+avoidRules:
+  - hd
+  - 4k
+  - clean
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-025.webp
+attributes:
+  negativePrompt: hd, 4k, clean

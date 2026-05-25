@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-087
+packId: pack_06
+name: GBA Tactical Pixel
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Game Boy Advance tactical grid, Advance Wars battle-map clarity, bright clean military sprites, Fire Emblem portrait elegance, isometric battlefields, tiny tanks and infantry on squared terrain, colorful commander portraits, handheld-strategy precision
+  form_and_line: Crisp small-sprite pixel art, unit-icon clarity, grid-cell division lines, portrait-window framing, clean readable silhouettes
+  color_palette: Bright tactical readability, blue-sea green-land clear contrast, red-enemy blue-ally coding, colorful commander portrait saturation, sunlit battlefield tone
+  lighting_setup: Flat even illumination for gameplay clarity, no atmospheric lighting, readability-first approach, sun-baked tile brightness
+  material_texture: Pixel-grid precision, crisp small-sprite definition, GBA screen color gamut, handheld-LCD rendering limits
+  render_quality: GBA tactical-game screen, handheld-strategy aesthetic, bright-readable pixel art, portable-war precision
+  spatial_distortion: Grid-based tactical space, isometric or top-down tile perspectives, unit-placement precision, fog-of-war reveal mechanic
+  atmosphere: Strategic, bright, readable, turn-based calm, tactical satisfaction, portable focus
+  key_features: Tactical grid overlay, isometric tile terrain, bright readable sprite units, commander portrait windows, turn-based UI elements
+avoidRules:
+  - realistic
+  - 3d
+  - smooth
+  - dark
+  - gritty
+  - modern
+  - high res
+  - photorealistic
+  - chaotic
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-087.webp
+attributes:
+  negativePrompt: realistic, 3d, smooth, dark, gritty, modern, high res, photorealistic, chaotic, messy

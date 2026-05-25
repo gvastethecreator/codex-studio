@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-068
+packId: pack_07
+name: Cardboard Fort
+category: 5. Fantasy Architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-architecture
+visualDna:
+  aesthetic: Box castle, appliance-box architecture, living-room fortress, recycled-carton stronghold, blanket-city
+  form_and_line: Tape lines, box-flap geometry, duct-tape seams, crayon-drawn details, stacked-rectangles, cut-window squares
+  color_palette: Brown cardboard, Packing-tape Tan, Marker-Black, Crayon colors, Shipping-label White
+  lighting_setup: Indoor, living-room lamp, blanket-filtered light, flashlight-fort interior, window-box glow
+  material_texture: Corrugated, kraft fiber, tape-adhesive, crayon wax, marker-ink, blanket-fabric drape
+  render_quality: Childhood, rough, make-believe reality, refrigerator-box magic, blanket-fort nostalgia, kid-crafted love
+  spatial_distortion: Sagging
+  atmosphere: Imaginative, cheap, pretend-kingdom, Saturday-morning, sibling-architect, proud-builder, temporary-realm
+  key_features: Tape, corrugated edges, duct tape, marker drawings, box flaps, blanket roof, crayon windows
+avoidRules:
+  - solid wall
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-068.webp
+attributes:
+  negativePrompt: solid wall

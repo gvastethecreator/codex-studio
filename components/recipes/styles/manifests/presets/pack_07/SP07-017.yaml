@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP07-017
+packId: pack_07
+name: Maximalist Decor
+category: 1. Interior Design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - interior-design
+visualDna:
+  aesthetic: Pattern on pattern room, controlled chaos, collected gallery, riotous personality
+  form_and_line: Complex layers, framed overload, busy skirting, curio-shelf density, textile-on-textile
+  color_palette: Saturated jewel tones, Emerald, Sapphire, Ruby, Amethyst, Peacock Teal, Coral
+  lighting_setup: Warm lamps everywhere, picture lights, chandelier glitter, sconce pools, dimmer-warm glow
+  material_texture: Velvet, wallpaper, rugs, chintz, embroidered silk, gilt frame, cloisonné, book spines
+  render_quality: Eclectic, busy, rich, more-is-more, layered opulence, collected over generations
+  spatial_distortion: None
+  atmosphere: Exciting, personal, loud, intoxicating, treasure-gallery, unapologetic abundance
+  key_features: No empty space, gallery walls floor to ceiling, layered rugs, pattern mixing, objet collections
+avoidRules:
+  - empty
+  - white
+  - minimal
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-017.webp
+attributes:
+  negativePrompt: empty, white, minimal

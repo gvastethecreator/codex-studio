@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-021
+packId: pack_11
+name: Sticker Art
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Die-cut sticker, laptop-decal culture, street-art collectible, vinyl peel-and-stick
+  form_and_line: Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision
+  color_palette: Vibrant flat colors, UV-resistant inks, neon-pop spectrum, spot-gloss accents
+  lighting_setup: Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity
+  material_texture: Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back
+  render_quality: Graphic, collectible, sticker-sheet appeal, skate-deck swagger, street-art credibility
+  spatial_distortion: 2D cutout, die-line silhouette, punch-out negative space, floating-object illusion
+  atmosphere: Cool, decorative, urban-expression, laptop-personality, street-art rebellion
+  key_features: White outline, kiss-cut border, gloss-laminate sheen, color-separation registration
+avoidRules:
+  - 3d
+  - shadow
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-021.webp
+attributes:
+  negativePrompt: 3d, shadow

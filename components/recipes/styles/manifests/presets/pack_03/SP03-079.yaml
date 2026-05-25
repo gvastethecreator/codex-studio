@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-079
+packId: pack_03
+name: Bronze Statue
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Cast metal figure
+  form_and_line: Sculpted details
+  color_palette: Bronze, Patina (Green), verdigris aging
+  lighting_setup: Specular highlights, metal-luster
+  material_texture: Metal, weathering, cast-texture
+  render_quality: Monument, classic, sculpture-garden
+  atmosphere: Timeless, heavy, historical gravity
+  key_features: Patina in crevices, cast-metal detail
+avoidRules:
+  - flesh
+  - color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-079.webp
+attributes:
+  negativePrompt: flesh, color

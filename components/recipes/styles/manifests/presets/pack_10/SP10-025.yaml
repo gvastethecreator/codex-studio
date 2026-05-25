@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-025
+packId: pack_10
+name: ASCII Art
+category: 5. Digital Glitch & Noise
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+visualDna:
+  aesthetic: Text characters
+  form_and_line: Typographic
+  color_palette: Green on Black
+  lighting_setup: Character density
+  material_texture: Monospace font
+  render_quality: Hacker, terminal
+  spatial_distortion: Low resolution
+  atmosphere: Cyber, code
+  key_features: Grid alignment
+avoidRules:
+  - image
+  - pixels
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-025.webp
+attributes:
+  negativePrompt: image, pixels

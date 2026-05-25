@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-057
+packId: pack_10
+name: Knitted Texture
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Interlocking loops
+  form_and_line: Yarn strands
+  color_palette: Wool colors
+  lighting_setup: Soft
+  material_texture: Fuzzy wool
+  render_quality: Cozy, handmade
+  spatial_distortion: Stitch pattern
+  atmosphere: Warm, soft
+  key_features: Loops
+avoidRules:
+  - smooth
+  - flat
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-057.webp
+attributes:
+  negativePrompt: smooth, flat

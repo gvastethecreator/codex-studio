@@ -1,0 +1,42 @@
+schemaVersion: 1
+id: SP01-006
+packId: pack_01
+name: Selfie Style
+category: 1. Portrait Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - portrait-styles
+visualDna:
+  aesthetic: Smartphone front-facing camera selfie, social media aesthetic, casual and spontaneous
+  subject_treatment: Wide-angle facial distortion (slightly enlarged nose/eyes), arm extended out of frame
+  color_and_tone: Smartphone image processing, vibrant colors, slightly over-sharpened
+  lighting_and_shadow: Flat front-facing light, screen glow, or harsh direct sunlight
+  texture_and_material: Digital smoothing algorithms, slight digital noise in shadows
+  camera_and_composition: Extreme wide-angle perspective, high or low angle, casual framing
+  atmosphere_and_mood: Fun, personal, candid, relatable, modern
+  rendering_and_quality: Social media quality, realistic smartphone photo look
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-006.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

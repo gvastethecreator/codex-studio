@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-066
+packId: pack_01
+name: Automotive Photography
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Car commercial
+  form_and_line: Sleek curves
+  color_palette: Metallic paint
+  lighting_setup: Studio sweep or motion blur
+  material_texture: Reflection
+  render_quality: Top Gear, expensive
+  spatial_distortion: Motion blur wheels
+  atmosphere: Fast, powerful
+  key_features: Car isolated
+avoidRules:
+  - dirty
+  - stationary
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-066.webp
+attributes:
+  negativePrompt: dirty, stationary

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-009
+packId: pack_03
+name: ZBrush Digital Clay Sculpt
+category: 5. Render Engines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+visualDna:
+  aesthetic: Digital clay sculpt
+  form_and_line: Matcap shader
+  color_palette: Grey or Red wax, clay brown
+  lighting_setup: Rim light, sculpting-studio setup
+  material_texture: Clay strokes, matcap highlights
+  render_quality: High poly model, sculpted detail
+  spatial_distortion: Anatomical study
+  atmosphere: Artistic, raw, hands-on feel
+  key_features: Matcap material, dynamesh topology
+avoidRules:
+  - textured
+  - low poly
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-009.webp
+attributes:
+  negativePrompt: textured, low poly

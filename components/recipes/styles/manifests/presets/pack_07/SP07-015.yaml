@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP07-015
+packId: pack_07
+name: Victorian Mansion
+category: 3. Environment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - environment
+visualDna:
+  aesthetic: 19th century cluttered room, Empire excess, mourning elegance, parlour theatre
+  form_and_line: Ornate patterns everywhere, framed silhouettes, heavy draping swags, crowded picture rails
+  color_palette: Dark Red, Gold, Mahogany, Plum, Bottle Green, Antique Brass
+  lighting_setup: Dim gaslight, oil-lamp pools, fireplace flicker, heavy-curtained gloom, tarnished candelabra
+  material_texture: Velvet, wallpaper, dust, horsehair, brocade, marble mantels, chinoiserie
+  render_quality: Antique, heavy, stuffed, museum-dense, gaslit nostalgia, maximalist inheritance
+  spatial_distortion: None
+  atmosphere: Oppressive, historic, rich, cluttered memory, mothball, ancestral weight
+  key_features: Pattern density, overstuffed furniture, floor-to-ceiling drapes, gallery wall, taxidermy
+avoidRules:
+  - minimal
+  - bright
+  - open
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-015.webp
+attributes:
+  negativePrompt: minimal, bright, open

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-030
+packId: pack_10
+name: Dithering (1-bit)
+category: 5. Digital Glitch & Noise
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+visualDna:
+  aesthetic: MacPaint style
+  form_and_line: Pixel patterns
+  color_palette: Black and White only
+  lighting_setup: Pattern density
+  material_texture: Checkerboard, noise
+  render_quality: Retro computer
+  spatial_distortion: No greyscale
+  atmosphere: Retro, binary
+  key_features: Atkinson dither
+avoidRules:
+  - grey
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-030.webp
+attributes:
+  negativePrompt: grey, smooth

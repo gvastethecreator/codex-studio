@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-063
+packId: pack_09
+name: Cobweb
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Dusty old webs
+  form_and_line: Fine strands
+  color_palette: Grey, White
+  lighting_setup: Backlit
+  material_texture: Sticky, dusty
+  render_quality: Haunted house, old
+  spatial_distortion: Drape
+  atmosphere: Spooky, abandoned
+  key_features: Messy strands
+avoidRules:
+  - spider web (neat)
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-063.webp
+attributes:
+  negativePrompt: spider web (neat)

@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP10-022
+packId: pack_10
+name: Pixel Sorting
+category: 5. Digital Glitch & Noise
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - digital-glitch-and-noise
+visualDna:
+  aesthetic: Pixels dragged vertically
+  form_and_line: Vertical streaks
+  color_palette: Sorted gradients
+  lighting_setup: None
+  material_texture: Digital streaks
+  render_quality: Generative, code art
+  spatial_distortion: Melting
+  atmosphere: Dystopian, aesthetic
+  key_features: Vertical sort
+avoidRules:
+  - horizontal lines
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-022.webp
+attributes:
+  negativePrompt: horizontal lines

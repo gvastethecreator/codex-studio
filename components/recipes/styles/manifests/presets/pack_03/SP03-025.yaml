@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-025
+packId: pack_03
+name: Kitbash
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Complex mechanical detail
+  form_and_line: Greebles
+  color_palette: Grey, metal, industrial wear
+  lighting_setup: AO dirt, rim-detail
+  material_texture: Mechanical parts, greeble density
+  render_quality: Concept art, detailed, blockbuster sci-fi
+  atmosphere: Industrial, complex, constructed chaos
+  key_features: Dense detail, mechanical storytelling
+avoidRules:
+  - organic
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-025.webp
+attributes:
+  negativePrompt: organic, smooth

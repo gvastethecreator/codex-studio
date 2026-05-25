@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP04-071
+packId: pack_04
+name: Aquatint
+category: 5. Ink & Print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - ink-and-print
+visualDna:
+  aesthetic: Tonal print
+  form_and_line: Etched outline
+  color_palette: Watercolor-like ink, tonal-wash range, rosin-texture tone
+  lighting_setup: Soft wash, rosin-grain diffusion, tonal-merge subtlety
+  material_texture: Rosin grain
+  render_quality: Goya dark tonal print, haunting depth, sleep of reason
+  spatial_distortion: None
+  atmosphere: Somber, tonal, romantic darkness, gothic introspection
+  key_features: Wash effect, aquatint grain, tonal gradation
+avoidRules:
+  - sharp lines
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-071.webp
+attributes:
+  negativePrompt: sharp lines

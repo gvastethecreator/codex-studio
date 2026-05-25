@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-019
+packId: pack_06
+name: Ballpoint Pen
+category: 3. Drawing & Sketching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+visualDna:
+  aesthetic: Doodle with biro pen
+  form_and_line: Thin, scribbly lines
+  color_palette: Blue or Black ink
+  lighting_setup: Flat
+  material_texture: Notebook paper, indentations
+  render_quality: Casual, sketch
+  spatial_distortion: Rough shading
+  atmosphere: Bored, creative
+  key_features: Scribble texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-019.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-016
+packId: pack_03
+name: Fur & Hair
+category: 1. Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+visualDna:
+  aesthetic: Groomed fur simulation
+  form_and_line: Individual strands
+  color_palette: Soft gradient
+  lighting_setup: Rim light on fuzz
+  material_texture: Fluffy, soft, dimensional volume
+  render_quality: XGen groom simulation, every strand deliberate
+  spatial_distortion: Wind blown
+  atmosphere: Cozy, creature, tactile warmth
+  key_features: Hair strands, clump variation
+avoidRules:
+  - bald
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-016.webp
+attributes:
+  negativePrompt: bald, smooth

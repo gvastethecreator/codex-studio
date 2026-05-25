@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-076
+packId: pack_01
+name: Forensic Photography
+category: 4. Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - genres
+visualDna:
+  aesthetic: Crime scene evidence
+  form_and_line: Clinical, ruler scale
+  color_palette: Neutral, flash
+  lighting_setup: Flat flash
+  material_texture: Detail focus
+  render_quality: Objective, cold
+  spatial_distortion: None
+  atmosphere: Unsettling, factual
+  key_features: Evidence marker
+avoidRules:
+  - artistic
+  - emotional
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-076.webp
+attributes:
+  negativePrompt: artistic, emotional

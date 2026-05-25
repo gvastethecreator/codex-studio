@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP04-095
+packId: pack_04
+name: Foliage Design Kit
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Environment-design-foliage-kit, tree-variant-shape-library, bush-silhouette-language-exploration, grass-clump-variety-sheet, flowering-plant-seasonal-variations, palm-fern-conifer-deciduous-shape-comparison, stylized-vs-naturalistic-foliage-spectrum, game-environment-vegetation-pass, plant-silhouette-readability-at-distance, Miyazaki-Ghibli-forest-spirit-inspiration
+  form_and_line: Organic-foliage-contour-variations, frond-unfurling-lines, pine-needle-cluster-contours, vine-tendril-curves, tree-branching-patterns, flower-petal-arrangement
+  color_palette: Photosynthesis-green-spectrum, spring-bright-to-autumn-rust, flower-bloom-color-accents, bark-brown-variety, chlorophyll-through-sunlight, shadow-green-cool-to-sun-green-warm
+  lighting_setup: Dappled-sun-through-canopy, rim-light-on-leaf-edges, subsurface-scattering-on-thin-leaves, shadow-cool-under-foliage, atmospheric-haze-at-forest-depth
+  material_texture: Leaf-surface-gloss-matte, bark-roughness, fern-frond-fractal, moss-velvet, pine-needle- cluster, petal-soft-ephemeral, vine-tendril-tension
+  render_quality: Foliage-design-kit aesthetic, environment-vegetation-reference, botanical-variety-beauty, game-level-art plant-language, nature-as-design-system
+  spatial_distortion: Tree-silhouette-library-grid, scale-from-bush-to-canopy, ground-cover-to-overstory-layering, atmospheric-depth-vegetation-fade
+  atmosphere: Lush, alive, botanical-wonder, forest-bathing calm, Miyazaki-nature-reverence, oxygen-rich-creativity, garden-planning-joy
+  key_features: Tree-shape-variant-library, bush-silhouette-comparison, grass-clump-variety-sheet, seasonal-color-variation, plant-silhouette-readability, Miyazaki-forest-inspiration, canopy-to-ground-cover-layering
+avoidRules:
+  - bare
+  - dead
+  - no plants
+  - desert
+  - empty
+  - urban
+  - concrete
+  - interior
+  - no vegetation
+  - sterile
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-095.webp
+attributes:
+  negativePrompt: bare, dead, no plants, desert, empty, urban, concrete, interior, no vegetation, sterile

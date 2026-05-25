@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-077
+packId: pack_10
+name: Chalkboard Art
+category: 3. Pattern & Texture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - pattern-and-texture
+visualDna:
+  aesthetic: Chalk on blackboard
+  form_and_line: Dusty, variable width
+  color_palette: White, Pastel on Black
+  lighting_setup: Flat
+  material_texture: Chalk dust, slate
+  render_quality: Cafe menu, temporary
+  spatial_distortion: Smudged
+  atmosphere: Casual, hand drawn
+  key_features: Black background
+avoidRules:
+  - pen
+  - ink
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-077.webp
+attributes:
+  negativePrompt: pen, ink

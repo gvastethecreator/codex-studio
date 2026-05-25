@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP02-075
+packId: pack_02
+name: Prism Effect
+category: 4. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Fractured image
+  form_and_line: None
+  color_palette: Rainbow edges, spectral fringe, red-to-violet split, prismatic white
+  lighting_setup: Refracted, glass-bent, crystal-split spectrum
+  material_texture: Glass distortion, prism face, beveled edge refraction
+  render_quality: Artsy, music video, psychedelic light-bending
+  spatial_distortion: Kaleidoscope, symmetrical fracture, repeating geometry
+  atmosphere: Dreamy, broken, fragmented vision, beauty-through-distortion
+  key_features: Rainbows, color splitting, light dispersion, crystal edge
+avoidRules:
+  - clean lens
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-075.webp
+attributes:
+  negativePrompt: clean lens

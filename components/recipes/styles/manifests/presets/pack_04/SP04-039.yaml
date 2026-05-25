@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP04-039
+packId: pack_04
+name: Movie Poster (Painted)
+category: 3. Editorial & Poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - editorial-and-poster
+visualDna:
+  aesthetic: Painted adventure poster, Drew Struzan style, floating-head collage, airbrush epic, nostalgia machine
+  form_and_line: Airbrush
+  color_palette: Warm/Cool contrast, orange-teal poster push, airbrush spectrum
+  lighting_setup: Rim light, hero backlight, dramatic key separation
+  material_texture: Canvas
+  render_quality: Star Wars space-opera epic, galaxy-spanning wonder
+  spatial_distortion: Floating heads
+  atmosphere: Cinematic, classic, blockbuster anticipation, VHS-era magic
+  key_features: Lens flare, floating-head montage, title treatment space
+avoidRules:
+  - photo collage
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-039.webp
+attributes:
+  negativePrompt: photo collage

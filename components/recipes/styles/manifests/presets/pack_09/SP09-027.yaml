@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-027
+packId: pack_09
+name: Rubber (Tire)
+category: 2. Man-Made Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - man-made-materials
+visualDna:
+  aesthetic: Car tire
+  form_and_line: Treads
+  color_palette: Black
+  lighting_setup: Matte
+  material_texture: Grippy, nubby
+  render_quality: Industrial, durable
+  spatial_distortion: None
+  atmosphere: Functional, dirty
+  key_features: Tread pattern
+avoidRules:
+  - shiny plastic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-027.webp
+attributes:
+  negativePrompt: shiny plastic

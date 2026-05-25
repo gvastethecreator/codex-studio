@@ -60,11 +60,31 @@ function createLocalCodexSession(
     authMode: 'chatgpt',
     planType: 'chatgpt_pro',
     usage: {
-      available: 42,
-      unit: 'credits',
-      display: '42',
-      path: '/account/usage',
-      raw: { available: 42 },
+      available: 70,
+      unit: 'quota_percent',
+      display: '70%',
+      path: 'rateLimitsByLimitId.codex.primary',
+      limits: [
+        {
+          id: 'primary',
+          label: '5h',
+          usedPercent: 30,
+          availablePercent: 70,
+          windowMinutes: 300,
+          resetsAt: null,
+          path: 'rateLimitsByLimitId.codex.primary',
+        },
+        {
+          id: 'secondary',
+          label: 'Weekly',
+          usedPercent: 45,
+          availablePercent: 55,
+          windowMinutes: 10080,
+          resetsAt: null,
+          path: 'rateLimitsByLimitId.codex.secondary',
+        },
+      ],
+      raw: { primary: { used_percent: 30 }, secondary: { used_percent: 45 } },
     },
     source: 'app-server',
     fetchedAt: '2026-05-07T00:00:00.000Z',
@@ -116,9 +136,13 @@ describe('studioDiagnostics', () => {
     });
 
     expect(snapshot.usage).toMatchObject({
-      value: '42',
+      value: '70%',
       meta: 'ChatGPT Pro',
-      unitLabel: 'credits',
+      unitLabel: null,
+      limits: [
+        expect.objectContaining({ id: 'primary', label: '5h', availablePercent: 70 }),
+        expect.objectContaining({ id: 'secondary', label: 'Weekly', availablePercent: 55 }),
+      ],
       tone: 'available',
       isLoading: false,
     });
@@ -126,7 +150,11 @@ describe('studioDiagnostics', () => {
       expect.objectContaining({ key: 'backend', value: 'Connected', tone: 'success' }),
       expect.objectContaining({ key: 'codexCli', value: 'Ready', tone: 'success' }),
       expect.objectContaining({ key: 'appServer', value: 'Running', tone: 'success' }),
-      expect.objectContaining({ key: 'localCodexSession', value: 'ChatGPT Login', tone: 'success' }),
+      expect.objectContaining({
+        key: 'localCodexSession',
+        value: 'ChatGPT Login',
+        tone: 'success',
+      }),
     ]);
   });
 
@@ -164,7 +192,11 @@ describe('studioDiagnostics', () => {
       expect.objectContaining({ key: 'appServer', value: 'Standby', tone: 'warning' }),
     );
     expect(snapshot.statusItems[3]).toEqual(
-      expect.objectContaining({ key: 'localCodexSession', value: 'Login Required', tone: 'warning' }),
+      expect.objectContaining({
+        key: 'localCodexSession',
+        value: 'Login Required',
+        tone: 'warning',
+      }),
     );
   });
 });

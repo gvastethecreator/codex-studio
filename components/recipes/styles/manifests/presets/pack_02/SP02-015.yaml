@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-015
+packId: pack_02
+name: Mumblecore
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: Indie film
+  form_and_line: None
+  color_palette: Natural, low contrast, flat daylight, ungraded look
+  lighting_setup: Available light, practical lamps, window spill
+  material_texture: Digital video, DSLR sensor, consumer camera
+  render_quality: Real, awkward, improvised dialogue, unpolished vérité
+  spatial_distortion: Out of focus, soft rack, distracted framing
+  atmosphere: Intimate, talky, relationship friction, honest discomfort
+  key_features: Handheld, naturalistic dialogue, apartment clutter
+avoidRules:
+  - polished
+  - scripted
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-015.webp
+attributes:
+  negativePrompt: polished, scripted

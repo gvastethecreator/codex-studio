@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-050
+packId: pack_06
+name: Pixel Art (16-bit)
+category: 1. Digital Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+visualDna:
+  aesthetic: SNES game sprite
+  form_and_line: Pixel perfect
+  color_palette: Limited palette
+  lighting_setup: Dithered
+  material_texture: Pixel grid
+  render_quality: Retro game
+  spatial_distortion: Blocky
+  atmosphere: Nostalgic
+  key_features: Grid alignment
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-050.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-291
+packId: pack_05
+name: A Silent Voice - Riverside Apology Light
+category: 10. Studio Masterpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - studio-masterpieces
+visualDna:
+  aesthetic: Modern-school emotional realism, bridges and rivers, apology and disability awareness, soft city sunlight, longing and accountability rendered with humane patience
+  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
+  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
+  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
+  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
+  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
+  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
+  atmosphere: Tender, remorseful, airy, human
+  key_features: Riverside paths, modern school detail, hand-focused emotional framing, apology body language, soft city light
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-291.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-039
+packId: pack_03
+name: Bioluminescent Forest
+category: 2. Lighting & Atmosphere
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+visualDna:
+  aesthetic: Luminous alien forest, Avatar Pandora style, bioluminescent wonder, floating mountains, connected ecosystem
+  form_and_line: Glowing plants
+  color_palette: Blue, Purple night, cyan bloom
+  lighting_setup: Plant glow, ambient bioluminescence
+  material_texture: Organic, alien, phosphorescent
+  render_quality: Fantasy, magical, otherworldly immersion
+  spatial_distortion: None
+  atmosphere: Wonder, magic, spiritual awe
+  key_features: Glow in dark, floating spores
+avoidRules:
+  - day
+  - sun
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-039.webp
+attributes:
+  negativePrompt: day, sun

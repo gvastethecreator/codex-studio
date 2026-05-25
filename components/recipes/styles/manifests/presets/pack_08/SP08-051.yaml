@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP08-051
+packId: pack_08
+name: Latex/PVC
+category: 4. Fabric & Texture Focus
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - fabric-and-texture-focus
+visualDna:
+  aesthetic: Fetish fashion, high-gloss domination, latex-subculture statement
+  form_and_line: Tight highlights, second-skin compression, corset-waist curve, opera-glove length, catsuit continuity
+  color_palette: Black shiny, blood-red, midnight purple, liquid-mercury, rubber-white, patent-bordeaux
+  lighting_setup: High contrast reflection, rim-light gloss, studio-strip catchlights, wet-look sheen
+  material_texture: Glossy latex, polished PVC, wet-look spandex, patent leather, chlorinated rubber, slick sealant finish
+  render_quality: Shiny, edgy, high-polish fetish aesthetic, studio-reflection perfection
+  spatial_distortion: None
+  atmosphere: Intense, sleek, power-dressing charge, mirror-shine confidence, club-kid edge
+  key_features: Reflections, crease-free tension, zip front, corset lacing, high-shine polish
+avoidRules:
+  - matte
+  - cotton
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP08-051.webp
+attributes:
+  negativePrompt: matte, cotton

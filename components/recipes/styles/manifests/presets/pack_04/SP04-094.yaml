@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP04-094
+packId: pack_04
+name: Anatomy Reference Sheet
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Medical-textbook-anatomy-reference, muscle-diagram-overlay-on-skeletal-system, bone-ghost-view-in-translucent-flesh, tendon-insertion-origin-annotation, Leonardo-da-Vinci-anatomical-study energy, Gray's-Anatomy-textbook illustrations, figure-drawing-anatomy-reference, ecorche-muscle-flayed-view, accurate-proportion-grid, scientific-observation-art
+  form_and_line: Precise-medical-illustration-linework, muscle-fiber-direction-strokes, tendon-cord-insertion-lines, skeletal-ghost-contour, organ-cavity-diagram, notation-leader-lines
+  color_palette: Medical-textbook-red-muscle, white-bone, blue-vein, crimson-artery, yellow-nerve, translucent-flesh-pink, anatomical-chart-educational spectrum
+  lighting_setup: Clinical-even-diffuse-illumination, no-mood-lighting-for-accuracy, rim-light-for-three-dimensional-form-reading, shadow-to-indicate-depth-in-body-cavities
+  material_texture: Anatomical-plate-paper, vintage-textbook-aging, ink-line-precision, watercolor-wash-over-drawing, translucent-tissue-layering, dissection-reference-texture
+  render_quality: Medical-textbook-anatomical-rendering, Leonardo-da-Vinci-study, Gray's-Anatomy beauty, scientific-illustration-precision, ecorche-reference-art
+  spatial_distortion: Anterior-posterior-lateral orthographic, muscle-overlay-ghost-views, skeleton-within-flesh-transparency, inset-magnification-detail, proportion-grid-overlay
+  atmosphere: Scientific, reverent, study-of-life, Renaissance-curiosity, anatomical-truth, art-meets-science, figure-drawing-foundation
+  key_features: Muscle-diagram-overlay, skeletal-ghost-underdrawing, tendon-insertion-annotation, medical-textbook-line-quality, anterior-posterior-lateral, proportion-grid, ecorche-flayed-view
+avoidRules:
+  - stylized
+  - cartoon
+  - simplified
+  - abstract
+  - loose
+  - messy
+  - inaccurate
+  - fantasy proportion
+  - guesswork
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-094.webp
+attributes:
+  negativePrompt: stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion, guesswork

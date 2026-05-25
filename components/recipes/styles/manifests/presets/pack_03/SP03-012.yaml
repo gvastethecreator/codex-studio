@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP03-012
+packId: pack_03
+name: Liquid Simulation
+category: 1. Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+visualDna:
+  aesthetic: Splashing water or fluid
+  form_and_line: Droplets
+  color_palette: Clear or colored liquid
+  lighting_setup: Specular highlights
+  material_texture: Wet, surface tension
+  render_quality: Realflow fluid simulation, splashing realism
+  spatial_distortion: Fluid dynamics
+  atmosphere: Dynamic, wet, in-motion energy
+  key_features: Splash shape, foam particles
+avoidRules:
+  - solid
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-012.webp
+attributes:
+  negativePrompt: solid, dry

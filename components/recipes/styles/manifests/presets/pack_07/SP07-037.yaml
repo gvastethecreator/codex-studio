@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP07-037
+packId: pack_07
+name: Aquarium Tunnel
+category: 3. Environment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - environment
+visualDna:
+  aesthetic: Underwater glass tunnel, submerged walkway, ocean-immersed passage, blue cathedral, marine immersion
+  form_and_line: Curved glass, arched acrylic, perspective tube, floor-to-ceiling curve, flowing water line
+  color_palette: Blue, Cyan, Aquamarine, Deep Navy shadow, Bioluminescent fleck, Sandy floor tan
+  lighting_setup: Caustics, rippling light nets, overhead-dappled, blue ambient, tank-glow
+  material_texture: Glass, water, acrylic, coral rock, sand bed, shimmering scale
+  render_quality: Immersive, blue, aquarium-clarity, oceanic wonder, deep-blue meditation
+  spatial_distortion: Refraction
+  atmosphere: Wonder, deep, floating, quiet-awe, blue-weightless, other-world calm
+  key_features: Fish overhead, glass tunnel, caustic light patterns, sharks, coral, stingrays
+avoidRules:
+  - dry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP07-037.webp
+attributes:
+  negativePrompt: dry

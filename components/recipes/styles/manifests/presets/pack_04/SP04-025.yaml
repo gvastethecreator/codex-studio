@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-025
+packId: pack_04
+name: Felt Tip Marker
+category: 2. Children's Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - children-s-illustration
+visualDna:
+  aesthetic: Marker drawing
+  form_and_line: Bleeding ink
+  color_palette: Saturated, overlapping, marker-bleed fusion, highlighter neon
+  lighting_setup: Flat, no correction, marker-smudge raw
+  material_texture: Paper bleed
+  render_quality: Sketchbook, bold, alcohol-marker spontaneity, studio hand-style
+  spatial_distortion: Loose
+  atmosphere: Casual, bright, coffee-shop sketch, creative mess
+  key_features: Stroke overlap, bleeding edge, tonal blending
+avoidRules:
+  - paint
+  - blend
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-025.webp
+attributes:
+  negativePrompt: paint, blend

@@ -1,0 +1,40 @@
+schemaVersion: 1
+id: SP05-066
+packId: pack_05
+name: Parasyte – Body-Horror Parasite Thriller
+category: 9. Dark Fantasy & Seinen
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - dark-fantasy-and-seinen
+visualDna:
+  aesthetic: Urban body-horror mutations, clean modern settings, flesh-meets-strategy dread, migi hand-fighter, high-school host body, flesh-blade combat, societal paranoia
+  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
+  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
+  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  atmosphere: Tense, invasive, paranoid, horrifying
+  key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-066.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature

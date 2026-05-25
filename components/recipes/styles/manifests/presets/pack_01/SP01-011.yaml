@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP01-011
+packId: pack_01
+name: Kodak Portra 400
+category: 3. Film Stocks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - film-stocks
+visualDna:
+  aesthetic: Warm analog film look
+  form_and_line: Soft but sharp
+  color_palette: Great skin tones, pastel highlights
+  lighting_setup: Natural, forgiving
+  material_texture: Fine grain
+  render_quality: Professional film
+  spatial_distortion: None
+  atmosphere: Nostalgic, warm
+  key_features: Yellow/Red bias
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-011.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

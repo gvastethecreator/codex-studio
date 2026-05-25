@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP03-013
+packId: pack_03
+name: Subsurface Scattering (SSS)
+category: 1. Materials
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - materials
+visualDna:
+  aesthetic: Translucent material (wax, skin, jade)
+  form_and_line: Soft light penetration
+  color_palette: Glowing from inside, warm subsurface hues
+  lighting_setup: Backlit, rim-penetration
+  material_texture: Waxy, organic, light-permeable
+  render_quality: Realistic organic, portrait-grade
+  spatial_distortion: Soft edges
+  atmosphere: Soft, organic, life-like warmth
+  key_features: Inner glow
+avoidRules:
+  - hard
+  - plastic
+  - metal
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-013.webp
+attributes:
+  negativePrompt: hard, plastic, metal

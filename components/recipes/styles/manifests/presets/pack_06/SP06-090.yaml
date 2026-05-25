@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP06-090
+packId: pack_06
+name: Voxel Block Sprites
+category: 6. Video Game & Pixel Art Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - video-game-and-pixel-art-styles
+visualDna:
+  aesthetic: Three-dimensional pixel blocks, voxel-art characters, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic-pixel world, Minecraft-meets-sprite-sheet, colorful block-built characters, isometric cube-grid construction, toy-block 3D pixel art
+  form_and_line: Cubic-voxel contour, block-stepped edges, orthogonal grid construction, visible cube boundaries, straight-angle everything
+  color_palette: Bright plastic-cube colors, toy-block primaries, voxel-material palette, per-cube flat coloring, modular color scheme
+  lighting_setup: Global-illumination cube lighting, ambient-occlusion block corners, soft shadow under voxel overhangs, directional sun on block-grid
+  material_texture: Cube-face flat shading, block-edge ambient occlusion, plastic-cube surface, matte-voxel material, grid-seam texture
+  render_quality: Voxel-art render, MagicaVoxel-style beauty, 3D-pixel aesthetic, block-world charm, toy-cube rendering
+  spatial_distortion: Voxel-grid blocky proportions, isometric cube arrangement, cube-stepped curves, block-resolution shape limitation
+  atmosphere: Playful, constructive, toy-block creativity, digital-Lego spirit, colorful-three-dimensional-pixel joy
+  key_features: Cubic-voxel construction, block-stepped contours, isometric grid alignment, ambient-occlusion block edges, per-cube flat coloring
+avoidRules:
+  - smooth
+  - organic
+  - curved
+  - realistic
+  - high poly
+  - anti-aliased
+  - fluid
+  - soft
+  - photorealistic
+  - painted
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-090.webp
+attributes:
+  negativePrompt: smooth, organic, curved, realistic, high poly, anti-aliased, fluid, soft, photorealistic, painted

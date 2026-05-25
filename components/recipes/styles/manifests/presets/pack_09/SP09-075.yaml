@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP09-075
+packId: pack_09
+name: Astroturf
+category: 5. Elemental & FX
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+visualDna:
+  aesthetic: Fake grass
+  form_and_line: Plastic blades
+  color_palette: Unnatural Green
+  lighting_setup: Plastic shine
+  material_texture: Plastic strips
+  render_quality: Artificial, sports
+  spatial_distortion: None
+  atmosphere: Fake, clean
+  key_features: Uniform height
+avoidRules:
+  - real grass
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-075.webp
+attributes:
+  negativePrompt: real grass

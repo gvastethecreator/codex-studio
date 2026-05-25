@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP04-001
+packId: pack_04
+name: Golden Age Comic
+category: 1. Comic Book Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - comic-book-styles
+visualDna:
+  aesthetic: 1940s flagship hero comic, Superman style, golden-age boldness, truth-justice-energy, pulp optimism
+  form_and_line: Thick ink
+  color_palette: CMYK dots (Ben-Day), primary hero primaries, newsprint nostalgia
+  lighting_setup: Flat, high-key fill, minimal shadows
+  material_texture: Cheap paper
+  render_quality: Vintage, bold, four-color grit, golden-age optimism
+  spatial_distortion: Heroic pose
+  atmosphere: Action, classic, square-jawed heroism, serial cliffhanger
+  key_features: 4-color process, halftone pattern, speech balloon
+avoidRules:
+  - modern digital color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-001.webp
+attributes:
+  negativePrompt: modern digital color

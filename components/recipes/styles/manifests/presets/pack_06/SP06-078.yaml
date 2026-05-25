@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-078
+packId: pack_06
+name: Gold Leaf Art
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Gilded illustration
+  form_and_line: Gold accents
+  color_palette: Gold, Black
+  lighting_setup: Reflective
+  material_texture: Metal foil, cracks
+  render_quality: Klimt, decorative
+  spatial_distortion: Flat gold areas
+  atmosphere: Rich, ornamental
+  key_features: Metallic shine
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-078.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

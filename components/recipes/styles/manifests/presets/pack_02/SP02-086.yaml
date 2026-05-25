@@ -1,0 +1,35 @@
+schemaVersion: 1
+id: SP02-086
+packId: pack_02
+name: Ugly-Cute Creature
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Deformed yet adorable monster, lumpy asymmetrical body, mismatched googly eyes, crooked fang-toothed grin, three strands of hair on a potato head, so-ugly-it's-precious charm, beloved garbage creature, Ghibli soot-sprite meets Ren & Stimpy
+  form_and_line: Chunky uneven outlines, bulbous swelling curves, random spikes and bumps, happy accident shapes
+  color_palette: Sickly-sweet candy colors, mold-green with pink blush, bruise-purple fur, mucus-yellow highlights
+  lighting_setup: Soft forgiving glow, gentle rim light to emphasize lumpiness, cozy shadow under belly folds
+  material_texture: Bumpy toad skin, lumpy wool sweater texture, crusty dried-mud surface, scab-like patches
+  render_quality: Lovingly ugly, carefully careless, trash-goblin preciousness, toy-line reject charm
+  spatial_distortion: Eye levels drastically different heights, limbs of varying lengths, head consuming two-thirds of body mass
+  atmosphere: Affectionate disgust, heartwarming grotesquerie, you're-hideous-and-I-love-you
+  key_features: Mismatched eye sizes and heights, single snaggle tooth, three random hair strands, potato-shaped body
+avoidRules:
+  - beautiful
+  - handsome
+  - elegant
+  - proportional
+  - realistic anatomy
+  - symmetrical
+  - polished
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-086.webp
+attributes:
+  negativePrompt: beautiful, handsome, elegant, proportional, realistic anatomy, symmetrical, polished

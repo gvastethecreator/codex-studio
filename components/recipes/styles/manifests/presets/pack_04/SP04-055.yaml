@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-055
+packId: pack_04
+name: Keyframe Art
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: Cinematic moment
+  form_and_line: None
+  color_palette: Color graded, cinematic LUT, emotional-tone timing
+  lighting_setup: Cinematic, framed intent, motivated light source
+  material_texture: Painted
+  render_quality: Movie still, emotional, screen-grab gravity, story-beat resonance
+  spatial_distortion: None
+  atmosphere: Story beat, narrative tension, turning-point weight
+  key_features: 16:9 ratio, letterbox framing, cinematic composition
+avoidRules:
+  - sketchy
+  - rough
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-055.webp
+attributes:
+  negativePrompt: sketchy, rough

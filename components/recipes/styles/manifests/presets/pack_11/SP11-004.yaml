@@ -1,0 +1,31 @@
+schemaVersion: 1
+id: SP11-004
+packId: pack_11
+name: Papercraft Low Poly
+category: 2. Toys & Crafts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+visualDna:
+  aesthetic: Folded cardstock model, low-poly sculpture, kirigami construction, geometric craft
+  form_and_line: Sharp paper folds, triangular facets, crease lines, angular edges
+  color_palette: Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish
+  lighting_setup: Soft shadows, directional key light, facet-defining contrast, gentle ambient
+  material_texture: Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel
+  render_quality: Pepakura papercraft geometric, fold-and-glue devotion, low-poly aesthetic, hand-assembled precision
+  spatial_distortion: Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition
+  atmosphere: Delicate, handmade, clean, zen precision, patient craft, geometric calm
+  key_features: Visible fold lines, tab-and-slot joins, score marks, polygon faces
+avoidRules:
+  - curved
+  - smooth
+  - realistic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-004.webp
+attributes:
+  negativePrompt: curved, smooth, realistic

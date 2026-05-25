@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-006
+packId: pack_02
+name: Grindhouse/Exploitation
+category: 1. Film Genres
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - film-genres
+visualDna:
+  aesthetic: 70s B-movie
+  form_and_line: None
+  color_palette: Faded, red shift, yellowed decay, magenta bleed
+  lighting_setup: Harsh, underexposed, single-source, pools of black
+  material_texture: Scratches, cigarette burns, torn splices, dust hair
+  render_quality: Damaged film, degraded, sleazy, exploitation-grade
+  spatial_distortion: Film splice, jumpy gate weave, missing frame
+  atmosphere: Trashy, violent, lurid, midnight-movie danger
+  key_features: Dirt, cue marks, grain storm
+avoidRules:
+  - clean
+  - hd
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-006.webp
+attributes:
+  negativePrompt: clean, hd

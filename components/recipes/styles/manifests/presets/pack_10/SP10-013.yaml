@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-013
+packId: pack_10
+name: Oil Slick
+category: 2. Fluid & Organic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - fluid-and-organic
+visualDna:
+  aesthetic: Iridescent liquid
+  form_and_line: Swirls
+  color_palette: Rainbow metallic
+  lighting_setup: Reflective
+  material_texture: Liquid surface
+  render_quality: Abstract, texture
+  spatial_distortion: Fluid
+  atmosphere: Psychedelic, toxic
+  key_features: Rainbow sheen
+avoidRules:
+  - matte
+  - dull
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-013.webp
+attributes:
+  negativePrompt: matte, dull

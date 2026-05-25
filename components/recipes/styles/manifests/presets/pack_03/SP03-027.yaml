@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-027
+packId: pack_03
+name: Metaballs
+category: 3. 3D Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - 3d-styles
+visualDna:
+  aesthetic: Organic blobs merging
+  form_and_line: Smooth curves
+  color_palette: Gradient, glossy, blobby fusion
+  lighting_setup: Studio, specular curves
+  material_texture: Smooth plastic, elastic surface
+  render_quality: Abstract, motion graphics, organic fluidity
+  atmosphere: Fluid, abstract, hypnotic flow
+  key_features: Merging shapes, surface tension
+avoidRules:
+  - sharp
+  - geometric
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-027.webp
+attributes:
+  negativePrompt: sharp, geometric

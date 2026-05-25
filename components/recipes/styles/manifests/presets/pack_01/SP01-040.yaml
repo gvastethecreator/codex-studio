@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP01-040
+packId: pack_01
+name: God Rays (Volumetric)
+category: 2. Lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting
+visualDna:
+  aesthetic: Light beams through fog
+  form_and_line: Visible beams
+  color_palette: Hazy
+  lighting_setup: Backlit shafts
+  material_texture: Dust motes
+  render_quality: Epic, religious
+  spatial_distortion: None
+  atmosphere: Holy, atmospheric
+  key_features: Light shafts
+avoidRules:
+  - clear air
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-040.webp
+attributes:
+  negativePrompt: clear air

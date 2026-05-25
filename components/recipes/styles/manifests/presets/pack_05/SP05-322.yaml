@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-322
+packId: pack_05
+name: CLAMP - Celestial Limb Elongation
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Elegant CLAMP-inspired supernatural poise, impossibly long limbs, ornate costume geometry, moonlit glamour, emotional restraint inside luminous fantasy fashion
+  form_and_line: Refined tapered contour, ornamental costume linework, graceful eyelash intricacy
+  color_palette: Pearl white, amethyst, midnight blue, rose quartz, icy silver, celestial lavender
+  lighting_setup: Soft moon-rim illumination, jewel-like specular accents, staged dramatic glow
+  material_texture: Silk sheen, gem sparkle, lace filigree, polished hair ribbons, glossy eye highlights
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Fashion-figure proportions, cathedral-tall silhouettes, elegant hand and neck extension
+  atmosphere: Elegant, lunar, poised, dramatic
+  key_features: Extremely long limbs, ornate costume geometry, moonlit framing, jewel accessories, poised emotional distance
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-322.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement

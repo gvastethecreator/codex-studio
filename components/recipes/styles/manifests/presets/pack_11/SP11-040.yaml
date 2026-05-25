@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP11-040
+packId: pack_11
+name: Kawaii Pastel
+category: 4. Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - aesthetics
+visualDna:
+  aesthetic: Sanrio ultra-cute mascot illustration, Hello Kitty innocence, kawaii overload
+  form_and_line: Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette
+  color_palette: Pastel Pink, Blue, Yellow, cotton-candy-spectrum, mint-chip, lavender-cream, buttercream, powder-blue sky
+  lighting_setup: Bright, flat, ring-light softness, studio-bounce fill, high-key-whites, shadowless-cheer
+  material_texture: Smooth, fluffy, marshmallow-soft, fondant-gloss, sherbet-grain, cotton-ball fuzz
+  render_quality: Cute, happy, soft, sticker-pack joy, kawaii-tsunami, smile-inducing overload
+  spatial_distortion: Big eyes, sparkle-pupil, oversized-head, tiny-body, chibi-extremity, bean-proportion
+  atmosphere: Joy, innocence, pastel-paradise, friendship-festival, sugar-rush delight, unconditional-sweetness
+  key_features: Sparkles, ribbon-bows, heart-motifs, blush-stickers, star-twinkle accents, animal-ear headbands
+avoidRules:
+  - dark
+  - scary
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP11-040.webp
+attributes:
+  negativePrompt: dark, scary

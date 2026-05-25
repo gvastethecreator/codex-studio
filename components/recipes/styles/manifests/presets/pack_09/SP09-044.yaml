@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP09-044
+packId: pack_09
+name: Sponge (Sea)
+category: 3. Tactile Surfaces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - tactile-surfaces
+visualDna:
+  aesthetic: Natural bath sponge
+  form_and_line: Holes
+  color_palette: Tan, Yellow
+  lighting_setup: Soft
+  material_texture: Porous, dry
+  render_quality: Natural, bath
+  spatial_distortion: Irregular holes
+  atmosphere: Clean, natural
+  key_features: Pores
+avoidRules:
+  - kitchen sponge
+  - square
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP09-044.webp
+attributes:
+  negativePrompt: kitchen sponge, square

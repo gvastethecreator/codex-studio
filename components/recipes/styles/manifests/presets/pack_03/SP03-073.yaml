@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-073
+packId: pack_03
+name: Papercraft 3D
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Virtual paper
+  form_and_line: Fold lines
+  color_palette: Paper texture, craft-material tones
+  lighting_setup: Shadows between layers, folded depth
+  material_texture: Paper grain, craft-cardstock
+  render_quality: Craft, handmade feel, origami precision
+  atmosphere: Creative, delicate, art-project warmth
+  key_features: Layered depth, fold-crease definition
+avoidRules:
+  - realistic
+  - fluid
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-073.webp
+attributes:
+  negativePrompt: realistic, fluid

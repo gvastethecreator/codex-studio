@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP02-031
+packId: pack_02
+name: Classic Disney Golden Age Cel Feature
+category: 3. Animation Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+visualDna:
+  aesthetic: Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy tale
+  form_and_line: Hand inked
+  color_palette: Technicolor paint, jewel tones, forest green, royal purple, sunset orange
+  lighting_setup: Multiplane camera, dimensional depth, parallax lighting
+  material_texture: Cel paint, hand-inked acetate, watercolor background wash
+  render_quality: Masterpiece, fluid, full-animation, in-between perfection
+  spatial_distortion: Squash and stretch, elastic weight, cartoon physics
+  atmosphere: Magical, classic, storybook sincerity, woodland enchantment
+  key_features: Painted background, animal sidekick, princess silhouette
+avoidRules:
+  - 3d
+  - digital
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-031.webp
+attributes:
+  negativePrompt: 3d, digital

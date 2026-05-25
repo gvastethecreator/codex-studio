@@ -1,0 +1,34 @@
+schemaVersion: 1
+id: SP02-083
+packId: pack_02
+name: Uncanny Valley Caricature
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Almost-human-but-wrong portrait, dead glassy eyes with no soul behind them, plastic skin stretched too tight over wrong skull shape, smile that doesn't reach the eyes, hyper-realistic skin on cartoon structure, creepy animatronic energy, Polar-Express dead-eye syndrome
+  form_and_line: Overly smooth vector contours, mathematically perfect curves that feel wrong, no organic variation
+  color_palette: Uncanny skin tones, slightly-off peach, corpse wax beige, mortician foundation, too-uniform blush
+  lighting_setup: Flat diffuse studio, shadowless void, CGI default lighting, no atmosphere
+  material_texture: Too-smooth plastic skin, vinyl doll surface, waxy silicone, mannequin gloss
+  render_quality: Hyper-clean vector rendering, unsettlingly perfect gradients, algorithmic smoothness, no human imperfection
+  spatial_distortion: Eyes fractionally too far apart, mouth placed millimeters too low, head shape meeting uncanny threshold
+  atmosphere: Deeply unsettling, skin-crawling wrongness, silent discomfort, robotic emptiness
+  key_features: Glassy unblinking stare, symmetrical-too-perfect faces, puppet-mouth articulation lines, plastic sheen on skin
+avoidRules:
+  - comfortable
+  - natural
+  - warm
+  - wholesome
+  - expressive
+  - emotionally readable
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-083.webp
+attributes:
+  negativePrompt: comfortable, natural, warm, wholesome, expressive, emotionally readable

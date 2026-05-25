@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP01-023
+packId: pack_01
+name: GoPro Wide
+category: 5. Camera Types
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - camera-types
+visualDna:
+  aesthetic: Action camera POV
+  form_and_line: Fisheye distortion
+  color_palette: Vibrant, sharp
+  lighting_setup: Outdoor, harsh
+  material_texture: Digital sharpening
+  render_quality: Action sports, vlog
+  spatial_distortion: Curved horizon
+  atmosphere: Active, immersive
+  key_features: Wide FOV
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - blurry
+  - noisy
+  - low resolution
+  - watermark
+  - text
+  - signature
+  - bad anatomy
+  - deformed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-023.webp
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed

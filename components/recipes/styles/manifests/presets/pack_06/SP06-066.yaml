@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-066
+packId: pack_06
+name: Trash Polka
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Bold tattoo style
+  form_and_line: Realistic vs graphic
+  color_palette: Black, Grey, Red
+  lighting_setup: High contrast
+  material_texture: Ink, splatter
+  render_quality: Aggressive, modern
+  spatial_distortion: Collage
+  atmosphere: Intense, chaotic
+  key_features: Red and Black
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-066.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

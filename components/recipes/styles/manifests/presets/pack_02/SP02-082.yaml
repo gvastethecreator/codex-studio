@@ -1,0 +1,36 @@
+schemaVersion: 1
+id: SP02-082
+packId: pack_02
+name: Silly Scribble Doodle
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Childlike notebook scribble, wonky circles for heads, stick-thin limbs ending in mittens, deliberately bad proportions, joyful incompetence, crayon-on-kitchen-wall energy
+  form_and_line: Loose wobbly graphite, multiple overlapping attempt lines, eraser smudges still visible, uncertain pen pressure
+  color_palette: Wax crayon primaries, coloring-outside-the-lines chaos, cheap children's marker bleed, construction-paper bright
+  lighting_setup: No lighting logic, flat fills with zero shading, rejecting dimension
+  material_texture: Lined notebook paper grain, crayon wax buildup, marker bleeding through to reverse side
+  render_quality: Intentionally childish, proudly amateur, naive-art celebration, anti-skill philosophy, five-year-old masterpiece
+  spatial_distortion: Heads too big for stick bodies, hands drawn as five-ray sunbursts, no perspective whatsoever
+  atmosphere: Innocent, joyful chaos, giggling anarchy, pure creative abandon
+  key_features: Triangle roofs, spiral sun in corner, flowers as lollipop sticks, smiley-face everything
+avoidRules:
+  - realistic
+  - proportional
+  - detailed
+  - clean lines
+  - smooth shading
+  - serious
+  - polished
+  - refined
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-082.webp
+attributes:
+  negativePrompt: realistic, proportional, detailed, clean lines, smooth shading, serious, polished, refined

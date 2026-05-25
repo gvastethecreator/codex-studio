@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP03-078
+packId: pack_03
+name: Origami 3D
+category: 4. Applications
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - applications
+visualDna:
+  aesthetic: Folded paper model
+  form_and_line: Sharp creases
+  color_palette: Paper, natural-fiber tones
+  lighting_setup: Soft, fold-highlighting
+  material_texture: Paper grain, crease-crisp
+  render_quality: Geometric, craft, zen-precision
+  atmosphere: Delicate, precise, folded poetry
+  key_features: No cuts, pure-fold geometry
+avoidRules:
+  - curved
+  - smooth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP03-078.webp
+attributes:
+  negativePrompt: curved, smooth

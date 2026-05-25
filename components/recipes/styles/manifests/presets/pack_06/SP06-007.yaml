@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-007
+packId: pack_06
+name: Fresco (Wall)
+category: 2. Traditional Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+visualDna:
+  aesthetic: Italian wall fresco
+  form_and_line: Integrated into plaster
+  color_palette: Earthy, desaturated, matte
+  lighting_setup: Natural ambient
+  material_texture: Plaster cracks, wall texture
+  render_quality: Ancient, architectural
+  spatial_distortion: Faded areas
+  atmosphere: Historic, grand
+  key_features: Plaster texture
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-007.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

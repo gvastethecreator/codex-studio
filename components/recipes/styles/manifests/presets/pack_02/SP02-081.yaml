@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP02-081
+packId: pack_02
+name: Grotesque Exaggeration Cartoon
+category: 6. Caricature & Cartoon Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - caricature-and-cartoon-styles
+visualDna:
+  aesthetic: Deliberately ugly caricature, bulbous distorted noses, comically oversized heads, warty textures, hideous charm, flesh stretched beyond recognition, adult-swim grotesque, John Kricfalusi energy
+  form_and_line: Wobbly uneven contours, spasming line weight, broken anatomy, scratchy re-draw marks, elastic limb logic
+  color_palette: Sickly greens, bruised purples, bilious yellow, clammy grey, infection-tinted flesh tones, jaundiced warmth
+  lighting_setup: Unflattering fluorescent overexposure, harsh single-source bulb, unkind overhead glare
+  material_texture: Bumpy skin, visible pores exaggerated, wart dimples, greasy sheen, splotchy surface
+  render_quality: Intentionally terrible, purposefully unpleasant, anti-aesthetic, repulsive yet compelling, scratchy late-night animation
+  spatial_distortion: Inflated heads on pin bodies, mismatched eye sizes, teeth bursting from lips, impossible spinal curves
+  atmosphere: Uncomfortable, repulsive yet funny, fever-dream ugly, caricature at its cruelest
+  key_features: Asymmetric eyes, bulbous nose center-stage, neck veins bulging, excessive chin folds
+avoidRules:
+  - realistic
+  - photorealistic
+  - proportional
+  - anatomically correct
+  - beautiful
+  - smooth
+  - clean lines
+  - polished
+  - normal faces
+  - subtle
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-081.webp
+attributes:
+  negativePrompt: realistic, photorealistic, proportional, anatomically correct, beautiful, smooth, clean lines, polished, normal faces, subtle

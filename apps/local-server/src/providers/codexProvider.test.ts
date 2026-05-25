@@ -1,0 +1,99 @@
+import { describe, expect, it } from 'vite-plus/test';
+
+import { createGenerationTaskSpec } from '../../../../packages/shared/src';
+import { compileCodexImagegenInput, createCodexGenerationProvider } from './codexProvider';
+import type { CodexTurn, TurnParams, TurnResult } from '../codex/turn';
+
+function createTurnResult(overrides: Partial<TurnResult> = {}): TurnResult {
+  return {
+    assets: [],
+    transcript: 'transcripts/job-1/events.jsonl',
+    turnId: 'turn-1',
+    threadId: 'thread-1',
+    durationMs: 25,
+    ...overrides,
+  };
+}
+
+describe('codexProvider', () => {
+  it('compiles a compact Codex provider input from the job delta', () => {
+    const compiled = compileCodexImagegenInput({
+      id: 'job-1',
+      projectId: 'project-1',
+      prompt: 'Prompt:\nsmall brass key\n\nAspect ratio: 2:3',
+      execution: null,
+    });
+
+    expect(compiled.providerId).toBe('codex');
+    expect(compiled.payloadKind).toBe('codex_prompt');
+    expect(compiled.task).toBe('image_generate');
+    expect(compiled.audit.omittedStableInstructions).toBe(true);
+    expect(compiled.payload.text).toContain('Task: image_generate');
+    expect(compiled.payload.text).toContain('small brass key');
+    expect(compiled.payload.text).not.toContain('Generate exactly one portrait image');
+  });
+
+  it('compiles from the durable source Generation Task Spec when present', () => {
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-1',
+      task: 'style_preset_card',
+      providerId: 'codex',
+      prompt: 'glass owl on a plinth',
+      negativePrompt: 'text, watermark',
+      recipeId: 'styles',
+      recipeParams: { presetId: 'SP09-006' },
+      stylePresetId: 'SP09-006',
+      output: {
+        aspectRatio: '2:3',
+        imageSize: '1024x1536',
+      },
+    });
+
+    const compiled = compileCodexImagegenInput({
+      id: 'job-1',
+      projectId: 'project-1',
+      prompt: 'Prompt text after reference processing',
+      execution: null,
+      providerId: 'codex',
+      sourceSpec,
+    });
+
+    expect(compiled.sourceSpecId).toBe('spec-1');
+    expect(compiled.task).toBe('style_preset_card');
+    expect(compiled.payload.text).toContain('Task: style_preset_card');
+    expect(compiled.payload.text).toContain('glass owl on a plinth');
+    expect(compiled.payload.text).toContain('Avoid:');
+    expect(compiled.payload.text).toContain('text, watermark');
+    expect(compiled.payload.text).toContain('Style preset: SP09-006');
+    expect(compiled.payload.text).not.toContain('Prompt text after reference processing');
+  });
+
+  it('delegates execution to the Codex Product Runtime with compiled input text', async () => {
+    const calls: TurnParams[] = [];
+    const turn: CodexTurn = {
+      async runTurn(params) {
+        calls.push(params);
+        return createTurnResult({
+          assets: [{ type: 'file', sourcePath: 'out.png', mimeType: 'image/png' }],
+        });
+      },
+    };
+    const provider = createCodexGenerationProvider({ turn });
+
+    const result = await provider.run({
+      id: 'job-2',
+      projectId: 'project-1',
+      prompt: 'Prompt:\nsmall brass key',
+      execution: null,
+    });
+
+    expect(result.assets).toHaveLength(1);
+    expect(calls).toHaveLength(1);
+    expect(calls[0]).toMatchObject({
+      jobId: 'job-2',
+      projectId: 'project-1',
+      prompt: 'Prompt:\nsmall brass key',
+    });
+    expect(calls[0].compiledInput?.payload.text).toContain('Task: image_generate');
+  });
+});

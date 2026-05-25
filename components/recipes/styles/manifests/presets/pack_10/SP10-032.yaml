@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP10-032
+packId: pack_10
+name: Liminal Space
+category: 4. Surrealism & Dream
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - abstract-and-experimental
+  - surrealism-and-dream
+visualDna:
+  aesthetic: Empty hallway/pool
+  form_and_line: Perspective
+  color_palette: Beige, fluorescent
+  lighting_setup: Flat artificial
+  material_texture: Carpet, tile
+  render_quality: Unsettling, familiar
+  spatial_distortion: None
+  atmosphere: Eerie, lonely
+  key_features: No people
+avoidRules:
+  - people
+  - life
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP10-032.webp
+attributes:
+  negativePrompt: people, life

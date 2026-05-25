@@ -1,0 +1,38 @@
+schemaVersion: 1
+id: SP05-110
+packId: pack_05
+name: Surreal Dream Logic
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-and-manga-spectrum
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Impossible dreamscape anime, floating staircases leading to inverted cities, doors opening to underwater skies, school corridors stretching to infinity, Satoshi Kon reality-blend, Masaaki Yuasa dream-physics, Paprika parade logic, Angel's Egg symbolism, characters walking on walls and ceilings
+  form_and_line: Shifting inconsistent outlines, figure-ground ambiguity, morphing-object contours, one-line-becoming-another transitions
+  color_palette: Surreal twilight gradients, impossible sky colors, memory-desaturated pastels, dream-symbol gold, deep-sleep indigo, astral-projection lavender
+  lighting_setup: Light from impossible sources, objects self-illuminating without cast shadows, contradictory shadow directions, glow without origin
+  material_texture: Cloud-solid hybrids, liquid-mirror surfaces, fabric-becoming-water transitions, memory-film grain overlay, dream-veil softness
+  render_quality: Surrealist anime dream-frame, experimental-animation beauty, psychological-symbolism rendering, impossible-image poetry
+  spatial_distortion: Infinite-regression corridors, impossible-object architecture, scale-shifting between frames, non-Euclidean dream geography
+  atmosphere: Disorienting, hypnotic, profound, symbolic, between-worlds liminality, sleeping-mind poetry
+  key_features: Impossible architecture, floating disconnected elements, morphing dream transitions, contradictory light sources, infinite spatial loops
+avoidRules:
+  - realistic
+  - logical
+  - grounded
+  - physical
+  - coherent
+  - normal
+  - straightforward
+  - literal
+  - linear
+  - ordinary
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-110.webp
+attributes:
+  negativePrompt: realistic, logical, grounded, physical, coherent, normal, straightforward, literal, linear, ordinary

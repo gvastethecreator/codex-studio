@@ -1,0 +1,29 @@
+schemaVersion: 1
+id: SP04-029
+packId: pack_04
+name: Sticker Art
+category: 2. Children's Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - children-s-illustration
+visualDna:
+  aesthetic: Die-cut sticker
+  form_and_line: Thick White outline
+  color_palette: Vector, glossy finish, sticker-sheet spectrum
+  lighting_setup: Glossy, specular highlight, vinyl sheen reflection
+  material_texture: Vinyl
+  render_quality: Redbubble, cute, die-cut precision, sticker-collector gloss
+  spatial_distortion: Simplified
+  atmosphere: Fun, collectible, laptop-decal personality, pop-culture cheer
+  key_features: White border, die-cut outline, separate silhouette
+avoidRules:
+  - background
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-029.webp
+attributes:
+  negativePrompt: background

@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP01-027
+packId: pack_01
+name: Dashcam
+category: 5. Camera Types
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - camera-types
+visualDna:
+  aesthetic: Car windshield view
+  form_and_line: Wide angle
+  color_palette: Digital, utilitarian
+  lighting_setup: Headlights or street
+  material_texture: Windshield reflection, rain
+  render_quality: Raw, accident footage
+  spatial_distortion: Motion blur
+  atmosphere: Real, urgent
+  key_features: Dashboard visible
+avoidRules:
+  - portrait
+  - studio
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-027.webp
+attributes:
+  negativePrompt: portrait, studio

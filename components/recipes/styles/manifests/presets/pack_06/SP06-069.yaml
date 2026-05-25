@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP06-069
+packId: pack_06
+name: Moodboard
+category: 4. Mixed Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - mixed-media
+visualDna:
+  aesthetic: Collection of images
+  form_and_line: Grid or pile
+  color_palette: Coordinated palette
+  lighting_setup: Flat
+  material_texture: Digital or paper
+  render_quality: Design, inspiration
+  spatial_distortion: None
+  atmosphere: Aesthetic
+  key_features: Color theme
+avoidRules:
+  - photo
+  - realistic
+  - photorealistic
+  - 3d render
+  - octane render
+  - noise
+  - blurry
+  - deformed
+  - ugly
+  - bad anatomy
+  - watermark
+  - text
+  - signature
+  - frame
+  - border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP06-069.webp
+attributes:
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border

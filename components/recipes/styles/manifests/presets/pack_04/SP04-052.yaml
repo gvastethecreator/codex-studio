@@ -1,0 +1,30 @@
+schemaVersion: 1
+id: SP04-052
+packId: pack_04
+name: Isometric Game Art
+category: 4. Concept Art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - concept-art
+visualDna:
+  aesthetic: SimCity simulation-city view, top-down utopia, ordered delight
+  form_and_line: Clean pixel/vector
+  color_palette: Bright, clear, toy-saturated palette, readable contrast
+  lighting_setup: Top-left sun, uniform isometric light, tile-friendly illumination
+  material_texture: Tileable
+  render_quality: Game asset, cute, simulator clarity, God-game charm
+  spatial_distortion: No perspective
+  atmosphere: Orderly, toy, city-building serenity, top-down satisfaction
+  key_features: 30 degree angle, tile grid, isometric block
+avoidRules:
+  - perspective
+  - flat
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP04-052.webp
+attributes:
+  negativePrompt: perspective, flat
