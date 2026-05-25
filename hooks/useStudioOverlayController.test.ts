@@ -132,6 +132,8 @@ describe('buildStudioOverlayController', () => {
         error: null,
         isLoading: false,
         isSaving: false,
+        providerCapabilities: null,
+        providerRuntimePreflight: null,
         outputSources: null,
         outputSourceFiles: {},
         isLoadingOutputSources: false,

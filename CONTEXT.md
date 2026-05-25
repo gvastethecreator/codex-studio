@@ -76,6 +76,10 @@ _Avoid_: source spec, recipeContext, stored prompt
 Stable provider-level instructions and output rules reused across jobs so each Compiled Provider Input only carries task-specific delta.
 _Avoid_: repeated prompt boilerplate, per-job system prompt, hidden recipe text
 
+**Recipe Provider Directives**:
+Compact provider-ready directive snapshot derived from a Recipe Module's Generation Task Spec metadata when the recipe has enough structured data to avoid sending the full Recipe Context.
+_Avoid_: recipeContext replacement for every recipe, hidden prompt copy, lossy summary
+
 **Codex Product Runtime**:
 Interactive Codex integration powered by `codex app-server` for local jobs, events, sessions, readiness, and lifecycle supervision.
 _Avoid_: SDK runner, non-interactive command, generic automation path
@@ -88,8 +92,12 @@ _Avoid_: primary runtime, UI generation engine, app-server replacement
 Declarative reusable workflow that exposes metadata, parameter schema, assets, compatible tasks/providers, and a builder for a Generation Task Spec.
 _Avoid_: prompt component, recipe page, workflow string
 
+**Recipe Module Catalog**:
+Queryable index of Recipe Modules used by UI cards, scripts, and agents to inspect recipe identity, tasks, providers, and parameters without reading React pages.
+_Avoid_: recipe card copy, hardcoded recipes list, UI-only recipe metadata
+
 **Style Preset Manifest**:
-Granular style preset record with stable identity, category, visual DNA, avoid rules, asset references, supported tasks, tags, and versioning.
+Granular style preset record with stable identity, category, editorial taxonomy, visual DNA, avoid rules, asset references, supported tasks, tags, and versioning.
 _Avoid_: inline pack entry, giant YAML row, prompt-only preset
 
 **Style Pack Manifest**:
@@ -157,6 +165,8 @@ _Avoid_: always-on panel, hidden live widget, background diagnostics view
 - A generation-flavored **Persistent Job** executes one or more **Codex Turns**.
 - A **Persistent Job** has one **Generation Task** and one **Generation Provider** selected through the **Provider Boundary**.
 - A **Recipe Module** produces a **Generation Task Spec** for a **Generation Task**.
+- A **Recipe Module Catalog** exposes Recipe Module metadata for navigation, scripts, and agents; it does not build provider payloads.
+- **Recipe Provider Directives** may be attached to a **Generation Task Spec** when structured recipe data is strong enough to compile a compact prompt safely.
 - A **Generation Provider** compiles a **Generation Task Spec** into provider-specific execution.
 - A **Compiled Provider Input** is derived from a **Generation Task Spec** and may be much smaller than the stored spec.
 - A **Provider Session Contract** supplies stable rules that do not need to be repeated in every **Compiled Provider Input**.

@@ -1,16 +1,26 @@
 import type { GeneratedImage, GenerationBatch, ImageGenerationConfig } from '../types';
-import type { Job as StudioJob } from '../packages/shared/src';
+import type {
+  EditableStudioSettings,
+  GenerationProviderId,
+  Job as StudioJob,
+} from '../packages/shared/src';
 import { createThumbnail } from '../utils/imageUtils';
 import { resolveGenerationConfig } from '../lib/recipeContext';
 import { materializeVisualBatchImage } from '../lib/studioVisualBatchCatalog';
 import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
-import { createStudioJob, listProjects, queryCatalog } from './localStudioService';
+import {
+  createStudioJob,
+  getEditableStudioSettings,
+  listProjects,
+  queryCatalog,
+} from './localStudioService';
 import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
 import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
 
 interface RunLocalGenerationOptions {
   config: ImageGenerationConfig;
   workspaceId: string;
+  providerId?: GenerationProviderId | null;
   inputImage?: {
     src: string;
     prompt?: string;
@@ -23,6 +33,16 @@ interface RunLocalGenerationOptions {
 export interface LocalGenerationRunResult {
   batch: GenerationBatch;
   generatedCount: number;
+}
+
+export function resolveLocalGenerationProviderId({
+  providerId,
+  settings,
+}: {
+  providerId?: GenerationProviderId | null;
+  settings?: Pick<EditableStudioSettings, 'defaultProviderId'> | null;
+}): GenerationProviderId {
+  return providerId ?? settings?.defaultProviderId ?? 'codex';
 }
 
 function createAbortError() {
@@ -87,19 +107,20 @@ async function toDataUrl(src: string) {
 }
 
 /**
- * Run a single persistent Codex ImageGen backend job and materialize its assets
+ * Run a single persistent local generation backend job and materialize its assets
  * into the UI image shape consumed by the visual batch cache.
  */
 export async function runSingleCodexImagegenJob(options: {
   config: ImageGenerationConfig;
   batchId: string;
+  providerId: GenerationProviderId;
   inputImage?: RunLocalGenerationOptions['inputImage'];
   stream?: StudioEventStream;
   signal?: AbortSignal;
   onJobCreated?: (job: StudioJob) => void;
   onProgress?: (message: string) => void;
 }) {
-  const { config, batchId, inputImage, signal, onProgress } = options;
+  const { config, batchId, providerId, inputImage, signal, onProgress } = options;
   throwIfAborted(signal);
   const projects = await listProjects();
   const projectId = projects[0]?.id;
@@ -125,7 +146,7 @@ export async function runSingleCodexImagegenJob(options: {
   const finalPrompt = promptParts.join('\n\n');
   const sourceSpec = buildGenerationTaskSpecFromRecipe({
     id: `${batchId}-${Date.now()}`,
-    providerId: 'codex',
+    providerId,
     task: inputImage ? 'image_edit' : undefined,
     config: {
       ...config,
@@ -136,7 +157,7 @@ export async function runSingleCodexImagegenJob(options: {
   const createdJob = await createStudioJob({
     projectId,
     kind: sourceSpec.task,
-    providerId: 'codex',
+    providerId,
     sourceSpec: {
       ...sourceSpec,
       assets: [
@@ -167,14 +188,14 @@ export async function runSingleCodexImagegenJob(options: {
 
   options.onJobCreated?.(createdJob);
 
-  onProgress?.(`Codex job queued: ${createdJob.id}`);
+  onProgress?.(`${providerId} job queued: ${createdJob.id}`);
   const stream = options.stream ?? createStudioEventStream();
   const completedJob = await watchJob(stream, createdJob.id, signal);
   const catalogPage = await queryCatalog({ jobId: completedJob.id, limit: 20 });
   const jobAssets = catalogPage.images;
 
   if (jobAssets.length === 0) {
-    throw new Error(`Codex job ${completedJob.id} completed without an imported image asset.`);
+    throw new Error(`${providerId} job ${completedJob.id} completed without an imported image asset.`);
   }
 
   const images: GeneratedImage[] = [];
@@ -201,6 +222,7 @@ export async function runSingleCodexImagegenJob(options: {
 export async function runLocalGeneration({
   config,
   workspaceId,
+  providerId: requestedProviderId,
   inputImage,
   signal,
   onJobCreated,
@@ -209,6 +231,11 @@ export async function runLocalGeneration({
   const stream = createStudioEventStream();
   try {
     throwIfAborted(signal);
+    const settings = await getEditableStudioSettings();
+    const providerId = resolveLocalGenerationProviderId({
+      providerId: requestedProviderId,
+      settings,
+    });
     const resolvedConfig = resolveGenerationConfig(config);
     const batchId = `${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
     const batchCount = inputImage ? 1 : resolvedConfig.batchCount || 1;
@@ -220,6 +247,7 @@ export async function runLocalGeneration({
         const images = await runSingleCodexImagegenJob({
           config: resolvedConfig,
           batchId,
+          providerId,
           signal,
           onJobCreated,
           onProgress,

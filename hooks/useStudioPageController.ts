@@ -64,7 +64,7 @@ export function buildStudioPageController(args: BuildStudioPageControllerArgs): 
 
   return {
     debugPanel: {
-      isVisible: !args.isModalOpen,
+      isVisible: false,
       props: {
         workspaces: args.workspaces,
         logs: args.mergedLogs,

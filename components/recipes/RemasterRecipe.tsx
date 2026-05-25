@@ -9,10 +9,18 @@ import {
   Fingerprint,
   Type as TextIcon,
 } from 'lucide-react';
-import type { Attachment, ImageGenerationConfig, AspectRatio } from '../../types';
+import type { Attachment, ImageGenerationConfig } from '../../types';
+import { RATIO_MAP } from '../../constants';
+import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
-import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
+import {
+  getRecipeModuleUiModel,
+  getRecipeNumberDefault,
+  getRecipeOptions,
+  getRecipeRange,
+  getRecipeStringDefault,
+} from './recipeModuleUi';
 
 interface RemasterRecipeProps {
   config: ImageGenerationConfig;
@@ -26,35 +34,28 @@ interface RemasterRecipeProps {
   isGenerating: boolean;
 }
 
+const { module: REMASTER_MODULE, defaults: REMASTER_DEFAULTS } = getRecipeModuleUiModel('remaster');
+
 const CONTROL_OPTIONS = {
-  style: [
-    'Realistic Reconstruction',
-    'Cinematic Rendering',
-    'Pro Digital Art',
-    'Archive Restoration',
-    'Analog Film',
-    'Oil Detail',
-  ],
-  lighting: [
-    'Lighting Correction',
-    'Volumetric Light',
-    'Studio Lighting',
-    'Natural Light',
-    'Golden Hour',
-    'Dramatic Contrast',
-  ],
-  camera: ['Sharp Focus', 'Depth of Field', 'Texture Enhancement', 'Wide Angle'],
-  anatomy: ['Fix Anatomy', 'Improve Faces and Eyes', 'Fix Hands', 'Skin Detail'],
-  text: ['Keep Original', 'Remove Text', 'Rewrite Logically'],
-  color: [
-    'Expanded Dynamic Range',
-    'Natural Colors',
-    'Deep Vibrance',
-    'Color Correction',
-  ],
+  style: getRecipeOptions(REMASTER_MODULE, 'style'),
+  lighting: getRecipeOptions(REMASTER_MODULE, 'lighting'),
+  camera: getRecipeOptions(REMASTER_MODULE, 'camera'),
+  anatomy: getRecipeOptions(REMASTER_MODULE, 'anatomy'),
+  text: getRecipeOptions(REMASTER_MODULE, 'text'),
+  color: getRecipeOptions(REMASTER_MODULE, 'color'),
 };
 
-import { RATIO_MAP } from '../../constants';
+const FIDELITY_RANGE = getRecipeRange(REMASTER_MODULE, 'fidelity', { min: 0, max: 100, step: 1 });
+
+const DEFAULT_PARAMS = {
+  style: getRecipeStringDefault(REMASTER_DEFAULTS, 'style', 'Realistic Reconstruction'),
+  lighting: getRecipeStringDefault(REMASTER_DEFAULTS, 'lighting', 'Lighting Correction'),
+  camera: getRecipeStringDefault(REMASTER_DEFAULTS, 'camera', 'Sharp Focus'),
+  anatomy: getRecipeStringDefault(REMASTER_DEFAULTS, 'anatomy', 'Fix Anatomy'),
+  text: getRecipeStringDefault(REMASTER_DEFAULTS, 'text', 'Rewrite Logically'),
+  color: getRecipeStringDefault(REMASTER_DEFAULTS, 'color', 'Expanded Dynamic Range'),
+  fidelity: getRecipeNumberDefault(REMASTER_DEFAULTS, 'fidelity', 35),
+};
 
 export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
   config,
@@ -64,15 +65,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
   onGenerate,
   isGenerating,
 }) => {
-  const [params, setParams] = useState({
-    style: 'Realistic Reconstruction',
-    lighting: 'Lighting Correction',
-    camera: 'Sharp Focus',
-    anatomy: 'Fix Anatomy',
-    text: 'Rewrite Logically',
-    color: 'Expanded Dynamic Range',
-    fidelity: 35,
-  });
+  const [params, setParams] = useState(DEFAULT_PARAMS);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const activeImage = config.attachments[0];
@@ -117,8 +110,9 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
           </div>
           <input
             type="range"
-            min="0"
-            max="100"
+            min={FIDELITY_RANGE.min}
+            max={FIDELITY_RANGE.max}
+            step={FIDELITY_RANGE.step}
             value={params.fidelity}
             onChange={(e) => setParams((p) => ({ ...p, fidelity: parseInt(e.target.value) }))}
             className="w-full h-1 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-accent-500"

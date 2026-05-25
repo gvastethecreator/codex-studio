@@ -9,24 +9,21 @@ import {
   Rewind,
   Hourglass,
   Film,
-  Play,
   Upload,
   Layers,
-  Anchor,
   Activity,
   Sun,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import type {
-  Attachment,
-  ImageGenerationConfig,
-  GeneratedImageWithConfig,
-  AspectRatio,
-} from '../../types';
+import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
+import { RATIO_MAP } from '../../constants';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
+import { createTimelineRecipeParams } from '../../lib/recipeDerivedParams';
 import { getRecipeNumberParam, hasRecipeIdentity } from '../../lib/recipeIdentity';
+import { getRecipeModuleUiModel, getRecipeOptions, getRecipeStringDefault } from './recipeModuleUi';
 
 interface TimelineRecipeProps {
   config: ImageGenerationConfig;
@@ -42,20 +39,27 @@ interface TimelineRecipeProps {
   onSelectImage?: (image: GeneratedImageWithConfig) => void;
 }
 
-const TIME_OPTIONS = [
-  { label: 'Split Second', val: 'IMMEDIATE_REACTION', icon: 'ÔÜí' },
-  { label: 'Seconds', val: 'SHORT_TERM_CONSEQUENCE', icon: 's' },
-  { label: 'Minutes', val: 'MEDIUM_TERM_PROGRESSION', icon: 'm' },
-  { label: 'Hours', val: 'DAY_NIGHT_CYCLE', icon: 'h' },
-  { label: 'Years', val: 'LONG_TERM_AGING', icon: 'y' },
-];
+const { module: TIMELINE_MODULE, defaults: TIMELINE_DEFAULTS } = getRecipeModuleUiModel('timeline');
 
-const MOTION_OPTIONS = ['Static', 'Subtle', 'Cinematic', 'High Action'];
-const LIGHTING_OPTIONS = ['Locked', 'Evolving', 'Flickering'];
+const DEFAULT_DIRECTION = getRecipeStringDefault(TIMELINE_DEFAULTS, 'direction', 'forward');
+const DEFAULT_TIME_DELTA_LABEL = getRecipeStringDefault(
+  TIMELINE_DEFAULTS,
+  'timeDeltaLabel',
+  'Seconds',
+);
+const DEFAULT_CAMERA_MODE = getRecipeStringDefault(TIMELINE_DEFAULTS, 'cameraMode', 'locked');
+const DEFAULT_MOTION_AMOUNT = getRecipeStringDefault(TIMELINE_DEFAULTS, 'motionAmount', 'Subtle');
+const DEFAULT_LIGHTING_MODE = getRecipeStringDefault(TIMELINE_DEFAULTS, 'lightingMode', 'Locked');
 
-import { RATIO_MAP } from '../../constants';
+const TIME_DELTA_LABEL_OPTIONS = getRecipeOptions(TIMELINE_MODULE, 'timeDeltaLabel');
+const TIME_OPTIONS = (
+  TIME_DELTA_LABEL_OPTIONS.length > 0 ? TIME_DELTA_LABEL_OPTIONS : [DEFAULT_TIME_DELTA_LABEL]
+).map((label) => ({
+  label,
+}));
 
-import { useLocalStorage } from '../../hooks/useLocalStorage';
+const MOTION_OPTIONS = getRecipeOptions(TIMELINE_MODULE, 'motionAmount');
+const LIGHTING_OPTIONS = getRecipeOptions(TIMELINE_MODULE, 'lightingMode');
 
 export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   config,
@@ -70,15 +74,18 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   // --- Persistent UI State ---
   const [direction, setDirection] = useLocalStorage<'forward' | 'backward'>(
     'timeline-direction',
-    'forward',
+    DEFAULT_DIRECTION === 'backward' ? 'backward' : 'forward',
   );
 
   const [timeDeltaLabel, setTimeDeltaLabel] = useLocalStorage(
     'timeline-delta',
-    TIME_OPTIONS[1].label,
+    DEFAULT_TIME_DELTA_LABEL,
   );
   const timeDelta = useMemo(
-    () => TIME_OPTIONS.find((o) => o.label === timeDeltaLabel) || TIME_OPTIONS[1],
+    () =>
+      TIME_OPTIONS.find((option) => option.label === timeDeltaLabel) ??
+      TIME_OPTIONS.find((option) => option.label === DEFAULT_TIME_DELTA_LABEL) ??
+      TIME_OPTIONS[0],
     [timeDeltaLabel],
   );
   const setTimeDelta = useCallback(
@@ -88,11 +95,11 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
 
   const [cameraMode, setCameraMode] = useLocalStorage<'locked' | 'dynamic'>(
     'timeline-camera',
-    'locked',
+    DEFAULT_CAMERA_MODE === 'dynamic' ? 'dynamic' : 'locked',
   );
 
-  const [motionAmount, setMotionAmount] = useState('Subtle');
-  const [lightingMode, setLightingMode] = useState('Locked');
+  const [motionAmount, setMotionAmount] = useState(DEFAULT_MOTION_AMOUNT);
+  const [lightingMode, setLightingMode] = useState(DEFAULT_LIGHTING_MODE);
 
   // --- Session State ---
   const [sessionOrigin, setSessionOrigin] = useState<{ id: string; src: string } | null>(null);
@@ -318,16 +325,16 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   }, [timelineItems, activeImage, handleItemClick]);
 
   const recipeParams = useMemo(
-    () => ({
-      nextIndex: currentRefIndex + (direction === 'forward' ? 1 : -1),
-      direction,
-      timeDeltaValue: timeDelta.val,
-      timeDeltaLabel: timeDelta.label,
-      cameraMode,
-      motionAmount,
-      lightingMode,
-      isAnchored: config.attachments.length > 1,
-    }),
+    () =>
+      createTimelineRecipeParams({
+        currentRefIndex,
+        direction,
+        timeDeltaLabel: timeDelta.label,
+        cameraMode,
+        motionAmount,
+        lightingMode,
+        isAnchored: config.attachments.length > 1,
+      }),
     [
       cameraMode,
       config.attachments.length,
@@ -336,7 +343,6 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
       lightingMode,
       motionAmount,
       timeDelta.label,
-      timeDelta.val,
     ],
   );
 

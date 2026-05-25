@@ -16,8 +16,10 @@ import {
 import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import { useCameraViewport } from '../../hooks/useCameraViewport';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
+import { createCameraRecipeParams } from '../../lib/recipeDerivedParams';
 import { hasRecipeIdentity } from '../../lib/recipeIdentity';
 import { RecipeLayout } from './RecipeLayout';
+import { getRecipeModuleUiModel, getRecipeRange } from './recipeModuleUi';
 
 interface CameraAnglesRecipeProps {
   config: ImageGenerationConfig;
@@ -33,58 +35,11 @@ interface CameraAnglesRecipeProps {
   onSelectImage: (image: GeneratedImageWithConfig) => void;
 }
 
-// Helper to translate raw math into director's language
-const getDirectorInstructions = (az: number, el: number, dist: number) => {
-  // 1. Camera Horizontal Position
-  let side = az > 0 ? 'RIGHT' : 'LEFT';
-  let hPos = 'FRONT CENTER (0°)';
-  const absAz = Math.abs(az);
-
-  if (absAz > 10 && absAz <= 45) hPos = `${side} 3/4 ANGLE (Oblique)`;
-  if (absAz > 45 && absAz <= 110) hPos = `${side} PROFILE (Side View)`;
-  if (absAz > 110 && absAz <= 160) hPos = `${side} REAR 3/4 ANGLE (Behind)`;
-  if (absAz > 160) hPos = 'DIRECT BACK VIEW (Rear)';
-
-  // 2. Camera Vertical Position
-  let vPos = 'EYE-LEVEL';
-  if (el > 20) vPos = 'HIGH-ANGLE (Looking Down)';
-  if (el > 60) vPos = "OVERHEAD / BIRD'S EYE (Top-Down)";
-  if (el < -20) vPos = 'LOW-ANGLE (Looking Up)';
-  if (el < -60) vPos = "WORM'S EYE (Ground View)";
-
-  // 3. Framing / Lens
-  let framing = 'MEDIUM SHOT';
-  if (dist < 50) framing = 'WIDE ANGLE (Environment visible)';
-  if (dist > 130) framing = 'CLOSE-UP (Tight face framing)';
-  if (dist > 170) framing = 'MACRO (Extreme detail)';
-
-  return { hPos, vPos, framing };
-};
-
-// Helper to translate geometry into visual guidance for the prompt.
-const getGeometryConstraints = (az: number, el: number) => {
-  const constraints = [];
-  const absAz = Math.abs(az);
-
-  // Vertical Logic
-  if (el > 35)
-    constraints.push('Favor a high camera view with visible top planes of the head and shoulders.');
-  else if (el < -35)
-    constraints.push('Favor a low camera view with visible underside planes such as chin and jaw.');
-
-  // Horizontal Logic
-  if (absAz > 150)
-    constraints.push(
-      'Back view requested: emphasize the back of the head and body, with minimal face visibility.',
-    );
-  else if (absAz > 60 && absAz < 120)
-    constraints.push(
-      'Profile view requested: favor a clear side silhouette and one-eye facial structure.',
-    );
-  else if (absAz < 20)
-    constraints.push('Front view requested: favor a centered, symmetrical composition.');
-
-  return constraints.join(' ');
+const { module: CAMERA_MODULE } = getRecipeModuleUiModel('camera');
+const CAMERA_RANGES = {
+  azimuth: getRecipeRange(CAMERA_MODULE, 'azimuth', { min: -180, max: 180, step: 1 }),
+  elevation: getRecipeRange(CAMERA_MODULE, 'elevation', { min: -85, max: 85, step: 1 }),
+  distance: getRecipeRange(CAMERA_MODULE, 'distance', { min: 20, max: 200, step: 1 }),
 };
 
 export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
@@ -121,25 +76,11 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
   const cameraImages = useMemo(() => {
     return images.filter((img) => hasRecipeIdentity(img.config, 'camera'));
   }, [images]);
-  const roundedAz = Math.round(azimuth);
-  const roundedEl = Math.round(elevation);
-  const roundedDist = Math.round(distance);
-  const { hPos, vPos, framing } = getDirectorInstructions(roundedAz, roundedEl, roundedDist);
-  const geometryConstraints = getGeometryConstraints(roundedAz, roundedEl);
-
   const recipeParams = useMemo(
-    () => ({
-      azimuth: roundedAz,
-      elevation: roundedEl,
-      distance: roundedDist,
-      hasReference,
-      hPos,
-      vPos,
-      framing,
-      geometryConstraints,
-    }),
-    [framing, geometryConstraints, hPos, hasReference, roundedAz, roundedDist, roundedEl, vPos],
+    () => createCameraRecipeParams({ azimuth, elevation, distance, hasReference }),
+    [azimuth, distance, elevation, hasReference],
   );
+  const { hPos, vPos, framing } = recipeParams;
 
   useRecipeContextRegistration(updateConfig, 'camera', recipeParams);
 
@@ -183,8 +124,9 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
           </div>
           <input
             type="range"
-            min="-180"
-            max="180"
+            min={CAMERA_RANGES.azimuth.min}
+            max={CAMERA_RANGES.azimuth.max}
+            step={CAMERA_RANGES.azimuth.step}
             value={azimuth}
             onChange={(e) => setAzimuth(parseInt(e.target.value))}
             className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-cyan-400 hover:accent-cyan-300"
@@ -200,8 +142,9 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
           </div>
           <input
             type="range"
-            min="-85"
-            max="85"
+            min={CAMERA_RANGES.elevation.min}
+            max={CAMERA_RANGES.elevation.max}
+            step={CAMERA_RANGES.elevation.step}
             value={elevation}
             onChange={(e) => setElevation(parseInt(e.target.value))}
             className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-pink-400 hover:accent-pink-300"
@@ -217,8 +160,9 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
           </div>
           <input
             type="range"
-            min="20"
-            max="200"
+            min={CAMERA_RANGES.distance.min}
+            max={CAMERA_RANGES.distance.max}
+            step={CAMERA_RANGES.distance.step}
             value={distance}
             onChange={(e) => setDistance(parseInt(e.target.value))}
             className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-yellow-400 hover:accent-yellow-300"

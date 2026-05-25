@@ -150,6 +150,11 @@ function splitEnvPaths(value: string | undefined) {
     .filter(Boolean);
 }
 
+function clampLimit(value: number | undefined, fallback: number, max: number) {
+  const numeric = Number.isFinite(value) ? Math.floor(value as number) : fallback;
+  return Math.min(Math.max(numeric, 1), max);
+}
+
 export function readExternalOutputSourceRegistry(
   storage: StudioSettingsStorage,
 ): ExternalOutputSourceRegistry {
@@ -280,7 +285,7 @@ export function listExternalOutputSourceFiles({
   const sourcePath = source.path;
 
   const files: ExternalOutputSourceFile[] = [];
-  const maxFiles = Math.min(Math.max(limit, 1), 500);
+  const maxFiles = clampLimit(limit, 100, 500);
 
   function walk(currentPath: string) {
     if (files.length >= maxFiles) return;
@@ -303,7 +308,12 @@ export function listExternalOutputSourceFiles({
     }
   }
 
-  walk(sourcePath);
+  try {
+    walk(sourcePath);
+  } catch {
+    return { ok: false as const, reason: 'source_unavailable' as const };
+  }
+
   return {
     ok: true as const,
     source,
@@ -330,7 +340,7 @@ export function importExternalOutputSourceFiles({
     return { ok: false as const, reason: 'files_required' as const };
   }
 
-  const maxFiles = Math.min(Math.max(input.limit ?? requestedFiles.length, 1), 100);
+  const maxFiles = clampLimit(input.limit, requestedFiles.length, 100);
   const destinationDir = path.join(libraryDir, 'assets', 'external', source.id);
   makeDir(destinationDir, { recursive: true });
 

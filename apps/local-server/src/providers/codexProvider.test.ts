@@ -1,6 +1,9 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { createGenerationTaskSpec } from '../../../../packages/shared/src';
+import {
+  createGenerationTaskSpec,
+  createRecipeProviderDirectives,
+} from '../../../../packages/shared/src';
 import { compileCodexImagegenInput, createCodexGenerationProvider } from './codexProvider';
 import type { CodexTurn, TurnParams, TurnResult } from '../codex/turn';
 
@@ -66,6 +69,42 @@ describe('codexProvider', () => {
     expect(compiled.payload.text).toContain('text, watermark');
     expect(compiled.payload.text).toContain('Style preset: SP09-006');
     expect(compiled.payload.text).not.toContain('Prompt text after reference processing');
+  });
+
+  it('prefers compact recipe provider directives over legacy Recipe Context text', () => {
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-style',
+      task: 'style_preset_card',
+      providerId: 'codex',
+      prompt: 'glass owl on a plinth',
+      recipeId: 'styles',
+      recipeParams: { presetId: 'SP09-006' },
+      metadata: {
+        recipeContext: 'legacy context should stay out of compiled text',
+        recipeProviderDirectives: createRecipeProviderDirectives({
+          recipeId: 'styles',
+          title: 'Styles',
+          sections: [
+            {
+              title: 'Visual DNA',
+              directives: [{ label: 'Core Aesthetic', value: 'polished glass' }],
+            },
+          ],
+        }),
+      },
+    });
+
+    const compiled = compileCodexImagegenInput({
+      id: 'job-style',
+      projectId: 'project-1',
+      prompt: 'unused fallback prompt',
+      execution: null,
+      sourceSpec,
+    });
+
+    expect(compiled.payload.text).toContain('Recipe directives:');
+    expect(compiled.payload.text).toContain('- Core Aesthetic: polished glass');
+    expect(compiled.payload.text).not.toContain('legacy context should stay out');
   });
 
   it('delegates execution to the Codex Product Runtime with compiled input text', async () => {

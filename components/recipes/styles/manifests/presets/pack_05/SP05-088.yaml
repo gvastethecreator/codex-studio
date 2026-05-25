@@ -38,3 +38,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-088.webp
 attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_05
+  packName: Anime & Manga Spectrum
+  categoryId: slice-of-life-and-moe
+  categoryName: 5. Slice of Life & Moe
+  tags:
+    - anime-and-manga-spectrum
+    - slice-of-life-and-moe
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

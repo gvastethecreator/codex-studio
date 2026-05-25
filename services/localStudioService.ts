@@ -10,6 +10,8 @@ import type {
   EditableStudioSettingsPatch,
   ExternalOutputSourcesResponse,
   ExternalOutputSourceFile,
+  GenerationProviderCapabilitiesResponse,
+  GenerationProviderRuntimePreflightResponse,
   HealthResponse,
   ImportExternalOutputSourceInput,
   ImportExternalOutputSourceResult,
@@ -78,6 +80,20 @@ export async function getStudioHealth() {
  */
 export async function getEditableStudioSettings() {
   return request<EditableStudioSettings>('/api/settings');
+}
+
+/**
+ * Read non-secret provider capability status. Secret values never leave backend config.
+ */
+export async function getGenerationProviderCapabilities() {
+  return request<GenerationProviderCapabilitiesResponse>('/api/providers');
+}
+
+/**
+ * Read non-secret provider runtime preflight state. Sources are env/config names only.
+ */
+export async function getGenerationProviderRuntimePreflight() {
+  return request<GenerationProviderRuntimePreflightResponse>('/api/providers/preflight');
 }
 
 /**

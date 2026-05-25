@@ -27,3 +27,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-010.webp
 attributes:
   negativePrompt: square grid
+taxonomy:
+  packId: pack_10
+  packName: Abstract & Experimental
+  categoryId: geometric-abstraction
+  categoryName: 1. Geometric Abstraction
+  tags:
+    - abstract-and-experimental
+    - geometric-abstraction
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1,9 +1,11 @@
 import React, { useState, useRef, useMemo } from 'react';
 import { Layout, Brush, Palette, X, Camera, ScanFace } from 'lucide-react';
 import type { Attachment, ImageGenerationConfig } from '../../types';
+import { RATIO_MAP } from '../../constants';
+import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
-import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
+import { getRecipeModuleUiModel, getRecipeOptions, getRecipeStringDefault } from './recipeModuleUi';
 
 interface CharacterSheetRecipeProps {
   config: ImageGenerationConfig;
@@ -17,51 +19,22 @@ interface CharacterSheetRecipeProps {
   isGenerating: boolean;
 }
 
-const LAYOUT_PROMPTS: Record<string, string> = {
-  'Classic Turnaround':
-    'a character turnaround reference sheet. Aim for 3 full-body views of the character in a neutral A-pose, arranged horizontally: 1. Front View 2. Side View (Left Profile) 3. Back View. Keep the head and feet visually aligned where possible.',
-  'Isometric Sheet':
-    'a full character sheet with multiple isometric views of the same character in a neutral A-pose. Aim for 4 views: 1. Front-Right Isometric 2. Front-Left Isometric 3. Back-Right Isometric 4. Back-Left Isometric. Prefer a clean 2x2 grid.',
-  'Dynamic Sheet':
-    'a dynamic character pose sheet. Aim for 3 views of the character: 1. A main, full-body dynamic action pose. 2. A close-up portrait with a neutral expression. 3. A three-quarter back view.',
-  'Expression Sheet':
-    'a facial expression sheet. Focus on the head and shoulders. Aim for 6 distinct emotional states (e.g., Neutral, Angry, Happy, Sad, Surprised, Combat-Ready) arranged in a readable 2x3 grid.',
-  'Wireframe Sheet':
-    'the character visualized as a 3D wireframe-style model, with the form suggested through polygon mesh lines and a visible grid pattern.',
-  'Anatomy Sheet':
-    "an anatomical reference sheet in the style of a medical or artist's illustration. Show a detailed view of the character's musculature and skeletal structure.",
-  'Clothing Layers': "a character sheet showing an 'exploded view' of the character's clothing.",
+const { module: CHARACTER_MODULE, defaults: CHARACTER_DEFAULTS } =
+  getRecipeModuleUiModel('character');
+
+const CONTROL_OPTIONS = {
+  layout: getRecipeOptions(CHARACTER_MODULE, 'layout'),
+  style: getRecipeOptions(CHARACTER_MODULE, 'style'),
+  shot: getRecipeOptions(CHARACTER_MODULE, 'shot'),
+  focus: getRecipeOptions(CHARACTER_MODULE, 'focus'),
 };
 
-const STYLE_OPTIONS = [
-  'Preserve Source Style',
-  'Concept Art (Digital)',
-  'Anime (90s Retro)',
-  'Anime (Painterly Fantasy)',
-  'Anime (Modern Luminous)',
-  'Comic Book (Western)',
-  'Graphic Novel (Noir)',
-  '3D Render (Feature Animation)',
-  '3D Render (Next-Gen Engine)',
-  'Fantasy Oil Painting',
-  'Watercolor Illustration',
-  'Pencil Sketch',
-  'Technical Blueprint',
-  'Vector Art (Flat)',
-  'Pixel Art (High Bit)',
-  'Cyberpunk Neon',
-];
-const SHOT_OPTIONS = ['Full Body', 'Knee Up', 'Upper Body', 'Portrait (Headshot)', 'Macro Details'];
-const FOCUS_OPTIONS = [
-  'General Design',
-  'Facial Features',
-  'Outfit & Cloth',
-  'Anatomy/Muscle',
-  'Weapons/Gear',
-  'Hair & Accessories',
-];
-
-import { RATIO_MAP } from '../../constants';
+const DEFAULT_PARAMS = {
+  layout: getRecipeStringDefault(CHARACTER_DEFAULTS, 'layout', 'Classic Turnaround'),
+  style: getRecipeStringDefault(CHARACTER_DEFAULTS, 'style', 'Preserve Source Style'),
+  shot: getRecipeStringDefault(CHARACTER_DEFAULTS, 'shot', 'Full Body'),
+  focus: getRecipeStringDefault(CHARACTER_DEFAULTS, 'focus', 'General Design'),
+};
 
 export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
   config,
@@ -69,12 +42,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
   onFileSelect,
   isGenerating,
 }) => {
-  const [params, setParams] = useState({
-    layout: 'Classic Turnaround',
-    style: 'Preserve Source Style',
-    shot: 'Full Body',
-    focus: 'General Design',
-  });
+  const [params, setParams] = useState(DEFAULT_PARAMS);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const activeImage = config.attachments[0];
@@ -106,7 +74,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
           title="Sheet Type"
           icon={<Layout size={14} />}
           label={params.layout}
-          options={Object.keys(LAYOUT_PROMPTS)}
+          options={CONTROL_OPTIONS.layout}
           onSelect={(v) => setParams((p) => ({ ...p, layout: v }))}
           activeColor="indigo"
         />
@@ -115,7 +83,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
           title="Framing"
           icon={<Camera size={14} />}
           label={params.shot}
-          options={SHOT_OPTIONS}
+          options={CONTROL_OPTIONS.shot}
           onSelect={(v) => setParams((p) => ({ ...p, shot: v }))}
           activeColor="indigo"
         />
@@ -123,7 +91,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
           title="Detail Focus"
           icon={<ScanFace size={14} />}
           label={params.focus}
-          options={FOCUS_OPTIONS}
+          options={CONTROL_OPTIONS.focus}
           onSelect={(v) => setParams((p) => ({ ...p, focus: v }))}
           activeColor="indigo"
         />
@@ -132,7 +100,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
           title="Art Style"
           icon={<Palette size={14} />}
           label={params.style}
-          options={STYLE_OPTIONS}
+          options={CONTROL_OPTIONS.style}
           onSelect={(v) => setParams((p) => ({ ...p, style: v }))}
           activeColor="indigo"
         />

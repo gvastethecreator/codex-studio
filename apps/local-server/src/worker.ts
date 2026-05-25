@@ -8,6 +8,7 @@ import { resolveLibraryPath, toPublicAssetUrl } from './library';
 import { log } from './logger';
 import { createCodexTurn, resolveJobExecutionOptions } from './codex';
 import { createCodexGenerationProvider } from './providers/codexProvider';
+import { createExternalGenerationProvider } from './providers/externalProvider';
 import type { GenerationProvider } from './providers/types';
 import { embedMetadata } from './metadataEmbedder';
 import { parsePromptTransport } from '../../../packages/shared/src';
@@ -46,6 +47,7 @@ export interface CreateWorkerControllerDependencies {
   embedMetadata?: typeof embedMetadata;
   parsePromptTransport?: typeof parsePromptTransport;
   createGenerationProvider?: () => GenerationProvider;
+  createExternalProvider?: () => GenerationProvider;
 }
 
 function createAbortError() {
@@ -121,14 +123,17 @@ export function createWorkerController({
   embedMetadata: embedMetadataFn = embedMetadata,
   parsePromptTransport: parsePromptTransportFn = parsePromptTransport,
   createGenerationProvider,
+  createExternalProvider,
 }: CreateWorkerControllerDependencies = {}): WorkerController {
   const runningJobs = new Set<string>();
   const jobQueue: Job[] = [];
   const runningJobControllers = new Map<string, AbortController>();
   const activeJobPromises = new Map<string, Promise<void>>();
   let activeWorkerCount = 0;
-  const generationProvider =
+  const codexGenerationProvider =
     createGenerationProvider?.() ?? createCodexGenerationProvider({ turn: createTurn() });
+  const externalGenerationProvider =
+    createExternalProvider?.() ?? createExternalGenerationProvider();
 
   function getMaxConcurrentJobs() {
     return getSettingsFn().codexMaxConcurrentJobs;
@@ -264,7 +269,7 @@ export function createWorkerController({
     logger('info', 'worker', 'Codex imagegen job started.', job.id);
     const turnRecordId = upsertCodexTurnFn({ jobId: job.id, status: 'running' });
     const executionOptions = resolveExecutionOptions(job.execution);
-    const result = await generationProvider.run({
+    const result = await codexGenerationProvider.run({
       id: job.id,
       projectId: job.projectId,
       prompt: job.finalPromptUsed,
@@ -375,6 +380,99 @@ export function createWorkerController({
     );
   }
 
+  async function runExternalJob(job: Job, signal?: AbortSignal) {
+    const providerId = job.providerId ?? job.sourceSpec?.providerId ?? 'unknown';
+    addJobEventFn(job.id, 'external.started', `External provider job started: ${providerId}.`);
+    logger('info', 'worker', `External provider job started: ${providerId}.`, job.id);
+
+    const result = await externalGenerationProvider.run({
+      id: job.id,
+      projectId: job.projectId,
+      prompt: job.finalPromptUsed,
+      execution: job.execution,
+      providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,
+      sourceSpec: job.sourceSpec,
+      signal,
+    });
+
+    throwIfAborted(signal);
+
+    addJobEventFn(job.id, 'external.completed', 'External provider execution completed.', {
+      transcript: result.transcript,
+    });
+
+    const discoveredImagePath = result.assets[0]?.sourcePath ?? null;
+    if (!discoveredImagePath) {
+      updateJobStatusFn(job.id, 'needs_review');
+      publishEventFn('job.progress', getJobFn(job.id));
+      logger(
+        'warn',
+        'worker',
+        `External provider completed but no image file was discovered. Transcript: ${result.transcript}`,
+        job.id,
+      );
+      return;
+    }
+
+    const ext = path.extname(discoveredImagePath).toLowerCase();
+    const mimeType =
+      ext === '.jpg' || ext === '.jpeg'
+        ? 'image/jpeg'
+        : ext === '.webp'
+          ? 'image/webp'
+          : 'image/png';
+    const asset = addAssetFn({
+      projectId: job.projectId,
+      jobId: job.id,
+      filePath: discoveredImagePath,
+      thumbnailPath: null,
+      publicUrl: toPublicAssetUrlFn(discoveredImagePath),
+      prompt: job.finalPromptUsed,
+      width: null,
+      height: null,
+      mimeType,
+    });
+    const parsedPrompt = job.sourceSpec
+      ? {
+          prompt: job.sourceSpec.prompt,
+          negativePrompt: job.sourceSpec.negativePrompt,
+          aspectRatio: job.sourceSpec.output.aspectRatio,
+          imageSize: job.sourceSpec.output.imageSize,
+          recipeId: job.sourceSpec.recipeId,
+        }
+      : parsePromptTransportFn(job.finalPromptUsed);
+    const catalogImage = registerCatalogImageFn({
+      filePath: asset.filePath,
+      thumbnailPath: asset.thumbnailPath,
+      prompt: asset.prompt,
+      negativePrompt: parsedPrompt.negativePrompt || null,
+      aspectRatio: parsedPrompt.aspectRatio,
+      imageSize: parsedPrompt.imageSize,
+      width: asset.width,
+      height: asset.height,
+      mimeType: asset.mimeType,
+      fileSizeBytes: statSync(asset.filePath).size,
+      jobId: asset.jobId,
+      workspaceId: asset.projectId,
+      recipeId: parsedPrompt.recipeId,
+      generationConfig: buildCatalogGenerationConfigFromJob(job),
+    });
+
+    addJobEventFn(job.id, 'asset.created', 'External provider image asset imported.', {
+      assetId: asset.id,
+    });
+    publishEventFn('asset.created', asset);
+    publishEventFn('catalog.created', catalogImage);
+    updateJobStatusFn(job.id, 'completed');
+    publishEventFn('job.completed', getJobFn(job.id));
+    logger(
+      'info',
+      'worker',
+      `External provider job completed. Asset: ${path.basename(asset.filePath)}`,
+      job.id,
+    );
+  }
+
   async function processJob(job: Job) {
     const controller = new AbortController();
     runningJobControllers.set(job.id, controller);
@@ -388,6 +486,8 @@ export function createWorkerController({
         await runDryJob(job, controller.signal);
       } else if (runtimeTarget === 'codex') {
         await runCodexJob(job, controller.signal);
+      } else if (runtimeTarget === 'external') {
+        await runExternalJob(job, controller.signal);
       } else {
         throw new Error(
           `Unsupported job kind received by worker: kind=${job.kind} provider=${job.providerId ?? job.sourceSpec?.providerId ?? 'null'} sourceTask=${job.sourceSpec?.task ?? 'null'}`,

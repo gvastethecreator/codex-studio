@@ -58,6 +58,17 @@ export interface StylePresetManifestAttributes {
   [key: string]: unknown;
 }
 
+export interface StylePresetEditorialTaxonomy {
+  packId: string;
+  packName: string;
+  categoryId: string;
+  categoryName: string;
+  domain?: string;
+  tags: string[];
+  supportedTasks: StylePresetManifestTask[];
+  hasDefaultImage: boolean;
+}
+
 export interface StylePresetManifest {
   schemaVersion: 1;
   id: string;
@@ -71,6 +82,7 @@ export interface StylePresetManifest {
   visualDna: StylePresetDef['style'];
   avoidRules: string[];
   assets: StylePresetManifestAssets;
+  taxonomy?: Partial<StylePresetEditorialTaxonomy>;
   attributes?: StylePresetManifestAttributes;
 }
 

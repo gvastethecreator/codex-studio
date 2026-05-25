@@ -154,6 +154,14 @@
     transform: scale(0.96);
   }
 
+  .style-preset-thumbnail {
+    display: block;
+    image-rendering: auto;
+    image-rendering: smooth;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
   .t-panel-slide {
     transform: translateY(var(--panel-translate-y));
     opacity: 0;

@@ -1,5 +1,6 @@
 import type { ImageGenerationConfig, RecipeId } from '../types';
 import { extractRecipeIdFromRecipeContext } from '../packages/shared/src';
+import { RECIPE_MODULES } from './recipeModules';
 
 export type RegisteredRecipeId = Exclude<RecipeId, null>;
 
@@ -9,15 +10,9 @@ export interface RecipeIdentity {
   recipeContext: string;
 }
 
-const KNOWN_RECIPE_IDS = new Set<RegisteredRecipeId>([
-  'remaster',
-  'spritesheet',
-  'cinematic',
-  'character',
-  'styles',
-  'camera',
-  'timeline',
-]);
+const KNOWN_RECIPE_IDS = new Set<RegisteredRecipeId>(
+  Object.keys(RECIPE_MODULES) as RegisteredRecipeId[],
+);
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);

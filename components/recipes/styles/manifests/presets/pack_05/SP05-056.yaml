@@ -38,3 +38,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-056.webp
 attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_05
+  packName: Anime & Manga Spectrum
+  categoryId: mecha-and-cyberpunk
+  categoryName: 7. Mecha & Cyberpunk
+  tags:
+    - anime-and-manga-spectrum
+    - mecha-and-cyberpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

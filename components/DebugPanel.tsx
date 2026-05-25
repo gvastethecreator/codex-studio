@@ -72,9 +72,9 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
       <div className="flex items-center justify-between border-b border-white/5 px-5 py-4">
         <div>
           <div className="text-[10px] font-black uppercase tracking-[0.22em] text-zinc-500">
-            Unified Session Inspector
+            Studio Activity
           </div>
-          <h2 className="mt-1 text-xl font-semibold text-white">Session & Debug</h2>
+          <h2 className="mt-1 text-xl font-semibold text-white">Activity Inspector</h2>
         </div>
         <button onClick={onClose} className="rounded-full p-2 transition-colors hover:bg-white/5">
           <X />

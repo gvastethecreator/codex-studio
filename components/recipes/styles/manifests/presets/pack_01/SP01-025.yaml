@@ -29,3 +29,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-025.webp
 attributes:
   negativePrompt: hd, 4k, clean
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: camera-types
+  categoryName: 5. Camera Types
+  tags:
+    - photography-and-realism
+    - camera-types
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

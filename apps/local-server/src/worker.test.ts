@@ -47,9 +47,21 @@ describe('worker routing', () => {
     expect(resolveWorkerRuntimeTarget(job({ kind: 'dry_run' }))).toBe('dry_run');
   });
 
-  it('does not route unsupported non-codex providers through the Codex worker', () => {
-    expect(resolveWorkerRuntimeTarget(job({ kind: 'image_generate', providerId: 'fal' }))).toBe(
-      null,
+  it('routes known external providers through the external provider seam', () => {
+    expect(resolveWorkerRuntimeTarget(job({ kind: 'image_generate', providerId: 'google' }))).toBe(
+      'external',
     );
+    expect(resolveWorkerRuntimeTarget(job({ kind: 'image_generate', providerId: 'fal' }))).toBe(
+      'external',
+    );
+    expect(resolveWorkerRuntimeTarget(job({ kind: 'image_generate', providerId: 'comfy' }))).toBe(
+      'external',
+    );
+  });
+
+  it('does not route unknown non-codex providers through the Codex worker', () => {
+    expect(
+      resolveWorkerRuntimeTarget(job({ kind: 'image_generate', providerId: 'local-experiment' })),
+    ).toBe(null);
   });
 });

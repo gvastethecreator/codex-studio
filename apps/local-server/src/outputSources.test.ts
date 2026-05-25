@@ -165,6 +165,27 @@ describe('outputSources', () => {
     }
   });
 
+  it('reports registered sources that can no longer be read', () => {
+    const storage = createMemoryStorage();
+    const registration = registerExternalOutputSource({
+      storage,
+      libraryDir: 'D:/library',
+      input: { path: 'D:/ComfyUI/output', providerId: 'comfy' },
+      pathExists: () => true,
+    });
+    if (!registration.ok) throw new Error(registration.reason);
+
+    expect(
+      listExternalOutputSourceFiles({
+        storage,
+        sourceId: registration.source.id,
+        readDir() {
+          throw new Error('missing source');
+        },
+      }),
+    ).toEqual({ ok: false, reason: 'source_unavailable' });
+  });
+
   it('imports selected files by copying into the Studio Library and registering Catalog Entries', () => {
     const root = path.join(process.cwd(), 'tmp', `output-source-import-${Date.now()}`);
     const sourceDir = path.join(root, 'source');

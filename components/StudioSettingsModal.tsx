@@ -21,7 +21,9 @@ import {
   type ExternalOutputSourceCandidate,
   type ExternalOutputSourceFile,
   type ExternalOutputSourcesResponse,
+  type GenerationProviderCapabilitiesResponse,
   type GenerationProviderId,
+  type GenerationProviderRuntimePreflightResponse,
   type RegisterExternalOutputSourceInput,
   type StudioOutputMode,
 } from '../packages/shared/src';
@@ -33,6 +35,8 @@ interface StudioSettingsModalProps {
   libraryDir: string | null;
   isLoading: boolean;
   isSaving: boolean;
+  providerCapabilities: GenerationProviderCapabilitiesResponse | null;
+  providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
   outputSources: ExternalOutputSourcesResponse | null;
   outputSourceFiles: Record<string, ExternalOutputSourceFile[]>;
   isLoadingOutputSources: boolean;
@@ -66,6 +70,12 @@ function formatBytes(value: number) {
   return `${(value / (1024 * 1024)).toFixed(1)} MB`;
 }
 
+function providerStatusClass(status: string) {
+  if (status === 'active') return 'border-emerald-500/20 bg-emerald-500/10 text-emerald-200';
+  if (status === 'planned') return 'border-amber-500/20 bg-amber-500/10 text-amber-200';
+  return 'border-white/8 bg-white/4 text-zinc-400';
+}
+
 export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   isOpen,
   onClose,
@@ -73,6 +83,8 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   libraryDir,
   isLoading,
   isSaving,
+  providerCapabilities,
+  providerRuntimePreflight,
   outputSources,
   outputSourceFiles,
   isLoadingOutputSources,
@@ -91,8 +103,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   isResettingStudio,
 }) => {
   const [defaultProviderId, setDefaultProviderId] = useState<GenerationProviderId>('codex');
-  const [defaultOutputMode, setDefaultOutputMode] =
-    useState<StudioOutputMode>('studio_library');
+  const [defaultOutputMode, setDefaultOutputMode] = useState<StudioOutputMode>('studio_library');
   const [preferredOutputPath, setPreferredOutputPath] = useState('');
   const [autoDetectOutputSources, setAutoDetectOutputSources] = useState(true);
   const [commandCenterCompactMode, setCommandCenterCompactMode] = useState(false);
@@ -114,6 +125,14 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
         (providerId, index, all) => all.indexOf(providerId) === index,
       ),
     [defaultProviderId],
+  );
+  const preflightByProvider = useMemo(
+    () =>
+      new Map(
+        providerRuntimePreflight?.providers.map((preflight) => [preflight.providerId, preflight]) ??
+          [],
+      ),
+    [providerRuntimePreflight],
   );
 
   if (!isOpen) return null;
@@ -249,15 +268,81 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               </select>
             </label>
 
+            {providerCapabilities ? (
+              <div className="md:col-span-2 rounded-lg border border-white/8 bg-white/4 p-4">
+                <div className="mb-3 flex items-center justify-between gap-3">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                    Provider Capability Status
+                  </span>
+                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-700">
+                    Non-secret
+                  </span>
+                </div>
+                <div className="grid gap-2 md:grid-cols-2">
+                  {providerCapabilities.providers.map((provider) => {
+                    const preflight = preflightByProvider.get(provider.providerId);
+
+                    return (
+                      <div
+                        key={provider.providerId}
+                        className={`rounded-lg border px-3 py-2 ${providerStatusClass(provider.status)}`}
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <div className="min-w-0">
+                            <div className="truncate text-[10px] font-black uppercase tracking-widest">
+                              {provider.label}
+                            </div>
+                            <div className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest opacity-70">
+                              {provider.runtimeKind}
+                            </div>
+                          </div>
+                          <div className="flex shrink-0 items-center gap-1 text-[9px] font-black uppercase tracking-widest">
+                            {provider.isDefault ? <span>Default</span> : null}
+                            <span>{provider.status}</span>
+                          </div>
+                        </div>
+                        <p className="mt-2 text-[10px] leading-relaxed opacity-80">
+                          {provider.detail}
+                        </p>
+                        {preflight ? (
+                          <div className="mt-2 grid gap-1 border-t border-white/10 pt-2 text-[9px] font-bold uppercase tracking-widest opacity-80">
+                            <div className="flex justify-between gap-2">
+                              <span>Secret</span>
+                              <span className="truncate text-right">
+                                {preflight.secretState}
+                                {preflight.secretSource ? ` / ${preflight.secretSource}` : ''}
+                              </span>
+                            </div>
+                            <div className="flex justify-between gap-2">
+                              <span>Runtime</span>
+                              <span className="truncate text-right">
+                                {preflight.localRuntimeState}
+                                {preflight.localRuntimeSource
+                                  ? ` / ${preflight.localRuntimeSource}`
+                                  : ''}
+                              </span>
+                            </div>
+                            {preflight.diagnostics.length > 0 ? (
+                              <div className="pt-1 text-[9px] leading-relaxed normal-case tracking-normal opacity-70">
+                                {preflight.diagnostics.join(' ')}
+                              </div>
+                            ) : null}
+                          </div>
+                        ) : null}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ) : null}
+
             <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
               <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
                 Output Mode
               </span>
               <select
                 value={defaultOutputMode}
-                onChange={(event) =>
-                  setDefaultOutputMode(event.target.value as StudioOutputMode)
-                }
+                onChange={(event) => setDefaultOutputMode(event.target.value as StudioOutputMode)}
                 className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
               >
                 <option value="studio_library">Studio Library</option>
@@ -387,7 +472,11 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                           disabled={isScanning}
                           className="flex h-8 items-center gap-2 rounded-lg border border-emerald-400/20 px-3 text-[9px] font-black uppercase tracking-widest text-emerald-200 transition-colors hover:bg-emerald-400/10 disabled:opacity-40"
                         >
-                          {isScanning ? <LoaderCircle size={13} className="animate-spin" /> : <FileImage size={13} />}
+                          {isScanning ? (
+                            <LoaderCircle size={13} className="animate-spin" />
+                          ) : (
+                            <FileImage size={13} />
+                          )}
                           Scan
                         </button>
                         <button
@@ -396,7 +485,11 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                           disabled={isImporting || selected.length === 0}
                           className="flex h-8 items-center gap-2 rounded-lg bg-emerald-600 px-3 text-[9px] font-black uppercase tracking-widest text-white transition-colors hover:bg-emerald-500 disabled:opacity-40"
                         >
-                          {isImporting ? <LoaderCircle size={13} className="animate-spin" /> : <Upload size={13} />}
+                          {isImporting ? (
+                            <LoaderCircle size={13} className="animate-spin" />
+                          ) : (
+                            <Upload size={13} />
+                          )}
                           Import {selected.length || ''}
                         </button>
                       </div>

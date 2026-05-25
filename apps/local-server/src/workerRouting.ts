@@ -4,7 +4,7 @@ import {
   type Job,
 } from '../../../packages/shared/src';
 
-export type WorkerRuntimeTarget = 'dry_run' | 'codex';
+export type WorkerRuntimeTarget = 'dry_run' | 'codex' | 'external';
 
 function resolveGenerationTaskFromJob(
   job: Pick<Job, 'kind' | 'sourceSpec'>,
@@ -24,6 +24,10 @@ export function resolveWorkerRuntimeTarget(
 
   if (job.kind === 'dry_run' || providerId === 'dry_run') {
     return 'dry_run';
+  }
+
+  if (providerId === 'google' || providerId === 'fal' || providerId === 'comfy') {
+    return 'external';
   }
 
   if (providerId && providerId !== 'codex') {

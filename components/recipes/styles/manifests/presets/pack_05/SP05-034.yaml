@@ -38,3 +38,16 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-034.webp
 attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_05
+  packName: Anime & Manga Spectrum
+  categoryId: modern-shonen-and-action
+  categoryName: 1. Modern Shonen & Action
+  tags:
+    - anime-and-manga-spectrum
+    - modern-shonen-and-action
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true
