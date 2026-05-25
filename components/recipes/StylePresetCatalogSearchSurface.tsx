@@ -1,9 +1,10 @@
-import React, { useMemo, useState } from 'react';
-import { Search, X, ArrowRight, Database, Sparkles } from 'lucide-react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Search, X, ArrowRight, Database, Sparkles, LoaderCircle } from 'lucide-react';
 
-import { STYLE_PRESET_CATALOG } from './stylePresetCatalogData';
+import { loadStylePresetCatalog } from './stylePresetCatalogData';
 import {
   searchStylePresetCatalog,
+  type StylePresetCatalog,
   type StylePresetCatalogSearchResult,
 } from './stylePresetManifests';
 
@@ -27,19 +28,32 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   onSelectPreset,
   onApplyPreset,
 }) => {
+  const [catalog, setCatalog] = useState<StylePresetCatalog | null>(null);
   const [query, setQuery] = useState('');
   const [packId, setPackId] = useState('');
   const [task, setTask] = useState('');
 
+  useEffect(() => {
+    let cancelled = false;
+    void loadStylePresetCatalog().then((loaded) => {
+      if (!cancelled) setCatalog(loaded);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const results = useMemo(
     () =>
-      searchStylePresetCatalog(STYLE_PRESET_CATALOG, {
-        query,
-        packId: packId || undefined,
-        task: task || undefined,
-        limit: 80,
-      }),
-    [packId, query, task],
+      catalog
+        ? searchStylePresetCatalog(catalog, {
+            query,
+            packId: packId || undefined,
+            task: task || undefined,
+            limit: 80,
+          })
+        : [],
+    [catalog, packId, query, task],
   );
 
   return (
@@ -53,10 +67,16 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             <h3 className="text-xs font-black uppercase tracking-[0.2em] text-white">
               Style Catalog
             </h3>
-            <p className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest text-zinc-500">
-              {STYLE_PRESET_CATALOG.presets.length} presets / {STYLE_PRESET_CATALOG.packs.length}{' '}
-              packs
-            </p>
+            {catalog ? (
+              <p className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest text-zinc-500">
+                {catalog.presets.length} presets / {catalog.packs.length} packs
+              </p>
+            ) : (
+              <div className="mt-1 flex items-center gap-1.5 text-zinc-500">
+                <LoaderCircle size={10} className="animate-spin" />
+                <span className="text-[9px] font-bold uppercase tracking-widest">Loading...</span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -93,7 +113,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           aria-label="Filter style catalog by pack"
         >
           <option value="">All Packs</option>
-          {STYLE_PRESET_CATALOG.packs.map((pack) => (
+          {catalog?.packs.map((pack) => (
             <option key={pack.manifest.id} value={pack.manifest.id}>
               {pack.manifest.name}
             </option>
@@ -118,7 +138,12 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto px-6 py-5 custom-scrollbar">
-        {results.length > 0 ? (
+        {!catalog ? (
+          <div className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-zinc-600">
+            <LoaderCircle size={32} className="animate-spin opacity-25" />
+            <span className="text-xs font-black uppercase tracking-widest">Loading catalog...</span>
+          </div>
+        ) : results.length > 0 ? (
           <div className="grid grid-cols-1 gap-3 2xl:grid-cols-2">
             {results.map((result) => (
               <div

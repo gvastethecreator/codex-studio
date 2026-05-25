@@ -37,6 +37,7 @@
     "recipes:catalog": "bun run scripts/query-recipe-modules.ts",
     "recipes:source:verify": "bun run scripts/recipe-module-source-audit.ts",
     "recipes:verify": "bun run scripts/query-recipe-modules.ts --verify && bun run recipes:source:verify",
+    "recipes:evaluate": "bun run scripts/evaluate-recipe-prompts.ts",
     "providers:audit": "bun run scripts/audit-provider-inputs.ts",
     "providers:verify": "bun run providers:audit -- --verify",
     "providers:preflight": "bun run scripts/query-provider-runtime.ts",

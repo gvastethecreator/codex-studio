@@ -11,11 +11,7 @@ import {
   toStylePresetManifestRef,
   validateStyleManifestGraph,
 } from './stylePresetManifests';
-import {
-  STYLE_MANIFEST_GRAPH,
-  STYLE_PACK_MANIFESTS,
-  STYLE_PRESET_MANIFESTS,
-} from './stylePresetCatalogData';
+import { loadStylePresetCatalog } from './stylePresetCatalogData';
 import { STYLE_PACKS, STYLE_PRESET_BY_ID, STYLE_PRESET_PACK_ID_BY_ID } from './stylesData';
 import { LEGACY_STYLE_PACKS } from './legacyStylesData';
 
@@ -346,20 +342,22 @@ describe('stylePresetManifests', () => {
     ]);
   });
 
-  it('loads current repo from granular manifests without losing legacy preset count', () => {
+  it('loads current repo from granular manifests without losing legacy preset count', async () => {
     const legacyPresetCount = LEGACY_STYLE_PACKS.reduce(
       (total, pack) => total + pack.presets.length,
       0,
     );
+
+    const catalog = await loadStylePresetCatalog();
     const recomposedPacks = composeStylePacksFromManifests(
-      STYLE_PACK_MANIFESTS,
-      STYLE_PRESET_MANIFESTS,
+      catalog.packManifests,
+      catalog.presetManifests,
     );
     const composedPresetCount = STYLE_PACKS.reduce((total, pack) => total + pack.presets.length, 0);
 
-    expect(STYLE_MANIFEST_GRAPH.errors).toEqual([]);
-    expect(STYLE_PACK_MANIFESTS).toHaveLength(LEGACY_STYLE_PACKS.length);
-    expect(STYLE_PRESET_MANIFESTS).toHaveLength(legacyPresetCount);
+    expect(catalog.graph.errors).toEqual([]);
+    expect(catalog.packManifests).toHaveLength(LEGACY_STYLE_PACKS.length);
+    expect(catalog.presetManifests).toHaveLength(legacyPresetCount);
     expect(composedPresetCount).toBe(legacyPresetCount);
     expect(STYLE_PACKS).toEqual(recomposedPacks);
     expect(STYLE_PRESET_BY_ID.get('SP01-001')?.name).toBeTruthy();
