@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { StudioPageController } from '../hooks/useStudioPageController';
+import type { StudioPageController } from '../lib/buildStudioPageController';
 
 import { StudioGridSurface } from './studio/StudioGridSurface';
 

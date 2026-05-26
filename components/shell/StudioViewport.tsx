@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { AnimatePresence, MotionDiv, type Variants } from 'motion/react';
 
 import type { AppPageView } from '../../hooks/useHashRouter';
-import type { StudioPageController } from '../../hooks/useStudioPageController';
+import type { StudioPageController } from '../../lib/buildStudioPageController';
 import type { RecipeId } from '../../types';
 import type { RecipePageProps } from '../RecipePage';
 

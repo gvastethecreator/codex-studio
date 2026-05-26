@@ -189,23 +189,6 @@ export function createWorkerController({
     return filePath;
   }
 
-  function createDryRunAsset(job: Job) {
-    const filePath = resolveGeneratedAssetTargetPath(job, 'dry_run', '.svg');
-    mkdirSync(path.dirname(filePath), { recursive: true });
-    writeFileSync(filePath, svgForPrompt(job.finalPromptUsed), 'utf8');
-    return addAssetFn({
-      projectId: job.projectId,
-      jobId: job.id,
-      filePath,
-      thumbnailPath: null,
-      publicUrl: toPublicAssetUrlFn(filePath),
-      prompt: job.finalPromptUsed,
-      width: 1200,
-      height: 800,
-      mimeType: 'image/svg+xml',
-    });
-  }
-
   function buildCatalogGenerationConfig(prompt: string) {
     const parsedPrompt = parsePromptTransportFn(prompt);
     const executionOptions = resolveExecutionOptions();
@@ -278,13 +261,122 @@ export function createWorkerController({
     };
   }
 
+  async function finalizeJobAsset(
+    job: Job,
+    catalogContext: ReturnType<typeof resolveJobCatalogContext>,
+    discoveredImagePath: string,
+    providerId: string,
+    options: {
+      logPrefix: string;
+      embedMetadata?: boolean;
+      executionOptions?: ReturnType<typeof resolveExecutionOptions>;
+    },
+  ) {
+    const ext = path.extname(discoveredImagePath).toLowerCase();
+    const mimeType =
+      ext === '.jpg' || ext === '.jpeg'
+        ? 'image/jpeg'
+        : ext === '.webp'
+          ? 'image/webp'
+          : 'image/png';
+    const organizedImagePath = organizeGeneratedAssetPath(job, discoveredImagePath, providerId);
+    const asset = addAssetFn({
+      projectId: job.projectId,
+      jobId: job.id,
+      filePath: organizedImagePath,
+      thumbnailPath: null,
+      publicUrl: toPublicAssetUrlFn(discoveredImagePath),
+      prompt: job.finalPromptUsed,
+      width: null,
+      height: null,
+      mimeType,
+    });
+    const parsedPrompt = job.sourceSpec
+      ? {
+          prompt: job.sourceSpec.prompt,
+          negativePrompt: job.sourceSpec.negativePrompt,
+          aspectRatio: job.sourceSpec.output.aspectRatio,
+          imageSize: job.sourceSpec.output.imageSize,
+          recipeId: job.sourceSpec.recipeId,
+        }
+      : parsePromptTransportFn(job.finalPromptUsed);
+    const catalogImage = registerCatalogImageFn({
+      filePath: asset.filePath,
+      thumbnailPath: asset.thumbnailPath,
+      prompt: asset.prompt,
+      negativePrompt: parsedPrompt.negativePrompt || null,
+      aspectRatio: parsedPrompt.aspectRatio,
+      imageSize: parsedPrompt.imageSize,
+      width: asset.width,
+      height: asset.height,
+      mimeType: asset.mimeType,
+      fileSizeBytes: statSync(asset.filePath).size,
+      jobId: asset.jobId,
+      workspaceId: catalogContext.workspaceId,
+      batchId: catalogContext.batchId,
+      recipeId: parsedPrompt.recipeId,
+      generationConfig: buildCatalogGenerationConfigFromJob(job),
+    });
+
+    if (options.embedMetadata && options.executionOptions) {
+      void embedMetadataFn(asset.filePath, {
+        prompt: job.finalPromptUsed,
+        negativePrompt: parsedPrompt.negativePrompt || null,
+        aspectRatio: parsedPrompt.aspectRatio,
+        imageSize: parsedPrompt.imageSize,
+        model: options.executionOptions.model,
+        recipe: parsedPrompt.recipeId,
+        batchId: catalogContext.batchId ?? job.id,
+        generatedAt: new Date().toISOString(),
+        studioVersion: '0.0.0',
+        libraryId: catalogImage.libraryId,
+        catalogId: catalogImage.id,
+      }).catch((error) => {
+        logger(
+          'warn',
+          'metadata',
+          `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`,
+          job.id,
+        );
+      });
+    }
+
+    addJobEventFn(job.id, 'asset.created', `${options.logPrefix} asset imported.`, {
+      assetId: asset.id,
+    });
+    publishEventFn('asset.created', asset);
+    publishEventFn('catalog.created', catalogImage);
+    updateJobStatusFn(job.id, 'completed');
+    publishEventFn('job.completed', getJobFn(job.id));
+    logger(
+      'info',
+      'worker',
+      `${options.logPrefix} job completed. Asset: ${path.basename(asset.filePath)}`,
+      job.id,
+    );
+  }
+
   async function runDryJob(job: Job, signal?: AbortSignal) {
     const startedAt = Date.now();
     addJobEventFn(job.id, 'dry_run.started', 'Dry run asset creation started.');
     logger('info', 'worker', 'Dry run job started.', job.id);
     await waitWithAbort(500, signal);
     throwIfAborted(signal);
-    const asset = createDryRunAsset(job);
+
+    const filePath = resolveGeneratedAssetTargetPath(job, 'dry_run', '.svg');
+    mkdirSync(path.dirname(filePath), { recursive: true });
+    writeFileSync(filePath, svgForPrompt(job.finalPromptUsed), 'utf8');
+    const asset = addAssetFn({
+      projectId: job.projectId,
+      jobId: job.id,
+      filePath,
+      thumbnailPath: null,
+      publicUrl: toPublicAssetUrlFn(filePath),
+      prompt: job.finalPromptUsed,
+      width: 1200,
+      height: 800,
+      mimeType: 'image/svg+xml',
+    });
     const catalogContext = resolveJobCatalogContext(job);
     const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
     const catalogImage = registerCatalogImageFn({
@@ -367,87 +459,11 @@ export function createWorkerController({
       return;
     }
 
-    const ext = path.extname(discoveredImagePath).toLowerCase();
-    const mimeType =
-      ext === '.jpg' || ext === '.jpeg'
-        ? 'image/jpeg'
-        : ext === '.webp'
-          ? 'image/webp'
-          : 'image/png';
-    const organizedImagePath = organizeGeneratedAssetPath(
-      job,
-      discoveredImagePath,
-      job.providerId ?? job.sourceSpec?.providerId ?? 'codex',
-    );
-    const asset = addAssetFn({
-      projectId: job.projectId,
-      jobId: job.id,
-      filePath: organizedImagePath,
-      thumbnailPath: null,
-      publicUrl: toPublicAssetUrlFn(discoveredImagePath),
-      prompt: job.finalPromptUsed,
-      width: null,
-      height: null,
-      mimeType,
+    await finalizeJobAsset(job, catalogContext, discoveredImagePath, 'codex', {
+      logPrefix: 'Codex',
+      embedMetadata: true,
+      executionOptions,
     });
-    const parsedPrompt = job.sourceSpec
-      ? {
-          prompt: job.sourceSpec.prompt,
-          negativePrompt: job.sourceSpec.negativePrompt,
-          aspectRatio: job.sourceSpec.output.aspectRatio,
-          imageSize: job.sourceSpec.output.imageSize,
-          recipeId: job.sourceSpec.recipeId,
-        }
-      : parsePromptTransportFn(job.finalPromptUsed);
-    const catalogImage = registerCatalogImageFn({
-      filePath: asset.filePath,
-      thumbnailPath: asset.thumbnailPath,
-      prompt: asset.prompt,
-      negativePrompt: parsedPrompt.negativePrompt || null,
-      aspectRatio: parsedPrompt.aspectRatio,
-      imageSize: parsedPrompt.imageSize,
-      width: asset.width,
-      height: asset.height,
-      mimeType: asset.mimeType,
-      fileSizeBytes: statSync(asset.filePath).size,
-      jobId: asset.jobId,
-      workspaceId: catalogContext.workspaceId,
-      batchId: catalogContext.batchId,
-      recipeId: parsedPrompt.recipeId,
-      generationConfig: buildCatalogGenerationConfigFromJob(job),
-    });
-    void embedMetadataFn(asset.filePath, {
-      prompt: job.finalPromptUsed,
-      negativePrompt: parsedPrompt.negativePrompt || null,
-      aspectRatio: parsedPrompt.aspectRatio,
-      imageSize: parsedPrompt.imageSize,
-      model: executionOptions.model,
-      recipe: parsedPrompt.recipeId,
-      batchId: catalogContext.batchId ?? job.id,
-      generatedAt: new Date().toISOString(),
-      studioVersion: '0.0.0',
-      libraryId: catalogImage.libraryId,
-      catalogId: catalogImage.id,
-    }).catch((error) => {
-      logger(
-        'warn',
-        'metadata',
-        `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`,
-        job.id,
-      );
-    });
-
-    addJobEventFn(job.id, 'asset.created', 'Codex image asset imported.', { assetId: asset.id });
-    publishEventFn('asset.created', asset);
-    publishEventFn('catalog.created', catalogImage);
-    updateJobStatusFn(job.id, 'completed');
-    publishEventFn('job.completed', getJobFn(job.id));
-    logger(
-      'info',
-      'worker',
-      `Codex job completed. Asset: ${path.basename(asset.filePath)}`,
-      job.id,
-    );
   }
 
   async function runExternalJob(job: Job, signal?: AbortSignal) {
@@ -487,69 +503,9 @@ export function createWorkerController({
       return;
     }
 
-    const ext = path.extname(discoveredImagePath).toLowerCase();
-    const mimeType =
-      ext === '.jpg' || ext === '.jpeg'
-        ? 'image/jpeg'
-        : ext === '.webp'
-          ? 'image/webp'
-          : 'image/png';
-    const organizedImagePath = organizeGeneratedAssetPath(
-      job,
-      discoveredImagePath,
-      job.providerId ?? job.sourceSpec?.providerId ?? 'external',
-    );
-    const asset = addAssetFn({
-      projectId: job.projectId,
-      jobId: job.id,
-      filePath: organizedImagePath,
-      thumbnailPath: null,
-      publicUrl: toPublicAssetUrlFn(discoveredImagePath),
-      prompt: job.finalPromptUsed,
-      width: null,
-      height: null,
-      mimeType,
+    await finalizeJobAsset(job, catalogContext, discoveredImagePath, providerId, {
+      logPrefix: 'External provider',
     });
-    const parsedPrompt = job.sourceSpec
-      ? {
-          prompt: job.sourceSpec.prompt,
-          negativePrompt: job.sourceSpec.negativePrompt,
-          aspectRatio: job.sourceSpec.output.aspectRatio,
-          imageSize: job.sourceSpec.output.imageSize,
-          recipeId: job.sourceSpec.recipeId,
-        }
-      : parsePromptTransportFn(job.finalPromptUsed);
-    const catalogImage = registerCatalogImageFn({
-      filePath: asset.filePath,
-      thumbnailPath: asset.thumbnailPath,
-      prompt: asset.prompt,
-      negativePrompt: parsedPrompt.negativePrompt || null,
-      aspectRatio: parsedPrompt.aspectRatio,
-      imageSize: parsedPrompt.imageSize,
-      width: asset.width,
-      height: asset.height,
-      mimeType: asset.mimeType,
-      fileSizeBytes: statSync(asset.filePath).size,
-      jobId: asset.jobId,
-      workspaceId: catalogContext.workspaceId,
-      batchId: catalogContext.batchId,
-      recipeId: parsedPrompt.recipeId,
-      generationConfig: buildCatalogGenerationConfigFromJob(job),
-    });
-
-    addJobEventFn(job.id, 'asset.created', 'External provider image asset imported.', {
-      assetId: asset.id,
-    });
-    publishEventFn('asset.created', asset);
-    publishEventFn('catalog.created', catalogImage);
-    updateJobStatusFn(job.id, 'completed');
-    publishEventFn('job.completed', getJobFn(job.id));
-    logger(
-      'info',
-      'worker',
-      `External provider job completed. Asset: ${path.basename(asset.filePath)}`,
-      job.id,
-    );
   }
 
   async function processJob(job: Job) {
