@@ -98,7 +98,7 @@ Nota: `build` muestra ahora solo un resumen corto en consola para evitar que el 
 
 ### La ruta por defecto no existe en tu sistema operativo
 
-Por defecto el proyecto usa una ruta basada en el directorio home del usuario, por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows o `$HOME/AI-Studio-Library` en macOS/Linux.
+Por defecto el proyecto usa una ruta basada en el directorio home del usuario, por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows o `$HOME/AI-Studio-Library` en macOS/Linux. Dentro de esa raiz, `.studio/` guarda estado interno y `outputs/` guarda imagenes generadas y exports.
 
 Solucion:
 

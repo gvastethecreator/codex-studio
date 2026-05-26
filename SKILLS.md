@@ -57,10 +57,10 @@ Run `bun run styles:taxonomy -- --preset=<id>` to backfill editorial taxonomy fo
 Run `bun run styles:catalog -- --query=<text> --limit=20` to search the Style Preset Catalog without scanning compatibility packs. Add `--pack=<pack_id>`, `--category=<name>`, `--tag=<tag>`, `--task=<task>`, or `--json` for agent-ready output.
 Run `bun run styles:runtime` after manifest edits that affect the Styles UI. It regenerates the compact runtime index, pack indexes, and per-category runtime chunks used by `stylesData.ts`, then formats generated files in Windows-safe batches.
 Run `bun run styles:runtime:check` to verify the generated runtime file is current without rewriting it. Run `bun run styles:verify` before closing broad preset work.
-Run `bun run styles:source:verify` when changing Styles runtime/scripts. It blocks accidental runtime imports from legacy pack YAML, generated runtime check temp files, and presets that exist only in legacy pack YAML; only migration and compatibility-test seams should touch `LEGACY_STYLE_PACKS` or `components/recipes/styles/packs`.
+Run `bun run styles:source:verify` when changing Styles runtime/scripts. It blocks accidental runtime imports from legacy pack YAML, generated runtime check temp files, presets that exist only in legacy pack YAML, and YAML files recreated in the retired `components/recipes/styles/packs` directory; only source-audit and compatibility-test seams should mention `LEGACY_STYLE_PACKS` or `scripts/style-migration/legacy-packs`.
 Run `bun run styles:render:verify` after changing Styles UI grouping, pack runtime data, or virtualized rendering. It reports initial category/card budgets per pack and keeps large packs from mounting every preset at once.
 
-Legacy pack YAML is migration input only. `bun run styles:split` intentionally refuses to overwrite granular manifests. Use `bun run styles:split:legacy` only for an explicit one-time migration from `components/recipes/styles/packs`, then run `bun run styles:verify`. `STYLE_PACKS` is compatibility output, not the authoring surface.
+Legacy pack YAML is retired. `bun run styles:split`, `scripts/expand-pack-02-pack-05.ts`, and `scripts/reorder-style-packs.ts` intentionally refuse to mutate granular manifests from old pack YAML flows. `STYLE_PACKS`, `StylePack`, `StylePresetDef`, and `composeStylePacksFromManifests()` are retired compatibility names; use `StyleRuntimePack`, `StyleRuntimePreset`, `composeStyleRuntimePacksFromManifests()`, and manifest/catalog types for new code. `styles:source:verify` blocks those retired runtime aliases outside the source-audit guard.
 
 ## Audit Token Usage
 
@@ -76,6 +76,7 @@ Legacy pack YAML is migration input only. `bun run styles:split` intentionally r
 Token savings should come from better compilation, not weaker recipes.
 
 Run `bun run providers:audit` to inspect Recipe Module and provider conformance rows, including source spec size, compiled payload size, prompt estimates, Recipe Provider Directives coverage, and inline-data/secret leak checks. Run `bun run providers:verify` before changing provider compilers or removing legacy Recipe Context metadata.
+Run `bun run providers:source:verify` after backend route/worker/provider-boundary changes. It blocks route handlers and non-provider backend modules from importing provider compilers, shared hosted result internals, or concrete hosted/local executors.
 Run `bun run providers:preflight` before external adapter work. It reports Provider Secret source names and local runtime endpoint state without exposing secret values. Settings reads the same non-secret contract through `/api/providers/preflight`.
 Use `apps/local-server/src/providers/externalProvider.ts` as the adapter shell for hosted/local providers. It may compile inputs and fail with preflight diagnostics, but only a concrete executor should make a provider executable. Register concrete executors in `apps/local-server/src/providers/externalProviderExecutors.ts`; Google, fal.ai, and ComfyUI currently have default executors.
 Use `apps/local-server/src/providers/externalProviderResults.ts` for hosted image result handling before adding provider-specific download/transcript code. Keep retry policy, image URL extraction, mime/ext inference, asset writes, transcript writes, and secret redaction shared unless a provider truly needs a different contract.
@@ -90,6 +91,8 @@ For ComfyUI, use `apps/local-server/src/providers/comfyExecutor.ts`. It requires
 5. Expose secret state as configured/missing/invalid only.
 6. Expose runtime preflight source names only, never actual secret values or endpoint values.
 7. Open settings from Command Center.
+8. Keep Studio Library roots clean: internal state belongs in `.studio/`, generated images and exports belong in `outputs/`.
+9. Output organization preferences may control subfolders by date/provider/model/recipe and file-name templates; keep defaults readable and avoid exposing secret/provider endpoint values.
 
 ## Work With Output Folders
 
@@ -105,7 +108,7 @@ For ComfyUI, use `apps/local-server/src/providers/comfyExecutor.ts`. It requires
 1. Treat Image Catalog / Catalog Entries as durable read model.
 2. Keep Visual Batch as a compatibility adapter only while legacy grid surfaces need it.
 3. Put Catalog Entry grouping/filtering in `lib/studioCatalogView.ts`.
-4. Put `GenerationBatch[]` materialization in `lib/studioCatalogVisualBatchAdapter.ts`.
+4. Put Catalog Entry UI image materialization in `lib/studioCatalogImageAdapter.ts`, and keep legacy `GenerationBatch[]` snapshots behind explicit compatibility helpers.
 5. Do not read `catalog-cache`, `GlobalContext`, or `useIndexedDBStorage` from `useCatalog`.
 6. Run `bun run catalog:source:verify` after changing catalog/grid read paths.
 

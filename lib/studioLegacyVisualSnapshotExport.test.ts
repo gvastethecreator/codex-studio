@@ -1,10 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 import type { CatalogImage } from '../packages/shared/src';
 import { createCatalogView } from './studioCatalogView';
-import {
-  materializeCatalogEntryImageWithConfig,
-  materializeVisualBatchesFromCatalog,
-} from './studioCatalogVisualBatchAdapter';
+import { buildLegacyVisualBatchSnapshotFromCatalog } from './studioLegacyVisualSnapshotExport';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'image-1';
@@ -12,9 +9,9 @@ function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   return {
     id,
     libraryId: overrides.libraryId ?? 'library-1',
-    filePath: overrides.filePath ?? `C:/library/assets/${id}.png`,
+    filePath: overrides.filePath ?? `C:/library/outputs/${id}.png`,
     thumbnailPath: overrides.thumbnailPath ?? null,
-    publicUrl: overrides.publicUrl ?? `/library/assets/${id}.png`,
+    publicUrl: overrides.publicUrl ?? `/library/outputs/${id}.png`,
     thumbnailUrl: overrides.thumbnailUrl ?? null,
     prompt: overrides.prompt ?? 'Generate an image',
     negativePrompt: overrides.negativePrompt ?? null,
@@ -37,14 +34,14 @@ function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   };
 }
 
-describe('studioCatalogVisualBatchAdapter', () => {
-  it('materializes grouped Catalog Entries only at the Visual Batch compatibility edge', () => {
+describe('studioLegacyVisualSnapshotExport', () => {
+  it('builds legacy Visual Batch snapshots from grouped Catalog Entries', () => {
     const view = createCatalogView([
       catalogImage({ id: 'newer', batchId: 'batch-a', createdAt: '2026-05-24T00:00:02.000Z' }),
       catalogImage({ id: 'older', batchId: 'batch-a', createdAt: '2026-05-24T00:00:01.000Z' }),
     ]);
 
-    const batches = materializeVisualBatchesFromCatalog(view);
+    const batches = buildLegacyVisualBatchSnapshotFromCatalog(view);
 
     expect(batches).toHaveLength(1);
     expect(batches[0]).toEqual(
@@ -54,31 +51,5 @@ describe('studioCatalogVisualBatchAdapter', () => {
       }),
     );
     expect(batches[0].images.map((image) => image.id)).toEqual(['newer', 'older']);
-  });
-
-  it('materializes a Catalog Entry image with config without a GenerationBatch lookup', () => {
-    const image = materializeCatalogEntryImageWithConfig(
-      catalogImage({
-        id: 'catalog-image',
-        prompt: 'Catalog prompt',
-        generationConfig: {
-          prompt: 'Stored prompt',
-          model: 'gpt-image-1',
-          aspectRatio: '1:1',
-        },
-      }),
-    );
-
-    expect(image).toEqual(
-      expect.objectContaining({
-        id: 'catalog-image',
-        src: 'http://localhost:4317/library/assets/catalog-image.png',
-        config: expect.objectContaining({
-          prompt: 'Stored prompt',
-          model: 'codex-imagegen',
-          aspectRatio: '1:1',
-        }),
-      }),
-    );
   });
 });

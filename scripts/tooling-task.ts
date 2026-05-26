@@ -158,6 +158,11 @@ const TASKS: Record<string, TaskDefinition> = {
         command: 'bun',
         args: ['run', 'scripts/catalog-first-source-audit.ts'],
       },
+      {
+        label: 'Library Layout Source Verify',
+        command: 'bun',
+        args: ['run', 'scripts/studio-library-layout-source-audit.ts'],
+      },
       { label: 'Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
       {
         label: 'UI Chunk Verify',

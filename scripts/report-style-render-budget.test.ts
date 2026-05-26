@@ -9,6 +9,7 @@ describe('style render budget report', () => {
     expect(report.violations).toEqual([]);
     expect(report.categoryInitialRenderLimit).toBe(4);
     expect(report.groupInitialRenderLimit).toBe(16);
+    expect(report.expandedGroupRenderLimit).toBe(64);
     expect(report.packs).toHaveLength(11);
     expect(
       Math.max(...report.packs.map((pack) => pack.initialRenderedCategories)),
@@ -22,5 +23,16 @@ describe('style render budget report', () => {
         totalCategories: 12,
       }),
     );
+    expect(
+      Math.max(...report.packs.map((pack) => pack.largestExpandedCategoryPresetCards)),
+    ).toBeLessThanOrEqual(64);
+    expect(report.searchScenarios).toEqual([
+      expect.objectContaining({
+        packId: 'pack_01',
+        query: 'boudoir',
+        matchedPresetCards: 1,
+        initialRenderedPresetCards: 1,
+      }),
+    ]);
   });
 });

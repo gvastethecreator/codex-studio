@@ -4,7 +4,11 @@ import {
   createGenerationTaskSpec,
   createRecipeProviderDirectives,
 } from '../../../../packages/shared/src';
-import { compileCodexImagegenInput, createCodexGenerationProvider } from './codexProvider';
+import {
+  CODEX_IMAGEGEN_DENOISE_INSTRUCTION,
+  compileCodexImagegenInput,
+  createCodexGenerationProvider,
+} from './codexProvider';
 import type { CodexTurn, TurnParams, TurnResult } from '../codex/turn';
 
 function createTurnResult(overrides: Partial<TurnResult> = {}): TurnResult {
@@ -33,6 +37,7 @@ describe('codexProvider', () => {
     expect(compiled.audit.omittedStableInstructions).toBe(true);
     expect(compiled.payload.text).toContain('Task: image_generate');
     expect(compiled.payload.text).toContain('small brass key');
+    expect(compiled.payload.text.endsWith(CODEX_IMAGEGEN_DENOISE_INSTRUCTION)).toBe(true);
     expect(compiled.payload.text).not.toContain('Generate exactly one portrait image');
   });
 
@@ -67,7 +72,7 @@ describe('codexProvider', () => {
     expect(compiled.payload.text).toContain('glass owl on a plinth');
     expect(compiled.payload.text).toContain('Avoid:');
     expect(compiled.payload.text).toContain('text, watermark');
-    expect(compiled.payload.text).toContain('Style preset: SP09-006');
+    expect(compiled.payload.text).not.toContain('Style preset: SP09-006');
     expect(compiled.payload.text).not.toContain('Prompt text after reference processing');
   });
 
@@ -107,6 +112,87 @@ describe('codexProvider', () => {
     expect(compiled.payload.text).not.toContain('legacy context should stay out');
   });
 
+  it('keeps image-guided style transfer prompts compact and free of legacy recipe context', () => {
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-style-ref',
+      task: 'image_generate',
+      providerId: 'codex',
+      prompt: 'Apply the selected style using the provided reference image.',
+      negativePrompt: 'explicit, harsh',
+      recipeId: 'styles',
+      recipeParams: { presetId: 'SP01-069' },
+      stylePresetId: 'SP01-069',
+      assets: [
+        {
+          role: 'reference',
+          name: 'download.jpg',
+          localPath: 'D:/AI-Studio-Library/references/job-1/download.jpg',
+          strength: 0.15,
+        },
+      ],
+      output: {
+        imageSize: '1K',
+        aspectRatio: '1:1',
+      },
+      metadata: {
+        recipeContext: '--- CODEX RECIPE CONTEXT --- legacy block should stay out',
+        recipeProviderDirectives: createRecipeProviderDirectives({
+          recipeId: 'styles',
+          title: 'Styles',
+          sections: [
+            {
+              title: 'Application',
+              directives: [
+                { label: 'Target Style', value: 'Boudoir Photography' },
+                { label: 'Mode', value: 'CREATIVE_REIMAGINING' },
+                {
+                  label: 'Role Instruction',
+                  value: 'Treat the input image as a rough concept sketch only.',
+                },
+              ],
+            },
+          ],
+        }),
+      },
+    });
+
+    const compiled = compileCodexImagegenInput({
+      id: 'job-style-ref',
+      projectId: 'project-1',
+      prompt: 'Image-guided generation',
+      execution: null,
+      sourceSpec,
+    });
+
+    expect(compiled.payload.text).toContain(
+      'Prompt:\nApply the selected style using the provided reference image.',
+    );
+    expect(compiled.payload.text).toContain('Recipe directives:');
+    expect(compiled.payload.text).toContain('- Target Style: Boudoir Photography');
+    expect(compiled.payload.text).toContain('Avoid:\nexplicit, harsh');
+    expect(compiled.payload.text).toContain(
+      'Reference image file: D:/AI-Studio-Library/references/job-1/download.jpg (download.jpg, strength 0.15)',
+    );
+    expect(compiled.payload.text).toContain('Image size: 1K');
+    expect(compiled.payload.text).toContain('Aspect ratio: 1:1');
+    expect(compiled.payload.text.endsWith(CODEX_IMAGEGEN_DENOISE_INSTRUCTION)).toBe(true);
+    expect(compiled.payload.text).not.toContain('CODEX RECIPE CONTEXT');
+    expect(compiled.payload.text).not.toContain('Recipe instructions:');
+    expect(compiled.payload.text).not.toContain('Image-guided generation');
+    expect(compiled.payload.text).not.toContain('Recipe Module');
+    expect(compiled.payload.text).not.toContain('Preset ID');
+    expect(compiled.payload.text).not.toContain('SP01-069');
+    expect(compiled.payload.text).not.toContain('Recipe: styles');
+    expect(compiled.payload.text).not.toContain('Style preset:');
+    expect(compiled.payload.text).not.toContain('ImageGen output size');
+    expect(compiled.payload.imageInputs).toEqual([
+      {
+        type: 'localImage',
+        path: 'D:/AI-Studio-Library/references/job-1/download.jpg',
+      },
+    ]);
+  });
+
   it('includes persisted local asset paths from the durable Generation Task Spec', () => {
     const sourceSpec = createGenerationTaskSpec({
       id: 'spec-refs',
@@ -138,10 +224,22 @@ describe('codexProvider', () => {
     });
 
     expect(compiled.payload.text).toContain('Local assets:');
-    expect(compiled.payload.text).toContain('Input image file: D:/AI-Studio-Library/references/job-1/source.png');
+    expect(compiled.payload.text).toContain(
+      'Input image file: D:/AI-Studio-Library/references/job-1/source.png',
+    );
     expect(compiled.payload.text).toContain(
       'Reference image file: D:/AI-Studio-Library/references/job-1/moodboard.png (moodboard.png, strength 0.40)',
     );
+    expect(compiled.payload.imageInputs).toEqual([
+      {
+        type: 'localImage',
+        path: 'D:/AI-Studio-Library/references/job-1/source.png',
+      },
+      {
+        type: 'localImage',
+        path: 'D:/AI-Studio-Library/references/job-1/moodboard.png',
+      },
+    ]);
   });
 
   it('delegates execution to the Codex Product Runtime with compiled input text', async () => {

@@ -10,7 +10,6 @@ import {
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import {
   createRecipeDefaultParams,
-  getRecipeModule,
   isRecipeTaskSupported,
   listRecipeModules,
   validateRecipeParams,
@@ -52,6 +51,12 @@ export interface EvaluationSession {
   pairs: EvaluationPair[];
 }
 
+export interface EvaluationSummary {
+  totalPairs: number;
+  minDirectiveSavingsPercent: number;
+  failures: string[];
+}
+
 function createBareVariant(spec: GenerationTaskSpec): EvaluationVariant {
   const parts = [`Task: ${spec.task}`, '', 'Prompt:', spec.prompt];
   if (spec.negativePrompt) parts.push('', 'Avoid:', spec.negativePrompt);
@@ -76,7 +81,8 @@ function createBareVariant(spec: GenerationTaskSpec): EvaluationVariant {
 }
 
 function createLegacyVariant(spec: GenerationTaskSpec): EvaluationVariant {
-  const recipeContext = typeof spec.metadata.recipeContext === 'string' ? spec.metadata.recipeContext : '';
+  const recipeContext =
+    typeof spec.metadata.recipeContext === 'string' ? spec.metadata.recipeContext : '';
   const parts = [`Task: ${spec.task}`, '', 'Prompt:', spec.prompt];
   if (recipeContext) parts.push('', 'Recipe instructions:', recipeContext.trim());
   if (spec.negativePrompt) parts.push('', 'Avoid:', spec.negativePrompt);
@@ -105,7 +111,8 @@ function createLegacyVariant(spec: GenerationTaskSpec): EvaluationVariant {
 
 function createDirectivesVariant(spec: GenerationTaskSpec): EvaluationVariant {
   const directives = spec.metadata.recipeProviderDirectives;
-  const recipeContext = typeof spec.metadata.recipeContext === 'string' ? spec.metadata.recipeContext : '';
+  const recipeContext =
+    typeof spec.metadata.recipeContext === 'string' ? spec.metadata.recipeContext : '';
   const serialized = isRecipeProviderDirectives(directives)
     ? serializeRecipeProviderDirectives(directives)
     : '';
@@ -209,9 +216,11 @@ function buildRecipeSpec(module: RecipeModule): GenerationTaskSpec {
 }
 
 export function evaluateRecipePrompts(moduleIds?: string[]): EvaluationSession {
-  const modules = (moduleIds ?? []).length
-    ? moduleIds.map((id) => getRecipeModule(id)).filter(Boolean)
-    : listRecipeModules();
+  const requestedModuleIds = new Set(moduleIds ?? []);
+  const modules =
+    requestedModuleIds.size > 0
+      ? listRecipeModules().filter((module) => requestedModuleIds.has(module.id))
+      : listRecipeModules();
 
   const pairs: EvaluationPair[] = [];
 
@@ -250,6 +259,55 @@ export function evaluateRecipePrompts(moduleIds?: string[]): EvaluationSession {
   };
 }
 
+export function createEvaluationSummary(
+  session: EvaluationSession,
+  { minDirectiveSavingsPercent = 30 } = {},
+): EvaluationSummary {
+  const failures: string[] = [];
+
+  if (session.pairs.length === 0) {
+    failures.push('No recipe prompt evaluation pairs generated.');
+  }
+
+  for (const pair of session.pairs) {
+    const bare = pair.variants.find((variant) => variant.name === 'bare');
+    const legacy = pair.variants.find((variant) => variant.name === 'legacy');
+    const directives = pair.variants.find((variant) => variant.name === 'directives');
+
+    if (!bare || !legacy || !directives) {
+      failures.push(`${pair.recipeId} missing bare/legacy/directives variants.`);
+      continue;
+    }
+    if (!legacy.metadata.usesLegacyContext || legacy.recipeContextChars <= 0) {
+      failures.push(`${pair.recipeId} legacy variant missing Recipe Context.`);
+    }
+    if (!directives.metadata.usesProviderDirectives || directives.recipeDirectivesChars <= 0) {
+      failures.push(`${pair.recipeId} directives variant missing Recipe Provider Directives.`);
+    }
+    if (directives.promptChars >= legacy.promptChars) {
+      failures.push(`${pair.recipeId} directives prompt is not smaller than legacy prompt.`);
+      continue;
+    }
+    if (bare.promptChars >= directives.promptChars) {
+      failures.push(`${pair.recipeId} bare prompt is not smaller than directives prompt.`);
+    }
+
+    const savingsPercent =
+      ((legacy.promptChars - directives.promptChars) / legacy.promptChars) * 100;
+    if (savingsPercent < minDirectiveSavingsPercent) {
+      failures.push(
+        `${pair.recipeId} directives savings ${savingsPercent.toFixed(1)}% < ${minDirectiveSavingsPercent}%.`,
+      );
+    }
+  }
+
+  return {
+    totalPairs: session.pairs.length,
+    minDirectiveSavingsPercent,
+    failures,
+  };
+}
+
 export function writeEvaluationReport(session: EvaluationSession, outputDir: string) {
   mkdirSync(outputDir, { recursive: true });
 
@@ -273,16 +331,28 @@ export function writeEvaluationReport(session: EvaluationSession, outputDir: str
   }
 }
 
-const outputArg = process.argv.find((a) => a.startsWith('--out='))?.split('=')[1];
-const recipeFilter = process.argv
-  .filter((a) => a.startsWith('--recipe='))
-  .map((a) => a.split('=')[1]);
-const isDryRun = process.argv.includes('--dry-run') || !outputArg;
+if (import.meta.main) {
+  const outputArg = process.argv.find((a) => a.startsWith('--out='))?.split('=')[1];
+  const recipeFilter = process.argv
+    .filter((a) => a.startsWith('--recipe='))
+    .map((a) => a.split('=')[1]);
+  const isDryRun = process.argv.includes('--dry-run') || !outputArg;
+  const shouldVerify = process.argv.includes('--verify');
 
-const session = evaluateRecipePrompts(recipeFilter.length ? recipeFilter : undefined);
+  const session = evaluateRecipePrompts(recipeFilter.length ? recipeFilter : undefined);
+  const summary = createEvaluationSummary(session);
 
-if (isDryRun) {
-  console.log(`[eval] dry-run session=${session.sessionId} pairs=${session.pairs.length}`);
-} else {
-  writeEvaluationReport(session, outputArg!);
+  if (isDryRun) {
+    console.log(`[eval] dry-run session=${session.sessionId} pairs=${session.pairs.length}`);
+  } else {
+    writeEvaluationReport(session, outputArg!);
+  }
+
+  if (shouldVerify) {
+    console.log(
+      `[eval] verify pairs=${summary.totalPairs} minSavings=${summary.minDirectiveSavingsPercent}% failures=${summary.failures.length}`,
+    );
+    for (const failure of summary.failures) console.error(`- ${failure}`);
+    if (summary.failures.length > 0) process.exitCode = 1;
+  }
 }

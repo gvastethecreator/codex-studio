@@ -15,7 +15,7 @@ import { addLogEntry } from '../utils/logger';
 import { runtimeLogger } from '../utils/runtimeLogger';
 import { DEFAULT_BACKGROUND_CONFIG } from '../constants';
 import { get, set } from '../utils/idb';
-import type { LogEntry, Workspace, GenerationBatch, BackgroundConfig } from '../types';
+import type { LogEntry, Workspace, BackgroundConfig } from '../types';
 import { createInitialGlobalState, globalReducer } from './globalReducer';
 
 interface GlobalContextType {
@@ -29,31 +29,7 @@ interface GlobalContextType {
   activeWorkspaceId: string;
   setActiveWorkspace: (id: string) => void;
 
-  legacyVisualBatches: GenerationBatch[];
-  prependGeneratedVisualBatch: (
-    batch: GenerationBatch,
-    options?: { maxPerWorkspace?: number },
-  ) => void;
-  mergeLegacyVisualBatches: (
-    batches: GenerationBatch[],
-    options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
-  ) => void;
-  importLegacyVisualBatches: (
-    batches: GenerationBatch[],
-    options?: { ensureWorkspaces?: boolean },
-  ) => void;
-  archiveLegacyVisualBatches: (batches: GenerationBatch[]) => void;
-  deleteLegacyVisualImage: (imageId: string) => void;
-  deleteLegacyVisualImages: (imageIds: string[]) => void;
-  toggleLegacyVisualImageFavorite: (imageId: string) => void;
-  clearLegacyVisualWorkspace: (workspaceId: string) => void;
-  clearAllLegacyVisualBatches: () => void;
   resetStudioState: () => void;
-
-  legacyVisualTrash: GenerationBatch[];
-  restoreLegacyVisualBatchFromTrash: (batchId: string) => void;
-  restoreAllLegacyVisualBatchesFromTrash: () => void;
-  emptyLegacyVisualTrash: () => void;
 
   isBackgroundEnabled: boolean;
   setBackgroundEnabled: (enabled: boolean) => void;
@@ -77,10 +53,6 @@ interface GlobalContextType {
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);
 
-/**
- * Persist a hydrated slice of global state into IndexedDB with a small debounce
- * so rapid UI changes do not spam writes.
- */
 function usePersistedIdbValue<T>(key: string, value: T, isHydrated: boolean) {
   const timeoutRef = useRef<number | null>(null);
 
@@ -114,9 +86,10 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
 
     const hydrate = async () => {
       try {
-        const [logs, workspaces, bgConfig] = await Promise.all([
+        const [logs, workspaces, activeWorkspaceId, bgConfig] = await Promise.all([
           get<LogEntry[]>('session-logs').catch(() => undefined),
           get<Workspace[]>('app-workspaces').catch(() => undefined),
+          get<string>('app-active-workspace-id').catch(() => undefined),
           get<BackgroundConfig>('bg-config').catch(() => undefined),
         ]);
 
@@ -132,8 +105,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
           state: {
             logs: logs ?? [],
             workspaces,
-            legacyVisualBatches: [],
-            legacyVisualTrash: [],
+            activeWorkspaceId,
             bgConfig: bgConfig ?? DEFAULT_BACKGROUND_CONFIG,
             isBackgroundEnabled,
           },
@@ -155,6 +127,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
 
   usePersistedIdbValue('session-logs', state.logs, isHydrated);
   usePersistedIdbValue('app-workspaces', state.workspaces, isHydrated);
+  usePersistedIdbValue('app-active-workspace-id', state.activeWorkspaceId, isHydrated);
   usePersistedIdbValue('bg-config', state.bgConfig, isHydrated);
 
   useEffect(() => {
@@ -187,91 +160,12 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
     dispatch({ type: 'SET_ACTIVE_WORKSPACE', id });
   }, []);
 
-  const prependGeneratedVisualBatch = useCallback(
-    (batch: GenerationBatch, options?: { maxPerWorkspace?: number }) => {
-      dispatch({
-        type: 'PREPEND_GENERATED_VISUAL_BATCH',
-        batch,
-        maxPerWorkspace: options?.maxPerWorkspace,
-      });
-    },
-    [],
-  );
-
-  const mergeLegacyVisualBatches = useCallback(
-    (
-      batches: GenerationBatch[],
-      options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
-    ) => {
-      dispatch({
-        type: 'MERGE_LEGACY_VISUAL_BATCHES',
-        batches,
-        prepend: options?.prepend,
-        maxTotal: options?.maxTotal,
-        ensureWorkspaces: options?.ensureWorkspaces,
-      });
-    },
-    [],
-  );
-
-  const importLegacyVisualBatches = useCallback(
-    (batches: GenerationBatch[], options?: { ensureWorkspaces?: boolean }) => {
-      dispatch({
-        type: 'IMPORT_LEGACY_VISUAL_BATCHES',
-        batches,
-        ensureWorkspaces: options?.ensureWorkspaces,
-      });
-    },
-    [],
-  );
-
-  const archiveLegacyVisualBatches = useCallback((batchesToArchive: GenerationBatch[]) => {
-    dispatch({ type: 'ARCHIVE_LEGACY_VISUAL_BATCHES', batches: batchesToArchive });
-  }, []);
-
-  const deleteLegacyVisualImage = useCallback((imageId: string) => {
-    dispatch({ type: 'DELETE_LEGACY_VISUAL_IMAGE', imageId });
-  }, []);
-
-  const deleteLegacyVisualImages = useCallback((imageIds: string[]) => {
-    dispatch({ type: 'DELETE_LEGACY_VISUAL_IMAGES', imageIds });
-  }, []);
-
-  const toggleLegacyVisualImageFavorite = useCallback((imageId: string) => {
-    dispatch({ type: 'TOGGLE_LEGACY_VISUAL_IMAGE_FAVORITE', imageId });
-  }, []);
-
-  const clearLegacyVisualWorkspace = useCallback((workspaceId: string) => {
-    dispatch({ type: 'CLEAR_LEGACY_VISUAL_WORKSPACE', workspaceId });
-  }, []);
-
-  const clearAllLegacyVisualBatches = useCallback(() => {
-    dispatch({ type: 'CLEAR_ALL_LEGACY_VISUAL_BATCHES' });
-  }, []);
-
   const resetStudioState = useCallback(() => {
     dispatch({ type: 'RESET_STATE' });
   }, []);
 
   const { toasts, addToast, removeToast } = useToasts();
   const { isDebugPanelOpen, toggleDebugPanel, openDebugPanel, closeDebugPanel } = usePanelManager();
-
-  const restoreLegacyVisualBatchFromTrash = useCallback(
-    (batchId: string) => {
-      dispatch({ type: 'RESTORE_LEGACY_VISUAL_BATCH_FROM_TRASH', batchId });
-      addToast('Batch restored from archives', 'success');
-    },
-    [addToast],
-  );
-
-  const restoreAllLegacyVisualBatchesFromTrash = useCallback(() => {
-    dispatch({ type: 'RESTORE_ALL_LEGACY_VISUAL_BATCHES_FROM_TRASH' });
-    addToast('All batches restored from archives', 'success');
-  }, [addToast]);
-
-  const emptyLegacyVisualTrash = useCallback(() => {
-    dispatch({ type: 'EMPTY_LEGACY_VISUAL_TRASH' });
-  }, []);
 
   const setBackgroundEnabled = useCallback((enabled: boolean) => {
     dispatch({ type: 'SET_BACKGROUND_ENABLED', enabled });
@@ -291,21 +185,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       renameWorkspace,
       activeWorkspaceId: state.activeWorkspaceId,
       setActiveWorkspace,
-      legacyVisualBatches: state.legacyVisualBatches,
-      prependGeneratedVisualBatch,
-      mergeLegacyVisualBatches,
-      importLegacyVisualBatches,
-      archiveLegacyVisualBatches,
-      deleteLegacyVisualImage,
-      deleteLegacyVisualImages,
-      toggleLegacyVisualImageFavorite,
-      clearLegacyVisualWorkspace,
-      clearAllLegacyVisualBatches,
       resetStudioState,
-      legacyVisualTrash: state.legacyVisualTrash,
-      restoreLegacyVisualBatchFromTrash,
-      restoreAllLegacyVisualBatchesFromTrash,
-      emptyLegacyVisualTrash,
       isBackgroundEnabled: state.isBackgroundEnabled,
       setBackgroundEnabled,
       bgConfig: state.bgConfig,
@@ -322,8 +202,6 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       state.logs,
       state.workspaces,
       state.activeWorkspaceId,
-      state.legacyVisualBatches,
-      state.legacyVisualTrash,
       state.isBackgroundEnabled,
       state.bgConfig,
       log,
@@ -331,19 +209,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       deleteWorkspace,
       renameWorkspace,
       setActiveWorkspace,
-      prependGeneratedVisualBatch,
-      mergeLegacyVisualBatches,
-      importLegacyVisualBatches,
-      archiveLegacyVisualBatches,
-      deleteLegacyVisualImage,
-      deleteLegacyVisualImages,
-      toggleLegacyVisualImageFavorite,
-      clearLegacyVisualWorkspace,
-      clearAllLegacyVisualBatches,
       resetStudioState,
-      restoreLegacyVisualBatchFromTrash,
-      restoreAllLegacyVisualBatchesFromTrash,
-      emptyLegacyVisualTrash,
       setBackgroundEnabled,
       updateBackgroundConfig,
       toasts,

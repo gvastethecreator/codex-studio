@@ -6,11 +6,23 @@ import {
   type CompiledProviderInput,
   type GenerationTaskSpec,
 } from '../../../../packages/shared/src';
-import { CODEX_IMAGEGEN_SESSION_CONTRACT } from '../codex/imagegenContract';
+import {
+  CODEX_IMAGEGEN_DENOISE_INSTRUCTION,
+  CODEX_IMAGEGEN_SESSION_CONTRACT,
+} from '../codex/imagegenContract';
 import type { CodexTurn } from '../codex/turn';
 import type { GenerationProvider, GenerationProviderJob } from './types';
 
-export type CodexImagegenCompiledInput = CompiledProviderInput<{ text: string }>;
+export { CODEX_IMAGEGEN_DENOISE_INSTRUCTION } from '../codex/imagegenContract';
+
+export type CodexImagegenInputItem =
+  | { type: 'localImage'; path: string }
+  | { type: 'image'; url: string };
+
+export type CodexImagegenCompiledInput = CompiledProviderInput<{
+  text: string;
+  imageInputs: CodexImagegenInputItem[];
+}>;
 
 export function compileCodexImagegenInput(job: GenerationProviderJob): CodexImagegenCompiledInput {
   const sourceSpec =
@@ -22,15 +34,33 @@ export function compileCodexImagegenInput(job: GenerationProviderJob): CodexImag
       prompt: job.prompt,
     });
   const text = buildCodexPromptText(sourceSpec);
+  const imageInputs = buildCodexImageInputs(sourceSpec);
 
   return createCompiledProviderInput({
     providerId: 'codex',
     contract: CODEX_IMAGEGEN_SESSION_CONTRACT,
     sourceSpec,
     payloadKind: 'codex_prompt',
-    payload: { text },
+    payload: { text, imageInputs },
     estimatedPromptChars: text.length,
   });
+}
+
+function buildCodexImageInputs(sourceSpec: GenerationTaskSpec): CodexImagegenInputItem[] {
+  const items: CodexImagegenInputItem[] = [];
+  for (const asset of sourceSpec.assets) {
+    const localPath = asset.localPath?.trim();
+    if (localPath) {
+      items.push({ type: 'localImage', path: localPath });
+      continue;
+    }
+
+    const sourceUrl = asset.sourceUrl?.trim();
+    if (sourceUrl && /^https?:\/\//i.test(sourceUrl)) {
+      items.push({ type: 'image', url: sourceUrl });
+    }
+  }
+  return items;
 }
 
 function getCodexAssetRoleLabel(role: GenerationTaskSpec['assets'][number]['role']) {
@@ -99,14 +129,6 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
     parts.push('', 'Local assets:', ...assetLines);
   }
 
-  if (sourceSpec.recipeId) {
-    parts.push('', `Recipe: ${sourceSpec.recipeId}`);
-  }
-
-  if (sourceSpec.stylePresetId) {
-    parts.push(`Style preset: ${sourceSpec.stylePresetId}`);
-  }
-
   if (sourceSpec.output.imageSize) {
     parts.push(`Image size: ${sourceSpec.output.imageSize}`);
   }
@@ -114,6 +136,8 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
   if (sourceSpec.output.aspectRatio) {
     parts.push(`Aspect ratio: ${sourceSpec.output.aspectRatio}`);
   }
+
+  parts.push('', CODEX_IMAGEGEN_DENOISE_INSTRUCTION);
 
   return parts.join('\n');
 }

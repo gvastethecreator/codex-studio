@@ -45,7 +45,6 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   isLoadingSelectedJob,
   onInspectJob,
   onClearSelectedJob,
-  handleImportVault,
   handleExportWorkspaceSnapshot,
   handleDeepScan,
   apiBase,
@@ -120,7 +119,6 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             onClose={closeDashboard}
             imagesCount={imagesCount}
             workspaces={workspaces}
-            onImportVault={handleImportVault}
             onExportWorkspaceSnapshot={handleExportWorkspaceSnapshot}
             onDeepScan={handleDeepScan}
           />

@@ -17,6 +17,7 @@ import {
   normalizeExternalOutputSourceRegistry,
   sanitizeRegisterExternalOutputSourceInput,
 } from '../../../packages/shared/src';
+import { resolveLibraryPathFromRoot } from './library';
 import type { StudioSettingsStorage } from './studioSettingsStore';
 
 export const EXTERNAL_OUTPUT_SOURCES_KEY = 'external_output_sources';
@@ -341,7 +342,7 @@ export function importExternalOutputSourceFiles({
   }
 
   const maxFiles = clampLimit(input.limit, requestedFiles.length, 100);
-  const destinationDir = path.join(libraryDir, 'assets', 'external', source.id);
+  const destinationDir = resolveLibraryPathFromRoot(libraryDir, 'outputs', 'external', source.id);
   makeDir(destinationDir, { recursive: true });
 
   const imported = [];

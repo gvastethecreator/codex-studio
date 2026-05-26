@@ -51,6 +51,7 @@ describe('buildStudioPageController', () => {
       jobs: [
         {
           id: 'job-1',
+          workspaceId: 'default',
           prompt: 'Neon skyline',
           config: DEFAULT_GENERATION_CONFIG,
           status: 'processing',
@@ -67,7 +68,6 @@ describe('buildStudioPageController', () => {
       clearCompleted: () => {},
       isResting: false,
       exportWorkspaceSnapshot: () => {},
-      handleImportVault: () => {},
       isBackgroundEnabled: true,
       setBackgroundEnabled: () => {},
       activeServerJobCount: 1,

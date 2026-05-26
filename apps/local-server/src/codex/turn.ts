@@ -5,7 +5,7 @@ import { log } from '../logger';
 import { resolvePlatformPath } from '../platformPaths';
 import { createAssetExtractor, type AssetExtractor } from './assetExtractor';
 import { resolveJobExecutionOptions } from './executionOptions';
-import { buildCodexImagegenFallbackPrompt } from './imagegenContract';
+import { buildCodexImagegenTurnInput } from './turnInput';
 import {
   closeImagegenSession,
   getImagegenSession,
@@ -13,7 +13,8 @@ import {
   type SessionHandle,
 } from './sessionPool';
 import type { JsonRpcMessage } from './rpcClient';
-import type { CompiledProviderInput, JobExecutionOptions } from '../../../../packages/shared/src';
+import type { JobExecutionOptions } from '../../../../packages/shared/src';
+import type { CodexImagegenCompiledInput } from '../providers/codexProvider';
 
 const IMAGEGEN_SKILL_PATH = path.join(
   resolvePlatformPath('codex-skills-dir'),
@@ -28,7 +29,7 @@ export interface TurnParams {
   jobId: string;
   sessionKey?: string;
   execution?: JobExecutionOptions | null;
-  compiledInput?: CompiledProviderInput<{ text: string }> | null;
+  compiledInput?: CodexImagegenCompiledInput | null;
   signal?: AbortSignal;
 }
 
@@ -140,7 +141,7 @@ async function runCodexImagegenTurn(
     prompt: string;
     projectId: string;
     execution?: JobExecutionOptions | null;
-    compiledInput?: CompiledProviderInput<{ text: string }> | null;
+    compiledInput?: CodexImagegenCompiledInput | null;
   },
   transcriptPath: string,
   startedAt: number,
@@ -161,14 +162,11 @@ async function runCodexImagegenTurn(
   const turn = await raceWithAbort(
     session.client.request('turn/start', {
       threadId: session.threadId,
-      input: [
-        { type: 'skill', name: 'imagegen', path: dependencies.imagegenSkillPath },
-        {
-          type: 'text',
-          text: job.compiledInput?.payload.text ?? buildCodexImagegenFallbackPrompt(job.prompt),
-          text_elements: [],
-        },
-      ],
+      input: buildCodexImagegenTurnInput({
+        imagegenSkillPath: dependencies.imagegenSkillPath,
+        fallbackPrompt: job.prompt,
+        compiledInput: job.compiledInput ?? null,
+      }),
       cwd: dependencies.resolveProcessCwd(),
       approvalPolicy: 'never',
       model: executionOptions.model,
@@ -264,7 +262,7 @@ async function runImagegenJob(
     prompt: string;
     projectId: string;
     execution?: JobExecutionOptions | null;
-    compiledInput?: CompiledProviderInput<{ text: string }> | null;
+    compiledInput?: CodexImagegenCompiledInput | null;
     signal?: AbortSignal;
   },
   dependencies: ResolvedCodexTurnDependencies,

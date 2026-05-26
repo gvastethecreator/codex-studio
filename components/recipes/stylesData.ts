@@ -3,7 +3,7 @@ import {
   loadGeneratedStylePack,
   loadGeneratedStylePacks,
 } from './styleRuntimeData.generated';
-import type { StylePack, StylePresetDef } from './styles/types';
+import type { StyleRuntimePack, StyleRuntimePreset } from './styles/types';
 
 export const STYLE_PACK_SUMMARIES = GENERATED_STYLE_PACK_SUMMARIES;
 
@@ -11,8 +11,8 @@ export const loadStylePack = loadGeneratedStylePack;
 export const loadStylePacks = loadGeneratedStylePacks;
 
 export async function loadStylePresetIndex(): Promise<{
-  packs: StylePack[];
-  presetById: Map<string, StylePresetDef>;
+  packs: StyleRuntimePack[];
+  presetById: Map<string, StyleRuntimePreset>;
   presetPackIdById: Map<string, string>;
 }> {
   const packs = await loadStylePacks();

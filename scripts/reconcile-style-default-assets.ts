@@ -1,6 +1,7 @@
 import { mkdir, readFile, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { Database } from 'bun:sqlite';
+import { resolveLibraryPathFromRoot } from '../apps/local-server/src/library';
 import {
   buildStyleDefaultPresetIndex,
   createStyleDefaultManifestEntry,
@@ -26,7 +27,7 @@ interface JobAssetRow {
 }
 
 const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
-const dbPath = path.join(libraryDir, 'library.sqlite');
+const dbPath = resolveLibraryPathFromRoot(libraryDir, 'library.sqlite');
 const dryRun = process.argv.includes('--dry-run');
 const sinceArg = process.argv.find((arg) => arg.startsWith('--since='))?.slice('--since='.length);
 const sinceTime = sinceArg ? Date.parse(sinceArg) : Number.NEGATIVE_INFINITY;

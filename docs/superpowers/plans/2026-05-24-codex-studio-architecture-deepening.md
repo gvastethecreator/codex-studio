@@ -96,7 +96,7 @@ Expected: FAIL because `lib/studioCatalogView.ts` does not exist.
 
 - [ ] **Step 3: Implement `studioCatalogView` as the pure Catalog Entry Module**
 
-Expose `createCatalogView(entries)`, `filterCatalogEntries(view, filters)`, and `materializeVisualBatchesFromCatalog(view)` by reusing the existing `materializeVisualBatchImage` logic internally.
+Expose `createCatalogView(entries)` and `filterCatalogEntries(view, filters)`, with any legacy snapshot export isolated behind explicit compatibility helpers.
 
 - [ ] **Step 4: Run focused test and verify GREEN**
 

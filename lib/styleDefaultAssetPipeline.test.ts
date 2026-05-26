@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vite-plus/test';
-import type { StylePack } from '../components/recipes/styles/types';
+import type { StyleRuntimePack } from '../components/recipes/styles/runtimeTypes';
 import {
   buildStyleDefaultPresetIndex,
   createStyleDefaultEvidence,
@@ -11,7 +11,7 @@ import {
   resolveStyleDefaultPresetFromPrompt,
 } from './styleDefaultAssetPipeline';
 
-const pack: StylePack = {
+const pack: StyleRuntimePack = {
   id: 'pack_99',
   name: 'Test Pack',
   description: 'Test style pack',

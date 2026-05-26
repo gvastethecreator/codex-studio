@@ -1,31 +1,32 @@
 import { useCallback, useEffect, useRef } from 'react';
-import type { GenerationBatch, Toast } from '../types';
-import { collectRecoverableBatches } from '../lib/studioStorageRecovery';
+import type { Toast } from '../types';
+import { collectRecoverableLegacyVisualSnapshot } from '../lib/studioStorageRecovery';
+import type { LegacyVisualBatchSnapshot } from '../lib/studioLegacyVisualSnapshotImport';
 import { getAllEntries } from '../utils/idb';
 
-type MergeLegacyVisualBatches = (
-  batches: GenerationBatch[],
+export type ImportRecoveredLegacyVisualSnapshot = (
+  snapshot: LegacyVisualBatchSnapshot,
   options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
 ) => void;
 
 interface UseStudioStorageRecoveryProps {
-  legacyVisualBatches: GenerationBatch[];
-  mergeLegacyVisualBatches: MergeLegacyVisualBatches;
+  existingLegacyVisualBatchIds: string[];
+  importRecoveredLegacyVisualSnapshot: ImportRecoveredLegacyVisualSnapshot;
   addToast: (message: string, type: Toast['type']) => void;
   log: (message: string) => void;
 }
 
 export function useStudioStorageRecovery({
-  legacyVisualBatches,
-  mergeLegacyVisualBatches,
+  existingLegacyVisualBatchIds,
+  importRecoveredLegacyVisualSnapshot,
   addToast,
   log,
 }: UseStudioStorageRecoveryProps) {
-  const legacyVisualBatchesRef = useRef(legacyVisualBatches);
+  const existingLegacyVisualBatchIdsRef = useRef(existingLegacyVisualBatchIds);
 
   useEffect(() => {
-    legacyVisualBatchesRef.current = legacyVisualBatches;
-  }, [legacyVisualBatches]);
+    existingLegacyVisualBatchIdsRef.current = existingLegacyVisualBatchIds;
+  }, [existingLegacyVisualBatchIds]);
 
   const recoverOrphanedBatches = useCallback(async () => {
     addToast('Starting workspace recovery scan...', 'info');
@@ -39,14 +40,14 @@ export function useStudioStorageRecovery({
           value: key ? localStorage.getItem(key) : null,
         };
       });
-      const uniqueRecovered = collectRecoverableBatches({
+      const uniqueRecovered = collectRecoverableLegacyVisualSnapshot({
         idbEntries,
         storageEntries,
-        existingBatchIds: legacyVisualBatchesRef.current.map((batch) => batch.id),
+        existingBatchIds: existingLegacyVisualBatchIdsRef.current,
       });
 
       if (uniqueRecovered.length > 0) {
-        mergeLegacyVisualBatches(uniqueRecovered, {
+        importRecoveredLegacyVisualSnapshot(uniqueRecovered, {
           prepend: true,
           maxTotal: 100,
           ensureWorkspaces: true,
@@ -65,7 +66,7 @@ export function useStudioStorageRecovery({
       );
       addToast('Workspace recovery scan failed', 'error');
     }
-  }, [addToast, log, mergeLegacyVisualBatches]);
+  }, [addToast, importRecoveredLegacyVisualSnapshot, log]);
 
   return {
     recoverOrphanedBatches,

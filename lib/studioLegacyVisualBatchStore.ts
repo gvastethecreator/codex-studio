@@ -1,4 +1,4 @@
-import type { GenerationBatch } from '../types';
+import type { LegacyVisualBatchSnapshot } from './studioLegacyVisualBatchTypes';
 
 export const LEGACY_VISUAL_BATCH_CACHE_KEYS = ['catalog-cache', 'catalog-trash'] as const;
 
@@ -10,7 +10,7 @@ function isRecord(value: unknown): value is Record<string, unknown> {
  * Validate legacy Visual Batch snapshot payloads at import/recovery edges only.
  * Durable image truth lives in SQLite Catalog Entries.
  */
-export function validateLegacyVisualBatchVault(data: unknown): data is GenerationBatch[] {
+export function validateLegacyVisualBatchVault(data: unknown): data is LegacyVisualBatchSnapshot {
   if (!Array.isArray(data)) return false;
 
   return data.every((batch) => {

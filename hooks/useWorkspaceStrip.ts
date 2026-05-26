@@ -1,8 +1,8 @@
-import { useCallback, useMemo } from 'react';
+import { useCallback, useEffect, useMemo } from 'react';
 import type { CatalogImage } from '../packages/shared/src';
 import type { StudioCatalogView } from '../lib/studioCatalogView';
 import { toStudioAssetUrl } from '../services/localStudioService';
-import type { GenerationBatch, Workspace } from '../types';
+import type { Workspace } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
 
 export interface WorkspaceWithThumbs extends Workspace {
@@ -13,7 +13,6 @@ export interface WorkspaceWithThumbs extends Workspace {
 interface UseWorkspaceStripProps {
   workspaces: Workspace[];
   catalogView?: StudioCatalogView;
-  legacyVisualBatches?: GenerationBatch[];
   createWorkspace: (workspace: Workspace, options?: { activate?: boolean }) => void;
   deleteWorkspace: (id: string) => void;
   renameWorkspace: (id: string, name: string) => void;
@@ -24,7 +23,6 @@ interface UseWorkspaceStripProps {
 interface BuildWorkspacesWithThumbsOptions {
   workspaces: Workspace[];
   catalogView?: StudioCatalogView;
-  legacyVisualBatches?: GenerationBatch[];
 }
 
 function belongsToWorkspace(workspaceId: string, entryWorkspaceId?: string | null) {
@@ -35,10 +33,44 @@ function resolveCatalogThumb(entry: CatalogImage) {
   return toStudioAssetUrl(entry.thumbnailUrl || entry.publicUrl);
 }
 
+function parseCatalogWorkspaceCreatedAt(entry: CatalogImage) {
+  const createdAt = Date.parse(entry.createdAt);
+  return Number.isFinite(createdAt) ? createdAt : Date.now();
+}
+
+export function mergeWorkspacesWithCatalogEntries(
+  workspaces: Workspace[],
+  catalogView?: StudioCatalogView,
+): Workspace[] {
+  if (!catalogView) {
+    return workspaces;
+  }
+
+  const existingIds = new Set(workspaces.map((workspace) => workspace.id));
+  const catalogDerivedWorkspaces: Workspace[] = [];
+
+  for (const entry of catalogView.entries) {
+    const workspaceId = entry.workspaceId || 'default';
+    if (existingIds.has(workspaceId)) {
+      continue;
+    }
+
+    existingIds.add(workspaceId);
+    catalogDerivedWorkspaces.push({
+      id: workspaceId,
+      createdAt: parseCatalogWorkspaceCreatedAt(entry),
+      name: workspaceId === 'default' ? undefined : `Imported (${workspaceId.slice(-4)})`,
+    });
+  }
+
+  return catalogDerivedWorkspaces.length > 0
+    ? [...workspaces, ...catalogDerivedWorkspaces]
+    : workspaces;
+}
+
 export function buildWorkspacesWithThumbs({
   workspaces,
   catalogView,
-  legacyVisualBatches = [],
 }: BuildWorkspacesWithThumbsOptions): WorkspaceWithThumbs[] {
   if (catalogView) {
     return workspaces.map((workspace) => {
@@ -55,24 +87,11 @@ export function buildWorkspacesWithThumbs({
     });
   }
 
-  return workspaces.map((workspace) => {
-    const workspaceBatches = legacyVisualBatches.filter(
-      (batch) =>
-        batch.workspaceId === workspace.id || (!batch.workspaceId && workspace.id === 'default'),
-    );
-    const sortedBatches = [...workspaceBatches].sort(
-      (left, right) => right.createdAt - left.createdAt,
-    );
-    const lastBatch = sortedBatches[0];
-    const lastImage = lastBatch?.images[0]?.thumbnail || lastBatch?.images[0]?.src;
-    const imageCount = workspaceBatches.reduce((total, batch) => total + batch.images.length, 0);
-
-    return {
-      ...workspace,
-      lastImage,
-      imageCount,
-    };
-  });
+  return workspaces.map((workspace) => ({
+    ...workspace,
+    lastImage: undefined,
+    imageCount: 0,
+  }));
 }
 
 /**
@@ -82,16 +101,38 @@ export function buildWorkspacesWithThumbs({
 export function useWorkspaceStrip({
   workspaces,
   catalogView,
-  legacyVisualBatches = [],
   createWorkspace,
   deleteWorkspace,
   renameWorkspace,
   addToast,
   onRequestDeleteWorkspace,
 }: UseWorkspaceStripProps) {
+  const syncedWorkspaces = useMemo(
+    () => mergeWorkspacesWithCatalogEntries(workspaces, catalogView),
+    [catalogView, workspaces],
+  );
+
+  useEffect(() => {
+    if (syncedWorkspaces.length === workspaces.length) {
+      return;
+    }
+
+    const existingIds = new Set(workspaces.map((workspace) => workspace.id));
+    syncedWorkspaces.forEach((workspace) => {
+      if (existingIds.has(workspace.id)) {
+        return;
+      }
+
+      createWorkspace(workspace, { activate: false });
+    });
+  }, [createWorkspace, syncedWorkspaces, workspaces]);
+
   const workspacesWithThumbs = useMemo<WorkspaceWithThumbs[]>(() => {
-    return buildWorkspacesWithThumbs({ workspaces, catalogView, legacyVisualBatches });
-  }, [catalogView, legacyVisualBatches, workspaces]);
+    return buildWorkspacesWithThumbs({
+      workspaces: syncedWorkspaces,
+      catalogView,
+    });
+  }, [catalogView, syncedWorkspaces]);
 
   const handleAddWorkspace = useCallback(() => {
     startViewTransition(() => {

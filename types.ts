@@ -90,6 +90,7 @@ export type QueueJobStatus = 'pending' | 'processing' | 'completed' | 'failed' |
 export interface QueueJob {
   id: string;
   prompt: string;
+  workspaceId: string;
   config: ImageGenerationConfig;
   status: QueueJobStatus;
   serverJobId?: string | null;

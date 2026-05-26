@@ -33,6 +33,7 @@ interface StudioHeaderToolbarOverlayContext {
 interface StudioHeaderToolbarCommandCenterContext {
   activeProviderId: HeaderToolbarProps['activeProviderId'];
   runtimeStatus: HeaderToolbarProps['runtimeStatus'];
+  queueResultPreviews: HeaderToolbarProps['queueResultPreviews'];
   queueCount: HeaderToolbarProps['queueCount'];
   isQueueOpen: HeaderToolbarProps['isQueueOpen'];
   onToggleQueue: HeaderToolbarProps['onToggleQueue'];
@@ -62,7 +63,13 @@ export function buildStudioHeaderToolbarProps({
     isGenerating: view.isGenerating,
     workspaces: workspace.workspaces,
     activeWorkspaceId: workspace.activeWorkspaceId,
-    onSwitchWorkspace: (workspaceId) => startTransition(() => workspace.setActiveWorkspace(workspaceId)),
+    onSwitchWorkspace: (workspaceId) =>
+      startTransition(() => {
+        workspace.setActiveWorkspace(workspaceId);
+        if (view.currentView !== 'studio') {
+          view.onViewChange('studio');
+        }
+      }),
     onAddWorkspace: workspace.onAddWorkspace,
     onDeleteWorkspace: workspace.onDeleteWorkspace,
     onRenameWorkspace: workspace.onRenameWorkspace,
@@ -78,6 +85,7 @@ export function buildStudioHeaderToolbarProps({
     usage: view.usage,
     activeProviderId: commandCenter.activeProviderId,
     runtimeStatus: commandCenter.runtimeStatus,
+    queueResultPreviews: commandCenter.queueResultPreviews,
     queueCount: commandCenter.queueCount,
     isQueueOpen: commandCenter.isQueueOpen,
     onToggleQueue: commandCenter.onToggleQueue,

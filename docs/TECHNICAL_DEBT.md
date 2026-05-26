@@ -9,27 +9,37 @@ Este documento enumera la deuda técnica que sigue siendo relevante tras la actu
    - Próximo paso recomendado: seguir empujando wiring hacia `useStudioRuntime`, shells más pequeños y controladores de overlays más específicos.
 
 2. **Migración completa del cache visual hacia consulta directa del catálogo**
-   - La UI todavía persiste `GenerationBatch[]` en IndexedDB bajo `catalog-cache`, aunque SQLite/Image Catalog ya son la fuente duradera de verdad.
-   - Avance 2026-05-25: `lib/studioCatalogView.ts` ya es un read model puro de Catalog Entries, y `lib/studioCatalogVisualBatchAdapter.ts` concentra la materialización transitoria a Visual Batch.
+   - La UI ya no persiste el cache visual activo `GenerationBatch[]` en IndexedDB; `catalog-cache`/`catalog-trash` quedan como claves legacy de recovery mientras el grid aun usa Visual Batches en memoria.
+   - Avance 2026-05-26: `legacyVisualBatches` extraido de `GlobalContext` a `LegacyVisualBatchContext`; luego reducido a registro de ids (`legacyVisualBatchIds`) para dedupe de recovery y append generado. Provider tree: `GlobalProvider > LegacyVisualBatchProvider > GenerationProvider`. `GlobalContext` reducido a logs, workspaces, bg config, toasts, debug panel.
+   - Avance 2026-05-26: `legacyVisualTrash` eliminado de `GlobalState`/reducer/context — nunca era leido externamente, solo usado internamente para acciones espejo. `archiveLegacyVisualBatches`, `restoreLegacyVisualBatchFromTrash`, `restoreAllLegacyVisualBatchesFromTrash`, `emptyLegacyVisualTrash` removidos.
+   - Avance 2026-05-26: `useStudioShell` ya no materializa `catalogVisualBatches: GenerationBatch[]` — usa `catalogVisualGroupCount: number` directo del `StudioCatalogView`. `useStudioOverlayController` recibe `catalogVisualGroupCount: number`.
+   - Avance 2026-05-26: `studioCatalogVisualBatchAdapter` eliminado. La materializacion de imagenes de UI vive en `studioCatalogImageAdapter`; el snapshot legacy `GenerationBatch[]` vive en `studioLegacyVisualSnapshotExport`.
+   - Avance 2026-05-26: `studioVisualBatchCatalog` eliminado. Los helpers catalog-first de imagen viven en `studioCatalogImageAdapter`; la materializacion `GenerationBatch[]` ya no tiene modulo generico.
+   - Avance 2026-05-26: recovery ya no pasa `GenerationBatch[]` por `useStudioRuntime`; recibe ids existentes y emite `LegacyVisualBatchSnapshot` solo por el callback legacy.
+   - Avance 2026-05-26: `runLocalGeneration` ya no devuelve `GenerationBatch`; devuelve datos locales derivados del catálogo y el batch legacy se construye solo en `localGenerationVisualBatchCompat`.
+   - Avance 2026-05-26: `LegacyVisualBatchContext` ya expone `prependGeneratedLegacyVisualBatch` y el reducer usa `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_ID`, evitando conservar snapshots completos en memoria.
+   - Avance 2026-05-25: `lib/studioCatalogView.ts` ya es un read model puro de Catalog Entries.
    - Avance 2026-05-25: `useStudioGallery` ya puede construir `imagesWithConfig` desde Catalog Entries cuando recibe `StudioCatalogView`; `useImageManager` también puede recibir imágenes materializadas desde Catalog Entries para selección/delete/select-all/clear counts. Visual Batches siguen como fallback compat.
    - Avance 2026-05-25: `useWorkspaceStrip` ya calcula thumbnails y counts desde `StudioCatalogView` cuando está disponible; `GenerationBatch[]` queda como fallback legacy.
    - Avance 2026-05-25: `TrashModal` ya recibe grupos archivados derivados de Catalog Entries mediante `buildArchivedImageGroupsFromCatalog()` en lugar de `GenerationBatch[]`.
    - Avance 2026-05-25: `DashboardModal` ya recibe `imagesCount` derivado del catálogo y callback de export, sin depender de `GenerationBatch[]` para display.
    - Avance 2026-05-25: `useVaultTransfer` ya exporta workspace snapshots mediante `buildLegacyVisualBatchSnapshot()` para marcar el borde `GenerationBatch[]` como compatibilidad legacy; ZIP images siguen prefiriendo `StudioCatalogView`.
    - Avance 2026-05-25: `studioLegacyVisualBatchStore` concentra keys `catalog-cache`/`catalog-trash` y validación de snapshots legacy; `catalog:source:verify` bloquea que esos strings se dispersen.
-   - Avance 2026-05-25: `GlobalContext` ya expone `importLegacyVisualBatches`/`archiveLegacyVisualBatches` y el reducer usa acciones legacy explícitas para import/archive.
-   - Avance 2026-05-25: recovery/runtime ya usan `mergeLegacyVisualBatches` y acción `MERGE_LEGACY_VISUAL_BATCHES`; no queda API pública genérica `mergeBatches`.
-   - Avance 2026-05-25: generation pipeline ya usa `prependGeneratedVisualBatch` y acción `PREPEND_GENERATED_VISUAL_BATCH`; no queda API pública genérica `prependBatch`.
-   - Avance 2026-05-25: `GlobalContext` ya expone `legacyVisualBatches`/`legacyVisualTrash` en lugar de `batches`/`trash` genéricos.
-   - Avance 2026-05-25: `GlobalState` interno ya guarda `legacyVisualBatches`/`legacyVisualTrash`, y las acciones delete/favorite/clear/restore/empty restantes ya usan nombres `LEGACY_VISUAL`.
-   - Avance 2026-05-25: gallery, workspace strip y vault transfer reciben `catalogView` como camino primario y `legacyVisualBatches` solo como fallback explícito.
-   - Avance 2026-05-25: storage recovery recibe `legacyVisualBatches` explícito, y overlay/page controller usan `catalogVisualGroupCount`/`visualGroupsCount` para no presentar el conteo de catálogo como batch legacy.
+   - Avance 2026-05-26: la importación visible de snapshot JSON legacy fue removida; ese formato queda export-only y las imagenes entran por External Output Sources.
+   - Avance 2026-05-26: recovery/runtime ya usan `REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_IDS`; no queda API pública genérica `mergeBatches`.
+   - Avance 2026-05-26: generation pipeline ya usa `prependGeneratedLegacyVisualBatch` pero el reducer registra solo ids con `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_ID`; no queda API pública genérica `prependBatch`.
+   - Avance 2026-05-26: `GlobalContext` ya no expone `legacyVisualBatches`/`legacyVisualTrash`; el context legacy expone solo `legacyVisualBatchIds` y acciones mínimas de compatibilidad.
+   - Avance 2026-05-26: `GlobalState` ya no guarda `legacyVisualBatches`/`legacyVisualTrash`; los mirrors delete/favorite legacy fueron removidos.
+   - Avance 2026-05-26: gallery, workspace strip y vault transfer reciben `catalogView` como camino primario; ya no aceptan `legacyVisualBatches` como fallback.
+   - Avance 2026-05-26: storage recovery recibe ids legacy explícitos, y overlay/page controller usan `catalogVisualGroupCount`/`visualGroupsCount` para no presentar el conteo de catálogo como batch legacy.
    - Avance 2026-05-25: `useCatalog` ya no materializa `visualBatches`; expone solo Catalog Entries y `StudioCatalogView`. La materialización `GenerationBatch[]` queda localizada en el shell como edge de compatibilidad.
    - Guard 2026-05-25: `catalog:source:verify` corre dentro de `validate:full` y evita que `StudioCatalogView` vuelva a importar `GenerationBatch`/adapters visuales o que `useCatalog` lea `catalog-cache`.
+   - Guard 2026-05-26: `catalog:source:verify` tambien bloquea que `LegacyVisualBatchContext` vuelva a usar `useIndexedDBStorage`, `catalog-cache`, `catalog-trash` o acceso directo a `utils/idb`.
    - Próximo paso recomendado: cerrar la brecha descrita por ADR-0013 reduciendo shell `catalogVisualBatches` y los últimos helpers `GenerationBatch[]` cuando grid/export puedan consumir Catalog Entries directamente.
 
 3. **Completar las costuras de inyección de dependencias en backend**
    - `appFactory.ts` ya admite seams útiles, pero módulos como `db`, `logger`, partes del worker y algunos flujos Codex siguen apoyándose en singletons/globales.
+   - Avance 2026-05-26: `providers:source:verify` bloquea que rutas y módulos backend no-provider importen compilers/executors concretos; la ejecución queda detrás de `apps/local-server/src/providers/`.
    - Próximo paso recomendado: extender ADR-0014 para habilitar tests aislados de catálogo, worker y lifecycle.
 
 ## Prioridad media
@@ -73,8 +83,11 @@ Este documento enumera la deuda técnica que sigue siendo relevante tras la actu
    - Cuando avance ADR-0013 hará falta documentar con más detalle cómo migrarán Workspaces, Vault y filtros cuando el grid consuma el catálogo sin `GenerationBatch[]`.
 
 3. **Retiro final de pack YAML legacy**
-   - Los presets reales ya viven en manifests granulares, y `styles:source:verify` bloquea presets legacy-only, pero `components/recipes/styles/packs/*.yaml` sigue versionado como entrada de migración/compatibilidad.
-   - Próximo paso recomendado: eliminar o mover esos packs legacy cuando el script de migración y tests de compatibilidad dejen de necesitarlos.
+   - Cerrado 2026-05-26: los presets reales viven en manifests granulares y los YAML monolíticos de `scripts/style-migration/legacy-packs/` fueron eliminados. `styles:source:verify` falla si reaparecen YAML legacy allí o en `components/recipes/styles/packs/`.
+   - Cerrado 2026-05-26: `style-default-utils` ya no tiene fallback YAML legacy; `audit-style-category-bases` consume manifests compuestos y los helpers viejos de expand/reorder quedaron como guards no destructivos.
+   - Cerrado 2026-05-26: nuevos nombres explícitos `StyleRuntimePack` / `StyleRuntimePreset` y composer `composeStyleRuntimePacksFromManifests()` cubren UI Styles, runtime helpers, default asset pipeline y scripts de defaults/render.
+   - Cerrado 2026-05-26: aliases runtime viejos `StylePack`, `StylePresetDef` y `composeStylePacksFromManifests()` retirados; `styles:source:verify` los bloquea fuera del guard/test de source audit.
+   - Próximo paso recomendado: reducir referencias documentales a `STYLE_PACKS` cuando las surfaces antiguas consuman directamente catálogos/manifests.
 
 ## Cerrado recientemente
 

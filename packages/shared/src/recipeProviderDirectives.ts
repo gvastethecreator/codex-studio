@@ -81,7 +81,6 @@ export function isRecipeProviderDirectives(value: unknown): value is RecipeProvi
 
 export function serializeRecipeProviderDirectives(directives: RecipeProviderDirectives) {
   return [
-    `Recipe Module: ${directives.title} (${directives.recipeId})`,
     ...directives.sections.flatMap((section) => [
       `${section.title}:`,
       ...section.directives.map((directive) => `- ${directive.label}: ${directive.value}`),

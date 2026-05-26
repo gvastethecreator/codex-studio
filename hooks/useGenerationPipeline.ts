@@ -2,25 +2,32 @@ import { useState, useCallback } from 'react';
 import type {
   Attachment,
   ImageGenerationConfig,
-  GenerationBatch,
   GeneratedImageWithConfig,
   RecipeId,
 } from '../types';
 import type { Job as StudioJob } from '../packages/shared/src';
 import { startViewTransition } from '../utils/transitionUtils';
-import { runLocalGeneration } from '../services/localGenerationRun';
+import { runLocalGeneration, type LocalGenerationRunResult } from '../services/localGenerationRun';
 
 interface GenerationOptions {
   preventModal?: boolean;
+  workspaceId?: string;
   signal?: AbortSignal;
   onJobCreated?: (job: StudioJob) => void;
+}
+
+export function resolveGenerationWorkspaceId(
+  activeWorkspaceId: string,
+  workspaceIdOverride?: string,
+) {
+  return workspaceIdOverride ?? activeWorkspaceId;
 }
 
 interface UseGenerationPipelineProps {
   generationConfig: ImageGenerationConfig;
   activeWorkspaceId: string;
-  prependGeneratedVisualBatch: (
-    batch: GenerationBatch,
+  appendLocalGenerationResult: (
+    result: LocalGenerationRunResult,
     options?: { maxPerWorkspace?: number },
   ) => void;
   addToast: (msg: string, type: 'success' | 'error' | 'info') => void;
@@ -33,7 +40,7 @@ interface UseGenerationPipelineProps {
 export const useGenerationPipeline = ({
   generationConfig,
   activeWorkspaceId,
-  prependGeneratedVisualBatch,
+  appendLocalGenerationResult,
   addToast,
   log,
   activeRecipe,
@@ -84,6 +91,7 @@ export const useGenerationPipeline = ({
       const configToUse = { ...generationConfig, ...configOverrides };
       const startTime = beginRun(configToUse);
       const recipeId = configToUse.recipeId ?? activeRecipe;
+      const workspaceId = resolveGenerationWorkspaceId(activeWorkspaceId, options?.workspaceId);
 
       try {
         // Validate Recipe Requirements
@@ -91,21 +99,22 @@ export const useGenerationPipeline = ({
           throw new Error('This recipe needs a reference image or a prompt before it can run.');
         }
 
-        const { batch, generatedCount } = await runLocalGeneration({
+        const result = await runLocalGeneration({
           config: configToUse,
-          workspaceId: activeWorkspaceId,
+          workspaceId,
           signal: options?.signal,
           onJobCreated: options?.onJobCreated,
           onProgress: log,
         });
+        const { batchId, generatedCount, images } = result;
 
         startViewTransition(() => {
-          prependGeneratedVisualBatch(batch);
+          appendLocalGenerationResult(result);
         });
 
-        if (batch.images.length > 0 && !options?.preventModal) {
+        if (images.length > 0 && !options?.preventModal) {
           const resultImage = {
-            ...batch.images[0],
+            ...images[0],
             config: configToUse,
           } as GeneratedImageWithConfig;
           openModal(resultImage);
@@ -113,7 +122,7 @@ export const useGenerationPipeline = ({
         }
 
         const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-        log(`Generated batch: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
+        log(`Generated local result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`);
         addToast(
           `Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`,
           'success',
@@ -128,7 +137,7 @@ export const useGenerationPipeline = ({
       generationConfig,
       activeWorkspaceId,
       activeRecipe,
-      prependGeneratedVisualBatch,
+      appendLocalGenerationResult,
       addToast,
       log,
       openModal,
@@ -164,7 +173,7 @@ export const useGenerationPipeline = ({
       const startTime = beginRun(configToUse);
 
       try {
-        const { batch, generatedCount } = await runLocalGeneration({
+        const result = await runLocalGeneration({
           workspaceId: activeWorkspaceId,
           config: configToUse,
           inputImage: {
@@ -178,15 +187,15 @@ export const useGenerationPipeline = ({
             ].join('\n'),
           },
         });
+        const { batchId, generatedCount } = result;
 
         startViewTransition(() => {
-          prependGeneratedVisualBatch(batch, { maxPerWorkspace: 20 });
+          appendLocalGenerationResult(result, { maxPerWorkspace: 20 });
         });
 
         const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-        log(`Generated edit batch: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
+        log(`Generated edit result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`);
         addToast('Image edit complete', 'success');
-        return batch;
       } catch (error) {
         handleGenerationError(error);
       } finally {
@@ -196,7 +205,7 @@ export const useGenerationPipeline = ({
     [
       generationConfig,
       activeWorkspaceId,
-      prependGeneratedVisualBatch,
+      appendLocalGenerationResult,
       addToast,
       log,
       beginRun,

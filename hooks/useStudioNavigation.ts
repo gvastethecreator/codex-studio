@@ -24,6 +24,13 @@ interface UseStudioNavigationProps {
   closeOverlay: () => void;
 }
 
+export function shouldCloseModalForOverlay(
+  routeOverlay: HashRouterState['overlay'],
+  isModalOpen: boolean,
+) {
+  return routeOverlay !== 'modal' && isModalOpen;
+}
+
 /**
  * Synchronize page navigation with recipe selection and overlay visibility so
  * the app shell consumes one navigation module instead of scattered effects.
@@ -86,13 +93,10 @@ export function useStudioNavigation({
       }
 
       if (route.overlay === 'modal') {
-        if (!modalImage) {
-          closeOverlay();
-        }
         return;
       }
 
-      if (isModalOpen) {
+      if (shouldCloseModalForOverlay(route.overlay, isModalOpen)) {
         closeModal();
       }
 

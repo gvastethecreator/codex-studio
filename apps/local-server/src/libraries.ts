@@ -3,7 +3,7 @@ import { mkdirSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings } from './config';
 import { getDb } from './db';
-import { LIBRARY_FOLDERS } from './library';
+import { LIBRARY_FOLDERS, resolveLibraryPathFromRoot } from './library';
 
 export interface StudioLibrary {
   id: string;
@@ -30,7 +30,7 @@ function mapLibrary(row: any): StudioLibrary {
 export function ensureLibraryStructure(libraryPath: string) {
   mkdirSync(libraryPath, { recursive: true });
   for (const folder of LIBRARY_FOLDERS) {
-    mkdirSync(path.join(libraryPath, folder), { recursive: true });
+    mkdirSync(resolveLibraryPathFromRoot(libraryPath, folder), { recursive: true });
   }
 }
 

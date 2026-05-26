@@ -9,6 +9,10 @@ import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
 
 export interface HeaderToolbarProps {
+  queueResultPreviews?: Array<{
+    id: string;
+    src: string;
+  }>;
   isGenerating: boolean;
   workspaces: (Workspace & { imageCount?: number })[];
   activeWorkspaceId: string;
@@ -67,12 +71,16 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
   usage,
   activeProviderId,
   runtimeStatus,
+  queueResultPreviews = [],
   queueCount,
   isQueueOpen,
   onToggleQueue,
   onOpenSettings,
 }) => {
   const activeRecipeData = activeRecipe ? RECIPE_DATA[activeRecipe] : null;
+  const activeWorkspace = workspaces.find((w) => w.id === activeWorkspaceId);
+  const workspaceLabel = activeWorkspace?.name || 'Studio';
+  const hasQueueResultPreviews = queueResultPreviews.length > 0;
   const runtimeToneClass =
     runtimeStatus.tone === 'success'
       ? 'border-emerald-500/20 bg-emerald-500/8 text-emerald-200'
@@ -144,13 +152,13 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
               </div>
             </div>
           ) : (
-            <div className="flex items-center p-1 bg-white/5 rounded-xl border border-white/5">
+            <div className="flex items-center gap-2 p-1 bg-white/5 rounded-xl border border-white/5">
               <button
                 onClick={() => onViewChange('studio')}
                 style={{ viewTransitionName: 'nav-studio' } as React.CSSProperties}
                 className={`vt-nav-studio px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer ${currentView === 'studio' ? 'bg-zinc-800 text-white shadow-lg' : 'text-zinc-500'}`}
               >
-                Studio
+                {workspaceLabel}
               </button>
               <button
                 onClick={() => onViewChange('recipes')}
@@ -206,6 +214,24 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
                 className={`flex h-10 items-center gap-2 rounded-xl border px-3 transition-all ${isQueueOpen ? 'border-accent-500/30 bg-accent-500/12 text-white' : 'border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
               >
                 <Layers size={15} />
+                {hasQueueResultPreviews && (
+                  <div className="flex items-center -space-x-2">
+                    {queueResultPreviews.slice(0, 3).map((preview) => (
+                      <span
+                        key={preview.id}
+                        className="h-6 w-6 overflow-hidden rounded-lg border border-black/40 bg-black/40 shadow-sm"
+                      >
+                        <img
+                          src={preview.src}
+                          alt=""
+                          className="h-full w-full object-cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <span className="text-[10px] font-black uppercase tracking-widest">
                   {queueCount}
                 </span>

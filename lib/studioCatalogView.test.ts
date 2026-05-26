@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 import type { CatalogImage } from '../packages/shared/src';
 import { createCatalogView, selectCatalogEntries } from './studioCatalogView';
-import { materializeVisualBatchesFromCatalog } from './studioCatalogVisualBatchAdapter';
+import { buildLegacyVisualBatchSnapshotFromCatalog } from './studioLegacyVisualSnapshotExport';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'image-1';
@@ -43,14 +43,13 @@ describe('studioCatalogView', () => {
 
     expect(view.entries.map((entry) => entry.id)).toEqual(['newer', 'older']);
     expect(view.byId.get('newer')?.batchId).toBe('batch-a');
-    expect(materializeVisualBatchesFromCatalog(view)).toHaveLength(1);
-    expect(materializeVisualBatchesFromCatalog(view)[0].images.map((image) => image.id)).toEqual([
-      'newer',
-      'older',
-    ]);
+    expect(buildLegacyVisualBatchSnapshotFromCatalog(view)).toHaveLength(1);
+    expect(
+      buildLegacyVisualBatchSnapshotFromCatalog(view)[0].images.map((image) => image.id),
+    ).toEqual(['newer', 'older']);
   });
 
-  it('filters Catalog Entries without forcing callers through GenerationBatch state', () => {
+  it('filters Catalog Entries without forcing callers through legacy Visual Batch state', () => {
     const view = createCatalogView([
       catalogImage({ id: 'active-favorite', isFavorite: true, isDeleted: false }),
       catalogImage({ id: 'deleted-favorite', isFavorite: true, isDeleted: true }),

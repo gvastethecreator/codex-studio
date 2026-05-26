@@ -1,9 +1,8 @@
 import { describe, expect, it } from 'vite-plus/test';
-import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import type { CatalogImage } from '../packages/shared/src';
-import type { GenerationBatch, Workspace } from '../types';
+import type { Workspace } from '../types';
 import { createCatalogView } from '../lib/studioCatalogView';
-import { buildWorkspacesWithThumbs } from './useWorkspaceStrip';
+import { buildWorkspacesWithThumbs, mergeWorkspacesWithCatalogEntries } from './useWorkspaceStrip';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'catalog-image';
@@ -42,23 +41,29 @@ const workspaces: Workspace[] = [
 ];
 
 describe('buildWorkspacesWithThumbs', () => {
-  it('prefers Catalog Entries for workspace counts and thumbnails', () => {
-    const batches: GenerationBatch[] = [
+  it('derives missing workspaces from catalog entries when state is incomplete', () => {
+    const merged = mergeWorkspacesWithCatalogEntries(
+      [{ id: 'default', name: 'Default', createdAt: 1 }],
+      createCatalogView([
+        catalogImage({
+          id: 'imported-entry',
+          workspaceId: '604b5e44-9e74-47b6-92bd-5ae8b446676b',
+          createdAt: '2026-05-25T08:00:00.000Z',
+        }),
+      ]),
+    );
+
+    expect(merged).toEqual([
+      { id: 'default', name: 'Default', createdAt: 1 },
       {
-        id: 'visual-batch',
-        workspaceId: 'default',
-        createdAt: 1,
-        config: { ...DEFAULT_GENERATION_CONFIG, prompt: 'legacy batch prompt' },
-        images: [
-          {
-            id: 'visual-image',
-            batchId: 'visual-batch',
-            src: '/legacy.png',
-            createdAt: 1,
-          },
-        ],
+        id: '604b5e44-9e74-47b6-92bd-5ae8b446676b',
+        name: 'Imported (676b)',
+        createdAt: Date.parse('2026-05-25T08:00:00.000Z'),
       },
-    ];
+    ]);
+  });
+
+  it('builds workspace thumbs from Catalog Entries', () => {
     const catalogView = createCatalogView([
       catalogImage({
         id: 'old-default',
@@ -81,7 +86,6 @@ describe('buildWorkspacesWithThumbs', () => {
     const result = buildWorkspacesWithThumbs({
       workspaces,
       catalogView,
-      legacyVisualBatches: batches,
     });
 
     expect(result).toMatchObject([
@@ -95,46 +99,13 @@ describe('buildWorkspacesWithThumbs', () => {
       },
     ]);
     expect(result[0].lastImage).toContain('/thumbs/new-default.webp');
-    expect(result[0].lastImage).not.toBe('/legacy.png');
   });
 
-  it('keeps Visual Batch fallback for legacy callers', () => {
-    const batches: GenerationBatch[] = [
-      {
-        id: 'older',
-        workspaceId: 'default',
-        createdAt: 1,
-        config: { ...DEFAULT_GENERATION_CONFIG, prompt: 'older' },
-        images: [
-          {
-            id: 'older-image',
-            batchId: 'older',
-            src: '/older.png',
-            createdAt: 1,
-          },
-        ],
-      },
-      {
-        id: 'newer',
-        workspaceId: 'default',
-        createdAt: 2,
-        config: { ...DEFAULT_GENERATION_CONFIG, prompt: 'newer' },
-        images: [
-          {
-            id: 'newer-image',
-            batchId: 'newer',
-            src: '/newer.png',
-            thumbnail: '/newer-thumb.webp',
-            createdAt: 2,
-          },
-        ],
-      },
-    ];
+  it('returns zero-count workspaces when no catalog view is available', () => {
+    const result = buildWorkspacesWithThumbs({ workspaces });
 
-    const result = buildWorkspacesWithThumbs({ workspaces, legacyVisualBatches: batches });
-
-    expect(result[0].imageCount).toBe(2);
-    expect(result[0].lastImage).toBe('/newer-thumb.webp');
+    expect(result[0].imageCount).toBe(0);
+    expect(result[0].lastImage).toBeUndefined();
     expect(result[1].imageCount).toBe(0);
   });
 });

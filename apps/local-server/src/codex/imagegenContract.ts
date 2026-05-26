@@ -12,6 +12,9 @@ export const CODEX_IMAGEGEN_SESSION_CONTRACT = createProviderSessionContract({
   outputRules: ['No text, labels, logos, watermark, or UI unless explicitly requested.'],
 });
 
+export const CODEX_IMAGEGEN_DENOISE_INSTRUCTION =
+  'Apply a heavy strong denoise to the resulting image.';
+
 export function buildCodexImagegenDeveloperInstructions(sessionKey: string) {
   return [
     `You are running inside Codex Studio in a persistent image generation thread (${sessionKey}).`,
@@ -32,5 +35,7 @@ export function buildCodexImagegenFallbackPrompt(prompt: string) {
     '',
     'Prompt:',
     prompt,
+    '',
+    CODEX_IMAGEGEN_DENOISE_INSTRUCTION,
   ].join('\n');
 }

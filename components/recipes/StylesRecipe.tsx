@@ -44,8 +44,8 @@ import {
   STYLE_PACK_SUMMARIES,
   loadStylePack,
   loadStylePacks,
-  type StylePack,
-  type StylePresetDef,
+  type StyleRuntimePack,
+  type StyleRuntimePreset,
 } from './stylesData';
 import type { StylePresetCatalogSearchResult } from './stylePresetManifests';
 import { RecipeLayout } from './RecipeLayout';
@@ -182,15 +182,15 @@ interface StylePresetVisualState {
 }
 
 interface StylePresetCardProps {
-  preset: StylePresetDef;
+  preset: StyleRuntimePreset;
   visualState: StylePresetVisualState | undefined;
   active: boolean;
   copied: boolean;
   favorite: boolean;
   theme: { color: string; bg: string; border: string; text: string };
   isGenerating: boolean;
-  onApply: (preset: StylePresetDef) => void;
-  onCopy: (e: React.MouseEvent, preset: StylePresetDef) => void;
+  onApply: (preset: StyleRuntimePreset) => void;
+  onCopy: (e: React.MouseEvent, preset: StyleRuntimePreset) => void;
   onToggleFavorite: (presetId: string) => void;
   onOpenImage?: (image: GeneratedImageWithConfig) => void;
   onHoverPreviewChange: (preview: StyleCardHoverPreview | null) => void;
@@ -199,7 +199,7 @@ interface StylePresetCardProps {
 interface StylePresetGroupSectionProps {
   groupKey: string;
   title: string;
-  presets: StylePresetDef[];
+  presets: StyleRuntimePreset[];
   expanded: boolean;
   gridColumns: number;
   scrollRootRef: React.RefObject<HTMLDivElement | null>;
@@ -210,7 +210,7 @@ interface StylePresetGroupSectionProps {
   titleClassName: string;
   dividerClassName: string;
   showMoreClassName: string;
-  renderPresetCard: (preset: StylePresetDef) => React.ReactNode;
+  renderPresetCard: (preset: StyleRuntimePreset) => React.ReactNode;
   onShowAll: (groupKey: string) => void;
 }
 
@@ -665,7 +665,7 @@ function describePreviewValue(value: unknown): string | null {
   return null;
 }
 
-async function loadPreviewAttachment(previewUrl: string, preset: StylePresetDef) {
+async function loadPreviewAttachment(previewUrl: string, preset: StyleRuntimePreset) {
   let dataUrl = previewDataUrlCache.get(previewUrl);
 
   if (!dataUrl) {
@@ -714,7 +714,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const initializedImageId = useRef<string | null>(null);
 
   const [currentPackId, setCurrentPackId] = useState(DEFAULT_STYLE_PACK_ID);
-  const [loadedStylePacksById, setLoadedStylePacksById] = useState<Record<string, StylePack>>({});
+  const [loadedStylePacksById, setLoadedStylePacksById] = useState<
+    Record<string, StyleRuntimePack>
+  >({});
   const [activePresetId, setActivePresetId] = useState<string | null>(null);
   const [copiedStyleId, setCopiedStyleId] = useState<string | null>(null);
   const [hoveredPresetPreview, setHoveredPresetPreview] = useState<StyleCardHoverPreview | null>(
@@ -753,7 +755,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   // Style Influence (Default 80%)
   const [styleStrength, setStyleStrength] = useState(0.8);
 
-  const cacheStylePack = useCallback((pack: StylePack) => {
+  const cacheStylePack = useCallback((pack: StyleRuntimePack) => {
     setLoadedStylePacksById((current) =>
       current[pack.id] === pack ? current : { ...current, [pack.id]: pack },
     );
@@ -849,7 +851,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         name: 'Your Favorites',
         description: 'A curated collection of your most used styles.',
         presets: [], // Placeholder, populated in processedData
-      } satisfies StylePack;
+      } satisfies StyleRuntimePack;
     }
     const summary =
       STYLE_PACK_SUMMARIES.find((pack) => pack.id === currentPackId) ?? STYLE_PACK_SUMMARIES[0];
@@ -860,7 +862,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         name: summary?.name ?? 'Styles',
         description: summary?.description ?? 'Loading style presets.',
         presets: [],
-      } satisfies StylePack)
+      } satisfies StyleRuntimePack)
     );
   }, [currentPackId, loadedStylePacksById]);
 
@@ -868,7 +870,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const resolvedHoveredPresetPreview = hoveredPresetPreview ?? lastHoveredPresetPreview;
 
   const favoritePresets = useMemo(() => {
-    const presetById = new Map<string, StylePresetDef>();
+    const presetById = new Map<string, StyleRuntimePreset>();
     for (const pack of Object.values(loadedStylePacksById)) {
       for (const preset of pack.presets) presetById.set(preset.id, preset);
     }
@@ -879,7 +881,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   }, [favorites, loadedStylePacksById]);
 
   const getPackIdForPreset = React.useCallback(
-    (preset: StylePresetDef) => {
+    (preset: StyleRuntimePreset) => {
       if (currentPackId !== FAVORITES_PACK_ID) return currentPackId;
       return (
         Object.values(loadedStylePacksById).find((pack) =>
@@ -951,7 +953,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   // Enhanced Grouping Logic with Search, Sort, and Favorites Bubbling
   const processedData = useMemo(() => {
-    let rawPresets: StylePresetDef[] = [];
+    let rawPresets: StyleRuntimePreset[] = [];
 
     if (currentPackId === FAVORITES_PACK_ID) {
       rawPresets = favoritePresets;
@@ -980,8 +982,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     });
 
     // 4. Grouping Logic
-    const favs: StylePresetDef[] = [];
-    const groups: Record<string, StylePresetDef[]> = {};
+    const favs: StyleRuntimePreset[] = [];
+    const groups: Record<string, StyleRuntimePreset[]> = {};
 
     if (currentPackId === FAVORITES_PACK_ID) {
       // In Favorites view, group by Category directly, no top-level "Pinned" section needed
@@ -992,7 +994,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       });
     } else {
       // In standard view, bubble Favorites to top
-      const nonFavs: StylePresetDef[] = [];
+      const nonFavs: StyleRuntimePreset[] = [];
       filtered.forEach((p) => {
         if (favorites.includes(p.id)) {
           favs.push(p);
@@ -1020,7 +1022,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   ]);
 
   const styleGroupEntries = useMemo(
-    () => Object.entries(processedData.groups) as [string, StylePresetDef[]][],
+    () => Object.entries(processedData.groups) as [string, StyleRuntimePreset[]][],
     [processedData.groups],
   );
   const visibleStyleGroupEntries = showAllStyleCategories
@@ -1034,7 +1036,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     0,
   );
 
-  const handleApplyStyle = async (preset: StylePresetDef, presetPackIdOverride?: string) => {
+  const handleApplyStyle = async (preset: StyleRuntimePreset, presetPackIdOverride?: string) => {
     if (isGenerating) return;
 
     setActivePresetId(preset.id);
@@ -1190,7 +1192,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     void handleApplyStyle(preset, result.packId);
   };
 
-  const handleCopyStylePrompt = (e: React.MouseEvent, preset: StylePresetDef) => {
+  const handleCopyStylePrompt = (e: React.MouseEvent, preset: StyleRuntimePreset) => {
     e.stopPropagation();
     const promptText = `
 **Style:** ${preset.name}
@@ -1248,7 +1250,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   };
 
   const renderPresetCard = React.useCallback(
-    (preset: StylePresetDef) => {
+    (preset: StyleRuntimePreset) => {
       return (
         <StylePresetCard
           key={preset.id}

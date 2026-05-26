@@ -39,7 +39,10 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
       {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
 
-      <main className="relative z-10 flex w-full flex-1 min-h-0 overflow-hidden" onClick={shell.root.onMainClick}>
+      <main
+        className="relative z-10 flex w-full flex-1 min-h-0 overflow-hidden"
+        onClick={shell.root.onMainClick}
+      >
         <div className="relative min-w-0 flex-1 overflow-hidden">
           <StudioViewport {...shell.viewport} />
         </div>

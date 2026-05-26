@@ -5,9 +5,6 @@ import type { StudioWorkspaceOverlaysProps } from './types';
 const TrashModal = React.lazy(() =>
   import('../TrashModal').then((m) => ({ default: m.TrashModal })),
 );
-const LimitReachedModal = React.lazy(() =>
-  import('../LimitReachedModal').then((m) => ({ default: m.LimitReachedModal })),
-);
 
 export const StudioWorkspaceOverlays: React.FC<StudioWorkspaceOverlaysProps> = ({
   isTrashModalOpen,
@@ -16,10 +13,6 @@ export const StudioWorkspaceOverlays: React.FC<StudioWorkspaceOverlaysProps> = (
   restoreFromTrash,
   restoreAllFromTrash,
   emptyTrash,
-  isLimitModalOpen,
-  handleDismissLimitModal,
-  handleDownloadAndClear,
-  visualGroupCount,
 }) => {
   return (
     <>
@@ -32,16 +25,6 @@ export const StudioWorkspaceOverlays: React.FC<StudioWorkspaceOverlaysProps> = (
             onRestore={restoreFromTrash}
             onRestoreAll={restoreAllFromTrash}
             onEmpty={emptyTrash}
-          />
-        </Suspense>
-      )}
-      {isLimitModalOpen && (
-        <Suspense fallback={null}>
-          <LimitReachedModal
-            isOpen={isLimitModalOpen}
-            onClose={handleDismissLimitModal}
-            onDownloadAndClear={() => void handleDownloadAndClear()}
-            visualGroupCount={visualGroupCount}
           />
         </Suspense>
       )}

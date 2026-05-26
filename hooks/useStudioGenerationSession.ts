@@ -7,6 +7,7 @@ import { useQueueManager } from './useQueueManager';
 import { useStudioGenerationActions } from './useStudioGenerationActions';
 
 interface UseStudioGenerationSessionOptions {
+  activeWorkspaceId: string;
   config: ReturnType<typeof useGeneration>['config'];
   pipeline: ReturnType<typeof useGeneration>['pipeline'];
   modal: ReturnType<typeof useGeneration>['modal'];
@@ -20,6 +21,7 @@ interface UseStudioGenerationSessionOptions {
 }
 
 export function useStudioGenerationSession({
+  activeWorkspaceId,
   config,
   pipeline,
   modal,
@@ -51,6 +53,7 @@ export function useStudioGenerationSession({
 
   const actions = useStudioGenerationActions({
     generationConfig: config.generationConfig,
+    activeWorkspaceId,
     setGenerationConfig: config.setGenerationConfig,
     updateGenerationConfig: config.updateGenerationConfig,
     executeEdit: pipeline.executeEdit,

@@ -24,6 +24,7 @@ import {
   type GenerationProviderCapabilitiesResponse,
   type GenerationProviderId,
   type GenerationProviderRuntimePreflightResponse,
+  type StudioOutputSubfolderToken,
   type RegisterExternalOutputSourceInput,
   type StudioOutputMode,
 } from '../packages/shared/src';
@@ -62,6 +63,21 @@ interface StudioSettingsModalProps {
 function normalizeOutputPath(value: string) {
   const trimmed = value.trim();
   return trimmed ? trimmed : null;
+}
+
+const OUTPUT_SUBFOLDER_PRESETS: {
+  label: string;
+  value: StudioOutputSubfolderToken[];
+}[] = [
+  { label: 'Date / Provider / Recipe', value: ['date', 'provider', 'recipe'] },
+  { label: 'Date / Model / Recipe', value: ['date', 'model', 'recipe'] },
+  { label: 'Provider / Recipe', value: ['provider', 'recipe'] },
+  { label: 'Recipe / Date', value: ['recipe', 'date'] },
+  { label: 'No Subfolders', value: [] },
+];
+
+function encodeSubfolderTokens(value: StudioOutputSubfolderToken[]) {
+  return value.join('/');
 }
 
 function formatBytes(value: number) {
@@ -105,6 +121,12 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   const [defaultProviderId, setDefaultProviderId] = useState<GenerationProviderId>('codex');
   const [defaultOutputMode, setDefaultOutputMode] = useState<StudioOutputMode>('studio_library');
   const [preferredOutputPath, setPreferredOutputPath] = useState('');
+  const [outputSubfolderPreset, setOutputSubfolderPreset] = useState(
+    encodeSubfolderTokens(['date', 'provider', 'recipe']),
+  );
+  const [outputFileNameTemplate, setOutputFileNameTemplate] = useState(
+    '{timestamp}-{provider}-{jobId}',
+  );
   const [autoDetectOutputSources, setAutoDetectOutputSources] = useState(true);
   const [commandCenterCompactMode, setCommandCenterCompactMode] = useState(false);
   const [selectedOutputFiles, setSelectedOutputFiles] = useState<Record<string, string[]>>({});
@@ -115,6 +137,8 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     setDefaultProviderId(settings.defaultProviderId);
     setDefaultOutputMode(settings.defaultOutputMode);
     setPreferredOutputPath(settings.preferredOutputPath ?? '');
+    setOutputSubfolderPreset(encodeSubfolderTokens(settings.outputOrganization.subfolderTokens));
+    setOutputFileNameTemplate(settings.outputOrganization.fileNameTemplate);
     setAutoDetectOutputSources(settings.autoDetectOutputSources);
     setCommandCenterCompactMode(settings.commandCenterCompactMode);
   }, [isOpen, settings]);
@@ -142,6 +166,13 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
       defaultProviderId,
       defaultOutputMode,
       preferredOutputPath: normalizeOutputPath(preferredOutputPath),
+      outputOrganization: {
+        subfolderTokens:
+          OUTPUT_SUBFOLDER_PRESETS.find(
+            (preset) => encodeSubfolderTokens(preset.value) === outputSubfolderPreset,
+          )?.value ?? [],
+        fileNameTemplate: outputFileNameTemplate,
+      },
       autoDetectOutputSources,
       commandCenterCompactMode,
     });
@@ -235,6 +266,38 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               <span className="truncate font-mono text-xs text-zinc-300">
                 {libraryDir ?? 'Unavailable'}
               </span>
+            </label>
+
+            <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                Output Subfolders
+              </span>
+              <select
+                value={outputSubfolderPreset}
+                onChange={(event) => setOutputSubfolderPreset(event.target.value)}
+                className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+              >
+                {OUTPUT_SUBFOLDER_PRESETS.map((preset) => (
+                  <option
+                    key={encodeSubfolderTokens(preset.value)}
+                    value={encodeSubfolderTokens(preset.value)}
+                  >
+                    {preset.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                File Name Template
+              </span>
+              <input
+                value={outputFileNameTemplate}
+                onChange={(event) => setOutputFileNameTemplate(event.target.value)}
+                placeholder="{timestamp}-{provider}-{jobId}"
+                className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+              />
             </label>
 
             <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">

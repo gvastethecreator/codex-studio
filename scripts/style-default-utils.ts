@@ -1,11 +1,10 @@
-import { readFile, stat } from 'node:fs/promises';
+import { stat } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
-import yaml from 'js-yaml';
-import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
+import type { StyleRuntimePreset } from '../components/recipes/styles/runtimeTypes';
 import { loadStyleManifestGraph, styleManifestsDir } from './style-manifest-files';
-import { composeStylePacksFromManifests } from '../components/recipes/stylePresetManifests';
+import { composeStyleRuntimePacksFromManifests } from '../components/recipes/stylePresetManifests';
 import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
 
 export const rootDir = process.cwd();
@@ -13,7 +12,6 @@ const homeDir = process.env.USERPROFILE?.trim() || process.env.HOME?.trim() || o
 export const recipeAssetsDir = path.join(rootDir, 'assets', 'recipes');
 export const recipeCardsDir = path.join(recipeAssetsDir, 'cards');
 export const recipeStylesDir = path.join(recipeAssetsDir, 'styles');
-export const packsDir = path.join(rootDir, 'components', 'recipes', 'styles', 'packs');
 export const stylePackManifestsDir = path.join(styleManifestsDir, 'packs');
 export const stylePresetManifestsDir = path.join(styleManifestsDir, 'presets');
 export const categoryBasesDir = path.join(recipeStylesDir, 'category-bases');
@@ -53,7 +51,7 @@ export function sanitizeCategory(category?: string) {
   return category || 'General';
 }
 
-export function valueOf(style: StylePresetDef['style'], ...keys: string[]) {
+export function valueOf(style: StyleRuntimePreset['style'], ...keys: string[]) {
   for (const key of keys) {
     const value = style[key];
     if (typeof value === 'string' && value.trim()) return value.trim();
@@ -89,40 +87,25 @@ export function subjectForCategory(category: string) {
   return 'a vertical scene with one clear subject, foreground detail, midground context, background depth, varied materials, and no text';
 }
 
-async function readYamlFile<T>(filePath: string) {
-  return yaml.load(await readFile(filePath, 'utf8')) as T;
-}
-
-async function loadLegacyPacks() {
-  const glob = new Bun.Glob('*.yaml');
-  const packs: StylePack[] = [];
-  for await (const fileName of glob.scan(packsDir)) {
-    const fullPath = path.join(packsDir, fileName);
-    const parsed = await readYamlFile<StylePack[]>(fullPath);
-    packs.push(...parsed);
-  }
-  return packs.sort((a, b) => a.id.localeCompare(b.id));
-}
-
 async function loadPacksFromGranularManifests() {
   const { packManifests, presetManifests, graph } = await loadStyleManifestGraph();
 
   if (packManifests.length === 0 || presetManifests.length === 0) {
-    return null;
+    throw new Error('Style Preset Manifests are required; legacy pack YAML is retired.');
   }
 
   if (!graph.valid) {
     throw new Error(`Invalid Style Preset Manifest graph:\n${graph.errors.join('\n')}`);
   }
 
-  return composeStylePacksFromManifests(
+  return composeStyleRuntimePacksFromManifests(
     packManifests.sort((a, b) => a.id.localeCompare(b.id)),
     presetManifests.sort((a, b) => a.id.localeCompare(b.id)),
   );
 }
 
 export async function loadPacks() {
-  return (await loadPacksFromGranularManifests()) ?? (await loadLegacyPacks());
+  return loadPacksFromGranularManifests();
 }
 
 export async function request<T>(pathName: string, init?: RequestInit): Promise<T> {

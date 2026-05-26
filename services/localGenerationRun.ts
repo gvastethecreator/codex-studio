@@ -1,4 +1,4 @@
-import type { GeneratedImage, GenerationBatch, ImageGenerationConfig } from '../types';
+import type { GeneratedImage, ImageGenerationConfig } from '../types';
 import type {
   EditableStudioSettings,
   GenerationProviderId,
@@ -7,7 +7,7 @@ import type {
 } from '../packages/shared/src';
 import { createThumbnail } from '../utils/imageUtils';
 import { resolveGenerationConfig } from '../lib/recipeContext';
-import { materializeVisualBatchImage } from '../lib/studioVisualBatchCatalog';
+import { materializeCatalogEntryImage } from '../lib/studioCatalogImageAdapter';
 import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
 import {
   createStudioJob,
@@ -16,7 +16,6 @@ import {
   queryCatalog,
 } from './localStudioService';
 import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
-import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
 
 interface RunLocalGenerationOptions {
   config: ImageGenerationConfig;
@@ -32,7 +31,11 @@ interface RunLocalGenerationOptions {
 }
 
 export interface LocalGenerationRunResult {
-  batch: GenerationBatch;
+  batchId: string;
+  workspaceId: string;
+  config: ImageGenerationConfig;
+  images: GeneratedImage[];
+  createdAt: number;
   generatedCount: number;
 }
 
@@ -137,6 +140,28 @@ async function buildJobAssets({
   return assets;
 }
 
+export function buildLocalGenerationTaskPrompt({
+  config,
+  inputImage,
+}: {
+  config: Pick<ImageGenerationConfig, 'prompt' | 'attachments' | 'recipeId'>;
+  inputImage?: RunLocalGenerationOptions['inputImage'];
+}) {
+  const editPrompt = inputImage?.prompt?.trim();
+  if (editPrompt) return editPrompt;
+
+  const prompt = config.prompt?.trim();
+  if (prompt) return prompt;
+
+  if (config.attachments.length > 0) {
+    return config.recipeId === 'styles'
+      ? 'Apply the selected style using the provided reference image.'
+      : 'Generate from the provided reference image.';
+  }
+
+  return 'Generate a high-quality image.';
+}
+
 /**
  * Run a single persistent local generation backend job and materialize its assets
  * into the UI image shape consumed by the visual batch cache.
@@ -156,17 +181,7 @@ export async function runSingleCodexImagegenJob(options: {
   throwIfAborted(signal);
   const projects = await listProjects();
   const projectId = projects[0]?.id;
-  const imageGenSize = getImageGenSizeForRatio(config.aspectRatio);
-  const editPrompt = inputImage?.prompt?.trim();
-  const promptParts = [
-    editPrompt ? `Edit instruction:\n${editPrompt}` : null,
-    config.prompt || 'Generate a high-quality image.',
-    config.recipeContext ? `Recipe instructions:\n${config.recipeContext}` : null,
-    config.negativePrompt ? `Avoid:\n${config.negativePrompt}` : null,
-    `ImageGen output size: ${imageGenSize.size}`,
-    `Aspect ratio: ${imageGenSize.ratio} (${imageGenSize.label.toLowerCase()})`,
-  ].filter(Boolean);
-  const finalPrompt = promptParts.join('\n\n');
+  const taskPrompt = buildLocalGenerationTaskPrompt({ config, inputImage });
   const requestAssets = await buildJobAssets({ config, inputImage });
   const sourceSpec = buildGenerationTaskSpecFromRecipe({
     id: `${batchId}-${Date.now()}`,
@@ -174,7 +189,7 @@ export async function runSingleCodexImagegenJob(options: {
     task: inputImage ? 'image_edit' : undefined,
     config: {
       ...config,
-      prompt: finalPrompt,
+      prompt: taskPrompt,
       batchCount: 1,
     },
   });
@@ -191,7 +206,7 @@ export async function runSingleCodexImagegenJob(options: {
         batchId,
       },
     },
-    prompt: finalPrompt,
+    prompt: taskPrompt,
     execution: {
       model: config.executionModel,
       reasoningEffort: config.executionReasoningEffort,
@@ -219,16 +234,18 @@ export async function runSingleCodexImagegenJob(options: {
   const jobAssets = catalogPage.images;
 
   if (jobAssets.length === 0) {
-    throw new Error(`${providerId} job ${completedJob.id} completed without an imported image asset.`);
+    throw new Error(
+      `${providerId} job ${completedJob.id} completed without an imported image asset.`,
+    );
   }
 
   const images: GeneratedImage[] = [];
   for (const asset of jobAssets) {
     const fallbackThumbnail = asset.thumbnailUrl
       ? undefined
-      : await createThumbnail(materializeVisualBatchImage(asset, { batchId }).src);
+      : await createThumbnail(materializeCatalogEntryImage(asset, { batchId }).src);
     images.push(
-      materializeVisualBatchImage(asset, {
+      materializeCatalogEntryImage(asset, {
         batchId,
         createdAt: Date.now(),
         thumbnail: fallbackThumbnail,
@@ -240,8 +257,8 @@ export async function runSingleCodexImagegenJob(options: {
 }
 
 /**
- * Resolve recipe context, enqueue the required backend jobs, and return the
- * visual batch that the UI persists in its local cache.
+ * Resolve recipe context, enqueue backend jobs, and return catalog-derived
+ * images. The legacy Visual Batch cache is updated outside this service.
  */
 export async function runLocalGeneration({
   config,
@@ -298,13 +315,11 @@ export async function runLocalGeneration({
 
     return {
       generatedCount: batchImages.length,
-      batch: {
-        id: batchId,
-        workspaceId,
-        config: resolvedConfig,
-        images: batchImages,
-        createdAt: Date.now(),
-      },
+      batchId,
+      workspaceId,
+      config: resolvedConfig,
+      images: batchImages,
+      createdAt: Date.now(),
     };
   } finally {
     stream.close();

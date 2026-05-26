@@ -1,4 +1,3 @@
-import type { ChangeEvent } from 'react';
 import type {
   HealthResponse,
   EditableStudioSettings,
@@ -16,7 +15,6 @@ import type {
 import type {
   Attachment,
   GeneratedImageWithConfig,
-  GenerationBatch,
   ImageGenerationConfig,
   LogEntry,
   Workspace,
@@ -60,7 +58,6 @@ export interface StudioSystemOverlaysProps {
   isLoadingSelectedJob: boolean;
   onInspectJob: (jobId: string) => void;
   onClearSelectedJob: () => void;
-  handleImportVault: (event: ChangeEvent<HTMLInputElement>) => void | Promise<void>;
   handleExportWorkspaceSnapshot: () => void;
   handleDeepScan: () => void | Promise<void>;
   apiBase: string;
@@ -114,10 +111,6 @@ export interface StudioWorkspaceOverlaysProps {
   restoreFromTrash: (batchId: string) => void;
   restoreAllFromTrash: () => void;
   emptyTrash: () => void;
-  isLimitModalOpen: boolean;
-  handleDismissLimitModal: () => void;
-  handleDownloadAndClear: () => void | Promise<void>;
-  visualGroupCount: number;
 }
 
 export interface StudioConfirmationOverlayProps {

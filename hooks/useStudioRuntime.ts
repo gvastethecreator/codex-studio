@@ -1,23 +1,21 @@
 import { useCallback } from 'react';
 
-import type { GenerationBatch, LogEntry, Toast } from '../types';
+import type { LogEntry, Toast } from '../types';
 import { buildStudioReadinessSnapshot } from '../lib/studioReadiness';
 import { useLocalStudioSync } from './useLocalStudioSync';
 import { useStudioDiagnostics } from './useStudioDiagnostics';
 import { useStudioOnboarding } from './useStudioOnboarding';
 import { useStudioSessionVerifier } from './useStudioSessionVerifier';
-import { useStudioStorageRecovery } from './useStudioStorageRecovery';
-
-type MergeLegacyVisualBatches = (
-  batches: GenerationBatch[],
-  options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
-) => void;
+import {
+  useStudioStorageRecovery,
+  type ImportRecoveredLegacyVisualSnapshot,
+} from './useStudioStorageRecovery';
 
 interface UseStudioRuntimeProps {
   logs: LogEntry[];
   log: (message: string) => void;
-  legacyVisualBatches: GenerationBatch[];
-  mergeLegacyVisualBatches: MergeLegacyVisualBatches;
+  existingLegacyVisualBatchIds: string[];
+  importRecoveredLegacyVisualSnapshot: ImportRecoveredLegacyVisualSnapshot;
   addToast: (message: string, type?: Toast['type']) => void;
   shouldAutoOpen: boolean;
   onCatalogChanged?: () => void;
@@ -40,8 +38,8 @@ interface UseStudioRuntimeProps {
 export function useStudioRuntime({
   logs,
   log,
-  legacyVisualBatches,
-  mergeLegacyVisualBatches,
+  existingLegacyVisualBatchIds,
+  importRecoveredLegacyVisualSnapshot,
   addToast,
   shouldAutoOpen,
   onCatalogChanged,
@@ -52,8 +50,8 @@ export function useStudioRuntime({
     onCatalogChanged,
   });
   const recovery = useStudioStorageRecovery({
-    legacyVisualBatches,
-    mergeLegacyVisualBatches,
+    existingLegacyVisualBatchIds,
+    importRecoveredLegacyVisualSnapshot,
     addToast,
     log,
   });

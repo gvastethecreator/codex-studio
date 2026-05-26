@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { evaluateRecipePrompts } from './evaluate-recipe-prompts';
+import { createEvaluationSummary, evaluateRecipePrompts } from './evaluate-recipe-prompts';
 
 describe('recipe prompt evaluation', () => {
   it('generates all three variants per recipe with savings for directives', () => {
@@ -35,5 +35,14 @@ describe('recipe prompt evaluation', () => {
       if (!bare || !directives) continue;
       expect(bare.promptChars).toBeLessThan(directives.promptChars);
     }
+  });
+
+  it('verifies directive savings above the minimum threshold', () => {
+    const session = evaluateRecipePrompts();
+    const summary = createEvaluationSummary(session);
+
+    expect(summary.totalPairs).toBe(session.pairs.length);
+    expect(summary.minDirectiveSavingsPercent).toBe(30);
+    expect(summary.failures).toEqual([]);
   });
 });

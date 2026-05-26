@@ -7,6 +7,7 @@ import type { ToolbarProps } from '../components/Toolbar';
 import type { BackgroundConfig, RecipeId } from '../types';
 import type { ToastMessage } from './useToasts';
 import { useGlobal } from '../contexts/GlobalContext';
+import { useLegacyVisualBatches } from '../contexts/LegacyVisualBatchContext';
 import { useGeneration } from '../contexts/GenerationContext';
 import { useHashRouter, type AppPageView } from './useHashRouter';
 import { useImageInputSurface } from './useImageInputSurface';
@@ -27,7 +28,8 @@ import { useWorkspaceStrip } from './useWorkspaceStrip';
 import { useGenerationToolbarConfig } from './useGenerationToolbarConfig';
 import { useCatalog } from './useCatalog';
 import { buildArchivedImageGroupsFromCatalog } from '../lib/studioCatalogTrashView';
-import { materializeVisualBatchesFromCatalog } from '../lib/studioCatalogVisualBatchAdapter';
+import { resolveStudioCarouselImage } from '../lib/studioCarouselImage';
+
 import { buildStudioQueueResultPreviews } from '../lib/studioQueueResults';
 import {
   deleteCatalogImage as deleteCatalogImageRequest,
@@ -111,19 +113,7 @@ export function useStudioShell(): StudioShellController {
     renameWorkspace,
     activeWorkspaceId,
     setActiveWorkspace,
-    legacyVisualBatches,
-    mergeLegacyVisualBatches,
-    importLegacyVisualBatches,
-    archiveLegacyVisualBatches,
-    deleteLegacyVisualImage,
-    deleteLegacyVisualImages,
-    toggleLegacyVisualImageFavorite,
-    clearLegacyVisualWorkspace,
-    clearAllLegacyVisualBatches,
     resetStudioState,
-    restoreLegacyVisualBatchFromTrash,
-    restoreAllLegacyVisualBatchesFromTrash,
-    emptyLegacyVisualTrash,
     isBackgroundEnabled,
     setBackgroundEnabled,
     bgConfig,
@@ -134,6 +124,13 @@ export function useStudioShell(): StudioShellController {
     openDebugPanel,
     closeDebugPanel,
   } = useGlobal();
+
+  const {
+    legacyVisualBatchIds,
+    mergeLegacyVisualBatches,
+    clearLegacyVisualWorkspace,
+    clearAllLegacyVisualBatches,
+  } = useLegacyVisualBatches();
 
   const {
     route,
@@ -156,16 +153,17 @@ export function useStudioShell(): StudioShellController {
   const trashCatalog = useCatalog({
     deleted: true,
   });
-  const catalogVisualBatches = useMemo(
-    () => materializeVisualBatchesFromCatalog(activeCatalog.view),
-    [activeCatalog.view],
-  );
+  const catalogVisualGroupCount = activeCatalog.view.byBatchId.size;
   const queueResults = useMemo(
     () =>
       buildStudioQueueResultPreviews(activeCatalog.entries, {
         toAssetUrl: toStudioAssetUrl,
       }),
     [activeCatalog.entries],
+  );
+  const queueResultPreviews = useMemo(
+    () => queueResults.slice(0, 3).map(({ id, src }) => ({ id, src })),
+    [queueResults],
   );
   const catalogTrashGroups = useMemo(
     () => buildArchivedImageGroupsFromCatalog(trashCatalog.view),
@@ -181,7 +179,6 @@ export function useStudioShell(): StudioShellController {
     (imageId: string) => {
       void deleteCatalogImageRequest(imageId)
         .then(() => {
-          deleteLegacyVisualImage(imageId);
           refreshCatalogs();
         })
         .catch((error) => {
@@ -191,14 +188,13 @@ export function useStudioShell(): StudioShellController {
           );
         });
     },
-    [addToast, deleteLegacyVisualImage, refreshCatalogs],
+    [addToast, refreshCatalogs],
   );
 
   const deleteCatalogImages = useCallback(
     (imageIds: string[]) => {
       void Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId)))
         .then(() => {
-          deleteLegacyVisualImages(imageIds);
           refreshCatalogs();
         })
         .catch((error) => {
@@ -208,7 +204,7 @@ export function useStudioShell(): StudioShellController {
           );
         });
     },
-    [addToast, deleteLegacyVisualImages, refreshCatalogs],
+    [addToast, refreshCatalogs],
   );
 
   const toggleCatalogFavorite = useCallback(
@@ -218,14 +214,13 @@ export function useStudioShell(): StudioShellController {
         isFavorite: !(current?.isFavorite ?? false),
       })
         .then(() => {
-          toggleLegacyVisualImageFavorite(imageId);
           refreshCatalogs();
         })
         .catch((error) => {
           addToast(error instanceof Error ? error.message : 'Unable to update favorite', 'error');
         });
     },
-    [activeCatalog.view.byId, addToast, refreshCatalogs, toggleLegacyVisualImageFavorite],
+    [activeCatalog.view.byId, addToast, refreshCatalogs],
   );
 
   const clearCatalogWorkspace = useCallback(
@@ -256,7 +251,6 @@ export function useStudioShell(): StudioShellController {
       const entries = trashCatalog.view.byBatchId.get(batchId) ?? [];
       void Promise.all(entries.map((entry) => restoreCatalogImageRequest(entry.id)))
         .then(() => {
-          restoreLegacyVisualBatchFromTrash(batchId);
           refreshCatalogs();
         })
         .catch((error) => {
@@ -266,13 +260,12 @@ export function useStudioShell(): StudioShellController {
           );
         });
     },
-    [addToast, refreshCatalogs, restoreLegacyVisualBatchFromTrash, trashCatalog.view.byBatchId],
+    [addToast, refreshCatalogs, trashCatalog.view.byBatchId],
   );
 
   const restoreAllCatalogTrash = useCallback(() => {
     void Promise.all(trashCatalog.entries.map((entry) => restoreCatalogImageRequest(entry.id)))
       .then(() => {
-        restoreAllLegacyVisualBatchesFromTrash();
         refreshCatalogs();
       })
       .catch((error) => {
@@ -281,26 +274,25 @@ export function useStudioShell(): StudioShellController {
           'error',
         );
       });
-  }, [addToast, refreshCatalogs, restoreAllLegacyVisualBatchesFromTrash, trashCatalog.entries]);
+  }, [addToast, refreshCatalogs, trashCatalog.entries]);
 
   const emptyCatalogTrash = useCallback(() => {
     void Promise.all(trashCatalog.entries.map((entry) => purgeCatalogImageRequest(entry.id)))
       .then(() => {
-        emptyLegacyVisualTrash();
         refreshCatalogs();
       })
       .catch((error) => {
         addToast(error instanceof Error ? error.message : 'Unable to empty catalog trash', 'error');
       });
-  }, [addToast, emptyLegacyVisualTrash, refreshCatalogs, trashCatalog.entries]);
+  }, [addToast, refreshCatalogs, trashCatalog.entries]);
 
   const studioRuntime = useStudioRuntime({
     logs,
     log,
-    legacyVisualBatches,
-    mergeLegacyVisualBatches,
+    existingLegacyVisualBatchIds: legacyVisualBatchIds,
+    importRecoveredLegacyVisualSnapshot: mergeLegacyVisualBatches,
     addToast,
-    shouldAutoOpen: workspaceCatalog.entries.length === 0 && legacyVisualBatches.length === 0,
+    shouldAutoOpen: workspaceCatalog.entries.length === 0,
     onCatalogChanged: refreshCatalogs,
   });
   const studioSettings = useStudioSettings({ addToast });
@@ -313,11 +305,8 @@ export function useStudioShell(): StudioShellController {
     closeDebugPanel,
   });
 
-  const { importVault, exportWorkspaceSnapshot, downloadAndClearWorkspace } = useVaultTransfer({
+  const { exportWorkspaceSnapshot, downloadAndClearWorkspace } = useVaultTransfer({
     catalogView: activeCatalog.view,
-    legacyVisualBatches,
-    importLegacyVisualBatches,
-    archiveLegacyVisualBatches,
     clearAllLegacyVisualBatches,
     addToast,
     log,
@@ -341,15 +330,11 @@ export function useStudioShell(): StudioShellController {
     isTrashModalOpen,
     openTrash,
     closeTrash,
-    isLimitModalOpen,
     openEditor,
     closeEditor,
-    dismissLimitModal,
     handleDownloadAndClear,
     resetViewState,
   } = useStudioViewState({
-    visualGroupCount: catalogVisualBatches.length,
-    downloadAndClearWorkspace,
     closeOverlay,
   });
   const toggleQueue = useCallback(() => {
@@ -394,6 +379,7 @@ export function useStudioShell(): StudioShellController {
   });
 
   const generationSession = useStudioGenerationSession({
+    activeWorkspaceId,
     config,
     pipeline,
     modal,
@@ -442,7 +428,7 @@ export function useStudioShell(): StudioShellController {
     requestEmptyTrash,
     requestResetStudio,
   } = useStudioActionConfirmations({
-    clearWorkspace: clearLegacyVisualWorkspace,
+    clearWorkspace: clearCatalogWorkspace,
     deleteWorkspace,
     resetStudio,
     restoreAllFromTrash: restoreAllCatalogTrash,
@@ -453,7 +439,6 @@ export function useStudioShell(): StudioShellController {
     useWorkspaceStrip({
       workspaces,
       catalogView: workspaceCatalog.view,
-      legacyVisualBatches,
       createWorkspace,
       deleteWorkspace,
       renameWorkspace,
@@ -474,7 +459,6 @@ export function useStudioShell(): StudioShellController {
     handleClearWorkspace,
   } = useStudioGallery({
     catalogView: activeCatalog.view,
-    legacyVisualBatches,
     activeWorkspaceId,
     deleteImage: deleteCatalogImage,
     deleteImages: deleteCatalogImages,
@@ -485,6 +469,15 @@ export function useStudioShell(): StudioShellController {
     closeModal: handleCloseModal,
     onRequestClearWorkspace: requestClearWorkspace,
   });
+  const activeCarouselImage = useMemo(
+    () =>
+      resolveStudioCarouselImage({
+        activeCarouselId: modal.activeCarouselId,
+        modalImage: modal.modalImage,
+        images: imagesWithConfig,
+      }),
+    [imagesWithConfig, modal.activeCarouselId, modal.modalImage],
+  );
 
   const { isDragging, handleDragOver, handleDragLeave, handleDrop } = useImageInputSurface({
     onFiles: config.handlePastedFiles,
@@ -492,7 +485,7 @@ export function useStudioShell(): StudioShellController {
 
   const overlayController = useStudioOverlayController({
     image: {
-      modalImage: modal.modalImage,
+      modalImage: activeCarouselImage,
       imagesWithConfig,
       activeGenerationConfig: pipeline.activeGenerationConfig,
       closeModal: handleCloseModal,
@@ -527,7 +520,6 @@ export function useStudioShell(): StudioShellController {
       onClearSelectedJob: activitySession.clearSelectedJob,
     },
     vault: {
-      handleImportVault: importVault,
       handleExportWorkspaceSnapshot: exportWorkspaceSnapshot,
       handleDeepScan: studioRuntime.maintenance.recoverWorkspace,
     },
@@ -577,15 +569,12 @@ export function useStudioShell(): StudioShellController {
       isResettingStudio,
     },
     workspace: {
-      catalogVisualBatches,
+      catalogVisualGroupCount,
       workspaces,
       trash: catalogTrashGroups,
       restoreFromTrash: restoreCatalogBatch,
       isTrashModalOpen,
       closeTrash,
-      isLimitModalOpen,
-      dismissLimitModal,
-      handleDownloadAndClear,
     },
     workspaceActions: {
       requestRestoreAllTrash,
@@ -614,7 +603,7 @@ export function useStudioShell(): StudioShellController {
     isModalOpen: modal.isModalOpen,
     workspaces,
     mergedLogs: studioRuntime.activity.mergedLogs,
-    catalogVisualGroupCount: catalogVisualBatches.length,
+    catalogVisualGroupCount: catalogVisualGroupCount,
     allImages,
     imagesWithConfig,
     selectedImageIds,
@@ -649,7 +638,6 @@ export function useStudioShell(): StudioShellController {
     clearCompleted,
     isResting,
     exportWorkspaceSnapshot,
-    handleImportVault: importVault,
     isBackgroundEnabled,
     setBackgroundEnabled,
     activeServerJobCount: studioRuntime.activity.activeServerJobCount,
@@ -718,6 +706,7 @@ export function useStudioShell(): StudioShellController {
     commandCenter: {
       activeProviderId: studioSettings.settings?.defaultProviderId ?? 'codex',
       runtimeStatus: summarizeRuntimeStatus(studioRuntime.status.diagnostics.statusItems),
+      queueResultPreviews,
       queueCount: jobs.length + studioRuntime.activity.activeServerJobCount,
       isQueueOpen,
       onToggleQueue: toggleQueue,
@@ -725,46 +714,71 @@ export function useStudioShell(): StudioShellController {
     },
   });
 
-  return {
-    root: {
-      onDragOver: handleDragOver,
-      onDragLeave: handleDragLeave,
-      onDrop: handleDrop,
-      onMainClick: () => {
-        ui.setIsInteractingWithToolbar(false);
-        ui.setIsKeyPopoverOpen(false);
+  return useMemo(
+    (): StudioShellController => ({
+      root: {
+        onDragOver: handleDragOver,
+        onDragLeave: handleDragLeave,
+        onDrop: handleDrop,
+        onMainClick: () => {
+          ui.setIsInteractingWithToolbar(false);
+          ui.setIsKeyPopoverOpen(false);
+        },
       },
-    },
-    background: isBackgroundEnabled
-      ? {
-          isGenerating: pipeline.isGenerating,
-          activeModel: config.generationConfig.model,
-          config: bgConfig,
-        }
-      : null,
-    toasts: {
-      items: toasts,
-      onDismiss: removeToast,
-    },
-    headerToolbar: {
-      isVisible: !modal.isModalOpen,
-      props: headerToolbarProps,
-    },
-    viewport: {
-      routeView: route.view,
+      background: isBackgroundEnabled
+        ? {
+            isGenerating: pipeline.isGenerating,
+            activeModel: config.generationConfig.model,
+            config: bgConfig,
+          }
+        : null,
+      toasts: {
+        items: toasts,
+        onDismiss: removeToast,
+      },
+      headerToolbar: {
+        isVisible: !modal.isModalOpen,
+        props: headerToolbarProps,
+      },
+      viewport: {
+        routeView: route.view,
+        direction,
+        activeRecipe: recipe.activeRecipe,
+        recipePageProps,
+        studioPageController,
+        onSelectRecipe: handleRecipeSelection,
+      },
+      generationDock: {
+        isModalOpen: modal.isModalOpen,
+        currentView: route.view,
+        activeRecipe: recipe.activeRecipe,
+        isDragging,
+        toolbarProps,
+      },
+      overlays: overlayController,
+    }),
+    [
+      handleDragOver,
+      handleDragLeave,
+      handleDrop,
+      isBackgroundEnabled,
+      pipeline.isGenerating,
+      config.generationConfig.model,
+      bgConfig,
+      toasts,
+      removeToast,
+      modal.isModalOpen,
+      headerToolbarProps,
+      route.view,
       direction,
-      activeRecipe: recipe.activeRecipe,
+      recipe.activeRecipe,
       recipePageProps,
       studioPageController,
-      onSelectRecipe: handleRecipeSelection,
-    },
-    generationDock: {
-      isModalOpen: modal.isModalOpen,
-      currentView: route.view,
-      activeRecipe: recipe.activeRecipe,
+      handleRecipeSelection,
       isDragging,
       toolbarProps,
-    },
-    overlays: overlayController,
-  };
+      overlayController,
+      ui,
+    ],
+  );
 }

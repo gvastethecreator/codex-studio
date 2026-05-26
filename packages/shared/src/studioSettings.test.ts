@@ -16,6 +16,10 @@ describe('studioSettings', () => {
       commandCenterCompactMode: false,
       preferredLibraryId: null,
       preferredOutputPath: null,
+      outputOrganization: {
+        subfolderTokens: ['date', 'provider', 'recipe'],
+        fileNameTemplate: '{timestamp}-{provider}-{jobId}',
+      },
       providerDefaults: {
         codex: {
           providerId: 'codex',
@@ -59,6 +63,10 @@ describe('studioSettings', () => {
         defaultProviderId: 'comfy',
         commandCenterCompactMode: true,
         preferredOutputPath: 'D:/DEV/codex-studio/outputs',
+        outputOrganization: {
+          subfolderTokens: ['date', 'model', 'recipe', 'invalid'],
+          fileNameTemplate: '{recipe}/{bad:name}-{jobId}',
+        },
         providerDefaults: {
           comfy: {
             providerId: 'comfy',
@@ -73,6 +81,10 @@ describe('studioSettings', () => {
     expect(settings.defaultProviderId).toBe('comfy');
     expect(settings.commandCenterCompactMode).toBe(true);
     expect(settings.preferredOutputPath).toBe('D:/DEV/codex-studio/outputs');
+    expect(settings.outputOrganization).toEqual({
+      subfolderTokens: ['date', 'model', 'recipe'],
+      fileNameTemplate: '{recipe}-{bad-name}-{jobId}',
+    });
     expect(settings.providerDefaults.codex.providerId).toBe('codex');
     expect(settings.providerDefaults.comfy).toEqual({
       providerId: 'comfy',

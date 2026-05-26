@@ -31,7 +31,6 @@ interface QueuePanelProps {
     selectedJobId?: string | null;
     onInspectJob: (jobId: string) => void;
     onCancelServerJob: (jobId: string) => void;
-    onClose: () => void;
 }
 
 const localStatusConfig: Record<
@@ -119,7 +118,6 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
         selectedJobId,
         onInspectJob,
         onCancelServerJob,
-        onClose,
     }) => {
         const [isLocalQueueOpen, setIsLocalQueueOpen] = useState(true);
         const [isServerQueueOpen, setIsServerQueueOpen] = useState(true);
@@ -148,24 +146,15 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-1">
-                        {(completedCount > 0 || jobs.some((job) => job.status === "cancelled")) && (
-                            <button
-                                onClick={onClearCompleted}
-                                className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
-                                title="Clear completed"
-                            >
-                                <Trash2 size={16} />
-                            </button>
-                        )}
+                    {(completedCount > 0 || jobs.some((job) => job.status === "cancelled")) && (
                         <button
-                            onClick={onClose}
+                            onClick={onClearCompleted}
                             className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
-                            title="Collapse queue"
+                            title="Clear completed"
                         >
-                            <ChevronRight size={16} />
+                            <Trash2 size={16} />
                         </button>
-                    </div>
+                    )}
                 </div>
 
                 <div className="grid grid-cols-4 gap-px border-b border-white/10 bg-white/10">
@@ -206,10 +195,10 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                                     <div
                                         key={result.id}
                                         className={cn(
-                                            "rounded-lg border p-2 transition-colors",
+                                            'rounded-lg border p-2 transition-colors',
                                             selectedJobId && result.jobId === selectedJobId
-                                                ? "border-accent-500/30 bg-accent-500/10"
-                                                : "border-white/5 bg-black/20",
+                                                ? 'border-accent-500/30 bg-accent-500/10'
+                                                : 'border-white/5 bg-black/20',
                                         )}
                                     >
                                         <div className="aspect-square overflow-hidden rounded-lg border border-white/10 bg-black/40">
