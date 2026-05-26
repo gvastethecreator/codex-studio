@@ -111,7 +111,14 @@ const TASKS: Record<string, TaskDefinition> = {
   },
   'build:ui': {
     description: 'Build the Vite application through Vite+.',
-    steps: [{ label: 'UI Build', command: 'vp', args: ['build'], consoleMode: 'tail' }],
+    steps: [
+      { label: 'UI Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
+      {
+        label: 'UI Chunk Verify',
+        command: 'bun',
+        args: ['run', 'scripts/report-ui-chunks.ts', '--verify'],
+      },
+    ],
   },
   'build:server': {
     description: 'Type-check the Bun/Hono local server build target.',
@@ -121,6 +128,11 @@ const TASKS: Record<string, TaskDefinition> = {
     description: 'Build both the UI and the local server target.',
     steps: [
       { label: 'UI Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
+      {
+        label: 'UI Chunk Verify',
+        command: 'bun',
+        args: ['run', 'scripts/report-ui-chunks.ts', '--verify'],
+      },
       { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
     ],
   },
@@ -136,7 +148,22 @@ const TASKS: Record<string, TaskDefinition> = {
     steps: [
       { label: 'Check', command: 'vp', args: ['check'] },
       { label: 'Test', command: 'vp', args: ['test', 'run'] },
+      {
+        label: 'UI Source Verify',
+        command: 'bun',
+        args: ['run', 'scripts/ui-demand-surface-audit.ts'],
+      },
+      {
+        label: 'Catalog Source Verify',
+        command: 'bun',
+        args: ['run', 'scripts/catalog-first-source-audit.ts'],
+      },
       { label: 'Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
+      {
+        label: 'UI Chunk Verify',
+        command: 'bun',
+        args: ['run', 'scripts/report-ui-chunks.ts', '--verify'],
+      },
       { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
     ],
   },

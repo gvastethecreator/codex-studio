@@ -1,4 +1,3 @@
-import yaml from 'js-yaml';
 import type { StylePackManifest, StylePresetManifest } from './styles/types';
 import {
   createStylePresetCatalog,
@@ -18,7 +17,15 @@ const presetManifestFiles = import.meta.glob('./styles/manifests/presets/**/*.ya
   eager: false,
 });
 
+let yamlLoader: Promise<typeof import('js-yaml')> | null = null;
+
+function loadYamlParser() {
+  yamlLoader ??= import('js-yaml');
+  return yamlLoader;
+}
+
 async function loadYamlObjects<T>(files: Record<string, () => Promise<unknown>>) {
+  const yaml = await loadYamlParser();
   const entries = await Promise.all(
     Object.entries(files).map(async ([path, loader]) => [path, await loader()] as const),
   );

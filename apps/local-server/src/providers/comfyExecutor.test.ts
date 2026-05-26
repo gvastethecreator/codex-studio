@@ -33,6 +33,16 @@ function imageResponse(bytes: Uint8Array) {
   };
 }
 
+function fetchInputUrl(input: string | URL | Request) {
+  if (typeof input === 'string') return input;
+  if (input instanceof URL) return input.toString();
+  return input.url;
+}
+
+function requestBodyText(body: BodyInit | null | undefined) {
+  return typeof body === 'string' ? body : '';
+}
+
 function createJob(): GenerationProviderJob {
   const sourceSpec = createGenerationTaskSpec({
     id: 'spec-comfy',
@@ -60,9 +70,9 @@ describe('comfyExecutor', () => {
     const promptBodies: string[] = [];
     let historyCalls = 0;
     const fetch: ExternalProviderFetch = async (input, init) => {
-      const url = String(input);
+      const url = fetchInputUrl(input);
       if (url.endsWith('/prompt')) {
-        promptBodies.push(String(init?.body));
+        promptBodies.push(requestBodyText(init?.body));
         return jsonResponse({ prompt_id: 'prompt-1' });
       }
       if (url.endsWith('/history/prompt-1')) {
@@ -137,7 +147,9 @@ describe('comfyExecutor', () => {
       mimeType: 'image/png',
     });
     expect(result.transcript).toBe(path.join(tmp, 'transcripts', 'job-comfy', 'comfy.json'));
-    expect(readFileSync(result.transcript, 'utf8')).toContain('"workflowPreset": "texture_generate"');
+    expect(readFileSync(result.transcript, 'utf8')).toContain(
+      '"workflowPreset": "texture_generate"',
+    );
   });
 
   it('fails before network when the workflow template path is missing', async () => {

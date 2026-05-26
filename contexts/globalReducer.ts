@@ -4,69 +4,77 @@ import type {
   GenerationBatch,
   LogEntry,
   Workspace,
-} from "../types";
+} from '../types';
 
 export interface GlobalState {
   logs: LogEntry[];
   workspaces: Workspace[];
   activeWorkspaceId: string;
-  batches: GenerationBatch[];
-  trash: GenerationBatch[];
+  legacyVisualBatches: GenerationBatch[];
+  legacyVisualTrash: GenerationBatch[];
   isBackgroundEnabled: boolean;
   bgConfig: BackgroundConfig;
 }
 
 export type GlobalAction =
-  | { type: "HYDRATE_STATE"; state: Partial<GlobalState> }
-  | { type: "RESET_STATE" }
-  | { type: "ADD_LOG"; entry: LogEntry }
-  | { type: "CREATE_WORKSPACE"; workspace: Workspace; activate?: boolean }
-  | { type: "DELETE_WORKSPACE"; id: string }
-  | { type: "RENAME_WORKSPACE"; id: string; name: string }
-  | { type: "SET_ACTIVE_WORKSPACE"; id: string }
-  | { type: "PREPEND_BATCH"; batch: GenerationBatch; maxPerWorkspace?: number }
+  | { type: 'HYDRATE_STATE'; state: Partial<GlobalState> }
+  | { type: 'RESET_STATE' }
+  | { type: 'ADD_LOG'; entry: LogEntry }
+  | { type: 'CREATE_WORKSPACE'; workspace: Workspace; activate?: boolean }
+  | { type: 'DELETE_WORKSPACE'; id: string }
+  | { type: 'RENAME_WORKSPACE'; id: string; name: string }
+  | { type: 'SET_ACTIVE_WORKSPACE'; id: string }
   | {
-      type: "MERGE_BATCHES";
+      type: 'PREPEND_GENERATED_VISUAL_BATCH';
+      batch: GenerationBatch;
+      maxPerWorkspace?: number;
+    }
+  | {
+      type: 'MERGE_LEGACY_VISUAL_BATCHES';
       batches: GenerationBatch[];
       prepend?: boolean;
       maxTotal?: number;
       ensureWorkspaces?: boolean;
     }
-  | { type: "REPLACE_BATCHES"; batches: GenerationBatch[]; ensureWorkspaces?: boolean }
-  | { type: "ARCHIVE_BATCHES"; batches: GenerationBatch[] }
-  | { type: "DELETE_IMAGE"; imageId: string }
-  | { type: "DELETE_IMAGES"; imageIds: string[] }
-  | { type: "TOGGLE_IMAGE_FAVORITE"; imageId: string }
-  | { type: "CLEAR_WORKSPACE"; workspaceId: string }
-  | { type: "CLEAR_ALL_BATCHES" }
-  | { type: "RESTORE_FROM_TRASH"; batchId: string }
-  | { type: "RESTORE_ALL_FROM_TRASH" }
-  | { type: "EMPTY_TRASH" }
-  | { type: "SET_BACKGROUND_ENABLED"; enabled: boolean }
-  | { type: "UPDATE_BACKGROUND_CONFIG"; patch: Partial<BackgroundConfig> };
+  | {
+      type: 'IMPORT_LEGACY_VISUAL_BATCHES';
+      batches: GenerationBatch[];
+      ensureWorkspaces?: boolean;
+    }
+  | { type: 'ARCHIVE_LEGACY_VISUAL_BATCHES'; batches: GenerationBatch[] }
+  | { type: 'DELETE_LEGACY_VISUAL_IMAGE'; imageId: string }
+  | { type: 'DELETE_LEGACY_VISUAL_IMAGES'; imageIds: string[] }
+  | { type: 'TOGGLE_LEGACY_VISUAL_IMAGE_FAVORITE'; imageId: string }
+  | { type: 'CLEAR_LEGACY_VISUAL_WORKSPACE'; workspaceId: string }
+  | { type: 'CLEAR_ALL_LEGACY_VISUAL_BATCHES' }
+  | { type: 'RESTORE_LEGACY_VISUAL_BATCH_FROM_TRASH'; batchId: string }
+  | { type: 'RESTORE_ALL_LEGACY_VISUAL_BATCHES_FROM_TRASH' }
+  | { type: 'EMPTY_LEGACY_VISUAL_TRASH' }
+  | { type: 'SET_BACKGROUND_ENABLED'; enabled: boolean }
+  | { type: 'UPDATE_BACKGROUND_CONFIG'; patch: Partial<BackgroundConfig> };
 
 export function createInitialGlobalState(): GlobalState {
   return {
     logs: [],
-    workspaces: ensureDefaultWorkspace([{ id: "default", createdAt: Date.now() }]),
-    activeWorkspaceId: "default",
-    batches: [],
-    trash: [],
+    workspaces: ensureDefaultWorkspace([{ id: 'default', createdAt: Date.now() }]),
+    activeWorkspaceId: 'default',
+    legacyVisualBatches: [],
+    legacyVisualTrash: [],
     isBackgroundEnabled: true,
     bgConfig: { density: 0.4, speed: 0.002 },
   };
 }
 
 export function ensureDefaultWorkspace(workspaces: Workspace[]): Workspace[] {
-  if (workspaces.some((workspace) => workspace.id === "default")) {
+  if (workspaces.some((workspace) => workspace.id === 'default')) {
     return workspaces;
   }
 
-  return [{ id: "default", createdAt: Date.now() }, ...workspaces];
+  return [{ id: 'default', createdAt: Date.now() }, ...workspaces];
 }
 
 function normalizeWorkspaceId(workspaceId?: string | null) {
-  return workspaceId || "default";
+  return workspaceId || 'default';
 }
 
 function belongsToWorkspace(batch: GenerationBatch, workspaceId: string) {
@@ -138,7 +146,7 @@ function mergeBatchCollections(
   });
 
   const merged = order.map((id) => batchMap.get(id)!).filter(Boolean);
-  return typeof options?.maxTotal === "number" ? merged.slice(0, options.maxTotal) : merged;
+  return typeof options?.maxTotal === 'number' ? merged.slice(0, options.maxTotal) : merged;
 }
 
 function withWorkspaceLimit(
@@ -176,7 +184,7 @@ function ensureWorkspacesForBatches(workspaces: Workspace[], batches: Generation
     missing.push({
       id: workspaceId,
       createdAt: Date.now(),
-      name: workspaceId === "default" ? undefined : `Imported (${workspaceId.slice(-4)})`,
+      name: workspaceId === 'default' ? undefined : `Imported (${workspaceId.slice(-4)})`,
     });
     existingIds.add(workspaceId);
   }
@@ -184,14 +192,16 @@ function ensureWorkspacesForBatches(workspaces: Workspace[], batches: Generation
   return ensureDefaultWorkspace([...workspaces, ...missing]);
 }
 
-function archiveBatches(state: GlobalState, batchesToArchive: GenerationBatch[]) {
+function archiveLegacyVisualBatches(state: GlobalState, batchesToArchive: GenerationBatch[]) {
   if (batchesToArchive.length === 0) {
     return state;
   }
 
   return {
     ...state,
-    trash: mergeBatchCollections(state.trash, batchesToArchive, { prepend: true }),
+    legacyVisualTrash: mergeBatchCollections(state.legacyVisualTrash, batchesToArchive, {
+      prepend: true,
+    }),
   };
 }
 
@@ -202,7 +212,7 @@ function deleteImages(state: GlobalState, imageIds: string[]) {
   }
 
   const batchesToArchive: GenerationBatch[] = [];
-  const nextBatches = state.batches
+  const nextBatches = state.legacyVisualBatches
     .map((batch) => {
       const remainingImages = batch.images.filter((image) => !ids.has(image.id));
       if (remainingImages.length === 0 && batch.images.length > 0) {
@@ -214,10 +224,10 @@ function deleteImages(state: GlobalState, imageIds: string[]) {
     })
     .filter((batch) => batch.images.length > 0);
 
-  return archiveBatches(
+  return archiveLegacyVisualBatches(
     {
       ...state,
-      batches: nextBatches,
+      legacyVisualBatches: nextBatches,
     },
     batchesToArchive,
   );
@@ -225,7 +235,7 @@ function deleteImages(state: GlobalState, imageIds: string[]) {
 
 export function globalReducer(state: GlobalState, action: GlobalAction): GlobalState {
   switch (action.type) {
-    case "HYDRATE_STATE": {
+    case 'HYDRATE_STATE': {
       const hydratedWorkspaces = ensureDefaultWorkspace(
         action.state.workspaces ?? state.workspaces,
       );
@@ -235,29 +245,29 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         ? action.state.activeWorkspaceId!
         : hydratedWorkspaces.some((workspace) => workspace.id === state.activeWorkspaceId)
           ? state.activeWorkspaceId
-          : "default";
+          : 'default';
 
       return {
         logs: action.state.logs ?? state.logs,
         workspaces: hydratedWorkspaces,
         activeWorkspaceId: hydratedActiveWorkspaceId,
-        batches: action.state.batches ?? state.batches,
-        trash: action.state.trash ?? state.trash,
+        legacyVisualBatches: action.state.legacyVisualBatches ?? state.legacyVisualBatches,
+        legacyVisualTrash: action.state.legacyVisualTrash ?? state.legacyVisualTrash,
         isBackgroundEnabled: action.state.isBackgroundEnabled ?? state.isBackgroundEnabled,
         bgConfig: action.state.bgConfig ?? state.bgConfig,
       };
     }
 
-    case "RESET_STATE":
+    case 'RESET_STATE':
       return createInitialGlobalState();
 
-    case "ADD_LOG":
+    case 'ADD_LOG':
       return {
         ...state,
         logs: [action.entry, ...state.logs].slice(0, 500),
       };
 
-    case "CREATE_WORKSPACE": {
+    case 'CREATE_WORKSPACE': {
       const workspaces = ensureDefaultWorkspace(
         state.workspaces.some((workspace) => workspace.id === action.workspace.id)
           ? state.workspaces
@@ -272,8 +282,8 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
       };
     }
 
-    case "DELETE_WORKSPACE": {
-      if (action.id === "default") {
+    case 'DELETE_WORKSPACE': {
+      if (action.id === 'default') {
         return state;
       }
 
@@ -284,13 +294,15 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
       return {
         ...state,
         workspaces,
-        batches: state.batches.filter((batch) => !belongsToWorkspace(batch, action.id)),
+        legacyVisualBatches: state.legacyVisualBatches.filter(
+          (batch) => !belongsToWorkspace(batch, action.id),
+        ),
         activeWorkspaceId:
-          state.activeWorkspaceId === action.id ? "default" : state.activeWorkspaceId,
+          state.activeWorkspaceId === action.id ? 'default' : state.activeWorkspaceId,
       };
     }
 
-    case "RENAME_WORKSPACE":
+    case 'RENAME_WORKSPACE':
       return {
         ...state,
         workspaces: state.workspaces.map((workspace) =>
@@ -298,7 +310,7 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         ),
       };
 
-    case "SET_ACTIVE_WORKSPACE":
+    case 'SET_ACTIVE_WORKSPACE':
       return {
         ...state,
         activeWorkspaceId: state.workspaces.some((workspace) => workspace.id === action.id)
@@ -306,49 +318,55 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
           : state.activeWorkspaceId,
       };
 
-    case "PREPEND_BATCH": {
-      const batches = mergeBatchCollections(state.batches, [action.batch], { prepend: true });
+    case 'PREPEND_GENERATED_VISUAL_BATCH': {
+      const batches = mergeBatchCollections(state.legacyVisualBatches, [action.batch], {
+        prepend: true,
+      });
       return {
         ...state,
         workspaces: ensureWorkspacesForBatches(state.workspaces, [action.batch]),
-        batches: withWorkspaceLimit(batches, action.batch.workspaceId, action.maxPerWorkspace),
+        legacyVisualBatches: withWorkspaceLimit(
+          batches,
+          action.batch.workspaceId,
+          action.maxPerWorkspace,
+        ),
       };
     }
 
-    case "MERGE_BATCHES":
+    case 'MERGE_LEGACY_VISUAL_BATCHES':
       return {
         ...state,
         workspaces: action.ensureWorkspaces
           ? ensureWorkspacesForBatches(state.workspaces, action.batches)
           : state.workspaces,
-        batches: mergeBatchCollections(state.batches, action.batches, {
+        legacyVisualBatches: mergeBatchCollections(state.legacyVisualBatches, action.batches, {
           prepend: action.prepend,
           maxTotal: action.maxTotal,
         }),
       };
 
-    case "REPLACE_BATCHES":
+    case 'IMPORT_LEGACY_VISUAL_BATCHES':
       return {
         ...state,
         workspaces: action.ensureWorkspaces
           ? ensureWorkspacesForBatches(state.workspaces, action.batches)
           : state.workspaces,
-        batches: mergeBatchCollections([], action.batches, { prepend: true }),
+        legacyVisualBatches: mergeBatchCollections([], action.batches, { prepend: true }),
       };
 
-    case "ARCHIVE_BATCHES":
-      return archiveBatches(state, action.batches);
+    case 'ARCHIVE_LEGACY_VISUAL_BATCHES':
+      return archiveLegacyVisualBatches(state, action.batches);
 
-    case "DELETE_IMAGE":
+    case 'DELETE_LEGACY_VISUAL_IMAGE':
       return deleteImages(state, [action.imageId]);
 
-    case "DELETE_IMAGES":
+    case 'DELETE_LEGACY_VISUAL_IMAGES':
       return deleteImages(state, action.imageIds);
 
-    case "TOGGLE_IMAGE_FAVORITE":
+    case 'TOGGLE_LEGACY_VISUAL_IMAGE_FAVORITE':
       return {
         ...state,
-        batches: state.batches.map((batch) => ({
+        legacyVisualBatches: state.legacyVisualBatches.map((batch) => ({
           ...batch,
           images: batch.images.map((image) =>
             image.id === action.imageId ? { ...image, isFavorite: !image.isFavorite } : image,
@@ -356,58 +374,66 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         })),
       };
 
-    case "CLEAR_WORKSPACE": {
-      const batchesToArchive = state.batches.filter((batch) =>
+    case 'CLEAR_LEGACY_VISUAL_WORKSPACE': {
+      const batchesToArchive = state.legacyVisualBatches.filter((batch) =>
         belongsToWorkspace(batch, action.workspaceId),
       );
       const nextState = {
         ...state,
-        batches: state.batches.filter((batch) => !belongsToWorkspace(batch, action.workspaceId)),
+        legacyVisualBatches: state.legacyVisualBatches.filter(
+          (batch) => !belongsToWorkspace(batch, action.workspaceId),
+        ),
       };
-      return archiveBatches(nextState, batchesToArchive);
+      return archiveLegacyVisualBatches(nextState, batchesToArchive);
     }
 
-    case "CLEAR_ALL_BATCHES":
+    case 'CLEAR_ALL_LEGACY_VISUAL_BATCHES':
       return {
         ...state,
-        batches: [],
+        legacyVisualBatches: [],
       };
 
-    case "RESTORE_FROM_TRASH": {
-      const batchToRestore = state.trash.find((batch) => batch.id === action.batchId);
+    case 'RESTORE_LEGACY_VISUAL_BATCH_FROM_TRASH': {
+      const batchToRestore = state.legacyVisualTrash.find((batch) => batch.id === action.batchId);
       if (!batchToRestore) {
         return state;
       }
 
       return {
         ...state,
-        trash: state.trash.filter((batch) => batch.id !== action.batchId),
-        batches: mergeBatchCollections(state.batches, [batchToRestore], { prepend: true }),
+        legacyVisualTrash: state.legacyVisualTrash.filter((batch) => batch.id !== action.batchId),
+        legacyVisualBatches: mergeBatchCollections(state.legacyVisualBatches, [batchToRestore], {
+          prepend: true,
+        }),
         workspaces: ensureWorkspacesForBatches(state.workspaces, [batchToRestore]),
       };
     }
 
-    case "RESTORE_ALL_FROM_TRASH":
+    case 'RESTORE_ALL_LEGACY_VISUAL_BATCHES_FROM_TRASH':
       return {
         ...state,
-        trash: [],
-        batches: mergeBatchCollections(state.batches, state.trash, { prepend: true }),
-        workspaces: ensureWorkspacesForBatches(state.workspaces, state.trash),
+        legacyVisualTrash: [],
+        legacyVisualBatches: mergeBatchCollections(
+          state.legacyVisualBatches,
+          state.legacyVisualTrash,
+          { prepend: true },
+        ),
+        workspaces: ensureWorkspacesForBatches(state.workspaces, state.legacyVisualTrash),
       };
 
-    case "EMPTY_TRASH":
+    case 'EMPTY_LEGACY_VISUAL_TRASH':
       return {
         ...state,
-        trash: [],
+        legacyVisualTrash: [],
       };
 
-    case "SET_BACKGROUND_ENABLED":
+    case 'SET_BACKGROUND_ENABLED':
       return {
         ...state,
         isBackgroundEnabled: action.enabled,
       };
 
-    case "UPDATE_BACKGROUND_CONFIG":
+    case 'UPDATE_BACKGROUND_CONFIG':
       return {
         ...state,
         bgConfig: {

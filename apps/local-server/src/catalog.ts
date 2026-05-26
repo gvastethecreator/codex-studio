@@ -4,6 +4,7 @@ import { randomUUID } from 'node:crypto';
 import { getDb } from './db';
 import { getDefaultLibrary, getLibrary } from './libraries';
 import { toPublicAssetUrl } from './library';
+import { buildCatalogWorkspaceClause } from './catalogWorkspaceClause';
 
 export interface CatalogImage {
   id: string;
@@ -163,9 +164,10 @@ export function queryCatalog(
     clauses.push('library_id = ?');
     params.push(filters.libraryId);
   }
-  if (filters.workspaceId) {
-    clauses.push('workspace_id = ?');
-    params.push(filters.workspaceId);
+  const workspaceClause = buildCatalogWorkspaceClause(filters.workspaceId);
+  if (workspaceClause) {
+    clauses.push(workspaceClause.clause);
+    params.push(...workspaceClause.params);
   }
   if (filters.jobId) {
     clauses.push('job_id = ?');

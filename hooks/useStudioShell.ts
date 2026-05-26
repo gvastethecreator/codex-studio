@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
@@ -26,10 +26,14 @@ import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
 import { useGenerationToolbarConfig } from './useGenerationToolbarConfig';
 import { useCatalog } from './useCatalog';
+import { buildArchivedImageGroupsFromCatalog } from '../lib/studioCatalogTrashView';
+import { materializeVisualBatchesFromCatalog } from '../lib/studioCatalogVisualBatchAdapter';
+import { buildStudioQueueResultPreviews } from '../lib/studioQueueResults';
 import {
   deleteCatalogImage as deleteCatalogImageRequest,
   purgeCatalogImage as purgeCatalogImageRequest,
   restoreCatalogImage as restoreCatalogImageRequest,
+  toStudioAssetUrl,
   updateCatalogImage as updateCatalogImageRequest,
 } from '../services/localStudioService';
 
@@ -49,6 +53,10 @@ function summarizeRuntimeStatus(
   }
 
   return { label: 'Ready', tone: 'success' };
+}
+
+function belongsToWorkspace(workspaceId: string, entryWorkspaceId?: string | null) {
+  return entryWorkspaceId === workspaceId || (!entryWorkspaceId && workspaceId === 'default');
 }
 
 export interface StudioShellController {
@@ -103,20 +111,19 @@ export function useStudioShell(): StudioShellController {
     renameWorkspace,
     activeWorkspaceId,
     setActiveWorkspace,
-    batches,
-    mergeBatches,
-    replaceBatches,
-    archiveBatches,
-    deleteImage,
-    deleteImages,
-    toggleImageFavorite,
-    clearWorkspace,
-    clearAllBatches,
+    legacyVisualBatches,
+    mergeLegacyVisualBatches,
+    importLegacyVisualBatches,
+    archiveLegacyVisualBatches,
+    deleteLegacyVisualImage,
+    deleteLegacyVisualImages,
+    toggleLegacyVisualImageFavorite,
+    clearLegacyVisualWorkspace,
+    clearAllLegacyVisualBatches,
     resetStudioState,
-    trash,
-    restoreFromTrash,
-    restoreAllFromTrash,
-    emptyTrash,
+    restoreLegacyVisualBatchFromTrash,
+    restoreAllLegacyVisualBatchesFromTrash,
+    emptyLegacyVisualTrash,
     isBackgroundEnabled,
     setBackgroundEnabled,
     bgConfig,
@@ -143,21 +150,38 @@ export function useStudioShell(): StudioShellController {
     workspaceId: activeWorkspaceId,
     deleted: false,
   });
+  const workspaceCatalog = useCatalog({
+    deleted: false,
+  });
   const trashCatalog = useCatalog({
     deleted: true,
   });
-  const catalogBatches = activeCatalog.visualBatches;
-  const catalogTrash = trashCatalog.visualBatches;
+  const catalogVisualBatches = useMemo(
+    () => materializeVisualBatchesFromCatalog(activeCatalog.view),
+    [activeCatalog.view],
+  );
+  const queueResults = useMemo(
+    () =>
+      buildStudioQueueResultPreviews(activeCatalog.entries, {
+        toAssetUrl: toStudioAssetUrl,
+      }),
+    [activeCatalog.entries],
+  );
+  const catalogTrashGroups = useMemo(
+    () => buildArchivedImageGroupsFromCatalog(trashCatalog.view),
+    [trashCatalog.view],
+  );
   const refreshCatalogs = useCallback(() => {
     void activeCatalog.refresh();
+    void workspaceCatalog.refresh();
     void trashCatalog.refresh();
-  }, [activeCatalog.refresh, trashCatalog.refresh]);
+  }, [activeCatalog.refresh, trashCatalog.refresh, workspaceCatalog.refresh]);
 
   const deleteCatalogImage = useCallback(
     (imageId: string) => {
       void deleteCatalogImageRequest(imageId)
         .then(() => {
-          deleteImage(imageId);
+          deleteLegacyVisualImage(imageId);
           refreshCatalogs();
         })
         .catch((error) => {
@@ -167,14 +191,14 @@ export function useStudioShell(): StudioShellController {
           );
         });
     },
-    [addToast, deleteImage, refreshCatalogs],
+    [addToast, deleteLegacyVisualImage, refreshCatalogs],
   );
 
   const deleteCatalogImages = useCallback(
     (imageIds: string[]) => {
       void Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId)))
         .then(() => {
-          deleteImages(imageIds);
+          deleteLegacyVisualImages(imageIds);
           refreshCatalogs();
         })
         .catch((error) => {
@@ -184,7 +208,7 @@ export function useStudioShell(): StudioShellController {
           );
         });
     },
-    [addToast, deleteImages, refreshCatalogs],
+    [addToast, deleteLegacyVisualImages, refreshCatalogs],
   );
 
   const toggleCatalogFavorite = useCallback(
@@ -194,27 +218,27 @@ export function useStudioShell(): StudioShellController {
         isFavorite: !(current?.isFavorite ?? false),
       })
         .then(() => {
-          toggleImageFavorite(imageId);
+          toggleLegacyVisualImageFavorite(imageId);
           refreshCatalogs();
         })
         .catch((error) => {
           addToast(error instanceof Error ? error.message : 'Unable to update favorite', 'error');
         });
     },
-    [activeCatalog.view.byId, addToast, refreshCatalogs, toggleImageFavorite],
+    [activeCatalog.view.byId, addToast, refreshCatalogs, toggleLegacyVisualImageFavorite],
   );
 
   const clearCatalogWorkspace = useCallback(
     (workspaceId: string) => {
       const imageIds = activeCatalog.entries
-        .filter((entry) => entry.workspaceId === workspaceId)
+        .filter((entry) => belongsToWorkspace(workspaceId, entry.workspaceId))
         .map((entry) => entry.id);
 
       if (imageIds.length === 0) return;
 
       void Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId)))
         .then(() => {
-          clearWorkspace(workspaceId);
+          clearLegacyVisualWorkspace(workspaceId);
           refreshCatalogs();
         })
         .catch((error) => {
@@ -224,7 +248,7 @@ export function useStudioShell(): StudioShellController {
           );
         });
     },
-    [activeCatalog.entries, addToast, clearWorkspace, refreshCatalogs],
+    [activeCatalog.entries, addToast, clearLegacyVisualWorkspace, refreshCatalogs],
   );
 
   const restoreCatalogBatch = useCallback(
@@ -232,7 +256,7 @@ export function useStudioShell(): StudioShellController {
       const entries = trashCatalog.view.byBatchId.get(batchId) ?? [];
       void Promise.all(entries.map((entry) => restoreCatalogImageRequest(entry.id)))
         .then(() => {
-          restoreFromTrash(batchId);
+          restoreLegacyVisualBatchFromTrash(batchId);
           refreshCatalogs();
         })
         .catch((error) => {
@@ -242,13 +266,13 @@ export function useStudioShell(): StudioShellController {
           );
         });
     },
-    [addToast, refreshCatalogs, restoreFromTrash, trashCatalog.view.byBatchId],
+    [addToast, refreshCatalogs, restoreLegacyVisualBatchFromTrash, trashCatalog.view.byBatchId],
   );
 
   const restoreAllCatalogTrash = useCallback(() => {
     void Promise.all(trashCatalog.entries.map((entry) => restoreCatalogImageRequest(entry.id)))
       .then(() => {
-        restoreAllFromTrash();
+        restoreAllLegacyVisualBatchesFromTrash();
         refreshCatalogs();
       })
       .catch((error) => {
@@ -257,26 +281,26 @@ export function useStudioShell(): StudioShellController {
           'error',
         );
       });
-  }, [addToast, refreshCatalogs, restoreAllFromTrash, trashCatalog.entries]);
+  }, [addToast, refreshCatalogs, restoreAllLegacyVisualBatchesFromTrash, trashCatalog.entries]);
 
   const emptyCatalogTrash = useCallback(() => {
     void Promise.all(trashCatalog.entries.map((entry) => purgeCatalogImageRequest(entry.id)))
       .then(() => {
-        emptyTrash();
+        emptyLegacyVisualTrash();
         refreshCatalogs();
       })
       .catch((error) => {
         addToast(error instanceof Error ? error.message : 'Unable to empty catalog trash', 'error');
       });
-  }, [addToast, emptyTrash, refreshCatalogs, trashCatalog.entries]);
+  }, [addToast, emptyLegacyVisualTrash, refreshCatalogs, trashCatalog.entries]);
 
   const studioRuntime = useStudioRuntime({
     logs,
     log,
-    batches: catalogBatches,
-    mergeBatches,
+    legacyVisualBatches,
+    mergeLegacyVisualBatches,
     addToast,
-    shouldAutoOpen: catalogBatches.length === 0 && batches.length === 0,
+    shouldAutoOpen: workspaceCatalog.entries.length === 0 && legacyVisualBatches.length === 0,
     onCatalogChanged: refreshCatalogs,
   });
   const studioSettings = useStudioSettings({ addToast });
@@ -289,11 +313,12 @@ export function useStudioShell(): StudioShellController {
     closeDebugPanel,
   });
 
-  const { importVault, exportVault, downloadAndClearWorkspace } = useVaultTransfer({
-    batches: catalogBatches,
-    replaceBatches,
-    archiveBatches,
-    clearAllBatches,
+  const { importVault, exportWorkspaceSnapshot, downloadAndClearWorkspace } = useVaultTransfer({
+    catalogView: activeCatalog.view,
+    legacyVisualBatches,
+    importLegacyVisualBatches,
+    archiveLegacyVisualBatches,
+    clearAllLegacyVisualBatches,
     addToast,
     log,
   });
@@ -323,7 +348,7 @@ export function useStudioShell(): StudioShellController {
     handleDownloadAndClear,
     resetViewState,
   } = useStudioViewState({
-    batchCount: catalogBatches.length,
+    visualGroupCount: catalogVisualBatches.length,
     downloadAndClearWorkspace,
     closeOverlay,
   });
@@ -417,7 +442,7 @@ export function useStudioShell(): StudioShellController {
     requestEmptyTrash,
     requestResetStudio,
   } = useStudioActionConfirmations({
-    clearWorkspace,
+    clearWorkspace: clearLegacyVisualWorkspace,
     deleteWorkspace,
     resetStudio,
     restoreAllFromTrash: restoreAllCatalogTrash,
@@ -427,7 +452,8 @@ export function useStudioShell(): StudioShellController {
   const { workspacesWithThumbs, handleAddWorkspace, handleDeleteWorkspace, handleRenameWorkspace } =
     useWorkspaceStrip({
       workspaces,
-      batches: catalogBatches,
+      catalogView: workspaceCatalog.view,
+      legacyVisualBatches,
       createWorkspace,
       deleteWorkspace,
       renameWorkspace,
@@ -447,7 +473,8 @@ export function useStudioShell(): StudioShellController {
     handleToggleFavorite,
     handleClearWorkspace,
   } = useStudioGallery({
-    batches: catalogBatches,
+    catalogView: activeCatalog.view,
+    legacyVisualBatches,
     activeWorkspaceId,
     deleteImage: deleteCatalogImage,
     deleteImages: deleteCatalogImages,
@@ -501,6 +528,7 @@ export function useStudioShell(): StudioShellController {
     },
     vault: {
       handleImportVault: importVault,
+      handleExportWorkspaceSnapshot: exportWorkspaceSnapshot,
       handleDeepScan: studioRuntime.maintenance.recoverWorkspace,
     },
     onboarding: {
@@ -549,9 +577,9 @@ export function useStudioShell(): StudioShellController {
       isResettingStudio,
     },
     workspace: {
-      batches: catalogBatches,
+      catalogVisualBatches,
       workspaces,
-      trash: catalogTrash,
+      trash: catalogTrashGroups,
       restoreFromTrash: restoreCatalogBatch,
       isTrashModalOpen,
       closeTrash,
@@ -586,7 +614,7 @@ export function useStudioShell(): StudioShellController {
     isModalOpen: modal.isModalOpen,
     workspaces,
     mergedLogs: studioRuntime.activity.mergedLogs,
-    batchesCount: catalogBatches.length,
+    catalogVisualGroupCount: catalogVisualBatches.length,
     allImages,
     imagesWithConfig,
     selectedImageIds,
@@ -611,6 +639,7 @@ export function useStudioShell(): StudioShellController {
     isQueueOpen,
     setIsQueueOpen,
     jobs,
+    queueResults,
     studioJobs: studioRuntime.activity.studioJobs,
     selectedStudioJobId: activitySession.selectedStudioJobId,
     retry,
@@ -619,7 +648,7 @@ export function useStudioShell(): StudioShellController {
     removeJob,
     clearCompleted,
     isResting,
-    exportBatches: exportVault,
+    exportWorkspaceSnapshot,
     handleImportVault: importVault,
     isBackgroundEnabled,
     setBackgroundEnabled,
@@ -683,7 +712,7 @@ export function useStudioShell(): StudioShellController {
       onOpenDashboard: openDashboard,
       openOnboarding: studioRuntime.onboarding.open,
       onOpenTrash: openTrash,
-      trashCount: catalogTrash.length,
+      trashCount: catalogTrashGroups.length,
       onToggleDebug: activitySession.handleToggleDebugPanel,
     },
     commandCenter: {
@@ -718,7 +747,7 @@ export function useStudioShell(): StudioShellController {
       onDismiss: removeToast,
     },
     headerToolbar: {
-      isVisible: !modal.isModalOpen && !pipeline.isGenerating,
+      isVisible: !modal.isModalOpen,
       props: headerToolbarProps,
     },
     viewport: {

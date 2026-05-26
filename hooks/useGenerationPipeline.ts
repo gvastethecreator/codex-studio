@@ -19,7 +19,10 @@ interface GenerationOptions {
 interface UseGenerationPipelineProps {
   generationConfig: ImageGenerationConfig;
   activeWorkspaceId: string;
-  prependBatch: (batch: GenerationBatch, options?: { maxPerWorkspace?: number }) => void;
+  prependGeneratedVisualBatch: (
+    batch: GenerationBatch,
+    options?: { maxPerWorkspace?: number },
+  ) => void;
   addToast: (msg: string, type: 'success' | 'error' | 'info') => void;
   log: (msg: string) => void;
   activeRecipe: RecipeId;
@@ -30,7 +33,7 @@ interface UseGenerationPipelineProps {
 export const useGenerationPipeline = ({
   generationConfig,
   activeWorkspaceId,
-  prependBatch,
+  prependGeneratedVisualBatch,
   addToast,
   log,
   activeRecipe,
@@ -61,8 +64,7 @@ export const useGenerationPipeline = ({
     (error: unknown) => {
       const message = error instanceof Error ? error.message : String(error);
       const isCancellation =
-        error instanceof Error &&
-        (error.name === 'AbortError' || /cancel/i.test(error.message));
+        error instanceof Error && (error.name === 'AbortError' || /cancel/i.test(error.message));
 
       if (isCancellation) {
         addToast('Generation cancelled', 'info');
@@ -98,7 +100,7 @@ export const useGenerationPipeline = ({
         });
 
         startViewTransition(() => {
-          prependBatch(batch);
+          prependGeneratedVisualBatch(batch);
         });
 
         if (batch.images.length > 0 && !options?.preventModal) {
@@ -111,8 +113,11 @@ export const useGenerationPipeline = ({
         }
 
         const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-  log(`Generated batch: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
-  addToast(`Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`, 'success');
+        log(`Generated batch: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
+        addToast(
+          `Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`,
+          'success',
+        );
       } catch (error) {
         handleGenerationError(error);
       } finally {
@@ -123,7 +128,7 @@ export const useGenerationPipeline = ({
       generationConfig,
       activeWorkspaceId,
       activeRecipe,
-      prependBatch,
+      prependGeneratedVisualBatch,
       addToast,
       log,
       openModal,
@@ -175,12 +180,12 @@ export const useGenerationPipeline = ({
         });
 
         startViewTransition(() => {
-          prependBatch(batch, { maxPerWorkspace: 20 });
+          prependGeneratedVisualBatch(batch, { maxPerWorkspace: 20 });
         });
 
         const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-  log(`Generated edit batch: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
-  addToast('Image edit complete', 'success');
+        log(`Generated edit batch: ${batch.id} (${generatedCount} asset(s)) in ${duration}s`);
+        addToast('Image edit complete', 'success');
         return batch;
       } catch (error) {
         handleGenerationError(error);
@@ -191,7 +196,7 @@ export const useGenerationPipeline = ({
     [
       generationConfig,
       activeWorkspaceId,
-      prependBatch,
+      prependGeneratedVisualBatch,
       addToast,
       log,
       beginRun,

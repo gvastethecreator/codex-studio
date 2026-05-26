@@ -1,20 +1,50 @@
 import { useCallback } from 'react';
 import type { GenerationBatch, GeneratedImageWithConfig } from '../types';
 import {
-  downloadMultipleImagesAsZip,
-  exportToJson,
-  readJsonFile,
-  validateVault,
-} from '../utils/fileUtils';
+  materializeCatalogEntryImageWithConfig,
+  materializeVisualBatchesFromCatalog,
+} from '../lib/studioCatalogVisualBatchAdapter';
+import type { StudioCatalogView } from '../lib/studioCatalogView';
+import { validateLegacyVisualBatchVault } from '../lib/studioLegacyVisualBatchStore';
+import { downloadMultipleImagesAsZip, exportToJson, readJsonFile } from '../utils/fileUtils';
 import { formatErrorMessage } from '../utils/runtimeLogger';
 
 interface UseVaultTransferProps {
-  batches: GenerationBatch[];
-  replaceBatches: (batches: GenerationBatch[], options?: { ensureWorkspaces?: boolean }) => void;
-  archiveBatches: (batches: GenerationBatch[]) => void;
-  clearAllBatches: () => void;
+  catalogView?: StudioCatalogView;
+  legacyVisualBatches?: GenerationBatch[];
+  importLegacyVisualBatches: (
+    batches: GenerationBatch[],
+    options?: { ensureWorkspaces?: boolean },
+  ) => void;
+  archiveLegacyVisualBatches: (batches: GenerationBatch[]) => void;
+  clearAllLegacyVisualBatches: () => void;
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   log: (message: string) => void;
+}
+
+interface LegacyVisualBatchSnapshotInput {
+  catalogView?: StudioCatalogView;
+  legacyVisualBatches?: GenerationBatch[];
+}
+
+export function buildLegacyVisualBatchSnapshot({
+  catalogView,
+  legacyVisualBatches = [],
+}: LegacyVisualBatchSnapshotInput) {
+  return catalogView ? materializeVisualBatchesFromCatalog(catalogView) : legacyVisualBatches;
+}
+
+export function buildWorkspaceExportImages({
+  catalogView,
+  legacyVisualBatches = [],
+}: LegacyVisualBatchSnapshotInput): GeneratedImageWithConfig[] {
+  if (catalogView) {
+    return catalogView.entries.map((entry) => materializeCatalogEntryImageWithConfig(entry));
+  }
+
+  return legacyVisualBatches.flatMap((batch) =>
+    batch.images.map((image) => ({ ...image, config: batch.config }) as GeneratedImageWithConfig),
+  );
 }
 
 /**
@@ -22,10 +52,11 @@ interface UseVaultTransferProps {
  * AppContent only coordinates UI state, not file I/O choreography.
  */
 export function useVaultTransfer({
-  batches,
-  replaceBatches,
-  archiveBatches,
-  clearAllBatches,
+  catalogView,
+  legacyVisualBatches = [],
+  importLegacyVisualBatches,
+  archiveLegacyVisualBatches,
+  clearAllLegacyVisualBatches,
   addToast,
   log,
 }: UseVaultTransferProps) {
@@ -38,37 +69,38 @@ export function useVaultTransfer({
       try {
         const data = await readJsonFile(file);
 
-        if (!validateVault(data)) {
+        if (!validateLegacyVisualBatchVault(data)) {
           throw new Error('Invalid vault format');
         }
 
-        replaceBatches(data, { ensureWorkspaces: true });
+        importLegacyVisualBatches(data, { ensureWorkspaces: true });
         addToast('Workspace snapshot imported', 'success');
       } catch {
         addToast('Invalid workspace snapshot file', 'error');
       }
     },
-    [addToast, replaceBatches],
+    [addToast, importLegacyVisualBatches],
   );
 
-  const exportVault = useCallback(() => {
-    exportToJson(batches, `workspace-snapshot-${Date.now()}.json`);
-  }, [batches]);
+  const exportWorkspaceSnapshot = useCallback(() => {
+    exportToJson(
+      buildLegacyVisualBatchSnapshot({ catalogView, legacyVisualBatches }),
+      `workspace-snapshot-${Date.now()}.json`,
+    );
+  }, [catalogView, legacyVisualBatches]);
 
   const downloadAndClearWorkspace = useCallback(async () => {
     try {
-      const images = batches.flatMap((batch) =>
-        batch.images.map(
-          (image) => ({ ...image, config: batch.config }) as GeneratedImageWithConfig,
-        ),
-      );
+      const images = buildWorkspaceExportImages({ catalogView, legacyVisualBatches });
 
       if (images.length > 0) {
         await downloadMultipleImagesAsZip(images, `workspace-export-${Date.now()}.zip`);
       }
 
-      archiveBatches(batches);
-      clearAllBatches();
+      archiveLegacyVisualBatches(
+        buildLegacyVisualBatchSnapshot({ catalogView, legacyVisualBatches }),
+      );
+      clearAllLegacyVisualBatches();
       addToast('Workspace archive downloaded and canvas cleared', 'success');
       return true;
     } catch (error) {
@@ -76,11 +108,18 @@ export function useVaultTransfer({
       addToast('Failed to download the workspace archive', 'error');
       return false;
     }
-  }, [addToast, archiveBatches, batches, clearAllBatches, log]);
+  }, [
+    addToast,
+    archiveLegacyVisualBatches,
+    catalogView,
+    clearAllLegacyVisualBatches,
+    legacyVisualBatches,
+    log,
+  ]);
 
   return {
     importVault,
-    exportVault,
+    exportWorkspaceSnapshot,
     downloadAndClearWorkspace,
   };
 }

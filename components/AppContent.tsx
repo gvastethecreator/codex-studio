@@ -3,16 +3,18 @@ import React, { Suspense } from 'react';
 import { useStudioShell } from '../hooks/useStudioShell';
 
 import { HeaderToolbar } from './HeaderToolbar';
-import LiquidBlackBackground from './LiquidBlackBackground';
+import { StudioOperationsRail } from './studio/StudioOperationsRail';
 import { StudioGenerationDock } from './shell/StudioGenerationDock';
 import { StudioViewport } from './shell/StudioViewport';
 import ToastContainer from './ToastContainer';
+
+const LiquidBlackBackground = React.lazy(() => import('./LiquidBlackBackground'));
 
 const AppOverlays = React.lazy(() =>
   import('./AppOverlays').then((m) => ({ default: m.AppOverlays })),
 );
 
-interface AppContentProps {}
+interface AppContentProps { }
 
 export const AppContent: React.FC<AppContentProps> = () => {
   const shell = useStudioShell();
@@ -25,21 +27,23 @@ export const AppContent: React.FC<AppContentProps> = () => {
       onDrop={shell.root.onDrop}
     >
       {shell.background && (
-        <LiquidBlackBackground
-          isGenerating={shell.background.isGenerating}
-          activeModel={shell.background.activeModel}
-          config={shell.background.config}
-        />
+        <Suspense fallback={null}>
+          <LiquidBlackBackground
+            isGenerating={shell.background.isGenerating}
+            activeModel={shell.background.activeModel}
+            config={shell.background.config}
+          />
+        </Suspense>
       )}
       <ToastContainer toasts={shell.toasts.items} onDismiss={shell.toasts.onDismiss} />
 
       {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
 
-      <main
-        className="flex-1 relative overflow-hidden z-10 w-full min-h-0"
-        onClick={shell.root.onMainClick}
-      >
-        <StudioViewport {...shell.viewport} />
+      <main className="relative z-10 flex w-full flex-1 min-h-0 overflow-hidden" onClick={shell.root.onMainClick}>
+        <div className="relative min-w-0 flex-1 overflow-hidden">
+          <StudioViewport {...shell.viewport} />
+        </div>
+        <StudioOperationsRail {...shell.viewport.studioPageController.operations} />
       </main>
 
       <StudioGenerationDock {...shell.generationDock} />

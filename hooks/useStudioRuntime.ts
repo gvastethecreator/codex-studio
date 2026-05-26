@@ -8,7 +8,7 @@ import { useStudioOnboarding } from './useStudioOnboarding';
 import { useStudioSessionVerifier } from './useStudioSessionVerifier';
 import { useStudioStorageRecovery } from './useStudioStorageRecovery';
 
-type MergeBatches = (
+type MergeLegacyVisualBatches = (
   batches: GenerationBatch[],
   options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
 ) => void;
@@ -16,8 +16,8 @@ type MergeBatches = (
 interface UseStudioRuntimeProps {
   logs: LogEntry[];
   log: (message: string) => void;
-  batches: GenerationBatch[];
-  mergeBatches: MergeBatches;
+  legacyVisualBatches: GenerationBatch[];
+  mergeLegacyVisualBatches: MergeLegacyVisualBatches;
   addToast: (message: string, type?: Toast['type']) => void;
   shouldAutoOpen: boolean;
   onCatalogChanged?: () => void;
@@ -32,7 +32,7 @@ interface UseStudioRuntimeProps {
  * @file hooks/useStudioRuntime.ts
  *
  * This is a REACT ORCHESTRATOR. It depends on multiple sub-hooks and takes
- * external state sinks (batches, mergeBatches, logs, toasts) as props.
+ * external state sinks (legacy visual batches, logs, toasts) as props.
  *
  * DO NOT confuse with services/studioRuntime.ts, which is a STATIC CONFIG
  * ADAPTER that only resolves the backend API base and desktop-vs-web runtime kind.
@@ -40,8 +40,8 @@ interface UseStudioRuntimeProps {
 export function useStudioRuntime({
   logs,
   log,
-  batches,
-  mergeBatches,
+  legacyVisualBatches,
+  mergeLegacyVisualBatches,
   addToast,
   shouldAutoOpen,
   onCatalogChanged,
@@ -52,8 +52,8 @@ export function useStudioRuntime({
     onCatalogChanged,
   });
   const recovery = useStudioStorageRecovery({
-    batches,
-    mergeBatches,
+    legacyVisualBatches,
+    mergeLegacyVisualBatches,
     addToast,
     log,
   });

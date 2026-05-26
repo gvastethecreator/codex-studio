@@ -1,4 +1,5 @@
 import { startViewTransition } from '../utils/transitionUtils';
+import type { GenerationBatch } from '../types';
 
 import type {
   StudioConfirmationOverlayProps,
@@ -50,6 +51,7 @@ interface StudioOverlayActivityContext {
 
 interface StudioOverlayVaultContext {
   handleImportVault: StudioSystemOverlaysProps['handleImportVault'];
+  handleExportWorkspaceSnapshot: StudioSystemOverlaysProps['handleExportWorkspaceSnapshot'];
   handleDeepScan: StudioSystemOverlaysProps['handleDeepScan'];
 }
 
@@ -98,7 +100,7 @@ interface StudioOverlaySettingsContext {
 }
 
 interface StudioOverlayWorkspaceContext {
-  batches: StudioSystemOverlaysProps['batches'];
+  catalogVisualBatches: GenerationBatch[];
   workspaces: StudioSystemOverlaysProps['workspaces'];
   trash: StudioWorkspaceOverlaysProps['trash'];
   restoreFromTrash: StudioWorkspaceOverlaysProps['restoreFromTrash'];
@@ -110,8 +112,8 @@ interface StudioOverlayWorkspaceContext {
 }
 
 interface StudioOverlayWorkspaceActions {
-  requestRestoreAllTrash: (batchCount: number) => void;
-  requestEmptyTrash: (batchCount: number) => void;
+  requestRestoreAllTrash: (groupCount: number) => void;
+  requestEmptyTrash: (groupCount: number) => void;
 }
 
 type StartTransition = (callback: () => void) => void;
@@ -173,7 +175,7 @@ export function buildStudioOverlayController({
       mergedLogs: activity.mergedLogs,
       isDashboardModalOpen: dashboard.isOpen,
       closeDashboard: dashboard.close,
-      batches: workspace.batches,
+      visualGroupsCount: workspace.catalogVisualBatches.length,
       workspaces: workspace.workspaces,
       studioJobs: activity.studioJobs,
       imagesCount: image.imagesWithConfig.length,
@@ -182,6 +184,7 @@ export function buildStudioOverlayController({
       onInspectJob: activity.onInspectJob,
       onClearSelectedJob: activity.onClearSelectedJob,
       handleImportVault: vault.handleImportVault,
+      handleExportWorkspaceSnapshot: vault.handleExportWorkspaceSnapshot,
       handleDeepScan: vault.handleDeepScan,
       apiBase: onboarding.apiBase,
       onboardingError: onboarding.error,
@@ -236,7 +239,7 @@ export function buildStudioOverlayController({
       isLimitModalOpen: workspace.isLimitModalOpen,
       handleDismissLimitModal: workspace.dismissLimitModal,
       handleDownloadAndClear: workspace.handleDownloadAndClear,
-      batchCount: workspace.batches.length,
+      visualGroupCount: workspace.catalogVisualBatches.length,
     },
     confirmationOverlay: confirmation,
   };

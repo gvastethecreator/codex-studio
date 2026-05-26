@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Search, X, ArrowRight, Database, Sparkles, LoaderCircle } from 'lucide-react';
 
-import { loadStylePresetCatalog } from './stylePresetCatalogData';
 import {
   searchStylePresetCatalog,
   type StylePresetCatalog,
@@ -35,9 +34,11 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
 
   useEffect(() => {
     let cancelled = false;
-    void loadStylePresetCatalog().then((loaded) => {
-      if (!cancelled) setCatalog(loaded);
-    });
+    void import('./stylePresetCatalogData')
+      .then(({ loadStylePresetCatalog }) => loadStylePresetCatalog())
+      .then((loaded) => {
+        if (!cancelled) setCatalog(loaded);
+      });
     return () => {
       cancelled = true;
     };

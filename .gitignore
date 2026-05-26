@@ -29,6 +29,9 @@ generated/
 *.local
 apps/studio-ui/dist
 components/recipes/styles/defaults/.locks/
+components/recipes/styleRuntimeData.generated.check.*.tmp.ts
+components/recipes/styleRuntimePacks.generated/*.check.*.tmp.ts
+components/recipes/styleRuntimePacks.generated/**/*.check.*.tmp.ts
 
 # Editor directories and files
 .vscode/*

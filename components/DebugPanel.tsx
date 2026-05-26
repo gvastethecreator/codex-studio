@@ -12,7 +12,7 @@ interface DebugPanelProps {
   logs: LogEntry[];
   workspaces: Workspace[];
   studioJobs: StudioJob[];
-  batchesCount: number;
+  visualGroupsCount: number;
   imagesCount: number;
   selectedJobDetail: JobDetailResponse | null;
   isLoadingSelectedJob: boolean;
@@ -53,7 +53,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   logs,
   workspaces,
   studioJobs,
-  batchesCount,
+  visualGroupsCount,
   imagesCount,
   selectedJobDetail,
   isLoadingSelectedJob,
@@ -87,7 +87,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
             workspaces={workspaces}
             logs={logs}
             studioJobs={studioJobs}
-            batchesCount={batchesCount}
+            visualGroupsCount={visualGroupsCount}
             imagesCount={imagesCount}
             selectedJobId={selectedJobDetail?.job.id ?? null}
             onInspectJob={onInspectJob}
@@ -127,7 +127,9 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
                 <div className="rounded-2xl border border-white/5 bg-white/5 p-4">
                   <div className="mb-2 flex items-center gap-2 text-zinc-500">
                     <Clock3 size={14} />
-                    <span className="text-[10px] font-black uppercase tracking-[0.18em]">Timing</span>
+                    <span className="text-[10px] font-black uppercase tracking-[0.18em]">
+                      Timing
+                    </span>
                   </div>
                   <div className="space-y-1 text-[11px] text-zinc-300">
                     <div>Created: {new Date(selectedJobDetail.job.createdAt).toLocaleString()}</div>
@@ -144,16 +146,16 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
                 <div className="rounded-2xl border border-white/5 bg-white/5 p-4">
                   <div className="mb-2 flex items-center gap-2 text-zinc-500">
                     <BrainCircuit size={14} />
-                    <span className="text-[10px] font-black uppercase tracking-[0.18em]">Execution</span>
+                    <span className="text-[10px] font-black uppercase tracking-[0.18em]">
+                      Execution
+                    </span>
                   </div>
                   <div className="space-y-1 text-[11px] text-zinc-300">
                     <div>Model: {selectedJobDetail.job.execution?.model || 'default'}</div>
                     <div>
                       Thinking: {selectedJobDetail.job.execution?.reasoningEffort || 'default'}
                     </div>
-                    <div>
-                      Speed: {selectedJobDetail.job.execution?.serviceTier || 'standard'}
-                    </div>
+                    <div>Speed: {selectedJobDetail.job.execution?.serviceTier || 'standard'}</div>
                   </div>
                 </div>
 
@@ -202,7 +204,9 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
                               {new Date(event.createdAt).toLocaleTimeString()}
                             </span>
                           </div>
-                          <p className="text-[11px] leading-relaxed text-zinc-300">{event.message}</p>
+                          <p className="text-[11px] leading-relaxed text-zinc-300">
+                            {event.message}
+                          </p>
                           {event.metadata ? (
                             <details className="mt-2">
                               <summary className="cursor-pointer text-[9px] font-bold uppercase tracking-wider text-zinc-500">

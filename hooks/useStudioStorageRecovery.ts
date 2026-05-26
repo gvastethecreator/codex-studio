@@ -3,29 +3,29 @@ import type { GenerationBatch, Toast } from '../types';
 import { collectRecoverableBatches } from '../lib/studioStorageRecovery';
 import { getAllEntries } from '../utils/idb';
 
-type MergeBatches = (
+type MergeLegacyVisualBatches = (
   batches: GenerationBatch[],
   options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
 ) => void;
 
 interface UseStudioStorageRecoveryProps {
-  batches: GenerationBatch[];
-  mergeBatches: MergeBatches;
+  legacyVisualBatches: GenerationBatch[];
+  mergeLegacyVisualBatches: MergeLegacyVisualBatches;
   addToast: (message: string, type: Toast['type']) => void;
   log: (message: string) => void;
 }
 
 export function useStudioStorageRecovery({
-  batches,
-  mergeBatches,
+  legacyVisualBatches,
+  mergeLegacyVisualBatches,
   addToast,
   log,
 }: UseStudioStorageRecoveryProps) {
-  const batchesRef = useRef(batches);
+  const legacyVisualBatchesRef = useRef(legacyVisualBatches);
 
   useEffect(() => {
-    batchesRef.current = batches;
-  }, [batches]);
+    legacyVisualBatchesRef.current = legacyVisualBatches;
+  }, [legacyVisualBatches]);
 
   const recoverOrphanedBatches = useCallback(async () => {
     addToast('Starting workspace recovery scan...', 'info');
@@ -42,11 +42,15 @@ export function useStudioStorageRecovery({
       const uniqueRecovered = collectRecoverableBatches({
         idbEntries,
         storageEntries,
-        existingBatchIds: batchesRef.current.map((batch) => batch.id),
+        existingBatchIds: legacyVisualBatchesRef.current.map((batch) => batch.id),
       });
 
       if (uniqueRecovered.length > 0) {
-        mergeBatches(uniqueRecovered, { prepend: true, maxTotal: 100, ensureWorkspaces: true });
+        mergeLegacyVisualBatches(uniqueRecovered, {
+          prepend: true,
+          maxTotal: 100,
+          ensureWorkspaces: true,
+        });
       }
 
       addToast(
@@ -56,10 +60,12 @@ export function useStudioStorageRecovery({
         uniqueRecovered.length > 0 ? 'success' : 'info',
       );
     } catch (error) {
-      log(`Workspace recovery scan failed: ${error instanceof Error ? error.message : String(error)}`);
+      log(
+        `Workspace recovery scan failed: ${error instanceof Error ? error.message : String(error)}`,
+      );
       addToast('Workspace recovery scan failed', 'error');
     }
-  }, [addToast, log, mergeBatches]);
+  }, [addToast, log, mergeLegacyVisualBatches]);
 
   return {
     recoverOrphanedBatches,

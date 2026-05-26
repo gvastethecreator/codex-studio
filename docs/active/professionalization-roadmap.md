@@ -61,8 +61,14 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: Styles runtime data no longer imports the full editorial catalog, dropping the built Styles Recipe chunk from about 2.20 MB to about 1.18 MB.
    - Done: Styles category groups now use viewport-aware mounting with estimated placeholders, so offscreen preset cards do not mount until their group is near the Style Browser viewport.
    - Done: Style Preset Catalog search is now a lazy Demand-Mounted Surface opened from Styles, so the editorial YAML graph loads only when needed.
+   - Done: Styles runtime presets are now split into lazy pack indexes and per-category chunks. `StylesRecipe` imports only pack summaries on mount; the active pack loads through `loadStylePack()`, which composes category chunks. Latest build: `StylesRecipe` 42.05 KB, `pack_05` index 22.13 KB, largest `pack_05` category chunk `anime-style-spectrum-12` 59.33 KB.
    - Done: all heavy modals (`ImageEditorModal`, `TrashModal`, `LimitReachedModal`, `StudioSettingsModal`, `DashboardModal`, `DebugPanel`, `OnboardingModal`) are now lazy-demand-mounted with conditional render + `Suspense`. Each modal in its own chunk outside the main bundle.
    - Done: `AppOverlays` itself is `React.lazy` from `AppContent` with a `Suspense` boundary, deferring all overlay chunks until after initial paint.
+   - Done: `CameraAnglesRecipe` no longer statically imports `three`. The camera viewport hook loads Three.js only after the viewport mounts, dropping the built recipe chunk from about 557 KB to 22.83 KB while isolating `three.module` as its own demand-loaded 722.74 KB chunk.
+   - Done: production-only entry cleanup removed eager `react-scan`, lazy-loaded ZIP export dependencies (`jszip`/`file-saver`) only when exporting multiple images, lazy-loaded `LiquidBlackBackground`, and route-lazy loaded `StudioPage`, `RecipesView`, and `RecipePage`. Latest build: main `index` dropped from 1,114.06 KB to 446.20 KB; remaining >500 KB warning is the demand-loaded `three.module` camera viewport chunk.
+   - Done: added `styles:render` / `styles:render:verify` to measure Styles initial render budgets per pack from generated runtime data. Current worst case is `pack_05`: 12 categories, 372 presets, 4 initial categories, 64 initial preset cards, 252 presets hidden behind category expansion.
+   - Done: added `ui:chunks` / `ui:chunks:verify` and wired chunk verification into `bun run build`, `build:ui`, and `validate:full`. The guard enforces budgets for `index`, `StylesRecipe`, `StylePresetCatalogSearchSurface`, `stylePresetCatalogData`, `CameraAnglesRecipe`, `three.module`, and `jszip`.
+   - Done: added `ui:source:verify` and wired it into `validate:full` before build. The guard blocks static imports that would undo demand-mounted boundaries for `react-scan`, `three`, catalog search data/YAML parser, ZIP vendors, Liquid background, and route pages.
    - Done: added UI integration tests for QueuePanel stats (3 tests), StudioViewport routing (2 tests), and HeaderToolbar status/labels (existing test preserved). Suite now at 66 files, 204 tests.
    - Next: add rendered UI measurements for large expanded packs.
 
@@ -86,7 +92,7 @@ Turn Codex Studio into a more professional local-first image studio while preser
 7. **Style Preset Manifests**
    - Done: generated lightweight Style Pack Manifests plus granular Style Preset Manifests under `components/recipes/styles/manifests/`.
    - Done: compatibility `STYLE_PACKS` is now composed from manifests so current UI keeps working.
-   - Done: validation covers graph refs, duplicate/orphan manifests, and legacy preset count parity.
+   - Done: validation covers graph refs, duplicate/orphan manifests, pack/category reference drift, pack namespace drift, and legacy preset count parity.
    - Done: runtime Styles data no longer imports monolithic legacy pack YAML when granular manifests are present.
    - Done: style default scripts now load and validate granular manifests before falling back to legacy packs.
    - Done: added a manifest-first Style Preset Catalog interface for direct preset, pack, and category lookups.
@@ -101,7 +107,7 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: `pack_04` now has persisted taxonomy across all 100 Style Preset Manifests and passes strict pack validation.
    - Done: `pack_05` now has persisted taxonomy across all 372 Style Preset Manifests and passes strict pack validation.
    - Done: `pack_06` through `pack_11` now have persisted taxonomy across their remaining 500 Style Preset Manifests and pass strict pack validation.
-   - Done: `styles:validate -- --coverage --strict-taxonomy` now proves all 1,252 Style Preset Manifests have persisted taxonomy and default images.
+   - Done: `styles:validate -- --coverage --strict-taxonomy` now proves all Style Preset Manifests have persisted taxonomy and default images.
    - Done: added `styles:catalog` so humans and agents can query the Style Preset Catalog by text, pack, category, tag, task, and JSON output without scanning compatibility packs.
    - Done: split the heavy Style Preset Catalog graph into `stylePresetCatalogData.ts` and generated a compact `styleRuntimeData.generated.ts` path for `stylesData.ts`, so the visual Styles Recipe no longer constructs catalog/taxonomy indexes at mount time.
    - Done: added `styles:runtime:check` and `styles:verify` so generated Styles runtime data can be proven current without rewriting files.
@@ -109,8 +115,16 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: added `styles:source:verify` and wired it into `styles:verify` so runtime code cannot accidentally reintroduce legacy pack YAML as the authoring source. Legacy usage is now limited to the compatibility loader, migration split script, and compatibility tests.
    - Done: `styles:split` now refuses to overwrite granular manifests from legacy pack YAML unless the migration-only `styles:split:legacy` path is used explicitly.
    - Next: author new presets directly in granular files, keep `styles:runtime` in sync with manifest edits, and retire monolithic pack YAML files after compatibility parity no longer needs them.
-   - Done: authored `SP01-081` (Soft Editorial Window) as first direct-granular preset proof. Full authoring cycle verified: create YAML → register in pack manifest → validate → regenerate runtime data. Added `docs/STYLE_PRESET_AUTHORING.md` with YAML template, taxonomy contract, and workflow commands.
+   - Done: authored `SP01-081` (Soft Editorial Window) as first direct-granular preset proof. Full authoring cycle verified: create YAML → register in pack manifest → add repo default image → validate → regenerate runtime data. Added `docs/STYLE_PRESET_AUTHORING.md` with YAML template, taxonomy contract, and workflow commands.
+   - Done: added `assets/recipes/styles/defaults/SP01-081.webp` and updated the manifest taxonomy/assets block. Latest `styles:verify` shows 1,253/1,253 presets with taxonomy and default images; no missing default-image sample remains.
    - Done: Style Preset Catalog search data is now split into lazy per-pack YAML chunks. `stylePresetCatalogData.ts` uses `eager: false` globs with async `loadStylePresetCatalog()`. The `StylePresetCatalogSearchSurface` is demand-mounted via `React.lazy` in `StylesRecipe` and loads catalog data asynchronously with a loading state. The search surface chunk dropped from about 2,113 KB to about 189 KB.
+   - Done: Style Preset Catalog search now demand-loads the catalog data module and YAML parser separately. Latest build: `StylePresetCatalogSearchSurface` 7.22 KB, `stylePresetCatalogData` 148.37 KB, `js-yaml` 39.60 KB.
+   - Done: visual Styles runtime data is now split by pack and category. `styleRuntimeData.generated.ts` is a small summary/loader index, `styleRuntimePacks.generated/<pack>.ts` composes category chunks from `styleRuntimePacks.generated/<pack>/<category>.ts`, `stylesData.ts` exposes async loaders, and `StylesRecipe` loads the current pack on demand instead of importing the full 1.4 MB generated runtime or a 498 KB pack chunk.
+   - Done: Style Pack Manifest validation now rejects duplicate top-level `presetRefs`, category refs missing from the pack-level list, and refs that point outside the pack namespace.
+   - Done: `styles:source:verify` now also blocks generated runtime check temp files (`styleRuntimeData.generated.check.*.tmp.ts` and per-pack check temps), keeping the generated preset pipeline from committing verification artifacts.
+   - Done: `styles:source:verify` now also compares legacy pack YAML ids against granular manifests and fails if any preset exists only in `components/recipes/styles/packs`. Current state: 1,252 legacy presets, 1,253 granular manifests, 0 legacy-only presets.
+   - Done: deleted `components/recipes/legacyStylesData.ts`, removing the importable runtime module over legacy pack YAML. Remaining legacy access is limited to the migration script plus the source-audit guard/test.
+   - Done: `styles:verify` now includes `styles:render:verify`, so broad preset work also proves large packs remain bounded in the Styles browser initial render path.
 
 8. **Pipeline and token efficiency**
    - Done: `scripts/tooling-task.ts` forwards extra args for filtered `test`, `check`, `check:fix`, `fmt`, `fmt:check`, and `test:coverage` runs. Focused validation now executes only requested files during iteration.
@@ -119,7 +133,29 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: added `recipes:evaluate` script and test harness. Generates bare/legacy/directives prompt variants per recipe, measures size savings (41–56% directives vs legacy), and writes JSON evaluation reports. Supports `--dry-run`, `--out=<dir>`, and `--recipe=<id>` filters.
    - Done: added backend DI seam for logger. `appFactory` now accepts `dependencies.logger` and injects it into the worker controller. `getDefaultWorkerController` accepts an optional `logger` override. `useStudioRuntime` hook and `services/studioRuntime.ts` now have clarifying JSDoc distinguishing the React orchestrator from the static config adapter.
    - Done: audited all broad validation scripts — `validate-style-preset-manifests.ts` already supports `--pack=` / `--preset=` filters, `audit-provider-inputs.ts` supports `--provider=` / `--recipe=` / `--no-external-fixtures`, `query-recipe-modules.ts` supports `--provider=` / `--query=` / `--task=` / `--parameter=`. All can be scoped to changed files.
-   - Next: run live Codex output quality comparison using the evaluation harness, split StylesRecipe runtime data per-pack.
+   - Done: frontend bundle cleanup avoids loading dev-only scanner and ZIP/export dependencies during normal startup.
+   - Next: run live Codex output quality comparison using the evaluation harness, then measure rendered UI for expanded Styles packs.
+
+9. **Catalog-first Visual Batch migration**
+   - Done: split `lib/studioCatalogView.ts` into a pure Catalog Entry read model and `lib/studioCatalogVisualBatchAdapter.ts` as the temporary compatibility adapter that materializes `GenerationBatch[]`.
+   - Done: added `catalog:source:verify` and wired it into `validate:full`, blocking regressions where `StudioCatalogView` imports Visual Batch adapters or `useCatalog` reads `catalog-cache`/global batch state.
+
+- Done: `useStudioGallery` can now receive `StudioCatalogView` and materialize `imagesWithConfig` directly from Catalog Entries through `materializeCatalogEntryImageWithConfig`, while Visual Batches remain only for current selection/action compatibility.
+- Done: `useImageManager` now accepts an optional image list, so gallery selection/delete/select-all/clear counts can operate on Catalog Entry materialized images when `catalogView` is present. Visual Batches remain as fallback for legacy callers.
+- Done: workspace strip counts and thumbnails now prefer `StudioCatalogView` Catalog Entries; `GenerationBatch[]` is fallback only for legacy callers.
+- Done: trash modal now receives archived Catalog Entry groups from `buildArchivedImageGroupsFromCatalog()` instead of `GenerationBatch[]`; restore/empty actions still target catalog entry ids through `trashCatalog.view`.
+- Done: dashboard stats now receive catalog-derived `imagesCount` plus a snapshot export callback; `DashboardModal` no longer needs `GenerationBatch[]`.
+- Done: workspace snapshot export now uses `buildLegacyVisualBatchSnapshot()` to make the legacy-compatible `GenerationBatch[]` edge explicit; workspace ZIP images still prefer `StudioCatalogView`.
+- Done: legacy Visual Batch cache keys and snapshot validation now live in `studioLegacyVisualBatchStore`; `catalog:source:verify` fails if raw `catalog-cache`/`catalog-trash` strings spread outside that compatibility module.
+- Done: `GlobalContext` public import/archive methods and reducer actions now say `LegacyVisualBatches` explicitly instead of generic replace/archive batch names.
+- Done: recovery/runtime merge path now says `mergeLegacyVisualBatches` / `MERGE_LEGACY_VISUAL_BATCHES`; no generic `mergeBatches` API remains.
+- Done: generated output append path now says `prependGeneratedVisualBatch` / `PREPEND_GENERATED_VISUAL_BATCH`; no generic `prependBatch` API remains.
+- Done: `GlobalContext` now exposes `legacyVisualBatches` / `legacyVisualTrash` instead of generic public `batches` / `trash`.
+- Done: internal `GlobalState` storage is now `legacyVisualBatches` / `legacyVisualTrash`, and remaining delete/favorite/clear/restore/empty reducer actions now carry `LEGACY_VISUAL` names.
+- Done: gallery, workspace strip, and vault transfer hooks now take `catalogView` as the primary path and only accept `legacyVisualBatches` as an explicitly named fallback.
+- Done: storage recovery now receives `legacyVisualBatches` explicitly, overlay/page controller counts are `catalogVisualGroupCount` / `visualGroupsCount`, and Archived Images wording no longer says generic archived batches.
+- Done: `useCatalog` now exposes only Catalog Entries and `StudioCatalogView`; Visual Batch materialization moved out of the hook and into the Studio Shell compatibility edge.
+- Next: continue reducing shell `catalogVisualBatches` and remaining `GenerationBatch[]` helper names once grid/export consumers can accept Catalog Entries directly.
 
 ## Guardrails
 

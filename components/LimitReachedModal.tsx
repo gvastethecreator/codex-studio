@@ -6,14 +6,14 @@ interface LimitReachedModalProps {
   isOpen: boolean;
   onClose: () => void;
   onDownloadAndClear: () => void;
-  batchCount: number;
+  visualGroupCount: number;
 }
 
 export const LimitReachedModal: React.FC<LimitReachedModalProps> = ({
   isOpen,
   onClose,
   onDownloadAndClear,
-  batchCount,
+  visualGroupCount,
 }) => {
   if (!isOpen) return null;
 
@@ -55,9 +55,9 @@ export const LimitReachedModal: React.FC<LimitReachedModalProps> = ({
 
           <div className="p-6">
             <p className="text-zinc-300 text-sm mb-6 leading-relaxed">
-              You have reached the maximum recommended number of batches ({batchCount}). To prevent
-              performance issues and data loss, we recommend downloading your images as a ZIP file
-              and clearing your workspace.
+              You have reached the maximum recommended number of visual groups ({visualGroupCount}
+              ). To prevent performance issues and data loss, we recommend downloading your images
+              as a ZIP file and clearing your workspace.
             </p>
 
             <div className="flex flex-col gap-3">

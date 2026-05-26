@@ -1,5 +1,8 @@
 import type { GenerationBatch } from '../types';
-import { validateVault } from '../utils/fileUtils';
+import {
+  LEGACY_VISUAL_BATCH_CACHE_KEYS,
+  validateLegacyVisualBatchVault,
+} from './studioLegacyVisualBatchStore';
 
 export interface RecoverableIdbEntry {
   key: IDBValidKey;
@@ -14,8 +17,7 @@ export interface RecoverableStorageEntry {
 export const DEFAULT_RECOVERY_IGNORED_KEYS = [
   'session-logs',
   'app-workspaces',
-  'catalog-cache',
-  'catalog-trash',
+  ...LEGACY_VISUAL_BATCH_CACHE_KEYS,
   'user-wallet-balance',
   'bg-config',
   'isBackgroundEnabled',
@@ -23,13 +25,13 @@ export const DEFAULT_RECOVERY_IGNORED_KEYS = [
 ] as const;
 
 function appendRecoverableCandidates(target: GenerationBatch[], value: unknown) {
-  if (Array.isArray(value) && validateVault(value)) {
+  if (Array.isArray(value) && validateLegacyVisualBatchVault(value)) {
     target.push(...value);
     return;
   }
 
   const singleBatchCandidate = [value];
-  if (validateVault(singleBatchCandidate)) {
+  if (validateLegacyVisualBatchVault(singleBatchCandidate)) {
     target.push(singleBatchCandidate[0]);
   }
 }

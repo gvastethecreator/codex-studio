@@ -12,8 +12,7 @@ import {
   validateStyleManifestGraph,
 } from './stylePresetManifests';
 import { loadStylePresetCatalog } from './stylePresetCatalogData';
-import { STYLE_PACKS, STYLE_PRESET_BY_ID, STYLE_PRESET_PACK_ID_BY_ID } from './stylesData';
-import { LEGACY_STYLE_PACKS } from './legacyStylesData';
+import { loadStylePresetIndex } from './stylesData';
 
 describe('stylePresetManifests', () => {
   it('normalizes legacy style packs into granular preset manifests and lightweight pack manifests', () => {
@@ -286,6 +285,58 @@ describe('stylePresetManifests', () => {
     ]);
   });
 
+  it('reports pack/category reference drift in lightweight pack manifests', () => {
+    const validation = validateStyleManifestGraph(
+      [
+        {
+          schemaVersion: 1,
+          id: 'pack-a',
+          name: 'Pack A',
+          description: 'First pack',
+          categories: [
+            {
+              id: 'cinematic',
+              name: 'Cinematic',
+              presetRefs: ['pack-a/preset-a.yaml', 'pack-b/preset-b.yaml'],
+            },
+          ],
+          presetRefs: ['pack-a/preset-a.yaml', 'pack-a/preset-a.yaml'],
+        },
+      ],
+      [
+        {
+          schemaVersion: 1,
+          id: 'preset-a',
+          packId: 'pack-a',
+          name: 'Preset A',
+          category: 'Cinematic',
+          version: 1,
+          supportedTasks: ['image_generate'],
+          tags: ['pack-a', 'cinematic'],
+          visualDna: {
+            aesthetic: 'x',
+            subject_treatment: 'x',
+            color_and_tone: 'x',
+            lighting_and_shadow: 'x',
+            texture_and_material: 'x',
+            camera_and_composition: 'x',
+            atmosphere_and_mood: 'x',
+            rendering_and_quality: 'x',
+          },
+          avoidRules: [],
+          assets: {},
+        },
+      ],
+    );
+
+    expect(validation.valid).toBe(false);
+    expect(validation.errors).toEqual([
+      'Pack pack-a references preset more than once: pack-a/preset-a.yaml',
+      'Pack pack-a category cinematic references preset absent from pack presetRefs: pack-b/preset-b.yaml',
+      'Pack pack-a category cinematic references preset outside pack namespace: pack-b/preset-b.yaml',
+    ]);
+  });
+
   it('reports manifest contract drift beyond graph references', () => {
     const validation = validateStyleManifestGraph(
       [
@@ -342,25 +393,24 @@ describe('stylePresetManifests', () => {
     ]);
   });
 
-  it('loads current repo from granular manifests without losing legacy preset count', async () => {
-    const legacyPresetCount = LEGACY_STYLE_PACKS.reduce(
-      (total, pack) => total + pack.presets.length,
-      0,
-    );
-
+  it('loads current repo from granular manifests without legacy runtime data', async () => {
     const catalog = await loadStylePresetCatalog();
     const recomposedPacks = composeStylePacksFromManifests(
       catalog.packManifests,
       catalog.presetManifests,
     );
-    const composedPresetCount = STYLE_PACKS.reduce((total, pack) => total + pack.presets.length, 0);
+    const runtimeIndex = await loadStylePresetIndex();
+    const composedPresetCount = runtimeIndex.packs.reduce(
+      (total, pack) => total + pack.presets.length,
+      0,
+    );
 
     expect(catalog.graph.errors).toEqual([]);
-    expect(catalog.packManifests).toHaveLength(LEGACY_STYLE_PACKS.length);
-    expect(catalog.presetManifests).toHaveLength(legacyPresetCount + 1);
-    expect(composedPresetCount).toBe(legacyPresetCount + 1);
-    expect(STYLE_PACKS).toEqual(recomposedPacks);
-    expect(STYLE_PRESET_BY_ID.get('SP01-001')?.name).toBeTruthy();
-    expect(STYLE_PRESET_PACK_ID_BY_ID.get('SP01-001')).toBe('pack_01');
+    expect(catalog.packManifests).toHaveLength(11);
+    expect(catalog.presetManifests).toHaveLength(1253);
+    expect(composedPresetCount).toBe(catalog.presetManifests.length);
+    expect(runtimeIndex.packs).toEqual(recomposedPacks);
+    expect(runtimeIndex.presetById.get('SP01-001')?.name).toBeTruthy();
+    expect(runtimeIndex.presetPackIdById.get('SP01-001')).toBe('pack_01');
   });
 });

@@ -69,7 +69,7 @@ interface GenerationProviderProps {
 }
 
 export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children }) => {
-  const { log, activeWorkspaceId, prependBatch, addToast } = useGlobal();
+  const { log, activeWorkspaceId, prependGeneratedVisualBatch, addToast } = useGlobal();
 
   const [activeRecipe, setActiveRecipe] = useState<RecipeId>(null);
   const [isInteractingWithToolbar, setIsInteractingWithToolbar] = useState(false);
@@ -91,7 +91,7 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
   const pipelineHook = useGenerationPipeline({
     generationConfig: configHook.generationConfig,
     activeWorkspaceId,
-    prependBatch,
+    prependGeneratedVisualBatch,
     addToast,
     log,
     activeRecipe,

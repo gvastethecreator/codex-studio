@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 
+import type { StudioQueueResultPreview } from '../../lib/studioQueueResults';
 import type { StudioDiagnosticsSnapshot } from '../../lib/studioDiagnostics';
 import type { Job as StudioJob } from '../../packages/shared/src';
 import type { QueueJob } from '../../types';
@@ -11,6 +12,7 @@ export interface StudioOperationsRailProps {
     isQueueOpen: boolean;
     setIsQueueOpen: React.Dispatch<React.SetStateAction<boolean>>;
     jobs: QueueJob[];
+    queueResults: StudioQueueResultPreview[];
     studioJobs: StudioJob[];
     selectedStudioJobId: string | null;
     retry: (jobId: string) => void;
@@ -19,7 +21,7 @@ export interface StudioOperationsRailProps {
     removeJob: (jobId: string) => void;
     clearCompleted: () => void;
     isResting: boolean;
-    exportBatches: () => void;
+    exportWorkspaceSnapshot: () => void;
     handleImportVault: (event: React.ChangeEvent<HTMLInputElement>) => void | Promise<void>;
     isBackgroundEnabled: boolean;
     setBackgroundEnabled: (enabled: boolean) => void;
@@ -35,6 +37,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
     isQueueOpen,
     setIsQueueOpen,
     jobs,
+    queueResults,
     studioJobs,
     selectedStudioJobId,
     retry,
@@ -66,6 +69,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
                     >
                         <QueuePanel
                             jobs={jobs}
+                            results={queueResults}
                             serverJobs={studioJobs}
                             selectedJobId={selectedStudioJobId}
                             onRetry={retry}

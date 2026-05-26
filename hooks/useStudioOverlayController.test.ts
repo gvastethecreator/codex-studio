@@ -93,6 +93,9 @@ describe('buildStudioOverlayController', () => {
         handleImportVault: () => {
           calls.push('importVault');
         },
+        handleExportWorkspaceSnapshot: () => {
+          calls.push('exportWorkspaceSnapshot');
+        },
         handleDeepScan: () => {
           calls.push('deepScan');
         },
@@ -164,7 +167,7 @@ describe('buildStudioOverlayController', () => {
         isResettingStudio: false,
       },
       workspace: {
-        batches: [
+        catalogVisualBatches: [
           {
             id: 'batch-1',
             workspaceId: 'default',
@@ -192,16 +195,18 @@ describe('buildStudioOverlayController', () => {
           {
             id: 'trash-1',
             workspaceId: 'default',
-            config: DEFAULT_GENERATION_CONFIG,
-            images: [],
             createdAt: 1,
+            prompt: 'archived one',
+            model: 'codex-imagegen',
+            imageCount: 1,
           },
           {
             id: 'trash-2',
             workspaceId: 'default',
-            config: DEFAULT_GENERATION_CONFIG,
-            images: [],
             createdAt: 2,
+            prompt: 'archived two',
+            model: 'codex-imagegen',
+            imageCount: 2,
           },
         ],
         restoreFromTrash: (batchId) => calls.push(`restore:${batchId}`),
@@ -235,13 +240,15 @@ describe('buildStudioOverlayController', () => {
     });
 
     expect(controller.systemOverlays.imagesCount).toBe(2);
-    expect(controller.workspaceOverlays.batchCount).toBe(3);
+    expect(controller.systemOverlays.visualGroupsCount).toBe(3);
+    expect(controller.workspaceOverlays.visualGroupCount).toBe(3);
 
     controller.systemOverlays.closeOnboarding();
     controller.systemOverlays.completeOnboarding();
     controller.systemOverlays.refreshOnboardingHealth();
     controller.systemOverlays.ensureAppServer();
     controller.systemOverlays.closeSettings();
+    controller.systemOverlays.handleExportWorkspaceSnapshot();
     void controller.systemOverlays.refreshSettings();
     controller.workspaceOverlays.restoreAllFromTrash();
     controller.workspaceOverlays.emptyTrash();
@@ -254,6 +261,7 @@ describe('buildStudioOverlayController', () => {
       'refreshOnboardingHealth',
       'ensureAppServer',
       'closeSettings',
+      'exportWorkspaceSnapshot',
       'refreshSettings',
       'restoreAll:2',
       'emptyTrash:2',

@@ -51,4 +51,23 @@ describe('providerCapabilities', () => {
       ]),
     );
   });
+
+  it('marks configured local workflow adapters executable when runtime is ready', () => {
+    const report = createGenerationProviderCapabilities({
+      settings: { defaultProviderId: 'comfy' },
+      localRuntimeConfigured: { comfy: true },
+    });
+
+    expect(report.providers).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          providerId: 'comfy',
+          status: 'active',
+          canExecute: true,
+          isDefault: true,
+          secretState: 'not_required',
+        }),
+      ]),
+    );
+  });
 });

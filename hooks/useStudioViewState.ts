@@ -3,7 +3,7 @@ import type { Attachment, AspectRatio } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
 
 interface UseStudioViewStateProps {
-  batchCount: number;
+  visualGroupCount: number;
   downloadAndClearWorkspace: () => Promise<boolean>;
   closeOverlay: () => void;
 }
@@ -13,11 +13,11 @@ interface UseStudioViewStateProps {
  * toolbar visibility) so AppContent does not own each toggle directly.
  */
 export function useStudioViewState({
-  batchCount,
+  visualGroupCount,
   downloadAndClearWorkspace,
   closeOverlay,
 }: UseStudioViewStateProps) {
-  const [isQueueOpen, setIsQueueOpen] = useState(false);
+  const [isQueueOpen, setIsQueueOpen] = useState(true);
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [imageToEdit, setImageToEdit] = useState<Attachment | null>(null);
   const [previewRatio, setPreviewRatio] = useState<AspectRatio | null>(null);
@@ -28,10 +28,10 @@ export function useStudioViewState({
   const [hasDismissedLimitModal, setHasDismissedLimitModal] = useState(false);
 
   useEffect(() => {
-    if (batchCount > 100 && !hasDismissedLimitModal && !isLimitModalOpen) {
+    if (visualGroupCount > 100 && !hasDismissedLimitModal && !isLimitModalOpen) {
       setIsLimitModalOpen(true);
     }
-  }, [batchCount, hasDismissedLimitModal, isLimitModalOpen]);
+  }, [hasDismissedLimitModal, isLimitModalOpen, visualGroupCount]);
 
   const openDashboard = useCallback(() => {
     startViewTransition(() => setIsDashboardModalOpen(true));
@@ -57,16 +57,13 @@ export function useStudioViewState({
     startViewTransition(() => setIsTrashModalOpen(false));
   }, []);
 
-  const openEditor = useCallback(
-    (attachment: Attachment, openEditorRoute: () => void) => {
-      startViewTransition(() => {
-        setImageToEdit(attachment);
-        setIsEditorOpen(true);
-        openEditorRoute();
-      });
-    },
-    [],
-  );
+  const openEditor = useCallback((attachment: Attachment, openEditorRoute: () => void) => {
+    startViewTransition(() => {
+      setImageToEdit(attachment);
+      setIsEditorOpen(true);
+      openEditorRoute();
+    });
+  }, []);
 
   const closeEditor = useCallback(() => {
     startViewTransition(() => {
@@ -90,7 +87,7 @@ export function useStudioViewState({
   }, [downloadAndClearWorkspace]);
 
   const resetViewState = useCallback(() => {
-    setIsQueueOpen(false);
+    setIsQueueOpen(true);
     setIsEditorOpen(false);
     setImageToEdit(null);
     setPreviewRatio(null);

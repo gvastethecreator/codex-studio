@@ -7,7 +7,8 @@ interface UseImageManagerProps {
   log: (message: string) => void;
   handleCloseModal: () => void;
   modalImage?: GeneratedImageWithConfig | null;
-  batches: GenerationBatch[];
+  legacyVisualBatches?: GenerationBatch[];
+  images?: GeneratedImage[];
   deleteImage: (imageId: string) => void;
   deleteImages: (imageIds: string[]) => void;
   toggleImageFavorite: (imageId: string) => void;
@@ -24,7 +25,8 @@ export const useImageManager = ({
   log,
   handleCloseModal,
   modalImage,
-  batches,
+  legacyVisualBatches = [],
+  images,
   deleteImage,
   deleteImages,
   toggleImageFavorite,
@@ -35,8 +37,11 @@ export const useImageManager = ({
 
   // OPTIMIZATION: Memoize allImages to prevent new references on every render
   const allImages = useMemo(() => {
-    return batches.flatMap((b) => b.images);
-  }, [batches]);
+    if (images) {
+      return images;
+    }
+    return legacyVisualBatches.flatMap((b) => b.images);
+  }, [legacyVisualBatches, images]);
 
   const handleSelectionChange = useCallback((id: string, selected: boolean) => {
     startViewTransition(() => {
@@ -49,7 +54,7 @@ export const useImageManager = ({
   const handleDelete = useCallback(
     (imageId: string) => {
       const performDelete = () => {
-        if (!batches.some((batch) => batch.images.some((img) => img.id === imageId))) return;
+        if (!allImages.some((image) => image.id === imageId)) return;
 
         deleteImage(imageId);
 
@@ -62,7 +67,7 @@ export const useImageManager = ({
 
       startViewTransition(performDelete);
     },
-    [batches, modalImage, deleteImage, handleCloseModal, log],
+    [allImages, modalImage, deleteImage, handleCloseModal, log],
   );
 
   const handleDeleteSelected = useCallback(() => {
@@ -113,7 +118,7 @@ export const useImageManager = ({
       startViewTransition(() => {
         clearWorkspace(activeWorkspaceId);
         setSelectedImageIds([]);
-        log(`Moved workspace ${activeWorkspaceId} batches to archives.`);
+        log(`Moved workspace ${activeWorkspaceId} images to archives.`);
       });
     },
     [allImages.length, clearWorkspace, log, onRequestClearWorkspace],

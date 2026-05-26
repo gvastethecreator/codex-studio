@@ -22,6 +22,7 @@ import type {
   Workspace,
 } from '../../types';
 import type { ConfirmationRequest } from '../../hooks/useStudioActionConfirmations';
+import type { ArchivedImageGroup } from '../../lib/studioCatalogTrashView';
 
 export interface StudioImageOverlaysProps {
   modalImage: GeneratedImageWithConfig | null;
@@ -51,7 +52,7 @@ export interface StudioSystemOverlaysProps {
   mergedLogs: LogEntry[];
   isDashboardModalOpen: boolean;
   closeDashboard: () => void;
-  batches: GenerationBatch[];
+  visualGroupsCount: number;
   workspaces: Workspace[];
   studioJobs: StudioJob[];
   imagesCount: number;
@@ -60,6 +61,7 @@ export interface StudioSystemOverlaysProps {
   onInspectJob: (jobId: string) => void;
   onClearSelectedJob: () => void;
   handleImportVault: (event: ChangeEvent<HTMLInputElement>) => void | Promise<void>;
+  handleExportWorkspaceSnapshot: () => void;
   handleDeepScan: () => void | Promise<void>;
   apiBase: string;
   onboardingError: string | null;
@@ -108,14 +110,14 @@ export interface StudioSystemOverlaysProps {
 export interface StudioWorkspaceOverlaysProps {
   isTrashModalOpen: boolean;
   closeTrash: () => void;
-  trash: GenerationBatch[];
+  trash: ArchivedImageGroup[];
   restoreFromTrash: (batchId: string) => void;
   restoreAllFromTrash: () => void;
   emptyTrash: () => void;
   isLimitModalOpen: boolean;
   handleDismissLimitModal: () => void;
   handleDownloadAndClear: () => void | Promise<void>;
-  batchCount: number;
+  visualGroupCount: number;
 }
 
 export interface StudioConfirmationOverlayProps {

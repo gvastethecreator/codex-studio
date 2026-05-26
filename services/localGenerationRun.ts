@@ -144,6 +144,7 @@ async function buildJobAssets({
 export async function runSingleCodexImagegenJob(options: {
   config: ImageGenerationConfig;
   batchId: string;
+  workspaceId: string;
   providerId: GenerationProviderId;
   inputImage?: RunLocalGenerationOptions['inputImage'];
   stream?: StudioEventStream;
@@ -151,7 +152,7 @@ export async function runSingleCodexImagegenJob(options: {
   onJobCreated?: (job: StudioJob) => void;
   onProgress?: (message: string) => void;
 }) {
-  const { config, batchId, providerId, inputImage, signal, onProgress } = options;
+  const { config, batchId, workspaceId, providerId, inputImage, signal, onProgress } = options;
   throwIfAborted(signal);
   const projects = await listProjects();
   const projectId = projects[0]?.id;
@@ -184,6 +185,11 @@ export async function runSingleCodexImagegenJob(options: {
     sourceSpec: {
       ...sourceSpec,
       assets: requestAssets,
+      metadata: {
+        ...(sourceSpec.metadata ?? {}),
+        workspaceId,
+        batchId,
+      },
     },
     prompt: finalPrompt,
     execution: {
@@ -265,6 +271,7 @@ export async function runLocalGeneration({
         const images = await runSingleCodexImagegenJob({
           config: resolvedConfig,
           batchId,
+          workspaceId,
           providerId,
           signal,
           onJobCreated,

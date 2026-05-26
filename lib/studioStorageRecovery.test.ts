@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import type { GenerationBatch } from '../types';
+import { LEGACY_VISUAL_BATCH_CACHE_KEYS } from './studioLegacyVisualBatchStore';
 import { collectRecoverableBatches } from './studioStorageRecovery';
 
 function createBatch(id: string): GenerationBatch {
@@ -26,7 +27,7 @@ describe('collectRecoverableBatches', () => {
     const recovered = collectRecoverableBatches({
       idbEntries: [
         { key: 'orphaned-batch', value: createBatch('idb-batch') },
-        { key: 'catalog-cache', value: [createBatch('ignored-cache')] },
+        { key: LEGACY_VISUAL_BATCH_CACHE_KEYS[0], value: [createBatch('ignored-cache')] },
       ],
       storageEntries: [
         { key: 'snapshot', value: JSON.stringify([createBatch('storage-batch')]) },
