@@ -160,10 +160,13 @@ function findPackPresetInsertIndex(
   packManifest: StylePackManifest,
   category: StylePackManifestCategory,
 ) {
+  const presetRefIndexMap = new Map<string, number>();
+  packManifest.presetRefs.forEach((ref, index) => presetRefIndexMap.set(ref, index));
+
   let lastCategoryRefIndex = -1;
 
   for (const ref of category.presetRefs) {
-    const index = packManifest.presetRefs.indexOf(ref);
+    const index = presetRefIndexMap.get(ref) ?? -1;
     if (index > lastCategoryRefIndex) {
       lastCategoryRefIndex = index;
     }
@@ -182,7 +185,7 @@ function findPackPresetInsertIndex(
   const categoryIndex = packManifest.categories.findIndex((entry) => entry.id === category.id);
   for (let index = categoryIndex + 1; index < packManifest.categories.length; index += 1) {
     for (const ref of packManifest.categories[index].presetRefs) {
-      const packRefIndex = packManifest.presetRefs.indexOf(ref);
+      const packRefIndex = presetRefIndexMap.get(ref) ?? -1;
       if (packRefIndex >= 0) {
         return packRefIndex;
       }

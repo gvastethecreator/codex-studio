@@ -460,11 +460,11 @@ export async function createStudioApp(
         });
 
         while (!stream.aborted) {
-          await stream.sleep(10_000);
           if (stream.aborted) {
             break;
           }
 
+          await stream.sleep(10_000);
           await stream.write(`: keep-alive ${Date.now()}\n\n`);
         }
       } finally {

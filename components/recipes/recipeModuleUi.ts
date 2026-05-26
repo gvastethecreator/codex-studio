@@ -44,9 +44,11 @@ export function getRecipeOptions(module: RecipeModule, parameterId: string) {
 }
 
 export function getRecipeNumberOptions(module: RecipeModule, parameterId: string) {
-  return getRecipeParameterOptions(module, parameterId)
-    .map((option) => Number(option))
-    .filter((option) => Number.isFinite(option));
+  return getRecipeParameterOptions(module, parameterId).reduce<number[]>((acc, option) => {
+    const num = Number(option);
+    if (Number.isFinite(num)) acc.push(num);
+    return acc;
+  }, []);
 }
 
 export function getRecipeRange(

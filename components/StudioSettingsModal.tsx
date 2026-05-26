@@ -1,4 +1,3 @@
-import React, { useEffect, useMemo, useState } from 'react';
 import {
   Database,
   FileImage,
@@ -13,21 +12,29 @@ import {
   Upload,
   X,
 } from 'lucide-react';
+import type React from 'react';
+import { useMemo, useRef, useState } from 'react';
 
 import {
   BUILT_IN_GENERATION_PROVIDERS,
-  type EditableStudioSettings,
-  type EditableStudioSettingsPatch,
-  type ExternalOutputSourceCandidate,
-  type ExternalOutputSourceFile,
-  type ExternalOutputSourcesResponse,
-  type GenerationProviderCapabilitiesResponse,
   type GenerationProviderId,
-  type GenerationProviderRuntimePreflightResponse,
-  type StudioOutputSubfolderToken,
-  type RegisterExternalOutputSourceInput,
-  type StudioOutputMode,
-} from '../packages/shared/src';
+} from '../packages/shared/src/generationContracts';
+import type {
+  ExternalOutputSourceCandidate,
+  ExternalOutputSourceFile,
+  ExternalOutputSourcesResponse,
+  RegisterExternalOutputSourceInput,
+} from '../packages/shared/src/outputSources';
+import type {
+  GenerationProviderCapabilitiesResponse,
+  GenerationProviderRuntimePreflightResponse,
+} from '../packages/shared/src/providerCapabilities';
+import type {
+  EditableStudioSettings,
+  EditableStudioSettingsPatch,
+  StudioOutputMode,
+  StudioOutputSubfolderToken,
+} from '../packages/shared/src/studioSettings';
 
 interface StudioSettingsModalProps {
   isOpen: boolean;
@@ -118,30 +125,57 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   onResetStudio,
   isResettingStudio,
 }) => {
-  const [defaultProviderId, setDefaultProviderId] = useState<GenerationProviderId>('codex');
-  const [defaultOutputMode, setDefaultOutputMode] = useState<StudioOutputMode>('studio_library');
-  const [preferredOutputPath, setPreferredOutputPath] = useState('');
-  const [outputSubfolderPreset, setOutputSubfolderPreset] = useState(
-    encodeSubfolderTokens(['date', 'provider', 'recipe']),
-  );
-  const [outputFileNameTemplate, setOutputFileNameTemplate] = useState(
-    '{timestamp}-{provider}-{jobId}',
-  );
-  const [autoDetectOutputSources, setAutoDetectOutputSources] = useState(true);
-  const [commandCenterCompactMode, setCommandCenterCompactMode] = useState(false);
+  interface FormState {
+    defaultProviderId: GenerationProviderId;
+    defaultOutputMode: StudioOutputMode;
+    preferredOutputPath: string;
+    outputSubfolderPreset: string;
+    outputFileNameTemplate: string;
+    autoDetectOutputSources: boolean;
+    commandCenterCompactMode: boolean;
+  }
+
+  const getInitialFormState = (): FormState => ({
+    defaultProviderId: 'codex',
+    defaultOutputMode: 'studio_library',
+    preferredOutputPath: '',
+    outputSubfolderPreset: encodeSubfolderTokens(['date', 'provider', 'recipe']),
+    outputFileNameTemplate: '{timestamp}-{provider}-{jobId}',
+    autoDetectOutputSources: true,
+    commandCenterCompactMode: false,
+  });
+
+  const getFormStateFromSettings = (s: EditableStudioSettings): FormState => ({
+    defaultProviderId: s.defaultProviderId,
+    defaultOutputMode: s.defaultOutputMode,
+    preferredOutputPath: s.preferredOutputPath ?? '',
+    outputSubfolderPreset: encodeSubfolderTokens(s.outputOrganization.subfolderTokens),
+    outputFileNameTemplate: s.outputOrganization.fileNameTemplate,
+    autoDetectOutputSources: s.autoDetectOutputSources,
+    commandCenterCompactMode: s.commandCenterCompactMode,
+  });
+
+  const [formState, setFormState] = useState<FormState>(getInitialFormState);
   const [selectedOutputFiles, setSelectedOutputFiles] = useState<Record<string, string[]>>({});
 
-  useEffect(() => {
-    if (!isOpen || !settings) return;
+  const prevSettingsRef = useRef(settings);
+  if (isOpen && settings && settings !== prevSettingsRef.current) {
+    prevSettingsRef.current = settings;
+    setFormState(getFormStateFromSettings(settings));
+  }
+  if (!isOpen && prevSettingsRef.current !== null) {
+    prevSettingsRef.current = null;
+  }
 
-    setDefaultProviderId(settings.defaultProviderId);
-    setDefaultOutputMode(settings.defaultOutputMode);
-    setPreferredOutputPath(settings.preferredOutputPath ?? '');
-    setOutputSubfolderPreset(encodeSubfolderTokens(settings.outputOrganization.subfolderTokens));
-    setOutputFileNameTemplate(settings.outputOrganization.fileNameTemplate);
-    setAutoDetectOutputSources(settings.autoDetectOutputSources);
-    setCommandCenterCompactMode(settings.commandCenterCompactMode);
-  }, [isOpen, settings]);
+  const {
+    defaultProviderId,
+    defaultOutputMode,
+    preferredOutputPath,
+    outputSubfolderPreset,
+    outputFileNameTemplate,
+    autoDetectOutputSources,
+    commandCenterCompactMode,
+  } = formState;
 
   const providerOptions = useMemo(
     () =>
@@ -276,7 +310,12 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               </span>
               <select
                 value={outputSubfolderPreset}
-                onChange={(event) => setOutputSubfolderPreset(event.target.value)}
+                onChange={(event) =>
+                  setFormState((prev) => ({
+                    ...prev,
+                    outputSubfolderPreset: event.target.value,
+                  }))
+                }
                 className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
               >
                 {OUTPUT_SUBFOLDER_PRESETS.map((preset) => (
@@ -296,8 +335,14 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               </span>
               <input
                 value={outputFileNameTemplate}
-                onChange={(event) => setOutputFileNameTemplate(event.target.value)}
+                onChange={(event) =>
+                  setFormState((prev) => ({
+                    ...prev,
+                    outputFileNameTemplate: event.target.value,
+                  }))
+                }
                 placeholder="{timestamp}-{provider}-{jobId}"
+                aria-label="File name template"
                 className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
               />
             </label>
@@ -308,8 +353,14 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               </span>
               <input
                 value={preferredOutputPath}
-                onChange={(event) => setPreferredOutputPath(event.target.value)}
+                onChange={(event) =>
+                  setFormState((prev) => ({
+                    ...prev,
+                    preferredOutputPath: event.target.value,
+                  }))
+                }
                 placeholder={libraryDir ?? 'D:/outputs'}
+                aria-label="Preferred output path"
                 className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
               />
             </label>
@@ -321,7 +372,10 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               <select
                 value={defaultProviderId}
                 onChange={(event) =>
-                  setDefaultProviderId(event.target.value as GenerationProviderId)
+                  setFormState((prev) => ({
+                    ...prev,
+                    defaultProviderId: event.target.value as GenerationProviderId,
+                  }))
                 }
                 className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
               >
@@ -407,7 +461,12 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               </span>
               <select
                 value={defaultOutputMode}
-                onChange={(event) => setDefaultOutputMode(event.target.value as StudioOutputMode)}
+                onChange={(event) =>
+                  setFormState((prev) => ({
+                    ...prev,
+                    defaultOutputMode: event.target.value as StudioOutputMode,
+                  }))
+                }
                 className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
               >
                 <option value="studio_library">Studio Library</option>
@@ -417,7 +476,12 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
 
             <button
               type="button"
-              onClick={() => setAutoDetectOutputSources((value) => !value)}
+              onClick={() =>
+                setFormState((prev) => ({
+                  ...prev,
+                  autoDetectOutputSources: !prev.autoDetectOutputSources,
+                }))
+              }
               className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
             >
               <span className="flex items-center gap-3">
@@ -436,7 +500,12 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
 
             <button
               type="button"
-              onClick={() => setCommandCenterCompactMode((value) => !value)}
+              onClick={() =>
+                setFormState((prev) => ({
+                  ...prev,
+                  commandCenterCompactMode: !prev.commandCenterCompactMode,
+                }))
+              }
               className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
             >
               <span className="flex items-center gap-3">
@@ -572,6 +641,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                                 type="checkbox"
                                 checked={selected.includes(file.relativePath)}
                                 onChange={() => toggleOutputFile(source.id, file.relativePath)}
+                                aria-label={`Select ${file.relativePath}`}
                                 className="size-3.5 accent-emerald-400"
                               />
                               <span className="truncate font-mono text-[10px] text-zinc-300">

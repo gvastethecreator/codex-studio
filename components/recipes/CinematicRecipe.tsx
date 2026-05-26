@@ -288,16 +288,22 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           <div
             className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer z-10 hover:bg-white/5 transition-colors bg-white/[0.01]"
             onClick={() => fileInputRef.current?.click()}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
+            }}
             onDragOver={(e) => {
               e.preventDefault();
               e.stopPropagation();
             }}
             onDrop={handleDrop}
+            role="button"
+            tabIndex={0}
           >
             <input
               type="file"
               ref={fileInputRef}
               onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
+              aria-label="Upload reference image"
               className="hidden"
               accept="image/*"
             />
@@ -311,7 +317,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               <h3 className="text-sm font-black text-white uppercase tracking-widest mb-1">
                 Source Frame
               </h3>
-              <p className="text-[9px] font-bold text-zinc-500 uppercase">
+              <p className="text-[9px] font-bold text-zinc-400 uppercase">
                 Upload Shot or enter prompt
               </p>
             </div>

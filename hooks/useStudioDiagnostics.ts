@@ -50,19 +50,21 @@ export function useStudioDiagnostics({
     };
   }, []);
 
-  useEffect(() => {
+  const prevInitialHealthRef = useRef(initialHealth);
+  if (initialHealth !== prevInitialHealthRef.current) {
+    prevInitialHealthRef.current = initialHealth;
     if (initialHealth) {
       setHealth(initialHealth);
     }
-  }, [initialHealth]);
+  }
 
   const refreshDiagnostics = useCallback(async () => {
+    if (!isMountedRef.current) return;
+
     const [healthResult, sessionResult] = await Promise.allSettled([
       getStudioHealth(),
       getLocalCodexSession(),
     ]);
-
-    if (!isMountedRef.current) return;
 
     setHealth(healthResult.status === 'fulfilled' ? healthResult.value : null);
     setLocalCodexSession(

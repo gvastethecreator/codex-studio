@@ -1,4 +1,4 @@
-import { createRecipeProviderDirectives } from '../packages/shared/src';
+import { createRecipeProviderDirectives } from '../packages/shared/src/recipeProviderDirectives';
 import {
   getCameraDirectorInstructions,
   getCameraGeometryConstraints,

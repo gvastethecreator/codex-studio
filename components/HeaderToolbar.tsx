@@ -41,6 +41,8 @@ export interface HeaderToolbarProps {
   onOpenSettings: () => void;
 }
 
+const EMPTY_QUEUE_PREVIEWS: Array<{ id: string; src: string }> = [];
+
 const RECIPE_DATA: Record<Exclude<RecipeId, null>, { name: string }> = {
   remaster: { name: 'Remaster' },
   spritesheet: { name: 'Sprite Sheet' },
@@ -71,7 +73,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
   usage,
   activeProviderId,
   runtimeStatus,
-  queueResultPreviews = [],
+  queueResultPreviews = EMPTY_QUEUE_PREVIEWS,
   queueCount,
   isQueueOpen,
   onToggleQueue,

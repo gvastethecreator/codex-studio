@@ -1,4 +1,4 @@
-import React, { createContext, useContext, ReactNode, useMemo, useState } from 'react';
+import React, { createContext, use, ReactNode, useMemo, useState } from 'react';
 import { ImageGenerationConfig, Attachment, GeneratedImageWithConfig, RecipeId } from '../types';
 import { useGenerationConfig } from '../hooks/useGenerationConfig';
 import { useGenerationPipeline } from '../hooks/useGenerationPipeline';
@@ -165,7 +165,7 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
 };
 
 export const useGeneration = () => {
-  const context = useContext(GenerationContext);
+  const context = use(GenerationContext);
   if (context === undefined) {
     throw new Error('useGeneration must be used within a GenerationProvider');
   }

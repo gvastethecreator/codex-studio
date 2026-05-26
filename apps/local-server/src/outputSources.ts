@@ -2,21 +2,19 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node
 import os from 'node:os';
 import path from 'node:path';
 
-import type {
-  CatalogImage,
-  EditableStudioSettings,
-  ExternalOutputSourceCandidate,
-  ExternalOutputSourceFile,
-  ExternalOutputSourceRegistry,
-  GenerationProviderId,
-  ImportExternalOutputSourceInput,
-  RegisterExternalOutputSourceInput,
-} from '../../../packages/shared/src';
+import type { CatalogImage } from '../../../packages/shared/src/types';
+import type { EditableStudioSettings } from '../../../packages/shared/src/studioSettings';
+import type { GenerationProviderId } from '../../../packages/shared/src/generationContracts';
 import {
   createDefaultExternalOutputSourceRegistry,
   normalizeExternalOutputSourceRegistry,
   sanitizeRegisterExternalOutputSourceInput,
-} from '../../../packages/shared/src';
+  type ExternalOutputSourceCandidate,
+  type ExternalOutputSourceFile,
+  type ExternalOutputSourceRegistry,
+  type ImportExternalOutputSourceInput,
+  type RegisterExternalOutputSourceInput,
+} from '../../../packages/shared/src/outputSources';
 import { resolveLibraryPathFromRoot } from './library';
 import type { StudioSettingsStorage } from './studioSettingsStore';
 
@@ -145,10 +143,10 @@ function resolveSourceFile(sourceRoot: string, relativePath: string) {
 
 function splitEnvPaths(value: string | undefined) {
   if (!value) return [];
-  return value
-    .split(path.delimiter)
-    .map((entry) => entry.trim())
-    .filter(Boolean);
+  return value.split(path.delimiter).flatMap((entry) => {
+    const trimmed = entry.trim();
+    return trimmed ? [trimmed] : [];
+  });
 }
 
 function clampLimit(value: number | undefined, fallback: number, max: number) {

@@ -221,9 +221,10 @@ export function useStudioShell(): StudioShellController {
 
   const clearCatalogWorkspace = useCallback(
     (workspaceId: string) => {
-      const imageIds = activeCatalog.entries
-        .filter((entry) => belongsToWorkspace(workspaceId, entry.workspaceId))
-        .map((entry) => entry.id);
+      const imageIds = activeCatalog.entries.reduce<string[]>((acc, entry) => {
+        if (belongsToWorkspace(workspaceId, entry.workspaceId)) acc.push(entry.id);
+        return acc;
+      }, []);
 
       if (imageIds.length === 0) return;
 

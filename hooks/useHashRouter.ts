@@ -79,7 +79,6 @@ export function useHashRouter() {
       setRoute((previous) => resolveHashRouterState(previous, window.location.hash));
     };
 
-    syncRoute();
     window.addEventListener('hashchange', syncRoute);
     return () => window.removeEventListener('hashchange', syncRoute);
   }, []);

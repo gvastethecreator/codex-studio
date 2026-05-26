@@ -128,18 +128,19 @@ function normalizeSpeedTiers(value: unknown): CodexModel['additionalSpeedTiers']
 function normalizeReasoningOptions(value: unknown): CodexModel['supportedReasoningEfforts'] {
   if (!Array.isArray(value)) return [];
 
-  return value
-    .map((entry) => ({
-      reasoningEffort:
-        entry && typeof entry === 'object' && typeof (entry as any).reasoningEffort === 'string'
-          ? (entry as any).reasoningEffort
-          : '',
-      description:
-        entry && typeof entry === 'object' && typeof (entry as any).description === 'string'
-          ? (entry as any).description
-          : null,
-    }))
-    .filter((entry) => Boolean(entry.reasoningEffort));
+  return value.reduce<{ reasoningEffort: string; description: string | null }[]>((acc, entry) => {
+    const reasoningEffort =
+      entry && typeof entry === 'object' && typeof (entry as any).reasoningEffort === 'string'
+        ? (entry as any).reasoningEffort
+        : '';
+    if (!reasoningEffort) return acc;
+    const description =
+      entry && typeof entry === 'object' && typeof (entry as any).description === 'string'
+        ? (entry as any).description
+        : null;
+    acc.push({ reasoningEffort, description });
+    return acc;
+  }, []);
 }
 
 function mapModel(entry: any): CodexModel | null {

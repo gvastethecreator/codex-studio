@@ -136,6 +136,11 @@ const RecipeCard: React.FC<{ recipe: RecipeCatalogEntry; onSelect: (id: RecipeId
     return (
       <div
         onClick={handleSelectRecipe}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') handleSelectRecipe();
+        }}
+        role="button"
+        tabIndex={0}
         className={`
                 group relative aspect-[3/2] rounded-2xl bg-zinc-950 border border-white/5 overflow-hidden cursor-pointer
                 grayscale-[0.4] hover:grayscale-0

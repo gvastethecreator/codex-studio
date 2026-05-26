@@ -200,8 +200,14 @@ export function createProviderSessionContract({
     id,
     providerId,
     version,
-    stableInstructions: stableInstructions.map((item) => item.trim()).filter(Boolean),
-    outputRules: outputRules.map((item) => item.trim()).filter(Boolean),
+    stableInstructions: stableInstructions.flatMap((item) => {
+      const trimmed = item.trim();
+      return trimmed ? [trimmed] : [];
+    }),
+    outputRules: outputRules.flatMap((item) => {
+      const trimmed = item.trim();
+      return trimmed ? [trimmed] : [];
+    }),
   };
 }
 

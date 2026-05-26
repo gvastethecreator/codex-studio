@@ -96,12 +96,19 @@ function extractSavedPaths(
     ...raw.matchAll(/\/(?:[^"'\r\n])+?\.(?:png|jpg|jpeg|webp)/gi),
   ];
 
-  const candidates = [...new Set(matches.map((match) => decodeJsonPath(match[0])))]
-    .filter((filePath) => !/_image_id_\.(?:png|jpg|jpeg|webp)$/i.test(filePath))
-    .filter(
-      (filePath) => filePath.includes(generatedImagesDir) || /(?:generated_images)/i.test(filePath),
-    )
-    .filter((filePath) => existsSync(filePath) && isRecentEnough(filePath, context.sinceMs))
+  const seen = new Set<string>();
+  const candidates = matches
+    .reduce<string[]>((acc, match) => {
+      const filePath = decodeJsonPath(match[0]);
+      if (seen.has(filePath)) return acc;
+      seen.add(filePath);
+      if (/_image_id_\.(?:png|jpg|jpeg|webp)$/i.test(filePath)) return acc;
+      if (!filePath.includes(generatedImagesDir) && !/(?:generated_images)/i.test(filePath))
+        return acc;
+      if (!existsSync(filePath) || !isRecentEnough(filePath, context.sinceMs)) return acc;
+      acc.push(filePath);
+      return acc;
+    }, [])
     .sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs);
 
   const sourcePath = candidates[0];

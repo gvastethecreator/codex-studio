@@ -51,17 +51,20 @@ function slugify(value: string) {
 
 function categoryChunksForPack(pack: StyleRuntimePack): StyleRuntimeCategoryChunk[] {
   const chunks = new Map<string, StyleRuntimeCategoryChunk>();
+  const chunksByName = new Map<string, StyleRuntimeCategoryChunk>();
 
   for (const preset of pack.presets) {
     const name = preset.category?.trim() || 'General';
-    const baseId = slugify(name) || 'general';
-    const id = `${baseId}-${chunks.size + 1}`;
-    const existing = Array.from(chunks.values()).find((chunk) => chunk.name === name);
+    const existing = chunksByName.get(name);
     if (existing) {
       existing.presets.push(preset);
       continue;
     }
-    chunks.set(id, { id, name, presets: [preset] });
+    const baseId = slugify(name) || 'general';
+    const id = `${baseId}-${chunks.size + 1}`;
+    const chunk: StyleRuntimeCategoryChunk = { id, name, presets: [preset] };
+    chunks.set(id, chunk);
+    chunksByName.set(name, chunk);
   }
 
   return Array.from(chunks.values());

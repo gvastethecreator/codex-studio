@@ -19,8 +19,10 @@ function normalizeRelativePath(relativePath: string) {
 function toPathSegments(relativePath: string) {
   return normalizeRelativePath(relativePath)
     .split('/')
-    .map((segment) => segment.trim())
-    .filter(Boolean);
+    .flatMap((segment) => {
+      const trimmed = segment.trim();
+      return trimmed ? [trimmed] : [];
+    });
 }
 
 function resolveThumbnailParentSegments(relativePath: string) {

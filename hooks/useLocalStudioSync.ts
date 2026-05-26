@@ -38,14 +38,20 @@ function mapStudioLog(entry: StudioLog): LogEntry {
  * Keep Local Studio Sync focused on mirroring backend jobs and logs while
  * notifying the Image Catalog read model when backend assets change.
  */
+interface BackendState {
+  jobs: StudioJob[];
+  logs: StudioLog[];
+  connected: boolean;
+}
+
+const INITIAL_BACKEND_STATE: BackendState = { jobs: [], logs: [], connected: false };
+
 export function useLocalStudioSync({
   logs,
   log,
   onCatalogChanged,
 }: UseLocalStudioSyncProps): LocalStudioSyncResult {
-  const [studioJobs, setStudioJobs] = useState<StudioJob[]>([]);
-  const [studioLogs, setStudioLogs] = useState<StudioLog[]>([]);
-  const [isBackendConnected, setIsBackendConnected] = useState(false);
+  const [backendState, setBackendState] = useState<BackendState>(INITIAL_BACKEND_STATE);
   const isMountedRef = useRef(true);
 
   useEffect(() => {
@@ -57,35 +63,33 @@ export function useLocalStudioSync({
   }, []);
 
   const mergedLogs = useMemo(() => {
-    return [...studioLogs.map(mapStudioLog), ...logs]
+    return [...backendState.logs.map(mapStudioLog), ...logs]
       .sort((a, b) => b.timestamp - a.timestamp)
       .slice(0, 100);
-  }, [logs, studioLogs]);
+  }, [logs, backendState.logs]);
 
   const activeServerJobCount = useMemo(() => {
-    return studioJobs.filter(
+    return backendState.jobs.filter(
       (job) => job.status === 'queued' || job.status === 'running' || job.status === 'needs_review',
     ).length;
-  }, [studioJobs]);
+  }, [backendState.jobs]);
 
   const refreshBackendState = useCallback(async () => {
     try {
-      const [backendJobs, backendLogs] = await Promise.all([listStudioJobs(), listStudioLogs()]);
-
       if (!isMountedRef.current) {
         return;
       }
 
-      setStudioJobs(backendJobs);
-      setStudioLogs(backendLogs);
-      setIsBackendConnected(true);
+      const [backendJobs, backendLogs] = await Promise.all([listStudioJobs(), listStudioLogs()]);
+
+      setBackendState({ jobs: backendJobs, logs: backendLogs, connected: true });
       onCatalogChanged?.();
     } catch (error) {
       if (!isMountedRef.current) {
         return;
       }
 
-      setIsBackendConnected(false);
+      setBackendState((prev) => ({ ...prev, connected: false }));
       log(
         `Local Codex backend sync failed: ${error instanceof Error ? error.message : String(error)}`,
       );
@@ -97,20 +101,22 @@ export function useLocalStudioSync({
 
     const stream = createStudioEventStream();
     const unsubscribeJob = stream.onJobUpdate('*', (job) => {
-      setStudioJobs((prev) =>
-        [job, ...prev.filter((candidate) => candidate.id !== job.id)].slice(0, 100),
-      );
+      setBackendState((prev) => ({
+        ...prev,
+        jobs: [job, ...prev.jobs.filter((candidate) => candidate.id !== job.id)].slice(0, 100),
+      }));
     });
     const unsubscribeAsset = stream.onAssetAdded(() => {
       onCatalogChanged?.();
     });
     const unsubscribeLog = stream.onLogAdded((entry) => {
-      setStudioLogs((prev) =>
-        [entry, ...prev.filter((candidate) => candidate.id !== entry.id)].slice(0, 300),
-      );
+      setBackendState((prev) => ({
+        ...prev,
+        logs: [entry, ...prev.logs.filter((candidate) => candidate.id !== entry.id)].slice(0, 300),
+      }));
     });
     const unsubscribeConnection = stream.onConnectionChange((connected) => {
-      setIsBackendConnected(connected);
+      setBackendState((prev) => ({ ...prev, connected }));
       if (!connected) {
         void refreshBackendState();
       }
@@ -127,10 +133,10 @@ export function useLocalStudioSync({
 
   return {
     activity: {
-      studioJobs,
+      studioJobs: backendState.jobs,
       mergedLogs,
       activeServerJobCount,
-      isBackendConnected,
+      isBackendConnected: backendState.connected,
     },
     refreshBackendState,
   };

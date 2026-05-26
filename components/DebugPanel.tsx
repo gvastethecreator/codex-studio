@@ -33,12 +33,15 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   onInspectJob,
   onClearSelectedJob,
 }) => {
+  const onCloseRef = React.useRef(onClose);
+  onCloseRef.current = onClose;
+
   React.useEffect(() => {
     if (!isOpen) return undefined;
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        onClose();
+        onCloseRef.current();
       }
     };
 
@@ -46,7 +49,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isOpen, onClose]);
+  }, [isOpen]);
 
   if (!isOpen) {
     return null;

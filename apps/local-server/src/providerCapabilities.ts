@@ -1,9 +1,9 @@
 import {
   createGenerationProviderCapabilities,
-  type EditableStudioSettings,
   type GenerationProviderCapabilitiesResponse,
-  type GenerationProviderId,
-} from '../../../packages/shared/src';
+} from '../../../packages/shared/src/providerCapabilities';
+import type { EditableStudioSettings } from '../../../packages/shared/src/studioSettings';
+import type { GenerationProviderId } from '../../../packages/shared/src/generationContracts';
 import { createProviderReadinessMaps } from './providers/runtimeConfig';
 
 export interface ProviderExecutionBlocker {

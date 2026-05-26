@@ -161,6 +161,11 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
+              }}
+              role="button"
+              tabIndex={0}
               className="absolute inset-0 flex cursor-pointer flex-col items-center justify-center gap-6 transition-colors hover:bg-white/1"
             >
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[40px_40px]" />
@@ -168,6 +173,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                 type="file"
                 ref={fileInputRef}
                 onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
+                aria-label="Upload reference image"
                 className="hidden"
                 accept="image/*"
               />

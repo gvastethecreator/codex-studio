@@ -52,12 +52,16 @@ export function createRecipeProviderDirectives({
     protocol: RECIPE_PROVIDER_DIRECTIVES_PROTOCOL,
     recipeId: cleanString(recipeId),
     title: cleanString(title),
-    sections: sections
-      .map((section) => ({
-        title: cleanString(section.title),
-        directives: section.directives.map(cleanDirective).filter(isRecipeProviderDirective),
-      }))
-      .filter((section) => section.title && section.directives.length > 0),
+    sections: sections.reduce<RecipeProviderDirectiveSection[]>((acc, section) => {
+      const title = cleanString(section.title);
+      const directives = section.directives.reduce<RecipeProviderDirective[]>((dAcc, d) => {
+        const cleaned = cleanDirective(d);
+        if (isRecipeProviderDirective(cleaned)) dAcc.push(cleaned);
+        return dAcc;
+      }, []);
+      if (title && directives.length > 0) acc.push({ title, directives });
+      return acc;
+    }, []),
   };
 }
 

@@ -1,11 +1,13 @@
 import {
   createGenerationTaskSpec,
-  isRecipeProviderDirectives,
-  serializeRecipeProviderDirectives,
   type CompiledProviderInput,
   type GenerationProviderId,
   type GenerationTaskSpec,
-} from '../packages/shared/src';
+} from '../packages/shared/src/generationContracts';
+import {
+  isRecipeProviderDirectives,
+  serializeRecipeProviderDirectives,
+} from '../packages/shared/src/recipeProviderDirectives';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import {
   buildGenerationTaskSpecFromRecipe,
@@ -163,8 +165,12 @@ function createExternalFixtureSpecs() {
   if (!stylesModule) return [];
 
   const styleSpec = createRecipeAuditSpec(stylesModule, 'codex');
-  const hostedSpecs = EXTERNAL_FIXTURE_PROVIDERS.filter((providerId) => providerId !== 'comfy').map(
-    (providerId) => cloneSpecForProvider(styleSpec, providerId),
+  const hostedSpecs = EXTERNAL_FIXTURE_PROVIDERS.reduce<ReturnType<typeof cloneSpecForProvider>[]>(
+    (acc, providerId) => {
+      if (providerId !== 'comfy') acc.push(cloneSpecForProvider(styleSpec, providerId));
+      return acc;
+    },
+    [],
   );
   const comfySpec = createGenerationTaskSpec({
     id: 'audit-external-comfy-texture',

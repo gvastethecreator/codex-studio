@@ -165,8 +165,10 @@ function coerceText(value: unknown): string {
 
   if (Array.isArray(value)) {
     return value
-      .map((entry) => coerceText(entry))
-      .filter(Boolean)
+      .flatMap((entry) => {
+        const text = coerceText(entry);
+        return text ? [text] : [];
+      })
       .join('\n')
       .trim();
   }
@@ -185,8 +187,10 @@ function coerceText(value: unknown): string {
     ];
 
     const combined = candidates
-      .map((candidate) => coerceText(candidate))
-      .filter(Boolean)
+      .flatMap((candidate) => {
+        const text = coerceText(candidate);
+        return text ? [text] : [];
+      })
       .join('\n')
       .trim();
 

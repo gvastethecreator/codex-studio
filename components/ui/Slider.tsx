@@ -48,6 +48,7 @@ const Slider: React.FC<SliderProps> = ({
           step={step}
           value={value}
           onChange={(e) => onChange(parseFloat(e.target.value))}
+          aria-label={label}
           className="absolute size-full opacity-0 cursor-pointer z-10"
         />
 

@@ -104,6 +104,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search presets, tags, DNA..."
+            aria-label="Search presets"
             className="w-full border-none bg-transparent text-xs font-medium text-white outline-none placeholder:text-zinc-600"
             ref={(el) => el?.focus()}
           />

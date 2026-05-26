@@ -25,9 +25,10 @@ export function pickPreferredCodexModel(models: CodexModel[], currentModel?: str
 
 export function getCodexReasoningOptions(model: CodexModel | null | undefined) {
   const supported =
-    model?.supportedReasoningEfforts
-      ?.map((option) => option.reasoningEffort?.trim())
-      .filter(Boolean) ?? [];
+    model?.supportedReasoningEfforts?.flatMap((option) => {
+      const trimmed = option.reasoningEffort?.trim();
+      return trimmed ? [trimmed] : [];
+    }) ?? [];
 
   return unique(supported.length > 0 ? supported : FALLBACK_REASONING_EFFORTS);
 }

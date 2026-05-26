@@ -1,5 +1,5 @@
 import type { ImageGenerationConfig, RecipeId } from '../types';
-import { extractRecipeIdFromRecipeContext } from '../packages/shared/src';
+import { extractRecipeIdFromRecipeContext } from '../packages/shared/src/promptTransport';
 import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
 import type { RecipeContextParams, RegisteredRecipeId } from './recipeContextBuilders';
 

@@ -239,19 +239,18 @@ export async function runSingleCodexImagegenJob(options: {
     );
   }
 
-  const images: GeneratedImage[] = [];
-  for (const asset of jobAssets) {
-    const fallbackThumbnail = asset.thumbnailUrl
-      ? undefined
-      : await createThumbnail(materializeCatalogEntryImage(asset, { batchId }).src);
-    images.push(
-      materializeCatalogEntryImage(asset, {
+  const images = await Promise.all(
+    jobAssets.map(async (asset) => {
+      const fallbackThumbnail = asset.thumbnailUrl
+        ? undefined
+        : await createThumbnail(materializeCatalogEntryImage(asset, { batchId }).src);
+      return materializeCatalogEntryImage(asset, {
         batchId,
         createdAt: Date.now(),
         thumbnail: fallbackThumbnail,
-      }),
-    );
-  }
+      });
+    }),
+  );
 
   return images;
 }

@@ -188,6 +188,21 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
     [params, customColor],
   );
 
+  const hasDividers = params.dividers !== 'No Dividers';
+  const gridContainerStyle = useMemo<React.CSSProperties>(
+    () => ({
+      aspectRatio: ratioValue,
+      width: `min(${availWidthCSS}, ${availHeightCSS} * ${ratioValue})`,
+      height: `min(${availHeightCSS}, ${availWidthCSS} / ${ratioValue})`,
+      display: 'grid',
+      gridTemplateColumns: `repeat(${gridCols}, 1fr)`,
+      gridTemplateRows: `repeat(${gridRows}, 1fr)`,
+      gap: hasDividers ? '1px' : '0px',
+      padding: hasDividers ? '1px' : '0px',
+    }),
+    [ratioValue, availWidthCSS, availHeightCSS, gridCols, gridRows, hasDividers],
+  );
+
   return (
     <RecipeLayout
       isGenerating={!!isGenerating}
@@ -200,18 +215,9 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           {/* Auto-Scaling Container */}
           <div
             className={`relative border-2 border-dashed transition-all duration-500 ease-out-expo overflow-hidden shadow-2xl bg-zinc-900/30
-                        ${params.dividers !== 'No Dividers' ? getDividerStyle() : 'border-white/20'}
+                        ${hasDividers ? getDividerStyle() : 'border-white/20'}
                     `}
-            style={{
-              aspectRatio: ratioValue,
-              width: `min(${availWidthCSS}, ${availHeightCSS} * ${ratioValue})`,
-              height: `min(${availHeightCSS}, ${availWidthCSS} / ${ratioValue})`,
-              display: 'grid',
-              gridTemplateColumns: `repeat(${gridCols}, 1fr)`,
-              gridTemplateRows: `repeat(${gridRows}, 1fr)`,
-              gap: params.dividers !== 'No Dividers' ? '1px' : '0px',
-              padding: params.dividers !== 'No Dividers' ? '1px' : '0px',
-            }}
+            style={gridContainerStyle}
           >
             {Array.from({ length: gridCols * gridRows }).map((_, i) => (
               <div
@@ -220,6 +226,14 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                   e.stopPropagation();
                   setEditingCell(i);
                 }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.stopPropagation();
+                    setEditingCell(i);
+                  }
+                }}
+                role="button"
+                tabIndex={0}
                 onMouseEnter={() => setHoveredCell(i)}
                 onMouseLeave={() => setHoveredCell(null)}
                 style={{
@@ -237,6 +251,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                       value={cellPrompts[i] || ''}
                       onChange={(e) => setCellPrompts((prev) => ({ ...prev, [i]: e.target.value }))}
                       onBlur={() => setEditingCell(null)}
+                      aria-label={`Cell ${i + 1} prompt`}
                       onKeyDown={(e) => {
                         if (e.key === 'Enter' && !e.shiftKey) {
                           e.preventDefault();
@@ -304,6 +319,11 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
               <div
                 key={i}
                 onClick={() => setEditingCell(i)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') setEditingCell(i);
+                }}
+                role="button"
+                tabIndex={0}
                 className={`group p-2.5 rounded-xl border transition-all duration-200 cursor-pointer
                                 ${hoveredCell === i || editingCell === i ? 'bg-white/10 border-emerald-500/50 shadow-lg' : 'bg-black/20 border-white/5 hover:bg-white/5'}
                             `}

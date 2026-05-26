@@ -129,6 +129,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             step={CAMERA_RANGES.azimuth.step}
             value={azimuth}
             onChange={(e) => setAzimuth(parseInt(e.target.value))}
+            aria-label="Azimuth"
             className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-cyan-400 hover:accent-cyan-300"
           />
         </div>
@@ -147,6 +148,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             step={CAMERA_RANGES.elevation.step}
             value={elevation}
             onChange={(e) => setElevation(parseInt(e.target.value))}
+            aria-label="Elevation"
             className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-pink-400 hover:accent-pink-300"
           />
         </div>
@@ -165,6 +167,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             step={CAMERA_RANGES.distance.step}
             value={distance}
             onChange={(e) => setDistance(parseInt(e.target.value))}
+            aria-label="Zoom"
             className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-yellow-400 hover:accent-yellow-300"
           />
         </div>
@@ -269,14 +272,20 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             ) : (
               <div
                 onClick={() => fileInputRef.current?.click()}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
+                }}
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={handleDrop}
+                role="button"
+                tabIndex={0}
                 className="relative z-10 flex size-full cursor-pointer flex-col items-center justify-center p-6 transition-colors hover:bg-white/2"
               >
                 <input
                   type="file"
                   ref={fileInputRef}
                   onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
+                  aria-label="Upload reference image"
                   className="hidden"
                   accept="image/*"
                 />

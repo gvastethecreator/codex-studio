@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { X, Sparkles, Brush, Undo, Trash2 } from 'lucide-react';
+import { Brush, Sparkles, Trash2, Undo, X } from 'lucide-react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import type { Attachment } from '../types';
-import Slider from './ui/Slider';
 import ActionButton from './ui/ActionButton';
+import Slider from './ui/Slider';
 
 interface ImageEditorModalProps {
   isOpen: boolean;
@@ -25,16 +25,19 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
 
   const [editPrompt, setEditPrompt] = useState('');
   const [brushSize, setBrushSize] = useState(40);
-  const [isDrawing, setIsDrawing] = useState(false);
-  const [history, setHistory] = useState<ImageData[]>([]);
+  const isDrawingRef = useRef(false);
+  const historyRef = useRef<ImageData[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  useEffect(() => {
-    if (isOpen) {
-      textareaRef.current?.focus();
-    }
-  }, [isOpen]);
+  const prevIsOpenRef = useRef(false);
+
+  if (prevIsOpenRef.current && !isOpen) {
+    prevIsOpenRef.current = false;
+  }
+  if (!prevIsOpenRef.current && isOpen) {
+    prevIsOpenRef.current = true;
+  }
 
   React.useLayoutEffect(() => {
     if (textareaRef.current) {
@@ -56,7 +59,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     img.crossOrigin = 'anonymous';
     img.src = image.dataUrl;
     img.onload = () => {
-      const containerWidth = container.clientWidth - 48; // Padding
+      const containerWidth = container.clientWidth - 48;
       const containerHeight = container.clientHeight - 48;
       const scale = Math.min(
         containerWidth / img.naturalWidth,
@@ -79,10 +82,6 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   useEffect(() => {
     if (isOpen) {
       setupCanvas();
-    } else {
-      setHistory([]);
-      setHistoryIndex(-1);
-      setEditPrompt('');
     }
   }, [isOpen, setupCanvas]);
 
@@ -103,16 +102,16 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     const ctx = canvas?.getContext('2d');
     if (!canvas || !ctx) return;
 
-    const newHistory = history.slice(0, historyIndex + 1);
+    const newHistory = historyRef.current.slice(0, historyIndex + 1);
     if (newHistory.length > 20) newHistory.shift();
 
     newHistory.push(ctx.getImageData(0, 0, canvas.width, canvas.height));
-    setHistory(newHistory);
+    historyRef.current = newHistory;
     setHistoryIndex(newHistory.length - 1);
   };
 
   const startDrawing = (e: React.MouseEvent) => {
-    setIsDrawing(true);
+    isDrawingRef.current = true;
     const ctx = canvasRef.current?.getContext('2d');
     if (!ctx) return;
     const { x, y } = getMousePos(e);
@@ -134,7 +133,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   };
 
   const draw = (e: React.MouseEvent) => {
-    if (!isDrawing) return;
+    if (!isDrawingRef.current) return;
     const ctx = canvasRef.current?.getContext('2d');
     if (!ctx) return;
 
@@ -151,8 +150,8 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   };
 
   const stopDrawing = () => {
-    if (isDrawing) {
-      setIsDrawing(false);
+    if (isDrawingRef.current) {
+      isDrawingRef.current = false;
       saveHistory();
     }
   };
@@ -164,12 +163,19 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     if (historyIndex > 0) {
       const newIndex = historyIndex - 1;
       setHistoryIndex(newIndex);
-      ctx.putImageData(history[newIndex], 0, 0);
+      ctx.putImageData(historyRef.current[newIndex], 0, 0);
     } else {
       ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
       setHistoryIndex(-1);
     }
   };
+
+  const handleClose = useCallback(() => {
+    historyRef.current = [];
+    setHistoryIndex(-1);
+    setEditPrompt('');
+    onClose();
+  }, [onClose]);
 
   const handleGenerate = () => {
     if (!image || isGenerating || !canvasRef.current) return;
@@ -203,7 +209,12 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   return (
     <div
       className="fixed inset-0 z-100 bg-black/98 backdrop-blur-3xl flex flex-col animate-in fade-in duration-500"
-      onClick={onClose}
+      onClick={handleClose}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') handleClose();
+      }}
+      role="button"
+      tabIndex={0}
     >
       <div
         className="h-20 w-full flex items-center justify-between px-10 border-b border-white/5"
@@ -224,7 +235,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
         </div>
         <button
           type="button"
-          onClick={onClose}
+          onClick={handleClose}
           className="p-3 bg-zinc-900/60 hover:bg-zinc-800 rounded-xl text-zinc-600 hover:text-white transition-all shadow-xl"
         >
           <X size={24} />
@@ -261,20 +272,30 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           <div
             ref={brushCursorRef}
             className="fixed pointer-events-none border border-white/40 shadow-2xl rounded-full mix-blend-difference z-110"
-            style={{ width: brushSize, height: brushSize, transform: `translate(-50%, -50%)` }}
+            style={{
+              width: brushSize,
+              height: brushSize,
+              transform: `translate(-50%, -50%)`,
+            }}
           />
         </div>
 
         <div className="w-full md:w-96 bg-zinc-950 p-8 flex flex-col gap-10 shadow-[20px_0_60px_rgba(0,0,0,1)]">
           <div className="space-y-4">
-            <label className="text-[10px] font-black text-zinc-700 uppercase tracking-widest">
+            <label
+              htmlFor="image-editor-prompt"
+              className="text-[10px] font-black text-zinc-700 uppercase tracking-widest"
+            >
               Edit Prompt
             </label>
             <textarea
+              id="image-editor-prompt"
               ref={textareaRef}
               value={editPrompt}
               onChange={(e) => setEditPrompt(e.target.value)}
               placeholder="Describe the changes..."
+              aria-label="Edit prompt"
+              autoFocus
               className="w-full min-h-40 max-h-75 bg-black/40 rounded-2xl p-5 text-[13px] font-bold leading-relaxed focus:bg-black/60 transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar"
             />
           </div>

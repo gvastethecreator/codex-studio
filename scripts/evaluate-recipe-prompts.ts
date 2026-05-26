@@ -3,10 +3,12 @@ import path from 'node:path';
 
 import {
   createGenerationTaskSpec,
+  type GenerationTaskSpec,
+} from '../packages/shared/src/generationContracts';
+import {
   isRecipeProviderDirectives,
   serializeRecipeProviderDirectives,
-  type GenerationTaskSpec,
-} from '../packages/shared/src';
+} from '../packages/shared/src/recipeProviderDirectives';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import {
   createRecipeDefaultParams,
@@ -270,9 +272,10 @@ export function createEvaluationSummary(
   }
 
   for (const pair of session.pairs) {
-    const bare = pair.variants.find((variant) => variant.name === 'bare');
-    const legacy = pair.variants.find((variant) => variant.name === 'legacy');
-    const directives = pair.variants.find((variant) => variant.name === 'directives');
+    const variantsByName = new Map(pair.variants.map((variant) => [variant.name, variant]));
+    const bare = variantsByName.get('bare');
+    const legacy = variantsByName.get('legacy');
+    const directives = variantsByName.get('directives');
 
     if (!bare || !legacy || !directives) {
       failures.push(`${pair.recipeId} missing bare/legacy/directives variants.`);
@@ -317,9 +320,10 @@ export function writeEvaluationReport(session: EvaluationSession, outputDir: str
 
   console.log(`[eval] session=${session.sessionId} pairs=${session.pairs.length}`);
   for (const pair of session.pairs) {
-    const dirSize = pair.variants.find((v) => v.name === 'directives')?.promptChars ?? 0;
-    const legacySize = pair.variants.find((v) => v.name === 'legacy')?.promptChars ?? 0;
-    const bareSize = pair.variants.find((v) => v.name === 'bare')?.promptChars ?? 0;
+    const variantsByName = new Map(pair.variants.map((v) => [v.name, v]));
+    const dirSize = variantsByName.get('directives')?.promptChars ?? 0;
+    const legacySize = variantsByName.get('legacy')?.promptChars ?? 0;
+    const bareSize = variantsByName.get('bare')?.promptChars ?? 0;
     const savings = legacySize > 0 ? legacySize - dirSize : 0;
     const savingsPct = legacySize > 0 ? ((savings / legacySize) * 100).toFixed(1) : '0';
 
@@ -333,9 +337,10 @@ export function writeEvaluationReport(session: EvaluationSession, outputDir: str
 
 if (import.meta.main) {
   const outputArg = process.argv.find((a) => a.startsWith('--out='))?.split('=')[1];
-  const recipeFilter = process.argv
-    .filter((a) => a.startsWith('--recipe='))
-    .map((a) => a.split('=')[1]);
+  const recipeFilter = process.argv.reduce<string[]>((acc, a) => {
+    if (a.startsWith('--recipe=')) acc.push(a.split('=')[1]);
+    return acc;
+  }, []);
   const isDryRun = process.argv.includes('--dry-run') || !outputArg;
   const shouldVerify = process.argv.includes('--verify');
 

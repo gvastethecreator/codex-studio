@@ -1,5 +1,5 @@
-import type { CatalogImage } from '../packages/shared/src';
-import { parsePromptTransport } from '../packages/shared/src';
+import type { CatalogImage } from '../packages/shared/src/types';
+import { parsePromptTransport } from '../packages/shared/src/promptTransport';
 import { DEFAULT_GENERATION_CONFIG, MODELS } from '../constants';
 import type { ImageGenerationConfig, ImageSize, RecipeId } from '../types';
 import { normalizeImageGenRatio } from './imageGenSizing';

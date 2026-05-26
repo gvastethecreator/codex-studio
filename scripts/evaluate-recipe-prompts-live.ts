@@ -247,8 +247,10 @@ function parseMultiValueArg(name: string) {
     process.argv
       .filter((arg) => arg.startsWith(`--${name}=`))
       .flatMap((arg) => arg.slice(name.length + 3).split('|'))
-      .map((value) => value.trim())
-      .filter(Boolean),
+      .flatMap((value) => {
+        const trimmed = value.trim();
+        return trimmed ? [trimmed] : [];
+      }),
   );
 }
 
@@ -542,11 +544,12 @@ async function waitForJobDetail(
 
   while (true) {
     const detail = await requestJson<JobDetailResponse>(apiBase, `/api/jobs/${jobId}`);
+    const { job } = detail;
     if (
-      detail.job.status === 'completed' ||
-      detail.job.status === 'failed' ||
-      detail.job.status === 'cancelled' ||
-      detail.job.status === 'needs_review'
+      job.status === 'completed' ||
+      job.status === 'failed' ||
+      job.status === 'cancelled' ||
+      job.status === 'needs_review'
     ) {
       return detail;
     }
@@ -621,17 +624,18 @@ export async function executeLiveRecipeEvaluation(
         variantReport.createdAt = created.createdAt;
 
         const detail = await waitForJobDetail(apiBase, created.id, { pollMs, timeoutMs });
-        variantReport.status = detail.job.status;
-        variantReport.error = detail.job.error;
-        variantReport.completedAt = detail.job.completedAt;
-        variantReport.finalPromptUsedChars = detail.job.finalPromptUsed.length;
+        const { job: detailJob } = detail;
+        variantReport.status = detailJob.status;
+        variantReport.error = detailJob.error;
+        variantReport.completedAt = detailJob.completedAt;
+        variantReport.finalPromptUsedChars = detailJob.finalPromptUsed.length;
         variantReport.transcriptPath = detail.turn?.transcriptPath ?? null;
         variantReport.metrics = detail.metrics;
         variantReport.catalogImages = await readCatalogImagesForJob(apiBase, created.id);
 
-        if (detail.job.status !== 'completed') {
+        if (detailJob.status !== 'completed') {
           report.failures.push(
-            `${pairPlan.recipeId}/${variantPlan.name} ended as ${detail.job.status}: ${detail.job.error || 'no error'}`,
+            `${pairPlan.recipeId}/${variantPlan.name} ended as ${detailJob.status}: ${detailJob.error || 'no error'}`,
           );
         }
         if (detail.job.status === 'completed' && variantReport.catalogImages.length === 0) {
@@ -773,10 +777,11 @@ export function createLiveEvaluationReviewMarkdown(report: LiveRecipeEvaluationR
       lines.push(`  - Final prompt chars: ${variant.finalPromptUsedChars ?? 'n/a'}`);
       lines.push(`  - Job: ${variant.jobId ?? 'n/a'}`);
       lines.push(`  - Tokens: ${formatTokenUsage(variant.metrics)}`);
+      const timingsMap = variant.metrics?.timings
+        ? new Map(variant.metrics.timings.map((segment) => [segment.id, segment]))
+        : null;
       lines.push(
-        `  - Provider duration: ${formatDuration(
-          variant.metrics?.timings.find((segment) => segment.id === 'provider')?.durationMs ?? null,
-        )}`,
+        `  - Provider duration: ${formatDuration(timingsMap?.get('provider')?.durationMs ?? null)}`,
       );
       lines.push(`  - Transcript: ${variant.transcriptPath ?? 'n/a'}`);
       if (firstImage) {

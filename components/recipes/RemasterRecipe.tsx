@@ -115,6 +115,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             step={FIDELITY_RANGE.step}
             value={params.fidelity}
             onChange={(e) => setParams((p) => ({ ...p, fidelity: parseInt(e.target.value) }))}
+            aria-label="Fidelity"
             className="w-full h-1 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-accent-500"
           />
         </div>
@@ -208,12 +209,18 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             onDragOver={(e) => e.preventDefault()}
             onDrop={handleDrop}
             onClick={() => fileInputRef.current?.click()}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
+            }}
+            role="button"
+            tabIndex={0}
             className="size-full border-2 border-dashed border-white/10 hover:border-accent-500/50 bg-white/[0.01] flex flex-col items-center justify-center gap-6 cursor-pointer transition-all group"
           >
             <input
               type="file"
               ref={fileInputRef}
               onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
+              aria-label="Upload image"
               className="hidden"
               accept="image/*"
             />
