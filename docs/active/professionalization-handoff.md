@@ -4,6 +4,10 @@ Repo: `D:\DEV\codex-studio`
 
 Keep this handoff inside the project. The active goal remains open; do not mark it complete. The user explicitly wants continued professionalization work and says there is still much left.
 
+Newest next-agent task list:
+
+- `docs/active/professionalization-next-agent-tasks.md`
+
 ## Operating Notes
 
 - Use PowerShell without profile (`login:false` / `-NoProfile`) because shell startup previously hung/noised with oh-my-posh.
@@ -42,16 +46,32 @@ Before provider, recipe, preset, or output work read:
 
 Fresh focused gates from the latest slices:
 
+- Focused `bun run test -- scripts/scaffold-style-preset.test.ts` passed: 1 file / 4 tests.
+- Focused `bun run check -- scripts/scaffold-style-preset.ts scripts/scaffold-style-preset.test.ts SKILLS.md docs/STYLE_PRESET_AUTHORING.md package.json` passed.
+- `styles:templates:verify` passed after adding `styles:scaffold`: 3 templates / 0 violations.
+- `styles:source:verify` passed after adding `styles:scaffold`: audit remained green.
+- `bun run build` passed after `styles:scaffold`; UI/server build clean, chunk budgets OK. Warnings about `vite:asset` timing and chunks over 500 KB are known/non-blocking because budget guards pass.
 - `bun run styles:verify` passed: 11 packs, 1,253 presets, taxonomy/default-image coverage complete, runtime current, source/render guards OK.
 - `bun run catalog:source:verify` passed: 9 rules / 0 violations.
 - Browser validation for `http://127.0.0.1:5173/#recipe-styles` passed after fixing the toolbar model-label crash: root mounted, expanded `SHOW 19 MORE`, searched `boudoir`, no fresh console errors/warnings after timestamp-filtered reload.
 - Focused `vp test run lib/codexExecution.test.ts` passed: 1 file / 5 tests.
 - Focused `vp check lib/codexExecution.ts lib/codexExecution.test.ts` passed.
 - `styles:render:verify` now covers expanded category budget and the `pack_01` search scenario `boudoir`; latest run passed with worst expanded group at 42 cards and search at 1 rendered card.
+- `styles:render:verify` now consumes the same `styleBrowserRenderPlan` and category ordering used by `StylesRecipe`. Latest run passed with `pack_05` as worst case: 4 mounted sections, 2 eager sections, 2 placeholders, 32 eager cards, 64 planned cards, 240 hidden presets.
+- Browser pass against `http://127.0.0.1:5173/#recipe-styles` confirmed `pack_05` collapsed state: 4 groups, 2 eager, 2 placeholders, 32 rendered cards, 64 planned cards, `Show 8 more categories (240 styles)`. Expanded categories confirmed: 12 groups, 2 eager, 10 placeholders, 32 rendered cards, 192 planned cards.
+- Added `styles:browser` / `styles:browser:verify` as the reusable browser gate for Styles. It now runs via `tsx` because Playwright launch hung under Bun on Windows, and `scripts/style-manifest-files.ts` now has a Node fs fallback so the gate can load manifest data outside Bun.
+- Fresh `bun run styles:browser:verify -- --url=http://localhost:3001/#recipe-styles` passed with `VITE_ENABLE_REACT_SCAN=false` on the UI dev server: `pack_05` collapsed `4/2/2/32/64/8/240`, expanded `12/2/10/32/192`, catalog `mountedBefore=false mountedAfter=true results=2`, and 0 blocking console/page issues.
+- Fresh focused `bun run test -- scripts/style-manifest-files.test.ts lib/stylesBrowserGate.test.ts scripts/report-style-render-budget.test.ts` passed: 3 files / 5 tests.
+- Fresh focused `bun run check -- scripts/verify-styles-browser-gate.ts package.json` passed after moving the gate command to `tsx`.
+- Fresh `bun run test` passed after giving the repo-scale `components/recipes/stylePresetManifests.test.ts` manifest-load assertion an explicit `20_000` ms timeout for cold full-suite runs: 101 files / 294 tests.
+- Fresh `bun run build` passed after the browser-gate slice; UI/server build clean and chunk budgets OK. Known non-blocking warnings remain the usual plugin timing and >500 KB advisory, while enforced chunk budgets still pass.
 - `bun run styles:verify` passed after the expanded/search render guard: 11 packs, 1,253 presets, taxonomy/default-image coverage complete, runtime current, source/render guards OK.
 - `recipes:verify` now includes `recipes:evaluate -- --verify`, so recipe module verification fails if compact Recipe Provider Directives stop beating legacy Recipe Context prompts by at least 30%.
 - Focused `recipes:evaluate -- --verify --recipe=styles` passed: 1 pair, 0 failures.
-- `catalog:source:verify` now has 9 rules. It blocks legacy cache key drift, `LegacyVisualBatchContext` IndexedDB persistence, full snapshot export from `LegacyVisualBatchContext`, new `GenerationBatch` imports outside explicit legacy compatibility adapters/tests/shared type files, generated-job legacy append usage outside the compat/context edge, new `useLegacyVisualBatches()` consumers outside Studio Shell / generated-job compatibility, and hook-level `LegacyVisualBatchSnapshot` usage outside storage recovery compatibility.
+- Added `recipes:evaluate:live` as the explicit live Codex comparison harness. It dry-runs by default, can filter recipes/variants, checks local runtime readiness before `--execute`, and writes JSON + Markdown review artifacts with job ids, prompt sizes, metrics, catalog refs, and transcript paths — but no generated assets.
+- `catalog:source:verify` now has 10 rules / 0 violations. It blocks legacy cache key drift, `LegacyVisualBatchContext` IndexedDB persistence, full snapshot export from `LegacyVisualBatchContext`, snapshot types inside `legacyVisualBatchReducer`, new `GenerationBatch` imports outside explicit legacy compatibility adapters/tests/shared type files, generated-job legacy append usage outside the compat/context edge, new `useLegacyVisualBatches()` consumers outside Studio Shell / generated-job compatibility, and hook-level `LegacyVisualBatchSnapshot` usage outside storage recovery compatibility.
+- Focused `bun run test -- contexts/legacyVisualBatchReducer.test.ts scripts/catalog-first-source-audit.test.ts` passed after reducer snapshot-ref cleanup: 2 files / 7 tests.
+- Focused `bun run check -- contexts/LegacyVisualBatchContext.tsx contexts/legacyVisualBatchReducer.ts contexts/legacyVisualBatchReducer.test.ts hooks/useStudioStorageRecovery.ts scripts/catalog-first-source-audit.ts scripts/catalog-first-source-audit.test.ts` passed after removing the noop `ensureWorkspaces` option.
 - Focused `vp test run scripts/catalog-first-source-audit.test.ts` passed: 2 tests.
 - `hooks/useVaultTransfer.ts` no longer imports `GenerationBatch` or `LegacyVisualBatchSnapshot`; vault is export/download-only.
 - Focused vault/export builder coverage now lives in `lib/studioWorkspaceExport.test.ts`; the old hook-level builder test was removed.
@@ -64,7 +84,8 @@ Fresh focused gates from the latest slices:
 - Focused `vp test run scripts/catalog-first-source-audit.test.ts` passed after adding the context-consumer guard.
 - Focused `vp check scripts/catalog-first-source-audit.ts scripts/catalog-first-source-audit.test.ts` passed after adding the context-consumer guard.
 - `LegacyVisualBatchContext` now exposes `legacyVisualBatchIds` instead of the full `legacyVisualBatches` snapshot. `useStudioShell` only receives IDs for recovery dedupe.
-- `legacyVisualBatchReducer` is now an IDs-only registry. It no longer stores full legacy snapshots or mirrors image delete/favorite mutations.
+- `legacyVisualBatchReducer` is now a refs-only registry. It no longer stores full legacy snapshots, imports `LegacyVisualBatchSnapshot`, or mirrors image delete/favorite mutations.
+- Legacy recovery options no longer include noop `ensureWorkspaces`; recovery passes only `prepend` and `maxTotal`.
 - Workspace clear confirmation now calls the Catalog clear path instead of the hidden legacy id registry, so confirmed clear still archives Catalog Entries.
 - Workspace snapshot JSON import UI was removed. JSON snapshots are export-only metadata; image import must use Settings > External Output Sources to become Catalog Entries.
 - Focused `vp check contexts/LegacyVisualBatchContext.tsx hooks/useStudioShell.ts scripts/catalog-first-source-audit.ts scripts/catalog-first-source-audit.test.ts` passed after removing the public snapshot.
@@ -74,7 +95,11 @@ Fresh focused gates from the latest slices:
 - Focused `vp test run scripts/style-authoring-source-audit.test.ts` passed: 6 tests.
 - Focused `vp check scripts/style-authoring-source-audit.ts scripts/style-authoring-source-audit.test.ts` passed.
 - `bun run build` passed after the latest catalog/legacy slices; UI/server build clean, chunk budgets OK. Warnings about `vite:asset` timing and chunks over 500 KB are known/non-blocking because budget guards pass.
-- Full `bun run check` currently fails on formatting issues across 169 files. Do not run global `--fix` casually; fix touched scopes or do a dedicated formatting slice.
+- `bun run test` passed after Recipe Module Examples: 94 files / 275 tests.
+- `bun run recipes:verify` passed after adding `recipes:examples:verify`: catalog OK, examples OK, source OK, prompt eval OK.
+- `bun run build` passed after Recipe Module Examples; UI/server build clean, chunk budgets OK. Warnings about `vite:asset` timing and chunks over 500 KB are known/non-blocking because budget guards pass.
+- Focused `bun run check -- lib/recipeModuleExamples.ts lib/recipeModuleExamples.test.ts scripts/validate-recipe-module-examples.ts package.json docs/ARCHITECTURE.md docs/active/professionalization-roadmap.md docs/TECHNICAL_DEBT.md SKILLS.md` passed.
+- Full `bun run check` currently fails on formatting issues across 151 files in the dirty worktree. Do not run global `--fix` casually; fix touched scopes or do a dedicated formatting slice.
 
 Earlier broad gates in this branch also passed, but rerun fresh before claiming broad completion:
 
@@ -169,9 +194,10 @@ Completed:
 - `runLocalGeneration` no longer returns `GenerationBatch`; it returns catalog-derived local result data.
 - `localGenerationVisualBatchCompat` builds the legacy Visual Batch only at append edge.
 - `LegacyVisualBatchContext` append API is explicitly named `prependGeneratedLegacyVisualBatch`.
-- `catalog:source:verify` enforces generated-job legacy append isolation: `appendLocalGenerationResultToLegacyVisualBatches`, `prependGeneratedLegacyVisualBatch`, and `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_ID` cannot spread outside the local-generation compat/context/reducer edge.
+- `catalog:source:verify` enforces generated-job legacy append isolation: `appendLocalGenerationResultToLegacyVisualBatches`, `registerGeneratedLegacyVisualBatchRef`, and `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_REF` cannot spread outside the local-generation compat/context/reducer edge.
 - `catalog:source:verify` enforces `useLegacyVisualBatches()` isolation: only `GenerationContext`, `LegacyVisualBatchContext`, and `useStudioShell` may consume it directly.
 - `catalog:source:verify` enforces no full snapshot export from `LegacyVisualBatchContext`; public API is IDs plus compatibility actions only.
+- `catalog:source:verify` enforces no full snapshot types inside `legacyVisualBatchReducer`; snapshot parsing/conversion stays at import/context edges.
 - `catalog:source:verify` enforces hook-level `LegacyVisualBatchSnapshot` isolation: only `useStudioStorageRecovery` may mention it.
 - Active Visual Batches are in-memory only. `catalog-cache` and `catalog-trash` are legacy recovery keys only.
 - `catalog:source:verify` blocks `LegacyVisualBatchContext` from reintroducing `useIndexedDBStorage`, raw cache keys, or direct `utils/idb` access.
@@ -208,6 +234,25 @@ Relevant files:
 - `scripts/provider-boundary-source-audit.ts`
 - `apps/local-server/src/providers/runtimeConfig.ts`
 
+### Recipe Module Examples
+
+- `lib/recipeModuleExamples.ts` now holds provider-independent blueprints for future asset-task modules.
+- Current examples:
+  - `sprite-sheet-grid-v1`: `moduleId=spritesheet`, `task=sprite_sheet`.
+  - `texture-material-tile-v1`: `moduleId=texture-material`, `task=texture_generate`.
+- Examples build Generation Task Specs with `providerId: null`, stay `activation: example_only`, and only allow Codex-first providers (`codex`, `dry_run`).
+- `recipes:examples:verify` validates coverage, uniqueness, provider boundary, and spec buildability.
+- `recipes:verify` now includes `recipes:examples:verify`.
+- `recipes:catalog -- --examples` prints these blueprints next to runtime catalog entries for agent-readable discovery.
+- These examples are not UI cards and do not enable a new runtime provider. Convert `texture_generate` into runtime only after UI, builder, and adapter are explicit.
+
+Relevant files:
+
+- `lib/recipeModuleExamples.ts`
+- `lib/recipeModuleExamples.test.ts`
+- `scripts/validate-recipe-module-examples.ts`
+- `package.json`
+
 ## Known Dirty Worktree
 
 The worktree is very dirty by design. Expect changes across:
@@ -243,8 +288,10 @@ Useful validation:
 
 - Author new presets directly in granular YAML.
 - Add more human/agent authoring examples.
-- Next preset cleanup is reducing remaining alias/export compatibility and `STYLE_PACKS` doc/runtime vocabulary, not editing legacy YAML.
+- Preset cleanup advanced: runtime pack-summary/generated-loader exports now use `StyleRuntime*` names, the old `styles/types.ts` barrel is deleted, and `manifests/templates/` now has image, sprite-sheet, and texture starters verified by `styles:templates:verify`.
+- New preset authoring is now safer: `styles:scaffold` previews or writes a new granular manifest plus both ref registrations from one command, without touching legacy YAML.
 - Replace static render budget with browser-render measurement for expanded packs.
+- Current render budget is no longer purely static; `components/recipes/styleBrowserRenderPlan.ts` is shared by UI and `styles:render`. Browser verification for expanded `pack_05` passed manually; remaining step is deciding whether to make that browser pass a reusable script.
 
 Useful validation:
 
@@ -267,6 +314,7 @@ Useful validation:
 ### Recipe Modules / Tokens
 
 - Run live Codex output quality comparison using `recipes:evaluate`.
+- Convert Recipe Module Examples into runtime modules only when UI, context builder, provider directives, and adapter execution boundaries exist.
 - Keep compact Recipe Provider Directives while preserving output quality.
 - Do not remove legacy Recipe Context from stored job metadata without evidence.
 

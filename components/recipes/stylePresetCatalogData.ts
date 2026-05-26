@@ -1,4 +1,4 @@
-import type { StylePackManifest, StylePresetManifest } from './styles/types';
+import type { StylePackManifest, StylePresetManifest } from './styles/manifestTypes';
 import {
   createStylePresetCatalog,
   validateStyleManifestGraph,

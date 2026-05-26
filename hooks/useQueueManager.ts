@@ -30,7 +30,11 @@ export function createQueueJob(
     id: `job-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
     prompt,
     workspaceId,
-    config: { ...config, prompt },
+    config: {
+      ...config,
+      attachments: config.attachments.map((attachment) => ({ ...attachment })),
+      prompt,
+    },
     status: 'pending',
     createdAt: Date.now(),
     isForced: force,

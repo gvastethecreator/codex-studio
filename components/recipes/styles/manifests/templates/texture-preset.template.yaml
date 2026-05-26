@@ -1,0 +1,51 @@
+# Copy to ../presets/<pack_id>/<PRESET_ID>.yaml for texture/material style presets.
+schemaVersion: 1
+id: TEXTURE-PRESET-ID
+packId: pack_09
+name: Human Readable Texture Style
+category: 1. Natural Materials
+version: 1
+supportedTasks:
+  - texture_generate
+  - image_generate
+  - style_preset_card
+tags:
+  - materials-and-textures
+  - seamless-texture
+visualDna:
+  aesthetic: Tileable material study with clear surface identity and repeat-safe composition.
+  subject_treatment: No central subject; focus on continuous material structure and scale cues.
+  color_and_tone: Physically plausible albedo range with controlled hue variation and no baked labels.
+  lighting_and_shadow: Neutral diffuse lighting, minimal cast shadows, no directional scene lighting.
+  texture_and_material: High-frequency detail balanced with broad pattern structure and visible material grain.
+  camera_and_composition: Straight-on orthographic surface view, edge-continuity friendly framing.
+  atmosphere_and_mood: Practical production texture, inspectable and reusable, not decorative scene art.
+  rendering_and_quality: Seamless-ready, high detail, no perspective warping, no text, no logo.
+avoidRules:
+  - object silhouette
+  - perspective view
+  - harsh cast shadow
+  - labels
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/TEXTURE-PRESET-ID.webp
+attributes:
+  negativePrompt: object silhouette, perspective view, harsh cast shadow, labels, watermark, text
+  materials:
+    tileable: true
+    normalMapReady: true
+    roughnessFriendly: true
+taxonomy:
+  packId: pack_09
+  packName: Materials & Textures
+  categoryId: natural-materials
+  categoryName: 1. Natural Materials
+  tags:
+    - materials-and-textures
+    - seamless-texture
+  supportedTasks:
+    - texture_generate
+    - image_generate
+    - style_preset_card
+  hasDefaultImage: true

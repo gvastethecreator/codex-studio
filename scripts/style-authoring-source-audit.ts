@@ -14,10 +14,22 @@ const legacyMarkers = [
 const retiredRuntimeAliasMarkers = [
   { label: 'StylePack', pattern: /\bStylePack\b/ },
   { label: 'StylePresetDef', pattern: /\bStylePresetDef\b/ },
+  { label: 'STYLE_PACK_SUMMARIES', pattern: /\bSTYLE_PACK_SUMMARIES\b/ },
+  { label: 'loadStylePack', pattern: /\bloadStylePack\b/ },
+  { label: 'loadStylePacks', pattern: /\bloadStylePacks\b/ },
+  { label: 'loadGeneratedStylePack', pattern: /\bloadGeneratedStylePack\b/ },
+  { label: 'loadGeneratedStylePacks', pattern: /\bloadGeneratedStylePacks\b/ },
   {
     label: 'composeStylePacksFromManifests',
     pattern: /\bcomposeStylePacksFromManifests\b/,
   },
+] as const;
+const compatibilityTypeBarrelMarkers = [
+  './styles/types',
+  '../styles/types',
+  '../../styles/types',
+  'components/recipes/styles/types',
+  'recipes/styles/types',
 ] as const;
 
 const ignoredPathParts = new Set(['.git', 'dist', 'logs', 'node_modules', 'tmp']);
@@ -35,6 +47,11 @@ const allowedRetiredRuntimeAliasFiles = new Set([
   'scripts/style-authoring-source-audit.test.ts',
 ]);
 
+const allowedCompatibilityTypeBarrelFiles = new Set([
+  'scripts/style-authoring-source-audit.ts',
+  'scripts/style-authoring-source-audit.test.ts',
+]);
+
 export interface StyleAuthoringSourceAuditUsage {
   filePath: string;
   markers: string[];
@@ -46,6 +63,8 @@ export interface StyleAuthoringSourceAuditReport {
   violations: StyleAuthoringSourceAuditUsage[];
   retiredRuntimeAliasUsages: StyleAuthoringSourceAuditUsage[];
   retiredRuntimeAliasViolations: StyleAuthoringSourceAuditUsage[];
+  compatibilityTypeBarrelUsages: StyleAuthoringSourceAuditUsage[];
+  compatibilityTypeBarrelViolations: StyleAuthoringSourceAuditUsage[];
   generatedTempFiles: string[];
   retiredLegacyPackFiles: string[];
   legacyMigrationPackFiles: string[];
@@ -69,6 +88,10 @@ function isAllowedLegacyFile(repoPath: string) {
 
 function isAllowedRetiredRuntimeAliasFile(repoPath: string) {
   return allowedRetiredRuntimeAliasFiles.has(repoPath);
+}
+
+function isAllowedCompatibilityTypeBarrelFile(repoPath: string) {
+  return allowedCompatibilityTypeBarrelFiles.has(repoPath);
 }
 
 function isGeneratedTempFile(repoPath: string) {
@@ -178,6 +201,7 @@ export async function createStyleAuthoringSourceAuditReport(
 ): Promise<StyleAuthoringSourceAuditReport> {
   const usages: StyleAuthoringSourceAuditUsage[] = [];
   const retiredRuntimeAliasUsages: StyleAuthoringSourceAuditUsage[] = [];
+  const compatibilityTypeBarrelUsages: StyleAuthoringSourceAuditUsage[] = [];
   const files = await listSourceFiles(rootDir);
   const generatedTempFiles: string[] = [];
   const [
@@ -209,10 +233,22 @@ export async function createStyleAuthoringSourceAuditReport(
     if (aliasMarkers.length > 0) {
       retiredRuntimeAliasUsages.push({ filePath: repoPath, markers: [...aliasMarkers] });
     }
+    const compatibilityTypeMarkers = compatibilityTypeBarrelMarkers.filter((marker) =>
+      source.includes(marker),
+    );
+    if (compatibilityTypeMarkers.length > 0) {
+      compatibilityTypeBarrelUsages.push({
+        filePath: repoPath,
+        markers: [...compatibilityTypeMarkers],
+      });
+    }
   }
 
   const retiredRuntimeAliasViolations = retiredRuntimeAliasUsages.filter(
     (usage) => !isAllowedRetiredRuntimeAliasFile(usage.filePath),
+  );
+  const compatibilityTypeBarrelViolations = compatibilityTypeBarrelUsages.filter(
+    (usage) => !isAllowedCompatibilityTypeBarrelFile(usage.filePath),
   );
 
   return {
@@ -221,6 +257,8 @@ export async function createStyleAuthoringSourceAuditReport(
     violations: usages.filter((usage) => !isAllowedLegacyFile(usage.filePath)),
     retiredRuntimeAliasUsages,
     retiredRuntimeAliasViolations,
+    compatibilityTypeBarrelUsages,
+    compatibilityTypeBarrelViolations,
     generatedTempFiles,
     retiredLegacyPackFiles,
     legacyMigrationPackFiles,
@@ -244,6 +282,14 @@ if (import.meta.main) {
       `[styles:source] retiredRuntimeAliasUsages=${report.retiredRuntimeAliasUsages.length}`,
     );
     for (const usage of report.retiredRuntimeAliasUsages) {
+      console.log(`- ${usage.filePath} markers=${usage.markers.join(',')}`);
+    }
+  }
+  if (report.compatibilityTypeBarrelUsages.length > 0) {
+    console.log(
+      `[styles:source] compatibilityTypeBarrelUsages=${report.compatibilityTypeBarrelUsages.length}`,
+    );
+    for (const usage of report.compatibilityTypeBarrelUsages) {
       console.log(`- ${usage.filePath} markers=${usage.markers.join(',')}`);
     }
   }
@@ -273,6 +319,19 @@ if (import.meta.main) {
     }
     console.error(
       '[styles:source] Use StyleRuntimePack, StyleRuntimePreset, and composeStyleRuntimePacksFromManifests in new code.',
+    );
+    process.exitCode = 1;
+  }
+
+  if (report.compatibilityTypeBarrelViolations.length > 0) {
+    console.error(
+      `[styles:source] compatibilityTypeBarrelViolations=${report.compatibilityTypeBarrelViolations.length}`,
+    );
+    for (const usage of report.compatibilityTypeBarrelViolations) {
+      console.error(`- ${usage.filePath} markers=${usage.markers.join(',')}`);
+    }
+    console.error(
+      '[styles:source] Import style runtime contracts from runtimeTypes and manifest authoring contracts from manifestTypes.',
     );
     process.exitCode = 1;
   }

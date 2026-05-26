@@ -1,0 +1,43 @@
+# Copy to ../presets/<pack_id>/<PRESET_ID>.yaml, then replace every placeholder.
+schemaVersion: 1
+id: PRESET-ID
+packId: pack_01
+name: Human Readable Preset Name
+category: 1. Portrait Styles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - pack-slug
+  - category-slug
+visualDna:
+  aesthetic: Overall visual style direction in one precise sentence.
+  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
+  color_and_tone: Palette, contrast, grading, and tonal range.
+  lighting_and_shadow: Light source, direction, softness, shadow behavior.
+  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
+  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
+  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
+  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+avoidRules:
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/PRESET-ID.webp
+attributes:
+  negativePrompt: watermark, text
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: portrait-styles
+  categoryName: 1. Portrait Styles
+  tags:
+    - pack-slug
+    - category-slug
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

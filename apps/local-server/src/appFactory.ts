@@ -7,16 +7,9 @@ import { cors } from 'hono/cors';
 import { streamSSE } from 'hono/streaming';
 import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from './config';
 import { resolveCodexInvocation } from './codexExecutable';
-import {
-  getCatalogImage,
-  purgeCatalogImage,
-  queryCatalog,
-  registerCatalogImage,
-  restoreCatalogImage,
-  softDeleteCatalogImage,
-  updateCatalogImage,
-} from './catalog';
 import { createCatalogCommands } from './catalogCommands';
+import { createCatalogRoutes } from './catalogRoutes';
+import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
 import { createDefaultDbStore, type StudioDbStore } from './dbStore';
 import { getSettingValue, setSettingValue } from './db';
 import { publishEvent, subscribeEvents } from './events';
@@ -80,6 +73,7 @@ export interface CreateStudioAppOptions {
     ensureAppServer?: (reason?: AppServerEnsureReason) => void;
     getAppServerDiagnostics?: typeof getAppServerDiagnostics;
     isAppServerRunning?: typeof isAppServerRunning;
+    catalogStore?: StudioCatalogStore;
     dbStore?: StudioDbStore;
     settingsStorage?: StudioSettingsStorage;
     worker?: Pick<WorkerController, 'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus'>;
@@ -99,6 +93,7 @@ export async function createStudioApp(
     options.dependencies?.getAppServerDiagnostics ?? getAppServerDiagnostics;
   const isLocalAppServerRunning = options.dependencies?.isAppServerRunning ?? isAppServerRunning;
   const dbStore = options.dependencies?.dbStore ?? (await createDefaultDbStore());
+  const catalogStore = options.dependencies?.catalogStore ?? (await createDefaultCatalogStore());
   const appLogger = options.dependencies?.logger ?? log;
   const settingsStorage = options.dependencies?.settingsStorage ?? {
     getSetting: getSettingValue,
@@ -108,10 +103,10 @@ export async function createStudioApp(
     options.dependencies?.worker ??
     (await import('./worker')).getDefaultWorkerController(appLogger);
   const catalogCommands = createCatalogCommands({
-    updateCatalogImage,
-    softDeleteCatalogImage,
-    restoreCatalogImage,
-    purgeCatalogImage,
+    updateCatalogImage: (...args) => catalogStore.updateCatalogImage(...args),
+    softDeleteCatalogImage: (...args) => catalogStore.softDeleteCatalogImage(...args),
+    restoreCatalogImage: (...args) => catalogStore.restoreCatalogImage(...args),
+    purgeCatalogImage: (...args) => catalogStore.purgeCatalogImage(...args),
     publishEvent,
   });
 
@@ -249,7 +244,7 @@ export async function createStudioApp(
       sourceId: c.req.param('id'),
       libraryDir: getSettings().libraryDir,
       input: body,
-      registerCatalogImage,
+      registerCatalogImage: (...args) => catalogStore.registerCatalogImage(...args),
     });
     if (!result.ok) return c.json({ error: result.reason }, 400);
     publishEvent('output-source.imported', result.result);
@@ -406,91 +401,16 @@ export async function createStudioApp(
     return c.json({ ok: true });
   });
 
-  app.get('/api/catalog', (c) => {
-    const url = new URL(c.req.url);
-    return c.json(
-      queryCatalog({
-        libraryId: url.searchParams.get('library_id'),
-        workspaceId: url.searchParams.get('workspace_id'),
-        jobId: url.searchParams.get('job_id'),
-        batchId: url.searchParams.get('batch_id'),
-        favorite: url.searchParams.has('favorite')
-          ? url.searchParams.get('favorite') === 'true'
-          : undefined,
-        isDeleted: url.searchParams.get('deleted') === 'true',
-        q: url.searchParams.get('q'),
-        offset: Number(url.searchParams.get('offset') || 0),
-        limit: Number(url.searchParams.get('limit') || 50),
-      }),
-    );
-  });
+  app.route(
+    '/api/catalog',
+    createCatalogRoutes({
+      catalogStore,
+      catalogCommands,
+      embedMetadata,
+    }),
+  );
 
   app.route('/api/workspaces', createWorkspaceRoutes());
-
-  app.get('/api/catalog/search', (c) => {
-    const url = new URL(c.req.url);
-    return c.json(
-      queryCatalog({
-        q: url.searchParams.get('q'),
-        offset: Number(url.searchParams.get('offset') || 0),
-        limit: Number(url.searchParams.get('limit') || 50),
-      }),
-    );
-  });
-
-  app.get('/api/catalog/:id', (c) => {
-    const image = getCatalogImage(c.req.param('id'));
-    if (!image) return c.json({ error: 'Catalog image not found' }, 404);
-    return c.json(image);
-  });
-
-  app.patch('/api/catalog/:id', async (c) => {
-    const body = await c.req.json().catch(() => ({}));
-    const result = catalogCommands.update(c.req.param('id'), {
-      isFavorite: body.isFavorite,
-      tags: body.tags,
-      workspaceId: body.workspaceId,
-    });
-    if (!result.ok) return c.json({ error: 'Catalog image not found' }, 404);
-    return c.json(result.image);
-  });
-
-  app.delete('/api/catalog/:id', (c) => {
-    const result = catalogCommands.softDelete(c.req.param('id'));
-    if (!result.ok) return c.json({ error: 'Catalog image not found' }, 404);
-    return c.json(result.image);
-  });
-
-  app.delete('/api/catalog/:id/permanent', (c) => {
-    const result = catalogCommands.purge(c.req.param('id'));
-    if (!result.ok) return c.json({ error: 'Catalog image not found' }, 404);
-    return c.json(result.image);
-  });
-
-  app.post('/api/catalog/:id/restore', (c) => {
-    const result = catalogCommands.restore(c.req.param('id'));
-    if (!result.ok) return c.json({ error: 'Catalog image not found' }, 404);
-    return c.json(result.image);
-  });
-
-  app.post('/api/catalog/:id/embed', async (c) => {
-    const image = getCatalogImage(c.req.param('id'));
-    if (!image) return c.json({ error: 'Catalog image not found' }, 404);
-    const result = await embedMetadata(image.filePath, {
-      prompt: image.prompt || '',
-      negativePrompt: image.negativePrompt,
-      aspectRatio: image.aspectRatio,
-      imageSize: image.imageSize,
-      model: 'codex-imagegen',
-      recipe: image.recipeId,
-      batchId: image.batchId,
-      generatedAt: image.createdAt,
-      studioVersion: '0.0.0',
-      libraryId: image.libraryId,
-      catalogId: image.id,
-    });
-    return c.json(result);
-  });
 
   app.get('/api/events', (c) => {
     c.header('X-Accel-Buffering', 'no');

@@ -41,9 +41,9 @@ import {
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
 import {
-  STYLE_PACK_SUMMARIES,
-  loadStylePack,
-  loadStylePacks,
+  STYLE_RUNTIME_PACK_SUMMARIES,
+  loadStyleRuntimePack,
+  loadStyleRuntimePacks,
   type StyleRuntimePack,
   type StyleRuntimePreset,
 } from './stylesData';
@@ -53,11 +53,14 @@ import Slider from '../ui/Slider';
 import Tooltip from '../Tooltip';
 import { FloatingTooltip } from '../ui/FloatingTooltip';
 import {
-  STYLE_CATEGORY_INITIAL_RENDER_LIMIT,
   STYLE_GROUP_INITIAL_RENDER_LIMIT,
   estimateStyleGroupPlaceholderHeight,
   getVisibleStylePresets,
 } from './styleGridVirtualization';
+import {
+  createStyleBrowserProcessedData,
+  createStyleBrowserRenderPlan,
+} from './styleBrowserRenderPlan';
 
 interface StylesRecipeProps {
   config: ImageGenerationConfig;
@@ -74,7 +77,7 @@ interface StylesRecipeProps {
 }
 
 const FAVORITES_PACK_ID = 'favorites';
-const DEFAULT_STYLE_PACK_ID = STYLE_PACK_SUMMARIES[0]?.id ?? 'pack_01';
+const DEFAULT_STYLE_PACK_ID = STYLE_RUNTIME_PACK_SUMMARIES[0]?.id ?? 'pack_01';
 const STYLE_GROUP_VIEWPORT_ROOT_MARGIN = '900px 0px';
 
 const StylePresetCatalogSearchSurface = React.lazy(() =>
@@ -188,7 +191,6 @@ interface StylePresetCardProps {
   copied: boolean;
   favorite: boolean;
   theme: { color: string; bg: string; border: string; text: string };
-  isGenerating: boolean;
   onApply: (preset: StyleRuntimePreset) => void;
   onCopy: (e: React.MouseEvent, preset: StyleRuntimePreset) => void;
   onToggleFavorite: (presetId: string) => void;
@@ -222,7 +224,6 @@ const StylePresetCard = React.memo(
     copied,
     favorite,
     theme,
-    isGenerating,
     onApply,
     onCopy,
     onToggleFavorite,
@@ -359,7 +360,6 @@ const StylePresetCard = React.memo(
         return (
           <button
             onClick={() => onApply(preset)}
-            disabled={isGenerating}
             className="absolute inset-0 h-full w-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
           >
             <img
@@ -380,7 +380,6 @@ const StylePresetCard = React.memo(
         return (
           <button
             onClick={() => onApply(preset)}
-            disabled={isGenerating}
             className="absolute inset-0 h-full w-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
           >
             <img
@@ -406,7 +405,6 @@ const StylePresetCard = React.memo(
       return (
         <button
           onClick={() => onApply(preset)}
-          disabled={isGenerating}
           className="absolute inset-0 flex h-full w-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
         >
           <div
@@ -453,6 +451,8 @@ const StylePresetCard = React.memo(
             isHoveredRef.current = false;
             onHoverPreviewChange(null);
           }}
+          data-style-preset-card={preset.id}
+          data-style-category={preset.category || 'General'}
           className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${
             active
               ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
@@ -481,8 +481,8 @@ const StylePresetCard = React.memo(
           <div className="absolute inset-x-0 bottom-0 z-20 px-3 pt-4 pb-0">
             <div className="rounded-t-xl rounded-b-none border border-white/10 border-b-0 bg-black/34 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md">
               <div
-                onClick={() => !isGenerating && onApply(preset)}
-                className={`flex flex-col justify-center ${!isGenerating ? 'cursor-pointer' : ''}`}
+                onClick={() => onApply(preset)}
+                className="flex cursor-pointer flex-col justify-center"
               >
                 <div className="mb-1 flex w-full items-center justify-between gap-2">
                   <span
@@ -584,6 +584,10 @@ const StylePresetGroupSection = React.memo(
     return (
       <div
         ref={sectionRef}
+        data-style-group={groupKey}
+        data-style-group-state={isNearViewport ? 'eager' : 'placeholder'}
+        data-style-group-planned-cards={visiblePresets.length}
+        data-style-group-hidden-cards={hiddenPresetCount}
         className="animate-in fade-in slide-in-from-bottom-4 duration-500"
         style={isNearViewport ? undefined : { minHeight: placeholderHeight }}
       >
@@ -600,6 +604,7 @@ const StylePresetGroupSection = React.memo(
         {isNearViewport ? (
           <>
             <div
+              data-style-group-grid={groupKey}
               className="grid gap-4"
               style={{ gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))` }}
             >
@@ -765,7 +770,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     if (currentPackId === FAVORITES_PACK_ID || loadedStylePacksById[currentPackId]) return;
 
     let cancelled = false;
-    void loadStylePack(currentPackId).then((pack) => {
+    void loadStyleRuntimePack(currentPackId).then((pack) => {
       if (!cancelled && pack) cacheStylePack(pack);
     });
     return () => {
@@ -777,7 +782,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     if (currentPackId !== FAVORITES_PACK_ID || favorites.length === 0) return;
 
     let cancelled = false;
-    void loadStylePacks().then((packs) => {
+    void loadStyleRuntimePacks().then((packs) => {
       if (cancelled) return;
       setLoadedStylePacksById((current) => {
         const next = { ...current };
@@ -854,7 +859,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       } satisfies StyleRuntimePack;
     }
     const summary =
-      STYLE_PACK_SUMMARIES.find((pack) => pack.id === currentPackId) ?? STYLE_PACK_SUMMARIES[0];
+      STYLE_RUNTIME_PACK_SUMMARIES.find((pack) => pack.id === currentPackId) ??
+      STYLE_RUNTIME_PACK_SUMMARIES[0];
     return (
       loadedStylePacksById[currentPackId] ??
       ({
@@ -951,94 +957,41 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     setShowAllStyleCategories(false);
   }, [currentPackId, searchQuery, sortOrder, showFavoritesOnly]);
 
-  // Enhanced Grouping Logic with Search, Sort, and Favorites Bubbling
-  const processedData = useMemo(() => {
-    let rawPresets: StyleRuntimePreset[] = [];
-
-    if (currentPackId === FAVORITES_PACK_ID) {
-      rawPresets = favoritePresets;
-    } else {
-      rawPresets = activePack.presets || [];
-    }
-
-    // 1. Filter by Search
-    let filtered = rawPresets.filter((p) => {
-      const search = searchQuery.toLowerCase();
-      return (
-        p.name.toLowerCase().includes(search) ||
-        p.style.aesthetic.toLowerCase().includes(search) ||
-        p.category?.toLowerCase().includes(search)
-      );
-    });
-
-    // 2. Filter by Favorites Only toggle (Only valid in non-favorite tabs)
-    if (showFavoritesOnly && currentPackId !== FAVORITES_PACK_ID) {
-      filtered = filtered.filter((p) => favorites.includes(p.id));
-    }
-
-    // 3. Sort Alphabetically
-    filtered.sort((a, b) => {
-      return sortOrder === 'az' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
-    });
-
-    // 4. Grouping Logic
-    const favs: StyleRuntimePreset[] = [];
-    const groups: Record<string, StyleRuntimePreset[]> = {};
-
-    if (currentPackId === FAVORITES_PACK_ID) {
-      // In Favorites view, group by Category directly, no top-level "Pinned" section needed
-      filtered.forEach((preset) => {
-        const category = preset.category || 'General';
-        if (!groups[category]) groups[category] = [];
-        groups[category].push(preset);
-      });
-    } else {
-      // In standard view, bubble Favorites to top
-      const nonFavs: StyleRuntimePreset[] = [];
-      filtered.forEach((p) => {
-        if (favorites.includes(p.id)) {
-          favs.push(p);
-        } else {
-          nonFavs.push(p);
-        }
-      });
-
-      nonFavs.forEach((preset) => {
-        const category = preset.category || 'General';
-        if (!groups[category]) groups[category] = [];
-        groups[category].push(preset);
-      });
-    }
-
-    return { favorites: favs, groups };
-  }, [
-    activePack,
-    currentPackId,
-    favoritePresets,
-    searchQuery,
-    sortOrder,
-    favorites,
-    showFavoritesOnly,
-  ]);
-
-  const styleGroupEntries = useMemo(
-    () => Object.entries(processedData.groups) as [string, StyleRuntimePreset[]][],
-    [processedData.groups],
+  const processedData = useMemo(
+    () =>
+      createStyleBrowserProcessedData({
+        activePack,
+        currentPackId,
+        favoritesPackId: FAVORITES_PACK_ID,
+        favoritePresets,
+        favoriteIds: favorites,
+        searchQuery,
+        sortOrder,
+        showFavoritesOnly,
+      }),
+    [
+      activePack,
+      currentPackId,
+      favoritePresets,
+      searchQuery,
+      sortOrder,
+      favorites,
+      showFavoritesOnly,
+    ],
   );
-  const visibleStyleGroupEntries = showAllStyleCategories
-    ? styleGroupEntries
-    : styleGroupEntries.slice(0, STYLE_CATEGORY_INITIAL_RENDER_LIMIT);
-  const hiddenStyleGroupEntries = showAllStyleCategories
-    ? []
-    : styleGroupEntries.slice(STYLE_CATEGORY_INITIAL_RENDER_LIMIT);
-  const hiddenStylePresetCount = hiddenStyleGroupEntries.reduce(
-    (total, [, presets]) => total + presets.length,
-    0,
+
+  const styleRenderPlan = useMemo(
+    () =>
+      createStyleBrowserRenderPlan({
+        processedData,
+        showAllStyleCategories,
+      }),
+    [processedData, showAllStyleCategories],
   );
+  const { visibleStyleGroupEntries, hiddenStyleGroupEntries, hiddenStylePresetCount } =
+    styleRenderPlan;
 
   const handleApplyStyle = async (preset: StyleRuntimePreset, presetPackIdOverride?: string) => {
-    if (isGenerating) return;
-
     setActivePresetId(preset.id);
 
     const presetPackId = presetPackIdOverride ?? getPackIdForPreset(preset);
@@ -1181,7 +1134,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   };
 
   const handleApplyCatalogPreset = async (result: StylePresetCatalogSearchResult) => {
-    const loadedPack = loadedStylePacksById[result.packId] ?? (await loadStylePack(result.packId));
+    const loadedPack =
+      loadedStylePacksById[result.packId] ?? (await loadStyleRuntimePack(result.packId));
     if (loadedPack) cacheStylePack(loadedPack);
     const preset = loadedPack?.presets.find((candidate) => candidate.id === result.id);
     if (!preset) return;
@@ -1260,7 +1214,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           copied={copiedStyleId === preset.id}
           favorite={favorites.includes(preset.id)}
           theme={activeTheme}
-          isGenerating={isGenerating}
           onApply={handleApplyStyle}
           onCopy={handleCopyStylePrompt}
           onToggleFavorite={toggleFavorite}
@@ -1277,7 +1230,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       onOpenImage,
       handleApplyStyle,
       handleCopyStylePrompt,
-      isGenerating,
       toggleFavorite,
       presetVisualStateById,
     ],
@@ -1325,7 +1277,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   <input
                     type="file"
                     ref={fileInputRef}
-                    onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
+                    onChange={(e) => {
+                      if (e.target.files) {
+                        onFileSelect(Array.from(e.target.files));
+                        e.target.value = '';
+                      }
+                    }}
                     className="hidden"
                     accept="image/*"
                   />
@@ -1438,7 +1395,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       </div>
 
       {/* RIGHT: STYLE BROWSER */}
-      <div className="flex-1 h-full flex flex-col bg-[#060606] relative">
+      <div data-style-browser-root className="flex-1 h-full flex flex-col bg-[#060606] relative">
         <div className="absolute inset-0 opacity-[0.02] pointer-events-none" />
 
         {/* Pack Tabs */}
@@ -1469,13 +1426,15 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           </button>
 
           {/* Standard Packs */}
-          {STYLE_PACK_SUMMARIES.map((pack) => {
+          {STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => {
             const isActive = currentPackId === pack.id;
             const theme = PACK_THEMES[pack.id] || PACK_THEMES['pack_01'];
 
             return (
               <button
                 key={pack.id}
+                data-style-pack-id={pack.id}
+                data-style-pack-active={isActive ? 'true' : 'false'}
                 onClick={() => {
                   startViewTransition(() => {
                     setCurrentPackId(pack.id);
@@ -1540,6 +1499,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             <button
               onClick={() => setIsCatalogSearchOpen(true)}
+              data-style-open-catalog
               className="flex h-8 items-center gap-2 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
               title="Open Style Catalog"
             >
@@ -1641,6 +1601,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             {hiddenStyleGroupEntries.length > 0 && (
               <button
                 onClick={() => setShowAllStyleCategories(true)}
+                data-style-show-all-categories
+                data-style-hidden-groups={hiddenStyleGroupEntries.length}
+                data-style-hidden-presets={hiddenStylePresetCount}
                 className="flex h-10 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
               >
                 <ChevronRight size={14} />

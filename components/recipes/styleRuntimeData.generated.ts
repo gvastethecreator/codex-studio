@@ -2,14 +2,14 @@
 // Edit Style Preset Manifests, then run `bun run styles:runtime`.
 import type { StyleRuntimePack } from './styles/runtimeTypes';
 
-export interface GeneratedStylePackSummary {
+export interface GeneratedStyleRuntimePackSummary {
   id: string;
   name: string;
   description: string;
   presetCount: number;
 }
 
-export const GENERATED_STYLE_PACK_SUMMARIES = [
+export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
   {
     id: 'pack_01',
     name: 'Photography & Realism',
@@ -83,62 +83,64 @@ export const GENERATED_STYLE_PACK_SUMMARIES = [
     description: 'Playful, toy-like, and niche aesthetic styles.',
     presetCount: 80,
   },
-] as GeneratedStylePackSummary[];
+] as GeneratedStyleRuntimePackSummary[];
 
-const GENERATED_STYLE_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {
+const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {
   pack_01: () =>
     import('./styleRuntimePacks.generated/pack_01').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_02: () =>
     import('./styleRuntimePacks.generated/pack_02').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_03: () =>
     import('./styleRuntimePacks.generated/pack_03').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_04: () =>
     import('./styleRuntimePacks.generated/pack_04').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_05: () =>
     import('./styleRuntimePacks.generated/pack_05').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_06: () =>
     import('./styleRuntimePacks.generated/pack_06').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_07: () =>
     import('./styleRuntimePacks.generated/pack_07').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_08: () =>
     import('./styleRuntimePacks.generated/pack_08').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_09: () =>
     import('./styleRuntimePacks.generated/pack_09').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_10: () =>
     import('./styleRuntimePacks.generated/pack_10').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
   pack_11: () =>
     import('./styleRuntimePacks.generated/pack_11').then((module) =>
-      module.loadGeneratedStylePack(),
+      module.loadGeneratedStyleRuntimePack(),
     ),
 };
 
-export async function loadGeneratedStylePack(packId: string): Promise<StyleRuntimePack | null> {
-  const loader = GENERATED_STYLE_PACK_LOADERS[packId];
+export async function loadGeneratedStyleRuntimePack(
+  packId: string,
+): Promise<StyleRuntimePack | null> {
+  const loader = GENERATED_STYLE_RUNTIME_PACK_LOADERS[packId];
   return loader ? loader() : null;
 }
 
-export async function loadGeneratedStylePacks(): Promise<StyleRuntimePack[]> {
+export async function loadGeneratedStyleRuntimePacks(): Promise<StyleRuntimePack[]> {
   return Promise.all(
-    GENERATED_STYLE_PACK_SUMMARIES.map((pack) => loadGeneratedStylePack(pack.id)),
+    GENERATED_STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => loadGeneratedStyleRuntimePack(pack.id)),
   ).then((loaded) => loaded.filter(Boolean) as StyleRuntimePack[]);
 }

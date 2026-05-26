@@ -58,7 +58,12 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   );
 
   return (
-    <div className="absolute inset-0 z-40 flex flex-col bg-black/86 backdrop-blur-xl">
+    <div
+      data-style-catalog-root
+      data-style-catalog-state={catalog ? 'ready' : 'loading'}
+      data-style-catalog-results-count={catalog ? results.length : -1}
+      className="absolute inset-0 z-40 flex flex-col bg-black/86 backdrop-blur-xl"
+    >
       <div className="flex h-16 shrink-0 items-center justify-between border-b border-white/10 px-6">
         <div className="flex min-w-0 items-center gap-3">
           <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300">
@@ -94,6 +99,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         <div className="flex min-w-70 flex-1 items-center gap-2 rounded-xl border border-white/10 bg-black/50 px-3 py-2">
           <Search size={15} className="text-zinc-500" />
           <input
+            data-style-catalog-search-input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search presets, tags, DNA..."
@@ -145,10 +151,12 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             <span className="text-xs font-black uppercase tracking-widest">Loading catalog...</span>
           </div>
         ) : results.length > 0 ? (
-          <div className="grid grid-cols-1 gap-3 2xl:grid-cols-2">
+          <div data-style-catalog-results className="grid grid-cols-1 gap-3 2xl:grid-cols-2">
             {results.map((result) => (
               <div
                 key={result.id}
+                data-style-catalog-result
+                data-style-catalog-result-id={result.id}
                 className="group flex min-w-0 gap-4 rounded-2xl border border-white/8 bg-white/[0.03] p-3 transition-colors hover:border-white/15 hover:bg-white/[0.06]"
               >
                 <div className="relative h-24 w-18 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950">

@@ -38,29 +38,38 @@ Do not add provider-specific task names such as `fal_spritesheet` or `comfy_text
 
 Recipe Module is not a React page. React page can host recipe UI, but the workflow contract must be pure and testable.
 
-Run `bun run recipes:catalog -- --query=<text> --limit=20` to inspect Recipe Modules by text. Add `--task=<task>`, `--provider=<provider_id>`, `--parameter=<param_id>`, or `--json` for agent-ready output.
-Run `bun run recipes:verify` before closing broad recipe work. It checks Recipe Module catalog coverage, default task support, provider coverage, duplicate parameter ids, enum options, slider types, and required/default conflicts.
+Run `bun run recipes:catalog -- --query=<text> --limit=20` to inspect Recipe Modules by text. Add `--task=<task>`, `--provider=<provider_id>`, `--parameter=<param_id>`, `--examples`, or `--json` for agent-ready output.
+Run `bun run recipes:verify` before closing broad recipe work. It checks Recipe Module catalog coverage, default task support, provider coverage, duplicate parameter ids, enum options, slider types, required/default conflicts, provider-independent examples, React surface boundaries, and prompt evaluation.
+Run `bun run recipes:examples:verify` when changing future asset-task blueprints. Examples must stay `example_only`, provider-independent, and Codex-first (`codex`, `dry_run`) until UI/builders/adapters are explicit.
 Run `bun run recipes:source:verify` when changing recipe UI or module plumbing. It blocks React recipe surfaces from importing task-spec builders, Recipe Context builders, Recipe Provider Directives, or provider compilers.
+Run `bun run recipes:evaluate:live -- --recipe=<id> --out=logs/recipe-prompt-quality` to plan a live Codex quality comparison without creating jobs. Add `--execute` to queue real legacy-vs-directives jobs through the local backend, record JSON + Markdown review templates, and keep only job/catalog refs plus transcript paths in the repo-local report.
 
 ## Add Or Change A Style Preset
 
-1. Edit `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` first.
-2. Preserve stable `id`, `packId`, `name`, `category`, visual DNA, avoid rules, asset refs, supported tasks, tags, version.
-3. Maintain editorial taxonomy (`packId`, `packName`, `categoryId`, `categoryName`, domain, tags, supported tasks, default image state) so agents can query presets without scanning compatibility packs.
-4. Register the preset in both the matching category `presetRefs` and the pack-level `presetRefs`; refs must stay inside the same pack namespace.
-5. Keep each preset visually distinct from neighboring presets.
-6. Do not collapse motif/avoid constraints into generic prompt text.
-7. Validate the edited preset file and any catalog index generated from it.
+1. Prefer `bun run styles:scaffold -- --preset=<ID> --pack=<pack_id> --category=<category id or exact name> --name=<Name> --template=style|sprite|texture` when creating a new preset.
+   It is dry-run by default; pass `--write` to mutate files and optionally `--default-image=/assets/...` to prefill a real default image path.
+2. Edit `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` first.
+   `styles:scaffold` uses `components/recipes/styles/manifests/templates/style-preset.template.yaml`, `sprite-sheet-preset.template.yaml`, or `texture-preset.template.yaml` under the hood for new presets.
+3. Preserve stable `id`, `packId`, `name`, `category`, visual DNA, avoid rules, asset refs, supported tasks, tags, version.
+4. Maintain editorial taxonomy (`packId`, `packName`, `categoryId`, `categoryName`, domain, tags, supported tasks, default image state) so agents can query presets without scanning compatibility packs.
+5. Register the preset in both the matching category `presetRefs` and the pack-level `presetRefs`; refs must stay inside the same pack namespace.
+6. Keep each preset visually distinct from neighboring presets.
+7. Do not collapse motif/avoid constraints into generic prompt text.
+8. Validate the edited preset file and any catalog index generated from it.
+9. Import manifest-authoring contracts from `components/recipes/styles/manifestTypes.ts` and runtime/UI contracts from `components/recipes/styles/runtimeTypes.ts`. Do not use the retired `components/recipes/styles/types` path.
 
 Run `bun run styles:validate -- --preset=<id>` after editing one granular preset, or `bun run styles:validate -- --pack=<pack_id>` after editing a pack. Use `--coverage` to see taxonomy and default-image coverage by pack, and `--strict-taxonomy` when intentionally requiring persisted taxonomy in the edited scope.
+Run `bun run styles:scaffold -- --preset=<id> --pack=<pack_id> --category=<category id or exact name> --name=<Name> --template=style|sprite|texture` to preview the new preset file plus pack/category ref changes before writing them. Add `--write` to apply the scaffold. If `--default-image` is omitted, the scaffold uses `/assets/recipes/styles/defaults/<id>.webp` and leaves `taxonomy.hasDefaultImage: false` until the asset exists.
 Run `bun run styles:taxonomy -- --preset=<id>` to backfill editorial taxonomy for one manifest, `--pack=<pack_id>` for one pack, or `--all` only when intentionally regenerating taxonomy across the catalog.
 Run `bun run styles:catalog -- --query=<text> --limit=20` to search the Style Preset Catalog without scanning compatibility packs. Add `--pack=<pack_id>`, `--category=<name>`, `--tag=<tag>`, `--task=<task>`, or `--json` for agent-ready output.
 Run `bun run styles:runtime` after manifest edits that affect the Styles UI. It regenerates the compact runtime index, pack indexes, and per-category runtime chunks used by `stylesData.ts`, then formats generated files in Windows-safe batches.
 Run `bun run styles:runtime:check` to verify the generated runtime file is current without rewriting it. Run `bun run styles:verify` before closing broad preset work.
-Run `bun run styles:source:verify` when changing Styles runtime/scripts. It blocks accidental runtime imports from legacy pack YAML, generated runtime check temp files, presets that exist only in legacy pack YAML, and YAML files recreated in the retired `components/recipes/styles/packs` directory; only source-audit and compatibility-test seams should mention `LEGACY_STYLE_PACKS` or `scripts/style-migration/legacy-packs`.
-Run `bun run styles:render:verify` after changing Styles UI grouping, pack runtime data, or virtualized rendering. It reports initial category/card budgets per pack and keeps large packs from mounting every preset at once.
+Run `bun run styles:templates:verify` after changing files in `components/recipes/styles/manifests/templates/`. It checks required image, sprite sheet, and texture templates plus their task coverage.
+Run `bun run styles:source:verify` when changing Styles runtime/scripts. It blocks accidental runtime imports from legacy pack YAML, generated runtime check temp files, presets that exist only in legacy pack YAML, YAML files recreated in the retired `components/recipes/styles/packs` directory, retired runtime pack aliases/exports, and imports from the retired `styles/types` path; only source-audit and compatibility-test seams should mention old legacy pack internals.
+Run `bun run styles:render:verify` after changing Styles UI grouping, pack runtime data, or virtualized rendering. It reports mounted/eager/placeholder sections plus eager/planned card budgets per pack from `styleBrowserRenderPlan`, keeping large packs from mounting every preset at once. For major Styles UI changes, verify `pack_05` in browser and compare collapsed/expanded DOM counts against this report.
+Run `bun run styles:browser:verify -- --url=http://localhost:3000/#recipe-styles` (or the active dev URL) after major Styles UI changes when you want the reusable browser gate instead of a manual pass. If the gate should validate a clean dev console on Windows, start the UI with `VITE_ENABLE_REACT_SCAN=false bun run dev:ui` first.
 
-Legacy pack YAML is retired. `bun run styles:split`, `scripts/expand-pack-02-pack-05.ts`, and `scripts/reorder-style-packs.ts` intentionally refuse to mutate granular manifests from old pack YAML flows. `STYLE_PACKS`, `StylePack`, `StylePresetDef`, and `composeStylePacksFromManifests()` are retired compatibility names; use `StyleRuntimePack`, `StyleRuntimePreset`, `composeStyleRuntimePacksFromManifests()`, and manifest/catalog types for new code. `styles:source:verify` blocks those retired runtime aliases outside the source-audit guard.
+Legacy pack YAML is retired. `bun run styles:split`, `scripts/expand-pack-02-pack-05.ts`, and `scripts/reorder-style-packs.ts` intentionally refuse to mutate granular manifests from old pack YAML flows. Use `StyleRuntimePack`, `StyleRuntimePreset`, `composeStyleRuntimePacksFromManifests()`, `STYLE_RUNTIME_PACK_SUMMARIES`, `loadStyleRuntimePack()`, `loadStyleRuntimePacks()`, and manifest/catalog types for new code. `styles:source:verify` blocks retired runtime aliases/exports outside the source-audit guard.
 
 ## Audit Token Usage
 

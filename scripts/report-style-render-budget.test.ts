@@ -17,10 +17,22 @@ describe('style render budget report', () => {
     expect(
       Math.max(...report.packs.map((pack) => pack.initialRenderedPresetCards)),
     ).toBeLessThanOrEqual(64);
+    expect(Math.max(...report.packs.map((pack) => pack.eagerPresetCards))).toBeLessThanOrEqual(32);
+    expect(
+      Math.max(...report.packs.map((pack) => pack.expandedEagerPresetCards)),
+    ).toBeLessThanOrEqual(32);
+    expect(Math.max(...report.packs.map((pack) => pack.mountedCategorySections))).toBe(4);
+    expect(Math.min(...report.packs.map((pack) => pack.placeholderCategorySections))).toBe(2);
     expect(report.packs.find((pack) => pack.packId === 'pack_05')).toEqual(
       expect.objectContaining({
         totalPresets: 372,
         totalCategories: 12,
+        eagerPresetCards: 32,
+        plannedPresetCards: 64,
+        placeholderCategorySections: 2,
+        expandedMountedCategorySections: 12,
+        expandedEagerPresetCards: 32,
+        expandedPlannedPresetCards: 192,
       }),
     );
     expect(
@@ -31,6 +43,8 @@ describe('style render budget report', () => {
         packId: 'pack_01',
         query: 'boudoir',
         matchedPresetCards: 1,
+        eagerPresetCards: 1,
+        plannedPresetCards: 1,
         initialRenderedPresetCards: 1,
       }),
     ]);

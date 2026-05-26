@@ -1,12 +1,58 @@
 # Style Preset Authoring Guide
 
 Real presets live in `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
+Start from one of these templates:
+
+- `components/recipes/styles/manifests/templates/style-preset.template.yaml` for image style presets.
+- `components/recipes/styles/manifests/templates/sprite-sheet-preset.template.yaml` for sprite or animation-sheet presets.
+- `components/recipes/styles/manifests/templates/texture-preset.template.yaml` for texture/material presets.
 
 Do not add new presets to legacy pack YAML. Monolithic legacy pack YAML is
 retired; `scripts/style-migration/legacy-packs/` must stay free of YAML files.
 `bun run styles:source:verify` fails if YAML appears there, if YAML files
 reappear under the retired `components/recipes/styles/packs/` directory, or if
 any YAML file under `components/recipes/styles/` lives outside `manifests/`.
+
+## Scaffold first, edit second
+
+Use `styles:scaffold` to create a new preset skeleton and update both pack-level
+and category `presetRefs` together.
+
+The command is dry-run by default and prints the planned file changes plus the
+next validation steps. Pass `--write` to mutate files.
+
+```bash
+bun run styles:scaffold -- --preset=SP01-082 --pack=pack_01 --category=portrait-styles --name="Morning Window Portrait" --template=style
+bun run styles:scaffold -- --preset=SP06-101 --pack=pack_06 --category="6. Video Game & Pixel Art Styles" --name="Arcade Action Sprite" --template=sprite --write
+```
+
+Optional flags:
+
+- `--default-image=/assets/...` to prefill a real default image path.
+- `--write` to actually create/update files.
+
+If `--default-image` is omitted, the scaffold still points `assets.defaultImage`
+at `/assets/recipes/styles/defaults/<PRESET_ID>.webp`, but it leaves
+`taxonomy.hasDefaultImage: false` so validation truthfully reports that the
+default image asset is still pending.
+
+## Template Flow
+
+`styles:scaffold` uses the template files below automatically. If you need a
+manual flow, use the same files directly:
+
+1. Copy `components/recipes/styles/manifests/templates/style-preset.template.yaml`.
+2. Paste it as `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
+3. Replace every placeholder in `id`, `packId`, `name`, `category`, `tags`, `visualDna`, `avoidRules`, `assets`, `attributes`, and `taxonomy`.
+4. Register `<pack_id>/<PRESET_ID>.yaml` in the matching category and top-level `presetRefs` in `components/recipes/styles/manifests/packs/<pack_id>.yaml`.
+5. Run focused validation for the new preset before regenerating runtime data.
+
+```bash
+bun run styles:validate -- --preset=<PRESET_ID>
+bun run styles:runtime
+bun run styles:templates:verify
+bun run styles:verify
+```
 
 ## Quick Example
 

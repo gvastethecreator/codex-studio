@@ -62,7 +62,7 @@
 - Modify: `components/recipes/stylesData.ts`
 
 - [x] Add failing tests for normalizing legacy YAML packs into Style Preset Manifests.
-- [x] Export manifest metadata separately from compatibility `STYLE_PACKS`.
+- [x] Export manifest metadata separately from runtime pack loaders.
 - [x] Keep existing recipe UI behavior unchanged.
 
 ## Task 5: Demand-Mounted Surfaces

@@ -87,6 +87,17 @@ const rules: CatalogFirstRule[] = [
     message:
       'Legacy Visual Batch context must not expose the full snapshot; expose narrow IDs/actions only until compatibility can be deleted.',
   },
+  {
+    id: 'legacy-visual-reducer-no-snapshot-types',
+    filePath: 'contexts/legacyVisualBatchReducer.ts',
+    forbidden: [
+      'LegacyVisualBatchSnapshot',
+      'LegacyVisualBatch,',
+      'studioLegacyVisualSnapshotImport',
+    ],
+    message:
+      'Legacy Visual Batch reducer must store normalized refs only; snapshot parsing belongs at import/context edges.',
+  },
 ];
 
 const legacyCacheAllowedFiles = new Set([

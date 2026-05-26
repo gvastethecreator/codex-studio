@@ -6,7 +6,7 @@ import { getAllEntries } from '../utils/idb';
 
 export type ImportRecoveredLegacyVisualSnapshot = (
   snapshot: LegacyVisualBatchSnapshot,
-  options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
+  options?: { prepend?: boolean; maxTotal?: number },
 ) => void;
 
 interface UseStudioStorageRecoveryProps {
@@ -50,7 +50,6 @@ export function useStudioStorageRecovery({
         importRecoveredLegacyVisualSnapshot(uniqueRecovered, {
           prepend: true,
           maxTotal: 100,
-          ensureWorkspaces: true,
         });
       }
 

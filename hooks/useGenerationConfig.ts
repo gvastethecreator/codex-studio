@@ -98,13 +98,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
 
   const processFiles = useCallback(
     async (files: File[]) => {
-      const remainingSpace = maxAttachments - generationConfig.attachments.length;
-      if (remainingSpace <= 0) {
-        log(`Context full. Limit for ${generationConfig.model} is ${maxAttachments}.`);
-        return;
-      }
-
-      const filesToProcess = files.slice(0, remainingSpace);
+      const filesToProcess = files.slice(0, maxAttachments);
       const newAttachments: Attachment[] = [];
 
       for (const file of filesToProcess) {
@@ -128,21 +122,24 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
       }
 
       if (newAttachments.length > 0) {
-        setGenerationConfig((prev) => ({
-          ...prev,
-          attachments: [...prev.attachments, ...newAttachments],
-        }));
+        setGenerationConfig((prev) => {
+          const remainingSpace = maxAttachments - prev.attachments.length;
+          if (remainingSpace <= 0) {
+            log(`Context full. Limit for ${prev.model} is ${maxAttachments}.`);
+            return prev;
+          }
 
-        log(`Added ${newAttachments.length} images to synthesis context.`);
+          const acceptedAttachments = newAttachments.slice(0, remainingSpace);
+          log(`Added ${acceptedAttachments.length} images to synthesis context.`);
+
+          return {
+            ...prev,
+            attachments: [...prev.attachments, ...acceptedAttachments],
+          };
+        });
       }
     },
-    [
-      maxAttachments,
-      generationConfig.attachments.length,
-      generationConfig.model,
-      log,
-      setGenerationConfig,
-    ],
+    [maxAttachments, log, setGenerationConfig],
   );
 
   const handleFileSelect = useCallback(

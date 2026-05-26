@@ -198,11 +198,32 @@ export interface JobTranscriptEntry {
   raw: Record<string, unknown> | null;
 }
 
+export interface JobTokenUsageSummary {
+  inputTokens: number | null;
+  outputTokens: number | null;
+  totalTokens: number | null;
+  source: string;
+}
+
+export interface JobTimingSegment {
+  id: 'queued' | 'provider' | 'asset_import' | 'total';
+  label: string;
+  durationMs: number | null;
+}
+
+export interface JobMetricSummary {
+  timings: JobTimingSegment[];
+  tokenUsage: JobTokenUsageSummary | null;
+  estimatedPromptTokens: number;
+}
+
 export interface JobDetailResponse {
   job: Job;
   events: JobEventRecord[];
   turn: CodexTurnRecord | null;
   transcriptEntries: JobTranscriptEntry[];
+  catalogImages: CatalogImage[];
+  metrics: JobMetricSummary;
 }
 
 export interface Asset {

@@ -21,6 +21,11 @@ async function writePassingFixtures(rootDir: string) {
   );
   await writeRepoFile(
     rootDir,
+    'contexts/legacyVisualBatchReducer.ts',
+    'export const legacyVisualBatchRefs = [];',
+  );
+  await writeRepoFile(
+    rootDir,
     'lib/studioLegacyVisualBatchStore.ts',
     "export const keys = ['catalog-cache', 'catalog-trash'];",
   );
@@ -74,6 +79,14 @@ describe('catalog-first source audit', () => {
         'interface LegacyVisualBatchContextType { legacyVisualBatches: LegacyVisualBatchSnapshot; }',
       ].join('\n'),
     );
+    await writeRepoFile(
+      rootDir,
+      'contexts/legacyVisualBatchReducer.ts',
+      [
+        'import type { LegacyVisualBatchSnapshot } from "../lib/studioLegacyVisualSnapshotImport";',
+        'export const batches: LegacyVisualBatchSnapshot = [];',
+      ].join('\n'),
+    );
 
     const report = await createCatalogFirstSourceAuditReport(rootDir);
 
@@ -82,6 +95,8 @@ describe('catalog-first source audit', () => {
       'use-catalog-no-idb-cache',
       'legacy-visual-context-no-idb-persistence',
       'legacy-visual-context-no-snapshot-export',
+      'legacy-visual-reducer-no-snapshot-types',
+      'legacy-visual-reducer-no-snapshot-types',
       'legacy-visual-cache-keys-isolated',
       'legacy-visual-cache-keys-isolated',
       'generation-batch-compat-isolated',

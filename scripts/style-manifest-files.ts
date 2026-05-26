@@ -1,4 +1,4 @@
-import { readFile } from 'node:fs/promises';
+import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import yaml from 'js-yaml';
 import type {
@@ -11,13 +11,7 @@ import {
 } from '../components/recipes/stylePresetManifests';
 
 export const rootDir = process.cwd();
-export const styleManifestsDir = path.join(
-  rootDir,
-  'components',
-  'recipes',
-  'styles',
-  'manifests',
-);
+export const styleManifestsDir = path.join(rootDir, 'components', 'recipes', 'styles', 'manifests');
 export const stylePackManifestsDir = path.join(styleManifestsDir, 'packs');
 export const stylePresetManifestsDir = path.join(styleManifestsDir, 'presets');
 
@@ -26,33 +20,95 @@ export interface StylePresetManifestRecord {
   manifest: StylePresetManifest;
 }
 
+export interface StyleManifestScanOptions {
+  useNodeFs?: boolean;
+}
+
 async function readYamlFile<T>(filePath: string) {
   return yaml.load(await readFile(filePath, 'utf8')) as T;
 }
 
-export async function loadStylePackManifests() {
-  const glob = new Bun.Glob('*.yaml');
+async function scanFlatYamlFiles(dirPath: string, options: StyleManifestScanOptions = {}) {
+  if (!options.useNodeFs && typeof Bun !== 'undefined') {
+    const glob = new Bun.Glob('*.yaml');
+    const fileNames: string[] = [];
+
+    for await (const fileName of glob.scan(dirPath)) {
+      fileNames.push(fileName);
+    }
+
+    return fileNames.sort((a, b) => a.localeCompare(b));
+  }
+
+  const entries = await readdir(dirPath, { withFileTypes: true });
+  return entries
+    .filter((entry) => entry.isFile() && entry.name.endsWith('.yaml'))
+    .map((entry) => entry.name)
+    .sort((a, b) => a.localeCompare(b));
+}
+
+async function scanNestedYamlFiles(dirPath: string, options: StyleManifestScanOptions = {}) {
+  if (!options.useNodeFs && typeof Bun !== 'undefined') {
+    const glob = new Bun.Glob('*/*.yaml');
+    const fileNames: string[] = [];
+
+    for await (const fileName of glob.scan(dirPath)) {
+      fileNames.push(fileName);
+    }
+
+    return fileNames.sort((a, b) => a.localeCompare(b));
+  }
+
+  const parentEntries = await readdir(dirPath, { withFileTypes: true });
+  const fileNames: string[] = [];
+
+  for (const parentEntry of parentEntries) {
+    if (!parentEntry.isDirectory()) {
+      continue;
+    }
+
+    const childDirPath = path.join(dirPath, parentEntry.name);
+    const childEntries = await readdir(childDirPath, { withFileTypes: true });
+    for (const childEntry of childEntries) {
+      if (childEntry.isFile() && childEntry.name.endsWith('.yaml')) {
+        fileNames.push(path.join(parentEntry.name, childEntry.name));
+      }
+    }
+  }
+
+  return fileNames.sort((a, b) => a.localeCompare(b));
+}
+
+export async function loadStylePackManifests(
+  manifestsDir = stylePackManifestsDir,
+  options: StyleManifestScanOptions = {},
+) {
   const manifests: StylePackManifest[] = [];
 
-  for await (const fileName of glob.scan(stylePackManifestsDir)) {
-    manifests.push(
-      await readYamlFile<StylePackManifest>(path.join(stylePackManifestsDir, fileName)),
-    );
+  for (const fileName of await scanFlatYamlFiles(manifestsDir, options)) {
+    manifests.push(await readYamlFile<StylePackManifest>(path.join(manifestsDir, fileName)));
   }
 
   return manifests.sort((a, b) => a.id.localeCompare(b.id));
 }
 
-export async function loadStylePresetManifests() {
-  return (await loadStylePresetManifestRecords()).map((record) => record.manifest);
+export async function loadStylePresetManifests(
+  manifestsDir = stylePresetManifestsDir,
+  options: StyleManifestScanOptions = {},
+) {
+  return (await loadStylePresetManifestRecords(manifestsDir, options)).map(
+    (record) => record.manifest,
+  );
 }
 
-export async function loadStylePresetManifestRecords() {
-  const glob = new Bun.Glob('*/*.yaml');
+export async function loadStylePresetManifestRecords(
+  manifestsDir = stylePresetManifestsDir,
+  options: StyleManifestScanOptions = {},
+) {
   const records: StylePresetManifestRecord[] = [];
 
-  for await (const fileName of glob.scan(stylePresetManifestsDir)) {
-    const filePath = path.join(stylePresetManifestsDir, fileName);
+  for (const fileName of await scanNestedYamlFiles(manifestsDir, options)) {
+    const filePath = path.join(manifestsDir, fileName);
     records.push({
       filePath,
       manifest: await readYamlFile<StylePresetManifest>(filePath),

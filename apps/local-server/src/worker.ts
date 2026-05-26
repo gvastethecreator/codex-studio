@@ -279,6 +279,7 @@ export function createWorkerController({
   }
 
   async function runDryJob(job: Job, signal?: AbortSignal) {
+    const startedAt = Date.now();
     addJobEventFn(job.id, 'dry_run.started', 'Dry run asset creation started.');
     logger('info', 'worker', 'Dry run job started.', job.id);
     await waitWithAbort(500, signal);
@@ -302,6 +303,10 @@ export function createWorkerController({
       batchId: catalogContext.batchId,
       recipeId: parsedPrompt.recipeId,
       generationConfig: buildCatalogGenerationConfig(job.finalPromptUsed),
+    });
+    addJobEventFn(job.id, 'dry_run.completed', 'Dry run asset creation completed.', {
+      durationMs: Date.now() - startedAt,
+      assetCount: 1,
     });
     addJobEventFn(job.id, 'asset.created', 'Dry run asset created.', { assetId: asset.id });
     publishEventFn('asset.created', asset);
@@ -333,6 +338,12 @@ export function createWorkerController({
     });
 
     throwIfAborted(signal);
+    addJobEventFn(job.id, 'codex.completed', 'Codex image generation completed.', {
+      durationMs: result.durationMs,
+      assetCount: result.assets.length,
+      threadId: result.threadId,
+      turnId: result.turnId,
+    });
 
     upsertCodexTurnFn({
       id: turnRecordId,
@@ -459,6 +470,8 @@ export function createWorkerController({
 
     addJobEventFn(job.id, 'external.completed', 'External provider execution completed.', {
       transcript: result.transcript,
+      durationMs: result.durationMs,
+      assetCount: result.assets.length,
     });
 
     const discoveredImagePath = result.assets[0]?.sourcePath ?? null;
@@ -544,6 +557,9 @@ export function createWorkerController({
     runningJobControllers.set(job.id, controller);
 
     try {
+      addJobEventFn(job.id, 'job.started', 'Job execution started.', {
+        startedAt: new Date().toISOString(),
+      });
       updateJobStatusFn(job.id, 'running');
       publishEventFn('job.running', getJobFn(job.id));
       const runtimeTarget = resolveWorkerRuntimeTarget(job);

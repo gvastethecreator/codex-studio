@@ -17,7 +17,7 @@ Este documento enumera la deuda técnica que sigue siendo relevante tras la actu
    - Avance 2026-05-26: `studioVisualBatchCatalog` eliminado. Los helpers catalog-first de imagen viven en `studioCatalogImageAdapter`; la materializacion `GenerationBatch[]` ya no tiene modulo generico.
    - Avance 2026-05-26: recovery ya no pasa `GenerationBatch[]` por `useStudioRuntime`; recibe ids existentes y emite `LegacyVisualBatchSnapshot` solo por el callback legacy.
    - Avance 2026-05-26: `runLocalGeneration` ya no devuelve `GenerationBatch`; devuelve datos locales derivados del catálogo y el batch legacy se construye solo en `localGenerationVisualBatchCompat`.
-   - Avance 2026-05-26: `LegacyVisualBatchContext` ya expone `prependGeneratedLegacyVisualBatch` y el reducer usa `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_ID`, evitando conservar snapshots completos en memoria.
+   - Avance 2026-05-26: `LegacyVisualBatchContext` ya expone `registerGeneratedLegacyVisualBatchRef` y el reducer usa `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_REF`, evitando conservar snapshots completos en memoria.
    - Avance 2026-05-25: `lib/studioCatalogView.ts` ya es un read model puro de Catalog Entries.
    - Avance 2026-05-25: `useStudioGallery` ya puede construir `imagesWithConfig` desde Catalog Entries cuando recibe `StudioCatalogView`; `useImageManager` también puede recibir imágenes materializadas desde Catalog Entries para selección/delete/select-all/clear counts. Visual Batches siguen como fallback compat.
    - Avance 2026-05-25: `useWorkspaceStrip` ya calcula thumbnails y counts desde `StudioCatalogView` cuando está disponible; `GenerationBatch[]` queda como fallback legacy.
@@ -26,15 +26,16 @@ Este documento enumera la deuda técnica que sigue siendo relevante tras la actu
    - Avance 2026-05-25: `useVaultTransfer` ya exporta workspace snapshots mediante `buildLegacyVisualBatchSnapshot()` para marcar el borde `GenerationBatch[]` como compatibilidad legacy; ZIP images siguen prefiriendo `StudioCatalogView`.
    - Avance 2026-05-25: `studioLegacyVisualBatchStore` concentra keys `catalog-cache`/`catalog-trash` y validación de snapshots legacy; `catalog:source:verify` bloquea que esos strings se dispersen.
    - Avance 2026-05-26: la importación visible de snapshot JSON legacy fue removida; ese formato queda export-only y las imagenes entran por External Output Sources.
-   - Avance 2026-05-26: recovery/runtime ya usan `REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_IDS`; no queda API pública genérica `mergeBatches`.
-   - Avance 2026-05-26: generation pipeline ya usa `prependGeneratedLegacyVisualBatch` pero el reducer registra solo ids con `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_ID`; no queda API pública genérica `prependBatch`.
+   - Avance 2026-05-26: recovery/runtime ya convierten snapshots legacy a refs antes de llegar al reducer via `REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_REFS`; no queda API pública genérica `mergeBatches`.
+   - Avance 2026-05-26: generation pipeline ya usa `registerGeneratedLegacyVisualBatchRef` y el reducer registra solo refs con `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_REF`; no queda API pública genérica `prependBatch`.
+   - Avance 2026-05-26: `ensureWorkspaces` fue retirado de las opciones de recovery legacy porque no tenia efecto real; recovery ahora solo comunica `prepend` y `maxTotal`.
    - Avance 2026-05-26: `GlobalContext` ya no expone `legacyVisualBatches`/`legacyVisualTrash`; el context legacy expone solo `legacyVisualBatchIds` y acciones mínimas de compatibilidad.
    - Avance 2026-05-26: `GlobalState` ya no guarda `legacyVisualBatches`/`legacyVisualTrash`; los mirrors delete/favorite legacy fueron removidos.
    - Avance 2026-05-26: gallery, workspace strip y vault transfer reciben `catalogView` como camino primario; ya no aceptan `legacyVisualBatches` como fallback.
    - Avance 2026-05-26: storage recovery recibe ids legacy explícitos, y overlay/page controller usan `catalogVisualGroupCount`/`visualGroupsCount` para no presentar el conteo de catálogo como batch legacy.
    - Avance 2026-05-25: `useCatalog` ya no materializa `visualBatches`; expone solo Catalog Entries y `StudioCatalogView`. La materialización `GenerationBatch[]` queda localizada en el shell como edge de compatibilidad.
    - Guard 2026-05-25: `catalog:source:verify` corre dentro de `validate:full` y evita que `StudioCatalogView` vuelva a importar `GenerationBatch`/adapters visuales o que `useCatalog` lea `catalog-cache`.
-   - Guard 2026-05-26: `catalog:source:verify` tambien bloquea que `LegacyVisualBatchContext` vuelva a usar `useIndexedDBStorage`, `catalog-cache`, `catalog-trash` o acceso directo a `utils/idb`.
+   - Guard 2026-05-26: `catalog:source:verify` tambien bloquea que `LegacyVisualBatchContext` vuelva a usar `useIndexedDBStorage`, `catalog-cache`, `catalog-trash` o acceso directo a `utils/idb`, y que `legacyVisualBatchReducer` vuelva a importar snapshots completos.
    - Próximo paso recomendado: cerrar la brecha descrita por ADR-0013 reduciendo shell `catalogVisualBatches` y los últimos helpers `GenerationBatch[]` cuando grid/export puedan consumir Catalog Entries directamente.
 
 3. **Completar las costuras de inyección de dependencias en backend**
@@ -77,7 +78,10 @@ Este documento enumera la deuda técnica que sigue siendo relevante tras la actu
    - Avance 2026-05-25: `StylePresetCatalogSearchSurface` bajó a 7.22 KB separando shell UI, data glob y parser YAML. El próximo trabajo ya no es chunk splitting básico sino medición render real.
    - Guard 2026-05-25: `ui:chunks:verify` corre dentro de `bun run build` y falla si las superficies separadas vuelven a superar sus presupuestos.
    - Guard 2026-05-25: `ui:source:verify` corre dentro de `validate:full` y falla si imports estáticos conocidos vuelven a montar superficies pesadas en shells de startup.
-   - Guard 2026-05-25: `styles:render:verify` corre dentro de `styles:verify` y mantiene el render inicial de packs grandes acotado a 4 categorías / 64 preset cards como máximo.
+   - Guard 2026-05-25: `styles:render:verify` corre dentro de `styles:verify` y mantiene el render inicial de packs grandes acotado.
+   - Avance 2026-05-26: `styles:render:verify` ahora consume `styleBrowserRenderPlan`, compartido con `StylesRecipe`, y mide secciones montadas/eager/placeholders más cards eager/planeadas. `pack_05` queda en 4 secciones montadas, 2 eager, 2 placeholders, 32 cards eager y 64 cards planeadas.
+   - Avance 2026-05-26: pase browser real sobre `pack_05` en `http://127.0.0.1:5173/#recipe-styles` confirmó el presupuesto colapsado y expandido: expandido queda en 12 grupos, 2 eager, 10 placeholders, 32 cards renderizadas, 192 cards planeadas.
+   - Próximo paso recomendado: si este check debe ser release gate, convertir el pase browser en script automatizado.
 
 2. **Guías adicionales del modelo catalog-first**
    - Cuando avance ADR-0013 hará falta documentar con más detalle cómo migrarán Workspaces, Vault y filtros cuando el grid consuma el catálogo sin `GenerationBatch[]`.
@@ -87,7 +91,11 @@ Este documento enumera la deuda técnica que sigue siendo relevante tras la actu
    - Cerrado 2026-05-26: `style-default-utils` ya no tiene fallback YAML legacy; `audit-style-category-bases` consume manifests compuestos y los helpers viejos de expand/reorder quedaron como guards no destructivos.
    - Cerrado 2026-05-26: nuevos nombres explícitos `StyleRuntimePack` / `StyleRuntimePreset` y composer `composeStyleRuntimePacksFromManifests()` cubren UI Styles, runtime helpers, default asset pipeline y scripts de defaults/render.
    - Cerrado 2026-05-26: aliases runtime viejos `StylePack`, `StylePresetDef` y `composeStylePacksFromManifests()` retirados; `styles:source:verify` los bloquea fuera del guard/test de source audit.
-   - Próximo paso recomendado: reducir referencias documentales a `STYLE_PACKS` cuando las surfaces antiguas consuman directamente catálogos/manifests.
+   - Cerrado 2026-05-26: contratos Styles separados en `manifestTypes.ts` y `runtimeTypes.ts`; el viejo barrel `styles/types.ts` fue eliminado y `styles:source:verify` bloquea imports desde ese path.
+   - Cerrado 2026-05-26: exports runtime de pack-summary y loaders generados migrados a nombres `StyleRuntime*`; `styles:source:verify` bloquea que vuelvan los nombres de pack runtime retirados.
+   - Cerrado 2026-05-26: agregados templates repo-locales para nuevos Style Preset Manifests de imagen, sprite sheet y textura, más `styles:templates:verify`.
+   - Cerrado 2026-05-26: agregados Recipe Module Examples `sprite_sheet` y `texture_generate` en `lib/recipeModuleExamples.ts`, con `recipes:examples:verify` integrado en `recipes:verify`; siguen `example_only` y no crean providers nuevos.
+   - Próximo paso recomendado: convertir `texture_generate` en Recipe Module runtime solo cuando existan UI, builder y adapter explicitos.
 
 ## Cerrado recientemente
 

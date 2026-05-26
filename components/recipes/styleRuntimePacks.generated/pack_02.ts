@@ -15,7 +15,7 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
     ),
 ];
 
-export async function loadGeneratedStylePack(): Promise<StyleRuntimePack> {
+export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
     id: 'pack_02',

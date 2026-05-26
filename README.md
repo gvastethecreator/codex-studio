@@ -97,7 +97,7 @@ bun run dev:server   # Hono API + codex app-server supervisor
 bun run dev:ui       # UI Vite+ (vp dev)
 bun run dev:electron # shell Electron para desarrollo local
 bun run studio:init  # crea biblioteca, SQLite y proyecto default
-bun run styles:split:legacy # migracion explicita desde YAML legacy hacia manifests granulares
+bun run styles:validate # valida manifests granulares de estilos
 bun run fmt          # formato con Oxfmt via Vite+
 bun run lint         # lint con Oxlint via Vite+
 bun run check        # formato + lint + type-check unificados via Vite+
@@ -139,12 +139,12 @@ Los comandos de calidad y build (`fmt`, `lint`, `check`, `test`, `build`, `valid
 
 ### Style preset manifests
 
-Los packs legacy siguen en `components/recipes/styles/legacy-migration/packs/*.yaml` como entrada de migracion/compatibilidad, pero ya no tienen un modulo runtime importable. El loader principal consume la estructura granular:
+Los packs legacy monoliticos estan retirados. El loader principal consume la estructura granular:
 
 - `components/recipes/styles/manifests/packs/*.yaml` — Style Pack Manifests livianos, categorias y referencias.
 - `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` — Style Preset Manifests editables uno por archivo.
 
-Edita los manifests granulares en `components/recipes/styles/manifests/`. `bun run styles:split` se niega a sobrescribirlos desde YAML legacy; usa `bun run styles:split:legacy` solo para migracion explicita. `styles:source:verify` falla si aparece un preset solo en YAML legacy. La UI mantiene `STYLE_PACKS` como compat, compuesto desde los manifests granulares.
+Edita los manifests granulares en `components/recipes/styles/manifests/`. `bun run styles:split` se niega a sobrescribirlos desde YAML legacy. `styles:source:verify` falla si reaparece YAML legacy o si el runtime vuelve a usar exports de pack retirados. La UI consume `StyleRuntimePack` mediante loaders compactos generados desde los manifests granulares.
 
 ## Documentacion recomendada
 
