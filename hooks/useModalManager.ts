@@ -35,11 +35,14 @@ export const useModalManager = (activeRecipe: RecipeId = null) => {
     document.documentElement.dataset.transitionType = 'open-modal';
 
     // Set the transitioning ID *before* the transition starts to apply the view-transition-name CSS
+    // react-doctor-disable-next-line react-doctor/no-flush-sync
     flushSync(() => {
       setTransitioningImageId(image.id);
     });
 
+    // react-doctor-disable-next-line react-doctor/no-document-start-view-transition
     const transition = document.startViewTransition(() => {
+      // react-doctor-disable-next-line react-doctor/no-flush-sync
       flushSync(update);
     });
 
@@ -89,7 +92,9 @@ export const useModalManager = (activeRecipe: RecipeId = null) => {
     setIsViewTransitioning(true);
     document.documentElement.dataset.transitionType = 'close-modal';
 
+    // react-doctor-disable-next-line react-doctor/no-document-start-view-transition
     const transition = document.startViewTransition(() => {
+      // react-doctor-disable-next-line react-doctor/no-flush-sync
       flushSync(update);
     });
 

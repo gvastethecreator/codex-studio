@@ -215,7 +215,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                 </div>
               </div>
             ) : (
-              <div className="rounded-lg border border-dashed border-white/5 bg-black/20 px-3 py-3 text-[10px] text-zinc-600">
+              <div className="rounded-lg border border-dashed border-white/5 bg-black/20 p-3 text-[10px] text-zinc-600">
                 Completed images for the active workspace will appear here.
               </div>
             )}
@@ -225,7 +225,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <button
               type="button"
               onClick={() => setIsServerQueueOpen((value) => !value)}
-              className="mb-2 flex w-full items-center justify-between rounded-lg px-1 py-1 text-left transition-colors hover:bg-white/5"
+              className="mb-2 flex w-full items-center justify-between rounded-lg p-1 text-left transition-colors hover:bg-white/5"
             >
               <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
                 Backend Session Jobs
@@ -264,7 +264,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                           />
                         ))
                     ) : (
-                      <div className="rounded-lg border border-dashed border-white/5 bg-black/20 px-3 py-3 text-[10px] text-zinc-600">
+                      <div className="rounded-lg border border-dashed border-white/5 bg-black/20 p-3 text-[10px] text-zinc-600">
                         No persistent backend jobs yet.
                       </div>
                     )}
@@ -278,7 +278,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <button
               type="button"
               onClick={() => setIsLocalQueueOpen((value) => !value)}
-              className="mb-2 flex w-full items-center justify-between rounded-lg px-1 py-1 text-left transition-colors hover:bg-white/5"
+              className="mb-2 flex w-full items-center justify-between rounded-lg p-1 text-left transition-colors hover:bg-white/5"
             >
               <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
                 Browser Queue
@@ -316,7 +316,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                           <p className="text-xs">Jobs will appear here</p>
                         </MotionDiv>
                       ) : jobs.length === 0 ? (
-                        <div className="rounded-lg border border-dashed border-white/5 bg-black/20 px-3 py-3 text-[10px] text-zinc-600">
+                        <div className="rounded-lg border border-dashed border-white/5 bg-black/20 p-3 text-[10px] text-zinc-600">
                           No browser-side queued items.
                         </div>
                       ) : (

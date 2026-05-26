@@ -127,7 +127,3 @@ export function buildStudioPageController(
     },
   };
 }
-
-export function useStudioPageController(args: BuildStudioPageControllerArgs): StudioPageController {
-  return buildStudioPageController(args);
-}

@@ -621,7 +621,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               {outputSources &&
               outputSources.registry.sources.length === 0 &&
               outputSourceCandidates.length === 0 ? (
-                <div className="rounded-lg border border-white/8 bg-black/20 px-3 py-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+                <div className="rounded-lg border border-white/8 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
                   No external output sources detected.
                 </div>
               ) : null}

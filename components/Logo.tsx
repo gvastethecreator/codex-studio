@@ -10,7 +10,7 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
   const { cycleTheme } = useTheme();
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const handleClick = () => {
+  const handleCycleTheme = () => {
     if (isAnimating) return;
 
     setIsAnimating(true);
@@ -24,7 +24,7 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
   return (
     <button
       type="button"
-      onClick={handleClick}
+      onClick={handleCycleTheme}
       className={`group relative flex items-center gap-2.5 rounded-xl p-1 outline-none select-none transition-transform active:scale-95 ${isAnimating ? 'animate-logo-pop' : ''}`}
       aria-label="Change Theme"
       title="Click to cycle theme"
@@ -35,6 +35,7 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
         <div
           aria-hidden="true"
           className={`relative z-10 size-5 text-accent-300 transition-all duration-300 ease-out-expo group-hover:-translate-y-0.5 group-hover:scale-110 group-hover:text-white ${isGenerating ? 'animate-pulse text-accent-100' : ''}`}
+          // react-doctor-disable-next-line react-doctor/no-danger
           dangerouslySetInnerHTML={{ __html: logoSvg }}
         />
         <div

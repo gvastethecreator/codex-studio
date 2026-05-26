@@ -92,9 +92,3 @@ export function buildStudioHeaderToolbarProps({
     onOpenSettings: commandCenter.onOpenSettings,
   };
 }
-
-export function useStudioHeaderToolbarConfig(
-  args: BuildStudioHeaderToolbarPropsArgs,
-): HeaderToolbarProps {
-  return buildStudioHeaderToolbarProps(args);
-}

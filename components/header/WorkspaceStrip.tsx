@@ -124,7 +124,7 @@ export function WorkspaceStrip({
             {editingWorkspaceId === workspace.id && (
               <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-zinc-900 border border-white/10 p-2 rounded-xl shadow-xl z-50 flex gap-2 animate-in fade-in zoom-in duration-200">
                 <input
-                  autoFocus
+                  ref={(el) => el?.focus()}
                   value={editingName}
                   onChange={(event) => setEditingName(event.target.value)}
                   onKeyDown={(event) => {

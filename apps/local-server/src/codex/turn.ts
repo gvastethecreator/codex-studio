@@ -16,13 +16,6 @@ import type { JsonRpcMessage } from './rpcClient';
 import type { JobExecutionOptions } from '../../../../packages/shared/src';
 import type { CodexImagegenCompiledInput } from '../providers/codexProvider';
 
-const IMAGEGEN_SKILL_PATH = path.join(
-  resolvePlatformPath('codex-skills-dir'),
-  '.system',
-  'imagegen',
-  'SKILL.md',
-);
-
 export interface TurnParams {
   projectId: string;
   prompt: string;
@@ -84,7 +77,6 @@ async function raceWithAbort<T>(promise: Promise<T>, signal?: AbortSignal, onAbo
       onAbort?.();
       reject(createAbortError());
     };
-
     signal.addEventListener('abort', handleAbort, { once: true });
 
     promise.then(
@@ -335,7 +327,12 @@ export function createCodexTurn({
   getSessionKey = getImagegenSessionKey,
   resolveLibraryPath: resolveLibrary = resolveLibraryPath,
   resolveProcessCwd = () => process.cwd(),
-  imagegenSkillPath = IMAGEGEN_SKILL_PATH,
+  imagegenSkillPath = path.join(
+    resolvePlatformPath('codex-skills-dir'),
+    '.system',
+    'imagegen',
+    'SKILL.md',
+  ),
   logger = log,
   sleep = (durationMs: number) => Bun.sleep(durationMs),
 }: CodexTurnDependencies = {}): CodexTurn {

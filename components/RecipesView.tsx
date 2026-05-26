@@ -129,13 +129,13 @@ const RecipeCard: React.FC<{ recipe: RecipeCatalogEntry; onSelect: (id: RecipeId
     // Fallback if color is missing
     const colors = COLOR_CLASSES[recipe.accentColor] || COLOR_CLASSES['teal'];
 
-    const handleClick = () => {
+    const handleSelectRecipe = () => {
       if (recipe.id) onSelect(recipe.id);
     };
 
     return (
       <div
-        onClick={handleClick}
+        onClick={handleSelectRecipe}
         className={`
                 group relative aspect-[3/2] rounded-2xl bg-zinc-950 border border-white/5 overflow-hidden cursor-pointer
                 grayscale-[0.4] hover:grayscale-0

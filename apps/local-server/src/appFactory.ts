@@ -22,7 +22,7 @@ import {
   updateEditableStudioSettings,
   type StudioSettingsStorage,
 } from './studioSettingsStore';
-import type { WorkerController, WorkerStatus } from './worker';
+import { createWorkerController, type WorkerController, type WorkerStatus } from './worker';
 import {
   getCodexAccountStatus,
   ensureAppServer,
@@ -68,6 +68,7 @@ export interface StudioAppInstance {
   config: ReturnType<typeof getSettings>;
   initResult: ReturnType<typeof initStudio>;
   worker: WorkerStatus;
+  workerController: WorkerController;
   shutdown(): Promise<void>;
 }
 
@@ -106,8 +107,7 @@ export async function createStudioApp(
     setSetting: setSettingValue,
   };
   const workerController =
-    options.dependencies?.worker ??
-    (await import('./worker')).getDefaultWorkerController(appLogger);
+    options.dependencies?.worker ?? createWorkerController({ logger: appLogger });
   const catalogCommands = createCatalogCommands({
     updateCatalogImage: (...args) => catalogStore.updateCatalogImage(...args),
     softDeleteCatalogImage: (...args) => catalogStore.softDeleteCatalogImage(...args),
@@ -270,7 +270,7 @@ export async function createStudioApp(
   });
 
   app.post('/api/studio/reset', async (c) => {
-    return c.json(await resetStudioData());
+    return c.json(await resetStudioData(workerController));
   });
 
   app.get('/api/projects', (c) => c.json(dbStore.listProjects()));
@@ -508,6 +508,7 @@ export async function createStudioApp(
     config: getSettings(),
     initResult: initResult ?? ({} as ReturnType<typeof initStudio>),
     worker: workerController.getWorkerStatus(),
+    workerController,
     async shutdown() {},
   };
 }

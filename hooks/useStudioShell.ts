@@ -7,7 +7,6 @@ import type { ToolbarProps } from '../components/Toolbar';
 import type { BackgroundConfig, RecipeId } from '../types';
 import type { ToastMessage } from './useToasts';
 import { useGlobal } from '../contexts/GlobalContext';
-import { useLegacyVisualBatches } from '../contexts/LegacyVisualBatchContext';
 import { useGeneration } from '../contexts/GenerationContext';
 import { useHashRouter, type AppPageView } from './useHashRouter';
 import { useImageInputSurface } from './useImageInputSurface';
@@ -15,10 +14,8 @@ import { useStudioActionConfirmations } from './useStudioActionConfirmations';
 import { useStudioActivitySession } from './useStudioActivitySession';
 import { useStudioGallery } from './useStudioGallery';
 import { useStudioGenerationSession } from './useStudioGenerationSession';
-import { useStudioHeaderToolbarConfig } from './useStudioHeaderToolbarConfig';
 import { useStudioNavigation } from './useStudioNavigation';
 import { useStudioOverlayController } from './useStudioOverlayController';
-import { useStudioPageController, type StudioPageController } from './useStudioPageController';
 import { useStudioReset } from './useStudioReset';
 import { useStudioRuntime } from './useStudioRuntime';
 import { useStudioSettings } from './useStudioSettings';
@@ -28,6 +25,11 @@ import { useWorkspaceStrip } from './useWorkspaceStrip';
 import { useGenerationToolbarConfig } from './useGenerationToolbarConfig';
 import { useCatalog } from './useCatalog';
 import { buildArchivedImageGroupsFromCatalog } from '../lib/studioCatalogTrashView';
+import { buildStudioHeaderToolbarProps } from '../lib/buildStudioHeaderToolbarProps';
+import {
+  buildStudioPageController,
+  type StudioPageController,
+} from '../lib/buildStudioPageController';
 import { resolveStudioCarouselImage } from '../lib/studioCarouselImage';
 
 import { buildStudioQueueResultPreviews } from '../lib/studioQueueResults';
@@ -124,13 +126,6 @@ export function useStudioShell(): StudioShellController {
     openDebugPanel,
     closeDebugPanel,
   } = useGlobal();
-
-  const {
-    legacyVisualBatchIds,
-    mergeLegacyVisualBatches,
-    clearLegacyVisualWorkspace,
-    clearAllLegacyVisualBatches,
-  } = useLegacyVisualBatches();
 
   const {
     route,
@@ -234,7 +229,6 @@ export function useStudioShell(): StudioShellController {
 
       void Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId)))
         .then(() => {
-          clearLegacyVisualWorkspace(workspaceId);
           refreshCatalogs();
         })
         .catch((error) => {
@@ -290,8 +284,6 @@ export function useStudioShell(): StudioShellController {
   const studioRuntime = useStudioRuntime({
     logs,
     log,
-    existingLegacyVisualBatchIds: legacyVisualBatchIds,
-    importRecoveredLegacyVisualSnapshot: mergeLegacyVisualBatches,
     addToast,
     shouldAutoOpen: workspaceCatalog.entries.length === 0,
     onCatalogChanged: refreshCatalogs,
@@ -308,7 +300,6 @@ export function useStudioShell(): StudioShellController {
 
   const { exportWorkspaceSnapshot, downloadAndClearWorkspace } = useVaultTransfer({
     catalogView: activeCatalog.view,
-    clearAllLegacyVisualBatches,
     addToast,
     log,
   });
@@ -522,7 +513,6 @@ export function useStudioShell(): StudioShellController {
     },
     vault: {
       handleExportWorkspaceSnapshot: exportWorkspaceSnapshot,
-      handleDeepScan: studioRuntime.maintenance.recoverWorkspace,
     },
     onboarding: {
       apiBase: studioRuntime.onboarding.apiBase,
@@ -600,7 +590,7 @@ export function useStudioShell(): StudioShellController {
     handleAddToContext: config.handleAddToContext,
   };
 
-  const studioPageController = useStudioPageController({
+  const studioPageController = buildStudioPageController({
     isModalOpen: modal.isModalOpen,
     workspaces,
     mergedLogs: studioRuntime.activity.mergedLogs,
@@ -680,7 +670,7 @@ export function useStudioShell(): StudioShellController {
     },
   });
 
-  const headerToolbarProps = useStudioHeaderToolbarConfig({
+  const headerToolbarProps = buildStudioHeaderToolbarProps({
     view: {
       isGenerating: pipeline.isGenerating,
       currentView,

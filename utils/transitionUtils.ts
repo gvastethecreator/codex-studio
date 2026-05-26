@@ -17,7 +17,9 @@ export const startViewTransition = (callback: () => void) => {
   }
 
   isGlobalTransitioning = true;
+  // react-doctor-disable-next-line react-doctor/no-document-start-view-transition
   const transition = document.startViewTransition(() => {
+    // react-doctor-disable-next-line react-doctor/no-flush-sync
     flushSync(() => {
       callback();
     });

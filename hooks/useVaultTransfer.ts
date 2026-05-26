@@ -9,7 +9,6 @@ import { formatErrorMessage } from '../utils/runtimeLogger';
 
 interface UseVaultTransferProps {
   catalogView?: StudioCatalogView;
-  clearAllLegacyVisualBatches: () => void;
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   log: (message: string) => void;
 }
@@ -18,12 +17,7 @@ interface UseVaultTransferProps {
  * Concentrate vault export and archive-download flows behind one hook so
  * AppContent only coordinates UI state, not file I/O choreography.
  */
-export function useVaultTransfer({
-  catalogView,
-  clearAllLegacyVisualBatches,
-  addToast,
-  log,
-}: UseVaultTransferProps) {
+export function useVaultTransfer({ catalogView, addToast, log }: UseVaultTransferProps) {
   const exportWorkspaceSnapshot = useCallback(() => {
     exportToJson(
       buildLegacyVisualBatchSnapshot({ catalogView }),
@@ -39,15 +33,14 @@ export function useVaultTransfer({
         await downloadMultipleImagesAsZip(images, `workspace-export-${Date.now()}.zip`);
       }
 
-      clearAllLegacyVisualBatches();
-      addToast('Workspace archive downloaded and canvas cleared', 'success');
+      addToast('Workspace archive downloaded', 'success');
       return true;
     } catch (error) {
-      log(`Failed to download and clear workspace: ${formatErrorMessage(error)}`);
+      log(`Failed to download workspace: ${formatErrorMessage(error)}`);
       addToast('Failed to download the workspace archive', 'error');
       return false;
     }
-  }, [addToast, catalogView, clearAllLegacyVisualBatches, log]);
+  }, [addToast, catalogView, log]);
 
   return {
     exportWorkspaceSnapshot,

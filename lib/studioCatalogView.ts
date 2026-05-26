@@ -27,7 +27,7 @@ function resolveCatalogBatchGroupId(entry: Pick<CatalogImage, 'batchId' | 'jobId
 }
 
 export function createCatalogView(entries: CatalogImage[]): StudioCatalogView {
-  const sortedEntries = [...entries].sort(compareCatalogEntries);
+  const sortedEntries = entries.toSorted(compareCatalogEntries);
   const byId = new Map<string, CatalogImage>();
   const byBatchId = new Map<string, CatalogImage[]>();
 

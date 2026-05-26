@@ -391,7 +391,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           <Logo />
           <div
             ref={navScrollRef}
-            className="flex-1 flex items-center gap-2 overflow-x-auto custom-scrollbar py-1 px-1 snap-x justify-center"
+            className="flex-1 flex items-center gap-2 overflow-x-auto custom-scrollbar p-1 snap-x justify-center"
           >
             {allImages.map((img, idx) => (
               <button

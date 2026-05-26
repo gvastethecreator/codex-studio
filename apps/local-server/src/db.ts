@@ -15,7 +15,7 @@ import type {
   SystemLog,
 } from '../../../packages/shared/src';
 
-let db: Database | null = null;
+let defaultDb: Database | null = null;
 
 function now() {
   return new Date().toISOString();
@@ -42,24 +42,28 @@ function ensureColumn(
   }
 }
 
-export function getDb() {
-  if (!db) {
-    db = new Database(resolveLibraryPath('library.sqlite'));
-    db.run('PRAGMA journal_mode = WAL');
-    db.run('PRAGMA foreign_keys = ON');
+export function getDb(db?: Database) {
+  if (db) return db;
+  if (!defaultDb) {
+    defaultDb = new Database(resolveLibraryPath('library.sqlite'));
+    defaultDb.run('PRAGMA journal_mode = WAL');
+    defaultDb.run('PRAGMA foreign_keys = ON');
   }
-  return db;
+  return defaultDb;
 }
 
-export function closeDb() {
-  if (!db) return;
+export function closeDb(db?: Database) {
+  const target = db ?? defaultDb;
+  if (!target) return;
 
   try {
-    db.close();
+    target.close();
   } catch {
     // Best effort; reset flows can recreate the database afterwards.
   } finally {
-    db = null;
+    if (!db) {
+      defaultDb = null;
+    }
   }
 }
 
@@ -219,20 +223,20 @@ export function migrateDatabase(database: Database) {
   ensureColumn(database, 'jobs', 'source_spec_json', 'TEXT');
 }
 
-export function migrateDb() {
-  migrateDatabase(getDb());
+export function migrateDb(db?: Database) {
+  migrateDatabase(getDb(db));
 }
 
-export function getSettingValue(key: string): string | null {
-  const row = getDb().query('SELECT value FROM settings WHERE key = ?').get(key) as
+export function getSettingValue(key: string, db?: Database): string | null {
+  const row = getDb(db).query('SELECT value FROM settings WHERE key = ?').get(key) as
     | { value: string }
     | null
     | undefined;
   return row?.value ?? null;
 }
 
-export function setSettingValue(key: string, value: string, updatedAt = now()) {
-  getDb()
+export function setSettingValue(key: string, value: string, updatedAt = now(), db?: Database) {
+  getDb(db)
     .query(
       `INSERT INTO settings (key, value, updated_at)
        VALUES (?, ?, ?)
@@ -324,13 +328,17 @@ function mapCodexTurn(row: any): CodexTurnRecord {
   };
 }
 
-export function ensureDefaultProject() {
-  const existing = getDb().query('SELECT * FROM projects ORDER BY created_at LIMIT 1').get();
+export function ensureDefaultProject(db?: Database) {
+  const existing = getDb(db).query('SELECT * FROM projects ORDER BY created_at LIMIT 1').get();
   if (existing) return mapProject(existing);
-  return createProject('Default Studio Project', 'Initial local project for Codex Studio jobs.');
+  return createProject(
+    'Default Studio Project',
+    'Initial local project for Codex Studio jobs.',
+    db,
+  );
 }
 
-export function createProject(name: string, description: string | null = null) {
+export function createProject(name: string, description: string | null = null, db?: Database) {
   const project: Project = {
     id: randomUUID(),
     name,
@@ -338,7 +346,7 @@ export function createProject(name: string, description: string | null = null) {
     createdAt: now(),
     updatedAt: now(),
   };
-  getDb()
+  getDb(db)
     .query(
       'INSERT INTO projects (id, name, description, created_at, updated_at) VALUES (?, ?, ?, ?, ?)',
     )
@@ -346,19 +354,22 @@ export function createProject(name: string, description: string | null = null) {
   return project;
 }
 
-export function listProjects() {
-  return getDb().query('SELECT * FROM projects ORDER BY updated_at DESC').all().map(mapProject);
+export function listProjects(db?: Database) {
+  return getDb(db).query('SELECT * FROM projects ORDER BY updated_at DESC').all().map(mapProject);
 }
 
-export function createJob(input: {
-  id?: string;
-  projectId: string;
-  kind: JobKind;
-  providerId?: GenerationProviderId | null;
-  sourceSpec?: GenerationTaskSpec | null;
-  prompt: string;
-  execution?: JobExecutionOptions | null;
-}) {
+export function createJob(
+  input: {
+    id?: string;
+    projectId: string;
+    kind: JobKind;
+    providerId?: GenerationProviderId | null;
+    sourceSpec?: GenerationTaskSpec | null;
+    prompt: string;
+    execution?: JobExecutionOptions | null;
+  },
+  db?: Database,
+) {
   const job: Job = {
     id: input.id ?? randomUUID(),
     projectId: input.projectId,
@@ -375,7 +386,7 @@ export function createJob(input: {
     updatedAt: now(),
     completedAt: null,
   };
-  getDb()
+  getDb(db)
     .query(`
       INSERT INTO jobs (id, project_id, kind, provider_id, source_spec_json, status, execution_json, original_prompt, expanded_prompt, final_prompt_used, error, created_at, updated_at, completed_at)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -399,35 +410,40 @@ export function createJob(input: {
   return job;
 }
 
-export function updateJobFinalPrompt(id: string, finalPrompt: string) {
-  getDb()
+export function updateJobFinalPrompt(id: string, finalPrompt: string, db?: Database) {
+  getDb(db)
     .query('UPDATE jobs SET final_prompt_used = ?, updated_at = ? WHERE id = ?')
     .run(finalPrompt, now(), id);
-  return getJob(id);
+  return getJob(id, db);
 }
 
-export function updateJobStatus(id: string, status: JobStatus, error: string | null = null) {
+export function updateJobStatus(
+  id: string,
+  status: JobStatus,
+  error: string | null = null,
+  db?: Database,
+) {
   const completedAt =
     status === 'completed' || status === 'failed' || status === 'cancelled' ? now() : null;
-  getDb()
+  getDb(db)
     .query(
       'UPDATE jobs SET status = ?, error = ?, updated_at = ?, completed_at = COALESCE(?, completed_at) WHERE id = ?',
     )
     .run(status, error, now(), completedAt, id);
-  return getJob(id);
+  return getJob(id, db);
 }
 
-export function getJob(id: string) {
-  const row = getDb().query('SELECT * FROM jobs WHERE id = ?').get(id);
+export function getJob(id: string, db?: Database) {
+  const row = getDb(db).query('SELECT * FROM jobs WHERE id = ?').get(id);
   return row ? mapJob(row) : null;
 }
 
-export function listJobs() {
-  return getDb().query('SELECT * FROM jobs ORDER BY created_at DESC LIMIT 100').all().map(mapJob);
+export function listJobs(db?: Database) {
+  return getDb(db).query('SELECT * FROM jobs ORDER BY created_at DESC LIMIT 100').all().map(mapJob);
 }
 
-export function listRecoverableJobs() {
-  return getDb()
+export function listRecoverableJobs(db?: Database) {
+  return getDb(db)
     .query(`
       SELECT jobs.*
       FROM jobs
@@ -440,14 +456,14 @@ export function listRecoverableJobs() {
     .map(mapJob);
 }
 
-export function addAsset(input: Omit<Asset, 'id' | 'createdAt' | 'deletedAt'>) {
+export function addAsset(input: Omit<Asset, 'id' | 'createdAt' | 'deletedAt'>, db?: Database) {
   const asset: Asset = {
     ...input,
     id: randomUUID(),
     createdAt: now(),
     deletedAt: null,
   };
-  getDb()
+  getDb(db)
     .query(`
       INSERT INTO assets (id, project_id, job_id, file_path, thumbnail_path, public_url, prompt, width, height, mime_type, created_at, deleted_at)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -469,66 +485,78 @@ export function addAsset(input: Omit<Asset, 'id' | 'createdAt' | 'deletedAt'>) {
   return asset;
 }
 
-export function listAssets() {
-  return getDb()
+export function listAssets(db?: Database) {
+  return getDb(db)
     .query('SELECT * FROM assets WHERE deleted_at IS NULL ORDER BY created_at DESC LIMIT 200')
     .all()
     .map(mapAsset);
 }
 
-export function addJobEvent(jobId: string, type: string, message: string, metadata?: unknown) {
-  getDb()
+export function addJobEvent(
+  jobId: string,
+  type: string,
+  message: string,
+  metadata?: unknown,
+  db?: Database,
+) {
+  getDb(db)
     .query(
       'INSERT INTO job_events (job_id, type, message, metadata, created_at) VALUES (?, ?, ?, ?, ?)',
     )
     .run(jobId, type, message, metadata ? JSON.stringify(metadata) : null, now());
 }
 
-export function addSystemLog(input: {
-  level: SystemLog['level'];
-  scope: string;
-  message: string;
-  jobId?: string | null;
-}) {
-  const result = getDb()
+export function addSystemLog(
+  input: {
+    level: SystemLog['level'];
+    scope: string;
+    message: string;
+    jobId?: string | null;
+  },
+  db?: Database,
+) {
+  const result = getDb(db)
     .query(
       'INSERT INTO system_logs (level, scope, message, job_id, created_at) VALUES (?, ?, ?, ?, ?)',
     )
     .run(input.level, input.scope, input.message, input.jobId ?? null, now());
-  const row = getDb()
+  const row = getDb(db)
     .query('SELECT * FROM system_logs WHERE id = ?')
     .get(Number(result.lastInsertRowid));
   return row ? mapLog(row) : null;
 }
 
-export function listLogs() {
-  return getDb().query('SELECT * FROM system_logs ORDER BY id DESC LIMIT 300').all().map(mapLog);
+export function listLogs(db?: Database) {
+  return getDb(db).query('SELECT * FROM system_logs ORDER BY id DESC LIMIT 300').all().map(mapLog);
 }
 
-export function listJobEvents(jobId: string) {
-  return getDb()
+export function listJobEvents(jobId: string, db?: Database) {
+  return getDb(db)
     .query('SELECT * FROM job_events WHERE job_id = ? ORDER BY id ASC')
     .all(jobId)
     .map(mapJobEvent);
 }
 
-export function getCodexTurnByJobId(jobId: string) {
-  const row = getDb()
+export function getCodexTurnByJobId(jobId: string, db?: Database) {
+  const row = getDb(db)
     .query('SELECT * FROM codex_turns WHERE job_id = ? ORDER BY updated_at DESC LIMIT 1')
     .get(jobId);
   return row ? mapCodexTurn(row) : null;
 }
 
-export function upsertCodexTurn(input: {
-  id?: string;
-  jobId: string;
-  codexThreadId?: string | null;
-  codexTurnId?: string | null;
-  transcriptPath?: string | null;
-  status: string;
-}) {
+export function upsertCodexTurn(
+  input: {
+    id?: string;
+    jobId: string;
+    codexThreadId?: string | null;
+    codexTurnId?: string | null;
+    transcriptPath?: string | null;
+    status: string;
+  },
+  db?: Database,
+) {
   const id = input.id || randomUUID();
-  getDb()
+  getDb(db)
     .query(`
       INSERT INTO codex_turns (id, job_id, codex_thread_id, codex_turn_id, transcript_path, status, created_at, updated_at)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?)

@@ -6,16 +6,10 @@ import { useLocalStudioSync } from './useLocalStudioSync';
 import { useStudioDiagnostics } from './useStudioDiagnostics';
 import { useStudioOnboarding } from './useStudioOnboarding';
 import { useStudioSessionVerifier } from './useStudioSessionVerifier';
-import {
-  useStudioStorageRecovery,
-  type ImportRecoveredLegacyVisualSnapshot,
-} from './useStudioStorageRecovery';
 
 interface UseStudioRuntimeProps {
   logs: LogEntry[];
   log: (message: string) => void;
-  existingLegacyVisualBatchIds: string[];
-  importRecoveredLegacyVisualSnapshot: ImportRecoveredLegacyVisualSnapshot;
   addToast: (message: string, type?: Toast['type']) => void;
   shouldAutoOpen: boolean;
   onCatalogChanged?: () => void;
@@ -23,14 +17,13 @@ interface UseStudioRuntimeProps {
 
 /**
  * Studio Runtime Orchestrator — React hook that wires the full local-backend
- * lifecycle (readiness, diagnostics, onboarding, session verification, storage
- * recovery, and local studio sync) into a single consumer API consumed by
- * `useStudioShell`.
+ * lifecycle (readiness, diagnostics, onboarding, session verification, and
+ * local studio sync) into a single consumer API consumed by `useStudioShell`.
  *
  * @file hooks/useStudioRuntime.ts
  *
  * This is a REACT ORCHESTRATOR. It depends on multiple sub-hooks and takes
- * external state sinks (legacy visual batches, logs, toasts) as props.
+ * external state sinks as props.
  *
  * DO NOT confuse with services/studioRuntime.ts, which is a STATIC CONFIG
  * ADAPTER that only resolves the backend API base and desktop-vs-web runtime kind.
@@ -38,8 +31,6 @@ interface UseStudioRuntimeProps {
 export function useStudioRuntime({
   logs,
   log,
-  existingLegacyVisualBatchIds,
-  importRecoveredLegacyVisualSnapshot,
   addToast,
   shouldAutoOpen,
   onCatalogChanged,
@@ -48,12 +39,6 @@ export function useStudioRuntime({
     logs,
     log,
     onCatalogChanged,
-  });
-  const recovery = useStudioStorageRecovery({
-    existingLegacyVisualBatchIds,
-    importRecoveredLegacyVisualSnapshot,
-    addToast,
-    log,
   });
   const sessionVerifier = useStudioSessionVerifier({
     addToast,
@@ -108,7 +93,6 @@ export function useStudioRuntime({
       ensureAppServer: onboarding.ensureAppServer,
     },
     maintenance: {
-      recoverWorkspace: recovery.recoverOrphanedBatches,
       verifyCodexSession: sessionVerifier.verifyCodexSession,
       refreshDiagnostics: diagnosticsState.refreshDiagnostics,
       refreshRuntime,
