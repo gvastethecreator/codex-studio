@@ -2,6 +2,7 @@ import { mkdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { Database } from 'bun:sqlite';
+import { resolveLibraryPathFromRoot } from '../apps/local-server/src/library';
 import {
   buildStyleDefaultPresetIndex,
   createStyleDefaultManifestEntry,
@@ -36,8 +37,8 @@ interface TranscriptImage {
 }
 
 const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
-const dbPath = path.join(libraryDir, 'library.sqlite');
-const transcriptDir = path.join(libraryDir, 'transcripts');
+const dbPath = resolveLibraryPathFromRoot(libraryDir, 'library.sqlite');
+const transcriptDir = resolveLibraryPathFromRoot(libraryDir, 'transcripts');
 const codexHome = process.env.CODEX_HOME || defaultCodexHome;
 const generatedImagesDir = path.join(codexHome, 'generated_images');
 const dryRun = process.argv.includes('--dry-run');

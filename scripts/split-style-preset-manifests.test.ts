@@ -23,16 +23,15 @@ function runCommand(command: string) {
 }
 
 describe('split style preset manifests script', () => {
-  it('requires explicit legacy migration flag before destructive manifest rewrite', async () => {
+  it('keeps legacy pack splitting retired', async () => {
     const { stdout, stderr, exitCode } = await runCommand(
       'bun scripts/split-style-preset-manifests.ts',
     );
 
     expect(stdout.trim()).toBe('');
     expect(exitCode).toBe(1);
-    expect(stderr).toContain(
-      '[styles:split] Refusing to overwrite granular Style Preset Manifests',
-    );
-    expect(stderr).toContain('bun run styles:split:legacy');
+    expect(stderr).toContain('[styles:split] Legacy pack splitting is retired.');
+    expect(stderr).toContain('components/recipes/styles/manifests/**');
+    expect(stderr).toContain('bun run styles:runtime');
   });
 });

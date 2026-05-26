@@ -1,4 +1,7 @@
-import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
+import type {
+  StyleRuntimePack,
+  StyleRuntimePreset,
+} from '../components/recipes/styles/runtimeTypes';
 import type { CreateJobRequest } from '../packages/shared/src';
 
 export interface StyleDefaultManifestEntry {
@@ -17,8 +20,8 @@ export interface StyleDefaultManifestEntry {
 }
 
 export interface StyleDefaultManifestInput {
-  pack: StylePack;
-  preset: StylePresetDef;
+  pack: StyleRuntimePack;
+  preset: StyleRuntimePreset;
   category: string;
   file: string;
   jobId: string;
@@ -29,8 +32,8 @@ export interface StyleDefaultManifestInput {
 }
 
 export interface StyleDefaultPresetMatch {
-  pack: StylePack;
-  preset: StylePresetDef;
+  pack: StyleRuntimePack;
+  preset: StyleRuntimePreset;
   category: string;
 }
 
@@ -50,14 +53,14 @@ export interface StyleDefaultEvidence {
 }
 
 export interface StyleDefaultTarget {
-  pack: StylePack;
-  preset: StylePresetDef;
+  pack: StyleRuntimePack;
+  preset: StyleRuntimePreset;
   category: string;
   destination: string;
 }
 
 export interface CreateStyleDefaultTargetsOptions {
-  packs: StylePack[];
+  packs: StyleRuntimePack[];
   existingFiles: ReadonlySet<string>;
   force: boolean;
   categoryFilters?: ReadonlySet<string>;
@@ -77,8 +80,8 @@ export interface StyleDefaultFailureEntry {
 }
 
 export interface StyleDefaultFailureInput {
-  pack: StylePack;
-  preset: StylePresetDef;
+  pack: StyleRuntimePack;
+  preset: StyleRuntimePreset;
   category: string;
   error: string;
   failedAt: string;
@@ -122,7 +125,7 @@ function explicitStyleNameFromPrompt(prompt: string) {
   return prompt.match(/recognizable as "([^"]+)"/i)?.[1]?.trim();
 }
 
-export function buildStyleDefaultPresetIndex(packs: StylePack[]): StyleDefaultPresetIndex {
+export function buildStyleDefaultPresetIndex(packs: StyleRuntimePack[]): StyleDefaultPresetIndex {
   const byTarget = new Map<string, StyleDefaultPresetMatch[]>();
   const byPackCategoryTarget = new Map<string, StyleDefaultPresetMatch>();
   const byName = new Map<string, StyleDefaultPresetMatch[]>();

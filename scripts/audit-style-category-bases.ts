@@ -1,10 +1,9 @@
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import yaml from 'js-yaml';
 import {
   RECIPE_ASSET_EXTENSION,
   categoryBasesDir,
-  packsDir,
+  loadPacks,
   repoRelative,
   rootDir,
   sanitizeCategory,
@@ -24,33 +23,29 @@ interface BaseRow {
 const outDir = path.join(rootDir, 'docs', 'active');
 const outPath = path.join(outDir, 'style-category-bases-audit.md');
 
-const packFiles = (await readdir(packsDir)).filter((file) => file.endsWith('.yaml')).sort();
 const rows: BaseRow[] = [];
 
-for (const file of packFiles) {
-  const packs = yaml.load(await readFile(path.join(packsDir, file), 'utf8')) as any[];
-  for (const pack of packs) {
-    const groups = new Map<string, string[]>();
-    for (const preset of pack.presets) {
-      const category = sanitizeCategory(preset.category);
-      const names = groups.get(category) || [];
-      names.push(preset.name);
-      groups.set(category, names);
-    }
+for (const pack of await loadPacks()) {
+  const groups = new Map<string, string[]>();
+  for (const preset of pack.presets) {
+    const category = sanitizeCategory(preset.category);
+    const names = groups.get(category) || [];
+    names.push(preset.name);
+    groups.set(category, names);
+  }
 
-    for (const [category, presetNames] of groups.entries()) {
-      const key = styleCategoryImageKey(pack.id, category);
-      const fileName = `${key}${RECIPE_ASSET_EXTENSION}`;
-      rows.push({
-        packId: pack.id,
-        packName: pack.name,
-        category,
-        key,
-        file: repoRelative(path.join(categoryBasesDir, fileName)),
-        exists: await Bun.file(path.join(categoryBasesDir, fileName)).exists(),
-        presetNames,
-      });
-    }
+  for (const [category, presetNames] of groups.entries()) {
+    const key = styleCategoryImageKey(pack.id, category);
+    const fileName = `${key}${RECIPE_ASSET_EXTENSION}`;
+    rows.push({
+      packId: pack.id,
+      packName: pack.name,
+      category,
+      key,
+      file: repoRelative(path.join(categoryBasesDir, fileName)),
+      exists: await Bun.file(path.join(categoryBasesDir, fileName)).exists(),
+      presetNames,
+    });
   }
 }
 

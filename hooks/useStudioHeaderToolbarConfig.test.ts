@@ -3,13 +3,13 @@ import { describe, expect, it } from 'vite-plus/test';
 import { buildStudioHeaderToolbarProps } from './useStudioHeaderToolbarConfig';
 
 describe('buildStudioHeaderToolbarProps', () => {
-  it('wraps workspace switching and onboarding with transitions', () => {
+  it('wraps workspace switching and returns to the gallery when switching from recipes', () => {
     const calls: string[] = [];
 
     const props = buildStudioHeaderToolbarProps({
       view: {
         isGenerating: false,
-        currentView: 'studio',
+        currentView: 'recipes',
         onViewChange: (view) => calls.push(`view:${view}`),
         activeRecipe: null,
         onCloseRecipe: () => calls.push('closeRecipe'),
@@ -46,6 +46,7 @@ describe('buildStudioHeaderToolbarProps', () => {
           label: 'Ready',
           tone: 'success',
         },
+        queueResultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
         queueCount: 4,
         isQueueOpen: false,
         onToggleQueue: () => calls.push('toggleQueue'),
@@ -66,6 +67,7 @@ describe('buildStudioHeaderToolbarProps', () => {
     expect(props.trashCount).toBe(2);
     expect(props.usage.value).toBe('120');
     expect(props.queueCount).toBe(4);
+    expect(props.queueResultPreviews).toEqual([{ id: 'result-1', src: '/library/assets/result-1.png' }]);
     expect(props.activeProviderId).toBe('codex');
     expect(props.runtimeStatus).toEqual({
       label: 'Ready',
@@ -74,6 +76,7 @@ describe('buildStudioHeaderToolbarProps', () => {
     expect(calls).toEqual([
       'transition',
       'switch:shots',
+      'view:studio',
       'transition',
       'openOnboarding',
       'toggleQueue',

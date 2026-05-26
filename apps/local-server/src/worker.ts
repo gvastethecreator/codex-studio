@@ -1,8 +1,16 @@
-import { mkdirSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, renameSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings } from './config';
 import { registerCatalogImage } from './catalog';
-import { addAsset, addJobEvent, getJob, updateJobStatus, upsertCodexTurn } from './db';
+import {
+  addAsset,
+  addJobEvent,
+  getJob,
+  getSettingValue,
+  setSettingValue,
+  updateJobStatus,
+  upsertCodexTurn,
+} from './db';
 import { publishEvent } from './events';
 import { resolveLibraryPath, toPublicAssetUrl } from './library';
 import { log } from './logger';
@@ -14,6 +22,8 @@ import { embedMetadata } from './metadataEmbedder';
 import { parsePromptTransport } from '../../../packages/shared/src';
 import type { Job } from '../../../packages/shared/src';
 import type { CodexTurn } from './codex';
+import { buildOutputAssetRelativePath } from './outputOrganization';
+import { readEditableStudioSettings } from './studioSettingsStore';
 import { resolveJobCatalogContext } from './workerCatalogContext';
 import { resolveWorkerRuntimeTarget } from './workerRouting';
 
@@ -107,6 +117,16 @@ function svgForPrompt(prompt: string) {
 </svg>`;
 }
 
+function resolveUniquePath(filePath: string) {
+  if (!existsSync(filePath)) return filePath;
+  const parsed = path.parse(filePath);
+  for (let index = 2; index < 1000; index += 1) {
+    const candidate = path.join(parsed.dir, `${parsed.name}-${index}${parsed.ext}`);
+    if (!existsSync(candidate)) return candidate;
+  }
+  return path.join(parsed.dir, `${parsed.name}-${Date.now()}${parsed.ext}`);
+}
+
 export function createWorkerController({
   createTurn = createCodexTurn,
   getSettings: getSettingsFn = getSettings,
@@ -140,9 +160,38 @@ export function createWorkerController({
     return getSettingsFn().codexMaxConcurrentJobs;
   }
 
+  function resolveGeneratedAssetTargetPath(job: Job, providerId: string | null, extension: string) {
+    const executionOptions = resolveExecutionOptions(job.execution);
+    const settings = readEditableStudioSettings({
+      getSetting: getSettingValue,
+      setSetting: setSettingValue,
+    });
+    const relativePath = buildOutputAssetRelativePath(settings, {
+      jobId: job.id,
+      providerId,
+      model: executionOptions.model,
+      recipeId: job.sourceSpec?.recipeId ?? null,
+      extension,
+    });
+    return resolveUniquePath(resolveLibraryPathFn(...relativePath.split(/[\\/]/)));
+  }
+
+  function organizeGeneratedAssetPath(job: Job, filePath: string, providerId: string | null) {
+    const ext = path.extname(filePath).toLowerCase() || '.png';
+    const targetPath = resolveGeneratedAssetTargetPath(job, providerId, ext);
+
+    if (path.resolve(filePath) === path.resolve(targetPath)) return filePath;
+    mkdirSync(path.dirname(targetPath), { recursive: true });
+    if (existsSync(filePath)) {
+      renameSync(filePath, targetPath);
+      return targetPath;
+    }
+    return filePath;
+  }
+
   function createDryRunAsset(job: Job) {
-    mkdirSync(resolveLibraryPathFn('assets'), { recursive: true });
-    const filePath = resolveLibraryPathFn('assets', `${job.id}-dry-run.svg`);
+    const filePath = resolveGeneratedAssetTargetPath(job, 'dry_run', '.svg');
+    mkdirSync(path.dirname(filePath), { recursive: true });
     writeFileSync(filePath, svgForPrompt(job.finalPromptUsed), 'utf8');
     return addAssetFn({
       projectId: job.projectId,
@@ -314,10 +363,15 @@ export function createWorkerController({
         : ext === '.webp'
           ? 'image/webp'
           : 'image/png';
+    const organizedImagePath = organizeGeneratedAssetPath(
+      job,
+      discoveredImagePath,
+      job.providerId ?? job.sourceSpec?.providerId ?? 'codex',
+    );
     const asset = addAssetFn({
       projectId: job.projectId,
       jobId: job.id,
-      filePath: discoveredImagePath,
+      filePath: organizedImagePath,
       thumbnailPath: null,
       publicUrl: toPublicAssetUrlFn(discoveredImagePath),
       prompt: job.finalPromptUsed,
@@ -427,10 +481,15 @@ export function createWorkerController({
         : ext === '.webp'
           ? 'image/webp'
           : 'image/png';
+    const organizedImagePath = organizeGeneratedAssetPath(
+      job,
+      discoveredImagePath,
+      job.providerId ?? job.sourceSpec?.providerId ?? 'external',
+    );
     const asset = addAssetFn({
       projectId: job.projectId,
       jobId: job.id,
-      filePath: discoveredImagePath,
+      filePath: organizedImagePath,
       thumbnailPath: null,
       publicUrl: toPublicAssetUrlFn(discoveredImagePath),
       prompt: job.finalPromptUsed,

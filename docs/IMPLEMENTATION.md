@@ -17,7 +17,7 @@ La app mantiene el enrutamiento liviano por hash para `studio`, `recipes`, recet
 3. `watchJob()` espera los estados terminales reutilizando un stream SSE compartido.
 4. El worker usa `codex app-server` y la skill local de imagenes.
 5. El asset se guarda en `assets/` y `thumbnails/` dentro de la Studio Library configurada (por ejemplo `%USERPROFILE%\AI-Studio-Library\assets` en Windows).
-6. La UI consulta `/api/catalog` filtrando por `jobId`, materializa un `GenerationBatch` y lo persiste como cache visual en IndexedDB (`catalog-cache`).
+6. La UI consulta `/api/catalog` filtrando por `jobId`, materializa imagenes desde Catalog Entries y solo construye `GenerationBatch` en memoria como compatibilidad visual.
 
 ## Cola Persistente
 
@@ -33,4 +33,4 @@ La consola visual mezcla logs de UI con logs del backend local. El backend tambi
 
 ## Vault
 
-La importacion/exportacion Vault sigue funcionando sobre los batches visuales de IndexedDB. La Studio Library externa y el Image Catalog siguen siendo independientes de ese formato: el cache visual se puede reconstruir desde el backend local cuando hace falta.
+Vault queda como export de snapshot metadata legacy para inspeccion y compatibilidad. Ya no existe import visible de JSON legacy: las imagenes deben entrar por Settings > External Output Sources para copiarse como Local Assets y Catalog Entries. El cache visual activo no se persiste en IndexedDB; recovery puede leer claves legacy para reconstruccion puntual.

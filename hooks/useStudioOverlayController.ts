@@ -1,5 +1,4 @@
 import { startViewTransition } from '../utils/transitionUtils';
-import type { GenerationBatch } from '../types';
 
 import type {
   StudioConfirmationOverlayProps,
@@ -50,7 +49,6 @@ interface StudioOverlayActivityContext {
 }
 
 interface StudioOverlayVaultContext {
-  handleImportVault: StudioSystemOverlaysProps['handleImportVault'];
   handleExportWorkspaceSnapshot: StudioSystemOverlaysProps['handleExportWorkspaceSnapshot'];
   handleDeepScan: StudioSystemOverlaysProps['handleDeepScan'];
 }
@@ -100,15 +98,12 @@ interface StudioOverlaySettingsContext {
 }
 
 interface StudioOverlayWorkspaceContext {
-  catalogVisualBatches: GenerationBatch[];
+  catalogVisualGroupCount: number;
   workspaces: StudioSystemOverlaysProps['workspaces'];
   trash: StudioWorkspaceOverlaysProps['trash'];
   restoreFromTrash: StudioWorkspaceOverlaysProps['restoreFromTrash'];
   isTrashModalOpen: StudioWorkspaceOverlaysProps['isTrashModalOpen'];
   closeTrash: StudioWorkspaceOverlaysProps['closeTrash'];
-  isLimitModalOpen: StudioWorkspaceOverlaysProps['isLimitModalOpen'];
-  dismissLimitModal: StudioWorkspaceOverlaysProps['handleDismissLimitModal'];
-  handleDownloadAndClear: StudioWorkspaceOverlaysProps['handleDownloadAndClear'];
 }
 
 interface StudioOverlayWorkspaceActions {
@@ -175,7 +170,7 @@ export function buildStudioOverlayController({
       mergedLogs: activity.mergedLogs,
       isDashboardModalOpen: dashboard.isOpen,
       closeDashboard: dashboard.close,
-      visualGroupsCount: workspace.catalogVisualBatches.length,
+      visualGroupsCount: workspace.catalogVisualGroupCount,
       workspaces: workspace.workspaces,
       studioJobs: activity.studioJobs,
       imagesCount: image.imagesWithConfig.length,
@@ -183,7 +178,6 @@ export function buildStudioOverlayController({
       isLoadingSelectedJob: activity.isLoadingSelectedJob,
       onInspectJob: activity.onInspectJob,
       onClearSelectedJob: activity.onClearSelectedJob,
-      handleImportVault: vault.handleImportVault,
       handleExportWorkspaceSnapshot: vault.handleExportWorkspaceSnapshot,
       handleDeepScan: vault.handleDeepScan,
       apiBase: onboarding.apiBase,
@@ -236,10 +230,6 @@ export function buildStudioOverlayController({
       restoreFromTrash: workspace.restoreFromTrash,
       restoreAllFromTrash: () => workspaceActions.requestRestoreAllTrash(workspace.trash.length),
       emptyTrash: () => workspaceActions.requestEmptyTrash(workspace.trash.length),
-      isLimitModalOpen: workspace.isLimitModalOpen,
-      handleDismissLimitModal: workspace.dismissLimitModal,
-      handleDownloadAndClear: workspace.handleDownloadAndClear,
-      visualGroupCount: workspace.catalogVisualBatches.length,
     },
     confirmationOverlay: confirmation,
   };

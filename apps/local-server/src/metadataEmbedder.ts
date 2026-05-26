@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { resolveLibraryPathFromRoot } from './library';
 
 const PNG_SIGNATURE = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
 const METADATA_KEY = 'codex_imagegen_params';
@@ -381,7 +382,7 @@ export async function embedJobAssets(
   metadata: ImageGenMetadata,
   libraryDir: string,
 ): Promise<EmbedResult[]> {
-  const assetsDir = path.join(libraryDir, 'assets');
+  const assetsDir = resolveLibraryPathFromRoot(libraryDir, 'assets');
   if (!existsSync(assetsDir)) return [];
   const results: EmbedResult[] = [];
   for (const entry of await Array.fromAsync(

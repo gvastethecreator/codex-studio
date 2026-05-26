@@ -8,6 +8,7 @@ interface UseQueueManagerProps {
     config: Partial<ImageGenerationConfig>,
     options?: {
       preventModal?: boolean;
+      workspaceId?: string;
       signal?: AbortSignal;
       onJobCreated?: (job: StudioJob) => void;
     },
@@ -18,6 +19,23 @@ interface UseQueueManagerProps {
 }
 
 const MAX_CONCURRENT_JOBS = 3;
+
+export function createQueueJob(
+  prompt: string,
+  config: ImageGenerationConfig,
+  workspaceId: string,
+  force: boolean = false,
+): QueueJob {
+  return {
+    id: `job-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+    prompt,
+    workspaceId,
+    config: { ...config, prompt },
+    status: 'pending',
+    createdAt: Date.now(),
+    isForced: force,
+  };
+}
 
 export const useQueueManager = ({
   executeGeneration,
@@ -34,16 +52,14 @@ export const useQueueManager = ({
   const processingJobsRef = useRef<Set<string>>(new Set());
 
   const enqueue = useCallback(
-    (prompt: string, config: ImageGenerationConfig, force: boolean = false) => {
+    (
+      prompt: string,
+      config: ImageGenerationConfig,
+      workspaceId: string,
+      force: boolean = false,
+    ) => {
       startViewTransition(() => {
-        const newJob: QueueJob = {
-          id: `job-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-          prompt,
-          config: { ...config, prompt },
-          status: 'pending',
-          createdAt: Date.now(),
-          isForced: force,
-        };
+        const newJob = createQueueJob(prompt, config, workspaceId, force);
         setJobs((prev) => [...prev, newJob]);
         addToast(force ? 'Forcing job execution...' : 'Job added to queue', 'info');
       });
@@ -208,6 +224,7 @@ export const useQueueManager = ({
       try {
         await executeGeneration(nextJob.config, {
           preventModal: true,
+          workspaceId: nextJob.workspaceId,
           signal: controller.signal,
           onJobCreated: (studioJob) => {
             linkedServerJobIdsRef.current.set(nextJob.id, studioJob.id);

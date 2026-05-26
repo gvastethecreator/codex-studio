@@ -43,13 +43,17 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: Google Gemini image API now has a concrete hosted executor. It calls `generateContent`, stores inline image data as Local Assets, supports text-to-image plus localPath-backed `image_edit`, and marks Google executable only when backend preflight finds a configured Provider Secret.
    - Done: Google `image_edit` now sends image assets before the prompt text to match edit-mode conventions, orders assets by role priority, and appends explicit edit-mode instructions to the prompt for better Gemini edit fidelity.
    - Done: ComfyUI now has a concrete executor that reads `COMFY_WORKFLOW_TEMPLATE_PATH` to load and merge user prompt/negative-prompt into a JSON workflow template for local runtimes. It submits the workflow via `/prompt`, polls `/history`, finds the first image output, and streams the result into the Studio Library via the shared `storeHostedImageResult` normalizer. Comfy remains blocked from execution until both `COMFY_API_URL`/`COMFYUI_API_URL` and `COMFY_WORKFLOW_TEMPLATE_PATH` are configured.
+   - Done: added `providers:source:verify` and wired it into `providers:verify` so route handlers and non-provider backend modules cannot import provider compilers, concrete executors, or hosted-result internals.
    - Done: ComfyUI capability is executable only when a concrete executor exists and preflight passes both local endpoint and workflow template config.
 
 4. **Studio Settings**
    - Add backend/API support for editable Studio Settings stored with the Studio Library.
    - Keep `.env.local` for Bootstrap Configuration, ports, development flags, and secrets.
+   - Done: Studio Library layout now keeps internal state in `.studio/` and generated image outputs in `outputs/`.
+   - Done: Studio Settings now persist output organization preferences for subfolders by date/provider/model/recipe plus a file-name template.
    - Done: support output-source discovery and registration without unmanaged destructive file operations.
    - Done: backend can list registered source image files and import selected files by copying them into the Studio Library as Catalog Entries.
+   - Done: `library:layout:verify` now blocks raw `libraryDir` joins for DB, transcripts, assets, outputs, and `.studio` outside the layout helper/migration script. Default-generation scripts and metadata embedding now resolve through `resolveLibraryPathFromRoot`.
    - Done: Settings exposes registered source scanning, file selection, explicit selected-file import, and provider runtime preflight state.
 
 5. **Command Center and demand-mounted UI**
@@ -94,7 +98,7 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: compatibility `STYLE_PACKS` is now composed from manifests so current UI keeps working.
    - Done: validation covers graph refs, duplicate/orphan manifests, pack/category reference drift, pack namespace drift, and legacy preset count parity.
    - Done: runtime Styles data no longer imports monolithic legacy pack YAML when granular manifests are present.
-   - Done: style default scripts now load and validate granular manifests before falling back to legacy packs.
+   - Done: style default scripts now load and validate granular manifests only; fallback to legacy pack YAML is retired.
    - Done: added a manifest-first Style Preset Catalog interface for direct preset, pack, and category lookups.
    - Done: Styles favorites and pack resolution now use the Style Preset Catalog instead of scanning compatibility packs.
    - Done: Style Preset Manifests now have an editorial taxonomy contract, and the split script emits it for future manifest generation.
@@ -112,9 +116,9 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: split the heavy Style Preset Catalog graph into `stylePresetCatalogData.ts` and generated a compact `styleRuntimeData.generated.ts` path for `stylesData.ts`, so the visual Styles Recipe no longer constructs catalog/taxonomy indexes at mount time.
    - Done: added `styles:runtime:check` and `styles:verify` so generated Styles runtime data can be proven current without rewriting files.
    - Done: Style Preset Manifest validation now checks authoring-contract drift beyond graph references, including duplicate packs/categories, empty identities, unknown packs, empty visual DNA, taxonomy pack/category drift, and taxonomy tag/task drift.
-   - Done: added `styles:source:verify` and wired it into `styles:verify` so runtime code cannot accidentally reintroduce legacy pack YAML as the authoring source. Legacy usage is now limited to the compatibility loader, migration split script, and compatibility tests.
-   - Done: `styles:split` now refuses to overwrite granular manifests from legacy pack YAML unless the migration-only `styles:split:legacy` path is used explicitly.
-   - Next: author new presets directly in granular files, keep `styles:runtime` in sync with manifest edits, and retire monolithic pack YAML files after compatibility parity no longer needs them.
+   - Done: added `styles:source:verify` and wired it into `styles:verify` so runtime code cannot accidentally reintroduce legacy pack YAML as the authoring source. Legacy usage is now limited to compatibility types/tests plus the source-audit guard.
+   - Done: `styles:split` now refuses to overwrite granular manifests from legacy pack YAML.
+   - Next: author new presets directly in granular files and keep `styles:runtime` in sync with manifest edits.
    - Done: authored `SP01-081` (Soft Editorial Window) as first direct-granular preset proof. Full authoring cycle verified: create YAML → register in pack manifest → add repo default image → validate → regenerate runtime data. Added `docs/STYLE_PRESET_AUTHORING.md` with YAML template, taxonomy contract, and workflow commands.
    - Done: added `assets/recipes/styles/defaults/SP01-081.webp` and updated the manifest taxonomy/assets block. Latest `styles:verify` shows 1,253/1,253 presets with taxonomy and default images; no missing default-image sample remains.
    - Done: Style Preset Catalog search data is now split into lazy per-pack YAML chunks. `stylePresetCatalogData.ts` uses `eager: false` globs with async `loadStylePresetCatalog()`. The `StylePresetCatalogSearchSurface` is demand-mounted via `React.lazy` in `StylesRecipe` and loads catalog data asynchronously with a loading state. The search surface chunk dropped from about 2,113 KB to about 189 KB.
@@ -122,9 +126,17 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: visual Styles runtime data is now split by pack and category. `styleRuntimeData.generated.ts` is a small summary/loader index, `styleRuntimePacks.generated/<pack>.ts` composes category chunks from `styleRuntimePacks.generated/<pack>/<category>.ts`, `stylesData.ts` exposes async loaders, and `StylesRecipe` loads the current pack on demand instead of importing the full 1.4 MB generated runtime or a 498 KB pack chunk.
    - Done: Style Pack Manifest validation now rejects duplicate top-level `presetRefs`, category refs missing from the pack-level list, and refs that point outside the pack namespace.
    - Done: `styles:source:verify` now also blocks generated runtime check temp files (`styleRuntimeData.generated.check.*.tmp.ts` and per-pack check temps), keeping the generated preset pipeline from committing verification artifacts.
-   - Done: `styles:source:verify` now also compares legacy pack YAML ids against granular manifests and fails if any preset exists only in `components/recipes/styles/packs`. Current state: 1,252 legacy presets, 1,253 granular manifests, 0 legacy-only presets.
-   - Done: deleted `components/recipes/legacyStylesData.ts`, removing the importable runtime module over legacy pack YAML. Remaining legacy access is limited to the migration script plus the source-audit guard/test.
+   - Done: `styles:source:verify` now fails if legacy pack YAML reappears in `scripts/style-migration/legacy-packs` or in the retired `components/recipes/styles/packs` path.
+   - Done: deleted `components/recipes/legacyStylesData.ts`, removing the importable runtime module over legacy pack YAML. Remaining legacy access is limited to compatibility tests plus the source-audit guard.
    - Done: `styles:verify` now includes `styles:render:verify`, so broad preset work also proves large packs remain bounded in the Styles browser initial render path.
+   - Done: moved monolithic legacy pack YAML out of the normal Styles authoring path into a migration-only folder, then retired that migration path.
+   - Done: `styles:source:verify` now fails if YAML files reappear in retired `components/recipes/styles/packs/`, and the migration README documents the migration-only boundary.
+   - Done: moved migration-only legacy pack YAML out of `components/` entirely into `scripts/style-migration/legacy-packs/`, so the Styles UI tree contains only manifest-first authoring/runtime files.
+   - Done: `styles:source:verify` now blocks any YAML under `components/recipes/styles/` outside `manifests/`, keeping the normal authoring tree manifest-only.
+   - Done: retired `styles:split:legacy` and deleted all remaining monolithic migration pack YAML. `styles:source:verify` now fails if YAML reappears in `scripts/style-migration/legacy-packs/`.
+   - Done: retired remaining YAML mutation helpers (`scripts/expand-pack-02-pack-05.ts`, `scripts/reorder-style-packs.ts`) as non-destructive guards. Category-base audit now reads composed granular manifests through `loadPacks()`.
+   - Done: introduced explicit `StyleRuntimePack` / `StyleRuntimePreset` names and `composeStyleRuntimePacksFromManifests()`.
+   - Done: retired old `StylePack`, `StylePresetDef`, and `composeStylePacksFromManifests()` runtime aliases. `styles:source:verify` now blocks those names everywhere except the source-audit guard/test.
 
 8. **Pipeline and token efficiency**
    - Done: `scripts/tooling-task.ts` forwards extra args for filtered `test`, `check`, `check:fix`, `fmt`, `fmt:check`, and `test:coverage` runs. Focused validation now executes only requested files during iteration.
@@ -137,7 +149,7 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Next: run live Codex output quality comparison using the evaluation harness, then measure rendered UI for expanded Styles packs.
 
 9. **Catalog-first Visual Batch migration**
-   - Done: split `lib/studioCatalogView.ts` into a pure Catalog Entry read model and `lib/studioCatalogVisualBatchAdapter.ts` as the temporary compatibility adapter that materializes `GenerationBatch[]`.
+   - Done: split `lib/studioCatalogView.ts` into a pure Catalog Entry read model. Legacy snapshot export now lives in `lib/studioLegacyVisualSnapshotExport.ts`; Catalog Entry image materialization lives in `lib/studioCatalogImageAdapter.ts`.
    - Done: added `catalog:source:verify` and wired it into `validate:full`, blocking regressions where `StudioCatalogView` imports Visual Batch adapters or `useCatalog` reads `catalog-cache`/global batch state.
 
 - Done: `useStudioGallery` can now receive `StudioCatalogView` and materialize `imagesWithConfig` directly from Catalog Entries through `materializeCatalogEntryImageWithConfig`, while Visual Batches remain only for current selection/action compatibility.
@@ -148,14 +160,35 @@ Turn Codex Studio into a more professional local-first image studio while preser
 - Done: workspace snapshot export now uses `buildLegacyVisualBatchSnapshot()` to make the legacy-compatible `GenerationBatch[]` edge explicit; workspace ZIP images still prefer `StudioCatalogView`.
 - Done: legacy Visual Batch cache keys and snapshot validation now live in `studioLegacyVisualBatchStore`; `catalog:source:verify` fails if raw `catalog-cache`/`catalog-trash` strings spread outside that compatibility module.
 - Done: `GlobalContext` public import/archive methods and reducer actions now say `LegacyVisualBatches` explicitly instead of generic replace/archive batch names.
-- Done: recovery/runtime merge path now says `mergeLegacyVisualBatches` / `MERGE_LEGACY_VISUAL_BATCHES`; no generic `mergeBatches` API remains.
-- Done: generated output append path now says `prependGeneratedVisualBatch` / `PREPEND_GENERATED_VISUAL_BATCH`; no generic `prependBatch` API remains.
-- Done: `GlobalContext` now exposes `legacyVisualBatches` / `legacyVisualTrash` instead of generic public `batches` / `trash`.
-- Done: internal `GlobalState` storage is now `legacyVisualBatches` / `legacyVisualTrash`, and remaining delete/favorite/clear/restore/empty reducer actions now carry `LEGACY_VISUAL` names.
-- Done: gallery, workspace strip, and vault transfer hooks now take `catalogView` as the primary path and only accept `legacyVisualBatches` as an explicitly named fallback.
-- Done: storage recovery now receives `legacyVisualBatches` explicitly, overlay/page controller counts are `catalogVisualGroupCount` / `visualGroupsCount`, and Archived Images wording no longer says generic archived batches.
+- Done: recovery/runtime merge path now says `mergeLegacyVisualBatches` at the public edge and reducer stores only recovered ids through `REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_IDS`; no generic `mergeBatches` API remains.
+- Done: generated output append path now says `prependGeneratedLegacyVisualBatch`, while reducer stores only ids through `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_ID`; no generic `prependBatch` public API remains.
+- Done: `GlobalContext` no longer exposes `legacyVisualBatches` / `legacyVisualTrash`.
+- Done: internal `GlobalState` no longer stores `legacyVisualBatches` / `legacyVisualTrash`, and delete/favorite legacy mirror actions were removed.
+- Done: gallery, workspace strip, and vault transfer hooks now take `catalogView` as the primary path and no longer accept `legacyVisualBatches` fallback input.
+- Done: storage recovery now receives legacy batch ids explicitly, overlay/page controller counts are `catalogVisualGroupCount` / `visualGroupsCount`, and Archived Images wording no longer says generic archived batches.
 - Done: `useCatalog` now exposes only Catalog Entries and `StudioCatalogView`; Visual Batch materialization moved out of the hook and into the Studio Shell compatibility edge.
-- Next: continue reducing shell `catalogVisualBatches` and remaining `GenerationBatch[]` helper names once grid/export consumers can accept Catalog Entries directly.
+- Done: `useStudioShell` no longer calls `materializeVisualBatchesFromCatalog()` for the overlay/page count path. It now reads `catalogVisualGroupCount: number` from `activeCatalog.view.byBatchId.size`. `useStudioOverlayController` interface updated from `catalogVisualBatches: GenerationBatch[]` to `catalogVisualGroupCount: number`. All downstream consumers only needed `.length`.
+- Done: `legacyVisualTrash` state and 4 trash reducer actions removed from `GlobalState`/`globalReducer`. `archiveLegacyVisualBatches`, `restoreLegacyVisualBatchFromTrash`, `restoreAllLegacyVisualBatchesFromTrash`, `emptyLegacyVisualTrash` context methods removed. `deleteImages()` simplified to drop empty batches. `useStudioShell`/`useVaultTransfer` no longer call trash side-effect mirrors.
+- Done: `legacyVisualBatches` extracted from `GlobalContext` into dedicated `LegacyVisualBatchContext`, then reduced to an id registry with its own `legacyVisualBatchReducer`. Provider tree now `GlobalProvider > LegacyVisualBatchProvider > GenerationProvider`. `GlobalContext` is pure layout/background/session state.
+- Done: gallery, workspace strip, and vault export builder `legacyVisualBatches` fallback params removed. `buildStudioGalleryImages` accepts only `catalogView`. `buildWorkspacesWithThumbs` returns zero-count workspaces without catalog. `buildLegacyVisualBatchSnapshot` and `buildWorkspaceExportImages` return empty arrays without catalog. `useImageManager` `legacyVisualBatches` prop and `GenerationBatch` dependency removed. `useStudioShell` `shouldAutoOpen` now checks catalog emptiness only.
+- Done: dead `GenerationBatch` import removed from `components/overlays/types.ts`.
+- Done: visible legacy workspace snapshot JSON import removed from Dashboard/System surfaces and `useVaultTransfer`; snapshots are export-only metadata.
+- Done: storage recovery now reuses `studioLegacyVisualSnapshotImport` for legacy array and single-batch candidates instead of validating Visual Batch payloads directly.
+- Done: `useStudioRuntime` and `useStudioStorageRecovery` no longer take `GenerationBatch[]` directly. Recovery now receives existing legacy batch ids and emits an explicit `LegacyVisualBatchSnapshot` through the import callback.
+- Done: generated-job append now passes through `localGenerationVisualBatchCompat`, making the Local Generation Result to legacy Visual Batch update an explicit compatibility edge. `GenerationContext` now gets that legacy updater from `LegacyVisualBatchContext`, not `GlobalContext`.
+- Done: `runLocalGeneration` no longer returns a `GenerationBatch`. It returns catalog-derived local result data, and `localGenerationVisualBatchCompat` builds the legacy Visual Batch only at the cache append edge.
+- Done: `LegacyVisualBatchContext` public append API is now `prependGeneratedLegacyVisualBatch`, and reducer action is `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_ID`, so generated-job compatibility stores only ids.
+- Done: `catalog:source:verify` now blocks `LegacyVisualBatchContext` from reintroducing IndexedDB persistence for Visual Batches. Active `GenerationBatch[]` cache is in-memory only; `catalog-cache`/`catalog-trash` remain recovery-only legacy keys.
+- Done: `catalog:source:verify` now blocks generated-job legacy append helpers from spreading outside `localGenerationVisualBatchCompat`, `GenerationContext`, `LegacyVisualBatchContext`, and the reducer/test edge.
+- Done: `catalog:source:verify` now blocks new direct `useLegacyVisualBatches()` consumers outside `GenerationContext`, `LegacyVisualBatchContext`, and `useStudioShell`, keeping Visual Batch usage as orchestration/compatibility only.
+- Done: `LegacyVisualBatchContext` no longer exposes the full `legacyVisualBatches` snapshot. It exposes `legacyVisualBatchIds` for recovery dedupe plus compatibility actions, and `catalog:source:verify` blocks snapshot export from returning.
+- Done: `legacyVisualBatchReducer` now stores only `legacyVisualBatchRefs` ids/workspace ids instead of full legacy snapshots. Confirmed workspace clear now calls the Catalog archive path, not the hidden id registry.
+- Done: workspace snapshot JSON import no longer exists as a user action. Real image import is only via External Output Sources.
+- Done: `useStudioRuntime` no longer imports `LegacyVisualBatchSnapshot` directly. That type is limited to storage recovery hook edges, and `catalog:source:verify` blocks hook-level spread.
+- Done: legacy snapshot export moved into `studioLegacyVisualSnapshotExport`, and Catalog Entry image-with-config materialization moved into `studioCatalogImageAdapter`.
+- Done: deleted the empty `studioCatalogVisualBatchAdapter` alias module after replacing remaining callers with explicit snapshot/image adapters.
+- Done: deleted `studioVisualBatchCatalog`; Catalog Entry image materialization now lives only in `studioCatalogImageAdapter`, while legacy `GenerationBatch[]` materialization stays in `studioLegacyVisualSnapshotExport`.
+- Next: keep shrinking the remaining `GenerationBatch[]` compatibility surface in storage recovery and generated-job append paths.
 
 ## Guardrails
 
@@ -164,6 +197,7 @@ Turn Codex Studio into a more professional local-first image studio while preser
 - Keep external provider capabilities blocked until a concrete executor is wired; the adapter shell is not enough to mark a provider executable.
 - Do not weaken recipe data to save tokens; optimize provider compilers and repeated session instructions instead.
 - Import external outputs into a Studio Library before catalog, delete, move, tag, or metadata operations.
+- Use `resolveLibraryPathFromRoot(libraryDir, ...)` for all logical Studio Library paths outside the layout helper/migration internals.
 - Keep UI labels and workflows consistent with the existing professional tool direction.
 - Do not mark this roadmap complete until style generation scripts, recipe modules, provider adapters, settings/output-source UX, and UI performance follow-ups are audited against current files.
 - Registration is not import: External Output Source registry proves safe path intent only. Import must be an explicit copy into the Studio Library.

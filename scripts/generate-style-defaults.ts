@@ -1,7 +1,11 @@
 import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { Asset, Job, Project } from '../packages/shared/src';
-import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
+import { resolveLibraryPathFromRoot } from '../apps/local-server/src/library';
+import type {
+  StyleRuntimePack,
+  StyleRuntimePreset,
+} from '../components/recipes/styles/runtimeTypes';
 import {
   createStyleDefaultFailureEntry,
   createStyleDefaultJobRequest,
@@ -25,8 +29,8 @@ import {
 } from './style-default-utils';
 
 interface PendingPreset {
-  pack: StylePack;
-  preset: StylePresetDef;
+  pack: StyleRuntimePack;
+  preset: StyleRuntimePreset;
   category: string;
   destination: string;
 }
@@ -391,7 +395,7 @@ function hashString(value: string) {
   return hash;
 }
 
-function broadPromptFamily(pack: StylePack, category: string) {
+function broadPromptFamily(pack: StyleRuntimePack, category: string) {
   const key = styleCategoryImageKey(pack.id, category);
   if (key === 'pack_05__dark_fantasy_and_seinen') return 'anime_dark_fantasy';
   if (key === 'pack_05__studio_masterpieces') return 'anime_masterpieces';
@@ -403,14 +407,14 @@ function broadPromptFamily(pack: StylePack, category: string) {
   return 'default';
 }
 
-function categorySceneAnchor(pack: StylePack, category: string, seed?: string) {
+function categorySceneAnchor(pack: StyleRuntimePack, category: string, seed?: string) {
   const key = styleCategoryImageKey(pack.id, category);
   const explicit = CATEGORY_SCENE_ANCHORS[key];
   const source = explicit && explicit.length > 0 ? explicit : GENERIC_SCENE_ANCHORS;
   return source[hashString(seed || `${key}:anchor`) % source.length];
 }
 
-function presetMotif(preset: StylePresetDef) {
+function presetMotif(preset: StyleRuntimePreset) {
   return GENERIC_PRESET_MOTIFS[
     hashString(`${preset.id}:${preset.name}`) % GENERIC_PRESET_MOTIFS.length
   ];
@@ -420,7 +424,7 @@ function pickVariant(list: string[], seed: string) {
   return list[Math.abs(hashString(seed)) % list.length];
 }
 
-function categoryBasePrompt(pack: StylePack, category: string, seed?: string) {
+function categoryBasePrompt(pack: StyleRuntimePack, category: string, seed?: string) {
   const key = styleCategoryImageKey(pack.id, category);
   const base =
     CATEGORY_BASE_PROMPTS[key] ||
@@ -435,7 +439,7 @@ function familyVariant(map: Record<string, string[]>, family: string, seed: stri
   return source[Math.abs(hashString(seed)) % source.length];
 }
 
-function buildStylePrompt(pack: StylePack, preset: StylePresetDef, attempt: number) {
+function buildStylePrompt(pack: StyleRuntimePack, preset: StyleRuntimePreset, attempt: number) {
   const category = sanitizeCategory(preset.category);
   const negative = preset.negativePrompt ? `\n\nAvoid:\n${preset.negativePrompt}` : '';
   const allowsBooks = /book|library|textbook|comic book|storybook/i.test(
@@ -544,7 +548,12 @@ async function exists(filePath: string) {
 }
 
 async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
-  const transcriptPath = path.join(libraryDir, 'transcripts', jobId, 'events.jsonl');
+  const transcriptPath = resolveLibraryPathFromRoot(
+    libraryDir,
+    'transcripts',
+    jobId,
+    'events.jsonl',
+  );
   const codexHome = process.env.CODEX_HOME || defaultCodexHome;
   const transcript = await readFile(transcriptPath, 'utf8').catch(() => '');
   for (const line of transcript.split(/\r?\n/)) {
@@ -561,9 +570,10 @@ async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: strin
     }
   }
   await rm(sourceAssetPath, { force: true }).catch(() => {});
-  await rm(path.join(libraryDir, 'transcripts', jobId), { recursive: true, force: true }).catch(
-    () => {},
-  );
+  await rm(resolveLibraryPathFromRoot(libraryDir, 'transcripts', jobId), {
+    recursive: true,
+    force: true,
+  }).catch(() => {});
 }
 
 async function waitForJob(jobId: string) {

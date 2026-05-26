@@ -4,7 +4,7 @@ import yaml from 'js-yaml';
 import type {
   StylePackManifest,
   StylePresetManifest,
-} from '../components/recipes/styles/types';
+} from '../components/recipes/styles/manifestTypes';
 import {
   createStylePresetCatalog,
   validateStyleManifestGraph,

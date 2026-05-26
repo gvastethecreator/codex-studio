@@ -2,9 +2,11 @@
 
 Real presets live in `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
 
-Do not add new presets to `components/recipes/styles/packs/*.yaml`. Those files
-are legacy migration input only. `bun run styles:source:verify` fails when a
-preset id exists in legacy pack YAML but not in granular manifests.
+Do not add new presets to legacy pack YAML. Monolithic legacy pack YAML is
+retired; `scripts/style-migration/legacy-packs/` must stay free of YAML files.
+`bun run styles:source:verify` fails if YAML appears there, if YAML files
+reappear under the retired `components/recipes/styles/packs/` directory, or if
+any YAML file under `components/recipes/styles/` lives outside `manifests/`.
 
 ## Quick Example
 

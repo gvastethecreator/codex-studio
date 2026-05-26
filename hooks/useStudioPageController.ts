@@ -50,7 +50,6 @@ export interface BuildStudioPageControllerArgs {
   clearCompleted: StudioOperationsRailProps['clearCompleted'];
   isResting: StudioOperationsRailProps['isResting'];
   exportWorkspaceSnapshot: StudioOperationsRailProps['exportWorkspaceSnapshot'];
-  handleImportVault: StudioOperationsRailProps['handleImportVault'];
   isBackgroundEnabled: StudioOperationsRailProps['isBackgroundEnabled'];
   setBackgroundEnabled: StudioOperationsRailProps['setBackgroundEnabled'];
   activeServerJobCount: StudioOperationsRailProps['activeServerJobCount'];
@@ -118,7 +117,6 @@ export function buildStudioPageController(
       clearCompleted: args.clearCompleted,
       isResting: args.isResting,
       exportWorkspaceSnapshot: args.exportWorkspaceSnapshot,
-      handleImportVault: args.handleImportVault,
       isBackgroundEnabled: args.isBackgroundEnabled,
       setBackgroundEnabled: args.setBackgroundEnabled,
       activeServerJobCount: args.activeServerJobCount,

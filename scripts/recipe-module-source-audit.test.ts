@@ -33,4 +33,29 @@ describe('recipe module source audit', () => {
       },
     ]);
   });
+
+  it('also scans TypeScript recipe support files except the UI projection helper', async () => {
+    const rootDir = path.join(tmpdir(), `recipe-source-ts-audit-${Date.now()}`);
+
+    await writeRepoFile(
+      rootDir,
+      'components/recipes/buildPrompt.ts',
+      'export const bad = buildRecipeProviderDirectives;',
+    );
+    await writeRepoFile(
+      rootDir,
+      'components/recipes/recipeModuleUi.ts',
+      'export const ok = buildRecipeProviderDirectives;',
+    );
+
+    const report = await createRecipeModuleSourceAuditReport(rootDir);
+
+    expect(report.scannedFiles).toBe(1);
+    expect(report.violations).toEqual([
+      {
+        filePath: 'components/recipes/buildPrompt.ts',
+        markers: ['buildRecipeProviderDirectives'],
+      },
+    ]);
+  });
 });

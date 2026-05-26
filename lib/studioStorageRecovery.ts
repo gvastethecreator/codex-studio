@@ -1,8 +1,9 @@
-import type { GenerationBatch } from '../types';
+import { LEGACY_VISUAL_BATCH_CACHE_KEYS } from './studioLegacyVisualBatchStore';
 import {
-  LEGACY_VISUAL_BATCH_CACHE_KEYS,
-  validateLegacyVisualBatchVault,
-} from './studioLegacyVisualBatchStore';
+  type LegacyVisualBatch,
+  type LegacyVisualBatchSnapshot,
+  parseRecoverableLegacyVisualBatches,
+} from './studioLegacyVisualSnapshotImport';
 
 export interface RecoverableIdbEntry {
   key: IDBValidKey;
@@ -24,27 +25,19 @@ export const DEFAULT_RECOVERY_IGNORED_KEYS = [
   'generation-config',
 ] as const;
 
-function appendRecoverableCandidates(target: GenerationBatch[], value: unknown) {
-  if (Array.isArray(value) && validateLegacyVisualBatchVault(value)) {
-    target.push(...value);
-    return;
-  }
-
-  const singleBatchCandidate = [value];
-  if (validateLegacyVisualBatchVault(singleBatchCandidate)) {
-    target.push(singleBatchCandidate[0]);
-  }
+function appendRecoverableCandidates(target: LegacyVisualBatchSnapshot, value: unknown) {
+  target.push(...parseRecoverableLegacyVisualBatches(value));
 }
 
-export function collectRecoverableBatches(options: {
+export function collectRecoverableLegacyVisualSnapshot(options: {
   idbEntries: RecoverableIdbEntry[];
   storageEntries: RecoverableStorageEntry[];
   ignoredKeys?: readonly string[];
   existingBatchIds?: Iterable<string>;
-}): GenerationBatch[] {
+}): LegacyVisualBatchSnapshot {
   const ignoredKeys = new Set(options.ignoredKeys ?? DEFAULT_RECOVERY_IGNORED_KEYS);
   const existingBatchIds = new Set(options.existingBatchIds ?? []);
-  const recoveredCandidates: GenerationBatch[] = [];
+  const recoveredCandidates: LegacyVisualBatchSnapshot = [];
 
   for (const entry of options.idbEntries) {
     if (typeof entry.key === 'string' && ignoredKeys.has(entry.key)) {
@@ -68,7 +61,7 @@ export function collectRecoverableBatches(options: {
 
   const seenBatchIds = new Set(existingBatchIds);
 
-  return recoveredCandidates.filter((batch) => {
+  return recoveredCandidates.filter((batch): batch is LegacyVisualBatch => {
     if (seenBatchIds.has(batch.id)) {
       return false;
     }

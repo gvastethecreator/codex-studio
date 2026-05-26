@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import type { CodexModel } from '../packages/shared/src';
 import {
+  formatCodexModelLabel,
   getCodexSpeedOptions,
   normalizeCodexReasoningEffort,
   normalizeCodexSpeed,
@@ -64,5 +65,10 @@ describe('codexExecution', () => {
 
     expect(getCodexSpeedOptions(mini)).toEqual(['standard']);
     expect(normalizeCodexSpeed(mini, 'fast')).toBe('standard');
+  });
+
+  it('formats missing model labels without crashing the toolbar', () => {
+    expect(formatCodexModelLabel(undefined, undefined)).toBe('Default');
+    expect(formatCodexModelLabel('gpt-5.3-codex-spark')).toBe('5.3 Spark');
   });
 });

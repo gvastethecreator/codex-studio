@@ -53,8 +53,8 @@ export function normalizeCodexReasoningEffort(
 
 export function getCodexSpeedOptions(model: CodexModel | null | undefined): CodexServiceTier[] {
   const supported =
-    model?.additionalSpeedTiers?.filter(
-      (tier): tier is Exclude<CodexServiceTier, 'standard'> => KNOWN_SPEED_TIERS.includes(tier),
+    model?.additionalSpeedTiers?.filter((tier): tier is Exclude<CodexServiceTier, 'standard'> =>
+      KNOWN_SPEED_TIERS.includes(tier),
     ) ?? [];
 
   return ['standard', ...unique(supported)];
@@ -68,8 +68,8 @@ export function normalizeCodexSpeed(
   return requestedSpeed && supported.includes(requestedSpeed) ? requestedSpeed : 'standard';
 }
 
-export function formatCodexModelLabel(modelId: string, displayName?: string | null) {
-  const source = (displayName || modelId).trim();
+export function formatCodexModelLabel(modelId?: string | null, displayName?: string | null) {
+  const source = (displayName || modelId || 'Default').trim();
 
   return source
     .replace(/^GPT-/i, '')

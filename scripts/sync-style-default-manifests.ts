@@ -1,6 +1,6 @@
 import { readFile, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import type { StylePack } from '../components/recipes/styles/types';
+import type { StyleRuntimePack } from '../components/recipes/styles/runtimeTypes';
 import {
   defaultsDir,
   loadPacks,
@@ -34,7 +34,9 @@ function failuresPathForPack(packId: string) {
 
 async function loadManifest(packId: string) {
   try {
-    const parsed = JSON.parse(await readFile(manifestPathForPack(packId), 'utf8')) as ManifestEntry[];
+    const parsed = JSON.parse(
+      await readFile(manifestPathForPack(packId), 'utf8'),
+    ) as ManifestEntry[];
     return Array.isArray(parsed) ? parsed : [];
   } catch {
     return [];
@@ -62,7 +64,12 @@ async function exists(filePath: string) {
   }
 }
 
-function recoveredEntry(pack: StylePack, preset: StylePack['presets'][number], file: string, mtime: Date) {
+function recoveredEntry(
+  pack: StyleRuntimePack,
+  preset: StyleRuntimePack['presets'][number],
+  file: string,
+  mtime: Date,
+) {
   const repoFile = repoRelative(file);
   return {
     presetId: preset.id,
@@ -111,7 +118,11 @@ async function main() {
     }
 
     nextManifest.sort((a, b) => a.presetId.localeCompare(b.presetId));
-    await writeFile(manifestPathForPack(pack.id), `${JSON.stringify(nextManifest, null, 2)}\n`, 'utf8');
+    await writeFile(
+      manifestPathForPack(pack.id),
+      `${JSON.stringify(nextManifest, null, 2)}\n`,
+      'utf8',
+    );
 
     const failures = await loadFailures(pack.id);
     const remainingFailures = failures.filter((entry) => {
@@ -119,9 +130,15 @@ async function main() {
       if (!presetId) return true;
       return !nextManifest.some((item) => item.presetId === presetId);
     });
-    await writeFile(failuresPathForPack(pack.id), `${JSON.stringify(remainingFailures, null, 2)}\n`, 'utf8');
+    await writeFile(
+      failuresPathForPack(pack.id),
+      `${JSON.stringify(remainingFailures, null, 2)}\n`,
+      'utf8',
+    );
 
-    console.log(`[sync] ${pack.id} manifest=${nextManifest.length} failures=${remainingFailures.length}`);
+    console.log(
+      `[sync] ${pack.id} manifest=${nextManifest.length} failures=${remainingFailures.length}`,
+    );
   }
 }
 

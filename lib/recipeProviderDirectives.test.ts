@@ -24,9 +24,13 @@ describe('recipeProviderDirectives', () => {
       recipeId: 'styles',
       title: 'Styles',
     });
-    expect(directives && serializeRecipeProviderDirectives(directives)).toContain(
-      '- Core Aesthetic: polished glass object study',
-    );
+    const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
+
+    expect(serialized).toContain('- Target Style: Glass Owl');
+    expect(serialized).toContain('- Core Aesthetic: polished glass object study');
+    expect(serialized).not.toContain('Recipe Module');
+    expect(serialized).not.toContain('Preset ID');
+    expect(serialized).not.toContain('SP09-006');
   });
 
   it('builds compact provider directives for camera params', () => {

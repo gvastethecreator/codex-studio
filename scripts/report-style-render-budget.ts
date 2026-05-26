@@ -5,13 +5,26 @@ import {
   getVisibleStylePresets,
 } from '../components/recipes/styleGridVirtualization';
 import { STYLE_PACK_SUMMARIES, loadStylePack } from '../components/recipes/stylesData';
-import type { StylePack, StylePresetDef } from '../components/recipes/styles/types';
+import type {
+  StyleRuntimePack,
+  StyleRuntimePreset,
+} from '../components/recipes/styles/runtimeTypes';
 
 const DEFAULT_GRID_COLUMNS = 4;
 const DEFAULT_CONTAINER_WIDTH = 1200;
 const MAX_INITIAL_RENDERED_CATEGORIES = STYLE_CATEGORY_INITIAL_RENDER_LIMIT;
 const MAX_INITIAL_RENDERED_PRESET_CARDS =
   STYLE_CATEGORY_INITIAL_RENDER_LIMIT * STYLE_GROUP_INITIAL_RENDER_LIMIT;
+const MAX_EXPANDED_GROUP_PRESET_CARDS = 64;
+
+const SEARCH_SCENARIOS = [
+  {
+    packId: 'pack_01',
+    query: 'boudoir',
+    maxRenderedPresetCards: STYLE_GROUP_INITIAL_RENDER_LIMIT,
+    minMatchedPresetCards: 1,
+  },
+] as const;
 
 interface StyleRenderGroupBudget {
   category: string;
@@ -35,17 +48,29 @@ interface StyleRenderPackBudget {
   initialGroups: StyleRenderGroupBudget[];
 }
 
+interface StyleSearchScenarioBudget {
+  packId: string;
+  query: string;
+  matchedPresetCards: number;
+  initialRenderedCategories: number;
+  initialRenderedPresetCards: number;
+  maxRenderedPresetCards: number;
+  minMatchedPresetCards: number;
+}
+
 export interface StyleRenderBudgetReport {
   gridColumns: number;
   containerWidth: number;
   categoryInitialRenderLimit: number;
   groupInitialRenderLimit: number;
+  expandedGroupRenderLimit: number;
   packs: StyleRenderPackBudget[];
+  searchScenarios: StyleSearchScenarioBudget[];
   violations: string[];
 }
 
-function groupPresetsByCategory(pack: StylePack) {
-  const groups = new Map<string, StylePresetDef[]>();
+function groupPresetsByCategory(pack: StyleRuntimePack) {
+  const groups = new Map<string, StyleRuntimePreset[]>();
 
   for (const preset of pack.presets) {
     const category = preset.category || 'General';
@@ -55,12 +80,62 @@ function groupPresetsByCategory(pack: StylePack) {
   return [...groups.entries()];
 }
 
+function searchPresets(pack: StyleRuntimePack, query: string) {
+  const normalizedQuery = query.trim().toLowerCase();
+  return pack.presets
+    .filter((preset) => {
+      if (!normalizedQuery) return true;
+      return (
+        preset.name.toLowerCase().includes(normalizedQuery) ||
+        preset.style.aesthetic.toLowerCase().includes(normalizedQuery) ||
+        preset.category?.toLowerCase().includes(normalizedQuery)
+      );
+    })
+    .sort((first, second) => first.name.localeCompare(second.name));
+}
+
+function createSearchScenarioBudget({
+  pack,
+  query,
+  maxRenderedPresetCards,
+  minMatchedPresetCards,
+}: {
+  pack: StyleRuntimePack;
+  query: string;
+  maxRenderedPresetCards: number;
+  minMatchedPresetCards: number;
+}): StyleSearchScenarioBudget {
+  const filteredPack = {
+    ...pack,
+    presets: searchPresets(pack, query),
+  };
+  const initialCategoryEntries = groupPresetsByCategory(filteredPack).slice(
+    0,
+    STYLE_CATEGORY_INITIAL_RENDER_LIMIT,
+  );
+  const initialRenderedPresetCards = initialCategoryEntries.reduce(
+    (total, [, presets]) =>
+      total + getVisibleStylePresets(presets, false, STYLE_GROUP_INITIAL_RENDER_LIMIT).length,
+    0,
+  );
+
+  return {
+    packId: pack.id,
+    query,
+    matchedPresetCards: filteredPack.presets.length,
+    initialRenderedCategories: initialCategoryEntries.length,
+    initialRenderedPresetCards,
+    maxRenderedPresetCards,
+    minMatchedPresetCards,
+  };
+}
+
 function createPackBudget({
   pack,
   gridColumns,
   containerWidth,
 }: {
-  pack: StylePack;
+  pack: StyleRuntimePack;
   gridColumns: number;
   containerWidth: number;
 }): StyleRenderPackBudget {
@@ -120,19 +195,30 @@ export async function createStyleRenderBudgetReport({
   gridColumns = DEFAULT_GRID_COLUMNS,
   containerWidth = DEFAULT_CONTAINER_WIDTH,
 } = {}): Promise<StyleRenderBudgetReport> {
-  const packs = await Promise.all(
+  const loadedPacks = await Promise.all(
     STYLE_PACK_SUMMARIES.map(async (summary) => {
       const pack = await loadStylePack(summary.id);
       if (!pack) {
         throw new Error(`Missing style pack runtime data: ${summary.id}`);
       }
-      return createPackBudget({
-        pack,
-        gridColumns,
-        containerWidth,
-      });
+      return pack;
     }),
   );
+  const packs = loadedPacks.map((pack) =>
+    createPackBudget({
+      pack,
+      gridColumns,
+      containerWidth,
+    }),
+  );
+  const packById = new Map(loadedPacks.map((pack) => [pack.id, pack]));
+  const searchScenarios = SEARCH_SCENARIOS.map((scenario) => {
+    const pack = packById.get(scenario.packId);
+    if (!pack) {
+      throw new Error(`Missing style pack for search scenario: ${scenario.packId}`);
+    }
+    return createSearchScenarioBudget({ pack, ...scenario });
+  });
   const violations = packs.flatMap((pack) => {
     const errors: string[] = [];
     if (pack.initialRenderedCategories > MAX_INITIAL_RENDERED_CATEGORIES) {
@@ -150,15 +236,38 @@ export async function createStyleRenderBudgetReport({
         `${pack.packId} collapsed group cards ${pack.maxCollapsedGroupRenderedPresetCards} > ${STYLE_GROUP_INITIAL_RENDER_LIMIT}`,
       );
     }
+    if (pack.largestExpandedCategoryPresetCards > MAX_EXPANDED_GROUP_PRESET_CARDS) {
+      errors.push(
+        `${pack.packId} expanded group cards ${pack.largestExpandedCategoryPresetCards} > ${MAX_EXPANDED_GROUP_PRESET_CARDS}`,
+      );
+    }
     return errors;
   });
+  violations.push(
+    ...searchScenarios.flatMap((scenario) => {
+      const errors: string[] = [];
+      if (scenario.matchedPresetCards < scenario.minMatchedPresetCards) {
+        errors.push(
+          `${scenario.packId} search "${scenario.query}" matches ${scenario.matchedPresetCards} < ${scenario.minMatchedPresetCards}`,
+        );
+      }
+      if (scenario.initialRenderedPresetCards > scenario.maxRenderedPresetCards) {
+        errors.push(
+          `${scenario.packId} search "${scenario.query}" initial cards ${scenario.initialRenderedPresetCards} > ${scenario.maxRenderedPresetCards}`,
+        );
+      }
+      return errors;
+    }),
+  );
 
   return {
     gridColumns,
     containerWidth,
     categoryInitialRenderLimit: STYLE_CATEGORY_INITIAL_RENDER_LIMIT,
     groupInitialRenderLimit: STYLE_GROUP_INITIAL_RENDER_LIMIT,
+    expandedGroupRenderLimit: MAX_EXPANDED_GROUP_PRESET_CARDS,
     packs,
+    searchScenarios,
     violations,
   };
 }
@@ -176,7 +285,12 @@ if (import.meta.main) {
     );
     for (const pack of report.packs) {
       console.log(
-        `[styles:render] ${pack.packId} categories=${pack.totalCategories} presets=${pack.totalPresets} initialCategories=${pack.initialRenderedCategories} initialCards=${pack.initialRenderedPresetCards} hiddenCategories=${pack.hiddenCategories} hiddenPresets=${pack.hiddenPresetCards} largestCategory=${pack.largestExpandedCategoryPresetCards}`,
+        `[styles:render] ${pack.packId} categories=${pack.totalCategories} presets=${pack.totalPresets} initialCategories=${pack.initialRenderedCategories} initialCards=${pack.initialRenderedPresetCards} hiddenCategories=${pack.hiddenCategories} hiddenPresets=${pack.hiddenPresetCards} largestExpandedGroup=${pack.largestExpandedCategoryPresetCards}`,
+      );
+    }
+    for (const scenario of report.searchScenarios) {
+      console.log(
+        `[styles:render] search pack=${scenario.packId} query=${JSON.stringify(scenario.query)} matches=${scenario.matchedPresetCards} initialCards=${scenario.initialRenderedPresetCards}`,
       );
     }
   }

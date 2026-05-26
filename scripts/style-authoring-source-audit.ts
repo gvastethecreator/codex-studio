@@ -1,18 +1,36 @@
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
-import yaml from 'js-yaml';
-
-import type { StylePack } from '../components/recipes/styles/types';
 
 const defaultRootDir = process.cwd();
 
-const legacyMarkers = ['LEGACY_STYLE_PACKS', 'legacyStylesData', 'styles/packs'] as const;
+const legacyMigrationPacksRepoPath = 'scripts/style-migration/legacy-packs';
+const retiredLegacyPacksPathMarker = 'styles/packs';
+
+const legacyMarkers = [
+  'LEGACY_STYLE_PACKS',
+  'legacyStylesData',
+  retiredLegacyPacksPathMarker,
+] as const;
+const retiredRuntimeAliasMarkers = [
+  { label: 'StylePack', pattern: /\bStylePack\b/ },
+  { label: 'StylePresetDef', pattern: /\bStylePresetDef\b/ },
+  {
+    label: 'composeStylePacksFromManifests',
+    pattern: /\bcomposeStylePacksFromManifests\b/,
+  },
+] as const;
 
 const ignoredPathParts = new Set(['.git', 'dist', 'logs', 'node_modules', 'tmp']);
 
 const allowedLegacyFiles = new Set([
   'components/recipes/stylePresetManifests.test.ts',
   'scripts/split-style-preset-manifests.ts',
+  'scripts/split-style-preset-manifests.test.ts',
+  'scripts/style-authoring-source-audit.ts',
+  'scripts/style-authoring-source-audit.test.ts',
+]);
+
+const allowedRetiredRuntimeAliasFiles = new Set([
   'scripts/style-authoring-source-audit.ts',
   'scripts/style-authoring-source-audit.test.ts',
 ]);
@@ -26,10 +44,13 @@ export interface StyleAuthoringSourceAuditReport {
   scannedFiles: number;
   usages: StyleAuthoringSourceAuditUsage[];
   violations: StyleAuthoringSourceAuditUsage[];
+  retiredRuntimeAliasUsages: StyleAuthoringSourceAuditUsage[];
+  retiredRuntimeAliasViolations: StyleAuthoringSourceAuditUsage[];
   generatedTempFiles: string[];
-  legacyPresetCount: number;
+  retiredLegacyPackFiles: string[];
+  legacyMigrationPackFiles: string[];
+  unexpectedStyleYamlFiles: string[];
   manifestPresetCount: number;
-  legacyOnlyPresetIds: string[];
 }
 
 function toRepoPath(rootDir: string, filePath: string) {
@@ -44,6 +65,10 @@ function shouldScan(repoPath: string) {
 
 function isAllowedLegacyFile(repoPath: string) {
   return allowedLegacyFiles.has(repoPath);
+}
+
+function isAllowedRetiredRuntimeAliasFile(repoPath: string) {
+  return allowedRetiredRuntimeAliasFiles.has(repoPath);
 }
 
 function isGeneratedTempFile(repoPath: string) {
@@ -101,33 +126,70 @@ async function collectStylePresetManifestIds(rootDir: string) {
   return ids;
 }
 
-async function collectLegacyStylePresetIds(rootDir: string) {
+async function collectRetiredLegacyPackFiles(rootDir: string) {
   const packsDir = path.join(rootDir, 'components', 'recipes', 'styles', 'packs');
-  const ids = new Set<string>();
+  const files: string[] = [];
 
   for (const entry of await readDirIfExists(packsDir)) {
-    if (!entry.isFile() || !entry.name.endsWith('.yaml')) continue;
-    const raw = await readFile(path.join(packsDir, entry.name), 'utf8');
-    const packs = yaml.load(raw) as StylePack[] | undefined;
-    for (const pack of packs ?? []) {
-      for (const preset of pack.presets ?? []) {
-        ids.add(preset.id);
-      }
+    if (entry.isFile() && entry.name.endsWith('.yaml')) {
+      files.push(toRepoPath(rootDir, path.join(packsDir, entry.name)));
     }
   }
 
-  return ids;
+  return files.sort();
+}
+
+async function collectLegacyMigrationPackFiles(rootDir: string) {
+  const packsDir = path.join(rootDir, legacyMigrationPacksRepoPath);
+  const files: string[] = [];
+
+  for (const entry of await readDirIfExists(packsDir)) {
+    if (entry.isFile() && entry.name.endsWith('.yaml')) {
+      files.push(toRepoPath(rootDir, path.join(packsDir, entry.name)));
+    }
+  }
+
+  return files.sort();
+}
+
+async function collectUnexpectedStyleYamlFiles(rootDir: string, currentDir?: string) {
+  const stylesDir = path.join(rootDir, 'components', 'recipes', 'styles');
+  const dir = currentDir ?? stylesDir;
+  const files: string[] = [];
+
+  for (const entry of await readDirIfExists(dir)) {
+    const absolutePath = path.join(dir, entry.name);
+    const repoPath = toRepoPath(rootDir, absolutePath);
+    if (entry.isDirectory()) {
+      files.push(...(await collectUnexpectedStyleYamlFiles(rootDir, absolutePath)));
+      continue;
+    }
+    if (!entry.isFile() || !/\.ya?ml$/.test(entry.name)) continue;
+    if (!repoPath.startsWith('components/recipes/styles/manifests/')) {
+      files.push(repoPath);
+    }
+  }
+
+  return files.sort();
 }
 
 export async function createStyleAuthoringSourceAuditReport(
   rootDir = defaultRootDir,
 ): Promise<StyleAuthoringSourceAuditReport> {
   const usages: StyleAuthoringSourceAuditUsage[] = [];
+  const retiredRuntimeAliasUsages: StyleAuthoringSourceAuditUsage[] = [];
   const files = await listSourceFiles(rootDir);
   const generatedTempFiles: string[] = [];
-  const [legacyPresetIds, manifestPresetIds] = await Promise.all([
-    collectLegacyStylePresetIds(rootDir),
+  const [
+    manifestPresetIds,
+    retiredLegacyPackFiles,
+    legacyMigrationPackFiles,
+    unexpectedStyleYamlFiles,
+  ] = await Promise.all([
     collectStylePresetManifestIds(rootDir),
+    collectRetiredLegacyPackFiles(rootDir),
+    collectLegacyMigrationPackFiles(rootDir),
+    collectUnexpectedStyleYamlFiles(rootDir),
   ]);
 
   for (const absolutePath of files) {
@@ -141,18 +203,29 @@ export async function createStyleAuthoringSourceAuditReport(
     if (markers.length > 0) {
       usages.push({ filePath: repoPath, markers: [...markers] });
     }
+    const aliasMarkers = retiredRuntimeAliasMarkers
+      .filter((marker) => marker.pattern.test(source))
+      .map((marker) => marker.label);
+    if (aliasMarkers.length > 0) {
+      retiredRuntimeAliasUsages.push({ filePath: repoPath, markers: [...aliasMarkers] });
+    }
   }
+
+  const retiredRuntimeAliasViolations = retiredRuntimeAliasUsages.filter(
+    (usage) => !isAllowedRetiredRuntimeAliasFile(usage.filePath),
+  );
 
   return {
     scannedFiles: files.length,
     usages,
     violations: usages.filter((usage) => !isAllowedLegacyFile(usage.filePath)),
+    retiredRuntimeAliasUsages,
+    retiredRuntimeAliasViolations,
     generatedTempFiles,
-    legacyPresetCount: legacyPresetIds.size,
+    retiredLegacyPackFiles,
+    legacyMigrationPackFiles,
+    unexpectedStyleYamlFiles,
     manifestPresetCount: manifestPresetIds.size,
-    legacyOnlyPresetIds: [...legacyPresetIds]
-      .filter((presetId) => !manifestPresetIds.has(presetId))
-      .sort(),
   };
 }
 
@@ -162,11 +235,17 @@ if (import.meta.main) {
   console.log(
     `[styles:source] scanned=${report.scannedFiles} legacyUsages=${report.usages.length}`,
   );
-  console.log(
-    `[styles:source] legacyPresets=${report.legacyPresetCount} manifestPresets=${report.manifestPresetCount} legacyOnly=${report.legacyOnlyPresetIds.length}`,
-  );
+  console.log(`[styles:source] manifestPresets=${report.manifestPresetCount}`);
   for (const usage of report.usages) {
     console.log(`- ${usage.filePath} markers=${usage.markers.join(',')}`);
+  }
+  if (report.retiredRuntimeAliasUsages.length > 0) {
+    console.log(
+      `[styles:source] retiredRuntimeAliasUsages=${report.retiredRuntimeAliasUsages.length}`,
+    );
+    for (const usage of report.retiredRuntimeAliasUsages) {
+      console.log(`- ${usage.filePath} markers=${usage.markers.join(',')}`);
+    }
   }
 
   if (report.violations.length > 0) {
@@ -185,16 +264,50 @@ if (import.meta.main) {
     process.exitCode = 1;
   }
 
-  if (report.legacyOnlyPresetIds.length > 0) {
-    console.error(`[styles:source] legacyOnlyPresets=${report.legacyOnlyPresetIds.length}`);
+  if (report.retiredRuntimeAliasViolations.length > 0) {
     console.error(
-      report.legacyOnlyPresetIds
-        .slice(0, 20)
-        .map((presetId) => `- ${presetId}`)
-        .join('\n'),
+      `[styles:source] retiredRuntimeAliasViolations=${report.retiredRuntimeAliasViolations.length}`,
     );
+    for (const usage of report.retiredRuntimeAliasViolations) {
+      console.error(`- ${usage.filePath} markers=${usage.markers.join(',')}`);
+    }
     console.error(
-      '[styles:source] Add new presets under components/recipes/styles/manifests/presets/**, not legacy pack YAML.',
+      '[styles:source] Use StyleRuntimePack, StyleRuntimePreset, and composeStyleRuntimePacksFromManifests in new code.',
+    );
+    process.exitCode = 1;
+  }
+
+  if (report.retiredLegacyPackFiles.length > 0) {
+    console.error(`[styles:source] retiredLegacyPackFiles=${report.retiredLegacyPackFiles.length}`);
+    for (const filePath of report.retiredLegacyPackFiles) {
+      console.error(`- ${filePath}`);
+    }
+    console.error('[styles:source] Remove retired legacy pack YAML; use granular manifests.');
+    process.exitCode = 1;
+  }
+
+  if (report.legacyMigrationPackFiles.length > 0) {
+    console.error(
+      `[styles:source] legacyMigrationPackFiles=${report.legacyMigrationPackFiles.length}`,
+    );
+    for (const filePath of report.legacyMigrationPackFiles) {
+      console.error(`- ${filePath}`);
+    }
+    console.error(
+      '[styles:source] Legacy monolithic style packs are retired; keep presets in granular manifests only.',
+    );
+    process.exitCode = 1;
+  }
+
+  if (report.unexpectedStyleYamlFiles.length > 0) {
+    console.error(
+      `[styles:source] unexpectedStyleYamlFiles=${report.unexpectedStyleYamlFiles.length}`,
+    );
+    for (const filePath of report.unexpectedStyleYamlFiles) {
+      console.error(`- ${filePath}`);
+    }
+    console.error(
+      '[styles:source] Style YAML under components/recipes/styles/ must live in manifests/.',
     );
     process.exitCode = 1;
   }

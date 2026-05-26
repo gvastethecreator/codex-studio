@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vite-plus/test';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import type { GenerationBatch } from '../types';
+import type { LegacyVisualBatch } from './studioLegacyVisualBatchTypes';
 import {
   LEGACY_VISUAL_BATCH_CACHE_KEYS,
   validateLegacyVisualBatchVault,
 } from './studioLegacyVisualBatchStore';
 
-function createBatch(id: string): GenerationBatch {
+function createBatch(id: string): LegacyVisualBatch {
   return {
     id,
     workspaceId: 'default',

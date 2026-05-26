@@ -1,6 +1,7 @@
 import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { Asset, Job, Project } from '../packages/shared/src';
+import { resolveLibraryPathFromRoot } from '../apps/local-server/src/library';
 import {
   RECIPE_ASSET_EXTENSION,
   appendImagegenDenoiseDirective,
@@ -211,7 +212,12 @@ async function exists(filePath: string) {
 }
 
 async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: string) {
-  const transcriptPath = path.join(libraryDir, 'transcripts', jobId, 'events.jsonl');
+  const transcriptPath = resolveLibraryPathFromRoot(
+    libraryDir,
+    'transcripts',
+    jobId,
+    'events.jsonl',
+  );
   const codexHome = process.env.CODEX_HOME || defaultCodexHome;
   const transcript = await readFile(transcriptPath, 'utf8').catch(() => '');
   for (const line of transcript.split(/\r?\n/)) {
@@ -228,9 +234,10 @@ async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: strin
     }
   }
   await rm(sourceAssetPath, { force: true }).catch(() => {});
-  await rm(path.join(libraryDir, 'transcripts', jobId), { recursive: true, force: true }).catch(
-    () => {},
-  );
+  await rm(resolveLibraryPathFromRoot(libraryDir, 'transcripts', jobId), {
+    recursive: true,
+    force: true,
+  }).catch(() => {});
 }
 
 async function waitForJob(jobId: string) {

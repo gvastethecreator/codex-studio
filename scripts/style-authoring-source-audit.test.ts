@@ -17,11 +17,6 @@ describe('style authoring source audit', () => {
 
     await writeRepoFile(
       rootDir,
-      'scripts/split-style-preset-manifests.ts',
-      "const packsDir = 'components/recipes/styles/packs';",
-    );
-    await writeRepoFile(
-      rootDir,
       'components/recipes/StylesRecipe.tsx',
       "import { LEGACY_STYLE_PACKS } from './legacyStylesData';",
     );
@@ -30,7 +25,6 @@ describe('style authoring source audit', () => {
 
     expect(report.usages.map((usage) => usage.filePath).sort()).toEqual([
       'components/recipes/StylesRecipe.tsx',
-      'scripts/split-style-preset-manifests.ts',
     ]);
     expect(report.violations).toEqual([
       {
@@ -39,7 +33,33 @@ describe('style authoring source audit', () => {
       },
     ]);
     expect(report.generatedTempFiles).toEqual([]);
-    expect(report.legacyOnlyPresetIds).toEqual([]);
+    expect(report.legacyMigrationPackFiles).toEqual([]);
+    expect(report.unexpectedStyleYamlFiles).toEqual([]);
+    expect(report.retiredRuntimeAliasViolations).toEqual([]);
+  });
+
+  it('blocks retired runtime alias names outside the source audit seam', async () => {
+    const rootDir = path.join(tmpdir(), `style-source-runtime-alias-${Date.now()}`);
+
+    await writeRepoFile(
+      rootDir,
+      'components/recipes/StylesRecipe.tsx',
+      [
+        "import type { StylePack, StylePresetDef } from './styles/types';",
+        'const pack = {} as StylePack;',
+        'const preset = {} as StylePresetDef;',
+        'const composer = composeStylePacksFromManifests;',
+      ].join('\n'),
+    );
+
+    const report = await createStyleAuthoringSourceAuditReport(rootDir);
+
+    expect(report.retiredRuntimeAliasViolations).toEqual([
+      {
+        filePath: 'components/recipes/StylesRecipe.tsx',
+        markers: ['StylePack', 'StylePresetDef', 'composeStylePacksFromManifests'],
+      },
+    ]);
   });
 
   it('reports generated runtime check temp files as source audit failures', async () => {
@@ -64,14 +84,17 @@ describe('style authoring source audit', () => {
       'components/recipes/styleRuntimeData.generated.check.123.tmp.ts',
       'components/recipes/styleRuntimePacks.generated/pack_01.check.123.tmp.ts',
     ]);
+    expect(report.retiredLegacyPackFiles).toEqual([]);
+    expect(report.legacyMigrationPackFiles).toEqual([]);
+    expect(report.unexpectedStyleYamlFiles).toEqual([]);
   });
 
-  it('blocks presets that exist only in legacy pack YAML', async () => {
-    const rootDir = path.join(tmpdir(), `style-source-legacy-only-${Date.now()}`);
+  it('blocks remaining migration-only legacy pack YAML', async () => {
+    const rootDir = path.join(tmpdir(), `style-source-legacy-migration-${Date.now()}`);
 
     await writeRepoFile(
       rootDir,
-      'components/recipes/styles/packs/pack_01.yaml',
+      'scripts/style-migration/legacy-packs/pack_01.yaml',
       [
         '- id: pack_01',
         '  name: Pack 01',
@@ -84,6 +107,60 @@ describe('style authoring source audit', () => {
         '        lighting: soft',
       ].join('\n'),
     );
+
+    const report = await createStyleAuthoringSourceAuditReport(rootDir);
+
+    expect(report.manifestPresetCount).toBe(0);
+    expect(report.legacyMigrationPackFiles).toEqual([
+      'scripts/style-migration/legacy-packs/pack_01.yaml',
+    ]);
+    expect(report.retiredLegacyPackFiles).toEqual([]);
+    expect(report.unexpectedStyleYamlFiles).toEqual([]);
+  });
+
+  it('reports accidental usage of the retired styles/packs path', async () => {
+    const rootDir = path.join(tmpdir(), `style-source-retired-path-${Date.now()}`);
+
+    await writeRepoFile(
+      rootDir,
+      'components/recipes/StylesRecipe.tsx',
+      "const retired = 'components/recipes/styles/packs';",
+    );
+
+    const report = await createStyleAuthoringSourceAuditReport(rootDir);
+
+    expect(report.violations).toEqual([
+      {
+        filePath: 'components/recipes/StylesRecipe.tsx',
+        markers: ['styles/packs'],
+      },
+    ]);
+  });
+
+  it('blocks YAML files in the retired styles/packs directory', async () => {
+    const rootDir = path.join(tmpdir(), `style-source-retired-yaml-${Date.now()}`);
+
+    await writeRepoFile(
+      rootDir,
+      'components/recipes/styles/packs/pack_01.yaml',
+      ['- id: pack_01', '  name: Pack 01', '  description: Retired path', '  presets: []'].join(
+        '\n',
+      ),
+    );
+
+    const report = await createStyleAuthoringSourceAuditReport(rootDir);
+
+    expect(report.violations).toEqual([]);
+    expect(report.retiredLegacyPackFiles).toEqual(['components/recipes/styles/packs/pack_01.yaml']);
+    expect(report.unexpectedStyleYamlFiles).toEqual([
+      'components/recipes/styles/packs/pack_01.yaml',
+    ]);
+  });
+
+  it('blocks style YAML outside the manifest authoring tree', async () => {
+    const rootDir = path.join(tmpdir(), `style-source-loose-yaml-${Date.now()}`);
+
+    await writeRepoFile(rootDir, 'components/recipes/styles/loose.yaml', 'id: loose\n');
     await writeRepoFile(
       rootDir,
       'components/recipes/styles/manifests/presets/pack_01/SP01-001.yaml',
@@ -92,8 +169,7 @@ describe('style authoring source audit', () => {
 
     const report = await createStyleAuthoringSourceAuditReport(rootDir);
 
-    expect(report.legacyPresetCount).toBe(1);
-    expect(report.manifestPresetCount).toBe(1);
-    expect(report.legacyOnlyPresetIds).toEqual(['SP01-999']);
+    expect(report.retiredLegacyPackFiles).toEqual([]);
+    expect(report.unexpectedStyleYamlFiles).toEqual(['components/recipes/styles/loose.yaml']);
   });
 });

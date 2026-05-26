@@ -287,16 +287,10 @@ function buildStylesProviderDirectives(module: RecipeModule, params: Record<stri
     title: module.title,
     sections: [
       {
-        title: 'Identity',
-        directives: [
-          paramDirective(params, 'presetId', 'Preset ID'),
-          paramDirective(params, 'presetName', 'Preset Name'),
-          paramDirective(params, 'mode', 'Mode'),
-        ],
-      },
-      {
         title: 'Application',
         directives: [
+          paramDirective(params, 'presetName', 'Target Style'),
+          paramDirective(params, 'mode', 'Mode'),
           paramDirective(params, 'roleInstruction', 'Role Instruction'),
           paramDirective(params, 'compositionRule', 'Composition Rule'),
           paramDirective(params, 'styleEmphasis', 'Style Emphasis'),

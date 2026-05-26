@@ -23,10 +23,11 @@ describe('recipeProviderDirectives', () => {
     });
 
     expect(isRecipeProviderDirectives(directives)).toBe(true);
-    expect(serializeRecipeProviderDirectives(directives)).toContain(
-      '- Core Aesthetic: mineral glass',
-    );
-    expect(serializeRecipeProviderDirectives(directives)).not.toContain('Empty');
+    const serialized = serializeRecipeProviderDirectives(directives);
+
+    expect(serialized).toContain('- Core Aesthetic: mineral glass');
+    expect(serialized).not.toContain('Recipe Module');
+    expect(serialized).not.toContain('Empty');
   });
 
   it('rejects malformed metadata before provider compilation', () => {

@@ -18,8 +18,8 @@ graph TD
     EVENTS --> SYNC
     API --> CATALOG["/api/catalog + /library/*"]
     API --> SETTINGS["Studio Settings"]
-    API --> DB["SQLite studio.sqlite"]
-    API --> LIB["Studio Library assets/thumbnails/logs/transcripts"]
+    API --> DB["SQLite .studio/studio.sqlite"]
+    API --> LIB["Studio Library .studio + outputs"]
     API --> PROVIDERS["Provider Boundary"]
     PROVIDERS --> CODEX["Codex Product Runtime"]
     CODEX --> CX["codex app-server ws://127.0.0.1:4318"]
@@ -32,12 +32,13 @@ graph TD
 
 - `services/studioRuntime.ts`: resuelve `apiBase` y metadatos de runtime (web o desktop) sin acoplar el renderer a Electron.
 - `hooks/useStudioRuntime.ts`: agrupa sincronizacion, onboarding, diagnosticos y readiness para que el shell consuma una sola interfaz.
-- `hooks/useLocalStudioSync.ts`: hace catch-up inicial por HTTP, se suscribe a `GET /api/events`, refleja jobs/logs del backend e importa imagenes del catalogo al cache visual.
-- `services/localGenerationRun.ts`: crea jobs de Generation Task, espera estados terminales via `watchJob()`, consulta `/api/catalog?job_id=...` y devuelve un `GenerationBatch`.
+- `hooks/useLocalStudioSync.ts`: hace catch-up inicial por HTTP, se suscribe a `GET /api/events`, refleja jobs/logs del backend y refresca el catalogo sin persistir Visual Batches.
+- `services/localGenerationRun.ts`: crea jobs de Generation Task, espera estados terminales via `watchJob()`, consulta `/api/catalog?job_id=...` y devuelve datos locales derivados del catalogo. El Visual Batch legacy se construye solo en `localGenerationVisualBatchCompat`.
 - `services/localStudioService.ts`: unico adaptador HTTP de la UI hacia el backend local.
 - `services/studioEventSource.ts`: adaptador SSE compartido para jobs, assets, logs y estado de conexion.
 - `lib/studioCatalogView.ts`: read model puro de Catalog Entries. Agrupa y filtra entradas de catalogo sin importar `GenerationBatch`, cache IndexedDB ni adapters visuales.
-- `lib/studioCatalogVisualBatchAdapter.ts`: adapter transitorio que materializa Visual Batches desde `StudioCatalogView` solo en el borde de compatibilidad mientras el grid actual todavia lo necesita.
+- `lib/studioCatalogImageAdapter.ts`: materializa imagenes de UI desde Catalog Entries sin pasar por Visual Batches.
+- `lib/studioLegacyVisualSnapshotExport.ts`: construye snapshots legacy `GenerationBatch[]` solo para export compatibility.
 - `scripts/catalog-first-source-audit.ts`: Codex Automation Surface que bloquea regresiones donde `StudioCatalogView` vuelva a depender de Visual Batch o donde `useCatalog` vuelva a leer `catalog-cache`/estado global.
 - `lib/studioReadiness.ts` y `lib/studioDiagnostics.ts`: builders puros para onboarding y paneles de diagnostico.
 - `main.tsx`: entry de produccion magro. Carga `react-scan` solo en desarrollo para que diagnostics de render no entren en el bundle normal.
@@ -71,7 +72,7 @@ graph TD
 - `apps/local-server/src/codex/`: concentra lectura de Local Codex Session, catalogo de modelos, session pooling, RPC y supervision del app-server.
 - `Provider Boundary`: frontera backend donde las Generation Tasks se ejecutan con Codex primero y, cuando hay executor concreto, con adapters externos que devuelven el mismo contrato local.
 - `packages/shared/src/types.ts`: tipos compartidos para catalogo, jobs, health, session/readiness y eventos.
-- `Studio Library`: biblioteca externa configurable; por defecto vive bajo el home del usuario (por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows) y contiene `assets/`, `thumbnails/`, `references/`, `logs/`, `transcripts/` y `db/studio.sqlite`.
+- `Studio Library`: workspace externo configurable; por defecto vive bajo el home del usuario (por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows). La raiz visible contiene `.studio/` para estado interno, SQLite, logs, references y transcripts, y `outputs/` para imagenes generadas, thumbnails, exports y trash de assets.
 
 ## Flujo de Generacion
 
@@ -79,16 +80,17 @@ graph TD
 2. `useGenerationPipeline` delega en `runLocalGeneration`.
 3. `runLocalGeneration` resuelve el Recipe Module, crea una Generation Task Spec, crea uno o mas jobs persistentes y reutiliza un stream SSE compartido para esperar su estado terminal.
 4. El worker del backend ejecuta la tarea a traves del Provider Boundary. Hoy el adapter principal es Codex y ejecuta un Codex Turn contra `codex app-server`.
-5. Al completar cada job, el frontend consulta `/api/catalog` filtrando por `jobId` y materializa un `GenerationBatch` para el grid actual.
-6. `useLocalStudioSync` mantiene jobs, logs y assets frescos en la UI a traves del stream SSE y hace catch-up por HTTP cuando la conexion se cae o al iniciar.
-7. La UI sigue renderizando desde `GenerationBatch[]` en IndexedDB, mientras SQLite y el Image Catalog siguen siendo la fuente duradera de verdad.
+5. Al completar cada job, el frontend consulta `/api/catalog` filtrando por `jobId` y devuelve un resultado local derivado del catalogo. El append legacy construye un Visual Batch solo en el borde de compatibilidad.
+6. `useLocalStudioSync` mantiene jobs, logs y catalogo frescos en la UI a traves del stream SSE y hace catch-up por HTTP cuando la conexion se cae o al iniciar.
+7. La UI renderiza imagenes desde Catalog Entries en la mayoria de superficies. El Visual Batch legacy queda en memoria como compatibilidad de recovery y append generado mientras SQLite y el Image Catalog son la fuente duradera de verdad.
 
 ## Estado y Persistencia
 
 - SQLite es la fuente local de verdad para jobs, assets catalogados, libraries, projects y system logs.
-- IndexedDB sigue siendo la cache visual de la app para `catalog-cache`, `catalog-trash`, workspaces, logs de sesion y preferencias visuales.
-- El grid actual sigue usando `Visual Batches`; esos batches se derivan de Catalog Entries y no reemplazan al Catalog como indice duradero.
-- Las imagenes y thumbnails viven en disco dentro de la Studio Library y se sirven a la UI via `/library/*`.
+- IndexedDB ya no persiste el cache visual activo `GenerationBatch[]`; `catalog-cache` y `catalog-trash` quedan como claves legacy de recovery. IndexedDB sigue almacenando preferencias como `generation-config`.
+- El grid y las superficies principales leen imagenes materializadas desde Catalog Entries. Los Visual Batches restantes son compatibilidad en memoria para recovery y append generado.
+- `LegacyVisualBatchContext` no expone el snapshot completo. Solo publica ids para dedupe de recovery y acciones de compatibilidad.
+- Las imagenes y thumbnails generados viven en `outputs/` dentro de la Studio Library y se sirven a la UI via `/library/*`; el estado interno vive en `.studio/`.
 - El panel de cola mezcla jobs visuales efimeros de la UI con jobs persistentes del backend.
 - External Output Sources son candidatos o registros de salida externos. No son Catalog Entries y no habilitan delete/move/tag hasta que el import explicito copie archivos seleccionados como Local Assets dentro de la Studio Library.
 
@@ -110,4 +112,4 @@ graph TD
 - El Command Center concentra estado global y abre Demand-Mounted Surfaces para diagnosticos, settings y provider internals.
 - Style presets ya tienen manifests granulares generados desde YAML legacy; el siguiente paso es autorar nuevos presets directamente ahi y degradar los pack YAML a compat/migracion.
 - La busqueda completa del Style Preset Catalog vive en una Demand-Mounted Surface y el browser visual carga presets por pack compuesto desde chunks de categoria, para mantener el runtime inicial de Styles en un indice compacto y evitar chunks monoliticos de presets.
-- External Output Sources ya tienen deteccion read-only, registry, UI de registro y endpoint de import seleccionado hacia Local Assets. Falta la UI completa para seleccionar archivos e iniciar import desde el usuario final.
+- External Output Sources ya tienen deteccion read-only, registry, UI de registro y endpoint de import seleccionado hacia Local Assets. La importacion de imagenes debe pasar por esta frontera; los JSON legacy de workspace no son entrada de datos.

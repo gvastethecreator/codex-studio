@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import type { GenerationTaskSpec } from '../../../packages/shared/src';
+import { resolveLibraryPathFromRoot } from './library';
 
 export interface RawReference {
   name: string;
@@ -93,7 +94,7 @@ export async function processReferences(
     return { persistedRefs: [], augmentedPrompt: prompt };
   }
 
-  const referencesDir = path.join(libraryDir, 'references', jobId);
+  const referencesDir = resolveLibraryPathFromRoot(libraryDir, 'references', jobId);
   mkdirSync(referencesDir, { recursive: true });
   const existing = new Set<string>();
   const persistedRefs: ProcessedReference[] = [];

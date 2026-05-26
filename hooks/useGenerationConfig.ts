@@ -10,6 +10,7 @@ import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import useIndexedDBStorage from './useIndexedDBStorage';
 import { normalizeImageGenRatio } from '../utils/imageGenSizing';
 import { formatErrorMessage } from '../utils/runtimeLogger';
+import { resolveStudioApiBase } from '../services/studioRuntime';
 
 interface UseGenerationConfigProps {
   log: (message: string) => void;
@@ -21,12 +22,10 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     DEFAULT_GENERATION_CONFIG,
   );
 
-  // Dynamic Limit Calculation based on User Request
   const maxAttachments = useMemo(() => {
     return 5;
   }, []);
 
-  // Trim attachments if model changes and limit is exceeded
   useEffect(() => {
     if (generationConfig.attachments.length > maxAttachments) {
       setGenerationConfig((prev) => ({
@@ -181,6 +180,11 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
           log(`Cannot add to context. Maximum limit reached.`);
           return prev;
         }
+
+        const dataUrl = image.src.startsWith('data:')
+          ? image.src
+          : `${resolveStudioApiBase()}${image.src}`;
+
         return {
           ...prev,
           attachments: [
@@ -188,7 +192,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
             {
               id: `gen-${image.id}-${Date.now()}`,
               name: 'Generated Image',
-              dataUrl: image.src,
+              dataUrl,
               strength: 0.25,
             },
           ],
@@ -208,6 +212,6 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     handlePastedFiles,
     handleRemoveAttachment,
     handleAddToContext,
-    maxAttachments, // Exported for UI indicators
+    maxAttachments,
   };
 };

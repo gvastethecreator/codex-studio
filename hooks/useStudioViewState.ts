@@ -1,20 +1,12 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import type { Attachment, AspectRatio } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
 
 interface UseStudioViewStateProps {
-  visualGroupCount: number;
-  downloadAndClearWorkspace: () => Promise<boolean>;
   closeOverlay: () => void;
 }
 
-/**
- * Manage local Studio view state (queue, editor, dashboard, trash, limit and
- * toolbar visibility) so AppContent does not own each toggle directly.
- */
 export function useStudioViewState({
-  visualGroupCount,
-  downloadAndClearWorkspace,
   closeOverlay,
 }: UseStudioViewStateProps) {
   const [isQueueOpen, setIsQueueOpen] = useState(true);
@@ -24,14 +16,6 @@ export function useStudioViewState({
   const [isDashboardModalOpen, setIsDashboardModalOpen] = useState(false);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [isTrashModalOpen, setIsTrashModalOpen] = useState(false);
-  const [isLimitModalOpen, setIsLimitModalOpen] = useState(false);
-  const [hasDismissedLimitModal, setHasDismissedLimitModal] = useState(false);
-
-  useEffect(() => {
-    if (visualGroupCount > 100 && !hasDismissedLimitModal && !isLimitModalOpen) {
-      setIsLimitModalOpen(true);
-    }
-  }, [hasDismissedLimitModal, isLimitModalOpen, visualGroupCount]);
 
   const openDashboard = useCallback(() => {
     startViewTransition(() => setIsDashboardModalOpen(true));
@@ -73,18 +57,9 @@ export function useStudioViewState({
     });
   }, [closeOverlay]);
 
-  const dismissLimitModal = useCallback(() => {
-    setIsLimitModalOpen(false);
-    setHasDismissedLimitModal(true);
-  }, []);
-
   const handleDownloadAndClear = useCallback(async () => {
-    const didClear = await downloadAndClearWorkspace();
-    if (!didClear) return;
-
-    setIsLimitModalOpen(false);
-    setHasDismissedLimitModal(true);
-  }, [downloadAndClearWorkspace]);
+    return false;
+  }, []);
 
   const resetViewState = useCallback(() => {
     setIsQueueOpen(true);
@@ -94,8 +69,6 @@ export function useStudioViewState({
     setIsDashboardModalOpen(false);
     setIsSettingsModalOpen(false);
     setIsTrashModalOpen(false);
-    setIsLimitModalOpen(false);
-    setHasDismissedLimitModal(false);
   }, []);
 
   return {
@@ -116,10 +89,8 @@ export function useStudioViewState({
     isTrashModalOpen,
     openTrash,
     closeTrash,
-    isLimitModalOpen,
     openEditor,
     closeEditor,
-    dismissLimitModal,
     handleDownloadAndClear,
     resetViewState,
   };

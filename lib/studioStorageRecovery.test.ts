@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import type { GenerationBatch } from '../types';
 import { LEGACY_VISUAL_BATCH_CACHE_KEYS } from './studioLegacyVisualBatchStore';
-import { collectRecoverableBatches } from './studioStorageRecovery';
+import type { LegacyVisualBatch } from './studioLegacyVisualSnapshotImport';
+import { collectRecoverableLegacyVisualSnapshot } from './studioStorageRecovery';
 
-function createBatch(id: string): GenerationBatch {
+function createBatch(id: string): LegacyVisualBatch {
   return {
     id,
     workspaceId: 'default',
@@ -22,9 +22,9 @@ function createBatch(id: string): GenerationBatch {
   };
 }
 
-describe('collectRecoverableBatches', () => {
+describe('collectRecoverableLegacyVisualSnapshot', () => {
   it('collects recoverable Visual Batches from IndexedDB and localStorage payloads', () => {
-    const recovered = collectRecoverableBatches({
+    const recovered = collectRecoverableLegacyVisualSnapshot({
       idbEntries: [
         { key: 'orphaned-batch', value: createBatch('idb-batch') },
         { key: LEGACY_VISUAL_BATCH_CACHE_KEYS[0], value: [createBatch('ignored-cache')] },
@@ -41,7 +41,7 @@ describe('collectRecoverableBatches', () => {
   it('filters existing batch ids and deduplicates repeated recoveries', () => {
     const repeated = createBatch('repeated');
 
-    const recovered = collectRecoverableBatches({
+    const recovered = collectRecoverableLegacyVisualSnapshot({
       idbEntries: [
         { key: 'one', value: repeated },
         { key: 'two', value: repeated },

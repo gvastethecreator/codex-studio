@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 
 import type { StudioQueueResultPreview } from '../../lib/studioQueueResults';
@@ -8,82 +8,73 @@ import type { QueueJob } from '../../types';
 import { QueuePanel } from '../QueuePanel';
 
 export interface StudioOperationsRailProps {
-    isModalOpen: boolean;
-    isQueueOpen: boolean;
-    setIsQueueOpen: React.Dispatch<React.SetStateAction<boolean>>;
-    jobs: QueueJob[];
-    queueResults: StudioQueueResultPreview[];
-    studioJobs: StudioJob[];
-    selectedStudioJobId: string | null;
-    retry: (jobId: string) => void;
-    cancelJob: (jobId: string) => void;
-    cancelPersistentJob: (jobId: string) => void;
-    removeJob: (jobId: string) => void;
-    clearCompleted: () => void;
-    isResting: boolean;
-    exportWorkspaceSnapshot: () => void;
-    handleImportVault: (event: React.ChangeEvent<HTMLInputElement>) => void | Promise<void>;
-    isBackgroundEnabled: boolean;
-    setBackgroundEnabled: (enabled: boolean) => void;
-    activeServerJobCount: number;
-    onInspectJob: (jobId: string) => void;
-    diagnostics: StudioDiagnosticsSnapshot;
-    onResetStudio: () => void | Promise<void>;
-    isResettingStudio: boolean;
+  isModalOpen: boolean;
+  isQueueOpen: boolean;
+  setIsQueueOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  jobs: QueueJob[];
+  queueResults: StudioQueueResultPreview[];
+  studioJobs: StudioJob[];
+  selectedStudioJobId: string | null;
+  retry: (jobId: string) => void;
+  cancelJob: (jobId: string) => void;
+  cancelPersistentJob: (jobId: string) => void;
+  removeJob: (jobId: string) => void;
+  clearCompleted: () => void;
+  isResting: boolean;
+  exportWorkspaceSnapshot: () => void;
+  isBackgroundEnabled: boolean;
+  setBackgroundEnabled: (enabled: boolean) => void;
+  activeServerJobCount: number;
+  onInspectJob: (jobId: string) => void;
+  diagnostics: StudioDiagnosticsSnapshot;
+  onResetStudio: () => void | Promise<void>;
+  isResettingStudio: boolean;
 }
 
 export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
-    isModalOpen,
-    isQueueOpen,
-    setIsQueueOpen,
-    jobs,
-    queueResults,
-    studioJobs,
-    selectedStudioJobId,
-    retry,
-    cancelJob,
-    cancelPersistentJob,
-    removeJob,
-    clearCompleted,
-    isResting,
-    onInspectJob,
+  isModalOpen,
+  isQueueOpen,
+  jobs,
+  queueResults,
+  studioJobs,
+  selectedStudioJobId,
+  retry,
+  cancelJob,
+  cancelPersistentJob,
+  removeJob,
+  clearCompleted,
+  isResting,
+  onInspectJob,
 }) => {
-    const handleToggleQueue = useCallback(() => {
-        setIsQueueOpen((previous) => !previous);
-    }, [setIsQueueOpen]);
+  if (isModalOpen) {
+    return null;
+  }
 
-    if (isModalOpen) {
-        return null;
-    }
-
-    return (
-        <div className="flex h-full">
-            <AnimatePresence>
-                {isQueueOpen && (
-                    <motion.div
-                        initial={{ width: 0, opacity: 0 }}
-                        animate={{ width: 320, opacity: 1 }}
-                        exit={{ width: 0, opacity: 0 }}
-                        transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                        className="h-full overflow-hidden"
-                    >
-                        <QueuePanel
-                            jobs={jobs}
-                            results={queueResults}
-                            serverJobs={studioJobs}
-                            selectedJobId={selectedStudioJobId}
-                            onRetry={retry}
-                            onCancel={cancelJob}
-                            onCancelServerJob={cancelPersistentJob}
-                            onRemove={removeJob}
-                            onClearCompleted={clearCompleted}
-                            onInspectJob={onInspectJob}
-                            onClose={handleToggleQueue}
-                            isResting={isResting}
-                        />
-                    </motion.div>
-                )}
-            </AnimatePresence>
-        </div>
-    );
+  return (
+    <AnimatePresence initial={false}>
+      {isQueueOpen ? (
+        <motion.div
+          initial={{ width: 0, opacity: 0 }}
+          animate={{ width: 320, opacity: 1 }}
+          exit={{ width: 0, opacity: 0 }}
+          transition={{ type: 'spring', stiffness: 320, damping: 32 }}
+          className="flex h-full shrink-0 overflow-hidden"
+        >
+          <QueuePanel
+            jobs={jobs}
+            results={queueResults}
+            serverJobs={studioJobs}
+            selectedJobId={selectedStudioJobId}
+            onRetry={retry}
+            onCancel={cancelJob}
+            onCancelServerJob={cancelPersistentJob}
+            onRemove={removeJob}
+            onClearCompleted={clearCompleted}
+            onInspectJob={onInspectJob}
+            isResting={isResting}
+          />
+        </motion.div>
+      ) : null}
+    </AnimatePresence>
+  );
 };

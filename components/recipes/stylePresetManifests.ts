@@ -1,10 +1,12 @@
 import type {
-  StylePack,
   StylePackManifest,
-  StylePresetDef,
   StylePresetEditorialTaxonomy,
   StylePresetManifest,
-} from './styles/types';
+} from './styles/manifestTypes';
+import type {
+  StyleRuntimePack,
+  StyleRuntimePreset,
+} from './styles/runtimeTypes';
 
 export interface StyleManifestGraphValidation {
   valid: boolean;
@@ -122,7 +124,7 @@ export function toStylePresetManifestRef(packId: string, presetId: string) {
   return `${packId}/${presetId}.yaml`;
 }
 
-function createAttributes(preset: StylePresetDef) {
+function createAttributes(preset: StyleRuntimePreset) {
   const attributes = {
     ...(preset.negativePrompt ? { negativePrompt: preset.negativePrompt } : {}),
     ...(preset.camera !== undefined ? { camera: preset.camera } : {}),
@@ -171,7 +173,7 @@ function createEditorialTaxonomy({
   };
 }
 
-export function createStylePresetManifests(packs: StylePack[]): StylePresetManifest[] {
+export function createStylePresetManifests(packs: StyleRuntimePack[]): StylePresetManifest[] {
   return packs.flatMap((pack) =>
     pack.presets.map((preset) => {
       const category = normalizeCategory(preset.category);
@@ -214,7 +216,7 @@ export function createStylePresetManifests(packs: StylePack[]): StylePresetManif
   );
 }
 
-export function createStylePackManifests(packs: StylePack[]): StylePackManifest[] {
+export function createStylePackManifests(packs: StyleRuntimePack[]): StylePackManifest[] {
   return packs.map((pack) => {
     const refsByCategory = new Map<string, string[]>();
 
@@ -437,10 +439,10 @@ export function validateStyleManifestGraph(
   return { valid: errors.length === 0, errors };
 }
 
-export function composeStylePacksFromManifests(
+export function composeStyleRuntimePacksFromManifests(
   packManifests: StylePackManifest[],
   presetManifests: StylePresetManifest[],
-): StylePack[] {
+): StyleRuntimePack[] {
   const presetsByRef = new Map(
     presetManifests.map((preset) => [toStylePresetManifestRef(preset.packId, preset.id), preset]),
   );
@@ -449,7 +451,7 @@ export function composeStylePacksFromManifests(
     id: pack.id,
     name: pack.name,
     description: pack.description,
-    presets: pack.presetRefs.flatMap((ref): StylePresetDef[] => {
+    presets: pack.presetRefs.flatMap((ref): StyleRuntimePreset[] => {
       const preset = presetsByRef.get(ref);
       if (!preset) return [];
 

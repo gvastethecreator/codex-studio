@@ -139,7 +139,7 @@ Los comandos de calidad y build (`fmt`, `lint`, `check`, `test`, `build`, `valid
 
 ### Style preset manifests
 
-Los packs legacy siguen en `components/recipes/styles/packs/*.yaml` como entrada de migracion/compatibilidad, pero ya no tienen un modulo runtime importable. El loader principal consume la estructura granular:
+Los packs legacy siguen en `components/recipes/styles/legacy-migration/packs/*.yaml` como entrada de migracion/compatibilidad, pero ya no tienen un modulo runtime importable. El loader principal consume la estructura granular:
 
 - `components/recipes/styles/manifests/packs/*.yaml` — Style Pack Manifests livianos, categorias y referencias.
 - `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` — Style Preset Manifests editables uno por archivo.

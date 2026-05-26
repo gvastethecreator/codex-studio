@@ -90,9 +90,6 @@ describe('buildStudioOverlayController', () => {
         onClearSelectedJob: () => calls.push('clearSelectedJob'),
       },
       vault: {
-        handleImportVault: () => {
-          calls.push('importVault');
-        },
         handleExportWorkspaceSnapshot: () => {
           calls.push('exportWorkspaceSnapshot');
         },
@@ -167,29 +164,7 @@ describe('buildStudioOverlayController', () => {
         isResettingStudio: false,
       },
       workspace: {
-        catalogVisualBatches: [
-          {
-            id: 'batch-1',
-            workspaceId: 'default',
-            config: DEFAULT_GENERATION_CONFIG,
-            images: [],
-            createdAt: 1,
-          },
-          {
-            id: 'batch-2',
-            workspaceId: 'default',
-            config: DEFAULT_GENERATION_CONFIG,
-            images: [],
-            createdAt: 2,
-          },
-          {
-            id: 'batch-3',
-            workspaceId: 'default',
-            config: DEFAULT_GENERATION_CONFIG,
-            images: [],
-            createdAt: 3,
-          },
-        ],
+        catalogVisualGroupCount: 3,
         workspaces: [{ id: 'default', name: 'Default', createdAt: 1 }],
         trash: [
           {
@@ -212,11 +187,6 @@ describe('buildStudioOverlayController', () => {
         restoreFromTrash: (batchId) => calls.push(`restore:${batchId}`),
         isTrashModalOpen: true,
         closeTrash: () => calls.push('closeTrash'),
-        isLimitModalOpen: true,
-        dismissLimitModal: () => calls.push('dismissLimit'),
-        handleDownloadAndClear: () => {
-          calls.push('downloadAndClear');
-        },
       },
       workspaceActions: {
         requestRestoreAllTrash: (count) => calls.push(`restoreAll:${count}`),
@@ -241,7 +211,6 @@ describe('buildStudioOverlayController', () => {
 
     expect(controller.systemOverlays.imagesCount).toBe(2);
     expect(controller.systemOverlays.visualGroupsCount).toBe(3);
-    expect(controller.workspaceOverlays.visualGroupCount).toBe(3);
 
     controller.systemOverlays.closeOnboarding();
     controller.systemOverlays.completeOnboarding();

@@ -15,7 +15,9 @@ function readMetadataString(job: Pick<Job, 'sourceSpec'>, key: string) {
   return trimmed ? trimmed : null;
 }
 
-export function resolveJobCatalogContext(job: Pick<Job, 'projectId' | 'sourceSpec'>): JobCatalogContext {
+export function resolveJobCatalogContext(
+  job: Pick<Job, 'projectId' | 'sourceSpec'>,
+): JobCatalogContext {
   return {
     workspaceId: readMetadataString(job, 'workspaceId') ?? job.projectId,
     batchId: readMetadataString(job, 'batchId'),

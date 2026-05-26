@@ -21,7 +21,7 @@ import { createDefaultDbStore, type StudioDbStore } from './dbStore';
 import { getSettingValue, setSettingValue } from './db';
 import { publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
-import { inspectLibrary, resolveLibraryPath } from './library';
+import { inspectLibrary, resolvePublicLibraryPath } from './library';
 import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from './libraries';
 import { log } from './logger';
 import {
@@ -105,7 +105,8 @@ export async function createStudioApp(
     setSetting: setSettingValue,
   };
   const workerController =
-    options.dependencies?.worker ?? (await import('./worker')).getDefaultWorkerController(appLogger);
+    options.dependencies?.worker ??
+    (await import('./worker')).getDefaultWorkerController(appLogger);
   const catalogCommands = createCatalogCommands({
     updateCatalogImage,
     softDeleteCatalogImage,
@@ -548,7 +549,7 @@ export async function createStudioApp(
     const encoded = c.req.path.replace('/library/', '');
     const relative = decodeURIComponent(encoded);
     if (relative.includes('..')) return c.notFound();
-    const filePath = resolveLibraryPath(...relative.split('/'));
+    const filePath = resolvePublicLibraryPath(relative);
     if (!existsSync(filePath)) return c.notFound();
     const ext = path.extname(filePath).toLowerCase();
     const contentType =

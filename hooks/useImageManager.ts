@@ -1,5 +1,5 @@
 import { useState, useCallback, useMemo } from 'react';
-import type { GeneratedImage, GenerationBatch, GeneratedImageWithConfig } from '../types';
+import type { GeneratedImage, GeneratedImageWithConfig } from '../types';
 
 import { startViewTransition } from '../utils/transitionUtils';
 
@@ -7,7 +7,6 @@ interface UseImageManagerProps {
   log: (message: string) => void;
   handleCloseModal: () => void;
   modalImage?: GeneratedImageWithConfig | null;
-  legacyVisualBatches?: GenerationBatch[];
   images?: GeneratedImage[];
   deleteImage: (imageId: string) => void;
   deleteImages: (imageIds: string[]) => void;
@@ -25,7 +24,6 @@ export const useImageManager = ({
   log,
   handleCloseModal,
   modalImage,
-  legacyVisualBatches = [],
   images,
   deleteImage,
   deleteImages,
@@ -35,13 +33,9 @@ export const useImageManager = ({
 }: UseImageManagerProps) => {
   const [selectedImageIds, setSelectedImageIds] = useState<string[]>([]);
 
-  // OPTIMIZATION: Memoize allImages to prevent new references on every render
   const allImages = useMemo(() => {
-    if (images) {
-      return images;
-    }
-    return legacyVisualBatches.flatMap((b) => b.images);
-  }, [legacyVisualBatches, images]);
+    return images ?? [];
+  }, [images]);
 
   const handleSelectionChange = useCallback((id: string, selected: boolean) => {
     startViewTransition(() => {

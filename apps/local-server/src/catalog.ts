@@ -3,7 +3,7 @@ import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { getDb } from './db';
 import { getDefaultLibrary, getLibrary } from './libraries';
-import { toPublicAssetUrl } from './library';
+import { resolveLibraryPathFromRoot, toPublicAssetUrl } from './library';
 import { buildCatalogWorkspaceClause } from './catalogWorkspaceClause';
 
 export interface CatalogImage {
@@ -230,7 +230,8 @@ export function updateCatalogImage(
 export function softDeleteCatalogImage(id: string) {
   const image = getCatalogImage(id);
   if (!image || image.isDeleted) return image;
-  const trashDir = path.join(path.dirname(path.dirname(image.filePath)), '.trash', 'assets');
+  const library = getLibrary(image.libraryId) ?? getDefaultLibrary();
+  const trashDir = resolveLibraryPathFromRoot(library.path, '.trash', 'assets');
   mkdirSync(trashDir, { recursive: true });
   const trashedPath = path.join(trashDir, `${id}-${path.basename(image.filePath)}`);
   if (existsSync(image.filePath)) {
@@ -248,7 +249,7 @@ export function restoreCatalogImage(id: string) {
   const image = getCatalogImage(id);
   if (!image || !image.isDeleted) return image;
   const library = getLibrary(image.libraryId) ?? getDefaultLibrary();
-  const assetsDir = path.join(library.path, 'assets');
+  const assetsDir = resolveLibraryPathFromRoot(library.path, 'assets');
   mkdirSync(assetsDir, { recursive: true });
   const restoredPath = path.join(assetsDir, path.basename(image.filePath).replace(`${id}-`, ''));
   if (existsSync(image.filePath)) {

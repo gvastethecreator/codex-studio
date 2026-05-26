@@ -4,12 +4,18 @@ import type { GenerationProviderId } from './generationContracts';
 export const EDITABLE_STUDIO_SETTINGS_VERSION = 'editable-studio-settings/v1' as const;
 
 export type StudioOutputMode = 'studio_library' | 'external_source';
+export type StudioOutputSubfolderToken = 'date' | 'provider' | 'model' | 'recipe';
 
 export interface ProviderDefaultSettings {
   providerId: GenerationProviderId;
   model: string | null;
   reasoningEffort: string | null;
   serviceTier: Exclude<CodexServiceTier, 'standard'> | null;
+}
+
+export interface StudioOutputOrganizationSettings {
+  subfolderTokens: StudioOutputSubfolderToken[];
+  fileNameTemplate: string;
 }
 
 export interface EditableStudioSettings {
@@ -20,6 +26,7 @@ export interface EditableStudioSettings {
   commandCenterCompactMode: boolean;
   preferredLibraryId: string | null;
   preferredOutputPath: string | null;
+  outputOrganization: StudioOutputOrganizationSettings;
   providerDefaults: Record<string, ProviderDefaultSettings>;
   updatedAt: string | null;
 }
@@ -36,6 +43,7 @@ export interface EditableStudioSettingsPatch {
   commandCenterCompactMode?: boolean;
   preferredLibraryId?: string | null;
   preferredOutputPath?: string | null;
+  outputOrganization?: Partial<StudioOutputOrganizationSettings> | null;
   providerDefaults?: EditableProviderDefaultsPatch;
 }
 
@@ -61,6 +69,34 @@ function cleanServiceTier(value: unknown): Exclude<CodexServiceTier, 'standard'>
   return value === 'fast' || value === 'flex' ? value : null;
 }
 
+function cleanSubfolderTokens(value: unknown): StudioOutputSubfolderToken[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  const allowed = new Set<StudioOutputSubfolderToken>(['date', 'provider', 'model', 'recipe']);
+  const tokens = value.filter((item): item is StudioOutputSubfolderToken => allowed.has(item));
+  return tokens.filter((token, index) => tokens.indexOf(token) === index).slice(0, 4);
+}
+
+function cleanFileNameTemplate(value: unknown) {
+  const template = cleanString(value);
+  if (!template) return undefined;
+  return template.replace(/[<>:"/\\|?*\x00-\x1f]+/g, '-').slice(0, 120);
+}
+
+function sanitizeOutputOrganizationPatch(
+  value: unknown,
+): Partial<StudioOutputOrganizationSettings> | undefined {
+  if (!isRecord(value)) return undefined;
+
+  const patch: Partial<StudioOutputOrganizationSettings> = {};
+  const subfolderTokens = cleanSubfolderTokens(value.subfolderTokens);
+  const fileNameTemplate = cleanFileNameTemplate(value.fileNameTemplate);
+
+  if (subfolderTokens) patch.subfolderTokens = subfolderTokens;
+  if (fileNameTemplate) patch.fileNameTemplate = fileNameTemplate;
+
+  return Object.keys(patch).length > 0 ? patch : undefined;
+}
+
 function sanitizeProviderDefaultsPatch(value: unknown): EditableProviderDefaultsPatch | undefined {
   if (!isRecord(value)) return undefined;
 
@@ -78,7 +114,8 @@ function sanitizeProviderDefaultsPatch(value: unknown): EditableProviderDefaults
     if (!isRecord(rawDefault)) continue;
 
     const providerPatch: Partial<ProviderDefaultSettings> = {};
-    const providerId = cleanProviderId(rawDefault.providerId) ?? (providerKey as GenerationProviderId);
+    const providerId =
+      cleanProviderId(rawDefault.providerId) ?? (providerKey as GenerationProviderId);
     providerPatch.providerId = providerId;
 
     const model = cleanString(rawDefault.model);
@@ -106,6 +143,10 @@ export function createDefaultEditableStudioSettings(): EditableStudioSettings {
     commandCenterCompactMode: false,
     preferredLibraryId: null,
     preferredOutputPath: null,
+    outputOrganization: {
+      subfolderTokens: ['date', 'provider', 'recipe'],
+      fileNameTemplate: '{timestamp}-{provider}-{jobId}',
+    },
     providerDefaults: {
       codex: {
         providerId: 'codex',
@@ -118,9 +159,7 @@ export function createDefaultEditableStudioSettings(): EditableStudioSettings {
   };
 }
 
-export function sanitizeEditableStudioSettingsPatch(
-  value: unknown,
-): EditableStudioSettingsPatch {
+export function sanitizeEditableStudioSettingsPatch(value: unknown): EditableStudioSettingsPatch {
   if (!isRecord(value)) return {};
 
   const patch: EditableStudioSettingsPatch = {};
@@ -139,6 +178,7 @@ export function sanitizeEditableStudioSettingsPatch(
         : cleanString(value.preferredOutputPath)
       : undefined;
   const providerDefaults = sanitizeProviderDefaultsPatch(value.providerDefaults);
+  const outputOrganization = sanitizeOutputOrganizationPatch(value.outputOrganization);
 
   if (defaultProviderId) patch.defaultProviderId = defaultProviderId;
   if (defaultOutputMode) patch.defaultOutputMode = defaultOutputMode;
@@ -150,6 +190,7 @@ export function sanitizeEditableStudioSettingsPatch(
   }
   if (preferredLibraryId !== undefined) patch.preferredLibraryId = preferredLibraryId;
   if (preferredOutputPath !== undefined) patch.preferredOutputPath = preferredOutputPath;
+  if (outputOrganization) patch.outputOrganization = outputOrganization;
   if (providerDefaults) patch.providerDefaults = providerDefaults;
 
   return patch;
@@ -203,10 +244,8 @@ export function mergeEditableStudioSettingsPatch(
     schemaVersion: EDITABLE_STUDIO_SETTINGS_VERSION,
     defaultProviderId: patch.defaultProviderId ?? current.defaultProviderId,
     defaultOutputMode: patch.defaultOutputMode ?? current.defaultOutputMode,
-    autoDetectOutputSources:
-      patch.autoDetectOutputSources ?? current.autoDetectOutputSources,
-    commandCenterCompactMode:
-      patch.commandCenterCompactMode ?? current.commandCenterCompactMode,
+    autoDetectOutputSources: patch.autoDetectOutputSources ?? current.autoDetectOutputSources,
+    commandCenterCompactMode: patch.commandCenterCompactMode ?? current.commandCenterCompactMode,
     preferredLibraryId:
       patch.preferredLibraryId !== undefined
         ? patch.preferredLibraryId
@@ -215,6 +254,12 @@ export function mergeEditableStudioSettingsPatch(
       patch.preferredOutputPath !== undefined
         ? patch.preferredOutputPath
         : current.preferredOutputPath,
+    outputOrganization: {
+      subfolderTokens:
+        patch.outputOrganization?.subfolderTokens ?? current.outputOrganization.subfolderTokens,
+      fileNameTemplate:
+        patch.outputOrganization?.fileNameTemplate ?? current.outputOrganization.fileNameTemplate,
+    },
     providerDefaults,
     updatedAt,
   };

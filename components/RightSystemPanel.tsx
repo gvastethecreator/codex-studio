@@ -1,8 +1,7 @@
-import React, { useMemo, useRef } from "react";
+import React, { useMemo } from 'react';
 import {
   Cpu,
   Database,
-  FolderSync,
   Layers,
   LoaderCircle,
   RotateCcw,
@@ -11,11 +10,11 @@ import {
   ShieldCheck,
   Sparkles,
   Terminal,
-} from "lucide-react";
+} from 'lucide-react';
 import type { StudioDiagnosticsSnapshot, StudioRuntimeStatusItem } from '../lib/studioDiagnostics';
-import { SidePanel } from "./SidePanel";
+import { SidePanel } from './SidePanel';
 
-type StatusTone = "success" | "warning" | "danger";
+type StatusTone = 'success' | 'warning' | 'danger';
 
 interface StatusItem {
   label: string;
@@ -26,7 +25,6 @@ interface StatusItem {
 }
 
 interface RightSystemPanelProps {
-  onImportVault: (e: React.ChangeEvent<HTMLInputElement>) => void | Promise<void>;
   onExportWorkspaceSnapshot: () => void;
   isBackgroundEnabled: boolean;
   onToggleBackground: () => void;
@@ -38,7 +36,10 @@ interface RightSystemPanelProps {
   isResettingStudio: boolean;
 }
 
-const STATUS_ICONS: Record<StudioRuntimeStatusItem['key'], React.ComponentType<{ size?: number; className?: string }>> = {
+const STATUS_ICONS: Record<
+  StudioRuntimeStatusItem['key'],
+  React.ComponentType<{ size?: number; className?: string }>
+> = {
   backend: Server,
   codexCli: Terminal,
   appServer: Cpu,
@@ -47,16 +48,16 @@ const STATUS_ICONS: Record<StudioRuntimeStatusItem['key'], React.ComponentType<{
 
 const STATUS_TONE_STYLES: Record<StatusTone, { dot: string; value: string }> = {
   success: {
-    dot: "bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.45)]",
-    value: "text-emerald-300",
+    dot: 'bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.45)]',
+    value: 'text-emerald-300',
   },
   warning: {
-    dot: "bg-amber-400 shadow-[0_0_10px_rgba(251,191,36,0.45)]",
-    value: "text-amber-300",
+    dot: 'bg-amber-400 shadow-[0_0_10px_rgba(251,191,36,0.45)]',
+    value: 'text-amber-300',
   },
   danger: {
-    dot: "bg-rose-400 shadow-[0_0_10px_rgba(251,113,133,0.45)]",
-    value: "text-rose-300",
+    dot: 'bg-rose-400 shadow-[0_0_10px_rgba(251,113,133,0.45)]',
+    value: 'text-rose-300',
   },
 };
 
@@ -74,7 +75,9 @@ function StatusCard({ label, value, detail, tone, icon: Icon }: StatusItem) {
             <p className="text-[10px] font-black uppercase tracking-[0.24em] text-zinc-500">
               {label}
             </p>
-            <p className={`mt-1 text-[11px] font-black uppercase tracking-widest ${toneStyles.value}`}>
+            <p
+              className={`mt-1 text-[11px] font-black uppercase tracking-widest ${toneStyles.value}`}
+            >
               {value}
             </p>
           </div>
@@ -88,7 +91,6 @@ function StatusCard({ label, value, detail, tone, icon: Icon }: StatusItem) {
 
 export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
   ({
-    onImportVault,
     onExportWorkspaceSnapshot,
     isBackgroundEnabled,
     onToggleBackground,
@@ -99,7 +101,6 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
     onResetStudio,
     isResettingStudio,
   }) => {
-    const vaultInputRef = useRef<HTMLInputElement>(null);
     const statusItems = useMemo<StatusItem[]>(() => {
       return diagnostics.statusItems.map((item) => ({
         ...item,
@@ -115,28 +116,9 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
               Workspace Snapshot
             </h3>
             <p className="mb-3 px-1 text-[11px] leading-relaxed text-zinc-500">
-              Import or export the current visual workspace as JSON. This does not back up the full local library stored on disk.
+              Export current workspace metadata as JSON. Image files stay in local library storage.
             </p>
             <div className="flex flex-col gap-2">
-              <input
-                type="file"
-                ref={vaultInputRef}
-                onChange={onImportVault}
-                className="hidden"
-                accept=".json"
-              />
-              <button
-                onClick={() => vaultInputRef.current?.click()}
-                className="group flex h-10 w-full items-center gap-3 rounded-xl bg-white/5 px-4 transition-all hover:bg-white/10"
-              >
-                <FolderSync
-                  size={16}
-                  className="text-zinc-500 transition-colors group-hover:text-white"
-                />
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300 group-hover:text-white">
-                  Import Snapshot
-                </span>
-              </button>
               <button
                 onClick={onExportWorkspaceSnapshot}
                 className="group flex h-10 w-full items-center gap-3 rounded-xl bg-white/5 px-4 transition-all hover:bg-white/10"
@@ -174,12 +156,12 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
 
             <button
               onClick={onToggleQueue}
-              className={`group mb-2 flex h-10 w-full items-center justify-between rounded-xl px-4 transition-all ${isQueueOpen ? "border border-accent-500/20 bg-accent-500/10" : "bg-white/5 hover:bg-white/10"}`}
+              className={`group mb-2 flex h-10 w-full items-center justify-between rounded-xl px-4 transition-all ${isQueueOpen ? 'border border-accent-500/20 bg-accent-500/10' : 'bg-white/5 hover:bg-white/10'}`}
             >
               <div className="flex items-center gap-3">
-                <Layers size={16} className={isQueueOpen ? "text-accent-400" : "text-zinc-500"} />
+                <Layers size={16} className={isQueueOpen ? 'text-accent-400' : 'text-zinc-500'} />
                 <span
-                  className={`text-[10px] font-black uppercase tracking-widest ${isQueueOpen ? "text-accent-400" : "text-zinc-300"}`}
+                  className={`text-[10px] font-black uppercase tracking-widest ${isQueueOpen ? 'text-accent-400' : 'text-zinc-300'}`}
                 >
                   Generation Queue
                 </span>
@@ -189,28 +171,28 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                   <span className="text-[10px] font-bold text-accent-400">{queueCount}</span>
                 )}
                 <div
-                  className={`h-2 w-2 rounded-full ${isQueueOpen ? "bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.8)]" : "bg-zinc-700"}`}
+                  className={`h-2 w-2 rounded-full ${isQueueOpen ? 'bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.8)]' : 'bg-zinc-700'}`}
                 />
               </div>
             </button>
 
             <button
               onClick={onToggleBackground}
-              className={`group mb-4 flex h-10 w-full items-center justify-between rounded-xl px-4 transition-all ${isBackgroundEnabled ? "border border-accent-500/20 bg-accent-500/10" : "bg-white/5 hover:bg-white/10"}`}
+              className={`group mb-4 flex h-10 w-full items-center justify-between rounded-xl px-4 transition-all ${isBackgroundEnabled ? 'border border-accent-500/20 bg-accent-500/10' : 'bg-white/5 hover:bg-white/10'}`}
             >
               <div className="flex items-center gap-3">
                 <Sparkles
                   size={16}
-                  className={isBackgroundEnabled ? "text-accent-400" : "text-zinc-500"}
+                  className={isBackgroundEnabled ? 'text-accent-400' : 'text-zinc-500'}
                 />
                 <span
-                  className={`text-[10px] font-black uppercase tracking-widest ${isBackgroundEnabled ? "text-accent-400" : "text-zinc-300"}`}
+                  className={`text-[10px] font-black uppercase tracking-widest ${isBackgroundEnabled ? 'text-accent-400' : 'text-zinc-300'}`}
                 >
                   Animated Background
                 </span>
               </div>
               <div
-                className={`h-2 w-2 rounded-full ${isBackgroundEnabled ? "bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.8)]" : "bg-zinc-700"}`}
+                className={`h-2 w-2 rounded-full ${isBackgroundEnabled ? 'bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.8)]' : 'bg-zinc-700'}`}
               />
             </button>
           </div>
@@ -232,7 +214,8 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                     Rebuild Local Studio
                   </p>
                   <p className="mt-2 text-[11px] leading-relaxed text-zinc-300/85">
-                    Deletes the local library folders, archived items, queue state, logs, exports, and SQLite state, then recreates a clean Codex Studio library.
+                    Deletes the local library folders, archived items, queue state, logs, exports,
+                    and SQLite state, then recreates a clean Codex Studio library.
                   </p>
                 </div>
               </div>
@@ -246,10 +229,13 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                   {isResettingStudio ? (
                     <LoaderCircle size={16} className="animate-spin text-rose-300" />
                   ) : (
-                    <RotateCcw size={16} className="text-rose-300 transition-transform group-hover:-rotate-90" />
+                    <RotateCcw
+                      size={16}
+                      className="text-rose-300 transition-transform group-hover:-rotate-90"
+                    />
                   )}
                   <span className="text-[10px] font-black uppercase tracking-widest text-rose-100">
-                    {isResettingStudio ? "Rebuilding Studio..." : "Rebuild Library + Database"}
+                    {isResettingStudio ? 'Rebuilding Studio...' : 'Rebuild Library + Database'}
                   </span>
                 </div>
               </button>

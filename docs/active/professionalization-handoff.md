@@ -1,20 +1,20 @@
 # Codex Studio Professionalization Handoff
 
-Location: repo-local handoff at `docs/active/professionalization-handoff.md`. Keep future handoff updates inside this project, not in OS temp.
+Repo: `D:\DEV\codex-studio`
 
-## Context
+Keep this handoff inside the project. The active goal remains open; do not mark it complete. The user explicitly wants continued professionalization work and says there is still much left.
 
-Repo: `D:\DEV\codex-studio`.
+## Operating Notes
 
-User mode: `$caveman` active. Keep replies short and technical.
+- Use PowerShell without profile (`login:false` / `-NoProfile`) because shell startup previously hung/noised with oh-my-posh.
+- Preserve dirty worktree changes. This branch is intentionally very dirty.
+- Use `apply_patch` for manual edits.
+- Prefer focused tests while iterating, then relevant domain gate/build.
+- If `rg` fails, fall back to `Get-ChildItem` + `Select-String`.
 
-Active goal: continue the full professionalization work. Do not mark the goal complete. The user explicitly said there is still much left.
+## Required Context
 
-Use PowerShell without profile (`login:false` / `-NoProfile`) because oh-my-posh previously caused hangs/noise. If `rg` fails in this checkout, use `Get-ChildItem` and `Select-String`.
-
-## Required Reading
-
-Before architecture or runtime work:
+Before architecture/runtime work read:
 
 - `CONTEXT.md`
 - `docs/ARCHITECTURE.md`
@@ -22,11 +22,11 @@ Before architecture or runtime work:
 - `docs/active/professionalization-roadmap.md`
 - `docs/TECHNICAL_DEBT.md`
 
-Before provider, recipe, preset, or output work:
+Before provider, recipe, preset, or output work read:
 
 - `SKILLS.md`
 
-## Current Direction
+## Current Architecture Direction
 
 - Codex-first, local-first, library-backed.
 - `codex app-server` is the Codex Product Runtime.
@@ -34,267 +34,288 @@ Before provider, recipe, preset, or output work:
 - Generation Task and Generation Provider stay separate.
 - Recipe Modules produce Generation Task Specs.
 - Providers compile specs into compact provider inputs.
-- Provider Secrets stay outside SQLite, settings, logs, transcripts, and docs.
+- Provider Secrets stay outside SQLite, settings, logs, transcripts, screenshots, and docs.
 - Command Center is the top toolbar.
-- Heavy diagnostics/settings/provider internals should be Demand-Mounted Surfaces.
+- Heavy diagnostics/settings/provider internals should stay Demand-Mounted Surfaces.
 
-## Recent Verified State
+## Recently Verified Gates
 
-All gates last verified 2026-05-25:
+Fresh focused gates from the latest slices:
 
-- `bun run test` → 66 files, 204 tests
-- `bun run build` → UI + server clean
-- `bun run providers:verify` → 17 rows, all clean
-- `bun run recipes:verify` → catalog OK, source audit 0 violations
-- `bun run styles:verify` → 11 packs, 1,253 presets, full taxonomy/default-image coverage, runtime current, source audit OK
-- `bun run styles:render:verify` → render budgets OK; largest pack `pack_05` stays at 64 initial cards from 372 presets
-- `bun run ui:chunks:verify` → chunk budgets OK; now part of `bun run build`
-- `bun run ui:source:verify` → demand-mounted source boundaries OK; now part of `validate:full`
-- `bun run catalog:source:verify` → Catalog View remains Catalog Entry-first; now part of `validate:full`
+- `bun run styles:verify` passed: 11 packs, 1,253 presets, taxonomy/default-image coverage complete, runtime current, source/render guards OK.
+- `bun run catalog:source:verify` passed: 9 rules / 0 violations.
+- Browser validation for `http://127.0.0.1:5173/#recipe-styles` passed after fixing the toolbar model-label crash: root mounted, expanded `SHOW 19 MORE`, searched `boudoir`, no fresh console errors/warnings after timestamp-filtered reload.
+- Focused `vp test run lib/codexExecution.test.ts` passed: 1 file / 5 tests.
+- Focused `vp check lib/codexExecution.ts lib/codexExecution.test.ts` passed.
+- `styles:render:verify` now covers expanded category budget and the `pack_01` search scenario `boudoir`; latest run passed with worst expanded group at 42 cards and search at 1 rendered card.
+- `bun run styles:verify` passed after the expanded/search render guard: 11 packs, 1,253 presets, taxonomy/default-image coverage complete, runtime current, source/render guards OK.
+- `recipes:verify` now includes `recipes:evaluate -- --verify`, so recipe module verification fails if compact Recipe Provider Directives stop beating legacy Recipe Context prompts by at least 30%.
+- Focused `recipes:evaluate -- --verify --recipe=styles` passed: 1 pair, 0 failures.
+- `catalog:source:verify` now has 9 rules. It blocks legacy cache key drift, `LegacyVisualBatchContext` IndexedDB persistence, full snapshot export from `LegacyVisualBatchContext`, new `GenerationBatch` imports outside explicit legacy compatibility adapters/tests/shared type files, generated-job legacy append usage outside the compat/context edge, new `useLegacyVisualBatches()` consumers outside Studio Shell / generated-job compatibility, and hook-level `LegacyVisualBatchSnapshot` usage outside storage recovery compatibility.
+- Focused `vp test run scripts/catalog-first-source-audit.test.ts` passed: 2 tests.
+- `hooks/useVaultTransfer.ts` no longer imports `GenerationBatch` or `LegacyVisualBatchSnapshot`; vault is export/download-only.
+- Focused vault/export builder coverage now lives in `lib/studioWorkspaceExport.test.ts`; the old hook-level builder test was removed.
+- `GenerationBatch` is now centralized behind `lib/studioLegacyVisualBatchTypes.ts` for legacy compatibility modules. Snapshot import/export, legacy validation, and local-generation compat now consume `LegacyVisualBatch`/`LegacyVisualBatchSnapshot` aliases instead of importing the base type directly.
+- Current `GenerationBatch` text references are limited to `types.ts`, `studioLegacyVisualBatchTypes.ts`, and the catalog source audit/test fixtures.
+- Workspace snapshot/export builders moved out of `hooks/useVaultTransfer.ts` into pure catalog-first `lib/studioWorkspaceExport.ts`; the hook now owns file I/O orchestration only.
+- Focused `vp test run lib/studioWorkspaceExport.test.ts scripts/catalog-first-source-audit.test.ts` passed: 5 tests.
+- Focused `vp test run lib/localGenerationVisualBatchCompat.test.ts contexts/legacyVisualBatchReducer.test.ts scripts/catalog-first-source-audit.test.ts` passed: 3 files / 9 tests.
+- Focused `vp check hooks/useGenerationPipeline.ts scripts/catalog-first-source-audit.ts scripts/catalog-first-source-audit.test.ts` passed.
+- Focused `vp test run scripts/catalog-first-source-audit.test.ts` passed after adding the context-consumer guard.
+- Focused `vp check scripts/catalog-first-source-audit.ts scripts/catalog-first-source-audit.test.ts` passed after adding the context-consumer guard.
+- `LegacyVisualBatchContext` now exposes `legacyVisualBatchIds` instead of the full `legacyVisualBatches` snapshot. `useStudioShell` only receives IDs for recovery dedupe.
+- `legacyVisualBatchReducer` is now an IDs-only registry. It no longer stores full legacy snapshots or mirrors image delete/favorite mutations.
+- Workspace clear confirmation now calls the Catalog clear path instead of the hidden legacy id registry, so confirmed clear still archives Catalog Entries.
+- Workspace snapshot JSON import UI was removed. JSON snapshots are export-only metadata; image import must use Settings > External Output Sources to become Catalog Entries.
+- Focused `vp check contexts/LegacyVisualBatchContext.tsx hooks/useStudioShell.ts scripts/catalog-first-source-audit.ts scripts/catalog-first-source-audit.test.ts` passed after removing the public snapshot.
+- `useStudioRuntime` no longer imports `LegacyVisualBatchSnapshot` directly; that type is now hidden behind `useStudioStorageRecovery`'s recovery callback type.
+- Focused `vp check hooks/useStudioRuntime.ts hooks/useStudioStorageRecovery.ts scripts/catalog-first-source-audit.ts scripts/catalog-first-source-audit.test.ts` passed after isolating hook-level snapshot usage.
+- `styles:source:verify` now fails if any YAML under `components/recipes/styles/` lives outside the manifest authoring tree.
+- Focused `vp test run scripts/style-authoring-source-audit.test.ts` passed: 6 tests.
+- Focused `vp check scripts/style-authoring-source-audit.ts scripts/style-authoring-source-audit.test.ts` passed.
+- `bun run build` passed after the latest catalog/legacy slices; UI/server build clean, chunk budgets OK. Warnings about `vite:asset` timing and chunks over 500 KB are known/non-blocking because budget guards pass.
+- Full `bun run check` currently fails on formatting issues across 169 files. Do not run global `--fix` casually; fix touched scopes or do a dedicated formatting slice.
 
-## Providers State (2026-05-25)
+Earlier broad gates in this branch also passed, but rerun fresh before claiming broad completion:
 
-- **Codex**: full provider boundary with compiled inputs, stable session contract, Recipe Provider Directives preferred over legacy context.
-- **Dry run**: diagnostic adapter active.
-- **fal.ai**: hosted executor complete — retries, CDN upload, hosted result normalization, asset role mapping (`input`→`image_url`, `mask`→`mask_url`, `control`→`control_image_url`, `reference`→`reference_image_urls`), no-secret transcripts.
-- **Google Gemini**: hosted executor complete — `generateContent`, inline local assets, `image_edit` with image-first parts ordering by role priority + explicit edit-mode instruction suffix, no-secret transcripts.
-- **ComfyUI**: local workflow executor complete — template loading, prompt submission, history polling, view/download, Studio Library import. Blocked until both `COMFY_API_URL`/`COMFYUI_API_URL` and `COMFY_WORKFLOW_TEMPLATE_PATH` configured.
+- `bun run test`
+- `bun run check`
+- `bun run build`
+- `bun run validate:full`
 
-## UI Chunk State (2026-05-25)
+## Current Completed Slices
 
-| Chunk                             | Size         | Strategy                                                    |
-| --------------------------------- | ------------ | ----------------------------------------------------------- |
-| `StylesRecipe`                    | 42 KB        | `React.lazy`, imports pack summaries, loads active pack     |
-| `pack_05` runtime index           | 22 KB        | Composes lazy category chunks; was 498 KB as one pack chunk |
-| `pack_05` largest category chunk  | 59 KB        | `anime-style-spectrum-12` generated preset data             |
-| `index`                           | 446.20 KB    | Main shell; scanner/export/background/routes detached       |
-| `CameraAnglesRecipe`              | 22.83 KB     | `React.lazy`; viewport dynamically imports `three`          |
-| `three.module`                    | 722.74 KB    | Demand-loaded by Camera viewport                            |
-| `StylePresetCatalogSearchSurface` | 7.22 KB      | UI shell only; catalog data/parser loaded on open           |
-| `stylePresetCatalogData`          | 148.37 KB    | Demand-loaded YAML glob map for catalog search              |
-| `js-yaml`                         | 39.60 KB     | Demand-loaded parser for catalog search                     |
-| All modals                        | 2–21 KB each | Conditional render + `React.lazy` with `Suspense`           |
+### Prompt / Attachments
 
-## New This Session
+- Codex provider now sends attached local/reference images as turn input items.
+- Compiled prompts are compact and omit transport metadata like recipe id, preset id, `Recipe Module`, and duplicate recipe summary blocks.
+- Codex imagegen output instructions preserve the denoise workaround: `Apply a heavy strong denoise to the resulting image.`
 
-- **Recipe evaluation harness**: `recipes:evaluate` script + test (2 tests). Generates bare/legacy/directives variants, measures savings (41–56% directives vs legacy).
-- **10× chunk reduction**: `stylePresetCatalogData.ts` lazy glob, search surface async, chunk 2,113→189 KB.
-- **Styles runtime split**: `styleRuntimeData.generated.ts` is now a small pack-summary/loader index. Generated preset data lives in lazy pack indexes plus per-category chunks under `styleRuntimePacks.generated/<pack>/<category>.ts`, so `StylesRecipe` no longer eagerly imports the full 1.4 MB runtime or a 498 KB pack chunk.
-- **Stricter pack manifest validation**: Style Pack Manifests now reject duplicate top-level `presetRefs`, category refs missing from the pack-level list, and refs outside the pack namespace.
-- **Generated temp guard**: `styles:source:verify` now rejects `styleRuntimeData.generated.check.*.tmp.ts` and per-pack check temp files; `.gitignore` covers future temp artifacts.
-- **Legacy-only preset guard**: `styles:source:verify` now compares `components/recipes/styles/packs/*.yaml` against granular manifests and fails if a preset exists only in legacy pack YAML. Latest repo audit: 1,252 legacy presets, 1,253 granular manifests, 0 legacy-only presets.
-- **Legacy runtime module removed**: `components/recipes/legacyStylesData.ts` was deleted. Legacy pack YAML is no longer exposed through an importable runtime module; remaining legacy access is script/test migration-only.
-- **Styles render budget guard**: `styles:render:verify` reports initial categories/cards per pack from generated runtime data and is wired into `styles:verify`. Latest worst case: `pack_05`, 12 categories, 372 presets, 64 initial preset cards.
-- **Camera viewport split**: `hooks/useCameraViewport.ts` now imports `three` dynamically when the viewport mounts. Latest build: `CameraAnglesRecipe` 22.83 KB, `three.module` 722.74 KB.
-- **Main entry split**: `main.tsx` loads `react-scan` only in dev, ZIP export loads `jszip`/`file-saver` only on demand, `LiquidBlackBackground` is lazy, and `StudioViewport` lazy-loads route pages. Latest build: `index` 446.20 KB, down from 1,114.06 KB.
-- **Catalog search split**: `StylePresetCatalogSearchSurface` now imports `stylePresetCatalogData` dynamically, and that module imports `js-yaml` dynamically. Latest build: surface 7.22 KB, data glob 148.37 KB, parser 39.60 KB.
-- **SP01-081 default image closed**: `Soft Editorial Window` now has `assets/recipes/styles/defaults/SP01-081.webp`, manifest `assets.defaultImage`, and taxonomy `hasDefaultImage: true`. Latest `styles:verify` has no missing default images.
-- **UI chunk guard**: `scripts/report-ui-chunks.ts` adds budgeted chunk verification; `ui:chunks:verify` is wired into `build`, `build:ui`, and `validate:full`.
-- **UI source guard**: `scripts/ui-demand-surface-audit.ts` blocks static imports that would undo demand-mounted splits. `ui:source:verify` is wired into `validate:full` before build.
-- **Catalog-first seam**: `lib/studioCatalogView.ts` is now a pure Catalog Entry read model. `lib/studioCatalogVisualBatchAdapter.ts` owns temporary Visual Batch materialization. `catalog:source:verify` blocks regressions back to `GenerationBatch`/`catalog-cache` in the catalog-first seam.
-- **Gallery reads Catalog View**: `useStudioGallery` accepts `catalogView` and builds `imagesWithConfig` from Catalog Entries via `materializeCatalogEntryImageWithConfig`. `useImageManager` now accepts optional image lists, so gallery selection/delete/select-all/clear counts can use Catalog Entry materialized images while Visual Batches remain as fallback.
-- **Workspace strip reads Catalog View**: `useWorkspaceStrip` accepts `catalogView` and computes workspace counts/thumbnails from Catalog Entries first. `GenerationBatch[]` remains only fallback for legacy callers.
-- **Trash modal reads Catalog View**: `lib/studioCatalogTrashView.ts` builds archived Catalog Entry groups for `TrashModal`; UI no longer needs `GenerationBatch[]` for trash display.
-- **Dashboard reads catalog counts**: `DashboardModal` receives catalog-derived `imagesCount` and an export callback; it no longer receives `GenerationBatch[]` only to count images/export.
-- **Workspace snapshot export names legacy edge**: `useVaultTransfer` now has `buildLegacyVisualBatchSnapshot()` for the JSON snapshot compatibility format, plus `buildWorkspaceExportImages()` for ZIP image export. Both prefer `StudioCatalogView`; Visual Batch arrays remain fallback for legacy import/archive edges.
-- **Legacy Visual Batch cache isolated**: `lib/studioLegacyVisualBatchStore.ts` owns `catalog-cache`/`catalog-trash` key strings and legacy snapshot validation. `catalog:source:verify` fails if those raw keys spread outside that module/tests.
-- **GlobalContext legacy API named**: public import/archive methods are now `importLegacyVisualBatches` and `archiveLegacyVisualBatches`; reducer actions are `IMPORT_LEGACY_VISUAL_BATCHES` and `ARCHIVE_LEGACY_VISUAL_BATCHES`.
-- **Recovery merge named legacy**: runtime recovery now calls `mergeLegacyVisualBatches`; reducer action is `MERGE_LEGACY_VISUAL_BATCHES`. No generic `mergeBatches` public API remains.
-- **Generated output append named compat**: generation pipeline now calls `prependGeneratedVisualBatch`; reducer action is `PREPEND_GENERATED_VISUAL_BATCH`. No generic `prependBatch` public API remains.
-- **GlobalContext active cache named legacy**: public state is now `legacyVisualBatches` / `legacyVisualTrash`, not generic `batches` / `trash`.
-- **GlobalState internal cache named legacy**: reducer state is now `legacyVisualBatches` / `legacyVisualTrash`, and remaining delete/favorite/clear/restore/empty reducer actions carry `LEGACY_VISUAL` names.
-- **Gallery/workspace/vault fallback named legacy**: `useStudioGallery`, `useWorkspaceStrip`, and `useVaultTransfer` now take `catalogView` as the primary path and only accept `legacyVisualBatches` as the explicit fallback.
-- **Runtime/overlay count names catalog visual groups**: `useStudioRuntime` / `useStudioStorageRecovery` now receive `legacyVisualBatches` explicitly for recovery. Overlay/page controller counts now use `catalogVisualGroupCount` / `visualGroupsCount`, and Archived Images text avoids generic batch wording.
-- **useCatalog no longer materializes Visual Batches**: `useCatalog` returns Catalog Entries and `StudioCatalogView` only. `materializeVisualBatchesFromCatalog()` is now imported by `useStudioShell` at the compatibility edge that still feeds Visual Batch-based UI props.
-- **Latest focused validation**: `bun run test -- hooks/useStudioOverlayController.test.ts hooks/useStudioPageController.test.ts hooks/useStudioGallery.test.ts hooks/useWorkspaceStrip.test.ts hooks/useVaultTransfer.test.ts hooks/useStudioOverlayController.test.ts contexts/globalReducer.test.ts scripts/catalog-first-source-audit.test.ts` passed 7 files / 17 tests; `bun run catalog:source:verify` passed with 3 rules / 0 violations; `bun run build` passed UI/server build plus chunk guard.
-- **Demand-mounted overlays**: `ImageEditorModal`, `TrashModal`, `LimitReachedModal`, `StudioSettingsModal`, `DashboardModal`, `DebugPanel`, `OnboardingModal` all lazy + conditional. `AppOverlays` lazy from `AppContent`.
-- **UI integration tests**: `QueuePanel.test.ts` (3 tests), `StudioViewport.test.ts` (2 tests).
-- **Style preset authoring guide**: `docs/STYLE_PRESET_AUTHORING.md` with YAML template, taxonomy contract, validation commands.
-- **Docs synchronized**: roadmap and handoff reflect all completed work.
+Relevant files:
 
-## Major Work Completed
+- `apps/local-server/src/codex/turnInput.ts`
+- `apps/local-server/src/codex/imagegenContract.ts`
+- `apps/local-server/src/providers/codexProvider.ts`
+- `services/localGenerationRun.ts`
 
-Provider boundary:
+### Studio Library Layout
 
-- Google Gemini/Nano Banana executor added behind external provider registry.
-- fal.ai executor exists with hosted result normalization, local asset upload, retry, and no-secret transcripts.
-- Google `image_edit` sends image assets before the prompt text to align with edit-mode conventions.
-- ComfyUI now has a concrete executor that loads a workflow template from `COMFY_WORKFLOW_TEMPLATE_PATH`, merges prompt/negative-prompt, submits to `/prompt`, polls `/history` for the first image, and downloads via `/view` into the Studio Library. Comfy remains blocked until both local endpoint and workflow template path are configured.
-- Shared hosted/inline result handling exists in `externalProviderResults.ts`.
-- External preflight exposes secret/runtime state without secret values.
+- Physical Studio Library layout migrated:
+  - `.studio/` for SQLite, config/state, logs, transcripts, references, masks, internal trash.
+  - `outputs/` for generated images, thumbnails, exports, output trash.
+- `D:\AI-Studio-Library` was physically migrated. Last dry-run reported `moved: 0`, `updatedDbRows: 0`.
+- Root contains `.studio`, `outputs`, and `README.txt`.
+- Output organization settings support subfolder tokens and filename template.
+- `library:layout:verify` guards against new raw `libraryDir` joins for `library.sqlite`, `transcripts`, `assets`, `outputs`, or `.studio` outside layout helper/migration internals.
+- Default-generation scripts and metadata embedding now route DB/transcripts/assets lookups through `resolveLibraryPathFromRoot`.
 
-Command Center / demand-mounted UI:
+Relevant files:
 
-- Recipe surfaces are demand-loaded; initial UI bundle dropped from ~4.87 MB to ~1.10 MB.
-- Styles grid uses progressive expansion and viewport-aware mounting.
-- Style Preset Catalog search is a lazy Demand-Mounted Surface; its UI shell, catalog data glob, and YAML parser are separate chunks.
-- `StylesRecipe` loads the active style pack async from generated pack indexes that compose per-category chunks.
-- `main.tsx` keeps `react-scan` out of production startup; `downloadMultipleImagesAsZip()` demand-loads ZIP/export libraries; `LiquidBlackBackground`, `StudioPage`, `RecipesView`, and `RecipePage` are lazy route/effect chunks.
-- `bun run build` fails if budgeted UI chunks regress.
-- `bun run validate:full` fails before build if known heavy demand-mounted imports return to startup/source shells.
-- `bun run validate:full` also fails if the catalog-first read model regresses back to Visual Batch/cache dependencies.
-- `AppOverlays` itself is lazy from `AppContent`.
-- All heavy modals (`ImageEditorModal`, `TrashModal`, `LimitReachedModal`, `StudioSettingsModal`, `DashboardModal`, `DebugPanel`, `OnboardingModal`) are lazy-demand-mounted with conditional render + `Suspense`.
-- Each modal now in its own chunk outside the main bundle.
-
-Style presets:
-
-- 1,253 Style Preset Manifests exist under `components/recipes/styles/manifests/`.
-- All packs have persisted taxonomy and default images.
-- `styles:verify` now validates taxonomy/default coverage, pack/category reference drift, runtime sync, and source usage.
-- `styles:runtime` now generates one lightweight loader index plus pack indexes and per-category runtime chunks under `components/recipes/styleRuntimePacks.generated/`.
-- `styles:source:verify` prevents runtime re-import of legacy pack YAML, generated check temp files, and legacy-only preset additions.
-- `styles:render:verify` prevents large packs from mounting unbounded cards in the initial Styles browser render path.
-- `styles:split` now refuses destructive legacy migration by default.
-- `styles:split:legacy` is the explicit migration-only path.
-
-Recipe modules:
-
-- Recipe Modules are declarative and tested.
-- Recipe surfaces consume centralized UI projection helpers.
-- Context builders are split per recipe.
-- Recipe Provider Directives are generated and used by compilers.
-- `recipes:source:verify` keeps React recipe surfaces UI-only.
-
-Docs and guides:
-
-- `README.md`, `SKILLS.md`, `docs/ARCHITECTURE.md`, and `docs/active/professionalization-roadmap.md` have been kept in sync with the professionalization direction.
-
-## Dirty Worktree Warning
-
-The worktree is very dirty. Do not revert.
-
-Expect many modified/untracked files across:
-
-- provider adapters/tests
-- style manifests and generated runtime data
-- recipe modules/catalog/context builders
-- settings/output-source UI/backend
-- docs
-- `bun.lock`
-
-Always inspect current file state before editing.
-
-## Immediate Follow-Up Options
-
-Pick one vertical slice per session.
-
-### UI / Command Center / Performance
-
-Next useful work:
-
-- Measure rendered UI for large expanded Styles packs.
-- Verify `StylePresetCatalogSearchSurface` is truly demand-mounted in browser.
-- Keep `ui:source:verify` and `ui:chunks:verify` together when changing Command Center, overlays, route shells, Catalog Search, Camera, or export flows.
-- Reduce remaining large chunks only where user-visible: optional future `three.module` isolation if Camera route needs faster first mount, plus rendered perf measurements.
-- Move any remaining global status/usage/provider/library/settings controls into Command Center.
-
-Likely files:
-
-- `components/HeaderToolbar.tsx`
-- `components/ui/TopToolbar.tsx`
-- `hooks/useStudioShell.ts`
-- `components/recipes/StylesRecipe.tsx`
-- `components/recipes/StylePresetCatalogSearchSurface.tsx`
-- `components/recipes/styleGridVirtualization.ts`
-
-### Providers
-
-Completed.
-
-Next useful work:
-
-- Add richer edit-mode request mapping for Google (beyond basic text-position swap).
-- Wire provider-specific image_edit conventions per executor (mask roles, strength, compositing layers).
-
-Validate with:
-
-- `bun run providers:verify`
-- focused provider tests
+- `apps/local-server/src/library.ts`
+- `apps/local-server/src/outputOrganization.ts`
+- `apps/local-server/src/worker.ts`
+- `packages/shared/src/studioSettings.ts`
+- `components/StudioSettingsModal.tsx`
+- `scripts/migrate-studio-library-layout.ts`
+- `scripts/studio-library-layout-source-audit.ts`
 
 ### Style Presets
 
-Next useful work:
+- Real authoring path is granular manifests:
+  - `components/recipes/styles/manifests/packs/*.yaml`
+  - `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml`
+- `components/recipes/styles` now contains only `manifests/` and `types.ts`.
+- `styles:source:verify` blocks YAML under `components/recipes/styles/` unless it lives in `manifests/`.
+- Legacy monolithic YAML was removed from `components/` and from `scripts/style-migration/legacy-packs/`.
+- `styles:split` refuses destructive legacy overwrite by default.
+- `styles:split:legacy` was retired; `styles:split` is now a non-destructive guard that tells agents to edit manifests directly.
+- `style-default-utils` now loads granular manifests only; the legacy YAML fallback is gone. `audit-style-category-bases` uses composed manifests.
+- Old YAML mutation helpers `scripts/expand-pack-02-pack-05.ts` and `scripts/reorder-style-packs.ts` are retired guards.
+- Explicit runtime names now exist: `StyleRuntimePack`, `StyleRuntimePreset`, and `composeStyleRuntimePacksFromManifests()`.
+- Old `StylePack`, `StylePresetDef`, and `composeStylePacksFromManifests()` runtime aliases are retired. `styles:source:verify` blocks them everywhere except the source-audit guard/test.
+- `styles:source:verify` blocks:
+  - runtime imports of legacy pack YAML,
+  - generated check temp files,
+  - legacy-only preset additions,
+  - YAML files recreated in retired `components/recipes/styles/packs/`.
+- `SP01-081` direct-granular authoring proof exists with default image.
+- Full style verification passed: 1,253/1,253 taxonomy and default images.
+
+Relevant files:
+
+- `components/recipes/styles/manifests/`
+- `scripts/style-migration/legacy-packs/` must stay free of YAML files.
+- `scripts/style-authoring-source-audit.ts`
+- `scripts/split-style-preset-manifests.ts`
+- `docs/STYLE_PRESET_AUTHORING.md`
+
+### Catalog-First Visual Batch Migration
+
+Catalog Entries are durable truth. Visual Batch is compatibility only.
+
+Completed:
+
+- `GlobalContext` no longer owns active visual batch state.
+- `LegacyVisualBatchContext` owns in-memory legacy visual compatibility state.
+- `legacyVisualTrash` removed.
+- Gallery/workspace/vault hooks no longer accept `legacyVisualBatches` fallback params.
+- `useCatalog` returns Catalog Entries + `StudioCatalogView` only.
+- `useStudioShell` uses `catalogVisualGroupCount` instead of materializing `GenerationBatch[]` for overlay/page counts.
+- `studioCatalogVisualBatchAdapter` deleted.
+- `studioVisualBatchCatalog` deleted.
+- Catalog Entry image helpers live in `lib/studioCatalogImageAdapter.ts`.
+- Legacy snapshot export lives in `lib/studioLegacyVisualSnapshotExport.ts`.
+- Storage recovery uses `LegacyVisualBatchSnapshot` types from `studioLegacyVisualSnapshotImport.ts`.
+- `runLocalGeneration` no longer returns `GenerationBatch`; it returns catalog-derived local result data.
+- `localGenerationVisualBatchCompat` builds the legacy Visual Batch only at append edge.
+- `LegacyVisualBatchContext` append API is explicitly named `prependGeneratedLegacyVisualBatch`.
+- `catalog:source:verify` enforces generated-job legacy append isolation: `appendLocalGenerationResultToLegacyVisualBatches`, `prependGeneratedLegacyVisualBatch`, and `REGISTER_GENERATED_LEGACY_VISUAL_BATCH_ID` cannot spread outside the local-generation compat/context/reducer edge.
+- `catalog:source:verify` enforces `useLegacyVisualBatches()` isolation: only `GenerationContext`, `LegacyVisualBatchContext`, and `useStudioShell` may consume it directly.
+- `catalog:source:verify` enforces no full snapshot export from `LegacyVisualBatchContext`; public API is IDs plus compatibility actions only.
+- `catalog:source:verify` enforces hook-level `LegacyVisualBatchSnapshot` isolation: only `useStudioStorageRecovery` may mention it.
+- Active Visual Batches are in-memory only. `catalog-cache` and `catalog-trash` are legacy recovery keys only.
+- `catalog:source:verify` blocks `LegacyVisualBatchContext` from reintroducing `useIndexedDBStorage`, raw cache keys, or direct `utils/idb` access.
+
+Relevant files:
+
+- `contexts/LegacyVisualBatchContext.tsx`
+- `contexts/legacyVisualBatchReducer.ts`
+- `lib/studioCatalogView.ts`
+- `lib/studioCatalogImageAdapter.ts`
+- `lib/studioLegacyVisualSnapshotExport.ts`
+- `lib/studioLegacyVisualSnapshotImport.ts`
+- `lib/localGenerationVisualBatchCompat.ts`
+- `scripts/catalog-first-source-audit.ts`
+
+### Provider Boundary
+
+- Codex, dry-run, fal.ai, Google Gemini image API, and ComfyUI are behind Provider Boundary.
+- fal.ai has hosted executor with retry, CDN upload, role mapping, result normalization, no-secret transcripts.
+- Google has hosted executor with `generateContent`, inline result import, and image-first edit mode.
+- ComfyUI has local executor using `COMFY_API_URL`/`COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`; blocked until both are configured.
+- External preflight exposes secret/runtime state without secret values.
+- `providers:verify` now includes `providers:source:verify`, blocking provider compiler/executor imports outside `apps/local-server/src/providers/`.
+
+Relevant files:
+
+- `apps/local-server/src/providers/providerInputCompiler.ts`
+- `apps/local-server/src/providers/externalProvider.ts`
+- `apps/local-server/src/providers/externalProviderExecutors.ts`
+- `apps/local-server/src/providers/externalProviderResults.ts`
+- `apps/local-server/src/providers/googleExecutor.ts`
+- `apps/local-server/src/providers/falExecutor.ts`
+- `apps/local-server/src/providers/comfyExecutor.ts`
+- `scripts/provider-boundary-source-audit.ts`
+- `apps/local-server/src/providers/runtimeConfig.ts`
+
+## Known Dirty Worktree
+
+The worktree is very dirty by design. Expect changes across:
+
+- provider adapters/tests,
+- prompt/turn input,
+- Studio Library layout/output organization,
+- settings/output-source UI/backend,
+- catalog-first visual compatibility,
+- styles manifests/runtime/migration,
+- docs,
+- `bun.lock`.
+
+Do not revert unrelated changes.
+
+## Good Next Slices
+
+Pick one vertical slice per session.
+
+### Catalog-First UI
+
+- Continue shrinking/removing `LegacyVisualBatchContext`; it is now only an id registry for recovery dedupe and generated append compatibility.
+- Keep `catalog:source:verify` green.
+- Add a guard if any new component starts depending on `legacyVisualBatches` outside compatibility context.
+
+Useful validation:
+
+- `bun run catalog:source:verify`
+- `bun run test -- contexts/legacyVisualBatchReducer.test.ts lib/localGenerationVisualBatchCompat.test.ts lib/studioStorageRecovery.test.ts lib/studioWorkspaceExport.test.ts`
+- `bun run build`
+
+### Style Presets
 
 - Author new presets directly in granular YAML.
-- Add authoring examples for humans/agents.
-- Retire `components/recipes/styles/packs/*.yaml` after compatibility parity no longer needs them; until then, keep `styles:source:verify` green with 0 legacy-only presets.
-- Replace static render budget with browser measurement once local Playwright/browser harness is chosen for this repo.
-- Add changed-file scoped style verification if useful.
+- Add more human/agent authoring examples.
+- Next preset cleanup is reducing remaining alias/export compatibility and `STYLE_PACKS` doc/runtime vocabulary, not editing legacy YAML.
+- Replace static render budget with browser-render measurement for expanded packs.
 
-Validate with:
+Useful validation:
 
 - `bun run styles:verify`
-- `bun run ui:chunks:verify`
 - `bun run styles:catalog -- --query=<text> --limit=20`
+- `bun run build`
 
-### Recipe Modules
+### UI / Command Center / Performance
 
-Next useful work:
+- Measure rendered UI for large expanded Styles packs.
+- Verify Style Preset Catalog Search is demand-mounted in browser.
+- Move any remaining global status/provider/library/settings surfaces into Command Center if found.
 
-- Compare compact Compiled Provider Inputs against real Codex output quality.
-- Build an evaluation/harness before removing legacy Recipe Context from job metadata.
-- Keep React surfaces UI-only.
+Useful validation:
 
-Validate with:
+- `bun run ui:source:verify`
+- `bun run ui:chunks:verify`
+- Browser/Playwright screenshot/perf pass if changing rendered UI.
+
+### Recipe Modules / Tokens
+
+- Run live Codex output quality comparison using `recipes:evaluate`.
+- Keep compact Recipe Provider Directives while preserving output quality.
+- Do not remove legacy Recipe Context from stored job metadata without evidence.
+
+Useful validation:
 
 - `bun run recipes:verify`
 - `bun run providers:verify`
+- `bun run library:layout:verify`
 
 ### Settings / External Outputs
 
-Next useful work:
-
-- Finish user-facing selected-file import from registered External Output Sources.
+- Improve selected-file import UX for registered External Output Sources.
 - Preserve rule: registration is not import.
 - Never move/delete external source files unless explicitly requested.
 
-Likely files:
+Useful files:
 
 - `apps/local-server/src/outputSources.ts`
-- `apps/local-server/src/outputSources.test.ts`
 - `components/StudioSettingsModal.tsx`
 - `services/localStudioService.ts`
 - `hooks/useStudioSettings.ts`
 
-### Catalog-first Visual Batch Migration
+### Backend Architecture
 
-Next useful work:
+- Add db/worker/lifecycle DI seams beyond the logger seam.
+- Keep Provider Secrets out of SQLite/settings/transcripts.
 
-- Reduce remaining shell `catalogVisualBatches` and legacy snapshot compatibility adapter usage once grid/export consumers can accept Catalog Entries directly.
-- Keep `lib/studioCatalogVisualBatchAdapter.ts` as the only compatibility adapter while `ImageGrid` still expects Visual Batches.
-- Next concrete target: split active visual compatibility state out of `GlobalContext` or keep only local transient recovery/import state there.
-- Do not add new durable image decisions to `catalog-cache`.
+Useful validation:
 
-Validate with:
-
-- `bun run catalog:source:verify`
-- `bun run test -- hooks/useVaultTransfer.test.ts lib/studioLegacyVisualBatchStore.test.ts lib/studioStorageRecovery.test.ts scripts/catalog-first-source-audit.test.ts`
+- focused backend tests,
+- `bun run providers:verify`,
+- `bun run build`.
 
 ## Technical Debt Still Relevant
 
-See `docs/TECHNICAL_DEBT.md`. Highest priority:
+See `docs/TECHNICAL_DEBT.md`. Highest remaining items:
 
 - Further split `components/AppContent.tsx`.
-- Move visual cache toward catalog-first surfaces.
-- Add db/worker/lifecycle DI seams (logger seam done, others remain).
-- ~~Clarify Studio Runtime adapter vs `useStudioRuntime` orchestrator naming~~ — DONE. Both files now have JSDoc distinguishing them. `services/studioRuntime.ts` = static config adapter ("where is the backend?"). `hooks/useStudioRuntime.ts` = React orchestrator (wires readiness, diagnostics, onboarding, session, recovery, sync).
-- ~~Add frontend logging adapter~~ — DONE. `utils/runtimeLogger.ts` already existed with `runtimeLogger` facade used by 11 consumers. No raw `console.*` in UI code — only in scripts/backend.
-- ~~Improve UI integration tests for Toolbar, QueuePanel, StudioPage, Local Studio Sync~~ — DONE. Added `QueuePanel.test.ts` (3 tests), `StudioViewport.test.ts` (2 tests), expanded `useStudioHeaderToolbarConfig.test.ts`. Suite at 66 files, 204 tests.
+- Continue catalog-first UI migration until Visual Batch compatibility can be deleted.
+- Add backend DI seams for db/worker/lifecycle.
+- Run real rendered UI/perf measurements for heavy style surfaces.
+- Final open-source artifact audit before release.
 
-## Recommended Skills
+## Safe Loop
 
-- `$caveman` for compact communication.
-- `improve-codebase-architecture` for architecture slices.
-- `build-web-apps:frontend-testing-debugging` or `browser:browser` for rendered UI/perf work.
-- `openai-docs` when touching Codex official app-server/SDK alignment.
-- `diagnose` for flaky Windows/tooling/perf bugs.
-
-## Safe Next Plan
-
-1. Read required context files listed above.
+1. Read required context files.
 2. Pick one vertical slice.
-3. Add focused tests or guards first.
-4. Implement with small scoped edits.
-5. Run focused `check:fix`, focused tests, then relevant domain gate.
-6. Leave goal active unless every roadmap/debt item is truly proven complete.
+3. Add or update focused tests/guards first when practical.
+4. Implement scoped change.
+5. Run focused tests plus relevant domain gate.
+6. Run `bun run build` before claiming a slice done.
+7. Leave goal active unless every roadmap/debt item is proven complete.

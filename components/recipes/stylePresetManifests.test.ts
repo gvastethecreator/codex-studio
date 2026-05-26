@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import type { StylePack } from './styles/types';
+import type { StyleRuntimePack } from './styles/types';
 import {
-  composeStylePacksFromManifests,
+  composeStyleRuntimePacksFromManifests,
   createStylePresetCatalog,
   createStylePresetCatalogCoverage,
   createStylePackManifests,
@@ -16,7 +16,7 @@ import { loadStylePresetIndex } from './stylesData';
 
 describe('stylePresetManifests', () => {
   it('normalizes legacy style packs into granular preset manifests and lightweight pack manifests', () => {
-    const packs: StylePack[] = [
+    const packs: StyleRuntimePack[] = [
       {
         id: 'pack-a',
         name: 'Pack A',
@@ -74,8 +74,8 @@ describe('stylePresetManifests', () => {
     ]);
   });
 
-  it('composes compatibility packs from granular manifests', () => {
-    const legacyPacks: StylePack[] = [
+  it('composes runtime packs from granular manifests', () => {
+    const runtimePacks: StyleRuntimePack[] = [
       {
         id: 'pack-a',
         name: 'Pack A',
@@ -101,14 +101,16 @@ describe('stylePresetManifests', () => {
       },
     ];
 
-    const packManifests = createStylePackManifests(legacyPacks);
-    const presetManifests = createStylePresetManifests(legacyPacks);
+    const packManifests = createStylePackManifests(runtimePacks);
+    const presetManifests = createStylePresetManifests(runtimePacks);
 
-    expect(composeStylePacksFromManifests(packManifests, presetManifests)).toEqual(legacyPacks);
+    expect(composeStyleRuntimePacksFromManifests(packManifests, presetManifests)).toEqual(
+      runtimePacks,
+    );
   });
 
   it('creates a granular catalog with direct preset and pack lookups', () => {
-    const legacyPacks: StylePack[] = [
+    const runtimePacks: StyleRuntimePack[] = [
       {
         id: 'pack-a',
         name: 'Pack A',
@@ -133,8 +135,8 @@ describe('stylePresetManifests', () => {
       },
     ];
 
-    const packManifests = createStylePackManifests(legacyPacks);
-    const presetManifests = createStylePresetManifests(legacyPacks);
+    const packManifests = createStylePackManifests(runtimePacks);
+    const presetManifests = createStylePresetManifests(runtimePacks);
     const catalog = createStylePresetCatalog(packManifests, presetManifests);
 
     expect(toStylePresetManifestRef('pack-a', 'preset-a')).toBe('pack-a/preset-a.yaml');
@@ -173,7 +175,7 @@ describe('stylePresetManifests', () => {
   });
 
   it('searches the granular catalog with compact agent-friendly filters', () => {
-    const legacyPacks: StylePack[] = [
+    const runtimePacks: StyleRuntimePack[] = [
       {
         id: 'pack-a',
         name: 'Pack A',
@@ -215,8 +217,8 @@ describe('stylePresetManifests', () => {
     ];
 
     const catalog = createStylePresetCatalog(
-      createStylePackManifests(legacyPacks),
-      createStylePresetManifests(legacyPacks),
+      createStylePackManifests(runtimePacks),
+      createStylePresetManifests(runtimePacks),
     );
 
     expect(
@@ -395,7 +397,7 @@ describe('stylePresetManifests', () => {
 
   it('loads current repo from granular manifests without legacy runtime data', async () => {
     const catalog = await loadStylePresetCatalog();
-    const recomposedPacks = composeStylePacksFromManifests(
+    const recomposedPacks = composeStyleRuntimePacksFromManifests(
       catalog.packManifests,
       catalog.presetManifests,
     );

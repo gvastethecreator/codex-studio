@@ -4,7 +4,7 @@ import type {
   StylePackManifest,
   StylePresetEditorialTaxonomy,
   StylePresetManifest,
-} from '../components/recipes/styles/types';
+} from '../components/recipes/styles/manifestTypes';
 import {
   loadStylePackManifests,
   loadStylePresetManifestRecords,

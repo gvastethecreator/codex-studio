@@ -1,15 +1,5 @@
-import React, { useRef } from 'react';
-import {
-  X,
-  User,
-  Settings,
-  Activity,
-  Download,
-  Upload,
-  Database,
-  Layers,
-  HardDrive,
-} from 'lucide-react';
+import React from 'react';
+import { X, User, Settings, Activity, Download, Database, Layers, HardDrive } from 'lucide-react';
 import type { Workspace } from '../types';
 
 interface DashboardModalProps {
@@ -17,7 +7,6 @@ interface DashboardModalProps {
   onClose: () => void;
   imagesCount: number;
   workspaces: Workspace[];
-  onImportVault: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onExportWorkspaceSnapshot: () => void;
   onDeepScan: () => void;
 }
@@ -27,11 +16,9 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
   onClose,
   imagesCount,
   workspaces,
-  onImportVault,
   onExportWorkspaceSnapshot,
   onDeepScan,
 }) => {
-  const fileInputRef = useRef<HTMLInputElement>(null);
   if (!isOpen) return null;
 
   return (
@@ -108,7 +95,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             <h4 className="text-[10px] font-black uppercase tracking-widest text-zinc-600 px-1">
               Workspace Snapshot
             </h4>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 gap-3">
               <button
                 onClick={onExportWorkspaceSnapshot}
                 className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
@@ -118,23 +105,6 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
                   className="text-blue-400 group-hover:scale-110 transition-transform"
                 />
                 Export Snapshot
-              </button>
-              <button
-                onClick={() => fileInputRef.current?.click()}
-                className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
-              >
-                <Upload
-                  size={16}
-                  className="text-emerald-400 group-hover:scale-110 transition-transform"
-                />
-                Import Snapshot
-                <input
-                  type="file"
-                  ref={fileInputRef}
-                  onChange={onImportVault}
-                  accept=".json"
-                  className="hidden"
-                />
               </button>
             </div>
             <button

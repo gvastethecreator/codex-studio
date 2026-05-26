@@ -265,7 +265,7 @@ describe('outputSources', () => {
         mimeType: 'image/webp',
         tags: ['external-output-source', 'comfy', registration.source.id],
       });
-      expect(catalogImages[0].filePath).toContain(path.join('assets', 'external'));
+      expect(catalogImages[0].filePath).toContain(path.join('outputs', 'external'));
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

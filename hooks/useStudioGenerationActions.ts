@@ -5,13 +5,19 @@ import { detectRecipeFromContext } from '../utils/recipeUtils';
 
 interface UseStudioGenerationActionsProps {
   generationConfig: ImageGenerationConfig;
+  activeWorkspaceId: string;
   setGenerationConfig: React.Dispatch<React.SetStateAction<ImageGenerationConfig>>;
   updateGenerationConfig: <K extends keyof ImageGenerationConfig>(
     key: K,
     value: ImageGenerationConfig[K],
   ) => void;
   executeEdit: (original: Attachment, mask: string, prompt: string) => Promise<unknown>;
-  enqueue: (prompt: string, config: ImageGenerationConfig, force?: boolean) => void;
+  enqueue: (
+    prompt: string,
+    config: ImageGenerationConfig,
+    workspaceId: string,
+    force?: boolean,
+  ) => void;
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   closeModal: () => void;
   closeOverlay: () => void;
@@ -27,6 +33,7 @@ interface UseStudioGenerationActionsProps {
  */
 export function useStudioGenerationActions({
   generationConfig,
+  activeWorkspaceId,
   setGenerationConfig,
   updateGenerationConfig,
   executeEdit,
@@ -74,9 +81,9 @@ export function useStudioGenerationActions({
       };
 
       const queuePrompt = finalPrompt || 'Image-guided generation';
-      enqueue(queuePrompt, finalConfig, options?.force);
+      enqueue(queuePrompt, finalConfig, activeWorkspaceId, options?.force);
     },
-    [addToast, closeModal, enqueue, generationConfig, isModalOpen],
+    [activeWorkspaceId, addToast, closeModal, enqueue, generationConfig, isModalOpen],
   );
 
   const handleEnhancePrompt = useCallback(async () => {
