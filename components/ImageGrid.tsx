@@ -95,6 +95,11 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         animate-in fade-in-0 zoom-in-95
       `}
         onClick={handleImageClick}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') handleImageClick();
+        }}
+        role="button"
+        tabIndex={0}
       >
         <img
           src={image.thumbnail || image.src}

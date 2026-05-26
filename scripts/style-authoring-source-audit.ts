@@ -227,9 +227,10 @@ export async function createStyleAuthoringSourceAuditReport(
     if (markers.length > 0) {
       usages.push({ filePath: repoPath, markers: [...markers] });
     }
-    const aliasMarkers = retiredRuntimeAliasMarkers
-      .filter((marker) => marker.pattern.test(source))
-      .map((marker) => marker.label);
+    const aliasMarkers = retiredRuntimeAliasMarkers.reduce<string[]>((acc, marker) => {
+      if (marker.pattern.test(source)) acc.push(marker.label);
+      return acc;
+    }, []);
     if (aliasMarkers.length > 0) {
       retiredRuntimeAliasUsages.push({ filePath: repoPath, markers: [...aliasMarkers] });
     }

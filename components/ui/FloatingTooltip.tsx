@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { MotionDiv, AnimatePresence } from 'motion/react';
 import { createPortal } from 'react-dom';
 
@@ -67,28 +67,27 @@ const TooltipPortal = ({
   content: React.ReactNode;
   position: { x: number; y: number };
 }) => {
-  const tooltipRef = useRef<HTMLDivElement>(null);
   const [adjustedPos, setAdjustedPos] = useState({ x: position.x + 15, y: position.y + 15 });
 
-  useEffect(() => {
-    if (tooltipRef.current) {
-      const rect = tooltipRef.current.getBoundingClientRect();
+  const tooltipRef = useCallback(
+    (node: HTMLDivElement | null) => {
+      if (!node) return;
+      const rect = node.getBoundingClientRect();
       let newX = position.x + 15;
       let newY = position.y + 15;
 
-      // Check right edge
       if (newX + rect.width > window.innerWidth - 10) {
         newX = position.x - rect.width - 15;
       }
 
-      // Check bottom edge
       if (newY + rect.height > window.innerHeight - 10) {
         newY = position.y - rect.height - 15;
       }
 
       setAdjustedPos({ x: newX, y: newY });
-    }
-  }, [position]);
+    },
+    [position],
+  );
 
   return (
     <MotionDiv

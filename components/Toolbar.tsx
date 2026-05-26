@@ -1,49 +1,35 @@
-import React, { useRef, useState, useEffect, useCallback, useLayoutEffect } from 'react';
 import {
-  PlusCircle,
-  Square,
-  RectangleHorizontal,
-  RectangleVertical,
+  Ban,
   Bot,
-  Zap,
-  Wand2,
-  Sparkles,
-  ChevronDown,
-  Maximize,
-  Send,
   BrainCircuit,
-  X,
+  Check,
+  ChevronDown,
+  Edit3,
+  Eraser,
+  Hash,
+  ImagePlus,
   Key,
   Layers,
-  ShieldAlert,
-  Wand,
-  Eraser,
-  MoreHorizontal,
-  ImagePlus,
-  Monitor,
-  Hash,
-  Ratio,
-  Scan,
-  Ban,
-  Edit3,
-  Check,
   Loader2,
+  Maximize,
+  Monitor,
+  MoreHorizontal,
+  PlusCircle,
+  Ratio,
+  RectangleHorizontal,
+  RectangleVertical,
+  Scan,
+  Send,
+  ShieldAlert,
+  Sparkles,
+  Square,
+  Wand,
+  Wand2,
+  X,
+  Zap,
 } from 'lucide-react';
-import { MotionDiv, AnimatePresence, Variants } from 'motion/react';
-import type {
-  CodexModel,
-  CodexModelCatalogResponse,
-  CodexServiceTier,
-} from '../packages/shared/src';
-import {
-  ImageGenerationConfig,
-  Attachment,
-  GenerationModel,
-  AspectRatio,
-  ImageSize,
-} from '../types';
-import Tooltip from './Tooltip';
-import KeyPopover from './KeyPopover';
+import { AnimatePresence, MotionDiv, type Variants } from 'motion/react';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
   formatCodexModelLabel,
   formatCodexSpeedLabel,
@@ -53,8 +39,22 @@ import {
   normalizeCodexSpeed,
   pickPreferredCodexModel,
 } from '../lib/codexExecution';
+import type {
+  CodexModel,
+  CodexModelCatalogResponse,
+  CodexServiceTier,
+} from '../packages/shared/src';
 import { getCodexModelCatalog } from '../services/localStudioService';
+import type {
+  AspectRatio,
+  Attachment,
+  GenerationModel,
+  ImageGenerationConfig,
+  ImageSize,
+} from '../types';
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
+import KeyPopover from './KeyPopover';
+import Tooltip from './Tooltip';
 
 export interface ToolbarProps {
   generationConfig: ImageGenerationConfig;
@@ -115,7 +115,11 @@ const ModelIcon: React.FC<{ model: GenerationModel }> = ({ model }) => {
   return <Zap {...iconProps} />;
 };
 
-const AVAILABLE_MODELS: { id: GenerationModel; name: string; description: string }[] = [
+const AVAILABLE_MODELS: {
+  id: GenerationModel;
+  name: string;
+  description: string;
+}[] = [
   {
     id: MODEL_IDS.CODEX_IMAGEGEN,
     name: 'Codex ImageGen',
@@ -146,9 +150,8 @@ const popoverVariants: Variants = {
   exit: { opacity: 0, scale: 0.95, y: 10 },
 };
 
-import { useDebounce } from '../hooks/useDebounce';
-
 import { useGlobal } from '../contexts/GlobalContext';
+import { useDebounce } from '../hooks/useDebounce';
 export const Toolbar: React.FC<ToolbarProps> = React.memo(
   ({
     generationConfig,
@@ -194,11 +197,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const [codexModelCatalog, setCodexModelCatalog] = useState<CodexModelCatalogResponse | null>(
       null,
     );
-    const [isLoadingCodexModelCatalog, setIsLoadingCodexModelCatalog] = useState(false);
+    const [isLoadingCodexModelCatalog, setIsLoadingCodexModelCatalog] = useState(true);
     const [codexModelCatalogError, setCodexModelCatalogError] = useState<string | null>(null);
 
-    const [elapsedTime, setElapsedTime] = useState<string>('0.0');
-    const [scrambleText, setScrambleText] = useState('');
+    const [elapsedTick, setElapsedTick] = useState(0);
+    const [scrambleTick, setScrambleTick] = useState(0);
 
     const codexModels = codexModelCatalog?.models ?? [];
     const preferredExecutionModelId = pickPreferredCodexModel(
@@ -227,44 +230,44 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       .filter(Boolean)
       .join(' · ');
 
-    useEffect(() => {
-      let interval: number;
-      if (isEnhancingPrompt || isRefactoring) {
-        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
-        const targetLength = localPrompt.length > 0 ? localPrompt.length : 50;
+    const isScrambling = isEnhancingPrompt || isRefactoring;
 
-        interval = window.setInterval(() => {
-          let scrambled = '';
-          for (let i = 0; i < targetLength; i++) {
-            if (localPrompt[i] === ' ') {
-              scrambled += ' ';
-            } else {
-              scrambled += chars[Math.floor(Math.random() * chars.length)];
-            }
-          }
-          setScrambleText(scrambled);
-        }, 30);
-      } else {
-        setScrambleText('');
-      }
+    useEffect(() => {
+      if (!isScrambling) return;
+      const interval = window.setInterval(() => setScrambleTick((t) => t + 1), 30);
       return () => clearInterval(interval);
-    }, [isEnhancingPrompt, isRefactoring, localPrompt]);
+    }, [isScrambling]);
+
+    const scrambleText = useMemo(() => {
+      if (!isScrambling) return '';
+      void scrambleTick;
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+      const targetLength = localPrompt.length > 0 ? localPrompt.length : 50;
+      let scrambled = '';
+      for (let i = 0; i < targetLength; i++) {
+        if (localPrompt[i] === ' ') {
+          scrambled += ' ';
+        } else {
+          scrambled += chars[Math.floor(Math.random() * chars.length)];
+        }
+      }
+      return scrambled;
+    }, [isScrambling, scrambleTick, localPrompt]);
 
     useEffect(() => {
-      let interval: number;
-      if (isGenerating && generationStartTime) {
-        interval = window.setInterval(() => {
-          setElapsedTime(((Date.now() - generationStartTime) / 1000).toFixed(1));
-        }, 100);
-      } else {
-        setElapsedTime('0.0');
-      }
+      if (!isGenerating || !generationStartTime) return;
+      const interval = window.setInterval(() => setElapsedTick((t) => t + 1), 100);
       return () => clearInterval(interval);
     }, [isGenerating, generationStartTime]);
 
+    const elapsedTime = useMemo(() => {
+      if (!isGenerating || !generationStartTime) return '0.0';
+      void elapsedTick;
+      return ((Date.now() - generationStartTime) / 1000).toFixed(1);
+    }, [isGenerating, generationStartTime, elapsedTick]);
+
     useEffect(() => {
       let isCancelled = false;
-      setIsLoadingCodexModelCatalog(true);
 
       void getCodexModelCatalog()
         .then((catalog) => {
@@ -368,21 +371,24 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       return () => document.removeEventListener('mousedown', handleOutsideClick);
     }, [closeAllMenus]);
 
-    // Sync prop changes to local state (Downstream)
-    // Only if the prop value is different and we assume it came from an external source (like a preset load)
-    useEffect(() => {
-      if (generationConfig.prompt !== localPrompt) {
-        setLocalPrompt(generationConfig.prompt || '');
-      }
-    }, [generationConfig.prompt]);
+    const lastPushedPromptRef = useRef(generationConfig.prompt);
 
-    // Sync local state to prop changes (Upstream - Debounced)
-    // This ensures that when other components (Recipes) read generationConfig, they get the latest text
     useEffect(() => {
       if (debouncedPrompt === localPrompt && debouncedPrompt !== generationConfig.prompt) {
+        lastPushedPromptRef.current = debouncedPrompt;
         updateConfig('prompt', debouncedPrompt);
       }
     }, [debouncedPrompt, localPrompt, generationConfig.prompt, updateConfig]);
+
+    useEffect(() => {
+      if (
+        generationConfig.prompt !== lastPushedPromptRef.current &&
+        generationConfig.prompt !== localPrompt
+      ) {
+        lastPushedPromptRef.current = generationConfig.prompt;
+        setLocalPrompt(generationConfig.prompt || '');
+      }
+    }, [generationConfig.prompt, localPrompt]);
 
     useLayoutEffect(() => {
       if (textareaRef.current) {
@@ -474,6 +480,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             type="file"
             ref={fileInputRef}
             onChange={onFileSelect}
+            aria-label="Upload images"
             className="hidden"
             accept="image/*"
             multiple
@@ -533,6 +540,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 value={isEnhancingPrompt || isRefactoring ? scrambleText : localPrompt}
                 readOnly={isEnhancingPrompt || isRefactoring}
                 onFocus={() => setIsInteracting(true)}
+                aria-label="Prompt input"
                 onBlur={() => {
                   // IMMEDIATE SYNC ON BLUR: Fixes race condition when clicking external buttons
                   updateConfig('prompt', localPrompt);
@@ -546,10 +554,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 onPaste={(e) => {
                   const items = e.clipboardData?.items;
                   if (!items) return;
-                  const files = Array.from(items as any as Iterable<DataTransferItem>)
-                    .filter((item) => item.type.startsWith('image/'))
-                    .map((item) => item.getAsFile())
-                    .filter((f): f is File => f !== null);
+                  const files = Array.from(items as any as Iterable<DataTransferItem>).reduce<
+                    File[]
+                  >((acc, item) => {
+                    if (!item.type.startsWith('image/')) return acc;
+                    const file = item.getAsFile();
+                    if (file !== null) acc.push(file);
+                    return acc;
+                  }, []);
                   if (files.length > 0) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -604,16 +616,21 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         exit="exit"
                         className="absolute bottom-full mb-3 right-0 w-64 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 shadow-2xl z-[100]"
                       >
-                        <label className="text-[9px] font-black text-zinc-500 uppercase tracking-widest block mb-2">
+                        <label
+                          htmlFor="negative-prompt-input"
+                          className="text-[9px] font-black text-zinc-500 uppercase tracking-widest block mb-2"
+                        >
                           Exclude from Image
                         </label>
                         <input
+                          id="negative-prompt-input"
                           type="text"
                           value={generationConfig.negativePrompt || ''}
                           onChange={(e) => updateConfig('negativePrompt', e.target.value)}
                           placeholder="Blurry, low quality, distortion..."
                           autoComplete="off"
                           ref={(el) => el?.focus()}
+                          aria-label="Negative prompt"
                           className="w-full h-8 bg-black/40 border border-white/5 rounded-lg px-3 text-[11px] text-zinc-300 outline-none placeholder-zinc-700 focus:border-red-500/30 transition-colors"
                         />
                       </MotionDiv>
@@ -644,11 +661,15 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         exit="exit"
                         className="absolute bottom-full mb-3 right-0 w-72 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 shadow-2xl z-[100]"
                       >
-                        <label className="text-[9px] font-black text-zinc-500 uppercase tracking-widest block mb-2">
+                        <label
+                          htmlFor="magic-edit-input"
+                          className="text-[9px] font-black text-zinc-500 uppercase tracking-widest block mb-2"
+                        >
                           Instructions to Edit
                         </label>
                         <div className="flex gap-2">
                           <input
+                            id="magic-edit-input"
                             type="text"
                             value={magicInstruction}
                             onChange={(e) => setMagicInstruction(e.target.value)}
@@ -656,6 +677,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             autoComplete="off"
                             ref={(el) => el?.focus()}
                             onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
+                            aria-label="Edit instructions"
                             className="flex-1 h-8 bg-black/40 border border-white/5 rounded-lg px-3 text-[11px] text-zinc-300 outline-none placeholder-zinc-700 focus:border-accent-500/30 transition-colors"
                           />
                           <button
@@ -1085,7 +1107,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               {isGenerating && (
                 <div
                   className="absolute left-0 top-0 bottom-0 bg-accent-500/20 transition-all duration-100 ease-linear z-0"
-                  style={{ width: `${Math.min((parseFloat(elapsedTime) / 120) * 100, 100)}%` }}
+                  style={{
+                    width: `${Math.min((parseFloat(elapsedTime) / 120) * 100, 100)}%`,
+                  }}
                 />
               )}
 

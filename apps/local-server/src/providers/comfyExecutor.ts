@@ -99,7 +99,13 @@ function findFirstComfyImageRef(historyJson: unknown, promptId: string): ComfyIm
 
   for (const output of Object.values(outputs)) {
     if (!isRecord(output) || !Array.isArray(output.images)) continue;
-    const image = output.images.find(isRecord);
+    let image: Record<string, unknown> | undefined;
+    for (const candidate of output.images) {
+      if (isRecord(candidate)) {
+        image = candidate;
+        break;
+      }
+    }
     if (!image || typeof image.filename !== 'string') continue;
     return {
       filename: image.filename,

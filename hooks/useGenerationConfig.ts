@@ -22,9 +22,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     DEFAULT_GENERATION_CONFIG,
   );
 
-  const maxAttachments = useMemo(() => {
-    return 5;
-  }, []);
+  const maxAttachments = 5;
 
   useEffect(() => {
     if (generationConfig.attachments.length > maxAttachments) {
@@ -99,27 +97,31 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
   const processFiles = useCallback(
     async (files: File[]) => {
       const filesToProcess = files.slice(0, maxAttachments);
-      const newAttachments: Attachment[] = [];
 
-      for (const file of filesToProcess) {
-        try {
-          const dataUrl = await new Promise<string>((resolve, reject) => {
-            const reader = new FileReader();
-            reader.onload = () => resolve(reader.result as string);
-            reader.onerror = reject;
-            reader.readAsDataURL(file);
-          });
+      const results = await Promise.all(
+        filesToProcess.map(async (file) => {
+          try {
+            const dataUrl = await new Promise<string>((resolve, reject) => {
+              const reader = new FileReader();
+              reader.onload = () => resolve(reader.result as string);
+              reader.onerror = reject;
+              reader.readAsDataURL(file);
+            });
 
-          newAttachments.push({
-            id: `att-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
-            name: file.name,
-            dataUrl,
-            strength: 0.25,
-          });
-        } catch (err) {
-          log(`Failed to read attachment "${file.name}": ${formatErrorMessage(err)}`);
-        }
-      }
+            return {
+              id: `att-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
+              name: file.name,
+              dataUrl,
+              strength: 0.25,
+            } as Attachment;
+          } catch (err) {
+            log(`Failed to read attachment "${file.name}": ${formatErrorMessage(err)}`);
+            return null;
+          }
+        }),
+      );
+
+      const newAttachments = results.filter((r): r is Attachment => r !== null);
 
       if (newAttachments.length > 0) {
         setGenerationConfig((prev) => {

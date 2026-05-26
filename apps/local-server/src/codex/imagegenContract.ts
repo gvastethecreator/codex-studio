@@ -1,4 +1,4 @@
-import { createProviderSessionContract } from '../../../../packages/shared/src';
+import { createProviderSessionContract } from '../../../../packages/shared/src/generationContracts';
 
 export const CODEX_IMAGEGEN_SESSION_CONTRACT = createProviderSessionContract({
   id: 'codex-imagegen-v1',

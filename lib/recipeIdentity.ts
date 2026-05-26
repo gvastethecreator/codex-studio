@@ -1,5 +1,5 @@
 import type { ImageGenerationConfig, RecipeId } from '../types';
-import { extractRecipeIdFromRecipeContext } from '../packages/shared/src';
+import { extractRecipeIdFromRecipeContext } from '../packages/shared/src/promptTransport';
 import { RECIPE_MODULES } from './recipeModules';
 
 export type RegisteredRecipeId = Exclude<RecipeId, null>;

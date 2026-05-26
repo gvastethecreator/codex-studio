@@ -42,8 +42,10 @@ async function scanFlatYamlFiles(dirPath: string, options: StyleManifestScanOpti
 
   const entries = await readdir(dirPath, { withFileTypes: true });
   return entries
-    .filter((entry) => entry.isFile() && entry.name.endsWith('.yaml'))
-    .map((entry) => entry.name)
+    .reduce<string[]>((acc, entry) => {
+      if (entry.isFile() && entry.name.endsWith('.yaml')) acc.push(entry.name);
+      return acc;
+    }, [])
     .sort((a, b) => a.localeCompare(b));
 }
 

@@ -57,11 +57,6 @@ const CarouselImageItem: React.FC<{
   const isDragging = useRef(false);
   const rafId = useRef<number | null>(null);
 
-  // Reset load state when ID changes to prevent showing stale image
-  useEffect(() => {
-    setIsLoaded(false);
-  }, [image.id]);
-
   // Determine which source to show (Generated vs Original Reference)
   const displaySrc =
     isComparing && image.config.attachments?.[0]?.dataUrl
@@ -105,14 +100,8 @@ const CarouselImageItem: React.FC<{
   }, [animate, isActive]);
 
   useEffect(() => {
-    target.current = { x: 0, y: 0, scale: 1 };
-    current.current = { x: 0, y: 0, scale: 1 };
-    setUiScale(1);
-    if (imgRef.current) imgRef.current.style.transform = 'translate3d(0, 0, 0) scale(1)';
-
-    // Check if image is already cached/loaded
     if (imgRef.current?.complete) setIsLoaded(true);
-  }, [image.id]);
+  }, []);
 
   const handleWheel = (e: React.WheelEvent) => {
     if (!isActive || isSliding) return;
@@ -236,12 +225,19 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   onActiveImageChange,
   transitionName,
 }) => {
-  // Initialize index synchronously to prevent "empty modal" flash
-  const [currentIndex, setCurrentIndex] = useState(() => {
+  const activeIndex = useMemo(() => {
     if (!activeImage || allImages.length === 0) return 0;
     const idx = allImages.findIndex((img) => img.id === activeImage.id);
     return idx !== -1 ? idx : 0;
-  });
+  }, [activeImage, allImages]);
+
+  const prevActiveImageIdRef = useRef(activeImage?.id);
+  const lastSetIndexRef = useRef(activeIndex);
+
+  if (prevActiveImageIdRef.current !== activeImage?.id) {
+    prevActiveImageIdRef.current = activeImage?.id;
+    lastSetIndexRef.current = activeIndex;
+  }
 
   const [direction, setDirection] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
@@ -257,72 +253,61 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
     };
   }, []);
   const [isComparing, setIsComparing] = useState(false);
-  const [isProcessingDownload, setIsProcessingDownload] = useState(false);
+  const isProcessingDownloadRef = useRef(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
   const navScrollRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (!activeImage) return;
-    const nextIndex = allImages.findIndex((img) => img.id === activeImage.id);
-    setCurrentIndex(nextIndex >= 0 ? nextIndex : 0);
-    setDirection(0);
-    setIsSliding(false);
-    setIsComparing(false);
-  }, [activeImage?.id, allImages]);
-
-  // Sync state if images array changes significantly (e.g. deletion)
-  useEffect(() => {
-    if (currentIndex >= allImages.length && allImages.length > 0) {
-      setCurrentIndex(allImages.length - 1);
-    }
-  }, [allImages.length, currentIndex]);
-
-  // Report active image change to parent
-  useEffect(() => {
-    if (currentIndex >= 0 && currentIndex < allImages.length) {
-      const id = allImages[currentIndex].id;
-      // Avoid redundant updates
-      if (activeImage?.id !== id) {
-        onActiveImageChange(id);
-      }
-    }
-  }, [currentIndex, allImages, onActiveImageChange, activeImage]);
+  if (activeIndex >= allImages.length && allImages.length > 0) {
+    const clampedIndex = allImages.length - 1;
+    lastSetIndexRef.current = clampedIndex;
+    onActiveImageChange(allImages[clampedIndex].id);
+  }
 
   const handleJumpTo = useCallback(
     (index: number) => {
-      if (index === currentIndex || isSliding || index < 0 || index >= allImages.length) return;
-      setDirection(index > currentIndex ? 1 : -1);
+      if (index === lastSetIndexRef.current || isSliding || index < 0 || index >= allImages.length)
+        return;
+      setDirection(index > lastSetIndexRef.current ? 1 : -1);
       setIsSliding(true);
-      setCurrentIndex(index);
       setIsComparing(false);
+      lastSetIndexRef.current = index;
+      onActiveImageChange(allImages[index].id);
 
       if (navScrollRef.current) {
         const btn = navScrollRef.current.children[index] as HTMLElement;
         if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       }
     },
-    [currentIndex, isSliding, allImages.length],
+    [isSliding, allImages, onActiveImageChange],
   );
 
   const handleNext = useCallback(() => {
     if (allImages.length === 0) return;
-    const nextIndex = (currentIndex + 1) % allImages.length;
+    const nextIndex = (lastSetIndexRef.current + 1) % allImages.length;
     handleJumpTo(nextIndex);
-  }, [currentIndex, allImages.length, handleJumpTo]);
+  }, [allImages.length, handleJumpTo]);
 
   const handlePrev = useCallback(() => {
     if (allImages.length === 0) return;
-    const prevIndex = (currentIndex - 1 + allImages.length) % allImages.length;
+    const prevIndex = (lastSetIndexRef.current - 1 + allImages.length) % allImages.length;
     handleJumpTo(prevIndex);
-  }, [currentIndex, allImages.length, handleJumpTo]);
+  }, [allImages.length, handleJumpTo]);
+
+  const handleNextRef = useRef(handleNext);
+  handleNextRef.current = handleNext;
+  const handlePrevRef = useRef(handlePrev);
+  handlePrevRef.current = handlePrev;
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
+  const isFullscreenRef = useRef(isFullscreen);
+  isFullscreenRef.current = isFullscreen;
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight') handleNext();
-      if (e.key === 'ArrowLeft') handlePrev();
-      if (e.key === 'Escape' && !isFullscreen) onClose();
-      // Hold space to compare
+      if (e.key === 'ArrowRight') handleNextRef.current();
+      if (e.key === 'ArrowLeft') handlePrevRef.current();
+      if (e.key === 'Escape' && !isFullscreenRef.current) onCloseRef.current();
       if (e.code === 'Space' && !e.repeat) setIsComparing(true);
     };
     const handleKeyUp = (e: KeyboardEvent) => {
@@ -334,15 +319,14 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       window.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('keyup', handleKeyUp);
     };
-  }, [handleNext, handlePrev, onClose, isFullscreen]);
+  }, []);
 
-  // Resolve current image safely
   const currentImage =
-    currentIndex >= 0 && currentIndex < allImages.length ? allImages[currentIndex] : activeImage;
+    activeIndex >= 0 && activeIndex < allImages.length ? allImages[activeIndex] : activeImage;
 
   const executeDownload = async () => {
-    if (!currentImage || isProcessingDownload) return;
-    setIsProcessingDownload(true);
+    if (!currentImage || isProcessingDownloadRef.current) return;
+    isProcessingDownloadRef.current = true;
 
     try {
       const promptSlug = currentImage.config.prompt ? currentImage.config.prompt : 'image';
@@ -356,7 +340,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
     } catch (e) {
       // Download failed
     } finally {
-      setIsProcessingDownload(false);
+      isProcessingDownloadRef.current = false;
     }
   };
 
@@ -400,7 +384,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 onClick={() => handleJumpTo(idx)}
                 className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
                             ${
-                              idx === currentIndex
+                              idx === activeIndex
                                 ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
                                 : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
                             }
@@ -435,7 +419,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="p-2 bg-zinc-900/60 hover:bg-red-500/20 rounded-xl text-zinc-500 hover:text-red-500 transition-all shadow-xl cursor-pointer"
+              className="p-2 bg-zinc-900/60 hover:bg-red-500/20 rounded-xl text-zinc-400 hover:text-red-500 transition-all shadow-xl cursor-pointer"
             >
               <X size={16} />
             </button>

@@ -12,10 +12,17 @@ interface UseStudioJobInspectorProps {
  * debug surfaces can inspect one persistent job without embedding fetch logic
  * inside AppContent.
  */
+interface JobDetailState {
+  detail: JobDetailResponse | null;
+  isLoading: boolean;
+}
+
 export function useStudioJobInspector({ studioJobs, addToast }: UseStudioJobInspectorProps) {
   const [selectedStudioJobId, setSelectedStudioJobId] = useState<string | null>(null);
-  const [selectedJobDetail, setSelectedJobDetail] = useState<JobDetailResponse | null>(null);
-  const [isLoadingSelectedJob, setIsLoadingSelectedJob] = useState(false);
+  const [jobDetailState, setJobDetailState] = useState<JobDetailState>({
+    detail: null,
+    isLoading: false,
+  });
 
   const selectedStudioJobUpdatedAt = useMemo(
     () => studioJobs.find((job) => job.id === selectedStudioJobId)?.updatedAt ?? null,
@@ -26,33 +33,27 @@ export function useStudioJobInspector({ studioJobs, addToast }: UseStudioJobInsp
     let cancelled = false;
 
     if (!selectedStudioJobId) {
-      setSelectedJobDetail(null);
-      setIsLoadingSelectedJob(false);
+      setJobDetailState({ detail: null, isLoading: false });
       return () => {
         cancelled = true;
       };
     }
 
-    setIsLoadingSelectedJob(true);
+    setJobDetailState((prev) => ({ ...prev, isLoading: true }));
 
     void getStudioJobDetail(selectedStudioJobId)
       .then((detail) => {
         if (!cancelled) {
-          setSelectedJobDetail(detail);
+          setJobDetailState({ detail, isLoading: false });
         }
       })
       .catch((error) => {
         if (!cancelled) {
-          setSelectedJobDetail(null);
+          setJobDetailState({ detail: null, isLoading: false });
           addToast(
             error instanceof Error ? error.message : 'Unable to load the selected job detail',
             'error',
           );
-        }
-      })
-      .finally(() => {
-        if (!cancelled) {
-          setIsLoadingSelectedJob(false);
         }
       });
 
@@ -67,13 +68,13 @@ export function useStudioJobInspector({ studioJobs, addToast }: UseStudioJobInsp
 
   const clearSelectedJob = useCallback(() => {
     setSelectedStudioJobId(null);
-    setSelectedJobDetail(null);
+    setJobDetailState({ detail: null, isLoading: false });
   }, []);
 
   return {
     selectedStudioJobId,
-    selectedJobDetail,
-    isLoadingSelectedJob,
+    selectedJobDetail: jobDetailState.detail,
+    isLoadingSelectedJob: jobDetailState.isLoading,
     inspectStudioJob,
     clearSelectedJob,
   };

@@ -98,10 +98,10 @@ function includesText(value: string | undefined, needle: string) {
 
 function parseAvoidRules(negativePrompt?: string) {
   if (!negativePrompt) return [];
-  return negativePrompt
-    .split(',')
-    .map((rule) => rule.trim())
-    .filter(Boolean);
+  return negativePrompt.split(',').flatMap((rule) => {
+    const trimmed = rule.trim();
+    return trimmed ? [trimmed] : [];
+  });
 }
 
 function isNonEmptyString(value: unknown) {
@@ -109,8 +109,7 @@ function isNonEmptyString(value: unknown) {
 }
 
 function sameStringList(a: readonly string[] = [], b: readonly string[] = []) {
-  if (a.length !== b.length) return false;
-  return a.every((value, index) => value === b[index]);
+  return a.length === b.length && a.every((value, index) => value === b[index]);
 }
 
 function hasAnyVisualDnaText(value: Record<string, unknown>) {
@@ -377,51 +376,48 @@ export function validateStyleManifestGraph(
         );
       }
       if (preset.taxonomy) {
+        const taxonomy = preset.taxonomy;
         const category = categoryByRef.get(ref);
-        if (preset.taxonomy.packId && preset.taxonomy.packId !== pack.id) {
+        if (taxonomy.packId && taxonomy.packId !== pack.id) {
           errors.push(
-            `Preset ${preset.id} taxonomy packId ${preset.taxonomy.packId} does not match ${pack.id}`,
+            `Preset ${preset.id} taxonomy packId ${taxonomy.packId} does not match ${pack.id}`,
           );
         }
-        if (preset.taxonomy.packName && preset.taxonomy.packName !== pack.name) {
+        if (taxonomy.packName && taxonomy.packName !== pack.name) {
           errors.push(
-            `Preset ${preset.id} taxonomy packName ${preset.taxonomy.packName} does not match ${pack.name}`,
+            `Preset ${preset.id} taxonomy packName ${taxonomy.packName} does not match ${pack.name}`,
           );
         }
-        if (category && preset.taxonomy.categoryId && preset.taxonomy.categoryId !== category.id) {
+        if (category && taxonomy.categoryId && taxonomy.categoryId !== category.id) {
           errors.push(
-            `Preset ${preset.id} taxonomy categoryId ${preset.taxonomy.categoryId} does not match ${category.id}`,
+            `Preset ${preset.id} taxonomy categoryId ${taxonomy.categoryId} does not match ${category.id}`,
           );
         }
-        if (
-          category &&
-          preset.taxonomy.categoryName &&
-          preset.taxonomy.categoryName !== category.name
-        ) {
+        if (category && taxonomy.categoryName && taxonomy.categoryName !== category.name) {
           errors.push(
-            `Preset ${preset.id} taxonomy categoryName ${preset.taxonomy.categoryName} does not match ${category.name}`,
+            `Preset ${preset.id} taxonomy categoryName ${taxonomy.categoryName} does not match ${category.name}`,
           );
         }
         if (
-          preset.taxonomy.supportedTasks &&
-          !sameStringList(preset.taxonomy.supportedTasks, preset.supportedTasks)
+          taxonomy.supportedTasks &&
+          !sameStringList(taxonomy.supportedTasks, preset.supportedTasks)
         ) {
           errors.push(`Preset ${preset.id} taxonomy supportedTasks drift from manifest`);
         }
-        if (preset.taxonomy.tags && !sameStringList(preset.taxonomy.tags, preset.tags)) {
+        if (taxonomy.tags && !sameStringList(taxonomy.tags, preset.tags)) {
           errors.push(`Preset ${preset.id} taxonomy tags drift from manifest`);
         }
-        if (preset.taxonomy.domain && preset.domain && preset.taxonomy.domain !== preset.domain) {
+        if (taxonomy.domain && preset.domain && taxonomy.domain !== preset.domain) {
           errors.push(
-            `Preset ${preset.id} taxonomy domain ${preset.taxonomy.domain} does not match ${preset.domain}`,
+            `Preset ${preset.id} taxonomy domain ${taxonomy.domain} does not match ${preset.domain}`,
           );
         }
       }
     }
 
-    const categoryRefs = pack.categories.flatMap((category) => category.presetRefs);
+    const categoryRefs = new Set(pack.categories.flatMap((category) => category.presetRefs));
     for (const ref of pack.presetRefs) {
-      if (!categoryRefs.includes(ref)) {
+      if (!categoryRefs.has(ref)) {
         errors.push(`Pack ${pack.id} preset ref is missing from categories: ${ref}`);
       }
     }
@@ -584,8 +580,8 @@ export function searchStylePresetCatalog(
 
   for (const entry of catalog.presets) {
     const { manifest, taxonomy } = entry;
-    const tags = taxonomy.tags.map((value) => value.toLowerCase());
-    const supportedTasks = taxonomy.supportedTasks.map((value) => value.toLowerCase());
+    const tags = new Set(taxonomy.tags.map((value) => value.toLowerCase()));
+    const supportedTasks = new Set(taxonomy.supportedTasks.map((value) => value.toLowerCase()));
     const searchableText = [
       manifest.id,
       manifest.name,
@@ -609,8 +605,8 @@ export function searchStylePresetCatalog(
     if (categoryId && normalizeSearchText(taxonomy.categoryId) !== categoryId) continue;
     if (categoryName && !includesText(taxonomy.categoryName, categoryName)) continue;
     if (domain && !includesText(taxonomy.domain ?? manifest.domain, domain)) continue;
-    if (tag && !tags.includes(tag)) continue;
-    if (task && !supportedTasks.includes(task)) continue;
+    if (tag && !tags.has(tag)) continue;
+    if (task && !supportedTasks.has(task)) continue;
 
     results.push({
       id: manifest.id,

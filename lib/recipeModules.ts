@@ -1,5 +1,8 @@
-import type { GenerationProviderId, GenerationTaskKind } from '../packages/shared/src';
-import { createGenerationTaskSpec } from '../packages/shared/src';
+import {
+  createGenerationTaskSpec,
+  type GenerationProviderId,
+  type GenerationTaskKind,
+} from '../packages/shared/src/generationContracts';
 import type { ImageGenerationConfig, RecipeId } from '../types';
 import { buildRecipeContext } from './recipeContext';
 import { buildRecipeProviderDirectives } from './recipeProviderDirectives';
@@ -893,7 +896,7 @@ export function validateRecipeParams(
       (parameter.kind === 'enum' || parameter.options?.length) &&
       optionValue &&
       parameter.options &&
-      !parameter.options.includes(optionValue)
+      !new Set(parameter.options).has(optionValue)
     ) {
       errors.push(
         `Recipe Module ${module.id} parameter ${parameter.id} has unsupported option: ${optionValue}.`,

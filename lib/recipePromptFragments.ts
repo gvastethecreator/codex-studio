@@ -77,7 +77,10 @@ export function getSpritesheetBackgroundDirective(background: string, customColo
 }
 
 export function createSpritesheetCellDirectives(cellPrompts: RecipeParamRecord) {
-  return Object.entries(cellPrompts)
-    .filter(([, prompt]) => typeof prompt === 'string' && prompt.trim() !== '')
-    .map(([index, prompt]) => `Cell ${Number(index) + 1}: ${String(prompt)}`);
+  return Object.entries(cellPrompts).reduce<string[]>((acc, [index, prompt]) => {
+    if (typeof prompt === 'string' && prompt.trim() !== '') {
+      acc.push(`Cell ${Number(index) + 1}: ${String(prompt)}`);
+    }
+    return acc;
+  }, []);
 }

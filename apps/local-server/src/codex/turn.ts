@@ -103,13 +103,12 @@ function mimeForPath(filePath: string) {
 
 function extractAssistantText(notifications: JsonRpcMessage[]) {
   return notifications
-    .map((message) => {
+    .flatMap((message) => {
       const item = message.params?.item;
-      if (!item || item.type !== 'agentMessage') return '';
-      if (typeof item.text === 'string') return item.text;
-      return '';
+      if (!item || item.type !== 'agentMessage') return [];
+      if (typeof item.text === 'string') return [item.text];
+      return [];
     })
-    .filter(Boolean)
     .join('\n');
 }
 

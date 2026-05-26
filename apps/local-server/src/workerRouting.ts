@@ -1,8 +1,8 @@
 import {
   isGenerationTaskKind,
   type GenerationTaskKind,
-  type Job,
-} from '../../../packages/shared/src';
+} from '../../../packages/shared/src/generationContracts';
+import type { Job } from '../../../packages/shared/src/types';
 
 export type WorkerRuntimeTarget = 'dry_run' | 'codex' | 'external';
 

@@ -1,11 +1,13 @@
 import {
   createCompiledProviderInput,
   createGenerationTaskSpec,
-  isRecipeProviderDirectives,
-  serializeRecipeProviderDirectives,
   type CompiledProviderInput,
   type GenerationTaskSpec,
-} from '../../../../packages/shared/src';
+} from '../../../../packages/shared/src/generationContracts';
+import {
+  isRecipeProviderDirectives,
+  serializeRecipeProviderDirectives,
+} from '../../../../packages/shared/src/recipeProviderDirectives';
 import {
   CODEX_IMAGEGEN_DENOISE_INSTRUCTION,
   CODEX_IMAGEGEN_SESSION_CONTRACT,

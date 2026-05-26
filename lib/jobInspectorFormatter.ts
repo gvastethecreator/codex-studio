@@ -207,8 +207,10 @@ function splitIntoBlocks(text: string): JobInspectorTextBlock[] {
 
   return trimmed
     .split(/\n{2,}/)
-    .map((block) => block.trim())
-    .filter(Boolean)
+    .flatMap((block) => {
+      const trimmedBlock = block.trim();
+      return trimmedBlock ? [trimmedBlock] : [];
+    })
     .map((block) => ({
       kind: block.split('\n').length >= 4 && /[{}[\]:]/.test(block) ? 'code' : 'paragraph',
       text: block,
@@ -318,16 +320,15 @@ function extractFacts(value: unknown) {
       if (leftPriority !== rightPriority) return leftPriority - rightPriority;
       return left.depth - right.depth;
     })
-    .map((entry) => ({
-      label: humanizeLabel(entry.path),
-      value: formatFactValue(entry.path, entry.value),
-    }))
-    .filter((entry) => {
-      const key = `${entry.label}:${entry.value}`;
-      if (seen.has(key) || entry.value === '—') return false;
+    .reduce<{ label: string; value: string }[]>((acc, entry) => {
+      const label = humanizeLabel(entry.path);
+      const formatted = formatFactValue(entry.path, entry.value);
+      const key = `${label}:${formatted}`;
+      if (seen.has(key) || formatted === '—') return acc;
       seen.add(key);
-      return true;
-    })
+      acc.push({ label, value: formatted });
+      return acc;
+    }, [])
     .slice(0, MAX_FACTS);
 }
 
@@ -385,7 +386,10 @@ function extractReferenceValuesFromText(text: string) {
     if (libraryMatch[1]) refs.push(libraryMatch[1]);
   }
 
-  return refs.map((value) => stripTrailingPunctuation(value.trim())).filter(Boolean);
+  return refs.flatMap((value) => {
+    const stripped = stripTrailingPunctuation(value.trim());
+    return stripped ? [stripped] : [];
+  });
 }
 
 function joinBaseUrl(baseUrl: string, path: string) {

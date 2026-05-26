@@ -122,17 +122,21 @@ export async function listUiChunks(distDir = DEFAULT_DIST_DIR): Promise<UiChunkI
   }
 
   const entries = await readdir(distDir, { withFileTypes: true });
-  const chunks = await Promise.all(
-    entries
-      .filter((entry) => entry.isFile() && entry.name.endsWith('.js'))
-      .map(async (entry): Promise<UiChunkInfo> => {
-        const filePath = path.join(distDir, entry.name);
-        const source = await Bun.file(filePath).arrayBuffer();
-        const bytes = source.byteLength;
-        const gzipBytes = gzipSync(Buffer.from(source)).byteLength;
-        return { name: entry.name, bytes, gzipBytes };
-      }),
-  );
+  const chunkPromises: Promise<UiChunkInfo>[] = [];
+  for (const entry of entries) {
+    if (!entry.isFile() || !entry.name.endsWith('.js')) continue;
+    const filePath = path.join(distDir, entry.name);
+    chunkPromises.push(
+      Bun.file(filePath)
+        .arrayBuffer()
+        .then((source) => ({
+          name: entry.name,
+          bytes: source.byteLength,
+          gzipBytes: gzipSync(Buffer.from(source)).byteLength,
+        })),
+    );
+  }
+  const chunks = await Promise.all(chunkPromises);
 
   return chunks.sort((a, b) => b.bytes - a.bytes || a.name.localeCompare(b.name));
 }

@@ -3,7 +3,7 @@ import {
   mergeEditableStudioSettingsPatch,
   normalizeEditableStudioSettings,
   type EditableStudioSettings,
-} from '../../../packages/shared/src';
+} from '../../../packages/shared/src/studioSettings';
 
 export const EDITABLE_STUDIO_SETTINGS_KEY = 'editable_studio_settings';
 

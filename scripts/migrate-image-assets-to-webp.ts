@@ -52,8 +52,10 @@ async function ensureParentDir(targetPath: string) {
 }
 
 async function convertToWebp(sourcePath: string, destinationPath: string) {
-  await ensureParentDir(destinationPath);
-  await sharp(sourcePath).webp(WEBP_OPTIONS).toFile(destinationPath);
+  await Promise.all([
+    ensureParentDir(destinationPath),
+    sharp(sourcePath).webp(WEBP_OPTIONS).toFile(destinationPath),
+  ]);
 
   const destinationStats = await stat(destinationPath).catch(() => null);
   if (!destinationStats || destinationStats.size <= 0) {

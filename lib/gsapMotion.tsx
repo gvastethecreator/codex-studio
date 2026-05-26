@@ -294,8 +294,9 @@ export function AnimatePresence({
   mode?: 'wait' | 'sync' | 'popLayout';
   custom?: unknown;
 }>) {
+  const value = useMemo(() => ({ initial, custom }), [initial, custom]);
   return (
-    <PresenceConfigContext.Provider value={{ initial, custom }}>
+    <PresenceConfigContext.Provider value={value}>
       <>{children}</>
     </PresenceConfigContext.Provider>
   );

@@ -384,16 +384,20 @@ export async function embedJobAssets(
 ): Promise<EmbedResult[]> {
   const assetsDir = resolveLibraryPathFromRoot(libraryDir, 'assets');
   if (!existsSync(assetsDir)) return [];
-  const results: EmbedResult[] = [];
-  for (const entry of await Array.fromAsync(
+  const entries = await Array.fromAsync(
     new Bun.Glob(`${jobId}*.*`).scan({ cwd: assetsDir, onlyFiles: true }),
-  )) {
-    const filePath = path.join(assetsDir, entry);
-    try {
-      results.push(await embedMetadata(filePath, metadata));
-    } catch {
-      // Bulk migration should keep going; callers can compare result counts.
-    }
-  }
+  );
+  const results = (
+    await Promise.all(
+      entries.map(async (entry) => {
+        const filePath = path.join(assetsDir, entry);
+        try {
+          return await embedMetadata(filePath, metadata);
+        } catch {
+          return null;
+        }
+      }),
+    )
+  ).filter((r): r is EmbedResult => r !== null);
   return results;
 }

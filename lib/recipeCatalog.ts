@@ -140,9 +140,10 @@ export function createRecipeCatalog(modules: RecipeModule[] = listRecipeModules(
       parameters: module.parameters,
       defaultParams: createRecipeDefaultParams(module),
       parameterGroups: getParameterGroups(module.parameters),
-      requiredParameterIds: module.parameters
-        .filter((parameter) => parameter.required)
-        .map((parameter) => parameter.id),
+      requiredParameterIds: module.parameters.reduce<string[]>((acc, parameter) => {
+        if (parameter.required) acc.push(parameter.id);
+        return acc;
+      }, []),
     };
   });
 }
@@ -158,7 +159,7 @@ export function validateRecipeCatalog(catalog: RecipeCatalogEntry[] = RECIPE_CAT
     if (seenIds.has(entry.id)) errors.push(`Duplicate Recipe Module catalog id: ${entry.id}`);
     seenIds.add(entry.id);
     if (!moduleIds.has(entry.id)) errors.push(`Recipe catalog entry has no module: ${entry.id}`);
-    if (!entry.supportedTasks.includes(entry.defaultTask)) {
+    if (!new Set(entry.supportedTasks).has(entry.defaultTask)) {
       errors.push(`Recipe Module ${entry.id} default task is not supported: ${entry.defaultTask}`);
     }
     if (entry.supportedProviders.length === 0) {
@@ -217,8 +218,10 @@ export function searchRecipeCatalog(
       .toLowerCase();
 
     if (query && !searchableText.includes(query)) continue;
-    if (filters.task && !entry.supportedTasks.includes(filters.task)) continue;
-    if (filters.providerId && !entry.supportedProviders.includes(filters.providerId)) continue;
+    const supportedTasksSet = new Set(entry.supportedTasks);
+    const supportedProvidersSet = new Set(entry.supportedProviders);
+    if (filters.task && !supportedTasksSet.has(filters.task)) continue;
+    if (filters.providerId && !supportedProvidersSet.has(filters.providerId)) continue;
     if (
       parameterId &&
       !entry.parameters.some((parameter) => normalize(parameter.id) === parameterId)

@@ -62,8 +62,14 @@ export async function createFalAssetRequestFields(
   const fields: FalAssetRequestFields = {};
   const referenceImageUrls: string[] = [];
 
-  for (const asset of assets) {
-    const sourceUrl = await resolveHostedAssetUrl(asset, dependencies);
+  const resolvedUrls = await Promise.all(
+    assets.map(async (asset) => ({
+      asset,
+      sourceUrl: await resolveHostedAssetUrl(asset, dependencies),
+    })),
+  );
+
+  for (const { asset, sourceUrl } of resolvedUrls) {
     if (!sourceUrl) continue;
 
     if ((asset.role === 'input' || asset.role === 'external_output') && !fields.image_url) {

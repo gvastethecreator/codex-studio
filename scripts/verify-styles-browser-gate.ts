@@ -96,7 +96,10 @@ async function getResourceNames(page: Page) {
 }
 
 function filterLogs(entries: BrowserLogEntry[], captureStart: number) {
-  return entries.filter((entry) => entry.observedAt >= captureStart).map((entry) => entry.text);
+  return entries.reduce<string[]>((acc, entry) => {
+    if (entry.observedAt >= captureStart) acc.push(entry.text);
+    return acc;
+  }, []);
 }
 
 function toFriendlyBrowserError(error: unknown) {

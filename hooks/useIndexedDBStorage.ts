@@ -12,42 +12,46 @@ import { runtimeLogger } from '../utils/runtimeLogger';
  * @param {T} initialValue The initial value to use if no value is found in IndexedDB.
  * @returns A stateful value, and a function to update it, analogous to `useState`.
  */
+interface IDBState<T> {
+  value: T;
+  initialized: boolean;
+}
+
 function useIndexedDBStorage<T>(
   key: string,
   initialValue: T,
 ): [T, (value: T | ((val: T) => T)) => void] {
-  const [storedValue, setStoredValue] = useState<T>(initialValue);
-  const [isInitialized, setIsInitialized] = useState(false);
+  const [state, setState] = useState<IDBState<T>>({ value: initialValue, initialized: false });
   const timeoutRef = useRef<number | null>(null);
 
-  // Load from IDB on mount
   useEffect(() => {
     let isMounted = true;
     get<T>(key)
-      .then((value) => {
+      .then((loaded) => {
         if (isMounted) {
-          if (value !== undefined) {
-            setStoredValue(value);
-          }
-          setIsInitialized(true);
+          setState({
+            value: loaded !== undefined ? loaded : initialValue,
+            initialized: true,
+          });
         }
       })
       .catch((error) => {
         runtimeLogger.error(`Error reading IndexedDB key "${key}"`, error);
-        if (isMounted) setIsInitialized(true);
+        if (isMounted) setState((prev) => ({ ...prev, initialized: true }));
       });
 
     return () => {
       isMounted = false;
     };
-  }, [key]);
+  }, [key, initialValue]);
 
   const setValue = useCallback(
     (value: T | ((val: T) => T)) => {
       try {
-        setStoredValue((prev) => {
-          return value instanceof Function ? value(prev) : value;
-        });
+        setState((prev) => ({
+          ...prev,
+          value: value instanceof Function ? value(prev.value) : value,
+        }));
       } catch (error) {
         runtimeLogger.error(`Error updating IndexedDB-backed state for "${key}"`, error);
       }
@@ -55,15 +59,14 @@ function useIndexedDBStorage<T>(
     [key],
   );
 
-  // Use an effect to save to IDB whenever storedValue changes
   useEffect(() => {
-    if (!isInitialized) return;
+    if (!state.initialized) return;
 
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
     timeoutRef.current = window.setTimeout(() => {
-      set(key, storedValue).catch((error) => {
+      set(key, state.value).catch((error) => {
         runtimeLogger.error(`Error setting IndexedDB key "${key}"`, error);
       });
     }, 300);
@@ -73,9 +76,9 @@ function useIndexedDBStorage<T>(
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [key, storedValue, isInitialized]);
+  }, [key, state.value, state.initialized]);
 
-  return [storedValue, setValue];
+  return [state.value, setValue];
 }
 
 export default useIndexedDBStorage;

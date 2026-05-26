@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import type { HealthResponse } from '../packages/shared/src';
 import type { Toast } from '../types';
 import {
@@ -50,13 +50,13 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
     }
   }, [log]);
 
-  useEffect(() => {
-    if (!hasSeenOnboarding && shouldAutoOpen) {
-      setHasSeenOnboarding(true);
-      setIsOpen(true);
-      void refreshHealth();
-    }
-  }, [hasSeenOnboarding, refreshHealth, setHasSeenOnboarding, shouldAutoOpen]);
+  const autoOpenedRef = useRef(false);
+  if (!autoOpenedRef.current && !hasSeenOnboarding && shouldAutoOpen) {
+    autoOpenedRef.current = true;
+    setHasSeenOnboarding(true);
+    setIsOpen(true);
+    void refreshHealth();
+  }
 
   const openOnboarding = useCallback(() => {
     setIsOpen(true);

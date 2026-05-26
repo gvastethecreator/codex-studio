@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useRef } from 'react';
-import { useState } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
 import type { Attachment, GeneratedImageWithConfig, RecipeId } from '../types';
 import type { HashRouterState } from './useHashRouter';
@@ -53,17 +52,14 @@ export function useStudioNavigation({
   openModalRoute,
   closeOverlay,
 }: UseStudioNavigationProps) {
-  const [direction, setDirection] = useState(0);
   const previousViewIndexRef = useRef(0);
   const currentView: 'studio' | 'recipes' = route.view === 'studio' ? 'studio' : 'recipes';
-
-  useEffect(() => {
-    const currentIndex = route.view === 'studio' ? 0 : route.view === 'recipes' ? 1 : 2;
-    if (currentIndex !== previousViewIndexRef.current) {
-      setDirection(currentIndex > previousViewIndexRef.current ? 1 : -1);
-      previousViewIndexRef.current = currentIndex;
-    }
-  }, [route.view]);
+  const currentViewIndex = route.view === 'studio' ? 0 : route.view === 'recipes' ? 1 : 2;
+  let direction = 0;
+  if (currentViewIndex !== previousViewIndexRef.current) {
+    direction = currentViewIndex > previousViewIndexRef.current ? 1 : -1;
+    previousViewIndexRef.current = currentViewIndex;
+  }
 
   useEffect(() => {
     startViewTransition(() => {
@@ -71,23 +67,15 @@ export function useStudioNavigation({
         if (activeRecipe !== route.activeRecipeId) {
           setActiveRecipe(route.activeRecipeId);
         }
-        return;
-      }
-
-      if (activeRecipe) {
+      } else if (activeRecipe) {
         setActiveRecipe(null);
       }
-    });
-  }, [activeRecipe, route.activeRecipeId, route.view, setActiveRecipe]);
 
-  useEffect(() => {
-    startViewTransition(() => {
       if (route.overlay === 'editor') {
         if (!imageToEdit) {
           closeOverlay();
           return;
         }
-
         setIsEditorOpen(true);
         return;
       }
@@ -106,13 +94,16 @@ export function useStudioNavigation({
       }
     });
   }, [
+    activeRecipe,
     closeModal,
     closeOverlay,
     imageToEdit,
     isEditorOpen,
     isModalOpen,
-    modalImage,
+    route.activeRecipeId,
     route.overlay,
+    route.view,
+    setActiveRecipe,
     setImageToEdit,
     setIsEditorOpen,
   ]);

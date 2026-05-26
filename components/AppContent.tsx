@@ -42,6 +42,11 @@ export const AppContent: React.FC<AppContentProps> = () => {
       <main
         className="relative z-10 flex w-full flex-1 min-h-0 overflow-hidden"
         onClick={shell.root.onMainClick}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') shell.root.onMainClick();
+        }}
+        role="button"
+        tabIndex={0}
       >
         <div className="relative min-w-0 flex-1 overflow-hidden">
           <StudioViewport {...shell.viewport} />

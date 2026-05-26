@@ -3,7 +3,7 @@ import {
   createGenerationTaskSpec,
   createProviderSessionContract,
   type CompiledProviderInput,
-} from '../../../../packages/shared/src';
+} from '../../../../packages/shared/src/generationContracts';
 import type { GenerationProviderJob } from './types';
 
 export type DryRunCompiledInput = CompiledProviderInput<{

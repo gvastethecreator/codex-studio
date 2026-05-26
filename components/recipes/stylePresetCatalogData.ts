@@ -47,8 +47,10 @@ export async function loadStylePresetCatalog(): Promise<LoadedStylePresetCatalog
   if (catalogPromise) return catalogPromise;
 
   catalogPromise = (async () => {
-    const packs = await loadYamlObjects<StylePackManifest>(packManifestFiles);
-    const presets = await loadYamlObjects<StylePresetManifest>(presetManifestFiles);
+    const [packs, presets] = await Promise.all([
+      loadYamlObjects<StylePackManifest>(packManifestFiles),
+      loadYamlObjects<StylePresetManifest>(presetManifestFiles),
+    ]);
     const graph = validateStyleManifestGraph(packs, presets);
     const catalog = createStylePresetCatalog(packs, presets);
     const loaded: LoadedStylePresetCatalog = {

@@ -2,15 +2,17 @@ import {
   createCompiledProviderInput,
   createGenerationTaskSpec,
   createProviderSessionContract,
-  isRecipeProviderDirectives,
-  serializeRecipeProviderDirectives,
   type CompiledProviderInput,
   type GenerationOutputContract,
   type GenerationProviderId,
   type GenerationTaskAssetRef,
   type GenerationTaskKind,
   type GenerationTaskSpec,
-} from '../../../../packages/shared/src';
+} from '../../../../packages/shared/src/generationContracts';
+import {
+  isRecipeProviderDirectives,
+  serializeRecipeProviderDirectives,
+} from '../../../../packages/shared/src/recipeProviderDirectives';
 import type { GenerationProviderJob } from './types';
 
 export type HostedImageApiProviderId = 'google' | 'fal';

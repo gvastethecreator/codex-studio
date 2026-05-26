@@ -54,8 +54,12 @@ async function listTemplateFiles(rootDir: string) {
   });
 
   return entries
-    .filter((entry) => entry.isFile() && entry.name.endsWith('.template.yaml'))
-    .map((entry) => path.join(absoluteTemplateDir, entry.name))
+    .reduce<string[]>((acc, entry) => {
+      if (entry.isFile() && entry.name.endsWith('.template.yaml')) {
+        acc.push(path.join(absoluteTemplateDir, entry.name));
+      }
+      return acc;
+    }, [])
     .sort((a, b) => a.localeCompare(b));
 }
 
@@ -84,11 +88,13 @@ function validateTemplate({
   if (!Array.isArray(manifest.supportedTasks) || manifest.supportedTasks.length === 0) {
     violations.push(`${repoPath} must declare supportedTasks`);
   }
+  const supportedTasksSet = new Set(manifest.supportedTasks);
+  const taxonomySupportedTasksSet = new Set(manifest.taxonomy?.supportedTasks ?? []);
   for (const task of requiredTemplateTasks.get(fileName) ?? []) {
-    if (!manifest.supportedTasks.includes(task)) {
+    if (!supportedTasksSet.has(task)) {
       violations.push(`${repoPath} missing supported task ${task}`);
     }
-    if (!manifest.taxonomy?.supportedTasks?.includes(task)) {
+    if (!taxonomySupportedTasksSet.has(task)) {
       violations.push(`${repoPath} taxonomy missing supported task ${task}`);
     }
   }

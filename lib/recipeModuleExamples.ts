@@ -1,5 +1,9 @@
-import type { GenerationProviderId, GenerationTaskKind } from '../packages/shared/src';
-import { createGenerationTaskSpec, isGenerationTaskKind } from '../packages/shared/src';
+import {
+  createGenerationTaskSpec,
+  isGenerationTaskKind,
+  type GenerationProviderId,
+  type GenerationTaskKind,
+} from '../packages/shared/src/generationContracts';
 import type { RecipeParameterDescriptor } from './recipeModules';
 
 export type RecipeModuleExampleId = 'sprite-sheet-grid-v1' | 'texture-material-tile-v1';
@@ -180,6 +184,7 @@ export function validateRecipeModuleExamples(
   const errors: string[] = [];
   const seenIds = new Set<string>();
   const coveredTasks = new Set<GenerationTaskKind>();
+  const exampleProvidersSet = new Set(EXAMPLE_PROVIDERS);
 
   for (const example of examples) {
     const taskValue = String(example.task);
@@ -205,7 +210,7 @@ export function validateRecipeModuleExamples(
       errors.push(`Recipe Module example ${example.id} has no supported providers.`);
     }
     for (const providerId of example.supportedProviders) {
-      if (!EXAMPLE_PROVIDERS.includes(providerId)) {
+      if (!exampleProvidersSet.has(providerId)) {
         errors.push(
           `Recipe Module example ${example.id} uses non Codex-first provider: ${providerId}.`,
         );

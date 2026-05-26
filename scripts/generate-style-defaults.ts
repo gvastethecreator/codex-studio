@@ -579,7 +579,8 @@ async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: strin
 async function waitForJob(jobId: string) {
   while (true) {
     const jobs = await request<Job[]>('/api/jobs');
-    const job = jobs.find((candidate) => candidate.id === jobId);
+    const jobsById = new Map(jobs.map((candidate) => [candidate.id, candidate]));
+    const job = jobsById.get(jobId);
     if (!job) throw new Error(`Job ${jobId} disappeared from /api/jobs`);
     if (job.status === 'completed') return job;
     if (job.status === 'failed' || job.status === 'cancelled') {
@@ -643,9 +644,10 @@ const categoryFilters = new Set(
       ? categoryFilterArg.split('|')
       : [categoryFilterArg]
     : []
-  )
-    .map((value) => value.trim())
-    .filter(Boolean),
+  ).flatMap((value) => {
+    const trimmed = value.trim();
+    return trimmed ? [trimmed] : [];
+  }),
 );
 const force = process.argv.includes('--force');
 const parallel = Math.max(1, Number(argValue('parallel') || 1));

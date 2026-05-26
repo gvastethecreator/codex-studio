@@ -83,7 +83,17 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
             </MotionDiv>
           )}
         </AnimatePresence>
-        {isOpen && <div className="fixed inset-0 z-[-1]" onClick={() => setIsOpen(false)} />}
+        {isOpen && (
+          <div
+            className="fixed inset-0 z-[-1]"
+            onClick={() => setIsOpen(false)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') setIsOpen(false);
+            }}
+            role="button"
+            tabIndex={0}
+          />
+        )}
       </div>
     </div>
   );
@@ -129,6 +139,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
               type="color"
               value={color}
               onChange={(e) => onChange(e.target.value)}
+              aria-label="Pick custom color"
               className="absolute opacity-0 pointer-events-none"
             />
           </MotionDiv>

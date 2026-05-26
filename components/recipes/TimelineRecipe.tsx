@@ -60,6 +60,7 @@ const TIME_OPTIONS = (
 
 const MOTION_OPTIONS = getRecipeOptions(TIMELINE_MODULE, 'motionAmount');
 const LIGHTING_OPTIONS = getRecipeOptions(TIMELINE_MODULE, 'lightingMode');
+const EMPTY_IMAGES: GeneratedImageWithConfig[] = [];
 
 export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   config,
@@ -68,7 +69,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   onFileSelect,
   onGenerate,
   isGenerating,
-  images = [],
+  images = EMPTY_IMAGES,
   onSelectImage,
 }) => {
   // --- Persistent UI State ---
@@ -112,21 +113,17 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
 
   const ratioValue = useMemo(() => RATIO_MAP[config.aspectRatio] || 1.777, [config.aspectRatio]);
 
-  // RESTORE SESSION ORIGIN LOGIC
-  useEffect(() => {
-    if (sessionOrigin) return;
+  if (!sessionOrigin) {
     const anchorAtt = config.attachments.find((a) => a.name.includes('(Anchor)'));
     if (anchorAtt) {
       setSessionOrigin({ id: anchorAtt.id, src: anchorAtt.dataUrl });
-      return;
-    }
-    if (config.attachments.length > 0) {
+    } else if (config.attachments.length > 0) {
       setSessionOrigin({
         id: config.attachments[0].id,
         src: config.attachments[0].dataUrl,
       });
     }
-  }, [config.attachments, sessionOrigin]);
+  }
 
   // Helper: Extract temporal index safely
   const getSequenceIndex = (imageConfig?: ImageGenerationConfig): number =>
@@ -265,64 +262,70 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
     [updateConfig, sessionOrigin, scrollToItem, activeImage, timelineItems, setDirection],
   );
 
+  const scrollToItemRef = useRef(scrollToItem);
+  scrollToItemRef.current = scrollToItem;
+
   // Sync Scroll on Active Image Change
   useEffect(() => {
     if (activeImage && timelineItems.length > 0) {
       const matchedItem = timelineItems.find((item) => item.src === activeImage.dataUrl);
       if (matchedItem) {
-        // Double RAF to ensure DOM is ready after React render cycle
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
-            scrollToItem(matchedItem.id);
+            scrollToItemRef.current(matchedItem.id);
           });
         });
       }
     }
-  }, [activeImage, timelineItems, scrollToItem]);
+  }, [activeImage, timelineItems]);
 
-  // Auto-select newly generated frames
   const prevIsGenerating = useRef(isGenerating);
-  useEffect(() => {
-    if (prevIsGenerating.current && !isGenerating) {
-      // Generation just finished
-      const newestImage = images[0];
-      if (newestImage && hasRecipeIdentity(newestImage.config, 'timeline')) {
-        const matchedItem = timelineItems.find((item) => item.src === newestImage.src);
-        if (matchedItem && activeImage?.dataUrl !== matchedItem.src) {
-          handleItemClick(matchedItem);
-        }
+  if (prevIsGenerating.current && !isGenerating) {
+    const newestImage = images[0];
+    if (newestImage && hasRecipeIdentity(newestImage.config, 'timeline')) {
+      const matchedItem = timelineItems.find((item) => item.src === newestImage.src);
+      if (matchedItem && activeImage?.dataUrl !== matchedItem.src) {
+        handleItemClick(matchedItem);
       }
     }
-    prevIsGenerating.current = isGenerating;
-  }, [isGenerating, images, timelineItems, handleItemClick, activeImage]);
+  }
+  prevIsGenerating.current = isGenerating;
+
+  const timelineItemsRef = useRef(timelineItems);
+  timelineItemsRef.current = timelineItems;
+  const activeImageRef = useRef(activeImage);
+  activeImageRef.current = activeImage;
+  const handleItemClickRef = useRef(handleItemClick);
+  handleItemClickRef.current = handleItemClick;
 
   // Keyboard Navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (timelineItems.length === 0 || !activeImage) return;
+      const items = timelineItemsRef.current;
+      const active = activeImageRef.current;
+      if (items.length === 0 || !active) return;
 
-      // Don't trigger if user is typing in an input
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
 
-      const currentIndex = timelineItems.findIndex((item) => item.src === activeImage.dataUrl);
+      const currentIndex = items.findIndex((item) => item.src === active.dataUrl);
       if (currentIndex === -1) return;
 
       if (e.key === 'ArrowLeft') {
         e.preventDefault();
         if (currentIndex > 0) {
-          handleItemClick(timelineItems[currentIndex - 1]);
+          handleItemClickRef.current(items[currentIndex - 1]);
         }
       } else if (e.key === 'ArrowRight') {
         e.preventDefault();
-        if (currentIndex < timelineItems.length - 1) {
-          handleItemClick(timelineItems[currentIndex + 1]);
+        if (currentIndex < items.length - 1) {
+          handleItemClickRef.current(items[currentIndex + 1]);
         }
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [timelineItems, activeImage, handleItemClick]);
+  }, []);
 
   const recipeParams = useMemo(
     () =>
@@ -527,6 +530,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
                 onChange={(e) =>
                   e.target.files && handleLocalUpload(Array.from(e.target.files) as File[])
                 }
+                aria-label="Upload file"
                 className="hidden"
                 accept="image/*"
               />
@@ -536,6 +540,11 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
+              }}
+              role="button"
+              tabIndex={0}
               className="group flex size-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-all hover:bg-white/3"
             >
               <input
@@ -544,6 +553,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
                 onChange={(e) =>
                   e.target.files && handleLocalUpload(Array.from(e.target.files) as File[])
                 }
+                aria-label="Upload file"
                 className="hidden"
                 accept="image/*"
               />
