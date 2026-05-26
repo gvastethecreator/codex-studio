@@ -51,6 +51,14 @@ describe('studioCatalogImageAdapter', () => {
     );
   });
 
+  it('falls back to an on-demand thumbnail variant when the catalog entry has no stored thumbnail', () => {
+    const image = materializeCatalogEntryImage(catalogImage({ thumbnailUrl: null }));
+
+    expect(image.thumbnail).toBe(
+      'http://localhost:4317/library/outputs/image-1.png?variant=thumb&max=512',
+    );
+  });
+
   it('falls back to a stable compatibility batch id when the catalog entry has no batch id', () => {
     expect(
       resolveCatalogEntryBatchId(

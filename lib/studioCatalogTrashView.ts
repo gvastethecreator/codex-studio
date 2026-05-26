@@ -1,6 +1,6 @@
 import type { CatalogImage } from '../packages/shared/src';
-import { toStudioAssetUrl } from '../services/localStudioService';
 import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
+import { resolveCatalogEntryThumbnailUrl } from './studioCatalogImageAdapter';
 import type { StudioCatalogView } from './studioCatalogView';
 
 export interface ArchivedImageGroup {
@@ -18,7 +18,7 @@ function resolveCreatedAt(entry: Pick<CatalogImage, 'createdAt'>) {
 }
 
 function resolveThumbnail(entry: CatalogImage) {
-  return toStudioAssetUrl(entry.thumbnailUrl || entry.publicUrl);
+  return resolveCatalogEntryThumbnailUrl(entry);
 }
 
 export function buildArchivedImageGroupsFromCatalog(view: StudioCatalogView): ArchivedImageGroup[] {
@@ -34,7 +34,7 @@ export function buildArchivedImageGroupsFromCatalog(view: StudioCatalogView): Ar
       id: batchId,
       workspaceId: firstEntry.workspaceId || 'default',
       createdAt: resolveCreatedAt(firstEntry),
-      prompt: config.prompt,
+      prompt: config.prompt || '',
       model: config.model,
       imageCount: entries.length,
       thumbnail: resolveThumbnail(firstEntry),

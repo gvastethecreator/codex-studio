@@ -125,6 +125,27 @@ describe('buildWorkspacesWithThumbs', () => {
     expect(result[0].lastImage).toContain('/thumbs/legacy-default.webp');
   });
 
+  it('falls back to an on-demand strip thumbnail when the catalog entry has no stored thumbnail', () => {
+    const catalogView = createCatalogView([
+      catalogImage({
+        id: 'default-fallback-thumb',
+        workspaceId: 'default',
+        thumbnailUrl: null,
+        publicUrl: '/library/assets/default-fallback-thumb.png',
+        createdAt: '2026-05-26T00:00:00.000Z',
+      }),
+    ]);
+
+    const result = buildWorkspacesWithThumbs({
+      workspaces: [{ id: 'default', name: 'Default', createdAt: 1 }],
+      catalogView,
+    });
+
+    expect(result[0].lastImage).toBe(
+      'http://localhost:4317/library/assets/default-fallback-thumb.png?variant=thumb&max=96',
+    );
+  });
+
   it('returns zero-count workspaces when no catalog view is available', () => {
     const result = buildWorkspacesWithThumbs({ workspaces });
 

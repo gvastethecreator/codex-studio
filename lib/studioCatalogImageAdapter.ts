@@ -3,6 +3,8 @@ import type { GeneratedImage, GeneratedImageWithConfig } from '../types';
 import { toStudioAssetUrl } from '../services/localStudioService';
 import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
 
+export const GRID_THUMBNAIL_MAX_EDGE = 512;
+
 export interface MaterializeCatalogEntryImageOptions {
   batchId?: string;
   createdAt?: number;
@@ -17,6 +19,15 @@ export function resolveCatalogEntryCreatedAt(entry: Pick<CatalogImage, 'createdA
   return Date.parse(entry.createdAt) || Date.now();
 }
 
+export function resolveCatalogEntryThumbnailUrl(
+  entry: Pick<CatalogImage, 'thumbnailUrl' | 'publicUrl'>,
+  maxEdge = GRID_THUMBNAIL_MAX_EDGE,
+) {
+  return entry.thumbnailUrl
+    ? toStudioAssetUrl(entry.thumbnailUrl)
+    : toStudioAssetUrl(entry.publicUrl, { variant: 'thumb', maxEdge });
+}
+
 export function materializeCatalogEntryImage(
   entry: CatalogImage,
   options: MaterializeCatalogEntryImageOptions = {},
@@ -27,9 +38,7 @@ export function materializeCatalogEntryImage(
   return {
     id: entry.id,
     src: toStudioAssetUrl(entry.publicUrl),
-    thumbnail:
-      options.thumbnail ??
-      (entry.thumbnailUrl ? toStudioAssetUrl(entry.thumbnailUrl) : undefined),
+    thumbnail: options.thumbnail ?? resolveCatalogEntryThumbnailUrl(entry),
     batchId,
     createdAt,
     isFavorite: entry.isFavorite,
