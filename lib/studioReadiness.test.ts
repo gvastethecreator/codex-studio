@@ -95,9 +95,7 @@ describe('buildStudioReadinessSnapshot', () => {
       title: 'Desktop runtime ready',
     });
     expect(snapshot.checks).toEqual(
-      expect.arrayContaining([
-        expect.objectContaining({ key: 'localCodexSession', ok: true }),
-      ]),
+      expect.arrayContaining([expect.objectContaining({ key: 'localCodexSession', ok: true })]),
     );
   });
 

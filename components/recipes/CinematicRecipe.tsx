@@ -13,7 +13,7 @@ import {
   RectangleHorizontal,
   Upload,
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { AnimatePresence } from 'motion/react';
 import type { Attachment, ImageGenerationConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
@@ -144,6 +144,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           <div className="flex items-center gap-2 p-1 bg-white/5 rounded-xl border border-white/5">
             {FRAME_COUNTS.map((count) => (
               <button
+                type="button"
                 key={count}
                 onClick={() => handleFrameChange(count)}
                 className={`h-9 px-4 rounded-lg flex items-center gap-2 transition-all ${
@@ -249,7 +250,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           <img
             src={activeImage.dataUrl}
             alt="Ref"
-            className="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm grayscale group-hover:grayscale-0 transition-all duration-700 pointer-events-none"
+            className="absolute inset-0 size-full object-cover opacity-20 blur-sm grayscale group-hover:grayscale-0 transition-all duration-700 pointer-events-none"
           />
         )}
 
@@ -300,7 +301,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               className="hidden"
               accept="image/*"
             />
-            <div className="w-20 h-20 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-6 shadow-2xl group-hover:scale-110 group-hover:border-rose-500/50 transition-all">
+            <div className="size-20 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-6 shadow-2xl group-hover:scale-110 group-hover:border-rose-500/50 transition-all">
               <Upload
                 size={28}
                 className="text-zinc-600 group-hover:text-rose-400 transition-colors"
@@ -319,6 +320,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
 
         {activeImage && (
           <button
+            type="button"
             onClick={() => updateConfig('attachments', [])}
             className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-black/60 text-zinc-400 hover:text-white hover:bg-red-500 transition-all pointer-events-auto border border-white/10"
           >

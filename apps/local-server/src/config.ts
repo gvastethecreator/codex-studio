@@ -89,10 +89,7 @@ function readReasoningEffortSetting(
   return fallback;
 }
 
-function readServiceTierSetting(
-  key: string,
-  fallback: StudioSettings['codexImagegenServiceTier'],
-) {
+function readServiceTierSetting(key: string, fallback: StudioSettings['codexImagegenServiceTier']) {
   const raw = process.env[key]?.trim().toLowerCase();
   if (!raw) return fallback;
   if (raw === 'fast' || raw === 'flex') return raw;

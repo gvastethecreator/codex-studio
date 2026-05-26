@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { MotionDiv, AnimatePresence } from 'motion/react';
 import { AspectRatio } from '../types';
 import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
 
@@ -19,20 +19,20 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
   return (
     <AnimatePresence mode="wait">
       {isVisible && data && (
-        <motion.div
+        <MotionDiv
           key="format-overlay"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="absolute inset-0 z-[25] flex items-center backdrop-blur-[2px] justify-center p-8 md:p-12 lg:p-20 pointer-events-none"
         >
-          <motion.div
+          <MotionDiv
             key={ratio}
             initial={{ scale: 0.95, opacity: 0, filter: 'blur(10px)' }}
             animate={{ scale: 1, opacity: 1, filter: 'blur(0px)' }}
             exit={{ scale: 1.05, opacity: 0, filter: 'blur(10px)' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className={`relative w-full h-full max-w-full max-h-full border-2 border-dashed rounded-2xl flex items-center justify-center overflow-hidden
+            className={`relative size-full max-w-full max-h-full border-2 border-dashed rounded-2xl flex items-center justify-center overflow-hidden
               ${
                 isWorkspaceEmpty
                   ? 'border-white/10 bg-white/[0.01]'
@@ -57,7 +57,7 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
                 <span className="text-[10px] font-mono font-black text-accent-400 uppercase tracking-widest">
                   {data.width}px
                 </span>
-                <div className="w-1 h-1 bg-white/20 rounded-full" />
+                <div className="size-1 bg-white/20 rounded-full" />
                 <span className="text-[10px] font-mono font-black text-accent-400 uppercase tracking-widest">
                   {data.height}px
                 </span>
@@ -66,16 +66,16 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
 
             {/* Technical Corner Accents */}
             <div
-              className={`absolute top-6 left-6 w-6 h-6 border-t border-l rounded-tl-sm ${isWorkspaceEmpty ? 'border-white/20' : 'border-accent-400'}`}
+              className={`absolute top-6 left-6 size-6 border-t border-l rounded-tl-sm ${isWorkspaceEmpty ? 'border-white/20' : 'border-accent-400'}`}
             />
             <div
-              className={`absolute top-6 right-6 w-6 h-6 border-t border-r rounded-tr-sm ${isWorkspaceEmpty ? 'border-white/20' : 'border-accent-400'}`}
+              className={`absolute top-6 right-6 size-6 border-t border-r rounded-tr-sm ${isWorkspaceEmpty ? 'border-white/20' : 'border-accent-400'}`}
             />
             <div
-              className={`absolute bottom-6 left-6 w-6 h-6 border-b border-l rounded-bl-sm ${isWorkspaceEmpty ? 'border-white/20' : 'border-accent-400'}`}
+              className={`absolute bottom-6 left-6 size-6 border-b border-l rounded-bl-sm ${isWorkspaceEmpty ? 'border-white/20' : 'border-accent-400'}`}
             />
             <div
-              className={`absolute bottom-6 right-6 w-6 h-6 border-b border-r rounded-br-sm ${isWorkspaceEmpty ? 'border-white/20' : 'border-accent-400'}`}
+              className={`absolute bottom-6 right-6 size-6 border-b border-r rounded-br-sm ${isWorkspaceEmpty ? 'border-white/20' : 'border-accent-400'}`}
             />
 
             {/* Technical Grid (Rule of Thirds) */}
@@ -95,12 +95,12 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
                   Calibration Active
                 </span>
                 <div className="w-24 h-0.5 bg-accent-950/40 rounded-full overflow-hidden">
-                  <div className="w-full h-full bg-accent-500/30 animate-scan-line" />
+                  <div className="size-full bg-accent-500/30 animate-scan-line" />
                 </div>
               </div>
             )}
-          </motion.div>
-        </motion.div>
+          </MotionDiv>
+        </MotionDiv>
       )}
     </AnimatePresence>
   );

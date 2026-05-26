@@ -14,7 +14,7 @@ const AppOverlays = React.lazy(() =>
   import('./AppOverlays').then((m) => ({ default: m.AppOverlays })),
 );
 
-interface AppContentProps { }
+interface AppContentProps {}
 
 export const AppContent: React.FC<AppContentProps> = () => {
   const shell = useStudioShell();

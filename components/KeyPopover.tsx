@@ -1,6 +1,6 @@
 import React from 'react';
 import { Key, ExternalLink, ShieldCheck, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { MotionDiv, AnimatePresence } from 'motion/react';
 
 interface KeyPopoverProps {
   isOpen: boolean;
@@ -12,7 +12,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, scale: 0.95, y: 10, filter: 'blur(10px)' }}
           animate={{ opacity: 1, scale: 1, y: 0, filter: 'blur(0px)' }}
           exit={{ opacity: 0, scale: 0.95, y: 10, filter: 'blur(10px)' }}
@@ -27,7 +27,11 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
                 Local Session
               </span>
             </div>
-            <button onClick={onClose} className="text-zinc-500 hover:text-white transition-colors">
+            <button
+              type="button"
+              onClick={onClose}
+              className="text-zinc-500 hover:text-white transition-colors"
+            >
               <X size={14} />
             </button>
           </div>
@@ -40,6 +44,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
             </p>
 
             <button
+              type="button"
               onClick={onSelectKey}
               className="w-full h-9 bg-accent-600 hover:bg-accent-500 text-white text-[9px] font-black tracking-widest uppercase rounded-lg transition-all active:scale-95 shadow-lg shadow-accent-900/20"
             >
@@ -65,8 +70,8 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
           </div>
 
           {/* Arrow */}
-          <div className="absolute top-full right-4 w-3 h-3 bg-zinc-900 border-r border-b border-white/10 rotate-45 -translate-y-1.5"></div>
-        </motion.div>
+          <div className="absolute top-full right-4 size-3 bg-zinc-900 border-r border-b border-white/10 rotate-45 -translate-y-1.5"></div>
+        </MotionDiv>
       )}
     </AnimatePresence>
   );

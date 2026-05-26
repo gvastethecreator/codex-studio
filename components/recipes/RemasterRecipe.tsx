@@ -182,11 +182,11 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
         }}
       >
         {activeImage ? (
-          <div className="w-full h-full relative">
+          <div className="size-full relative">
             <img
               src={activeImage.dataUrl}
               alt="Original"
-              className="w-full h-full object-contain opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000"
+              className="size-full object-contain opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000"
             />
             <div className="absolute top-4 right-4">
               <div className="px-3 py-1.5 rounded-lg bg-black/50 backdrop-blur-sm border border-white/10 flex items-center gap-2">
@@ -196,6 +196,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
               </div>
             </div>
             <button
+              type="button"
               onClick={() => updateConfig('attachments', [])}
               className="absolute top-4 left-4 p-2 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white transition-all opacity-0 group-hover:opacity-100"
             >
@@ -207,7 +208,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             onDragOver={(e) => e.preventDefault()}
             onDrop={handleDrop}
             onClick={() => fileInputRef.current?.click()}
-            className="w-full h-full border-2 border-dashed border-white/10 hover:border-accent-500/50 bg-white/[0.01] flex flex-col items-center justify-center gap-6 cursor-pointer transition-all group"
+            className="size-full border-2 border-dashed border-white/10 hover:border-accent-500/50 bg-white/[0.01] flex flex-col items-center justify-center gap-6 cursor-pointer transition-all group"
           >
             <input
               type="file"
@@ -216,7 +217,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
               className="hidden"
               accept="image/*"
             />
-            <div className="w-16 h-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all">
+            <div className="size-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all">
               <Upload size={24} className="text-zinc-600 group-hover:text-accent-400" />
             </div>
             <div className="text-center">

@@ -36,7 +36,9 @@ export function useStudioDiagnostics({
   refreshIntervalMs = 30_000,
 }: UseStudioDiagnosticsOptions = {}) {
   const [health, setHealth] = useState<HealthResponse | null>(initialHealth);
-  const [localCodexSession, setLocalCodexSession] = useState<LocalCodexSessionResponse | null>(null);
+  const [localCodexSession, setLocalCodexSession] = useState<LocalCodexSessionResponse | null>(
+    null,
+  );
   const [hasFetchedDiagnostics, setHasFetchedDiagnostics] = useState(false);
   const isMountedRef = useRef(true);
 

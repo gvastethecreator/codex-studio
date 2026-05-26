@@ -1,5 +1,5 @@
 import React from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, MotionDiv } from 'motion/react';
 import {
   Activity,
   ArrowRight,
@@ -65,12 +65,12 @@ function StepRow({
   return (
     <div className={`rounded-2xl border p-3.5 sm:p-4 ${toneClasses[tone]}`}>
       <div className="flex items-start gap-3">
-        <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-black/20">
+        <div className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-2xl bg-black/20">
           {icon}
         </div>
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <span className={`h-2.5 w-2.5 rounded-full ${dotClasses[tone]}`} />
+            <span className={`size-2.5 rounded-full ${dotClasses[tone]}`} />
             <p className="text-[11px] font-black uppercase tracking-widest text-white">{title}</p>
           </div>
           <p className="mt-2 wrap-break-word text-sm leading-relaxed text-current/90">{detail}</p>
@@ -167,7 +167,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
     <AnimatePresence>
       {isOpen ? (
         <div className="fixed inset-0 z-120 p-3 sm:p-6">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -175,7 +175,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
             className="absolute inset-0 bg-black/80 backdrop-blur-md"
           />
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, scale: 0.96, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 20 }}
@@ -183,7 +183,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
           >
             <div className="flex items-start justify-between gap-4 border-b border-white/5 bg-white/3 px-4 py-4 sm:px-6 sm:py-5">
               <div className="flex min-w-0 items-start gap-3 sm:gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-accent-500/10 text-accent-400 sm:h-12 sm:w-12">
+                <div className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-accent-500/10 text-accent-400 sm:h-12 sm:w-12">
                   <Sparkles size={20} />
                 </div>
                 <div className="min-w-0">
@@ -203,6 +203,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               </div>
 
               <button
+                type="button"
                 onClick={onClose}
                 className="rounded-xl p-2 text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
               >
@@ -227,7 +228,9 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       icon={<Activity size={16} />}
                       title="Backend local"
                       tone={backendReachable ? 'ready' : error ? 'error' : 'pending'}
-                      detail={backendReachable ? 'Connected and responding.' : 'Not responding yet.'}
+                      detail={
+                        backendReachable ? 'Connected and responding.' : 'Not responding yet.'
+                      }
                       meta={apiBase}
                     />
                     <StepRow
@@ -241,7 +244,9 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                             : 'warning'
                       }
                       detail={cliDetail}
-                      meta={backendReachable ? health?.codexCli.command || 'codex --version' : undefined}
+                      meta={
+                        backendReachable ? health?.codexCli.command || 'codex --version' : undefined
+                      }
                     />
                     <StepRow
                       icon={<Activity size={16} />}
@@ -263,7 +268,13 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     <StepRow
                       icon={<HardDrive size={16} />}
                       title="Local Library"
-                      tone={!backendReachable ? 'pending' : health?.checks.libraryReady ? 'ready' : 'warning'}
+                      tone={
+                        !backendReachable
+                          ? 'pending'
+                          : health?.checks.libraryReady
+                            ? 'ready'
+                            : 'warning'
+                      }
                       detail={libraryDetail}
                       meta={health?.libraryDir || 'path not set'}
                     />
@@ -340,6 +351,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
 
                 <div className="flex flex-col gap-2 sm:flex-row">
                   <button
+                    type="button"
                     onClick={onRefresh}
                     disabled={isChecking}
                     className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/5 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-white transition-all hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-60"
@@ -350,6 +362,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
 
                   {canStartAppServer ? (
                     <button
+                      type="button"
                       onClick={onStartAppServer}
                       disabled={isStartingAppServer}
                       className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500/15 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-accent-300 transition-all hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:opacity-60"
@@ -360,6 +373,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   ) : null}
 
                   <button
+                    type="button"
                     onClick={onComplete}
                     className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-black transition-all hover:bg-accent-400"
                   >
@@ -369,7 +383,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                 </div>
               </div>
             </div>
-          </motion.div>
+          </MotionDiv>
         </div>
       ) : null}
     </AnimatePresence>

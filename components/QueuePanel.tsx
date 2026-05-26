@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, MotionDiv } from 'motion/react';
 import {
   AlertTriangle,
   BrainCircuit,
@@ -140,6 +140,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
 
           {(completedCount > 0 || jobs.some((job) => job.status === 'cancelled')) && (
             <button
+              type="button"
               onClick={onClearCompleted}
               className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
               title="Clear completed"
@@ -158,7 +159,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
 
         <AnimatePresence>
           {isResting && (
-            <motion.div
+            <MotionDiv
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
@@ -168,7 +169,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
               <span className="text-[10px] font-medium uppercase tracking-widest text-accent-400">
                 Cooling down (1s)
               </span>
-            </motion.div>
+            </MotionDiv>
           )}
         </AnimatePresence>
 
@@ -222,6 +223,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
 
           <div className="rounded-xl border border-white/10 bg-white/5 p-2">
             <button
+              type="button"
               onClick={() => setIsServerQueueOpen((value) => !value)}
               className="mb-2 flex w-full items-center justify-between rounded-lg px-1 py-1 text-left transition-colors hover:bg-white/5"
             >
@@ -242,7 +244,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
 
             <AnimatePresence initial={false}>
               {isServerQueueOpen && (
-                <motion.div
+                <MotionDiv
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
@@ -267,13 +269,14 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                       </div>
                     )}
                   </div>
-                </motion.div>
+                </MotionDiv>
               )}
             </AnimatePresence>
           </div>
 
           <div className="rounded-xl border border-white/10 bg-white/5 p-2">
             <button
+              type="button"
               onClick={() => setIsLocalQueueOpen((value) => !value)}
               className="mb-2 flex w-full items-center justify-between rounded-lg px-1 py-1 text-left transition-colors hover:bg-white/5"
             >
@@ -294,7 +297,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
 
             <AnimatePresence initial={false}>
               {isLocalQueueOpen && (
-                <motion.div
+                <MotionDiv
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
@@ -303,7 +306,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   <div className="space-y-2">
                     <AnimatePresence initial={false}>
                       {jobs.length === 0 && serverJobs.length === 0 && !hasRecentResults ? (
-                        <motion.div
+                        <MotionDiv
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           className="flex h-full flex-col items-center justify-center p-8 text-center opacity-20"
@@ -311,7 +314,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                           <Layers size={48} className="mb-4" />
                           <p className="text-sm font-medium">Queue is empty</p>
                           <p className="text-xs">Jobs will appear here</p>
-                        </motion.div>
+                        </MotionDiv>
                       ) : jobs.length === 0 ? (
                         <div className="rounded-lg border border-dashed border-white/5 bg-black/20 px-3 py-3 text-[10px] text-zinc-600">
                           No browser-side queued items.
@@ -337,7 +340,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                       )}
                     </AnimatePresence>
                   </div>
-                </motion.div>
+                </MotionDiv>
               )}
             </AnimatePresence>
           </div>
@@ -375,7 +378,11 @@ const ServerJobItem: React.FC<{
           : 'border-white/5 bg-black/20 hover:border-white/10 hover:bg-white/5',
       )}
     >
-      <button onClick={onInspect} className="flex min-w-0 flex-1 items-start gap-2 text-left">
+      <button
+        type="button"
+        onClick={onInspect}
+        className="flex min-w-0 flex-1 items-start gap-2 text-left"
+      >
         {icon}
 
         <div className="min-w-0 flex-1">
@@ -401,6 +408,7 @@ const ServerJobItem: React.FC<{
         <BrainCircuit size={13} className="text-zinc-500" />
         {canCancel ? (
           <button
+            type="button"
             onClick={onCancel}
             className="rounded-lg p-1.5 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400"
             title="Cancel backend job"
@@ -467,7 +475,7 @@ const JobItem: React.FC<{
   );
 
   return (
-    <motion.div
+    <MotionDiv
       layout
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
@@ -480,7 +488,11 @@ const JobItem: React.FC<{
     >
       <div className="flex items-start gap-3">
         {onInspect ? (
-          <button onClick={onInspect} className="flex min-w-0 flex-1 items-start gap-3 text-left">
+          <button
+            type="button"
+            onClick={onInspect}
+            className="flex min-w-0 flex-1 items-start gap-3 text-left"
+          >
             {content}
           </button>
         ) : (
@@ -490,6 +502,7 @@ const JobItem: React.FC<{
         <div className="flex flex-col gap-1 opacity-0 transition-opacity group-hover:opacity-100">
           {(job.status === 'processing' || job.status === 'pending') && (
             <button
+              type="button"
               onClick={onCancel}
               className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400"
               title="Cancel"
@@ -500,6 +513,7 @@ const JobItem: React.FC<{
 
           {(job.status === 'failed' || job.status === 'cancelled') && (
             <button
+              type="button"
               onClick={onRetry}
               className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-accent-400"
               title="Retry"
@@ -509,6 +523,7 @@ const JobItem: React.FC<{
           )}
 
           <button
+            type="button"
             onClick={onRemove}
             className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400"
             title="Remove"
@@ -517,6 +532,6 @@ const JobItem: React.FC<{
           </button>
         </div>
       </div>
-    </motion.div>
+    </MotionDiv>
   );
 };

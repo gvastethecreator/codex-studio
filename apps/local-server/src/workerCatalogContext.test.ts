@@ -34,9 +34,7 @@ describe('resolveJobCatalogContext', () => {
       },
     });
 
-    expect(
-      resolveJobCatalogContext(job({ projectId: 'project-1', sourceSpec })),
-    ).toEqual({
+    expect(resolveJobCatalogContext(job({ projectId: 'project-1', sourceSpec }))).toEqual({
       workspaceId: 'concepts',
       batchId: 'batch-9',
     });
@@ -53,9 +51,7 @@ describe('resolveJobCatalogContext', () => {
       },
     });
 
-    expect(
-      resolveJobCatalogContext(job({ projectId: 'project-fallback', sourceSpec })),
-    ).toEqual({
+    expect(resolveJobCatalogContext(job({ projectId: 'project-fallback', sourceSpec }))).toEqual({
       workspaceId: 'project-fallback',
       batchId: null,
     });

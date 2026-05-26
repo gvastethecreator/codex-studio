@@ -6,9 +6,7 @@ interface UseStudioViewStateProps {
   closeOverlay: () => void;
 }
 
-export function useStudioViewState({
-  closeOverlay,
-}: UseStudioViewStateProps) {
+export function useStudioViewState({ closeOverlay }: UseStudioViewStateProps) {
   const [isQueueOpen, setIsQueueOpen] = useState(true);
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [imageToEdit, setImageToEdit] = useState<Attachment | null>(null);

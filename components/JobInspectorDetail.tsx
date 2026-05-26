@@ -446,6 +446,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             </div>
 
             <button
+              type="button"
               onClick={onClearSelectedJob}
               className="shrink-0 rounded-2xl border border-white/10 bg-black/25 px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-300 transition-colors hover:border-white/20 hover:bg-white/10 hover:text-white"
             >

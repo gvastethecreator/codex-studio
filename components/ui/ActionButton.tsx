@@ -43,6 +43,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   return (
     <Tooltip content={label} position={tooltipPosition}>
       <button
+        type="button"
         onClick={(e) => {
           e.stopPropagation();
           if (!disabled) onClick(e);
@@ -54,7 +55,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
       >
         {icon}
         {isActive && variant !== 'primary' && (
-          <span className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 bg-accent-500 rounded-2xl shadow-[0_0_10px_rgb(var(--accent-500)/0.8)]" />
+          <span className="absolute -top-0.5 -right-0.5 size-1.5 bg-accent-500 rounded-2xl shadow-[0_0_10px_rgb(var(--accent-500)/0.8)]" />
         )}
       </button>
     </Tooltip>

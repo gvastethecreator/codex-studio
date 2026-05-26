@@ -42,9 +42,7 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
       );
     } catch (refreshError) {
       const message =
-        refreshError instanceof Error
-          ? refreshError.message
-          : 'Could not query the local backend';
+        refreshError instanceof Error ? refreshError.message : 'Could not query the local backend';
       setError(message);
       log(`Studio onboarding health failed: ${message}`);
     } finally {

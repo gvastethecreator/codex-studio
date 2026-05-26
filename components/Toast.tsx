@@ -8,10 +8,10 @@ interface ToastProps {
 }
 
 const icons = {
-  error: <AlertCircle className="w-5 h-5 text-red-400" />,
-  success: <CheckCircle className="w-5 h-5 text-green-400" />,
-  info: <Info className="w-5 h-5 text-accent-400" />,
-  warning: <AlertTriangle className="w-5 h-5 text-yellow-400" />,
+  error: <AlertCircle className="size-5 text-red-400" />,
+  success: <CheckCircle className="size-5 text-green-400" />,
+  info: <Info className="size-5 text-accent-400" />,
+  warning: <AlertTriangle className="size-5 text-yellow-400" />,
 };
 
 const borderColors = {
@@ -67,11 +67,12 @@ const Toast: React.FC<ToastProps> = ({ toast, onDismiss }) => {
           <p className="text-base text-zinc-100 font-medium leading-snug">{toast.message}</p>
         </div>
         <button
+          type="button"
           onClick={() => onDismiss(toast.id)}
           className="p-1.5 -mr-1.5 -mt-1.5 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-700/50 transition-colors flex-shrink-0"
           aria-label="Dismiss"
         >
-          <X className="w-4 h-4" />
+          <X className="size-4" />
         </button>
       </div>
       <div className="absolute bottom-0 left-0 h-1 w-full bg-zinc-700/50">

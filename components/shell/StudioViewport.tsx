@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { AnimatePresence, motion, type Variants } from 'motion/react';
+import { AnimatePresence, MotionDiv, type Variants } from 'motion/react';
 
 import type { AppPageView } from '../../hooks/useHashRouter';
 import type { StudioPageController } from '../../hooks/useStudioPageController';
@@ -72,7 +72,7 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
     <Suspense fallback={null}>
       <AnimatePresence mode="popLayout" custom={direction} initial={false}>
         {routeView === 'recipe' && activeRecipe ? (
-          <motion.div
+          <MotionDiv
             key={`recipe-${activeRecipe}`}
             custom={direction}
             variants={viewVariants}
@@ -82,9 +82,9 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
             className="absolute inset-0 w-full h-full overflow-hidden"
           >
             <RecipePage activeRecipe={activeRecipe} {...recipePageProps} />
-          </motion.div>
+          </MotionDiv>
         ) : routeView === 'studio' ? (
-          <motion.div
+          <MotionDiv
             key="studio"
             custom={direction}
             variants={viewVariants}
@@ -94,9 +94,9 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
             className="absolute inset-0 w-full h-full flex flex-row overflow-hidden"
           >
             <StudioPage controller={studioPageController} />
-          </motion.div>
+          </MotionDiv>
         ) : (
-          <motion.div
+          <MotionDiv
             key="recipes-list"
             custom={direction}
             variants={viewVariants}
@@ -106,7 +106,7 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
             className="absolute inset-0 w-full h-full overflow-hidden"
           >
             <RecipesView onSelectRecipe={onSelectRecipe} />
-          </motion.div>
+          </MotionDiv>
         )}
       </AnimatePresence>
     </Suspense>

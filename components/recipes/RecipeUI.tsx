@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { MotionDiv, AnimatePresence } from 'motion/react';
 import { Pipette } from 'lucide-react';
 
 interface ControlDropdownProps {
@@ -42,6 +42,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
       )}
       <div className="relative">
         <button
+          type="button"
           onClick={() => setIsOpen(!isOpen)}
           className="h-10 px-4 bg-zinc-900 border border-white/10 hover:border-white/20 rounded-xl flex items-center gap-3 transition-all active:scale-95 min-w-[140px] shadow-lg group"
         >
@@ -54,7 +55,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
         </button>
         <AnimatePresence>
           {isOpen && (
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 10, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.95 }}
@@ -63,6 +64,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
             >
               {options.map((opt) => (
                 <button
+                  type="button"
                   key={opt}
                   onClick={() => {
                     onSelect(opt);
@@ -78,7 +80,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
                   {opt}
                 </button>
               ))}
-            </motion.div>
+            </MotionDiv>
           )}
         </AnimatePresence>
         {isOpen && <div className="fixed inset-0 z-[-1]" onClick={() => setIsOpen(false)} />}
@@ -96,6 +98,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
   return (
     <div className="relative">
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="h-10 w-12 rounded-xl border border-white/10 hover:border-emerald-500/50 transition-all flex items-center justify-center relative overflow-hidden group"
         style={{ backgroundColor: color }}
@@ -108,13 +111,14 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
       </button>
       <AnimatePresence>
         {isOpen && (
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 bg-zinc-950 border border-white/10 rounded-2xl p-3 shadow-2xl z-50 min-w-[200px]"
           >
             <button
+              type="button"
               onClick={() => nativePickerRef.current?.click()}
               className="w-full h-8 flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 rounded-lg text-[10px] font-bold text-zinc-400 hover:text-white transition-colors uppercase tracking-wide"
             >
@@ -127,7 +131,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
               onChange={(e) => onChange(e.target.value)}
               className="absolute opacity-0 pointer-events-none"
             />
-          </motion.div>
+          </MotionDiv>
         )}
       </AnimatePresence>
       {isOpen && <div className="fixed inset-0 z-[-1]" onClick={() => setIsOpen(false)} />}

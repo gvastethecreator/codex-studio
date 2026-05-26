@@ -1,5 +1,5 @@
 import React from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, MotionDiv } from 'motion/react';
 
 import type { StudioQueueResultPreview } from '../../lib/studioQueueResults';
 import type { StudioDiagnosticsSnapshot } from '../../lib/studioDiagnostics';
@@ -53,7 +53,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
   return (
     <AnimatePresence initial={false}>
       {isQueueOpen ? (
-        <motion.div
+        <MotionDiv
           initial={{ width: 0, opacity: 0 }}
           animate={{ width: 320, opacity: 1 }}
           exit={{ width: 0, opacity: 0 }}
@@ -73,7 +73,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
             onInspectJob={onInspectJob}
             isResting={isResting}
           />
-        </motion.div>
+        </MotionDiv>
       ) : null}
     </AnimatePresence>
   );

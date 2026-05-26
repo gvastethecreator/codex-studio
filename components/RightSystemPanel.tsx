@@ -68,7 +68,7 @@ function StatusCard({ label, value, detail, tone, icon: Icon }: StatusItem) {
     <div className="rounded-2xl border border-white/6 bg-white/4 p-3">
       <div className="flex items-start justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-black/25 text-zinc-300">
+          <div className="flex size-9 items-center justify-center rounded-xl bg-black/25 text-zinc-300">
             <Icon size={16} />
           </div>
           <div className="min-w-0">
@@ -82,7 +82,7 @@ function StatusCard({ label, value, detail, tone, icon: Icon }: StatusItem) {
             </p>
           </div>
         </div>
-        <span className={`mt-1 h-2.5 w-2.5 shrink-0 rounded-full ${toneStyles.dot}`} />
+        <span className={`mt-1 size-2.5 shrink-0 rounded-full ${toneStyles.dot}`} />
       </div>
       <p className="mt-2 text-[11px] leading-relaxed text-zinc-400">{detail}</p>
     </div>
@@ -120,6 +120,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
             </p>
             <div className="flex flex-col gap-2">
               <button
+                type="button"
                 onClick={onExportWorkspaceSnapshot}
                 className="group flex h-10 w-full items-center gap-3 rounded-xl bg-white/5 px-4 transition-all hover:bg-white/10"
               >
@@ -155,6 +156,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
             </h3>
 
             <button
+              type="button"
               onClick={onToggleQueue}
               className={`group mb-2 flex h-10 w-full items-center justify-between rounded-xl px-4 transition-all ${isQueueOpen ? 'border border-accent-500/20 bg-accent-500/10' : 'bg-white/5 hover:bg-white/10'}`}
             >
@@ -171,12 +173,13 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                   <span className="text-[10px] font-bold text-accent-400">{queueCount}</span>
                 )}
                 <div
-                  className={`h-2 w-2 rounded-full ${isQueueOpen ? 'bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.8)]' : 'bg-zinc-700'}`}
+                  className={`size-2 rounded-full ${isQueueOpen ? 'bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.8)]' : 'bg-zinc-700'}`}
                 />
               </div>
             </button>
 
             <button
+              type="button"
               onClick={onToggleBackground}
               className={`group mb-4 flex h-10 w-full items-center justify-between rounded-xl px-4 transition-all ${isBackgroundEnabled ? 'border border-accent-500/20 bg-accent-500/10' : 'bg-white/5 hover:bg-white/10'}`}
             >
@@ -192,7 +195,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                 </span>
               </div>
               <div
-                className={`h-2 w-2 rounded-full ${isBackgroundEnabled ? 'bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.8)]' : 'bg-zinc-700'}`}
+                className={`size-2 rounded-full ${isBackgroundEnabled ? 'bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.8)]' : 'bg-zinc-700'}`}
               />
             </button>
           </div>
@@ -206,7 +209,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
 
             <div className="rounded-2xl border border-rose-500/15 bg-rose-500/6 p-3">
               <div className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-rose-500/10 text-rose-300">
+                <div className="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-xl bg-rose-500/10 text-rose-300">
                   <Database size={16} />
                 </div>
                 <div className="min-w-0">
@@ -221,6 +224,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
               </div>
 
               <button
+                type="button"
                 onClick={() => void onResetStudio()}
                 disabled={isResettingStudio}
                 className="group mt-4 flex h-11 w-full items-center justify-between rounded-xl border border-rose-500/20 bg-rose-500/10 px-4 transition-all hover:border-rose-400/30 hover:bg-rose-500/15 disabled:cursor-not-allowed disabled:opacity-70"

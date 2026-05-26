@@ -179,7 +179,8 @@ export function buildStudioReadinessSnapshot({
       isReady: false,
       nextAction: null,
       title: `${runtime.label} checking`,
-      description: 'Refreshing backend health, app-server diagnostics, and the Local Codex Session.',
+      description:
+        'Refreshing backend health, app-server diagnostics, and the Local Codex Session.',
       checks,
     };
   }

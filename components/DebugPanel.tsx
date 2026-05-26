@@ -55,6 +55,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   return (
     <div className="fixed inset-0 z-50" aria-modal="true" role="dialog">
       <button
+        type="button"
         aria-label="Close activity inspector"
         className="absolute inset-0 h-full w-full bg-black/70 backdrop-blur-sm"
         onClick={onClose}
@@ -73,6 +74,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
             <h2 className="mt-1 text-xl font-semibold text-white">Readable job inspector</h2>
           </div>
           <button
+            type="button"
             onClick={onClose}
             className="rounded-full border border-white/10 bg-white/5 p-2.5 text-zinc-300 transition-colors hover:border-white/20 hover:bg-white/10 hover:text-white"
           >

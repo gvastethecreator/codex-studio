@@ -159,6 +159,7 @@ export const useCameraViewport = ({
     hasReferenceRef.current = hasReference;
   }, [hasReference]);
 
+  // react-doctor-disable-next-line react-doctor/effect-needs-cleanup
   useEffect(() => {
     if (!mountRef.current) return;
 

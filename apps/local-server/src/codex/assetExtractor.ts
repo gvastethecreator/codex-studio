@@ -77,8 +77,7 @@ function extractGeneratedItems(
     const notificationThreadId = message?.params?.threadId ?? context.threadId;
     if (item?.type !== 'imageGeneration' || !item.id || !notificationThreadId) continue;
     const savedPath = typeof item.savedPath === 'string' ? item.savedPath : null;
-    const sourcePath =
-      savedPath ?? path.join(generatedDir, notificationThreadId, `${item.id}.png`);
+    const sourcePath = savedPath ?? path.join(generatedDir, notificationThreadId, `${item.id}.png`);
     if (!existsSync(sourcePath) || !isRecentEnough(sourcePath, context.sinceMs)) continue;
     return [{ type: 'file', sourcePath, mimeType: 'image/png', origin: 'generated_item' }];
   }

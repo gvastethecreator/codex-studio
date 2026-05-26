@@ -217,7 +217,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
       <div className="flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-white/10 bg-zinc-950 shadow-2xl">
         <div className="flex items-center justify-between border-b border-white/8 px-5 py-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-500/10 text-accent-300">
+            <div className="flex size-9 items-center justify-center rounded-lg bg-accent-500/10 text-accent-300">
               <Settings size={18} />
             </div>
             <div>
@@ -231,9 +231,10 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           </div>
           <div className="flex items-center gap-2">
             <button
+              type="button"
               onClick={() => void onRefresh()}
               disabled={isLoading}
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 disabled:opacity-60"
+              className="flex size-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 disabled:opacity-60"
             >
               {isLoading ? (
                 <LoaderCircle size={16} className="animate-spin" />
@@ -242,8 +243,9 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               )}
             </button>
             <button
+              type="button"
               onClick={onClose}
-              className="flex h-9 w-9 items-center justify-center rounded-lg text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
+              className="flex size-9 items-center justify-center rounded-lg text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
             >
               <X size={18} />
             </button>
@@ -428,7 +430,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                 </span>
               </span>
               <span
-                className={`h-2.5 w-2.5 rounded-full ${autoDetectOutputSources ? 'bg-accent-300' : 'bg-zinc-700'}`}
+                className={`size-2.5 rounded-full ${autoDetectOutputSources ? 'bg-accent-300' : 'bg-zinc-700'}`}
               />
             </button>
 
@@ -447,7 +449,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                 </span>
               </span>
               <span
-                className={`h-2.5 w-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-zinc-700'}`}
+                className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-zinc-700'}`}
               />
             </button>
 
@@ -466,7 +468,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                 </span>
               </span>
               <span
-                className={`h-2.5 w-2.5 rounded-full ${isBackgroundEnabled ? 'bg-accent-300' : 'bg-zinc-700'}`}
+                className={`size-2.5 rounded-full ${isBackgroundEnabled ? 'bg-accent-300' : 'bg-zinc-700'}`}
               />
             </button>
 
@@ -570,7 +572,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                                 type="checkbox"
                                 checked={selected.includes(file.relativePath)}
                                 onChange={() => toggleOutputFile(source.id, file.relativePath)}
-                                className="h-3.5 w-3.5 accent-emerald-400"
+                                className="size-3.5 accent-emerald-400"
                               />
                               <span className="truncate font-mono text-[10px] text-zinc-300">
                                 {file.relativePath}
@@ -629,12 +631,14 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
 
         <div className="flex items-center justify-end gap-3 border-t border-white/8 px-5 py-4">
           <button
+            type="button"
             onClick={onClose}
             className="h-10 rounded-lg px-4 text-[10px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
           >
             Close
           </button>
           <button
+            type="button"
             onClick={handleSave}
             disabled={isSaving || isLoading}
             className="flex h-10 items-center gap-2 rounded-lg bg-accent-600 px-4 text-[10px] font-black uppercase tracking-widest text-white transition-colors hover:bg-accent-500 disabled:opacity-60"

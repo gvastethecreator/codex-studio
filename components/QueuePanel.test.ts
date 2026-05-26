@@ -7,6 +7,8 @@ function createJob(overrides: Partial<QueueJob> = {}): QueueJob {
   return {
     id: 'job-1',
     prompt: 'test prompt',
+    workspaceId: 'default',
+    config: {} as import('../types').ImageGenerationConfig,
     createdAt: JOB_CREATED_AT,
     status: 'pending',
     ...overrides,
@@ -28,7 +30,9 @@ function hasPendingOrProcessing(jobs: QueueJob[]) {
 }
 
 function hasCompletedOrFailed(jobs: QueueJob[]) {
-  return jobs.some((j) => j.status === 'completed' || j.status === 'failed' || j.status === 'cancelled');
+  return jobs.some(
+    (j) => j.status === 'completed' || j.status === 'failed' || j.status === 'cancelled',
+  );
 }
 
 describe('QueuePanel stats', () => {

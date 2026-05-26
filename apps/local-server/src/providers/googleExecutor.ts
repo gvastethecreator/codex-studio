@@ -146,16 +146,31 @@ function createGoogleRequestBody(
   }));
 
   const inlineParts = assetParts
-    .filter((entry): entry is { part: { inlineData: { mimeType: string; data: string } }; role: ProviderAssetInputRef['role']; strength: number | null } => entry.part !== null)
+    .filter(
+      (
+        entry,
+      ): entry is {
+        part: { inlineData: { mimeType: string; data: string } };
+        role: ProviderAssetInputRef['role'];
+        strength: number | null;
+      } => entry.part !== null,
+    )
     .sort((a, b) => {
-      const order: Record<string, number> = { input: 0, external_output: 0, mask: 1, control: 2, reference: 3 };
+      const order: Record<string, number> = {
+        input: 0,
+        external_output: 0,
+        mask: 1,
+        control: 2,
+        reference: 3,
+      };
       return (order[a.role] ?? 4) - (order[b.role] ?? 4);
     })
     .map((entry) => entry.part);
 
-  const editInstruction = task === 'image_edit'
-    ? ' Edit the input image following the instructions above. Preserve the original composition, subject identity, and overall structure while applying the requested changes.'
-    : '';
+  const editInstruction =
+    task === 'image_edit'
+      ? ' Edit the input image following the instructions above. Preserve the original composition, subject identity, and overall structure while applying the requested changes.'
+      : '';
 
   const promptText = createGooglePromptText(payload) + editInstruction;
   const promptPart = { text: promptText };

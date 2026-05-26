@@ -34,6 +34,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             </h2>
           </div>
           <button
+            type="button"
             onClick={onClose}
             className="p-2 rounded-xl text-zinc-500 hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
           >
@@ -43,7 +44,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
 
         <div className="p-8 flex flex-col gap-8">
           <div className="flex items-center gap-6">
-            <div className="w-20 h-20 rounded-2xl bg-zinc-800 border border-white/10 flex items-center justify-center text-zinc-400 relative overflow-hidden">
+            <div className="size-20 rounded-2xl bg-zinc-800 border border-white/10 flex items-center justify-center text-zinc-400 relative overflow-hidden">
               <User size={40} />
               <div className="absolute inset-0 bg-linear-to-tr from-accent-500/20 to-transparent" />
             </div>
@@ -55,7 +56,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
                 <span className="px-2 py-0.5 rounded-md bg-accent-500/10 text-accent-400 text-[10px] font-black uppercase tracking-widest">
                   Local Codex
                 </span>
-                <span className="w-1 h-1 rounded-full bg-zinc-700" />
+                <span className="size-1 rounded-full bg-zinc-700" />
                 <span className="text-xs text-zinc-500 font-medium">Active Session</span>
               </div>
             </div>
@@ -97,6 +98,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             </h4>
             <div className="grid grid-cols-1 gap-3">
               <button
+                type="button"
                 onClick={onExportWorkspaceSnapshot}
                 className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
               >
@@ -108,6 +110,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
               </button>
             </div>
             <button
+              type="button"
               onClick={onDeepScan}
               className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-accent-500/5 hover:bg-accent-500/10 border border-accent-500/10 text-accent-400 hover:text-accent-300 transition-all text-[10px] font-black uppercase tracking-widest cursor-pointer group mt-2"
             >
@@ -117,7 +120,10 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
           </div>
 
           <div className="pt-4 border-t border-white/5 flex justify-between items-center">
-            <button className="flex items-center gap-2 px-4 py-2 rounded-xl hover:bg-white/5 text-zinc-500 hover:text-white transition-colors text-xs font-black uppercase tracking-widest cursor-pointer">
+            <button
+              type="button"
+              className="flex items-center gap-2 px-4 py-2 rounded-xl hover:bg-white/5 text-zinc-500 hover:text-white transition-colors text-xs font-black uppercase tracking-widest cursor-pointer"
+            >
               <Settings size={16} />
               Settings
             </button>

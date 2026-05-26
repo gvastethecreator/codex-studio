@@ -15,7 +15,7 @@ import {
   Heart,
   SplitSquareHorizontal,
 } from 'lucide-react';
-import { motion, AnimatePresence, Variants } from 'motion/react';
+import { MotionDiv, AnimatePresence, Variants } from 'motion/react';
 import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
 import ActionButton from './ui/ActionButton';
 import Logo from './Logo';
@@ -144,7 +144,7 @@ const CarouselImageItem: React.FC<{
 
   return (
     <div
-      className="w-full h-full flex items-center justify-center relative overflow-hidden touch-none select-none"
+      className="size-full flex items-center justify-center relative overflow-hidden touch-none select-none"
       onWheel={handleWheel}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
@@ -158,7 +158,7 @@ const CarouselImageItem: React.FC<{
     >
       {!isLoaded && (
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-12 h-12 border-2 border-accent-500/20 border-t-accent-500 rounded-full animate-spin" />
+          <div className="size-12 border-2 border-accent-500/20 border-t-accent-500 rounded-full animate-spin" />
         </div>
       )}
 
@@ -395,19 +395,21 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           >
             {allImages.map((img, idx) => (
               <button
+                type="button"
                 key={img.id}
                 onClick={() => handleJumpTo(idx)}
-                className={`relative h-10 w-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
-                            ${idx === currentIndex
-                    ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
-                    : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
-                  }
+                className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
+                            ${
+                              idx === currentIndex
+                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
+                                : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
+                            }
                         `}
               >
                 <img
                   src={img.thumbnail || img.src}
                   alt=""
-                  className="w-full h-full object-cover"
+                  className="size-full object-cover"
                   loading="lazy"
                 />
                 {img.isFavorite && (
@@ -420,6 +422,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           </div>
           <div className="flex items-center gap-1">
             <button
+              type="button"
               onClick={() => {
                 if (!document.fullscreenElement) void containerRef.current?.requestFullscreen();
                 else void document.exitFullscreen();
@@ -430,6 +433,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               {isFullscreen ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
             </button>
             <button
+              type="button"
               onClick={onClose}
               className="p-2 bg-zinc-900/60 hover:bg-red-500/20 rounded-xl text-zinc-500 hover:text-red-500 transition-all shadow-xl cursor-pointer"
             >
@@ -443,6 +447,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
         {allImages.length > 1 && (
           <>
             <button
+              type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 handlePrev();
@@ -453,6 +458,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               <ChevronLeft size={40} className="group-hover:-translate-x-1 transition-transform" />
             </button>
             <button
+              type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 handleNext();
@@ -467,7 +473,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           {/* initial={false} ensures the first render doesn't slide, allowing view transition to work */}
           <AnimatePresence initial={false} custom={direction}>
-            <motion.div
+            <MotionDiv
               key={currentImage.id}
               custom={direction}
               variants={variants}
@@ -475,7 +481,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               animate="center"
               exit="exit"
               onAnimationComplete={() => setIsSliding(false)}
-              className="absolute inset-0 w-full h-full flex items-center justify-center will-change-transform pointer-events-auto"
+              className="absolute inset-0 size-full flex items-center justify-center will-change-transform pointer-events-auto"
             >
               <CarouselImageItem
                 image={currentImage}
@@ -484,7 +490,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 isSliding={isSliding}
                 isComparing={isComparing}
               />
-            </motion.div>
+            </MotionDiv>
           </AnimatePresence>
         </div>
       </section>
@@ -510,6 +516,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             {hasReference && (
               <div className="flex items-center gap-1.5 rounded-xl bg-white/3 p-1">
                 <button
+                  type="button"
                   onPointerDown={() => setIsComparing(true)}
                   onPointerUp={() => setIsComparing(false)}
                   onPointerLeave={() => setIsComparing(false)}

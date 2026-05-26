@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { MotionDiv } from 'motion/react';
 
 interface RecipeLayoutProps {
   isGenerating: boolean;
@@ -17,7 +17,7 @@ export const RecipeLayout: React.FC<RecipeLayoutProps> = ({
   className = 'p-6 pb-32 flex items-center justify-center',
 }) => {
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -29,7 +29,7 @@ export const RecipeLayout: React.FC<RecipeLayoutProps> = ({
 
       {/* Universal Bottom Dock */}
       {bottomDock && (
-        <motion.div
+        <MotionDiv
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.4 }}
@@ -38,8 +38,8 @@ export const RecipeLayout: React.FC<RecipeLayoutProps> = ({
           <div className="w-full max-w-[1920px] mx-auto px-4 py-2 flex flex-wrap items-center justify-center gap-4">
             {bottomDock}
           </div>
-        </motion.div>
+        </MotionDiv>
       )}
-    </motion.div>
+    </MotionDiv>
   );
 };

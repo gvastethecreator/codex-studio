@@ -29,8 +29,12 @@ import {
   Check,
   Loader2,
 } from 'lucide-react';
-import { motion, AnimatePresence, Variants } from 'motion/react';
-import type { CodexModel, CodexModelCatalogResponse, CodexServiceTier } from '../packages/shared/src';
+import { MotionDiv, AnimatePresence, Variants } from 'motion/react';
+import type {
+  CodexModel,
+  CodexModelCatalogResponse,
+  CodexServiceTier,
+} from '../packages/shared/src';
 import {
   ImageGenerationConfig,
   Attachment,
@@ -98,7 +102,7 @@ const ModelIcon: React.FC<{ model: GenerationModel }> = ({ model }) => {
   const iconProps = { size: 14 };
   if (model === MODEL_IDS.CODEX_IMAGEGEN) {
     return (
-      <div className="relative flex items-center justify-center w-4 h-4">
+      <div className="relative flex items-center justify-center size-4">
         <Sparkles {...iconProps} className="text-accent-400 group-hover:text-accent-300" />
         <Sparkles
           size={8}
@@ -288,7 +292,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     useEffect(() => {
       if (codexModels.length === 0) return;
 
-      if (preferredExecutionModelId && preferredExecutionModelId !== generationConfig.executionModel) {
+      if (
+        preferredExecutionModelId &&
+        preferredExecutionModelId !== generationConfig.executionModel
+      ) {
         updateConfig('executionModel', preferredExecutionModelId);
         return;
       }
@@ -447,7 +454,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const btnClass =
       'h-11 flex items-center gap-2 px-4 rounded-2xl bg-white/5 hover:bg-white/10 text-[9px] font-black tracking-widest transition-all active:scale-95 text-zinc-400 hover:text-white disabled:opacity-30 uppercase group border border-transparent hover:border-white/5 whitespace-nowrap cursor-pointer';
     const iconBtnClass =
-      'w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/5 text-zinc-500 hover:text-white hover:bg-white/10 transition-all active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
+      'size-8 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/5 text-zinc-500 hover:text-white hover:bg-white/10 transition-all active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
     const activeIconBtnClass =
       'bg-gradient-to-b from-accent-800 to-accent-950 border border-accent-700/50 text-accent-300 shadow-[0_2px_10px_rgba(0,0,0,0.5)] cursor-pointer';
 
@@ -479,6 +486,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               className={`flex items-end gap-2 rounded-2xl p-1.5 px-3 min-h-[44px] shadow-lg transition-colors duration-300 bg-zinc-900/50 border border-white/5`}
             >
               <button
+                type="button"
                 onClick={() => fileInputRef.current?.click()}
                 disabled={isNearLimit}
                 className={iconBtnClass}
@@ -489,7 +497,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
               <AnimatePresence>
                 {hasAttachments && (
-                  <motion.div
+                  <MotionDiv
                     layout
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -499,11 +507,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     {generationConfig.attachments.map((att) => (
                       <div
                         key={att.id}
-                        className="w-8 h-8 group relative rounded-xl overflow-hidden bg-zinc-800 shrink-0"
+                        className="size-8 group relative rounded-xl overflow-hidden bg-zinc-800 shrink-0"
                       >
-                        <img src={att.dataUrl} className="w-full h-full object-cover" alt="" />
+                        <img src={att.dataUrl} className="size-full object-cover" alt="" />
                         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center">
                           <button
+                            type="button"
                             onClick={(e) => {
                               e.stopPropagation();
                               onRemoveAttachment(att.id);
@@ -515,7 +524,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         </div>
                       </div>
                     ))}
-                  </motion.div>
+                  </MotionDiv>
                 )}
               </AnimatePresence>
 
@@ -573,6 +582,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 <div className="relative">
                   <Tooltip content="Negative Prompt (Exclude)">
                     <button
+                      type="button"
                       onClick={() => {
                         setIsNegativeOpen(!isNegativeOpen);
                         setIsRefineOpen(false);
@@ -581,13 +591,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     >
                       <Ban size={15} />
                       {generationConfig.negativePrompt && (
-                        <div className="absolute top-1 right-1 w-1.5 h-1.5 bg-red-500 rounded-full" />
+                        <div className="absolute top-1 right-1 size-1.5 bg-red-500 rounded-full" />
                       )}
                     </button>
                   </Tooltip>
                   <AnimatePresence>
                     {isNegativeOpen && (
-                      <motion.div
+                      <MotionDiv
                         variants={popoverVariants}
                         initial="initial"
                         animate="animate"
@@ -605,7 +615,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           autoFocus
                           className="w-full h-8 bg-black/40 border border-white/5 rounded-lg px-3 text-[11px] text-zinc-300 outline-none placeholder-zinc-700 focus:border-red-500/30 transition-colors"
                         />
-                      </motion.div>
+                      </MotionDiv>
                     )}
                   </AnimatePresence>
                 </div>
@@ -614,6 +624,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 <div className="relative">
                   <Tooltip content="Edit with AI (Refine)">
                     <button
+                      type="button"
                       onClick={() => {
                         setIsRefineOpen(!isRefineOpen);
                         setIsNegativeOpen(false);
@@ -625,7 +636,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   </Tooltip>
                   <AnimatePresence>
                     {isRefineOpen && (
-                      <motion.div
+                      <MotionDiv
                         variants={popoverVariants}
                         initial="initial"
                         animate="animate"
@@ -646,18 +657,19 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             className="flex-1 h-8 bg-black/40 border border-white/5 rounded-lg px-3 text-[11px] text-zinc-300 outline-none placeholder-zinc-700 focus:border-accent-500/30 transition-colors"
                           />
                           <button
+                            type="button"
                             onClick={handleMagicEdit}
                             disabled={isRefactoring}
-                            className="h-8 w-8 bg-accent-600 hover:bg-accent-500 text-white rounded-lg flex items-center justify-center transition-colors"
+                            className="size-8 bg-accent-600 hover:bg-accent-500 text-white rounded-lg flex items-center justify-center transition-colors"
                           >
                             {isRefactoring ? (
-                              <div className="w-3 h-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                              <div className="size-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />
                             ) : (
                               <Send size={12} />
                             )}
                           </button>
                         </div>
-                      </motion.div>
+                      </MotionDiv>
                     )}
                   </AnimatePresence>
                 </div>
@@ -665,12 +677,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 {/* 3. ENHANCE (Action) */}
                 <Tooltip content="Auto Enhance Prompt">
                   <button
+                    type="button"
                     onClick={onEnhancePrompt}
                     disabled={isEnhancingPrompt}
                     className={`${iconBtnClass} ${isEnhancingPrompt ? 'text-accent-400' : ''}`}
                   >
                     {isEnhancingPrompt ? (
-                      <div className="w-3 h-3 border-2 border-accent-400/30 border-t-accent-400 rounded-full animate-spin" />
+                      <div className="size-3 border-2 border-accent-400/30 border-t-accent-400 rounded-full animate-spin" />
                     ) : (
                       <Wand2 size={15} />
                     )}
@@ -680,12 +693,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 {/* 6. FORCE JOB */}
                 <Tooltip content="Force Job (Bypass Queue)">
                   <button
+                    type="button"
                     onClick={() => setIsForcedMode(!isForcedMode)}
                     className={`${iconBtnClass} ${isForcedMode ? 'text-yellow-400 bg-yellow-900/20 border-yellow-500/30' : ''}`}
                   >
                     <Zap size={15} className={isForcedMode ? 'animate-pulse' : ''} />
                     {isForcedMode && (
-                      <div className="absolute top-1 right-1 w-1.5 h-1.5 bg-yellow-500 rounded-full" />
+                      <div className="absolute top-1 right-1 size-1.5 bg-yellow-500 rounded-full" />
                     )}
                   </button>
                 </Tooltip>
@@ -698,6 +712,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             {/* Aspect Ratio */}
             <div className="relative">
               <button
+                type="button"
                 onClick={() => {
                   setIsAspectRatioOpen(!isAspectRatioOpen);
                   setIsModelOpen(false);
@@ -711,7 +726,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </button>
               <AnimatePresence>
                 {isAspectRatioOpen && (
-                  <motion.div
+                  <MotionDiv
                     variants={popoverVariants}
                     initial="initial"
                     animate="animate"
@@ -720,6 +735,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   >
                     {currentRatios.map((option) => (
                       <button
+                        type="button"
                         key={option.ratio}
                         onClick={() => {
                           updateConfig('aspectRatio', option.ratio);
@@ -729,17 +745,18 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         onMouseEnter={() => setPreviewRatio(option.ratio)}
                         title={`${option.label}: ${option.size}`}
                         className={`aspect-square rounded-lg flex flex-col items-center justify-center gap-1 transition-all 
-                                    ${generationConfig.aspectRatio === option.ratio
-                            ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/50 text-white shadow-lg'
-                            : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
-                          }`}
+                                    ${
+                                      generationConfig.aspectRatio === option.ratio
+                                        ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/50 text-white shadow-lg'
+                                        : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
+                                    }`}
                       >
                         <AspectRatioIcon ratio={option.ratio} />
                         <span className="text-[8px] font-black">{option.ratio}</span>
                         <span className="text-[6px] font-bold text-zinc-500">{option.size}</span>
                       </button>
                     ))}
-                  </motion.div>
+                  </MotionDiv>
                 )}
               </AnimatePresence>
             </div>
@@ -748,6 +765,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             {showSizeControl && (
               <div className="relative">
                 <button
+                  type="button"
                   onClick={() => {
                     setIsSizeOpen(!isSizeOpen);
                     setIsModelOpen(false);
@@ -760,7 +778,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 </button>
                 <AnimatePresence>
                   {isSizeOpen && (
-                    <motion.div
+                    <MotionDiv
                       variants={popoverVariants}
                       initial="initial"
                       animate="animate"
@@ -769,6 +787,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     >
                       {currentSizes.map((size) => (
                         <button
+                          type="button"
                           key={size}
                           onClick={() => {
                             updateConfig('imageSize', size);
@@ -779,7 +798,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           {size}
                         </button>
                       ))}
-                    </motion.div>
+                    </MotionDiv>
                   )}
                 </AnimatePresence>
               </div>
@@ -788,6 +807,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             {/* Batch Count */}
             <div className="relative">
               <button
+                type="button"
                 onClick={() => {
                   setIsBatchOpen(!isBatchOpen);
                   setIsModelOpen(false);
@@ -800,7 +820,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </button>
               <AnimatePresence>
                 {isBatchOpen && (
-                  <motion.div
+                  <MotionDiv
                     variants={popoverVariants}
                     initial="initial"
                     animate="animate"
@@ -809,17 +829,18 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   >
                     {BATCH_COUNTS.map((count) => (
                       <button
+                        type="button"
                         key={count}
                         onClick={() => {
                           updateConfig('batchCount', count);
                           setIsBatchOpen(false);
                         }}
-                        className={`w-8 h-8 rounded-lg flex items-center justify-center text-[10px] font-black transition-all ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
+                        className={`size-8 rounded-lg flex items-center justify-center text-[10px] font-black transition-all ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
                       >
                         {count}
                       </button>
                     ))}
-                  </motion.div>
+                  </MotionDiv>
                 )}
               </AnimatePresence>
             </div>
@@ -827,6 +848,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             {/* Model Selector */}
             <div className="relative">
               <button
+                type="button"
                 onClick={() => {
                   setIsModelOpen(!isModelOpen);
                   setIsAspectRatioOpen(false);
@@ -844,7 +866,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </button>
               <AnimatePresence>
                 {isModelOpen && (
-                  <motion.div
+                  <MotionDiv
                     variants={popoverVariants}
                     initial="initial"
                     animate="animate"
@@ -853,6 +875,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   >
                     {AVAILABLE_MODELS.map((m) => (
                       <button
+                        type="button"
                         key={m.id}
                         onClick={() => {
                           updateConfig('model', m.id);
@@ -873,7 +896,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         </div>
                       </button>
                     ))}
-                  </motion.div>
+                  </MotionDiv>
                 )}
               </AnimatePresence>
             </div>
@@ -881,6 +904,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             {/* Codex Task Execution Selector */}
             <div className="relative">
               <button
+                type="button"
                 onClick={() => {
                   setIsExecutionOpen(!isExecutionOpen);
                   setIsModelOpen(false);
@@ -894,7 +918,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </button>
               <AnimatePresence>
                 {isExecutionOpen && (
-                  <motion.div
+                  <MotionDiv
                     variants={popoverVariants}
                     initial="initial"
                     animate="animate"
@@ -940,17 +964,20 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           const modelSpeedOptions = getCodexSpeedOptions(model);
                           return (
                             <button
+                              type="button"
                               key={model.id}
                               onClick={() => handleSelectExecutionModel(model)}
-                              className={`w-full text-left px-3 py-2.5 rounded-xl transition-all border ${isSelected
-                                ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
-                                : 'hover:bg-white/5 text-zinc-400 border-transparent'
-                                }`}
+                              className={`w-full text-left px-3 py-2.5 rounded-xl transition-all border ${
+                                isSelected
+                                  ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
+                                  : 'hover:bg-white/5 text-zinc-400 border-transparent'
+                              }`}
                             >
                               <div className="flex items-center justify-between gap-3 mb-1">
                                 <div
-                                  className={`text-[10px] font-black uppercase tracking-wide ${isSelected ? 'text-accent-300' : 'text-zinc-200'
-                                    }`}
+                                  className={`text-[10px] font-black uppercase tracking-wide ${
+                                    isSelected ? 'text-accent-300' : 'text-zinc-200'
+                                  }`}
                                 >
                                   {model.displayName}
                                 </div>
@@ -972,11 +999,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                     Fast
                                   </span>
                                 )}
-                                {codexModelCatalog?.planType && model.id === 'gpt-5.3-codex-spark' && (
-                                  <span className="px-1.5 py-0.5 rounded-md bg-fuchsia-500/10 text-fuchsia-200 text-[7px] font-black uppercase tracking-wide">
-                                    {codexModelCatalog.planType}
-                                  </span>
-                                )}
+                                {codexModelCatalog?.planType &&
+                                  model.id === 'gpt-5.3-codex-spark' && (
+                                    <span className="px-1.5 py-0.5 rounded-md bg-fuchsia-500/10 text-fuchsia-200 text-[7px] font-black uppercase tracking-wide">
+                                      {codexModelCatalog.planType}
+                                    </span>
+                                  )}
                               </div>
                             </button>
                           );
@@ -991,12 +1019,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       <div className="flex flex-wrap gap-2">
                         {executionReasoningOptions.map((effort) => (
                           <button
+                            type="button"
                             key={effort}
                             onClick={() => updateConfig('executionReasoningEffort', effort)}
-                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${generationConfig.executionReasoningEffort === effort
-                              ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
-                              : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                              }`}
+                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${
+                              generationConfig.executionReasoningEffort === effort
+                                ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                                : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                            }`}
                           >
                             {effort}
                           </button>
@@ -1016,33 +1046,37 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       <div className="flex flex-wrap gap-2">
                         {executionSpeedOptions.map((speed) => (
                           <button
+                            type="button"
                             key={speed}
                             onClick={() => handleSelectExecutionSpeed(speed)}
-                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${generationConfig.executionSpeed === speed
-                              ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
-                              : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                              }`}
+                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${
+                              generationConfig.executionSpeed === speed
+                                ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                                : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                            }`}
                           >
                             {formatCodexSpeedLabel(speed)}
                           </button>
                         ))}
                       </div>
                     </div>
-                  </motion.div>
+                  </MotionDiv>
                 )}
               </AnimatePresence>
             </div>
 
             {/* GENERATE BUTTON - Dark Gradient Premium */}
             <button
+              type="button"
               onClick={handleTriggerGenerate}
               className={`
                     group relative h-11 px-6 rounded-2xl flex items-center justify-center gap-2.5 ml-2 overflow-hidden
                     text-[10px] tracking-[0.2em] font-black uppercase transition-all cursor-pointer
-                    ${isGenerating
-                  ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-400 border border-accent-700/30 shadow-lg'
-                  : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/20 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
-                }
+                    ${
+                      isGenerating
+                        ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-400 border border-accent-700/30 shadow-lg'
+                        : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/20 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
+                    }
                 `}
             >
               {/* Progress Bar Layer */}

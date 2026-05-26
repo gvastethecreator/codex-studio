@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { MotionDiv, AnimatePresence } from 'motion/react';
 import { Trash2, RotateCcw, X, Trash, AlertCircle } from 'lucide-react';
 import type { ArchivedImageGroup } from '../lib/studioCatalogTrashView';
 
@@ -25,7 +25,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
   return (
     <AnimatePresence>
       <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8">
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -33,7 +33,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           className="absolute inset-0 bg-black/80 backdrop-blur-md"
         />
 
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -59,6 +59,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
               {trash.length > 0 && (
                 <>
                   <button
+                    type="button"
                     onClick={onRestoreAll}
                     className="flex items-center gap-2 px-4 py-2 rounded-xl bg-accent-500/10 hover:bg-accent-500/20 text-accent-400 text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer"
                   >
@@ -66,6 +67,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                     <span>Restore All</span>
                   </button>
                   <button
+                    type="button"
                     onClick={onEmpty}
                     className="flex items-center gap-2 px-4 py-2 rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-400 text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer"
                   >
@@ -75,6 +77,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                 </>
               )}
               <button
+                type="button"
                 onClick={onClose}
                 className="p-2 rounded-xl hover:bg-white/5 text-zinc-500 hover:text-white transition-colors cursor-pointer"
               >
@@ -87,7 +90,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           <div className="flex-1 overflow-y-auto p-6 custom-scrollbar">
             {trash.length === 0 ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-20">
-                <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center text-zinc-700 mb-4">
+                <div className="size-16 rounded-full bg-white/5 flex items-center justify-center text-zinc-700 mb-4">
                   <Trash2 size={32} />
                 </div>
                 <h3 className="text-zinc-400 font-bold uppercase tracking-widest text-sm mb-1">
@@ -104,11 +107,11 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                     key={group.id}
                     className="group bg-white/5 border border-white/5 rounded-2xl p-4 flex items-center gap-4 hover:border-white/10 transition-all"
                   >
-                    <div className="w-20 h-20 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/5">
+                    <div className="size-20 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/5">
                       {group.thumbnail && (
                         <img
                           src={group.thumbnail}
-                          className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity"
+                          className="size-full object-cover opacity-60 group-hover:opacity-100 transition-opacity"
                           alt=""
                         />
                       )}
@@ -119,7 +122,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                         <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">
                           {new Date(group.createdAt).toLocaleString()}
                         </span>
-                        <span className="w-1 h-1 rounded-full bg-zinc-800" />
+                        <span className="size-1 rounded-full bg-zinc-800" />
                         <span className="text-[10px] font-bold text-accent-500 uppercase tracking-widest">
                           {group.workspaceId || 'Default'}
                         </span>
@@ -129,7 +132,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                       </h4>
                       <div className="flex items-center gap-3">
                         <div className="flex items-center gap-1 text-[10px] text-zinc-500 font-bold uppercase">
-                          <span className="w-1.5 h-1.5 rounded-full bg-zinc-700" />
+                          <span className="size-1.5 rounded-full bg-zinc-700" />
                           {group.imageCount} Images
                         </div>
                         <div className="text-[10px] text-zinc-500 font-bold uppercase">
@@ -139,6 +142,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                     </div>
 
                     <button
+                      type="button"
                       onClick={() => onRestore(group.id)}
                       className="p-3 rounded-xl bg-accent-500/10 hover:bg-accent-500 text-accent-400 hover:text-white transition-all active:scale-90 cursor-pointer"
                       title="Restore Batch"
@@ -158,7 +162,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
               Archived items do not count towards your active workspace limits.
             </p>
           </div>
-        </motion.div>
+        </MotionDiv>
       </div>
     </AnimatePresence>
   );

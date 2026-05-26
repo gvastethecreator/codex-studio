@@ -48,11 +48,11 @@ const Slider: React.FC<SliderProps> = ({
           step={step}
           value={value}
           onChange={(e) => onChange(parseFloat(e.target.value))}
-          className="absolute w-full h-full opacity-0 cursor-pointer z-10"
+          className="absolute size-full opacity-0 cursor-pointer z-10"
         />
 
         <div
-          className="absolute h-4 w-4 bg-white rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.5)] pointer-events-none transform -translate-x-1/2 transition-transform duration-100 ease-out border border-zinc-200"
+          className="absolute size-4 bg-white rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.5)] pointer-events-none transform -translate-x-1/2 transition-transform duration-100 ease-out border border-zinc-200"
           style={{ left: `${percentage}%` }}
         >
           <div className="absolute inset-0.5 bg-zinc-200 rounded-full" />

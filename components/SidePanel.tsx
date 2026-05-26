@@ -47,8 +47,8 @@ export const SidePanel: React.FC<SidePanelProps> = ({
       >
         {!isCollapsed && (
           <div className="flex gap-1.5 opacity-40">
-            <div className="w-1.5 h-1.5 rounded-full bg-white/20" />
-            <div className="w-1.5 h-1.5 rounded-full bg-white/10" />
+            <div className="size-1.5 rounded-full bg-white/20" />
+            <div className="size-1.5 rounded-full bg-white/10" />
           </div>
         )}
 
@@ -59,6 +59,7 @@ export const SidePanel: React.FC<SidePanelProps> = ({
         )}
 
         <button
+          type="button"
           onClick={toggleCollapse}
           className={`p-2.5 rounded-xl transition-all active:scale-90 pointer-events-auto z-10 cursor-pointer
                 ${

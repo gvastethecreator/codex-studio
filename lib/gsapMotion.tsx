@@ -1,6 +1,5 @@
 import React, {
   createContext,
-  forwardRef,
   useContext,
   useMemo,
   useRef,
@@ -179,23 +178,21 @@ function stripTransition(state: MotionState | null | undefined) {
  */
 function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
   type ElementType = Tag extends 'button' ? HTMLButtonElement : HTMLDivElement;
-  type Props = ComponentPropsWithoutRef<Tag> & MotionProps;
+  type Props = ComponentPropsWithoutRef<Tag> & MotionProps & { ref?: Ref<ElementType> };
 
-  return forwardRef<ElementType, Props>(function GsapMotionComponent(
-    {
-      initial,
-      animate,
-      exit: _exit,
-      variants,
-      custom,
-      transition,
-      layout: _layout,
-      onAnimationComplete,
-      style,
-      ...rest
-    },
-    forwardedRef,
-  ) {
+  return function GsapMotionComponent({
+    initial,
+    animate,
+    exit: _exit,
+    variants,
+    custom,
+    transition,
+    layout: _layout,
+    onAnimationComplete,
+    style,
+    ref: forwardedRef,
+    ...rest
+  }: Props) {
     const elementRef = useRef<ElementType | null>(null);
     const hasAnimatedRef = useRef(false);
     const presenceConfig = useContext(PresenceConfigContext);
@@ -265,6 +262,7 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
     if (tagName === 'button') {
       return (
         <button
+          type="button"
           {...(rest as ComponentPropsWithoutRef<'button'>)}
           ref={setRefs as Ref<HTMLButtonElement>}
           style={style}
@@ -279,7 +277,7 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
         style={style}
       />
     );
-  });
+  };
 }
 
 /**
@@ -303,9 +301,7 @@ export function AnimatePresence({
   );
 }
 
-export const motion = {
-  div: createMotionComponent('div'),
-  button: createMotionComponent('button'),
-};
+export const MotionDiv = createMotionComponent('div');
+export const MotionButton = createMotionComponent('button');
 
 export type MotionComponentChildren = ReactNode;

@@ -66,7 +66,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
     >
       <div className="flex h-16 shrink-0 items-center justify-between border-b border-white/10 px-6">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300">
+          <div className="flex size-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300">
             <Database size={17} />
           </div>
           <div className="min-w-0">
@@ -87,8 +87,9 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         </div>
 
         <button
+          type="button"
           onClick={onClose}
-          className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
+          className="flex size-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
           aria-label="Close style catalog"
         >
           <X size={16} />
@@ -107,7 +108,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             autoFocus
           />
           {query && (
-            <button onClick={() => setQuery('')} aria-label="Clear catalog search">
+            <button type="button" onClick={() => setQuery('')} aria-label="Clear catalog search">
               <X size={13} className="text-zinc-500 hover:text-white" />
             </button>
           )}
@@ -130,6 +131,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         <div className="flex items-center gap-1 rounded-xl border border-white/10 bg-black/50 p-1">
           {TASK_FILTERS.map((filter) => (
             <button
+              type="button"
               key={filter.id || 'all'}
               onClick={() => setTask(filter.id)}
               className={`h-8 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest transition-colors ${
@@ -164,10 +166,10 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                     <img
                       src={result.defaultImage}
                       alt={result.name}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
-                    <div className="flex h-full w-full items-center justify-center text-zinc-600">
+                    <div className="flex size-full items-center justify-center text-zinc-600">
                       <Sparkles size={18} />
                     </div>
                   )}
@@ -206,6 +208,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
 
                   <div className="mt-4 flex items-center gap-2">
                     <button
+                      type="button"
                       onClick={() => onSelectPreset(result)}
                       className="flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
                     >
@@ -213,6 +216,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                       Select
                     </button>
                     <button
+                      type="button"
                       onClick={() => onApplyPreset(result)}
                       className="flex h-9 items-center gap-2 rounded-lg border border-accent-500/30 bg-accent-500/12 px-3 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/20"
                     >

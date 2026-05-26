@@ -160,7 +160,9 @@ function mapModel(entry: any): CodexModel | null {
     supportedReasoningEfforts: normalizeReasoningOptions(entry?.supportedReasoningEfforts),
     additionalSpeedTiers: normalizeSpeedTiers(entry?.additionalSpeedTiers),
     inputModalities: Array.isArray(entry?.inputModalities)
-      ? entry.inputModalities.filter((modality: unknown): modality is string => typeof modality === 'string')
+      ? entry.inputModalities.filter(
+          (modality: unknown): modality is string => typeof modality === 'string',
+        )
       : ['text', 'image'],
     supportsPersonality: Boolean(entry?.supportsPersonality),
     isDefault: Boolean(entry?.isDefault),

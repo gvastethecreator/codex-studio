@@ -6,8 +6,7 @@ export function resolveJobExecutionOptions(execution?: JobExecutionOptions | nul
 
   return {
     model: execution?.model?.trim() || settings.codexImagegenModel,
-    reasoningEffort:
-      execution?.reasoningEffort?.trim() || settings.codexImagegenReasoningEffort,
+    reasoningEffort: execution?.reasoningEffort?.trim() || settings.codexImagegenReasoningEffort,
     serviceTier: execution?.serviceTier ?? settings.codexImagegenServiceTier ?? null,
   };
 }
