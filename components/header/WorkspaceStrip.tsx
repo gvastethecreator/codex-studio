@@ -1,7 +1,7 @@
-import React from 'react';
-import { Plus, X } from 'lucide-react';
-import type { Workspace } from '../../types';
-import Tooltip from '../Tooltip';
+import React from "react";
+import { Plus, X } from "lucide-react";
+import type { Workspace } from "../../types";
+import Tooltip from "../Tooltip";
 
 interface WorkspaceStripProps {
     workspaces: (Workspace & { imageCount?: number })[];
@@ -13,16 +13,16 @@ interface WorkspaceStripProps {
 }
 
 const WORKSPACE_GRADIENTS = [
-    'from-rose-500/50 to-orange-500/50',
-    'from-violet-600/50 to-indigo-600/50',
-    'from-cyan-500/50 to-blue-600/50',
-    'from-emerald-500/50 to-teal-600/50',
-    'from-fuchsia-600/50 to-purple-600/50',
-    'from-amber-500/50 to-orange-600/50',
-    'from-blue-500 to-indigo-500/50',
-    'from-pink-500/50 to-rose-500/50',
-    'from-lime-500/50 to-green-600/50',
-    'from-sky-500/50 to-cyan-500/50',
+    "from-rose-500/50 to-orange-500/50",
+    "from-violet-600/50 to-indigo-600/50",
+    "from-cyan-500/50 to-blue-600/50",
+    "from-emerald-500/50 to-teal-600/50",
+    "from-fuchsia-600/50 to-purple-600/50",
+    "from-amber-500/50 to-orange-600/50",
+    "from-blue-500 to-indigo-500/50",
+    "from-pink-500/50 to-rose-500/50",
+    "from-lime-500/50 to-green-600/50",
+    "from-sky-500/50 to-cyan-500/50",
 ];
 
 const getWorkspaceGradient = (index: number) => {
@@ -46,7 +46,7 @@ export function WorkspaceStrip({
     onRenameWorkspace,
 }: WorkspaceStripProps) {
     const [editingWorkspaceId, setEditingWorkspaceId] = React.useState<string | null>(null);
-    const [editingName, setEditingName] = React.useState('');
+    const [editingName, setEditingName] = React.useState("");
     const workspacesContainerRef = React.useRef<HTMLDivElement>(null);
 
     React.useEffect(() => {
@@ -60,8 +60,8 @@ export function WorkspaceStrip({
             }
         };
 
-        document.addEventListener('mousedown', handleOutsideClick);
-        return () => document.removeEventListener('mousedown', handleOutsideClick);
+        document.addEventListener("mousedown", handleOutsideClick);
+        return () => document.removeEventListener("mousedown", handleOutsideClick);
     }, [editingWorkspaceId]);
 
     const handleRenameSubmit = (id: string) => {
@@ -80,13 +80,15 @@ export function WorkspaceStrip({
                 const label = getWorkspaceLabel(workspace, index);
                 const gradientClass = getWorkspaceGradient(index);
                 const isActive = activeWorkspaceId === workspace.id;
+                const tooltipContent = `${workspace.name || `Workspace ${label}`} · created ${new Date(workspace.createdAt).toLocaleDateString()}`;
+                const workspaceButtonClassName = `w-9 h-9 rounded-xl border-2 transition-all overflow-hidden relative flex items-center justify-center cursor-pointer ${isActive
+                        ? "border-accent-500 shadow-lg scale-105"
+                        : "border-white/10 opacity-60 hover:opacity-100"
+                    }`;
 
                 return (
                     <div key={workspace.id} className="relative group shrink-0">
-                        <Tooltip
-                            content={`${workspace.name || `Workspace ${label}`} · created ${new Date(workspace.createdAt).toLocaleDateString()}`}
-                            position="bottom"
-                        >
+                        <Tooltip content={tooltipContent} position="bottom">
                             <button
                                 onClick={() => {
                                     if (isActive) {
@@ -96,20 +98,23 @@ export function WorkspaceStrip({
                                         onSwitchWorkspace(workspace.id);
                                     }
                                 }}
-                                className={
-                                    `w-9 h-9 rounded-xl border-2 transition-all overflow-hidden relative flex items-center justify-center cursor-pointer ${isActive
-                                        ? 'border-accent-500 shadow-lg scale-105'
-                                        : 'border-white/10 opacity-60 hover:opacity-100'
-                                    }`
-                                }
+                                className={workspaceButtonClassName}
                             >
                                 {workspace.lastImage ? (
-                                    <img src={workspace.lastImage} className="w-full h-full object-cover" alt="" />
+                                    <img
+                                        src={workspace.lastImage}
+                                        className="w-full h-full object-cover"
+                                        alt=""
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
                                 ) : (
                                     <div
                                         className={`w-full h-full bg-linear-to-br ${gradientClass} flex items-center justify-center`}
                                     >
-                                        <span className="text-[10px] font-black text-white drop-shadow-md">{label}</span>
+                                        <span className="text-[10px] font-black text-white drop-shadow-md">
+                                            {label}
+                                        </span>
                                     </div>
                                 )}
                             </button>
@@ -121,8 +126,8 @@ export function WorkspaceStrip({
                                     value={editingName}
                                     onChange={(event) => setEditingName(event.target.value)}
                                     onKeyDown={(event) => {
-                                        if (event.key === 'Enter') handleRenameSubmit(workspace.id);
-                                        if (event.key === 'Escape') setEditingWorkspaceId(null);
+                                        if (event.key === "Enter") handleRenameSubmit(workspace.id);
+                                        if (event.key === "Escape") setEditingWorkspaceId(null);
                                     }}
                                     className="bg-black/50 border border-white/10 rounded-lg px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500 w-40"
                                     placeholder="Workspace name"

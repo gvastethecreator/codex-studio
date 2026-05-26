@@ -48,4 +48,23 @@ describe('buildStudioGalleryImages', () => {
     expect(images.map((image) => image.id)).toEqual(['catalog-image']);
     expect(images[0].config.prompt).toBe('Catalog config prompt');
   });
+
+  it('preserves catalog ordering so the grid can own visible sorting once', () => {
+    const catalogView = createCatalogView([
+      catalogImage({
+        id: 'older-favorite',
+        isFavorite: true,
+        createdAt: '2026-05-24T00:00:00.000Z',
+      }),
+      catalogImage({
+        id: 'newer-plain',
+        isFavorite: false,
+        createdAt: '2026-05-25T00:00:00.000Z',
+      }),
+    ]);
+
+    const images = buildStudioGalleryImages(catalogView);
+
+    expect(images.map((image) => image.id)).toEqual(catalogView.entries.map((entry) => entry.id));
+  });
 });

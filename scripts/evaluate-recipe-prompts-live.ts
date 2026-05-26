@@ -221,18 +221,13 @@ function createEvaluationVariantForLiveSpec(
   return createDirectivesVariant(spec);
 }
 
-function findLegacyAndDirectives(pair: { variants: { name: LiveEvaluationVariantName }[] }) {
-  const legacy = pair.variants.find((variant) => variant.name === 'legacy') ?? null;
-  const directives = pair.variants.find((variant) => variant.name === 'directives') ?? null;
-  return { legacy, directives };
-}
-
 function calculatePromptSavings(
   pair:
     | Pick<LiveRecipeEvaluationPairPlan, 'variants'>
     | Pick<LiveRecipeEvaluationPairReport, 'variants'>,
 ) {
-  const { legacy, directives } = findLegacyAndDirectives(pair);
+  const legacy = pair.variants.find((variant) => variant.name === 'legacy') ?? null;
+  const directives = pair.variants.find((variant) => variant.name === 'directives') ?? null;
   if (!legacy || !directives) return null;
 
   const savings = legacy.compiledPromptChars - directives.compiledPromptChars;
@@ -336,11 +331,14 @@ export function createLiveRecipeEvaluationPlan(
   } = {},
 ): LiveRecipeEvaluationPlan {
   const variantNames = options.variantNames?.length ? options.variantNames : DEFAULT_VARIANT_NAMES;
+  const modules = listRecipeModules();
   const orderedModuleIds =
     options.moduleIds && options.moduleIds.length > 0
       ? uniqueStrings(options.moduleIds)
-      : listRecipeModules().map((module) => module.id);
-  const moduleMap = new Map(listRecipeModules().map((module) => [module.id, module]));
+      : modules.map((module) => module.id);
+  const moduleMap = new Map<string, (typeof modules)[number]>(
+    modules.map((module) => [module.id, module]),
+  );
   const pairs: LiveRecipeEvaluationPairPlan[] = [];
 
   for (const moduleId of orderedModuleIds) {

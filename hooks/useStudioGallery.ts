@@ -20,12 +20,7 @@ interface UseStudioGalleryProps {
 export function buildStudioGalleryImages(
   catalogView: StudioCatalogView,
 ): GeneratedImageWithConfig[] {
-  const images = catalogView.entries.map(materializeCatalogEntryImageWithConfig);
-
-  return images.sort((left, right) => {
-    if (left.isFavorite === right.isFavorite) return right.createdAt - left.createdAt;
-    return left.isFavorite ? -1 : 1;
-  });
+  return catalogView.entries.map(materializeCatalogEntryImageWithConfig);
 }
 
 /**

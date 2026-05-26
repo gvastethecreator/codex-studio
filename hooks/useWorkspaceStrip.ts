@@ -25,10 +25,6 @@ interface BuildWorkspacesWithThumbsOptions {
   catalogView?: StudioCatalogView;
 }
 
-function belongsToWorkspace(workspaceId: string, entryWorkspaceId?: string | null) {
-  return entryWorkspaceId === workspaceId || (!entryWorkspaceId && workspaceId === 'default');
-}
-
 function resolveCatalogThumb(entry: CatalogImage) {
   return toStudioAssetUrl(entry.thumbnailUrl || entry.publicUrl);
 }
@@ -36,6 +32,34 @@ function resolveCatalogThumb(entry: CatalogImage) {
 function parseCatalogWorkspaceCreatedAt(entry: CatalogImage) {
   const createdAt = Date.parse(entry.createdAt);
   return Number.isFinite(createdAt) ? createdAt : Date.now();
+}
+
+interface WorkspaceCatalogSummary {
+  imageCount: number;
+  lastImage?: string;
+}
+
+function buildWorkspaceCatalogSummaries(
+  catalogView: StudioCatalogView,
+): Map<string, WorkspaceCatalogSummary> {
+  const summaries = new Map<string, WorkspaceCatalogSummary>();
+
+  for (const entry of catalogView.entries) {
+    const workspaceId = entry.workspaceId || 'default';
+    const existing = summaries.get(workspaceId);
+
+    if (existing) {
+      existing.imageCount += 1;
+      continue;
+    }
+
+    summaries.set(workspaceId, {
+      imageCount: 1,
+      lastImage: resolveCatalogThumb(entry),
+    });
+  }
+
+  return summaries;
 }
 
 export function mergeWorkspacesWithCatalogEntries(
@@ -73,16 +97,15 @@ export function buildWorkspacesWithThumbs({
   catalogView,
 }: BuildWorkspacesWithThumbsOptions): WorkspaceWithThumbs[] {
   if (catalogView) {
+    const catalogSummaries = buildWorkspaceCatalogSummaries(catalogView);
+
     return workspaces.map((workspace) => {
-      const workspaceEntries = catalogView.entries.filter((entry) =>
-        belongsToWorkspace(workspace.id, entry.workspaceId),
-      );
-      const lastEntry = workspaceEntries[0];
+      const summary = catalogSummaries.get(workspace.id);
 
       return {
         ...workspace,
-        lastImage: lastEntry ? resolveCatalogThumb(lastEntry) : undefined,
-        imageCount: workspaceEntries.length,
+        lastImage: summary?.lastImage,
+        imageCount: summary?.imageCount ?? 0,
       };
     });
   }

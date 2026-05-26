@@ -3,15 +3,8 @@ export function buildCatalogWorkspaceClause(workspaceId?: string | null) {
     return null;
   }
 
-  if (workspaceId === 'default') {
-    return {
-      clause: '(workspace_id = ? OR workspace_id IS NULL)',
-      params: ['default'],
-    };
-  }
-
   return {
-    clause: 'workspace_id = ?',
+    clause: "COALESCE(workspace_id, 'default') = ?",
     params: [workspaceId],
   };
 }
