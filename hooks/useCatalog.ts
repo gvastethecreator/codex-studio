@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { CatalogImage, CatalogPage } from '../packages/shared/src';
 import { createCatalogView, type StudioCatalogView } from '../lib/studioCatalogView';
 import { queryCatalog, type CatalogQueryParams } from '../services/localStudioService';
@@ -34,15 +34,18 @@ export function useCatalog({
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
+  const filtersRef = useRef(filters);
+  filtersRef.current = filters;
+
   const loadPage = useCallback(
     async (offset: number, mode: 'replace' | 'append') => {
       setIsLoading(true);
       setError(null);
       try {
         const page = await queryCatalogPage({
-          ...filters,
+          ...filtersRef.current,
           offset,
-          limit: filters.limit ?? pageSize,
+          limit: filtersRef.current.limit ?? pageSize,
         });
         setEntries((previous) => (mode === 'append' ? [...previous, ...page.images] : page.images));
         setTotal(page.total);
@@ -54,14 +57,6 @@ export function useCatalog({
       }
     },
     [
-      filters.batchId,
-      filters.deleted,
-      filters.favorite,
-      filters.jobId,
-      filters.libraryId,
-      filters.limit,
-      filters.q,
-      filters.workspaceId,
       pageSize,
       queryCatalogPage,
     ],

@@ -25,10 +25,10 @@ function loadYamlParser() {
 }
 
 async function loadYamlObjects<T>(files: Record<string, () => Promise<unknown>>) {
-  const yaml = await loadYamlParser();
-  const entries = await Promise.all(
-    Object.entries(files).map(async ([path, loader]) => [path, await loader()] as const),
-  );
+  const [yaml, entries] = await Promise.all([
+    loadYamlParser(),
+    Promise.all(Object.entries(files).map(async ([path, loader]) => [path, await loader()] as const)),
+  ]);
   return entries
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([, yamlContent]) => yaml.load(String(yamlContent)) as T);

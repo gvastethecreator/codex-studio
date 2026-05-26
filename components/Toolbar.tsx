@@ -130,6 +130,7 @@ const AVAILABLE_MODELS: {
 const RATIOS = IMAGE_GEN_RATIO_OPTIONS;
 const PRO_SIZES: ImageSize[] = ['1K'];
 const BATCH_COUNTS = [1, 2, 3, 4];
+const EMPTY_CODEX_MODELS: CodexModel[] = [];
 
 function buildCodexFallbackCatalogErrorMessage(catalog: CodexModelCatalogResponse | null) {
   if (!catalog || catalog.source !== 'fallback' || !catalog.error) {
@@ -151,7 +152,7 @@ const popoverVariants: Variants = {
 };
 
 import { useGlobal } from '../contexts/GlobalContext';
-import { useDebounce } from '../hooks/useDebounce';
+
 export const Toolbar: React.FC<ToolbarProps> = React.memo(
   ({
     generationConfig,
@@ -178,7 +179,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const [localPrompt, setLocalPrompt] = useState(generationConfig.prompt || '');
-    const debouncedPrompt = useDebounce(localPrompt, 300);
 
     // Menu States
     const [isAspectRatioOpen, setIsAspectRatioOpen] = useState(false);
@@ -203,7 +203,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const [elapsedTick, setElapsedTick] = useState(0);
     const [scrambleTick, setScrambleTick] = useState(0);
 
-    const codexModels = codexModelCatalog?.models ?? [];
+    const codexModels = codexModelCatalog?.models ?? EMPTY_CODEX_MODELS;
     const preferredExecutionModelId = pickPreferredCodexModel(
       codexModels,
       generationConfig.executionModel,
@@ -292,43 +292,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       };
     }, []);
 
-    useEffect(() => {
-      if (codexModels.length === 0) return;
-
-      if (
-        preferredExecutionModelId &&
-        preferredExecutionModelId !== generationConfig.executionModel
-      ) {
-        updateConfig('executionModel', preferredExecutionModelId);
-        return;
-      }
-
-      const normalizedReasoning = normalizeCodexReasoningEffort(
-        selectedExecutionModel,
-        generationConfig.executionReasoningEffort,
-      );
-      if (normalizedReasoning !== generationConfig.executionReasoningEffort) {
-        updateConfig('executionReasoningEffort', normalizedReasoning);
-        return;
-      }
-
-      const normalizedSpeed = normalizeCodexSpeed(
-        selectedExecutionModel,
-        generationConfig.executionSpeed,
-      );
-      if (normalizedSpeed !== generationConfig.executionSpeed) {
-        updateConfig('executionSpeed', normalizedSpeed);
-      }
-    }, [
-      codexModels,
-      generationConfig.executionModel,
-      generationConfig.executionReasoningEffort,
-      generationConfig.executionSpeed,
-      preferredExecutionModelId,
-      selectedExecutionModel,
-      updateConfig,
-    ]);
-
     const handleSelectExecutionModel = useCallback(
       (model: CodexModel) => {
         updateConfig('executionModel', model.id);
@@ -372,13 +335,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     }, [closeAllMenus]);
 
     const lastPushedPromptRef = useRef(generationConfig.prompt);
+    const debounceTimerRef = useRef<number | null>(null);
 
     useEffect(() => {
-      if (debouncedPrompt === localPrompt && debouncedPrompt !== generationConfig.prompt) {
-        lastPushedPromptRef.current = debouncedPrompt;
-        updateConfig('prompt', debouncedPrompt);
-      }
-    }, [debouncedPrompt, localPrompt, generationConfig.prompt, updateConfig]);
+      const timer = debounceTimerRef.current;
+      return () => {
+        if (timer) clearTimeout(timer);
+      };
+    }, []);
 
     useEffect(() => {
       if (
@@ -547,8 +511,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   closeAllMenus();
                 }}
                 onChange={(e) => {
-                  setLocalPrompt(e.target.value);
+                  const next = e.target.value;
+                  setLocalPrompt(next);
                   setIsInteracting(true);
+                  if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
+                  debounceTimerRef.current = window.setTimeout(() => {
+                    lastPushedPromptRef.current = next;
+                    updateConfig('prompt', next);
+                  }, 300);
                 }}
                 onKeyDown={handleKeyDown}
                 onPaste={(e) => {

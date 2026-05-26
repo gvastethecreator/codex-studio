@@ -1,13 +1,19 @@
-# ADR 0020: Recipe Modules Produce Generation Task Specs
+# ADR 0020: Recipe Modules Produce Task Specs
 
-## Estado
+## Status
 
-Aceptado.
+Accepted.
 
-## Contexto
+## Context
 
-Recipes should become declarative modules that describe reusable generation intent rather than React components that assemble provider-ready prompt text. Each Recipe Module should expose metadata, parameter schema, compatible Generation Tasks and Generation Providers, assets, and a pure builder that produces a provider-independent Generation Task Spec.
+Recipes should express product intent without knowing the details of Codex, fal.ai, Gemini, ComfyUI, or future adapters.
 
-## Consecuencias
+## Decision
 
-Generation Providers become responsible for compiling a Generation Task Spec into their own execution format: compact Codex prompt, hosted API request, or local workflow input. This keeps token-heavy Codex prompt construction out of the UI, lets non-Codex providers avoid prompt-only translation, and makes recipes reusable for future tasks such as textures and animated sprites.
+Recipe modules produce Task Specs: structured prompt fragments, references, constraints, and metadata that the backend can compile into Generation Tasks.
+
+## Consequences
+
+- recipes remain provider-independent;
+- recipes can be tested without provider mocks;
+- provider adapters receive a consistent task contract.

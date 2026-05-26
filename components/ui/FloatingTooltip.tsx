@@ -36,8 +36,9 @@ export const FloatingTooltip: React.FC<FloatingTooltipProps> = ({
   };
 
   useEffect(() => {
+    const timeout = timeoutRef.current;
     return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      if (timeout) clearTimeout(timeout);
     };
   }, []);
 

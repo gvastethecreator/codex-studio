@@ -246,8 +246,9 @@ export const useQueueManager = ({
       }
     });
 
+    const restTimer = restTimerRef.current;
     return () => {
-      if (restTimerRef.current) clearTimeout(restTimerRef.current);
+      if (restTimer) clearTimeout(restTimer);
     };
   }, [jobs, isResting, executeGeneration, queueTick]);
 

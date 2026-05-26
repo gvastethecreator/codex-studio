@@ -1,93 +1,93 @@
-# Servicios e Integracion Local
+# Services and Local Integration
 
 ## Frontend
 
 ### `services/studioRuntime.ts`
 
-Resuelve `apiBase` y metadatos del runtime (web o desktop) sin acoplar el renderer a Electron.
+Resolves `apiBase` and runtime metadata (web or desktop) without coupling the renderer to Electron.
 
-- `resolveStudioRuntime()` expone `kind`, `label`, `apiBase` y capacidades.
-- `resolveStudioApiBase()` devuelve la base HTTP efectiva para el backend local.
-- `isDesktopStudioRuntime()` permite distinguir web vs shell desktop.
+- `resolveStudioRuntime()` exposes `kind`, `label`, `apiBase`, and capabilities.
+- `resolveStudioApiBase()` returns the effective HTTP base for the local backend.
+- `isDesktopStudioRuntime()` distinguishes web from the desktop shell.
 
 ### `hooks/useStudioRuntime.ts`
 
-Orquestador de seams runtime-facing para el shell.
+Runtime-facing orchestrator for the shell.
 
-- compone `useLocalStudioSync`, `useStudioOnboarding` y `useStudioDiagnostics`;
-- expone `diagnostics`, `localCodexSession`, `readiness`, `runtime` y `refreshRuntime()`;
-- evita que `AppContent` tenga que coser manualmente health, sync y onboarding.
+- composes `useLocalStudioSync`, `useStudioOnboarding`, and `useStudioDiagnostics`;
+- exposes `diagnostics`, `localCodexSession`, `readiness`, `runtime`, and `refreshRuntime()`;
+- prevents `AppContent` from wiring health, sync, and onboarding manually.
 
 ### `services/localStudioService.ts`
 
-Adaptador unico de la UI hacia el backend local.
+Single UI adapter toward the local backend.
 
-- `getStudioHealth()` verifica backend, Studio Library, Codex CLI y `codex app-server`.
-- `getLocalCodexSession()` lee la sesion local ChatGPT/Codex usada por el producto.
-- `getCodexModelCatalog()` descubre los modelos locales expuestos por el app-server.
-- `startStudioAppServer()` pide arrancar el lifecycle del app-server.
-- `resetStudioData()` limpia DB, assets, logs y estado manejado por backend.
-- `listProjects()`, `createStudioJob()`, `listStudioJobs()`, `getStudioJobDetail()` y `cancelStudioJob()` manejan la cola persistente.
-- `listLibraries()` y `queryCatalog()` exponen la superficie principal de bibliotecas y catalogo.
-- `listStudioLogs()` muestra logs del backend en la consola visual.
-- `getCodexAccountStatus()` se conserva como alias de compatibilidad para el endpoint legacy.
-- `getStudioApiBase()` y `toStudioAssetUrl()` construyen URLs locales estables para assets y thumbnails.
+- `getStudioHealth()` verifies the backend, Studio Library, Codex CLI, and `codex app-server`.
+- `getLocalCodexSession()` reads the local ChatGPT/Codex session used by the product.
+- `getCodexModelCatalog()` discovers local models exposed by the app-server.
+- `startStudioAppServer()` requests app-server lifecycle startup.
+- `resetStudioData()` clears backend-managed DB, assets, logs, and state.
+- `listProjects()`, `createStudioJob()`, `listStudioJobs()`, `getStudioJobDetail()`, and `cancelStudioJob()` manage the persistent queue.
+- `listLibraries()` and `queryCatalog()` expose the main library and catalog surfaces.
+- `listStudioLogs()` shows backend logs in the visual console.
+- `getCodexAccountStatus()` remains as a compatibility alias for the legacy endpoint.
+- `getStudioApiBase()` and `toStudioAssetUrl()` build stable local URLs for assets and thumbnails.
 
 ### `services/studioEventSource.ts`
 
-Adaptador SSE compartido para eventos vivos del backend.
+Shared SSE adapter for live backend events.
 
-- `createStudioEventStream()` expone `onJobUpdate`, `onAssetAdded`, `onLogAdded` y `onConnectionChange`.
-- `watchJob()` espera a que un job persistente llegue a un estado terminal sin reintroducir polling dedicado.
-- una sola conexion SSE puede alimentar sincronizacion general y generaciones concurrentes.
+- `createStudioEventStream()` exposes `onJobUpdate`, `onAssetAdded`, `onLogAdded`, and `onConnectionChange`.
+- `watchJob()` waits for a persistent job to reach a terminal state without reintroducing dedicated polling.
+- one SSE connection can feed general sync and concurrent generations.
 
 ### `hooks/useGenerationPipeline.ts`
 
-Controla validaciones visuales, balance, modal y commit del `GenerationBatch`. No conoce la coreografia de jobs persistentes.
+Controls visual validation, balance, modal state, and `GenerationBatch` commit. It does not know persistent-job orchestration details.
 
 ### `services/localGenerationRun.ts`
 
-Convierte una configuracion visual en un `GenerationBatch`.
+Converts a visual configuration into local generation results and a compatibility `GenerationBatch` edge.
 
-- crea jobs `codex_imagegen` persistentes;
-- espera su finalizacion con `watchJob()` sobre un stream SSE compartido;
-- consulta `/api/catalog` filtrado por `jobId`;
-- materializa imagenes y thumbnails para el cache visual en IndexedDB.
+- creates persistent `codex_imagegen` jobs;
+- waits for completion with `watchJob()` over a shared SSE stream;
+- queries `/api/catalog` filtered by `jobId`;
+- materializes UI image data from Catalog Entries at the compatibility edge.
 
 ### `hooks/useLocalStudioSync.ts`
 
-Mantiene la UI alineada con el backend local.
+Keeps the UI aligned with the local backend.
 
-- hace catch-up inicial de jobs, logs y catalogo por HTTP;
-- reutiliza `createStudioEventStream()` para jobs, logs y assets;
-- importa Catalog Entries al cache `GenerationBatch[]` que sigue usando el grid actual;
-- expone `verifyCodexSession()` y recuperacion de batches huerfanos.
+- performs initial HTTP catch-up for jobs, logs, and catalog;
+- reuses `createStudioEventStream()` for jobs, logs, and assets;
+- refreshes catalog-backed UI state without making Visual Batches the durable model;
+- exposes session verification and recovery hooks used by the shell.
 
 ### `lib/studioReadiness.ts` y `lib/studioDiagnostics.ts`
 
-Builders puros para convertir health + Local Codex Session en snapshots legibles por onboarding, header y paneles del sistema.
+Pure builders that convert health + Local Codex Session into readable snapshots for onboarding, header, and system panels.
 
 ### `components/AppContent.tsx`
 
-Orquesta la integracion:
+Orchestrates the integration:
 
-- consume `useStudioRuntime()` como seam agregado del backend local;
-- mezcla logs de UI y backend en los paneles;
-- renderiza el cache visual `GenerationBatch[]` mientras el catalogo vive en SQLite;
-- verifica la sesion local Codex desde el popover de credenciales;
-- mantiene la interfaz original de workspaces, recipes, grid, modal y editor.
+- consumes `useStudioRuntime()` as the aggregate local-backend seam;
+- mixes UI and backend logs in panels;
+- renders catalog-derived images while SQLite remains the durable model;
+- verifies the local Codex session from the credentials popover;
+- keeps the original workspace, recipe, grid, modal, and editor flow usable.
 
 ## Backend
 
 ### `apps/local-server/src/appFactory.ts`
 
-API Hono local:
+Local Hono API:
 
 - `GET /api/health`
 - `POST /api/app-server/start`
 - `GET /api/codex/models`
 - `GET /api/codex/session`
-- `GET /api/codex/account` (compatibilidad)
+- `GET /api/codex/account` (compatibility)
 - `POST /api/studio/reset`
 - `GET /api/projects`
 - `GET /api/jobs`
@@ -112,29 +112,29 @@ API Hono local:
 
 ### `worker.ts`
 
-Procesa jobs `dry_run` y `codex_imagegen`. Para `codex_imagegen` lanza un turno en `codex app-server`, guarda transcript JSONL, actualiza catalogo/assets y emite eventos que consume el stream SSE del frontend.
+Processes `dry_run` and `codex_imagegen` jobs. For `codex_imagegen`, it runs a turn through `codex app-server`, writes a JSONL transcript, updates catalog/assets, and emits events consumed by the frontend SSE stream.
 
 ### `apps/local-server/src/codex/`
 
-Concentra las costuras principales del backend local de Codex.
+Concentrates the main seams for the local Codex backend.
 
-- `localCodexSession.ts`: lectura canonica de la sesion local ChatGPT/Codex.
-- `modelCatalog.ts`: catalogo de modelos disponibles en el app-server local.
-- `processSupervisor.ts`: ensure + diagnostico de `codex app-server`.
-- `rpcClient.ts`: transporte JSON-RPC hacia el app-server.
-- `sessionPool.ts`: reutilizacion de sesiones/thread para imagegen.
-- `turn.ts`: orquestacion de un Codex Turn.
+- `localCodexSession.ts`: canonical read of the local ChatGPT/Codex session.
+- `modelCatalog.ts`: catalog of models available in the local app-server.
+- `processSupervisor.ts`: ensure + diagnostics for `codex app-server`.
+- `rpcClient.ts`: JSON-RPC transport to the app-server.
+- `sessionPool.ts`: session/thread reuse for imagegen.
+- `turn.ts`: Codex Turn orchestration.
 
 ### `db.ts`
 
-SQLite local con tablas para settings, projects, jobs, assets, catalogo, libraries, job events y system logs.
+Local SQLite with tables for settings, projects, jobs, assets, catalog, libraries, job events, and system logs.
 
 ### `logger.ts`
 
-Escribe logs en SQLite y en disco bajo la carpeta `logs/` de la Studio Library configurada.
+Writes logs to SQLite and to disk under the configured Studio Library `logs/` folder.
 
-## Superficies legacy
+## Legacy surfaces
 
-- `Visual Batch` y `GenerationBatch[]` siguen siendo la cache visual actual de la UI, no el modelo duradero.
-- `/api/codex/account` y `/api/assets` sobreviven por compatibilidad, pero las superficies canonicas para la UI nueva son `Local Codex Session`, `/api/catalog` y `GET /api/events`.
-- Los servicios directos de proveedores externos de la aplicacion original quedaron fuera del pipeline activo; la UI integrada no depende de API keys para generar imagenes.
+- `Visual Batch` and `GenerationBatch[]` remain visual compatibility surfaces, not the durable model.
+- `/api/codex/account` and `/api/assets` survive for compatibility, but the canonical newer UI surfaces are `Local Codex Session`, `/api/catalog`, and `GET /api/events`.
+- Direct external-provider services from the original app are outside the active integrated pipeline. The integrated UI does not depend on API keys for image generation.

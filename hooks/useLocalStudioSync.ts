@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useReducer, useMemo, useRef } from 'react';
 import { listStudioJobs, listStudioLogs } from '../services/localStudioService';
 import { createStudioEventStream } from '../services/studioEventSource';
 import type { LogEntry } from '../types';
@@ -46,12 +46,40 @@ interface BackendState {
 
 const INITIAL_BACKEND_STATE: BackendState = { jobs: [], logs: [], connected: false };
 
+type BackendAction =
+  | { type: 'refresh'; jobs: StudioJob[]; logs: StudioLog[] }
+  | { type: 'job_update'; job: StudioJob }
+  | { type: 'log_added'; entry: StudioLog }
+  | { type: 'connection_change'; connected: boolean }
+  | { type: 'disconnect' };
+
+function backendReducer(state: BackendState, action: BackendAction): BackendState {
+  switch (action.type) {
+    case 'refresh':
+      return { jobs: action.jobs, logs: action.logs, connected: true };
+    case 'job_update':
+      return {
+        ...state,
+        jobs: [action.job, ...state.jobs.filter((c) => c.id !== action.job.id)].slice(0, 100),
+      };
+    case 'log_added':
+      return {
+        ...state,
+        logs: [action.entry, ...state.logs.filter((c) => c.id !== action.entry.id)].slice(0, 300),
+      };
+    case 'connection_change':
+      return { ...state, connected: action.connected };
+    case 'disconnect':
+      return { ...state, connected: false };
+  }
+}
+
 export function useLocalStudioSync({
   logs,
   log,
   onCatalogChanged,
 }: UseLocalStudioSyncProps): LocalStudioSyncResult {
-  const [backendState, setBackendState] = useState<BackendState>(INITIAL_BACKEND_STATE);
+  const [backendState, dispatch] = useReducer(backendReducer, INITIAL_BACKEND_STATE);
   const isMountedRef = useRef(true);
 
   useEffect(() => {
@@ -82,14 +110,14 @@ export function useLocalStudioSync({
 
       const [backendJobs, backendLogs] = await Promise.all([listStudioJobs(), listStudioLogs()]);
 
-      setBackendState({ jobs: backendJobs, logs: backendLogs, connected: true });
+      dispatch({ type: 'refresh', jobs: backendJobs, logs: backendLogs });
       onCatalogChanged?.();
     } catch (error) {
       if (!isMountedRef.current) {
         return;
       }
 
-      setBackendState((prev) => ({ ...prev, connected: false }));
+      dispatch({ type: 'disconnect' });
       log(
         `Local Codex backend sync failed: ${error instanceof Error ? error.message : String(error)}`,
       );
@@ -101,22 +129,16 @@ export function useLocalStudioSync({
 
     const stream = createStudioEventStream();
     const unsubscribeJob = stream.onJobUpdate('*', (job) => {
-      setBackendState((prev) => ({
-        ...prev,
-        jobs: [job, ...prev.jobs.filter((candidate) => candidate.id !== job.id)].slice(0, 100),
-      }));
+      dispatch({ type: 'job_update', job });
     });
     const unsubscribeAsset = stream.onAssetAdded(() => {
       onCatalogChanged?.();
     });
     const unsubscribeLog = stream.onLogAdded((entry) => {
-      setBackendState((prev) => ({
-        ...prev,
-        logs: [entry, ...prev.logs.filter((candidate) => candidate.id !== entry.id)].slice(0, 300),
-      }));
+      dispatch({ type: 'log_added', entry });
     });
     const unsubscribeConnection = stream.onConnectionChange((connected) => {
-      setBackendState((prev) => ({ ...prev, connected }));
+      dispatch({ type: 'connection_change', connected });
       if (!connected) {
         void refreshBackendState();
       }

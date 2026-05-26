@@ -1,35 +1,40 @@
-# PRD: Codex Studio Local
+# PRD: Local Codex Studio
 
-## Proposito
+## Purpose
 
-Convertir la aplicacion visual existente en un studio local para generar, revisar y administrar imagenes usando la sesion autenticada de Codex/ChatGPT en esta maquina, sin exigir API keys.
+Convert the existing visual image app into a local studio for generating, reviewing, and managing images with the user's authenticated Codex/ChatGPT session on the same machine, without requiring API keys for the main flow.
 
-## Usuarios
+## Users
 
-- Creadores que quieren un flujo local con biblioteca persistente.
-- Artistas tecnicos que necesitan prompts, recetas, referencias, batches y exportaciones.
-- Usuarios de Codex/ChatGPT que prefieren automatizar la generacion desde su sesion local.
+- Creators who want a local workflow with a persistent library.
+- Technical artists who need prompts, recipes, references, batches, and exports.
+- Codex/ChatGPT users who prefer automating generation from their local authenticated session.
 
-## Requerimientos Funcionales
+## Functional requirements
 
-- Generar imagenes desde la UI original mediante jobs `codex_imagegen`.
-- Guardar assets, logs, transcripts y metadata en una carpeta externa configurable.
-- Persistir jobs/assets/logs en SQLite.
-- Mostrar en UI la cola efimera y la cola persistente del backend.
-- Mostrar logs locales en la consola de la app.
-- Importar assets existentes de la biblioteca local al grid visual.
-- Mantener workspaces, favoritos, seleccion multiple, trash, vault export/import y recetas.
-- Permitir dry-run para validar la instalacion sin consumir generacion real.
+- Generate images from the UI through persistent Generation Task jobs.
+- Keep Codex as the primary product runtime through `codex app-server`.
+- Store assets, logs, transcripts, and metadata in a configurable external Studio Library.
+- Persist jobs, assets, catalog entries, libraries, and logs in SQLite.
+- Show both transient UI queue items and persistent backend jobs.
+- Show local logs in the app console.
+- Import selected files from registered External Output Sources into the Studio Library.
+- Preserve workspaces, favorites, multi-select, archive/trash, vault export, and recipes.
+- Provide dry-run or smoke-check paths to validate setup without consuming real generation.
 
-## Requerimientos No Funcionales
+## Non-functional requirements
 
-- No depender de `OPENAI_API_KEY`, `GEMINI_API_KEY` ni llamadas directas desde el navegador a proveedores externos.
-- Mantener el backend local ejecutable con Bun.
-- Mantener tasks de VSCode para iniciar y verificar el studio.
-- Evitar subir archivos sensibles o pesados: DB local, logs, assets generados y `.tmp`.
+- Do not require `OPENAI_API_KEY` for the main Codex flow.
+- Keep Provider Secrets out of SQLite-backed Studio Settings, catalog metadata, logs, transcripts, screenshots, and docs.
+- Keep the local backend runnable with Bun.
+- Keep VS Code tasks for starting, validating, and inspecting logs.
+- Avoid committing sensitive or heavy local files: SQLite databases, logs, generated assets, `.env.local`, and temporary artifacts.
+- Keep the UI useful when generation continues outside the browser.
 
-## Fuera de Alcance Actual
+## Out of current scope
 
-- Multiusuario remoto.
-- Sincronizacion cloud.
-- Edicion semantica perfecta con mascara: el editor ahora enruta a job local con contexto textual y adjuntos como referencia; la precision dependera de la capacidad disponible en Codex/imagegen.
+- Remote multi-user operation.
+- Cloud synchronization.
+- Making API keys mandatory for the default flow.
+- Final supported Electron packaging.
+- Perfect semantic mask editing. The editor routes image edits through local jobs with textual context and reference attachments; precision depends on the available provider capability.

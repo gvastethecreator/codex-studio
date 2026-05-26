@@ -205,16 +205,12 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             </button>
           </div>
         ) : (
-          <div
+          <button
+            type="button"
             onDragOver={(e) => e.preventDefault()}
             onDrop={handleDrop}
             onClick={() => fileInputRef.current?.click()}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
-            }}
-            role="button"
-            tabIndex={0}
-            className="size-full border-2 border-dashed border-white/10 hover:border-accent-500/50 bg-white/[0.01] flex flex-col items-center justify-center gap-6 cursor-pointer transition-all group"
+            className="size-full border-2 border-dashed border-white/10 hover:border-accent-500/50 bg-white/[0.01] flex flex-col items-center justify-center gap-6 cursor-pointer transition-all group appearance-none p-0 m-0"
           >
             <input
               type="file"
@@ -235,7 +231,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
                 Supported formats: JPG, PNG, WEBP
               </p>
             </div>
-          </div>
+          </button>
         )}
       </div>
     </RecipeLayout>

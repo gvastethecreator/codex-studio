@@ -173,7 +173,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
         </div>
       </div>
     ),
-    [azimuth, elevation, distance],
+    [azimuth, elevation, distance, setAzimuth, setElevation, setDistance],
   );
 
   return (
@@ -270,16 +270,12 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                 />
               </div>
             ) : (
-              <div
+              <button
+                type="button"
+                className="relative z-10 flex size-full cursor-pointer flex-col items-center justify-center p-6 transition-colors hover:bg-white/2 appearance-none border-none p-0 m-0 bg-transparent"
                 onClick={() => fileInputRef.current?.click()}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
-                }}
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={handleDrop}
-                role="button"
-                tabIndex={0}
-                className="relative z-10 flex size-full cursor-pointer flex-col items-center justify-center p-6 transition-colors hover:bg-white/2"
               >
                 <input
                   type="file"
@@ -301,7 +297,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                 <p className="text-[8px] text-zinc-600 font-bold uppercase mt-1 text-center">
                   Optional: upload a reference
                 </p>
-              </div>
+              </button>
             )}
           </div>
 

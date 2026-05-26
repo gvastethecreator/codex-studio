@@ -1,108 +1,107 @@
-# Electron: direccion propuesta
+# Electron: Proposed Direction
 
-Este documento no anuncia una build Electron inmediata; fija el enfoque recomendado para llegar ahi sin convertir el renderer en un amasijo de APIs de escritorio.
+This document does not announce an immediate Electron release. It defines the recommended path toward desktop support without turning the renderer into a bundle of desktop APIs.
 
-## Situacion actual
+## Current state
 
-Hoy el producto funciona como una UI React/Vite que habla con un backend local Bun/Hono por HTTP. Ese flujo ya es util y sigue siendo el camino principal.
+Today the product works as a React/Vite UI that talks to a local Bun/Hono backend over HTTP. That flow is useful and remains the main path.
 
-La nueva pieza que se introdujo para preparar el terreno es el **Studio Runtime**:
+The key piece that prepares the ground is **Studio Runtime**:
 
-- el renderer ya no asume ciegamente `http://localhost:4317`;
-- primero intenta leer `window.codexStudio?.apiBase`;
-- luego `VITE_STUDIO_API_BASE`;
-- y solo al final cae al `localhost` por defecto.
+- the renderer no longer blindly assumes `http://localhost:4317`;
+- it first tries `window.codexStudio?.apiBase`;
+- then `VITE_STUDIO_API_BASE`;
+- and only then falls back to the default localhost value.
 
-Eso nos da una costura real para un futuro adapter desktop.
+This gives the app a real seam for a future desktop adapter.
 
-Ademas, el repo ya incluye una shell minima de Electron para explorar ese camino sin prometer todavia un empaquetado final:
+The repo also includes a minimal Electron shell to explore that path without promising final packaging yet:
 
-- `bun run dev:electron` — levanta backend local + Vite + ventana Electron contra el dev server.
-- `bun run preview:electron` — compila `dist/`, arranca el backend local y carga la UI empaquetada dentro de Electron.
+- `bun run dev:electron` — starts the local backend + Vite + an Electron window against the dev server.
+- `bun run preview:electron` — builds `dist/`, starts the local backend, and loads the packaged UI inside Electron.
 
-Si ya tienes backend o renderer activos, los scripts intentan reutilizarlos antes de lanzar nuevos procesos.
+If the backend or renderer is already running, the scripts try to reuse them before starting new processes.
 
-Variables utiles:
+Useful variables:
 
-- `STUDIO_ELECTRON_API_BASE` para apuntar a otro backend local.
-- `STUDIO_ELECTRON_RENDERER_URL` para usar otro dev server durante `dev:electron`.
+- `STUDIO_ELECTRON_API_BASE` points to another local backend.
+- `STUDIO_ELECTRON_RENDERER_URL` uses another dev server during `dev:electron`.
 
-## Recomendacion oficial a respetar
+## Security baseline
 
-Basado en la documentacion actual de Electron, la ruta segura para este proyecto deberia conservar estas reglas:
+Based on current Electron guidance, this project should preserve these rules:
 
-- `BrowserWindow` con `preload` explicito;
+- `BrowserWindow` with explicit `preload`;
 - `nodeIntegration: false`;
 - `contextIsolation: true`;
-- `sandbox: true` cuando sea viable con nuestras necesidades reales;
-- exponer desde `preload` solo wrappers minimos via `contextBridge`;
-- no filtrar `ipcRenderer` completo al renderer;
-- bloquear navegacion inesperada y apertura arbitraria de ventanas.
+- `sandbox: true` when viable for the real needs;
+- expose only minimal wrappers from `preload` through `contextBridge`;
+- do not leak the full `ipcRenderer` into the renderer;
+- block unexpected navigation and arbitrary window opens.
 
-En desarrollo, Electron puede cargar la URL del dev server; en produccion debe cargar archivos locales empaquetados.
+In development, Electron can load the dev server URL. In production, it must load packaged local files.
 
-## Donde esta la friccion real
+## The real friction
 
-La ventana Electron en si no es el problema grande. El cuello de botella esta en el backend local:
+The Electron window itself is not the hard part. The real bottleneck is the local backend:
 
-- `apps/local-server` usa APIs especificas de Bun como `Bun.serve` y `Bun.file`;
-- el desktop main process de Electron corre sobre Node, no sobre Bun;
-- el producto tambien depende de `codex app-server` y de una sesion local autenticada del usuario.
+- `apps/local-server` uses Bun-specific APIs like `Bun.serve` and `Bun.file`;
+- Electron's desktop main process runs on Node, not Bun;
+- the product also depends on `codex app-server` and the user's authenticated local session.
 
-En otras palabras: agregar un `BrowserWindow` es facil; empaquetar bien el runtime local completo es la parte seria.
+In other words: adding a `BrowserWindow` is easy. Packaging the full local runtime correctly is the serious part.
 
-## Estrategia recomendada por fases
+## Recommended phased strategy
 
-### Fase 1: renderer preparado
+### Phase 1: renderer prepared
 
-Hecho parcialmente ahora:
+Partially done now:
 
-- el renderer resuelve su API base desde runtime;
-- el onboarding ya valida backend, Codex CLI, `codex app-server` y biblioteca local;
-- la UI sigue siendo funcional en navegador sin atarse a Electron.
+- the renderer resolves its API base from runtime;
+- onboarding already validates backend, Codex CLI, `codex app-server`, and local library;
+- the UI remains functional in the browser without being tied to Electron.
 
-### Fase 2: adapter desktop minimo
+### Phase 2: minimal desktop adapter
 
-Objetivo:
+Goal:
 
-- crear proceso `main` + `preload`;
-- cargar la UI Vite en dev y archivos estaticos en produccion;
-- inyectar `window.codexStudio.apiBase` desde `preload`;
-- mantener el backend local como proceso separado supervisado por desktop.
+- create `main` + `preload` processes;
+- load the Vite UI in dev and static files in production;
+- inject `window.codexStudio.apiBase` from `preload`;
+- keep the local backend as a separate process supervised by desktop.
 
-Estado actual:
+Current state:
 
-- `electron/main.cjs` crea un `BrowserWindow` seguro y bloquea navegacion inesperada;
-- `electron/preload.cjs` expone solo `window.codexStudio` via `contextBridge`;
-- los scripts `dev:electron` y `preview:electron` levantan el shell desktop sin acoplar el renderer a APIs de Electron.
+- `electron/main.cjs` creates a safe `BrowserWindow` and blocks unexpected navigation;
+- `electron/preload.cjs` exposes only `window.codexStudio` through `contextBridge`;
+- `dev:electron` and `preview:electron` start the desktop shell without coupling the renderer to Electron APIs.
 
-Esta fase evita reescribir el renderer y convierte Electron en un adapter nuevo en el seam del Studio Runtime.
+This phase avoids rewriting the renderer and makes Electron a new adapter at the Studio Runtime seam.
 
-### Fase 3: empaquetado serio
+### Phase 3: serious packaging
 
-Opciones a evaluar:
+Options to evaluate:
 
-1. empaquetar Bun junto con la app y supervisar `apps/local-server` como proceso hijo;
-2. portar el adapter del backend local a un runtime Node-compatible si Electron pasa a ser el canal principal.
+1. package Bun with the app and supervise `apps/local-server` as a child process;
+2. port the local backend adapter to a Node-compatible runtime if Electron becomes the main distribution channel.
 
-La opcion 1 conserva mas codigo actual.
-La opcion 2 reduce dependencias de runtime externas, pero implica mas trabajo en el adapter del backend.
+Option 1 preserves more current code. Option 2 reduces external runtime dependencies, but requires more backend-adapter work.
 
-## Decision practica por ahora
+## Practical decision for now
 
-Para la proxima etapa open-source, la recomendacion es:
+For the next open-source stage, the recommendation is:
 
-- **no** intentar una build Electron completa todavia;
-- **si** seguir consolidando el Studio Runtime y el onboarding;
-- **si** mantener el renderer limpio de dependencias directas de Electron;
-- **si** tratar Electron como un adapter futuro, no como una reescritura del producto.
+- **do not** attempt a full Electron release yet;
+- **do** keep consolidating Studio Runtime and onboarding;
+- **do** keep the renderer free of direct Electron dependencies;
+- **do** treat Electron as a future adapter, not as a product rewrite.
 
-En otras palabras: ya existe un desktop shell de trabajo para validar UX y seams; lo que todavia no existe es una distribucion final empaquetada y soportada.
+In short: there is already a working desktop shell to validate UX and seams. There is not yet a final packaged and supported desktop distribution.
 
-## Checklist antes de intentar la build desktop
+## Checklist before attempting a desktop build
 
-- definir como se empacara o supervisara Bun;
-- confirmar comportamiento de `codex app-server` dentro de una app desktop distribuida;
-- revisar rutas por OS para la Studio Library;
-- decidir el canal de logs y health-check entre main, preload y renderer;
-- agregar restricciones de navegacion y apertura de ventanas desde el primer prototipo.
+- define how Bun will be packaged or supervised;
+- confirm `codex app-server` behavior inside a distributed desktop app;
+- review OS-specific Studio Library paths;
+- decide the logs and health-check channel between main, preload, and renderer;
+- add navigation and window-open restrictions from the first prototype.

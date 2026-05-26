@@ -134,15 +134,11 @@ const RecipeCard: React.FC<{ recipe: RecipeCatalogEntry; onSelect: (id: RecipeId
     };
 
     return (
-      <div
+      <button
+        type="button"
         onClick={handleSelectRecipe}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') handleSelectRecipe();
-        }}
-        role="button"
-        tabIndex={0}
         className={`
-                group relative aspect-[3/2] rounded-2xl bg-zinc-950 border border-white/5 overflow-hidden cursor-pointer
+                group relative aspect-[3/2] rounded-2xl bg-zinc-950 border border-white/5 overflow-hidden cursor-pointer appearance-none p-0 m-0 text-left
                 grayscale-[0.4] hover:grayscale-0
                 transition-all duration-500 ease-out delay-100 hover:delay-0 hover:duration-300
                 hover:-translate-y-2 hover:shadow-2xl
@@ -228,6 +224,6 @@ const RecipeCard: React.FC<{ recipe: RecipeCatalogEntry; onSelect: (id: RecipeId
             </div>
           </div>
         </div>
-      </div>
+      </button>
     );
   });

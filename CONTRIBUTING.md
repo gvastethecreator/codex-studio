@@ -1,14 +1,14 @@
-# Contribuir a Codex Studio
+# Contributing to Codex Studio
 
-Gracias por ayudar a convertir este repo en un producto open-source mas solido y mas facil de instalar.
+Thank you for helping turn this repo into a more solid, easier-to-install open-source product.
 
-## Antes de abrir una PR
+## Before opening a PR
 
-- Revisa el contexto del producto en `README.md` y `ROADMAP.md`.
-- Si tu cambio toca arquitectura o sincronizacion local, mira tambien `docs/ARCHITECTURE.md` y `docs/SERVICES.md`.
-- Si agregas o modificas una receta, revisa `docs/DEV_GUIDE.md`.
+- Review the product context in `README.md` and `ROADMAP.md`.
+- If your change touches architecture or local sync, also check `docs/ARCHITECTURE.md` and `docs/SERVICES.md`.
+- If you are adding or modifying a recipe, read `docs/DEV_GUIDE.md`.
 
-## Setup local recomendado
+## Recommended local setup
 
 ```bash
 bun install
@@ -16,22 +16,22 @@ bun run studio:init
 bun run dev
 ```
 
-Si prefieres separar procesos:
+To run processes separately:
 
 ```bash
 bun run dev:server
 bun run dev:ui
 ```
 
-## Requisitos para contribuir bien
+## Requirements for contributing
 
-- Tener **Bun** disponible en PATH.
-- Tener **Codex CLI** instalado y autenticado localmente.
-- No depender de API keys para el flujo principal del producto.
+- **Bun** available in PATH.
+- **Codex CLI** installed and locally authenticated.
+- Do not depend on API keys for the main product flow.
 
-## Checklist minima para cambios de codigo
+## Minimum checklist for code changes
 
-Antes de abrir una PR, intenta dejar esto en verde:
+Before opening a PR, try to get these green:
 
 ```bash
 bun run fmt:check
@@ -41,41 +41,44 @@ bun run test
 bun run build
 ```
 
-Si tu cambio toca onboarding, setup o DX, actualiza la documentacion correspondiente en la misma PR.
+If your change touches onboarding, setup, or DX, update the corresponding documentation in the same PR.
 
-## Convenciones importantes del repo
+## Important repo conventions
 
-- No subir assets generados, logs, bases SQLite ni contenido de la biblioteca local.
-- No commitear `.env.local`, `.env` con datos reales ni rutas especificas de tu maquina.
-- Mantener la UI local-first: la experiencia principal debe seguir funcionando sin `OPENAI_API_KEY`.
-- Si agregas una nueva variable de entorno o script publico, documentalo en `README.md`.
-- Si cambias una decision estructural relevante, deja evidencia en `docs/adr/` o al menos en la documentacion tecnica afectada.
-- Las tareas de calidad principales deben seguir escribiendo logs en `logs/tooling/`.
-- Las nuevas pruebas unitarias deben escribirse con `vite-plus/test`.
+- Do not commit generated assets, logs, SQLite databases, or local library content.
+- Do not commit `.env.local`, `.env` with real data, or machine-specific paths.
+- Keep the UI local-first: the main experience must continue to work without `OPENAI_API_KEY`.
+- If you add a new environment variable or public script, document it in `README.md`.
+- If you change a relevant structural decision, leave evidence in `docs/adr/` or at least in the affected technical documentation.
+- Main quality tasks must continue writing logs to `logs/tooling/`.
+- New unit tests must be written using `vite-plus/test`.
 
-## Como reportar bugs utiles
+## How to file useful bug reports
 
-Cuando abras un issue o describas un problema, incluye:
+When opening an issue or describing a problem, include:
 
-- sistema operativo;
-- version de Bun;
-- version de Codex (`codex --version`);
-- version de Bun (`bun --version`);
-- comando usado (`bun run dev`, `bun run dev:server`, etc.);
-- que esperabas que ocurriera;
-- que ocurrio realmente;
-- logs o capturas relevantes de la carpeta `logs/` dentro de tu Studio Library (por ejemplo `%USERPROFILE%\AI-Studio-Library\logs` en Windows), `logs/tooling/` o de tu directorio equivalente.
+- operating system;
+- Bun version (`bun --version`);
+- Codex version (`codex --version`);
+- command used (`bun run dev`, `bun run dev:server`, etc.);
+- what you expected to happen;
+- what actually happened;
+- relevant logs or screenshots from the `logs/` folder inside your Studio Library (e.g. `%USERPROFILE%\AI-Studio-Library\logs` on Windows), `logs/tooling/`, or your equivalent directory.
 
-## Cambios especialmente valiosos ahora mismo
+## Especially valuable changes right now
 
-Durante esta etapa de preparacion open-source, ayudan mucho las PRs que mejoren:
+During this open-source preparation stage, PRs that improve the following are most welcome:
 
-- onboarding y mensajes de error;
-- compatibilidad Windows/macOS/Linux;
-- trazabilidad de jobs y assets;
-- documentacion publica;
-- limpieza de copy, naming y affordances de la UI.
+- onboarding and error messages;
+- Windows/macOS/Linux compatibility;
+- job and asset traceability;
+- public documentation;
+- UI copy, naming, and affordance cleanup.
 
-## Estilo de contribucion
+## Contribution style
 
-Preferimos cambios pequeños, explicables y faciles de validar. Si vas a hacer una limpieza grande o una reorganizacion fuerte, abre primero una issue o deja una nota de enfoque para alinear la direccion. Menos heroics, mas claridad.
+Prefer small, well-explained, easy-to-validate changes. If you plan a large cleanup or major reorganization, open an issue or leave a focus note first to align direction. Less heroics, more clarity.
+
+## Code of Conduct
+
+This project follows the [Contributor Covenant Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you agree to uphold it.

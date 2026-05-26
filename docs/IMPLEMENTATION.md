@@ -1,36 +1,36 @@
-# Detalles de Implementacion
+# Implementation Details
 
-## Enrutamiento
+## Routing
 
-La app mantiene el enrutamiento liviano por hash para `studio`, `recipes`, recetas especificas, modal y editor. Esto conserva el comportamiento original de back/forward sin introducir `react-router`.
+The app keeps lightweight hash-based routing for the studio, recipes, individual recipe pages, modal state, and editor state. This preserves the original back/forward behavior without introducing `react-router`.
 
-## Grid y Thumbnails
+## Grid and thumbnails
 
-`ImageGrid` sigue usando el layout visual original. Las imagenes nuevas llegan desde el backend local como URLs servidas por `/library/*`; `utils/imageUtils.ts` genera thumbnails con canvas cuando el Catalog Entry todavia no trae una miniatura persistida.
+`ImageGrid` keeps the original visual layout. New images arrive from the local backend as URLs served by `/library/*`. When a Catalog Entry does not yet include a persisted thumbnail, `utils/imageUtils.ts` can generate one with canvas for UI compatibility.
 
-## Generacion
+## Generation
 
-`useGenerationPipeline` ya no llama servicios externos desde el browser. El flujo actual es:
+`useGenerationPipeline` no longer calls external provider services from the browser. The current flow is:
 
-1. La UI crea un job visual en `useQueueManager`.
-2. `runLocalGeneration` crea uno o mas jobs persistentes `codex_imagegen` en el backend local.
-3. `watchJob()` espera los estados terminales reutilizando un stream SSE compartido.
-4. El worker usa `codex app-server` y la skill local de imagenes.
-5. El asset se guarda en `assets/` y `thumbnails/` dentro de la Studio Library configurada (por ejemplo `%USERPROFILE%\AI-Studio-Library\assets` en Windows).
-6. La UI consulta `/api/catalog` filtrando por `jobId`, materializa imagenes desde Catalog Entries y solo construye `GenerationBatch` en memoria como compatibilidad visual.
+1. The UI creates a transient visual job through `useQueueManager`.
+2. `runLocalGeneration` creates one or more persistent Generation Task jobs in the local backend.
+3. `watchJob()` waits for terminal states through a shared SSE stream.
+4. The backend worker executes through the Provider Boundary. Codex remains the primary adapter via `codex app-server`.
+5. Local Assets, thumbnails, transcripts, and catalog metadata are written into the configured Studio Library.
+6. The UI queries `/api/catalog` by `jobId`, materializes images from Catalog Entries, and only builds legacy `GenerationBatch` data at compatibility edges.
 
-## Cola Persistente
+## Persistent queue
 
-La cola visible conserva jobs efimeros de UI y, en paralelo, muestra los jobs persistentes del backend. Estos ultimos sobreviven a recargas o cierre de la pantalla porque viven en SQLite.
+The visible queue contains transient UI jobs and persistent backend jobs. Persistent jobs survive reloads or UI closure because they live in SQLite.
 
-## Sincronizacion viva
+## Live sync
 
-`useLocalStudioSync` hace un catch-up inicial por HTTP y luego escucha jobs, logs y assets via `GET /api/events`. Si la conexion SSE se cae, el frontend vuelve a consultar el backend para recuperar estado antes de reconectar.
+`useLocalStudioSync` performs initial HTTP catch-up and then listens for jobs, logs, and assets through `GET /api/events`. If the SSE connection drops, the frontend refreshes backend state before reconnecting.
 
 ## Logs
 
-La consola visual mezcla logs de UI con logs del backend local. El backend tambien escribe en disco bajo la carpeta `logs/` de la Studio Library configurada.
+The visual console mixes UI logs with local backend logs. The backend also writes logs to disk under the configured Studio Library `logs/` folder.
 
 ## Vault
 
-Vault queda como export de snapshot metadata legacy para inspeccion y compatibilidad. Ya no existe import visible de JSON legacy: las imagenes deben entrar por Settings > External Output Sources para copiarse como Local Assets y Catalog Entries. El cache visual activo no se persiste en IndexedDB; recovery puede leer claves legacy para reconstruccion puntual.
+Vault remains a legacy metadata snapshot export surface for inspection and compatibility. Visible JSON legacy import has been removed. Images should enter through Settings > External Output Sources so selected files are copied as Local Assets and Catalog Entries. The active visual cache is not persisted in IndexedDB; recovery may still read legacy keys for targeted reconstruction.

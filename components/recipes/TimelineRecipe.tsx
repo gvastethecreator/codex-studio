@@ -102,28 +102,23 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   const [motionAmount, setMotionAmount] = useState(DEFAULT_MOTION_AMOUNT);
   const [lightingMode, setLightingMode] = useState(DEFAULT_LIGHTING_MODE);
 
-  // --- Session State ---
-  const [sessionOrigin, setSessionOrigin] = useState<{ id: string; src: string } | null>(null);
   const [isOnionSkinEnabled, setIsOnionSkinEnabled] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
-  const activeImage = config.attachments[0]; // Currently selected reference frame
+  const activeImage = useMemo(() => config.attachments[0], [config.attachments]);
 
   const ratioValue = useMemo(() => RATIO_MAP[config.aspectRatio] || 1.777, [config.aspectRatio]);
 
-  if (!sessionOrigin) {
+  const [uploadedOrigin, setUploadedOrigin] = useState<{ id: string; src: string } | null>(null);
+  const sessionOrigin = useMemo(() => {
+    if (uploadedOrigin) return uploadedOrigin;
     const anchorAtt = config.attachments.find((a) => a.name.includes('(Anchor)'));
-    if (anchorAtt) {
-      setSessionOrigin({ id: anchorAtt.id, src: anchorAtt.dataUrl });
-    } else if (config.attachments.length > 0) {
-      setSessionOrigin({
-        id: config.attachments[0].id,
-        src: config.attachments[0].dataUrl,
-      });
-    }
-  }
+    if (anchorAtt) return { id: anchorAtt.id, src: anchorAtt.dataUrl };
+    if (config.attachments.length > 0) return { id: config.attachments[0].id, src: config.attachments[0].dataUrl };
+    return null;
+  }, [uploadedOrigin, config.attachments]);
 
   // Helper: Extract temporal index safely
   const getSequenceIndex = (imageConfig?: ImageGenerationConfig): number =>
@@ -192,7 +187,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
         };
 
         updateConfig('attachments', [newAttachment]);
-        setSessionOrigin({ id: newAttachment.id, src: dataUrl });
+        setUploadedOrigin({ id: newAttachment.id, src: dataUrl });
       } catch (err) {
         // Failed to load local file
       }
@@ -461,7 +456,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
         </div>
       </>
     ),
-    [direction, timeDelta, motionAmount, lightingMode, cameraMode, isOnionSkinEnabled],
+    [direction, timeDelta, motionAmount, lightingMode, cameraMode, isOnionSkinEnabled, setDirection, setTimeDelta, setCameraMode, setMotionAmount, setLightingMode, setIsOnionSkinEnabled],
   );
 
   return (
@@ -536,16 +531,12 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               />
             </>
           ) : (
-            <div
+            <button
+              type="button"
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
-              }}
-              role="button"
-              tabIndex={0}
-              className="group flex size-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-all hover:bg-white/3"
+              className="group flex size-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-all hover:bg-white/3 appearance-none border-none p-0 m-0"
             >
               <input
                 type="file"
@@ -568,7 +559,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
                   The starting point of time
                 </p>
               </div>
-            </div>
+            </button>
           )}
         </div>
       </div>

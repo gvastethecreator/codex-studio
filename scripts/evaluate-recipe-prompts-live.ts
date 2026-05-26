@@ -243,15 +243,16 @@ function calculatePromptSavings(
 }
 
 function parseMultiValueArg(name: string) {
-  return uniqueStrings(
-    process.argv
-      .filter((arg) => arg.startsWith(`--${name}=`))
-      .flatMap((arg) => arg.slice(name.length + 3).split('|'))
-      .flatMap((value) => {
-        const trimmed = value.trim();
-        return trimmed ? [trimmed] : [];
-      }),
-  );
+  const prefix = `--${name}=`;
+  const result: string[] = [];
+  for (const arg of process.argv) {
+    if (!arg.startsWith(prefix)) continue;
+    for (const part of arg.slice(prefix.length).split('|')) {
+      const trimmed = part.trim();
+      if (trimmed) result.push(trimmed);
+    }
+  }
+  return uniqueStrings(result);
 }
 
 function parseOptionalPositiveIntArg(name: string, fallback: number) {

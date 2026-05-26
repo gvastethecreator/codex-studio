@@ -239,20 +239,24 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
     lastSetIndexRef.current = activeIndex;
   }
 
-  const [direction, setDirection] = useState(0);
-  const [isSliding, setIsSliding] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-  const [copiedPrompt, setCopiedPrompt] = useState(false);
+  const [carouselState, setCarouselState] = useState({
+    direction: 0,
+    isSliding: false,
+    isFullscreen: false,
+    copiedPrompt: false,
+    isComparing: false,
+  });
+  const { direction, isSliding, isFullscreen, copiedPrompt, isComparing } = carouselState;
   const timeoutRef = useRef<number | null>(null);
 
   React.useEffect(() => {
+    const timeout = timeoutRef.current;
     return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
+      if (timeout) {
+        clearTimeout(timeout);
       }
     };
   }, []);
-  const [isComparing, setIsComparing] = useState(false);
   const isProcessingDownloadRef = useRef(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -268,9 +272,12 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
     (index: number) => {
       if (index === lastSetIndexRef.current || isSliding || index < 0 || index >= allImages.length)
         return;
-      setDirection(index > lastSetIndexRef.current ? 1 : -1);
-      setIsSliding(true);
-      setIsComparing(false);
+      setCarouselState((prev) => ({
+        ...prev,
+        direction: index > lastSetIndexRef.current ? 1 : -1,
+        isSliding: true,
+        isComparing: false,
+      }));
       lastSetIndexRef.current = index;
       onActiveImageChange(allImages[index].id);
 
@@ -308,10 +315,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       if (e.key === 'ArrowRight') handleNextRef.current();
       if (e.key === 'ArrowLeft') handlePrevRef.current();
       if (e.key === 'Escape' && !isFullscreenRef.current) onCloseRef.current();
-      if (e.code === 'Space' && !e.repeat) setIsComparing(true);
+      if (e.code === 'Space' && !e.repeat) setCarouselState((prev) => ({ ...prev, isComparing: true }));
     };
     const handleKeyUp = (e: KeyboardEvent) => {
-      if (e.code === 'Space') setIsComparing(false);
+      if (e.code === 'Space') setCarouselState((prev) => ({ ...prev, isComparing: false }));
     };
     window.addEventListener('keydown', handleKeyDown);
     window.addEventListener('keyup', handleKeyUp);
@@ -351,9 +358,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   const handleCopyPrompt = () => {
     if (!currentImage || copiedPrompt) return;
     void navigator.clipboard.writeText(currentImage.config.prompt || '');
-    setCopiedPrompt(true);
+    setCarouselState((prev) => ({ ...prev, copiedPrompt: true }));
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setCopiedPrompt(false), 2000);
+    timeoutRef.current = window.setTimeout(() => setCarouselState((prev) => ({ ...prev, copiedPrompt: false })), 2000);
   };
 
   const hasReference =
@@ -410,7 +417,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               onClick={() => {
                 if (!document.fullscreenElement) void containerRef.current?.requestFullscreen();
                 else void document.exitFullscreen();
-                setIsFullscreen(!isFullscreen);
+                setCarouselState((prev) => ({ ...prev, isFullscreen: !prev.isFullscreen }));
               }}
               className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-zinc-500 hover:text-white transition-all cursor-pointer"
             >
@@ -419,7 +426,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="p-2 bg-zinc-900/60 hover:bg-red-500/20 rounded-xl text-zinc-400 hover:text-red-500 transition-all shadow-xl cursor-pointer"
+              className="p-2 bg-zinc-900/60 hover:bg-red-500/20 rounded-xl text-white hover:text-red-500 transition-all shadow-xl cursor-pointer"
             >
               <X size={16} />
             </button>
@@ -464,7 +471,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               initial="enter"
               animate="center"
               exit="exit"
-              onAnimationComplete={() => setIsSliding(false)}
+              onAnimationComplete={() => setCarouselState((prev) => ({ ...prev, isSliding: false }))}
               className="absolute inset-0 size-full flex items-center justify-center will-change-transform pointer-events-auto"
             >
               <CarouselImageItem
@@ -501,9 +508,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               <div className="flex items-center gap-1.5 rounded-xl bg-white/3 p-1">
                 <button
                   type="button"
-                  onPointerDown={() => setIsComparing(true)}
-                  onPointerUp={() => setIsComparing(false)}
-                  onPointerLeave={() => setIsComparing(false)}
+                  onPointerDown={() => setCarouselState((prev) => ({ ...prev, isComparing: true }))}
+                  onPointerUp={() => setCarouselState((prev) => ({ ...prev, isComparing: false }))}
+                  onPointerLeave={() => setCarouselState((prev) => ({ ...prev, isComparing: false }))}
                   className={`relative flex items-center justify-center p-2 rounded-lg transition-all duration-300 outline-none group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-white shadow-lg' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
                   title="Hold to Compare with Original"
                 >

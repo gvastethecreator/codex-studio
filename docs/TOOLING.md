@@ -1,33 +1,33 @@
-# Tooling y flujo de calidad
+# Tooling and Quality Flow
 
-Este documento resume el stack de desarrollo y los comandos operativos del repo tras la puesta al dia del toolchain.
+This document summarizes the development stack and operational commands for the repo.
 
-## Stack actual
+## Current stack
 
 - **Package manager:** Bun
-- **Toolchain UI:** Vite+
-- **Bundler UI:** Vite 8 + Rolldown
-- **Lint / format:** Oxlint + Oxfmt a traves de Vite+
-- **Tests unitarios:** Vitest a traves de Vite+
-- **Estilos:** Tailwind CSS v4 con tokens en `index.css`
-- **Animaciones React:** GSAP
+- **UI toolchain:** Vite+
+- **UI bundler:** Vite 8 + Rolldown
+- **Lint / format:** Oxlint + Oxfmt through Vite+
+- **Unit tests:** Vitest through Vite+
+- **Styles:** Tailwind CSS v4 with tokens in `index.css`
+- **React animation:** GSAP
 
-## Archivo fuente de verdad
+## Source of truth
 
-La configuracion de tooling de la UI vive en `vite.config.ts`.
+UI tooling configuration lives in `vite.config.ts`.
 
-Ahí se centraliza:
+It centralizes:
 
-- aliases de la app;
+- app aliases;
 - `fmt`;
 - `lint`;
 - `test`;
 - `staged`;
-- plugins de Vite y Tailwind.
+- Vite and Tailwind plugins.
 
-No se deben reintroducir configuraciones duplicadas de ESLint, Prettier o Vitest fuera de este archivo salvo una excepcion muy justificada y documentada.
+Do not reintroduce duplicate ESLint, Prettier, or Vitest configuration outside this file unless there is a documented exception.
 
-## Comandos principales
+## Main commands
 
 ```bash
 bun run fmt
@@ -42,34 +42,34 @@ bun run validate:fast
 bun run validate:full
 ```
 
-## Logs persistentes
+## Persistent logs
 
-Las tareas anteriores se ejecutan mediante `scripts/tooling-task.ts` y escriben logs en `logs/tooling/`.
+These tasks run through `scripts/tooling-task.ts` and write logs to `logs/tooling/`.
 
-Convenciones:
+Conventions:
 
-- `nombre-tarea-YYYY-MM-DDTHH-MM-SS.log` — corrida puntual;
-- `nombre-tarea.latest.log` — ultimo estado conocido de esa tarea.
+- `<task>-YYYY-MM-DDTHH-MM-SS.log` — one specific run;
+- `<task>.latest.log` — latest known state for that task.
 
-Esto permite:
+This makes it possible to:
 
-- adjuntar un fallo concreto a un issue;
-- revisar una corrida larga sin perder contexto por scroll;
-- depurar errores intermitentes sin volver a ejecutar inmediatamente.
+- attach a concrete failure to an issue;
+- review long runs without losing context to terminal scrollback;
+- debug intermittent failures without immediately re-running the command.
 
-## Notas importantes
+## Notes
 
-- `bun run build` valida tanto la UI como el backend local.
-- `bun run validate:fast` es el loop corto recomendado durante refactors.
-- `bun run validate:full` es el gate local antes de cerrar una tanda grande de cambios.
-- Las tareas de VS Code en `.vscode/tasks.json` reflejan este mismo flujo con nombres cortos y emojis.
+- `bun run build` validates both the UI and the local backend.
+- `bun run validate:fast` is the recommended short loop during refactors.
+- `bun run validate:full` is the local release gate before closing larger work.
+- VS Code tasks in `.vscode/tasks.json` mirror this flow with short emoji-labeled names.
 
-## Estabilidad del terminal integrado
+## Integrated terminal stability
 
-Para evitar congelar el terminal integrado o saturar el IDE en Windows:
+To avoid freezing the integrated terminal or overloading the IDE on Windows:
 
-- `bun run fmt` y `bun run fmt:check` limitan Oxfmt a un numero razonable de hilos; el valor por defecto es `8` y se puede sobrescribir con `OXFMT_THREADS`.
-- `bun run lint` y `bun run lint:fix` limitan Oxlint a un numero razonable de hilos; el valor por defecto es `8` y se puede sobrescribir con `OXLINT_THREADS`.
-- `bun run build` y el paso de build dentro de `validate:full` ya no vuelcan el listado completo de assets en la consola: el terminal muestra un resumen corto y el detalle total queda en `logs/tooling/`.
+- `bun run fmt` and `bun run fmt:check` limit Oxfmt to a reasonable thread count. The default is `8` and can be overridden with `OXFMT_THREADS`.
+- `bun run lint` and `bun run lint:fix` limit Oxlint to a reasonable thread count. The default is `8` and can be overridden with `OXLINT_THREADS`.
+- `bun run build` and the build step inside `validate:full` no longer dump the full asset list to the console. The terminal shows a short summary and the full detail remains in `logs/tooling/`.
 
-Si necesitas el output completo de una corrida pesada, abre el log timestamped correspondiente en `logs/tooling/` en vez de repetir el comando solo para leer la consola.
+If you need full output from a heavy run, open the corresponding timestamped log in `logs/tooling/` instead of repeating the command just to read the console.

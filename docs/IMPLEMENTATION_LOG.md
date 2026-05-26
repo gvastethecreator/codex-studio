@@ -1,43 +1,41 @@
-# Registro de implementación
+# Implementation Log
 
-Este archivo resume la tanda de mejoras aplicada durante la revisión integral del proyecto.
+This file summarizes a previous project-wide maintenance and professionalization pass.
 
-## Tareas realizadas
+## Completed work
 
-1. **Tooling unificado**
-   - migración de comandos UI a Vite+;
-   - configuración central de `fmt`, `lint`, `test` y `staged` en `vite.config.ts`;
-   - eliminación de la configuración obsoleta de ESLint.
+1. **Unified tooling**
+   - migrated UI commands to Vite+;
+   - centralized `fmt`, `lint`, `test`, and `staged` configuration in `vite.config.ts`;
+   - removed obsolete ESLint configuration.
 
-2. **Build y validación con logs persistentes**
-   - creación de `scripts/tooling-task.ts`;
-   - generación de logs timestamped y `*.latest.log` en `logs/tooling/`;
-   - actualización de scripts `fmt`, `lint`, `check`, `test`, `build` y `validate:*`.
+2. **Build and validation with persistent logs**
+   - added `scripts/tooling-task.ts`;
+   - generated timestamped logs and `*.latest.log` files in `logs/tooling/`;
+   - updated `fmt`, `lint`, `check`, `test`, `build`, and `validate:*` scripts.
 
-3. **Tareas de VS Code**
-   - renombrado con labels cortos y emojis;
-   - inclusión de tareas relevantes para fmt, lint, check, test, coverage, build y logs.
+3. **VS Code tasks**
+   - renamed tasks with short emoji labels;
+   - included tasks for format, lint, check, test, coverage, build, and logs.
 
-4. **Animaciones**
-   - introducción de una capa local `lib/gsapMotion.tsx` para desacoplar la UI de `motion/react`;
-   - alias de `motion/react` hacia la capa local en `vite.config.ts` y `tsconfig.json`.
+4. **Animation**
+   - introduced a local `lib/gsapMotion.tsx` compatibility layer to decouple the UI from `motion/react`;
+   - aliased `motion/react` to the local layer in `vite.config.ts` and `tsconfig.json`.
 
-5. **Mantenibilidad**
-   - incorporación de JSDoc en servicios y hooks críticos;
-   - extracción del helper `buildCatalogQuery` para mejorar testabilidad.
+5. **Maintainability**
+   - added JSDoc to critical services and hooks;
+   - extracted `buildCatalogQuery` to improve testability.
 
-6. **Pruebas**
-   - migración de tests desde `bun:test` a `vite-plus/test`;
-   - nueva suite para `services/localStudioService.ts`.
+6. **Tests**
+   - migrated tests from `bun:test` to `vite-plus/test`;
+   - added coverage for `services/localStudioService.ts`.
 
-7. **Higiene del repositorio**
-   - creación de `.env` base con placeholders seguros;
-   - mejora de `.gitignore`;
-   - eliminación de logs y artefactos temporales que no debían seguir en el repositorio;
-   - limpieza de `output/`, `tmp/` y `generated/` para sacar del árbol trackeado imágenes de trabajo, prompts temporales y otros restos locales incompatibles con un release open source;
-   - purga del historial git para eliminar rutas `*.png` heredadas y dejar las cards versionadas únicamente en `webp`.
+7. **Repository hygiene**
+   - improved `.env.example` and `.gitignore`;
+   - removed logs and temporary artifacts that should not live in the repo;
+   - cleaned `output/`, `tmp/`, and `generated/` from tracked work artifacts;
+   - preserved versioned recipe cards as `webp` assets only.
 
-8. **Documentación**
-   - actualización de `README.md`, `CONTRIBUTING.md`, `docs/DEV_GUIDE.md` y `docs/TROUBLESHOOTING.md`;
-   - creación de `docs/TOOLING.md`;
-   - creación de este registro y de `docs/TECHNICAL_DEBT.md`.
+8. **Documentation**
+   - updated README, contribution, developer, tooling, troubleshooting, and technical-debt docs;
+   - added release-facing open-source community health files.

@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from 'react';
+import { useCallback, useMemo, useRef } from 'react';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
@@ -325,6 +325,7 @@ export function useStudioShell(): StudioShellController {
     closeTrash,
     openEditor,
     closeEditor,
+    closeEditorState,
     handleDownloadAndClear,
     resetViewState,
   } = useStudioViewState({
@@ -364,6 +365,7 @@ export function useStudioShell(): StudioShellController {
     isEditorOpen,
     setIsEditorOpen,
     setImageToEdit,
+    closeEditorState,
     navigateToStudio,
     navigateToRecipes,
     navigateToRecipe,
@@ -592,6 +594,9 @@ export function useStudioShell(): StudioShellController {
     handleAddToContext: config.handleAddToContext,
   };
 
+  const recipePagePropsRef = useRef(recipePageProps);
+  recipePagePropsRef.current = recipePageProps;
+
   const studioPageController = buildStudioPageController({
     isModalOpen: modal.isModalOpen,
     workspaces,
@@ -737,7 +742,7 @@ export function useStudioShell(): StudioShellController {
         routeView: route.view,
         direction,
         activeRecipe: recipe.activeRecipe,
-        recipePageProps,
+        recipePageProps: recipePagePropsRef.current,
         studioPageController,
         onSelectRecipe: handleRecipeSelection,
       },
@@ -765,7 +770,6 @@ export function useStudioShell(): StudioShellController {
       route.view,
       direction,
       recipe.activeRecipe,
-      recipePageProps,
       studioPageController,
       handleRecipeSelection,
       isDragging,

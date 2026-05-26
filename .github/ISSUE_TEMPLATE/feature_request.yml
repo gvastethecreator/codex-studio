@@ -1,0 +1,32 @@
+name: Feature request
+description: Propose an improvement for Codex Studio.
+title: '[Feature]: '
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should Codex Studio do differently?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other options did you consider?
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This keeps the main flow local-first.
+        - label: This does not require API keys for the default Codex flow.
+        - label: This improves onboarding, operability, traceability, or maintainability.

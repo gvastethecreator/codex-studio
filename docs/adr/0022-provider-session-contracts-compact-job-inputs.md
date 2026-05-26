@@ -1,13 +1,20 @@
 # ADR 0022: Provider Session Contracts and Compact Job Inputs
 
-## Estado
+## Status
 
-Aceptado.
+Accepted.
 
-## Contexto
+## Context
 
-Generation Providers may keep stable instructions in a Provider Session Contract so every job does not resend the same boilerplate. A Codex provider can place reusable output rules, safety boundaries, and import/reporting expectations at the session or provider level, while each job sends only the compact task delta compiled from the Generation Task Spec.
+Provider adapters can require session state, runtime readiness, references, and provider-specific options. Passing large ad hoc objects through jobs increases persistence and logging risk.
 
-## Consecuencias
+## Decision
 
-Token optimization should remove repeated provider boilerplate before weakening task quality. Provider compilers must make the boundary auditable by preserving the source Generation Task Spec and, when useful, the compact Compiled Provider Input that was executed.
+Define compact job inputs and provider session contracts. Jobs should reference persisted assets and Task Specs by ID or small metadata instead of embedding large binary payloads.
+
+## Consequences
+
+- smaller persisted jobs;
+- safer logs and diagnostics;
+- clearer provider readiness checks;
+- adapters must resolve referenced assets through approved backend services.

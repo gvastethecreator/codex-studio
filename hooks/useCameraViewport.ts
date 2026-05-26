@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useReducer, useRef } from 'react';
 
 type ThreeModule = typeof import('three');
 type ThreeBufferGeometry = import('three').BufferGeometry;
@@ -15,6 +15,22 @@ type ThreeSubjectMesh = {
 };
 
 const loadThree = () => import('three');
+
+type CameraAction =
+  | { type: 'set_azimuth'; value: number | ((prev: number) => number) }
+  | { type: 'set_elevation'; value: number | ((prev: number) => number) }
+  | { type: 'set_distance'; value: number | ((prev: number) => number) };
+
+function cameraReducer(prev: CameraViewportState, action: CameraAction): CameraViewportState {
+  switch (action.type) {
+    case 'set_azimuth':
+      return { ...prev, azimuth: typeof action.value === 'function' ? action.value(prev.azimuth) : action.value };
+    case 'set_elevation':
+      return { ...prev, elevation: typeof action.value === 'function' ? action.value(prev.elevation) : action.value };
+    case 'set_distance':
+      return { ...prev, distance: typeof action.value === 'function' ? action.value(prev.distance) : action.value };
+  }
+}
 
 export interface CameraViewportState {
   azimuth: number;
@@ -130,9 +146,17 @@ export const useCameraViewport = ({
   referenceImageSrc,
   initialState,
 }: UseCameraViewportOptions): UseCameraViewportResult => {
-  const [azimuth, setAzimuth] = useState(initialState?.azimuth ?? 0);
-  const [elevation, setElevation] = useState(initialState?.elevation ?? 0);
-  const [distance, setDistance] = useState(initialState?.distance ?? 100);
+  const initialCamera: CameraViewportState = {
+    azimuth: initialState?.azimuth ?? 0,
+    elevation: initialState?.elevation ?? 0,
+    distance: initialState?.distance ?? 100,
+  };
+  const [cameraState, dispatch] = useReducer(cameraReducer, initialCamera);
+  const { azimuth, elevation, distance } = cameraState;
+
+  const setAzimuth = useCallback((value: number | ((prev: number) => number)) => dispatch({ type: 'set_azimuth', value }), []);
+  const setElevation = useCallback((value: number | ((prev: number) => number)) => dispatch({ type: 'set_elevation', value }), []);
+  const setDistance = useCallback((value: number | ((prev: number) => number)) => dispatch({ type: 'set_distance', value }), []);
 
   const mountRef = useRef<HTMLDivElement>(null);
   const sceneObjects = useRef<Record<string, any>>({});
@@ -150,6 +174,8 @@ export const useCameraViewport = ({
 
   const hasReference = Boolean(referenceImageSrc);
   const hasReferenceRef = useRef(hasReference);
+  const referenceImageSrcRef = useRef(referenceImageSrc);
+  referenceImageSrcRef.current = referenceImageSrc;
 
   useEffect(() => {
     stateRef.current = { ...stateRef.current, azimuth, elevation, distance };
@@ -285,10 +311,10 @@ export const useCameraViewport = ({
       frame.add(subject);
       sceneObjects.current.subject = subject;
 
-      if (referenceImageSrc) {
+      if (referenceImageSrcRef.current) {
         const loader = new THREE.TextureLoader();
         loader.load(
-          referenceImageSrc,
+          referenceImageSrcRef.current,
           (texture) => {
             if (cancelled || sceneObjects.current.subject !== subject) {
               texture.dispose();
@@ -733,7 +759,7 @@ export const useCameraViewport = ({
       cancelled = true;
       cleanupViewport?.();
     };
-  }, [aspectRatio, hasReference]);
+  }, [aspectRatio, hasReference, setAzimuth, setElevation, setDistance]);
 
   useEffect(() => {
     const subject = sceneObjects.current.subject as ThreeSubjectMesh | undefined;

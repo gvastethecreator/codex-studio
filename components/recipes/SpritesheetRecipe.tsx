@@ -57,9 +57,12 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
 
   const [customColor, setCustomColor] = useState('#3f3f46');
   const [cellPrompts, setCellPrompts] = useState<Record<number, string>>({});
-  const [hoveredCell, setHoveredCell] = useState<number | null>(null);
-  const [editingCell, setEditingCell] = useState<number | null>(null);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [gridInteraction, setGridInteraction] = useState({
+    hoveredCell: null as number | null,
+    editingCell: null as number | null,
+    isSidebarOpen: true,
+  });
+  const { hoveredCell, editingCell, isSidebarOpen } = gridInteraction;
   const cellInputRef = useRef<HTMLTextAreaElement>(null);
   const ratioValue = RATIO_MAP[config.aspectRatio] || 1;
 
@@ -220,26 +223,19 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
             style={gridContainerStyle}
           >
             {Array.from({ length: gridCols * gridRows }).map((_, i) => (
-              <div
+              <button
+                type="button"
                 key={i}
                 onClick={(e) => {
                   e.stopPropagation();
                   setEditingCell(i);
                 }}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.stopPropagation();
-                    setEditingCell(i);
-                  }
-                }}
-                role="button"
-                tabIndex={0}
                 onMouseEnter={() => setHoveredCell(i)}
                 onMouseLeave={() => setHoveredCell(null)}
                 style={{
                   backgroundColor: params.background === 'Custom' ? customColor : undefined,
                 }}
-                className={`relative flex items-center justify-center transition-all duration-200 cursor-text group min-w-0 min-h-0 overflow-hidden
+                className={`relative flex items-center justify-center transition-all duration-200 cursor-text group min-w-0 min-h-0 overflow-hidden appearance-none border-none
                                 ${getBackgroundClass()}
                                 ${hoveredCell === i || editingCell === i ? 'ring-2 ring-emerald-400 z-10' : 'hover:ring-1 hover:ring-white/30'}
                             `}
@@ -277,7 +273,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                     )}
                   </div>
                 )}
-              </div>
+              </button>
             ))}
           </div>
 
@@ -316,15 +312,11 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           </div>
           <div className="flex-1 overflow-y-auto p-3 space-y-2 custom-scrollbar">
             {Array.from({ length: gridCols * gridRows }).map((_, i) => (
-              <div
+              <button
+                type="button"
                 key={i}
                 onClick={() => setEditingCell(i)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') setEditingCell(i);
-                }}
-                role="button"
-                tabIndex={0}
-                className={`group p-2.5 rounded-xl border transition-all duration-200 cursor-pointer
+                className={`group p-2.5 rounded-xl border transition-all duration-200 cursor-pointer appearance-none
                                 ${hoveredCell === i || editingCell === i ? 'bg-white/10 border-emerald-500/50 shadow-lg' : 'bg-black/20 border-white/5 hover:bg-white/5'}
                             `}
                 onMouseEnter={() => setHoveredCell(i)}
@@ -348,7 +340,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                 <div className="text-[10px] text-zinc-400 truncate h-4">
                   {cellPrompts[i] || 'Empty...'}
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </div>

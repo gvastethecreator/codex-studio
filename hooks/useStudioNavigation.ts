@@ -16,6 +16,7 @@ interface UseStudioNavigationProps {
   isEditorOpen: boolean;
   setIsEditorOpen: Dispatch<SetStateAction<boolean>>;
   setImageToEdit: Dispatch<SetStateAction<Attachment | null>>;
+  closeEditorState: () => void;
   navigateToStudio: () => void;
   navigateToRecipes: () => void;
   navigateToRecipe: (id: Exclude<RecipeId, null>) => void;
@@ -46,6 +47,7 @@ export function useStudioNavigation({
   isEditorOpen,
   setIsEditorOpen,
   setImageToEdit,
+  closeEditorState,
   navigateToStudio,
   navigateToRecipes,
   navigateToRecipe,
@@ -61,18 +63,27 @@ export function useStudioNavigation({
     previousViewIndexRef.current = currentViewIndex;
   }
 
+  const activeRecipeRef = useRef(activeRecipe);
+  activeRecipeRef.current = activeRecipe;
+  const imageToEditRef = useRef(imageToEdit);
+  imageToEditRef.current = imageToEdit;
+  const isEditorOpenRef = useRef(isEditorOpen);
+  isEditorOpenRef.current = isEditorOpen;
+  const isModalOpenRef = useRef(isModalOpen);
+  isModalOpenRef.current = isModalOpen;
+
   useEffect(() => {
     startViewTransition(() => {
       if (route.view === 'recipe' && route.activeRecipeId) {
-        if (activeRecipe !== route.activeRecipeId) {
+        if (activeRecipeRef.current !== route.activeRecipeId) {
           setActiveRecipe(route.activeRecipeId);
         }
-      } else if (activeRecipe) {
+      } else if (activeRecipeRef.current) {
         setActiveRecipe(null);
       }
 
       if (route.overlay === 'editor') {
-        if (!imageToEdit) {
+        if (!imageToEditRef.current) {
           closeOverlay();
           return;
         }
@@ -84,27 +95,22 @@ export function useStudioNavigation({
         return;
       }
 
-      if (shouldCloseModalForOverlay(route.overlay, isModalOpen)) {
+      if (shouldCloseModalForOverlay(route.overlay, isModalOpenRef.current)) {
         closeModal();
       }
 
-      if (isEditorOpen) {
-        setIsEditorOpen(false);
-        setImageToEdit(null);
+      if (isEditorOpenRef.current) {
+        closeEditorState();
       }
     });
   }, [
-    activeRecipe,
-    closeModal,
-    closeOverlay,
-    imageToEdit,
-    isEditorOpen,
-    isModalOpen,
     route.activeRecipeId,
     route.overlay,
     route.view,
     setActiveRecipe,
-    setImageToEdit,
+    closeEditorState,
+    closeOverlay,
+    closeModal,
     setIsEditorOpen,
   ]);
 

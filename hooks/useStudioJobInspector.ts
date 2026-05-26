@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useReducer, useMemo, useRef } from 'react';
 import { getStudioJobDetail } from '../services/localStudioService';
 import type { Job as StudioJob, JobDetailResponse } from '../packages/shared/src';
 
@@ -17,12 +17,35 @@ interface JobDetailState {
   isLoading: boolean;
 }
 
+type JobDetailAction =
+  | { type: 'reset' }
+  | { type: 'loading' }
+  | { type: 'loaded'; detail: JobDetailResponse }
+  | { type: 'error' };
+
+const INITIAL_JOB_DETAIL: JobDetailState = { detail: null, isLoading: false };
+
+function jobDetailReducer(state: JobDetailState, action: JobDetailAction): JobDetailState {
+  switch (action.type) {
+    case 'reset':
+      return INITIAL_JOB_DETAIL;
+    case 'loading':
+      return { detail: null, isLoading: true };
+    case 'loaded':
+      return { detail: action.detail, isLoading: false };
+    case 'error':
+      return { detail: null, isLoading: false };
+  }
+}
+
 export function useStudioJobInspector({ studioJobs, addToast }: UseStudioJobInspectorProps) {
-  const [selectedStudioJobId, setSelectedStudioJobId] = useState<string | null>(null);
-  const [jobDetailState, setJobDetailState] = useState<JobDetailState>({
-    detail: null,
-    isLoading: false,
-  });
+  const [selectedStudioJobId, setSelectedStudioJobId] = useReducer(
+    (_prev: string | null, next: string | null) => next,
+    null,
+  );
+  const [jobDetailState, dispatchJobDetail] = useReducer(jobDetailReducer, INITIAL_JOB_DETAIL);
+  const addToastRef = useRef(addToast);
+  addToastRef.current = addToast;
 
   const selectedStudioJobUpdatedAt = useMemo(
     () => studioJobs.find((job) => job.id === selectedStudioJobId)?.updatedAt ?? null,
@@ -33,24 +56,24 @@ export function useStudioJobInspector({ studioJobs, addToast }: UseStudioJobInsp
     let cancelled = false;
 
     if (!selectedStudioJobId) {
-      setJobDetailState({ detail: null, isLoading: false });
+      dispatchJobDetail({ type: 'reset' });
       return () => {
         cancelled = true;
       };
     }
 
-    setJobDetailState((prev) => ({ ...prev, isLoading: true }));
+    dispatchJobDetail({ type: 'loading' });
 
     void getStudioJobDetail(selectedStudioJobId)
       .then((detail) => {
         if (!cancelled) {
-          setJobDetailState({ detail, isLoading: false });
+          dispatchJobDetail({ type: 'loaded', detail });
         }
       })
       .catch((error) => {
         if (!cancelled) {
-          setJobDetailState({ detail: null, isLoading: false });
-          addToast(
+          dispatchJobDetail({ type: 'error' });
+          addToastRef.current(
             error instanceof Error ? error.message : 'Unable to load the selected job detail',
             'error',
           );
@@ -60,7 +83,7 @@ export function useStudioJobInspector({ studioJobs, addToast }: UseStudioJobInsp
     return () => {
       cancelled = true;
     };
-  }, [selectedStudioJobId, selectedStudioJobUpdatedAt, addToast]);
+  }, [selectedStudioJobId, selectedStudioJobUpdatedAt]);
 
   const inspectStudioJob = useCallback((jobId: string) => {
     setSelectedStudioJobId(jobId);
@@ -68,7 +91,7 @@ export function useStudioJobInspector({ studioJobs, addToast }: UseStudioJobInsp
 
   const clearSelectedJob = useCallback(() => {
     setSelectedStudioJobId(null);
-    setJobDetailState({ detail: null, isLoading: false });
+    dispatchJobDetail({ type: 'reset' });
   }, []);
 
   return {
