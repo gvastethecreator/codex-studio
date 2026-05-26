@@ -157,6 +157,7 @@ export function useStudioShell(): StudioShellController {
   const queueResults = useMemo(
     () =>
       buildStudioQueueResultPreviews(activeCatalog.entries, {
+        limit: 24,
         toAssetUrl: toStudioAssetUrl,
       }),
     [activeCatalog.entries],

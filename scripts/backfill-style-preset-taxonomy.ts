@@ -5,10 +5,7 @@ import type {
   StylePresetEditorialTaxonomy,
   StylePresetManifest,
 } from '../components/recipes/styles/manifestTypes';
-import {
-  loadStylePackManifests,
-  loadStylePresetManifestRecords,
-} from './style-manifest-files';
+import { loadStylePackManifests, loadStylePresetManifestRecords } from './style-manifest-files';
 
 function argValue(name: string) {
   return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split('=')[1];

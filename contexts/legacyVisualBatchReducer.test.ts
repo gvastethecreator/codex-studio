@@ -1,33 +1,9 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import type { LegacyVisualBatch } from '../lib/studioLegacyVisualSnapshotImport';
 import {
   createInitialLegacyVisualBatchState,
   legacyVisualBatchReducer,
 } from './legacyVisualBatchReducer';
-
-function createBatch(id: string, workspaceId = 'default'): LegacyVisualBatch {
-  return {
-    id,
-    workspaceId,
-    createdAt: 1,
-    config: {
-      ...DEFAULT_GENERATION_CONFIG,
-      batchCount: 1,
-      useThinkingAndSearch: false,
-    },
-    images: [
-      {
-        id: `${id}-image`,
-        src: `${id}.png`,
-        batchId: id,
-        createdAt: 1,
-        isFavorite: false,
-      },
-    ],
-  };
-}
 
 describe('legacyVisualBatchReducer', () => {
   it('tracks generated legacy Visual Batch ids without storing full snapshots', () => {
@@ -69,8 +45,11 @@ describe('legacyVisualBatchReducer', () => {
     };
 
     const next = legacyVisualBatchReducer(initial, {
-      type: 'REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_IDS',
-      batches: [createBatch('recovered', 'ws-1'), createBatch('existing')],
+      type: 'REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_REFS',
+      refs: [
+        { id: 'recovered', workspaceId: 'ws-1' },
+        { id: 'existing', workspaceId: 'default' },
+      ],
       prepend: true,
       maxTotal: 2,
     });

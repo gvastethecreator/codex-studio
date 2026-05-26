@@ -57,7 +57,7 @@ export interface EvaluationSummary {
   failures: string[];
 }
 
-function createBareVariant(spec: GenerationTaskSpec): EvaluationVariant {
+export function createBareVariant(spec: GenerationTaskSpec): EvaluationVariant {
   const parts = [`Task: ${spec.task}`, '', 'Prompt:', spec.prompt];
   if (spec.negativePrompt) parts.push('', 'Avoid:', spec.negativePrompt);
   if (spec.recipeId) parts.push('', `Recipe: ${spec.recipeId}`);
@@ -80,7 +80,7 @@ function createBareVariant(spec: GenerationTaskSpec): EvaluationVariant {
   };
 }
 
-function createLegacyVariant(spec: GenerationTaskSpec): EvaluationVariant {
+export function createLegacyVariant(spec: GenerationTaskSpec): EvaluationVariant {
   const recipeContext =
     typeof spec.metadata.recipeContext === 'string' ? spec.metadata.recipeContext : '';
   const parts = [`Task: ${spec.task}`, '', 'Prompt:', spec.prompt];
@@ -109,7 +109,7 @@ function createLegacyVariant(spec: GenerationTaskSpec): EvaluationVariant {
   };
 }
 
-function createDirectivesVariant(spec: GenerationTaskSpec): EvaluationVariant {
+export function createDirectivesVariant(spec: GenerationTaskSpec): EvaluationVariant {
   const directives = spec.metadata.recipeProviderDirectives;
   const recipeContext =
     typeof spec.metadata.recipeContext === 'string' ? spec.metadata.recipeContext : '';
@@ -155,7 +155,7 @@ function sampleParamValue(module: RecipeModule, paramId: string, params: Record<
   else params[paramId] = `Auto ${descriptor.label}`;
 }
 
-function buildRecipeSpec(module: RecipeModule): GenerationTaskSpec {
+export function buildRecipeSpec(module: RecipeModule): GenerationTaskSpec {
   const params = createRecipeDefaultParams(module);
   for (const param of module.parameters) {
     if (param.required) sampleParamValue(module, param.id, params);

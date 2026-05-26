@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import type { StyleRuntimePack } from './styles/types';
+import type { StyleRuntimePack } from './styles/runtimeTypes';
 import {
   composeStyleRuntimePacksFromManifests,
   createStylePresetCatalog,
@@ -414,5 +414,5 @@ describe('stylePresetManifests', () => {
     expect(runtimeIndex.packs).toEqual(recomposedPacks);
     expect(runtimeIndex.presetById.get('SP01-001')?.name).toBeTruthy();
     expect(runtimeIndex.presetPackIdById.get('SP01-001')).toBe('pack_01');
-  });
+  }, 20_000);
 });

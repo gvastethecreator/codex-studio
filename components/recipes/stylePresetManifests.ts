@@ -3,10 +3,7 @@ import type {
   StylePresetEditorialTaxonomy,
   StylePresetManifest,
 } from './styles/manifestTypes';
-import type {
-  StyleRuntimePack,
-  StyleRuntimePreset,
-} from './styles/runtimeTypes';
+import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
 
 export interface StyleManifestGraphValidation {
   valid: boolean;

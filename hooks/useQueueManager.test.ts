@@ -16,4 +16,29 @@ describe('createQueueJob', () => {
     expect(job.config.prompt).toBe('A neon alley');
     expect(job.status).toBe('pending');
   });
+
+  it('snapshots attachments so clearing the composer does not mutate queued jobs', () => {
+    const attachment = {
+      id: 'att-1',
+      name: 'ref.png',
+      dataUrl: 'data:image/png;base64,AAAA',
+      strength: 0.25,
+    };
+    const job = createQueueJob(
+      'A neon alley',
+      { ...DEFAULT_GENERATION_CONFIG, attachments: [attachment] },
+      'workspace-42',
+    );
+
+    attachment.strength = 0.75;
+
+    expect(job.config.attachments).toEqual([
+      {
+        id: 'att-1',
+        name: 'ref.png',
+        dataUrl: 'data:image/png;base64,AAAA',
+        strength: 0.25,
+      },
+    ]);
+  });
 });

@@ -4,7 +4,17 @@ import {
   estimateStyleGroupPlaceholderHeight,
   getVisibleStylePresets,
 } from '../components/recipes/styleGridVirtualization';
-import { STYLE_PACK_SUMMARIES, loadStylePack } from '../components/recipes/stylesData';
+import {
+  createStyleBrowserProcessedData,
+  createStyleBrowserRenderPlan,
+  measureStyleBrowserRenderPlan,
+  STYLE_BROWSER_EAGER_SECTION_LIMIT,
+  type StyleBrowserRenderMeasurement,
+} from '../components/recipes/styleBrowserRenderPlan';
+import {
+  STYLE_RUNTIME_PACK_SUMMARIES,
+  loadStyleRuntimePack,
+} from '../components/recipes/stylesData';
 import type {
   StyleRuntimePack,
   StyleRuntimePreset,
@@ -16,6 +26,7 @@ const MAX_INITIAL_RENDERED_CATEGORIES = STYLE_CATEGORY_INITIAL_RENDER_LIMIT;
 const MAX_INITIAL_RENDERED_PRESET_CARDS =
   STYLE_CATEGORY_INITIAL_RENDER_LIMIT * STYLE_GROUP_INITIAL_RENDER_LIMIT;
 const MAX_EXPANDED_GROUP_PRESET_CARDS = 64;
+const MAX_EAGER_PRESET_CARDS = STYLE_BROWSER_EAGER_SECTION_LIMIT * STYLE_GROUP_INITIAL_RENDER_LIMIT;
 
 const SEARCH_SCENARIOS = [
   {
@@ -39,6 +50,16 @@ interface StyleRenderPackBudget {
   packName: string;
   totalPresets: number;
   totalCategories: number;
+  mountedCategorySections: number;
+  eagerCategorySections: number;
+  placeholderCategorySections: number;
+  eagerPresetCards: number;
+  plannedPresetCards: number;
+  expandedMountedCategorySections: number;
+  expandedEagerCategorySections: number;
+  expandedPlaceholderCategorySections: number;
+  expandedEagerPresetCards: number;
+  expandedPlannedPresetCards: number;
   initialRenderedCategories: number;
   initialRenderedPresetCards: number;
   hiddenCategories: number;
@@ -52,6 +73,8 @@ interface StyleSearchScenarioBudget {
   packId: string;
   query: string;
   matchedPresetCards: number;
+  eagerPresetCards: number;
+  plannedPresetCards: number;
   initialRenderedCategories: number;
   initialRenderedPresetCards: number;
   maxRenderedPresetCards: number;
@@ -78,6 +101,46 @@ function groupPresetsByCategory(pack: StyleRuntimePack) {
   }
 
   return [...groups.entries()];
+}
+
+function createBrowserRenderMeasurement(pack: StyleRuntimePack): StyleBrowserRenderMeasurement {
+  const processedData = createStyleBrowserProcessedData({
+    activePack: pack,
+    currentPackId: pack.id,
+    favoritesPackId: 'favorites',
+    favoritePresets: [],
+    favoriteIds: [],
+    searchQuery: '',
+    sortOrder: 'az',
+    showFavoritesOnly: false,
+  });
+  const renderPlan = createStyleBrowserRenderPlan({
+    processedData,
+    showAllStyleCategories: false,
+  });
+
+  return measureStyleBrowserRenderPlan({ processedData, renderPlan });
+}
+
+function createExpandedBrowserRenderMeasurement(
+  pack: StyleRuntimePack,
+): StyleBrowserRenderMeasurement {
+  const processedData = createStyleBrowserProcessedData({
+    activePack: pack,
+    currentPackId: pack.id,
+    favoritesPackId: 'favorites',
+    favoritePresets: [],
+    favoriteIds: [],
+    searchQuery: '',
+    sortOrder: 'az',
+    showFavoritesOnly: false,
+  });
+  const renderPlan = createStyleBrowserRenderPlan({
+    processedData,
+    showAllStyleCategories: true,
+  });
+
+  return measureStyleBrowserRenderPlan({ processedData, renderPlan });
 }
 
 function searchPresets(pack: StyleRuntimePack, query: string) {
@@ -109,6 +172,7 @@ function createSearchScenarioBudget({
     ...pack,
     presets: searchPresets(pack, query),
   };
+  const measurement = createBrowserRenderMeasurement(filteredPack);
   const initialCategoryEntries = groupPresetsByCategory(filteredPack).slice(
     0,
     STYLE_CATEGORY_INITIAL_RENDER_LIMIT,
@@ -123,6 +187,8 @@ function createSearchScenarioBudget({
     packId: pack.id,
     query,
     matchedPresetCards: filteredPack.presets.length,
+    eagerPresetCards: measurement.eagerPresetCards,
+    plannedPresetCards: measurement.plannedPresetCards,
     initialRenderedCategories: initialCategoryEntries.length,
     initialRenderedPresetCards,
     maxRenderedPresetCards,
@@ -139,9 +205,32 @@ function createPackBudget({
   gridColumns: number;
   containerWidth: number;
 }): StyleRenderPackBudget {
-  const categoryEntries = groupPresetsByCategory(pack);
-  const initialCategoryEntries = categoryEntries.slice(0, STYLE_CATEGORY_INITIAL_RENDER_LIMIT);
-  const hiddenCategoryEntries = categoryEntries.slice(STYLE_CATEGORY_INITIAL_RENDER_LIMIT);
+  const processedData = createStyleBrowserProcessedData({
+    activePack: pack,
+    currentPackId: pack.id,
+    favoritesPackId: 'favorites',
+    favoritePresets: [],
+    favoriteIds: [],
+    searchQuery: '',
+    sortOrder: 'az',
+    showFavoritesOnly: false,
+  });
+  const renderPlan = createStyleBrowserRenderPlan({
+    processedData,
+    showAllStyleCategories: false,
+  });
+  const expandedRenderPlan = createStyleBrowserRenderPlan({
+    processedData,
+    showAllStyleCategories: true,
+  });
+  const categoryEntries = renderPlan.styleGroupEntries;
+  const measurement = measureStyleBrowserRenderPlan({ processedData, renderPlan });
+  const expandedMeasurement = measureStyleBrowserRenderPlan({
+    processedData,
+    renderPlan: expandedRenderPlan,
+  });
+  const initialCategoryEntries = renderPlan.visibleStyleGroupEntries;
+  const hiddenCategoryEntries = renderPlan.hiddenStyleGroupEntries;
   const initialGroups = initialCategoryEntries.map(([category, presets]) => {
     const collapsedPresets = getVisibleStylePresets(
       presets,
@@ -169,6 +258,16 @@ function createPackBudget({
     packName: pack.name,
     totalPresets: pack.presets.length,
     totalCategories: categoryEntries.length,
+    mountedCategorySections: measurement.mountedCategorySections,
+    eagerCategorySections: measurement.eagerCategorySections,
+    placeholderCategorySections: measurement.placeholderCategorySections,
+    eagerPresetCards: measurement.eagerPresetCards,
+    plannedPresetCards: measurement.plannedPresetCards,
+    expandedMountedCategorySections: expandedMeasurement.mountedCategorySections,
+    expandedEagerCategorySections: expandedMeasurement.eagerCategorySections,
+    expandedPlaceholderCategorySections: expandedMeasurement.placeholderCategorySections,
+    expandedEagerPresetCards: expandedMeasurement.eagerPresetCards,
+    expandedPlannedPresetCards: expandedMeasurement.plannedPresetCards,
     initialRenderedCategories: initialGroups.length,
     initialRenderedPresetCards: initialGroups.reduce(
       (total, group) => total + group.collapsedRenderedPresets,
@@ -196,8 +295,8 @@ export async function createStyleRenderBudgetReport({
   containerWidth = DEFAULT_CONTAINER_WIDTH,
 } = {}): Promise<StyleRenderBudgetReport> {
   const loadedPacks = await Promise.all(
-    STYLE_PACK_SUMMARIES.map(async (summary) => {
-      const pack = await loadStylePack(summary.id);
+    STYLE_RUNTIME_PACK_SUMMARIES.map(async (summary) => {
+      const pack = await loadStyleRuntimePack(summary.id);
       if (!pack) {
         throw new Error(`Missing style pack runtime data: ${summary.id}`);
       }
@@ -229,6 +328,16 @@ export async function createStyleRenderBudgetReport({
     if (pack.initialRenderedPresetCards > MAX_INITIAL_RENDERED_PRESET_CARDS) {
       errors.push(
         `${pack.packId} initial preset cards ${pack.initialRenderedPresetCards} > ${MAX_INITIAL_RENDERED_PRESET_CARDS}`,
+      );
+    }
+    if (pack.eagerPresetCards > MAX_EAGER_PRESET_CARDS) {
+      errors.push(
+        `${pack.packId} eager preset cards ${pack.eagerPresetCards} > ${MAX_EAGER_PRESET_CARDS}`,
+      );
+    }
+    if (pack.expandedEagerPresetCards > MAX_EAGER_PRESET_CARDS) {
+      errors.push(
+        `${pack.packId} expanded eager preset cards ${pack.expandedEagerPresetCards} > ${MAX_EAGER_PRESET_CARDS}`,
       );
     }
     if (pack.maxCollapsedGroupRenderedPresetCards > STYLE_GROUP_INITIAL_RENDER_LIMIT) {
@@ -285,7 +394,7 @@ if (import.meta.main) {
     );
     for (const pack of report.packs) {
       console.log(
-        `[styles:render] ${pack.packId} categories=${pack.totalCategories} presets=${pack.totalPresets} initialCategories=${pack.initialRenderedCategories} initialCards=${pack.initialRenderedPresetCards} hiddenCategories=${pack.hiddenCategories} hiddenPresets=${pack.hiddenPresetCards} largestExpandedGroup=${pack.largestExpandedCategoryPresetCards}`,
+        `[styles:render] ${pack.packId} categories=${pack.totalCategories} presets=${pack.totalPresets} mountedSections=${pack.mountedCategorySections} eagerSections=${pack.eagerCategorySections} placeholders=${pack.placeholderCategorySections} eagerCards=${pack.eagerPresetCards} plannedCards=${pack.plannedPresetCards} expandedMountedSections=${pack.expandedMountedCategorySections} expandedEagerCards=${pack.expandedEagerPresetCards} expandedPlannedCards=${pack.expandedPlannedPresetCards} hiddenCategories=${pack.hiddenCategories} hiddenPresets=${pack.hiddenPresetCards} largestExpandedGroup=${pack.largestExpandedCategoryPresetCards}`,
       );
     }
     for (const scenario of report.searchScenarios) {

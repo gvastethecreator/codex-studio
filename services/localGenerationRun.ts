@@ -110,7 +110,7 @@ async function toDataUrl(src: string) {
   });
 }
 
-async function buildJobAssets({
+export async function buildJobAssets({
   config,
   inputImage,
 }: {

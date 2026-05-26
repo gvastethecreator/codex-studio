@@ -21,7 +21,7 @@ interface LegacyVisualBatchContextType {
   ) => void;
   mergeLegacyVisualBatches: (
     batches: LegacyVisualBatchSnapshot,
-    options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
+    options?: { prepend?: boolean; maxTotal?: number },
   ) => void;
   clearLegacyVisualWorkspace: (workspaceId: string) => void;
   clearAllLegacyVisualBatches: () => void;
@@ -29,6 +29,13 @@ interface LegacyVisualBatchContextType {
 }
 
 const LegacyVisualBatchContext = createContext<LegacyVisualBatchContextType | undefined>(undefined);
+
+function toLegacyVisualBatchRefs(batches: LegacyVisualBatchSnapshot): LegacyVisualBatchRef[] {
+  return batches.map((batch) => ({
+    id: batch.id,
+    workspaceId: batch.workspaceId || 'default',
+  }));
+}
 
 export const LegacyVisualBatchProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [state, dispatch] = useReducer(
@@ -49,13 +56,10 @@ export const LegacyVisualBatchProvider: React.FC<{ children: ReactNode }> = ({ c
   );
 
   const mergeLegacyVisualBatches = useCallback(
-    (
-      batches: LegacyVisualBatchSnapshot,
-      options?: { prepend?: boolean; maxTotal?: number; ensureWorkspaces?: boolean },
-    ) => {
+    (batches: LegacyVisualBatchSnapshot, options?: { prepend?: boolean; maxTotal?: number }) => {
       dispatch({
-        type: 'REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_IDS',
-        batches,
+        type: 'REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_REFS',
+        refs: toLegacyVisualBatchRefs(batches),
         prepend: options?.prepend,
         maxTotal: options?.maxTotal,
       });

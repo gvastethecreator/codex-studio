@@ -1,21 +1,21 @@
 import {
-  GENERATED_STYLE_PACK_SUMMARIES,
-  loadGeneratedStylePack,
-  loadGeneratedStylePacks,
+  GENERATED_STYLE_RUNTIME_PACK_SUMMARIES,
+  loadGeneratedStyleRuntimePack,
+  loadGeneratedStyleRuntimePacks,
 } from './styleRuntimeData.generated';
-import type { StyleRuntimePack, StyleRuntimePreset } from './styles/types';
+import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
 
-export const STYLE_PACK_SUMMARIES = GENERATED_STYLE_PACK_SUMMARIES;
+export const STYLE_RUNTIME_PACK_SUMMARIES = GENERATED_STYLE_RUNTIME_PACK_SUMMARIES;
 
-export const loadStylePack = loadGeneratedStylePack;
-export const loadStylePacks = loadGeneratedStylePacks;
+export const loadStyleRuntimePack = loadGeneratedStyleRuntimePack;
+export const loadStyleRuntimePacks = loadGeneratedStyleRuntimePacks;
 
 export async function loadStylePresetIndex(): Promise<{
   packs: StyleRuntimePack[];
   presetById: Map<string, StyleRuntimePreset>;
   presetPackIdById: Map<string, string>;
 }> {
-  const packs = await loadStylePacks();
+  const packs = await loadStyleRuntimePacks();
   return {
     packs,
     presetById: new Map(
@@ -27,5 +27,6 @@ export async function loadStylePresetIndex(): Promise<{
   };
 }
 
-export * from './styles/types';
+export * from './styles/manifestTypes';
+export * from './styles/runtimeTypes';
 export * from './stylePresetManifests';

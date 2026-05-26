@@ -45,6 +45,8 @@ describe('style authoring source audit', () => {
       rootDir,
       'components/recipes/StylesRecipe.tsx',
       [
+        "import { STYLE_PACK_SUMMARIES, loadStylePack, loadStylePacks } from './stylesData';",
+        "import { loadGeneratedStylePack, loadGeneratedStylePacks } from './styleRuntimeData.generated';",
         "import type { StylePack, StylePresetDef } from './styles/types';",
         'const pack = {} as StylePack;',
         'const preset = {} as StylePresetDef;',
@@ -57,7 +59,35 @@ describe('style authoring source audit', () => {
     expect(report.retiredRuntimeAliasViolations).toEqual([
       {
         filePath: 'components/recipes/StylesRecipe.tsx',
-        markers: ['StylePack', 'StylePresetDef', 'composeStylePacksFromManifests'],
+        markers: [
+          'StylePack',
+          'StylePresetDef',
+          'STYLE_PACK_SUMMARIES',
+          'loadStylePack',
+          'loadStylePacks',
+          'loadGeneratedStylePack',
+          'loadGeneratedStylePacks',
+          'composeStylePacksFromManifests',
+        ],
+      },
+    ]);
+  });
+
+  it('blocks new source from importing the compatibility style type barrel', async () => {
+    const rootDir = path.join(tmpdir(), `style-source-type-barrel-${Date.now()}`);
+
+    await writeRepoFile(
+      rootDir,
+      'components/recipes/StylesRecipe.tsx',
+      "import type { StyleRuntimePack } from './styles/types';",
+    );
+
+    const report = await createStyleAuthoringSourceAuditReport(rootDir);
+
+    expect(report.compatibilityTypeBarrelViolations).toEqual([
+      {
+        filePath: 'components/recipes/StylesRecipe.tsx',
+        markers: ['./styles/types'],
       },
     ]);
   });
@@ -171,5 +201,21 @@ describe('style authoring source audit', () => {
 
     expect(report.retiredLegacyPackFiles).toEqual([]);
     expect(report.unexpectedStyleYamlFiles).toEqual(['components/recipes/styles/loose.yaml']);
+  });
+
+  it('allows authoring templates inside the manifest tree', async () => {
+    const rootDir = path.join(tmpdir(), `style-source-template-yaml-${Date.now()}`);
+
+    await writeRepoFile(
+      rootDir,
+      'components/recipes/styles/manifests/templates/style-preset.template.yaml',
+      'schemaVersion: 1\nid: TEMPLATE\n',
+    );
+
+    const report = await createStyleAuthoringSourceAuditReport(rootDir);
+
+    expect(report.retiredLegacyPackFiles).toEqual([]);
+    expect(report.legacyMigrationPackFiles).toEqual([]);
+    expect(report.unexpectedStyleYamlFiles).toEqual([]);
   });
 });

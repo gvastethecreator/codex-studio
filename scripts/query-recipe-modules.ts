@@ -1,5 +1,6 @@
 import type { GenerationProviderId, GenerationTaskKind } from '../packages/shared/src';
 import { searchRecipeCatalog, validateRecipeCatalog } from '../lib/recipeCatalog';
+import { RECIPE_MODULE_EXAMPLES } from '../lib/recipeModuleExamples';
 
 function argValue(name: string) {
   return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split('=')[1];
@@ -13,6 +14,7 @@ function numberArgValue(name: string) {
 }
 
 const asJson = process.argv.includes('--json');
+const includeExamples = process.argv.includes('--examples');
 const verifyOnly = process.argv.includes('--verify');
 const validation = validateRecipeCatalog();
 
@@ -36,12 +38,30 @@ const results = searchRecipeCatalog({
 });
 
 if (asJson) {
-  console.log(JSON.stringify({ count: results.length, results }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        count: results.length,
+        results,
+        ...(includeExamples ? { examples: RECIPE_MODULE_EXAMPLES } : {}),
+      },
+      null,
+      2,
+    ),
+  );
 } else {
   console.log(`[recipes:catalog] results=${results.length}`);
   for (const recipe of results) {
     console.log(
       `- ${recipe.id} | ${recipe.title} | task=${recipe.defaultTask} | providers=${recipe.supportedProviders.join(',')} | params=${recipe.parameters.length}`,
     );
+  }
+  if (includeExamples) {
+    console.log(`[recipes:catalog] examples=${RECIPE_MODULE_EXAMPLES.length}`);
+    for (const example of RECIPE_MODULE_EXAMPLES) {
+      console.log(
+        `- example:${example.id} | module=${example.moduleId} | task=${example.task} | activation=${example.activation}`,
+      );
+    }
   }
 }

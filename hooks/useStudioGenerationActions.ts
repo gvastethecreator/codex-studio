@@ -27,6 +27,52 @@ interface UseStudioGenerationActionsProps {
   onEditSettled?: () => void;
 }
 
+export function prepareStudioGenerationRequest({
+  generationConfig,
+  promptOverride,
+  configOverrides,
+}: {
+  generationConfig: ImageGenerationConfig;
+  promptOverride?: string;
+  configOverrides?: Partial<ImageGenerationConfig>;
+}):
+  | {
+      ok: true;
+      queuePrompt: string;
+      finalConfig: ImageGenerationConfig;
+      shouldClearComposerAttachments: boolean;
+    }
+  | {
+      ok: false;
+      message: string;
+    } {
+  const promptSource =
+    promptOverride !== undefined
+      ? promptOverride
+      : typeof configOverrides?.prompt === 'string'
+        ? configOverrides.prompt
+        : generationConfig.prompt;
+  const finalPrompt = promptSource?.trim() ?? '';
+  const finalAttachments = configOverrides?.attachments ?? generationConfig.attachments;
+  const hasReferenceImage = finalAttachments.length > 0;
+
+  if (!finalPrompt && !hasReferenceImage) {
+    return { ok: false, message: 'Type a prompt before generating' };
+  }
+
+  return {
+    ok: true,
+    queuePrompt: finalPrompt || 'Image-guided generation',
+    finalConfig: {
+      ...generationConfig,
+      ...configOverrides,
+      attachments: finalAttachments.map((attachment) => ({ ...attachment })),
+      prompt: finalPrompt,
+    },
+    shouldClearComposerAttachments: hasReferenceImage,
+  };
+}
+
 /**
  * Own the Studio's generation-facing actions: enqueue, prompt refinement,
  * image editing and recipe restore.
@@ -59,31 +105,35 @@ export function useStudioGenerationActions({
         closeModal();
       }
 
-      const promptSource =
-        promptOverride !== undefined
-          ? promptOverride
-          : typeof configOverrides?.prompt === 'string'
-            ? configOverrides.prompt
-            : generationConfig.prompt;
-      const finalPrompt = promptSource?.trim() ?? '';
-      const finalAttachments = configOverrides?.attachments ?? generationConfig.attachments;
-      const hasReferenceImage = finalAttachments.length > 0;
+      const request = prepareStudioGenerationRequest({
+        generationConfig,
+        promptOverride,
+        configOverrides,
+      });
 
-      if (!finalPrompt && !hasReferenceImage) {
-        addToast('Type a prompt before generating', 'info');
+      if (!request.ok) {
+        addToast(request.message, 'info');
         return;
       }
 
-      const finalConfig: ImageGenerationConfig = {
-        ...generationConfig,
-        ...configOverrides,
-        prompt: finalPrompt,
-      };
+      enqueue(request.queuePrompt, request.finalConfig, activeWorkspaceId, options?.force);
 
-      const queuePrompt = finalPrompt || 'Image-guided generation';
-      enqueue(queuePrompt, finalConfig, activeWorkspaceId, options?.force);
+      if (request.shouldClearComposerAttachments) {
+        setGenerationConfig((previous) => ({
+          ...previous,
+          attachments: [],
+        }));
+      }
     },
-    [activeWorkspaceId, addToast, closeModal, enqueue, generationConfig, isModalOpen],
+    [
+      activeWorkspaceId,
+      addToast,
+      closeModal,
+      enqueue,
+      generationConfig,
+      isModalOpen,
+      setGenerationConfig,
+    ],
   );
 
   const handleEnhancePrompt = useCallback(async () => {

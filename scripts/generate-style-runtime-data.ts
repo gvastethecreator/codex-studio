@@ -77,7 +77,7 @@ function buildIndexSource() {
   const loaderEntries = packs
     .map(
       (pack) =>
-        `  ${JSON.stringify(pack.id)}: () => import('./styleRuntimePacks.generated/${pack.id}').then((module) => module.loadGeneratedStylePack()),`,
+        `  ${JSON.stringify(pack.id)}: () => import('./styleRuntimePacks.generated/${pack.id}').then((module) => module.loadGeneratedStyleRuntimePack()),`,
     )
     .join('\n');
 
@@ -86,26 +86,26 @@ function buildIndexSource() {
     '// Edit Style Preset Manifests, then run `bun run styles:runtime`.',
     "import type { StyleRuntimePack } from './styles/runtimeTypes';",
     '',
-    'export interface GeneratedStylePackSummary {',
+    'export interface GeneratedStyleRuntimePackSummary {',
     '  id: string;',
     '  name: string;',
     '  description: string;',
     '  presetCount: number;',
     '}',
     '',
-    `export const GENERATED_STYLE_PACK_SUMMARIES = ${JSON.stringify(summaries, null, 2)} as GeneratedStylePackSummary[];`,
+    `export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = ${JSON.stringify(summaries, null, 2)} as GeneratedStyleRuntimePackSummary[];`,
     '',
-    'const GENERATED_STYLE_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {',
+    'const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {',
     loaderEntries,
     '};',
     '',
-    'export async function loadGeneratedStylePack(packId: string): Promise<StyleRuntimePack | null> {',
-    '  const loader = GENERATED_STYLE_PACK_LOADERS[packId];',
+    'export async function loadGeneratedStyleRuntimePack(packId: string): Promise<StyleRuntimePack | null> {',
+    '  const loader = GENERATED_STYLE_RUNTIME_PACK_LOADERS[packId];',
     '  return loader ? loader() : null;',
     '}',
     '',
-    'export async function loadGeneratedStylePacks(): Promise<StyleRuntimePack[]> {',
-    '  return Promise.all(GENERATED_STYLE_PACK_SUMMARIES.map((pack) => loadGeneratedStylePack(pack.id))).then((loaded) => loaded.filter(Boolean) as StyleRuntimePack[]);',
+    'export async function loadGeneratedStyleRuntimePacks(): Promise<StyleRuntimePack[]> {',
+    '  return Promise.all(GENERATED_STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => loadGeneratedStyleRuntimePack(pack.id))).then((loaded) => loaded.filter(Boolean) as StyleRuntimePack[]);',
     '}',
     '',
   ].join('\n');
@@ -129,7 +129,7 @@ function buildPackSource(pack: StyleRuntimePack, importSuffix = '') {
     loaderEntries,
     '];',
     '',
-    'export async function loadGeneratedStylePack(): Promise<StyleRuntimePack> {',
+    'export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {',
     '  const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));',
     '  return {',
     `    id: ${JSON.stringify(pack.id)},`,

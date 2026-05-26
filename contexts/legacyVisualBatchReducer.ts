@@ -1,8 +1,3 @@
-import type {
-  LegacyVisualBatch,
-  LegacyVisualBatchSnapshot,
-} from '../lib/studioLegacyVisualSnapshotImport';
-
 export interface LegacyVisualBatchRef {
   id: string;
   workspaceId: string;
@@ -19,11 +14,10 @@ export type LegacyVisualBatchAction =
       maxPerWorkspace?: number;
     }
   | {
-      type: 'REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_IDS';
-      batches: LegacyVisualBatchSnapshot;
+      type: 'REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_REFS';
+      refs: LegacyVisualBatchRef[];
       prepend?: boolean;
       maxTotal?: number;
-      ensureWorkspaces?: boolean;
     }
   | { type: 'CLEAR_LEGACY_VISUAL_WORKSPACE_IDS'; workspaceId: string }
   | { type: 'CLEAR_ALL_LEGACY_VISUAL_BATCH_IDS' }
@@ -33,7 +27,7 @@ function normalizeWorkspaceId(workspaceId?: string | null) {
   return workspaceId || 'default';
 }
 
-function toBatchRef(batch: Pick<LegacyVisualBatch, 'id' | 'workspaceId'>): LegacyVisualBatchRef {
+function toBatchRef(batch: Pick<LegacyVisualBatchRef, 'id' | 'workspaceId'>): LegacyVisualBatchRef {
   return {
     id: batch.id,
     workspaceId: normalizeWorkspaceId(batch.workspaceId),
@@ -109,12 +103,12 @@ export function legacyVisualBatchReducer(
       };
     }
 
-    case 'REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_IDS':
+    case 'REGISTER_RECOVERED_LEGACY_VISUAL_BATCH_REFS':
       return {
         ...state,
         legacyVisualBatchRefs: mergeBatchRefs(
           state.legacyVisualBatchRefs,
-          action.batches.map(toBatchRef),
+          action.refs.map(toBatchRef),
           {
             prepend: action.prepend,
             maxTotal: action.maxTotal,
