@@ -96,6 +96,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
             <Logo isGenerating={isGenerating} />
             <Tooltip content="Help & setup" position="bottom">
               <button
+                type="button"
                 onClick={onOpenOnboarding}
                 className="rounded-lg border border-white/10 bg-white/5 px-2.5 py-1 text-[9px] font-black uppercase tracking-widest text-zinc-400 transition-colors hover:border-accent-500/30 hover:bg-accent-500/10 hover:text-white cursor-pointer"
               >
@@ -104,6 +105,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
             </Tooltip>
             <Tooltip content="Studio activity" position="bottom">
               <button
+                type="button"
                 onClick={onToggleDebug}
                 aria-label="Open studio activity"
                 className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
@@ -113,13 +115,14 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
             </Tooltip>
             <Tooltip content="Archived images" position="bottom">
               <button
+                type="button"
                 onClick={onOpenTrash}
                 aria-label="Open archived images"
                 className={`p-1.5 rounded-lg transition-colors cursor-pointer relative ${trashCount > 0 ? 'text-red-400 hover:text-red-300 hover:bg-red-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
               >
                 <Trash2 size={16} />
                 {trashCount > 0 && (
-                  <span className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-red-500 rounded-full border border-black animate-pulse" />
+                  <span className="absolute -top-0.5 -right-0.5 size-2 bg-red-500 rounded-full border border-black animate-pulse" />
                 )}
               </button>
             </Tooltip>
@@ -129,6 +132,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-500">
                 <button
+                  type="button"
                   onClick={() => onViewChange('studio')}
                   style={{ viewTransitionName: 'nav-studio' } as React.CSSProperties}
                   className="vt-nav-studio p-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white transition-colors cursor-pointer"
@@ -137,6 +141,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
                 </button>
                 <span className="opacity-50">/</span>
                 <button
+                  type="button"
                   onClick={onCloseRecipe}
                   style={{ viewTransitionName: 'nav-recipes' } as React.CSSProperties}
                   className="vt-nav-recipes flex items-center gap-2 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white transition-colors group cursor-pointer"
@@ -154,6 +159,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
           ) : (
             <div className="flex items-center gap-2 p-1 bg-white/5 rounded-xl border border-white/5">
               <button
+                type="button"
                 onClick={() => onViewChange('studio')}
                 style={{ viewTransitionName: 'nav-studio' } as React.CSSProperties}
                 className={`vt-nav-studio px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer ${currentView === 'studio' ? 'bg-zinc-800 text-white shadow-lg' : 'text-zinc-500'}`}
@@ -161,6 +167,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
                 {workspaceLabel}
               </button>
               <button
+                type="button"
                 onClick={() => onViewChange('recipes')}
                 style={{ viewTransitionName: 'nav-recipes' } as React.CSSProperties}
                 className={`vt-nav-recipes px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer ${currentView === 'recipes' ? 'bg-accent-600 text-white shadow-lg' : 'text-zinc-500'}`}
@@ -186,6 +193,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
           <div className="hidden shrink-0 items-center gap-2 xl:flex">
             <Tooltip content={`Runtime status: ${runtimeStatus.label}`} position="bottom">
               <button
+                type="button"
                 onClick={onOpenDashboard}
                 aria-label={`Open runtime status: ${runtimeStatus.label}`}
                 className={`flex h-10 items-center gap-2 rounded-xl border px-3 transition-all hover:border-white/20 hover:bg-white/8 ${runtimeToneClass}`}
@@ -198,6 +206,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
             </Tooltip>
             <Tooltip content={`Active provider: ${activeProviderId}`} position="bottom">
               <button
+                type="button"
                 onClick={onOpenSettings}
                 aria-label={`Open provider settings for ${activeProviderId}`}
                 className="flex h-10 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-zinc-300 transition-all hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
@@ -209,6 +218,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
             </Tooltip>
             <Tooltip content="Generation queue" position="bottom">
               <button
+                type="button"
                 onClick={onToggleQueue}
                 aria-label="Toggle generation queue"
                 className={`flex h-10 items-center gap-2 rounded-xl border px-3 transition-all ${isQueueOpen ? 'border-accent-500/30 bg-accent-500/12 text-white' : 'border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
@@ -219,12 +229,12 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
                     {queueResultPreviews.slice(0, 3).map((preview) => (
                       <span
                         key={preview.id}
-                        className="h-6 w-6 overflow-hidden rounded-lg border border-black/40 bg-black/40 shadow-sm"
+                        className="size-6 overflow-hidden rounded-lg border border-black/40 bg-black/40 shadow-sm"
                       >
                         <img
                           src={preview.src}
                           alt=""
-                          className="h-full w-full object-cover"
+                          className="size-full object-cover"
                           loading="lazy"
                           decoding="async"
                         />
@@ -239,9 +249,10 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
             </Tooltip>
             <Tooltip content="Studio settings" position="bottom">
               <button
+                type="button"
                 onClick={onOpenSettings}
                 aria-label="Open Studio Settings"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-all hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
+                className="flex size-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-all hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
               >
                 <Settings size={16} />
               </button>

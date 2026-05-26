@@ -194,7 +194,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
       bottomDock={BottomDock}
       className="p-6 pt-20 pb-48 flex items-center justify-center"
     >
-      <div className="flex w-full h-full gap-6 items-center justify-center relative">
+      <div className="flex size-full gap-6 items-center justify-center relative">
         {/* CANVAS AREA */}
         <div className="flex-1 flex flex-col items-center justify-center relative min-w-0 h-full">
           {/* Auto-Scaling Container */}
@@ -244,7 +244,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                         }
                       }}
                       placeholder={`Cell ${i + 1}`}
-                      className="w-full h-full bg-transparent text-[10px] font-bold text-white resize-none outline-none placeholder-zinc-600 leading-tight"
+                      className="size-full bg-transparent text-[10px] font-bold text-white resize-none outline-none placeholder-zinc-600 leading-tight"
                     />
                   </div>
                 ) : (
@@ -255,7 +255,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                       {i + 1}
                     </span>
                     {cellPrompts[i] && (
-                      <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(var(--emerald-500),0.8)]" />
+                      <div className="size-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(var(--emerald-500),0.8)]" />
                     )}
                     {hoveredCell === i && !cellPrompts[i] && (
                       <Edit3 size={12} className={isLightBg ? 'text-black/30' : 'text-white/30'} />
@@ -292,6 +292,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
               Edit Cells
             </span>
             <button
+              type="button"
               onClick={() => setIsSidebarOpen(false)}
               className="ml-auto text-zinc-500 hover:text-white"
             >
@@ -334,6 +335,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
 
         {!isSidebarOpen && (
           <button
+            type="button"
             onClick={() => setIsSidebarOpen(true)}
             className="absolute right-0 top-1/2 -translate-y-1/2 p-2 bg-zinc-900 border border-white/10 rounded-l-xl hover:bg-zinc-800 text-zinc-400 hover:text-white transition-all shadow-lg"
           >

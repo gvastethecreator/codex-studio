@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { getMountedSystemSurfaceKeys } from './StudioSystemOverlays';
+import { getMountedSystemSurfaceKeys } from './studioSystemOverlaysUtils';
 
 describe('StudioSystemOverlays', () => {
   it('mounts only the Demand-Mounted Surfaces that are open', () => {

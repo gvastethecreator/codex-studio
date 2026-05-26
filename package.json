@@ -84,7 +84,6 @@
     "jszip": "^3.10.1",
     "lucide-react": "^1.16.0",
     "react": "^19.2.6",
-    "react-doctor": "^0.2.8",
     "react-dom": "^19.2.6",
     "tailwind-merge": "^3.6.0",
     "three": "^0.184.0"

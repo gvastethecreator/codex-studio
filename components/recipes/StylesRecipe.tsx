@@ -300,12 +300,12 @@ const StylePresetCard = React.memo(
           >
             <img
               src={activeResultImage.thumbnail || activeResultImage.src}
-              className="style-preset-thumbnail h-full w-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02]"
+              className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02]"
               alt={preset.name}
             />
             <div className="absolute inset-0 bg-black/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white backdrop-blur-md">
+              <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white backdrop-blur-md">
                 <Maximize2 size={18} />
               </div>
             </div>
@@ -318,7 +318,7 @@ const StylePresetCard = React.memo(
                     e.stopPropagation();
                     handleCycle(-1);
                   }}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/90 backdrop-blur-md transition-colors hover:bg-black/80"
+                  className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/90 backdrop-blur-md transition-colors hover:bg-black/80"
                   aria-label={`Previous result for ${preset.name}`}
                 >
                   <ChevronLeft size={14} />
@@ -332,7 +332,7 @@ const StylePresetCard = React.memo(
                     e.stopPropagation();
                     handleCycle(1);
                   }}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/90 backdrop-blur-md transition-colors hover:bg-black/80"
+                  className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/90 backdrop-blur-md transition-colors hover:bg-black/80"
                   aria-label={`Next result for ${preset.name}`}
                 >
                   <ChevronRight size={14} />
@@ -342,6 +342,7 @@ const StylePresetCard = React.memo(
 
             <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover/image:opacity-100">
               <button
+                type="button"
                 onClick={(e) => {
                   e.stopPropagation();
                   onApply(preset);
@@ -359,12 +360,13 @@ const StylePresetCard = React.memo(
       if (visualState?.defaultImage) {
         return (
           <button
+            type="button"
             onClick={() => onApply(preset)}
-            className="absolute inset-0 h-full w-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
+            className="absolute inset-0 size-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
           >
             <img
               src={visualState.defaultImage}
-              className="style-preset-thumbnail h-full w-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-100 group-hover:brightness-[1.02] group-hover:saturate-[1.02]"
+              className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-100 group-hover:brightness-[1.02] group-hover:saturate-[1.02]"
               alt={preset.name}
             />
             <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100">
@@ -379,18 +381,19 @@ const StylePresetCard = React.memo(
       if (visualState?.previewImage) {
         return (
           <button
+            type="button"
             onClick={() => onApply(preset)}
-            className="absolute inset-0 h-full w-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
+            className="absolute inset-0 size-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
           >
             <img
               src={visualState.previewImage}
-              className="style-preset-thumbnail h-full w-full object-cover opacity-75 saturate-[0.9] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-[0.94] group-hover:brightness-[1.01] group-hover:saturate-100"
+              className="style-preset-thumbnail size-full object-cover opacity-75 saturate-[0.9] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-[0.94] group-hover:brightness-[1.01] group-hover:saturate-100"
               alt=""
             />
             <div className="absolute inset-0 bg-black/15 transition-colors group-hover:bg-black/8" />
             <div className="absolute inset-0 flex translate-y-2 flex-col items-center justify-center gap-3 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
               <div
-                className={`flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white shadow-xl backdrop-blur-md transition-colors duration-300 group-hover:bg-black/62 ${theme.text}`}
+                className={`flex size-14 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white shadow-xl backdrop-blur-md transition-colors duration-300 group-hover:bg-black/62 ${theme.text}`}
               >
                 <Palette size={24} />
               </div>
@@ -404,11 +407,12 @@ const StylePresetCard = React.memo(
 
       return (
         <button
+          type="button"
           onClick={() => onApply(preset)}
-          className="absolute inset-0 flex h-full w-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
+          className="absolute inset-0 flex size-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
         >
           <div
-            className={`flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
+            className={`flex size-14 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
           >
             <Palette size={24} />
           </div>
@@ -463,6 +467,7 @@ const StylePresetCard = React.memo(
 
           <div className="absolute right-2 top-2 z-30">
             <button
+              type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 onToggleFavorite(preset.id);
@@ -491,7 +496,7 @@ const StylePresetCard = React.memo(
                     {preset.name}
                   </span>
                   {activeResultImage && (
-                    <div className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
+                    <div className="size-1.5 shrink-0 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
                   )}
                 </div>
                 <span className="line-clamp-2 pr-7 text-[8px] leading-relaxed text-zinc-300/80 group-hover:text-zinc-200/90">
@@ -506,6 +511,7 @@ const StylePresetCard = React.memo(
                   </span>
                 )}
                 <button
+                  type="button"
                   onClick={(e) => onCopy(e, preset)}
                   className="rounded-md p-1 text-zinc-400 transition-all hover:bg-white/8 hover:text-white"
                   title="Copy Style Prompt"
@@ -611,7 +617,11 @@ const StylePresetGroupSection = React.memo(
               {visiblePresets.map(renderPresetCard)}
             </div>
             {hiddenPresetCount > 0 && (
-              <button onClick={() => onShowAll(groupKey)} className={showMoreClassName}>
+              <button
+                type="button"
+                onClick={() => onShowAll(groupKey)}
+                className={showMoreClassName}
+              >
                 <ChevronRight size={14} />
                 Show {hiddenPresetCount} more
               </button>
@@ -1236,7 +1246,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   );
 
   return (
-    <RecipeLayout isGenerating={isGenerating} className="flex h-full w-full">
+    <RecipeLayout isGenerating={isGenerating} className="flex size-full">
       {/* LEFT: VISUAL CONTEXT PREVIEW */}
       <div className="w-[30%] 2xl:w-[25%] h-full flex flex-col p-6 relative z-10 overflow-y-auto custom-scrollbar">
         <div className="w-full min-h-full flex flex-col gap-6">
@@ -1252,15 +1262,16 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           </div>
 
           <div className="group relative w-full min-h-96 flex-1 shrink-0">
-            <div className="relative h-full w-full overflow-hidden rounded-3xl">
+            <div className="relative size-full overflow-hidden rounded-3xl">
               {activeImage ? (
-                <div className="w-full h-full relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-900/20">
+                <div className="size-full relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-900/20">
                   <img
                     src={activeImage.dataUrl}
-                    className="w-full h-full object-contain p-2 opacity-90 group-hover:opacity-100 transition-opacity"
+                    className="size-full object-contain p-2 opacity-90 group-hover:opacity-100 transition-opacity"
                     alt=""
                   />
                   <button
+                    type="button"
                     onClick={() => updateConfig('attachments', [])}
                     className="absolute top-4 right-4 p-2 rounded-xl bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white border border-red-500/20 transition-all opacity-0 group-hover:opacity-100 shadow-xl"
                   >
@@ -1272,7 +1283,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   onDragOver={(e) => e.preventDefault()}
                   onDrop={handleDrop}
                   onClick={() => fileInputRef.current?.click()}
-                  className="group flex h-full w-full cursor-pointer flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border-2 border-dashed border-white/5 bg-white/1 transition-all hover:border-white/20 hover:bg-white/3"
+                  className="group flex size-full cursor-pointer flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border-2 border-dashed border-white/5 bg-white/1 transition-all hover:border-white/20 hover:bg-white/3"
                 >
                   <input
                     type="file"
@@ -1286,7 +1297,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                     className="hidden"
                     accept="image/*"
                   />
-                  <div className="w-16 h-16 rounded-2xl bg-zinc-900 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:border-white/20 transition-all shadow-2xl">
+                  <div className="size-16 rounded-2xl bg-zinc-900 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:border-white/20 transition-all shadow-2xl">
                     <Upload
                       size={24}
                       className="text-zinc-600 group-hover:text-white transition-colors"
@@ -1302,7 +1313,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
               <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-3xl">
                 <div
-                  className="t-panel-slide relative h-full w-full overflow-hidden rounded-3xl border border-white/10 bg-black shadow-2xl"
+                  className="t-panel-slide relative size-full overflow-hidden rounded-3xl border border-white/10 bg-black shadow-2xl"
                   data-open={hoveredPresetPreview ? 'true' : 'false'}
                   style={{ '--panel-translate-y': '48px' } as React.CSSProperties}
                 >
@@ -1311,13 +1322,13 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                       {resolvedHoveredPresetPreview.imageSrc ? (
                         <img
                           src={resolvedHoveredPresetPreview.imageSrc}
-                          className="absolute inset-0 h-full w-full object-cover"
+                          className="absolute inset-0 size-full object-cover"
                           alt={resolvedHoveredPresetPreview.name}
                         />
                       ) : (
                         <div className="absolute inset-0 flex items-center justify-center bg-zinc-950 text-zinc-500">
                           <div className="flex flex-col items-center gap-3">
-                            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
+                            <div className="flex size-16 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
                               <Palette size={28} />
                             </div>
                             <span className="text-[10px] font-black uppercase tracking-[0.24em]">
@@ -1360,7 +1371,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           {activeImage && (
             <div className="animate-in slide-in-from-bottom-2 fade-in duration-500 space-y-6">
               <Slider
-                icon={<SlidersHorizontal className="text-zinc-500 w-4 h-4" />}
+                icon={<SlidersHorizontal className="text-zinc-500 size-4" />}
                 label="Source Influence"
                 value={activeImage.strength}
                 min={0}
@@ -1370,7 +1381,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               />
 
               <Slider
-                icon={<Palette className="text-zinc-500 w-4 h-4" />}
+                icon={<Palette className="text-zinc-500 size-4" />}
                 label="Style Strength"
                 value={styleStrength}
                 min={0.1}
@@ -1402,6 +1413,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         <div className="vt-recipe-tabs h-16 flex items-center px-6 border-b border-white/5 gap-2 overflow-x-auto custom-scrollbar bg-black/40 backdrop-blur-md z-20">
           {/* Favorites Tab */}
           <button
+            type="button"
             onClick={() => {
               startViewTransition(() => {
                 setCurrentPackId(FAVORITES_PACK_ID);
@@ -1432,6 +1444,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             return (
               <button
+                type="button"
                 key={pack.id}
                 data-style-pack-id={pack.id}
                 data-style-pack-active={isActive ? 'true' : 'false'}
@@ -1489,7 +1502,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 className="bg-transparent border-none outline-none text-[11px] text-white placeholder-zinc-600 w-full font-medium"
               />
               {searchQuery && (
-                <button onClick={() => setSearchQuery('')}>
+                <button type="button" onClick={() => setSearchQuery('')}>
                   <X size={12} className="text-zinc-500 hover:text-white" />
                 </button>
               )}
@@ -1498,6 +1511,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             <div className="h-6 w-px bg-white/5" />
 
             <button
+              type="button"
               onClick={() => setIsCatalogSearchOpen(true)}
               data-style-open-catalog
               className="flex h-8 items-center gap-2 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
@@ -1508,6 +1522,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             </button>
 
             <button
+              type="button"
               onClick={() => setSortOrder((prev) => (prev === 'az' ? 'za' : 'az'))}
               className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors"
               title={sortOrder === 'az' ? 'Sort A-Z' : 'Sort Z-A'}
@@ -1517,6 +1532,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             {currentPackId !== FAVORITES_PACK_ID && (
               <button
+                type="button"
                 onClick={() => setShowFavoritesOnly((prev) => !prev)}
                 className={`p-1.5 rounded-lg transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
                 title="Filter Favorites in this Pack"
@@ -1600,6 +1616,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             {hiddenStyleGroupEntries.length > 0 && (
               <button
+                type="button"
                 onClick={() => setShowAllStyleCategories(true)}
                 data-style-show-all-categories
                 data-style-hidden-groups={hiddenStyleGroupEntries.length}

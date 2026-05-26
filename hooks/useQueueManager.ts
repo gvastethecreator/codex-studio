@@ -289,7 +289,7 @@ export const useQueueManager = ({
     });
 
     return () => {
-      // We don't clear the timer here to allow it to finish even if the effect re-runs
+      if (restTimerRef.current) clearTimeout(restTimerRef.current);
     };
   }, [jobs, isResting, executeGeneration, queueTick]);
 

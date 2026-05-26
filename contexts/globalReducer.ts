@@ -1,8 +1,4 @@
-import type {
-  BackgroundConfig,
-  LogEntry,
-  Workspace,
-} from '../types';
+import type { BackgroundConfig, LogEntry, Workspace } from '../types';
 
 export interface GlobalState {
   logs: LogEntry[];

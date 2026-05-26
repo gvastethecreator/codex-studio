@@ -29,10 +29,11 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
     <div className="hidden h-10 shrink-0 items-center lg:flex">
       <Tooltip content={tooltip} position="bottom">
         <button
+          type="button"
           onClick={onOpenDashboard}
           className={`flex h-10 items-center gap-2 rounded-lg border px-2.5 text-left transition-all hover:border-accent-400/30 hover:bg-white/8 ${usageToneClasses}`}
         >
-          <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-black/20 text-inherit">
+          <div className="flex size-7 shrink-0 items-center justify-center rounded-md bg-black/20 text-inherit">
             {usage.tone === 'offline' ? <WifiOff size={14} /> : <Gauge size={14} />}
           </div>
           {visibleLimits.length > 0 ? (
@@ -40,7 +41,7 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
               {visibleLimits.map((limit) => (
                 <div key={limit.id} className="flex items-center gap-1.5">
                   <span
-                    className="relative block h-6 w-6 shrink-0 rounded-full"
+                    className="relative block size-6 shrink-0 rounded-full"
                     style={{
                       background: `conic-gradient(rgb(52 211 153) ${Math.round(limit.availablePercent * 3.6)}deg, rgb(63 63 70 / 0.65) 0deg)`,
                     }}

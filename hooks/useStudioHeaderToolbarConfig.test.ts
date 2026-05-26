@@ -18,6 +18,7 @@ describe('buildStudioHeaderToolbarProps', () => {
           meta: 'ChatGPT Pro',
           tooltip: 'Available usage for ChatGPT Pro',
           unitLabel: 'credits',
+          limits: [],
           tone: 'available',
           isLoading: false,
         },
@@ -67,7 +68,9 @@ describe('buildStudioHeaderToolbarProps', () => {
     expect(props.trashCount).toBe(2);
     expect(props.usage.value).toBe('120');
     expect(props.queueCount).toBe(4);
-    expect(props.queueResultPreviews).toEqual([{ id: 'result-1', src: '/library/assets/result-1.png' }]);
+    expect(props.queueResultPreviews).toEqual([
+      { id: 'result-1', src: '/library/assets/result-1.png' },
+    ]);
     expect(props.activeProviderId).toBe('codex');
     expect(props.runtimeStatus).toEqual({
       label: 'Ready',

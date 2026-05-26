@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { MotionDiv, AnimatePresence } from 'motion/react';
 import { createPortal } from 'react-dom';
 
 interface FloatingTooltipProps {
@@ -91,7 +91,7 @@ const TooltipPortal = ({
   }, [position]);
 
   return (
-    <motion.div
+    <MotionDiv
       ref={tooltipRef}
       initial={{ opacity: 0, scale: 0.95, x: adjustedPos.x, y: adjustedPos.y }}
       animate={{
@@ -117,6 +117,6 @@ const TooltipPortal = ({
       className="bg-zinc-900/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl"
     >
       {content}
-    </motion.div>
+    </MotionDiv>
   );
 };

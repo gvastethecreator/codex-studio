@@ -118,7 +118,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
       x,
       y,
       (brushSize * (canvasRef.current!.width / canvasRef.current!.getBoundingClientRect().width)) /
-      2,
+        2,
       0,
       Math.PI * 2,
     );
@@ -217,6 +217,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           </div>
         </div>
         <button
+          type="button"
           onClick={onClose}
           className="p-3 bg-zinc-900/60 hover:bg-zinc-800 rounded-xl text-zinc-600 hover:text-white transition-all shadow-xl"
         >
@@ -235,6 +236,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           {image && (
             <img
               src={image.dataUrl}
+              alt=""
               className="absolute object-contain pointer-events-none opacity-30 grayscale"
               style={{
                 width: canvasRef.current?.style.width,
@@ -274,7 +276,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
 
           <div className="space-y-8">
             <Slider
-              icon={<Brush className="w-4 h-4 text-zinc-600" />}
+              icon={<Brush className="size-4 text-zinc-600" />}
               label="Brush Size"
               value={brushSize}
               min={5}
@@ -285,6 +287,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
 
             <div className="flex items-center gap-2">
               <button
+                type="button"
                 onClick={handleUndo}
                 disabled={historyIndex < 0}
                 className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 disabled:opacity-10 transition-all"
@@ -292,6 +295,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
                 Undo
               </button>
               <button
+                type="button"
                 onClick={() => {
                   const ctx = canvasRef.current?.getContext('2d');
                   if (ctx && canvasRef.current)
@@ -307,16 +311,18 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
 
           <div className="mt-auto">
             <button
+              type="button"
               onClick={handleGenerate}
               disabled={isGenerating || !editPrompt.trim() || historyIndex < 0}
               className={`w-full h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-all active:scale-95 shadow-2xl
-                        ${isGenerating
-                  ? 'bg-accent-500/10 text-accent-500/40'
-                  : 'bg-accent-600 text-white hover:bg-accent-500 shadow-accent-950/40'
-                } disabled:opacity-20 disabled:pointer-events-none`}
+                        ${
+                          isGenerating
+                            ? 'bg-accent-500/10 text-accent-500/40'
+                            : 'bg-accent-600 text-white hover:bg-accent-500 shadow-accent-950/40'
+                        } disabled:opacity-20 disabled:pointer-events-none`}
             >
               {isGenerating ? (
-                <div className="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                <div className="size-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
               ) : (
                 <Sparkles size={18} />
               )}

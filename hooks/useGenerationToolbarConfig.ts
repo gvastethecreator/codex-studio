@@ -85,8 +85,6 @@ export function buildGenerationToolbarProps({
   };
 }
 
-export function useGenerationToolbarConfig(
-  args: BuildGenerationToolbarPropsArgs,
-): ToolbarProps {
+export function useGenerationToolbarConfig(args: BuildGenerationToolbarPropsArgs): ToolbarProps {
   return buildGenerationToolbarProps(args);
 }

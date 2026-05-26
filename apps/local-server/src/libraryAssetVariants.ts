@@ -50,10 +50,7 @@ export function resolveThumbnailMaxEdge(rawValue?: number | string | null) {
     return DEFAULT_THUMBNAIL_MAX_EDGE;
   }
 
-  return Math.max(
-    MIN_THUMBNAIL_MAX_EDGE,
-    Math.min(MAX_THUMBNAIL_MAX_EDGE, Math.round(parsed)),
-  );
+  return Math.max(MIN_THUMBNAIL_MAX_EDGE, Math.min(MAX_THUMBNAIL_MAX_EDGE, Math.round(parsed)));
 }
 
 export function isThumbnailAssetPath(

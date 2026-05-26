@@ -160,6 +160,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
 
               return (
                 <button
+                  type="button"
                   key={job.id}
                   onClick={() => onInspectJob(job.id)}
                   className={cn(

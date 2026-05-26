@@ -214,6 +214,7 @@ const RecipeCard: React.FC<{ recipe: RecipeCatalogEntry; onSelect: (id: RecipeId
               {/* Button fades in and slides up */}
               <div className="absolute top-0 left-0 right-0 pt-3 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75 ease-out">
                 <button
+                  type="button"
                   className={`w-full h-9 bg-white text-black rounded-xl flex items-center justify-center gap-2 text-[9px] font-black uppercase tracking-widest shadow-lg hover:text-white ${colors.bg.replace('group-hover:', 'hover:')} transition-colors`}
                 >
                   {recipe.buttonText} <BtnIcon size={12} />

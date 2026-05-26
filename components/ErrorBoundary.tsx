@@ -42,6 +42,7 @@ export class ErrorBoundary extends Component<Props, State> {
               'A critical error occurred while rendering this component. Review the session logs or devtools output for details.'}
           </p>
           <button
+            type="button"
             onClick={() => this.setState({ hasError: false, error: null })}
             className="mt-6 px-4 py-2 bg-red-500/10 text-red-400 hover:bg-red-500/20 rounded-lg text-xs font-bold uppercase tracking-widest transition-colors"
           >

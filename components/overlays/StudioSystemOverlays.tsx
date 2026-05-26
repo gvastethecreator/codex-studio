@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 
 import type { StudioSystemOverlaysProps } from './types';
+import { getMountedSystemSurfaceKeys } from './studioSystemOverlaysUtils';
 
 const DebugPanel = React.lazy(() =>
   import('../DebugPanel').then((m) => ({ default: m.DebugPanel })),
@@ -14,22 +15,6 @@ const OnboardingModal = React.lazy(() =>
 const StudioSettingsModal = React.lazy(() =>
   import('../StudioSettingsModal').then((m) => ({ default: m.StudioSettingsModal })),
 );
-
-type SystemSurfaceKey = 'debug' | 'dashboard' | 'onboarding' | 'settings';
-
-export function getMountedSystemSurfaceKeys(flags: {
-  isDebugPanelOpen: boolean;
-  isDashboardModalOpen: boolean;
-  isOnboardingOpen: boolean;
-  isSettingsModalOpen: boolean;
-}): SystemSurfaceKey[] {
-  const keys: SystemSurfaceKey[] = [];
-  if (flags.isDebugPanelOpen) keys.push('debug');
-  if (flags.isDashboardModalOpen) keys.push('dashboard');
-  if (flags.isOnboardingOpen) keys.push('onboarding');
-  if (flags.isSettingsModalOpen) keys.push('settings');
-  return keys;
-}
 
 export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   isDebugPanelOpen,

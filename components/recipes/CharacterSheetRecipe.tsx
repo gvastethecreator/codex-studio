@@ -141,7 +141,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
               <img
                 src={activeImage.dataUrl}
                 alt="Reference"
-                className="w-full h-full object-contain shadow-2xl"
+                className="size-full object-contain shadow-2xl"
               />
               <div className="absolute top-4 left-4 z-20 flex gap-2">
                 <span className="px-2 py-1 bg-indigo-500/20 text-indigo-300 text-[8px] font-black uppercase tracking-widest border border-indigo-500/30 rounded">
@@ -149,6 +149,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                 </span>
               </div>
               <button
+                type="button"
                 onClick={() => updateConfig('attachments', [])}
                 className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white transition-all opacity-0 group-hover:opacity-100 shadow-lg border border-red-500/30"
               >
@@ -171,7 +172,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                 accept="image/*"
               />
 
-              <div className="w-24 h-24 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:border-indigo-500/50 transition-all shadow-2xl relative z-10">
+              <div className="size-24 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:border-indigo-500/50 transition-all shadow-2xl relative z-10">
                 <Brush
                   size={32}
                   className="text-zinc-600 group-hover:text-indigo-400 transition-colors"

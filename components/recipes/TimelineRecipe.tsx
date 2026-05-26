@@ -14,7 +14,7 @@ import {
   Activity,
   Sun,
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { MotionDiv, MotionButton, AnimatePresence } from 'motion/react';
 import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
 import { RecipeLayout } from './RecipeLayout';
@@ -368,6 +368,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               className={`absolute inset-y-1 w-1/2 bg-teal-600/20 border border-teal-500/30 rounded-lg transition-all duration-300 ${direction === 'forward' ? 'translate-x-full' : 'translate-x-0'}`}
             />
             <button
+              type="button"
               onClick={() => setDirection('backward')}
               className={`relative px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'backward' ? 'text-teal-400' : 'text-zinc-500 hover:text-zinc-300'}`}
             >
@@ -375,6 +376,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               <span className="text-[10px] font-black uppercase tracking-widest">Prev</span>
             </button>
             <button
+              type="button"
               onClick={() => setDirection('forward')}
               className={`relative px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'forward' ? 'text-teal-400' : 'text-zinc-500 hover:text-zinc-300'}`}
             >
@@ -430,6 +432,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               Cam
             </span>
             <button
+              type="button"
               onClick={() => setCameraMode((p) => (p === 'locked' ? 'dynamic' : 'locked'))}
               className={`flex min-w-25 items-center gap-2 rounded-xl border px-4 transition-all h-10 ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-red-400' : 'bg-blue-500/10 border-blue-500/30 text-blue-400'}`}
             >
@@ -443,6 +446,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               View
             </span>
             <button
+              type="button"
               onClick={() => setIsOnionSkinEnabled((p) => !p)}
               className={`h-10 px-4 rounded-xl border flex items-center gap-2 transition-all ${isOnionSkinEnabled ? 'bg-white/10 border-white/30 text-white' : 'bg-transparent border-white/5 text-zinc-500'}`}
               title="Toggle Onion Skin"
@@ -478,12 +482,12 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               <img
                 src={activeImage.dataUrl}
                 alt="Reference"
-                className="w-full h-full object-contain opacity-100 relative z-10"
+                className="size-full object-contain opacity-100 relative z-10"
               />
               {onionSkinSrc && (
                 <img
                   src={onionSkinSrc}
-                  className="absolute inset-0 w-full h-full object-contain z-20 pointer-events-none mix-blend-screen opacity-40"
+                  className="absolute inset-0 size-full object-contain z-20 pointer-events-none mix-blend-screen opacity-40"
                   style={{ filter: 'grayscale(100%) brightness(1.2)' }}
                   alt="Onion Skin"
                 />
@@ -504,12 +508,13 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
                 <span className="text-[9px] font-bold text-zinc-400 uppercase">
                   Frame: {currentRefIndex}
                 </span>
-                <div className="w-1 h-1 bg-white/20 rounded-full" />
+                <div className="size-1 bg-white/20 rounded-full" />
                 <span className="text-[9px] font-black text-teal-400 uppercase tracking-widest">
                   {direction === 'forward' ? 'Generating Future' : 'Reconstructing Past'}
                 </span>
               </div>
               <button
+                type="button"
                 onClick={() => fileInputRef.current?.click()}
                 className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-black/60 text-zinc-400 hover:text-white hover:bg-white/10 transition-all pointer-events-auto border border-white/10 flex items-center gap-2"
               >
@@ -531,7 +536,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
-              className="group flex h-full w-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-all hover:bg-white/3"
+              className="group flex size-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-all hover:bg-white/3"
             >
               <input
                 type="file"
@@ -542,7 +547,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
                 className="hidden"
                 accept="image/*"
               />
-              <div className="w-20 h-20 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all shadow-2xl">
+              <div className="size-20 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all shadow-2xl">
                 <Clock size={32} className="text-zinc-600 group-hover:text-teal-400" />
               </div>
               <div className="text-center">
@@ -583,14 +588,14 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
         <div className="w-full h-28 relative group">
           {/* Playhead Indicator (Absolute Center) */}
           <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-teal-500 z-30 pointer-events-none shadow-[0_0_15px_rgba(20,184,166,1)]">
-            <div className="absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-l-[6px] border-l-transparent border-t-8 border-t-teal-500" />
-            <div className="absolute bottom-0 left-1/2 h-0 w-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-b-8 border-b-teal-500 border-l-[6px] border-l-transparent" />
+            <div className="absolute top-0 left-1/2 size-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-l-[6px] border-l-transparent border-t-8 border-t-teal-500" />
+            <div className="absolute bottom-0 left-1/2 size-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-b-8 border-b-teal-500 border-l-[6px] border-l-transparent" />
           </div>
 
           {/* SCROLL CONTAINER */}
           <div
             ref={scrollContainerRef}
-            className="w-full h-full bg-black/40 flex items-center overflow-x-auto custom-scrollbar relative snap-x snap-mandatory"
+            className="size-full bg-black/40 flex items-center overflow-x-auto custom-scrollbar relative snap-x snap-mandatory"
             // Center padding calculation: 50% screen - half item width (assuming w-48/192px approx)
             style={{ paddingLeft: 'calc(50% - 96px)', paddingRight: 'calc(50% - 96px)' }}
           >
@@ -611,7 +616,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
                   const isOriginFrame = item.isOrigin;
 
                   return (
-                    <motion.button
+                    <MotionButton
                       key={item.id}
                       layout
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -631,8 +636,9 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
                     >
                       <img
                         src={item.thumbnail}
-                        className="w-full h-full object-cover"
+                        className="size-full object-cover"
                         loading="lazy"
+                        alt=""
                       />
 
                       {/* Frame Number Tag */}
@@ -645,7 +651,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
                       {isAnchor && !isActive && (
                         <div className="absolute inset-0 border-2 border-dashed border-teal-500/30 rounded-lg pointer-events-none" />
                       )}
-                    </motion.button>
+                    </MotionButton>
                   );
                 })}
               </AnimatePresence>

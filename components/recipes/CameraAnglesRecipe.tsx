@@ -198,10 +198,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
           </div>
 
           {/* CANVAS CONTAINER */}
-          <div
-            ref={mountRef}
-            className="flex-1 w-full h-full relative cursor-move touch-none group"
-          >
+          <div ref={mountRef} className="flex-1 size-full relative cursor-move touch-none group">
             <div className="pip-viewport absolute top-6 right-6 z-30 h-45 w-60 overflow-hidden rounded-lg border-2 border-white/10 bg-black/50 shadow-2xl backdrop-blur-sm pointer-events-none">
               <div className="absolute top-0 left-0 px-2 py-0.5 bg-black/50 text-cyan-400 text-[8px] font-black uppercase tracking-widest">
                 CAM VIEW
@@ -237,6 +234,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
               {hasReference && (
                 <div className="flex items-center gap-2">
                   <button
+                    type="button"
                     onClick={handleEstimateCamera}
                     disabled={isEstimating}
                     className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border border-white/10 transition-all ${isEstimating ? 'bg-white/10' : 'bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 hover:border-cyan-500/30'}`}
@@ -250,6 +248,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                     <span className="text-[8px] font-bold uppercase">Fit</span>
                   </button>
                   <button
+                    type="button"
                     onClick={() => updateConfig('attachments', [])}
                     className="text-zinc-500 hover:text-red-500 transition-colors"
                   >
@@ -260,7 +259,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             </div>
 
             {hasReference ? (
-              <div className="w-full h-full flex items-center justify-center p-6 bg-black/50">
+              <div className="size-full flex items-center justify-center p-6 bg-black/50">
                 <img
                   src={activeImage.dataUrl}
                   className="max-w-full max-h-full object-contain rounded-lg shadow-2xl opacity-90"
@@ -272,7 +271,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                 onClick={() => fileInputRef.current?.click()}
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={handleDrop}
-                className="relative z-10 flex h-full w-full cursor-pointer flex-col items-center justify-center p-6 transition-colors hover:bg-white/2"
+                className="relative z-10 flex size-full cursor-pointer flex-col items-center justify-center p-6 transition-colors hover:bg-white/2"
               >
                 <input
                   type="file"
@@ -281,7 +280,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                   className="hidden"
                   accept="image/*"
                 />
-                <div className="w-16 h-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-4 shadow-xl group-hover:scale-110 group-hover:border-cyan-500/50 transition-all">
+                <div className="size-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-4 shadow-xl group-hover:scale-110 group-hover:border-cyan-500/50 transition-all">
                   <Upload
                     size={20}
                     className="text-zinc-500 group-hover:text-white transition-colors"
@@ -338,20 +337,22 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
               <div className="flex-1 overflow-y-auto custom-scrollbar grid grid-cols-2 gap-2 p-1 content-start">
                 {cameraImages.map((img) => (
                   <button
+                    type="button"
                     key={img.id}
                     onClick={() => onSelectImage(img)}
                     className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-all group shadow-sm hover:shadow-lg"
                   >
                     <img
                       src={img.thumbnail || img.src}
-                      className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                      className="size-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                       loading="lazy"
+                      alt=""
                     />
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
                       <Maximize2 size={16} className="text-white drop-shadow-md" />
                     </div>
                     {img.isFavorite && (
-                      <div className="absolute top-1 right-1 w-2 h-2 bg-cyan-500 rounded-full shadow-lg" />
+                      <div className="absolute top-1 right-1 size-2 bg-cyan-500 rounded-full shadow-lg" />
                     )}
                   </button>
                 ))}
