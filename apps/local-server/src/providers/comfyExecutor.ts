@@ -103,7 +103,9 @@ function findFirstComfyImageRef(historyJson: unknown, promptId: string): ComfyIm
     if (!image || typeof image.filename !== 'string') continue;
     return {
       filename: image.filename,
-      ...(typeof image.subfolder === 'string' && image.subfolder ? { subfolder: image.subfolder } : {}),
+      ...(typeof image.subfolder === 'string' && image.subfolder
+        ? { subfolder: image.subfolder }
+        : {}),
       ...(typeof image.type === 'string' && image.type ? { type: image.type } : {}),
     };
   }

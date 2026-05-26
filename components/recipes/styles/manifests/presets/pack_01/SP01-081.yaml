@@ -36,6 +36,8 @@ avoidRules:
   - overexposed
 attributes:
   negativePrompt: illustration, painting, 3d render, cartoon, anime, watermark, text, signature, flash photography, harsh shadows, overexposed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-081.webp
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
@@ -48,4 +50,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

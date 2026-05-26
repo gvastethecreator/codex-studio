@@ -9,7 +9,7 @@ export interface LeftDebugPanelProps {
   workspaces: Workspace[];
   logs: LogEntry[];
   studioJobs: StudioJob[];
-  batchesCount: number;
+  visualGroupsCount: number;
   imagesCount: number;
   onInspectJob?: (jobId: string) => void;
   selectedJobId?: string | null;
@@ -19,7 +19,7 @@ export const LeftDebugPanel: React.FC<LeftDebugPanelProps> = ({
   workspaces,
   logs,
   studioJobs,
-  batchesCount,
+  visualGroupsCount,
   imagesCount,
   onInspectJob,
   selectedJobId,
@@ -31,7 +31,7 @@ export const LeftDebugPanel: React.FC<LeftDebugPanelProps> = ({
         workspaces={workspaces}
         logs={logs}
         studioJobs={studioJobs}
-        batchesCount={batchesCount}
+        visualGroupsCount={visualGroupsCount}
         imagesCount={imagesCount}
         onInspectJob={onInspectJob}
         selectedJobId={selectedJobId}

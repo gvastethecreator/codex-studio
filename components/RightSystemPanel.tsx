@@ -27,7 +27,7 @@ interface StatusItem {
 
 interface RightSystemPanelProps {
   onImportVault: (e: React.ChangeEvent<HTMLInputElement>) => void | Promise<void>;
-  onExportVault: () => void;
+  onExportWorkspaceSnapshot: () => void;
   isBackgroundEnabled: boolean;
   onToggleBackground: () => void;
   isQueueOpen: boolean;
@@ -89,7 +89,7 @@ function StatusCard({ label, value, detail, tone, icon: Icon }: StatusItem) {
 export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
   ({
     onImportVault,
-    onExportVault,
+    onExportWorkspaceSnapshot,
     isBackgroundEnabled,
     onToggleBackground,
     isQueueOpen,
@@ -138,7 +138,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                 </span>
               </button>
               <button
-                onClick={onExportVault}
+                onClick={onExportWorkspaceSnapshot}
                 className="group flex h-10 w-full items-center gap-3 rounded-xl bg-white/5 px-4 transition-all hover:bg-white/10"
               >
                 <Share

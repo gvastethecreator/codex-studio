@@ -1,6 +1,5 @@
 import React, { Suspense } from 'react';
 
-import { exportToJson } from '../../utils/fileUtils';
 import type { StudioSystemOverlaysProps } from './types';
 
 const DebugPanel = React.lazy(() =>
@@ -38,7 +37,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   mergedLogs,
   isDashboardModalOpen,
   closeDashboard,
-  batches,
+  visualGroupsCount,
   workspaces,
   studioJobs,
   imagesCount,
@@ -47,6 +46,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   onInspectJob,
   onClearSelectedJob,
   handleImportVault,
+  handleExportWorkspaceSnapshot,
   handleDeepScan,
   apiBase,
   onboardingError,
@@ -104,7 +104,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             logs={mergedLogs}
             workspaces={workspaces}
             studioJobs={studioJobs}
-            batchesCount={batches.length}
+            visualGroupsCount={visualGroupsCount}
             imagesCount={imagesCount}
             selectedJobDetail={selectedJobDetail}
             isLoadingSelectedJob={isLoadingSelectedJob}
@@ -118,10 +118,10 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
           <DashboardModal
             isOpen={isDashboardModalOpen}
             onClose={closeDashboard}
-            batches={batches}
+            imagesCount={imagesCount}
             workspaces={workspaces}
             onImportVault={handleImportVault}
-            onExportVault={() => exportToJson(batches, `vault-export-${Date.now()}.json`)}
+            onExportWorkspaceSnapshot={handleExportWorkspaceSnapshot}
             onDeepScan={handleDeepScan}
           />
         </Suspense>

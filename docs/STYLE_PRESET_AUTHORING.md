@@ -2,6 +2,10 @@
 
 Real presets live in `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
 
+Do not add new presets to `components/recipes/styles/packs/*.yaml`. Those files
+are legacy migration input only. `bun run styles:source:verify` fails when a
+preset id exists in legacy pack YAML but not in granular manifests.
+
 ## Quick Example
 
 Create `presets/pack_01/MY-CUSTOM.yaml`:
@@ -67,9 +71,13 @@ Edit `manifests/packs/pack_01.yaml`:
    ```yaml
    - id: portrait-styles
      presetRefs:
-       - pack_01/MY-CUSTOM.yaml  # <-- add here
+       - pack_01/MY-CUSTOM.yaml # <-- add here
    ```
 2. Add to the top-level `presetRefs` list in the same file.
+
+Both references are required. `styles:validate` rejects duplicate pack refs,
+category refs missing from the pack-level list, and refs that point outside the
+pack namespace.
 
 ## Finally generate runtime data + validate
 
@@ -82,39 +90,47 @@ bun run styles:verify          # full validation: taxonomy, coverage, source aud
 
 Every preset manifest must include a `taxonomy` block:
 
-| Field | Required | Example |
-|---|---|---|
-| `packId` | yes | `pack_01` |
-| `packName` | yes | `Photography & Realism` |
-| `categoryId` | yes | `portrait-styles` |
-| `categoryName` | yes | `1. Portrait Styles` |
-| `tags` | yes | `[photography-and-realism, portrait-styles]` |
-| `supportedTasks` | yes | `[image_generate, image_edit]` |
-| `hasDefaultImage` | yes | `true` |
+| Field             | Required | Example                                      |
+| ----------------- | -------- | -------------------------------------------- |
+| `packId`          | yes      | `pack_01`                                    |
+| `packName`        | yes      | `Photography & Realism`                      |
+| `categoryId`      | yes      | `portrait-styles`                            |
+| `categoryName`    | yes      | `1. Portrait Styles`                         |
+| `tags`            | yes      | `[photography-and-realism, portrait-styles]` |
+| `supportedTasks`  | yes      | `[image_generate, image_edit]`               |
+| `hasDefaultImage` | yes      | `true`                                       |
 
 The `styles:validate` check enforces taxonomy drift:
+
 - `packId`/`packName` must match the parent pack
 - `categoryId`/`categoryName` must match the registered category
 - `tags` and `supportedTasks` must match the manifest fields
+
+It also enforces pack-reference drift:
+
+- top-level `presetRefs` cannot duplicate refs
+- category `presetRefs` must also exist in top-level `presetRefs`
+- pack and category refs must use the same `<pack_id>/<PRESET_ID>.yaml` namespace
 
 ## Visual DNA Fields
 
 All 8 fields are required and checked for emptiness by `validateStyleManifestGraph`:
 
-| Field | Purpose |
-|---|---|
-| `aesthetic` | Overall visual style direction |
-| `subject_treatment` | How subjects/humans are rendered |
-| `color_and_tone` | Color palette and tonal range |
-| `lighting_and_shadow` | Light sources, quality, direction |
-| `texture_and_material` | Surface detail and material feel |
-| `camera_and_composition` | Lens, framing, perspective |
-| `atmosphere_and_mood` | Emotional quality, ambient feel |
-| `rendering_and_quality` | Resolution, polish level |
+| Field                    | Purpose                           |
+| ------------------------ | --------------------------------- |
+| `aesthetic`              | Overall visual style direction    |
+| `subject_treatment`      | How subjects/humans are rendered  |
+| `color_and_tone`         | Color palette and tonal range     |
+| `lighting_and_shadow`    | Light sources, quality, direction |
+| `texture_and_material`   | Surface detail and material feel  |
+| `camera_and_composition` | Lens, framing, perspective        |
+| `atmosphere_and_mood`    | Emotional quality, ambient feel   |
+| `rendering_and_quality`  | Resolution, polish level          |
 
 ## Avoid Rules
 
 Negative prompt snippets applied per-preset. Use simple lowercase keywords:
+
 ```yaml
 avoidRules:
   - illustration

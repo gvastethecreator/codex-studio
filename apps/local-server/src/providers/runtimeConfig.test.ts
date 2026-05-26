@@ -37,8 +37,12 @@ describe('provider runtime config', () => {
     const invalid = getExternalProviderRuntimePreflight('comfy', {
       COMFY_API_URL: 'not-a-url',
     });
+    const missingTemplate = getExternalProviderRuntimePreflight('comfy', {
+      COMFY_API_URL: 'http://127.0.0.1:8188',
+    });
     const valid = getExternalProviderRuntimePreflight('comfy', {
       COMFY_API_URL: 'http://127.0.0.1:8188',
+      COMFY_WORKFLOW_TEMPLATE_PATH: 'D:/comfy/workflows/studio.json',
     });
 
     expect(invalid).toMatchObject({
@@ -52,10 +56,19 @@ describe('provider runtime config', () => {
       'Invalid local runtime endpoint in COMFY_API_URL.',
       'Missing provider config source: COMFY_WORKFLOW_TEMPLATE_PATH.',
     ]);
+    expect(missingTemplate).toMatchObject({
+      providerId: 'comfy',
+      localRuntimeState: 'configured',
+      localRuntimeSource: 'COMFY_API_URL',
+      canAttemptExecution: false,
+      diagnostics: ['Missing provider config source: COMFY_WORKFLOW_TEMPLATE_PATH.'],
+    });
     expect(valid).toMatchObject({
       providerId: 'comfy',
       localRuntimeState: 'configured',
       localRuntimeSource: 'COMFY_API_URL',
+      canAttemptExecution: true,
+      diagnostics: [],
     });
   });
 

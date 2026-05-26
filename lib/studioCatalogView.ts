@@ -1,11 +1,4 @@
 import type { CatalogImage } from '../packages/shared/src';
-import type { GenerationBatch } from '../types';
-import {
-  materializeVisualBatchImage,
-  resolveVisualBatchCreatedAt,
-  resolveVisualBatchId,
-} from './studioVisualBatchCatalog';
-import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
 
 export interface CatalogEntryFilters {
   workspaceId?: string | null;
@@ -29,6 +22,10 @@ function compareCatalogEntries(a: CatalogImage, b: CatalogImage) {
   return createdAtMs(b) - createdAtMs(a) || a.id.localeCompare(b.id);
 }
 
+function resolveCatalogBatchGroupId(entry: Pick<CatalogImage, 'batchId' | 'jobId' | 'id'>) {
+  return entry.batchId || `studio-${entry.jobId ?? entry.id}`;
+}
+
 export function createCatalogView(entries: CatalogImage[]): StudioCatalogView {
   const sortedEntries = [...entries].sort(compareCatalogEntries);
   const byId = new Map<string, CatalogImage>();
@@ -36,7 +33,7 @@ export function createCatalogView(entries: CatalogImage[]): StudioCatalogView {
 
   for (const entry of sortedEntries) {
     byId.set(entry.id, entry);
-    const batchId = resolveVisualBatchId(entry);
+    const batchId = resolveCatalogBatchGroupId(entry);
     const batchEntries = byBatchId.get(batchId) ?? [];
     batchEntries.push(entry);
     byBatchId.set(batchId, batchEntries);
@@ -72,29 +69,4 @@ export function selectCatalogEntries(
 
     return true;
   });
-}
-
-export function materializeVisualBatchesFromCatalog(view: StudioCatalogView): GenerationBatch[] {
-  const batches: GenerationBatch[] = [];
-
-  for (const [batchId, entries] of view.byBatchId) {
-    const firstEntry = entries[0];
-    if (!firstEntry) continue;
-    const createdAt = resolveVisualBatchCreatedAt(firstEntry);
-
-    batches.push({
-      id: batchId,
-      workspaceId: firstEntry.workspaceId || 'default',
-      config: buildGenerationConfigFromCatalogImage(firstEntry),
-      images: entries.map((entry) =>
-        materializeVisualBatchImage(entry, {
-          batchId,
-          createdAt: resolveVisualBatchCreatedAt(entry),
-        }),
-      ),
-      createdAt,
-    });
-  }
-
-  return batches.sort((a, b) => b.createdAt - a.createdAt || a.id.localeCompare(b.id));
 }

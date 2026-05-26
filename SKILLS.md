@@ -47,16 +47,18 @@ Run `bun run recipes:source:verify` when changing recipe UI or module plumbing. 
 1. Edit `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` first.
 2. Preserve stable `id`, `packId`, `name`, `category`, visual DNA, avoid rules, asset refs, supported tasks, tags, version.
 3. Maintain editorial taxonomy (`packId`, `packName`, `categoryId`, `categoryName`, domain, tags, supported tasks, default image state) so agents can query presets without scanning compatibility packs.
-4. Keep each preset visually distinct from neighboring presets.
-5. Do not collapse motif/avoid constraints into generic prompt text.
-6. Validate the edited preset file and any catalog index generated from it.
+4. Register the preset in both the matching category `presetRefs` and the pack-level `presetRefs`; refs must stay inside the same pack namespace.
+5. Keep each preset visually distinct from neighboring presets.
+6. Do not collapse motif/avoid constraints into generic prompt text.
+7. Validate the edited preset file and any catalog index generated from it.
 
 Run `bun run styles:validate -- --preset=<id>` after editing one granular preset, or `bun run styles:validate -- --pack=<pack_id>` after editing a pack. Use `--coverage` to see taxonomy and default-image coverage by pack, and `--strict-taxonomy` when intentionally requiring persisted taxonomy in the edited scope.
 Run `bun run styles:taxonomy -- --preset=<id>` to backfill editorial taxonomy for one manifest, `--pack=<pack_id>` for one pack, or `--all` only when intentionally regenerating taxonomy across the catalog.
 Run `bun run styles:catalog -- --query=<text> --limit=20` to search the Style Preset Catalog without scanning compatibility packs. Add `--pack=<pack_id>`, `--category=<name>`, `--tag=<tag>`, `--task=<task>`, or `--json` for agent-ready output.
-Run `bun run styles:runtime` after manifest edits that affect the Styles UI. It regenerates the compact runtime data used by `stylesData.ts` and formats the generated file.
+Run `bun run styles:runtime` after manifest edits that affect the Styles UI. It regenerates the compact runtime index, pack indexes, and per-category runtime chunks used by `stylesData.ts`, then formats generated files in Windows-safe batches.
 Run `bun run styles:runtime:check` to verify the generated runtime file is current without rewriting it. Run `bun run styles:verify` before closing broad preset work.
-Run `bun run styles:source:verify` when changing Styles runtime/scripts. It blocks accidental runtime imports from legacy pack YAML; only migration and compatibility-test seams should touch `LEGACY_STYLE_PACKS` or `components/recipes/styles/packs`.
+Run `bun run styles:source:verify` when changing Styles runtime/scripts. It blocks accidental runtime imports from legacy pack YAML, generated runtime check temp files, and presets that exist only in legacy pack YAML; only migration and compatibility-test seams should touch `LEGACY_STYLE_PACKS` or `components/recipes/styles/packs`.
+Run `bun run styles:render:verify` after changing Styles UI grouping, pack runtime data, or virtualized rendering. It reports initial category/card budgets per pack and keeps large packs from mounting every preset at once.
 
 Legacy pack YAML is migration input only. `bun run styles:split` intentionally refuses to overwrite granular manifests. Use `bun run styles:split:legacy` only for an explicit one-time migration from `components/recipes/styles/packs`, then run `bun run styles:verify`. `STYLE_PACKS` is compatibility output, not the authoring surface.
 
@@ -75,8 +77,9 @@ Token savings should come from better compilation, not weaker recipes.
 
 Run `bun run providers:audit` to inspect Recipe Module and provider conformance rows, including source spec size, compiled payload size, prompt estimates, Recipe Provider Directives coverage, and inline-data/secret leak checks. Run `bun run providers:verify` before changing provider compilers or removing legacy Recipe Context metadata.
 Run `bun run providers:preflight` before external adapter work. It reports Provider Secret source names and local runtime endpoint state without exposing secret values. Settings reads the same non-secret contract through `/api/providers/preflight`.
-Use `apps/local-server/src/providers/externalProvider.ts` as the adapter shell for hosted/local providers. It may compile inputs and fail with preflight diagnostics, but only a concrete executor should make a provider executable. Register concrete executors in `apps/local-server/src/providers/externalProviderExecutors.ts`; Google and fal.ai currently have default executors, while ComfyUI remains planned.
+Use `apps/local-server/src/providers/externalProvider.ts` as the adapter shell for hosted/local providers. It may compile inputs and fail with preflight diagnostics, but only a concrete executor should make a provider executable. Register concrete executors in `apps/local-server/src/providers/externalProviderExecutors.ts`; Google, fal.ai, and ComfyUI currently have default executors.
 Use `apps/local-server/src/providers/externalProviderResults.ts` for hosted image result handling before adding provider-specific download/transcript code. Keep retry policy, image URL extraction, mime/ext inference, asset writes, transcript writes, and secret redaction shared unless a provider truly needs a different contract.
+For ComfyUI, use `apps/local-server/src/providers/comfyExecutor.ts`. It requires `COMFY_API_URL` or `COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`. The template must be a Comfy workflow JSON with `{{prompt}}` and optional `{{negativePrompt}}` placeholders. The executor submits `/prompt`, polls `/history/{prompt_id}`, imports the first `/view` image into the Studio Library, and records only compact no-secret diagnostics.
 
 ## Add Settings UI Or Config
 
@@ -97,6 +100,15 @@ Use `apps/local-server/src/providers/externalProviderResults.ts` for hosted imag
 5. Run catalog operations only on managed Local Assets.
 6. Preserve original external folder unless user explicitly asks for cleanup.
 
+## Move Toward Catalog-First UI
+
+1. Treat Image Catalog / Catalog Entries as durable read model.
+2. Keep Visual Batch as a compatibility adapter only while legacy grid surfaces need it.
+3. Put Catalog Entry grouping/filtering in `lib/studioCatalogView.ts`.
+4. Put `GenerationBatch[]` materialization in `lib/studioCatalogVisualBatchAdapter.ts`.
+5. Do not read `catalog-cache`, `GlobalContext`, or `useIndexedDBStorage` from `useCatalog`.
+6. Run `bun run catalog:source:verify` after changing catalog/grid read paths.
+
 ## UI Cleanup
 
 1. Global status and entry points go to Command Center.
@@ -104,3 +116,15 @@ Use `apps/local-server/src/providers/externalProviderResults.ts` for hosted imag
 3. Do not keep hidden diagnostics, activity, provider internals, or animated effects mounted.
 4. Keep toolbar scannable: summaries and commands, not full settings.
 5. Verify rendered UI after substantial visual changes.
+6. Run `bun run ui:chunks:verify` after bundle-splitting work. `bun run build` already runs the same guard after the UI build.
+7. Run `bun run ui:source:verify` after changing demand-mounted UI boundaries. It blocks known heavy imports from returning to startup/source shells; `bun run validate:full` runs it before build.
+
+Current chunk budgets:
+
+- `index-*`: max 500 KB
+- `StylesRecipe-*`: max 80 KB
+- `StylePresetCatalogSearchSurface-*`: max 20 KB
+- `stylePresetCatalogData-*`: max 180 KB
+- `CameraAnglesRecipe-*`: max 40 KB
+- `three.module-*`: max 800 KB, demand-loaded Camera viewport only
+- `jszip.min-*`: max 120 KB, demand-loaded ZIP export only

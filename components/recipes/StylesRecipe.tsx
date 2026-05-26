@@ -41,9 +41,10 @@ import {
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
 import {
-  STYLE_PACKS,
-  STYLE_PRESET_BY_ID,
-  STYLE_PRESET_PACK_ID_BY_ID,
+  STYLE_PACK_SUMMARIES,
+  loadStylePack,
+  loadStylePacks,
+  type StylePack,
   type StylePresetDef,
 } from './stylesData';
 import type { StylePresetCatalogSearchResult } from './stylePresetManifests';
@@ -52,6 +53,8 @@ import Slider from '../ui/Slider';
 import Tooltip from '../Tooltip';
 import { FloatingTooltip } from '../ui/FloatingTooltip';
 import {
+  STYLE_CATEGORY_INITIAL_RENDER_LIMIT,
+  STYLE_GROUP_INITIAL_RENDER_LIMIT,
   estimateStyleGroupPlaceholderHeight,
   getVisibleStylePresets,
 } from './styleGridVirtualization';
@@ -71,8 +74,7 @@ interface StylesRecipeProps {
 }
 
 const FAVORITES_PACK_ID = 'favorites';
-const STYLE_CATEGORY_INITIAL_RENDER_LIMIT = 4;
-const STYLE_GROUP_INITIAL_RENDER_LIMIT = 16;
+const DEFAULT_STYLE_PACK_ID = STYLE_PACK_SUMMARIES[0]?.id ?? 'pack_01';
 const STYLE_GROUP_VIEWPORT_ROOT_MARGIN = '900px 0px';
 
 const StylePresetCatalogSearchSurface = React.lazy(() =>
@@ -451,10 +453,11 @@ const StylePresetCard = React.memo(
             isHoveredRef.current = false;
             onHoverPreviewChange(null);
           }}
-          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${active
-            ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
-            : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
-            }`}
+          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${
+            active
+              ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
+              : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
+          }`}
         >
           <div className="absolute inset-0 overflow-hidden bg-black">{renderResultButton()}</div>
 
@@ -710,7 +713,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const activeImage = config.attachments[0];
   const initializedImageId = useRef<string | null>(null);
 
-  const [currentPackId, setCurrentPackId] = useState('pack_01');
+  const [currentPackId, setCurrentPackId] = useState(DEFAULT_STYLE_PACK_ID);
+  const [loadedStylePacksById, setLoadedStylePacksById] = useState<Record<string, StylePack>>({});
   const [activePresetId, setActivePresetId] = useState<string | null>(null);
   const [copiedStyleId, setCopiedStyleId] = useState<string | null>(null);
   const [hoveredPresetPreview, setHoveredPresetPreview] = useState<StyleCardHoverPreview | null>(
@@ -748,6 +752,41 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   // Style Influence (Default 80%)
   const [styleStrength, setStyleStrength] = useState(0.8);
+
+  const cacheStylePack = useCallback((pack: StylePack) => {
+    setLoadedStylePacksById((current) =>
+      current[pack.id] === pack ? current : { ...current, [pack.id]: pack },
+    );
+  }, []);
+
+  useEffect(() => {
+    if (currentPackId === FAVORITES_PACK_ID || loadedStylePacksById[currentPackId]) return;
+
+    let cancelled = false;
+    void loadStylePack(currentPackId).then((pack) => {
+      if (!cancelled && pack) cacheStylePack(pack);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [cacheStylePack, currentPackId, loadedStylePacksById]);
+
+  useEffect(() => {
+    if (currentPackId !== FAVORITES_PACK_ID || favorites.length === 0) return;
+
+    let cancelled = false;
+    void loadStylePacks().then((packs) => {
+      if (cancelled) return;
+      setLoadedStylePacksById((current) => {
+        const next = { ...current };
+        for (const pack of packs) next[pack.id] = pack;
+        return next;
+      });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [currentPackId, favorites.length]);
 
   const toggleFavorite = React.useCallback(
     (presetId: string) => {
@@ -810,29 +849,45 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         name: 'Your Favorites',
         description: 'A curated collection of your most used styles.',
         presets: [], // Placeholder, populated in processedData
-      };
+      } satisfies StylePack;
     }
-    return STYLE_PACKS.find((p) => p.id === currentPackId) || STYLE_PACKS[0];
-  }, [currentPackId]);
+    const summary =
+      STYLE_PACK_SUMMARIES.find((pack) => pack.id === currentPackId) ?? STYLE_PACK_SUMMARIES[0];
+    return (
+      loadedStylePacksById[currentPackId] ??
+      ({
+        id: summary?.id ?? DEFAULT_STYLE_PACK_ID,
+        name: summary?.name ?? 'Styles',
+        description: summary?.description ?? 'Loading style presets.',
+        presets: [],
+      } satisfies StylePack)
+    );
+  }, [currentPackId, loadedStylePacksById]);
 
   const activeTheme = PACK_THEMES[currentPackId] || PACK_THEMES['pack_01'];
   const resolvedHoveredPresetPreview = hoveredPresetPreview ?? lastHoveredPresetPreview;
 
-  const favoritePresets = useMemo(
-    () =>
-      favorites.flatMap((presetId) => {
-        const preset = STYLE_PRESET_BY_ID.get(presetId);
-        return preset ? [preset] : [];
-      }),
-    [favorites],
-  );
+  const favoritePresets = useMemo(() => {
+    const presetById = new Map<string, StylePresetDef>();
+    for (const pack of Object.values(loadedStylePacksById)) {
+      for (const preset of pack.presets) presetById.set(preset.id, preset);
+    }
+    return favorites.flatMap((presetId) => {
+      const preset = presetById.get(presetId);
+      return preset ? [preset] : [];
+    });
+  }, [favorites, loadedStylePacksById]);
 
   const getPackIdForPreset = React.useCallback(
     (preset: StylePresetDef) => {
       if (currentPackId !== FAVORITES_PACK_ID) return currentPackId;
-      return STYLE_PRESET_PACK_ID_BY_ID.get(preset.id) || activePack.id;
+      return (
+        Object.values(loadedStylePacksById).find((pack) =>
+          pack.presets.some((candidate) => candidate.id === preset.id),
+        )?.id || activePack.id
+      );
     },
-    [activePack.id, currentPackId],
+    [activePack.id, currentPackId, loadedStylePacksById],
   );
 
   const presetVisualStateById = useMemo(() => {
@@ -843,7 +898,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
     visiblePresets.forEach((preset) => {
       const presetPackId = getPackIdForPreset(preset);
-      const presetPack = STYLE_PACKS.find((pack) => pack.id === presetPackId) ?? activePack;
+      const presetPack = loadedStylePacksById[presetPackId] ?? activePack;
       const resultImages = images
         .filter((img) => hasStylePresetIdentity(img.config, preset.id))
         .sort((a, b) => b.createdAt - a.createdAt);
@@ -979,12 +1034,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     0,
   );
 
-  const handleApplyStyle = async (preset: StylePresetDef) => {
+  const handleApplyStyle = async (preset: StylePresetDef, presetPackIdOverride?: string) => {
     if (isGenerating) return;
 
     setActivePresetId(preset.id);
 
-    const presetPackId = getPackIdForPreset(preset);
+    const presetPackId = presetPackIdOverride ?? getPackIdForPreset(preset);
     const categoryBaseUrl = preset.category
       ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
       : undefined;
@@ -998,7 +1053,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const effectiveImage = activeImage || fallbackAttachment;
     const fidelity = effectiveImage?.strength || 0.5;
     const intensity = styleStrength;
-    const isPhotoPackFallback = ['pack_09', 'pack_10', 'pack_11'].includes(currentPackId);
+    const isPhotoPackFallback = ['pack_09', 'pack_10', 'pack_11'].includes(presetPackId);
     const subjectTreatment = describeStyleValue(
       preset.style.subject_treatment ?? preset.style.form_and_line,
     );
@@ -1123,14 +1178,16 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     setIsCatalogSearchOpen(false);
   };
 
-  const handleApplyCatalogPreset = (result: StylePresetCatalogSearchResult) => {
-    const preset = STYLE_PRESET_BY_ID.get(result.id);
+  const handleApplyCatalogPreset = async (result: StylePresetCatalogSearchResult) => {
+    const loadedPack = loadedStylePacksById[result.packId] ?? (await loadStylePack(result.packId));
+    if (loadedPack) cacheStylePack(loadedPack);
+    const preset = loadedPack?.presets.find((candidate) => candidate.id === result.id);
     if (!preset) return;
 
     setCurrentPackId(result.packId);
     setActivePresetId(result.id);
     setIsCatalogSearchOpen(false);
-    void handleApplyStyle(preset);
+    void handleApplyStyle(preset, result.packId);
   };
 
   const handleCopyStylePrompt = (e: React.MouseEvent, preset: StylePresetDef) => {
@@ -1394,10 +1451,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             }}
             className={`
                   group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                    ${currentPackId === FAVORITES_PACK_ID
-                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-              }
+                    ${
+                      currentPackId === FAVORITES_PACK_ID
+                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+                    }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -1409,7 +1467,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           </button>
 
           {/* Standard Packs */}
-          {STYLE_PACKS.map((pack) => {
+          {STYLE_PACK_SUMMARIES.map((pack) => {
             const isActive = currentPackId === pack.id;
             const theme = PACK_THEMES[pack.id] || PACK_THEMES['pack_01'];
 
@@ -1424,10 +1482,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 }}
                 className={`
                       group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                            ${isActive
-                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                  }
+                            ${
+                              isActive
+                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                            }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>

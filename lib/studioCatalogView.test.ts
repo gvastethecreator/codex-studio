@@ -1,10 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 import type { CatalogImage } from '../packages/shared/src';
-import {
-  createCatalogView,
-  materializeVisualBatchesFromCatalog,
-  selectCatalogEntries,
-} from './studioCatalogView';
+import { createCatalogView, selectCatalogEntries } from './studioCatalogView';
+import { materializeVisualBatchesFromCatalog } from './studioCatalogVisualBatchAdapter';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'image-1';

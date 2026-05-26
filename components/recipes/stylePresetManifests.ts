@@ -271,6 +271,21 @@ export function validateStyleManifestGraph(
       errors.push(`Style pack ${pack.id} has empty name`);
     }
 
+    const packPresetRefs = new Set<string>();
+    for (const ref of pack.presetRefs) {
+      if (!isNonEmptyString(ref)) {
+        errors.push(`Pack ${pack.id} has empty preset ref`);
+        continue;
+      }
+      if (packPresetRefs.has(ref)) {
+        errors.push(`Pack ${pack.id} references preset more than once: ${ref}`);
+      }
+      if (!ref.startsWith(`${pack.id}/`)) {
+        errors.push(`Pack ${pack.id} references preset outside pack namespace: ${ref}`);
+      }
+      packPresetRefs.add(ref);
+    }
+
     const categoryRefs = new Set<string>();
     const seenCategoryIds = new Set<string>();
     for (const category of pack.categories) {
@@ -282,8 +297,22 @@ export function validateStyleManifestGraph(
         errors.push(`Pack ${pack.id} category ${category.id} has empty name`);
       }
       for (const ref of category.presetRefs) {
+        if (!isNonEmptyString(ref)) {
+          errors.push(`Pack ${pack.id} category ${category.id} has empty preset ref`);
+          continue;
+        }
         if (categoryRefs.has(ref)) {
           errors.push(`Pack ${pack.id} references preset more than once in categories: ${ref}`);
+        }
+        if (!packPresetRefs.has(ref)) {
+          errors.push(
+            `Pack ${pack.id} category ${category.id} references preset absent from pack presetRefs: ${ref}`,
+          );
+        }
+        if (!ref.startsWith(`${pack.id}/`)) {
+          errors.push(
+            `Pack ${pack.id} category ${category.id} references preset outside pack namespace: ${ref}`,
+          );
         }
         categoryRefs.add(ref);
       }

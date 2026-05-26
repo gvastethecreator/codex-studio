@@ -1,11 +1,5 @@
-import JSZip from 'jszip';
-import { saveAs } from 'file-saver';
-import type { GenerationBatch, GeneratedImageWithConfig } from '../types';
+import type { GeneratedImageWithConfig } from '../types';
 import { runtimeLogger } from './runtimeLogger';
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === 'object' && value !== null;
-}
 
 export const downloadImage = (src: string, filename: string) => {
   const link = document.createElement('a');
@@ -56,6 +50,10 @@ export const downloadMultipleImagesAsZip = async (
   images: GeneratedImageWithConfig[],
   zipFilename: string = 'assets.zip',
 ) => {
+  const [{ default: JSZip }, { saveAs }] = await Promise.all([
+    import('jszip'),
+    import('file-saver'),
+  ]);
   const zip = new JSZip();
 
   const promises = images.map(async (img, index) => {
@@ -93,30 +91,6 @@ export const exportToJson = <T>(data: T, filename: string) => {
   link.click();
   document.body.removeChild(link);
   URL.revokeObjectURL(url);
-};
-
-/**
- * Validate the persisted vault payload before replacing the current batch cache.
- */
-export const validateVault = (data: unknown): data is GenerationBatch[] => {
-  if (!Array.isArray(data)) return false;
-
-  return data.every((batch) => {
-    if (!isRecord(batch)) return false;
-    if (typeof batch.id !== 'string') return false;
-    if (typeof batch.createdAt !== 'number') return false;
-    if (!isRecord(batch.config)) return false;
-    if (!Array.isArray(batch.images)) return false;
-
-    return batch.images.every((img) => {
-      if (!isRecord(img)) return false;
-      if (typeof img.id !== 'string') return false;
-      if (typeof img.src !== 'string') return false;
-      if (typeof img.batchId !== 'string') return false;
-      if (typeof img.createdAt !== 'number') return false;
-      return true;
-    });
-  });
 };
 
 /**

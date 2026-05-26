@@ -87,7 +87,7 @@ export function useStudioActionConfirmations({
         {
           title: 'Delete workspace',
           description:
-            'This removes the workspace from the active Studio and clears its current visual batches from the canvas.',
+            'This removes the workspace from the active Studio and clears its current catalog images from the canvas.',
           confirmLabel: 'Delete workspace',
           tone: 'danger',
           details: [
@@ -103,16 +103,16 @@ export function useStudioActionConfirmations({
   );
 
   const requestRestoreAllTrash = useCallback(
-    (batchCount: number) => {
+    (groupCount: number) => {
       requestConfirmation(
         {
           title: 'Restore archived images',
           description:
-            'This brings every archived batch back into the active Studio workspaces.',
+            'This brings every archived catalog image group back into the active Studio workspaces.',
           confirmLabel: 'Restore all',
           tone: 'accent',
           details: [
-            `${batchCount} archived batch${batchCount === 1 ? '' : 'es'} will return to active workspaces.`,
+            `${groupCount} archived image group${groupCount === 1 ? '' : 's'} will return to active workspaces.`,
             'Existing workspaces will be recreated automatically if needed.',
           ],
         },
@@ -123,16 +123,16 @@ export function useStudioActionConfirmations({
   );
 
   const requestEmptyTrash = useCallback(
-    (batchCount: number) => {
+    (groupCount: number) => {
       requestConfirmation(
         {
           title: 'Permanently empty Archived Images',
           description:
-            'This permanently removes archived batches from the in-app archive and they will no longer be recoverable from the Studio UI.',
+            'This permanently removes archived catalog image groups from the in-app archive and they will no longer be recoverable from the Studio UI.',
           confirmLabel: 'Empty bin',
           tone: 'danger',
           details: [
-            `${batchCount} archived batch${batchCount === 1 ? '' : 'es'} will be purged.`,
+            `${groupCount} archived image group${groupCount === 1 ? '' : 's'} will be purged.`,
             'This action cannot be undone from the Studio interface.',
           ],
         },

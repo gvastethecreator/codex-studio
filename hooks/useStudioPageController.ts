@@ -15,7 +15,7 @@ export interface BuildStudioPageControllerArgs {
   isModalOpen: boolean;
   workspaces: LeftDebugPanelProps['workspaces'];
   mergedLogs: LeftDebugPanelProps['logs'];
-  batchesCount: LeftDebugPanelProps['batchesCount'];
+  catalogVisualGroupCount: LeftDebugPanelProps['visualGroupsCount'];
   allImages: StudioGridSurfaceProps['allImages'];
   imagesWithConfig: StudioGridSurfaceProps['imagesWithConfig'];
   selectedImageIds: StudioGridSurfaceProps['selectedImageIds'];
@@ -40,6 +40,7 @@ export interface BuildStudioPageControllerArgs {
   isQueueOpen: StudioOperationsRailProps['isQueueOpen'];
   setIsQueueOpen: StudioOperationsRailProps['setIsQueueOpen'];
   jobs: StudioOperationsRailProps['jobs'];
+  queueResults: StudioOperationsRailProps['queueResults'];
   studioJobs: StudioOperationsRailProps['studioJobs'];
   selectedStudioJobId: StudioOperationsRailProps['selectedStudioJobId'];
   retry: StudioOperationsRailProps['retry'];
@@ -48,7 +49,7 @@ export interface BuildStudioPageControllerArgs {
   removeJob: StudioOperationsRailProps['removeJob'];
   clearCompleted: StudioOperationsRailProps['clearCompleted'];
   isResting: StudioOperationsRailProps['isResting'];
-  exportBatches: StudioOperationsRailProps['exportBatches'];
+  exportWorkspaceSnapshot: StudioOperationsRailProps['exportWorkspaceSnapshot'];
   handleImportVault: StudioOperationsRailProps['handleImportVault'];
   isBackgroundEnabled: StudioOperationsRailProps['isBackgroundEnabled'];
   setBackgroundEnabled: StudioOperationsRailProps['setBackgroundEnabled'];
@@ -59,7 +60,9 @@ export interface BuildStudioPageControllerArgs {
   isResettingStudio: StudioOperationsRailProps['isResettingStudio'];
 }
 
-export function buildStudioPageController(args: BuildStudioPageControllerArgs): StudioPageController {
+export function buildStudioPageController(
+  args: BuildStudioPageControllerArgs,
+): StudioPageController {
   const hasProcessingJobs = args.jobs.some((job) => job.status === 'processing');
 
   return {
@@ -69,7 +72,7 @@ export function buildStudioPageController(args: BuildStudioPageControllerArgs): 
         workspaces: args.workspaces,
         logs: args.mergedLogs,
         studioJobs: args.studioJobs,
-        batchesCount: args.batchesCount,
+        visualGroupsCount: args.catalogVisualGroupCount,
         imagesCount: args.allImages.length,
         onInspectJob: args.onInspectJob,
         selectedJobId: args.selectedStudioJobId,
@@ -105,6 +108,7 @@ export function buildStudioPageController(args: BuildStudioPageControllerArgs): 
       isQueueOpen: args.isQueueOpen,
       setIsQueueOpen: args.setIsQueueOpen,
       jobs: args.jobs,
+      queueResults: args.queueResults,
       studioJobs: args.studioJobs,
       selectedStudioJobId: args.selectedStudioJobId,
       retry: args.retry,
@@ -113,7 +117,7 @@ export function buildStudioPageController(args: BuildStudioPageControllerArgs): 
       removeJob: args.removeJob,
       clearCompleted: args.clearCompleted,
       isResting: args.isResting,
-      exportBatches: args.exportBatches,
+      exportWorkspaceSnapshot: args.exportWorkspaceSnapshot,
       handleImportVault: args.handleImportVault,
       isBackgroundEnabled: args.isBackgroundEnabled,
       setBackgroundEnabled: args.setBackgroundEnabled,

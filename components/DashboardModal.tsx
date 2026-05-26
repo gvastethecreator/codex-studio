@@ -10,31 +10,29 @@ import {
   Layers,
   HardDrive,
 } from 'lucide-react';
-import type { GenerationBatch, Workspace } from '../types';
+import type { Workspace } from '../types';
 
 interface DashboardModalProps {
   isOpen: boolean;
   onClose: () => void;
-  batches: GenerationBatch[];
+  imagesCount: number;
   workspaces: Workspace[];
   onImportVault: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onExportVault: () => void;
+  onExportWorkspaceSnapshot: () => void;
   onDeepScan: () => void;
 }
 
 export const DashboardModal: React.FC<DashboardModalProps> = ({
   isOpen,
   onClose,
-  batches,
+  imagesCount,
   workspaces,
   onImportVault,
-  onExportVault,
+  onExportWorkspaceSnapshot,
   onDeepScan,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   if (!isOpen) return null;
-
-  const totalImages = batches.reduce((acc, b) => acc + b.images.length, 0);
 
   return (
     <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/80 backdrop-blur-sm">
@@ -63,7 +61,9 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
               <div className="absolute inset-0 bg-linear-to-tr from-accent-500/20 to-transparent" />
             </div>
             <div>
-              <h3 className="text-xl font-black text-white uppercase tracking-tight">Local Session</h3>
+              <h3 className="text-xl font-black text-white uppercase tracking-tight">
+                Local Session
+              </h3>
               <div className="flex items-center gap-2 mt-1">
                 <span className="px-2 py-0.5 rounded-md bg-accent-500/10 text-accent-400 text-[10px] font-black uppercase tracking-widest">
                   Local Codex
@@ -91,7 +91,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
                   Images
                 </span>
               </div>
-              <p className="text-lg font-mono font-black text-white">{totalImages}</p>
+              <p className="text-lg font-mono font-black text-white">{imagesCount}</p>
             </div>
             <div className="p-4 rounded-2xl bg-white/5 border border-white/5 flex flex-col gap-1">
               <div className="flex items-center gap-2">
@@ -110,7 +110,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             </h4>
             <div className="grid grid-cols-2 gap-3">
               <button
-                onClick={onExportVault}
+                onClick={onExportWorkspaceSnapshot}
                 className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
               >
                 <Download

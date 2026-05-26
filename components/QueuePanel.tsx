@@ -15,11 +15,13 @@ import {
 } from "lucide-react";
 
 import { cn } from "../lib/utils";
+import type { StudioQueueResultPreview } from "../lib/studioQueueResults";
 import type { Job as StudioJob } from "../packages/shared/src";
 import type { QueueJob } from "../types";
 
 interface QueuePanelProps {
     jobs: QueueJob[];
+    results?: StudioQueueResultPreview[];
     onRetry: (id: string) => void;
     onCancel: (id: string) => void;
     onRemove: (id: string) => void;
@@ -107,6 +109,7 @@ const StatItem = ({
 export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     ({
         jobs,
+        results = [],
         onRetry,
         onCancel,
         onRemove,
@@ -120,6 +123,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     }) => {
         const [isLocalQueueOpen, setIsLocalQueueOpen] = useState(true);
         const [isServerQueueOpen, setIsServerQueueOpen] = useState(true);
+        const hasRecentResults = results.length > 0;
 
         const pendingCount = jobs.filter((job) => job.status === "pending").length;
         const processingCount = jobs.filter((job) => job.status === "processing").length;
@@ -188,6 +192,59 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                 </AnimatePresence>
 
                 <div className="custom-scrollbar flex-1 space-y-2 overflow-y-auto p-2">
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-2">
+                        <div className="mb-2 flex items-center justify-between px-1 py-1">
+                            <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
+                                Recent Results
+                            </span>
+                            <span className="text-[9px] font-bold text-emerald-400">{results.length}</span>
+                        </div>
+
+                        {hasRecentResults ? (
+                            <div className="grid grid-cols-2 gap-2">
+                                {results.map((result) => (
+                                    <div
+                                        key={result.id}
+                                        className={cn(
+                                            "rounded-lg border p-2 transition-colors",
+                                            selectedJobId && result.jobId === selectedJobId
+                                                ? "border-accent-500/30 bg-accent-500/10"
+                                                : "border-white/5 bg-black/20",
+                                        )}
+                                    >
+                                        <div className="aspect-square overflow-hidden rounded-lg border border-white/10 bg-black/40">
+                                            <img
+                                                src={result.src}
+                                                alt={result.prompt || 'Generated result'}
+                                                className="h-full w-full object-cover"
+                                                loading="lazy"
+                                                decoding="async"
+                                            />
+                                        </div>
+                                        <div className="mt-2 space-y-1">
+                                            <p className="line-clamp-2 text-[10px] leading-snug text-white/75">
+                                                {result.prompt || 'Generated result'}
+                                            </p>
+                                            <div className="flex flex-wrap items-center gap-2 text-[9px] text-zinc-500">
+                                                {result.jobId ? <span>#{result.jobId.slice(0, 8)}</span> : null}
+                                                <span>
+                                                    {new Date(result.createdAt).toLocaleTimeString([], {
+                                                        hour: '2-digit',
+                                                        minute: '2-digit',
+                                                    })}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <div className="rounded-lg border border-dashed border-white/5 bg-black/20 px-3 py-3 text-[10px] text-zinc-600">
+                                Completed images for the active workspace will appear here.
+                            </div>
+                        )}
+                    </div>
+
                     <div className="rounded-xl border border-white/10 bg-white/5 p-2">
                         <button
                             onClick={() => setIsServerQueueOpen((value) => !value)}
@@ -268,7 +325,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                                 >
                                     <div className="space-y-2">
                                         <AnimatePresence initial={false}>
-                                            {jobs.length === 0 && serverJobs.length === 0 ? (
+                                            {jobs.length === 0 && serverJobs.length === 0 && !hasRecentResults ? (
                                                 <motion.div
                                                     initial={{ opacity: 0 }}
                                                     animate={{ opacity: 1 }}

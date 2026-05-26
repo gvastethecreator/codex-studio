@@ -1,9 +1,12 @@
 import { useMemo } from 'react';
-import type { GenerationBatch, GeneratedImageWithConfig } from '../types';
+import type { StudioCatalogView } from '../lib/studioCatalogView';
+import { materializeCatalogEntryImageWithConfig } from '../lib/studioCatalogVisualBatchAdapter';
+import type { GeneratedImage, GenerationBatch, GeneratedImageWithConfig } from '../types';
 import { useImageManager } from './useImageManager';
 
 interface UseStudioGalleryProps {
-  batches: GenerationBatch[];
+  catalogView?: StudioCatalogView;
+  legacyVisualBatches?: GenerationBatch[];
   activeWorkspaceId: string;
   deleteImage: (imageId: string) => void;
   deleteImages: (imageIds: string[]) => void;
@@ -15,12 +18,35 @@ interface UseStudioGalleryProps {
   onRequestClearWorkspace?: (workspaceId: string, imageCount: number) => void;
 }
 
+export function buildStudioGalleryImages({
+  catalogView,
+  allImages,
+  legacyVisualBatches = [],
+}: {
+  catalogView?: StudioCatalogView;
+  allImages: GeneratedImage[];
+  legacyVisualBatches?: GenerationBatch[];
+}): GeneratedImageWithConfig[] {
+  const images = catalogView
+    ? catalogView.entries.map(materializeCatalogEntryImageWithConfig)
+    : allImages.map((image) => {
+        const batch = legacyVisualBatches.find((entry) => entry.id === image.batchId);
+        return { ...image, config: batch?.config } as GeneratedImageWithConfig;
+      });
+
+  return images.sort((left, right) => {
+    if (left.isFavorite === right.isFavorite) return right.createdAt - left.createdAt;
+    return left.isFavorite ? -1 : 1;
+  });
+}
+
 /**
- * Build the Studio's visual image grid from the current Visual Batches and own
- * selection/archive interactions behind one module.
+ * Build the Studio's visual image grid from Catalog Entries first, with legacy
+ * Visual Batches left only as fallback compatibility input.
  */
 export function useStudioGallery({
-  batches,
+  catalogView,
+  legacyVisualBatches = [],
   activeWorkspaceId,
   deleteImage,
   deleteImages,
@@ -31,13 +57,21 @@ export function useStudioGallery({
   closeModal,
   onRequestClearWorkspace,
 }: UseStudioGalleryProps) {
-  const workspaceBatches = useMemo(() => {
-    return batches.filter(
+  const workspaceLegacyVisualBatches = useMemo(() => {
+    return legacyVisualBatches.filter(
       (batch) =>
         batch.workspaceId === activeWorkspaceId ||
         (!batch.workspaceId && activeWorkspaceId === 'default'),
     );
-  }, [activeWorkspaceId, batches]);
+  }, [activeWorkspaceId, legacyVisualBatches]);
+
+  const catalogImagesWithConfig = useMemo(() => {
+    if (!catalogView) return null;
+    return buildStudioGalleryImages({
+      catalogView,
+      allImages: [],
+    });
+  }, [catalogView]);
 
   const {
     allImages,
@@ -50,7 +84,8 @@ export function useStudioGallery({
     handleToggleFavorite,
     handleClearWorkspace,
   } = useImageManager({
-    batches: workspaceBatches,
+    legacyVisualBatches: workspaceLegacyVisualBatches,
+    images: catalogImagesWithConfig ?? undefined,
     deleteImage,
     deleteImages,
     toggleImageFavorite,
@@ -62,16 +97,15 @@ export function useStudioGallery({
   });
 
   const imagesWithConfig = useMemo(() => {
-    return allImages
-      .map((image) => {
-        const batch = batches.find((entry) => entry.id === image.batchId);
-        return { ...image, config: batch?.config } as GeneratedImageWithConfig;
-      })
-      .sort((left, right) => {
-        if (left.isFavorite === right.isFavorite) return right.createdAt - left.createdAt;
-        return left.isFavorite ? -1 : 1;
-      });
-  }, [allImages, batches]);
+    if (catalogImagesWithConfig) {
+      return catalogImagesWithConfig;
+    }
+
+    return buildStudioGalleryImages({
+      allImages,
+      legacyVisualBatches,
+    });
+  }, [allImages, catalogImagesWithConfig, legacyVisualBatches]);
 
   return {
     allImages,

@@ -14,6 +14,7 @@ import { embedMetadata } from './metadataEmbedder';
 import { parsePromptTransport } from '../../../packages/shared/src';
 import type { Job } from '../../../packages/shared/src';
 import type { CodexTurn } from './codex';
+import { resolveJobCatalogContext } from './workerCatalogContext';
 import { resolveWorkerRuntimeTarget } from './workerRouting';
 
 export interface WorkerStatus {
@@ -234,6 +235,7 @@ export function createWorkerController({
     await waitWithAbort(500, signal);
     throwIfAborted(signal);
     const asset = createDryRunAsset(job);
+    const catalogContext = resolveJobCatalogContext(job);
     const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
     const catalogImage = registerCatalogImageFn({
       filePath: asset.filePath,
@@ -247,7 +249,8 @@ export function createWorkerController({
       mimeType: asset.mimeType,
       fileSizeBytes: statSync(asset.filePath).size,
       jobId: asset.jobId,
-      workspaceId: asset.projectId,
+      workspaceId: catalogContext.workspaceId,
+      batchId: catalogContext.batchId,
       recipeId: parsedPrompt.recipeId,
       generationConfig: buildCatalogGenerationConfig(job.finalPromptUsed),
     });
@@ -268,6 +271,7 @@ export function createWorkerController({
     addJobEventFn(job.id, 'codex.started', 'Codex image generation started.');
     logger('info', 'worker', 'Codex imagegen job started.', job.id);
     const turnRecordId = upsertCodexTurnFn({ jobId: job.id, status: 'running' });
+    const catalogContext = resolveJobCatalogContext(job);
     const executionOptions = resolveExecutionOptions(job.execution);
     const result = await codexGenerationProvider.run({
       id: job.id,
@@ -342,7 +346,8 @@ export function createWorkerController({
       mimeType: asset.mimeType,
       fileSizeBytes: statSync(asset.filePath).size,
       jobId: asset.jobId,
-      workspaceId: asset.projectId,
+      workspaceId: catalogContext.workspaceId,
+      batchId: catalogContext.batchId,
       recipeId: parsedPrompt.recipeId,
       generationConfig: buildCatalogGenerationConfigFromJob(job),
     });
@@ -353,7 +358,7 @@ export function createWorkerController({
       imageSize: parsedPrompt.imageSize,
       model: executionOptions.model,
       recipe: parsedPrompt.recipeId,
-      batchId: job.id,
+      batchId: catalogContext.batchId ?? job.id,
       generatedAt: new Date().toISOString(),
       studioVersion: '0.0.0',
       libraryId: catalogImage.libraryId,
@@ -384,6 +389,7 @@ export function createWorkerController({
     const providerId = job.providerId ?? job.sourceSpec?.providerId ?? 'unknown';
     addJobEventFn(job.id, 'external.started', `External provider job started: ${providerId}.`);
     logger('info', 'worker', `External provider job started: ${providerId}.`, job.id);
+    const catalogContext = resolveJobCatalogContext(job);
 
     const result = await externalGenerationProvider.run({
       id: job.id,
@@ -453,7 +459,8 @@ export function createWorkerController({
       mimeType: asset.mimeType,
       fileSizeBytes: statSync(asset.filePath).size,
       jobId: asset.jobId,
-      workspaceId: asset.projectId,
+      workspaceId: catalogContext.workspaceId,
+      batchId: catalogContext.batchId,
       recipeId: parsedPrompt.recipeId,
       generationConfig: buildCatalogGenerationConfigFromJob(job),
     });

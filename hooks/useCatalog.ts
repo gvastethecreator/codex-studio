@@ -1,10 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { CatalogImage, CatalogPage } from '../packages/shared/src';
-import {
-  createCatalogView,
-  materializeVisualBatchesFromCatalog,
-  type StudioCatalogView,
-} from '../lib/studioCatalogView';
+import { createCatalogView, type StudioCatalogView } from '../lib/studioCatalogView';
 import { queryCatalog, type CatalogQueryParams } from '../services/localStudioService';
 
 export interface UseCatalogOptions extends CatalogQueryParams {
@@ -15,7 +11,6 @@ export interface UseCatalogOptions extends CatalogQueryParams {
 export interface UseCatalogResult {
   entries: CatalogImage[];
   view: StudioCatalogView;
-  visualBatches: ReturnType<typeof materializeVisualBatchesFromCatalog>;
   total: number;
   hasMore: boolean;
   isLoading: boolean;
@@ -86,12 +81,10 @@ export function useCatalog({
   }, [refresh]);
 
   const view = useMemo(() => createCatalogView(entries), [entries]);
-  const visualBatches = useMemo(() => materializeVisualBatchesFromCatalog(view), [view]);
 
   return {
     entries,
     view,
-    visualBatches,
     total,
     hasMore,
     isLoading,

@@ -1,11 +1,12 @@
-import { scan } from 'react-scan';
 import ReactDOM from 'react-dom/client';
 import React from 'react';
 import App from './App';
 
-scan({
-  enabled: import.meta.env.DEV,
-});
+if (import.meta.env.DEV) {
+  void import('react-scan').then(({ scan }) => {
+    scan({ enabled: true });
+  });
+}
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {

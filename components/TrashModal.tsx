@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Trash2, RotateCcw, X, Trash, AlertCircle } from 'lucide-react';
-import type { GenerationBatch } from '../types';
+import type { ArchivedImageGroup } from '../lib/studioCatalogTrashView';
 
 interface TrashModalProps {
   isOpen: boolean;
   onClose: () => void;
-  trash: GenerationBatch[];
+  trash: ArchivedImageGroup[];
   onRestore: (batchId: string) => void;
   onRestoreAll: () => void;
   onEmpty: () => void;
@@ -50,7 +50,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                   Recycle Bin
                 </h2>
                 <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-wider">
-                  {trash.length} batches archived • Auto-purges after 100 items
+                  {trash.length} image groups archived • Auto-purges after 100 items
                 </p>
               </div>
             </div>
@@ -94,20 +94,20 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                   Bin is Empty
                 </h3>
                 <p className="text-zinc-600 text-xs max-w-[240px]">
-                  Deleted generations and evicted batches will appear here for recovery.
+                  Deleted generations and archived image groups will appear here for recovery.
                 </p>
               </div>
             ) : (
               <div className="grid grid-cols-1 gap-4">
-                {trash.map((batch) => (
+                {trash.map((group) => (
                   <div
-                    key={batch.id}
+                    key={group.id}
                     className="group bg-white/5 border border-white/5 rounded-2xl p-4 flex items-center gap-4 hover:border-white/10 transition-all"
                   >
                     <div className="w-20 h-20 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/5">
-                      {batch.images[0] && (
+                      {group.thumbnail && (
                         <img
-                          src={batch.images[0].thumbnail || batch.images[0].src}
+                          src={group.thumbnail}
                           className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity"
                           alt=""
                         />
@@ -117,29 +117,29 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
                         <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">
-                          {new Date(batch.createdAt).toLocaleString()}
+                          {new Date(group.createdAt).toLocaleString()}
                         </span>
                         <span className="w-1 h-1 rounded-full bg-zinc-800" />
                         <span className="text-[10px] font-bold text-accent-500 uppercase tracking-widest">
-                          {batch.workspaceId || 'Default'}
+                          {group.workspaceId || 'Default'}
                         </span>
                       </div>
                       <h4 className="text-xs text-zinc-300 font-medium line-clamp-1 mb-2">
-                        {batch.config.prompt}
+                        {group.prompt}
                       </h4>
                       <div className="flex items-center gap-3">
                         <div className="flex items-center gap-1 text-[10px] text-zinc-500 font-bold uppercase">
                           <span className="w-1.5 h-1.5 rounded-full bg-zinc-700" />
-                          {batch.images.length} Images
+                          {group.imageCount} Images
                         </div>
                         <div className="text-[10px] text-zinc-500 font-bold uppercase">
-                          {batch.config.model}
+                          {group.model}
                         </div>
                       </div>
                     </div>
 
                     <button
-                      onClick={() => onRestore(batch.id)}
+                      onClick={() => onRestore(group.id)}
                       className="p-3 rounded-xl bg-accent-500/10 hover:bg-accent-500 text-accent-400 hover:text-white transition-all active:scale-90 cursor-pointer"
                       title="Restore Batch"
                     >

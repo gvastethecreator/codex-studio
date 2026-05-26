@@ -19,7 +19,7 @@ export const StudioWorkspaceOverlays: React.FC<StudioWorkspaceOverlaysProps> = (
   isLimitModalOpen,
   handleDismissLimitModal,
   handleDownloadAndClear,
-  batchCount,
+  visualGroupCount,
 }) => {
   return (
     <>
@@ -41,7 +41,7 @@ export const StudioWorkspaceOverlays: React.FC<StudioWorkspaceOverlaysProps> = (
             isOpen={isLimitModalOpen}
             onClose={handleDismissLimitModal}
             onDownloadAndClear={() => void handleDownloadAndClear()}
-            batchCount={batchCount}
+            visualGroupCount={visualGroupCount}
           />
         </Suspense>
       )}

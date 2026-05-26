@@ -1,15 +1,31 @@
-import { GENERATED_STYLE_PACKS } from './styleRuntimeData.generated';
+import {
+  GENERATED_STYLE_PACK_SUMMARIES,
+  loadGeneratedStylePack,
+  loadGeneratedStylePacks,
+} from './styleRuntimeData.generated';
 import type { StylePack, StylePresetDef } from './styles/types';
 
-export const STYLE_PACKS: StylePack[] = GENERATED_STYLE_PACKS;
+export const STYLE_PACK_SUMMARIES = GENERATED_STYLE_PACK_SUMMARIES;
 
-export const STYLE_PRESET_BY_ID = new Map<string, StylePresetDef>(
-  STYLE_PACKS.flatMap((pack) => pack.presets.map((preset) => [preset.id, preset])),
-);
+export const loadStylePack = loadGeneratedStylePack;
+export const loadStylePacks = loadGeneratedStylePacks;
 
-export const STYLE_PRESET_PACK_ID_BY_ID = new Map<string, string>(
-  STYLE_PACKS.flatMap((pack) => pack.presets.map((preset) => [preset.id, pack.id])),
-);
+export async function loadStylePresetIndex(): Promise<{
+  packs: StylePack[];
+  presetById: Map<string, StylePresetDef>;
+  presetPackIdById: Map<string, string>;
+}> {
+  const packs = await loadStylePacks();
+  return {
+    packs,
+    presetById: new Map(
+      packs.flatMap((pack) => pack.presets.map((preset) => [preset.id, preset] as const)),
+    ),
+    presetPackIdById: new Map(
+      packs.flatMap((pack) => pack.presets.map((preset) => [preset.id, pack.id] as const)),
+    ),
+  };
+}
 
 export * from './styles/types';
 export * from './stylePresetManifests';

@@ -25,10 +25,33 @@ describe('providerCapabilities', () => {
         expect.objectContaining({
           providerId: 'comfy',
           status: 'not_configured',
+          canExecute: false,
         }),
       ]),
     );
     expect(JSON.stringify(report)).not.toContain('secret-google-key');
+  });
+
+  it('marks Comfy executable only when endpoint and workflow template are configured', () => {
+    const report = readProviderCapabilities(
+      { defaultProviderId: 'comfy' },
+      {
+        COMFY_API_URL: 'http://127.0.0.1:8188',
+        COMFY_WORKFLOW_TEMPLATE_PATH: 'D:/comfy/workflows/studio.json',
+      },
+    );
+
+    expect(report.providers).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          providerId: 'comfy',
+          isDefault: true,
+          status: 'active',
+          canExecute: true,
+        }),
+      ]),
+    );
+    expect(JSON.stringify(report)).not.toContain('D:/comfy/workflows/studio.json');
   });
 
   it('blocks planned or unknown providers from job execution', () => {
