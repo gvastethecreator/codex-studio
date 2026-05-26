@@ -674,26 +674,3 @@ export function createWorkerController({
     },
   };
 }
-
-let defaultWorkerController: WorkerController | null = null;
-
-export function getDefaultWorkerController(logger?: typeof log) {
-  defaultWorkerController ??= createWorkerController({ logger });
-  return defaultWorkerController;
-}
-
-export function enqueueJob(job: Job) {
-  getDefaultWorkerController().enqueueJob(job);
-}
-
-export function cancelQueuedOrRunningJob(jobId: string) {
-  return getDefaultWorkerController().cancelQueuedOrRunningJob(jobId);
-}
-
-export function getWorkerStatus() {
-  return getDefaultWorkerController().getWorkerStatus();
-}
-
-export async function resetWorkerState() {
-  return getDefaultWorkerController().resetWorkerState();
-}

@@ -1,11 +1,9 @@
-import React, { createContext, useContext, ReactNode, useCallback, useMemo, useState } from 'react';
+import React, { createContext, useContext, ReactNode, useMemo, useState } from 'react';
 import { ImageGenerationConfig, Attachment, GeneratedImageWithConfig, RecipeId } from '../types';
 import { useGenerationConfig } from '../hooks/useGenerationConfig';
 import { useGenerationPipeline } from '../hooks/useGenerationPipeline';
 import { useGlobal } from './GlobalContext';
-import { useLegacyVisualBatches } from './LegacyVisualBatchContext';
 import { useModalManager } from '../hooks/useModalManager';
-import { appendLocalGenerationResultToLegacyVisualBatches } from '../lib/localGenerationVisualBatchCompat';
 
 interface GenerationContextType {
   config: {
@@ -62,7 +60,6 @@ interface GenerationProviderProps {
 
 export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children }) => {
   const { log, activeWorkspaceId, addToast } = useGlobal();
-  const { registerGeneratedLegacyVisualBatchRef } = useLegacyVisualBatches();
 
   const [activeRecipe, setActiveRecipe] = useState<RecipeId>(null);
   const [isInteractingWithToolbar, setIsInteractingWithToolbar] = useState(false);
@@ -80,23 +77,10 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
   } = useModalManager(activeRecipe);
 
   const configHook = useGenerationConfig({ log });
-  const appendLocalGenerationResult = useCallback(
-    (
-      result: Parameters<typeof appendLocalGenerationResultToLegacyVisualBatches>[0],
-      options?: { maxPerWorkspace?: number },
-    ) =>
-      appendLocalGenerationResultToLegacyVisualBatches(
-        result,
-        registerGeneratedLegacyVisualBatchRef,
-        options,
-      ),
-    [registerGeneratedLegacyVisualBatchRef],
-  );
 
   const pipelineHook = useGenerationPipeline({
     generationConfig: configHook.generationConfig,
     activeWorkspaceId,
-    appendLocalGenerationResult,
     addToast,
     log,
     activeRecipe,
@@ -155,7 +139,6 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
       configHook.handleRemoveAttachment,
       configHook.handleAddToContext,
       configHook.maxAttachments,
-      appendLocalGenerationResult,
       pipelineHook.isGenerating,
       pipelineHook.generationStartTime,
       pipelineHook.executeGeneration,

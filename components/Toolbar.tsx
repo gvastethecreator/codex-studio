@@ -612,7 +612,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           value={generationConfig.negativePrompt || ''}
                           onChange={(e) => updateConfig('negativePrompt', e.target.value)}
                           placeholder="Blurry, low quality, distortion..."
-                          autoFocus
+                          autoComplete="off"
+                          ref={(el) => el?.focus()}
                           className="w-full h-8 bg-black/40 border border-white/5 rounded-lg px-3 text-[11px] text-zinc-300 outline-none placeholder-zinc-700 focus:border-red-500/30 transition-colors"
                         />
                       </MotionDiv>
@@ -652,7 +653,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             value={magicInstruction}
                             onChange={(e) => setMagicInstruction(e.target.value)}
                             placeholder="e.g. Make it cyberpunk style..."
-                            autoFocus
+                            autoComplete="off"
+                            ref={(el) => el?.focus()}
                             onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
                             className="flex-1 h-8 bg-black/40 border border-white/5 rounded-lg px-3 text-[11px] text-zinc-300 outline-none placeholder-zinc-700 focus:border-accent-500/30 transition-colors"
                           />

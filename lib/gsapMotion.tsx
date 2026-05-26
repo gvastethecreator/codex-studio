@@ -1,6 +1,6 @@
 import React, {
   createContext,
-  useContext,
+  use,
   useMemo,
   useRef,
   useCallback,
@@ -195,7 +195,7 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
   }: Props) {
     const elementRef = useRef<ElementType | null>(null);
     const hasAnimatedRef = useRef(false);
-    const presenceConfig = useContext(PresenceConfigContext);
+    const presenceConfig = use(PresenceConfigContext);
     const resolvedCustom = custom ?? presenceConfig.custom;
 
     const initialState = useMemo(

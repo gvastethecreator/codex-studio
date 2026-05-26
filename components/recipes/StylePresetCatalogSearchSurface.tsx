@@ -80,7 +80,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             ) : (
               <div className="mt-1 flex items-center gap-1.5 text-zinc-500">
                 <LoaderCircle size={10} className="animate-spin" />
-                <span className="text-[9px] font-bold uppercase tracking-widest">Loading...</span>
+                <span className="text-[9px] font-bold uppercase tracking-widest">Loading…</span>
               </div>
             )}
           </div>
@@ -105,7 +105,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search presets, tags, DNA..."
             className="w-full border-none bg-transparent text-xs font-medium text-white outline-none placeholder:text-zinc-600"
-            autoFocus
+            ref={(el) => el?.focus()}
           />
           {query && (
             <button type="button" onClick={() => setQuery('')} aria-label="Clear catalog search">
@@ -150,7 +150,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         {!catalog ? (
           <div className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-zinc-600">
             <LoaderCircle size={32} className="animate-spin opacity-25" />
-            <span className="text-xs font-black uppercase tracking-widest">Loading catalog...</span>
+            <span className="text-xs font-black uppercase tracking-widest">Loading catalog…</span>
           </div>
         ) : results.length > 0 ? (
           <div data-style-catalog-results className="grid grid-cols-1 gap-3 2xl:grid-cols-2">

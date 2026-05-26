@@ -1,6 +1,6 @@
 import React, {
   createContext,
-  useContext,
+  use,
   ReactNode,
   useState,
   useCallback,
@@ -226,7 +226,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
 };
 
 export const useGlobal = () => {
-  const context = useContext(GlobalContext);
+  const context = use(GlobalContext);
   if (context === undefined) {
     throw new Error('useGlobal must be used within a GlobalProvider');
   }

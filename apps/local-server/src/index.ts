@@ -2,7 +2,6 @@ import { getSettings } from './config';
 import { listRecoverableJobs } from './db';
 import { createStudioApp } from './appFactory';
 import { log } from './logger';
-import { enqueueJob } from './worker';
 
 export { createStudioApp } from './appFactory';
 
@@ -31,7 +30,7 @@ if (import.meta.main) {
 
   const recoverableJobs = listRecoverableJobs();
   for (const job of recoverableJobs) {
-    enqueueJob(job);
+    studio.workerController.enqueueJob(job);
   }
   if (recoverableJobs.length > 0) {
     log(

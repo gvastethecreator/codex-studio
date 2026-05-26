@@ -675,6 +675,7 @@ export const useCameraViewport = ({
 
       const canvasElement = renderer.domElement;
       canvasElement.addEventListener('mousedown', onMouseDown);
+      // react-doctor-disable-next-line react-doctor/client-passive-event-listeners
       canvasElement.addEventListener('wheel', onWheel, { passive: false });
       window.addEventListener('mousemove', onMouseMove);
       window.addEventListener('mouseup', onMouseUp);

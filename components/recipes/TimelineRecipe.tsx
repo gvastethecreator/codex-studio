@@ -470,7 +470,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
       {/* Main Viewport */}
       <div className="flex-1 w-full flex items-center justify-center min-h-0 relative">
         <div
-          className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black"
+          className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-950"
           style={{
             aspectRatio: ratioValue,
             width: `min(80vw, (100vh - 400px) * ${ratioValue})`,
@@ -494,17 +494,17 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               )}
               <div className="absolute inset-0 z-30 flex items-center justify-between px-8 pointer-events-none">
                 <div
-                  className={`p-4 rounded-full bg-black/60 border border-white/10 transition-all duration-500 ${direction === 'backward' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
+                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/10 transition-all duration-500 ${direction === 'backward' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
                 >
                   <Rewind size={32} className="text-teal-400" />
                 </div>
                 <div
-                  className={`p-4 rounded-full bg-black/60 border border-white/10 transition-all duration-500 ${direction === 'forward' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/10 transition-all duration-500 ${direction === 'forward' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                 >
                   <FastForward size={32} className="text-teal-400" />
                 </div>
               </div>
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-black/60 rounded-full border border-white/10 flex items-center gap-3 backdrop-blur-md z-30">
+              <div className="absolute top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-zinc-950/60 rounded-full border border-white/10 flex items-center gap-3 backdrop-blur-md z-30">
                 <span className="text-[9px] font-bold text-zinc-400 uppercase">
                   Frame: {currentRefIndex}
                 </span>
@@ -516,7 +516,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
-                className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-black/60 text-zinc-400 hover:text-white hover:bg-white/10 transition-all pointer-events-auto border border-white/10 flex items-center gap-2"
+                className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-zinc-950/60 text-zinc-400 hover:text-white hover:bg-white/10 transition-all pointer-events-auto border border-white/10 flex items-center gap-2"
               >
                 <span className="text-[9px] font-bold uppercase hidden sm:block">Replace</span>
                 <Upload size={14} />
@@ -595,7 +595,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
           {/* SCROLL CONTAINER */}
           <div
             ref={scrollContainerRef}
-            className="size-full bg-black/40 flex items-center overflow-x-auto custom-scrollbar relative snap-x snap-mandatory"
+            className="size-full bg-zinc-950/40 flex items-center overflow-x-auto custom-scrollbar relative snap-x snap-mandatory"
             // Center padding calculation: 50% screen - half item width (assuming w-48/192px approx)
             style={{ paddingLeft: 'calc(50% - 96px)', paddingRight: 'calc(50% - 96px)' }}
           >
@@ -643,7 +643,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
 
                       {/* Frame Number Tag */}
                       <div
-                        className={`absolute top-1 left-1 px-1.5 py-0.5 rounded text-[7px] font-black font-mono border backdrop-blur-md uppercase tracking-wider ${isActive ? 'bg-teal-500 text-black border-teal-400' : 'bg-black/80 text-white/50 border-white/10'}`}
+                        className={`absolute top-1 left-1 px-1.5 py-0.5 rounded text-[7px] font-black font-mono border backdrop-blur-md uppercase tracking-wider ${isActive ? 'bg-teal-500 text-black border-teal-400' : 'bg-zinc-950/80 text-white/50 border-white/10'}`}
                       >
                         {item.isOrigin ? 'ORIGIN' : `SEQ.${item.index}`}
                       </div>

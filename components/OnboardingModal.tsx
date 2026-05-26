@@ -181,7 +181,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
             exit={{ opacity: 0, scale: 0.96, y: 20 }}
             className="relative z-10 mx-auto flex h-full max-h-[calc(100vh-1.5rem)] w-full max-w-4xl flex-col overflow-hidden rounded-[28px] border border-white/10 bg-zinc-950/95 shadow-2xl sm:max-h-[min(88vh,860px)]"
           >
-            <div className="flex items-start justify-between gap-4 border-b border-white/5 bg-white/3 px-4 py-4 sm:px-6 sm:py-5">
+            <div className="flex items-start justify-between gap-4 border-b border-white/5 bg-white/3 p-4 sm:px-6 sm:py-5">
               <div className="flex min-w-0 items-start gap-3 sm:gap-4">
                 <div className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-accent-500/10 text-accent-400 sm:h-12 sm:w-12">
                   <Sparkles size={20} />
@@ -211,7 +211,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               </button>
             </div>
 
-            <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4 sm:px-6 sm:py-5">
+            <div className="min-h-0 flex-1 overflow-y-auto p-4 sm:px-6 sm:py-5">
               <div className="grid gap-4 xl:grid-cols-[minmax(0,1.15fr)_minmax(280px,0.85fr)]">
                 <div className="space-y-4">
                   {error ? (
@@ -341,7 +341,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               </div>
             </div>
 
-            <div className="border-t border-white/5 bg-black/20 px-4 py-4 sm:px-6 sm:py-5">
+            <div className="border-t border-white/5 bg-black/20 p-4 sm:px-6 sm:py-5">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="text-xs leading-relaxed text-zinc-500">
                   {isReady

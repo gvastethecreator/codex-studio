@@ -282,8 +282,8 @@ const StylePresetCard = React.memo(
     const renderResultButton = () => {
       if (activeResultImage) {
         return (
-          <div
-            role="button"
+          <button
+            type="button"
             tabIndex={0}
             aria-label={`Open ${preset.name} preview`}
             onClick={(e) => {
@@ -303,9 +303,9 @@ const StylePresetCard = React.memo(
               className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02]"
               alt={preset.name}
             />
-            <div className="absolute inset-0 bg-black/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
+            <div className="absolute inset-0 bg-zinc-950/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
-              <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white backdrop-blur-md">
+              <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white backdrop-blur-md">
                 <Maximize2 size={18} />
               </div>
             </div>
@@ -318,12 +318,12 @@ const StylePresetCard = React.memo(
                     e.stopPropagation();
                     handleCycle(-1);
                   }}
-                  className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/90 backdrop-blur-md transition-colors hover:bg-black/80"
+                  className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
                   aria-label={`Previous result for ${preset.name}`}
                 >
                   <ChevronLeft size={14} />
                 </button>
-                <div className="rounded-full border border-white/10 bg-black/60 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-white/70 backdrop-blur-md">
+                <div className="rounded-full border border-white/10 bg-zinc-950/60 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-white/70 backdrop-blur-md">
                   {resultIndex + 1} / {resultImages.length}
                 </div>
                 <button
@@ -332,7 +332,7 @@ const StylePresetCard = React.memo(
                     e.stopPropagation();
                     handleCycle(1);
                   }}
-                  className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/90 backdrop-blur-md transition-colors hover:bg-black/80"
+                  className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
                   aria-label={`Next result for ${preset.name}`}
                 >
                   <ChevronRight size={14} />
@@ -347,13 +347,13 @@ const StylePresetCard = React.memo(
                   e.stopPropagation();
                   onApply(preset);
                 }}
-                className="rounded-lg border border-white/10 bg-black/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
+                className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
                 title="Regenerate Style"
               >
                 <RefreshCw size={14} />
               </button>
             </div>
-          </div>
+          </button>
         );
       }
 
@@ -370,7 +370,7 @@ const StylePresetCard = React.memo(
               alt={preset.name}
             />
             <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100">
-              <div className="rounded-lg border border-white/10 bg-black/60 p-1.5 text-white shadow-lg backdrop-blur-md">
+              <div className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md">
                 <RefreshCw size={14} />
               </div>
             </div>
@@ -390,10 +390,10 @@ const StylePresetCard = React.memo(
               className="style-preset-thumbnail size-full object-cover opacity-75 saturate-[0.9] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-[0.94] group-hover:brightness-[1.01] group-hover:saturate-100"
               alt=""
             />
-            <div className="absolute inset-0 bg-black/15 transition-colors group-hover:bg-black/8" />
+            <div className="absolute inset-0 bg-zinc-950/15 transition-colors group-hover:bg-zinc-950/8" />
             <div className="absolute inset-0 flex translate-y-2 flex-col items-center justify-center gap-3 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
               <div
-                className={`flex size-14 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white shadow-xl backdrop-blur-md transition-colors duration-300 group-hover:bg-black/62 ${theme.text}`}
+                className={`flex size-14 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white shadow-xl backdrop-blur-md transition-colors duration-300 group-hover:bg-zinc-950/62 ${theme.text}`}
               >
                 <Palette size={24} />
               </div>
@@ -463,7 +463,7 @@ const StylePresetCard = React.memo(
               : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
           }`}
         >
-          <div className="absolute inset-0 overflow-hidden bg-black">{renderResultButton()}</div>
+          <div className="absolute inset-0 overflow-hidden bg-zinc-950">{renderResultButton()}</div>
 
           <div className="absolute right-2 top-2 z-30">
             <button
@@ -472,7 +472,7 @@ const StylePresetCard = React.memo(
                 e.stopPropagation();
                 onToggleFavorite(preset.id);
               }}
-              className={`rounded-full border border-white/10 p-1.5 backdrop-blur-md transition-all duration-300 ${favorite ? 'bg-black/60 text-rose-500' : 'bg-black/35 text-zinc-500 hover:bg-black/60 hover:text-rose-400'}`}
+              className={`rounded-full border border-white/10 p-1.5 backdrop-blur-md transition-all duration-300 ${favorite ? 'bg-zinc-950/60 text-rose-500' : 'bg-zinc-950/35 text-zinc-500 hover:bg-zinc-950/60 hover:text-rose-400'}`}
               title={favorite ? 'Unpin' : 'Pin to top'}
             >
               <Heart
@@ -484,7 +484,7 @@ const StylePresetCard = React.memo(
           </div>
 
           <div className="absolute inset-x-0 bottom-0 z-20 px-3 pt-4 pb-0">
-            <div className="rounded-t-xl rounded-b-none border border-white/10 border-b-0 bg-black/34 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md">
+            <div className="rounded-t-xl rounded-b-none border border-white/10 border-b-0 bg-zinc-950/34 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md">
               <div
                 onClick={() => onApply(preset)}
                 className="flex cursor-pointer flex-col justify-center"
@@ -506,7 +506,7 @@ const StylePresetCard = React.memo(
 
               <div className="absolute bottom-2 right-2 flex items-center gap-1">
                 {hasMultipleResults && (
-                  <span className="rounded-md border border-white/10 bg-black/50 px-1.5 py-1 text-[7px] font-black uppercase tracking-[0.18em] text-zinc-300/80">
+                  <span className="rounded-md border border-white/10 bg-zinc-950/50 px-1.5 py-1 text-[7px] font-black uppercase tracking-[0.18em] text-zinc-300/80">
                     {resultIndex + 1}/{resultImages.length}
                   </span>
                 )}
@@ -630,7 +630,7 @@ const StylePresetGroupSection = React.memo(
         ) : (
           <div
             aria-hidden="true"
-            className="rounded-2xl border border-white/5 bg-black/20"
+            className="rounded-2xl border border-white/5 bg-zinc-950/20"
             style={{ height: Math.max(120, placeholderHeight - 40) }}
           />
         )}
@@ -1313,7 +1313,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
               <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-3xl">
                 <div
-                  className="t-panel-slide relative size-full overflow-hidden rounded-3xl border border-white/10 bg-black shadow-2xl"
+                  className="t-panel-slide relative size-full overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 shadow-2xl"
                   data-open={hoveredPresetPreview ? 'true' : 'false'}
                   style={{ '--panel-translate-y': '48px' } as React.CSSProperties}
                 >
@@ -1341,7 +1341,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                       <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/5" />
 
                       <div className="absolute inset-x-0 bottom-0 p-3 md:p-4">
-                        <div className="max-w-[76%] rounded-2xl border border-white/10 bg-black/35 px-3.5 py-3 backdrop-blur-2xl shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
+                        <div className="max-w-[76%] rounded-2xl border border-white/10 bg-zinc-950/35 px-3.5 py-3 backdrop-blur-2xl shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
                           <div className="flex min-w-0 flex-wrap items-center gap-2">
                             <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.22em] text-white/65">
                               {resolvedHoveredPresetPreview.packName}
@@ -1410,7 +1410,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         <div className="absolute inset-0 opacity-[0.02] pointer-events-none" />
 
         {/* Pack Tabs */}
-        <div className="vt-recipe-tabs h-16 flex items-center px-6 border-b border-white/5 gap-2 overflow-x-auto custom-scrollbar bg-black/40 backdrop-blur-md z-20">
+        <div className="vt-recipe-tabs h-16 flex items-center px-6 border-b border-white/5 gap-2 overflow-x-auto custom-scrollbar bg-zinc-950/40 backdrop-blur-md z-20">
           {/* Favorites Tab */}
           <button
             type="button"
@@ -1492,7 +1492,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
           {/* Search & Filter Toolbar */}
           <div className="flex items-center gap-2 p-1 rounded-xl border border-white/5">
-            <div className="flex min-w-50 flex-1 items-center gap-2 rounded-lg border border-white/5 bg-black/40 px-3 py-1.5">
+            <div className="flex min-w-50 flex-1 items-center gap-2 rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-1.5">
               <Search size={14} className="text-zinc-500" />
               <input
                 type="text"
@@ -1543,7 +1543,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             <div className="h-6 w-px bg-white/5" />
 
-            <div className="flex items-center gap-2 rounded-lg border border-white/5 bg-black/40 px-2 py-1">
+            <div className="flex items-center gap-2 rounded-lg border border-white/5 bg-zinc-950/40 px-2 py-1">
               <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
                 Zoom
               </span>
@@ -1644,7 +1644,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         {isCatalogSearchOpen && (
           <React.Suspense
             fallback={
-              <div className="absolute inset-0 z-40 flex items-center justify-center bg-black/86 text-[10px] font-black uppercase tracking-widest text-zinc-500 backdrop-blur-xl">
+              <div className="absolute inset-0 z-40 flex items-center justify-center bg-zinc-950/86 text-[10px] font-black uppercase tracking-widest text-zinc-500 backdrop-blur-xl">
                 Loading catalog
               </div>
             }

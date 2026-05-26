@@ -111,7 +111,7 @@ const TooltipPortal = ({
         position: 'fixed',
         top: 0,
         left: 0,
-        zIndex: 99999,
+        zIndex: 50,
         pointerEvents: 'none',
       }}
       className="bg-zinc-900/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl"

@@ -5,12 +5,11 @@ import { closeDb, ensureDefaultProject, migrateDb } from './db';
 import { LIBRARY_FOLDERS, ensureLibrary, resolveLibraryPath } from './library';
 import { ensureDefaultLibrary } from './libraries';
 import { log } from './logger';
-import { resetWorkerState } from './worker';
 
 const LIBRARY_RESET_TARGETS = ['library.sqlite', ...LIBRARY_FOLDERS] as const;
 
-export async function resetStudioData() {
-  await resetWorkerState();
+export async function resetStudioData(worker: { resetWorkerState(): Promise<void> }) {
+  await worker.resetWorkerState();
   await stopAppServer();
   closeDb();
 

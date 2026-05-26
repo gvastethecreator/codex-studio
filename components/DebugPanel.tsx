@@ -53,7 +53,11 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   }
 
   return (
-    <div className="fixed inset-0 z-50" aria-modal="true" role="dialog">
+    <dialog
+      className="fixed inset-0 z-50 m-0 h-full w-full max-h-none max-w-none bg-transparent p-0"
+      aria-modal="true"
+      open
+    >
       <button
         type="button"
         aria-label="Close activity inspector"
@@ -120,6 +124,6 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
           </main>
         </div>
       </div>
-    </div>
+    </dialog>
   );
 };

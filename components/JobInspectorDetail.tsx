@@ -518,7 +518,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             ].map(([label, value]) => (
               <div
                 key={label}
-                className="flex items-start justify-between gap-4 rounded-2xl border border-white/8 bg-black/25 px-3 py-3"
+                className="flex items-start justify-between gap-4 rounded-2xl border border-white/8 bg-black/25 p-3"
               >
                 <dt className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
                   {label}
@@ -539,7 +539,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               ['Turn ID', detail.turn?.codexTurnId || '—'],
               ['Transcript path', detail.turn?.transcriptPath || '—'],
             ].map(([label, value]) => (
-              <div key={label} className="rounded-2xl border border-white/8 bg-black/25 px-3 py-3">
+              <div key={label} className="rounded-2xl border border-white/8 bg-black/25 p-3">
                 <dt className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
                   {label}
                 </dt>

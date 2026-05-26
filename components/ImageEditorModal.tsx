@@ -30,6 +30,12 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   const [historyIndex, setHistoryIndex] = useState(-1);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
+  useEffect(() => {
+    if (isOpen) {
+      textareaRef.current?.focus();
+    }
+  }, [isOpen]);
+
   React.useLayoutEffect(() => {
     if (textareaRef.current) {
       textareaRef.current.style.height = 'auto';
@@ -266,7 +272,6 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
             </label>
             <textarea
               ref={textareaRef}
-              autoFocus
               value={editPrompt}
               onChange={(e) => setEditPrompt(e.target.value)}
               placeholder="Describe the changes..."
