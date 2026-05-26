@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import { buildStudioPageController } from './useStudioPageController';
+import { buildStudioPageController } from '../lib/buildStudioPageController';
 
 describe('buildStudioPageController', () => {
   it('concentrates debug, grid, and operations props behind one controller', () => {

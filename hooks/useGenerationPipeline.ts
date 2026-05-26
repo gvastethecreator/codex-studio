@@ -26,7 +26,7 @@ export function resolveGenerationWorkspaceId(
 interface UseGenerationPipelineProps {
   generationConfig: ImageGenerationConfig;
   activeWorkspaceId: string;
-  appendLocalGenerationResult: (
+  appendLocalGenerationResult?: (
     result: LocalGenerationRunResult,
     options?: { maxPerWorkspace?: number },
   ) => void;
@@ -109,7 +109,7 @@ export const useGenerationPipeline = ({
         const { batchId, generatedCount, images } = result;
 
         startViewTransition(() => {
-          appendLocalGenerationResult(result);
+          appendLocalGenerationResult?.(result);
         });
 
         if (images.length > 0 && !options?.preventModal) {
@@ -190,7 +190,7 @@ export const useGenerationPipeline = ({
         const { batchId, generatedCount } = result;
 
         startViewTransition(() => {
-          appendLocalGenerationResult(result, { maxPerWorkspace: 20 });
+          appendLocalGenerationResult?.(result, { maxPerWorkspace: 20 });
         });
 
         const duration = ((Date.now() - startTime) / 1000).toFixed(1);

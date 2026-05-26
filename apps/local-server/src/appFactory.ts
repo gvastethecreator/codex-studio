@@ -83,7 +83,10 @@ export interface CreateStudioAppOptions {
     catalogStore?: StudioCatalogStore;
     dbStore?: StudioDbStore;
     settingsStorage?: StudioSettingsStorage;
-    worker?: Pick<WorkerController, 'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus'>;
+    worker?: Pick<
+      WorkerController,
+      'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus' | 'resetWorkerState'
+    >;
     logger?: typeof log;
   };
 }

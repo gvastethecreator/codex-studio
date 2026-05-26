@@ -238,7 +238,7 @@ export function useStudioShell(): StudioShellController {
           );
         });
     },
-    [activeCatalog.entries, addToast, clearLegacyVisualWorkspace, refreshCatalogs],
+    [activeCatalog.entries, addToast, refreshCatalogs],
   );
 
   const restoreCatalogBatch = useCallback(
@@ -513,6 +513,7 @@ export function useStudioShell(): StudioShellController {
     },
     vault: {
       handleExportWorkspaceSnapshot: exportWorkspaceSnapshot,
+      handleDeepScan: () => {},
     },
     onboarding: {
       apiBase: studioRuntime.onboarding.apiBase,

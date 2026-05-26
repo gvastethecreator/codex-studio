@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { buildStudioHeaderToolbarProps } from './useStudioHeaderToolbarConfig';
+import { buildStudioHeaderToolbarProps } from '../lib/buildStudioHeaderToolbarProps';
 
 describe('buildStudioHeaderToolbarProps', () => {
   it('wraps workspace switching and returns to the gallery when switching from recipes', () => {
