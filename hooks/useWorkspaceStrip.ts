@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo } from 'react';
 import type { CatalogImage } from '../packages/shared/src';
+import { resolveCatalogEntryThumbnailUrl } from '../lib/studioCatalogImageAdapter';
 import type { StudioCatalogView } from '../lib/studioCatalogView';
-import { toStudioAssetUrl } from '../services/localStudioService';
 import type { Workspace } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
 
@@ -26,7 +26,7 @@ interface BuildWorkspacesWithThumbsOptions {
 }
 
 function resolveCatalogThumb(entry: CatalogImage) {
-  return toStudioAssetUrl(entry.thumbnailUrl || entry.publicUrl);
+  return resolveCatalogEntryThumbnailUrl(entry, 96);
 }
 
 function parseCatalogWorkspaceCreatedAt(entry: CatalogImage) {

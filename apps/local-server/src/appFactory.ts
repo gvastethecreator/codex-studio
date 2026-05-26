@@ -41,6 +41,12 @@ import {
 import { createWorkspaceRoutes } from './workspaceRoutes';
 import { resetStudioData } from './reset';
 import {
+  buildLibraryAssetHeaders,
+  ensureThumbnailVariant,
+  resolveAssetCacheSeconds,
+  resolveThumbnailMaxEdge,
+} from './libraryAssetVariants';
+import {
   detectExternalOutputSourceCandidates,
   importExternalOutputSourceFiles,
   listExternalOutputSourceFiles,
@@ -471,22 +477,29 @@ export async function createStudioApp(
     if (relative.includes('..')) return c.notFound();
     const filePath = resolvePublicLibraryPath(relative);
     if (!existsSync(filePath)) return c.notFound();
-    const ext = path.extname(filePath).toLowerCase();
-    const contentType =
-      ext === '.svg'
-        ? 'image/svg+xml; charset=utf-8'
-        : ext === '.png'
-          ? 'image/png'
-          : ext === '.jpg' || ext === '.jpeg'
-            ? 'image/jpeg'
-            : ext === '.webp'
-              ? 'image/webp'
-              : 'application/octet-stream';
-    return new Response(Bun.file(filePath), {
-      headers: {
-        'Content-Type': contentType,
-        'Cache-Control': 'no-store',
-      },
+
+    const url = new URL(c.req.url);
+    const variant = url.searchParams.get('variant');
+    let servedPath = filePath;
+
+    if (variant === 'thumb') {
+      try {
+        servedPath = await ensureThumbnailVariant(filePath, {
+          maxEdge: resolveThumbnailMaxEdge(url.searchParams.get('max')),
+        });
+      } catch (error) {
+        appLogger(
+          'warn',
+          'library',
+          `Thumbnail generation failed for ${path.basename(filePath)}: ${error instanceof Error ? error.message : String(error)}`,
+        );
+      }
+    }
+
+    return new Response(Bun.file(servedPath), {
+      headers: buildLibraryAssetHeaders(servedPath, {
+        cacheSeconds: resolveAssetCacheSeconds(variant),
+      }),
     });
   });
 
