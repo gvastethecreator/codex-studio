@@ -1,33 +1,46 @@
-# Sistema de Diseño y UX
+# Design and UX System
 
-## 1. Filosofía de Diseño
+## 1. Design philosophy
 
-El diseño de Codex Studio se inspira en interfaces de software profesional (como herramientas de edición de video, DAWs o motores de juego). Prioriza la densidad de información, la precisión técnica y una estética oscura ("Dark Mode" por defecto) para reducir la fatiga visual y hacer que las imágenes generadas destaquen sobre la interfaz.
+Codex Studio is a professional creative tool. It takes cues from video editors, DAWs, game engines, and local developer tools: dense, precise, task-oriented, and dark by default so generated images stay visually dominant.
 
-## 2. Paleta de Colores
+The interface should feel technical without becoming hostile. New users should understand what is ready, what is blocked, and what action to take next.
 
-- **Fondo Principal:** Negro puro (`#000000`) y grises muy oscuros (`zinc-900`, `zinc-950`).
-- **Superficies (Paneles, Tarjetas):** Fondos translúcidos con desenfoque (`bg-white/5 backdrop-blur`).
-- **Acentos:** Colores vibrantes para indicar estados y acciones.
-  - Primario: Tonos esmeralda/acento para acciones principales (ej. botón de generar).
-  - Peligro: Tonos rojos (`red-500`) para eliminaciones (Purge).
-  - Información: Tonos azules/cian para métricas y tokens.
-- **Texto:** Blanco para texto principal, `zinc-400` y `zinc-500` para texto secundario y metadatos.
+## 2. Color palette
 
-## 3. Tipografía
+- **Main background:** near-black and very dark zinc neutrals.
+- **Surfaces:** subtle translucent panels with restrained borders. Avoid decorative glassmorphism.
+- **Primary accent:** emerald/accent tones for generation and ready states.
+- **Danger:** red tones for destructive operations.
+- **Info:** blue/cyan tones for metrics, usage, and diagnostics.
+- **Text:** high-contrast foreground text, with zinc grays for secondary labels and metadata.
 
-- **Sans-serif (UI General):** Inter o fuentes del sistema. Se utiliza para la legibilidad en la interfaz general.
-- **Monospace (Datos Técnicos):** JetBrains Mono o similar. Se utiliza para mostrar IDs, tokens, costos, logs del sistema y parámetros técnicos, reforzando la sensación de "herramienta de desarrollo".
-- **Jerarquía:** Uso extensivo de texto pequeño en mayúsculas con amplio espaciado entre letras (`text-[10px] uppercase tracking-widest`) para etiquetas y metadatos, creando una apariencia limpia y técnica.
+Use color as state and hierarchy, not decoration. Inactive surfaces should stay restrained.
 
-## 4. Animaciones y Transiciones
+## 3. Typography
 
-- **Framer Motion:** Utilizado para transiciones de diseño (Layout animations) y micro-interacciones (hover, tap).
-- **View Transitions API:** Implementado para transiciones fluidas de pantalla completa (ej. abrir el carrusel de imágenes desde la cuadrícula), proporcionando una experiencia casi nativa.
-- **Curvas de Aceleración:** Uso de curvas personalizadas (ej. `cubic-bezier(0.19, 1, 0.22, 1)`) para movimientos rápidos pero suaves y profesionales.
+- **General UI:** system sans or Inter-like sans-serif.
+- **Technical data:** JetBrains Mono or similar monospace for IDs, ports, tokens, logs, and runtime details.
+- **Hierarchy:** compact uppercase labels with wide tracking are acceptable for metadata, but body copy should remain readable and direct.
 
-## 5. Interacción del Usuario
+## 4. Motion
 
-- **Arrastrar y Soltar (Drag & Drop):** Soporte global para soltar imágenes de referencia en la aplicación.
-- **Atajos de Teclado:** Navegación con flechas en el carrusel, tecla `Escape` para cerrar modales, y barra espaciadora para comparar la imagen generada con la referencia original.
-- **Feedback Visual:** Uso de `ToastContainer` para notificaciones no intrusivas sobre el éxito o fracaso de las acciones, y cursores personalizados para acciones específicas (ej. dibujar máscaras).
+- The project uses **GSAP** for React animation and local compatibility helpers.
+- Use the View Transitions API for full-screen or image-grid transitions when it improves continuity.
+- Keep most UI motion in the 150-250 ms range.
+- Animate state changes, reveals, loading, and feedback. Avoid purely decorative choreography.
+- Prefer transforms and opacity. Do not animate layout properties.
+
+## 5. Interaction model
+
+- Global drag and drop supports reference image input.
+- Keyboard shortcuts include carousel navigation, `Escape` to close modals, and spacebar comparison where available.
+- Toasts provide non-blocking success/failure feedback.
+- Destructive actions should explain exactly what will be removed, what remains, and how recovery works.
+
+## 6. Open-source presentation goals
+
+- Copy should be clear to a first-time user who does not know the repo history.
+- Diagnostics should name the blocked subsystem and suggest the next action.
+- Empty states should teach the workflow instead of merely saying that nothing exists.
+- Keep component vocabulary consistent across toolbar, panels, modals, and settings.

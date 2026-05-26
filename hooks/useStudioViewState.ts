@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import type { Attachment, AspectRatio } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
 
@@ -6,10 +6,16 @@ interface UseStudioViewStateProps {
   closeOverlay: () => void;
 }
 
+interface EditorState {
+  isOpen: boolean;
+  image: Attachment | null;
+}
+
+const INITIAL_EDITOR_STATE: EditorState = { isOpen: false, image: null };
+
 export function useStudioViewState({ closeOverlay }: UseStudioViewStateProps) {
   const [isQueueOpen, setIsQueueOpen] = useState(true);
-  const [isEditorOpen, setIsEditorOpen] = useState(false);
-  const [imageToEdit, setImageToEdit] = useState<Attachment | null>(null);
+  const [editorState, setEditorState] = useState<EditorState>(INITIAL_EDITOR_STATE);
   const [previewRatio, setPreviewRatio] = useState<AspectRatio | null>(null);
   const [isDashboardModalOpen, setIsDashboardModalOpen] = useState(false);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
@@ -41,16 +47,14 @@ export function useStudioViewState({ closeOverlay }: UseStudioViewStateProps) {
 
   const openEditor = useCallback((attachment: Attachment, openEditorRoute: () => void) => {
     startViewTransition(() => {
-      setImageToEdit(attachment);
-      setIsEditorOpen(true);
+      setEditorState({ isOpen: true, image: attachment });
       openEditorRoute();
     });
   }, []);
 
   const closeEditor = useCallback(() => {
     startViewTransition(() => {
-      setIsEditorOpen(false);
-      setImageToEdit(null);
+      setEditorState(INITIAL_EDITOR_STATE);
       closeOverlay();
     });
   }, [closeOverlay]);
@@ -61,8 +65,7 @@ export function useStudioViewState({ closeOverlay }: UseStudioViewStateProps) {
 
   const resetViewState = useCallback(() => {
     setIsQueueOpen(true);
-    setIsEditorOpen(false);
-    setImageToEdit(null);
+    setEditorState(INITIAL_EDITOR_STATE);
     setPreviewRatio(null);
     setIsDashboardModalOpen(false);
     setIsSettingsModalOpen(false);
@@ -72,10 +75,24 @@ export function useStudioViewState({ closeOverlay }: UseStudioViewStateProps) {
   return {
     isQueueOpen,
     setIsQueueOpen,
-    isEditorOpen,
-    setIsEditorOpen,
-    imageToEdit,
-    setImageToEdit,
+    isEditorOpen: editorState.isOpen,
+    setIsEditorOpen: (value: React.SetStateAction<boolean>) =>
+      setEditorState((prev) => ({
+        ...prev,
+        isOpen: typeof value === 'function' ? value(prev.isOpen) : value,
+      })),
+    setImageToEdit: (value: React.SetStateAction<Attachment | null>) =>
+      setEditorState((prev) => ({
+        ...prev,
+        image: typeof value === 'function' ? value(prev.image) : value,
+      })),
+    closeEditorState: () => setEditorState(INITIAL_EDITOR_STATE),
+    imageToEdit: editorState.image,
+    setImageToEdit: (value: React.SetStateAction<Attachment | null>) =>
+      setEditorState((prev) => ({
+        ...prev,
+        image: typeof value === 'function' ? value(prev.image) : value,
+      })),
     previewRatio,
     setPreviewRatio,
     isDashboardModalOpen,

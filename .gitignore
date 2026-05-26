@@ -32,6 +32,8 @@ components/recipes/styles/defaults/.locks/
 components/recipes/styleRuntimeData.generated.check.*.tmp.ts
 components/recipes/styleRuntimePacks.generated/*.check.*.tmp.ts
 components/recipes/styleRuntimePacks.generated/**/*.check.*.tmp.ts
+react-doctor-*.json
+!react-doctor.config.json
 
 # Editor directories and files
 .vscode/*

@@ -1,13 +1,19 @@
 # ADR 0030: Provider Secrets outside Studio Settings
 
-## Estado
+## Status
 
-Aceptado.
+Accepted.
 
-## Contexto
+## Context
 
-Provider credentials and tokens must stay outside SQLite-backed Studio Settings and catalog metadata. Studio Settings may store non-secret provider configuration and expose configured, missing, or invalid state, but secrets such as hosted API keys, remote tokens, or private WebSocket credentials belong in `.env.local` or a future local secret store.
+Optional providers may require API keys or other credentials. Studio Settings are SQLite-backed and user-visible enough that they should not be treated as a secret store.
 
-## Consecuencias
+## Decision
 
-Settings UI should never reveal or persist secret values as plain editable preferences. Provider adapters should receive secrets through backend-only configuration and report only validation status to the frontend.
+Provider Secrets must stay outside Studio Settings, catalog metadata, logs, transcripts, screenshots, and documentation. Use backend environment variables or an approved OS/secret-store integration.
+
+## Consequences
+
+- accidental leakage risk is reduced;
+- open-source docs can describe variables without including real values;
+- readiness checks may report whether a secret is configured, but never reveal the value or endpoint contents.

@@ -1,126 +1,127 @@
 # Troubleshooting
 
-## Problemas comunes al arrancar
+## Common startup issues
 
-### `codex` no existe o no responde
+### `codex` does not exist or does not respond
 
-Sintoma:
+Symptoms:
 
-- `GET /api/health` muestra `codexCli.available: false`.
-- Los jobs reales no arrancan.
+- `GET /api/health` shows `codexCli.available: false`.
+- Real jobs do not start.
 
-Que revisar:
+Check:
 
-- confirma que `codex --version` funciona en tu terminal;
-- asegúrate de que Codex esta instalado en PATH;
-- vuelve a abrir la terminal si acabas de instalarlo.
+- confirm that `codex --version` works in your terminal;
+- make sure Codex is installed and available in PATH;
+- reopen your terminal if you just installed it.
 
-### `codex app-server` no aparece disponible
+### `codex app-server` is not available
 
-Sintoma:
+Symptoms:
 
-- el backend levanta, pero la generacion real falla o nunca progresa;
-- el health-check muestra `appServer.running: false`.
+- the backend starts, but real generation fails or never progresses;
+- the health check shows `appServer.running: false`.
 
-Que revisar:
+Check:
 
-- que tu instalacion de Codex soporte `app-server`;
-- que la sesion local este autenticada;
-- que no haya otro proceso ocupando el puerto WebSocket configurado.
+- your Codex installation supports `app-server`;
+- your local session is authenticated;
+- no other process is using the configured WebSocket port.
 
-### La sesion de Codex expiro
+### The Codex session expired
 
-Sintoma:
+Symptoms:
 
-- el CLI existe, pero los jobs fallan por permisos o autorizacion;
-- la UI sigue cargando, pero no aparecen resultados nuevos.
+- the CLI exists, but jobs fail because of permissions or authorization;
+- the UI still loads, but no new results appear.
 
-Que revisar:
+Check:
 
-- reautentica Codex en la maquina;
-- reinicia `bun run dev:server` despues de volver a autenticarte.
+- reauthenticate Codex on the machine;
+- restart `bun run dev:server` after reauthenticating.
 
-### Solo levantaste la UI
+### Only the UI is running
 
-Sintoma:
+Symptoms:
 
-- `bun run dev:ui` funciona, pero el grid no sincroniza jobs ni assets locales;
-- la UI muestra errores al consultar `localhost:4317`.
+- `bun run dev:ui` works, but the grid does not sync local jobs or assets;
+- the UI shows errors when calling `localhost:4317`.
 
-Que revisar:
+Check:
 
-- usa `bun run dev` para el flujo completo;
-- o ejecuta `bun run dev:server` en paralelo si estas corriendo la UI por separado.
+- use `bun run dev` for the full flow;
+- or run `bun run dev:server` in parallel when running the UI separately.
 
-### Los puertos ya estan ocupados
+### Ports are already occupied
 
-Sintoma:
+Symptoms:
 
-- el server no inicia o `vite`/Bun reportan errores de escucha.
+- the server does not start;
+- Vite or Bun reports listen errors.
 
-Que revisar:
+Check:
 
-- cambia `STUDIO_SERVER_PORT` y/o `STUDIO_CODEX_WS_PORT` en `.env.local`;
-- evita conflictos con otros servicios locales.
+- change `STUDIO_SERVER_PORT` and/or `STUDIO_CODEX_WS_PORT` in `.env.local`;
+- avoid conflicts with other local services.
 
-### `bun run check` / `bun run lint` / `bun run test` fallan y la consola no alcanza
+### `bun run check`, `bun run lint`, or `bun run test` fails and the console is not enough
 
-Sintoma:
+Symptoms:
 
-- el output en terminal se corta o no queda claro que fallo primero;
-- quieres compartir el error exacto sin relanzar el comando.
+- terminal output is truncated or does not show the first failure clearly;
+- you want to share the exact failure without re-running the command.
 
-Que revisar:
+Check:
 
-- abre `logs/tooling/`;
-- usa el archivo `*.latest.log` de la tarea que fallo;
-- si necesitas el historico completo, busca el archivo timestamped mas reciente.
+- open `logs/tooling/`;
+- use the task's `*.latest.log` file;
+- if you need full history, find the most recent timestamped log.
 
-Nota: las tareas principales de calidad se ejecutan a traves de `scripts/tooling-task.ts`, asi que todas dejan rastro persistente.
+Main quality tasks run through `scripts/tooling-task.ts`, so they leave persistent logs.
 
-### El terminal integrado o el IDE se ponen pesados durante `fmt` o `build`
+### The integrated terminal or IDE becomes heavy during `fmt` or `build`
 
-Sintoma:
+Symptoms:
 
-- VS Code se queda torpe o parece congelado al lanzar varios comandos seguidos;
-- `build` genera demasiado ruido visual en el terminal;
-- una corrida larga parece colgarse aunque el proceso siga trabajando.
+- VS Code becomes sluggish or appears frozen after starting several commands;
+- `build` creates too much terminal noise;
+- a long run appears stuck even though the process is still working.
 
-Que revisar:
+Check:
 
-- usa los wrappers del repo (`bun run fmt`, `bun run lint`, `bun run build`, `bun run validate:*`) en vez de invocar `vp` manualmente, porque el wrapper ya limita hilos y reduce la salida más ruidosa;
-- si aun necesitas bajar la presion sobre la maquina, define `OXFMT_THREADS` y/o `OXLINT_THREADS` con un valor menor antes de ejecutar la tarea;
-- consulta `logs/tooling/*.latest.log` para el detalle completo del build o de una corrida pesada en lugar de depender del scroll del terminal integrado.
+- use repo wrappers (`bun run fmt`, `bun run lint`, `bun run build`, `bun run validate:*`) instead of invoking `vp` manually;
+- reduce `OXFMT_THREADS` and/or `OXLINT_THREADS` if you need lower machine pressure;
+- read `logs/tooling/*.latest.log` for the full build or quality-run detail.
 
-Nota: `build` muestra ahora solo un resumen corto en consola para evitar que el listado completo de assets degrade el terminal; el detalle sigue quedando en el log persistente.
+`build` now prints only a short console summary to keep the terminal responsive; full details remain in the persistent log.
 
-## Problemas con la biblioteca local
+## Studio Library issues
 
-### La ruta por defecto no existe en tu sistema operativo
+### The default path does not exist on your OS
 
-Por defecto el proyecto usa una ruta basada en el directorio home del usuario, por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows o `$HOME/AI-Studio-Library` en macOS/Linux. Dentro de esa raiz, `.studio/` guarda estado interno y `outputs/` guarda imagenes generadas y exports.
+By default, Codex Studio uses a path under the user's home directory, for example `%USERPROFILE%\AI-Studio-Library` on Windows or `$HOME/AI-Studio-Library` on macOS/Linux. Inside that root, `.studio/` stores internal state and `outputs/` stores generated images and exports.
 
-Solucion:
+Solution:
 
-1. crea una ruta absoluta local para tu maquina;
-2. actualiza `STUDIO_LIBRARY_DIR` en `.env.local`;
-3. vuelve a ejecutar `bun run studio:init`.
+1. create a local absolute path for your machine;
+2. update `STUDIO_LIBRARY_DIR` in `.env.local`;
+3. run `bun run studio:init` again.
 
-Ejemplos:
+Examples:
 
 - Windows: `%USERPROFILE%\AI-Studio-Library`
-- macOS: `/Users/<tu-usuario>/AI-Studio-Library`
-- Linux: `/home/<tu-usuario>/AI-Studio-Library`
+- macOS: `/Users/<your-user>/AI-Studio-Library`
+- Linux: `/home/<your-user>/AI-Studio-Library`
 
-### No ves assets o logs donde esperabas
+### Assets or logs are not where you expected
 
-Que revisar:
+Check:
 
-- `STUDIO_LIBRARY_DIR` efectivo en `.env.local`;
-- `GET /api/health` para confirmar `libraryDir`;
-- la carpeta `logs/` dentro de tu biblioteca local.
+- the effective `STUDIO_LIBRARY_DIR` in `.env.local`;
+- `GET /api/health` to confirm `libraryDir`;
+- the `logs/` folder inside your Studio Library.
 
-## Comandos utiles para diagnostico rapido
+## Quick diagnostic commands
 
 ```bash
 bun run studio:init
@@ -135,11 +136,11 @@ bun run test
 bun run build
 ```
 
-Nota de rendimiento: `bun run check` ahora concentra formato, lint y type-check en un solo paso. Para debugging iterativo conviene usar `bun run validate:fast` y reservar `bun run validate:full` para la verificacion final.
+Performance note: `bun run check` now combines format, lint, and type-check in one step. For iterative debugging, prefer `bun run validate:fast` and reserve `bun run validate:full` for final verification.
 
-Tambien puedes consultar:
+You can also inspect:
 
 - `http://localhost:4317/api/health`
-- la carpeta de logs dentro de tu biblioteca local
-- `logs/tooling/` para logs de calidad/build del repo
-- `README.md` para el flujo de setup completo
+- the logs folder inside your Studio Library
+- `logs/tooling/` for repo quality/build logs
+- `README.md` for the full setup flow

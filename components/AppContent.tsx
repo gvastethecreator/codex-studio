@@ -39,20 +39,19 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
       {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
 
-      <main
-        className="relative z-10 flex w-full flex-1 min-h-0 overflow-hidden"
+      <button
+        type="button"
+        className="relative z-10 flex w-full flex-1 min-h-0 overflow-hidden appearance-none border-none p-0 m-0 bg-transparent"
         onClick={shell.root.onMainClick}
         onKeyDown={(e) => {
           if (e.key === 'Enter' || e.key === ' ') shell.root.onMainClick();
         }}
-        role="button"
-        tabIndex={0}
       >
         <div className="relative min-w-0 flex-1 overflow-hidden">
           <StudioViewport {...shell.viewport} />
         </div>
         <StudioOperationsRail {...shell.viewport.studioPageController.operations} />
-      </main>
+      </button>
 
       <StudioGenerationDock {...shell.generationDock} />
 

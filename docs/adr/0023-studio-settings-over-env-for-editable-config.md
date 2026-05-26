@@ -1,13 +1,19 @@
-# ADR 0023: Studio Settings over Env for Editable Configuration
+# ADR 0023: Studio Settings over Env for Editable Config
 
-## Estado
+## Status
 
-Aceptado.
+Accepted.
 
-## Contexto
+## Context
 
-Editable product configuration belongs in Studio Settings stored with the Studio Library, not in `.env.local`. Environment configuration remains a bootstrap mechanism for values needed before the backend can load settings, such as the initial library path, ports, development flags, and secrets.
+Some settings are user-editable product preferences, while others are runtime configuration or secrets. Editing every setting through `.env` is a poor UX; storing secrets in SQLite is unsafe.
 
-## Consecuencias
+## Decision
 
-The configuration UI should read and write Studio Settings through backend APIs and SQLite-backed storage. Agents should avoid changing `.env.local` for normal product preferences and should reserve it for bootstrap or secret-bearing values.
+Use Studio Settings for non-secret editable preferences and runtime endpoints that are safe to persist. Keep Provider Secrets in backend environment or secret stores only.
+
+## Consequences
+
+- users can adjust safe settings from the UI;
+- secrets remain out of SQLite-backed settings;
+- configuration docs must distinguish editable settings from secret/runtime configuration.

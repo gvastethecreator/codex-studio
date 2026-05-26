@@ -1,13 +1,19 @@
-# ADR 0021: Store Task Specs and Compile Provider Inputs
+# ADR 0021: Store Task Spec, Compile Provider Input
 
-## Estado
+## Status
 
-Aceptado.
+Accepted.
 
-## Contexto
+## Context
 
-Codex Studio stores rich, structured Generation Task Specs for traceability, re-edition, debugging, and provider portability. Each Generation Provider receives a Compiled Provider Input derived from that spec, so Codex can get compact prompts while hosted APIs or local workflows receive direct structured payloads instead of token-heavy prompt translations.
+Persisting only provider payloads loses product intent and makes old jobs hard to inspect. Persisting only UI state is not sufficient for reliable replays.
 
-## Consecuencias
+## Decision
 
-Token optimization should focus on provider compilers, not on weakening recipe data. Jobs and catalog metadata should preserve the source spec and, when useful for audit, the compiled provider input that was actually executed.
+Persist Task Specs and compile provider input when execution starts. Provider payloads may be logged as redacted diagnostics, but Task Specs are the primary durable artifact.
+
+## Consequences
+
+- jobs are inspectable and replayable at the product level;
+- provider migrations are easier;
+- compilation behavior must be deterministic and covered by tests.

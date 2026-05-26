@@ -1,13 +1,19 @@
 # ADR 0024: Toolbar Command Center
 
-## Estado
+## Status
 
-Aceptado.
+Accepted.
 
-## Contexto
+## Context
 
-The top toolbar is the studio's Command Center for global status and commands: backend/Codex readiness, usage, active provider, queue awareness, library and workspace switching, and entry points to settings or diagnostics. Heavier configuration, activity, and provider diagnostics open from the Command Center rather than living as permanent floating panels.
+Primary actions were scattered across panels, modals, and contextual controls. This made keyboard/accessibility work and contributor navigation harder.
 
-## Consecuencias
+## Decision
 
-UI cleanup should demote scattered floating global panels into toolbar status items, menus, modals, or invoked panels. The toolbar must stay scannable: it exposes high-signal status and command entry points, not every detailed control inline.
+Treat the toolbar as a command center for high-frequency actions and route commands through explicit handlers instead of burying behavior in leaf controls.
+
+## Consequences
+
+- core actions are easier to find;
+- command handlers can be tested and reused;
+- panels can stay focused on local state and presentation.

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useMemo } from 'react';
+import React, { useState, useRef, useMemo, useCallback } from 'react';
 import {
   Clapperboard,
   Video,
@@ -82,9 +82,9 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
   const activeImage = config.attachments[0];
   const ratioValue = useMemo(() => RATIO_MAP[config.aspectRatio] || 1.777, [config.aspectRatio]);
 
-  const handleFrameChange = (count: number) => {
+  const handleFrameChange = useCallback((count: number) => {
     setParams((p) => ({ ...p, frames: count }));
-  };
+  }, []);
 
   const gridLayout = useMemo(() => {
     const isPortrait = ratioValue < 1;
@@ -285,19 +285,15 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
         </div>
 
         {!activeImage && (
-          <div
-            className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer z-10 hover:bg-white/5 transition-colors bg-white/[0.01]"
+          <button
+            type="button"
+            className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer z-10 hover:bg-white/5 transition-colors bg-white/[0.01] appearance-none border-none p-0 m-0"
             onClick={() => fileInputRef.current?.click()}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
-            }}
             onDragOver={(e) => {
               e.preventDefault();
               e.stopPropagation();
             }}
             onDrop={handleDrop}
-            role="button"
-            tabIndex={0}
           >
             <input
               type="file"
@@ -321,14 +317,14 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
                 Upload Shot or enter prompt
               </p>
             </div>
-          </div>
+          </button>
         )}
 
         {activeImage && (
           <button
             type="button"
             onClick={() => updateConfig('attachments', [])}
-            className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-black/60 text-zinc-400 hover:text-white hover:bg-red-500 transition-all pointer-events-auto border border-white/10"
+            className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-black/60 text-white hover:text-white hover:bg-red-500 transition-all pointer-events-auto border border-white/10"
           >
             <X size={14} />
           </button>

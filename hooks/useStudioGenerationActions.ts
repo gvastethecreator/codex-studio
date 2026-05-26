@@ -157,7 +157,7 @@ export function useStudioGenerationActions({
           '- Preserve the requested subject, composition, lighting, material detail, and aspect ratio.',
         ].join('\n'),
       );
-      addToast('Prompt preparado para Codex ImageGen', 'success');
+      addToast('Prompt prepared for Codex ImageGen', 'success');
     } catch (error) {
       addToast(error instanceof Error ? error.message : 'Prompt refinement failed', 'error');
     } finally {

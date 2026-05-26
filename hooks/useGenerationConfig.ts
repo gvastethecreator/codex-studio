@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useMemo } from 'react';
+import React, { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import type {
   ImageGenerationConfig,
   Attachment,
@@ -11,6 +11,13 @@ import useIndexedDBStorage from './useIndexedDBStorage';
 import { normalizeImageGenRatio } from '../utils/imageGenSizing';
 import { formatErrorMessage } from '../utils/runtimeLogger';
 import { resolveStudioApiBase } from '../services/studioRuntime';
+import {
+  normalizeCodexReasoningEffort,
+  normalizeCodexSpeed,
+  pickPreferredCodexModel,
+} from '../lib/codexExecution';
+import { getCodexModelCatalog } from '../services/localStudioService';
+import type { CodexModel, CodexModelCatalogResponse } from '../packages/shared/src';
 
 interface UseGenerationConfigProps {
   log: (message: string) => void;
@@ -22,6 +29,9 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     DEFAULT_GENERATION_CONFIG,
   );
 
+  const logRef = useRef(log);
+  logRef.current = log;
+
   const maxAttachments = 5;
 
   useEffect(() => {
@@ -30,9 +40,9 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
         ...prev,
         attachments: prev.attachments.slice(0, maxAttachments),
       }));
-      log(`Context trimmed to ${maxAttachments} for current model.`);
+      logRef.current(`Context trimmed to ${maxAttachments} for current model.`);
     }
-  }, [generationConfig.attachments.length, maxAttachments, log, setGenerationConfig]);
+  }, [generationConfig.attachments.length, maxAttachments, setGenerationConfig]);
 
   useEffect(() => {
     const normalizedRatio = normalizeImageGenRatio(generationConfig.aspectRatio);
@@ -41,9 +51,9 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
         ...prev,
         aspectRatio: normalizeImageGenRatio(prev.aspectRatio),
       }));
-      log(`Aspect ratio normalized to ${normalizedRatio} for Codex ImageGen compatibility.`);
+      logRef.current(`Aspect ratio normalized to ${normalizedRatio} for Codex ImageGen compatibility.`);
     }
-  }, [generationConfig.aspectRatio, log, setGenerationConfig]);
+  }, [generationConfig.aspectRatio, setGenerationConfig]);
 
   useEffect(() => {
     const executionModel = generationConfig.executionModel?.trim();
@@ -68,14 +78,59 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
           ? executionSpeed
           : DEFAULT_GENERATION_CONFIG.executionSpeed,
     }));
-    log('Codex execution settings normalized to defaults.');
+    logRef.current('Codex execution settings normalized to defaults.');
   }, [
     generationConfig.executionModel,
     generationConfig.executionReasoningEffort,
     generationConfig.executionSpeed,
-    log,
     setGenerationConfig,
   ]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    void getCodexModelCatalog()
+      .then((catalog) => {
+        if (cancelled) return;
+
+        const codexModels = catalog?.models ?? [];
+        if (codexModels.length === 0) return;
+
+        setGenerationConfig((prev) => {
+          const preferredId = pickPreferredCodexModel(codexModels, prev.executionModel);
+          const selectedModel =
+            codexModels.find((m: CodexModel) => m.id === prev.executionModel) ??
+            codexModels.find((m: CodexModel) => m.id === preferredId) ??
+            null;
+
+          let next = prev;
+
+          if (preferredId && preferredId !== prev.executionModel) {
+            next = { ...next, executionModel: preferredId };
+          }
+
+          const normalizedReasoning = normalizeCodexReasoningEffort(
+            selectedModel,
+            next.executionReasoningEffort,
+          );
+          if (normalizedReasoning !== next.executionReasoningEffort) {
+            next = { ...next, executionReasoningEffort: normalizedReasoning };
+          }
+
+          const normalizedSpeed = normalizeCodexSpeed(selectedModel, next.executionSpeed);
+          if (normalizedSpeed !== next.executionSpeed) {
+            next = { ...next, executionSpeed: normalizedSpeed };
+          }
+
+          return next === prev ? prev : next;
+        });
+      })
+      .catch(() => {});
+
+    return () => {
+      cancelled = true;
+    };
+  }, [setGenerationConfig]);
 
   const updateGenerationConfig = useCallback(
     <K extends keyof ImageGenerationConfig>(key: K, value: ImageGenerationConfig[K]) => {

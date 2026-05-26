@@ -234,7 +234,7 @@ const StylePresetCard = React.memo(
     const [resultIndex, setResultIndex] = useState(0);
     const isHoveredRef = useRef(false);
 
-    const resultImages = visualState?.resultImages ?? [];
+    const resultImages = visualState?.resultImages ?? EMPTY_IMAGES;
     const hasMultipleResults = resultImages.length > 1;
     const activeResultImage = resultImages[resultIndex] ?? resultImages[0] ?? null;
 
@@ -488,14 +488,10 @@ const StylePresetCard = React.memo(
 
           <div className="absolute inset-x-0 bottom-0 z-20 px-3 pt-4 pb-0">
             <div className="rounded-t-xl rounded-b-none border border-white/10 border-b-0 bg-zinc-950/34 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md">
-              <div
+              <button
+                type="button"
                 onClick={() => onApply(preset)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') onApply(preset);
-                }}
-                role="button"
-                tabIndex={0}
-                className="flex cursor-pointer flex-col justify-center"
+                className="flex cursor-pointer flex-col justify-center appearance-none border-none p-0 m-0 bg-transparent text-left w-full"
               >
                 <div className="mb-1 flex w-full items-center justify-between gap-2">
                   <span
@@ -510,7 +506,7 @@ const StylePresetCard = React.memo(
                 <span className="line-clamp-2 pr-7 text-[8px] leading-relaxed text-zinc-300/80 group-hover:text-zinc-200/90">
                   {preset.style.aesthetic}
                 </span>
-              </div>
+              </button>
 
               <div className="absolute bottom-2 right-2 flex items-center gap-1">
                 {hasMultipleResults && (
@@ -560,7 +556,7 @@ const StylePresetGroupSection = React.memo(
     onShowAll,
   }: StylePresetGroupSectionProps) => {
     const sectionRef = useRef<HTMLDivElement>(null);
-    const [isNearViewport, setIsNearViewport] = useState(initiallyVisible);
+    const [isNearViewport, setIsNearViewport] = useState(() => initiallyVisible);
     const visiblePresets = useMemo(
       () => getVisibleStylePresets(presets, expanded, STYLE_GROUP_INITIAL_RENDER_LIMIT),
       [expanded, presets],
@@ -738,17 +734,21 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const activeImage = config.attachments[0];
+  const activeImageRef = useRef(activeImage);
+  activeImageRef.current = activeImage;
   const initializedImageId = useRef<string | null>(null);
 
   const [currentPackId, setCurrentPackId] = useState(DEFAULT_STYLE_PACK_ID);
   const [loadedStylePacksById, setLoadedStylePacksById] = useState<
     Record<string, StyleRuntimePack>
   >({});
-  const [activePresetId, setActivePresetId] = useState<string | null>(null);
-  const [copiedStyleId, setCopiedStyleId] = useState<string | null>(null);
-  const [hoveredPresetPreview, setHoveredPresetPreview] = useState<StyleCardHoverPreview | null>(
-    null,
-  );
+  const [interactionState, setInteractionState] = useState({
+    activePresetId: null as string | null,
+    copiedStyleId: null as string | null,
+    hoveredPresetPreview: null as StyleCardHoverPreview | null,
+    styleStrength: 0.8,
+  });
+  const { activePresetId, copiedStyleId, hoveredPresetPreview, styleStrength } = interactionState;
   const lastHoveredPresetPreviewRef = useRef<StyleCardHoverPreview | null>(null);
   if (hoveredPresetPreview) {
     lastHoveredPresetPreviewRef.current = hoveredPresetPreview;
@@ -756,27 +756,36 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const timeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
+    const timeout = timeoutRef.current;
     return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
+      if (timeout) {
+        clearTimeout(timeout);
       }
     };
   }, []);
 
   // -- FILTERS & STATE --
-  const [searchQuery, setSearchQuery] = useState('');
-  const [sortOrder, setSortOrder] = useState<'az' | 'za'>('az');
-  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
-  const [isCatalogSearchOpen, setIsCatalogSearchOpen] = useState(false);
+  const [browserState, setBrowserState] = useState({
+    searchQuery: '',
+    sortOrder: 'az' as 'az' | 'za',
+    showFavoritesOnly: false,
+    isCatalogSearchOpen: false,
+    expandedStyleGroups: new Set<string>(),
+    showAllStyleCategories: false,
+    styleScrollWidth: 0,
+  });
+  const {
+    searchQuery,
+    sortOrder,
+    showFavoritesOnly,
+    isCatalogSearchOpen,
+    expandedStyleGroups,
+    showAllStyleCategories,
+    styleScrollWidth,
+  } = browserState;
   const [favorites, setFavorites] = useLocalStorage<string[]>('style-favorites', []);
   const [gridColumns, setGridColumns] = useLocalStorage<number>('styles-grid-columns', 4);
   const styleScrollRootRef = useRef<HTMLDivElement>(null);
-  const [styleScrollWidth, setStyleScrollWidth] = useState(0);
-  const [expandedStyleGroups, setExpandedStyleGroups] = useState<Set<string>>(new Set());
-  const [showAllStyleCategories, setShowAllStyleCategories] = useState(false);
-
-  // Style Influence (Default 80%)
-  const [styleStrength, setStyleStrength] = useState(0.8);
 
   const cacheStylePack = useCallback((pack: StyleRuntimePack) => {
     setLoadedStylePacksById((current) =>
@@ -823,14 +832,14 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   );
 
   const showAllStylesInGroup = useCallback((groupKey: string) => {
-    setExpandedStyleGroups((current) => new Set(current).add(groupKey));
+    setBrowserState((current) => ({ ...current, expandedStyleGroups: new Set(current.expandedStyleGroups).add(groupKey) }));
   }, []);
 
   useEffect(() => {
     const node = styleScrollRootRef.current;
     if (!node || typeof ResizeObserver === 'undefined') return;
 
-    const updateWidth = () => setStyleScrollWidth(node.clientWidth);
+    const updateWidth = () => setBrowserState((prev) => ({ ...prev, styleScrollWidth: node.clientWidth }));
     updateWidth();
 
     const observer = new ResizeObserver(updateWidth);
@@ -840,9 +849,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   // Force strength to 0.15 (15%) by default ONLY ONCE per new image
   useEffect(() => {
-    if (activeImage && activeImage.id !== initializedImageId.current) {
-      updateAttachment(activeImage.id, { strength: 0.15 });
-      initializedImageId.current = activeImage.id;
+    const img = activeImageRef.current;
+    if (img && img.id !== initializedImageId.current) {
+      updateAttachment(img.id, { strength: 0.15 });
+      initializedImageId.current = img.id;
     }
   }, [activeImage?.id, updateAttachment]);
 
@@ -867,7 +877,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const prevRecipePresetIdRef = useRef(recipePresetId);
   if (recipePresetId && recipePresetId !== prevRecipePresetIdRef.current) {
     prevRecipePresetIdRef.current = recipePresetId;
-    setActivePresetId(recipePresetId);
+    setInteractionState((prev) => ({ ...prev, activePresetId: recipePresetId }));
   }
 
   const activePack = useMemo(() => {
@@ -980,9 +990,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const prevFilterKeyRef = useRef(filterKey);
   if (prevFilterKeyRef.current !== filterKey) {
     prevFilterKeyRef.current = filterKey;
-    setHoveredPresetPreview(null);
-    setExpandedStyleGroups(new Set());
-    setShowAllStyleCategories(false);
+    setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: null }));
+    setBrowserState((prev) => ({
+      ...prev,
+      expandedStyleGroups: new Set(),
+      showAllStyleCategories: false,
+    }));
   }
 
   const processedData = useMemo(
@@ -1020,7 +1033,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     styleRenderPlan;
 
   const handleApplyStyle = async (preset: StyleRuntimePreset, presetPackIdOverride?: string) => {
-    setActivePresetId(preset.id);
+    setInteractionState((prev) => ({ ...prev, activePresetId: preset.id }));
 
     const presetPackId = presetPackIdOverride ?? getPackIdForPreset(preset);
     const categoryBaseUrl = preset.category
@@ -1150,17 +1163,23 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     });
   };
 
-  const handleCloseCatalogSearch = useCallback(() => setIsCatalogSearchOpen(false), []);
+  const handleApplyStyleRef = useRef(handleApplyStyle);
+  handleApplyStyleRef.current = handleApplyStyle;
+
+  const handleCloseCatalogSearch = useCallback(() => setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false })), []);
 
   const handleSelectCatalogPreset = useCallback((result: StylePresetCatalogSearchResult) => {
     startViewTransition(() => {
       setCurrentPackId(result.packId);
-      setSearchQuery(result.name);
-      setActivePresetId(result.id);
-      setShowAllStyleCategories(true);
-      setExpandedStyleGroups(new Set([result.categoryName]));
+      setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
+      setBrowserState((prev) => ({
+        ...prev,
+        searchQuery: result.name,
+        showAllStyleCategories: true,
+        expandedStyleGroups: new Set([result.categoryName]),
+      }));
     });
-    setIsCatalogSearchOpen(false);
+    setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false }));
   }, []);
 
   const handleApplyCatalogPreset = useCallback(
@@ -1172,11 +1191,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       if (!preset) return;
 
       setCurrentPackId(result.packId);
-      setActivePresetId(result.id);
-      setIsCatalogSearchOpen(false);
-      void handleApplyStyle(preset, result.packId);
+      setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
+      setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false }));
+      void handleApplyStyleRef.current(preset, result.packId);
     },
-    [loadedStylePacksById, cacheStylePack, handleApplyStyle],
+    [loadedStylePacksById, cacheStylePack],
   );
 
   const handleCopyStylePrompt = (e: React.MouseEvent, preset: StyleRuntimePreset) => {
@@ -1193,10 +1212,13 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 **Quality:** ${describeStyleValue(preset.style.rendering_and_quality ?? preset.style.render_quality)}
 `.trim();
     void navigator.clipboard.writeText(promptText);
-    setCopiedStyleId(preset.id);
+    setInteractionState((prev) => ({ ...prev, copiedStyleId: preset.id }));
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setCopiedStyleId(null), 2000);
+    timeoutRef.current = window.setTimeout(() => setInteractionState((prev) => ({ ...prev, copiedStyleId: null })), 2000);
   };
+
+  const handleCopyStylePromptRef = useRef(handleCopyStylePrompt);
+  handleCopyStylePromptRef.current = handleCopyStylePrompt;
 
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
@@ -1247,11 +1269,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           copied={copiedStyleId === preset.id}
           favorite={favorites.includes(preset.id)}
           theme={activeTheme}
-          onApply={handleApplyStyle}
-          onCopy={handleCopyStylePrompt}
+          onApply={handleApplyStyleRef.current}
+          onCopy={handleCopyStylePromptRef.current}
           onToggleFavorite={toggleFavorite}
           onOpenImage={onOpenImage}
-          onHoverPreviewChange={setHoveredPresetPreview}
+          onHoverPreviewChange={(preview) => setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: preview }))}
         />
       );
     },
@@ -1261,8 +1283,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       favorites,
       activeTheme,
       onOpenImage,
-      handleApplyStyle,
-      handleCopyStylePrompt,
       toggleFavorite,
       presetVisualStateById,
     ],
@@ -1302,16 +1322,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   </button>
                 </div>
               ) : (
-                <div
+                <button
+                  type="button"
                   onDragOver={(e) => e.preventDefault()}
                   onDrop={handleDrop}
                   onClick={() => fileInputRef.current?.click()}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
-                  }}
-                  role="button"
-                  tabIndex={0}
-                  className="group flex size-full cursor-pointer flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border-2 border-dashed border-white/5 bg-white/1 transition-all hover:border-white/20 hover:bg-white/3"
+                  className="group flex size-full cursor-pointer flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border-2 border-dashed border-white/5 bg-white/1 transition-all hover:border-white/20 hover:bg-white/3 appearance-none p-0 m-0"
                 >
                   <input
                     type="file"
@@ -1337,7 +1353,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                       Upload or enter prompt
                     </h3>
                   </div>
-                </div>
+                </button>
               )}
 
               <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-3xl">
@@ -1416,7 +1432,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 min={0.1}
                 max={1}
                 step={0.05}
-                onChange={setStyleStrength}
+                onChange={(value) => setInteractionState((prev) => ({ ...prev, styleStrength: value }))}
               />
 
               <div className="flex justify-between mt-2 text-[8px] font-black uppercase tracking-widest text-zinc-600">
@@ -1446,7 +1462,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             onClick={() => {
               startViewTransition(() => {
                 setCurrentPackId(FAVORITES_PACK_ID);
-                setSearchQuery('');
+                setBrowserState((prev) => ({ ...prev, searchQuery: '' }));
               });
             }}
             className={`
@@ -1480,7 +1496,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 onClick={() => {
                   startViewTransition(() => {
                     setCurrentPackId(pack.id);
-                    setSearchQuery('');
+                    setBrowserState((prev) => ({ ...prev, searchQuery: '' }));
                   });
                 }}
                 className={`
@@ -1527,12 +1543,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 type="text"
                 placeholder="Search styles..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => setBrowserState((prev) => ({ ...prev, searchQuery: e.target.value }))}
                 aria-label="Search styles"
                 className="bg-transparent border-none outline-none text-[11px] text-white placeholder-zinc-600 w-full font-medium"
               />
               {searchQuery && (
-                <button type="button" onClick={() => setSearchQuery('')}>
+                <button type="button" onClick={() => setBrowserState((prev) => ({ ...prev, searchQuery: '' }))}>
                   <X size={12} className="text-zinc-500 hover:text-white" />
                 </button>
               )}
@@ -1542,7 +1558,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             <button
               type="button"
-              onClick={() => setIsCatalogSearchOpen(true)}
+              onClick={() => setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: true }))}
               data-style-open-catalog
               className="flex h-8 items-center gap-2 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
               title="Open Style Catalog"
@@ -1553,7 +1569,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             <button
               type="button"
-              onClick={() => setSortOrder((prev) => (prev === 'az' ? 'za' : 'az'))}
+              onClick={() => setBrowserState((prev) => ({ ...prev, sortOrder: prev.sortOrder === 'az' ? 'za' : 'az' }))}
               className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors"
               title={sortOrder === 'az' ? 'Sort A-Z' : 'Sort Z-A'}
             >
@@ -1563,7 +1579,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             {currentPackId !== FAVORITES_PACK_ID && (
               <button
                 type="button"
-                onClick={() => setShowFavoritesOnly((prev) => !prev)}
+                onClick={() => setBrowserState((prev) => ({ ...prev, showFavoritesOnly: !prev.showFavoritesOnly }))}
                 className={`p-1.5 rounded-lg transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
                 title="Filter Favorites in this Pack"
               >
@@ -1647,7 +1663,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             {hiddenStyleGroupEntries.length > 0 && (
               <button
                 type="button"
-                onClick={() => setShowAllStyleCategories(true)}
+                onClick={() => setBrowserState((prev) => ({ ...prev, showAllStyleCategories: true }))}
                 data-style-show-all-categories
                 data-style-hidden-groups={hiddenStyleGroupEntries.length}
                 data-style-hidden-presets={hiddenStylePresetCount}

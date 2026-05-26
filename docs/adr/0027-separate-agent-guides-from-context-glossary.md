@@ -1,13 +1,19 @@
-# ADR 0027: Separate Agent Guides from the Context Glossary
+# ADR 0027: Separate Agent Guides from Context Glossary
 
-## Estado
+## Status
 
-Aceptado.
+Accepted.
 
-## Contexto
+## Context
 
-Codex Studio should use `CONTEXT.md`, `AGENTS.md`, and `SKILLS.md` for different purposes. `CONTEXT.md` remains a glossary; `AGENTS.md` should guide everyday repo work, commands, validation, safety boundaries, and Codex documentation alignment; `SKILLS.md` should document specialized workflows such as adding providers, recipe modules, style presets, config surfaces, token audits, and import pipelines.
+Agent instructions, contributor workflow, and domain glossary served different audiences but were mixed across docs. That made both human onboarding and AI-agent navigation noisier.
 
-## Consecuencias
+## Decision
 
-Future documentation updates should avoid copying the same concepts across files. Agent-facing instructions belong in `AGENTS.md`, workflow playbooks belong in `SKILLS.md`, and vocabulary belongs in `CONTEXT.md`.
+Keep project context and glossary in `CONTEXT.md`. Keep agent-specific operating rules in `AGENTS.md` and skill guides. Keep deeper rationale in ADRs and topic docs.
+
+## Consequences
+
+- documentation has clearer ownership;
+- contributors can find domain language without reading agent process rules;
+- agents can load operational guidance without bloating product context.

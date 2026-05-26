@@ -50,9 +50,10 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     const timeoutRef = useRef<number | null>(null);
 
     React.useEffect(() => {
+      const timeout = timeoutRef.current;
       return () => {
-        if (timeoutRef.current) {
-          clearTimeout(timeoutRef.current);
+        if (timeout) {
+          clearTimeout(timeout);
         }
       };
     }, []);
@@ -88,18 +89,14 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     };
 
     return (
-      <div
-        ref={itemRef}
-        className={`masonry-item mb-4 relative group rounded-xl overflow-hidden cursor-pointer transition-all duration-700 ease-out-expo 
+      <button
+        type="button"
+        ref={itemRef as React.Ref<HTMLButtonElement>}
+        className={`masonry-item mb-4 relative group rounded-xl overflow-hidden cursor-pointer transition-all duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
         ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'shadow-lg'}
         animate-in fade-in-0 zoom-in-95
       `}
         onClick={handleImageClick}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') handleImageClick();
-        }}
-        role="button"
-        tabIndex={0}
       >
         <img
           src={image.thumbnail || image.src}
@@ -210,6 +207,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           </div>
         </div>
       </div>
+      </button>
     );
   },
 );

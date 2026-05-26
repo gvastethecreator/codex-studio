@@ -1,71 +1,37 @@
-# ADR 0001: Codex Studio local sin API key
+# ADR 0001: Local Codex Studio
 
-## Estado
+## Status
 
-Aceptado.
+Accepted.
 
-## Contexto
+## Context
 
-La aplicacion actual es una SPA React/Vite orientada a generacion de imagenes con Gemini desde el navegador. El nuevo objetivo es convertirla en un studio local para generar y administrar imagenes con la cuenta autenticada de Codex/ChatGPT del usuario, evitando `OPENAI_API_KEY`.
-
-La documentacion oficial de Codex app-server describe una integracion local programatica mediante JSON-RPC y turns/threads. La skill local `$imagegen` permite generar o editar imagenes desde Codex sin requerir una API key directa cuando se usa el modo integrado de Codex.
+The original app was a React/Vite SPA for browser-based image generation. The new product direction is a local-first studio that uses the user's authenticated Codex/ChatGPT session through `codex app-server`, without requiring `OPENAI_API_KEY` for the main flow.
 
 ## Decision
 
-Construiremos un studio local con estas piezas:
+Build Codex Studio as a local app with:
 
-- Backend local TypeScript ejecutado con Bun.
-- Hono para REST y SSE.
-- `codex app-server` como proceso local supervisado por el backend.
-- SQLite como fuente de verdad dentro de una biblioteca externa.
-- React/Vite como UI del studio.
-- `~/AI-Studio-Library` como biblioteca externa por defecto (por ejemplo `%USERPROFILE%\AI-Studio-Library` en Windows).
-- `$imagegen` como motor de generacion real invocado por turns de Codex.
+- a Bun/Hono backend;
+- `codex app-server` supervised by the backend;
+- SQLite in an external Studio Library;
+- React/Vite as the studio UI;
+- `~/AI-Studio-Library` as the default library path;
+- Codex image generation as the primary generation route.
 
-La automatizacion visual de Codex/ChatGPT no sera ruta critica. Podra agregarse despues como fallback auxiliar si algun flujo no esta expuesto por app-server.
+Browser automation is not the critical path. It can be explored later as an auxiliary fallback if needed.
 
-## Consecuencias
+## Consequences
 
-### Positivas
+Positive:
 
-- No se requiere `OPENAI_API_KEY`.
-- El usuario trabaja con la sesion local autenticada de Codex/ChatGPT.
-- La cola puede sobrevivir al cierre de la UI.
-- La biblioteca es portable y separada del codigo fuente.
-- SQLite permite consultas, auditoria y recuperacion.
-- Logs y transcripts permiten depurar generaciones reales.
+- no direct API key requirement for the primary flow;
+- jobs and assets survive UI reloads;
+- the Studio Library is portable and separate from the source repo;
+- logs and transcripts make real generations debuggable.
 
-### Negativas
+Negative:
 
-- El studio depende de Codex instalado, logueado y disponible en la maquina.
-- La integracion con app-server puede cambiar y requiere validacion contra el proceso real.
-- El backend debe gestionar procesos hijos, logs y errores de app-server.
-- El descubrimiento de imagenes generadas puede necesitar multiples estrategias.
-
-## Alternativas consideradas
-
-### OpenAI API directa
-
-Descartada porque requiere `OPENAI_API_KEY`, que el usuario no tiene ni quiere usar como requisito.
-
-### Solo SPA con IndexedDB
-
-Descartada porque no puede supervisar una cola persistente, manejar procesos locales, SQLite, filesystem ni `codex app-server` de forma robusta.
-
-### Automatizar UI visual de ChatGPT/Codex
-
-Descartada como ruta critica por fragilidad. Puede quedar como fallback auxiliar.
-
-### Backend sin framework con `Bun.serve`
-
-Descartado para la primera implementacion porque REST, SSE, middleware y errores quedan mas mantenibles con Hono sin introducir un framework pesado.
-
-## Reglas de implementacion
-
-- No guardar secretos de API de OpenAI.
-- No guardar assets generados dentro del repo salvo fixtures/placeholders.
-- No borrar fisicamente por defecto; usar soft delete y `.trash`.
-- Guardar prompt original, prompt expandido y prompt final usado.
-- Guardar logs en UI y disco.
-- Guardar transcripts crudos del app-server cuando existan.
-- Implementar primero dry run local y luego Codex real.
+- the product depends on Codex being installed, authenticated, and available on the machine;
+- `codex app-server` behavior may change and must be validated against the real process;
+- the backend must manage child processes, logs, filesystem, and failure modes.

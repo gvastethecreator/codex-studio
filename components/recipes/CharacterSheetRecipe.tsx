@@ -157,16 +157,12 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
               </button>
             </>
           ) : (
-            <div
+            <button
+              type="button"
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
-              }}
-              role="button"
-              tabIndex={0}
-              className="absolute inset-0 flex cursor-pointer flex-col items-center justify-center gap-6 transition-colors hover:bg-white/1"
+              className="absolute inset-0 flex cursor-pointer flex-col items-center justify-center gap-6 transition-colors hover:bg-white/1 appearance-none border-none p-0 m-0 bg-transparent"
             >
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[40px_40px]" />
               <input
@@ -192,7 +188,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                   Upload Reference or Describe below
                 </p>
               </div>
-            </div>
+            </button>
           )}
         </div>
       </div>

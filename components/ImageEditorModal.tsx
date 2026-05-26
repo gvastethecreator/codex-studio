@@ -80,10 +80,8 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   }, [image]);
 
   useEffect(() => {
-    if (isOpen) {
-      setupCanvas();
-    }
-  }, [isOpen, setupCanvas]);
+    setupCanvas();
+  }, [setupCanvas]);
 
   const getMousePos = (e: React.MouseEvent) => {
     const canvas = canvasRef.current;
@@ -207,14 +205,13 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-100 bg-black/98 backdrop-blur-3xl flex flex-col animate-in fade-in duration-500"
+    <button
+      type="button"
+      className="fixed inset-0 z-100 bg-black/98 backdrop-blur-3xl flex flex-col animate-in fade-in duration-500 appearance-none border-none p-0 m-0"
       onClick={handleClose}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') handleClose();
       }}
-      role="button"
-      tabIndex={0}
     >
       <div
         className="h-20 w-full flex items-center justify-between px-10 border-b border-white/5"
@@ -295,7 +292,6 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
               onChange={(e) => setEditPrompt(e.target.value)}
               placeholder="Describe the changes..."
               aria-label="Edit prompt"
-              autoFocus
               className="w-full min-h-40 max-h-75 bg-black/40 rounded-2xl p-5 text-[13px] font-bold leading-relaxed focus:bg-black/60 transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar"
             />
           </div>
@@ -357,6 +353,6 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
