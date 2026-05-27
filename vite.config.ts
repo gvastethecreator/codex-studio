@@ -6,11 +6,11 @@ const rootDir = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
   server: {
-    port: 3000,
+    port: 17222,
     host: 'localhost',
   },
   preview: {
-    port: 3000,
+    port: 17222,
     host: 'localhost',
   },
   plugins: lazyPlugins(async () => {

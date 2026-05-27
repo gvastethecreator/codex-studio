@@ -11,7 +11,7 @@ graph TD
     UI --> RUNTIME["useStudioRuntime"]
     PIPE --> RUN["Local Generation Run"]
     RUNTIME --> SYNC["Local Studio Sync"]
-    RUN --> API["Bun/Hono local API :4317"]
+    RUN --> API["Bun/Hono local API :17223"]
     SYNC --> API
     API --> EVENTS["GET /api/events (SSE)"]
     EVENTS --> RUN
@@ -22,7 +22,7 @@ graph TD
     API --> LIB["Studio Library .studio + outputs"]
     API --> PROVIDERS["Provider Boundary"]
     PROVIDERS --> CODEX["Codex Product Runtime"]
-    CODEX --> CX["codex app-server ws://127.0.0.1:4318"]
+    CODEX --> CX["codex app-server ws://127.0.0.1:17224"]
     CX --> TURN["Codex image turns"]
     PROVIDERS --> FAL["fal.ai hosted API"]
     PROVIDERS --> GOOGLE["Google Gemini image API"]
@@ -31,6 +31,8 @@ graph TD
 
 ## Main seams
 
+- `hooks/useStudioShell.ts`: materializes the `Studio Shell` by composing deeper shell-facing seams instead of owning catalog, page, and command wiring inline.
+- `hooks/useCatalog.ts`: exposes the `Image Catalog` read seam plus `useStudioCatalogController()` for catalog mutations, queue-result previews, trash grouping, and refresh choreography.
 - `services/studioRuntime.ts`: resolves the backend API base and runtime metadata without coupling the renderer to Electron.
 - `hooks/useStudioRuntime.ts`: aggregates sync, onboarding, diagnostics, readiness, and session verification for shell consumers.
 - `hooks/useLocalStudioSync.ts`: performs HTTP catch-up, subscribes to `GET /api/events`, mirrors backend jobs/logs, and refreshes the catalog.
@@ -41,6 +43,8 @@ graph TD
 - `lib/studioCatalogView.ts`: pure Catalog Entry read model. It groups and filters catalog data without depending on Visual Batches or IndexedDB.
 - `lib/studioCatalogImageAdapter.ts`: materializes UI images from Catalog Entries.
 - `lib/studioLegacyVisualSnapshotExport.ts`: builds legacy `GenerationBatch[]` snapshots only for export compatibility.
+- `lib/buildStudioPageController.ts`: concentrates `Studio Page` debug, grid, and operations projection behind grouped shell contexts.
+- `lib/buildStudioHeaderToolbarProps.ts`: concentrates `Command Center` and header-toolbar transitions, runtime status derivation, queue counts, and provider fallback in one seam.
 - `lib/studioReadiness.ts` and `lib/studioDiagnostics.ts`: pure builders for onboarding, header status, and system panels.
 - `components/shell/StudioViewport.tsx`: demand-mounted route shell that lazy-loads studio and recipe surfaces.
 - `components/recipes/styles/manifests/`: granular source of truth for Style Pack Manifests and Style Preset Manifests.

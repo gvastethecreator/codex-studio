@@ -45,7 +45,7 @@ Check:
 Symptoms:
 
 - `bun run dev:ui` works, but the grid does not sync local jobs or assets;
-- the UI shows errors when calling `localhost:4317`.
+- the UI shows errors when calling `localhost:17223`.
 
 Check:
 
@@ -140,7 +140,7 @@ Performance note: `bun run check` now combines format, lint, and type-check in o
 
 You can also inspect:
 
-- `http://localhost:4317/api/health`
+- `http://localhost:17223/api/health`
 - the logs folder inside your Studio Library
 - `logs/tooling/` for repo quality/build logs
 - `README.md` for the full setup flow

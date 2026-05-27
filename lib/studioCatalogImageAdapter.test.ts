@@ -44,7 +44,7 @@ describe('studioCatalogImageAdapter', () => {
     expect(image).toEqual(
       expect.objectContaining({
         id: 'image-1',
-        src: 'http://localhost:4317/library/outputs/image-1.png',
+        src: 'http://localhost:17223/library/outputs/image-1.png',
         batchId: 'batch-1',
         isFavorite: true,
       }),
@@ -55,7 +55,7 @@ describe('studioCatalogImageAdapter', () => {
     const image = materializeCatalogEntryImage(catalogImage({ thumbnailUrl: null }));
 
     expect(image.thumbnail).toBe(
-      'http://localhost:4317/library/outputs/image-1.png?variant=thumb&max=512',
+      'http://localhost:17223/library/outputs/image-1.png?variant=thumb&max=512',
     );
   });
 
@@ -87,7 +87,7 @@ describe('studioCatalogImageAdapter', () => {
     expect(image).toEqual(
       expect.objectContaining({
         id: 'catalog-image',
-        src: 'http://localhost:4317/library/outputs/catalog-image.png',
+        src: 'http://localhost:17223/library/outputs/catalog-image.png',
         config: expect.objectContaining({
           prompt: 'Stored prompt',
           model: 'codex-imagegen',

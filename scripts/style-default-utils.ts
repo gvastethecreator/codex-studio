@@ -109,7 +109,7 @@ export async function loadPacks() {
 }
 
 export async function request<T>(pathName: string, init?: RequestInit): Promise<T> {
-  const apiBase = process.env.STUDIO_API_BASE || 'http://localhost:4317';
+  const apiBase = process.env.STUDIO_API_BASE || 'http://localhost:17223';
   const attempts = Number(process.env.STUDIO_API_RETRY_ATTEMPTS || 24);
   let lastError: unknown;
 

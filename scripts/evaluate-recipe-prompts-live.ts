@@ -144,7 +144,7 @@ export interface ExecuteLiveRecipeEvaluationOptions {
   continueOnError?: boolean;
 }
 
-const DEFAULT_API_BASE = 'http://127.0.0.1:4317';
+const DEFAULT_API_BASE = 'http://127.0.0.1:17223';
 const DEFAULT_VARIANT_NAMES: LiveEvaluationVariantName[] = ['legacy', 'directives'];
 const DEFAULT_POLL_MS = 2_000;
 const DEFAULT_TIMEOUT_MS = 15 * 60_000;

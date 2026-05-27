@@ -4,7 +4,7 @@ const { pathToFileURL } = require('node:url');
 const { app, BrowserWindow, shell } = require('electron');
 
 const rendererUrl = process.env.STUDIO_ELECTRON_RENDERER_URL;
-const apiBase = process.env.STUDIO_ELECTRON_API_BASE || 'http://localhost:4317';
+const apiBase = process.env.STUDIO_ELECTRON_API_BASE || 'http://localhost:17223';
 
 function getRendererEntryUrl() {
   if (rendererUrl) return rendererUrl;

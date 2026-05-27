@@ -122,7 +122,7 @@ export function buildStudioDiagnosticsSnapshot({
       label: 'Backend',
       value: isBackendConnected ? 'Connected' : 'Offline',
       detail: isBackendConnected
-        ? `HTTP API and live events are reachable on localhost:${health?.config.serverPort ?? 4317}.`
+        ? `HTTP API and live events are reachable on localhost:${health?.config.serverPort ?? 17223}.`
         : 'The Studio UI cannot reach the local backend right now. Check whether the local server is still running.',
       tone: isBackendConnected ? 'success' : 'danger',
     },

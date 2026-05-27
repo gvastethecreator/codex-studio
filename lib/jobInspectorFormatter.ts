@@ -609,7 +609,7 @@ export function buildJobInspectorDetailModel(
   detail: JobDetailResponse,
   options: BuildJobInspectorDetailModelOptions = {},
 ): JobInspectorDetailModel {
-  const assetBaseUrl = options.assetBaseUrl ?? 'http://localhost:4317';
+  const assetBaseUrl = options.assetBaseUrl ?? 'http://localhost:17223';
   const promptText = detail.job.finalPromptUsed || detail.job.originalPrompt;
   const outputs = dedupeArtifacts(buildCatalogOutputArtifacts(detail.catalogImages, assetBaseUrl));
   const timeline = [

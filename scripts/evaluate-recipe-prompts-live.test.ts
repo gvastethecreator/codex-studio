@@ -51,7 +51,7 @@ describe('live recipe prompt quality evaluation', () => {
   it('verifies a planned report when legacy remains larger than directives', () => {
     const plan = createLiveRecipeEvaluationPlan({ moduleIds: ['styles'] });
     const report = createLiveRecipeEvaluationReport(plan, {
-      apiBase: 'http://127.0.0.1:4317',
+      apiBase: 'http://127.0.0.1:17223',
     });
 
     expect(verifyLiveRecipeEvaluationReport(report)).toEqual([]);
@@ -72,8 +72,8 @@ describe('live recipe prompt quality evaluation', () => {
         envLocalPresent: false,
       },
       config: {
-        serverPort: 4317,
-        codexWsPort: 4318,
+        serverPort: 17223,
+        codexWsPort: 17224,
       },
       library: {
         exists: true,
@@ -88,7 +88,7 @@ describe('live recipe prompt quality evaluation', () => {
       },
       appServer: {
         running: false,
-        wsUrl: 'ws://127.0.0.1:4318',
+        wsUrl: 'ws://127.0.0.1:17224',
         pid: null,
         lastExitCode: null,
         lastExitAt: null,

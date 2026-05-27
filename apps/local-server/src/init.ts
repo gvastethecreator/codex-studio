@@ -24,6 +24,7 @@ export function initStudio() {
         `STUDIO_LIBRARY_DIR=${settings.libraryDir}`,
         `STUDIO_SERVER_PORT=${settings.serverPort}`,
         `STUDIO_CODEX_WS_PORT=${settings.codexWsPort}`,
+        `VITE_STUDIO_API_BASE=http://localhost:${settings.serverPort}`,
         `STUDIO_MAX_CONCURRENT_CODEX_JOBS=${settings.codexMaxConcurrentJobs}`,
         `CODEX_IMAGEGEN_MODEL=${settings.codexImagegenModel}`,
         `CODEX_IMAGEGEN_REASONING_EFFORT=${settings.codexImagegenReasoningEffort}`,

@@ -8,7 +8,7 @@ Today the product works as a React/Vite UI that talks to a local Bun/Hono backen
 
 The key piece that prepares the ground is **Studio Runtime**:
 
-- the renderer no longer blindly assumes `http://localhost:4317`;
+- the renderer no longer blindly assumes `http://localhost:17223`;
 - it first tries `window.codexStudio?.apiBase`;
 - then `VITE_STUDIO_API_BASE`;
 - and only then falls back to the default localhost value.
