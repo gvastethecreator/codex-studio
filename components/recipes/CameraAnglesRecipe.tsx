@@ -42,6 +42,90 @@ const CAMERA_RANGES = {
   distance: getRecipeRange(CAMERA_MODULE, 'distance', { min: 20, max: 200, step: 1 }),
 };
 
+interface CameraAnglesInfoPanelProps {
+  hPos: string;
+  vPos: string;
+  framing: string;
+  cameraImages: GeneratedImageWithConfig[];
+  onSelectImage: (img: GeneratedImageWithConfig) => void;
+}
+
+function CameraAnglesInfoPanel({
+  hPos,
+  vPos,
+  framing,
+  cameraImages,
+  onSelectImage,
+}: CameraAnglesInfoPanelProps) {
+  return (
+    <>
+      {/* Output Stats */}
+      <div className="shrink-0 rounded-2xl border border-white/5 bg-zinc-900/40 p-5 shadow-xl">
+        <div className="flex items-center gap-3 mb-3">
+          <div className="p-2 bg-cyan-500/10 rounded-lg">
+            <Eye size={14} className="text-cyan-400" />
+          </div>
+          <div>
+            <h3 className="text-[10px] font-black text-white uppercase tracking-widest">
+              Virtual Output
+            </h3>
+            <p className="text-[8px] text-zinc-500 font-bold uppercase">Prompt Translation</p>
+          </div>
+        </div>
+        <div className="p-3 bg-black/40 rounded-xl border border-white/5 space-y-2">
+          <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
+            <span className="text-cyan-500">POS:</span> {hPos}
+          </p>
+          <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
+            <span className="text-pink-500">ANG:</span> {vPos}
+          </p>
+          <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
+            <span className="text-yellow-500">LENS:</span> {framing}
+          </p>
+        </div>
+      </div>
+
+      {/* Workspace Gallery */}
+      {cameraImages.length > 0 && (
+        <div className="flex-1 min-h-0 bg-black/40 border border-white/5 rounded-2xl p-2 flex flex-col gap-2 overflow-hidden shadow-inner">
+          <div className="flex shrink-0 items-center justify-between px-2">
+            <span className="text-[9px] font-black text-zinc-500 uppercase tracking-widest">
+              Workspace Gallery
+            </span>
+            <span className="text-[9px] font-bold text-zinc-600 uppercase">
+              {cameraImages.length} Renders
+            </span>
+          </div>
+
+          <div className="flex-1 overflow-y-auto custom-scrollbar grid grid-cols-2 gap-2 p-1 content-start">
+            {cameraImages.map((img) => (
+              <button
+                type="button"
+                key={img.id}
+                onClick={() => onSelectImage(img)}
+                className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-all group shadow-sm hover:shadow-lg"
+              >
+                <img
+                  src={img.thumbnail || img.src}
+                  className="size-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                  loading="lazy"
+                  alt=""
+                />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                  <Maximize2 size={16} className="text-white drop-shadow-md" />
+                </div>
+                {img.isFavorite && (
+                  <div className="absolute top-1 right-1 size-2 bg-cyan-500 rounded-full shadow-lg" />
+                )}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
 export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
   config,
   updateConfig,
@@ -301,69 +385,13 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             )}
           </div>
 
-          {/* 2. Output Stats */}
-          <div className="shrink-0 rounded-2xl border border-white/5 bg-zinc-900/40 p-5 shadow-xl">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="p-2 bg-cyan-500/10 rounded-lg">
-                <Eye size={14} className="text-cyan-400" />
-              </div>
-              <div>
-                <h3 className="text-[10px] font-black text-white uppercase tracking-widest">
-                  Virtual Output
-                </h3>
-                <p className="text-[8px] text-zinc-500 font-bold uppercase">Prompt Translation</p>
-              </div>
-            </div>
-            <div className="p-3 bg-black/40 rounded-xl border border-white/5 space-y-2">
-              <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
-                <span className="text-cyan-500">POS:</span> {hPos}
-              </p>
-              <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
-                <span className="text-pink-500">ANG:</span> {vPos}
-              </p>
-              <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
-                <span className="text-yellow-500">LENS:</span> {framing}
-              </p>
-            </div>
-          </div>
-
-          {/* 3. Workspace Gallery (Vertical Filmstrip) */}
-          {cameraImages.length > 0 && (
-            <div className="flex-1 min-h-0 bg-black/40 border border-white/5 rounded-2xl p-2 flex flex-col gap-2 overflow-hidden shadow-inner">
-              <div className="flex shrink-0 items-center justify-between px-2">
-                <span className="text-[9px] font-black text-zinc-500 uppercase tracking-widest">
-                  Workspace Gallery
-                </span>
-                <span className="text-[9px] font-bold text-zinc-600 uppercase">
-                  {cameraImages.length} Renders
-                </span>
-              </div>
-
-              <div className="flex-1 overflow-y-auto custom-scrollbar grid grid-cols-2 gap-2 p-1 content-start">
-                {cameraImages.map((img) => (
-                  <button
-                    type="button"
-                    key={img.id}
-                    onClick={() => onSelectImage(img)}
-                    className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-all group shadow-sm hover:shadow-lg"
-                  >
-                    <img
-                      src={img.thumbnail || img.src}
-                      className="size-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                      <Maximize2 size={16} className="text-white drop-shadow-md" />
-                    </div>
-                    {img.isFavorite && (
-                      <div className="absolute top-1 right-1 size-2 bg-cyan-500 rounded-full shadow-lg" />
-                    )}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
+          <CameraAnglesInfoPanel
+            hPos={hPos}
+            vPos={vPos}
+            framing={framing}
+            cameraImages={cameraImages}
+            onSelectImage={onSelectImage}
+          />
         </div>
       </div>
     </RecipeLayout>

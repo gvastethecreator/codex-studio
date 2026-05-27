@@ -186,6 +186,7 @@ export const useCameraViewport = ({
   }, [hasReference]);
 
   // react-doctor-disable-next-line react-doctor/effect-needs-cleanup
+  // react-doctor-disable-next-line react-doctor/no-cascading-set-state
   useEffect(() => {
     if (!mountRef.current) return;
 

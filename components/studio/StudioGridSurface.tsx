@@ -24,7 +24,6 @@ export interface StudioGridSurfaceProps {
   handleDelete: (imageId: string) => void;
   handleToggleFavorite: (imageId: string) => void;
   isGenerating: boolean;
-  hasProcessingJobs: boolean;
   transitioningImageId: string | null;
   activeModalImageId: string | null;
   handleSelectAll: (images: GeneratedImage[]) => void;
@@ -50,7 +49,6 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
   handleDelete,
   handleToggleFavorite,
   isGenerating,
-  hasProcessingJobs,
   transitioningImageId,
   activeModalImageId,
   handleSelectAll,
@@ -104,7 +102,7 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
             onLoadConfig={handleLoadRecipe}
             onDelete={handleDelete}
             onToggleFavorite={handleToggleFavorite}
-            isGenerating={isGenerating || hasProcessingJobs}
+            isGenerating={isGenerating}
             transitioningImageId={transitioningImageId}
             activeModalImageId={activeModalImageId}
             onSelectAll={handleGridSelectAll}

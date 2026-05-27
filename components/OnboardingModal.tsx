@@ -16,17 +16,18 @@ import type {
   StudioReadinessSnapshot,
 } from '../packages/shared/src';
 
+type OnboardingStatus = 'idle' | 'checking' | 'starting' | 'ready';
+
 interface OnboardingModalProps {
   apiBase: string;
   error: string | null;
   health: HealthResponse | null;
   localCodexSession: LocalCodexSessionResponse | null;
   readiness: StudioReadinessSnapshot;
-  isChecking: boolean;
+  /** Collapsed status replaces isChecking/isReady/isStartingAppServer booleans */
+  status: OnboardingStatus;
   isDesktopRuntime: boolean;
   isOpen: boolean;
-  isReady: boolean;
-  isStartingAppServer: boolean;
   onClose: () => void;
   onComplete: () => void;
   onRefresh: () => void;
@@ -85,22 +86,150 @@ function StepRow({
   );
 }
 
+interface OnboardingStatusPanelProps {
+  apiBase: string;
+  health: HealthResponse | null;
+  readiness: StudioReadinessSnapshot;
+  statusMessage: string;
+  commandHints: string[];
+  quickHint: string;
+}
+
+function OnboardingStatusPanel({
+  apiBase,
+  health,
+  readiness,
+  statusMessage,
+  commandHints,
+  quickHint,
+}: OnboardingStatusPanelProps) {
+  return (
+    <div className="space-y-4">
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+        <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
+          Resumen
+        </p>
+        <p className="mt-2 text-[11px] font-black uppercase tracking-widest text-accent-300">
+          {readiness.title}
+        </p>
+        <p className="mt-2 text-sm leading-relaxed text-zinc-200">{statusMessage}</p>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[11px] font-medium text-zinc-300">
+            API {apiBase}
+          </span>
+          <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[11px] font-medium text-zinc-300">
+            {health?.runtime.envLocalPresent ? '.env local OK' : '.env local missing'}
+          </span>
+          {health ? (
+            <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[11px] font-medium text-zinc-300">
+              HTTP {health.config.serverPort} · WS {health.config.codexWsPort}
+            </span>
+          ) : null}
+        </div>
+      </div>
+
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+        <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
+          Quick Actions
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {commandHints.map((command) => (
+            <span
+              key={command}
+              className="rounded-full border border-white/10 bg-black/20 px-3 py-1 font-mono text-[11px] text-zinc-300"
+            >
+              {command}
+            </span>
+          ))}
+        </div>
+        <p className="mt-3 text-sm leading-relaxed text-zinc-400">{quickHint}</p>
+      </div>
+    </div>
+  );
+}
+
+interface OnboardingActionsProps {
+  status: OnboardingStatus;
+  canStartAppServer: boolean;
+  onRefresh: () => void;
+  onComplete: () => void;
+  onStartAppServer: () => void;
+}
+
+function OnboardingActions({
+  status,
+  canStartAppServer,
+  onRefresh,
+  onComplete,
+  onStartAppServer,
+}: OnboardingActionsProps) {
+  const isReady = status === 'ready';
+  const isChecking = status === 'checking';
+  const isStartingAppServer = status === 'starting';
+  return (
+    <div className="border-t border-white/5 bg-black/20 p-4 sm:px-6 sm:py-5">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="text-xs leading-relaxed text-zinc-500">
+          {isReady
+            ? 'Ready. The guide will remain available from Help.'
+            : 'This guide will appear automatically only this once.'}
+        </div>
+
+        <div className="flex flex-col gap-2 sm:flex-row">
+          <button
+            type="button"
+            onClick={onRefresh}
+            disabled={isChecking}
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/5 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-white transition-all hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <RefreshCw size={15} className={isChecking ? 'animate-spin' : ''} />
+            Refresh
+          </button>
+
+          {canStartAppServer ? (
+            <button
+              type="button"
+              onClick={onStartAppServer}
+              disabled={isStartingAppServer}
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500/15 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-accent-300 transition-all hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              <Play size={15} />
+              {isStartingAppServer ? 'Starting app-server' : 'Start app-server'}
+            </button>
+          ) : null}
+
+          <button
+            type="button"
+            onClick={onComplete}
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-black transition-all hover:bg-accent-400"
+          >
+            <ArrowRight size={15} />
+            {isReady ? 'Open Studio' : 'Got it'}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   apiBase,
   error,
   health,
   localCodexSession,
   readiness,
-  isChecking,
+  status,
   isDesktopRuntime,
   isOpen,
-  isReady,
-  isStartingAppServer,
   onClose,
   onComplete,
   onRefresh,
   onStartAppServer,
 }) => {
+  const isChecking = status === 'checking';
+  const isReady = status === 'ready';
+  const isStartingAppServer = status === 'starting';
   const backendReachable = !error && Boolean(health);
   const canStartAppServer = backendReachable && !health?.appServer.running;
   const missingFolders = health?.library.missingFolders ?? [];
@@ -296,93 +425,24 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   </div>
                 </div>
 
-                <div className="space-y-4">
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
-                    <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
-                      Resumen
-                    </p>
-                    <p className="mt-2 text-[11px] font-black uppercase tracking-widest text-accent-300">
-                      {readiness.title}
-                    </p>
-                    <p className="mt-2 text-sm leading-relaxed text-zinc-200">{statusMessage}</p>
-
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[11px] font-medium text-zinc-300">
-                        API {apiBase}
-                      </span>
-                      <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[11px] font-medium text-zinc-300">
-                        {health?.runtime.envLocalPresent ? '.env local OK' : '.env local missing'}
-                      </span>
-                      {health ? (
-                        <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[11px] font-medium text-zinc-300">
-                          HTTP {health.config.serverPort} · WS {health.config.codexWsPort}
-                        </span>
-                      ) : null}
-                    </div>
-                  </div>
-
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
-                    <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
-                      Quick Actions
-                    </p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {commandHints.map((command) => (
-                        <span
-                          key={command}
-                          className="rounded-full border border-white/10 bg-black/20 px-3 py-1 font-mono text-[11px] text-zinc-300"
-                        >
-                          {command}
-                        </span>
-                      ))}
-                    </div>
-                    <p className="mt-3 text-sm leading-relaxed text-zinc-400">{quickHint}</p>
-                  </div>
-                </div>
+                <OnboardingStatusPanel
+                  apiBase={apiBase}
+                  health={health}
+                  readiness={readiness}
+                  statusMessage={statusMessage}
+                  commandHints={commandHints}
+                  quickHint={quickHint}
+                />
               </div>
             </div>
 
-            <div className="border-t border-white/5 bg-black/20 p-4 sm:px-6 sm:py-5">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <div className="text-xs leading-relaxed text-zinc-500">
-                  {isReady
-                    ? 'Ready. The guide will remain available from Help.'
-                    : 'This guide will appear automatically only this once.'}
-                </div>
-
-                <div className="flex flex-col gap-2 sm:flex-row">
-                  <button
-                    type="button"
-                    onClick={onRefresh}
-                    disabled={isChecking}
-                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/5 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-white transition-all hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-60"
-                  >
-                    <RefreshCw size={15} className={isChecking ? 'animate-spin' : ''} />
-                    Refresh
-                  </button>
-
-                  {canStartAppServer ? (
-                    <button
-                      type="button"
-                      onClick={onStartAppServer}
-                      disabled={isStartingAppServer}
-                      className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500/15 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-accent-300 transition-all hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:opacity-60"
-                    >
-                      <Play size={15} />
-                      {isStartingAppServer ? 'Starting app-server' : 'Start app-server'}
-                    </button>
-                  ) : null}
-
-                  <button
-                    type="button"
-                    onClick={onComplete}
-                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500 px-4 py-3 text-[11px] font-black uppercase tracking-widest text-black transition-all hover:bg-accent-400"
-                  >
-                    <ArrowRight size={15} />
-                    {isReady ? 'Open Studio' : 'Got it'}
-                  </button>
-                </div>
-              </div>
-            </div>
+            <OnboardingActions
+              status={status}
+              canStartAppServer={canStartAppServer}
+              onRefresh={onRefresh}
+              onComplete={onComplete}
+              onStartAppServer={onStartAppServer}
+            />
           </MotionDiv>
         </div>
       ) : null}

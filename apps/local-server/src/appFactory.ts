@@ -23,14 +23,14 @@ import {
   type StudioSettingsStorage,
 } from './studioSettingsStore';
 import { createWorkerController, type WorkerController, type WorkerStatus } from './worker';
+import { getCodexAccountStatus } from './codex/accountStatus';
 import {
-  getCodexAccountStatus,
   ensureAppServer,
   getAppServerDiagnostics,
-  getCodexModelCatalog,
-  getLocalCodexSession,
   isAppServerRunning,
-} from './codex';
+} from './codex/processSupervisor';
+import { getCodexModelCatalog } from './codex/modelCatalog';
+import { getLocalCodexSession } from './codex/localCodexSession';
 import { embedMetadata } from './metadataEmbedder';
 import { getJobDetail } from './jobDetails';
 import {

@@ -47,6 +47,121 @@ const DEFAULT_PARAMS = {
   dividers: getRecipeStringDefault(SPRITESHEET_DEFAULTS, 'dividers', 'No Dividers'),
 };
 
+function getDividerStyle(dividers: string): string {
+  switch (dividers) {
+    case 'Red Lines':
+      return 'bg-red-500';
+    case 'Blue Lines':
+      return 'bg-blue-500';
+    case 'Black Lines':
+      return 'bg-black';
+    case 'White Lines':
+      return 'bg-white';
+    default:
+      return 'bg-transparent';
+  }
+}
+
+function getBackgroundClass(background: string): string {
+  if (background === 'Checkerboard')
+    return 'bg-[linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a),linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a)] bg-[length:20px_20px] bg-[position:0_0,10px_10px] bg-zinc-900';
+  if (background.includes('Green')) return 'bg-[#00FF00]';
+  if (background === 'White') return 'bg-white';
+  if (background === 'Black') return 'bg-black';
+  if (background === 'Dark Grey') return 'bg-zinc-800';
+  return '';
+}
+
+interface SpritesheetSidebarProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onOpen: () => void;
+  cellCount: number;
+  cellPrompts: Record<number, string>;
+  hoveredCell: number | null;
+  editingCell: number | null;
+  onSetEditingCell: (i: number | null) => void;
+  onSetHoveredCell: (i: number | null) => void;
+}
+
+function SpritesheetSidebar({
+  isOpen,
+  onClose,
+  onOpen,
+  cellCount,
+  cellPrompts,
+  hoveredCell,
+  editingCell,
+  onSetEditingCell,
+  onSetHoveredCell,
+}: SpritesheetSidebarProps) {
+  return (
+    <>
+      <div
+        className={`
+              flex-shrink-0 bg-black/40 border border-white/5 rounded-3xl flex flex-col overflow-hidden shadow-2xl transition-all duration-500 ease-out-expo relative
+              ${isOpen ? 'w-72 opacity-100' : 'w-0 opacity-0 border-0 pointer-events-none'}
+           `}
+      >
+        <div className="h-14 border-b border-white/5 flex items-center px-5 gap-2 bg-white/[0.02]">
+          <Hash size={14} className="text-emerald-500" />
+          <span className="text-[10px] font-black text-white uppercase tracking-widest">
+            Edit Cells
+          </span>
+          <button
+            type="button"
+            onClick={onClose}
+            className="ml-auto text-zinc-500 hover:text-white"
+          >
+            <X size={14} />
+          </button>
+        </div>
+        <div className="flex-1 overflow-y-auto p-3 space-y-2 custom-scrollbar">
+          {Array.from({ length: cellCount }).map((_, i) => (
+            <button
+              type="button"
+              key={i}
+              onClick={() => onSetEditingCell(i)}
+              className={`group p-2.5 rounded-xl border transition-all duration-200 cursor-pointer appearance-none
+                              ${hoveredCell === i || editingCell === i ? 'bg-white/10 border-emerald-500/50 shadow-lg' : 'bg-black/20 border-white/5 hover:bg-white/5'}\n                          `}
+              onMouseEnter={() => onSetHoveredCell(i)}
+              onMouseLeave={() => onSetHoveredCell(null)}
+            >
+              <div className="flex items-center justify-between mb-1.5">
+                <span
+                  className={`text-[9px] font-black uppercase tracking-widest ${hoveredCell === i || editingCell === i ? 'text-emerald-400' : 'text-zinc-600'}`}
+                >
+                  Cell {i + 1}
+                </span>
+                {cellPrompts[i] && (
+                  <div className="w-full text-right overflow-hidden">
+                    <span className="text-[8px] font-bold bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded truncate inline-block max-w-full">
+                      {cellPrompts[i]}
+                    </span>
+                  </div>
+                )}
+              </div>
+              <div className="text-[10px] text-zinc-400 truncate h-4">
+                {cellPrompts[i] || 'Empty...'}
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {!isOpen && (
+        <button
+          type="button"
+          onClick={onOpen}
+          className="absolute right-0 top-1/2 -translate-y-1/2 p-2 bg-zinc-900 border border-white/10 rounded-l-xl hover:bg-zinc-800 text-zinc-400 hover:text-white transition-all shadow-lg"
+        >
+          <ChevronLeft size={16} />
+        </button>
+      )}
+    </>
+  );
+}
+
 export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
   config,
   updateConfig,
@@ -63,6 +178,12 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
     isSidebarOpen: true,
   });
   const { hoveredCell, editingCell, isSidebarOpen } = gridInteraction;
+  const setEditingCell = (val: number | null) =>
+    setGridInteraction((prev) => ({ ...prev, editingCell: val }));
+  const setHoveredCell = (val: number | null) =>
+    setGridInteraction((prev) => ({ ...prev, hoveredCell: val }));
+  const setIsSidebarOpen = (val: boolean) =>
+    setGridInteraction((prev) => ({ ...prev, isSidebarOpen: val }));
   const cellInputRef = useRef<HTMLTextAreaElement>(null);
   const ratioValue = RATIO_MAP[config.aspectRatio] || 1;
 
@@ -97,31 +218,6 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
   );
 
   useRecipeContextRegistration(updateConfig, 'spritesheet', recipeParams);
-
-  const getDividerStyle = () => {
-    switch (params.dividers) {
-      case 'Red Lines':
-        return 'bg-red-500';
-      case 'Blue Lines':
-        return 'bg-blue-500';
-      case 'Black Lines':
-        return 'bg-black';
-      case 'White Lines':
-        return 'bg-white';
-      default:
-        return 'bg-transparent';
-    }
-  };
-
-  const getBackgroundClass = () => {
-    if (params.background === 'Checkerboard')
-      return 'bg-[linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a),linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a)] bg-[length:20px_20px] bg-[position:0_0,10px_10px] bg-zinc-900';
-    if (params.background.includes('Green')) return 'bg-[#00FF00]';
-    if (params.background === 'White') return 'bg-white';
-    if (params.background === 'Black') return 'bg-black';
-    if (params.background === 'Dark Grey') return 'bg-zinc-800';
-    return '';
-  };
 
   const isLightBg = params.background === 'White' || params.background.includes('Green');
 
@@ -218,7 +314,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           {/* Auto-Scaling Container */}
           <div
             className={`relative border-2 border-dashed transition-all duration-500 ease-out-expo overflow-hidden shadow-2xl bg-zinc-900/30
-                        ${hasDividers ? getDividerStyle() : 'border-white/20'}
+                        ${hasDividers ? getDividerStyle(params.dividers) : 'border-white/20'}
                     `}
             style={gridContainerStyle}
           >
@@ -236,7 +332,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                   backgroundColor: params.background === 'Custom' ? customColor : undefined,
                 }}
                 className={`relative flex items-center justify-center transition-all duration-200 cursor-text group min-w-0 min-h-0 overflow-hidden appearance-none border-none
-                                ${getBackgroundClass()}
+                                ${getBackgroundClass(params.background)}
                                 ${hoveredCell === i || editingCell === i ? 'ring-2 ring-emerald-400 z-10' : 'hover:ring-1 hover:ring-white/30'}
                             `}
               >
@@ -291,69 +387,17 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
         </div>
 
         {/* SIDEBAR */}
-        <div
-          className={`
-                flex-shrink-0 bg-black/40 border border-white/5 rounded-3xl flex flex-col overflow-hidden shadow-2xl transition-all duration-500 ease-out-expo relative
-                ${isSidebarOpen ? 'w-72 opacity-100' : 'w-0 opacity-0 border-0 pointer-events-none'}
-             `}
-        >
-          <div className="h-14 border-b border-white/5 flex items-center px-5 gap-2 bg-white/[0.02]">
-            <Hash size={14} className="text-emerald-500" />
-            <span className="text-[10px] font-black text-white uppercase tracking-widest">
-              Edit Cells
-            </span>
-            <button
-              type="button"
-              onClick={() => setIsSidebarOpen(false)}
-              className="ml-auto text-zinc-500 hover:text-white"
-            >
-              <X size={14} />
-            </button>
-          </div>
-          <div className="flex-1 overflow-y-auto p-3 space-y-2 custom-scrollbar">
-            {Array.from({ length: gridCols * gridRows }).map((_, i) => (
-              <button
-                type="button"
-                key={i}
-                onClick={() => setEditingCell(i)}
-                className={`group p-2.5 rounded-xl border transition-all duration-200 cursor-pointer appearance-none
-                                ${hoveredCell === i || editingCell === i ? 'bg-white/10 border-emerald-500/50 shadow-lg' : 'bg-black/20 border-white/5 hover:bg-white/5'}
-                            `}
-                onMouseEnter={() => setHoveredCell(i)}
-                onMouseLeave={() => setHoveredCell(null)}
-              >
-                <div className="flex items-center justify-between mb-1.5">
-                  <span
-                    className={`text-[9px] font-black uppercase tracking-widest ${hoveredCell === i || editingCell === i ? 'text-emerald-400' : 'text-zinc-600'}`}
-                  >
-                    Cell {i + 1}
-                  </span>
-                  {cellPrompts[i] && (
-                    <div className="w-full text-right overflow-hidden">
-                      <span className="text-[8px] font-bold bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded truncate inline-block max-w-full">
-                        {cellPrompts[i]}
-                      </span>
-                    </div>
-                  )}
-                </div>
-                {/* Only show input if directly editing from sidebar, otherwise just a display */}
-                <div className="text-[10px] text-zinc-400 truncate h-4">
-                  {cellPrompts[i] || 'Empty...'}
-                </div>
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {!isSidebarOpen && (
-          <button
-            type="button"
-            onClick={() => setIsSidebarOpen(true)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 p-2 bg-zinc-900 border border-white/10 rounded-l-xl hover:bg-zinc-800 text-zinc-400 hover:text-white transition-all shadow-lg"
-          >
-            <ChevronLeft size={16} />
-          </button>
-        )}
+        <SpritesheetSidebar
+          isOpen={isSidebarOpen}
+          onClose={() => setIsSidebarOpen(false)}
+          onOpen={() => setIsSidebarOpen(true)}
+          cellCount={gridCols * gridRows}
+          cellPrompts={cellPrompts}
+          hoveredCell={hoveredCell}
+          editingCell={editingCell}
+          onSetEditingCell={setEditingCell}
+          onSetHoveredCell={setHoveredCell}
+        />
       </div>
     </RecipeLayout>
   );

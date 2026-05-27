@@ -47,7 +47,7 @@ const CarouselImageItem: React.FC<{
   isSliding: boolean;
   isComparing: boolean;
 }> = React.memo(({ image, transitionName, isActive, isSliding, isComparing }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true);
   const [uiScale, setUiScale] = useState(1);
 
   const imgRef = useRef<HTMLImageElement>(null);
@@ -98,10 +98,6 @@ const CarouselImageItem: React.FC<{
   const startAnimation = useCallback(() => {
     if (!rafId.current && isActive) rafId.current = requestAnimationFrame(animate);
   }, [animate, isActive]);
-
-  useEffect(() => {
-    if (imgRef.current?.complete) setIsLoaded(true);
-  }, []);
 
   const handleWheel = (e: React.WheelEvent) => {
     if (!isActive || isSliding) return;
@@ -212,7 +208,134 @@ const variants: Variants = {
   }),
 };
 
-const ImageCarousel: React.FC<ImageCarouselProps> = ({
+interface CarouselBottomBarProps {
+  currentImage: GeneratedImageWithConfig;
+  hasReference: boolean;
+  copiedPrompt: boolean;
+  isComparing: boolean;
+  onCompareStart: () => void;
+  onCompareEnd: () => void;
+  onCopyPrompt: () => void;
+  onDownload: () => void;
+  onToggleFavorite: (id: string) => void;
+  onLoadConfig: (config: ImageGenerationConfig) => void;
+  onAddToContext: (img: GeneratedImageWithConfig) => void;
+  onRegenerate: (config: ImageGenerationConfig) => void;
+  onDelete: (id: string) => void;
+}
+
+function CarouselBottomBar({
+  currentImage,
+  hasReference,
+  copiedPrompt,
+  isComparing,
+  onCompareStart,
+  onCompareEnd,
+  onCopyPrompt,
+  onDownload,
+  onToggleFavorite,
+  onLoadConfig,
+  onAddToContext,
+  onRegenerate,
+  onDelete,
+}: CarouselBottomBarProps) {
+  return (
+    <BottomToolbar className="absolute bottom-0 left-0 right-0 z-50 flex w-full min-h-17 items-center border-t border-white/5 bg-black/80 px-6 py-3 backdrop-blur-sm">
+      <div className="mx-auto flex w-full max-w-480 flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+        <div className="flex-1 min-w-0 w-full">
+          <p className="text-[12px] font-bold text-zinc-400 truncate tracking-tight leading-relaxed">
+            {currentImage.config.prompt || 'Generated image'}
+          </p>
+          <div className="flex gap-4 mt-2">
+            <span className="text-[9px] font-black text-accent-500/70 uppercase tracking-widest">
+              {currentImage.config.model.split('-').slice(0, 2).join(' ').toUpperCase()}
+            </span>
+            <span className="text-[9px] font-black text-zinc-700 uppercase tracking-widest">
+              {currentImage.config.aspectRatio} OUTPUT
+            </span>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-2 w-full md:w-auto justify-start md:justify-end">
+          {hasReference && (
+            <div className="flex items-center gap-1.5 rounded-xl bg-white/3 p-1">
+              <button
+                type="button"
+                onPointerDown={onCompareStart}
+                onPointerUp={onCompareEnd}
+                onPointerLeave={onCompareEnd}
+                className={`relative flex items-center justify-center p-2 rounded-lg transition-all duration-300 outline-none group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-white shadow-lg' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
+                title="Hold to Compare with Original"
+              >
+                <SplitSquareHorizontal size={16} />
+                <span className="text-[9px] font-black uppercase tracking-widest ml-2 hidden lg:inline">
+                  Compare
+                </span>
+              </button>
+            </div>
+          )}
+
+          <div className="flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
+            <ActionButton
+              onClick={() => onToggleFavorite(currentImage.id)}
+              icon={<Heart size={16} fill={currentImage?.isFavorite ? 'currentColor' : 'none'} />}
+              label={currentImage?.isFavorite ? 'Unpin from top' : 'Pin to top'}
+              isActive={currentImage?.isFavorite}
+            />
+            <ActionButton
+              onClick={onCopyPrompt}
+              icon={
+                copiedPrompt ? (
+                  <Check size={16} className="text-green-500" />
+                ) : (
+                  <ClipboardList size={16} />
+                )
+              }
+              label="Copy Prompt"
+            />
+            <ActionButton
+              onClick={() => onLoadConfig(currentImage.config)}
+              icon={<History size={16} />}
+              label="Load Recipe"
+            />
+          </div>
+
+          <div className="relative flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
+            <ActionButton
+              onClick={() => onAddToContext(currentImage)}
+              icon={<PlusCircle size={16} />}
+              label="To Context"
+            />
+            <div className="relative">
+              <ActionButton
+                onClick={onDownload}
+                icon={<Download size={16} />}
+                label="Save Local"
+              />
+            </div>
+          </div>
+
+          <div className="flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
+            <ActionButton
+              onClick={() => onRegenerate(currentImage.config)}
+              icon={<RefreshCw size={16} />}
+              label="Re-Synthesize"
+              variant="primary"
+            />
+            <ActionButton
+              onClick={() => onDelete(currentImage.id)}
+              icon={<Trash2 size={16} />}
+              label="Purge"
+              variant="danger"
+            />
+          </div>
+        </div>
+      </div>
+    </BottomToolbar>
+  );
+}
+
+export const ImageCarousel: React.FC<ImageCarouselProps> = ({
   activeImage,
   allImages,
   activeGenerationConfig,
@@ -390,11 +513,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 key={img.id}
                 onClick={() => handleJumpTo(idx)}
                 className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
-                            ${
-                              idx === activeIndex
-                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
-                                : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
-                            }
+                            ${idx === activeIndex
+                    ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
+                    : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
+                  }
                         `}
               >
                 <img
@@ -486,101 +608,21 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
         </div>
       </section>
 
-      <BottomToolbar className="absolute bottom-0 left-0 right-0 z-50 flex w-full min-h-17 items-center border-t border-white/5 bg-black/80 px-6 py-3 backdrop-blur-sm">
-        <div className="mx-auto flex w-full max-w-480 flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-          <div className="flex-1 min-w-0 w-full">
-            <p className="text-[12px] font-bold text-zinc-400 truncate tracking-tight leading-relaxed">
-              {currentImage.config.prompt || 'Generated image'}
-            </p>
-            <div className="flex gap-4 mt-2">
-              <span className="text-[9px] font-black text-accent-500/70 uppercase tracking-widest">
-                {currentImage.config.model.split('-').slice(0, 2).join(' ').toUpperCase()}
-              </span>
-              <span className="text-[9px] font-black text-zinc-700 uppercase tracking-widest">
-                {currentImage.config.aspectRatio} OUTPUT
-              </span>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-2 w-full md:w-auto justify-start md:justify-end">
-            {/* COMPARE BUTTON */}
-            {hasReference && (
-              <div className="flex items-center gap-1.5 rounded-xl bg-white/3 p-1">
-                <button
-                  type="button"
-                  onPointerDown={() => setCarouselState((prev) => ({ ...prev, isComparing: true }))}
-                  onPointerUp={() => setCarouselState((prev) => ({ ...prev, isComparing: false }))}
-                  onPointerLeave={() => setCarouselState((prev) => ({ ...prev, isComparing: false }))}
-                  className={`relative flex items-center justify-center p-2 rounded-lg transition-all duration-300 outline-none group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-white shadow-lg' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
-                  title="Hold to Compare with Original"
-                >
-                  <SplitSquareHorizontal size={16} />
-                  <span className="text-[9px] font-black uppercase tracking-widest ml-2 hidden lg:inline">
-                    Compare
-                  </span>
-                </button>
-              </div>
-            )}
-
-            <div className="flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
-              <ActionButton
-                onClick={() => onToggleFavorite(currentImage.id)}
-                icon={<Heart size={16} fill={currentImage?.isFavorite ? 'currentColor' : 'none'} />}
-                label={currentImage?.isFavorite ? 'Unpin from top' : 'Pin to top'}
-                isActive={currentImage?.isFavorite}
-              />
-              <ActionButton
-                onClick={handleCopyPrompt}
-                icon={
-                  copiedPrompt ? (
-                    <Check size={16} className="text-green-500" />
-                  ) : (
-                    <ClipboardList size={16} />
-                  )
-                }
-                label="Copy Prompt"
-              />
-              <ActionButton
-                onClick={() => onLoadConfig(currentImage.config)}
-                icon={<History size={16} />}
-                label="Load Recipe"
-              />
-            </div>
-
-            {/* DOWNLOAD WITH OPTIONS */}
-            <div className="relative flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
-              <ActionButton
-                onClick={() => onAddToContext(currentImage)}
-                icon={<PlusCircle size={16} />}
-                label="To Context"
-              />
-
-              <div className="relative">
-                <ActionButton
-                  onClick={handleDownloadClick}
-                  icon={<Download size={16} />}
-                  label="Save Local"
-                />
-              </div>
-            </div>
-
-            <div className="flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
-              <ActionButton
-                onClick={() => onRegenerate(currentImage.config)}
-                icon={<RefreshCw size={16} />}
-                label="Re-Synthesize"
-                variant="primary"
-              />
-              <ActionButton
-                onClick={() => onDelete(currentImage.id)}
-                icon={<Trash2 size={16} />}
-                label="Purge"
-                variant="danger"
-              />
-            </div>
-          </div>
-        </div>
-      </BottomToolbar>
+      <CarouselBottomBar
+        currentImage={currentImage}
+        hasReference={!!hasReference}
+        copiedPrompt={copiedPrompt}
+        isComparing={isComparing}
+        onCompareStart={() => setCarouselState((prev) => ({ ...prev, isComparing: true }))}
+        onCompareEnd={() => setCarouselState((prev) => ({ ...prev, isComparing: false }))}
+        onCopyPrompt={handleCopyPrompt}
+        onDownload={handleDownloadClick}
+        onToggleFavorite={onToggleFavorite}
+        onLoadConfig={onLoadConfig}
+        onAddToContext={onAddToContext}
+        onRegenerate={onRegenerate}
+        onDelete={onDelete}
+      />
     </div>
   );
 };

@@ -227,7 +227,7 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
               >
                 <Layers size={15} />
                 {hasQueueResultPreviews && (
-                  <div className="flex items-center -space-x-2">
+                  <div className="flex items-center [&>*+*]:-ml-2">
                     {queueResultPreviews.slice(0, 3).map((preview) => (
                       <span
                         key={preview.id}

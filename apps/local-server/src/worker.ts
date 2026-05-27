@@ -14,14 +14,15 @@ import {
 import { publishEvent } from './events';
 import { resolveLibraryPath, toPublicAssetUrl } from './library';
 import { log } from './logger';
-import { createCodexTurn, resolveJobExecutionOptions } from './codex';
+import { createCodexTurn } from './codex/turn';
+import type { CodexTurn } from './codex/turn';
+import { resolveJobExecutionOptions } from './codex/executionOptions';
 import { createCodexGenerationProvider } from './providers/codexProvider';
 import { createExternalGenerationProvider } from './providers/externalProvider';
 import type { GenerationProvider } from './providers/types';
 import { embedMetadata } from './metadataEmbedder';
 import { parsePromptTransport } from '../../../packages/shared/src/promptTransport';
 import type { Job } from '../../../packages/shared/src/types';
-import type { CodexTurn } from './codex';
 import { buildOutputAssetRelativePath } from './outputOrganization';
 import { readEditableStudioSettings } from './studioSettingsStore';
 import { resolveJobCatalogContext } from './workerCatalogContext';
