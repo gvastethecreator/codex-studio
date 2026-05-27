@@ -75,7 +75,7 @@ export interface StudioSystemOverlaysProps {
   onInspectJob: (jobId: string) => void;
   onClearSelectedJob: () => void;
   onRetryJob?: (jobId: string) => void;
-  handleExportWorkspaceSnapshot: () => void;
+  handleExportLegacyVisualBatchSnapshot: () => void;
   handleDeepScan: () => void | Promise<void>;
   apiBase: string;
   onboardingError: string | null;

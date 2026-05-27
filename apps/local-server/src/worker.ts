@@ -60,6 +60,9 @@ export interface CreateWorkerControllerDependencies {
   parsePromptTransport?: typeof parsePromptTransport;
   createGenerationProvider?: () => GenerationProvider;
   createExternalProvider?: () => GenerationProvider;
+  readEditableStudioSettings?: typeof readEditableStudioSettings;
+  resolveJobCatalogContext?: typeof resolveJobCatalogContext;
+  resolveWorkerRuntimeTarget?: typeof resolveWorkerRuntimeTarget;
 }
 
 function createAbortError() {
@@ -146,6 +149,9 @@ export function createWorkerController({
   parsePromptTransport: parsePromptTransportFn = parsePromptTransport,
   createGenerationProvider,
   createExternalProvider,
+  readEditableStudioSettings: readEditableStudioSettingsFn = readEditableStudioSettings,
+  resolveJobCatalogContext: resolveJobCatalogContextFn = resolveJobCatalogContext,
+  resolveWorkerRuntimeTarget: resolveWorkerRuntimeTargetFn = resolveWorkerRuntimeTarget,
 }: CreateWorkerControllerDependencies = {}): WorkerController {
   const runningJobs = new Set<string>();
   const jobQueue: Job[] = [];
@@ -163,7 +169,7 @@ export function createWorkerController({
 
   function resolveGeneratedAssetTargetPath(job: Job, providerId: string | null, extension: string) {
     const executionOptions = resolveExecutionOptions(job.execution);
-    const settings = readEditableStudioSettings({
+    const settings = readEditableStudioSettingsFn({
       getSetting: getSettingValue,
       setSetting: setSettingValue,
     });
@@ -378,7 +384,7 @@ export function createWorkerController({
       height: 800,
       mimeType: 'image/svg+xml',
     });
-    const catalogContext = resolveJobCatalogContext(job);
+    const catalogContext = resolveJobCatalogContextFn(job);
     const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
     const catalogImage = registerCatalogImageFn({
       filePath: asset.filePath,
@@ -418,7 +424,7 @@ export function createWorkerController({
     addJobEventFn(job.id, 'codex.started', 'Codex image generation started.');
     logger('info', 'worker', 'Codex imagegen job started.', job.id);
     const turnRecordId = upsertCodexTurnFn({ jobId: job.id, status: 'running' });
-    const catalogContext = resolveJobCatalogContext(job);
+    const catalogContext = resolveJobCatalogContextFn(job);
     const executionOptions = resolveExecutionOptions(job.execution);
     const result = await codexGenerationProvider.run({
       id: job.id,
@@ -471,7 +477,7 @@ export function createWorkerController({
     const providerId = job.providerId ?? job.sourceSpec?.providerId ?? 'unknown';
     addJobEventFn(job.id, 'external.started', `External provider job started: ${providerId}.`);
     logger('info', 'worker', `External provider job started: ${providerId}.`, job.id);
-    const catalogContext = resolveJobCatalogContext(job);
+    const catalogContext = resolveJobCatalogContextFn(job);
 
     const result = await externalGenerationProvider.run({
       id: job.id,
@@ -519,7 +525,7 @@ export function createWorkerController({
       });
       updateJobStatusFn(job.id, 'running');
       publishEventFn('job.running', getJobFn(job.id));
-      const runtimeTarget = resolveWorkerRuntimeTarget(job);
+      const runtimeTarget = resolveWorkerRuntimeTargetFn(job);
 
       if (runtimeTarget === 'dry_run') {
         await runDryJob(job, controller.signal);

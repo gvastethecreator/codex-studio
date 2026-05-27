@@ -17,10 +17,11 @@ The current accepted batch comes from `docs/architecture/architecture-review-202
 Execution order for the accepted batch:
 
 1. Deepen the `Studio Shell` orchestration module.
-2. Move `Recipe Module` behaviour out of the static registry.
-3. Deepen the `Local Generation Run` lifecycle seam.
-4. Finish the `WorkerController` dependency seam promised by ADR-0014.
-5. Finish catalog-first cleanup at the legacy export and recovery edge.
+2. Deepen the `Studio Generation Session` module.
+3. Move `Recipe Module` behaviour out of the static registry.
+4. Deepen the `Local Generation Run` lifecycle seam.
+5. Finish the `WorkerController` dependency seam promised by ADR-0014.
+6. Deepen `Local Studio Sync` state ownership.
 
 ## Work tracker
 
@@ -55,55 +56,96 @@ Execution order for the accepted batch:
 - **Exit criteria:** `useStudioShell.ts` stops owning catalog mutation choreography and no longer acts as the single implementation sink for shell routing, queue, overlays, and runtime wiring.
 - **Docs:** update `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`, and the findings index.
 
-### 2. Move `Recipe Module` behaviour out of the static registry
+### 2. Deepen the `Studio Generation Session` module
 
-- **Status:** Planned
+- **Status:** In progress
+- **Files:** `hooks/useStudioGenerationSession.ts`, `hooks/useStudioGenerationActions.ts`,
+  `hooks/useGenerationPipeline.ts`, `hooks/useStudioShell.ts`
+- **Depends on:** recommendation 1
+- **Unblocks:** one generation seam for queue/actions/lifecycle behavior
+- **Concrete steps:**
+  - done: extracted lifecycle policy (`executeGeneration`, `executeEdit`, `cancelPersistentJob`) into `useStudioGenerationLifecycle.ts` so session composition no longer owns cancel side effects inline;
+  - done: `useStudioGenerationSession.ts` now composes queue/actions through `useStudioGenerationLifecycle()` instead of coupling directly to pipeline/cancel imports;
+  - done: request shaping now lives in `lib/studioGenerationRequest.ts`, and `useStudioGenerationActions.ts` consumes that seam instead of owning payload-assembly rules inline;
+  - concentrate request shaping, cancel policy, and lifecycle outcomes behind the session seam;
+  - keep `useGenerationPipeline.ts` as execution adapter rather than parallel orchestration;
+  - reduce hook-level spread in `useStudioShell.ts`.
+- **Exit criteria:** queue + actions + lifecycle behavior can be reasoned through one session interface.
+- **Docs:** update `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`, and findings index.
+
+### 3. Move `Recipe Module` behaviour out of the static registry
+
+- **Status:** In progress
 - **Files:** `lib/recipeModules.ts`, `lib/recipeContext.ts`, `components/recipes/recipeModuleUi.ts`, `services/localGenerationRun.ts`
-- **Depends on:** recommendation 1 preferred, but not strictly required
+- **Depends on:** recommendation 2 preferred, but not strictly required
 - **Unblocks:** cleaner recipe tests, smaller `Local Generation Run` interface, less cross-file recipe churn
 - **Concrete steps:**
+  - done: `lib/recipeModules.ts` now owns `buildRecipeModuleContext()` and no longer depends on `lib/recipeContext.ts` for module context generation;
+  - done: `lib/recipeContext.ts` now delegates context generation to `recipeModules`, reducing split-registry coupling at the seam;
   - move defaults, validation, recipe-context building, directives, and `Generation Task Spec` production closer to each `Recipe Module`;
   - keep the `Recipe Module Catalog` as the query module for UI and tooling;
   - update audits so the seam remains enforced after the move.
 - **Exit criteria:** recipe-specific implementation no longer accumulates in one growing central registry plus a second recipe-context registry.
 - **Docs:** update `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`, and the findings index.
 
-### 3. Deepen the `Local Generation Run` lifecycle seam
+### 4. Deepen the `Local Generation Run` lifecycle seam
 
-- **Status:** Planned
+- **Status:** In progress
 - **Files:** `services/localGenerationRun.ts`, `hooks/useGenerationPipeline.ts`, `contexts/GenerationContext.tsx`
-- **Depends on:** recommendation 2
+- **Depends on:** recommendation 3
 - **Unblocks:** clearer cancellation/retry semantics and more focused generation tests
 - **Concrete steps:**
+  - done: `services/localGenerationRun.ts` now exposes `runLocalGenerationWithLifecycle()` with explicit `completed` / `cancelled` / `failed` outcomes and duration;
+  - done: `hooks/useGenerationPipeline.ts` now consumes lifecycle outcomes instead of duplicating cancel/error classification across generate/edit flows;
   - move lifecycle ownership, cancellation, terminal outcome mapping, and batch pacing behind the `Local Generation Run` seam;
   - reduce duplicated control flow in `useGenerationPipeline.ts` for generate vs edit;
   - shrink the interface that `GenerationContext` republishes.
 - **Exit criteria:** generate and edit flows cross one deeper lifecycle seam instead of splitting behaviour across service, hook, and context.
 - **Docs:** update `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`, and the findings index.
 
-### 4. Finish the `WorkerController` dependency seam promised by ADR-0014
+### 5. Finish the `WorkerController` dependency seam promised by ADR-0014
 
-- **Status:** Planned
+- **Status:** In progress
 - **Files:** `apps/local-server/src/worker.ts`, `apps/local-server/src/appFactory.ts`, `apps/local-server/src/workerCatalogContext.ts`, `apps/local-server/src/workerRouting.ts`
-- **Depends on:** recommendation 3 preferred for lower churn
+- **Depends on:** recommendation 4 preferred for lower churn
 - **Unblocks:** more isolated worker tests and future runtime experiments
 - **Concrete steps:**
+  - done: `createWorkerController()` now accepts injected `readEditableStudioSettings`, `resolveJobCatalogContext`, and `resolveWorkerRuntimeTarget` collaborators instead of hard-coding those runtime decisions;
+  - done: `apps/local-server/src/appFactory.ts` now composes the worker with explicit runtime collaborator wiring instead of relying on implicit defaults;
   - move settings, catalog-context, runtime-target, and asset-finalization collaborators to the explicit worker seam;
   - make `appFactory.ts` the real composition module for worker dependencies;
   - reduce hidden module imports inside `worker.ts`.
 - **Exit criteria:** worker tests can cross the `WorkerController` seam without relying on ambient imports or real filesystem behaviour unless intentionally chosen.
 - **Docs:** update ADR-0014 status, `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`, and the findings index.
 
-### 5. Finish catalog-first cleanup at the legacy export and recovery edge
+### 6. Deepen `Local Studio Sync` state ownership
 
-- **Status:** Planned
+- **Status:** In progress
+- **Files:** `hooks/useLocalStudioSync.ts`, `services/studioEventSource.ts`, `services/localStudioService.ts`
+- **Depends on:** recommendations 1-5
+- **Unblocks:** clearer transport/projection seams and isolated sync tests
+- **Concrete steps:**
+  - done: extracted projection/reducer concerns into `hooks/localStudioSyncProjection.ts`;
+  - done: `useLocalStudioSync.ts` now composes transport behavior with imported projection helpers instead of co-locating both concerns;
+  - separate transport adapter behavior from activity projection behavior;
+  - keep one deep sync interface for shell/runtime callers;
+  - add focused tests for connection-change fallback and catalog refresh triggers.
+- **Exit criteria:** sync transport and sync projection can evolve independently behind one sync seam.
+- **Docs:** update `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`, and the findings index.
+
+### 7. Finish catalog-first cleanup at the legacy export and recovery edge
+
+- **Status:** Done
 - **Files:** `hooks/useVaultTransfer.ts`, `lib/studioWorkspaceExport.ts`, `lib/studioStorageRecovery.ts`, `lib/studioLegacyVisualBatchStore.ts`
-- **Depends on:** recommendations 1-4
+- **Depends on:** recommendations 1-6
 - **Unblocks:** clearer contributor understanding of the `Image Catalog` as the durable model
 - **Concrete steps:**
-  - keep legacy export and recovery paths explicit and clearly named as legacy-only;
-  - prevent new callers from treating legacy snapshot export as a normal seam;
-  - decide whether snapshot export remains a product feature or becomes a migration-only tool.
+  - done: `useVaultTransfer.ts` now exposes `exportLegacyVisualBatchSnapshot()` and keeps `exportWorkspaceSnapshot` only as a compatibility alias;
+  - done: `useStudioShell.ts` now consumes the explicit legacy export name at the vault seam and stops carrying unused vault-export wiring;
+  - done: `lib/studioWorkspaceExport.ts` now exposes explicit `exportLegacyVisualBatchSnapshot()` naming while preserving a compatibility alias for incremental migration;
+  - done: overlay and operations seams now expose explicit legacy export naming (`handleExportLegacyVisualBatchSnapshot` / `exportLegacyVisualBatchSnapshot`) without neutral alias fields;
+  - done: compatibility alias remains centralized in `useVaultTransfer.ts` only and is tagged deprecated for incremental migration;
+  - done: legacy export and recovery paths are explicit as compatibility-only seams.
 - **Exit criteria:** the remaining legacy path is obviously compatibility-only and no new product flow depends on it.
 - **Docs:** update `docs/TECHNICAL_DEBT.md` and the findings index.
 

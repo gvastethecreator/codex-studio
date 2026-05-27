@@ -8,12 +8,18 @@ interface WorkspaceExportInput {
   catalogView?: StudioCatalogView;
 }
 
-export function buildLegacyVisualBatchSnapshot({
+export function exportLegacyVisualBatchSnapshot({
   catalogView,
 }: WorkspaceExportInput): LegacyVisualBatchSnapshot {
   if (!catalogView) return [];
   return buildLegacyVisualBatchSnapshotFromCatalog(catalogView);
 }
+
+/**
+ * @deprecated Use `exportLegacyVisualBatchSnapshot`.
+ * Compatibility alias kept only for incremental migration.
+ */
+export const buildLegacyVisualBatchSnapshot = exportLegacyVisualBatchSnapshot;
 
 export function buildWorkspaceExportImages({
   catalogView,

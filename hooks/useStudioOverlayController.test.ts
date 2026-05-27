@@ -93,8 +93,8 @@ describe('buildStudioOverlayController', () => {
         onClearSelectedJob: () => calls.push('clearSelectedJob'),
       },
       vault: {
-        handleExportWorkspaceSnapshot: () => {
-          calls.push('exportWorkspaceSnapshot');
+        handleExportLegacyVisualBatchSnapshot: () => {
+          calls.push('exportLegacyVisualBatchSnapshot');
         },
         handleDeepScan: () => {
           calls.push('deepScan');
@@ -220,7 +220,7 @@ describe('buildStudioOverlayController', () => {
     controller.systemOverlays.refreshOnboardingHealth();
     controller.systemOverlays.ensureAppServer();
     controller.systemOverlays.closeSettings();
-    controller.systemOverlays.handleExportWorkspaceSnapshot();
+    controller.systemOverlays.handleExportLegacyVisualBatchSnapshot();
     void controller.systemOverlays.refreshSettings();
     controller.workspaceOverlays.restoreAllFromTrash();
     controller.workspaceOverlays.emptyTrash();
@@ -233,7 +233,7 @@ describe('buildStudioOverlayController', () => {
       'refreshOnboardingHealth',
       'ensureAppServer',
       'closeSettings',
-      'exportWorkspaceSnapshot',
+      'exportLegacyVisualBatchSnapshot',
       'refreshSettings',
       'restoreAll:2',
       'emptyTrash:2',
@@ -387,8 +387,8 @@ describe('buildStudioOverlayController', () => {
         },
       },
       vault: {
-        handleExportWorkspaceSnapshot: () => {
-          calls.push('exportWorkspaceSnapshot');
+        handleExportLegacyVisualBatchSnapshot: () => {
+          calls.push('exportLegacyVisualBatchSnapshot');
         },
         handleDeepScan: () => {
           calls.push('deepScan');

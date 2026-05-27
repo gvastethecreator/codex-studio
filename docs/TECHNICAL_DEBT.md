@@ -10,10 +10,11 @@ Shared execution tracker: `docs/architecture/DEEPENING-ROADMAP.md`.
 Current execution queue:
 
 1. Deepen the `Studio Shell` orchestration module.
-2. Move `Recipe Module` behaviour out of the static registry.
-3. Deepen the `Local Generation Run` lifecycle seam.
-4. Finish the `WorkerController` dependency seam promised by ADR-0014.
-5. Finish catalog-first cleanup at the legacy export and recovery edge.
+2. Deepen the `Studio Generation Session` module.
+3. Move `Recipe Module` behaviour out of the static registry.
+4. Deepen the `Local Generation Run` lifecycle seam.
+5. Finish the `WorkerController` dependency seam promised by ADR-0014.
+6. Deepen `Local Studio Sync` state ownership.
 
 ### 1. Further decompose `components/AppContent.tsx`
 
@@ -48,6 +49,7 @@ Current direction:
 - `StudioCatalogView` is the catalog read model.
 - `studioCatalogImageAdapter` materializes UI image data from Catalog Entries.
 - `studioLegacyVisualSnapshotExport` owns legacy `GenerationBatch[]` export compatibility.
+- Legacy export naming is explicit (`exportLegacyVisualBatchSnapshot`) and the neutral alias remains only in `useVaultTransfer` as deprecated compatibility.
 - `LegacyVisualBatchContext` stores lightweight refs rather than full snapshots.
 - `catalog:source:verify` blocks regressions where catalog code starts depending on Visual Batch storage again.
 

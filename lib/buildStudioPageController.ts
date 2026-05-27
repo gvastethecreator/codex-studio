@@ -78,7 +78,7 @@ interface StudioPageOperationsContext {
   removeJob: StudioOperationsRailProps['removeJob'];
   clearCompleted: StudioOperationsRailProps['clearCompleted'];
   isResting: StudioOperationsRailProps['isResting'];
-  exportWorkspaceSnapshot: StudioOperationsRailProps['exportWorkspaceSnapshot'];
+  exportLegacyVisualBatchSnapshot: StudioOperationsRailProps['exportLegacyVisualBatchSnapshot'];
   isBackgroundEnabled: StudioOperationsRailProps['isBackgroundEnabled'];
   setBackgroundEnabled: StudioOperationsRailProps['setBackgroundEnabled'];
   activeServerJobCount: StudioOperationsRailProps['activeServerJobCount'];
@@ -175,7 +175,7 @@ export function buildStudioPageController(
       removeJob: args.operations.removeJob,
       clearCompleted: args.operations.clearCompleted,
       isResting: args.operations.isResting,
-      exportWorkspaceSnapshot: args.operations.exportWorkspaceSnapshot,
+      exportLegacyVisualBatchSnapshot: args.operations.exportLegacyVisualBatchSnapshot,
       isBackgroundEnabled: args.operations.isBackgroundEnabled,
       setBackgroundEnabled: args.operations.setBackgroundEnabled,
       activeServerJobCount: args.operations.activeServerJobCount,

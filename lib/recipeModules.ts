@@ -4,7 +4,8 @@ import {
   type GenerationTaskKind,
 } from '../packages/shared/src/generationContracts';
 import type { ImageGenerationConfig, RecipeId } from '../types';
-import { buildRecipeContext } from './recipeContext';
+import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
+import type { RecipeContextParams } from './recipeContextBuilders';
 import { buildRecipeProviderDirectives } from './recipeProviderDirectives';
 
 type RegisteredRecipeId = Exclude<RecipeId, null>;
@@ -40,7 +41,7 @@ export interface RecipeModule {
   supportedTasks: GenerationTaskKind[];
   supportedProviders: GenerationProviderId[];
   parameters: RecipeParameterDescriptor[];
-  buildContext(params: Record<string, unknown> | null | undefined): string;
+  buildContext(params: RecipeContextParams | null | undefined): string;
 }
 
 export interface BuildGenerationTaskSpecFromRecipeArgs {
@@ -268,6 +269,22 @@ function options(values: readonly string[]) {
   return [...values];
 }
 
+export function buildRecipeModuleContext(
+  recipeId: RegisteredRecipeId | null | undefined,
+  params: RecipeContextParams | null | undefined,
+) {
+  if (!recipeId || !params) {
+    return '';
+  }
+
+  const builder = RECIPE_CONTEXT_BUILDERS[recipeId];
+  if (!builder) {
+    return '';
+  }
+
+  return builder.buildContext(params);
+}
+
 function createRecipeModule(
   module: Omit<RecipeModule, 'supportedProviders' | 'buildContext'> & {
     supportedProviders?: GenerationProviderId[];
@@ -277,7 +294,7 @@ function createRecipeModule(
     ...module,
     supportedProviders: module.supportedProviders ?? CODEX_FIRST_PROVIDERS,
     buildContext(params) {
-      return buildRecipeContext(module.id, params);
+      return buildRecipeModuleContext(module.id, params);
     },
   };
 }

@@ -23,6 +23,8 @@ import {
   type StudioSettingsStorage,
 } from './studioSettingsStore';
 import { createWorkerController, type WorkerController, type WorkerStatus } from './worker';
+import { resolveJobCatalogContext } from './workerCatalogContext';
+import { resolveWorkerRuntimeTarget } from './workerRouting';
 import { getCodexAccountStatus } from './codex/accountStatus';
 import {
   ensureAppServer,
@@ -110,7 +112,13 @@ export async function createStudioApp(
     setSetting: setSettingValue,
   };
   const workerController =
-    options.dependencies?.worker ?? createWorkerController({ logger: appLogger });
+    options.dependencies?.worker ??
+    createWorkerController({
+      logger: appLogger,
+      readEditableStudioSettings,
+      resolveJobCatalogContext,
+      resolveWorkerRuntimeTarget,
+    });
   const catalogCommands = createCatalogCommands({
     updateCatalogImage: (...args) => catalogStore.updateCatalogImage(...args),
     softDeleteCatalogImage: (...args) => catalogStore.softDeleteCatalogImage(...args),

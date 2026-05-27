@@ -154,7 +154,7 @@ export function useStudioActionConfirmations({
           'Local assets, thumbnails, references, masks, exports, transcripts, archived items, logs, and the SQLite library database will be deleted and recreated.',
           'The Studio UI cache and queue state will also be cleared, then diagnostics will refresh automatically.',
         ],
-        note: 'Export a workspace snapshot first if you need the current visual workspace. This reset removes local library files from disk.',
+        note: 'Export a legacy workspace snapshot first if you need the current visual workspace metadata. This reset removes local library files from disk.',
       },
       resetStudio,
     );

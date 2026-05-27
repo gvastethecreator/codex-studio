@@ -1,10 +1,10 @@
 import { useCallback } from 'react';
-import { cancelStudioJob } from '../services/localStudioService';
 import type { Attachment, RecipeId } from '../types';
 import type { ToastMessage } from './useToasts';
 import type { useGeneration } from '../contexts/GenerationContext';
 import { useQueueManager } from './useQueueManager';
 import { useStudioGenerationActions } from './useStudioGenerationActions';
+import { useStudioGenerationLifecycle } from './useStudioGenerationLifecycle';
 
 interface UseStudioGenerationSessionOptions {
   activeWorkspaceId: string;
@@ -40,22 +40,13 @@ export function useStudioGenerationSession({
   setIsEditorOpen,
   setImageToEdit,
 }: UseStudioGenerationSessionOptions): StudioGenerationSessionController {
-  const handleCancelPersistentJob = useCallback(
-    async (jobId: string) => {
-      const job = await cancelStudioJob(jobId);
-      addToast(
-        job.status === 'cancelled' ? 'Backend job cancelled' : 'Cancellation requested',
-        'info',
-      );
-    },
-    [addToast],
-  );
+  const lifecycle = useStudioGenerationLifecycle({ pipeline, addToast });
 
   const queue = useQueueManager({
-    executeGeneration: pipeline.executeGeneration,
-    isGenerating: pipeline.isGenerating,
+    executeGeneration: lifecycle.executeGeneration,
+    isGenerating: lifecycle.isGenerating,
     addToast,
-    cancelPersistentJob: handleCancelPersistentJob,
+    cancelPersistentJob: lifecycle.cancelPersistentJob,
   });
 
   const onEditSettled = useCallback(() => {
@@ -68,7 +59,7 @@ export function useStudioGenerationSession({
     activeWorkspaceId,
     setGenerationConfig: config.setGenerationConfig,
     updateGenerationConfig: config.updateGenerationConfig,
-    executeEdit: pipeline.executeEdit,
+    executeEdit: lifecycle.executeEdit,
     enqueue: queue.enqueue,
     addToast,
     closeModal,
@@ -82,7 +73,7 @@ export function useStudioGenerationSession({
   return {
     queue: {
       ...queue,
-      cancelPersistentJob: handleCancelPersistentJob,
+      cancelPersistentJob: lifecycle.cancelPersistentJob,
     },
     actions,
   };

@@ -3,6 +3,12 @@ import { listStudioJobs, listStudioLogs } from '../services/localStudioService';
 import { createStudioEventStream } from '../services/studioEventSource';
 import type { LogEntry } from '../types';
 import type { Job as StudioJob, SystemLog as StudioLog } from '../packages/shared/src';
+import {
+  buildMergedStudioLogs,
+  countActiveServerJobs,
+  INITIAL_LOCAL_STUDIO_SYNC_BACKEND_STATE,
+  localStudioSyncBackendReducer,
+} from './localStudioSyncProjection';
 
 interface UseLocalStudioSyncProps {
   logs: LogEntry[];
@@ -22,64 +28,15 @@ export interface LocalStudioSyncResult {
   refreshBackendState: () => Promise<void>;
 }
 
-/**
- * Normalize a backend log entry into the UI log shape consumed by the debug
- * panel and overlays.
- */
-function mapStudioLog(entry: StudioLog): LogEntry {
-  return {
-    id: `studio-log-${entry.id}`,
-    timestamp: Date.parse(entry.createdAt) || Date.now(),
-    message: `[${entry.scope}${entry.jobId ? `:${entry.jobId.slice(0, 8)}` : ''}] ${entry.message}`,
-  };
-}
-
-/**
- * Keep Local Studio Sync focused on mirroring backend jobs and logs while
- * notifying the Image Catalog read model when backend assets change.
- */
-interface BackendState {
-  jobs: StudioJob[];
-  logs: StudioLog[];
-  connected: boolean;
-}
-
-const INITIAL_BACKEND_STATE: BackendState = { jobs: [], logs: [], connected: false };
-
-type BackendAction =
-  | { type: 'refresh'; jobs: StudioJob[]; logs: StudioLog[] }
-  | { type: 'job_update'; job: StudioJob }
-  | { type: 'log_added'; entry: StudioLog }
-  | { type: 'connection_change'; connected: boolean }
-  | { type: 'disconnect' };
-
-function backendReducer(state: BackendState, action: BackendAction): BackendState {
-  switch (action.type) {
-    case 'refresh':
-      return { jobs: action.jobs, logs: action.logs, connected: true };
-    case 'job_update':
-      return {
-        ...state,
-        jobs: [action.job, ...state.jobs.filter((c) => c.id !== action.job.id)].slice(0, 100),
-      };
-    case 'log_added':
-      return {
-        ...state,
-        logs: [action.entry, ...state.logs.filter((c) => c.id !== action.entry.id)].slice(0, 300),
-      };
-    case 'connection_change':
-      return { ...state, connected: action.connected };
-    case 'disconnect':
-      return { ...state, connected: false };
-  }
-}
-
 export function useLocalStudioSync({
   logs,
   log,
   onCatalogChanged,
 }: UseLocalStudioSyncProps): LocalStudioSyncResult {
-  const [backendState, dispatch] = useReducer(backendReducer, INITIAL_BACKEND_STATE);
+  const [backendState, dispatch] = useReducer(
+    localStudioSyncBackendReducer,
+    INITIAL_LOCAL_STUDIO_SYNC_BACKEND_STATE,
+  );
   const isMountedRef = useRef(true);
 
   useEffect(() => {
@@ -91,15 +48,11 @@ export function useLocalStudioSync({
   }, []);
 
   const mergedLogs = useMemo(() => {
-    return [...backendState.logs.map(mapStudioLog), ...logs]
-      .sort((a, b) => b.timestamp - a.timestamp)
-      .slice(0, 100);
+    return buildMergedStudioLogs(backendState.logs, logs);
   }, [logs, backendState.logs]);
 
   const activeServerJobCount = useMemo(() => {
-    return backendState.jobs.filter(
-      (job) => job.status === 'queued' || job.status === 'running' || job.status === 'needs_review',
-    ).length;
+    return countActiveServerJobs(backendState.jobs);
   }, [backendState.jobs]);
 
   const refreshBackendState = useCallback(async () => {
