@@ -11,7 +11,7 @@ import {
 import { createStyleRenderBudgetReport } from './report-style-render-budget';
 import { loadStyleManifestGraph } from './style-manifest-files';
 
-const DEFAULT_URL = 'http://localhost:3000/#recipe-styles';
+const DEFAULT_URL = 'http://localhost:17222/#recipe-styles';
 const DEFAULT_PACK_ID = 'pack_05';
 const DEFAULT_CATALOG_QUERY = 'boudoir';
 const DEFAULT_TIMEOUT_MS = 30_000;
@@ -59,7 +59,7 @@ function numberArgValue(name: string) {
 function usage() {
   return [
     'Usage:',
-    '  bun run styles:browser -- [--url=http://localhost:3000/#recipe-styles] [--pack=pack_05] [--query=boudoir] [--timeout=30000] [--headed] [--verify] [--json]',
+    '  bun run styles:browser -- [--url=http://localhost:17222/#recipe-styles] [--pack=pack_05] [--query=boudoir] [--timeout=30000] [--headed] [--verify] [--json]',
     '',
     'Notes:',
     '  - Start the UI first (for example `bun run dev:ui`) and keep this gate optional until it is stable enough for wider release use.',

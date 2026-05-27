@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 import type { CatalogImage } from '../packages/shared/src';
+import { collectWorkspaceCatalogImageIds } from '../hooks/useCatalog';
 import { createCatalogView, selectCatalogEntries } from './studioCatalogView';
 import { buildLegacyVisualBatchSnapshotFromCatalog } from './studioLegacyVisualSnapshotExport';
 
@@ -62,5 +63,18 @@ describe('studioCatalogView', () => {
     expect(selectCatalogEntries(view, { deleted: true }).map((entry) => entry.id)).toEqual([
       'deleted-favorite',
     ]);
+  });
+
+  it('maps legacy null workspace ids into the default workspace cleanup seam', () => {
+    expect(
+      collectWorkspaceCatalogImageIds(
+        [
+          catalogImage({ id: 'default-1', workspaceId: 'default' }),
+          catalogImage({ id: 'legacy-default', workspaceId: null }),
+          catalogImage({ id: 'concept-1', workspaceId: 'concepts' }),
+        ],
+        'default',
+      ),
+    ).toEqual(['default-1', 'legacy-default']);
   });
 });

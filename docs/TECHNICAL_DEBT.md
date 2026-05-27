@@ -4,9 +4,26 @@ This document tracks technical debt that remains relevant while Codex Studio pre
 
 ## High priority
 
+Accepted architecture review batch: `docs/architecture/architecture-review-2026-05-27.md`.
+Shared execution tracker: `docs/architecture/DEEPENING-ROADMAP.md`.
+
+Current execution queue:
+
+1. Deepen the `Studio Shell` orchestration module.
+2. Move `Recipe Module` behaviour out of the static registry.
+3. Deepen the `Local Generation Run` lifecycle seam.
+4. Finish the `WorkerController` dependency seam promised by ADR-0014.
+5. Finish catalog-first cleanup at the legacy export and recovery edge.
+
 ### 1. Further decompose `components/AppContent.tsx`
 
 `AppContent` already delegates a significant amount of work to hooks and shell modules, but it still concentrates overlay composition, navigation wiring, and context coordination.
+
+Recent progress in the `Studio Shell` track:
+
+- `useStudioCatalogController()` now owns `Image Catalog` mutation choreography, queue previews, and trash grouping.
+- `buildStudioPageController()` now crosses grouped `debug` / `grid` / `operations` contexts instead of a flat prop mirror.
+- `buildStudioHeaderToolbarProps()` now derives `Command Center` runtime status, queue counts, queue toggle behavior, and provider fallback inside the toolbar seam.
 
 Recommended next steps:
 

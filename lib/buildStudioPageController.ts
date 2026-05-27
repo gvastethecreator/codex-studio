@@ -11,11 +11,14 @@ export interface StudioPageController {
   operations: StudioOperationsRailProps;
 }
 
-export interface BuildStudioPageControllerArgs {
-  isModalOpen: boolean;
+interface StudioPageDebugContext {
   workspaces: LeftDebugPanelProps['workspaces'];
   mergedLogs: LeftDebugPanelProps['logs'];
   catalogVisualGroupCount: LeftDebugPanelProps['visualGroupsCount'];
+}
+
+interface StudioPageGridContext {
+  isModalOpen: boolean;
   allImages: StudioGridSurfaceProps['allImages'];
   imagesWithConfig: StudioGridSurfaceProps['imagesWithConfig'];
   selectedImageIds: StudioGridSurfaceProps['selectedImageIds'];
@@ -37,6 +40,9 @@ export interface BuildStudioPageControllerArgs {
   previewRatio: StudioGridSurfaceProps['previewRatio'];
   generationAspectRatio: StudioGridSurfaceProps['generationAspectRatio'];
   isInteractingWithToolbar: StudioGridSurfaceProps['isInteractingWithToolbar'];
+}
+
+interface StudioPageOperationsContext {
   isQueueOpen: StudioOperationsRailProps['isQueueOpen'];
   setIsQueueOpen: StudioOperationsRailProps['setIsQueueOpen'];
   jobs: StudioOperationsRailProps['jobs'];
@@ -59,70 +65,76 @@ export interface BuildStudioPageControllerArgs {
   isResettingStudio: StudioOperationsRailProps['isResettingStudio'];
 }
 
+export interface BuildStudioPageControllerArgs {
+  debug: StudioPageDebugContext;
+  grid: StudioPageGridContext;
+  operations: StudioPageOperationsContext;
+}
+
 export function buildStudioPageController(
   args: BuildStudioPageControllerArgs,
 ): StudioPageController {
-  const hasProcessingJobs = args.jobs.some((job) => job.status === 'processing');
+  const hasProcessingJobs = args.operations.jobs.some((job) => job.status === 'processing');
 
   return {
     debugPanel: {
       isVisible: false,
       props: {
-        workspaces: args.workspaces,
-        logs: args.mergedLogs,
-        studioJobs: args.studioJobs,
-        visualGroupsCount: args.catalogVisualGroupCount,
-        imagesCount: args.allImages.length,
-        onInspectJob: args.onInspectJob,
-        selectedJobId: args.selectedStudioJobId,
+        workspaces: args.debug.workspaces,
+        logs: args.debug.mergedLogs,
+        studioJobs: args.operations.studioJobs,
+        visualGroupsCount: args.debug.catalogVisualGroupCount,
+        imagesCount: args.grid.allImages.length,
+        onInspectJob: args.operations.onInspectJob,
+        selectedJobId: args.operations.selectedStudioJobId,
       },
     },
     grid: {
-      isModalOpen: args.isModalOpen,
-      activeWorkspaceId: args.activeWorkspaceId,
-      allImages: args.allImages,
-      imagesWithConfig: args.imagesWithConfig,
-      selectedImageIds: args.selectedImageIds,
-      openModal: args.openModal,
-      handleSelectionChange: args.handleSelectionChange,
-      handleGenerate: args.handleGenerate,
-      handleAddToContext: args.handleAddToContext,
-      handleLoadRecipe: args.handleLoadRecipe,
-      handleDelete: args.handleDelete,
-      handleToggleFavorite: args.handleToggleFavorite,
-      isGenerating: args.isGenerating || hasProcessingJobs,
-      transitioningImageId: args.transitioningImageId,
-      activeModalImageId: args.activeModalImageId,
-      handleSelectAll: args.handleSelectAll,
-      handleDeselectAll: args.handleDeselectAll,
-      handleDeleteSelected: args.handleDeleteSelected,
-      handleClearWorkspace: args.handleClearWorkspace,
-      previewRatio: args.previewRatio,
-      generationAspectRatio: args.generationAspectRatio,
-      isInteractingWithToolbar: args.isInteractingWithToolbar,
+      isModalOpen: args.grid.isModalOpen,
+      activeWorkspaceId: args.grid.activeWorkspaceId,
+      allImages: args.grid.allImages,
+      imagesWithConfig: args.grid.imagesWithConfig,
+      selectedImageIds: args.grid.selectedImageIds,
+      openModal: args.grid.openModal,
+      handleSelectionChange: args.grid.handleSelectionChange,
+      handleGenerate: args.grid.handleGenerate,
+      handleAddToContext: args.grid.handleAddToContext,
+      handleLoadRecipe: args.grid.handleLoadRecipe,
+      handleDelete: args.grid.handleDelete,
+      handleToggleFavorite: args.grid.handleToggleFavorite,
+      isGenerating: args.grid.isGenerating || hasProcessingJobs,
+      transitioningImageId: args.grid.transitioningImageId,
+      activeModalImageId: args.grid.activeModalImageId,
+      handleSelectAll: args.grid.handleSelectAll,
+      handleDeselectAll: args.grid.handleDeselectAll,
+      handleDeleteSelected: args.grid.handleDeleteSelected,
+      handleClearWorkspace: args.grid.handleClearWorkspace,
+      previewRatio: args.grid.previewRatio,
+      generationAspectRatio: args.grid.generationAspectRatio,
+      isInteractingWithToolbar: args.grid.isInteractingWithToolbar,
     },
     operations: {
-      isModalOpen: args.isModalOpen,
-      isQueueOpen: args.isQueueOpen,
-      setIsQueueOpen: args.setIsQueueOpen,
-      jobs: args.jobs,
-      queueResults: args.queueResults,
-      studioJobs: args.studioJobs,
-      selectedStudioJobId: args.selectedStudioJobId,
-      retry: args.retry,
-      cancelJob: args.cancelJob,
-      cancelPersistentJob: args.cancelPersistentJob,
-      removeJob: args.removeJob,
-      clearCompleted: args.clearCompleted,
-      isResting: args.isResting,
-      exportWorkspaceSnapshot: args.exportWorkspaceSnapshot,
-      isBackgroundEnabled: args.isBackgroundEnabled,
-      setBackgroundEnabled: args.setBackgroundEnabled,
-      activeServerJobCount: args.activeServerJobCount,
-      onInspectJob: args.onInspectJob,
-      diagnostics: args.diagnostics,
-      onResetStudio: args.onResetStudio,
-      isResettingStudio: args.isResettingStudio,
+      isModalOpen: args.grid.isModalOpen,
+      isQueueOpen: args.operations.isQueueOpen,
+      setIsQueueOpen: args.operations.setIsQueueOpen,
+      jobs: args.operations.jobs,
+      queueResults: args.operations.queueResults,
+      studioJobs: args.operations.studioJobs,
+      selectedStudioJobId: args.operations.selectedStudioJobId,
+      retry: args.operations.retry,
+      cancelJob: args.operations.cancelJob,
+      cancelPersistentJob: args.operations.cancelPersistentJob,
+      removeJob: args.operations.removeJob,
+      clearCompleted: args.operations.clearCompleted,
+      isResting: args.operations.isResting,
+      exportWorkspaceSnapshot: args.operations.exportWorkspaceSnapshot,
+      isBackgroundEnabled: args.operations.isBackgroundEnabled,
+      setBackgroundEnabled: args.operations.setBackgroundEnabled,
+      activeServerJobCount: args.operations.activeServerJobCount,
+      onInspectJob: args.operations.onInspectJob,
+      diagnostics: args.operations.diagnostics,
+      onResetStudio: args.operations.onResetStudio,
+      isResettingStudio: args.operations.isResettingStudio,
     },
   };
 }

@@ -3,8 +3,9 @@ import { describe, expect, it } from 'vite-plus/test';
 import { buildStudioHeaderToolbarProps } from '../lib/buildStudioHeaderToolbarProps';
 
 describe('buildStudioHeaderToolbarProps', () => {
-  it('wraps workspace switching and returns to the gallery when switching from recipes', () => {
+  it('wraps workspace switching and derives command-center state inside the toolbar seam', () => {
     const calls: string[] = [];
+    let nextQueueOpen = false;
 
     const props = buildStudioHeaderToolbarProps({
       view: {
@@ -42,15 +43,24 @@ describe('buildStudioHeaderToolbarProps', () => {
         onToggleDebug: () => calls.push('toggleDebug'),
       },
       commandCenter: {
-        activeProviderId: 'codex',
-        runtimeStatus: {
-          label: 'Ready',
-          tone: 'success',
-        },
+        defaultProviderId: null,
+        statusItems: [
+          {
+            key: 'backend',
+            label: 'Backend',
+            value: 'Offline',
+            detail: '...',
+            tone: 'danger',
+          },
+        ],
         queueResultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
-        queueCount: 4,
+        queueJobCount: 3,
+        activeServerJobCount: 1,
         isQueueOpen: false,
-        onToggleQueue: () => calls.push('toggleQueue'),
+        setIsQueueOpen: (value) => {
+          nextQueueOpen = typeof value === 'function' ? value(false) : value;
+          calls.push(`toggleQueue:${String(nextQueueOpen)}`);
+        },
         onOpenSettings: () => calls.push('openSettings'),
       },
       startTransition: (callback) => {
@@ -73,8 +83,8 @@ describe('buildStudioHeaderToolbarProps', () => {
     ]);
     expect(props.activeProviderId).toBe('codex');
     expect(props.runtimeStatus).toEqual({
-      label: 'Ready',
-      tone: 'success',
+      label: 'Attention',
+      tone: 'danger',
     });
     expect(calls).toEqual([
       'transition',
@@ -82,7 +92,7 @@ describe('buildStudioHeaderToolbarProps', () => {
       'view:studio',
       'transition',
       'openOnboarding',
-      'toggleQueue',
+      'toggleQueue:true',
       'openSettings',
     ]);
   });

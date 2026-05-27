@@ -53,8 +53,8 @@ bun run dev
 
 After that you should have:
 
-- UI: <http://localhost:3000>
-- Local API: <http://localhost:4317/api/health>
+- UI: <http://localhost:17222>
+- Local API: <http://localhost:17223/api/health>
 - Default library: `~/AI-Studio-Library` (on Windows: `%USERPROFILE%\AI-Studio-Library`)
 - Logs: `~/AI-Studio-Library/logs`
 - SQLite: `~/AI-Studio-Library/db/studio.sqlite`
@@ -82,11 +82,12 @@ Available variables:
 - `STUDIO_LIBRARY_DIR`
 - `STUDIO_SERVER_PORT`
 - `STUDIO_CODEX_WS_PORT`
+- `VITE_STUDIO_API_BASE`
 
 Optional Electron shell variables:
 
-- `STUDIO_ELECTRON_API_BASE` — reuse an already-running local backend instead of `http://localhost:4317`.
-- `STUDIO_ELECTRON_RENDERER_URL` — point the desktop shell to a Vite dev server other than the default `http://localhost:3000`.
+- `STUDIO_ELECTRON_API_BASE` — reuse an already-running local backend instead of `http://localhost:17223`.
+- `STUDIO_ELECTRON_RENDERER_URL` — point the desktop shell to a Vite dev server other than the default `http://localhost:17222`.
 
 Example library paths:
 

@@ -7,8 +7,8 @@ import {
   waitForHttp,
 } from './electron-utils';
 
-const rendererUrl = process.env.STUDIO_ELECTRON_RENDERER_URL || 'http://localhost:3000';
-const apiBase = process.env.STUDIO_ELECTRON_API_BASE || 'http://localhost:4317';
+const rendererUrl = process.env.STUDIO_ELECTRON_RENDERER_URL || 'http://localhost:17222';
+const apiBase = process.env.STUDIO_ELECTRON_API_BASE || 'http://localhost:17223';
 
 const processes = [] as ReturnType<typeof spawnManagedProcess>[];
 

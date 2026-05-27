@@ -18,8 +18,8 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       envLocalPresent: true,
     },
     config: {
-      serverPort: 4317,
-      codexWsPort: 4318,
+      serverPort: 17223,
+      codexWsPort: 17224,
     },
     library: {
       exists: true,
@@ -34,7 +34,7 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
     },
     appServer: {
       running: true,
-      wsUrl: 'ws://localhost:4318',
+      wsUrl: 'ws://localhost:17224',
       pid: 1234,
       lastExitCode: null,
       lastExitAt: null,

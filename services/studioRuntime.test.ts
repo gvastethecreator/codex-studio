@@ -6,17 +6,17 @@ describe('resolveStudioRuntimeFromSources', () => {
   it('prefers the desktop bridge api base and exposes desktop capabilities', () => {
     const runtime = resolveStudioRuntimeFromSources({
       desktopBridge: {
-        apiBase: 'http://127.0.0.1:4317/',
+        apiBase: 'http://127.0.0.1:17223/',
         desktop: true,
         platform: 'win32',
       },
-      envApiBase: 'http://env.local:4317/',
+      envApiBase: 'http://env.local:17223/',
     });
 
     expect(runtime).toMatchObject({
       kind: 'desktop',
       isDesktop: true,
-      apiBase: 'http://127.0.0.1:4317',
+      apiBase: 'http://127.0.0.1:17223',
       platform: 'win32',
       capabilities: {
         desktopBridge: true,
@@ -44,7 +44,7 @@ describe('resolveStudioRuntimeFromSources', () => {
 
     expect(runtime).toMatchObject({
       kind: 'web',
-      apiBase: 'http://localhost:4317',
+      apiBase: 'http://localhost:17223',
       isDesktop: false,
     });
   });

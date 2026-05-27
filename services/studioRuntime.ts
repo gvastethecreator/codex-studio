@@ -11,7 +11,7 @@
  * that wires readiness, diagnostics, onboarding, session verification, storage
  * recovery, and local studio sync into a single consumer API for the UI shell.
  */
-const DEFAULT_STUDIO_API_BASE = 'http://localhost:4317';
+const DEFAULT_STUDIO_API_BASE = 'http://localhost:17223';
 
 export interface StudioRuntimeCapabilities {
   desktopBridge: boolean;

@@ -7,7 +7,7 @@ import {
   waitForHttp,
 } from './electron-utils';
 
-const apiBase = process.env.STUDIO_ELECTRON_API_BASE || 'http://localhost:4317';
+const apiBase = process.env.STUDIO_ELECTRON_API_BASE || 'http://localhost:17223';
 
 const build = Bun.spawnSync(['bun', 'run', 'build:ui'], {
   stdout: 'inherit',

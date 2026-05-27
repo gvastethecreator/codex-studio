@@ -1,6 +1,9 @@
+import type { Dispatch, SetStateAction } from 'react';
+
 import { startViewTransition } from '../utils/transitionUtils';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
+import type { StudioRuntimeStatusItem } from './studioDiagnostics';
 
 type StartTransition = (callback: () => void) => void;
 
@@ -31,12 +34,13 @@ interface StudioHeaderToolbarOverlayContext {
 }
 
 interface StudioHeaderToolbarCommandCenterContext {
-  activeProviderId: HeaderToolbarProps['activeProviderId'];
-  runtimeStatus: HeaderToolbarProps['runtimeStatus'];
+  defaultProviderId: HeaderToolbarProps['activeProviderId'] | null | undefined;
+  statusItems: StudioRuntimeStatusItem[];
   queueResultPreviews: HeaderToolbarProps['queueResultPreviews'];
-  queueCount: HeaderToolbarProps['queueCount'];
+  queueJobCount: number;
+  activeServerJobCount: number;
   isQueueOpen: HeaderToolbarProps['isQueueOpen'];
-  onToggleQueue: HeaderToolbarProps['onToggleQueue'];
+  setIsQueueOpen: Dispatch<SetStateAction<boolean>>;
   onOpenSettings: HeaderToolbarProps['onOpenSettings'];
 }
 
@@ -46,6 +50,24 @@ export interface BuildStudioHeaderToolbarPropsArgs {
   overlays: StudioHeaderToolbarOverlayContext;
   commandCenter: StudioHeaderToolbarCommandCenterContext;
   startTransition?: StartTransition;
+}
+
+function summarizeRuntimeStatus(
+  statusItems: StudioRuntimeStatusItem[],
+): HeaderToolbarProps['runtimeStatus'] {
+  if (statusItems.length === 0) {
+    return { label: 'Checking', tone: 'warning' };
+  }
+
+  if (statusItems.some((item) => item.tone === 'danger')) {
+    return { label: 'Attention', tone: 'danger' };
+  }
+
+  if (statusItems.some((item) => item.tone === 'warning')) {
+    return { label: 'Standby', tone: 'warning' };
+  }
+
+  return { label: 'Ready', tone: 'success' };
 }
 
 /**
@@ -83,12 +105,12 @@ export function buildStudioHeaderToolbarProps({
     trashCount: overlays.trashCount,
     onToggleDebug: overlays.onToggleDebug,
     usage: view.usage,
-    activeProviderId: commandCenter.activeProviderId,
-    runtimeStatus: commandCenter.runtimeStatus,
+    activeProviderId: commandCenter.defaultProviderId ?? 'codex',
+    runtimeStatus: summarizeRuntimeStatus(commandCenter.statusItems),
     queueResultPreviews: commandCenter.queueResultPreviews,
-    queueCount: commandCenter.queueCount,
+    queueCount: commandCenter.queueJobCount + commandCenter.activeServerJobCount,
     isQueueOpen: commandCenter.isQueueOpen,
-    onToggleQueue: commandCenter.onToggleQueue,
+    onToggleQueue: () => commandCenter.setIsQueueOpen((previous) => !previous),
     onOpenSettings: commandCenter.onOpenSettings,
   };
 }

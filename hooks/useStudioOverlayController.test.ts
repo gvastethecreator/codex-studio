@@ -98,7 +98,7 @@ describe('buildStudioOverlayController', () => {
         },
       },
       onboarding: {
-        apiBase: 'http://localhost:4317',
+        apiBase: 'http://localhost:17223',
         error: null,
         health: null,
         localCodexSession: null,

@@ -73,14 +73,14 @@ describe('buildJobInspectorDetailModel', () => {
     });
 
     const model = buildJobInspectorDetailModel(detail, {
-      assetBaseUrl: 'http://localhost:4317',
+      assetBaseUrl: 'http://localhost:17223',
     });
 
     expect(model.artifacts).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
           kind: 'image',
-          href: 'http://localhost:4317/library/outputs/final-image.webp',
+          href: 'http://localhost:17223/library/outputs/final-image.webp',
         }),
         expect.objectContaining({
           kind: 'image',
@@ -88,7 +88,7 @@ describe('buildJobInspectorDetailModel', () => {
         }),
         expect.objectContaining({
           kind: 'image',
-          href: 'http://localhost:4317/library/thumbnails/final-image.webp',
+          href: 'http://localhost:17223/library/thumbnails/final-image.webp',
         }),
       ]),
     );
@@ -128,14 +128,14 @@ describe('buildJobInspectorDetailModel', () => {
     });
 
     const model = buildJobInspectorDetailModel(detail, {
-      assetBaseUrl: 'http://localhost:4317',
+      assetBaseUrl: 'http://localhost:17223',
     });
 
     expect(model.outputs).toEqual([
       expect.objectContaining({
         kind: 'image',
-        href: 'http://localhost:4317/library/outputs/final-image.webp',
-        previewSrc: 'http://localhost:4317/library/outputs/thumbs/final-image.webp',
+        href: 'http://localhost:17223/library/outputs/final-image.webp',
+        previewSrc: 'http://localhost:17223/library/outputs/thumbs/final-image.webp',
         value: '1536×1024 · 3:2 · image/webp',
       }),
     ]);
