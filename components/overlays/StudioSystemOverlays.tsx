@@ -45,7 +45,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   onInspectJob,
   onClearSelectedJob,
   onRetryJob,
-  handleExportWorkspaceSnapshot,
+  handleExportLegacyVisualBatchSnapshot,
   handleDeepScan,
   apiBase,
   onboardingError,
@@ -108,7 +108,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             onClose={closeDashboard}
             imagesCount={imagesCount}
             workspaces={workspaces}
-            onExportWorkspaceSnapshot={handleExportWorkspaceSnapshot}
+            onExportLegacyVisualBatchSnapshot={handleExportLegacyVisualBatchSnapshot}
             onDeepScan={handleDeepScan}
           />
         </Suspense>

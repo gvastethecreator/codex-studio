@@ -25,7 +25,7 @@ interface StatusItem {
 }
 
 interface RightSystemPanelProps {
-  onExportWorkspaceSnapshot: () => void;
+  onExportLegacyVisualBatchSnapshot: () => void;
   isBackgroundEnabled: boolean;
   onToggleBackground: () => void;
   isQueueOpen: boolean;
@@ -91,7 +91,7 @@ function StatusCard({ label, value, detail, tone, icon: Icon }: StatusItem) {
 
 export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
   ({
-    onExportWorkspaceSnapshot,
+    onExportLegacyVisualBatchSnapshot,
     isBackgroundEnabled,
     onToggleBackground,
     isQueueOpen,
@@ -113,15 +113,16 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
         <div className="flex flex-col gap-6">
           <div>
             <h3 className="mb-2 px-1 text-[10px] font-black uppercase tracking-widest text-zinc-500">
-              Workspace Snapshot
+              Legacy Workspace Snapshot
             </h3>
             <p className="mb-3 px-1 text-[11px] leading-relaxed text-zinc-500">
-              Export current workspace metadata as JSON. Image files stay in local library storage.
+              Compatibility export for legacy workspace metadata JSON. Durable image truth remains
+              in the local Catalog library.
             </p>
             <div className="flex flex-col gap-2">
               <button
                 type="button"
-                onClick={onExportWorkspaceSnapshot}
+                onClick={onExportLegacyVisualBatchSnapshot}
                 className="group flex h-10 w-full items-center gap-3 rounded-xl bg-white/5 px-4 transition-all hover:bg-white/10"
               >
                 <Share
@@ -129,7 +130,7 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                   className="text-zinc-500 transition-colors group-hover:text-white"
                 />
                 <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300 group-hover:text-white">
-                  Export Snapshot
+                  Export Legacy Snapshot
                 </span>
               </button>
             </div>

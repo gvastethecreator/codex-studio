@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import type { StudioCatalogView } from '../lib/studioCatalogView';
 import {
-  buildLegacyVisualBatchSnapshot,
+  exportLegacyVisualBatchSnapshot as exportLegacyVisualBatchSnapshotPayload,
   buildWorkspaceExportImages,
 } from '../lib/studioWorkspaceExport';
 import { downloadMultipleImagesAsZip, exportToJson } from '../utils/fileUtils';
@@ -13,14 +13,28 @@ interface UseVaultTransferProps {
   log: (message: string) => void;
 }
 
+export interface VaultTransferController {
+  exportLegacyVisualBatchSnapshot: () => void;
+  /**
+   * @deprecated Use `exportLegacyVisualBatchSnapshot`.
+   * Compatibility alias kept only for incremental migration.
+   */
+  exportWorkspaceSnapshot: () => void;
+  downloadAndClearWorkspace: () => Promise<boolean>;
+}
+
 /**
  * Concentrate vault export and archive-download flows behind one hook so
  * AppContent only coordinates UI state, not file I/O choreography.
  */
-export function useVaultTransfer({ catalogView, addToast, log }: UseVaultTransferProps) {
-  const exportWorkspaceSnapshot = useCallback(() => {
+export function useVaultTransfer({
+  catalogView,
+  addToast,
+  log,
+}: UseVaultTransferProps): VaultTransferController {
+  const exportLegacyVisualBatchSnapshot = useCallback(() => {
     exportToJson(
-      buildLegacyVisualBatchSnapshot({ catalogView }),
+      exportLegacyVisualBatchSnapshotPayload({ catalogView }),
       `workspace-snapshot-${Date.now()}.json`,
     );
   }, [catalogView]);
@@ -43,7 +57,9 @@ export function useVaultTransfer({ catalogView, addToast, log }: UseVaultTransfe
   }, [addToast, catalogView, log]);
 
   return {
-    exportWorkspaceSnapshot,
+    exportLegacyVisualBatchSnapshot,
+    // Compatibility alias for callers still using neutral naming.
+    exportWorkspaceSnapshot: exportLegacyVisualBatchSnapshot,
     downloadAndClearWorkspace,
   };
 }

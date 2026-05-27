@@ -22,7 +22,7 @@ export interface StudioOperationsRailProps {
   removeJob: (jobId: string) => void;
   clearCompleted: () => void;
   isResting: boolean;
-  exportWorkspaceSnapshot: () => void;
+  exportLegacyVisualBatchSnapshot: () => void;
   isBackgroundEnabled: boolean;
   setBackgroundEnabled: (enabled: boolean) => void;
   activeServerJobCount: number;

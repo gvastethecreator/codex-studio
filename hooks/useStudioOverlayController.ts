@@ -51,7 +51,7 @@ interface StudioOverlayActivityContext {
 }
 
 interface StudioOverlayVaultContext {
-  handleExportWorkspaceSnapshot: StudioSystemOverlaysProps['handleExportWorkspaceSnapshot'];
+  handleExportLegacyVisualBatchSnapshot: StudioSystemOverlaysProps['handleExportLegacyVisualBatchSnapshot'];
   handleDeepScan: StudioSystemOverlaysProps['handleDeepScan'];
 }
 
@@ -264,7 +264,7 @@ export function buildStudioOverlayController({
       onInspectJob: activity.onInspectJob,
       onClearSelectedJob: activity.onClearSelectedJob,
       onRetryJob: activity.onRetryJob,
-      handleExportWorkspaceSnapshot: vault.handleExportWorkspaceSnapshot,
+      handleExportLegacyVisualBatchSnapshot: vault.handleExportLegacyVisualBatchSnapshot,
       handleDeepScan: vault.handleDeepScan,
       apiBase: onboarding.apiBase,
       onboardingError: onboarding.error,

@@ -145,7 +145,7 @@ export function useStudioShell(): StudioShellController {
     closeDebugPanel,
   });
 
-  const { exportWorkspaceSnapshot, downloadAndClearWorkspace } = useVaultTransfer({
+  const { exportLegacyVisualBatchSnapshot } = useVaultTransfer({
     catalogView: activeCatalog.view,
     addToast,
     log,
@@ -373,7 +373,7 @@ export function useStudioShell(): StudioShellController {
           onRetryJob: activitySession.selection.retryJob,
         },
         vault: {
-          handleExportWorkspaceSnapshot: exportWorkspaceSnapshot,
+          handleExportLegacyVisualBatchSnapshot: exportLegacyVisualBatchSnapshot,
           handleDeepScan: () => {},
         },
         settings: {
@@ -451,7 +451,7 @@ export function useStudioShell(): StudioShellController {
       activitySession.selection.inspectJob,
       activitySession.selection.clearSelectedJob,
       activitySession.selection.retryJob,
-      exportWorkspaceSnapshot,
+      exportLegacyVisualBatchSnapshot,
       viewState.overlays.settings.isOpen,
       viewState.overlays.settings.close,
       studioSettings.data,
@@ -549,7 +549,7 @@ export function useStudioShell(): StudioShellController {
           removeJob,
           clearCompleted,
           isResting,
-          exportWorkspaceSnapshot,
+          exportLegacyVisualBatchSnapshot,
           isBackgroundEnabled,
           setBackgroundEnabled,
           activeServerJobCount: studioRuntime.activity.activeServerJobCount,
@@ -598,7 +598,7 @@ export function useStudioShell(): StudioShellController {
       removeJob,
       clearCompleted,
       isResting,
-      exportWorkspaceSnapshot,
+      exportLegacyVisualBatchSnapshot,
       isBackgroundEnabled,
       setBackgroundEnabled,
       studioRuntime.activity.activeServerJobCount,

@@ -7,7 +7,7 @@ interface DashboardModalProps {
   onClose: () => void;
   imagesCount: number;
   workspaces: Workspace[];
-  onExportWorkspaceSnapshot: () => void;
+  onExportLegacyVisualBatchSnapshot: () => void;
   onDeepScan: () => void;
 }
 
@@ -16,7 +16,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
   onClose,
   imagesCount,
   workspaces,
-  onExportWorkspaceSnapshot,
+  onExportLegacyVisualBatchSnapshot,
   onDeepScan,
 }) => {
   if (!isOpen) return null;
@@ -94,19 +94,19 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
 
           <div className="space-y-3">
             <h4 className="text-[10px] font-black uppercase tracking-widest text-zinc-600 px-1">
-              Workspace Snapshot
+              Legacy Workspace Snapshot
             </h4>
             <div className="grid grid-cols-1 gap-3">
               <button
                 type="button"
-                onClick={onExportWorkspaceSnapshot}
+                onClick={onExportLegacyVisualBatchSnapshot}
                 className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
               >
                 <Download
                   size={16}
                   className="text-blue-400 group-hover:scale-110 transition-transform"
                 />
-                Export Snapshot
+                Export Legacy Snapshot
               </button>
             </div>
             <button

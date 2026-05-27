@@ -34,6 +34,23 @@ interface RunLocalGenerationOptions {
   onProgress?: (message: string) => void;
 }
 
+export type LocalGenerationLifecycleOutcome =
+  | {
+      status: 'completed';
+      result: LocalGenerationRunResult;
+      durationMs: number;
+    }
+  | {
+      status: 'cancelled';
+      message: string;
+      durationMs: number;
+    }
+  | {
+      status: 'failed';
+      message: string;
+      durationMs: number;
+    };
+
 export interface LocalGenerationRunResult {
   batchId: string;
   workspaceId: string;
@@ -88,6 +105,10 @@ function waitWithAbort(durationMs: number, signal?: AbortSignal) {
 
     signal.addEventListener('abort', handleAbort, { once: true });
   });
+}
+
+function isGenerationCancellationError(error: unknown) {
+  return error instanceof Error && (error.name === 'AbortError' || /cancel/i.test(error.message));
 }
 
 /**
@@ -355,5 +376,33 @@ export async function runLocalGeneration({
     };
   } finally {
     stream.close();
+  }
+}
+
+export async function runLocalGenerationWithLifecycle(
+  options: RunLocalGenerationOptions,
+): Promise<LocalGenerationLifecycleOutcome> {
+  const startedAt = Date.now();
+  try {
+    const result = await runLocalGeneration(options);
+    return {
+      status: 'completed',
+      result,
+      durationMs: Date.now() - startedAt,
+    };
+  } catch (error) {
+    if (isGenerationCancellationError(error)) {
+      return {
+        status: 'cancelled',
+        message: error instanceof Error ? error.message : String(error),
+        durationMs: Date.now() - startedAt,
+      };
+    }
+
+    return {
+      status: 'failed',
+      message: error instanceof Error ? error.message : String(error),
+      durationMs: Date.now() - startedAt,
+    };
   }
 }

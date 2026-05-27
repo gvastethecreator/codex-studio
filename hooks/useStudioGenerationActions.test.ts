@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import { prepareStudioGenerationRequest } from './useStudioGenerationActions';
+import { prepareStudioGenerationRequest } from '../lib/studioGenerationRequest';
 
 describe('prepareStudioGenerationRequest', () => {
   it('keeps queued attachment copies and preserves the composer attachment state', () => {

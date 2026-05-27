@@ -7,7 +7,10 @@ import type {
 } from '../types';
 import type { Job as StudioJob } from '../packages/shared/src';
 import { startViewTransition } from '../utils/transitionUtils';
-import { runLocalGeneration, type LocalGenerationRunResult } from '../services/localGenerationRun';
+import {
+  runLocalGenerationWithLifecycle,
+  type LocalGenerationRunResult,
+} from '../services/localGenerationRun';
 
 interface GenerationOptions {
   preventModal?: boolean;
@@ -102,29 +105,10 @@ export const useGenerationPipeline = ({
     setGenerationStartTime(null);
   }, []);
 
-  const handleGenerationError = useCallback(
-    (error: unknown) => {
-      const message = error instanceof Error ? error.message : String(error);
-      const isCancellation =
-        error instanceof Error && (error.name === 'AbortError' || /cancel/i.test(error.message));
-
-      if (isCancellation) {
-        addToast('Generation cancelled', 'info');
-        log(`Generation cancelled: ${message}`);
-        throw error;
-      }
-
-      addToast(message, 'error');
-      log(`Generation Error: ${message}`);
-      throw error;
-    },
-    [addToast, log],
-  );
-
   const executeGeneration = useCallback(
     async (configOverrides: Partial<ImageGenerationConfig>, options?: GenerationOptions) => {
       const configToUse = { ...generationConfig, ...configOverrides };
-      const startTime = beginRun(configToUse);
+      beginRun(configToUse);
       const recipeId = configToUse.recipeId ?? activeRecipe;
       const workspaceId = resolveGenerationWorkspaceId(activeWorkspaceId, options?.workspaceId);
 
@@ -134,13 +118,27 @@ export const useGenerationPipeline = ({
           throw new Error('This recipe needs a reference image or a prompt before it can run.');
         }
 
-        const result = await runLocalGeneration({
+        const outcome = await runLocalGenerationWithLifecycle({
           config: configToUse,
           workspaceId,
           signal: options?.signal,
           onJobCreated: options?.onJobCreated,
           onProgress: log,
         });
+
+        if (outcome.status === 'cancelled') {
+          addToast('Generation cancelled', 'info');
+          log(`Generation cancelled: ${outcome.message}`);
+          return;
+        }
+
+        if (outcome.status === 'failed') {
+          addToast(outcome.message, 'error');
+          log(`Generation Error: ${outcome.message}`);
+          return;
+        }
+
+        const result = outcome.result;
         const { batchId, generatedCount, images } = result;
 
         startViewTransition(() => {
@@ -156,14 +154,16 @@ export const useGenerationPipeline = ({
           setIsInteractingWithToolbar(false);
         }
 
-        const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+        const duration = (outcome.durationMs / 1000).toFixed(1);
         log(`Generated local result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`);
         addToast(
           `Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`,
           'success',
         );
       } catch (error) {
-        handleGenerationError(error);
+        const message = error instanceof Error ? error.message : String(error);
+        addToast(message, 'error');
+        log(`Generation Error: ${message}`);
       } finally {
         finishRun();
       }
@@ -179,7 +179,6 @@ export const useGenerationPipeline = ({
       setIsInteractingWithToolbar,
       beginRun,
       finishRun,
-      handleGenerationError,
     ],
   );
 
@@ -192,10 +191,10 @@ export const useGenerationPipeline = ({
         prompt,
       });
 
-      const startTime = beginRun(configToUse);
+      beginRun(configToUse);
 
       try {
-        const result = await runLocalGeneration({
+        const outcome = await runLocalGenerationWithLifecycle({
           workspaceId: activeWorkspaceId,
           config: configToUse,
           inputImage: {
@@ -203,17 +202,33 @@ export const useGenerationPipeline = ({
             prompt: configToUse.prompt,
           },
         });
+
+        if (outcome.status === 'cancelled') {
+          addToast('Generation cancelled', 'info');
+          log(`Generation cancelled: ${outcome.message}`);
+          return;
+        }
+
+        if (outcome.status === 'failed') {
+          addToast(outcome.message, 'error');
+          log(`Generation Error: ${outcome.message}`);
+          return;
+        }
+
+        const result = outcome.result;
         const { batchId, generatedCount } = result;
 
         startViewTransition(() => {
           appendLocalGenerationResult?.(result, { maxPerWorkspace: 20 });
         });
 
-        const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+        const duration = (outcome.durationMs / 1000).toFixed(1);
         log(`Generated edit result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`);
         addToast('Image edit complete', 'success');
       } catch (error) {
-        handleGenerationError(error);
+        const message = error instanceof Error ? error.message : String(error);
+        addToast(message, 'error');
+        log(`Generation Error: ${message}`);
       } finally {
         finishRun();
       }
@@ -226,7 +241,6 @@ export const useGenerationPipeline = ({
       log,
       beginRun,
       finishRun,
-      handleGenerationError,
     ],
   );
 
