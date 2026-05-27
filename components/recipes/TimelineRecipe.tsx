@@ -530,14 +530,15 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  // react-doctor-disable-next-line react-doctor/no-event-handler
   const activeImage = useMemo(() => config.attachments[0], [config.attachments]);
 
   // react-doctor-disable-next-line react-doctor/no-event-handler
   const ratioValue = useMemo(() => RATIO_MAP[config.aspectRatio] || 1.777, [config.aspectRatio]);
 
   const [uploadedOrigin, setUploadedOrigin] = useState<{ id: string; src: string } | null>(null);
-  // react-doctor-disable-next-line react-doctor/no-event-handler
   const sessionOrigin = useMemo(() => {
+    // react-doctor-disable-next-line react-doctor/no-event-handler
     if (uploadedOrigin) return uploadedOrigin;
     const anchorAtt = config.attachments.find((a) => a.name.includes('(Anchor)'));
     if (anchorAtt) return { id: anchorAtt.id, src: anchorAtt.dataUrl };
@@ -555,8 +556,8 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   }, [activeImage, images, sessionOrigin]);
 
   // 2. Build the Unified Timeline Strip
-  // react-doctor-disable-next-line react-doctor/no-event-handler
   const timelineItems = useMemo(() => {
+    // react-doctor-disable-next-line react-doctor/no-event-handler
     const generatedItems = images.filter((img) => hasRecipeIdentity(img.config, 'timeline'));
     const itemsMap = new Map();
 

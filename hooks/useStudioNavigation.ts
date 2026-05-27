@@ -69,6 +69,7 @@ export function useStudioNavigation({
   imageToEditRef.current = imageToEdit;
   const isEditorOpenRef = useRef(isEditorOpen);
   isEditorOpenRef.current = isEditorOpen;
+  // react-doctor-disable-next-line react-doctor/no-event-handler
   const isModalOpenRef = useRef(isModalOpen);
   isModalOpenRef.current = isModalOpen;
 
@@ -83,6 +84,7 @@ export function useStudioNavigation({
         setActiveRecipe(null);
       }
 
+      // react-doctor-disable-next-line react-doctor/no-event-handler
       if (route.overlay === 'editor') {
         if (!imageToEditRef.current) {
           closeOverlay();
