@@ -802,6 +802,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   onOpenImage,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
+  // react-doctor-disable-next-line react-doctor/no-event-handler
   const activeImage = config.attachments[0];
   const activeImageRef = useRef(activeImage);
   activeImageRef.current = activeImage;
@@ -910,6 +911,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     if (!node || typeof ResizeObserver === 'undefined') return;
 
     const updateWidth = () => setBrowserState((prev) => ({ ...prev, styleScrollWidth: node.clientWidth }));
+    // react-doctor-disable-next-line react-doctor/no-initialize-state
     updateWidth();
 
     const observer = new ResizeObserver(updateWidth);
@@ -1044,10 +1046,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     loadedStylePacksById,
   ]);
 
-  // react-doctor-disable-next-line react-doctor/no-pass-data-to-parent
-  // react-doctor-disable-next-line react-doctor/no-pass-live-state-to-parent
   useEffect(() => {
     const sources = new Set<string>();
+    // react-doctor-disable-next-line react-doctor/no-pass-data-to-parent
+    // react-doctor-disable-next-line react-doctor/no-pass-live-state-to-parent
     for (const state of presetVisualStateById.values()) {
       if (state.exampleImageSrc) sources.add(state.exampleImageSrc);
     }
