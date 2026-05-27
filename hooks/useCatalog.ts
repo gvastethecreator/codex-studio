@@ -169,9 +169,12 @@ export function useStudioCatalogController({
     [trashCatalog.view],
   );
 
+  const refreshActiveCatalog = activeCatalog.refresh;
+  const refreshWorkspaceCatalog = workspaceCatalog.refresh;
+  const refreshTrashCatalog = trashCatalog.refresh;
   const refreshCatalogs = useCallback(() => {
-    void Promise.all([activeCatalog.refresh(), workspaceCatalog.refresh(), trashCatalog.refresh()]);
-  }, [activeCatalog, trashCatalog, workspaceCatalog]);
+    void Promise.all([refreshActiveCatalog(), refreshWorkspaceCatalog(), refreshTrashCatalog()]);
+  }, [refreshActiveCatalog, refreshWorkspaceCatalog, refreshTrashCatalog]);
 
   const runCatalogMutation = useCallback(
     (operation: Promise<unknown>, fallbackMessage: string) => {

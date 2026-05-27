@@ -31,7 +31,7 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
         <button
           type="button"
           onClick={onOpenDashboard}
-          className={`flex h-10 items-center gap-2 rounded-lg border px-2.5 text-left transition-all hover:border-accent-400/30 hover:bg-white/8 ${usageToneClasses}`}
+          className={`flex h-10 items-center gap-2 rounded-lg border px-2.5 text-left transition-all hover:border-accent-400/30 hover:bg-white/8 cursor-pointer ${usageToneClasses}`}
         >
           <div className="flex size-7 shrink-0 items-center justify-center rounded-md bg-black/20 text-inherit">
             {usage.tone === 'offline' ? <WifiOff size={14} /> : <Gauge size={14} />}

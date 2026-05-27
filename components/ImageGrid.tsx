@@ -123,11 +123,10 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                 onToggleFavorite(image.id);
               }}
               className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
-                      ${
-                        image.isFavorite
-                          ? 'bg-accent-500 border-accent-400 text-white scale-110'
-                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
-                      }`}
+                      ${image.isFavorite
+                  ? 'bg-accent-500 border-accent-400 text-white scale-110'
+                  : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
+                }`}
             >
               <Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} strokeWidth={3} />
             </button>
@@ -137,11 +136,10 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
               type="button"
               onClick={handleSelectClick}
               className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
-                      ${
-                        isSelected
-                          ? 'bg-accent-600 border-accent-400 text-white scale-110'
-                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
-                      }`}
+                      ${isSelected
+                  ? 'bg-accent-600 border-accent-400 text-white scale-110'
+                  : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
+                }`}
             >
               <Check size={14} strokeWidth={3} />
             </button>
@@ -206,7 +204,6 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
             />
           </div>
         </div>
-      </div>
       </button>
     );
   },

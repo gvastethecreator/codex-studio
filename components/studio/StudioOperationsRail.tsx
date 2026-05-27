@@ -16,6 +16,7 @@ export interface StudioOperationsRailProps {
   studioJobs: StudioJob[];
   selectedStudioJobId: string | null;
   retry: (jobId: string) => void;
+  retryPersistentJob?: (jobId: string) => void;
   cancelJob: (jobId: string) => void;
   cancelPersistentJob: (jobId: string) => void;
   removeJob: (jobId: string) => void;
@@ -39,6 +40,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
   studioJobs,
   selectedStudioJobId,
   retry,
+  retryPersistentJob,
   cancelJob,
   cancelPersistentJob,
   removeJob,
@@ -66,6 +68,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
             serverJobs={studioJobs}
             selectedJobId={selectedStudioJobId}
             onRetry={retry}
+            onRetryServerJob={retryPersistentJob}
             onCancel={cancelJob}
             onCancelServerJob={cancelPersistentJob}
             onRemove={removeJob}

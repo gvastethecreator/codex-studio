@@ -67,7 +67,7 @@ export function useStudioRuntime({
       diagnosticsState.refreshDiagnostics(),
       sync.refreshBackendState(),
     ]);
-  }, [diagnosticsState, onboarding, sync]);
+  }, [onboarding.refreshHealth, diagnosticsState.refreshDiagnostics, sync.refreshBackendState]);
 
   return {
     activity: sync.activity,

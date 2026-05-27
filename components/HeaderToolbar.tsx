@@ -53,7 +53,7 @@ const RECIPE_DATA: Record<Exclude<RecipeId, null>, { name: string }> = {
   timeline: { name: 'Timeline' },
 };
 
-export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
+const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   isGenerating,
   workspaces,
   activeWorkspaceId,
@@ -265,3 +265,5 @@ export const HeaderToolbar: React.FC<HeaderToolbarProps> = ({
     </TopToolbar>
   );
 };
+
+export const HeaderToolbar = React.memo(HeaderToolbarFn);

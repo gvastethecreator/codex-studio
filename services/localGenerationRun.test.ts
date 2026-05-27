@@ -79,4 +79,45 @@ describe('localGenerationRun', () => {
       },
     ]);
   });
+
+  it('keeps edit-mode assets scoped to input image plus mask attachments', async () => {
+    const assets = await buildJobAssets({
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        attachments: [
+          {
+            id: 'att-stale',
+            name: 'old-reference.png',
+            dataUrl: 'data:image/png;base64,OLD',
+            strength: 0.3,
+          },
+          {
+            id: 'mask-123',
+            name: 'edit-mask.png',
+            dataUrl: 'data:image/png;base64,MASK',
+            strength: 1,
+          },
+        ],
+      },
+      inputImage: {
+        src: 'data:image/png;base64,INPUT',
+        prompt: 'Apply edit',
+      },
+    });
+
+    expect(assets).toEqual([
+      {
+        role: 'input',
+        name: 'input-image.png',
+        dataUrl: 'data:image/png;base64,INPUT',
+        strength: 1,
+      },
+      {
+        role: 'mask',
+        name: 'edit-mask.png',
+        dataUrl: 'data:image/png;base64,MASK',
+        strength: 1,
+      },
+    ]);
+  });
 });

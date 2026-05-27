@@ -24,6 +24,14 @@ Recent progress in the `Studio Shell` track:
 - `useStudioCatalogController()` now owns `Image Catalog` mutation choreography, queue previews, and trash grouping.
 - `buildStudioPageController()` now crosses grouped `debug` / `grid` / `operations` contexts instead of a flat prop mirror.
 - `buildStudioHeaderToolbarProps()` now derives `Command Center` runtime status, queue counts, queue toggle behavior, and provider fallback inside the toolbar seam.
+- `buildStudioViewportController()` now owns `StudioViewport` / `StudioGenerationDock` projection so `useStudioShell.ts` no longer needs the ad-hoc `recipePagePropsRef` presenter glue.
+- `buildStudioShellOverlayController()` now owns overlay-side `Studio Settings` library fallback and background-toggle wiring so `useStudioShell.ts` no longer rebuilds those decisions inline.
+- `useStudioViewState()` now groups queue/editor/preview/overlay state behind focused surfaces and removes duplicate editor-image setter wiring from `useStudioShell.ts`.
+- `useStudioNavigation()` now crosses grouped `recipe` / `modal` / `editor` / `shell` navigation surfaces and drops unused flat props from the shell contract.
+- `startQueuedJobExecution()` in `lib/queueStateMachine.ts` now owns per-job queue execution semantics and terminal outcome mapping so `useQueueManager.ts` stays the queue orchestrator instead of another lifecycle sink.
+- `useStudioGenerationSession()` now returns grouped `queue` / `actions` surfaces so `useStudioShell.ts` no longer consumes another spread of generation-session implementation detail.
+- `useStudioSettings()` now returns a grouped `data` surface so editable settings, provider preflight/capability reads, and External Output Source actions cross one shell-facing seam instead of another flat settings contract.
+- `useStudioActivitySession()` now returns grouped `selection` / `debugPanel` surfaces so job inspection state and debug-panel toggling stop leaking as another flat shell dependency list.
 
 Recommended next steps:
 

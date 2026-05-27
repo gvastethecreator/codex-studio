@@ -50,6 +50,13 @@
   }
 }
 
+/* react-scan overlay must float above all app chrome (z-40/z-50 toolbars) */
+react-scan-overlay,
+#react-scan-toolbar,
+[data-react-scan] {
+  z-index: 2147483647 !important;
+}
+
 @layer base {
   :root {
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);

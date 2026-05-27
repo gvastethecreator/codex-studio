@@ -128,7 +128,7 @@ export function hydrateSourceSpecAssetPaths(
   let referenceIndex = 0;
 
   const hydratedAssets = sourceSpec.assets.map((asset) => {
-    if (!asset.dataUrl) {
+    if (asset.role !== 'reference' || !asset.dataUrl) {
       return asset;
     }
 

@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef } from 'react';
+import { useCallback, useMemo } from 'react';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
@@ -16,7 +16,7 @@ import { useStudioCatalogController } from './useCatalog';
 import { useStudioGallery } from './useStudioGallery';
 import { useStudioGenerationSession } from './useStudioGenerationSession';
 import { useStudioNavigation } from './useStudioNavigation';
-import { useStudioOverlayController } from './useStudioOverlayController';
+import { buildStudioShellOverlayController } from './useStudioOverlayController';
 import { useStudioReset } from './useStudioReset';
 import { useStudioRuntime } from './useStudioRuntime';
 import { useStudioSettings } from './useStudioSettings';
@@ -27,6 +27,7 @@ import { useGenerationToolbarConfig } from './useGenerationToolbarConfig';
 import { buildStudioHeaderToolbarProps } from '../lib/buildStudioHeaderToolbarProps';
 import {
   buildStudioPageController,
+  buildStudioViewportController,
   type StudioPageController,
 } from '../lib/buildStudioPageController';
 import { resolveStudioCarouselImage } from '../lib/studioCarouselImage';
@@ -150,32 +151,7 @@ export function useStudioShell(): StudioShellController {
     log,
   });
 
-  const {
-    isQueueOpen,
-    setIsQueueOpen,
-    isEditorOpen,
-    setIsEditorOpen,
-    imageToEdit,
-    setImageToEdit,
-    previewRatio,
-    setPreviewRatio,
-    isDashboardModalOpen,
-    openDashboard,
-    closeDashboard,
-    isSettingsModalOpen,
-    openSettings,
-    closeSettings,
-    isTrashModalOpen,
-    openTrash,
-    closeTrash,
-    openEditor,
-    closeEditor,
-    closeEditorState,
-    handleDownloadAndClear,
-    resetViewState,
-  } = useStudioViewState({
-    closeOverlay,
-  });
+  const viewState = useStudioViewState({ closeOverlay });
 
   const clearStudioUiState = useCallback(() => {
     recipe.setActiveRecipe(null);
@@ -183,9 +159,17 @@ export function useStudioShell(): StudioShellController {
     ui.setIsKeyPopoverOpen(false);
     modal.closeModal();
     navigateToStudio();
-    activitySession.clearSelectedJob();
-    resetViewState();
-  }, [activitySession, modal, navigateToStudio, recipe, resetViewState, ui]);
+    activitySession.selection.clearSelectedJob();
+    viewState.actions.reset();
+  }, [
+    activitySession.selection.clearSelectedJob,
+    modal.closeModal,
+    navigateToStudio,
+    recipe.setActiveRecipe,
+    ui.setIsInteractingWithToolbar,
+    ui.setIsKeyPopoverOpen,
+    viewState.actions.reset,
+  ]);
 
   const {
     direction,
@@ -197,22 +181,28 @@ export function useStudioShell(): StudioShellController {
     handleCloseModal,
   } = useStudioNavigation({
     route,
-    activeRecipe: recipe.activeRecipe,
-    setActiveRecipe: recipe.setActiveRecipe,
-    modalImage: modal.modalImage,
-    isModalOpen: modal.isModalOpen,
-    openModal: modal.openModal,
-    closeModal: modal.closeModal,
-    imageToEdit,
-    isEditorOpen,
-    setIsEditorOpen,
-    setImageToEdit,
-    closeEditorState,
-    navigateToStudio,
-    navigateToRecipes,
-    navigateToRecipe,
-    openModalRoute,
-    closeOverlay,
+    recipe: {
+      active: recipe.activeRecipe,
+      setActive: recipe.setActiveRecipe,
+      navigateToRecipes,
+      navigateToRecipe,
+    },
+    modal: {
+      isOpen: modal.isModalOpen,
+      open: modal.openModal,
+      close: modal.closeModal,
+      openRoute: openModalRoute,
+    },
+    editor: {
+      image: viewState.editor.image,
+      isOpen: viewState.editor.isOpen,
+      setIsOpen: viewState.editor.setIsOpen,
+      closeState: viewState.editor.closeState,
+    },
+    shell: {
+      navigateToStudio,
+      closeOverlay,
+    },
   });
 
   const generationSession = useStudioGenerationSession({
@@ -225,8 +215,8 @@ export function useStudioShell(): StudioShellController {
     closeModal: handleCloseModal,
     onRecipeSelection: handleRecipeSelection,
     onViewChange: handleViewChange,
-    setIsEditorOpen,
-    setImageToEdit,
+    setIsEditorOpen: viewState.editor.setIsOpen,
+    setImageToEdit: viewState.editor.setImage,
   });
   const {
     jobs,
@@ -236,6 +226,9 @@ export function useStudioShell(): StudioShellController {
     clearCompleted,
     resetQueue,
     isResting,
+    cancelPersistentJob,
+  } = generationSession.queue;
+  const {
     isEnhancingPrompt,
     isEditingImage,
     handleGenerate,
@@ -243,8 +236,7 @@ export function useStudioShell(): StudioShellController {
     handleExecuteEdit,
     handleLoadRecipe,
     resetGenerationUi,
-    handleCancelPersistentJob,
-  } = generationSession;
+  } = generationSession.actions;
 
   const { isResettingStudio, resetStudio } = useStudioReset({
     addToast,
@@ -320,178 +312,302 @@ export function useStudioShell(): StudioShellController {
     onFiles: config.handlePastedFiles,
   });
 
-  const overlayController = useStudioOverlayController({
-    image: {
-      modalImage: activeCarouselImage,
+  const overlayController = useMemo(
+    () =>
+      buildStudioShellOverlayController({
+        image: {
+          modalImage: activeCarouselImage,
+          imagesWithConfig,
+          activeGenerationConfig: pipeline.activeGenerationConfig,
+          closeModal: handleCloseModal,
+          handleDelete,
+          handleGenerate,
+          handleAddToContext: config.handleAddToContext,
+          handleLoadRecipe,
+          handleToggleFavorite,
+          setActiveCarouselId: modal.setActiveCarouselId,
+        },
+        editor: {
+          isEditorOpen: viewState.editor.isOpen,
+          closeEditor: viewState.editor.close,
+          imageToEdit: viewState.editor.image,
+          handleExecuteEdit,
+          isEditingImage,
+        },
+        chrome: {
+          debugPanel: {
+            isOpen: isDebugPanelOpen,
+            close: closeDebugPanel,
+          },
+          dashboard: {
+            isOpen: viewState.overlays.dashboard.isOpen,
+            close: viewState.overlays.dashboard.close,
+          },
+        },
+        runtime: {
+          mergedLogs: studioRuntime.activity.mergedLogs,
+          studioJobs: studioRuntime.activity.studioJobs,
+          onboarding: {
+            apiBase: studioRuntime.onboarding.apiBase,
+            error: studioRuntime.onboarding.error,
+            health: studioRuntime.onboarding.health,
+            localCodexSession: studioRuntime.status.localCodexSession,
+            readiness: studioRuntime.status.readiness,
+            isChecking: studioRuntime.onboarding.isChecking,
+            isDesktopRuntime: studioRuntime.onboarding.isDesktopRuntime,
+            isOpen: studioRuntime.onboarding.isOpen,
+            isReady: studioRuntime.onboarding.isReady,
+            isStartingAppServer: studioRuntime.onboarding.isStartingAppServer,
+            close: studioRuntime.onboarding.close,
+            complete: studioRuntime.onboarding.complete,
+            refreshHealth: studioRuntime.onboarding.refreshHealth,
+            ensureAppServer: studioRuntime.onboarding.ensureAppServer,
+            diagnosticsLibraryDir: studioRuntime.status.diagnostics.health?.libraryDir ?? null,
+          },
+        },
+        activity: {
+          selectedJobDetail: activitySession.selection.selectedJobDetail,
+          isLoadingSelectedJob: activitySession.selection.isLoadingSelectedJob,
+          onInspectJob: activitySession.selection.inspectJob,
+          onClearSelectedJob: activitySession.selection.clearSelectedJob,
+          onRetryJob: activitySession.selection.retryJob,
+        },
+        vault: {
+          handleExportWorkspaceSnapshot: exportWorkspaceSnapshot,
+          handleDeepScan: () => {},
+        },
+        settings: {
+          modal: {
+            isOpen: viewState.overlays.settings.isOpen,
+            close: viewState.overlays.settings.close,
+          },
+          data: studioSettings.data,
+          background: {
+            isEnabled: isBackgroundEnabled,
+            setEnabled: setBackgroundEnabled,
+          },
+          reset: {
+            onResetStudio: requestResetStudio,
+            isResettingStudio,
+          },
+        },
+        workspace: {
+          catalogVisualGroupCount,
+          workspaces,
+          trash: catalogTrashGroups,
+          restoreFromTrash: restoreCatalogBatch,
+          isTrashModalOpen: viewState.overlays.trash.isOpen,
+          closeTrash: viewState.overlays.trash.close,
+        },
+        workspaceActions: {
+          requestRestoreAllTrash,
+          requestEmptyTrash,
+        },
+        confirmation: {
+          pendingConfirmation,
+          closeConfirmation,
+          confirmPendingAction,
+        },
+      }),
+    [
+      activeCarouselImage,
       imagesWithConfig,
-      activeGenerationConfig: pipeline.activeGenerationConfig,
-      closeModal: handleCloseModal,
+      pipeline.activeGenerationConfig,
+      handleCloseModal,
       handleDelete,
       handleGenerate,
-      handleAddToContext: config.handleAddToContext,
+      config.handleAddToContext,
       handleLoadRecipe,
       handleToggleFavorite,
-      setActiveCarouselId: modal.setActiveCarouselId,
-    },
-    editor: {
-      isEditorOpen,
-      closeEditor,
-      imageToEdit,
+      modal.setActiveCarouselId,
+      viewState.editor.isOpen,
+      viewState.editor.close,
+      viewState.editor.image,
       handleExecuteEdit,
       isEditingImage,
-    },
-    debugPanel: {
-      isOpen: isDebugPanelOpen,
-      close: closeDebugPanel,
-    },
-    dashboard: {
-      isOpen: isDashboardModalOpen,
-      close: closeDashboard,
-    },
-    activity: {
-      mergedLogs: studioRuntime.activity.mergedLogs,
-      studioJobs: studioRuntime.activity.studioJobs,
-      selectedJobDetail: activitySession.selectedJobDetail,
-      isLoadingSelectedJob: activitySession.isLoadingSelectedJob,
-      onInspectJob: activitySession.handleInspectStudioJob,
-      onClearSelectedJob: activitySession.clearSelectedJob,
-    },
-    vault: {
-      handleExportWorkspaceSnapshot: exportWorkspaceSnapshot,
-      handleDeepScan: () => {},
-    },
-    onboarding: {
-      apiBase: studioRuntime.onboarding.apiBase,
-      error: studioRuntime.onboarding.error,
-      health: studioRuntime.onboarding.health,
-      localCodexSession: studioRuntime.status.localCodexSession,
-      readiness: studioRuntime.status.readiness,
-      isChecking: studioRuntime.onboarding.isChecking,
-      isDesktopRuntime: studioRuntime.onboarding.isDesktopRuntime,
-      isOpen: studioRuntime.onboarding.isOpen,
-      isReady: studioRuntime.onboarding.isReady,
-      isStartingAppServer: studioRuntime.onboarding.isStartingAppServer,
-      close: studioRuntime.onboarding.close,
-      complete: studioRuntime.onboarding.complete,
-      refreshHealth: studioRuntime.onboarding.refreshHealth,
-      ensureAppServer: studioRuntime.onboarding.ensureAppServer,
-    },
-    settings: {
-      isOpen: isSettingsModalOpen,
-      close: closeSettings,
-      settings: studioSettings.settings,
-      error: studioSettings.error,
-      isLoading: studioSettings.isLoading,
-      isSaving: studioSettings.isSaving,
-      providerCapabilities: studioSettings.providerCapabilities,
-      providerRuntimePreflight: studioSettings.providerRuntimePreflight,
-      outputSources: studioSettings.outputSources,
-      outputSourceFiles: studioSettings.outputSourceFiles,
-      isLoadingOutputSources: studioSettings.isLoadingOutputSources,
-      loadingOutputSourceFiles: studioSettings.loadingOutputSourceFiles,
-      isRegisteringOutputSource: studioSettings.isRegisteringOutputSource,
-      importingOutputSources: studioSettings.importingOutputSources,
-      libraryDir:
-        studioRuntime.status.diagnostics.health?.libraryDir ??
-        studioRuntime.onboarding.health?.libraryDir ??
-        null,
-      refresh: studioSettings.refreshSettings,
-      update: studioSettings.updateSettings,
-      registerOutputSource: studioSettings.registerOutputSource,
-      loadOutputSourceFiles: studioSettings.loadOutputSourceFiles,
-      importOutputSourceFiles: studioSettings.importOutputSourceFiles,
+      isDebugPanelOpen,
+      closeDebugPanel,
+      viewState.overlays.dashboard.isOpen,
+      viewState.overlays.dashboard.close,
+      studioRuntime.activity.mergedLogs,
+      studioRuntime.activity.studioJobs,
+      studioRuntime.onboarding.apiBase,
+      studioRuntime.onboarding.error,
+      studioRuntime.onboarding.health,
+      studioRuntime.status.localCodexSession,
+      studioRuntime.status.readiness,
+      studioRuntime.onboarding.isChecking,
+      studioRuntime.onboarding.isDesktopRuntime,
+      studioRuntime.onboarding.isOpen,
+      studioRuntime.onboarding.isReady,
+      studioRuntime.onboarding.isStartingAppServer,
+      studioRuntime.onboarding.close,
+      studioRuntime.onboarding.complete,
+      studioRuntime.onboarding.refreshHealth,
+      studioRuntime.onboarding.ensureAppServer,
+      studioRuntime.status.diagnostics.health,
+      activitySession.selection.selectedJobDetail,
+      activitySession.selection.isLoadingSelectedJob,
+      activitySession.selection.inspectJob,
+      activitySession.selection.clearSelectedJob,
+      activitySession.selection.retryJob,
+      exportWorkspaceSnapshot,
+      viewState.overlays.settings.isOpen,
+      viewState.overlays.settings.close,
+      studioSettings.data,
       isBackgroundEnabled,
-      onToggleBackground: () => setBackgroundEnabled(!isBackgroundEnabled),
-      onResetStudio: requestResetStudio,
+      setBackgroundEnabled,
+      requestResetStudio,
       isResettingStudio,
-    },
-    workspace: {
       catalogVisualGroupCount,
       workspaces,
-      trash: catalogTrashGroups,
-      restoreFromTrash: restoreCatalogBatch,
-      isTrashModalOpen,
-      closeTrash,
-    },
-    workspaceActions: {
+      catalogTrashGroups,
+      restoreCatalogBatch,
+      viewState.overlays.trash.isOpen,
+      viewState.overlays.trash.close,
       requestRestoreAllTrash,
       requestEmptyTrash,
-    },
-    confirmation: {
       pendingConfirmation,
       closeConfirmation,
       confirmPendingAction,
-    },
-  });
+    ],
+  );
 
-  const recipePageProps: Omit<RecipePageProps, 'activeRecipe'> = {
-    generationConfig: config.generationConfig,
-    updateGenerationConfig: config.updateGenerationConfig,
-    updateAttachment: config.updateAttachment,
-    handlePastedFiles: config.handlePastedFiles,
-    handleGenerate,
-    isGenerating: pipeline.isGenerating,
-    imagesWithConfig,
-    openModal: handleOpenModal,
-    handleAddToContext: config.handleAddToContext,
-  };
+  const recipePageProps = useMemo<Omit<RecipePageProps, 'activeRecipe'>>(
+    () => ({
+      generationConfig: config.generationConfig,
+      updateGenerationConfig: config.updateGenerationConfig,
+      updateAttachment: config.updateAttachment,
+      handlePastedFiles: config.handlePastedFiles,
+      handleGenerate,
+      isGenerating: pipeline.isGenerating,
+      imagesWithConfig,
+      openModal: handleOpenModal,
+      handleAddToContext: config.handleAddToContext,
+    }),
+    [
+      config.generationConfig,
+      config.updateGenerationConfig,
+      config.updateAttachment,
+      config.handlePastedFiles,
+      handleGenerate,
+      pipeline.isGenerating,
+      imagesWithConfig,
+      handleOpenModal,
+      config.handleAddToContext,
+    ],
+  );
 
-  const recipePagePropsRef = useRef(recipePageProps);
-  recipePagePropsRef.current = recipePageProps;
+  const cancelPersistentJobCb = useCallback(
+    (jobId: string) => void cancelPersistentJob(jobId),
+    [cancelPersistentJob],
+  );
 
-  const studioPageController = buildStudioPageController({
-    debug: {
+  const studioPageController = useMemo(
+    () =>
+      buildStudioPageController({
+        debug: {
+          workspaces,
+          mergedLogs: studioRuntime.activity.mergedLogs,
+          catalogVisualGroupCount,
+        },
+        grid: {
+          isModalOpen: modal.isModalOpen,
+          allImages,
+          imagesWithConfig,
+          selectedImageIds,
+          activeWorkspaceId,
+          openModal: handleOpenModal,
+          handleSelectionChange,
+          handleGenerate,
+          handleAddToContext: config.handleAddToContext,
+          handleLoadRecipe,
+          handleDelete,
+          handleToggleFavorite,
+          isGenerating: pipeline.isGenerating,
+          transitioningImageId: modal.transitioningImageId,
+          activeModalImageId: modal.activeCarouselId,
+          handleSelectAll,
+          handleDeselectAll,
+          handleDeleteSelected,
+          handleClearWorkspace,
+          previewRatio: viewState.preview.ratio,
+          generationAspectRatio: config.generationConfig.aspectRatio,
+          isInteractingWithToolbar: ui.isInteractingWithToolbar,
+        },
+        operations: {
+          isQueueOpen: viewState.queue.isOpen,
+          setIsQueueOpen: viewState.queue.setIsOpen,
+          jobs,
+          queueResults,
+          studioJobs: studioRuntime.activity.studioJobs,
+          selectedStudioJobId: activitySession.selection.selectedStudioJobId,
+          retry,
+          retryPersistentJob: activitySession.selection.retryJob,
+          cancelJob,
+          cancelPersistentJob: cancelPersistentJobCb,
+          removeJob,
+          clearCompleted,
+          isResting,
+          exportWorkspaceSnapshot,
+          isBackgroundEnabled,
+          setBackgroundEnabled,
+          activeServerJobCount: studioRuntime.activity.activeServerJobCount,
+          onInspectJob: activitySession.selection.inspectJob,
+          diagnostics: studioRuntime.status.diagnostics,
+          onResetStudio: requestResetStudio,
+          isResettingStudio,
+        },
+      }),
+    [
       workspaces,
-      mergedLogs: studioRuntime.activity.mergedLogs,
+      studioRuntime.activity.mergedLogs,
       catalogVisualGroupCount,
-    },
-    grid: {
-      isModalOpen: modal.isModalOpen,
+      modal.isModalOpen,
       allImages,
       imagesWithConfig,
       selectedImageIds,
       activeWorkspaceId,
-      openModal: handleOpenModal,
+      handleOpenModal,
       handleSelectionChange,
       handleGenerate,
-      handleAddToContext: config.handleAddToContext,
+      config.handleAddToContext,
       handleLoadRecipe,
       handleDelete,
       handleToggleFavorite,
-      isGenerating: pipeline.isGenerating,
-      transitioningImageId: modal.transitioningImageId,
-      activeModalImageId: modal.activeCarouselId,
+      pipeline.isGenerating,
+      modal.transitioningImageId,
+      modal.activeCarouselId,
       handleSelectAll,
       handleDeselectAll,
       handleDeleteSelected,
       handleClearWorkspace,
-      previewRatio,
-      generationAspectRatio: config.generationConfig.aspectRatio,
-      isInteractingWithToolbar: ui.isInteractingWithToolbar,
-    },
-    operations: {
-      isQueueOpen,
-      setIsQueueOpen,
+      viewState.preview.ratio,
+      config.generationConfig.aspectRatio,
+      ui.isInteractingWithToolbar,
+      viewState.queue.isOpen,
+      viewState.queue.setIsOpen,
       jobs,
       queueResults,
-      studioJobs: studioRuntime.activity.studioJobs,
-      selectedStudioJobId: activitySession.selectedStudioJobId,
+      studioRuntime.activity.studioJobs,
+      activitySession.selection.selectedStudioJobId,
       retry,
+      activitySession.selection.retryJob,
       cancelJob,
-      cancelPersistentJob: (jobId) => void handleCancelPersistentJob(jobId),
+      cancelPersistentJobCb,
       removeJob,
       clearCompleted,
       isResting,
       exportWorkspaceSnapshot,
       isBackgroundEnabled,
       setBackgroundEnabled,
-      activeServerJobCount: studioRuntime.activity.activeServerJobCount,
-      onInspectJob: activitySession.handleInspectStudioJob,
-      diagnostics: studioRuntime.status.diagnostics,
-      onResetStudio: requestResetStudio,
+      studioRuntime.activity.activeServerJobCount,
+      activitySession.selection.inspectJob,
+      studioRuntime.status.diagnostics,
+      requestResetStudio,
       isResettingStudio,
-    },
-  });
+    ],
+  );
 
   const toolbarProps = useGenerationToolbarConfig({
     config: {
@@ -511,13 +627,13 @@ export function useStudioShell(): StudioShellController {
       onEnhancePrompt: handleEnhancePrompt,
     },
     ui: {
-      setPreviewRatio,
+      setPreviewRatio: viewState.preview.setRatio,
       setIsInteracting: ui.setIsInteractingWithToolbar,
       isKeyPopoverOpen: ui.isKeyPopoverOpen,
       setIsKeyPopoverOpen: ui.setIsKeyPopoverOpen,
     },
     editor: {
-      openEditor,
+      openEditor: viewState.editor.open,
       openEditorRoute,
     },
     sync: {
@@ -525,41 +641,108 @@ export function useStudioShell(): StudioShellController {
     },
   });
 
-  const headerToolbarProps = buildStudioHeaderToolbarProps({
-    view: {
-      isGenerating: pipeline.isGenerating,
+  const viewportController = useMemo(
+    () =>
+      buildStudioViewportController({
+        navigation: {
+          routeView: route.view,
+          direction,
+          activeRecipe: recipe.activeRecipe,
+          onSelectRecipe: handleRecipeSelection,
+        },
+        recipe: {
+          recipePageProps,
+          studioPageController,
+        },
+        dock: {
+          isModalOpen: modal.isModalOpen,
+          isDragging,
+          toolbarProps,
+        },
+      }),
+    [
+      route.view,
+      direction,
+      recipe.activeRecipe,
+      handleRecipeSelection,
+      recipePageProps,
+      studioPageController,
+      modal.isModalOpen,
+      isDragging,
+      toolbarProps,
+    ],
+  );
+
+  const headerToolbarProps = useMemo(
+    () =>
+      buildStudioHeaderToolbarProps({
+        view: {
+          isGenerating: pipeline.isGenerating,
+          currentView,
+          onViewChange: handleViewChange,
+          activeRecipe: recipe.activeRecipe,
+          onCloseRecipe: handleCloseRecipe,
+          usage: studioRuntime.status.diagnostics.usage,
+        },
+        workspace: {
+          workspaces: workspacesWithThumbs,
+          activeWorkspaceId,
+          setActiveWorkspace,
+          onAddWorkspace: handleAddWorkspace,
+          onDeleteWorkspace: handleDeleteWorkspace,
+          onRenameWorkspace: handleRenameWorkspace,
+        },
+        overlays: {
+          onOpenDashboard: viewState.overlays.dashboard.open,
+          openOnboarding: studioRuntime.onboarding.open,
+          onOpenTrash: viewState.overlays.trash.open,
+          trashCount: catalogTrashGroups.length,
+          onToggleDebug: activitySession.debugPanel.toggle,
+        },
+        commandCenter: {
+          defaultProviderId: studioSettings.data.settings?.defaultProviderId,
+          statusItems: studioRuntime.status.diagnostics.statusItems,
+          queueResultPreviews,
+          queueJobCount: jobs.length,
+          activeServerJobCount: studioRuntime.activity.activeServerJobCount,
+          isQueueOpen: viewState.queue.isOpen,
+          setIsQueueOpen: viewState.queue.setIsOpen,
+          onOpenSettings: viewState.overlays.settings.open,
+        },
+      }),
+    [
+      pipeline.isGenerating,
       currentView,
-      onViewChange: handleViewChange,
-      activeRecipe: recipe.activeRecipe,
-      onCloseRecipe: handleCloseRecipe,
-      usage: studioRuntime.status.diagnostics.usage,
-    },
-    workspace: {
-      workspaces: workspacesWithThumbs,
+      handleViewChange,
+      recipe.activeRecipe,
+      handleCloseRecipe,
+      studioRuntime.status.diagnostics.usage,
+      workspacesWithThumbs,
       activeWorkspaceId,
       setActiveWorkspace,
-      onAddWorkspace: handleAddWorkspace,
-      onDeleteWorkspace: handleDeleteWorkspace,
-      onRenameWorkspace: handleRenameWorkspace,
-    },
-    overlays: {
-      onOpenDashboard: openDashboard,
-      openOnboarding: studioRuntime.onboarding.open,
-      onOpenTrash: openTrash,
-      trashCount: catalogTrashGroups.length,
-      onToggleDebug: activitySession.handleToggleDebugPanel,
-    },
-    commandCenter: {
-      defaultProviderId: studioSettings.settings?.defaultProviderId,
-      statusItems: studioRuntime.status.diagnostics.statusItems,
+      handleAddWorkspace,
+      handleDeleteWorkspace,
+      handleRenameWorkspace,
+      viewState.overlays.dashboard.open,
+      studioRuntime.onboarding.open,
+      viewState.overlays.trash.open,
+      catalogTrashGroups.length,
+      activitySession.debugPanel.toggle,
+      studioSettings.data.settings,
+      studioRuntime.status.diagnostics.statusItems,
       queueResultPreviews,
-      queueJobCount: jobs.length,
-      activeServerJobCount: studioRuntime.activity.activeServerJobCount,
-      isQueueOpen,
-      setIsQueueOpen,
-      onOpenSettings: openSettings,
-    },
-  });
+      jobs.length,
+      studioRuntime.activity.activeServerJobCount,
+      viewState.queue.isOpen,
+      viewState.queue.setIsOpen,
+      viewState.overlays.settings.open,
+    ],
+  );
+
+  const onMainClick = useCallback(() => {
+    ui.setIsInteractingWithToolbar(false);
+    ui.setIsKeyPopoverOpen(false);
+  }, [ui.setIsInteractingWithToolbar, ui.setIsKeyPopoverOpen]);
 
   return useMemo(
     (): StudioShellController => ({
@@ -567,10 +750,7 @@ export function useStudioShell(): StudioShellController {
         onDragOver: handleDragOver,
         onDragLeave: handleDragLeave,
         onDrop: handleDrop,
-        onMainClick: () => {
-          ui.setIsInteractingWithToolbar(false);
-          ui.setIsKeyPopoverOpen(false);
-        },
+        onMainClick,
       },
       background: isBackgroundEnabled
         ? {
@@ -587,27 +767,15 @@ export function useStudioShell(): StudioShellController {
         isVisible: !modal.isModalOpen,
         props: headerToolbarProps,
       },
-      viewport: {
-        routeView: route.view,
-        direction,
-        activeRecipe: recipe.activeRecipe,
-        recipePageProps: recipePagePropsRef.current,
-        studioPageController,
-        onSelectRecipe: handleRecipeSelection,
-      },
-      generationDock: {
-        isModalOpen: modal.isModalOpen,
-        currentView: route.view,
-        activeRecipe: recipe.activeRecipe,
-        isDragging,
-        toolbarProps,
-      },
+      viewport: viewportController.viewport,
+      generationDock: viewportController.generationDock,
       overlays: overlayController,
     }),
     [
       handleDragOver,
       handleDragLeave,
       handleDrop,
+      onMainClick,
       isBackgroundEnabled,
       pipeline.isGenerating,
       config.generationConfig.model,
@@ -616,15 +784,8 @@ export function useStudioShell(): StudioShellController {
       removeToast,
       modal.isModalOpen,
       headerToolbarProps,
-      route.view,
-      direction,
-      recipe.activeRecipe,
-      studioPageController,
-      handleRecipeSelection,
-      isDragging,
-      toolbarProps,
+      viewportController,
       overlayController,
-      ui,
     ],
   );
 }

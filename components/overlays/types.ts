@@ -74,6 +74,7 @@ export interface StudioSystemOverlaysProps {
   selectedJobDetail: JobDetailResponse | null;
   onInspectJob: (jobId: string) => void;
   onClearSelectedJob: () => void;
+  onRetryJob?: (jobId: string) => void;
   handleExportWorkspaceSnapshot: () => void;
   handleDeepScan: () => void | Promise<void>;
   apiBase: string;

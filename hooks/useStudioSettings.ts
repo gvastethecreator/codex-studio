@@ -25,7 +25,36 @@ interface UseStudioSettingsOptions {
   addToast?: (message: string, type?: Toast['type']) => void;
 }
 
-export function useStudioSettings({ addToast }: UseStudioSettingsOptions = {}) {
+export interface StudioSettingsController {
+  data: {
+    settings: EditableStudioSettings | null;
+    isLoading: boolean;
+    isSaving: boolean;
+    providerCapabilities: GenerationProviderCapabilitiesResponse | null;
+    providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
+    outputSources: ExternalOutputSourcesResponse | null;
+    outputSourceFiles: Record<string, ExternalOutputSourceFile[]>;
+    isLoadingOutputSources: boolean;
+    loadingOutputSourceFiles: Record<string, boolean>;
+    isRegisteringOutputSource: boolean;
+    importingOutputSources: Record<string, boolean>;
+    error: string | null;
+    refresh: () => Promise<void>;
+    refreshOutputSources: () => Promise<void>;
+    update: (patch: EditableStudioSettingsPatch) => Promise<void>;
+    registerOutputSource: (input: RegisterExternalOutputSourceInput) => Promise<void>;
+    loadOutputSourceFiles: (sourceId: string) => Promise<void>;
+    importOutputSourceFiles: (
+      sourceId: string,
+      files: string[],
+      workspaceId?: string | null,
+    ) => Promise<void>;
+  };
+}
+
+export function useStudioSettings({
+  addToast,
+}: UseStudioSettingsOptions = {}): StudioSettingsController {
   const [settings, setSettings] = useState<EditableStudioSettings | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -245,23 +274,25 @@ export function useStudioSettings({ addToast }: UseStudioSettingsOptions = {}) {
   }, [refreshSettings]);
 
   return {
-    settings,
-    isLoading,
-    isSaving,
-    providerCapabilities,
-    providerRuntimePreflight,
-    outputSources,
-    outputSourceFiles,
-    isLoadingOutputSources,
-    loadingOutputSourceFiles,
-    isRegisteringOutputSource,
-    importingOutputSources,
-    error,
-    refreshSettings,
-    refreshOutputSources,
-    updateSettings,
-    registerOutputSource,
-    loadOutputSourceFiles,
-    importOutputSourceFiles,
+    data: {
+      settings,
+      isLoading,
+      isSaving,
+      providerCapabilities,
+      providerRuntimePreflight,
+      outputSources,
+      outputSourceFiles,
+      isLoadingOutputSources,
+      loadingOutputSourceFiles,
+      isRegisteringOutputSource,
+      importingOutputSources,
+      error,
+      refresh: refreshSettings,
+      refreshOutputSources,
+      update: updateSettings,
+      registerOutputSource,
+      loadOutputSourceFiles,
+      importOutputSourceFiles,
+    },
   };
 }

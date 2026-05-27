@@ -111,6 +111,10 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
   const parts = [`Task: ${sourceSpec.task}`, '', 'Prompt:', sourceSpec.prompt];
   const recipeProviderDirectives = sourceSpec.metadata.recipeProviderDirectives;
   const recipeContext = sourceSpec.metadata.recipeContext;
+  const variationBrief =
+    typeof sourceSpec.metadata.variationBrief === 'string'
+      ? sourceSpec.metadata.variationBrief.trim()
+      : '';
   const assetLines = buildCodexAssetLines(sourceSpec);
 
   if (isRecipeProviderDirectives(recipeProviderDirectives)) {
@@ -121,6 +125,10 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
     );
   } else if (typeof recipeContext === 'string' && recipeContext.trim()) {
     parts.push('', 'Recipe instructions:', recipeContext.trim());
+  }
+
+  if (variationBrief) {
+    parts.push('', 'Variation brief:', variationBrief);
   }
 
   if (sourceSpec.negativePrompt) {

@@ -1,19 +1,14 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import type { ImageGenerationConfig, QueueJob } from '../types';
-import type { Job as StudioJob } from '../packages/shared/src';
 import { startViewTransition } from '../utils/transitionUtils';
-import { isAbortLikeError, selectJobsToStart } from '../lib/queueStateMachine';
+import {
+  selectJobsToStart,
+  startQueuedJobExecution,
+  type QueueJobExecuteGeneration,
+} from '../lib/queueStateMachine';
 
 interface UseQueueManagerProps {
-  executeGeneration: (
-    config: Partial<ImageGenerationConfig>,
-    options?: {
-      preventModal?: boolean;
-      workspaceId?: string;
-      signal?: AbortSignal;
-      onJobCreated?: (job: StudioJob) => void;
-    },
-  ) => Promise<void>;
+  executeGeneration: QueueJobExecuteGeneration;
   isGenerating: boolean;
   addToast: (message: string, type: 'success' | 'error' | 'info') => void;
   cancelPersistentJob: (jobId: string) => Promise<void>;
@@ -176,22 +171,13 @@ export const useQueueManager = ({
     const jobsToStart = selectJobsToStart(pendingJobs, activeJobsCount, isResting);
     if (jobsToStart.length === 0) return;
 
-    void Promise.all(jobsToStart.map(async (nextJob) => {
-      if (processingJobsRef.current.has(nextJob.id)) return;
-      processingJobsRef.current.add(nextJob.id);
+    void Promise.all(
+      jobsToStart.map(async (nextJob) => {
+        if (processingJobsRef.current.has(nextJob.id)) return;
+        processingJobsRef.current.add(nextJob.id);
 
-      const controller = new AbortController();
-      abortControllersRef.current.set(nextJob.id, controller);
-
-      setJobs((prev) =>
-        prev.map((j) => (j.id === nextJob.id ? { ...j, status: 'processing' } : j)),
-      );
-
-      try {
-        await executeGeneration(nextJob.config, {
-          preventModal: true,
-          workspaceId: nextJob.workspaceId,
-          signal: controller.signal,
+        const execution = startQueuedJobExecution(nextJob, {
+          executeGeneration,
           onJobCreated: (studioJob) => {
             linkedServerJobIdsRef.current.set(nextJob.id, studioJob.id);
             setJobs((prev) =>
@@ -202,49 +188,64 @@ export const useQueueManager = ({
           },
         });
 
+        abortControllersRef.current.set(nextJob.id, execution.controller);
+
         setJobs((prev) =>
-          prev.map((j) =>
-            j.id === nextJob.id
-              ? {
-                  ...j,
-                  status: 'completed',
-                  completedAt: Date.now(),
-                }
-              : j,
-          ),
+          prev.map((j) => (j.id === nextJob.id ? { ...j, status: 'processing' } : j)),
         );
 
-        if (!nextJob.isForced) {
-          setIsResting(true);
-          if (restTimerRef.current) clearTimeout(restTimerRef.current);
-          restTimerRef.current = setTimeout(() => {
-            setIsResting(false);
-          }, 1000);
-        }
-      } catch (error: unknown) {
-        const isAbort = isAbortLikeError(error);
+        try {
+          const result = await execution.run();
 
-        setJobs((prev) =>
-          prev.map((j) => {
-            if (j.id !== nextJob.id) return j;
+          if (result.status === 'completed') {
+            setJobs((prev) =>
+              prev.map((j) =>
+                j.id === nextJob.id
+                  ? {
+                      ...j,
+                      status: 'completed',
+                      completedAt: result.completedAt,
+                    }
+                  : j,
+              ),
+            );
 
-            if (isAbort) {
-              return { ...j, status: 'cancelled' };
+            if (!nextJob.isForced) {
+              setIsResting(true);
+              if (restTimerRef.current) clearTimeout(restTimerRef.current);
+              restTimerRef.current = setTimeout(() => {
+                setIsResting(false);
+              }, 1000);
             }
 
-            return {
-              ...j,
-              status: 'failed',
-              error: error instanceof Error ? error.message : 'Unknown error',
-            };
-          }),
-        );
-      } finally {
-        processingJobsRef.current.delete(nextJob.id);
-        abortControllersRef.current.delete(nextJob.id);
-        setQueueTick((t) => t + 1);
-      }
-    }));
+            return;
+          }
+
+          if (result.status === 'cancelled') {
+            setJobs((prev) =>
+              prev.map((j) => (j.id === nextJob.id ? { ...j, status: 'cancelled' } : j)),
+            );
+            return;
+          }
+
+          setJobs((prev) =>
+            prev.map((j) =>
+              j.id === nextJob.id
+                ? {
+                    ...j,
+                    status: 'failed',
+                    error: result.error,
+                  }
+                : j,
+            ),
+          );
+        } finally {
+          processingJobsRef.current.delete(nextJob.id);
+          abortControllersRef.current.delete(nextJob.id);
+          setQueueTick((t) => t + 1);
+        }
+      }),
+    );
 
     const restTimer = restTimerRef.current;
     return () => {

@@ -23,6 +23,41 @@ export function resolveGenerationWorkspaceId(
   return workspaceIdOverride ?? activeWorkspaceId;
 }
 
+export function buildEditGenerationConfig({
+  generationConfig,
+  original,
+  mask,
+  prompt,
+}: {
+  generationConfig: ImageGenerationConfig;
+  original: Attachment;
+  mask: string;
+  prompt: string;
+}): ImageGenerationConfig {
+  const trimmedPrompt = prompt.trim();
+
+  const maskAttachments = mask
+    ? [
+        {
+          id: `mask-${Date.now()}`,
+          name: `${original.name.replace(/\.[^.]+$/, '')}-mask.png`,
+          dataUrl: mask,
+          strength: 1,
+        },
+      ]
+    : [];
+
+  return {
+    ...generationConfig,
+    prompt: trimmedPrompt,
+    recipeId: null,
+    recipeParams: null,
+    recipeContext: '',
+    batchCount: 1,
+    attachments: maskAttachments,
+  };
+}
+
 interface UseGenerationPipelineProps {
   generationConfig: ImageGenerationConfig;
   activeWorkspaceId: string;
@@ -150,25 +185,12 @@ export const useGenerationPipeline = ({
 
   const executeEdit = useCallback(
     async (original: Attachment, mask: string, prompt: string) => {
-      const configToUse: ImageGenerationConfig = {
-        ...generationConfig,
+      const configToUse = buildEditGenerationConfig({
+        generationConfig,
+        original,
+        mask,
         prompt,
-        recipeId: null,
-        recipeParams: null,
-        recipeContext: '',
-        batchCount: 1,
-        attachments: mask
-          ? [
-              ...generationConfig.attachments,
-              {
-                id: `mask-${Date.now()}`,
-                name: `${original.name.replace(/\.[^.]+$/, '')}-mask.png`,
-                dataUrl: mask,
-                strength: 1,
-              },
-            ]
-          : generationConfig.attachments,
-      };
+      });
 
       const startTime = beginRun(configToUse);
 
@@ -178,13 +200,7 @@ export const useGenerationPipeline = ({
           config: configToUse,
           inputImage: {
             src: original.dataUrl,
-            prompt: [
-              prompt,
-              '',
-              'Use the input image as the edit source.',
-              `Original attachment: ${original.name}`,
-              `Mask reference: ${mask ? 'provided' : 'not provided'}`,
-            ].join('\n'),
+            prompt: configToUse.prompt,
           },
         });
         const { batchId, generatedCount } = result;

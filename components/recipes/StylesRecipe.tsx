@@ -359,9 +359,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           >
             <Palette size={24} />
           </div>
-          <span className="text-[9px] font-black uppercase tracking-widest text-white">
-            Apply
-          </span>
+          <span className="text-[9px] font-black uppercase tracking-widest text-white">Apply</span>
         </div>
       </button>
     );
@@ -484,10 +482,11 @@ const StylePresetCard = React.memo(
           }}
           data-style-preset-card={preset.id}
           data-style-category={preset.category || 'General'}
-          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${active
-            ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
-            : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
-            }`}
+          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${
+            active
+              ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
+              : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
+          }`}
         >
           <div className="absolute inset-0 overflow-hidden bg-zinc-950">
             <StylePresetResultButton
@@ -902,7 +901,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   );
 
   const showAllStylesInGroup = useCallback((groupKey: string) => {
-    setBrowserState((current) => ({ ...current, expandedStyleGroups: new Set(current.expandedStyleGroups).add(groupKey) }));
+    setBrowserState((current) => ({
+      ...current,
+      expandedStyleGroups: new Set(current.expandedStyleGroups).add(groupKey),
+    }));
   }, []);
 
   // react-doctor-disable-next-line react-doctor/no-initialize-state
@@ -910,7 +912,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const node = styleScrollRootRef.current;
     if (!node || typeof ResizeObserver === 'undefined') return;
 
-    const updateWidth = () => setBrowserState((prev) => ({ ...prev, styleScrollWidth: node.clientWidth }));
+    const updateWidth = () =>
+      setBrowserState((prev) => ({ ...prev, styleScrollWidth: node.clientWidth }));
     // react-doctor-disable-next-line react-doctor/no-initialize-state
     updateWidth();
 
@@ -920,11 +923,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   }, []);
 
   // react-doctor-disable-next-line react-doctor/no-event-handler
-  // Force strength to 0.15 (15%) by default ONLY ONCE per new image
+  // Force strength to 0.5 (50%) by default ONLY ONCE per new image
   useEffect(() => {
     const img = activeImageRef.current;
     if (img && img.id !== initializedImageId.current) {
-      updateAttachment(img.id, { strength: 0.15 });
+      updateAttachment(img.id, { strength: 0.5 });
       initializedImageId.current = img.id;
     }
   }, [activeImage?.id, updateAttachment]);
@@ -943,8 +946,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   const recipePresetId =
     config.recipeId === 'styles' &&
-      config.recipeParams &&
-      typeof config.recipeParams.presetId === 'string'
+    config.recipeParams &&
+    typeof config.recipeParams.presetId === 'string'
       ? config.recipeParams.presetId
       : null;
   const prevRecipePresetIdRef = useRef(recipePresetId);
@@ -1230,7 +1233,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       recipeId: 'styles',
       recipeParams: styleRecipeParams,
       recipeContext: '',
-      attachments: fallbackAttachment ? [fallbackAttachment] : config.attachments,
+      attachments: effectiveImage ? [effectiveImage] : [],
       aspectRatio: fallbackAttachment ? '2:3' : config.aspectRatio,
       negativePrompt: config.negativePrompt
         ? `${config.negativePrompt}, ${presetNegative}`
@@ -1241,7 +1244,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const handleApplyStyleRef = useRef(handleApplyStyle);
   handleApplyStyleRef.current = handleApplyStyle;
 
-  const handleCloseCatalogSearch = useCallback(() => setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false })), []);
+  const handleCloseCatalogSearch = useCallback(
+    () => setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false })),
+    [],
+  );
 
   const handleSelectCatalogPreset = useCallback((result: StylePresetCatalogSearchResult) => {
     startViewTransition(() => {
@@ -1289,7 +1295,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     void navigator.clipboard.writeText(promptText);
     setInteractionState((prev) => ({ ...prev, copiedStyleId: preset.id }));
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setInteractionState((prev) => ({ ...prev, copiedStyleId: null })), 2000);
+    timeoutRef.current = window.setTimeout(
+      () => setInteractionState((prev) => ({ ...prev, copiedStyleId: null })),
+      2000,
+    );
   };
 
   const handleCopyStylePromptRef = useRef(handleCopyStylePrompt);
@@ -1301,12 +1310,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     if (files.length > 0) onFileSelect(files);
   };
 
-  const handleHoverPreviewChange = useCallback(
-    (preview: StyleCardHoverPreview | null) => {
-      setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: preview }));
-    },
-    [],
-  );
+  const handleHoverPreviewChange = useCallback((preview: StyleCardHoverPreview | null) => {
+    setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: preview }));
+  }, []);
 
   const renderPresetCard = React.useCallback(
     (preset: StyleRuntimePreset) => {
@@ -1483,7 +1489,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 min={0.1}
                 max={1}
                 step={0.05}
-                onChange={(value) => setInteractionState((prev) => ({ ...prev, styleStrength: value }))}
+                onChange={(value) =>
+                  setInteractionState((prev) => ({ ...prev, styleStrength: value }))
+                }
               />
 
               <div className="flex justify-between mt-2 text-[8px] font-black uppercase tracking-widest text-zinc-600">
@@ -1518,10 +1526,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             }}
             className={`
                   group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                    ${currentPackId === FAVORITES_PACK_ID
-                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-              }
+                    ${
+                      currentPackId === FAVORITES_PACK_ID
+                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+                    }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -1551,10 +1560,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 }}
                 className={`
                       group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                            ${isActive
-                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                  }
+                            ${
+                              isActive
+                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                            }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>
@@ -1592,12 +1602,17 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 type="text"
                 placeholder="Search styles..."
                 value={searchQuery}
-                onChange={(e) => setBrowserState((prev) => ({ ...prev, searchQuery: e.target.value }))}
+                onChange={(e) =>
+                  setBrowserState((prev) => ({ ...prev, searchQuery: e.target.value }))
+                }
                 aria-label="Search styles"
                 className="bg-transparent border-none outline-none text-[11px] text-white placeholder-zinc-600 w-full font-medium"
               />
               {searchQuery && (
-                <button type="button" onClick={() => setBrowserState((prev) => ({ ...prev, searchQuery: '' }))}>
+                <button
+                  type="button"
+                  onClick={() => setBrowserState((prev) => ({ ...prev, searchQuery: '' }))}
+                >
                   <X size={12} className="text-zinc-500 hover:text-white" />
                 </button>
               )}
@@ -1618,7 +1633,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
             <button
               type="button"
-              onClick={() => setBrowserState((prev) => ({ ...prev, sortOrder: prev.sortOrder === 'az' ? 'za' : 'az' }))}
+              onClick={() =>
+                setBrowserState((prev) => ({
+                  ...prev,
+                  sortOrder: prev.sortOrder === 'az' ? 'za' : 'az',
+                }))
+              }
               className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors"
               title={sortOrder === 'az' ? 'Sort A-Z' : 'Sort Z-A'}
             >
@@ -1628,7 +1648,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             {currentPackId !== FAVORITES_PACK_ID && (
               <button
                 type="button"
-                onClick={() => setBrowserState((prev) => ({ ...prev, showFavoritesOnly: !prev.showFavoritesOnly }))}
+                onClick={() =>
+                  setBrowserState((prev) => ({
+                    ...prev,
+                    showFavoritesOnly: !prev.showFavoritesOnly,
+                  }))
+                }
                 className={`p-1.5 rounded-lg transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
                 title="Filter Favorites in this Pack"
               >
@@ -1712,7 +1737,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             {hiddenStyleGroupEntries.length > 0 && (
               <button
                 type="button"
-                onClick={() => setBrowserState((prev) => ({ ...prev, showAllStyleCategories: true }))}
+                onClick={() =>
+                  setBrowserState((prev) => ({ ...prev, showAllStyleCategories: true }))
+                }
                 data-style-show-all-categories
                 data-style-hidden-groups={hiddenStyleGroupEntries.length}
                 data-style-hidden-presets={hiddenStylePresetCount}

@@ -32,9 +32,15 @@ graph TD
 ## Main seams
 
 - `hooks/useStudioShell.ts`: materializes the `Studio Shell` by composing deeper shell-facing seams instead of owning catalog, page, and command wiring inline.
+- `hooks/useStudioViewState.ts`: groups shell-local queue, editor, preview, and overlay visibility state so `useStudioShell.ts` can cross smaller view-state surfaces instead of a flat list of UI setters.
+- `hooks/useStudioNavigation.ts`: groups recipe, modal, editor, and shell navigation concerns so route synchronization and overlay closing rules cross one deeper navigation seam instead of another flat argument list.
+- `hooks/useStudioSettings.ts`: groups editable `Studio Settings`, provider capability/runtime-preflight reads, and External Output Source loading/import commands behind one shell-facing data surface instead of a wider spread of settings fields and callbacks.
+- `hooks/useStudioActivitySession.ts`: groups selected-job inspection state and debug-panel toggling so shell activity wiring crosses focused `selection` and `debugPanel` surfaces instead of another flat list of runtime-detail props.
 - `hooks/useCatalog.ts`: exposes the `Image Catalog` read seam plus `useStudioCatalogController()` for catalog mutations, queue-result previews, trash grouping, and refresh choreography.
+- `hooks/useStudioGenerationSession.ts`: groups queue and generation-action surfaces so the `Studio Shell` no longer consumes another flat spread of generation-session fields.
 - `services/studioRuntime.ts`: resolves the backend API base and runtime metadata without coupling the renderer to Electron.
 - `hooks/useStudioRuntime.ts`: aggregates sync, onboarding, diagnostics, readiness, and session verification for shell consumers.
+- `lib/queueStateMachine.ts`: centralizes queue slot selection, abort classification, and per-job queue execution results so `useQueueManager.ts` can stay focused on queue orchestration instead of owning the full execution lifecycle inline.
 - `hooks/useLocalStudioSync.ts`: performs HTTP catch-up, subscribes to `GET /api/events`, mirrors backend jobs/logs, and refreshes the catalog.
 - `services/localGenerationRun.ts`: creates Generation Task jobs, waits for terminal states with `watchJob()`, queries `/api/catalog?job_id=...`, and returns catalog-derived local result data.
 - `services/localGenerationVisualBatchCompat.ts`: builds the legacy Visual Batch only at the compatibility edge.
@@ -43,8 +49,9 @@ graph TD
 - `lib/studioCatalogView.ts`: pure Catalog Entry read model. It groups and filters catalog data without depending on Visual Batches or IndexedDB.
 - `lib/studioCatalogImageAdapter.ts`: materializes UI images from Catalog Entries.
 - `lib/studioLegacyVisualSnapshotExport.ts`: builds legacy `GenerationBatch[]` snapshots only for export compatibility.
-- `lib/buildStudioPageController.ts`: concentrates `Studio Page` debug, grid, and operations projection behind grouped shell contexts.
+- `lib/buildStudioPageController.ts`: concentrates `Studio Page` debug, grid, and operations projection and also exposes the shared `buildStudioViewportController()` presentation seam, so route view, recipe props, and dock visibility stop being rebuilt inline in `useStudioShell.ts`.
 - `lib/buildStudioHeaderToolbarProps.ts`: concentrates `Command Center` and header-toolbar transitions, runtime status derivation, queue counts, and provider fallback in one seam.
+- `hooks/useStudioOverlayController.ts`: keeps the lower-level overlay controller seam and now also exposes a deeper shell-overlay seam that derives `Studio Settings` library fallback and background-toggle choreography from runtime/settings modules instead of leaving that wiring inline in `useStudioShell.ts`.
 - `lib/studioReadiness.ts` and `lib/studioDiagnostics.ts`: pure builders for onboarding, header status, and system panels.
 - `components/shell/StudioViewport.tsx`: demand-mounted route shell that lazy-loads studio and recipe surfaces.
 - `components/recipes/styles/manifests/`: granular source of truth for Style Pack Manifests and Style Preset Manifests.

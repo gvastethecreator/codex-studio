@@ -23,6 +23,7 @@ import type {
   RegisterExternalOutputSourceInput,
   SystemLog,
 } from '../packages/shared/src';
+import { buildStudioJobRetryRequest } from '../lib/studioJobRetry';
 import { resolveStudioApiBase } from './studioRuntime';
 
 /**
@@ -216,6 +217,22 @@ export async function listStudioJobs() {
  */
 export async function getStudioJobDetail(jobId: string) {
   return request<JobDetailResponse>(`/api/jobs/${jobId}`);
+}
+
+/**
+ * Recreate an existing backend job by reusing its recorded prompt, source spec,
+ * and execution settings while issuing a fresh batch id for the new run.
+ */
+export async function retryStudioJob(detail: JobDetailResponse) {
+  return createStudioJob(buildStudioJobRetryRequest(detail));
+}
+
+/**
+ * Convenience retry helper for queue surfaces that only know the job id.
+ */
+export async function retryStudioJobById(jobId: string) {
+  const detail = await getStudioJobDetail(jobId);
+  return retryStudioJob(detail);
 }
 
 /**
