@@ -1,7 +1,10 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import { buildStudioPageController } from '../lib/buildStudioPageController';
+import {
+  buildStudioPageController,
+  buildStudioViewportController,
+} from '../lib/buildStudioPageController';
 
 describe('buildStudioPageController', () => {
   it('concentrates debug, grid, and operations props behind one controller', () => {
@@ -102,5 +105,130 @@ describe('buildStudioPageController', () => {
     expect(controller.debugPanel.props.imagesCount).toBe(1);
     expect(controller.grid.isGenerating).toBe(true);
     expect(controller.operations.activeServerJobCount).toBe(1);
+  });
+
+  it('builds viewport and generation dock surfaces from one presentation seam', () => {
+    const studioPageController = buildStudioPageController({
+      debug: {
+        workspaces: [{ id: 'default', name: 'Default', createdAt: 1 }],
+        mergedLogs: [],
+        catalogVisualGroupCount: 0,
+      },
+      grid: {
+        isModalOpen: true,
+        allImages: [],
+        imagesWithConfig: [],
+        selectedImageIds: [],
+        activeWorkspaceId: 'default',
+        openModal: () => {},
+        handleSelectionChange: () => {},
+        handleGenerate: () => {},
+        handleAddToContext: () => {},
+        handleLoadRecipe: () => {},
+        handleDelete: () => {},
+        handleToggleFavorite: () => {},
+        isGenerating: false,
+        transitioningImageId: null,
+        activeModalImageId: null,
+        handleSelectAll: () => {},
+        handleDeselectAll: () => {},
+        handleDeleteSelected: () => {},
+        handleClearWorkspace: () => {},
+        previewRatio: null,
+        generationAspectRatio: '1:1',
+        isInteractingWithToolbar: false,
+      },
+      operations: {
+        isQueueOpen: true,
+        setIsQueueOpen: () => {},
+        jobs: [],
+        studioJobs: [],
+        selectedStudioJobId: null,
+        queueResults: [],
+        retry: () => {},
+        cancelJob: () => {},
+        cancelPersistentJob: () => {},
+        removeJob: () => {},
+        clearCompleted: () => {},
+        isResting: false,
+        exportWorkspaceSnapshot: () => {},
+        isBackgroundEnabled: true,
+        setBackgroundEnabled: () => {},
+        activeServerJobCount: 0,
+        onInspectJob: () => {},
+        diagnostics: {
+          health: null,
+          backendConnected: true,
+          hasFetchedDiagnostics: true,
+          localCodexSession: null,
+          statusItems: [],
+          usage: {
+            value: '120',
+            meta: 'ChatGPT Pro',
+            tooltip: 'Available usage for ChatGPT Pro',
+            unitLabel: 'credits',
+            limits: [],
+            tone: 'available',
+            isLoading: false,
+          },
+        },
+        onResetStudio: () => {},
+        isResettingStudio: false,
+      },
+    });
+
+    const controller = buildStudioViewportController({
+      navigation: {
+        routeView: 'recipe',
+        direction: 1,
+        activeRecipe: 'camera',
+        onSelectRecipe: () => {},
+      },
+      recipe: {
+        recipePageProps: {
+          generationConfig: DEFAULT_GENERATION_CONFIG,
+          updateGenerationConfig: () => {},
+          updateAttachment: () => {},
+          handlePastedFiles: () => {},
+          handleGenerate: () => {},
+          isGenerating: true,
+          imagesWithConfig: [],
+          openModal: () => {},
+          handleAddToContext: () => {},
+        },
+        studioPageController,
+      },
+      dock: {
+        isModalOpen: true,
+        isDragging: true,
+        toolbarProps: {
+          generationConfig: DEFAULT_GENERATION_CONFIG,
+          updateConfig: () => {},
+          updateAttachment: () => {},
+          onFileSelect: () => {},
+          onFilesDrop: () => {},
+          onRemoveAttachment: () => {},
+          onGenerate: () => {},
+          onEnhancePrompt: () => {},
+          isGenerating: false,
+          generationStartTime: null,
+          isEnhancingPrompt: false,
+          setPreviewRatio: () => {},
+          setIsInteracting: () => {},
+          onOpenEditor: () => {},
+          isKeyPopoverOpen: false,
+          onOpenKeySelector: () => {},
+          onSelectKey: async () => {},
+          maxAttachments: 8,
+        },
+      },
+    });
+
+    expect(controller.viewport.routeView).toBe('recipe');
+    expect(controller.viewport.activeRecipe).toBe('camera');
+    expect(controller.viewport.studioPageController).toBe(studioPageController);
+    expect(controller.generationDock.currentView).toBe('recipe');
+    expect(controller.generationDock.isModalOpen).toBe(true);
+    expect(controller.generationDock.isDragging).toBe(true);
   });
 });

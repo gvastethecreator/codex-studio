@@ -20,6 +20,13 @@ interface UseStudioGenerationSessionOptions {
   setImageToEdit: (attachment: Attachment | null) => void;
 }
 
+export interface StudioGenerationSessionController {
+  queue: ReturnType<typeof useQueueManager> & {
+    cancelPersistentJob: (jobId: string) => Promise<void>;
+  };
+  actions: ReturnType<typeof useStudioGenerationActions>;
+}
+
 export function useStudioGenerationSession({
   activeWorkspaceId,
   config,
@@ -32,7 +39,7 @@ export function useStudioGenerationSession({
   onViewChange,
   setIsEditorOpen,
   setImageToEdit,
-}: UseStudioGenerationSessionOptions) {
+}: UseStudioGenerationSessionOptions): StudioGenerationSessionController {
   const handleCancelPersistentJob = useCallback(
     async (jobId: string) => {
       const job = await cancelStudioJob(jobId);
@@ -51,6 +58,11 @@ export function useStudioGenerationSession({
     cancelPersistentJob: handleCancelPersistentJob,
   });
 
+  const onEditSettled = useCallback(() => {
+    setIsEditorOpen(false);
+    setImageToEdit(null);
+  }, [setIsEditorOpen, setImageToEdit]);
+
   const actions = useStudioGenerationActions({
     generationConfig: config.generationConfig,
     activeWorkspaceId,
@@ -64,15 +76,14 @@ export function useStudioGenerationSession({
     isModalOpen: modal.isModalOpen,
     onRecipeSelection,
     onViewChange,
-    onEditSettled: () => {
-      setIsEditorOpen(false);
-      setImageToEdit(null);
-    },
+    onEditSettled,
   });
 
   return {
-    ...actions,
-    ...queue,
-    handleCancelPersistentJob,
+    queue: {
+      ...queue,
+      cancelPersistentJob: handleCancelPersistentJob,
+    },
+    actions,
   };
 }

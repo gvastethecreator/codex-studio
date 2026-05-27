@@ -6,22 +6,28 @@ import { startViewTransition } from '../utils/transitionUtils';
 
 interface UseStudioNavigationProps {
   route: HashRouterState;
-  activeRecipe: RecipeId;
-  setActiveRecipe: Dispatch<SetStateAction<RecipeId>>;
-  modalImage: GeneratedImageWithConfig | null;
-  isModalOpen: boolean;
-  openModal: (image: GeneratedImageWithConfig) => void;
-  closeModal: () => void;
-  imageToEdit: Attachment | null;
-  isEditorOpen: boolean;
-  setIsEditorOpen: Dispatch<SetStateAction<boolean>>;
-  setImageToEdit: Dispatch<SetStateAction<Attachment | null>>;
-  closeEditorState: () => void;
-  navigateToStudio: () => void;
-  navigateToRecipes: () => void;
-  navigateToRecipe: (id: Exclude<RecipeId, null>) => void;
-  openModalRoute: () => void;
-  closeOverlay: () => void;
+  recipe: {
+    active: RecipeId;
+    setActive: Dispatch<SetStateAction<RecipeId>>;
+    navigateToRecipes: () => void;
+    navigateToRecipe: (id: Exclude<RecipeId, null>) => void;
+  };
+  modal: {
+    isOpen: boolean;
+    open: (image: GeneratedImageWithConfig) => void;
+    close: () => void;
+    openRoute: () => void;
+  };
+  editor: {
+    image: Attachment | null;
+    isOpen: boolean;
+    setIsOpen: Dispatch<SetStateAction<boolean>>;
+    closeState: () => void;
+  };
+  shell: {
+    navigateToStudio: () => void;
+    closeOverlay: () => void;
+  };
 }
 
 export function shouldCloseModalForOverlay(
@@ -37,23 +43,31 @@ export function shouldCloseModalForOverlay(
  */
 export function useStudioNavigation({
   route,
-  activeRecipe,
-  setActiveRecipe,
-  modalImage,
-  isModalOpen,
-  openModal,
-  closeModal,
-  imageToEdit,
-  isEditorOpen,
-  setIsEditorOpen,
-  setImageToEdit,
-  closeEditorState,
-  navigateToStudio,
-  navigateToRecipes,
-  navigateToRecipe,
-  openModalRoute,
-  closeOverlay,
+  recipe,
+  modal,
+  editor,
+  shell,
 }: UseStudioNavigationProps) {
+  const {
+    active: activeRecipe,
+    setActive: setActiveRecipe,
+    navigateToRecipes,
+    navigateToRecipe,
+  } = recipe;
+  const {
+    isOpen: isModalOpen,
+    open: openModal,
+    close: closeModal,
+    openRoute: openModalRoute,
+  } = modal;
+  const {
+    image: imageToEdit,
+    isOpen: isEditorOpen,
+    setIsOpen: setIsEditorOpen,
+    closeState: closeEditorState,
+  } = editor;
+  const { navigateToStudio, closeOverlay } = shell;
+
   const previousViewIndexRef = useRef(0);
   const currentView: 'studio' | 'recipes' = route.view === 'studio' ? 'studio' : 'recipes';
   const currentViewIndex = route.view === 'studio' ? 0 : route.view === 'recipes' ? 1 : 2;
@@ -110,10 +124,10 @@ export function useStudioNavigation({
     route.activeRecipeId,
     route.overlay,
     route.view,
-    setActiveRecipe,
     closeEditorState,
-    closeOverlay,
     closeModal,
+    closeOverlay,
+    setActiveRecipe,
     setIsEditorOpen,
   ]);
 

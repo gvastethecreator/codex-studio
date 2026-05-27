@@ -47,6 +47,7 @@ interface StudioOverlayActivityContext {
   isLoadingSelectedJob: StudioSystemOverlayFlags['isLoadingSelectedJob'];
   onInspectJob: StudioSystemOverlaysProps['onInspectJob'];
   onClearSelectedJob: StudioSystemOverlaysProps['onClearSelectedJob'];
+  onRetryJob?: StudioSystemOverlaysProps['onRetryJob'];
 }
 
 interface StudioOverlayVaultContext {
@@ -112,6 +113,61 @@ interface StudioOverlayWorkspaceActions {
   requestEmptyTrash: (groupCount: number) => void;
 }
 
+interface StudioShellOverlayChromeContext {
+  debugPanel: StudioOverlayDebugPanelContext;
+  dashboard: StudioOverlayDashboardContext;
+}
+
+interface StudioShellOverlayRuntimeContext {
+  mergedLogs: StudioSystemOverlaysProps['mergedLogs'];
+  studioJobs: StudioSystemOverlaysProps['studioJobs'];
+  onboarding: StudioOverlayOnboardingContext & {
+    diagnosticsLibraryDir: string | null;
+  };
+}
+
+interface StudioShellOverlayActivityContext {
+  selectedJobDetail: StudioSystemOverlaysProps['selectedJobDetail'];
+  isLoadingSelectedJob: StudioSystemOverlayFlags['isLoadingSelectedJob'];
+  onInspectJob: StudioSystemOverlaysProps['onInspectJob'];
+  onClearSelectedJob: StudioSystemOverlaysProps['onClearSelectedJob'];
+  onRetryJob?: StudioSystemOverlaysProps['onRetryJob'];
+}
+
+interface StudioShellOverlaySettingsModuleContext {
+  modal: {
+    isOpen: StudioSystemOverlayFlags['isSettingsModalOpen'];
+    close: StudioSystemOverlaysProps['closeSettings'];
+  };
+  data: {
+    settings: StudioSystemOverlaysProps['settings'];
+    error: StudioSystemOverlaysProps['settingsError'];
+    isLoading: StudioSystemOverlayFlags['isLoadingSettings'];
+    isSaving: StudioSystemOverlayFlags['isSavingSettings'];
+    providerCapabilities: StudioSystemOverlaysProps['providerCapabilities'];
+    providerRuntimePreflight: StudioSystemOverlaysProps['providerRuntimePreflight'];
+    outputSources: StudioSystemOverlaysProps['outputSources'];
+    outputSourceFiles: StudioSystemOverlaysProps['outputSourceFiles'];
+    isLoadingOutputSources: StudioSystemOverlayFlags['isLoadingOutputSources'];
+    loadingOutputSourceFiles: StudioSystemOverlaysProps['loadingOutputSourceFiles'];
+    isRegisteringOutputSource: StudioSystemOverlayFlags['isRegisteringOutputSource'];
+    importingOutputSources: StudioSystemOverlaysProps['importingOutputSources'];
+    refresh: StudioSystemOverlaysProps['refreshSettings'];
+    update: StudioSystemOverlaysProps['updateSettings'];
+    registerOutputSource: StudioSystemOverlaysProps['registerOutputSource'];
+    loadOutputSourceFiles: StudioSystemOverlaysProps['loadOutputSourceFiles'];
+    importOutputSourceFiles: StudioSystemOverlaysProps['importOutputSourceFiles'];
+  };
+  background: {
+    isEnabled: StudioSystemOverlayFlags['isBackgroundEnabled'];
+    setEnabled: (isEnabled: boolean) => void;
+  };
+  reset: {
+    onResetStudio: StudioSystemOverlaysProps['onResetStudio'];
+    isResettingStudio: StudioSystemOverlayFlags['isResettingStudio'];
+  };
+}
+
 type StartTransition = (callback: () => void) => void;
 
 export interface BuildStudioOverlayControllerArgs {
@@ -123,6 +179,20 @@ export interface BuildStudioOverlayControllerArgs {
   vault: StudioOverlayVaultContext;
   onboarding: StudioOverlayOnboardingContext;
   settings: StudioOverlaySettingsContext;
+  workspace: StudioOverlayWorkspaceContext;
+  workspaceActions: StudioOverlayWorkspaceActions;
+  confirmation: StudioConfirmationOverlayProps;
+  startTransition?: StartTransition;
+}
+
+export interface BuildStudioShellOverlayControllerArgs {
+  image: StudioOverlayImageContext;
+  editor: StudioOverlayEditorContext;
+  chrome: StudioShellOverlayChromeContext;
+  runtime: StudioShellOverlayRuntimeContext;
+  activity: StudioShellOverlayActivityContext;
+  vault: StudioOverlayVaultContext;
+  settings: StudioShellOverlaySettingsModuleContext;
   workspace: StudioOverlayWorkspaceContext;
   workspaceActions: StudioOverlayWorkspaceActions;
   confirmation: StudioConfirmationOverlayProps;
@@ -193,6 +263,7 @@ export function buildStudioOverlayController({
       selectedJobDetail: activity.selectedJobDetail,
       onInspectJob: activity.onInspectJob,
       onClearSelectedJob: activity.onClearSelectedJob,
+      onRetryJob: activity.onRetryJob,
       handleExportWorkspaceSnapshot: vault.handleExportWorkspaceSnapshot,
       handleDeepScan: vault.handleDeepScan,
       apiBase: onboarding.apiBase,
@@ -236,6 +307,69 @@ export function buildStudioOverlayController({
     },
     confirmationOverlay: confirmation,
   };
+}
+
+export function buildStudioShellOverlayController({
+  image,
+  editor,
+  chrome,
+  runtime,
+  activity,
+  vault,
+  settings,
+  workspace,
+  workspaceActions,
+  confirmation,
+  startTransition,
+}: BuildStudioShellOverlayControllerArgs): StudioOverlayController {
+  return buildStudioOverlayController({
+    image,
+    editor,
+    debugPanel: chrome.debugPanel,
+    dashboard: chrome.dashboard,
+    activity: {
+      mergedLogs: runtime.mergedLogs,
+      studioJobs: runtime.studioJobs,
+      selectedJobDetail: activity.selectedJobDetail,
+      isLoadingSelectedJob: activity.isLoadingSelectedJob,
+      onInspectJob: activity.onInspectJob,
+      onClearSelectedJob: activity.onClearSelectedJob,
+      onRetryJob: activity.onRetryJob,
+    },
+    vault,
+    onboarding: runtime.onboarding,
+    settings: {
+      isOpen: settings.modal.isOpen,
+      close: settings.modal.close,
+      settings: settings.data.settings,
+      error: settings.data.error,
+      isLoading: settings.data.isLoading,
+      isSaving: settings.data.isSaving,
+      providerCapabilities: settings.data.providerCapabilities,
+      providerRuntimePreflight: settings.data.providerRuntimePreflight,
+      outputSources: settings.data.outputSources,
+      outputSourceFiles: settings.data.outputSourceFiles,
+      isLoadingOutputSources: settings.data.isLoadingOutputSources,
+      loadingOutputSourceFiles: settings.data.loadingOutputSourceFiles,
+      isRegisteringOutputSource: settings.data.isRegisteringOutputSource,
+      importingOutputSources: settings.data.importingOutputSources,
+      libraryDir:
+        runtime.onboarding.diagnosticsLibraryDir ?? runtime.onboarding.health?.libraryDir ?? null,
+      refresh: settings.data.refresh,
+      update: settings.data.update,
+      registerOutputSource: settings.data.registerOutputSource,
+      loadOutputSourceFiles: settings.data.loadOutputSourceFiles,
+      importOutputSourceFiles: settings.data.importOutputSourceFiles,
+      isBackgroundEnabled: settings.background.isEnabled,
+      onToggleBackground: () => settings.background.setEnabled(!settings.background.isEnabled),
+      onResetStudio: settings.reset.onResetStudio,
+      isResettingStudio: settings.reset.isResettingStudio,
+    },
+    workspace,
+    workspaceActions,
+    confirmation,
+    startTransition,
+  });
 }
 
 export function useStudioOverlayController(

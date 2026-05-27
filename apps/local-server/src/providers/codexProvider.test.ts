@@ -242,6 +242,29 @@ describe('codexProvider', () => {
     ]);
   });
 
+  it('adds a variation brief when the source spec requests fresher output diversity', () => {
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-var',
+      task: 'image_generate',
+      providerId: 'codex',
+      prompt: 'retro sci-fi heroine portrait',
+      metadata: {
+        variationBrief: 'Treat this as a fresh interpretation of the brief.',
+      },
+    });
+
+    const compiled = compileCodexImagegenInput({
+      id: 'job-var',
+      projectId: 'project-1',
+      prompt: 'fallback',
+      execution: null,
+      sourceSpec,
+    });
+
+    expect(compiled.payload.text).toContain('Variation brief:');
+    expect(compiled.payload.text).toContain('fresh interpretation');
+  });
+
   it('delegates execution to the Codex Product Runtime with compiled input text', async () => {
     const calls: TurnParams[] = [];
     const turn: CodexTurn = {

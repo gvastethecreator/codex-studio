@@ -18,6 +18,7 @@ interface DebugPanelProps {
   isLoadingSelectedJob: boolean;
   onInspectJob: (jobId: string) => void;
   onClearSelectedJob: () => void;
+  onRetryJob?: (jobId: string) => void;
 }
 
 export const DebugPanel: React.FC<DebugPanelProps> = ({
@@ -32,6 +33,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   isLoadingSelectedJob,
   onInspectJob,
   onClearSelectedJob,
+  onRetryJob,
 }) => {
   const onCloseRef = React.useRef(onClose);
   onCloseRef.current = onClose;
@@ -108,6 +110,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
               <JobInspectorDetail
                 detail={selectedJobDetail}
                 onClearSelectedJob={onClearSelectedJob}
+                onRetryJob={onRetryJob}
               />
             ) : isLoadingSelectedJob ? (
               <div className="flex h-full min-h-80 items-center justify-center rounded-[28px] border border-white/8 bg-white/[0.03] text-zinc-500">

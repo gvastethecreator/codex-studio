@@ -53,7 +53,10 @@ export function prepareStudioGenerationRequest({
         ? configOverrides.prompt
         : generationConfig.prompt;
   const finalPrompt = promptSource?.trim() ?? '';
-  const finalAttachments = configOverrides?.attachments ?? generationConfig.attachments;
+  const baseAttachments = configOverrides?.attachments ?? generationConfig.attachments;
+  const effectiveRecipeId = configOverrides?.recipeId ?? generationConfig.recipeId;
+  const finalAttachments =
+    effectiveRecipeId === 'timeline' ? baseAttachments : baseAttachments.slice(0, 1);
   const hasReferenceImage = finalAttachments.length > 0;
 
   if (!finalPrompt && !hasReferenceImage) {
@@ -69,7 +72,7 @@ export function prepareStudioGenerationRequest({
       attachments: finalAttachments.map((attachment) => ({ ...attachment })),
       prompt: finalPrompt,
     },
-    shouldClearComposerAttachments: hasReferenceImage,
+    shouldClearComposerAttachments: false,
   };
 }
 

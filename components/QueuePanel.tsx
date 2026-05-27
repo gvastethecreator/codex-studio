@@ -14,6 +14,7 @@ import {
   Zap,
 } from 'lucide-react';
 
+import { canRetryStudioJob } from '../lib/studioJobRetry';
 import { cn } from '../lib/utils';
 import type { StudioQueueResultPreview } from '../lib/studioQueueResults';
 import type { Job as StudioJob } from '../packages/shared/src';
@@ -30,6 +31,7 @@ interface QueuePanelProps {
   serverJobs?: StudioJob[];
   selectedJobId?: string | null;
   onInspectJob: (jobId: string) => void;
+  onRetryServerJob?: (jobId: string) => void;
   onCancelServerJob: (jobId: string) => void;
 }
 
@@ -109,6 +111,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     serverJobs = [],
     selectedJobId,
     onInspectJob,
+    onRetryServerJob,
     onCancelServerJob,
   }) => {
     const [isLocalQueueOpen, setIsLocalQueueOpen] = useState(true);
@@ -260,6 +263,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                             job={job}
                             isSelected={selectedJobId === job.id}
                             onInspect={() => onInspectJob(job.id)}
+                            onRetry={onRetryServerJob ? () => onRetryServerJob(job.id) : undefined}
                             onCancel={() => onCancelServerJob(job.id)}
                           />
                         ))
@@ -354,15 +358,19 @@ const ServerJobItem: React.FC<{
   job: StudioJob;
   isSelected: boolean;
   onInspect: () => void;
+  onRetry?: () => void;
   onCancel: () => void;
-}> = ({ job, isSelected, onInspect, onCancel }) => {
+}> = ({ job, isSelected, onInspect, onRetry, onCancel }) => {
   const canCancel = job.status === 'queued' || job.status === 'running';
+  const canRetry = Boolean(onRetry) && canRetryStudioJob(job.status);
   const statusColor = getServerStatusColor(job.status);
 
   const icon = canCancel ? (
     <Loader2 size={13} className="mt-0.5 shrink-0 animate-spin text-accent-400" />
   ) : job.status === 'completed' ? (
     <CheckCircle2 size={13} className="mt-0.5 shrink-0 text-emerald-400" />
+  ) : job.status === 'needs_review' ? (
+    <AlertTriangle size={13} className="mt-0.5 shrink-0 text-amber-300" />
   ) : job.status === 'failed' || job.status === 'cancelled' ? (
     <AlertTriangle size={13} className="mt-0.5 shrink-0 text-rose-400" />
   ) : (
@@ -381,7 +389,7 @@ const ServerJobItem: React.FC<{
       <button
         type="button"
         onClick={onInspect}
-        className="flex min-w-0 flex-1 items-start gap-2 text-left"
+        className="flex min-w-0 flex-1 items-start gap-2 text-left cursor-pointer"
       >
         {icon}
 
@@ -410,10 +418,20 @@ const ServerJobItem: React.FC<{
           <button
             type="button"
             onClick={onCancel}
-            className="rounded-lg p-1.5 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400"
+            className="rounded-lg p-1.5 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
             title="Cancel backend job"
           >
             <XCircle size={13} />
+          </button>
+        ) : null}
+        {canRetry ? (
+          <button
+            type="button"
+            onClick={onRetry}
+            className="rounded-lg p-1.5 text-white/35 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
+            title="Retry backend job"
+          >
+            <RotateCcw size={13} />
           </button>
         ) : null}
       </div>
@@ -491,7 +509,7 @@ const JobItem: React.FC<{
           <button
             type="button"
             onClick={onInspect}
-            className="flex min-w-0 flex-1 items-start gap-3 text-left"
+            className="flex min-w-0 flex-1 items-start gap-3 text-left cursor-pointer"
           >
             {content}
           </button>
@@ -504,7 +522,7 @@ const JobItem: React.FC<{
             <button
               type="button"
               onClick={onCancel}
-              className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400"
+              className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
               title="Cancel"
             >
               <XCircle size={14} />
@@ -515,7 +533,7 @@ const JobItem: React.FC<{
             <button
               type="button"
               onClick={onRetry}
-              className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-accent-400"
+              className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
               title="Retry"
             >
               <RotateCcw size={14} />
@@ -525,7 +543,7 @@ const JobItem: React.FC<{
           <button
             type="button"
             onClick={onRemove}
-            className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400"
+            className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
             title="Remove"
           >
             <Trash2 size={14} />

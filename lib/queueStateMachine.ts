@@ -1,4 +1,5 @@
-import type { QueueJob } from '../types';
+import type { Job as StudioJob } from '../packages/shared/src';
+import type { ImageGenerationConfig, QueueJob } from '../types';
 
 export const MAX_CONCURRENT_JOBS = 3;
 export const TOTAL_MAX_CONCURRENT = 15;
@@ -40,4 +41,87 @@ export function isAbortLikeError(error: unknown): boolean {
     error.message === 'Operation cancelled by user' ||
     /job cancelled/i.test(error.message)
   );
+}
+
+export interface QueueJobExecuteGenerationOptions {
+  preventModal?: boolean;
+  workspaceId?: string;
+  signal?: AbortSignal;
+  onJobCreated?: (job: StudioJob) => void;
+}
+
+export type QueueJobExecuteGeneration = (
+  config: Partial<ImageGenerationConfig>,
+  options?: QueueJobExecuteGenerationOptions,
+) => Promise<void>;
+
+export type QueueJobExecutionResult =
+  | {
+      status: 'completed';
+      completedAt: number;
+      serverJobId: string | null;
+    }
+  | {
+      status: 'cancelled';
+      serverJobId: string | null;
+    }
+  | {
+      status: 'failed';
+      error: string;
+      serverJobId: string | null;
+    };
+
+export interface QueueJobExecution {
+  controller: AbortController;
+  run: () => Promise<QueueJobExecutionResult>;
+}
+
+interface StartQueuedJobExecutionOptions {
+  executeGeneration: QueueJobExecuteGeneration;
+  onJobCreated?: (job: StudioJob) => void;
+  now?: () => number;
+}
+
+export function startQueuedJobExecution(
+  job: Pick<QueueJob, 'config' | 'workspaceId'>,
+  { executeGeneration, onJobCreated, now = () => Date.now() }: StartQueuedJobExecutionOptions,
+): QueueJobExecution {
+  const controller = new AbortController();
+  let serverJobId: string | null = null;
+
+  return {
+    controller,
+    run: async () => {
+      try {
+        await executeGeneration(job.config, {
+          preventModal: true,
+          workspaceId: job.workspaceId,
+          signal: controller.signal,
+          onJobCreated: (studioJob) => {
+            serverJobId = studioJob.id;
+            onJobCreated?.(studioJob);
+          },
+        });
+
+        return {
+          status: 'completed',
+          completedAt: now(),
+          serverJobId,
+        };
+      } catch (error: unknown) {
+        if (isAbortLikeError(error)) {
+          return {
+            status: 'cancelled',
+            serverJobId,
+          };
+        }
+
+        return {
+          status: 'failed',
+          error: error instanceof Error ? error.message : 'Unknown error',
+          serverJobId,
+        };
+      }
+    },
+  };
 }

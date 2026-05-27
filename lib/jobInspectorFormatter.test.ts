@@ -142,6 +142,162 @@ describe('buildJobInspectorDetailModel', () => {
     expect(model.stats.outputCount).toBe(1);
   });
 
+  it('surfaces source spec reference images as previewable request artifacts', () => {
+    const detail = createDetail({
+      job: {
+        ...createDetail().job,
+        sourceSpec: {
+          id: 'spec-2',
+          version: 'generation-task-spec/v1',
+          task: 'image_generate',
+          providerId: 'codex',
+          prompt: 'Use the reference',
+          negativePrompt: null,
+          recipeId: 'styles',
+          recipeParams: null,
+          stylePresetId: null,
+          assets: [
+            {
+              role: 'reference',
+              name: 'ref.png',
+              localPath: 'D:/AI-Studio-Library/.studio/references/job-1/ref.png',
+              strength: 0.35,
+            },
+          ],
+          output: {
+            count: 1,
+            aspectRatio: '1:1',
+            imageSize: '1K',
+            mimeType: 'image/png',
+            requiresLocalAsset: true,
+            requiresCatalogEntry: true,
+            requiresExactPath: true,
+          },
+          metadata: {
+            workspaceId: 'workspace-1',
+            batchId: 'batch-old',
+          },
+        },
+      },
+    });
+
+    const model = buildJobInspectorDetailModel(detail, {
+      assetBaseUrl: 'http://localhost:17223',
+    });
+
+    expect(model.request.referenceArtifacts).toEqual([
+      expect.objectContaining({
+        kind: 'image',
+        href: 'http://localhost:17223/library/.studio/references/job-1/ref.png',
+        previewSrc: 'http://localhost:17223/library/.studio/references/job-1/ref.png',
+        label: 'ref.png',
+      }),
+    ]);
+  });
+
+  it('prefers persisted localPath over inline dataUrl for reference previews', () => {
+    const detail = createDetail({
+      job: {
+        ...createDetail().job,
+        sourceSpec: {
+          id: 'spec-3',
+          version: 'generation-task-spec/v1',
+          task: 'image_generate',
+          providerId: 'codex',
+          prompt: 'Use the persisted reference',
+          negativePrompt: null,
+          recipeId: null,
+          recipeParams: null,
+          stylePresetId: null,
+          assets: [
+            {
+              role: 'reference',
+              name: 'hero reference.png',
+              localPath: 'D:/AI-Studio-Library/.studio/references/job-9/hero reference.png',
+              dataUrl: `data:image/png;base64,${'A'.repeat(512)}`,
+              strength: 0.5,
+            },
+          ],
+          output: {
+            count: 1,
+            aspectRatio: '1:1',
+            imageSize: '1K',
+            mimeType: 'image/png',
+            requiresLocalAsset: true,
+            requiresCatalogEntry: true,
+            requiresExactPath: true,
+          },
+          metadata: {},
+        },
+      },
+    });
+
+    const model = buildJobInspectorDetailModel(detail, {
+      assetBaseUrl: 'http://localhost:17223',
+    });
+
+    expect(model.request.referenceArtifacts).toEqual([
+      expect.objectContaining({
+        href: 'http://localhost:17223/library/.studio/references/job-9/hero%20reference.png',
+        previewSrc: 'http://localhost:17223/library/.studio/references/job-9/hero%20reference.png',
+      }),
+    ]);
+  });
+
+  it('derives legacy reference previews from final prompt paths when source assets miss localPath', () => {
+    const detail = createDetail({
+      job: {
+        ...createDetail().job,
+        finalPromptUsed: [
+          'Base prompt content.',
+          '',
+          'Use these local reference image files as visual context for the requested image. Respect the strength value as the visual influence for each reference:',
+          '1. Reference image: D:/AI-Studio-Library/.studio/references/job-42/mood board.png (mood board.png, strength 0.55)',
+        ].join('\n'),
+        sourceSpec: {
+          id: 'spec-legacy',
+          version: 'generation-task-spec/v1',
+          task: 'image_generate',
+          providerId: 'codex',
+          prompt: 'Base prompt content.',
+          negativePrompt: null,
+          recipeId: null,
+          recipeParams: null,
+          stylePresetId: null,
+          assets: [
+            {
+              role: 'reference',
+              name: 'mood board.png',
+              dataUrl: `data:image/png;base64,${'A'.repeat(512)}`,
+              strength: 0.55,
+            },
+          ],
+          output: {
+            count: 1,
+            aspectRatio: '1:1',
+            imageSize: '1K',
+            mimeType: 'image/png',
+            requiresLocalAsset: true,
+            requiresCatalogEntry: true,
+            requiresExactPath: true,
+          },
+          metadata: {},
+        },
+      },
+    });
+
+    const model = buildJobInspectorDetailModel(detail, {
+      assetBaseUrl: 'http://localhost:17223',
+    });
+
+    expect(model.request.referenceArtifacts[0]).toEqual(
+      expect.objectContaining({
+        href: 'http://localhost:17223/library/.studio/references/job-42/mood%20board.png',
+        previewSrc: 'http://localhost:17223/library/.studio/references/job-42/mood%20board.png',
+      }),
+    );
+  });
+
   it('compacts giant inline image payloads so they do not flood the timeline text', () => {
     const detail = createDetail({
       transcriptEntries: [
@@ -161,6 +317,51 @@ describe('buildJobInspectorDetailModel', () => {
 
     expect(model.timeline[0]?.blocks[0]?.text).toContain('Embedded image payload');
     expect(model.timeline[0]?.blocks[0]?.text).not.toContain('AAAAAA');
+  });
+
+  it('compacts wrapped opaque payloads from raw transcript lines', () => {
+    const detail = createDetail({
+      transcriptEntries: [
+        {
+          id: 'line-raw',
+          kind: 'event',
+          label: 'Transcript',
+          text: Array.from({ length: 6 }, () => 'A'.repeat(40_000)).join('\n'),
+          source: 'raw',
+          timestamp: null,
+          raw: null,
+        },
+      ],
+    });
+
+    const model = buildJobInspectorDetailModel(detail);
+
+    expect(model.timeline[0]?.blocks[0]?.text).toContain('Binary payload');
+    expect(model.timeline[0]?.blocks[0]?.text).not.toContain('AAAAAA');
+  });
+
+  it('compacts oversized structured event payloads into readable timeline text', () => {
+    const detail = createDetail({
+      events: [
+        {
+          id: 9,
+          jobId: 'job-1',
+          type: 'provider.event',
+          message: JSON.stringify({
+            kind: 'image_generation',
+            payload: `data:image/png;base64,${'A'.repeat(2048)}`,
+            detail: 'Large opaque payload',
+          }),
+          metadata: null,
+          createdAt: '2026-05-26T10:00:06.000Z',
+        },
+      ],
+    });
+
+    const model = buildJobInspectorDetailModel(detail);
+
+    expect(model.timeline[0]?.rawJson).toContain('Embedded image payload');
+    expect(model.timeline[0]?.rawJson).not.toContain('AAAAAA');
   });
 
   it('turns structured transcript payloads into readable facts instead of raw paragraphs', () => {
@@ -236,5 +437,182 @@ describe('buildJobInspectorDetailModel', () => {
       'transcript:line-3',
       'event:3',
     ]);
+  });
+
+  it('exposes job request snapshot facts for prompt and attachment auditing', () => {
+    const detail = createDetail({
+      job: {
+        ...createDetail().job,
+        finalPromptUsed: 'Final prompt used by provider',
+        sourceSpec: {
+          id: 'spec-1',
+          version: 'generation-task-spec/v1',
+          task: 'image_edit',
+          providerId: 'codex',
+          prompt: 'Final prompt used by provider',
+          negativePrompt: null,
+          recipeId: null,
+          recipeParams: null,
+          stylePresetId: null,
+          assets: [
+            {
+              role: 'input',
+              name: 'base.png',
+              dataUrl: 'data:image/png;base64,AAAA',
+              strength: 1,
+            },
+            {
+              role: 'mask',
+              name: 'mask.png',
+              dataUrl: 'data:image/png;base64,BBBB',
+              strength: 1,
+            },
+          ],
+          output: {
+            count: 1,
+            aspectRatio: '1:1',
+            imageSize: '1K',
+            mimeType: 'image/png',
+            requiresLocalAsset: true,
+            requiresCatalogEntry: true,
+            requiresExactPath: true,
+          },
+          metadata: {},
+        },
+      },
+    });
+
+    const model = buildJobInspectorDetailModel(detail);
+
+    expect(model.request.blocks[0]?.text).toContain('Final prompt used by provider');
+    expect(model.request.facts).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ label: 'Prompt matches source spec', value: 'Yes' }),
+        expect.objectContaining({ label: 'Assets sent', value: '2' }),
+        expect.objectContaining({ label: 'Input assets', value: '1' }),
+        expect.objectContaining({ label: 'Mask assets', value: '1' }),
+        expect.objectContaining({ label: 'Reference assets', value: '0' }),
+        expect.objectContaining({ label: 'Input names', value: 'base.png' }),
+        expect.objectContaining({ label: 'Mask names', value: 'mask.png' }),
+      ]),
+    );
+  });
+
+  it('compacts streamed assistant delta fragments when a completed message is present', () => {
+    const detail = createDetail({
+      transcriptEntries: [
+        {
+          id: 'line-delta-1',
+          kind: 'event',
+          label: 'item/agentMessage/delta',
+          text: '{"delta":"Hello "}',
+          source: 'item/agentMessage/delta',
+          timestamp: null,
+          raw: {
+            method: 'item/agentMessage/delta',
+            params: {
+              itemId: 'msg-1',
+              delta: 'Hello ',
+            },
+          },
+        },
+        {
+          id: 'line-delta-2',
+          kind: 'event',
+          label: 'item/agentMessage/delta',
+          text: '{"delta":"world"}',
+          source: 'item/agentMessage/delta',
+          timestamp: null,
+          raw: {
+            method: 'item/agentMessage/delta',
+            params: {
+              itemId: 'msg-1',
+              delta: 'world',
+            },
+          },
+        },
+        {
+          id: 'line-complete',
+          kind: 'message',
+          label: 'Assistant',
+          text: 'Hello world',
+          source: 'item/completed',
+          timestamp: null,
+          raw: {
+            method: 'item/completed',
+            params: {
+              item: {
+                id: 'msg-1',
+                type: 'agentMessage',
+                text: 'Hello world',
+              },
+            },
+          },
+        },
+      ],
+    });
+
+    const model = buildJobInspectorDetailModel(detail);
+
+    expect(model.stats.rawTranscriptCount).toBe(3);
+    expect(model.stats.transcriptCount).toBe(1);
+    expect(model.stats.collapsedTranscriptCount).toBe(2);
+    expect(model.timeline).toHaveLength(1);
+    expect(model.timeline[0]).toEqual(
+      expect.objectContaining({
+        title: 'Assistant',
+        sourceLabel: 'item/completed',
+      }),
+    );
+  });
+
+  it('merges orphaned streaming fragments into one readable transcript item', () => {
+    const detail = createDetail({
+      transcriptEntries: [
+        {
+          id: 'line-delta-1',
+          kind: 'event',
+          label: 'item/agentMessage/delta',
+          text: '{"delta":"Hello "}',
+          source: 'item/agentMessage/delta',
+          timestamp: null,
+          raw: {
+            method: 'item/agentMessage/delta',
+            params: {
+              itemId: 'msg-2',
+              delta: 'Hello ',
+            },
+          },
+        },
+        {
+          id: 'line-delta-2',
+          kind: 'event',
+          label: 'item/agentMessage/delta',
+          text: '{"delta":"world"}',
+          source: 'item/agentMessage/delta',
+          timestamp: null,
+          raw: {
+            method: 'item/agentMessage/delta',
+            params: {
+              itemId: 'msg-2',
+              delta: 'world',
+            },
+          },
+        },
+      ],
+    });
+
+    const model = buildJobInspectorDetailModel(detail);
+
+    expect(model.stats.transcriptCount).toBe(1);
+    expect(model.stats.collapsedTranscriptCount).toBe(1);
+    expect(model.timeline[0]).toEqual(
+      expect.objectContaining({
+        title: 'Assistant',
+        badge: 'message',
+        sourceLabel: 'item/agentMessage/stream',
+      }),
+    );
+    expect(model.timeline[0]?.blocks[0]?.text).toBe('Hello world');
   });
 });

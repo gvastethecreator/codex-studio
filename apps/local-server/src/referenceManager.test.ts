@@ -4,7 +4,7 @@ import { createGenerationTaskSpec } from '../../../packages/shared/src';
 import { hydrateSourceSpecAssetPaths } from './referenceManager';
 
 describe('referenceManager', () => {
-  it('hydrates inline source spec assets with persisted local paths in request order', () => {
+  it('hydrates only reference assets with persisted local paths', () => {
     const sourceSpec = createGenerationTaskSpec({
       id: 'spec-1',
       task: 'image_edit',
@@ -34,22 +34,8 @@ describe('referenceManager', () => {
 
     const hydrated = hydrateSourceSpecAssetPaths(
       sourceSpec,
+      [{ name: 'moodboard.png', dataUrl: 'data:image/png;base64,CCC', strength: 0.4 }],
       [
-        { name: 'input-image.png', dataUrl: 'data:image/png;base64,AAA', strength: 1 },
-        { name: 'input-mask.png', dataUrl: 'data:image/png;base64,BBB', strength: 1 },
-        { name: 'moodboard.png', dataUrl: 'data:image/png;base64,CCC', strength: 0.4 },
-      ],
-      [
-        {
-          name: 'input-image.png',
-          path: 'D:/AI-Studio-Library/references/job-1/input-image.png',
-          strength: 1,
-        },
-        {
-          name: 'input-mask.png',
-          path: 'D:/AI-Studio-Library/references/job-1/input-mask.png',
-          strength: 1,
-        },
         {
           name: 'moodboard.png',
           path: 'D:/AI-Studio-Library/references/job-1/moodboard.png',
@@ -63,14 +49,12 @@ describe('referenceManager', () => {
         role: 'input',
         name: 'input-image.png',
         dataUrl: 'data:image/png;base64,AAA',
-        localPath: 'D:/AI-Studio-Library/references/job-1/input-image.png',
         strength: 1,
       },
       {
         role: 'mask',
         name: 'input-mask.png',
         dataUrl: 'data:image/png;base64,BBB',
-        localPath: 'D:/AI-Studio-Library/references/job-1/input-mask.png',
         strength: 1,
       },
       {
@@ -81,5 +65,53 @@ describe('referenceManager', () => {
         strength: 0.4,
       },
     ]);
+  });
+
+  it('still hydrates references when non-reference assets with inline data appear first', () => {
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-2',
+      task: 'image_edit',
+      providerId: 'codex',
+      prompt: 'Stylize this image with a reference.',
+      assets: [
+        {
+          role: 'input',
+          name: 'base.png',
+          dataUrl: 'data:image/png;base64,AAA',
+          strength: 1,
+        },
+        {
+          role: 'mask',
+          name: 'mask.png',
+          dataUrl: 'data:image/png;base64,BBB',
+          strength: 1,
+        },
+        {
+          role: 'reference',
+          name: 'moodboard.png',
+          dataUrl: 'data:image/png;base64,CCC',
+          strength: 0.65,
+        },
+      ],
+    });
+
+    const hydrated = hydrateSourceSpecAssetPaths(
+      sourceSpec,
+      [{ name: 'moodboard.png', dataUrl: 'data:image/png;base64,CCC', strength: 0.65 }],
+      [
+        {
+          name: 'moodboard.png',
+          path: 'D:/AI-Studio-Library/references/job-2/moodboard.png',
+          strength: 0.65,
+        },
+      ],
+    );
+
+    expect(hydrated?.assets.at(2)).toEqual(
+      expect.objectContaining({
+        role: 'reference',
+        localPath: 'D:/AI-Studio-Library/references/job-2/moodboard.png',
+      }),
+    );
   });
 });

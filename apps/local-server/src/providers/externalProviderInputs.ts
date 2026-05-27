@@ -212,16 +212,31 @@ function createProviderPayloadMetadata(sourceSpec: GenerationTaskSpec) {
 
 function buildProviderPrompt(sourceSpec: GenerationTaskSpec) {
   const recipeProviderDirectives = sourceSpec.metadata.recipeProviderDirectives;
+  const variationBrief =
+    typeof sourceSpec.metadata.variationBrief === 'string'
+      ? sourceSpec.metadata.variationBrief.trim()
+      : '';
+  const sections = [sourceSpec.prompt];
+
   if (!isRecipeProviderDirectives(recipeProviderDirectives)) {
-    return sourceSpec.prompt;
+    if (variationBrief) {
+      sections.push('', 'Variation brief:', variationBrief);
+    }
+
+    return sections.join('\n');
   }
 
-  return [
-    sourceSpec.prompt,
+  sections.push(
     '',
     'Recipe directives:',
     serializeRecipeProviderDirectives(recipeProviderDirectives),
-  ].join('\n');
+  );
+
+  if (variationBrief) {
+    sections.push('', 'Variation brief:', variationBrief);
+  }
+
+  return sections.join('\n');
 }
 
 function estimatePromptChars(sourceSpec: GenerationTaskSpec, prompt: string) {

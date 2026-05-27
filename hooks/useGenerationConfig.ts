@@ -51,7 +51,9 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
         ...prev,
         aspectRatio: normalizeImageGenRatio(prev.aspectRatio),
       }));
-      logRef.current(`Aspect ratio normalized to ${normalizedRatio} for Codex ImageGen compatibility.`);
+      logRef.current(
+        `Aspect ratio normalized to ${normalizedRatio} for Codex ImageGen compatibility.`,
+      );
     }
   }, [generationConfig.aspectRatio, setGenerationConfig]);
 
@@ -151,7 +153,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
 
   const processFiles = useCallback(
     async (files: File[]) => {
-      const filesToProcess = files.slice(0, maxAttachments);
+      const filesToProcess = files.slice(0, 1);
 
       const results = await Promise.all(
         filesToProcess.map(async (file) => {
@@ -167,7 +169,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
               id: `att-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
               name: file.name,
               dataUrl,
-              strength: 0.25,
+              strength: 0.5,
             } as Attachment;
           } catch (err) {
             log(`Failed to read attachment "${file.name}": ${formatErrorMessage(err)}`);
@@ -179,24 +181,14 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
       const newAttachments = results.filter((r): r is Attachment => r !== null);
 
       if (newAttachments.length > 0) {
-        setGenerationConfig((prev) => {
-          const remainingSpace = maxAttachments - prev.attachments.length;
-          if (remainingSpace <= 0) {
-            log(`Context full. Limit for ${prev.model} is ${maxAttachments}.`);
-            return prev;
-          }
-
-          const acceptedAttachments = newAttachments.slice(0, remainingSpace);
-          log(`Added ${acceptedAttachments.length} images to synthesis context.`);
-
-          return {
-            ...prev,
-            attachments: [...prev.attachments, ...acceptedAttachments],
-          };
-        });
+        setGenerationConfig((prev) => ({
+          ...prev,
+          attachments: [newAttachments[0]],
+        }));
+        log('Reference image updated. Previous attachment context was replaced.');
       }
     },
-    [maxAttachments, log, setGenerationConfig],
+    [log, setGenerationConfig],
   );
 
   const handleFileSelect = useCallback(
@@ -230,11 +222,6 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
   const handleAddToContext = useCallback(
     (image: GeneratedImageWithConfig) => {
       setGenerationConfig((prev) => {
-        if (prev.attachments.length >= maxAttachments) {
-          log(`Cannot add to context. Maximum limit reached.`);
-          return prev;
-        }
-
         const dataUrl = image.src.startsWith('data:')
           ? image.src
           : `${resolveStudioApiBase()}${image.src}`;
@@ -242,19 +229,18 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
         return {
           ...prev,
           attachments: [
-            ...prev.attachments,
             {
               id: `gen-${image.id}-${Date.now()}`,
               name: 'Generated Image',
               dataUrl,
-              strength: 0.25,
+              strength: 0.5,
             },
           ],
         };
       });
-      log(`Added generated image to context.`);
+      log('Added generated image as the active reference context.');
     },
-    [log, maxAttachments, setGenerationConfig],
+    [log, setGenerationConfig],
   );
 
   return {

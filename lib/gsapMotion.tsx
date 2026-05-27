@@ -32,8 +32,6 @@ type MotionState = {
 
 type VariantResolver = MotionState | ((custom: never) => MotionState);
 
-type Variants = Record<string, VariantResolver>;
-
 type MotionTransitionValue = {
   duration?: number;
   delay?: number;

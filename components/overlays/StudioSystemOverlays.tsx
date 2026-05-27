@@ -44,6 +44,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   selectedJobDetail,
   onInspectJob,
   onClearSelectedJob,
+  onRetryJob,
   handleExportWorkspaceSnapshot,
   handleDeepScan,
   apiBase,
@@ -96,6 +97,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             isLoadingSelectedJob={isLoadingSelectedJob}
             onInspectJob={onInspectJob}
             onClearSelectedJob={onClearSelectedJob}
+            onRetryJob={onRetryJob}
           />
         </Suspense>
       ) : null}
@@ -119,7 +121,15 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             health={onboardingHealth}
             localCodexSession={localCodexSession}
             readiness={readiness}
-            status={isOnboardingReady ? 'ready' : isCheckingOnboarding ? 'checking' : isStartingAppServer ? 'starting' : 'idle'}
+            status={
+              isOnboardingReady
+                ? 'ready'
+                : isCheckingOnboarding
+                  ? 'checking'
+                  : isStartingAppServer
+                    ? 'starting'
+                    : 'idle'
+            }
             isDesktopRuntime={isDesktopRuntime}
             isOpen={isOnboardingOpen}
             onClose={closeOnboarding}

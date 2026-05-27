@@ -1,6 +1,10 @@
 import type { LeftDebugPanelProps } from '../components/LeftDebugPanel';
+import type { RecipePageProps } from '../components/RecipePage';
+import type { ToolbarProps } from '../components/Toolbar';
 import type { StudioGridSurfaceProps } from '../components/studio/StudioGridSurface';
 import type { StudioOperationsRailProps } from '../components/studio/StudioOperationsRail';
+import type { AppPageView } from '../hooks/useHashRouter';
+import type { RecipeId } from '../types';
 
 export interface StudioPageController {
   debugPanel: {
@@ -9,6 +13,24 @@ export interface StudioPageController {
   };
   grid: StudioGridSurfaceProps;
   operations: StudioOperationsRailProps;
+}
+
+export interface StudioViewportController {
+  viewport: {
+    routeView: AppPageView;
+    direction: number;
+    activeRecipe: RecipeId | null;
+    recipePageProps: Omit<RecipePageProps, 'activeRecipe'>;
+    studioPageController: StudioPageController;
+    onSelectRecipe: (recipeId: RecipeId) => void;
+  };
+  generationDock: {
+    isModalOpen: boolean;
+    currentView: AppPageView;
+    activeRecipe: RecipeId | null;
+    isDragging: boolean;
+    toolbarProps: ToolbarProps;
+  };
 }
 
 interface StudioPageDebugContext {
@@ -50,6 +72,7 @@ interface StudioPageOperationsContext {
   studioJobs: StudioOperationsRailProps['studioJobs'];
   selectedStudioJobId: StudioOperationsRailProps['selectedStudioJobId'];
   retry: StudioOperationsRailProps['retry'];
+  retryPersistentJob: StudioOperationsRailProps['retryPersistentJob'];
   cancelJob: StudioOperationsRailProps['cancelJob'];
   cancelPersistentJob: StudioOperationsRailProps['cancelPersistentJob'];
   removeJob: StudioOperationsRailProps['removeJob'];
@@ -69,6 +92,30 @@ export interface BuildStudioPageControllerArgs {
   debug: StudioPageDebugContext;
   grid: StudioPageGridContext;
   operations: StudioPageOperationsContext;
+}
+
+interface StudioViewportNavigationContext {
+  routeView: AppPageView;
+  direction: number;
+  activeRecipe: RecipeId | null;
+  onSelectRecipe: (recipeId: RecipeId) => void;
+}
+
+interface StudioViewportRecipeContext {
+  recipePageProps: Omit<RecipePageProps, 'activeRecipe'>;
+  studioPageController: StudioPageController;
+}
+
+interface StudioViewportDockContext {
+  isModalOpen: boolean;
+  isDragging: boolean;
+  toolbarProps: ToolbarProps;
+}
+
+export interface BuildStudioViewportControllerArgs {
+  navigation: StudioViewportNavigationContext;
+  recipe: StudioViewportRecipeContext;
+  dock: StudioViewportDockContext;
 }
 
 export function buildStudioPageController(
@@ -122,6 +169,7 @@ export function buildStudioPageController(
       studioJobs: args.operations.studioJobs,
       selectedStudioJobId: args.operations.selectedStudioJobId,
       retry: args.operations.retry,
+      retryPersistentJob: args.operations.retryPersistentJob,
       cancelJob: args.operations.cancelJob,
       cancelPersistentJob: args.operations.cancelPersistentJob,
       removeJob: args.operations.removeJob,
@@ -135,6 +183,30 @@ export function buildStudioPageController(
       diagnostics: args.operations.diagnostics,
       onResetStudio: args.operations.onResetStudio,
       isResettingStudio: args.operations.isResettingStudio,
+    },
+  };
+}
+
+export function buildStudioViewportController({
+  navigation,
+  recipe,
+  dock,
+}: BuildStudioViewportControllerArgs): StudioViewportController {
+  return {
+    viewport: {
+      routeView: navigation.routeView,
+      direction: navigation.direction,
+      activeRecipe: navigation.activeRecipe,
+      recipePageProps: recipe.recipePageProps,
+      studioPageController: recipe.studioPageController,
+      onSelectRecipe: navigation.onSelectRecipe,
+    },
+    generationDock: {
+      isModalOpen: dock.isModalOpen,
+      currentView: navigation.routeView,
+      activeRecipe: navigation.activeRecipe,
+      isDragging: dock.isDragging,
+      toolbarProps: dock.toolbarProps,
     },
   };
 }

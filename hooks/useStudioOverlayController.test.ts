@@ -1,7 +1,10 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import { buildStudioOverlayController } from './useStudioOverlayController';
+import {
+  buildStudioOverlayController,
+  buildStudioShellOverlayController,
+} from './useStudioOverlayController';
 
 describe('buildStudioOverlayController', () => {
   it('centralizes overlay counts and transition wrappers', () => {
@@ -237,5 +240,244 @@ describe('buildStudioOverlayController', () => {
     ]);
     expect(controller.confirmationOverlay.pendingConfirmation?.title).toBe('Confirm reset');
     expect(controller.imageOverlays.isEditorOpen).toBe(true);
+  });
+
+  it('derives shell overlay settings details from runtime and settings modules', () => {
+    const calls: string[] = [];
+
+    const controller = buildStudioShellOverlayController({
+      image: {
+        modalImage: null,
+        imagesWithConfig: [],
+        activeGenerationConfig: null,
+        closeModal: () => {
+          calls.push('closeModal');
+        },
+        handleDelete: () => {
+          calls.push('delete');
+        },
+        handleGenerate: () => {
+          calls.push('generate');
+        },
+        handleAddToContext: () => {
+          calls.push('context');
+        },
+        handleLoadRecipe: () => {
+          calls.push('recipe');
+        },
+        handleToggleFavorite: () => {
+          calls.push('favorite');
+        },
+        setActiveCarouselId: () => {
+          calls.push('carousel');
+        },
+      },
+      editor: {
+        isEditorOpen: false,
+        closeEditor: () => {
+          calls.push('closeEditor');
+        },
+        imageToEdit: null,
+        handleExecuteEdit: async () => null,
+        isEditingImage: false,
+      },
+      chrome: {
+        debugPanel: {
+          isOpen: false,
+          close: () => {
+            calls.push('closeDebug');
+          },
+        },
+        dashboard: {
+          isOpen: false,
+          close: () => {
+            calls.push('closeDashboard');
+          },
+        },
+      },
+      runtime: {
+        mergedLogs: [],
+        studioJobs: [],
+        onboarding: {
+          apiBase: 'http://localhost:17223',
+          error: null,
+          health: {
+            ok: true,
+            checkedAt: '2026-05-27T00:00:00.000Z',
+            libraryDir: 'D:/from-onboarding',
+            runtime: {
+              platform: 'win32',
+              arch: 'x64',
+              bunVersion: '1.3.13',
+              nodeVersion: '22.15.0',
+              cwd: 'D:/DEV/codex-studio',
+              envLocalPath: 'D:/DEV/codex-studio/.env.local',
+              envLocalPresent: true,
+            },
+            config: {
+              serverPort: 17223,
+              codexWsPort: 17224,
+            },
+            library: {
+              exists: true,
+              writable: true,
+              readmePresent: true,
+              missingFolders: [],
+            },
+            codexCli: {
+              available: true,
+              version: '1.0.0',
+              command: 'codex',
+            },
+            appServer: {
+              running: true,
+              wsUrl: 'ws://127.0.0.1:17224',
+              pid: 1234,
+              lastExitCode: null,
+              lastExitAt: null,
+              lastInvocation: null,
+              lastStartAt: null,
+              lastStartError: null,
+              lastEnsureAt: null,
+              lastEnsureReason: null,
+            },
+            checks: {
+              libraryReady: true,
+              codexReady: true,
+              onboardingReady: true,
+            },
+          },
+          localCodexSession: null,
+          readiness: {
+            stage: 'checking',
+            isReady: false,
+            nextAction: null,
+            title: 'Checking',
+            description: 'Checking runtime',
+            checks: [],
+          },
+          isChecking: false,
+          isDesktopRuntime: false,
+          isOpen: false,
+          isReady: false,
+          isStartingAppServer: false,
+          close: () => {
+            calls.push('closeOnboarding');
+          },
+          complete: () => {
+            calls.push('completeOnboarding');
+          },
+          refreshHealth: () => {
+            calls.push('refreshOnboardingHealth');
+          },
+          ensureAppServer: () => {
+            calls.push('ensureAppServer');
+          },
+          diagnosticsLibraryDir: 'D:/from-diagnostics',
+        },
+      },
+      activity: {
+        selectedJobDetail: null,
+        isLoadingSelectedJob: false,
+        onInspectJob: () => {
+          calls.push('inspectJob');
+        },
+        onClearSelectedJob: () => {
+          calls.push('clearSelectedJob');
+        },
+      },
+      vault: {
+        handleExportWorkspaceSnapshot: () => {
+          calls.push('exportWorkspaceSnapshot');
+        },
+        handleDeepScan: () => {
+          calls.push('deepScan');
+        },
+      },
+      settings: {
+        modal: {
+          isOpen: true,
+          close: () => {
+            calls.push('closeSettings');
+          },
+        },
+        data: {
+          settings: null,
+          error: null,
+          isLoading: false,
+          isSaving: false,
+          providerCapabilities: null,
+          providerRuntimePreflight: null,
+          outputSources: null,
+          outputSourceFiles: {},
+          isLoadingOutputSources: false,
+          loadingOutputSourceFiles: {},
+          isRegisteringOutputSource: false,
+          importingOutputSources: {},
+          refresh: () => {
+            calls.push('refreshSettings');
+          },
+          update: () => {
+            calls.push('updateSettings');
+          },
+          registerOutputSource: () => {
+            calls.push('registerOutputSource');
+          },
+          loadOutputSourceFiles: () => {
+            calls.push('loadOutputSourceFiles');
+          },
+          importOutputSourceFiles: () => {
+            calls.push('importOutputSourceFiles');
+          },
+        },
+        background: {
+          isEnabled: true,
+          setEnabled: (isEnabled) => {
+            calls.push(`setBackground:${String(isEnabled)}`);
+          },
+        },
+        reset: {
+          onResetStudio: () => {
+            calls.push('resetStudio');
+          },
+          isResettingStudio: false,
+        },
+      },
+      workspace: {
+        catalogVisualGroupCount: 0,
+        workspaces: [],
+        trash: [],
+        restoreFromTrash: () => {
+          calls.push('restoreFromTrash');
+        },
+        isTrashModalOpen: false,
+        closeTrash: () => {
+          calls.push('closeTrash');
+        },
+      },
+      workspaceActions: {
+        requestRestoreAllTrash: () => {
+          calls.push('restoreAllTrash');
+        },
+        requestEmptyTrash: () => {
+          calls.push('emptyTrash');
+        },
+      },
+      confirmation: {
+        pendingConfirmation: null,
+        closeConfirmation: () => {
+          calls.push('closeConfirmation');
+        },
+        confirmPendingAction: () => {
+          calls.push('confirmPendingAction');
+        },
+      },
+    });
+
+    expect(controller.systemOverlays.settingsLibraryDir).toBe('D:/from-diagnostics');
+
+    controller.systemOverlays.onToggleBackground();
+
+    expect(calls).toContain('setBackground:false');
   });
 });

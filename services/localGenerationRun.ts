@@ -6,6 +6,10 @@ import type {
   Job as StudioJob,
 } from '../packages/shared/src';
 import { createThumbnail } from '../utils/imageUtils';
+import {
+  buildGenerationVariationBrief,
+  createGenerationVariationKey,
+} from '../lib/generationVariation';
 import { resolveGenerationConfig } from '../lib/recipeContext';
 import { materializeCatalogEntryImage } from '../lib/studioCatalogImageAdapter';
 import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
@@ -118,6 +122,7 @@ export async function buildJobAssets({
   inputImage?: RunLocalGenerationOptions['inputImage'];
 }): Promise<GenerationTaskAssetRef[]> {
   const assets: GenerationTaskAssetRef[] = [];
+  const isEditMode = Boolean(inputImage);
 
   if (inputImage) {
     assets.push({
@@ -128,7 +133,11 @@ export async function buildJobAssets({
     });
   }
 
-  for (const attachment of config.attachments) {
+  const queuedAttachments = isEditMode
+    ? config.attachments.filter((attachment) => attachment.id.startsWith('mask-'))
+    : config.attachments;
+
+  for (const attachment of queuedAttachments) {
     assets.push({
       role: attachment.id.startsWith('mask-') ? 'mask' : 'reference',
       name: attachment.name,
@@ -169,6 +178,8 @@ export function buildLocalGenerationTaskPrompt({
 export async function runSingleCodexImagegenJob(options: {
   config: ImageGenerationConfig;
   batchId: string;
+  batchIndex: number;
+  batchCount: number;
   workspaceId: string;
   providerId: GenerationProviderId;
   inputImage?: RunLocalGenerationOptions['inputImage'];
@@ -177,12 +188,30 @@ export async function runSingleCodexImagegenJob(options: {
   onJobCreated?: (job: StudioJob) => void;
   onProgress?: (message: string) => void;
 }) {
-  const { config, batchId, workspaceId, providerId, inputImage, signal, onProgress } = options;
+  const {
+    config,
+    batchId,
+    batchIndex,
+    batchCount,
+    workspaceId,
+    providerId,
+    inputImage,
+    signal,
+    onProgress,
+  } = options;
   throwIfAborted(signal);
   const projects = await listProjects();
   const projectId = projects[0]?.id;
   const taskPrompt = buildLocalGenerationTaskPrompt({ config, inputImage });
   const requestAssets = await buildJobAssets({ config, inputImage });
+  const variationKey = createGenerationVariationKey(batchId);
+  const variationBrief = inputImage
+    ? null
+    : buildGenerationVariationBrief({
+        batchIndex,
+        batchCount,
+        variationKey,
+      });
   const sourceSpec = buildGenerationTaskSpecFromRecipe({
     id: `${batchId}-${Date.now()}`,
     providerId,
@@ -204,6 +233,8 @@ export async function runSingleCodexImagegenJob(options: {
         ...(sourceSpec.metadata ?? {}),
         workspaceId,
         batchId,
+        variationKey,
+        variationBrief,
       },
     },
     prompt: taskPrompt,
@@ -287,6 +318,8 @@ export async function runLocalGeneration({
         const images = await runSingleCodexImagegenJob({
           config: resolvedConfig,
           batchId,
+          batchIndex: index + 1,
+          batchCount,
           workspaceId,
           providerId,
           signal,

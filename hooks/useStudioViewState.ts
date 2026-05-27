@@ -1,4 +1,5 @@
-import React, { useCallback, useState } from 'react';
+import type React from 'react';
+import { useCallback, useState } from 'react';
 import type { Attachment, AspectRatio } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
 
@@ -13,7 +14,50 @@ interface EditorState {
 
 const INITIAL_EDITOR_STATE: EditorState = { isOpen: false, image: null };
 
-export function useStudioViewState({ closeOverlay }: UseStudioViewStateProps) {
+export interface StudioViewStateController {
+  queue: {
+    isOpen: boolean;
+    setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  };
+  editor: {
+    isOpen: boolean;
+    setIsOpen: (value: React.SetStateAction<boolean>) => void;
+    image: Attachment | null;
+    setImage: (value: React.SetStateAction<Attachment | null>) => void;
+    open: (attachment: Attachment, openEditorRoute: () => void) => void;
+    close: () => void;
+    closeState: () => void;
+  };
+  preview: {
+    ratio: AspectRatio | null;
+    setRatio: React.Dispatch<React.SetStateAction<AspectRatio | null>>;
+  };
+  overlays: {
+    dashboard: {
+      isOpen: boolean;
+      open: () => void;
+      close: () => void;
+    };
+    settings: {
+      isOpen: boolean;
+      open: () => void;
+      close: () => void;
+    };
+    trash: {
+      isOpen: boolean;
+      open: () => void;
+      close: () => void;
+    };
+  };
+  actions: {
+    handleDownloadAndClear: () => Promise<boolean>;
+    reset: () => void;
+  };
+}
+
+export function useStudioViewState({
+  closeOverlay,
+}: UseStudioViewStateProps): StudioViewStateController {
   const [isQueueOpen, setIsQueueOpen] = useState(true);
   const [editorState, setEditorState] = useState<EditorState>(INITIAL_EDITOR_STATE);
   const [previewRatio, setPreviewRatio] = useState<AspectRatio | null>(null);
@@ -72,41 +116,62 @@ export function useStudioViewState({ closeOverlay }: UseStudioViewStateProps) {
     setIsTrashModalOpen(false);
   }, []);
 
+  const setEditorIsOpen = useCallback((value: React.SetStateAction<boolean>) => {
+    setEditorState((prev) => ({
+      ...prev,
+      isOpen: typeof value === 'function' ? value(prev.isOpen) : value,
+    }));
+  }, []);
+
+  const setEditorImage = useCallback((value: React.SetStateAction<Attachment | null>) => {
+    setEditorState((prev) => ({
+      ...prev,
+      image: typeof value === 'function' ? value(prev.image) : value,
+    }));
+  }, []);
+
+  const closeEditorState = useCallback(() => {
+    setEditorState(INITIAL_EDITOR_STATE);
+  }, []);
+
   return {
-    isQueueOpen,
-    setIsQueueOpen,
-    isEditorOpen: editorState.isOpen,
-    setIsEditorOpen: (value: React.SetStateAction<boolean>) =>
-      setEditorState((prev) => ({
-        ...prev,
-        isOpen: typeof value === 'function' ? value(prev.isOpen) : value,
-      })),
-    setImageToEdit: (value: React.SetStateAction<Attachment | null>) =>
-      setEditorState((prev) => ({
-        ...prev,
-        image: typeof value === 'function' ? value(prev.image) : value,
-      })),
-    closeEditorState: () => setEditorState(INITIAL_EDITOR_STATE),
-    imageToEdit: editorState.image,
-    setImageToEdit: (value: React.SetStateAction<Attachment | null>) =>
-      setEditorState((prev) => ({
-        ...prev,
-        image: typeof value === 'function' ? value(prev.image) : value,
-      })),
-    previewRatio,
-    setPreviewRatio,
-    isDashboardModalOpen,
-    openDashboard,
-    closeDashboard,
-    isSettingsModalOpen,
-    openSettings,
-    closeSettings,
-    isTrashModalOpen,
-    openTrash,
-    closeTrash,
-    openEditor,
-    closeEditor,
-    handleDownloadAndClear,
-    resetViewState,
+    queue: {
+      isOpen: isQueueOpen,
+      setIsOpen: setIsQueueOpen,
+    },
+    editor: {
+      isOpen: editorState.isOpen,
+      setIsOpen: setEditorIsOpen,
+      image: editorState.image,
+      setImage: setEditorImage,
+      open: openEditor,
+      close: closeEditor,
+      closeState: closeEditorState,
+    },
+    preview: {
+      ratio: previewRatio,
+      setRatio: setPreviewRatio,
+    },
+    overlays: {
+      dashboard: {
+        isOpen: isDashboardModalOpen,
+        open: openDashboard,
+        close: closeDashboard,
+      },
+      settings: {
+        isOpen: isSettingsModalOpen,
+        open: openSettings,
+        close: closeSettings,
+      },
+      trash: {
+        isOpen: isTrashModalOpen,
+        open: openTrash,
+        close: closeTrash,
+      },
+    },
+    actions: {
+      handleDownloadAndClear,
+      reset: resetViewState,
+    },
   };
 }

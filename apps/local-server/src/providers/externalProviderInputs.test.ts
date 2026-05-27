@@ -145,6 +145,30 @@ describe('external provider input compilers', () => {
     expect(compiled.audit.estimatedPromptChars).toBe(compiled.payload.prompt.length);
   });
 
+  it('adds a variation brief to hosted API prompts when requested in metadata', () => {
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-google-var',
+      task: 'image_generate',
+      providerId: 'google',
+      prompt: 'moody cyberpunk alley',
+      metadata: {
+        variationBrief: 'Make this noticeably different from earlier attempts.',
+      },
+    });
+
+    const compiled = compileGoogleImageApiInput({
+      id: 'job-google-var',
+      projectId: 'project-1',
+      providerId: 'google',
+      prompt: 'fallback',
+      execution: null,
+      sourceSpec,
+    });
+
+    expect(compiled.payload.prompt).toContain('Variation brief:');
+    expect(compiled.payload.prompt).toContain('noticeably different');
+  });
+
   it('compiles Comfy local workflow input for adapter conformance fixtures', () => {
     const sourceSpec = createGenerationTaskSpec({
       id: 'spec-comfy-1',

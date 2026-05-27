@@ -14,7 +14,7 @@ interface StudioGenerationDockProps {
   toolbarProps: ToolbarProps;
 }
 
-export const StudioGenerationDock: React.FC<StudioGenerationDockProps> = ({
+const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
   isModalOpen,
   currentView,
   activeRecipe,
@@ -34,3 +34,5 @@ export const StudioGenerationDock: React.FC<StudioGenerationDockProps> = ({
     </BottomToolbar>
   );
 };
+
+export const StudioGenerationDock = React.memo(StudioGenerationDockFn);
