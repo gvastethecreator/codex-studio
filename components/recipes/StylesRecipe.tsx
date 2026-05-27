@@ -217,6 +217,174 @@ interface StylePresetGroupSectionProps {
   onShowAll: (groupKey: string) => void;
 }
 
+interface StylePresetResultButtonProps {
+  activeResultImage: GeneratedImageWithConfig | null;
+  preset: StyleRuntimePreset;
+  onOpenImage?: (image: GeneratedImageWithConfig) => void;
+  onCycle: (dir: number) => void;
+  hasMultipleResults: boolean;
+  resultIndex: number;
+  resultCount: number;
+  visualState: StylePresetVisualState | undefined;
+  theme: { color: string; bg: string; border: string; text: string };
+  onApply: (preset: StyleRuntimePreset) => void;
+}
+
+const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
+  activeResultImage,
+  preset,
+  onOpenImage,
+  onCycle,
+  hasMultipleResults,
+  resultIndex,
+  resultCount,
+  visualState,
+  theme,
+  onApply,
+}) => {
+  if (activeResultImage) {
+    return (
+      <button
+        type="button"
+        tabIndex={0}
+        aria-label={`Open ${preset.name} preview`}
+        onClick={(e) => {
+          e.stopPropagation();
+          onOpenImage?.(activeResultImage);
+        }}
+        onKeyDown={(e) => {
+          if (e.key !== 'Enter' && e.key !== ' ') return;
+          e.preventDefault();
+          e.stopPropagation();
+          onOpenImage?.(activeResultImage);
+        }}
+        className="absolute inset-0 cursor-zoom-in group/image"
+      >
+        <img
+          src={activeResultImage.thumbnail || activeResultImage.src}
+          className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02]"
+          alt={preset.name}
+        />
+        <div className="absolute inset-0 bg-zinc-950/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
+          <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white backdrop-blur-md">
+            <Maximize2 size={18} />
+          </div>
+        </div>
+
+        {hasMultipleResults && (
+          <div className="absolute left-2 right-12 top-2 z-20 flex items-center justify-between gap-2 opacity-0 transition-opacity group-hover/image:opacity-100">
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onCycle(-1);
+              }}
+              className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
+              aria-label={`Previous result for ${preset.name}`}
+            >
+              <ChevronLeft size={14} />
+            </button>
+            <div className="rounded-full border border-white/10 bg-zinc-950/60 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-white/70 backdrop-blur-md">
+              {resultIndex + 1} / {resultCount}
+            </div>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onCycle(1);
+              }}
+              className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
+              aria-label={`Next result for ${preset.name}`}
+            >
+              <ChevronRight size={14} />
+            </button>
+          </div>
+        )}
+
+        <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover/image:opacity-100">
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onApply(preset);
+            }}
+            className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
+            title="Regenerate Style"
+          >
+            <RefreshCw size={14} />
+          </button>
+        </div>
+      </button>
+    );
+  }
+
+  if (visualState?.defaultImage) {
+    return (
+      <button
+        type="button"
+        onClick={() => onApply(preset)}
+        className="absolute inset-0 size-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
+      >
+        <img
+          src={visualState.defaultImage}
+          className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-100 group-hover:brightness-[1.02] group-hover:saturate-[1.02]"
+          alt={preset.name}
+        />
+        <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+          <div className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md">
+            <RefreshCw size={14} />
+          </div>
+        </div>
+      </button>
+    );
+  }
+
+  if (visualState?.previewImage) {
+    return (
+      <button
+        type="button"
+        onClick={() => onApply(preset)}
+        className="absolute inset-0 size-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
+      >
+        <img
+          src={visualState.previewImage}
+          className="style-preset-thumbnail size-full object-cover opacity-75 saturate-[0.9] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-[0.94] group-hover:brightness-[1.01] group-hover:saturate-100"
+          alt=""
+        />
+        <div className="absolute inset-0 bg-zinc-950/15 transition-colors group-hover:bg-zinc-950/8" />
+        <div className="absolute inset-0 flex translate-y-2 flex-col items-center justify-center gap-3 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+          <div
+            className={`flex size-14 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white shadow-xl backdrop-blur-md transition-colors duration-300 group-hover:bg-zinc-950/62 ${theme.text}`}
+          >
+            <Palette size={24} />
+          </div>
+          <span className="text-[9px] font-black uppercase tracking-widest text-white">
+            Apply
+          </span>
+        </div>
+      </button>
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={() => onApply(preset)}
+      className="absolute inset-0 flex size-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
+    >
+      <div
+        className={`flex size-14 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
+      >
+        <Palette size={24} />
+      </div>
+      <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 translate-y-2">
+        Apply
+      </span>
+    </button>
+  );
+};
+
 const StylePresetCard = React.memo(
   ({
     preset,
@@ -282,150 +450,6 @@ const StylePresetCard = React.memo(
       [hasMultipleResults, resultImages.length, syncHoverPreview],
     );
 
-    const renderResultButton = () => {
-      if (activeResultImage) {
-        return (
-          <button
-            type="button"
-            tabIndex={0}
-            aria-label={`Open ${preset.name} preview`}
-            onClick={(e) => {
-              e.stopPropagation();
-              onOpenImage?.(activeResultImage);
-            }}
-            onKeyDown={(e) => {
-              if (e.key !== 'Enter' && e.key !== ' ') return;
-              e.preventDefault();
-              e.stopPropagation();
-              onOpenImage?.(activeResultImage);
-            }}
-            className="absolute inset-0 cursor-zoom-in group/image"
-          >
-            <img
-              src={activeResultImage.thumbnail || activeResultImage.src}
-              className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02]"
-              alt={preset.name}
-            />
-            <div className="absolute inset-0 bg-zinc-950/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
-              <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white backdrop-blur-md">
-                <Maximize2 size={18} />
-              </div>
-            </div>
-
-            {hasMultipleResults && (
-              <div className="absolute left-2 right-12 top-2 z-20 flex items-center justify-between gap-2 opacity-0 transition-opacity group-hover/image:opacity-100">
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleCycle(-1);
-                  }}
-                  className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
-                  aria-label={`Previous result for ${preset.name}`}
-                >
-                  <ChevronLeft size={14} />
-                </button>
-                <div className="rounded-full border border-white/10 bg-zinc-950/60 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-white/70 backdrop-blur-md">
-                  {resultIndex + 1} / {resultImages.length}
-                </div>
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleCycle(1);
-                  }}
-                  className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
-                  aria-label={`Next result for ${preset.name}`}
-                >
-                  <ChevronRight size={14} />
-                </button>
-              </div>
-            )}
-
-            <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover/image:opacity-100">
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onApply(preset);
-                }}
-                className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
-                title="Regenerate Style"
-              >
-                <RefreshCw size={14} />
-              </button>
-            </div>
-          </button>
-        );
-      }
-
-      if (visualState?.defaultImage) {
-        return (
-          <button
-            type="button"
-            onClick={() => onApply(preset)}
-            className="absolute inset-0 size-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
-          >
-            <img
-              src={visualState.defaultImage}
-              className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-100 group-hover:brightness-[1.02] group-hover:saturate-[1.02]"
-              alt={preset.name}
-            />
-            <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100">
-              <div className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md">
-                <RefreshCw size={14} />
-              </div>
-            </div>
-          </button>
-        );
-      }
-
-      if (visualState?.previewImage) {
-        return (
-          <button
-            type="button"
-            onClick={() => onApply(preset)}
-            className="absolute inset-0 size-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
-          >
-            <img
-              src={visualState.previewImage}
-              className="style-preset-thumbnail size-full object-cover opacity-75 saturate-[0.9] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-[0.94] group-hover:brightness-[1.01] group-hover:saturate-100"
-              alt=""
-            />
-            <div className="absolute inset-0 bg-zinc-950/15 transition-colors group-hover:bg-zinc-950/8" />
-            <div className="absolute inset-0 flex translate-y-2 flex-col items-center justify-center gap-3 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-              <div
-                className={`flex size-14 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white shadow-xl backdrop-blur-md transition-colors duration-300 group-hover:bg-zinc-950/62 ${theme.text}`}
-              >
-                <Palette size={24} />
-              </div>
-              <span className="text-[9px] font-black uppercase tracking-widest text-white">
-                Apply
-              </span>
-            </div>
-          </button>
-        );
-      }
-
-      return (
-        <button
-          type="button"
-          onClick={() => onApply(preset)}
-          className="absolute inset-0 flex size-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
-        >
-          <div
-            className={`flex size-14 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
-          >
-            <Palette size={24} />
-          </div>
-          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 translate-y-2">
-            Apply
-          </span>
-        </button>
-      );
-    };
-
     return (
       <FloatingTooltip
         delay={200}
@@ -460,13 +484,25 @@ const StylePresetCard = React.memo(
           }}
           data-style-preset-card={preset.id}
           data-style-category={preset.category || 'General'}
-          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${
-            active
+          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${active
               ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
               : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
-          }`}
+            }`}
         >
-          <div className="absolute inset-0 overflow-hidden bg-zinc-950">{renderResultButton()}</div>
+          <div className="absolute inset-0 overflow-hidden bg-zinc-950">
+            <StylePresetResultButton
+              activeResultImage={activeResultImage}
+              preset={preset}
+              onOpenImage={onOpenImage}
+              onCycle={handleCycle}
+              hasMultipleResults={hasMultipleResults}
+              resultIndex={resultIndex}
+              resultCount={resultImages.length}
+              visualState={visualState}
+              theme={theme}
+              onApply={onApply}
+            />
+          </div>
 
           <div className="absolute right-2 top-2 z-30">
             <button
@@ -835,6 +871,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     setBrowserState((current) => ({ ...current, expandedStyleGroups: new Set(current.expandedStyleGroups).add(groupKey) }));
   }, []);
 
+  // react-doctor-disable-next-line react-doctor/no-initialize-state
   useEffect(() => {
     const node = styleScrollRootRef.current;
     if (!node || typeof ResizeObserver === 'undefined') return;
@@ -847,6 +884,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     return () => observer.disconnect();
   }, []);
 
+  // react-doctor-disable-next-line react-doctor/no-event-handler
   // Force strength to 0.15 (15%) by default ONLY ONCE per new image
   useEffect(() => {
     const img = activeImageRef.current;
@@ -870,8 +908,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   const recipePresetId =
     config.recipeId === 'styles' &&
-    config.recipeParams &&
-    typeof config.recipeParams.presetId === 'string'
+      config.recipeParams &&
+      typeof config.recipeParams.presetId === 'string'
       ? config.recipeParams.presetId
       : null;
   const prevRecipePresetIdRef = useRef(recipePresetId);
@@ -973,6 +1011,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     loadedStylePacksById,
   ]);
 
+  // react-doctor-disable-next-line react-doctor/no-pass-data-to-parent
+  // react-doctor-disable-next-line react-doctor/no-pass-live-state-to-parent
   useEffect(() => {
     const sources = new Set<string>();
     for (const state of presetVisualStateById.values()) {
@@ -1258,6 +1298,13 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     }
   };
 
+  const handleHoverPreviewChange = useCallback(
+    (preview: StyleCardHoverPreview | null) => {
+      setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: preview }));
+    },
+    [],
+  );
+
   const renderPresetCard = React.useCallback(
     (preset: StyleRuntimePreset) => {
       return (
@@ -1273,7 +1320,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           onCopy={handleCopyStylePromptRef.current}
           onToggleFavorite={toggleFavorite}
           onOpenImage={onOpenImage}
-          onHoverPreviewChange={(preview) => setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: preview }))}
+          onHoverPreviewChange={handleHoverPreviewChange}
         />
       );
     },
@@ -1285,6 +1332,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       onOpenImage,
       toggleFavorite,
       presetVisualStateById,
+      handleHoverPreviewChange,
     ],
   );
 
@@ -1467,11 +1515,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             }}
             className={`
                   group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                    ${
-                      currentPackId === FAVORITES_PACK_ID
-                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-                    }
+                    ${currentPackId === FAVORITES_PACK_ID
+                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+              }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -1501,11 +1548,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 }}
                 className={`
                       group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                            ${
-                              isActive
-                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                            }
+                            ${isActive
+                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                  }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>

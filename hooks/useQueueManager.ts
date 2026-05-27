@@ -176,7 +176,7 @@ export const useQueueManager = ({
     const jobsToStart = selectJobsToStart(pendingJobs, activeJobsCount, isResting);
     if (jobsToStart.length === 0) return;
 
-    jobsToStart.forEach(async (nextJob) => {
+    void Promise.all(jobsToStart.map(async (nextJob) => {
       if (processingJobsRef.current.has(nextJob.id)) return;
       processingJobsRef.current.add(nextJob.id);
 
@@ -244,7 +244,7 @@ export const useQueueManager = ({
         abortControllersRef.current.delete(nextJob.id);
         setQueueTick((t) => t + 1);
       }
-    });
+    }));
 
     const restTimer = restTimerRef.current;
     return () => {

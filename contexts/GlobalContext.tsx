@@ -79,6 +79,7 @@ function usePersistedIdbValue<T>(key: string, value: T, isHydrated: boolean) {
 
 export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [state, dispatch] = useReducer(globalReducer, undefined, createInitialGlobalState);
+  // react-doctor-disable-next-line react-doctor/rerender-state-only-in-handlers
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {

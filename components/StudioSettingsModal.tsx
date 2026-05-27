@@ -1,4 +1,4 @@
-import {
+﻿import {
   Database,
   FileImage,
   FolderOpen,
@@ -76,12 +76,12 @@ const OUTPUT_SUBFOLDER_PRESETS: {
   label: string;
   value: StudioOutputSubfolderToken[];
 }[] = [
-  { label: 'Date / Provider / Recipe', value: ['date', 'provider', 'recipe'] },
-  { label: 'Date / Model / Recipe', value: ['date', 'model', 'recipe'] },
-  { label: 'Provider / Recipe', value: ['provider', 'recipe'] },
-  { label: 'Recipe / Date', value: ['recipe', 'date'] },
-  { label: 'No Subfolders', value: [] },
-];
+    { label: 'Date / Provider / Recipe', value: ['date', 'provider', 'recipe'] },
+    { label: 'Date / Model / Recipe', value: ['date', 'model', 'recipe'] },
+    { label: 'Provider / Recipe', value: ['provider', 'recipe'] },
+    { label: 'Recipe / Date', value: ['recipe', 'date'] },
+    { label: 'No Subfolders', value: [] },
+  ];
 
 function encodeSubfolderTokens(value: StudioOutputSubfolderToken[]) {
   return value.join('/');
@@ -99,43 +99,18 @@ function providerStatusClass(status: string) {
   return 'border-white/8 bg-white/4 text-zinc-400';
 }
 
-export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
-  isOpen,
-  onClose,
-  settings,
-  libraryDir,
-  isLoading,
-  isSaving,
-  providerCapabilities,
-  providerRuntimePreflight,
-  outputSources,
-  outputSourceFiles,
-  isLoadingOutputSources,
-  loadingOutputSourceFiles,
-  isRegisteringOutputSource,
-  importingOutputSources,
-  error,
-  isBackgroundEnabled,
-  onToggleBackground,
-  onRefresh,
-  onUpdate,
-  onRegisterOutputSource,
-  onLoadOutputSourceFiles,
-  onImportOutputSourceFiles,
-  onResetStudio,
-  isResettingStudio,
-}) => {
-  interface FormState {
-    defaultProviderId: GenerationProviderId;
-    defaultOutputMode: StudioOutputMode;
-    preferredOutputPath: string;
-    outputSubfolderPreset: string;
-    outputFileNameTemplate: string;
-    autoDetectOutputSources: boolean;
-    commandCenterCompactMode: boolean;
-  }
+interface FormState {
+  defaultProviderId: GenerationProviderId;
+  defaultOutputMode: StudioOutputMode;
+  preferredOutputPath: string;
+  outputSubfolderPreset: string;
+  outputFileNameTemplate: string;
+  autoDetectOutputSources: boolean;
+  commandCenterCompactMode: boolean;
+}
 
-  const getInitialFormState = (): FormState => ({
+function getInitialFormState(): FormState {
+  return {
     defaultProviderId: 'codex',
     defaultOutputMode: 'studio_library',
     preferredOutputPath: '',
@@ -143,9 +118,11 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     outputFileNameTemplate: '{timestamp}-{provider}-{jobId}',
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,
-  });
+  };
+}
 
-  const getFormStateFromSettings = (s: EditableStudioSettings): FormState => ({
+function getFormStateFromSettings(s: EditableStudioSettings): FormState {
+  return {
     defaultProviderId: s.defaultProviderId,
     defaultOutputMode: s.defaultOutputMode,
     preferredOutputPath: s.preferredOutputPath ?? '',
@@ -153,20 +130,34 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     outputFileNameTemplate: s.outputOrganization.fileNameTemplate,
     autoDetectOutputSources: s.autoDetectOutputSources,
     commandCenterCompactMode: s.commandCenterCompactMode,
-  });
+  };
+}
 
-  const [formState, setFormState] = useState<FormState>(getInitialFormState);
-  const [selectedOutputFiles, setSelectedOutputFiles] = useState<Record<string, string[]>>({});
+interface SettingsFormPanelProps {
+  formState: FormState;
+  onFormChange: React.Dispatch<React.SetStateAction<FormState>>;
+  libraryDir: string | null;
+  providerOptions: GenerationProviderId[];
+  providerCapabilities: GenerationProviderCapabilitiesResponse | null;
+  providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
+  isBackgroundEnabled: boolean;
+  onToggleBackground: () => void;
+  onResetStudio: () => void | Promise<void>;
+  isResettingStudio: boolean;
+}
 
-  const prevSettingsRef = useRef(settings);
-  if (isOpen && settings && settings !== prevSettingsRef.current) {
-    prevSettingsRef.current = settings;
-    setFormState(getFormStateFromSettings(settings));
-  }
-  if (!isOpen && prevSettingsRef.current !== null) {
-    prevSettingsRef.current = null;
-  }
-
+function SettingsFormPanel({
+  formState,
+  onFormChange: setFormState,
+  libraryDir,
+  providerOptions,
+  providerCapabilities,
+  providerRuntimePreflight,
+  isBackgroundEnabled,
+  onToggleBackground,
+  onResetStudio,
+  isResettingStudio,
+}: SettingsFormPanelProps) {
   const {
     defaultProviderId,
     defaultOutputMode,
@@ -177,40 +168,296 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     commandCenterCompactMode,
   } = formState;
 
-  const providerOptions = useMemo(
-    () =>
-      [...BUILT_IN_GENERATION_PROVIDERS, defaultProviderId].filter(
-        (providerId, index, all) => all.indexOf(providerId) === index,
-      ),
-    [defaultProviderId],
-  );
-  const preflightByProvider = useMemo(
-    () =>
-      new Map(
-        providerRuntimePreflight?.providers.map((preflight) => [preflight.providerId, preflight]) ??
-          [],
-      ),
-    [providerRuntimePreflight],
+  const preflightByProvider = new Map(
+    providerRuntimePreflight?.providers.map((p) => [p.providerId, p]) ?? [],
   );
 
-  if (!isOpen) return null;
+  return (
+<SettingsFormPanel
+            formState={formState}
+            onFormChange={setFormState}
+            libraryDir={libraryDir}
+            providerOptions={providerOptions}
+            providerCapabilities={providerCapabilities}
+            providerRuntimePreflight={providerRuntimePreflight}
+            isBackgroundEnabled={isBackgroundEnabled}
+            onToggleBackground={onToggleBackground}
+            onResetStudio={onResetStudio}
+            isResettingStudio={isResettingStudio}
+          />
 
-  const handleSave = () => {
-    void onUpdate({
-      defaultProviderId,
-      defaultOutputMode,
-      preferredOutputPath: normalizeOutputPath(preferredOutputPath),
-      outputOrganization: {
-        subfolderTokens:
-          OUTPUT_SUBFOLDER_PRESETS.find(
-            (preset) => encodeSubfolderTokens(preset.value) === outputSubfolderPreset,
-          )?.value ?? [],
-        fileNameTemplate: outputFileNameTemplate,
-      },
-      autoDetectOutputSources,
-      commandCenterCompactMode,
-    });
-  };
+      <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+          Output Subfolders
+        </span>
+        <select
+          value={outputSubfolderPreset}
+          onChange={(event) =>
+            setFormState((prev) => ({ ...prev, outputSubfolderPreset: event.target.value }))
+          }
+          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+        >
+          {OUTPUT_SUBFOLDER_PRESETS.map((preset) => (
+            <option
+              key={encodeSubfolderTokens(preset.value)}
+              value={encodeSubfolderTokens(preset.value)}
+            >
+              {preset.label}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+          File Name Template
+        </span>
+        <input
+          value={outputFileNameTemplate}
+          onChange={(event) =>
+            setFormState((prev) => ({ ...prev, outputFileNameTemplate: event.target.value }))
+          }
+          placeholder="{timestamp}-{provider}-{jobId}"
+          aria-label="File name template"
+          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+        />
+      </label>
+
+      <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+          Preferred Output Path
+        </span>
+        <input
+          value={preferredOutputPath}
+          onChange={(event) =>
+            setFormState((prev) => ({ ...prev, preferredOutputPath: event.target.value }))
+          }
+          placeholder={libraryDir ?? 'D:/outputs'}
+          aria-label="Preferred output path"
+          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+        />
+      </label>
+
+      <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+          Default Provider
+        </span>
+        <select
+          value={defaultProviderId}
+          onChange={(event) =>
+            setFormState((prev) => ({
+              ...prev,
+              defaultProviderId: event.target.value as GenerationProviderId,
+            }))
+          }
+          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+        >
+          {providerOptions.map((providerId) => (
+            <option key={providerId} value={providerId}>
+              {providerId}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      {
+    providerCapabilities ? (
+      <div className="md:col-span-2 rounded-lg border border-white/8 bg-white/4 p-4">
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+            Provider Capability Status
+          </span>
+          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-700">
+            Non-secret
+          </span>
+        </div>
+        <div className="grid gap-2 md:grid-cols-2">
+          {providerCapabilities.providers.map((provider) => {
+            const preflight = preflightByProvider.get(provider.providerId);
+            return (
+              <div
+                key={provider.providerId}
+                className={`rounded-lg border px-3 py-2 ${providerStatusClass(provider.status)}`}
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <div className="min-w-0">
+                    <div className="truncate text-[10px] font-black uppercase tracking-widest">
+                      {provider.label}
+                    </div>
+                    <div className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest opacity-70">
+                      {provider.runtimeKind}
+                    </div>
+                  </div>
+                  <div className="flex shrink-0 items-center gap-1 text-[9px] font-black uppercase tracking-widest">
+                    {provider.isDefault ? <span>Default</span> : null}
+                    <span>{provider.status}</span>
+                  </div>
+                </div>
+                <p className="mt-2 text-[10px] leading-relaxed opacity-80">{provider.detail}</p>
+                {preflight ? (
+                  <div className="mt-2 grid gap-1 border-t border-white/10 pt-2 text-[9px] font-bold uppercase tracking-widest opacity-80">
+                    <div className="flex justify-between gap-2">
+                      <span>Secret</span>
+                      <span className="truncate text-right">
+                        {preflight.secretState}
+                        {preflight.secretSource ? ` / ${preflight.secretSource}` : ''}
+                      </span>
+                    </div>
+                    <div className="flex justify-between gap-2">
+                      <span>Runtime</span>
+                      <span className="truncate text-right">
+                        {preflight.localRuntimeState}
+                        {preflight.localRuntimeSource ? ` / ${preflight.localRuntimeSource}` : ''}
+                      </span>
+                    </div>
+                    {preflight.diagnostics.length > 0 ? (
+                      <div className="pt-1 text-[9px] leading-relaxed normal-case tracking-normal opacity-70">
+                        {preflight.diagnostics.join(' ')}
+                      </div>
+                    ) : null}
+                  </div>
+                ) : null}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    ) : null
+  }
+
+      <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+          Output Mode
+        </span>
+        <select
+          value={defaultOutputMode}
+          onChange={(event) =>
+            setFormState((prev) => ({
+              ...prev,
+              defaultOutputMode: event.target.value as StudioOutputMode,
+            }))
+          }
+          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+        >
+          <option value="studio_library">Studio Library</option>
+          <option value="external_source">External Source</option>
+        </select>
+      </label>
+
+      <button
+        type="button"
+        onClick={() =>
+          setFormState((prev) => ({ ...prev, autoDetectOutputSources: !prev.autoDetectOutputSources }))
+        }
+        className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
+      >
+        <span className="flex items-center gap-3">
+          <FolderOpen
+            size={16}
+            className={autoDetectOutputSources ? 'text-accent-300' : 'text-zinc-500'}
+          />
+          <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+            Auto Detect Outputs
+          </span>
+        </span>
+        <span
+          className={`size-2.5 rounded-full ${autoDetectOutputSources ? 'bg-accent-300' : 'bg-zinc-700'}`}
+        />
+      </button>
+
+      <button
+        type="button"
+        onClick={() =>
+          setFormState((prev) => ({
+            ...prev,
+            commandCenterCompactMode: !prev.commandCenterCompactMode,
+          }))
+        }
+        className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
+      >
+        <span className="flex items-center gap-3">
+          <Settings
+            size={16}
+            className={commandCenterCompactMode ? 'text-accent-300' : 'text-zinc-500'}
+          />
+          <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+            Compact Command Center
+          </span>
+        </span>
+        <span
+          className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-zinc-700'}`}
+        />
+      </button>
+
+      <button
+        type="button"
+        onClick={onToggleBackground}
+        className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${isBackgroundEnabled ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
+      >
+        <span className="flex items-center gap-3">
+          <Sparkles
+            size={16}
+            className={isBackgroundEnabled ? 'text-accent-300' : 'text-zinc-500'}
+          />
+          <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+            Animated Background
+          </span>
+        </span>
+        <span
+          className={`size-2.5 rounded-full ${isBackgroundEnabled ? 'bg-accent-300' : 'bg-zinc-700'}`}
+        />
+      </button>
+
+      <button
+        type="button"
+        onClick={() => void onResetStudio()}
+        disabled={isResettingStudio}
+        className="flex items-center justify-between rounded-lg border border-rose-500/20 bg-rose-500/10 p-4 text-left transition-colors hover:bg-rose-500/15 disabled:opacity-60"
+      >
+        <span className="flex items-center gap-3">
+          <Database size={16} className="text-rose-300" />
+          <span className="text-[10px] font-black uppercase tracking-widest text-rose-100">
+            Rebuild Library
+          </span>
+        </span>
+        {isResettingStudio ? (
+          <LoaderCircle size={16} className="animate-spin text-rose-300" />
+        ) : (
+          <RotateCcw size={16} className="text-rose-300" />
+        )}
+      </button>
+    </div >
+  );
+}
+
+interface SettingsOutputSourcesPanelProps {
+  outputSources: ExternalOutputSourcesResponse | null;
+  outputSourceFiles: Record<string, ExternalOutputSourceFile[]>;
+  loadingOutputSourceFiles: Record<string, boolean>;
+  importingOutputSources: Record<string, boolean>;
+  isLoadingOutputSources: boolean;
+  isRegisteringOutputSource: boolean;
+  onLoadOutputSourceFiles: (sourceId: string) => void | Promise<void>;
+  onImportOutputSourceFiles: (
+    sourceId: string,
+    files: string[],
+    workspaceId?: string | null,
+  ) => void | Promise<void>;
+  onRegisterOutputSource: (input: RegisterExternalOutputSourceInput) => void | Promise<void>;
+}
+
+function SettingsOutputSourcesPanel({
+  outputSources,
+  outputSourceFiles,
+  loadingOutputSourceFiles,
+  importingOutputSources,
+  isLoadingOutputSources,
+  isRegisteringOutputSource,
+  onLoadOutputSourceFiles,
+  onImportOutputSourceFiles,
+  onRegisterOutputSource,
+}: SettingsOutputSourcesPanelProps) {
+  const [selectedOutputFiles, setSelectedOutputFiles] = useState<Record<string, string[]>>({});
 
   const registeredOutputPaths = new Set(
     outputSources?.registry.sources.map((source) => source.path) ?? [],
@@ -244,6 +491,217 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     if (selected.length === 0) return;
     await onImportOutputSourceFiles(sourceId, selected);
     setSelectedOutputFiles((current) => ({ ...current, [sourceId]: [] }));
+  };
+
+  return (
+    <div className="mt-4 rounded-lg border border-white/8 bg-white/4 p-4">
+      <div className="mb-3 flex items-center justify-between gap-3">
+        <div>
+          <h3 className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+            External Output Sources
+          </h3>
+          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+            Detect, Register, Import Copy
+          </p>
+        </div>
+        {isLoadingOutputSources ? (
+          <LoaderCircle size={16} className="animate-spin text-zinc-500" />
+        ) : (
+          <FolderPlus size={16} className="text-zinc-500" />
+        )}
+      </div>
+
+      <div className="space-y-3">
+        {outputSources?.registry.sources.map((source) => {
+          const files = outputSourceFiles[source.id] ?? [];
+          const selected = selectedOutputFiles[source.id] ?? [];
+          const isScanning = Boolean(loadingOutputSourceFiles[source.id]);
+          const isImporting = Boolean(importingOutputSources[source.id]);
+
+          return (
+            <div
+              key={source.id}
+              className="rounded-lg border border-emerald-500/15 bg-emerald-500/8 p-3"
+            >
+              <div className="flex items-center justify-between gap-3">
+                <div className="min-w-0">
+                  <div className="text-[10px] font-black uppercase tracking-widest text-emerald-200">
+                    {source.label}
+                  </div>
+                  <div className="truncate font-mono text-[10px] text-emerald-100/70">
+                    {source.path}
+                  </div>
+                </div>
+                <div className="flex shrink-0 items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => void onLoadOutputSourceFiles(source.id)}
+                    disabled={isScanning}
+                    className="flex h-8 items-center gap-2 rounded-lg border border-emerald-400/20 px-3 text-[9px] font-black uppercase tracking-widest text-emerald-200 transition-colors hover:bg-emerald-400/10 disabled:opacity-40"
+                  >
+                    {isScanning ? (
+                      <LoaderCircle size={13} className="animate-spin" />
+                    ) : (
+                      <FileImage size={13} />
+                    )}
+                    Scan
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => void handleImportSelected(source.id)}
+                    disabled={isImporting || selected.length === 0}
+                    className="flex h-8 items-center gap-2 rounded-lg bg-emerald-600 px-3 text-[9px] font-black uppercase tracking-widest text-white transition-colors hover:bg-emerald-500 disabled:opacity-40"
+                  >
+                    {isImporting ? (
+                      <LoaderCircle size={13} className="animate-spin" />
+                    ) : (
+                      <Upload size={13} />
+                    )}
+                    Import {selected.length || ''}
+                  </button>
+                </div>
+              </div>
+
+              {files.length > 0 ? (
+                <div className="mt-3 max-h-48 space-y-1 overflow-y-auto pr-1">
+                  {files.slice(0, 25).map((file) => (
+                    <label
+                      key={file.relativePath}
+                      className="flex cursor-pointer items-center justify-between gap-3 rounded-md border border-white/8 bg-black/20 px-3 py-2 transition-colors hover:bg-white/8"
+                    >
+                      <span className="flex min-w-0 items-center gap-2">
+                        <input
+                          type="checkbox"
+                          checked={selected.includes(file.relativePath)}
+                          onChange={() => toggleOutputFile(source.id, file.relativePath)}
+                          aria-label={`Select ${file.relativePath}`}
+                          className="size-3.5 accent-emerald-400"
+                        />
+                        <span className="truncate font-mono text-[10px] text-zinc-300">
+                          {file.relativePath}
+                        </span>
+                      </span>
+                      <span className="shrink-0 text-[9px] font-bold uppercase tracking-widest text-zinc-600">
+                        {formatBytes(file.sizeBytes)}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          );
+        })}
+
+        {outputSourceCandidates.map((candidate) => (
+          <div
+            key={candidate.id}
+            className="flex items-center justify-between gap-3 rounded-lg border border-white/8 bg-black/20 px-3 py-2"
+          >
+            <div className="min-w-0">
+              <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
+                <span>{candidate.label}</span>
+                <span className="text-zinc-600">{candidate.status}</span>
+              </div>
+              <div className="truncate font-mono text-[10px] text-zinc-500">{candidate.path}</div>
+            </div>
+            <button
+              type="button"
+              onClick={() => handleRegisterOutputSource(candidate)}
+              disabled={
+                isRegisteringOutputSource ||
+                candidate.status !== 'detected' ||
+                candidate.isInsideStudioLibrary
+              }
+              className="h-8 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+            >
+              Register
+            </button>
+          </div>
+        ))}
+
+        {outputSources &&
+          outputSources.registry.sources.length === 0 &&
+          outputSourceCandidates.length === 0 ? (
+          <div className="rounded-lg border border-white/8 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+            No external output sources detected.
+          </div>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
+export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
+  isOpen,
+  onClose,
+  settings,
+  libraryDir,
+  isLoading,
+  isSaving,
+  providerCapabilities,
+  providerRuntimePreflight,
+  outputSources,
+  outputSourceFiles,
+  isLoadingOutputSources,
+  loadingOutputSourceFiles,
+  isRegisteringOutputSource,
+  importingOutputSources,
+  error,
+  isBackgroundEnabled,
+  onToggleBackground,
+  onRefresh,
+  onUpdate,
+  onRegisterOutputSource,
+  onLoadOutputSourceFiles,
+  onImportOutputSourceFiles,
+  onResetStudio,
+  isResettingStudio,
+}) => {
+  const [formState, setFormState] = useState<FormState>(getInitialFormState);
+
+  const prevSettingsRef = useRef(settings);
+  if (isOpen && settings && settings !== prevSettingsRef.current) {
+    prevSettingsRef.current = settings;
+    setFormState(getFormStateFromSettings(settings));
+  }
+  if (!isOpen && prevSettingsRef.current !== null) {
+    prevSettingsRef.current = null;
+  }
+
+  const {
+    defaultProviderId,
+    defaultOutputMode,
+    preferredOutputPath,
+    outputSubfolderPreset,
+    outputFileNameTemplate,
+    autoDetectOutputSources,
+    commandCenterCompactMode,
+  } = formState;
+
+  const providerOptions = useMemo(
+    () =>
+      [...BUILT_IN_GENERATION_PROVIDERS, defaultProviderId].filter(
+        (providerId, index, all) => all.indexOf(providerId) === index,
+      ),
+    [defaultProviderId],
+  );
+  if (!isOpen) return null;
+
+  const handleSave = () => {
+    void onUpdate({
+      defaultProviderId,
+      defaultOutputMode,
+      preferredOutputPath: normalizeOutputPath(preferredOutputPath),
+      outputOrganization: {
+        subfolderTokens:
+          OUTPUT_SUBFOLDER_PRESETS.find(
+            (preset) => encodeSubfolderTokens(preset.value) === outputSubfolderPreset,
+          )?.value ?? [],
+        fileNameTemplate: outputFileNameTemplate,
+      },
+      autoDetectOutputSources,
+      commandCenterCompactMode,
+    });
   };
 
   return (
@@ -293,411 +751,31 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             </div>
           )}
 
-          <div className="grid gap-4 md:grid-cols-2">
-            <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-              <span className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                <FolderOpen size={14} />
-                Current Library
-              </span>
-              <span className="truncate font-mono text-xs text-zinc-300">
-                {libraryDir ?? 'Unavailable'}
-              </span>
-            </label>
-
-            <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                Output Subfolders
-              </span>
-              <select
-                value={outputSubfolderPreset}
-                onChange={(event) =>
-                  setFormState((prev) => ({
-                    ...prev,
-                    outputSubfolderPreset: event.target.value,
-                  }))
-                }
-                className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
-              >
-                {OUTPUT_SUBFOLDER_PRESETS.map((preset) => (
-                  <option
-                    key={encodeSubfolderTokens(preset.value)}
-                    value={encodeSubfolderTokens(preset.value)}
-                  >
-                    {preset.label}
-                  </option>
-                ))}
-              </select>
-            </label>
-
-            <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                File Name Template
-              </span>
-              <input
-                value={outputFileNameTemplate}
-                onChange={(event) =>
-                  setFormState((prev) => ({
-                    ...prev,
-                    outputFileNameTemplate: event.target.value,
-                  }))
-                }
-                placeholder="{timestamp}-{provider}-{jobId}"
-                aria-label="File name template"
-                className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
-              />
-            </label>
-
-            <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                Preferred Output Path
-              </span>
-              <input
-                value={preferredOutputPath}
-                onChange={(event) =>
-                  setFormState((prev) => ({
-                    ...prev,
-                    preferredOutputPath: event.target.value,
-                  }))
-                }
-                placeholder={libraryDir ?? 'D:/outputs'}
-                aria-label="Preferred output path"
-                className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
-              />
-            </label>
-
-            <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                Default Provider
-              </span>
-              <select
-                value={defaultProviderId}
-                onChange={(event) =>
-                  setFormState((prev) => ({
-                    ...prev,
-                    defaultProviderId: event.target.value as GenerationProviderId,
-                  }))
-                }
-                className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
-              >
-                {providerOptions.map((providerId) => (
-                  <option key={providerId} value={providerId}>
-                    {providerId}
-                  </option>
-                ))}
-              </select>
-            </label>
-
-            {providerCapabilities ? (
-              <div className="md:col-span-2 rounded-lg border border-white/8 bg-white/4 p-4">
-                <div className="mb-3 flex items-center justify-between gap-3">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                    Provider Capability Status
-                  </span>
-                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-700">
-                    Non-secret
-                  </span>
-                </div>
-                <div className="grid gap-2 md:grid-cols-2">
-                  {providerCapabilities.providers.map((provider) => {
-                    const preflight = preflightByProvider.get(provider.providerId);
-
-                    return (
-                      <div
-                        key={provider.providerId}
-                        className={`rounded-lg border px-3 py-2 ${providerStatusClass(provider.status)}`}
-                      >
-                        <div className="flex items-center justify-between gap-2">
-                          <div className="min-w-0">
-                            <div className="truncate text-[10px] font-black uppercase tracking-widest">
-                              {provider.label}
-                            </div>
-                            <div className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest opacity-70">
-                              {provider.runtimeKind}
-                            </div>
-                          </div>
-                          <div className="flex shrink-0 items-center gap-1 text-[9px] font-black uppercase tracking-widest">
-                            {provider.isDefault ? <span>Default</span> : null}
-                            <span>{provider.status}</span>
-                          </div>
-                        </div>
-                        <p className="mt-2 text-[10px] leading-relaxed opacity-80">
-                          {provider.detail}
-                        </p>
-                        {preflight ? (
-                          <div className="mt-2 grid gap-1 border-t border-white/10 pt-2 text-[9px] font-bold uppercase tracking-widest opacity-80">
-                            <div className="flex justify-between gap-2">
-                              <span>Secret</span>
-                              <span className="truncate text-right">
-                                {preflight.secretState}
-                                {preflight.secretSource ? ` / ${preflight.secretSource}` : ''}
-                              </span>
-                            </div>
-                            <div className="flex justify-between gap-2">
-                              <span>Runtime</span>
-                              <span className="truncate text-right">
-                                {preflight.localRuntimeState}
-                                {preflight.localRuntimeSource
-                                  ? ` / ${preflight.localRuntimeSource}`
-                                  : ''}
-                              </span>
-                            </div>
-                            {preflight.diagnostics.length > 0 ? (
-                              <div className="pt-1 text-[9px] leading-relaxed normal-case tracking-normal opacity-70">
-                                {preflight.diagnostics.join(' ')}
-                              </div>
-                            ) : null}
-                          </div>
-                        ) : null}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            ) : null}
-
-            <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                Output Mode
-              </span>
-              <select
-                value={defaultOutputMode}
-                onChange={(event) =>
-                  setFormState((prev) => ({
-                    ...prev,
-                    defaultOutputMode: event.target.value as StudioOutputMode,
-                  }))
-                }
-                className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
-              >
-                <option value="studio_library">Studio Library</option>
-                <option value="external_source">External Source</option>
-              </select>
-            </label>
-
-            <button
-              type="button"
-              onClick={() =>
-                setFormState((prev) => ({
-                  ...prev,
-                  autoDetectOutputSources: !prev.autoDetectOutputSources,
-                }))
-              }
-              className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
-            >
-              <span className="flex items-center gap-3">
-                <FolderOpen
-                  size={16}
-                  className={autoDetectOutputSources ? 'text-accent-300' : 'text-zinc-500'}
-                />
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
-                  Auto Detect Outputs
-                </span>
-              </span>
-              <span
-                className={`size-2.5 rounded-full ${autoDetectOutputSources ? 'bg-accent-300' : 'bg-zinc-700'}`}
-              />
-            </button>
-
-            <button
-              type="button"
-              onClick={() =>
-                setFormState((prev) => ({
-                  ...prev,
-                  commandCenterCompactMode: !prev.commandCenterCompactMode,
-                }))
-              }
-              className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
-            >
-              <span className="flex items-center gap-3">
-                <Settings
-                  size={16}
-                  className={commandCenterCompactMode ? 'text-accent-300' : 'text-zinc-500'}
-                />
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
-                  Compact Command Center
-                </span>
-              </span>
-              <span
-                className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-zinc-700'}`}
-              />
-            </button>
-
-            <button
-              type="button"
-              onClick={onToggleBackground}
-              className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${isBackgroundEnabled ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
-            >
-              <span className="flex items-center gap-3">
-                <Sparkles
-                  size={16}
-                  className={isBackgroundEnabled ? 'text-accent-300' : 'text-zinc-500'}
-                />
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
-                  Animated Background
-                </span>
-              </span>
-              <span
-                className={`size-2.5 rounded-full ${isBackgroundEnabled ? 'bg-accent-300' : 'bg-zinc-700'}`}
-              />
-            </button>
-
-            <button
-              type="button"
-              onClick={() => void onResetStudio()}
-              disabled={isResettingStudio}
-              className="flex items-center justify-between rounded-lg border border-rose-500/20 bg-rose-500/10 p-4 text-left transition-colors hover:bg-rose-500/15 disabled:opacity-60"
-            >
-              <span className="flex items-center gap-3">
-                <Database size={16} className="text-rose-300" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-rose-100">
-                  Rebuild Library
-                </span>
-              </span>
-              {isResettingStudio ? (
-                <LoaderCircle size={16} className="animate-spin text-rose-300" />
-              ) : (
-                <RotateCcw size={16} className="text-rose-300" />
-              )}
-            </button>
-          </div>
-
-          <div className="mt-4 rounded-lg border border-white/8 bg-white/4 p-4">
-            <div className="mb-3 flex items-center justify-between gap-3">
-              <div>
-                <h3 className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
-                  External Output Sources
-                </h3>
-                <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
-                  Detect, Register, Import Copy
-                </p>
-              </div>
-              {isLoadingOutputSources ? (
-                <LoaderCircle size={16} className="animate-spin text-zinc-500" />
-              ) : (
-                <FolderPlus size={16} className="text-zinc-500" />
-              )}
-            </div>
-
-            <div className="space-y-3">
-              {outputSources?.registry.sources.map((source) => {
-                const files = outputSourceFiles[source.id] ?? [];
-                const selected = selectedOutputFiles[source.id] ?? [];
-                const isScanning = Boolean(loadingOutputSourceFiles[source.id]);
-                const isImporting = Boolean(importingOutputSources[source.id]);
-
-                return (
-                  <div
-                    key={source.id}
-                    className="rounded-lg border border-emerald-500/15 bg-emerald-500/8 p-3"
-                  >
-                    <div className="flex items-center justify-between gap-3">
-                      <div className="min-w-0">
-                        <div className="text-[10px] font-black uppercase tracking-widest text-emerald-200">
-                          {source.label}
-                        </div>
-                        <div className="truncate font-mono text-[10px] text-emerald-100/70">
-                          {source.path}
-                        </div>
-                      </div>
-                      <div className="flex shrink-0 items-center gap-2">
-                        <button
-                          type="button"
-                          onClick={() => void onLoadOutputSourceFiles(source.id)}
-                          disabled={isScanning}
-                          className="flex h-8 items-center gap-2 rounded-lg border border-emerald-400/20 px-3 text-[9px] font-black uppercase tracking-widest text-emerald-200 transition-colors hover:bg-emerald-400/10 disabled:opacity-40"
-                        >
-                          {isScanning ? (
-                            <LoaderCircle size={13} className="animate-spin" />
-                          ) : (
-                            <FileImage size={13} />
-                          )}
-                          Scan
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => void handleImportSelected(source.id)}
-                          disabled={isImporting || selected.length === 0}
-                          className="flex h-8 items-center gap-2 rounded-lg bg-emerald-600 px-3 text-[9px] font-black uppercase tracking-widest text-white transition-colors hover:bg-emerald-500 disabled:opacity-40"
-                        >
-                          {isImporting ? (
-                            <LoaderCircle size={13} className="animate-spin" />
-                          ) : (
-                            <Upload size={13} />
-                          )}
-                          Import {selected.length || ''}
-                        </button>
-                      </div>
-                    </div>
-
-                    {files.length > 0 ? (
-                      <div className="mt-3 max-h-48 space-y-1 overflow-y-auto pr-1">
-                        {files.slice(0, 25).map((file) => (
-                          <label
-                            key={file.relativePath}
-                            className="flex cursor-pointer items-center justify-between gap-3 rounded-md border border-white/8 bg-black/20 px-3 py-2 transition-colors hover:bg-white/8"
-                          >
-                            <span className="flex min-w-0 items-center gap-2">
-                              <input
-                                type="checkbox"
-                                checked={selected.includes(file.relativePath)}
-                                onChange={() => toggleOutputFile(source.id, file.relativePath)}
-                                aria-label={`Select ${file.relativePath}`}
-                                className="size-3.5 accent-emerald-400"
-                              />
-                              <span className="truncate font-mono text-[10px] text-zinc-300">
-                                {file.relativePath}
-                              </span>
-                            </span>
-                            <span className="shrink-0 text-[9px] font-bold uppercase tracking-widest text-zinc-600">
-                              {formatBytes(file.sizeBytes)}
-                            </span>
-                          </label>
-                        ))}
-                      </div>
-                    ) : null}
-                  </div>
-                );
-              })}
-
-              {outputSourceCandidates.map((candidate) => (
-                <div
-                  key={candidate.id}
-                  className="flex items-center justify-between gap-3 rounded-lg border border-white/8 bg-black/20 px-3 py-2"
-                >
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
-                      <span>{candidate.label}</span>
-                      <span className="text-zinc-600">{candidate.status}</span>
-                    </div>
-                    <div className="truncate font-mono text-[10px] text-zinc-500">
-                      {candidate.path}
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => handleRegisterOutputSource(candidate)}
-                    disabled={
-                      isRegisteringOutputSource ||
-                      candidate.status !== 'detected' ||
-                      candidate.isInsideStudioLibrary
-                    }
-                    className="h-8 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
-                  >
-                    Register
-                  </button>
-                </div>
-              ))}
-
-              {outputSources &&
-              outputSources.registry.sources.length === 0 &&
-              outputSourceCandidates.length === 0 ? (
-                <div className="rounded-lg border border-white/8 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
-                  No external output sources detected.
-                </div>
-              ) : null}
-            </div>
-          </div>
+          <SettingsFormPanel
+            formState={formState}
+            onFormChange={setFormState}
+            libraryDir={libraryDir}
+            providerOptions={providerOptions}
+            providerCapabilities={providerCapabilities}
+            providerRuntimePreflight={providerRuntimePreflight}
+            isBackgroundEnabled={isBackgroundEnabled}
+            onToggleBackground={onToggleBackground}
+            onResetStudio={onResetStudio}
+            isResettingStudio={isResettingStudio}
+          />
+          <SettingsOutputSourcesPanel
+            outputSources={outputSources}
+            outputSourceFiles={outputSourceFiles}
+            loadingOutputSourceFiles={loadingOutputSourceFiles}
+            importingOutputSources={importingOutputSources}
+            isLoadingOutputSources={isLoadingOutputSources}
+            isRegisteringOutputSource={isRegisteringOutputSource}
+            onLoadOutputSourceFiles={onLoadOutputSourceFiles}
+            onImportOutputSourceFiles={onImportOutputSourceFiles}
+            onRegisterOutputSource={onRegisterOutputSource}
+          />
         </div>
+
 
         <div className="flex items-center justify-end gap-3 border-t border-white/8 px-5 py-4">
           <button

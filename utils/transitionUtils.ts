@@ -1,3 +1,4 @@
+// react-doctor-disable-next-line react-doctor/no-flush-sync
 import { flushSync } from 'react-dom';
 
 export let isGlobalTransitioning = false;

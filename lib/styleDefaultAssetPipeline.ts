@@ -219,7 +219,7 @@ export function mergeStyleDefaultManifestEntries(
     byPresetId.set(entry.presetId, entry);
   }
 
-  return [...byPresetId.values()].sort((a, b) => a.presetId.localeCompare(b.presetId));
+  return Array.from(byPresetId.values()).toSorted((a, b) => a.presetId.localeCompare(b.presetId));
 }
 
 export function createStyleDefaultEvidence(entry: StyleDefaultManifestEntry): StyleDefaultEvidence {

@@ -26,8 +26,8 @@ export function buildStudioQueueResultPreviews(
   entries: CatalogImage[],
   { limit = 6, toAssetUrl = (assetPath) => assetPath }: BuildStudioQueueResultPreviewsOptions = {},
 ): StudioQueueResultPreview[] {
-  return [...entries]
-    .sort(compareCatalogEntries)
+  return entries
+    .toSorted(compareCatalogEntries)
     .slice(0, limit)
     .map((entry) => ({
       id: entry.id,

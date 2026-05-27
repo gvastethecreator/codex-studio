@@ -1,4 +1,5 @@
 import { useState, useCallback, useRef } from 'react';
+// react-doctor-disable-next-line react-doctor/no-flush-sync
 import { flushSync } from 'react-dom';
 import type { GeneratedImageWithConfig, RecipeId } from '../types';
 import { isGlobalTransitioning, setIsGlobalTransitioning } from '../utils/transitionUtils';

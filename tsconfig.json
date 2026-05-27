@@ -1,22 +1,37 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "ES2023",
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
     "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2023",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "skipLibCheck": true,
-    "types": ["node", "bun"],
+    "types": [
+      "node",
+      "bun"
+    ],
     "moduleResolution": "bundler",
     "isolatedModules": true,
     "moduleDetection": "force",
     "allowJs": true,
     "jsx": "react-jsx",
     "paths": {
-      "@/*": ["./*"],
-      "motion/react": ["./lib/gsapMotion.tsx"],
-      "@shared": ["./packages/shared/src/index.ts"],
-      "@shared/*": ["./packages/shared/src/*"]
+      "@/*": [
+        "./*"
+      ],
+      "motion/react": [
+        "./lib/gsapMotion.tsx"
+      ],
+      "@shared": [
+        "./packages/shared/src/index.ts"
+      ],
+      "@shared/*": [
+        "./packages/shared/src/*"
+      ]
     },
     "allowImportingTsExtensions": true,
     "noEmit": true

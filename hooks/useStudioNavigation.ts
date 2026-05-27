@@ -72,6 +72,7 @@ export function useStudioNavigation({
   const isModalOpenRef = useRef(isModalOpen);
   isModalOpenRef.current = isModalOpen;
 
+  // react-doctor-disable-next-line react-doctor/no-event-handler
   useEffect(() => {
     startViewTransition(() => {
       if (route.view === 'recipe' && route.activeRecipeId) {

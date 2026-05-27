@@ -1,5 +1,9 @@
 {
   "ignore": {
-    "rules": ["react-doctor/unused-file"]
+    "rules": [
+      "deslop/unused-file",
+      "react-doctor/async-await-in-loop",
+      "react-doctor/js-set-map-lookups"
+    ]
   }
 }

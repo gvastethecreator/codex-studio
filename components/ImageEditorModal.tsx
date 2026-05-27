@@ -12,6 +12,104 @@ interface ImageEditorModalProps {
   isGenerating: boolean;
 }
 
+interface ImageEditorControlsPanelProps {
+  editPrompt: string;
+  onEditPromptChange: (v: string) => void;
+  textareaRef: React.RefObject<HTMLTextAreaElement>;
+  brushSize: number;
+  onBrushSizeChange: (v: number) => void;
+  historyIndex: number;
+  isGenerating: boolean;
+  onUndo: () => void;
+  onReset: () => void;
+  onGenerate: () => void;
+}
+
+function ImageEditorControlsPanel({
+  editPrompt,
+  onEditPromptChange,
+  textareaRef,
+  brushSize,
+  onBrushSizeChange,
+  historyIndex,
+  isGenerating,
+  onUndo,
+  onReset,
+  onGenerate,
+}: ImageEditorControlsPanelProps) {
+  return (
+    <div className="w-full md:w-96 bg-zinc-950 p-8 flex flex-col gap-10 shadow-[20px_0_60px_rgba(0,0,0,1)]">
+      <div className="space-y-4">
+        <label
+          htmlFor="image-editor-prompt"
+          className="text-[10px] font-black text-zinc-700 uppercase tracking-widest"
+        >
+          Edit Prompt
+        </label>
+        <textarea
+          id="image-editor-prompt"
+          ref={textareaRef}
+          value={editPrompt}
+          onChange={(e) => onEditPromptChange(e.target.value)}
+          placeholder="Describe the changes..."
+          aria-label="Edit prompt"
+          className="w-full min-h-40 max-h-75 bg-black/40 rounded-2xl p-5 text-[13px] font-bold leading-relaxed focus:bg-black/60 transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar"
+        />
+      </div>
+
+      <div className="space-y-8">
+        <Slider
+          icon={<Brush className="size-4 text-zinc-600" />}
+          label="Brush Size"
+          value={brushSize}
+          min={5}
+          max={180}
+          step={5}
+          onChange={onBrushSizeChange}
+        />
+
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={onUndo}
+            disabled={historyIndex < 0}
+            className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 disabled:opacity-10 transition-all"
+          >
+            Undo
+          </button>
+          <button
+            type="button"
+            onClick={onReset}
+            className="flex-1 h-11 flex items-center justify-center gap-2 bg-red-500/5 rounded-xl text-[10px] font-black uppercase tracking-widest text-red-500/60 hover:text-red-400 hover:bg-red-500/10 transition-all"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+
+      <div className="mt-auto">
+        <button
+          type="button"
+          onClick={onGenerate}
+          disabled={isGenerating || !editPrompt.trim() || historyIndex < 0}
+          className={`w-full h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-all active:scale-95 shadow-2xl
+                    ${isGenerating
+              ? 'bg-accent-500/10 text-accent-500/40'
+              : 'bg-accent-600 text-white hover:bg-accent-500 shadow-accent-950/40'
+            } disabled:opacity-20 disabled:pointer-events-none`}
+        >
+          {isGenerating ? (
+            <div className="size-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+          ) : (
+            <Sparkles size={18} />
+          )}
+          {!isGenerating && <span>Apply Edit</span>}
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   isOpen,
   onClose,
@@ -95,7 +193,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     };
   };
 
-  const saveHistory = () => {
+  const saveHistory = useCallback(() => {
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext('2d');
     if (!canvas || !ctx) return;
@@ -106,7 +204,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     newHistory.push(ctx.getImageData(0, 0, canvas.width, canvas.height));
     historyRef.current = newHistory;
     setHistoryIndex(newHistory.length - 1);
-  };
+  }, [historyIndex]);
 
   const startDrawing = (e: React.MouseEvent) => {
     isDrawingRef.current = true;
@@ -121,7 +219,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
       x,
       y,
       (brushSize * (canvasRef.current!.width / canvasRef.current!.getBoundingClientRect().width)) /
-        2,
+      2,
       0,
       Math.PI * 2,
     );
@@ -202,6 +300,13 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [isOpen]);
 
+  const handleReset = useCallback(() => {
+    const ctx = canvasRef.current?.getContext('2d');
+    if (ctx && canvasRef.current)
+      ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+    saveHistory();
+  }, [saveHistory]);
+
   if (!isOpen) return null;
 
   return (
@@ -277,81 +382,18 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           />
         </div>
 
-        <div className="w-full md:w-96 bg-zinc-950 p-8 flex flex-col gap-10 shadow-[20px_0_60px_rgba(0,0,0,1)]">
-          <div className="space-y-4">
-            <label
-              htmlFor="image-editor-prompt"
-              className="text-[10px] font-black text-zinc-700 uppercase tracking-widest"
-            >
-              Edit Prompt
-            </label>
-            <textarea
-              id="image-editor-prompt"
-              ref={textareaRef}
-              value={editPrompt}
-              onChange={(e) => setEditPrompt(e.target.value)}
-              placeholder="Describe the changes..."
-              aria-label="Edit prompt"
-              className="w-full min-h-40 max-h-75 bg-black/40 rounded-2xl p-5 text-[13px] font-bold leading-relaxed focus:bg-black/60 transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar"
-            />
-          </div>
-
-          <div className="space-y-8">
-            <Slider
-              icon={<Brush className="size-4 text-zinc-600" />}
-              label="Brush Size"
-              value={brushSize}
-              min={5}
-              max={180}
-              step={5}
-              onChange={setBrushSize}
-            />
-
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={handleUndo}
-                disabled={historyIndex < 0}
-                className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 disabled:opacity-10 transition-all"
-              >
-                Undo
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  const ctx = canvasRef.current?.getContext('2d');
-                  if (ctx && canvasRef.current)
-                    ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
-                  saveHistory();
-                }}
-                className="flex-1 h-11 flex items-center justify-center gap-2 bg-red-500/5 rounded-xl text-[10px] font-black uppercase tracking-widest text-red-500/60 hover:text-red-400 hover:bg-red-500/10 transition-all"
-              >
-                Reset
-              </button>
-            </div>
-          </div>
-
-          <div className="mt-auto">
-            <button
-              type="button"
-              onClick={handleGenerate}
-              disabled={isGenerating || !editPrompt.trim() || historyIndex < 0}
-              className={`w-full h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-all active:scale-95 shadow-2xl
-                        ${
-                          isGenerating
-                            ? 'bg-accent-500/10 text-accent-500/40'
-                            : 'bg-accent-600 text-white hover:bg-accent-500 shadow-accent-950/40'
-                        } disabled:opacity-20 disabled:pointer-events-none`}
-            >
-              {isGenerating ? (
-                <div className="size-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-              ) : (
-                <Sparkles size={18} />
-              )}
-              {!isGenerating && <span>Apply Edit</span>}
-            </button>
-          </div>
-        </div>
+        <ImageEditorControlsPanel
+          editPrompt={editPrompt}
+          onEditPromptChange={setEditPrompt}
+          textareaRef={textareaRef}
+          brushSize={brushSize}
+          onBrushSizeChange={setBrushSize}
+          historyIndex={historyIndex}
+          isGenerating={isGenerating}
+          onUndo={handleUndo}
+          onReset={handleReset}
+          onGenerate={handleGenerate}
+        />
       </div>
     </button>
   );

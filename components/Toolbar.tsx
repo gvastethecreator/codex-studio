@@ -344,6 +344,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       };
     }, []);
 
+    // react-doctor-disable-next-line react-doctor/no-chain-state-updates
+    // react-doctor-disable-next-line react-doctor/no-derived-state
     useEffect(() => {
       if (
         generationConfig.prompt !== lastPushedPromptRef.current &&

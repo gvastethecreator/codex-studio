@@ -1,6 +1,6 @@
 import { existsSync, rmSync } from 'node:fs';
 import { getSettings } from './config';
-import { stopAppServer } from './codex';
+import { stopAppServer } from './codex/processSupervisor';
 import { closeDb, ensureDefaultProject, migrateDb } from './db';
 import { LIBRARY_FOLDERS, ensureLibrary, resolveLibraryPath } from './library';
 import { ensureDefaultLibrary } from './libraries';

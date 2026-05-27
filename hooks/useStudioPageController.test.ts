@@ -94,7 +94,7 @@ describe('buildStudioPageController', () => {
 
     expect(controller.debugPanel.isVisible).toBe(false);
     expect(controller.debugPanel.props.imagesCount).toBe(1);
-    expect(controller.grid.hasProcessingJobs).toBe(true);
+    expect(controller.grid.isGenerating).toBe(true);
     expect(controller.operations.activeServerJobCount).toBe(1);
   });
 });
