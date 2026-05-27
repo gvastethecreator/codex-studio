@@ -485,8 +485,8 @@ const StylePresetCard = React.memo(
           data-style-preset-card={preset.id}
           data-style-category={preset.category || 'General'}
           className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${active
-              ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
-              : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
+            ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
+            : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
             }`}
         >
           <div className="absolute inset-0 overflow-hidden bg-zinc-950">
@@ -758,6 +758,39 @@ async function loadPreviewAttachment(previewUrl: string, preset: StyleRuntimePre
   };
 }
 
+function getPackIcon(id: string): React.ReactNode {
+  const size = 18;
+  switch (id) {
+    case FAVORITES_PACK_ID:
+      return <Heart size={size} fill="currentColor" />;
+    case 'pack_01':
+      return <Camera size={size} />;
+    case 'pack_02':
+      return <Clapperboard size={size} />;
+    case 'pack_03':
+      return <Box size={size} />;
+    case 'pack_04':
+      return <PenTool size={size} />;
+    case 'pack_05':
+      return <Sparkles size={size} />;
+    case 'pack_06':
+      return <Palette size={size} />;
+    case 'pack_07':
+      return <Building size={size} />;
+    case 'pack_08':
+      return <Shirt size={size} />;
+    case 'pack_09':
+      return <Layers size={size} />;
+    case 'pack_10':
+      return <Wand2 size={size} />;
+    case 'pack_11':
+      return <SmilePlus size={size} />;
+    default:
+      return <Layers size={size} />;
+  }
+}
+
+// react-doctor-disable-next-line react-doctor/no-giant-component
 export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   config,
   updateConfig,
@@ -1264,38 +1297,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     e.preventDefault();
     const files = Array.from(e.dataTransfer.files).filter((f: File) => f.type.startsWith('image/'));
     if (files.length > 0) onFileSelect(files);
-  };
-
-  const getPackIcon = (id: string) => {
-    const size = 18;
-    switch (id) {
-      case FAVORITES_PACK_ID:
-        return <Heart size={size} fill="currentColor" />;
-      case 'pack_01':
-        return <Camera size={size} />;
-      case 'pack_02':
-        return <Clapperboard size={size} />;
-      case 'pack_03':
-        return <Box size={size} />;
-      case 'pack_04':
-        return <PenTool size={size} />;
-      case 'pack_05':
-        return <Sparkles size={size} />;
-      case 'pack_06':
-        return <Palette size={size} />;
-      case 'pack_07':
-        return <Building size={size} />;
-      case 'pack_08':
-        return <Shirt size={size} />;
-      case 'pack_09':
-        return <Layers size={size} />;
-      case 'pack_10':
-        return <Wand2 size={size} />;
-      case 'pack_11':
-        return <SmilePlus size={size} />;
-      default:
-        return <Layers size={size} />;
-    }
   };
 
   const handleHoverPreviewChange = useCallback(

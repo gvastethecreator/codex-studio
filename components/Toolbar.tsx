@@ -120,12 +120,12 @@ const AVAILABLE_MODELS: {
   name: string;
   description: string;
 }[] = [
-  {
-    id: MODEL_IDS.CODEX_IMAGEGEN,
-    name: 'Codex ImageGen',
-    description: 'Local ChatGPT/Codex session',
-  },
-];
+    {
+      id: MODEL_IDS.CODEX_IMAGEGEN,
+      name: 'Codex ImageGen',
+      description: 'Local ChatGPT/Codex session',
+    },
+  ];
 
 const RATIOS = IMAGE_GEN_RATIO_OPTIONS;
 const PRO_SIZES: ImageSize[] = ['1K'];
@@ -741,11 +741,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         onMouseEnter={() => setPreviewRatio(option.ratio)}
                         title={`${option.label}: ${option.size}`}
                         className={`aspect-square rounded-lg flex flex-col items-center justify-center gap-1 transition-all 
-                                    ${
-                                      generationConfig.aspectRatio === option.ratio
-                                        ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/50 text-white shadow-lg'
-                                        : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
-                                    }`}
+                                    ${generationConfig.aspectRatio === option.ratio
+                            ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/50 text-white shadow-lg'
+                            : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
+                          }`}
                       >
                         <AspectRatioIcon ratio={option.ratio} />
                         <span className="text-[8px] font-black">{option.ratio}</span>
@@ -963,17 +962,15 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               type="button"
                               key={model.id}
                               onClick={() => handleSelectExecutionModel(model)}
-                              className={`w-full text-left px-3 py-2.5 rounded-xl transition-all border ${
-                                isSelected
+                              className={`w-full text-left px-3 py-2.5 rounded-xl transition-all border ${isSelected
                                   ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
                                   : 'hover:bg-white/5 text-zinc-400 border-transparent'
-                              }`}
+                                }`}
                             >
                               <div className="flex items-center justify-between gap-3 mb-1">
                                 <div
-                                  className={`text-[10px] font-black uppercase tracking-wide ${
-                                    isSelected ? 'text-accent-300' : 'text-zinc-200'
-                                  }`}
+                                  className={`text-[10px] font-black uppercase tracking-wide ${isSelected ? 'text-accent-300' : 'text-zinc-200'
+                                    }`}
                                 >
                                   {model.displayName}
                                 </div>
@@ -1018,11 +1015,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             type="button"
                             key={effort}
                             onClick={() => updateConfig('executionReasoningEffort', effort)}
-                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${
-                              generationConfig.executionReasoningEffort === effort
+                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${generationConfig.executionReasoningEffort === effort
                                 ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
                                 : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                            }`}
+                              }`}
                           >
                             {effort}
                           </button>
@@ -1045,11 +1041,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             type="button"
                             key={speed}
                             onClick={() => handleSelectExecutionSpeed(speed)}
-                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${
-                              generationConfig.executionSpeed === speed
+                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${generationConfig.executionSpeed === speed
                                 ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
                                 : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                            }`}
+                              }`}
                           >
                             {formatCodexSpeedLabel(speed)}
                           </button>
@@ -1068,11 +1063,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               className={`
                     group relative h-11 px-6 rounded-2xl flex items-center justify-center gap-2.5 ml-2 overflow-hidden
                     text-[10px] tracking-[0.2em] font-black uppercase transition-all cursor-pointer
-                    ${
-                      isGenerating
-                        ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-400 border border-accent-700/30 shadow-lg'
-                        : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/20 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
-                    }
+                    ${isGenerating
+                  ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-400 border border-accent-700/30 shadow-lg'
+                  : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/20 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
+                }
                 `}
             >
               {/* Progress Bar Layer */}

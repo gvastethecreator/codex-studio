@@ -17,17 +17,31 @@ const StudioSettingsModal = React.lazy(() =>
 );
 
 export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
-  isDebugPanelOpen,
+  flags: {
+    isDebugPanelOpen,
+    isDashboardModalOpen,
+    isLoadingSelectedJob,
+    isCheckingOnboarding,
+    isDesktopRuntime,
+    isOnboardingOpen,
+    isOnboardingReady,
+    isStartingAppServer,
+    isSettingsModalOpen,
+    isLoadingSettings,
+    isSavingSettings,
+    isLoadingOutputSources,
+    isRegisteringOutputSource,
+    isBackgroundEnabled,
+    isResettingStudio,
+  },
   closeDebugPanel,
   mergedLogs,
-  isDashboardModalOpen,
   closeDashboard,
   visualGroupsCount,
   workspaces,
   studioJobs,
   imagesCount,
   selectedJobDetail,
-  isLoadingSelectedJob,
   onInspectJob,
   onClearSelectedJob,
   handleExportWorkspaceSnapshot,
@@ -37,28 +51,18 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   onboardingHealth,
   localCodexSession,
   readiness,
-  isCheckingOnboarding,
-  isDesktopRuntime,
-  isOnboardingOpen,
-  isOnboardingReady,
-  isStartingAppServer,
   closeOnboarding,
   completeOnboarding,
   refreshOnboardingHealth,
   ensureAppServer,
-  isSettingsModalOpen,
   closeSettings,
   settings,
   settingsError,
-  isLoadingSettings,
-  isSavingSettings,
   providerCapabilities,
   providerRuntimePreflight,
   outputSources,
   outputSourceFiles,
-  isLoadingOutputSources,
   loadingOutputSourceFiles,
-  isRegisteringOutputSource,
   importingOutputSources,
   settingsLibraryDir,
   refreshSettings,
@@ -66,10 +70,8 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   registerOutputSource,
   loadOutputSourceFiles,
   importOutputSourceFiles,
-  isBackgroundEnabled,
   onToggleBackground,
   onResetStudio,
-  isResettingStudio,
 }) => {
   const mountedSurfaces = getMountedSystemSurfaceKeys({
     isDebugPanelOpen,
@@ -117,11 +119,9 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             health={onboardingHealth}
             localCodexSession={localCodexSession}
             readiness={readiness}
-            isChecking={isCheckingOnboarding}
+            status={isOnboardingReady ? 'ready' : isCheckingOnboarding ? 'checking' : isStartingAppServer ? 'starting' : 'idle'}
             isDesktopRuntime={isDesktopRuntime}
             isOpen={isOnboardingOpen}
-            isReady={isOnboardingReady}
-            isStartingAppServer={isStartingAppServer}
             onClose={closeOnboarding}
             onComplete={completeOnboarding}
             onRefresh={refreshOnboardingHealth}
