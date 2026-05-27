@@ -4,6 +4,7 @@ import type {
   StudioConfirmationOverlayProps,
   StudioImageOverlaysProps,
   StudioOverlayController,
+  StudioSystemOverlayFlags,
   StudioSystemOverlaysProps,
   StudioWorkspaceOverlaysProps,
 } from '../components/overlays/types';
@@ -30,12 +31,12 @@ interface StudioOverlayEditorContext {
 }
 
 interface StudioOverlayDebugPanelContext {
-  isOpen: StudioSystemOverlaysProps['isDebugPanelOpen'];
+  isOpen: StudioSystemOverlayFlags['isDebugPanelOpen'];
   close: StudioSystemOverlaysProps['closeDebugPanel'];
 }
 
 interface StudioOverlayDashboardContext {
-  isOpen: StudioSystemOverlaysProps['isDashboardModalOpen'];
+  isOpen: StudioSystemOverlayFlags['isDashboardModalOpen'];
   close: StudioSystemOverlaysProps['closeDashboard'];
 }
 
@@ -43,7 +44,7 @@ interface StudioOverlayActivityContext {
   mergedLogs: StudioSystemOverlaysProps['mergedLogs'];
   studioJobs: StudioSystemOverlaysProps['studioJobs'];
   selectedJobDetail: StudioSystemOverlaysProps['selectedJobDetail'];
-  isLoadingSelectedJob: StudioSystemOverlaysProps['isLoadingSelectedJob'];
+  isLoadingSelectedJob: StudioSystemOverlayFlags['isLoadingSelectedJob'];
   onInspectJob: StudioSystemOverlaysProps['onInspectJob'];
   onClearSelectedJob: StudioSystemOverlaysProps['onClearSelectedJob'];
 }
@@ -59,11 +60,11 @@ interface StudioOverlayOnboardingContext {
   health: StudioSystemOverlaysProps['onboardingHealth'];
   localCodexSession: StudioSystemOverlaysProps['localCodexSession'];
   readiness: StudioSystemOverlaysProps['readiness'];
-  isChecking: StudioSystemOverlaysProps['isCheckingOnboarding'];
-  isDesktopRuntime: StudioSystemOverlaysProps['isDesktopRuntime'];
-  isOpen: StudioSystemOverlaysProps['isOnboardingOpen'];
-  isReady: StudioSystemOverlaysProps['isOnboardingReady'];
-  isStartingAppServer: StudioSystemOverlaysProps['isStartingAppServer'];
+  isChecking: StudioSystemOverlayFlags['isCheckingOnboarding'];
+  isDesktopRuntime: StudioSystemOverlayFlags['isDesktopRuntime'];
+  isOpen: StudioSystemOverlayFlags['isOnboardingOpen'];
+  isReady: StudioSystemOverlayFlags['isOnboardingReady'];
+  isStartingAppServer: StudioSystemOverlayFlags['isStartingAppServer'];
   close: () => void;
   complete: () => void;
   refreshHealth: () => void | Promise<void>;
@@ -71,19 +72,19 @@ interface StudioOverlayOnboardingContext {
 }
 
 interface StudioOverlaySettingsContext {
-  isOpen: StudioSystemOverlaysProps['isSettingsModalOpen'];
+  isOpen: StudioSystemOverlayFlags['isSettingsModalOpen'];
   close: StudioSystemOverlaysProps['closeSettings'];
   settings: StudioSystemOverlaysProps['settings'];
   error: StudioSystemOverlaysProps['settingsError'];
-  isLoading: StudioSystemOverlaysProps['isLoadingSettings'];
-  isSaving: StudioSystemOverlaysProps['isSavingSettings'];
+  isLoading: StudioSystemOverlayFlags['isLoadingSettings'];
+  isSaving: StudioSystemOverlayFlags['isSavingSettings'];
   providerCapabilities: StudioSystemOverlaysProps['providerCapabilities'];
   providerRuntimePreflight: StudioSystemOverlaysProps['providerRuntimePreflight'];
   outputSources: StudioSystemOverlaysProps['outputSources'];
   outputSourceFiles: StudioSystemOverlaysProps['outputSourceFiles'];
-  isLoadingOutputSources: StudioSystemOverlaysProps['isLoadingOutputSources'];
+  isLoadingOutputSources: StudioSystemOverlayFlags['isLoadingOutputSources'];
   loadingOutputSourceFiles: StudioSystemOverlaysProps['loadingOutputSourceFiles'];
-  isRegisteringOutputSource: StudioSystemOverlaysProps['isRegisteringOutputSource'];
+  isRegisteringOutputSource: StudioSystemOverlayFlags['isRegisteringOutputSource'];
   importingOutputSources: StudioSystemOverlaysProps['importingOutputSources'];
   libraryDir: StudioSystemOverlaysProps['settingsLibraryDir'];
   refresh: StudioSystemOverlaysProps['refreshSettings'];
@@ -91,10 +92,10 @@ interface StudioOverlaySettingsContext {
   registerOutputSource: StudioSystemOverlaysProps['registerOutputSource'];
   loadOutputSourceFiles: StudioSystemOverlaysProps['loadOutputSourceFiles'];
   importOutputSourceFiles: StudioSystemOverlaysProps['importOutputSourceFiles'];
-  isBackgroundEnabled: StudioSystemOverlaysProps['isBackgroundEnabled'];
+  isBackgroundEnabled: StudioSystemOverlayFlags['isBackgroundEnabled'];
   onToggleBackground: StudioSystemOverlaysProps['onToggleBackground'];
   onResetStudio: StudioSystemOverlaysProps['onResetStudio'];
-  isResettingStudio: StudioSystemOverlaysProps['isResettingStudio'];
+  isResettingStudio: StudioSystemOverlayFlags['isResettingStudio'];
 }
 
 interface StudioOverlayWorkspaceContext {
@@ -165,17 +166,31 @@ export function buildStudioOverlayController({
       isEditingImage: editor.isEditingImage,
     },
     systemOverlays: {
-      isDebugPanelOpen: debugPanel.isOpen,
+      flags: {
+        isDebugPanelOpen: debugPanel.isOpen,
+        isDashboardModalOpen: dashboard.isOpen,
+        isLoadingSelectedJob: activity.isLoadingSelectedJob,
+        isCheckingOnboarding: onboarding.isChecking,
+        isDesktopRuntime: onboarding.isDesktopRuntime,
+        isOnboardingOpen: onboarding.isOpen,
+        isOnboardingReady: onboarding.isReady,
+        isStartingAppServer: onboarding.isStartingAppServer,
+        isSettingsModalOpen: settings.isOpen,
+        isLoadingSettings: settings.isLoading,
+        isSavingSettings: settings.isSaving,
+        isLoadingOutputSources: settings.isLoadingOutputSources,
+        isRegisteringOutputSource: settings.isRegisteringOutputSource,
+        isBackgroundEnabled: settings.isBackgroundEnabled,
+        isResettingStudio: settings.isResettingStudio,
+      },
       closeDebugPanel: debugPanel.close,
       mergedLogs: activity.mergedLogs,
-      isDashboardModalOpen: dashboard.isOpen,
       closeDashboard: dashboard.close,
       visualGroupsCount: workspace.catalogVisualGroupCount,
       workspaces: workspace.workspaces,
       studioJobs: activity.studioJobs,
       imagesCount: image.imagesWithConfig.length,
       selectedJobDetail: activity.selectedJobDetail,
-      isLoadingSelectedJob: activity.isLoadingSelectedJob,
       onInspectJob: activity.onInspectJob,
       onClearSelectedJob: activity.onClearSelectedJob,
       handleExportWorkspaceSnapshot: vault.handleExportWorkspaceSnapshot,
@@ -185,11 +200,6 @@ export function buildStudioOverlayController({
       onboardingHealth: onboarding.health,
       localCodexSession: onboarding.localCodexSession,
       readiness: onboarding.readiness,
-      isCheckingOnboarding: onboarding.isChecking,
-      isDesktopRuntime: onboarding.isDesktopRuntime,
-      isOnboardingOpen: onboarding.isOpen,
-      isOnboardingReady: onboarding.isReady,
-      isStartingAppServer: onboarding.isStartingAppServer,
       closeOnboarding: () => startTransition(() => onboarding.close()),
       completeOnboarding: () => startTransition(() => onboarding.complete()),
       refreshOnboardingHealth: () => {
@@ -198,19 +208,14 @@ export function buildStudioOverlayController({
       ensureAppServer: () => {
         void onboarding.ensureAppServer();
       },
-      isSettingsModalOpen: settings.isOpen,
       closeSettings: settings.close,
       settings: settings.settings,
       settingsError: settings.error,
-      isLoadingSettings: settings.isLoading,
-      isSavingSettings: settings.isSaving,
       providerCapabilities: settings.providerCapabilities,
       providerRuntimePreflight: settings.providerRuntimePreflight,
       outputSources: settings.outputSources,
       outputSourceFiles: settings.outputSourceFiles,
-      isLoadingOutputSources: settings.isLoadingOutputSources,
       loadingOutputSourceFiles: settings.loadingOutputSourceFiles,
-      isRegisteringOutputSource: settings.isRegisteringOutputSource,
       importingOutputSources: settings.importingOutputSources,
       settingsLibraryDir: settings.libraryDir,
       refreshSettings: settings.refresh,
@@ -218,10 +223,8 @@ export function buildStudioOverlayController({
       registerOutputSource: settings.registerOutputSource,
       loadOutputSourceFiles: settings.loadOutputSourceFiles,
       importOutputSourceFiles: settings.importOutputSourceFiles,
-      isBackgroundEnabled: settings.isBackgroundEnabled,
       onToggleBackground: settings.onToggleBackground,
       onResetStudio: settings.onResetStudio,
-      isResettingStudio: settings.isResettingStudio,
     },
     workspaceOverlays: {
       isTrashModalOpen: workspace.isTrashModalOpen,
