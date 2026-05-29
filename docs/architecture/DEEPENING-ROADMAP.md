@@ -95,6 +95,8 @@ Execution order for the accepted batch:
 - **Depends on:** recommendation 3
 - **Unblocks:** clearer cancellation/retry semantics and more focused generation tests
 - **Concrete steps:**
+  - done: extracted browser/runtime helpers (`toGenerationDataUrl`, abort guards, delay-with-abort, cancellation detection) into `services/localGenerationRuntimeAdapters.ts` so `localGenerationRun.ts` keeps orchestration-local behavior;
+  - done: added focused adapter coverage in `services/localGenerationRuntimeAdapters.test.ts` for abort classification and data-url passthrough behavior;
   - done: `services/localGenerationRun.ts` now exposes `runLocalGenerationWithLifecycle()` with explicit `completed` / `cancelled` / `failed` outcomes and duration;
   - done: `hooks/useGenerationPipeline.ts` now consumes lifecycle outcomes instead of duplicating cancel/error classification across generate/edit flows;
   - move lifecycle ownership, cancellation, terminal outcome mapping, and batch pacing behind the `Local Generation Run` seam;
@@ -110,6 +112,11 @@ Execution order for the accepted batch:
 - **Depends on:** recommendation 4 preferred for lower churn
 - **Unblocks:** more isolated worker tests and future runtime experiments
 - **Concrete steps:**
+  - done: extracted asset finalization into `apps/local-server/src/workerAssetFinalizer.ts`, so `worker.ts` no longer owns inline asset/catalog completion choreography;
+  - done: added focused seam coverage in `apps/local-server/src/workerAssetFinalizer.test.ts`, validating organized-path `publicUrl` and completion event/status flow;
+  - done: extracted generated-asset pathing into `apps/local-server/src/workerAssetPathing.ts` so `WorkerController` no longer owns unique target-path resolution and move choreography inline;
+  - done: `finalizeJobAsset()` now persists `publicUrl` from the organized asset path (post-move) instead of the discovered pre-move path, improving asset locality/consistency;
+  - done: added focused seam coverage in `apps/local-server/src/workerAssetPathing.test.ts` for mime inference, path organization, and unique target-path resolution;
   - done: `createWorkerController()` now accepts injected `readEditableStudioSettings`, `resolveJobCatalogContext`, and `resolveWorkerRuntimeTarget` collaborators instead of hard-coding those runtime decisions;
   - done: `apps/local-server/src/appFactory.ts` now composes the worker with explicit runtime collaborator wiring instead of relying on implicit defaults;
   - move settings, catalog-context, runtime-target, and asset-finalization collaborators to the explicit worker seam;
@@ -118,6 +125,38 @@ Execution order for the accepted batch:
 - **Exit criteria:** worker tests can cross the `WorkerController` seam without relying on ambient imports or real filesystem behaviour unless intentionally chosen.
 - **Docs:** update ADR-0014 status, `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`, and the findings index.
 
+### 9. Deepen `appFactory` runtime route composition
+
+- **Status:** In progress
+- **Files:** `apps/local-server/src/appFactory.ts`, `apps/local-server/src/outputSourceRoutes.ts`,
+  `apps/local-server/src/providerRoutes.ts`, `apps/local-server/src/settingsRoutes.ts`,
+  `apps/local-server/src/codexRoutes.ts`, `apps/local-server/src/librariesRoutes.ts`,
+  `apps/local-server/src/projectRoutes.ts`
+- **Depends on:** recommendation 5 of `architecture-review-2026-05-29.md`
+- **Unblocks:** narrower route seams in backend runtime composition and easier route-level tests
+- **Concrete steps:**
+  - done: extracted `Output Sources` route composition into `createOutputSourceRoutes()` in `apps/local-server/src/outputSourceRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api/output-sources', createOutputSourceRoutes(...))` instead of inlining those handlers;
+  - done: added route-seam tests in `apps/local-server/src/outputSourceRoutes.test.ts` covering register/list/import flow and event publication.
+  - done: extracted provider capability/preflight route composition into `createProviderRoutes()` in `apps/local-server/src/providerRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api/providers', createProviderRoutes(...))` instead of inlining provider handlers;
+  - done: added route-seam tests in `apps/local-server/src/providerRoutes.test.ts` for capability and preflight responses.
+  - done: extracted `settings` route composition into `createSettingsRoutes()` in `apps/local-server/src/settingsRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api/settings', createSettingsRoutes(...))` instead of inlining settings handlers;
+  - done: added route-seam tests in `apps/local-server/src/settingsRoutes.test.ts` for read and patch/persistence behavior.
+  - done: extracted `codex` route composition (`/models`, `/session`, `/account`) into `createCodexRoutes()` in `apps/local-server/src/codexRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api/codex', createCodexRoutes(...))` instead of inlining codex handlers;
+  - done: added route-seam tests in `apps/local-server/src/codexRoutes.test.ts` for model/session/account delegation.
+  - done: extracted `libraries` route composition into `createLibrariesRoutes()` in `apps/local-server/src/librariesRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api/libraries', createLibrariesRoutes(...))` instead of inlining library handlers;
+  - done: added route-seam tests in `apps/local-server/src/librariesRoutes.test.ts` for list/create/default/delete flows.
+  - done: extracted `projects` route composition into `createProjectRoutes()` in `apps/local-server/src/projectRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api/projects', createProjectRoutes(...))` instead of inlining project handlers;
+  - done: added route-seam tests in `apps/local-server/src/projectRoutes.test.ts` for list/create/event/log behavior.
+  - next: extract `jobs` route group into a dedicated module.
+- **Exit criteria:** `appFactory.ts` acts mainly as runtime composition module, with heavy route groups mounted from focused route modules.
+- **Docs:** update `docs/ARCHITECTURE.md` backend seam section once providers/codex route groups are also extracted.
+
 ### 6. Deepen `Local Studio Sync` state ownership
 
 - **Status:** In progress
@@ -125,6 +164,8 @@ Execution order for the accepted batch:
 - **Depends on:** recommendations 1-5
 - **Unblocks:** clearer transport/projection seams and isolated sync tests
 - **Concrete steps:**
+  - done: extracted connection/asset refresh policy into `hooks/localStudioSyncRefreshPolicy.ts`, so `useLocalStudioSync.ts` no longer inlines reconnect refresh orchestration;
+  - done: added focused policy tests in `hooks/localStudioSyncRefreshPolicy.test.ts` for asset-trigger refresh, reconnect coalescing, and connected-event no-op behavior;
   - done: extracted projection/reducer concerns into `hooks/localStudioSyncProjection.ts`;
   - done: `useLocalStudioSync.ts` now composes transport behavior with imported projection helpers instead of co-locating both concerns;
   - separate transport adapter behavior from activity projection behavior;
