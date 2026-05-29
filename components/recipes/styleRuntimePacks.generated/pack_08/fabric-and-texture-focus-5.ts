@@ -4,623 +4,471 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP08-077',
-    name: 'Stone Statue',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'flesh',
-    style: {
-      aesthetic: 'Living statue, museum-come-alive fantasy, petrified-elegance awe',
-      form_and_line:
-        'Chisel marks, contrapposto-stance, sculpted-drapery fold, classical-proportion silhouette, pedestal-base stillness',
-      color_palette:
-        'Grey Marble, Carrara-white, Pentelic-cream, veined-grey, Parian-snow, weathered-ivory, shadow-grey recess',
-      lighting_setup:
-        'Museum, gallery-spot precision, overhead-directional drama, pedestal-up shadow, marble-subsurface scatter',
-      material_texture:
-        'Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high, dust-settled crevice',
-      render_quality: 'Classic, cold, Bernini-marble realism, gallery-plinth gravitas',
-      spatial_distortion: 'Rigid',
-      atmosphere:
-        'Timeless, still, museum-after-hours magic, sculptural-permanence awe, stone-silence eternity',
-      key_features: 'Marble, veining, chisel marks, contrapposto, pedestal',
-      creative_brief:
-        "Carrara marble holding the contrapposto of a figure that has been standing still since before galleries had electric light, chisel marks still visible in the drapery folds like the signature of the sculptor's final touch. Veins of grey running through the stone like frozen weather, the pedestal the only admission that this form was ever anything other than a living body that chose to trade flesh for permanence.",
-    },
+    "id": "SP08-077",
+    "name": "Stone Statue",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "flesh",
+    "style": {
+      "aesthetic": "Living statue, museum-come-alive fantasy, petrified-elegance awe",
+      "form_and_line": "Chisel marks, contrapposto-stance, sculpted-drapery fold, classical-proportion silhouette, pedestal-base stillness",
+      "color_palette": "Grey Marble, Carrara-white, Pentelic-cream, veined-grey, Parian-snow, weathered-ivory, shadow-grey recess",
+      "lighting_setup": "Museum, gallery-spot precision, overhead-directional drama, pedestal-up shadow, marble-subsurface scatter",
+      "material_texture": "Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high, dust-settled crevice",
+      "render_quality": "Classic, cold, Bernini-marble realism, gallery-plinth gravitas",
+      "spatial_distortion": "Rigid",
+      "atmosphere": "Timeless, still, museum-after-hours magic, sculptural-permanence awe, stone-silence eternity",
+      "key_features": "Marble, veining, chisel marks, contrapposto, pedestal",
+      "creative_brief": "Carrara marble holding the contrapposto of a figure that has been standing still since before galleries had electric light, chisel marks still visible in the drapery folds like the signature of the sculptor's final touch. Veins of grey running through the stone like frozen weather, the pedestal the only admission that this form was ever anything other than a living body that chose to trade flesh for permanence."
+    }
   },
   {
-    id: 'SP08-052',
-    name: 'Denim on Denim',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'silk, suit',
-    style: {
-      aesthetic: 'Canadian Tuxedo, denim-on-denim confidence, Americana-workwear cool',
-      form_and_line:
-        'Stitching, trucker-jacket box, straight-leg column, western-yoke line, contrast-thread geometry',
-      color_palette:
-        'Indigo Blue, raw-indigo, faded-wash blue, ecru weft, copper-orange stitching, stonewashed sky',
-      lighting_setup: 'Studio, softbox-even, denim-texture side-light, garage-daylight',
-      material_texture:
-        'Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch',
-      render_quality: 'Textured, casual, heritage-workwear authenticity, Americana-denim fidelity',
-      spatial_distortion: 'None',
-      atmosphere: 'Cool, blue, blue-collar pride, weekend-ease, American-classic confidence',
-      key_features:
-        'Orange stitching, selvedge ID, copper rivets, leather patch, double-denim coordination',
-      creative_brief:
-        'Indigo twill worn into the shape of a specific body over seasons of honest labor, copper rivets catching light like small suns at stress points engineered by San Francisco gold-rush logic. Orange chainstitching traces the geography of the garment, selvedge edge a signature of craft that only the wearer knows is there, double denim a declaration that confidence needs no contrast.',
-    },
+    "id": "SP08-052",
+    "name": "Denim on Denim",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "silk, suit",
+    "style": {
+      "aesthetic": "Canadian Tuxedo, denim-on-denim confidence, Americana-workwear cool",
+      "form_and_line": "Stitching, trucker-jacket box, straight-leg column, western-yoke line, contrast-thread geometry",
+      "color_palette": "Indigo Blue, raw-indigo, faded-wash blue, ecru weft, copper-orange stitching, stonewashed sky",
+      "lighting_setup": "Studio, softbox-even, denim-texture side-light, garage-daylight",
+      "material_texture": "Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch",
+      "render_quality": "Textured, casual, heritage-workwear authenticity, Americana-denim fidelity",
+      "spatial_distortion": "None",
+      "atmosphere": "Cool, blue, blue-collar pride, weekend-ease, American-classic confidence",
+      "key_features": "Orange stitching, selvedge ID, copper rivets, leather patch, double-denim coordination",
+      "creative_brief": "Indigo twill worn into the shape of a specific body over seasons of honest labor, copper rivets catching light like small suns at stress points engineered by San Francisco gold-rush logic. Orange chainstitching traces the geography of the garment, selvedge edge a signature of craft that only the wearer knows is there, double denim a declaration that confidence needs no contrast."
+    }
   },
   {
-    id: 'SP08-051',
-    name: 'Latex/PVC',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'matte, cotton',
-    style: {
-      aesthetic: 'Fetish fashion, high-gloss domination, latex-subculture statement',
-      form_and_line:
-        'Tight highlights, second-skin compression, corset-waist curve, opera-glove length, catsuit continuity',
-      color_palette:
-        'Black shiny, blood-red, midnight purple, liquid-mercury, rubber-white, patent-bordeaux',
-      lighting_setup:
-        'High contrast reflection, rim-light gloss, studio-strip catchlights, wet-look sheen',
-      material_texture:
-        'Glossy latex, polished PVC, wet-look spandex, patent leather, chlorinated rubber, slick sealant finish',
-      render_quality: 'Shiny, edgy, high-polish fetish aesthetic, studio-reflection perfection',
-      spatial_distortion: 'None',
-      atmosphere: 'Intense, sleek, power-dressing charge, mirror-shine confidence, club-kid edge',
-      key_features: 'Reflections, crease-free tension, zip front, corset lacing, high-shine polish',
-      creative_brief:
-        'Light slides across polished latex like a gloved hand searching for a seam that does not exist, every curve a mirror reflecting the room back at itself in distorted worship. The material is a second skin that reveals everything while concealing everything, high-gloss armor for those who understand that the most powerful garment is the one that leaves nothing to the imagination but the person inside it.',
-    },
+    "id": "SP08-051",
+    "name": "Latex/PVC",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "matte, cotton",
+    "style": {
+      "aesthetic": "Fetish fashion, high-gloss domination, latex-subculture statement",
+      "form_and_line": "Tight highlights, second-skin compression, corset-waist curve, opera-glove length, catsuit continuity",
+      "color_palette": "Black shiny, blood-red, midnight purple, liquid-mercury, rubber-white, patent-bordeaux",
+      "lighting_setup": "High contrast reflection, rim-light gloss, studio-strip catchlights, wet-look sheen",
+      "material_texture": "Glossy latex, polished PVC, wet-look spandex, patent leather, chlorinated rubber, slick sealant finish",
+      "render_quality": "Shiny, edgy, high-polish fetish aesthetic, studio-reflection perfection",
+      "spatial_distortion": "None",
+      "atmosphere": "Intense, sleek, power-dressing charge, mirror-shine confidence, club-kid edge",
+      "key_features": "Reflections, crease-free tension, zip front, corset lacing, high-shine polish",
+      "creative_brief": "Light slides across polished latex like a gloved hand searching for a seam that does not exist, every curve a mirror reflecting the room back at itself in distorted worship. The material is a second skin that reveals everything while concealing everything, high-gloss armor for those who understand that the most powerful garment is the one that leaves nothing to the imagination but the person inside it."
+    }
   },
   {
-    id: 'SP08-053',
-    name: 'Fur Coat',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'smooth',
-    style: {
-      aesthetic: 'Luxury fur, old-Hollywood opulence, cold-climate extravagance',
-      form_and_line:
-        'Soft edges, voluminous-sleeve bulk, shawl-collar wrap, floor-length column, muff-hand enclosure',
-      color_palette:
-        'Brown/White, sable, silver-fox, chinchilla grey, mink-champagne, arctic-white',
-      lighting_setup:
-        'Soft, diffused-glamour light, fur-halo rim, vanity-mirror warmth, evening-interior amber',
-      material_texture:
-        'Fur strands, mink guard hairs, fox underwool, chinchilla density, sable tips, shearling curl, silken guard',
-      render_quality: 'Expensive, soft, fur-atelier luxury, tactile-lavish perfection',
-      spatial_distortion: 'None',
-      atmosphere: 'Rich, warm, fireside-comfort, champagne-evening ease, first-class decadence',
-      key_features: 'Fluff, guard-hair sheen, dense underwool, dramatic collar, full-length sweep',
-      creative_brief:
-        'Guard hairs catching light like a thousand tiny antennae tuned to the frequency of opulence, sable sweeping across shoulders with the weight of a climate that knows nothing of seasons, only of elevation. The fur swallows the body into a silhouette that is half animal and half aristocrat, chinchilla density absorbing sound until the only thing audible is the rustle of wealth too old to announce itself.',
-    },
+    "id": "SP08-053",
+    "name": "Fur Coat",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "smooth",
+    "style": {
+      "aesthetic": "Luxury fur, old-Hollywood opulence, cold-climate extravagance",
+      "form_and_line": "Soft edges, voluminous-sleeve bulk, shawl-collar wrap, floor-length column, muff-hand enclosure",
+      "color_palette": "Brown/White, sable, silver-fox, chinchilla grey, mink-champagne, arctic-white",
+      "lighting_setup": "Soft, diffused-glamour light, fur-halo rim, vanity-mirror warmth, evening-interior amber",
+      "material_texture": "Fur strands, mink guard hairs, fox underwool, chinchilla density, sable tips, shearling curl, silken guard",
+      "render_quality": "Expensive, soft, fur-atelier luxury, tactile-lavish perfection",
+      "spatial_distortion": "None",
+      "atmosphere": "Rich, warm, fireside-comfort, champagne-evening ease, first-class decadence",
+      "key_features": "Fluff, guard-hair sheen, dense underwool, dramatic collar, full-length sweep",
+      "creative_brief": "Guard hairs catching light like a thousand tiny antennae tuned to the frequency of opulence, sable sweeping across shoulders with the weight of a climate that knows nothing of seasons, only of elevation. The fur swallows the body into a silhouette that is half animal and half aristocrat, chinchilla density absorbing sound until the only thing audible is the rustle of wealth too old to announce itself."
+    }
   },
   {
-    id: 'SP08-056',
-    name: 'Silk & Satin',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'rough, matte',
-    style: {
-      aesthetic: 'Slip dress, boudoir-elegance minimalism, liquid-light sensuality',
-      form_and_line:
-        'Fluid drape, bias-cut column, cowl-neck waterfall, spaghetti-strap line, floor-grazing hem',
-      color_palette: 'Champagne, Red, oyster, rose-quartz, midnight-navy, ivory, blush, emerald',
-      lighting_setup:
-        'Soft sheen, candlelight ripple, vanity-bulb warmth, afternoon-window silk glow',
-      material_texture:
-        'Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette',
-      render_quality: 'Elegant, soft, boudoir-editorial luxury, light-caught-on-fabric poetry',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Sensual, expensive, bedroom-secret intimacy, champagne-bubble delicacy, silk-against-skin luxury',
-      key_features:
-        'Drape folds, bias-cut cling, cowl neck, spaghetti straps, liquid-sheen movement',
-      creative_brief:
-        "Charmeuse pooling like spilled champagne across collarbones, the bias cut following gravity's argument with the body down to a hem that sweeps the floor in a whisper. Candlelight ripples across the surface in slow liquid waves, each fold a study in the physics of light meeting fiber spun by worms and woven into the closest thing a garment can get to being a second atmosphere.",
-    },
+    "id": "SP08-056",
+    "name": "Silk & Satin",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "rough, matte",
+    "style": {
+      "aesthetic": "Slip dress, boudoir-elegance minimalism, liquid-light sensuality",
+      "form_and_line": "Fluid drape, bias-cut column, cowl-neck waterfall, spaghetti-strap line, floor-grazing hem",
+      "color_palette": "Champagne, Red, oyster, rose-quartz, midnight-navy, ivory, blush, emerald",
+      "lighting_setup": "Soft sheen, candlelight ripple, vanity-bulb warmth, afternoon-window silk glow",
+      "material_texture": "Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette",
+      "render_quality": "Elegant, soft, boudoir-editorial luxury, light-caught-on-fabric poetry",
+      "spatial_distortion": "None",
+      "atmosphere": "Sensual, expensive, bedroom-secret intimacy, champagne-bubble delicacy, silk-against-skin luxury",
+      "key_features": "Drape folds, bias-cut cling, cowl neck, spaghetti straps, liquid-sheen movement",
+      "creative_brief": "Charmeuse pooling like spilled champagne across collarbones, the bias cut following gravity's argument with the body down to a hem that sweeps the floor in a whisper. Candlelight ripples across the surface in slow liquid waves, each fold a study in the physics of light meeting fiber spun by worms and woven into the closest thing a garment can get to being a second atmosphere."
+    }
   },
   {
-    id: 'SP08-059',
-    name: 'Transparent Plastic',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'opaque',
-    style: {
-      aesthetic: 'Raincoat, weather-ready futurism, urban-downpour chic',
-      form_and_line:
-        'Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc',
-      color_palette:
-        'Clear, tint, optic-clear, smoked-grey, amber-tint, cyan, translucent-white, rose',
-      lighting_setup:
-        'Reflective, wet-surface glare, rain-streak catchlights, streetlamp-refraction, overcast-diffusion',
-      material_texture:
-        'Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC',
-      render_quality: 'Waterproof, modern, wet-weather editorial, transparent-tech sophistication',
-      spatial_distortion: 'See-through',
-      atmosphere: 'Wet, tech, urban-rain serenity, downpour-preparedness, future-commute cool',
-      key_features:
-        'Transparency, heat-sealed seams, layered visibility, rain droplets, reflective trim',
-      creative_brief:
-        'Raindrops bead on clear TPU like mercury searching for a seam that was heat-sealed into nonexistence, the body beneath visible through a membrane that separates the wearer from weather without hiding anything. Streetlamp light refracts through the transparent shell, casting prismatic distortions across the silhouette of someone who prepared for this downpour and now walks through it like a ghost through a wall.',
-    },
+    "id": "SP08-059",
+    "name": "Transparent Plastic",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "opaque",
+    "style": {
+      "aesthetic": "Raincoat, weather-ready futurism, urban-downpour chic",
+      "form_and_line": "Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc",
+      "color_palette": "Clear, tint, optic-clear, smoked-grey, amber-tint, cyan, translucent-white, rose",
+      "lighting_setup": "Reflective, wet-surface glare, rain-streak catchlights, streetlamp-refraction, overcast-diffusion",
+      "material_texture": "Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC",
+      "render_quality": "Waterproof, modern, wet-weather editorial, transparent-tech sophistication",
+      "spatial_distortion": "See-through",
+      "atmosphere": "Wet, tech, urban-rain serenity, downpour-preparedness, future-commute cool",
+      "key_features": "Transparency, heat-sealed seams, layered visibility, rain droplets, reflective trim",
+      "creative_brief": "Raindrops bead on clear TPU like mercury searching for a seam that was heat-sealed into nonexistence, the body beneath visible through a membrane that separates the wearer from weather without hiding anything. Streetlamp light refracts through the transparent shell, casting prismatic distortions across the silhouette of someone who prepared for this downpour and now walks through it like a ghost through a wall."
+    }
   },
   {
-    id: 'SP08-073',
-    name: 'Body Paint',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'clothes',
-    style: {
-      aesthetic: 'Painted clothes, trompe-l-oeil illusion, skin-as-canvas transformation',
-      form_and_line:
-        'Brush strokes on skin, painted-lapel line, faux-button stroke, body-contour follow, wet-paint flow',
-      color_palette:
-        'Vibrant, primary-bold, acrylic-bright, UV-reactive, metallic-body, matte-flat, dayglo',
-      lighting_setup:
-        'Studio, diffused-even light, ring-flash catch, body-paint evenness, exhibition-gallery spot',
-      material_texture:
-        'Matte paint, body-paint film, glycerin-sheen, airbrush-gradient, brush-stroke relief, skin-oil through paint',
-      render_quality: 'Artistic, illusion, living-canvas spectacle, body-art mastery',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Creative, naked, painted-vulnerability confidence, art-gallery hush, body-ceremony ritual',
-      key_features:
-        'Paint, brush strokes, trompe-l-oeil effect, painted seams, skin-texture beneath',
-      creative_brief:
-        "Brush strokes that trace lapels and buttonholes where none exist, the body a trompe-l'oeil canvas that tricks the eye into seeing fabric where there is only pigment and skin. Acrylic matte drying to a second epidermis, airbrush gradients creating shadows that move when the wearer does, the paint fragile and temporary, clothing worn only for the duration of a photograph before water returns the body to itself.",
-    },
+    "id": "SP08-073",
+    "name": "Body Paint",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "clothes",
+    "style": {
+      "aesthetic": "Painted clothes, trompe-l-oeil illusion, skin-as-canvas transformation",
+      "form_and_line": "Brush strokes on skin, painted-lapel line, faux-button stroke, body-contour follow, wet-paint flow",
+      "color_palette": "Vibrant, primary-bold, acrylic-bright, UV-reactive, metallic-body, matte-flat, dayglo",
+      "lighting_setup": "Studio, diffused-even light, ring-flash catch, body-paint evenness, exhibition-gallery spot",
+      "material_texture": "Matte paint, body-paint film, glycerin-sheen, airbrush-gradient, brush-stroke relief, skin-oil through paint",
+      "render_quality": "Artistic, illusion, living-canvas spectacle, body-art mastery",
+      "spatial_distortion": "None",
+      "atmosphere": "Creative, naked, painted-vulnerability confidence, art-gallery hush, body-ceremony ritual",
+      "key_features": "Paint, brush strokes, trompe-l-oeil effect, painted seams, skin-texture beneath",
+      "creative_brief": "Brush strokes that trace lapels and buttonholes where none exist, the body a trompe-l'oeil canvas that tricks the eye into seeing fabric where there is only pigment and skin. Acrylic matte drying to a second epidermis, airbrush gradients creating shadows that move when the wearer does, the paint fragile and temporary, clothing worn only for the duration of a photograph before water returns the body to itself."
+    }
   },
   {
-    id: 'SP08-057',
-    name: 'Tweed Suit',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'smooth, shiny',
-    style: {
-      aesthetic: 'Professor suit, donnish-academia charm, country-estate weekend',
-      form_and_line:
-        'Herringbone pattern, structured-shoulder drape, notch-lapel angle, three-roll-two button stance, trouser-break hem',
-      color_palette: 'Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss',
-      lighting_setup: 'Flat, study-lamp pool, rainy-window grey, library-wingback warmth',
-      material_texture:
-        'Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining',
-      render_quality: 'Classic, textured, Savile Row heritage, country-house authenticity',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Smart, old school, leather-armchair comfort, pipe-smoke contemplation, donnish eccentricity',
-      key_features: 'Herringbone, elbow patches, ticket pocket, knitted tie, brogues',
-      creative_brief:
-        'Herringbone wool woven tight enough to stop a Yorkshire wind, Donegal flecks scattered across the surface like spice in a slow-cooked argument about Proust. Horn buttons, leather elbow patches worn smooth by oak desktops, the three-roll-two lapel rolling with the nonchalance of someone who has forgotten more than most people will ever know about the difference between a good book and a great one.',
-    },
+    "id": "SP08-057",
+    "name": "Tweed Suit",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "smooth, shiny",
+    "style": {
+      "aesthetic": "Professor suit, donnish-academia charm, country-estate weekend",
+      "form_and_line": "Herringbone pattern, structured-shoulder drape, notch-lapel angle, three-roll-two button stance, trouser-break hem",
+      "color_palette": "Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss",
+      "lighting_setup": "Flat, study-lamp pool, rainy-window grey, library-wingback warmth",
+      "material_texture": "Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining",
+      "render_quality": "Classic, textured, Savile Row heritage, country-house authenticity",
+      "spatial_distortion": "None",
+      "atmosphere": "Smart, old school, leather-armchair comfort, pipe-smoke contemplation, donnish eccentricity",
+      "key_features": "Herringbone, elbow patches, ticket pocket, knitted tie, brogues",
+      "creative_brief": "Herringbone wool woven tight enough to stop a Yorkshire wind, Donegal flecks scattered across the surface like spice in a slow-cooked argument about Proust. Horn buttons, leather elbow patches worn smooth by oak desktops, the three-roll-two lapel rolling with the nonchalance of someone who has forgotten more than most people will ever know about the difference between a good book and a great one."
+    }
   },
   {
-    id: 'SP08-072',
-    name: 'Tattoo Skin',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'clean skin',
-    style: {
-      aesthetic: 'Full body suit tattoo, living-canvas autobiography, ink-and-skin devotion',
-      form_and_line:
-        'Ink lines, bodysuit-coverage contour, sleeve-to-chest flow, back-piece canvas, Japanese-traditional background',
-      color_palette:
-        'Blue/Black ink, tebori-indigo, iron-black, old-school red, yellow, green accent, skin-tone canvas',
-      lighting_setup:
-        'Skin, studio-softbox evenness, rim-light muscle definition, tattoo-parlor fluorescent, healed-ink saturation',
-      material_texture:
-        'Skin, healed-ink surface, needle-point texture, raised-line keloid, skin-sheen, stippled-shading dotwork',
-      render_quality: 'Artistic, permanent, irezumi-master precision, living-canvas dedication',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Edgy, committed, ink-commitment gravity, bodysuit-ritual patience, living-art pride',
-      key_features:
-        'Ink, full-coverage bodysuit, Japanese background, sleeve-to-chest connection, healed-settle depth',
-      creative_brief:
-        'Indigo pushed into skin by tebori needles held in hands that learned from hands that learned from hands, a bodysuit of ink mapping a life across the landscape of a single canvas. Japanese waves and wind bars flow from shoulder to wrist, koi swimming upstream toward a chest that holds the story of every hour spent under the needle, the healed ink settled into skin like a memory that cannot be separated from the body that carries it.',
-    },
+    "id": "SP08-072",
+    "name": "Tattoo Skin",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "clean skin",
+    "style": {
+      "aesthetic": "Full body suit tattoo, living-canvas autobiography, ink-and-skin devotion",
+      "form_and_line": "Ink lines, bodysuit-coverage contour, sleeve-to-chest flow, back-piece canvas, Japanese-traditional background",
+      "color_palette": "Blue/Black ink, tebori-indigo, iron-black, old-school red, yellow, green accent, skin-tone canvas",
+      "lighting_setup": "Skin, studio-softbox evenness, rim-light muscle definition, tattoo-parlor fluorescent, healed-ink saturation",
+      "material_texture": "Skin, healed-ink surface, needle-point texture, raised-line keloid, skin-sheen, stippled-shading dotwork",
+      "render_quality": "Artistic, permanent, irezumi-master precision, living-canvas dedication",
+      "spatial_distortion": "None",
+      "atmosphere": "Edgy, committed, ink-commitment gravity, bodysuit-ritual patience, living-art pride",
+      "key_features": "Ink, full-coverage bodysuit, Japanese background, sleeve-to-chest connection, healed-settle depth",
+      "creative_brief": "Indigo pushed into skin by tebori needles held in hands that learned from hands that learned from hands, a bodysuit of ink mapping a life across the landscape of a single canvas. Japanese waves and wind bars flow from shoulder to wrist, koi swimming upstream toward a chest that holds the story of every hour spent under the needle, the healed ink settled into skin like a memory that cannot be separated from the body that carries it."
+    }
   },
   {
-    id: 'SP08-062',
-    name: 'Leather Armor',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'metal, cloth',
-    style: {
-      aesthetic: 'Fantasy rogue, shadow-guild anonymity, dungeon-crawler practicality',
-      form_and_line:
-        'Straps, studs, asymmetrical-harness geometry, pauldron-shoulder square, bracer-forearm wrap, hooded-cowl depth',
-      color_palette: 'Brown, Black, oxblood, oiled-chestnut, shadow-black, bronze-stud, smoke',
-      lighting_setup:
-        'Subsurface scatter, torchlit-corridor amber, dungeon-shadow depth, candle-flicker rim, moonlight-through-bars',
-      material_texture:
-        'Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather panel',
-      render_quality: 'Tough, flexible, D&D-manual realism, stealth-gear authenticity',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Adventure, tough, shadow-alley tension, lockpick silence, midnight-escape adrenaline',
-      key_features: 'Buckles, hood, hidden pouches, throwing-knife bandolier, soft-soled boots',
-      creative_brief:
-        'Oil-tanned hide molded by use into a second skeleton that moves without sound, brass studs catching torchlight in brief flashes that reveal nothing. The asymmetrical harness crosses a chest that rises and falls with the rhythm of someone who picks locks by feel and counts footsteps by instinct, hidden pouches holding tools for a trade that prefers to leave no signature.',
-    },
+    "id": "SP08-062",
+    "name": "Leather Armor",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "metal, cloth",
+    "style": {
+      "aesthetic": "Fantasy rogue, shadow-guild anonymity, dungeon-crawler practicality",
+      "form_and_line": "Straps, studs, asymmetrical-harness geometry, pauldron-shoulder square, bracer-forearm wrap, hooded-cowl depth",
+      "color_palette": "Brown, Black, oxblood, oiled-chestnut, shadow-black, bronze-stud, smoke",
+      "lighting_setup": "Subsurface scatter, torchlit-corridor amber, dungeon-shadow depth, candle-flicker rim, moonlight-through-bars",
+      "material_texture": "Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather panel",
+      "render_quality": "Tough, flexible, D&D-manual realism, stealth-gear authenticity",
+      "spatial_distortion": "None",
+      "atmosphere": "Adventure, tough, shadow-alley tension, lockpick silence, midnight-escape adrenaline",
+      "key_features": "Buckles, hood, hidden pouches, throwing-knife bandolier, soft-soled boots",
+      "creative_brief": "Oil-tanned hide molded by use into a second skeleton that moves without sound, brass studs catching torchlight in brief flashes that reveal nothing. The asymmetrical harness crosses a chest that rises and falls with the rhythm of someone who picks locks by feel and counts footsteps by instinct, hidden pouches holding tools for a trade that prefers to leave no signature."
+    }
   },
   {
-    id: 'SP08-074',
-    name: 'Bandage/Mummy',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'skin',
-    style: {
-      aesthetic: 'Wrapped in bandages, tomb-risen horror, ancient-curse concealment',
-      form_and_line:
-        'Wrapping lines, body-enveloping spiral, mummiform-silhouette, crossing-bandage grid, trailing-wrap end',
-      color_palette:
-        'White, Dirty, aged-linen, dried-blood brown, desert-dust tan, tomb-shadow grey, ancient-yellow',
-      lighting_setup:
-        'Flat, tomb-interior dimness, torch-flicker amber, sarcophagus-shadow mystery, excavation-site daylight',
-      material_texture:
-        'Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk',
-      render_quality: 'Spooky, hurt, Universal-monster atmosphere, curse-of-the-pharaoh dread',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Horror, hidden, sarcophagus-confinement dread, ancient-awakening tension, wrapped-identity mystery',
-      key_features:
-        'Wraps, layered bandages, trailing ends, gap-showing skin, wrapped-face silhouette',
-      creative_brief:
-        'Linen strips wrapped in spirals that follow the logic of embalming texts older than any living language, frayed edges trailing dust from a sarcophagus that held its occupant for three millennia. The cross-wrapped bandages reveal only fragments of the form beneath, gaps that suggest more than they expose, the whole figure a walking riddle wrapped in the fabric of its own funeral.',
-    },
+    "id": "SP08-074",
+    "name": "Bandage/Mummy",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "skin",
+    "style": {
+      "aesthetic": "Wrapped in bandages, tomb-risen horror, ancient-curse concealment",
+      "form_and_line": "Wrapping lines, body-enveloping spiral, mummiform-silhouette, crossing-bandage grid, trailing-wrap end",
+      "color_palette": "White, Dirty, aged-linen, dried-blood brown, desert-dust tan, tomb-shadow grey, ancient-yellow",
+      "lighting_setup": "Flat, tomb-interior dimness, torch-flicker amber, sarcophagus-shadow mystery, excavation-site daylight",
+      "material_texture": "Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk",
+      "render_quality": "Spooky, hurt, Universal-monster atmosphere, curse-of-the-pharaoh dread",
+      "spatial_distortion": "None",
+      "atmosphere": "Horror, hidden, sarcophagus-confinement dread, ancient-awakening tension, wrapped-identity mystery",
+      "key_features": "Wraps, layered bandages, trailing ends, gap-showing skin, wrapped-face silhouette",
+      "creative_brief": "Linen strips wrapped in spirals that follow the logic of embalming texts older than any living language, frayed edges trailing dust from a sarcophagus that held its occupant for three millennia. The cross-wrapped bandages reveal only fragments of the form beneath, gaps that suggest more than they expose, the whole figure a walking riddle wrapped in the fabric of its own funeral."
+    }
   },
   {
-    id: 'SP08-064',
-    name: 'Burlap/Rags',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'silk, clean',
-    style: {
-      aesthetic: 'Peasant clothes, medieval-field humility, honest-labor simplicity',
-      form_and_line:
-        'Loose weave, tunic-length drape, rope-belt cinch, hood-cowl silhouette, gathered-neckline ease',
-      color_palette: 'Brown, Grey, undyed-flax, mud, oatmeal, ash, weathered-hemp',
-      lighting_setup: 'Flat, overcast-field light, cottage-window dimness, hearth-fire amber',
-      material_texture:
-        'Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord',
-      render_quality: 'Poor, scratchy, honest-poverty texture, feudal-era authenticity',
-      spatial_distortion: 'Holes',
-      atmosphere:
-        'Sad, poverty, humble-endurance dignity, harvest-field weariness, simple-life resilience',
-      key_features: 'Fraying, rope belt, rough patches, raw hem, homespun texture',
-      creative_brief:
-        'Jute fiber coarse enough to leave its imprint on skin, the tunic hanging from shoulders shaped by harvest seasons and the mathematics of scarcity. A rope belt cinches the waist at the point where dignity meets necessity, frayed hems trailing threads that catch morning light through a cottage window, the whole garment a testament to the beauty of fabric that has never known pretense.',
-    },
+    "id": "SP08-064",
+    "name": "Burlap/Rags",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "silk, clean",
+    "style": {
+      "aesthetic": "Peasant clothes, medieval-field humility, honest-labor simplicity",
+      "form_and_line": "Loose weave, tunic-length drape, rope-belt cinch, hood-cowl silhouette, gathered-neckline ease",
+      "color_palette": "Brown, Grey, undyed-flax, mud, oatmeal, ash, weathered-hemp",
+      "lighting_setup": "Flat, overcast-field light, cottage-window dimness, hearth-fire amber",
+      "material_texture": "Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord",
+      "render_quality": "Poor, scratchy, honest-poverty texture, feudal-era authenticity",
+      "spatial_distortion": "Holes",
+      "atmosphere": "Sad, poverty, humble-endurance dignity, harvest-field weariness, simple-life resilience",
+      "key_features": "Fraying, rope belt, rough patches, raw hem, homespun texture",
+      "creative_brief": "Jute fiber coarse enough to leave its imprint on skin, the tunic hanging from shoulders shaped by harvest seasons and the mathematics of scarcity. A rope belt cinches the waist at the point where dignity meets necessity, frayed hems trailing threads that catch morning light through a cottage window, the whole garment a testament to the beauty of fabric that has never known pretense."
+    }
   },
   {
-    id: 'SP08-061',
-    name: 'Lace',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'solid',
-    style: {
-      aesthetic: 'Wedding dress detail, heirloom-textile romance, cathedral-veil delicacy',
-      form_and_line:
-        'Intricate web, Alencon-pattern spread, scalloped-edge hem, illusion-neckline line, chapel-train sweep',
-      color_palette: 'White, Black, ivory, candlelight, champagne, jet, nude-illusion',
-      lighting_setup:
-        'Backlit, window-light diffusion, veil-glow translucency, chapel-candle warmth, morning-light ethereality',
-      material_texture:
-        'Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza appliqué, re-embroidered motifs',
-      render_quality: 'Delicate, detailed, lacemaker-artisan precision, bridal-couture heritage',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Romantic, fragile, heirloom-promise tenderness, veil-lift anticipation, cathedral-hush beauty',
-      key_features:
-        'Pattern, floral motif, scalloped edge, illusion neckline, hand-embroidered detail',
-      creative_brief:
-        'Threads thinner than hair woven into flowers that will never wilt, Alencon needlepoint mapping a garden across a cathedral-length train. Backlight through tulle turns the veil into a second sky, each Chantilly motif a small promise of permanence in a material defined by its open spaces, the bride wrapped in the accumulated patience of lacemakers who died before she was born.',
-    },
+    "id": "SP08-061",
+    "name": "Lace",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "solid",
+    "style": {
+      "aesthetic": "Wedding dress detail, heirloom-textile romance, cathedral-veil delicacy",
+      "form_and_line": "Intricate web, Alencon-pattern spread, scalloped-edge hem, illusion-neckline line, chapel-train sweep",
+      "color_palette": "White, Black, ivory, candlelight, champagne, jet, nude-illusion",
+      "lighting_setup": "Backlit, window-light diffusion, veil-glow translucency, chapel-candle warmth, morning-light ethereality",
+      "material_texture": "Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza appliqué, re-embroidered motifs",
+      "render_quality": "Delicate, detailed, lacemaker-artisan precision, bridal-couture heritage",
+      "spatial_distortion": "None",
+      "atmosphere": "Romantic, fragile, heirloom-promise tenderness, veil-lift anticipation, cathedral-hush beauty",
+      "key_features": "Pattern, floral motif, scalloped edge, illusion neckline, hand-embroidered detail",
+      "creative_brief": "Threads thinner than hair woven into flowers that will never wilt, Alencon needlepoint mapping a garden across a cathedral-length train. Backlight through tulle turns the veil into a second sky, each Chantilly motif a small promise of permanence in a material defined by its open spaces, the bride wrapped in the accumulated patience of lacemakers who died before she was born."
+    }
   },
   {
-    id: 'SP08-054',
-    name: 'Chainmail',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'cloth',
-    style: {
-      aesthetic: 'Armor mesh, medieval-smithy craft, interlocked-defense beauty',
-      form_and_line:
-        'Tiny rings, butted-ring grid, riveted-flat drape, hauberk-length column, coif-hood circumference',
-      color_palette:
-        'Silver, steel-grey, polished-iron, oiled-black, bronze-ring, galvanized-sheen',
-      lighting_setup:
-        'Sparkle, forge-fire warmth, ring-reflection glint, torch-lit corridor, overcast-daylight evenness',
-      material_texture:
-        'Metal rings, riveted steel links, butted-iron rings, oiled-mail, brass-trim rings, leather-backing strap',
-      render_quality: 'Detailed, heavy, forge-craft authenticity, ring-by-ring precision',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Protective, historic, castle-garrison readiness, crusade-road weariness, anvil-song pride',
-      key_features: 'Mesh pattern, ring grid, coif hood, riveted links, mail curtain',
-      creative_brief:
-        'Steel rings interlocked in a grid that has caught arrows and prayers for eight centuries, each riveted link a decision made by a smith who knew that one weak ring means a widow. The hauberk drapes with the weight of a second skeleton, torchlight dancing across the mesh like a nervous scout testing the perimeter of a fortress that has never been breached.',
-    },
+    "id": "SP08-054",
+    "name": "Chainmail",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "cloth",
+    "style": {
+      "aesthetic": "Armor mesh, medieval-smithy craft, interlocked-defense beauty",
+      "form_and_line": "Tiny rings, butted-ring grid, riveted-flat drape, hauberk-length column, coif-hood circumference",
+      "color_palette": "Silver, steel-grey, polished-iron, oiled-black, bronze-ring, galvanized-sheen",
+      "lighting_setup": "Sparkle, forge-fire warmth, ring-reflection glint, torch-lit corridor, overcast-daylight evenness",
+      "material_texture": "Metal rings, riveted steel links, butted-iron rings, oiled-mail, brass-trim rings, leather-backing strap",
+      "render_quality": "Detailed, heavy, forge-craft authenticity, ring-by-ring precision",
+      "spatial_distortion": "None",
+      "atmosphere": "Protective, historic, castle-garrison readiness, crusade-road weariness, anvil-song pride",
+      "key_features": "Mesh pattern, ring grid, coif hood, riveted links, mail curtain",
+      "creative_brief": "Steel rings interlocked in a grid that has caught arrows and prayers for eight centuries, each riveted link a decision made by a smith who knew that one weak ring means a widow. The hauberk drapes with the weight of a second skeleton, torchlight dancing across the mesh like a nervous scout testing the perimeter of a fortress that has never been breached."
+    }
   },
   {
-    id: 'SP08-055',
-    name: 'Knitted Wool',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'smooth',
-    style: {
-      aesthetic: 'Chunky sweater, hygge-comfort warmth, Nordic-cabin coziness',
-      form_and_line:
-        'Cable knit pattern, oversized-sweater volume, drop-shoulder ease, ribbed-cuff taper, turtleneck cylinder',
-      color_palette: 'Cream, Grey, oatmeal, charcoal, forest, mustard, rust, undyed-wool ivory',
-      lighting_setup:
-        'Soft, window-light overcast, fireplace-warm amber, candle-flicker glow, afternoon-knit session',
-      material_texture:
-        'Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief',
-      render_quality: 'Cozy, warm, cabin-retreat comfort, Aran-island authenticity',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Comfortable, winter, fireside-contentment, cocoa-and-wool warmth, snowed-in serenity',
-      key_features: 'Knit loops, cable braid, ribbed hem, wooden buttons, rolled neck',
-      creative_brief:
-        'Cable-knit braids running across a chest like topographical maps of the Aran Islands, each stitch a genealogy encoded in wool. The alpaca halo catches firelight on microscopic fibers that float above the surface like a warm fog, wooden buttons anchoring the whole to a tradition that predates central heating, the sweater heavy with the love of hands that knit through winter.',
-    },
+    "id": "SP08-055",
+    "name": "Knitted Wool",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "smooth",
+    "style": {
+      "aesthetic": "Chunky sweater, hygge-comfort warmth, Nordic-cabin coziness",
+      "form_and_line": "Cable knit pattern, oversized-sweater volume, drop-shoulder ease, ribbed-cuff taper, turtleneck cylinder",
+      "color_palette": "Cream, Grey, oatmeal, charcoal, forest, mustard, rust, undyed-wool ivory",
+      "lighting_setup": "Soft, window-light overcast, fireplace-warm amber, candle-flicker glow, afternoon-knit session",
+      "material_texture": "Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief",
+      "render_quality": "Cozy, warm, cabin-retreat comfort, Aran-island authenticity",
+      "spatial_distortion": "None",
+      "atmosphere": "Comfortable, winter, fireside-contentment, cocoa-and-wool warmth, snowed-in serenity",
+      "key_features": "Knit loops, cable braid, ribbed hem, wooden buttons, rolled neck",
+      "creative_brief": "Cable-knit braids running across a chest like topographical maps of the Aran Islands, each stitch a genealogy encoded in wool. The alpaca halo catches firelight on microscopic fibers that float above the surface like a warm fog, wooden buttons anchoring the whole to a tradition that predates central heating, the sweater heavy with the love of hands that knit through winter."
+    }
   },
   {
-    id: 'SP08-060',
-    name: 'Velvet',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'shiny, hard',
-    style: {
-      aesthetic: 'Evening jacket, after-dark luxury, candlelit-sophistication',
-      form_and_line:
-        'Soft highlights, shawl-collar wrap, smoking-jacket taper, jacquard-relief silhouette, silk-faced lapel roll',
-      color_palette: 'Deep Blue, Burgundy, midnight, amethyst, forest, oxblood, cognac',
-      lighting_setup:
-        'Soft edge glow, candle-halo warmth, chandelier-dimmer ambiance, piano-bar amber',
-      material_texture:
-        'Plush velvet pile, crushed velvet, silk-velvet devoré, jacquard weave, satin-faced lapel, grosgrain trim',
-      render_quality: 'Rich, soft, smoking-room luxury, velvet-pile depth',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Luxury, night, after-hours refinement, aged-whiskey warmth, private-club exclusivity',
-      key_features: 'Soft sheen, pile-direction gleam, satin lapel, jacquard pattern, frog closure',
-      creative_brief:
-        'Pile fibers bending to capture light and hold it hostage in the nap, the surface shifting from deep midnight to amethyst glow depending on which direction the hand smoothed it last. The shawl collar wraps around the neck like a conspiratorial whisper at a private club where the whiskey is older than the membership, silk-faced lapels gleaming with the quiet satisfaction of those who know that true luxury is never loud.',
-    },
+    "id": "SP08-060",
+    "name": "Velvet",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "shiny, hard",
+    "style": {
+      "aesthetic": "Evening jacket, after-dark luxury, candlelit-sophistication",
+      "form_and_line": "Soft highlights, shawl-collar wrap, smoking-jacket taper, jacquard-relief silhouette, silk-faced lapel roll",
+      "color_palette": "Deep Blue, Burgundy, midnight, amethyst, forest, oxblood, cognac",
+      "lighting_setup": "Soft edge glow, candle-halo warmth, chandelier-dimmer ambiance, piano-bar amber",
+      "material_texture": "Plush velvet pile, crushed velvet, silk-velvet devoré, jacquard weave, satin-faced lapel, grosgrain trim",
+      "render_quality": "Rich, soft, smoking-room luxury, velvet-pile depth",
+      "spatial_distortion": "None",
+      "atmosphere": "Luxury, night, after-hours refinement, aged-whiskey warmth, private-club exclusivity",
+      "key_features": "Soft sheen, pile-direction gleam, satin lapel, jacquard pattern, frog closure",
+      "creative_brief": "Pile fibers bending to capture light and hold it hostage in the nap, the surface shifting from deep midnight to amethyst glow depending on which direction the hand smoothed it last. The shawl collar wraps around the neck like a conspiratorial whisper at a private club where the whiskey is older than the membership, silk-faced lapels gleaming with the quiet satisfaction of those who know that true luxury is never loud."
+    }
   },
   {
-    id: 'SP08-066',
-    name: 'Origami Paper',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'fabric',
-    style: {
-      aesthetic: 'Paper dress, washi-sculpture fragility, geometric-origami couture',
-      form_and_line:
-        'Sharp folds, mountain-valley crease, triangular-panel construction, accordion-pleat compression, angular-bodice geometry',
-      color_palette:
-        'White paper, rice-paper cream, kraft-brown, washi-natural, metallic-gold foil, indigo-dyed edge',
-      lighting_setup:
-        'Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama',
-      material_texture:
-        'Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge',
-      render_quality: 'Artistic, fragile, Issey-Miyake-pleat poetry, paper-sculpture wonder',
-      spatial_distortion: 'Rigid',
-      atmosphere:
-        'Creative, stiff, museum-gallery hush, delicate-construction tension, ephemeral-material poetry',
-      key_features: 'Folds, crisp crease lines, paper edges, origami geometry, tear-away reveal',
-      creative_brief:
-        'Washi fiber holding mountain and valley folds with the tension of a crane suspended between flight and stillness, triangular panels constructing a bodice from the same mathematics that turns a flat sheet into a universe of form. Raking light carves shadows into the creases, each fold a decision that cannot be unmade, the dress standing at the intersection of architecture and impermanence.',
-    },
+    "id": "SP08-066",
+    "name": "Origami Paper",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "fabric",
+    "style": {
+      "aesthetic": "Paper dress, washi-sculpture fragility, geometric-origami couture",
+      "form_and_line": "Sharp folds, mountain-valley crease, triangular-panel construction, accordion-pleat compression, angular-bodice geometry",
+      "color_palette": "White paper, rice-paper cream, kraft-brown, washi-natural, metallic-gold foil, indigo-dyed edge",
+      "lighting_setup": "Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama",
+      "material_texture": "Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge",
+      "render_quality": "Artistic, fragile, Issey-Miyake-pleat poetry, paper-sculpture wonder",
+      "spatial_distortion": "Rigid",
+      "atmosphere": "Creative, stiff, museum-gallery hush, delicate-construction tension, ephemeral-material poetry",
+      "key_features": "Folds, crisp crease lines, paper edges, origami geometry, tear-away reveal",
+      "creative_brief": "Washi fiber holding mountain and valley folds with the tension of a crane suspended between flight and stillness, triangular panels constructing a bodice from the same mathematics that turns a flat sheet into a universe of form. Raking light carves shadows into the creases, each fold a decision that cannot be unmade, the dress standing at the intersection of architecture and impermanence."
+    }
   },
   {
-    id: 'SP08-068',
-    name: 'Smoke Dress',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'solid',
-    style: {
-      aesthetic: 'Dress made of smoke, evanescent-form poetry, vapor-sculpture impossibility',
-      form_and_line:
-        'Swirling, billow-plume volume, tendril-curl silhouette, dissipating-edge softness, columnar-rising column',
-      color_palette:
-        'Grey, White, charcoal-wisp, pearl-haze, silver-smoke, blue-grey, ethereal-mist',
-      lighting_setup:
-        'Volumetric, god-ray penetration, smoke-halo backlight, theatrical-haze ambiance, laser-shaft definition',
-      material_texture:
-        'Gas, particulate-suspension wisp, layered-veil translucency, turbulent-curl, still-stratum band, wisp-edge diffusion',
-      render_quality: 'Ethereal, impossible, volumetric-light poetry, ghost-presence majesty',
-      spatial_distortion: 'Dissolving',
-      atmosphere:
-        'Ghostly, magic, fading-presence melancholy, incense-ritual mystery, phantasm-elegance',
-      key_features:
-        'No edges, wisp boundary, volume-without-surface, light-through-form, tendril dissolution',
-      creative_brief:
-        'Tendrils of particulate suspension coiling around a form that is half body and half memory, the dress billowing upward in plumes that defy the gravity textiles obey. Laser shafts cut through the vapor, revealing strata of density and dissolution, a garment whose edges exist only as a negotiation between visibility and atmosphere, worn by a figure already beginning to fade at the hemline.',
-    },
+    "id": "SP08-068",
+    "name": "Smoke Dress",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "solid",
+    "style": {
+      "aesthetic": "Dress made of smoke, evanescent-form poetry, vapor-sculpture impossibility",
+      "form_and_line": "Swirling, billow-plume volume, tendril-curl silhouette, dissipating-edge softness, columnar-rising column",
+      "color_palette": "Grey, White, charcoal-wisp, pearl-haze, silver-smoke, blue-grey, ethereal-mist",
+      "lighting_setup": "Volumetric, god-ray penetration, smoke-halo backlight, theatrical-haze ambiance, laser-shaft definition",
+      "material_texture": "Gas, particulate-suspension wisp, layered-veil translucency, turbulent-curl, still-stratum band, wisp-edge diffusion",
+      "render_quality": "Ethereal, impossible, volumetric-light poetry, ghost-presence majesty",
+      "spatial_distortion": "Dissolving",
+      "atmosphere": "Ghostly, magic, fading-presence melancholy, incense-ritual mystery, phantasm-elegance",
+      "key_features": "No edges, wisp boundary, volume-without-surface, light-through-form, tendril dissolution",
+      "creative_brief": "Tendrils of particulate suspension coiling around a form that is half body and half memory, the dress billowing upward in plumes that defy the gravity textiles obey. Laser shafts cut through the vapor, revealing strata of density and dissolution, a garment whose edges exist only as a negotiation between visibility and atmosphere, worn by a figure already beginning to fade at the hemline."
+    }
   },
   {
-    id: 'SP08-071',
-    name: 'Porcelain Doll',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'skin',
-    style: {
-      aesthetic: 'Living doll, uncanny-valley porcelain, toy-cabinet nightmare',
-      form_and_line:
-        'Cracks (optional), ball-joint articulation, bisque-head proportion, glass-eye stare, hinged-limb segmentation',
-      color_palette:
-        'Pale White, Pink, bisque, rose-blush, glass-blue iris, crackle-gold, doll-flesh cream',
-      lighting_setup:
-        'Glossy, display-cabinet spot, porcelain-reflection highlights, window-ledge daylight, toy-room dimness',
-      material_texture:
-        'Ceramic bisque, high-fire glaze, glass eyes, mohair wig, kid-leather body, painted-blush, crackle-kintsugi',
-      render_quality: 'Creepy, perfect, dollmaker-artisan precision, cabinet-photograph stillness',
-      spatial_distortion: 'Joints',
-      atmosphere:
-        'Uncanny, stiff, toy-room-after-dark unease, porcelain-fragility tension, glass-stare mystery',
-      key_features: 'Shiny skin, glass eyes, ball joints, painted cheeks, mohair wig',
-      creative_brief:
-        'Bisque fired to the temperature of a blush that will never fade, glass eyes catching display-cabinet light with the frozen attentiveness of something that was never alive but never stops watching. Ball joints articulate limbs into poses chosen by someone else, mohair wig perfectly arranged, the crackle-gold kintsugi line across the cheek the only evidence that this perfection was ever broken and reassembled with more care than the original creation.',
-    },
+    "id": "SP08-071",
+    "name": "Porcelain Doll",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "skin",
+    "style": {
+      "aesthetic": "Living doll, uncanny-valley porcelain, toy-cabinet nightmare",
+      "form_and_line": "Cracks (optional), ball-joint articulation, bisque-head proportion, glass-eye stare, hinged-limb segmentation",
+      "color_palette": "Pale White, Pink, bisque, rose-blush, glass-blue iris, crackle-gold, doll-flesh cream",
+      "lighting_setup": "Glossy, display-cabinet spot, porcelain-reflection highlights, window-ledge daylight, toy-room dimness",
+      "material_texture": "Ceramic bisque, high-fire glaze, glass eyes, mohair wig, kid-leather body, painted-blush, crackle-kintsugi",
+      "render_quality": "Creepy, perfect, dollmaker-artisan precision, cabinet-photograph stillness",
+      "spatial_distortion": "Joints",
+      "atmosphere": "Uncanny, stiff, toy-room-after-dark unease, porcelain-fragility tension, glass-stare mystery",
+      "key_features": "Shiny skin, glass eyes, ball joints, painted cheeks, mohair wig",
+      "creative_brief": "Bisque fired to the temperature of a blush that will never fade, glass eyes catching display-cabinet light with the frozen attentiveness of something that was never alive but never stops watching. Ball joints articulate limbs into poses chosen by someone else, mohair wig perfectly arranged, the crackle-gold kintsugi line across the cheek the only evidence that this perfection was ever broken and reassembled with more care than the original creation."
+    }
   },
   {
-    id: 'SP08-076',
-    name: 'Slime/Goo',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'dry',
-    style: {
-      aesthetic: 'Covered in slime, toxic-spill horror, ectoplasmic-goo body',
-      form_and_line:
-        'Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation',
-      color_palette:
-        'Neon Green, toxic-slime, chartreuse, radioactive-amber, bioluminescent-blue, nuclear-waste, sickly-yellow',
-      lighting_setup:
-        'Glossy, wet-look specular, blacklight-UV fluorescence, under-shelf neon, lab-emergency flicker',
-      material_texture:
-        'Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension',
-      render_quality: 'Gross, sci-fi, Ghostbusters-ectoplasm goo, lab-accident horror',
-      spatial_distortion: 'Melting',
-      atmosphere: 'Weird, sticky, containment-breach disgust, slime-pit dread, oozing-drip tension',
-      key_features:
-        'Drips, stringy tendrils, bubble suspension, wet-gloss surface, gravity-sag form',
-      creative_brief:
-        'Chartreuse viscosity draping over shoulders in thick sheets that sag under their own weight, stringy tendrils pulling gravity into long strands that drip toward a floor already pooled with luminous residue. Bubbles suspended in gelatinous depths catch blacklight and glow like small toxic moons, the body beneath visible only as a suggestion through layers of substance that blur the line between covering and consuming.',
-    },
+    "id": "SP08-076",
+    "name": "Slime/Goo",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "dry",
+    "style": {
+      "aesthetic": "Covered in slime, toxic-spill horror, ectoplasmic-goo body",
+      "form_and_line": "Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation",
+      "color_palette": "Neon Green, toxic-slime, chartreuse, radioactive-amber, bioluminescent-blue, nuclear-waste, sickly-yellow",
+      "lighting_setup": "Glossy, wet-look specular, blacklight-UV fluorescence, under-shelf neon, lab-emergency flicker",
+      "material_texture": "Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension",
+      "render_quality": "Gross, sci-fi, Ghostbusters-ectoplasm goo, lab-accident horror",
+      "spatial_distortion": "Melting",
+      "atmosphere": "Weird, sticky, containment-breach disgust, slime-pit dread, oozing-drip tension",
+      "key_features": "Drips, stringy tendrils, bubble suspension, wet-gloss surface, gravity-sag form",
+      "creative_brief": "Chartreuse viscosity draping over shoulders in thick sheets that sag under their own weight, stringy tendrils pulling gravity into long strands that drip toward a floor already pooled with luminous residue. Bubbles suspended in gelatinous depths catch blacklight and glow like small toxic moons, the body beneath visible only as a suggestion through layers of substance that blur the line between covering and consuming."
+    }
   },
   {
-    id: 'SP08-058',
-    name: 'Sequins',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'matte',
-    style: {
-      aesthetic: 'Disco dress, mirror-ball fantasy, floor-filler magnetism',
-      form_and_line:
-        'Sparkles, sequin-grid drrape, bodycon column, keyhole-back cutout, fringe-hem shake',
-      color_palette: 'Silver, Gold, rose-gold, holographic, champagne, disco-ball prism, copper',
-      lighting_setup:
-        'Glittering, disco-ball fragment light, dancefloor-spot sparkle, colored-gel shimmer, strobe-pulse refraction',
-      material_texture:
-        'Small discs, holographic sequins, bugle-bead fringe, mirror-tile paillettes, crystal mesh, metallic thread',
-      render_quality: 'Flashy, bright, dancefloor-electric energy, mirror-ball perfection',
-      spatial_distortion: 'None',
-      atmosphere:
-        "Party, attention, all-eyes-on-you magnetism, floor-filler confidence, New-Year's-Eve electricity",
-      key_features: 'Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam',
-      creative_brief:
-        'Thousands of tiny mirrors stitched into a grid that catches strobe light and returns it broken into a galaxy of borrowed brilliance, each sequin a pixel in a moving image that changes with every breath. The dress refuses to be one thing, shifting from gold to rose to holographic depending on the angle of approach, an outfit that exists only in relation to the light and the eyes consuming it.',
-    },
+    "id": "SP08-058",
+    "name": "Sequins",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "matte",
+    "style": {
+      "aesthetic": "Disco dress, mirror-ball fantasy, floor-filler magnetism",
+      "form_and_line": "Sparkles, sequin-grid drrape, bodycon column, keyhole-back cutout, fringe-hem shake",
+      "color_palette": "Silver, Gold, rose-gold, holographic, champagne, disco-ball prism, copper",
+      "lighting_setup": "Glittering, disco-ball fragment light, dancefloor-spot sparkle, colored-gel shimmer, strobe-pulse refraction",
+      "material_texture": "Small discs, holographic sequins, bugle-bead fringe, mirror-tile paillettes, crystal mesh, metallic thread",
+      "render_quality": "Flashy, bright, dancefloor-electric energy, mirror-ball perfection",
+      "spatial_distortion": "None",
+      "atmosphere": "Party, attention, all-eyes-on-you magnetism, floor-filler confidence, New-Year's-Eve electricity",
+      "key_features": "Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam",
+      "creative_brief": "Thousands of tiny mirrors stitched into a grid that catches strobe light and returns it broken into a galaxy of borrowed brilliance, each sequin a pixel in a moving image that changes with every breath. The dress refuses to be one thing, shifting from gold to rose to holographic depending on the angle of approach, an outfit that exists only in relation to the light and the eyes consuming it."
+    }
   },
   {
-    id: 'SP08-063',
-    name: 'Feathers',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'fur, hair',
-    style: {
-      aesthetic: 'Showgirl costume, Folies-Bergere extravagance, stage-spectacle plumage',
-      form_and_line:
-        'Soft barbs, feather-fan spread, headdress-arc corona, tail-train sweep, wing-cape silhouette',
-      color_palette:
-        'Bright, Peacock, fuchsia, emerald-green, sapphire, gold, flamingo-pink, iridescent-oil',
-      lighting_setup:
-        'Soft, stage-spotlight drama, feather-edge translucency, backstage-bulb warmth, curtain-call glow',
-      material_texture:
-        'Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle',
-      render_quality: 'Exotic, soft, cabaret-spectacle grandeur, Moulin-Rouge opulence',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Grand, bird, stage-curtain anticipation, plumage-pride majesty, feathered-flight fantasy',
-      key_features: 'Quills, feather fan, headdress, marabou trim, iridescent barb',
-      creative_brief:
-        "Ostrich plumes catching stage light and holding it in a corona of dyed fluff that trembles with the performer's breath, peacock eyes staring from a fan that opens like a sunrise over the Folies-Bergere. Marabou trim floats at the hem like soft punctuation, each barb a filament in a spectacle built from the borrowed plumage of birds who will never see the spotlight.",
-    },
+    "id": "SP08-063",
+    "name": "Feathers",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "fur, hair",
+    "style": {
+      "aesthetic": "Showgirl costume, Folies-Bergere extravagance, stage-spectacle plumage",
+      "form_and_line": "Soft barbs, feather-fan spread, headdress-arc corona, tail-train sweep, wing-cape silhouette",
+      "color_palette": "Bright, Peacock, fuchsia, emerald-green, sapphire, gold, flamingo-pink, iridescent-oil",
+      "lighting_setup": "Soft, stage-spotlight drama, feather-edge translucency, backstage-bulb warmth, curtain-call glow",
+      "material_texture": "Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle",
+      "render_quality": "Exotic, soft, cabaret-spectacle grandeur, Moulin-Rouge opulence",
+      "spatial_distortion": "None",
+      "atmosphere": "Grand, bird, stage-curtain anticipation, plumage-pride majesty, feathered-flight fantasy",
+      "key_features": "Quills, feather fan, headdress, marabou trim, iridescent barb",
+      "creative_brief": "Ostrich plumes catching stage light and holding it in a corona of dyed fluff that trembles with the performer's breath, peacock eyes staring from a fan that opens like a sunrise over the Folies-Bergere. Marabou trim floats at the hem like soft punctuation, each barb a filament in a spectacle built from the borrowed plumage of birds who will never see the spotlight."
+    }
   },
   {
-    id: 'SP08-067',
-    name: 'Bubble Wrap',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'fabric',
-    style: {
-      aesthetic: 'Plastic fashion, pop-art materialism, bubble-texture absurdity',
-      form_and_line:
-        'Circles, bubble-sphere cluster volume, inflatable-cushion silhouette, rounded-bodice geometry, air-filled dimension',
-      color_palette:
-        'Clear plastic, optic-clear, tinted-rose, sky-blue, translucent-mint, iridescent-oil, milky-white',
-      lighting_setup:
-        'Highlights, point-reflection catchlights, studio-softbox pop, plastic-sheen bounce, gallery-overhead',
-      material_texture:
-        'Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam',
-      render_quality: 'Weird, pop art, Warhol-factory irreverence, inflated-sculpture playfulness',
-      spatial_distortion: 'Bulky',
-      atmosphere:
-        'Fun, strange, childlike-wonder whimsy, packaging-material poetry, pop-culture satire',
-      key_features:
-        'Bubbles, air-filled domes, crinkle texture, heat-sealed grid, translucent layers',
-      creative_brief:
-        'Air-filled domes clustering across a bodice like a diagram of molecule bonds rendered in translucent polyethylene, each bubble catching studio light in a tiny convex mirror that distorts the world into a thousand miniature self-portraits. The crinkle of the film promises the satisfaction of a pop that never comes, the dress hovering between packaging material and sculpture, between joke and revelation.',
-    },
+    "id": "SP08-067",
+    "name": "Bubble Wrap",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "fabric",
+    "style": {
+      "aesthetic": "Plastic fashion, pop-art materialism, bubble-texture absurdity",
+      "form_and_line": "Circles, bubble-sphere cluster volume, inflatable-cushion silhouette, rounded-bodice geometry, air-filled dimension",
+      "color_palette": "Clear plastic, optic-clear, tinted-rose, sky-blue, translucent-mint, iridescent-oil, milky-white",
+      "lighting_setup": "Highlights, point-reflection catchlights, studio-softbox pop, plastic-sheen bounce, gallery-overhead",
+      "material_texture": "Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam",
+      "render_quality": "Weird, pop art, Warhol-factory irreverence, inflated-sculpture playfulness",
+      "spatial_distortion": "Bulky",
+      "atmosphere": "Fun, strange, childlike-wonder whimsy, packaging-material poetry, pop-culture satire",
+      "key_features": "Bubbles, air-filled domes, crinkle texture, heat-sealed grid, translucent layers",
+      "creative_brief": "Air-filled domes clustering across a bodice like a diagram of molecule bonds rendered in translucent polyethylene, each bubble catching studio light in a tiny convex mirror that distorts the world into a thousand miniature self-portraits. The crinkle of the film promises the satisfaction of a pop that never comes, the dress hovering between packaging material and sculpture, between joke and revelation."
+    }
   },
   {
-    id: 'SP08-070',
-    name: 'Fire Dress',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'cold',
-    style: {
-      aesthetic:
-        'Hunger Games ceremonial flame couture, Capitol excess, girl-on-fire moment, tribute-parade spectacle',
-      form_and_line:
-        'Flames, flicker-tongue silhouette, cape-sweep conflagration, rising-heat verticality, ember-trail train',
-      color_palette:
-        'Orange, Yellow, crimson-core, gold-white heat, sapphire-blue base, ember-red edge, coal-black ground',
-      lighting_setup:
-        'Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter',
-      material_texture:
-        'Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile',
-      render_quality: 'Dangerous, hot, Cinna-design spectacle, Capitol-television perfection',
-      spatial_distortion: 'Burning',
-      atmosphere:
-        'Powerful, magic, arena-entrance electricity, revolutionary-symbol awe, controlled-combustion beauty',
-      key_features: 'Flames, cape ignition, ember trail, heat shimmer, synthetic flame effect',
-      creative_brief:
-        'Flame tongues licking upward from a hemline that consumes itself and regenerates in the same instant, crimson core glowing through gold-white heat that shimmers the air around the silhouette into mirage. The cape sweeps behind in a conflagration trained to obey couture, synthetic ember fibers scattering light like a controlled supernova, the dress burning without being consumed, a spectacle that walks the line between tribute and revolution.',
-    },
+    "id": "SP08-070",
+    "name": "Fire Dress",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "cold",
+    "style": {
+      "aesthetic": "Hunger Games ceremonial flame couture, Capitol excess, girl-on-fire moment, tribute-parade spectacle",
+      "form_and_line": "Flames, flicker-tongue silhouette, cape-sweep conflagration, rising-heat verticality, ember-trail train",
+      "color_palette": "Orange, Yellow, crimson-core, gold-white heat, sapphire-blue base, ember-red edge, coal-black ground",
+      "lighting_setup": "Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter",
+      "material_texture": "Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile",
+      "render_quality": "Dangerous, hot, Cinna-design spectacle, Capitol-television perfection",
+      "spatial_distortion": "Burning",
+      "atmosphere": "Powerful, magic, arena-entrance electricity, revolutionary-symbol awe, controlled-combustion beauty",
+      "key_features": "Flames, cape ignition, ember trail, heat shimmer, synthetic flame effect",
+      "creative_brief": "Flame tongues licking upward from a hemline that consumes itself and regenerates in the same instant, crimson core glowing through gold-white heat that shimmers the air around the silhouette into mirage. The cape sweeps behind in a conflagration trained to obey couture, synthetic ember fibers scattering light like a controlled supernova, the dress burning without being consumed, a spectacle that walks the line between tribute and revolution."
+    }
   },
   {
-    id: 'SP08-075',
-    name: 'Gold Leaf',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'dull',
-    style: {
-      aesthetic: 'Covered in gold, gilded-divinity fantasy, living-statue opulence',
-      form_and_line:
-        'Flakes, body-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap',
-      color_palette:
-        'Metallic Gold, 24k-yellow, rose-gold, white-gold, champagne-foil, burnished-bronze, copper-patina',
-      lighting_setup:
-        'Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection',
-      material_texture:
-        "Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust",
-      render_quality: 'Expensive, statue, Klimt-gold luxuriance, gilded-age opulence',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Divine, rich, alchemical-wonder awe, temple-treasure sanctity, immortal-beauty stillness',
-      key_features: 'Gold skin, leafing seams, burnished reflection, flake edges, gilded contour',
-      creative_brief:
-        "Twenty-four karat leaf applied directly to skin with a gilder's brush, each flake overlapping the next in a mosaic of pure light that transforms the body into a temple treasury. Burnished surfaces catch and return every photon that touches them, the contours of the figure traced in gold that will outlast the skin beneath, a temporary divinity achieved through the alchemy of metal beaten thinner than thought.",
-    },
+    "id": "SP08-075",
+    "name": "Gold Leaf",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "dull",
+    "style": {
+      "aesthetic": "Covered in gold, gilded-divinity fantasy, living-statue opulence",
+      "form_and_line": "Flakes, body-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap",
+      "color_palette": "Metallic Gold, 24k-yellow, rose-gold, white-gold, champagne-foil, burnished-bronze, copper-patina",
+      "lighting_setup": "Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection",
+      "material_texture": "Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust",
+      "render_quality": "Expensive, statue, Klimt-gold luxuriance, gilded-age opulence",
+      "spatial_distortion": "None",
+      "atmosphere": "Divine, rich, alchemical-wonder awe, temple-treasure sanctity, immortal-beauty stillness",
+      "key_features": "Gold skin, leafing seams, burnished reflection, flake edges, gilded contour",
+      "creative_brief": "Twenty-four karat leaf applied directly to skin with a gilder's brush, each flake overlapping the next in a mosaic of pure light that transforms the body into a temple treasury. Burnished surfaces catch and return every photon that touches them, the contours of the figure traced in gold that will outlast the skin beneath, a temporary divinity achieved through the alchemy of metal beaten thinner than thought."
+    }
   },
   {
-    id: 'SP08-069',
-    name: 'Water Dress',
-    category: '5. Fabric & Texture Focus',
-    negativePrompt: 'dry',
-    style: {
-      aesthetic: 'Dress made of water, liquid-sculpture illusion, elemental-body transformation',
-      form_and_line:
-        'Splashes, cascade-fall drape, droplet-spray volume, surface-tension curve, sheet-flow silhouette, rippling-hem line',
-      color_palette:
-        'Clear Blue, aquamarine, crystal-clear, deep-ocean, turquoise, glacier-blue, refractive-white',
-      lighting_setup:
-        'Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce',
-      material_texture:
-        'Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature',
-      render_quality: 'Magical, fluid, hydro-sculpture wonder, elemental-transformation poetry',
-      spatial_distortion: 'Flowing',
-      atmosphere:
-        'Pure, fantasy, ocean-spirit serenity, water-nymph magic, dissolving-identity mystique',
-      key_features:
-        'Droplets, splash arrest, surface tension, liquid-sheet transparency, flow lines',
-      creative_brief:
-        'Surface tension holding a cascade in the shape of a gown, sheet-flow wrapping around a torso with the impossible stillness of water that has forgotten how to fall. Caustic light dapples through the liquid sleeve, droplets arrested mid-splash like a crown of diamonds orbiting the silhouette, the whole dress a moment stolen from a waterfall and taught to hold its breath.',
-    },
-  },
+    "id": "SP08-069",
+    "name": "Water Dress",
+    "category": "5. Fabric & Texture Focus",
+    "negativePrompt": "dry",
+    "style": {
+      "aesthetic": "Dress made of water, liquid-sculpture illusion, elemental-body transformation",
+      "form_and_line": "Splashes, cascade-fall drape, droplet-spray volume, surface-tension curve, sheet-flow silhouette, rippling-hem line",
+      "color_palette": "Clear Blue, aquamarine, crystal-clear, deep-ocean, turquoise, glacier-blue, refractive-white",
+      "lighting_setup": "Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce",
+      "material_texture": "Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature",
+      "render_quality": "Magical, fluid, hydro-sculpture wonder, elemental-transformation poetry",
+      "spatial_distortion": "Flowing",
+      "atmosphere": "Pure, fantasy, ocean-spirit serenity, water-nymph magic, dissolving-identity mystique",
+      "key_features": "Droplets, splash arrest, surface tension, liquid-sheet transparency, flow lines",
+      "creative_brief": "Surface tension holding a cascade in the shape of a gown, sheet-flow wrapping around a torso with the impossible stillness of water that has forgotten how to fall. Caustic light dapples through the liquid sleeve, droplets arrested mid-splash like a crown of diamonds orbiting the silhouette, the whole dress a moment stolen from a waterfall and taught to hold its breath."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

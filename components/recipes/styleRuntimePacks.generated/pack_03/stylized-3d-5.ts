@@ -4,40 +4,38 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP03-040',
-    name: 'Toon Shader (Cel Shaded)',
-    category: '5. Stylized 3d',
-    negativePrompt: 'realistic, gradient',
-    style: {
-      aesthetic: 'Anime style 3D',
-      form_and_line: 'Black outlines',
-      color_palette: 'Flat bands of color',
-      lighting_setup: 'Hard shadow edge',
-      material_texture: 'Flat, comic-book clarity',
-      render_quality: 'Guilty Gear/Zelda stylized cel-shaded game art, bold outlines, flat magic',
-      spatial_distortion: 'None',
-      atmosphere: 'Illustrated, fun, anime energy',
-      key_features: 'Banded shading, ink-line edges',
-      creative_brief:
-        "Shading collapses into discrete bands — no gradient softening, just the hard edge where light meets shadow like a comic panel rendered in three dimensions. Black ink lines trace every contour, and flat color regions declare themselves with the confidence of a keyframe cel. The image captures Guilty Gear's fighting-game bravado and Zelda's illustrated wonder: 3D geometry wearing 2D conviction, animation energy frozen into a pose that feels one frame from motion.",
-    },
+    "id": "SP03-040",
+    "name": "Toon Shader (Cel Shaded)",
+    "category": "5. Stylized 3d",
+    "negativePrompt": "realistic, gradient",
+    "style": {
+      "aesthetic": "Anime style 3D",
+      "form_and_line": "Black outlines",
+      "color_palette": "Flat bands of color",
+      "lighting_setup": "Hard shadow edge",
+      "material_texture": "Flat, comic-book clarity",
+      "render_quality": "Guilty Gear/Zelda stylized cel-shaded game art, bold outlines, flat magic",
+      "spatial_distortion": "None",
+      "atmosphere": "Illustrated, fun, anime energy",
+      "key_features": "Banded shading, ink-line edges",
+      "creative_brief": "Shading collapses into discrete bands — no gradient softening, just the hard edge where light meets shadow like a comic panel rendered in three dimensions. Black ink lines trace every contour, and flat color regions declare themselves with the confidence of a keyframe cel. The image captures Guilty Gear's fighting-game bravado and Zelda's illustrated wonder: 3D geometry wearing 2D conviction, animation energy frozen into a pose that feels one frame from motion."
+    }
   },
   {
-    id: 'SP03-021',
-    name: 'Low Poly',
-    category: '5. Stylized 3d',
-    negativePrompt: 'high poly, smooth, detailed',
-    style: {
-      aesthetic: 'Minimalist mesh',
-      form_and_line: 'Visible triangles',
-      color_palette: 'Flat shading, vibrant stylized tones',
-      lighting_setup: 'Baked AO, ambient-fill',
-      material_texture: 'None or gradient, facet-clean',
-      render_quality: 'Indie game, retro, geometric charm',
-      atmosphere: 'Simple, clean, polygon purity',
-      key_features: 'Facets, edge visibility',
-      creative_brief:
-        'Beauty in the count of polygons you can number on two hands — flat-shaded triangles catch ambient occlusion at their edges like folded paper holding its crease. Vibrant stylized tones celebrate geometry as geometry, refusing to disguise the mesh beneath smooth fakery. The image channels indie-game charm, a world comfortable in its own visible construction, each facet a deliberate choice rather than a limitation.',
-    },
-  },
+    "id": "SP03-021",
+    "name": "Low Poly",
+    "category": "5. Stylized 3d",
+    "negativePrompt": "high poly, smooth, detailed",
+    "style": {
+      "aesthetic": "Minimalist mesh",
+      "form_and_line": "Visible triangles",
+      "color_palette": "Flat shading, vibrant stylized tones",
+      "lighting_setup": "Baked AO, ambient-fill",
+      "material_texture": "None or gradient, facet-clean",
+      "render_quality": "Indie game, retro, geometric charm",
+      "atmosphere": "Simple, clean, polygon purity",
+      "key_features": "Facets, edge visibility",
+      "creative_brief": "Beauty in the count of polygons you can number on two hands — flat-shaded triangles catch ambient occlusion at their edges like folded paper holding its crease. Vibrant stylized tones celebrate geometry as geometry, refusing to disguise the mesh beneath smooth fakery. The image channels indie-game charm, a world comfortable in its own visible construction, each facet a deliberate choice rather than a limitation."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

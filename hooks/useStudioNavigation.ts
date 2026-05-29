@@ -41,6 +41,7 @@ export function shouldCloseModalForOverlay(
  * Synchronize page navigation with recipe selection and overlay visibility so
  * the app shell consumes one navigation module instead of scattered effects.
  */
+// react-doctor-disable-next-line react-doctor/no-event-handler -- route-to-UI synchronization is intentionally centralized in this hook
 export function useStudioNavigation({
   route,
   recipe,

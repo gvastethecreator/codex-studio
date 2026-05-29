@@ -4,262 +4,236 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP01-005',
-    name: 'Cinematic Close-up',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Cinematic movie still close-up, dramatic film photography',
-      subject_treatment:
-        'Extremely shallow depth of field, sharp focus on the eyes, soft out-of-focus background',
-      color_and_tone:
-        'Cinematic color grading, teal and orange split toning, rich cinematic contrast',
-      lighting_and_shadow: 'Dramatic Rembrandt lighting, strong directional light, deep shadows',
-      texture_and_material: 'Cinematic film grain, detailed skin texture, anamorphic lens flares',
-      camera_and_composition:
-        'Shot on anamorphic lens, beautiful bokeh background, tight emotional framing',
-      atmosphere_and_mood: 'Emotional, dramatic, intense, narrative, moody',
-      rendering_and_quality: '4K cinematic render, filmic look, high production value',
-      creative_brief:
-        'The frame feels lifted from a film you almost remember—a moment of suspended breath where emotion hangs visible in the air. Colors split like twilight, warm and cool battling across skin and shadow. The lens draws you into an intimate distance, close enough to see the story in an eye, yet the world beyond dissolves into painterly abstraction. This is the visual language of cinema at its most visceral.',
-    },
+    "id": "SP01-005",
+    "name": "Cinematic Close-up",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "Cinematic movie still close-up, dramatic film photography",
+      "subject_treatment": "Extremely shallow depth of field, sharp focus on the eyes, soft out-of-focus background",
+      "color_and_tone": "Cinematic color grading, teal and orange split toning, rich cinematic contrast",
+      "lighting_and_shadow": "Dramatic Rembrandt lighting, strong directional light, deep shadows",
+      "texture_and_material": "Cinematic film grain, detailed skin texture, anamorphic lens flares",
+      "camera_and_composition": "Shot on anamorphic lens, beautiful bokeh background, tight emotional framing",
+      "atmosphere_and_mood": "Emotional, dramatic, intense, narrative, moody",
+      "rendering_and_quality": "4K cinematic render, filmic look, high production value",
+      "creative_brief": "The frame feels lifted from a film you almost remember—a moment of suspended breath where emotion hangs visible in the air. Colors split like twilight, warm and cool battling across skin and shadow. The lens draws you into an intimate distance, close enough to see the story in an eye, yet the world beyond dissolves into painterly abstraction. This is the visual language of cinema at its most visceral."
+    }
   },
   {
-    id: 'SP01-014',
-    name: 'Cinestill 800T',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Night photography film',
-      form_and_line: 'Halation around lights',
-      color_palette: 'Cool tungsten balance',
-      lighting_setup: 'Artificial light',
-      material_texture: 'Medium grain',
-      render_quality: 'Cinematic, moody',
-      spatial_distortion: 'Red halation glow',
-      atmosphere: 'Night, urban',
-      key_features: 'Red halos',
-      creative_brief:
-        'The city after midnight exhales through tungsten breath, streetlights bleeding crimson coronas into cooling air. Every source of illumination becomes a wound in the darkness, tender and electric. A solitary frame suspended in the long exposure between loneliness and belonging.',
-    },
+    "id": "SP01-014",
+    "name": "Cinestill 800T",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "Night photography film",
+      "form_and_line": "Halation around lights",
+      "color_palette": "Cool tungsten balance",
+      "lighting_setup": "Artificial light",
+      "material_texture": "Medium grain",
+      "render_quality": "Cinematic, moody",
+      "spatial_distortion": "Red halation glow",
+      "atmosphere": "Night, urban",
+      "key_features": "Red halos",
+      "creative_brief": "The city after midnight exhales through tungsten breath, streetlights bleeding crimson coronas into cooling air. Every source of illumination becomes a wound in the darkness, tender and electric. A solitary frame suspended in the long exposure between loneliness and belonging."
+    }
   },
   {
-    id: 'SP01-013',
-    name: 'Ilford HP5 Plus',
-    category: '3. Film And Analog Process',
-    negativePrompt: 'color, chromatic aberration',
-    style: {
-      aesthetic: 'Black and White film',
-      form_and_line: 'Medium contrast',
-      color_palette: 'Greyscale',
-      lighting_setup: 'Versatile',
-      material_texture: 'Visible grain',
-      render_quality: 'Journalism, street',
-      spatial_distortion: 'None',
-      atmosphere: 'Classic, gritty',
-      key_features: 'Monochrome',
-      creative_brief:
-        "Stripped of chroma's distraction, the frame reduces to its skeleton: light wrestling shadow across the street, a stranger's hands, the geometry of waiting. Grain carries the newsprint urgency of a moment that refuses polish. Truth in silver, nothing hidden, nothing softened.",
-    },
+    "id": "SP01-013",
+    "name": "Ilford HP5 Plus",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "color, chromatic aberration",
+    "style": {
+      "aesthetic": "Black and White film",
+      "form_and_line": "Medium contrast",
+      "color_palette": "Greyscale",
+      "lighting_setup": "Versatile",
+      "material_texture": "Visible grain",
+      "render_quality": "Journalism, street",
+      "spatial_distortion": "None",
+      "atmosphere": "Classic, gritty",
+      "key_features": "Monochrome",
+      "creative_brief": "Stripped of chroma's distraction, the frame reduces to its skeleton: light wrestling shadow across the street, a stranger's hands, the geometry of waiting. Grain carries the newsprint urgency of a moment that refuses polish. Truth in silver, nothing hidden, nothing softened."
+    }
   },
   {
-    id: 'SP01-015',
-    name: 'Kodachrome 64',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Vintage slide film',
-      form_and_line: 'Sharp, archival',
-      color_palette: 'Rich reds, realistic',
-      lighting_setup: 'Direct sun',
-      material_texture: 'Fine grain',
-      render_quality: 'National Geographic 80s',
-      spatial_distortion: 'High contrast',
-      atmosphere: 'Historic, vivid',
-      key_features: 'Red pop',
-      creative_brief:
-        'The archive of a mid-century afternoon, preserved in dyes that refuse to fade: reds that ache with permanence, skies that hold their breath since 1972. Every detail etched with documentary conviction, as if the world were being catalogued for the first and final time.',
-    },
+    "id": "SP01-015",
+    "name": "Kodachrome 64",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "Vintage slide film",
+      "form_and_line": "Sharp, archival",
+      "color_palette": "Rich reds, realistic",
+      "lighting_setup": "Direct sun",
+      "material_texture": "Fine grain",
+      "render_quality": "National Geographic 80s",
+      "spatial_distortion": "High contrast",
+      "atmosphere": "Historic, vivid",
+      "key_features": "Red pop",
+      "creative_brief": "The archive of a mid-century afternoon, preserved in dyes that refuse to fade: reds that ache with permanence, skies that hold their breath since 1972. Every detail etched with documentary conviction, as if the world were being catalogued for the first and final time."
+    }
   },
   {
-    id: 'SP01-011',
-    name: 'Kodak Portra 400',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Warm analog film look',
-      form_and_line: 'Soft but sharp',
-      color_palette: 'Great skin tones, pastel highlights',
-      lighting_setup: 'Natural, forgiving',
-      material_texture: 'Fine grain',
-      render_quality: 'Professional film',
-      spatial_distortion: 'None',
-      atmosphere: 'Nostalgic, warm',
-      key_features: 'Yellow/Red bias',
-      creative_brief:
-        'Sunlight folded into emulsion, surrendering its harshness for a tender amber embrace. Skin remembers itself through this palette, rendered not as surface but as the warmth beneath. A world seen through honeyed memory, where every tone earns its place in quiet, unhurried conversation.',
-    },
+    "id": "SP01-011",
+    "name": "Kodak Portra 400",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "Warm analog film look",
+      "form_and_line": "Soft but sharp",
+      "color_palette": "Great skin tones, pastel highlights",
+      "lighting_setup": "Natural, forgiving",
+      "material_texture": "Fine grain",
+      "render_quality": "Professional film",
+      "spatial_distortion": "None",
+      "atmosphere": "Nostalgic, warm",
+      "key_features": "Yellow/Red bias",
+      "creative_brief": "Sunlight folded into emulsion, surrendering its harshness for a tender amber embrace. Skin remembers itself through this palette, rendered not as surface but as the warmth beneath. A world seen through honeyed memory, where every tone earns its place in quiet, unhurried conversation."
+    }
   },
   {
-    id: 'SP01-012',
-    name: 'Fujifilm Velvia 50',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'High saturation landscape film',
-      form_and_line: 'High contrast',
-      color_palette: 'Vivid Green, Blue, Red',
-      lighting_setup: 'Daylight',
-      material_texture: 'Very fine grain',
-      render_quality: 'Nature photography',
-      spatial_distortion: 'Crushed blacks',
-      atmosphere: 'Vibrant, punchy',
-      key_features: 'Magenta bias',
-      creative_brief:
-        'Nature translated into its own boldest dialect, where green becomes greener than memory and sky deepens toward violet truth. The world sharpens into crystalline conviction, shadows collapsing into pure statement. This is landscape as exclamation, not description.',
-    },
+    "id": "SP01-012",
+    "name": "Fujifilm Velvia 50",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "High saturation landscape film",
+      "form_and_line": "High contrast",
+      "color_palette": "Vivid Green, Blue, Red",
+      "lighting_setup": "Daylight",
+      "material_texture": "Very fine grain",
+      "render_quality": "Nature photography",
+      "spatial_distortion": "Crushed blacks",
+      "atmosphere": "Vibrant, punchy",
+      "key_features": "Magenta bias",
+      "creative_brief": "Nature translated into its own boldest dialect, where green becomes greener than memory and sky deepens toward violet truth. The world sharpens into crystalline conviction, shadows collapsing into pure statement. This is landscape as exclamation, not description."
+    }
   },
   {
-    id: 'SP01-016',
-    name: 'Polaroid 600',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Instant film photo',
-      form_and_line: 'Soft focus',
-      color_palette: 'Washed out, color shift',
-      lighting_setup: 'Direct flash',
-      material_texture: 'Chemical spread marks',
-      render_quality: 'Vintage, casual',
-      spatial_distortion: 'Vignette',
-      atmosphere: 'Memory, retro',
-      key_features: 'Square crop',
-      creative_brief:
-        'A recollection still damp from the chemistry, edges darkening toward a frame within a frame. Colors retreat into themselves, leaving behind the ghost of a moment too fleeting to name. The flash caught what the eye forgot, and now it waits in a shoebox, stubbornly present.',
-    },
+    "id": "SP01-016",
+    "name": "Polaroid 600",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "Instant film photo",
+      "form_and_line": "Soft focus",
+      "color_palette": "Washed out, color shift",
+      "lighting_setup": "Direct flash",
+      "material_texture": "Chemical spread marks",
+      "render_quality": "Vintage, casual",
+      "spatial_distortion": "Vignette",
+      "atmosphere": "Memory, retro",
+      "key_features": "Square crop",
+      "creative_brief": "A recollection still damp from the chemistry, edges darkening toward a frame within a frame. Colors retreat into themselves, leaving behind the ghost of a moment too fleeting to name. The flash caught what the eye forgot, and now it waits in a shoebox, stubbornly present."
+    }
   },
   {
-    id: 'SP01-017',
-    name: 'Lomo LC-A',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Toy camera film',
-      form_and_line: 'Blurry edges',
-      color_palette: 'Cross-processed, saturated',
-      lighting_setup: 'Vignette',
-      material_texture: 'Light leaks',
-      render_quality: 'Lo-fi, experimental',
-      spatial_distortion: 'Heavy vignette',
-      atmosphere: 'Fun, unpredictable',
-      key_features: 'Tunnel vision',
-      creative_brief:
-        "A plastic eye drunk on stray photons, letting color run where it shouldn't and shadow pool at the perimeter like spilled ink. The frame circles inward toward whatever caught the light's attention, unconcerned with sharpness or dignity. Joy over precision, serendipity over control.",
-    },
+    "id": "SP01-017",
+    "name": "Lomo LC-A",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "Toy camera film",
+      "form_and_line": "Blurry edges",
+      "color_palette": "Cross-processed, saturated",
+      "lighting_setup": "Vignette",
+      "material_texture": "Light leaks",
+      "render_quality": "Lo-fi, experimental",
+      "spatial_distortion": "Heavy vignette",
+      "atmosphere": "Fun, unpredictable",
+      "key_features": "Tunnel vision",
+      "creative_brief": "A plastic eye drunk on stray photons, letting color run where it shouldn't and shadow pool at the perimeter like spilled ink. The frame circles inward toward whatever caught the light's attention, unconcerned with sharpness or dignity. Joy over precision, serendipity over control."
+    }
   },
   {
-    id: 'SP01-019',
-    name: 'Infrared Film',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Aerochrome style',
-      form_and_line: 'Glowing foliage',
-      color_palette: 'Pink/Red foliage, dark sky',
-      lighting_setup: 'Surreal',
-      material_texture: 'Grainy',
-      render_quality: 'Psychedelic, scientific',
-      spatial_distortion: 'False color',
-      atmosphere: 'Alien, dreamlike',
-      key_features: 'Red trees',
-      creative_brief:
-        'The spectrum inverted: chlorophyll blazing crimson against a sky gone indigo, as if the world were photographed through the eyes of a creature from a warmer star. Familiar landscapes become extraterrestrial elegies, the visible spectrum bending toward frequencies the waking eye was never meant to witness.',
-    },
+    "id": "SP01-019",
+    "name": "Infrared Film",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "Aerochrome style",
+      "form_and_line": "Glowing foliage",
+      "color_palette": "Pink/Red foliage, dark sky",
+      "lighting_setup": "Surreal",
+      "material_texture": "Grainy",
+      "render_quality": "Psychedelic, scientific",
+      "spatial_distortion": "False color",
+      "atmosphere": "Alien, dreamlike",
+      "key_features": "Red trees",
+      "creative_brief": "The spectrum inverted: chlorophyll blazing crimson against a sky gone indigo, as if the world were photographed through the eyes of a creature from a warmer star. Familiar landscapes become extraterrestrial elegies, the visible spectrum bending toward frequencies the waking eye was never meant to witness."
+    }
   },
   {
-    id: 'SP01-020',
-    name: 'Expired Film',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Damaged film stock',
-      form_and_line: 'Soft',
-      color_palette: 'Green/Magenta shift',
-      lighting_setup: 'Fogged',
-      material_texture: 'Heavy grain, mold',
-      render_quality: 'Grungy, broken',
-      spatial_distortion: 'Color cast',
-      atmosphere: 'Decay, lost memory',
-      key_features: 'Color shift',
-      creative_brief:
-        'Chemistry unspooling toward ruin: greens bleeding into magenta, grain rising like static across a fading frequency. The image carries its own decay as a second subject, time visibly eating through the emulsion. A photograph that remembers its own dying, and renders that memory beautiful.',
-    },
+    "id": "SP01-020",
+    "name": "Expired Film",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "Damaged film stock",
+      "form_and_line": "Soft",
+      "color_palette": "Green/Magenta shift",
+      "lighting_setup": "Fogged",
+      "material_texture": "Heavy grain, mold",
+      "render_quality": "Grungy, broken",
+      "spatial_distortion": "Color cast",
+      "atmosphere": "Decay, lost memory",
+      "key_features": "Color shift",
+      "creative_brief": "Chemistry unspooling toward ruin: greens bleeding into magenta, grain rising like static across a fading frequency. The image carries its own decay as a second subject, time visibly eating through the emulsion. A photograph that remembers its own dying, and renders that memory beautiful."
+    }
   },
   {
-    id: 'SP01-064',
-    name: 'Concert Photography',
-    category: '3. Film And Analog Process',
-    negativePrompt: 'quiet, bright',
-    style: {
-      aesthetic: 'Band on stage',
-      form_and_line: 'Silhouettes in fog',
-      color_palette: 'Stage lights (Red/Blue)',
-      lighting_setup: 'Beams, spots',
-      material_texture: 'Fog, sweat, grain',
-      render_quality: 'Rock n roll, loud',
-      spatial_distortion: 'None',
-      atmosphere: 'Energetic, loud',
-      key_features: 'Crowd hands',
-      creative_brief:
-        "Light becomes weapon and worship simultaneously, blades of crimson and cobalt slicing through manufactured fog while silhouettes command the stage like hierophants of noise. Sweat catches the beam, grain catches the darkness, and the invisible wall of sound becomes almost visible in the held breath between guitar chords. The crowd's reaching hands form a congregation of ecstasy beyond the spotlight's edge.",
-    },
+    "id": "SP01-064",
+    "name": "Concert Photography",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "quiet, bright",
+    "style": {
+      "aesthetic": "Band on stage",
+      "form_and_line": "Silhouettes in fog",
+      "color_palette": "Stage lights (Red/Blue)",
+      "lighting_setup": "Beams, spots",
+      "material_texture": "Fog, sweat, grain",
+      "render_quality": "Rock n roll, loud",
+      "spatial_distortion": "None",
+      "atmosphere": "Energetic, loud",
+      "key_features": "Crowd hands",
+      "creative_brief": "Light becomes weapon and worship simultaneously, blades of crimson and cobalt slicing through manufactured fog while silhouettes command the stage like hierophants of noise. Sweat catches the beam, grain catches the darkness, and the invisible wall of sound becomes almost visible in the held breath between guitar chords. The crowd's reaching hands form a congregation of ecstasy beyond the spotlight's edge."
+    }
   },
   {
-    id: 'SP01-021',
-    name: 'Large Format (4x5)',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'View camera photo',
-      form_and_line: 'Incredible detail',
-      color_palette: 'Rich, smooth tones',
-      lighting_setup: 'Controlled',
-      material_texture: 'Zero grain',
-      render_quality: 'Ansel Adams, fine art',
-      spatial_distortion: 'Tilt-shift potential',
-      atmosphere: 'Grand, still',
-      key_features: 'Extreme resolution',
-      creative_brief:
-        'Monumental stillness rendered with the gravity of cathedral stone: every leaf on every distant tree, every fissure in granite, every molecule of air held accountable. The plane of focus tilts like a held breath, bending space into reverence. This is not a photograph but a covenant with the visible.',
-    },
+    "id": "SP01-021",
+    "name": "Large Format (4x5)",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "View camera photo",
+      "form_and_line": "Incredible detail",
+      "color_palette": "Rich, smooth tones",
+      "lighting_setup": "Controlled",
+      "material_texture": "Zero grain",
+      "render_quality": "Ansel Adams, fine art",
+      "spatial_distortion": "Tilt-shift potential",
+      "atmosphere": "Grand, still",
+      "key_features": "Extreme resolution",
+      "creative_brief": "Monumental stillness rendered with the gravity of cathedral stone: every leaf on every distant tree, every fissure in granite, every molecule of air held accountable. The plane of focus tilts like a held breath, bending space into reverence. This is not a photograph but a covenant with the visible."
+    }
   },
   {
-    id: 'SP01-029',
-    name: 'Microscope (SEM)',
-    category: '3. Film And Analog Process',
-    negativePrompt: 'color, macro',
-    style: {
-      aesthetic: 'Electron microscope scan',
-      form_and_line: 'Incredible texture detail',
-      color_palette: 'Greyscale',
-      lighting_setup: 'Directional electron beam',
-      material_texture: 'Fractal patterns',
-      render_quality: 'Scientific, alien',
-      spatial_distortion: 'Extreme magnification',
-      atmosphere: 'Scientific, scary',
-      key_features: 'B&W depth',
-      creative_brief:
-        'Landscapes hiding at the threshold of the invisible, where a grain of pollen becomes a planetary surface. Monochromatic terrain revealed by electrons rather than photons, texture unfolding into fractal cathedrals. The terrifying intimacy of seeing what the naked eye was never meant to witness.',
-    },
-  },
+    "id": "SP01-029",
+    "name": "Microscope (SEM)",
+    "category": "3. Film And Analog Process",
+    "negativePrompt": "color, macro",
+    "style": {
+      "aesthetic": "Electron microscope scan",
+      "form_and_line": "Incredible texture detail",
+      "color_palette": "Greyscale",
+      "lighting_setup": "Directional electron beam",
+      "material_texture": "Fractal patterns",
+      "render_quality": "Scientific, alien",
+      "spatial_distortion": "Extreme magnification",
+      "atmosphere": "Scientific, scary",
+      "key_features": "B&W depth",
+      "creative_brief": "Landscapes hiding at the threshold of the invisible, where a grain of pollen becomes a planetary surface. Monochromatic terrain revealed by electrons rather than photons, texture unfolding into fractal cathedrals. The terrifying intimacy of seeing what the naked eye was never meant to witness."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

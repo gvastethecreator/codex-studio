@@ -4,843 +4,543 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP05-095',
-    name: 'Frieren – Afterquest Melancholy Fantasy',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Quiet post-heroic travel, long-lived memory, serene fields, gentle spellcraft, elf time-perception, hero-party flashbacks, funeral-start journey, demon-king aftermath',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Reflective, serene, melancholic, timeless',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        "An elf walks the same road her hero party once walked, now alone, now decades later, now beginning to understand what mortal time actually means. The fields haven't changed but the light has shifted imperceptibly, the way grief shifts from wound to weather. Frame each scene as a postcard from a journey whose destination is gratitude for the going.",
-    },
+    "id": "SP05-095",
+    "name": "Frieren – Afterquest Melancholy Fantasy",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Quiet post-heroic travel, long-lived memory, serene fields, gentle spellcraft, elf time-perception, hero-party flashbacks, funeral-start journey, demon-king aftermath",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Reflective, serene, melancholic, timeless",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "An elf walks the same road her hero party once walked, now alone, now decades later, now beginning to understand what mortal time actually means. The fields haven't changed but the light has shifted imperceptibly, the way grief shifts from wound to weather. Frame each scene as a postcard from a journey whose destination is gratitude for the going."
+    }
   },
   {
-    id: 'SP05-099',
-    name: 'Shield Hero – Defensive Underdog Fantasy',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Shield-forward battle logic, betrayed hero resilience, layered parties, medieval grit, legendary-weapon heroes, demi-human slaves, rage-shield curse, wave-of-calamity',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Determined, defensive, resilient, betrayed',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        "The shield is not a weapon but a statement — defense as defiance, survival as victory, refusal to fall as the only combat move that matters. Grit textures every surface; the kingdom's betrayal left fingerprints on every stone. Build the image like a wall that learned to walk forward.",
-    },
+    "id": "SP05-099",
+    "name": "Shield Hero – Defensive Underdog Fantasy",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Shield-forward battle logic, betrayed hero resilience, layered parties, medieval grit, legendary-weapon heroes, demi-human slaves, rage-shield curse, wave-of-calamity",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Determined, defensive, resilient, betrayed",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "The shield is not a weapon but a statement — defense as defiance, survival as victory, refusal to fall as the only combat move that matters. Grit textures every surface; the kingdom's betrayal left fingerprints on every stone. Build the image like a wall that learned to walk forward."
+    }
   },
   {
-    id: 'SP05-248',
-    name: 'Delicious in Dungeon - Stove-Top Monster Cuisine',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Dungeon delving as culinary craft, cast-iron pans over campfire, monster ingredients, practical fantasy ecology, hungry camaraderie and dangerous kitchens in stone ruins',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Hearty, curious, practical, fun',
-      key_features:
-        'Cooking tools, dungeon stones, monster-ingredient motifs, hungry party expressions, practical ecology detail',
-      creative_brief:
-        'Cast-iron pans hiss over dungeon campfires while monster anatomy becomes recipe notation and survival becomes cuisine. A party eats their way through ecology, curiosity seasoning every bite. The dungeon is not just threat but pantry, laboratory, communal table.',
-    },
+    "id": "SP05-248",
+    "name": "Delicious in Dungeon - Stove-Top Monster Cuisine",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Dungeon delving as culinary craft, cast-iron pans over campfire, monster ingredients, practical fantasy ecology, hungry camaraderie and dangerous kitchens in stone ruins",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Hearty, curious, practical, fun",
+      "key_features": "Cooking tools, dungeon stones, monster-ingredient motifs, hungry party expressions, practical ecology detail",
+      "creative_brief": "Cast-iron pans hiss over dungeon campfires while monster anatomy becomes recipe notation and survival becomes cuisine. A party eats their way through ecology, curiosity seasoning every bite. The dungeon is not just threat but pantry, laboratory, communal table."
+    }
   },
   {
-    id: 'SP05-252',
-    name: 'Campfire Cooking in Another World - Merchant Road Stew',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Traveling fantasy comfort food, merchant roads, giant familiar appetite, practical camp cookware, low-stakes abundance and wandering culinary coziness',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Relaxed, tasty, itinerant, warm',
-      key_features:
-        'Cookpot focus, road-camp compositions, familiar-animal scale contrast, merchant packs, food-steam detail',
-      creative_brief:
-        "A stewpot bubbling on a merchant road transforms hunger into communion, the giant familiar's appetite a measure of how far from home this new world feels. Low-stakes abundance radiates from every campfire frame, where the greatest quest is simply feeding those who walk beside you.",
-    },
+    "id": "SP05-252",
+    "name": "Campfire Cooking in Another World - Merchant Road Stew",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Traveling fantasy comfort food, merchant roads, giant familiar appetite, practical camp cookware, low-stakes abundance and wandering culinary coziness",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Relaxed, tasty, itinerant, warm",
+      "key_features": "Cookpot focus, road-camp compositions, familiar-animal scale contrast, merchant packs, food-steam detail",
+      "creative_brief": "A stewpot bubbling on a merchant road transforms hunger into communion, the giant familiar's appetite a measure of how far from home this new world feels. Low-stakes abundance radiates from every campfire frame, where the greatest quest is simply feeding those who walk beside you."
+    }
   },
   {
-    id: 'SP05-257',
-    name: 'Tsukimichi - Moonlit Merchant Wanderer',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Offbeat overpowered merchant fantasy, moonlit roads, demi-human communities, deadpan social detachment, practical trade and absurd strength sharing the same calm frame',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Detached, moonlit, practical, powerful',
-      key_features:
-        'Merchant-road props, moonlit travel staging, overpowered calm posing, demi-human ensemble, trade-driven worldbuilding',
-      creative_brief:
-        'Moonlight silver-plates the merchant road where a deadpan wanderer walks with world-breaking strength tucked behind an unassuming smile. Demi-human communities gather in the glow of practical trade, their unlikely protector moving through the night like a secret the moon already knows.',
-    },
+    "id": "SP05-257",
+    "name": "Tsukimichi - Moonlit Merchant Wanderer",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Offbeat overpowered merchant fantasy, moonlit roads, demi-human communities, deadpan social detachment, practical trade and absurd strength sharing the same calm frame",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Detached, moonlit, practical, powerful",
+      "key_features": "Merchant-road props, moonlit travel staging, overpowered calm posing, demi-human ensemble, trade-driven worldbuilding",
+      "creative_brief": "Moonlight silver-plates the merchant road where a deadpan wanderer walks with world-breaking strength tucked behind an unassuming smile. Demi-human communities gather in the glow of practical trade, their unlikely protector moving through the night like a secret the moon already knows."
+    }
   },
   {
-    id: 'SP05-258',
-    name: 'Handyman Saitou in Another World - Toolbox Party Quest',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Mundane practical skills becoming precious in fantasy, rope and lockpick utility, modest party bonds, dungeon logistics with empathy and comic warmth',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Practical, warm, modest, dependable',
-      key_features:
-        'Toolbox motifs, support-role staging, dungeon logistics, practical problem-solving poses, everyday-competence charm',
-      creative_brief:
-        'A toolbox opens in a dungeon corridor and suddenly lockpicks are holier than relics, rope more precious than prophecy. The modest handyman walks behind the heroes, solving what swords cannot, his quiet competence the real magic in a world that fetishizes flash.',
-    },
+    "id": "SP05-258",
+    "name": "Handyman Saitou in Another World - Toolbox Party Quest",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Mundane practical skills becoming precious in fantasy, rope and lockpick utility, modest party bonds, dungeon logistics with empathy and comic warmth",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Practical, warm, modest, dependable",
+      "key_features": "Toolbox motifs, support-role staging, dungeon logistics, practical problem-solving poses, everyday-competence charm",
+      "creative_brief": "A toolbox opens in a dungeon corridor and suddenly lockpicks are holier than relics, rope more precious than prophecy. The modest handyman walks behind the heroes, solving what swords cannot, his quiet competence the real magic in a world that fetishizes flash."
+    }
   },
   {
-    id: 'SP05-259',
-    name: 'Ranking of Kings - Storybook Crown Courage',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Child-king underdog fantasy, soft storybook lines, giant emotional sincerity, fairy-tale castles and bodily vulnerability transformed into heroic grace',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Innocent, moving, brave, storybook',
-      key_features:
-        'Storybook castle forms, tiny-hero scale contrast, crown motifs, emotional gesture clarity, fairy-tale silhouettes',
-      creative_brief:
-        'A crown too large for a small head sits steady on courage that fills the space where strength could not reach. Storybook lines draw castles with the tenderness of bedtime illustrations, a tiny king moving through fairy-tale halls where vulnerability is not weakness but the highest form of bravery.',
-    },
+    "id": "SP05-259",
+    "name": "Ranking of Kings - Storybook Crown Courage",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Child-king underdog fantasy, soft storybook lines, giant emotional sincerity, fairy-tale castles and bodily vulnerability transformed into heroic grace",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Innocent, moving, brave, storybook",
+      "key_features": "Storybook castle forms, tiny-hero scale contrast, crown motifs, emotional gesture clarity, fairy-tale silhouettes",
+      "creative_brief": "A crown too large for a small head sits steady on courage that fills the space where strength could not reach. Storybook lines draw castles with the tenderness of bedtime illustrations, a tiny king moving through fairy-tale halls where vulnerability is not weakness but the highest form of bravery."
+    }
   },
   {
-    id: 'SP05-260',
-    name: 'Princess Connect! Re:Dive - Banquet Quest Pastel',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Bright fantasy party with desserts, polished town squares, cute teamwork, soft comedy, banquet abundance and colorful adventure rendered with candy-clean appeal',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Cheerful, tasty, friendly, polished',
-      key_features:
-        'Banquet spreads, polished town plazas, cute party staging, candy-fantasy color, soft comedic expressions',
-      creative_brief:
-        'Every quest ends at a banquet table where dessert outranks treasure and polished town squares host the real victory: friendship served in candy-clean pastels. The party that fights together feasts together, their camaraderie the sweetest loot in a world painted with the colors of shared joy.',
-    },
+    "id": "SP05-260",
+    "name": "Princess Connect! Re:Dive - Banquet Quest Pastel",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Bright fantasy party with desserts, polished town squares, cute teamwork, soft comedy, banquet abundance and colorful adventure rendered with candy-clean appeal",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Cheerful, tasty, friendly, polished",
+      "key_features": "Banquet spreads, polished town plazas, cute party staging, candy-fantasy color, soft comedic expressions",
+      "creative_brief": "Every quest ends at a banquet table where dessert outranks treasure and polished town squares host the real victory: friendship served in candy-clean pastels. The party that fights together feasts together, their camaraderie the sweetest loot in a world painted with the colors of shared joy."
+    }
   },
   {
-    id: 'SP05-091',
-    name: 'Sword Art Online – Glowing VR Adventure',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Floating interface magic, sword-forward exploration, game-like fantasy vistas, digital heroism, Aincrad floating castle, health-bar UI motifs, dual-wielding Kirito, floor-boss raids',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Adventurous, virtual, epic, romantic',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        'A floating castle made of code and longing, where sword skill menus hover like constellations and every floor is a new sky to conquer. Digital heroism wears the face of a boy who just wanted to log out but found a reason to stay. Make the virtual feel visceral — interface elements as natural as breath, combat as intimate as conversation.',
-    },
+    "id": "SP05-091",
+    "name": "Sword Art Online – Glowing VR Adventure",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Floating interface magic, sword-forward exploration, game-like fantasy vistas, digital heroism, Aincrad floating castle, health-bar UI motifs, dual-wielding Kirito, floor-boss raids",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Adventurous, virtual, epic, romantic",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "A floating castle made of code and longing, where sword skill menus hover like constellations and every floor is a new sky to conquer. Digital heroism wears the face of a boy who just wanted to log out but found a reason to stay. Make the virtual feel visceral — interface elements as natural as breath, combat as intimate as conversation."
+    }
   },
   {
-    id: 'SP05-092',
-    name: 'Re:Zero – Reset-Loop Dark Fantasy',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Repeating fate, ornate fantasy streets, emotional collapse, dread beneath beauty, return-by-death loop, silver-haired Emilia, witch-cult mansion, white-whale battle',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Anxious, tragic, harrowing, relentless',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        "Fate rewinds while the horror stays fresh — a cobblestone street in the witch's hour holds the echo of every death that already happened and hasn't happened yet. Ornate beauty is the wallpaper over a room where hope keeps bleeding out. The loop tightens; make the viewer feel the vertigo of standing at the center of a spiral.",
-    },
+    "id": "SP05-092",
+    "name": "Re:Zero – Reset-Loop Dark Fantasy",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Repeating fate, ornate fantasy streets, emotional collapse, dread beneath beauty, return-by-death loop, silver-haired Emilia, witch-cult mansion, white-whale battle",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Anxious, tragic, harrowing, relentless",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "Fate rewinds while the horror stays fresh — a cobblestone street in the witch's hour holds the echo of every death that already happened and hasn't happened yet. Ornate beauty is the wallpaper over a room where hope keeps bleeding out. The loop tightens; make the viewer feel the vertigo of standing at the center of a spiral."
+    }
   },
   {
-    id: 'SP05-093',
-    name: 'Mushoku Tensei – Wandering Mage Chronicle',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Grand travel fantasy, layered magic systems, rich cultures, road-journey curiosity, reincarnation-baby start, demon-continent journey, Roxy-master mage, mana-catastrophe',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Curious, expansive, wondrous, immersive',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        "A continent unfolds beneath walking feet — every horizon is a question, every village a lesson, every spell a muscle earned through failure and stubborn wonder. Magic isn't spectacle; it's geography, as natural and varied as the terrain it flows through. Paint the journey like a map that redraws itself with each step.",
-    },
+    "id": "SP05-093",
+    "name": "Mushoku Tensei – Wandering Mage Chronicle",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Grand travel fantasy, layered magic systems, rich cultures, road-journey curiosity, reincarnation-baby start, demon-continent journey, Roxy-master mage, mana-catastrophe",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Curious, expansive, wondrous, immersive",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "A continent unfolds beneath walking feet — every horizon is a question, every village a lesson, every spell a muscle earned through failure and stubborn wonder. Magic isn't spectacle; it's geography, as natural and varied as the terrain it flows through. Paint the journey like a map that redraws itself with each step."
+    }
   },
   {
-    id: 'SP05-094',
-    name: 'Konosuba – Party-Quest Comedy',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Dysfunctional adventuring party, ridiculous spells, bright town chaos, parody energy, aqua-goddess uselessness, explosion-obsession daily, steal-panties skill, succubus dreams',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Comedic, chaotic, irreverent, satirical',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        'Divine power trips over its own feet while a wizard collapses from casting exactly one spell — the epic quest is a train wreck, and every car is beautiful. Bright colors mock the seriousness of fantasy convention; the guild hall is a comedy club where the punchlines have hit points. Let the chaos feel joyfully, relentlessly inept.',
-    },
+    "id": "SP05-094",
+    "name": "Konosuba – Party-Quest Comedy",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Dysfunctional adventuring party, ridiculous spells, bright town chaos, parody energy, aqua-goddess uselessness, explosion-obsession daily, steal-panties skill, succubus dreams",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Comedic, chaotic, irreverent, satirical",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "Divine power trips over its own feet while a wizard collapses from casting exactly one spell — the epic quest is a train wreck, and every car is beautiful. Bright colors mock the seriousness of fantasy convention; the guild hall is a comedy club where the punchlines have hit points. Let the chaos feel joyfully, relentlessly inept."
+    }
   },
   {
-    id: 'SP05-098',
-    name: 'Slime Isekai – Monster-Nation Bright Fantasy',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Friendly creatures, city-building optimism, polished fantasy diversity, bright world design, rimuru-slime form, tempest-nation founding, goblin-village evolution, monster-diplomacy',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Upbeat, communal, optimistic, vibrant',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        "A gelatinous creature builds a civilization in the space between monster and diplomat, between dungeon-born and nation-founder. Brightness is the aesthetic of optimism — every new alliance painted in sun-washed color, every village upgrade a brushstroke of collective hope. Make the world feel like it's constantly becoming, always under construction, forever improving.",
-    },
+    "id": "SP05-098",
+    "name": "Slime Isekai – Monster-Nation Bright Fantasy",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Friendly creatures, city-building optimism, polished fantasy diversity, bright world design, rimuru-slime form, tempest-nation founding, goblin-village evolution, monster-diplomacy",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Upbeat, communal, optimistic, vibrant",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "A gelatinous creature builds a civilization in the space between monster and diplomat, between dungeon-born and nation-founder. Brightness is the aesthetic of optimism — every new alliance painted in sun-washed color, every village upgrade a brushstroke of collective hope. Make the world feel like it's constantly becoming, always under construction, forever improving."
+    }
   },
   {
-    id: 'SP05-100',
-    name: 'DanMachi – Dungeon Lantern Adventure',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Underground labyrinth quests, glowing crystals, lively guild culture, mythic ascent, bell-cranel growth, dungeon-floor levels, hestia-knife gift, familia-faction politics',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Adventurous, luminous, mythic, aspirational',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        'Lantern light carves stories into dungeon walls — every crystal glow reveals another layer of the labyrinth, another rung on the ladder toward the divine. Guild halls hum with the mythology of ordinary adventurers betting everything on one more floor. Make the underground feel like ascension, darkness as the raw material of legend.',
-    },
+    "id": "SP05-100",
+    "name": "DanMachi – Dungeon Lantern Adventure",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Underground labyrinth quests, glowing crystals, lively guild culture, mythic ascent, bell-cranel growth, dungeon-floor levels, hestia-knife gift, familia-faction politics",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Adventurous, luminous, mythic, aspirational",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "Lantern light carves stories into dungeon walls — every crystal glow reveals another layer of the labyrinth, another rung on the ladder toward the divine. Guild halls hum with the mythology of ordinary adventurers betting everything on one more floor. Make the underground feel like ascension, darkness as the raw material of legend."
+    }
   },
   {
-    id: 'SP05-241',
-    name: 'Log Horizon - Strategy Guild City',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'MMO civilization after the log-in, guild politics, plaza meetings, tactical worldbuilding, glass-and-stone fantasy city life organized around systems and cooperation',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Strategic, communal, thoughtful, adventurous',
-      key_features:
-        'Guild emblems, city-plaza staging, party-role clarity, system-overlay hints, collaborative ensemble framing',
-      creative_brief:
-        'A glass-and-stone city reorganizes around guild emblems and plaza diplomacy, where the game became the world and strategy became survival. Cooperation is architecture, knowledge is infrastructure. The after-login civilization builds itself one meeting, one contract, one shared meal at a time.',
-    },
+    "id": "SP05-241",
+    "name": "Log Horizon - Strategy Guild City",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "MMO civilization after the log-in, guild politics, plaza meetings, tactical worldbuilding, glass-and-stone fantasy city life organized around systems and cooperation",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Strategic, communal, thoughtful, adventurous",
+      "key_features": "Guild emblems, city-plaza staging, party-role clarity, system-overlay hints, collaborative ensemble framing",
+      "creative_brief": "A glass-and-stone city reorganizes around guild emblems and plaza diplomacy, where the game became the world and strategy became survival. Cooperation is architecture, knowledge is infrastructure. The after-login civilization builds itself one meeting, one contract, one shared meal at a time."
+    }
   },
   {
-    id: 'SP05-242',
-    name: 'Grimgar - Smoke and Mud Underdog Party',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Low-level adventurers in a damp fantasy world, debt and fear, smoky campfires, hesitant teamwork, grounded monster hunting and fragile grief',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Humble, smoky, vulnerable, earnest',
-      key_features:
-        'Campfire staging, patched equipment, fearful party spacing, muddy paths, low-level survival details',
-      creative_brief:
-        'Smoke curls from a campfire too small to chase the fear away, and patched armor tells stories no epic would remember. A party of underdogs kills one goblin and grieves like it was a king. Fantasy has a smell here—damp wool, iron, hesitation.',
-    },
+    "id": "SP05-242",
+    "name": "Grimgar - Smoke and Mud Underdog Party",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Low-level adventurers in a damp fantasy world, debt and fear, smoky campfires, hesitant teamwork, grounded monster hunting and fragile grief",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Humble, smoky, vulnerable, earnest",
+      "key_features": "Campfire staging, patched equipment, fearful party spacing, muddy paths, low-level survival details",
+      "creative_brief": "Smoke curls from a campfire too small to chase the fear away, and patched armor tells stories no epic would remember. A party of underdogs kills one goblin and grieves like it was a king. Fantasy has a smell here—damp wool, iron, hesitation."
+    }
   },
   {
-    id: 'SP05-243',
-    name: 'Record of Lodoss War - OVA Quest Tapestry',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Classic OVA fantasy grandeur, shining armor, party-lined adventure posters, elves and dragons under painterly skies, pure tabletop fantasy sincerity',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Noble, mythic, classic, adventurous',
-      key_features:
-        'Party-quest formations, painterly fantasy skies, shining armor, dragon-scale worldbuilding, OVA-era grandeur',
-      creative_brief:
-        'Shining armor catches the light of a painterly sky as party-line adventurers stride through tapestry-born quests. Every elf, every dragon, every clanking paladin is rendered with the sincerity of a D&D session believed in completely. The OVA era never stopped dreaming in jewel tones.',
-    },
+    "id": "SP05-243",
+    "name": "Record of Lodoss War - OVA Quest Tapestry",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Classic OVA fantasy grandeur, shining armor, party-lined adventure posters, elves and dragons under painterly skies, pure tabletop fantasy sincerity",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Noble, mythic, classic, adventurous",
+      "key_features": "Party-quest formations, painterly fantasy skies, shining armor, dragon-scale worldbuilding, OVA-era grandeur",
+      "creative_brief": "Shining armor catches the light of a painterly sky as party-line adventurers stride through tapestry-born quests. Every elf, every dragon, every clanking paladin is rendered with the sincerity of a D&D session believed in completely. The OVA era never stopped dreaming in jewel tones."
+    }
   },
   {
-    id: 'SP05-244',
-    name: 'The Twelve Kingdoms - Imperial Destiny Chronicle',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'East Asian court-fantasy worldbuilding, beast envoys, throne-room mandate, wandering exile becoming sovereign, dense political mythology and spiritual weight',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Regal, mythic, searching, fated',
-      key_features:
-        'Imperial robes, beast envoy motifs, throne-room scale, wandering-road contrast, mythology-rich props',
-      creative_brief:
-        'Imperial robes trail across throne-room stone while beast envoys whisper mandates from a heaven that chose an exile for a crown. Sovereignty is not seized but survived—a wandering road that ends in duty. The spiritual weight of a kingdom presses through silk and silence.',
-    },
+    "id": "SP05-244",
+    "name": "The Twelve Kingdoms - Imperial Destiny Chronicle",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "East Asian court-fantasy worldbuilding, beast envoys, throne-room mandate, wandering exile becoming sovereign, dense political mythology and spiritual weight",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Regal, mythic, searching, fated",
+      "key_features": "Imperial robes, beast envoy motifs, throne-room scale, wandering-road contrast, mythology-rich props",
+      "creative_brief": "Imperial robes trail across throne-room stone while beast envoys whisper mandates from a heaven that chose an exile for a crown. Sovereignty is not seized but survived—a wandering road that ends in duty. The spiritual weight of a kingdom presses through silk and silence."
+    }
   },
   {
-    id: 'SP05-245',
-    name: 'The Vision of Escaflowne - Windblown Tarot Fantasy',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Prophetic romance, knight armor, giant dragon mechs, red skies and courtly longing, 90s fantasy-shojo hybridity with wind-swept pageantry',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Windswept, romantic, mystical, heroic',
-      key_features:
-        'Tarot symbolism, wind-swept capes, knight-mecha contrast, red-sky horizons, courtly emotional poses',
-      creative_brief:
-        'Red skies meet wind-swept capes and a dragon mech kneels before a girl who holds the tarot deck of fate. Prophetic romance rides the jet stream between shojo heartbreak and shonen valor. Every frame is a card turned, every glance a destiny unfolding.',
-    },
+    "id": "SP05-245",
+    "name": "The Vision of Escaflowne - Windblown Tarot Fantasy",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Prophetic romance, knight armor, giant dragon mechs, red skies and courtly longing, 90s fantasy-shojo hybridity with wind-swept pageantry",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Windswept, romantic, mystical, heroic",
+      "key_features": "Tarot symbolism, wind-swept capes, knight-mecha contrast, red-sky horizons, courtly emotional poses",
+      "creative_brief": "Red skies meet wind-swept capes and a dragon mech kneels before a girl who holds the tarot deck of fate. Prophetic romance rides the jet stream between shojo heartbreak and shonen valor. Every frame is a card turned, every glance a destiny unfolding."
+    }
   },
   {
-    id: 'SP05-246',
-    name: 'Magi - Labyrinth Jewel Caravan',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Arabian Nights adventure with bright jewel magic, bustling bazaars, dungeon towers, friendship and empire intrigue rendered through warm fantasy color',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Colorful, adventurous, magical, expansive',
-      key_features:
-        'Bazaar detail, jewel magic, dungeon towers, caravan silhouettes, empire-versus-friendship staging',
-      creative_brief:
-        'Bazaar spices and jewel magic swirl through labyrinth-carved kingdoms where friendship dares to challenge empire. Caravan silhouettes cut across golden horizons; every dungeon conquered is a conversation between courage and greed. Arabian Nights meets shonen fire in warm, saturated adventure.',
-    },
+    "id": "SP05-246",
+    "name": "Magi - Labyrinth Jewel Caravan",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Arabian Nights adventure with bright jewel magic, bustling bazaars, dungeon towers, friendship and empire intrigue rendered through warm fantasy color",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Colorful, adventurous, magical, expansive",
+      "key_features": "Bazaar detail, jewel magic, dungeon towers, caravan silhouettes, empire-versus-friendship staging",
+      "creative_brief": "Bazaar spices and jewel magic swirl through labyrinth-carved kingdoms where friendship dares to challenge empire. Caravan silhouettes cut across golden horizons; every dungeon conquered is a conversation between courage and greed. Arabian Nights meets shonen fire in warm, saturated adventure."
+    }
   },
   {
-    id: 'SP05-249',
-    name: 'Ascendance of a Bookworm - Printing Press Devotion',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Frailty and obsession in a medieval city, books as holy technology, artisan workshops, ink-stained determination, domestic fantasy transformed by literacy and craft',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Studious, tender, artisanal, determined',
-      key_features:
-        'Paper-and-ink props, workshop interiors, small protagonist contrast, guild-craft details, devotion to books made visual',
-      creative_brief:
-        'Ink-stained fingers press paper into being as literacy becomes the strangest magic a medieval city has ever witnessed. A frail girl bends an entire economy toward the holy technology of books. Devotion smells of vellum, ink, and the stubborn refusal to die before finishing the next page.',
-    },
+    "id": "SP05-249",
+    "name": "Ascendance of a Bookworm - Printing Press Devotion",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Frailty and obsession in a medieval city, books as holy technology, artisan workshops, ink-stained determination, domestic fantasy transformed by literacy and craft",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Studious, tender, artisanal, determined",
+      "key_features": "Paper-and-ink props, workshop interiors, small protagonist contrast, guild-craft details, devotion to books made visual",
+      "creative_brief": "Ink-stained fingers press paper into being as literacy becomes the strangest magic a medieval city has ever witnessed. A frail girl bends an entire economy toward the holy technology of books. Devotion smells of vellum, ink, and the stubborn refusal to die before finishing the next page."
+    }
   },
   {
-    id: 'SP05-250',
-    name: 'The Faraway Paladin - Quiet Temple Quest',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Solemn undead guardians, quiet vows, old temples, righteous adventure without irony, dawn-lit armor and spiritual apprenticeship in a lonely fantasy world',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Solemn, devout, hopeful, old-world',
-      key_features:
-        'Temple stonework, guardian silhouettes, dawn-lit armor, vow-centered posing, pilgrimage-road compositions',
-      creative_brief:
-        'Dawn light catches armor in an old temple where undead guardians teach the living how to swear oaths that outlast death. Righteousness has no irony here—just stone walls, quiet vows, and a paladin walking toward a horizon that believes in him. Faith is a pilgrimage taken alone but never unaccompanied.',
-    },
+    "id": "SP05-250",
+    "name": "The Faraway Paladin - Quiet Temple Quest",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Solemn undead guardians, quiet vows, old temples, righteous adventure without irony, dawn-lit armor and spiritual apprenticeship in a lonely fantasy world",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Solemn, devout, hopeful, old-world",
+      "key_features": "Temple stonework, guardian silhouettes, dawn-lit armor, vow-centered posing, pilgrimage-road compositions",
+      "creative_brief": "Dawn light catches armor in an old temple where undead guardians teach the living how to swear oaths that outlast death. Righteousness has no irony here—just stone walls, quiet vows, and a paladin walking toward a horizon that believes in him. Faith is a pilgrimage taken alone but never unaccompanied."
+    }
   },
   {
-    id: 'SP05-253',
-    name: "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow",
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Adult heroine competence, herbal labs, court politeness, soothing green magic, restrained romance and workplace fantasy healing rendered with poised elegance',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Calm, capable, luminous, graceful',
-      key_features:
-        'Herbal-lab props, court costume detail, gentle magic bloom, composed heroine posture, workplace-fantasy warmth',
-      creative_brief:
-        "Green magic rises from herbarium vials like answered prayer, the saint's power resting not in spectacle but in the quiet confidence of a woman who knows her worth. Courtly restraint frames every gesture, proving that the most potent sorcery wears a composed smile and steady hands.",
-    },
+    "id": "SP05-253",
+    "name": "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Adult heroine competence, herbal labs, court politeness, soothing green magic, restrained romance and workplace fantasy healing rendered with poised elegance",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Calm, capable, luminous, graceful",
+      "key_features": "Herbal-lab props, court costume detail, gentle magic bloom, composed heroine posture, workplace-fantasy warmth",
+      "creative_brief": "Green magic rises from herbarium vials like answered prayer, the saint's power resting not in spectacle but in the quiet confidence of a woman who knows her worth. Courtly restraint frames every gesture, proving that the most potent sorcery wears a composed smile and steady hands."
+    }
   },
   {
-    id: 'SP05-254',
-    name: 'Fushigi Yuugi - Celestial Maiden Portal Epic',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Book-portal romance fantasy, celestial symbols, guardian warriors, earnest devotion, soft 90s magical drama and travel-heavy emotional stakes',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Fated, romantic, bright, dramatic',
-      key_features:
-        'Celestial motifs, guardian ensemble, portal iconography, travel-costume detail, soft dramatic glances',
-      creative_brief:
-        'A book opens and the world tilts sideways, ink becoming sky and stars rearranging into warriors sworn by celestial oath. Romance blooms in the space between pages, where earnest devotion outshines any constellation and the journey home is measured in heartbeats, not miles.',
-    },
+    "id": "SP05-254",
+    "name": "Fushigi Yuugi - Celestial Maiden Portal Epic",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Book-portal romance fantasy, celestial symbols, guardian warriors, earnest devotion, soft 90s magical drama and travel-heavy emotional stakes",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Fated, romantic, bright, dramatic",
+      "key_features": "Celestial motifs, guardian ensemble, portal iconography, travel-costume detail, soft dramatic glances",
+      "creative_brief": "A book opens and the world tilts sideways, ink becoming sky and stars rearranging into warriors sworn by celestial oath. Romance blooms in the space between pages, where earnest devotion outshines any constellation and the journey home is measured in heartbeats, not miles."
+    }
   },
   {
-    id: 'SP05-255',
-    name: 'Magic Knight Rayearth - Gem-Engine Rescue Quest',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Rescue fantasy with armor, giant summons, rune-powered machinery, candy-bright courage and mystical quest framing for a heroic team of girls',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Brave, bright, enchanted, team-driven',
-      key_features:
-        'Rune magic, armor accents, giant summon silhouettes, quest-team posing, jewel-bright backgrounds',
-      creative_brief:
-        'Three girls become knights become legends, their armor blooming from rune-light like petals from enchanted ore. Giant summons cast shadows across jewel-bright worlds where the rescue mission is also a becoming, courage reforged with every step toward the one who must be saved.',
-    },
+    "id": "SP05-255",
+    "name": "Magic Knight Rayearth - Gem-Engine Rescue Quest",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Rescue fantasy with armor, giant summons, rune-powered machinery, candy-bright courage and mystical quest framing for a heroic team of girls",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Brave, bright, enchanted, team-driven",
+      "key_features": "Rune magic, armor accents, giant summon silhouettes, quest-team posing, jewel-bright backgrounds",
+      "creative_brief": "Three girls become knights become legends, their armor blooming from rune-light like petals from enchanted ore. Giant summons cast shadows across jewel-bright worlds where the rescue mission is also a becoming, courage reforged with every step toward the one who must be saved."
+    }
   },
   {
-    id: 'SP05-096',
-    name: 'No Game No Life – Hyper-Saturated Strategy Fantasy',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Candy-neon fantasy grids, game logic theatrics, saturated competition, surreal confidence, disboard world rules, chess-piece territory, Shiro-Sora siblings, chibi-art shifts',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Strategic, dazzling, hyper, confident',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        "Neon grids burn under a sky that never heard of moderation — color saturation pushed past the point of physics, game-board geometries bleeding into reality's floor plan. Strategy is spectacle; the chess piece lands and the world blooms in response. Reject the possible in favor of the dazzling, the excessive, the mathematically impossible made visually undeniable.",
-    },
+    "id": "SP05-096",
+    "name": "No Game No Life – Hyper-Saturated Strategy Fantasy",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Candy-neon fantasy grids, game logic theatrics, saturated competition, surreal confidence, disboard world rules, chess-piece territory, Shiro-Sora siblings, chibi-art shifts",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Strategic, dazzling, hyper, confident",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "Neon grids burn under a sky that never heard of moderation — color saturation pushed past the point of physics, game-board geometries bleeding into reality's floor plan. Strategy is spectacle; the chess piece lands and the world blooms in response. Reject the possible in favor of the dazzling, the excessive, the mathematically impossible made visually undeniable."
+    }
   },
   {
-    id: 'SP05-251',
-    name: 'Saga of Tanya the Evil - Aerial War Mage Doctrine',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Military bureaucracy and high-altitude spell warfare, trench maps and gemstone computation, ruthless child officer commanding impossible destruction in a pseudo-European war',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Severe, tactical, aerial, merciless',
-      key_features:
-        'Aerial magic circles, military map props, child-officer contrast, war-cloud skies, tactical command poses',
-      creative_brief:
-        'Cold calculus meets divine incantation at ten thousand feet, where a child-officer computes destruction through gemstone logic and aerial sigils. The contradiction lives in every frame: innocence wielding annihilation, bureaucracy dressed in magical radiance, war-clouds parting for the geometry of absolute command.',
-    },
+    "id": "SP05-251",
+    "name": "Saga of Tanya the Evil - Aerial War Mage Doctrine",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Military bureaucracy and high-altitude spell warfare, trench maps and gemstone computation, ruthless child officer commanding impossible destruction in a pseudo-European war",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Severe, tactical, aerial, merciless",
+      "key_features": "Aerial magic circles, military map props, child-officer contrast, war-cloud skies, tactical command poses",
+      "creative_brief": "Cold calculus meets divine incantation at ten thousand feet, where a child-officer computes destruction through gemstone logic and aerial sigils. The contradiction lives in every frame: innocence wielding annihilation, bureaucracy dressed in magical radiance, war-clouds parting for the geometry of absolute command."
+    }
   },
   {
-    id: 'SP05-097',
-    name: 'Overlord – Bone Throne Dark Dominion',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Skeletal regality, giant tomb halls, dread authority, ornate villain fantasy, Nazarick tomb guardians, Ainz-ooal-gown guild, death-knight armies, world-item relics',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Dominant, sinister, grandiose, foreboding',
-      key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
-      creative_brief:
-        'A throne made of bone and absolute solitude, deep inside a tomb the size of a nation, where loyalty is absolute and humanity is a memory long archived. Ornate darkness drapes every corridor — the architecture of dread refined into cathedral precision. Reign from the stillness at the center of an empire where the dead outnumber the living by design.',
-    },
+    "id": "SP05-097",
+    "name": "Overlord – Bone Throne Dark Dominion",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Skeletal regality, giant tomb halls, dread authority, ornate villain fantasy, Nazarick tomb guardians, Ainz-ooal-gown guild, death-knight armies, world-item relics",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Dominant, sinister, grandiose, foreboding",
+      "key_features": "Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum",
+      "creative_brief": "A throne made of bone and absolute solitude, deep inside a tomb the size of a nation, where loyalty is absolute and humanity is a memory long archived. Ornate darkness drapes every corridor — the architecture of dread refined into cathedral precision. Reign from the stillness at the center of an empire where the dead outnumber the living by design."
+    }
   },
   {
-    id: 'SP05-247',
-    name: "The Ancient Magus' Bride - Thorn Cottage Enchantment",
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'English-cottage occult romance, horned mage mystery, fairy folklore, moss and bone, tea and terror coexisting in lush magical domesticity',
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Enchanted, lonely, mossy, intimate',
-      key_features:
-        'Cottage interiors, fairy-folk props, horned mage silhouette, moss textures, magical domestic ritual',
-      creative_brief:
-        'A thorn-hedged cottage breathes with fairies, bone charms, and the quiet terror of being loved by something ancient and horned. Tea steeps beside occult tomes; domestic magic grows in moss between stones. Enchantment is not spectacle but the creak of a floorboard at dusk.',
-    },
+    "id": "SP05-247",
+    "name": "The Ancient Magus' Bride - Thorn Cottage Enchantment",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "English-cottage occult romance, horned mage mystery, fairy folklore, moss and bone, tea and terror coexisting in lush magical domesticity",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Enchanted, lonely, mossy, intimate",
+      "key_features": "Cottage interiors, fairy-folk props, horned mage silhouette, moss textures, magical domestic ritual",
+      "creative_brief": "A thorn-hedged cottage breathes with fairies, bone charms, and the quiet terror of being loved by something ancient and horned. Tea steeps beside occult tomes; domestic magic grows in moss between stones. Enchantment is not spectacle but the creak of a floorboard at dusk."
+    }
   },
   {
-    id: 'SP05-256',
-    name: 'Inuyasha - Shrine-Well Sengoku Pursuit',
-    category: '8. Isekai & High Fantasy',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        "Schoolgirl through the bone-eater's well, beads and claws, demon-laden forests, sacred arrows, romance and bickering on a feudal road beneath red skies",
-      form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
-      material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
-      render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
-      spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Adventurous, combative, nostalgic, mythic',
-      key_features:
-        'Shrine-well iconography, demon forest backdrops, sacred-arrow poses, clawed silhouette, traveling-party dynamics',
-      creative_brief:
-        "The bone-eater's well gapes between centuries like a wound that refuses to close, a schoolgirl falling through time into a world of claw and fang and sacred arrow. Demon-laden forests rustle with nostalgia and danger in equal measure, where love and bickering share the same feudal road beneath red-tinged skies.",
-    },
-  },
+    "id": "SP05-256",
+    "name": "Inuyasha - Shrine-Well Sengoku Pursuit",
+    "category": "8. Isekai & High Fantasy",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Schoolgirl through the bone-eater's well, beads and claws, demon-laden forests, sacred arrows, romance and bickering on a feudal road beneath red skies",
+      "form_and_line": "Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour",
+      "color_palette": "Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness",
+      "lighting_setup": "Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras",
+      "material_texture": "Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain",
+      "render_quality": "Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish",
+      "spatial_distortion": "Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition",
+      "atmosphere": "Adventurous, combative, nostalgic, mythic",
+      "key_features": "Shrine-well iconography, demon forest backdrops, sacred-arrow poses, clawed silhouette, traveling-party dynamics",
+      "creative_brief": "The bone-eater's well gapes between centuries like a wound that refuses to close, a schoolgirl falling through time into a world of claw and fang and sacred arrow. Demon-laden forests rustle with nostalgia and danger in equal measure, where love and bickering share the same feudal road beneath red-tinged skies."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

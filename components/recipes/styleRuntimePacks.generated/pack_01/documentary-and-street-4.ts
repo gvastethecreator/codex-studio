@@ -4,65 +4,56 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP01-002',
-    name: 'Candid Street Portrait',
-    category: '4. Documentary And Street',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic:
-        'Authentic candid street photography, photojournalistic portraiture, unposed and natural',
-      subject_treatment:
-        'Natural depth of field, subject isolated from busy background, spontaneous expression',
-      color_and_tone:
-        'Urban color palette, natural daylight tones, slightly desaturated, realistic contrast',
-      lighting_and_shadow: 'Available natural light, dynamic shadows, mixed lighting environments',
-      texture_and_material:
-        'Subtle digital noise or film grain, realistic clothing textures, environmental grit',
-      camera_and_composition:
-        'Shot on 35mm or 50mm lens, slight motion blur in background, dynamic framing',
-      atmosphere_and_mood: 'Real, fleeting, documentary, slice-of-life, energetic',
-      rendering_and_quality: 'High quality documentary photography, authentic, unretouched look',
-      creative_brief:
-        'A stolen glance across an intersection, the city breathing through its inhabitants, the sidewalk transformed into a theater of unscripted moments. Available light catches a stranger mid-thought, the frame holding its breath as asphalt grain and fleeting honesty conspire. Documentary truth rendered through the lens of someone who forgot the camera was there, the urban pulse beating in every unposed frame.',
-    },
+    "id": "SP01-002",
+    "name": "Candid Street Portrait",
+    "category": "4. Documentary And Street",
+    "negativePrompt": "illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed",
+    "style": {
+      "aesthetic": "Authentic candid street photography, photojournalistic portraiture, unposed and natural",
+      "subject_treatment": "Natural depth of field, subject isolated from busy background, spontaneous expression",
+      "color_and_tone": "Urban color palette, natural daylight tones, slightly desaturated, realistic contrast",
+      "lighting_and_shadow": "Available natural light, dynamic shadows, mixed lighting environments",
+      "texture_and_material": "Subtle digital noise or film grain, realistic clothing textures, environmental grit",
+      "camera_and_composition": "Shot on 35mm or 50mm lens, slight motion blur in background, dynamic framing",
+      "atmosphere_and_mood": "Real, fleeting, documentary, slice-of-life, energetic",
+      "rendering_and_quality": "High quality documentary photography, authentic, unretouched look",
+      "creative_brief": "A stolen glance across an intersection, the city breathing through its inhabitants, the sidewalk transformed into a theater of unscripted moments. Available light catches a stranger mid-thought, the frame holding its breath as asphalt grain and fleeting honesty conspire. Documentary truth rendered through the lens of someone who forgot the camera was there, the urban pulse beating in every unposed frame."
+    }
   },
   {
-    id: 'SP01-046',
-    name: 'Street Photography',
-    category: '4. Documentary And Street',
-    negativePrompt: 'posed, studio',
-    style: {
-      aesthetic: 'Urban candid moment',
-      form_and_line: 'Messy composition',
-      color_palette: 'High contrast B&W or gritty color',
-      lighting_setup: 'Natural',
-      material_texture: 'Grain',
-      render_quality: 'Cartier-Bresson, decisive moment',
-      spatial_distortion: 'Motion blur',
-      atmosphere: 'Real, fleeting',
-      key_features: 'Urban context',
-      creative_brief:
-        "A breath caught in the city's restless lungs, where shadow carves meaning from pavement and a passing glance becomes permanent. Grain and grit testify not to flaw but to witness, the frame stealing a truth the world was too hurried to notice. The ordinary transforms into elegy at the exact instant it stops moving.",
-    },
+    "id": "SP01-046",
+    "name": "Street Photography",
+    "category": "4. Documentary And Street",
+    "negativePrompt": "posed, studio",
+    "style": {
+      "aesthetic": "Urban candid moment",
+      "form_and_line": "Messy composition",
+      "color_palette": "High contrast B&W or gritty color",
+      "lighting_setup": "Natural",
+      "material_texture": "Grain",
+      "render_quality": "Cartier-Bresson, decisive moment",
+      "spatial_distortion": "Motion blur",
+      "atmosphere": "Real, fleeting",
+      "key_features": "Urban context",
+      "creative_brief": "A breath caught in the city's restless lungs, where shadow carves meaning from pavement and a passing glance becomes permanent. Grain and grit testify not to flaw but to witness, the frame stealing a truth the world was too hurried to notice. The ordinary transforms into elegy at the exact instant it stops moving."
+    }
   },
   {
-    id: 'SP01-075',
-    name: 'Urbex (Urban Exploration)',
-    category: '4. Documentary And Street',
-    negativePrompt: 'clean, new, people',
-    style: {
-      aesthetic: 'Abandoned building interior',
-      form_and_line: 'Decay, peeling paint',
-      color_palette: 'Desaturated, rust',
-      lighting_setup: 'Shafts of light',
-      material_texture: 'Dust, debris',
-      render_quality: 'Gritty, haunting',
-      spatial_distortion: 'None',
-      atmosphere: 'Lonely, post-apocalyptic',
-      key_features: 'Ruins',
-      creative_brief:
-        'Dust holds its vigil in abandoned rooms where plaster peels like pages turning backward through decades of silence. Decay becomes the last living tenant, rust the slow ink rewriting what was once inhabited into what is now remembered.',
-    },
-  },
+    "id": "SP01-075",
+    "name": "Urbex (Urban Exploration)",
+    "category": "4. Documentary And Street",
+    "negativePrompt": "clean, new, people",
+    "style": {
+      "aesthetic": "Abandoned building interior",
+      "form_and_line": "Decay, peeling paint",
+      "color_palette": "Desaturated, rust",
+      "lighting_setup": "Shafts of light",
+      "material_texture": "Dust, debris",
+      "render_quality": "Gritty, haunting",
+      "spatial_distortion": "None",
+      "atmosphere": "Lonely, post-apocalyptic",
+      "key_features": "Ruins",
+      "creative_brief": "Dust holds its vigil in abandoned rooms where plaster peels like pages turning backward through decades of silence. Decay becomes the last living tenant, rust the slow ink rewriting what was once inhabited into what is now remembered."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

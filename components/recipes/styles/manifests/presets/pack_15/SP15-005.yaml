@@ -7,16 +7,16 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Community water plaza with elegant solar accumulation.
-  form_and_line: Soft circles, open planes, and people actively using the space.
-  color_palette: Arena solar, azul agua y verde suave.
-  lighting_setup: Bright sunlight with broad reflections on calm water.
-  material_texture: Light stone, thin panels, and water sheets.
-  render_quality: Clear and aspirational public scene.
-  spatial_distortion: Plaza perspective with a dominant water core.
-  atmosphere: Civic wellbeing, rest, and collective trust.
-  key_features: Reservorio reflectante, sombras habitables, actividad cotidiana.
-  creative_brief: A public space that makes energy abundance visible without feeling like cold propaganda.
+  aesthetic: Hydrological solarpunk commons where storage, cooling, and gathering are one system.
+  form_and_line: Concentric reservoir rings, stepped seating edges, and radial circulation paths.
+  color_palette: Solar sand, aquifer blue, and herbaceous soft green.
+  lighting_setup: High-angle sun with mirrored highlights and cool under-canopy shade pools.
+  material_texture: Porous pale stone, evaporative ceramic fins, brushed alloy rails, and laminar water films.
+  render_quality: Editorial-grade civic concept art with clean public-space readability.
+  spatial_distortion: Amphitheater-like basin depth emphasizing a multifunctional water-energy core.
+  atmosphere: Collective comfort, thermal relief, and visible ecological stewardship.
+  key_features: Thermal battery basins, refill kiosks, mist pergolas, and everyday mixed-age occupancy.
+  creative_brief: A neighborhood plaza that openly displays water management and passive cooling as beautiful public infrastructure rather than hidden utilities.
 avoidRules: [photoreal, militarized, dirty-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-005.webp }
 attributes:

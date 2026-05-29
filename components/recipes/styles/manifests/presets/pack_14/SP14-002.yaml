@@ -1,24 +1,24 @@
 schemaVersion: 1
 id: SP14-002
 packId: pack_14
-name: Velvet Relic Revenant
+name: Velvet Reliquary Atelier
 category: 1. Mythic Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Aristocratic revenant portrait with decadent luxury.
-  form_and_line: Refined profile, noble drapery, and theatrical hands.
-  color_palette: Deep burgundy, ink black, and aged silver.
-  lighting_setup: Side candlelight with carved shadows.
-  material_texture: Velvet, metallic relics, and pale marble-like skin.
-  render_quality: Dark, high-detail illustration with strong editorial presence.
-  spatial_distortion: Encuadre medio centrado en carisma y ornamento.
-  atmosphere: Noble melancholy and motionless danger.
-  key_features: Reliquia central, cuello alto, gesto inmortal.
-  creative_brief: An elegant revenant who feels like a living relic—seductive and ominous.
-avoidRules: [photoreal, cheerful, modern-casual, watermark, text, logo]
+  aesthetic: Aristocratic restoration atelier with esoteric craftsmanship.
+  form_and_line: Artisan-focused silhouette, suspended relics, and precise gesture lines.
+  color_palette: Oxblood velvet, tarnished brass, and parchment ivory.
+  lighting_setup: Focused task-lamp pools with peripheral candle glow.
+  material_texture: Burnished metal filings, antique velvet, wax seals, and lacquered wood.
+  render_quality: Premium narrative illustration with editorial precision and controlled contrast.
+  spatial_distortion: Workbench-first framing with layered shelves and hanging reliquaries.
+  atmosphere: Obsessive concentration, sacred secrecy, and museum-grade elegance.
+  key_features: Relic disassembly tools, velvet-lined drawers, suspended sanctified fragments.
+  creative_brief: A master conservator restoring forbidden relics in a midnight atelier where every object feels priceless and dangerous.
+avoidRules: [photoreal, cheerful, modern-casual, action-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-002.webp }
 attributes:
-  negativePrompt: photoreal, cheerful, modern-casual, watermark, text, logo
+  negativePrompt: photoreal, cheerful, modern-casual, action-chaos, watermark, text, logo
 taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

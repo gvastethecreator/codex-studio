@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-009
+packId: pack_14
+name: Abyssal Chapel Leviathan
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Maritime mythic noir with cathedral-scale sea dread.
+  form_and_line: Vertical nave-like hull interiors and colossal curved anatomy cues.
+  color_palette: Abyssal teal, oxidized bronze, and moonlit bone.
+  lighting_setup: Bioluminescent shafts filtered through submerged stained glass.
+  material_texture: Salt-scarred metal, wet basalt, barnacled stone, and ritual silk.
+  render_quality: Cinematic key art with crisp hierarchy and premium atmospheric depth.
+  spatial_distortion: Tidal perspective tunnels that pull toward a submerged altar core.
+  atmosphere: Sacred terror, pressure, and silent devotion to the unknown.
+  key_features: Flooded chapel aisles, leviathan silhouette, submerged reliquary shrine.
+  creative_brief: A drowned chapel inside a leviathan-scale ruin where worship and deep-ocean horror become indistinguishable.
+avoidRules: [photoreal, cheerful, bright-summer, modern-urban, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-009.webp }
+attributes:
+  negativePrompt: photoreal, cheerful, bright-summer, modern-urban, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

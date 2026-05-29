@@ -4,843 +4,543 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP05-056',
-    name: 'Geometric Neon Rescue',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Sharp geometry, flat-shaded flames, pastel neon chaos, heroic emergency response, triangle-mouth fire trucks, rescue-burning souls, mechanical spirit ignition, angular hero posing',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Hyper, triumphant, chaotic, spirited',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        'Triangles catch fire and rectangles scream toward danger with impossible courage. A fire truck made of perfect angles cuts through chaos like a theorem proving itself against entropy. Heroism here is geometric, clean-lined, and painted in the palette of a fever dream.',
-    },
+    "id": "SP05-056",
+    "name": "Geometric Neon Rescue",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Sharp geometry, flat-shaded flames, pastel neon chaos, heroic emergency response, triangle-mouth fire trucks, rescue-burning souls, mechanical spirit ignition, angular hero posing",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Hyper, triumphant, chaotic, spirited",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "Triangles catch fire and rectangles scream toward danger with impossible courage. A fire truck made of perfect angles cuts through chaos like a theorem proving itself against entropy. Heroism here is geometric, clean-lined, and painted in the palette of a fever dream."
+    }
   },
   {
-    id: 'SP05-222',
-    name: 'Patlabor - Municipal Mecha Procedure',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Construction mechs, police procedure, Tokyo infrastructure realism, everyday bureaucracy around giant robots, practical engineering detail and low-key civic humor',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Procedural, grounded, urban, practical',
-      key_features:
-        'Construction-mech detail, police command vehicles, urban infrastructure backdrops, practical control panels, civic-response staging',
-      creative_brief:
-        'Giant robots clock in for their shift, patrolling Tokyo flood barriers and construction sites with the bureaucracy of any municipal department. The future is not glamorous — it is paperwork, maintenance schedules, and a labor mech that needs its hydraulics checked before the next typhoon. Heroism wears a hard hat and fills out incident reports.',
-    },
+    "id": "SP05-222",
+    "name": "Patlabor - Municipal Mecha Procedure",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Construction mechs, police procedure, Tokyo infrastructure realism, everyday bureaucracy around giant robots, practical engineering detail and low-key civic humor",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Procedural, grounded, urban, practical",
+      "key_features": "Construction-mech detail, police command vehicles, urban infrastructure backdrops, practical control panels, civic-response staging",
+      "creative_brief": "Giant robots clock in for their shift, patrolling Tokyo flood barriers and construction sites with the bureaucracy of any municipal department. The future is not glamorous — it is paperwork, maintenance schedules, and a labor mech that needs its hydraulics checked before the next typhoon. Heroism wears a hard hat and fills out incident reports."
+    }
   },
   {
-    id: 'SP05-224',
-    name: 'Appleseed - Tactical Arcology Assault',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Paramilitary city-state futurism, armored exosuits, clean arcologies, bio-political tactical drama, machine precision meeting postwar human fragility',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Tactical, polished, civic, severe',
-      key_features:
-        'Arcology scale, exosuit detail, tactical squad formations, clean future architecture, hard-surface action framing',
-      creative_brief:
-        'Clean arcology lines fracture under the weight of tactical deployment, exosuits gleaming with the cold sheen of a future that traded disorder for control and got neither. Every corridor is a negotiation between utopian architecture and the violence required to protect it. Peace wears ceramic armor and carries a rifle it hopes not to use.',
-    },
+    "id": "SP05-224",
+    "name": "Appleseed - Tactical Arcology Assault",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Paramilitary city-state futurism, armored exosuits, clean arcologies, bio-political tactical drama, machine precision meeting postwar human fragility",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Tactical, polished, civic, severe",
+      "key_features": "Arcology scale, exosuit detail, tactical squad formations, clean future architecture, hard-surface action framing",
+      "creative_brief": "Clean arcology lines fracture under the weight of tactical deployment, exosuits gleaming with the cold sheen of a future that traded disorder for control and got neither. Every corridor is a negotiation between utopian architecture and the violence required to protect it. Peace wears ceramic armor and carries a rifle it hopes not to use."
+    }
   },
   {
-    id: 'SP05-228',
-    name: 'Casshern Sins - White Wasteland Robot Elegy',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Post-collapse robot mortality, pale ruin vistas, lonely black-and-white heroism, existential combat against entropy, dust and silence as atmosphere',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Elegiac, pale, lonely, mythic',
-      key_features:
-        'Pale wasteland backdrops, elegant robot forms, collapse-era ruins, lonely hero framing, entropy motifs',
-      creative_brief:
-        'A white silence stretches across the end of all things, where robots learn to grieve before they learn to die. Elegance survives the ruins, a lonely figure in black against the pale ghost of civilization. The last beauty is a machine that understands loss.',
-    },
+    "id": "SP05-228",
+    "name": "Casshern Sins - White Wasteland Robot Elegy",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Post-collapse robot mortality, pale ruin vistas, lonely black-and-white heroism, existential combat against entropy, dust and silence as atmosphere",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Elegiac, pale, lonely, mythic",
+      "key_features": "Pale wasteland backdrops, elegant robot forms, collapse-era ruins, lonely hero framing, entropy motifs",
+      "creative_brief": "A white silence stretches across the end of all things, where robots learn to grieve before they learn to die. Elegance survives the ruins, a lonely figure in black against the pale ghost of civilization. The last beauty is a machine that understands loss."
+    }
   },
   {
-    id: 'SP05-236',
-    name: 'VOTOMS - Scopedog Trench Attrition',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Utilitarian armored troopers, mud and rust, industrial war fatigue, scoped visor focus, practical mecha treated like military hardware rather than legend',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Gruff, tactical, muddy, exhausted',
-      key_features:
-        'Scoped visor iconography, utilitarian mecha detail, trench-scale staging, rust-and-mud surfaces, hard-war realism',
-      creative_brief:
-        'Scopedogs squat in mud like industrial toads, machines that never asked to be mythic but earned every rust streak with blood. War is a logistics problem solved in trenches. The visor does not see glory—it sees the next hill, the next body, the next rain.',
-    },
+    "id": "SP05-236",
+    "name": "VOTOMS - Scopedog Trench Attrition",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Utilitarian armored troopers, mud and rust, industrial war fatigue, scoped visor focus, practical mecha treated like military hardware rather than legend",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Gruff, tactical, muddy, exhausted",
+      "key_features": "Scoped visor iconography, utilitarian mecha detail, trench-scale staging, rust-and-mud surfaces, hard-war realism",
+      "creative_brief": "Scopedogs squat in mud like industrial toads, machines that never asked to be mythic but earned every rust streak with blood. War is a logistics problem solved in trenches. The visor does not see glory—it sees the next hill, the next body, the next rain."
+    }
   },
   {
-    id: 'SP05-238',
-    name: 'SSSS.Gridman - Tokusatsu Neon City Grid',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Digital kaiju fights in suburban city blocks, tokusatsu legacy reframed through modern clean lines, neon grid overlays, giant-hero silhouette clarity and youth melancholy',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Neon, heroic, melancholic, clean',
-      key_features:
-        'Grid overlays, giant-hero silhouettes, suburban city destruction, clean digital mecha lines, tokusatsu posing',
-      creative_brief:
-        'Tokusatsu giants cast neon shadows over suburban rooftops while teenagers carry the weight of digital gods in their chests. Grid lines crackle through ordinary streets like memory through static. Heroism is clean lines and complicated silence.',
-    },
+    "id": "SP05-238",
+    "name": "SSSS.Gridman - Tokusatsu Neon City Grid",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Digital kaiju fights in suburban city blocks, tokusatsu legacy reframed through modern clean lines, neon grid overlays, giant-hero silhouette clarity and youth melancholy",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Neon, heroic, melancholic, clean",
+      "key_features": "Grid overlays, giant-hero silhouettes, suburban city destruction, clean digital mecha lines, tokusatsu posing",
+      "creative_brief": "Tokusatsu giants cast neon shadows over suburban rooftops while teenagers carry the weight of digital gods in their chests. Grid lines crackle through ordinary streets like memory through static. Heroism is clean lines and complicated silence."
+    }
   },
   {
-    id: 'SP05-240',
-    name: 'Promare - Tri-Color Fire Mecha Riot',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Graphic neon geometry, fire rescue mecha, angular city infernos, theatrical hero rivalry, poster-bright color blocking and anti-naturalistic heat',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Blazing, graphic, rebellious, maximal',
-      key_features:
-        'Tri-color flame blocks, angular mecha silhouettes, rescue iconography, graphic city infernos, poster-like action poses',
-      creative_brief:
-        'Tri-color flames eat through angular cities while rescue mecha pose like graphic-novel saints against an inferno that refuses naturalism. Rebellion is rendered in flat color blocks and perfect diagonal lines. Burn bright, burn deliberate, burn as protest.',
-    },
+    "id": "SP05-240",
+    "name": "Promare - Tri-Color Fire Mecha Riot",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Graphic neon geometry, fire rescue mecha, angular city infernos, theatrical hero rivalry, poster-bright color blocking and anti-naturalistic heat",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Blazing, graphic, rebellious, maximal",
+      "key_features": "Tri-color flame blocks, angular mecha silhouettes, rescue iconography, graphic city infernos, poster-like action poses",
+      "creative_brief": "Tri-color flames eat through angular cities while rescue mecha pose like graphic-novel saints against an inferno that refuses naturalism. Rebellion is rendered in flat color blocks and perfect diagonal lines. Burn bright, burn deliberate, burn as protest."
+    }
   },
   {
-    id: 'SP05-051',
-    name: 'Neon Tragic Sprint',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Hyper-fast neon city action, street chrome, youthful desperation, electric motion, cyber-leg prosthetics, neon underglow, hacker interfaces, gravity-shifting stunts',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Tragic, kinetic, desperate, electric',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        "Speed becomes a language of grief in corridors of glass and light. Youth hurls itself through the city's electric veins, each stride a refusal to stop feeling. Chrome limbs catch neon reflections like tears the future forgot to shed.",
-    },
+    "id": "SP05-051",
+    "name": "Neon Tragic Sprint",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Hyper-fast neon city action, street chrome, youthful desperation, electric motion, cyber-leg prosthetics, neon underglow, hacker interfaces, gravity-shifting stunts",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Tragic, kinetic, desperate, electric",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "Speed becomes a language of grief in corridors of glass and light. Youth hurls itself through the city's electric veins, each stride a refusal to stop feeling. Chrome limbs catch neon reflections like tears the future forgot to shed."
+    }
   },
   {
-    id: 'SP05-052',
-    name: 'Dystopian Policing Grid',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Bureaucratic sci-fi policing, sleek weapons, surveillance interfaces, social control tension, dominator guns, psycho-pass hue checks, holographic crime coefficients, dystopian Tokyo',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Clinical, oppressive, dystopian, cold',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        'Justice wears a digital mask and carries a numbered verdict. Every citizen walks beneath a halo of data, their soul reduced to a coefficient on a screen. The law is not blind; it is watching with infinite, unblinking eyes.',
-    },
+    "id": "SP05-052",
+    "name": "Dystopian Policing Grid",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Bureaucratic sci-fi policing, sleek weapons, surveillance interfaces, social control tension, dominator guns, psycho-pass hue checks, holographic crime coefficients, dystopian Tokyo",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Clinical, oppressive, dystopian, cold",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "Justice wears a digital mask and carries a numbered verdict. Every citizen walks beneath a halo of data, their soul reduced to a coefficient on a screen. The law is not blind; it is watching with infinite, unblinking eyes."
+    }
   },
   {
-    id: 'SP05-054',
-    name: 'Beam Opera Mecha',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Sleek mecha heroics, colorful beam clashes, emotional space-opera staging, Gundam mobile suits, colony drop devastation, Newtype psychic flashes, Minovsky particle glow',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Dramatic, luminous, operatic, cosmic',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        'Light becomes weapon and music becomes war in the vacuum between colonies. Pilots reach across the void not with hands but with particle beams that sing like violins. The cosmos is a stage and each explosion is a note in an aria of survival.',
-    },
+    "id": "SP05-054",
+    "name": "Beam Opera Mecha",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Sleek mecha heroics, colorful beam clashes, emotional space-opera staging, Gundam mobile suits, colony drop devastation, Newtype psychic flashes, Minovsky particle glow",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Dramatic, luminous, operatic, cosmic",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "Light becomes weapon and music becomes war in the vacuum between colonies. Pilots reach across the void not with hands but with particle beams that sing like violins. The cosmos is a stage and each explosion is a note in an aria of survival."
+    }
   },
   {
-    id: 'SP05-055',
-    name: 'Gothic Tech Existentialism',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Dark cyber ruins, cathedral-industrial design, elegant dread, philosophical chill, gargoyle mecha, subterranean layers, bio-organic horror, existential stillness',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Brooding, cerebral, existential, haunting',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        'Cathedrals of rust and silicon rise where gods once lived, now inhabited by questions without answers. Machinery dreams of organics and flesh envies the permanence of steel. In the hollow between circuits and soul, dread blooms like a black flower.',
-    },
+    "id": "SP05-055",
+    "name": "Gothic Tech Existentialism",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Dark cyber ruins, cathedral-industrial design, elegant dread, philosophical chill, gargoyle mecha, subterranean layers, bio-organic horror, existential stillness",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Brooding, cerebral, existential, haunting",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "Cathedrals of rust and silicon rise where gods once lived, now inhabited by questions without answers. Machinery dreams of organics and flesh envies the permanence of steel. In the hollow between circuits and soul, dread blooms like a black flower."
+    }
   },
   {
-    id: 'SP05-057',
-    name: 'Sleek Post-Apoc Mecha Romance',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Polished suits, melancholy youth, sunset ruins, romantic apocalypse tension, klaxosaur designs, co-pilot intimacy, mecha-flower motifs, post-war loneliness',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Vulnerable, sleek, bittersweet, romantic',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        'Two pilots share a cockpit, and the world outside has already ended. Love blooms in the pressurized silence between combat alerts, fragile as flower petals trapped in mecha joints. The sunset ruins are not an ending but a backdrop for something beginning.',
-    },
+    "id": "SP05-057",
+    "name": "Sleek Post-Apoc Mecha Romance",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Polished suits, melancholy youth, sunset ruins, romantic apocalypse tension, klaxosaur designs, co-pilot intimacy, mecha-flower motifs, post-war loneliness",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Vulnerable, sleek, bittersweet, romantic",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "Two pilots share a cockpit, and the world outside has already ended. Love blooms in the pressurized silence between combat alerts, fragile as flower petals trapped in mecha joints. The sunset ruins are not an ending but a backdrop for something beginning."
+    }
   },
   {
-    id: 'SP05-058',
-    name: 'Spider-Mech War Drama',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Military walkers, cold command screens, trench-like emotions, modern war grief, spider-tank locomotion, comms headset grit, child-soldier trauma, armored ballistics',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Tragic, disciplined, somber, militaristic',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        'Legs of steel carry children toward graves they are too young to understand. Command screens glow cold blue on faces that should still be watching cartoons. The spider-tank walks not on ground but on the fragile membrane between innocence and annihilation.',
-    },
+    "id": "SP05-058",
+    "name": "Spider-Mech War Drama",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Military walkers, cold command screens, trench-like emotions, modern war grief, spider-tank locomotion, comms headset grit, child-soldier trauma, armored ballistics",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Tragic, disciplined, somber, militaristic",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "Legs of steel carry children toward graves they are too young to understand. Command screens glow cold blue on faces that should still be watching cartoons. The spider-tank walks not on ground but on the fragile membrane between innocence and annihilation."
+    }
   },
   {
-    id: 'SP05-059',
-    name: 'Tactical Network Cybercrime',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Network warfare, modular drones, tactical overlays, grounded procedural cyber action, stand-alone-complex hacking, laughing-man logo, think-tank neural links, optical camouflage',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Tactical, cool-headed, procedural, cerebral',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        'The battlefield is invisible, made of packets and protocols, yet its casualties are real. Hackers weave through firewalls like ghosts through walls, leaving only a laughing-man logo behind. In the network, identity is the first casualty and truth the last.',
-    },
+    "id": "SP05-059",
+    "name": "Tactical Network Cybercrime",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Network warfare, modular drones, tactical overlays, grounded procedural cyber action, stand-alone-complex hacking, laughing-man logo, think-tank neural links, optical camouflage",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Tactical, cool-headed, procedural, cerebral",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "The battlefield is invisible, made of packets and protocols, yet its casualties are real. Hackers weave through firewalls like ghosts through walls, leaving only a laughing-man logo behind. In the network, identity is the first casualty and truth the last."
+    }
   },
   {
-    id: 'SP05-060',
-    name: 'Orbital Rival Mecha',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Orbit-to-surface warfare, elegant super-mech contrast, dueling command philosophies, orbital-frame designs, trans-atmospheric drops, metatron ore, earth-vs-mars politics',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Grand, competitive, epic, political',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        'Planets duel through proxy machines, each orbital frame a philosophical argument sheathed in alloy. Mars and Earth exchange not words but trans-atmospheric fire that burns like diplomacy failed. Gravity becomes a weapon wielded by titans who never touch the ground.',
-    },
+    "id": "SP05-060",
+    "name": "Orbital Rival Mecha",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Orbit-to-surface warfare, elegant super-mech contrast, dueling command philosophies, orbital-frame designs, trans-atmospheric drops, metatron ore, earth-vs-mars politics",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Grand, competitive, epic, political",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "Planets duel through proxy machines, each orbital frame a philosophical argument sheathed in alloy. Mars and Earth exchange not words but trans-atmospheric fire that burns like diplomacy failed. Gravity becomes a weapon wielded by titans who never touch the ground."
+    }
   },
   {
-    id: 'SP05-221',
-    name: 'Macross - Idol Signal Dogfight',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Missile-swarm dogfights and stage-light pop music, transformable jets, idol broadcast emotion, galactic war refracted through performance and longing',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Aerial, poppy, heroic, romantic',
-      key_features:
-        'Transforming craft silhouettes, concert-stage lighting, missile-trail swarms, cockpit drama, idol-performance iconography',
-      creative_brief:
-        'A love song cuts through vacuum as missile contrails trace calligraphy across the battlefield, transforming fighters folding between combat and concert. The war is fought with thrust vectors and power chords, and victory depends as much on the frequency of hope as the caliber of ordnance. Culture is the ultimate weapon.',
-    },
+    "id": "SP05-221",
+    "name": "Macross - Idol Signal Dogfight",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Missile-swarm dogfights and stage-light pop music, transformable jets, idol broadcast emotion, galactic war refracted through performance and longing",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Aerial, poppy, heroic, romantic",
+      "key_features": "Transforming craft silhouettes, concert-stage lighting, missile-trail swarms, cockpit drama, idol-performance iconography",
+      "creative_brief": "A love song cuts through vacuum as missile contrails trace calligraphy across the battlefield, transforming fighters folding between combat and concert. The war is fought with thrust vectors and power chords, and victory depends as much on the frequency of hope as the caliber of ordnance. Culture is the ultimate weapon."
+    }
   },
   {
-    id: 'SP05-223',
-    name: 'Bubblegum Crisis - Neon Power-Suit Hunt',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Night-city women in armored suits, synth neon, biker cool, corporate conspiracies, 80s cyber-noir glamour with hard-chrome aggression',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Glossy, dangerous, neon, rebellious',
-      key_features:
-        'Power-suit silhouettes, neon skyline reflections, biker fashion accents, corporate high-rise staging, chase-scene motion',
-      creative_brief:
-        'Chrome limbs catch neon like liquid code as armored women tear through corporate towers on a mission with no backup and no compromise. The city sweats synthwave and oil, every puddle reflecting a different shade of conspiracy. Power suits gleam not just with polish but with the anger of those who built their own armor.',
-    },
+    "id": "SP05-223",
+    "name": "Bubblegum Crisis - Neon Power-Suit Hunt",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Night-city women in armored suits, synth neon, biker cool, corporate conspiracies, 80s cyber-noir glamour with hard-chrome aggression",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Glossy, dangerous, neon, rebellious",
+      "key_features": "Power-suit silhouettes, neon skyline reflections, biker fashion accents, corporate high-rise staging, chase-scene motion",
+      "creative_brief": "Chrome limbs catch neon like liquid code as armored women tear through corporate towers on a mission with no backup and no compromise. The city sweats synthwave and oil, every puddle reflecting a different shade of conspiracy. Power suits gleam not just with polish but with the anger of those who built their own armor."
+    }
   },
   {
-    id: 'SP05-225',
-    name: 'Battle Angel Alita - Scrap-Yard Velocity',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Scrap-yard cyber-body resilience, motorball speed, junk and steel humanity, kinetic close-quarters violence, eyes full of ferocity and loss in a stacked metal city',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Raw, fast, scrapyard, determined',
-      key_features:
-        'Cyber-limb detail, scrapyard verticality, speed-race framing, intimate combat poses, junk-metal textures',
-      creative_brief:
-        'A cyborg girl moves through junk-steel canyons at motorball velocity, her eyes holding every tragedy the scrapyard has fed her and every fight she has fed back. Metal remembers impact — the dents, the sparks, the velocity of a body that refuses to stay broken. Resilience is the only currency that matters in a city built from what others threw away.',
-    },
+    "id": "SP05-225",
+    "name": "Battle Angel Alita - Scrap-Yard Velocity",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Scrap-yard cyber-body resilience, motorball speed, junk and steel humanity, kinetic close-quarters violence, eyes full of ferocity and loss in a stacked metal city",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Raw, fast, scrapyard, determined",
+      "key_features": "Cyber-limb detail, scrapyard verticality, speed-race framing, intimate combat poses, junk-metal textures",
+      "creative_brief": "A cyborg girl moves through junk-steel canyons at motorball velocity, her eyes holding every tragedy the scrapyard has fed her and every fight she has fed back. Metal remembers impact — the dents, the sparks, the velocity of a body that refuses to stay broken. Resilience is the only currency that matters in a city built from what others threw away."
+    }
   },
   {
-    id: 'SP05-226',
-    name: 'Ergo Proxy - Mausoleum City Dread',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Domed-city despair, android personhood crisis, black fashion silhouettes, abandoned modernism, philosophical cyber-goth severity under rain and concrete',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Bleak, cerebral, cool, funereal',
-      key_features:
-        'Black fashion silhouettes, brutalist city spaces, android detail, rain-darkened concrete, philosophical stillness',
-      creative_brief:
-        'A procession through concrete cathedrals where android souls weigh heavier than human breath. Every shadow carries a question unasked, every raindrop mirrors a fragment of self lost to the machine. Render the beautiful dread of consciousness waking inside a body that was never meant to dream.',
-    },
+    "id": "SP05-226",
+    "name": "Ergo Proxy - Mausoleum City Dread",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Domed-city despair, android personhood crisis, black fashion silhouettes, abandoned modernism, philosophical cyber-goth severity under rain and concrete",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Bleak, cerebral, cool, funereal",
+      "key_features": "Black fashion silhouettes, brutalist city spaces, android detail, rain-darkened concrete, philosophical stillness",
+      "creative_brief": "A procession through concrete cathedrals where android souls weigh heavier than human breath. Every shadow carries a question unasked, every raindrop mirrors a fragment of self lost to the machine. Render the beautiful dread of consciousness waking inside a body that was never meant to dream."
+    }
   },
   {
-    id: 'SP05-229',
-    name: 'Cyber City Oedo 808 - Prison Hacker Neon Vice',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Criminal enforcers in a filthy cyber city, 80s neon vice, illegal tech, wet asphalt violence, hard-edged police-thriller futurism with dangerous swagger',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Vice-soaked, neon, lawless, hardboiled',
-      key_features:
-        'Wet city alleys, criminal-tech props, prison-mercenary silhouettes, hard neon rim light, vice-district staging',
-      creative_brief:
-        'Wet asphalt and stolen neon, a city that bleeds through its own circuits. Three criminals carry badges like wounds, swaggering through rain that tastes of illegal tech and expired justice. The future is a back-alley transaction in a trench coat.',
-    },
+    "id": "SP05-229",
+    "name": "Cyber City Oedo 808 - Prison Hacker Neon Vice",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Criminal enforcers in a filthy cyber city, 80s neon vice, illegal tech, wet asphalt violence, hard-edged police-thriller futurism with dangerous swagger",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Vice-soaked, neon, lawless, hardboiled",
+      "key_features": "Wet city alleys, criminal-tech props, prison-mercenary silhouettes, hard neon rim light, vice-district staging",
+      "creative_brief": "Wet asphalt and stolen neon, a city that bleeds through its own circuits. Three criminals carry badges like wounds, swaggering through rain that tastes of illegal tech and expired justice. The future is a back-alley transaction in a trench coat."
+    }
   },
   {
-    id: 'SP05-230',
-    name: 'BLAME! - Megastructure Terminal Silence',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Endless concrete megastructure, tiny humans against impossible architecture, terminal-gun severity, industrial silence, machine civilization outliving meaning',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Monumental, empty, lethal, alienated',
-      key_features:
-        'Megastructure scale, terminal-gun silhouettes, tiny-human framing, concrete abysses, machine-hall emptiness',
-      creative_brief:
-        'Concrete that outgrew its makers, corridors that forgot purpose, a lone figure so small against architecture that gods would envy. The megastructure breathes silence into lungs of rusted steel. Scale is the only remaining language, and it speaks in abyssal tones.',
-    },
+    "id": "SP05-230",
+    "name": "BLAME! - Megastructure Terminal Silence",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Endless concrete megastructure, tiny humans against impossible architecture, terminal-gun severity, industrial silence, machine civilization outliving meaning",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Monumental, empty, lethal, alienated",
+      "key_features": "Megastructure scale, terminal-gun silhouettes, tiny-human framing, concrete abysses, machine-hall emptiness",
+      "creative_brief": "Concrete that outgrew its makers, corridors that forgot purpose, a lone figure so small against architecture that gods would envy. The megastructure breathes silence into lungs of rusted steel. Scale is the only remaining language, and it speaks in abyssal tones."
+    }
   },
   {
-    id: 'SP05-231',
-    name: 'RahXephon - Coral Mecha Liturgy',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Musical metaphysics, blue-blood alien war, coral mecha forms, city-barrier mystery, operatic mecha emotion sung through strange sacred visuals',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Operatic, mysterious, blue-lit, mournful',
-      key_features:
-        'Coral mecha shapes, musical-symbol motifs, sacred city scale, strange blue blood accents, lyrical combat framing',
-      creative_brief:
-        'Coral mecha rise from blue-blood seas while music becomes the shape of catastrophe and longing. Sacred geometry overwrites weaponry; combat is liturgy, each sortie a psalm sung into unknown skies. The barrier between self and world dissolves in resonant color.',
-    },
+    "id": "SP05-231",
+    "name": "RahXephon - Coral Mecha Liturgy",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Musical metaphysics, blue-blood alien war, coral mecha forms, city-barrier mystery, operatic mecha emotion sung through strange sacred visuals",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Operatic, mysterious, blue-lit, mournful",
+      "key_features": "Coral mecha shapes, musical-symbol motifs, sacred city scale, strange blue blood accents, lyrical combat framing",
+      "creative_brief": "Coral mecha rise from blue-blood seas while music becomes the shape of catastrophe and longing. Sacred geometry overwrites weaponry; combat is liturgy, each sortie a psalm sung into unknown skies. The barrier between self and world dissolves in resonant color."
+    }
   },
   {
-    id: 'SP05-232',
-    name: '86 - Dustfront Drone Lament',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Warzone youth in spider-like machines, ethnic oppression, radio chatter over dust plains, tactical precision colliding with grief and dehumanization',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Somber, tactical, windswept, tragic',
-      key_features:
-        'Spider-mech motion, dustfront horizon lines, military comms mood, squad-loss emotion, battlefield debris',
-      creative_brief:
-        'Dust plains carry radio static and the weight of children sent to die in spider-legged coffins. Precision is grief made mechanical; every tactical overlay masks a face someone stopped remembering. The wind howls names that command forgot.',
-    },
+    "id": "SP05-232",
+    "name": "86 - Dustfront Drone Lament",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Warzone youth in spider-like machines, ethnic oppression, radio chatter over dust plains, tactical precision colliding with grief and dehumanization",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Somber, tactical, windswept, tragic",
+      "key_features": "Spider-mech motion, dustfront horizon lines, military comms mood, squad-loss emotion, battlefield debris",
+      "creative_brief": "Dust plains carry radio static and the weight of children sent to die in spider-legged coffins. Precision is grief made mechanical; every tactical overlay masks a face someone stopped remembering. The wind howls names that command forgot."
+    }
   },
   {
-    id: 'SP05-233',
-    name: 'Knights of Sidonia - Vacuum Fortress Survival',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Starfortress life, austere uniforms, biomechanical space combat, humanity surviving in a giant drifting ship, stark cosmic isolation and disciplined action',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Austere, cosmic, disciplined, lonely',
-      key_features:
-        'Fortress interior scale, biomechanical suits, starfield void contrast, military formation staging, sparse cosmic lighting',
-      creative_brief:
-        'A seed ship drifting through absolute void, humanity compressed into corridors where photosynthesis is prayer and every launch is a wager against extinction. Discipline wears austere uniforms; loneliness wears a starfield. Survival has the texture of recycled air.',
-    },
+    "id": "SP05-233",
+    "name": "Knights of Sidonia - Vacuum Fortress Survival",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Starfortress life, austere uniforms, biomechanical space combat, humanity surviving in a giant drifting ship, stark cosmic isolation and disciplined action",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Austere, cosmic, disciplined, lonely",
+      "key_features": "Fortress interior scale, biomechanical suits, starfield void contrast, military formation staging, sparse cosmic lighting",
+      "creative_brief": "A seed ship drifting through absolute void, humanity compressed into corridors where photosynthesis is prayer and every launch is a wager against extinction. Discipline wears austere uniforms; loneliness wears a starfield. Survival has the texture of recycled air."
+    }
   },
   {
-    id: 'SP05-234',
-    name: 'Muv-Luv Alternative - Tactical Suit Extinction War',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Humanity-on-the-brink mecha warfare, alien mass threat, tactical suits in ruined cities, command-screen panic and military sacrifice at desperate scale',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Dire, militarized, relentless, sacrificial',
-      key_features:
-        'Tactical suit silhouettes, command-screen overlays, alien swarm contrast, ruined city scale, emergency sortie framing',
-      creative_brief:
-        'Tactical screens flicker red over cities already cadavers, and the line between sortie and sacrifice blurs to silence. Mecha stand in formation like headstones waiting for names. The alien mass is not a monster but a mathematics of despair.',
-    },
+    "id": "SP05-234",
+    "name": "Muv-Luv Alternative - Tactical Suit Extinction War",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Humanity-on-the-brink mecha warfare, alien mass threat, tactical suits in ruined cities, command-screen panic and military sacrifice at desperate scale",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Dire, militarized, relentless, sacrificial",
+      "key_features": "Tactical suit silhouettes, command-screen overlays, alien swarm contrast, ruined city scale, emergency sortie framing",
+      "creative_brief": "Tactical screens flicker red over cities already cadavers, and the line between sortie and sacrifice blurs to silence. Mecha stand in formation like headstones waiting for names. The alien mass is not a monster but a mathematics of despair."
+    }
   },
   {
-    id: 'SP05-235',
-    name: 'Megazone 23 - Highway Pop-Cyber Revelation',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Motorcycle freedom, idol video lies, hidden-simulation city, glossy 80s cyber-youth rebellion, highways and holograms under manufactured skies',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Sleek, rebellious, glossy, revelatory',
-      key_features:
-        'Motorcycle silhouettes, hologram-idol motifs, highway city night, hidden-system hints, glossy retro-future fashion',
-      creative_brief:
-        'A highway curves through a city that is a lie, hologram idols singing over engines that know the truth. Glossy rebellion wears a motorcycle jacket and refuses the simulated sky. The future was promised; the future was a video loop.',
-    },
+    "id": "SP05-235",
+    "name": "Megazone 23 - Highway Pop-Cyber Revelation",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Motorcycle freedom, idol video lies, hidden-simulation city, glossy 80s cyber-youth rebellion, highways and holograms under manufactured skies",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Sleek, rebellious, glossy, revelatory",
+      "key_features": "Motorcycle silhouettes, hologram-idol motifs, highway city night, hidden-system hints, glossy retro-future fashion",
+      "creative_brief": "A highway curves through a city that is a lie, hologram idols singing over engines that know the truth. Glossy rebellion wears a motorcycle jacket and refuses the simulated sky. The future was promised; the future was a video loop."
+    }
   },
   {
-    id: 'SP05-237',
-    name: 'Gunbuster - Training Hangar to Galaxy Sacrifice',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Sports-like mecha training escalating to impossible cosmic war, determination and scale, hot-blooded sacrifice, old-school mechanical heroism under starfield awe',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Triumphant, emotional, colossal, earnest',
-      key_features:
-        'Training-hangar backdrops, giant-mecha launch energy, cosmic scale transitions, heroic shouting poses, sacrifice iconography',
-      creative_brief:
-        "Training hangar fluorescence yields to the impossible light of collapsing galaxies, and one girl's determination bends physics into sacrifice. Scale inflates until the human heart is the only unit of measurement left. Triumph tastes like starlight and goodbye.",
-    },
+    "id": "SP05-237",
+    "name": "Gunbuster - Training Hangar to Galaxy Sacrifice",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Sports-like mecha training escalating to impossible cosmic war, determination and scale, hot-blooded sacrifice, old-school mechanical heroism under starfield awe",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Triumphant, emotional, colossal, earnest",
+      "key_features": "Training-hangar backdrops, giant-mecha launch energy, cosmic scale transitions, heroic shouting poses, sacrifice iconography",
+      "creative_brief": "Training hangar fluorescence yields to the impossible light of collapsing galaxies, and one girl's determination bends physics into sacrifice. Scale inflates until the human heart is the only unit of measurement left. Triumph tastes like starlight and goodbye."
+    }
   },
   {
-    id: 'SP05-239',
-    name: 'Diebuster - Bubblegum Cosmic Overdrive',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Wild scale shifts, pop-color mecha exuberance, expressive cosmic nonsense, energetic school-age pilots, giant impossible machines with playful confidence and heartbreak',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Exuberant, strange, huge, heartfelt',
-      key_features:
-        'Scale-warp cosmic framing, pop-color mecha, playful pilot expressions, giant action silhouettes, impossible spectacle design',
-      creative_brief:
-        'Cosmic scale warps into candy-colored chaos as school-age pilots pilot impossible machines with the confidence of children who have not yet learned limits. Geometry breaks, physics blushes, and the universe concedes to exuberance. Heartbreak lives inside the biggest things.',
-    },
+    "id": "SP05-239",
+    "name": "Diebuster - Bubblegum Cosmic Overdrive",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Wild scale shifts, pop-color mecha exuberance, expressive cosmic nonsense, energetic school-age pilots, giant impossible machines with playful confidence and heartbreak",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Exuberant, strange, huge, heartfelt",
+      "key_features": "Scale-warp cosmic framing, pop-color mecha, playful pilot expressions, giant action silhouettes, impossible spectacle design",
+      "creative_brief": "Cosmic scale warps into candy-colored chaos as school-age pilots pilot impossible machines with the confidence of children who have not yet learned limits. Geometry breaks, physics blushes, and the universe concedes to exuberance. Heartbreak lives inside the biggest things."
+    }
   },
   {
-    id: 'SP05-227',
-    name: 'Texhnolyze - Rust Wire Descent',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Underground cybernetic nihilism, rusted corridors, amputated bodies rebuilt with dead purpose, subterranean violence and social decay pressed into hard shadow',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Nihilistic, rusted, oppressive, cold',
-      key_features:
-        'Subterranean urban decay, prosthetic-limb emphasis, rust-streak textures, brutalist tunnel depth, exhausted body language',
-      creative_brief:
-        'Descend into rusted underworlds where flesh and wire have made an uneasy peace, and the only light comes from failing fluorescent tubes. The body is architecture now—rebuilt, betrayed, still bleeding. Compose despair like a cathedral, each wound a stained-glass window.',
-    },
+    "id": "SP05-227",
+    "name": "Texhnolyze - Rust Wire Descent",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Underground cybernetic nihilism, rusted corridors, amputated bodies rebuilt with dead purpose, subterranean violence and social decay pressed into hard shadow",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Nihilistic, rusted, oppressive, cold",
+      "key_features": "Subterranean urban decay, prosthetic-limb emphasis, rust-streak textures, brutalist tunnel depth, exhausted body language",
+      "creative_brief": "Descend into rusted underworlds where flesh and wire have made an uneasy peace, and the only light comes from failing fluorescent tubes. The body is architecture now—rebuilt, betrayed, still bleeding. Compose despair like a cathedral, each wound a stained-glass window."
+    }
   },
   {
-    id: 'SP05-053',
-    name: 'Heavy Industrial Mecha',
-    category: '7. Mecha & Cyberpunk',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Heavy armor, oil-streaked joints, battlefield sparks, visceral mechanical weight, arm-slave mecha, tactical formation movement, ammo-belt feeds, hydraulic limb action',
-      form_and_line:
-        'Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours',
-      color_palette:
-        'Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast',
-      lighting_setup:
-        'Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity',
-      material_texture:
-        'Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer',
-      render_quality:
-        'High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish',
-      spatial_distortion:
-        'Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing',
-      atmosphere: 'Gruff, warlike, gritty, mechanical',
-      key_features:
-        'Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language',
-      creative_brief:
-        'These machines do not fly; they lumber, groan, and bleed hydraulic fluid into mud. Every joint carries the memory of a thousand impacts, every scar on the armor tells of a battle survived. War is not elegant; it is heavy and it grinds bone to powder.',
-    },
-  },
+    "id": "SP05-053",
+    "name": "Heavy Industrial Mecha",
+    "category": "7. Mecha & Cyberpunk",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Heavy armor, oil-streaked joints, battlefield sparks, visceral mechanical weight, arm-slave mecha, tactical formation movement, ammo-belt feeds, hydraulic limb action",
+      "form_and_line": "Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours",
+      "color_palette": "Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast",
+      "lighting_setup": "Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity",
+      "material_texture": "Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer",
+      "render_quality": "High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish",
+      "spatial_distortion": "Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing",
+      "atmosphere": "Gruff, warlike, gritty, mechanical",
+      "key_features": "Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language",
+      "creative_brief": "These machines do not fly; they lumber, groan, and bleed hydraulic fluid into mud. Every joint carries the memory of a thousand impacts, every scar on the armor tells of a battle survived. War is not elegant; it is heavy and it grinds bone to powder."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

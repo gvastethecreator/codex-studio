@@ -3,26 +3,18 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () =>
-    import('./pack_07/residential-interiors-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_07/historical-and-sacred-architecture-2').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_07/landscape-and-gardens-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_07/speculative-and-concept-architecture-4').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
+  () => import('./pack_07/residential-interiors-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_07/historical-and-sacred-architecture-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_07/landscape-and-gardens-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_07/speculative-and-concept-architecture-4').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: 'pack_07',
-    name: 'Architecture & Interior',
-    description: 'Architectural styles and interior design aesthetics.',
+    id: "pack_07",
+    name: "Architecture & Interior",
+    description: "Architectural styles and interior design aesthetics.",
     presets: categoryPresets.flat(),
   };
 }

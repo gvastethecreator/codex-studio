@@ -4,79 +4,75 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP09-016',
-    name: 'Glacier Ice',
-    category: '4. Surface Wear And Aging',
-    negativePrompt: 'clear, glass',
-    style: {
-      aesthetic: 'Compressed ancient ice',
-      form_and_line: 'Cracks and bubbles',
-      color_palette: 'Deep Cyan/Blue',
-      lighting_setup: 'Internal glow',
-      material_texture: 'Smooth but cracked',
-      render_quality: 'Arctic, cold',
-      spatial_distortion: 'Massive',
-      atmosphere: 'Freezing, ancient',
-      key_features: 'Blue depth',
-      creative_brief:
-        'Summon the compressed time of glacial ice, where millennia of pressure have squeezed air into blue oblivion and internal cracks map the stress of slow, patient movement. An internal luminescence should glow from within, a cyan heart beating in frozen sleep that deepens toward the center. The material must feel ancient, patient, and terrifyingly fragile.',
-    },
+    "id": "SP09-016",
+    "name": "Glacier Ice",
+    "category": "4. Surface Wear And Aging",
+    "negativePrompt": "clear, glass",
+    "style": {
+      "aesthetic": "Compressed ancient ice",
+      "form_and_line": "Cracks and bubbles",
+      "color_palette": "Deep Cyan/Blue",
+      "lighting_setup": "Internal glow",
+      "material_texture": "Smooth but cracked",
+      "render_quality": "Arctic, cold",
+      "spatial_distortion": "Massive",
+      "atmosphere": "Freezing, ancient",
+      "key_features": "Blue depth",
+      "creative_brief": "Summon the compressed time of glacial ice, where millennia of pressure have squeezed air into blue oblivion and internal cracks map the stress of slow, patient movement. An internal luminescence should glow from within, a cyan heart beating in frozen sleep that deepens toward the center. The material must feel ancient, patient, and terrifyingly fragile."
+    }
   },
   {
-    id: 'SP09-030',
-    name: 'Burlap Sack',
-    category: '4. Surface Wear And Aging',
-    negativePrompt: 'silk, smooth',
-    style: {
-      aesthetic: 'Potato sack',
-      form_and_line: 'Coarse weave',
-      color_palette: 'Tan, Brown',
-      lighting_setup: 'Matte',
-      material_texture: 'Rough fiber',
-      render_quality: 'Rustic, cheap',
-      spatial_distortion: 'Loose weave',
-      atmosphere: 'Poor, rural',
-      key_features: 'Grid weave',
-      creative_brief:
-        "Capture the rough honesty of burlap where coarse jute fibers interlace in a grid of tan and brown utility, each thread a visible record of plant turned to purpose. The surface must feel dry and scratchy to the eye, a loose weave that hints at the grain it once carried. Render the dignity of the cheap and functional, beauty found in necessity's simplest weave.",
-    },
+    "id": "SP09-030",
+    "name": "Burlap Sack",
+    "category": "4. Surface Wear And Aging",
+    "negativePrompt": "silk, smooth",
+    "style": {
+      "aesthetic": "Potato sack",
+      "form_and_line": "Coarse weave",
+      "color_palette": "Tan, Brown",
+      "lighting_setup": "Matte",
+      "material_texture": "Rough fiber",
+      "render_quality": "Rustic, cheap",
+      "spatial_distortion": "Loose weave",
+      "atmosphere": "Poor, rural",
+      "key_features": "Grid weave",
+      "creative_brief": "Capture the rough honesty of burlap where coarse jute fibers interlace in a grid of tan and brown utility, each thread a visible record of plant turned to purpose. The surface must feel dry and scratchy to the eye, a loose weave that hints at the grain it once carried. Render the dignity of the cheap and functional, beauty found in necessity's simplest weave."
+    }
   },
   {
-    id: 'SP09-064',
-    name: 'Mud (Cracked)',
-    category: '4. Surface Wear And Aging',
-    negativePrompt: 'wet mud',
-    style: {
-      aesthetic: 'Dried lake bed',
-      form_and_line: 'Puzzle cracks',
-      color_palette: 'Tan, Brown',
-      lighting_setup: 'Harsh sun',
-      material_texture: 'Dry clay',
-      render_quality: 'Drought, desert',
-      spatial_distortion: 'Curled plates',
-      atmosphere: 'Thirsty, hot',
-      key_features: 'Crack pattern',
-      creative_brief:
-        'Capture the drought geometry of cracked mud where puzzle-piece plates curl at the edges, separating into a map of thirst written in tan and brown under harsh desert sun. Each polygon should feel baked and brittle, the curled edges casting thin shadows that deepen the sense of arid abandonment. Render the beauty of dessication, the landscape of thirst drawn in shrinking clay.',
-    },
+    "id": "SP09-064",
+    "name": "Mud (Cracked)",
+    "category": "4. Surface Wear And Aging",
+    "negativePrompt": "wet mud",
+    "style": {
+      "aesthetic": "Dried lake bed",
+      "form_and_line": "Puzzle cracks",
+      "color_palette": "Tan, Brown",
+      "lighting_setup": "Harsh sun",
+      "material_texture": "Dry clay",
+      "render_quality": "Drought, desert",
+      "spatial_distortion": "Curled plates",
+      "atmosphere": "Thirsty, hot",
+      "key_features": "Crack pattern",
+      "creative_brief": "Capture the drought geometry of cracked mud where puzzle-piece plates curl at the edges, separating into a map of thirst written in tan and brown under harsh desert sun. Each polygon should feel baked and brittle, the curled edges casting thin shadows that deepen the sense of arid abandonment. Render the beauty of dessication, the landscape of thirst drawn in shrinking clay."
+    }
   },
   {
-    id: 'SP09-070',
-    name: 'Polystyrene (Styrofoam)',
-    category: '4. Surface Wear And Aging',
-    negativePrompt: 'smooth plastic',
-    style: {
-      aesthetic: 'Packing foam',
-      form_and_line: 'Beads',
-      color_palette: 'White',
-      lighting_setup: 'Subsurface scattering',
-      material_texture: 'Beaded',
-      render_quality: 'Cheap, packaging',
-      spatial_distortion: 'Broken beads',
-      atmosphere: 'Disposable, white',
-      key_features: 'Cell structure',
-      creative_brief:
-        'Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres, each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the accidental sculpture of the disposable, packaging as industrial archaeology.',
-    },
-  },
+    "id": "SP09-070",
+    "name": "Polystyrene (Styrofoam)",
+    "category": "4. Surface Wear And Aging",
+    "negativePrompt": "smooth plastic",
+    "style": {
+      "aesthetic": "Packing foam",
+      "form_and_line": "Beads",
+      "color_palette": "White",
+      "lighting_setup": "Subsurface scattering",
+      "material_texture": "Beaded",
+      "render_quality": "Cheap, packaging",
+      "spatial_distortion": "Broken beads",
+      "atmosphere": "Disposable, white",
+      "key_features": "Cell structure",
+      "creative_brief": "Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres, each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the accidental sculpture of the disposable, packaging as industrial archaeology."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

@@ -3,27 +3,19 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () =>
-    import('./pack_13/shojo-magical-girl-and-visionary-classics-1').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_13/slice-of-life-and-moe-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_13/shojo-magical-girl-and-visionary-classics-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_13/slice-of-life-and-moe-2').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_13/anime-style-spectrum-3').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_13/core-anime-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_13/slice-of-life-school-music-5').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
+  () => import('./pack_13/slice-of-life-school-music-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: 'pack_13',
-    name: 'Anime Character & Lifestyle',
-    description:
-      'Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.',
+    id: "pack_13",
+    name: "Anime Character & Lifestyle",
+    description: "Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.",
     presets: categoryPresets.flat(),
   };
 }

@@ -14,6 +14,10 @@ categories:
       - pack_14/SP14-006.yaml
       - pack_14/SP14-007.yaml
       - pack_14/SP14-008.yaml
+      - pack_14/SP14-009.yaml
+      - pack_14/SP14-010.yaml
+      - pack_14/SP14-011.yaml
+      - pack_14/SP14-012.yaml
 presetRefs:
   - pack_14/SP14-001.yaml
   - pack_14/SP14-002.yaml
@@ -23,3 +27,7 @@ presetRefs:
   - pack_14/SP14-006.yaml
   - pack_14/SP14-007.yaml
   - pack_14/SP14-008.yaml
+  - pack_14/SP14-009.yaml
+  - pack_14/SP14-010.yaml
+  - pack_14/SP14-011.yaml
+  - pack_14/SP14-012.yaml

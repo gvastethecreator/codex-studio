@@ -3,22 +3,19 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () =>
-    import('./pack_10/geometric-abstraction-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_10/geometric-abstraction-1').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_10/fluid-and-organic-2').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_10/pattern-and-texture-3').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_10/surrealism-and-dream-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_10/digital-glitch-and-noise-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_10/digital-glitch-and-noise-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: 'pack_10',
-    name: 'Abstract & Experimental',
-    description:
-      'A semantically grouped abstract library covering geometric systems, reactive material flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven surfaces.',
+    id: "pack_10",
+    name: "Abstract & Experimental",
+    description: "A semantically grouped abstract library covering geometric systems, reactive material flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven surfaces.",
     presets: categoryPresets.flat(),
   };
 }

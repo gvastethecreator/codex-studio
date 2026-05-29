@@ -9,10 +9,9 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: 'pack_14',
-    name: 'Mythic Noir Curated Vault',
-    description:
-      'A curated pack of dark, elegant, and mythic visual directions designed for a strong, authorial identity.',
+    id: "pack_14",
+    name: "Mythic Noir Curated Vault",
+    description: "A curated pack of dark, elegant, and mythic visual directions designed for a strong, authorial identity.",
     presets: categoryPresets.flat(),
   };
 }

@@ -4,742 +4,507 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP11-051',
-    name: 'Bakery Window',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'burnt',
-    style: {
-      aesthetic:
-        'Fresh bread and pastries, boulangerie-window, artisan-crust, early-morning-bake, yeast-sunrise',
-      form_and_line:
-        'Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers',
-      color_palette:
-        'Golden Brown, crust-mahogany, crumb-cream, egg-wash amber, rye-earth, sesame-toast, butter-yellow',
-      lighting_setup:
-        'Warm yellow, bakery-window morning, incandescent-gold, crust-sheen catch, steam-haze diffusion',
-      material_texture:
-        'Flour, flaky crust, dusting-flour, shatter-crust, air-pocket honeycomb, butter-laminate, steam-gelatinized starch',
-      render_quality:
-        'Warm, homey, crackling-crust symphony, butter-scent memory, artisan-oven, break-fast ritual',
-      spatial_distortion:
-        'Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash',
-      atmosphere: 'Comfort, smell, bakery-dawn, yeast-aroma, crust-tap satisfaction, carb-comfort',
-      key_features:
-        'Steam, flour-dusting, scoring-blade marks, crust-crack fissure, golden-crumb honeycomb, parchment-paper, banneton-ring',
-      creative_brief:
-        "Steam rises from the scored crust carrying the aroma of yeast and transformation across the early-morning street, the baguette's ear curling upward where the lame cut deep enough. Honeycomb crumb structure reveals itself at the tear point, air pockets that were once invisible gases now memorialized in golden-brown architecture. The bakery window glows like a lantern of comfort, crust-sheen catching the incandescent warmth of bread that finished baking forty minutes before dawn.",
-    },
+    "id": "SP11-051",
+    "name": "Bakery Window",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "burnt",
+    "style": {
+      "aesthetic": "Fresh bread and pastries, boulangerie-window, artisan-crust, early-morning-bake, yeast-sunrise",
+      "form_and_line": "Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers",
+      "color_palette": "Golden Brown, crust-mahogany, crumb-cream, egg-wash amber, rye-earth, sesame-toast, butter-yellow",
+      "lighting_setup": "Warm yellow, bakery-window morning, incandescent-gold, crust-sheen catch, steam-haze diffusion",
+      "material_texture": "Flour, flaky crust, dusting-flour, shatter-crust, air-pocket honeycomb, butter-laminate, steam-gelatinized starch",
+      "render_quality": "Warm, homey, crackling-crust symphony, butter-scent memory, artisan-oven, break-fast ritual",
+      "spatial_distortion": "Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash",
+      "atmosphere": "Comfort, smell, bakery-dawn, yeast-aroma, crust-tap satisfaction, carb-comfort",
+      "key_features": "Steam, flour-dusting, scoring-blade marks, crust-crack fissure, golden-crumb honeycomb, parchment-paper, banneton-ring",
+      "creative_brief": "Steam rises from the scored crust carrying the aroma of yeast and transformation across the early-morning street, the baguette's ear curling upward where the lame cut deep enough. Honeycomb crumb structure reveals itself at the tear point, air pockets that were once invisible gases now memorialized in golden-brown architecture. The bakery window glows like a lantern of comfort, crust-sheen catching the incandescent warmth of bread that finished baking forty minutes before dawn."
+    }
   },
   {
-    id: 'SP11-052',
-    name: 'Fruit Explosion',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'rotten, still',
-    style: {
-      aesthetic:
-        'Slicing fruit in air, splash-photography, high-speed-nature, juice-explosion, orchard-dynamism',
-      form_and_line:
-        'Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral',
-      color_palette:
-        'Juicy brights, watermelon-crimson, citrus-sunburst, berry-stain purple, kiwi-emerald, mango-golden',
-      lighting_setup:
-        'High speed flash, freeze-motion strobe, water-droplet sparkle, juice-mist backlight, shadow-free key',
-      material_texture:
-        'Juice, pulp, seed-speckle, rind-texture, flesh-grain, droplet-surface-tension',
-      render_quality:
-        'Fresh, dynamic, frozen-in-flight, split-second-splash, fruit-ninja zen, liquid-sculpture',
-      spatial_distortion:
-        'Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory',
-      atmosphere:
-        'Energy, vitamin, orchard-vitality, splash-play, life-force, morning-juice vitality',
-      key_features:
-        'Juice drops, seed-suspension, peel-spiral, pulp-splash, knife-blade reflection, fruit-half cross-section, mid-air-droplet constellation',
-      creative_brief:
-        'A knife passes through citrus mid-flight, the moment frozen by strobe-light speed before gravity can reassert its ancient claim. Juice droplets suspend in parabolic arcs, each sphere a tiny lens refracting the orchard back at itself in liquid-sculpture precision. The fruit surrenders its interior geometry in a radial burst of pulp and seed and liquid sunlight, frozen-in-flight energy that celebrates the split second between whole and consumed.',
-    },
+    "id": "SP11-052",
+    "name": "Fruit Explosion",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "rotten, still",
+    "style": {
+      "aesthetic": "Slicing fruit in air, splash-photography, high-speed-nature, juice-explosion, orchard-dynamism",
+      "form_and_line": "Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral",
+      "color_palette": "Juicy brights, watermelon-crimson, citrus-sunburst, berry-stain purple, kiwi-emerald, mango-golden",
+      "lighting_setup": "High speed flash, freeze-motion strobe, water-droplet sparkle, juice-mist backlight, shadow-free key",
+      "material_texture": "Juice, pulp, seed-speckle, rind-texture, flesh-grain, droplet-surface-tension",
+      "render_quality": "Fresh, dynamic, frozen-in-flight, split-second-splash, fruit-ninja zen, liquid-sculpture",
+      "spatial_distortion": "Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory",
+      "atmosphere": "Energy, vitamin, orchard-vitality, splash-play, life-force, morning-juice vitality",
+      "key_features": "Juice drops, seed-suspension, peel-spiral, pulp-splash, knife-blade reflection, fruit-half cross-section, mid-air-droplet constellation",
+      "creative_brief": "A knife passes through citrus mid-flight, the moment frozen by strobe-light speed before gravity can reassert its ancient claim. Juice droplets suspend in parabolic arcs, each sphere a tiny lens refracting the orchard back at itself in liquid-sculpture precision. The fruit surrenders its interior geometry in a radial burst of pulp and seed and liquid sunlight, frozen-in-flight energy that celebrates the split second between whole and consumed."
+    }
   },
   {
-    id: 'SP11-048',
-    name: 'Sushi Platter',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'cooked, dry',
-    style: {
-      aesthetic: 'Fresh sashimi, omakase-counter, fish-market dawn, sushi-master zen, itamae-art',
-      form_and_line:
-        'Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement',
-      color_palette:
-        'Orange (Salmon), Red (Tuna), hamachi-amber, shiso-green, gari-pink, nori-black, wasabi-pale-green',
-      lighting_setup:
-        'Glossy fish oil, sushi-counter spotlight, soy-sauce pool reflection, wasabi-grain texture light',
-      material_texture:
-        'Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char',
-      render_quality: 'Fresh, japanese, tsukiji-auction, Edomae-tradition, knife-skill reverence',
-      spatial_distortion:
-        'None, natural-proportion, geta-board framing, sashimi-fan geometry, nigiri-oval balance',
-      atmosphere:
-        'Clean, tasty, sushi-counter quiet, soy-sauce dip anticipation, wasabi-nose-cleanse',
-      key_features:
-        'Rice grains, shari-pearl definition, nori-wrap band, wasabi-dot, pickled-ginger mound, soy-sauce dish',
-      creative_brief:
-        "The knife falls once, a single stroke separating flesh from flesh with the conviction born of a decade's practice at dawn. Shari pearls hold their form under nigiri pressure, each grain of rice individually placed by hands that learned patience at the Tsukiji auction. Omakase is a conversation conducted in silence where the itamae speaks through the arrangement of salmon-orange and hamachi-amber on black lacquer, each piece a haiku of the sea.",
-    },
+    "id": "SP11-048",
+    "name": "Sushi Platter",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "cooked, dry",
+    "style": {
+      "aesthetic": "Fresh sashimi, omakase-counter, fish-market dawn, sushi-master zen, itamae-art",
+      "form_and_line": "Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement",
+      "color_palette": "Orange (Salmon), Red (Tuna), hamachi-amber, shiso-green, gari-pink, nori-black, wasabi-pale-green",
+      "lighting_setup": "Glossy fish oil, sushi-counter spotlight, soy-sauce pool reflection, wasabi-grain texture light",
+      "material_texture": "Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char",
+      "render_quality": "Fresh, japanese, tsukiji-auction, Edomae-tradition, knife-skill reverence",
+      "spatial_distortion": "None, natural-proportion, geta-board framing, sashimi-fan geometry, nigiri-oval balance",
+      "atmosphere": "Clean, tasty, sushi-counter quiet, soy-sauce dip anticipation, wasabi-nose-cleanse",
+      "key_features": "Rice grains, shari-pearl definition, nori-wrap band, wasabi-dot, pickled-ginger mound, soy-sauce dish",
+      "creative_brief": "The knife falls once, a single stroke separating flesh from flesh with the conviction born of a decade's practice at dawn. Shari pearls hold their form under nigiri pressure, each grain of rice individually placed by hands that learned patience at the Tsukiji auction. Omakase is a conversation conducted in silence where the itamae speaks through the arrangement of salmon-orange and hamachi-amber on black lacquer, each piece a haiku of the sea."
+    }
   },
   {
-    id: 'SP11-004',
-    name: 'Papercraft Low Poly',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'curved, smooth, realistic',
-    style: {
-      aesthetic:
-        'Folded cardstock model, low-poly sculpture, kirigami construction, geometric craft',
-      form_and_line: 'Sharp paper folds, triangular facets, crease lines, angular edges',
-      color_palette: 'Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish',
-      lighting_setup:
-        'Soft shadows, directional key light, facet-defining contrast, gentle ambient',
-      material_texture:
-        'Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel',
-      render_quality:
-        'Pepakura papercraft geometric, fold-and-glue devotion, low-poly aesthetic, hand-assembled precision',
-      spatial_distortion:
-        'Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition',
-      atmosphere: 'Delicate, handmade, clean, zen precision, patient craft, geometric calm',
-      key_features: 'Visible fold lines, tab-and-slot joins, score marks, polygon faces',
-      creative_brief:
-        'Sharp folds carve the world into triangular certainties, each cardstock facet catching light at a different angle. Crease lines score the geometry of patience into flat paper, transforming two dimensions into three through precise origami logic. A fragile cathedral of folded craft where every edge tells the story of its making.',
-    },
+    "id": "SP11-004",
+    "name": "Papercraft Low Poly",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "curved, smooth, realistic",
+    "style": {
+      "aesthetic": "Folded cardstock model, low-poly sculpture, kirigami construction, geometric craft",
+      "form_and_line": "Sharp paper folds, triangular facets, crease lines, angular edges",
+      "color_palette": "Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish",
+      "lighting_setup": "Soft shadows, directional key light, facet-defining contrast, gentle ambient",
+      "material_texture": "Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel",
+      "render_quality": "Pepakura papercraft geometric, fold-and-glue devotion, low-poly aesthetic, hand-assembled precision",
+      "spatial_distortion": "Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition",
+      "atmosphere": "Delicate, handmade, clean, zen precision, patient craft, geometric calm",
+      "key_features": "Visible fold lines, tab-and-slot joins, score marks, polygon faces",
+      "creative_brief": "Sharp folds carve the world into triangular certainties, each cardstock facet catching light at a different angle. Crease lines score the geometry of patience into flat paper, transforming two dimensions into three through precise origami logic. A fragile cathedral of folded craft where every edge tells the story of its making."
+    }
   },
   {
-    id: 'SP11-018',
-    name: 'Balloon Art',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'sharp, flat',
-    style: {
-      aesthetic: 'Twisted balloon animal, birthday-party clown, squeaky menagerie, latex zoo',
-      form_and_line: 'Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends',
-      color_palette:
-        'Shiny latex colors, carnival spectrum, bright-red, canary-yellow, sky-blue gloss',
-      lighting_setup:
-        'High specular highlights, party-room glare, overhead fluorescent, balloon-surface reflection',
-      material_texture:
-        'Stretched rubber, latex skin, powder-dusted finish, taut inflation tension',
-      render_quality:
-        'Party, fragile, balloon-twisting magic, squeak-and-sculpt, festive impermanence',
-      spatial_distortion:
-        'Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form',
-      atmosphere:
-        'Fun, squeaky, celebration, birthday-cake excitement, carnival-joy, shared laughter',
-      key_features:
-        'Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings',
-      creative_brief:
-        'Latex twists into zoological impossibility under carnival lights, each squeaky joint a small miracle of air pressure and pinch-twist technique. The balloon animal exists on borrowed time, its glossy surface reflecting birthday-candle flicker and party-room glare. Fragile joy shaped by breath and tension and the knowledge that every latex zoo eventually softens and sighs.',
-    },
+    "id": "SP11-018",
+    "name": "Balloon Art",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "sharp, flat",
+    "style": {
+      "aesthetic": "Twisted balloon animal, birthday-party clown, squeaky menagerie, latex zoo",
+      "form_and_line": "Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends",
+      "color_palette": "Shiny latex colors, carnival spectrum, bright-red, canary-yellow, sky-blue gloss",
+      "lighting_setup": "High specular highlights, party-room glare, overhead fluorescent, balloon-surface reflection",
+      "material_texture": "Stretched rubber, latex skin, powder-dusted finish, taut inflation tension",
+      "render_quality": "Party, fragile, balloon-twisting magic, squeak-and-sculpt, festive impermanence",
+      "spatial_distortion": "Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form",
+      "atmosphere": "Fun, squeaky, celebration, birthday-cake excitement, carnival-joy, shared laughter",
+      "key_features": "Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings",
+      "creative_brief": "Latex twists into zoological impossibility under carnival lights, each squeaky joint a small miracle of air pressure and pinch-twist technique. The balloon animal exists on borrowed time, its glossy surface reflecting birthday-candle flicker and party-room glare. Fragile joy shaped by breath and tension and the knowledge that every latex zoo eventually softens and sighs."
+    }
   },
   {
-    id: 'SP11-008',
-    name: 'Stained Glass',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'opaque, dull, painting',
-    style: {
-      aesthetic: 'Church window art, cathedral glass, sacred luminosity, divine illumination',
-      form_and_line:
-        'Thick black lead came, segmented contours, curvilinear divisions, interconnected cells',
-      color_palette:
-        'Vibrant translucent glass, jewel-tone spectrum, ruby-cobalt-emerald, sun-drenched saturation',
-      lighting_setup:
-        'Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama',
-      material_texture:
-        'Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina',
-      render_quality:
-        'Religious, ornate, colorful, gothic-arch beauty, painted-glass storytelling, rose-window awe',
-      spatial_distortion:
-        'Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity',
-      atmosphere: 'Spiritual, beautiful, light, reverent calm, sacred awe, transcendent glow',
-      key_features:
-        'Black outlines mandatory, lead-came shadows, solder joints, textured glass surface',
-      creative_brief:
-        'Light dies and is reborn in passage through colored glass, fractured into jewel-toned revelation between black lead lines. Bubbles and ripples in the antique surface catch the sun at glancing angles, transforming opacity into sacred luminosity. A window becomes a gateway when sunlight performs the daily miracle of turning silica into stained transcendence.',
-    },
+    "id": "SP11-008",
+    "name": "Stained Glass",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "opaque, dull, painting",
+    "style": {
+      "aesthetic": "Church window art, cathedral glass, sacred luminosity, divine illumination",
+      "form_and_line": "Thick black lead came, segmented contours, curvilinear divisions, interconnected cells",
+      "color_palette": "Vibrant translucent glass, jewel-tone spectrum, ruby-cobalt-emerald, sun-drenched saturation",
+      "lighting_setup": "Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama",
+      "material_texture": "Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina",
+      "render_quality": "Religious, ornate, colorful, gothic-arch beauty, painted-glass storytelling, rose-window awe",
+      "spatial_distortion": "Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity",
+      "atmosphere": "Spiritual, beautiful, light, reverent calm, sacred awe, transcendent glow",
+      "key_features": "Black outlines mandatory, lead-came shadows, solder joints, textured glass surface",
+      "creative_brief": "Light dies and is reborn in passage through colored glass, fractured into jewel-toned revelation between black lead lines. Bubbles and ripples in the antique surface catch the sun at glancing angles, transforming opacity into sacred luminosity. A window becomes a gateway when sunlight performs the daily miracle of turning silica into stained transcendence."
+    }
   },
   {
-    id: 'SP11-032',
-    name: 'Latte Art',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'solid, paint',
-    style: {
-      aesthetic: 'Coffee foam drawing, espresso-canvas art, barista-crema, morning-ritual beauty',
-      form_and_line:
-        'Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry',
-      color_palette:
-        'Brown, White, Cream, espresso-crema tiger-stripe, caramel-drizzle amber, milk-foam ivory',
-      lighting_setup: 'Overhead cafe, counter-spot warmth, crema-gloss catch, steamed-milk sheen',
-      material_texture:
-        'Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas',
-      render_quality:
-        'Tasty, temporary, sip-away impermanence, barista-throwdown art, third-wave-craft',
-      spatial_distortion:
-        'Liquid surface, pour-path flow, surface-tension boundary, ceramic-cup curvature',
-      atmosphere: 'Cozy, morning, cafe-hum warmth, espresso-machine rhythm, first-sip quiet',
-      key_features:
-        'Cup rim, crema ring, latte-art rosetta, saucer-spoon, steamed-milk gloss, pour-steam wisps',
-      creative_brief:
-        'Microfoam velvet spreads across espresso crema in the practiced pour of a barista whose hand knows the weight of the pitcher. The rosetta blooms on the liquid canvas, a fleeting masterpiece destined to be sipped into disappearance within minutes. Beauty floats on crema for three seconds of appreciation before the first taste dissolves the canvas back into coffee.',
-    },
+    "id": "SP11-032",
+    "name": "Latte Art",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "solid, paint",
+    "style": {
+      "aesthetic": "Coffee foam drawing, espresso-canvas art, barista-crema, morning-ritual beauty",
+      "form_and_line": "Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry",
+      "color_palette": "Brown, White, Cream, espresso-crema tiger-stripe, caramel-drizzle amber, milk-foam ivory",
+      "lighting_setup": "Overhead cafe, counter-spot warmth, crema-gloss catch, steamed-milk sheen",
+      "material_texture": "Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas",
+      "render_quality": "Tasty, temporary, sip-away impermanence, barista-throwdown art, third-wave-craft",
+      "spatial_distortion": "Liquid surface, pour-path flow, surface-tension boundary, ceramic-cup curvature",
+      "atmosphere": "Cozy, morning, cafe-hum warmth, espresso-machine rhythm, first-sip quiet",
+      "key_features": "Cup rim, crema ring, latte-art rosetta, saucer-spoon, steamed-milk gloss, pour-steam wisps",
+      "creative_brief": "Microfoam velvet spreads across espresso crema in the practiced pour of a barista whose hand knows the weight of the pitcher. The rosetta blooms on the liquid canvas, a fleeting masterpiece destined to be sipped into disappearance within minutes. Beauty floats on crema for three seconds of appreciation before the first taste dissolves the canvas back into coffee."
+    }
   },
   {
-    id: 'SP11-006',
-    name: 'Chalkboard Art',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'paper, ink, digital',
-    style: {
-      aesthetic: 'Drawing on black slate board, sidewalk art, vintage classroom, chalk-dust magic',
-      form_and_line:
-        'Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections',
-      color_palette:
-        'White chalk on Black board, soft pastel chalks, muted color spectrum, dusty desaturation',
-      lighting_setup: 'Flat, even overhead fluorescents, no glare, diffused ambient',
-      material_texture: 'Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth',
-      render_quality:
-        'Cafe menu, school, rustic, ephemeral artistry, wiped-clean impermanence, sidewalk festival',
-      spatial_distortion:
-        'Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing',
-      atmosphere: 'Casual, temporary, rustic, creative, fleeting, nostalgic melancholy',
-      key_features: 'Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending',
-      creative_brief:
-        "Dust particles float in afternoon classroom light as white lines carve stories onto black slate, each stroke already haunted by the eraser's ghost. Variable chalk thickness traces the hand's tremor, the broken stroke, the re-drawn correction. Ephemeral beauty drawn in calcium carbonate, more honest because it knows it will not last.",
-    },
+    "id": "SP11-006",
+    "name": "Chalkboard Art",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "paper, ink, digital",
+    "style": {
+      "aesthetic": "Drawing on black slate board, sidewalk art, vintage classroom, chalk-dust magic",
+      "form_and_line": "Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections",
+      "color_palette": "White chalk on Black board, soft pastel chalks, muted color spectrum, dusty desaturation",
+      "lighting_setup": "Flat, even overhead fluorescents, no glare, diffused ambient",
+      "material_texture": "Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth",
+      "render_quality": "Cafe menu, school, rustic, ephemeral artistry, wiped-clean impermanence, sidewalk festival",
+      "spatial_distortion": "Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing",
+      "atmosphere": "Casual, temporary, rustic, creative, fleeting, nostalgic melancholy",
+      "key_features": "Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending",
+      "creative_brief": "Dust particles float in afternoon classroom light as white lines carve stories onto black slate, each stroke already haunted by the eraser's ghost. Variable chalk thickness traces the hand's tremor, the broken stroke, the re-drawn correction. Ephemeral beauty drawn in calcium carbonate, more honest because it knows it will not last."
+    }
   },
   {
-    id: 'SP11-030',
-    name: 'Sand Art',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'water, paint',
-    style: {
-      aesthetic: 'Bottle sand layer, desert-souvenir craft, grain-by-grain art, patience bottled',
-      form_and_line:
-        'Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles',
-      color_palette:
-        'Earth tones, Dyed sand, ochre-desert spectrum, terra-cotta, turquoise-lagoon, sunset-layering',
-      lighting_setup: 'Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion',
-      material_texture:
-        'Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast',
-      render_quality:
-        'Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique',
-      spatial_distortion:
-        'Gravity layers, horizontal-strata formation, uphill-camel silhouette, canyon-wall illusion',
-      atmosphere:
-        'Patience, nature, desert-quiet, beach-memory, wandering-nomad, sun-baked stillness',
-      key_features:
-        'Layers, color-strata bands, glass-bottle curve, cork-seal top, pour-funnel marks',
-      creative_brief:
-        'Grain settles upon grain in gravity-orchestrated stratigraphy, colored earth arranged by steady hand and held breath in glass. Each pour-line layer records an epoch compressed to millimeters, desert landscapes trapped in bottle-round transparency. One shake separates all order into chaos, returning the canyon walls and dune horizons to sand and tourist-stall memory.',
-    },
+    "id": "SP11-030",
+    "name": "Sand Art",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "water, paint",
+    "style": {
+      "aesthetic": "Bottle sand layer, desert-souvenir craft, grain-by-grain art, patience bottled",
+      "form_and_line": "Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles",
+      "color_palette": "Earth tones, Dyed sand, ochre-desert spectrum, terra-cotta, turquoise-lagoon, sunset-layering",
+      "lighting_setup": "Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion",
+      "material_texture": "Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast",
+      "render_quality": "Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique",
+      "spatial_distortion": "Gravity layers, horizontal-strata formation, uphill-camel silhouette, canyon-wall illusion",
+      "atmosphere": "Patience, nature, desert-quiet, beach-memory, wandering-nomad, sun-baked stillness",
+      "key_features": "Layers, color-strata bands, glass-bottle curve, cork-seal top, pour-funnel marks",
+      "creative_brief": "Grain settles upon grain in gravity-orchestrated stratigraphy, colored earth arranged by steady hand and held breath in glass. Each pour-line layer records an epoch compressed to millimeters, desert landscapes trapped in bottle-round transparency. One shake separates all order into chaos, returning the canyon walls and dune horizons to sand and tourist-stall memory."
+    }
   },
   {
-    id: 'SP11-031',
-    name: 'Ice Carving',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'warm, opaque',
-    style: {
-      aesthetic: 'Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle',
-      form_and_line:
-        'Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve',
-      color_palette:
-        'Clear, Blue tint, frozen-depth cyan, air-bubble white, internal-fracture silver, melt-water transparency',
-      lighting_setup:
-        'Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance',
-      material_texture:
-        'Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture',
-      render_quality:
-        'Cold, temporary, crystal, melt-away impermanence, wedding-hall spectacle, ice-bar art',
-      spatial_distortion:
-        'Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth',
-      atmosphere: 'Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony',
-      key_features:
-        'Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool reflection',
-      creative_brief:
-        'Chainsaw bite meets diamond clarity in a frozen gallery where sculptures drip toward their own disappearance with each passing degree. Light refracts through crystal mass, splitting into rainbows trapped inside internal fractures and air-bubble constellations. Elegance carved from falling temperature, every facet melting toward liquid grace at the speed of thaw, a countdown performed in crystal.',
-    },
+    "id": "SP11-031",
+    "name": "Ice Carving",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "warm, opaque",
+    "style": {
+      "aesthetic": "Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle",
+      "form_and_line": "Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve",
+      "color_palette": "Clear, Blue tint, frozen-depth cyan, air-bubble white, internal-fracture silver, melt-water transparency",
+      "lighting_setup": "Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance",
+      "material_texture": "Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture",
+      "render_quality": "Cold, temporary, crystal, melt-away impermanence, wedding-hall spectacle, ice-bar art",
+      "spatial_distortion": "Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth",
+      "atmosphere": "Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony",
+      "key_features": "Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool reflection",
+      "creative_brief": "Chainsaw bite meets diamond clarity in a frozen gallery where sculptures drip toward their own disappearance with each passing degree. Light refracts through crystal mass, splitting into rainbows trapped inside internal fractures and air-bubble constellations. Elegance carved from falling temperature, every facet melting toward liquid grace at the speed of thaw, a countdown performed in crystal."
+    }
   },
   {
-    id: 'SP11-007',
-    name: 'Tattoo Flash (Old School)',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'realistic, photo, 3d',
-    style: {
-      aesthetic:
-        'Traditional American tattoo design, sailor flash art, street-shop heritage, anchor-and-swallow iconography',
-      form_and_line: 'Bold black outlines, heavy contour weight, ribbony banners, coiled snakes',
-      color_palette:
-        'Red, Green, Yellow, Black shading, limited triad palette, spit-shaded gradients',
-      lighting_setup: 'Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow',
-      material_texture:
-        'Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges',
-      render_quality:
-        'Sailor Jerry bold-traditional flash, classic, nautical soul, iron-wrought toughness',
-      spatial_distortion:
-        '2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout',
-      atmosphere: 'Tough, classic, bold, salt-air romance, port-town grit, permanent devotion',
-      key_features:
-        'Pepper shading (dots), rose-and-dagger motifs, banner text, swallow silhouettes',
-      creative_brief:
-        "Bold black outlines cage the color within, heavy enough to hold against time and skin and salt-air memory. Pepper shading stipples across the rose-and-dagger motifs while swallow silhouettes cut toward invisible horizons. The sailor's soul rendered in three colors and a thousand stories of distant ports, inked permanence on yellowed flash.",
-    },
+    "id": "SP11-007",
+    "name": "Tattoo Flash (Old School)",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "realistic, photo, 3d",
+    "style": {
+      "aesthetic": "Traditional American tattoo design, sailor flash art, street-shop heritage, anchor-and-swallow iconography",
+      "form_and_line": "Bold black outlines, heavy contour weight, ribbony banners, coiled snakes",
+      "color_palette": "Red, Green, Yellow, Black shading, limited triad palette, spit-shaded gradients",
+      "lighting_setup": "Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow",
+      "material_texture": "Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges",
+      "render_quality": "Sailor Jerry bold-traditional flash, classic, nautical soul, iron-wrought toughness",
+      "spatial_distortion": "2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout",
+      "atmosphere": "Tough, classic, bold, salt-air romance, port-town grit, permanent devotion",
+      "key_features": "Pepper shading (dots), rose-and-dagger motifs, banner text, swallow silhouettes",
+      "creative_brief": "Bold black outlines cage the color within, heavy enough to hold against time and skin and salt-air memory. Pepper shading stipples across the rose-and-dagger motifs while swallow silhouettes cut toward invisible horizons. The sailor's soul rendered in three colors and a thousand stories of distant ports, inked permanence on yellowed flash."
+    }
   },
   {
-    id: 'SP11-033',
-    name: 'Blueprint',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'color, photo',
-    style: {
-      aesthetic:
-        "Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination",
-      form_and_line:
-        'White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges',
-      color_palette:
-        'Cyan Blue background, blueprint-cyan, ammonia-developer blue, white-line contrast, title-block white',
-      lighting_setup:
-        'Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination',
-      material_texture:
-        'Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold',
-      render_quality:
-        'Technical, precise, ruler-and-compass rigor, drafting-arm sweep, revision-cloud care',
-      spatial_distortion:
-        '2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay',
-      atmosphere:
-        'Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin',
-      key_features:
-        'Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar reference',
-      creative_brief:
-        'Cyan paper holds white-line certainty, a world of orthographic projection and measured intention rendered in ammonia-developed precision. Dimension strings pin the drawing to reality while revision clouds mark the lingering questions in every plan. The building exists here first, in the blueprint dream, before a single foundation is poured or brick is laid.',
-    },
+    "id": "SP11-033",
+    "name": "Blueprint",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "color, photo",
+    "style": {
+      "aesthetic": "Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination",
+      "form_and_line": "White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges",
+      "color_palette": "Cyan Blue background, blueprint-cyan, ammonia-developer blue, white-line contrast, title-block white",
+      "lighting_setup": "Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination",
+      "material_texture": "Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold",
+      "render_quality": "Technical, precise, ruler-and-compass rigor, drafting-arm sweep, revision-cloud care",
+      "spatial_distortion": "2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay",
+      "atmosphere": "Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin",
+      "key_features": "Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar reference",
+      "creative_brief": "Cyan paper holds white-line certainty, a world of orthographic projection and measured intention rendered in ammonia-developed precision. Dimension strings pin the drawing to reality while revision clouds mark the lingering questions in every plan. The building exists here first, in the blueprint dream, before a single foundation is poured or brick is laid."
+    }
   },
   {
-    id: 'SP11-035',
-    name: 'Thermal Vision',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'natural colors',
-    style: {
-      aesthetic: 'Heat map camera, predator-vision, infrared-surveillance, temperature-portrait',
-      form_and_line:
-        'Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps',
-      color_palette:
-        'Rainbow (Red hot, Blue cold), ironbow-spectrum, white-hot core, magenta-warm, cyan-cool',
-      lighting_setup:
-        'Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source',
-      material_texture:
-        'Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding',
-      render_quality:
-        'Military, predator, seeker-head vision, FLIR-targeting, night-hunt aesthetic',
-      spatial_distortion:
-        'Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear',
-      atmosphere: 'Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread',
-      key_features:
-        'Heat glow, temperature-scale bar, crosshair-reticle, hot-spot bloom, cold-background contrast',
-      creative_brief:
-        "Heat blooms in rainbow signatures against the cold indifference of the infrared void, bodies announcing themselves by the warmth they radiate. Sensor-speckle noise textures the thermal image with the grain of electronic vision, hot-pixel artifacts dotting the predator's view. The world remapped into a topography of temperature where hiding is made impossible by the physics of emission.",
-    },
+    "id": "SP11-035",
+    "name": "Thermal Vision",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "natural colors",
+    "style": {
+      "aesthetic": "Heat map camera, predator-vision, infrared-surveillance, temperature-portrait",
+      "form_and_line": "Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps",
+      "color_palette": "Rainbow (Red hot, Blue cold), ironbow-spectrum, white-hot core, magenta-warm, cyan-cool",
+      "lighting_setup": "Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source",
+      "material_texture": "Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding",
+      "render_quality": "Military, predator, seeker-head vision, FLIR-targeting, night-hunt aesthetic",
+      "spatial_distortion": "Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear",
+      "atmosphere": "Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread",
+      "key_features": "Heat glow, temperature-scale bar, crosshair-reticle, hot-spot bloom, cold-background contrast",
+      "creative_brief": "Heat blooms in rainbow signatures against the cold indifference of the infrared void, bodies announcing themselves by the warmth they radiate. Sensor-speckle noise textures the thermal image with the grain of electronic vision, hot-pixel artifacts dotting the predator's view. The world remapped into a topography of temperature where hiding is made impossible by the physics of emission."
+    }
   },
   {
-    id: 'SP11-015',
-    name: 'Dark Academia',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'bright, modern, neon',
-    style: {
-      aesthetic:
-        'Classic university library, gothic-campus romance, candlelit scholarship, Oxford-common-room',
-      form_and_line: 'Detailed, gothic, arch-window contours, columnar rhythm, ornate typography',
-      color_palette:
-        'Brown, Tweed, Black, Gold, mahogany-warm, oxblood-leather, brass-fixture shimmer, parchment-cream',
-      lighting_setup:
-        'Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama',
-      material_texture:
-        'Old paper, leather books, wood, wax-drip candle stacks, wool-blend jackets, ink-stained fingertips',
-      render_quality:
-        'Intellectual, moody, historic, dusty-spine mystery, thesis-night ambiance, secret-society elegance',
-      spatial_distortion:
-        'None, towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy',
-      atmosphere:
-        'Serious, studious, mysterious, rain-on-glass melancholy, ancient-knowledge reverence, midnight revelation',
-      key_features:
-        'Books and coffee, quill-and-inkwell, brass reading lamps, leather-bound stacks',
-      creative_brief:
-        'Candlelight pools on mahogany where leather-bound centuries whisper their secrets to the lone scholar at midnight. Dust motes drift through the window-shaft like suspended thought, illuminating the eternal October of the vaulted reading room. Knowledge darkens into mystery in the gothic hour between sunset and revelation, coffee growing cold beside the open manuscript.',
-    },
+    "id": "SP11-015",
+    "name": "Dark Academia",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "bright, modern, neon",
+    "style": {
+      "aesthetic": "Classic university library, gothic-campus romance, candlelit scholarship, Oxford-common-room",
+      "form_and_line": "Detailed, gothic, arch-window contours, columnar rhythm, ornate typography",
+      "color_palette": "Brown, Tweed, Black, Gold, mahogany-warm, oxblood-leather, brass-fixture shimmer, parchment-cream",
+      "lighting_setup": "Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama",
+      "material_texture": "Old paper, leather books, wood, wax-drip candle stacks, wool-blend jackets, ink-stained fingertips",
+      "render_quality": "Intellectual, moody, historic, dusty-spine mystery, thesis-night ambiance, secret-society elegance",
+      "spatial_distortion": "None, towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy",
+      "atmosphere": "Serious, studious, mysterious, rain-on-glass melancholy, ancient-knowledge reverence, midnight revelation",
+      "key_features": "Books and coffee, quill-and-inkwell, brass reading lamps, leather-bound stacks",
+      "creative_brief": "Candlelight pools on mahogany where leather-bound centuries whisper their secrets to the lone scholar at midnight. Dust motes drift through the window-shaft like suspended thought, illuminating the eternal October of the vaulted reading room. Knowledge darkens into mystery in the gothic hour between sunset and revelation, coffee growing cold beside the open manuscript."
+    }
   },
   {
-    id: 'SP11-042',
-    name: 'Frutiger Aero',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'flat, matte',
-    style: {
-      aesthetic:
-        '2000s Tech UI, XP-era optimism, glossy-future, start-up-aesthetic, skeuomorphic-harmony',
-      form_and_line:
-        'Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles',
-      color_palette:
-        'Cyan, Green, White, aqua-bubble blue, grass-green, brushed-metal grey, traffic-light amber',
-      lighting_setup:
-        'Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth',
-      material_texture:
-        'Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens',
-      render_quality:
-        'Optimistic, corporate tech, Y2K-fresh, start-up-utopia, human-friendly-machine, skeuomorphic-beauty',
-      spatial_distortion:
-        'Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation',
-      atmosphere:
-        'Fresh, clean, future, login-screen possibility, broadband-dawn, digital-optimism',
-      key_features:
-        'Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection',
-      creative_brief:
-        'Aqua-gel buttons float above brushed-metal surfaces in a world still optimistic about broadband and a future rendered in glossy skeuomorphic wonder. Lens flares streak across grass-green progress bars climbing toward completion with start-up-utopia confidence. The desktop was a garden where every click promised a brighter digital tomorrow, window-reflection streak catching the dawn of the Y2K-fresh era.',
-    },
+    "id": "SP11-042",
+    "name": "Frutiger Aero",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "flat, matte",
+    "style": {
+      "aesthetic": "2000s Tech UI, XP-era optimism, glossy-future, start-up-aesthetic, skeuomorphic-harmony",
+      "form_and_line": "Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles",
+      "color_palette": "Cyan, Green, White, aqua-bubble blue, grass-green, brushed-metal grey, traffic-light amber",
+      "lighting_setup": "Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth",
+      "material_texture": "Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens",
+      "render_quality": "Optimistic, corporate tech, Y2K-fresh, start-up-utopia, human-friendly-machine, skeuomorphic-beauty",
+      "spatial_distortion": "Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation",
+      "atmosphere": "Fresh, clean, future, login-screen possibility, broadband-dawn, digital-optimism",
+      "key_features": "Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection",
+      "creative_brief": "Aqua-gel buttons float above brushed-metal surfaces in a world still optimistic about broadband and a future rendered in glossy skeuomorphic wonder. Lens flares streak across grass-green progress bars climbing toward completion with start-up-utopia confidence. The desktop was a garden where every click promised a brighter digital tomorrow, window-reflection streak catching the dawn of the Y2K-fresh era."
+    }
   },
   {
-    id: 'SP11-014',
-    name: 'Cottagecore',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'city, modern, cold',
-    style: {
-      aesthetic:
-        'Rural romantic life, pastoral dream, meadow-dwelling simplicity, countryside idyll',
-      form_and_line: 'Soft, flowery, organic tendrils, billowing fabric, wildflower outlines',
-      color_palette:
-        'Pastel, earth tones, floral, lavender-cream, sage-green, butter-yellow, rose-quartz blush',
-      lighting_setup:
-        'Golden hour, soft, lace-curtain diffusion, candlelit tableaux, dawn-mist quiet',
-      material_texture:
-        'Linen, flowers, wood, hand-thrown ceramics, embroidered cotton, pressed herbs, wicker weave',
-      render_quality:
-        'Pinterest, cozy, traditional, bread-baking warmth, sun-kissed nostalgia, slow-living grace',
-      spatial_distortion: 'None, natural proportions, garden-gate framing, window-light intimacy',
-      atmosphere:
-        'Peaceful, slow, romantic, gentle contentment, wildflower freedom, hearthside safety',
-      key_features:
-        'Flowers everywhere, mason-jar bouquets, wicker baskets, tea-stained doily lace',
-      creative_brief:
-        'Wildflowers bend in the golden-hour breeze near a windowsill where bread dough rises slowly under linen cloth. The pastoral dream breathes at garden pace, wrapped in hand-thrown ceramics and pressed-herb fragrance and tea-stained doily lace. Peace wears an embroidered apron and moves at the speed of wildflower growth, unhurried, rooted, radiant.',
-    },
+    "id": "SP11-014",
+    "name": "Cottagecore",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "city, modern, cold",
+    "style": {
+      "aesthetic": "Rural romantic life, pastoral dream, meadow-dwelling simplicity, countryside idyll",
+      "form_and_line": "Soft, flowery, organic tendrils, billowing fabric, wildflower outlines",
+      "color_palette": "Pastel, earth tones, floral, lavender-cream, sage-green, butter-yellow, rose-quartz blush",
+      "lighting_setup": "Golden hour, soft, lace-curtain diffusion, candlelit tableaux, dawn-mist quiet",
+      "material_texture": "Linen, flowers, wood, hand-thrown ceramics, embroidered cotton, pressed herbs, wicker weave",
+      "render_quality": "Pinterest, cozy, traditional, bread-baking warmth, sun-kissed nostalgia, slow-living grace",
+      "spatial_distortion": "None, natural proportions, garden-gate framing, window-light intimacy",
+      "atmosphere": "Peaceful, slow, romantic, gentle contentment, wildflower freedom, hearthside safety",
+      "key_features": "Flowers everywhere, mason-jar bouquets, wicker baskets, tea-stained doily lace",
+      "creative_brief": "Wildflowers bend in the golden-hour breeze near a windowsill where bread dough rises slowly under linen cloth. The pastoral dream breathes at garden pace, wrapped in hand-thrown ceramics and pressed-herb fragrance and tea-stained doily lace. Peace wears an embroidered apron and moves at the speed of wildflower growth, unhurried, rooted, radiant."
+    }
   },
   {
-    id: 'SP11-041',
-    name: 'Grimdark',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'hope, light',
-    style: {
-      aesthetic: 'Warhammer 40k cathedral-industrial war fantasy, grimdark future, eternal crusade',
-      form_and_line:
-        'Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles',
-      color_palette:
-        'Mud, Blood, Rust, boltgun-metal, purity-parchment cream, plasma-coil blue, heretic-ash grey, melta-glow orange',
-      lighting_setup:
-        'Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools',
-      material_texture:
-        'Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet',
-      render_quality:
-        'Hopeless, war, eternal, forge-world industry, ten-thousand-year crusade, dark-millennium spectacle',
-      spatial_distortion:
-        'Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks',
-      atmosphere: 'Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor',
-      key_features:
-        'Skulls, aquila-imperialis, purity-seals, servo-skulls, gothic-cathedral spires, chainsword, bolter-shell casings',
-      creative_brief:
-        'Cathedral-spine warships drift through a void where hope goes to die under ten thousand years of crusade and ceramite silence. Skulls adorn every surface because decoration in the dark millennium must remind the living what awaits them at the end of the only war. Purity seals flutter in the furnace wind of a galaxy that has forgotten what peace looks like, faith worn as armor against the dying of the light.',
-    },
+    "id": "SP11-041",
+    "name": "Grimdark",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "hope, light",
+    "style": {
+      "aesthetic": "Warhammer 40k cathedral-industrial war fantasy, grimdark future, eternal crusade",
+      "form_and_line": "Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles",
+      "color_palette": "Mud, Blood, Rust, boltgun-metal, purity-parchment cream, plasma-coil blue, heretic-ash grey, melta-glow orange",
+      "lighting_setup": "Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools",
+      "material_texture": "Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet",
+      "render_quality": "Hopeless, war, eternal, forge-world industry, ten-thousand-year crusade, dark-millennium spectacle",
+      "spatial_distortion": "Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks",
+      "atmosphere": "Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor",
+      "key_features": "Skulls, aquila-imperialis, purity-seals, servo-skulls, gothic-cathedral spires, chainsword, bolter-shell casings",
+      "creative_brief": "Cathedral-spine warships drift through a void where hope goes to die under ten thousand years of crusade and ceramite silence. Skulls adorn every surface because decoration in the dark millennium must remind the living what awaits them at the end of the only war. Purity seals flutter in the furnace wind of a galaxy that has forgotten what peace looks like, faith worn as armor against the dying of the light."
+    }
   },
   {
-    id: 'SP11-057',
-    name: 'Insect Eye',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'human eye',
-    style: {
-      aesthetic:
-        'Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering',
-      form_and_line:
-        'Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses',
-      color_palette:
-        'Iridescent, beetle-spectrum, metallic-green, structural-blue, chitin-rainbow, interference-film',
-      lighting_setup:
-        'Macro flash, ring-light reflection, lens-facet sparkle, ommatidia-catchlight array, diffused-twin-flash',
-      material_texture:
-        'Facet grid, chitin-surface, hexagonal-lens, bristle-insertion, structural-color sheen',
-      render_quality:
-        'Detailed, alien, micro-four-thirds, insect-vision-portrait, arthropod-beauty, focus-stacking perfection',
-      spatial_distortion:
-        'Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature',
-      atmosphere:
-        'Nature, intense, macro-silence, compound-gaze, arthropod-alert, alien-familiarity',
-      key_features:
-        'Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail',
-      creative_brief:
-        "A thousand hexagonal lenses stare outward from the compound dome, each ommatidium catching its own fragment of the world in structural-color iridescence. The bristle between lenses catches macro flash in a constellation of catch-light hex arrays across the chitin curvature. The arthropod's gaze is a mosaic of tiny perspectives, a panoramic helmet built by evolution's own engineering department, alien and familiar in the same focus-stacked breath.",
-    },
+    "id": "SP11-057",
+    "name": "Insect Eye",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "human eye",
+    "style": {
+      "aesthetic": "Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering",
+      "form_and_line": "Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses",
+      "color_palette": "Iridescent, beetle-spectrum, metallic-green, structural-blue, chitin-rainbow, interference-film",
+      "lighting_setup": "Macro flash, ring-light reflection, lens-facet sparkle, ommatidia-catchlight array, diffused-twin-flash",
+      "material_texture": "Facet grid, chitin-surface, hexagonal-lens, bristle-insertion, structural-color sheen",
+      "render_quality": "Detailed, alien, micro-four-thirds, insect-vision-portrait, arthropod-beauty, focus-stacking perfection",
+      "spatial_distortion": "Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature",
+      "atmosphere": "Nature, intense, macro-silence, compound-gaze, arthropod-alert, alien-familiarity",
+      "key_features": "Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail",
+      "creative_brief": "A thousand hexagonal lenses stare outward from the compound dome, each ommatidium catching its own fragment of the world in structural-color iridescence. The bristle between lenses catches macro flash in a constellation of catch-light hex arrays across the chitin curvature. The arthropod's gaze is a mosaic of tiny perspectives, a panoramic helmet built by evolution's own engineering department, alien and familiar in the same focus-stacked breath."
+    }
   },
   {
-    id: 'SP11-064',
-    name: 'Iris/Eye Macro',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'skin',
-    style: {
-      aesthetic: 'Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape',
-      form_and_line:
-        'Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone',
-      color_palette:
-        'Blue/Green/Brown, amber-hazel, grey-steel, heterochromia, central-heterochromia gold, iris-texture spectrum',
-      lighting_setup:
-        'Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow',
-      material_texture:
-        'Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade',
-      render_quality:
-        'Intense, soul, iris-photography, eye-contact-intimacy, macro-eye-portrait, cornea-reflection perfect',
-      spatial_distortion:
-        'Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve',
-      atmosphere:
-        'Personal, deep, eye-contact stillness, window-to-soul, iris-garden, blink-moment',
-      key_features:
-        'Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern, conjunctiva-vessels, lacrimal-caruncle',
-      creative_brief:
-        "Radial striae stretch from pupil to limbal ring like the rays of a sun made of muscle fiber, the iris a personal nebula in amber-hazel or steel-grey or the blue of deep water. The cornea catches a ring-light catch-light, a tiny reflection that proves this is a living eye and not a painted portrait. To photograph the iris at macro scale is to map the geography of a soul's visible edge, the frontier where interior meets exterior in fibrous color, window-to-soul rendered at life-size magnitude.",
-    },
+    "id": "SP11-064",
+    "name": "Iris/Eye Macro",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "skin",
+    "style": {
+      "aesthetic": "Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape",
+      "form_and_line": "Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone",
+      "color_palette": "Blue/Green/Brown, amber-hazel, grey-steel, heterochromia, central-heterochromia gold, iris-texture spectrum",
+      "lighting_setup": "Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow",
+      "material_texture": "Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade",
+      "render_quality": "Intense, soul, iris-photography, eye-contact-intimacy, macro-eye-portrait, cornea-reflection perfect",
+      "spatial_distortion": "Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve",
+      "atmosphere": "Personal, deep, eye-contact stillness, window-to-soul, iris-garden, blink-moment",
+      "key_features": "Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern, conjunctiva-vessels, lacrimal-caruncle",
+      "creative_brief": "Radial striae stretch from pupil to limbal ring like the rays of a sun made of muscle fiber, the iris a personal nebula in amber-hazel or steel-grey or the blue of deep water. The cornea catches a ring-light catch-light, a tiny reflection that proves this is a living eye and not a painted portrait. To photograph the iris at macro scale is to map the geography of a soul's visible edge, the frontier where interior meets exterior in fibrous color, window-to-soul rendered at life-size magnitude."
+    }
   },
   {
-    id: 'SP11-063',
-    name: 'Rust/Decay Macro',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'clean',
-    style: {
-      aesthetic: 'Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty',
-      form_and_line:
-        'Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers',
-      color_palette:
-        'Orange, Brown, iron-oxide spectrum, verdigris-green, zinc-white bloom, crust-brown, patina-teal',
-      lighting_setup:
-        'Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun',
-      material_texture:
-        'Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal, patina-powder',
-      render_quality:
-        'Texture, time, weathered-beauty, entropy-aesthetic, abandoned-place, wabi-sabi',
-      spatial_distortion:
-        'Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau',
-      atmosphere:
-        'Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay',
-      key_features:
-        'Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network, peeling-edge curls, bubbled-paint texture',
-      creative_brief:
-        'Iron oxide blooms across the paint surface in continents of orange corrosion, pushing up blisters that will eventually crack and fall away into the entropy of forgotten corners. The flaking edge catches raking side-light, revealing layer after layer of pigment and primer and the metal beneath, each stratum a chapter in the slow-motion story of abandonment. Entropy works slowly here, painting its own wabi-sabi masterpiece over the one that came before, every rust stain a sundial.',
-    },
+    "id": "SP11-063",
+    "name": "Rust/Decay Macro",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "clean",
+    "style": {
+      "aesthetic": "Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty",
+      "form_and_line": "Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers",
+      "color_palette": "Orange, Brown, iron-oxide spectrum, verdigris-green, zinc-white bloom, crust-brown, patina-teal",
+      "lighting_setup": "Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun",
+      "material_texture": "Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal, patina-powder",
+      "render_quality": "Texture, time, weathered-beauty, entropy-aesthetic, abandoned-place, wabi-sabi",
+      "spatial_distortion": "Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau",
+      "atmosphere": "Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay",
+      "key_features": "Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network, peeling-edge curls, bubbled-paint texture",
+      "creative_brief": "Iron oxide blooms across the paint surface in continents of orange corrosion, pushing up blisters that will eventually crack and fall away into the entropy of forgotten corners. The flaking edge catches raking side-light, revealing layer after layer of pigment and primer and the metal beneath, each stratum a chapter in the slow-motion story of abandonment. Entropy works slowly here, painting its own wabi-sabi masterpiece over the one that came before, every rust stain a sundial."
+    }
   },
   {
-    id: 'SP11-060',
-    name: 'Circuit Board',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'organic',
-    style: {
-      aesthetic:
-        'CPU die shot, silicon-city, wafer-art, integrated-circuit landscape, chip-fab photography',
-      form_and_line:
-        'Traces, paths, Manhattan-routing, 45-degree diagonal, via-grid, interconnect-highway',
-      color_palette:
-        'Green, Gold, Silicon, copper-interconnect orange, solder-mask green, gold-bond-wire, silicon-substrate grey, immersion-tin silver',
-      lighting_setup:
-        'Flat metallic, die-shot macro, ring-light, wafer-inspection, solder-mask reflection',
-      material_texture:
-        'Silicon, solder, polysilicon gate, metal-interconnect stack, passivation-layer glaze, probe-mark indent, bond-pad gold',
-      render_quality:
-        "Tech, complex, silicon-engineering, Moore's-law beauty, nanometer-design, EDA-art",
-      spatial_distortion:
-        'City-like, macro-block placement, standard-cell grid, routing-congestion channel, floor-plan region',
-      atmosphere:
-        'Digital, logic, clean-room silence, wafer-fab precision, clock-tree rhythm, silicon-dream',
-      key_features:
-        'Chips, bond-pads, via-arrays, standard-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial',
-      creative_brief:
-        "Copper traces route across green solder mask in Manhattan geometry, turning at precise forty-five-degree angles toward bond-pad destinations in the silicon city. Gold wire arcs bridge the die to its package, hair-thin filaments carrying the electricity of computation across micron gaps. Standard-cell rows stretch outward like a megalopolis designed by algorithms and etched by light, Moore's law rendered visible in the interconnect highways of the integrated-circuit landscape.",
-    },
+    "id": "SP11-060",
+    "name": "Circuit Board",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "organic",
+    "style": {
+      "aesthetic": "CPU die shot, silicon-city, wafer-art, integrated-circuit landscape, chip-fab photography",
+      "form_and_line": "Traces, paths, Manhattan-routing, 45-degree diagonal, via-grid, interconnect-highway",
+      "color_palette": "Green, Gold, Silicon, copper-interconnect orange, solder-mask green, gold-bond-wire, silicon-substrate grey, immersion-tin silver",
+      "lighting_setup": "Flat metallic, die-shot macro, ring-light, wafer-inspection, solder-mask reflection",
+      "material_texture": "Silicon, solder, polysilicon gate, metal-interconnect stack, passivation-layer glaze, probe-mark indent, bond-pad gold",
+      "render_quality": "Tech, complex, silicon-engineering, Moore's-law beauty, nanometer-design, EDA-art",
+      "spatial_distortion": "City-like, macro-block placement, standard-cell grid, routing-congestion channel, floor-plan region",
+      "atmosphere": "Digital, logic, clean-room silence, wafer-fab precision, clock-tree rhythm, silicon-dream",
+      "key_features": "Chips, bond-pads, via-arrays, standard-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial",
+      "creative_brief": "Copper traces route across green solder mask in Manhattan geometry, turning at precise forty-five-degree angles toward bond-pad destinations in the silicon city. Gold wire arcs bridge the die to its package, hair-thin filaments carrying the electricity of computation across micron gaps. Standard-cell rows stretch outward like a megalopolis designed by algorithms and etched by light, Moore's law rendered visible in the interconnect highways of the integrated-circuit landscape."
+    }
   },
   {
-    id: 'SP11-062',
-    name: 'Fiber/Fabric Macro',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'smooth',
-    style: {
-      aesthetic:
-        'Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape',
-      form_and_line:
-        'Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end',
-      color_palette:
-        'Thread color, indigo-denim, linen-natural, wool-heathered, silk-ivory, yarn-dyed spectrum',
-      lighting_setup:
-        'Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow',
-      material_texture:
-        'Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end tufts',
-      render_quality: 'Tactile, soft, textile-grid, weave-architecture, close-look, fiber-beauty',
-      spatial_distortion:
-        'Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v',
-      atmosphere:
-        'Cozy, close, fabric-store, textile-tradition, thread-history, warp-weighted loom',
-      key_features:
-        'Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge',
-      creative_brief:
-        'Warp crosses weft in the ancient rhythm of the loom, each thread intersection a small knot of civilization repeated ten thousand times per yard. Individual fibers twist into plies, plies into yarn, yarn into the architecture of clothing and shelter and sails that crossed oceans. The weave reveals itself only to those who lean close enough to see the textile for the forest of threads it truly is, fiber-halo fuzz catching raking light.',
-    },
+    "id": "SP11-062",
+    "name": "Fiber/Fabric Macro",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "smooth",
+    "style": {
+      "aesthetic": "Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape",
+      "form_and_line": "Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end",
+      "color_palette": "Thread color, indigo-denim, linen-natural, wool-heathered, silk-ivory, yarn-dyed spectrum",
+      "lighting_setup": "Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow",
+      "material_texture": "Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end tufts",
+      "render_quality": "Tactile, soft, textile-grid, weave-architecture, close-look, fiber-beauty",
+      "spatial_distortion": "Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v",
+      "atmosphere": "Cozy, close, fabric-store, textile-tradition, thread-history, warp-weighted loom",
+      "key_features": "Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge",
+      "creative_brief": "Warp crosses weft in the ancient rhythm of the loom, each thread intersection a small knot of civilization repeated ten thousand times per yard. Individual fibers twist into plies, plies into yarn, yarn into the architecture of clothing and shelter and sails that crossed oceans. The weave reveals itself only to those who lean close enough to see the textile for the forest of threads it truly is, fiber-halo fuzz catching raking light."
+    }
   },
   {
-    id: 'SP11-067',
-    name: 'Feather Macro',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'blurry',
-    style: {
-      aesthetic:
-        'Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather',
-      form_and_line:
-        'Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array',
-      color_palette:
-        'Iridescent, peacock-structural, hummingbird-metallic, macaw-spectrum, melanin-earth, carotenoid-bright',
-      lighting_setup:
-        'Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead',
-      material_texture:
-        'Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil',
-      render_quality:
-        'Nature, detailed, ornithology-close-up, feather-microstructure, barb-by-barb, structural-color marvel',
-      spatial_distortion: 'None, natural-contour, feather-curve, vane-width taper, rachis-diameter',
-      atmosphere:
-        'Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy',
-      key_features:
-        'Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather, calamus-base',
-      creative_brief:
-        'Barbules hook into neighboring barbules with the zipper precision of velcro designed by evolution and refined across sixty million years of flight. The rachis spine runs through the center of the vane like a keel through water, organizing chaos into aerodynamic surface, each barb contributing to a structure so perfect it taught aviation that flight was already solved. Keratin iridescence shifts from green to purple at the tilt of the feather, structural color born from surface physics rather than pigment.',
-    },
+    "id": "SP11-067",
+    "name": "Feather Macro",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "blurry",
+    "style": {
+      "aesthetic": "Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather",
+      "form_and_line": "Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array",
+      "color_palette": "Iridescent, peacock-structural, hummingbird-metallic, macaw-spectrum, melanin-earth, carotenoid-bright",
+      "lighting_setup": "Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead",
+      "material_texture": "Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil",
+      "render_quality": "Nature, detailed, ornithology-close-up, feather-microstructure, barb-by-barb, structural-color marvel",
+      "spatial_distortion": "None, natural-contour, feather-curve, vane-width taper, rachis-diameter",
+      "atmosphere": "Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy",
+      "key_features": "Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather, calamus-base",
+      "creative_brief": "Barbules hook into neighboring barbules with the zipper precision of velcro designed by evolution and refined across sixty million years of flight. The rachis spine runs through the center of the vane like a keel through water, organizing chaos into aerodynamic surface, each barb contributing to a structure so perfect it taught aviation that flight was already solved. Keratin iridescence shifts from green to purple at the tilt of the feather, structural color born from surface physics rather than pigment."
+    }
   },
   {
-    id: 'SP11-080',
-    name: 'Dandelion Seed',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'heavy',
-    style: {
-      aesthetic:
-        'Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock',
-      form_and_line:
-        'Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff',
-      color_palette:
-        'White, translucent-silver, seed-brown, backlit-gold, stem-green, sky-blue bokeh',
-      lighting_setup:
-        'Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour',
-      material_texture:
-        'Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus',
-      render_quality:
-        'Delicate, wind, time-lapse flight, dandelion-wish, botanical-aeronautics, airborne-seed',
-      spatial_distortion:
-        'Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity',
-      atmosphere:
-        'Wish, soft, meadow-breeze, spring-dispersal, make-a-wish, childhood-breath, floating-dream',
-      key_features:
-        'Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift, dandelion-stem',
-      creative_brief:
-        'The pappus parachute catches wind and lifts the cypsela seed from its stem with the aerodynamic elegance of a million years of trial and error distilled into radial fluff. Backlit filaments glow translucent-silver against a sky-blue bokeh, each bristle a prayer for favorable current and distance from the parent plant. A child closes their eyes and blows, launching a thousand tiny spacecraft toward destinations chosen by breeze and hope, make-a-wish physics rendered at macro scale.',
-    },
+    "id": "SP11-080",
+    "name": "Dandelion Seed",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "heavy",
+    "style": {
+      "aesthetic": "Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock",
+      "form_and_line": "Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff",
+      "color_palette": "White, translucent-silver, seed-brown, backlit-gold, stem-green, sky-blue bokeh",
+      "lighting_setup": "Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour",
+      "material_texture": "Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus",
+      "render_quality": "Delicate, wind, time-lapse flight, dandelion-wish, botanical-aeronautics, airborne-seed",
+      "spatial_distortion": "Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity",
+      "atmosphere": "Wish, soft, meadow-breeze, spring-dispersal, make-a-wish, childhood-breath, floating-dream",
+      "key_features": "Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift, dandelion-stem",
+      "creative_brief": "The pappus parachute catches wind and lifts the cypsela seed from its stem with the aerodynamic elegance of a million years of trial and error distilled into radial fluff. Backlit filaments glow translucent-silver against a sky-blue bokeh, each bristle a prayer for favorable current and distance from the parent plant. A child closes their eyes and blows, launching a thousand tiny spacecraft toward destinations chosen by breeze and hope, make-a-wish physics rendered at macro scale."
+    }
   },
   {
-    id: 'SP11-075',
-    name: 'Sponge',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'solid',
-    style: {
-      aesthetic:
-        'Kitchen sponge zoom, foam-cell, open-cell-structure, absorbent-micro, cleaning-surface',
-      form_and_line:
-        'Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry',
-      color_palette:
-        'Yellow, Pink, cleaning-spectrum, scrubber-green, dish-blue, foam-pastels, cellulose-tan',
-      lighting_setup:
-        'Soft, macro-diffused, shadow-in-pores, cell-depth contrast, flat-reflective on strut',
-      material_texture:
-        'Porous foam, open-cell polyurethane, cellulose-sponge fiber, abrasive-scrub layer, water-saturated weight',
-      render_quality:
-        'Absorbent, texture, cleaning-tool macro, kitchen-necessity, pore-architecture',
-      spatial_distortion:
-        'Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane',
-      atmosphere: 'Clean, soft, kitchen-sink quiet, dish-duty, cleaning-ritual, water-warm',
-      key_features:
-        'Pores, cell-windows, strut-network, scrub-layer, water-bead, soap-bubble residue, cellulose-fiber, abrasive-grit surface',
-      creative_brief:
-        "Open-cell foam architecture reveals itself as a cathedral of interconnected void spaces, struts spanning pores in a load-bearing lattice where air occupies more volume than solid. Water beads sit in surface-tension pockets, suspended between absorption and release in the absorbent-micro landscape of the kitchen sponge. A universe of holes within holes, the sponge's entire purpose defined by what it can contain and what it excludes, porous geometry at the scale where cleaning becomes architecture.",
-    },
+    "id": "SP11-075",
+    "name": "Sponge",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "solid",
+    "style": {
+      "aesthetic": "Kitchen sponge zoom, foam-cell, open-cell-structure, absorbent-micro, cleaning-surface",
+      "form_and_line": "Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry",
+      "color_palette": "Yellow, Pink, cleaning-spectrum, scrubber-green, dish-blue, foam-pastels, cellulose-tan",
+      "lighting_setup": "Soft, macro-diffused, shadow-in-pores, cell-depth contrast, flat-reflective on strut",
+      "material_texture": "Porous foam, open-cell polyurethane, cellulose-sponge fiber, abrasive-scrub layer, water-saturated weight",
+      "render_quality": "Absorbent, texture, cleaning-tool macro, kitchen-necessity, pore-architecture",
+      "spatial_distortion": "Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane",
+      "atmosphere": "Clean, soft, kitchen-sink quiet, dish-duty, cleaning-ritual, water-warm",
+      "key_features": "Pores, cell-windows, strut-network, scrub-layer, water-bead, soap-bubble residue, cellulose-fiber, abrasive-grit surface",
+      "creative_brief": "Open-cell foam architecture reveals itself as a cathedral of interconnected void spaces, struts spanning pores in a load-bearing lattice where air occupies more volume than solid. Water beads sit in surface-tension pockets, suspended between absorption and release in the absorbent-micro landscape of the kitchen sponge. A universe of holes within holes, the sponge's entire purpose defined by what it can contain and what it excludes, porous geometry at the scale where cleaning becomes architecture."
+    }
   },
   {
-    id: 'SP11-079',
-    name: 'Carbon Fiber',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'metal',
-    style: {
-      aesthetic:
-        'Weave pattern, composite-macro, aerospace-material, tow-fiber, high-modulus structure',
-      form_and_line:
-        'Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary',
-      color_palette:
-        'Black, Grey, PAN-carbon, pitch-fiber dark, oxidized-surface, resin-matrix amber, intermediate-modulus sheen',
-      lighting_setup:
-        'Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer',
-      material_texture:
-        'Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp',
-      render_quality:
-        'High tech, strong, Formula-1 engineering, aerospace-composite, strength-to-weight art',
-      spatial_distortion: 'None, flat-laminate, weave-repeat, tow-orientation, ply-stack',
-      atmosphere: 'Fast, expensive, autoclave-cure, racing-engineering, carbon-fiber exclusivity',
-      key_features:
-        'Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack surface',
-      creative_brief:
-        'Twill weave runs diagonal across the laminate in a repeating pattern of strength and shadow, each tow a bundle of thousands of carbon filaments thinner than spider silk. The anisotropic surface catches reflection along the fiber direction, gloss following the same path that stress will follow under load, aerospace engineering rendered as textile art. Black and silver woven into a composite that laughs at steel while weighing almost nothing, Formula-1 engineering at the macro scale of the individual tow.',
-    },
+    "id": "SP11-079",
+    "name": "Carbon Fiber",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "metal",
+    "style": {
+      "aesthetic": "Weave pattern, composite-macro, aerospace-material, tow-fiber, high-modulus structure",
+      "form_and_line": "Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary",
+      "color_palette": "Black, Grey, PAN-carbon, pitch-fiber dark, oxidized-surface, resin-matrix amber, intermediate-modulus sheen",
+      "lighting_setup": "Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer",
+      "material_texture": "Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp",
+      "render_quality": "High tech, strong, Formula-1 engineering, aerospace-composite, strength-to-weight art",
+      "spatial_distortion": "None, flat-laminate, weave-repeat, tow-orientation, ply-stack",
+      "atmosphere": "Fast, expensive, autoclave-cure, racing-engineering, carbon-fiber exclusivity",
+      "key_features": "Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack surface",
+      "creative_brief": "Twill weave runs diagonal across the laminate in a repeating pattern of strength and shadow, each tow a bundle of thousands of carbon filaments thinner than spider silk. The anisotropic surface catches reflection along the fiber direction, gloss following the same path that stress will follow under load, aerospace engineering rendered as textile art. Black and silver woven into a composite that laughs at steel while weighing almost nothing, Formula-1 engineering at the macro scale of the individual tow."
+    }
   },
   {
-    id: 'SP11-070',
-    name: 'Ink in Water',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'still',
-    style: {
-      aesthetic: 'Cloud tank, ink-diffusion, fluid-sculpture, dye-dance, aqueous-art',
-      form_and_line:
-        'Swirls, mushroom-cloud, vortex-sheet, tendril-curls, turbulence-eddy, laminar-flow ribbons',
-      color_palette:
-        'Black/Color ink, ink-spectrum, dye-gradient, water-dilution pastels, pigment-sediment, alcohol-ink vibrancy',
-      lighting_setup:
-        'Backlit, through-tank diffusion, volumetric-glow, dark-field, spotlight-beam',
-      material_texture:
-        'Fluid smoke, ink-plume, dye-stratification, particle-suspension, density-layer, micro-current grain',
-      render_quality:
-        'Abstract, motion, slow-motion-fluid, smoke-photography, liquid-sculpture, ink-in-water magic',
-      spatial_distortion:
-        'Dissolving, dispersion-front, plume-expansion, diffusion-gradient, dissipating-edge',
-      atmosphere: 'Artistic, flow, fluid-dynamics peace, ink-drop meditation, underwater-weather',
-      key_features:
-        'Smoke shape, ink-tendril, mushroom-cap, vortex-ring, dye-gradient, backlit-glow, turbulence-texture',
-      creative_brief:
-        'Black plumes mushroom through clear water in slow-motion blossoms, tendrils curling outward into delicate vortices that visualize the invisible turbulence of fluid dynamics. The ink dances in three dimensions for a few seconds of dispersion before diffusion wins and the sculpture fades to grey then nothing. Fluid dynamics becomes abstract expressionism in the cloud tank, a dye-dance captured one frame before entropy dissolves the mushroom-cap masterpiece back into uniform water.',
-    },
+    "id": "SP11-070",
+    "name": "Ink in Water",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "still",
+    "style": {
+      "aesthetic": "Cloud tank, ink-diffusion, fluid-sculpture, dye-dance, aqueous-art",
+      "form_and_line": "Swirls, mushroom-cloud, vortex-sheet, tendril-curls, turbulence-eddy, laminar-flow ribbons",
+      "color_palette": "Black/Color ink, ink-spectrum, dye-gradient, water-dilution pastels, pigment-sediment, alcohol-ink vibrancy",
+      "lighting_setup": "Backlit, through-tank diffusion, volumetric-glow, dark-field, spotlight-beam",
+      "material_texture": "Fluid smoke, ink-plume, dye-stratification, particle-suspension, density-layer, micro-current grain",
+      "render_quality": "Abstract, motion, slow-motion-fluid, smoke-photography, liquid-sculpture, ink-in-water magic",
+      "spatial_distortion": "Dissolving, dispersion-front, plume-expansion, diffusion-gradient, dissipating-edge",
+      "atmosphere": "Artistic, flow, fluid-dynamics peace, ink-drop meditation, underwater-weather",
+      "key_features": "Smoke shape, ink-tendril, mushroom-cap, vortex-ring, dye-gradient, backlit-glow, turbulence-texture",
+      "creative_brief": "Black plumes mushroom through clear water in slow-motion blossoms, tendrils curling outward into delicate vortices that visualize the invisible turbulence of fluid dynamics. The ink dances in three dimensions for a few seconds of dispersion before diffusion wins and the sculpture fades to grey then nothing. Fluid dynamics becomes abstract expressionism in the cloud tank, a dye-dance captured one frame before entropy dissolves the mushroom-cap masterpiece back into uniform water."
+    }
   },
   {
-    id: 'SP11-077',
-    name: 'Sandpaper',
-    category: '5. Oddities And Novelty',
-    negativePrompt: 'smooth',
-    style: {
-      aesthetic: 'Grit zoom, abrasive-surface, workshop-texture, grit-topography, sanding-material',
-      form_and_line:
-        'Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices',
-      color_palette:
-        'Brown, Black grit, aluminum-oxide grey, silicon-carbide metallic, garnet-red, ceramic-white',
-      lighting_setup:
-        'Sparkle on grit, raking-grazing light, particle-shadow, resin-gloss catch, point-source reflection',
-      material_texture:
-        'Rough, abrasive, sharp-particle, bonding-resin, graded-grit size, backer-paper, clogged-dust',
-      render_quality:
-        'Industrial, rough, workshop-macro, grit-grade, sanding-precision, surface-prep',
-      spatial_distortion: 'None, flat-sheet, grit-density, particle-projection, backing-plane',
-      atmosphere: 'Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience',
-      key_features:
-        'Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction scratch',
-      creative_brief:
-        'Angular grit particles stand at attention on the resin-coated backing, each sharp facet a tooth waiting to bite into wood or metal with controlled violence. Grazing light catches the abrasive points in a constellation of bright specks across the brown field, particle-size distribution revealed through shadow and sparkle. Destruction as precision: every scratch left behind is a record of material removed measured in microns, the grit-grade a language of roughness spoken by every workshop surface.',
-    },
-  },
+    "id": "SP11-077",
+    "name": "Sandpaper",
+    "category": "5. Oddities And Novelty",
+    "negativePrompt": "smooth",
+    "style": {
+      "aesthetic": "Grit zoom, abrasive-surface, workshop-texture, grit-topography, sanding-material",
+      "form_and_line": "Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices",
+      "color_palette": "Brown, Black grit, aluminum-oxide grey, silicon-carbide metallic, garnet-red, ceramic-white",
+      "lighting_setup": "Sparkle on grit, raking-grazing light, particle-shadow, resin-gloss catch, point-source reflection",
+      "material_texture": "Rough, abrasive, sharp-particle, bonding-resin, graded-grit size, backer-paper, clogged-dust",
+      "render_quality": "Industrial, rough, workshop-macro, grit-grade, sanding-precision, surface-prep",
+      "spatial_distortion": "None, flat-sheet, grit-density, particle-projection, backing-plane",
+      "atmosphere": "Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience",
+      "key_features": "Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction scratch",
+      "creative_brief": "Angular grit particles stand at attention on the resin-coated backing, each sharp facet a tooth waiting to bite into wood or metal with controlled violence. Grazing light catches the abrasive points in a constellation of bright specks across the brown field, particle-size distribution revealed through shadow and sparkle. Destruction as precision: every scratch left behind is a record of material removed measured in microns, the grit-grade a language of roughness spoken by every workshop surface."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];
