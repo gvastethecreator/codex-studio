@@ -3,7 +3,15 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_14/mythic-noir-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mythic-symbolism-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mythic-ritual-noir-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mythic-pantheons-and-legends-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mythic-cosmology-and-omens-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mythic-greek-epics-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mythic-african-cosmologies-6').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mythic-japanese-yokai-and-kami-7').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mythic-norse-sagas-8').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mythic-mesoamerican-suns-9').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

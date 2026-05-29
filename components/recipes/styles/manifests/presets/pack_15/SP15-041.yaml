@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-041
+packId: pack_15
+name: Turbine Family Arcade
+category: 8. Corepunk — Atompunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+visualDna:
+  aesthetic: Consumer atompunk leisure complex centered on turbine aesthetics and optimism.
+  form_and_line: Streamlined facades, curved canopies, and spinning emblem motifs.
+  color_palette: Aqua, cream, and cherry red accents.
+  lighting_setup: Indoor marquee spots and luminous machine displays.
+  material_texture: Chrome trim, polished plastic, and checker tile floors.
+  render_quality: Clean retro-future interior render with strong composition.
+  spatial_distortion: Wide central hall perspective with repeating storefront arcs.
+  atmosphere: Family spectacle, polished futurity, and cheerful excess.
+  key_features: Turbine carousel, atom game cabinets, and snack capsule bars.
+  creative_brief: A leisure arcade where atompunk consumer culture feels both charming and uncanny.
+avoidRules: [photoreal, bleak-industrial, fantasy-medieval, blood-gore, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-041.webp }
+attributes:
+  negativePrompt: photoreal, bleak-industrial, fantasy-medieval, blood-gore, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

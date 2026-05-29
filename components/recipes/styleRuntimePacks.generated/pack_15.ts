@@ -3,7 +3,19 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_15/solarpunk-dreamscapes-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-solarpunk-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-clockpunk-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-biopunk-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-steampunk-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-vaporpunk-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-cyberpunk-6').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-dieselpunk-7').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-atompunk-8').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-decopunk-9').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-raypunk-10').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-lunarpunk-11').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-stonepunk-12').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/corepunk-seapunk-13').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

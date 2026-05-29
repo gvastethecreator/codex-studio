@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-032
+packId: pack_15
+name: Megalith Transit Spine
+category: 12. Corepunk — Stonepunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
+visualDna:
+  aesthetic: Continental trade artery built from colossal stone tracks and kinetic sled systems.
+  form_and_line: Parallel carved lanes, pillar forests, and weighted counterbalance towers.
+  color_palette: Sandstone beige, slate blue, and iron rust.
+  lighting_setup: Harsh directional sunlight and torch tunnels at transit nodes.
+  material_texture: Weathered stone blocks, braided cable ropes, and bone-polished sliders.
+  render_quality: Expansive concept panorama with readable infrastructure logic.
+  spatial_distortion: Long horizon perspective stressing infrastructure scale and distance.
+  atmosphere: Industrious motion, civic pragmatism, and old-world futurity.
+  key_features: Counterweight elevators, stone sled trains, and trade gate bastions.
+  creative_brief: A stonepunk mobility network that transforms mountain empires into connected economies.
+avoidRules: [photoreal, cyber-neon, whimsical-fantasy-only, modern-asphalt-roads, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-032.webp }
+attributes:
+  negativePrompt: photoreal, cyber-neon, whimsical-fantasy-only, modern-asphalt-roads, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-stonepunk, categoryName: 12. Corepunk — Stonepunk, tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-066
+packId: pack_15
+name: Plasma Rail Commons
+category: 10. Corepunk — Raypunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
+visualDna:
+  aesthetic: Public transport nexus powered by open plasma conduits.
+  form_and_line: Elevated rails, transfer hubs, and cantilever decks.
+  color_palette: Electric cyan, orange, and steel.
+  lighting_setup: Rail plasma streaks and station strip lights.
+  material_texture: Composite decks, conduit glass, and anti-slip metals.
+  render_quality: Infrastructure-focused concept rendering.
+  spatial_distortion: Parallel rail vanishing lines.
+  atmosphere: Speed, risk, and civic momentum.
+  key_features: Plasma rails, transfer pods, and mission terminals.
+  creative_brief: A raypunk metro where commuting feels like piloting a starship.
+avoidRules: [photoreal, medieval, cyber-grunge, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-066.webp }
+attributes:
+  negativePrompt: photoreal, medieval, cyber-grunge, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-121
+packId: pack_15
+name: Tide Lantern Quarter
+category: 13. Corepunk — Seapunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+visualDna:
+  aesthetic: Night quarter lit by tide lanterns and floating route markers.
+  form_and_line: Lantern strings, quay paths, and floating buoys.
+  color_palette: Moonlit blue, hot pink, and silver.
+  lighting_setup: Lantern glow over rippling water and wet decking.
+  material_texture: Glass lanterns, painted metal, and salt-worn wood.
+  render_quality: Vibrant night city concept with clear navigation cues.
+  spatial_distortion: Meandering path through illuminated water corridors.
+  atmosphere: Night stroll, orientation, and civic sparkle.
+  key_features: Tide lanterns, buoy markers, and wet promenade steps.
+  creative_brief: A seapunk quarter where lanterns float with the tide and guide every shoreline turn.
+avoidRules: [photoreal, dystopia, harsh-dark, watermark, text, logo, muddy]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-121.webp }
+attributes:
+  negativePrompt: photoreal, dystopia, harsh-dark, watermark, text, logo, muddy
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

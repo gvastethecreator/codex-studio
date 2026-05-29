@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-058
+packId: pack_14
+name: Lion Throne Rain Rite
+category: 6. Mythic — African Cosmologies
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, african-myth]
+visualDna:
+  aesthetic: Royal storm invocation ceremony under lion-guarded canopy.
+  form_and_line: Throne dais, rain channels, and banner posts.
+  color_palette: Ocher, storm gray, and gold.
+  lighting_setup: Pre-rain sky flash and torch edge glows.
+  material_texture: Carved wood, beadwork, and wet stone.
+  render_quality: Regal ritual tableau.
+  spatial_distortion: Frontal court perspective with deep crowd tiers.
+  atmosphere: Authority, supplication, and climatic suspense.
+  key_features: Lion standards, rain basins, and praise drum circle.
+  creative_brief: A throne rite where weather is negotiated as governance.
+avoidRules: [photoreal, cartoon, neon-city, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-058.webp }
+attributes:
+  negativePrompt: photoreal, cartoon, neon-city, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

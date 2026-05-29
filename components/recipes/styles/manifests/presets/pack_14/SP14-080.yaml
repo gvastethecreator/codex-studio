@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-080
+packId: pack_14
+name: Yew Gate of Nine Paths
+category: 8. Mythic — Norse Sagas
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, norse-myth]
+visualDna:
+  aesthetic: Sacred yew gateway marking passage between mythic realms.
+  form_and_line: Triple arches, branch tracery, and path bifurcations.
+  color_palette: Moss green, bark brown, and moon silver.
+  lighting_setup: Misty moonlight and root lantern nodes.
+  material_texture: Ancient yew bark, rune stones, and wet earth.
+  render_quality: Mystical landscape concept with symbolic geometry.
+  spatial_distortion: Multi-path composition radiating from gate center.
+  atmosphere: Liminal wonder and cautious reverence.
+  key_features: Realm markers, yew roots, and guardian runes.
+  creative_brief: A mythic crossroads where every route rewrites fate.
+avoidRules: [photoreal, cartoon, neon-cyber, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-080.webp }
+attributes:
+  negativePrompt: photoreal, cartoon, neon-cyber, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-085
+packId: pack_15
+name: Gilded Gear Conservatory
+category: 2. Corepunk — Clockpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+visualDna:
+  aesthetic: Ornate conservatory where timekeeping and horticulture merge.
+  form_and_line: Brass ribs, gear daisies, and clockface skylights.
+  color_palette: Brass gold, emerald, and cream.
+  lighting_setup: Sunlight filtered through clockwork glass.
+  material_texture: Filigree metal, cut glass, and polished wood.
+  render_quality: Delicate conceptual illustration with rich decorative detail.
+  spatial_distortion: Circular greenhouse rings around central timer tower.
+  atmosphere: Patient elegance and mechanical gentleness.
+  key_features: Clock vines, pendulum sprinklers, and time-wound orchards.
+  creative_brief: A clockpunk greenhouse where plants and mechanisms grow together.
+avoidRules: [photoreal, cyberpunk, industrial-grunge, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-085.webp }
+attributes:
+  negativePrompt: photoreal, cyberpunk, industrial-grunge, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

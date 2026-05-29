@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-029
+packId: pack_15
+name: Selenite Commons
+category: 11. Corepunk — Lunarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+visualDna:
+  aesthetic: Cooperative moon district focused on artisan fabrication and communal care.
+  form_and_line: Dome clusters, radial market rings, and vertical greenhouse shafts.
+  color_palette: Frost white, pale cyan, and soft coral accents.
+  lighting_setup: Diffused dome glow and reflected rimlight from regolith plains.
+  material_texture: Crystalline composites, woven habitat textiles, and matte ceramic panels.
+  render_quality: Refined concept style with readable social micro-scenes.
+  spatial_distortion: Curved plaza perspective emphasizing communal center gravity.
+  atmosphere: Mutual aid, creative craft, and patient technological optimism.
+  key_features: Shared fab labs, moon bazaar stalls, and low-gravity amphitheater gardens.
+  creative_brief: A lunarpunk commons where scarcity is answered through design and solidarity.
+avoidRules: [photoreal, militarism, dystopian-surveillance, heavy-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-029.webp }
+attributes:
+  negativePrompt: photoreal, militarism, dystopian-surveillance, heavy-neon, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-082
+packId: pack_15
+name: Orbital Seed Vault Annex
+category: 11. Corepunk — Lunarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+visualDna:
+  aesthetic: Redundant seed archive tethered between lunar and orbital habitats.
+  form_and_line: Vault cylinders, transfer bridges, and secure ring corridors.
+  color_palette: Frost white, olive green, and graphite.
+  lighting_setup: Controlled vault glow and transit beacon strips.
+  material_texture: Cryo casings, metal ribs, and insulated polymer shells.
+  render_quality: Precision infrastructure concept with ecological emphasis.
+  spatial_distortion: Linear vault depth crossing into docking lock.
+  atmosphere: Stewardship, caution, and long-term planning.
+  key_features: Seed chambers, cryo lifts, and biosecurity checkpoints.
+  creative_brief: A lunarpunk archive securing biodiversity as a shared future asset.
+avoidRules: [photoreal, military-bunker, cyberpunk-chaos, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-082.webp }
+attributes:
+  negativePrompt: photoreal, military-bunker, cyberpunk-chaos, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-032
+packId: pack_14
+name: Obsidian Ballcourt Oath
+category: 9. Mythic — Mesoamerican Suns
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth]
+visualDna:
+  aesthetic: Sacred ceremonial court where sport, sacrifice, and cosmic order intersect.
+  form_and_line: Sloped stone walls, ring markers, and strict bilateral field geometry.
+  color_palette: Obsidian black, dusty ochre, and ceremonial turquoise.
+  lighting_setup: Low golden dusk with brazier flares at cardinal stations.
+  material_texture: Chipped volcanic stone, lime plaster paint, braided leather, and shell inlay.
+  render_quality: Narrative action tableau with disciplined architectural readability.
+  spatial_distortion: Stadium perspective emphasizing ritual spectatorship and central contest space.
+  atmosphere: Competitive solemnity, civic spectacle, and metaphysical stakes.
+  key_features: Ballcourt rings, priestly terraces, war banners, and eclipse scoreboard stele.
+  creative_brief: A mythic court where victory is interpreted as alignment with solar destiny.
+avoidRules: [photoreal, comedic-sports, modern-stadium-tech, neon-city, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-032.webp }
+attributes:
+  negativePrompt: photoreal, comedic-sports, modern-stadium-tech, neon-city, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-mesoamerican-suns, categoryName: 9. Mythic — Mesoamerican Suns, tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

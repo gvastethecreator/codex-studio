@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-066
+packId: pack_14
+name: Rainmaker Plateau Engines
+category: 6. Mythic — African Cosmologies
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, african-myth]
+visualDna:
+  aesthetic: Plateau complex where ritual weather towers regulate drought cycles.
+  form_and_line: Tower clusters, channel grids, and stepped cisterns.
+  color_palette: Slate, copper, and storm teal.
+  lighting_setup: Stormfront light with tower beacon pulses.
+  material_texture: Patinated metal, clay channels, and wet stone.
+  render_quality: Infrastructure-myth concept scene.
+  spatial_distortion: Plateau-wide composition with clustered verticals.
+  atmosphere: Urgency, collective effort, and hopeful tension.
+  key_features: Rain towers, cistern plazas, and cloud drum platforms.
+  creative_brief: A cosmological utility where weather is managed as common good.
+avoidRules: [photoreal, cyberpunk-city, comic, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-066.webp }
+attributes:
+  negativePrompt: photoreal, cyberpunk-city, comic, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-028
+packId: pack_15
+name: Moonwater Terraces
+category: 11. Corepunk — Lunarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+visualDna:
+  aesthetic: Gentle lunar eco-settlement built around reflective water gardens and low gravity poetics.
+  form_and_line: Crescent terraces, circular hydro pools, and slim arching walkways.
+  color_palette: Pearl white, muted lilac, and moonlit aqua.
+  lighting_setup: Soft earthshine and bioluminescent pool rims with minimal harsh contrast.
+  material_texture: Sintered regolith concrete, translucent membranes, and polished ice channels.
+  render_quality: Serene high-end concept art with elegant compositional balance.
+  spatial_distortion: Layered bowl-topography perspective with drifting low-gravity particles.
+  atmosphere: Quiet futurism, contemplative community, and ritual calm.
+  key_features: Lunar gardens, gravity-light bridges, and phase-calendar lantern towers.
+  creative_brief: A lunarpunk hamlet where civic life follows tides, phases, and shared stewardship.
+avoidRules: [photoreal, militarized-moon-base, grim-industrial, neon-noise, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-028.webp }
+attributes:
+  negativePrompt: photoreal, militarized-moon-base, grim-industrial, neon-noise, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

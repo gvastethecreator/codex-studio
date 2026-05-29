@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-094
+packId: pack_15
+name: Timewheel Arcade
+category: 2. Corepunk — Clockpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+visualDna:
+  aesthetic: Public arcade driven by oversized timewheel mechanics.
+  form_and_line: Wheel arches, arcade portals, and dial kiosks.
+  color_palette: Copper, cream, and forest green.
+  lighting_setup: Warm arcade lights and reflected dial faces.
+  material_texture: Enamel plates, brass, and varnished timber.
+  render_quality: Playful yet refined concept art.
+  spatial_distortion: Rotational composition around the giant wheel.
+  atmosphere: Social motion and measured delight.
+  key_features: Timewheel rides, ticket counters, and gear carnival stalls.
+  creative_brief: A clockpunk fairground where amusement is engineered as a precision ritual.
+avoidRules: [photoreal, grim-industrial, cyberpunk-noise, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-094.webp }
+attributes:
+  negativePrompt: photoreal, grim-industrial, cyberpunk-noise, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-103
+packId: pack_14
+name: Salt Bone Sigil Hall
+category: 1. Mythic — Symbolism
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Hall of sigils carved from salt-encrusted bone.
+  form_and_line: Repeating sigil panels, vertebra-like arches, and ceremonial symmetry.
+  color_palette: Salt white, dark sepia, and iron gray.
+  lighting_setup: Cold skylight with crisp shadow cuts.
+  material_texture: Chiseled bone, salt crust, and rough stone.
+  render_quality: Esoteric architecture with precise symbolic read.
+  spatial_distortion: Corridor rhythm that multiplies sigils into depth.
+  atmosphere: Severance, permanence, and ritual authority.
+  key_features: Bone sigils, salt encrustation, and oath panels.
+  creative_brief: A symbolic hall where memory is etched into bones and preserved by salt.
+avoidRules: [photoreal, whimsical, candy colors, watermark, text, logo, blur]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-103.webp }
+attributes:
+  negativePrompt: photoreal, whimsical, candy colors, watermark, text, logo, blur
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

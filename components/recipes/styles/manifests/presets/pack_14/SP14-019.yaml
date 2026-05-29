@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-019
+packId: pack_14
+name: Labyrinth of Red Thread
+category: 5. Mythic — Greek Epics
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, greek-myth]
+visualDna:
+  aesthetic: Thesean labyrinth myth reimagined as ominous palace-noir puzzle architecture.
+  form_and_line: Concentric corridors, angular relief murals, and thread-guided vanishing lines.
+  color_palette: Oxblood red, soot black, and tarnished gold.
+  lighting_setup: Torch pools and skylight slits producing alternating bright traps and blind corners.
+  material_texture: Cracked stucco, polished black stone, and frayed ceremonial textiles.
+  render_quality: Cinematic environment painting with clear traversal logic and symbolic motifs.
+  spatial_distortion: Recursive corridor geometry suggesting impossible returns and hidden chambers.
+  atmosphere: Claustrophobic destiny, strategic fear, and ritual courage.
+  key_features: Red guiding thread, horned relief masks, sacrificial gate, and echoing maze wells.
+  creative_brief: A mythic Greek labyrinth where each turn tests memory, morality, and nerve.
+avoidRules: [photoreal, whimsical-cute, bright-pop, futuristic-ui, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-019.webp }
+attributes:
+  negativePrompt: photoreal, whimsical-cute, bright-pop, futuristic-ui, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-095
+packId: pack_15
+name: Clockmaker's Terrace
+category: 2. Corepunk — Clockpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+visualDna:
+  aesthetic: Residential terrace where every balcony includes a personal timing atelier.
+  form_and_line: Staggered balconies, pocket-watch railings, and stair loops.
+  color_palette: Honey wood, brass, and pale blue.
+  lighting_setup: Late afternoon light and warm window glows.
+  material_texture: Painted plaster, brass hardware, and woven awnings.
+  render_quality: Domestic future concept with meticulous detail.
+  spatial_distortion: Terraced slope perspective with nested home fronts.
+  atmosphere: Domestic care and mechanical intimacy.
+  key_features: Balcony clocks, repair benches, and window chimes.
+  creative_brief: A clockpunk neighborhood where household life is tuned with craft precision.
+avoidRules: [photoreal, cyberpunk, ruin-punk, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-095.webp }
+attributes:
+  negativePrompt: photoreal, cyberpunk, ruin-punk, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

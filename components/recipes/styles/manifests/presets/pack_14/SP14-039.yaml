@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-039
+packId: pack_14
+name: Hundred Mask Procession
+category: 7. Mythic — Japanese Yokai & Kami
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+visualDna:
+  aesthetic: Ritual parade of masked intermediaries carrying petitions to hidden kami.
+  form_and_line: Processional street axis, mask columns, and banner rhythms.
+  color_palette: Ash black, lacquer red, and pale lantern gold.
+  lighting_setup: Procession lantern chain with deep background haze.
+  material_texture: Carved masks, silk banners, and polished wooden palanquins.
+  render_quality: Story-rich cinematic tableau.
+  spatial_distortion: Forward motion perspective with repeating ceremonial forms.
+  atmosphere: Collective trance, secrecy, and sacred order.
+  key_features: Mask bearers, petition scrolls, and drum-ritual cadence.
+  creative_brief: A once-a-year night procession where identities dissolve into ritual function.
+avoidRules: [photoreal, festival-pop, neon-club, modern-vehicles, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-039.webp }
+attributes:
+  negativePrompt: photoreal, festival-pop, neon-club, modern-vehicles, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

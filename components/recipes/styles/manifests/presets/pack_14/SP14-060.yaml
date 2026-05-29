@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-060
+packId: pack_14
+name: Mask Forge of Lineages
+category: 6. Mythic — African Cosmologies
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, african-myth]
+visualDna:
+  aesthetic: Artisan sanctuary crafting lineage masks for rites of passage.
+  form_and_line: Workshop bays, hanging mask rows, and kiln chambers.
+  color_palette: Sienna, charcoal, and indigo.
+  lighting_setup: Forge embers and roof slit beams.
+  material_texture: Wood grain, pigment clay, and copper wire.
+  render_quality: Craft-focused concept scene.
+  spatial_distortion: Layered workshop depth to central forge.
+  atmosphere: Heritage labor and ceremonial continuity.
+  key_features: Mask racks, pigment tables, and ancestor shrines.
+  creative_brief: A mythic atelier where identity is carved before public ritual.
+avoidRules: [photoreal, comic, sci-fi-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-060.webp }
+attributes:
+  negativePrompt: photoreal, comic, sci-fi-neon, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

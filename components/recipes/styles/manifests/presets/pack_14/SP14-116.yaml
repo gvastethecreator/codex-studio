@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-116
+packId: pack_14
+name: Night Orchid Ritual House
+category: 2. Mythic — Ritual Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Ritual residence overrun by nocturnal orchids and velvet drapery.
+  form_and_line: House silhouette, floral verticals, and ritual balcony rhythms.
+  color_palette: Dark plum, black green, and muted gold.
+  lighting_setup: Orchid biolight mixed with candle glows.
+  material_texture: Velvet curtains, glossy petals, and dark lacquer.
+  render_quality: Dreamlike mythic illustration with refined botanical detail.
+  spatial_distortion: House-depth composition with floral framing.
+  atmosphere: Seduction, secrecy, and ceremonial stillness.
+  key_features: Orchid altar, midnight terrace, and ritual screens.
+  creative_brief: A ritual house where orchids bloom as the final witness of the night.
+avoidRules: [photoreal, cartoonish, overbright, watermark, text, logo, clutter]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-116.webp }
+attributes:
+  negativePrompt: photoreal, cartoonish, overbright, watermark, text, logo, clutter
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

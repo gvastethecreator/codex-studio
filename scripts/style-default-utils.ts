@@ -5,6 +5,7 @@ import sharp from 'sharp';
 import type { StyleRuntimePreset } from '../components/recipes/styles/runtimeTypes';
 import { loadStyleManifestGraph, styleManifestsDir } from './style-manifest-files';
 import { composeStyleRuntimePacksFromManifests } from '../components/recipes/stylePresetManifests';
+import { compareStylePackIdsForDisplay } from '../components/recipes/styles/packOrdering';
 import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
 
 export const rootDir = process.cwd();
@@ -99,7 +100,7 @@ async function loadPacksFromGranularManifests() {
   }
 
   return composeStyleRuntimePacksFromManifests(
-    packManifests.sort((a, b) => a.id.localeCompare(b.id)),
+    packManifests.sort((a, b) => compareStylePackIdsForDisplay(a.id, b.id)),
     presetManifests.sort((a, b) => a.id.localeCompare(b.id)),
   );
 }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-096
+packId: pack_14
+name: Mirror Oracle Archive
+category: 1. Mythic — Symbolism
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Archive chamber where mirrored tablets store prophecy fragments.
+  form_and_line: Repeating mirror arches, index shelves, and reflective corridors.
+  color_palette: Silvered gray, indigo, and ivory.
+  lighting_setup: Broken reflections and candle glimmers.
+  material_texture: Polished glass, archival paper, and lacquered wood.
+  render_quality: Lyrical concept art with precise symbolic layering.
+  spatial_distortion: Hall-of-mirrors depth with archival order.
+  atmosphere: Uncertainty, memory, and hidden knowledge.
+  key_features: Oracle mirrors, catalog tablets, and sealed volumes.
+  creative_brief: A symbolic library where mirrors preserve prophecies instead of faces.
+avoidRules: [photoreal, cheerful, neon, watermark, text, logo, empty-space]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-096.webp }
+attributes:
+  negativePrompt: photoreal, cheerful, neon, watermark, text, logo, empty-space
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

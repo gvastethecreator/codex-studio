@@ -16,7 +16,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
     id: "pack_16",
-    name: "Anime Classics & Prestige",
+    name: "Anime 03 — Anime Classics & Prestige",
     description: "Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.",
     presets: categoryPresets.flat(),
   };

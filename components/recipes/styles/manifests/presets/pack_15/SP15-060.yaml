@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-060
+packId: pack_15
+name: Zenith Deco Observatory
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: Astronomical institute wrapped in art-deco precision and civic pride.
+  form_and_line: Stepped dome base, radial instrument galleries, and finned towers.
+  color_palette: Midnight navy, brass, and ivory.
+  lighting_setup: Night sky contrast with subtle observatory perimeter glow.
+  material_texture: Polished brass mechanisms, stone decks, and frosted glass.
+  render_quality: Elegant scientific concept with balanced detail density.
+  spatial_distortion: Dome-up perspective emphasizing celestial alignment.
+  atmosphere: Intellectual grandeur and cosmic ambition.
+  key_features: Rotating dome slit, star chart hall, and brass telescope arrays.
+  creative_brief: A decopunk observatory where science is framed as urban pageantry.
+avoidRules: [photoreal, medieval, cyber-chaos, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-060.webp }
+attributes:
+  negativePrompt: photoreal, medieval, cyber-chaos, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

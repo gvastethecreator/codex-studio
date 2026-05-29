@@ -14,7 +14,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
     id: "pack_05",
-    name: "Anime Battle & Worlds",
+    name: "Anime 01 — Anime Battle & Worlds",
     description: "High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.",
     presets: categoryPresets.flat(),
   };

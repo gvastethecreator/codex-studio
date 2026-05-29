@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-105
+packId: pack_15
+name: Genome Garden Forum
+category: 3. Corepunk — Biopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, biopunk]
+visualDna:
+  aesthetic: Public forum embedded inside a genomic garden landscape.
+  form_and_line: Spiral forum seats, petal-like lab alcoves, and DNA trellis curves.
+  color_palette: Chlorophyll green, rose amber, and clean white.
+  lighting_setup: Bright diffused daylight with reflective leaf scatter.
+  material_texture: Living trellises, polished bio-glass, and soft soil beds.
+  render_quality: Elegant civic biotech concept art.
+  spatial_distortion: Amphitheater depth framed by botanical layers.
+  atmosphere: Debate, cultivation, and intelligent stewardship.
+  key_features: Genome benches, pollen displays, and bio-learning panels.
+  creative_brief: A biopunk forum where public discourse grows inside a carefully tended living garden of knowledge.
+avoidRules: [photoreal, sterile, cyberpunk, watermark, text, logo, flat-light]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-105.webp }
+attributes:
+  negativePrompt: photoreal, sterile, cyberpunk, watermark, text, logo, flat-light
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-biopunk, categoryName: 3. Corepunk — Biopunk, tags: [solarpunk-dreamscapes-vault, corepunk, biopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

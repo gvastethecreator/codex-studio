@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-091
+packId: pack_14
+name: Spiral of Falling Suns
+category: 4. Mythic — Cosmology & Omens
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, cosmology]
+visualDna:
+  aesthetic: Monumental spiral temple depicting successive cosmic collapses.
+  form_and_line: Helix terraces, solar disks, and descending altars.
+  color_palette: Burnt gold, obsidian, and violet haze.
+  lighting_setup: Sunset shafts and internal altar flames.
+  material_texture: Black stone, gilded reliefs, and ash deposits.
+  render_quality: Epic symbolic concept with strong silhouette rhythm.
+  spatial_distortion: Downward spiral perspective into ceremonial core.
+  atmosphere: Cataclysmic awe and ritual remembrance.
+  key_features: Fallen sun murals, collapse inscriptions, and ember pools.
+  creative_brief: A shrine preserving memory of worlds that burned before ours.
+avoidRules: [photoreal, whimsical, cyber-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-091.webp }
+attributes:
+  negativePrompt: photoreal, whimsical, cyber-neon, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

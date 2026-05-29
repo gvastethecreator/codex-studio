@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-027
+packId: pack_14
+name: Ashen Worldtree Gate
+category: 8. Mythic — Norse Sagas
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, norse-myth]
+visualDna:
+  aesthetic: Norse threshold citadel where cosmic roots split realms under winter twilight.
+  form_and_line: Rune-carved trunks, stave-arch buttresses, and spear-straight processional routes.
+  color_palette: Frost blue, ash gray, and raven black.
+  lighting_setup: Polar dusk and forge fire pockets creating stark warm-cold opposition.
+  material_texture: Ice-crusted timber, iron bindings, hide banners, and soot-dark stone.
+  render_quality: Epic concept frame emphasizing mythic scale and symbolic readability.
+  spatial_distortion: Monumental low-angle composition centered on a root-formed gate.
+  atmosphere: Stoic fatalism, oath-duty, and suspended apocalypse.
+  key_features: Worldtree roots, rune monoliths, longhouse watchfires, and shield walls.
+  creative_brief: A Norse frontier bastion guarding the passage between mortal and god-haunted realms.
+avoidRules: [photoreal, cartoon-goofy, high-saturation-pop, cyberpunk, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-027.webp }
+attributes:
+  negativePrompt: photoreal, cartoon-goofy, high-saturation-pop, cyberpunk, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

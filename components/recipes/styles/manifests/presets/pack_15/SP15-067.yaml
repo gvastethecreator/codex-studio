@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-067
+packId: pack_15
+name: Comet Salvage Yard
+category: 10. Corepunk — Raypunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
+visualDna:
+  aesthetic: Frontier scrapyard rebuilding broken explorers into new ships.
+  form_and_line: Debris stacks, crane arms, and repair bays.
+  color_palette: Rust orange, cobalt, and black.
+  lighting_setup: Arc welding sparks and floodlight cones.
+  material_texture: Scored metal, cable bundles, and burnt paint.
+  render_quality: Gritty pulp concept with rich prop detail.
+  spatial_distortion: Dense layered junkyard depth.
+  atmosphere: Ingenuity under pressure and outlaw pragmatism.
+  key_features: Salvage cranes, part bazaars, and retrofit pits.
+  creative_brief: A raypunk yard where every wreck becomes a second launch.
+avoidRules: [photoreal, cyberpunk-city, fantasy-castle, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-067.webp }
+attributes:
+  negativePrompt: photoreal, cyberpunk-city, fantasy-castle, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

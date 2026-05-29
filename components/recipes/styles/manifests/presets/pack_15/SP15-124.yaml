@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-124
+packId: pack_15
+name: Lagoon Relay Station
+category: 13. Corepunk — Seapunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+visualDna:
+  aesthetic: Relay station floating in a calm lagoon with signal rings and buoy antennas.
+  form_and_line: Circular relay disks, buoy stacks, and floating dock spokes.
+  color_palette: Lagoon blue, neon mint, and pearl.
+  lighting_setup: Twilight glow with mirrored lagoon reflections.
+  material_texture: Floating polymers, water glass, and brushed aluminum.
+  render_quality: Sleek coastal infrastructure with readable signal logic.
+  spatial_distortion: Centered relay hub with radiating lagoon spokes.
+  atmosphere: Connection, distance translation, and quiet power.
+  key_features: Relay disks, buoy antennas, and mirror-water channels.
+  creative_brief: A seapunk relay station where the lagoon itself carries and repeats the signal.
+avoidRules: [photoreal, stormy, industrial-rust, watermark, text, logo, murky]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-124.webp }
+attributes:
+  negativePrompt: photoreal, stormy, industrial-rust, watermark, text, logo, murky
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

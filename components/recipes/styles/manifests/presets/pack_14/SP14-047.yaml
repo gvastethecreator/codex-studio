@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-047
+packId: pack_14
+name: Harbor of Trireme Omens
+category: 5. Mythic — Greek Epics
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, greek-myth]
+visualDna:
+  aesthetic: War harbor where augury determines every voyage.
+  form_and_line: Pier grids, trireme prows, and temple beacons.
+  color_palette: Sea teal, bronze, and cloud gray.
+  lighting_setup: Dawn haze with beacon flare highlights.
+  material_texture: Salted wood, rope rigging, and stone docks.
+  render_quality: Maritime epic concept with clear silhouette flow.
+  spatial_distortion: Diagonal port perspective toward open horizon.
+  atmosphere: Strategic suspense and divine dependence.
+  key_features: Augur platform, omen braziers, and battle prows.
+  creative_brief: A Greek port where naval strategy begins with ritual interpretation.
+avoidRules: [photoreal, playful-cartoon, modern-ships, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-047.webp }
+attributes:
+  negativePrompt: photoreal, playful-cartoon, modern-ships, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

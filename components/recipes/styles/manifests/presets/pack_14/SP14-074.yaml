@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-074
+packId: pack_14
+name: Serpent Bridge of Ashes
+category: 8. Mythic — Norse Sagas
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, norse-myth]
+visualDna:
+  aesthetic: Ashen bridge spanning a void believed to house world-serpent breath.
+  form_and_line: Rope-span arches, carved serpent rails, and watch shrines.
+  color_palette: Ash black, pale cyan, and rust bronze.
+  lighting_setup: Backlit fog and ember shrine points.
+  material_texture: Burnt timber, iron links, and soot stone.
+  render_quality: High-drama environmental concept.
+  spatial_distortion: Bridge-depth framing over abyss.
+  atmosphere: Vertigo, mythic dread, and ritual transit.
+  key_features: Serpent carvings, ash braziers, and toll altar.
+  creative_brief: A crossing where travelers bargain with fear to reach sacred ground.
+avoidRules: [photoreal, comic, modern-bridge-tech, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-074.webp }
+attributes:
+  negativePrompt: photoreal, comic, modern-bridge-tech, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

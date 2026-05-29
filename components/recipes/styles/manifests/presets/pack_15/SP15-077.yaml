@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-077
+packId: pack_15
+name: Earthrise Commons Balcony
+category: 11. Corepunk — Lunarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+visualDna:
+  aesthetic: Civic balcony ring where residents gather for shared earthrise rituals.
+  form_and_line: Arc balconies, tiered seats, and radial amphitheater geometry.
+  color_palette: Indigo, pearl, and soft gold.
+  lighting_setup: Earthrise rimlight and low lantern arrays.
+  material_texture: Smooth stone composites, textile banners, and glass railings.
+  render_quality: Poetic architectural concept with high emotional clarity.
+  spatial_distortion: Panoramic arc framing cosmic horizon.
+  atmosphere: Reverence, community, and perspective.
+  key_features: Earthrise seats, story circles, and phase lanterns.
+  creative_brief: A lunarpunk plaza where cosmology is a daily social practice.
+avoidRules: [photoreal, militarized-tone, cyberpunk-grit, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-077.webp }
+attributes:
+  negativePrompt: photoreal, militarized-tone, cyberpunk-grit, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

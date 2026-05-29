@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-062
+packId: pack_14
+name: Calabash Sky Observatory
+category: 6. Mythic — African Cosmologies
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, african-myth]
+visualDna:
+  aesthetic: Star observatory built around ceremonial calabash symbolism.
+  form_and_line: Dome rings, star ladders, and engraved platforms.
+  color_palette: Midnight blue, clay, and brass.
+  lighting_setup: Low firelight and celestial highlights.
+  material_texture: Clay plaster, etched brass, and woven mats.
+  render_quality: Scholarly-ritual concept composition.
+  spatial_distortion: Upward gaze perspective into observatory vault.
+  atmosphere: Curiosity, reverence, and ancestral science.
+  key_features: Star chart walls, ritual bowls, and alignment pillars.
+  creative_brief: A knowledge sanctuary where astronomy and myth are one craft.
+avoidRules: [photoreal, cartoon, neon-tech, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-062.webp }
+attributes:
+  negativePrompt: photoreal, cartoon, neon-tech, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

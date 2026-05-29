@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-053
+packId: pack_15
+name: Chevron Diplomatic Hotel
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: Elite diplomatic hotel where protocol meets machine-age luxury.
+  form_and_line: Chevron façades, tiered balconies, and formal entrance canopies.
+  color_palette: Onyx, champagne gold, and deep green.
+  lighting_setup: Warm marquee wash and corridor uplights.
+  material_texture: Marble veneers, brass inlays, and mirrored panels.
+  render_quality: Premium hospitality concept with precise decor hierarchy.
+  spatial_distortion: Lobby depth perspective through repeated arches.
+  atmosphere: Polished intrigue and ceremonial hospitality.
+  key_features: Grand concierge desk, private salons, and coded elevator banks.
+  creative_brief: A decopunk hotel designed to host negotiations disguised as galas.
+avoidRules: [photoreal, rustic, cyberpunk-slum, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-053.webp }
+attributes:
+  negativePrompt: photoreal, rustic, cyberpunk-slum, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-113
+packId: pack_14
+name: Silent Bell Crypt
+category: 2. Mythic — Ritual Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Crypt chamber anchored by suspended silent bells.
+  form_and_line: Heavy crypt arches, bell silhouettes, and repeating niches.
+  color_palette: Stone gray, bronze patina, and smoke black.
+  lighting_setup: Dim crypt light with focused bell-edge highlights.
+  material_texture: Chiseled stone, aged bronze, and cobwebbed cloth.
+  render_quality: Monumental mythic stillness with strong contrast.
+  spatial_distortion: Deep crypt tunnel ending in a bell altar.
+  atmosphere: Mourning, suspension, and unspoken warning.
+  key_features: Silent bells, crypt niches, and ritual chainwork.
+  creative_brief: A ritual crypt where bells hang in silence as a warning, not a sound.
+avoidRules: [photoreal, cute, neon, watermark, text, logo, bright-white]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-113.webp }
+attributes:
+  negativePrompt: photoreal, cute, neon, watermark, text, logo, bright-white
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

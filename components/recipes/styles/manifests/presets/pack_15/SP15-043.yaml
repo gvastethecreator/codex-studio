@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-043
+packId: pack_15
+name: Reactor Wedding Pavilion
+category: 8. Corepunk — Atompunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+visualDna:
+  aesthetic: Ceremonial venue where atomic-age design frames communal rites and celebrations.
+  form_and_line: Spiral aisle ramps, atom-shaped canopy ribs, and circular altars.
+  color_palette: Pearl white, pastel mint, and warm brass.
+  lighting_setup: Soft ceremony uplight and reactor core ambient shimmer.
+  material_texture: Gloss ceramic surfaces, satin drapes, and polished alloy rails.
+  render_quality: Romantic retro-future concept with fine material definition.
+  spatial_distortion: Center-focused composition drawing eye to ceremony platform.
+  atmosphere: Tender futurism, social ritual, and engineered elegance.
+  key_features: Isotope ring pavilion, atom floral arches, and radiant dance floor.
+  creative_brief: An atompunk ceremonial hall that turns civic optimism into shared intimacy.
+avoidRules: [photoreal, dystopian-bunker, medieval, grunge-horror, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-043.webp }
+attributes:
+  negativePrompt: photoreal, dystopian-bunker, medieval, grunge-horror, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

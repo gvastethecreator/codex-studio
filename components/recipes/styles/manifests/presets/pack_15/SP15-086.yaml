@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-086
+packId: pack_15
+name: Pendulum Court Ballroom
+category: 2. Corepunk — Clockpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+visualDna:
+  aesthetic: Ballroom ruled by pendulum logic and courtly mechanics.
+  form_and_line: Sweeping staircases, hanging weights, and gear chandeliers.
+  color_palette: Champagne gold, burgundy, and midnight blue.
+  lighting_setup: Crystal chandeliers and reflected metal glints.
+  material_texture: Velvet, brass, marble, and smoked glass.
+  render_quality: Luxurious interior concept with strong symmetry.
+  spatial_distortion: Rotational composition around a central dance clock.
+  atmosphere: Ceremonial motion and elegant precision.
+  key_features: Pendulum columns, timer balconies, and waltz automata.
+  creative_brief: A clockpunk ballroom where every dance step is mechanically coordinated.
+avoidRules: [photoreal, brutal-industrial, cyberpunk-noise, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-086.webp }
+attributes:
+  negativePrompt: photoreal, brutal-industrial, cyberpunk-noise, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

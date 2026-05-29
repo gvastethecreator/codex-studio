@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-099
+packId: pack_15
+name: Canopy Tram Exchange
+category: 1. Corepunk — Solarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk]
+visualDna:
+  aesthetic: Elevated tram terminal woven through a living canopy district.
+  form_and_line: Curving transit beams, vine trellises, and airy platform arcs.
+  color_palette: Leaf green, sunlit cream, and warm terracotta.
+  lighting_setup: Filtered daylight through layered canopy leaves.
+  material_texture: Bamboo-laminate, glass, woven fiber, and brushed steel.
+  render_quality: Optimistic city concept with crisp infrastructure detail.
+  spatial_distortion: Broad transit perspective leading through green frames.
+  atmosphere: Mobility, civic care, and breathable urban optimism.
+  key_features: Tram platforms, canopy bridges, and solar wayfinding panels.
+  creative_brief: A solarpunk transit node where mobility is shaded, quiet, and beautifully integrated with nature.
+avoidRules: [photoreal, dystopian, heavy-neon, watermark, text, logo, grime]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-099.webp }
+attributes:
+  negativePrompt: photoreal, dystopian, heavy-neon, watermark, text, logo, grime
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

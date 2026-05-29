@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-054
+packId: pack_15
+name: Deco Submarine Club
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: Nautical-themed social club for machine-age elites and inventors.
+  form_and_line: Porthole motifs, curved staircases, and fan ceiling ribs.
+  color_palette: Navy, brass, and ivory.
+  lighting_setup: Low ambient sconces and focused table pools.
+  material_texture: Polished teak, brass trim, and leather seating.
+  render_quality: Intimate interior concept with rich material contrast.
+  spatial_distortion: Curved lounge plan guiding eye to central bar.
+  atmosphere: Confidential luxury and engineered nostalgia.
+  key_features: Brass bar, sonar murals, and private cigar booths.
+  creative_brief: A decopunk club where naval mythology becomes social currency.
+avoidRules: [photoreal, cyber-neon, medieval, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-054.webp }
+attributes:
+  negativePrompt: photoreal, cyber-neon, medieval, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

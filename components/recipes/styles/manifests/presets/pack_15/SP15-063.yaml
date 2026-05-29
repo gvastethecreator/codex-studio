@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-063
+packId: pack_15
+name: Asteroid Customs Gate
+category: 10. Corepunk — Raypunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
+visualDna:
+  aesthetic: Bureaucratic outpost carved into a trade asteroid.
+  form_and_line: Pressure corridors, cargo gantries, and lock chambers.
+  color_palette: Rust, warning yellow, and vacuum black.
+  lighting_setup: Industrial strips and viewport rim glow.
+  material_texture: Bolted plates, hazard paint, and dusted alloy.
+  render_quality: Functional scifi concept with bold silhouettes.
+  spatial_distortion: Tunnel depth toward inspection bay.
+  atmosphere: Procedural tension and frontier law.
+  key_features: Customs scanners, ray turrets, and stamp kiosks.
+  creative_brief: A raypunk checkpoint where paperwork can be deadlier than blasters.
+avoidRules: [photoreal, cyberpunk-neon-city, medieval, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-063.webp }
+attributes:
+  negativePrompt: photoreal, cyberpunk-neon-city, medieval, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

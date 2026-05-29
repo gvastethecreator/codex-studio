@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-043
+packId: pack_14
+name: Storm Drum Shrine Pass
+category: 7. Mythic — Japanese Yokai & Kami
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+visualDna:
+  aesthetic: Mountain pass where drum rites summon storm kami for protection.
+  form_and_line: Cliff pass gates, drum towers, and rope-bound warning posts.
+  color_palette: Slate blue, thunder white, and charcoal black.
+  lighting_setup: Pre-storm sky flashes and brazier counterlight.
+  material_texture: Rain-soaked rock, stretched hide drums, and weathered timber pylons.
+  render_quality: Dynamic weather concept with strong environmental motion.
+  spatial_distortion: Diagonal pass perspective amplifying wind force.
+  atmosphere: Urgent preparation, sacred rhythm, and climatic tension.
+  key_features: Thunder drums, storm wards, and cliff shrine sentries.
+  creative_brief: A defensive shrine pass where drum cadence is a meteorological command.
+avoidRules: [photoreal, bright-cartoon, sci-fi-city, modern-military, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-043.webp }
+attributes:
+  negativePrompt: photoreal, bright-cartoon, sci-fi-city, modern-military, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

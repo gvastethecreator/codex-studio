@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-050
+packId: pack_15
+name: Brass Cinema Esplanade
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: Grand entertainment boulevard blending film culture and power aesthetics.
+  form_and_line: Marquee facades, fan motifs, and layered promenades.
+  color_palette: Midnight blue, amber gold, and ruby accents.
+  lighting_setup: Theater marquees and reflective wet pavement glow.
+  material_texture: Brass rails, velvet banners, and enamel signage.
+  render_quality: Cinematic city concept with strong nighttime mood.
+  spatial_distortion: Long boulevard axis with repeating façades.
+  atmosphere: Stylish spectacle and social ritual.
+  key_features: Cinema palaces, radio kiosks, and lit deco towers.
+  creative_brief: A decopunk avenue where culture industries project civic identity.
+avoidRules: [photoreal, medieval, cyberpunk-grit, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-050.webp }
+attributes:
+  negativePrompt: photoreal, medieval, cyberpunk-grit, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

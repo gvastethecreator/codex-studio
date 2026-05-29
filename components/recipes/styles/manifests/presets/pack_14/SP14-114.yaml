@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-114
+packId: pack_14
+name: Crimson Ledger Sanctum
+category: 2. Mythic — Ritual Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Sanctum of records and vows written in crimson inks.
+  form_and_line: Ledger towers, upright files, and altar table symmetry.
+  color_palette: Crimson, charcoal, and antique paper.
+  lighting_setup: Warm desk lamps and shadowed shelf depths.
+  material_texture: Threaded bindings, thick paper, and lacquered wood.
+  render_quality: Scholarly noir with ritual gravitas.
+  spatial_distortion: Library sanctum stretching upward into darkness.
+  atmosphere: Accounting, judgment, and ceremonial order.
+  key_features: Blood-red ledgers, ritual stamps, and sealed drawers.
+  creative_brief: A ritual archive where every vow is kept as an illuminated ledger.
+avoidRules: [photoreal, pastel, cartoon, watermark, text, logo, gloss]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-114.webp }
+attributes:
+  negativePrompt: photoreal, pastel, cartoon, watermark, text, logo, gloss
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

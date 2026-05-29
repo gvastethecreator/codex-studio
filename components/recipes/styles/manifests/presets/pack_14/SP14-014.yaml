@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-014
+packId: pack_14
+name: Aegean Titan Tribunal
+category: 3. Mythic — Pantheons & Legends
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, greek-myth]
+visualDna:
+  aesthetic: Greek myth tribunal noir where titanic law is pronounced under storm-lit marble.
+  form_and_line: Colonnade symmetry, toga-armored silhouettes, and thunderbolt sigil geometry.
+  color_palette: Aegean blue-black, weathered marble ivory, and oxidized gold.
+  lighting_setup: Lightning flashes with torch basin underlight.
+  material_texture: Cracked marble steps, bronze laurel crowns, wet stone dust, and ceremonial drapery.
+  render_quality: Prestige cinematic concept art with mythic scale and sharp icon readability.
+  spatial_distortion: Amphitheater perspective rising toward a central judgment dais.
+  atmosphere: Epic authority, ancestral dread, and juridical grandeur.
+  key_features: Titan masks, oath tablets, storm-lashed pillars, and sacrificial braziers.
+  creative_brief: A stormbound court where Olympian and chthonic powers negotiate judgment over a fractured world.
+avoidRules: [photoreal, cheerful, modern-casual, flat-light, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-014.webp }
+attributes:
+  negativePrompt: photoreal, cheerful, modern-casual, flat-light, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

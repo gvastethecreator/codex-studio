@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-038
+packId: pack_14
+name: Serpent Shrine Cliffpath
+category: 7. Mythic — Japanese Yokai & Kami
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+visualDna:
+  aesthetic: Cliffside serpent-kami route lined with protective shrines and oath tablets.
+  form_and_line: Zigzag cliff stairs, cliff torii, and coiling carved balustrades.
+  color_palette: Slate green, fog gray, and cinnabar accents.
+  lighting_setup: Side-lit fog banks and shrine candle nodes.
+  material_texture: Eroded rock, lacquered wood rails, and damp rope bindings.
+  render_quality: Atmospheric concept art with perilous path legibility.
+  spatial_distortion: Vertical zigzag composition over abyss depth.
+  atmosphere: Awe, vertigo, and sacred caution.
+  key_features: Serpent carvings, oath plaques, and cliffside spirit altars.
+  creative_brief: A mountain shrine trail where each step renews a pact with a river serpent deity.
+avoidRules: [photoreal, cheerful-cartoon, cyberpunk-city, modern-hiking-gear, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-038.webp }
+attributes:
+  negativePrompt: photoreal, cheerful-cartoon, cyberpunk-city, modern-hiking-gear, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-015
+packId: pack_14
+name: Worldroot Oathforge
+category: 3. Mythic — Pantheons & Legends
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, norse-myth]
+visualDna:
+  aesthetic: Norse mythic forge-noir beneath an immense world tree and omen sky.
+  form_and_line: Rune-carved anvils, layered fur silhouettes, and trunk-to-vault verticality.
+  color_palette: Frost steel, ember orange, and raven black.
+  lighting_setup: Forge core glow against glacial overcast rim light.
+  material_texture: Hammered iron, carved ash wood, snow crust, and smoked leather.
+  render_quality: High-detail environment key art with robust silhouette legibility.
+  spatial_distortion: Radial forge composition anchored by worldroot pillars and descending runic steps.
+  atmosphere: Stoic resolve, ancestral weight, and apocalyptic preparedness.
+  key_features: Rune anvils, oath rings, ravens, and worldroot sap braziers.
+  creative_brief: A covenant forge where prophecies are struck into weapons and treaties before the last winter.
+avoidRules: [photoreal, tropical, cartoon, glossy-sci-fi, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-015.webp }
+attributes:
+  negativePrompt: photoreal, tropical, cartoon, glossy-sci-fi, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

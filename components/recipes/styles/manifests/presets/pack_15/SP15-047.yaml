@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-047
+packId: pack_15
+name: Reactor Parade Avenue
+category: 8. Corepunk — Atompunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+visualDna:
+  aesthetic: Ceremonial boulevard for annual technology parades and civic rituals.
+  form_and_line: Long avenue axis, reviewing stands, and atom-obelisk nodes.
+  color_palette: Cerulean, white, and celebratory red accents.
+  lighting_setup: Day parade sunlight with reflective metallic glints.
+  material_texture: Polished concrete, painted steel, and glossy parade vehicles.
+  render_quality: Epic wide scene with clear crowd and architecture segmentation.
+  spatial_distortion: Processional depth perspective amplifying scale.
+  atmosphere: National pride, theatrical governance, and curated futurity.
+  key_features: Atom obelisks, marching turbines, and civic tech floats.
+  creative_brief: An atompunk avenue where public rituals celebrate engineering as identity.
+avoidRules: [photoreal, dystopian-riot, medieval, grim-horror, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-047.webp }
+attributes:
+  negativePrompt: photoreal, dystopian-riot, medieval, grim-horror, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -4,6 +4,7 @@ import type {
   StylePresetManifest,
 } from './styles/manifestTypes';
 import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
+import { getStylePackDisplayName } from './styles/packOrdering';
 
 export interface StyleManifestGraphValidation {
   valid: boolean;
@@ -442,7 +443,7 @@ export function composeStyleRuntimePacksFromManifests(
 
   return packManifests.map((pack) => ({
     id: pack.id,
-    name: pack.name,
+    name: getStylePackDisplayName(pack.id, pack.name),
     description: pack.description,
     presets: pack.presetRefs.flatMap((ref): StyleRuntimePreset[] => {
       const preset = presetsByRef.get(ref);

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-123
+packId: pack_15
+name: Ocean Signal Conservatory
+category: 13. Corepunk — Seapunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+visualDna:
+  aesthetic: Conservatory of ocean signals and wave-reactive botanical systems.
+  form_and_line: Glass conservatory shell, signal towers, and flowing garden rings.
+  color_palette: Sea glass, turquoise, and blush coral.
+  lighting_setup: Sunlit water refractions and deep-blue aquarium glow.
+  material_texture: Glass, kelp mesh, and polished shell surfaces.
+  render_quality: Luminous seapunk conservatory with crisp flora detail.
+  spatial_distortion: Conservatory dome with concentric wave gardens.
+  atmosphere: Curiosity, translation, and marine harmony.
+  key_features: Signal fronds, tide instruments, and wave blooms.
+  creative_brief: A seapunk conservatory where the ocean’s signals are grown into living botanical language.
+avoidRules: [photoreal, bleak, industrial, watermark, text, logo, murky]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-123.webp }
+attributes:
+  negativePrompt: photoreal, bleak, industrial, watermark, text, logo, murky
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

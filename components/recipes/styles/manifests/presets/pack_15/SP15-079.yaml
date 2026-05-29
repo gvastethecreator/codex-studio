@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-079
+packId: pack_15
+name: Moonwater Clinic Arcade
+category: 11. Corepunk — Lunarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+visualDna:
+  aesthetic: Health district integrating hydrotherapy, biolab care, and community governance.
+  form_and_line: Arcaded clinics, basin courtyards, and modular healing pods.
+  color_palette: Aqua, white, and rose beige.
+  lighting_setup: Diffused health lighting and reflective water highlights.
+  material_texture: Sterile ceramics, algae glass, and soft textiles.
+  render_quality: Human-centered concept with clear service zoning.
+  spatial_distortion: Courtyard-centric plan with layered treatment wings.
+  atmosphere: Care, trust, and shared resilience.
+  key_features: Moonwater basins, med pods, and public health kiosks.
+  creative_brief: A lunarpunk clinic where medicine is embedded in daily public space.
+avoidRules: [photoreal, dystopian-lab, cyber-grime, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-079.webp }
+attributes:
+  negativePrompt: photoreal, dystopian-lab, cyber-grime, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

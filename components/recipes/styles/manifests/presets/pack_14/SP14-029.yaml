@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-029
+packId: pack_14
+name: Rune Forge Longnight
+category: 8. Mythic — Norse Sagas
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, norse-myth]
+visualDna:
+  aesthetic: Winter forge sanctum where destiny-runes are hammered into war relics.
+  form_and_line: Heavy anvil blocks, ribbed smoke stacks, and knotwork structural beams.
+  color_palette: Coal black, ember orange, and cold steel blue.
+  lighting_setup: Furnace glow and snow-reflected moonlight producing high contrast drama.
+  material_texture: Scorched iron, rough timber, riveted plates, and drifting ash.
+  render_quality: High-detail key art with tactile metalcraft emphasis.
+  spatial_distortion: Deep workshop corridor perspective ending at a ritual forge heart.
+  atmosphere: Laborious reverence, survival pride, and pre-battle stillness.
+  key_features: Rune anvils, wolf-skin capes, oath blades, and smoke prayer vents.
+  creative_brief: A saga forge where each weapon is born with a name, debt, and prophecy.
+avoidRules: [photoreal, playful-cartoon, flashy-neon, modern-factory-tech, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-029.webp }
+attributes:
+  negativePrompt: photoreal, playful-cartoon, flashy-neon, modern-factory-tech, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

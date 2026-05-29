@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-035
+packId: pack_15
+name: Abyssal Neon Reef
+category: 13. Corepunk — Seapunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+visualDna:
+  aesthetic: Deep-sea settlement lit by engineered reefs and synthwave ocean rituals.
+  form_and_line: Dome habitats, pressure-lock corridors, and branching reef antennas.
+  color_palette: Deep ultramarine, neon violet, and electric cyan.
+  lighting_setup: Pulsing bioluminescence and submersible beam cones cutting the dark.
+  material_texture: Pressure glass, bio-resin shells, and mineral-encrusted support frames.
+  render_quality: Cinematic underwater concept with clear depth layering.
+  spatial_distortion: Vertical descent composition from surface rigs to abyssal habitat rings.
+  atmosphere: Immersive mystery, subaquatic nightlife, and adaptive resilience.
+  key_features: Neon coral arrays, sub docks, and sonar-lit gathering plazas.
+  creative_brief: A seapunk abyss city where culture and infrastructure evolve with living reefs.
+avoidRules: [photoreal, dry-desert-elements, medieval-castle, bland-neutral, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-035.webp }
+attributes:
+  negativePrompt: photoreal, dry-desert-elements, medieval-castle, bland-neutral, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

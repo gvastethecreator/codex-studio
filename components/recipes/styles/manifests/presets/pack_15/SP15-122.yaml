@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-122
+packId: pack_15
+name: Waveforge Dockyard
+category: 13. Corepunk — Seapunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+visualDna:
+  aesthetic: Dockyard where waves are shaped through elegant marine fabrication.
+  form_and_line: Work dock arms, wave-shaping fins, and modular platforms.
+  color_palette: Teal, chrome, and coral.
+  lighting_setup: Bright sea light with reflective wet steel.
+  material_texture: Marine-grade metal, translucent fins, and sea-slick stone.
+  render_quality: Technical seapunk infrastructure with playful polish.
+  spatial_distortion: Industrial dock geometry softened by wave curves.
+  atmosphere: Making, flow, and oceanic adaptation.
+  key_features: Wave fins, fabrication cradles, and harbor hands.
+  creative_brief: A seapunk dockyard where marine mechanics and wavecraft are one practice.
+avoidRules: [photoreal, rust, diesel, watermark, text, logo, sludge]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-122.webp }
+attributes:
+  negativePrompt: photoreal, rust, diesel, watermark, text, logo, sludge
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

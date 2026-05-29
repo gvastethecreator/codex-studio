@@ -2,23 +2,23 @@ schemaVersion: 1
 id: SP14-005
 packId: pack_14
 name: Marble Wraith Banquet
-category: 1. Mythic Noir
+category: 1. Mythic — Symbolism
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Ghostly banquet of petrified nobility.
-  form_and_line: Hieratic figures, an extended table, and restrained baroque composition.
-  color_palette: Marfil, negro vino y gris humo.
-  lighting_setup: Low candles reflected on polished marble.
-  material_texture: Veined marble, antique silver, and withered flowers.
-  render_quality: Dark editorial illustration with funerary luxury.
-  spatial_distortion: Long-table perspective that pulls the eye inward.
-  atmosphere: Ceremonial silence, decadence, and omen.
-  key_features: Spectral guests, blackened fruit, ceremonial tableware.
-  creative_brief: A still banquet that feels more cursed the longer you look.
+  aesthetic: Aristocratic death-feast noir where etiquette persists beyond mortality.
+  form_and_line: Rigid seated silhouettes, knife-and-goblet rhythm, and elongated axial table choreography.
+  color_palette: Bone ivory, coagulated wine black, and smoked pewter gray.
+  lighting_setup: Candle troughs with mirrored marble bounce and deep peripheral falloff.
+  material_texture: Veined marble slabs, tarnished heirloom silver, oxidized candelabra, and desiccated floral garlands.
+  render_quality: Prestige editorial key art with high micro-detail and controlled tonal compression.
+  spatial_distortion: Vaulted banquet hall vanishing point that tunnels attention toward a silent host seat.
+  atmosphere: Ritualized decay, dynastic arrogance, and prophetic unease.
+  key_features: Petrified courtiers, carbonized fruit centerpieces, oath-cutlery place settings, empty sovereign chair.
+  creative_brief: A noble house continues its eternal supper in stone-bound silence, as if the curse is enforced through perfect table protocol.
 avoidRules: [photoreal, comedy, candy-colors, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-005.webp }
 attributes:
   negativePrompt: photoreal, comedy, candy-colors, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

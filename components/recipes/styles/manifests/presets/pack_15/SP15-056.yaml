@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-056
+packId: pack_15
+name: Art Deco Airfield
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: Elegant terminal for luxury airliners and diplomatic arrivals.
+  form_and_line: Wing-like canopies, tower fins, and runway symmetry.
+  color_palette: Sky gray, brass, and cream white.
+  lighting_setup: Golden-hour runway glints and terminal sconces.
+  material_texture: Riveted metal, polished stone, and enamel signs.
+  render_quality: Expansive transport concept with period detail.
+  spatial_distortion: Runway vanishing lines under monumental terminal.
+  atmosphere: Prestige travel and geopolitical theater.
+  key_features: Deco control tower, ceremonial ramps, and monogrammed lounges.
+  creative_brief: A decopunk airport where mobility is staged as aristocratic performance.
+avoidRules: [photoreal, gritty-cyber, medieval, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-056.webp }
+attributes:
+  negativePrompt: photoreal, gritty-cyber, medieval, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

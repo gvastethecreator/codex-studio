@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-118
+packId: pack_15
+name: Kelp Arcade Boardwalk
+category: 13. Corepunk — Seapunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+visualDna:
+  aesthetic: Boardwalk arcade wrapped in kelp forests and shimmering game modules.
+  form_and_line: Pier rails, arcade pavilions, and swaying kelp strands.
+  color_palette: Neon teal, lime, and bubblegum coral.
+  lighting_setup: Sunset neon mixed with underwater glow.
+  material_texture: Wet decking, translucent plastic, and kelp fiber.
+  render_quality: Bright concept art with arcade clarity.
+  spatial_distortion: Pier perspective extending into underwater columns.
+  atmosphere: Fun, drift, and coastal exuberance.
+  key_features: Kelp cabinets, boardwalk lanterns, and wave game pods.
+  creative_brief: A seapunk boardwalk where the arcade floats half in the sea and half in light.
+avoidRules: [photoreal, grimdark, industrial, watermark, text, logo, foggy]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-118.webp }
+attributes:
+  negativePrompt: photoreal, grimdark, industrial, watermark, text, logo, foggy
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

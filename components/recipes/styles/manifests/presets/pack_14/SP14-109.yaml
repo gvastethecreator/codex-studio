@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-109
+packId: pack_14
+name: Blackwater Confessional
+category: 2. Mythic — Ritual Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Confessional chamber hovering over dark water channels.
+  form_and_line: Narrow vertical stall forms, water reflections, and arch slits.
+  color_palette: Tar black, tarnished silver, and deep teal.
+  lighting_setup: Reflected water shimmer and slit-window light.
+  material_texture: Damp stone, brushed metal, and polished confession screens.
+  render_quality: Mysterious interior concept with clean symbolic contrast.
+  spatial_distortion: Repeated stall rhythm over a submerged void.
+  atmosphere: Admission, secrecy, and ritual cleansing.
+  key_features: Confessional screens, blackwater basin, and whisper grilles.
+  creative_brief: A ritual confessional where the floor beneath the penitent is a dark moving tide.
+avoidRules: [photoreal, cute, pastel, watermark, text, logo, daytime]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-109.webp }
+attributes:
+  negativePrompt: photoreal, cute, pastel, watermark, text, logo, daytime
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

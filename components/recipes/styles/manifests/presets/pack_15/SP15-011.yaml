@@ -2,23 +2,23 @@ schemaVersion: 1
 id: SP15-011
 packId: pack_15
 name: Biolumina Night Grid
-category: 1. Solarpunk Dreamscapes
+category: 3. Corepunk — Biopunk
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+tags: [solarpunk-dreamscapes-vault, corepunk, biopunk]
 visualDna:
-  aesthetic: Nocturnal solarpunk cityscape powered by living light ecologies.
-  form_and_line: Layered terraces, soft conductive vines, and lantern-like civic nodes.
-  color_palette: Electric cyan, moss green, and midnight indigo.
-  lighting_setup: Ambient bioluminescent glow with subtle moon spill and reflected pools.
-  material_texture: Moist stone, translucent bio-panels, and vine-wrapped conductors.
-  render_quality: Atmospheric night concept art with clean wayfinding and legibility.
-  spatial_distortion: Vertical neighborhood depth with luminous pathways linking levels.
-  atmosphere: Calm vitality, collective safety, and wonder without spectacle excess.
-  key_features: Living light arteries, communal night plaza, eco-lantern infrastructure.
-  creative_brief: A solarpunk night scene where energy distribution appears as a beautiful, intelligible living network.
+  aesthetic: Community biopunk night district where engineered organisms provide light, data, and care services.
+  form_and_line: Bio-reactor terraces, vascular conduit arcs, and pod-like neighborhood hubs.
+  color_palette: Fluorescent cyan, chlorophyll green, and deep midnight indigo.
+  lighting_setup: Pulsed bioluminescent emissions with damp ground reflections and moon spill.
+  material_texture: Gel membranes, porous bioceramics, wet stone, and mycelial conduits.
+  render_quality: Atmospheric concept art with crisp biotech legibility and safe-path readability.
+  spatial_distortion: Layered vertical district depth linked by glowing metabolic corridors.
+  atmosphere: Nurturing experimentation, civic trust, and living-system intelligence.
+  key_features: Gene-lit avenues, communal wetlabs, symbiotic canopy nodes, and bio-signal kiosks.
+  creative_brief: A biopunk neighborhood where public biotech replaces brittle utilities and creates a visibly living urban metabolism.
 avoidRules: [photoreal, cyberpunk-grime, violent-neon, blackout-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-011.webp }
 attributes:
   negativePrompt: photoreal, cyberpunk-grime, violent-neon, blackout-chaos, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-biopunk, categoryName: 3. Corepunk — Biopunk, tags: [solarpunk-dreamscapes-vault, corepunk, biopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

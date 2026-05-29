@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-022
+packId: pack_15
+name: Gilded Dynamo Atrium
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: Art-deco luxury fused with industrial power and metropolitan ceremony.
+  form_and_line: Chevron ribs, stepped vaults, and streamlined elevator cores.
+  color_palette: Black lacquer, brass gold, and emerald accents.
+  lighting_setup: Chandelier shafts and uplighting along geometric relief walls.
+  material_texture: Polished brass, marble, velvet insets, and etched glass.
+  render_quality: Opulent concept visualization with precise ornamental geometry.
+  spatial_distortion: Grand central atrium perspective with layered balconies and depth.
+  atmosphere: Sophisticated ambition, urbane spectacle, and controlled excess.
+  key_features: Deco turbine murals, golden clockwork lifts, and grand civic dais.
+  creative_brief: A decopunk power hall where elegance is engineered as public propaganda.
+avoidRules: [photoreal, minimal-scandi, rustic-farm, neon-chaos, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-022.webp }
+attributes:
+  negativePrompt: photoreal, minimal-scandi, rustic-farm, neon-chaos, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

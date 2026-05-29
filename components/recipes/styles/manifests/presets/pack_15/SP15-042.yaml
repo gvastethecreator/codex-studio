@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-042
+packId: pack_15
+name: Helium Skyline Decks
+category: 8. Corepunk — Atompunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+visualDna:
+  aesthetic: Elevated skyline promenades suspended by helium architecture and atom-era engineering.
+  form_and_line: Cantilever decks, observation pylons, and buoyant pod stations.
+  color_palette: Powder blue, white metal, and citrus accents.
+  lighting_setup: High-altitude sunlight with anti-glare deck strips.
+  material_texture: Lightweight alloys, translucent membranes, and anti-slip polymers.
+  render_quality: Architectural concept visualization with airy scale.
+  spatial_distortion: Dramatic high-angle perspective over layered decks.
+  atmosphere: Lightness, thrill, and infrastructural wonder.
+  key_features: Helium lift towers, cloud gardens, and reactor-fed sky trams.
+  creative_brief: An atompunk skyline where public space floats above traditional street constraints.
+avoidRules: [photoreal, dystopian-collapse, medieval, cyberpunk-grit, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-042.webp }
+attributes:
+  negativePrompt: photoreal, dystopian-collapse, medieval, cyberpunk-grit, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

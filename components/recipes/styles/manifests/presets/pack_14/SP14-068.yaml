@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-068
+packId: pack_14
+name: Ancestor Fire Parliament
+category: 6. Mythic — African Cosmologies
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, african-myth]
+visualDna:
+  aesthetic: Night parliament where elders legislate beside ancestral flames.
+  form_and_line: Circular council ring, stepped seats, and fire channels.
+  color_palette: Ebony, ember, and bronze.
+  lighting_setup: Central bonfire and perimeter torch halos.
+  material_texture: Stone benches, carved staffs, and woven cloaks.
+  render_quality: Political-ritual concept with strong character staging.
+  spatial_distortion: Circular focus around central flame.
+  atmosphere: Debate, memory, and collective accountability.
+  key_features: Council staves, fire pit parliament, and ancestry murals.
+  creative_brief: A legislative rite where law is negotiated under ancestral witness.
+avoidRules: [photoreal, goofy, neon-sci-fi, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-068.webp }
+attributes:
+  negativePrompt: photoreal, goofy, neon-sci-fi, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

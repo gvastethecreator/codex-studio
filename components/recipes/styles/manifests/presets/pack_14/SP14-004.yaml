@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP14-004
 packId: pack_14
 name: Warden of Glass Thorns
-category: 1. Mythic Noir
+category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
@@ -21,4 +21,4 @@ avoidRules: [photoreal, cartoonish, low-detail, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-004.webp }
 attributes:
   negativePrompt: photoreal, cartoonish, low-detail, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
