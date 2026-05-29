@@ -36,9 +36,21 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
   },
   {
     "id": "pack_05",
-    "name": "Anime Battle & Worlds",
+    "name": "Anime 01 — Anime Battle & Worlds",
     "description": "High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.",
     "presetCount": 135
+  },
+  {
+    "id": "pack_13",
+    "name": "Anime 02 — Anime Character & Lifestyle",
+    "description": "Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.",
+    "presetCount": 132
+  },
+  {
+    "id": "pack_16",
+    "name": "Anime 03 — Anime Classics & Prestige",
+    "description": "Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.",
+    "presetCount": 140
   },
   {
     "id": "pack_06",
@@ -83,28 +95,16 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     "presetCount": 80
   },
   {
-    "id": "pack_13",
-    "name": "Anime Character & Lifestyle",
-    "description": "Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.",
-    "presetCount": 132
-  },
-  {
     "id": "pack_14",
     "name": "Mythic Noir Curated Vault",
     "description": "A curated pack of dark, elegant, and mythic visual directions designed for a strong, authorial identity.",
-    "presetCount": 12
+    "presetCount": 123
   },
   {
     "id": "pack_15",
     "name": "Solarpunk Dreamscapes Vault",
     "description": "A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.",
-    "presetCount": 12
-  },
-  {
-    "id": "pack_16",
-    "name": "Anime Classics & Prestige",
-    "description": "Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.",
-    "presetCount": 140
+    "presetCount": 127
   }
 ] as GeneratedStyleRuntimePackSummary[];
 
@@ -114,6 +114,8 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
   "pack_03": () => import('./styleRuntimePacks.generated/pack_03').then((module) => module.loadGeneratedStyleRuntimePack()),
   "pack_04": () => import('./styleRuntimePacks.generated/pack_04').then((module) => module.loadGeneratedStyleRuntimePack()),
   "pack_05": () => import('./styleRuntimePacks.generated/pack_05').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_13": () => import('./styleRuntimePacks.generated/pack_13').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_16": () => import('./styleRuntimePacks.generated/pack_16').then((module) => module.loadGeneratedStyleRuntimePack()),
   "pack_06": () => import('./styleRuntimePacks.generated/pack_06').then((module) => module.loadGeneratedStyleRuntimePack()),
   "pack_07": () => import('./styleRuntimePacks.generated/pack_07').then((module) => module.loadGeneratedStyleRuntimePack()),
   "pack_08": () => import('./styleRuntimePacks.generated/pack_08').then((module) => module.loadGeneratedStyleRuntimePack()),
@@ -121,10 +123,8 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
   "pack_10": () => import('./styleRuntimePacks.generated/pack_10').then((module) => module.loadGeneratedStyleRuntimePack()),
   "pack_11": () => import('./styleRuntimePacks.generated/pack_11').then((module) => module.loadGeneratedStyleRuntimePack()),
   "pack_12": () => import('./styleRuntimePacks.generated/pack_12').then((module) => module.loadGeneratedStyleRuntimePack()),
-  "pack_13": () => import('./styleRuntimePacks.generated/pack_13').then((module) => module.loadGeneratedStyleRuntimePack()),
   "pack_14": () => import('./styleRuntimePacks.generated/pack_14').then((module) => module.loadGeneratedStyleRuntimePack()),
   "pack_15": () => import('./styleRuntimePacks.generated/pack_15').then((module) => module.loadGeneratedStyleRuntimePack()),
-  "pack_16": () => import('./styleRuntimePacks.generated/pack_16').then((module) => module.loadGeneratedStyleRuntimePack()),
 };
 
 export async function loadGeneratedStyleRuntimePack(packId: string): Promise<StyleRuntimePack | null> {

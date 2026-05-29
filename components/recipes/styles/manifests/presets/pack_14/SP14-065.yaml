@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-065
+packId: pack_14
+name: Hyena Moon Outskirts
+category: 6. Mythic — African Cosmologies
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, african-myth]
+visualDna:
+  aesthetic: Liminal settlement edge patrolled by trickster-night spirits.
+  form_and_line: Thorn fences, moon shrines, and winding tracks.
+  color_palette: Moon gray, dry ochre, and ember red.
+  lighting_setup: Sparse moonlight and protective fire circles.
+  material_texture: Thatch, bone charms, and rough stone.
+  render_quality: Moody nocturnal concept.
+  spatial_distortion: Peripheral composition around defensive ring.
+  atmosphere: Watchfulness and cunning resilience.
+  key_features: Trickster totems, night sentry drums, and moon wards.
+  creative_brief: A borderland where humor and fear coexist in folklore.
+avoidRules: [photoreal, slapstick, sci-fi-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-065.webp }
+attributes:
+  negativePrompt: photoreal, slapstick, sci-fi-neon, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

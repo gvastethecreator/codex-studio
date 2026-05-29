@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-081
+packId: pack_14
+name: Observatory of Broken Comets
+category: 4. Mythic — Cosmology & Omens
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, cosmology]
+visualDna:
+  aesthetic: Arcane observatory cataloging shattered omens in the night sky.
+  form_and_line: Circular dome tiers, fractured star maps, and radial corridors.
+  color_palette: Midnight indigo, silver ash, and ember gold.
+  lighting_setup: Telescope glow and starlight shafts through cracked vaults.
+  material_texture: Polished obsidian, weathered brass, and parchment charts.
+  render_quality: Cinematic cosmic concept with clear symbolic anchors.
+  spatial_distortion: Curved dome perspective focusing on a central astrolabe.
+  atmosphere: Foreboding wonder and prophetic tension.
+  key_features: Comet reliquary, oracle lenses, and omen inscription walls.
+  creative_brief: A cosmic archive where every meteor fragment is interpreted as warning.
+avoidRules: [photoreal, bright-pop, cyber-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-081.webp }
+attributes:
+  negativePrompt: photoreal, bright-pop, cyber-neon, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

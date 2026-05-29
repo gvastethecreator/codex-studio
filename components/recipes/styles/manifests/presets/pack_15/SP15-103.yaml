@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-103
+packId: pack_15
+name: Mycelial Transit Spine
+category: 3. Corepunk — Biopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, biopunk]
+visualDna:
+  aesthetic: Public transit corridor grown from mycelial structures and bioceramic ribs.
+  form_and_line: Spine-like tunnels, branching nodes, and soft archways.
+  color_palette: Mushroom cream, moss green, and dusk violet.
+  lighting_setup: Subsurface glow and soft bioluminescent pulses.
+  material_texture: Fungal felt, porous ceramic, and damp stone.
+  render_quality: Clean biotech concept with organic legibility.
+  spatial_distortion: Long corridor depth with branching cellular ribs.
+  atmosphere: Adaptive infrastructure, calm motion, and living-system trust.
+  key_features: Mycelial rails, transit pods, and nutrient maintenance nodes.
+  creative_brief: A biopunk transit spine where the city moves through a living fungal backbone.
+avoidRules: [photoreal, cyberpunk-grime, violent-neon, watermark, text, logo, rust]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-103.webp }
+attributes:
+  negativePrompt: photoreal, cyberpunk-grime, violent-neon, watermark, text, logo, rust
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-biopunk, categoryName: 3. Corepunk — Biopunk, tags: [solarpunk-dreamscapes-vault, corepunk, biopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-023
+packId: pack_14
+name: Anansi Moon Weave
+category: 6. Mythic — African Cosmologies
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, african-myth]
+visualDna:
+  aesthetic: Trickster mythology staged as elegant nocturnal tapestry-work of fate and wit.
+  form_and_line: Suspended thread bridges, radial loom structures, and mask-like knot motifs.
+  color_palette: Midnight indigo, moon ivory, and ember copper.
+  lighting_setup: Moonbeams filtered through woven canopies with ember lantern punctuation.
+  material_texture: Dyed fibers, polished wood frames, lacquered beads, and burnished clay.
+  render_quality: Storybook-noir concept illustration with precise symbolic detailing.
+  spatial_distortion: Layered hanging planes creating a vertical labyrinth of narrative strands.
+  atmosphere: Clever tension, playful danger, and whispered transformation.
+  key_features: Cosmic loom plaza, trickster glyphs, suspended markets, and story-knot archives.
+  creative_brief: A mythic weave-city where every thread can become a bargain with destiny.
+avoidRules: [photoreal, slapstick, modern-signage, cyber-ui, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-023.webp }
+attributes:
+  negativePrompt: photoreal, slapstick, modern-signage, cyber-ui, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

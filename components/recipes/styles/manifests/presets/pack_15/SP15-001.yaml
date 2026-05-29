@@ -2,23 +2,23 @@ schemaVersion: 1
 id: SP15-001
 packId: pack_15
 name: Terraced Sky Harvest
-category: 1. Solarpunk Dreamscapes
+category: 1. Corepunk — Solarpunk
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Elevated agrarian solarpunk with communal beauty.
-  form_and_line: Organic architecture, small human figures, and gentle flow.
-  color_palette: Leaf green, sunlit cream, and clear sky blue.
-  lighting_setup: Broad morning light with soft reflections.
-  material_texture: Light wood, moist vegetation, and translucent panels.
-  render_quality: Luminous illustration with editorial clarity.
-  spatial_distortion: Terrazas escalonadas hacia el cielo.
-  atmosphere: Abundance, harmony, and tangible optimism.
-  key_features: Elevated crops, water systems, active community.
-  creative_brief: An aerial harvest landscape where technology almost disappears into everyday beauty.
+  aesthetic: High-altitude agrarian solarpunk focused on food sovereignty and shared stewardship.
+  form_and_line: Stepped cultivation bands, cooperative work clusters, and gently spiraled circulation paths.
+  color_palette: Canopy leaf green, sun-cream limestone, and clear irrigation blue.
+  lighting_setup: Early sun wash with soft atmospheric haze and controlled terrace highlights.
+  material_texture: Laminated timber, hydrated soil beds, translucent greenhouse membranes, and woven shade cloth.
+  render_quality: Production-grade environment concept balancing atmospheric softness with operational readability.
+  spatial_distortion: Ascending terrace perspective that reveals crop zoning, access routes, and communal nodes.
+  atmosphere: Productive calm, collective pride, and grounded optimism.
+  key_features: Tiered agro-cells, gravity-fed water channels, seedling cooperatives, and shared harvest platforms.
+  creative_brief: A mountainside food district where cultivation, logistics, and community life interlock into a visibly resilient daily system.
 avoidRules: [photoreal, dystopian, dirty-pollution, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-001.webp }
 attributes:
   negativePrompt: photoreal, dystopian, dirty-pollution, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

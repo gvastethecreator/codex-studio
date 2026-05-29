@@ -2,23 +2,23 @@ schemaVersion: 1
 id: SP15-004
 packId: pack_15
 name: Fog Orchard Habitat
-category: 1. Solarpunk Dreamscapes
+category: 1. Corepunk — Solarpunk
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Elevated orchard habitat harvesting fog.
-  form_and_line: Lightweight volumes, delicate bridges, and productive trees.
-  color_palette: Sage green, pearl gray, and soft peach.
-  lighting_setup: Morning mist with diffused humid light.
-  material_texture: Fog-catching mesh, light wood, and translucent fruit.
-  render_quality: Atmospheric illustration, soft and highly polished.
-  spatial_distortion: Pasarelas suspendidas que cruzan huertos.
-  atmosphere: Fertile stillness, ingenuity, and quiet beauty.
-  key_features: Fog nets, fruit trees, airy dwellings.
-  creative_brief: A living system where infrastructure harvests climate with near-poetic grace.
+  aesthetic: Cloudbelt solarpunk habitat where atmospheric water capture drives orchard urbanism.
+  form_and_line: Lightweight mist towers, braided footbridges, and canopy-layered dwelling modules.
+  color_palette: Sage vapor green, pearl fog gray, and muted apricot bloom.
+  lighting_setup: Diffused dawn humidity with soft backscatter through condensate nets.
+  material_texture: Micro-mesh catchers, oiled light timber, ceramic cistern skins, and dewy fruit wax.
+  render_quality: Premium atmospheric concept art with clear infrastructure storytelling.
+  spatial_distortion: Diagonal bridge network perspective traversing staggered orchard terraces.
+  atmosphere: Quiet fertility, climatic intelligence, and gentle communal rhythm.
+  key_features: Condensation towers, drip-fed orchard lanes, suspended homes, and visible storage cisterns.
+  creative_brief: A fog-dependent hillside settlement that transforms airborne moisture into food, shade, and neighborhood life.
 avoidRules: [photoreal, dystopian-rust, dark-horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-004.webp }
 attributes:
   negativePrompt: photoreal, dystopian-rust, dark-horror, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

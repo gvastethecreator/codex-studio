@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-046
+packId: pack_15
+name: Nuclide Aquatics Dome
+category: 8. Corepunk — Atompunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+visualDna:
+  aesthetic: Public aquatic complex using reactor byproduct heat for leisure and therapy.
+  form_and_line: Dome shell, concentric pools, and streamlined changing arcades.
+  color_palette: Aqua, white, and citrus yellow details.
+  lighting_setup: Diffuse dome daylight and underwater luminescent bands.
+  material_texture: Glazed tile, anti-slip stone, and polished steel rails.
+  render_quality: Lifestyle concept with high environmental coherence.
+  spatial_distortion: Bowl geometry centering on warm isotope pool core.
+  atmosphere: Wellness, civic pride, and subtle engineered spectacle.
+  key_features: Thermal isotope pools, health kiosks, and wave turbine displays.
+  creative_brief: An atompunk bathhouse where energy abundance is transformed into daily wellbeing.
+avoidRules: [photoreal, horror, cyberpunk-grime, medieval, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-046.webp }
+attributes:
+  negativePrompt: photoreal, horror, cyberpunk-grime, medieval, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

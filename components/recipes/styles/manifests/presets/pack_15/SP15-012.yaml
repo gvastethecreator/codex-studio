@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP15-012
 packId: pack_15
 name: Mangrove Lift City
-category: 1. Solarpunk Dreamscapes
+category: 1. Corepunk — Solarpunk
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
@@ -21,4 +21,4 @@ avoidRules: [photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, wate
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-012.webp }
 attributes:
   negativePrompt: photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

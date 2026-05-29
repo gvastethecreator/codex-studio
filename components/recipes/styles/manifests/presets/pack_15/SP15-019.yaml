@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-019
+packId: pack_15
+name: Neon Isotope Plaza
+category: 8. Corepunk — Atompunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+visualDna:
+  aesthetic: Retro-futurist civic center where atomic optimism meets controlled dread.
+  form_and_line: Boomerang canopies, orbit motifs, and radial plaza geometry.
+  color_palette: Mint teal, uranium chartreuse, and chrome silver.
+  lighting_setup: Glowing reactor signage and hard noon sunlight on polished surfaces.
+  material_texture: Enamel panels, brushed aluminum, terrazzo, and illuminated glass brick.
+  render_quality: Crisp concept art with poster-like readability and worldbuilding detail.
+  spatial_distortion: Symmetric central perspective emphasizing civic monumentality.
+  atmosphere: Confident progress, latent risk, and mid-century spectacle.
+  key_features: Isotope fountain, atom sculptures, civic dome, and radiation-proof tram stops.
+  creative_brief: An atompunk downtown designed as a public promise that science can save everything.
+avoidRules: [photoreal, post-apocalypse-rust, grimdark-gore, medieval-elements, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-019.webp }
+attributes:
+  negativePrompt: photoreal, post-apocalypse-rust, grimdark-gore, medieval-elements, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

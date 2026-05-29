@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-088
+packId: pack_14
+name: Planetary Bell Citadel
+category: 4. Mythic — Cosmology & Omens
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, cosmology]
+visualDna:
+  aesthetic: Fortress whose bells ring in sync with celestial conjunctions.
+  form_and_line: Bell towers, concentric walls, and hanging bridge loops.
+  color_palette: Iron gray, moon silver, and ember bronze.
+  lighting_setup: Bell-chamber glows and storm backlight.
+  material_texture: Cast bronze bells, weathered stone, and rope fibers.
+  render_quality: High-contrast fortress concept with ritual emphasis.
+  spatial_distortion: Vertical focus from gate to bell crown.
+  atmosphere: Alarmed solemnity and cosmic timing.
+  key_features: Planetary bells, omen gears, and signal parapets.
+  creative_brief: A defensive city calibrated to the rhythm of the heavens.
+avoidRules: [photoreal, playful, cyberpunk-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-088.webp }
+attributes:
+  negativePrompt: photoreal, playful, cyberpunk-neon, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

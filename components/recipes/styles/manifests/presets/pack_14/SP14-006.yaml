@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP14-006
 packId: pack_14
 name: Crowned Ash Oracle
-category: 1. Mythic Noir
+category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
@@ -21,4 +21,4 @@ avoidRules: [photoreal, soft-cute, random-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-006.webp }
 attributes:
   negativePrompt: photoreal, soft-cute, random-chaos, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-093
+packId: pack_14
+name: Omen Salt Reservoir
+category: 4. Mythic — Cosmology & Omens
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, cosmology]
+visualDna:
+  aesthetic: Sacred reservoir storing crystallized omen readings.
+  form_and_line: Terraced basins, pillar rows, and intake channels.
+  color_palette: Salt white, graphite, and pale turquoise.
+  lighting_setup: Dry heat glare and reflective basin shimmer.
+  material_texture: Crusted salt, lime plaster, and weathered bronze valves.
+  render_quality: Environmental concept with utility-ritual blend.
+  spatial_distortion: Stepwise descent toward deepest omen pool.
+  atmosphere: Arid solemnity and archival care.
+  key_features: Salt tablets, omen sluices, and measuring obelisks.
+  creative_brief: A civic utility where prophecy is processed like water.
+avoidRules: [photoreal, comedy, cyberpunk, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-093.webp }
+attributes:
+  negativePrompt: photoreal, comedy, cyberpunk, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

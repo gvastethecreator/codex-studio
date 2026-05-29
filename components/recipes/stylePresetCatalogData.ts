@@ -1,5 +1,6 @@
 import { STYLE_DEFAULT_IMAGES } from '../../lib/recipeAssetCatalog';
 import type { StylePackManifest, StylePresetManifest } from './styles/manifestTypes';
+import { compareStylePackIdsForDisplay } from './styles/packOrdering';
 import {
   createStylePresetCatalog,
   validateStyleManifestGraph,
@@ -65,10 +66,11 @@ export async function loadStylePresetCatalog(): Promise<LoadedStylePresetCatalog
   if (catalogPromise) return catalogPromise;
 
   catalogPromise = (async () => {
-    const [packs, presetManifests] = await Promise.all([
+    const [packsRaw, presetManifests] = await Promise.all([
       loadYamlObjects<StylePackManifest>(packManifestFiles),
       loadYamlObjects<StylePresetManifest>(presetManifestFiles),
     ]);
+    const packs = packsRaw.sort((a, b) => compareStylePackIdsForDisplay(a.id, b.id));
     const presets = presetManifests.map(normalizePresetAssetAvailability);
     const graph = validateStyleManifestGraph(packs, presets);
     const catalog = createStylePresetCatalog(packs, presets);

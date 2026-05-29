@@ -2,23 +2,23 @@ schemaVersion: 1
 id: SP14-008
 packId: pack_14
 name: Funeral Rose Cavalier
-category: 1. Mythic Noir
+category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+tags: [mythic-noir-curated-vault, mythic, psychopomp-legend]
 visualDna:
-  aesthetic: Funeral knight with refined dark romanticism.
-  form_and_line: Noble profile, ceremonial sword, and fading floral cape.
-  color_palette: Withered rose, velvet black, and cold silver.
-  lighting_setup: Gray dawn with glints over damp petals.
-  material_texture: Dried roses, satin-finished metal, and cold marble.
-  render_quality: Lyrical illustration with high visual sophistication.
-  spatial_distortion: Monumental cemetery in soft perspective.
-  atmosphere: Restrained grief, honor, and tragic beauty.
-  key_features: Funeral roses, motionless guard, gothic monuments.
-  creative_brief: A knight who seems to guard the boundary between love and death.
+  aesthetic: Mythic psychopomp legend framed as solemn chivalric funerary rite.
+  form_and_line: Processional rider profile, soul-guiding blade silhouette, and heraldic floral drapery.
+  color_palette: Withered rose crimson, velvet black, and funerary silver.
+  lighting_setup: Ashen dawn haze with selective metallic glints over wet petals.
+  material_texture: Dried rose bundles, satin-polished armor, carved tomb marble, and mourning silk.
+  render_quality: Lyrical prestige illustration with symbolic readability at mid-distance.
+  spatial_distortion: Necropolis axis perspective leading toward a gate-like mausoleum threshold.
+  atmosphere: Sacred mourning, oath-bound honor, and tender fatality.
+  key_features: Soulward rose trail, vigil cavalier, boundary mausoleum, and ceremonial grave standards.
+  creative_brief: A legendary funeral cavalier escorts the newly dead across the threshold, embodying mythic duty rather than simple romantic tragedy.
 avoidRules: [photoreal, cartoon-comedy, bright-summer, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-008.webp }
 attributes:
   negativePrompt: photoreal, cartoon-comedy, bright-summer, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic, psychopomp-legend], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

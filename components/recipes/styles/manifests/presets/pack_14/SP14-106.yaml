@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-106
+packId: pack_14
+name: Stone Psalm Observatory
+category: 1. Mythic — Symbolism
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Observatory carved with hymn-like stone symbols and celestial markers.
+  form_and_line: Ringed platforms, psalmic inscriptions, and viewing apertures.
+  color_palette: Granite, moon silver, and faded blue.
+  lighting_setup: Night sky glow with measured interior lanterns.
+  material_texture: Chiseled stone, bronze lenses, and weathered inscriptions.
+  render_quality: Monumental symbolic architecture.
+  spatial_distortion: Rising concentric rings toward the sky aperture.
+  atmosphere: Contemplation, astronomy, and sacred order.
+  key_features: Psalm carvings, stone telescope mounts, and star ledger tablets.
+  creative_brief: A symbolic observatory where stone inscriptions turn the night sky into liturgy.
+avoidRules: [photoreal, neon, sketchy, watermark, text, logo, flat-perspective]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-106.webp }
+attributes:
+  negativePrompt: photoreal, neon, sketchy, watermark, text, logo, flat-perspective
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

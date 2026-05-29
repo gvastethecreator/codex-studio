@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-121
+packId: pack_14
+name: Iron Harvest Basilica
+category: 3. Mythic — Pantheons & Legends
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Agricultural basilica dedicated to a harvest pantheon of iron and grain.
+  form_and_line: Grain-silo basilica, tall sheaves, and ceremonial threshing arcs.
+  color_palette: Wheat gold, iron black, and dusty green.
+  lighting_setup: Late harvest sun with steel shadow lines.
+  material_texture: Forged iron, straw, sunbaked clay, and old oak.
+  render_quality: Monumental rural mythic scene with strong detail.
+  spatial_distortion: Nave-like farm axis expanding into fields.
+  atmosphere: Plenty, labor, and sacred stewardship.
+  key_features: Harvest icons, iron scythes, and grain reliquaries.
+  creative_brief: A pantheon basilica where the harvest is honored as both work and miracle.
+avoidRules: [photoreal, cute, modern-farm, watermark, text, logo, glossy]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-121.webp }
+attributes:
+  negativePrompt: photoreal, cute, modern-farm, watermark, text, logo, glossy
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-034
+packId: pack_14
+name: Snow Shrine Boundary Stones
+category: 7. Mythic — Japanese Yokai & Kami
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+visualDna:
+  aesthetic: Winter shrine frontier marked by sacred stones against spirit incursions.
+  form_and_line: Repeating boundary pillars, rope arcs, and stepped approach paths.
+  color_palette: Snow white, cedar brown, and indigo dusk.
+  lighting_setup: Blue-hour snowfall with sparse fire basins.
+  material_texture: Frosted granite, braided shimenawa rope, and wet timber gates.
+  render_quality: High-detail concept frame with ritual clarity.
+  spatial_distortion: Long path vanishing line through torii layers.
+  atmosphere: Quiet danger, reverence, and seasonal austerity.
+  key_features: Boundary stones, warning talismans, and guardian fox statues.
+  creative_brief: A shrine border where winter spirits test every sacred seal.
+avoidRules: [photoreal, kawaii, urban-neon, sci-fi-tech, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-034.webp }
+attributes:
+  negativePrompt: photoreal, kawaii, urban-neon, sci-fi-tech, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

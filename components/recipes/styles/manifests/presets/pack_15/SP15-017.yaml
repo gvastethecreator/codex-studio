@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-017
+packId: pack_15
+name: Iron Convoy Commons
+category: 7. Corepunk — Dieselpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, dieselpunk]
+visualDna:
+  aesthetic: Post-war dieselpunk rebuilt as cooperative freight and repair urbanism.
+  form_and_line: Heavy chassis geometry, elevated fuel viaducts, and robust workshop framing.
+  color_palette: Oxide red, soot gray, and signal amber.
+  lighting_setup: Smoky afternoon backlight with hard industrial highlights.
+  material_texture: Riveted steel, grease-dark rubber, weathered concrete, and canvas utility tarps.
+  render_quality: Rugged cinematic concept art with strong mass readability and mechanical detail.
+  spatial_distortion: Convoy-lane depth perspective ending at a civic repair hangar.
+  atmosphere: Gritty solidarity, practical endurance, and collective reconstruction.
+  key_features: Diesel haulers, communal machine shops, fuel reclamation towers, and worker canteens.
+  creative_brief: A dieselpunk district where heavy infrastructure is repurposed for mutual aid logistics and public resilience.
+avoidRules: [photoreal, pristine-utopia, neon-cyber, magical-fantasy, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-017.webp }
+attributes:
+  negativePrompt: photoreal, pristine-utopia, neon-cyber, magical-fantasy, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-dieselpunk, categoryName: 7. Corepunk — Dieselpunk, tags: [solarpunk-dreamscapes-vault, corepunk, dieselpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

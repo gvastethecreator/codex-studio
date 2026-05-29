@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-059
+packId: pack_14
+name: Crocodile River Covenant
+category: 6. Mythic — African Cosmologies
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, african-myth]
+visualDna:
+  aesthetic: River covenant shrine guarded by crocodile spirit totems.
+  form_and_line: River stairs, shrine pylons, and rope crossings.
+  color_palette: Mud green, bronze, and dusk violet.
+  lighting_setup: Reflective water light and ritual lantern clusters.
+  material_texture: Reed mats, wet stone, and carved totems.
+  render_quality: Atmospheric riverside concept.
+  spatial_distortion: Longitudinal riverbank depth.
+  atmosphere: Caution, reverence, and elemental pact.
+  key_features: Covenant basin, crocodile masks, and oath posts.
+  creative_brief: A sacred ford where passage requires ritual acknowledgement.
+avoidRules: [photoreal, slapstick, cyberpunk, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-059.webp }
+attributes:
+  negativePrompt: photoreal, slapstick, cyberpunk, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

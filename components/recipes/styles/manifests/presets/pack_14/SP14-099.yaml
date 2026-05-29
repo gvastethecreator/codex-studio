@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-099
+packId: pack_14
+name: Lantern of the Underworld
+category: 1. Mythic — Symbolism
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Ritual lantern carried through a mythic underworld passage.
+  form_and_line: Hanging lantern, tunnel silhouettes, and stepped descent.
+  color_palette: Amber glow, abyss black, and oxblood.
+  lighting_setup: Single source lantern light with deep falloff.
+  material_texture: Oiled metal, damp stone, and waxed cloth.
+  render_quality: Narrative key art with dramatic light focus.
+  spatial_distortion: Descending path pulled toward the lantern core.
+  atmosphere: Guidance, mourning, and crossing thresholds.
+  key_features: Underworld lantern, descent steps, and threshold veil.
+  creative_brief: A symbolic lantern that turns darkness into a road rather than a void.
+avoidRules: [photoreal, cute, vaporwave, watermark, text, logo, busy-background]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-099.webp }
+attributes:
+  negativePrompt: photoreal, cute, vaporwave, watermark, text, logo, busy-background
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

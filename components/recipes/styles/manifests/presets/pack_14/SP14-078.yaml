@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-078
+packId: pack_14
+name: Frostbound Burial Fleet
+category: 8. Mythic — Norse Sagas
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, norse-myth]
+visualDna:
+  aesthetic: Funerary inlet where hero ships are sealed into winter ice.
+  form_and_line: Ship rows, cairn lines, and memorial piers.
+  color_palette: Pale cyan, charcoal, and fire amber.
+  lighting_setup: Twilight memorial fires and icy reflections.
+  material_texture: Frosted hull wood, stone cairns, and funeral cloth.
+  render_quality: Emotional cinematic concept.
+  spatial_distortion: Receding fleet perspective along frozen inlet.
+  atmosphere: Grief, reverence, and stoic closure.
+  key_features: Burial drakkars, cairn altars, and torch processions.
+  creative_brief: A Norse harbor where memory is preserved in ice and flame.
+avoidRules: [photoreal, playful, neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-078.webp }
+attributes:
+  negativePrompt: photoreal, playful, neon, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP15-008
 packId: pack_15
 name: Rooftop Rain Choir
-category: 1. Solarpunk Dreamscapes
+category: 1. Corepunk — Solarpunk
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
@@ -21,4 +21,4 @@ avoidRules: [photoreal, dystopian-smog, aggressive-action, watermark, text, logo
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-008.webp }
 attributes:
   negativePrompt: photoreal, dystopian-smog, aggressive-action, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

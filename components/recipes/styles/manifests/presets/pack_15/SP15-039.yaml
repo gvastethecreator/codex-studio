@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-039
+packId: pack_15
+name: Isotope School Campus
+category: 8. Corepunk — Atompunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+visualDna:
+  aesthetic: Mid-century learning complex teaching atomic science as civic literacy.
+  form_and_line: Sawtooth roofs, long corridors, and atom-emblem courtyards.
+  color_palette: Sky cyan, lemon cream, and steel gray.
+  lighting_setup: Classroom daylight plus glowing educational reactor exhibits.
+  material_texture: Linoleum floors, ceramic tile walls, and anodized handrails.
+  render_quality: Bright illustrative concept with educational set-dressing detail.
+  spatial_distortion: Campus axis perspective connecting labs and open quads.
+  atmosphere: Curious optimism, disciplined learning, and future-facing ambition.
+  key_features: Demo reactor lab, isotope greenhouse class, and atom mural plaza.
+  creative_brief: An atompunk school where kids learn physics as a shared civic language.
+avoidRules: [photoreal, dystopian-prison, medieval, neon-nightclub, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-039.webp }
+attributes:
+  negativePrompt: photoreal, dystopian-prison, medieval, neon-nightclub, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

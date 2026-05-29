@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-078
+packId: pack_15
+name: Crater Choir Sanctuary
+category: 11. Corepunk — Lunarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+visualDna:
+  aesthetic: Acoustic sanctuary using crater resonance for communal rites.
+  form_and_line: Concentric steps, sound fins, and suspended choir bridges.
+  color_palette: Pale lavender, silver, and charcoal.
+  lighting_setup: Gentle uplight and reflected crater glow.
+  material_texture: Resonant ceramics, tension wires, and moon dust patina.
+  render_quality: Atmospheric concept focused on sonic architecture.
+  spatial_distortion: Spiral descent into resonant core.
+  atmosphere: Serenity, resonance, and ritual repair.
+  key_features: Echo dishes, choir platforms, and tone altars.
+  creative_brief: A lunarpunk temple where healing is achieved through shared sound.
+avoidRules: [photoreal, horror, cyber-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-078.webp }
+attributes:
+  negativePrompt: photoreal, horror, cyber-neon, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

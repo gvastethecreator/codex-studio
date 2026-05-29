@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-105
+packId: pack_14
+name: Feathered Stairway
+category: 1. Mythic — Symbolism
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Ascending stairway lined with feather emblems and rites of passage.
+  form_and_line: Long stairs, layered plumes, and upward thrust.
+  color_palette: Ivory, smoke, and deep teal.
+  lighting_setup: Dawn-side glow and soft shadow gradation.
+  material_texture: Stone steps, delicate feathers, and brushed metal accents.
+  render_quality: Mythic ascent illustration with graceful motion.
+  spatial_distortion: Vertical climb pulled into a sacred vanishing point.
+  atmosphere: Transition, aspiration, and guided ascent.
+  key_features: Feather motifs, stair processions, and threshold markers.
+  creative_brief: A symbolic staircase where feathers mark the journey between worlds.
+avoidRules: [photoreal, violent, toy-like, watermark, text, logo, over-sharp]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-105.webp }
+attributes:
+  negativePrompt: photoreal, violent, toy-like, watermark, text, logo, over-sharp
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

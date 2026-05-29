@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-070
+packId: pack_14
+name: Valkyrie Dock Bastion
+category: 8. Mythic — Norse Sagas
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, norse-myth]
+visualDna:
+  aesthetic: Sky dock where valkyries embark with soul-lantern fleets.
+  form_and_line: Pier arms, wing standards, and high cliff ramps.
+  color_palette: Aurora green, steel, and midnight blue.
+  lighting_setup: Aurora backlight and wind-burned fire pits.
+  material_texture: Frosted iron, rope rigging, and carved oak.
+  render_quality: Dramatic aerial concept frame.
+  spatial_distortion: Cliff-edge depth into cloud seas.
+  atmosphere: Heroic melancholy and divine logistics.
+  key_features: Valkyrie moorings, lantern cranes, and oath pylons.
+  creative_brief: A mythic dock where departures are funeral honors and battle summons.
+avoidRules: [photoreal, comedy, futuristic-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-070.webp }
+attributes:
+  negativePrompt: photoreal, comedy, futuristic-neon, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

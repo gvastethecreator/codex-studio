@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-089
+packId: pack_14
+name: Glass Astrolabe Harbor
+category: 4. Mythic — Cosmology & Omens
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, cosmology]
+visualDna:
+  aesthetic: Maritime observatory port governed by giant glass astrolabes.
+  form_and_line: Dock grids, astrolabe towers, and curved tidewalls.
+  color_palette: Sea green, steel blue, and amber.
+  lighting_setup: Tide reflections and instrument backlighting.
+  material_texture: Salted timber, blown glass, and riveted brass.
+  render_quality: Nautical-cosmic concept with clean readability.
+  spatial_distortion: Harbor perspective drawn to rotating star instruments.
+  atmosphere: Navigational suspense and ritual precision.
+  key_features: Astrolabe cranes, chart docks, and omen beacons.
+  creative_brief: A harbor where tides and stars are treated as one map.
+avoidRules: [photoreal, cartoon, cyber-city, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-089.webp }
+attributes:
+  negativePrompt: photoreal, cartoon, cyber-city, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-076
+packId: pack_15
+name: Selenite Artisan Block
+category: 11. Corepunk — Lunarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+visualDna:
+  aesthetic: Cooperative maker quarter focused on lunar craft and repair culture.
+  form_and_line: Modular workshops, open courts, and hanging service rails.
+  color_palette: Chalk white, mint green, and warm copper.
+  lighting_setup: Workshop strip lights and soft skylight bleed.
+  material_texture: Printed ceramics, woven insulation, and polished metals.
+  render_quality: Detailed artisanal future concept.
+  spatial_distortion: Dense block composition with visible micro-scenes.
+  atmosphere: Hands-on solidarity and practical creativity.
+  key_features: Open fab benches, repair kiosks, and shared tool depots.
+  creative_brief: A lunarpunk district where repair is celebrated as civic art.
+avoidRules: [photoreal, sterile-corporate, cyber-slum, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-076.webp }
+attributes:
+  negativePrompt: photoreal, sterile-corporate, cyber-slum, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-031
+packId: pack_14
+name: Cenote of Jade Echoes
+category: 9. Mythic — Mesoamerican Suns
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth]
+visualDna:
+  aesthetic: Subterranean sacred water chamber where offerings mirror celestial cycles.
+  form_and_line: Circular sinkhole terraces, suspended bridges, and carved niche sanctuaries.
+  color_palette: Deep jade, limestone beige, and moonlit silver.
+  lighting_setup: Overhead shaft light and candle flotillas reflecting on black water.
+  material_texture: Wet limestone, jade beads, woven fiber cords, and mineral deposits.
+  render_quality: Atmospheric exploration matte with strong depth and iconographic detail.
+  spatial_distortion: Vertical shaft composition descending from open sky to hidden altar basin.
+  atmosphere: Reverent quiet, ancestral memory, and liquid mystery.
+  key_features: Cenote altar raft, offering steps, serpent glyph walls, and echo chambers.
+  creative_brief: A ritual cenote where each reflection is read as a message from old suns.
+avoidRules: [photoreal, goofy-comic, neon-ui, modern-diving-gear, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-031.webp }
+attributes:
+  negativePrompt: photoreal, goofy-comic, neon-ui, modern-diving-gear, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-mesoamerican-suns, categoryName: 9. Mythic — Mesoamerican Suns, tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

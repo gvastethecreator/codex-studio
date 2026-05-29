@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-057
+packId: pack_14
+name: Baobab Star Oracle
+category: 6. Mythic — African Cosmologies
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, african-myth]
+visualDna:
+  aesthetic: Sacred baobab observatory interpreting constellations as ancestral counsel.
+  form_and_line: Circular roots plaza, carved pillars, and radial pathways.
+  color_palette: Indigo, clay, and brass.
+  lighting_setup: Night fire bowls and starlit canopy.
+  material_texture: Bark, packed earth, bronze charms.
+  render_quality: Cinematic concept with symbolic focus.
+  spatial_distortion: Concentric composition around the tree core.
+  atmosphere: Wisdom, continuity, and ritual gravity.
+  key_features: Oracle ring, drum markers, and ancestor glyph stones.
+  creative_brief: A cosmic court where the sky is read through living memory.
+avoidRules: [photoreal, caricature, cyber-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-057.webp }
+attributes:
+  negativePrompt: photoreal, caricature, cyber-neon, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

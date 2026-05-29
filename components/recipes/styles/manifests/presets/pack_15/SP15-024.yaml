@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-024
+packId: pack_15
+name: Velvet Turbine Salon
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: Private decopunk club where political deals happen behind velvet and steel.
+  form_and_line: Curved bar islands, fan-pattern ceilings, and turbine-like wall insets.
+  color_palette: Burgundy velvet, onyx black, and antique gold.
+  lighting_setup: Low-key spot pools and brass sconces shaping intimate corners.
+  material_texture: Velvet upholstery, embossed leather, polished brass, and smoked mirrors.
+  render_quality: Premium interior concept art with tactile richness and dramatic depth.
+  spatial_distortion: Layered lounge composition with nested alcoves and secret passages.
+  atmosphere: Confidential intrigue, aristocratic modernity, and hushed momentum.
+  key_features: Hidden speaking booths, deco fan lamps, and turbine stage centerpiece.
+  creative_brief: A decopunk salon where influence is traded as carefully as rare machinery.
+avoidRules: [photoreal, minimalist-office, cyberpunk-neon-overload, cartoonish, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-024.webp }
+attributes:
+  negativePrompt: photoreal, minimalist-office, cyberpunk-neon-overload, cartoonish, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-102
+packId: pack_15
+name: Sunstack Civic Atrium
+category: 1. Corepunk — Solarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk]
+visualDna:
+  aesthetic: Civic atrium stacked around a solar chimney and public garden core.
+  form_and_line: Vertical terraces, open void, and sunlit ramps.
+  color_palette: Pale green, sandstone, and sky gold.
+  lighting_setup: Top-lit atrium with diffuse bounces and daylight shafts.
+  material_texture: Glazed brick, timber, and translucent solar film.
+  render_quality: Monumental but welcoming public architecture.
+  spatial_distortion: Vertical central void pulling the city upward.
+  atmosphere: Public trust, climatic comfort, and collective aspiration.
+  key_features: Solar chimney, civic ramps, and shared atrium gardens.
+  creative_brief: A solarpunk civic heart where energy, climate, and public life are harmonized in one bright atrium.
+avoidRules: [photoreal, cyberpunk, hard-industrial, watermark, text, logo, nightscape]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-102.webp }
+attributes:
+  negativePrompt: photoreal, cyberpunk, hard-industrial, watermark, text, logo, nightscape
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-117
+packId: pack_15
+name: Reef Choir Harbor
+category: 13. Corepunk — Seapunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+visualDna:
+  aesthetic: Harbor where reef structures act as a resonant choir and civic acoustic shell.
+  form_and_line: Curved reef amphitheater, dock arcs, and shell-like acoustic ribs.
+  color_palette: Aqua, opal pink, and sea-glass green.
+  lighting_setup: Bioluminescent glow with bright coastal reflections.
+  material_texture: Shell composite, translucent fins, and slick stone.
+  render_quality: Lush marine concept with acoustic architecture cues.
+  spatial_distortion: Amphitheater curve around a harbor inlet.
+  atmosphere: Communal celebration, tidal resonance, and playful immersion.
+  key_features: Reef choir shells, harbor steps, and signal fins.
+  creative_brief: A seapunk harbor where the reef itself amplifies song and civic life.
+avoidRules: [photoreal, bleak, rust, watermark, text, logo, murky]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-117.webp }
+attributes:
+  negativePrompt: photoreal, bleak, rust, watermark, text, logo, murky
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

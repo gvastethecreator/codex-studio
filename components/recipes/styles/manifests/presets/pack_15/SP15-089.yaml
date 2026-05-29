@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-089
+packId: pack_15
+name: Pocketwatch Workshop Row
+category: 2. Corepunk — Clockpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+visualDna:
+  aesthetic: Dense artisan workshop street dedicated to precision watchcraft.
+  form_and_line: Narrow shopfronts, gear awnings, and window displays.
+  color_palette: Walnut, brass, and deep green.
+  lighting_setup: Warm shop lamps and reflected glass sparkle.
+  material_texture: Polished brass, timber, leather, and felt pads.
+  render_quality: Detail-rich street concept with tiny mechanical cues.
+  spatial_distortion: Tight alley perspective with repeating façades.
+  atmosphere: Craft pride, quiet focus, and intimate scale.
+  key_features: Watchmaker benches, tool clocks, and repair kiosks.
+  creative_brief: A clockpunk artisan row where time is repaired one mechanism at a time.
+avoidRules: [photoreal, messy-industrial, cyberpunk, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-089.webp }
+attributes:
+  negativePrompt: photoreal, messy-industrial, cyberpunk, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

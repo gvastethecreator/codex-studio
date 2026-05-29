@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-052
+packId: pack_15
+name: Velvet Broadcast Hall
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: National broadcast studio with theatrical deco gravitas.
+  form_and_line: Acoustic fan walls, stage arcs, and signal tower spine.
+  color_palette: Burgundy, brass, and charcoal.
+  lighting_setup: Stage spotlights and warm perimeter sconces.
+  material_texture: Velvet drape, lacquer wood, and mic chrome.
+  render_quality: Interior concept with rich tonal staging.
+  spatial_distortion: Stage-centric composition with layered audience boxes.
+  atmosphere: Authority performance and glamorous control.
+  key_features: Live orchestra pit, announcer dais, and signal meter walls.
+  creative_brief: A decopunk media hall where voice becomes architecture.
+avoidRules: [photoreal, minimalist, cyber-noise, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-052.webp }
+attributes:
+  negativePrompt: photoreal, minimalist, cyber-noise, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

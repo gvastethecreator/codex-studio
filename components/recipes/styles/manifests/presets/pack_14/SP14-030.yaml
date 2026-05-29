@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-030
+packId: pack_14
+name: Feathered Eclipse Causeway
+category: 9. Mythic — Mesoamerican Suns
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth]
+visualDna:
+  aesthetic: Mesoamerican ceremonial axis under an eclipse interpreted as divine recalibration.
+  form_and_line: Stepped pyramids, serpent balustrades, and rhythmic processional plazas.
+  color_palette: Obsidian black, jade green, and blood-sun crimson.
+  lighting_setup: Eclipse corona backlight with torchline highlights on carved reliefs.
+  material_texture: Volcanic stone, painted stucco, feathered standards, and polished jade inserts.
+  render_quality: Monumental concept art with clear symbolic focal hierarchy.
+  spatial_distortion: Long axial perspective linking solar altar to horizon temple tiers.
+  atmosphere: Cosmic urgency, civic ritual, and awe under celestial shadow.
+  key_features: Feathered serpent motifs, eclipse disk, ritual stairways, and codex wall panels.
+  creative_brief: A sacred causeway where priests and citizens negotiate continuity through eclipse rites.
+avoidRules: [photoreal, caricature, futuristic-neon, steampunk-gears, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-030.webp }
+attributes:
+  negativePrompt: photoreal, caricature, futuristic-neon, steampunk-gears, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-mesoamerican-suns, categoryName: 9. Mythic — Mesoamerican Suns, tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

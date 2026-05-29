@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-024
+packId: pack_14
+name: Torii of Whispering Foxfire
+category: 7. Mythic — Japanese Yokai & Kami
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+visualDna:
+  aesthetic: Sacred forest threshold blending shrine dignity with sly yokai presence.
+  form_and_line: Receding torii corridors, lantern braids, and fox-mask shrine sigils.
+  color_palette: Vermilion lacquer, pine shadow green, and foxfire cyan.
+  lighting_setup: Mist-soft moonlight punctuated by floating spirit flames near gates.
+  material_texture: Rain-dark cedar, worn stone steps, paper talismans, and lacquered beams.
+  render_quality: Atmospheric premium matte art with crisp shrine iconography.
+  spatial_distortion: Narrowing gate sequence guiding the eye toward a hidden inner court.
+  atmosphere: Reverence, subtle mischief, and sacred suspense.
+  key_features: Kitsune statues, warding charms, spirit lantern trail, and hidden purification basin.
+  creative_brief: A mountain shrine passage where each torii marks a deeper pact with unseen beings.
+avoidRules: [photoreal, anime-chibi, urban-neon, slapstick, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-024.webp }
+attributes:
+  negativePrompt: photoreal, anime-chibi, urban-neon, slapstick, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

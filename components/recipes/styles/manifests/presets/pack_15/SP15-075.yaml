@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-075
+packId: pack_15
+name: Tidal Crater Transit Hub
+category: 11. Corepunk — Lunarpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+visualDna:
+  aesthetic: Multi-level transit exchange built into a crater basin.
+  form_and_line: Circular platforms, rope elevators, and glide lanes.
+  color_palette: Moon gray, aqua, and amber accents.
+  lighting_setup: Path beacons and reflected basin light.
+  material_texture: Composite decking, tension cables, and dust-treated glass.
+  render_quality: Functional worldbuilding concept with motion clarity.
+  spatial_distortion: Bowl-shaped depth around central interchange.
+  atmosphere: Calm mobility and civic coordination.
+  key_features: Shuttle docks, low-g lifts, and basin concourses.
+  creative_brief: A lunarpunk node where mobility is designed for accessibility and rhythm.
+avoidRules: [photoreal, dystopian-chaos, cyber-neon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-075.webp }
+attributes:
+  negativePrompt: photoreal, dystopian-chaos, cyber-neon, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

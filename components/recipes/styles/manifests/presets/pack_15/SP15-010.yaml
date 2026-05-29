@@ -2,23 +2,23 @@ schemaVersion: 1
 id: SP15-010
 packId: pack_15
 name: Circular Maker Courtyard
-category: 1. Solarpunk Dreamscapes
+category: 2. Corepunk — Clockpunk
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
 visualDna:
-  aesthetic: Craft-forward solarpunk centered on repair culture and circular production.
-  form_and_line: Modular workshop bays, open benches, and collaborative circulation arcs.
-  color_palette: Terracotta clay, recycled teal, and warm utility orange.
-  lighting_setup: Skylit courtyard illumination with targeted task lights over benches.
-  material_texture: Reclaimed composites, polished scrap metal, plant fiber textiles.
-  render_quality: Detailed editorial concept scene balancing people, tools, and architecture.
-  spatial_distortion: Courtyard hub composition radiating into specialized micro-workshops.
-  atmosphere: Practical optimism, shared competence, and dignified everyday innovation.
-  key_features: Repair stations, component libraries, communal fabrication canopy.
-  creative_brief: A civic workshop where maintenance, remanufacture, and local design feel aspirational and joyful.
+  aesthetic: Civic clockpunk workshop district driven by precision mechanics and artisanal automation.
+  form_and_line: Gear-ring colonnades, pendulum-guided axes, and radial bench choreography.
+  color_palette: Polished brass, terracotta clay, and oxidized teal accents.
+  lighting_setup: Skylight shafts with warm lamp pools over escapement worktables.
+  material_texture: Brushed bronze gears, hardwood benches, enamel dials, and oil-darkened leather.
+  render_quality: High-detail editorial concept art with precise mechanical readability.
+  spatial_distortion: Courtyard flywheel perspective radiating into timepiece micro-ateliers.
+  atmosphere: Patient mastery, communal ingenuity, and elegant mechanical rhythm.
+  key_features: Public gear libraries, escapement stations, cooperative chronometer forge, and clock-tower canopy.
+  creative_brief: A neighborhood fabrication courtyard where repair culture is organized through visible clockwork systems and shared precision craft.
 avoidRules: [photoreal, sterile-corporate, dystopian-factory, dark-gloom, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-010.webp }
 attributes:
   negativePrompt: photoreal, sterile-corporate, dystopian-factory, dark-gloom, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

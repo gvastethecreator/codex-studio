@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-014
+packId: pack_15
+name: Brass Aether Dockyard
+category: 4. Corepunk — Steampunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, steampunk]
+visualDna:
+  aesthetic: Neo-victorian steampunk port where civic logistics run on elegant pressure systems.
+  form_and_line: Riveted arches, dirigible masts, and articulated crane silhouettes.
+  color_palette: Aged brass, coal umber, and oxidized teal.
+  lighting_setup: Golden industrial dusk with furnace glow and vapor beams.
+  material_texture: Hammered copper, varnished oak, oil-stained canvas, and steam-condensed steel.
+  render_quality: Premium narrative concept with clear machinery readability and cinematic density.
+  spatial_distortion: Layered drydock perspective converging toward an elevated command gantry.
+  atmosphere: Industrious wonder, mechanical pride, and measured optimism.
+  key_features: Aether cranes, pressure gauges, civic airships, and cooperative dock crews.
+  creative_brief: A steampunk harbor where municipal transport and heavy craft feel artisanal rather than militarized.
+avoidRules: [photoreal, grimdark-war, neon-cyber, low-detail, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-014.webp }
+attributes:
+  negativePrompt: photoreal, grimdark-war, neon-cyber, low-detail, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-steampunk, categoryName: 4. Corepunk — Steampunk, tags: [solarpunk-dreamscapes-vault, corepunk, steampunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

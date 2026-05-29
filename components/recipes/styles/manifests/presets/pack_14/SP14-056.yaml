@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-056
+packId: pack_14
+name: Temple of Returning Heroes
+category: 5. Mythic — Greek Epics
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, greek-myth]
+visualDna:
+  aesthetic: Commemorative sanctuary for veterans returning from mythic campaigns.
+  form_and_line: Memorial terraces, votive niches, and processional ramps.
+  color_palette: Warm sandstone, laurel green, and bronze highlights.
+  lighting_setup: Evening golden light and commemorative torch rows.
+  material_texture: Carved stone tablets, bronze plaques, and linen standards.
+  render_quality: Emotional epic concept with clear memorial storytelling.
+  spatial_distortion: Ascending path perspective toward central shrine.
+  atmosphere: Honor, grief, and communal remembrance.
+  key_features: Name steles, hero reliefs, and offering courts.
+  creative_brief: A Greek memorial temple where victory and loss are curated together.
+avoidRules: [photoreal, comedy, cyberpunk, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-056.webp }
+attributes:
+  negativePrompt: photoreal, comedy, cyberpunk, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

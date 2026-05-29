@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-075
+packId: pack_14
+name: Raven Signal Plateau
+category: 8. Mythic — Norse Sagas
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, norse-myth]
+visualDna:
+  aesthetic: High plateau command zone where raven flights encode war messages.
+  form_and_line: Signal towers, perched standards, and stone map courts.
+  color_palette: Steel blue, basalt, and torch orange.
+  lighting_setup: Windy overcast with beacon pulses.
+  material_texture: Weathered stone, feather banners, and iron cages.
+  render_quality: Tactical overview concept with strong scale cues.
+  spatial_distortion: Plateau spread with layered lookout depths.
+  atmosphere: Surveillance, strategy, and mythic intelligence.
+  key_features: Raven roost towers, map stones, and signal fires.
+  creative_brief: A Norse command ground where birds carry state secrets.
+avoidRules: [photoreal, cute-style, cyberpunk, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-075.webp }
+attributes:
+  negativePrompt: photoreal, cute-style, cyberpunk, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

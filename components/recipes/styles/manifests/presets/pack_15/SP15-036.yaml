@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-036
+packId: pack_15
+name: Tideglass Subway
+category: 13. Corepunk — Seapunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+visualDna:
+  aesthetic: Coastal megacity transit line running through transparent tidal tunnels.
+  form_and_line: Cylindrical glass tubes, wavebreaker stations, and modular ferry interchanges.
+  color_palette: Aqua glass, coral pink, and midnight blue.
+  lighting_setup: Refraction caustics and station LEDs creating moving light bands.
+  material_texture: Reinforced tideglass, anti-salt alloys, and damp composite walkways.
+  render_quality: Detailed infrastructure concept with strong kinetic framing.
+  spatial_distortion: Long tunnel vanishing lines with fish silhouettes and passing trains.
+  atmosphere: Fast coastal energy, aquatic wonder, and civic fluidity.
+  key_features: Tideglass train tubes, reef transfer hubs, and kelp-powered station vents.
+  creative_brief: A seapunk metro where commuting itself becomes an underwater public spectacle.
+avoidRules: [photoreal, diesel-smog, rural-medieval, grim-warzone, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-036.webp }
+attributes:
+  negativePrompt: photoreal, diesel-smog, rural-medieval, grim-warzone, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

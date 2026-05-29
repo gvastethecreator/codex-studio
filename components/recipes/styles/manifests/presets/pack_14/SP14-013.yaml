@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-013
+packId: pack_14
+name: Grave Bell Observatory
+category: 4. Mythic — Cosmology & Omens
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Astral omen noir staged in a funerary bell observatory above a dead city.
+  form_and_line: Vertical belfry silhouette, radial star-chart motifs, and pendulum-centered geometry.
+  color_palette: Midnight blue-black, tarnished brass, and bone-white starlight accents.
+  lighting_setup: Moon slit beams plus lantern pools around engraved celestial instruments.
+  material_texture: Weathered limestone, oxidized bronze bells, wax seals, and soot-marked parchment maps.
+  render_quality: Premium narrative concept art with sharp focal hierarchy and long-range readability.
+  spatial_distortion: Upward spiral tower perspective converging at an aperture aligned with a bell core.
+  atmosphere: Liturgical vigilance, astronomical dread, and disciplined wonder.
+  key_features: Star-calibrated bell rig, omen charts, cloaked sentinels, and resonance-marked stone floors.
+  creative_brief: A secret observatory where bell tolls are synchronized to catastrophic constellations, turning astronomy into ritual warning.
+avoidRules: [photoreal, playful, bright-summer, sci-fi-clean, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-013.webp }
+attributes:
+  negativePrompt: photoreal, playful, bright-summer, sci-fi-clean, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

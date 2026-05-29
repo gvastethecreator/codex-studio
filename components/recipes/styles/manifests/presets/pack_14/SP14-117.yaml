@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-117
+packId: pack_14
+name: Thunder Palace of the River King
+category: 3. Mythic — Pantheons & Legends
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: River deity palace built from storm stone and ceremonial water terraces.
+  form_and_line: Cascading platforms, thunder pillars, and ceremonial flood channels.
+  color_palette: Rain gray, bronze, and deep blue-green.
+  lighting_setup: Storm-lit skylight with reflected water flashes.
+  material_texture: Wet basalt, river jade, and hammered bronze.
+  render_quality: Epic mythic environment with authoritative scale.
+  spatial_distortion: Diagonal water terraces leading to a high throne chamber.
+  atmosphere: Sovereignty, rainfall, and lawful power.
+  key_features: River throne, storm basin, and oath channels.
+  creative_brief: A pantheon palace where a river king governs both flood and memory.
+avoidRules: [photoreal, cute, cartoon, watermark, text, logo, empty-space]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-117.webp }
+attributes:
+  negativePrompt: photoreal, cute, cartoon, watermark, text, logo, empty-space
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

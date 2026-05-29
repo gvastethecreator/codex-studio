@@ -9,6 +9,7 @@ import {
   createStylePresetCatalog,
   validateStyleManifestGraph,
 } from '../components/recipes/stylePresetManifests';
+import { compareStylePackIdsForDisplay } from '../components/recipes/styles/packOrdering';
 
 export const rootDir = process.cwd();
 export const styleManifestsDir = path.join(rootDir, 'components', 'recipes', 'styles', 'manifests');
@@ -91,8 +92,9 @@ export async function loadStylePackManifests(
     manifests.push(await readYamlFile<StylePackManifest>(path.join(manifestsDir, fileName)));
   }
 
-  return manifests.sort((a, b) => a.id.localeCompare(b.id));
+  return manifests.sort((a, b) => compareStylePackIdsForDisplay(a.id, b.id));
 }
+
 
 export async function loadStylePresetManifests(
   manifestsDir = stylePresetManifestsDir,

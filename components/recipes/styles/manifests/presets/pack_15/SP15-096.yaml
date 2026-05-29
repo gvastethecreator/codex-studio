@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-096
+packId: pack_15
+name: Gearwork Schoolhouse
+category: 2. Corepunk — Clockpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+visualDna:
+  aesthetic: Educational institute teaching engineering through tactile clock systems.
+  form_and_line: Lecture wings, gear murals, and timing towers.
+  color_palette: Ivory, brass, and schoolhouse green.
+  lighting_setup: Clean daylight and model-room spotlights.
+  material_texture: Chalkboards, brass models, and polished desks.
+  render_quality: Warm institutional concept with educational clarity.
+  spatial_distortion: Campus composition centered on a clock tower.
+  atmosphere: Curiosity, discipline, and apprenticeship pride.
+  key_features: Gear classrooms, demonstration clocks, and maintenance labs.
+  creative_brief: A clockpunk school where learning is literally hands-on mechanics.
+avoidRules: [photoreal, toyish, cyberpunk, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-096.webp }
+attributes:
+  negativePrompt: photoreal, toyish, cyberpunk, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

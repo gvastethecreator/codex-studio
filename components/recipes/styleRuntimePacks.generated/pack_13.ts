@@ -14,7 +14,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
     id: "pack_13",
-    name: "Anime Character & Lifestyle",
+    name: "Anime 02 — Anime Character & Lifestyle",
     description: "Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.",
     presets: categoryPresets.flat(),
   };

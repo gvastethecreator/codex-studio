@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-115
+packId: pack_14
+name: Wax Seal Inquisition
+category: 2. Mythic — Ritual Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Investigative chamber dominated by wax seals and ceremonial stamps.
+  form_and_line: Tabletop layout, seal arrays, and sharp document edges.
+  color_palette: Deep red wax, midnight black, and parchment beige.
+  lighting_setup: Tight inspection lamps with low peripheral shadow.
+  material_texture: Melted wax, cardstock, brass stamp heads, and linen.
+  render_quality: Micro-detail interior with ritual investigation mood.
+  spatial_distortion: Flat table plane with towering seal stacks at the back.
+  atmosphere: Suspicion, procedure, and disciplined scrutiny.
+  key_features: Wax seals, verdict stamps, and confession packets.
+  creative_brief: A ritual investigation room where seals themselves carry the verdict.
+avoidRules: [photoreal, cute, neon, watermark, text, logo, empty-space]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-115.webp }
+attributes:
+  negativePrompt: photoreal, cute, neon, watermark, text, logo, empty-space
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

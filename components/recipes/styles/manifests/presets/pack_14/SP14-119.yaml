@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-119
+packId: pack_14
+name: Moon Judge Amphitheater
+category: 3. Mythic — Pantheons & Legends
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Amphitheater for a lunar judge deity with carved verdict tablets.
+  form_and_line: Circular seats, crescent dais, and tribunal columns.
+  color_palette: Moon silver, dark stone, and pale lavender.
+  lighting_setup: Night-sky glow with crisp tribunal highlights.
+  material_texture: Chiseled limestone, silver inlay, and formal drapery.
+  render_quality: Ceremonial concept art with judicial solemnity.
+  spatial_distortion: Ringed amphitheater converging on a crescent center.
+  atmosphere: Judgment, ritual fairness, and nocturnal authority.
+  key_features: Verdict tablets, moon crest, and witness steps.
+  creative_brief: A pantheon amphitheater where the moon judges the living with calm precision.
+avoidRules: [photoreal, cute, cartoon, watermark, text, logo, clutter]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-119.webp }
+attributes:
+  negativePrompt: photoreal, cute, cartoon, watermark, text, logo, clutter
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

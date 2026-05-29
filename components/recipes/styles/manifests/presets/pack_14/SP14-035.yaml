@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-035
+packId: pack_14
+name: Yokai Market Under Rain
+category: 7. Mythic — Japanese Yokai & Kami
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+visualDna:
+  aesthetic: Hidden night bazaar where spirits and humans barter under strict codes.
+  form_and_line: Covered stalls, hanging charms, and zigzag wet lanes.
+  color_palette: Petrol blue, candle gold, and muted crimson.
+  lighting_setup: Rain reflections and lantern haze.
+  material_texture: Bamboo awnings, lacquer trays, paper amulets, and puddled stone.
+  render_quality: Rich market scene with strong readability.
+  spatial_distortion: Layered stalls receding into fogged depth.
+  atmosphere: Suspicion, curiosity, and fragile coexistence.
+  key_features: Spirit vendor masks, warded stalls, and rain talisman ribbons.
+  creative_brief: A nocturnal yokai market where every trade has a symbolic price.
+avoidRules: [photoreal, goofy-comedy, fluorescent-cyber, modern-brands, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-035.webp }
+attributes:
+  negativePrompt: photoreal, goofy-comedy, fluorescent-cyber, modern-brands, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

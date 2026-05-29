@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-126
+packId: pack_15
+name: Bubble Reef Courtyard
+category: 13. Corepunk — Seapunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+visualDna:
+  aesthetic: Courtyard enclosed by bubble reefs and soft marine domes.
+  form_and_line: Rounded courtyard walls, bubble clusters, and reef arches.
+  color_palette: Bubblegum coral, aqua, and white foam.
+  lighting_setup: Bright diffused daylight with underwater bubble glints.
+  material_texture: Coral aggregate, translucent resin, and wet stone.
+  render_quality: Cheerful coastal concept with crisp courtyard geometry.
+  spatial_distortion: Courtyard inward pull framed by reefs and bubbles.
+  atmosphere: Playfulness, calm, and close-knit aquatic community.
+  key_features: Bubble reefs, courtyard rings, and shell benches.
+  creative_brief: A seapunk courtyard where bubbles and coral build a sheltered public room.
+avoidRules: [photoreal, harsh-industrial, sewage, watermark, text, logo, murky]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-126.webp }
+attributes:
+  negativePrompt: photoreal, harsh-industrial, sewage, watermark, text, logo, murky
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

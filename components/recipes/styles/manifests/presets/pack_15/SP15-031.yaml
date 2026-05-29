@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-031
+packId: pack_15
+name: Basalt Gear Sanctuary
+category: 12. Corepunk — Stonepunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
+visualDna:
+  aesthetic: Proto-industrial sanctuary where megalith engineering drives communal survival.
+  form_and_line: Cyclopean arches, carved gear motifs, and gravity-fed terraces.
+  color_palette: Basalt charcoal, copper oxide green, and fire ember orange.
+  lighting_setup: Hearthlight cores and skylight shafts across rough-cut stone planes.
+  material_texture: Chiseled basalt, rope pulleys, hammered copper, and packed clay.
+  render_quality: Heavy tactile concept art with robust structural clarity.
+  spatial_distortion: Layered vertical fortress view anchored by a central gear temple.
+  atmosphere: Ancient ingenuity, ritual labor, and elemental endurance.
+  key_features: Stone gear arrays, aqueduct lifts, and monolith workshop cloisters.
+  creative_brief: A stonepunk citadel proving complex machinery can emerge from primal materials.
+avoidRules: [photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-031.webp }
+attributes:
+  negativePrompt: photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-stonepunk, categoryName: 12. Corepunk — Stonepunk, tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

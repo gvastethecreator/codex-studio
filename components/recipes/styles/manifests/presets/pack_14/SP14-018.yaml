@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-018
+packId: pack_14
+name: Aegis Storm Citadel
+category: 5. Mythic — Greek Epics
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, greek-myth]
+visualDna:
+  aesthetic: Heroic Hellenic myth rendered as dark ceremonial epic with stormlit grandeur.
+  form_and_line: Doric battlements, shield-emblem friezes, and steep processional stair axes.
+  color_palette: Aegean cobalt, aged marble ivory, and oxidized bronze.
+  lighting_setup: Lightning forks and temple braziers carving hard silhouettes across colonnades.
+  material_texture: Salt-weathered limestone, hammered bronze shields, and wet obsidian flagstones.
+  render_quality: High-fidelity concept keyframe with monumental scale readability.
+  spatial_distortion: Vertical acropolis perspective rising through layered terraces and clouds.
+  atmosphere: Oath-bound valor, divine scrutiny, and thunder before battle.
+  key_features: Aegis iconography, eagle standards, storm altar, and spear-lined corridors.
+  creative_brief: A sacred Greek stronghold where mortal strategy and Olympian wrath converge before dawn.
+avoidRules: [photoreal, campy-comic, neon-sci-fi, modern-vehicles, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-018.webp }
+attributes:
+  negativePrompt: photoreal, campy-comic, neon-sci-fi, modern-vehicles, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

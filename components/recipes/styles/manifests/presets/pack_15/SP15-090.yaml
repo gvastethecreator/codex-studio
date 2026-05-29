@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-090
+packId: pack_15
+name: Sundial Government Steps
+category: 2. Corepunk — Clockpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+visualDna:
+  aesthetic: Civic governance hall calibrated by sundials and brass meters.
+  form_and_line: Stepped terraces, dial columns, and central noon marker.
+  color_palette: Stone ivory, brass, and sky blue.
+  lighting_setup: Direct solar shafts with clock-shadow precision.
+  material_texture: Carved limestone, gilded bronze, and linen drape.
+  render_quality: Formal public architecture with symbolic clarity.
+  spatial_distortion: Axial symmetry toward governance dais.
+  atmosphere: Deliberation, accountability, and measured power.
+  key_features: Sundial court, vote levers, and council meters.
+  creative_brief: A clockpunk government that literally aligns policy with daylight.
+avoidRules: [photoreal, dystopian, cyber-noise, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-090.webp }
+attributes:
+  negativePrompt: photoreal, dystopian, cyber-noise, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

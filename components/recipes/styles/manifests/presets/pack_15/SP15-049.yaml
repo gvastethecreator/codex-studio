@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-049
+packId: pack_15
+name: Deco Skybridge Exchange
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: Financial skybridge district in opulent machine-age style.
+  form_and_line: Stepped towers, chevron braces, and arched connectors.
+  color_palette: Black lacquer, brass, and jade.
+  lighting_setup: Evening marquee bands and art-deco uplights.
+  material_texture: Polished stone, gilded trim, and smoked glass.
+  render_quality: Luxurious urban concept with geometric clarity.
+  spatial_distortion: Elevated perspective across bridge network.
+  atmosphere: Ambition, secrecy, and metropolitan glamour.
+  key_features: Currency halls, deco skybridges, and turbine lobbies.
+  creative_brief: A decopunk exchange quarter where wealth circulates through architecture.
+avoidRules: [photoreal, rustic, cyber-neon-chaos, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-049.webp }
+attributes:
+  negativePrompt: photoreal, rustic, cyber-neon-chaos, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

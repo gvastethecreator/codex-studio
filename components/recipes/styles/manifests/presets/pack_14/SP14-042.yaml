@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-042
+packId: pack_14
+name: Willow Court of Fox Oaths
+category: 7. Mythic — Japanese Yokai & Kami
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+visualDna:
+  aesthetic: Judicial shrine where fox spirits arbitrate oaths and deceptions.
+  form_and_line: Courtyard rectangle, willow curtains, and raised tribunal platform.
+  color_palette: Willow green, moon gray, and lacquer crimson.
+  lighting_setup: Soft moon canopy with focused altar lanterns.
+  material_texture: Polished wood, hanging willow fibers, and engraved stone tablets.
+  render_quality: Narrative concept art with formal composition.
+  spatial_distortion: Centered court perspective emphasizing ritual hierarchy.
+  atmosphere: Elegant menace, legal mysticism, and quiet negotiation.
+  key_features: Fox judge masks, oath stones, and incense testimony braziers.
+  creative_brief: A nocturnal legal court where lies physically alter the surrounding shadows.
+avoidRules: [photoreal, goofy-style, cyberpunk-neon, modern-courtroom, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-042.webp }
+attributes:
+  negativePrompt: photoreal, goofy-style, cyberpunk-neon, modern-courtroom, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

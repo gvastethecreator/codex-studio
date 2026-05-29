@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-038
+packId: pack_15
+name: Radial Control Theater
+category: 8. Corepunk — Atompunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+visualDna:
+  aesthetic: Public energy command hall staged as a theatrical democratic spectacle.
+  form_and_line: Concentric control decks, radial consoles, and elevated auditoriums.
+  color_palette: Turquoise, ivory, and hazard yellow accents.
+  lighting_setup: Console underglow and dramatic top-down spotlight rings.
+  material_texture: Bakelite panels, brushed alloy rails, and acoustic felt walls.
+  render_quality: Retro-futurist interior concept with high legibility.
+  spatial_distortion: Circular depth pull toward the core command dais.
+  atmosphere: Institutional confidence, civic surveillance, and performative transparency.
+  key_features: Energy voting board, reactor model globe, and mission gallery.
+  creative_brief: A theatrical command room where power policy is literally staged in the round.
+avoidRules: [photoreal, cyberpunk-grime, fantasy-castles, horror, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-038.webp }
+attributes:
+  negativePrompt: photoreal, cyberpunk-grime, fantasy-castles, horror, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

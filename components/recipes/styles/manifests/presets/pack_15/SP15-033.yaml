@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-033
+packId: pack_15
+name: Flint Engine Market
+category: 12. Corepunk — Stonepunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
+visualDna:
+  aesthetic: Bustling workshop bazaar where friction engines and artisan mechanics dominate daily life.
+  form_and_line: Dense market alleys, pulley canopies, and stepped workshop fronts.
+  color_palette: Clay red, smoke gray, and amber firelight.
+  lighting_setup: Torch strings and forge sparks under shaded textile awnings.
+  material_texture: Flint components, braided hemp, raw timber stalls, and blackened bronze.
+  render_quality: Character-rich environment concept with strong material readability.
+  spatial_distortion: Compressed street perspective emphasizing crowded machine commerce.
+  atmosphere: Noisy invention, communal trade, and practical improvisation.
+  key_features: Spark-wheel stalls, mobile anvils, barter counters, and pit-forge kiosks.
+  creative_brief: A stonepunk market where every invention is assembled in public and tested immediately.
+avoidRules: [photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-033.webp }
+attributes:
+  negativePrompt: photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-stonepunk, categoryName: 12. Corepunk — Stonepunk, tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-104
+packId: pack_14
+name: Eclipse Cipher Library
+category: 1. Mythic — Symbolism
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Library of lunar codes and eclipse-based symbology.
+  form_and_line: Radial shelves, cipher rings, and circular reading tables.
+  color_palette: Midnight blue, brass, and parchment.
+  lighting_setup: Eclipse shadow with thin clerical lamps.
+  material_texture: Old paper, etched brass, and polished oak.
+  render_quality: Scholarly mythic concept art.
+  spatial_distortion: Circular plan centering on cipher altar.
+  atmosphere: Intellect, secrecy, and cosmic patterning.
+  key_features: Cipher scrolls, eclipse disks, and encoded indexes.
+  creative_brief: A symbolic library where eclipse geometry becomes a language of secret knowledge.
+avoidRules: [photoreal, whimsical, neon, watermark, text, logo, clutter]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-104.webp }
+attributes:
+  negativePrompt: photoreal, whimsical, neon, watermark, text, logo, clutter
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

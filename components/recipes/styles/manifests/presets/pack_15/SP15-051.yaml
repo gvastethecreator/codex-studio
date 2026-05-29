@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-051
+packId: pack_15
+name: Gilded Transit Rotunda
+category: 9. Corepunk — Decopunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+visualDna:
+  aesthetic: Monumental transit hub as an art-deco civic cathedral.
+  form_and_line: Circular concourse, ribbed vaults, and ticket balcony rings.
+  color_palette: Ivory, brass, and emerald accents.
+  lighting_setup: Diffused skylight and perimeter chandelier bands.
+  material_texture: Marble floors, brass grilles, and etched glass.
+  render_quality: Architectural concept with precise circulation logic.
+  spatial_distortion: Central rotunda focus with radial exits.
+  atmosphere: Ordered movement and ceremonial modernity.
+  key_features: Deco timetable clock, turbine escalators, and grand ticket hall.
+  creative_brief: A decopunk station where mobility is framed as elegant public theater.
+avoidRules: [photoreal, grunge, medieval-rustic, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-051.webp }
+attributes:
+  negativePrompt: photoreal, grunge, medieval-rustic, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

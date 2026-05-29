@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-020
+packId: pack_15
+name: Reactor Promenade
+category: 8. Corepunk — Atompunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+visualDna:
+  aesthetic: Elevated public walkway wrapped around ceremonial clean-energy reactors.
+  form_and_line: Curved skybridges, turbine fins, and segmented viewing decks.
+  color_palette: Cobalt blue, reactor lime, and white ceramic.
+  lighting_setup: Reactor core glow through transparent shielding with dusk sky contrast.
+  material_texture: Gloss ceramic cladding, tempered glass, and anti-radiation steel ribs.
+  render_quality: High-detail architectural concept with strong structural hierarchy.
+  spatial_distortion: Spiraling promenade perspective orbiting a central energy core.
+  atmosphere: Controlled exhilaration, scientific pride, and uneasy wonder.
+  key_features: Transparent reactor chamber, educational kiosks, and orbital cafe rings.
+  creative_brief: A people-first atompunk boulevard where energy infrastructure is a civic landmark.
+avoidRules: [photoreal, dystopian-bunker-only, sludge-industrial, fantasy-castle, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-020.webp }
+attributes:
+  negativePrompt: photoreal, dystopian-bunker-only, sludge-industrial, fantasy-castle, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

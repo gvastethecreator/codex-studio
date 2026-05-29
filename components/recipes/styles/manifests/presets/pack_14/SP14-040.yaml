@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-040
+packId: pack_14
+name: Shrine of Borrowed Faces
+category: 7. Mythic — Japanese Yokai & Kami
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+visualDna:
+  aesthetic: Esoteric sanctuary where lost identities are archived as spirit masks.
+  form_and_line: Circular archive halls, mask alcove grids, and mirror corridors.
+  color_palette: Pearl gray, ink black, and candle saffron.
+  lighting_setup: Low interior candle halos and mirrored bounce light.
+  material_texture: Lacquer masks, cedar shelves, and soot-marked paper records.
+  render_quality: Intimate symbolic scene with high detail density.
+  spatial_distortion: Ring-like room geometry focusing on central altar.
+  atmosphere: Introspective dread, memory ritual, and identity ambiguity.
+  key_features: Mask repositories, confession boxes, and mirror purification pools.
+  creative_brief: A kami archive where people leave faces behind to negotiate with fate.
+avoidRules: [photoreal, anime-cute, cyberpunk-ui, slapstick, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-040.webp }
+attributes:
+  negativePrompt: photoreal, anime-cute, cyberpunk-ui, slapstick, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
