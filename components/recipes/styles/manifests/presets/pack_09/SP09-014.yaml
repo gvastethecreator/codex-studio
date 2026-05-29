@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-014
 packId: pack_09
 name: Coral Reef
-category: 1. Natural Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Marine structure
   form_and_line: Pores and branches
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Branching
   atmosphere: Alive, colorful
   key_features: Porous
+  creative_brief: Render the porous city-building of coral, where calcium carbonate rises into branching spires and honeycombed domes beneath shifting underwater light. The surface should feel simultaneously alive and mineral, a bridge between animal and architecture painted in pink, orange, and purple. Caustic light must dance across the porous structure like a second living layer.
 avoidRules:
   - dead
   - bleached
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - natural-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

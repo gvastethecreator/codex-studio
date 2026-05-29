@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-020
+packId: pack_13
+name: Final Episode Skyline
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Epic anime finale with a sunset skyline.
+  form_and_line: Mature protagonist silhouette and contemplative stance.
+  color_palette: Twilight orange, deep blue, and soft black.
+  lighting_setup: Low-sun backlight with a cinematic halo.
+  material_texture: Wind through clothing, city lights, and clear sky.
+  render_quality: End-of-season still—elegant and emotional.
+  spatial_distortion: Wide establishing shot with figure in the foreground.
+  atmosphere: Resolution, nostalgia, and an open future.
+  key_features: Horizonte urbano, capa al viento, mood de despedida.
+  creative_brief: Closing image with restrained emotion and iconic presence.
+avoidRules:
+  - photoreal
+  - comedy-chibi
+  - lowres
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-020.webp
+attributes:
+  negativePrompt: photoreal, comedy-chibi, lowres, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

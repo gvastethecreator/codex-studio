@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-048
 packId: pack_07
 name: Rooftop Garden
-category: 4. Landscape Architecture
+category: 4. Landscape And Gardens
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-architecture
+  - landscape-and-gardens
 visualDna:
   aesthetic: City skyline view, urban aerie, high-rise garden escape, above-the-noise retreat, planted penthouse
   form_and_line: Railing, planter-grid, lounge-seating rectangle, pergola frame, hedge-row horizon
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Cool, escape, above-it-all, private-horizon, breeze, metropolitan quietude
   key_features: Skyline, railing edge, ipe deck, planter beds, fire pit, lounge seating, string lights
+  creative_brief: Skyline spreads below like a scatter of diamonds on dark velvet, the city reduced to jewelry by altitude. String lights write temporary constellations above ipe decking still warm from departed sun. The garden levitates above urban noise, an island of soil that forgot it was supposed to be on the ground.
 avoidRules:
   - ground level
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-architecture
-  categoryName: 4. Landscape Architecture
+  categoryId: landscape-and-gardens
+  categoryName: 4. Landscape And Gardens
   tags:
     - architecture-and-interior
-    - landscape-architecture
+    - landscape-and-gardens
   supportedTasks:
     - image_generate
     - image_edit

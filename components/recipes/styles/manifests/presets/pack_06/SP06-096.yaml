@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-096
 packId: pack_06
 name: Neo Geo Sprite King
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Neo-Geo-arcade-perfection, massive-detailed-sprites-unmatched, Metal-Slug-animation-fluidity, King-of-Fighters-sprite-artistry, Samurai-Shodown-silhouette-power, 1990-arcade-king-machine, unlimited-sprite-budget-during-development, every-frame-hand-drawn-with-love, AES-cartridge-ridiculous-price-tag-energy
   form_and_line: Enormous-detailed-sprite-pixels, massive-animation-frames-per-character, background-parallax-depth, no-hardware-sprite-limits-visible, pixel-art-at-its-peak
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Massive-sprite-on-screen-freedom, many-background-parallax-layers, no-object-limits-spatial, fluid-animation-without-spatial-compromise
   atmosphere: Arcade-royalty, pixel-art-apotheosis, money-is-no-object-production, SNK-golden-age, MVS-cartridge-heavyweight-champion
   key_features: Massive-detailed-sprites, Metal-Slug-animation-fluidity, 4096-simultaneous-colors, no-visible-sprite-limits, rich-arcade-palette, hundreds-of-animation-frames, SNK-sprite-artistry
+  creative_brief: Sprites explode with detail that should not fit in memory — Metal Slug soldiers with hundreds of animation frames, every death pose a work of art, every background tile hand-drawn with obsessive care. 4096 colors on screen simultaneously, the palette of a machine that refused to compromise. The image is the arcade at its absolute peak, a moment before polygons made pixels obsolete, when sprite art reached its final form.
 avoidRules:
   - low detail
   - limited sprite
@@ -38,13 +39,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

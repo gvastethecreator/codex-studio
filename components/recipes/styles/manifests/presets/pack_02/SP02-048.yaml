@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-048
 packId: pack_02
 name: Autochrome (1900s)
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: First color photo
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Dreamy, vintage, Belle Époque warmth, garden idyll
   key_features: Grainy color, starch-speckle, luminous pastels
+  creative_brief: A garden remembered through honeyed glass, where color arrives not in smooth ribbons but in tiny scattered grains like pollen suspended in a sunbeam. The world through this lens feels half-recalled — a waking dream filtered through dyed starch and diffuse window glow. Every frame carries the quiet astonishment of seeing the familiar rendered in lavender and rose for the very first time.
 avoidRules:
   - sharp
   - digital color
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

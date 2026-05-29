@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-019
+packId: pack_13
+name: Forest Spirit Courier
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Gentle anime fantasy with a spirit courier.
+  form_and_line: Organic linework, youthful silhouette, and companion creature.
+  color_palette: Forest green, cream, and sky blue.
+  lighting_setup: Soft natural morning light between trees.
+  material_texture: Leaves, handcrafted leather, and sealed paper.
+  render_quality: Charming illustration in a calm-adventure style.
+  spatial_distortion: Path perspective with layered organic depth.
+  atmosphere: Curiosidad, bondad y viaje personal.
+  key_features: Letter satchel, small spirit, forest path.
+  creative_brief: A mystical delivery day with a warm, familiar tone.
+avoidRules:
+  - photoreal
+  - dark-gore
+  - sci-fi-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-019.webp
+attributes:
+  negativePrompt: photoreal, dark-gore, sci-fi-neon, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

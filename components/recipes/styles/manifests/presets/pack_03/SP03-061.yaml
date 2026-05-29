@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-061
 packId: pack_03
 name: Hard Surface Modeling
-category: 4. Applications
+category: 1. Hard Surface And Industrial Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - hard-surface-and-industrial-cgi
 visualDna:
   aesthetic: Robot or gun
   form_and_line: Bevels, panel lines
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Mech design, precise, weapon-grade
   atmosphere: Industrial, military, tactical grit
   key_features: Functional parts, panel-line definition
+  creative_brief: 'Every bevel catches rim light like a knife edge, and panel lines carve functional logic across gunmetal surfaces — machined wear and scratched metal tell stories of assembly, disassembly, and combat. The geometry serves purpose before aesthetics: every greeble is a hypothetical component, every seam a maintenance access point. The image radiates weapon-grade precision, mech design where form follows function into the realm of tactical beauty.'
 avoidRules:
   - organic
   - soft
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: hard-surface-and-industrial-cgi
+  categoryName: 1. Hard Surface And Industrial Cgi
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - hard-surface-and-industrial-cgi
   supportedTasks:
     - image_generate
     - image_edit

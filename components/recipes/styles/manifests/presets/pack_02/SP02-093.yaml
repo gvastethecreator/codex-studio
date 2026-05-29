@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-093
 packId: pack_02
 name: Prehistoric Cave Painting
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Paleolithic cave-wall art, ochre-pigment hand stencils, rudimentary animal figures with too-many-legs, stick-figure hunters with spears, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, humanity's first cartoonists, thirty-thousand-year-old doodle energy
   form_and_line: Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural pigment strokes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Animals with impossible leg counts, headless hunters, overlapping-time narrative on same wall, no ground-line suspension
   atmosphere: Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence
   key_features: Hand-stencil negative prints, ochre-red animal outlines, charcoal-stick roughness, limestone rock texture, torchlight flicker, no ground plane
+  creative_brief: Raw ochre pressed into limestone by firelight, a gallery of silhouettes and stencils breathing beneath the earth. Each mark carries the weight of a world before language, stories told through the flicker of flame on mineral-crusted rock. The wall remembers what hands once declared upon it, exhalations of wonder trapped in pigment and stone.
 avoidRules:
   - modern
   - digital
@@ -40,11 +41,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

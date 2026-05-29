@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
   aesthetic: Severe black uniforms, palace-scale combat, spiritual warfare, white-black contrast, calligraphic attack names, aristocratic villain drama, divine war-pageantry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
   atmosphere: Regal, severe, explosive, mythic
   key_features: Black robe silhouettes, palace verticality, spiritual attack effects, dramatic cloak movement, sword-name theatrics
+  creative_brief: Black robes sweep across marble floors like ink bleeding into holy water, and every thunderclap is a name spoken too loudly. Combat here is not battle but liturgy, each blade swing a prayer to oblivion delivered with regal precision. The sky answers steel with steel, and silence with silence.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: modern-shonen-and-action
   categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - modern-shonen-and-action
   supportedTasks:
     - image_generate

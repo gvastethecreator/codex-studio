@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-071
 packId: pack_09
 name: Plywood
-category: 5. Elemental & FX
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Construction sheet
   form_and_line: Layers on edge
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Splinters
   atmosphere: Unfinished, work
   key_features: Knots
+  creative_brief: Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous ribbon of blonde pine, now layered into structural flatness with knots punctuating the surface like dark eyes. The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its veneers. Capture the beauty of the provisional, wood made efficient.
 avoidRules:
   - solid wood
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

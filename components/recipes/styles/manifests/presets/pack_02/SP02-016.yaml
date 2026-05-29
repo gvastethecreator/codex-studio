@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-016
 packId: pack_02
 name: Space Opera (70s)
-category: 1. Film Genres
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - film-genres
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Scrappy analog space opera, Star Wars A New Hope, used-future rebellion, practical model magic
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Adventure, dirty, swashbuckling rebellion, cantina grit
   key_features: Greebles, astromech, hyperspace streak
+  creative_brief: Starships built from salvaged dreams drift through a galaxy where every hull plate tells a story of hardship and hope. The camera lingers on grease-stained panels and jury-rigged consoles, finding heroism in the worn edges of rebellion. Let each frame feel like a matte painting come alive, where wonder is born from scrap metal and starlight.
 avoidRules:
   - cgi
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: film-genres
-  categoryName: 1. Film Genres
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - film-genres
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

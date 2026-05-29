@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-358
+packId: pack_16
+name: Hajime no Ippo - Corner Stool Comeback Grit
+category: 6. Sports, Competition & Performance
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - sports-competition-and-performance
+visualDna:
+  aesthetic: Boxing gym sweat, taped fists, underdog muscle effort, ropes and bruises, comeback spirit and technical grit rendered with old-school sports-drama sincerity
+  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
+  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
+  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
+  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
+  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
+  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
+  atmosphere: Grueling, inspiring, rough, determined
+  key_features: Boxing-ring ropes, glove-impact pose, corner-stool exhaustion, taped-hand detail, coach-fighter framing
+  creative_brief: Taped fists rest heavy on aching knees while the ring ropes hum with the crowd's distant thunder. Sweat pools on the corner stool like a sacrament of perseverance, every bruise a chapter in the gospel of rising once more.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-358.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: sports-competition-and-performance
+  categoryName: 6. Sports, Competition & Performance
+  tags:
+    - anime-classics-and-prestige
+    - sports-competition-and-performance
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

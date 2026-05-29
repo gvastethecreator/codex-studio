@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-048
 packId: pack_03
 name: Product Render
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Consumer electronics
   form_and_line: Sleek curves
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Desirable, expensive, luxury reveal
   key_features: White background
+  creative_brief: 'The object floats on an infinite white void — no environment, no context, only the product itself rendered with the reverence of a religious icon. Matte aluminum catches studio reflections in controlled sweeps, and brand colors pop against the absence of distraction with flagship-launch confidence. The image channels Apple keynote minimalism: every chamfer, every seam, every material transition designed to make you reach for your wallet.'
 avoidRules:
   - dust
   - scratches
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

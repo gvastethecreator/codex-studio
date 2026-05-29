@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Recursive
   atmosphere: Infinite, trippy
   key_features: Self-similarity
+  creative_brief: Mathematics blooms into cathedral windows, each recursion a deeper threshold. The infinite peers back through self-similar corridors, a coastline that never resolves into a straight line.
 avoidRules:
   - simple
   - finite
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-006
 packId: pack_08
 name: Cyberpunk Techwear
-category: 3. Subcultures
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - fashion-and-costume
-  - subcultures
+  - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Futuristic ninja outfit, neon-drenched operator, rain-slicked mercenary
   form_and_line: Straps, buckles, pockets, articulated knee darts, webbing harness geometry, asymmetrical zip lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Masked face
   atmosphere: Dark, prepared, cool, anticipatory stillness, urban camouflage, modular survival
   key_features: Utility focus, MOLLE webbing, magnetic fidlock closures, articulated hood
+  creative_brief: A silhouette carved from shadow and sealed seams, breathing only where the fabric allows. Neon hieroglyphs paint the rain-slicked operator in borrowed color while magnetic buckles click like whispered passwords. This is clothing as armor for a war fought in data, worn by ghosts who move between surveillance cameras.
 avoidRules:
   - vintage
   - natural
@@ -32,13 +33,14 @@ attributes:
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
-  categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryId: fantasy-sci-fi-costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
-    - subcultures
+    - fantasy-sci-fi-costume
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

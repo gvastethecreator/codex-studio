@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-001
+packId: pack_15
+name: Terraced Sky Harvest
+category: 1. Solarpunk Dreamscapes
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+visualDna:
+  aesthetic: Elevated agrarian solarpunk with communal beauty.
+  form_and_line: Organic architecture, small human figures, and gentle flow.
+  color_palette: Leaf green, sunlit cream, and clear sky blue.
+  lighting_setup: Broad morning light with soft reflections.
+  material_texture: Light wood, moist vegetation, and translucent panels.
+  render_quality: Luminous illustration with editorial clarity.
+  spatial_distortion: Terrazas escalonadas hacia el cielo.
+  atmosphere: Abundance, harmony, and tangible optimism.
+  key_features: Elevated crops, water systems, active community.
+  creative_brief: An aerial harvest landscape where technology almost disappears into everyday beauty.
+avoidRules: [photoreal, dystopian, dirty-pollution, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-001.webp }
+attributes:
+  negativePrompt: photoreal, dystopian, dirty-pollution, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-073
 packId: pack_08
 name: Body Paint
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Creative, naked, painted-vulnerability confidence, art-gallery hush, body-ceremony ritual
   key_features: Paint, brush strokes, trompe-l-oeil effect, painted seams, skin-texture beneath
+  creative_brief: Brush strokes that trace lapels and buttonholes where none exist, the body a trompe-l'oeil canvas that tricks the eye into seeing fabric where there is only pigment and skin. Acrylic matte drying to a second epidermis, airbrush gradients creating shadows that move when the wearer does, the paint fragile and temporary, clothing worn only for the duration of a photograph before water returns the body to itself.
 avoidRules:
   - clothes
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

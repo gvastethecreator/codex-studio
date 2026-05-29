@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-020
 packId: pack_02
 name: Reality TV Confessional
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Interview chair
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Green screen back, chroma-key spill, composited backdrop
   atmosphere: Gossip, drama, backstabbing tears, producer manipulation
   key_features: Eye contact, direct-to-camera, tearful close-up
+  creative_brief: The subject sits alone yet performs for millions, a single tear catching the engineered gleam of the ring light. Behind them, nowhere dissolves into anywhere, a void that becomes whatever the story demands. Intimacy is manufactured here, but the trembling lip never lies.
 avoidRules:
   - scripted
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

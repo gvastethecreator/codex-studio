@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-178
+packId: pack_13
+name: Blue Seed - Mythic Tokyo Purge
+category: 4. Shojo, Magical Girl & Visionary Classics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - shojo-magical-girl-and-visionary-classics
+visualDna:
+  aesthetic: Mythic plant-horror action in modern Tokyo, shrine lineage duty, monster invasions, spiritual bureaucracy, 90s occult action with emergency-team momentum
+  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
+  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
+  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
+  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
+  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
+  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  atmosphere: Urgent, mythic, urban, supernatural
+  key_features: Shrine symbols, monster-vine invasions, city emergency framing, lineage heroine posture, occult-tech contrast
+  creative_brief: Ancient roots crack concrete, and the city learns its own mythology the hard way. Shrine duty is not heritage but emergency, a bloodline answering the phone at 3 AM. In the spaces between skyscrapers, something older than asphalt stirs and remembers its name.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-178.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: shojo-magical-girl-and-visionary-classics
+  categoryName: 4. Shojo, Magical Girl & Visionary Classics
+  tags:
+    - anime-character-and-lifestyle
+    - shojo-magical-girl-and-visionary-classics
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

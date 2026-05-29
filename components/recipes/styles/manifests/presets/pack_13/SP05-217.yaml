@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-217
+packId: pack_13
+name: Keep Your Hands Off Eizouken! - Sketch Imagination Sprint
+category: 5. Slice of Life & Moe
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-and-moe
+visualDna:
+  aesthetic: Student creativity exploding into rough production fantasies, sketchbook engines, hand-built worlds, clubroom zeal, imagination visualized with practical design obsession
+  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
+  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
+  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
+  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
+  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
+  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  atmosphere: Inventive, spirited, nerdy, kinetic
+  key_features: Sketch overlays, invention poses, clubroom clutter, production imagination sequences, rough-draft visual energy
+  creative_brief: A sketch transforms mid-page from doodle to world — dams burst, cities fly, and three girls in a flooded clubroom invent visual language from scratch paper and obsession. Imagination here has mass and velocity, rough storyboards carrying the weight of entire universes. The best special effect is the spark in an animator eye.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-217.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-and-moe
+  categoryName: 5. Slice of Life & Moe
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-and-moe
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

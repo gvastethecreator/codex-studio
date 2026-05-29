@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-042
 packId: pack_04
 name: Album Cover (Surreal)
-category: 3. Editorial & Poster
+category: 2. Editorial Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - editorial-illustration
 visualDna:
   aesthetic: Surreal album-art dreamscape, Pink Floyd style, Hipgnosis iconic, prism mystery, impossible geometry
   form_and_line: Sharp
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Impossible object
   atmosphere: Deep, weird, headphone trance, lysergic meditation
   key_features: Square crop, surreal juxtaposition, prism symbolism
+  creative_brief: Impossible geometries float in headphone-space, the visual logic of a dream where physics follows feeling instead of force. Prismatic light bends through surreal architectures constructed from album-side attention spans. This is what music looks like when you close your eyes, the cover art as portal rather than packaging.
 avoidRules:
   - photo
   - boring
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: editorial-illustration
+  categoryName: 2. Editorial Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - editorial-illustration
   supportedTasks:
     - image_generate
     - image_edit

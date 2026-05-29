@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-023
 packId: pack_09
 name: Brick Wall (Aged)
-category: 2. Man-Made Materials
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Old masonry
   form_and_line: Mortar lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Chipped corners
   atmosphere: Solid, history
   key_features: Running bond
+  creative_brief: Capture the warm disorder of aged brick where every unit carries a unique blush of kiln fire and crumbling mortar maps the passage of decades between red clay bodies. The running bond pattern should feel like a woven tapestry of earth and fire, rough and uneven. Render the accumulated imperfection of walls that have learned to breathe through chipped corners and softened edges.
 avoidRules:
   - new
   - perfect
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-079
+packId: pack_12
+name: Radiant Citadel Co-op Hold
+category: 4. Sieges, Warfronts & Last Stands
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+visualDna:
+  aesthetic: Cooperative defense in a radiant citadel.
+  subject_treatment: Clases complementarias cubriendo accesos.
+  color_and_tone: Radiant white, gold, and heroic blue.
+  lighting_and_shadow: Light sources integrated into the architecture.
+  texture_and_material: Clean marble, ornamented metal, and crystal.
+  camera_and_composition: Central plaza with multiple routes.
+  atmosphere_and_mood: Unity, urgency, and positive epic momentum.
+  rendering_and_quality: Co-op setting with impeccable readability.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - grimdark
+  - blur
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-079.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

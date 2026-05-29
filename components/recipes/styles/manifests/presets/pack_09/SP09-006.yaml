@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-006
 packId: pack_09
 name: Marble (Carrara)
-category: 1. Natural Materials
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - organic-and-bio-materials
 visualDna:
   aesthetic: White Italian marble
   form_and_line: Grey veins
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Classic, pure
   key_features: Veining
+  creative_brief: Sculpt light through the translucent skin of Carrara marble, where grey veins drift like smoke frozen in alabaster across a field of pure white. The material should glow as if lit from within, cold to the eye but warm in its perfection. This is stone that dreams of being cloud, the ceiling of the Sistine rendered as pure surface.
 avoidRules:
   - dirty
   - yellow
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - natural-materials
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

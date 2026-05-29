@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-021
 packId: pack_04
 name: Gouache Illustration
-category: 2. Children's Illustration
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - children-s-illustration
+  - childrens-and-educational
 visualDna:
   aesthetic: Mary Blair style, mid-century modern
   form_and_line: Dry brush
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Stylized shapes
   atmosphere: Colorful, design, atomic-age optimism, playful modernism
   key_features: Brush texture, dry-brush stroke, gouache opacity
+  creative_brief: Gouache sits on the surface with the confident opacity of mid-century optimism, every brushstroke a declaration of design. Flat shapes and dry-brush textures dance together in the geometric ballet of atomic-age whimsy. This is modernism with a warm heart, where abstraction and affection share the same canvas.
 avoidRules:
   - transparent
   - watercolor
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: children-s-illustration
-  categoryName: 2. Children's Illustration
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - children-s-illustration
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

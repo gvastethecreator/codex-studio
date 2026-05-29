@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-036
 packId: pack_04
 name: Collage Art (Dada)
-category: 3. Editorial & Poster
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Cut and paste
   form_and_line: Scissor cuts
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Hybrid objects
   atmosphere: Rebellious, weird, dada absurdism, anti-art provocation
   key_features: Paper edges, scissor-cut seams, photo-fragment juxtaposition
+  creative_brief: Scissor edges interrupt photographic reality, grafting disparate moments into impossible hybrid forms. Sepia photographs and halftone fragments share space without permission, their juxtaposition the entire argument. This is creation as rupture, where meaning emerges from the collision of things that were never meant to meet.
 avoidRules:
   - seamless
   - painted
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

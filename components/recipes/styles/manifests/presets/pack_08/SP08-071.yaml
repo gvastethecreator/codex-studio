@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-071
 packId: pack_08
 name: Porcelain Doll
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Joints
   atmosphere: Uncanny, stiff, toy-room-after-dark unease, porcelain-fragility tension, glass-stare mystery
   key_features: Shiny skin, glass eyes, ball joints, painted cheeks, mohair wig
+  creative_brief: Bisque fired to the temperature of a blush that will never fade, glass eyes catching display-cabinet light with the frozen attentiveness of something that was never alive but never stops watching. Ball joints articulate limbs into poses chosen by someone else, mohair wig perfectly arranged, the crackle-gold kintsugi line across the cheek the only evidence that this perfection was ever broken and reassembled with more care than the original creation.
 avoidRules:
   - skin
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

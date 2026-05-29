@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-064
+packId: pack_12
+name: Iron Orchard Defense Night
+category: 4. Sieges, Warfronts & Last Stands
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+visualDna:
+  aesthetic: Night defense of a mechanized plantation.
+  subject_treatment: Rural sentinels with improvised turrets.
+  color_and_tone: Dark green, lamp orange, and steel gray.
+  lighting_and_shadow: Perimeter lights with long shadows.
+  texture_and_material: Damp soil, oxidized metal, and leaves.
+  camera_and_composition: Defensive lanes converging on the barn.
+  atmosphere_and_mood: Teamwork and local resistance.
+  rendering_and_quality: Clear tactical stage for tower defense.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - futuristic-city
+  - noisy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-064.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

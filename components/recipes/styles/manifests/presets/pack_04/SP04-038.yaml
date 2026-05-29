@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-038
 packId: pack_04
 name: National Park Poster (WPA)
-category: 3. Editorial & Poster
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Screenprint landscape
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simplified mountains
   atmosphere: Majestic, graphic, road-trip reverie, democratic grandeur
   key_features: Serif font, layered silhouette, scenic horizontal banding
+  creative_brief: Layered silhouettes of mountains stack like geological promises, each color band a different hour of the wilderness day. Serif type announces destinations with the authority of a national promise. This is landscape translated through the democracy of screenprint, where nature becomes poster and poster becomes monument.
 avoidRules:
   - photo
   - detailed
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-064
 packId: pack_10
 name: Snake Skin
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Wild, luxury
   key_features: Scale grid
+  creative_brief: Overlapping shields of keratin laid down in a pattern older than mammals, catching light in diamond facets. The texture of silent movement, a surface that promises danger and demands attention.
 avoidRules:
   - fur
   - smooth
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

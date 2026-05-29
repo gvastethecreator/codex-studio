@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-026
 packId: pack_03
 name: Knolling (Flat Lay)
-category: 3. 3D Styles
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - 3d-styles
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Disassembled parts arranged
   form_and_line: 90 degree angles
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Organization porn, product-exploded
   atmosphere: Satisfying, organized, design-museum
   key_features: Grid layout, 90-degree arrangement
+  creative_brief: 'Every component lies at perfect right angles, a exploded-view diagram rendered beautiful — top-down lighting eliminates shadows, and the clean background turns disassembly into museum curation. Each part occupies its ordained grid cell with the satisfaction of a perfectly packed toolbox. The image is organization elevated to art: a design museum where even the screws have their moment of solo exhibition.'
 avoidRules:
   - messy
   - piled
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: 3d-styles
-  categoryName: 3. 3D Styles
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - 3d-styles
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-068
 packId: pack_06
 name: Zine Aesthetic
-category: 4. Mixed Media
+category: 5. Mixed Media
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Rough cuts
   atmosphere: Raw, underground
   key_features: Xerox grain
+  creative_brief: The photocopier flattens everything into high-contrast grain, shadows becoming solid black, highlights burning to paper white. Staples and tape hold the booklet together, toner rubbing off on fingers that turn the pages. The image lives in the reproduction, the original lost or never existed — only the copy remains, and that is enough.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: mixed-media
-  categoryName: 4. Mixed Media
+  categoryName: 5. Mixed Media
   tags:
     - essential-art-styles
     - mixed-media
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

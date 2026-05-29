@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-088
+packId: pack_13
+name: Kobayashi's Dragon Maid – Domestic Fantasy Chaos
+category: 5. Slice of Life & Moe
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-and-moe
+visualDna:
+  aesthetic: Household comedy colliding with mythic creatures, bright domestic mayhem, affectionate humor, maid-dragon Tohru, tail-cooking gags, Kanna-chan cuteness, portal-to-another-world
+  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
+  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
+  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
+  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
+  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
+  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  atmosphere: Whimsical, bustling, heartwarming, chaotic
+  key_features: Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth
+  creative_brief: A dragon in an apron is the universe's best joke and also its most sincere — mythic power folded into domestic devotion, tail used for cooking, portal to another world opening behind the laundry. The apartment is too small for this much love and entirely large enough to hold it all. Make chaos feel like home.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-088.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-and-moe
+  categoryName: 5. Slice of Life & Moe
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-and-moe
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-090
 packId: pack_02
 name: Spiky Edgy Attitude Cartoon
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Aggressively angular character design, everything composed of sharp triangles and jagged edges, permanent scowl carved into face, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy
   form_and_line: Razor-sharp angular contours, triangular composition everywhere, spiked hair drawn as caltrops, jagged motion lines, aggressive hatch shading
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Characters as walking collections of triangles, hair as impossible razor fans, limbs narrowing to needle points
   atmosphere: Angry, rebellious, anti-establishment sneer, teenage wasteland cool, too-much-energy rage
   key_features: Triangular everything, permanent angry eyebrows, spiked-hair crowns, jagged speech bubbles, crosshatched shadows, no curves allowed
+  creative_brief: Every contour resolves into a point, every junction into a blade—the geometry of defiance rendered in high-contrast fury. Curves have been banned by decree; only angles may speak in this vocabulary of adolescent rebellion. The page crackles with the voltage of someone who has decided that softness is the enemy and sharpness is the only honest shape.
 avoidRules:
   - soft
   - gentle
@@ -39,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

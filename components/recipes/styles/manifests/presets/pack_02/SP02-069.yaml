@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-069
 packId: pack_02
 name: Split Lighting
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Half face shadow
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Tense, hidden, internal conflict, shadow self
   key_features: Half black, half lit, eye in shadow, dramatic side-profile
+  creative_brief: The face becomes a battlefield where illumination and absence meet without negotiation—no gradient, no compromise, just a razor edge dividing revelation from concealment. One eye burns in the light while the other drowns in shadow, and the story lives in the tension between these two irreconcilable halves.
 avoidRules:
   - flat light
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-068
 packId: pack_02
 name: Bokeh (Macro)
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Blurry lights
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Circles, aperture shape projection, specular disc
   atmosphere: Soft, night, magical blur, romantic haze
   key_features: Shallow DOF, background abstraction, light orbs
+  creative_brief: The world recedes into a vocabulary of circles—soft amber planets and cyan moons floating in a sea of optical tenderness. Focus narrows to a single truth while everything else dissolves into creamy abstraction, the background becoming a lullaby of light that frames rather than distracts.
 avoidRules:
   - deep focus
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

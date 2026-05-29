@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-077
 packId: pack_08
 name: Stone Statue
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Rigid
   atmosphere: Timeless, still, museum-after-hours magic, sculptural-permanence awe, stone-silence eternity
   key_features: Marble, veining, chisel marks, contrapposto, pedestal
+  creative_brief: Carrara marble holding the contrapposto of a figure that has been standing still since before galleries had electric light, chisel marks still visible in the drapery folds like the signature of the sculptor's final touch. Veins of grey running through the stone like frozen weather, the pedestal the only admission that this form was ever anything other than a living body that chose to trade flesh for permanence.
 avoidRules:
   - flesh
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

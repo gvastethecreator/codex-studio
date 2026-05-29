@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-006
+packId: pack_13
+name: Spirit Shrine Twilight
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Japanese spiritual fantasy at twilight.
+  form_and_line: Organic linework, stylized traditional clothing, and ethereal silhouettes.
+  color_palette: Indigo, twilight orange, and paper white.
+  lighting_setup: Warm backlight with spiritual halos.
+  material_texture: Madera antigua, papel washi y niebla suave.
+  render_quality: Mystical anime illustration with high clarity.
+  spatial_distortion: Profundidad de santuario con capas de torii.
+  atmosphere: Serenidad, misterio y reverencia.
+  key_features: Guiding spirit, shrine, twilight light.
+  creative_brief: A meeting between human and spirit in a ceremonial setting with a contemplative tone.
+avoidRules:
+  - photoreal
+  - horror-gore
+  - sci-fi-ui
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-006.webp
+attributes:
+  negativePrompt: photoreal, horror-gore, sci-fi-ui, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

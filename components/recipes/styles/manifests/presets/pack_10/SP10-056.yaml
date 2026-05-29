@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-056
 packId: pack_10
 name: Carbon Fiber
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Sporty, modern
   key_features: Weave
+  creative_brief: Thousands of filaments woven into a fabric stronger than steel, the weave catching light in diagonal whispers. The texture of speed and precision, a material that promises performance before it promises beauty.
 avoidRules:
   - organic
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

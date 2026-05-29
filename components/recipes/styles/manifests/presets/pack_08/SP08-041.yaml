@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-041
 packId: pack_08
 name: Cybernetic Implant
-category: 5. Fantasy/Sci-Fi Costume
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Robot arm
   atmosphere: Transhuman, cool, augmentation-identity tension, clinical-aesthetic chill, future-body wonder
   key_features: Metal parts, seam-line integration, exposed circuitry, bionic eye, neural port
+  creative_brief: Titanium tracing the boundary where biology yields to engineering, carbon-fiber contours following bone that remembers being human. Bioluminescent circuits pulse beneath semi-transparent silicone, the neural port glowing at the temple like a third eye that sees data streams instead of dreams, the body no longer a given but a decision.
 avoidRules:
   - fully human
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fantasy-sci-fi-costume
-  categoryName: 5. Fantasy/Sci-Fi Costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
     - fantasy-sci-fi-costume
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

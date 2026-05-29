@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-368
+packId: pack_16
+name: Blue Giant - Midnight Jazz Sax Ascension
+category: 6. Sports, Competition & Performance
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - sports-competition-and-performance
+visualDna:
+  aesthetic: Urban jazz obsession, smoky club stages, saxophone glow, relentless practice and stage eruption rendered through adult performance intensity and blue-hour city mood
+  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
+  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
+  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
+  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
+  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
+  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
+  atmosphere: Driven, nocturnal, soulful, explosive
+  key_features: Saxophone shine, club-stage spotlights, smoke haze, soloist silhouette, city-night music vibe
+  creative_brief: Smoke curls around a saxophone bell as blue-hour city light leaks through club windows, the soloist ascending note by note into a private stratosphere. Jazz becomes pilgrimage, every late-night session a station on the road to total sound.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-368.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: sports-competition-and-performance
+  categoryName: 6. Sports, Competition & Performance
+  tags:
+    - anime-classics-and-prestige
+    - sports-competition-and-performance
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

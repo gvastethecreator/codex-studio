@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-048
 packId: pack_08
 name: Zombie Survivor
-category: 5. Fantasy/Sci-Fi Costume
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Wounds
   atmosphere: Scared, tough, constant-vigilance exhaustion, survival-instinct clarity, herd-approach dread
   key_features: Weapon, crossbow or knife, backpack, fingerless gloves, sheriff hat
+  creative_brief: Duct tape holding together denim that has not been washed since the world ended, flannel stiff with substances better left unnamed, each layer a calendar of survival worn against skin. The crossbow slung across a back that tenses at every distant sound, fingerless gloves gripping a knife that has learned the difference between the living and the returned, sheriff hat a relic of an authority that no longer exists.
 avoidRules:
   - clean
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fantasy-sci-fi-costume
-  categoryName: 5. Fantasy/Sci-Fi Costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
     - fantasy-sci-fi-costume
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

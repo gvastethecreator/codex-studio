@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-013
+packId: pack_12
+name: Crystal Desert Shrine
+category: 2. Arcane Temples & Mythic Realms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+visualDna:
+  aesthetic: Mystical sanctuary in resonant quartz desert.
+  subject_treatment: Guardians with prismatic weapons and long capes.
+  color_and_tone: Rose sand, amethyst, and solar white.
+  lighting_and_shadow: Harsh sun with multicolor refractions.
+  texture_and_material: Faceted crystals, fine dust, and carved stone.
+  camera_and_composition: Wide-angle framing with a ceremonial stairway.
+  atmosphere_and_mood: Sacred, silent, and expectant.
+  rendering_and_quality: Environmental art for a premium zone.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - urban-neon
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-013.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

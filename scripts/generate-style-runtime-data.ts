@@ -17,6 +17,7 @@ const checkOutputPath = path.join(
 );
 const checkPackFileSuffix = `.check.${process.pid}.${Date.now()}.tmp.ts`;
 const checkMode = process.argv.includes('--check');
+const skipFormat = process.env.STYLE_RUNTIME_SKIP_FORMAT === '1';
 
 const { graph, packManifests, presetManifests } = await loadStyleManifestGraph();
 
@@ -206,7 +207,9 @@ if (checkMode) {
         ),
       ),
     ]);
-    await formatGeneratedFiles([checkOutputPath, ...checkPackPaths, ...checkCategoryPaths]);
+    if (!skipFormat) {
+      await formatGeneratedFiles([checkOutputPath, ...checkPackPaths, ...checkCategoryPaths]);
+    }
     const [expectedIndex, actualIndex] = await Promise.all([
       readFile(checkOutputPath, 'utf8'),
       readFile(outputPath, 'utf8'),
@@ -298,7 +301,9 @@ await Promise.all([
   ),
 ]);
 
-await formatGeneratedFiles([outputPath, ...packOutputPaths, ...categoryOutputPaths]);
+if (!skipFormat) {
+  await formatGeneratedFiles([outputPath, ...packOutputPaths, ...categoryOutputPaths]);
+}
 
 console.log(`[styles:runtime] wrote ${path.relative(rootDir, outputPath)}`);
 console.log(

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-059
+packId: pack_12
+name: Prismatic Arena Hero Draft
+category: 5. Speed, Sport & Competitive Arenas
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+visualDna:
+  aesthetic: Esports arena for drafting prismatic heroes.
+  subject_treatment: Characters with highly differentiated silhouettes.
+  color_and_tone: Controlled multicolor palette over a neutral background.
+  lighting_and_shadow: Stage spotlights and LED panels.
+  texture_and_material: Clean armor, crystal, and energy.
+  camera_and_composition: Frontal reveal-style presentation.
+  atmosphere_and_mood: Competition, hype, and visual precision.
+  rendering_and_quality: Promotional material for the draft phase.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - muddy-palette
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-059.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-002
 packId: pack_01
 name: Candid Street Portrait
-category: 1. Portrait Styles
+category: 4. Documentary And Street
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-styles
+  - documentary-and-street
 visualDna:
   aesthetic: Authentic candid street photography, photojournalistic portraiture, unposed and natural
   subject_treatment: Natural depth of field, subject isolated from busy background, spontaneous expression
@@ -20,6 +20,7 @@ visualDna:
   camera_and_composition: Shot on 35mm or 50mm lens, slight motion blur in background, dynamic framing
   atmosphere_and_mood: Real, fleeting, documentary, slice-of-life, energetic
   rendering_and_quality: High quality documentary photography, authentic, unretouched look
+  creative_brief: A stolen glance across an intersection, the city breathing through its inhabitants, the sidewalk transformed into a theater of unscripted moments. Available light catches a stranger mid-thought, the frame holding its breath as asphalt grain and fleeting honesty conspire. Documentary truth rendered through the lens of someone who forgot the camera was there, the urban pulse beating in every unposed frame.
 avoidRules:
   - illustration
   - painting
@@ -43,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-styles
-  categoryName: 1. Portrait Styles
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
   tags:
     - photography-and-realism
-    - portrait-styles
+    - documentary-and-street
   supportedTasks:
     - image_generate
     - image_edit

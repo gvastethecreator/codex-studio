@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-064
 packId: pack_02
 name: Neon Noir
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Wet city street
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Urban, lonely, neon solitude, night-walker melancholy
   key_features: Reflections, neon signs, rain streaks, empty crosswalk
+  creative_brief: After midnight, the city writes itself in reflections—pink and cyan bleeding across wet pavement like spilled ink from a broken sign. Every puddle holds a fractured cosmos, every slick surface doubles the loneliness, and the rain does not wash anything clean; it only makes the glow run deeper.
 avoidRules:
   - daylight
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

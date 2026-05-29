@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-021
 packId: pack_10
 name: Datamosh
-category: 5. Digital Glitch & Noise
+category: 3. Digital Glitch & Noise
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Pixel drag
   atmosphere: Chaotic, digital
   key_features: I-Frame destruction
+  creative_brief: Frames bleed into each other, the boundary between moments liquefied by algorithmic failure. Pixels that were supposed to forget instead dissolve forward, a haunting of movement trapped between keyframes.
 avoidRules:
   - clean
   - perfect
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: digital-glitch-and-noise
-  categoryName: 5. Digital Glitch & Noise
+  categoryName: 3. Digital Glitch & Noise
   tags:
     - abstract-and-experimental
     - digital-glitch-and-noise
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

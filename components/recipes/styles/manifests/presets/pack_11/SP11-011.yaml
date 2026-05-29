@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-011
 packId: pack_11
 name: Synthwave 80s
-category: 4. Aesthetics
+category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - retro-pop-and-kitsch
 visualDna:
   aesthetic: Retro-futurist 80s grid, neon-drenched nostalgia, cassette-punk dreamscape, outrun highway
   form_and_line: Laser grid, wireframe mountains, chrome horizon, sun-striped plane, digital contour
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Chrome reflection, infinite grid, sun-stripe layering, horizon-engine depth
   atmosphere: Nostalgic, fast, digital, midnight drive, electromagnetic romance, hyper-color pulse
   key_features: Sunset gradient, laser-grid floor, triangular sun bands, neon palm silhouettes
+  creative_brief: A chrome sun sets permanently on a neon grid stretching into retro-future infinity, magenta bleeding into cyan across a sky that never existed. Laser-grid floor meets digital mountains while the outrun highway carves through a dreamscape lit by the glow of things that should be but are not yet. Speed and melancholy merge in the eternal dusk of the cassette-punk horizon.
 avoidRules:
   - nature
   - green
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: retro-pop-and-kitsch
+  categoryName: 4. Retro Pop And Kitsch
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - retro-pop-and-kitsch
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-004
 packId: pack_03
 name: Arnold Feature Film Path Tracer
-category: 5. Render Engines
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - render-engines
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: CPU path traced movie VFX
   form_and_line: Incredibly realistic
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Realistic, grounded, cinematic gravitas
   key_features: Physical accuracy, volume scattering
+  creative_brief: Every ray of light is accounted for, bouncing through space with the diligence of a forensic investigator — unclamped global illumination traces paths that real photons would recognize. ACES color science bends the spectrum into cinema, and micro-displacement turns flat polygons into landscapes of tactile truth. The frame carries the quiet authority of a Hollywood film that knows it will outlive its audience.
 avoidRules:
   - photo
   - drawing
@@ -41,11 +42,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: render-engines
-  categoryName: 5. Render Engines
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - render-engines
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

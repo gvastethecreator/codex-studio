@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-020
 packId: pack_11
 name: Wooden Toy
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Carved wood figure, traditional toy, whittled companion, heirloom plaything
   form_and_line: Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry
   atmosphere: Nostalgic, simple, fireside quiet, grandfather's workshop, old-world tenderness
   key_features: Wood texture, visible grain rings, dovetail joints, paint-wear edges
+  creative_brief: Grain rings record the life of the tree now shaped into a plaything for new generations, each growth ring a calendar preserved in oak. Paint chips at the edges reveal layered history of countless small hands, each touch polishing the wood toward heirloom satin. Simplicity carved from a single block carries more warmth than any assembly line could manufacture.
 avoidRules:
   - plastic
   - metal
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

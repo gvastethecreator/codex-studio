@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-049
 packId: pack_07
 name: Golf Course
-category: 4. Landscape Architecture
+category: 4. Landscape And Gardens
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-architecture
+  - landscape-and-gardens
 visualDna:
   aesthetic: Manicured lawn, designed landscape, green cathedral, Augusta perfection, sculpted fairway
   form_and_line: Rolling hills, bunker-sweep curves, tee-box rectangles, green-contour undulations, fairway ribbons
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Quiet, sport, exclusive, morning-fresh, focused-walk, manicured nature
   key_features: Sand trap, manicured green, pin flag, water hazard, fairway mow lines, white bunker edge
+  creative_brief: Fairways sweep in manicured curves, grass cropped to precision that nature would never choose for itself. Sand traps carve bright wounds into green, hazards arranged like sculpture in a gallery for the sport of kings. Morning mist clings to water hazards, the landscape holding its breath before the first tee shot.
 avoidRules:
   - weeds
   - forest
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-architecture
-  categoryName: 4. Landscape Architecture
+  categoryId: landscape-and-gardens
+  categoryName: 4. Landscape And Gardens
   tags:
     - architecture-and-interior
-    - landscape-architecture
+    - landscape-and-gardens
   supportedTasks:
     - image_generate
     - image_edit

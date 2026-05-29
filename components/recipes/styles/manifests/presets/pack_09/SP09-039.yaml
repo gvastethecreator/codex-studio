@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-039
 packId: pack_09
 name: Frozen/Frosted
-category: 4. Weathering & Decay
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - weathering-and-decay
+  - metals-and-minerals
 visualDna:
   aesthetic: Freezer burn
   form_and_line: Ice crystals
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Surface buildup
   atmosphere: Freezing, preserved
   key_features: Crystal growth
+  creative_brief: Compose the crystalline invasion of frost where ice crystals bloom in fern-like dendrites across surfaces, each branch a work of frozen mathematics growing outward from nucleation points. The surface must sparkle with the brittleness of extreme cold, white and blue whispering the language of winter across every crystalline edge. Capture the moment water becomes architecture.
 avoidRules:
   - melted
   - wet
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: weathering-and-decay
-  categoryName: 4. Weathering & Decay
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - weathering-and-decay
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-006
+packId: pack_14
+name: Crowned Ash Oracle
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Crowned oracle emerging from ritual ash.
+  form_and_line: Majestic vertical silhouette, serene face, and symbolic ornament.
+  color_palette: Ash gray, old gold, and nocturnal blue.
+  lighting_setup: Brillo ascendente desde brasas internas.
+  material_texture: Fine ash, scorched metal, and ceremonial fabric.
+  render_quality: Premium mystical image with iconic readability.
+  spatial_distortion: Axial composition with spiraling smoke.
+  atmosphere: Prophecy, gravity, and severe beauty.
+  key_features: Irregular crown, ritual hands, sentient smoke.
+  creative_brief: An oracle who looks summoned from the end of the world with absolute elegance.
+avoidRules: [photoreal, soft-cute, random-chaos, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-006.webp }
+attributes:
+  negativePrompt: photoreal, soft-cute, random-chaos, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

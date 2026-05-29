@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-078
 packId: pack_02
 name: Light Painting
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Long exposure trails
   form_and_line: Light streaks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Magic, art, drawing-with-light, nocturnal play
   key_features: Trails, light ribbon, calligraphic light, motion-blur glow
+  creative_brief: Motion becomes monument when the shutter stays open to the dance of illuminated gesture. Ribbons of pure chroma carve calligraphy into the void, each trail a frozen heartbeat of movement. Darkness is the stage, not the absence, and every streak of neon is a signature written in the negative space of night.
 avoidRules:
   - static light
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

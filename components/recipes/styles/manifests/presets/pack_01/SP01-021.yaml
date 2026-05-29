@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-021
 packId: pack_01
 name: Large Format (4x5)
-category: 5. Camera Types
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - camera-types
+  - film-and-analog-process
 visualDna:
   aesthetic: View camera photo
   form_and_line: Incredible detail
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Tilt-shift potential
   atmosphere: Grand, still
   key_features: Extreme resolution
+  creative_brief: 'Monumental stillness rendered with the gravity of cathedral stone: every leaf on every distant tree, every fissure in granite, every molecule of air held accountable. The plane of focus tilts like a held breath, bending space into reverence. This is not a photograph but a covenant with the visible.'
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: camera-types
-  categoryName: 5. Camera Types
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - camera-types
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

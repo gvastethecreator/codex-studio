@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-061
 packId: pack_07
 name: Ice Palace
-category: 5. Fantasy Architecture
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - fantasy-architecture
+  - residential-interiors
 visualDna:
   aesthetic: Frozen castle, glacial fortress, winter queen's palace, crystalline ice-kingdom, permafrost monument
   form_and_line: Sharp ice, icicle colonnade, frozen-cascade stairs, crystal-spike spires, frost-filigree arch
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Frozen, regal, winter-eternal, enchanted-cold, silent-snow, crystalline-awe, frosted-breath
   key_features: Icicles, frost crystals, ice chandelier, snowdrift stairs, frozen throne, aurora-lit hall, ice bridge
+  creative_brief: Icicle colonnades catch aurora light and throw it into prismatic rebellion against the monochrome of winter. Frost filigree traces arabesques across transparent walls, cold becoming architect, ice becoming cathedral. The palace stands at absolute zero of warmth and maximum of wonder, a kingdom where beauty is measured in degrees below freezing.
 avoidRules:
   - warm
   - fire
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: fantasy-architecture
-  categoryName: 5. Fantasy Architecture
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - fantasy-architecture
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

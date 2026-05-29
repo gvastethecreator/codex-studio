@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-062
 packId: pack_01
 name: Corporate Stock Photo
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Happy people working
   form_and_line: Clean
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Fake smiles
   atmosphere: Professional, fake
   key_features: Handshake
+  creative_brief: 'Sanitized joy fills the frame like artificial daylight, every smile calibrated to the exact wattage of acceptability, every handshake choreographed to radiate trust without risk. Cool tints temper the warmth they pretend to project, the image operating in the narrow band where nothing offends because nothing truly registers. This is the visual Esperanto of the boardroom: universally legible, universally hollow.'
 avoidRules:
   - sad
   - dark
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

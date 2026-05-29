@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-041
 packId: pack_04
 name: Fashion Illustration
-category: 3. Editorial & Poster
+category: 2. Editorial Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - editorial-illustration
 visualDna:
   aesthetic: Runway sketch
   form_and_line: Loose, gestural
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Elongated legs
   atmosphere: Chic, fast, atelier energy, catwalk motion
   key_features: 9 heads tall, loose gesture, editorial whitespace
+  creative_brief: Brushstrokes capture the fugitive moment between steps, fabric still settling from motion, the figure already moving on. Ink washes suggest rather than describe, leaving space for the eye to complete what the hand began. This is the atelier at speed, where elegance emerges from the chase, not the capture.
 avoidRules:
   - short
   - realistic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: editorial-illustration
+  categoryName: 2. Editorial Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - editorial-illustration
   supportedTasks:
     - image_generate
     - image_edit

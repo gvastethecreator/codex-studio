@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-016
 packId: pack_03
 name: Fur & Hair
-category: 1. Materials
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Groomed fur simulation
   form_and_line: Individual strands
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Wind blown
   atmosphere: Cozy, creature, tactile warmth
   key_features: Hair strands, clump variation
+  creative_brief: Every strand is deliberate — clumps part like wheat in a field, and rim light catches the fuzz at grazing angles, turning each filament into a golden thread. The groomed volume reads as something you could sink your hand into, soft gradients mapping depth through density. Wind-frozen or studio-still, the fur carries the warmth of a living creature rendered with XGen precision.
 avoidRules:
   - bald
   - smooth
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 1. Materials
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

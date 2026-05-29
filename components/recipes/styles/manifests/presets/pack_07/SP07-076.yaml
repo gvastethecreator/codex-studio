@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-076
 packId: pack_07
 name: Dyson Sphere
-category: 5. Fantasy Architecture
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - fantasy-architecture
+  - residential-interiors
 visualDna:
   aesthetic: Megastructure around sun, star-engineered shell, Kardashev-civilization monument, solar-harvest sphere, cosmic-engineering
   form_and_line: Grid, panel-cell hexagons, curved-horizon lattice, inner-surface curvature, star-centered symmetry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Curved horizon
   atmosphere: Epic, sci-fi, civilization-scale, star-furnace, engineering-god, unfathomable-ambition, majestic-isolation
   key_features: Star inside, panel grid, curved horizon, solar collectors, hexagonal structure, silhouette against star, orbital ring
+  creative_brief: Hexagonal panels curve toward a horizon that bends the wrong way, enclosing a star like a cage built for fire. Silhouettes of civilization-scale engineering trace black geometries against solar brilliance, the sphere a crust wrapped around a captive sun. The structure whispers of intelligences that measure their projects in astronomical units and their patience in stellar lifetimes.
 avoidRules:
   - planet surface
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: fantasy-architecture
-  categoryName: 5. Fantasy Architecture
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - fantasy-architecture
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

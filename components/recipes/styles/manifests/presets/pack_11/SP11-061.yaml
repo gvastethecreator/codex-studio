@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-061
 packId: pack_11
 name: Water Drop Reflection
-category: 5. Micro/Macro
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - toys-and-miniatures
 visualDna:
   aesthetic: Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic
   form_and_line: Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization
   atmosphere: Calm, focus, macro-meditation, rain-pause, single-drop universe
   key_features: Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight, chromatic-aberration fringing, surface-tension curvature
+  creative_brief: The droplet becomes a lens, surface tension holding the sphere in a balance between gravity and molecular cohesion, a temporary crystal of liquid physics. Inside the drop, an entire world waits compressed into refractive suspension, inverted and miniature, a universe that fits on a blade of grass. The bokeh-background dissolves into chromatic softness while the contact-line marks the boundary where water meets leaf in perfect capillarity.
 avoidRules:
   - dry
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

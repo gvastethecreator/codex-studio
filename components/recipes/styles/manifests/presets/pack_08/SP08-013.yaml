@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-013
 packId: pack_08
 name: Ethereal Fantasy
-category: 2. Historical & Fantasy
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - fashion-and-costume
-  - historical-and-fantasy
+  - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Elven or fairy gown, Rivendell ethereality, woodland-realm grace
   form_and_line: Flowing, windblown, gossamer waterfall silhouette, bishop-sleeve billow, empire-line rise
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Floating fabric
   atmosphere: Magical, soft, dreamlike, ancient enchantment, starlit serenity, undying-lands longing
   key_features: Translucency, flowing sleeves, circlet tiara, Elvish brooch
+  creative_brief: Gossamer caught in an eternal breeze that blows from no direction and every direction at once. Moonstone threads trace constellations across a gown that weighs less than the starlight falling through it, sleeves billowing with the slow gravity of deep time, a garment dreamed by trees and woven from the sound of distant harps.
 avoidRules:
   - heavy
   - dark
@@ -32,13 +33,14 @@ attributes:
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
-  categoryId: historical-and-fantasy
-  categoryName: 2. Historical & Fantasy
+  categoryId: fantasy-sci-fi-costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
-    - historical-and-fantasy
+    - fantasy-sci-fi-costume
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

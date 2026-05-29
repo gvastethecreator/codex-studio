@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-065
 packId: pack_04
 name: Lithograph
-category: 5. Ink & Print
+category: 4. Printmaking And Ink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - printmaking-and-ink
 visualDna:
   aesthetic: Grease pencil on stone
   form_and_line: Grainy crayon
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Classic, soft, print-studio quiet, optical wonder
   key_features: Grain, stone texture, crayon registration
+  creative_brief: Grease pencil glides across limestone with the soft friction of tradition, every mark a negotiation between hand and stone. The image waits inside the grain, latent until chemistry and pressure conspire to reveal it. This is printmaking as alchemy, where the artist works in reverse and trusts the press to complete the spell.
 avoidRules:
   - sharp lines
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: printmaking-and-ink
+  categoryName: 4. Printmaking And Ink
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - printmaking-and-ink
   supportedTasks:
     - image_generate
     - image_edit

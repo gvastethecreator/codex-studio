@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-055
 packId: pack_08
 name: Knitted Wool
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Comfortable, winter, fireside-contentment, cocoa-and-wool warmth, snowed-in serenity
   key_features: Knit loops, cable braid, ribbed hem, wooden buttons, rolled neck
+  creative_brief: Cable-knit braids running across a chest like topographical maps of the Aran Islands, each stitch a genealogy encoded in wool. The alpaca halo catches firelight on microscopic fibers that float above the surface like a warm fog, wooden buttons anchoring the whole to a tradition that predates central heating, the sweater heavy with the love of hands that knit through winter.
 avoidRules:
   - smooth
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

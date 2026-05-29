@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-041
 packId: pack_06
 name: Rubber Stamp
-category: 5. Printmaking
+category: 3. Printmaking
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Incomplete impression
   atmosphere: Official, rough
   key_features: Stamp border
+  creative_brief: Rubber meets inkpad meets paper in a decisive press, the impression never quite complete, edges starving for pigment. The image carries the charm of bureaucracy, the poetry of forms stamped RECEIVED. Each pressing records the pressure of the hand, the slight wobble that proves humanity.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: printmaking
-  categoryName: 5. Printmaking
+  categoryName: 3. Printmaking
   tags:
     - essential-art-styles
     - printmaking
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

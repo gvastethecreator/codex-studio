@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-094
 packId: pack_04
 name: Anatomy Reference Sheet
-category: 4. Concept Art
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - childrens-and-educational
 visualDna:
   aesthetic: Medical-textbook-anatomy-reference, muscle-diagram-overlay-on-skeletal-system, bone-ghost-view-in-translucent-flesh, tendon-insertion-origin-annotation, Leonardo-da-Vinci-anatomical-study energy, Gray's-Anatomy-textbook illustrations, figure-drawing-anatomy-reference, ecorche-muscle-flayed-view, accurate-proportion-grid, scientific-observation-art
   form_and_line: Precise-medical-illustration-linework, muscle-fiber-direction-strokes, tendon-cord-insertion-lines, skeletal-ghost-contour, organ-cavity-diagram, notation-leader-lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Anterior-posterior-lateral orthographic, muscle-overlay-ghost-views, skeleton-within-flesh-transparency, inset-magnification-detail, proportion-grid-overlay
   atmosphere: Scientific, reverent, study-of-life, Renaissance-curiosity, anatomical-truth, art-meets-science, figure-drawing-foundation
   key_features: Muscle-diagram-overlay, skeletal-ghost-underdrawing, tendon-insertion-annotation, medical-textbook-line-quality, anterior-posterior-lateral, proportion-grid, ecorche-flayed-view
+  creative_brief: Muscle fibers layer over bone like anatomical ghosts, tendon insertions annotated with the precision of surgical observation. The ecorche figure stands flayed and instructive, revealing the engineering beneath the skin. This is the body as machine and miracle simultaneously, drawn with the reverence of Leonardo and the precision of Gray.
 avoidRules:
   - stylized
   - cartoon
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

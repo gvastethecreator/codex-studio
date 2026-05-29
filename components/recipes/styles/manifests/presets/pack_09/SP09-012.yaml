@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-012
 packId: pack_09
 name: Snake Scales
-category: 1. Natural Materials
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Reptile skin
   form_and_line: Overlapping scales
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flexible armor
   atmosphere: Cold, sleek
   key_features: Scale grid
+  creative_brief: Compose the dry tessellation of snake scales overlapping in mathematical precision across a flexible armor of keratin, each scale a shield in an endless grid of green and black. Iridescence should flicker at the edges like a secret the surface cannot quite keep. The material must feel sleek and alien, a geometry born of silent movement.
 avoidRules:
   - fur
   - skin
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - natural-materials
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

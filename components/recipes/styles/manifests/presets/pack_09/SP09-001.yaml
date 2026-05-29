@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-001
 packId: pack_09
 name: Oak Wood (Raw)
-category: 1. Natural Materials
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Unfinished oak plank
   form_and_line: Grain lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Rustic, solid
   key_features: Grain direction
+  creative_brief: 'Tactile direction for raw oak: the grain tells a story of slow growth and sun-filled years. Capture the fibrous resistance beneath the fingertip, where every ridge and furrow is a line of natural poetry. Let the wood breathe with the dry warmth of a lumber yard at dawn, honest and unadorned.'
 avoidRules:
   - varnish
   - plastic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - natural-materials
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

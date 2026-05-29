@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-034
 packId: pack_06
 name: Lithography
-category: 5. Printmaking
+category: 3. Printmaking
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Artistic, soft
   key_features: Grainy texture
+  creative_brief: Grease and water repel on limestone, an ancient chemical truce that separates ink from void at the molecular level. The crayon texture of the drawing transfers faithfully, grain and all, to paper that remembers the stone. Every print carries the geology of the process, sediment made image.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: printmaking
-  categoryName: 5. Printmaking
+  categoryName: 3. Printmaking
   tags:
     - essential-art-styles
     - printmaking
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

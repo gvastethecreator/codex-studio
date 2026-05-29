@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-003
 packId: pack_09
 name: Birch Bark
-category: 1. Natural Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: White tree bark
   form_and_line: Peeling layers
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Curved bark
   atmosphere: Natural, wild
   key_features: Horizontal lines
+  creative_brief: Render the paper-thin architecture of birch bark peeling away in whispers of white and charcoal. The lenticels form a natural cuneiform, a script of the forest written in horizontal strokes across a surface that curls with the memory of the trunk it once embraced. Capture the tension between protection and vulnerability, a skin designed to shed.
 avoidRules:
   - plank
   - cut wood
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - natural-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

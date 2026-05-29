@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Exaggerated silhouette
   atmosphere: Dramatic, expensive, artistic, front-row murmur, reverent silence, aspirational awe
   key_features: High fashion pose, exaggerated contrapposto, editorial gaze, avant-garde headpiece
+  creative_brief: A cathedral of cloth where every seam sings of impossible precision. The body becomes sculpture under the weight of silk mountains and feather clouds, architecture worn rather than inhabited. Light carves the silhouette like a chisel finding form in marble, each step down the runway a sentence in a language spoken only at the apex of craft.
 avoidRules:
   - ready-to-wear
   - cheap
@@ -42,3 +43,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

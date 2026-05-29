@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-024
 packId: pack_03
 name: Wireframe Render
-category: 3. 3D Styles
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - 3d-styles
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Mesh topology view
   form_and_line: Glowing lines
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Technical, blueprint, debug-preview
   atmosphere: Technical, cyber, developer aesthetic
   key_features: Topology, edge-flow visibility
+  creative_brief: 'The object sheds its skin to reveal the skeleton beneath — neon edge loops trace topology across a black void like constellations mapped onto an invisible form. No surface, no texture, only pure structure glowing in self-illuminated wireframe. The image reads as a developer''s dream rendered beautiful: the debug viewport elevated to gallery status, every edge-flow decision visible and celebrated.'
 avoidRules:
   - solid
   - textured
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: 3d-styles
-  categoryName: 3. 3D Styles
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - 3d-styles
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-044
 packId: pack_08
 name: Wizard Robes
-category: 5. Fantasy/Sci-Fi Costume
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Mysterious, powerful, forbidden-knowledge awe, tower-library silence, incantation tension
   key_features: Staff, pointed hat, spellbook, crystal pendant, rune-embroidered robe
+  creative_brief: Velvet deep enough to swallow torchlight, silver-thread constellations mapping heavens that only the wearer has read in texts too old for mortal memory. Bell sleeves sway with the residual motion of an incantation just completed, the pointed hat a spire on the cathedral of accumulated arcana, moonstone inlay catching ambient magic like a net cast into the invisible.
 avoidRules:
   - pants
   - modern
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fantasy-sci-fi-costume
-  categoryName: 5. Fantasy/Sci-Fi Costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
     - fantasy-sci-fi-costume
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

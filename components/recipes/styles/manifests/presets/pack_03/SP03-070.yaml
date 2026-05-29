@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-070
 packId: pack_03
 name: Retro CGI (90s)
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Reboot/Toy Story 1 early feature-era CGI, pioneer polygons, awkward charm
   form_and_line: Simple geometry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Stiff animation
   atmosphere: Nostalgic, weird, pioneering spirit
   key_features: No shadows, jitter-free geometry
+  creative_brief: 'Simple geometry wears Phong shading like a badge of its era — primary colors pop against checkerboard textures, and ambient-fill lighting substitutes for the bounce light these renderers could not yet calculate. No ambient occlusion, no global illumination, just the honest awkwardness of pioneer polygons rendered with the tools of 1995. The image channels Reboot and Toy Story 1: stiff animation, uncanny charm, the pioneering spirit of an industry discovering what it could become.'
 avoidRules:
   - modern
   - ambient occlusion
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

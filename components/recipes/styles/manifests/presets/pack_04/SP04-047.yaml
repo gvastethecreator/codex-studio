@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-047
 packId: pack_04
 name: Matte Painting
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Movie background
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Vast, invisible, suspension-of-disbelief, epic silence
   key_features: Horizon line, depth layering, atmospheric haze
+  creative_brief: Vastness asserts itself through atmospheric perspective, mountains dissolving into the distance like a promise receding. Light behaves with the physics of cinema, sculpting depth from haze and horizon. This is the background as protagonist, where the world itself carries the emotional weight of the story.
 avoidRules:
   - cartoon
   - sketch
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

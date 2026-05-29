@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-057
 packId: pack_04
 name: Blueprint Schematic
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Technical diagram
   form_and_line: White lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Exploded view
   atmosphere: Smart, plan, drafting-table focus, patent-office gravity
   key_features: Measurements, dimension lines, grid sub-base
+  creative_brief: White lines trace purpose across blue fields, every measurement and callout a contract between designer and maker. Orthographic projections obey the tyranny of exact scale, views aligned in the sacred geometry of the drafting table. This is the object before it becomes object, existing first in the pure space of technical intention.
 avoidRules:
   - 3d
   - shaded
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

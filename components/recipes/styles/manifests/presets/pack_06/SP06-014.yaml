@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-014
 packId: pack_06
 name: Casein Paint
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Clean shapes
   atmosphere: Classic, sturdy
   key_features: Velvet matte finish
+  creative_brief: Milk protein suspends pigment in a velvet embrace, drying to a surface that absorbs light like powdered stone. The matte finish whispers where oil would shout, carrying illustration into the realm of the permanent. Every stroke dries waterproof and indelible, a commitment made visible.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

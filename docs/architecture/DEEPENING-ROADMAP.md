@@ -149,6 +149,25 @@ Execution order for the accepted batch:
 - **Exit criteria:** the remaining legacy path is obviously compatibility-only and no new product flow depends on it.
 - **Docs:** update `docs/TECHNICAL_DEBT.md` and the findings index.
 
+### 8. Reorganize `Style Preset Manifest` taxonomy and anime pack topology
+
+- **Status:** In progress
+- **Files:** `components/recipes/styles/manifests/packs/*.yaml`,
+  `components/recipes/styles/manifests/presets/**/*.yaml`,
+  `docs/architecture/style-preset-restructure-2026-05-28.md`,
+  `docs/STYLE_PRESET_AUTHORING.md`
+- **Depends on:** ADR-0025 (granular style manifests)
+- **Unblocks:** cleaner style browsing/search relevance, safer preset authoring, smaller taxonomy drift risk
+- **Concrete steps:**
+  - done: accepted and documented reorganization plan in `docs/architecture/style-preset-restructure-2026-05-28.md`;
+  - done: normalized mixed-language pack metadata where safe (`pack_14`, `pack_15` descriptions);
+  - next: split anime inventory (`pack_05` + `pack_13`) into 3 coherent pack groups with stable preset identity;
+  - next: decompose legacy single-category `videojuegos` packs (`pack_01`, `pack_02`, `pack_03`, `pack_04`, `pack_07`, `pack_09`, `pack_11`) into domain-specific categories;
+  - next: normalize category id naming to `kebab-case` and enforce English taxonomy ids/tags;
+  - next: add source/validation guardrails to block reintroduction of catch-all category ids and mixed naming styles.
+- **Exit criteria:** no pack depends on category id `videojuegos`; category ids are consistently `kebab-case`; taxonomy ids/tags are English-only; style validation remains green after each migration batch.
+- **Docs:** update `docs/STYLE_PRESET_AUTHORING.md`, `SKILLS.md`, and the findings index.
+
 ## Phase 1: backend foundation
 
 - ADR 0002: callable app factory.

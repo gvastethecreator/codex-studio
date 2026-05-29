@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-062
 packId: pack_09
 name: Confetti
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Falling paper bits
   form_and_line: Rectangles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Falling
   atmosphere: Happy, party
   key_features: Random rotation
+  creative_brief: Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each scrap a tiny flag of celebration caught between release and landing, random rotation creating a sense of arrested motion across the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered by the physics of joy. Capture celebration fragmented into geometry.
 avoidRules:
   - trash
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

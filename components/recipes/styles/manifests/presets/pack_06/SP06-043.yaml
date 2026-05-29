@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-043
 packId: pack_06
 name: Engraving (Banknote)
-category: 5. Printmaking
+category: 3. Printmaking
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Serious, valuable
   key_features: Guilloche patterns
+  creative_brief: Parallel lines of impossible fineness weave into guilloche patterns that defy counterfeiting, geometry elevated to security. The plate holds detail beyond the resolution of the naked eye, trust engraved into cotton paper. Every banknote is a miniature museum of the engraver's art, value printed in precision.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: printmaking
-  categoryName: 5. Printmaking
+  categoryName: 3. Printmaking
   tags:
     - essential-art-styles
     - printmaking
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

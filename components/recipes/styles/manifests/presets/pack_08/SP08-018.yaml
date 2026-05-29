@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Energetic, cute, cool, high-polish perfection, synchronized charisma, stadium-scale joy
   key_features: Dyed hair, pastel or jewel-tone color, matching group coordination, statement earrings
+  creative_brief: Precision worn as skin, sequins catching studio light in a choreographed galaxy of synchronized perfection. Pastel hair frames a face that has rehearsed this smile ten thousand times, every outfit a comeback, every comeback a ritual in the church of coordinated spectacle where fandom chants become weather.
 avoidRules:
   - boring
   - dark
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

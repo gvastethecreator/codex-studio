@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-026
 packId: pack_09
 name: Plastic (Injection Molded)
-category: 2. Man-Made Materials
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Consumer product
   form_and_line: Parting lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sink marks
   atmosphere: Artificial, toy
   key_features: Uniform color
+  creative_brief: Capture the synthetic honesty of injection-molded plastic with its faint parting lines and subtle sink marks like the fingerprints of manufacture pressed into saturated color. The surface should feel unnaturally uniform, smooth in a way that nature never achieves, catching subsurface light with a slight translucency at the edges. This is the material of mass desire, smooth and democratic.
 avoidRules:
   - metal
   - wood
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

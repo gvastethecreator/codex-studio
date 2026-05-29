@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-075
 packId: pack_08
 name: Gold Leaf
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Divine, rich, alchemical-wonder awe, temple-treasure sanctity, immortal-beauty stillness
   key_features: Gold skin, leafing seams, burnished reflection, flake edges, gilded contour
+  creative_brief: Twenty-four karat leaf applied directly to skin with a gilder's brush, each flake overlapping the next in a mosaic of pure light that transforms the body into a temple treasury. Burnished surfaces catch and return every photon that touches them, the contours of the figure traced in gold that will outlast the skin beneath, a temporary divinity achieved through the alchemy of metal beaten thinner than thought.
 avoidRules:
   - dull
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

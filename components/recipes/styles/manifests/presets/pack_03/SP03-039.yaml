@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-039
 packId: pack_03
 name: Bioluminescent Forest
-category: 2. Lighting & Atmosphere
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Luminous alien forest, Avatar Pandora style, bioluminescent wonder, floating mountains, connected ecosystem
   form_and_line: Glowing plants
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Wonder, magic, spiritual awe
   key_features: Glow in dark, floating spores
+  creative_brief: 'Darkness is not the absence of light but the canvas for a living glow — phosphorescent flora pulse in cyan and violet, and floating spores drift through the understory like airborne constellations. Every plant is its own light source, ambient bioluminescence replacing sunlight with something more intimate and alien. The image channels Pandora''s spiritual awe: an ecosystem lit from within, wonder rendered as connected biology, magic explained by the science of light.'
 avoidRules:
   - day
   - sun
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

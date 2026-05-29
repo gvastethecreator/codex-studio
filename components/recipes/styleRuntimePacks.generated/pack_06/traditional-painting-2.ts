@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP06-001',
     name: 'Oil Painting (Classic)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -19,12 +19,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Slightly impressionistic',
       atmosphere: 'Timeless, expressive',
       key_features: 'Visible brushwork',
+      creative_brief:
+        'Wet pigment yields its secrets layer by layer, each stroke a conversation between hand and surface. Canvas grain catches light like a held breath, suspending a moment that should have passed but chose to stay. The image carries the weight of centuries, yet feels as immediate as paint still wet on the palette.',
     },
   },
   {
     id: 'SP06-014',
     name: 'Casein Paint',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -37,12 +39,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Clean shapes',
       atmosphere: 'Classic, sturdy',
       key_features: 'Velvet matte finish',
+      creative_brief:
+        'Milk protein suspends pigment in a velvet embrace, drying to a surface that absorbs light like powdered stone. The matte finish whispers where oil would shout, carrying illustration into the realm of the permanent. Every stroke dries waterproof and indelible, a commitment made visible.',
     },
   },
   {
     id: 'SP06-003',
     name: 'Acrylic (Modern)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -55,12 +59,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Stylized shapes',
       atmosphere: 'Energetic, contemporary',
       key_features: 'Opaque paint layers',
+      creative_brief:
+        'Plastic pigment sits proud on the surface, unapologetic in its opacity, drying faster than thought. Every flat plane announces itself with synthetic confidence, color refusing to blend where boundaries are meant to hold. The image crackles with contemporary energy, modern in spirit and material truth.',
     },
   },
   {
     id: 'SP06-002',
     name: 'Watercolor (Soft)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -73,12 +79,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Colors bleeding outside lines',
       atmosphere: 'Dreamy, soft, nostalgic',
       key_features: 'Watery texture',
+      creative_brief:
+        'Pigment bleeds into water and paper becomes sky, edges dissolving where intention meets surrender. Translucency builds depth by subtraction, each wash a whispered layer that refuses to shout. The result breathes with the humidity of the moment it was made, never fully dry, always becoming.',
     },
   },
   {
     id: 'SP06-004',
     name: 'Gouache (Flat)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -91,12 +99,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Simplified forms',
       atmosphere: 'Playful, graphic',
       key_features: 'Matte opacity',
+      creative_brief:
+        'Velvet-matte pigment absorbs light instead of reflecting it, creating a surface that feels like silence. Crisp edges meet chalky depth in a negotiation between graphic clarity and painterly substance. The result is design that remembers the hand, precision softened by pigment.',
     },
   },
   {
     id: 'SP06-005',
     name: 'Tempera (Egg)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -109,12 +119,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Stiff poses',
       atmosphere: 'Sacred, ancient',
       key_features: 'Fine linear brushwork',
+      creative_brief:
+        'Egg yolk binds pigment into luminous permanence, a medium that predates oil and outlasts empires. Fine cross-hatching builds form from patience, each translucent layer glowing from within like stained glass. The image feels sacred not through subject but through the discipline of its making.',
     },
   },
   {
     id: 'SP06-006',
     name: 'Encaustic (Wax)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -127,12 +139,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Blurred details',
       atmosphere: 'Mysterious, tactile',
       key_features: 'Waxy surface',
+      creative_brief:
+        'Molten beeswax traps color in amber, each layer fused by flame into a surface you want to touch. Translucent depths reveal what lies beneath, like memory visible through time. The image holds heat even when cold, a fossil of pigment suspended forever in waxen embrace.',
     },
   },
   {
     id: 'SP06-007',
     name: 'Fresco (Wall)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -145,12 +159,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Faded areas',
       atmosphere: 'Historic, grand',
       key_features: 'Plaster texture',
+      creative_brief:
+        'Pigment fuses chemically with wet plaster, becoming wall rather than hanging on it. Time cracks the surface into cartography of age, each fissure a map of centuries endured. The image asserts permanence through absorption, a surface that cannot be separated from what it carries.',
     },
   },
   {
     id: 'SP06-009',
     name: 'Impressionist Oil',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -163,12 +179,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Loss of detail',
       atmosphere: 'Light, airy, fleeting',
       key_features: 'Dabbed paint texture',
+      creative_brief:
+        'Broken color vibrates at the edge of perception, demanding the eye complete what the brush merely suggested. Light becomes the true subject, dissolving cathedrals and water lilies into shimmering dabs of pure sensation. The air itself feels painted, thick with the pollen of a specific afternoon.',
     },
   },
   {
     id: 'SP06-010',
     name: 'Pointillism',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -181,12 +199,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Forms dissolve into dots',
       atmosphere: 'Static, shimmering',
       key_features: 'Dot pattern',
+      creative_brief:
+        'Tiny points of pure color refuse to mix on the canvas, delegating all blending to the retinal dance beyond the frame. The image comes into focus only at distance, a conspiracy between pigment and perception. Every dot is a vote cast for a reality assembled by the viewer.',
     },
   },
   {
     id: 'SP06-011',
     name: 'Palette Knife',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -199,12 +219,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Abstracted details',
       atmosphere: 'Bold, energetic',
       key_features: 'Knife marks',
+      creative_brief:
+        'Paint becomes sculpture as the blade carves slabs of pure pigment across the surface, each stroke a ridge you could measure with fingers. Detail yields to gesture, form to texture, until subject and surface become indistinguishable. The image does not depict — it occupies space, demanding acknowledgement of its physical presence.',
     },
   },
   {
     id: 'SP06-012',
     name: 'Spray Paint (Graffiti)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -217,12 +239,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Stylized forms',
       atmosphere: 'Rebellious, cool',
       key_features: 'Spray texture',
+      creative_brief:
+        'Aerosol mist settles on concrete like breath on cold glass, edges bleeding beyond the stencil into atmospheric drift. The wall speaks in drips and overspray, a dialect of the street that galleries can only translate. Every mark carries the risk of interruption, the urgency of the unsanctioned.',
     },
   },
   {
     id: 'SP06-008',
     name: 'Ink Wash (Sumi-e)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -235,12 +259,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Abstracted forms',
       atmosphere: 'Peaceful, meditative',
       key_features: 'Brush pressure variation',
+      creative_brief:
+        'A single brushstroke carries the mountain, the bamboo, the wind — nothing added that can be removed. Black ink on white rice paper becomes a universe of greys through water alone, each wash a meditation on pressure and release. The void between marks speaks louder than the marks themselves.',
     },
   },
   {
     id: 'SP06-013',
     name: 'Airbrush (80s)',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -253,12 +279,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Idealized forms',
       atmosphere: 'Retro, slick',
       key_features: 'Smooth gradients',
+      creative_brief:
+        'Layers of atomized pigment build without a single brush mark, gradients smooth as polished chrome under a synthesized sunset. The image glows with the impossible perfection of a future that never arrived, trapped forever in 1987. Highlights gleam with the sheen of an era that believed friction could be eliminated.',
     },
   },
   {
     id: 'SP06-015',
     name: 'Black Velvet Painting',
-    category: '2. Traditional Painting',
+    category: '1. Traditional Painting',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -271,6 +299,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Soft focus',
       atmosphere: 'Tacky, fun, night',
       key_features: 'Black background dominance',
+      creative_brief:
+        'Neon colors float above infinite blackness like deep-sea creatures signaling in the abyss, each hue intensified by the void that surrounds it. The velvet pile swallows light while the paint refuses to, creating impossible luminance. Kitsch transcends irony into a sincerity so pure it becomes visionary.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

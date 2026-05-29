@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Celebrity, fame, awards-show electricity, telecast anticipation, career-defining moment
   key_features: Long train, statement jewels, strapless bodice, red-soled heels
+  creative_brief: A flashbulb galaxy erupts as silk charmeuse sweeps across carpet dyed the color of cardinal sin. Crystal mesh scatters light into a thousand tiny nominations, each step a career condensed into the length of a train, the gown holding breath and borrowed diamonds with equal gravity while the world watches through telephoto lenses.
 avoidRules:
   - casual
   - short
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

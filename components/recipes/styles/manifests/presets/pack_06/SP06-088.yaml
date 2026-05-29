@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-088
 packId: pack_06
 name: PSX Vertex Wobble
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: PlayStation 1 aesthetic, vertex-warble jittering polygons, affine texture swim, unfiltered chunky textures, dithering-haze distance fog, Silent Hill grain-and-gloom, Metal Gear Solid low-poly intensity, no z-buffer precision, 1995 3D in all its unstable glory
   form_and_line: Low-poly triangulated mesh, wobbling vertices on camera move, no sub-pixel precision, chunky model contours, affine-mapped edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Jitter-vertex polygon warping, z-fighting flicker, affine-perspective distortion, distance-fog depth compression
   atmosphere: Eerie, nostalgic, technological-limitation beauty, 90s-3D uncanny poetry, CRT-warmth glow
   key_features: Vertex wobble jitter, unfiltered chunky textures, dithering gradient bands, affine texture warping, distance-fog atmosphere, z-fighting flicker
+  creative_brief: 'Polygons wobble and swim as the camera moves, vertices jittering in a dance of mathematical imprecision that somehow feels more alive than perfection. Textures warp across triangular faces, affine mapping stretching pixels in ways they were never meant to stretch. The image trembles with the beauty of a machine trying its absolute hardest and not quite succeeding, which is to say: with the beauty of effort made visible.'
 avoidRules:
   - stable
   - clean
@@ -39,13 +40,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

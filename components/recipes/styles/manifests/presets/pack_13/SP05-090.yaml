@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-090
+packId: pack_13
+name: Clannad – Soft-Eyed Melodrama
+category: 5. Slice of Life & Moe
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-and-moe
+visualDna:
+  aesthetic: Oversized eyes, glowing memories, tender tragedy, sentimental domestic framing, Key visual-novel style, dango-daikazoku, cherry-blossom path, starfish carving
+  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
+  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
+  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
+  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
+  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
+  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  atmosphere: Emotional, nostalgic, tearful, tender
+  key_features: Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth
+  creative_brief: Tears are stored behind enormous eyes like reservoirs behind glass — every glance is a memory waiting to spill, every cherry blossom a promise already falling. Domestic spaces become shrines to the people who made them warm, and light behaves like a gentle ghost of the happiness that once lived here. Let sorrow and sweetness share the same soft-focus frame.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-090.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-and-moe
+  categoryName: 5. Slice of Life & Moe
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-and-moe
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

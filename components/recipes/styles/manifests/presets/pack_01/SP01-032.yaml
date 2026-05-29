@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-032
 packId: pack_01
 name: Blue Hour
-category: 2. Lighting
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - portrait-and-studio
 visualDna:
   aesthetic: Twilight before sunrise/after sunset
   form_and_line: Soft contrast
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Quiet, cold
   key_features: Blue cast
+  creative_brief: The suspended stillness between darkness and dawn, when the world holds its breath wrapped in indigo silence. No sun to cast shadows, only the ambient exhale of a sky transitioning through violet depths. A quietude so profound you can almost hear the color blue.
 avoidRules:
   - sun
   - orange
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - lighting
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-065
 packId: pack_07
 name: Paper Town
-category: 5. Fantasy Architecture
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - fantasy-architecture
+  - residential-interiors
 visualDna:
   aesthetic: Model village, papercraft diorama, folded world, origami architecture, card-stock miniature
   form_and_line: Cut edges, fold-score geometry, glue-tab seams, pop-up angles, diorama-depth layering
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Quiet, delicate, handmade, still-life, cardboard-dream, patient-craft, tiny-perfection
   key_features: Fold lines, cut edges, miniature scale, glue tabs, layered depth, pop-up elements, paper grain
+  creative_brief: Cut edges cast razor shadows, each fold a decision frozen in card stock and craft knife precision. The town rises from paper flats like a pop-up book dreaming itself three-dimensional. Glue tabs hold buildings together with the tender fragility of things made by hands that knew it would not last.
 avoidRules:
   - realistic
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: fantasy-architecture
-  categoryName: 5. Fantasy Architecture
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - fantasy-architecture
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

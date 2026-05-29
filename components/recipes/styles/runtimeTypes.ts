@@ -24,6 +24,7 @@ export interface StyleVisualDna {
   camera_and_composition: string;
   atmosphere_and_mood: string;
   rendering_and_quality: string;
+  creative_brief?: string;
   [key: string]: unknown;
 }
 

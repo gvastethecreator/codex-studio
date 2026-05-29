@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-095
 packId: pack_04
 name: Foliage Design Kit
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Environment-design-foliage-kit, tree-variant-shape-library, bush-silhouette-language-exploration, grass-clump-variety-sheet, flowering-plant-seasonal-variations, palm-fern-conifer-deciduous-shape-comparison, stylized-vs-naturalistic-foliage-spectrum, game-environment-vegetation-pass, plant-silhouette-readability-at-distance, Miyazaki-Ghibli-forest-spirit-inspiration
   form_and_line: Organic-foliage-contour-variations, frond-unfurling-lines, pine-needle-cluster-contours, vine-tendril-curves, tree-branching-patterns, flower-petal-arrangement
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Tree-silhouette-library-grid, scale-from-bush-to-canopy, ground-cover-to-overstory-layering, atmospheric-depth-vegetation-fade
   atmosphere: Lush, alive, botanical-wonder, forest-bathing calm, Miyazaki-nature-reverence, oxygen-rich-creativity, garden-planning-joy
   key_features: Tree-shape-variant-library, bush-silhouette-comparison, grass-clump-variety-sheet, seasonal-color-variation, plant-silhouette-readability, Miyazaki-forest-inspiration, canopy-to-ground-cover-layering
+  creative_brief: Trees, bushes, ground cover, and vines array themselves in a botanical alphabet of shape language, each silhouette a different letter in the vocabulary of environment design. Stylized forms sit beside naturalistic studies, the spectrum from Ghibli enchantment to field-guide accuracy. This is the forest as design system, where every leaf cluster serves the readability of the game world.
 avoidRules:
   - bare
   - dead
@@ -39,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

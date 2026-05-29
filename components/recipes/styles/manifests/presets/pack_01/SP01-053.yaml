@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-053
 packId: pack_01
 name: Wildlife Photography
-category: 4. Genres
+category: 6. Nature And Wildlife
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - nature-and-wildlife
 visualDna:
   aesthetic: Animal in nature
   form_and_line: Telephoto compression
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Wild, patient
   key_features: Blurred background
+  creative_brief: A gaze from the other side of species, captured in that molten hour when the sun paints fur and feather in honeyed tones and the forest recedes into a soft cathedral of indistinct green. The creature seems unaware of its own magnificence, simply present, simply true, the patience of the observer rewarded with a moment that feels less taken than received. Distance collapses into intimacy without intrusion.
 avoidRules:
   - zoo
   - cage
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
   tags:
     - photography-and-realism
-    - genres
+    - nature-and-wildlife
   supportedTasks:
     - image_generate
     - image_edit

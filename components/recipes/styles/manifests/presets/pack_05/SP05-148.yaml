@@ -2,15 +2,15 @@ schemaVersion: 1
 id: SP05-148
 packId: pack_05
 name: Baccano! - Jazz Railcrime Ensemble
-category: 2. 2000s Classics
+category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
-  - 2000s-classics
+  - anime-battle-and-worlds
+  - modern-shonen-and-action
 visualDna:
   aesthetic: Prohibition-era train violence, immortal gangsters, jazz-age ensemble chaos, amber barrooms, nonlinear pulp cool, smiling criminals and bloody miracles
   form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
   atmosphere: Riotous, jazzy, dangerous, charismatic
   key_features: Train-car action, 1930s fashion, ensemble staging, amber bar lighting, pulp-crime body language
+  creative_brief: A train car becomes a ballroom for bullets and immortals who forgot how to die, jazz keeping time while bodies hit the floor and get back up grinning. Amber light pools in whiskey glasses while nonlinear chaos writes its own pulp scripture. The 1930s never ended — it just learned to smile through the blood.
 avoidRules:
   - realistic
   - 3d render
@@ -40,12 +41,12 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
-  categoryId: 2000s-classics
-  categoryName: 2. 2000s Classics
+  packName: Anime Battle & Worlds
+  categoryId: modern-shonen-and-action
+  categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
-    - 2000s-classics
+    - anime-battle-and-worlds
+    - modern-shonen-and-action
   supportedTasks:
     - image_generate
     - image_edit

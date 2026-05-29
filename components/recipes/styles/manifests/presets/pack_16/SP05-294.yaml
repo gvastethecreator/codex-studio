@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-294
+packId: pack_16
+name: Mind Game - Psychedelic Escape Sprint
+category: 10. Studio Masterpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - studio-masterpieces
+visualDna:
+  aesthetic: Explosive mixed-style self-reinvention, hot-blooded panic, abstract transitions, impossible comedic near-death and liberation surging through every visual decision
+  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
+  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
+  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
+  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
+  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
+  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
+  atmosphere: Liberating, insane, bright, kinetic
+  key_features: Mixed-media bursts, escape-motion framing, psychedelic transitions, comic panic acting, freedom iconography
+  creative_brief: Death becomes a door and the door opens into a sprint where every frame sheds its own skin in pursuit of something wilder. The universe laughs at itself through watercolor dissolves, photographic collage, and line art that refuses to sit still. Liberation is not a state but a velocity, and the image accelerates until it escapes its own definition.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-294.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: studio-masterpieces
+  categoryName: 10. Studio Masterpieces
+  tags:
+    - anime-classics-and-prestige
+    - studio-masterpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

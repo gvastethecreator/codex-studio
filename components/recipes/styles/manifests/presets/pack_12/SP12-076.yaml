@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-076
+packId: pack_12
+name: Aurora Bastion Siege
+category: 4. Sieges, Warfronts & Last Stands
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+visualDna:
+  aesthetic: Winter siege under auroras at a remote bastion.
+  subject_treatment: Elite defenders and assault machines.
+  color_and_tone: Aurora green, ice blue, and war red.
+  lighting_and_shadow: Celestial glow over compacted snow.
+  texture_and_material: Carved ice, stone, and iron.
+  camera_and_composition: Tiered walls with offensive approach routes.
+  atmosphere_and_mood: Desperate resistance and pride.
+  rendering_and_quality: High-level tactical warfare scene.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - tropical
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-076.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: Bureaucratic sci-fi policing, sleek weapons, surveillance interfaces, social control tension, dominator guns, psycho-pass hue checks, holographic crime coefficients, dystopian Tokyo
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
   atmosphere: Clinical, oppressive, dystopian, cold
   key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
+  creative_brief: Justice wears a digital mask and carries a numbered verdict. Every citizen walks beneath a halo of data, their soul reduced to a coefficient on a screen. The law is not blind; it is watching with infinite, unblinking eyes.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: mecha-and-cyberpunk
   categoryName: 7. Mecha & Cyberpunk
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - mecha-and-cyberpunk
   supportedTasks:
     - image_generate

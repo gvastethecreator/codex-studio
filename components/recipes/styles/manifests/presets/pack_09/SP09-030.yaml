@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-030
 packId: pack_09
 name: Burlap Sack
-category: 2. Man-Made Materials
+category: 4. Surface Wear And Aging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - surface-wear-and-aging
 visualDna:
   aesthetic: Potato sack
   form_and_line: Coarse weave
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Loose weave
   atmosphere: Poor, rural
   key_features: Grid weave
+  creative_brief: Capture the rough honesty of burlap where coarse jute fibers interlace in a grid of tan and brown utility, each thread a visible record of plant turned to purpose. The surface must feel dry and scratchy to the eye, a loose weave that hints at the grain it once carried. Render the dignity of the cheap and functional, beauty found in necessity's simplest weave.
 avoidRules:
   - silk
   - smooth
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: surface-wear-and-aging
+  categoryName: 4. Surface Wear And Aging
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - surface-wear-and-aging
   supportedTasks:
     - image_generate
     - image_edit

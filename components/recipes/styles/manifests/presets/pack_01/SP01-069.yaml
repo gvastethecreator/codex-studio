@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-069
 packId: pack_01
 name: Boudoir Photography
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Intimate portrait
   form_and_line: Curves
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Intimate, soft
   key_features: Bed or window
+  creative_brief: Shadow drapes itself across skin like whispered permission, the space between fabric and flesh becoming its own language. Intimacy here is not revealed but protected, a sanctuary built of warm darkness and unguarded trust.
 avoidRules:
   - explicit
   - harsh
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

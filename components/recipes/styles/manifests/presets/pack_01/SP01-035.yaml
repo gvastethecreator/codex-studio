@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-035
 packId: pack_01
 name: Rembrandt Lighting
-category: 2. Lighting
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - lighting-techniques
 visualDna:
   aesthetic: Classic portrait lighting
   form_and_line: Triangle of light on cheek
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Serious, artistic
   key_features: Chiaroscuro
+  creative_brief: The face emerging from darkness like a thought becoming visible, a sacred triangle of illumination carved beneath the eye by a single angled source. Warmth pools on skin while shadow recedes into painterly depth. Light as the sculptor's chisel against velvet void, each portrait a study in what is revealed and what is earned.
 avoidRules:
   - flat
   - bright
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - lighting
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

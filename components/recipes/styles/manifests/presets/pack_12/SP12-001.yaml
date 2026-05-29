@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-001
+packId: pack_12
+name: Neon Samurai District
+category: 1. Neon Urban & Night Ops
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+visualDna:
+  aesthetic: Urban Japanese neo-noir with electric rain and kanji reflections.
+  subject_treatment: Cyber warrior with modular armor and sharp silhouette.
+  color_and_tone: Magentas, cyan and oil black with hard contrasts.
+  lighting_and_shadow: Side neon tubes with volumetric backlighting.
+  texture_and_material: Brushed metal, wet asphalt, and grainy holograms.
+  camera_and_composition: Mid-shot framing, narrow street, deep vanishing point.
+  atmosphere_and_mood: Silent tension before the duel.
+  rendering_and_quality: AAA key art, fine detail, cinematic sharpness.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - lowres
+  - blurry
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-001.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-056
 packId: pack_11
 name: Electron Microscope
-category: 5. Micro/Macro
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: SEM scan, electron-micrograph, nano-landscape, sub-micron-world, vacuum-chamber art
   form_and_line: Tiny details, micro-sphere contours, crystalline-facet edges, dendrite-branch, nanowire strands
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe
   atmosphere: Scientific, weird, electron-beam silence, nano-frontier, magnification-horizon
   key_features: Scale bar, micron-marker, acceleration-voltage label, detector-mode annotation, sputter-coating grain, magnification-readout, charging-artifact bands
+  creative_brief: Electrons scan across a vacuum-sealed landscape where dust becomes boulders at one hundred thousand times magnification, raster lines sweeping over sputter-coated topography. Scale dissolves into vertigo when the invisible world reveals itself more intricate and structured than the visible one ever knew. Nano-landscape rendered in monochrome grey gradient, each dendrite-branch and crystalline-facet a continent mapped by the scanning beam in the electron silence.
 avoidRules:
   - color
   - far away
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

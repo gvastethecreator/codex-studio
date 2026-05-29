@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-035
 packId: pack_02
 name: Looney Tunes Chuck Jones Golden Age Cartoon Frenzy
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Elastic golden-age studio cartoon, Bugs Bunny physics, painted backgrounds, anvil comedy
   form_and_line: Thick black
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme squash/stretch, full-body deformation, eye-pop take
   atmosphere: Funny, violent, anarchic slapstick, coyote resilience
   key_features: Abstract background, painted backdrop, pencil-test energy
+  creative_brief: Gravity is merely a suggestion here, revoked at will by coyotes, rabbits, and the architecture that betrays them. Paint liberates itself from realism, splashing across backgrounds in bold, graphic defiance. The only law is the gag — and the gag must always, gloriously, detonate.
 avoidRules:
   - realistic
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

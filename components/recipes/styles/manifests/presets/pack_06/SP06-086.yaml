@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-086
 packId: pack_06
 name: RPG Maker Chibi Tileworld
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Classic RPG Maker top-down tile world, chibi two-head-tall sprites, cute 16x16 tile forests, tiny treasure chests, innkeeper NPC behind counter, nostalgic indie-RPG charm, Yume Nikki dreamscape simplicity, Ib horror-cute dissonance
   form_and_line: Small-pixel sprite outlines, tile-grid construction, chunky square tiles, simple sprite animation frames, grid-locked everything
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Top-down orthographic grid, tile-based movement snapping, screen-transition fade, flat-isometric hybrid worldview
   atmosphere: Cozy, nostalgic, do-it-yourself creativity, small-town adventure warmth, indie-game soul
   key_features: Grid-based tile world, chibi two-head-tall sprites, top-down orthographic perspective, tile-repetition patterns, dialogue-box overlay
+  creative_brief: Chibi sprites navigate a tile-based world where every tree, every chest, every innkeeper stands on an invisible grid of possibility. The orthographic camera never tilts, never zooms, content to observe a miniature universe from its fixed divine perspective. The image feels like a world built in an afternoon by someone who believed in the stories they were telling.
 avoidRules:
   - realistic
   - 3d
@@ -38,13 +39,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

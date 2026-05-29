@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-027
 packId: pack_03
 name: Metaballs
-category: 3. 3D Styles
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - 3d-styles
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Organic blobs merging
   form_and_line: Smooth curves
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Abstract, motion graphics, organic fluidity
   atmosphere: Fluid, abstract, hypnotic flow
   key_features: Merging shapes, surface tension
+  creative_brief: 'Spheres reach toward each other across invisible thresholds, and where they touch, surface tension bridges the gap into a single continuous form — the isosurface algorithm deciding where one blob ends and another begins. Glossy gradients wrap every curve like liquid plastic frozen mid-pour, and specular highlights trace the seams of fusion. The image is hypnotic abstraction: molecular, organic, a lava lamp rendered with the precision of mathematical inevitability.'
 avoidRules:
   - sharp
   - geometric
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: 3d-styles
-  categoryName: 3. 3D Styles
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - 3d-styles
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

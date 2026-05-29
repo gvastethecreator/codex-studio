@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-001
 packId: pack_03
 name: Octane Spectral GPU Path Tracer
-category: 5. Render Engines
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - render-engines
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: GPU path traced render
   form_and_line: Sharp, physically correct
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Cinematic, slick, hyper-polished
   key_features: Octane signature spectral bloom
+  creative_brief: Light fractures into its constituent wavelengths like a prism held against the sun — spectral highlights bloom across glossy surfaces, each reflection a small revelation of physics made beautiful. Octane's GPU path tracing treats every photon as a character, scattering and bending with spectral precision. The image feels engineered by someone who understands that true polish is the absence of compromise.
 avoidRules:
   - photo
   - drawing
@@ -41,11 +42,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: render-engines
-  categoryName: 5. Render Engines
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - render-engines
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

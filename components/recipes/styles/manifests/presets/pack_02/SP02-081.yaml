@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-081
 packId: pack_02
 name: Grotesque Exaggeration Cartoon
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Deliberately ugly caricature, bulbous distorted noses, comically oversized heads, warty textures, hideous charm, flesh stretched beyond recognition, adult-swim grotesque, John Kricfalusi energy
   form_and_line: Wobbly uneven contours, spasming line weight, broken anatomy, scratchy re-draw marks, elastic limb logic
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Inflated heads on pin bodies, mismatched eye sizes, teeth bursting from lips, impossible spinal curves
   atmosphere: Uncomfortable, repulsive yet funny, fever-dream ugly, caricature at its cruelest
   key_features: Asymmetric eyes, bulbous nose center-stage, neck veins bulging, excessive chin folds
+  creative_brief: Every feature rebels against proportion, anatomy buckling under the weight of its own comic insistence. Flesh stretches, pores bloom, and noses colonize the frame with gleeful disregard for politeness. The result is a pageant of the repulsive that somehow loops back around to magnetic, a funhouse mirror that you cannot stop staring into.
 avoidRules:
   - realistic
   - photorealistic
@@ -39,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

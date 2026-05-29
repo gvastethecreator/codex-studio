@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-073
 packId: pack_09
 name: Linoleum Floor
-category: 5. Elemental & FX
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Kitchen floor 70s
   form_and_line: Printed pattern
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Peeling corner
   atmosphere: Nostalgic, home
   key_features: Repeat pattern
+  creative_brief: Render the nostalgic pattern of mid-century linoleum where printed motifs repeat across a waxy beige surface, edges curling slightly with age like a photograph of domestic memory. The material should feel smooth but tired, a floor that has witnessed decades of footsteps in kitchens long remodeled. Capture the warmth of the retro, the domestic archaeology of an ordinary afternoon preserved in vinyl.
 avoidRules:
   - tile
   - wood
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

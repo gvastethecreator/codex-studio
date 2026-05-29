@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-009
 packId: pack_08
 name: Steampunk Inventor
-category: 3. Subcultures
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - fashion-and-costume
-  - subcultures
+  - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Victorian sci-fi costume, Jules Verne expedition, airship-admiral regalia
   form_and_line: Gears, goggles, corsets, pocket-watch chains, top-hat elongation, bustle-back volume
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Mechanical limbs (optional)
   atmosphere: Adventurous, retro, inventive, clockwork wonder, zeppelin-hangar ambition, tea-and-tinker curiosity
   key_features: Brass accessories, aviator goggles, gear-motif jewelry, leather tool belt
+  creative_brief: Clock hands freeze mid-tick across a waistcoat of burnished bronze, gears catching gaslight in constellations of polished brass. An aviator peers through tinted lenses at a future the Victorians dreamed but never built, leather tool belt heavy with instruments for measuring the impossible.
 avoidRules:
   - modern
   - plastic
@@ -32,13 +33,14 @@ attributes:
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
-  categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryId: fantasy-sci-fi-costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
-    - subcultures
+    - fantasy-sci-fi-costume
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

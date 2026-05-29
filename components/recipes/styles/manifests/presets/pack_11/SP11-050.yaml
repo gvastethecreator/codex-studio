@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-050
 packId: pack_11
 name: Cocktail Macro
-category: 1. Food & Drink
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-drink
+  - toys-and-miniatures
 visualDna:
   aesthetic: Drink closeup, cocktail-porn, mixology-art, back-bar-beauty, happy-hour-glamour
   form_and_line: Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension
   atmosphere: Party, relax, cocktail-hour murmur, ice-clink rhythm, Friday-evening freedom
   key_features: Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap bruise
+  creative_brief: Ice cubes stack in crystalline architecture, refracting amber negroni light into caustic patterns that dance across the bar surface. Condensation beads slowly on the chilled coupe, each droplet a tiny lens containing an inverted miniature of the room it cools. Liquid-ruby clarity promises the specific warmth of a Friday evening, the citrus-peel twist releasing its oil across the surface like a benediction before the first sip.
 avoidRules:
   - opaque
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-drink
-  categoryName: 1. Food & Drink
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - food-and-drink
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

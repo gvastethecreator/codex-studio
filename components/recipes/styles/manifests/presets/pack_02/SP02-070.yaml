@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-070
 packId: pack_02
 name: Butterfly Lighting
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Glamour portrait
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Beautiful, clean, aspirational elegance, fashion confidence
   key_features: Nose shadow, catchlight, cheekbone highlight, clavicle glow
+  creative_brief: Light pours downward like a benediction, lifting cheekbones into pearl and sculpting a delicate shadow beneath the nose that anchors the entire composition. The skin glows from within—not lit but luminous, as if the subject were made of something finer than mere flesh.
 avoidRules:
   - harsh shadows
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-053
 packId: pack_09
 name: Smoke/Fog
-category: 5. Elemental & FX
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Thick fog
   form_and_line: Soft gradients
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Turbulence
   atmosphere: Mysterious, blind
   key_features: Density
+  creative_brief: Render the soft erasure of thick fog where the world dissolves into gradients of grey, edges softening into suggestion and distance becoming a mystery of volumetric density that swallows form in stages. The material must feel cool and damp, a veil that reveals by hiding, turbulence swirling through the mist like slow thought. Capture the beauty of the half-seen, atmosphere as the art of withholding.
 avoidRules:
   - solid object
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

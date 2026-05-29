@@ -1,0 +1,52 @@
+schemaVersion: 1
+id: SP05-335
+packId: pack_13
+name: Haruko Ichikawa - Mineral Void Serenity
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Luminous gem-like bodies suspended in open emptiness, sparse worldbuilding, fragile identity in crystalline stillness, minimalist melancholy and reflective translucency
+  form_and_line: Minimal precise contour, gem-edge line clarity, low-density expressive marks
+  color_palette: Opal white, seafoam cyan, pale gold, quartz pink, void black, glacial blue
+  lighting_setup: Clean refractive light, edge glow, vast ambient openness, crystalline sparkle without clutter
+  material_texture: Polished mineral translucency, sea-wind smoothness, glasslike skin, sparse matte ground
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Slim fragile anatomy, open-space isolation, clean silhouette spacing, low-clutter monumental emptiness
+  atmosphere: Sparse, crystalline, introspective, luminous
+  key_features: Gem-body translucency, open void composition, sparse landscape, fragile posture language, reflective surfaces
+  creative_brief: Bodies as geodes hollowed to translucence. Identity floats in mineral suspension, fragile and crystalline, waiting for light to prove it still exists. Emptiness is not absence but the condition for clarity.
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-335.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-character-and-lifestyle
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

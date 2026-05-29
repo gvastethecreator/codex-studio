@@ -3,12 +3,23 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_03/materials-1').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_03/lighting-and-atmosphere-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_03/3d-styles-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_03/applications-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_03/render-engines-5').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_03/hard-surface-and-industrial-cgi-1').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_03/organic-and-character-cgi-2').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_03/environment-and-worldbuilding-3').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_03/lookdev-and-render-pipelines-4').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () => import('./pack_03/stylized-3d-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

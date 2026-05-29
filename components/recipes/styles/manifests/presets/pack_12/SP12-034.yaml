@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-034
+packId: pack_12
+name: Crimson Canyon Sniper Run
+category: 6. Wilderness Hunts & Harsh Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+visualDna:
+  aesthetic: Tactical shooter in highly vertical red canyons.
+  subject_treatment: Expert marksmen with geological camouflage.
+  color_and_tone: Mineral red, dry beige, and clear sky blue.
+  lighting_and_shadow: Aggressive sunlight with defined shadows.
+  texture_and_material: Sedimentary rock, fine dust, and rough fabric.
+  camera_and_composition: Extreme depth across cliffs and bridges.
+  atmosphere_and_mood: Precision, patience, and distant lethality.
+  rendering_and_quality: Competitive stage with clear readability lines.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - neon-city
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-034.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

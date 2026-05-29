@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-110
 packId: pack_02
 name: SpongeBob Gross-Up Freeze Frame
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, nautical nonsense colliding with fleshy realism, sea-salt weirdness, deranged reaction insert, undersea slapstick whiplash
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Cheery, revolting, whiplash-funny, manic
   key_features: Normal-to-gross style contrast, close-up flesh detail, cartoon sponge absurdity, reaction-frame jump scare, goofy undersea props
+  creative_brief: A cheerful world suddenly arrested by the camera's cruel proximity, innocence freeze-framed into a nightmare of pores and follicles. The gag lives in the whiplash between Saturday-morning brightness and the grotesque truth that the magnifying glass reveals.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

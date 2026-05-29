@@ -51,12 +51,13 @@ Run `bun run recipes:evaluate:live -- --recipe=<id> --out=logs/recipe-prompt-qua
 2. Edit `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` first.
    `styles:scaffold` uses `components/recipes/styles/manifests/templates/style-preset.template.yaml`, `sprite-sheet-preset.template.yaml`, or `texture-preset.template.yaml` under the hood for new presets.
 3. Preserve stable `id`, `packId`, `name`, `category`, visual DNA, avoid rules, asset refs, supported tasks, tags, version.
-4. Maintain editorial taxonomy (`packId`, `packName`, `categoryId`, `categoryName`, domain, tags, supported tasks, default image state) so agents can query presets without scanning compatibility packs.
-5. Register the preset in both the matching category `presetRefs` and the pack-level `presetRefs`; refs must stay inside the same pack namespace.
-6. Keep each preset visually distinct from neighboring presets.
-7. Do not collapse motif/avoid constraints into generic prompt text.
-8. Validate the edited preset file and any catalog index generated from it.
-9. Import manifest-authoring contracts from `components/recipes/styles/manifestTypes.ts` and runtime/UI contracts from `components/recipes/styles/runtimeTypes.ts`. Do not use the retired `components/recipes/styles/types` path.
+4. Keep taxonomy source language in English for durable ids/tags/labels, and keep `category.id` in `kebab-case` (no `snake_case`, no `videojuegos` legacy slugs).
+5. Maintain editorial taxonomy (`packId`, `packName`, `categoryId`, `categoryName`, domain, tags, supported tasks, default image state) so agents can query presets without scanning compatibility packs.
+6. Register the preset in both the matching category `presetRefs` and the pack-level `presetRefs`; refs must stay inside the same pack namespace.
+7. Keep each preset visually distinct from neighboring presets.
+8. Do not collapse motif/avoid constraints into generic prompt text.
+9. Validate the edited preset file and any catalog index generated from it.
+10. Import manifest-authoring contracts from `components/recipes/styles/manifestTypes.ts` and runtime/UI contracts from `components/recipes/styles/runtimeTypes.ts`. Do not use the retired `components/recipes/styles/types` path.
 
 Run `bun run styles:validate -- --preset=<id>` after editing one granular preset, or `bun run styles:validate -- --pack=<pack_id>` after editing a pack. Use `--coverage` to see taxonomy and default-image coverage by pack, and `--strict-taxonomy` when intentionally requiring persisted taxonomy in the edited scope.
 Run `bun run styles:scaffold -- --preset=<id> --pack=<pack_id> --category=<category id or exact name> --name=<Name> --template=style|sprite|texture` to preview the new preset file plus pack/category ref changes before writing them. Add `--write` to apply the scaffold. If `--default-image` is omitted, the scaffold uses `/assets/recipes/styles/defaults/<id>.webp` and leaves `taxonomy.hasDefaultImage: false` until the asset exists.

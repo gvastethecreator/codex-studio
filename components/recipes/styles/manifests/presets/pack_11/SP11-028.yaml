@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-028
 packId: pack_11
 name: Neon Sign
-category: 3. Artistic Mediums
+category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - retro-pop-and-kitsch
 visualDna:
   aesthetic: Bar sign, night-window glow, storefront-beacon, electric-avenue art, motel-vacancy poetry
   form_and_line: Glass tubes, bent-tube contour, cursive-glow stroke, continuous-bend silhouette
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Continuous line, one-stroke drawing illusion, tube-path negative-space, cursive-electric flow
   atmosphere: Buzzing, night, last-call quiet, rain-on-neon romance, urban-loneliness beauty
   key_features: Black backing, tube-mounting clips, transformer-glow warmth, glass-bend highlights, wall-wash halo
+  creative_brief: Bent glass hums with noble gas electricity, cursive light writing desire onto the night street in argon-purple and neon-red. The glow bleeds halo-soft into rain-slick pavement, doubling the message into a shimmering reflection below the buzzing tube. A storefront beacon calls to the lonely and the lost, electric poetry for the rain-on-neon hour when the city exhales.
 avoidRules:
   - daylight
   - paint
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: retro-pop-and-kitsch
+  categoryName: 4. Retro Pop And Kitsch
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - retro-pop-and-kitsch
   supportedTasks:
     - image_generate
     - image_edit

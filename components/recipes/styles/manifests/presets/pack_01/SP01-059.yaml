@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-059
 packId: pack_01
 name: Abstract Photo
-category: 4. Genres
+category: 6. Nature And Wildlife
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - nature-and-wildlife
 visualDna:
   aesthetic: Unrecognizable forms
   form_and_line: Shape and color
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Total abstraction
   atmosphere: Conceptual
   key_features: No subject
+  creative_brief: The camera unmoors from its duty to describe, wandering into territories where color itself becomes the protagonist and form exists only as suggestion. Blur and close-range mystery conspire to dissolve the familiar until recognition fails and new meaning assembles in the wreckage of the recognizable. What the eye cannot name, the imagination begins to furnish.
 avoidRules:
   - recognizable object
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
   tags:
     - photography-and-realism
-    - genres
+    - nature-and-wildlife
   supportedTasks:
     - image_generate
     - image_edit

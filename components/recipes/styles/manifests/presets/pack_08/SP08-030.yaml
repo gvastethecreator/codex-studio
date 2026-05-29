@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-030
 packId: pack_08
 name: Raver (90s)
-category: 3. Subcultures
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Party, happy, warehouse-bass unity, 4AM transcendence, collective-euphoria embrace
   key_features: Kandi bracelets, pacifier, bucket hat, phat pants, neon hair extensions
+  creative_brief: Blacklight catching reflective 3M like a secret language visible only to those who stayed past midnight, phat pants billowing with the bass drop that just passed through the warehouse floor. Kandi bracelets traded between strangers who became family at 4AM, pacifiers worn as badges of a tribe that worships at the altar of strobe light and collective euphoria.
 avoidRules:
   - boring
   - grey
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
     - subcultures
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

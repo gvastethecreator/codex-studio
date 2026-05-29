@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-098
 packId: pack_02
 name: Napkin Scribble Blueprint
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching world-changing invention, coffee-mug-ring framing the concept, beer-condensation warping the paper, desperate late-night inspiration captured on whatever surface available, startup-origin-story artifact, Archimedes-eureka-bathtub energy but in a dive bar
   form_and_line: Ballpoint-pen on absorbent paper, ink-burst where pen pauses, scratchy-dry-ink skips, pressed-too-hard paper indentations
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Drawing wrapping around napkin folds, idea-arrows pointing off-edge, text-squeezing as space runs out, quarter-napkin sketch
   atmosphere: Eureka-moment electricity, desperate-inspiration, 3am-bar-genius, startup-mythology, beautiful-desperation
   key_features: Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, bar-ambient-lighting, scratchy-ink skips
+  creative_brief: Epiphany caught on the cheapest surface available, an idea bleeding through thin fibers while condensation from a forgotten glass warps the edges of tomorrow. A ring of coffee frames the future, the path of the pen stuttering where conviction outpaced ink. The napkin carries more weight than any polished proposal, its very fragility proof that the thought could not wait for better paper.
 avoidRules:
   - digital
   - clean
@@ -39,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-011
 packId: pack_09
 name: Wolf Fur
-category: 1. Natural Materials
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Thick animal coat
   form_and_line: Hair strands
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flowing hair
   atmosphere: Wild, soft
   key_features: Fur direction
+  creative_brief: Render the layered architecture of wolf fur, where grey and white guard hairs float above a dense undercoat of warmth, each strand carrying direction and purpose as if wind still passes through it. The soft sheen should trace the contours of a living creature without revealing the animal itself. Capture the paradox of softness that shelters wildness, comfort that conceals tooth and claw.
 avoidRules:
   - matted
   - wet
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - natural-materials
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

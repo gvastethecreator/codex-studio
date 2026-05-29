@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-108
 packId: pack_02
 name: Cow and Chicken - Loud Primary Derangement
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Shouting primary-color lunacy, absurd sibling slapstick, huge feet and tiny torsos, anti-subtle cartoon vulgarity, hallway chaos, exaggerated rubbery ugliness, jagged gross comedy
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Loud, shameless, unruly, ridiculous
   key_features: Primary-color saturation, giant feet, screaming mouths, surreal hallway staging, chaotic sibling energy
+  creative_brief: A fever dream rendered in poster paint and cheap newsprint, where every scream rattles the panel borders and limbs stretch beyond anatomy's permission. The frame vibrates with sibling warfare conducted at volumes meant for stadiums, and dignity has been ejected from the room entirely.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

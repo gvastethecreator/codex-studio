@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-036
 packId: pack_02
 name: Fleischer Rubber Hose Cartoon
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: 1930s monochrome bounce-cartoon, Mickey/Betty Boop era, rubber-hose limbs, pie-cut eyes, cuphead energy
   form_and_line: Thick, bouncy
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Noodle limbs, rubber-hose arms, boneless contortion
   atmosphere: Happy, weird, vaudeville rhythm, early-talkie energy
   key_features: Pie eyes, white gloves, bouncing ball sync, surreal transformation
+  creative_brief: Figures bounce through a monochrome dream whose logic was written by jazz and vaudeville. Limbs spiral like party streamers, eyes blink in quarter-note rhythm, and the world reshapes itself to accommodate the next absurd twist. It is not animation — it is incantation, summoning joy from pure graphite.
 avoidRules:
   - color
   - modern
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

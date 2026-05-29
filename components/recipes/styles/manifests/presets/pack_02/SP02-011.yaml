@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-011
 packId: pack_02
 name: Cyberpunk Anime (90s)
-category: 1. Film Genres
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - film-genres
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Dense cel-animated cyber noir, Ghost in the Shell style, philosophical tech dread, urban sprawl, brain-hack paranoia
   form_and_line: Cel shaded
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Wires, cable tangles, data tendrils
   atmosphere: Tech, moody, conspiratorial, rain-slick isolation
   key_features: Bloom, cybernetic implant, low-light cityscape
+  creative_brief: Shadows pool in cel-painted depths where green cathode glow seeps through the cracks of a networked metropolis. Each frame is dense with hand-drawn dread — cables snaking like exposed nerves, rain streaking down acetate windows, and a question hanging in the air about where the machine ends and the mind begins.
 avoidRules:
   - modern digital
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: film-genres
-  categoryName: 1. Film Genres
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - film-genres
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

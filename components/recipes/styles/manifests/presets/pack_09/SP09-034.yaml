@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-034
 packId: pack_09
 name: Mold & Mildew
-category: 4. Weathering & Decay
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - weathering-and-decay
+  - metals-and-minerals
 visualDna:
   aesthetic: Damp corner
   form_and_line: Fuzzy spots
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Stains
   atmosphere: Rotting, damp
   key_features: Spreading spots
+  creative_brief: Capture the organic creep of decay where fuzzy colonies of black, green, and grey spread across damp surfaces like a map of neglect drawn by spores. The texture should feel dusty and soft, a living carpet of dissolution eating its way through the man-made one millimeter at a time. Render the unsettling beauty of rot, nature reclaiming territory in the quiet language of mold.
 avoidRules:
   - clean
   - sterile
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: weathering-and-decay
-  categoryName: 4. Weathering & Decay
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - weathering-and-decay
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

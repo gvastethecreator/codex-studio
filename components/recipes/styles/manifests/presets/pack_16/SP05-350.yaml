@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-350
+packId: pack_16
+name: Free! - Chlorine Splash Relay Glow
+category: 6. Sports, Competition & Performance
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - sports-competition-and-performance
+visualDna:
+  aesthetic: Aquatic team camaraderie, blue-tiled pool brilliance, water-surface light caustics, relay urgency, youth friendship and polished bodies rendered through warm sports-drama spectacle
+  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
+  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
+  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
+  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
+  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
+  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
+  atmosphere: Refreshing, bright, emotional, competitive
+  key_features: Splash arcs, lane-line geometry, wet-hair highlights, relay handoff tension, poolside team silhouettes
+  creative_brief: Water keeps no secrets but holds every friendship. Caustics dance on chlorine-blue tile, and the relay is a promise passed through splash and breath. Togetherness is measured in lane lines and the moment before the dive.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-350.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: sports-competition-and-performance
+  categoryName: 6. Sports, Competition & Performance
+  tags:
+    - anime-classics-and-prestige
+    - sports-competition-and-performance
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP06-064',
     name: 'Assemblage',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -19,12 +19,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Mysterious, collection',
       key_features: 'Shadow box',
+      creative_brief:
+        'Found objects arranged in a box become diorama, become theater, become universe in miniature. Rust dialogues with plastic, wood with glass, the found speaking to the made across material boundaries. The image is a collection that became a composition, taxonomy elevated to poetics.',
     },
   },
   {
     id: 'SP06-073',
     name: 'Embroidery on Photo',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -37,12 +39,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Stitched details',
       atmosphere: 'Personal, tactile',
       key_features: 'Thread texture',
+      creative_brief:
+        'Thread pierces photographic paper, adding texture to captured light, the stitch becoming a third dimension on a two-dimensional memory. The needle leaves holes, the floss adds color, the photograph becomes substrate rather than endpoint. The image heals itself through embroidery, the visible mend becoming the art.',
     },
   },
   {
     id: 'SP06-077',
     name: 'Coffee Painting',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -55,12 +59,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Fluid',
       atmosphere: 'Cozy, rustic',
       key_features: 'Monochrome brown',
+      creative_brief:
+        'Coffee brewed strong enough to paint with leaves sepia stains on watercolor paper, the pigment organic, the process domestic. Rings from the bottom of the mug become compositional elements, accidents welcomed into the frame. The image smells faintly of morning, of kitchens, of the ritual that precedes creation.',
     },
   },
   {
     id: 'SP06-066',
     name: 'Trash Polka',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -73,12 +79,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Collage',
       atmosphere: 'Intense, chaotic',
       key_features: 'Red and Black',
+      creative_brief:
+        'Black ink and red blood are the only colors permitted in a world where realism collides with graphic abstraction on skin. Splatter, smear, and stencil share the same canvas, the same arm, the same philosophy of controlled chaos. The image hurts beautifully, aggression refined into iconography.',
     },
   },
   {
     id: 'SP06-068',
     name: 'Zine Aesthetic',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -91,12 +99,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Rough cuts',
       atmosphere: 'Raw, underground',
       key_features: 'Xerox grain',
+      creative_brief:
+        'The photocopier flattens everything into high-contrast grain, shadows becoming solid black, highlights burning to paper white. Staples and tape hold the booklet together, toner rubbing off on fingers that turn the pages. The image lives in the reproduction, the original lost or never existed — only the copy remains, and that is enough.',
     },
   },
   {
     id: 'SP06-069',
     name: 'Moodboard',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -109,12 +119,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Aesthetic',
       key_features: 'Color theme',
+      creative_brief:
+        'Images cluster around a color story, each piece chosen not for what it depicts but for the note it strikes in a visual chord. The arrangement is temporary, the pins repositionable, the composition a proposition rather than a conclusion. Feeling crystallizes in the spaces between borrowed pictures.',
     },
   },
   {
     id: 'SP06-070',
     name: 'Vision Board',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -127,12 +139,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Hopeful, messy',
       key_features: 'Pinned items',
+      creative_brief:
+        "Cork accepts the pin with a soft crunch, each punctured image a wish made physical on a board of intentions. String connects the connected, red yarn mapping relationships between clippings like a conspiracy theorist's dream board. The arrangement grows organically, a garden of aspiration pinned to vertical space.",
     },
   },
   {
     id: 'SP06-071',
     name: 'Mosaic (Paper)',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -145,12 +159,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Pixelated by scraps',
       atmosphere: 'Creative, recycled',
       key_features: 'Torn bits',
+      creative_brief:
+        'Magazine pages torn into confetti reassemble into image at distance, the fragments finding coherence only when the eye surrenders detail. Each scrap carries its own color, its own typography, its own advertisement, the aggregate becoming more than the archive. The image is a mosaic of meanings, each tessera a story that does not belong to the whole.',
     },
   },
   {
     id: 'SP06-072',
     name: 'Tape Art',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -163,12 +179,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Geometric',
       atmosphere: 'Urban, temporary',
       key_features: 'Tape strips',
+      creative_brief:
+        'Adhesive strips become line, become form, become image, the tape refusing to be merely functional, demanding aesthetic recognition. The lines are straight because tape cannot curve, the image bound by the geometry of its medium. Each strip catches light differently, matte against gloss, creating dimension from adhesive.',
     },
   },
   {
     id: 'SP06-074',
     name: 'Paint over Photo',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -181,12 +199,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Obscured details',
       atmosphere: 'Abstracted reality',
       key_features: 'Smeared paint',
+      creative_brief:
+        'Thick acrylic strokes drag across the photographic surface, obscuring and revealing in the same gesture, the paint both veil and window. The brush moves with the confidence of an artist who knows the photo is already complete, already safe, and can therefore be risked. The image lives in the friction between captured truth and applied gesture.',
     },
   },
   {
     id: 'SP06-078',
     name: 'Gold Leaf Art',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -199,12 +219,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Flat gold areas',
       atmosphere: 'Rich, ornamental',
       key_features: 'Metallic shine',
+      creative_brief:
+        'Gold leaf adheres to size with the delicacy of breath, the slightest air current threatening to fold the foil into oblivion. The metal catches light and throws it back, not as reflection but as radiance, an active source rather than passive surface. The image contains actual value — real gold, real light, a real refusal to be anything but precious.',
     },
   },
   {
     id: 'SP06-080',
     name: 'Stencil Art',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -217,12 +239,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Simplified',
       atmosphere: 'Bold, urban',
       key_features: 'Stencil bridges',
+      creative_brief:
+        'Negative space becomes positive through the bridge that holds the island of the letter O in place, the stencil declaring its method in every uncut connection. The image reduces to silhouette, detail sacrificed to reproducibility, the wall becoming the canvas for a message that can be repeated by anyone with cardboard and a blade.',
     },
   },
   {
     id: 'SP06-063',
     name: 'Decoupage',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -235,12 +259,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Surface wrap',
       atmosphere: 'Antique, homey',
       key_features: 'Varnish shine',
+      creative_brief:
+        'Layers of paper sealed under glossy varnish, edges softened by age, images surrendering their context to a new surface. The crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. Every decoupage is a palimpsest, the old becoming ground for the new.',
     },
   },
   {
     id: 'SP06-065',
     name: 'Scrapbook',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -253,12 +279,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Layered',
       atmosphere: 'Nostalgic, sweet',
       key_features: 'Page layout',
+      creative_brief:
+        'Ephemera arranged on a page — ticket stubs, pressed flowers, handwritten notes — each item a bookmark in the narrative of a life. Washi tape holds down memories like butterfly specimens, the composition a curated accident of affection. The page smells like a drawer that has not been opened since the person who filled it was young.',
     },
   },
   {
     id: 'SP06-075',
     name: 'Digital Collage',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -271,12 +299,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Scale play',
       atmosphere: 'Surreal, fun',
       key_features: 'Digital edges',
+      creative_brief:
+        'Layers float in digital space, each element imported from a different universe, composited into a reality that Photoshop alone can sustain. Scale, perspective, gravity — all negotiable, all adjustable via transform handles. The image celebrates the cut-and-paste logic of the screen, where everything is a layer and nothing is final.',
     },
   },
   {
     id: 'SP06-062',
     name: 'Photomontage',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -289,12 +319,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Impossible scale',
       atmosphere: 'Dreamlike',
       key_features: 'Realistic blend',
+      creative_brief:
+        'Photos blend at the pixel level, one world flowing into another through gradients of transparency, the join so seamless it becomes uncanny. Scale shifts without warning — a teacup holds an ocean, a face contains a city — the impossible presented with the banality of a passport photo. The image disturbs through plausibility, not fantasy.',
     },
   },
   {
     id: 'SP06-067',
     name: 'Mixed Media Canvas',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -307,12 +339,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Expressive',
       key_features: 'Heavy texture',
+      creative_brief:
+        'Paint meets sand, meets newspaper, meets fabric, meets anything that will stick to canvas and hold pigment. Texture builds into relief, the surface becoming as important as the image, tactility as content. The artwork asserts its objecthood, refusing to be a window into anything but its own material truth.',
     },
   },
   {
     id: 'SP06-076',
     name: 'Fumage (Smoke Art)',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -325,12 +359,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Ghostly',
       atmosphere: 'Ethereal, dark',
       key_features: 'Smoke patterns',
+      creative_brief:
+        'Flame licks the underside of paper, depositing soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. The carbon traces are ghostly, gradations of grey that seem to hover above the surface. The image is a collaboration with combustion, a record of the fire that almost was.',
     },
   },
   {
     id: 'SP06-079',
     name: 'Paper Marbling',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -343,12 +379,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Liquid distortion',
       atmosphere: 'Trippy, fluid',
       key_features: 'Oil patterns',
+      creative_brief:
+        'Pigment floats on the surface tension of thickened water, swirled into patterns by comb and stylus, then transferred to paper in a single decisive contact. No two pulls are identical, no two patterns repeatable, the medium encoding uniqueness into every sheet. The image is a liquid moment frozen, a turbulence caught becoming design.',
     },
   },
   {
     id: 'SP06-061',
     name: 'Collage (Analog)',
-    category: '4. Mixed Media',
+    category: '5. Mixed Media',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -361,6 +399,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Disjointed',
       atmosphere: 'Chaotic, surreal',
       key_features: 'Cutout edges',
+      creative_brief:
+        'Scissor cuts interrupt the seamless world of the magazine, reassembling fragments into a reality that the original photographs never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, the gap between the fragments generating more truth than the fragments themselves.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

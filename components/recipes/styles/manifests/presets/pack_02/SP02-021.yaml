@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-021
 packId: pack_02
 name: Hype Williams Fisheye Glam Video
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Late-90s luxury music video, Hype Williams fishbowl, shiny suits, tunnel vision, hip-hop opulence
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Distorted wide angle, fishbowl warp, tunnel perspective
   atmosphere: Cool, flashy, hip-hop royalty, aspirational excess
   key_features: Fisheye, spinning rims, slow-motion strut
+  creative_brief: The world curves into a glittering bubble where chrome catches light and bodies move through space like liquid neon. Every surface sweats excess, every angle distorts into myth, the lens itself drunk on abundance. This is the frame where swagger becomes scripture and the slow-motion strut is a prayer.
 avoidRules:
   - boring
   - normal
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

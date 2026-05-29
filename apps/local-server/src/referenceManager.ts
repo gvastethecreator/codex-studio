@@ -125,25 +125,26 @@ export function hydrateSourceSpecAssetPaths(
     return sourceSpec ?? null;
   }
 
-  let referenceIndex = 0;
+  const usedReferenceIndexes = new Set<number>();
 
   const hydratedAssets = sourceSpec.assets.map((asset) => {
-    if (asset.role !== 'reference' || !asset.dataUrl) {
+    if (!asset.dataUrl) {
       return asset;
     }
 
-    while (referenceIndex < references.length) {
-      const rawReference = references[referenceIndex];
-      const persistedRef = persistedRefs[referenceIndex] ?? null;
-      referenceIndex += 1;
+    for (const [index, rawReference] of references.entries()) {
+      if (usedReferenceIndexes.has(index)) continue;
+      const persistedRef = persistedRefs[index] ?? null;
 
       const nameMatches = !asset.name || !rawReference?.name || asset.name === rawReference.name;
       const strengthMatches =
         asset.strength == null ||
         rawReference?.strength == null ||
         Math.abs(asset.strength - rawReference.strength) < 0.000_001;
+      const dataUrlMatches =
+        !asset.dataUrl || !rawReference?.dataUrl || asset.dataUrl === rawReference.dataUrl;
 
-      if (!nameMatches || !strengthMatches) {
+      if (!nameMatches || !strengthMatches || !dataUrlMatches) {
         continue;
       }
 
@@ -151,8 +152,10 @@ export function hydrateSourceSpecAssetPaths(
         return asset;
       }
 
+      usedReferenceIndexes.add(index);
       return {
         ...asset,
+        dataUrl: undefined,
         localPath: persistedRef.path,
         strength: asset.strength ?? rawReference.strength ?? persistedRef.strength,
       };

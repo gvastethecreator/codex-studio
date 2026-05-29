@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-317
+packId: pack_16
+name: Megazone 23 - Arcade Highway Revelation
+category: 11. 70s & 80s Retro Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - 70s-and-80s-retro-anime
+visualDna:
+  aesthetic: Bike speed, arcade neon, hidden-city truth, youth rebellion under simulated skies, glossy urban 80s tech mythmaking
+  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
+  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
+  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
+  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
+  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
+  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  atmosphere: Sleek, rebellious, nocturnal, revelatory
+  key_features: Arcade glow, motorcycle motion, hidden-system hints, urban highways, youth-rebellion silhouettes
+  creative_brief: Motorcycle exhaust bleeds into arcade phosphor as a generation discovers that the sky above the city is just a screen, a lie painted by power. Speed becomes revelation, each gear-shift peeling back another layer of simulation until truth blossoms like neon on wet asphalt. Rebellion has never looked this glossy.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-317.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: 70s-and-80s-retro-anime
+  categoryName: 11. 70s & 80s Retro Anime
+  tags:
+    - anime-classics-and-prestige
+    - 70s-and-80s-retro-anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

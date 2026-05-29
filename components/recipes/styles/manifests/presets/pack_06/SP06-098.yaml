@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-098
 packId: pack_06
 name: TurboGrafx PC Engine
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: PC-Engine-TurboGrafx-16-aesthetic, compact-Japanese-sprite-magic, bright-vibrant-482-color-palette, Bonk-PC-Genjin-headbutt-caveman-charm, Castlevania-Rondo-of-Blood-richness, Hudson-Soft-API-developer-bee-logo-soul, HuCard-thin-credit-card-cartridges, CD-ROM2-Red-Book-audio-RPG-golden-age, NEC-console-that-could-have-been-great
   form_and_line: Compact-but-vibrant-pixel-sprites, 16-bit-sprite-hardware-in-8-bit-CPU-body, 320x256-or-256x240-resolution, CD-ROM-data-loaded-into-sprite-RAM
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 320x256-Japanese-resolution, CD-ROM-loaded-backgrounds-ceiling, vertical-oriented-Japanese-shmups, handheld-LT-LCD-screen, compact-sprite-proportions
   atmosphere: Japanese-console-wonder, NEC-technical-ingenuity, Hudson-Soft- creativity, CD-ROM-RPG- golden-age, what-could-have-been nostalgia
   key_features: Bright-482-color-palette, HuCard-cartridge, CD-ROM2-loaded-art, PC-Engine-compact-sprite-design, Bonk-PC-Genjin-style, 16-bit-graphics-in-8-bit-system, Japanese-console-charm
+  creative_brief: An 8-bit CPU drives 16-bit graphics through elegant Japanese engineering, compact sprites achieving what bigger machines managed with more silicon. HuCard cartridges thinner than credit cards contain entire worlds, the CD-ROM add-on loading backgrounds too beautiful for the era. The image carries the what-if of NEC's ambition, a console that nearly changed everything, preserved now in the amber of pixel art that still glows.
 avoidRules:
   - western
   - dark
@@ -40,13 +41,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

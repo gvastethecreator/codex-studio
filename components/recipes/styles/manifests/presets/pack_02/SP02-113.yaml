@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-113
 packId: pack_02
 name: The Oblongs - Toxic Suburb Family
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Mutant suburbia satire, malformed family silhouettes, environmental rot, class divide cartoon cruelty, trailer-park grotesquerie, deformity normalized into domestic routine, poisoned world whimsy
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Bleak, satirical, mutated, weirdly cozy
   key_features: Malformed suburban family, toxic backdrop details, trashy domesticity, odd body asymmetries, resigned humor
+  creative_brief: Domestic warmth curdles under smokestack shadows, where family portraits reveal the landscape's slow revenge on human form. Love persists in the half-melted smile, the lopsided embrace — tenderness surviving inside bodies the world tried to dispose of.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

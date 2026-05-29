@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-007
 packId: pack_03
 name: KeyShot Product Studio Renderer
-category: 5. Render Engines
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - render-engines
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Product design render
   form_and_line: Studio setup
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Clean, commercial, premium retail
   key_features: Product focus, interactive rendering
+  creative_brief: A product floats in studio space, every injection-molded curve and metallic sheen rendered with the scientific accuracy of mold-tech textures — HDRI environments wrap the object in light borrowed from the real world. Real-time ray tracing makes the designer's intent visible long before the mold is cut, and scientifically accurate materials speak the language of Pantone and polymer. Commerce meets craft in a frame that could be a premium catalog spread, asking nothing of the viewer but desire.
 avoidRules:
   - environment
   - messy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: render-engines
-  categoryName: 5. Render Engines
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - render-engines
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

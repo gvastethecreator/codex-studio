@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-024
 packId: pack_11
 name: Diorama Box
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Shoebox scene, miniature theater, classroom-craft world, peek-in story box
   form_and_line: Cutout layers, silhouette-backdrop contours, parallax-stack edges, stage-flat profiles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Forced perspective, shrinking-plane depth, foreground-background scale, cutout-distance illusion
   atmosphere: Creative, miniature, tiny-world awe, classroom-project pride, peering-in discovery
   key_features: Box walls, layered-cardboard strata, cotton-cloud ceiling, peephole framing
+  creative_brief: A shoebox becomes a universe through the transformative power of construction paper and glue, cotton-ball clouds floating above pipe-cleaner trees. Parallax-stack layers create false depth in the miniature theater, forcing perspective into the illusion of distance. The peephole frames a world that exists only when someone leans in close enough to believe in popsicle-stick horizons.
 avoidRules:
   - full scale
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

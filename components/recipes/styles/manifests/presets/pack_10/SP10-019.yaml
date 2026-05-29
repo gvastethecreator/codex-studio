@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Symmetrical
   atmosphere: Scientific, orderly
   key_features: Mandala
+  creative_brief: Frequency made visible, sand arranging itself into the fingerprint of a note. Sound becomes architect, geometry the frozen echo of vibration seeking rest.
 avoidRules:
   - random
 assets:
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

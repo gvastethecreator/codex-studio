@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-052
 packId: pack_03
 name: Automotive Render
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Car commercial CGI
   form_and_line: Aerodynamic lines
@@ -20,6 +20,7 @@ visualDna:
   render_quality: High end, pristine, launch-film quality
   atmosphere: Fast, luxury, aerodynamic desire
   key_features: Reflection lines, body-contour flow
+  creative_brief: 'Highlight lines sweep across the bodywork in unbroken arcs, tracing aerodynamic intent from grille to tail — metallic paint shifts color as the studio sweep reflection bends across compound curves. Rubber reads as rubber, glass laminate catches the world in controlled distortion, and every surface material is rendered with launch-film conviction. The image is speed made still: a car commercial frozen at the exact frame where desire meets engineering.'
 avoidRules:
   - dirty
   - dented
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

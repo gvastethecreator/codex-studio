@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-010
 packId: pack_03
 name: Unity HDRP High-End Game Pipeline
-category: 5. Render Engines
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - render-engines
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: High definition game engine
   form_and_line: Sharp
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Dynamic, interactive, player-driven
   key_features: Lens flares, HDRP pipeline
+  creative_brief: Volumetric fog rolls through real-time global illumination, and lens flares bloom where light sources dare to face the camera directly — HDRP orchestrates post-processing like a colorist's final pass. PBR materials integrate Substance-authored textures into a pipeline that turns interactive frames into cinematic stills. Player agency meets directorial intention in a world that renders faster than the eye can question, each cutscene-grade frame a promise of what lies beyond the loading screen.
 avoidRules:
   - mobile game
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: render-engines
-  categoryName: 5. Render Engines
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - render-engines
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

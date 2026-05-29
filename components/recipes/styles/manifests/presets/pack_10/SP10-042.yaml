@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Big eyes
   atmosphere: Playful, creepy
   key_features: Cute but dark
+  creative_brief: Saturday morning cartoons dragged through the gutters of fine art, big eyes staring from canvases that refuse to decide between cute and disturbing. Pop culture achieves self-awareness and finds itself monstrous.
 avoidRules:
   - serious
   - fine art
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

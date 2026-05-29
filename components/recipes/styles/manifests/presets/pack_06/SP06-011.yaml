@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-011
 packId: pack_06
 name: Palette Knife
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Abstracted details
   atmosphere: Bold, energetic
   key_features: Knife marks
+  creative_brief: Paint becomes sculpture as the blade carves slabs of pure pigment across the surface, each stroke a ridge you could measure with fingers. Detail yields to gesture, form to texture, until subject and surface become indistinguishable. The image does not depict — it occupies space, demanding acknowledgement of its physical presence.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

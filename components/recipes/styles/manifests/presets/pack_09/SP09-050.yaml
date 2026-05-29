@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-050
 packId: pack_09
 name: Chalk (Dry)
-category: 3. Tactile Surfaces
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - tactile-surfaces
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Sidewalk drawing
   form_and_line: Dusty stroke
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Smear
   atmosphere: Playful, temporary
   key_features: Dust
+  creative_brief: Render the powdery ephemera of dry chalk dragged across rough surface, leaving a trail of pigmented dust that hovers between presence and erasure, pastel color clinging to texture by the faintest of bonds. The mark should feel temporary and defiant, a streak of powdered joy that knows it will not survive the next breeze. Capture the beauty of the fugitive, art that accepts its own dissolution.
 avoidRules:
   - wet paint
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: tactile-surfaces
-  categoryName: 3. Tactile Surfaces
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - tactile-surfaces
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

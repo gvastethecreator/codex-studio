@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-013
 packId: pack_04
 name: Chibi Style
-category: 1. Comic Book Styles
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - childrens-and-educational
 visualDna:
   aesthetic: Super deformed
   form_and_line: Thick outline
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 2 heads tall
   atmosphere: Kawaii, funny, playful slapstick, adorable chaos
   key_features: Big head, tiny body, oversized props
+  creative_brief: Proportions collapse into pure adorable geometry, heads becoming planets that tiny bodies orbit around. Bright candy colors bounce off thick outlines like joy given physical mass. This is the physics of cute, where the rules of anatomy bend to serve the universal language of charm.
 avoidRules:
   - tall
   - realistic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

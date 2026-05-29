@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-010
 packId: pack_11
 name: 8-Bit Pixel Art
-category: 3. Artistic Mediums
+category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - retro-pop-and-kitsch
 visualDna:
   aesthetic: NES game sprite, 8-bit wonder, cartridge-era arcade, pixelated memory
   form_and_line: Pixel grid, sharp blocky edges, stair-step diagonals, hard-square corners
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Low resolution abstraction, blocky simplification, tile-based construction, forced grid logic
   atmosphere: Nostalgic, fun, digital, childhood arcade, joypad romance, pixel-hero quest
   key_features: Pixel grid alignment, dithering patterns, sprite boundaries, tile-map logic
+  creative_brief: Each pixel is a choice, every color indexed from a palette of fifty-six possibilities, constrained freedom that somehow expands imagination. Dithering patterns approximate what the restricted palette cannot say directly, dot by dot conjuring depth from a flat grid. Heroes are born on tile-mapped kingdoms where every visible cell was placed by hand against the scanline grain.
 avoidRules:
   - hd
   - vector
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: retro-pop-and-kitsch
+  categoryName: 4. Retro Pop And Kitsch
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - retro-pop-and-kitsch
   supportedTasks:
     - image_generate
     - image_edit

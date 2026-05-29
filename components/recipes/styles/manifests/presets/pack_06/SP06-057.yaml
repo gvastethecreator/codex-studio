@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-057
 packId: pack_06
 name: Double Exposure
-category: 1. Digital Art
+category: 4. Digital Art
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Image inside shape
   atmosphere: Dreamy
   key_features: Silhouette container
+  creative_brief: Two realities occupy the same frame, one visible through the silhouette of the other, interior and exterior collapsing into a single exposure. The image holds contradiction as composition, a forest growing inside a profile, mountains where thoughts should be. Meaning emerges from the overlap, the space between the negatives.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: digital-art
-  categoryName: 1. Digital Art
+  categoryName: 4. Digital Art
   tags:
     - essential-art-styles
     - digital-art
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

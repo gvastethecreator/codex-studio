@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-023
+packId: pack_05
+name: Railgun Rooftop Strike
+category: 3. Action
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - anime
+  - action
+visualDna:
+  aesthetic: Sci-fi anime action on night rooftops.
+  form_and_line: Sharp line and stylized tactical design.
+  color_palette: "Violet, neon blue and steel gray."
+  lighting_setup: Railgun shot as main light.
+  material_texture: "Urban metal, rain and electric smoke."
+  render_quality: Impact frame with clean focus.
+  spatial_distortion: Urban depth with a strong diagonal vanishing point.
+  atmosphere: Tactical tension and technological power.
+  key_features: "Energy weapon, skyline, dramatic backlight."
+  creative_brief: Decisive shot from the roof in a powerful diagonal composition.
+avoidRules:
+  - photoreal
+  - medieval-only
+  - washed-colors
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-023.webp
+attributes:
+  negativePrompt: photoreal, medieval-only, washed-colors, watermark, text, logo
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 3. Action
+  tags:
+    - anime-battle-and-worlds
+    - anime
+    - action
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

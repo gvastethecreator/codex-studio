@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-049
 packId: pack_10
 name: Houndstooth
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Repeat
   atmosphere: Professional
   key_features: Grid
+  creative_brief: The check fractures into jagged repetition, a pattern that walks the line between order and agitation. Woven authority, the textile equivalent of a sharp glance across a boardroom table.
 avoidRules:
   - floral
   - organic
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

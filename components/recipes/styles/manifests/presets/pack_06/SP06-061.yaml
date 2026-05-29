@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-061
 packId: pack_06
 name: Collage (Analog)
-category: 4. Mixed Media
+category: 5. Mixed Media
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Disjointed
   atmosphere: Chaotic, surreal
   key_features: Cutout edges
+  creative_brief: Scissor cuts interrupt the seamless world of the magazine, reassembling fragments into a reality that the original photographs never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, the gap between the fragments generating more truth than the fragments themselves.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: mixed-media
-  categoryName: 4. Mixed Media
+  categoryName: 5. Mixed Media
   tags:
     - essential-art-styles
     - mixed-media
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

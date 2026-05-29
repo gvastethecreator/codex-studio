@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-016
 packId: pack_09
 name: Glacier Ice
-category: 1. Natural Materials
+category: 4. Surface Wear And Aging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - surface-wear-and-aging
 visualDna:
   aesthetic: Compressed ancient ice
   form_and_line: Cracks and bubbles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Massive
   atmosphere: Freezing, ancient
   key_features: Blue depth
+  creative_brief: Summon the compressed time of glacial ice, where millennia of pressure have squeezed air into blue oblivion and internal cracks map the stress of slow, patient movement. An internal luminescence should glow from within, a cyan heart beating in frozen sleep that deepens toward the center. The material must feel ancient, patient, and terrifyingly fragile.
 avoidRules:
   - clear
   - glass
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: surface-wear-and-aging
+  categoryName: 4. Surface Wear And Aging
   tags:
     - texture-and-materiality
-    - natural-materials
+    - surface-wear-and-aging
   supportedTasks:
     - image_generate
     - image_edit

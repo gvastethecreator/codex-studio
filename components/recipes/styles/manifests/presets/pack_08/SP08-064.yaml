@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-064
 packId: pack_08
 name: Burlap/Rags
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Holes
   atmosphere: Sad, poverty, humble-endurance dignity, harvest-field weariness, simple-life resilience
   key_features: Fraying, rope belt, rough patches, raw hem, homespun texture
+  creative_brief: Jute fiber coarse enough to leave its imprint on skin, the tunic hanging from shoulders shaped by harvest seasons and the mathematics of scarcity. A rope belt cinches the waist at the point where dignity meets necessity, frayed hems trailing threads that catch morning light through a cottage window, the whole garment a testament to the beauty of fabric that has never known pretense.
 avoidRules:
   - silk
   - clean
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

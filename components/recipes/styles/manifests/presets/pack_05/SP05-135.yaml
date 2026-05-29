@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
   aesthetic: Conceptual powers with slapstick brutality, unlucky chain reactions, immortal body damage, poppy modern action comic energy, romance hidden inside kinetic chaos
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
   atmosphere: Chaotic, playful, brutal, offbeat
   key_features: Rule-based action motifs, body-damage exaggeration, bright effect symbols, momentum-heavy posing, comic impact beats
+  creative_brief: Bad luck is a weapon the universe never meant to hand over, and every missed step triggers a chain reaction that reads like divine slapstick. Bodies break in sequences so comic they loop back to profound, while romance flickers beneath the rubble. Chaos is not the enemy here — it is the only language love speaks fluently.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: modern-shonen-and-action
   categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - modern-shonen-and-action
   supportedTasks:
     - image_generate

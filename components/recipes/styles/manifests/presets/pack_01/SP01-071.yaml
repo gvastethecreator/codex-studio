@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-071
 packId: pack_01
 name: Flat Lay
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Objects arranged on table
   form_and_line: Grid organization
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Satisfying, clean
   key_features: 90 degree angle
+  creative_brief: Order imposed upon chaos with the geometry of desire, objects placed as if the tabletop were a page and composition its only grammar. Satisfaction lives in the perpendicular, in the grid that holds beauty still long enough to be admired.
 avoidRules:
   - perspective
   - messy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

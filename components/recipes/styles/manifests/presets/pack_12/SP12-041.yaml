@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-041
+packId: pack_12
+name: Emberwood Ranger Outpost
+category: 6. Wilderness Hunts & Harsh Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+visualDna:
+  aesthetic: Forest stronghold in a woodland of permanent embers.
+  subject_treatment: Rangers with hybrid magic-technology gear.
+  color_and_tone: Ember orange, pine green, and smoke black.
+  lighting_and_shadow: Warm glows between dark trunks.
+  texture_and_material: Charred bark, leather, and tempered steel.
+  camera_and_composition: Outpost gate as the visual anchor.
+  atmosphere_and_mood: Constant vigilance and resilience.
+  rendering_and_quality: Defensive hub zone with strong character.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - snow-theme
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-041.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

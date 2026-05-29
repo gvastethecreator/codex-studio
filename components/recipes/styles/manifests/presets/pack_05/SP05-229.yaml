@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: Criminal enforcers in a filthy cyber city, 80s neon vice, illegal tech, wet asphalt violence, hard-edged police-thriller futurism with dangerous swagger
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
   atmosphere: Vice-soaked, neon, lawless, hardboiled
   key_features: Wet city alleys, criminal-tech props, prison-mercenary silhouettes, hard neon rim light, vice-district staging
+  creative_brief: Wet asphalt and stolen neon, a city that bleeds through its own circuits. Three criminals carry badges like wounds, swaggering through rain that tastes of illegal tech and expired justice. The future is a back-alley transaction in a trench coat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: mecha-and-cyberpunk
   categoryName: 7. Mecha & Cyberpunk
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - mecha-and-cyberpunk
   supportedTasks:
     - image_generate

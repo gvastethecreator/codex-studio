@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-072
 packId: pack_04
 name: Ballpoint Pen
-category: 5. Ink & Print
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - childrens-and-educational
 visualDna:
   aesthetic: Doodle
   form_and_line: Thin blue lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Ink blobs
   atmosphere: Bored, detailed, lecture-hall drift, idle-hands devotion
   key_features: Blue ink, ballpoint texture, pressure-line weight
+  creative_brief: Ballpoint ink accumulates in spiraling density, the pressure of the hand visible in every accumulating stroke. Doodles evolve into devotion, the margins of a notebook becoming a cathedral of idle attention. This is the masterpiece of the bored, where the tool of the student becomes the instrument of the obsessive.
 avoidRules:
   - paint
   - thick
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

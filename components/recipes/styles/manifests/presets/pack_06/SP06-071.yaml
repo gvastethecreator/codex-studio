@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-071
 packId: pack_06
 name: Mosaic (Paper)
-category: 4. Mixed Media
+category: 5. Mixed Media
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Pixelated by scraps
   atmosphere: Creative, recycled
   key_features: Torn bits
+  creative_brief: Magazine pages torn into confetti reassemble into image at distance, the fragments finding coherence only when the eye surrenders detail. Each scrap carries its own color, its own typography, its own advertisement, the aggregate becoming more than the archive. The image is a mosaic of meanings, each tessera a story that does not belong to the whole.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: mixed-media
-  categoryName: 4. Mixed Media
+  categoryName: 5. Mixed Media
   tags:
     - essential-art-styles
     - mixed-media
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

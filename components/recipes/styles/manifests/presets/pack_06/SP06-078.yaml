@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-078
 packId: pack_06
 name: Gold Leaf Art
-category: 4. Mixed Media
+category: 5. Mixed Media
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flat gold areas
   atmosphere: Rich, ornamental
   key_features: Metallic shine
+  creative_brief: Gold leaf adheres to size with the delicacy of breath, the slightest air current threatening to fold the foil into oblivion. The metal catches light and throws it back, not as reflection but as radiance, an active source rather than passive surface. The image contains actual value — real gold, real light, a real refusal to be anything but precious.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: mixed-media
-  categoryName: 4. Mixed Media
+  categoryName: 5. Mixed Media
   tags:
     - essential-art-styles
     - mixed-media
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

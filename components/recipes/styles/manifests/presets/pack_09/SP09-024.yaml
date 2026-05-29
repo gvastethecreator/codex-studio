@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-024
 packId: pack_09
 name: Asphalt (Wet)
-category: 2. Man-Made Materials
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Rainy road
   form_and_line: Road markings
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Puddles
   atmosphere: Urban, dark
   key_features: Gravel grain
+  creative_brief: Render the noir gleam of wet asphalt where city lights dissolve into streaks of color on black grain, diffused by a thin skin of rainwater that turns every road marking into a luminous guide. The surface should feel heavy and reflective, a dark mirror holding the inverted sky in scattered puddles. Capture the romance of the ordinary, where a road becomes a river of reflected neon.
 avoidRules:
   - dry
   - desert
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

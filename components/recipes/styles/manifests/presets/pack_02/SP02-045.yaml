@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-045
 packId: pack_02
 name: Pixel Art Animation
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: 16-bit RPG
   form_and_line: Pixel outline
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sprite squash, 8-direction limitation, walk-cycle snap
   atmosphere: Nostalgic, game, 16-bit adventure, sword-and-sorcery
   key_features: Grid lock, pixel-perfect, HUD overlay, dialogue box
+  creative_brief: A hero freezes in quarter-step stride, sixteen colors carrying the weight of an entire kingdom across a grid-locked horizon. Each pixel is a decision, each dither pattern a negotiation between memory and constraint. The phosphor glow lingers like a half-remembered dream played on a CRT in the back of a childhood bedroom.
 avoidRules:
   - vector
   - smooth
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

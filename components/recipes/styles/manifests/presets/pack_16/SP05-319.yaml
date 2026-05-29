@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-319
+packId: pack_16
+name: Super Dimension Fortress Macross - Carrier Deck Pop Destiny
+category: 11. 70s & 80s Retro Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - 70s-and-80s-retro-anime
+visualDna:
+  aesthetic: Carrier-deck mecha operations mixed with pop-idol fate, city-inside-ship scale, missiles and melodies sharing one dramatic retro-future frame
+  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
+  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
+  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
+  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
+  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
+  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  atmosphere: Romantic, strategic, pop-infused, starry
+  key_features: Carrier-deck staging, idol symbolism, city-inside-ship backdrops, missile salvos, retro-future military glam
+  creative_brief: A pop melody drifts across a carrier deck where love and missile trajectories share the same radar screen. Inside the ship, a city dreams in miniature while outside, vacuum waits like an unwritten verse. Fate here is both a combat formation and a chorus, sung in harmony with destruction.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-319.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: 70s-and-80s-retro-anime
+  categoryName: 11. 70s & 80s Retro Anime
+  tags:
+    - anime-classics-and-prestige
+    - 70s-and-80s-retro-anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-062
 packId: pack_08
 name: Leather Armor
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Adventure, tough, shadow-alley tension, lockpick silence, midnight-escape adrenaline
   key_features: Buckles, hood, hidden pouches, throwing-knife bandolier, soft-soled boots
+  creative_brief: Oil-tanned hide molded by use into a second skeleton that moves without sound, brass studs catching torchlight in brief flashes that reveal nothing. The asymmetrical harness crosses a chest that rises and falls with the rhythm of someone who picks locks by feel and counts footsteps by instinct, hidden pouches holding tools for a trade that prefers to leave no signature.
 avoidRules:
   - metal
   - cloth
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

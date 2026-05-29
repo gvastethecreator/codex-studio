@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-013
+packId: pack_13
+name: Rainy Idol Backstage
+category: 2. Slice of Life / School / Music
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+  - slice-of-life
+visualDna:
+  aesthetic: Emotional anime idol backstage before the show.
+  form_and_line: Soft features, stage wardrobe, and sincere acting.
+  color_palette: Night blue, muted pink, and warm gold.
+  lighting_setup: Luz de camerino con bokeh de escenario al fondo.
+  material_texture: Tela brillante, espejo y maquillaje sutil.
+  render_quality: Polished illustration with emotional weight.
+  spatial_distortion: Intimate medium shot with shallow depth.
+  atmosphere: Vulnerability, aspiration, and determination.
+  key_features: Microphone, pre-stage gaze, rain outside.
+  creative_brief: A delicate, memorable human moment just before the performance.
+avoidRules:
+  - photoreal
+  - gritty-horror
+  - low-detail
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-013.webp
+attributes:
+  negativePrompt: photoreal, gritty-horror, low-detail, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice of Life / School / Music
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+    - slice-of-life
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

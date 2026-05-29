@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: Alternate-history paramilitary noir, wolf-brigade armor, smoke-filled ruins, political dread and buried tenderness inside oppressive urban security machinery
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
   atmosphere: Oppressive, political, smoky, tragic
   key_features: Red goggle glow, armored silhouettes, riot-ruin backdrops, political-security staging, smoke-dense composition
+  creative_brief: Beneath the iron wolf mask tenderness withers inside a machine designed to erase it, red optics scanning ruins for threats that may be internal. Smoke does not obscure but reveals the architecture of a society that feeds on its own fear. Every armored silhouette carries the weight of a choice already made and a heart already broken.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: dark-fantasy-and-seinen
   categoryName: 9. Dark Fantasy & Seinen
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - dark-fantasy-and-seinen
   supportedTasks:
     - image_generate

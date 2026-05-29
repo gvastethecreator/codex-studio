@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-103
 packId: pack_02
 name: Aaahh!!! Real Monsters - Sewer Kid Grotesque
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Nickelodeon monster-school grossness, eyeballs on weird stalks, toenail grime, urban sewer slime, childlike monster rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute body horror for kids
   form_and_line: Chunky lopsided outlines, uneven monster curves, jittery slime accents, crude expressive contour
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Limbs of mismatched length, eyes stacked in impossible ways, torso shapes collapsing into blobs
   atmosphere: Rowdy, gross, mischievous, lovable
   key_features: Asymmetric monster anatomy, sewer grime, rubbery claws, weird eye placement, urban sludge detail
+  creative_brief: Grate-light filters through murky water, illuminating a classroom where asymmetry is not error but curriculum, bodies assembled with glorious disregard for any blueprint. Lovable things bloom in the dark wet places beneath the city, their lumpy forms a rebuke to anyone who thought charm required symmetry. The sewer exhales and its children answer with gleeful disorder.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

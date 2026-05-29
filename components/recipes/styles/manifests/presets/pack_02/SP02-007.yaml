@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-007
 packId: pack_02
 name: Silent Film
-category: 1. Film Genres
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - film-genres
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: 1920s cinema
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Vignette, rounded frame edge, iris close
   atmosphere: Expressive, old, melodramatic gesture, haunted silence
   key_features: Intertitle card, title cards, exaggerated performance
+  creative_brief: Ghosts flicker at eighteen frames per second, their gestures magnified into a language more articulate than speech. Amber-toned stillness hums with a frequency just below hearing, where title cards punctuate the silence like notes in a score composed entirely of longing.
 avoidRules:
   - sound
   - color
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: film-genres
-  categoryName: 1. Film Genres
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - film-genres
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

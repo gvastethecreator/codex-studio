@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-022
 packId: pack_08
 name: Grunge (90s)
-category: 3. Subcultures
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Angst, relaxed, quiet desperation, rainy-afternoon numbness, feedback-hum ennui
   key_features: Flannel shirt, ripped jeans, cardigan, beanie, Converse sneakers
+  creative_brief: Flannel worn like a memory of warmth in Seattle grey, the sleeves too long because caring about fit would mean caring about something. Ripped denim and thermal waffle carry the weight of rehearsal-room feedback, Converse scuffed by rain-slicked sidewalks that lead nowhere in particular, the uniform of those who already know the ending.
 avoidRules:
   - clean
   - ironed
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
     - subcultures
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

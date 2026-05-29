@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-045
 packId: pack_09
 name: Felt Fabric
-category: 3. Tactile Surfaces
+category: 3. Fabric And Soft Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - tactile-surfaces
+  - fabric-and-soft-materials
 visualDna:
   aesthetic: Compressed wool
   form_and_line: Fuzzy edge
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Warm, craft
   key_features: No weave
+  creative_brief: Summon the soft density of felted wool where fibers have surrendered individual identity to become a unified surface without weave or grain, matte colors absorbing light like powdered pigment painted onto compressed cloud. The fuzzy edge should dissolve into atmosphere without a defined boundary. Capture the warmth of compression, softness achieved through the pressure of becoming one.
 avoidRules:
   - woven
   - shiny
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: tactile-surfaces
-  categoryName: 3. Tactile Surfaces
+  categoryId: fabric-and-soft-materials
+  categoryName: 3. Fabric And Soft Materials
   tags:
     - texture-and-materiality
-    - tactile-surfaces
+    - fabric-and-soft-materials
   supportedTasks:
     - image_generate
     - image_edit

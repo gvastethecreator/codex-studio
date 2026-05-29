@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-079
 packId: pack_02
 name: Softbox Studio
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Product photography
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Commercial, perfect, aspirational product, sterile beauty
   key_features: Soft shadows, seamless sweep, product isolation
+  creative_brief: The subject floats in a benevolent void, wrapped in illumination so even it forgets its own source. Gradation becomes the grammar of form, shadows so gentle they whisper rather than declare. Every surface confesses its truth under a light that judges nothing, only reveals.
 avoidRules:
   - harsh shadows
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

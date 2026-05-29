@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-007
+packId: pack_12
+name: Glacier Fortress Assault
+category: 4. Sieges, Warfronts & Last Stands
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+visualDna:
+  aesthetic: Tactical warfare on a polar fortress excavated in blue ice.
+  subject_treatment: Assault units with thermal equipment and magnetic ropes.
+  color_and_tone: Cold cyan, dark steel and orange equipment lights.
+  lighting_and_shadow: Diffuse cloudy sky with flashes of explosions.
+  texture_and_material: Frost, compacted snow, and armored plates.
+  camera_and_composition: Oblique view of playable map by sectors.
+  atmosphere_and_mood: Extreme cold, precision, and resilience.
+  rendering_and_quality: Military operation art with topographic reading.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - tropical-elements
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-007.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

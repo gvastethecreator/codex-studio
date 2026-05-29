@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-069
 packId: pack_03
 name: VFX Simulation (Fire/Smoke)
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Explosion or fire
   form_and_line: Turbulence
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Expanding
   atmosphere: Dangerous, dynamic, cinematic destruction
   key_features: Physics, turbulence control
+  creative_brief: 'Orange heat blooms into black smoke — turbulence curls the pyroclastic density into rolling vortices, and self-illuminated volumes cast their own light onto the scene like a miniature sun born in an instant. The expansion reads as physics rather than art direction, Houdini simulations where every wisp of smoke and tongue of flame obeys the mathematics of fluid dynamics. The image is cinematic destruction frozen at its peak: dangerous, dynamic, a fireball that will have consumed itself before the next frame renders.'
 avoidRules:
   - solid
   - cartoon fire
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

@@ -58,5 +58,16 @@ export function buildStudioJobRetryRequest(
     sourceSpec,
     prompt,
     execution: detail.job.execution ? { ...detail.job.execution } : undefined,
+    references: sourceSpec?.assets.flatMap((asset) =>
+      asset.dataUrl
+        ? [
+            {
+              name: asset.name,
+              dataUrl: asset.dataUrl,
+              strength: asset.strength ?? 0,
+            },
+          ]
+        : [],
+    ),
   };
 }

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-052
 packId: pack_01
 name: Sports Action
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: High speed athlete
   form_and_line: Frozen muscle
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Motion blur background
   atmosphere: Intense, fast
   key_features: Action freeze
+  creative_brief: The body hangs mid-flight, every sinew suspended at the apex of force, while the roar of the crowd bleaches into a luminous blur that testifies to velocity by what it erases. Sweat catches floodlight like scattered diamonds, the geometry of effort rendered as sculpture in the split second before gravity reclaims its due. The image is a held breath at the edge of impact.
 avoidRules:
   - static
   - slow
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

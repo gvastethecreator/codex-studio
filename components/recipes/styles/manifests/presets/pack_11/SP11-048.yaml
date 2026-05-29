@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-048
 packId: pack_11
 name: Sushi Platter
-category: 1. Food & Drink
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-drink
+  - oddities-and-novelty
 visualDna:
   aesthetic: Fresh sashimi, omakase-counter, fish-market dawn, sushi-master zen, itamae-art
   form_and_line: Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None, natural-proportion, geta-board framing, sashimi-fan geometry, nigiri-oval balance
   atmosphere: Clean, tasty, sushi-counter quiet, soy-sauce dip anticipation, wasabi-nose-cleanse
   key_features: Rice grains, shari-pearl definition, nori-wrap band, wasabi-dot, pickled-ginger mound, soy-sauce dish
+  creative_brief: The knife falls once, a single stroke separating flesh from flesh with the conviction born of a decade's practice at dawn. Shari pearls hold their form under nigiri pressure, each grain of rice individually placed by hands that learned patience at the Tsukiji auction. Omakase is a conversation conducted in silence where the itamae speaks through the arrangement of salmon-orange and hamachi-amber on black lacquer, each piece a haiku of the sea.
 avoidRules:
   - cooked
   - dry
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-drink
-  categoryName: 1. Food & Drink
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - food-and-drink
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

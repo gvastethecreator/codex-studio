@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-049
+packId: pack_12
+name: Thorn Castle Moon Raid
+category: 7. Heists, Horror & Underworld Runs
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+visualDna:
+  aesthetic: Night raid on a castle covered in magical thorns.
+  subject_treatment: Raid team with clearly differentiated roles.
+  color_and_tone: Moon blue, dark green, and ritual red.
+  lighting_and_shadow: Sparse torches and silver mist.
+  texture_and_material: Wet stone, vines, and old iron.
+  camera_and_composition: High walls with a clear entry point.
+  atmosphere_and_mood: Calculated risk and collective bravery.
+  rendering_and_quality: Dungeon-raid opening scene.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - daylight
+  - flat
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-049.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

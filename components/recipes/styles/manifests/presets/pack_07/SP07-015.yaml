@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-015
 packId: pack_07
 name: Victorian Mansion
-category: 3. Environment
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - environment
+  - residential-interiors
 visualDna:
   aesthetic: 19th century cluttered room, Empire excess, mourning elegance, parlour theatre
   form_and_line: Ornate patterns everywhere, framed silhouettes, heavy draping swags, crowded picture rails
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Oppressive, historic, rich, cluttered memory, mothball, ancestral weight
   key_features: Pattern density, overstuffed furniture, floor-to-ceiling drapes, gallery wall, taxidermy
+  creative_brief: Velvet swallows light, brocade fighting pattern against pattern in a war of abundance. Each surface carries the weight of ancestors who confused accumulation with permanence, every object a memorial to acquisition. The air is thick with mothball and memory, rooms that stopped breathing a century ago.
 avoidRules:
   - minimal
   - bright
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: environment
-  categoryName: 3. Environment
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - environment
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

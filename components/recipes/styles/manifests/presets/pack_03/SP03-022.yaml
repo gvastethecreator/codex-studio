@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-022
 packId: pack_03
 name: Voxel Art
-category: 3. 3D Styles
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - 3d-styles
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Made of cubes
   form_and_line: Grid aligned
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blocky
   atmosphere: Cute, digital, nostalgic sandbox
   key_features: Cubes
+  creative_brief: 'The world resolves into its smallest meaningful unit — cubes stacked like digital Legos on an invisible grid, global illumination softening their hard edges into something almost innocent. MagicaVoxel poetry: vibrant colors mapped to three-dimensional pixels, each block a vote in the democracy of form. Nostalgia for the sandbox bleeds through every right angle, a universe you could rebuild with a single click.'
 avoidRules:
   - curves
   - smooth
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: 3d-styles
-  categoryName: 3. 3D Styles
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - 3d-styles
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

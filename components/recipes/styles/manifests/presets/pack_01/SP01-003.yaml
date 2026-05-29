@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-003
 packId: pack_01
 name: Environmental Portrait
-category: 1. Portrait Styles
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-styles
+  - portrait-and-studio
 visualDna:
   aesthetic: Editorial environmental portraiture, subject in their natural workspace or habitat
   subject_treatment: Subject integrated with surroundings, sharp details across the frame, storytelling composition
@@ -20,6 +20,7 @@ visualDna:
   camera_and_composition: Wide-angle lens (24mm or 35mm), deep depth of field, contextual framing
   atmosphere_and_mood: Informative, personal, narrative-driven, authentic
   rendering_and_quality: Editorial magazine quality, high resolution, crisp details
+  creative_brief: A room that finishes the sentence a face begins, tools and bookshelves and window light conspiring to reveal the unseen architecture of a life. Every surface becomes a clue, every shadow a collaborator in the slow unfolding of identity rendered visible through its native habitat. The space exhales its occupant, the workshop or kitchen or studio becoming a second portrait, more honest than any studio backdrop could ever be.
 avoidRules:
   - illustration
   - painting
@@ -43,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-styles
-  categoryName: 1. Portrait Styles
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - portrait-styles
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

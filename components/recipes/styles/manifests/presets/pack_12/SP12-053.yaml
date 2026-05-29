@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-053
+packId: pack_12
+name: Marsh Witch Coven Arena
+category: 2. Arcane Temples & Mythic Realms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+visualDna:
+  aesthetic: Mystical swamp with ritual combat circles.
+  subject_treatment: Clan witches and summoned spirits.
+  color_and_tone: Dark green, amber, and misty violet.
+  lighting_and_shadow: Magical luminescence in dense fog.
+  texture_and_material: Murky water, roots, and wet stone.
+  camera_and_composition: Circular clearings connected by walkways.
+  atmosphere_and_mood: Sorcery, danger, and theatrical flair.
+  rendering_and_quality: Fantasy stage for tactical combat.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - sci-fi-neon
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-053.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

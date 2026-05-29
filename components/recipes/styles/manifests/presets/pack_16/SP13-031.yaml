@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-031
+packId: pack_16
+name: Haunted School Corridor
+category: 5. Horror
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - anime
+  - horror
+visualDna:
+  aesthetic: School-horror anime with psychological tension.
+  form_and_line: Subtly broken contours and implied figures.
+  color_palette: Sickly green, pale gray, and muted red.
+  lighting_setup: Flickering fluorescent light with long shadows.
+  material_texture: Damp walls, aged tiles, and suspended dust.
+  render_quality: High-clarity atmospheric horror illustration.
+  spatial_distortion: Deep corridor with oppressive vanishing depth.
+  atmosphere: Anxiety, isolation, and invisible threat.
+  key_features: Half-open door, distant silhouette, ambiguous reflection.
+  creative_brief: An apparently empty hallway that radiates imminent danger.
+avoidRules:
+  - photoreal
+  - comedy
+  - bright-pastel
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-031.webp
+attributes:
+  negativePrompt: photoreal, comedy, bright-pastel, watermark, text, logo
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: horror
+  categoryName: 5. Horror
+  tags:
+    - anime-classics-and-prestige
+    - anime
+    - horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

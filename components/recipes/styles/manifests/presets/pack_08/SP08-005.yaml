@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Active, healthy, modern, endorphin glow, urban discipline, pre-dawn determination
   key_features: Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs
+  creative_brief: The body as engineered instrument, muscles traced by compressive knit like a living blueprint. Sweat-sheened and neon-trimmed, the garment promises transformation between reps and errands, the 5 AM discipline of those who treat wellness as architecture and the street as runway.
 avoidRules:
   - dress
   - jeans
@@ -42,3 +43,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-038
 packId: pack_07
 name: Catacombs
-category: 3. Environment
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - environment
+  - residential-interiors
 visualDna:
   aesthetic: Bone walls, empire of the dead, skull architecture, underground ossuary, silence of centuries
   form_and_line: Skulls, stacked femur patterns, arch niches, skull-and-crossbone geometry, tunnel perspective
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Death, silence, below-ground, ossuary-reverence, chilling peace, mortal reminder
   key_features: Skulls, stacked long bones, arched niches, low ceiling, tunnel shaft, decorative bone patterns
+  creative_brief: Skulls arranged in geometric chorus, tibiae stacked like library books catalogued by the grim librarian of centuries. The walls watch with a thousand empty sockets, calcium constellations mapping the architecture of mortality. Silence down here has weight, the accumulated stillness of generations who have nothing left to say.
 avoidRules:
   - living
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: environment
-  categoryName: 3. Environment
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - environment
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

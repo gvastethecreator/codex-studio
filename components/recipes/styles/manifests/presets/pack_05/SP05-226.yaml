@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: Domed-city despair, android personhood crisis, black fashion silhouettes, abandoned modernism, philosophical cyber-goth severity under rain and concrete
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
   atmosphere: Bleak, cerebral, cool, funereal
   key_features: Black fashion silhouettes, brutalist city spaces, android detail, rain-darkened concrete, philosophical stillness
+  creative_brief: A procession through concrete cathedrals where android souls weigh heavier than human breath. Every shadow carries a question unasked, every raindrop mirrors a fragment of self lost to the machine. Render the beautiful dread of consciousness waking inside a body that was never meant to dream.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: mecha-and-cyberpunk
   categoryName: 7. Mecha & Cyberpunk
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - mecha-and-cyberpunk
   supportedTasks:
     - image_generate

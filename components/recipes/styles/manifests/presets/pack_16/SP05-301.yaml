@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-301
+packId: pack_16
+name: Space Battleship Yamato - Bridge of Last Hope
+category: 11. 70s & 80s Retro Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - 70s-and-80s-retro-anime
+visualDna:
+  aesthetic: Heroic bridge-deck drama, blue space oceans, giant battleship gravitas, analog control panels, humanity-faces-extinction sincerity and noble formation flying
+  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
+  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
+  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
+  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
+  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
+  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  atmosphere: Noble, urgent, cosmic, patriotic
+  key_features: Battleship silhouettes, bridge-console layouts, star-ocean backdrops, formation-fleet compositions, noble crew acting
+  creative_brief: Humanity whispers against the infinite black in this bridge-deck opera where analog consoles pulse with the weight of extinction. Scale shrinks flesh and stretches spirit until a single warship becomes the last cathedral of hope. Every frame holds both the cold geometry of stars and the warm tremor of a hand on the helm.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-301.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: 70s-and-80s-retro-anime
+  categoryName: 11. 70s & 80s Retro Anime
+  tags:
+    - anime-classics-and-prestige
+    - 70s-and-80s-retro-anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

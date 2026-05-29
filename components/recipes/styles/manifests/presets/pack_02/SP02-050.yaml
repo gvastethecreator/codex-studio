@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-050
 packId: pack_02
 name: Polaroid (Instant)
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Instant film
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Chemical leak, developer smear, edge imperfection
   atmosphere: Nostalgic, fun, scrapbook moment, party memory
   key_features: White border, sharpie caption, square format, dated corner
+  creative_brief: A pocket-sized reliquary of the recent past, where the image materializes from chemical fog like a secret developing in plain sight. The white border frames not just a picture but the ritual of watching a moment become tangible — held in hands still warm from the flash, passed around the room before the color has fully settled. Impermanence made artifact, fading even as it arrives.
 avoidRules:
   - sharp
   - hd
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-020
 packId: pack_01
 name: Expired Film
-category: 3. Film Stocks
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - film-and-analog-process
 visualDna:
   aesthetic: Damaged film stock
   form_and_line: Soft
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Color cast
   atmosphere: Decay, lost memory
   key_features: Color shift
+  creative_brief: 'Chemistry unspooling toward ruin: greens bleeding into magenta, grain rising like static across a fading frequency. The image carries its own decay as a second subject, time visibly eating through the emulsion. A photograph that remembers its own dying, and renders that memory beautiful.'
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - film-stocks
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

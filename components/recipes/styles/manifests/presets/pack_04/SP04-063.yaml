@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-063
 packId: pack_04
 name: Hokusai Woodcut (Floating World)
-category: 5. Ink & Print
+category: 4. Printmaking And Ink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - printmaking-and-ink
 visualDna:
   aesthetic: Classical woodblock seascape language, Hokusai style, Great Wave energy, floating-world poetry
   form_and_line: Variable width
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flattened perspective
   atmosphere: Nature, calm, ukiyo-e transience, seasonal reverence
   key_features: Outline, gradient band, seal signature
+  creative_brief: The wave curls with the permanence of a woodblock, each line carved with the confidence of a thousand impressions. Prussian blue bleeds into the paper edge, the gradient of ocean and sky sharing a single pigment language. This is nature captured in the floating world, where the moment between crest and crash lasts forever in carved relief.
 avoidRules:
   - western
   - 3d
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: printmaking-and-ink
+  categoryName: 4. Printmaking And Ink
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - printmaking-and-ink
   supportedTasks:
     - image_generate
     - image_edit

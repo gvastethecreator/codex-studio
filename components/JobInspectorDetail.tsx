@@ -458,7 +458,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
         aria-expanded={isExpanded}
         className="flex w-full items-start gap-3 text-left cursor-pointer"
       >
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-white/8 bg-black/25 text-zinc-100">
+        <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-white/8 bg-black/25 text-zinc-100">
           <TimelineIcon item={item} />
         </div>
 
@@ -679,7 +679,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                 <img
                   src={primaryOutput.previewSrc ?? primaryOutput?.href ?? ''}
                   alt={outputName}
-                  className="h-[320px] w-full object-contain bg-black"
+                  className="h-[320px] w-full object-contain bg-zinc-950"
                   loading="lazy"
                   decoding="async"
                 />
@@ -771,9 +771,9 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                           href={artifact.href ?? undefined}
                           target="_blank"
                           rel="noreferrer"
-                          className="block w-16 shrink-0"
+                          className="block size-16 shrink-0"
                         >
-                          <div className="h-16 w-16 overflow-hidden rounded-lg border border-white/10 bg-black/30">
+                          <div className="size-16 overflow-hidden rounded-lg border border-white/10 bg-black/30">
                             {preview ? (
                               <img
                                 src={preview}
@@ -805,7 +805,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               <span>Prompt used</span>
             </div>
           </div>
-          <div className="px-4 py-4">
+          <div className="p-4">
             {model.prompt.blocks.length > 0 ? (
               <p className="whitespace-pre-wrap text-[14px] leading-7 text-zinc-200">
                 “{model.prompt.blocks.map((block) => block.text).join('\n\n')}”

@@ -269,7 +269,7 @@ function TimelineCanvas({
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     const files = Array.from(e.dataTransfer.files).filter((f: File) => f.type.startsWith('image/'));
-    if (files.length > 0) void onLocalUpload(files as File[]);
+    if (files.length > 0) onLocalUpload(files as File[]);
   };
 
   return (
@@ -435,10 +435,11 @@ function TimelineCanvas({
                         else itemRefs.current.delete(item.id);
                       }}
                       className={`group relative h-24 shrink-0 snap-center aspect-video overflow-hidden rounded-lg border-2 bg-zinc-900 transition-all duration-500 ease-out-expo
-                                            ${isActive
-                          ? 'border-teal-500 shadow-[0_0_40px_rgba(20,184,166,0.3)] scale-110 z-20 ring-1 ring-teal-400/50 opacity-100'
-                          : 'border-white/5 opacity-40 scale-90 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-95'
-                        }
+                                            ${
+                                              isActive
+                                                ? 'border-teal-500 shadow-[0_0_40px_rgba(20,184,166,0.3)] scale-110 z-20 ring-1 ring-teal-400/50 opacity-100'
+                                                : 'border-white/5 opacity-40 scale-90 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-95'
+                                            }
                                         `}
                       onClick={() => onItemClick(item)}
                     >
@@ -542,7 +543,8 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
     if (uploadedOrigin) return uploadedOrigin;
     const anchorAtt = config.attachments.find((a) => a.name.includes('(Anchor)'));
     if (anchorAtt) return { id: anchorAtt.id, src: anchorAtt.dataUrl };
-    if (config.attachments.length > 0) return { id: config.attachments[0].id, src: config.attachments[0].dataUrl };
+    if (config.attachments.length > 0)
+      return { id: config.attachments[0].id, src: config.attachments[0].dataUrl };
     return null;
   }, [uploadedOrigin, config.attachments]);
 

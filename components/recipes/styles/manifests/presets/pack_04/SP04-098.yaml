@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-098
 packId: pack_04
 name: World Map Concept
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Fantasy-world-map-concept-art, Tolkien-Middle-Earth-map-heritage, sea-monster-and-ship-illustrations-in-ocean-margins, compass-rose-and-rhumb-lines, mountain-range-profile-illustrations, stylized-forest-cluster-icons, ancient-cartography-energy, here-be-dragons-text-annotation, parchment-map-with-burnt-edges, fantasy-novel-endpaper-map-aesthetic
   form_and_line: Parchment-border-outline, coastline-wavy-contour, river-meandering-path, mountain-range-hatching, forest-icon-cluster, compass-rose- geometric, rhumb-line-radiating-grid, cartouche-decoration
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Top-down-cartographic-projection, ocean-margin-illustration-boundary, compass-overlay, scale-league-bar, rhumb-line-navigation-grid
   atmosphere: Adventurous, mysterious, unexplored-territory-wonder, ancient-knowledge, quest-planning, map-unfolding-anticipation, world-immersion
   key_features: Sea-monster-ocean-illustrations, compass-rose, rhumb-lines, mountain-range-profile-drawings, stylized-forest-icons, parchment-aged-texture, burnt-edges, cartouche-title-decoration, Tolkien-map-heritage
+  creative_brief: Coastlines sprawl across parchment in the confident uncertainty of pre-modern cartography, sea monsters breaching in empty ocean margins where knowledge ends and imagination begins. Mountain ranges stack in profile along continental spines while compass roses radiate the promise of navigation. This is the world rendered as invitation, where every blank space is an argument for adventure.
 avoidRules:
   - accurate
   - satellite
@@ -40,11 +41,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

@@ -20,6 +20,14 @@ export function buildStylesContext(params: RecipeContextParams) {
   const cameraComposition = getString(params, 'cameraComposition', 'Standard');
   const atmosphereMood = getString(params, 'atmosphereMood', 'Standard');
   const renderingQuality = getString(params, 'renderingQuality', 'Standard');
+  const creativeBrief = getString(params, 'creativeBrief');
+
+  const creativeBriefSection = creativeBrief
+    ? `
+[CREATIVE BRIEF]
+${creativeBrief}
+`
+    : '';
 
   return recipeDocument(
     'styles',
@@ -30,7 +38,7 @@ MODE: ${mode}
 
 [DIRECTIVES]
 ${roleInstruction}
-
+${creativeBriefSection}
 [VISUAL DNA]
 - Core Aesthetic: ${aesthetic}
 - Subject Treatment: ${subjectTreatment}

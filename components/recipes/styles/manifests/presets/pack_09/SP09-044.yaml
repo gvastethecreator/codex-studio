@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-044
 packId: pack_09
 name: Sponge (Sea)
-category: 3. Tactile Surfaces
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - tactile-surfaces
+  - metals-and-minerals
 visualDna:
   aesthetic: Natural bath sponge
   form_and_line: Holes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Irregular holes
   atmosphere: Clean, natural
   key_features: Pores
+  creative_brief: Capture the organic porosity of sea sponge where irregular holes and channels create a labyrinth of negative space in warm tan and yellow, each cavity a breathing chamber in a natural architecture of filtration. The surface should feel dry but ready to absorb, soft organic matter that once lived now preserved as texture. Render the beauty of the useful grown rather than made.
 avoidRules:
   - kitchen sponge
   - square
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: tactile-surfaces
-  categoryName: 3. Tactile Surfaces
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - tactile-surfaces
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

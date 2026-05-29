@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-026
+packId: pack_16
+name: Ronin Temple Standoff
+category: 4. Samurais & Medieval
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - anime
+  - samurai-medieval
+visualDna:
+  aesthetic: Classic samurai anime set in a mountain temple.
+  form_and_line: Elegant linework, ceremonial stance, and precise katana handling.
+  color_palette: Stone gray, lacquered red, and midnight blue.
+  lighting_setup: Cool side lighting with warm lantern accents.
+  material_texture: Aged wood, wet stone, and polished steel.
+  render_quality: Restrained, narrative-focused illustration.
+  spatial_distortion: Corridor depth with centered dramatic tension.
+  atmosphere: Honor, tense calm, and an imminent duel.
+  key_features: Torii gate, unsheathed katana, wind in the haori.
+  creative_brief: Capture the silent instant before the duel, charged with intent.
+avoidRules:
+  - photoreal
+  - modern-firearms
+  - sci-fi-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-026.webp
+attributes:
+  negativePrompt: photoreal, modern-firearms, sci-fi-neon, watermark, text, logo
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 4. Samurais & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - anime
+    - samurai-medieval
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

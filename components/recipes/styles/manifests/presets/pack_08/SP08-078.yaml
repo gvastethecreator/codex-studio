@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-078
 packId: pack_08
 name: Hologram
-category: 4. Fabric & Texture Focus
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - fashion-and-costume
-  - fabric-and-texture-focus
+  - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Star Wars monochrome sci-fi hologram, help-me-Obi-Wan shimmer, rebel-transmission urgency
   form_and_line: Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent-body silhouette, projection-cone taper
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Transparent
   atmosphere: Tech, message, desperate-plea intimacy, rebel-hope transmission, galaxy-far-away nostalgia
   key_features: Scanlines, blue monochrome, flicker instability, transparent body, projection base
+  creative_brief: Azure light composing a figure from horizontal scanlines that flicker with the instability of a transmission crossing a galaxy, the body fading to transparent at the edges where the projection cone loses coherence. Chromatic fringe bleeds blue into the surrounding darkness, each frame a message sent from a time long before the viewer was born, the speaker already gone by the time the light arrives.
 avoidRules:
   - solid
 assets:
@@ -30,13 +31,14 @@ attributes:
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
-  categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryId: fantasy-sci-fi-costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
-    - fabric-and-texture-focus
+    - fantasy-sci-fi-costume
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

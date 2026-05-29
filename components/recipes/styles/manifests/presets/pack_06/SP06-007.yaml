@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-007
 packId: pack_06
 name: Fresco (Wall)
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Faded areas
   atmosphere: Historic, grand
   key_features: Plaster texture
+  creative_brief: Pigment fuses chemically with wet plaster, becoming wall rather than hanging on it. Time cracks the surface into cartography of age, each fissure a map of centuries endured. The image asserts permanence through absorption, a surface that cannot be separated from what it carries.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

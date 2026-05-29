@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-094
 packId: pack_06
 name: Atari 2600 Extreme Limitation
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Atari-VCS-2600 extreme limitation, 40-pixel-wide-player-sprites, single-color-per-scanline, stripe-color-technique for multicolor, Combat-tank-blocky, Pitfall-vine-simplicity, Adventure-square-dot-hero, hardware-limitation-as-aesthetic, 128-bytes-of-RAM-universe, only-two-player-sprites-on-screen
   form_and_line: 40-fat-pixel-wide sprites, single-scanline-height-color-bands, blocky-rectangle-everything, missile-and-ball-hardware-objects, playfield-block-backgrounds
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 40-pixel-sprite-width, 160x192-playfield-resolution, scanline-color-stripe-proportions, object-flicker-at-sprite-limits, two-players-half-screen-context
   atmosphere: Primitive, ingenious, constraint-creativity, first-generation-home-console wonder, cartridge-dust-and-static, woodgrain-console-nostalgia
   key_features: 40-pixel-wide-sprites, scanline-color-stripes, sprite-flicker-multiplexing, 4-colors-per-scanline, TIA-hardware-artifacts, blocky-rectangle-everything, black-background-standard
+  creative_brief: Forty fat pixels define the entire player character. Four colors per scanline. Two sprites on screen at once. The 2600 did not offer — it demanded cleverness, and cleverness answered with stripe-color techniques and flicker multiplexing. The image is a monument to what can be done when you have 128 bytes of RAM and an idea bigger than the hardware.
 avoidRules:
   - detailed
   - smooth
@@ -39,13 +40,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

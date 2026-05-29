@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-045
 packId: pack_11
 name: Psychedelic
-category: 4. Aesthetics
+category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - retro-pop-and-kitsch
 visualDna:
   aesthetic: LSD trip art, acid-test poster, Fillmore-ballroom, liquid-light-show, consciousness-expanded
   form_and_line: Melting, swirling, paisley-whorl, flame-tongue contours, morphing-edges, fluid-mandala
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Melting reality, Dali-clock droop, kaleidoscopic fragmentation, mirror-room infinity, perspective-liquefaction
   atmosphere: Crazy, expanding, cosmic-consciousness, ego-dissolution, doors-of-perception, heightened-awareness
   key_features: Eyes everywhere, melting-clock motif, paisley-pattern, fractal-spiral recursion, blacklight-poster glow, mandala-center, flame-tongue edges
+  creative_brief: Paisley whorls spiral inward toward a vanishing point beyond ego, beyond form, beyond language, into a liquid-light-show eternity. Flame-tongue contours lick at the edges of reality while blacklight fluorescence reveals a hidden overlay on the visible world, every surface breathing. Consciousness expands like oil-projection blobs dancing on Fillmore ballroom walls, doors of perception thrown open to a spectrum the sober eye cannot decode.
 avoidRules:
   - boring
   - straight
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: retro-pop-and-kitsch
+  categoryName: 4. Retro Pop And Kitsch
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - retro-pop-and-kitsch
   supportedTasks:
     - image_generate
     - image_edit

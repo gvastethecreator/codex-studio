@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-090
 packId: pack_04
 name: Prop Variant Design Sheet
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Prop-variant exploration sheet, iterative-object design comparison, material-breakout detail circles, scale-reference silhouette, RPG-item tier progression, common-to-legendary upgrade path, functional-part callouts, grip-ergonomic note, designer-decision documentation
   form_and_line: Clean design-drawing contours, variant-comparison alignment, material-callout leader lines, ergonomic-arc construction, orthographic side-view precision
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Orthographic side-view alignment, variant-row comparison, detail-circle magnification, scale-reference figure, exploded-part disassembly
   atmosphere: Methodical, iterative, design-problem-solving, craftsperson precision, production-clarity
   key_features: Variant-row comparison, material-callout circles, scale-reference silhouette, tier-progression layout, exploded-part views
+  creative_brief: Variants array themselves in evolutionary sequence, the rusted common weapon ascending through material upgrades toward legendary radiance. Each iteration tells the story of the player's journey through the object itself. This is design as progression system, where the sword that saved you at level one becomes the artifact that defines you at level ninety.
 avoidRules:
   - one version
   - single design
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

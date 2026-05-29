@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-052
 packId: pack_07
 name: Dwarven Fortress
-category: 5. Fantasy Architecture
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - fantasy-architecture
+  - residential-interiors
 visualDna:
   aesthetic: Underground hall, mountain kingdom, stone-deep majesty, forge-heart stronghold, ancestral deep
   form_and_line: Geometric blocky, megalithic pillars, vaulted axe-cut ceiling, rune-engraved arch, broad axes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Epic, strong, ancient-resolve, forge-breath, deep-root, clan-hall echoes, enduring pride
   key_features: Pillars, great hall, golden hoard, forge anvil, rune carvings, lava channel, axe-trophies
+  creative_brief: Stone pillars rise from living rock, axes still singing in the chisel marks that shaped them. Gold veins pulse through granite like the mountain itself has a circulatory system of treasure. The hall echoes with forge-hammer ghosts, every shadow cast by a fire that has burned for ten thousand years.
 avoidRules:
   - wood
   - light
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: fantasy-architecture
-  categoryName: 5. Fantasy Architecture
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - fantasy-architecture
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

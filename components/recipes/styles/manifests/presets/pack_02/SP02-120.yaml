@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-120
 packId: pack_02
 name: Toxic Marker Classroom Freakout
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Middle-school-desk doodle pushed into a full freakout scene, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed characters born from notebook margins
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Rebellious, messy, hyperactive, juvenile
   key_features: Permanent-marker texture, desk-doodle iconography, notebook margin monsters, vandal-energy linework, adolescent chaos
+  creative_brief: Notebook margins erupt into full-scale insurrection, the doodles that were supposed to stay small now colonizing the entire page with sharp-scented fury. Every figure vibrates with the energy of detention-bound creation — art made under the desk while the lesson drones on.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

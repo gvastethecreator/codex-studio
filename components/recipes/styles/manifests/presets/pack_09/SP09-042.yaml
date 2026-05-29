@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-042
 packId: pack_09
 name: Bubble Wrap
-category: 3. Tactile Surfaces
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - tactile-surfaces
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Packing material
   form_and_line: Circles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Bubbles
   atmosphere: Protective, cheap
   key_features: Grid of bubbles
+  creative_brief: Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a pocket of trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection. The clear plastic should catch light with a faint sheen that reveals the ordered army of hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene.
 avoidRules:
   - flat plastic
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: tactile-surfaces
-  categoryName: 3. Tactile Surfaces
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - tactile-surfaces
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

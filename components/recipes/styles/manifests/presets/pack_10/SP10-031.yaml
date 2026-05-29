@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Melting, elongated
   atmosphere: Dreamlike, weird
   key_features: Desert horizon
+  creative_brief: Time liquefies on a desert branch, solid objects betraying their nature in the heat of the subconscious. The irrational parades with photographic precision, daring the waking mind to make sense of dream logic.
 avoidRules:
   - normal
   - logical
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

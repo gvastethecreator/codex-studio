@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-027
 packId: pack_11
 name: Mosaic Tile
-category: 3. Artistic Mediums
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: Roman floor art, ancient-tessera craft, bathhouse splendor, Byzantine-mosaic glory
   form_and_line: Grout lines, mortar-grid contours, tessellated-edge stepping, labyrinthine-path geometry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Pixelated by tiles, low-resolution stone, grid-cell color-blocking, pixel-mosaic abstraction
   atmosphere: Historic, grand, ruined-palace echo, footstep-of-empire, sun-warmed antiquity
   key_features: Grout, tessera-grid alignment, irregular-tile spacing, andamento flow-lines, gold-leaf-smalti highlight
+  creative_brief: Each tessera clicks into grout with the weight of centuries, stone pixels laid by hands that outlasted the empires that commissioned them. Gold glass catches oil-lamp light across a thousand years of smoke and prayer and trampling feet. The image assembles itself piece by jagged piece, wholeness emerging from the deliberate spaces between broken stones.
 avoidRules:
   - smooth painting
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

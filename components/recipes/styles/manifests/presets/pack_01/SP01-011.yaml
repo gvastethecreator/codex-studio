@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-011
 packId: pack_01
 name: Kodak Portra 400
-category: 3. Film Stocks
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - film-and-analog-process
 visualDna:
   aesthetic: Warm analog film look
   form_and_line: Soft but sharp
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Nostalgic, warm
   key_features: Yellow/Red bias
+  creative_brief: Sunlight folded into emulsion, surrendering its harshness for a tender amber embrace. Skin remembers itself through this palette, rendered not as surface but as the warmth beneath. A world seen through honeyed memory, where every tone earns its place in quiet, unhurried conversation.
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - film-stocks
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

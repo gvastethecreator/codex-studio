@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-068
 packId: pack_09
 name: Lava Rock (Cooled)
-category: 5. Elemental & FX
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Basalt
   form_and_line: Sharp edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flow lines
   atmosphere: Desolate, hard
   key_features: Air holes
+  creative_brief: Render the barren landscape of cooled basalt where gas bubbles have frozen into a black sponge of volcanic origin, sharp edges and flow lines testifying to the violence of its molten birth now stilled into permanence. The surface should feel light but hard, a paradox of porosity and durability, air holes mapping the escape of the fire that formed it. Capture the silence after the flame.
 avoidRules:
   - smooth stone
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-074
 packId: pack_03
 name: Neon Sign 3D
-category: 4. Applications
+category: 1. Hard Surface And Industrial Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - hard-surface-and-industrial-cgi
 visualDna:
   aesthetic: Glowing glass tubes
   form_and_line: Tube shape
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Nightlife, sign, urban-branding
   atmosphere: Urban, cool, nighttime energy
   key_features: Tube connections, gas-glow realism
+  creative_brief: 'Bent glass tubes filled with noble gases emit electric red and blue — the glow spills onto the brick wall behind in a soft ambient bloom, and metal support fittings anchor the sign with industrial honesty. Tube connections and transformer housings render with gas-glow realism, and the wall reflection bleeds color into darkness like a bar sign at 2AM. The image is urban nightlife rendered in three dimensions: a neon sign you could walk up to and feel the warmth buzzing through the glass.'
 avoidRules:
   - flat
   - print
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: hard-surface-and-industrial-cgi
+  categoryName: 1. Hard Surface And Industrial Cgi
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - hard-surface-and-industrial-cgi
   supportedTasks:
     - image_generate
     - image_edit

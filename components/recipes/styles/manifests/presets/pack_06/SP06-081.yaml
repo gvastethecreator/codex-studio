@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-081
 packId: pack_06
 name: Game Boy Green Monochrome
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Original DMG Game Boy palette, four shades of olive-green, 160x144 low-resolution vision, chunky pixel characters, pea-soup display, Nintendo handheld nostalgia, 1989 portable gaming, sprites as blocky silhouettes of heroism
   form_and_line: Rigid pixel-grid alignment, 8x8 or 16x16 tile construction, sprite boundary boxing, no sub-pixel rendering
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Screen-edge vignette, LCD-viewing-angle washout, reflective plastic frame reflection, pocket-sized display
   atmosphere: Nostalgic, portable, childhood road-trip, under-the-covers gaming, battery-life anxiety
   key_features: Four-shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen bezel framing, monochrome dot-matrix
+  creative_brief: Four shades of green constitute the entire universe, every hero, every villain, every world reduced to pea-soup gradients on a dot-matrix LCD. The screen glows with its own faint light, a portable sun under blankets after bedtime. The image exists in the moment before batteries die, a pocket-sized epic rendered visible by four simple voltages.
 avoidRules:
   - color
   - hd
@@ -39,13 +40,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

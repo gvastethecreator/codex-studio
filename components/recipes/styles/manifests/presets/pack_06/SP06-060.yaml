@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-060
 packId: pack_06
 name: ASCII Art
-category: 1. Digital Art
+category: 4. Digital Art
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Low res
   atmosphere: Tech, code
   key_features: Text only
+  creative_brief: Characters from the ASCII set assemble into image through density and contrast, the letter functioning as pixel, the keyboard as palette. The image exists simultaneously as text and picture, readable in two dimensions, meaningful in two languages. Every keystroke builds form from the alphabet's limited geometry.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: digital-art
-  categoryName: 1. Digital Art
+  categoryName: 4. Digital Art
   tags:
     - essential-art-styles
     - digital-art
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

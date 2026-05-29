@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-078
 packId: pack_01
 name: School Portrait
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Awkward yearbook photo
   form_and_line: Stiff pose
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Forced smile
   atmosphere: Awkward, funny
   key_features: Laser background
+  creative_brief: The laser-etched backdrop burns its pattern into memory as deeply as the awkward smile etched on the face of adolescence. Here is the archive of becoming, every forced grin a time capsule of the person who would later look back and laugh.
 avoidRules:
   - cool
   - candid
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

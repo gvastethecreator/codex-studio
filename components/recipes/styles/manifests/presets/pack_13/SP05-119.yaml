@@ -1,0 +1,52 @@
+schemaVersion: 1
+id: SP05-119
+packId: pack_13
+name: Chalkboard Classroom Sketch
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Anime drawn in chalk on classroom blackboard, eraser-dust-haze in air, chalk-dust-on-uniform-sleeves, school-confession-written-in-chalk-alongside-drawing, smudged-by-someone's-hand-edge, temporary-after-school-art, sunset-light-through-classroom-windows, clubroom-blackboard-announcement energy, chalk-breaking-mid-stroke accident, impermanent-creativity-before-janitor-erases-it
+  form_and_line: Chalk-variable-thickness strokes, smudge-softened-edges, eraser-ghost-trails-from-previous-board-content, chalk-dust-halo-around-lines
+  color_palette: White-chalk on green-blackboard, yellow-chalk, pink-chalk, cyan-chalk, dust-muted pastels, green-board-background, grey-eraser-smudge bloom
+  lighting_setup: Afternoon-sun-through-classroom-windows, fluorescent-ceiling-overhead, chalk-dust-mote-light-scattering, board-reflection-gloss-corners
+  material_texture: Slate-blackboard-grain, chalk-dust-powder-residue, eraser-felt-streak-lines, chalk-holder-metal-tray, dust-on-floor-below-board, smudge-fingerprint-texture
+  render_quality: Chalkboard-sketch-anime, classroom-art-aesthetic, temporary-creation-beauty, eraser-dust-atmosphere, school-memory-nostalgia
+  spatial_distortion: Blackboard-rectangle-framing, chalk-tray-bottom-border, classroom-window-reflection-on-board, after-school-empty-classroom-context
+  atmosphere: Nostalgic, temporary, after-school-secret, youthful-creativity, fleeting-school-memory, clubroom-intimacy, janitor's-coming-soon urgency
+  key_features: Chalk-on-green-blackboard-texture, eraser-ghost-trails, chalk-dust-atmosphere-haze, smudged-edges, classroom-window-light-reflection, chalk-tray-border, chalk-breaking-texture
+  creative_brief: The drawing lives only until the janitor arrives — chalk dust suspended in afternoon window light like a prayer against erasure. Smudge ghosts of yesterday's lessons bleed through today's art, palimpsest of a school day sliding into the secret hour when the blackboard becomes a canvas. Every line carries the texture of impermanence, and that is exactly what gives it weight.
+avoidRules:
+  - digital
+  - permanent
+  - clean
+  - polished
+  - colorful
+  - smooth
+  - glossy
+  - final
+  - professional
+  - printed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-119.webp
+attributes:
+  negativePrompt: digital, permanent, clean, polished, colorful, smooth, glossy, final, professional, printed
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-character-and-lifestyle
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

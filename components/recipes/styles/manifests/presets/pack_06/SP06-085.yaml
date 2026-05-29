@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-085
 packId: pack_06
 name: Visual Novel Screen
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Japanese visual novel frame, cel-style character sprite on soft-focus photograph background, ADV dialogue-box framing, emotional portrait composition, dating-sim intimacy, Key visual-arts large-eye tenderness, Fate/stay night nighttime atmosphere, choice-branch tension
   form_and_line: Clean cel-style character outlines on photo backgrounds, UI-frame division, dialogue-box anchoring, sprite-expression sheets
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Character sprite layered over static background, dialogue box occupying lower third, choice-button overlay, flat composite depth
   atmosphere: Intimate, emotional, narrative-focused, quiet tension, relationship-weighted silence
   key_features: Character sprite over photo background, dialogue-box framing, ADV text interface, emotional facial expressions, romantic-ambient lighting
+  creative_brief: A cel-shaded character gazes at someone beyond the frame, dialogue box awaiting the button press that advances intimacy. The background softens into bokeh — the world is suggestion, the face is fact. Every still carries the weight of the choice that comes next, narrative suspended in a single composite frame.
 avoidRules:
   - action
   - motion
@@ -39,13 +40,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

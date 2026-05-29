@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-008
 packId: pack_11
 name: Stained Glass
-category: 3. Artistic Mediums
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - oddities-and-novelty
 visualDna:
   aesthetic: Church window art, cathedral glass, sacred luminosity, divine illumination
   form_and_line: Thick black lead came, segmented contours, curvilinear divisions, interconnected cells
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity
   atmosphere: Spiritual, beautiful, light, reverent calm, sacred awe, transcendent glow
   key_features: Black outlines mandatory, lead-came shadows, solder joints, textured glass surface
+  creative_brief: Light dies and is reborn in passage through colored glass, fractured into jewel-toned revelation between black lead lines. Bubbles and ripples in the antique surface catch the sun at glancing angles, transforming opacity into sacred luminosity. A window becomes a gateway when sunlight performs the daily miracle of turning silica into stained transcendence.
 avoidRules:
   - opaque
   - dull
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

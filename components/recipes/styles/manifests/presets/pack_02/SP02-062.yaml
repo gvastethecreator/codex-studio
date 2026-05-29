@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-062
 packId: pack_02
 name: Blue Hour
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Twilight
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Quiet, cool, liminal pause, between-day-and-night
   key_features: Streetlights on, lit windows, fading sky gradient
+  creative_brief: The sky holds its breath in the narrow seam between day and night, a deep ultramarine veil punctured by the first amber pinpricks of waking streetlamps. Everything exists in soft-focus suspension—a city not yet asleep and not yet awake, caught in the gentle gravity of transition.
 avoidRules:
   - orange
   - sun
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,0 +1,49 @@
+schemaVersion: 1
+id: SP13-001
+packId: pack_13
+name: Cel Heroic Dawn
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Classic shonen cel style with bright heroic energy.
+  form_and_line: Clean medium-thick linework, expressive outlines, and clear poses.
+  color_palette: Warm primaries, saturated skies, and simple shadows.
+  lighting_setup: Key light frontal, rim light suave, cel shadow de dos tonos.
+  material_texture: Subtle cel grain with a traditional painted background.
+  render_quality: Premium TV anime frame, clean and readable.
+  spatial_distortion: Moderate dynamic perspective with silhouette emphasis.
+  atmosphere: Hope, courage, and narrative momentum.
+  key_features: Intense expression, iconic pose, instant readability.
+  creative_brief: A determined protagonist at dawn, with strong vertical composition and a classic adventure spirit.
+avoidRules:
+  - photoreal
+  - western-comic
+  - 3d-render
+  - watermark
+  - text
+  - logo
+  - low-quality
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-001.webp
+attributes:
+  negativePrompt: photoreal, western-comic, 3d-render, watermark, text, logo, low-quality
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

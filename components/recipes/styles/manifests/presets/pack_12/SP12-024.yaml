@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-024
+packId: pack_12
+name: Temple Runner Trap Gauntlet
+category: 7. Heists, Horror & Underworld Runs
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+visualDna:
+  aesthetic: Arcade adventure in a mechanical temple of ancient traps.
+  subject_treatment: Fast explorer with lightweight relic-hunter gear.
+  color_and_tone: Ancient sand, jade, and alert red.
+  lighting_and_shadow: Sun rays slicing through geometric cuts.
+  texture_and_material: Carved stone, wood, and oxidized metal.
+  camera_and_composition: Escape-oriented perspective with extreme depth.
+  atmosphere_and_mood: Urgency, quick reflexes, and constant risk.
+  rendering_and_quality: High-readability endless-runner environment.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - static
+  - flat-light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-024.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

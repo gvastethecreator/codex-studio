@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-069
 packId: pack_10
 name: QR Code Style
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blocky
   atmosphere: Digital, code
   key_features: Corner markers
+  creative_brief: Information rendered as a chessboard of black and white squares, a pattern designed to be read by machines but seen by humans as alien script. The aesthetics of pure data, beauty in the functional arrangement of bits.
 avoidRules:
   - round
   - analog
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blacked out eyes
   atmosphere: Confusing, unsafe
   key_features: Text overlay
+  creative_brief: Images edited with the wrong tools by hands that meant something else entirely. The result hovers between incompetence and nightmare, a visual language that communicates danger not through what it shows but through how it fails to show correctly.
 avoidRules:
   - high quality
   - professional
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

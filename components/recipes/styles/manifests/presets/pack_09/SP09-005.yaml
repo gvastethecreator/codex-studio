@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-005
 packId: pack_09
 name: Sandstone (Rough)
-category: 1. Natural Materials
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Desert rock
   form_and_line: Sediment layers
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Eroded
   atmosphere: Warm, ancient
   key_features: Layers
+  creative_brief: Evoke the breath of ancient deserts captured in strata of red, orange, and ochre, a surface that feels granular and thirsty under harsh sun. Each layer is a page in a stone diary carved by wind and time into a record of epochs. Render the quiet dignity of the elemental, rock that remembers being sand.
 avoidRules:
   - shiny
   - wet
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - natural-materials
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-074
 packId: pack_01
 name: Bokeh Panorama (Brenizer)
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Wide angle with shallow depth
   form_and_line: Subject pop
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Swirly bokeh
   atmosphere: Epic portrait
   key_features: Thin focus plane
+  creative_brief: Impossible depth collapses into breath, the subject floating on a sea of dissolved light while background melts into abstract devotion. This is not focus but consecration, a single point of clarity surrounded by the beautiful surrender of everything else.
 avoidRules:
   - deep focus
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

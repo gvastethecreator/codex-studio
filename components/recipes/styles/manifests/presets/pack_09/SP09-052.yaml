@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-052
 packId: pack_09
 name: Electricity/Lightning
-category: 5. Elemental & FX
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Tesla coil arc
   form_and_line: Jagged bolts
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Shocking, fast
   key_features: Branching
+  creative_brief: Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins of blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous moment. The arc should feel fierce and directional, a pathfinding intelligence seeking ground through the path of least resistance. Capture the architecture of pure force, energy made visible as sculpture.
 avoidRules:
   - fire
   - smoke
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

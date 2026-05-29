@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-068
 packId: pack_08
 name: Smoke Dress
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dissolving
   atmosphere: Ghostly, magic, fading-presence melancholy, incense-ritual mystery, phantasm-elegance
   key_features: No edges, wisp boundary, volume-without-surface, light-through-form, tendril dissolution
+  creative_brief: Tendrils of particulate suspension coiling around a form that is half body and half memory, the dress billowing upward in plumes that defy the gravity textiles obey. Laser shafts cut through the vapor, revealing strata of density and dissolution, a garment whose edges exist only as a negotiation between visibility and atmosphere, worn by a figure already beginning to fade at the hemline.
 avoidRules:
   - solid
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP06-031',
     name: 'Etching',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -19,12 +19,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Antique, classic',
       key_features: 'Plate mark',
+      creative_brief:
+        'Acid bites copper where the needle exposed it, ink settling into wounds carved by chemistry. The plate transfers its memory under pressure, embossing paper with more than pigment — with the topography of a process both violent and delicate. Each print carries the ghost of the artist breathing over the acid bath.',
     },
   },
   {
     id: 'SP06-033',
     name: 'Linocut',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -37,12 +39,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Simplified shapes',
       atmosphere: 'Bold, graphic',
       key_features: 'Clean cuts',
+      creative_brief:
+        'Linoleum surrenders to the blade in smooth curves impossible in wood, the cut flowing like ink itself frozen mid-gesture. Each color demands its own block, its own registration, its own risk of misalignment. The print celebrates the hand that carves negative space into positive vision.',
     },
   },
   {
     id: 'SP06-032',
     name: 'Woodcut',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -55,12 +59,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Angular forms',
       atmosphere: 'Dramatic, primitive',
       key_features: 'Gouge marks',
+      creative_brief:
+        'Wood yields its soft grain to the gouge, leaving white channels where the block once stood. Ink sits on the remaining surface like snow on a relief map, transferring darkness only where the carver allowed height to persist. The image arrives through reduction, a sculpture flattened into print.',
     },
   },
   {
     id: 'SP06-035',
     name: 'Screenprint (Serigraphy)',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -73,12 +79,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Misregistration (offset)',
       atmosphere: 'Commercial, bold',
       key_features: 'Layered colors',
+      creative_brief:
+        'Squeegee drags ink through mesh onto paper, each color a separate pass, separate screen, separate prayer for registration. Flat planes of pigment overlap with the confidence of commerce, art refusing to distinguish itself from poster. The image announces rather than whispers, designed for distance and reproduction.',
     },
   },
   {
     id: 'SP06-036',
     name: 'Monotype',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -91,12 +99,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Blurred',
       atmosphere: 'Ghostly, soft',
       key_features: 'Transfer texture',
+      creative_brief:
+        'Paint applied to glass, transferred to paper in a single irreversible press — no edition, no repeat, no second chance. The transfer blurs and blends in ways the artist predicted but could not control, spontaneity baked into the process. Each print is an original, the plate wiped clean for the next unique birth.',
     },
   },
   {
     id: 'SP06-037',
     name: 'Aquatint',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -109,12 +119,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Dark, moody',
       key_features: 'Granular tone',
+      creative_brief:
+        "Rosin dust fused to metal creates a granular field that holds ink in countless tiny reservoirs, building tone from texture. Darkness accumulates through acid exposure, stop-out varnish protecting what must remain light. The image breathes atmosphere, Goya's sleep of reason producing monsters in halftone.",
     },
   },
   {
     id: 'SP06-038',
     name: 'Mezzotint',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -127,12 +139,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Night, dramatic',
       key_features: 'Rich blacks',
+      creative_brief:
+        'A copper plate textured entirely with microscopic teeth, then burnished smooth where light must emerge from absolute darkness. Velvet blacks cradle highlights so delicate they seem to float above the surface. The image is born from subtraction — light scraped into being from a field of ink.',
     },
   },
   {
     id: 'SP06-041',
     name: 'Rubber Stamp',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -145,12 +159,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Incomplete impression',
       atmosphere: 'Official, rough',
       key_features: 'Stamp border',
+      creative_brief:
+        'Rubber meets inkpad meets paper in a decisive press, the impression never quite complete, edges starving for pigment. The image carries the charm of bureaucracy, the poetry of forms stamped RECEIVED. Each pressing records the pressure of the hand, the slight wobble that proves humanity.',
     },
   },
   {
     id: 'SP06-043',
     name: 'Engraving (Banknote)',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -163,12 +179,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Serious, valuable',
       key_features: 'Guilloche patterns',
+      creative_brief:
+        "Parallel lines of impossible fineness weave into guilloche patterns that defy counterfeiting, geometry elevated to security. The plate holds detail beyond the resolution of the naked eye, trust engraved into cotton paper. Every banknote is a miniature museum of the engraver's art, value printed in precision.",
     },
   },
   {
     id: 'SP06-044',
     name: 'Drypoint',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -181,12 +199,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Soft, rich',
       key_features: 'Burr texture',
+      creative_brief:
+        'A needle scratches directly into metal, throwing up a burr that holds ink like velvet, giving every line a halo of soft darkness. The edition is small — the burr crushes under pressure after a handful of pulls, the image degrading into a ghost of its first impression. Rarity is structural, not artificial.',
     },
   },
   {
     id: 'SP06-039',
     name: 'Risograph',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -199,12 +219,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Misregistration',
       atmosphere: 'Fun, indie',
       key_features: 'Grainy dither',
+      creative_brief:
+        'Soy-based inks layer through a drum that eats digital files and excretes zines, each color slightly offset, each pass adding grain. The dither pattern becomes texture, the misregistration becomes charm, the rice paper absorbs the neon with an appetite for the handmade. Every print smells like the indie section of a bookstore that does not exist.',
     },
   },
   {
     id: 'SP06-042',
     name: 'Halftone (Newspaper)',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -217,12 +239,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Pixelated by dots',
       atmosphere: 'Vintage, gritty',
       key_features: 'Visible dots',
+      creative_brief:
+        "The image dissolves into dots at close range, a matrix of black circles that achieve grey through spacing, not dilution. Newsprint absorbs the ink greedily, the cheap paper already yellowing toward oblivion. Every halftone carries the urgency of yesterday's headline, information racing toward irrelevance.",
     },
   },
   {
     id: 'SP06-040',
     name: 'Cyanotype',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -235,12 +259,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Silhouette only',
       atmosphere: 'Blue, scientific',
       key_features: 'Blue monochrome',
+      creative_brief:
+        'Iron salts sensitize paper to ultraviolet light, turning Prussian blue where the sun touched and leaving white where objects cast their shadows. The image is a photogram, a direct impression of light blocked by matter, science indistinguishable from art. Every cyanotype is a collaboration with the weather on the day it was made.',
     },
   },
   {
     id: 'SP06-034',
     name: 'Lithography',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -253,12 +279,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Artistic, soft',
       key_features: 'Grainy texture',
+      creative_brief:
+        'Grease and water repel on limestone, an ancient chemical truce that separates ink from void at the molecular level. The crayon texture of the drawing transfers faithfully, grain and all, to paper that remembers the stone. Every print carries the geology of the process, sediment made image.',
     },
   },
   {
     id: 'SP06-045',
     name: 'Collagraph',
-    category: '5. Printmaking',
+    category: '3. Printmaking',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -271,6 +299,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Abstracted',
       atmosphere: 'Rough, organic',
       key_features: 'Heavy texture',
+      creative_brief:
+        'Found materials — sand, glue, fabric, cardboard — assembled into a printing surface as textured as topography itself. The plate becomes a landscape, valleys holding ink while peaks print white, relief as image generator. The print carries the memory of every material sacrificed to its creation.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

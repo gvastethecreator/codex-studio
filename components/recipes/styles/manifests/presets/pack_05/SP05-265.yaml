@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: Baroque vampire castles, post-apocalyptic moonlight, impossibly elegant hunter silhouette, gothic machinery, rose-black romance and predatory splendor in motion
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
   atmosphere: Elegant, predatory, moonlit, decadent
   key_features: Hunter silhouette, gothic carriage and castle props, moonlit wasteland, aristocratic monster design, baroque frame detail
+  creative_brief: Gothic spires pierce post-apocalyptic skies where the hunter rides, half-creature himself, impossibly elegant in silhouette against baroque ruin and vampire moonlight. Bloodlust rendered beautiful by aristocratic stillness, the chase a rose-black romance between predator and predator, each recognizing the monster in the other.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: dark-fantasy-and-seinen
   categoryName: 9. Dark Fantasy & Seinen
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - dark-fantasy-and-seinen
   supportedTasks:
     - image_generate

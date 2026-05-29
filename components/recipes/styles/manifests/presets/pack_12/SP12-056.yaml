@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-056
+packId: pack_12
+name: Carbon Megacity Rooftop Chase
+category: 1. Neon Urban & Night Ops
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+visualDna:
+  aesthetic: Parkour chase in a carbon megacity.
+  subject_treatment: Rebel courier and pursuit drones.
+  color_and_tone: Matte black, bright cyan, and signal red.
+  lighting_and_shadow: Urban sunset with targeted neon highlights.
+  texture_and_material: Carbon fiber, glass, and concrete.
+  camera_and_composition: Jump route with vertical depth.
+  atmosphere_and_mood: Kinetic urgency and route control.
+  rendering_and_quality: Premium mobility scene.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - medieval
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-056.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

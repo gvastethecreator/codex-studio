@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Only 90 degree angles
   atmosphere: Balanced, rigid
   key_features: Grid structure
+  creative_brief: Universality distilled to ninety degrees, the grid as cosmic architecture. Black borders hold primary colors in suspended equilibrium, a meditation on what remains when everything inessential is removed.
 avoidRules:
   - curves
   - diagonal
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

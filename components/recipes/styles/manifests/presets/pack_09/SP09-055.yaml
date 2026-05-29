@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-055
 packId: pack_09
 name: Crystal/Gemstone
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Raw amethyst
   form_and_line: Facets
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sharp points
   atmosphere: Mystical, valuable
   key_features: Cluster
+  creative_brief: Summon the deep-earth geometry of amethyst crystal where purple facets climb toward pointed terminations in a cluster of mineral intelligence, each face a window into internal reflections that bounce light through lattice corridors. The geometric growth should feel intentional yet natural, a cathedral built by chemistry at geological scale. Capture the magic of ordered growth, the lattice that dreams in violet.
 avoidRules:
   - glass
   - smooth
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

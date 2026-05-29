@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: One impossible element
   atmosphere: Wonder, grounded
   key_features: Real world context
+  creative_brief: The extraordinary slips quietly into the mundane, a floating teapot in a kitchen that otherwise obeys physics. Magic here does not announce itself; it simply exists, as natural and unnoticed as breathing.
 avoidRules:
   - fantasy
   - cartoon
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

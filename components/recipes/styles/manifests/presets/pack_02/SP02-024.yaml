@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-024
 packId: pack_02
 name: Public Access TV
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Weird local TV
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Chroma key fail, blue fringe, transparent hair halo
   atmosphere: Surreal, awkward, uncanny local, midnight broadcast
   key_features: Bad keying, folding chair, community bulletin
+  creative_brief: Fluorescent light drains the humanity from faces while bad chroma keying opens portals to nowhere. The air thrums with the frequency of the uncanny, a signal carried on the backs of forgotten UHF channels. Somewhere between the folding chair and the community bulletin lies the sublime absurdity of a midnight broadcast no one programmed and everyone discovered.
 avoidRules:
   - professional
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

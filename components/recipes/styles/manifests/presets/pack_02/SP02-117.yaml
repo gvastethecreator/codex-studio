@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-117
 packId: pack_02
 name: Angela Anaconda Photo-Cutout Menace
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Photocollage black-and-white cutout nightmare, flat heads pasted onto crude bodies, anti-beauty schoolyard sarcasm, collage ugliness weaponized, handmade digital freakout
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Snarky, janky, hostile, unforgettable
   key_features: Photo-cutout faces, mismatched body collage, xerox textures, anti-pretty black-and-white contrast, hostile schoolyard energy
+  creative_brief: Found faces stare from stolen photographs, grafted onto bodies that reject them, the resulting collision radiating the menace of a school yearbook weaponized. Scissors and glue become instruments of revenge, assembling a world where nothing fits together and that is precisely the point.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

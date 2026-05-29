@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-002
+packId: pack_14
+name: Velvet Relic Revenant
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Aristocratic revenant portrait with decadent luxury.
+  form_and_line: Refined profile, noble drapery, and theatrical hands.
+  color_palette: Deep burgundy, ink black, and aged silver.
+  lighting_setup: Side candlelight with carved shadows.
+  material_texture: Velvet, metallic relics, and pale marble-like skin.
+  render_quality: Dark, high-detail illustration with strong editorial presence.
+  spatial_distortion: Encuadre medio centrado en carisma y ornamento.
+  atmosphere: Noble melancholy and motionless danger.
+  key_features: Reliquia central, cuello alto, gesto inmortal.
+  creative_brief: An elegant revenant who feels like a living relic—seductive and ominous.
+avoidRules: [photoreal, cheerful, modern-casual, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-002.webp }
+attributes:
+  negativePrompt: photoreal, cheerful, modern-casual, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

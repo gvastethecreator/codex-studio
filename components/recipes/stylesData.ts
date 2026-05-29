@@ -3,19 +3,99 @@ import {
   loadGeneratedStyleRuntimePack,
   loadGeneratedStyleRuntimePacks,
 } from './styleRuntimeData.generated';
+import { loadStylePresetCatalog } from './stylePresetCatalogData';
+import { composeStyleRuntimePacksFromManifests } from './stylePresetManifests';
 import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
+
+const STYLE_VISUAL_DNA_KEYS = [
+  'aesthetic',
+  'subject_treatment',
+  'color_and_tone',
+  'lighting_and_shadow',
+  'texture_and_material',
+  'camera_and_composition',
+  'atmosphere_and_mood',
+  'rendering_and_quality',
+] as const;
+
+interface StyleDefaultManifestEntry {
+  presetId?: unknown;
+  category?: unknown;
+}
+
+function normalizeStyleRuntimePreset(preset: StyleRuntimePreset): StyleRuntimePreset {
+  const normalizedStyle = Object.fromEntries(
+    STYLE_VISUAL_DNA_KEYS.map((key) => [key, preset.style[key]]),
+  ) as StyleRuntimePreset['style'];
+
+  const normalizedCategory = STYLE_DEFAULT_CATEGORY_BY_PRESET_ID.get(preset.id);
+
+  return {
+    ...preset,
+    style: normalizedStyle,
+    ...(normalizedCategory ? { category: normalizedCategory } : {}),
+  };
+}
+
+const styleDefaultManifestFiles = import.meta.glob(
+  '../../assets/recipes/styles/defaults/manifest-pack_*.json',
+  {
+    eager: true,
+    import: 'default',
+  },
+);
+
+function isNonEmptyString(value: unknown): value is string {
+  return typeof value === 'string' && value.trim().length > 0;
+}
+
+function createStyleDefaultCategoryByPresetId() {
+  const categoryByPresetId = new Map<string, string>();
+
+  for (const manifestContent of Object.values(styleDefaultManifestFiles)) {
+    if (!Array.isArray(manifestContent)) continue;
+
+    for (const entry of manifestContent as StyleDefaultManifestEntry[]) {
+      if (!isNonEmptyString(entry.presetId) || !isNonEmptyString(entry.category)) continue;
+      categoryByPresetId.set(entry.presetId, entry.category);
+    }
+  }
+
+  return categoryByPresetId;
+}
+
+const STYLE_DEFAULT_CATEGORY_BY_PRESET_ID = createStyleDefaultCategoryByPresetId();
+
+function normalizeStyleRuntimePack(pack: StyleRuntimePack): StyleRuntimePack {
+  return {
+    ...pack,
+    presets: pack.presets.map(normalizeStyleRuntimePreset),
+  };
+}
 
 export const STYLE_RUNTIME_PACK_SUMMARIES = GENERATED_STYLE_RUNTIME_PACK_SUMMARIES;
 
-export const loadStyleRuntimePack = loadGeneratedStyleRuntimePack;
-export const loadStyleRuntimePacks = loadGeneratedStyleRuntimePacks;
+export async function loadStyleRuntimePack(packId: string): Promise<StyleRuntimePack | null> {
+  const pack = await loadGeneratedStyleRuntimePack(packId);
+  return pack ? normalizeStyleRuntimePack(pack) : null;
+}
+
+export async function loadStyleRuntimePacks(): Promise<StyleRuntimePack[]> {
+  const packs = await loadGeneratedStyleRuntimePacks();
+  return packs.map(normalizeStyleRuntimePack);
+}
 
 export async function loadStylePresetIndex(): Promise<{
   packs: StyleRuntimePack[];
   presetById: Map<string, StyleRuntimePreset>;
   presetPackIdById: Map<string, string>;
 }> {
-  const packs = await loadStyleRuntimePacks();
+  const catalog = await loadStylePresetCatalog();
+  const packs = composeStyleRuntimePacksFromManifests(
+    catalog.packManifests,
+    catalog.presetManifests,
+  );
+
   return {
     packs,
     presetById: new Map(

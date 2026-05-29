@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-061
 packId: pack_01
 name: Paparazzi Style
-category: 4. Genres
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - lighting-techniques
 visualDna:
   aesthetic: Telephoto street shot
   form_and_line: Subject isolated
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Motion blur
   atmosphere: Urgent, chaotic
   key_features: Subject surprised
+  creative_brief: A frame stolen from behind distance and darkness, the flash a sudden surgical glare that isolates its subject like a specimen pinned in borrowed light. Grain textures every surface with urgency, the photographer invisible but felt as violation, the image's truth lodged in its trespass. Motion smears at the edges as if the scene itself tried to flee the moment of capture.
 avoidRules:
   - posed
   - studio
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - genres
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

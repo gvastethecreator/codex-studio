@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-023
 packId: pack_07
 name: Parametric Architecture
-category: 2. Architectural Styles
+category: 5. Speculative And Concept Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - architectural-styles
+  - speculative-and-concept-architecture
 visualDna:
   aesthetic: Zaha Hadid fluid parametric futurism, flowing space, gravity defiance
   form_and_line: Flowing curves, continuous surface, seamless skin, morphing volumes, ribbon-like transitions
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Fluid form
   atmosphere: Elegant, advanced, flow, weightless, computational, liquid-space serenity
   key_features: Voronoi pattern, fluid continuous surfaces, atrium vortex, organic facade pores, flowing interior canyons
+  creative_brief: Surfaces flow like liquid thought, walls melting into floors into ceilings without the interruption of a corner. Algorithm whispers to material, computation dreaming itself into concrete and glass. The building behaves like an organism frozen mid-metamorphosis, caught between animal and architecture.
 avoidRules:
   - brick
   - square
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: architectural-styles
-  categoryName: 2. Architectural Styles
+  categoryId: speculative-and-concept-architecture
+  categoryName: 5. Speculative And Concept Architecture
   tags:
     - architecture-and-interior
-    - architectural-styles
+    - speculative-and-concept-architecture
   supportedTasks:
     - image_generate
     - image_edit

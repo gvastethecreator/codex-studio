@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-162
+packId: pack_13
+name: Sailor Moon - Moonlit Ribbon Justice
+category: 4. Shojo, Magical Girl & Visionary Classics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - shojo-magical-girl-and-visionary-classics
+visualDna:
+  aesthetic: Urban night magic, schoolgirl heroism, crescent emblems, transformation ribbons, heartfelt friendship and elegant monster-of-the-week glamour, moonlit romantic action
+  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
+  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
+  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
+  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
+  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
+  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  atmosphere: Radiant, romantic, heroic, graceful
+  key_features: Transformation ribbons, crescent motifs, moonlit city backgrounds, team silhouette posing, jewel-tone magic effects
+  creative_brief: Moonlight worn as armor, ribbons unfurling into weapons of absolute love, the adolescent heart discovering that tenderness is the most formidable force in the solar system. A girl who cries easily and fights impossibly, whose transformation is not disguise but distillation of her truest self into radiant form. In the name of the moon, every shadow learns to fear the light carried by those who refuse to stop caring.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-162.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: shojo-magical-girl-and-visionary-classics
+  categoryName: 4. Shojo, Magical Girl & Visionary Classics
+  tags:
+    - anime-character-and-lifestyle
+    - shojo-magical-girl-and-visionary-classics
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-037
 packId: pack_03
 name: Ambient Occlusion Pass
-category: 2. Lighting & Atmosphere
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Contact shadows only
   form_and_line: Soft gradients in corners
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Technical, form study, sculpt-review
   atmosphere: Neutral, shape focus, pure geometry
   key_features: Corner shadows, contact darkness
+  creative_brief: 'Stripped of color, texture, and direct light, the object speaks through shadow alone — soft grey gradients pool in crevices and undercuts, and contact darkness anchors forms to their plane with the gravity of proximity. The clay-white matte surface reads as a sculptor''s review pass, pure geometry assessed without the distraction of materials. The image is form study at its most honest: every curve proven by the darkness it gathers.'
 avoidRules:
   - color
   - light
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

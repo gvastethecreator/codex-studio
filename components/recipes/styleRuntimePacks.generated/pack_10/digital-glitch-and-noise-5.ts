@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP10-021',
     name: 'Datamosh',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'clean, perfect',
     style: {
       aesthetic: 'Video compression artifact',
@@ -18,12 +18,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Pixel drag',
       atmosphere: 'Chaotic, digital',
       key_features: 'I-Frame destruction',
+      creative_brief:
+        'Frames bleed into each other, the boundary between moments liquefied by algorithmic failure. Pixels that were supposed to forget instead dissolve forward, a haunting of movement trapped between keyframes.',
     },
   },
   {
     id: 'SP10-027',
     name: 'Chromatic Aberration',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'clean edges',
     style: {
       aesthetic: 'Lens error',
@@ -35,12 +37,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Color shift',
       atmosphere: 'Dizzy, intense',
       key_features: 'Edge fringe',
+      creative_brief:
+        'Light splits at the edges, red and cyan pulling apart like a color divorced from itself. The error becomes the aesthetic, a deliberate wound in optics that makes the image vibrate with wrongness.',
     },
   },
   {
     id: 'SP10-022',
     name: 'Pixel Sorting',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'horizontal lines',
     style: {
       aesthetic: 'Pixels dragged vertically',
@@ -52,12 +56,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Melting',
       atmosphere: 'Dystopian, aesthetic',
       key_features: 'Vertical sort',
+      creative_brief:
+        'The image unravels along luminance gradients, bright pixels dragged across the frame like a comb through wet paint. Digital entropy made visible, a glitch that reveals the hidden architecture of seeing.',
     },
   },
   {
     id: 'SP10-025',
     name: 'ASCII Art',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'image, pixels',
     style: {
       aesthetic: 'Text characters',
@@ -69,12 +75,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Low resolution',
       atmosphere: 'Cyber, code',
       key_features: 'Grid alignment',
+      creative_brief:
+        'Language turned to light, letters and symbols pressed into service as pixels of meaning. The image whispers in monospace, a cathedral built from the alphabet of machines.',
     },
   },
   {
     id: 'SP10-026',
     name: 'JPEG Artifacts',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'png, lossless',
     style: {
       aesthetic: 'Deep fried meme',
@@ -86,12 +94,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Blocky edges',
       atmosphere: 'Funny, trashy',
       key_features: '8x8 blocks',
+      creative_brief:
+        'Compression as aesthetic, the image eaten by its own efficiency and regurgitated in blocks. What was lost becomes the point, degradation a deliberate fingerprint of digital decay.',
     },
   },
   {
     id: 'SP10-028',
     name: 'Scanography',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'camera photo',
     style: {
       aesthetic: 'Object on flatbed scanner',
@@ -103,12 +113,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Squashed',
       atmosphere: 'Eerie, surreal',
       key_features: 'Black background',
+      creative_brief:
+        'The scanner sees with a light that erases depth, pressing objects flat against glass like botanical specimens from a digital herbarium. Shadows bloom where three dimensions once lived.',
     },
   },
   {
     id: 'SP10-023',
     name: 'VHS Glitch',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'hd, 4k',
     style: {
       aesthetic: 'Bad tracking tape',
@@ -120,12 +132,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Tracking error',
       atmosphere: 'Nostalgic, horror',
       key_features: 'Time stamp',
+      creative_brief:
+        'Magnetic memory in decay, the tape struggling to reconstruct what it once held. Scanlines rip through faces, color bleeds sideways, and the machine aches with the burden of analog forgetting.',
     },
   },
   {
     id: 'SP10-024',
     name: 'CRT Monitor',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'lcd, sharp pixels',
     style: {
       aesthetic: 'Close up screen',
@@ -137,12 +151,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Curved screen',
       atmosphere: 'Retro, tech',
       key_features: 'Scanlines',
+      creative_brief:
+        "Phosphor glow at intimate distance, the grid of red-green-blue that built a generation's dreams. Scanlines hum their horizontal song, each pixel a tiny window into a warmer, heavier light.",
     },
   },
   {
     id: 'SP10-029',
     name: 'Halftone Pattern',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'smooth gradient',
     style: {
       aesthetic: 'CMYK dots',
@@ -154,12 +170,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Moire pattern',
       atmosphere: 'Retro, graphic',
       key_features: 'Rosette pattern',
+      creative_brief:
+        'Images dissolve into the language of print, cyan and magenta dots dancing at angles that trick the eye into seeing continuity. The press reveals its secret: everything solid is just a constellation of circles.',
     },
   },
   {
     id: 'SP10-030',
     name: 'Dithering (1-bit)',
-    category: '5. Digital Glitch & Noise',
+    category: '3. Digital Glitch & Noise',
     negativePrompt: 'grey, smooth',
     style: {
       aesthetic: 'MacPaint style',
@@ -171,6 +189,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'No greyscale',
       atmosphere: 'Retro, binary',
       key_features: 'Atkinson dither',
+      creative_brief:
+        'Every pixel faced with a binary ultimatum: black or white, nothing in between. The illusion of gray emerges from the arrangement of absolutes, decisions scattered like seeds across the canvas.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

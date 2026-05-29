@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
   aesthetic: Executioner blades in hallucinogenic paradise, floral horror, island monstrosities, sacred violence, Edo-period criminal fatalism colliding with impossible botanical terror
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
   atmosphere: Lethal, lush, mystical, brutal
   key_features: Flower-and-blood contrast, executioner sword poses, poisonous color pops, creature-body horror, dense island backdrops
+  creative_brief: Blossoms bloom from wounds, each petal a lethal geometry drawn in the space between execution and enlightenment. This island paradise is the cruelest tutor, schooling condemned souls in the grammar of beautiful death. Blood feeds a garden that remembers every name whispered into its soil.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: modern-shonen-and-action
   categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - modern-shonen-and-action
   supportedTasks:
     - image_generate

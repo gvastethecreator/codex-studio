@@ -2,15 +2,15 @@ schemaVersion: 1
 id: SP05-142
 packId: pack_05
 name: Black Lagoon - South Seas Gun-Runner Grit
-category: 2. 2000s Classics
+category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
-  - 2000s-classics
+  - anime-battle-and-worlds
+  - modern-shonen-and-action
 visualDna:
   aesthetic: Tropical criminal port cities, cigarettes and speedboats, hard-bitten mercenary action, gunmetal humidity, profanity-laced underworld cool, lawless modern noir
   form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
   atmosphere: Gruff, hot, dangerous, worldly
   key_features: Gun-action framing, tropical industrial docks, criminal fashion silhouettes, speedboat spray, hardboiled expressions
+  creative_brief: Salt air mixes with cordite while a cigarette glows at the edge of the dock, the ember the only honest light in a port city built on lies. No one here is innocent, but some are more interesting than others, and the sea does not judge — it just swallows the evidence. Every speedboat departure is a question mark trailing across the water.
 avoidRules:
   - realistic
   - 3d render
@@ -40,12 +41,12 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
-  categoryId: 2000s-classics
-  categoryName: 2. 2000s Classics
+  packName: Anime Battle & Worlds
+  categoryId: modern-shonen-and-action
+  categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
-    - 2000s-classics
+    - anime-battle-and-worlds
+    - modern-shonen-and-action
   supportedTasks:
     - image_generate
     - image_edit

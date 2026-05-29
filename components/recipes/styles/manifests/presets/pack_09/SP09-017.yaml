@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-017
 packId: pack_09
 name: Brushed Aluminum
-category: 2. Man-Made Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Metal surface
   form_and_line: Micro scratches
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Modern, clean
   key_features: Directional scratch
+  creative_brief: Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional grain that catches light anisotropically across a field of silver-grey. The surface should feel cool and precise, a choral arrangement of parallel lines marching in disciplined formation. This is the skin of precision engineering, the quiet face of contained complexity.
 avoidRules:
   - chrome
   - mirror
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

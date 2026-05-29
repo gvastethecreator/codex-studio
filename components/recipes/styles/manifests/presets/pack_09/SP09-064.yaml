@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-064
 packId: pack_09
 name: Mud (Cracked)
-category: 5. Elemental & FX
+category: 4. Surface Wear And Aging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - surface-wear-and-aging
 visualDna:
   aesthetic: Dried lake bed
   form_and_line: Puzzle cracks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Curled plates
   atmosphere: Thirsty, hot
   key_features: Crack pattern
+  creative_brief: Capture the drought geometry of cracked mud where puzzle-piece plates curl at the edges, separating into a map of thirst written in tan and brown under harsh desert sun. Each polygon should feel baked and brittle, the curled edges casting thin shadows that deepen the sense of arid abandonment. Render the beauty of dessication, the landscape of thirst drawn in shrinking clay.
 avoidRules:
   - wet mud
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: surface-wear-and-aging
+  categoryName: 4. Surface Wear And Aging
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - surface-wear-and-aging
   supportedTasks:
     - image_generate
     - image_edit

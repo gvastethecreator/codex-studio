@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-028
 packId: pack_09
 name: Glass (Shattered)
-category: 2. Man-Made Materials
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Broken window
   form_and_line: Sharp cracks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Fragmented
   atmosphere: Dangerous, sudden
   key_features: Spiderweb crack
+  creative_brief: Compose the frozen violence of shattered glass where radial cracks bloom from an impact center in a spiderweb of sharp light, green edges catching refractive glints like dangerous confetti. Each shard must retain its own angle of reflection, fragmenting the world behind it into a cubist mosaic. Capture the moment between integrity and collapse, transparent catastrophe arrested mid-breath.
 avoidRules:
   - window
   - clean
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

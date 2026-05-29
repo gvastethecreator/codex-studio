@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-182
+packId: pack_13
+name: Nana - Black-Lace Apartment Heartbreak
+category: 4. Shojo, Magical Girl & Visionary Classics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - shojo-magical-girl-and-visionary-classics
+visualDna:
+  aesthetic: Fashion-forward adult shojo, cigarette smoke over cramped Tokyo apartments, black lace and stage lights, romantic damage, friendship and ambition grinding together
+  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
+  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
+  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
+  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
+  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
+  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  atmosphere: Stylish, aching, intimate, adult
+  key_features: Fashion silhouettes, apartment intimacy, concert lighting accents, emotional confrontation framing, black-lace detail
+  creative_brief: Black lace is armor for hearts that bruise in fashionable silhouettes. Cigarette smoke fills the space between what two people want and what they can actually give. Stage lights expose everything, and the most dangerous duet is the one where ambition and love refuse to take turns.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-182.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: shojo-magical-girl-and-visionary-classics
+  categoryName: 4. Shojo, Magical Girl & Visionary Classics
+  tags:
+    - anime-character-and-lifestyle
+    - shojo-magical-girl-and-visionary-classics
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

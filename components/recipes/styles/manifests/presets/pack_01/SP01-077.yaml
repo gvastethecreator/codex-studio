@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-077
 packId: pack_01
 name: Medical Photography
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Surgery or anatomy
   form_and_line: Clean, gross
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Sterile, intense
   key_features: Clean background
+  creative_brief: The body laid bare under surgical light, flesh and metal converging at the boundary between catastrophe and repair. Sterility sharpens into its own aesthetic, the hyperreal revealing what only proximity to the wound can teach.
 avoidRules:
   - artistic
   - shadow
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

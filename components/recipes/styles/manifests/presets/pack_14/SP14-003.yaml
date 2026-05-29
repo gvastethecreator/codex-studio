@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-003
+packId: pack_14
+name: Saint of Broken Neon
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Post-urban sacred iconography with dying neon.
+  form_and_line: Iconic frontal figure, broken halo, and severe geometry.
+  color_palette: Cyan desaturado, magenta herido y negro humo.
+  lighting_setup: Cracked neon tubes as artificial sacred light.
+  material_texture: Wet concrete, broken glass, and oxidized metal.
+  render_quality: Hybrid image between poster art and a contemporary reliquary.
+  spatial_distortion: Compressed, centralized urban altar.
+  atmosphere: Fallen devotion and technological sanctity.
+  key_features: Fragmented halo, liturgical graffiti, urban rain.
+  creative_brief: A saint at the end of the city, between industrial ruin and electric mysticism.
+avoidRules: [photoreal, bright-daylight, playful, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-003.webp }
+attributes:
+  negativePrompt: photoreal, bright-daylight, playful, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

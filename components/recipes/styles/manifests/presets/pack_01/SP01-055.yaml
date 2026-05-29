@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-055
 packId: pack_01
 name: Underwater
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Submerged subject
   form_and_line: Floating hair/cloth
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Refraction distortion
   atmosphere: Silent, deep
   key_features: Blue tint
+  creative_brief: Gravity unlearns itself beneath the surface, where fabric dances in slow currents and light arrives fractured into drifting nets of radiant blue lace. Everything softens, blue-shifted, rendered dreamlike by the liquid medium that bends vision as much as it bends light. Sound becomes impossible in this suspended cathedral of silence, where breath holds itself in abeyance.
 avoidRules:
   - dry
   - land
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
   aesthetic: Dungeon-raid power fantasy, violet-black shadow summons, rank-up intensity, Korean portal action polish, monarch aura spectacle, solitary ascent into overwhelming force
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
   atmosphere: Dominant, sleek, ominous, ascendant
   key_features: Shadow-army silhouettes, violet aura bloom, dungeon architecture, rank-up visual cues, overpowered hero framing
+  creative_brief: Shadows kneel before a lone figure ascending through the dungeon gate, violet lightning threading the silhouette of a monarch who was once nobody. Power accretes like a gathering storm, each rank a new strata of loneliness. Solitude is the tax the throne collects from those who reach it alone.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: modern-shonen-and-action
   categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - modern-shonen-and-action
   supportedTasks:
     - image_generate

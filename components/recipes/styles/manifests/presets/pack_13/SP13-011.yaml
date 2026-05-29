@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-011
+packId: pack_13
+name: Meikyuu Dungeon Glow
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Dungeon anime with bioluminescence and mystical echoes.
+  form_and_line: Clear outlines, exploration props, and threatening silhouettes.
+  color_palette: Dark blue, glowing green, and subdued amber.
+  lighting_setup: Torchlight plus bioluminescent sources.
+  material_texture: Wet stone, crystals, and underground mist.
+  render_quality: Anime environment scene with explorer-focused framing.
+  spatial_distortion: Tunnel perspective with progressive tension.
+  atmosphere: Suspenso, curiosidad y peligro latente.
+  key_features: Glowing portal, explorer backpack, runes.
+  creative_brief: Expedition through a deep passage with atmospheric mood and crisp readability.
+avoidRules:
+  - photoreal
+  - daylight
+  - flat-color-only
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-011.webp
+attributes:
+  negativePrompt: photoreal, daylight, flat-color-only, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

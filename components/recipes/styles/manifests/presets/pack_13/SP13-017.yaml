@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-017
+packId: pack_13
+name: Ink Noir Detective
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Anime detective noir with a strong ink language.
+  form_and_line: High contrast, hard outlines, and graphic shadows.
+  color_palette: Black and white with a single crimson accent.
+  lighting_setup: Intense sidelight and venetian-blind shadows.
+  material_texture: Rough paper, light rain, and minimal shine.
+  render_quality: Highly readable anime noir poster style.
+  spatial_distortion: Tight framing for psychological mystery.
+  atmosphere: Intrigue, solitude, and deduction.
+  key_features: Gabardina, calle nocturna, pista visual central.
+  creative_brief: A detective at the moment of discovery—dramatic and restrained.
+avoidRules:
+  - photoreal
+  - colorful-rainbow
+  - 3d-render
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-017.webp
+attributes:
+  negativePrompt: photoreal, colorful-rainbow, 3d-render, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

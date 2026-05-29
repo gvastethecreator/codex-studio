@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-005
 packId: pack_11
 name: Amigurumi Crochet
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Crocheted yarn doll, amigurumi plush, handmade companion, woolen charm
   form_and_line: Spiral stitch pattern, V-stitch rows, rounded increases, circular construction
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Round, chibi proportions, oversized head, tiny limbs, compact body
   atmosphere: Cozy, sweet, tactile, nurturing, heartfelt, handmade love
   key_features: Stitch texture, gauge-consistent rows, yarn halo, safety-eye shine
+  creative_brief: Yarn becomes companion through the rhythmic dance of hook and loop, stitch building upon stitch in spiral construction. Safety-eye shine catches the window light as the amigurumi creature waits with hug-ready proportions and wordless comfort. Roundness born from tension, softness earned through hours of patient crochet devotion.
 avoidRules:
   - smooth
   - plastic
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

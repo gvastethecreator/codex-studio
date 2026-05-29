@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-079
 packId: pack_03
 name: Bronze Statue
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Cast metal figure
   form_and_line: Sculpted details
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Monument, classic, sculpture-garden
   atmosphere: Timeless, heavy, historical gravity
   key_features: Patina in crevices, cast-metal detail
+  creative_brief: 'Specular highlights ride the crest of sculpted musculature and draped fabric — the bronze holds its warm metallic luster across broad planes while verdigris patina gathers in crevices like green memory of centuries of weather. Cast-metal texture betrays the mold that birthed it, and the weight of the material reads in every shadow. The image is monumental: a sculpture-garden centerpiece rendered with the gravity of history, timeless metal carrying the likeness of something mortal into permanence.'
 avoidRules:
   - flesh
   - color
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

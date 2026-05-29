@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-014
 packId: pack_11
 name: Cottagecore
-category: 4. Aesthetics
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - oddities-and-novelty
 visualDna:
   aesthetic: Rural romantic life, pastoral dream, meadow-dwelling simplicity, countryside idyll
   form_and_line: Soft, flowery, organic tendrils, billowing fabric, wildflower outlines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None, natural proportions, garden-gate framing, window-light intimacy
   atmosphere: Peaceful, slow, romantic, gentle contentment, wildflower freedom, hearthside safety
   key_features: Flowers everywhere, mason-jar bouquets, wicker baskets, tea-stained doily lace
+  creative_brief: Wildflowers bend in the golden-hour breeze near a windowsill where bread dough rises slowly under linen cloth. The pastoral dream breathes at garden pace, wrapped in hand-thrown ceramics and pressed-herb fragrance and tea-stained doily lace. Peace wears an embroidered apron and moves at the speed of wildflower growth, unhurried, rooted, radiant.
 avoidRules:
   - city
   - modern
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

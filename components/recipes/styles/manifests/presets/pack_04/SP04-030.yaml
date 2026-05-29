@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-030
 packId: pack_04
 name: Scientific Botanical
-category: 2. Children's Illustration
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - children-s-illustration
+  - childrens-and-educational
 visualDna:
   aesthetic: Vintage textbook
   form_and_line: Fine ink
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dissected view
   atmosphere: Educational, classic, museum-cabinet authority, taxonomic reverence
   key_features: Label text, anatomical callouts, specimen arrangement
+  creative_brief: Ink lines trace botanical specimens with the reverence of scientific witness, each root and stamen catalogued in patient detail. Watercolor tints wash across sepia pages like the ghost of a garden pressed between time. This is the meeting point of art and taxonomy, where the urge to name and the urge to beauty share the same page.
 avoidRules:
   - cartoon
   - messy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: children-s-illustration
-  categoryName: 2. Children's Illustration
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - children-s-illustration
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: Low-level adventurers in a damp fantasy world, debt and fear, smoky campfires, hesitant teamwork, grounded monster hunting and fragile grief
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
   atmosphere: Humble, smoky, vulnerable, earnest
   key_features: Campfire staging, patched equipment, fearful party spacing, muddy paths, low-level survival details
+  creative_brief: Smoke curls from a campfire too small to chase the fear away, and patched armor tells stories no epic would remember. A party of underdogs kills one goblin and grieves like it was a king. Fantasy has a smell here—damp wool, iron, hesitation.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: isekai-and-high-fantasy
   categoryName: 8. Isekai & High Fantasy
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - isekai-and-high-fantasy
   supportedTasks:
     - image_generate

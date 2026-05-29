@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-034
 packId: pack_02
 name: Laika Moody Stop-Motion
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Moody miniature stop-motion fantasy, Coraline style, handcrafted dread, wool sweaters, button eyes
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Replacement face, expression swap, incremental sculpt
   atmosphere: Dark, handmade, gothic whimsy, craft horror
   key_features: Imperfection, fingerprint texture, miniature prop detail
+  creative_brief: Needle marks in woolly sweaters catch the amber glow of a dollhouse lamp, each fiber a testament to hands that labored in miniature. A corridor stretches too far into violet shadow, where button eyes gleam with borrowed life. Something waits in the space between frames — patient, handcrafted, and not quite friendly.
 avoidRules:
   - smooth 3d
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

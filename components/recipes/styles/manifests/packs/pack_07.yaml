@@ -3,8 +3,8 @@ id: pack_07
 name: Architecture & Interior
 description: Architectural styles and interior design aesthetics.
 categories:
-  - id: interior-design
-    name: 1. Interior Design
+  - id: residential-interiors
+    name: 1. Residential Interiors
     presetRefs:
       - pack_07/SP07-016.yaml
       - pack_07/SP07-004.yaml
@@ -16,27 +16,18 @@ categories:
       - pack_07/SP07-003.yaml
       - pack_07/SP07-020.yaml
       - pack_07/SP07-001.yaml
-  - id: architectural-styles
-    name: 2. Architectural Styles
-    presetRefs:
       - pack_07/SP07-027.yaml
       - pack_07/SP07-021.yaml
-      - pack_07/SP07-022.yaml
       - pack_07/SP07-025.yaml
-      - pack_07/SP07-023.yaml
       - pack_07/SP07-010.yaml
       - pack_07/SP07-026.yaml
       - pack_07/SP07-006.yaml
       - pack_07/SP07-007.yaml
       - pack_07/SP07-028.yaml
       - pack_07/SP07-030.yaml
-      - pack_07/SP07-009.yaml
       - pack_07/SP07-024.yaml
       - pack_07/SP07-008.yaml
       - pack_07/SP07-029.yaml
-  - id: environment
-    name: 3. Environment
-    presetRefs:
       - pack_07/SP07-032.yaml
       - pack_07/SP07-011.yaml
       - pack_07/SP07-012.yaml
@@ -46,28 +37,14 @@ categories:
       - pack_07/SP07-015.yaml
       - pack_07/SP07-033.yaml
       - pack_07/SP07-014.yaml
-      - pack_07/SP07-036.yaml
       - pack_07/SP07-037.yaml
-      - pack_07/SP07-039.yaml
       - pack_07/SP07-038.yaml
       - pack_07/SP07-040.yaml
       - pack_07/SP07-034.yaml
-  - id: landscape-architecture
-    name: 4. Landscape Architecture
-    presetRefs:
-      - pack_07/SP07-044.yaml
-      - pack_07/SP07-041.yaml
-      - pack_07/SP07-043.yaml
       - pack_07/SP07-042.yaml
       - pack_07/SP07-047.yaml
-      - pack_07/SP07-049.yaml
       - pack_07/SP07-050.yaml
-      - pack_07/SP07-045.yaml
-      - pack_07/SP07-048.yaml
       - pack_07/SP07-046.yaml
-  - id: fantasy-architecture
-    name: 5. Fantasy Architecture
-    presetRefs:
       - pack_07/SP07-060.yaml
       - pack_07/SP07-073.yaml
       - pack_07/SP07-078.yaml
@@ -89,7 +66,6 @@ categories:
       - pack_07/SP07-077.yaml
       - pack_07/SP07-075.yaml
       - pack_07/SP07-068.yaml
-      - pack_07/SP07-055.yaml
       - pack_07/SP07-072.yaml
       - pack_07/SP07-067.yaml
       - pack_07/SP07-058.yaml
@@ -98,6 +74,27 @@ categories:
       - pack_07/SP07-079.yaml
       - pack_07/SP07-063.yaml
       - pack_07/SP07-053.yaml
+  - id: historical-and-sacred-architecture
+    name: 3. Historical And Sacred Architecture
+    presetRefs:
+      - pack_07/SP07-022.yaml
+      - pack_07/SP07-009.yaml
+      - pack_07/SP07-036.yaml
+      - pack_07/SP07-039.yaml
+  - id: landscape-and-gardens
+    name: 4. Landscape And Gardens
+    presetRefs:
+      - pack_07/SP07-044.yaml
+      - pack_07/SP07-041.yaml
+      - pack_07/SP07-043.yaml
+      - pack_07/SP07-049.yaml
+      - pack_07/SP07-045.yaml
+      - pack_07/SP07-048.yaml
+      - pack_07/SP07-055.yaml
+  - id: speculative-and-concept-architecture
+    name: 5. Speculative And Concept Architecture
+    presetRefs:
+      - pack_07/SP07-023.yaml
 presetRefs:
   - pack_07/SP07-016.yaml
   - pack_07/SP07-004.yaml
@@ -111,16 +108,13 @@ presetRefs:
   - pack_07/SP07-001.yaml
   - pack_07/SP07-027.yaml
   - pack_07/SP07-021.yaml
-  - pack_07/SP07-022.yaml
   - pack_07/SP07-025.yaml
-  - pack_07/SP07-023.yaml
   - pack_07/SP07-010.yaml
   - pack_07/SP07-026.yaml
   - pack_07/SP07-006.yaml
   - pack_07/SP07-007.yaml
   - pack_07/SP07-028.yaml
   - pack_07/SP07-030.yaml
-  - pack_07/SP07-009.yaml
   - pack_07/SP07-024.yaml
   - pack_07/SP07-008.yaml
   - pack_07/SP07-029.yaml
@@ -133,21 +127,13 @@ presetRefs:
   - pack_07/SP07-015.yaml
   - pack_07/SP07-033.yaml
   - pack_07/SP07-014.yaml
-  - pack_07/SP07-036.yaml
   - pack_07/SP07-037.yaml
-  - pack_07/SP07-039.yaml
   - pack_07/SP07-038.yaml
   - pack_07/SP07-040.yaml
   - pack_07/SP07-034.yaml
-  - pack_07/SP07-044.yaml
-  - pack_07/SP07-041.yaml
-  - pack_07/SP07-043.yaml
   - pack_07/SP07-042.yaml
   - pack_07/SP07-047.yaml
-  - pack_07/SP07-049.yaml
   - pack_07/SP07-050.yaml
-  - pack_07/SP07-045.yaml
-  - pack_07/SP07-048.yaml
   - pack_07/SP07-046.yaml
   - pack_07/SP07-060.yaml
   - pack_07/SP07-073.yaml
@@ -170,7 +156,6 @@ presetRefs:
   - pack_07/SP07-077.yaml
   - pack_07/SP07-075.yaml
   - pack_07/SP07-068.yaml
-  - pack_07/SP07-055.yaml
   - pack_07/SP07-072.yaml
   - pack_07/SP07-067.yaml
   - pack_07/SP07-058.yaml
@@ -179,3 +164,15 @@ presetRefs:
   - pack_07/SP07-079.yaml
   - pack_07/SP07-063.yaml
   - pack_07/SP07-053.yaml
+  - pack_07/SP07-022.yaml
+  - pack_07/SP07-009.yaml
+  - pack_07/SP07-036.yaml
+  - pack_07/SP07-039.yaml
+  - pack_07/SP07-044.yaml
+  - pack_07/SP07-041.yaml
+  - pack_07/SP07-043.yaml
+  - pack_07/SP07-049.yaml
+  - pack_07/SP07-045.yaml
+  - pack_07/SP07-048.yaml
+  - pack_07/SP07-055.yaml
+  - pack_07/SP07-023.yaml

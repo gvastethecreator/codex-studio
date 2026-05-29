@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-028
+packId: pack_16
+name: Medieval Knight Oath
+category: 4. Samurais & Medieval
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - anime
+  - samurai-medieval
+visualDna:
+  aesthetic: Medieval anime knight in a solemn oath scene.
+  form_and_line: Ornate armor and a lineage-marked cloak.
+  color_palette: Silver, royal blue, and warm amber.
+  lighting_setup: Stained-glass light with cathedral shadows.
+  material_texture: Polished steel, carved stone, and heavy fabric.
+  render_quality: Premium-finish heroic illustration.
+  spatial_distortion: Ceremonial vertical composition.
+  atmosphere: Nobility, duty, and sacrifice.
+  key_features: Sword grounded tip-down, heraldic shield, halo-like light.
+  creative_brief: A solemn, iconic knightly oath captured in a single frame.
+avoidRules:
+  - photoreal
+  - sci-fi-ui
+  - casual-modern
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-028.webp
+attributes:
+  negativePrompt: photoreal, sci-fi-ui, casual-modern, watermark, text, logo
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: samurai-and-medieval
+  categoryName: 4. Samurais & Medieval
+  tags:
+    - anime-classics-and-prestige
+    - anime
+    - samurai-medieval
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

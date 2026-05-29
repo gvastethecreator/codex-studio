@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-057
 packId: pack_09
 name: Oil on Water
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Puddle rainbow
   form_and_line: Swirls
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Fluid
   atmosphere: Dirty but pretty
   key_features: Rainbow
+  creative_brief: Compose the liquid psychedelia of oil spreading on water, where thin-film interference paints swirling rainbows of magenta, cyan, and gold in fluid calligraphy across a dark puddle. The surface should feel both dirty and mesmerizing, the accidental beauty of a parking lot after rain revealing spectrum in pollution. Capture the strange poetry of the unwanted, grace blooming in the gutter.
 avoidRules:
   - clean water
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

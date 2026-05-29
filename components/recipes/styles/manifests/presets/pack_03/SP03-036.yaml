@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-036
 packId: pack_03
 name: Caustics
-category: 2. Lighting & Atmosphere
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Light focusing through glass/water
   form_and_line: Bright patterns
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Physically correct, optical precision
   atmosphere: Ethereal, complex, underwater magic
   key_features: Light dancing, photon mapping
+  creative_brief: Photons converge like a magnifying glass held to the sun — bright patterns dance across surfaces in shifting webs of concentrated brilliance, the signature of light bent through water or crystal. Prismatic bands separate and recombine, and every caustic net tells the story of the refractive object that cast it. The image captures underwater magic rendered with optical precision, light transformed from illumination into event.
 avoidRules:
   - diffuse
   - matte
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

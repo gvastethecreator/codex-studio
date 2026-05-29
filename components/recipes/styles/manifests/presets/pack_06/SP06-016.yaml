@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-016
 packId: pack_06
 name: Graphite Pencil
-category: 3. Drawing & Sketching
+category: 2. Drawing & Sketching
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Studious, quiet
   key_features: Graphite texture
+  creative_brief: Graphite layers build from whisper to shout through pressure alone, the hand learning form by tracing its shadow onto paper. Metallic sheen catches light at oblique angles, a secret visible only to those who lean close. The drawing breathes in grey values, a world made entirely of lead and patience.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: drawing-and-sketching
-  categoryName: 3. Drawing & Sketching
+  categoryName: 2. Drawing & Sketching
   tags:
     - essential-art-styles
     - drawing-and-sketching
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

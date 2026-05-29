@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-081
 packId: pack_01
 name: Soft Editorial Window
-category: 1. Portrait Styles
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-styles
+  - portrait-and-studio
 visualDna:
   aesthetic: Editorial fashion portrait, soft natural light, lifestyle feel
   subject_treatment: Gentle focus on eyes, smooth skin texture retention, natural hair rendering
@@ -20,6 +20,7 @@ visualDna:
   camera_and_composition: 85mm portrait lens, f/2.0, eye-level, subject off-center right, rule-of-thirds
   atmosphere_and_mood: Quiet confidence, editorial intimacy, relaxed morning light
   rendering_and_quality: Photorealistic, 8k, fine lens optics, natural chromatic aberration
+  creative_brief: Morning claims the room through glass, light draping itself across fabric and skin with the tenderness of a confession that needs no answer. Editorial distance dissolves into the intimacy of a half-held breath, quiet confidence radiating from the space between shutter and soul.
 avoidRules:
   - illustration
   - painting
@@ -41,11 +42,11 @@ assets:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-styles
-  categoryName: 1. Portrait Styles
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - portrait-styles
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

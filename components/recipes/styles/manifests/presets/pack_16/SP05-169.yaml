@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-169
+packId: pack_16
+name: Serial Experiments Lain - Wired Bedroom Dissolution
+category: 3. 90s Golden Era
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - 90s-golden-era
+visualDna:
+  aesthetic: Bedroom terminals, humming cables, thin reality, disconnected suburbia, static-lit silence, identity blur between schoolgirl life and network consciousness
+  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
+  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
+  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
+  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
+  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
+  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  atmosphere: Isolated, wired, whispery, uncanny
+  key_features: Cable clusters, CRT glow, empty suburban streets, detached gaze, static-rich digital overlays
+  creative_brief: A girl dissolving into the network, her bedroom a terminal where reality bleeds into signal and every cable hums with the static of a universe learning to speak. Suburbia outside the window is empty not because nobody is there but because everyone has already gone somewhere else inside themselves. The self becomes transmission, silence becomes data, and the question of whether you exist is answered by how many wires are plugged into you.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-169.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: 90s-golden-era
+  categoryName: 3. 90s Golden Era
+  tags:
+    - anime-classics-and-prestige
+    - 90s-golden-era
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

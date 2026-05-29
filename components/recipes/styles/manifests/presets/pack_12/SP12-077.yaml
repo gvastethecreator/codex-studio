@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-077
+packId: pack_12
+name: Basilisk Quarry Escape
+category: 8. Puzzle Chambers & Adventure Setpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - puzzle-chambers-and-adventure-setpieces
+visualDna:
+  aesthetic: Escape from a living quarry guarded by basilisks.
+  subject_treatment: Expert prisoners improvising tools.
+  color_and_tone: Limestone, toxic green, and rust red.
+  lighting_and_shadow: Partial light between cranes and dust.
+  texture_and_material: Cut rock, chains, and dry mud.
+  camera_and_composition: Ruta de fuga en zigzag ascendente.
+  atmosphere_and_mood: Strategic panic and determination.
+  rendering_and_quality: Mission setting with intense pacing.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - clean-futuristic
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-077.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: puzzle-chambers-and-adventure-setpieces
+  categoryName: 8. Puzzle Chambers & Adventure Setpieces
+  tags:
+    - video-game-originals-vault
+    - puzzle-chambers-and-adventure-setpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

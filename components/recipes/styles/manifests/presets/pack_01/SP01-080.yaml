@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-080
 packId: pack_01
 name: Passport Photo
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: ID photo
   form_and_line: Face forward
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Neutral expression
   atmosphere: Official, deadpan
   key_features: White background
+  creative_brief: The self stripped to its administrative minimum, features flattened into data by shadowless light that erases biography. Identity here is not expression but certification, the face reduced to a credential that proves existence without proving humanity.
 avoidRules:
   - smiling
   - artistic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-077
 packId: pack_10
 name: Chalkboard Art
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Smudged
   atmosphere: Casual, hand drawn
   key_features: Black background
+  creative_brief: Calcium carbonate dust pressed into slate, lines that smudge at the slightest touch. The impermanence is the point, a visual thought that knows it will be erased but commits itself to the board anyway.
 avoidRules:
   - pen
   - ink
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

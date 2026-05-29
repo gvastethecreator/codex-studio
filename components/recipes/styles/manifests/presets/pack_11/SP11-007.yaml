@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-007
 packId: pack_11
 name: Tattoo Flash (Old School)
-category: 3. Artistic Mediums
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - oddities-and-novelty
 visualDna:
   aesthetic: Traditional American tattoo design, sailor flash art, street-shop heritage, anchor-and-swallow iconography
   form_and_line: Bold black outlines, heavy contour weight, ribbony banners, coiled snakes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout
   atmosphere: Tough, classic, bold, salt-air romance, port-town grit, permanent devotion
   key_features: Pepper shading (dots), rose-and-dagger motifs, banner text, swallow silhouettes
+  creative_brief: Bold black outlines cage the color within, heavy enough to hold against time and skin and salt-air memory. Pepper shading stipples across the rose-and-dagger motifs while swallow silhouettes cut toward invisible horizons. The sailor's soul rendered in three colors and a thousand stories of distant ports, inked permanence on yellowed flash.
 avoidRules:
   - realistic
   - photo
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

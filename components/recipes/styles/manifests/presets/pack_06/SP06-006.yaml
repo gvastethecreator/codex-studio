@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-006
 packId: pack_06
 name: Encaustic (Wax)
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blurred details
   atmosphere: Mysterious, tactile
   key_features: Waxy surface
+  creative_brief: Molten beeswax traps color in amber, each layer fused by flame into a surface you want to touch. Translucent depths reveal what lies beneath, like memory visible through time. The image holds heat even when cold, a fossil of pigment suspended forever in waxen embrace.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

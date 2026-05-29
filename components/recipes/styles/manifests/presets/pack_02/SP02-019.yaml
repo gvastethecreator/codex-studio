@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-019
 packId: pack_02
 name: Soap Opera
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Daytime TV
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Soft glow, diffusion filter haze, vaseline smear
   atmosphere: Dramatic, romance, cliffhanger stare, scandalous pause
   key_features: Vaseline lens, melodramatic zoom, doorway entrance
+  creative_brief: A world seen through a veil of perfume and longing, where every glance across the room carries the weight of unspoken betrayal. Surfaces glow with an almost liquid softness, reality dissolved into yearning and spite. Time hangs suspended in the space between a revelation and the commercial break.
 avoidRules:
   - film look
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

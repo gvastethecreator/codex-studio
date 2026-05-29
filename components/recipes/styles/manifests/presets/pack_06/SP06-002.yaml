@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-002
 packId: pack_06
 name: Watercolor (Soft)
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Colors bleeding outside lines
   atmosphere: Dreamy, soft, nostalgic
   key_features: Watery texture
+  creative_brief: Pigment bleeds into water and paper becomes sky, edges dissolving where intention meets surrender. Translucency builds depth by subtraction, each wash a whispered layer that refuses to shout. The result breathes with the humidity of the moment it was made, never fully dry, always becoming.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

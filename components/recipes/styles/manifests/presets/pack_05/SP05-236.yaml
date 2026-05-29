@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: Utilitarian armored troopers, mud and rust, industrial war fatigue, scoped visor focus, practical mecha treated like military hardware rather than legend
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
   atmosphere: Gruff, tactical, muddy, exhausted
   key_features: Scoped visor iconography, utilitarian mecha detail, trench-scale staging, rust-and-mud surfaces, hard-war realism
+  creative_brief: Scopedogs squat in mud like industrial toads, machines that never asked to be mythic but earned every rust streak with blood. War is a logistics problem solved in trenches. The visor does not see glory—it sees the next hill, the next body, the next rain.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: mecha-and-cyberpunk
   categoryName: 7. Mecha & Cyberpunk
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - mecha-and-cyberpunk
   supportedTasks:
     - image_generate

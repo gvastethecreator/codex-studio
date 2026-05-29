@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-008
+packId: pack_12
+name: Holographic Grand Prix Night
+category: 5. Speed, Sport & Competitive Arenas
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+visualDna:
+  aesthetic: Futuristic racing in vertical city with holographic posters.
+  subject_treatment: Stylized anti-gravity single-seaters built for extreme speed.
+  color_and_tone: Electric blue, violet and high energy white.
+  lighting_and_shadow: Sweeping neons and dynamic light trails.
+  texture_and_material: Carbon fiber, smart glass and wet asphalt.
+  camera_and_composition: Closed curve plane with motion framing.
+  atmosphere_and_mood: Adrenaline, competition, and urban spectacle.
+  rendering_and_quality: High-impact in-game marketing shot.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - static-scene
+  - muddy-colors
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-008.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-026
 packId: pack_02
 name: Sports Broadcast
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Live game
   form_and_line: Score overlay
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Exciting, live, roaring crowd, championship tension
   key_features: Scoreboard, replay wipe, telestrator circle
+  creative_brief: The roar of thousands condenses into a single frame, a frozen heartbeat torn from the chest of the game. Grass glows with impossible green under the cathedral of stadium light, every droplet of sweat a jewel in slow motion. The scoreline hovers like a verdict waiting to be overturned.
 avoidRules:
   - movie
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

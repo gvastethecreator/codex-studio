@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-030
 packId: pack_01
 name: Telescope (Hubble)
-category: 5. Camera Types
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - camera-types
+  - portrait-and-studio
 visualDna:
   aesthetic: Deep space astrophotography
   form_and_line: Nebula clouds
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Awe-inspiring, vast
   key_features: Star field
+  creative_brief: Stellar nurseries rendered in colors no human retina has ever registered, false-chromatic hymns to distance and scale. Nebula veils draping across light-years, gas and dust sculpted by gravity into forms that feel simultaneously sacred and scientific. The cosmos photographed not as it appears but as it truly is.
 avoidRules:
   - earth
   - ground
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: camera-types
-  categoryName: 5. Camera Types
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - camera-types
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

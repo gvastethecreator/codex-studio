@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-025
 packId: pack_11
 name: Button Eye Doll
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Coraline uncanny button-eyed dollhouse fantasy, other-mother tension
   form_and_line: Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints
   atmosphere: Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for
   key_features: Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces
+  creative_brief: Four-hole buttons replace the windows to the soul, threading a line between cute and deeply wrong, cross-stitch tension pulling burlap into a grimace. Needle-hole pupils stare without blinking from a face constructed of fabric and sawdust and careful-what-you-wish-for. Handcrafted horror presses its needle into the uncanny valley where dolls watch you back with button eyes that remember.
 avoidRules:
   - human eyes
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

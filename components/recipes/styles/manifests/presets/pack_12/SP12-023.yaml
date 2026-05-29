@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-023
+packId: pack_12
+name: Orbital Garden Colony Builder
+category: 3. Sci-Fi Frontiers & Mech Zones
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+visualDna:
+  aesthetic: Colony simulation in a botanical orbital ring.
+  subject_treatment: Ecological engineers and autonomous agricultural drones.
+  color_and_tone: Vivid greens, clinical white, and space blue.
+  lighting_and_shadow: Diffused dome light with soft reflections.
+  texture_and_material: Solar panels, curved glass, and damp leaves.
+  camera_and_composition: Vista modular por sectores conectados.
+  atmosphere_and_mood: Technical optimism and sustainable growth.
+  rendering_and_quality: UI-friendly para city builder complejo.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - grimdark
+  - noisy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-023.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

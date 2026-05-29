@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-099
 packId: pack_04
 name: UI/HUD Wireframe Concept
-category: 4. Concept Art
+category: 4. Printmaking And Ink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - printmaking-and-ink
 visualDna:
   aesthetic: Game-UI-HUD-wireframe-concept, diegetic-in-world-interface-versus-non-diegetic-screen-overlay, health-bar-ammo-counter-stamina-meter-explorations, radial-menu-vs-linear-menu-comparison, minimalist-data-presentation-versus-diagetic-in-world-clues, Dead-Space-diegetic-UI-health-on-spine, minimal-screen-clutter-philosophy, player-experience-design-sketch
   form_and_line: Clean-wireframe-lines, UI-element-bounding-boxes, hierarchy-readability-strokes, flow-arrow-between-screens, wireframe-grid-alignment, consistent-padding-markers
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Screen-space-composition, diegetic-world-space-vs-screen-overlay, UI-element-hierarchy-layout, radial-vs-linear-menu-placement, safe-zone-margin-framing
   atmosphere: Functional, player-centered, information-clarity, game-design-thinking, UX-problem-solving, elegant-minimalism
   key_features: Diegetic-vs-non-diegetic-UI-comparison, wireframe-bounding-boxes, health-bar-mana-stamina-layouts, radial-menu-exploration, Dead-Space-health-on-spine-reference, screen-safe-zone, element-hierarchy-callouts
+  creative_brief: Health bars and ammo counters float in wireframe experiments, diegetic displays embedded in the character's own equipment versus menus hovering in screen-space. Radial wheels compete with linear bars in the clean language of UX sketching. This is the interface before it becomes invisible, where every pixel of player information earns its place through rigorous design argument.
 avoidRules:
   - finished
   - polished
@@ -39,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: printmaking-and-ink
+  categoryName: 4. Printmaking And Ink
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - printmaking-and-ink
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-004
+packId: pack_13
+name: Mecha Hangar Ignition
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Industrial anime mecha with monumental scale.
+  form_and_line: Technical paneling, defined mechanical lines, and a robust silhouette.
+  color_palette: Cold steel, signal orange, and deep blue.
+  lighting_setup: Focos de hangar, chispas de mantenimiento y rim duro.
+  material_texture: Brushed metal, technical grease, and visible cabling.
+  render_quality: Launch key visual with controlled detail.
+  spatial_distortion: Gran angular con profundidad de hangar.
+  atmosphere: Combat preparation and latent power.
+  key_features: Mecha scale, operators, launch energy.
+  creative_brief: A primary mecha in pre-mission ignition, with heroic presence and clear readability.
+avoidRules:
+  - photoreal
+  - toy-like
+  - lowres
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-004.webp
+attributes:
+  negativePrompt: photoreal, toy-like, lowres, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

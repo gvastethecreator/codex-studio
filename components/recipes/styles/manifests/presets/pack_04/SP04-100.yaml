@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-100
 packId: pack_04
 name: Monster Size Comparison Chart
-category: 4. Concept Art
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - childrens-and-educational
 visualDna:
   aesthetic: Monster-size-comparison-chart, human-silhouette-reference-figure-for-scale, five-creatures-in-ascending-height, diminutive-to-colossal-progression, kaiju-scale-at-the-right, real-world-object-reference-alongside, blue-whale-or-elephant-comparison-bars, Godzilla-scale-atmospheric, Monster-Hunter-size-comparison-wall-chart, sense-of-awe-through-relativity
   form_and_line: Human-silhouette at-left-for-scale-reference, size-comparison-bar-lines, creature-silhouette-building-in-complexity-as-size-increases, ground-line-baseline, height-measurement-tick-marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Horizontal-size-progression-left-to-right, human-reference-anchor-left, creature-height-doubling-each-step, background-atmospheric-fade-on-largest
   atmosphere: Awe-inspiring, humbling, human-insignificance, scale-terror-and-wonder, scientific-fascination, giant-monster-majesty, museum-education
   key_features: Human-silhouette-scale-reference, size-ascension-left-to-right, atmospheric-fade-on-giants, measurement-tick-bar, ground-line-baseline, real-object-comparison, Monster-Hunter-size-chart-language
+  creative_brief: 'A human silhouette stands at the left edge of the chart, rapidly dwarfed by creature after creature scaling upward toward the kaiju-sized colossus at the right. Reference animals anchor the comparison: elephant, blue whale, familiar giants rendered small by what comes next. This is awe engineered through proportion, where the monster''s true size is measured in how thoroughly it erases the human from the frame.'
 avoidRules:
   - single creature
   - no reference
@@ -37,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

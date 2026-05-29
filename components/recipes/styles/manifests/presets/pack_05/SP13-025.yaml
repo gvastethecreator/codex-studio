@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-025
+packId: pack_05
+name: Thunder Gauntlet Charge
+category: 3. Action
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - anime
+  - action
+visualDna:
+  aesthetic: Shonen action of unleashed electrical power.
+  form_and_line: Powerful contour and forward forward posture.
+  color_palette: Electric blue, intense white, and deep black.
+  lighting_setup: Surrounding electricity with a vibrant halo.
+  material_texture: "Sparks, smoke and metal gauntlets."
+  render_quality: Offensive transformation key frame.
+  spatial_distortion: Aggressive frontal perspective.
+  atmosphere: Fierce determination and upward momentum.
+  key_features: "Loaded fist, branched rays, firm gaze."
+  creative_brief: Electric onslaught of protagonist in strong vertical composition.
+avoidRules:
+  - photoreal
+  - dull-palette
+  - calm-scene
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-025.webp
+attributes:
+  negativePrompt: photoreal, dull-palette, calm-scene, watermark, text, logo
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 3. Action
+  tags:
+    - anime-battle-and-worlds
+    - anime
+    - action
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

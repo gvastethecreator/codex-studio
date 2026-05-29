@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-016
+packId: pack_13
+name: Battle Mage Stormcast
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Anime battle fantasy with elemental magic.
+  form_and_line: Sorceress design with cape and dynamic gesture.
+  color_palette: Storm blue, electric white, and violet.
+  lighting_setup: Magical discharges as the primary light source.
+  material_texture: Ritual fabric, glowing runes, and energy particles.
+  render_quality: High-impact combat illustration.
+  spatial_distortion: Upward perspective with enveloping energy.
+  atmosphere: Poder, urgencia y grandiosidad arcana.
+  key_features: Magic circle, central lightning bolt, dominant pose.
+  creative_brief: Spell at peak climax with strong readability and a memorable form.
+avoidRules:
+  - photoreal
+  - low-contrast
+  - muddy-fx
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-016.webp
+attributes:
+  negativePrompt: photoreal, low-contrast, muddy-fx, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

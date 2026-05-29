@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-062
+packId: pack_12
+name: Neon Koi River District
+category: 1. Neon Urban & Night Ops
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+visualDna:
+  aesthetic: Cyberpunk river district with holographic fish.
+  subject_treatment: Urban patrols and amphibious mercenaries.
+  color_and_tone: Cyan, neon pink, and deep black.
+  lighting_and_shadow: Liquid reflections and animated signage.
+  texture_and_material: Wet steel, aged wood, and glass.
+  camera_and_composition: Diagonal canals crossed by high bridges.
+  atmosphere_and_mood: Urban elegance and criminal tension.
+  rendering_and_quality: Premium open-world environment.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - medieval
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-062.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

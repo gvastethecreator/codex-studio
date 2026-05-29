@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-001
 packId: pack_06
 name: Oil Painting (Classic)
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Slightly impressionistic
   atmosphere: Timeless, expressive
   key_features: Visible brushwork
+  creative_brief: Wet pigment yields its secrets layer by layer, each stroke a conversation between hand and surface. Canvas grain catches light like a held breath, suspending a moment that should have passed but chose to stay. The image carries the weight of centuries, yet feels as immediate as paint still wet on the palette.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

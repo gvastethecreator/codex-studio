@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-049
 packId: pack_11
 name: Fast Food Commercial
-category: 1. Food & Drink
+category: 2. Food And Commercial Fun
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-drink
+  - food-and-commercial-fun
 visualDna:
   aesthetic: Burger ad, quick-service-photography, crave-engineering, food-styling trickery, drive-thru theater
   form_and_line: Perfect layers, bun-dome contour, lettuce-ruffle edge, patty-sear ring, cheese-drape curves
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly
   atmosphere: Exciting, hungry, late-night craving, drive-thru anticipation, guilty-pleasure
   key_features: Sesame seeds, cheese-pull stretch, condensation water-beads, grill-mark cross-hatch, lettuce-edge frill, patty-juice sheen
+  creative_brief: The sesame seeds were placed individually by a stylist with tweezers and unlimited patience, each seed a tiny monument to food-photography artifice. Cheese drapes in calculated cascade while condensation beads form at exactly the right angle to catch the studio backlight through the bun dome. This is not food but its Platonic ideal, engineered to trigger craving centers through the alchemy of steam and golden browning and the lie that the burger always looks this good.
 avoidRules:
   - real
   - soggy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-drink
-  categoryName: 1. Food & Drink
+  categoryId: food-and-commercial-fun
+  categoryName: 2. Food And Commercial Fun
   tags:
     - miscellaneous-and-fun
-    - food-and-drink
+    - food-and-commercial-fun
   supportedTasks:
     - image_generate
     - image_edit

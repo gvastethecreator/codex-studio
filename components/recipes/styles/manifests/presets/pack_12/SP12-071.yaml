@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-071
+packId: pack_12
+name: Verdant Metro Rebellion
+category: 1. Neon Urban & Night Ops
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+visualDna:
+  aesthetic: Eco-tech rebellion in an underground metropolitan network.
+  subject_treatment: Urban cells with advanced recycled gear.
+  color_and_tone: Neon green, concrete gray, and signal orange.
+  lighting_and_shadow: LED tubes and deep tunnel shadows.
+  texture_and_material: Artificial moss, metal, and weathered paint.
+  camera_and_composition: Central station seized by barricades.
+  atmosphere_and_mood: Political urgency and combative hope.
+  rendering_and_quality: Narrative insurgent-faction scene.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - medieval
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-071.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

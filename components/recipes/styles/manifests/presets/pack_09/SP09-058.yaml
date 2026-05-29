@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-058
 packId: pack_09
 name: Sparks
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Grinder sparks
   form_and_line: Trails
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Motion blur
   atmosphere: Intense, work
   key_features: Trajectory
+  creative_brief: Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each particle a tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the velocity. The point lights should illuminate the surrounding space in warm pulses, creating a constellation of brief fires. Capture the beauty of friction, light born from the resistance of metal against wheel.
 avoidRules:
   - fire
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

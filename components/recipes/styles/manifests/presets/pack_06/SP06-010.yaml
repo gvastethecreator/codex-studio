@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-010
 packId: pack_06
 name: Pointillism
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Forms dissolve into dots
   atmosphere: Static, shimmering
   key_features: Dot pattern
+  creative_brief: Tiny points of pure color refuse to mix on the canvas, delegating all blending to the retinal dance beyond the frame. The image comes into focus only at distance, a conspiracy between pigment and perception. Every dot is a vote cast for a reality assembled by the viewer.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

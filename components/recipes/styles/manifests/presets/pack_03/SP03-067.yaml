@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-067
 packId: pack_03
 name: Cybernetic Implant
-category: 4. Applications
+category: 1. Hard Surface And Industrial Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - hard-surface-and-industrial-cgi
 visualDna:
   aesthetic: Tech merged with body
   form_and_line: Integration lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Prosthetic
   atmosphere: Futuristic, body horror, identity tension
   key_features: Seamless blend, implant integration
+  creative_brief: 'Chrome meets skin at a seam that is neither wound nor ornament — integration lines trace the border between born and built, and LED indicators glow beneath translucent dermal layers like technology learning to blush. The bio-mech fusion renders the transition from metal to flesh with unsettling seamlessness, prosthetic forms that feel less like replacement and more like evolution. The image channels Deus Ex transhumanism: identity tension rendered in chrome and tissue, the augmented self asking where the body ends and the machine begins.'
 avoidRules:
   - flesh only
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: hard-surface-and-industrial-cgi
+  categoryName: 1. Hard Surface And Industrial Cgi
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - hard-surface-and-industrial-cgi
   supportedTasks:
     - image_generate
     - image_edit

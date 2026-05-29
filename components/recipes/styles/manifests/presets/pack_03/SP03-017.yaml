@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-017
 packId: pack_03
 name: Slime & Goo
-category: 1. Materials
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Viscous sticky fluid
   form_and_line: Stretching strands
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dripping
   atmosphere: Fun, gross, messy joy
   key_features: Drips, stretch strings
+  creative_brief: 'Viscosity becomes the protagonist — strands of neon goo stretch between surfaces like bridges of liquid light, and glossy highlights pool in the thickest parts, catching studio strobes with wet, obscene glee. The palette screams Nickelodeon excess: electric greens, hot pinks, colors that refuse to take themselves seriously. The image drips with the joy of mess, a celebration of the gloopy and the gloriously unrefined.'
 avoidRules:
   - dry
   - solid
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 1. Materials
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

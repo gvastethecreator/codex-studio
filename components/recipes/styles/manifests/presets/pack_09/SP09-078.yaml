@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-078
 packId: pack_09
 name: Solar Panel
-category: 5. Elemental & FX
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Photovoltaic cell
   form_and_line: Grid lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Modern, eco
   key_features: Grid
+  creative_brief: Summon the technological lattice of photovoltaic cells where a grid of dark blue-black glass rectangles maps the surface into modules of silent light harvesting, the anti-reflective coating creating depth that absorbs rather than returns the gaze. The thin grid lines should trace a faint geometry of efficiency across the dark field. Capture the beauty of energy infrastructure, the quiet face of the electric future.
 avoidRules:
   - window
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

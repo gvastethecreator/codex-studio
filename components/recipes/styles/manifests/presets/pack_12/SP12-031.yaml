@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-031
+packId: pack_12
+name: Astral Chess Battlefield
+category: 5. Speed, Sport & Competitive Arenas
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+visualDna:
+  aesthetic: Strategic battlefield inspired by an astral board.
+  subject_treatment: Archetypal units with strict visual hierarchy.
+  color_and_tone: Deep indigo, silver, and turquoise accents.
+  lighting_and_shadow: Uniform cosmic glow with skill focal highlights.
+  texture_and_material: Stellar marble, liquid energy, and fine metal.
+  camera_and_composition: Soft top-down view for systemic readability.
+  atmosphere_and_mood: Tactical calm and cerebral anticipation.
+  rendering_and_quality: Arte de reglas claras para strategy game.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - clutter
+  - noisy-palette
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-031.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

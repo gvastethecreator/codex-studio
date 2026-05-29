@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-014
 packId: pack_08
 name: Military Surplus
-category: 2. Historical & Fantasy
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - fashion-and-costume
-  - historical-and-fantasy
+  - subcultures
 visualDna:
   aesthetic: Tactical soldier gear, field-readiness doctrine, combat-proven silhouette
   form_and_line: Boxy, pockets, armor, MOLLE grid, plate-carrier bulk, bloused-boot taper
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Bulky silhouette
   atmosphere: Serious, dangerous, ready, operational tension, mission focus, silent professionalism
   key_features: Utility pockets, magazine pouches, patrol cap, combat boots, unit patch
+  creative_brief: Every pocket carries purpose, every strap distributes weight according to doctrine written in blood and terrain. Olive drab bleached by sun and sweat into a thousand shades of endurance, Cordura scuffed by landscapes that do not care about fashion but demand function, the silence before movement heavy with consequence.
 avoidRules:
   - bright
   - delicate
@@ -32,13 +33,14 @@ attributes:
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
-  categoryId: historical-and-fantasy
-  categoryName: 2. Historical & Fantasy
+  categoryId: subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
-    - historical-and-fantasy
+    - subcultures
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

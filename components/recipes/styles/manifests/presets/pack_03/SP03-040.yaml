@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-040
 packId: pack_03
 name: Toon Shader (Cel Shaded)
-category: 2. Lighting & Atmosphere
+category: 5. Stylized 3d
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - stylized-3d
 visualDna:
   aesthetic: Anime style 3D
   form_and_line: Black outlines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Illustrated, fun, anime energy
   key_features: Banded shading, ink-line edges
+  creative_brief: 'Shading collapses into discrete bands — no gradient softening, just the hard edge where light meets shadow like a comic panel rendered in three dimensions. Black ink lines trace every contour, and flat color regions declare themselves with the confidence of a keyframe cel. The image captures Guilty Gear''s fighting-game bravado and Zelda''s illustrated wonder: 3D geometry wearing 2D conviction, animation energy frozen into a pose that feels one frame from motion.'
 avoidRules:
   - realistic
   - gradient
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: stylized-3d
+  categoryName: 5. Stylized 3d
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - stylized-3d
   supportedTasks:
     - image_generate
     - image_edit

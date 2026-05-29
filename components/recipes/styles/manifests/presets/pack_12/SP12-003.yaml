@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-003
+packId: pack_12
+name: Desert Mech Convoy
+category: 3. Sci-Fi Frontiers & Mech Zones
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+visualDna:
+  aesthetic: Mechanized post-apocalypse on dunes and highway remains.
+  subject_treatment: Heavy-load mechs escorting armored vehicles.
+  color_and_tone: Burnt ochres, oxidized iron, and bleached skies.
+  lighting_and_shadow: Severe overhead sun with short shadows and bright dust.
+  texture_and_material: Corroded sheet metal, torn canvas and abrasive sand.
+  camera_and_composition: Side-scrolling panoramic framing with tactical readability.
+  atmosphere_and_mood: Relentless march, extreme heat, and survival.
+  rendering_and_quality: Faction illustration with stylized realism.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - oversaturated
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-003.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

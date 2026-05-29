@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-046
 packId: pack_01
 name: Street Photography
-category: 4. Genres
+category: 4. Documentary And Street
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - documentary-and-street
 visualDna:
   aesthetic: Urban candid moment
   form_and_line: Messy composition
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Motion blur
   atmosphere: Real, fleeting
   key_features: Urban context
+  creative_brief: A breath caught in the city's restless lungs, where shadow carves meaning from pavement and a passing glance becomes permanent. Grain and grit testify not to flaw but to witness, the frame stealing a truth the world was too hurried to notice. The ordinary transforms into elegy at the exact instant it stops moving.
 avoidRules:
   - posed
   - studio
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
   tags:
     - photography-and-realism
-    - genres
+    - documentary-and-street
   supportedTasks:
     - image_generate
     - image_edit

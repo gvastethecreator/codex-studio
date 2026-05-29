@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Search, X, ArrowRight, Database, Sparkles, LoaderCircle } from 'lucide-react';
+import { STYLE_DEFAULT_IMAGES, STYLE_PACK_FALLBACK_IMAGES } from '../../lib/recipeAssetCatalog';
+import { resolveStyleCatalogResultImage } from '../../lib/stylePresetVisuals';
 
 import {
   searchStylePresetCatalog,
@@ -155,79 +157,87 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           </div>
         ) : results.length > 0 ? (
           <div data-style-catalog-results className="grid grid-cols-1 gap-3 2xl:grid-cols-2">
-            {results.map((result) => (
-              <div
-                key={result.id}
-                data-style-catalog-result
-                data-style-catalog-result-id={result.id}
-                className="group flex min-w-0 gap-4 rounded-2xl border border-white/8 bg-white/[0.03] p-3 transition-colors hover:border-white/15 hover:bg-white/[0.06]"
-              >
-                <div className="relative h-24 w-18 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950">
-                  {result.defaultImage ? (
-                    <img
-                      src={result.defaultImage}
-                      alt={result.name}
-                      className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="flex size-full items-center justify-center text-zinc-600">
-                      <Sparkles size={18} />
-                    </div>
-                  )}
-                </div>
-
-                <div className="min-w-0 flex-1">
-                  <div className="flex min-w-0 items-start justify-between gap-3">
-                    <div className="min-w-0">
-                      <div className="flex min-w-0 flex-wrap items-center gap-2">
-                        <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[7px] font-black uppercase tracking-[0.2em] text-zinc-400">
-                          {result.id}
-                        </span>
-                        <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[7px] font-black uppercase tracking-[0.2em] text-zinc-400">
-                          {result.categoryName}
-                        </span>
+            {results.map((result) => {
+              const resultImage = resolveStyleCatalogResultImage({
+                presetId: result.id,
+                packId: result.packId,
+                defaultImages: STYLE_DEFAULT_IMAGES,
+                packFallbackImages: STYLE_PACK_FALLBACK_IMAGES,
+              });
+              return (
+                <div
+                  key={result.id}
+                  data-style-catalog-result
+                  data-style-catalog-result-id={result.id}
+                  className="group flex min-w-0 gap-4 rounded-2xl border border-white/8 bg-white/[0.03] p-3 transition-colors hover:border-white/15 hover:bg-white/[0.06]"
+                >
+                  <div className="relative h-24 w-18 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950">
+                    {resultImage ? (
+                      <img
+                        src={resultImage}
+                        alt={result.name}
+                        className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="flex size-full items-center justify-center text-zinc-600">
+                        <Sparkles size={18} />
                       </div>
-                      <h4 className="mt-2 truncate text-sm font-black uppercase tracking-tight text-white">
-                        {result.name}
-                      </h4>
-                      <p className="mt-1 truncate text-[10px] font-bold uppercase tracking-widest text-zinc-500">
-                        {result.packName}
-                      </p>
+                    )}
+                  </div>
+
+                  <div className="min-w-0 flex-1">
+                    <div className="flex min-w-0 items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <div className="flex min-w-0 flex-wrap items-center gap-2">
+                          <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[7px] font-black uppercase tracking-[0.2em] text-zinc-400">
+                            {result.id}
+                          </span>
+                          <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[7px] font-black uppercase tracking-[0.2em] text-zinc-400">
+                            {result.categoryName}
+                          </span>
+                        </div>
+                        <h4 className="mt-2 truncate text-sm font-black uppercase tracking-tight text-white">
+                          {result.name}
+                        </h4>
+                        <p className="mt-1 truncate text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+                          {result.packName}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="mt-3 flex flex-wrap gap-1.5">
+                      {result.tags.slice(0, 5).map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-md border border-white/8 bg-black/35 px-1.5 py-1 text-[8px] font-bold text-zinc-400"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="mt-4 flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() => onSelectPreset(result)}
+                        className="flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                      >
+                        <ArrowRight size={13} />
+                        Select
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => onApplyPreset(result)}
+                        className="flex h-9 items-center gap-2 rounded-lg border border-accent-500/30 bg-accent-500/12 px-3 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/20"
+                      >
+                        <Sparkles size={13} />
+                        Apply
+                      </button>
                     </div>
                   </div>
-
-                  <div className="mt-3 flex flex-wrap gap-1.5">
-                    {result.tags.slice(0, 5).map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-md border border-white/8 bg-black/35 px-1.5 py-1 text-[8px] font-bold text-zinc-400"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="mt-4 flex items-center gap-2">
-                    <button
-                      type="button"
-                      onClick={() => onSelectPreset(result)}
-                      className="flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
-                    >
-                      <ArrowRight size={13} />
-                      Select
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => onApplyPreset(result)}
-                      className="flex h-9 items-center gap-2 rounded-lg border border-accent-500/30 bg-accent-500/12 px-3 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/20"
-                    >
-                      <Sparkles size={13} />
-                      Apply
-                    </button>
-                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         ) : (
           <div className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-zinc-600">

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-063
 packId: pack_02
 name: Rembrandt Lighting
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Classic portrait
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Serious, art, introspective stillness, Dutch-master soul
   key_features: Triangle on cheek, one-lit-eye, dark-side mystery
+  creative_brief: A single source carves presence from void, one half of the face emerging from darkness like a thought surfacing into consciousness. The triangle of light on the cheek becomes a signature—an economy of illumination where shadow does as much storytelling as the flame that breaks it.
 avoidRules:
   - flat
   - bright
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

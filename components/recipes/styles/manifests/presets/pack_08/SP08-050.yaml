@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-050
 packId: pack_08
 name: Alien Fashion
-category: 5. Fantasy/Sci-Fi Costume
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Alien, fashion, interstellar-transit bustle, zero-g couture attitude, cosmic-terminal glamour
   key_features: Straps, body harness, cutout geometry, contrast stitching, utility ring
+  creative_brief: Orange rubber cut into geometries that have no etymology in human tailoring, body harnesses wrapping the torso in a language of straps and negative space invented by a civilization that evolved fashion before they evolved language. Clear plastic and chrome vinyl catch space-terminal light on a silhouette that makes Earth couture look like cave painting, every cutout a window onto skin that has never known terrestrial sun.
 avoidRules:
   - human clothes
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fantasy-sci-fi-costume
-  categoryName: 5. Fantasy/Sci-Fi Costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
     - fantasy-sci-fi-costume
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

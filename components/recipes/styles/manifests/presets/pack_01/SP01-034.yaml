@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-034
 packId: pack_01
 name: Neon Noir
-category: 2. Lighting
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - lighting-techniques
 visualDna:
   aesthetic: Cyberpunk city lighting
   form_and_line: Rim lights
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Cool, futuristic
   key_features: Dual color light
+  creative_brief: Rain-slicked asphalt mirrors two competing futures in dueling pink and cyan, a city that breathes synthesized light through its veins. Every surface glistens with the afterimage of neon, darkness deployed not as absence but as the canvas upon which electricity paints. The chrome-and-shadow vocabulary of tomorrow's late-night solitude.
 avoidRules:
   - daylight
   - sun
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - lighting
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

@@ -142,7 +142,14 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
           </MotionDiv>
         )}
       </AnimatePresence>
-      {isOpen && <button type="button" className="fixed inset-0 z-[-1] appearance-none border-none p-0 m-0 bg-transparent" aria-label="Close color picker" onClick={() => setIsOpen(false)} />}
+      {isOpen && (
+        <button
+          type="button"
+          className="fixed inset-0 z-[-1] appearance-none border-none p-0 m-0 bg-transparent"
+          aria-label="Close color picker"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
     </div>
   );
 };

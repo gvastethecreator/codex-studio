@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-009
 packId: pack_11
 name: Emoji 3D
-category: 3. Artistic Mediums
+category: 2. Food And Commercial Fun
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - food-and-commercial-fun
 visualDna:
   aesthetic: Glossy 3D icon, emoji communication, playful glyph, digital hieroglyph
   form_and_line: Round, smooth, pill-shaped, sphere-based, soft extrusion
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sphere based, anthropomorphic objects, simplified features, chunky proportions
   atmosphere: Happy, expressive, digital, instant communication, friendly warmth, pixel joy
   key_features: Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette
+  creative_brief: Glossy spheres of digital emotion float in a gradient world of uncomplicated joy, each squircle catching a perfect white rim-catchlight. Gradient highlights curve across the candy-shell surface, transforming simple shapes into feelings rendered in three dimensions. A universal glyph language sculpted in reflective plastic and soft-shadow warmth.
 avoidRules:
   - flat
   - 2d
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: food-and-commercial-fun
+  categoryName: 2. Food And Commercial Fun
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - food-and-commercial-fun
   supportedTasks:
     - image_generate
     - image_edit

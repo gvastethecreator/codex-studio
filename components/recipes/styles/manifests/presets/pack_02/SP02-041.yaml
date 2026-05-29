@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-041
 packId: pack_02
 name: Rotoscoping
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Posterized traced live action, A Scanner Darkly style, wobbly reality, shifting identity, digital uncanny valley
   form_and_line: Wobbly trace
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Floating shapes, paint-drift, unstable outline, image swim
   atmosphere: Surreal, trippy, identity fracture, psychological unease
   key_features: Jitter, boil, line tremble, frame-to-frame instability
+  creative_brief: Edges tremble as if the drawing is still deciding where it belongs, lines swimming across a face that cannot commit to a single identity. Patches of color float unmoored from the shapes they were meant to fill, creating a second reality that drifts just out of sync with the first. Reality becomes a suggestion, whispered and half-erased.
 avoidRules:
   - smooth
   - 3d
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

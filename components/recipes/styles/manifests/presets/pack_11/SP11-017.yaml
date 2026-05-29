@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-017
 packId: pack_11
 name: Action Figure (90s)
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Plastic hero toy, blister-pack icon, Saturday-morning warrior, molded-champion
   form_and_line: Muscle definition, heroic physique, sculpted-hero contours, punch-ready stance
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 5 points of articulation, shoulder-hip-knee hinges, swivel-neck, weapon-grip hands
   atmosphere: Exciting, play, adventure aisle, birthday-morning thrill, living-room-battle diorama
   key_features: Joints visible, thigh-swivel seams, molded-cape detail, accessory-weapon grip
+  creative_brief: Five points of articulation unlock infinite adventure on the living-room floor, the blister-pack reflection catching retail fluorescence like a hero's arrival. Injection-molded plastic holds the punch-ready stance permanently, cape frozen mid-swoop across molded shoulders. Every Saturday morning is encoded in the thigh-swivel seams and weapon-grip hands of a molded champion.
 avoidRules:
   - realistic skin
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

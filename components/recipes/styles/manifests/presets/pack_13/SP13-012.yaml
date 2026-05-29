@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-012
+packId: pack_13
+name: Retro Mecha VHS Grain
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: 90s retro mecha with stylized VHS grain.
+  form_and_line: Angular design, armor panels, and visible cockpit.
+  color_palette: Petrol blue, signal red, and warm white.
+  lighting_setup: Hard hangar light and analog flares.
+  material_texture: Grano retro, scanlines leves y cel paint.
+  render_quality: Nostalgic OVA-style frame with a modern touch.
+  spatial_distortion: Heroic framing with dramatic compression.
+  atmosphere: Nostalgia, mechanical power, and classic drama.
+  key_features: Central mecha, maintenance crew, analog vibe.
+  creative_brief: A frame that evokes classic OVAs without losing contemporary sharpness.
+avoidRules:
+  - photoreal
+  - ultra-clean-digital
+  - lowres
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-012.webp
+attributes:
+  negativePrompt: photoreal, ultra-clean-digital, lowres, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

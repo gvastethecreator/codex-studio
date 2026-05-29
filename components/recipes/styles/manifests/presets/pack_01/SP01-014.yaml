@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-014
 packId: pack_01
 name: Cinestill 800T
-category: 3. Film Stocks
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - film-and-analog-process
 visualDna:
   aesthetic: Night photography film
   form_and_line: Halation around lights
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Red halation glow
   atmosphere: Night, urban
   key_features: Red halos
+  creative_brief: The city after midnight exhales through tungsten breath, streetlights bleeding crimson coronas into cooling air. Every source of illumination becomes a wound in the darkness, tender and electric. A solitary frame suspended in the long exposure between loneliness and belonging.
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - film-stocks
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

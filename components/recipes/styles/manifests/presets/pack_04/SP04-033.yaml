@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-033
 packId: pack_04
 name: Propaganda Poster
-category: 3. Editorial & Poster
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Constructivist
   form_and_line: Bold
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic angle
   atmosphere: Strong, commanding, revolutionary urgency, mass-movement energy
   key_features: Rays, bold typography, constructivist geometry
+  creative_brief: Red strikes against cream with the force of a clenched fist, constructivist geometry marshaling form into political weapon. Low-angle heroism tilts the world upward toward inevitability. This is the image as command, where composition itself issues orders and every diagonal is a demand for action.
 avoidRules:
   - subtle
   - weak
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

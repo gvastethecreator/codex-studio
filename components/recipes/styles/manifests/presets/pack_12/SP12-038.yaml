@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-038
+packId: pack_12
+name: Iron Reef Naval Skirmish
+category: 4. Sieges, Warfronts & Last Stands
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+visualDna:
+  aesthetic: Tactical naval combat among metallic reefs.
+  subject_treatment: Fragatas ligeras y corbetas de asalto.
+  color_and_tone: Steel blue, white foam, and signal red.
+  lighting_and_shadow: Clouded sky with cold marine reflections.
+  texture_and_material: Wet plating, taut ropes, and rough water.
+  camera_and_composition: Vista amplia con rutas de flanqueo.
+  atmosphere_and_mood: Maneuvering, pressure, and maritime control.
+  rendering_and_quality: Naval map with strategic readability.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - landlocked
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-038.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-058
 packId: pack_03
 name: 3D Typography
-category: 4. Applications
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Letters made of objects
   form_and_line: Bold font
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Adobe, design, headline-striking
   atmosphere: Bold, message, visual proclamation
   key_features: Readable, letterform sculpting
+  creative_brief: 'The alphabet becomes sculpture — bold letterforms constructed from unexpected materials, each character a tiny world of physical texture and volumetric presence. Studio lighting preserves typographic readability while revealing the material truth of every serif and stem, and vibrant brand-expression hues give the message chromatic urgency. The image is a visual proclamation: a headline you could walk around, typography that demands to be touched as much as read.'
 avoidRules:
   - flat text
 assets:
@@ -29,11 +30,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

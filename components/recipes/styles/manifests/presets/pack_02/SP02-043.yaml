@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-043
 packId: pack_02
 name: Flash Animation (2000s)
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Flash-era web animation, Newgrounds style, vector crude, 2000s internet, tweened rebellion
   form_and_line: Thick vector
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Tweening, linear interpolation, shape morph, motion guide
   atmosphere: Nostalgic, simple, dial-up rebellion, forum culture, sprite humor
   key_features: Symbol reuse, stick figure, loading screen, play button
+  creative_brief: Shapes sweep across the canvas with the velocity of a dial-up connection finally completing, each tween a small rebellion against expensive production. Lime green and hot pink collide in vector fields where stick figures inherit kingdoms and loading bars double as title cards. It smells like computer lab, sounds like a modem handshake, and feels like freedom.
 avoidRules:
   - textured
   - soft
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

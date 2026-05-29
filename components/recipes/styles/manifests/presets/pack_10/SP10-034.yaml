@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Eye objects
   atmosphere: Nostalgic, wrong
   key_features: Blue sky
+  creative_brief: Childhood photographs edited into something slightly off, the familiar twisted by an intelligence that remembers incorrectly. Warmth curdles into unease, and the house you grew up in no longer recognizes you.
 avoidRules:
   - realism
   - dark
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

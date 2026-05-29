@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-029
 packId: pack_08
 name: Dark Academia
-category: 3. Subcultures
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Studious, serious, ink-and-parchment solitude, rainy-window contemplation, secret-history tension
   key_features: Glasses, wire-rim frames, worn-leather satchel, fountain pen
+  creative_brief: Tweed worn thin at the elbows from leaning over oak tables in libraries that smell of leather bindings and buried secrets. Cable-knit wool holds the warmth of a fireplace that has witnessed whispered Greek translations, oxblood leather satchel carrying fountain pens and the weight of knowledge pursued for its own sake, the uniform of those who find romance in footnotes.
 avoidRules:
   - bright
   - sport
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
     - subcultures
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

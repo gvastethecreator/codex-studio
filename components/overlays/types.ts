@@ -31,7 +31,7 @@ export interface StudioImageOverlaysProps {
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
-    options?: { force?: boolean; preventModal?: boolean },
+    options?: { force?: boolean; preventModal?: boolean; useCurrentAttachments?: boolean },
   ) => void;
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
   handleLoadRecipe: (config: ImageGenerationConfig) => void;

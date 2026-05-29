@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-057
 packId: pack_02
 name: Pinhole Camera
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Lensless photo
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Vignette, circular edge, keyhole darkening
   atmosphere: Ethereal, time, solargraph, patient observation
   key_features: Blur, no lens, oatmeal-tin camera, light-leak drama
+  creative_brief: Light admitted through the smallest aperture, gathering slowly across hours like sediment settling in still water. The resulting image is a photograph of duration itself, where movement dissolves into ghostly smears and stillness accrues improbable weight. Everything is in focus and nothing is sharp — a paradox of infinite depth rendered through the softest possible eye.
 avoidRules:
   - sharp focus
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

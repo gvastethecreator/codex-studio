@@ -1,0 +1,52 @@
+schemaVersion: 1
+id: SP05-324
+packId: pack_13
+name: Rumiko Takahashi - Elastic Rom-Com Combat
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Cheerful romantic-comedy combat with instantly readable silhouettes, slapstick martial chaos, lovable chaos of affection and argument rendered with buoyant cartoon clarity
+  form_and_line: Clean efficient contour, lively expression marks, simple comedic exaggeration
+  color_palette: Candy red, sky blue, warm peach, clean black, sunny yellow, pond green
+  lighting_setup: Bright TV-animation key, simple cel highlights, cheerful no-fuss lighting
+  material_texture: Flat cel paint feel, clean paper grain, hair-shine pops, simple clothing folds
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Elastic slapstick body movement, giant reaction heads, instant pose readability
+  atmosphere: Playful, combative, charming, lively
+  key_features: Comic motion smears, expressive yelling faces, slapstick object hits, readable silhouette humor, flirt-fight energy
+  creative_brief: Fists fly through the kitchen while romance ricochets off the ceiling in the same breath that declares eternal love and eternal war. Silhouettes stretch into comedic enormity and snap back with the precision of a well-placed punchline. Here, the heart and the fist share a single pulse, and both arrive on time.
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-324.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-character-and-lifestyle
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

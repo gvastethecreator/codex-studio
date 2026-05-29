@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-047
 packId: pack_01
 name: Landscape (Ansel Adams)
-category: 4. Genres
+category: 6. Nature And Wildlife
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - nature-and-wildlife
 visualDna:
   aesthetic: Epic nature vista
   form_and_line: Sharp f/64 focus
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Grand, timeless
   key_features: High contrast sky
+  creative_brief: The earth exhales in silver, every ridge and fissure etched by light that crossed a hundred million miles to be received by stone. Scale overwhelms the eye yet each crevice holds perfect clarity, as though the mountain demanded to be seen not as mass but as mosaic of shadow and luminous precision. Time stands still at the aperture.
 avoidRules:
   - color
   - city
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
   tags:
     - photography-and-realism
-    - genres
+    - nature-and-wildlife
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-045
 packId: pack_03
 name: Wireframe on Shaded
-category: 2. Lighting & Atmosphere
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Model with visible topology
   form_and_line: White wires over grey model
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Making-of, technical, breakdown beauty
   atmosphere: Educational, process, design-transparency
   key_features: Wire overlay, shaded+wireframe combo
+  creative_brief: 'The shaded model and its wireframe ghost occupy the same space — white edge loops trace topology across grey surfaces, a dual-pass render that reveals the skeleton dancing beneath the skin. Studio lighting gives the shaded form weight and presence, while the wire overlay insists on transparency, on showing the work. The image is breakdown beauty: the making-of as final product, process elevated to aesthetic.'
 avoidRules:
   - clean render
 assets:
@@ -29,11 +30,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

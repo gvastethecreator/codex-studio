@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-046
 packId: pack_10
 name: Paisley Pattern
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Pattern repeat
   atmosphere: Boho, intricate
   key_features: Seamless
+  creative_brief: The teardrop bends and repeats, a droplet frozen into ornament and multiplied into labyrinthine fields. Persian gardens translated into textile, each curve a memory of cypress and mango and the geometry of paradise.
 avoidRules:
   - solid color
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

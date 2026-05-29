@@ -47,6 +47,30 @@ export interface StyleBrowserRenderMeasurement {
   hiddenPresetCards: number;
 }
 
+function parseCategoryOrder(categoryName: string): number | null {
+  const match = categoryName.trim().match(/^(\d+)[.)\s-]/);
+  if (!match) return null;
+  const parsed = Number(match[1]);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function compareStyleCategoryNames(first: string, second: string) {
+  const firstOrder = parseCategoryOrder(first);
+  const secondOrder = parseCategoryOrder(second);
+
+  if (firstOrder !== null && secondOrder !== null && firstOrder !== secondOrder) {
+    return firstOrder - secondOrder;
+  }
+
+  if (firstOrder !== null && secondOrder === null) return -1;
+  if (firstOrder === null && secondOrder !== null) return 1;
+
+  return first.localeCompare(second, undefined, {
+    sensitivity: 'base',
+    numeric: true,
+  });
+}
+
 export function createStyleBrowserProcessedData({
   activePack,
   currentPackId,
@@ -110,10 +134,12 @@ export function createStyleBrowserRenderPlan({
   processedData,
   showAllStyleCategories,
 }: CreateStyleBrowserRenderPlanInput): StyleBrowserRenderPlan {
-  const styleGroupEntries = Object.entries(processedData.groups) as [
+  const styleGroupEntries = (Object.entries(processedData.groups) as [
     string,
     StyleRuntimePreset[],
-  ][];
+  ][]).sort(([firstCategory], [secondCategory]) =>
+    compareStyleCategoryNames(firstCategory, secondCategory),
+  );
   const visibleStyleGroupEntries = showAllStyleCategories
     ? styleGroupEntries
     : styleGroupEntries.slice(0, STYLE_CATEGORY_INITIAL_RENDER_LIMIT);

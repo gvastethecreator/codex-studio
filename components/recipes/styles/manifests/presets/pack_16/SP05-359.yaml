@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-359
+packId: pack_16
+name: Yuri!!! on Ice - Rink Edge Performance Ache
+category: 6. Sports, Competition & Performance
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - sports-competition-and-performance
+visualDna:
+  aesthetic: Figure-skating performance under arena spotlights, emotional choreography, blade-trace elegance, coach-athlete tension and public vulnerability rendered with icy grace
+  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
+  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
+  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
+  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
+  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
+  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
+  atmosphere: Elegant, exposed, emotional, competitive
+  key_features: Ice-rink reflections, spin posture, spotlight cones, costume shimmer, blade-trace curves
+  creative_brief: Blade traces etch fragility into ice as arena spotlights carve a cathedral of exposure around a solitary spinning figure. Every arabesque holds a lifetime of doubt and devotion balanced on the edge of public gaze.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-359.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: sports-competition-and-performance
+  categoryName: 6. Sports, Competition & Performance
+  tags:
+    - anime-classics-and-prestige
+    - sports-competition-and-performance
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

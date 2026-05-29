@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-077
 packId: pack_06
 name: Coffee Painting
-category: 4. Mixed Media
+category: 5. Mixed Media
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Fluid
   atmosphere: Cozy, rustic
   key_features: Monochrome brown
+  creative_brief: Coffee brewed strong enough to paint with leaves sepia stains on watercolor paper, the pigment organic, the process domestic. Rings from the bottom of the mug become compositional elements, accidents welcomed into the frame. The image smells faintly of morning, of kitchens, of the ritual that precedes creation.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: mixed-media
-  categoryName: 4. Mixed Media
+  categoryName: 5. Mixed Media
   tags:
     - essential-art-styles
     - mixed-media
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

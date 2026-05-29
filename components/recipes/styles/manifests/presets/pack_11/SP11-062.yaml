@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-062
 packId: pack_11
 name: Fiber/Fabric Macro
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape
   form_and_line: Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v
   atmosphere: Cozy, close, fabric-store, textile-tradition, thread-history, warp-weighted loom
   key_features: Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge
+  creative_brief: Warp crosses weft in the ancient rhythm of the loom, each thread intersection a small knot of civilization repeated ten thousand times per yard. Individual fibers twist into plies, plies into yarn, yarn into the architecture of clothing and shelter and sails that crossed oceans. The weave reveals itself only to those who lean close enough to see the textile for the forest of threads it truly is, fiber-halo fuzz catching raking light.
 avoidRules:
   - smooth
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

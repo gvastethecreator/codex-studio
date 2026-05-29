@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-075
 packId: pack_01
 name: Urbex (Urban Exploration)
-category: 4. Genres
+category: 4. Documentary And Street
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - documentary-and-street
 visualDna:
   aesthetic: Abandoned building interior
   form_and_line: Decay, peeling paint
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Lonely, post-apocalyptic
   key_features: Ruins
+  creative_brief: Dust holds its vigil in abandoned rooms where plaster peels like pages turning backward through decades of silence. Decay becomes the last living tenant, rust the slow ink rewriting what was once inhabited into what is now remembered.
 avoidRules:
   - clean
   - new
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
   tags:
     - photography-and-realism
-    - genres
+    - documentary-and-street
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-068
 packId: pack_07
 name: Cardboard Fort
-category: 5. Fantasy Architecture
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - fantasy-architecture
+  - residential-interiors
 visualDna:
   aesthetic: Box castle, appliance-box architecture, living-room fortress, recycled-carton stronghold, blanket-city
   form_and_line: Tape lines, box-flap geometry, duct-tape seams, crayon-drawn details, stacked-rectangles, cut-window squares
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sagging
   atmosphere: Imaginative, cheap, pretend-kingdom, Saturday-morning, sibling-architect, proud-builder, temporary-realm
   key_features: Tape, corrugated edges, duct tape, marker drawings, box flaps, blanket roof, crayon windows
+  creative_brief: Tape holds corrugated walls against the entropy of play, each seam a negotiation between structural ambition and the limits of adhesive. Crayon windows drawn with the conviction that a rectangle of blue is all any room needs of the sky. The fort stands in living-room twilight, a sovereignty declared in cardboard and defended with blanket artillery.
 avoidRules:
   - solid wall
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: fantasy-architecture
-  categoryName: 5. Fantasy Architecture
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - fantasy-architecture
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

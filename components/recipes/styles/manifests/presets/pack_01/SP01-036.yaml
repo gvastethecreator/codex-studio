@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-036
 packId: pack_01
 name: Split Lighting
-category: 2. Lighting
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - lighting-techniques
 visualDna:
   aesthetic: Half face in shadow
   form_and_line: Sharp transition
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Hidden side
   atmosphere: Conflict, mystery
   key_features: Half dark
+  creative_brief: The razor-thin meridian where revelation meets concealment, a face bisected by a blade of lateral light. One half declares itself while the other retreats into permanent midnight. Dual natures etched in high contrast, the unspoken hemisphere that keeps its secrets locked in darkness.
 avoidRules:
   - flat
   - fill light
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - lighting
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

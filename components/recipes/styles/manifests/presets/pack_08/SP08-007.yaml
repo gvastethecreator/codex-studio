@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-007
 packId: pack_08
 name: Goth Darkwave
-category: 3. Subcultures
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Corset waist
   atmosphere: Melancholic, dark, romantic, moonlit longing, eternal twilight, beautiful decay
   key_features: Pale skin contrast, black lipstick, silver ankh pendant, platform boots
+  creative_brief: Mourning made magnificent, every shade of black a different grief worn on crushed velvet sleeves. Silver catches candlelight across an ankh pendant as platform boots echo through cathedral stone, the corset tightening with each beat of a heart that chose darkness and found it beautiful.
 avoidRules:
   - happy
   - pink
@@ -33,7 +34,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
     - subcultures
@@ -42,3 +43,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

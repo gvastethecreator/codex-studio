@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-043
+packId: pack_12
+name: Harbor Kaiju Evacuation
+category: 1. Neon Urban & Night Ops
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+visualDna:
+  aesthetic: Urban catastrophe with a colossal creature in the harbor.
+  subject_treatment: Evacuation teams and coastal artillery.
+  color_and_tone: Storm gray, alarm red, and marine cyan.
+  lighting_and_shadow: Mixed lightning strikes and industrial fire.
+  texture_and_material: Turbulent water, concrete, and bent steel.
+  camera_and_composition: Kaiju silhouette dominating the horizon.
+  atmosphere_and_mood: Overwhelming scale and civilian survival.
+  rendering_and_quality: Cinematic keyframe for a global event.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - cute-style
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-043.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: Prophetic romance, knight armor, giant dragon mechs, red skies and courtly longing, 90s fantasy-shojo hybridity with wind-swept pageantry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
   atmosphere: Windswept, romantic, mystical, heroic
   key_features: Tarot symbolism, wind-swept capes, knight-mecha contrast, red-sky horizons, courtly emotional poses
+  creative_brief: Red skies meet wind-swept capes and a dragon mech kneels before a girl who holds the tarot deck of fate. Prophetic romance rides the jet stream between shojo heartbreak and shonen valor. Every frame is a card turned, every glance a destiny unfolding.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: isekai-and-high-fantasy
   categoryName: 8. Isekai & High Fantasy
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - isekai-and-high-fantasy
   supportedTasks:
     - image_generate

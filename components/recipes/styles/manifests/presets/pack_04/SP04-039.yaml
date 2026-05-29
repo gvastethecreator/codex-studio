@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-039
 packId: pack_04
 name: Movie Poster (Painted)
-category: 3. Editorial & Poster
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Painted adventure poster, Drew Struzan style, floating-head collage, airbrush epic, nostalgia machine
   form_and_line: Airbrush
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Floating heads
   atmosphere: Cinematic, classic, blockbuster anticipation, VHS-era magic
   key_features: Lens flare, floating-head montage, title treatment space
+  creative_brief: Floating heads assemble in montage as if summoned by the gravity of the film they advertise, each face rendered in airbrush devotion. Warm and cool light negotiate across features like the conflict that drives every story. This is the poster as promise, where a single image must contain the entire emotional arc of a two-hour dream.
 avoidRules:
   - photo collage
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

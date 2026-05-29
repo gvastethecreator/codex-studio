@@ -111,7 +111,7 @@ describe('recipeModules', () => {
       },
       output: {
         aspectRatio: '2:3',
-        imageSize: '1K',
+        imageSize: '1024x1536',
         requiresCatalogEntry: true,
       },
     });

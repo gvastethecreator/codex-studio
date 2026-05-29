@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-054
 packId: pack_09
 name: Water Splash
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: High speed liquid
   form_and_line: Droplets
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Surface tension
   atmosphere: Refreshing, dynamic
   key_features: Droplets
+  creative_brief: Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid tension, each sphere a tiny lens bending light through its crystalline transparency. Surface tension should feel stretched to its absolute limit, a moment of chaos ordered by physics into fleeting perfection. Render the sculpture of the instantaneous, a splash arrested at its most beautiful.
 avoidRules:
   - still water
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

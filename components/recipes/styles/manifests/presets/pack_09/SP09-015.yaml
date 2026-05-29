@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-015
 packId: pack_09
 name: Honeycomb Wax
-category: 1. Natural Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Bee hive
   form_and_line: Hexagons
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Melting edge
   atmosphere: Warm, busy
   key_features: Hex grid
+  creative_brief: Capture the golden geometry of beeswax hexagons, where instinct engineers perfection in translucent amber walls that glow with subsurface warmth. Light should penetrate the wax like it penetrates memory, warm and diffused, revealing the sticky sweetness held within each cell. The surface must hum with the ghost of industry, geometry sweetened by purpose.
 avoidRules:
   - plastic
   - dry
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - natural-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

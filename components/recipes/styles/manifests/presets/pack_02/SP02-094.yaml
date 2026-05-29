@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-094
 packId: pack_02
 name: Kindergarten Family Portrait
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Five-year-old's family drawing, stick-figure mom with triangle dress, dad as tallest line with glasses-circles, siblings in descending height order, giant yellow sun with rays in top corner, house as square-with-triangle-roof, flowers as lollipop-circles on green-line stems, ground as single green stripe across bottom, sky as blue stripe across top, pure childhood-art vocabulary
   form_and_line: Heavy crayon pressure, uncertain wobbly circles, coloring-outside-the-lines chaos, multiple-passes-over-same-spot, fat-finger grip thickness
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Ground-line at page bottom, sky-stripe at page top, family in height-order line, house bigger than people, sun sized like pizza
   atmosphere: Pure innocence, unconditional love, proud-artist joy, childhood-wonder, mom-will-love-this confidence
   key_features: Triangle-dress mom, stick-figure family, corner-sun with rays, square-triangle house, lollipop flowers, ground-line-sky-stripe
+  creative_brief: The sun lives in the corner of the page and love occupies every other inch, shapes wobbling with the certainty of a hand that has never learned to doubt itself. Hierarchies of height and dress tell the story of belonging, each figure placed with devotional care. A truth too pure for correction, rendered in the language of refrigerator galleries everywhere.
 avoidRules:
   - realistic
   - proportional
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

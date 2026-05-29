@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-009
 packId: pack_04
 name: Underground Comix
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: Underground comix crosshatching, R. Crumb style, obsessive ink, counterculture texture, raw id
   form_and_line: Crosshatching, wobble
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grotesque
   atmosphere: Subversive, weird, countercultural absurdism, satirical bite
   key_features: Dense detail, obsessive crosshatching, wobbling panel borders
+  creative_brief: Ink builds in dense crosshatched thickets, every stroke an obsessive confession dragged from the id. The paper sweats counterculture, wobbling panel borders refusing the tyranny of the straight edge. This is drawing as exorcism, the hand moving faster than propriety can stop it.
 avoidRules:
   - clean
   - mainstream
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

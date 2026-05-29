@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-004
 packId: pack_06
 name: Gouache (Flat)
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simplified forms
   atmosphere: Playful, graphic
   key_features: Matte opacity
+  creative_brief: Velvet-matte pigment absorbs light instead of reflecting it, creating a surface that feels like silence. Crisp edges meet chalky depth in a negotiation between graphic clarity and painterly substance. The result is design that remembers the hand, precision softened by pigment.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-065
 packId: pack_09
 name: Tar
-category: 5. Elemental & FX
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Sticky black goo
   form_and_line: Thick drips
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Slow flow
   atmosphere: Heavy, sticky
   key_features: Thick
+  creative_brief: Summon the slow gravity of thick tar oozing in glossy black drips of endless viscosity, a liquid that seems to forget it should flow but moves anyway, heavy with its own darkness. The surface should catch highlights like dark mirrors, depth without reflection, thick bodies catching light at their rounded crests. Capture the aesthetics of heaviness, the material that time forgot to finish.
 avoidRules:
   - water
   - oil
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

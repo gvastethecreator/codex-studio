@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flow
   atmosphere: Creative, messy
   key_features: Cells
+  creative_brief: Colors collide in slow motion, cells forming and breaking like miniature geology. The pour is a controlled accident, a negotiation between gravity's pull and pigment's will.
 avoidRules:
   - brush strokes
 assets:
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

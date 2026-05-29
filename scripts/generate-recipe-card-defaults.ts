@@ -48,6 +48,18 @@ GLOBAL ART DIRECTION:
 - No realistic UI, no labels, no typography, no watermark.
 `.trim();
 
+const VERSATILITY_BLOCK = `
+VERSATILITY RULES (IMPORTANT):
+- Keep the visual language consistent, but allow subject variety: human figure, object cluster, or environment focal point.
+- Pick ONE clear composition archetype per image:
+  1) Hero-centric (single dominant subject),
+  2) Scene-centric (environment tells the story),
+  3) System-centric (modular layout with clear parts).
+- Prioritize instant readability at thumbnail size using silhouette, scale contrast, and negative space.
+- Build a subtle visual narrative (before/after tension, progression cue, or implied action) without text.
+- Keep forms editable-friendly for future paintover: clean edges, uncluttered hierarchy, no micro-detail noise.
+`.trim();
+
 const RECIPE_CARDS: RecipeCardDef[] = [
   {
     id: 'styles',
@@ -62,9 +74,12 @@ ROLE: style transfer preset browser cover
 ${ILLUSTRATION_STYLE_BLOCK}
 CARD COLOR: purple
 
-Create one simple editorial portrait illustration.
-Show one striking adult subject in a clean fashion-forward pose, with a strong silhouette and a few graphic surrounding shapes that suggest style experimentation.
-Keep it minimal and elegant, like a design poster for aesthetic transformation.
+Create one editorial illustration that communicates style exploration and aesthetic transformation.
+Prefer a hero-centric composition, but you may use a scene-centric setup if readability improves.
+Include one dominant focal element (person or mannequin-like form) and a few controlled graphic motifs that suggest experimentation (shape overlays, framing planes, stylistic echoes).
+Keep it minimal, elegant, and unmistakably card-friendly.
+
+${VERSATILITY_BLOCK}
 
 Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
@@ -83,10 +98,12 @@ ROLE: image restoration and enhancement cover
 ${ILLUSTRATION_STYLE_BLOCK}
 CARD COLOR: amber
 
-Create one simple archival portrait illustration with visible age and restoration potential: faint dust, scratches, paper wear, and slight damage, but still a clearly readable human subject.
-The scene should suggest restoration and enhancement without using a before/after split.
+Create one archival illustration with visible age and restoration potential: faint dust, scratches, paper wear, and slight damage, while preserving a clear readable focal subject.
+The scene should imply restoration and enhancement without any explicit split-screen.
 Avoid a split before/after layout; this must remain one unified image.
 Favor a timeless printed-poster mood with restrained damage cues.
+
+${VERSATILITY_BLOCK}
 
 Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
@@ -104,9 +121,11 @@ ROLE: virtual camera guidance cover
 ${ILLUSTRATION_STYLE_BLOCK}
 CARD COLOR: cyan
 
-Create a visually clear illustrated subject designed for alternate camera-angle exploration.
-Show one human figure or mannequin-like subject in a simple studio setup with a few graphic depth planes that make orbit, elevation, and zoom changes feel plausible.
-Favor spatial clarity and readable perspective over decorative clutter.
+Create a visually clear camera-study illustration designed for alternate angle exploration.
+Show one focal subject in a simple setup with explicit depth planes and perspective anchors that suggest orbit, elevation, and zoom possibilities.
+Favor spatial logic, parallax readability, and stable geometry over decoration.
+
+${VERSATILITY_BLOCK}
 
 Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
@@ -125,10 +144,12 @@ ROLE: storyboard contact sheet cover
 ${ILLUSTRATION_STYLE_BLOCK}
 CARD COLOR: rose
 
-Create a simple vertical storyboard contact sheet made of three or four cinematic panels.
-All panels should belong to the same scene with continuity of main character and location.
-Use minimal film-language cues: strong blocking, simple shadows, and clear narrative progression.
-This should feel like a clean storyboard board, not a detailed comic page.
+Create a vertical storyboard contact sheet made of three or four cinematic panels.
+All panels must belong to the same scene with continuity of character, space, and action beat.
+Use clear blocking, lens-feel variation, and narrative progression with minimal visual noise.
+This should read like a clean storyboard board, not a comic page.
+
+${VERSATILITY_BLOCK}
 
 Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no interface overlays.`.trim(),
@@ -147,10 +168,12 @@ ROLE: temporal extrapolation cover
 ${ILLUSTRATION_STYLE_BLOCK}
 CARD COLOR: teal
 
-Create a vertical triptych of the same illustrated scene across three closely related moments in time.
-Show one central character in a clear situation where cause and effect are easy to imagine, with subtle pose and mood changes across the three beats.
-The scene should read as previous moment, anchor moment, next moment without any labels.
-Keep the environment consistent while the action and mood progress subtly between frames.
+Create a vertical triptych of the same scene across three closely related moments in time.
+Show one clear situation with visible cause-and-effect progression through pose, spacing, and environmental cue changes.
+The sequence should read as previous moment, anchor moment, next moment without labels.
+Keep environment continuity strong while action and mood evolve subtly.
+
+${VERSATILITY_BLOCK}
 
 Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
@@ -169,11 +192,13 @@ ROLE: game asset sheet cover
 ${ILLUSTRATION_STYLE_BLOCK}
 CARD COLOR: emerald
 
-Create a simple vertical sprite sheet concept for a single original game character.
-Use a clean grid layout with a few cells showing consistent poses or action states of the same stylized character.
-The character should have a strong readable silhouette, bold costume shapes, game-ready proportions, and a palette that remains consistent across cells.
-Make it feel like a clean game-art planning sheet with minimal detail.
-Use a quiet neutral sheet background that keeps the cells easy to read.
+Create a vertical sprite-sheet concept for one original game character.
+Use a clean grid layout with a few cells showing consistent action states from the same design language.
+Preserve silhouette consistency, proportion stability, and palette discipline across cells.
+It should feel like a production-ready planning sheet with minimal but decisive detail.
+Use a neutral sheet background that keeps every cell readable.
+
+${VERSATILITY_BLOCK}
 
 Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI.`.trim(),
@@ -192,10 +217,12 @@ ROLE: character sheet designer cover
 ${ILLUSTRATION_STYLE_BLOCK}
 CARD COLOR: indigo
 
-Create a simple character design sheet for one original protagonist.
-Show a clean turnaround-oriented presentation with multiple consistent views of the same character, plus one closer portrait or expression panel.
-The design should feel clear and organized, with coherent costume language and readable anatomy.
-Favor a calm entertainment-design poster look.
+Create a character-design sheet for one original protagonist.
+Show a turnaround-oriented presentation with multiple consistent views, plus one closer portrait or expression panel.
+Maintain coherent costume language, shape grammar, and anatomy readability.
+Favor a calm but premium entertainment-design poster aesthetic.
+
+${VERSATILITY_BLOCK}
 
 Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 No text, no logos, no watermark, no UI labels.`.trim(),

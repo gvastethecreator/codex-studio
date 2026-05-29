@@ -102,4 +102,45 @@ describe('styleBrowserRenderPlan', () => {
       plannedPresetCards: 2,
     });
   });
+
+  it('orders numbered subcategories naturally before slicing visible groups', () => {
+    const presets = [
+      preset('a-1', '10. Last'),
+      preset('a-2', '2. Second'),
+      preset('a-3', '1. First'),
+      preset('a-4', '3. Third'),
+      preset('a-5', 'Zeta'),
+    ];
+
+    const processedData = createStyleBrowserProcessedData({
+      activePack: pack(presets),
+      currentPackId: 'pack_01',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      favoriteIds: [],
+      searchQuery: '',
+      sortOrder: 'az',
+      showFavoritesOnly: false,
+    });
+
+    const renderPlan = createStyleBrowserRenderPlan({
+      processedData,
+      showAllStyleCategories: false,
+    });
+
+    expect(renderPlan.styleGroupEntries.map(([category]) => category)).toEqual([
+      '1. First',
+      '2. Second',
+      '3. Third',
+      '10. Last',
+      'Zeta',
+    ]);
+
+    expect(renderPlan.visibleStyleGroupEntries.map(([category]) => category)).toEqual([
+      '1. First',
+      '2. Second',
+      '3. Third',
+      '10. Last',
+    ]);
+  });
 });

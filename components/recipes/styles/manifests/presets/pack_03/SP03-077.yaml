@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-077
 packId: pack_03
 name: Lego Brick-Built 3D
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Built from toy bricks, Lego world, snap-together reality, stud-and-tube logic
   form_and_line: Studs
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Brick steps
   atmosphere: Playful, constructive, brick-by-brick magic
   key_features: Studs on top, clutch power
+  creative_brief: 'Studs rise from every surface like braille for the fingers — plastic primary colors snap together with clutch-power logic, and ABS material catches animated-film lighting with the gloss of molded polymer. Brick-stepped curves approximate what smooth geometry would achieve, and visible seams between elements celebrate the constructive constraint rather than hiding it. The image is Lego Movie energy: a world built brick by brick where everything is indeed awesome, every stud a tiny declaration of snap-together possibility.'
 avoidRules:
   - smooth
   - melted
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

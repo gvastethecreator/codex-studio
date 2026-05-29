@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-001
 packId: pack_01
 name: Studio Headshot
-category: 1. Portrait Styles
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-styles
+  - portrait-and-studio
 visualDna:
   aesthetic: High-end professional studio headshot photography, corporate portraiture, clean and polished look
   subject_treatment: Tack-sharp focus on the eyes and facial features, precise edge definition, natural proportions
@@ -20,6 +20,7 @@ visualDna:
   camera_and_composition: Shot on 85mm or 105mm portrait lens, flat field of view, undistorted perspective, centered composition
   atmosphere_and_mood: Professional, confident, approachable, clean, formal
   rendering_and_quality: 8k resolution, commercial photography standard, flawless retouching, photorealistic
+  creative_brief: The portrait radiates quiet authority and approachability, as if captured in the brief moment between expressions where authenticity lives. Light wraps the subject with deliberate precision, sculpting form while preserving the subtle imperfections that make a face unforgettable. Every texture tells a story—the weave of fabric, the grain of skin, the sparkle in an eye that holds the viewer's gaze.
 avoidRules:
   - illustration
   - painting
@@ -43,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-styles
-  categoryName: 1. Portrait Styles
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - portrait-styles
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

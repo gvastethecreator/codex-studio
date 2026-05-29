@@ -3,8 +3,8 @@ id: pack_02
 name: Cinematic & Media
 description: A collection of 80+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.
 categories:
-  - id: film-genres
-    name: 1. Film Genres
+  - id: cinematic-lighting-and-lenses
+    name: 1. Cinematic Lighting And Lenses
     presetRefs:
       - pack_02/SP02-013.yaml
       - pack_02/SP02-005.yaml
@@ -22,9 +22,6 @@ categories:
       - pack_02/SP02-011.yaml
       - pack_02/SP02-004.yaml
       - pack_02/SP02-006.yaml
-  - id: tv-and-broadcast
-    name: 2. TV & Broadcast
-    presetRefs:
       - pack_02/SP02-019.yaml
       - pack_02/SP02-017.yaml
       - pack_02/SP02-018.yaml
@@ -39,9 +36,6 @@ categories:
       - pack_02/SP02-023.yaml
       - pack_02/SP02-024.yaml
       - pack_02/SP02-027.yaml
-  - id: animation-styles
-    name: 3. Animation Styles
-    presetRefs:
       - pack_02/SP02-032.yaml
       - pack_02/SP02-031.yaml
       - pack_02/SP02-033.yaml
@@ -57,9 +51,6 @@ categories:
       - pack_02/SP02-040.yaml
       - pack_02/SP02-043.yaml
       - pack_02/SP02-045.yaml
-  - id: lighting-and-atmosphere
-    name: 4. Lighting & Atmosphere
-    presetRefs:
       - pack_02/SP02-063.yaml
       - pack_02/SP02-070.yaml
       - pack_02/SP02-079.yaml
@@ -80,9 +71,6 @@ categories:
       - pack_02/SP02-075.yaml
       - pack_02/SP02-068.yaml
       - pack_02/SP02-073.yaml
-  - id: photography-eras
-    name: 5. Photography Eras
-    presetRefs:
       - pack_02/SP02-046.yaml
       - pack_02/SP02-049.yaml
       - pack_02/SP02-047.yaml
@@ -98,15 +86,11 @@ categories:
       - pack_02/SP02-054.yaml
       - pack_02/SP02-059.yaml
       - pack_02/SP02-058.yaml
-  - id: caricature-and-cartoon-styles
-    name: 6. Caricature & Cartoon Styles
-    presetRefs:
       - pack_02/SP02-095.yaml
       - pack_02/SP02-110.yaml
       - pack_02/SP02-111.yaml
       - pack_02/SP02-112.yaml
       - pack_02/SP02-113.yaml
-      - pack_02/SP02-115.yaml
       - pack_02/SP02-116.yaml
       - pack_02/SP02-117.yaml
       - pack_02/SP02-118.yaml
@@ -141,6 +125,10 @@ categories:
       - pack_02/SP02-081.yaml
       - pack_02/SP02-098.yaml
       - pack_02/SP02-085.yaml
+  - id: broadcast-and-tv-look
+    name: 3. Broadcast And Tv Look
+    presetRefs:
+      - pack_02/SP02-115.yaml
 presetRefs:
   - pack_02/SP02-013.yaml
   - pack_02/SP02-005.yaml
@@ -227,7 +215,6 @@ presetRefs:
   - pack_02/SP02-111.yaml
   - pack_02/SP02-112.yaml
   - pack_02/SP02-113.yaml
-  - pack_02/SP02-115.yaml
   - pack_02/SP02-116.yaml
   - pack_02/SP02-117.yaml
   - pack_02/SP02-118.yaml
@@ -262,3 +249,4 @@ presetRefs:
   - pack_02/SP02-081.yaml
   - pack_02/SP02-098.yaml
   - pack_02/SP02-085.yaml
+  - pack_02/SP02-115.yaml

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-047
 packId: pack_09
 name: Fur (Synthetic)
-category: 3. Tactile Surfaces
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - tactile-surfaces
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Faux fur coat
   form_and_line: Uniform strands
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Trendy, soft
   key_features: Uniform length
+  creative_brief: Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand is a manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals the artifice. The density should invite the hand while the perfect regularity declares its synthetic nature. Capture the beauty of the proudly fake, comfort manufactured in Technicolor.
 avoidRules:
   - real fur
   - skin
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: tactile-surfaces
-  categoryName: 3. Tactile Surfaces
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - tactile-surfaces
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

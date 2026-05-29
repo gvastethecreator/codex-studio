@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-189
+packId: pack_13
+name: Orange - Sunset Regret Letter Drama
+category: 4. Shojo, Magical Girl & Visionary Classics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - shojo-magical-girl-and-visionary-classics
+visualDna:
+  aesthetic: Time-bending school romance, sunset sports fields, letters from the future, emotional caution and missed chances, warm orange light carrying quiet grief
+  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
+  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
+  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
+  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
+  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
+  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  atmosphere: Regretful, warm, hopeful, bittersweet
+  key_features: Letter motifs, sunset field backdrops, teen ensemble tenderness, time-memory framing, restrained confession scenes
+  creative_brief: Sunset is not the end of light but the beginning of memory, orange bleeding into every regret like a letter too late to deliver. Sports fields hold the echo of moments that could have bent differently. Time folds here, and a message from the future arrives as softly as a hand that should have been held.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-189.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: shojo-magical-girl-and-visionary-classics
+  categoryName: 4. Shojo, Magical Girl & Visionary Classics
+  tags:
+    - anime-character-and-lifestyle
+    - shojo-magical-girl-and-visionary-classics
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

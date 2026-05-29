@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-004
+packId: pack_14
+name: Warden of Glass Thorns
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Dark warden with lethal crystal botany.
+  form_and_line: Slender armor, translucent thorns, and a regal silhouette.
+  color_palette: Petrol green, smoked crystal, and cold silver.
+  lighting_setup: Glow interno en espinas y rim glacial.
+  material_texture: Fractal glass, fine metal, and nocturnal garden mist.
+  render_quality: Refined concept art with unmistakable personality.
+  spatial_distortion: Layered labyrinthine garden depth.
+  atmosphere: Refined menace, mystery, and vigilance.
+  key_features: Crystal thorn crown, dark garden, severe stance.
+  creative_brief: A cursed greenhouse warden—beautiful and highly dangerous.
+avoidRules: [photoreal, cartoonish, low-detail, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-004.webp }
+attributes:
+  negativePrompt: photoreal, cartoonish, low-detail, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

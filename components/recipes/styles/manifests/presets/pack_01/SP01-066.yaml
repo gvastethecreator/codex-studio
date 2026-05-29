@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-066
 packId: pack_01
 name: Automotive Photography
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Car commercial
   form_and_line: Sleek curves
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Motion blur wheels
   atmosphere: Fast, powerful
   key_features: Car isolated
+  creative_brief: Sleek metal tears through stillness, motion blur bleeding into geometry as horsepower becomes sculpture. The machine is not driven but summoned into existence, every reflection a promise of velocity barely contained.
 avoidRules:
   - dirty
   - stationary
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

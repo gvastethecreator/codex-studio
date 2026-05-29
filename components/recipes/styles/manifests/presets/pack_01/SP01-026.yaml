@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-026
 packId: pack_01
 name: Pinhole Camera
-category: 5. Camera Types
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - camera-types
+  - lighting-techniques
 visualDna:
   aesthetic: Lensless photography
   form_and_line: Soft everywhere
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Infinite depth of field (soft)
   atmosphere: Surreal, time passing
   key_features: Soft focus
+  creative_brief: Vision stripped of optics, where light seeps through a needle's wound and time pools on the surface. Edges dissolve into dreaming, the world seen as if through memory rather than glass. Every frame exhales the patience of a long exposure, moments bleeding into one another like watercolor on wet paper.
 avoidRules:
   - sharp
   - lens flare
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: camera-types
-  categoryName: 5. Camera Types
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - camera-types
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

@@ -84,7 +84,9 @@ export function createSessionPool({
   function savePersistedImagegenSessions(sessions: Map<string, PersistedImagegenSession>) {
     const imagegenSessionRegistryPath = getImagegenSessionRegistryPath();
     mkdirSync(path.dirname(imagegenSessionRegistryPath), { recursive: true });
-    const entries = Array.from(sessions.values()).toSorted((a, b) => a.sessionKey.localeCompare(b.sessionKey));
+    const entries = Array.from(sessions.values()).toSorted((a, b) =>
+      a.sessionKey.localeCompare(b.sessionKey),
+    );
     writeFileSync(imagegenSessionRegistryPath, `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
   }
 

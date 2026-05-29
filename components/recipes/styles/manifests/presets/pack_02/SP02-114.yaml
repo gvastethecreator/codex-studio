@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-114
 packId: pack_02
 name: Dr. Katz - Squigglevision Therapy Doodle
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Loose vibrating linework, therapist-office stand-up confessional, conversational minimalism, squigglevision jitter, low-key absurd adult animation, every contour trembling with mild neurosis
   form_and_line: Persistent squigglevision contour drift, shaky loose lines, conversation-first staging, gentle hand-tremor energy
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Talky, neurotic, understated, wry
   key_features: Constant line jitter, simple office staging, conversational framing, minimal backgrounds, anxious contour vibration
+  creative_brief: Every outline hums with the tremor of a held breath, lines refusing to settle as if the act of being seen provokes perpetual vibration. The couch confessional becomes a diagram of unease, where truth slips out between the jittering contours.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

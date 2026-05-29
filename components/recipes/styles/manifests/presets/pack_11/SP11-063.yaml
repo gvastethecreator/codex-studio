@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-063
 packId: pack_11
 name: Rust/Decay Macro
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty
   form_and_line: Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau
   atmosphere: Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay
   key_features: Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network, peeling-edge curls, bubbled-paint texture
+  creative_brief: Iron oxide blooms across the paint surface in continents of orange corrosion, pushing up blisters that will eventually crack and fall away into the entropy of forgotten corners. The flaking edge catches raking side-light, revealing layer after layer of pigment and primer and the metal beneath, each stratum a chapter in the slow-motion story of abandonment. Entropy works slowly here, painting its own wabi-sabi masterpiece over the one that came before, every rust stain a sundial.
 avoidRules:
   - clean
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

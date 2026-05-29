@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-043
 packId: pack_09
 name: Slime/Goo
-category: 3. Tactile Surfaces
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - tactile-surfaces
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Nickelodeon slime
   form_and_line: Drips
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Melting
   atmosphere: Playful, sticky
   key_features: Drips
+  creative_brief: Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface tension pulls the liquid into glossy drips and stretched membranes that catch wet highlights at every curve. The goo should feel simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color. Capture the aesthetics of controlled mess, the sublime in the sticky and absurd.
 avoidRules:
   - solid
   - dry
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: tactile-surfaces
-  categoryName: 3. Tactile Surfaces
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - tactile-surfaces
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

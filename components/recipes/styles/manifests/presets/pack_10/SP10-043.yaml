@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Skeleton
   atmosphere: Hopeless, grand
   key_features: Fog
+  creative_brief: Ruined cathedrals tower over landscapes that have forgotten hope, every stone weighed down by centuries of myth. Beauty persists in the wreckage, fiercer and more precious for the darkness that surrounds it.
 avoidRules:
   - happy
   - bright
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

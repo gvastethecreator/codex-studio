@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-036
 packId: pack_11
 name: Vaporwave
-category: 4. Aesthetics
+category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - retro-pop-and-kitsch
 visualDna:
   aesthetic: 90s internet nostalgia, dead-mall surrealism, dial-up dream, corporate-abandoned utopia
   form_and_line: Glitch art, datamosh edge, pixel-sort stripe, RGB-shift fringe, compression-artifact contour
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Statue busts, Greco-Roman kitsch, floating-column fragments, checkerboard-plane floor
   atmosphere: Chill, surreal, ironic, forgotten-future, elevator-music eternity, digital-liminal space
   key_features: Palm trees, Fiji-water bottle, Arizona-iced-tea, checkerboard-tile floor, sunset-gradient sky, helios-bust placeholder
+  creative_brief: A marble bust of Helios drifts through pixel-sorted skies above a dead mall's checkerboard floor, Roman kitsch meeting Windows 95 chrome. Fiji water bottles and Arizona iced tea stand as still-life objects in an abandoned food court where the background music never stopped playing. The future we were promised sits in liminal pastel eternity, broken-Internet poetry rendered at dial-up speed forever.
 avoidRules:
   - serious
   - dark
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: retro-pop-and-kitsch
+  categoryName: 4. Retro Pop And Kitsch
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - retro-pop-and-kitsch
   supportedTasks:
     - image_generate
     - image_edit

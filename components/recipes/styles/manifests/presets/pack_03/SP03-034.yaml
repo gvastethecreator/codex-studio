@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-034
 packId: pack_03
 name: Studio Lighting (3 Point)
-category: 2. Lighting & Atmosphere
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Perfect product/portrait
   form_and_line: Key, Fill, Rim
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Commercial, professional, portrait-ready
   atmosphere: Professional, polished confidence
   key_features: Rim light, three-point separation
+  creative_brief: Three lights work in concert — the key carves form from shadow, the fill softens the dark side without erasing mystery, and the rim traces a hairline of brilliance that separates subject from background with surgical precision. Broadcast-safe balance holds every tone within gamut, and the controlled triangle of illumination leaves nothing to chance. The image radiates professional confidence, a portrait or product so perfectly lit it feels inevitable.
 avoidRules:
   - flat
   - outdoor
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

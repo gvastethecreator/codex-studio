@@ -2,6 +2,10 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import { prepareStudioGenerationRequest } from '../lib/studioGenerationRequest';
+import {
+  buildGenerateOverridesWithCurrentAttachments,
+  buildRecipeRestoreConfig,
+} from './useStudioGenerationActions';
 
 describe('prepareStudioGenerationRequest', () => {
   it('keeps queued attachment copies and preserves the composer attachment state', () => {
@@ -136,5 +140,74 @@ describe('prepareStudioGenerationRequest', () => {
       ok: false,
       message: 'Type a prompt before generating',
     });
+  });
+});
+
+describe('useStudioGenerationActions attachment reuse helpers', () => {
+  it('replaces stale regenerate attachments with the current composer attachments', () => {
+    const currentAttachment = {
+      id: 'current-ref',
+      name: 'current.png',
+      dataUrl: 'data:image/png;base64,CURRENT',
+      strength: 0.25,
+    };
+    const currentAttachments = [currentAttachment];
+
+    const overrides = buildGenerateOverridesWithCurrentAttachments(
+      {
+        prompt: 'reuse config',
+        attachments: [
+          {
+            id: 'stale-ref',
+            name: 'stale.png',
+            dataUrl: 'data:image/png;base64,STALE',
+            strength: 0.9,
+          },
+        ],
+      },
+      currentAttachments,
+    );
+
+    expect(overrides).toEqual({
+      prompt: 'reuse config',
+      attachments: [currentAttachment],
+    });
+    expect(overrides?.attachments).not.toBe(currentAttachments);
+
+    currentAttachment.strength = 0.8;
+    expect(overrides?.attachments?.[0]?.strength).toBe(0.25);
+  });
+
+  it('preserves current composer attachments when loading a saved recipe config', () => {
+    const currentAttachment = {
+      id: 'live-ref',
+      name: 'live.png',
+      dataUrl: 'data:image/png;base64,LIVE',
+      strength: 0.4,
+    };
+    const currentAttachments = [currentAttachment];
+
+    const restoredConfig = buildRecipeRestoreConfig(
+      {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'saved recipe',
+        recipeId: 'styles',
+        attachments: [
+          {
+            id: 'old-ref',
+            name: 'old.png',
+            dataUrl: 'data:image/png;base64,OLD',
+            strength: 0.95,
+          },
+        ],
+      },
+      currentAttachments,
+    );
+
+    expect(restoredConfig.attachments).toEqual([currentAttachment]);
+    expect(restoredConfig.attachments).not.toBe(currentAttachments);
+
+    currentAttachment.strength = 0.7;
+    expect(restoredConfig.attachments[0]?.strength).toBe(0.4);
   });
 });

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-059
 packId: pack_09
 name: Soap Bubbles
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Floating spheres
   form_and_line: Thin film
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sphere
   atmosphere: Light, fun
   key_features: Transparency
+  creative_brief: Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like miniature weather systems on liquid planets, transparency layering reality behind shifting curtains of spectral color. Each sphere should catch the world in convex miniature while its surface shimmers with approaching dissolution. Render the poetics of the temporary, geometry that lives only to catch light before it pops.
 avoidRules:
   - plastic ball
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

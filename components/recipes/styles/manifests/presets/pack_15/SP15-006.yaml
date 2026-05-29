@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-006
+packId: pack_15
+name: Seed Vault Festival
+category: 1. Solarpunk Dreamscapes
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+visualDna:
+  aesthetic: Community celebration centered on preserved biodiversity.
+  form_and_line: Organic pennants, living architecture, and gently moving figures.
+  color_palette: Flower yellow, bright green, and warm coral.
+  lighting_setup: Tarde festiva con glow dorado amable.
+  material_texture: Light fabric, exposed seeds, and polished wood.
+  render_quality: Celebration image rich in detail yet well organized.
+  spatial_distortion: Circular plaza with a vegetal vault in the background.
+  atmosphere: Gratitude, abundance, and a shared future.
+  key_features: Botanical vault, community table, living decor.
+  creative_brief: A festival that makes the joy of conserving and sharing resources feel tangible.
+avoidRules: [photoreal, bleak, techno-cold, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-006.webp }
+attributes:
+  negativePrompt: photoreal, bleak, techno-cold, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-015
 packId: pack_03
 name: Claymation (Stop Motion)
-category: 1. Materials
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Plasticine model
   form_and_line: Fingerprints visible
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Handmade look
   atmosphere: Playful, tactile, old-world craft
   key_features: Fingerprints
+  creative_brief: 'Every surface bears the memory of the thumb that pressed it — fingerprints ride ridges of plasticine like fossil records of a touch that happened between frames. Dust motes settle into crevices, matte clay colors refuse to shine, and the miniature set glows under studio lights with the warmth of a handmade universe. The image channels Aardman''s soul: imperfection as charm, patience as magic, the still frame vibrating with the effort of its own creation.'
 avoidRules:
   - smooth
   - digital
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 1. Materials
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

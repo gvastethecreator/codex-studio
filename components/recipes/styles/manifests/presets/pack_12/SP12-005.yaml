@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-005
+packId: pack_12
+name: Moonbase Breach Alarm
+category: 3. Sci-Fi Frontiers & Mech Zones
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+visualDna:
+  aesthetic: Industrial science fiction in an emergency lunar base.
+  subject_treatment: Technical personnel and marines responding to hull breach.
+  color_and_tone: Cold whites, alarm reds and graphite shadows.
+  lighting_and_shadow: Strobe beacons and hard panel light.
+  texture_and_material: Brushed titanium, ice, technical rubber, and condensation.
+  camera_and_composition: Corridor in long perspective with central vanishing point.
+  atmosphere_and_mood: Urgency, claustrophobia, and operational heroism.
+  rendering_and_quality: Level background with production quality.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - warm-sunlight
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-005.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

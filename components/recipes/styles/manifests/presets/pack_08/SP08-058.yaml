@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-058
 packId: pack_08
 name: Sequins
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Party, attention, all-eyes-on-you magnetism, floor-filler confidence, New-Year's-Eve electricity
   key_features: Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam
+  creative_brief: Thousands of tiny mirrors stitched into a grid that catches strobe light and returns it broken into a galaxy of borrowed brilliance, each sequin a pixel in a moving image that changes with every breath. The dress refuses to be one thing, shifting from gold to rose to holographic depending on the angle of approach, an outfit that exists only in relation to the light and the eyes consuming it.
 avoidRules:
   - matte
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

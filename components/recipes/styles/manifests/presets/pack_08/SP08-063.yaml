@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-063
 packId: pack_08
 name: Feathers
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Grand, bird, stage-curtain anticipation, plumage-pride majesty, feathered-flight fantasy
   key_features: Quills, feather fan, headdress, marabou trim, iridescent barb
+  creative_brief: Ostrich plumes catching stage light and holding it in a corona of dyed fluff that trembles with the performer's breath, peacock eyes staring from a fan that opens like a sunrise over the Folies-Bergere. Marabou trim floats at the hem like soft punctuation, each barb a filament in a spectacle built from the borrowed plumage of birds who will never see the spotlight.
 avoidRules:
   - fur
   - hair
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

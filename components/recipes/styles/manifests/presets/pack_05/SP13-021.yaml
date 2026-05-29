@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-021
+packId: pack_05
+name: Action Burst Alley Rush
+category: 3. Action
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - anime
+  - action
+visualDna:
+  aesthetic: Urban anime action with high-impact chase.
+  form_and_line: "Kinetic lines, aggressive silhouettes and flexible anatomy."
+  color_palette: "Dark blue, energy red and contrast white."
+  lighting_setup: Explosion flash with dynamic rim.
+  material_texture: Asphalt grit, dust plumes, and stylized sparks.
+  render_quality: Sharp combat keyframe with instant readability.
+  spatial_distortion: Forced perspective that amplifies speed.
+  atmosphere: Urgency, adrenaline, and imminent danger.
+  key_features: Motion lines, extreme leap, compressed background.
+  creative_brief: Hero in acrobatic sprint between alleys with maximum visual energy.
+avoidRules:
+  - photoreal
+  - static-pose
+  - low-detail
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-021.webp
+attributes:
+  negativePrompt: photoreal, static-pose, low-detail, watermark, text, logo
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 3. Action
+  tags:
+    - anime-battle-and-worlds
+    - anime
+    - action
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

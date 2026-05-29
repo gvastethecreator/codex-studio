@@ -44,6 +44,7 @@ export class CodexRpcClient {
     { resolve: (value: any) => void; reject: (error: Error) => void }
   >();
   private notifications: JsonRpcMessage[] = [];
+  private notificationWaiters = new Set<(error: Error) => void>();
 
   constructor({
     ensureAppServer: ensureAppServerFn = ensureAppServer,
@@ -88,6 +89,15 @@ export class CodexRpcClient {
         socket.addEventListener('message', (event) => this.handleMessage(String(event.data)));
         socket.addEventListener('close', () => {
           this.socket = null;
+          const error = new Error('Codex app-server socket closed');
+          for (const pending of this.pending.values()) {
+            pending.reject(error);
+          }
+          this.pending.clear();
+          for (const reject of this.notificationWaiters) {
+            reject(error);
+          }
+          this.notificationWaiters.clear();
         });
         resolve();
       });
@@ -120,18 +130,26 @@ export class CodexRpcClient {
 
     return new Promise<JsonRpcMessage>((resolve, reject) => {
       const started = Date.now();
+      const handleSocketClose = (error: Error) => {
+        clearInterval(interval);
+        this.notificationWaiters.delete(handleSocketClose);
+        reject(error);
+      };
       const interval = setInterval(() => {
         const match = this.notifications.find(predicate);
         if (match) {
           clearInterval(interval);
+          this.notificationWaiters.delete(handleSocketClose);
           resolve(match);
           return;
         }
         if (Date.now() - started > timeoutMs) {
           clearInterval(interval);
+          this.notificationWaiters.delete(handleSocketClose);
           reject(new Error('Timed out waiting for Codex notification'));
         }
       }, 250);
+      this.notificationWaiters.add(handleSocketClose);
     });
   }
 

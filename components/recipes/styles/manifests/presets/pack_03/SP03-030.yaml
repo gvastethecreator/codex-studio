@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-030
 packId: pack_03
 name: Glitch 3D
-category: 3. 3D Styles
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - 3d-styles
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Broken geometry
   form_and_line: Vertex explosion
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Data moshing, digital decay
   atmosphere: Chaotic, broken, signal failure
   key_features: Artifacts, vertex explosion
+  creative_brief: 'Vertices tear free from their moorings and scatter like shrapnel from a digital explosion — UV maps stretch, texture channels swap, and the geometry itself forgets what shape it was supposed to hold. Corrupted data becomes aesthetic: chromatic offsets bleed at the seams, and mesh errors bloom into accidental sculpture. The image is signal failure rendered beautiful, a datamosh fever dream where the glitch is the message and destruction is the medium.'
 avoidRules:
   - clean
   - perfect
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: 3d-styles
-  categoryName: 3. 3D Styles
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - 3d-styles
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

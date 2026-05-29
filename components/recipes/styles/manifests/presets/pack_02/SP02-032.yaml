@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-032
 packId: pack_02
 name: Studio Ghibli Painterly Nature Anime
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, food that looks delicious, soaring flight
   form_and_line: Delicate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Nostalgic, peaceful, childhood summer, bittersweet wonder
   key_features: Clouds, flying sequence, bento detail, train through countryside
+  creative_brief: Wind combs through meadow grass while a child pauses mid-step, caught between the world she knows and the one she senses stirring beneath. Shadows soften at the edges as if reluctant to darken anything worth remembering. A bowl of steaming rice, a train gliding past sunflower fields — the sacred hides in the ordinary, waiting to be noticed.
 avoidRules:
   - ugly
   - dark
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

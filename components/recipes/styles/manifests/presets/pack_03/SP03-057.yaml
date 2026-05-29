@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-057
 packId: pack_03
 name: NFT Collectible Avatar Render
-category: 4. Applications
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - organic-and-character-cgi
 visualDna:
   aesthetic: 3D character portrait
   form_and_line: Clean
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Hype, digital, exclusive drop
   key_features: Profile view, trait accessories
+  creative_brief: 'The character faces forward in the profile-view language of the collector''s marketplace — neon traits glow with rare-drop energy, gold accessories signal scarcity, and studio lighting wraps the figure in promo-ready gloss. Plastic and metal finishes read as premium collectible surfaces, every accessory a generative trait rendered with avatar-centric precision. The image pulses with digital hype: a Bored Ape rendered in three dimensions, exclusivity made visible through the vocabulary of rarity gradients and exclusive drops.'
 avoidRules:
   - traditional art
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

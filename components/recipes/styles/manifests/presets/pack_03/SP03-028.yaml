@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-028
 packId: pack_03
 name: Nurbs Surface
-category: 3. 3D Styles
+category: 1. Hard Surface And Industrial Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - 3d-styles
+  - hard-surface-and-industrial-cgi
 visualDna:
   aesthetic: Mathematically perfect curves
   form_and_line: Flow lines
@@ -20,6 +20,7 @@ visualDna:
   render_quality: CAD, automotive, manufacturing-grade
   atmosphere: Perfect, engineered, mathematical precision
   key_features: Smoothness, G2 continuity
+  creative_brief: Curves so smooth they vanish into mathematics — zebra-stripe reflections run across Class-A surfaces like diagnostic poetry, proving with every unbroken band that G2 continuity holds. No polygon dares show its face; nurbs define form as pure equation rendered into gloss. The image channels automotive design studios and CAD bays at dawn, where perfection is measured in the uninterrupted flow of a highlight across a fender.
 avoidRules:
   - polygons
   - sharp
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: 3d-styles
-  categoryName: 3. 3D Styles
+  categoryId: hard-surface-and-industrial-cgi
+  categoryName: 1. Hard Surface And Industrial Cgi
   tags:
     - 3d-and-cgi-rendering
-    - 3d-styles
+    - hard-surface-and-industrial-cgi
   supportedTasks:
     - image_generate
     - image_edit

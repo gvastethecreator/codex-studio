@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-046
 packId: pack_08
 name: Mech Pilot Suit
-category: 5. Fantasy/Sci-Fi Costume
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Ready, tech, launch-tube tension, AT-field silence, impact-alert urgency
   key_features: Interface headset, A10 nerve clips, plug-suit panel lines, LCL fluid sheen
+  creative_brief: Glossy panel lines tracing the interface between human nerve and machine muscle, LCL fluid sheen catching amber cockpit light on a suit that is less clothing than communion. Interface clips anchor the pilot to a body eighty meters tall, the compression fabric holding a heartbeat that synchronizes with hydraulics, every seam designed for the moment when pilot and mecha become a single pronoun.
 avoidRules:
   - casual
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fantasy-sci-fi-costume
-  categoryName: 5. Fantasy/Sci-Fi Costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
     - fantasy-sci-fi-costume
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

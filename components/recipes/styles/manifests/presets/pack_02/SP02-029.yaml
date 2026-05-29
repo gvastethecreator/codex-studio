@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-029
 packId: pack_02
 name: Cooking Show
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Food prep
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Hungry, happy, cozy instruction, sizzle anticipation
   key_features: Overhead shot, wooden board, fresh garnish, tasting spoon
+  creative_brief: Close enough to taste the steam rising from a golden crust, the lens worships at the altar of the cutting board. Oil catches light like liquid glass, herbs scatter like green constellations across wooden grain. Hunger is not a feeling here but a visual frequency tuned to the sizzle of transformation.
 avoidRules:
   - messy
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

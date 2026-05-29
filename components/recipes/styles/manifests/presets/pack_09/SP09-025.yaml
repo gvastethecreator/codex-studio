@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-025
 packId: pack_09
 name: Porcelain (Cracked)
-category: 2. Man-Made Materials
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Old doll or vase
   form_and_line: Craquelure
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Fine cracks
   atmosphere: Creepy, old
   key_features: Crack network
+  creative_brief: Compose the delicate horror of crazed porcelain where a fine network of cracks maps the surface like a frozen lightning storm in cream and white, the glaze still gleaming smooth above fractures held in perpetual arrest. The crack network should spread organically like roots seeking water, each line a record of stress survived. Render the beauty of the almost-broken, fragility that has chosen to endure.
 avoidRules:
   - plastic
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-097
 packId: pack_04
 name: Composition Thumbnail Grid
-category: 4. Concept Art
+category: 4. Printmaking And Ink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - printmaking-and-ink
 visualDna:
   aesthetic: 24-frame-composition-thumbnail-grid, storyboard-composition-planning, camera-angle-exploration-for-sequence, Hitchcock-shot-list-energy, wide-medium-closeup-extreme-closeup-progression, high-angle-low-angle-dutch-tilt-variety, film-sequence-shot-design, composition-rhythm-across-scene, golden-ratio-rule-of-thirds-grid-overlay
   form_and_line: Thumbnail-loose-value-sketching, simple-shape-composition, camera-angle-construction-lines, perspective-grid- underlays, framing-device-annotations, directional-arrow-for-camera-movement
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 24-frame-grid-layout, shot-progression-across-time, camera-angle-comparison, perspective-variation-per-frame, depth-compression-closeup-vs-wide
   atmosphere: Analytical, pre-production, director's-viewfinder, story-planning-excitement, Hitchcock-suspense-through-composition, visual-storytelling-method
   key_features: 24-frame-composition-grid, camera-angle-variety, shot-size-progression, perspective-grid-underlay, value-thumbnail-technique, Hitchcock-shot-list-energy, golden-ratio-overlay, directional-arrow-annotations
+  creative_brief: Twenty-four frames arrange themselves in a grid of cinematic intention, camera angles mapping the emotional terrain of a scene that has not yet been shot. Wide shots establish, close-ups interrogate, Dutch angles destabilize. This is the film existing first as composition, where every frame decision is a directorial choice rendered in thumbnail.
 avoidRules:
   - rendered
   - polished
@@ -39,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: printmaking-and-ink
+  categoryName: 4. Printmaking And Ink
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - printmaking-and-ink
   supportedTasks:
     - image_generate
     - image_edit

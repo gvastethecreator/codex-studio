@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-073
 packId: pack_01
 name: Long Exposure (Water)
-category: 4. Genres
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - lighting-techniques
 visualDna:
   aesthetic: Silky waterfall or sea
   form_and_line: Smooth water, sharp rocks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Motion blur water
   atmosphere: Calm, ethereal
   key_features: Silky water
+  creative_brief: Water forgets its own urgency, stretched into silk by time's patient hand, rock standing immutable as witness. The world slows until motion itself becomes a kind of stillness, ethereal and unreachable.
 avoidRules:
   - frozen water
   - sharp waves
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - genres
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-004
 packId: pack_11
 name: Papercraft Low Poly
-category: 2. Toys & Crafts
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - oddities-and-novelty
 visualDna:
   aesthetic: Folded cardstock model, low-poly sculpture, kirigami construction, geometric craft
   form_and_line: Sharp paper folds, triangular facets, crease lines, angular edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition
   atmosphere: Delicate, handmade, clean, zen precision, patient craft, geometric calm
   key_features: Visible fold lines, tab-and-slot joins, score marks, polygon faces
+  creative_brief: Sharp folds carve the world into triangular certainties, each cardstock facet catching light at a different angle. Crease lines score the geometry of patience into flat paper, transforming two dimensions into three through precise origami logic. A fragile cathedral of folded craft where every edge tells the story of its making.
 avoidRules:
   - curved
   - smooth
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

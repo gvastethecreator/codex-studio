@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-009
 packId: pack_07
 name: Gothic Revival
-category: 2. Architectural Styles
+category: 3. Historical And Sacred Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - architectural-styles
+  - historical-and-sacred-architecture
 visualDna:
   aesthetic: Dark ornate cathedral or mansion, stone romance, medieval dream, vertical yearning
   form_and_line: Pointed arches, intricate carving, ribbed vaults, flying buttresses, spires reaching
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Elongated vertical lines
   atmosphere: Spooky, dramatic, ancient, sacred, echoing, time-layered reverence
   key_features: Vertical emphasis, flying buttresses, gargoyle silhouettes, tracery windows, ribbed ceiling
+  creative_brief: Stone reaches skyward with medieval longing, every spire a prayer cast in limestone and shadow. Colored light bleeds through saints and roses, painting cold floors with jewel-toned devotion. The architecture does not invite, it commands reverence, demanding that the soul look up.
 avoidRules:
   - modern
   - bright
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: architectural-styles
-  categoryName: 2. Architectural Styles
+  categoryId: historical-and-sacred-architecture
+  categoryName: 3. Historical And Sacred Architecture
   tags:
     - architecture-and-interior
-    - architectural-styles
+    - historical-and-sacred-architecture
   supportedTasks:
     - image_generate
     - image_edit

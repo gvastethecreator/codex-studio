@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-008
 packId: pack_08
 name: Punk Rock
-category: 3. Subcultures
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Mohawk hair
   atmosphere: Angry, loud, chaotic, confrontational snarl, three-chord fury, spit-and-sawdust electricity
   key_features: DIY aesthetic, hand-scrawled slogans, padlock necklace, torn fishnets
+  creative_brief: Destruction as design, safety pins as punctuation in a grammar of refusal. Tartan torn against the grain, leather baptized in club sweat and three-chord fury, every rip a manifesto scrawled in thread. This is clothing as crime scene, beautiful precisely because it refuses to be.
 avoidRules:
   - clean
   - expensive
@@ -33,7 +34,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
     - subcultures
@@ -42,3 +43,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

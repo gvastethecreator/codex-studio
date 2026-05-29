@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-010
 packId: pack_09
 name: Obsidian
-category: 1. Natural Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Volcanic glass
   form_and_line: Sharp fractures
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Conchoidal fracture
   atmosphere: Dark, dangerous
   key_features: Sharp edges
+  creative_brief: Conjure the frozen midnight of obsidian, volcanic glass that shatters into edges sharper than intention and darker than shadow. Conchoidal fractures should bloom across the surface like dark flowers, each curve a record of impact translated into mineral poetry. The material must feel simultaneously precious and predatory, beautiful and unforgiving.
 avoidRules:
   - matte
   - rough
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - natural-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

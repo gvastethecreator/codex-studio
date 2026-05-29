@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-008
 packId: pack_06
 name: Ink Wash (Sumi-e)
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Abstracted forms
   atmosphere: Peaceful, meditative
   key_features: Brush pressure variation
+  creative_brief: A single brushstroke carries the mountain, the bamboo, the wind — nothing added that can be removed. Black ink on white rice paper becomes a universe of greys through water alone, each wash a meditation on pressure and release. The void between marks speaks louder than the marks themselves.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

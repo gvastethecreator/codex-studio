@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-033
 packId: pack_01
 name: Hard Flash
-category: 2. Lighting
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - lighting-techniques
 visualDna:
   aesthetic: Direct camera flash
   form_and_line: Hard shadow outlines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flat depth
   atmosphere: Raw, exposed
   key_features: Drop shadow
+  creative_brief: The unapologetic glare that leaves nowhere to hide, every pore and sheen interrogated by merciless frontal light. Hard shadows carve silhouettes into the nearest wall like instant crime-scene evidence. The aesthetics of exposure itself, where glamour and intrusion become indistinguishable.
 avoidRules:
   - soft
   - natural
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - lighting
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

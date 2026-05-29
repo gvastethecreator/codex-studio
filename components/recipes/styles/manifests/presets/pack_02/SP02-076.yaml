@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-076
 packId: pack_02
 name: Rim Lighting
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Edge glow
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Heroic, mystery, defined presence, emerging-from-shadow
   key_features: Halo, glowing outline, edge definition
+  creative_brief: A figure stands at the threshold of visibility, sculpted not by what is lit but by what is denied light. Every contour hums with a silver thread of revelation, the darkness behind the subject doing the heavy work of presence. This is portraiture by subtraction, where the most important details live in the sliver between seen and unseen.
 avoidRules:
   - flat
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

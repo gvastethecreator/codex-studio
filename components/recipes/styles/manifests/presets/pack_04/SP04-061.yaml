@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-061
 packId: pack_04
 name: Linocut Print
-category: 5. Ink & Print
+category: 4. Printmaking And Ink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - printmaking-and-ink
 visualDna:
   aesthetic: Carved block print
   form_and_line: White gouges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Chunky lines
   atmosphere: Folk, strong, print-workshop resolve, democratic art
   key_features: No fine detail, gouge marks, carved texture
+  creative_brief: Carved away material leaves behind a surface born of resistance, each gouge a record of the knife's passage through linoleum. Ink sits heavy on the raised portions, transferring the image with the satisfying pressure of the press. This is printmaking as labor, where every white line required the removal of something solid.
 avoidRules:
   - grey
   - gradient
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: printmaking-and-ink
+  categoryName: 4. Printmaking And Ink
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - printmaking-and-ink
   supportedTasks:
     - image_generate
     - image_edit

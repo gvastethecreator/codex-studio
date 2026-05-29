@@ -33,7 +33,12 @@ export const StudioImageOverlays: React.FC<StudioImageOverlaysProps> = ({
           activeGenerationConfig={activeGenerationConfig}
           onClose={closeModal}
           onDelete={handleDelete}
-          onRegenerate={(config) => handleGenerate(config.prompt, config, { preventModal: true })}
+          onRegenerate={(config) =>
+            handleGenerate(config.prompt, config, {
+              preventModal: true,
+              useCurrentAttachments: true,
+            })
+          }
           onAddToContext={(image) => {
             handleAddToContext(image);
             closeModal();

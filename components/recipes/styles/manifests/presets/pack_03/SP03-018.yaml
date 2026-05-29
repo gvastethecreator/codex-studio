@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-018
 packId: pack_03
 name: Carbon Fiber
-category: 1. Materials
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Woven composite material
   form_and_line: Weave pattern
@@ -20,6 +20,7 @@ visualDna:
   render_quality: High tech, automotive, motorsport-grade
   atmosphere: Fast, strong, engineering precision
   key_features: Weave pattern, carbon-fiber direction
+  creative_brief: 'Geometry becomes textile — the weave pattern shifts direction across compound curves like grain through machined metal, and anisotropic highlights follow the thread orientation with motorsport precision. A clear coat floats above the carbon lattice, catching the world in a thin skin of reflection. The image speaks the language of the pit lane: weightless strength, engineering as aesthetic, every fiber aligned to a purpose you can feel.'
 avoidRules:
   - smooth
   - paint
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 1. Materials
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

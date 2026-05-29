@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, MotionDiv } from 'motion/react';
 import {
   AlertTriangle,
@@ -92,6 +92,35 @@ function getServerStatusColor(status: StudioJob['status']) {
   }
 }
 
+function toEpochMs(value: string | null | undefined) {
+  if (!value) return null;
+  const parsed = Date.parse(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function formatClockTime(value: number | null) {
+  if (value === null) return '—';
+  return new Date(value).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+}
+
+function formatDurationMs(value: number | null) {
+  if (value === null || value < 0) return '—';
+  const totalSeconds = Math.floor(value / 1000);
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+  if (minutes <= 0) return `${seconds}s`;
+  return `${minutes}m ${seconds}s`;
+}
+
+function resolveServerJobPreview(job: StudioJob, resultPreviewSrc?: string) {
+  if (resultPreviewSrc) return resultPreviewSrc;
+
+  const sourceAsset = job.sourceSpec?.assets?.find((asset) => typeof asset.dataUrl === 'string');
+  if (sourceAsset?.dataUrl) return sourceAsset.dataUrl;
+
+  return null;
+}
+
 const StatItem = ({ label, value, color }: { label: string; value: number; color: string }) => (
   <div className="flex flex-col items-center justify-center bg-black/20 p-2">
     <span className={cn('text-xs font-bold', color)}>{value}</span>
@@ -116,7 +145,30 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
   }) => {
     const [isLocalQueueOpen, setIsLocalQueueOpen] = useState(true);
     const [isServerQueueOpen, setIsServerQueueOpen] = useState(true);
+    const [nowMs, setNowMs] = useState(() => Date.now());
     const hasRecentResults = results.length > 0;
+    const resultsByJobId = useMemo(() => {
+      const map = new Map<string, string>();
+      for (const result of results) {
+        if (!result.jobId) continue;
+        if (!map.has(result.jobId)) {
+          map.set(result.jobId, result.src);
+        }
+      }
+      return map;
+    }, [results]);
+
+    const hasLiveDurations =
+      jobs.some((job) => job.status === 'pending' || job.status === 'processing') ||
+      serverJobs.some((job) => job.status === 'queued' || job.status === 'running');
+
+    useEffect(() => {
+      if (!hasLiveDurations) return;
+      const id = window.setInterval(() => {
+        setNowMs(Date.now());
+      }, 1000);
+      return () => window.clearInterval(id);
+    }, [hasLiveDurations]);
 
     const pendingCount = jobs.filter((job) => job.status === 'pending').length;
     const processingCount = jobs.filter((job) => job.status === 'processing').length;
@@ -261,6 +313,8 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                           <ServerJobItem
                             key={job.id}
                             job={job}
+                            previewSrc={resolveServerJobPreview(job, resultsByJobId.get(job.id))}
+                            nowMs={nowMs}
                             isSelected={selectedJobId === job.id}
                             onInspect={() => onInspectJob(job.id)}
                             onRetry={onRetryServerJob ? () => onRetryServerJob(job.id) : undefined}
@@ -330,6 +384,14 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                             <JobItem
                               key={job.id}
                               job={job}
+                              nowMs={nowMs}
+                              previewSrc={
+                                job.serverJobId
+                                  ? (resultsByJobId.get(job.serverJobId) ??
+                                    job.config.attachments[0]?.dataUrl ??
+                                    null)
+                                  : (job.config.attachments[0]?.dataUrl ?? null)
+                              }
                               isSelected={selectedJobId === job.serverJobId}
                               onInspect={
                                 job.serverJobId
@@ -356,14 +418,19 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
 
 const ServerJobItem: React.FC<{
   job: StudioJob;
+  previewSrc: string | null;
+  nowMs: number;
   isSelected: boolean;
   onInspect: () => void;
   onRetry?: () => void;
   onCancel: () => void;
-}> = ({ job, isSelected, onInspect, onRetry, onCancel }) => {
+}> = ({ job, previewSrc, nowMs, isSelected, onInspect, onRetry, onCancel }) => {
   const canCancel = job.status === 'queued' || job.status === 'running';
   const canRetry = Boolean(onRetry) && canRetryStudioJob(job.status);
   const statusColor = getServerStatusColor(job.status);
+  const createdAtMs = toEpochMs(job.createdAt);
+  const completedAtMs = toEpochMs(job.completedAt ?? null);
+  const durationMs = createdAtMs ? (completedAtMs ?? nowMs) - createdAtMs : null;
 
   const icon = canCancel ? (
     <Loader2 size={13} className="mt-0.5 shrink-0 animate-spin text-accent-400" />
@@ -380,7 +447,7 @@ const ServerJobItem: React.FC<{
   return (
     <div
       className={cn(
-        'flex items-start gap-2 rounded-lg border p-2 transition-colors',
+        'flex items-start gap-2 rounded-xl border p-2.5 transition-colors',
         isSelected
           ? 'border-accent-500/30 bg-accent-500/10'
           : 'border-white/5 bg-black/20 hover:border-white/10 hover:bg-white/5',
@@ -389,21 +456,67 @@ const ServerJobItem: React.FC<{
       <button
         type="button"
         onClick={onInspect}
-        className="flex min-w-0 flex-1 items-start gap-2 text-left cursor-pointer"
+        className="flex min-w-0 flex-1 items-start gap-2.5 text-left cursor-pointer"
       >
-        {icon}
+        <div className="mt-0.5 shrink-0">{icon}</div>
+
+        <div className="mt-0.5 size-10 shrink-0 overflow-hidden rounded-md border border-white/10 bg-black/40">
+          {previewSrc ? (
+            <img
+              src={previewSrc}
+              alt="Job thumbnail"
+              className="h-full w-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center text-[9px] text-zinc-600">
+              -
+            </div>
+          )}
+        </div>
 
         <div className="min-w-0 flex-1">
-          <p className="truncate text-[10px] font-medium text-white/90">{job.originalPrompt}</p>
-          <div className="mt-1 flex items-center gap-2">
-            <span className={cn('text-[9px] font-black uppercase tracking-wider', statusColor)}>
+          <p className="line-clamp-2 text-[11px] font-semibold leading-tight text-white/90">
+            {job.originalPrompt}
+          </p>
+
+          <div className="mt-1.5 flex items-center gap-1.5">
+            <span
+              className={cn(
+                'rounded-md border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
+                statusColor,
+                job.status === 'completed'
+                  ? 'border-emerald-500/20 bg-emerald-500/10'
+                  : job.status === 'needs_review'
+                    ? 'border-amber-500/20 bg-amber-500/10'
+                    : job.status === 'failed' || job.status === 'cancelled'
+                      ? 'border-rose-500/20 bg-rose-500/10'
+                      : 'border-accent-500/20 bg-accent-500/10',
+              )}
+            >
               {job.status}
             </span>
-            <span className="text-[9px] text-white/25">{job.kind}</span>
+
+            <span className="rounded-md border border-white/10 bg-black/30 px-1.5 py-0.5 text-[9px] text-white/35">
+              {job.kind}
+            </span>
+          </div>
+
+          <div className="mt-1.5 flex items-center gap-1.5 text-[9px] text-white/35">
+            <span>{formatClockTime(createdAtMs)}</span>
+            <span>•</span>
+            <span>{formatDurationMs(durationMs)}</span>
             {job.execution?.model ? (
-              <span className="text-[9px] text-zinc-500">{job.execution.model}</span>
+              <>
+                <span>•</span>
+                <span className="max-w-[120px] truncate text-zinc-500" title={job.execution.model}>
+                  {job.execution.model}
+                </span>
+              </>
             ) : null}
           </div>
+
           {job.error && (
             <p className="mt-1 rounded border border-rose-500/10 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
               {job.error}
@@ -412,7 +525,7 @@ const ServerJobItem: React.FC<{
         </div>
       </button>
 
-      <div className="flex shrink-0 flex-col items-end gap-1">
+      <div className="flex shrink-0 flex-col items-center gap-1 pt-0.5">
         <BrainCircuit size={13} className="text-zinc-500" />
         {canCancel ? (
           <button
@@ -441,14 +554,17 @@ const ServerJobItem: React.FC<{
 
 const JobItem: React.FC<{
   job: QueueJob;
+  previewSrc: string | null;
+  nowMs: number;
   isSelected: boolean;
   onInspect?: () => void;
   onRetry: () => void;
   onCancel: () => void;
   onRemove: () => void;
-}> = ({ job, isSelected, onInspect, onRetry, onCancel, onRemove }) => {
+}> = ({ job, previewSrc, nowMs, isSelected, onInspect, onRetry, onCancel, onRemove }) => {
   const config = localStatusConfig[job.status];
   const Icon = config.icon;
+  const durationMs = (job.completedAt ?? nowMs) - job.createdAt;
 
   const content = (
     <>
@@ -456,23 +572,52 @@ const JobItem: React.FC<{
         <Icon size={16} className={cn(config.spin && 'animate-spin')} />
       </div>
 
+      <div className="mt-0.5 size-10 shrink-0 overflow-hidden rounded-md border border-white/10 bg-black/40">
+        {previewSrc ? (
+          <img
+            src={previewSrc}
+            alt="Queue thumbnail"
+            className="h-full w-full object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center text-[9px] text-zinc-600">
+            -
+          </div>
+        )}
+      </div>
+
       <div className="min-w-0 flex-1">
-        <p className="mb-1 line-clamp-2 text-xs font-medium leading-relaxed text-white/80">
+        <p className="mb-1 line-clamp-2 text-[11px] font-medium leading-tight text-white/85">
           {job.prompt}
         </p>
 
-        <div className="flex items-center gap-2">
-          <span className={cn('text-[10px] font-bold uppercase tracking-wider', config.color)}>
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span
+            className={cn(
+              'rounded-md border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
+              config.color,
+              job.status === 'completed'
+                ? 'border-emerald-500/20 bg-emerald-500/10'
+                : job.status === 'failed' || job.status === 'cancelled'
+                  ? 'border-rose-500/20 bg-rose-500/10'
+                  : job.status === 'processing'
+                    ? 'border-accent-500/20 bg-accent-500/10'
+                    : 'border-white/15 bg-white/5',
+            )}
+          >
             {job.status}
           </span>
-          <span className="text-[10px] text-white/20">
-            {new Date(job.createdAt).toLocaleTimeString([], {
-              hour: '2-digit',
-              minute: '2-digit',
-            })}
-          </span>
+
+          <span className="text-[9px] text-white/30">{formatClockTime(job.createdAt)}</span>
+          <span className="text-[9px] text-white/20">•</span>
+          <span className="text-[9px] text-white/30">{formatDurationMs(durationMs)}</span>
+
           {job.serverJobId ? (
-            <span className="text-[10px] text-accent-400">#{job.serverJobId.slice(0, 8)}</span>
+            <span className="rounded-md border border-accent-500/20 bg-accent-500/10 px-1.5 py-0.5 text-[9px] text-accent-300">
+              #{job.serverJobId.slice(0, 8)}
+            </span>
           ) : null}
         </div>
 

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-050
 packId: pack_01
 name: Product Photography
-category: 4. Genres
+category: 5. Commercial And Product
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - commercial-and-product
 visualDna:
   aesthetic: Clean commercial object
   form_and_line: Sharp edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Professional, desire
   key_features: White/Grey background
+  creative_brief: The object floats in its own perfection, suspended in a void where nothing competes for attention and every edge resolves into certainty. Light wraps around form like tailored silk, revealing contour without distraction, isolating the thing from its own history. Desire crystallizes in the absence of context, the thing becoming only what it promises to become.
 avoidRules:
   - dust
   - scratches
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: commercial-and-product
+  categoryName: 5. Commercial And Product
   tags:
     - photography-and-realism
-    - genres
+    - commercial-and-product
   supportedTasks:
     - image_generate
     - image_edit

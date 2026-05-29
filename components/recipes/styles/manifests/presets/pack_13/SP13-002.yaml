@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-002
+packId: pack_13
+name: Neon City Vigil
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Nighttime anime cyberpunk with rain and neon.
+  form_and_line: Sharp strokes, urban silhouettes, and selective tech details.
+  color_palette: Magenta, cyan, black, and electric accents.
+  lighting_setup: Neon backlight with wet reflections and controlled bloom.
+  material_texture: Asfalto mojado, metal satinado y cristales brillantes.
+  render_quality: High-contrast modern anime illustration.
+  spatial_distortion: Deep street perspective with dramatic vanishing point.
+  atmosphere: Urban tension, stealth, and a futuristic pulse.
+  key_features: Atmospheric neon, vigilant character, noir mood.
+  creative_brief: A guardian in a rainy alley with bold visual identity and strong card readability.
+avoidRules:
+  - photoreal
+  - watercolor
+  - low-detail
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-002.webp
+attributes:
+  negativePrompt: photoreal, watercolor, low-detail, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

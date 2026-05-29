@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-055
 packId: pack_03
 name: Virtual Reality Environment
-category: 4. Applications
+category: 3. Environment And Worldbuilding
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - environment-and-worldbuilding
 visualDna:
   aesthetic: Immersive world
   form_and_line: 360 degree feel
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Wide FOV
   atmosphere: Presence, digital, embodied experience
   key_features: Player scale, 180-degree depth
+  creative_brief: 'The frame stretches wide beyond peripheral vision — baked global illumination wraps an optimized world in real-time-ready beauty, and player-scale references anchor the scene in embodied presence. Wide FOV distorts the edges just enough to suggest a 360-degree panorama waiting beyond the crop. The image is a VR headset''s promise: immersion you could step into, a digital environment that feels less like a render and more like a place you''ve already visited.'
 avoidRules:
   - 2d
   - flat
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: environment-and-worldbuilding
+  categoryName: 3. Environment And Worldbuilding
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - environment-and-worldbuilding
   supportedTasks:
     - image_generate
     - image_edit

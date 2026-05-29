@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-073
 packId: pack_02
 name: Bioluminescence
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Bioluminescent jungle night, Avatar forest, Pandora glow, floating spores, otherworldly photosynthesis
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Wonder, night, Pandora dream, silent biosphere
   key_features: Glowing plants, floating spores, bioluminescent trail
+  creative_brief: The forest generates its own constellation, every leaf and spore glowing from within as if the plants had swallowed starlight and learned to breathe it back out. There is no sun here, no moon—only the quiet phosphorescence of a world that has taught itself to be seen in the dark.
 avoidRules:
   - sunlight
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

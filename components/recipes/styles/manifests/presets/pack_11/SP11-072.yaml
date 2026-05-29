@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-072
 packId: pack_11
 name: Crystal Growth
-category: 5. Micro/Macro
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: Chemical garden, crystal-lab, mineral-precipitation, geode-formation, silica-garden
   form_and_line: Sharp geometric edges, crystal-facet planes, acicular-needles, dendrite-spikes, trigonal-pyramid
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Spikes, acicular-cluster, drusy-surface, needle-point, geode-cavity, radial-aggregate
   atmosphere: Sharp, growing, crystallization-quiet, mineral-time, supersaturated-magic, geological-patience
   key_features: Facets, crystal-termination, growth-terrace, cleavage-plane, acicular-spike, drusy-crust, geode-cavity, birefringence-color
+  creative_brief: Facets snap into geometric certainty as the supersaturated solution surrenders its dissolved cargo to the growing lattice, atom by atom joining the repeating pattern. Copper sulfate blue deepens at the termination point where the newest molecules are still finding their place in the crystal structure. Mineral time moves too slowly for human clocks, each crystal a geological thought that took weeks to complete its sentence, acicular-spike and drusy-crust forming at the patience-speed of chemistry.
 avoidRules:
   - round
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-015
 packId: pack_02
 name: Mumblecore
-category: 1. Film Genres
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,17 +10,18 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - film-genres
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Indie film
   form_and_line: None
   color_palette: Natural, low contrast, flat daylight, ungraded look
   lighting_setup: Available light, practical lamps, window spill
   material_texture: Digital video, DSLR sensor, consumer camera
-  render_quality: Real, awkward, improvised dialogue, unpolished vérité
+  render_quality: "Real, awkward, improvised dialogue, unpolished truth"
   spatial_distortion: Out of focus, soft rack, distracted framing
   atmosphere: Intimate, talky, relationship friction, honest discomfort
   key_features: Handheld, naturalistic dialogue, apartment clutter
+  creative_brief: 'Nothing is hidden because nothing is staged — a window lets in whatever light the afternoon offers, and a camera observes conversations with the patience of someone who forgot it was recording. Beauty surfaces in the accidental: a pause, a glance off-camera, the clutter of a life not tidied for display.'
 avoidRules:
   - polished
   - scripted
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: film-genres
-  categoryName: 1. Film Genres
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - film-genres
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-030
 packId: pack_11
 name: Sand Art
-category: 3. Artistic Mediums
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - oddities-and-novelty
 visualDna:
   aesthetic: Bottle sand layer, desert-souvenir craft, grain-by-grain art, patience bottled
   form_and_line: Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Gravity layers, horizontal-strata formation, uphill-camel silhouette, canyon-wall illusion
   atmosphere: Patience, nature, desert-quiet, beach-memory, wandering-nomad, sun-baked stillness
   key_features: Layers, color-strata bands, glass-bottle curve, cork-seal top, pour-funnel marks
+  creative_brief: Grain settles upon grain in gravity-orchestrated stratigraphy, colored earth arranged by steady hand and held breath in glass. Each pour-line layer records an epoch compressed to millimeters, desert landscapes trapped in bottle-round transparency. One shake separates all order into chaos, returning the canyon walls and dune horizons to sand and tourist-stall memory.
 avoidRules:
   - water
   - paint
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

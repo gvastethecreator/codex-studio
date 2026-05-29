@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-031
 packId: pack_01
 name: Golden Hour
-category: 2. Lighting
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - portrait-and-studio
 visualDna:
   aesthetic: Sunset/Sunrise light
   form_and_line: Long shadows
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Lens flare
   atmosphere: Warm, happy
   key_features: Warm cast
+  creative_brief: That fleeting threshold where the day inhales before surrendering to night, everything touched by honeyed radiance. Shadows stretch long and languid as if reaching toward the departing sun. The world suspended in amber, a warmth so tangible it feels like memory distilled into light.
 avoidRules:
   - blue
   - cold
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - lighting
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: Modern fugitive thriller with immortal black entities, clinical modern spaces, matte-black supernatural forms, tactical government chase and identity terror
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
   atmosphere: Hunted, modern, sharp, remorseless
   key_features: Black-particle beings, fugitive staging, modern architecture, tactical pursuit framing, clinical dread
+  creative_brief: Black particles coalesce into faceless hunters across antiseptic government corridors, immortality reduced to a tactical asset in a world that dissects what it cannot understand. The fugitive runs through modern glass and steel, pursued by the thing he cannot die from and the institutions that will never stop studying why.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: dark-fantasy-and-seinen
   categoryName: 9. Dark Fantasy & Seinen
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - dark-fantasy-and-seinen
   supportedTasks:
     - image_generate

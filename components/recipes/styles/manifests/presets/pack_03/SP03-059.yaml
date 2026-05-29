@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-059
 packId: pack_03
 name: Digital Fashion
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Virtual clothing
   form_and_line: Cloth simulation
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Floating cloth
   atmosphere: Futuristic, fashion, runway spectacle
   key_features: Drape, cloth dynamics
+  creative_brief: 'Fabric that cannot exist in the physical world — iridescent weaves shift color with viewing angle, and cloth simulation drapes across invisible forms with Marvelous Designer precision. Runway lighting catches every fold and flutter, and digital weave patterns map thread-level detail onto garments that float in defiance of gravity. The image is fashion''s digital frontier: a Clo3D spectacle where the only limit on material is imagination, and every drape tells a story the physical runway could never stage.'
 avoidRules:
   - stiff cloth
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,15 +2,15 @@ schemaVersion: 1
 id: SP05-144
 packId: pack_05
 name: Samurai Champloo - Lo-Fi Edo Swagger
-category: 2. 2000s Classics
+category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
-  - 2000s-classics
+  - anime-battle-and-worlds
+  - modern-shonen-and-action
 visualDna:
   aesthetic: Edo roadtrip remixed with hip-hop attitude, loose sword swagger, vinyl-scratch pacing, dusty sunlight, anachronistic cool threaded through wandering samurai adventure
   form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
   atmosphere: Loose, stylish, sunbaked, rebellious
   key_features: Streetwise sword poses, lo-fi travel scenery, rhythm-first action timing, relaxed body language, dusty road compositions
+  creative_brief: Two swords and a record scratch walk through Edo like they invented the future and forgot to tell anyone. Dust rises from sandals that have traveled nowhere and everywhere, each step a beat in a wandering rhythm. The road is just a long sample loop waiting for the next cut.
 avoidRules:
   - realistic
   - 3d render
@@ -40,12 +41,12 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
-  categoryId: 2000s-classics
-  categoryName: 2. 2000s Classics
+  packName: Anime Battle & Worlds
+  categoryId: modern-shonen-and-action
+  categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
-    - 2000s-classics
+    - anime-battle-and-worlds
+    - modern-shonen-and-action
   supportedTasks:
     - image_generate
     - image_edit

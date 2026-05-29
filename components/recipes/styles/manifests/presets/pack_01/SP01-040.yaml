@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-040
 packId: pack_01
 name: God Rays (Volumetric)
-category: 2. Lighting
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - portrait-and-studio
 visualDna:
   aesthetic: Light beams through fog
   form_and_line: Visible beams
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Holy, atmospheric
   key_features: Light shafts
+  creative_brief: Light made tangible as it descends through suspended atmosphere, invisible particles catching revelation and transforming empty air into architecture. Shafts that carve cathedrals from mist, dust motes drifting like slow-motion constellations through columns of radiance. The divine rendered visible not through substance but through the medium of diffusion itself.
 avoidRules:
   - clear air
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - lighting
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

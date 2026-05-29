@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-067
 packId: pack_04
 name: Monotype
-category: 5. Ink & Print
+category: 4. Printmaking And Ink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - printmaking-and-ink
 visualDna:
   aesthetic: One off print
   form_and_line: Smudged
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Squashed ink
   atmosphere: Expressive, unique, printmaking surprise, serendipitous beauty
   key_features: Ghost image, ink-bleed edge, plate-memory residue
+  creative_brief: The press receives the plate knowing it will never print this exact image again, the urgency of the unique embedded in every roll. Pigment transfers with the spontaneity of a performance, no two pulls ever identical. This is printmaking as jazz, where the improvisation of the press becomes the composition itself.
 avoidRules:
   - repeatable
   - clean
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: printmaking-and-ink
+  categoryName: 4. Printmaking And Ink
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - printmaking-and-ink
   supportedTasks:
     - image_generate
     - image_edit

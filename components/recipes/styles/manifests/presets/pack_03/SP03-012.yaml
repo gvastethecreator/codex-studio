@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-012
 packId: pack_03
 name: Liquid Simulation
-category: 1. Materials
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Splashing water or fluid
   form_and_line: Droplets
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Fluid dynamics
   atmosphere: Dynamic, wet, in-motion energy
   key_features: Splash shape, foam particles
+  creative_brief: A frozen millisecond of chaos where surface tension stretches to breaking and droplets hang in midair like glass beads scattered from a broken necklace. Specular highlights trace the curvature of every splash crown, and foam particles cluster at the periphery like witnesses to the impact. The image is pure kinetic poetry, a fluid sculpture arrested at the apex of its drama.
 avoidRules:
   - solid
   - dry
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 1. Materials
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

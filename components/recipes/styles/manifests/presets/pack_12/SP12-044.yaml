@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-044
+packId: pack_12
+name: Mirage Palace Stealth Gala
+category: 2. Arcane Temples & Mythic Realms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+visualDna:
+  aesthetic: Elegant infiltration in a palace of illusory mirrors.
+  subject_treatment: Spies in ceremonial attire with discreet gadgets.
+  color_and_tone: Soft gold, night blue, and royal purple.
+  lighting_and_shadow: Refracted chandeliers across multiple planes.
+  texture_and_material: Crystal, silk, marble, and polished metal.
+  camera_and_composition: Mirrored corridors with hidden routes.
+  atmosphere_and_mood: Glamour, deception, and social tension.
+  rendering_and_quality: Highly sophisticated stealth scene.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - combat-chaos
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-044.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

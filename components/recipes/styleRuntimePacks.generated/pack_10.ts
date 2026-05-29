@@ -18,7 +18,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
     id: 'pack_10',
     name: 'Abstract & Experimental',
     description:
-      'A comprehensive collection of 80+ abstract styles, from geometric patterns to fluid dynamics and digital glitches.',
+      'A semantically grouped abstract library covering geometric systems, reactive material flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven surfaces.',
     presets: categoryPresets.flat(),
   };
 }

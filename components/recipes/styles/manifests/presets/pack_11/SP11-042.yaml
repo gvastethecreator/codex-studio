@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-042
 packId: pack_11
 name: Frutiger Aero
-category: 4. Aesthetics
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - oddities-and-novelty
 visualDna:
   aesthetic: 2000s Tech UI, XP-era optimism, glossy-future, start-up-aesthetic, skeuomorphic-harmony
   form_and_line: Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation
   atmosphere: Fresh, clean, future, login-screen possibility, broadband-dawn, digital-optimism
   key_features: Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection
+  creative_brief: Aqua-gel buttons float above brushed-metal surfaces in a world still optimistic about broadband and a future rendered in glossy skeuomorphic wonder. Lens flares streak across grass-green progress bars climbing toward completion with start-up-utopia confidence. The desktop was a garden where every click promised a brighter digital tomorrow, window-reflection streak catching the dawn of the Y2K-fresh era.
 avoidRules:
   - flat
   - matte
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

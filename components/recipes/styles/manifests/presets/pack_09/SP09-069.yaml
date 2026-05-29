@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-069
 packId: pack_09
 name: Fiberglass Insulation
-category: 5. Elemental & FX
+category: 3. Fabric And Soft Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fabric-and-soft-materials
 visualDna:
   aesthetic: Pink wall insulation
   form_and_line: Fibers
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Fluffy batts
   atmosphere: Unfinished, itchy
   key_features: Fiber direction
+  creative_brief: Capture the industrial cotton-candy of pink fiberglass insulation where glass fibers interweave into fluffy batts of suspended irritation, the color deceptively soft while the texture promises an itch that the eye can almost feel. The fiber direction should create a grain of pink haze across unfinished wall cavities. Render the beauty of the in-between, construction paused in mid-reveal.
 avoidRules:
   - cotton candy
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fabric-and-soft-materials
+  categoryName: 3. Fabric And Soft Materials
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fabric-and-soft-materials
   supportedTasks:
     - image_generate
     - image_edit
