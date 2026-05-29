@@ -131,7 +131,9 @@ Execution order for the accepted batch:
 - **Files:** `apps/local-server/src/appFactory.ts`, `apps/local-server/src/outputSourceRoutes.ts`,
   `apps/local-server/src/providerRoutes.ts`, `apps/local-server/src/settingsRoutes.ts`,
   `apps/local-server/src/codexRoutes.ts`, `apps/local-server/src/librariesRoutes.ts`,
-  `apps/local-server/src/projectRoutes.ts`
+  `apps/local-server/src/projectRoutes.ts`, `apps/local-server/src/jobRoutes.ts`,
+  `apps/local-server/src/assetLogRoutes.ts`, `apps/local-server/src/runtimeRoutes.ts`,
+  `apps/local-server/src/studioControlRoutes.ts`
 - **Depends on:** recommendation 5 of `architecture-review-2026-05-29.md`
 - **Unblocks:** narrower route seams in backend runtime composition and easier route-level tests
 - **Concrete steps:**
@@ -153,7 +155,19 @@ Execution order for the accepted batch:
   - done: extracted `projects` route composition into `createProjectRoutes()` in `apps/local-server/src/projectRoutes.ts`;
   - done: `appFactory.ts` now mounts `app.route('/api/projects', createProjectRoutes(...))` instead of inlining project handlers;
   - done: added route-seam tests in `apps/local-server/src/projectRoutes.test.ts` for list/create/event/log behavior.
-  - next: extract `jobs` route group into a dedicated module.
+  - done: extracted `jobs` route composition into `createJobRoutes()` in `apps/local-server/src/jobRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api/jobs', createJobRoutes(...))` instead of inlining job handlers;
+  - done: added route-seam tests in `apps/local-server/src/jobRoutes.test.ts` for list/detail/cancel/create flow and provider-blocker validation.
+  - done: extracted lightweight `assets/logs` route composition into `createAssetLogRoutes()` in `apps/local-server/src/assetLogRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api', createAssetLogRoutes(...))` for `/api/assets` and `/api/logs`;
+  - done: added route-seam tests in `apps/local-server/src/assetLogRoutes.test.ts` for assets/logs responses.
+  - done: extracted `health/bootstrap/app-server-start` route composition into `createRuntimeRoutes()` in `apps/local-server/src/runtimeRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api', createRuntimeRoutes(...))` instead of inlining health/bootstrap/start handlers;
+  - done: added route-seam tests in `apps/local-server/src/runtimeRoutes.test.ts` for health, bootstrap-config, and app-server start diagnostics.
+  - done: extracted `studio/reset` route composition into `createStudioControlRoutes()` in `apps/local-server/src/studioControlRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api/studio', createStudioControlRoutes(...))` instead of inlining studio reset handler;
+  - done: added route-seam tests in `apps/local-server/src/studioControlRoutes.test.ts` for reset delegation.
+  - next: extract `events` streaming route into a dedicated module.
 - **Exit criteria:** `appFactory.ts` acts mainly as runtime composition module, with heavy route groups mounted from focused route modules.
 - **Docs:** update `docs/ARCHITECTURE.md` backend seam section once providers/codex route groups are also extracted.
 
