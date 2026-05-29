@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-004
 packId: pack_08
 name: Boho Festival
-category: 1. Contemporary Fashion
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - fashion-and-costume
-  - contemporary-fashion
+  - subcultures
 visualDna:
   aesthetic: Coachella desert festival outfit, flower-crown freedom, golden-hour bohemia, fringe-and-lace reverie
   form_and_line: Flowing layers, fringe, tiered maxi dress, bell-sleeve drama, off-shoulder ease
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Free, happy, natural, carefree wanderlust, desert-magic dusk, barefoot abandon
   key_features: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings
+  creative_brief: Sunlight caught in crochet holes like honey in a sieve, the desert wind a collaborator rather than adversary. Layers of lace and fringe move to a rhythm older than the festival grounds, bare feet on warm earth, turquoise catching the last gold of the dying sun.
 avoidRules:
   - suit
   - strict
@@ -32,13 +33,14 @@ attributes:
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
-  categoryId: contemporary-fashion
-  categoryName: 1. Contemporary Fashion
+  categoryId: subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
-    - contemporary-fashion
+    - subcultures
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

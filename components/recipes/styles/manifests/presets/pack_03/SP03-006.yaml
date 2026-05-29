@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-006
 packId: pack_03
 name: V-Ray ArchViz Raytracer
-category: 5. Render Engines
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - render-engines
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Architectural visualization
   form_and_line: Precise
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Inviting, expensive, aspirational living
   key_features: Clean lines, adaptive sampling
+  creative_brief: Sunlight pours through virtual windows calibrated to real-world lumens, warming surfaces that feel inhabited before anyone arrives — IES profiles paint light with the precision of architectural specification. Layered BRDF materials blur the line between render and photograph, and adaptive sampling sharpens edges that matter while letting others soften into atmosphere. The space invites you to imagine living there, an aspiration rendered in wood grain and warm exposure.
 avoidRules:
   - photo
   - drawing
@@ -41,11 +42,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: render-engines
-  categoryName: 5. Render Engines
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - render-engines
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-061
 packId: pack_02
 name: Golden Hour
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Sunset light
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Long shadows, stretched silhouette, golden flooring
   atmosphere: Warm, happy, fleeting beauty, end-of-day peace
   key_features: Rim light, lens flare burst, dew-sparkle
+  creative_brief: The last honeyed rays of a sinking sun drag long shadows across the earth, bathing every surface in amber and peach. It is the color of nostalgia made visible—a fleeting warmth that transforms the ordinary into the unforgettable, suspending the world in that brief threshold where day exhales into dusk.
 avoidRules:
   - blue
   - cold
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

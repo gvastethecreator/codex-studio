@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-040
 packId: pack_08
 name: Space Suit (Retro)
-category: 2. Historical & Fantasy
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - fashion-and-costume
-  - historical-and-fantasy
+  - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Apollo retro moon mission, one-small-step romance, Cape-Canaveral optimism
   form_and_line: Bulky suit, pressurized-ring segmentation, hose-connector geometry, glove-gasket bulk, backpack-box volume
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Heroic, exploration, sea-of-tranquility wonder, mission-control suspense, giant-leap awe
   key_features: Bubble helmet, gold visor, mission patch, umbilical hoses, moon boots
+  creative_brief: Beta cloth gleaming in the unfiltered light of a sun that has never touched atmosphere, gold visor reflecting the curve of a world left behind. Rubber gaskets and aluminum connectors seal a human shape against the silence of vacuum, mission patches sewn with the optimism of an era that believed the stars were the next frontier and suited up accordingly, each Velcro tab a small grasp at infinity.
 avoidRules:
   - modern sleek
 assets:
@@ -30,13 +31,14 @@ attributes:
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
-  categoryId: historical-and-fantasy
-  categoryName: 2. Historical & Fantasy
+  categoryId: fantasy-sci-fi-costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
-    - historical-and-fantasy
+    - fantasy-sci-fi-costume
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

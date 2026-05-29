@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: Masaaki Yuasa style, fluid distortion, elastic metamorphosis, neon colors, psychedelic horror, club-color horror, youthful collapse, dancefloor apocalypse, Sabbath party climax, demonic possession, track-runner despair
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
   atmosphere: Psychedelic, tragic, devastating, neon-drenched
   key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
+  creative_brief: Bodies liquefy and reform on the dancefloor as demons pour through the cracks in human desire. Neon bleeds across skin that no longer obeys the laws of anatomy, stretching toward ecstasy and annihilation simultaneously. The apocalypse arrives not with a bang but with a bass drop that shatters every heart in the club.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: dark-fantasy-and-seinen
   categoryName: 9. Dark Fantasy & Seinen
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - dark-fantasy-and-seinen
   supportedTasks:
     - image_generate

@@ -2,15 +2,15 @@ schemaVersion: 1
 id: SP05-025
 packId: pack_05
 name: Shadow Notebook Thriller
-category: 2. 2000s Classics
+category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
-  - 2000s-classics
+  - anime-battle-and-worlds
+  - modern-shonen-and-action
 visualDna:
   aesthetic: Severe lighting, cat-and-mouse psychology, elite interiors, symbolic menace, death-note pages, notebook rules, shinigami eyes, apple motifs
   form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
   atmosphere: Tense, cerebral, chilling, intellectual
   key_features: Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy
+  creative_brief: Severe lighting carves a shinigami's grin from absolute darkness while ruled notebook pages flutter like death warrants across a chessboard of cat-and-mouse psychology. Apple motifs rot in the margins, the clean 2000s digital polish making the intellectual menace feel surgical—every shadow a calculation, every calm expression a confession withheld.
 avoidRules:
   - realistic
   - 3d render
@@ -40,12 +41,12 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
-  categoryId: 2000s-classics
-  categoryName: 2. 2000s Classics
+  packName: Anime Battle & Worlds
+  categoryId: modern-shonen-and-action
+  categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
-    - 2000s-classics
+    - anime-battle-and-worlds
+    - modern-shonen-and-action
   supportedTasks:
     - image_generate
     - image_edit

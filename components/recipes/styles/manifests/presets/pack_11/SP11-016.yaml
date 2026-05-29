@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-016
 packId: pack_11
 name: Plushie
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Stuffed animal, plush companion, toy-store mascot, bedtime best-friend
   form_and_line: Seams, stuffed-round contours, soft-pillow silhouette
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Round shapes, oversize-head proportions, stubby limbs, chunky paws
   atmosphere: Comforting, soft, security-blanket warmth, bedtime safety, unconditional love
   key_features: Button eyes, stitched smile, bean-bag weight, satin-bow accent
+  creative_brief: Button eyes hold gaze without judgment, stitched smiles promising the unconditional comfort that smells like nursery safety and bedtime years. Polyester filling shifts with every embrace, reshaping the plush companion into the unique form of each child's specific love. Softness as sanctuary, velvet-touch tenderness manufactured by the dozen yet made singular by affection.
 avoidRules:
   - hard
   - plastic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

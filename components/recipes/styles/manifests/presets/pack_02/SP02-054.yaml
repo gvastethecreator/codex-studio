@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-054
 packId: pack_02
 name: Infrared Film (Aerochrome)
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: False color IR
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Alien, dream, Mars-on-Earth, infrared hallucination
   key_features: Red trees, cotton-candy forest, white grass
+  creative_brief: The world reimagined through frequencies the eye was never meant to see, as if the planet were photographed on emulsion exposed to a different star. Verdant canopies erupt into fields of coral and magenta, skies deepen into alien cyan, and the familiar landscape becomes a biosphere from a parallel earth. Reality bends toward hallucination without ever breaking its own strange coherence.
 avoidRules:
   - green grass
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

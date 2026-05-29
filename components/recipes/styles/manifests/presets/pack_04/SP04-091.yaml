@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-091
 packId: pack_04
 name: Architecture Massing Model
-category: 4. Concept Art
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - childrens-and-educational
 visualDna:
   aesthetic: Physical-foam-core-architecture-massing-model, white-balsa-wood-and-chipboard-buildings, rough-cut-xacto-knife-edges, hot-glue-seams visible, scale-figures-inserted-for-reference, contextual-surrounding-blocks-in-grey, cut-out-paper-trees-on-wire-stands, architectural-school-pinup-critique energy, early-stage-volume-study, before-digital-before-rendering
   form_and_line: Xacto-knife-cut-rough-contours, foam-core-layered-stepping, hot-glue-beads-between-planes, chipboard-grain-direction, wire-pin-tree-supports
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Scale-model-proportions, contextual-block-surroundings, figure-scale-reference, base-board-ground-plane, top-down-aerial-photography
   atmosphere: Studio-critique-nervous, late-night-model-building, form-discovery-excitement, architectural-school-soul, chipboard-dust-and-coffee
   key_features: Foam-core-white-blocks, balsa-wood-warmth, xacto-cut-rough-edges, hot-glue-beads, scale-figure-reference, chipboard-base, cut-out-paper-trees, contextual-surrounding-massing
+  creative_brief: Balsa wood and chipboard rise from the worktable in the rough geometry of architectural dreaming, hot-glue seams visible as honest scars of construction. Scale figures stand at the base of foam-core towers, tiny witnesses to the volume study. This is architecture before architecture, where the building exists first as model and the model exists first as all-nighter.
 avoidRules:
   - detailed
   - rendered
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

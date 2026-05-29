@@ -1,0 +1,52 @@
+schemaVersion: 1
+id: SP05-337
+packId: pack_13
+name: Yoh Yoshinari - Firework Fantasy Draftsmanship
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Playful fantasy machines and explosive magic rendered with impossibly confident draftsmanship, joyous motion, arcane hardware, bright celebration of animation skill itself
+  form_and_line: Exceptionally confident contour, machinery-rich detailing, energetic arc-based line motion
+  color_palette: Festival orange, cobalt blue, emerald, parchment cream, ruby red, twilight purple
+  lighting_setup: Festival-night bursts, magical spark showers, crisp directional highlights, celebratory rim light
+  material_texture: Metal fittings, parchment and leather, spark particles, polished animation-finish surfaces
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Whip-fast action curves, machine-layer depth, playful figure exaggeration, fireworks-burst composition
+  atmosphere: Joyful, intricate, explosive, playful
+  key_features: Complex fantasy machinery, fireworks-like magic, joyous motion arcs, confident draftsmanship, celebratory action design
+  creative_brief: Fireworks are arguments for joy. Machinery blooms into magic, arcs of motion spell out celebration, and every gear turns toward wonder. Draftsmanship itself becomes the subject, confident enough to play.
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-337.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-character-and-lifestyle
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

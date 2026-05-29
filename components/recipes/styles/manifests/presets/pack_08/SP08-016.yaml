@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Casual, unpretentious, genuine, coffee-shop routine, unbothered authenticity
   key_features: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker
+  creative_brief: The radical proposition that enough is enough, dad jeans worn without irony because irony requires effort. Fleece and stonewash exist in a state of grace, nothing-to-prove comfort that took forty years to achieve, standing in a coffee shop looking exactly like someone who has never tried to look like anything.
 avoidRules:
   - flashy
   - expensive
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

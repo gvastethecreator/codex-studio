@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-049
 packId: pack_03
 name: Character Design (T-Pose)
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Character model sheet
   form_and_line: Anatomical
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Concept art, production, model-sheet
   atmosphere: Neutral, design, audition-ready
   key_features: T-Pose or A-Pose, turn-around clarity
+  creative_brief: 'The character stands arms-out in the universal language of the pipeline — T-pose or A-pose, neutral and unposed, every anatomical decision laid bare under even, character-sheet lighting. Skin tones render accurately without dramatic shadow, and cloth drapes with production-ready honesty. The image is an audition: a model sheet waiting for a rigger, a concept made tangible, design clarity prioritized over drama.'
 avoidRules:
   - action pose
   - background
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

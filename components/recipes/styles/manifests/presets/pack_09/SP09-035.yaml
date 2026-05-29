@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-035
 packId: pack_09
 name: Burnt Wood (Shou Sugi Ban)
-category: 4. Weathering & Decay
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - weathering-and-decay
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Charred timber
   form_and_line: Deep cracks (alligator skin)
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Cracked blocks
   atmosphere: Dark, fire
   key_features: Rectangular cracks
+  creative_brief: Compose the dark armor of Shou Sugi Ban charred timber where fire has transformed the surface into a cracked landscape of alligator-skin carbon, rectangular fissures mapping the grain into blocks of preserved black. The char should feel deep enough to fall into, a matte darkness that protects the wood beneath by becoming its own shield. Capture the paradox of fire as preservative, destruction worn as durable beauty.
 avoidRules:
   - ash
   - grey
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: weathering-and-decay
-  categoryName: 4. Weathering & Decay
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - weathering-and-decay
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-017
 packId: pack_02
 name: 90s Sitcom
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Cozy multi-camera apartment set, Friends/Seinfeld warmth, laugh-track comfort, 90s New York vibe
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Comfort, funny, hangout warmth, nostalgic security
   key_features: 3-wall set, central sofa, kitchen doorway
+  creative_brief: Warm light spills across familiar furniture like an old friend settling into a favorite chair. Every corner of the room holds the echo of laughter, the walls saturated with decades of shared jokes and knowing glances. The frame itself becomes a hug, wrapping the viewer in the amber glow of belonging.
 avoidRules:
   - cinematic
   - dark
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

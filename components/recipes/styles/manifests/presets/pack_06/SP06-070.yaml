@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-070
 packId: pack_06
 name: Vision Board
-category: 4. Mixed Media
+category: 5. Mixed Media
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Hopeful, messy
   key_features: Pinned items
+  creative_brief: Cork accepts the pin with a soft crunch, each punctured image a wish made physical on a board of intentions. String connects the connected, red yarn mapping relationships between clippings like a conspiracy theorist's dream board. The arrangement grows organically, a garden of aspiration pinned to vertical space.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: mixed-media
-  categoryName: 4. Mixed Media
+  categoryName: 5. Mixed Media
   tags:
     - essential-art-styles
     - mixed-media
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

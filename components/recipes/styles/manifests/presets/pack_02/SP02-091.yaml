@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-091
 packId: pack_02
 name: Office Whiteboard Doodle
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Dry-erase marker on whiteboard, conference-room meeting doodles, stick-figure presentations with arrows everywhere, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, Venn-diagram jokes, SWOT-analysis-gone-wrong energy
   form_and_line: Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Stick figures with comically oversized heads, arrows looping in impossible circles, text squeezed into board corners
   atmosphere: Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling
   key_features: Dry-erase marker strokes, eraser ghost trails, stick figures everywhere, flowchart arrows, Venn-diagram joke circles, glossy board reflection
+  creative_brief: A glossy surface bears the archaeology of a meeting that lost its way—stick figures wage war with arrows, Venn diagrams collapse into absurdity, and the ghost of a previous idea lingers beneath an incomplete erasure. The fluorescent hum overhead witnesses this small rebellion, creativity blooming in the cracks of corporate obligation.
 avoidRules:
   - digital
   - clean
@@ -39,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

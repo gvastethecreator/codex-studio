@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-010
+packId: pack_12
+name: Volcanic Forge Dungeon
+category: 6. Wilderness Hunts & Harsh Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+visualDna:
+  aesthetic: Infernal dungeon with active demonic foundries.
+  subject_treatment: Titanic blacksmiths as zone mini-bosses.
+  color_and_tone: Molten oranges, charcoal blacks and copper reflections.
+  lighting_and_shadow: Lava as a key-light and smoke as a dense fill.
+  texture_and_material: Slag, incandescent iron, and aged chains.
+  camera_and_composition: Diagonal axis between bridges and crucibles.
+  atmosphere_and_mood: Hostile, abrasive, and ritualistic.
+  rendering_and_quality: Playable environment with clear landmarks.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - snow
+  - pastel
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-010.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-013
 packId: pack_02
 name: Blockbuster Teal & Orange
-category: 1. Film Genres
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - film-genres
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Modern action movie
   form_and_line: None
@@ -20,6 +20,7 @@ visualDna:
   spatial_distortion: Lens flare, anamorphic streak, specular bloom
   atmosphere: Intense, cinematic, bombastic spectacle, summer tentpole
   key_features: Color grade, slow-motion hero walk, debris rain
+  creative_brief: Coolness pools in every shadow while warmth clings to skin like a second sun, the two temperatures locked in an embrace that defines the modern epic. Debris hangs suspended in amber light, and the hero's silhouette carves itself against a sky on fire.
 avoidRules:
   - natural color
 assets:
@@ -29,11 +30,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: film-genres
-  categoryName: 1. Film Genres
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - film-genres
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

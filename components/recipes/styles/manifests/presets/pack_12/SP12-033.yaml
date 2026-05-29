@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-033
+packId: pack_12
+name: Robot Orchard Defense
+category: 3. Sci-Fi Frontiers & Mech Zones
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+visualDna:
+  aesthetic: Futuristic rural defense in automated orchards.
+  subject_treatment: Armed agricultural drones and engineer farmers.
+  color_and_tone: Vibrant greens, industrial orange, and solar white.
+  lighting_and_shadow: Warm afternoon light with active sensor highlights.
+  texture_and_material: Waxy fruit, enameled metal, and damp soil.
+  camera_and_composition: Crop corridors functioning as defensive lanes.
+  atmosphere_and_mood: Rural ingenuity and community resilience.
+  rendering_and_quality: Fresh, original tower-defense scene.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - grimdark
+  - overfog
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-033.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-315
+packId: pack_16
+name: Zeta Gundam - Colony Flashpoint Tragedy
+category: 11. 70s & 80s Retro Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - 70s-and-80s-retro-anime
+visualDna:
+  aesthetic: Sharper-edged war mecha, colony politics, cockpit grief, military uniforms under harsher 80s sci-fi lighting, youth crushed by factional conflict
+  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
+  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
+  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
+  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
+  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
+  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  atmosphere: Tense, militarized, tragic, angular
+  key_features: Cockpit and colony imagery, war-uniform silhouettes, sharper mecha forms, political tension framing, pilot trauma close-ups
+  creative_brief: Colony glass fractures in slow motion while cockpit screens paint a teenager face in the colors of impossible choices. Metal sharpens into ideology and grief comes in angular shadows that no mobile suit can shield. War in this register tastes like static and smells like someone else future burning.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-315.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: 70s-and-80s-retro-anime
+  categoryName: 11. 70s & 80s Retro Anime
+  tags:
+    - anime-classics-and-prestige
+    - 70s-and-80s-retro-anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
   aesthetic: Religious-firefighter action, glowing ember halos, rescue teams in black coats, infernal combustion, cathedral-industrial interiors, liturgical symbolism mixed with speed-line heroics
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
   atmosphere: Blazing, heroic, sacred, kinetic
   key_features: Flame trails, brigade uniforms, ember particles, cathedral scale, ignition-focused action posing
+  creative_brief: Fire prayers rise through cathedral naves where brigade coats cut black silhouettes against altar flames. Embers drift upward like inverted benedictions, the sacred and the combustible fused into a single liturgical emergency. Salvation here wears turnout gear and moves at ignition speed — faith propelled through inferno by the sole conviction that something burning can still be saved.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: modern-shonen-and-action
   categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - modern-shonen-and-action
   supportedTasks:
     - image_generate

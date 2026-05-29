@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-065
 packId: pack_01
 name: Pet Photography
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Cute dog/cat portrait
   form_and_line: Eye level
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Wide angle nose (boop)
   atmosphere: Playful, sweet
   key_features: Looking at camera
+  creative_brief: A face met at the same plane, pupil to pupil, where wide-angle curiosity approaches first and the eyes behind it hold an intelligence older than domestication. Soft light nestles into fur like comfort into memory, the frame built entirely around the presence of a creature who does not perform but simply is. Joy arrives unarmed, asking only to be returned in kind.
 avoidRules:
   - scary
   - wild
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

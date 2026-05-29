@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-018
+packId: pack_12
+name: Storm Citadel Defense Grid
+category: 3. Sci-Fi Frontiers & Mech Zones
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+visualDna:
+  aesthetic: Tower defense in electric bastion on cliffs.
+  subject_treatment: Arcanotechnological towers with interchangeable modules.
+  color_and_tone: Storm blues, silver, and orange pulses.
+  lighting_and_shadow: Frequent lightning strikes and impact flashes.
+  texture_and_material: Carved stone, conductive copper, and lit runes.
+  camera_and_composition: Clear isometric view for enemy routes.
+  atmosphere_and_mood: Tense strategy and territorial control.
+  rendering_and_quality: Gameplay visual with emphasis on readability.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - chaotic-ui
+  - low-contrast
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-018.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

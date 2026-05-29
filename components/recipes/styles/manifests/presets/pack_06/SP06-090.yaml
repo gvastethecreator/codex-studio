@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-090
 packId: pack_06
 name: Voxel Block Sprites
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Three-dimensional pixel blocks, voxel-art characters, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic-pixel world, Minecraft-meets-sprite-sheet, colorful block-built characters, isometric cube-grid construction, toy-block 3D pixel art
   form_and_line: Cubic-voxel contour, block-stepped edges, orthogonal grid construction, visible cube boundaries, straight-angle everything
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Voxel-grid blocky proportions, isometric cube arrangement, cube-stepped curves, block-resolution shape limitation
   atmosphere: Playful, constructive, toy-block creativity, digital-Lego spirit, colorful-three-dimensional-pixel joy
   key_features: Cubic-voxel construction, block-stepped contours, isometric grid alignment, ambient-occlusion block edges, per-cube flat coloring
+  creative_brief: The world measured in cubes, curves approximated by stepping blocks, the smooth world rejected in favor of the constructible. Every cube face catches light at a different angle, ambient occlusion darkening the joints where blocks meet, giving mass to the modular. The image is a toy that became a universe, LEGO brick logic scaled to infinity.
 avoidRules:
   - smooth
   - organic
@@ -39,13 +40,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

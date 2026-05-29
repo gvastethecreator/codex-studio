@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-072
 packId: pack_01
 name: Tilt-Shift (Miniature)
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: City looks like toys
   form_and_line: Blur top and bottom
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Selective focus plane
   atmosphere: Tiny, cute
   key_features: Miniature effect
+  creative_brief: The colossal shrinks into a dollhouse diorama, entire cities reduced to the logic of a playset where blurring edges create their own physics. Wonder arrives not from what is shown but from the impossible tenderness of scale inverted.
 avoidRules:
   - sharp everywhere
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-072
 packId: pack_07
 name: Bottle Ship
-category: 5. Fantasy Architecture
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - fantasy-architecture
+  - residential-interiors
 visualDna:
   aesthetic: Ship inside glass, impossible-in-bottle, maritime miniature, patience-craft, message-in-bottle mystery
   form_and_line: Glass reflection, hull-curve silhouette, mast-rigging threads, bottle-neck constriction, cork-stopper circle
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Distorted by glass
   atmosphere: Precious, trapped, still-voyage, curio-cabinet, patient-hands, impossible-journey, nautical-dream
   key_features: Glass bottle, miniature ship, cork, rigging threads, glass distortion, display stand, impossible construction
+  creative_brief: Hull and rigging captured mid-voyage through a bottleneck that denies the ship's original scale. Glass distorts the masts, the whole vessel swimming in a lens-curved miniature ocean of trapped air. The bottle holds not just a ship but the impossible patience of hands that threaded masts through necks narrower than conviction.
 avoidRules:
   - ocean
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: fantasy-architecture
-  categoryName: 5. Fantasy Architecture
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - fantasy-architecture
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-017
+packId: pack_12
+name: Lava Skate Arena
+category: 5. Speed, Sport & Competitive Arenas
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+visualDna:
+  aesthetic: Extreme arcade sport on mobile volcanic platforms.
+  subject_treatment: Futuristic riders with thermal reactive equipment.
+  color_and_tone: Magma red, basalt black, and cyan from diegetic UI elements.
+  lighting_and_shadow: Nether lava glow and stadium spotlights.
+  texture_and_material: Vitrified rock, anodized metal, and dense smoke.
+  camera_and_composition: Wide plane with route lines.
+  atmosphere_and_mood: Vertigo, spectacle, and high rhythm.
+  rendering_and_quality: Promotional art for competitive mode.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - static-pose
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-017.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

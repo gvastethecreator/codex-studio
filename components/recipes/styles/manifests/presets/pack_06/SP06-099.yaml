@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-099
 packId: pack_06
 name: DS Flipnote Studio
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Nintendo-DSi-Flipnote-Studio aesthetic, crude-black-and-white-hand-drawn animation on tiny stylus-screen, simple-bouncing-stick-figures, memo-pad-gridding, DS-camera-crude-photo-backgrounds, low-res-LCD-limitation, exported-GIF-quality-charm, internet-Flipnote-Hatena-community-art, 2009-creativity-within-limitations, Pokemon-Scribble-community-energy
   form_and_line: Stylus-drawn-on-resistive-touchscreen, jittery-hand-drawn-lines, crude-simple-contours, frame-by-frame-animation-marks, tiny-screen-scale linework
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Tiny-DS-LCD-resolution, stylus-screen-proportions, flipnote-memo-pad-gridding, crude-perspective-attempts, exported-GIF-spatial-compression
   atmosphere: Youthful, creative-community, bedroom-animation-studio, DSi-sharing- nostalgia, 2009-internet-early-social-media, charming-simplicity
   key_features: Black-on-white-drawing-only, DS-stylus-jittery-lines, flipbook-animation-marks, DSi-camera-backgrounds, memo-pad-grid-texture, low-res-LCD, exported-GIF-artifacts
+  creative_brief: A plastic stylus drags across resistive touchscreen, black line on white canvas, the jitter of the hand recorded in every stroke. Frame-by-frame animation assembled on a device designed for notes, the Nintendo DS becoming a studio for a generation. The image is exported as a GIF, uploaded to Hatena, shared with a community that made art from the simplest possible tools because simplicity was all they had and all they needed.
 avoidRules:
   - color
   - 3d
@@ -40,13 +41,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

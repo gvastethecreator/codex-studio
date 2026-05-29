@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-019
 packId: pack_09
 name: Gold Leaf
-category: 2. Man-Made Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Thin foil application
   form_and_line: Crinkles and overlaps
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flaking
   atmosphere: Expensive, fragile
   key_features: Square sheets
+  creative_brief: Compose the fragile opulence of gold leaf applied in crinkled squares barely thicker than thought, where every wrinkle and overlap records the gilder's trembling hand in metallic memory. The surface should catch light like a held breath, areas of flat brilliance interrupted by the micro-topography of folded foil. Render the paradox of permanence made impossibly delicate.
 avoidRules:
   - solid gold bar
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

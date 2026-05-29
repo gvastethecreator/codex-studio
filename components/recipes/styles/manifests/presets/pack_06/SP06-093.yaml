@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-093
 packId: pack_06
 name: MSX2 Japanese Computer
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: MSX2-Japanese-8-bit-computer-art, bright-vibrant-pixel-palette unique to Japanese-home-computers, Metal-Gear-original-stealth-sprites, Ys-ancient- adventure-RPG-tiles, Konami-MSX-era-charm, slightly-compact-Japanese-pixel-style, SCREEN-mode-graphics-layered, disk-BASIC-and-cassette-tape-loading
   form_and_line: Compact-pixel-sprite-design, 256x212-screen-resolution, Japanese-text-8x8-character-cells, sprite-pattern-table-limits
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 256x212-Japanese-resolution, SCREEN-mode-layering, vertical-scanline-rendering, Kanji-text-overlay, pixel-aspect-specific-to-MSX
   atmosphere: 80s-Japan-tech wonder, Konami-office-creativity, cassette-tape-patience, early-Kojima-stealth-atmosphere, Akihabara-electronics-district soul
   key_features: MSX2-vibrant-palette, compact-pixel-resolution, SCREEN-mode-layering, Kanji-character-support, Konami-charm, Japanese-8-bit-brightness, 256x212-proportions
+  creative_brief: Compact sprites in a palette that Japan made brighter than the West could match — emerald greens, cherry reds, konami blues — populate a 256x212 grid that shows its kanji without apology. The image carries the spirit of Akihabara before the tourists arrived, of disk BASIC and FM synthesis and games that fit on a cassette. Brightness is the aesthetic, saturation the philosophy.
 avoidRules:
   - western
   - modern
@@ -39,13 +40,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

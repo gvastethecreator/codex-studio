@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-041
 packId: pack_07
 name: French Formal Garden
-category: 4. Landscape Architecture
+category: 4. Landscape And Gardens
 version: 1
 supportedTasks:
   - image_generate
@@ -10,10 +10,10 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-architecture
+  - landscape-and-gardens
 visualDna:
   aesthetic: Versailles grand formal palace garden, geometric power, royal symmetry
-  form_and_line: Symmetry, patterns, axial vistas, parterre embroidery, reflecting-canal lines, allée perspectives
+  form_and_line: "Symmetry, patterns, axial vistas, parterre embroidery, reflecting-canal lines, avenue perspectives"
   color_palette: Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone
   lighting_setup: Flat sun, axial-light drama, fountain-sparkle, golden-hour hedge wash, statue-silhouette
   material_texture: Manicured hedge, clipped boxwood, raked gravel, fountain stone, lead statue, grass parterre
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Order, grand, absolute, orchestrated nature, king's gaze, tamed creation
   key_features: Topiary, reflecting pool, parterre de broderie, axial vista, fountain, statue, orangery
+  creative_brief: Boxwood bends to geometry, nature disciplined into parterre embroidery that reads like green scripture from above. Reflecting pools double the sky, water turned to mirror that makes architecture believe it has a twin. The garden follows orders, every axis a line drawn by a king who mistook control for beauty.
 avoidRules:
   - wild
   - messy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-architecture
-  categoryName: 4. Landscape Architecture
+  categoryId: landscape-and-gardens
+  categoryName: 4. Landscape And Gardens
   tags:
     - architecture-and-interior
-    - landscape-architecture
+    - landscape-and-gardens
   supportedTasks:
     - image_generate
     - image_edit

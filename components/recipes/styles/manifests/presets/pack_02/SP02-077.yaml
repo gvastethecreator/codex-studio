@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-077
 packId: pack_02
 name: Underwater Light
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Submerged
   form_and_line: Caustics
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Warped, refractive bend, swim-goggle perspective
   atmosphere: Calm, deep, abyssal peace, submerged solitude
   key_features: Caustics, light-net, bubbles, floating hair
+  creative_brief: Breath held, weight surrendered, the world dissolves into ribbons of filtered sun dancing across skin and scale. Shapes waver and bloom through a liquid lens, every edge softened by the patience of depth. Silence here is not empty but full, a cathedral of blue where light arrives as a visitor, not a resident.
 avoidRules:
   - dry
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

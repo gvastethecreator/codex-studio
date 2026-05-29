@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-065
+packId: pack_12
+name: Crystal Crown Duel Hall
+category: 5. Speed, Sport & Competitive Arenas
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+visualDna:
+  aesthetic: Royal duel hall beneath a crystal dome.
+  subject_treatment: Champions with stylized ceremonial armor.
+  color_and_tone: Pearl white, sapphire blue, and soft gold.
+  lighting_and_shadow: Elegant, clean overhead illumination.
+  texture_and_material: Carved crystal, silk, and marble.
+  camera_and_composition: Frontal symmetry for 1v1 combat.
+  atmosphere_and_mood: Nobility, rivalry, and precision.
+  rendering_and_quality: Competitive stage with premium identity.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - grunge
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-065.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

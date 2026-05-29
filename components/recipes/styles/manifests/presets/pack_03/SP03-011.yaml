@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-011
 packId: pack_03
 name: Glass & Crystal
-category: 1. Materials
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Transparent refractive object
   form_and_line: Caustics
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Refraction
   atmosphere: Elegant, fragile, luxury boutique
   key_features: Transparency, dispersion rainbow
+  creative_brief: Light enters a solid and forgets its straight-line discipline — caustic patterns bloom on nearby surfaces like luminous water lilies, and prismatic dispersion paints rainbows where geometry bends the spectrum. The object is both present and absent, defined by what passes through it rather than what stays. A boutique window at midnight, every edge a blade of frozen clarity.
 avoidRules:
   - opaque
   - dull
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 1. Materials
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

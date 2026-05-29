@@ -1,126 +1,149 @@
 schemaVersion: 1
 id: pack_06
 name: Essential Art Styles
-description: A comprehensive collection of 80+ traditional and digital art techniques.
+description: A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.
 categories:
-  - id: digital-art
-    name: 1. Digital Art
-    presetRefs:
-      - pack_06/SP06-046.yaml
-      - pack_06/SP06-048.yaml
-      - pack_06/SP06-053.yaml
-      - pack_06/SP06-051.yaml
-      - pack_06/SP06-047.yaml
-      - pack_06/SP06-054.yaml
-      - pack_06/SP06-057.yaml
-      - pack_06/SP06-059.yaml
-      - pack_06/SP06-050.yaml
-      - pack_06/SP06-056.yaml
-      - pack_06/SP06-060.yaml
-      - pack_06/SP06-055.yaml
-      - pack_06/SP06-049.yaml
-      - pack_06/SP06-058.yaml
-      - pack_06/SP06-052.yaml
   - id: traditional-painting
-    name: 2. Traditional Painting
+    name: 1. Traditional Painting
     presetRefs:
       - pack_06/SP06-001.yaml
-      - pack_06/SP06-014.yaml
-      - pack_06/SP06-003.yaml
       - pack_06/SP06-002.yaml
+      - pack_06/SP06-003.yaml
       - pack_06/SP06-004.yaml
       - pack_06/SP06-005.yaml
       - pack_06/SP06-006.yaml
       - pack_06/SP06-007.yaml
+      - pack_06/SP06-008.yaml
       - pack_06/SP06-009.yaml
       - pack_06/SP06-010.yaml
       - pack_06/SP06-011.yaml
       - pack_06/SP06-012.yaml
-      - pack_06/SP06-008.yaml
       - pack_06/SP06-013.yaml
+      - pack_06/SP06-014.yaml
       - pack_06/SP06-015.yaml
   - id: drawing-and-sketching
-    name: 3. Drawing & Sketching
+    name: 2. Drawing & Sketching
     presetRefs:
-      - pack_06/SP06-018.yaml
-      - pack_06/SP06-026.yaml
       - pack_06/SP06-016.yaml
       - pack_06/SP06-017.yaml
+      - pack_06/SP06-018.yaml
+      - pack_06/SP06-019.yaml
       - pack_06/SP06-020.yaml
       - pack_06/SP06-021.yaml
+      - pack_06/SP06-022.yaml
+      - pack_06/SP06-023.yaml
+      - pack_06/SP06-024.yaml
+      - pack_06/SP06-025.yaml
+      - pack_06/SP06-026.yaml
       - pack_06/SP06-027.yaml
       - pack_06/SP06-028.yaml
       - pack_06/SP06-029.yaml
       - pack_06/SP06-030.yaml
-      - pack_06/SP06-019.yaml
-      - pack_06/SP06-022.yaml
-      - pack_06/SP06-024.yaml
-      - pack_06/SP06-025.yaml
-      - pack_06/SP06-023.yaml
-  - id: mixed-media
-    name: 4. Mixed Media
+  - id: printmaking
+    name: 3. Printmaking
     presetRefs:
+      - pack_06/SP06-031.yaml
+      - pack_06/SP06-032.yaml
+      - pack_06/SP06-033.yaml
+      - pack_06/SP06-034.yaml
+      - pack_06/SP06-035.yaml
+      - pack_06/SP06-036.yaml
+      - pack_06/SP06-037.yaml
+      - pack_06/SP06-038.yaml
+      - pack_06/SP06-039.yaml
+      - pack_06/SP06-040.yaml
+      - pack_06/SP06-041.yaml
+      - pack_06/SP06-042.yaml
+      - pack_06/SP06-043.yaml
+      - pack_06/SP06-044.yaml
+      - pack_06/SP06-045.yaml
+  - id: digital-art
+    name: 4. Digital Art
+    presetRefs:
+      - pack_06/SP06-046.yaml
+      - pack_06/SP06-047.yaml
+      - pack_06/SP06-048.yaml
+      - pack_06/SP06-049.yaml
+      - pack_06/SP06-050.yaml
+      - pack_06/SP06-051.yaml
+      - pack_06/SP06-052.yaml
+      - pack_06/SP06-053.yaml
+      - pack_06/SP06-054.yaml
+      - pack_06/SP06-055.yaml
+      - pack_06/SP06-056.yaml
+      - pack_06/SP06-057.yaml
+      - pack_06/SP06-058.yaml
+      - pack_06/SP06-059.yaml
+      - pack_06/SP06-060.yaml
+  - id: mixed-media
+    name: 5. Mixed Media
+    presetRefs:
+      - pack_06/SP06-061.yaml
+      - pack_06/SP06-062.yaml
+      - pack_06/SP06-063.yaml
       - pack_06/SP06-064.yaml
-      - pack_06/SP06-073.yaml
-      - pack_06/SP06-077.yaml
+      - pack_06/SP06-065.yaml
       - pack_06/SP06-066.yaml
+      - pack_06/SP06-067.yaml
       - pack_06/SP06-068.yaml
       - pack_06/SP06-069.yaml
       - pack_06/SP06-070.yaml
       - pack_06/SP06-071.yaml
       - pack_06/SP06-072.yaml
+      - pack_06/SP06-073.yaml
       - pack_06/SP06-074.yaml
-      - pack_06/SP06-078.yaml
-      - pack_06/SP06-080.yaml
-      - pack_06/SP06-063.yaml
-      - pack_06/SP06-065.yaml
       - pack_06/SP06-075.yaml
-      - pack_06/SP06-062.yaml
-      - pack_06/SP06-067.yaml
       - pack_06/SP06-076.yaml
+      - pack_06/SP06-077.yaml
+      - pack_06/SP06-078.yaml
       - pack_06/SP06-079.yaml
-      - pack_06/SP06-061.yaml
-  - id: printmaking
-    name: 5. Printmaking
+      - pack_06/SP06-080.yaml
+  - id: retro-game-visual-systems
+    name: 6. Retro Game Visual Systems
     presetRefs:
-      - pack_06/SP06-031.yaml
-      - pack_06/SP06-033.yaml
-      - pack_06/SP06-032.yaml
-      - pack_06/SP06-035.yaml
-      - pack_06/SP06-036.yaml
-      - pack_06/SP06-037.yaml
-      - pack_06/SP06-038.yaml
-      - pack_06/SP06-041.yaml
-      - pack_06/SP06-043.yaml
-      - pack_06/SP06-044.yaml
-      - pack_06/SP06-039.yaml
-      - pack_06/SP06-042.yaml
-      - pack_06/SP06-040.yaml
-      - pack_06/SP06-034.yaml
-      - pack_06/SP06-045.yaml
-  - id: video-game-and-pixel-art-styles
-    name: 6. Video Game & Pixel Art Styles
-    presetRefs:
-      - pack_06/SP06-092.yaml
-      - pack_06/SP06-094.yaml
-      - pack_06/SP06-095.yaml
-      - pack_06/SP06-082.yaml
-      - pack_06/SP06-093.yaml
-      - pack_06/SP06-086.yaml
       - pack_06/SP06-081.yaml
-      - pack_06/SP06-088.yaml
-      - pack_06/SP06-087.yaml
-      - pack_06/SP06-097.yaml
-      - pack_06/SP06-085.yaml
-      - pack_06/SP06-096.yaml
-      - pack_06/SP06-100.yaml
-      - pack_06/SP06-098.yaml
-      - pack_06/SP06-089.yaml
-      - pack_06/SP06-099.yaml
+      - pack_06/SP06-082.yaml
+      - pack_06/SP06-083.yaml
       - pack_06/SP06-084.yaml
+      - pack_06/SP06-085.yaml
+      - pack_06/SP06-086.yaml
+      - pack_06/SP06-087.yaml
+      - pack_06/SP06-088.yaml
+      - pack_06/SP06-089.yaml
       - pack_06/SP06-090.yaml
       - pack_06/SP06-091.yaml
-      - pack_06/SP06-083.yaml
+      - pack_06/SP06-092.yaml
+      - pack_06/SP06-093.yaml
+      - pack_06/SP06-094.yaml
+      - pack_06/SP06-095.yaml
+      - pack_06/SP06-096.yaml
+      - pack_06/SP06-097.yaml
+      - pack_06/SP06-098.yaml
+      - pack_06/SP06-099.yaml
+      - pack_06/SP06-100.yaml
+  - id: game-art-directions-and-ui
+    name: 7. Game Art Directions & UI
+    presetRefs:
+      - pack_06/SP06-101.yaml
+      - pack_06/SP06-102.yaml
+      - pack_06/SP06-103.yaml
+      - pack_06/SP06-104.yaml
+      - pack_06/SP06-105.yaml
+      - pack_06/SP06-106.yaml
+      - pack_06/SP06-107.yaml
+      - pack_06/SP06-108.yaml
+      - pack_06/SP06-109.yaml
+      - pack_06/SP06-110.yaml
+      - pack_06/SP06-111.yaml
+      - pack_06/SP06-112.yaml
+      - pack_06/SP06-113.yaml
+      - pack_06/SP06-114.yaml
+      - pack_06/SP06-115.yaml
+      - pack_06/SP06-116.yaml
+      - pack_06/SP06-117.yaml
+      - pack_06/SP06-118.yaml
+      - pack_06/SP06-119.yaml
+      - pack_06/SP06-120.yaml
 presetRefs:
   - pack_06/SP06-046.yaml
   - pack_06/SP06-048.yaml
@@ -222,3 +245,24 @@ presetRefs:
   - pack_06/SP06-090.yaml
   - pack_06/SP06-091.yaml
   - pack_06/SP06-083.yaml
+  - pack_06/SP06-101.yaml
+  - pack_06/SP06-102.yaml
+  - pack_06/SP06-103.yaml
+  - pack_06/SP06-104.yaml
+  - pack_06/SP06-105.yaml
+  - pack_06/SP06-106.yaml
+  - pack_06/SP06-107.yaml
+  - pack_06/SP06-108.yaml
+  - pack_06/SP06-109.yaml
+  - pack_06/SP06-110.yaml
+  - pack_06/SP06-111.yaml
+  - pack_06/SP06-112.yaml
+  - pack_06/SP06-113.yaml
+  - pack_06/SP06-114.yaml
+  - pack_06/SP06-115.yaml
+  - pack_06/SP06-116.yaml
+  - pack_06/SP06-117.yaml
+  - pack_06/SP06-118.yaml
+  - pack_06/SP06-119.yaml
+  - pack_06/SP06-120.yaml
+

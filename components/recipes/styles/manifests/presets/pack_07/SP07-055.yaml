@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-055
 packId: pack_07
 name: Candy Kingdom
-category: 5. Fantasy Architecture
+category: 4. Landscape And Gardens
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - fantasy-architecture
+  - landscape-and-gardens
 visualDna:
   aesthetic: Edible architecture, confectionery city, sugar-frosted fantasy, dessert landscape, gumdrop wonderland
   form_and_line: Rounded soft, lollipop colonnades, icing-scallop trim, gumdrop spires, chocolate-bar block
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Melting
   atmosphere: Sweet, fun, candy-store joy, whimsical, sugar-high delight, childhood wonder
   key_features: Sprinkles, gumdrop path, icing trim, candy-cane columns, chocolate river, lollipop trees, gingerbread walls
+  creative_brief: Gumdrop spires dissolve slightly at their peaks, architecture built from the chemistry of sweetness and the physics of whimsy. Icing traces scalloped promises across gingerbread walls, every surface a temptation that would ruin dinner. The kingdom stands in eternal afternoon, a place where dentists fear to tread and children dream of citizenship.
 avoidRules:
   - scary
   - realistic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: fantasy-architecture
-  categoryName: 5. Fantasy Architecture
+  categoryId: landscape-and-gardens
+  categoryName: 4. Landscape And Gardens
   tags:
     - architecture-and-interior
-    - fantasy-architecture
+    - landscape-and-gardens
   supportedTasks:
     - image_generate
     - image_edit

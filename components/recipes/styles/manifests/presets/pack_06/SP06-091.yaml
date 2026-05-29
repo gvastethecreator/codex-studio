@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-091
 packId: pack_06
 name: Vectrex Vector Display
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Vectrex-console vector-CRT display, pure-white-glowing-lines on pitch-black-screen, single-color-vector-drawing, Asteroids-style-wireframe, Tempest-tunnel-perspective, analog-electron-beam-drawing-in-real-time, plastic-screen-overlay-color-gels for faux-color, no-pixels-no-bitmap-just-lines, 1982-console-limitation-beauty, cathode-ray-tube-vector-magic
   form_and_line: Pure-glowing-vector-lines-only, wireframe-geometry, electron-beam-drawn-contours, no-filled-surfaces, transparency-through-wireframe, line-brightness-peaking-at-stroke-centers
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Vector-wireframe-perspective, infinite-black-void-space, rotating-wireframe-objects, CRT-screen-curvature, plastic-overlay-frame
   atmosphere: Retro-futuristic, analog-electronic, arcade-darkness, vector-glow-hypnosis, pre-pixel-computing soul
   key_features: Pure-white-vector-lines-on-black, wireframe-only-geometry, CRT-phosphor-glow-bloom, plastic-screen-overlay-framing, single-color-display, line-intersection brightening, electron-beam-persistence
+  creative_brief: Pure white phosphor lines float on glass-black void, the electron beam tracing geometry with analog precision, no pixels, no grid, just voltage translated into light. A colored plastic overlay tints the monochrome into blue or red, a gel between the cathode ray and the eye. The image is light in its most elemental form — a single color, a single beam, a single continuous line that never stops moving.
 avoidRules:
   - raster
   - pixel
@@ -41,13 +42,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

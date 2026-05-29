@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-032
 packId: pack_03
 name: Volumetric Fog
-category: 2. Lighting & Atmosphere
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Light beams in air
   form_and_line: God rays
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Cinematic, atmospheric, immersive mystery
   atmosphere: Mysterious, epic, cathedral scale
   key_features: Light shafts, air-density sculpting
+  creative_brief: The air itself becomes visible — god rays pierce through cathedral windows or forest canopies, carving luminous architecture from suspended particles. Volumetric density sculpts the beam into something you could almost touch, desaturated depth receding into haze where objects forget their edges. The image breathes mystery at epic scale, every light shaft a doorway between the seen and the suggested.
 avoidRules:
   - clear
   - vacuum
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

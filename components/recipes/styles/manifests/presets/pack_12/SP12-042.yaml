@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-042
+packId: pack_12
+name: Quantum Laboratory Rift
+category: 3. Sci-Fi Frontiers & Mech Zones
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+visualDna:
+  aesthetic: Quantum laboratory fractured by a dimensional rupture.
+  subject_treatment: Combat scientists and contained anomalies.
+  color_and_tone: Clinical white, rift violet, and ice blue.
+  lighting_and_shadow: Pulsos intermitentes de portal abierto.
+  texture_and_material: Armored glass, cables, and broken holography.
+  camera_and_composition: Central core with containment rings.
+  atmosphere_and_mood: Science at the limit and controlled chaos.
+  rendering_and_quality: AAA critical-incident scene.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - fantasy-castle
+  - muddy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-042.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

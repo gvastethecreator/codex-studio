@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-063
 packId: pack_06
 name: Decoupage
-category: 4. Mixed Media
+category: 5. Mixed Media
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Surface wrap
   atmosphere: Antique, homey
   key_features: Varnish shine
+  creative_brief: Layers of paper sealed under glossy varnish, edges softened by age, images surrendering their context to a new surface. The crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. Every decoupage is a palimpsest, the old becoming ground for the new.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: mixed-media
-  categoryName: 4. Mixed Media
+  categoryName: 5. Mixed Media
   tags:
     - essential-art-styles
     - mixed-media
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

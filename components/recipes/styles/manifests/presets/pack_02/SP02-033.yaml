@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-033
 packId: pack_02
 name: Pixar Style Family Feature CG
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Stylized family-animation CG, Toy Story/Up warmth, emotional precision, lovable imperfection
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Big eyes, expressive pupil, exaggerated emotion
   atmosphere: Heartwarming, fun, tear-jerking sincerity, family adventure
   key_features: Soft shadows, character silhouette, montage sequence
+  creative_brief: Every surface hums with an inner warmth, as though the objects themselves are glad to be seen. A toy's chipped paint speaks of years loved, a house lifted by balloons carries the weight of what was left unsaid. The light bends not toward realism but toward truth — the kind that makes you laugh and cry in the same breath.
 avoidRules:
   - 2d
   - anime
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-023
 packId: pack_10
 name: VHS Glitch
-category: 5. Digital Glitch & Noise
+category: 3. Digital Glitch & Noise
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Tracking error
   atmosphere: Nostalgic, horror
   key_features: Time stamp
+  creative_brief: Magnetic memory in decay, the tape struggling to reconstruct what it once held. Scanlines rip through faces, color bleeds sideways, and the machine aches with the burden of analog forgetting.
 avoidRules:
   - hd
   - 4k
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: digital-glitch-and-noise
-  categoryName: 5. Digital Glitch & Noise
+  categoryName: 3. Digital Glitch & Noise
   tags:
     - abstract-and-experimental
     - digital-glitch-and-noise
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

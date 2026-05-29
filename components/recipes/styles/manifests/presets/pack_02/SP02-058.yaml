@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-058
 packId: pack_02
 name: X-Ray Photography
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Internal structure
   form_and_line: Bones/Structure
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Transparency, density mapping, interior-only view
   atmosphere: Clinical, spooky, anatomical wonder, hidden structure
   key_features: Inverted, skeleton visible, swallowed object, airport scan
+  creative_brief: The surface surrenders and what lies beneath becomes luminous, a cartography of interior architecture rendered in bone-white against indigo shadow. The familiar body transforms into foreign terrain, mapped by radiation rather than reflection, every hidden chamber and scaffold laid bare. There is both clinical severity and strange tenderness in this unwilling transparency.
 avoidRules:
   - surface detail
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

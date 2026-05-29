@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-109
 packId: pack_02
 name: CatDog - Shared-Body Elastic Nonsense
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Single-body two-headed creature absurdity, opposite temperaments locked in one sausage body, suburban hijinks, long-body contortions, impossible shared anatomy, simple but deeply strange sitcom creature design
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sausage-body contortions, impossible shared spine bends, mirrored emotional poses at both ends, accordion-body compression
   atmosphere: Goofy, elastic, odd-couple, playful
   key_features: Shared-body anatomy, impossible body bends, head-to-tail personality contrast, suburban prop gags, elastic long-form silhouettes
+  creative_brief: Anatomy becomes a punchline as two souls share one impossible spine, stretching across suburban lawns like taffy pulled by competing appetites. The creature's silhouette writes calligraphy of domestic friction — a single body negotiating separate hungers with elastic grace.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

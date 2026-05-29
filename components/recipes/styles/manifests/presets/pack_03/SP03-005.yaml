@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-005
 packId: pack_03
 name: Blender Cycles Open Path Tracer
-category: 5. Render Engines
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - render-engines
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Open source path tracing
   form_and_line: Sharp
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Creative, solid, accessible artistry
   key_features: Principled BSDF, GPU+CPU hybrid
+  creative_brief: Community-built light traces paths through open-source geometries, democratizing the physics of beauty — the Principled BSDF is a single node that speaks a dozen material languages. Filmic log encoding gives the image room to breathe before the final grade, and GPU+CPU hybrid rendering erases the line between patience and performance. Creator-friendly excellence, no gatekeeper required, every frame a testament to the power of the commons.
 avoidRules:
   - eevee
   - realtime
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: render-engines
-  categoryName: 5. Render Engines
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - render-engines
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-096
 packId: pack_04
 name: Weapon Tier Progression
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: RPG-weapon-tier-progression-sheet, rusted-common-to-legendary-glow, same-weapon-eight-ascension-levels, material-evolution-from-cracked-iron-to-celestial-gold, RPG-loot-visual-progression, Monster-Hunter-weapon-tree-design, Diablo-common-to-unique visual arc, game-design-reward-visualization, player-motivation-through-visual-upgrade
   form_and_line: Same-base-silhouette-with-increasing-detail, line-complexity-growing-per-tier, common-item-simple-to-legendary-intricate, ornamentation-progression
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Horizontal-tier-progression-row, same-view-for-comparison, material-magnification-callout-circles, scale-reference, handle-to-blade-proportions
   atmosphere: Progression, aspiration, hard-earned-reward, game-design-psychology, loot-lust-satisfaction, legendary-achievement
   key_features: Eight-tier-progression-row, material-evolution-from-common-to-legendary, glow-ramping-per-tier, consistent-view-for-comparison, material-callout-circles, tier-color-story, RPG-loot-language
+  creative_brief: A single weapon transforms across eight tiers of ascension, cracked iron gathering celestial gold with each progressive iteration. Materials evolve along a visible ladder of player achievement, the object itself chronicling the journey. This is the visual economy of reward, where the sword becomes diary and trophy simultaneously.
 avoidRules:
   - one version
   - static
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

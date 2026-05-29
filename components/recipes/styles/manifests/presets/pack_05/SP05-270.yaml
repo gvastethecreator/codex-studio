@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: Body-part quest under cursed skies, muddy villages, war-torn feudal roads, child thief companionship, brutal folk-horror with emotional tenderness at its center
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
   atmosphere: Bleak, raw, compassionate, cursed
   key_features: Prosthetic-limb motifs, demon silhouettes, war-torn village backdrops, child-and-warrior contrast, cursed-road framing
+  creative_brief: A body reassembled one demon at a time, prosthetic limbs carving through cursed skies toward a wholeness that may never come, the child thief at his side the only mirror in which humanity reflects. War-torn villages and folk-horror landscapes soften at the edges where compassion refuses to surrender to the darkness.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: dark-fantasy-and-seinen
   categoryName: 9. Dark Fantasy & Seinen
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - dark-fantasy-and-seinen
   supportedTasks:
     - image_generate

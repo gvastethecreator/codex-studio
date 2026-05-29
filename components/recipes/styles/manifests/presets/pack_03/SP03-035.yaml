@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-035
 packId: pack_03
 name: HDRI Environment
-category: 2. Lighting & Atmosphere
+category: 3. Environment And Worldbuilding
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - environment-and-worldbuilding
 visualDna:
   aesthetic: Object in real location
   form_and_line: Realistic reflections
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Photorealistic integration, composited realism
   atmosphere: Grounded, location-accurate
   key_features: Matched lighting, reflection authenticity
+  creative_brief: A 360-degree photograph becomes the entire lighting rig — spherical harmony wraps the subject in light borrowed from a real sunset, a real mountaintop, a real city square at golden hour. Reflections carry the DNA of an actual place, not a studio approximation, and ambient integration makes the render disappear into the plate. The object belongs because the light says it belongs, photorealistic integration achieved through environmental truth rather than fakery.
 avoidRules:
   - studio background
 assets:
@@ -29,11 +30,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: environment-and-worldbuilding
+  categoryName: 3. Environment And Worldbuilding
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - environment-and-worldbuilding
   supportedTasks:
     - image_generate
     - image_edit

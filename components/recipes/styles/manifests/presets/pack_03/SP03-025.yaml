@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-025
 packId: pack_03
 name: Kitbash
-category: 3. 3D Styles
+category: 1. Hard Surface And Industrial Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - 3d-styles
+  - hard-surface-and-industrial-cgi
 visualDna:
   aesthetic: Complex mechanical detail
   form_and_line: Greebles
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Concept art, detailed, blockbuster sci-fi
   atmosphere: Industrial, complex, constructed chaos
   key_features: Dense detail, mechanical storytelling
+  creative_brief: 'A thousand borrowed parts assemble into something that feels designed rather than composed — greebles cluster at panel seams like barnacles on a starship hull, and ambient occlusion pools in the crevices of mechanical density. Industrial grey and worn metal tell stories of fabrication and repair, every rivet and panel line a fragment of worldbuilding. The image captures blockbuster sci-fi concept art at its most convincing: constructed chaos that somehow reads as functional.'
 avoidRules:
   - organic
   - smooth
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: 3d-styles
-  categoryName: 3. 3D Styles
+  categoryId: hard-surface-and-industrial-cgi
+  categoryName: 1. Hard Surface And Industrial Cgi
   tags:
     - 3d-and-cgi-rendering
-    - 3d-styles
+    - hard-surface-and-industrial-cgi
   supportedTasks:
     - image_generate
     - image_edit

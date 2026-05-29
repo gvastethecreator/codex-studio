@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-026
 packId: pack_08
 name: Biker Gang
-category: 3. Subcultures
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Intimidating, cool, road-dog brotherhood, exhaust-fume authority, clubhouse gravity
   key_features: Leather vest, three-piece patch, engineer boots, chain wallet
+  creative_brief: Cowhide leather heavy enough to stop a story before it starts, club patches sewn with the thread of miles traveled and debts unpaid. Engineer boots planted on asphalt like territorial markers, chrome and grease and chain-wallet gravity, the cut-off vest a flag flown by a nation of two wheels and no fixed address.
 avoidRules:
   - soft
   - colorful
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
     - subcultures
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

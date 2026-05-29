@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-012
 packId: pack_01
 name: Fujifilm Velvia 50
-category: 3. Film Stocks
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - film-and-analog-process
 visualDna:
   aesthetic: High saturation landscape film
   form_and_line: High contrast
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Crushed blacks
   atmosphere: Vibrant, punchy
   key_features: Magenta bias
+  creative_brief: Nature translated into its own boldest dialect, where green becomes greener than memory and sky deepens toward violet truth. The world sharpens into crystalline conviction, shadows collapsing into pure statement. This is landscape as exclamation, not description.
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - film-stocks
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

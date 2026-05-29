@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-067
 packId: pack_01
 name: Wedding Photography
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Bride and Groom
   form_and_line: Soft romantic
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Love, happy
   key_features: Veil
+  creative_brief: Sunlight bends through lace and promise, the backlit veil dissolving the boundary between the seen and the felt. Love renders here not as sentiment but as light's architecture, a quiet monument to all that cannot be spoken.
 avoidRules:
   - sad
   - dark
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

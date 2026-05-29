@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-038
 packId: pack_02
 name: Spider-Verse Comic Offset 3D
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Comic book 3D
   form_and_line: Ink lines on 3D
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Chromatic aberration, misregistration, color fringe, RGB split
   atmosphere: Energetic, modern, comic-panel momentum, multiverse chaos
   key_features: Low framerate feel, onomatopoeia text, thought bubble, motion lines
+  creative_brief: Color channels split at the edges like a misprinted page caught mid-press, releasing phantom reds and cyans into the frame. Halftone constellations swarm across three-dimensional form, reminding the eye that everything here was once ink on pulp. Motion stutters purposefully, as if each panel demands its own heartbeat before yielding to the next.
 avoidRules:
   - smooth 3d
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

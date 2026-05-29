@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-006
 packId: pack_01
 name: Selfie Style
-category: 1. Portrait Styles
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-styles
+  - portrait-and-studio
 visualDna:
   aesthetic: Smartphone front-facing camera selfie, social media aesthetic, casual and spontaneous
   subject_treatment: Wide-angle facial distortion (slightly enlarged nose/eyes), arm extended out of frame
@@ -20,6 +20,7 @@ visualDna:
   camera_and_composition: Extreme wide-angle perspective, high or low angle, casual framing
   atmosphere_and_mood: Fun, personal, candid, relatable, modern
   rendering_and_quality: Social media quality, realistic smartphone photo look
+  creative_brief: The arm extends, the lens warps, and intimacy arrives through that familiar distortion born from holding a screen at reading distance, features elongated into the vernacular of the era. Digital alchemy smooths and sharpens in the same breath, screen glow filling shadows with the democratic light of every front-facing camera. Casualness performed as the highest art, the self-portrait stripped of ceremony yet loaded with the immediacy of now.
 avoidRules:
   - illustration
   - painting
@@ -43,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-styles
-  categoryName: 1. Portrait Styles
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - portrait-styles
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

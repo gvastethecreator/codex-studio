@@ -1,0 +1,182 @@
+[
+  {
+    "presetId": "SP13-027",
+    "presetName": "Crimson Clan Battlefield",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "3. Samurais & Medieval",
+    "error": "GENERIC_PRESET_MOTIFS is not defined",
+    "failedAt": "2026-05-28T15:46:08.351Z"
+  },
+  {
+    "presetId": "SP13-028",
+    "presetName": "Medieval Knight Oath",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "3. Samurais & Medieval",
+    "error": "GENERIC_PRESET_MOTIFS is not defined",
+    "failedAt": "2026-05-28T15:46:08.351Z"
+  },
+  {
+    "presetId": "SP13-029",
+    "presetName": "Castle Siege Emberstorm",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "3. Samurais & Medieval",
+    "error": "GENERIC_PRESET_MOTIFS is not defined",
+    "failedAt": "2026-05-28T15:46:08.352Z"
+  },
+  {
+    "presetId": "SP13-030",
+    "presetName": "Blademonk Moon Courtyard",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "3. Samurais & Medieval",
+    "error": "GENERIC_PRESET_MOTIFS is not defined",
+    "failedAt": "2026-05-28T15:46:08.352Z"
+  },
+  {
+    "presetId": "SP13-031",
+    "presetName": "Haunted School Corridor",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "4. Horror",
+    "error": "GENERIC_PRESET_MOTIFS is not defined",
+    "failedAt": "2026-05-28T15:46:08.352Z"
+  },
+  {
+    "presetId": "SP13-032",
+    "presetName": "Crimson Moon Apparition",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "4. Horror",
+    "error": "GENERIC_PRESET_MOTIFS is not defined",
+    "failedAt": "2026-05-28T15:46:08.352Z"
+  },
+  {
+    "presetId": "SP13-033",
+    "presetName": "Flesh Puppet Theater",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "4. Horror",
+    "error": "GENERIC_PRESET_MOTIFS is not defined",
+    "failedAt": "2026-05-28T15:46:08.352Z"
+  },
+  {
+    "presetId": "SP13-034",
+    "presetName": "Deep Well Whisper",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "4. Horror",
+    "error": "GENERIC_PRESET_MOTIFS is not defined",
+    "failedAt": "2026-05-28T15:46:08.353Z"
+  },
+  {
+    "presetId": "SP13-035",
+    "presetName": "Oni Mask Ritual Night",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "4. Horror",
+    "error": "GENERIC_PRESET_MOTIFS is not defined",
+    "failedAt": "2026-05-28T15:46:08.353Z"
+  },
+  {
+    "presetId": "SP13-003",
+    "presetName": "Soft Shojo Spring",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Job 6cc2a7e1-ad61-4fbc-aef4-5a164ae65f5e ended as failed: Timed out waiting for Codex notification",
+    "failedAt": "2026-05-28T16:20:19.443Z"
+  },
+  {
+    "presetId": "SP13-004",
+    "presetName": "Mecha Hangar Ignition",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Job 01590fff-c624-4436-85ff-a866bac29428 ended as failed: Codex app-server socket is not open",
+    "failedAt": "2026-05-28T16:31:09.566Z"
+  },
+  {
+    "presetId": "SP13-006",
+    "presetName": "Spirit Shrine Twilight",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-28T16:36:32.474Z"
+  },
+  {
+    "presetId": "SP13-007",
+    "presetName": "Sports Climax Arena",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-28T16:38:27.793Z"
+  },
+  {
+    "presetId": "SP13-008",
+    "presetName": "Gothic Vampire Manor",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-28T16:40:23.044Z"
+  },
+  {
+    "presetId": "SP13-009",
+    "presetName": "Magical Girl Prism Burst",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-28T16:42:18.339Z"
+  },
+  {
+    "presetId": "SP13-010",
+    "presetName": "Isekai Forest Caravan",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-28T16:44:13.616Z"
+  },
+  {
+    "presetId": "SP13-011",
+    "presetName": "Meikyuu Dungeon Glow",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-28T16:46:08.875Z"
+  },
+  {
+    "presetId": "SP13-012",
+    "presetName": "Retro Mecha VHS Grain",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-28T16:48:04.123Z"
+  },
+  {
+    "presetId": "SP13-013",
+    "presetName": "Rainy Idol Backstage",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-28T16:49:59.363Z"
+  },
+  {
+    "presetId": "SP13-014",
+    "presetName": "Ronin Alley Duel",
+    "packId": "pack_13",
+    "packName": "Anime Expansion Vault",
+    "category": "1. Anime",
+    "error": "Unable to connect. Is the computer able to access the url?",
+    "failedAt": "2026-05-28T16:51:54.640Z"
+  }
+]

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-029
 packId: pack_09
 name: Velvet Fabric
-category: 2. Man-Made Materials
+category: 3. Fabric And Soft Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - fabric-and-soft-materials
 visualDna:
   aesthetic: Luxury cloth
   form_and_line: Soft folds
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Soft drape
   atmosphere: Rich, soft
   key_features: Sheen on folds
+  creative_brief: Summon the deep luxury of velvet where piled fibers catch light at the crest of each soft fold, creating a landscape of deep shadows and rich highlights that shift with the angle of view. The surface should feel like visual touch, a textile that drinks light and returns it as color deepened by surrounding darkness. Render the sensuality of fabric that seems to breathe.
 avoidRules:
   - cotton
   - flat
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: fabric-and-soft-materials
+  categoryName: 3. Fabric And Soft Materials
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - fabric-and-soft-materials
   supportedTasks:
     - image_generate
     - image_edit

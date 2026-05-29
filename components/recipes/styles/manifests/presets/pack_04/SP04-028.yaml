@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-028
 packId: pack_04
 name: Chalk Pastel
-category: 2. Children's Illustration
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - children-s-illustration
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Soft blending
   form_and_line: Thick dust
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blurred
   atmosphere: Soft, winter, snow-globe stillness, nostalgic bedtime
   key_features: Smudge, chalk-dust bloom, soft-edge blending
+  creative_brief: Chalk dust settles into paper tooth like snow on ancient landscape, edges dissolving into atmospheric haze. The soft blur of pastel blending creates an image seen through memory rather than eyes. This is the world viewed through a frost-covered window, where distance softens everything into dream.
 avoidRules:
   - sharp
   - pen
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: children-s-illustration
-  categoryName: 2. Children's Illustration
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - children-s-illustration
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

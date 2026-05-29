@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-087
 packId: pack_04
 name: Silhouette Iteration Sheet
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: 20-silhouette iteration sheet, pure-shape design exploration, negative-space composition study, character-shape-language comparison, bulky-vs-sleek-vs-spiky-vs-round silhouette range, creature-design through silhouette only, Kienan Lafferty shape-exploration, form-before-detail discipline
   form_and_line: Pure black fill shapes, no interior lines, varied contour exploration, chunky-vs-spindly silhouette spectrum, shape-contrast across iterations
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grid-arranged silhouettes for comparison, scale-normalized across iterations, shape-language spectrum positioning
   atmosphere: Methodical, exploratory, design-rigor, form-obsession, pre-detail discipline, professional-iteration mindset
   key_features: Pure-black silhouettes on white, 20-variation grid, no internal detail, shape-language spectrum, scale-normalized comparison
+  creative_brief: Twenty shapes stand in silent competition, each silhouette arguing for the soul of the character through pure outline alone. Bulky squares face sleek triangles face spiky stars, the language of shape doing all the narrative work. This is design as elimination tournament, where the winner is chosen before the face is drawn.
 avoidRules:
   - detailed
   - rendered
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

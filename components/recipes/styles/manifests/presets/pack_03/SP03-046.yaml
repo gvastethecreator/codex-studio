@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-046
 packId: pack_03
 name: Game Asset (PBR)
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Optimized prop
   form_and_line: Normal map details
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Functional, clean, asset-showcase
   key_features: Asset turntable, normal map detail
+  creative_brief: 'Every polygon earns its place — the normal map whispers detail the geometry never actually carried, and roughness/metalness values define surface behavior with the economy of a well-written function. Marmoset-style turntable lighting wraps the prop in portfolio glory, no wasted texture space, no unused vertices. The image is game-ready confidence: an asset waiting its turn in the level editor, optimized and undeniable.'
 avoidRules:
   - high poly
   - unoptimized
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-027
 packId: pack_01
 name: Dashcam
-category: 5. Camera Types
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - camera-types
+  - portrait-and-studio
 visualDna:
   aesthetic: Car windshield view
   form_and_line: Wide angle
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Motion blur
   atmosphere: Real, urgent
   key_features: Dashboard visible
+  creative_brief: The unblinking witness behind glass, recording the ordinary poetry of asphalt and headlights. A mechanical gaze that transforms highways into quiet epics and streetlamps into constellations. The windshield becomes a lens through which the banal reveals its strange, urgent beauty.
 avoidRules:
   - portrait
   - studio
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: camera-types
-  categoryName: 5. Camera Types
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - camera-types
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

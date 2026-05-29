@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-061
+packId: pack_12
+name: Jade Volcano Shrine Run
+category: 2. Arcane Temples & Mythic Realms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+visualDna:
+  aesthetic: Jade shrine on the edge of an active volcano.
+  subject_treatment: Warrior pilgrims and stone guardians.
+  color_and_tone: Jade green, lava black, and fiery orange.
+  lighting_and_shadow: Magma glow and dense smoke.
+  texture_and_material: Vitrified stone, ritual gold, and ash.
+  camera_and_composition: Ascending path toward the upper temple.
+  atmosphere_and_mood: Devotion, danger, and transcendence.
+  rendering_and_quality: Memorable endgame-zone visual.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - snow
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-061.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

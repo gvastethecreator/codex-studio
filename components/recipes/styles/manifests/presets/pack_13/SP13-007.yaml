@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-007
+packId: pack_13
+name: Sports Climax Arena
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Sports anime at competitive climax.
+  form_and_line: Speed lines, explosive pose, and clean athletic anatomy.
+  color_palette: Electric blue, white, and orange accents.
+  lighting_setup: Luces de estadio con highlights intensos.
+  material_texture: Sports flooring, stylized sweat, and technical fabric.
+  render_quality: Final-impact frame with maximum readability.
+  spatial_distortion: Perspective compression to intensify action.
+  atmosphere: Determination, effort, and catharsis.
+  key_features: Freeze-frame action, strong expressions, visual energy.
+  creative_brief: A decisive match moment with instant readability and high emotion.
+avoidRules:
+  - photoreal
+  - muddy-motion
+  - low-detail
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-007.webp
+attributes:
+  negativePrompt: photoreal, muddy-motion, low-detail, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

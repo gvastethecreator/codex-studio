@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Serious, visionary, keynote gravitas, disruptive calm, controlled intensity
   key_features: Turtle neck/Hoodie, round-frame glasses, minimalist sneakers, no visible branding
+  creative_brief: One decision eliminated each morning, the black turtleneck absorbing all questions about identity so the mind can orbit bigger problems. Merino wool and round-frame glasses as uniform of a priesthood that worships iteration speed, standing alone on a stage lit for revelation, wearing the simplicity that costs a billion dollars to achieve.
 avoidRules:
   - suit
   - tie
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

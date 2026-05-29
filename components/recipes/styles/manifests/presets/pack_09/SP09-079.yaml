@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-079
 packId: pack_09
 name: Mother of Pearl
-category: 5. Elemental & FX
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Inside of shell
   form_and_line: Layers
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Curved
   atmosphere: Delicate, ocean
   key_features: Luster
+  creative_brief: Compose the luminous interior of nautilus shell where iridescent layers shift between white, pink, and pale green like a pastel aurora frozen in calcium, pearlescent light swimming across the curved surface without source or destination. The material should glow without emitting, reflecting a spectrum that seems to come from nowhere within the shell's architecture. Capture the ocean's quietest masterpiece, luster born of slow patience.
 avoidRules:
   - plastic
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-065
 packId: pack_08
 name: Neon Light Suit
-category: 4. Fabric & Texture Focus
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - fashion-and-costume
-  - fabric-and-texture-focus
+  - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Tron light-grid bodysuit, identity-disc glow, digital frontier, Grid-terminal icon
   form_and_line: Glowing lines, hex-circuit geometry, body-con compression, disc-mount backplate, luminescent-stripe contour
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Future, tech, Grid-frontier freedom, data-stream electricity, user-vs-program drama
   key_features: Glow, identity disc, circuit-line grid, illuminated piping, dark-helmet visor
+  creative_brief: Cyan light racing through circuit-line geometry laid into matte neoprene, the grid tracing the contours of a body that exists simultaneously in physical space and digital substrate. The identity disc glows at the back like a halo rendered in hexadecimal, each illuminated stripe a data channel made visible, the suit a terminal for a consciousness that refuses to choose between flesh and light.
 avoidRules:
   - dark
 assets:
@@ -30,13 +31,14 @@ attributes:
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
-  categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryId: fantasy-sci-fi-costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
-    - fabric-and-texture-focus
+    - fantasy-sci-fi-costume
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

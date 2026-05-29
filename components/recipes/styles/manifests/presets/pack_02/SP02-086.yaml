@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-086
 packId: pack_02
 name: Ugly-Cute Creature
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Deformed yet adorable monster, lumpy asymmetrical body, mismatched googly eyes, crooked fang-toothed grin, three strands of hair on a potato head, so-ugly-it's-precious charm, beloved garbage creature, Ghibli soot-sprite meets Ren & Stimpy
   form_and_line: Chunky uneven outlines, bulbous swelling curves, random spikes and bumps, happy accident shapes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Eye levels drastically different heights, limbs of varying lengths, head consuming two-thirds of body mass
   atmosphere: Affectionate disgust, heartwarming grotesquerie, you're-hideous-and-I-love-you
   key_features: Mismatched eye sizes and heights, single snaggle tooth, three random hair strands, potato-shaped body
+  creative_brief: A lump of contradictions has sprouted mismatched eyes and a lopsided grin, its very wrongness the source of its charm. Every bump and asymmetry becomes a credential, a certificate of authenticity in a world of polished perfection. You want to look away, but your heart has already signed the adoption papers.
 avoidRules:
   - beautiful
   - handsome
@@ -36,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

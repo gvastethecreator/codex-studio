@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-064
 packId: pack_04
 name: Stipple (Dotwork)
-category: 5. Ink & Print
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Tattoo style
   form_and_line: None (dots)
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Gradient by dots
   atmosphere: Obsessive, soft, pointillist trance, meticulous calm
   key_features: Dots only, stipple gradient, point-by-point tone
+  creative_brief: Points accumulate into form with the patience of a meditation practice, each dot a unit of time as much as tone. Thousands of tiny decisions coalesce into image, the whole emerging from the patient accumulation of the particular. This is drawing as ritual, where the journey through each dot matters more than the destination of the finished piece.
 avoidRules:
   - lines
   - solid
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-070
 packId: pack_01
 name: Travel Photography
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Exotic location
   form_and_line: Wide vista
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Adventurous, beautiful
   key_features: Landmark
+  creative_brief: The world cracks open at golden hour, light pooling like honey across foreign stone and distant shore. Every frame is an arrival, the eye a traveler who has finally found the place it never knew it was searching for.
 avoidRules:
   - tourist trap
   - selfie
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

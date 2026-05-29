@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-015
 packId: pack_11
 name: Dark Academia
-category: 4. Aesthetics
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - oddities-and-novelty
 visualDna:
   aesthetic: Classic university library, gothic-campus romance, candlelit scholarship, Oxford-common-room
   form_and_line: Detailed, gothic, arch-window contours, columnar rhythm, ornate typography
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None, towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy
   atmosphere: Serious, studious, mysterious, rain-on-glass melancholy, ancient-knowledge reverence, midnight revelation
   key_features: Books and coffee, quill-and-inkwell, brass reading lamps, leather-bound stacks
+  creative_brief: Candlelight pools on mahogany where leather-bound centuries whisper their secrets to the lone scholar at midnight. Dust motes drift through the window-shaft like suspended thought, illuminating the eternal October of the vaulted reading room. Knowledge darkens into mystery in the gothic hour between sunset and revelation, coffee growing cold beside the open manuscript.
 avoidRules:
   - bright
   - modern
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

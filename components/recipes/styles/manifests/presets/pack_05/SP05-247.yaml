@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: English-cottage occult romance, horned mage mystery, fairy folklore, moss and bone, tea and terror coexisting in lush magical domesticity
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
   atmosphere: Enchanted, lonely, mossy, intimate
   key_features: Cottage interiors, fairy-folk props, horned mage silhouette, moss textures, magical domestic ritual
+  creative_brief: A thorn-hedged cottage breathes with fairies, bone charms, and the quiet terror of being loved by something ancient and horned. Tea steeps beside occult tomes; domestic magic grows in moss between stones. Enchantment is not spectacle but the creak of a floorboard at dusk.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: isekai-and-high-fantasy
   categoryName: 8. Isekai & High Fantasy
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - isekai-and-high-fantasy
   supportedTasks:
     - image_generate

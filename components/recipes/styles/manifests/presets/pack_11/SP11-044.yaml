@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-044
 packId: pack_11
 name: Pop Art
-category: 4. Aesthetics
+category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - retro-pop-and-kitsch
 visualDna:
   aesthetic: Andy Warhol style, Factory-silkscreen, soup-can-icon, celebrity-grid, mass-media shrine
   form_and_line: Halftone dots, Ben-Day-dot grids, thick-outline contours, screen-registration edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Repetition, color-variation grid, multiple-exposure overlap, registration-offset, print-misalignment
   atmosphere: Ironic, bold, Campbell's-soup nostalgia, celebrity-worship, mechanical-reproduction
   key_features: Halftone, Ben-Day dots, silkscreen-registration marks, color-channel separation, ink-bleed edge, repetition-grid layout
+  creative_brief: Ben-Day dots pixelate celebrity into commodity, fifteen minutes of fame arranged in a four-color registration grid across the canvas. The soup can repeats itself in serial rows, mass production becoming meditation, consumption becoming icon, offset-CMYK becoming gospel. Silkscreen registration slips just slightly at the edges, the mechanical imperfection that proves the human hand behind mechanical reproduction, ink-push-through texture on toothy canvas.
 avoidRules:
   - subtle
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: retro-pop-and-kitsch
+  categoryName: 4. Retro Pop And Kitsch
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - retro-pop-and-kitsch
   supportedTasks:
     - image_generate
     - image_edit

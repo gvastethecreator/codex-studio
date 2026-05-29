@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-045
+packId: pack_12
+name: Alloy Forest Mech Hunt
+category: 3. Sci-Fi Frontiers & Mech Zones
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+visualDna:
+  aesthetic: Hunt for wild mechs in a metallic forest.
+  subject_treatment: Trackers wielding electromagnetic bows.
+  color_and_tone: Oxide green, copper, and electric blue.
+  lighting_and_shadow: Backlight filtered through steel leaves.
+  texture_and_material: Alloy trunks, organic cabling, and mud.
+  camera_and_composition: Stalking shot with prey in the background.
+  atmosphere_and_mood: Stealth, tension, and precision.
+  rendering_and_quality: Eco-hunting gameplay concept.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - clean-lab
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-045.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

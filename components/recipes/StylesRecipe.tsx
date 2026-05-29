@@ -15,7 +15,6 @@ import {
   Gamepad2,
   Heart,
   Layers,
-  Maximize2,
   Palette,
   PenTool,
   Printer,
@@ -36,6 +35,7 @@ import {
   STYLE_CATEGORY_IMAGES,
   STYLE_CATEGORY_PREVIEWS,
   STYLE_DEFAULT_IMAGES,
+  STYLE_PACK_FALLBACK_IMAGES,
 } from '../../lib/recipeAssetCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
@@ -70,10 +70,13 @@ interface StylesRecipeProps {
   ) => void;
   updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
   onFileSelect: (files: File[]) => void;
-  onGenerate: (prompt?: string, configOverrides?: Partial<ImageGenerationConfig>) => void;
+  onGenerate: (
+    prompt?: string,
+    configOverrides?: Partial<ImageGenerationConfig>,
+    options?: { force?: boolean; preventModal?: boolean },
+  ) => void;
   isGenerating: boolean;
   images?: GeneratedImageWithConfig[];
-  onOpenImage?: (image: GeneratedImageWithConfig) => void;
 }
 
 const FAVORITES_PACK_ID = 'favorites';
@@ -161,7 +164,114 @@ const PACK_THEMES: Record<string, { color: string; bg: string; border: string; t
     border: 'border-orange-500',
     text: 'text-orange-400',
   }, // Miscellaneous & Fun
+  pack_12: {
+    color: 'emerald',
+    bg: 'bg-emerald-500',
+    border: 'border-emerald-500',
+    text: 'text-emerald-400',
+  }, // Video Game Originals Vault
+  pack_13: {
+    color: 'pink',
+    bg: 'bg-pink-500',
+    border: 'border-pink-500',
+    text: 'text-pink-400',
+  }, // Anime Character & Lifestyle
+  pack_14: {
+    color: 'violet',
+    bg: 'bg-violet-500',
+    border: 'border-violet-500',
+    text: 'text-violet-400',
+  }, // Mythic Noir Curated Vault
+  pack_15: {
+    color: 'teal',
+    bg: 'bg-teal-500',
+    border: 'border-teal-500',
+    text: 'text-teal-400',
+  }, // Solarpunk Dreamscapes Vault
+  pack_16: {
+    color: 'rose',
+    bg: 'bg-rose-500',
+    border: 'border-rose-500',
+    text: 'text-rose-400',
+  }, // Anime Classics & Prestige
 };
+
+interface CategoryVisualIdentity {
+  icon: React.ReactNode;
+  accentClassName: string;
+  titleClassName: string;
+}
+
+function normalizeCategoryIdFromTitle(title: string) {
+  return title
+    .toLowerCase()
+    .replace(/^\d+\.\s*/, '')
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function getCategoryVisualIdentity(packId: string, categoryTitle: string): CategoryVisualIdentity | null {
+  const size = 12;
+  const categoryId = normalizeCategoryIdFromTitle(categoryTitle);
+
+  if (packId === 'pack_12') {
+    switch (categoryId) {
+      case 'neon-urban-and-night-ops':
+        return {
+          icon: <Tv size={size} />,
+          accentClassName: 'bg-cyan-500',
+          titleClassName: 'text-cyan-300',
+        };
+      case 'arcane-temples-and-mythic-realms':
+        return {
+          icon: <Wand2 size={size} />,
+          accentClassName: 'bg-violet-500',
+          titleClassName: 'text-violet-300',
+        };
+      case 'sci-fi-frontiers-and-mech-zones':
+        return {
+          icon: <Box size={size} />,
+          accentClassName: 'bg-blue-500',
+          titleClassName: 'text-blue-300',
+        };
+      case 'sieges-warfronts-and-last-stands':
+        return {
+          icon: <Building size={size} />,
+          accentClassName: 'bg-red-500',
+          titleClassName: 'text-red-300',
+        };
+      case 'speed-sport-and-competitive-arenas':
+        return {
+          icon: <SlidersHorizontal size={size} />,
+          accentClassName: 'bg-amber-500',
+          titleClassName: 'text-amber-300',
+        };
+      case 'wilderness-hunts-and-harsh-frontiers':
+        return {
+          icon: <Archive size={size} />,
+          accentClassName: 'bg-lime-500',
+          titleClassName: 'text-lime-300',
+        };
+      case 'heists-horror-and-underworld-runs':
+        return {
+          icon: <Briefcase size={size} />,
+          accentClassName: 'bg-rose-500',
+          titleClassName: 'text-rose-300',
+        };
+      case 'puzzle-chambers-and-adventure-setpieces':
+        return {
+          icon: <Layers size={size} />,
+          accentClassName: 'bg-indigo-500',
+          titleClassName: 'text-indigo-300',
+        };
+      default:
+        return null;
+    }
+  }
+
+  return null;
+}
 
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { startViewTransition } from '../../utils/transitionUtils';
@@ -195,13 +305,13 @@ interface StylePresetCardProps {
   onApply: (preset: StyleRuntimePreset) => void;
   onCopy: (e: React.MouseEvent, preset: StyleRuntimePreset) => void;
   onToggleFavorite: (presetId: string) => void;
-  onOpenImage?: (image: GeneratedImageWithConfig) => void;
   onHoverPreviewChange: (preview: StyleCardHoverPreview | null) => void;
 }
 
 interface StylePresetGroupSectionProps {
   groupKey: string;
   title: string;
+  icon?: React.ReactNode;
   presets: StyleRuntimePreset[];
   expanded: boolean;
   gridColumns: number;
@@ -220,7 +330,6 @@ interface StylePresetGroupSectionProps {
 interface StylePresetResultButtonProps {
   activeResultImage: GeneratedImageWithConfig | null;
   preset: StyleRuntimePreset;
-  onOpenImage?: (image: GeneratedImageWithConfig) => void;
   onCycle: (dir: number) => void;
   hasMultipleResults: boolean;
   resultIndex: number;
@@ -233,7 +342,6 @@ interface StylePresetResultButtonProps {
 const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   activeResultImage,
   preset,
-  onOpenImage,
   onCycle,
   hasMultipleResults,
   resultIndex,
@@ -242,35 +350,41 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   theme,
   onApply,
 }) => {
+  const handleApplyFromKeyboard = (e: React.KeyboardEvent) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    e.preventDefault();
+    e.stopPropagation();
+    onApply(preset);
+  };
+
+  const handleCycleFromKeyboard = (e: React.KeyboardEvent, direction: number) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    e.preventDefault();
+    e.stopPropagation();
+    onCycle(direction);
+  };
+
   if (activeResultImage) {
     return (
-      <button
-        type="button"
-        tabIndex={0}
-        aria-label={`Open ${preset.name} preview`}
-        onClick={(e) => {
-          e.stopPropagation();
-          onOpenImage?.(activeResultImage);
-        }}
-        onKeyDown={(e) => {
-          if (e.key !== 'Enter' && e.key !== ' ') return;
-          e.preventDefault();
-          e.stopPropagation();
-          onOpenImage?.(activeResultImage);
-        }}
-        className="absolute inset-0 cursor-zoom-in group/image"
-      >
-        <img
-          src={activeResultImage.thumbnail || activeResultImage.src}
-          className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02]"
-          alt={preset.name}
-        />
-        <div className="absolute inset-0 bg-zinc-950/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
-          <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white backdrop-blur-md">
-            <Maximize2 size={18} />
+      <div className="absolute inset-0 group/image">
+        <button
+          type="button"
+          aria-label={`Regenerate ${preset.name}`}
+          onClick={() => onApply(preset)}
+          className="absolute inset-0 z-10 cursor-pointer"
+        >
+          <img
+            src={activeResultImage.thumbnail || activeResultImage.src}
+            className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02]"
+            alt={preset.name}
+          />
+          <div className="absolute inset-0 bg-zinc-950/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
+            <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white backdrop-blur-md">
+              <RefreshCw size={18} />
+            </div>
           </div>
-        </div>
+        </button>
 
         {hasMultipleResults && (
           <div className="absolute left-2 right-12 top-2 z-20 flex items-center justify-between gap-2 opacity-0 transition-opacity group-hover/image:opacity-100">
@@ -280,6 +394,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 e.stopPropagation();
                 onCycle(-1);
               }}
+              onKeyDown={(e) => handleCycleFromKeyboard(e, -1)}
               className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
               aria-label={`Previous result for ${preset.name}`}
             >
@@ -294,6 +409,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 e.stopPropagation();
                 onCycle(1);
               }}
+              onKeyDown={(e) => handleCycleFromKeyboard(e, 1)}
               className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
               aria-label={`Next result for ${preset.name}`}
             >
@@ -309,13 +425,14 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
               e.stopPropagation();
               onApply(preset);
             }}
+            onKeyDown={handleApplyFromKeyboard}
             className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
             title="Regenerate Style"
           >
             <RefreshCw size={14} />
           </button>
         </div>
-      </button>
+      </div>
     );
   }
 
@@ -394,7 +511,6 @@ const StylePresetCard = React.memo(
     onApply,
     onCopy,
     onToggleFavorite,
-    onOpenImage,
     onHoverPreviewChange,
   }: StylePresetCardProps) => {
     const [resultIndex, setResultIndex] = useState(0);
@@ -482,17 +598,15 @@ const StylePresetCard = React.memo(
           }}
           data-style-preset-card={preset.id}
           data-style-category={preset.category || 'General'}
-          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${
-            active
-              ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
-              : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
-          }`}
+          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${active
+            ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
+            : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
+            }`}
         >
           <div className="absolute inset-0 overflow-hidden bg-zinc-950">
             <StylePresetResultButton
               activeResultImage={activeResultImage}
               preset={preset}
-              onOpenImage={onOpenImage}
               onCycle={handleCycle}
               hasMultipleResults={hasMultipleResults}
               resultIndex={resultIndex}
@@ -576,6 +690,7 @@ const StylePresetGroupSection = React.memo(
   ({
     groupKey,
     title,
+    icon,
     presets,
     expanded,
     gridColumns,
@@ -640,6 +755,7 @@ const StylePresetGroupSection = React.memo(
           className={`flex items-center gap-3 mb-4 sticky top-0 backdrop-blur-xl py-2 z-10 ${headerClassName}`}
         >
           <div className={`w-1 h-4 rounded-full ${accentClassName}`} />
+          {icon ? <span className="text-zinc-400">{icon}</span> : null}
           <h3 className={`text-[10px] font-black uppercase tracking-[0.2em] ${titleClassName}`}>
             {title}
           </h3>
@@ -784,6 +900,16 @@ function getPackIcon(id: string): React.ReactNode {
       return <Wand2 size={size} />;
     case 'pack_11':
       return <SmilePlus size={size} />;
+    case 'pack_12':
+      return <Gamepad2 size={size} />;
+    case 'pack_13':
+      return <Sparkles size={size} />;
+    case 'pack_14':
+      return <Archive size={size} />;
+    case 'pack_15':
+      return <Wand2 size={size} />;
+    case 'pack_16':
+      return <Star size={size} />;
     default:
       return <Layers size={size} />;
   }
@@ -793,19 +919,14 @@ function getPackIcon(id: string): React.ReactNode {
 export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   config,
   updateConfig,
-  updateAttachment,
   onFileSelect,
   onGenerate,
   isGenerating,
   images = EMPTY_IMAGES,
-  onOpenImage,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   // react-doctor-disable-next-line react-doctor/no-event-handler
   const activeImage = config.attachments[0];
-  const activeImageRef = useRef(activeImage);
-  activeImageRef.current = activeImage;
-  const initializedImageId = useRef<string | null>(null);
 
   const [currentPackId, setCurrentPackId] = useState(DEFAULT_STYLE_PACK_ID);
   const [loadedStylePacksById, setLoadedStylePacksById] = useState<
@@ -840,7 +961,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     showFavoritesOnly: false,
     isCatalogSearchOpen: false,
     expandedStyleGroups: new Set<string>(),
-    showAllStyleCategories: false,
+    showAllStyleCategories: true,
     styleScrollWidth: 0,
   });
   const {
@@ -922,16 +1043,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     return () => observer.disconnect();
   }, []);
 
-  // react-doctor-disable-next-line react-doctor/no-event-handler
-  // Force strength to 0.5 (50%) by default ONLY ONCE per new image
-  useEffect(() => {
-    const img = activeImageRef.current;
-    if (img && img.id !== initializedImageId.current) {
-      updateAttachment(img.id, { strength: 0.5 });
-      initializedImageId.current = img.id;
-    }
-  }, [activeImage?.id, updateAttachment]);
-
   useEffect(() => {
     return () => updateConfig('recipeContext', '');
   }, [updateConfig]);
@@ -946,8 +1057,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   const recipePresetId =
     config.recipeId === 'styles' &&
-    config.recipeParams &&
-    typeof config.recipeParams.presetId === 'string'
+      config.recipeParams &&
+      typeof config.recipeParams.presetId === 'string'
       ? config.recipeParams.presetId
       : null;
   const prevRecipePresetIdRef = useRef(recipePresetId);
@@ -1018,12 +1129,14 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         .filter((img) => hasStylePresetIdentity(img.config, preset.id))
         .sort((a, b) => b.createdAt - a.createdAt);
       const defaultImage = STYLE_DEFAULT_IMAGES[preset.id];
+      const packFallbackImage = STYLE_PACK_FALLBACK_IMAGES[presetPackId];
       const categoryImage = preset.category
         ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
         : undefined;
-      const previewImage = preset.category
-        ? categoryImage || STYLE_CATEGORY_PREVIEWS[preset.category]
-        : undefined;
+      const previewImage =
+        categoryImage ||
+        (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined) ||
+        packFallbackImage;
 
       stateMap.set(preset.id, {
         presetPackName: presetPack.name,
@@ -1072,7 +1185,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     setBrowserState((prev) => ({
       ...prev,
       expandedStyleGroups: new Set(),
-      showAllStyleCategories: false,
+      showAllStyleCategories: true,
     }));
   }
 
@@ -1117,15 +1230,28 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const categoryBaseUrl = preset.category
       ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
       : undefined;
-    const fallbackPreviewUrl = preset.category
-      ? categoryBaseUrl || STYLE_CATEGORY_PREVIEWS[preset.category]
-      : undefined;
+    const fallbackPreviewUrl =
+      categoryBaseUrl ||
+      (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined) ||
+      STYLE_PACK_FALLBACK_IMAGES[presetPackId];
     const fallbackAttachment =
       !activeImage && fallbackPreviewUrl
         ? await loadPreviewAttachment(fallbackPreviewUrl, preset)
         : null;
+    const diversityPrompts = [
+      'Introduce a noticeably different camera distance and framing from previous renders.',
+      'Shift scene energy with a different gesture or action beat while preserving the subject intent.',
+      'Use a clearly distinct lighting setup and color balance versus prior attempts.',
+      'Vary background staging and spatial depth so this render is visibly unique.',
+    ] as const;
+    const diversityHint = diversityPrompts[Math.floor(Math.random() * diversityPrompts.length)];
     const effectiveImage = activeImage || fallbackAttachment;
-    const fidelity = effectiveImage?.strength || 0.5;
+    const normalizedReference = effectiveImage
+      ? {
+        ...effectiveImage,
+        strength: 0.15,
+      }
+      : null;
     const intensity = styleStrength;
     const isPhotoPackFallback = ['pack_09', 'pack_10', 'pack_11'].includes(presetPackId);
     const subjectTreatment = describeStyleValue(
@@ -1165,35 +1291,15 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         Focus on creating a high-quality, coherent image that embodies the aesthetic.
       `;
       compositionRule = 'Create a balanced and aesthetically pleasing composition.';
-    } else if (fallbackAttachment) {
-      roleInstruction = `
-        Use the provided pack/category base image as the baseline visual subject for this preset card.
-        Preserve the broad subject, composition, and readable scene structure so the preset effect can be compared across cards.
-        Re-render the image through the target style's visual DNA instead of merely displaying the reference.
-      `;
-      compositionRule =
-        'Keep the pack/category base composition recognizable while replacing the surface treatment, lighting, camera behavior, texture, and atmosphere according to the target style.';
-    } else if (fidelity <= 0.25) {
-      roleInstruction = `
-        Treat the input image as a ROUGH CONCEPT SKETCH only. 
-        Identify the SUBJECT (e.g. 'A woman', 'A car'). 
-        COMPLETELY DISCARD the original lighting, texture, and background. 
-        RE-IMAGINE the subject in a new environment or pose that fits the target style.
-        `;
-      compositionRule = 'CHANGE the camera angle. CHANGE the lighting. DO NOT trace the input.';
-    } else if (fidelity <= 0.55) {
-      roleInstruction = `
-        Use the input image as a STRONG REFERENCE for composition.
-        Keep the main subject's pose, but completely REPLACE all surface details, textures, and lighting materials.
-        `;
-      compositionRule = 'Maintain the pose, but create new textures from scratch.';
     } else {
       roleInstruction = `
-        Use the input image as the primary structural guide.
-        Apply the requested style as a dense filter over the existing image structure.
-        Preserve the original identity as closely as possible.
-        `;
-      compositionRule = 'Keep close to the input geometry.';
+        Use the provided image only as a loose semantic reference for subject intent.
+        DO NOT preserve pose, framing, camera angle, or original composition.
+        Re-stage the subject with a clearly different gesture, perspective, and environment while applying the target style DNA.
+        Make the result feel freshly generated, not a repaint of the input.
+      `;
+      compositionRule =
+        'Preserve only subject intent; force substantial variation in pose, camera, composition, lighting, and scene staging.';
     }
 
     let styleEmphasis = '';
@@ -1205,6 +1311,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         Push the aesthetic to its limit.
         `;
     }
+    styleEmphasis = styleEmphasis ? `${styleEmphasis.trim()}\n${diversityHint}` : diversityHint;
 
     const styleRecipeParams = {
       presetId: preset.id,
@@ -1212,9 +1319,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       mode: fallbackAttachment
         ? 'PACK_CATEGORY_BASE_STYLE_APPLICATION'
         : activeImage
-          ? fidelity < 0.3
-            ? 'CREATIVE_REIMAGINING'
-            : 'STRUCTURAL_PRESERVATION'
+          ? 'CREATIVE_REIMAGINING'
           : 'DIRECT_STYLE_SYNTHESIS',
       roleInstruction: roleInstruction.trim(),
       compositionRule: compositionRule.trim(),
@@ -1227,18 +1332,29 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       cameraComposition,
       atmosphereMood,
       renderingQuality,
+      creativeBrief: preset.style.creative_brief ?? '',
     };
 
-    onGenerate(undefined, {
-      recipeId: 'styles',
-      recipeParams: styleRecipeParams,
-      recipeContext: '',
-      attachments: effectiveImage ? [effectiveImage] : [],
-      aspectRatio: fallbackAttachment ? '2:3' : config.aspectRatio,
-      negativePrompt: config.negativePrompt
-        ? `${config.negativePrompt}, ${presetNegative}`
-        : presetNegative,
-    });
+    onGenerate(
+      undefined,
+      {
+        recipeId: 'styles',
+        recipeParams: styleRecipeParams,
+        recipeContext: '',
+        attachments: normalizedReference ? [normalizedReference] : [],
+        model: config.model,
+        imageSize: config.imageSize,
+        batchCount: config.batchCount,
+        aspectRatio: config.aspectRatio,
+        executionModel: config.executionModel,
+        executionReasoningEffort: config.executionReasoningEffort,
+        executionSpeed: config.executionSpeed,
+        negativePrompt: config.negativePrompt
+          ? `${config.negativePrompt}, ${presetNegative}`
+          : presetNegative,
+      },
+      { preventModal: true },
+    );
   };
 
   const handleApplyStyleRef = useRef(handleApplyStyle);
@@ -1328,7 +1444,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           onApply={handleApplyStyleRef.current}
           onCopy={handleCopyStylePromptRef.current}
           onToggleFavorite={toggleFavorite}
-          onOpenImage={onOpenImage}
           onHoverPreviewChange={handleHoverPreviewChange}
         />
       );
@@ -1338,7 +1453,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       copiedStyleId,
       favorites,
       activeTheme,
-      onOpenImage,
       toggleFavorite,
       presetVisualStateById,
       handleHoverPreviewChange,
@@ -1473,16 +1587,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           {activeImage && (
             <div className="animate-in slide-in-from-bottom-2 fade-in duration-500 space-y-6">
               <Slider
-                icon={<SlidersHorizontal className="text-zinc-500 size-4" />}
-                label="Source Influence"
-                value={activeImage.strength}
-                min={0}
-                max={1}
-                step={0.05}
-                onChange={(v) => updateAttachment(activeImage.id, { strength: v })}
-              />
-
-              <Slider
                 icon={<Palette className="text-zinc-500 size-4" />}
                 label="Style Strength"
                 value={styleStrength}
@@ -1495,13 +1599,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               />
 
               <div className="flex justify-between mt-2 text-[8px] font-black uppercase tracking-widest text-zinc-600">
-                <span>
-                  {activeImage.strength < 0.3
-                    ? 'Re-Imagine'
-                    : activeImage.strength < 0.6
-                      ? 'Remix'
-                      : 'Filter'}
-                </span>
+                <span>Re-Imagine</span>
                 <span>{styleStrength > 0.8 ? 'Exaggerated' : 'Balanced'}</span>
               </div>
             </div>
@@ -1526,11 +1624,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             }}
             className={`
                   group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                    ${
-                      currentPackId === FAVORITES_PACK_ID
-                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-                    }
+                    ${currentPackId === FAVORITES_PACK_ID
+                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+              }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -1560,11 +1657,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 }}
                 className={`
                       group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                            ${
-                              isActive
-                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                            }
+                            ${isActive
+                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                  }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>
@@ -1697,7 +1793,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 groupKey="favorites"
                 title="Pinned / Favorites"
                 presets={processedData.favorites}
-                expanded={expandedStyleGroups.has('favorites')}
+                expanded
                 gridColumns={gridColumns}
                 scrollRootRef={styleScrollRootRef}
                 scrollContainerWidth={styleScrollWidth}
@@ -1713,26 +1809,30 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             )}
 
             {/* OTHER CATEGORIES */}
-            {visibleStyleGroupEntries.map(([category, presets], index) => (
-              <StylePresetGroupSection
-                key={category}
-                groupKey={category}
-                title={category}
-                presets={presets}
-                expanded={expandedStyleGroups.has(category)}
-                gridColumns={gridColumns}
-                scrollRootRef={styleScrollRootRef}
-                scrollContainerWidth={styleScrollWidth}
-                initiallyVisible={index === 0 && processedData.favorites.length === 0}
-                headerClassName="opacity-60"
-                accentClassName={activeTheme.bg}
-                titleClassName="text-zinc-300"
-                dividerClassName="bg-white/10"
-                showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
-                renderPresetCard={renderPresetCard}
-                onShowAll={showAllStylesInGroup}
-              />
-            ))}
+            {visibleStyleGroupEntries.map(([category, presets], index) => {
+              const categoryIdentity = getCategoryVisualIdentity(currentPackId, category);
+              return (
+                <StylePresetGroupSection
+                  key={category}
+                  groupKey={category}
+                  title={category}
+                  icon={categoryIdentity?.icon}
+                  presets={presets}
+                  expanded
+                  gridColumns={gridColumns}
+                  scrollRootRef={styleScrollRootRef}
+                  scrollContainerWidth={styleScrollWidth}
+                  initiallyVisible={index === 0 && processedData.favorites.length === 0}
+                  headerClassName="opacity-60"
+                  accentClassName={categoryIdentity?.accentClassName ?? activeTheme.bg}
+                  titleClassName={categoryIdentity?.titleClassName ?? 'text-zinc-300'}
+                  dividerClassName="bg-white/10"
+                  showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                  renderPresetCard={renderPresetCard}
+                  onShowAll={showAllStylesInGroup}
+                />
+              );
+            })}
 
             {hiddenStyleGroupEntries.length > 0 && (
               <button

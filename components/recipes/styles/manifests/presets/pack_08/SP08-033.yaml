@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-033
 packId: pack_08
 name: Ancient Egyptian
-category: 2. Historical & Fantasy
+category: 3. Historical & Fantasy
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Regal, divine, eternal-Nile serenity, temple-incense reverence, absolute-power stillness
   key_features: Gold collar, kohl-lined eyes, uraeus crown, crook and flail, pleated kalasiris
+  creative_brief: Pleated linen falling like frozen Nile water from shoulders anointed with the weight of two kingdoms, gold leaf catching desert sun on a usekh collar that maps the cosmos across a mortal chest. Kohl traces protective lines around eyes that have seen dynasties rise and fall, turquoise and lapis singing the old hymns in a language of stone and light.
 avoidRules:
   - pants
   - modern
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: historical-and-fantasy
-  categoryName: 2. Historical & Fantasy
+  categoryName: 3. Historical & Fantasy
   tags:
     - fashion-and-costume
     - historical-and-fantasy
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

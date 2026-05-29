@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-060
 packId: pack_11
 name: Circuit Board
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: CPU die shot, silicon-city, wafer-art, integrated-circuit landscape, chip-fab photography
   form_and_line: Traces, paths, Manhattan-routing, 45-degree diagonal, via-grid, interconnect-highway
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: City-like, macro-block placement, standard-cell grid, routing-congestion channel, floor-plan region
   atmosphere: Digital, logic, clean-room silence, wafer-fab precision, clock-tree rhythm, silicon-dream
   key_features: Chips, bond-pads, via-arrays, standard-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial
+  creative_brief: Copper traces route across green solder mask in Manhattan geometry, turning at precise forty-five-degree angles toward bond-pad destinations in the silicon city. Gold wire arcs bridge the die to its package, hair-thin filaments carrying the electricity of computation across micron gaps. Standard-cell rows stretch outward like a megalopolis designed by algorithms and etched by light, Moore's law rendered visible in the interconnect highways of the integrated-circuit landscape.
 avoidRules:
   - organic
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

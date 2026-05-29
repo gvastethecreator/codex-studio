@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-022
+packId: pack_05
+name: Skyblade Midair Clash
+category: 3. Action
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - anime
+  - action
+visualDna:
+  aesthetic: Anime aerial duel with energy sword.
+  form_and_line: "Firm contours, extreme poses and impact line."
+  color_palette: Cyan, fire orange, and deep black.
+  lighting_setup: Sky backlight with shock flare.
+  material_texture: "Fractured energy, fabric in wind and particles."
+  render_quality: Maximum clarity combat illustration.
+  spatial_distortion: Wide-angle framing with vertiginous height.
+  atmosphere: Epic clash and heroic tension.
+  key_features: "Crossing of swords, dramatic sky, luminous trail."
+  creative_brief: Two rivals collide in mid-air in a climactic frame.
+avoidRules:
+  - photoreal
+  - calm-composition
+  - blur-only
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-022.webp
+attributes:
+  negativePrompt: photoreal, calm-composition, blur-only, watermark, text, logo
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 3. Action
+  tags:
+    - anime-battle-and-worlds
+    - anime
+    - action
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

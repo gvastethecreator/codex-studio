@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Eerie, lonely
   key_features: No people
+  creative_brief: Places built for transit but emptied of purpose, fluorescent lights humming over carpets no one walks. The architecture remembers people who were never there, and the air thickens with the echo of absence.
 avoidRules:
   - people
   - life
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

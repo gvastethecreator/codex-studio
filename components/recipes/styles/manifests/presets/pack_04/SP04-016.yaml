@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-016
 packId: pack_04
 name: Tech Noir Comic
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: Cyberpunk city
   form_and_line: Sharp
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Dystopian, cool, street-level future, chrome-and-wet-asphalt
   key_features: Rain, neon reflection, persistent drizzle
+  creative_brief: Neon bleeds into wet asphalt, every reflection a promise and a warning written in cyan and magenta. Rain falls diagonally across the frame, a permanent weather system of noir inevitability. This is the city after midnight rendered as electric scripture, where every shadow might be hiding the future.
 avoidRules:
   - daylight
   - nature
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

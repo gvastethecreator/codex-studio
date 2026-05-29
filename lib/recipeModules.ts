@@ -3,6 +3,7 @@ import {
   type GenerationProviderId,
   type GenerationTaskKind,
 } from '../packages/shared/src/generationContracts';
+import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
 import type { ImageGenerationConfig, RecipeId } from '../types';
 import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
 import type { RecipeContextParams } from './recipeContextBuilders';
@@ -950,6 +951,9 @@ export function buildGenerationTaskSpecFromRecipe({
     : null;
   const prompt = config.prompt || 'Generate a high-quality image.';
   const taskKind = task ?? module?.defaultTask ?? 'image_generate';
+  const resolvedImageSize = config.aspectRatio
+    ? getImageGenSizeForRatio(config.aspectRatio).size
+    : (config.imageSize ?? null);
 
   if (module && !isRecipeTaskSupported(module, taskKind)) {
     throw new Error(`Recipe Module ${module.id} does not support task ${taskKind}.`);
@@ -985,7 +989,7 @@ export function buildGenerationTaskSpecFromRecipe({
     output: {
       count: config.batchCount,
       aspectRatio: config.aspectRatio,
-      imageSize: config.imageSize ?? null,
+      imageSize: resolvedImageSize,
       mimeType: 'image/png',
       requiresCatalogEntry: true,
       requiresExactPath: true,

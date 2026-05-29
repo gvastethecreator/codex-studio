@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-056
 packId: pack_08
 name: Silk & Satin
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Sensual, expensive, bedroom-secret intimacy, champagne-bubble delicacy, silk-against-skin luxury
   key_features: Drape folds, bias-cut cling, cowl neck, spaghetti straps, liquid-sheen movement
+  creative_brief: Charmeuse pooling like spilled champagne across collarbones, the bias cut following gravity's argument with the body down to a hem that sweeps the floor in a whisper. Candlelight ripples across the surface in slow liquid waves, each fold a study in the physics of light meeting fiber spun by worms and woven into the closest thing a garment can get to being a second atmosphere.
 avoidRules:
   - rough
   - matte
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

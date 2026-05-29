@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-043
 packId: pack_08
 name: Space Opera Royal
-category: 5. Fantasy/Sci-Fi Costume
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Strange hair
   atmosphere: Serious, political, galactic-senate gravity, doomed-romance elegance, diplomatic tension
   key_features: Face paint, issei headpiece, throne-room gown, Naboo sigil, feathered cape
+  creative_brief: Iridescent organza catching light from twin suns through stained-glass windows that depict histories of galaxies not yet charted, an issei headpiece orbiting the face like a captured moon. Liquid-metal threads trace senatorial authority across a gown that spans the distance between diplomacy and doom, feathered cape rustling with the weight of votes that will decide the fate of star systems.
 avoidRules:
   - simple
   - earth
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fantasy-sci-fi-costume
-  categoryName: 5. Fantasy/Sci-Fi Costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
     - fantasy-sci-fi-costume
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-013
 packId: pack_01
 name: Ilford HP5 Plus
-category: 3. Film Stocks
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - film-and-analog-process
 visualDna:
   aesthetic: Black and White film
   form_and_line: Medium contrast
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Classic, gritty
   key_features: Monochrome
+  creative_brief: 'Stripped of chroma''s distraction, the frame reduces to its skeleton: light wrestling shadow across the street, a stranger''s hands, the geometry of waiting. Grain carries the newsprint urgency of a moment that refuses polish. Truth in silver, nothing hidden, nothing softened.'
 avoidRules:
   - color
   - chromatic aberration
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - film-stocks
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

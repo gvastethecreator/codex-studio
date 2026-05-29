@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-008
 packId: pack_09
 name: Mossy Rock
-category: 1. Natural Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Stone covered in green
   form_and_line: Fuzzy outline
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Softened edges
   atmosphere: Ancient, quiet
   key_features: Growth pattern
+  creative_brief: Render the union of opposites where velvet moss colonizes ancient stone in a silent pact of softness against permanence, green life clinging to grey mineral. Dappled forest light should caress the fuzzy surface, creating a miniature landscape of cushioned ridges above hard stone. The image must feel damp with the breath of woodland mornings.
 avoidRules:
   - dry
   - city
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - natural-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

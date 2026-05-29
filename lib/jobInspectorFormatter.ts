@@ -631,10 +631,20 @@ function buildReferenceArtifacts(
     : never,
   assetBaseUrl: string,
 ) {
-  return assets
-    .filter((asset) => asset.role === 'reference')
-    .map((asset, index) => buildTaskAssetArtifact(asset, index, assetBaseUrl))
-    .filter((artifact) => artifact.previewSrc || artifact.href);
+  const artifacts: JobInspectorArtifact[] = [];
+  let referenceIndex = 0;
+
+  for (const asset of assets) {
+    if (asset.role !== 'reference') continue;
+
+    const artifact = buildTaskAssetArtifact(asset, referenceIndex, assetBaseUrl);
+    referenceIndex += 1;
+
+    if (!artifact.previewSrc && !artifact.href) continue;
+    artifacts.push(artifact);
+  }
+
+  return artifacts;
 }
 
 function buildCatalogOutputArtifacts(images: CatalogImage[], assetBaseUrl: string) {
@@ -674,7 +684,13 @@ function summarizeAssetNames(
   const roleAssets = assets.filter((asset) => asset.role === role);
   if (roleAssets.length === 0) return '—';
 
-  const names = roleAssets.map((asset) => asset.name).filter(Boolean);
+  const names: string[] = [];
+  for (const asset of roleAssets) {
+    if (!asset.name) continue;
+    names.push(asset.name);
+  }
+
+  if (names.length === 0) return '—';
   const preview = names.slice(0, 3).join(', ');
   if (names.length <= 3) return preview;
   return `${preview} (+${names.length - 3} more)`;
@@ -831,11 +847,12 @@ function inferTranscriptDeltaPresentation(method: string) {
 }
 
 function compactTranscriptEntries(entries: JobTranscriptEntry[]) {
-  const completedItemIds = new Set(
-    entries
-      .map((entry) => readCompletedTranscriptItemId(entry))
-      .flatMap((itemId) => (itemId ? [itemId] : [])),
-  );
+  const completedItemIds = new Set<string>();
+  for (const entry of entries) {
+    const itemId = readCompletedTranscriptItemId(entry);
+    if (!itemId) continue;
+    completedItemIds.add(itemId);
+  }
 
   const compacted: JobTranscriptEntry[] = [];
   let pendingDeltaGroup: {
@@ -998,7 +1015,12 @@ export function buildJobInspectorDetailModel(
     ...detail.events.map((event, index) => createEventTimelineItem(event, index, assetBaseUrl)),
   ].sort(compareTimelineItems);
 
-  const artifacts = dedupeArtifacts(timeline.flatMap((item) => item.artifacts)).filter(
+  const timelineArtifacts = timeline.reduce<JobInspectorArtifact[]>((collected, item) => {
+    collected.push(...item.artifacts);
+    return collected;
+  }, []);
+
+  const artifacts = dedupeArtifacts(timelineArtifacts).filter(
     (artifact) => !outputs.some((output) => output.href && output.href === artifact.href),
   );
 

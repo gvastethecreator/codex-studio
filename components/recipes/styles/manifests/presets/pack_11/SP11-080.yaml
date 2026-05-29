@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-080
 packId: pack_11
 name: Dandelion Seed
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock
   form_and_line: Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity
   atmosphere: Wish, soft, meadow-breeze, spring-dispersal, make-a-wish, childhood-breath, floating-dream
   key_features: Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift, dandelion-stem
+  creative_brief: The pappus parachute catches wind and lifts the cypsela seed from its stem with the aerodynamic elegance of a million years of trial and error distilled into radial fluff. Backlit filaments glow translucent-silver against a sky-blue bokeh, each bristle a prayer for favorable current and distance from the parent plant. A child closes their eyes and blows, launching a thousand tiny spacecraft toward destinations chosen by breeze and hope, make-a-wish physics rendered at macro scale.
 avoidRules:
   - heavy
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

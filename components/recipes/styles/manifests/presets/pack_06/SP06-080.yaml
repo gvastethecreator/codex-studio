@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-080
 packId: pack_06
 name: Stencil Art
-category: 4. Mixed Media
+category: 5. Mixed Media
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simplified
   atmosphere: Bold, urban
   key_features: Stencil bridges
+  creative_brief: Negative space becomes positive through the bridge that holds the island of the letter O in place, the stencil declaring its method in every uncut connection. The image reduces to silhouette, detail sacrificed to reproducibility, the wall becoming the canvas for a message that can be repeated by anyone with cardboard and a blade.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: mixed-media
-  categoryName: 4. Mixed Media
+  categoryName: 5. Mixed Media
   tags:
     - essential-art-styles
     - mixed-media
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

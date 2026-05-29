@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-078
 packId: pack_10
 name: Neon Light Lines
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Cool, dark
   key_features: Dark background
+  creative_brief: Gas ignited inside glass tubes bent by hand into cursive declarations, red and blue buzzing against the night. Light becomes line, line becomes sign, and the darkness makes the glow possible.
 avoidRules:
   - bulb
   - sun
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

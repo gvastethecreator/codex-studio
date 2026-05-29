@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-062
 packId: pack_03
 name: Organic Modeling
-category: 4. Applications
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Creature or plant
   form_and_line: Flowing topology
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Alive, natural, breathing world
   key_features: Muscle/Growth flow, dynamesh topology
+  creative_brief: 'Topology flows like water across muscle groups and branching forms — dynamesh topology follows the grain of imagined biology, and subsurface scattering warms skin and bark from within as if chlorophyll or blood were glowing just beneath. ZBrush sculptural flow defines natural forms through digital clay, every ridge and fold the result of a stylus tracing evolutionary logic. The image breathes: a creature or plant rendered with the conviction that it exists somewhere.'
 avoidRules:
   - hard edge
   - robot
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

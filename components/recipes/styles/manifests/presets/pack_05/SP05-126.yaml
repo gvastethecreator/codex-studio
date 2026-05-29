@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
   aesthetic: Occult comedy collision, ghost-speed punch-ups, alien weirdness, teen-romance bickering, turbo-charged nonsense, supernatural street fights with irreverent energy
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
   atmosphere: Wild, funny, romantic, unhinged
   key_features: Occult iconography, speed-burst framing, weird-creature silhouettes, high-energy reaction shots, teen-banter body language
+  creative_brief: Two teenagers argue over convenience-store snacks while a ghost and an alien crash through the same window at escape velocity. The frame crackles with the friction of irreverent youth colliding against cosmic nonsense, each punch line drawn at the speed of a skipped heartbeat. Romance hides in the recoil, blooming in the split-second between impact and laughter.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: modern-shonen-and-action
   categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - modern-shonen-and-action
   supportedTasks:
     - image_generate

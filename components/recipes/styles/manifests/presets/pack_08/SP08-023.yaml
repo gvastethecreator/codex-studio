@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-023
 packId: pack_08
 name: Lolita Fashion
-category: 3. Subcultures
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Sweet, innocent, candy-land gentility, storybook serenity, lace-gloved delicacy
   key_features: Bonnet, lace gloves, Mary-Jane pumps, ribbon-laced corset back
+  creative_brief: A bell-shaped daydream constructed from tiered ruffles and the memory of Victorian tea parties that never happened. Satin ribbons tie bows that hold innocence like a kept promise, each pintuck a whisper of porcelain-doll perfection walking through Harajuku as if the street were a dollhouse parlor.
 avoidRules:
   - modern
   - pants
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
     - subcultures
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

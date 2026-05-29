@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Branching
   atmosphere: Connected, growth
   key_features: Web pattern
+  creative_brief: The underground conversation, white threads stitching soil into sentience. A web older than forests, humming with the silent commerce of nutrients and secrets.
 avoidRules:
   - man made
   - straight lines
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

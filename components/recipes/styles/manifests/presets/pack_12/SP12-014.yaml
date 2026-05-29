@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-014
+packId: pack_12
+name: Urban Parkour Rooftop Wars
+category: 1. Neon Urban & Night Ops
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+visualDna:
+  aesthetic: Competitive shooter on dense megacity rooftops.
+  subject_treatment: Lightweight operators in acrobatic motion.
+  color_and_tone: Urban grays with saturated team accents.
+  lighting_and_shadow: Cold dawn with long, clean shadows.
+  texture_and_material: Concrete, graffiti, galvanized metal, and glass.
+  camera_and_composition: Dynamic perspective with jumping lines.
+  atmosphere_and_mood: Speed, verticality, and positional advantage.
+  rendering_and_quality: Clear layout for PvP readability.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - fog-heavy
+  - muddy-contrast
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-014.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

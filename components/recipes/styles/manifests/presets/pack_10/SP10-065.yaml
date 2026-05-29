@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-065
 packId: pack_10
 name: Basket Weave
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Rustic, simple
   key_features: Weave pattern
+  creative_brief: Over and under, over and under, the oldest technology of containment woven from reed and rhythm. Each crossing is a decision that holds the next in place, a geometry of simple interdependence.
 avoidRules:
   - solid
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-021
 packId: pack_11
 name: Sticker Art
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Die-cut sticker, laptop-decal culture, street-art collectible, vinyl peel-and-stick
   form_and_line: Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 2D cutout, die-line silhouette, punch-out negative space, floating-object illusion
   atmosphere: Cool, decorative, urban-expression, laptop-personality, street-art rebellion
   key_features: White outline, kiss-cut border, gloss-laminate sheen, color-separation registration
+  creative_brief: Thick white borders define the edge where the image asserts independence from background, a die-cut declaration ready to travel. Vinyl laminate catches the gloss of UV-resistant inks, weatherproof personality engineered for laptops and street poles and skate-deck swagger. The sticker peels away from its sheet carrying a fragment of urban identity pressed into adhesive permanence.
 avoidRules:
   - 3d
   - shadow
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-047
 packId: pack_02
 name: Tintype (Civil War)
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Metal plate photo
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Serious, old, stoic endurance, wartime gravity
   key_features: Black edges, iron oxidation, thumb-mark, plate wear
+  creative_brief: 'Darkened iron bears witness to what brightness once touched, a record carved not in light but in endurance. The pour of chemistry across metal leaves its signature in stains and swirling edges, every thumb-mark a scar earned in the service of permanence. These plates hold gravity: the stoic weight of faces facing an unforgiving lens, unvarnished and unblinking.'
 avoidRules:
   - clean
   - white
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

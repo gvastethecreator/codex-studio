@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-018
 packId: pack_04
 name: Paper Cutout (Collage)
-category: 2. Children's Illustration
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - children-s-illustration
+  - childrens-and-educational
 visualDna:
   aesthetic: Painted paper collage storybook, Eric Carle style, hungry caterpillar charm, tissue-paper poetry
   form_and_line: Scissor edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simple shapes
   atmosphere: Creative, bright, classroom joy, tactile discovery
   key_features: Layer depth, scissor-cut edges, paper overlap
+  creative_brief: Torn paper edges cast their own shadows, each scissor cut a deliberate act of composition by subtraction. Painted textures layer like geological strata of preschool imagination. This is the art of making from what already exists, where every rough edge is a signature and every overlap a conversation.
 avoidRules:
   - drawn
   - painted
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: children-s-illustration
-  categoryName: 2. Children's Illustration
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - children-s-illustration
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

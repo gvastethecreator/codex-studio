@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-075
 packId: pack_06
 name: Digital Collage
-category: 4. Mixed Media
+category: 5. Mixed Media
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Scale play
   atmosphere: Surreal, fun
   key_features: Digital edges
+  creative_brief: Layers float in digital space, each element imported from a different universe, composited into a reality that Photoshop alone can sustain. Scale, perspective, gravity — all negotiable, all adjustable via transform handles. The image celebrates the cut-and-paste logic of the screen, where everything is a layer and nothing is final.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: mixed-media
-  categoryName: 4. Mixed Media
+  categoryName: 5. Mixed Media
   tags:
     - essential-art-styles
     - mixed-media
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

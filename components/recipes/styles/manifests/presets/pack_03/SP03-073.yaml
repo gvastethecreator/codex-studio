@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-073
 packId: pack_03
 name: Papercraft 3D
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Virtual paper
   form_and_line: Fold lines
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Craft, handmade feel, origami precision
   atmosphere: Creative, delicate, art-project warmth
   key_features: Layered depth, fold-crease definition
+  creative_brief: 'Paper grain catches light at grazing angles, and fold creases cast micro-shadows between layered cardstock planes — every surface reads as something you could cut with scissors and reassemble on a craft table. The depth between layers is physical, built from stacked sheets rather than extruded geometry, and folded construction replaces curved surfaces with the honest language of the crease. The image is origami precision meets art-project warmth: papercraft rendered with the conviction that glue and patience built this world.'
 avoidRules:
   - realistic
   - fluid
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

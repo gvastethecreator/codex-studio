@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: Book-portal romance fantasy, celestial symbols, guardian warriors, earnest devotion, soft 90s magical drama and travel-heavy emotional stakes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
   atmosphere: Fated, romantic, bright, dramatic
   key_features: Celestial motifs, guardian ensemble, portal iconography, travel-costume detail, soft dramatic glances
+  creative_brief: A book opens and the world tilts sideways, ink becoming sky and stars rearranging into warriors sworn by celestial oath. Romance blooms in the space between pages, where earnest devotion outshines any constellation and the journey home is measured in heartbeats, not miles.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: isekai-and-high-fantasy
   categoryName: 8. Isekai & High Fantasy
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - isekai-and-high-fantasy
   supportedTasks:
     - image_generate

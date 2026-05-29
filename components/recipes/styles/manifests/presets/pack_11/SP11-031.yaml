@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-031
 packId: pack_11
 name: Ice Carving
-category: 3. Artistic Mediums
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - oddities-and-novelty
 visualDna:
   aesthetic: Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle
   form_and_line: Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth
   atmosphere: Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony
   key_features: Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool reflection
+  creative_brief: Chainsaw bite meets diamond clarity in a frozen gallery where sculptures drip toward their own disappearance with each passing degree. Light refracts through crystal mass, splitting into rainbows trapped inside internal fractures and air-bubble constellations. Elegance carved from falling temperature, every facet melting toward liquid grace at the speed of thaw, a countdown performed in crystal.
 avoidRules:
   - warm
   - opaque
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-082
 packId: pack_04
 name: Photobash Paintover Iteration
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Photography-based concept art, real-photo fragments assembled into new designs, painted-over photo plates, texture-library construction, matte-painting technique applied to character and vehicle design, mixed-media production speed, reality-sampling creative workflow
   form_and_line: Photo-edge cutout contours, painted-over photo transitions, adjustment-layer blend, lasso-masked compositing, mixed-resolution edge collision
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Assembled from disparate photo perspectives, unified through paint-over, forced-perspective composite, scale-blended elements
   atmosphere: Industrial, practical, production-ready, fast-turnaround creative, resourceful problem-solving
   key_features: Visible photo seams, paint-over strokes, resolution-mismatch patches, texture-library compositing, adjustment-layer grading
+  creative_brief: Photographs fracture and reassemble under the painter's hand, reality sampled and remixed into something that never existed. Brushstrokes bridge the seams between found fragments, paint and pixel negotiating a shared surface. This is the collage of the production artist, where the deadline demands the image arrive before the imagination finishes its work.
 avoidRules:
   - clean
   - pure illustration
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

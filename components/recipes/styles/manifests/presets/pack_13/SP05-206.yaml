@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-206
+packId: pack_13
+name: Usagi Drop - Single-Parent Everyday Tenderness
+category: 5. Slice of Life & Moe
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-and-moe
+visualDna:
+  aesthetic: Gentle domestic routine, childcare sincerity, small apartments, school lunches, emotional growth through quiet responsibility and ordinary care
+  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
+  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
+  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
+  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
+  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
+  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  atmosphere: Tender, domestic, patient, soft
+  key_features: Household routine props, lunchbox detail, caregiving gestures, neighborhood paths, parent-child framing
+  creative_brief: Small hands reach for a lunchbox as morning light traces the quiet architecture of unexpected parenthood. Every grocery run and bedtime story becomes a monument to choosing care over convenience. Tenderness lives in the ordinary — the bento arranged just so, the shoes lined up at the door, the silence after a question that needs no answer.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-206.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-and-moe
+  categoryName: 5. Slice of Life & Moe
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-and-moe
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

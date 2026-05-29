@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-014
+packId: pack_13
+name: Ronin Alley Duel
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Urban samurai anime with a dusk duel.
+  form_and_line: Long silhouettes, katana, and a tense stance.
+  color_palette: Ink blue, subdued red, and street beige.
+  lighting_setup: Warm lanterns and crossing hard shadows.
+  material_texture: Wet stone, traditional fabric, and polished steel.
+  render_quality: Duel key visual with clear action readability.
+  spatial_distortion: Narrow street with dramatic central vanishing point.
+  atmosphere: Honor, silencio y choque inminente.
+  key_features: Two opposing figures, fine rain, static tension.
+  creative_brief: The instant before the decisive strike—restrained and powerful.
+avoidRules:
+  - photoreal
+  - goofy-chibi
+  - modern-guns
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-014.webp
+attributes:
+  negativePrompt: photoreal, goofy-chibi, modern-guns, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

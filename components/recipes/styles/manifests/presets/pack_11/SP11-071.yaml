@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-071
 packId: pack_11
 name: Fungi/Mold
-category: 5. Micro/Macro
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: Petri dish, mycology-lab, mold-colony, fungal-garden, agar-culture
   form_and_line: Fuzzy growth, hyphal-fringe, colony-circular, radial-extension, sporangiophore-stalk
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin
   atmosphere: Biological, decay, lab-incubator warmth, agar-dawn, invisible-kingdom, decomposition-cycle
   key_features: Spores, colony-margin, aerial-hyphae, conidia-powder, petri-dish-lid, inhibition-zone, contamination-sector, sporulation-color
+  creative_brief: Aerial mycelium reaches upward from the agar surface like a microscopic forest dreaming of spore-bearing altitude, hyphal-fringe exploring the petri-dish atmosphere. Concentric growth rings mark the colony's expansion, each zone a day in the life of an organism that feeds on decay and exhales new life into the carbon cycle. The petri dish becomes an art gallery where the exhibition changes hourly, curated by hyphae and painted in penicillin-mint and sporulation-spectrum color against the agar glass.
 avoidRules:
   - clean
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

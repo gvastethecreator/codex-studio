@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-063
 packId: pack_09
 name: Cobweb
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Dusty old webs
   form_and_line: Fine strands
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Drape
   atmosphere: Spooky, abandoned
   key_features: Messy strands
+  creative_brief: Render the dusty drapery of abandoned cobwebs where chaotic strands of grey silk hang in messy veils, catching dead light and dead insects with equal indifference in their sticky architecture of neglect. The fine strands should catch backlight like silver thread while shadows pool in the gathered dust at intersections. Capture the beauty of abandonment, architecture built by spiders long departed.
 avoidRules:
   - spider web (neat)
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

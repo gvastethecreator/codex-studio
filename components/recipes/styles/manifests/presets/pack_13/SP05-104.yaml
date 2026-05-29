@@ -1,0 +1,52 @@
+schemaVersion: 1
+id: SP05-104
+packId: pack_13
+name: Minimalist Indie Quiet
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Sparse economical animation, generous negative space, single-line character expressions, backgrounds reduced to color atmospheres, Makoto Shinkai skies stripped to essence, quiet indie-game cutscene, intentional emptiness, every line earned
+  form_and_line: Ultra-thin restrained ink lines, minimal contour economy, suggestion over statement, fewer strokes more impact
+  color_palette: Single-hue atmospheres, sky-gradient minimalism, off-white expanses, one accent color per scene, monochrome restraint
+  lighting_setup: Soft overcast diffusion, single-source window light, crepuscular quiet rays, ambient emptiness
+  material_texture: Smooth digital matte, untextured simplicity, paper-white void, subtle grain whisper if any
+  render_quality: Indie-anime minimalism, arthouse restraint, quiet-production beauty, less-is-more conviction
+  spatial_distortion: Characters small in vast empty spaces, loneliness-accentuating framing, negative-space compositions
+  atmosphere: Quiet, introspective, profoundly lonely, meditative stillness, held breath
+  key_features: Negative space dominance, minimalist line count, single-color atmospheres, tiny figures in big emptiness, intentional silence
+  creative_brief: A single figure stands in an ocean of negative space, the weight of silence pressing outward from the frame. Every line is a decision, every empty expanse a held breath waiting for the courage to exhale. The loneliness here is not emptiness but fullness — a solitude that teaches the eye to treasure what little it is given.
+avoidRules:
+  - busy
+  - detailed
+  - complex
+  - epic
+  - flashy
+  - saturated
+  - dramatic
+  - crowded
+  - explosive
+  - maximalist
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-104.webp
+attributes:
+  negativePrompt: busy, detailed, complex, epic, flashy, saturated, dramatic, crowded, explosive, maximalist
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-character-and-lifestyle
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-042
 packId: pack_02
 name: Papercraft Animation
-category: 3. Animation Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - animation-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Folded paper world
   form_and_line: Fold lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Low poly (paper), geometric faceting, folded terrain
   atmosphere: Cute, handmade, storybook craft, gentle wonder
   key_features: Folds, crease shadow, paper thickness, origami creature
+  creative_brief: Mountains crease into existence fold by deliberate fold, each ridge carrying the memory of the hand that pressed it flat. Light pools softly in the valley of every crease, revealing the fibrous soul of washi and rice paper. A whole world lifts off the tabletop, delicate enough to crush, brave enough to stand.
 avoidRules:
   - drawn
   - 3d
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: animation-styles
-  categoryName: 3. Animation Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - animation-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

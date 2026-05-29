@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-112
 packId: pack_02
 name: Mike Judge Office Boredom Sketch
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Dry anti-charisma office cartoon, dead-eyed cubicles, regional mediocrity, bad polo shirts, paperwork emptiness, satirical nobody energy, American beige despair made funny
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Bored, dry, defeated, observant
   key_features: Cubicle geometry, blank stares, underwhelming body language, office clutter, anti-glamour caricature
+  creative_brief: Fluorescent tubes hum over cubicles where dreams go to beige, each face a study in voluntary surrender to the photocopier's rhythm. The comedy is the absence of comedy — bodies arranged in geometries of resignation, finding absurdity in the unchanging angle of a necktie.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-029
 packId: pack_07
 name: Adobe/Pueblo
-category: 2. Architectural Styles
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - architectural-styles
+  - residential-interiors
 visualDna:
   aesthetic: Desert mud house, earthen sanctuary, pueblo revival, timeless Southwest, hand-shaped dwelling
   form_and_line: Rounded corners, stepped massing, thick-wall masses, parapet silhouettes, organic contours
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Handmade walls
   atmosphere: Warm, dry, grounded, ancient-land, pueblo-silent, earth-connected peace
   key_features: Wood beams (vigas), rounded edges, kiva fireplace, nicho alcoves, bancos, ladder access
+  creative_brief: Hands shaped these walls, each undulation a fingerprint of the maker pressed into mud and time. Vigas stretch across ceilings like ribs of earth made visible, holding centuries of desert silence above. The dwelling emerges from the ground as if it grew there, earthen architecture remembering its origin in soil.
 avoidRules:
   - sharp edges
   - wood
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: architectural-styles
-  categoryName: 2. Architectural Styles
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - architectural-styles
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

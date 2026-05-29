@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-029
 packId: pack_03
 name: Fractal 3D
-category: 3. 3D Styles
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - 3d-styles
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Mandelbulb complexity
   form_and_line: Infinite detail
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Math art, infinite, algorithmic wonder
   atmosphere: Trippy, alien, mind-bending
   key_features: Self-similarity, fractal recursion
+  creative_brief: Zoom in and the pattern repeats — zoom in again and it repeats again, a Mandelbulb cathedral of self-similarity where scale becomes meaningless. Psychedelic recursion tones spiral through deep cave shadows, and procedural surfaces carry the fingerprint of the equation that birthed them. The image is alien geometry rendered familiar through mathematics, a trip into algorithmic wonder where every detail contains the whole and the whole contains every detail.
 avoidRules:
   - simple
   - clean
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: 3d-styles
-  categoryName: 3. 3D Styles
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - 3d-styles
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

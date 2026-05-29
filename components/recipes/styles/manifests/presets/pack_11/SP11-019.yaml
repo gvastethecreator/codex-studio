@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-019
 packId: pack_11
 name: Felt Puppet
-category: 2. Toys & Crafts
+category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - retro-pop-and-kitsch
 visualDna:
   aesthetic: Muppet television puppet workshop, felt-and-foam soul, Jim Henson heart
   form_and_line: Fuzzy edges, fabric-cut contours, sewn-shape silhouettes, armature skeleton
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flapping mouth, hand-driven jaw, rod-controlled arms, loose-neck wobble
   atmosphere: Funny, alive, vaudeville warmth, backstage camaraderie, Muppet-theater chaos
   key_features: Arm rods, seam-stitch detail, googly-eye placement, felt-color blocking
+  creative_brief: Bright felt and foam padding conceal the hand that gives the creature its soul, arm rods dancing above the frame while the felt mouth flaps wide. Ping-pong-ball eyes roll with vaudeville timing as the television screen becomes a window to a workshop where inanimate fabric learns to feel. Hand-in-sock life captured between broadcast key light and the backstage magic of sewn-seam personality.
 avoidRules:
   - cgi
   - smooth
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: retro-pop-and-kitsch
+  categoryName: 4. Retro Pop And Kitsch
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - retro-pop-and-kitsch
   supportedTasks:
     - image_generate
     - image_edit

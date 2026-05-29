@@ -2,15 +2,15 @@ schemaVersion: 1
 id: SP05-029
 packId: pack_05
 name: Chaotic Indie Adolescence
-category: 2. 2000s Classics
+category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
-  - 2000s-classics
+  - anime-battle-and-worlds
+  - modern-shonen-and-action
 visualDna:
   aesthetic: Explosive coming-of-age surrealism, abrupt style shifts, youthful emotional whiplash, baseball-bat girl, Vespa scooters, manga panel pop-ups, guitar smashes
   form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
   atmosphere: Wild, formative, rebellious, explosive
   key_features: Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy
+  creative_brief: A Vespa tears through the fabric of suburban boredom as manga panels erupt from asphalt and guitars swing like battle-axes. Reality flickers wildly between animation styles — adolescence detonating in every chromatic burst, every speed-line fracture, every absurd cut that feels more honest than the real.
 avoidRules:
   - realistic
   - 3d render
@@ -40,12 +41,12 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
-  categoryId: 2000s-classics
-  categoryName: 2. 2000s Classics
+  packName: Anime Battle & Worlds
+  categoryId: modern-shonen-and-action
+  categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
-    - 2000s-classics
+    - anime-battle-and-worlds
+    - modern-shonen-and-action
   supportedTasks:
     - image_generate
     - image_edit

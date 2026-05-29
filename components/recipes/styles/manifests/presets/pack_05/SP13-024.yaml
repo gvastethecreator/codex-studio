@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-024
+packId: pack_05
+name: Arena Combo Finisher
+category: 3. Action
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - anime
+  - action
+visualDna:
+  aesthetic: Tournament anime with a devastating finishing combo.
+  form_and_line: "Hard strokes, athletic anatomy and controlled FX."
+  color_palette: "Crimson, gold and charcoal red."
+  lighting_setup: Stadium light with punctual burst.
+  material_texture: Cracked floor and impact energy.
+  render_quality: Fight climax illustration.
+  spatial_distortion: Low camera to magnify the protagonist.
+  atmosphere: Explosive triumph and competitive drama.
+  key_features: "Final blow, rubble, public out of focus."
+  creative_brief: Exact moment of the finisher with monumental presence.
+avoidRules:
+  - photoreal
+  - static
+  - over-noise
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-024.webp
+attributes:
+  negativePrompt: photoreal, static, over-noise, watermark, text, logo
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 3. Action
+  tags:
+    - anime-battle-and-worlds
+    - anime
+    - action
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

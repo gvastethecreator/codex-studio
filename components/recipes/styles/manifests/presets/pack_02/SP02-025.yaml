@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-025
 packId: pack_02
 name: Infomercial
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Product demo
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Before/After split, split-screen comparison, arrow overlay
   atmosphere: Enthusiastic, fake, paid-actor sincerity, limited-time urgency
   key_features: Call now, phone number crawl, money-back guarantee
+  creative_brief: Everything gleams with the desperate shine of a deal that cannot last, colors pushed to the edge of broadcast safety. The host's smile holds steady against a tide of split-screen comparisons and floating price tags. Here, before-and-after is not a promise but a magic trick performed in the harsh light of 3 AM.
 avoidRules:
   - cinematic
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

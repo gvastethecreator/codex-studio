@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-040
+packId: pack_12
+name: Thunder Plains Beast Hunt
+category: 6. Wilderness Hunts & Harsh Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+visualDna:
+  aesthetic: Cooperative hunt in open electric plains.
+  subject_treatment: Mounted hunters facing colossal beasts.
+  color_and_tone: Storm blue, lightning yellow, and dark earth.
+  lighting_and_shadow: Intermittent lightning and dramatic skies.
+  texture_and_material: Wet fur, armored leather, and mud.
+  camera_and_composition: Large-scale framing with a dominant monster.
+  atmosphere_and_mood: High-risk epic action, coordination, and reward.
+  rendering_and_quality: Key art for a hunting-season campaign.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - cityscape
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-040.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

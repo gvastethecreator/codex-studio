@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-036
 packId: pack_08
 name: Viking Warrior
-category: 2. Historical & Fantasy
+category: 3. Historical & Fantasy
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Tough, cold, sea-spray resolve, mead-hall warmth, raven-flight omen
   key_features: Beard/Braids, Thor's hammer pendant, round shield, bearded axe, fur mantle
+  creative_brief: Wolf fur matted by salt spray and the breath of northern seas, chainmail riveted by hands that knew the weight of an axe before they knew the weight of a name. Coarse wool wadmal wraps a body built for longship benches and shield-wall thunder, Thor's hammer swinging against a chest tattooed with runes that promise Valhalla to those who die with a sword in hand.
 avoidRules:
   - clean
   - shiny
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: historical-and-fantasy
-  categoryName: 2. Historical & Fantasy
+  categoryName: 3. Historical & Fantasy
   tags:
     - fashion-and-costume
     - historical-and-fantasy
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-061
 packId: pack_08
 name: Lace
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Romantic, fragile, heirloom-promise tenderness, veil-lift anticipation, cathedral-hush beauty
   key_features: Pattern, floral motif, scalloped edge, illusion neckline, hand-embroidered detail
+  creative_brief: Threads thinner than hair woven into flowers that will never wilt, Alencon needlepoint mapping a garden across a cathedral-length train. Backlight through tulle turns the veil into a second sky, each Chantilly motif a small promise of permanence in a material defined by its open spaces, the bride wrapped in the accumulated patience of lacemakers who died before she was born.
 avoidRules:
   - solid
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

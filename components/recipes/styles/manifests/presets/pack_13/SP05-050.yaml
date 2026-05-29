@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-050
+packId: pack_13
+name: Cozy Sign-Language Romance
+category: 4. Shojo, Magical Girl & Visionary Classics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - shojo-magical-girl-and-visionary-classics
+visualDna:
+  aesthetic: Warm city dates, tactile communication, soft winter palettes, tender gestures, sign-language intimacy, scarf-sharing warmth, festival lights, coffee-shop dates
+  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
+  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
+  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
+  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
+  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
+  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  atmosphere: Cozy, intimate, tender, warm
+  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
+  creative_brief: Hands speak louder than words in the quiet spaces between winter streetlight and coffee-shop steam, festival lanterns glowing above shared scarves like small, warm constellations. Every signed gesture maps tenderness across the distance between two souls — intimacy as a language the camera learns to read, one fingertip at a time.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-050.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: shojo-magical-girl-and-visionary-classics
+  categoryName: 4. Shojo, Magical Girl & Visionary Classics
+  tags:
+    - anime-character-and-lifestyle
+    - shojo-magical-girl-and-visionary-classics
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

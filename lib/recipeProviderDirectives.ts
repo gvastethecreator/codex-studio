@@ -294,6 +294,7 @@ function buildStylesProviderDirectives(module: RecipeModule, params: Record<stri
           paramDirective(params, 'roleInstruction', 'Role Instruction'),
           paramDirective(params, 'compositionRule', 'Composition Rule'),
           paramDirective(params, 'styleEmphasis', 'Style Emphasis'),
+          paramDirective(params, 'creativeBrief', 'Creative Brief'),
         ],
       },
       {

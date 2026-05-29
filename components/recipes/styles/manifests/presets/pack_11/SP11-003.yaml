@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-003
 packId: pack_11
 name: Play-Doh Clay
-category: 2. Toys & Crafts
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: Hand-sculpted modeling clay, squishy art, childhood craft table, sensory play
   form_and_line: Soft, squished edges, rolled cylinders, pinched forms, organic blobs
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blobby shapes, flattened gravity, uneven thickness, smooshed proportions
   atmosphere: Childish, creative, messy, experimental, happy chaos, beginner's joy
   key_features: Cracks in dry clay, color smears, thumb impressions, tool marks
+  creative_brief: Fingerprints become brushstrokes in a world made of squishable possibility, the salty dough remembering every press and pinch. Bright colors smear together at the borders where imagination overflows and precision dissolves into happy chaos. The art lives in its imperfection, carrying the honest mark of hands too young for straight lines.
 avoidRules:
   - shiny
   - wet
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

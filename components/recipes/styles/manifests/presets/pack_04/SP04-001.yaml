@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-001
 packId: pack_04
 name: Golden Age Comic
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: 1940s flagship hero comic, Superman style, golden-age boldness, truth-justice-energy, pulp optimism
   form_and_line: Thick ink
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic pose
   atmosphere: Action, classic, square-jawed heroism, serial cliffhanger
   key_features: 4-color process, halftone pattern, speech balloon
+  creative_brief: The hero stands defiant against a sky of halftone dots, every line drawn with the conviction of an era that believed in absolutes. Colors pop with the unapologetic boldness of CMYK primaries, cheap paper texture bleeding through like newsprint nostalgia. This is visual storytelling at its most direct—no gradients, no subtlety, just pure graphic energy that hits like a Saturday morning revelation.
 avoidRules:
   - modern digital color
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

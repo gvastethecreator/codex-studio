@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Glitch
   atmosphere: Chill, nostalgic
   key_features: Windows 95 UI
+  creative_brief: A mall that never existed, rendered in chrome gradients and Greek busts under palm tree sunsets. The aesthetic of futures that never arrived, slowed down and looped into melancholic infinity.
 avoidRules:
   - modern
   - nature
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

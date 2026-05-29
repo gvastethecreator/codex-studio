@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-024
 packId: pack_06
 name: Conte Crayon
-category: 3. Drawing & Sketching
+category: 2. Drawing & Sketching
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Warm, classical
   key_features: Earth tones
+  creative_brief: Compressed earth tones — sanguine, sepia, bistre — drag across textured paper in square strokes that echo the stick itself. The palette is archaeology, colors dug from the ground and pressed into service capturing human form. Warmth radiates from the limited spectrum, proving that restriction amplifies expression.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: drawing-and-sketching
-  categoryName: 3. Drawing & Sketching
+  categoryName: 2. Drawing & Sketching
   tags:
     - essential-art-styles
     - drawing-and-sketching
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

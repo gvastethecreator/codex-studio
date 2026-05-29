@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-009
 packId: pack_09
 name: River Stones
-category: 1. Natural Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Smooth pebbles
   form_and_line: Rounded shapes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Rounded
   atmosphere: Calm, wet
   key_features: Pile
+  creative_brief: Compose a meditation on smoothness earned through millennia of water's patient persuasion, each pebble a portrait of surrender whose edges dissolved into curves by the relentless kindness of current. Wet gloss should catch the light like a thin skin of memory, reflecting sky where stone once resisted. Render the quiet wisdom of the tumbled, the beauty of edges long since forgiven.
 avoidRules:
   - jagged
   - dry
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - natural-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

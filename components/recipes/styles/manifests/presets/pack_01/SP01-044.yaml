@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-044
 packId: pack_01
 name: Projector Light
-category: 2. Lighting
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - lighting-techniques
 visualDna:
   aesthetic: Image projected on face
   form_and_line: Pattern overlay
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Face distortion by light
   atmosphere: Conceptual, trippy
   key_features: Light pattern
+  creative_brief: Identity overlaid with borrowed imagery, skin becoming screen where inner visions project outward in patterns of light. The collision of two realities on a single surface, one organic and one synthetic, negotiating territory across the geography of a face. A conceptual double exposure where what is cast upon us becomes indistinguishable from what we are.
 avoidRules:
   - clean light
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - lighting
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

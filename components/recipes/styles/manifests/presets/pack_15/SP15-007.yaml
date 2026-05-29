@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-007
+packId: pack_15
+name: Vertical Meadow Clinic
+category: 1. Solarpunk Dreamscapes
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+visualDna:
+  aesthetic: Healthcare center integrated into an urban vertical meadow.
+  form_and_line: Friendly architecture, accessible routes, and soft curves.
+  color_palette: Warm white, meadow green, and clear blue.
+  lighting_setup: Abundant natural light filtered through gardens.
+  material_texture: Soft glass, medicinal vegetation, and hygienic wood.
+  render_quality: Futuristic wellness visual with real human warmth.
+  spatial_distortion: Open section of a high-rise garden building.
+  atmosphere: Care, calm, and technological trust without coldness.
+  key_features: Green facade, therapeutic terrace, serene circulation.
+  creative_brief: A future clinic that heals through how it feels to inhabit it.
+avoidRules: [photoreal, sterile-corporate, dark-gloomy, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-007.webp }
+attributes:
+  negativePrompt: photoreal, sterile-corporate, dark-gloomy, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-002
+packId: pack_12
+name: Bioluminescent Jungle Raid
+category: 6. Wilderness Hunts & Harsh Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+visualDna:
+  aesthetic: Alien nocturnal jungle with reactive bioluminescent flora.
+  subject_treatment: Tactical squad hidden among giant ferns.
+  color_and_tone: Phosphorescent greens, ink blues, and lime accents.
+  lighting_and_shadow: Localized organic light with softly scattering fog.
+  texture_and_material: Wet bark, translucent leaves and thick mud.
+  camera_and_composition: Low angle, tension diagonals, layered depth.
+  atmosphere_and_mood: Stealth, danger, and biological wonder.
+  rendering_and_quality: Mission concept art, high gameplay readability.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - flat-light
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-002.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

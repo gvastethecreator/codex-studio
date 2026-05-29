@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-056
 packId: pack_09
 name: Plasma/Energy
-category: 5. Elemental & FX
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Sci-fi shield
   form_and_line: Forcefield
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Warping
   atmosphere: Futuristic, protected
   key_features: Hex grid (optional)
+  creative_brief: Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an invisible surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power. The barrier should feel simultaneously present and immaterial, a force made visible through its own distortion of space. Capture the membrane between safety and annihilation, protection rendered as light.
 avoidRules:
   - fire
   - gas
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

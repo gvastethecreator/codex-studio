@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-053
 packId: pack_08
 name: Fur Coat
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Rich, warm, fireside-comfort, champagne-evening ease, first-class decadence
   key_features: Fluff, guard-hair sheen, dense underwool, dramatic collar, full-length sweep
+  creative_brief: Guard hairs catching light like a thousand tiny antennae tuned to the frequency of opulence, sable sweeping across shoulders with the weight of a climate that knows nothing of seasons, only of elevation. The fur swallows the body into a silhouette that is half animal and half aristocrat, chinchilla density absorbing sound until the only thing audible is the rustle of wealth too old to announce itself.
 avoidRules:
   - smooth
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

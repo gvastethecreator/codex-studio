@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-051
 packId: pack_01
 name: Fashion Editorial
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Magazine spread
   form_and_line: Dynamic pose
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Elongated limbs
   atmosphere: Cool, expensive
   key_features: Clothes focus
+  creative_brief: Fabric becomes architecture on the body, each fold and drape sculpted by light that knows exactly which surfaces deserve worship and which should retreat into shadow. The pose defies gravity and convention alike, a single frozen gesture that telegraphs an entire season of wanting in a glance. Color grading tastes like nostalgia for a future that has not yet arrived.
 avoidRules:
   - boring
   - plain
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

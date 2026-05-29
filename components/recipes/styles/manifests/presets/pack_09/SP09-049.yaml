@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-049
 packId: pack_09
 name: Velcro
-category: 3. Tactile Surfaces
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - tactile-surfaces
+  - metals-and-minerals
 visualDna:
   aesthetic: Hook and loop
   form_and_line: Tiny hooks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Functional
   key_features: Rows of hooks
+  creative_brief: Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a nylon forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the beauty of the fastener, engineered grip designed at millimeter scale.
 avoidRules:
   - smooth
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: tactile-surfaces
-  categoryName: 3. Tactile Surfaces
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - tactile-surfaces
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

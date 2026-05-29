@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Melting walls
   atmosphere: Intense, hallucination
   key_features: Eyes everywhere
+  creative_brief: Reality peels back in layers, fractals blooming behind the eyelids like neon flowers in accelerated time. Color becomes temperature, pattern becomes pulse, and the boundary between self and image dissolves completely.
 avoidRules:
   - dull
   - grey
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

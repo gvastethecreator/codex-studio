@@ -1,3 +1,4 @@
+import { STYLE_DEFAULT_IMAGES } from '../../lib/recipeAssetCatalog';
 import type { StylePackManifest, StylePresetManifest } from './styles/manifestTypes';
 import {
   createStylePresetCatalog,
@@ -27,7 +28,9 @@ function loadYamlParser() {
 async function loadYamlObjects<T>(files: Record<string, () => Promise<unknown>>) {
   const [yaml, entries] = await Promise.all([
     loadYamlParser(),
-    Promise.all(Object.entries(files).map(async ([path, loader]) => [path, await loader()] as const)),
+    Promise.all(
+      Object.entries(files).map(async ([path, loader]) => [path, await loader()] as const),
+    ),
   ]);
   return entries
     .sort(([a], [b]) => a.localeCompare(b))
@@ -42,15 +45,31 @@ export interface LoadedStylePresetCatalog extends StylePresetCatalog {
 let catalogCache: LoadedStylePresetCatalog | null = null;
 let catalogPromise: Promise<LoadedStylePresetCatalog> | null = null;
 
+function normalizePresetAssetAvailability(preset: StylePresetManifest): StylePresetManifest {
+  const defaultImageExists = Boolean(STYLE_DEFAULT_IMAGES[preset.id]);
+  return {
+    ...preset,
+    assets: {
+      ...preset.assets,
+      ...(defaultImageExists ? {} : { defaultImage: undefined }),
+    },
+    taxonomy: {
+      ...preset.taxonomy,
+      hasDefaultImage: defaultImageExists,
+    },
+  };
+}
+
 export async function loadStylePresetCatalog(): Promise<LoadedStylePresetCatalog> {
   if (catalogCache) return catalogCache;
   if (catalogPromise) return catalogPromise;
 
   catalogPromise = (async () => {
-    const [packs, presets] = await Promise.all([
+    const [packs, presetManifests] = await Promise.all([
       loadYamlObjects<StylePackManifest>(packManifestFiles),
       loadYamlObjects<StylePresetManifest>(presetManifestFiles),
     ]);
+    const presets = presetManifests.map(normalizePresetAssetAvailability);
     const graph = validateStyleManifestGraph(packs, presets);
     const catalog = createStylePresetCatalog(packs, presets);
     const loaded: LoadedStylePresetCatalog = {

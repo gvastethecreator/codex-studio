@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-036
 packId: pack_09
 name: Water Damage
-category: 4. Weathering & Decay
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - weathering-and-decay
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Ceiling stain
   form_and_line: Ring edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Bubbling paint
   atmosphere: Gross, old
   key_features: Tide lines
+  creative_brief: Render the cartography of neglect where brown and yellow tide lines ring across ceilings like the growth rings of a sick tree, each band a record of water's patient invasion. The surface should feel swollen and soft, gypsum turned to paste beneath bubbling paint that maps the path of the leak above. Capture the strange watercolor of decay, a ceiling painting itself in stains.
 avoidRules:
   - dry
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: weathering-and-decay
-  categoryName: 4. Weathering & Decay
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - weathering-and-decay
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

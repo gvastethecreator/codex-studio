@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-005
+packId: pack_13
+name: Rainy Slice of Life
+category: 2. Slice of Life / School / Music
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+  - slice-of-life
+visualDna:
+  aesthetic: Melancholic slice-of-life on a rainy day.
+  form_and_line: Soft strokes, natural anatomy, and everyday acting.
+  color_palette: Gray blues, warm beige, and damp green.
+  lighting_setup: Luz nublada con reflejos de ventana.
+  material_texture: Agua en cristal, tejidos blandos y muebles simples.
+  render_quality: Intimate, cinematic anime frame.
+  spatial_distortion: Close medium framing for emotional connection.
+  atmosphere: Stillness, introspection, and domestic warmth.
+  key_features: Gota en vidrio, gesto sutil, narrativa de cotidiano.
+  creative_brief: A small, human moment that conveys emotion without grandiosity.
+avoidRules:
+  - photoreal
+  - action-chaos
+  - neon-heavy
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-005.webp
+attributes:
+  negativePrompt: photoreal, action-chaos, neon-heavy, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice of Life / School / Music
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+    - slice-of-life
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

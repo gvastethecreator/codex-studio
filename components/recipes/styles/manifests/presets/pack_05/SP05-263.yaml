@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: Late-night urban death game, latex-black suits, green target lasers, nihilistic violence, apartment grit and afterlife machinery rendered with cynical precision
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
   atmosphere: Cruel, flashy, nihilistic, electric
   key_features: Black-suit silhouettes, target-laser accents, death-room geometry, urban-night grime, ruthless body-language
+  creative_brief: A black sphere hums in an anonymous Tokyo apartment and suddenly death is a game with green laser rules and latex-black uniforms, resurrection just another menu option. Nihilism glows fluorescent in the urban night, where survival costs more than dying and the scoreboard tracks souls, not points.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: dark-fantasy-and-seinen
   categoryName: 9. Dark Fantasy & Seinen
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - dark-fantasy-and-seinen
   supportedTasks:
     - image_generate

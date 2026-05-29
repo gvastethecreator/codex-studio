@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Optimistic, bright
   key_features: Plants everywhere
+  creative_brief: Vines embrace solar panels, buildings breathe through green lungs, and technology serves the ecosystem rather than consuming it. The future glows with chlorophyll and circuitry in symbiotic radiance.
 avoidRules:
   - industrial
   - dirty
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -1,0 +1,25 @@
+schemaVersion: 1
+id: pack_14
+name: Mythic Noir Curated Vault
+description: A curated pack of dark, elegant, and mythic visual directions designed for a strong, authorial identity.
+categories:
+  - id: mythic-noir
+    name: 1. Mythic Noir
+    presetRefs:
+      - pack_14/SP14-001.yaml
+      - pack_14/SP14-002.yaml
+      - pack_14/SP14-003.yaml
+      - pack_14/SP14-004.yaml
+      - pack_14/SP14-005.yaml
+      - pack_14/SP14-006.yaml
+      - pack_14/SP14-007.yaml
+      - pack_14/SP14-008.yaml
+presetRefs:
+  - pack_14/SP14-001.yaml
+  - pack_14/SP14-002.yaml
+  - pack_14/SP14-003.yaml
+  - pack_14/SP14-004.yaml
+  - pack_14/SP14-005.yaml
+  - pack_14/SP14-006.yaml
+  - pack_14/SP14-007.yaml
+  - pack_14/SP14-008.yaml

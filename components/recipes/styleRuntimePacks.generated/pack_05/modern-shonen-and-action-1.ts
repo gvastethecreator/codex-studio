@@ -27,6 +27,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Aspirational, energetic, hopeful, inspiring',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        'Stadium lights ignite the sky above a generation reaching for capes and calling, primary-color costumes streaking across the frame like comic book promises made visible. Every punch carries the weight of a dream broadcast live, every splash page a declaration that heroism is taught, learned, and earned in the arena of youth.',
     },
   },
   {
@@ -53,6 +55,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dumb, forceful, confident, hilarious',
       key_features:
         'Spell-school props, deadpan hero stance, physical gag payoffs, absurd power contrast, academy-combat framing',
+      creative_brief:
+        'A young man deadlifts his way through a world built on incantations, and every spell shatters against the immovable object of pure physical confidence. The academy prepared its wizards for counterspells and arcane nuance, never for someone who solves riddles with biceps and answers prophecies with protein. Absurdity is the most powerful magic of all.',
     },
   },
   {
@@ -79,6 +83,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cool, funny, efficient, surprising',
       key_features:
         'Retail-space combat staging, impossible stunt clarity, dead-calm expressions, product-clutter motion lines, hitman pose economy',
+      creative_brief:
+        'Calm hands arrange instant noodles on a shelf while a silenced pistol rests beside the register, retired violence humming beneath suburbia. The convenience store is a stage and reformed assassins are the most dangerous actors, finding rhythm in the mundane. Peace tastes like discount snacks and barely contained velocity.',
     },
   },
   {
@@ -105,6 +111,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Menacing, agile, cursed, stylish',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        'Neon bleeds through shattered domain barriers as cursed energy coils through midnight alleys in elegant geometries. Hooded sorcerers move with tactical precision, every hand-sign and finger-flick unleashing a mathematics of beautiful violence — streetwear apocalypse rendered in the slickest ink.',
     },
   },
   {
@@ -131,6 +139,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dire, relentless, desperate, terrifying',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        'Cables snap taut against gravity as human bodies arc between colossal shadows that devour the horizon. Desperation has a geometry here — vertical, angular, the mathematics of prey refusing to yield — drawn in razor-sharp motion lines that cut through stone walls and the terrible stillness of giants.',
     },
   },
   {
@@ -157,6 +167,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Somber, catastrophic, tragic, devastating',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        'Trench mud and battleship smoke smear across a landscape stripped of innocence, children marching in uniforms too large for their still-growing bones. Silhouettes dissolve into propaganda static, each frame a war photograph painted with the trembling brush of profound sorrow — cinema as memorial.',
     },
   },
   {
@@ -183,6 +195,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Adventurous, calculating, strategic, curious',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        'Strategy blooms across the frame like a visible thought-form, every combat a chess match played at the speed of instinct against vast, adventurous horizons. Nen threads web through the composition, binding curiosity to consequence — a world where intelligence is the truest superpower and the unknown is the greatest treasure.',
     },
   },
   {
@@ -209,6 +223,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Heroic, tragic, elegant, intense',
       key_features:
         'Katana arc readability, patterned costumes, lantern-and-mist staging, emotional combat pauses, ceremonial blade poses',
+      creative_brief:
+        'A katana arc cuts through lantern mist, the blade-trail lingering like a breath exhaled into winter air. Patterned haori billow through Taisho-era twilight, each fold holding family memory as tightly as the grip on a Nichirin sword. Combat here is choreography — a dance between inherited grief and the elegant violence of release.',
     },
   },
   {
@@ -235,6 +251,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Predatory, focused, manic, competitive',
       key_features:
         'Soccer-ball velocity, eye-line intensity, predator metaphors, field-line perspective, lock-on shot framing',
+      creative_brief:
+        'The goalbox narrows to a single retinal instant — predator eyes locking onto the ball with the hunger of a striker who has decided that scoring is the only acceptable form of existence. Neon pitch markings blur into velocity trails, the field becoming a cage where ego is the only muscle that matters. Every frame is a shot already taken, already scored, already inevitable.',
     },
   },
   {
@@ -261,6 +279,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Regal, severe, explosive, mythic',
       key_features:
         'Black robe silhouettes, palace verticality, spiritual attack effects, dramatic cloak movement, sword-name theatrics',
+      creative_brief:
+        'Black robes sweep across marble floors like ink bleeding into holy water, and every thunderclap is a name spoken too loudly. Combat here is not battle but liturgy, each blade swing a prayer to oblivion delivered with regal precision. The sky answers steel with steel, and silence with silence.',
     },
   },
   {
@@ -287,6 +307,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rowdy, loyal, kinetic, swaggering',
       key_features:
         'Jacket silhouettes, urban rooftop staging, knuckle-first action, streetlight color pops, team loyalty poses',
+      creative_brief:
+        'Wind cuts through the alley where loyalty is the only currency that matters and knuckles meet jawbone under the flicker of a neon convenience-store sign. The street crowns its protectors in bruised fists and oversized jackets, swagger earned one rooftop standoff at a time. Brotherhood is a fist bump and the wind that follows it.',
     },
   },
   {
@@ -313,6 +335,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Chaotic, playful, brutal, offbeat',
       key_features:
         'Rule-based action motifs, body-damage exaggeration, bright effect symbols, momentum-heavy posing, comic impact beats',
+      creative_brief:
+        'Bad luck is a weapon the universe never meant to hand over, and every missed step triggers a chain reaction that reads like divine slapstick. Bodies break in sequences so comic they loop back to profound, while romance flickers beneath the rubble. Chaos is not the enemy here — it is the only language love speaks fluently.',
     },
   },
   {
@@ -339,6 +363,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Determined, loud, magical, scrappy',
       key_features:
         'Grimoire staging, team squad silhouettes, anti-magic aura contrast, loud rivalry poses, magical battleground debris',
+      creative_brief:
+        'A grimoire opens and ambition spills out louder than any incantation, raw willpower forged into a blade that cuts through destiny. The squad stands together in rags that read like banners, shouting defiance at polished towers that never believed them worthy. Magic bends not to birthright but to the volume of a heart refusing to stay silent.',
     },
   },
   {
@@ -365,6 +391,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Brooding, precise, cool, vengeful',
       key_features:
         'Rainlit katana poses, occult blade effects, underworld interiors, severe facial acting, neon-rain contrast',
+      creative_brief:
+        'Rain carries the last words of a dead oath, pooling around unsheathed steel beneath flickering Shinjuku neon. The blade cuts more than flesh — it slices through the lie that the past can be left behind. Vengeance wears a school uniform and walks through midnight with the stillness of someone who has already decided.',
     },
   },
   {
@@ -391,6 +419,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Desperate, colossal, militarized, tragic',
       key_features:
         'Extreme scale contrast, maneuver-gear lines, breached-wall debris, regiment silhouettes, panic-charged perspective',
+      creative_brief:
+        'Walls are not protection but the silhouette of the cage humanity drew around itself, and soldiers swing on wires through dust that tastes like old terror. Each flight between rooftops is a gamble that the next landing point still exists. Scale tips cruelly — the giant is always larger than hope and the fall always longer than courage.',
     },
   },
   {
@@ -417,6 +447,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Calm, precise, wistful, powerful',
       key_features:
         'Controlled spell geometry, quiet face acting, sky-heavy backgrounds, measured combat spacing, memory-laden stillness',
+      creative_brief:
+        'A thousand years of memory compress into a single gesture, and a spell blooms like morning through the hands of someone who has outlived every companion. Violence is not loud here — it is quiet, precise, and already finished before the enemy understands it began. The sky watches with the patience of an elf who has seen empires rise and crumble like cloud formations.',
     },
   },
   {
@@ -443,6 +475,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Deadpan, overwhelming, absurd, comedic',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        "Mountains atomize into perfect white impact frames while a bald man registers mild inconvenience — the universe exhausting itself against absolute stillness. Cosmic catastrophe rendered as the world's most beautifully animated deadpan, where the joke is the gap between apocalypse and a blank expression.",
     },
   },
   {
@@ -469,6 +503,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Deadpan, explosive, absurd, triumphant',
       key_features:
         'Huge impact craters, cape silhouette, serious-monster design, anticlimactic hero expression, blockbuster destruction staging',
+      creative_brief:
+        'A hero stands in the crater where a city block used to be, expression blanker than the devastation around him. Destruction is rendered with blockbuster reverence while the face at its epicenter refuses the drama. The sublime joke is that sincerity and spectacle have become indistinguishable.',
     },
   },
   {
@@ -495,6 +531,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dominant, sleek, ominous, ascendant',
       key_features:
         'Shadow-army silhouettes, violet aura bloom, dungeon architecture, rank-up visual cues, overpowered hero framing',
+      creative_brief:
+        'Shadows kneel before a lone figure ascending through the dungeon gate, violet lightning threading the silhouette of a monarch who was once nobody. Power accretes like a gathering storm, each rank a new strata of loneliness. Solitude is the tax the throne collects from those who reach it alone.',
     },
   },
   {
@@ -521,6 +559,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Mythic, dramatic, grandiose, epic',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        'Golden skies shatter into infinite weapon-scapes as legends summoned from the depths of myth duel beneath indifferent city lights. Every blade carries a name and a millennium of yearning, the mundane world peeling back like painted scenery to reveal truth too vast and glorious to contain in a single frame.',
     },
   },
   {
@@ -547,6 +587,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Blazing, heroic, sacred, kinetic',
       key_features:
         'Flame trails, brigade uniforms, ember particles, cathedral scale, ignition-focused action posing',
+      creative_brief:
+        'Fire prayers rise through cathedral naves where brigade coats cut black silhouettes against altar flames. Embers drift upward like inverted benedictions, the sacred and the combustible fused into a single liturgical emergency. Salvation here wears turnout gear and moves at ignition speed — faith propelled through inferno by the sole conviction that something burning can still be saved.',
     },
   },
   {
@@ -573,6 +615,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Explosive, civic, resilient, colossal',
       key_features:
         'Scale contrast with city blocks, defense-suit silhouettes, kaiju debris, team-response formations, oversized impact framing',
+      creative_brief:
+        'A kaiju corpse sprawls across city blocks like a fallen skyscraper, and amidst the tissue steam, armored cleanup crews move with the grim efficiency of public servants who have seen too many Tuesdays end this way. Monster-scale destruction meets municipal-scale response — garbage trucks hauling away pieces of nightmare alongside ordinary debris. The heroism here wears a defense-suit helmet and fills out overtime forms.',
     },
   },
   {
@@ -599,6 +643,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Wild, funny, romantic, unhinged',
       key_features:
         'Occult iconography, speed-burst framing, weird-creature silhouettes, high-energy reaction shots, teen-banter body language',
+      creative_brief:
+        'Two teenagers argue over convenience-store snacks while a ghost and an alien crash through the same window at escape velocity. The frame crackles with the friction of irreverent youth colliding against cosmic nonsense, each punch line drawn at the speed of a skipped heartbeat. Romance hides in the recoil, blooming in the split-second between impact and laughter.',
     },
   },
   {
@@ -625,6 +671,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Lethal, lush, mystical, brutal',
       key_features:
         'Flower-and-blood contrast, executioner sword poses, poisonous color pops, creature-body horror, dense island backdrops',
+      creative_brief:
+        'Blossoms bloom from wounds, each petal a lethal geometry drawn in the space between execution and enlightenment. This island paradise is the cruelest tutor, schooling condemned souls in the grammar of beautiful death. Blood feeds a garden that remembers every name whispered into its soil.',
     },
   },
   {
@@ -651,6 +699,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Strange, cathartic, emotional, unexpected',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        "Psychic storms bloom from the quietest heart, sketchy lines vibrating with unsaid feeling before exploding into pop-abstract cataclysm. A boy's emotions reach one hundred percent and the world fractures into the most tender apocalypse ever drawn — paint smeared by the hand of overwhelming empathy.",
     },
   },
   {
@@ -677,6 +727,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Earnest, explosive, weird, cathartic',
       key_features:
         'Paint-surge psychic effects, simple sincere faces, emotion-meter tension, abstract motion bursts, telekinetic debris halos',
+      creative_brief:
+        'Emotion crosses an invisible threshold and the world becomes a paint storm howling with every color the psyche can manufacture. A boy with a bowl cut holds back the apocalypse with nothing but honesty and trembling hands. The universe listens when feeling overflows, and it screams back in abstract.',
     },
   },
   {
@@ -703,6 +755,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Inventive, bold, optimistic, strategic',
       key_features:
         'Blueprint overlays, primitive-to-modern tool contrast, science symbols, bright expression acting, invention triumph moments',
+      creative_brief:
+        'A boy counts the seconds until civilization returns, using chemistry as his war drum and ingenuity as his compass. Stone-age horizons crack open under the pressure of relentless optimism, each invention a love letter to the future almost lost. The wilderness does not know it is being rebuilt until the first lightbulb flickers on.',
     },
   },
   {
@@ -729,6 +783,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Heroic, luminous, graceful, resolute',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        'Water dragons spiral from the edge of a katana, ink and breath fusing into one luminous killing stroke. Taisho-era moonlight washes over patterned haori jackets and demon-blood flowers, each frame a woodblock print brought to furious life — a Hiroshige landscape animated by the fire of sacrifice.',
     },
   },
   {
@@ -755,6 +811,8 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Deranged, explosive, chaotic, visceral',
       key_features:
         'Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography',
+      creative_brief:
+        'A chainsaw revs through the fourth wall, spraying ink-splatter comedy across filthy urban frames like a deranged love letter to celluloid chaos. Newspaper halftones collide with sakuga-level ultraviolence, the sublime and the stupid sharing a cigarette in a trashed apartment while the world burns beautifully outside.',
     },
   },
   {
@@ -781,6 +839,288 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Chaotic, filthy, feral, desperate',
       key_features:
         'Industrial splatter, jagged power silhouettes, exhausted youth body language, grim city clutter, violent comic timing',
+      creative_brief:
+        "Blood dries on concrete and nobody stops to clean it — the filth of devil hunting is not aesthetic but environmental, the air itself greasy with exhaust and bad decisions. Violence arrives with deadpan inevitability, bodies ragdolling through apartment-block corridors as if physics gave up. The horror laughs at itself, and that hollow cackle is the soundtrack of youth spent paying someone else's debts.",
+    },
+  },
+  {
+    id: 'SP05-025',
+    name: 'Shadow Notebook Thriller',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Severe lighting, cat-and-mouse psychology, elite interiors, symbolic menace, death-note pages, notebook rules, shinigami eyes, apple motifs',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Tense, cerebral, chilling, intellectual',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        "Severe lighting carves a shinigami's grin from absolute darkness while ruled notebook pages flutter like death warrants across a chessboard of cat-and-mouse psychology. Apple motifs rot in the margins, the clean 2000s digital polish making the intellectual menace feel surgical—every shadow a calculation, every calm expression a confession withheld.",
+    },
+  },
+  {
+    id: 'SP05-148',
+    name: 'Baccano! - Jazz Railcrime Ensemble',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Prohibition-era train violence, immortal gangsters, jazz-age ensemble chaos, amber barrooms, nonlinear pulp cool, smiling criminals and bloody miracles',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Riotous, jazzy, dangerous, charismatic',
+      key_features:
+        'Train-car action, 1930s fashion, ensemble staging, amber bar lighting, pulp-crime body language',
+      creative_brief:
+        'A train car becomes a ballroom for bullets and immortals who forgot how to die, jazz keeping time while bodies hit the floor and get back up grinning. Amber light pools in whiskey glasses while nonlinear chaos writes its own pulp scripture. The 1930s never ended — it just learned to smile through the blood.',
+    },
+  },
+  {
+    id: 'SP05-021',
+    name: 'Headband Ninja Journey',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Youthful ninja adventure, village rooftops, earthy speed, determined rivalry, headband motifs, kunai silhouettes, forest training grounds, chakra surges',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Energetic, earnest, youthful, determined',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        'A headband catches the wind above village rooftops, chakra surging through kunai silhouettes as youthful determination burns across training-ground forests colored in saturated digital-cel primaries. Every leap is framed with the earnest conviction of a story just beginning, speed lines tracing the arc of a dream in motion.',
+    },
+  },
+  {
+    id: 'SP05-022',
+    name: 'Urban Spirit Blade',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Street fashion, oversized blades, monochrome contrast, supernatural swagger, bankai releases, soul-cutting zanpakuto, hollow masks, spiritual pressure',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Stylish, intense, iconic, cool',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        'A zanpakuto release tears the sky open above street-fashion warriors caught mid-transformation, hollow masks splitting the frame between monochrome menace and supernatural swagger. The oversized blade catches rim light like a promise, every pose radiating the iconic cool of a generation that learned confidence from ink and animation.',
+    },
+  },
+  {
+    id: 'SP05-023',
+    name: 'Grand Pirate Adventure',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Elastic anatomy, bright oceans, exaggerated faces, treasure-hunt exuberance, straw-hat silhouettes, pirate flags, sea-king monsters, devil-fruit powers',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Joyful, adventurous, spirited, free',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        'Elastic faces stretch impossibly wide against oceans painted in hues too bright for reality, straw-hat silhouettes bouncing across the horizon with the uncontainable joy of absolute freedom. Devil-fruit logic bends anatomy into pure emotional expression, every frame a declaration that adventure is not a destination but a way of seeing.',
+    },
+  },
+  {
+    id: 'SP05-028',
+    name: 'Lo-Fi Sword Roadtrip',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Hip-hop cadence, loose swagger, historical roads, rhythmic action cuts, samurai-champloo beats, graffiti aesthetic, sunflowers, sword-dance duels',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Cool, kinetic, rhythmic, improvisational',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        'A beat drops and two blades cut the frame in half, Edo roads stretching into turntable rhythm beneath a graffiti sky. Sunflowers bend toward dust and swagger, each panel a scratched vinyl track of improvisational sword poetry — loose, lethal, and impossibly cool.',
+    },
+  },
+  {
+    id: 'SP05-029',
+    name: 'Chaotic Indie Adolescence',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Explosive coming-of-age surrealism, abrupt style shifts, youthful emotional whiplash, baseball-bat girl, Vespa scooters, manga panel pop-ups, guitar smashes',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Wild, formative, rebellious, explosive',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        'A Vespa tears through the fabric of suburban boredom as manga panels erupt from asphalt and guitars swing like battle-axes. Reality flickers wildly between animation styles — adolescence detonating in every chromatic burst, every speed-line fracture, every absurd cut that feels more honest than the real.',
+    },
+  },
+  {
+    id: 'SP05-142',
+    name: 'Black Lagoon - South Seas Gun-Runner Grit',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Tropical criminal port cities, cigarettes and speedboats, hard-bitten mercenary action, gunmetal humidity, profanity-laced underworld cool, lawless modern noir',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Gruff, hot, dangerous, worldly',
+      key_features:
+        'Gun-action framing, tropical industrial docks, criminal fashion silhouettes, speedboat spray, hardboiled expressions',
+      creative_brief:
+        'Salt air mixes with cordite while a cigarette glows at the edge of the dock, the ember the only honest light in a port city built on lies. No one here is innocent, but some are more interesting than others, and the sea does not judge — it just swallows the evidence. Every speedboat departure is a question mark trailing across the water.',
+    },
+  },
+  {
+    id: 'SP05-143',
+    name: 'Darker than Black - Contract Killer Night Rain',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Urban electrical espionage, masked contractors, cold neon rain, conspiratorial apartment blocks, emotion-suppressed assassin cool, after-midnight tech noir',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Cold, secretive, sleek, lonely',
+      key_features:
+        'Electric effect threads, masked silhouettes, rainlit city alleys, covert-operatives framing, controlled facial acting',
+      creative_brief:
+        'Neon bleeds down the window of a safehouse where nobody feels safe, and a contractor checks the time with a face emptied of everything except the cost of the next mission. Every power subtracts a piece of self, and the balance sheet is written in cold rain. The city at 3 AM is just another mask, and everyone wears it well.',
+    },
+  },
+  {
+    id: 'SP05-144',
+    name: 'Samurai Champloo - Lo-Fi Edo Swagger',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Edo roadtrip remixed with hip-hop attitude, loose sword swagger, vinyl-scratch pacing, dusty sunlight, anachronistic cool threaded through wandering samurai adventure',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Loose, stylish, sunbaked, rebellious',
+      key_features:
+        'Streetwise sword poses, lo-fi travel scenery, rhythm-first action timing, relaxed body language, dusty road compositions',
+      creative_brief:
+        'Two swords and a record scratch walk through Edo like they invented the future and forgot to tell anyone. Dust rises from sandals that have traveled nowhere and everywhere, each step a beat in a wandering rhythm. The road is just a long sample loop waiting for the next cut.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

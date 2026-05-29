@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-015
 packId: pack_01
 name: Kodachrome 64
-category: 3. Film Stocks
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - film-and-analog-process
 visualDna:
   aesthetic: Vintage slide film
   form_and_line: Sharp, archival
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: High contrast
   atmosphere: Historic, vivid
   key_features: Red pop
+  creative_brief: 'The archive of a mid-century afternoon, preserved in dyes that refuse to fade: reds that ache with permanence, skies that hold their breath since 1972. Every detail etched with documentary conviction, as if the world were being catalogued for the first and final time.'
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - film-stocks
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

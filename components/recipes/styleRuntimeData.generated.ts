@@ -40,16 +40,17 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
   },
   {
     id: 'pack_05',
-    name: 'Anime & Manga Spectrum',
+    name: 'Anime Battle & Worlds',
     description:
-      'A large curated collection of original anime and manga presets spanning retro cel language, modern action, romance, sports, performance, mecha, slice-of-life, fantasy, and creator-driven stylistic experiments.',
-    presetCount: 372,
+      'High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.',
+    presetCount: 135,
   },
   {
     id: 'pack_06',
     name: 'Essential Art Styles',
-    description: 'A comprehensive collection of 80+ traditional and digital art techniques.',
-    presetCount: 100,
+    description:
+      'A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.',
+    presetCount: 120,
   },
   {
     id: 'pack_07',
@@ -60,7 +61,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
   {
     id: 'pack_08',
     name: 'Fashion & Costume',
-    description: 'Diverse fashion styles from historical to futuristic.',
+    description:
+      'A fashion and costume library spanning contemporary editorial looks, subcultural dress codes, historical silhouettes, character-costume fantasy, and material-forward transformation concepts.',
     presetCount: 80,
   },
   {
@@ -74,7 +76,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     id: 'pack_10',
     name: 'Abstract & Experimental',
     description:
-      'A comprehensive collection of 80+ abstract styles, from geometric patterns to fluid dynamics and digital glitches.',
+      'A semantically grouped abstract library covering geometric systems, reactive material flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven surfaces.',
     presetCount: 80,
   },
   {
@@ -82,6 +84,41 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Miscellaneous & Fun',
     description: 'Playful, toy-like, and niche aesthetic styles.',
     presetCount: 80,
+  },
+  {
+    id: 'pack_12',
+    name: 'Video Game Originals Vault',
+    description:
+      'An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.',
+    presetCount: 80,
+  },
+  {
+    id: 'pack_13',
+    name: 'Anime Character & Lifestyle',
+    description:
+      'Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.',
+    presetCount: 132,
+  },
+  {
+    id: 'pack_14',
+    name: 'Mythic Noir Curated Vault',
+    description:
+      'A curated pack of dark, elegant, and mythic visual directions designed for a strong, authorial identity.',
+    presetCount: 8,
+  },
+  {
+    id: 'pack_15',
+    name: 'Solarpunk Dreamscapes Vault',
+    description:
+      'A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.',
+    presetCount: 8,
+  },
+  {
+    id: 'pack_16',
+    name: 'Anime Classics & Prestige',
+    description:
+      'Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.',
+    presetCount: 140,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 
@@ -128,6 +165,26 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
     ),
   pack_11: () =>
     import('./styleRuntimePacks.generated/pack_11').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_12: () =>
+    import('./styleRuntimePacks.generated/pack_12').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_13: () =>
+    import('./styleRuntimePacks.generated/pack_13').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_14: () =>
+    import('./styleRuntimePacks.generated/pack_14').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_15: () =>
+    import('./styleRuntimePacks.generated/pack_15').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_16: () =>
+    import('./styleRuntimePacks.generated/pack_16').then((module) =>
       module.loadGeneratedStyleRuntimePack(),
     ),
 };

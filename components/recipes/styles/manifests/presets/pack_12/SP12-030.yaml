@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-030
+packId: pack_12
+name: Cursed Carnival Showdown
+category: 7. Heists, Horror & Underworld Runs
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+visualDna:
+  aesthetic: Cursed amusement park with colorful grotesque aesthetics.
+  subject_treatment: Clown bosses and lethal attraction automatons.
+  color_and_tone: Dirty yellow, carmine red, and spectral violet.
+  lighting_and_shadow: Flickering fair lights and theatrical fog.
+  texture_and_material: Peeling paint, old canvas, and oxidized metal.
+  camera_and_composition: Tent entrance as the danger focal point.
+  atmosphere_and_mood: Playful unease and unpredictable chaos.
+  rendering_and_quality: Boss-rush stage with strong identity.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - clean-theme
+  - low-contrast
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-030.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

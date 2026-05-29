@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP10-070',
     name: 'Azulejo Tile',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'modern',
     style: {
       aesthetic: 'Portuguese ceramic tile',
@@ -18,12 +18,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Classic, bright',
       key_features: 'Square grid',
+      creative_brief:
+        'Cobalt blue dancing across white glaze in geometries borrowed from Moorish palaces, each tile a fragment of a larger narrative. Ceramic carries the light of Lisbon, a wall that sings in painted porcelain.',
     },
   },
   {
     id: 'SP10-047',
     name: 'Damask Pattern',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'modern, messy',
     style: {
       aesthetic: 'Ornate wallpaper',
@@ -35,12 +37,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Repeat',
       atmosphere: 'Expensive, old',
       key_features: 'Symmetry',
+      creative_brief:
+        'Luxury woven into symmetry, acanthus leaves and fleur-de-lis repeating across silk and shadow. The pattern whispers of drawing rooms and candlelight, a texture of inherited elegance.',
     },
   },
   {
     id: 'SP10-049',
     name: 'Houndstooth',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'floral, organic',
     style: {
       aesthetic: 'Broken check pattern',
@@ -52,12 +56,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Repeat',
       atmosphere: 'Professional',
       key_features: 'Grid',
+      creative_brief:
+        'The check fractures into jagged repetition, a pattern that walks the line between order and agitation. Woven authority, the textile equivalent of a sharp glance across a boardroom table.',
     },
   },
   {
     id: 'SP10-048',
     name: 'Terrazzo',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'wood, metal',
     style: {
       aesthetic: 'Stone chips in cement',
@@ -69,12 +75,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Modern, clean',
       key_features: 'Random chips',
+      creative_brief:
+        'Marble fragments suspended in a matrix like geological confetti, the random made orderly by the binder that holds it. Each chip a different quarry, each slab a democracy of stone.',
     },
   },
   {
     id: 'SP10-056',
     name: 'Carbon Fiber',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'organic',
     style: {
       aesthetic: 'Woven tech material',
@@ -86,12 +94,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Sporty, modern',
       key_features: 'Weave',
+      creative_brief:
+        'Thousands of filaments woven into a fabric stronger than steel, the weave catching light in diagonal whispers. The texture of speed and precision, a material that promises performance before it promises beauty.',
     },
   },
   {
     id: 'SP10-050',
     name: 'Tartan (Plaid)',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'curved lines',
     style: {
       aesthetic: 'Criss-cross bands',
@@ -103,12 +113,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Weave',
       atmosphere: 'Classic, warm',
       key_features: 'Grid',
+      creative_brief:
+        'Warp and weft crossing in ancient code, each intersection a clan signature, each color a landscape. Wool remembers highlands and hearths, the grid worn into softness by generations.',
     },
   },
   {
     id: 'SP10-059',
     name: 'Leather Texture',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'fabric, smooth',
     style: {
       aesthetic: 'Animal hide',
@@ -120,12 +132,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Wrinkles',
       atmosphere: 'Classic, rich',
       key_features: 'Pores',
+      creative_brief:
+        'Skin preserved in its final texture, pores and grain lines carrying the ghost of the animal that wore it first. Patina deepens with use, each crease a collaboration between craft and time.',
     },
   },
   {
     id: 'SP10-080',
     name: 'Letterpress',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'flat print',
     style: {
       aesthetic: 'Deep impression ink',
@@ -137,12 +151,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Craft, quality',
       key_features: 'Impression depth',
+      creative_brief:
+        'Type bites into cotton paper, leaving words you can feel with your fingertips as well as your eyes. Each character is a small crater of ink and shadow, a physical commitment to language in an age of weightless pixels.',
     },
   },
   {
     id: 'SP10-073',
     name: 'Mosaic (Tile)',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'smooth painting',
     style: {
       aesthetic: 'Small square tiles',
@@ -154,12 +170,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Pixelated by tiles',
       atmosphere: 'Ancient, solid',
       key_features: 'Tile grid',
+      creative_brief:
+        'Images built from cubic fragments, each tessera a decision made by hands working in mortar and time. The whole emerges from the accumulation of small certainties, a pixel art made permanent in stone and glass.',
     },
   },
   {
     id: 'SP10-046',
     name: 'Paisley Pattern',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'solid color',
     style: {
       aesthetic: 'Teardrop shapes',
@@ -171,12 +189,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Pattern repeat',
       atmosphere: 'Boho, intricate',
       key_features: 'Seamless',
+      creative_brief:
+        'The teardrop bends and repeats, a droplet frozen into ornament and multiplied into labyrinthine fields. Persian gardens translated into textile, each curve a memory of cypress and mango and the geometry of paradise.',
     },
   },
   {
     id: 'SP10-052',
     name: 'Camouflage',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'bright, neon',
     style: {
       aesthetic: 'Military pattern',
@@ -188,12 +208,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Hidden, military',
       key_features: 'Random blobs',
+      creative_brief:
+        "Shapes engineered to deceive the eye, organic blobs that break the silhouette into unreadable fragments. The pattern's purpose is disappearance, but its aesthetic has become a statement of visible aggression.",
     },
   },
   {
     id: 'SP10-053',
     name: 'Tie Dye',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'sharp lines',
     style: {
       aesthetic: 'Spiral dye pattern',
@@ -205,12 +227,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Spiral',
       atmosphere: 'Groovy, fun',
       key_features: 'Spiral center',
+      creative_brief:
+        'Fabric twisted into a vortex, pigment bleeding along folds in psychedelic mandalas. Every unwrap is a revelation, a flower of color that could not have been predicted and cannot be repeated.',
     },
   },
   {
     id: 'SP10-054',
     name: 'Marble Texture',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'wood, plastic',
     style: {
       aesthetic: 'Stone veins',
@@ -222,12 +246,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Expensive, cold',
       key_features: 'Veins',
+      creative_brief:
+        'Mineral impurities that trace the geology of pressure across polished surfaces, frozen lightning in stone. Each vein is a fault line that became ornament, chaos compressed into elegance by millennia.',
     },
   },
   {
     id: 'SP10-055',
     name: 'Wood Grain',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'metal, stone',
     style: {
       aesthetic: 'Tree rings',
@@ -239,12 +265,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Knots',
       atmosphere: 'Rustic, solid',
       key_features: 'Directional grain',
+      creative_brief:
+        "Growth rings spreading outward from a core of patience, each line a year of rain and sun transcribed into cellulose. The tree's autobiography, readable by anyone who runs a finger across its surface.",
     },
   },
   {
     id: 'SP10-057',
     name: 'Knitted Texture',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'smooth, flat',
     style: {
       aesthetic: 'Interlocking loops',
@@ -256,12 +284,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Stitch pattern',
       atmosphere: 'Warm, soft',
       key_features: 'Loops',
+      creative_brief:
+        'Loops captured in loops, a topology of warmth built stitch by stitch from wool and patience. The texture holds the memory of hands, the rhythm of needles, the mathematics of interlocking comfort.',
     },
   },
   {
     id: 'SP10-058',
     name: 'Denim Texture',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'silk, smooth',
     style: {
       aesthetic: 'Blue jean fabric',
@@ -273,12 +303,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Fades',
       atmosphere: 'Casual, tough',
       key_features: 'Twill lines',
+      creative_brief:
+        'Indigo-dyed cotton woven into diagonal twill, the warp showing blue while the weft stays white beneath. A texture born from work and worn into softness, the fabric of rebellion and routine alike.',
     },
   },
   {
     id: 'SP10-060',
     name: 'Glitter Texture',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'matte, dull',
     style: {
       aesthetic: 'Thousands of sparkles',
@@ -290,12 +322,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Fun, cheap',
       key_features: 'Sparkle density',
+      creative_brief:
+        'A galaxy of micro-mirrors scattering light in every direction simultaneously, each fleck a tiny disco ball. The texture of celebration refusing subtlety, joy expressed as refractive geometry in maximum density.',
     },
   },
   {
     id: 'SP10-062',
     name: 'Holographic Foil',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'matte paper',
     style: {
       aesthetic: 'Rainbow reflection',
@@ -307,12 +341,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Color shift',
       atmosphere: 'Cool, collectible',
       key_features: 'Rainbow gradient',
+      creative_brief:
+        'Light split into its full spectrum by microscopic ridges, silver surrendering to every color at once. The surface never settles on a single identity, shifting with the angle of the eye that beholds it.',
     },
   },
   {
     id: 'SP10-063',
     name: 'Chainmail',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'plate armor',
     style: {
       aesthetic: 'Interlinked rings',
@@ -324,12 +360,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Drape',
       atmosphere: 'Strong, protective',
       key_features: 'Ring pattern',
+      creative_brief:
+        'Thousands of rings interlocked into a fabric that breathes steel, flexible armor that flows like metallic water. Each link depends on its neighbors, a textile of mutual defense forged one circle at a time.',
     },
   },
   {
     id: 'SP10-064',
     name: 'Snake Skin',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'fur, smooth',
     style: {
       aesthetic: 'Scales',
@@ -341,12 +379,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Wild, luxury',
       key_features: 'Scale grid',
+      creative_brief:
+        'Overlapping shields of keratin laid down in a pattern older than mammals, catching light in diamond facets. The texture of silent movement, a surface that promises danger and demands attention.',
     },
   },
   {
     id: 'SP10-065',
     name: 'Basket Weave',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'solid',
     style: {
       aesthetic: 'Woven plant fiber',
@@ -358,12 +398,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Rustic, simple',
       key_features: 'Weave pattern',
+      creative_brief:
+        'Over and under, over and under, the oldest technology of containment woven from reed and rhythm. Each crossing is a decision that holds the next in place, a geometry of simple interdependence.',
     },
   },
   {
     id: 'SP10-066',
     name: 'Honeycomb',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'square, circle',
     style: {
       aesthetic: 'Hexagonal grid',
@@ -375,12 +417,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Sweet, orderly',
       key_features: 'Hexagon grid',
+      creative_brief:
+        "Nature's most efficient packing solution, beeswax hexagons tessellating into a storage system perfected by evolution. The geometry of sweetness, a lattice built by instinct and filled with gold.",
     },
   },
   {
     id: 'SP10-067',
     name: 'Circuit Board',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'organic',
     style: {
       aesthetic: 'PCB traces',
@@ -392,12 +436,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Smart, complex',
       key_features: 'Traces',
+      creative_brief:
+        'Copper rivers flowing across green fiberglass, carrying electrons along paths designed by human logic. The topography of computation, a landscape where distance is measured in nanoseconds and intention is etched in metal.',
     },
   },
   {
     id: 'SP10-069',
     name: 'QR Code Style',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'round, analog',
     style: {
       aesthetic: 'Data matrix',
@@ -409,12 +455,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Blocky',
       atmosphere: 'Digital, code',
       key_features: 'Corner markers',
+      creative_brief:
+        'Information rendered as a chessboard of black and white squares, a pattern designed to be read by machines but seen by humans as alien script. The aesthetics of pure data, beauty in the functional arrangement of bits.',
     },
   },
   {
     id: 'SP10-071',
     name: 'Kintsugi',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'perfect, new',
     style: {
       aesthetic: 'Broken pottery repaired with gold',
@@ -426,12 +474,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Cracked',
       atmosphere: 'Healing, beautiful',
       key_features: 'Gold veins',
+      creative_brief:
+        'The break becomes the most valuable part, gold lacquer filling cracks like rivers of light across a shattered landscape. Damage is not hidden but celebrated, the object made more beautiful by having survived its own destruction.',
     },
   },
   {
     id: 'SP10-072',
     name: 'Pointillism (Seurat)',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'brush strokes, lines',
     style: {
       aesthetic: 'Made of tiny dots',
@@ -443,12 +493,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Calm, vibrant',
       key_features: 'Dots only',
+      creative_brief:
+        'Thousands of pigment points applied with scientific precision, colors refusing to mix on the palette and instead blending in the eye of the observer. The image assembles itself at a distance, dissolving into atoms of color up close.',
     },
   },
   {
     id: 'SP10-074',
     name: 'Stained Glass',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'opaque',
     style: {
       aesthetic: 'Colored glass window',
@@ -460,12 +512,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Simplified shapes',
       atmosphere: 'Holy, bright',
       key_features: 'Lead lines',
+      creative_brief:
+        'Light filtered through cobalt and ruby, saints and stories rendered in lead lines and luminous panes. The window transforms sunlight into sermon, color becoming scripture for those who cannot read.',
     },
   },
   {
     id: 'SP10-075',
     name: 'Cross Stitch',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'smooth, drawn',
     style: {
       aesthetic: 'Pixel art with thread',
@@ -477,12 +531,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Low resolution',
       atmosphere: 'Traditional, cute',
       key_features: 'X pattern',
+      creative_brief:
+        'X-shaped stitches accumulate across linen, each a binary decision of color that builds toward image one thread at a time. The needle encodes pixels in cotton, a digital sensibility executed by analog hands.',
     },
   },
   {
     id: 'SP10-077',
     name: 'Chalkboard Art',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'pen, ink',
     style: {
       aesthetic: 'Chalk on blackboard',
@@ -494,12 +550,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Smudged',
       atmosphere: 'Casual, hand drawn',
       key_features: 'Black background',
+      creative_brief:
+        'Calcium carbonate dust pressed into slate, lines that smudge at the slightest touch. The impermanence is the point, a visual thought that knows it will be erased but commits itself to the board anyway.',
     },
   },
   {
     id: 'SP10-078',
     name: 'Neon Light Lines',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'bulb, sun',
     style: {
       aesthetic: 'Glowing lines in dark',
@@ -511,12 +569,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Cool, dark',
       key_features: 'Dark background',
+      creative_brief:
+        'Gas ignited inside glass tubes bent by hand into cursive declarations, red and blue buzzing against the night. Light becomes line, line becomes sign, and the darkness makes the glow possible.',
     },
   },
   {
     id: 'SP10-079',
     name: 'Foil Stamping',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'print, ink',
     style: {
       aesthetic: 'Metallic imprint on paper',
@@ -528,12 +588,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Expensive, elegant',
       key_features: 'Metallic shine',
+      creative_brief:
+        'Gold leaf pressed into paper by heat and pressure, the impression catching light at an angle that whispers luxury. The metal remembers the die that marked it, a permanent kiss of refinement on the page.',
     },
   },
   {
     id: 'SP10-051',
     name: 'Polka Dot',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'square, line',
     style: {
       aesthetic: 'Grid of circles',
@@ -545,12 +607,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Fun, retro',
       key_features: 'Dots',
+      creative_brief:
+        'Circles march across the surface in perfect cadence, a pattern that never takes itself seriously. The dot is the simplest possible mark, repeated until it becomes a declaration of joy.',
     },
   },
   {
     id: 'SP10-061',
     name: 'Rust Texture',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'clean, new',
     style: {
       aesthetic: 'Oxidized metal',
@@ -562,12 +626,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Corrosion',
       atmosphere: 'Abandoned, gritty',
       key_features: 'Random patches',
+      creative_brief:
+        'Iron returning to earth one flake at a time, orange and brown blooms of entropy spreading across what was once smooth and strong. Decay becomes a palette, and neglect paints with patient, corrosive beauty.',
     },
   },
   {
     id: 'SP10-076',
     name: 'Blueprint',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'color, 3d',
     style: {
       aesthetic: 'Technical drawing',
@@ -579,12 +645,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Planning, technical',
       key_features: 'White on Blue',
+      creative_brief:
+        'White lines on Prussian blue, the language of engineers rendered in diazo paper and ammonia dreams. Every dimension is a promise, every annotation a constraint, the future drawn before it is built.',
     },
   },
   {
     id: 'SP10-068',
     name: 'Topographic Map',
-    category: '3. Pattern & Texture',
+    category: '5. Pattern & Texture',
     negativePrompt: 'straight lines',
     style: {
       aesthetic: 'Elevation contour lines',
@@ -596,6 +664,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Exploration',
       key_features: 'Contours',
+      creative_brief:
+        "Landscape abstracted into concentric whispers, each line a promise of equal altitude. Mountains become fingerprints, valleys become signatures, and the cartographer's pen traces what the earth already knows.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

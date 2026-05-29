@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-054
 packId: pack_07
 name: Cyberpunk Slums
-category: 5. Fantasy Architecture
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - fantasy-architecture
+  - residential-interiors
 visualDna:
   aesthetic: Stacked containers, megacity underbelly, vertical shantytown, Kowloon-inspired density, neon-blight
   form_and_line: Wires, neon, fire-escape zigzag, shipping-container grid, AC-unit cascade, laundry lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Oppressive, tech, desperate, hunted, data-saturated, no-sky, breathing-each-other's-air
   key_features: Vertical density, neon signs, stacked AC units, fire escapes, cable chaos, street-level market stalls
+  creative_brief: Containers stack toward smog-blurred sky, each box a life compressed into corrugated steel and desperation. Neon signs advertise in six languages, flickering promises that none of the residents can afford. The alley narrows into lightlessness, a vertical shantytown where humanity packs itself tighter than circuit boards.
 avoidRules:
   - clean
   - wide streets
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: fantasy-architecture
-  categoryName: 5. Fantasy Architecture
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - fantasy-architecture
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,0 +1,190 @@
+schemaVersion: 1
+id: pack_12
+name: Video Game Originals Vault
+description: An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.
+categories:
+  - id: neon-urban-and-night-ops
+    name: 1. Neon Urban & Night Ops
+    presetRefs:
+      - pack_12/SP12-001.yaml
+      - pack_12/SP12-014.yaml
+      - pack_12/SP12-025.yaml
+      - pack_12/SP12-032.yaml
+      - pack_12/SP12-043.yaml
+      - pack_12/SP12-048.yaml
+      - pack_12/SP12-056.yaml
+      - pack_12/SP12-062.yaml
+      - pack_12/SP12-071.yaml
+      - pack_12/SP12-078.yaml
+  - id: arcane-temples-and-mythic-realms
+    name: 2. Arcane Temples & Mythic Realms
+    presetRefs:
+      - pack_12/SP12-006.yaml
+      - pack_12/SP12-013.yaml
+      - pack_12/SP12-015.yaml
+      - pack_12/SP12-020.yaml
+      - pack_12/SP12-028.yaml
+      - pack_12/SP12-044.yaml
+      - pack_12/SP12-053.yaml
+      - pack_12/SP12-055.yaml
+      - pack_12/SP12-061.yaml
+      - pack_12/SP12-070.yaml
+  - id: sci-fi-frontiers-and-mech-zones
+    name: 3. Sci-Fi Frontiers & Mech Zones
+    presetRefs:
+      - pack_12/SP12-003.yaml
+      - pack_12/SP12-005.yaml
+      - pack_12/SP12-011.yaml
+      - pack_12/SP12-018.yaml
+      - pack_12/SP12-023.yaml
+      - pack_12/SP12-033.yaml
+      - pack_12/SP12-042.yaml
+      - pack_12/SP12-045.yaml
+      - pack_12/SP12-046.yaml
+      - pack_12/SP12-068.yaml
+  - id: sieges-warfronts-and-last-stands
+    name: 4. Sieges, Warfronts & Last Stands
+    presetRefs:
+      - pack_12/SP12-007.yaml
+      - pack_12/SP12-009.yaml
+      - pack_12/SP12-026.yaml
+      - pack_12/SP12-035.yaml
+      - pack_12/SP12-038.yaml
+      - pack_12/SP12-052.yaml
+      - pack_12/SP12-060.yaml
+      - pack_12/SP12-064.yaml
+      - pack_12/SP12-076.yaml
+      - pack_12/SP12-079.yaml
+  - id: speed-sport-and-competitive-arenas
+    name: 5. Speed, Sport & Competitive Arenas
+    presetRefs:
+      - pack_12/SP12-008.yaml
+      - pack_12/SP12-017.yaml
+      - pack_12/SP12-021.yaml
+      - pack_12/SP12-031.yaml
+      - pack_12/SP12-039.yaml
+      - pack_12/SP12-047.yaml
+      - pack_12/SP12-059.yaml
+      - pack_12/SP12-063.yaml
+      - pack_12/SP12-065.yaml
+      - pack_12/SP12-075.yaml
+  - id: wilderness-hunts-and-harsh-frontiers
+    name: 6. Wilderness Hunts & Harsh Frontiers
+    presetRefs:
+      - pack_12/SP12-002.yaml
+      - pack_12/SP12-010.yaml
+      - pack_12/SP12-022.yaml
+      - pack_12/SP12-027.yaml
+      - pack_12/SP12-029.yaml
+      - pack_12/SP12-034.yaml
+      - pack_12/SP12-040.yaml
+      - pack_12/SP12-041.yaml
+      - pack_12/SP12-067.yaml
+      - pack_12/SP12-073.yaml
+  - id: heists-horror-and-underworld-runs
+    name: 7. Heists, Horror & Underworld Runs
+    presetRefs:
+      - pack_12/SP12-016.yaml
+      - pack_12/SP12-019.yaml
+      - pack_12/SP12-024.yaml
+      - pack_12/SP12-030.yaml
+      - pack_12/SP12-049.yaml
+      - pack_12/SP12-050.yaml
+      - pack_12/SP12-054.yaml
+      - pack_12/SP12-057.yaml
+      - pack_12/SP12-066.yaml
+      - pack_12/SP12-069.yaml
+  - id: puzzle-chambers-and-adventure-setpieces
+    name: 8. Puzzle Chambers & Adventure Setpieces
+    presetRefs:
+      - pack_12/SP12-004.yaml
+      - pack_12/SP12-012.yaml
+      - pack_12/SP12-036.yaml
+      - pack_12/SP12-037.yaml
+      - pack_12/SP12-051.yaml
+      - pack_12/SP12-058.yaml
+      - pack_12/SP12-072.yaml
+      - pack_12/SP12-074.yaml
+      - pack_12/SP12-077.yaml
+      - pack_12/SP12-080.yaml
+presetRefs:
+  - pack_12/SP12-001.yaml
+  - pack_12/SP12-002.yaml
+  - pack_12/SP12-003.yaml
+  - pack_12/SP12-004.yaml
+  - pack_12/SP12-005.yaml
+  - pack_12/SP12-006.yaml
+  - pack_12/SP12-007.yaml
+  - pack_12/SP12-008.yaml
+  - pack_12/SP12-009.yaml
+  - pack_12/SP12-010.yaml
+  - pack_12/SP12-011.yaml
+  - pack_12/SP12-012.yaml
+  - pack_12/SP12-013.yaml
+  - pack_12/SP12-014.yaml
+  - pack_12/SP12-015.yaml
+  - pack_12/SP12-016.yaml
+  - pack_12/SP12-017.yaml
+  - pack_12/SP12-018.yaml
+  - pack_12/SP12-019.yaml
+  - pack_12/SP12-020.yaml
+  - pack_12/SP12-021.yaml
+  - pack_12/SP12-022.yaml
+  - pack_12/SP12-023.yaml
+  - pack_12/SP12-024.yaml
+  - pack_12/SP12-025.yaml
+  - pack_12/SP12-026.yaml
+  - pack_12/SP12-027.yaml
+  - pack_12/SP12-028.yaml
+  - pack_12/SP12-029.yaml
+  - pack_12/SP12-030.yaml
+  - pack_12/SP12-031.yaml
+  - pack_12/SP12-032.yaml
+  - pack_12/SP12-033.yaml
+  - pack_12/SP12-034.yaml
+  - pack_12/SP12-035.yaml
+  - pack_12/SP12-036.yaml
+  - pack_12/SP12-037.yaml
+  - pack_12/SP12-038.yaml
+  - pack_12/SP12-039.yaml
+  - pack_12/SP12-040.yaml
+  - pack_12/SP12-041.yaml
+  - pack_12/SP12-042.yaml
+  - pack_12/SP12-043.yaml
+  - pack_12/SP12-044.yaml
+  - pack_12/SP12-045.yaml
+  - pack_12/SP12-046.yaml
+  - pack_12/SP12-047.yaml
+  - pack_12/SP12-048.yaml
+  - pack_12/SP12-049.yaml
+  - pack_12/SP12-050.yaml
+  - pack_12/SP12-051.yaml
+  - pack_12/SP12-052.yaml
+  - pack_12/SP12-053.yaml
+  - pack_12/SP12-054.yaml
+  - pack_12/SP12-055.yaml
+  - pack_12/SP12-056.yaml
+  - pack_12/SP12-057.yaml
+  - pack_12/SP12-058.yaml
+  - pack_12/SP12-059.yaml
+  - pack_12/SP12-060.yaml
+  - pack_12/SP12-061.yaml
+  - pack_12/SP12-062.yaml
+  - pack_12/SP12-063.yaml
+  - pack_12/SP12-064.yaml
+  - pack_12/SP12-065.yaml
+  - pack_12/SP12-066.yaml
+  - pack_12/SP12-067.yaml
+  - pack_12/SP12-068.yaml
+  - pack_12/SP12-069.yaml
+  - pack_12/SP12-070.yaml
+  - pack_12/SP12-071.yaml
+  - pack_12/SP12-072.yaml
+  - pack_12/SP12-073.yaml
+  - pack_12/SP12-074.yaml
+  - pack_12/SP12-075.yaml
+  - pack_12/SP12-076.yaml
+  - pack_12/SP12-077.yaml
+  - pack_12/SP12-078.yaml
+  - pack_12/SP12-079.yaml
+  - pack_12/SP12-080.yaml

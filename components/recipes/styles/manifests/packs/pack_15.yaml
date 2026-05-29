@@ -1,0 +1,25 @@
+schemaVersion: 1
+id: pack_15
+name: Solarpunk Dreamscapes Vault
+description: A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.
+categories:
+  - id: solarpunk-dreamscapes
+    name: 1. Solarpunk Dreamscapes
+    presetRefs:
+      - pack_15/SP15-001.yaml
+      - pack_15/SP15-002.yaml
+      - pack_15/SP15-003.yaml
+      - pack_15/SP15-004.yaml
+      - pack_15/SP15-005.yaml
+      - pack_15/SP15-006.yaml
+      - pack_15/SP15-007.yaml
+      - pack_15/SP15-008.yaml
+presetRefs:
+  - pack_15/SP15-001.yaml
+  - pack_15/SP15-002.yaml
+  - pack_15/SP15-003.yaml
+  - pack_15/SP15-004.yaml
+  - pack_15/SP15-005.yaml
+  - pack_15/SP15-006.yaml
+  - pack_15/SP15-007.yaml
+  - pack_15/SP15-008.yaml

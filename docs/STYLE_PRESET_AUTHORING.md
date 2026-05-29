@@ -36,6 +36,45 @@ at `/assets/recipes/styles/defaults/<PRESET_ID>.webp`, but it leaves
 `taxonomy.hasDefaultImage: false` so validation truthfully reports that the
 default image asset is still pending.
 
+## Prompt Specificity
+
+Batch generation prompts are deliberately pack- and category-specific.
+Before running a new pack, extend `scripts/generate-style-defaults.ts` with
+distinct scene anchors and motif rules for that pack instead of relying on the
+generic fallback. This keeps thumbnails from converging on the same generic
+props or staging.
+
+`generate-style-defaults.ts` now checkpoints `manifest-<pack>.json` and
+`failures-<pack>.json` after each preset and polls job/asset completion from the
+local Studio SQLite (`.studio/studio.sqlite`) instead of hammering the HTTP list
+endpoints. If a long batch is interrupted, trust the `.webp` files on disk and
+the latest checkpoint files before assuming the pack did not advance.
+
+Frontend style previews should trust existing `.webp` files on disk, not just
+manifest intent. If a preset points at a default image path that has not been
+generated yet, suppress the broken URL and fall back to a real category or pack
+preview instead.
+
+Anime packs now have a deliberately finer split:
+
+- `pack_05` is organized into 12 buckets, including separate lanes for modern shonen, 2000s, 90s, shojo / magical / visionary classics, slice-of-life, sports, mecha, fantasy, seinen, studio masterpieces, retro, and style-spectrum presets.
+- `pack_13` is split into core anime, slice-of-life / school / music, action, samurai / medieval, and horror.
+- `pack_06`, `pack_08`, `pack_10`, and `pack_12` also rely on semantic buckets now; do not collapse them back into a single catch-all category like `Videojuegos`.
+- When authoring or regenerating those packs, keep the prompt anchors and category labels aligned with that split instead of collapsing them back into generic anime staging.
+
+## Naming and language policy (required)
+
+Use a single durable convention across manifests:
+
+- `category.id` MUST be `kebab-case`.
+- `taxonomy.categoryId` MUST match the category id exactly.
+- `tags` and `taxonomy.tags` MUST be English slugs.
+- `packName`, `categoryName`, and editorial labels MUST be English in the source manifests.
+
+Do not introduce legacy Spanish catch-all slugs like `videojuegos` or
+`videojuegos-originals-vault`. The normalized slug for pack 12 is
+`video-game-originals-vault`.
+
 ## Template Flow
 
 `styles:scaffold` uses the template files below automatically. If you need a

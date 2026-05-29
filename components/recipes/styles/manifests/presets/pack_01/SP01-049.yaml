@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-049
 packId: pack_01
 name: Food Photography
-category: 4. Genres
+category: 6. Nature And Wildlife
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - nature-and-wildlife
 visualDna:
   aesthetic: Delicious plated food
   form_and_line: Soft focus background
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Hungry, cozy
   key_features: Top down or 45 degree
+  creative_brief: Light caresses each surface as though tasting before the tongue arrives, gloss catching on a reduction while fragrant vapor carries the promise of warmth into stillness. The plate becomes a landscape of deliberate abundance, arranged so appetite awakens before the first imaginary bite. Every highlight whispers of the meal waiting just beyond the frame.
 avoidRules:
   - unappetizing
   - dark
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
   tags:
     - photography-and-realism
-    - genres
+    - nature-and-wildlife
   supportedTasks:
     - image_generate
     - image_edit

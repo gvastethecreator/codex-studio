@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-018
 packId: pack_09
 name: Rusty Iron
-category: 2. Man-Made Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Corroded metal
   form_and_line: Pitting
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Eaten away
   atmosphere: Decay, heavy
   key_features: Random rust
+  creative_brief: Capture the slow fire of oxidation consuming iron in blooms of orange, umber, and black, a surface that flakes and pits as time eats through what industry once forged. Each rust spot spreads like a bruise, mapping years of exposure into a topography of decay. Render the fierce beauty of abandonment, where time paints with corrosion what fire once shaped.
 avoidRules:
   - new
   - shiny
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

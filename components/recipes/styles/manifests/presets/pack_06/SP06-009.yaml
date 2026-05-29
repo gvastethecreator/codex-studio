@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-009
 packId: pack_06
 name: Impressionist Oil
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Loss of detail
   atmosphere: Light, airy, fleeting
   key_features: Dabbed paint texture
+  creative_brief: Broken color vibrates at the edge of perception, demanding the eye complete what the brush merely suggested. Light becomes the true subject, dissolving cathedrals and water lilies into shimmering dabs of pure sensation. The air itself feels painted, thick with the pollen of a specific afternoon.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

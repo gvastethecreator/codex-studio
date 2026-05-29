@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-083
 packId: pack_06
 name: Vector Arcade Wireframe
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Glowing vector cathode-ray lines, Asteroids-era phosphor geometry, Tempest wireframe tunnels, Battlezone green-grid battlefield, pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron-beam drawing in real-time
   form_and_line: Pure glowing geometric strokes, wireframe polygon meshes, no filled surfaces, beam-drawn contour lines only, vector-coordinate precision
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Vector-perspective wireframe grids, rotating wireframe models, infinite blank black space, no occlusion just transparency
   atmosphere: Retro-futuristic, electronic, arcade-darkness, analog-computing soul, early-CGI wonder
   key_features: Glowing vector lines on black, wireframe-only geometry, phosphor bloom at line intersections, no filled surfaces, raster-scan absent
+  creative_brief: Pure electron beams sweep glowing geometry onto phosphor-coated glass, lines brighter where they cross, dimmer where they end, the display drawing in real time. No pixels exist, only vectors, only motion, only the persistence of light on a retina that believes what it has just seen. The image is a conspiracy between voltage and vision, the cathode ray as paintbrush.
 avoidRules:
   - filled
   - solid
@@ -39,13 +40,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-102
 packId: pack_02
 name: Smiling Friends - Flat Weird Dayjob Chaos
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Slack-off office cartoon with flat digital color, awkward little guys, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan workplace nonsense, casually cursed side characters, adult-swim anti-spectacle simplicity
   form_and_line: Thin simple contour lines, deliberately plain shape language, occasional scribbly panic accents
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Stubby limb proportions, tiny torsos, off-model expressions, abrupt perspective jumps for punchlines
   atmosphere: Awkward, deadpan, bizarre, mildly cursed
   key_features: Simple oddball silhouettes, blank stares, mundane office props, anti-climactic gag framing, uncomfortable pauses made visual
+  creative_brief: The fluorescent hum of a dying office illuminates creatures who stopped asking why sometime last Thursday, their flatness a philosophy and a shield against the absurdity of showing up again tomorrow. Nothing resolves, nothing escalates, nothing happens beautifully. And yet the clock keeps ticking and everyone keeps smiling, because what else is there to do?
 avoidRules:
   - epic
   - slick
@@ -37,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

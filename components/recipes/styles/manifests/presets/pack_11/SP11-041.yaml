@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-041
 packId: pack_11
 name: Grimdark
-category: 4. Aesthetics
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - oddities-and-novelty
 visualDna:
   aesthetic: Warhammer 40k cathedral-industrial war fantasy, grimdark future, eternal crusade
   form_and_line: Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks
   atmosphere: Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor
   key_features: Skulls, aquila-imperialis, purity-seals, servo-skulls, gothic-cathedral spires, chainsword, bolter-shell casings
+  creative_brief: Cathedral-spine warships drift through a void where hope goes to die under ten thousand years of crusade and ceramite silence. Skulls adorn every surface because decoration in the dark millennium must remind the living what awaits them at the end of the only war. Purity seals flutter in the furnace wind of a galaxy that has forgotten what peace looks like, faith worn as armor against the dying of the light.
 avoidRules:
   - hope
   - light
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: Endless concrete megastructure, tiny humans against impossible architecture, terminal-gun severity, industrial silence, machine civilization outliving meaning
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
   atmosphere: Monumental, empty, lethal, alienated
   key_features: Megastructure scale, terminal-gun silhouettes, tiny-human framing, concrete abysses, machine-hall emptiness
+  creative_brief: Concrete that outgrew its makers, corridors that forgot purpose, a lone figure so small against architecture that gods would envy. The megastructure breathes silence into lungs of rusted steel. Scale is the only remaining language, and it speaks in abyssal tones.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: mecha-and-cyberpunk
   categoryName: 7. Mecha & Cyberpunk
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - mecha-and-cyberpunk
   supportedTasks:
     - image_generate

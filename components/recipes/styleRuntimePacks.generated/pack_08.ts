@@ -3,14 +3,14 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_08/contemporary-fashion-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_08/subcultures-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_08/contemporary-fashion-2').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_08/historical-and-fantasy-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_08/subcultures-3').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_08/historical-and-fantasy-3').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_08/fabric-and-texture-focus-4').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_08/fantasy-sci-fi-costume-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_08/fantasy-sci-fi-costume-5').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_08/fabric-and-texture-focus-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
@@ -18,7 +18,8 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
   return {
     id: 'pack_08',
     name: 'Fashion & Costume',
-    description: 'Diverse fashion styles from historical to futuristic.',
+    description:
+      'A fashion and costume library spanning contemporary editorial looks, subcultural dress codes, historical silhouettes, character-costume fantasy, and material-forward transformation concepts.',
     presets: categoryPresets.flat(),
   };
 }

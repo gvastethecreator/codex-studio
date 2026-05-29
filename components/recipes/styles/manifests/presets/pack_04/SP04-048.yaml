@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-048
 packId: pack_04
 name: Character Sheet
-category: 4. Concept Art
+category: 2. Editorial Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - editorial-illustration
 visualDna:
   aesthetic: Front/Side/Back view
   form_and_line: Clean line
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: T-Pose
   atmosphere: Neutral, design, professional review, iterative feedback
   key_features: Scale, turnaround views, callout annotations
+  creative_brief: Front, side, and back views orbit the subject like moons around a planet of design decisions. Neutral lighting refuses to editorialize, every seam and proportion presented without flattery or distortion. This is the character as blueprint, naked of pose and personality, ready to be handed to the modeler.
 avoidRules:
   - background
   - action
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: editorial-illustration
+  categoryName: 2. Editorial Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - editorial-illustration
   supportedTasks:
     - image_generate
     - image_edit

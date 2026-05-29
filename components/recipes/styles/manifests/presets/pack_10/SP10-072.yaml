@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-072
 packId: pack_10
 name: Pointillism (Seurat)
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Calm, vibrant
   key_features: Dots only
+  creative_brief: Thousands of pigment points applied with scientific precision, colors refusing to mix on the palette and instead blending in the eye of the observer. The image assembles itself at a distance, dissolving into atoms of color up close.
 avoidRules:
   - brush strokes
   - lines
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

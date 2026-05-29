@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-027
 packId: pack_08
 name: Skater Style
-category: 3. Subcultures
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Chill, active, session-flow zen, board-pop rhythm, endless-summer ease
   key_features: Vans skate shoes, ollie-worn suede, five-panel cap, logo tee
+  creative_brief: Grip-tape grit transferred to canvas sneakers, each scuff a signature of the trick that almost landed. The oversized tee hangs like a flag of surrender to gravity fought all afternoon, five-panel cap shading eyes that measure ledges and gaps in a city that becomes a playground when seen through fisheye glass.
 avoidRules:
   - tight clothes
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
     - subcultures
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

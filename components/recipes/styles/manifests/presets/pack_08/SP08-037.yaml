@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-037
 packId: pack_08
 name: Wild West Cowboy
-category: 2. Historical & Fantasy
+category: 3. Historical & Fantasy
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Tough, lonely, high-noon standoff tension, desert-expanse solitude, whiskey-bottle weariness
   key_features: Stetson hat, gun belt and holster, spurred boots, bandana, tin star badge
+  creative_brief: Oilskin leather cracked by desert sun into maps of a thousand trail miles, the duster coat sweeping dust that has not settled since the buffalo roamed. A Stetson brim shadows eyes that squint toward high noon, gun belt heavy against the hip with the weight of consequence, spurred boots planted in a street where the only law is the speed of the draw.
 avoidRules:
   - city
   - clean
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: historical-and-fantasy
-  categoryName: 2. Historical & Fantasy
+  categoryName: 3. Historical & Fantasy
   tags:
     - fashion-and-costume
     - historical-and-fantasy
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-015
 packId: pack_04
 name: Risograph Print
-category: 1. Comic Book Styles
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - childrens-and-educational
 visualDna:
   aesthetic: Zine style
   form_and_line: Grainy
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Offset layers
   atmosphere: DIY, cool, indie-press energy, art-school authenticity
   key_features: Noise, grain texture, overprint halo
+  creative_brief: Colors misalign with the poetry of imperfect registration, each layer asserting its independence from the others. Grain texture buzzes beneath the surface like the hum of the risograph drum itself. This is the artifact as art form, where the machine's fingerprint becomes the signature.
 avoidRules:
   - perfect registration
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-055
 packId: pack_02
 name: Cyanotype (Photo)
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Blue print photo
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Calm, blue, botanical serenity, Victorian catalog
   key_features: Monochrome, fern silhouette, botanical specimen
+  creative_brief: Sunlight paints in a single wavelength, turning the organic into a negative of itself across watercolor paper soaked in iron and light. Leaf veins and fern fronds become architecture rendered in fathomless blue, as methodical as a specimen drawer, as luminous as the ocean floor. The catalog of living things becomes a quiet cathedral of cyan.
 avoidRules:
   - color
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

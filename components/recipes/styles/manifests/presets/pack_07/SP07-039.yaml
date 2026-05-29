@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-039
 packId: pack_07
 name: Server Room
-category: 3. Environment
+category: 3. Historical And Sacred Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - environment
+  - historical-and-sacred-architecture
 visualDna:
   aesthetic: Data center aisles, computational cathedral, silicon temple, digital infrastructure, cold aisles of data
   form_and_line: Perspective lines, rack-grid infinity, cable-management channels, perforated door rhythm, raised floor grid
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Cold, data, power, humming, computational, always-on vigilance
   key_features: Blinking lights, server racks, cold aisle, cable management, raised floor, cooling fans
+  creative_brief: Blue LEDs blink their staccato trust across cold aisles, each rack a vault storing the world in zeros and ones. Cooling fans hum their eternal mantra against heat death, the data center a monastery of computation. Light here serves machines not eyes, every blink a prayer to uptime.
 avoidRules:
   - messy
   - organic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: environment
-  categoryName: 3. Environment
+  categoryId: historical-and-sacred-architecture
+  categoryName: 3. Historical And Sacred Architecture
   tags:
     - architecture-and-interior
-    - environment
+    - historical-and-sacred-architecture
   supportedTasks:
     - image_generate
     - image_edit

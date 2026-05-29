@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-087
 packId: pack_06
 name: GBA Tactical Pixel
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Game Boy Advance tactical grid, Advance Wars battle-map clarity, bright clean military sprites, Fire Emblem portrait elegance, isometric battlefields, tiny tanks and infantry on squared terrain, colorful commander portraits, handheld-strategy precision
   form_and_line: Crisp small-sprite pixel art, unit-icon clarity, grid-cell division lines, portrait-window framing, clean readable silhouettes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grid-based tactical space, isometric or top-down tile perspectives, unit-placement precision, fog-of-war reveal mechanic
   atmosphere: Strategic, bright, readable, turn-based calm, tactical satisfaction, portable focus
   key_features: Tactical grid overlay, isometric tile terrain, bright readable sprite units, commander portrait windows, turn-based UI elements
+  creative_brief: Bright blue sea meets green land on a grid that means war, every tile a tactical possibility, every unit a commitment to position. Readability governs color — red enemies, blue allies, no ambiguity in the language of pixels designed to be read at speed. The image is a board game that learned to animate, a map that contains multitudes of tiny soldiers waiting for orders.
 avoidRules:
   - realistic
   - 3d
@@ -39,13 +40,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

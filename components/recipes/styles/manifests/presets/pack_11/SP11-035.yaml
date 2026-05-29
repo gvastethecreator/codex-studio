@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-035
 packId: pack_11
 name: Thermal Vision
-category: 3. Artistic Mediums
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - oddities-and-novelty
 visualDna:
   aesthetic: Heat map camera, predator-vision, infrared-surveillance, temperature-portrait
   form_and_line: Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear
   atmosphere: Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread
   key_features: Heat glow, temperature-scale bar, crosshair-reticle, hot-spot bloom, cold-background contrast
+  creative_brief: Heat blooms in rainbow signatures against the cold indifference of the infrared void, bodies announcing themselves by the warmth they radiate. Sensor-speckle noise textures the thermal image with the grain of electronic vision, hot-pixel artifacts dotting the predator's view. The world remapped into a topography of temperature where hiding is made impossible by the physics of emission.
 avoidRules:
   - natural colors
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

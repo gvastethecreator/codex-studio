@@ -10,7 +10,11 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () => import('./pack_06/mixed-media-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_06/printmaking-5').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_06/video-game-and-pixel-art-styles-6').then(
+    import('./pack_06/retro-game-visual-systems-6').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_06/game-art-directions-and-ui-7').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
 ];
@@ -20,7 +24,8 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
   return {
     id: 'pack_06',
     name: 'Essential Art Styles',
-    description: 'A comprehensive collection of 80+ traditional and digital art techniques.',
+    description:
+      'A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.',
     presets: categoryPresets.flat(),
   };
 }

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-079
 packId: pack_01
 name: Mugshot
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Police booking photo
   form_and_line: Height chart
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dead eyes
   atmosphere: Serious, trouble
   key_features: Height lines
+  creative_brief: Height lines measure what no ruler can touch, the flat light interrogating skin and bone until identity becomes mere case file. The gaze holds neither guilt nor innocence, only the unblinking fact of being seen by a system that has already made up its mind.
 avoidRules:
   - happy
   - posed
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

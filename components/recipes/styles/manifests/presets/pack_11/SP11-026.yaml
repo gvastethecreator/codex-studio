@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-026
 packId: pack_11
 name: Spray Paint / Graffiti
-category: 3. Artistic Mediums
+category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - retro-pop-and-kitsch
 visualDna:
   aesthetic: Street mural, aerosol rebellion, urban-gallery, spray-can symphony, concrete-canyon art
   form_and_line: Drips, overspray, fat-cap strokes, skinny-cap detail, can-control finesse
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Wildstyle lettering, interlocking form, letter-morph chaos, arrow-flow motion
   atmosphere: Cool, illegal, midnight mission, painted-steel thunder, huff-and-rattle cadence
   key_features: Drips, fat-cap-to-skinny-cap transitions, halo-fade background, tag-handstyle flourish
+  creative_brief: Aerosol hisses against concrete in the midnight cathedral of the train yard, fat caps laying fill while skinny caps carve outline. Drips become devotion running toward the ground, overspray halos marking the edge between control and surrender. The wall breathes color where before there was only brick and silence, a piece-book page turned public and permanent.
 avoidRules:
   - brush strokes
   - clean
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: retro-pop-and-kitsch
+  categoryName: 4. Retro Pop And Kitsch
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - retro-pop-and-kitsch
   supportedTasks:
     - image_generate
     - image_edit

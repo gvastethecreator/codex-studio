@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-005
 packId: pack_04
 name: Manga (Shojo)
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: Romance manga
   form_and_line: Thin, delicate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Big eyes
   atmosphere: Romantic, soft, shoujo longing, petal-strewn reverie
   key_features: Sparkles, flower petals, decorative panel borders
+  creative_brief: Petals fall through panel borders like whispered confessions, each delicate line tracing the architecture of longing. Eyes carry entire worlds of unspoken feeling within their luminous screens, the sparkle overlay softening reality into reverie. This is the grammar of the heart rendered in ink and flower screentones, where beauty is both weapon and sanctuary.
 avoidRules:
   - rough
   - ugly
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

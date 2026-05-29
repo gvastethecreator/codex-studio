@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-075
 packId: pack_09
 name: Astroturf
-category: 5. Elemental & FX
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Fake grass
   form_and_line: Plastic blades
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Fake, clean
   key_features: Uniform height
+  creative_brief: Render the uncanny uniformity of artificial turf where identical plastic blades stand in regimented rows of unnatural green, catching a plastic sheen that real grass would never yield under any sun. The surface should feel fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the aesthetics of the substitute, nature made reliable at the cost of its soul.
 avoidRules:
   - real grass
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

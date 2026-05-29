@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-012
 packId: pack_02
 name: Wes Anderson Symmetrical Storybook Cinema
-category: 1. Film Genres
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - film-genres
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Symmetrical composition
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Center frame, locked-down composition, 90-degree pans
   atmosphere: Whimsical, deadpan, storybook melancholy, curated nostalgia
   key_features: Symmetry, cross-section sets, handwritten typography
+  creative_brief: The world organizes itself into perfect halves, each side a mirror that whispers its own quiet joke. Colors arrive powdered and soft as confectioner's sugar, while every object sits exactly where melancholy placed it — in a diorama of longing dressed as whimsy.
 avoidRules:
   - asymmetrical
   - messy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: film-genres
-  categoryName: 1. Film Genres
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - film-genres
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

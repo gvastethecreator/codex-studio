@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-024
 packId: pack_01
 name: Drone Aerial
-category: 5. Camera Types
+category: 6. Nature And Wildlife
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - camera-types
+  - nature-and-wildlife
 visualDna:
   aesthetic: Top-down view
   form_and_line: Geometric landscape
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flattened perspective
   atmosphere: Epic, overview
   key_features: Bird's eye view
+  creative_brief: 'The earth abstracted into pattern: rivers become veins, roads become sutures, fields become brushstrokes on a canvas too large for any gallery. Shadows stretch long as sundials from a god''s-eye vantage, flattening the world into pure geometry. Scale collapses into design, the familiar made alien through altitude.'
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: camera-types
-  categoryName: 5. Camera Types
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
   tags:
     - photography-and-realism
-    - camera-types
+    - nature-and-wildlife
   supportedTasks:
     - image_generate
     - image_edit

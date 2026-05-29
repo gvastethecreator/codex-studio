@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-038
 packId: pack_03
 name: Rim Lighting
-category: 2. Lighting & Atmosphere
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Silhouette with edge glow
   form_and_line: Glowing outline
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Dramatic, moody, hero-reveal
   atmosphere: Mysterious, epic, cinematic tension
   key_features: Edge highlight, halo definition
+  creative_brief: The subject retreats into near-silhouette while a halo of brilliance traces its outline with the precision of a calligrapher's final stroke — backlight carves definition from darkness, and every edge that catches the rim becomes the entire story. The dark masses between highlights pulse with withheld revelation, and the image holds tension like a dramatic pause before the hero steps forward. Moody, cinematic, a reveal staged in light's most economical gesture.
 avoidRules:
   - front light
   - flat
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

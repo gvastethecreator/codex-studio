@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-022
 packId: pack_01
 name: Disposable Camera
-category: 5. Camera Types
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - camera-types
+  - lighting-techniques
 visualDna:
   aesthetic: Cheap plastic lens photo
   form_and_line: Soft corners
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Chromatic aberration
   atmosphere: Fun, cheap
   key_features: Flash falloff
+  creative_brief: 'The frame that cost three dollars and captured a thousand-dollar night: flash bleaching faces into polar proximity, corners softening into the blur of a room barely remembered. Chromatic fringe rings each highlight like a cheap halo. Evidence that the best photographs were never about the glass they passed through.'
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: camera-types
-  categoryName: 5. Camera Types
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - camera-types
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-050
 packId: pack_10
 name: Tartan (Plaid)
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Weave
   atmosphere: Classic, warm
   key_features: Grid
+  creative_brief: Warp and weft crossing in ancient code, each intersection a clan signature, each color a landscape. Wool remembers highlands and hearths, the grid worn into softness by generations.
 avoidRules:
   - curved lines
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-017
 packId: pack_04
 name: Watercolor Storybook
-category: 2. Children's Illustration
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - children-s-illustration
+  - childrens-and-educational
 visualDna:
   aesthetic: Classic watercolor animal storybook, Beatrix Potter style, English countryside gentleness, waistcoat whimsy
   form_and_line: Pencil sketch
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Cute animals
   atmosphere: Whimsical, soft, English garden gentleness, storybook warmth
   key_features: White background fade, wet-on-dry detail, soft edge
+  creative_brief: Watercolor blooms across paper grain like the first breath of an English morning, edges softening into the white reserve of possibility. Animals wear waistcoats not as costume but as birthright, their gentle eyes holding the wisdom of garden walls and hedgerow secrets. This is childhood remembered as water and pigment, fragile and luminous.
 avoidRules:
   - digital
   - sharp
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: children-s-illustration
-  categoryName: 2. Children's Illustration
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - children-s-illustration
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

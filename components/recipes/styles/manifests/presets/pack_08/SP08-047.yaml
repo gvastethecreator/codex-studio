@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-047
 packId: pack_08
 name: Vampire Lord
-category: 5. Fantasy/Sci-Fi Costume
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Evil, elegant, ancient-hunger menace, moonlit-seduction danger, castle-silence dread
   key_features: Cape, high collar, medallion, signet ring, widow's peak
+  creative_brief: Black velvet opera cape lined with crimson silk the color of the last thing you will ever see, the high collar framing a face that has watched centuries die. An onyx signet ring catches moonlight through castle windows that have not been opened since the Ottoman Empire, cravat tied with the precision of someone who has had four hundred years to perfect the knot.
 avoidRules:
   - modern
   - messy
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fantasy-sci-fi-costume
-  categoryName: 5. Fantasy/Sci-Fi Costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
     - fantasy-sci-fi-costume
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

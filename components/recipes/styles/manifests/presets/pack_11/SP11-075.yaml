@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-075
 packId: pack_11
 name: Sponge
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: Kitchen sponge zoom, foam-cell, open-cell-structure, absorbent-micro, cleaning-surface
   form_and_line: Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane
   atmosphere: Clean, soft, kitchen-sink quiet, dish-duty, cleaning-ritual, water-warm
   key_features: Pores, cell-windows, strut-network, scrub-layer, water-bead, soap-bubble residue, cellulose-fiber, abrasive-grit surface
+  creative_brief: Open-cell foam architecture reveals itself as a cathedral of interconnected void spaces, struts spanning pores in a load-bearing lattice where air occupies more volume than solid. Water beads sit in surface-tension pockets, suspended between absorption and release in the absorbent-micro landscape of the kitchen sponge. A universe of holes within holes, the sponge's entire purpose defined by what it can contain and what it excludes, porous geometry at the scale where cleaning becomes architecture.
 avoidRules:
   - solid
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

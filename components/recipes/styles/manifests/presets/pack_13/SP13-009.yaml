@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-009
+packId: pack_13
+name: Magical Girl Prism Burst
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Bright magical-girl style with prismatic transformation.
+  form_and_line: Soft linework, elegant silhouette, and symbolic accessories.
+  color_palette: Rosa, cyan, amarillo estrella y blanco.
+  lighting_setup: Radial glow, magical particles, and clean bloom.
+  material_texture: Ribbons, luminous jewelry, and soft sparkles.
+  render_quality: High-impact colorful anime illustration.
+  spatial_distortion: Dynamic abstract background for total focus on the character.
+  atmosphere: Optimism, bravery, and charming fantasy.
+  key_features: Transformation pose, magical emblem, radial energy.
+  creative_brief: A heroine at peak power with vibrant, well-organized aesthetics.
+avoidRules:
+  - photoreal
+  - gritty
+  - dark-horror
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-009.webp
+attributes:
+  negativePrompt: photoreal, gritty, dark-horror, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

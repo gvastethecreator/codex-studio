@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-076
 packId: pack_09
 name: Chain Link Fence
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Metal diamond mesh
   form_and_line: Wire diamonds
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Bent
   atmosphere: Restricted, urban
   key_features: Diamond grid
+  creative_brief: Compose the industrial grid of galvanized chain link where woven wire diamonds repeat into infinity, a barrier you can see through that separates without concealing, each intersection a knot of exclusion. The metallic surface should catch light in dull silver repetitions, bending where impact has shaped the mesh into memory. Capture the beauty of the permeable boundary, exclusion made transparent.
 avoidRules:
   - wood fence
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-052
 packId: pack_10
 name: Camouflage
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Hidden, military
   key_features: Random blobs
+  creative_brief: Shapes engineered to deceive the eye, organic blobs that break the silhouette into unreadable fragments. The pattern's purpose is disappearance, but its aesthetic has become a statement of visible aggression.
 avoidRules:
   - bright
   - neon
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

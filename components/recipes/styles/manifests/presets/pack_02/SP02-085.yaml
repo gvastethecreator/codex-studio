@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-085
 packId: pack_02
 name: Liquid Melt Caricature
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Features melting like hot wax, eyes sliding down cheekbones, nose drooping into mouth, Salvador Dali meets Tex Avery, fever-dream facial collapse, reality losing structural integrity, psychedelic cartoon meltdown
   form_and_line: Sinking contour lines, drooping outlines, vertical stretch deformation, no anchoring bone structure
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Entire face cascading downward, ears migrating to jawline, forehead pooling into eyebrows, temporal distortion
   atmosphere: Disorienting, hypnotic, deeply weird, mescaline cartoon
   key_features: Vertical drip lines, pooled chin flesh, runny mascara eyes, Salvador Dali clock-face energy
+  creative_brief: Gravity has turned traitor, pulling familiar landmarks of the face into slow-motion cascade. Bones forget their job; skin decides to travel south. The image holds a moment of collapse stretched into permanence, as if consciousness itself were liquefying under the heat of some unseen psychedelic lamp.
 avoidRules:
   - sharp
   - clean
@@ -37,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simplified forms
   atmosphere: Rational, bold
   key_features: Primary colors
+  creative_brief: Form stripped to its skeleton, every line an argument for necessity. Primary colors sing against geometry, a manifesto of clarity in a world of ornament.
 avoidRules:
   - organic
   - messy
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

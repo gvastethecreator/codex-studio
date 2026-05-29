@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-066
 packId: pack_04
 name: Screenprint (Serigraph)
-category: 5. Ink & Print
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Warhol pop-art print, factory repetition, celebrity silkscreen, mass-media critique
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Offset color
   atmosphere: Bold, commercial, screenprint bazaar, poster-shop energy
   key_features: Layer overlap, color misregistration, halftone rosette
+  creative_brief: Colors stack in flat layers like bricks in a factory wall, each screen its own sovereign nation of pigment. Repetition becomes meditation, celebrity faces multiplying into pattern, personality dissolving into product. This is the image as mass production, where the copy destroys the original and replaces it with icon.
 avoidRules:
   - gradient
   - painting
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

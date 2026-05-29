@@ -17,7 +17,7 @@ export interface StudioGridSurfaceProps {
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<GeneratedImageWithConfig['config']>,
-    options?: { force?: boolean; preventModal?: boolean },
+    options?: { force?: boolean; preventModal?: boolean; useCurrentAttachments?: boolean },
   ) => void;
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
   handleLoadRecipe: (config: GeneratedImageWithConfig['config']) => void;
@@ -61,7 +61,10 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
 }) => {
   const handleGridRegenerate = useCallback(
     (config: GeneratedImageWithConfig['config']) => {
-      handleGenerate(config.prompt, config, { preventModal: true });
+      handleGenerate(config.prompt, config, {
+        preventModal: true,
+        useCurrentAttachments: true,
+      });
     },
     [handleGenerate],
   );

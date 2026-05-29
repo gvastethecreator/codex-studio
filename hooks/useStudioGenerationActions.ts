@@ -1,8 +1,42 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import { prepareStudioGenerationRequest } from '../lib/studioGenerationRequest';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { detectRecipeFromContext } from '../utils/recipeUtils';
+
+type GenerateOptions = {
+  force?: boolean;
+  preventModal?: boolean;
+  useCurrentAttachments?: boolean;
+};
+
+export function cloneGenerationAttachments(attachments: Attachment[]): Attachment[] {
+  return attachments.map((attachment) => ({ ...attachment }));
+}
+
+export function buildGenerateOverridesWithCurrentAttachments(
+  configOverrides: Partial<ImageGenerationConfig> | undefined,
+  currentAttachments: Attachment[],
+): Partial<ImageGenerationConfig> | undefined {
+  if (!configOverrides) {
+    return undefined;
+  }
+
+  return {
+    ...configOverrides,
+    attachments: cloneGenerationAttachments(currentAttachments),
+  };
+}
+
+export function buildRecipeRestoreConfig(
+  nextConfig: ImageGenerationConfig,
+  currentAttachments: Attachment[],
+): ImageGenerationConfig {
+  return {
+    ...nextConfig,
+    attachments: cloneGenerationAttachments(currentAttachments),
+  };
+}
 
 interface UseStudioGenerationActionsProps {
   generationConfig: ImageGenerationConfig;
@@ -49,21 +83,33 @@ export function useStudioGenerationActions({
 }: UseStudioGenerationActionsProps) {
   const [isEnhancingPrompt, setIsEnhancingPrompt] = useState(false);
   const [isEditingImage, setIsEditingImage] = useState(false);
+  const generationConfigRef = useRef(generationConfig);
+
+  useEffect(() => {
+    generationConfigRef.current = generationConfig;
+  }, [generationConfig]);
 
   const handleGenerate = useCallback(
     (
       promptOverride?: string,
       configOverrides?: Partial<ImageGenerationConfig>,
-      options?: { force?: boolean; preventModal?: boolean },
+      options?: GenerateOptions,
     ) => {
       if (isModalOpen && !options?.preventModal) {
         closeModal();
       }
 
+      const requestConfigOverrides = options?.useCurrentAttachments
+        ? buildGenerateOverridesWithCurrentAttachments(
+            configOverrides,
+            generationConfigRef.current.attachments,
+          )
+        : configOverrides;
+
       const request = prepareStudioGenerationRequest({
-        generationConfig,
+        generationConfig: generationConfigRef.current,
         promptOverride,
-        configOverrides,
+        configOverrides: requestConfigOverrides,
       });
 
       if (!request.ok) {
@@ -80,15 +126,7 @@ export function useStudioGenerationActions({
         }));
       }
     },
-    [
-      activeWorkspaceId,
-      addToast,
-      closeModal,
-      enqueue,
-      generationConfig,
-      isModalOpen,
-      setGenerationConfig,
-    ],
+    [activeWorkspaceId, addToast, closeModal, enqueue, isModalOpen, setGenerationConfig],
   );
 
   const handleEnhancePrompt = useCallback(async () => {
@@ -138,7 +176,9 @@ export function useStudioGenerationActions({
 
   const handleLoadRecipe = useCallback(
     (nextConfig: ImageGenerationConfig) => {
-      setGenerationConfig(nextConfig);
+      setGenerationConfig((previousConfig) =>
+        buildRecipeRestoreConfig(nextConfig, previousConfig.attachments),
+      );
       addToast('Recipe restored', 'success');
 
       const detectedRecipe =

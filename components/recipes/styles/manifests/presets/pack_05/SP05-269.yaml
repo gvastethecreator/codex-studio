@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: Night-long mahjong duels as psychological warfare, cigarette smoke, heavy shadows, old men unraveling around a supernatural prodigy, menace in still hands and eyes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
   atmosphere: Predatory, smoky, cerebral, merciless
   key_features: Mahjong-table compositions, smoke haze, old-man tension faces, hard shadow light, still-hand suspense
+  creative_brief: Cigarette smoke curls around mahjong tiles like a promise of ruin as a boy born at the table reads old men's souls through the language of discarded hands. Stillness itself becomes a weapon in this smoke-filled theater, where the predator waits behind heavy-lidded eyes and every tile laid down is a confession.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: dark-fantasy-and-seinen
   categoryName: 9. Dark Fantasy & Seinen
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - dark-fantasy-and-seinen
   supportedTasks:
     - image_generate

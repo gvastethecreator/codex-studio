@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-087
 packId: pack_02
 name: Rubber-Hose Insanity
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: 1930s rubber-hose cartoon pushed to mania, limbs like overcooked spaghetti, pupils detaching from eyes, feet expanding to piano size mid-stride, bodies folding into accordion shapes, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode
   form_and_line: Noodle-thin bouncing outlines, squash-and-stretch taken beyond breaking point, elastic deformation extremes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Arms knotting like balloon animals, torso compressing into hockey puck, legs extending infinite staircases, pupils orbiting head
   atmosphere: Frenzied, hysterical, pure kinetic madness, cartoon physics unleashed
   key_features: Rubber-hose limbs with no joints, pie-cut eyes separating, torso accordion compression, object-head hammer impact
+  creative_brief: Physics has fled the room, leaving limbs to knot and stretch like taffy in a hurricane. Pupils pinball across faces, torsos compress into accordions, and the laws of mass and momentum have been revoked by executive decree of chaos. Every frame screams with the velocity of a golden-age cartoon overdosed on its own elastic joy.
 avoidRules:
   - realistic
   - anatomical
@@ -37,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

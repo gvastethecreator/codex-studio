@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-015
+packId: pack_13
+name: Dessert Cafe Comedy
+category: 2. Slice of Life / School / Music
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+  - slice-of-life
+visualDna:
+  aesthetic: Light anime comedy in a dessert cafe.
+  form_and_line: Friendly linework, exaggerated expressions, and clear visual timing.
+  color_palette: Cream, strawberry, honey, and soft mint.
+  lighting_setup: Warm interior lighting with a cozy atmosphere.
+  material_texture: Light wood, glossy tableware, and whipped cream.
+  render_quality: Frame anime colorido y limpio para tono feel-good.
+  spatial_distortion: Clear frontal composition of table and characters.
+  atmosphere: Warmth, humor, and everyday tenderness.
+  key_features: Hero dessert, comedic gestures, kind energy.
+  creative_brief: An adorable, fun scene that works as a visual breather.
+avoidRules:
+  - photoreal
+  - horror
+  - dark-gritty
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-015.webp
+attributes:
+  negativePrompt: photoreal, horror, dark-gritty, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice of Life / School / Music
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+    - slice-of-life
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-046
 packId: pack_09
 name: Sequins
-category: 3. Tactile Surfaces
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - tactile-surfaces
+  - metals-and-minerals
 visualDna:
   aesthetic: Disco dress
   form_and_line: Overlapping discs
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flipping
   atmosphere: Party, flashy
   key_features: Scale pattern
+  creative_brief: Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that flips between two worlds of color with every shift of light, creating a surface that refuses to be still. The scaly plastic should catch sparkle at a thousand points simultaneously, cheap and glamorous in equal measure. Capture the joy of unapologetic shine, fashion as optical event.
 avoidRules:
   - matte fabric
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: tactile-surfaces
-  categoryName: 3. Tactile Surfaces
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - tactile-surfaces
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-092
 packId: pack_02
 name: Crumpled-Paper Scribble
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, idea rejected and fished from trash, coffee-ring halo on character's head, wrinkled-grid distortion, beautiful-accident texture, trash-to-treasure aesthetic, discarded-thought recovered
   form_and_line: Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles, roughened-edge strokes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Characters bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion
   atmosphere: Desperate creativity, beautiful failure, late-night frustrated genius, rescued inspiration, melancholy charm
   key_features: Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection
+  creative_brief: An idea was born, rejected, crushed, rescued, and flattened again—its creases now co-authors of the composition. A coffee ring crowns a character who survived the wastebasket, ink pooling in fold valleys like truth settling into wounds. Imperfection is not bug but feature; the damage is the signature.
 avoidRules:
   - flat
   - clean
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-060
 packId: pack_09
 name: Mercury (Liquid Metal)
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Toxic metal drops
   form_and_line: Rounded blobs
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Coalescing
   atmosphere: Sci-fi, fluid
   key_features: High surface tension
+  creative_brief: Summon the alien fluidity of liquid mercury beading into chrome spheres of impossible surface tension, each drop a convex mirror reflecting a distorted world in silver curves. The material must feel both mesmerizing and toxic, beauty that carries the weight of danger in every perfectly rounded blob. Capture the aesthetics of the untouchable, metal that refuses to be solid.
 avoidRules:
   - solid silver
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

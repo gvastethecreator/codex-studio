@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: Friendly creatures, city-building optimism, polished fantasy diversity, bright world design, rimuru-slime form, tempest-nation founding, goblin-village evolution, monster-diplomacy
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
   atmosphere: Upbeat, communal, optimistic, vibrant
   key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
+  creative_brief: A gelatinous creature builds a civilization in the space between monster and diplomat, between dungeon-born and nation-founder. Brightness is the aesthetic of optimism — every new alliance painted in sun-washed color, every village upgrade a brushstroke of collective hope. Make the world feel like it's constantly becoming, always under construction, forever improving.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: isekai-and-high-fantasy
   categoryName: 8. Isekai & High Fantasy
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - isekai-and-high-fantasy
   supportedTasks:
     - image_generate

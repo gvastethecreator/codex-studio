@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-029
+packId: pack_12
+name: Coral Reef Underkingdom
+category: 6. Wilderness Hunts & Harsh Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+visualDna:
+  aesthetic: Colorful underwater kingdom with coral architecture.
+  subject_treatment: Aquatic guardians and abyssal mounts.
+  color_and_tone: Bright turquoises, coral red, and pearl white.
+  lighting_and_shadow: Filtered rays and dynamic caustics.
+  texture_and_material: Porous coral, nacre-like scales, and seaweed.
+  camera_and_composition: Wide perspective with a terraced city layout.
+  atmosphere_and_mood: Fantastical wonder and elegant danger.
+  rendering_and_quality: World key visual for the main campaign.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - murky-water
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-029.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

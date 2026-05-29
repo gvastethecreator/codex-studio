@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: Night-city women in armored suits, synth neon, biker cool, corporate conspiracies, 80s cyber-noir glamour with hard-chrome aggression
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
   atmosphere: Glossy, dangerous, neon, rebellious
   key_features: Power-suit silhouettes, neon skyline reflections, biker fashion accents, corporate high-rise staging, chase-scene motion
+  creative_brief: Chrome limbs catch neon like liquid code as armored women tear through corporate towers on a mission with no backup and no compromise. The city sweats synthwave and oil, every puddle reflecting a different shade of conspiracy. Power suits gleam not just with polish but with the anger of those who built their own armor.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: mecha-and-cyberpunk
   categoryName: 7. Mecha & Cyberpunk
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - mecha-and-cyberpunk
   supportedTasks:
     - image_generate

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-051
 packId: pack_09
 name: Fire & Magma
-category: 5. Elemental & FX
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Lava flow
   form_and_line: Crust cracks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Melting rock
   atmosphere: Dangerous, intense
   key_features: Heat
+  creative_brief: Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange incandescence pulsing beneath, a material that is its own illumination. The skin should feel like a cooling scab over liquid fire, the fissures mapping the flow of creation itself across a surface of elemental birth. Capture the terror and beauty of a planet still forming.
 avoidRules:
   - cold
   - blue
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

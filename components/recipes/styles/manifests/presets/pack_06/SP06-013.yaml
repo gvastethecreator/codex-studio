@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-013
 packId: pack_06
 name: Airbrush (80s)
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Idealized forms
   atmosphere: Retro, slick
   key_features: Smooth gradients
+  creative_brief: Layers of atomized pigment build without a single brush mark, gradients smooth as polished chrome under a synthesized sunset. The image glows with the impossible perfection of a future that never arrived, trapped forever in 1987. Highlights gleam with the sheen of an era that believed friction could be eliminated.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

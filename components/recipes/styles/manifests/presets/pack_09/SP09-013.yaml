@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-013
 packId: pack_09
 name: Bird Feathers
-category: 1. Natural Materials
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Plumage
   form_and_line: Barbs and rachis
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Layered
   atmosphere: Light, natural
   key_features: Overlapping
+  creative_brief: Capture the delicate engineering of plumage where individual barbs interlock into surfaces that catch and split light into spectral blues and greens, each feather a miracle of aerodynamics rendered as ornament. The overlapping structure should feel weightless yet precise, a cascade of color built on invisible order. The image must float between fragility and resilience.
 avoidRules:
   - fur
   - messy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - natural-materials
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

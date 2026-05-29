@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-084
 packId: pack_04
 name: Material Texture Exploration Sheet
-category: 4. Concept Art
+category: 3. Childrens And Educational
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - childrens-and-educational
 visualDna:
   aesthetic: Surface-study concept art, material-callout swatches around a design, leather next to metal next to fabric material comparison, RPG-item material breakdown, callout-lines to material type labels, texture-library exploration, rendering different surfaces exercise, prop-design material pass
   form_and_line: Callout-leader lines from design to swatches, clean design contours, swatch-grid separation, annotation arrows, technical-drawing precision
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Swatch-grid orthogonal layout, magnified-detail callout circles, annotation-leader lines, exploded-material separation
   atmosphere: Analytical, educational, production-practical, designer-reference, texture-obsession
   key_features: Callout lines to material swatches, magnified detail circles, annotation labels per material, comparison-grid layout, texture-macro insets
+  creative_brief: Material swatches orbit the design like scientific samples, each surface a different thesis about texture and time. Leather sits next to metal next to fabric, the contrast between them telling the story of the object's construction. This is the prop as material essay, where what something is made of defines what it can become.
 avoidRules:
   - uniform
   - single material
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: childrens-and-educational
+  categoryName: 3. Childrens And Educational
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - childrens-and-educational
   supportedTasks:
     - image_generate
     - image_edit

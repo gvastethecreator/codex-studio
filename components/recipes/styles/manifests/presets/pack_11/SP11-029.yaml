@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-029
 packId: pack_11
 name: Embroidery
-category: 3. Artistic Mediums
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: Hoop art, embroidery-craft, thread-painting, needlework tapestry, textile illustration
   form_and_line: Thread thickness, satin-stitch bands, french-knot dots, running-stitch dashes, stem-stitch curves
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Stitch resolution, pixel-like embroidery, cross-count limitation, grid-cell abstraction
   atmosphere: Homey, detailed, fireside-craft, generational skill, slow-thread meditation
   key_features: Fabric grain, embroidery-hoop frame, needle-thread tail, stitch-direction shading, floss-skein palette
+  creative_brief: Thread counts become resolution in a textile grid where French knots serve as pixels and satin stitch bands render smooth gradients. The hoop holds tension across a canvas woven from patience and generational knowledge, each needle pass a quiet act of preservation. Thread-painted artistry blooms on Aida cloth, the slow meditation of hands that speak through floss and fabric.
 avoidRules:
   - paint
   - flat
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

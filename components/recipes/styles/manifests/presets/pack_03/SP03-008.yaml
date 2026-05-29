@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-008
 packId: pack_03
 name: Pixar RenderMan Feature Animation Renderer
-category: 5. Render Engines
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - render-engines
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: High end animation
   form_and_line: Soft shapes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Squash and stretch
   atmosphere: Magical, story, emotional resonance
   key_features: Subsurface scattering, deep compositing
+  creative_brief: Subsurface light travels through skin and fabric like a secret, emerging as soft glow at the edges of every form — RenderMan's hero-material pipeline dresses characters in stylized realism that feels more true than truth. Squash and stretch remembers animation's hand-drawn origins while deep compositing gives every light its own independent story, isolatable and tweakable into the final grade. The frame holds wonder like a cupped hand holds water, timeless and trembling with potential energy.
 avoidRules:
   - anime
   - 2d
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: render-engines
-  categoryName: 5. Render Engines
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - render-engines
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

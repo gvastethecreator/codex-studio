@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-104
 packId: pack_02
 name: Rugrats - Toddler Crayon Panic
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Toddlers seeing the world as wobbly adventure, chunky baby heads, domestic danger made epic, scribbly suburban interiors, nervous hand-drawn innocence, diaper-age imagination logic, toy-scale heroism
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Curious, rambunctious, innocent, chaotic
   key_features: Toddler-scale perspective, chunky outlines, toy clutter everywhere, domestic spaces made huge, crayon-ish uncertainty
+  creative_brief: The coffee table is a mountain and the hallway an uncharted continent, everything looming impossibly large when your eyes barely clear the carpet fibers. Adventure wears a diaper and has never heard the word impossible, its geography redrawn with every crawling expedition across the living room floor. The ordinary home becomes epic wilderness when viewed from three feet tall.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

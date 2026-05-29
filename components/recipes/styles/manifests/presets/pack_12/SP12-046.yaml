@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-046
+packId: pack_12
+name: Solar Rail Nomad Camp
+category: 3. Sci-Fi Frontiers & Mech Zones
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+visualDna:
+  aesthetic: Nomadic camp following solar rail lines.
+  subject_treatment: Traveling clans with recycled technology.
+  color_and_tone: Solar yellow, rust red, and dusty blue.
+  lighting_and_shadow: Warm afternoon light with photovoltaic glints.
+  texture_and_material: Canvas, panels, and repaired wood.
+  camera_and_composition: Semicircular camp layout beside the tracks.
+  atmosphere_and_mood: Mobile community and hard-earned hope.
+  rendering_and_quality: Faction visual for an open-world RPG.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - neon-city
+  - noisy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-046.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-046
 packId: pack_06
 name: Digital Painting
-category: 1. Digital Art
+category: 4. Digital Art
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Polished
   key_features: Digital look
+  creative_brief: Undo exists. Layers float in infinite adjustability, colors sampled from a spectrum beyond physical pigment, every stroke revisable. The tablet records pressure into opacity, a simulation of paint that knows no drying time. The image achieves polish through iteration, a perfection that only the weightless can sustain.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: digital-art
-  categoryName: 1. Digital Art
+  categoryName: 4. Digital Art
   tags:
     - essential-art-styles
     - digital-art
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-016
+packId: pack_12
+name: Shadow Opera Assassin Court
+category: 7. Heists, Horror & Underworld Runs
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+visualDna:
+  aesthetic: Theatrical court intrigue with dark baroque aesthetics.
+  subject_treatment: Masked murderers among nobles and curtains.
+  color_and_tone: Burgundy, velvet black, and aged gold.
+  lighting_and_shadow: Dramatic lamps with strong scenic contrast.
+  texture_and_material: Silk, polished marble and decorated steel.
+  camera_and_composition: Frontal composition in narrative-tableau style.
+  atmosphere_and_mood: Lethal elegance and social paranoia.
+  rendering_and_quality: Visual key of factions and plot.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - sci-fi-ui
+  - flat-colors
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-016.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

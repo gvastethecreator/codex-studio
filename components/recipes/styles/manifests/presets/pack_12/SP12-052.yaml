@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-052
+packId: pack_12
+name: Rift Bridge Capture Point
+category: 4. Sieges, Warfronts & Last Stands
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+visualDna:
+  aesthetic: PvP control point on an interdimensional bridge.
+  subject_treatment: Opposing squads with mobility gadgets.
+  color_and_tone: Plasma blue, rival orange, and titanium gray.
+  lighting_and_shadow: Rift energy as the dominant light source.
+  texture_and_material: Metallic surfaces, shields, and sparks.
+  camera_and_composition: Central axis with playable flanks.
+  atmosphere_and_mood: Frenetic competition and map control.
+  rendering_and_quality: Clear layout for objective mode.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - clutter
+  - blur
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-052.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-072
 packId: pack_03
 name: Clay UI
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Soft 3D interface
   form_and_line: Rounded
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Friendly, app design, approachable UI
   atmosphere: Friendly, soft, warm-invitation
   key_features: Floating elements, pill-shape softness
+  creative_brief: 'Interface elements feel hand-molded from warm clay — pill-shape softness rounds every corner, and pastel matte surfaces catch gentle shadows like a sunlit pottery studio. Warm ambient lighting gives the floating cards and buttons the weight of physical objects without the coldness of metal or glass. The image radiates approachable UI: an app design so friendly it feels like it was shaped by thumbs rather than code, every interaction a soft invitation.'
 avoidRules:
   - sharp
   - flat
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

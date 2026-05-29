@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-044
 packId: pack_04
 name: Travel Poster (Vintage)
-category: 3. Editorial & Poster
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Railway poster
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simplified view
   atmosphere: Happy, vacation, seaside leisure, arrival excitement
   key_features: Text at bottom, destination lettering, simplified landmark
+  creative_brief: Flat color bands reduce landscape to its emotional essence, each horizontal stripe a different pleasure of the destination. Simplified forms promise the journey before the journey begins. This is travel rendered as anticipation, where the poster arrives before the train and the destination lives first in imagination.
 avoidRules:
   - photo
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

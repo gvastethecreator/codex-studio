@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-056
 packId: pack_02
 name: Early Digital (2000s)
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: 2 Megapixel camera
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Pixelation, stair-step edge, aliasing jaggies
   atmosphere: Y2K, candid, AIM-era, early Facebook album
   key_features: Date stamp, 640x480, silver camera body
+  creative_brief: The pixel blocks and chromatic noise of a technology still learning to see, where every jagged edge and compression smear carries the urgency of its era. Images fold into artifact-laden rectangles — the magenta fringe, the noisy shadow, the blocky contour — as if each megabyte were precious and every upload a declaration. This is not the past seen through nostalgia but the past seen through its own honest, limited eyes.
 avoidRules:
   - film grain
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

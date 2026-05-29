@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-006
 packId: pack_11
 name: Chalkboard Art
-category: 3. Artistic Mediums
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - oddities-and-novelty
 visualDna:
   aesthetic: Drawing on black slate board, sidewalk art, vintage classroom, chalk-dust magic
   form_and_line: Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing
   atmosphere: Casual, temporary, rustic, creative, fleeting, nostalgic melancholy
   key_features: Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending
+  creative_brief: Dust particles float in afternoon classroom light as white lines carve stories onto black slate, each stroke already haunted by the eraser's ghost. Variable chalk thickness traces the hand's tremor, the broken stroke, the re-drawn correction. Ephemeral beauty drawn in calcium carbonate, more honest because it knows it will not last.
 avoidRules:
   - paper
   - ink
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

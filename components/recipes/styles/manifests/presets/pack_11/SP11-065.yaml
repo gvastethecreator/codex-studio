@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-065
 packId: pack_11
 name: Soap Bubble
-category: 5. Micro/Macro
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - toys-and-miniatures
 visualDna:
   aesthetic: Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence
   form_and_line: Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature
   atmosphere: Dreamy, fleeting, pop-second, bubble-bath quiet, childhood-wonder, vanishing-beauty
   key_features: Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp
+  creative_brief: Interference colors swirl across the soap membrane, magenta sliding into cyan into gold as film thickness varies by nanometers, gravity draining the film toward the bottom pole. The sphere hangs in borrowed air, its surface a map of convection currents and micelle-layer physics and the approaching black spot that signals imminent return to nothing. One more second of existence, fragility wearing its most beautiful dress, thin-film poetry floating on glycerin and childhood breath.
 avoidRules:
   - popped
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-303
+packId: pack_16
+name: Galaxy Express 999 - Celestial Rail Melancholy
+category: 11. 70s & 80s Retro Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - 70s-and-80s-retro-anime
+visualDna:
+  aesthetic: Railway slicing through the cosmos, immortal sorrow, station-platform nostalgia, child traveler wonder mixed with elegiac infinite travel
+  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
+  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
+  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
+  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
+  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
+  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  atmosphere: Melancholic, wondrous, star-bound, poetic
+  key_features: Cosmic train imagery, station platforms, traveler duo staging, star-snow ambience, long-journey symbolism
+  creative_brief: Steam and starlight entwine as a locomotive threads the needle between planets and grief. Platform after platform, the journey gathers silence like snow on a window, each stop a question the stars refuse to answer. This is travel as meditation, where departure is forever and arrival is a ghost.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-303.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: 70s-and-80s-retro-anime
+  categoryName: 11. 70s & 80s Retro Anime
+  tags:
+    - anime-classics-and-prestige
+    - 70s-and-80s-retro-anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

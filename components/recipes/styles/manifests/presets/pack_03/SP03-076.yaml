@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-076
 packId: pack_03
 name: Balloon Art (Inflatable)
-category: 4. Applications
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Mylar balloons
   form_and_line: Seams, wrinkles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Inflated
   atmosphere: Fun, pop art, celebration
   key_features: Seams, reflective curves
+  creative_brief: 'Mylar wrinkles catch the world in distorted high-reflection — metallic foil shimmers across inflated curves, and visible seams trace the construction logic of balloons designed to impress at gallery scale. The reflective surfaces map studio lights into abstract highlights, and the inflated tension gives every form the buoyancy of helium and the weight of pop art. The image channels Jeff Koons party spectacle: celebration rendered in foil and air, sculpture that feels like it might float away mid-exhibition.'
 avoidRules:
   - hard
   - heavy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

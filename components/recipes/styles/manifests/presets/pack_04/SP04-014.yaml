@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-014
 packId: pack_04
 name: Pixel Art Comic
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: 16-bit game art
   form_and_line: Pixel outline
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sprite
   atmosphere: Nostalgic, digital, 16-bit childhood, console-warm memory
   key_features: Pixel grid, hard-edge aliasing, limited frame
+  creative_brief: Every pixel earns its place in a grid where space is currency and every shade is a deliberate commitment. Dithering patterns bridge the gap between colors like stepping stones across a limited palette. This is memory rendered in blocks, each sprite a time capsule of when imagination filled the gaps between pixels.
 avoidRules:
   - vector
   - smooth
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

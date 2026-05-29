@@ -1,4 +1,4 @@
-import React, { useRef, useState, useMemo, useEffect } from 'react';
+import React, { useRef, useState, useMemo, useSyncExternalStore } from 'react';
 import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
 import {
   Download,
@@ -89,27 +89,32 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     };
 
     return (
-      <button
-        type="button"
-        ref={itemRef as React.Ref<HTMLButtonElement>}
+      <div
+        ref={itemRef}
         className={`masonry-item mb-4 relative group rounded-xl overflow-hidden cursor-pointer transition-all duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
         ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'shadow-lg'}
         animate-in fade-in-0 zoom-in-95
       `}
-        onClick={handleImageClick}
       >
-        <img
-          src={image.thumbnail || image.src}
-          alt=""
-          loading="lazy"
-          decoding="async"
-          className={`w-full h-auto block bg-zinc-900 rounded-xl transition-all duration-700 ${isWorkspaceGenerating ? 'opacity-60 grayscale-[0.2]' : ''}`}
-          style={{ viewTransitionName: transitionName }}
-        />
+        <button
+          type="button"
+          onClick={handleImageClick}
+          aria-label="Open image preview"
+          className="block w-full appearance-none border-none bg-transparent p-0 text-left"
+        >
+          <img
+            src={image.thumbnail || image.src}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            className={`w-full h-auto block bg-zinc-900 rounded-xl transition-all duration-700 ${isWorkspaceGenerating ? 'opacity-60 grayscale-[0.2]' : ''}`}
+            style={{ viewTransitionName: transitionName }}
+          />
 
-        <div
-          className={`absolute inset-0 transition-all duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100'}`}
-        ></div>
+          <div
+            className={`absolute inset-0 transition-all duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100'}`}
+          ></div>
+        </button>
 
         <div className="absolute top-2 right-2 z-20 flex gap-2">
           <Tooltip
@@ -204,7 +209,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
             />
           </div>
         </div>
-      </button>
+      </div>
     );
   },
 );
@@ -230,7 +235,31 @@ interface ImageGridProps {
   onClearWorkspace: () => void;
 }
 
+function subscribeViewportWidth(onStoreChange: () => void) {
+  if (typeof window === 'undefined') {
+    return () => undefined;
+  }
+
+  window.addEventListener('resize', onStoreChange);
+  return () => {
+    window.removeEventListener('resize', onStoreChange);
+  };
+}
+
+function getViewportWidthSnapshot() {
+  if (typeof window === 'undefined') return 1280;
+  return window.innerWidth;
+}
+
 type SortOption = 'desc' | 'asc' | 'prompt' | 'ratio';
+
+function resolveColumnCount(width: number) {
+  if (width >= 1280) return 6;
+  if (width >= 1024) return 5;
+  if (width >= 768) return 4;
+  if (width >= 640) return 3;
+  return 2;
+}
 
 export const ImageGrid: React.FC<ImageGridProps> = React.memo(
   ({
@@ -255,6 +284,11 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
   }) => {
     const [sortOrder, setSortOrder] = useState<SortOption>('desc');
     const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
+    const viewportWidth = useSyncExternalStore(
+      subscribeViewportWidth,
+      getViewportWidthSnapshot,
+      () => 1280,
+    );
 
     const imageCount = images.length;
     const selectedImageCount = selectedImageIds.length;
@@ -280,6 +314,25 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
         }
       });
     }, [images, sortOrder]);
+
+    const columnCount = useMemo(() => {
+      const resolved = resolveColumnCount(viewportWidth);
+      return Math.max(1, Math.min(resolved, Math.max(1, sortedImages.length)));
+    }, [viewportWidth, sortedImages.length]);
+
+    const columnBuckets = useMemo(() => {
+      const safeColumnCount = Math.max(1, columnCount);
+      const buckets: GeneratedImageWithConfig[][] = Array.from(
+        { length: safeColumnCount },
+        () => [],
+      );
+
+      sortedImages.forEach((image, index) => {
+        buckets[index % safeColumnCount].push(image);
+      });
+
+      return buckets;
+    }, [sortedImages, columnCount]);
 
     if (images.length === 0) return <div className="w-full h-full" />;
 
@@ -414,27 +467,41 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
           </div>
         </div>
         <div className="custom-scrollbar h-full w-full overflow-y-auto px-4 pt-16 pb-8 sm:px-8">
-          <div className="columns-2 gap-4 sm:columns-3 md:columns-4 lg:columns-5 xl:columns-6">
-            {sortedImages.map((image) => (
-              <div
-                key={image.id}
-                className={`break-inside-avoid ${activeModalImageId === image.id ? 'opacity-0' : 'opacity-100'}`}
-              >
-                <ImageItem
-                  image={image}
-                  isSelected={selectedImageIds.includes(image.id)}
-                  onImageClick={onImageClick}
-                  onSelectionChange={onSelectionChange}
-                  onRegenerate={onRegenerate}
-                  onAddToContext={onAddToContext}
-                  onLoadConfig={onLoadConfig}
-                  onDelete={onDelete}
-                  onToggleFavorite={onToggleFavorite}
-                  isWorkspaceGenerating={isGenerating}
-                  transitionName={transitioningImageId === image.id ? 'master-canvas' : undefined}
-                />
-              </div>
-            ))}
+          <div
+            className="grid gap-4"
+            style={{ gridTemplateColumns: `repeat(${Math.max(1, columnCount)}, minmax(0, 1fr))` }}
+          >
+            {columnBuckets.map((bucket, columnIndex) => {
+              const columnKey = bucket[0]?.id
+                ? `column-${bucket[0].id}-${bucket.length}`
+                : `column-empty-${columnIndex}`;
+              return (
+                <div key={columnKey} className="flex min-w-0 flex-col gap-0">
+                  {bucket.map((image) => (
+                    <div
+                      key={image.id}
+                      className={activeModalImageId === image.id ? 'opacity-0' : 'opacity-100'}
+                    >
+                      <ImageItem
+                        image={image}
+                        isSelected={selectedImageIds.includes(image.id)}
+                        onImageClick={onImageClick}
+                        onSelectionChange={onSelectionChange}
+                        onRegenerate={onRegenerate}
+                        onAddToContext={onAddToContext}
+                        onLoadConfig={onLoadConfig}
+                        onDelete={onDelete}
+                        onToggleFavorite={onToggleFavorite}
+                        isWorkspaceGenerating={isGenerating}
+                        transitionName={
+                          transitioningImageId === image.id ? 'master-canvas' : undefined
+                        }
+                      />
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-068
 packId: pack_11
 name: Leaf Veins
-category: 5. Micro/Macro
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: Backlit leaf, chloroplast-window, vein-map, photosynthesis-architecture, leaf-botany
   form_and_line: Vein network, midrib-spine, secondary-vein branching, areole-polygon mesh, margin-serration
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None, leaf-plane, blade-expansion, lobe-geometry, venation-pattern
   atmosphere: Fresh, organic, forest-floor quiet, photosynthesis-magic, chloroplast-glow, green-life
   key_features: Veins, midrib-center, secondary-vein, areole-polygon, stomata-pores, margin-edge, backlit-translucency
+  creative_brief: Chlorophyll glows emerald under backlight that transforms the leaf blade into a stained-glass window of the forest floor, the midrib a central spine of transport and structure. Secondary veins branch outward into areole-polygon mesh, a distribution network that delivers sugar and extracts water with the efficiency of a logistical masterpiece refined by photosynthesis. Hold a leaf to the sun and you hold a map of the tree's circulatory system, chloroplast-glow revealing the architecture of green life.
 avoidRules:
   - dead
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

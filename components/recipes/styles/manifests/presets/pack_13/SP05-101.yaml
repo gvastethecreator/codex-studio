@@ -1,0 +1,51 @@
+schemaVersion: 1
+id: SP05-101
+packId: pack_13
+name: Abstract Fluid Painterly Anime
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Watercolor-bleeding anime, ink-wash fluidity, dissolving linework into color pools, Studio 4°C experimental energy, backgrounds painted as impressionist landscapes, characters existing as pigment suggestions, movement captured through paint splashes, Yuasa-esque liquid reality
+  form_and_line: Loose dissolving ink contours, wet-into-wet bleeding edges, sumi-e gesture lines, variable wash pressure, disappearing outlines
+  color_palette: Washed indigo, bleeding crimson, ink-stone black, tea-stain sepia, water-diluted pastels, pool-of-paint gradients
+  lighting_setup: Water-filtered light, backlit through paper, translucent color glow, diffused wash illumination
+  material_texture: Wet rice-paper buckling, ink bleeding into surrounding fibers, watercolor bloom halos, salt-texture crystals
+  render_quality: Experimental art-anime frame, painterly moving canvas, ink-and-wash cinema, anti-commercial beauty
+  spatial_distortion: Figures dissolving at edges into abstract color fields, backgrounds bleeding into foreground, no hard spatial boundaries
+  atmosphere: Meditative, ephemeral, dreamlike transience, ink-stone poetry
+  key_features: Watercolor blooms, disappearing linework, ink-pool negative space, pigment granulation, wet-paper texture
+  creative_brief: Pigment breathes across wet paper, characters dissolving at their edges into pools of memory and suggestion. The image refuses to hold still, bleeding from form into feeling, from ink into atmosphere. What remains is not a drawing but the ghost of one — already fading, already beautiful.
+avoidRules:
+  - hard outlines
+  - cel shading
+  - flat colors
+  - rigid
+  - static
+  - geometric
+  - stiff
+  - low detail
+  - simple
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-101.webp
+attributes:
+  negativePrompt: hard outlines, cel shading, flat colors, rigid, static, geometric, stiff, low detail, simple
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-character-and-lifestyle
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

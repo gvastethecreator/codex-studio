@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-038
 packId: pack_01
 name: Butterfly Lighting
-category: 2. Lighting
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - portrait-and-studio
 visualDna:
   aesthetic: Glamour lighting
   form_and_line: Shadow under nose
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Beautiful
   key_features: Symmetrical shadow
+  creative_brief: The architecture of glamour cast from above, a butterfly-shaped shadow settling beneath the nose like a signature of perfection. High frontal radiance that smooths and elevates, descended from old Hollywood's insistence that light should flatter before it reveals. Symmetry made luminous, beauty rendered architectural.
 avoidRules:
   - side light
   - shadow
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - lighting
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

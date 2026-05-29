@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-075
+packId: pack_16
+name: Weathering With You – Shinkai Rainlight City Romance
+category: 10. Studio Masterpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - studio-masterpieces
+visualDna:
+  aesthetic: Rain-soaked city detail, shafts of sunlight, emotional weather, intimate urban scale, sunshine-girl power, perpetual Tokyo rain, rooftop shrines, flooded city finale
+  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
+  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
+  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
+  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
+  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
+  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
+  atmosphere: Atmospheric, tender, stormy, hopeful
+  key_features: Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry
+  creative_brief: 'Rain falls endlessly on Tokyo, each drop a small grief that pools into a city-wide melancholy. A girl who prays sunlight into existence carries the weight of every clear sky on shoulders too young for the burden. Water rises around them like a decision being made, and love answers: let the city drown if it means keeping her light alive.'
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-075.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: studio-masterpieces
+  categoryName: 10. Studio Masterpieces
+  tags:
+    - anime-classics-and-prestige
+    - studio-masterpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

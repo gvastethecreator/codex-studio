@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-054
 packId: pack_03
 name: Food CGI
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Perfect burger ad
   form_and_line: Juicy details
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flying ingredients
   atmosphere: Delicious, hyperreal, crave-inducing
   key_features: Water droplets, steam wisps
+  creative_brief: 'Micro-droplets of condensation bead on a fresh tomato slice while steam wisps curl upward through backlit air — every ingredient is suspended at its peak of impossible freshness, flying lettuce and sesame seeds frozen mid-launch. The saturation is cranked to fast-food fantasy, wet surfaces glisten with appetite-engineered precision, and the image triggers a craving your stomach believes before your brain can object. This is hero-ad CGI at its most weaponized: food rendered more delicious than food could ever be.'
 avoidRules:
   - rotten
   - dry
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

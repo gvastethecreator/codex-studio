@@ -18,6 +18,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Turbulence',
       atmosphere: 'Mysterious, ephemeral',
       key_features: 'Black background',
+      creative_brief:
+        'Form barely held together, a sculpture of hesitation carved from air. Each tendril is a question the wind forgets to answer, presence fading into the suggestion of itself.',
     },
   },
   {
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Magnetic field',
       atmosphere: 'Dark, sci-fi',
       key_features: 'Spikes',
+      creative_brief:
+        'Liquid metal rises in defiance of gravity, sculpted by invisible fields into alien architectures. Each spike is a negotiation between chaos and order, the magnetic and the material.',
     },
   },
   {
@@ -52,6 +56,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Flow',
       atmosphere: 'Creative, messy',
       key_features: 'Cells',
+      creative_brief:
+        "Colors collide in slow motion, cells forming and breaking like miniature geology. The pour is a controlled accident, a negotiation between gravity's pull and pigment's will.",
     },
   },
   {
@@ -69,6 +75,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Hypnotic, natural',
       key_features: 'Fingerprint pattern',
+      creative_brief:
+        'Chemistry dreaming in stripes and spots, the mathematics that paints leopards and zebras from nothing. Two competing forces spiral outward, generating complexity from simple rules.',
     },
   },
   {
@@ -86,6 +94,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Symmetrical',
       atmosphere: 'Scientific, orderly',
       key_features: 'Mandala',
+      creative_brief:
+        'Frequency made visible, sand arranging itself into the fingerprint of a note. Sound becomes architect, geometry the frozen echo of vibration seeking rest.',
     },
   },
   {
@@ -103,6 +113,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Amorphous',
       atmosphere: 'Epic, vast',
       key_features: 'Stars',
+      creative_brief:
+        'Stellar afterbirth drifting across light-years, pink and indigo nurseries where stars ignite. The cosmic scale renders the viewer microscopic, a witness to creation at its most indifferent.',
     },
   },
   {
@@ -120,6 +132,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Liquid',
       atmosphere: 'Dreamy, fluid',
       key_features: 'Gold veins',
+      creative_brief:
+        'Pigment surrenders to solvent, blooming outward in uncontrolled ecstasy. Boundaries dissolve into soft continents of color, a map of the moment before definition arrives.',
     },
   },
   {
@@ -137,6 +151,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Spherical',
       atmosphere: 'Delicate, colorful',
       key_features: 'Surface tension',
+      creative_brief:
+        'Architecture of surface tension, iridescent domes balancing on the edge of nothing. A universe held in a film thinner than thought, swirling with colors borrowed from light itself.',
     },
   },
   {
@@ -154,6 +170,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Branching',
       atmosphere: 'Connected, growth',
       key_features: 'Web pattern',
+      creative_brief:
+        'The underground conversation, white threads stitching soil into sentience. A web older than forests, humming with the silent commerce of nutrients and secrets.',
     },
   },
   {
@@ -171,6 +189,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Fluid',
       atmosphere: 'Psychedelic, toxic',
       key_features: 'Rainbow sheen',
+      creative_brief:
+        'Petroleum rainbows on water, beauty born from something the earth never meant to release. Shifting skin of color, every angle a different jewel dragged from darkness.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

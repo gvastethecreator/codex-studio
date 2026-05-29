@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-009
 packId: pack_01
 name: High Key Portrait
-category: 1. Portrait Styles
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-styles
+  - portrait-and-studio
 visualDna:
   aesthetic: High key studio portraiture, bright and airy photography
   subject_treatment: Low contrast edges, soft features, minimal shadows on the face
@@ -20,6 +20,7 @@ visualDna:
   camera_and_composition: Blown out highlights in the background, clean and minimal framing
   atmosphere_and_mood: Happy, pure, clean, optimistic, ethereal
   rendering_and_quality: Commercial beauty standard, crisp but soft, high resolution
+  creative_brief: Light becomes the subject itself, dissolving boundaries between figure and space in a luminous embrace. The image feels like a breath held at the peak of happiness—weightless, glowing, untouched by shadow. Skin becomes porcelain, fabric becomes cloud, and the entire frame radiates with an inner warmth that suggests both innocence and transcendence.
 avoidRules:
   - dark
   - shadows
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-styles
-  categoryName: 1. Portrait Styles
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - portrait-styles
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

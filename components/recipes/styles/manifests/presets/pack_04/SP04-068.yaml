@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-068
 packId: pack_04
 name: Cyanotype (Blueprint)
-category: 5. Ink & Print
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Sun print
   form_and_line: Silhouette (white)
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Soft edges
   atmosphere: Dreamy, blue, alternative-process magic, Victorian science
   key_features: Blue only, contact shadow, silhouette photogram
+  creative_brief: Prussian blue washes over paper in the signature of sunlight, chemistry and photon collaborating on the image. Foliage leaves its silhouette like a ghost of the garden, white shapes against the blue miracle. This is photography before photography knew its name, when light itself was the artist and the botanist held the paper.
 avoidRules:
   - red
   - yellow
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

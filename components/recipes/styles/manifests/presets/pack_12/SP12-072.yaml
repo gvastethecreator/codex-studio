@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-072
+packId: pack_12
+name: Dust Cathedral Rally Raid
+category: 8. Puzzle Chambers & Adventure Setpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - puzzle-chambers-and-adventure-setpieces
+visualDna:
+  aesthetic: Motorized raid cutting through ruined cathedrals.
+  subject_treatment: Armored riders and support drones.
+  color_and_tone: Dust beige, rust red, and steel blue.
+  lighting_and_shadow: Sunlight filtered through collapsed arches.
+  texture_and_material: Eroded stone, rubber, and metal.
+  camera_and_composition: Racing route with clear visual checkpoints.
+  atmosphere_and_mood: Speed, noise, and territorial conquest.
+  rendering_and_quality: Seasonal event visual for an action racer.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - tropical
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-072.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: puzzle-chambers-and-adventure-setpieces
+  categoryName: 8. Puzzle Chambers & Adventure Setpieces
+  tags:
+    - video-game-originals-vault
+    - puzzle-chambers-and-adventure-setpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

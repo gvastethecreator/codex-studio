@@ -4,7 +4,7 @@ import { createGenerationTaskSpec } from '../../../packages/shared/src';
 import { hydrateSourceSpecAssetPaths } from './referenceManager';
 
 describe('referenceManager', () => {
-  it('hydrates only reference assets with persisted local paths', () => {
+  it('hydrates every inline task asset with its persisted local path', () => {
     const sourceSpec = createGenerationTaskSpec({
       id: 'spec-1',
       task: 'image_edit',
@@ -34,8 +34,22 @@ describe('referenceManager', () => {
 
     const hydrated = hydrateSourceSpecAssetPaths(
       sourceSpec,
-      [{ name: 'moodboard.png', dataUrl: 'data:image/png;base64,CCC', strength: 0.4 }],
       [
+        { name: 'input-image.png', dataUrl: 'data:image/png;base64,AAA', strength: 1 },
+        { name: 'input-mask.png', dataUrl: 'data:image/png;base64,BBB', strength: 1 },
+        { name: 'moodboard.png', dataUrl: 'data:image/png;base64,CCC', strength: 0.4 },
+      ],
+      [
+        {
+          name: 'input-image.png',
+          path: 'D:/AI-Studio-Library/references/job-1/input-image.png',
+          strength: 1,
+        },
+        {
+          name: 'input-mask.png',
+          path: 'D:/AI-Studio-Library/references/job-1/input-mask.png',
+          strength: 1,
+        },
         {
           name: 'moodboard.png',
           path: 'D:/AI-Studio-Library/references/job-1/moodboard.png',
@@ -48,19 +62,21 @@ describe('referenceManager', () => {
       {
         role: 'input',
         name: 'input-image.png',
-        dataUrl: 'data:image/png;base64,AAA',
+        dataUrl: undefined,
+        localPath: 'D:/AI-Studio-Library/references/job-1/input-image.png',
         strength: 1,
       },
       {
         role: 'mask',
         name: 'input-mask.png',
-        dataUrl: 'data:image/png;base64,BBB',
+        dataUrl: undefined,
+        localPath: 'D:/AI-Studio-Library/references/job-1/input-mask.png',
         strength: 1,
       },
       {
         role: 'reference',
         name: 'moodboard.png',
-        dataUrl: 'data:image/png;base64,CCC',
+        dataUrl: undefined,
         localPath: 'D:/AI-Studio-Library/references/job-1/moodboard.png',
         strength: 0.4,
       },
@@ -110,6 +126,7 @@ describe('referenceManager', () => {
     expect(hydrated?.assets.at(2)).toEqual(
       expect.objectContaining({
         role: 'reference',
+        dataUrl: undefined,
         localPath: 'D:/AI-Studio-Library/references/job-2/moodboard.png',
       }),
     );

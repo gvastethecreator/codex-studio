@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-060
 packId: pack_01
 name: Documentary (War)
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Conflict zone photo
   form_and_line: Chaos
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Tragic, intense
   key_features: Realism
+  creative_brief: 'Dust hangs in the frame like suspended grief, sunlight stripped to its bone-white harshness while smoke scribbles erasure across the sky. The image does not editorialize: it witnesses with a flat, unflinching gaze that refuses to prettify the weight of what a single instant can carry. Grain and desaturation are not style choices but the visual syntax of testimony.'
 avoidRules:
   - posed
   - happy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-070
 packId: pack_04
 name: Mezzotint
-category: 5. Ink & Print
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Dark print
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Moody, night, candle-lit mystery, old-master depth
   key_features: Dark base, burnished highlight, tonal reveal
+  creative_brief: Darkness emerges first, the entire plate worked to hold ink before the artist begins the slow labor of revealing light. Tones graduate from absolute black to luminous highlight through the patient rock of the mezzotint rocker. This is chiaroscuro as technique, where the image is liberated from darkness one burnished highlight at a time.
 avoidRules:
   - white background
   - lines
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

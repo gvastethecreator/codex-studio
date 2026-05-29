@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-034
 packId: pack_07
 name: Abandoned Asylum
-category: 3. Environment
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - environment
+  - residential-interiors
 visualDna:
   aesthetic: Decaying hallway, institutional horror, peeling madness, sanitarium ruin, ghost of order
   form_and_line: Peeling paint lines, institutional symmetry, long perspective corridor, collapsed grid, sagging ceiling
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Collapsed ceiling
   atmosphere: Horror, sad, old, forgotten, echoing, institutional trauma, peeling silence
   key_features: Wheelchair, peeling paint, long hallway, broken windows, institutional signs, collapsed ceiling
+  creative_brief: Paint peels in continents, cartographies of neglect mapping themselves across institutional green walls. A wheelchair sits where it was abandoned decades ago, patient object still waiting for someone to return. Dust motes dance in light-shafts like the only living things brave enough to still inhabit this place.
 avoidRules:
   - clean
   - new
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: environment
-  categoryName: 3. Environment
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - environment
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

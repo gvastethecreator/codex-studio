@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-111
 packId: pack_02
 name: Beavis and Butt-Head - Dumb Couch Slouch
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Mouth-breathing teen delinquent caricature, couch-slouch nihilism, ugly suburban interiors, cheap music-video culture, stupid-laugh deadbrain energy, acne-age contempt, pencil-neck stupidity
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Idiotic, lazy, mean, vacant
   key_features: Overbites, slouched posture, deadbeat living room clutter, ugly teen profile shapes, cheap-TV ambience
+  creative_brief: Gravity pulls harder on these bodies, flattening spines into upholstery, erasing ambition from posture one potato-chip episode at a time. The room exhales stale boredom while profiles cut jagged against the cathode-ray glow of a world they will never join.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

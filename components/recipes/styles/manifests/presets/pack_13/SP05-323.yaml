@@ -1,0 +1,52 @@
+schemaVersion: 1
+id: SP05-323
+packId: pack_13
+name: Naoko Takeuchi - Moon-Prism Glamour Frame
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Shimmering magical-girl glamour with fashion-magazine grace, moon-prism romance, jeweled poses, diary-heart tenderness and celestial femininity
+  form_and_line: Clean beauty-line contours, glossy eyelash emphasis, accessory-forward inking
+  color_palette: Blush pink, moon white, navy velvet, gold sparkle, peach pearl, lavender gleam
+  lighting_setup: Soft star-filter bloom, moonlit key light, cosmetic glow with sparkle flares
+  material_texture: Glossy lips, satin ribbons, enamel brooch detail, pearl-shine skin highlights
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Waist-length hair arcs, elongated eyes, floating ribbons, graceful transformation posture
+  atmosphere: Romantic, sparkling, feminine, dreamy
+  key_features: Moon motifs, gem brooches, fashion poses, ribbon motion, starry romance framing
+  creative_brief: Moonlight crystallizes into jewelry as a transformation sequence pauses at the height of its arc, every ribbon frozen in the moment before falling. Sparkle is not decoration but language, a glittering grammar of hope spoken through brooches and bows. Tenderness becomes iridescent, catching light and throwing it back as promise.
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-323.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-character-and-lifestyle
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

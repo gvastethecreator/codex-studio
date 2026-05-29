@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-066
 packId: pack_03
 name: Abstract Background
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Wallpaper art
   form_and_line: Flowing shapes
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Desktop wallpaper, clean, background art
   atmosphere: Calm, digital, zen-productivity
   key_features: No focal point, flowing composition
+  creative_brief: 'No subject demands attention — flowing shapes drift across the frame in pleasing gradients and ambient hues, a composition engineered for the periphery of focus. Soft ambient-fill lighting wraps seamless surfaces in calm, and the absence of a focal point invites the eye to wander without destination. The image is digital zen: a desktop wallpaper that enhances rather than competes, beauty designed to be lived alongside rather than stared at.'
 avoidRules:
   - subject
   - object
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

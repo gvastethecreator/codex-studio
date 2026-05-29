@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-043
 packId: pack_03
 name: X-Ray Shader
-category: 2. Lighting & Atmosphere
+category: 1. Hard Surface And Industrial Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - hard-surface-and-industrial-cgi
 visualDna:
   aesthetic: See-through object
   form_and_line: Internal structure
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Medical, sci-fi, diagnostic scan
   atmosphere: Analytical, cold, forensic insight
   key_features: Internal view, see-through silhouette
+  creative_brief: 'Opacity becomes optional — the outer shell dissolves into a ghost of itself, and internal structures reveal themselves like blueprints given physical form. Bone, circuitry, and mechanical skeletons glow from within in clinical blue-white, density-based transparency mapping hidden complexity to visible light. The image reads as a diagnostic scan elevated to art: forensic, cold, and strangely intimate in its exposure of what was never meant to be seen.'
 avoidRules:
   - opaque
   - skin
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: hard-surface-and-industrial-cgi
+  categoryName: 1. Hard Surface And Industrial Cgi
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - hard-surface-and-industrial-cgi
   supportedTasks:
     - image_generate
     - image_edit

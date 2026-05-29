@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-061
 packId: pack_09
 name: Dry Ice Fog
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Heavy floor fog
   form_and_line: Rolling clouds
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heavy gas
   atmosphere: Eerie, stage
   key_features: Low lying
+  creative_brief: Render the heavy theatre of dry ice fog rolling low across the ground in dense white clouds that behave more like liquid than gas, pooling and pouring with an eerie obedience to gravity. The fog should feel cold to the eye, a dense atmosphere that transforms the ordinary floor into a stage between worlds. Capture the aesthetics of the liminal, the breath of the unseen made visible.
 avoidRules:
   - steam
   - hot
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

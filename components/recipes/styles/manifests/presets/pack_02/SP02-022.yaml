@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-022
 packId: pack_02
 name: CCTV/Security Cam
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Surveillance footage
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Wide angle distortion, convex warp, overhead mount
   atmosphere: Creepy, voyeur, institutional coldness, anonymous watching
   key_features: Timestamp, camera ID overlay, motion detection box
+  creative_brief: A fixed gaze watches without blinking, reducing the world to a grainy theater of light and shadow where every figure is a suspect. The timestamp ticks forward without mercy, recording hours no one was meant to see. Truth, in these frames, is neither kind nor curated.
 avoidRules:
   - color
   - hd
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

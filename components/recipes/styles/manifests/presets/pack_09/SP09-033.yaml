@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-033
 packId: pack_09
 name: Peeling Paint
-category: 4. Weathering & Decay
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - weathering-and-decay
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Old house wall
   form_and_line: Cracked flakes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Curled edges
   atmosphere: Neglected, textured
   key_features: Random peeling
+  creative_brief: Summon the slow undressing of time where paint surrenders its grip in curled flakes, revealing the grey wood beneath like a secret long kept under layers of white. Shadows must pool under each lifting edge, casting miniature worlds of depth and texture across the neglected wall. Render the beauty of release, surfaces learning to let go one curled petal at a time.
 avoidRules:
   - fresh paint
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: weathering-and-decay
-  categoryName: 4. Weathering & Decay
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - weathering-and-decay
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

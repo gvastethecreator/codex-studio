@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-027
 packId: pack_09
 name: Rubber (Tire)
-category: 2. Man-Made Materials
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Car tire
   form_and_line: Treads
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Functional, dirty
   key_features: Tread pattern
+  creative_brief: Render the functional sculpture of tire tread cut into black rubber valleys designed for grip and water dispersal, a landscape of geometric channels repeating around the curve. The surface must feel matte and slightly tacky, absorbing light into dense darkness while the raised tread pattern catches subtle sheen. Capture the industrial beauty of form following friction to its most direct conclusion.
 avoidRules:
   - shiny plastic
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

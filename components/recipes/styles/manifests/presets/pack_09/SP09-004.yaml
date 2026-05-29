@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-004
 packId: pack_09
 name: Granite (Polished)
-category: 1. Natural Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Kitchen countertop stone
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Solid, cold
   key_features: Random speckles
+  creative_brief: Summon the cold dignity of polished granite with its galaxy of crystalline speckles suspended in stone like a frozen night sky. Light should skim the surface like a blade, revealing depths that feel geological rather than superficial. The image must carry the weight of mountains in every square inch of speckled grey and pink.
 avoidRules:
   - concrete
   - matte
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - natural-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

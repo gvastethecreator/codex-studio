@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Geometric reduction
   atmosphere: Modern, tech
   key_features: Triangles
+  creative_brief: The world reduced to its crystalline essence, every surface a facet of light. Digital geometry whispers of computation, a landscape born from vertex and vector.
 avoidRules:
   - curved
   - smooth
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

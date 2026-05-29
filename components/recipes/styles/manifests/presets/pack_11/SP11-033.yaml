@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-033
 packId: pack_11
 name: Blueprint
-category: 3. Artistic Mediums
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - oddities-and-novelty
 visualDna:
   aesthetic: Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination
   form_and_line: White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay
   atmosphere: Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin
   key_features: Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar reference
+  creative_brief: Cyan paper holds white-line certainty, a world of orthographic projection and measured intention rendered in ammonia-developed precision. Dimension strings pin the drawing to reality while revision clouds mark the lingering questions in every plan. The building exists here first, in the blueprint dream, before a single foundation is poured or brick is laid.
 avoidRules:
   - color
   - photo
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

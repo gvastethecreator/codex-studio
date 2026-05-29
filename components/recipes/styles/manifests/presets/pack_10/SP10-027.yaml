@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-027
 packId: pack_10
 name: Chromatic Aberration
-category: 5. Digital Glitch & Noise
+category: 3. Digital Glitch & Noise
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Color shift
   atmosphere: Dizzy, intense
   key_features: Edge fringe
+  creative_brief: Light splits at the edges, red and cyan pulling apart like a color divorced from itself. The error becomes the aesthetic, a deliberate wound in optics that makes the image vibrate with wrongness.
 avoidRules:
   - clean edges
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: digital-glitch-and-noise
-  categoryName: 5. Digital Glitch & Noise
+  categoryName: 3. Digital Glitch & Noise
   tags:
     - abstract-and-experimental
     - digital-glitch-and-noise
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

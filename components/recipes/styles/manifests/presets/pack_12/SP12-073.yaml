@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-073
+packId: pack_12
+name: Titan Orchard Colossus Hunt
+category: 6. Wilderness Hunts & Harsh Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+visualDna:
+  aesthetic: Colossus hunt in orchards of monumental scale.
+  subject_treatment: Tactical climbers and biomechanical beasts.
+  color_and_tone: Olive green, ripe-fruit red, and gray metal.
+  lighting_and_shadow: Sol nublado con brillos de armadura.
+  texture_and_material: Giant bark, sap, and mechanical plates.
+  camera_and_composition: Extreme scale with a minimal human figure.
+  atmosphere_and_mood: Awe, danger, and epic cooperation.
+  rendering_and_quality: Key art de hunting season.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - city-neon
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-073.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

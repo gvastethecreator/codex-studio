@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-068
 packId: pack_10
 name: Topographic Map
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Exploration
   key_features: Contours
+  creative_brief: Landscape abstracted into concentric whispers, each line a promise of equal altitude. Mountains become fingerprints, valleys become signatures, and the cartographer's pen traces what the earth already knows.
 avoidRules:
   - straight lines
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

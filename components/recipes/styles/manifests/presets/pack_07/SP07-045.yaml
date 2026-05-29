@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-045
 packId: pack_07
 name: Desert Xeriscape
-category: 4. Landscape Architecture
+category: 4. Landscape And Gardens
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-architecture
+  - landscape-and-gardens
 visualDna:
   aesthetic: Cactus garden, arid sculpture, spiny landscape, survival beauty, textural desert
   form_and_line: Spikes, rosette geometry, vertical accent-columns, mounded clusters, gravel sweeps
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Hot, resilient, sun-forged, silent-survival, ancient-patience, desert-truth
   key_features: Succulents, agave rosettes, dry riverbed, golden barrel cacti, rusted steel, gravel mulch
+  creative_brief: Agave blades catch late sun like green jewels sharpened by drought into weapon and sculpture simultaneously. Golden barrel cacti huddle in geological patience, each spine a tiny monument to survival without apology. The garden celebrates what thrives on neglect, beauty that asks for nothing but to be left alone.
 avoidRules:
   - lawn
   - wet
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-architecture
-  categoryName: 4. Landscape Architecture
+  categoryId: landscape-and-gardens
+  categoryName: 4. Landscape And Gardens
   tags:
     - architecture-and-interior
-    - landscape-architecture
+    - landscape-and-gardens
   supportedTasks:
     - image_generate
     - image_edit

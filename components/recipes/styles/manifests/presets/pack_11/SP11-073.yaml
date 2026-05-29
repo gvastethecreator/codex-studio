@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-073
 packId: pack_11
 name: Vinyl Record Grooves
-category: 5. Micro/Macro
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface
   form_and_line: Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove
   atmosphere: Music, tech, needle-drop quiet, vinyl-warmth, listening-room, hi-fi reverence
   key_features: Grooves, spiral-lead-in, modulation-wiggle, dust-particle, stylus-reflection, lock-groove-circle, label-edge, pressing-plant matrix number
+  creative_brief: 'The stylus traces a wiggling canyon carved by sound waves pressed into PVC decades before digital convenience flattened music into invisible files. Modulation reveals itself in the lateral cuts: louder passages swing wider across the groove wall, quiet interludes tighten toward vinyl-carbon silence. The record groove is a physical waveform frozen in black plastic, waiting for a diamond needle to resurrect the music entombed in its spiral, sound you can see with the right grazing-incidence light.'
 avoidRules:
   - smooth
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

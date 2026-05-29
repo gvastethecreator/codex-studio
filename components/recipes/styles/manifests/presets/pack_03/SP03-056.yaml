@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-056
 packId: pack_03
 name: Scientific Visualization
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Molecule or galaxy
   form_and_line: Data driven
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Smart, complex, knowledge-driven
   key_features: Data points, scale-reference
+  creative_brief: 'Data becomes image — false-color palettes map the invisible spectrum to visible beauty, and particle clouds render protein folds or galactic clusters with equal authority. Self-illuminated volumetric forms float against deep space or cellular void, and scale references remind the eye that this is neither fantasy nor metaphor. The image channels NASA-grade accuracy: scientific storytelling where every color, every data point, every rendered voxel carries the weight of measurement.'
 avoidRules:
   - fantasy
   - magic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

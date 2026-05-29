@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-089
 packId: pack_02
 name: Grotesque Meat Puppet
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Body-horror cartoon, exposed musculature wrapped in sagging skin, too-many-teeth grin stretching cheek to ear, veins pulsing visibly under translucent flesh, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette
   form_and_line: Hyper-detailed anatomical horror on cartoon proportions, sinew strands visible, meat-fiber linework
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Jaw unhinging beyond physical limits, eyes bulging on stalks, ribcage visible through skin, flesh-puppet proportions
   atmosphere: Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet compelling
   key_features: Too-many-teeth smile, visible musculature, bulging veined eyes, meat-texture rendering, skin-stretch tension lines
+  creative_brief: The body has been turned inside out for inspection, sinew and tendon wearing the colors of a children's cartoon while performing the vocabulary of surgical theater. A grin holds too many teeth, and skin stretches translucent over landscapes of muscle that should remain interior. The image compels and repels in the same breath, an anatomy lesson from a fever dream.
 avoidRules:
   - smooth
   - clean
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

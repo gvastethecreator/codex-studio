@@ -5,6 +5,7 @@ import { log } from '../logger';
 import { resolvePlatformPath } from '../platformPaths';
 import { createAssetExtractor, type AssetExtractor } from './assetExtractor';
 import { resolveJobExecutionOptions } from './executionOptions';
+import { resolveCodexImagegenSessionIdentity } from './sessionIdentity';
 import { buildCodexImagegenTurnInput } from './turnInput';
 import {
   closeImagegenSession,
@@ -252,6 +253,7 @@ async function runImagegenJob(
     id: string;
     prompt: string;
     projectId: string;
+    sessionKey?: string;
     execution?: JobExecutionOptions | null;
     compiledInput?: CodexImagegenCompiledInput | null;
     signal?: AbortSignal;
@@ -262,7 +264,14 @@ async function runImagegenJob(
   const transcriptDir = dependencies.resolveLibraryPath('transcripts', job.id);
   mkdirSync(transcriptDir, { recursive: true });
   const transcriptPath = path.join(transcriptDir, 'events.jsonl');
-  const sessionKey = dependencies.getSessionKey(job.prompt);
+  const sessionIdentity = resolveCodexImagegenSessionIdentity({
+    jobId: job.id,
+    prompt: job.prompt,
+    requestedSessionKey: job.sessionKey,
+    hasImageInputs: (job.compiledInput?.payload.imageInputs.length ?? 0) > 0,
+    getSessionKey: dependencies.getSessionKey,
+  });
+  const { sessionKey, reusable: reusableSession } = sessionIdentity;
   let lastError: unknown = null;
 
   for (let attempt = 1; attempt <= 2; attempt += 1) {
@@ -295,13 +304,19 @@ async function runImagegenJob(
 
     try {
       await run;
+      if (!reusableSession) {
+        dependencies.closeSession(sessionKey, { invalidatePersistedThread: true });
+      }
       return runResult;
     } catch (error) {
+      if (!reusableSession) {
+        dependencies.closeSession(sessionKey, { invalidatePersistedThread: true });
+      }
       lastError = error;
       if (isAbortError(error)) throw error;
       const message = error instanceof Error ? error.message : String(error);
       const retryable =
-        /stream disconnected|Timed out waiting for Codex notification|thread.+not found|unknown thread|invalid thread/i.test(
+        /stream disconnected|Timed out waiting for Codex notification|thread.+not found|unknown thread|invalid thread|socket is not open|socket closed|websocket/i.test(
           message,
         );
       if (!retryable || attempt === 2) throw error;
@@ -355,6 +370,7 @@ export function createCodexTurn({
           id: params.jobId,
           projectId: params.projectId,
           prompt: params.prompt,
+          sessionKey: params.sessionKey,
           execution: params.execution,
           compiledInput: params.compiledInput ?? null,
           signal: params.signal,

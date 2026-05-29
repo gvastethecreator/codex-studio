@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-045
 packId: pack_08
 name: Superhero Spandex
-category: 5. Fantasy/Sci-Fi Costume
+category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Muscles
   atmosphere: Strong, brave, truth-and-justice clarity, action-pose dynamism, unwavering resolve
   key_features: Logo on chest, cape, utility belt, domino mask, heroic boots
+  creative_brief: Spandex stretched across muscle groups that exist somewhere between anatomy and aspiration, primary colors flat and declarative as moral certainty. The cape catches an updraft from the splash page below, chest emblem a heraldic device for a kingdom without borders, the domino mask hiding the only part of the hero that still belongs to the person underneath.
 avoidRules:
   - loose clothes
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fantasy-sci-fi-costume
-  categoryName: 5. Fantasy/Sci-Fi Costume
+  categoryName: 4. Fantasy Sci-Fi Costume
   tags:
     - fashion-and-costume
     - fantasy-sci-fi-costume
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

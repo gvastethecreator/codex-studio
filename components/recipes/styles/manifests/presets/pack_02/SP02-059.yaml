@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-059
 packId: pack_02
 name: Thermal Camera
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Heat map
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Tech, hunting, surveillance, predator-vision
   key_features: Hot is white, cold is black, body-glow silhouette
+  creative_brief: Temperature becomes palette and the world reorganizes itself around warmth. Cool surfaces recede into violet shadow while hidden heat blooms brilliant as a beacon, the visual logic of something that hunts by signature rather than sight. The gradient from cold to burning core traces a language older than light, where every living thing announces itself in fire.
 avoidRules:
   - visible light
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

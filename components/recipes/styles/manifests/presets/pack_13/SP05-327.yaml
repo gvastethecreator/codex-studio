@@ -1,0 +1,52 @@
+schemaVersion: 1
+id: SP05-327
+packId: pack_13
+name: Osamu Dezaki - Postcard Memory Freeze
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Dramatic freeze-frame postcard shot, glowing highlights, emotional overstatement, roses and stars suspended in time, classic melodrama distilled into one burning still
+  form_and_line: Crisp classic contour, glamour-highlight accents, melodrama-weighted inking
+  color_palette: Sepia gold, crimson rose, cream white, royal blue, amber light, filmic mauve
+  lighting_setup: Spotlit emotional key, highlight flares, freeze-frame glare, theatrical backlight
+  material_texture: Filmic grain, cel highlight bloom, airbrushed glow, paper postcard softness
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Heroic freeze poses, diagonally framed bodies, symbolic overlay space, concentrated emotional composition
+  atmosphere: Melodramatic, nostalgic, luminous, intense
+  key_features: Postcard freeze frame, dramatic highlight lines, symbolic floral overlays, emotional stare-downs, retro melodrama staging
+  creative_brief: Time stops but emotion accelerates. A single crystalline moment holds all the weight of melodrama, glowing like a postcard remembered too intensely. Roses and stars are frozen witnesses to a feeling that will not fade.
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-327.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-character-and-lifestyle
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

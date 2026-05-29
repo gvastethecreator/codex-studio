@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-072
 packId: pack_02
 name: Candlelight
-category: 4. Lighting & Atmosphere
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - lighting-and-atmosphere
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Period drama
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Romantic, secret, whispered conspiracy, flickering intimacy
   key_features: Bottom up light, flame flicker, glowing hand, wax drip
+  creative_brief: A single flame becomes the axis of a world, its tremulous orange breath pushing back a darkness that seems alive and watching. Faces lean into the glow from below, shadows climbing upward like ivy, and every flicker writes a new chapter of intimacy across the room.
 avoidRules:
   - electric light
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: lighting-and-atmosphere
-  categoryName: 4. Lighting & Atmosphere
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - lighting-and-atmosphere
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

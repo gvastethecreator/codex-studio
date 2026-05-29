@@ -1,3 +1,4 @@
+import { Database } from 'bun:sqlite';
 import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { Asset, Job, Project } from '../packages/shared/src';
@@ -38,6 +39,7 @@ interface PendingPreset {
 const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini';
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
 const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
+const studioDbPath = resolveLibraryPathFromRoot(libraryDir, 'studio.sqlite');
 const IMAGE_RETRY_ATTEMPTS = Math.max(1, Number(process.env.CODEX_IMAGEGEN_RETRY_ATTEMPTS || 2));
 const WAIT_POLL_MS = 800;
 const RETRY_RETRY_DELAY_MS = 600;
@@ -95,8 +97,8 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'An early-2000s anime adventure scene with one original character, layered environment, energetic pose, clean background details, and enough color variety for era-specific digital-cel styling.',
   pack_05__modern_shonen_and_action:
     'A modern action anime battle moment with one original fighter, motion arcs, impact energy, dramatic camera angle, debris, layered background, and readable costume details without referencing any franchise.',
-  pack_05__classic_and_modern_shojo:
-    'An emotional shojo portrait or two-character scene with expressive eyes, elegant pose, soft background motifs, fashion detail, delicate lighting, and romantic or introspective atmosphere.',
+  pack_05__shojo_magical_girl_and_visionary_classics:
+    'An emotional anime portrait or character duet with expressive eyes, elegant costuming, symbolic props, soft or celestial background motifs, and a romantic, magical, or visionary dramatic atmosphere.',
   pack_05__mecha_and_cyberpunk:
     'A vertical scene with an original pilot, android, or mecha detail in a neon industrial environment, visible machinery, reflective armor, cockpit or alley context, and hard-edged sci-fi design.',
   pack_05__dark_fantasy_and_seinen:
@@ -109,6 +111,8 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'A dynamic anime sports or performance scene with one original competitor or performer, strong body language, venue context, discipline-specific gear or stage cues, audience or ensemble depth, and clean motion readability.',
   pack_05__isekai_and_high_fantasy:
     'A vertical fantasy anime scene with one original traveler, magical city, forest, dungeon, or floating landscape, costume detail, glowing artifact, atmospheric depth, and adventure mood.',
+  pack_05__anime_style_spectrum:
+    'An auteur anime style-study scene with one original subject, expressive line discipline, distinctive silhouette logic, creative rendering texture, and a clear authorial identity rather than franchise imitation.',
 
   pack_06__traditional_painting:
     'A finished traditional painting scene with one original subject, studio-like composition, visible brushwork-ready surfaces, fabric, background depth, and lighting suited to classic painted media.',
@@ -120,6 +124,10 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'A polished digital illustration or concept scene with one original character, object, or environment focal point, clean composition, layered lighting, material detail, and space for digital rendering choices.',
   pack_06__mixed_media:
     'A layered mixed-media composition with one central subject, collage fragments, paint, paper, texture, transparent overlays, found-material cues, and controlled visual hierarchy without text.',
+  pack_06__retro_game_visual_systems:
+    'A game-native image built around one unmistakable retro visual constraint, such as palette limits, tile logic, CRT scan behavior, sprite layering, or old-computer display quirks, with clear read and era-authentic materials.',
+  pack_06__game_art_directions_and_ui:
+    'A polished game-art key image, interface sheet, or worldbuilding asset with one strong playable focal concept, production-grade readability, and enough structured detail to feel useful inside a modern game pipeline.',
 
   pack_07__interior_design:
     'A vertical interior room scene with furniture, decor, natural and practical light, textiles, wall materials, floor detail, human scale cues, and a clear design focal point.',
@@ -175,6 +183,23 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'A vertical food or drink hero shot with one plated dish or beverage, utensils, fabric, tabletop, controlled highlights, appetizing texture, and background depth.',
   pack_11__micro_macro:
     'A close-up or miniature-scale vertical scene with one tiny or magnified subject, strong scale cues, macro detail, shallow depth, texture, and readable environment context.',
+
+  pack_12__neon_urban_and_night_ops:
+    'An original game key art scene set in a dense night-city district with one hero encounter, neon spill, tactical motion lanes, wet surfaces, and a strong playable-world identity.',
+  pack_12__arcane_temples_and_mythic_realms:
+    'An original fantasy game scene with sacred architecture, ritual objects, mythic atmosphere, and one central confrontation or discovery beat inside a storied realm.',
+  pack_12__sci_fi_frontiers_and_mech_zones:
+    'An original sci-fi game scene with mechanical scale, frontier infrastructure, advanced systems, and one clear exploration, breach, or contact moment.',
+  pack_12__sieges_warfronts_and_last_stands:
+    'An original warfront or defense scenario with fortified space, opposing pressure, readable battle lines, and a decisive hold-the-line or breakthrough focal point.',
+  pack_12__speed_sport_and_competitive_arenas:
+    'An original competitive game scene with velocity, spectacle, rules-of-play cues, and one central matchup, race line, duel lane, or arena climax.',
+  pack_12__wilderness_hunts_and_harsh_frontiers:
+    'An original frontier game scene with dangerous terrain, survival pressure, creature or weather threat, and a strong expedition or hunt read.',
+  pack_12__heists_horror_and_underworld_runs:
+    'An original infiltration or horror-action scene with shadow logic, illicit routes, lurking danger, and one clear underworld, stealth, or panic-inducing objective beat.',
+  pack_12__puzzle_chambers_and_adventure_setpieces:
+    'An original adventure setpiece with puzzle logic, hub-like worldbuilding, or endgame staging, built around one strong progression beat rather than generic combat clutter.',
 };
 
 const CATEGORY_SCENE_ANCHORS: Record<string, string[]> = {
@@ -222,19 +247,153 @@ const GENERIC_SCENE_ANCHORS = [
   'Use a theatre-side rehearsal corner with curtains, floor marks, one spotlight spill, and stacked props at the edge of frame.',
 ];
 
-const GENERIC_PRESET_MOTIFS = [
-  'Include a brass compass-like object as a recurring prop.',
-  'Include a folded amber cloth accent near the focal area.',
-  'Include a cluster of suspended glass droplets catching light.',
-  'Include a slim red lacquer object on a nearby surface.',
-  'Include a carved stone fragment with chipped edges.',
-  'Include a teal ceramic vessel with a distinctive silhouette.',
-  'Include a strip of patterned tape or trim integrated into the set.',
-  'Include a single triangular light opening in the background.',
-  'Include a ring-shaped metallic element near the subject.',
-  'Include a weathered leather notebook-sized object without text.',
-  'Include a pale paper fan or folded sheet shape in the scene.',
-  'Include a dark cobalt accent object that contrasts with the rest of the palette.',
+const PACK_SCENE_ANCHORS: Record<string, string[]> = {
+  pack_06__retro_game_visual_systems: [
+    'Use an old-console vignette with CRT bloom, limited palette logic, chunky silhouettes, and one display constraint that dominates the read.',
+    'Stage the subject inside a retro game screen-space setup with tiled ground, pixel edge discipline, and unmistakable hardware-era texture.',
+    'Build the frame around a nostalgia-heavy computer or console display world with scanlines, sprite layering, and one iconic era-specific focal cue.',
+  ],
+  pack_06__game_art_directions_and_ui: [
+    'Use a studio-like key-art setup with one playable hero asset, secondary UI framing, icon clusters, and production-ready focal hierarchy.',
+    'Stage the image as a modern game presentation board with a strong hero subject, supporting interface motifs, and one unmistakable gameplay read.',
+    'Build the composition around a polished in-engine-meets-marketing moment with collectible props, world map cues, and readable UI-adjacent framing.',
+  ],
+  pack_12__neon_urban_and_night_ops: [
+    'Use a rain-slick district, transit deck, or rooftop lane with dense signage glow, tactical sightlines, and one unmistakable urban objective.',
+    'Stage the scene in a midnight city corridor with wet pavement, hard neon color separation, layered infrastructure, and a stealth-or-chase beat.',
+    'Build the frame around a dense downtown choke point with cables, reflections, alley depth, and one hero-versus-system encounter.',
+  ],
+  pack_12__arcane_temples_and_mythic_realms: [
+    'Use a shrine court, ritual hall, monastery bridge, or palace interior with sacred geometry, relic props, and one mythic confrontation axis.',
+    'Stage the scene inside an ancient ceremonial space with banners, carved stone, ritual light, and a single magical focal object.',
+    'Build the frame around legendary architecture, symbolic weather, and a discovery-or-duel beat that feels rooted in old world myth.',
+  ],
+  pack_12__sci_fi_frontiers_and_mech_zones: [
+    'Use a breach corridor, orbital platform, mech convoy lane, or research habitat with machine scale, warning light, and a central systems event.',
+    'Stage the image in a frontier-tech zone with armored surfaces, exposed conduits, and one exploration or combat beat around advanced hardware.',
+    'Build the scene around future industry, colony infrastructure, or mechanized mobility with readable function and a strong sci-fi silhouette.',
+  ],
+  pack_12__sieges_warfronts_and_last_stands: [
+    'Use a fortress edge, bridge hold, defense rail, or bastion breach with clear frontlines, layered pressure, and one pivotal holdout beat.',
+    'Stage the scene at the exact moment a wall, bridge, or convoy line is about to break, with readable opposing force geometry.',
+    'Build the frame around a fortified battlefield where position, attrition, and last-stand drama are visible at a glance.',
+  ],
+  pack_12__speed_sport_and_competitive_arenas: [
+    'Use a racetrack, duel hall, rhythm stage, or arena lane with obvious rule-space, velocity paths, and one competition-defining focal moment.',
+    'Stage the image around a polished match environment with audience depth, lane markers, and a clean rivalry read.',
+    'Build the frame as a high-spectacle contest image with momentum arcs, score-space energy, and one central clash or finish line.',
+  ],
+  pack_12__wilderness_hunts_and_harsh_frontiers: [
+    'Use a hostile biome, mine route, frozen outpost, or thunder plain with expedition gear, environmental threat, and one hunt or survival objective.',
+    'Stage the scene across frontier terrain where weather, beasts, or unstable geography are as dangerous as the enemy.',
+    'Build the frame around a rugged traversal or hunting beat with layered landscape scale and one immediate danger cue.',
+  ],
+  pack_12__heists_horror_and_underworld_runs: [
+    'Use a cursed transit line, black-market corridor, shadow court, or criminal route with hiding places, illicit props, and one panic-inducing objective.',
+    'Stage the scene in a low-trust environment where stealth, dread, or criminal intent dominate the read before open combat.',
+    'Build the frame around a tense underworld operation or horror breach with narrow exits, suspicious silhouettes, and a sharp danger gradient.',
+  ],
+  pack_12__puzzle_chambers_and_adventure_setpieces: [
+    'Use a puzzle chamber, quest hub, campaign finale room, or curiosity-heavy landmark with one central progression mechanic made spatially clear.',
+    'Stage the image as a handcrafted adventure setpiece with navigable props, layered clue logic, and a strong “what happens next” focal beat.',
+    'Build the frame around a memorable game-world landmark that feels designed for puzzle solving, narrative payoff, or chapter-ending spectacle.',
+  ],
+  pack_05__modern_shonen_and_action: [
+    'Use a shattered rooftop or alley crossing with one clean motion lane, broken concrete, wind, and a single hero strike axis.',
+    'Stage the subject against a schoolyard, street crossing, or stair landing with impact debris and a decisive action silhouette.',
+    'Build the frame around a fast chase or clash beat with a compressed background and a sharp foreground-to-distance read.',
+  ],
+  pack_05__2000s_classics: [
+    'Use a late-night platform, apartment corridor, or city overpass with reflective surfaces, practical lights, and a quiet narrative beat.',
+    'Stage the image in a familiar urban setting with a grounded protagonist, modest props, and slightly heightened anime drama.',
+    'Build the composition around transitional spaces like bus stops, balconies, or school gates with strong emotional timing.',
+  ],
+  pack_05__90s_golden_era: [
+    'Use a VHS-era city block, desert road, or neon lounge with analog atmosphere and a distinctly 90s anime silhouette.',
+    'Stage the subject in a cinematic urban-fantasy edge with old-school cel drama, layered shadows, and a bold central figure.',
+    'Build the frame around late-20th-century anime energy: analog texture, dramatic framing, and a strong heroic posture.',
+  ],
+  pack_05__shojo_magical_girl_and_visionary_classics: [
+    'Use a rose-lined hallway, classroom window, or fashion-forward interior with soft props and elegant negative space.',
+    'Stage the subject in a romantic or introspective setting with hair flow, costume detail, and a gentle emotional cue.',
+    'Build the scene around delicate interiors, flowers, mirrors, celestial props, ribbons, or stage lights with a clean emotional-classics read.',
+  ],
+  pack_05__slice_of_life_and_moe: [
+    'Use a club room, shared apartment, cafe booth, campsite, or street corner with small props and warm breathing room.',
+    'Stage the scene in a quiet everyday interior with one open window, a small desk, warm fabric, and gently layered background life.',
+    'Build the composition around a calm domestic or campus corner with mugs, notebooks, cushions, and a friendly afternoon read.',
+  ],
+  pack_05__sports_competition_and_performance: [
+    'Use a stadium lane, gym court, rehearsal stage, rink, pool, or concert space with a clear competition line or performance axis.',
+    'Stage the subject at the exact moment before a decisive move, note, jump, or final beat.',
+    'Anchor the scene with sport-specific or stage-specific equipment, audience depth, and unmistakable motion intent.',
+  ],
+  pack_05__mecha_and_cyberpunk: [
+    'Use a neon hangar, rain-dark alley, cockpit bay, or industrial catwalk with hard machine geometry and reflective armor.',
+    'Stage the subject beside a mech silhouette, glowing console, or city grid with aggressive sci-fi scale and sharp metal contrast.',
+    'Build the frame around cables, vents, panels, and a single luminous tech axis that reads instantly as mecha/cyberpunk.',
+  ],
+  pack_05__isekai_and_high_fantasy: [
+    'Use a fantasy roadside inn, magical town gate, dungeon threshold, or floating ruin with one clear quest lane and readable magical depth.',
+    'Stage the subject in a caravan stop, castle approach, or enchanted market where the world itself feels exploratory.',
+    'Build the scene around portals, spell-light, travel gear, and adventure road energy rather than generic medieval clutter.',
+  ],
+  pack_05__dark_fantasy_and_seinen: [
+    'Use a ruined courtyard, grim alley, or shadowed church-like interior with ominous stillness and grounded menace.',
+    'Stage the subject in a brutal but readable landscape with worn armor, cracked masonry, and an adult dramatic tone.',
+    'Build the frame around despair, moral weight, and textured darkness without collapsing into generic horror props.',
+  ],
+  pack_05__studio_masterpieces: [
+    'Use a richly painted coastline, hillside, or city edge with wind, sky, and quiet cinematic emotion.',
+    'Stage the subject in a lyrical travel scene with hand-painted depth, atmospheric distance, and a contemplative human presence.',
+    'Build the image around a beautiful environment first, then a small but emotionally clear protagonist read.',
+  ],
+  pack_05__70s_and_80s_retro_anime: [
+    'Use a vintage starship bridge, desert highway, or retro robot hangar with older cel-era design cues and warm analogue texture.',
+    'Stage the subject with classic broadcast-era proportions, painted background charm, and a strong heroic stance.',
+    'Build the frame around 70s/80s anime iconography: bold silhouettes, mechanical drama, and nostalgic broadcast lighting.',
+  ],
+  pack_05__anime_style_spectrum: [
+    'Use a stripped artist studio with pinned references, sketch sheets, and a single bold compositional tool or prop.',
+    'Stage the scene around an original-design lab corner with marked silhouettes, swatches, and a strong line-first visual read.',
+    'Build the composition around white paper, charcoal dust, film grain, or print texture cues that make the style identity feel authored.',
+  ],
+  pack_13__anime: [
+    'Use a rooftop at blue hour with wind, power lines, a distant city edge, and one original character silhouette on a clean ledge.',
+    'Stage the subject on a train platform or station walkway with hard perspective lines, signage-free depth, and a strong late-night travel mood.',
+    'Set the scene in a shrine path, alley, or hillside overlook with lantern glow, layered distance, and a clean hero lane through the frame.',
+  ],
+  pack_13__slice_of_life_school_music: [
+    'Use a rehearsal room, classroom, club room, or small live-house corner with instruments, notes, chairs, and a quiet emotional beat.',
+    'Set the scene in a sunlit school hallway or commuter stop with everyday props and a soft slice-of-life rhythm.',
+    'Stage the subject in a cozy indoor scene with posters, craft items, or music gear and a clean pastel read.',
+  ],
+  pack_13__action: [
+    'Use a battle-stopped moment in a stairwell, bridge span, or broken street with flying debris, sharp perspective, and a decisive motion cue.',
+    'Stage the subject against a cracked arena edge, industrial catwalk, or rooftop fight space with a single hard impact read and no clutter.',
+    'Build the frame around a chase or clash beat with directional motion, visible tension lines, and one unmistakable focal strike point.',
+  ],
+  pack_13__samurai_medieval: [
+    'Use a moonlit gate, dojo threshold, or castle corridor with wood grain, armor silhouettes, and a single ceremonial or combat-ready focal lane.',
+    'Stage the subject in a wind-cut courtyard with banner cloth, stone steps, and a strong sword-line or spear-line composition.',
+    'Set the scene on a temple approach or battlefield edge with mist, lantern glow, and a disciplined vertical read.',
+  ],
+  pack_13__horror: [
+    'Use a narrow corridor, abandoned room, or shrine ruin with crawling shadow, fractured wallpaper, and one unsettling negative-space opening.',
+    'Stage the subject in a rain-dark alley or hospital-like passage with flicker light, damp surfaces, and a single eerie focal spill.',
+    'Build the frame around a sealed doorway, torn curtain, or broken threshold with oppressive depth and a clear dread cue.',
+  ],
+};
+
+const PRESET_MOTIFS = [
+  'Include one original visual token tied to the preset name, never a compass, map symbol, notebook, generic plant, or other stock prop.',
+  'Include a distinct costume trim, mask mark, crest fragment, or tech detail that only fits this preset.',
+  'Include one sharp prop silhouette that is specific to this preset and not a generic desk object.',
+  'Include a preset-specific accent element with a non-repeating shape language.',
+  'Include one custom emblem, charm, patch, shard, or accessory that reinforces the preset identity.',
+  'Include one memorable object with a clear material story and no generic compass-like read.',
+  'Include a single focal detail that would survive thumbnail reduction and still feel preset-specific.',
+  'Include one unusual shape cue from the preset DNA instead of a stock decorative object.',
 ];
 
 const COMPOSITION_VARIANTS = [
@@ -402,6 +561,9 @@ function broadPromptFamily(pack: StyleRuntimePack, category: string) {
   if (key === 'pack_05__slice_of_life_and_moe') return 'anime_slice';
   if (key === 'pack_05__sports_competition_and_performance') return 'anime_sports';
   if (key === 'pack_05__isekai_and_high_fantasy') return 'anime_fantasy';
+  if (key === 'pack_05__anime_style_spectrum') return 'anime_masterpieces';
+  if (key === 'pack_13__slice_of_life_school_music') return 'anime_slice';
+  if (key === 'pack_12__speed_sport_and_competitive_arenas') return 'anime_sports';
   if (key === 'pack_04__ink_and_print') return 'illustration_print';
   if (key === 'pack_08__fabric_and_texture_focus') return 'fashion_texture';
   return 'default';
@@ -409,14 +571,14 @@ function broadPromptFamily(pack: StyleRuntimePack, category: string) {
 
 function categorySceneAnchor(pack: StyleRuntimePack, category: string, seed?: string) {
   const key = styleCategoryImageKey(pack.id, category);
-  const explicit = CATEGORY_SCENE_ANCHORS[key];
+  const explicit = PACK_SCENE_ANCHORS[key] || CATEGORY_SCENE_ANCHORS[key];
   const source = explicit && explicit.length > 0 ? explicit : GENERIC_SCENE_ANCHORS;
   return source[hashString(seed || `${key}:anchor`) % source.length];
 }
 
 function presetMotif(preset: StyleRuntimePreset) {
-  return GENERIC_PRESET_MOTIFS[
-    hashString(`${preset.id}:${preset.name}`) % GENERIC_PRESET_MOTIFS.length
+  return PRESET_MOTIFS[
+    hashString(`${preset.id}:${preset.name}`) % PRESET_MOTIFS.length
   ];
 }
 
@@ -447,7 +609,7 @@ function buildStylePrompt(pack: StyleRuntimePack, preset: StyleRuntimePreset, at
   );
   const avoidRepeatedLibrary = allowsBooks
     ? ''
-    : ' Avoid books, bookshelves, libraries, reading rooms, archives, and stacked volumes.';
+    : ' Avoid books, bookshelves, libraries, reading rooms, archives, stacked volumes, compass props, map symbols, notebook props, generic plants, and other stock desk clutter.';
   const variantSeed = `${pack.id}:${preset.id}:${preset.name}:${attempt}`;
   const family = broadPromptFamily(pack, category);
   const isGuroPreset = preset.id === 'SP05-107';
@@ -576,12 +738,52 @@ async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: strin
   }).catch(() => {});
 }
 
+function readJobStatusFromSqlite(jobId: string) {
+  try {
+    const db = new Database(studioDbPath, { readonly: true });
+    try {
+      return db
+        .query('SELECT id, status, error FROM jobs WHERE id = ? LIMIT 1')
+        .get(jobId) as Pick<Job, 'id' | 'status' | 'error'> | null;
+    } finally {
+      db.close(false);
+    }
+  } catch {
+    return null;
+  }
+}
+
+function readAssetForJobFromSqlite(jobId: string) {
+  try {
+    const db = new Database(studioDbPath, { readonly: true });
+    try {
+      return db
+        .query(
+          `SELECT id, project_id AS projectId, job_id AS jobId, file_path AS filePath,
+                  thumbnail_path AS thumbnailPath, public_url AS publicUrl, prompt,
+                  width, height, mime_type AS mimeType, created_at AS createdAt,
+                  deleted_at AS deletedAt
+             FROM assets
+            WHERE job_id = ? AND deleted_at IS NULL
+            ORDER BY created_at DESC
+            LIMIT 1`,
+        )
+        .get(jobId) as Asset | null;
+    } finally {
+      db.close(false);
+    }
+  } catch {
+    return null;
+  }
+}
+
 async function waitForJob(jobId: string) {
   while (true) {
-    const jobs = await request<Job[]>('/api/jobs');
-    const jobsById = new Map(jobs.map((candidate) => [candidate.id, candidate]));
-    const job = jobsById.get(jobId);
-    if (!job) throw new Error(`Job ${jobId} disappeared from /api/jobs`);
+    const job =
+      readJobStatusFromSqlite(jobId) ??
+      (() => {
+        throw new Error(`Job ${jobId} is not visible in local studio.sqlite`);
+      })();
     if (job.status === 'completed') return job;
     if (job.status === 'failed' || job.status === 'cancelled') {
       throw new Error(`Job ${jobId} ended as ${job.status}: ${job.error || 'no error'}`);
@@ -594,8 +796,7 @@ async function waitForJob(jobId: string) {
 }
 
 async function newestAssetForJob(jobId: string) {
-  const assets = await request<Asset[]>('/api/assets');
-  return assets.find((asset) => asset.jobId === jobId);
+  return readAssetForJobFromSqlite(jobId) ?? null;
 }
 
 function manifestPathForPack(packId: string) {
@@ -628,6 +829,10 @@ async function loadFailures(packId: string) {
   } catch {
     return [];
   }
+}
+
+async function saveFailures(packId: string, failures: unknown[]) {
+  await writeFile(failuresPathForPack(packId), `${JSON.stringify(failures, null, 2)}\n`, 'utf8');
 }
 
 function argValue(name: string) {
@@ -754,6 +959,7 @@ async function processPreset(target: PendingPreset) {
           generatedAt: new Date().toISOString(),
         }),
       );
+      await saveManifest(pack.id, Array.from(manifestByPreset.values()));
       generated += 1;
       lastError = null;
       return;
@@ -787,6 +993,7 @@ async function processPreset(target: PendingPreset) {
         failedAt: new Date().toISOString(),
       }),
     );
+    await saveFailures(pack.id, failures);
   }
 }
 
@@ -808,7 +1015,7 @@ for (const [packId, manifest] of manifestByPack) {
 }
 
 for (const [packId, failures] of failuresByPack) {
-  await writeFile(failuresPathForPack(packId), `${JSON.stringify(failures, null, 2)}\n`, 'utf8');
+  await saveFailures(packId, failures);
 }
 
 console.log(

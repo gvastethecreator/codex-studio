@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-029
 packId: pack_04
 name: Sticker Art
-category: 2. Children's Illustration
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - children-s-illustration
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Die-cut sticker
   form_and_line: Thick White outline
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simplified
   atmosphere: Fun, collectible, laptop-decal personality, pop-culture cheer
   key_features: White border, die-cut outline, separate silhouette
+  creative_brief: Thick white outlines quarantine each shape from its neighbors like diplomatic immunity for design. Glossy highlights slide across vinyl surfaces, the specular reflection promising the satisfaction of peeling and sticking. This is the art of the collectible, where every shape is a small declaration of identity waiting to attach itself to a laptop lid.
 avoidRules:
   - background
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: children-s-illustration
-  categoryName: 2. Children's Illustration
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - children-s-illustration
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

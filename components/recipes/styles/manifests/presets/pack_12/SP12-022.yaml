@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-022
+packId: pack_12
+name: Frozen Bazaar Survival Night
+category: 6. Wilderness Hunts & Harsh Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+visualDna:
+  aesthetic: Improvised arctic market in a hostile survival world.
+  subject_treatment: Armed traders and hunters with thermal lanterns.
+  color_and_tone: Glacial blues, warm amber, and smoke gray.
+  lighting_and_shadow: Localized lantern light against dense blizzard conditions.
+  texture_and_material: Scratched ice, heavy canvas, and wet wood.
+  camera_and_composition: Central alley with lively side stalls.
+  atmosphere_and_mood: Precarious refuge through an endless night.
+  rendering_and_quality: Readable, narrative survival hub.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - tropical
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-022.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

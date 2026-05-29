@@ -3,11 +3,15 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_01/portrait-styles-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_01/lighting-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_01/film-stocks-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_01/genres-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_01/camera-types-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_01/portrait-and-studio-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_01/lighting-techniques-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_01/film-and-analog-process-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_01/documentary-and-street-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_01/commercial-and-product-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_01/nature-and-wildlife-6').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

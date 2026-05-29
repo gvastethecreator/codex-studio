@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-085
 packId: pack_04
 name: Mood Color Script Pass
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Color-script concept art, lighting-first storytelling, atmospheric-color temperature study, film-color progression across time-of-day, Pixar color-script methodology, environment-emotion mapping, no characters just light, pure atmosphere painting
   form_and_line: Soft atmospheric shape blocking, edge-dissolving fog, value-first massing, light-beams as composition vectors
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Depth-through-atmosphere, color-temperature spatial separation, fog-layered recession, light-defined space creation
   atmosphere: Evocative, emotional, lighting-first, atmospheric storytelling, temporal-transition poetry
   key_features: Color-temperature mapping, time-of-day light progression, atmospheric-perspective depth, fog-layer separation, no character subjects
+  creative_brief: Light travels across the same scene in eight emotional temperatures, dawn hope mutating into midnight mystery through the slow graduation of color. Atmosphere carries the narrative arc before any character enters the frame. This is environment as emotion, where the lighting pass contains the entire emotional script in its gradient.
 avoidRules:
   - detailed linework
   - finished rendering
@@ -35,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

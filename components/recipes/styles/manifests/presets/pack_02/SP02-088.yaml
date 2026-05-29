@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-088
 packId: pack_02
 name: Crude Crayon Monster
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Monster drawn by a six-year-old, jagged teeth shaped like triangles, eyes as uneven circles stabbed with crayon, fur as chaotic orange scribbles, claws as five mismatched lines, pure childhood nightmare-art, kindergarten fridge gallery horror
   form_and_line: Heavy greasy crayon pressure, wax-clogged paper grain, multiple angry coloring attempts, drawing-off-the-page energy
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Head too big for body, legs two different sizes, arms sprouting from neck, tail from forehead
   atmosphere: Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong
   key_features: Triangle teeth, uneven circle eyes, scribble-crayon fur texture, construction-paper background, forgot-to-color sections
+  creative_brief: Wax applied with the full weight of a small furious hand, teeth rendered as jagged triangles because triangles are the scariest shape when you are six. No perspective, no anatomy, no hesitation—just the back-pressure of an imagination too big for its motor skills. The page trembles with the authenticity of pure, unfiltered id.
 avoidRules:
   - digital
   - smooth
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

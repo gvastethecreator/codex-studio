@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-075
 packId: pack_03
 name: Ice Sculpture
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Carved ice
   form_and_line: Chiseled edges
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Event, art, gala-tier sculpture
   atmosphere: Cold, temporary, ephemeral beauty
   key_features: Transparency, melt-edge detail
+  creative_brief: 'Chiseled edges catch light and throw it through the frozen interior — refractive dispersion bends the spectrum inside crystal-clear geometry, and a blue tint whispers the temperature of the material even in a still image. Melt-edge details soften the harshest cuts, and frosty translucence gives the sculpture the temporality of something already beginning to disappear. The image is gala-tier ephemeral beauty: an ice sculpture at the peak of its existence, cold and perfect and already melting.'
 avoidRules:
   - warm
   - melted
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

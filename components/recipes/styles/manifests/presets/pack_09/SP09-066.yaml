@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-066
 packId: pack_09
 name: Sand (Beach)
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Wet compacted sand
   form_and_line: Ripples
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Footprints
   atmosphere: Relaxing, warm
   key_features: Grains
+  creative_brief: Render the granular serenity of wet beach sand where ripples map the retreating tide in gentle waves of beige, each grain a tiny crystal of eroded mountain now compacted by water into a surface that catches sunlight and footprints with equal fidelity. The texture should feel cool and dense, a meditative surface where land and ocean negotiate their border in miniature.
 avoidRules:
   - desert dunes
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

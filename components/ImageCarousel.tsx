@@ -307,11 +307,7 @@ function CarouselBottomBar({
               label="To Context"
             />
             <div className="relative">
-              <ActionButton
-                onClick={onDownload}
-                icon={<Download size={16} />}
-                label="Save Local"
-              />
+              <ActionButton onClick={onDownload} icon={<Download size={16} />} label="Save Local" />
             </div>
           </div>
 
@@ -438,7 +434,8 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
       if (e.key === 'ArrowRight') handleNextRef.current();
       if (e.key === 'ArrowLeft') handlePrevRef.current();
       if (e.key === 'Escape' && !isFullscreenRef.current) onCloseRef.current();
-      if (e.code === 'Space' && !e.repeat) setCarouselState((prev) => ({ ...prev, isComparing: true }));
+      if (e.code === 'Space' && !e.repeat)
+        setCarouselState((prev) => ({ ...prev, isComparing: true }));
     };
     const handleKeyUp = (e: KeyboardEvent) => {
       if (e.code === 'Space') setCarouselState((prev) => ({ ...prev, isComparing: false }));
@@ -483,7 +480,10 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
     void navigator.clipboard.writeText(currentImage.config.prompt || '');
     setCarouselState((prev) => ({ ...prev, copiedPrompt: true }));
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setCarouselState((prev) => ({ ...prev, copiedPrompt: false })), 2000);
+    timeoutRef.current = window.setTimeout(
+      () => setCarouselState((prev) => ({ ...prev, copiedPrompt: false })),
+      2000,
+    );
   };
 
   const hasReference =
@@ -513,10 +513,11 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 key={img.id}
                 onClick={() => handleJumpTo(idx)}
                 className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
-                            ${idx === activeIndex
-                    ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
-                    : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
-                  }
+                            ${
+                              idx === activeIndex
+                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
+                                : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
+                            }
                         `}
               >
                 <img
@@ -593,7 +594,9 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
               initial="enter"
               animate="center"
               exit="exit"
-              onAnimationComplete={() => setCarouselState((prev) => ({ ...prev, isSliding: false }))}
+              onAnimationComplete={() =>
+                setCarouselState((prev) => ({ ...prev, isSliding: false }))
+              }
               className="absolute inset-0 size-full flex items-center justify-center will-change-transform pointer-events-auto"
             >
               <CarouselImageItem

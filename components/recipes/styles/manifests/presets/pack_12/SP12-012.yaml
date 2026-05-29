@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-012
+packId: pack_12
+name: Pixel Tavern Quest Hub
+category: 8. Puzzle Chambers & Adventure Setpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - puzzle-chambers-and-adventure-setpieces
+visualDna:
+  aesthetic: Cozy pixel-art for social adventure hub.
+  subject_treatment: Charismatic NPCs with clear and animatable silhouettes.
+  color_and_tone: Warm palette of wood, copper and candles.
+  lighting_and_shadow: Soft interior lighting with gentle contrast.
+  texture_and_material: Clean pixel clusters and controlled noise.
+  camera_and_composition: Side view of room with points of interest.
+  atmosphere_and_mood: Cozy, friendly and full of secrets.
+  rendering_and_quality: Tileable background with excellent readability.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - anti-aliased-blur
+  - noisy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-012.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: puzzle-chambers-and-adventure-setpieces
+  categoryName: 8. Puzzle Chambers & Adventure Setpieces
+  tags:
+    - video-game-originals-vault
+    - puzzle-chambers-and-adventure-setpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

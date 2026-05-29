@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-007
 packId: pack_09
 name: Slate (Split)
-category: 1. Natural Materials
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - metals-and-minerals
 visualDna:
   aesthetic: Roof tile stone
   form_and_line: Jagged edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flat layers
   atmosphere: Cold, strong
   key_features: Layers
+  creative_brief: Capture the clean violence of split slate, where nature fractures into planar perfection along dark grey-blue planes with edges that carry the memory of the break. The face reveals the patient accumulation of sediment, layer upon layer of dark mineral patience. This is geology as geometry, raw and precise.
 avoidRules:
   - smooth
   - polished
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - natural-materials
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

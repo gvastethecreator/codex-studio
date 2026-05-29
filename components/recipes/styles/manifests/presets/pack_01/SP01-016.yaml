@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-016
 packId: pack_01
 name: Polaroid 600
-category: 3. Film Stocks
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - film-and-analog-process
 visualDna:
   aesthetic: Instant film photo
   form_and_line: Soft focus
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Vignette
   atmosphere: Memory, retro
   key_features: Square crop
+  creative_brief: A recollection still damp from the chemistry, edges darkening toward a frame within a frame. Colors retreat into themselves, leaving behind the ghost of a moment too fleeting to name. The flash caught what the eye forgot, and now it waits in a shoebox, stubbornly present.
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - film-stocks
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

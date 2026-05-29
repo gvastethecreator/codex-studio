@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-084
 packId: pack_06
 name: FMV Pre-Rendered Sprites
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: CG-rendered-to-sprite look, Donkey Kong Country aesthetic, 1994 Silicon Graphics pre-render magic, 3D models baked into 2D sprites, dithering-to-fit-palette artifacts, Killer Instinct arcade sprites, 256-color quantization charm
   form_and_line: CGI model contours baked to pixel, aliased pre-render edges, dithering-approximated soft shading, frame-by-frame rendered animation loops
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: 3D model baked to flat sprite sheet, isometric pre-rendered perspectives, frame-interpolation ghost frames
   atmosphere: 90s CGI wonder, technological marvel of its time, pre-rendered beauty, cartridge-compressed ambition
   key_features: CGI dithering artifacts, 256-color banding, baked 3D-to-2D sprites, pre-rendered animation loops, palette quantization
+  creative_brief: Silicon Graphics workstations rendered 3D models into 2D sprites through the alchemy of pre-computation, every frame a tiny ray-traced miracle compressed into a palette of 256 colors. Dithering stands in for gradients, banding for smoothness, the cartridge carrying the ghosts of a render farm. The image is CGI that remembers its compression, beauty that fits on a chip.
 avoidRules:
   - real-time
   - hand-drawn
@@ -38,13 +39,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

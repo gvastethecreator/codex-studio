@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-079
 packId: pack_07
 name: Monolith
-category: 5. Fantasy Architecture
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - fantasy-architecture
+  - residential-interiors
 visualDna:
   aesthetic: 2001 slab, alien artifact, absolute-geometry presence, evolution-catalyst object, cosmic-marker
   form_and_line: Sharp rectangle, perfect-edges, zero-feature surface, 1:4:9 proportion, impossible-vertical, crisp-corners
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Ominous, mystery, cosmic-wonder, evolutionary-pause, unknowable-intelligence, silent-revelation, transcendent-fear
   key_features: 1:4:9 ratio, perfectly black, sharp edges, featureless surface, rectangular slab, alien presence, vertical dominance
+  creative_brief: Absolute rectangle interrupts landscape with the violence of perfect geometry, a shape that does not belong to any geology humans have named. The surface drinks light without returning it, matte black absorbing every question the universe thought to ask. The slab simply is, an assertion of presence that predates language, waiting for the apes below it to touch it and learn to kill.
 avoidRules:
   - detail
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: fantasy-architecture
-  categoryName: 5. Fantasy Architecture
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - fantasy-architecture
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

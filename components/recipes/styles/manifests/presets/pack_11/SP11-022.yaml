@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-022
 packId: pack_11
 name: Aardman Clay Stop-Motion
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Wallace & Gromit cozy clay stop-motion comedy, cheese-and-crackers warmth
   form_and_line: Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands
   atmosphere: Funny, charming, tea-time warmth, vegetable-garden mischief, inventive optimism
   key_features: Plasticine, visible thumbprints, painted-backdrop sets, wire-armature shadows
+  creative_brief: Thumbprints remain visible in the plasticine, the human touch preserved frame by patient frame in the stop-motion ritual. Wide mouths and gummy grins animate through the alchemy of twenty-four adjustments per second, each sculpted expression a small miracle of clay and coffee. Tea-time absurdity captured in the space between photographed moments, Wensleydale cheese and inventive optimism in equal measure.
 avoidRules:
   - smooth cgi
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

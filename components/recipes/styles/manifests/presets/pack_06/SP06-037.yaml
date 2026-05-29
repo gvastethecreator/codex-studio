@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-037
 packId: pack_06
 name: Aquatint
-category: 5. Printmaking
+category: 3. Printmaking
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Dark, moody
   key_features: Granular tone
+  creative_brief: Rosin dust fused to metal creates a granular field that holds ink in countless tiny reservoirs, building tone from texture. Darkness accumulates through acid exposure, stop-out varnish protecting what must remain light. The image breathes atmosphere, Goya's sleep of reason producing monsters in halftone.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: printmaking
-  categoryName: 5. Printmaking
+  categoryName: 3. Printmaking
   tags:
     - essential-art-styles
     - printmaking
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

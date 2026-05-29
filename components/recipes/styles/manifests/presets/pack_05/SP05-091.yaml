@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: Floating interface magic, sword-forward exploration, game-like fantasy vistas, digital heroism, Aincrad floating castle, health-bar UI motifs, dual-wielding Kirito, floor-boss raids
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
   atmosphere: Adventurous, virtual, epic, romantic
   key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
+  creative_brief: A floating castle made of code and longing, where sword skill menus hover like constellations and every floor is a new sky to conquer. Digital heroism wears the face of a boy who just wanted to log out but found a reason to stay. Make the virtual feel visceral — interface elements as natural as breath, combat as intimate as conversation.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: isekai-and-high-fantasy
   categoryName: 8. Isekai & High Fantasy
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - isekai-and-high-fantasy
   supportedTasks:
     - image_generate

@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-074
+packId: pack_12
+name: Prism Alley Card Duel
+category: 8. Puzzle Chambers & Adventure Setpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - puzzle-chambers-and-adventure-setpieces
+visualDna:
+  aesthetic: Clandestine card duel in a prismatic alley.
+  subject_treatment: Urban duelists with holographic avatars.
+  color_and_tone: Deep purple, cyan, and neon yellow.
+  lighting_and_shadow: Focused lighting from fractured signs.
+  texture_and_material: Wet asphalt, glass, and light metal.
+  camera_and_composition: Central table with crowd in a semicircle.
+  atmosphere_and_mood: Mental tension, high stakes, and style.
+  rendering_and_quality: Urban tactical PvP scene.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - medieval-castle
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-074.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: puzzle-chambers-and-adventure-setpieces
+  categoryName: 8. Puzzle Chambers & Adventure Setpieces
+  tags:
+    - video-game-originals-vault
+    - puzzle-chambers-and-adventure-setpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

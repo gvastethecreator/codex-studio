@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-060
 packId: pack_04
 name: Weapon Design
-category: 4. Concept Art
+category: 2. Editorial Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - editorial-illustration
 visualDna:
   aesthetic: Gun or sword
   form_and_line: Mechanical
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Dangerous, heavy, trigger discipline, combat-readiness
   key_features: Side view, mechanical detail, magazine/guard
+  creative_brief: Steel catches light along edges sharpened by the imagination of combat, every bevel and fuller a decision about mortality. The weapon sits in isolation, its purpose radiating through stillness like a held breath. This is the tool as character, where design tells the story of every battle it has not yet fought.
 avoidRules:
   - soft
   - toy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: editorial-illustration
+  categoryName: 2. Editorial Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - editorial-illustration
   supportedTasks:
     - image_generate
     - image_edit

@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Multiple viewpoints
   atmosphere: Intellectual, fragmented
   key_features: Geometric breakdown
+  creative_brief: Reality fractures into simultaneous viewpoints, each shard carrying its own truth. The eye must reassemble what the mind knows to be whole, finding order in deliberate disintegration.
 avoidRules:
   - realistic perspective
   - smooth
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

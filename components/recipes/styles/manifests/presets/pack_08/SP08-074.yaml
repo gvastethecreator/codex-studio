@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-074
 packId: pack_08
 name: Bandage/Mummy
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Horror, hidden, sarcophagus-confinement dread, ancient-awakening tension, wrapped-identity mystery
   key_features: Wraps, layered bandages, trailing ends, gap-showing skin, wrapped-face silhouette
+  creative_brief: Linen strips wrapped in spirals that follow the logic of embalming texts older than any living language, frayed edges trailing dust from a sarcophagus that held its occupant for three millennia. The cross-wrapped bandages reveal only fragments of the form beneath, gaps that suggest more than they expose, the whole figure a walking riddle wrapped in the fabric of its own funeral.
 avoidRules:
   - skin
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

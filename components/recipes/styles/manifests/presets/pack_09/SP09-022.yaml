@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-022
 packId: pack_09
 name: Concrete (Raw)
-category: 2. Man-Made Materials
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Construction wall
   form_and_line: Formwork holes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Cracks
   atmosphere: Cold, urban
   key_features: Air bubbles
+  creative_brief: Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a fossil record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky, heavy with the gravity of the built world. This is the face of function refusing to apologize, the unadorned truth of the urban.
 avoidRules:
   - polished
   - painted
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

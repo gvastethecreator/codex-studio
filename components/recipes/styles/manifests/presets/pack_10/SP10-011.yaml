@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Liquid
   atmosphere: Dreamy, fluid
   key_features: Gold veins
+  creative_brief: Pigment surrenders to solvent, blooming outward in uncontrolled ecstasy. Boundaries dissolve into soft continents of color, a map of the moment before definition arrives.
 avoidRules:
   - solid
   - dry
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

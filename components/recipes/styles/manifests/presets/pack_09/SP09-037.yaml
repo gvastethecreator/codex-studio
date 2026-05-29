@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-037
 packId: pack_09
 name: Scratched Metal
-category: 4. Weathering & Decay
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - weathering-and-decay
+  - metals-and-minerals
 visualDna:
   aesthetic: Used machinery
   form_and_line: Random scratches
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Industrial, hard
   key_features: Random direction
+  creative_brief: Capture the patina of use written in random scratches across steel, where each mark is a moment of contact frozen in silver on grey, light catching in the abrasive grooves like tiny rivers of reflection. The random direction of the scratches should tell the story of careless handling and honest work. Render the accumulating biography of a worked surface, wear as a form of record-keeping.
 avoidRules:
   - mirror finish
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: weathering-and-decay
-  categoryName: 4. Weathering & Decay
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - weathering-and-decay
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

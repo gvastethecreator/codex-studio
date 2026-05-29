@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-029
 packId: pack_01
 name: Microscope (SEM)
-category: 5. Camera Types
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - camera-types
+  - film-and-analog-process
 visualDna:
   aesthetic: Electron microscope scan
   form_and_line: Incredible texture detail
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme magnification
   atmosphere: Scientific, scary
   key_features: B&W depth
+  creative_brief: Landscapes hiding at the threshold of the invisible, where a grain of pollen becomes a planetary surface. Monochromatic terrain revealed by electrons rather than photons, texture unfolding into fractal cathedrals. The terrifying intimacy of seeing what the naked eye was never meant to witness.
 avoidRules:
   - color
   - macro
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: camera-types
-  categoryName: 5. Camera Types
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - camera-types
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

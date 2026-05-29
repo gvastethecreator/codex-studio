@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: Mundane practical skills becoming precious in fantasy, rope and lockpick utility, modest party bonds, dungeon logistics with empathy and comic warmth
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
   atmosphere: Practical, warm, modest, dependable
   key_features: Toolbox motifs, support-role staging, dungeon logistics, practical problem-solving poses, everyday-competence charm
+  creative_brief: A toolbox opens in a dungeon corridor and suddenly lockpicks are holier than relics, rope more precious than prophecy. The modest handyman walks behind the heroes, solving what swords cannot, his quiet competence the real magic in a world that fetishizes flash.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: isekai-and-high-fantasy
   categoryName: 8. Isekai & High Fantasy
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - isekai-and-high-fantasy
   supportedTasks:
     - image_generate

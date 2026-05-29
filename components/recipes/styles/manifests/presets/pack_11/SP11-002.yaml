@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-002
 packId: pack_11
 name: Funko Pop Vinyl Collectible Figure
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Vinyl collectible figure, bobblehead charm, pop-culture icon, display-shelf darling
   form_and_line: Smooth, rounded, simplified contours, cute abstraction, soft silhouette
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Giant square head, simple black button eyes, zero-mouth expression, exaggerated cranium
   atmosphere: Cute, static, display, shelf presence, fandom love, curated collection
   key_features: Box packaging (optional), die-cut window, branded display stand
+  creative_brief: Giant square heads hold entire universes behind black button eyes, the vinyl figure distilled to its purest geometric essence. The bobblehead stands silent on its display shelf, a pop-culture icon rendered cute through radical simplification. Fandom worship crystallized in rotocast plastic, waiting in window-box devotion.
 avoidRules:
   - realistic proportions
   - small head
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-069
 packId: pack_08
 name: Water Dress
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flowing
   atmosphere: Pure, fantasy, ocean-spirit serenity, water-nymph magic, dissolving-identity mystique
   key_features: Droplets, splash arrest, surface tension, liquid-sheet transparency, flow lines
+  creative_brief: Surface tension holding a cascade in the shape of a gown, sheet-flow wrapping around a torso with the impossible stillness of water that has forgotten how to fall. Caustic light dapples through the liquid sleeve, droplets arrested mid-splash like a crown of diamonds orbiting the silhouette, the whole dress a moment stolen from a waterfall and taught to hold its breath.
 avoidRules:
   - dry
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

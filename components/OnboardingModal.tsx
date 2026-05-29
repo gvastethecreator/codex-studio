@@ -106,9 +106,7 @@ function OnboardingStatusPanel({
   return (
     <div className="space-y-4">
       <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
-        <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
-          Resumen
-        </p>
+        <p className="text-[11px] font-black uppercase tracking-widest text-zinc-500">Resumen</p>
         <p className="mt-2 text-[11px] font-black uppercase tracking-widest text-accent-300">
           {readiness.title}
         </p>

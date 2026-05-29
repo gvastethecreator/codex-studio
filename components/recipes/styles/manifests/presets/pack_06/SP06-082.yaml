@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-082
 packId: pack_06
 name: SNES Mode 7 Vista
-category: 6. Video Game & Pixel Art Styles
+category: 6. Retro Game Visual Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - essential-art-styles
-  - video-game-and-pixel-art-styles
+  - retro-game-visual-systems
 visualDna:
   aesthetic: Classic 16-bit Mode 7 effect, pseudo-3D rotating floor plane stretching to horizon, sprite-scaled objects approaching from distance, Final Fantasy VI airship vista, Super Mario Kart track stretching, F-Zero speed-distorted ground, 1991 hardware magic
   form_and_line: Scanline-stepped pseudo-perspective, sprite-scaling contour, tile-based ground plane with rotation transform, chunky affine mapping
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Perspective-transformed flat plane, sprite-scale depth illusion, horizon-line division, no vertical camera
   atmosphere: Nostalgic, technically miraculous, 16-bit wonder, childhood epic-adventure immersion
   key_features: Perspective-transformed floor plane, scaled sprite layering, scanline artifact lines, gradient-banded sky, 256-color charm
+  creative_brief: The ground plane rotates and stretches into pseudo-3D perspective, a flat world performing depth through affine transformations that were miracles in 1991. Sprites scale toward the camera without changing resolution, growing blockier as they approach, the hardware straining against its own ambition. The image is a magic trick the SNES taught the world, a flat surface dreaming of dimensions it could not reach.
 avoidRules:
   - realistic perspective
   - 3d rendering
@@ -35,13 +36,14 @@ attributes:
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
-  categoryId: video-game-and-pixel-art-styles
-  categoryName: 6. Video Game & Pixel Art Styles
+  categoryId: retro-game-visual-systems
+  categoryName: 6. Retro Game Visual Systems
   tags:
     - essential-art-styles
-    - video-game-and-pixel-art-styles
+    - retro-game-visual-systems
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

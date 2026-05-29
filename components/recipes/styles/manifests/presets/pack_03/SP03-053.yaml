@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-053
 packId: pack_03
 name: Jewelry Render
-category: 4. Applications
+category: 3. Environment And Worldbuilding
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - environment-and-worldbuilding
 visualDna:
   aesthetic: Diamond ring macro
   form_and_line: Facets
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Luxury, expensive, high-jewelry showcase
   atmosphere: Elegant, rich, bridal-prestige
   key_features: Sparkle, facet-fire dispersion
+  creative_brief: 'Facets catch light and throw it back in prismatic fire — dispersion rainbows dance across the brilliant-cut geometry, and caustic patterns bloom on nearby surfaces like luminous signatures of the stone''s internal architecture. Gold and platinum settings hold carat-level clarity against macro depths of field, every inclusion and polish line rendered with jewelry-bench precision. The image radiates bridal-prestige luxury: an object so perfect it feels like a promise.'
 avoidRules:
   - dull
   - plastic
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: environment-and-worldbuilding
+  categoryName: 3. Environment And Worldbuilding
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - environment-and-worldbuilding
   supportedTasks:
     - image_generate
     - image_edit

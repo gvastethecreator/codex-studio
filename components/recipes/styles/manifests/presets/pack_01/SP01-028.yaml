@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-028
 packId: pack_01
 name: Thermal Camera
-category: 5. Camera Types
+category: 6. Nature And Wildlife
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - camera-types
+  - nature-and-wildlife
 visualDna:
   aesthetic: Heat map imaging
   form_and_line: Blobby heat signatures
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: No surface detail
   atmosphere: Predator, tech
   key_features: Heat gradient
+  creative_brief: The world translated into the language of temperature, bodies reduced to radiant ghosts painted in ironbow gradients. Heat signatures bloom like biological auroras across a violet-to-gold spectrum. A predator's way of seeing, where surface gives way to the secret thermograph of living things.
 avoidRules:
   - realistic colors
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: camera-types
-  categoryName: 5. Camera Types
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
   tags:
     - photography-and-realism
-    - camera-types
+    - nature-and-wildlife
   supportedTasks:
     - image_generate
     - image_edit

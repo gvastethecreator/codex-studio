@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-005
+packId: pack_15
+name: Sun Reservoir Commons
+category: 1. Solarpunk Dreamscapes
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+visualDna:
+  aesthetic: Community water plaza with elegant solar accumulation.
+  form_and_line: Soft circles, open planes, and people actively using the space.
+  color_palette: Arena solar, azul agua y verde suave.
+  lighting_setup: Bright sunlight with broad reflections on calm water.
+  material_texture: Light stone, thin panels, and water sheets.
+  render_quality: Clear and aspirational public scene.
+  spatial_distortion: Plaza perspective with a dominant water core.
+  atmosphere: Civic wellbeing, rest, and collective trust.
+  key_features: Reservorio reflectante, sombras habitables, actividad cotidiana.
+  creative_brief: A public space that makes energy abundance visible without feeling like cold propaganda.
+avoidRules: [photoreal, militarized, dirty-chaos, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-005.webp }
+attributes:
+  negativePrompt: photoreal, militarized, dirty-chaos, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

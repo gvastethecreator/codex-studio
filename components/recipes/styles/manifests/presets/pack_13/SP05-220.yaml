@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-220
+packId: pack_13
+name: Sketchbook Full Colors - Stray Cat Afternoon
+category: 5. Slice of Life & Moe
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - slice-of-life-and-moe
+visualDna:
+  aesthetic: Quiet art-club slice of life, drifting cat encounters, little town details, watercolor-soft afternoons, nearly plotless observation turned deeply comforting
+  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
+  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
+  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
+  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
+  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
+  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  atmosphere: Drifting, soft, observant, comforting
+  key_features: Sketchbook props, stray-cat motifs, little-town backdrops, warm afternoon light, observational stillness
+  creative_brief: A stray cat leads the art club through an afternoon of barely-there narrative, each encounter a watercolor vignette of small-town stillness. Observation becomes the highest form of participation — watching, sketching, letting the world unfold at the speed of a cat stretching in sun. Plot dissolves into presence.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-220.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-and-moe
+  categoryName: 5. Slice of Life & Moe
+  tags:
+    - anime-character-and-lifestyle
+    - slice-of-life-and-moe
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

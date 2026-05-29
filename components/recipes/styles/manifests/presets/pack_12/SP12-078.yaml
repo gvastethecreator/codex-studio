@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-078
+packId: pack_12
+name: Midnight Lotus Ninja Heist
+category: 1. Neon Urban & Night Ops
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+visualDna:
+  aesthetic: Silent heist in nocturnal lotus gardens.
+  subject_treatment: Ninjas specialized in vertical mobility.
+  color_and_tone: Midnight blue, lotus pink, and ink black.
+  lighting_and_shadow: Dim moonlight and paper lamps.
+  texture_and_material: Calm water, polished stone, and silk.
+  camera_and_composition: Curved bridges and chained rooftops.
+  atmosphere_and_mood: Poetic stealth and surgical precision.
+  rendering_and_quality: Refined, highly readable stealth scene.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - heavy-guns
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-078.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

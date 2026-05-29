@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-046
 packId: pack_11
 name: Michelin Fine-Dining Editorial
-category: 1. Food & Drink
+category: 2. Food And Commercial Fun
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-drink
+  - food-and-commercial-fun
 visualDna:
   aesthetic: Fine dining plate, tasting-menu artistry, white-tablecloth theater, culinary-stage
   form_and_line: Precise plating, tweezer-placement contour, sauce-swirl geometry, micro-green garnish, geometric-stacking
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Tiny portions, negative-space plating, height-stacked architecture, swoosh-negative, edge-placement composition
   atmosphere: Elegant, tasty, hushed-dining-room, wine-glass-clink, white-glove-service, anticipation
   key_features: Garnish, sauce-swirl swoosh, tweezered-microgreen, edible-flower accent, tuile-crisp, reduction-drizzle, sea-salt-flake
+  creative_brief: A tweezered microgreen lands on the sauce swoosh with the precision of a watchmaker placing a jewel in a movement of edible art. Negative space on the plate becomes as important as the food itself, absence defining presence in the geometric theater of fine dining. The meal is a three-hour narrative told through reduction-drizzle and sea-salt-flake, every course a paragraph in a story written by hands that spent decades learning to listen to ingredients.
 avoidRules:
   - messy
   - cafeteria
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-drink
-  categoryName: 1. Food & Drink
+  categoryId: food-and-commercial-fun
+  categoryName: 2. Food And Commercial Fun
   tags:
     - miscellaneous-and-fun
-    - food-and-drink
+    - food-and-commercial-fun
   supportedTasks:
     - image_generate
     - image_edit

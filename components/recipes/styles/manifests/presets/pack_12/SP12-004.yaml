@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-004
+packId: pack_12
+name: Clockwork Sky Armada
+category: 8. Puzzle Chambers & Adventure Setpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - puzzle-chambers-and-adventure-setpieces
+visualDna:
+  aesthetic: Aerial steampunk with armed airships and floating towers.
+  subject_treatment: Corsair captains in bronze and leather suits.
+  color_and_tone: Coppers, storm blues, and aged cream.
+  lighting_and_shadow: Afternoon light passing through steam and boiler smoke.
+  texture_and_material: Rivets, oiled gears, and varnished wood.
+  camera_and_composition: Triangular composition with a dominant flagship.
+  atmosphere_and_mood: Epic adventure, risk, and imperial ambition.
+  rendering_and_quality: Premium splash art with world narrative.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - modern-ui
+  - plastic-look
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-004.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: puzzle-chambers-and-adventure-setpieces
+  categoryName: 8. Puzzle Chambers & Adventure Setpieces
+  tags:
+    - video-game-originals-vault
+    - puzzle-chambers-and-adventure-setpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

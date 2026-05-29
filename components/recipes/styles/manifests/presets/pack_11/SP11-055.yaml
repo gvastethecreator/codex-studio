@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-055
 packId: pack_11
 name: Pizza Melt
-category: 1. Food & Drink
+category: 2. Food And Commercial Fun
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-drink
+  - food-and-commercial-fun
 visualDna:
   aesthetic: Cheese pull, pizzeria-magic, molten-mozzarella, slice-photography, delivery-crave
   form_and_line: Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool
   atmosphere: Craving, greasy, delivery-doorbell, napkin-stack anticipation, box-steam reveal
   key_features: Pepperoni, cheese-stretch strand, crust-blister, grease-pool, oregano-fleck, pepperoni-cup, box-corner-grease-stain, garlic-knot companion
+  creative_brief: The mozzarella string stretches from slice to mouth in an elastic bridge of dairy physics, catching pizzeria light along its glistening arc of perfect melt. Pepperoni cups hold tiny pools of orange oil while the undercarriage reveals leopard-spotted char from a properly fired deck oven and a thousand degrees of stone-deck heat. This is not a photograph of food but a portrait of craving itself, grease and glory rendered on a paper plate under delivery-box steam.
 avoidRules:
   - cold
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-drink
-  categoryName: 1. Food & Drink
+  categoryId: food-and-commercial-fun
+  categoryName: 2. Food And Commercial Fun
   tags:
     - miscellaneous-and-fun
-    - food-and-drink
+    - food-and-commercial-fun
   supportedTasks:
     - image_generate
     - image_edit

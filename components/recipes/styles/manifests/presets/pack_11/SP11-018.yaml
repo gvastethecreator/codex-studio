@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-018
 packId: pack_11
 name: Balloon Art
-category: 2. Toys & Crafts
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - oddities-and-novelty
 visualDna:
   aesthetic: Twisted balloon animal, birthday-party clown, squeaky menagerie, latex zoo
   form_and_line: Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form
   atmosphere: Fun, squeaky, celebration, birthday-cake excitement, carnival-joy, shared laughter
   key_features: Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings
+  creative_brief: Latex twists into zoological impossibility under carnival lights, each squeaky joint a small miracle of air pressure and pinch-twist technique. The balloon animal exists on borrowed time, its glossy surface reflecting birthday-candle flicker and party-room glare. Fragile joy shaped by breath and tension and the knowledge that every latex zoo eventually softens and sighs.
 avoidRules:
   - sharp
   - flat
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

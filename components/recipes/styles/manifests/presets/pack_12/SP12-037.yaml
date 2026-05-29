@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-037
+packId: pack_12
+name: Mushroom Kingdom Frontier
+category: 8. Puzzle Chambers & Adventure Setpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - puzzle-chambers-and-adventure-setpieces
+visualDna:
+  aesthetic: Colorful fantasy in a giant-mushroom biome.
+  subject_treatment: Agile explorers and friendly borderline creatures.
+  color_and_tone: Organic magenta, mint green, and warm cream.
+  lighting_and_shadow: Soft light filtered through giant mushroom caps.
+  texture_and_material: Spongy surfaces, moss, and living wood.
+  camera_and_composition: Curved path with playful verticality.
+  atmosphere_and_mood: Wonder, adventure, and light humor.
+  rendering_and_quality: Platformer world with strong identity.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - grimdark
+  - photoreal-grain
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-037.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: puzzle-chambers-and-adventure-setpieces
+  categoryName: 8. Puzzle Chambers & Adventure Setpieces
+  tags:
+    - video-game-originals-vault
+    - puzzle-chambers-and-adventure-setpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

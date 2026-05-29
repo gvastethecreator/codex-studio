@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-043
 packId: pack_04
 name: Pulp Magazine Cover
-category: 3. Editorial & Poster
+category: 2. Editorial Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - editorial-illustration
 visualDna:
   aesthetic: Cheap detective novel
   form_and_line: Painted
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Action pose
   atmosphere: Dangerous, cheap, newsstand suspense, lurid desperation
   key_features: Title space, cover blurb, dramatic composition
+  creative_brief: Lurid colors scream from the newsstand rack, every cover a desperate bid for attention in the marketplace of sensation. Dames and danger share the same garish spotlight, their fates already sealed by the dime-store price on the corner. This is fiction as commodity, where the cover must sell the entire paperback in a single lurid glance.
 avoidRules:
   - modern
   - clean
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: editorial-illustration
+  categoryName: 2. Editorial Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - editorial-illustration
   supportedTasks:
     - image_generate
     - image_edit

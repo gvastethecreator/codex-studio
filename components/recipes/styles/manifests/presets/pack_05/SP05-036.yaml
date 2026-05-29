@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
   aesthetic: Large-scale conflict, somber wartime palettes, cinematic tragedy, military pressure, battleship cannons, trench warfare, propaganda broadcast, soldier childhoods
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
   atmosphere: Somber, catastrophic, tragic, devastating
   key_features: Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography
+  creative_brief: Trench mud and battleship smoke smear across a landscape stripped of innocence, children marching in uniforms too large for their still-growing bones. Silhouettes dissolve into propaganda static, each frame a war photograph painted with the trembling brush of profound sorrow — cinema as memorial.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: modern-shonen-and-action
   categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - modern-shonen-and-action
   supportedTasks:
     - image_generate

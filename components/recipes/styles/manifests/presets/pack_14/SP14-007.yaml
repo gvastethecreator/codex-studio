@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-007
+packId: pack_14
+name: Moonlit Reliquary Hunt
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Nocturnal relic hunt through sacred ruins.
+  form_and_line: Stylized hunter, long cape, and ceremonial gear.
+  color_palette: Moon blue, tombstone gray, and subdued red.
+  lighting_setup: High moon with cold bounce on stone.
+  material_texture: Eroded ruin, dark leather, and ritual metal.
+  render_quality: Narrative scene with cinematic sharpness.
+  spatial_distortion: Stepped ruins with dramatic verticality.
+  atmosphere: Suspense, devotion, and precise danger.
+  key_features: Glowing reliquary, broken staircase, stalking figure.
+  creative_brief: A sacred relic hunter moving as if the night itself had chosen them.
+avoidRules: [photoreal, cheerful-light, sci-fi-clean, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-007.webp }
+attributes:
+  negativePrompt: photoreal, cheerful-light, sci-fi-clean, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

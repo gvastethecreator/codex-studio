@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-020
 packId: pack_03
 name: Porcelain
-category: 1. Materials
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Ceramic figure
   form_and_line: Smooth curves
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Doll, fine china, collectible-grade
   atmosphere: Delicate, creepy, period-piece elegance
   key_features: Glaze, crackle-line detail
+  creative_brief: Smooth as frozen milk, the vitreous glaze catches light with the restraint of fine china — hand-painted details trace floral geometries across curved surfaces, and crackle lines web through the finish like frozen lightning. There is something unsettling in the perfection, a doll-like stillness that borders on the uncanny. Period-piece elegance meets the fragility of a collectible never meant to be touched.
 avoidRules:
   - plastic
   - metal
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 1. Materials
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

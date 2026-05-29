@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-050
 packId: pack_03
 name: Motion Graphics
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Abstract shapes moving
   form_and_line: Trails
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Squash/Stretch
   atmosphere: Energetic, corporate, broadcast-level
   key_features: Abstract shapes, kinetic flow
+  creative_brief: 'Geometry forgets to be still — glossy abstract shapes trail kinetic echoes behind them, and vibrant gradients smear across the frame like a motion-blur photograph of pure energy. Squash and stretch remembers animation''s elastic origins, and Cinema 4D mograph sensibilities give every sphere and spline the confidence of broadcast design. The image pulses with corporate creativity at its most unleashed: a logo reveal frozen at the peak of its own spectacle.'
 avoidRules:
   - static
   - boring
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

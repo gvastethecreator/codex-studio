@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-077
 packId: pack_11
 name: Sandpaper
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: Grit zoom, abrasive-surface, workshop-texture, grit-topography, sanding-material
   form_and_line: Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None, flat-sheet, grit-density, particle-projection, backing-plane
   atmosphere: Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience
   key_features: Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction scratch
+  creative_brief: 'Angular grit particles stand at attention on the resin-coated backing, each sharp facet a tooth waiting to bite into wood or metal with controlled violence. Grazing light catches the abrasive points in a constellation of bright specks across the brown field, particle-size distribution revealed through shadow and sparkle. Destruction as precision: every scratch left behind is a record of material removed measured in microns, the grit-grade a language of roughness spoken by every workshop surface.'
 avoidRules:
   - smooth
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

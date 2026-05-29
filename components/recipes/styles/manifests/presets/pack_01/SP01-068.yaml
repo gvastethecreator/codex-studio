@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-068
 packId: pack_01
 name: Newborn Photography
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Sleeping baby
   form_and_line: Curled up
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Tiny, fragile
   key_features: Sleeping
+  creative_brief: A universe folded into the curl of tiny fingers, breath so shallow it barely disturbs the air around it. Knitted warmth cradles the impossible weight of newness, each frame a held breath that knows it will one day exhale.
 avoidRules:
   - awake
   - crying
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

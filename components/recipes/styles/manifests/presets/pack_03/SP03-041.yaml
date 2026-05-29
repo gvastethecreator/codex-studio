@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-041
 packId: pack_03
 name: God Rays (Volumetric)
-category: 2. Lighting & Atmosphere
+category: 3. Environment And Worldbuilding
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - environment-and-worldbuilding
 visualDna:
   aesthetic: Sunbeams through window/trees
   form_and_line: Shafts of light
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Epic, spiritual, cathedral grandeur
   atmosphere: Hopeful, grand, transcendent awe
   key_features: Light beams, atmospheric scattering
+  creative_brief: Sunlight finds its architecture — shafts of brilliance pour through windows or forest canopy, illuminating dust motes suspended like slow-motion snow in the column of radiance. Atmospheric scattering gives the beam volume, gradient warmth or coolness defining the time of day and the mood of the space. The image reaches for cathedral grandeur, spiritual awe rendered as particulate physics, light made solid enough to walk through.
 avoidRules:
   - clear
   - sharp
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: environment-and-worldbuilding
+  categoryName: 3. Environment And Worldbuilding
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - environment-and-worldbuilding
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-028
 packId: pack_02
 name: MTV 90s Grunge Broadcast
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Alternative video
   form_and_line: Scribbles
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Morphing, image warp, video feedback, liquid dissolve
   atmosphere: Rebellious, cool, anti-establishment, mosh-pit energy
   key_features: Fast cuts, graffiti text, band logo, fisheye crowd
+  creative_brief: The negative is scratched raw, frames colliding like bodies in a pit where feedback loops birth new color spectrums. Neon cuts through the bleach-bypassed darkness, a signal from the underground hijacking the broadcast. Every cut is a manifesto, every dissolve a small riot against the clean and the safe.
 avoidRules:
   - clean
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

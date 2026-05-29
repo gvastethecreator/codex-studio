@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-019
 packId: pack_03
 name: Hologram
-category: 1. Materials
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Projected light construct
   form_and_line: Scanlines, interference
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Sci-fi interface, AR overlay
   atmosphere: Futuristic, tech, ghost-data
   key_features: Transparency, flickering projection
+  creative_brief: An object built from interference patterns rather than matter — cyan and blue scanlines raster across transparent forms, and volumetric light constructs flicker at the edge of perception like a transmission fighting static. The image reads as ghost-data given shape, an AR overlay floating in physical space, defined by what it obscures rather than what it occupies. Sci-fi interface aesthetics rendered as architectural presence, a blueprint made visible through the air itself.
 avoidRules:
   - solid
   - opaque
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 1. Materials
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

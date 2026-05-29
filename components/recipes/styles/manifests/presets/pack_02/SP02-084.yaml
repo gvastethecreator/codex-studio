@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-084
 packId: pack_02
 name: Political Satire Cartoon
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Exaggerated political caricature, oversized jowls and fists, tiny bodies under giant scowling heads, newspaper editorial venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty
   form_and_line: Aggressive crosshatching, heavy india ink, sharp vicious pen strokes, editorial deadline scratch
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Giant heads atop tiny suited bodies, fists expanded to melon size, jowls dragging to collarbone
   atmosphere: Biting, cynical, merciless observation, righteous mockery
   key_features: Pointed political symbols, exaggerated real-world traits, crosshatched fury, text balloon with cutting caption
+  creative_brief: The pen is a scalpel here, carving recognition into exaggeration with strokes that land like verdicts. Hatched shadows dig trenches across inflated features while cheap ink bleeds the truth into pulp. Every line is an argument, every distortion a revealed secret about the subject they hoped you would not notice.
 avoidRules:
   - flattering
   - beautiful
@@ -36,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

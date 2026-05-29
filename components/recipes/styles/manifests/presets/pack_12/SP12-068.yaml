@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-068
+packId: pack_12
+name: Skyforge Dragon Dock
+category: 3. Sci-Fi Frontiers & Mech Zones
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+visualDna:
+  aesthetic: Aerial shipyard where draconic mounts are outfitted.
+  subject_treatment: Winged mechanics and elite riders.
+  color_and_tone: Sky blue, steel, and burnished gold.
+  lighting_and_shadow: Open daylight with localized forge smoke.
+  texture_and_material: Scales, rivets, and reinforced leather.
+  camera_and_composition: Elevated platform overlooking the void.
+  atmosphere_and_mood: Epic preparation and wartime anticipation.
+  rendering_and_quality: Premium faction visual.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - underwater
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-068.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-021
 packId: pack_08
 name: Pastel Goth
-category: 3. Subcultures
+category: 2. Subcultures
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Cute, dark, sweet unease, candy-wrapper menace, adorable dread
   key_features: Bat wings, bow hair clips, pentagram choker, platform creepers
+  creative_brief: Cotton-candy sweet wrapped around a pentagram, lavender tulle floating over platform soles that echo through graveyards. This is cute that bites back, bows tied with lace soaked in moonlight, a pastel hymn to the beautiful unease of being both sugar and shadow in the same breath.
 avoidRules:
   - all black
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: subcultures
-  categoryName: 3. Subcultures
+  categoryName: 2. Subcultures
   tags:
     - fashion-and-costume
     - subcultures
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-107
 packId: pack_02
 name: Courage the Cowardly Dog - Rural Nightmare Pastel
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Lonely farmhouse horror cartoon, pink dog panic, grotesque villains in empty landscapes, Midwestern doom silence, haunted domesticity, uncanny CGI inserts, fear made cute and shrill
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Terrified, lonely, surreal, absurd
   key_features: Isolated farmhouse staging, screaming reaction poses, uncanny intruders, pastel panic, dead-field emptiness
+  creative_brief: The field stretches to every horizon under a sky that offers no witness, pink fur the only soft thing trembling between dead rows of corn and an approaching shape that should not exist. Home is where the horror nests, but love keeps you tethered to the floorboards even as the walls begin to breathe. Silence is the scariest sound in the country, broken only by the whimper of a creature too brave to run.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

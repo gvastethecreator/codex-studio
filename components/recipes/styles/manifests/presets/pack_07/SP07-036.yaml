@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-036
 packId: pack_07
 name: Casino Floor
-category: 3. Environment
+category: 3. Historical And Sacred Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - environment
+  - historical-and-sacred-architecture
 visualDna:
   aesthetic: Vegas gambling hall, pleasure labyrinth, windowless empire, sensory-trap palace
   form_and_line: Busy patterns, carpet maze, machine rows, mirrored columns, endless grid of chance
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Greed, excitement, fake, disoriented, timeless, chance-buzzed numbness
   key_features: No clocks, no windows, slot machines, busy carpet, mirrored ceiling, cocktail waitress
+  creative_brief: Carpet patterns swirl in deliberate confusion, designed to keep eyes on the floor and minds off the exits. Slot machines blink their seductive arithmetic, chrome and neon building a temple where hope is the currency and time the sacrifice. The room has no clocks, no windows, no mercy, only another roll.
 avoidRules:
   - daylight
   - calm
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: environment
-  categoryName: 3. Environment
+  categoryId: historical-and-sacred-architecture
+  categoryName: 3. Historical And Sacred Architecture
   tags:
     - architecture-and-interior
-    - environment
+    - historical-and-sacred-architecture
   supportedTasks:
     - image_generate
     - image_edit

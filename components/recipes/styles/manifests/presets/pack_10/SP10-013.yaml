@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Fluid
   atmosphere: Psychedelic, toxic
   key_features: Rainbow sheen
+  creative_brief: Petroleum rainbows on water, beauty born from something the earth never meant to release. Shifting skin of color, every angle a different jewel dragged from darkness.
 avoidRules:
   - matte
   - dull
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

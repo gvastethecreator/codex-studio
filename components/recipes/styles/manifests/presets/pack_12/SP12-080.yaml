@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-080
+packId: pack_12
+name: Endgame Eclipse Throne Room
+category: 8. Puzzle Chambers & Adventure Setpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - puzzle-chambers-and-adventure-setpieces
+visualDna:
+  aesthetic: Final throne room during a total eclipse.
+  subject_treatment: Supreme antagonist and hero in final confrontation.
+  color_and_tone: Eclipse black, carmine red, and cold silver.
+  lighting_and_shadow: Halo of light behind the central figure.
+  texture_and_material: Polished stone, dark metal, and fine smoke.
+  camera_and_composition: Frontal composition at narrative climax.
+  atmosphere_and_mood: Destiny, peak tension, and epic closure.
+  rendering_and_quality: Final key art for the main campaign.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - comedic-style
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-080.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: puzzle-chambers-and-adventure-setpieces
+  categoryName: 8. Puzzle Chambers & Adventure Setpieces
+  tags:
+    - video-game-originals-vault
+    - puzzle-chambers-and-adventure-setpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

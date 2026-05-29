@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-077
 packId: pack_09
 name: Barbed Wire
-category: 5. Elemental & FX
+category: 1. Metals And Minerals
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - metals-and-minerals
 visualDna:
   aesthetic: Fencing wire
   form_and_line: Twisted wire + barbs
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Coiled
   atmosphere: Dangerous, forbidden
   key_features: Barbs every few inches
+  creative_brief: Render the hostile geometry of barbed wire where twisted strands spiral around a core line, sharpened barbs bristling at regular intervals like a metal vine bred for pain, rust painting the surface in oranges of exposure. Each barb should catch a sharp highlight, a glint of warning written in steel along the coil. Capture the aesthetics of the forbidden, a line drawn in wire and consequence.
 avoidRules:
   - smooth wire
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: metals-and-minerals
+  categoryName: 1. Metals And Minerals
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - metals-and-minerals
   supportedTasks:
     - image_generate
     - image_edit

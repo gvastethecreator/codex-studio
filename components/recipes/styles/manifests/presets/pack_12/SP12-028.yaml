@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-028
+packId: pack_12
+name: Sky Monastery Duel
+category: 2. Arcane Temples & Mythic Realms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+visualDna:
+  aesthetic: Duel arena in a monastery suspended among clouds.
+  subject_treatment: Disciplined duelists with ritual weapons.
+  color_and_tone: Stone white, sky blue, and restrained gold.
+  lighting_and_shadow: Clean natural light with minimal shadows.
+  texture_and_material: Polished marble, lacquered wood, and ceremonial cloth.
+  camera_and_composition: Central symmetry emphasizing balance.
+  atmosphere_and_mood: Tense serenity and competitive honor.
+  rendering_and_quality: Elegant, readable PvP stage.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - grunge
+  - chaotic-fx
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-028.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

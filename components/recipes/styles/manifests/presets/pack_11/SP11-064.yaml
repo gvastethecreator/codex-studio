@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-064
 packId: pack_11
 name: Iris/Eye Macro
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape
   form_and_line: Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve
   atmosphere: Personal, deep, eye-contact stillness, window-to-soul, iris-garden, blink-moment
   key_features: Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern, conjunctiva-vessels, lacrimal-caruncle
+  creative_brief: Radial striae stretch from pupil to limbal ring like the rays of a sun made of muscle fiber, the iris a personal nebula in amber-hazel or steel-grey or the blue of deep water. The cornea catches a ring-light catch-light, a tiny reflection that proves this is a living eye and not a painted portrait. To photograph the iris at macro scale is to map the geography of a soul's visible edge, the frontier where interior meets exterior in fibrous color, window-to-soul rendered at life-size magnitude.
 avoidRules:
   - skin
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

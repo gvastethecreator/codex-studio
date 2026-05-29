@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-060
 packId: pack_08
 name: Velvet
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Luxury, night, after-hours refinement, aged-whiskey warmth, private-club exclusivity
   key_features: Soft sheen, pile-direction gleam, satin lapel, jacquard pattern, frog closure
+  creative_brief: Pile fibers bending to capture light and hold it hostage in the nap, the surface shifting from deep midnight to amethyst glow depending on which direction the hand smoothed it last. The shawl collar wraps around the neck like a conspiratorial whisper at a private club where the whiskey is older than the membership, silk-faced lapels gleaming with the quiet satisfaction of those who know that true luxury is never loud.
 avoidRules:
   - shiny
   - hard
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

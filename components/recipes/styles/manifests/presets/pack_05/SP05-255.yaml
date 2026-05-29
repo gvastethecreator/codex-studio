@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: Rescue fantasy with armor, giant summons, rune-powered machinery, candy-bright courage and mystical quest framing for a heroic team of girls
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
   atmosphere: Brave, bright, enchanted, team-driven
   key_features: Rune magic, armor accents, giant summon silhouettes, quest-team posing, jewel-bright backgrounds
+  creative_brief: Three girls become knights become legends, their armor blooming from rune-light like petals from enchanted ore. Giant summons cast shadows across jewel-bright worlds where the rescue mission is also a becoming, courage reforged with every step toward the one who must be saved.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: isekai-and-high-fantasy
   categoryName: 8. Isekai & High Fantasy
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - isekai-and-high-fantasy
   supportedTasks:
     - image_generate

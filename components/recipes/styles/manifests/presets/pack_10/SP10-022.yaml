@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-022
 packId: pack_10
 name: Pixel Sorting
-category: 5. Digital Glitch & Noise
+category: 3. Digital Glitch & Noise
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Melting
   atmosphere: Dystopian, aesthetic
   key_features: Vertical sort
+  creative_brief: The image unravels along luminance gradients, bright pixels dragged across the frame like a comb through wet paint. Digital entropy made visible, a glitch that reveals the hidden architecture of seeing.
 avoidRules:
   - horizontal lines
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: digital-glitch-and-noise
-  categoryName: 5. Digital Glitch & Noise
+  categoryName: 3. Digital Glitch & Noise
   tags:
     - abstract-and-experimental
     - digital-glitch-and-noise
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP06-018',
     name: 'Ink (Pen & Ink)',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -19,12 +19,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Stylized shading',
       atmosphere: 'Classic, storybook',
       key_features: 'Line shading',
+      creative_brief:
+        'Every line is a decision with no eraser, ink committing to paper with the finality of law. Hatching builds shadow through accumulation, density becoming darkness through disciplined repetition. The white of the page is not absence but presence, the loudest element in the composition.',
     },
   },
   {
     id: 'SP06-026',
     name: 'Marker (Copic)',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -37,12 +39,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Modern, slick',
       key_features: 'Marker streaks',
+      creative_brief:
+        'Alcohol-based ink saturates paper in translucent veils, each pass deepening the stain, edges bleeding slightly beyond the line. The marker squeaks its signature frequency, a sound that means rendering is happening. Glossy highlights bloom in the white space reserved for light, untouched by the permeating color.',
     },
   },
   {
     id: 'SP06-016',
     name: 'Graphite Pencil',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -55,12 +59,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Studious, quiet',
       key_features: 'Graphite texture',
+      creative_brief:
+        'Graphite layers build from whisper to shout through pressure alone, the hand learning form by tracing its shadow onto paper. Metallic sheen catches light at oblique angles, a secret visible only to those who lean close. The drawing breathes in grey values, a world made entirely of lead and patience.',
     },
   },
   {
     id: 'SP06-017',
     name: 'Charcoal (Expressive)',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -73,12 +79,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Gestural',
       atmosphere: 'Dark, intense',
       key_features: 'Smudged texture',
+      creative_brief:
+        'Burnt wood dragged across rough paper leaves more dust on the surface than pigment in the tooth, the image threatening to vanish with a careless breath. Darkness arrives in broad smudges, erased and reapplied, form emerging from chaos like a figure stepping out of smoke. The drawing lives in the tension between accident and intention.',
     },
   },
   {
     id: 'SP06-020',
     name: 'Colored Pencil',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -91,12 +99,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Gentle, colorful',
       key_features: 'Wax texture',
+      creative_brief:
+        'Wax pigment layers bloom into impossible smoothness, colors blending like oil but dragging like crayon on paper grain. Each stroke carries the faint squeak of friction, a sound translated into saturation. The drawing glows with the warmth of an afternoon spent coloring outside the lines with expensive intent.',
     },
   },
   {
     id: 'SP06-021',
     name: 'Pastel (Soft)',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -109,12 +119,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Soft edges',
       atmosphere: 'Dreamy, atmospheric',
       key_features: 'Chalky finish',
+      creative_brief:
+        'Pure pigment held together by the weakest binder — barely more than dust on paper — achieves saturation that feels like breathing color instead of air. Smudged edges soften the world into a remembered dream, focus yielding to atmosphere. The drawing exists on sufferance, one careless touch away from erasure.',
     },
   },
   {
     id: 'SP06-027',
     name: 'Chalk (Blackboard)',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -127,12 +139,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Rough',
       atmosphere: 'Rustic, temporary',
       key_features: 'Dusty lines',
+      creative_brief:
+        'Calcium carbonate dust clings to slate, every line a temporary claim destined for the eraser. White on black reverses the natural order, light emerging from darkness through subtraction. The drawing exists in the moment before the sponge, a menu of possibilities that the next bell will wipe clean.',
     },
   },
   {
     id: 'SP06-028',
     name: 'Scratchboard',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -145,12 +159,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Stylized texture',
       atmosphere: 'Dramatic, inverted',
       key_features: 'White on black',
+      creative_brief:
+        'Light is carved out of darkness, the stylus scratching white into an ink-black surface, image emerging through removal rather than addition. Every line is an act of excavation, finding form in what the blackness had hidden. The result is photographic negative made tactile, darkness serving as canvas rather than mark.',
     },
   },
   {
     id: 'SP06-029',
     name: 'Silhouette',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -163,12 +179,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'No internal details',
       atmosphere: 'Graphic, stark',
       key_features: 'Solid shape',
+      creative_brief:
+        'Pure shape carries the entire burden of recognition, no interior detail, no shading, just the edge where form meets void. The profile tells the story that the face, with all its features, could not. Absence becomes eloquence when what is omitted outweighs what remains.',
     },
   },
   {
     id: 'SP06-030',
     name: 'Continuous Line',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -181,12 +199,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Abstracted',
       atmosphere: 'Fluid, simple',
       key_features: 'Single line',
+      creative_brief:
+        'A single unbroken line wanders the page like a melody that never resolves, touching every contour without lifting, without retreating. The hand moves in faith, trusting the journey more than the destination. Form emerges from the discipline of connection, every subject revealed as one continuous thread.',
     },
   },
   {
     id: 'SP06-019',
     name: 'Ballpoint Pen',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -199,12 +219,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Rough shading',
       atmosphere: 'Bored, creative',
       key_features: 'Scribble texture',
+      creative_brief:
+        'Cheap ballpoint ink pools at the start of every stroke, then starves into scratchy thinness, leaving a record of pressure in blue. Notebook paper dimples under the weight of doodles born from boredom, the margins filling with mindlessness that becomes art. The image smells like school and wasted afternoons.',
     },
   },
   {
     id: 'SP06-022',
     name: 'Oil Pastel',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -217,12 +239,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Rough shapes',
       atmosphere: 'Playful, bold',
       key_features: 'Chunky texture',
+      creative_brief:
+        'Wax-bound pigment resists blending, demanding marks remain distinct, colors refusing to compromise into brown. Each stroke leaves a chunky residue like crayon on sidewalk, boldness substituting for precision. The image celebrates the hand that does not apologize for its grip.',
     },
   },
   {
     id: 'SP06-024',
     name: 'Conte Crayon',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -235,12 +259,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Warm, classical',
       key_features: 'Earth tones',
+      creative_brief:
+        'Compressed earth tones — sanguine, sepia, bistre — drag across textured paper in square strokes that echo the stick itself. The palette is archaeology, colors dug from the ground and pressed into service capturing human form. Warmth radiates from the limited spectrum, proving that restriction amplifies expression.',
     },
   },
   {
     id: 'SP06-025',
     name: 'Technical Pen',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -253,12 +279,14 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Geometric',
       atmosphere: 'Precise, technical',
       key_features: 'Clean lines',
+      creative_brief:
+        'Steel nib delivers ink with the precision of engineering, every line a measurement, every hatch a calculation. The drawing rejects atmosphere for accuracy, mistaking nothing for poetry. Beauty emerges from the discipline of the straightedge, emotion from the refusal to embellish.',
     },
   },
   {
     id: 'SP06-023',
     name: 'Silverpoint',
-    category: '3. Drawing & Sketching',
+    category: '2. Drawing & Sketching',
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
@@ -271,6 +299,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Antique, delicate',
       key_features: 'Fine lines',
+      creative_brief:
+        'Silver wire dragged across prepared ground leaves a mark so fine it seems etched by thought rather than metal. The line tarnishes over months, warming from grey into sepia, the drawing aging visibly on the wall. Every stroke whispers of the Renaissance, of apprentices grinding bone ash at dawn.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

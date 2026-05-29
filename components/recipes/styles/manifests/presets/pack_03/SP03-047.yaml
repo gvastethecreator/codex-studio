@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-047
 packId: pack_03
 name: Architectural Visualization
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Modern house render
   form_and_line: Straight verticals
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Real estate brochure, lifestyle luxury
   atmosphere: Aspirational, clean, designer-curated
   key_features: Perfect furniture, architectural storytelling
+  creative_brief: 'Sunlight enters through floor-to-ceiling glass and lands on beige textiles and pale oak with the precision of a real estate photographer''s best day — straight verticals keep the architecture honest, and window-daylight simulation warms every surface without ever feeling staged. Lived-in warmth without the mess: designer-curated aspiration where every throw pillow and coffee-table book earned its position through a stylist''s deliberation. The image sells a life you could walk into, if only you had the keys.'
 avoidRules:
   - messy
   - lived in
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

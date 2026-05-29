@@ -18,6 +18,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Multiple viewpoints',
       atmosphere: 'Intellectual, fragmented',
       key_features: 'Geometric breakdown',
+      creative_brief:
+        'Reality fractures into simultaneous viewpoints, each shard carrying its own truth. The eye must reassemble what the mind knows to be whole, finding order in deliberate disintegration.',
     },
   },
   {
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Only 90 degree angles',
       atmosphere: 'Balanced, rigid',
       key_features: 'Grid structure',
+      creative_brief:
+        'Universality distilled to ninety degrees, the grid as cosmic architecture. Black borders hold primary colors in suspended equilibrium, a meditation on what remains when everything inessential is removed.',
     },
   },
   {
@@ -52,6 +56,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Simplified forms',
       atmosphere: 'Rational, bold',
       key_features: 'Primary colors',
+      creative_brief:
+        'Form stripped to its skeleton, every line an argument for necessity. Primary colors sing against geometry, a manifesto of clarity in a world of ornament.',
     },
   },
   {
@@ -69,6 +75,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Aggressive angles',
       atmosphere: 'Revolutionary, strong',
       key_features: 'Typography elements',
+      creative_brief:
+        'The machine speaks in diagonal thunder, red and black charging across paper like revolution itself. Every composition is a declaration, every angle a refusal of the old world.',
     },
   },
   {
@@ -86,6 +94,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Vibrating effect',
       atmosphere: 'Dizzying, kinetic',
       key_features: 'High contrast',
+      creative_brief:
+        'The canvas breathes and pulses, static lines becoming a storm behind the eyes. Vision becomes a participant, not a witness, caught in the shimmer between seeing and believing.',
     },
   },
   {
@@ -103,6 +113,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Zero gravity',
       atmosphere: 'Spiritual, empty',
       key_features: 'White void',
+      creative_brief:
+        'Pure sensation drifts through white infinity, rectangles and circles untethered from gravity and meaning. The void is not absence but potential, a field where shape becomes feeling.',
     },
   },
   {
@@ -120,6 +132,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Divine, orderly',
       key_features: 'Radial symmetry',
+      creative_brief:
+        'Infinity caught in a lattice of stars, each intersection a prayer for the ineffable. Geometry becomes devotion, the repeating pattern a doorway to the boundless.',
     },
   },
   {
@@ -137,6 +151,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Cellular',
       atmosphere: 'Natural math',
       key_features: 'Cell structure',
+      creative_brief:
+        "Nature's partitioning algorithm, borders emerging where influences collide. Each cell a small sovereignty, the whole a map of equilibrium written in organic code.",
     },
   },
   {
@@ -154,6 +170,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Geometric reduction',
       atmosphere: 'Modern, tech',
       key_features: 'Triangles',
+      creative_brief:
+        'The world reduced to its crystalline essence, every surface a facet of light. Digital geometry whispers of computation, a landscape born from vertex and vector.',
     },
   },
   {
@@ -171,6 +189,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Recursive',
       atmosphere: 'Infinite, trippy',
       key_features: 'Self-similarity',
+      creative_brief:
+        'Mathematics blooms into cathedral windows, each recursion a deeper threshold. The infinite peers back through self-similar corridors, a coastline that never resolves into a straight line.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

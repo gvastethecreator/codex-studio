@@ -3,12 +3,18 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_07/interior-design-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_07/architectural-styles-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_07/environment-3').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_07/landscape-architecture-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_07/fantasy-architecture-5').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_07/residential-interiors-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_07/historical-and-sacred-architecture-2').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_07/landscape-and-gardens-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_07/speculative-and-concept-architecture-4').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-018
 packId: pack_01
 name: Wet Plate Collodion
-category: 3. Film Stocks
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - lighting-techniques
 visualDna:
   aesthetic: 19th century tintype
   form_and_line: Extremely shallow focus
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blurry edges (Petzval)
   atmosphere: Ghostly, ancient
   key_features: Chemical artifacts
+  creative_brief: An alchemy of silver and patience, where sitters held their breath for minutes and the plate remembered every tremor. The world resolves through a shallow veil, edges dissolving into the chemical dream from which they emerged. What remains feels less photographed than summoned.
 avoidRules:
   - color
   - modern
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - film-stocks
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

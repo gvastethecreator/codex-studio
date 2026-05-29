@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-059
 packId: pack_08
 name: Transparent Plastic
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: See-through
   atmosphere: Wet, tech, urban-rain serenity, downpour-preparedness, future-commute cool
   key_features: Transparency, heat-sealed seams, layered visibility, rain droplets, reflective trim
+  creative_brief: Raindrops bead on clear TPU like mercury searching for a seam that was heat-sealed into nonexistence, the body beneath visible through a membrane that separates the wearer from weather without hiding anything. Streetlamp light refracts through the transparent shell, casting prismatic distortions across the silhouette of someone who prepared for this downpour and now walks through it like a ghost through a wall.
 avoidRules:
   - opaque
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

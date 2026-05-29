@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-004
 packId: pack_01
 name: Glamour Shot
-category: 1. Portrait Styles
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-styles
+  - portrait-and-studio
 visualDna:
   aesthetic: High-fashion beauty portraiture, glamorous and luxurious magazine cover style
   subject_treatment: Idealized features, soft focus on skin while keeping eyes and lips tack-sharp
@@ -20,6 +20,7 @@ visualDna:
   camera_and_composition: Close-up beauty crop, flattering angles, undistorted perspective
   atmosphere_and_mood: Beautiful, expensive, alluring, polished, high-end
   rendering_and_quality: Magazine cover quality, heavily retouched, 8k resolution, hyper-realistic
+  creative_brief: Light bends flatteringly around bone structure, skin dissolving into porcelain while eyes retain their mineral sharpness, every highlight polished to a diamond's precision. The frame becomes a jewel box where fabric whispers wealth and luminance pools like liquid gold across the surface. Manufactured perfection as visual language, glamour distilled into the architecture of a cheekbone and the gloss of a parted lip.
 avoidRules:
   - illustration
   - painting
@@ -43,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-styles
-  categoryName: 1. Portrait Styles
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - portrait-styles
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

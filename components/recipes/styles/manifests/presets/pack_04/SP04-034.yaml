@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-034
 packId: pack_04
 name: Psychedelic Poster (60s)
-category: 3. Editorial & Poster
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Fillmore poster
   form_and_line: Warped text
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Liquid
   atmosphere: Groovy, music, hallucinogenic bliss, counterculture festival
   key_features: Illegible font, warped lettering, swirling typography
+  creative_brief: Typography warps and melts like wax in a lava lamp, letters losing their duty to meaning in favor of pure optical vibration. Neon colors clash with the confidence of a Fillmore bill, each hue vibrating against its complement. This is visual experience as altered state, where reading becomes seeing and seeing becomes feeling.
 avoidRules:
   - straight
   - readable
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-052
 packId: pack_02
 name: Lomography
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Toy camera (Holga)
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Vignette blur, edge falloff, tunnel softness
   atmosphere: Experimental, fun, rule-breaking, analog play
   key_features: Light leaks, sprocket holes, film rebate, double-exposure ghost
+  creative_brief: 'The camera surrenders control and the image rewards the gamble: skies veer violet, skin drifts green, and light leaks in through uninvited doors. Perfection was never the point — the artifact is the art. Every frame is a collaboration between intention and accident, where sprocket holes and chemical ghosts become the signature, and the mistake is the only thing worth keeping.'
 avoidRules:
   - correct color
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

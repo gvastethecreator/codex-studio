@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-072
 packId: pack_08
 name: Tattoo Skin
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Edgy, committed, ink-commitment gravity, bodysuit-ritual patience, living-art pride
   key_features: Ink, full-coverage bodysuit, Japanese background, sleeve-to-chest connection, healed-settle depth
+  creative_brief: Indigo pushed into skin by tebori needles held in hands that learned from hands that learned from hands, a bodysuit of ink mapping a life across the landscape of a single canvas. Japanese waves and wind bars flow from shoulder to wrist, koi swimming upstream toward a chest that holds the story of every hour spent under the needle, the healed ink settled into skin like a memory that cannot be separated from the body that carries it.
 avoidRules:
   - clean skin
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

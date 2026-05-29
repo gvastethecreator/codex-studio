@@ -24,11 +24,20 @@ type CameraAction =
 function cameraReducer(prev: CameraViewportState, action: CameraAction): CameraViewportState {
   switch (action.type) {
     case 'set_azimuth':
-      return { ...prev, azimuth: typeof action.value === 'function' ? action.value(prev.azimuth) : action.value };
+      return {
+        ...prev,
+        azimuth: typeof action.value === 'function' ? action.value(prev.azimuth) : action.value,
+      };
     case 'set_elevation':
-      return { ...prev, elevation: typeof action.value === 'function' ? action.value(prev.elevation) : action.value };
+      return {
+        ...prev,
+        elevation: typeof action.value === 'function' ? action.value(prev.elevation) : action.value,
+      };
     case 'set_distance':
-      return { ...prev, distance: typeof action.value === 'function' ? action.value(prev.distance) : action.value };
+      return {
+        ...prev,
+        distance: typeof action.value === 'function' ? action.value(prev.distance) : action.value,
+      };
   }
 }
 
@@ -154,9 +163,18 @@ export const useCameraViewport = ({
   const [cameraState, dispatch] = useReducer(cameraReducer, initialCamera);
   const { azimuth, elevation, distance } = cameraState;
 
-  const setAzimuth = useCallback((value: number | ((prev: number) => number)) => dispatch({ type: 'set_azimuth', value }), []);
-  const setElevation = useCallback((value: number | ((prev: number) => number)) => dispatch({ type: 'set_elevation', value }), []);
-  const setDistance = useCallback((value: number | ((prev: number) => number)) => dispatch({ type: 'set_distance', value }), []);
+  const setAzimuth = useCallback(
+    (value: number | ((prev: number) => number)) => dispatch({ type: 'set_azimuth', value }),
+    [],
+  );
+  const setElevation = useCallback(
+    (value: number | ((prev: number) => number)) => dispatch({ type: 'set_elevation', value }),
+    [],
+  );
+  const setDistance = useCallback(
+    (value: number | ((prev: number) => number)) => dispatch({ type: 'set_distance', value }),
+    [],
+  );
 
   const mountRef = useRef<HTMLDivElement>(null);
   const sceneObjects = useRef<Record<string, any>>({});

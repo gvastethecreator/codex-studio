@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-036
 packId: pack_06
 name: Monotype
-category: 5. Printmaking
+category: 3. Printmaking
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blurred
   atmosphere: Ghostly, soft
   key_features: Transfer texture
+  creative_brief: Paint applied to glass, transferred to paper in a single irreversible press — no edition, no repeat, no second chance. The transfer blurs and blends in ways the artist predicted but could not control, spontaneity baked into the process. Each print is an original, the plate wiped clean for the next unique birth.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: printmaking
-  categoryName: 5. Printmaking
+  categoryName: 3. Printmaking
   tags:
     - essential-art-styles
     - printmaking
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

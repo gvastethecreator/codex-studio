@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-031
 packId: pack_04
 name: Art Deco Poster
-category: 3. Editorial & Poster
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: 1920s travel poster
   form_and_line: Geometric curves
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Streamlined
   atmosphere: Elegant, fast, roaring-twenties glamour, ocean-liner sophistication
   key_features: Sunburst, geometric framing, speed lines
+  creative_brief: Geometric sunbursts radiate from center points like the roar of the jazz age made visible. Gold leaf and teal gradients slide across streamlined forms, every curve engineered for speed and elegance. This is the future as imagined by the past, where luxury wears geometric armor and glamour travels by ocean liner.
 avoidRules:
   - messy
   - organic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

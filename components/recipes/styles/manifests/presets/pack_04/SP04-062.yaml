@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-062
 packId: pack_04
 name: Etching (Engraving)
-category: 5. Ink & Print
+category: 4. Printmaking And Ink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - printmaking-and-ink
 visualDna:
   aesthetic: Banknote style
   form_and_line: Fine crosshatching
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Serious, valuable, mint-condition reverence, time-capsule gravitas
   key_features: Hatching, crosshatching, fine-line density
+  creative_brief: Crosshatched lines build density with the obsessive precision of currency, each stroke a security feature against the counterfeit of carelessness. Light slides across engraved surfaces with the weight of history and the gleam of privilege. This is the image as document, where linework carries the authority of the mint.
 avoidRules:
   - smooth shading
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: printmaking-and-ink
+  categoryName: 4. Printmaking And Ink
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - printmaking-and-ink
   supportedTasks:
     - image_generate
     - image_edit

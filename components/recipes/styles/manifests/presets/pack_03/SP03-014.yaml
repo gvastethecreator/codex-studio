@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-014
 packId: pack_03
 name: Chrome & Metal
-category: 1. Materials
+category: 3. Environment And Worldbuilding
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - environment-and-worldbuilding
 visualDna:
   aesthetic: Highly reflective surface
   form_and_line: Sharp reflections
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Automotive finish, showroom gloss
   atmosphere: Sleek, futuristic, precision luxury
   key_features: Reflection, anisotropic highlights
+  creative_brief: A surface so polished it ceases to describe itself and becomes a mirror for the world around it — HDRI environments wrap every curve in borrowed geography, and anisotropic highlights stretch across brushed metal like streaks of frozen lightning. Gold, chrome, and anodized titanium share the frame like instruments in an orchestra of precision. The image radiates showroom confidence, every reflection a second composition hiding within the first.
 avoidRules:
   - matte
   - rough
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 1. Materials
+  categoryId: environment-and-worldbuilding
+  categoryName: 3. Environment And Worldbuilding
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - environment-and-worldbuilding
   supportedTasks:
     - image_generate
     - image_edit

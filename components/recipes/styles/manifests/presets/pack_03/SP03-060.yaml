@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-060
 packId: pack_03
 name: Environment Design
-category: 4. Applications
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Game level art
   form_and_line: Compositional path
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Level art, immersive, game-world ready
   atmosphere: Adventure, place, explorable wonder
   key_features: Walkable path, environment storytelling
+  creative_brief: 'A compositional path leads the eye from foreground to vanishing point — atmospheric perspective fades distant mountains into blue haze, and baked global illumination anchors the scene in lighting that feels lived-in rather than placed. Tileable textures build worlds from modular kits, and environmental storytelling whispers narratives through ruin placement, foliage choice, and the suggestion of a path someone walked before you. The image is level art at its most inviting: a game world that makes you reach for the controller.'
 avoidRules:
   - empty
   - boring
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

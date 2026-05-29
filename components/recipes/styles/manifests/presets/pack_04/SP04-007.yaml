@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-007
 packId: pack_04
 name: Franco-Belgian (Ligne Claire)
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: Clean-line European adventure comic, Tintin style, Hergé precision, clear-line clarity, journalistic globe-trotting
   form_and_line: Uniform thickness
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Cartoon
   atmosphere: Adventure, clear, globe-trotting discovery, investigative charm
   key_features: No hatching, uniform line weight, clean background
+  creative_brief: Every line carries equal weight and equal certainty, the uniform stroke refusing to hide or hesitate. Flat colors sit side by side like diplomatic nations, each hue declaring its territory without aggression. This is the world viewed through a magnifying glass of clarity, where adventure is a question asked in clean, confident ink.
 avoidRules:
   - shading
   - gradient
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-021
 packId: pack_09
 name: Carbon Fiber (Forged)
-category: 2. Man-Made Materials
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: Chopped fiber composite
   form_and_line: Random flakes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Fast, expensive
   key_features: Random flakes
+  creative_brief: Render the depth illusion of forged carbon fiber where random black flakes float in a glossy matrix like a frozen storm trapped in obsidian, creating a marble-like chaos of high-performance engineering. The clear coat should create an infinite window into a void where structure becomes ornament. Capture the aesthetic of speed made solid.
 avoidRules:
   - woven pattern
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

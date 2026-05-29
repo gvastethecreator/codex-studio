@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-059
 packId: pack_06
 name: Paper Cutout (Digital)
-category: 1. Digital Art
+category: 4. Digital Art
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simplified
   atmosphere: Playful
   key_features: Depth layers
+  creative_brief: Layers of digital paper float at different depths, drop shadows creating the illusion of physicality in a world made of zeroes. The cuts are too perfect, the edges too clean, but the conceit charms through commitment to its own fiction. The image feels like a craft project rendered by a machine that wishes it had hands.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: digital-art
-  categoryName: 1. Digital Art
+  categoryName: 4. Digital Art
   tags:
     - essential-art-styles
     - digital-art
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

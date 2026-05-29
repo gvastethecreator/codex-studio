@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-293
+packId: pack_16
+name: Tekkonkinkreet - Alleyway Child Myth
+category: 10. Studio Masterpieces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - studio-masterpieces
+visualDna:
+  aesthetic: Urban kid mythology, crowded roofs and alleys, rough sacred city energy, innocence and violence stacked vertically in a dense modern labyrinth
+  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
+  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
+  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
+  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
+  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
+  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
+  atmosphere: Rough, spiritual, crowded, feral
+  key_features: Dense city alleys, child silhouette contrast, rooftop motion, rough sacred iconography, urban myth staging
+  creative_brief: Two boys own the city vertical chaos like stray gods born from concrete and corrugated tin, their rooftop kingdom held together by nothing but shared survival. Every alley is a myth waiting to happen, every shadow a lesson in the animal logic of streets that raise their own. The city breathes through them, sacred and feral in equal measure.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-293.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: studio-masterpieces
+  categoryName: 10. Studio Masterpieces
+  tags:
+    - anime-classics-and-prestige
+    - studio-masterpieces
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

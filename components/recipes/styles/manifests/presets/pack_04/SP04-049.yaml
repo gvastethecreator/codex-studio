@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-049
 packId: pack_04
 name: Environment Concept
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Game level art
   form_and_line: Perspective grid
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Adventure, place, exploration wonder, threshold excitement
   key_features: Scale figure, perspective grid, environmental storytelling
+  creative_brief: Atmosphere builds the world before architecture arrives, light establishing the emotional climate of a place that does not yet exist. Scale hints through doorway silhouettes and distant mountain passes, inviting exploration. This is the threshold of adventure, where the environment itself extends a hand toward the player.
 avoidRules:
   - character focus
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-032
 packId: pack_09
 name: Cardboard
-category: 2. Man-Made Materials
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - man-made-materials
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Shipping box
   form_and_line: Corrugation lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Creased
   atmosphere: Trash, storage
   key_features: Corrugation
+  creative_brief: Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of structure beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with use. The surface should feel dry and fibrous, a material whose very appearance suggests disposability rendered permanent. Render the poetics of the temporary, the shipping box as inadvertent portrait.
 avoidRules:
   - wood
   - plastic
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: man-made-materials
-  categoryName: 2. Man-Made Materials
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - man-made-materials
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

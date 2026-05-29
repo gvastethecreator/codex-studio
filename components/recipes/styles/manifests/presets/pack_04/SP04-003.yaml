@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-003
 packId: pack_04
 name: Modern Superhero (Digital)
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: Modern caped-hero digital comic, DC/Marvel house style, widescreen action, cinematic decompression
   form_and_line: Clean digital ink
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Muscular
   atmosphere: Action, serious, blockbuster intensity, widescreen spectacle
   key_features: Lens flare, digital glow, panoramic spread
+  creative_brief: Light bends around muscle and fabric with the precision of a blockbuster's third-act climax, every frame holding its breath before impact. Gradients slide across spandex like liquid chrome, all holographic sheen and digital perfection. This is the modern myth machine at full throttle, printing gods in ones and zeros.
 avoidRules:
   - flat
   - retro
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

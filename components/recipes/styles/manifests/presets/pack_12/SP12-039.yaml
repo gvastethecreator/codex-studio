@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-039
+packId: pack_12
+name: Phantom Theater Rhythm Battle
+category: 5. Speed, Sport & Competitive Arenas
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+visualDna:
+  aesthetic: Supernatural rhythm game in a haunted theater.
+  subject_treatment: Spectral performers synchronized to visual beats.
+  color_and_tone: Deep purple, aged gold, and spectral cyan.
+  lighting_and_shadow: Theatrical spotlights and pulsing luminous fog.
+  texture_and_material: Varnished wood, velvet, and fine smoke.
+  camera_and_composition: Front-stage framing with choreographed layers.
+  atmosphere_and_mood: Musical drama and performance tension.
+  rendering_and_quality: Highly clear hit-timing visual design.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - static
+  - muddy-colors
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-039.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

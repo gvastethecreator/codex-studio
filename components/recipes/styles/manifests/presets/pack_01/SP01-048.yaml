@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-048
 packId: pack_01
 name: Macro Photography
-category: 4. Genres
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - lighting-techniques
 visualDna:
   aesthetic: Extreme close-up
   form_and_line: Shallow depth of field
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blurry background
   atmosphere: Alien, detailed
   key_features: Tiny world
+  creative_brief: A territory that lives between the blinks of giants, where a dewdrop becomes an ocean and a grain of pollen looms like architecture. Geometry so intricate it reads as sacred manuscript, written on the skin of the miniature, while everything beyond dissolves into pure painted blur. Vision trespasses here into the invisible.
 avoidRules:
   - wide angle
   - blurry subject
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - genres
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

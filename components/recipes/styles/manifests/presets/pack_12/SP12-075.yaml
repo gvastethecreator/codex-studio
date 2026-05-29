@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-075
+packId: pack_12
+name: Cobalt Docks Mechball League
+category: 5. Speed, Sport & Competitive Arenas
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+visualDna:
+  aesthetic: Lightweight mecha sport in industrial docks.
+  subject_treatment: Regional teams with strong visual identity.
+  color_and_tone: Cobalt blue, sport orange, and steel gray.
+  lighting_and_shadow: Stadium lights with marine haze.
+  texture_and_material: Painted metal, rubber, and wet surfaces.
+  camera_and_composition: Central court with compact stands.
+  atmosphere_and_mood: Festive rivalry and competitive rhythm.
+  rendering_and_quality: League art for a sports game mode.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - gritty-horror
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-075.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

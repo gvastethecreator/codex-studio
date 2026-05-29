@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-055
+packId: pack_12
+name: Orchid Palace Puzzle Gardens
+category: 2. Arcane Temples & Mythic Realms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+visualDna:
+  aesthetic: Palatial gardens for rotation-and-light puzzles.
+  subject_treatment: Living architecture functioning as a level mechanism.
+  color_and_tone: Jade green, orchid pink, and light marble.
+  lighting_and_shadow: Sunlight guided by moving mirrors.
+  texture_and_material: Petals, polished stone, and fine bronze.
+  camera_and_composition: Geometric paths with clear visual goals.
+  atmosphere_and_mood: Serene beauty and intellectual challenge.
+  rendering_and_quality: Highly readable puzzle environment.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - combat-chaos
+  - murky
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-055.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-067
 packId: pack_11
 name: Feather Macro
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather
   form_and_line: Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None, natural-contour, feather-curve, vane-width taper, rachis-diameter
   atmosphere: Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy
   key_features: Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather, calamus-base
+  creative_brief: Barbules hook into neighboring barbules with the zipper precision of velcro designed by evolution and refined across sixty million years of flight. The rachis spine runs through the center of the vane like a keel through water, organizing chaos into aerodynamic surface, each barb contributing to a structure so perfect it taught aviation that flight was already solved. Keratin iridescence shifts from green to purple at the tilt of the feather, structural color born from surface physics rather than pigment.
 avoidRules:
   - blurry
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

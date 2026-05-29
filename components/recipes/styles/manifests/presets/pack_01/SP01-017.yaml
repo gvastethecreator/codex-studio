@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-017
 packId: pack_01
 name: Lomo LC-A
-category: 3. Film Stocks
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - film-and-analog-process
 visualDna:
   aesthetic: Toy camera film
   form_and_line: Blurry edges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heavy vignette
   atmosphere: Fun, unpredictable
   key_features: Tunnel vision
+  creative_brief: A plastic eye drunk on stray photons, letting color run where it shouldn't and shadow pool at the perimeter like spilled ink. The frame circles inward toward whatever caught the light's attention, unconcerned with sharpness or dignity. Joy over precision, serendipity over control.
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - film-stocks
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

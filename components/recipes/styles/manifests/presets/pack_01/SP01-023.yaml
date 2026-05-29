@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-023
 packId: pack_01
 name: GoPro Wide
-category: 5. Camera Types
+category: 6. Nature And Wildlife
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - camera-types
+  - nature-and-wildlife
 visualDna:
   aesthetic: Action camera POV
   form_and_line: Fisheye distortion
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Curved horizon
   atmosphere: Active, immersive
   key_features: Wide FOV
+  creative_brief: The horizon bends around the edges of experience, pulling the viewer inside the velocity of the moment. Every frame trembles with unspent kinetic energy, the wide embrace of the lens swallowing foreground and distance into a single breathless continuum. You are not observing the action; you are inside it.
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: camera-types
-  categoryName: 5. Camera Types
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
   tags:
     - photography-and-realism
-    - camera-types
+    - nature-and-wildlife
   supportedTasks:
     - image_generate
     - image_edit

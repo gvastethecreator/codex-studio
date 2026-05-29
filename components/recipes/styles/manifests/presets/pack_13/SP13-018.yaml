@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP13-018
+packId: pack_13
+name: Festival Lantern Summer
+category: 2. Slice of Life / School / Music
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+  - slice-of-life
+visualDna:
+  aesthetic: Summery anime set at a nighttime festival.
+  form_and_line: Soft strokes, stylized yukata silhouettes, and everyday acting.
+  color_palette: Lantern orange, night blue, and muted pink.
+  lighting_setup: Warm lanterns against a soft dark background.
+  material_texture: Light fabric, wooden stalls, and lantern paper.
+  render_quality: Colorful emotional scene with high clarity.
+  spatial_distortion: Medium shot with festive street depth.
+  atmosphere: Nostalgic joy and subtle romance.
+  key_features: Lanterns, fireworks in the distance, shared gesture.
+  creative_brief: A festival moment that blends warmth with gentle melancholy.
+avoidRules:
+  - photoreal
+  - bleak-horror
+  - low-detail
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-018.webp
+attributes:
+  negativePrompt: photoreal, bleak-horror, low-detail, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: slice-of-life-school-music
+  categoryName: 2. Slice of Life / School / Music
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+    - slice-of-life
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

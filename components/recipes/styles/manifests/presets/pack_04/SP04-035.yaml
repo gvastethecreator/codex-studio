@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-035
 packId: pack_04
 name: Minimalist Vector
-category: 3. Editorial & Poster
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Corporate Memphis
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Big limbs
   atmosphere: Friendly, corporate, inclusive blandness, diverse stock-photo cheer
   key_features: Flat, oversized limbs, blobby shapes
+  creative_brief: Oversized limbs and blobby shapes populate a world rendered in the cheerful flatness of startup optimism. Colors sit side by side without shadow or depth, committed to accessibility over atmosphere. This is the visual language of inclusion as aesthetic, where every figure is a friendly abstraction of the human condition.
 avoidRules:
   - detail
   - texture
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

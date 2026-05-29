@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-006
 packId: pack_04
 name: Webtoon Style
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: Vertical scroll comic
   form_and_line: Clean digital
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Pretty characters
   atmosphere: Drama, fantasy, romantic tension, digital-native storytelling
   key_features: Vertical flow, scrolling panel gap, animated layer
+  creative_brief: The scroll pulls downward like gravity itself, each panel gap a breath between beats of digital storytelling. Colors arrive saturated and immediate, cel-shaded drama flowing through the infinite vertical canvas of the phone screen. This is narrative engineered for the thumb and the heart simultaneously, where romance and fantasy drip-feed through luminous glass.
 avoidRules:
   - black and white
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

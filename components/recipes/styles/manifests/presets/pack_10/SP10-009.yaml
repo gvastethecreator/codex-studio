@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Divine, orderly
   key_features: Radial symmetry
+  creative_brief: Infinity caught in a lattice of stars, each intersection a prayer for the ineffable. Geometry becomes devotion, the repeating pattern a doorway to the boundless.
 avoidRules:
   - figurative
   - random
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

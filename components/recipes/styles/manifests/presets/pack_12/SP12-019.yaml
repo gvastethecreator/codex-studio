@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-019
+packId: pack_12
+name: Forgotten Subway Mutation Zone
+category: 7. Heists, Horror & Underworld Runs
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+visualDna:
+  aesthetic: Postindustrial horror in abandoned underground network.
+  subject_treatment: Mutated creatures emerging from rusted train cars.
+  color_and_tone: Toxic greens, black shadows, and signal red.
+  lighting_and_shadow: Flickering tubes and halos of humidity.
+  texture_and_material: Rust, mold, wet concrete, and exposed wires.
+  camera_and_composition: Narrow hallway with threat in depth.
+  atmosphere_and_mood: Discomfort, confinement, and constant alertness.
+  rendering_and_quality: Survival scene with focus on environmental tension.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - cheerful-light
+  - clean-surfaces
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-019.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

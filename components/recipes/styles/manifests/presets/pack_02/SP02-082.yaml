@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-082
 packId: pack_02
 name: Silly Scribble Doodle
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Childlike notebook scribble, wonky circles for heads, stick-thin limbs ending in mittens, deliberately bad proportions, joyful incompetence, crayon-on-kitchen-wall energy
   form_and_line: Loose wobbly graphite, multiple overlapping attempt lines, eraser smudges still visible, uncertain pen pressure
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Heads too big for stick bodies, hands drawn as five-ray sunbursts, no perspective whatsoever
   atmosphere: Innocent, joyful chaos, giggling anarchy, pure creative abandon
   key_features: Triangle roofs, spiral sun in corner, flowers as lollipop sticks, smiley-face everything
+  creative_brief: A hand that has not yet learned shame drags wax across paper with the full conviction of kindergarten genius. Circles wobble, colors trespass their borders, and every sun wears a smile because no one told it not to. The work hums with the frequency of pure making, before taste learned to say no.
 avoidRules:
   - realistic
   - proportional
@@ -37,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

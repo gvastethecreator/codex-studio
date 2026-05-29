@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-043
+packId: pack_13
+name: Soft Healing Ensemble
+category: 4. Shojo, Magical Girl & Visionary Classics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - shojo-magical-girl-and-visionary-classics
+visualDna:
+  aesthetic: Gentle domestic warmth, emotional bonds, soft expressions, seasonal comfort, fruit-themed naming, found-family coziness, watercolor art room, rain-soaked reunions
+  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
+  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
+  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
+  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
+  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
+  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  atmosphere: Healing, heartfelt, warm, gentle
+  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
+  creative_brief: Rain drums against the window of a room filled with the quiet courage of broken people learning to love themselves, seasonal light pooling in watercolor washes across found-family tenderness. Every gentle expression is a hard-won victory, warmth blooming through the cracks like spring after the longest winter.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-043.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: shojo-magical-girl-and-visionary-classics
+  categoryName: 4. Shojo, Magical Girl & Visionary Classics
+  tags:
+    - anime-character-and-lifestyle
+    - shojo-magical-girl-and-visionary-classics
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

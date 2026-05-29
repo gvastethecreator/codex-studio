@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-040
 packId: pack_04
 name: Infographic
-category: 3. Editorial & Poster
+category: 2. Editorial Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-and-poster
+  - editorial-illustration
 visualDna:
   aesthetic: Data visualization
   form_and_line: Thin icons
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Isometric
   atmosphere: Smart, data, editorial authority, knowledge elegance
   key_features: Charts, iconography, data-flow arrows
+  creative_brief: Data flows through thin icons and arrow pathways like a circulatory system made visible, every chart a heartbeat of information. Isometric modules stack in clean precision, form serving function with quiet confidence. This is complexity made legible, where the beauty lies not in embellishment but in the elegant arrangement of truth.
 avoidRules:
   - messy
   - art
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-and-poster
-  categoryName: 3. Editorial & Poster
+  categoryId: editorial-illustration
+  categoryName: 2. Editorial Illustration
   tags:
     - illustration-and-graphic-novel
-    - editorial-and-poster
+    - editorial-illustration
   supportedTasks:
     - image_generate
     - image_edit

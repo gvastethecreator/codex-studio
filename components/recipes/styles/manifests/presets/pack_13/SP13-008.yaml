@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP13-008
+packId: pack_13
+name: Gothic Vampire Manor
+category: 1. Core Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime
+visualDna:
+  aesthetic: Gothic vampire anime with dark elegance.
+  form_and_line: Dramatic fine outlines and ornate wardrobe.
+  color_palette: Burgundy, black, silver, and deep violet.
+  lighting_setup: Warm candelabras against dense shadows.
+  material_texture: Velvet, marble, and aged metal.
+  render_quality: Sophisticated nighttime-mansion illustration.
+  spatial_distortion: Perspectiva interior con profundidad teatral.
+  atmosphere: Aristocratic melancholy and subtle danger.
+  key_features: Escalinata, protagonista en capa, aura inquietante.
+  creative_brief: An iconic vampiric presence in a baroque setting, readable and elegant.
+avoidRules:
+  - photoreal
+  - cute-chibi
+  - daylight
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP13-008.webp
+attributes:
+  negativePrompt: photoreal, cute-chibi, daylight, watermark, text, logo
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: core-anime
+  categoryName: 1. Core Anime
+  tags:
+    - anime-character-and-lifestyle
+    - anime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

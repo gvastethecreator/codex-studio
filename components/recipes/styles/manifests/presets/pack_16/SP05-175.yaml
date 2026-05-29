@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-175
+packId: pack_16
+name: Revolutionary Girl Utena - Rose Duel Symbolism
+category: 3. 90s Golden Era
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - 90s-golden-era
+visualDna:
+  aesthetic: Rose-crested duels, theatrical academia, impossible symbolism, prince-aspiration elegance, staircase ritual drama, emotional allegory made architectural
+  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
+  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
+  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
+  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
+  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
+  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  atmosphere: Theatrical, symbolic, elegant, unsettling
+  key_features: Rose motifs, dueling platform staging, academy pageantry, allegorical poses, stylized ritual space
+  creative_brief: A girl who refuses to wait for princes, brandishing a rose as both weapon and declaration that the fairy tale ending was always a cage disguised as a reward. The academy is a stage, the dueling platform an altar, and every staircase ascends toward a revolution dressed in the language of ritual and the grammar of impossible architecture. To become a prince oneself is not imitation; it is the most elegant form of insurrection ever performed in a ballgown.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-175.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: 90s-golden-era
+  categoryName: 3. 90s Golden Era
+  tags:
+    - anime-classics-and-prestige
+    - 90s-golden-era
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

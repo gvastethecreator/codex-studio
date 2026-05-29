@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-078
 packId: pack_03
 name: Origami 3D
-category: 4. Applications
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Folded paper model
   form_and_line: Sharp creases
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Geometric, craft, zen-precision
   atmosphere: Delicate, precise, folded poetry
   key_features: No cuts, pure-fold geometry
+  creative_brief: 'No cuts, no glue — only the purity of the fold — sharp creases define every plane and vertex, and paper grain textures the flat surfaces with natural-fiber warmth. Soft lighting highlights fold geometry without burning the edges, and the absence of curves makes every angle a deliberate geometric decision. The image is folded poetry: traditional origami rendered in 3D with zen precision, a crane or lotus built from mathematical crease patterns that transform a single sheet into sculpture.'
 avoidRules:
   - curved
   - smooth
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

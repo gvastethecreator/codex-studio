@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-032
 packId: pack_11
 name: Latte Art
-category: 3. Artistic Mediums
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - oddities-and-novelty
 visualDna:
   aesthetic: Coffee foam drawing, espresso-canvas art, barista-crema, morning-ritual beauty
   form_and_line: Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Liquid surface, pour-path flow, surface-tension boundary, ceramic-cup curvature
   atmosphere: Cozy, morning, cafe-hum warmth, espresso-machine rhythm, first-sip quiet
   key_features: Cup rim, crema ring, latte-art rosetta, saucer-spoon, steamed-milk gloss, pour-steam wisps
+  creative_brief: Microfoam velvet spreads across espresso crema in the practiced pour of a barista whose hand knows the weight of the pitcher. The rosetta blooms on the liquid canvas, a fleeting masterpiece destined to be sipped into disappearance within minutes. Beauty floats on crema for three seconds of appreciation before the first taste dissolves the canvas back into coffee.
 avoidRules:
   - solid
   - paint
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 3. Artistic Mediums
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

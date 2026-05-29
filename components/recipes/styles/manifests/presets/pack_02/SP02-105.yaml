@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-105
 packId: pack_02
 name: Ed, Edd n Eddy - Jawbreaker Scam Cartoon
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Suburban cul-de-sac scam energy, boiling outlines, stretched faces, loud adolescent nonsense, sticky summer heat, impossible jawbreaker obsession, scam-blueprint slapstick, Canadian tween chaos
   form_and_line: Wobbly vibrating outlines, stretched smear frames, erratic contour boil, high-energy cartoon scribble
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
   atmosphere: Hyper, sweaty, scammy, loud
   key_features: Boiling line art, stretched jaw shapes, sticky suburban props, scam gadgets, exaggerated reaction takes
+  creative_brief: The outline trembles as if the drawing itself can barely contain its own voltage, suburban sidewalks baking under a sun that has witnessed every scheme fail by sunset and rise again by morning. Candy becomes currency and chaos the native tongue, each plan more elaborate and doomed than the last. Summer stretches infinite when the only adult supervision is the heat mirage shimmering off the cul-de-sac asphalt.
 avoidRules:
   - digital
   - HD
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

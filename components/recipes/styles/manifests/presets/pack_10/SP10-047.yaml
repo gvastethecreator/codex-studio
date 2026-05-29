@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-047
 packId: pack_10
 name: Damask Pattern
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Repeat
   atmosphere: Expensive, old
   key_features: Symmetry
+  creative_brief: Luxury woven into symmetry, acanthus leaves and fleur-de-lis repeating across silk and shadow. The pattern whispers of drawing rooms and candlelight, a texture of inherited elegance.
 avoidRules:
   - modern
   - messy
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

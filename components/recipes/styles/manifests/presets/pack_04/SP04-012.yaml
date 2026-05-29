@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-012
 packId: pack_04
 name: Moebius Retro Sci-Fi Comic (Dreamline)
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: Surreal sci-fi
   form_and_line: Fine stipple
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Alien shapes
   atmosphere: Dreamy, vast, silent alien wilderness, meditative solitude
   key_features: Complex background, stipple gradients, alien architecture
+  creative_brief: Stippled gradients breathe across alien deserts, each dot a grain of sand on worlds that never were. Pastel skies melt into dream-fade horizons where architecture grows like coral, silent and patient. This is the sci-fi of meditation, not conquest, where solitude in an alien landscape feels like coming home.
 avoidRules:
   - dark
   - heavy shadows
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

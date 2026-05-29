@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-057
 packId: pack_11
 name: Insect Eye
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering
   form_and_line: Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature
   atmosphere: Nature, intense, macro-silence, compound-gaze, arthropod-alert, alien-familiarity
   key_features: Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail
+  creative_brief: A thousand hexagonal lenses stare outward from the compound dome, each ommatidium catching its own fragment of the world in structural-color iridescence. The bristle between lenses catches macro flash in a constellation of catch-light hex arrays across the chitin curvature. The arthropod's gaze is a mosaic of tiny perspectives, a panoramic helmet built by evolution's own engineering department, alien and familiar in the same focus-stacked breath.
 avoidRules:
   - human eye
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-002
 packId: pack_03
 name: Unreal Engine 5 Next-Gen Real-Time Engine
-category: 5. Render Engines
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - render-engines
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Real-time next-gen game
   form_and_line: Lumen global illumination
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Immersive, interactive, cinematic depth
   key_features: High fidelity, real-time path tracing
+  creative_brief: A world rendered in real time yet indistinguishable from a paused dream — Nanite geometry holds infinite detail while Lumen traces every photon's journey through volumetric space. The image breathes with the immediacy of a live game loop yet carries the compositional weight of a final frame. Virtual production meets AAA ambition in a render that refuses to acknowledge the boundary between interactive and cinematic.
 avoidRules:
   - pre-rendered
   - low poly
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: render-engines
-  categoryName: 5. Render Engines
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - render-engines
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

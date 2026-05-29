@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-002
 packId: pack_04
 name: Silver Age Comic
-category: 1. Comic Book Styles
+category: 1. Comics And Graphic Novel
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comic-book-styles
+  - comics-and-graphic-novel
 visualDna:
   aesthetic: Cosmic silver-age dynamism, Jack Kirby style, crackling energy dots, cosmic scale, new-god ambition
   form_and_line: Dynamic energy, Kirby dots, crackle, cosmic radiation lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Exaggerated perspective
   atmosphere: Epic, sci-fi, super-powered wonder, interstellar drama
   key_features: Kirby Krackle, cosmic energy field, dynamic foreshortening
+  creative_brief: Kirby Krackle erupts across the cosmic canvas, each crackling dot a universe of potential energy held in suspension. The linework vibrates with silver-age awe, where every fist and cape thrusts toward an infinite horizon of wonder. This is visual scripture for the age of atomic optimism, drawn by a hand that believed the cosmos could be conquered with courage and a perfectly foreshortened punch.
 avoidRules:
   - dark
   - gritty
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comic-book-styles
-  categoryName: 1. Comic Book Styles
+  categoryId: comics-and-graphic-novel
+  categoryName: 1. Comics And Graphic Novel
   tags:
     - illustration-and-graphic-novel
-    - comic-book-styles
+    - comics-and-graphic-novel
   supportedTasks:
     - image_generate
     - image_edit

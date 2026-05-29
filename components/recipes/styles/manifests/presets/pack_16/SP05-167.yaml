@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-167
+packId: pack_16
+name: Outlaw Star - Engine-Trail Treasure Chase
+category: 3. 90s Golden Era
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - 90s-golden-era
+visualDna:
+  aesthetic: Treasure-hunter space adventure, grappler-arm ship duels, outlaw swagger, dusty ports and star corridors, pulpy cosmic optimism with rough-edged bravado
+  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
+  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
+  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
+  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
+  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
+  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  atmosphere: Adventurous, cocky, starry, scrappy
+  key_features: Starship silhouettes, engine trails, outlaw coats, cosmic route maps, treasure-chase action framing
+  creative_brief: Cosmic highwaymen chasing legend between asteroid belts, a grappler-arm ship that fights with the elegance of a street brawler and the heart of a treasure map. Freedom measured in light-years and engine trails, every port a new scheme, every star a potential fortune or a grave. The galaxy is too big for laws, too wild for borders, and just the right size for a crew that believes the greatest treasure is the chase itself.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-167.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: 90s-golden-era
+  categoryName: 3. 90s Golden Era
+  tags:
+    - anime-classics-and-prestige
+    - 90s-golden-era
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

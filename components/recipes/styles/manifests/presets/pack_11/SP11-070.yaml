@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-070
 packId: pack_11
 name: Ink in Water
-category: 5. Micro/Macro
+category: 5. Oddities And Novelty
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - oddities-and-novelty
 visualDna:
   aesthetic: Cloud tank, ink-diffusion, fluid-sculpture, dye-dance, aqueous-art
   form_and_line: Swirls, mushroom-cloud, vortex-sheet, tendril-curls, turbulence-eddy, laminar-flow ribbons
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Dissolving, dispersion-front, plume-expansion, diffusion-gradient, dissipating-edge
   atmosphere: Artistic, flow, fluid-dynamics peace, ink-drop meditation, underwater-weather
   key_features: Smoke shape, ink-tendril, mushroom-cap, vortex-ring, dye-gradient, backlit-glow, turbulence-texture
+  creative_brief: Black plumes mushroom through clear water in slow-motion blossoms, tendrils curling outward into delicate vortices that visualize the invisible turbulence of fluid dynamics. The ink dances in three dimensions for a few seconds of dispersion before diffusion wins and the sculpture fades to grey then nothing. Fluid dynamics becomes abstract expressionism in the cloud tank, a dye-dance captured one frame before entropy dissolves the mushroom-cap masterpiece back into uniform water.
 avoidRules:
   - still
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: oddities-and-novelty
+  categoryName: 5. Oddities And Novelty
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - oddities-and-novelty
   supportedTasks:
     - image_generate
     - image_edit

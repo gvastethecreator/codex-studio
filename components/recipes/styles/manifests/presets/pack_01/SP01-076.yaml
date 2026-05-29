@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-076
 packId: pack_01
 name: Forensic Photography
-category: 4. Genres
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - lighting-techniques
 visualDna:
   aesthetic: Crime scene evidence
   form_and_line: Clinical, ruler scale
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Unsettling, factual
   key_features: Evidence marker
+  creative_brief: Truth rendered in the merciless equality of flash, every surface stripped of mystery and poured into evidence. The camera becomes not an artist but a witness, its testimony inscribed in clinical flatness that refuses interpretation yet demands accounting.
 avoidRules:
   - artistic
   - emotional
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - genres
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

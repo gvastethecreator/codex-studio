@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-040
 packId: pack_11
 name: Kawaii Pastel
-category: 4. Aesthetics
+category: 2. Food And Commercial Fun
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - food-and-commercial-fun
 visualDna:
   aesthetic: Sanrio ultra-cute mascot illustration, Hello Kitty innocence, kawaii overload
   form_and_line: Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Big eyes, sparkle-pupil, oversized-head, tiny-body, chibi-extremity, bean-proportion
   atmosphere: Joy, innocence, pastel-paradise, friendship-festival, sugar-rush delight, unconditional-sweetness
   key_features: Sparkles, ribbon-bows, heart-motifs, blush-stickers, star-twinkle accents, animal-ear headbands
+  creative_brief: Sparkle-pupil eyes occupy half of every face in a dimension where cuteness is the only physical law and gravity bends toward joy. Cotton-candy skies rain marshmallow drops onto creatures with heads too big for their tiny bean-proportioned bodies. Aggressive sweetness radiates from every pastel surface, weaponizing innocence into an overwhelming sensory embrace that leaves no room for anything but smile.
 avoidRules:
   - dark
   - scary
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: food-and-commercial-fun
+  categoryName: 2. Food And Commercial Fun
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - food-and-commercial-fun
   supportedTasks:
     - image_generate
     - image_edit

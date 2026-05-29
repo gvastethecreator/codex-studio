@@ -103,6 +103,7 @@ describe('buildStudioJobRetryRequest', () => {
         reasoningEffort: 'medium',
         serviceTier: 'fast',
       },
+      references: [],
       sourceSpec: expect.objectContaining({
         id: 'spec-1',
         prompt: 'Retry this scene',
@@ -126,6 +127,46 @@ describe('buildStudioJobRetryRequest', () => {
     expect(request.sourceSpec?.assets[0]).not.toBe(detail.job.sourceSpec?.assets[0]);
   });
 
+  it('replays inline task assets through references so the backend can persist local paths', () => {
+    const detail = createDetail({
+      job: {
+        ...createDetail().job,
+        sourceSpec: {
+          ...createDetail().job.sourceSpec!,
+          assets: [
+            {
+              role: 'input',
+              name: 'uploaded.png',
+              dataUrl: 'data:image/png;base64,UPLOAD',
+              strength: 1,
+            },
+            {
+              role: 'reference',
+              name: 'style.png',
+              dataUrl: 'data:image/png;base64,STYLE',
+              strength: 0.25,
+            },
+          ],
+        },
+      },
+    });
+
+    const request = buildStudioJobRetryRequest(detail, { batchId: 'batch-retry-inline' });
+
+    expect(request.references).toEqual([
+      {
+        name: 'uploaded.png',
+        dataUrl: 'data:image/png;base64,UPLOAD',
+        strength: 1,
+      },
+      {
+        name: 'style.png',
+        dataUrl: 'data:image/png;base64,STYLE',
+        strength: 0.25,
+      },
+    ]);
+  });
+
   it('falls back to recorded prompts when a source spec is unavailable', () => {
     const detail = createDetail({
       job: {
@@ -144,5 +185,6 @@ describe('buildStudioJobRetryRequest', () => {
     expect(request.providerId).toBeUndefined();
     expect(request.prompt).toBe('Fallback prompt');
     expect(request.sourceSpec).toBeNull();
+    expect(request.references).toBeUndefined();
   });
 });

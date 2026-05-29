@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-001
+packId: pack_14
+name: Cathedral Eclipse Procession
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Dark sacred fantasy with processional elegance.
+  form_and_line: Long ritual silhouettes, gothic ornament, and a solemn composition.
+  color_palette: Negro obsidiana, marfil antiguo y oro quemado.
+  lighting_setup: Eclipse backlight with cathedral interior beams.
+  material_texture: Wet stone, liturgical metal, and heavy velvet.
+  render_quality: Key art premium con dramatismo controlado.
+  spatial_distortion: Deep central nave with monumental perspective.
+  atmosphere: Reverence, fatality, and ceremonial magnetism.
+  key_features: Sacred procession, eclipsed stained glass, silent authority.
+  creative_brief: A cathedral procession under eclipse—dark, majestic, and perfectly readable.
+avoidRules: [photoreal, cute, flat-light, watermark, text, logo, low-quality]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-001.webp }
+attributes:
+  negativePrompt: photoreal, cute, flat-light, watermark, text, logo, low-quality
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

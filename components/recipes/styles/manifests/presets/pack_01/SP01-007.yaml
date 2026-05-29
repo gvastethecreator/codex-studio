@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-007
 packId: pack_01
 name: Silhouette Portrait
-category: 1. Portrait Styles
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-styles
+  - lighting-techniques
 visualDna:
   aesthetic: Dramatic silhouette photography, dark outline against a bright background
   subject_treatment: Sharp profile edge, completely obscured facial details, focus on shape and form
@@ -20,6 +20,7 @@ visualDna:
   camera_and_composition: Graphic composition, strong negative space, clear outline
   atmosphere_and_mood: Mysterious, dramatic, anonymous, artistic, epic
   rendering_and_quality: High quality artistic photography, crisp edges
+  creative_brief: Form stripped to its barest contour, a figure consumed by darkness standing sentinel against a sky on fire, identity withheld so that shape alone carries the full weight of presence. All that remains is the edge, the razor-thin outline where self meets light, mystery held entirely in the curve of a shoulder or the angle of a jaw. The anonymous becomes the monumental, absence speaking louder than any detail ever could.
 avoidRules:
   - illustration
   - painting
@@ -43,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-styles
-  categoryName: 1. Portrait Styles
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - portrait-styles
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

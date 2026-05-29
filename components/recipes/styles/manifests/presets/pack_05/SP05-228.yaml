@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: Post-collapse robot mortality, pale ruin vistas, lonely black-and-white heroism, existential combat against entropy, dust and silence as atmosphere
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
   atmosphere: Elegiac, pale, lonely, mythic
   key_features: Pale wasteland backdrops, elegant robot forms, collapse-era ruins, lonely hero framing, entropy motifs
+  creative_brief: A white silence stretches across the end of all things, where robots learn to grieve before they learn to die. Elegance survives the ruins, a lonely figure in black against the pale ghost of civilization. The last beauty is a machine that understands loss.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: mecha-and-cyberpunk
   categoryName: 7. Mecha & Cyberpunk
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - mecha-and-cyberpunk
   supportedTasks:
     - image_generate

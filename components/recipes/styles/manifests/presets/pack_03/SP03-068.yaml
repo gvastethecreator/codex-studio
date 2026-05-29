@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-068
 packId: pack_03
 name: 3D Scan (Photogrammetry)
-category: 4. Applications
+category: 3. Environment And Worldbuilding
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - environment-and-worldbuilding
 visualDna:
   aesthetic: Scanned real object
   form_and_line: Realistic geometry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Mesh errors (optional)
   atmosphere: Real, grounded, authentic capture
   key_features: Photo realism, surface-level scan detail
+  creative_brief: 'Thousands of photographs resolve into a single mesh — photogrammetry captures the authentic noise of the real world, every surface imperfection a gift from the scan rather than an artist''s decision. Baked delit lighting carries the memory of the original capture environment, and photo-textured surfaces read as documentary truth rather than constructed fiction. The image channels Quixel Megascans realism: a rock, a tree stump, a ruined wall, rendered with the authority of something that actually exists.'
 avoidRules:
   - perfect
   - modeled
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: environment-and-worldbuilding
+  categoryName: 3. Environment And Worldbuilding
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - environment-and-worldbuilding
   supportedTasks:
     - image_generate
     - image_edit

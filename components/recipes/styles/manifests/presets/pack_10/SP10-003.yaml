@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Aggressive angles
   atmosphere: Revolutionary, strong
   key_features: Typography elements
+  creative_brief: The machine speaks in diagonal thunder, red and black charging across paper like revolution itself. Every composition is a declaration, every angle a refusal of the old world.
 avoidRules:
   - soft
   - nature
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

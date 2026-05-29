@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-051
 packId: pack_03
 name: Medical Illustration 3D
-category: 4. Applications
+category: 2. Organic And Character Cgi
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - applications
+  - organic-and-character-cgi
 visualDna:
   aesthetic: Clean anatomy render
   form_and_line: Cutaway view
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Textbook, educational, clinical-reference
   atmosphere: Scientific, clean, knowledge-dense
   key_features: Label space, cutaway clarity
+  creative_brief: 'The body opens like a textbook — cutaway views reveal layered systems in clinical red, blue, and white, every vessel and bone rendered with diagrammatic clarity rather than surgical gore. Shadowless diagnostic lighting flattens drama in favor of legibility, and translucent tissue gradients map density to opacity with the precision of a radiology workstation. The image is knowledge made visible: anatomy as architecture, the human machine explained through the lens of medical illustration.'
 avoidRules:
   - gross
   - blood
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: applications
-  categoryName: 4. Applications
+  categoryId: organic-and-character-cgi
+  categoryName: 2. Organic And Character Cgi
   tags:
     - 3d-and-cgi-rendering
-    - applications
+    - organic-and-character-cgi
   supportedTasks:
     - image_generate
     - image_edit

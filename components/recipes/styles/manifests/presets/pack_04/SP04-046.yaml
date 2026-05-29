@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-046
 packId: pack_04
 name: Speedpaint
-category: 4. Concept Art
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - concept-art
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Quick digital painting
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Undefined details
   atmosphere: Energetic, rough, ideation velocity, creative flow
   key_features: Composition focus, gestural strokes, value-block emphasis
+  creative_brief: Brushes move at the speed of imagination, shapes emerging from broad strokes before detail has permission to arrive. Values establish form in three tones, mood before mechanics, atmosphere before anatomy. This is the idea at the moment of its birth, still wet and breathing and uncommitted to any final form.
 avoidRules:
   - detailed
   - polished
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: concept-art
-  categoryName: 4. Concept Art
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - concept-art
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

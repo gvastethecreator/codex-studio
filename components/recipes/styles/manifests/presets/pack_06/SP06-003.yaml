@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-003
 packId: pack_06
 name: Acrylic (Modern)
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Stylized shapes
   atmosphere: Energetic, contemporary
   key_features: Opaque paint layers
+  creative_brief: Plastic pigment sits proud on the surface, unapologetic in its opacity, drying faster than thought. Every flat plane announces itself with synthetic confidence, color refusing to blend where boundaries are meant to hold. The image crackles with contemporary energy, modern in spirit and material truth.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

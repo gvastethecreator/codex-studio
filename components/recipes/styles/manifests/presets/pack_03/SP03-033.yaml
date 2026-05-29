@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-033
 packId: pack_03
 name: Neon City (Cyberpunk)
-category: 2. Lighting & Atmosphere
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Night city rain
   form_and_line: Reflections
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Dystopian, cool, future-noir
   key_features: Neon glow
+  creative_brief: 'Rain-slicked asphalt mirrors a sky that never existed — pink and cyan neon bleed across wet surfaces, every puddle a portal to the signage above. Emissive kanji and holographic advertisements paint the night in electric magenta, while shadows pool in alleyways where the glow cannot reach. Blade Runner''s grandchildren walk these streets: future-noir rendered in 3D, dystopian beauty that tastes like ozone and filter cigarettes.'
 avoidRules:
   - daylight
   - sun
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

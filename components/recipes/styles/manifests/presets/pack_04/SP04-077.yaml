@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-077
 packId: pack_04
 name: Graffiti (Piece)
-category: 5. Ink & Print
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Wildstyle mural
   form_and_line: Outline and fill
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Arrow shapes
   atmosphere: Hip hop, bold, wall-of-fame prestige, block-party spectacle
   key_features: Arrows, letter connections, dimension bevel
+  creative_brief: Color fills interlock like puzzle pieces of pure style, wildstyle letterforms bending into abstraction and back. Arrows, connections, and dimensional drops build a visual complexity that rewards the second look and the third. This is the wall as gallery, where the piece claims space with the authority of paint and the generosity of public art.
 avoidRules:
   - tag
   - messy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

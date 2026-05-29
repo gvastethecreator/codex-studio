@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-045
 packId: pack_01
 name: Light Painting
-category: 2. Lighting
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - lighting-techniques
 visualDna:
   aesthetic: Long exposure light trails
   form_and_line: Glowing streaks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Light scribbles
   atmosphere: Magical, kinetic
   key_features: Dark background
+  creative_brief: Light granted the freedom of a brushstroke, luminous calligraphy inscribed upon the darkness of time itself. Neon ribbons tracing invisible choreographies through space, the dancer vanished but their movement permanently etched. A photograph that remembers not the object but its path, duration collapsed into a single radiant glyph.
 avoidRules:
   - static light
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - lighting
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

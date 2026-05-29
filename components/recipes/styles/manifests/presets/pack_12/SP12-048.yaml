@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-048
+packId: pack_12
+name: Crystal Metro Hoverline
+category: 1. Neon Urban & Night Ops
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+visualDna:
+  aesthetic: Crystalline city crossed by fast hover lines.
+  subject_treatment: Armed commuters and station guardians.
+  color_and_tone: Bright cyan, pure white, and soft violet.
+  lighting_and_shadow: Clean futuristic transit lighting.
+  texture_and_material: Tempered crystal, brushed metal, and holograms.
+  camera_and_composition: Central station as the flow hub.
+  atmosphere_and_mood: Elegant modernity with latent tension.
+  rendering_and_quality: Transit scene for an action RPG.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - medieval
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-048.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

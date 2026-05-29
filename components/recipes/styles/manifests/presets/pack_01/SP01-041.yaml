@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-041
 packId: pack_01
 name: Bioluminescence
-category: 2. Lighting
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - portrait-and-studio
 visualDna:
   aesthetic: Glowing organic light
   form_and_line: Soft glow
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Magical, alien
   key_features: Dark background
+  creative_brief: Life that generates its own radiance from within, the deep-sea grammar of glow against absolute darkness. Organisms writing their presence in photons, neon-bright signals suspended in liquid void. A world where light is not cast but born, where every creature carries its own constellation beneath its skin.
 avoidRules:
   - sun
   - day
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - lighting
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-012
 packId: pack_11
 name: Solarpunk
-category: 4. Aesthetics
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: Eco-futurist utopia, green-tech dreamscape, harmonious tomorrow, nature-integrated civilization
   form_and_line: Art Nouveau curves + tech, organic spirals, flowing botanicals, branch-like infrastructure
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Plants growing on buildings, vertical-forest integration, root-network architecture, canopy-bound city
   atmosphere: Hopeful, bright, sustainable, regenerative calm, symbiotic warmth, tomorrow's garden
   key_features: Nature integration, solar-panel mosaics, green-roof cascades, butterfly-accompaniment
+  creative_brief: Glass towers breathe through chlorophyll veins, spiraling toward a sun that promises instead of threatens. Art Nouveau curves intertwine with solar panels in a city where technology and nature stopped fighting and started collaborating. Tomorrow glows green against a sky scrubbed clean of yesterday's exhaust, butterflies tracing paths through vertical forests of hope.
 avoidRules:
   - dark
   - industrial
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

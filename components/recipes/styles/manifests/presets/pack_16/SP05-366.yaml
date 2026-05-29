@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: SP05-366
+packId: pack_16
+name: Kono Oto Tomare! - Koto Ensemble Resonance
+category: 6. Sports, Competition & Performance
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-classics-and-prestige
+  - sports-competition-and-performance
+visualDna:
+  aesthetic: School performance drama around traditional strings, lacquered instruments, stage light, group harmony and personal healing rendered through poised hands and emotional ensemble spacing
+  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
+  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
+  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
+  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
+  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
+  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
+  atmosphere: Earnest, resonant, delicate, uplifting
+  key_features: Koto string detail, seated ensemble staging, lacquer gleam, hand-position focus, recital-hall warmth
+  creative_brief: Thirteen silk strings hum in unison across a recital-hall stage, each pluck a voice in a fragile democracy of sound. Lacquer gleams under warm spotlights as adolescent hands coax centuries-old timber into something achingly present.
+avoidRules:
+  - realistic
+  - 3d render
+  - photo
+  - live action
+  - western comic
+  - ugly
+  - bad anatomy
+  - low quality
+  - jpeg artifacts
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-366.webp
+attributes:
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: sports-competition-and-performance
+  categoryName: 6. Sports, Competition & Performance
+  tags:
+    - anime-classics-and-prestige
+    - sports-competition-and-performance
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

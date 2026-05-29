@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-060
 packId: pack_02
 name: Night Vision (Green)
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Intensifier tube
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Bloom, tube flare, halo around bright sources
   atmosphere: Stealth, hidden, nocturnal ops, predator unseen
   key_features: Green, tube whine, IR illuminator beam
+  creative_brief: Darkness transformed into a luminous green theater where every stray photon is amplified into a cascade of eerie clarity. The world seen through this phosphor screen belongs to sentinels and night-hunters — those who navigate by starlight intensified, where halos bloom around bright sources and static snow dances at the edge of perception. What hides in shadow is made visible, but never fully known.
 avoidRules:
   - color
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

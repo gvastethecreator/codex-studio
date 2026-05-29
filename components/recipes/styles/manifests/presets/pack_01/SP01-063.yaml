@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-063
 packId: pack_01
 name: Real Estate (HDR)
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: House interior
   form_and_line: Wide angle
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Unnatural dynamic range
   atmosphere: Bright, selling
   key_features: Windows visible
+  creative_brief: 'Every corner is bright with the insistence of a sales pitch, shadows banished so thoroughly the room forgets it ever had a night side. Color achieves unnatural saturation that makes the space look more real than real: hyper-present, hyper-available, every surface gleaming with the suppressed urgency of the transaction. The window offers a view designed to suggest that outside is merely an extension of what could be owned.'
 avoidRules:
   - shadows
   - dark corners
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

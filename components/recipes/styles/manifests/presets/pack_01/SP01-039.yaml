@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-039
 packId: pack_01
 name: Candlelight
-category: 2. Lighting
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting
+  - portrait-and-studio
 visualDna:
   aesthetic: Lit by fire
   form_and_line: Soft flickering
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Romantic, secret
   key_features: Warm glow
+  creative_brief: The trembling circumference of a single flame holding back the ancient dark, warmth that predates electricity speaking in amber and umber. Shadows flicker and breathe, alive with the rhythm of combustion. Intimacy borrowed from a time when night meant fire and every face was lit by something burning.
 avoidRules:
   - electric light
   - blue
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting
-  categoryName: 2. Lighting
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - lighting
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-056
 packId: pack_01
 name: Architecture (Modern)
-category: 4. Genres
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - genres
+  - portrait-and-studio
 visualDna:
   aesthetic: Building facade
   form_and_line: Geometric lines
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Perspective correction
   atmosphere: Imposing, structured
   key_features: Vertical lines
+  creative_brief: Geometry climbs toward a sky it cannot reach, every vertical line a declaration of ambition, every grid of glass a mirror that swallows the heavens and returns them as abstraction. Shadow carves the facade into a canvas of sharp light and deep void, the building posing as its own blueprint. No presence disturbs the dialogue between line and surface.
 avoidRules:
   - people
   - messy
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: genres
-  categoryName: 4. Genres
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - genres
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

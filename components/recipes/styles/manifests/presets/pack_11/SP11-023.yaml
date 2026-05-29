@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-023
 packId: pack_11
 name: Tin Toy
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity
   form_and_line: Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance
   atmosphere: Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia
   key_features: Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail
+  creative_brief: Pressed metal bears the ghost of lithographed ink, a wind-up heart ticking through the decades with clockwork precision. The key turns with satisfying resistance, each click a promise of mechanized wonder translated through gear-train mathematics. Mantelpiece nostalgia in stamped steel and hand-soldered joints, a robot waiting for the next wound spring to release its mechanical soul.
 avoidRules:
   - plastic
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

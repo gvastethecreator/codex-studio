@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-070
 packId: pack_10
 name: Azulejo Tile
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Classic, bright
   key_features: Square grid
+  creative_brief: Cobalt blue dancing across white glaze in geometries borrowed from Moorish palaces, each tile a fragment of a larger narrative. Ceramic carries the light of Lisbon, a wall that sings in painted porcelain.
 avoidRules:
   - modern
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

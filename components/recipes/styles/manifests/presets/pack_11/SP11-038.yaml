@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-038
 packId: pack_11
 name: Biopunk
-category: 4. Aesthetics
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: Genetic engineering, flesh-machine hybrid, wet-lab nightmare, chromosome-gothic
   form_and_line: Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy
   atmosphere: Unsettling, biological, vivisection-table dread, accelerated-evolution, recombinant-anxiety
   key_features: Flesh tubes, umbilical-cord coils, amniotic-fluid drip, pulsating-vein networks, grown-eye clusters, chitin-plate armor
+  creative_brief: Flesh and machine merge at the wet edge of genetic possibility, sinew wrapped around chitin in an unholy synthesis born from the petri dish. Incubator light pulses green across amniotic tanks where evolution accelerates beyond nature's patience into Cronenberg territory. The body becomes a construction site where biology learns to upgrade itself through modification and recombinant madness.
 avoidRules:
   - metal
   - dry
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit

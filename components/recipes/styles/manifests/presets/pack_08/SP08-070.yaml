@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP08-070
 packId: pack_08
 name: Fire Dress
-category: 4. Fabric & Texture Focus
+category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Burning
   atmosphere: Powerful, magic, arena-entrance electricity, revolutionary-symbol awe, controlled-combustion beauty
   key_features: Flames, cape ignition, ember trail, heat shimmer, synthetic flame effect
+  creative_brief: Flame tongues licking upward from a hemline that consumes itself and regenerates in the same instant, crimson core glowing through gold-white heat that shimmers the air around the silhouette into mirage. The cape sweeps behind in a conflagration trained to obey couture, synthetic ember fibers scattering light like a controlled supernova, the dress burning without being consumed, a spectacle that walks the line between tribute and revolution.
 avoidRules:
   - cold
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_08
   packName: Fashion & Costume
   categoryId: fabric-and-texture-focus
-  categoryName: 4. Fabric & Texture Focus
+  categoryName: 5. Fabric & Texture Focus
   tags:
     - fashion-and-costume
     - fabric-and-texture-focus
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

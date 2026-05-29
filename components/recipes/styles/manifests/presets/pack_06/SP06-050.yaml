@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-050
 packId: pack_06
 name: Pixel Art (16-bit)
-category: 1. Digital Art
+category: 4. Digital Art
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blocky
   atmosphere: Nostalgic
   key_features: Grid alignment
+  creative_brief: Every pixel earns its place through limitation, the 16-bit palette a gauntlet that only intentional color survives. Sprites snap to grid with the conviction of a world built from discrete units, continuous reality rejected in favor of the quantized. The image carries the weight of every cartridge ever blown into, every save file ever lost.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: digital-art
-  categoryName: 1. Digital Art
+  categoryName: 4. Digital Art
   tags:
     - essential-art-styles
     - digital-art
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

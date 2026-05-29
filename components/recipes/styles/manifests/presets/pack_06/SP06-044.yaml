@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-044
 packId: pack_06
 name: Drypoint
-category: 5. Printmaking
+category: 3. Printmaking
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Soft, rich
   key_features: Burr texture
+  creative_brief: A needle scratches directly into metal, throwing up a burr that holds ink like velvet, giving every line a halo of soft darkness. The edition is small — the burr crushes under pressure after a handful of pulls, the image degrading into a ghost of its first impression. Rarity is structural, not artificial.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: printmaking
-  categoryName: 5. Printmaking
+  categoryName: 3. Printmaking
   tags:
     - essential-art-styles
     - printmaking
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

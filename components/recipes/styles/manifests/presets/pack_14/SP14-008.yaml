@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-008
+packId: pack_14
+name: Funeral Rose Cavalier
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Funeral knight with refined dark romanticism.
+  form_and_line: Noble profile, ceremonial sword, and fading floral cape.
+  color_palette: Withered rose, velvet black, and cold silver.
+  lighting_setup: Gray dawn with glints over damp petals.
+  material_texture: Dried roses, satin-finished metal, and cold marble.
+  render_quality: Lyrical illustration with high visual sophistication.
+  spatial_distortion: Monumental cemetery in soft perspective.
+  atmosphere: Restrained grief, honor, and tragic beauty.
+  key_features: Funeral roses, motionless guard, gothic monuments.
+  creative_brief: A knight who seems to guard the boundary between love and death.
+avoidRules: [photoreal, cartoon-comedy, bright-summer, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-008.webp }
+attributes:
+  negativePrompt: photoreal, cartoon-comedy, bright-summer, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-002
 packId: pack_09
 name: Mahogany (Polished)
-category: 1. Natural Materials
+category: 2. Organic And Bio Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - natural-materials
+  - organic-and-bio-materials
 visualDna:
   aesthetic: Expensive furniture wood
   form_and_line: Subtle grain
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Elegant, rich
   key_features: Smooth surface
+  creative_brief: Channel the depths of polished mahogany where light sinks into a sea of reddish amber and emerges transformed. The surface should feel like still water frozen in wood, deep, reflective, impossibly smooth. Elegance here is not applied but released from within, a slow exhale of centuries.
 avoidRules:
   - dusty
   - rough
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: natural-materials
-  categoryName: 1. Natural Materials
+  categoryId: organic-and-bio-materials
+  categoryName: 2. Organic And Bio Materials
   tags:
     - texture-and-materiality
-    - natural-materials
+    - organic-and-bio-materials
   supportedTasks:
     - image_generate
     - image_edit

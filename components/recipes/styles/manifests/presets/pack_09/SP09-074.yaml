@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-074
 packId: pack_09
 name: Carpet (Shag)
-category: 5. Elemental & FX
+category: 5. Fx And Procedural Materiality
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - elemental-and-fx
+  - fx-and-procedural-materiality
 visualDna:
   aesthetic: 70s rug
   form_and_line: Long fibers
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Matted
   atmosphere: Cozy, retro
   key_features: Messy pile
+  creative_brief: Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a landscape of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel like visual noise, a field of synthetic softness that invites bare feet and collects the ghosts of a decade. Capture the brazen comfort of retro rebellion.
 avoidRules:
   - berber
   - flat
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: elemental-and-fx
-  categoryName: 5. Elemental & FX
+  categoryId: fx-and-procedural-materiality
+  categoryName: 5. Fx And Procedural Materiality
   tags:
     - texture-and-materiality
-    - elemental-and-fx
+    - fx-and-procedural-materiality
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-097
 packId: pack_02
 name: Rejected Corporate Mascot
-category: 6. Caricature & Cartoon Styles
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Corporate mascot that should never have been approved, dead-soulless-eyes with corporate-smile stretched too wide, unsettling hybrid of human-and-product, clip-art-from-hell energy, Duolingo-owl-menace turned up to eleven, fast-food-mascot abandoned in storage unit, insurance-gecko's-evil-twin, unblinking-happiness that registers as threat
   form_and_line: Too-smooth vector contours, mathematically-perfect symmetry that feels wrong, clip-art simplicity taken to uncanny extreme
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Giant-head-too-small-body mascot proportions, hands permanently in thumbs-up, costume-seam-zipper visible
   atmosphere: Deeply wrong, corporate-horror, abandoned-by-marketing sadness, unsettling-brand-silence, focus-group-rejection
   key_features: Dead glossy eyes, too-wide corporate smile, thumbs-up frozen pose, mascot-costume seams, plastic-vector perfection, soulless brand energy
+  creative_brief: Happiness engineered to specification, its shine too perfect and its gaze too steady, a grin that forgot what warmth feels like somewhere between the brand guidelines and the focus group. The seams of the costume show at the neckline, hinting at the hollow interior where approval was supposed to live. Something designed to charm that instead teaches the grammar of unease.
 avoidRules:
   - professional
   - friendly
@@ -38,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature & Cartoon Styles
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,4 +1,5 @@
 import type { RecipeId } from '../types';
+import { buildPackFallbackCatalog } from './stylePresetVisuals';
 
 const recipeCardImageFiles = import.meta.glob('../assets/recipes/cards/*.webp', {
   eager: true,
@@ -46,6 +47,7 @@ export const RECIPE_CARD_IMAGES = recipeCardCatalog as Partial<
 >;
 export const STYLE_CATEGORY_IMAGES = buildUrlCatalog(styleCategoryImageFiles);
 export const STYLE_DEFAULT_IMAGES = buildUrlCatalog(styleDefaultImageFiles);
+export const STYLE_PACK_FALLBACK_IMAGES = buildPackFallbackCatalog(STYLE_DEFAULT_IMAGES);
 
 export const STYLE_CATEGORY_PREVIEWS: Record<string, string> = {
   '1. Portrait Styles': stylePreviewCatalog['pack_01_portrait_styles'] ?? '',

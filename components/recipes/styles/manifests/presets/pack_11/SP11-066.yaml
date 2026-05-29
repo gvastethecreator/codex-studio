@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-066
 packId: pack_11
 name: Glitter Macro
-category: 5. Micro/Macro
+category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - retro-pop-and-kitsch
 visualDna:
   aesthetic: Pile of glitter, sparkle-drift, craft-mess, micro-mirror chaos, holographic-confetti
   form_and_line: Tiny hexagons, polygonal-flake edges, irregular-cut shapes, star-confetti, micro-geometry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: None, random-scatter, pile-depth, flake-overlap, specular-point-cloud
   atmosphere: Fun, bright, art-room joy, celebration-scatter, make-a-mess, glitter-in-everything
   key_features: Bling, individual-flake shape, specular-sparkle hot-spot, hexagonal-glitter, holo-shift, bokeh-background, confetti-mix
+  creative_brief: 'Holographic flakes scatter across the frame like a disco ball caught in a blender, each micro-hexagon reflecting its own version of the light source in specular-point-cloud celebration. PET film edges catch metallic brilliance at glancing angles while confetti-rainbow chaos buries the frame in craft-project aftermath. The kindergarten-art-room singularity: a pile of glitter photographed at macro scale where every individual flake becomes a tiny mirror of joy.'
 avoidRules:
   - matte
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro/Macro
+  categoryId: retro-pop-and-kitsch
+  categoryName: 4. Retro Pop And Kitsch
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - retro-pop-and-kitsch
   supportedTasks:
     - image_generate
     - image_edit

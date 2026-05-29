@@ -18,6 +18,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Melting, elongated',
       atmosphere: 'Dreamlike, weird',
       key_features: 'Desert horizon',
+      creative_brief:
+        'Time liquefies on a desert branch, solid objects betraying their nature in the heat of the subconscious. The irrational parades with photographic precision, daring the waking mind to make sense of dream logic.',
     },
   },
   {
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Eye objects',
       atmosphere: 'Nostalgic, wrong',
       key_features: 'Blue sky',
+      creative_brief:
+        'Childhood photographs edited into something slightly off, the familiar twisted by an intelligence that remembers incorrectly. Warmth curdles into unease, and the house you grew up in no longer recognizes you.',
     },
   },
   {
@@ -52,6 +56,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'One impossible element',
       atmosphere: 'Wonder, grounded',
       key_features: 'Real world context',
+      creative_brief:
+        'The extraordinary slips quietly into the mundane, a floating teapot in a kitchen that otherwise obeys physics. Magic here does not announce itself; it simply exists, as natural and unnoticed as breathing.',
     },
   },
   {
@@ -69,6 +75,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Big eyes',
       atmosphere: 'Playful, creepy',
       key_features: 'Cute but dark',
+      creative_brief:
+        'Saturday morning cartoons dragged through the gutters of fine art, big eyes staring from canvases that refuse to decide between cute and disturbing. Pop culture achieves self-awareness and finds itself monstrous.',
     },
   },
   {
@@ -86,6 +94,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Glitch',
       atmosphere: 'Chill, nostalgic',
       key_features: 'Windows 95 UI',
+      creative_brief:
+        'A mall that never existed, rendered in chrome gradients and Greek busts under palm tree sunsets. The aesthetic of futures that never arrived, slowed down and looped into melancholic infinity.',
     },
   },
   {
@@ -103,6 +113,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Flesh/Metal fusion',
       atmosphere: 'Terrifying, sexual',
       key_features: 'Ribbed pattern',
+      creative_brief:
+        'Flesh and machine in unholy union, vertebrae becoming cable, ribcage becoming chassis. The organic surrenders to the mechanical with a dark intimacy that makes the viewer complicit in the fusion.',
     },
   },
   {
@@ -120,6 +132,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Eerie, lonely',
       key_features: 'No people',
+      creative_brief:
+        'Places built for transit but emptied of purpose, fluorescent lights humming over carpets no one walks. The architecture remembers people who were never there, and the air thickens with the echo of absence.',
     },
   },
   {
@@ -137,6 +151,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Melting walls',
       atmosphere: 'Intense, hallucination',
       key_features: 'Eyes everywhere',
+      creative_brief:
+        'Reality peels back in layers, fractals blooming behind the eyelids like neon flowers in accelerated time. Color becomes temperature, pattern becomes pulse, and the boundary between self and image dissolves completely.',
     },
   },
   {
@@ -154,6 +170,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Ghosting',
       atmosphere: 'Psychological',
       key_features: 'Silhouette container',
+      creative_brief:
+        "Two realities occupying the same frame, a forest growing through a portrait's skull like memory colonizing consciousness. The self becomes a landscape, the landscape becomes a face, and neither takes priority.",
     },
   },
   {
@@ -171,6 +189,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Infinite loop',
       atmosphere: 'Intellectual, confusing',
       key_features: 'Tessellation',
+      creative_brief:
+        'Staircases that return to themselves, water that flows upward into its own source. The eye believes what the mind rejects, trapped in a diagram that obeys local logic while defying universal truth.',
     },
   },
   {
@@ -188,6 +208,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Optimistic, bright',
       key_features: 'Plants everywhere',
+      creative_brief:
+        'Vines embrace solar panels, buildings breathe through green lungs, and technology serves the ecosystem rather than consuming it. The future glows with chlorophyll and circuitry in symbiotic radiance.',
     },
   },
   {
@@ -205,6 +227,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Blacked out eyes',
       atmosphere: 'Confusing, unsafe',
       key_features: 'Text overlay',
+      creative_brief:
+        'Images edited with the wrong tools by hands that meant something else entirely. The result hovers between incompetence and nightmare, a visual language that communicates danger not through what it shows but through how it fails to show correctly.',
     },
   },
   {
@@ -222,6 +246,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Skeleton',
       atmosphere: 'Hopeless, grand',
       key_features: 'Fog',
+      creative_brief:
+        'Ruined cathedrals tower over landscapes that have forgotten hope, every stone weighed down by centuries of myth. Beauty persists in the wreckage, fiercer and more precious for the darkness that surrounds it.',
     },
   },
   {
@@ -239,6 +265,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Big heads',
       atmosphere: 'Absurd, funny',
       key_features: 'Cutout look',
+      creative_brief:
+        "Scissors impose new logic on old paper, a businessman's head transplanted onto a giraffe's body without explanation or apology. The absurd assembles itself from the discarded fragments of mass culture.",
     },
   },
   {
@@ -256,6 +284,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Mannequins',
       atmosphere: 'Silent, philosophical',
       key_features: 'Arches',
+      creative_brief:
+        'Plazas emptied of people, classical arches framing a silence thicker than architecture. Mannequins and long shadows inhabit a world where time has been suspended by decree of geometry.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

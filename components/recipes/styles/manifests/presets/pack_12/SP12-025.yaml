@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-025
+packId: pack_12
+name: Neon Underpass Brawler
+category: 1. Neon Urban & Night Ops
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+visualDna:
+  aesthetic: Urban beat-em-up in neon-flooded underpasses.
+  subject_treatment: Stylized gangs and iconic-silhouette protagonists.
+  color_and_tone: Fuchsia, acid green, and graphite black.
+  lighting_and_shadow: Broken lights, reflective puddles, and backlighting.
+  texture_and_material: Wet concrete, graffiti, and metal pipes.
+  camera_and_composition: Classic side view with active background layers.
+  atmosphere_and_mood: Street energy and rhythmic combat.
+  rendering_and_quality: Playable art for fighting stages.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - pastel
+  - lowres
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-025.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

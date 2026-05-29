@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP06-015
 packId: pack_06
 name: Black Velvet Painting
-category: 2. Traditional Painting
+category: 1. Traditional Painting
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Soft focus
   atmosphere: Tacky, fun, night
   key_features: Black background dominance
+  creative_brief: Neon colors float above infinite blackness like deep-sea creatures signaling in the abyss, each hue intensified by the void that surrounds it. The velvet pile swallows light while the paint refuses to, creating impossible luminance. Kitsch transcends irony into a sincerity so pure it becomes visionary.
 avoidRules:
   - photo
   - realistic
@@ -45,7 +46,7 @@ taxonomy:
   packId: pack_06
   packName: Essential Art Styles
   categoryId: traditional-painting
-  categoryName: 2. Traditional Painting
+  categoryName: 1. Traditional Painting
   tags:
     - essential-art-styles
     - traditional-painting
@@ -54,3 +55,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

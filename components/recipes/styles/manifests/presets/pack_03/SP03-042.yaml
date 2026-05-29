@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-042
 packId: pack_03
 name: Diorama Lighting
-category: 2. Lighting & Atmosphere
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Miniature world
   form_and_line: Tilt-shift blur
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Cute, small, tilt-shift magic
   atmosphere: Playful, tiny, tabletop wonder
   key_features: Miniature, depth-of-field isolation
+  creative_brief: 'The world shrinks to fit on a tabletop — tilt-shift depth of field blurs the near and far into creamy abstraction, leaving only the subject in hyper-real miniature sharpness. Saturated colors and warm macro-lighting make every tiny tree and building feel hand-painted by an obsessive modelmaker. The image is tilt-shift magic: a universe you could cup in both hands, cozy and impossibly detailed.'
 avoidRules:
   - flat
   - realistic scale
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

@@ -9,7 +9,7 @@ supportedTasks:
   - image_edit
   - style_preset_card
 tags:
-  - anime-and-manga-spectrum
+  - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
   aesthetic: Anti-magic underdog drive, squad-based spell warfare, medieval-black-bull energy, book-based spellcasting, ragged ambition versus noble polish
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
   atmosphere: Determined, loud, magical, scrappy
   key_features: Grimoire staging, team squad silhouettes, anti-magic aura contrast, loud rivalry poses, magical battleground debris
+  creative_brief: A grimoire opens and ambition spills out louder than any incantation, raw willpower forged into a blade that cuts through destiny. The squad stands together in rags that read like banners, shouting defiance at polished towers that never believed them worthy. Magic bends not to birthright but to the volume of a heart refusing to stay silent.
 avoidRules:
   - realistic
   - 3d render
@@ -40,11 +41,11 @@ attributes:
   negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
-  packName: Anime & Manga Spectrum
+  packName: Anime Battle & Worlds
   categoryId: modern-shonen-and-action
   categoryName: 1. Modern Shonen & Action
   tags:
-    - anime-and-manga-spectrum
+    - anime-battle-and-worlds
     - modern-shonen-and-action
   supportedTasks:
     - image_generate

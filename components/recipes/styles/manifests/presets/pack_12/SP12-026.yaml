@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-026
+packId: pack_12
+name: Verdant Ruins Tactical RPG
+category: 4. Sieges, Warfronts & Last Stands
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+visualDna:
+  aesthetic: SRPG set in ruins overgrown with intelligent vegetation.
+  subject_treatment: Squads with strongly role-contrasted classes.
+  color_and_tone: Moss green, beige stone, and scarlet accents.
+  lighting_and_shadow: Midday light filtered through vines.
+  texture_and_material: Cracked marble, damp leaves, and tactical fabrics.
+  camera_and_composition: Clean isometric view by combat tiles.
+  atmosphere_and_mood: Measured strategy and tactical tension.
+  rendering_and_quality: Battle map with perfect readability.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - cluttered-ui
+  - blur
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-026.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

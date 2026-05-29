@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-055
 packId: pack_10
 name: Wood Grain
-category: 3. Pattern & Texture
+category: 5. Pattern & Texture
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Knots
   atmosphere: Rustic, solid
   key_features: Directional grain
+  creative_brief: Growth rings spreading outward from a core of patience, each line a year of rain and sun transcribed into cellulose. The tree's autobiography, readable by anyone who runs a finger across its surface.
 avoidRules:
   - metal
   - stone
@@ -32,7 +33,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: pattern-and-texture
-  categoryName: 3. Pattern & Texture
+  categoryName: 5. Pattern & Texture
   tags:
     - abstract-and-experimental
     - pattern-and-texture
@@ -41,3 +42,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

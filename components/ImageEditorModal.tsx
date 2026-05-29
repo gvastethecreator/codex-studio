@@ -15,7 +15,7 @@ interface ImageEditorModalProps {
 interface ImageEditorControlsPanelProps {
   editPrompt: string;
   onEditPromptChange: (v: string) => void;
-  textareaRef: React.RefObject<HTMLTextAreaElement>;
+  textareaRef: React.RefObject<HTMLTextAreaElement | null>;
   brushSize: number;
   onBrushSizeChange: (v: number) => void;
   historyIndex: number;
@@ -310,12 +310,12 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <button
-      type="button"
-      className="fixed inset-0 z-100 bg-black/98 backdrop-blur-3xl flex flex-col animate-in fade-in duration-500 appearance-none border-none p-0 m-0"
-      onClick={handleClose}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') handleClose();
+    <dialog
+      open
+      className="fixed inset-0 z-100 m-0 flex h-full w-full flex-col border-none bg-black/98 p-0 backdrop-blur-3xl animate-in fade-in duration-500"
+      onCancel={(e) => {
+        e.preventDefault();
+        handleClose();
       }}
     >
       <div
@@ -395,6 +395,6 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           onGenerate={handleGenerate}
         />
       </div>
-    </button>
+    </dialog>
   );
 };

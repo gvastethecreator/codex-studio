@@ -1,0 +1,52 @@
+schemaVersion: 1
+id: SP05-321
+packId: pack_13
+name: Yoshitaka Amano - Ether-Wisp Gothic Fantasy
+category: 12. Anime Style Spectrum
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-character-and-lifestyle
+  - anime-style-spectrum
+visualDna:
+  aesthetic: Ethereal Amano-like fantasy, elongated bodies dissolving into decorative ink wisps, celestial melancholy, gilded voids, feather-light detail with dream-goth elegance
+  form_and_line: Hair-thin ornamental contour, calligraphic tapering, decorative filigree line drift
+  color_palette: Ivory, antique gold, moon-silver, dried rose, abyssal indigo, pale orchid haze
+  lighting_setup: Moonlit haze, diffuse heavenly glow, soft metallic gleam, spectral backlighting
+  material_texture: Airbrush mist, metallic leaf suggestion, silk translucency, ink feathering, velvety emptiness
+  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  spatial_distortion: Weightless elongation, draped limbs, gravity-light hair flow, cathedral-thin silhouettes
+  atmosphere: Ethereal, baroque, sorrowful, celestial
+  key_features: Elongated figures, decorative ink wisps, gilded accents, void-rich composition, feathered costume detail
+  creative_brief: Bodies stretch like ink dropped into still water, limbs becoming calligraphy that writes elegies across gilded voids. Gold flakes settle on eyelids while moonlight dissolves the boundary between figure and atmosphere, between presence and memory. Every image is a séance where beauty wears the thinnest veil.
+avoidRules:
+  - still
+  - calm
+  - static
+  - peaceful
+  - gentle
+  - slow
+  - quiet
+  - subtle
+  - restrained
+  - realistic movement
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP05-321.webp
+attributes:
+  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+taxonomy:
+  packId: pack_13
+  packName: Anime Character & Lifestyle
+  categoryId: anime-style-spectrum
+  categoryName: 12. Anime Style Spectrum
+  tags:
+    - anime-character-and-lifestyle
+    - anime-style-spectrum
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

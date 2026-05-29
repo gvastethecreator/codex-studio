@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-001
 packId: pack_11
 name: Lego Toy Brick Build
-category: 2. Toys & Crafts
+category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-crafts
+  - toys-and-miniatures
 visualDna:
   aesthetic: Scene built entirely from LEGO toy bricks, ABS-plastic diorama, brick-for-brick construction, snap-together storytelling
   form_and_line: Brick seams, studs, interlocking grid, sharp-corner geometry
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Blocky, minifigure proportions, cubic abstraction, top-stud resolution, snap-grid logic
   atmosphere: Playful, creative, childhood, imaginative nostalgia, colorful joy, constructive wonder
   key_features: Studs on top surfaces, tubular undersides, brick-seam shadows, minifigure scale
+  creative_brief: The world clicks together one stud at a time, every surface a testament to constructive imagination. Light glances across glossy ABS plastic as if the bricks themselves hum with readiness. Block by block, the ordinary rebuilds itself into the extraordinary.
 avoidRules:
   - melted
   - smooth
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-crafts
-  categoryName: 2. Toys & Crafts
+  categoryId: toys-and-miniatures
+  categoryName: 1. Toys And Miniatures
   tags:
     - miscellaneous-and-fun
-    - toys-and-crafts
+    - toys-and-miniatures
   supportedTasks:
     - image_generate
     - image_edit

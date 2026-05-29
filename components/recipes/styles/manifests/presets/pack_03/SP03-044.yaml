@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-044
 packId: pack_03
 name: Thermal Vision
-category: 2. Lighting & Atmosphere
+category: 4. Lookdev And Render Pipelines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lighting-and-atmosphere
+  - lookdev-and-render-pipelines
 visualDna:
   aesthetic: Heat map 3D
   form_and_line: Heat gradients
@@ -20,6 +20,7 @@ visualDna:
   render_quality: Predator vision, tactical overlay
   atmosphere: Tactical, alien, reconnaissance
   key_features: Heat map, cold-to-hot spectrum
+  creative_brief: 'Color replaces material — deep blue recedes into cold hollows while orange flares at heat sources and white peaks where temperature hits its ceiling. The rainbow gradient maps physics to palette, every surface glowing not from illumination but from its own thermal emission. The image channels Predator vision and tactical reconnaissance: a world seen through the lens of energy rather than light, hot and cold telling stories invisible to the naked eye.'
 avoidRules:
   - realistic color
 assets:
@@ -29,11 +30,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lighting-and-atmosphere
-  categoryName: 2. Lighting & Atmosphere
+  categoryId: lookdev-and-render-pipelines
+  categoryName: 4. Lookdev And Render Pipelines
   tags:
     - 3d-and-cgi-rendering
-    - lighting-and-atmosphere
+    - lookdev-and-render-pipelines
   supportedTasks:
     - image_generate
     - image_edit

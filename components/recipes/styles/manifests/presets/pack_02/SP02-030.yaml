@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-030
 packId: pack_02
 name: Nature Documentary
-category: 2. TV & Broadcast
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - tv-and-broadcast
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Premium nature documentary, BBC Earth, wild kingdom, intimate wildlife, global spectacle
   form_and_line: None
@@ -20,6 +20,7 @@ visualDna:
   spatial_distortion: Slow motion, wing-beat freeze, droplet suspension
   atmosphere: Majestic, wild, patient reverence, untamed spectacle
   key_features: Telephoto, animal portrait, migration panorama
+  creative_brief: The camera becomes invisible, a ghost that earns the trust of fang and feather through silence and patience. Light bends around fur and scale with a clarity that borders on the sacred, each frame a cathedral window onto a world that predates and outlasts us. Here, slow motion is not an effect but a form of reverence.
 avoidRules:
   - human
   - city
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: tv-and-broadcast
-  categoryName: 2. TV & Broadcast
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - tv-and-broadcast
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

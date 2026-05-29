@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-019
 packId: pack_01
 name: Infrared Film
-category: 3. Film Stocks
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-stocks
+  - film-and-analog-process
 visualDna:
   aesthetic: Aerochrome style
   form_and_line: Glowing foliage
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: False color
   atmosphere: Alien, dreamlike
   key_features: Red trees
+  creative_brief: 'The spectrum inverted: chlorophyll blazing crimson against a sky gone indigo, as if the world were photographed through the eyes of a creature from a warmer star. Familiar landscapes become extraterrestrial elegies, the visible spectrum bending toward frequencies the waking eye was never meant to witness.'
 avoidRules:
   - illustration
   - painting
@@ -44,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-stocks
-  categoryName: 3. Film Stocks
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - film-stocks
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

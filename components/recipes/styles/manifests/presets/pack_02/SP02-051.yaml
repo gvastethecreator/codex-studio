@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-051
 packId: pack_02
 name: Disposable Camera (90s)
-category: 5. Photography Eras
+category: 1. Cinematic Lighting And Lenses
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - cinematic-lighting-and-lenses
 visualDna:
   aesthetic: Party photo
   form_and_line: None
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Red eye, pupil reflection, demon-eye flash
   atmosphere: Party, memory, 90s sleepover, disposable youth
   key_features: Vignette, flash hotspot, crooked horizon, group selfie
+  creative_brief: 'Grainy illumination freezes chaos mid-cascade, the frame tilted and the horizon forgotten. These are images made without permission, stolen from the blur of youth — flash-blasted faces, crooked grins, the hot white center of a sleepover that refuses to end. Each shot carries the urgency of the disposable: proof that this night happened, before the roll winds out and the light seals shut.'
 avoidRules:
   - professional lighting
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 5. Photography Eras
+  categoryId: cinematic-lighting-and-lenses
+  categoryName: 1. Cinematic Lighting And Lenses
   tags:
     - cinematic-and-media
-    - photography-eras
+    - cinematic-lighting-and-lenses
   supportedTasks:
     - image_generate
     - image_edit

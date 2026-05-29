@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-053
 packId: pack_11
 name: Chocolate Flow
-category: 1. Food & Drink
+category: 2. Food And Commercial Fun
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-drink
+  - food-and-commercial-fun
 visualDna:
   aesthetic: Melting chocolate river, patisserie-waterfall, temper-dark-flow, molten-cocoa, fondue-dream
   form_and_line: Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple
   atmosphere: Indulgent, sweet, pâtisserie-afternoon, truffle-luxury, cocoa-comfort, melting-moment
   key_features: Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin, chocolate-shavings curl
+  creative_brief: Tempered couverture cascades in ribbons of liquid obsidian, folding over itself in thick glossy waves that catch the soft-box reflection like a dark mirror. The ganache pool holds its surface tension with the viscosity of a dessert that understands luxury is measured in mouthfeel. Viscosity becomes art when chocolate moves at the speed of honey down a perfectly chilled marble slope, every ripple a poem written in cocoa butter and patience.
 avoidRules:
   - watery
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-drink
-  categoryName: 1. Food & Drink
+  categoryId: food-and-commercial-fun
+  categoryName: 2. Food And Commercial Fun
   tags:
     - miscellaneous-and-fun
-    - food-and-drink
+    - food-and-commercial-fun
   supportedTasks:
     - image_generate
     - image_edit

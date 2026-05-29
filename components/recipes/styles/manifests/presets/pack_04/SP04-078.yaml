@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-078
 packId: pack_04
 name: Banksy Stencil Art (Street Protest)
-category: 5. Ink & Print
+category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - ink-and-print
+  - fantasy-and-concept-illustration
 visualDna:
   aesthetic: Spray over cutout
   form_and_line: Bridges
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Simplified levels
   atmosphere: Rebellious, simple, urban-dissident energy, unauthorized truth
   key_features: Bridges, cutout connections, stencil registration
+  creative_brief: The stencil reduces the world to its silhouette, image emerging from the violent subtraction of spray through negative space. A single color carries the entire message, simplicity sharpening the political edge. This is the image as intervention, where the wall becomes the medium and the message arrives without permission.
 avoidRules:
   - freehand
 assets:
@@ -30,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: ink-and-print
-  categoryName: 5. Ink & Print
+  categoryId: fantasy-and-concept-illustration
+  categoryName: 5. Fantasy And Concept Illustration
   tags:
     - illustration-and-graphic-novel
-    - ink-and-print
+    - fantasy-and-concept-illustration
   supportedTasks:
     - image_generate
     - image_edit

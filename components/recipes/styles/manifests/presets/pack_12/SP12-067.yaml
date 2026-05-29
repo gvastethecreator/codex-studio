@@ -1,0 +1,43 @@
+schemaVersion: 1
+id: SP12-067
+packId: pack_12
+name: Bronze Marsh Siege Camp
+category: 6. Wilderness Hunts & Harsh Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+visualDna:
+  aesthetic: Siege camp in bronze marshlands.
+  subject_treatment: War engineers and push units.
+  color_and_tone: Mud green, old bronze, and banner red.
+  lighting_and_shadow: Low fog with scattered torches.
+  texture_and_material: Mud, wet wood, and metal plates.
+  camera_and_composition: Trenches converging toward the fort.
+  atmosphere_and_mood: Military pressure and prolonged attrition.
+  rendering_and_quality: Tactical setting for a war campaign.
+avoidRules:
+  - watermark
+  - text
+  - logo
+  - neon
+  - low-detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-067.webp
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

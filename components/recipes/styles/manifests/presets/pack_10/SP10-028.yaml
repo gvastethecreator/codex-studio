@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-028
 packId: pack_10
 name: Scanography
-category: 5. Digital Glitch & Noise
+category: 3. Digital Glitch & Noise
 version: 1
 supportedTasks:
   - image_generate
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Squashed
   atmosphere: Eerie, surreal
   key_features: Black background
+  creative_brief: The scanner sees with a light that erases depth, pressing objects flat against glass like botanical specimens from a digital herbarium. Shadows bloom where three dimensions once lived.
 avoidRules:
   - camera photo
 assets:
@@ -31,7 +32,7 @@ taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
   categoryId: digital-glitch-and-noise
-  categoryName: 5. Digital Glitch & Noise
+  categoryName: 3. Digital Glitch & Noise
   tags:
     - abstract-and-experimental
     - digital-glitch-and-noise
@@ -40,3 +41,4 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+

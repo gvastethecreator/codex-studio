@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-021
 packId: pack_07
 name: Deconstructivism
-category: 2. Architectural Styles
+category: 1. Residential Interiors
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - architectural-styles
+  - residential-interiors
 visualDna:
   aesthetic: Frank Gehry sculptural deconstructivist landmark, titanium wildness, Bilbao effect
   form_and_line: Distorted geometry, collapsing volumes, twisting towers, exploding facets, folded planes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Melting/Twisting
   atmosphere: Disorienting, dynamic, cerebral, exhilarating, rule-breaking, impossible beauty
   key_features: No right angles, folding titanium skin, explosive volumes, shimmering surfaces, sculptural roofscape
+  creative_brief: Titanium skin folds like origami caught mid-thought, volumes collapsing and exploding in the same breath. The building refuses to sit still, every facet chasing light across its surface like a living thing. Architecture discovers it can dance, and the ground below it forgets what stable means.
 avoidRules:
   - box
   - symmetrical
@@ -31,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: architectural-styles
-  categoryName: 2. Architectural Styles
+  categoryId: residential-interiors
+  categoryName: 1. Residential Interiors
   tags:
     - architecture-and-interior
-    - architectural-styles
+    - residential-interiors
   supportedTasks:
     - image_generate
     - image_edit

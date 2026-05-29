@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-013
 packId: pack_11
 name: Dieselpunk
-category: 4. Aesthetics
+category: 3. Science And Bio Curiosities
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - aesthetics
+  - science-and-bio-curiosities
 visualDna:
   aesthetic: 1940s retro-future war, diesel-powered dystopia, iron-giant nightmare, wartime brutalist future
   form_and_line: Rivets, heavy metal plates, cast-iron curves, bolted seams, industrial silhouettes
@@ -21,6 +21,7 @@ visualDna:
   spatial_distortion: Bulky machinery, oversized engines, vertical oppression, crushing-mass architecture
   atmosphere: Dirty, loud, powerful, oppressive weight, grinding fatigue, iron-willed endurance
   key_features: Exhaust smoke, bolted armor plates, pressure gauges, colossal treads
+  creative_brief: Rivets hold the sky together above a world grinding forward on treads and desperation, oil streaks smearing across cold-stamped steel. Exhaust haze diffuses caged-bulb light into a permanent industrial dusk where every surface carries the grease of endless labor. Progress smells of diesel and looks like a three-ton fist clenched against a soot-black horizon.
 avoidRules:
   - clean
   - digital
@@ -32,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: aesthetics
-  categoryName: 4. Aesthetics
+  categoryId: science-and-bio-curiosities
+  categoryName: 3. Science And Bio Curiosities
   tags:
     - miscellaneous-and-fun
-    - aesthetics
+    - science-and-bio-curiosities
   supportedTasks:
     - image_generate
     - image_edit
