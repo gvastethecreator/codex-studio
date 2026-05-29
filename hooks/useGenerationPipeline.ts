@@ -8,6 +8,7 @@ import type {
 import type { Job as StudioJob } from '../packages/shared/src';
 import { startViewTransition } from '../utils/transitionUtils';
 import {
+  type LocalGenerationLifecycleOutcome,
   runLocalGenerationWithLifecycle,
   type LocalGenerationRunResult,
 } from '../services/localGenerationRun';
@@ -59,6 +60,54 @@ export function buildEditGenerationConfig({
     batchCount: 1,
     attachments: maskAttachments,
   };
+}
+
+function formatGenerationDuration(durationMs: number) {
+  return (durationMs / 1000).toFixed(1);
+}
+
+function reportGenerationError({
+  error,
+  addToast,
+  log,
+}: {
+  error: unknown;
+  addToast: (msg: string, type: 'success' | 'error' | 'info') => void;
+  log: (msg: string) => void;
+}) {
+  const message = error instanceof Error ? error.message : String(error);
+  addToast(message, 'error');
+  log(`Generation Error: ${message}`);
+}
+
+function handleNonCompletedGenerationOutcome({
+  outcome,
+  addToast,
+  log,
+}: {
+  outcome: LocalGenerationLifecycleOutcome;
+  addToast: (msg: string, type: 'success' | 'error' | 'info') => void;
+  log: (msg: string) => void;
+}) {
+  if (outcome.status === 'cancelled') {
+    addToast('Generation cancelled', 'info');
+    log(`Generation cancelled: ${outcome.message}`);
+    return true;
+  }
+
+  if (outcome.status === 'failed') {
+    addToast(outcome.message, 'error');
+    log(`Generation Error: ${outcome.message}`);
+    return true;
+  }
+
+  return false;
+}
+
+function isCompletedGenerationOutcome(
+  outcome: LocalGenerationLifecycleOutcome,
+): outcome is Extract<LocalGenerationLifecycleOutcome, { status: 'completed' }> {
+  return outcome.status === 'completed';
 }
 
 interface UseGenerationPipelineProps {
@@ -126,15 +175,11 @@ export const useGenerationPipeline = ({
           onProgress: log,
         });
 
-        if (outcome.status === 'cancelled') {
-          addToast('Generation cancelled', 'info');
-          log(`Generation cancelled: ${outcome.message}`);
+        if (handleNonCompletedGenerationOutcome({ outcome, addToast, log })) {
           return;
         }
 
-        if (outcome.status === 'failed') {
-          addToast(outcome.message, 'error');
-          log(`Generation Error: ${outcome.message}`);
+        if (!isCompletedGenerationOutcome(outcome)) {
           return;
         }
 
@@ -154,16 +199,14 @@ export const useGenerationPipeline = ({
           setIsInteractingWithToolbar(false);
         }
 
-        const duration = (outcome.durationMs / 1000).toFixed(1);
+        const duration = formatGenerationDuration(outcome.durationMs);
         log(`Generated local result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`);
         addToast(
           `Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`,
           'success',
         );
       } catch (error) {
-        const message = error instanceof Error ? error.message : String(error);
-        addToast(message, 'error');
-        log(`Generation Error: ${message}`);
+        reportGenerationError({ error, addToast, log });
       } finally {
         finishRun();
       }
@@ -203,15 +246,11 @@ export const useGenerationPipeline = ({
           },
         });
 
-        if (outcome.status === 'cancelled') {
-          addToast('Generation cancelled', 'info');
-          log(`Generation cancelled: ${outcome.message}`);
+        if (handleNonCompletedGenerationOutcome({ outcome, addToast, log })) {
           return;
         }
 
-        if (outcome.status === 'failed') {
-          addToast(outcome.message, 'error');
-          log(`Generation Error: ${outcome.message}`);
+        if (!isCompletedGenerationOutcome(outcome)) {
           return;
         }
 
@@ -222,13 +261,11 @@ export const useGenerationPipeline = ({
           appendLocalGenerationResult?.(result, { maxPerWorkspace: 20 });
         });
 
-        const duration = (outcome.durationMs / 1000).toFixed(1);
+        const duration = formatGenerationDuration(outcome.durationMs);
         log(`Generated edit result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`);
         addToast('Image edit complete', 'success');
       } catch (error) {
-        const message = error instanceof Error ? error.message : String(error);
-        addToast(message, 'error');
-        log(`Generation Error: ${message}`);
+        reportGenerationError({ error, addToast, log });
       } finally {
         finishRun();
       }

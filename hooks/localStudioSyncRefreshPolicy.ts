@@ -4,12 +4,10 @@ export interface LocalStudioSyncRefreshPolicy {
 }
 
 interface CreateLocalStudioSyncRefreshPolicyOptions {
-  onCatalogChanged?: () => void;
   refreshBackendState: () => Promise<void>;
 }
 
 export function createLocalStudioSyncRefreshPolicy({
-  onCatalogChanged,
   refreshBackendState,
 }: CreateLocalStudioSyncRefreshPolicyOptions): LocalStudioSyncRefreshPolicy {
   let refreshInFlight = false;
@@ -33,7 +31,7 @@ export function createLocalStudioSyncRefreshPolicy({
 
   return {
     onAssetAdded: () => {
-      onCatalogChanged?.();
+      requestRefresh();
     },
     onConnectionChange: (connected: boolean) => {
       if (!connected) {

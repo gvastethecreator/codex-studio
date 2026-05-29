@@ -1,30 +1,52 @@
-import { describe, expect, it, vi } from "vite-plus/test";
-import { createLocalStudioSyncRefreshPolicy } from "./localStudioSyncRefreshPolicy";
+import { describe, expect, it, vi } from 'vite-plus/test';
+import { createLocalStudioSyncRefreshPolicy } from './localStudioSyncRefreshPolicy';
 
-describe("localStudioSyncRefreshPolicy", () => {
-  it("triggers catalog refresh when an asset arrives", () => {
-    const onCatalogChanged = vi.fn();
+function createDeferred() {
+  let resolve!: () => void;
+  const promise = new Promise<void>((settle) => {
+    resolve = () => settle();
+  });
+
+  return { promise, resolve };
+}
+
+describe('localStudioSyncRefreshPolicy', () => {
+  it('triggers backend refresh when an asset arrives', () => {
     const refreshBackendState = vi.fn(async () => {});
 
     const policy = createLocalStudioSyncRefreshPolicy({
-      onCatalogChanged,
       refreshBackendState,
     });
 
     policy.onAssetAdded();
 
-    expect(onCatalogChanged).toHaveBeenCalledTimes(1);
-    expect(refreshBackendState).toHaveBeenCalledTimes(0);
+    expect(refreshBackendState).toHaveBeenCalledTimes(1);
   });
 
-  it("coalesces disconnect refreshes while a refresh is in flight", async () => {
-    let resolveRefresh: (() => void) | null = null;
-    const refreshBackendState = vi.fn(
-      () =>
-        new Promise<void>((resolve) => {
-          resolveRefresh = resolve;
-        }),
-    );
+  it('coalesces asset refreshes while a refresh is in flight', async () => {
+    const deferred = createDeferred();
+    const refreshBackendState = vi.fn(() => deferred.promise);
+
+    const policy = createLocalStudioSyncRefreshPolicy({
+      refreshBackendState,
+    });
+
+    policy.onAssetAdded();
+    policy.onAssetAdded();
+    policy.onAssetAdded();
+
+    expect(refreshBackendState).toHaveBeenCalledTimes(1);
+
+    deferred.resolve();
+    await Promise.resolve();
+    await Promise.resolve();
+
+    expect(refreshBackendState).toHaveBeenCalledTimes(2);
+  });
+
+  it('coalesces disconnect refreshes while a refresh is in flight', async () => {
+    const deferred = createDeferred();
+    const refreshBackendState = vi.fn(() => deferred.promise);
 
     const policy = createLocalStudioSyncRefreshPolicy({
       refreshBackendState,
@@ -36,14 +58,14 @@ describe("localStudioSyncRefreshPolicy", () => {
 
     expect(refreshBackendState).toHaveBeenCalledTimes(1);
 
-    resolveRefresh?.();
+    deferred.resolve();
     await Promise.resolve();
     await Promise.resolve();
 
     expect(refreshBackendState).toHaveBeenCalledTimes(2);
   });
 
-  it("ignores connected events", () => {
+  it('ignores connected events', () => {
     const refreshBackendState = vi.fn(async () => {});
 
     const policy = createLocalStudioSyncRefreshPolicy({

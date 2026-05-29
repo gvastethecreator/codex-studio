@@ -27,6 +27,34 @@ interface UseStudioSettingsOptions {
 
 export interface StudioSettingsController {
   data: {
+    settingsDomain: {
+      settings: EditableStudioSettings | null;
+      isLoading: boolean;
+      isSaving: boolean;
+      error: string | null;
+      refresh: () => Promise<void>;
+      update: (patch: EditableStudioSettingsPatch) => Promise<void>;
+    };
+    providerDomain: {
+      capabilities: GenerationProviderCapabilitiesResponse | null;
+      runtimePreflight: GenerationProviderRuntimePreflightResponse | null;
+    };
+    outputSourcesDomain: {
+      outputSources: ExternalOutputSourcesResponse | null;
+      outputSourceFiles: Record<string, ExternalOutputSourceFile[]>;
+      isLoadingOutputSources: boolean;
+      loadingOutputSourceFiles: Record<string, boolean>;
+      isRegisteringOutputSource: boolean;
+      importingOutputSources: Record<string, boolean>;
+      refreshOutputSources: () => Promise<void>;
+      registerOutputSource: (input: RegisterExternalOutputSourceInput) => Promise<void>;
+      loadOutputSourceFiles: (sourceId: string) => Promise<void>;
+      importOutputSourceFiles: (
+        sourceId: string,
+        files: string[],
+        workspaceId?: string | null,
+      ) => Promise<void>;
+    };
     settings: EditableStudioSettings | null;
     isLoading: boolean;
     isSaving: boolean;
@@ -275,6 +303,30 @@ export function useStudioSettings({
 
   return {
     data: {
+      settingsDomain: {
+        settings,
+        isLoading,
+        isSaving,
+        error,
+        refresh: refreshSettings,
+        update: updateSettings,
+      },
+      providerDomain: {
+        capabilities: providerCapabilities,
+        runtimePreflight: providerRuntimePreflight,
+      },
+      outputSourcesDomain: {
+        outputSources,
+        outputSourceFiles,
+        isLoadingOutputSources,
+        loadingOutputSourceFiles,
+        isRegisteringOutputSource,
+        importingOutputSources,
+        refreshOutputSources,
+        registerOutputSource,
+        loadOutputSourceFiles,
+        importOutputSourceFiles,
+      },
       settings,
       isLoading,
       isSaving,

@@ -2,7 +2,7 @@
 
 This roadmap tracks refactors that turn shallow modules into deeper modules with better locality, leverage, and testability. Related decisions live in `docs/adr/`.
 
-Current findings index: `docs/architecture/architecture-review-2026-05-27.md`.
+Current findings index: `docs/architecture/architecture-review-2026-05-29.md`.
 
 ## Concepts
 
@@ -10,18 +10,18 @@ Current findings index: `docs/architecture/architecture-review-2026-05-27.md`.
 - **Locality:** related behavior changes in one place instead of many callers.
 - **Deletion test:** if deleting a module makes complexity disappear, it was likely a pass-through. If complexity reappears across many callers, the module was earning its keep.
 
-## Accepted review batch - 2026-05-27
+## Accepted review batch - 2026-05-29
 
-The current accepted batch comes from `docs/architecture/architecture-review-2026-05-27.md`.
+The current accepted batch comes from `docs/architecture/architecture-review-2026-05-29.md`.
 
 Execution order for the accepted batch:
 
 1. Deepen the `Studio Shell` orchestration module.
 2. Deepen the `Studio Generation Session` module.
-3. Move `Recipe Module` behaviour out of the static registry.
-4. Deepen the `Local Generation Run` lifecycle seam.
-5. Finish the `WorkerController` dependency seam promised by ADR-0014.
-6. Deepen `Local Studio Sync` state ownership.
+3. Separate `Studio Settings` seams by operational domain.
+4. Deepen `appFactory` runtime composition (finish stream + library route extraction).
+5. Deepen `Local Studio Sync` refresh policy semantics.
+6. Review naming and seam clarity in `Local Generation Run` provider-neutral flow.
 
 ## Work tracker
 
@@ -41,6 +41,7 @@ Execution order for the accepted batch:
   - done: deepened `buildStudioHeaderToolbarProps()` so the `Command Center` seam now derives runtime status, queue counts, queue toggling, and provider fallback internally instead of leaving those decisions in `useStudioShell.ts`;
   - done: deepened the viewport presentation seam so `buildStudioViewportController()` now owns `StudioViewport` / `StudioGenerationDock` projection and removes the inline `recipePagePropsRef` glue from `useStudioShell.ts`;
   - done: deepened the overlay composition seam so `buildStudioShellOverlayController()` now derives `Studio Settings` library fallback and background-toggle wiring from runtime/settings modules instead of rebuilding those details inline in `useStudioShell.ts`;
+  - done: `buildStudioShellOverlayController()` now consumes grouped settings domains (`settingsDomain` / `providerDomain` / `outputSourcesDomain`) at the shell seam instead of a single flat settings payload, reducing coupling to settings implementation detail in `useStudioShell.ts`;
   - done: deepened `useStudioViewState()` so queue/editor/preview/overlay visibility now cross grouped surfaces instead of another flat list of shell-local setters, while also removing the duplicate editor-image setter from the return contract;
   - done: deepened `useStudioNavigation()` so route synchronization now crosses grouped `recipe` / `modal` / `editor` / `shell` surfaces and stops carrying unused flat props through `useStudioShell.ts`;
   - done: deepened queue execution ownership so `startQueuedJobExecution()` in `lib/queueStateMachine.ts` now owns per-job execution semantics, backend job-link capture, and terminal result mapping instead of leaving that lifecycle inline inside `useQueueManager.ts`;
@@ -48,6 +49,8 @@ Execution order for the accepted batch:
   - done: deepened `useStudioSettings()` so editable settings,
     provider capability/runtime-preflight reads, and External Output Source commands
     now cross one grouped `data` surface instead of another flat shell contract;
+  - done: `useStudioSettings()` now also exposes explicit `settingsDomain`, `providerDomain`, and `outputSourcesDomain` grouped surfaces while preserving compatibility fields for incremental caller migration;
+  - done: `useStudioShell.ts` now consumes `settingsDomain.settings.defaultProviderId` for `Command Center` provider fallback, proving incremental migration to the new grouped settings seam.
   - done: deepened `useStudioActivitySession()` so selected-job inspection and
     debug-panel toggling now cross grouped `selection` / `debugPanel` surfaces
     instead of leaking runtime-detail fields through `useStudioShell.ts`;
@@ -99,6 +102,7 @@ Execution order for the accepted batch:
   - done: added focused adapter coverage in `services/localGenerationRuntimeAdapters.test.ts` for abort classification and data-url passthrough behavior;
   - done: `services/localGenerationRun.ts` now exposes `runLocalGenerationWithLifecycle()` with explicit `completed` / `cancelled` / `failed` outcomes and duration;
   - done: `hooks/useGenerationPipeline.ts` now consumes lifecycle outcomes instead of duplicating cancel/error classification across generate/edit flows;
+  - done: `hooks/useGenerationPipeline.ts` now centralizes cancelled/failed/error outcome policy in shared helpers (`handleNonCompletedGenerationOutcome`, `reportGenerationError`, duration formatter), reducing duplicated lifecycle implementation detail between generate and edit flows;
   - move lifecycle ownership, cancellation, terminal outcome mapping, and batch pacing behind the `Local Generation Run` seam;
   - reduce duplicated control flow in `useGenerationPipeline.ts` for generate vs edit;
   - shrink the interface that `GenerationContext` republishes.
@@ -167,7 +171,12 @@ Execution order for the accepted batch:
   - done: extracted `studio/reset` route composition into `createStudioControlRoutes()` in `apps/local-server/src/studioControlRoutes.ts`;
   - done: `appFactory.ts` now mounts `app.route('/api/studio', createStudioControlRoutes(...))` instead of inlining studio reset handler;
   - done: added route-seam tests in `apps/local-server/src/studioControlRoutes.test.ts` for reset delegation.
-  - next: extract `events` streaming route into a dedicated module.
+  - done: extracted event stream route composition into `createEventStreamRoutes()` in `apps/local-server/src/eventStreamRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/api', createEventStreamRoutes(...))` instead of inlining `/api/events` SSE handling;
+  - done: added route-seam tests in `apps/local-server/src/eventStreamRoutes.test.ts` for SSE handshake headers and initial `server.connected` payload;
+  - done: extracted library asset-serving route composition into `createLibraryRoutes()` in `apps/local-server/src/libraryRoutes.ts`;
+  - done: `appFactory.ts` now mounts `app.route('/', createLibraryRoutes(...))` instead of inlining `/library/*` serving and thumbnail fallback;
+  - done: added route-seam tests in `apps/local-server/src/libraryRoutes.test.ts` for traversal safety, missing-file 404, and thumbnail variant serving.
 - **Exit criteria:** `appFactory.ts` acts mainly as runtime composition module, with heavy route groups mounted from focused route modules.
 - **Docs:** update `docs/ARCHITECTURE.md` backend seam section once providers/codex route groups are also extracted.
 
@@ -180,6 +189,7 @@ Execution order for the accepted batch:
 - **Concrete steps:**
   - done: extracted connection/asset refresh policy into `hooks/localStudioSyncRefreshPolicy.ts`, so `useLocalStudioSync.ts` no longer inlines reconnect refresh orchestration;
   - done: added focused policy tests in `hooks/localStudioSyncRefreshPolicy.test.ts` for asset-trigger refresh, reconnect coalescing, and connected-event no-op behavior;
+  - done: `localStudioSyncRefreshPolicy` now coalesces backend refresh requests for both asset-added and disconnect events through one `requestRefresh` path, improving sync locality under bursty event streams;
   - done: extracted projection/reducer concerns into `hooks/localStudioSyncProjection.ts`;
   - done: `useLocalStudioSync.ts` now composes transport behavior with imported projection helpers instead of co-locating both concerns;
   - separate transport adapter behavior from activity projection behavior;

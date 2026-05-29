@@ -402,32 +402,38 @@ describe('buildStudioOverlayController', () => {
           },
         },
         data: {
-          settings: null,
-          error: null,
-          isLoading: false,
-          isSaving: false,
-          providerCapabilities: null,
-          providerRuntimePreflight: null,
-          outputSources: null,
-          outputSourceFiles: {},
-          isLoadingOutputSources: false,
-          loadingOutputSourceFiles: {},
-          isRegisteringOutputSource: false,
-          importingOutputSources: {},
-          refresh: () => {
-            calls.push('refreshSettings');
+          settingsDomain: {
+            settings: null,
+            error: null,
+            isLoading: false,
+            isSaving: false,
+            refresh: () => {
+              calls.push('refreshSettings');
+            },
+            update: () => {
+              calls.push('updateSettings');
+            },
           },
-          update: () => {
-            calls.push('updateSettings');
+          providerDomain: {
+            capabilities: null,
+            runtimePreflight: null,
           },
-          registerOutputSource: () => {
-            calls.push('registerOutputSource');
-          },
-          loadOutputSourceFiles: () => {
-            calls.push('loadOutputSourceFiles');
-          },
-          importOutputSourceFiles: () => {
-            calls.push('importOutputSourceFiles');
+          outputSourcesDomain: {
+            outputSources: null,
+            outputSourceFiles: {},
+            isLoadingOutputSources: false,
+            loadingOutputSourceFiles: {},
+            isRegisteringOutputSource: false,
+            importingOutputSources: {},
+            registerOutputSource: () => {
+              calls.push('registerOutputSource');
+            },
+            loadOutputSourceFiles: () => {
+              calls.push('loadOutputSourceFiles');
+            },
+            importOutputSourceFiles: () => {
+              calls.push('importOutputSourceFiles');
+            },
           },
         },
         background: {
