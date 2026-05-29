@@ -1,25 +1,31 @@
-import type { GeneratedImage, ImageGenerationConfig } from '../types';
+import type { GeneratedImage, ImageGenerationConfig } from "../types";
 import type {
   EditableStudioSettings,
   GenerationProviderId,
   GenerationTaskAssetRef,
   Job as StudioJob,
-} from '../packages/shared/src';
-import { createThumbnail } from '../utils/imageUtils';
+} from "../packages/shared/src";
+import { createThumbnail } from "../utils/imageUtils";
 import {
   buildGenerationVariationBrief,
   createGenerationVariationKey,
-} from '../lib/generationVariation';
-import { resolveGenerationConfig } from '../lib/recipeContext';
-import { materializeCatalogEntryImage } from '../lib/studioCatalogImageAdapter';
-import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
+} from "../lib/generationVariation";
+import { resolveGenerationConfig } from "../lib/recipeContext";
+import { materializeCatalogEntryImage } from "../lib/studioCatalogImageAdapter";
+import { buildGenerationTaskSpecFromRecipe } from "../lib/recipeModules";
 import {
   createStudioJob,
   getEditableStudioSettings,
   listProjects,
   queryCatalog,
-} from './localStudioService';
-import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
+} from "./localStudioService";
+import { createStudioEventStream, type StudioEventStream, watchJob } from "./studioEventSource";
+import {
+  isGenerationCancellationError,
+  throwIfGenerationAborted,
+  toGenerationDataUrl,
+  waitForGenerationDelay,
+} from "./localGenerationRuntimeAdapters";
 
 interface RunLocalGenerationOptions {
   config: ImageGenerationConfig;
@@ -36,17 +42,17 @@ interface RunLocalGenerationOptions {
 
 export type LocalGenerationLifecycleOutcome =
   | {
-      status: 'completed';
+      status: "completed";
       result: LocalGenerationRunResult;
       durationMs: number;
     }
   | {
-      status: 'cancelled';
+      status: "cancelled";
       message: string;
       durationMs: number;
     }
   | {
-      status: 'failed';
+      status: "failed";
       message: string;
       durationMs: number;
     };
@@ -65,74 +71,9 @@ export function resolveLocalGenerationProviderId({
   settings,
 }: {
   providerId?: GenerationProviderId | null;
-  settings?: Pick<EditableStudioSettings, 'defaultProviderId'> | null;
+  settings?: Pick<EditableStudioSettings, "defaultProviderId"> | null;
 }): GenerationProviderId {
-  return providerId ?? settings?.defaultProviderId ?? 'codex';
-}
-
-function createAbortError() {
-  const error = new Error('Operation cancelled by user');
-  error.name = 'AbortError';
-  return error;
-}
-
-function throwIfAborted(signal?: AbortSignal) {
-  if (signal?.aborted) {
-    throw createAbortError();
-  }
-}
-
-function waitWithAbort(durationMs: number, signal?: AbortSignal) {
-  if (!signal) {
-    return new Promise<void>((resolve) => {
-      window.setTimeout(resolve, durationMs);
-    });
-  }
-
-  throwIfAborted(signal);
-
-  return new Promise<void>((resolve, reject) => {
-    const timeout = window.setTimeout(() => {
-      signal.removeEventListener('abort', handleAbort);
-      resolve();
-    }, durationMs);
-
-    const handleAbort = () => {
-      window.clearTimeout(timeout);
-      signal.removeEventListener('abort', handleAbort);
-      reject(createAbortError());
-    };
-
-    signal.addEventListener('abort', handleAbort, { once: true });
-  });
-}
-
-function isGenerationCancellationError(error: unknown) {
-  return error instanceof Error && (error.name === 'AbortError' || /cancel/i.test(error.message));
-}
-
-/**
- * Convert an image source into a data URL payload accepted by the local
- * generation backend.
- */
-async function toDataUrl(src: string) {
-  if (src.startsWith('data:')) return src;
-  const response = await fetch(src);
-  if (!response.ok) throw new Error(`Unable to read input image: ${response.status}`);
-  const blob = await response.blob();
-  return new Promise<string>((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onerror = () => reject(new Error('Unable to encode input image'));
-    reader.onload = () => {
-      if (typeof reader.result !== 'string') {
-        reject(new Error('Unable to encode input image as a data URL'));
-        return;
-      }
-
-      resolve(reader.result);
-    };
-    reader.readAsDataURL(blob);
-  });
+  return providerId ?? settings?.defaultProviderId ?? "codex";
 }
 
 export async function buildJobAssets({
@@ -140,27 +81,27 @@ export async function buildJobAssets({
   inputImage,
 }: {
   config: ImageGenerationConfig;
-  inputImage?: RunLocalGenerationOptions['inputImage'];
+  inputImage?: RunLocalGenerationOptions["inputImage"];
 }): Promise<GenerationTaskAssetRef[]> {
   const assets: GenerationTaskAssetRef[] = [];
   const isEditMode = Boolean(inputImage);
 
   if (inputImage) {
     assets.push({
-      role: 'input',
-      name: 'input-image.png',
-      dataUrl: await toDataUrl(inputImage.src),
+      role: "input",
+      name: "input-image.png",
+      dataUrl: await toGenerationDataUrl(inputImage.src),
       strength: 1,
     });
   }
 
   const queuedAttachments = isEditMode
-    ? config.attachments.filter((attachment) => attachment.id.startsWith('mask-'))
+    ? config.attachments.filter((attachment) => attachment.id.startsWith("mask-"))
     : config.attachments;
 
   for (const attachment of queuedAttachments) {
     assets.push({
-      role: attachment.id.startsWith('mask-') ? 'mask' : 'reference',
+      role: attachment.id.startsWith("mask-") ? "mask" : "reference",
       name: attachment.name,
       dataUrl: attachment.dataUrl,
       strength: attachment.strength,
@@ -174,8 +115,8 @@ export function buildLocalGenerationTaskPrompt({
   config,
   inputImage,
 }: {
-  config: Pick<ImageGenerationConfig, 'prompt' | 'attachments' | 'recipeId'>;
-  inputImage?: RunLocalGenerationOptions['inputImage'];
+  config: Pick<ImageGenerationConfig, "prompt" | "attachments" | "recipeId">;
+  inputImage?: RunLocalGenerationOptions["inputImage"];
 }) {
   const editPrompt = inputImage?.prompt?.trim();
   if (editPrompt) return editPrompt;
@@ -184,12 +125,12 @@ export function buildLocalGenerationTaskPrompt({
   if (prompt) return prompt;
 
   if (config.attachments.length > 0) {
-    return config.recipeId === 'styles'
-      ? 'Apply the selected style using the provided reference image.'
-      : 'Generate from the provided reference image.';
+    return config.recipeId === "styles"
+      ? "Apply the selected style using the provided reference image."
+      : "Generate from the provided reference image.";
   }
 
-  return 'Generate a high-quality image.';
+  return "Generate a high-quality image.";
 }
 
 /**
@@ -203,7 +144,7 @@ export async function runSingleCodexImagegenJob(options: {
   batchCount: number;
   workspaceId: string;
   providerId: GenerationProviderId;
-  inputImage?: RunLocalGenerationOptions['inputImage'];
+  inputImage?: RunLocalGenerationOptions["inputImage"];
   stream?: StudioEventStream;
   signal?: AbortSignal;
   onJobCreated?: (job: StudioJob) => void;
@@ -211,7 +152,6 @@ export async function runSingleCodexImagegenJob(options: {
 }) {
   const {
     config,
-    batchId,
     batchIndex,
     batchCount,
     workspaceId,
@@ -220,7 +160,7 @@ export async function runSingleCodexImagegenJob(options: {
     signal,
     onProgress,
   } = options;
-  throwIfAborted(signal);
+  throwIfGenerationAborted(signal);
   const projects = await listProjects();
   const projectId = projects[0]?.id;
   const taskPrompt = buildLocalGenerationTaskPrompt({ config, inputImage });
@@ -236,7 +176,7 @@ export async function runSingleCodexImagegenJob(options: {
   const sourceSpec = buildGenerationTaskSpecFromRecipe({
     id: `${batchId}-${Date.now()}`,
     providerId,
-    task: inputImage ? 'image_edit' : undefined,
+    task: inputImage ? "image_edit" : undefined,
     config: {
       ...config,
       prompt: taskPrompt,
@@ -262,7 +202,7 @@ export async function runSingleCodexImagegenJob(options: {
     execution: {
       model: config.executionModel,
       reasoningEffort: config.executionReasoningEffort,
-      serviceTier: config.executionSpeed === 'standard' ? null : config.executionSpeed,
+      serviceTier: config.executionSpeed === "standard" ? null : config.executionSpeed,
     },
     references: requestAssets.flatMap((asset) =>
       asset.dataUrl
@@ -322,7 +262,7 @@ export async function runLocalGeneration({
 }: RunLocalGenerationOptions): Promise<LocalGenerationRunResult> {
   const stream = createStudioEventStream();
   try {
-    throwIfAborted(signal);
+    throwIfGenerationAborted(signal);
     const settings = await getEditableStudioSettings();
     const providerId = resolveLocalGenerationProviderId({
       providerId: requestedProviderId,
@@ -357,13 +297,13 @@ export async function runLocalGeneration({
       }
 
       if (index < batchCount - 1) {
-        await waitWithAbort(2000, signal);
+        await waitForGenerationDelay(2000, signal);
       }
     }
 
     if (batchImages.length === 0) {
       if (lastError) throw lastError;
-      throw new Error('No assets were synthesized. Please check your prompt or context.');
+      throw new Error("No assets were synthesized. Please check your prompt or context.");
     }
 
     return {
@@ -386,21 +326,21 @@ export async function runLocalGenerationWithLifecycle(
   try {
     const result = await runLocalGeneration(options);
     return {
-      status: 'completed',
+      status: "completed",
       result,
       durationMs: Date.now() - startedAt,
     };
   } catch (error) {
     if (isGenerationCancellationError(error)) {
       return {
-        status: 'cancelled',
+        status: "cancelled",
         message: error instanceof Error ? error.message : String(error),
         durationMs: Date.now() - startedAt,
       };
     }
 
     return {
-      status: 'failed',
+      status: "failed",
       message: error instanceof Error ? error.message : String(error),
       durationMs: Date.now() - startedAt,
     };

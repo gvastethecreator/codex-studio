@@ -1,14 +1,15 @@
-import { useCallback, useEffect, useReducer, useMemo, useRef } from 'react';
-import { listStudioJobs, listStudioLogs } from '../services/localStudioService';
-import { createStudioEventStream } from '../services/studioEventSource';
-import type { LogEntry } from '../types';
-import type { Job as StudioJob, SystemLog as StudioLog } from '../packages/shared/src';
+import { useCallback, useEffect, useReducer, useMemo, useRef } from "react";
+import { listStudioJobs, listStudioLogs } from "../services/localStudioService";
+import { createStudioEventStream } from "../services/studioEventSource";
+import type { LogEntry } from "../types";
+import type { Job as StudioJob, SystemLog as StudioLog } from "../packages/shared/src";
 import {
   buildMergedStudioLogs,
   countActiveServerJobs,
   INITIAL_LOCAL_STUDIO_SYNC_BACKEND_STATE,
   localStudioSyncBackendReducer,
-} from './localStudioSyncProjection';
+} from "./localStudioSyncProjection";
+import { createLocalStudioSyncRefreshPolicy } from "./localStudioSyncRefreshPolicy";
 
 interface UseLocalStudioSyncProps {
   logs: LogEntry[];
@@ -63,38 +64,45 @@ export function useLocalStudioSync({
 
       const [backendJobs, backendLogs] = await Promise.all([listStudioJobs(), listStudioLogs()]);
 
-      dispatch({ type: 'refresh', jobs: backendJobs, logs: backendLogs });
+      dispatch({ type: "refresh", jobs: backendJobs, logs: backendLogs });
       onCatalogChanged?.();
     } catch (error) {
       if (!isMountedRef.current) {
         return;
       }
 
-      dispatch({ type: 'disconnect' });
+      dispatch({ type: "disconnect" });
       log(
         `Local Codex backend sync failed: ${error instanceof Error ? error.message : String(error)}`,
       );
     }
   }, [log, onCatalogChanged]);
 
+  const refreshPolicy = useMemo(
+    () =>
+      createLocalStudioSyncRefreshPolicy({
+        onCatalogChanged,
+        refreshBackendState,
+      }),
+    [onCatalogChanged, refreshBackendState],
+  );
+
   useEffect(() => {
     void refreshBackendState();
 
     const stream = createStudioEventStream();
-    const unsubscribeJob = stream.onJobUpdate('*', (job) => {
-      dispatch({ type: 'job_update', job });
+    const unsubscribeJob = stream.onJobUpdate("*", (job) => {
+      dispatch({ type: "job_update", job });
     });
     const unsubscribeAsset = stream.onAssetAdded(() => {
-      onCatalogChanged?.();
+      refreshPolicy.onAssetAdded();
     });
     const unsubscribeLog = stream.onLogAdded((entry) => {
-      dispatch({ type: 'log_added', entry });
+      dispatch({ type: "log_added", entry });
     });
     const unsubscribeConnection = stream.onConnectionChange((connected) => {
-      dispatch({ type: 'connection_change', connected });
-      if (!connected) {
-        void refreshBackendState();
-      }
+      dispatch({ type: "connection_change", connected });
+      refreshPolicy.onConnectionChange(connected);
     });
 
     return () => {
@@ -104,7 +112,7 @@ export function useLocalStudioSync({
       unsubscribeConnection();
       stream.close();
     };
-  }, [onCatalogChanged, refreshBackendState]);
+  }, [refreshPolicy, refreshBackendState]);
 
   return {
     activity: {

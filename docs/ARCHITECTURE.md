@@ -53,6 +53,11 @@ graph TD
 - `lib/buildStudioHeaderToolbarProps.ts`: concentrates `Command Center` and header-toolbar transitions, runtime status derivation, queue counts, and provider fallback in one seam.
 - `hooks/useStudioOverlayController.ts`: keeps the lower-level overlay controller seam and now also exposes a deeper shell-overlay seam that derives `Studio Settings` library fallback and background-toggle choreography from runtime/settings modules instead of leaving that wiring inline in `useStudioShell.ts`.
 - `lib/studioReadiness.ts` and `lib/studioDiagnostics.ts`: pure builders for onboarding, header status, and system panels.
+- `apps/local-server/src/settingsRoutes.ts`: groups editable `Studio Settings` read/patch HTTP behavior so `appFactory.ts` keeps runtime composition concerns.
+- `apps/local-server/src/codexRoutes.ts`: groups Local Codex Session and model/account route behavior (`/api/codex/*`) behind one backend seam.
+- `apps/local-server/src/librariesRoutes.ts`: groups Studio Library list/create/default/remove HTTP behavior (`/api/libraries/*`) behind one backend seam.
+- `apps/local-server/src/projectRoutes.ts`: groups project listing/creation HTTP behavior (`/api/projects`) and keeps event/log side effects out of `appFactory.ts` inline handlers.
+- `apps/local-server/src/providerRoutes.ts` and `apps/local-server/src/outputSourceRoutes.ts`: keep provider capability/preflight and External Output Source HTTP behavior out of `appFactory.ts` inline handlers.
 - `components/shell/StudioViewport.tsx`: demand-mounted route shell that lazy-loads studio and recipe surfaces.
 - `components/recipes/styles/manifests/`: granular source of truth for Style Pack Manifests and Style Preset Manifests.
 
