@@ -62,6 +62,8 @@ graph TD
 - `apps/local-server/src/runtimeRoutes.ts`: groups runtime health/bootstrap/app-server-start HTTP behavior (`/api/health`, `/api/bootstrap-config`, `/api/app-server/start`) into a dedicated backend seam.
 - `apps/local-server/src/studioControlRoutes.ts`: groups Studio control HTTP behavior (`/api/studio/reset`) into a dedicated backend seam.
 - `apps/local-server/src/providerRoutes.ts` and `apps/local-server/src/outputSourceRoutes.ts`: keep provider capability/preflight and External Output Source HTTP behavior out of `appFactory.ts` inline handlers.
+- `apps/local-server/src/eventStreamRoutes.ts`: groups SSE event stream behavior (`/api/events`) into a dedicated backend seam.
+- `apps/local-server/src/libraryRoutes.ts`: groups local asset serving behavior (`/library/*`) including thumbnail variant fallback and cache headers into a dedicated backend seam.
 - `components/shell/StudioViewport.tsx`: demand-mounted route shell that lazy-loads studio and recipe surfaces.
 - `components/recipes/styles/manifests/`: granular source of truth for Style Pack Manifests and Style Preset Manifests.
 

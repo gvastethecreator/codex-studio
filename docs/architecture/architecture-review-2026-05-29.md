@@ -4,13 +4,13 @@ Date: 2026-05-29
 
 ## Summary
 
-- La fricción principal sigue en módulos donde la **interface** todavía está cerca de la **implementation**: `Studio Shell`, `Local Generation Run`, `WorkerController`, `Local Studio Sync` y el módulo de composición del runtime backend.
-- El batch aceptado del 2026-05-27 marcó la dirección correcta; esta revisión identifica deltas concretos para cerrar los huecos que siguen abiertos.
-- El riesgo actual no es falta de seams, sino seams reales con **depth** parcial: demasiada coordinación visible para el caller y demasiado conocimiento cruzado para depurar o probar.
+- El repo avanzó en **depth** real (por ejemplo: `workerAssetFinalizer`, `workerAssetPathing`, rutas extraídas en `appFactory`, y `localStudioSyncProjection`), pero todavía hay módulos cuya **interface** expone demasiada **implementation**.
+- La fricción actual está más en “última milla” de deepening que en extracciones grandes nuevas: cerrar seams incompletos para subir **locality** y mantener **leverage**.
+- Esta revisión actualiza el batch del 2026-05-27 con foco en deltas vigentes y en lo que ya no aplica.
 
 ## Recommendations
 
-### 1. Terminar el deepening del módulo Studio Shell y reducir su interface pública
+### 1. Cerrar el deepening del módulo Studio Shell (fase final de interface)
 
 **Recommendation strength**: Strong
 
@@ -18,261 +18,260 @@ Date: 2026-05-29
 
 - `hooks/useStudioShell.ts`
 - `components/AppContent.tsx`
+- `hooks/useStudioRuntime.ts`
 - `lib/buildStudioPageController.ts`
 - `lib/buildStudioHeaderToolbarProps.ts`
-- `hooks/useStudioOverlayController.ts`
 
 **Problem**
 
-`useStudioShell` sigue siendo un módulo de coordinación muy ancho: integra navegación, generación, overlays, `Command Center`, `Studio Readiness`, `Local Studio Sync` y acciones de `Image Catalog` en una sola **interface**. El caller necesita entender demasiada **implementation** para tocar una sola ruta de comportamiento.
+`useStudioShell` todavía cruza demasiadas superficies en una sola **interface**. Aunque ya hay varios módulos extraídos, la **implementation** sigue visible para el caller por el volumen de dependencias y coordinación en un solo módulo.
 
-Deletion test: si se elimina `useStudioShell`, la complejidad reaparece en `AppContent` y en múltiples callers; no desaparece.
+Deletion test: si se elimina `useStudioShell`, la complejidad reaparece en `AppContent` y en callers de shell; no desaparece.
 
 **Solution**
 
-Mantener `useStudioShell` como módulo de composición final, pero mover la coordinación restante a módulos más profundos por flujo (por ejemplo, proyección de overlays, proyección de operaciones, y proyección de navegación) para que la interface de shell se reduzca a un ensamblado mínimo.
+Terminar la fase final de deepening para que `Studio Shell` sea principalmente un módulo de ensamblado con menos detalle operativo expuesto. Mantener el seam, pero con menos conocimiento cruzado en su interface.
 
 **Benefits**
 
-- locality: cambios de shell se concentran por flujo y no en un único módulo gigante.
-- leverage: callers consumen una interface más corta con más comportamiento útil.
-- testability: permite pruebas por seam de flujo sin montar todo el shell.
+- locality: cambios de shell se concentran por módulo y no en un único punto de coordinación ancho.
+- leverage: la interface de shell entrega más comportamiento con menos superficie.
+- testability: pruebas de shell por seam con menor setup transversal.
 
 **Before / After**
 
-- Before: una interface de shell expone demasiados subárboles de estado y handlers.
-- After: el módulo shell solo ensambla adapters profundos por flujo; su interface queda pequeña y estable.
+- Before: `Studio Shell` concentra demasiada coordinación detallada.
+- After: `Studio Shell` conserva el seam principal, pero con una interface más pequeña y estable.
 
 **Dependencies / sequencing**
 
-- Debe ejecutarse primero.
-- Extiende ADR-0011 y ADR-0024.
+- Primero en el orden.
+- Continúa ADR-0011 y ADR-0024, sin conflicto.
 
 **Documentation follow-ups**
 
-- Actualizar `docs/ARCHITECTURE.md` en la sección de `Studio Shell`.
-- Actualizar `docs/TECHNICAL_DEBT.md` y `docs/architecture/DEEPENING-ROADMAP.md` con el cierre de esta fase.
+- Actualizar `docs/ARCHITECTURE.md` en `Studio Shell`.
+- Actualizar estado en `docs/architecture/DEEPENING-ROADMAP.md` y `docs/TECHNICAL_DEBT.md`.
 
-### 2. Mover la política completa de ciclo de vida al módulo Local Generation Run
+### 2. Profundizar el módulo Studio Generation Session para eliminar política duplicada
 
 **Recommendation strength**: Strong
 
 **Files**
 
-- `services/localGenerationRun.ts`
-- `hooks/useGenerationPipeline.ts`
-- `hooks/useStudioGenerationLifecycle.ts`
 - `hooks/useStudioGenerationSession.ts`
+- `hooks/useGenerationPipeline.ts`
+- `services/localGenerationRun.ts`
+- `hooks/useStudioGenerationLifecycle.ts`
 
 **Problem**
 
-La política de ciclo de vida sigue repartida: `Local Generation Run` devuelve outcomes, pero el pipeline todavía decide demasiado sobre mensajes, modal y reglas por flujo (`generate` vs `edit`). La **interface** visible para el caller sigue siendo más grande de lo necesario.
+La clasificación de outcomes ya está en `Local Generation Run`, pero `useGenerationPipeline` todavía repite parte de la política de interacción (mensajes, modal, diferencias generate/edit). La **interface** cruzada entre módulos sigue siendo más grande de lo necesario.
 
-Deletion test: quitar `runLocalGenerationWithLifecycle` duplicaría la coreografía de jobs; quitar la lógica de pipeline repartiría reglas de ciclo de vida en varios módulos.
+Deletion test: si se quita la capa de lifecycle del run, la complejidad reaparece en pipeline y sesión; si se quita pipeline sin deepening, la política queda repartida.
 
 **Solution**
 
-Profundizar `Local Generation Run` para centralizar outcome policy (incluyendo mensajes normalizados, clasificación de fallos/cancelación y pacing), dejando `useGenerationPipeline` como adapter UI del resultado.
+Concentrar una política única de outcome para generación/edición detrás del seam de sesión, dejando pipeline como adapter de UI con mínima lógica propia.
 
 **Benefits**
 
-- locality: reglas de ciclo de vida se corrigen en un solo módulo.
-- leverage: una interface de outcomes reutilizable para `generate` y `edit`.
-- testability: pruebas de ciclo de vida cruzan un seam sin UI.
+- locality: reglas de outcome se corrigen en un solo módulo.
+- leverage: mismo comportamiento para `generate` y `edit` detrás de una interface coherente.
+- testability: pruebas de política sin acoplar toda la UI.
 
 **Before / After**
 
-- Before: ciclo de vida repartido entre run + pipeline + lifecycle hook.
-- After: ciclo de vida concentrado en run; hooks UI hacen traducción visual.
+- Before: policy repartida entre run, lifecycle y pipeline.
+- After: policy concentrada; pipeline queda delgado.
 
 **Dependencies / sequencing**
 
 - Segundo en el orden.
-- Continúa la recomendación 2 del review 2026-05-27.
+- Continúa el batch aceptado de 2026-05-27.
 
 **Documentation follow-ups**
 
-- Actualizar flujo de generación en `docs/ARCHITECTURE.md`.
-- Marcar avance en `docs/architecture/DEEPENING-ROADMAP.md`.
+- Actualizar sección `Local Generation Run` en `docs/ARCHITECTURE.md`.
+- Actualizar tracker en `docs/architecture/DEEPENING-ROADMAP.md`.
 
-### 3. Profundizar el seam de finalización de assets en WorkerController
+### 3. Separar el módulo Studio Settings en seams por dominio operativo
+
+**Recommendation strength**: Worth exploring
+
+**Files**
+
+- `hooks/useStudioSettings.ts`
+- `services/localStudioService.ts`
+- `components/StudioSettingsModal.tsx`
+
+**Problem**
+
+`useStudioSettings` mezcla en una misma **implementation**: Studio Settings editables, Provider capability/preflight y operaciones de External Output Source. El resultado es una **interface** muy ancha para callers de UI y baja **locality** al cambiar una sola preocupación.
+
+Deletion test: si se elimina este módulo, la complejidad se dispersa por múltiples callers; hoy está concentrada, pero en una sola unidad demasiado ancha.
+
+**Solution**
+
+Mantener un seam principal para la UI, pero con módulos profundos internos por dominio (Settings editables, Provider runtime diagnostics, External Output Source) para reducir acoplamiento entre flujos.
+
+**Benefits**
+
+- locality: cada flujo operativo cambia en un módulo propio.
+- leverage: callers de `Studio Settings` consumen una interface menos ruidosa.
+- testability: pruebas por flujo sin stubs cruzados innecesarios.
+
+**Before / After**
+
+- Before: una sola interface para tres dominios de comportamiento.
+- After: módulos profundos por dominio detrás de un seam de UI estable.
+
+**Dependencies / sequencing**
+
+- Tercero en el orden.
+- No contradice ADR-0023 ni ADR-0030.
+
+**Documentation follow-ups**
+
+- Actualizar `docs/ARCHITECTURE.md` en `Studio Settings` y Provider diagnostics.
+- Actualizar `docs/TECHNICAL_DEBT.md` con la deuda separada por dominio.
+
+### 4. Finalizar deepening del módulo appFactory extrayendo stream/events y library serving
 
 **Recommendation strength**: Strong
 
 **Files**
 
-- `apps/local-server/src/worker.ts`
-- `apps/local-server/src/outputOrganization.ts`
-- `apps/local-server/src/library.ts`
+- `apps/local-server/src/appFactory.ts`
+- `apps/local-server/src/runtimeRoutes.ts`
+- `apps/local-server/src/libraryAssetVariants.ts`
 
 **Problem**
 
-`worker.ts` concentra demasiada **implementation** de finalización (move/rename, `publicUrl`, catalog registration, metadata embedding, events) dentro de un solo módulo operativo. Además, la construcción de `publicUrl` en `finalizeJobAsset` se resuelve con `discoveredImagePath` mientras el archivo puede ser movido a `organizedImagePath`, lo que debilita la **locality** del comportamiento correcto.
+`appFactory` ya ganó **depth** con múltiples rutas extraídas, pero todavía mantiene inline dos áreas con mucha **implementation**: SSE (`/api/events`) y serving de `Local Asset` (`/library/*`). Eso reduce **locality** en cambios de transporte y cacheado de assets.
 
-Deletion test: eliminar este tramo no elimina complejidad; la propaga a cada ejecución de provider.
-
-**Solution**
-
-Extraer un módulo profundo de finalización de asset con una interface explícita de `finalizeGeneratedAsset(job, discoveredPath, providerId, catalogContext)` y adapters internos para path organization, URL pública, metadata y persistencia.
-
-**Benefits**
-
-- locality: la lógica de finalización y rutas queda en un solo módulo.
-- leverage: todos los providers reutilizan el mismo comportamiento consistente.
-- testability: pruebas enfocadas sobre un seam único de finalización.
-
-**Before / After**
-
-- Before: finalización mezclada dentro de `worker.ts` con múltiples pasos acoplados.
-- After: `worker.ts` orquesta; un módulo profundo encapsula finalización.
-
-**Dependencies / sequencing**
-
-- Tercero en el orden.
-- Encaja con ADR-0014 (DI seams) y no lo contradice.
-
-**Documentation follow-ups**
-
-- Actualizar `docs/ARCHITECTURE.md` en backend runtime seams.
-- Actualizar ADR-0014 de `Proposed` a estado alineado cuando cierre esta extracción.
-
-### 4. Extraer adapters de runtime browser-only fuera de Local Generation Run
-
-**Recommendation strength**: Worth exploring
-
-**Files**
-
-- `services/localGenerationRun.ts`
-- `services/localStudioService.ts`
-- `services/studioEventSource.ts`
-
-**Problem**
-
-`localGenerationRun.ts` mezcla orquestación de job con detalles browser-only (`window.setTimeout`, `FileReader`, `fetch` para data URL). La **interface** del módulo parece portable, pero su **implementation** fuerza un runtime concreto y reduce la claridad del seam para pruebas fuera de DOM.
-
-Deletion test: eliminar helpers browser-only del módulo no quita complejidad de negocio; la reubica mejor detrás de adapters explícitos.
+Deletion test: quitar `appFactory` hoy seguiría dispersando estas dos áreas; el módulo conserva complejidad legítima, pero con seams aún incompletos.
 
 **Solution**
 
-Separar adapters de runtime (`clock`, `binaryEncoder`, `sourceReader`) y dejar `Local Generation Run` como módulo de orquestación pura sobre esos adapters.
+Completar la extracción de SSE y serving de library hacia módulos profundos dedicados, manteniendo `appFactory` como composición de runtime.
 
 **Benefits**
 
-- locality: diferencias de runtime se concentran en adapters dedicados.
-- leverage: mismo módulo de orquestación para más de un entorno de prueba.
-- testability: tests de run sin depender de globals browser.
+- locality: stream y asset-serving evolucionan sin tocar el módulo de composición.
+- leverage: `appFactory` queda como interface clara de wiring.
+- testability: pruebas de stream/cache headers sin levantar toda la app.
 
 **Before / After**
 
-- Before: módulo de run conoce detalles de orígenes/temporizadores browser.
-- After: módulo de run consume adapters; browser details quedan fuera.
+- Before: composición + stream + serving en el mismo módulo.
+- After: composición del runtime separada de stream/serving.
 
 **Dependencies / sequencing**
 
 - Cuarto en el orden.
-- Conviene hacerlo después de cerrar la recomendación 2.
+- Continúa ADR-0014 y ADR-0029, sin conflicto.
 
 **Documentation follow-ups**
 
-- Actualizar `docs/ARCHITECTURE.md` en `Local Generation Run`.
-- Si se vuelve decisión irreversible de runtime, abrir ADR nuevo; si no, registrar en roadmap.
+- Actualizar `docs/ARCHITECTURE.md` en seams de backend runtime.
+- Actualizar `docs/architecture/DEEPENING-ROADMAP.md` (item de appFactory).
 
-### 5. Profundizar el módulo de composición backend en appFactory
-
-**Recommendation strength**: Worth exploring
-
-**Files**
-
-- `apps/local-server/src/appFactory.ts`
-- `apps/local-server/src/catalogRoutes.ts`
-- `apps/local-server/src/workspaceRoutes.ts`
-- `apps/local-server/src/worker.ts`
-
-**Problem**
-
-`appFactory.ts` cruza demasiadas responsabilidades: bootstrap, health/readiness, rutas, output sources, provider preflight, jobs, SSE y asset serving. La **interface** de creación es chica, pero la **implementation** tiene acoplamiento alto y baja **locality** para cambios de una sola ruta.
-
-Deletion test: si se elimina `appFactory.ts`, gran parte de la complejidad reaparece fragmentada sin una composición clara; hoy concentra demasiado, pero no con seams internos suficientemente profundos.
-
-**Solution**
-
-Mantener `createStudioApp` como interface de entrada y extraer módulos profundos por flujo de runtime backend (readiness, jobs, output sources, stream, assets) con adapters explícitos.
-
-**Benefits**
-
-- locality: cambios de un flujo backend no arrastran todo el factory.
-- leverage: un módulo de composición pequeño sobre módulos de flujo profundos.
-- testability: permite pruebas de flujo sin montar todo el runtime.
-
-**Before / After**
-
-- Before: un módulo grande registra múltiples flujos heterogéneos.
-- After: composición principal pequeña y flujos encapsulados por seam.
-
-**Dependencies / sequencing**
-
-- Quinto en el orden.
-- Sigue la dirección de ADR-0029 y ADR-0014.
-
-**Documentation follow-ups**
-
-- Actualizar `docs/ARCHITECTURE.md` (runtime backend seams).
-- Añadir pasos en `docs/architecture/DEEPENING-ROADMAP.md`.
-
-### 6. Cerrar el deepening del módulo Local Studio Sync con política de refresh explícita
+### 5. Ajustar el módulo Local Studio Sync para un seam de refresh más explícito
 
 **Recommendation strength**: Worth exploring
 
 **Files**
 
 - `hooks/useLocalStudioSync.ts`
-- `hooks/localStudioSyncProjection.ts`
+- `hooks/localStudioSyncRefreshPolicy.ts`
 - `services/studioEventSource.ts`
 
 **Problem**
 
-Aunque la proyección ya salió a `localStudioSyncProjection`, la política de refresh sigue acoplada al hook: `onAssetAdded` dispara refresh implícito, reconnect dispara refresh, y no hay un adapter explícito de coalescing/debounce para el `Image Catalog`. La **interface** del módulo oculta reglas de carga con potencial de ruido.
+La extracción de refresh policy ya existe, pero la policy actual es mínima (`onAssetAdded`, `onConnectionChange`) y su **interface** no expresa con claridad reglas de coalescing/backpressure para ráfagas de eventos. La **locality** mejoró, pero el seam aún es delgado para crecimiento operativo.
 
-Deletion test: al borrar `useLocalStudioSync`, reaparece la complejidad de stream + refresh policy en varios callers.
+Deletion test: eliminar `localStudioSyncRefreshPolicy` volvería a inyectar reglas implícitas en el hook principal; hoy aporta valor, pero su depth puede crecer.
 
 **Solution**
 
-Separar la política de refresh en un módulo profundo de sincronización (`syncRefreshPolicy`) y dejar `useLocalStudioSync` como ensamblado de stream + projection + policy.
+Profundizar el módulo de policy para modelar explícitamente refrescos por tipo de evento y reconexión, manteniendo `useLocalStudioSync` como ensamblado de stream + projection + policy.
 
 **Benefits**
 
-- locality: reglas de reconexión/refresh viven en un solo módulo.
-- leverage: callers mantienen una interface estable de actividad.
-- testability: pruebas específicas para reconnect, burst de eventos y refresh coalescing.
+- locality: reglas de refresh/reconnect viven en un solo módulo.
+- leverage: callers conservan una interface estable mientras la policy evoluciona.
+- testability: pruebas específicas de ráfagas y reconexiones.
 
 **Before / After**
 
-- Before: stream y refresh policy conviven en el mismo hook.
-- After: refresh policy cruza un seam explícito y testeable.
+- Before: policy correcta pero con poco depth operativo.
+- After: policy explícita y más profunda sin ensanchar callers.
 
 **Dependencies / sequencing**
 
-- Sexto en el orden.
-- Continúa la recomendación 6 del review 2026-05-27.
+- Quinto en el orden.
+- Conviene después de 1 y 4 para evitar churn de shell/runtime.
 
 **Documentation follow-ups**
 
 - Actualizar sección `Local Studio Sync` en `docs/ARCHITECTURE.md`.
-- Actualizar tracker en `docs/architecture/DEEPENING-ROADMAP.md`.
+- Actualizar `docs/TECHNICAL_DEBT.md` y roadmap con criterios de salida.
+
+### 6. Revisar naming/seam en Local Generation Run para reducir señal codex-only en módulo neutral
+
+**Recommendation strength**: Speculative
+
+**Files**
+
+- `services/localGenerationRun.ts`
+- `lib/recipeModules.ts`
+- `apps/local-server/src/workerRouting.ts`
+
+**Problem**
+
+`runSingleCodexImagegenJob` vive dentro de un módulo que resuelve `Generation Provider` desde `Studio Settings`. El comportamiento ya es mayormente provider-neutral, pero el naming y parte del flujo todavía señalan una **interface** más específica que la **implementation** real.
+
+Deletion test: eliminar esta parte no quita complejidad; la reubica y puede confundir seams de provider.
+
+**Solution**
+
+Revisar el seam para que el módulo exprese con más precisión su rol provider-neutral, sin reabrir decisiones de Provider Boundary ya aceptadas.
+
+**Benefits**
+
+- locality: reduce ambigüedad semántica en el módulo de run.
+- leverage: mejor AI-navigability sobre el seam de Generation Provider.
+- testability: fixtures de provider más claras para callers.
+
+**Before / After**
+
+- Before: naming específico en una implementation cada vez más neutral.
+- After: naming/seam alineados con el contrato real.
+
+**Dependencies / sequencing**
+
+- Sexto en el orden.
+- Ejecutar solo después de cerrar recomendaciones 2 y 4.
+
+**Documentation follow-ups**
+
+- Si se acepta, actualizar `docs/ARCHITECTURE.md` y `docs/active/professionalization-roadmap.md`.
+- No requiere ADR nuevo salvo cambio de contrato duro.
 
 ## Suggested execution order
 
-1. Terminar deepening de `Studio Shell` para reducir superficie de coordinación visible.
-2. Consolidar ciclo de vida en `Local Generation Run` para estabilizar outcomes.
-3. Extraer finalización de assets en `WorkerController` para ganar locality backend inmediata.
-4. Extraer adapters runtime browser-only en `Local Generation Run` para mejorar testability.
-5. Dividir `appFactory` por flujos de runtime backend sin romper la interface de entrada.
-6. Cerrar deepening de `Local Studio Sync` con policy explícita de refresh.
+1. Cerrar deepening de `Studio Shell` (reduce churn global para el resto).
+2. Consolidar policy de `Studio Generation Session` / `Local Generation Run`.
+3. Separar `Studio Settings` por dominio operativo.
+4. Completar extracción de SSE + library serving en `appFactory`.
+5. Profundizar policy de `Local Studio Sync` con reglas explícitas de refresh.
+6. Revisar naming/seam de `Local Generation Run` (especulativo, al final).
 
 ## Documentation fan-out
 
-- `docs/ARCHITECTURE.md`: actualizar seams de `Studio Shell`, `Local Generation Run`, worker backend, `Local Studio Sync`, y composición runtime.
-- `docs/architecture/DEEPENING-ROADMAP.md`: registrar estado y pasos por recomendación aceptada.
-- `docs/TECHNICAL_DEBT.md`: alinear cola de deuda con este batch.
-- `docs/adr/0014-backend-dependency-injection-seams.md`: actualizar estado al cerrar extracción backend.
-- `docs/adr/`: abrir ADR nuevo solo si una decisión de seam/runtime es dura de revertir.
+- `docs/ARCHITECTURE.md`: actualizar seams de `Studio Shell`, `Local Generation Run`, `Local Studio Sync`, y backend runtime composition.
+- `docs/architecture/DEEPENING-ROADMAP.md`: registrar estado por recomendación aceptada y dependencias.
+- `docs/TECHNICAL_DEBT.md`: alinear prioridad y estado con este batch.
+- `docs/adr/0014-backend-dependency-injection-seams.md`: actualizar estado cuando se cierre la fase backend pendiente.
+- `docs/adr/`: abrir ADR nuevo solo si una recomendación aceptada introduce una decisión difícil de revertir.

@@ -1,68 +1,68 @@
-import { existsSync } from "node:fs";
-import { randomUUID } from "node:crypto";
-import path from "node:path";
-import { Hono } from "hono";
-import { cors } from "hono/cors";
-import { streamSSE } from "hono/streaming";
-import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from "./config";
-import { resolveCodexInvocation } from "./codexExecutable";
-import { createCatalogCommands } from "./catalogCommands";
-import { createCatalogRoutes } from "./catalogRoutes";
-import { createDefaultCatalogStore, type StudioCatalogStore } from "./catalogStore";
-import { createDefaultDbStore, type StudioDbStore } from "./dbStore";
-import { getSettingValue, setSettingValue } from "./db";
-import { publishEvent, subscribeEvents } from "./events";
-import { initStudio } from "./init";
-import { inspectLibrary, resolvePublicLibraryPath } from "./library";
-import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from "./libraries";
-import { log } from "./logger";
+import { randomUUID } from 'node:crypto';
+import { Hono } from 'hono';
+import { cors } from 'hono/cors';
+import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from './config';
+import { resolveCodexInvocation } from './codexExecutable';
+import { createCatalogCommands } from './catalogCommands';
+import { createCatalogRoutes } from './catalogRoutes';
+import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
+import { createDefaultDbStore, type StudioDbStore } from './dbStore';
+import { getSettingValue, setSettingValue } from './db';
+import { publishEvent, subscribeEvents } from './events';
+import { initStudio } from './init';
+import { inspectLibrary, resolvePublicLibraryPath } from './library';
+import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from './libraries';
+import { log } from './logger';
 import {
   readEditableStudioSettings,
   updateEditableStudioSettings,
   type StudioSettingsStorage,
-} from "./studioSettingsStore";
-import { createWorkerController, type WorkerController, type WorkerStatus } from "./worker";
-import { resolveJobCatalogContext } from "./workerCatalogContext";
-import { resolveWorkerRuntimeTarget } from "./workerRouting";
-import { getCodexAccountStatus } from "./codex/accountStatus";
+} from './studioSettingsStore';
+import { createWorkerController, type WorkerController, type WorkerStatus } from './worker';
+import { resolveJobCatalogContext } from './workerCatalogContext';
+import { resolveWorkerRuntimeTarget } from './workerRouting';
+import { getCodexAccountStatus } from './codex/accountStatus';
 import {
   ensureAppServer,
   getAppServerDiagnostics,
   isAppServerRunning,
-} from "./codex/processSupervisor";
-import { getCodexModelCatalog } from "./codex/modelCatalog";
-import { getLocalCodexSession } from "./codex/localCodexSession";
-import { embedMetadata } from "./metadataEmbedder";
-import { getJobDetail } from "./jobDetails";
+} from './codex/processSupervisor';
+import { getCodexModelCatalog } from './codex/modelCatalog';
+import { getLocalCodexSession } from './codex/localCodexSession';
+import { embedMetadata } from './metadataEmbedder';
+import { getJobDetail } from './jobDetails';
 import {
   hydrateSourceSpecAssetPaths,
   processReferences,
+  type ProcessedReference,
   ReferenceProcessingError,
-} from "./referenceManager";
-import { createWorkspaceRoutes } from "./workspaceRoutes";
-import { resetStudioData } from "./reset";
+} from './referenceManager';
+import { createWorkspaceRoutes } from './workspaceRoutes';
+import { resetStudioData } from './reset';
 import {
   buildLibraryAssetHeaders,
   ensureThumbnailVariant,
   resolveAssetCacheSeconds,
   resolveThumbnailMaxEdge,
-} from "./libraryAssetVariants";
-import { getProviderExecutionBlocker, readProviderCapabilities } from "./providerCapabilities";
-import { createOutputSourceRoutes } from "./outputSourceRoutes";
-import { createProviderRoutes } from "./providerRoutes";
-import { createSettingsRoutes } from "./settingsRoutes";
-import { createCodexRoutes } from "./codexRoutes";
-import { createLibrariesRoutes } from "./librariesRoutes";
-import { createProjectRoutes } from "./projectRoutes";
-import { createJobRoutes } from "./jobRoutes";
-import { createAssetLogRoutes } from "./assetLogRoutes";
-import { createRuntimeRoutes } from "./runtimeRoutes";
-import { createStudioControlRoutes } from "./studioControlRoutes";
+} from './libraryAssetVariants';
+import { getProviderExecutionBlocker, readProviderCapabilities } from './providerCapabilities';
+import { createOutputSourceRoutes } from './outputSourceRoutes';
+import { createProviderRoutes } from './providerRoutes';
+import { createSettingsRoutes } from './settingsRoutes';
+import { createCodexRoutes } from './codexRoutes';
+import { createLibrariesRoutes } from './librariesRoutes';
+import { createProjectRoutes } from './projectRoutes';
+import { createJobRoutes } from './jobRoutes';
+import { createAssetLogRoutes } from './assetLogRoutes';
+import { createRuntimeRoutes } from './runtimeRoutes';
+import { createStudioControlRoutes } from './studioControlRoutes';
+import { createEventStreamRoutes } from './eventStreamRoutes';
+import { createLibraryRoutes } from './libraryRoutes';
 import type {
   AppServerEnsureReason,
   CodexModelCatalogResponse,
   LocalCodexSessionResponse,
-} from "../../../packages/shared/src";
+} from '../../../packages/shared/src';
 
 export interface StudioAppInstance {
   app: Hono;
@@ -86,7 +86,7 @@ export interface CreateStudioAppOptions {
     settingsStorage?: StudioSettingsStorage;
     worker?: Pick<
       WorkerController,
-      "cancelQueuedOrRunningJob" | "enqueueJob" | "getWorkerStatus" | "resetWorkerState"
+      'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus' | 'resetWorkerState'
     >;
     logger?: typeof log;
   };
@@ -126,10 +126,10 @@ export async function createStudioApp(
     publishEvent,
   });
 
-  app.use("*", cors());
+  app.use('*', cors());
 
   app.route(
-    "/api",
+    '/api',
     createRuntimeRoutes({
       readSettings: getSettings,
       inspectLibrary,
@@ -145,7 +145,7 @@ export async function createStudioApp(
   );
 
   app.route(
-    "/api/settings",
+    '/api/settings',
     createSettingsRoutes({
       readSettings: () => readEditableStudioSettings(settingsStorage),
       updateSettings: (patch) => updateEditableStudioSettings(settingsStorage, patch),
@@ -153,14 +153,14 @@ export async function createStudioApp(
   );
 
   app.route(
-    "/api/providers",
+    '/api/providers',
     createProviderRoutes({
       readSettings: readEditableStudioSettings(settingsStorage),
     }),
   );
 
   app.route(
-    "/api/output-sources",
+    '/api/output-sources',
     createOutputSourceRoutes({
       settingsStorage,
       readSettings: () => readEditableStudioSettings(settingsStorage),
@@ -171,7 +171,7 @@ export async function createStudioApp(
   );
 
   app.route(
-    "/api/codex",
+    '/api/codex',
     createCodexRoutes({
       readCodexModelCatalog,
       readLocalCodexSession,
@@ -180,7 +180,7 @@ export async function createStudioApp(
   );
 
   app.route(
-    "/api/studio",
+    '/api/studio',
     createStudioControlRoutes({
       resetStudioData,
       worker: workerController,
@@ -188,17 +188,18 @@ export async function createStudioApp(
   );
 
   app.route(
-    "/api/projects",
+    '/api/projects',
     createProjectRoutes({
       listProjects: () => dbStore.listProjects(),
       createProject: (name, description) => dbStore.createProject(name, description),
       publishEvent,
-      logProjectCreated: (projectName) => appLogger("info", "api", `Project created: ${projectName}`),
+      logProjectCreated: (projectName) =>
+        appLogger('info', 'api', `Project created: ${projectName}`),
     }),
   );
 
   app.route(
-    "/api/jobs",
+    '/api/jobs',
     createJobRoutes({
       listJobs: () => dbStore.listJobs(),
       getJob: (jobId) => dbStore.getJob(jobId),
@@ -216,24 +217,33 @@ export async function createStudioApp(
           prompt: input.prompt,
           execution: input.execution,
         }),
-      updateJobFinalPrompt: (jobId, finalPrompt) => dbStore.updateJobFinalPrompt(jobId, finalPrompt),
-      processReferences,
-      hydrateSourceSpecAssetPaths,
+      updateJobFinalPrompt: (jobId, finalPrompt) =>
+        dbStore.updateJobFinalPrompt(jobId, finalPrompt),
+      processReferences: (jobId, prompt, references, libraryDir) =>
+        processReferences(jobId, prompt, references ?? [], libraryDir),
+      hydrateSourceSpecAssetPaths: (sourceSpec, references, persistedRefs) =>
+        hydrateSourceSpecAssetPaths(
+          sourceSpec,
+          references ?? [],
+          persistedRefs as ProcessedReference[],
+        ),
       readLibraryDir: () => getSettings().libraryDir,
       resolveProviderExecutionBlocker: (providerId) => {
-        const capabilityReport = readProviderCapabilities(readEditableStudioSettings(settingsStorage));
+        const capabilityReport = readProviderCapabilities(
+          readEditableStudioSettings(settingsStorage),
+        );
         return getProviderExecutionBlocker(capabilityReport, providerId);
       },
       isReferenceProcessingError: (error): error is ReferenceProcessingError =>
         error instanceof ReferenceProcessingError,
       publishEvent,
-      logJobCreated: (kind, jobId) => appLogger("info", "api", `Job created: ${kind}`, jobId),
+      logJobCreated: (kind, jobId) => appLogger('info', 'api', `Job created: ${kind}`, jobId),
       enqueueJob: (job) => workerController.enqueueJob(job),
     }),
   );
 
   app.route(
-    "/api",
+    '/api',
     createAssetLogRoutes({
       listAssets: () => dbStore.listAssets(),
       listLogs: () => dbStore.listLogs(),
@@ -241,7 +251,7 @@ export async function createStudioApp(
   );
 
   app.route(
-    "/api/libraries",
+    '/api/libraries',
     createLibrariesRoutes({
       listLibraries,
       registerLibrary,
@@ -252,7 +262,7 @@ export async function createStudioApp(
   );
 
   app.route(
-    "/api/catalog",
+    '/api/catalog',
     createCatalogRoutes({
       catalogStore,
       catalogCommands,
@@ -260,92 +270,26 @@ export async function createStudioApp(
     }),
   );
 
-  app.route("/api/workspaces", createWorkspaceRoutes());
+  app.route('/api/workspaces', createWorkspaceRoutes());
 
-  app.get("/api/events", (c) => {
-    c.header("X-Accel-Buffering", "no");
+  app.route(
+    '/api',
+    createEventStreamRoutes({
+      subscribeEvents,
+    }),
+  );
 
-    return streamSSE(c, async (stream) => {
-      let cleanedUp = false;
-
-      const send = (event: unknown) => {
-        void stream.writeSSE({
-          data: JSON.stringify(event),
-        });
-      };
-
-      const unsubscribe = subscribeEvents(send);
-
-      const cleanup = () => {
-        if (cleanedUp) return;
-        cleanedUp = true;
-        unsubscribe();
-      };
-
-      const abort = () => {
-        cleanup();
-        if (!stream.aborted) {
-          stream.abort();
-        }
-      };
-
-      c.req.raw.signal.addEventListener("abort", abort, { once: true });
-
-      try {
-        await stream.writeSSE({
-          data: JSON.stringify({
-            type: "server.connected",
-            payload: { ok: true },
-            createdAt: new Date().toISOString(),
-          }),
-        });
-
-        while (!stream.aborted) {
-          if (stream.aborted) {
-            break;
-          }
-
-          await stream.sleep(10_000);
-          await stream.write(`: keep-alive ${Date.now()}\n\n`);
-        }
-      } finally {
-        cleanup();
-        c.req.raw.signal.removeEventListener("abort", abort);
-      }
-    });
-  });
-
-  app.get("/library/*", async (c) => {
-    const encoded = c.req.path.replace("/library/", "");
-    const relative = decodeURIComponent(encoded);
-    if (relative.includes("..")) return c.notFound();
-    const filePath = resolvePublicLibraryPath(relative);
-    if (!existsSync(filePath)) return c.notFound();
-
-    const url = new URL(c.req.url);
-    const variant = url.searchParams.get("variant");
-    let servedPath = filePath;
-
-    if (variant === "thumb") {
-      try {
-        servedPath = await ensureThumbnailVariant(filePath, {
-          maxEdge: resolveThumbnailMaxEdge(url.searchParams.get("max")),
-        });
-      } catch (error) {
-        appLogger(
-          "warn",
-          "library",
-          `Thumbnail generation failed for ${path.basename(filePath)}: ${error instanceof Error ? error.message : String(error)}`,
-        );
-      }
-    }
-
-    return new Response(Bun.file(servedPath), {
-      headers: buildLibraryAssetHeaders(servedPath, {
-        cacheSeconds: resolveAssetCacheSeconds(variant),
-      }),
-    });
-  });
+  app.route(
+    '/',
+    createLibraryRoutes({
+      resolvePublicLibraryPath,
+      ensureThumbnailVariant,
+      buildLibraryAssetHeaders,
+      resolveAssetCacheSeconds,
+      resolveThumbnailMaxEdge,
+      logger: appLogger,
+    }),
+  );
 
   return {
     app,

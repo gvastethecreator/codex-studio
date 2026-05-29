@@ -4,17 +4,17 @@ This document tracks technical debt that remains relevant while Codex Studio pre
 
 ## High priority
 
-Accepted architecture review batch: `docs/architecture/architecture-review-2026-05-27.md`.
+Accepted architecture review batch: `docs/architecture/architecture-review-2026-05-29.md`.
 Shared execution tracker: `docs/architecture/DEEPENING-ROADMAP.md`.
 
 Current execution queue:
 
 1. Deepen the `Studio Shell` orchestration module.
 2. Deepen the `Studio Generation Session` module.
-3. Move `Recipe Module` behaviour out of the static registry.
-4. Deepen the `Local Generation Run` lifecycle seam.
-5. Finish the `WorkerController` dependency seam promised by ADR-0014.
-6. Deepen `Local Studio Sync` state ownership.
+3. Separate `Studio Settings` seams by operational domain.
+4. Finish `appFactory` route composition deepening (`events` + `library` extraction complete; continue route-level seam hardening).
+5. Deepen `Local Studio Sync` refresh policy semantics.
+6. Review naming and seam clarity in the provider-neutral `Local Generation Run` flow.
 
 ### 1. Further decompose `components/AppContent.tsx`
 

@@ -140,23 +140,29 @@ interface StudioShellOverlaySettingsModuleContext {
     close: StudioSystemOverlaysProps['closeSettings'];
   };
   data: {
-    settings: StudioSystemOverlaysProps['settings'];
-    error: StudioSystemOverlaysProps['settingsError'];
-    isLoading: StudioSystemOverlayFlags['isLoadingSettings'];
-    isSaving: StudioSystemOverlayFlags['isSavingSettings'];
-    providerCapabilities: StudioSystemOverlaysProps['providerCapabilities'];
-    providerRuntimePreflight: StudioSystemOverlaysProps['providerRuntimePreflight'];
-    outputSources: StudioSystemOverlaysProps['outputSources'];
-    outputSourceFiles: StudioSystemOverlaysProps['outputSourceFiles'];
-    isLoadingOutputSources: StudioSystemOverlayFlags['isLoadingOutputSources'];
-    loadingOutputSourceFiles: StudioSystemOverlaysProps['loadingOutputSourceFiles'];
-    isRegisteringOutputSource: StudioSystemOverlayFlags['isRegisteringOutputSource'];
-    importingOutputSources: StudioSystemOverlaysProps['importingOutputSources'];
-    refresh: StudioSystemOverlaysProps['refreshSettings'];
-    update: StudioSystemOverlaysProps['updateSettings'];
-    registerOutputSource: StudioSystemOverlaysProps['registerOutputSource'];
-    loadOutputSourceFiles: StudioSystemOverlaysProps['loadOutputSourceFiles'];
-    importOutputSourceFiles: StudioSystemOverlaysProps['importOutputSourceFiles'];
+    settingsDomain: {
+      settings: StudioSystemOverlaysProps['settings'];
+      error: StudioSystemOverlaysProps['settingsError'];
+      isLoading: StudioSystemOverlayFlags['isLoadingSettings'];
+      isSaving: StudioSystemOverlayFlags['isSavingSettings'];
+      refresh: StudioSystemOverlaysProps['refreshSettings'];
+      update: StudioSystemOverlaysProps['updateSettings'];
+    };
+    providerDomain: {
+      capabilities: StudioSystemOverlaysProps['providerCapabilities'];
+      runtimePreflight: StudioSystemOverlaysProps['providerRuntimePreflight'];
+    };
+    outputSourcesDomain: {
+      outputSources: StudioSystemOverlaysProps['outputSources'];
+      outputSourceFiles: StudioSystemOverlaysProps['outputSourceFiles'];
+      isLoadingOutputSources: StudioSystemOverlayFlags['isLoadingOutputSources'];
+      loadingOutputSourceFiles: StudioSystemOverlaysProps['loadingOutputSourceFiles'];
+      isRegisteringOutputSource: StudioSystemOverlayFlags['isRegisteringOutputSource'];
+      importingOutputSources: StudioSystemOverlaysProps['importingOutputSources'];
+      registerOutputSource: StudioSystemOverlaysProps['registerOutputSource'];
+      loadOutputSourceFiles: StudioSystemOverlaysProps['loadOutputSourceFiles'];
+      importOutputSourceFiles: StudioSystemOverlaysProps['importOutputSourceFiles'];
+    };
   };
   background: {
     isEnabled: StudioSystemOverlayFlags['isBackgroundEnabled'];
@@ -341,25 +347,25 @@ export function buildStudioShellOverlayController({
     settings: {
       isOpen: settings.modal.isOpen,
       close: settings.modal.close,
-      settings: settings.data.settings,
-      error: settings.data.error,
-      isLoading: settings.data.isLoading,
-      isSaving: settings.data.isSaving,
-      providerCapabilities: settings.data.providerCapabilities,
-      providerRuntimePreflight: settings.data.providerRuntimePreflight,
-      outputSources: settings.data.outputSources,
-      outputSourceFiles: settings.data.outputSourceFiles,
-      isLoadingOutputSources: settings.data.isLoadingOutputSources,
-      loadingOutputSourceFiles: settings.data.loadingOutputSourceFiles,
-      isRegisteringOutputSource: settings.data.isRegisteringOutputSource,
-      importingOutputSources: settings.data.importingOutputSources,
+      settings: settings.data.settingsDomain.settings,
+      error: settings.data.settingsDomain.error,
+      isLoading: settings.data.settingsDomain.isLoading,
+      isSaving: settings.data.settingsDomain.isSaving,
+      providerCapabilities: settings.data.providerDomain.capabilities,
+      providerRuntimePreflight: settings.data.providerDomain.runtimePreflight,
+      outputSources: settings.data.outputSourcesDomain.outputSources,
+      outputSourceFiles: settings.data.outputSourcesDomain.outputSourceFiles,
+      isLoadingOutputSources: settings.data.outputSourcesDomain.isLoadingOutputSources,
+      loadingOutputSourceFiles: settings.data.outputSourcesDomain.loadingOutputSourceFiles,
+      isRegisteringOutputSource: settings.data.outputSourcesDomain.isRegisteringOutputSource,
+      importingOutputSources: settings.data.outputSourcesDomain.importingOutputSources,
       libraryDir:
         runtime.onboarding.diagnosticsLibraryDir ?? runtime.onboarding.health?.libraryDir ?? null,
-      refresh: settings.data.refresh,
-      update: settings.data.update,
-      registerOutputSource: settings.data.registerOutputSource,
-      loadOutputSourceFiles: settings.data.loadOutputSourceFiles,
-      importOutputSourceFiles: settings.data.importOutputSourceFiles,
+      refresh: settings.data.settingsDomain.refresh,
+      update: settings.data.settingsDomain.update,
+      registerOutputSource: settings.data.outputSourcesDomain.registerOutputSource,
+      loadOutputSourceFiles: settings.data.outputSourcesDomain.loadOutputSourceFiles,
+      importOutputSourceFiles: settings.data.outputSourcesDomain.importOutputSourceFiles,
       isBackgroundEnabled: settings.background.isEnabled,
       onToggleBackground: () => settings.background.setEnabled(!settings.background.isEnabled),
       onResetStudio: settings.reset.onResetStudio,
