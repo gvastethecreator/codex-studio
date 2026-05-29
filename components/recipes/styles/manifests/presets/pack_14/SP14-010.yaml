@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-010
+packId: pack_14
+name: Clockwork Exorcist Tribunal
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Judicial occult noir fused with antique mechanical ritualism.
+  form_and_line: Triangular courtroom staging, articulated devices, and strict figure blocking.
+  color_palette: Charcoal black, brass amber, and parchment umber.
+  lighting_setup: Overhead judicial beams with hot sparks from arcane machinery.
+  material_texture: Engraved brass, scorched oak, vellum dossiers, and iron chains.
+  render_quality: High-legibility narrative tableau with premium editorial sharpness.
+  spatial_distortion: Forced-perspective chamber emphasizing a central verdict platform.
+  atmosphere: Moral gravity, procedural dread, and controlled ceremonial violence.
+  key_features: Mechanized exorcism rig, robed judges, evidentiary relic arrays.
+  creative_brief: A secret tribunal where exorcisms are prosecuted like trials and every instrument doubles as legal authority.
+avoidRules: [photoreal, playful, sci-fi-neon, low-detail, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-010.webp }
+attributes:
+  negativePrompt: photoreal, playful, sci-fi-neon, low-detail, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

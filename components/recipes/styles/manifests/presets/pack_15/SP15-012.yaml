@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-012
+packId: pack_15
+name: Mangrove Lift City
+category: 1. Solarpunk Dreamscapes
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+visualDna:
+  aesthetic: Coastal resilience solarpunk with amphibious civic architecture.
+  form_and_line: Elevated walkways, buoyant districts, and branching mangrove geometry.
+  color_palette: Mangrove green, tidal blue-gray, and sun-washed timber tones.
+  lighting_setup: Humid coastal daylight with reflective tidal highlights under canopies.
+  material_texture: Salt-tolerant wood, woven flood membranes, and wet root systems.
+  render_quality: Production-grade environmental concept with clear adaptive-infrastructure storytelling.
+  spatial_distortion: Layered waterfront depth from root-level platforms to elevated public decks.
+  atmosphere: Resilient tranquility, civic ingenuity, and ecological reciprocity.
+  key_features: Amphibious neighborhoods, mangrove filtration belts, tidal mobility corridors.
+  creative_brief: A thriving coastal city that rises with tides and treats mangroves as core urban infrastructure.
+avoidRules: [photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-012.webp }
+attributes:
+  negativePrompt: photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

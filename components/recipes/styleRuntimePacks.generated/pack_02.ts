@@ -3,21 +3,16 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () =>
-    import('./pack_02/cinematic-lighting-and-lenses-1').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_02/broadcast-and-tv-look-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_02/cinematic-lighting-and-lenses-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_02/broadcast-and-tv-look-2').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: 'pack_02',
-    name: 'Cinematic & Media',
-    description:
-      'A collection of 80+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.',
+    id: "pack_02",
+    name: "Cinematic & Media",
+    description: "A collection of 80+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.",
     presets: categoryPresets.flat(),
   };
 }

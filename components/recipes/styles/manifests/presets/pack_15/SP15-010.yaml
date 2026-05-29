@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-010
+packId: pack_15
+name: Circular Maker Courtyard
+category: 1. Solarpunk Dreamscapes
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+visualDna:
+  aesthetic: Craft-forward solarpunk centered on repair culture and circular production.
+  form_and_line: Modular workshop bays, open benches, and collaborative circulation arcs.
+  color_palette: Terracotta clay, recycled teal, and warm utility orange.
+  lighting_setup: Skylit courtyard illumination with targeted task lights over benches.
+  material_texture: Reclaimed composites, polished scrap metal, plant fiber textiles.
+  render_quality: Detailed editorial concept scene balancing people, tools, and architecture.
+  spatial_distortion: Courtyard hub composition radiating into specialized micro-workshops.
+  atmosphere: Practical optimism, shared competence, and dignified everyday innovation.
+  key_features: Repair stations, component libraries, communal fabrication canopy.
+  creative_brief: A civic workshop where maintenance, remanufacture, and local design feel aspirational and joyful.
+avoidRules: [photoreal, sterile-corporate, dystopian-factory, dark-gloom, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-010.webp }
+attributes:
+  negativePrompt: photoreal, sterile-corporate, dystopian-factory, dark-gloom, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

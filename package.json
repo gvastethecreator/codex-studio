@@ -34,6 +34,7 @@
     "styles:runtime:check": "bun run scripts/generate-style-runtime-data.ts --check",
     "styles:templates:verify": "bun run scripts/validate-style-preset-templates.ts",
     "styles:source:verify": "bun run scripts/style-authoring-source-audit.ts",
+    "styles:quality:audit": "bun run scripts/audit-style-preset-quality.ts",
     "styles:verify": "bun run styles:validate -- --coverage --strict-taxonomy && bun run styles:runtime:check && bun run styles:templates:verify && bun run styles:source:verify && bun run styles:render:verify",
     "styles:browser": "tsx ./scripts/verify-styles-browser-gate.ts",
     "styles:browser:verify": "tsx ./scripts/verify-styles-browser-gate.ts --verify",

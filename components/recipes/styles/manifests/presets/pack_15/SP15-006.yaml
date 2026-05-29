@@ -7,16 +7,16 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Community celebration centered on preserved biodiversity.
-  form_and_line: Organic pennants, living architecture, and gently moving figures.
-  color_palette: Flower yellow, bright green, and warm coral.
-  lighting_setup: Tarde festiva con glow dorado amable.
-  material_texture: Light fabric, exposed seeds, and polished wood.
-  render_quality: Celebration image rich in detail yet well organized.
-  spatial_distortion: Circular plaza with a vegetal vault in the background.
-  atmosphere: Gratitude, abundance, and a shared future.
-  key_features: Botanical vault, community table, living decor.
-  creative_brief: A festival that makes the joy of conserving and sharing resources feel tangible.
+  aesthetic: Ceremonial agro-future gathering focused on seed stewardship and intergenerational exchange.
+  form_and_line: Circular assembly choreography, suspended seed banners, and archive-centric focal geometry.
+  color_palette: Pollinator yellow, germination green, and clay-coral warmth.
+  lighting_setup: Golden-hour festival light with soft lantern accents around archive stations.
+  material_texture: Linen pennants, seed capsules, polished timber kiosks, and woven biofiber mats.
+  render_quality: Dense-but-readable event concept art with strong crowd and signage hierarchy.
+  spatial_distortion: Ringed plaza perspective orbiting a transparent seed-vault pavilion.
+  atmosphere: Collective gratitude, practical hope, and celebratory responsibility.
+  key_features: Seed swap counters, stewardship oath wall, crop lineage displays, and communal planting table.
+  creative_brief: A civic seed festival where joy, governance, and biodiversity literacy merge into a single public ritual.
 avoidRules: [photoreal, bleak, techno-cold, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-006.webp }
 attributes:

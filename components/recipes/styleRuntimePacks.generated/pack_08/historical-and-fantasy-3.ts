@@ -4,258 +4,201 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP08-033',
-    name: 'Ancient Egyptian',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'pants, modern',
-    style: {
-      aesthetic: 'Pharaoh or Queen, Nile-divinity splendor, temple-relief majesty',
-      form_and_line:
-        'Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette',
-      color_palette:
-        'White, Gold, Lapis Blue, turquoise, carnelian red, malachite green, ebony, electrum',
-      lighting_setup: 'Desert sun, temple-interior shadow, golden-hour sand, torchlight flicker',
-      material_texture:
-        'Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals',
-      render_quality: 'Royal, ancient, tomb-painting precision, pharaonic grandeur',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Regal, divine, eternal-Nile serenity, temple-incense reverence, absolute-power stillness',
-      key_features:
-        'Gold collar, kohl-lined eyes, uraeus crown, crook and flail, pleated kalasiris',
-      creative_brief:
-        'Pleated linen falling like frozen Nile water from shoulders anointed with the weight of two kingdoms, gold leaf catching desert sun on a usekh collar that maps the cosmos across a mortal chest. Kohl traces protective lines around eyes that have seen dynasties rise and fall, turquoise and lapis singing the old hymns in a language of stone and light.',
-    },
+    "id": "SP08-033",
+    "name": "Ancient Egyptian",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "pants, modern",
+    "style": {
+      "aesthetic": "Pharaoh or Queen, Nile-divinity splendor, temple-relief majesty",
+      "form_and_line": "Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette",
+      "color_palette": "White, Gold, Lapis Blue, turquoise, carnelian red, malachite green, ebony, electrum",
+      "lighting_setup": "Desert sun, temple-interior shadow, golden-hour sand, torchlight flicker",
+      "material_texture": "Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals",
+      "render_quality": "Royal, ancient, tomb-painting precision, pharaonic grandeur",
+      "spatial_distortion": "None",
+      "atmosphere": "Regal, divine, eternal-Nile serenity, temple-incense reverence, absolute-power stillness",
+      "key_features": "Gold collar, kohl-lined eyes, uraeus crown, crook and flail, pleated kalasiris",
+      "creative_brief": "Pleated linen falling like frozen Nile water from shoulders anointed with the weight of two kingdoms, gold leaf catching desert sun on a usekh collar that maps the cosmos across a mortal chest. Kohl traces protective lines around eyes that have seen dynasties rise and fall, turquoise and lapis singing the old hymns in a language of stone and light."
+    }
   },
   {
-    id: 'SP08-037',
-    name: 'Wild West Cowboy',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'city, clean',
-    style: {
-      aesthetic: 'Gunslinger, frontier-justice mythology, tumbleweed-silence drama',
-      form_and_line:
-        'Dusty coat, duster-length sweep, waistcoat taper, boot-cut trouser, bandana-neck triangle',
-      color_palette: 'Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print',
-      lighting_setup: 'High noon, merciless desert sun, saloon-interior amber, campfire flicker',
-      material_texture:
-        'Oilskin leather, trail dust, brass-cartridge metal, raw denim, wool serape, spur rowel',
-      render_quality: 'Iconic, rugged, Leone-widescreen grit, frontier-photograph honesty',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Tough, lonely, high-noon standoff tension, desert-expanse solitude, whiskey-bottle weariness',
-      key_features: 'Stetson hat, gun belt and holster, spurred boots, bandana, tin star badge',
-      creative_brief:
-        'Oilskin leather cracked by desert sun into maps of a thousand trail miles, the duster coat sweeping dust that has not settled since the buffalo roamed. A Stetson brim shadows eyes that squint toward high noon, gun belt heavy against the hip with the weight of consequence, spurred boots planted in a street where the only law is the speed of the draw.',
-    },
+    "id": "SP08-037",
+    "name": "Wild West Cowboy",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "city, clean",
+    "style": {
+      "aesthetic": "Gunslinger, frontier-justice mythology, tumbleweed-silence drama",
+      "form_and_line": "Dusty coat, duster-length sweep, waistcoat taper, boot-cut trouser, bandana-neck triangle",
+      "color_palette": "Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print",
+      "lighting_setup": "High noon, merciless desert sun, saloon-interior amber, campfire flicker",
+      "material_texture": "Oilskin leather, trail dust, brass-cartridge metal, raw denim, wool serape, spur rowel",
+      "render_quality": "Iconic, rugged, Leone-widescreen grit, frontier-photograph honesty",
+      "spatial_distortion": "None",
+      "atmosphere": "Tough, lonely, high-noon standoff tension, desert-expanse solitude, whiskey-bottle weariness",
+      "key_features": "Stetson hat, gun belt and holster, spurred boots, bandana, tin star badge",
+      "creative_brief": "Oilskin leather cracked by desert sun into maps of a thousand trail miles, the duster coat sweeping dust that has not settled since the buffalo roamed. A Stetson brim shadows eyes that squint toward high noon, gun belt heavy against the hip with the weight of consequence, spurred boots planted in a street where the only law is the speed of the draw."
+    }
   },
   {
-    id: 'SP08-035',
-    name: 'Samurai Armor',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'european armor',
-    style: {
-      aesthetic: 'Japanese warrior, bushido silence, floating-world legend',
-      form_and_line:
-        'Laced plates, do-chest breadth, sode-shoulder square, haidate-thigh panel, menpo-mask severity',
-      color_palette: 'Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory',
-      lighting_setup:
-        'Dramatic, bamboo-forest dapple, castle-interior shadow, dawn-mist atmosphere',
-      material_texture:
-        'Lacquered iron, silk odoshi lacing, ray-skin tsuka, hammered gold leaf, braided silk cord, iron menpo',
-      render_quality: 'Intimidating, detailed, Kurosawa-frame gravitas, daimyo-level craft',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Honorable, fierce, cherry-blossom impermanence, pre-dawn stillness, unblinking discipline',
-      key_features:
-        'Kabuto helmet, maedate crest, mempo face mask, katana pair, sashimono back-banner',
-      creative_brief:
-        'Red lacquer catching bamboo-filtered light on plates laced together by silk cords that count generations of service, the mempo mask frozen in a snarl that speaks of demons faced and stillness earned. Every knot of odoshi threading binds duty to form, the kabuto crest rising like a final thought before the blade leaves its scabbard into cherry-blossom air.',
-    },
+    "id": "SP08-035",
+    "name": "Samurai Armor",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "european armor",
+    "style": {
+      "aesthetic": "Japanese warrior, bushido silence, floating-world legend",
+      "form_and_line": "Laced plates, do-chest breadth, sode-shoulder square, haidate-thigh panel, menpo-mask severity",
+      "color_palette": "Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory",
+      "lighting_setup": "Dramatic, bamboo-forest dapple, castle-interior shadow, dawn-mist atmosphere",
+      "material_texture": "Lacquered iron, silk odoshi lacing, ray-skin tsuka, hammered gold leaf, braided silk cord, iron menpo",
+      "render_quality": "Intimidating, detailed, Kurosawa-frame gravitas, daimyo-level craft",
+      "spatial_distortion": "None",
+      "atmosphere": "Honorable, fierce, cherry-blossom impermanence, pre-dawn stillness, unblinking discipline",
+      "key_features": "Kabuto helmet, maedate crest, mempo face mask, katana pair, sashimono back-banner",
+      "creative_brief": "Red lacquer catching bamboo-filtered light on plates laced together by silk cords that count generations of service, the mempo mask frozen in a snarl that speaks of demons faced and stillness earned. Every knot of odoshi threading binds duty to form, the kabuto crest rising like a final thought before the blade leaves its scabbard into cherry-blossom air."
+    }
   },
   {
-    id: 'SP08-012',
-    name: 'Renaissance Royal',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'modern, simple, cheap',
-    style: {
-      aesthetic: '16th century court dress, Tudor majesty, Holbein-portrait splendor',
-      form_and_line:
-        'Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture',
-      color_palette: 'Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white',
-      lighting_setup: 'Oil painting light, chiaroscuro depth, candlelit hall, stained-glass warmth',
-      material_texture:
-        'Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul',
-      render_quality:
-        'Historical, museum, painting, National Gallery gravitas, Holbein-precise realism',
-      spatial_distortion: 'Stiff posture',
-      atmosphere: 'Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality',
-      key_features: 'Ornate details, neck ruff, jeweled bodice, French hood, chain of office',
-      creative_brief:
-        'Cloth-of-gold heavy enough to bend posture, seed pearls sewn by hands that knew their place in the divine order. The ruff frames a face arranged for immortality, each jewel on the bodice a territorial claim rendered in ruby and imperial purple, power worn as fabric because fabric was all that separated the anointed from the dust.',
-    },
+    "id": "SP08-012",
+    "name": "Renaissance Royal",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "modern, simple, cheap",
+    "style": {
+      "aesthetic": "16th century court dress, Tudor majesty, Holbein-portrait splendor",
+      "form_and_line": "Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture",
+      "color_palette": "Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white",
+      "lighting_setup": "Oil painting light, chiaroscuro depth, candlelit hall, stained-glass warmth",
+      "material_texture": "Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul",
+      "render_quality": "Historical, museum, painting, National Gallery gravitas, Holbein-precise realism",
+      "spatial_distortion": "Stiff posture",
+      "atmosphere": "Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality",
+      "key_features": "Ornate details, neck ruff, jeweled bodice, French hood, chain of office",
+      "creative_brief": "Cloth-of-gold heavy enough to bend posture, seed pearls sewn by hands that knew their place in the divine order. The ruff frames a face arranged for immortality, each jewel on the bodice a territorial claim rendered in ruby and imperial purple, power worn as fabric because fabric was all that separated the anointed from the dust."
+    }
   },
   {
-    id: 'SP08-032',
-    name: 'Victorian Mourning',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'color, happy',
-    style: {
-      aesthetic: 'Widow weeds, Victorian grief ritual, gaslit-sorrow pageantry',
-      form_and_line:
-        'Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure',
-      color_palette:
-        'Black matte, jet, raven, deep crepe-black, jet-bead black, unrelieved midnight',
-      lighting_setup: 'Gloomy, overcast-window grey, candle-flicker dimness, rain-streaked glass',
-      material_texture:
-        'Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture',
-      render_quality: 'Sad, formal, funereal stillness, grief-portrait gravity',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Somber, gothic, rain-on-granite sorrow, drawn-curtain isolation, eternal-widow silence',
-      key_features: "Black veil, jet brooch, widow's cap, black-bordered handkerchief",
-      creative_brief:
-        'Crepe so matte it absorbs light like grief absorbs sound, bombazine heavy with the weight of ritual sorrow worn as law. Behind a jet-beaded veil, the face retreats into the privacy of mourning, each layer of black a stage of bereavement codified into textile, the widow a silhouette carved from the absence of color.',
-    },
+    "id": "SP08-032",
+    "name": "Victorian Mourning",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "color, happy",
+    "style": {
+      "aesthetic": "Widow weeds, Victorian grief ritual, gaslit-sorrow pageantry",
+      "form_and_line": "Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure",
+      "color_palette": "Black matte, jet, raven, deep crepe-black, jet-bead black, unrelieved midnight",
+      "lighting_setup": "Gloomy, overcast-window grey, candle-flicker dimness, rain-streaked glass",
+      "material_texture": "Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture",
+      "render_quality": "Sad, formal, funereal stillness, grief-portrait gravity",
+      "spatial_distortion": "None",
+      "atmosphere": "Somber, gothic, rain-on-granite sorrow, drawn-curtain isolation, eternal-widow silence",
+      "key_features": "Black veil, jet brooch, widow's cap, black-bordered handkerchief",
+      "creative_brief": "Crepe so matte it absorbs light like grief absorbs sound, bombazine heavy with the weight of ritual sorrow worn as law. Behind a jet-beaded veil, the face retreats into the privacy of mourning, each layer of black a stage of bereavement codified into textile, the widow a silhouette carved from the absence of color."
+    }
   },
   {
-    id: 'SP08-011',
-    name: 'Vintage 1950s',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'modern, pants, messy',
-    style: {
-      aesthetic:
-        'Rockabilly or housewife dress, soda-fountain sweetness, Eisenhower-era femininity',
-      form_and_line:
-        'Cinched waist, full skirt, circle-skirt volume, petticoat layers, sweetheart neckline',
-      color_palette:
-        'Polka dots, pastel pink/blue, cherry red, mint green, buttercup yellow, gingham check',
-      lighting_setup:
-        'Bright, happy, Technicolor saturation, diner-neon cheer, sun-drenched suburbia',
-      material_texture:
-        'Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim',
-      render_quality: 'Retro, pin-up, cute, Kodachrome nostalgia, malt-shop charm',
-      spatial_distortion: 'Hourglass figure',
-      atmosphere:
-        'Nostalgic, fun, feminine, jukebox innocence, sock-hop excitement, cherry-cola sweetness',
-      key_features: 'Red lipstick, cat-eye liner, victory rolls, polka-dot headband',
-      creative_brief:
-        'A twirl of taffeta caught between Technicolor frames, polka dots frozen mid-bounce above saddle shoes gleaming like fresh icing. The cinched waist holds the architecture of an era when femininity was engineered with crinoline scaffolding, cherry-red lipstick the only rebellion permitted beneath victory-rolled hair.',
-    },
+    "id": "SP08-011",
+    "name": "Vintage 1950s",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "modern, pants, messy",
+    "style": {
+      "aesthetic": "Rockabilly or housewife dress, soda-fountain sweetness, Eisenhower-era femininity",
+      "form_and_line": "Cinched waist, full skirt, circle-skirt volume, petticoat layers, sweetheart neckline",
+      "color_palette": "Polka dots, pastel pink/blue, cherry red, mint green, buttercup yellow, gingham check",
+      "lighting_setup": "Bright, happy, Technicolor saturation, diner-neon cheer, sun-drenched suburbia",
+      "material_texture": "Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim",
+      "render_quality": "Retro, pin-up, cute, Kodachrome nostalgia, malt-shop charm",
+      "spatial_distortion": "Hourglass figure",
+      "atmosphere": "Nostalgic, fun, feminine, jukebox innocence, sock-hop excitement, cherry-cola sweetness",
+      "key_features": "Red lipstick, cat-eye liner, victory rolls, polka-dot headband",
+      "creative_brief": "A twirl of taffeta caught between Technicolor frames, polka dots frozen mid-bounce above saddle shoes gleaming like fresh icing. The cinched waist holds the architecture of an era when femininity was engineered with crinoline scaffolding, cherry-red lipstick the only rebellion permitted beneath victory-rolled hair."
+    }
   },
   {
-    id: 'SP08-031',
-    name: 'Roaring 20s (Flapper)',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'long dress, modern',
-    style: {
-      aesthetic: 'Jazz age party, speakeasy decadence, Gatsby-ball splendor',
-      form_and_line:
-        'Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation',
-      color_palette: 'Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum',
-      lighting_setup:
-        'Dim party, chandelier sparkle, feathered-lamp glow, champagne-bubble ambiance',
-      material_texture:
-        'Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon',
-      render_quality: 'Fun, vintage, speakeasy glamour, Fitzgerald-era elegance',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Party, retro, champagne-fizz excitement, dance-marathon energy, illicit-night thrill',
-      key_features:
-        'Bobbed hair, cloche hat, long cigarette holder, T-strap heels, feather headband',
-      creative_brief:
-        'Beaded fringe catching chandelier light in a thousand tiny jazz syncopations, the dropped waist a rebellion against corseted centuries. A cloche hat shadows eyes that have seen speakeasies and sipped forbidden champagne, ostrich feathers trembling with the thrill of dancing on the edge of an era that knows the music is about to stop.',
-    },
+    "id": "SP08-031",
+    "name": "Roaring 20s (Flapper)",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "long dress, modern",
+    "style": {
+      "aesthetic": "Jazz age party, speakeasy decadence, Gatsby-ball splendor",
+      "form_and_line": "Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation",
+      "color_palette": "Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum",
+      "lighting_setup": "Dim party, chandelier sparkle, feathered-lamp glow, champagne-bubble ambiance",
+      "material_texture": "Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon",
+      "render_quality": "Fun, vintage, speakeasy glamour, Fitzgerald-era elegance",
+      "spatial_distortion": "None",
+      "atmosphere": "Party, retro, champagne-fizz excitement, dance-marathon energy, illicit-night thrill",
+      "key_features": "Bobbed hair, cloche hat, long cigarette holder, T-strap heels, feather headband",
+      "creative_brief": "Beaded fringe catching chandelier light in a thousand tiny jazz syncopations, the dropped waist a rebellion against corseted centuries. A cloche hat shadows eyes that have seen speakeasies and sipped forbidden champagne, ostrich feathers trembling with the thrill of dancing on the edge of an era that knows the music is about to stop."
+    }
   },
   {
-    id: 'SP08-034',
-    name: 'Roman Gladiator',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'clean, suit',
-    style: {
-      aesthetic: 'Arena fighter, blood-and-sand spectacle, Colosseum-roar defiance',
-      form_and_line:
-        'Muscles, armor, segmentata-plate articulation, balteus-waist cinch, greave-taper, subligaculum base',
-      color_palette: 'Bronze, Red, Skin, iron-grey, oxblood, sun-bronzed flesh, leather-brown',
-      lighting_setup: 'Harsh sun, arena-dust haze, high-noon contrast, torch-smoke shadows',
-      material_texture:
-        'Bronze plate, oiled leather straps, sweat-sheen skin, iron chainmail, sand-grit coating, linen pteruges',
-      render_quality: 'Tough, historical, arena-dust authenticity, Maximus grit',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Violent, brave, crowd-roar intensity, mortal-peril tension, gladiator-honor gravity',
-      key_features: 'Helmet, galea with crest, gladius, rectangular scutum, armored manica',
-      creative_brief:
-        'Bronze plates articulate across a torso sculpted by arena sand and the mathematics of survival, oiled leather straps crossing a chest that rises and falls beneath eighty thousand roaring throats. The galea helmet frames a face hardened by the knowledge that every salute may be the last, greaves caked with dust from a floor that drinks blood and gives nothing back.',
-    },
+    "id": "SP08-034",
+    "name": "Roman Gladiator",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "clean, suit",
+    "style": {
+      "aesthetic": "Arena fighter, blood-and-sand spectacle, Colosseum-roar defiance",
+      "form_and_line": "Muscles, armor, segmentata-plate articulation, balteus-waist cinch, greave-taper, subligaculum base",
+      "color_palette": "Bronze, Red, Skin, iron-grey, oxblood, sun-bronzed flesh, leather-brown",
+      "lighting_setup": "Harsh sun, arena-dust haze, high-noon contrast, torch-smoke shadows",
+      "material_texture": "Bronze plate, oiled leather straps, sweat-sheen skin, iron chainmail, sand-grit coating, linen pteruges",
+      "render_quality": "Tough, historical, arena-dust authenticity, Maximus grit",
+      "spatial_distortion": "None",
+      "atmosphere": "Violent, brave, crowd-roar intensity, mortal-peril tension, gladiator-honor gravity",
+      "key_features": "Helmet, galea with crest, gladius, rectangular scutum, armored manica",
+      "creative_brief": "Bronze plates articulate across a torso sculpted by arena sand and the mathematics of survival, oiled leather straps crossing a chest that rises and falls beneath eighty thousand roaring throats. The galea helmet frames a face hardened by the knowledge that every salute may be the last, greaves caked with dust from a floor that drinks blood and gives nothing back."
+    }
   },
   {
-    id: 'SP08-038',
-    name: 'Disco (70s)',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'boring, matte',
-    style: {
-      aesthetic: 'Saturday Night Fever, dancefloor-king swagger, polyester-dream confidence',
-      form_and_line:
-        'Flared pants, wide-lapel opening, high-waist flare, pointed-collar drama, platform-sole elevation',
-      color_palette:
-        'White suit, Gold, burgundy, burnt orange, avocado green, shiny-black, metallic silver',
-      lighting_setup:
-        'Disco ball, mirrored-sphere fragments, colored-dancefloor squares, tri-light beam, fog-machine haze',
-      material_texture:
-        'Polyester crepe, liquid satin, gold lamé, Qiana nylon, crushed velvet, patent leather',
-      render_quality: 'Fun, dance, Studio 54 electricity, Bee-Gees swagger',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Groovy, energetic, dancefloor-euphoria peak, mirror-ball transcendence, Saturday-night immortality',
-      key_features: 'Bell bottoms, wide-collar shirt, gold medallion, platform shoes, chest hair',
-      creative_brief:
-        "Polyester gleams under a mirror ball's fractured universe, wide lapels framing a chest that breathes Saturday-night immortality. Platform soles elevate the dancer above the gravity of the weekday world, gold medallion catching colored light like a small sun orbiting a body that has discovered rhythm as religion and the dancefloor as sanctuary.",
-    },
+    "id": "SP08-038",
+    "name": "Disco (70s)",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "boring, matte",
+    "style": {
+      "aesthetic": "Saturday Night Fever, dancefloor-king swagger, polyester-dream confidence",
+      "form_and_line": "Flared pants, wide-lapel opening, high-waist flare, pointed-collar drama, platform-sole elevation",
+      "color_palette": "White suit, Gold, burgundy, burnt orange, avocado green, shiny-black, metallic silver",
+      "lighting_setup": "Disco ball, mirrored-sphere fragments, colored-dancefloor squares, tri-light beam, fog-machine haze",
+      "material_texture": "Polyester crepe, liquid satin, gold lamé, Qiana nylon, crushed velvet, patent leather",
+      "render_quality": "Fun, dance, Studio 54 electricity, Bee-Gees swagger",
+      "spatial_distortion": "None",
+      "atmosphere": "Groovy, energetic, dancefloor-euphoria peak, mirror-ball transcendence, Saturday-night immortality",
+      "key_features": "Bell bottoms, wide-collar shirt, gold medallion, platform shoes, chest hair",
+      "creative_brief": "Polyester gleams under a mirror ball's fractured universe, wide lapels framing a chest that breathes Saturday-night immortality. Platform soles elevate the dancer above the gravity of the weekday world, gold medallion catching colored light like a small sun orbiting a body that has discovered rhythm as religion and the dancefloor as sanctuary."
+    }
   },
   {
-    id: 'SP08-039',
-    name: 'French Revolution',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'modern',
-    style: {
-      aesthetic: 'Marie Antoinette, Versailles-excess dream, let-them-eat-cake glamour',
-      form_and_line:
-        'Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep',
-      color_palette:
-        'Pastel Silk, powder blue, rose pompadour, celadon, buttercream, silver tissue, dove',
-      lighting_setup:
-        'Chandelier, candlelit-hall sparkle, mirrored-gallery bounce, gilded-reflection warmth',
-      material_texture:
-        'Silk taffeta, lace engageantes, powdered hair, ostrich plume, ribbon garlands, paste-jewel stomacher',
-      render_quality: 'Excessive, royal, Rococo-froth magnificence, petit-Trianon fantasy',
-      spatial_distortion: 'Huge wig',
-      atmosphere:
-        'Decadent, fragile, champagne-bubble impermanence, gilded-cage beauty, pre-revolution tension',
-      key_features: 'Powdered wig, beauty patch, ribbon choker, fan, pannier side-hoops',
-      creative_brief:
-        'Taffeta the color of powdered sugar and impossible indulgence, panniers stretching silk horizons wide enough to require doorways built for excess. Ostrich plumes tremble atop a tower of powdered hair while a beauty patch marks the cheek like a punctuation mark in a sentence the guillotine is about to interrupt, the whole confection suspended in a candlelit bubble that history is already pressing a pin against.',
-    },
+    "id": "SP08-039",
+    "name": "French Revolution",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "modern",
+    "style": {
+      "aesthetic": "Marie Antoinette, Versailles-excess dream, let-them-eat-cake glamour",
+      "form_and_line": "Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep",
+      "color_palette": "Pastel Silk, powder blue, rose pompadour, celadon, buttercream, silver tissue, dove",
+      "lighting_setup": "Chandelier, candlelit-hall sparkle, mirrored-gallery bounce, gilded-reflection warmth",
+      "material_texture": "Silk taffeta, lace engageantes, powdered hair, ostrich plume, ribbon garlands, paste-jewel stomacher",
+      "render_quality": "Excessive, royal, Rococo-froth magnificence, petit-Trianon fantasy",
+      "spatial_distortion": "Huge wig",
+      "atmosphere": "Decadent, fragile, champagne-bubble impermanence, gilded-cage beauty, pre-revolution tension",
+      "key_features": "Powdered wig, beauty patch, ribbon choker, fan, pannier side-hoops",
+      "creative_brief": "Taffeta the color of powdered sugar and impossible indulgence, panniers stretching silk horizons wide enough to require doorways built for excess. Ostrich plumes tremble atop a tower of powdered hair while a beauty patch marks the cheek like a punctuation mark in a sentence the guillotine is about to interrupt, the whole confection suspended in a candlelit bubble that history is already pressing a pin against."
+    }
   },
   {
-    id: 'SP08-036',
-    name: 'Viking Warrior',
-    category: '3. Historical & Fantasy',
-    negativePrompt: 'clean, shiny',
-    style: {
-      aesthetic: 'Norse raider, fjord-borne fury, shield-wall legend',
-      form_and_line:
-        'Furs, leather, tunic-length drape, cross-body belt tension, leg-wrap binding, cloak-pin gather',
-      color_palette: 'Brown, Grey, Blue, moss, woad, rust, iron, wolf-pelt grey, amber',
-      lighting_setup: 'Cold overcast, North-Sea grey, longhouse firelight, misty-fjord diffusion',
-      material_texture:
-        'Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle',
-      render_quality: 'Rugged, dirty, saga-page authenticity, shield-wall grit',
-      spatial_distortion: 'None',
-      atmosphere: 'Tough, cold, sea-spray resolve, mead-hall warmth, raven-flight omen',
-      key_features: "Beard/Braids, Thor's hammer pendant, round shield, bearded axe, fur mantle",
-      creative_brief:
-        "Wolf fur matted by salt spray and the breath of northern seas, chainmail riveted by hands that knew the weight of an axe before they knew the weight of a name. Coarse wool wadmal wraps a body built for longship benches and shield-wall thunder, Thor's hammer swinging against a chest tattooed with runes that promise Valhalla to those who die with a sword in hand.",
-    },
-  },
+    "id": "SP08-036",
+    "name": "Viking Warrior",
+    "category": "3. Historical & Fantasy",
+    "negativePrompt": "clean, shiny",
+    "style": {
+      "aesthetic": "Norse raider, fjord-borne fury, shield-wall legend",
+      "form_and_line": "Furs, leather, tunic-length drape, cross-body belt tension, leg-wrap binding, cloak-pin gather",
+      "color_palette": "Brown, Grey, Blue, moss, woad, rust, iron, wolf-pelt grey, amber",
+      "lighting_setup": "Cold overcast, North-Sea grey, longhouse firelight, misty-fjord diffusion",
+      "material_texture": "Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle",
+      "render_quality": "Rugged, dirty, saga-page authenticity, shield-wall grit",
+      "spatial_distortion": "None",
+      "atmosphere": "Tough, cold, sea-spray resolve, mead-hall warmth, raven-flight omen",
+      "key_features": "Beard/Braids, Thor's hammer pendant, round shield, bearded axe, fur mantle",
+      "creative_brief": "Wolf fur matted by salt spray and the breath of northern seas, chainmail riveted by hands that knew the weight of an axe before they knew the weight of a name. Coarse wool wadmal wraps a body built for longship benches and shield-wall thunder, Thor's hammer swinging against a chest tattooed with runes that promise Valhalla to those who die with a sword in hand."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

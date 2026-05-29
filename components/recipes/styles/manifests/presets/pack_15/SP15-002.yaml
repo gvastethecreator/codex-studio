@@ -7,16 +7,16 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Clean transit integrated with aerial gardens.
-  form_and_line: Soft curves, discreet infrastructure, and dominant vegetation.
-  color_palette: Mint green, warm white, and solar yellow.
-  lighting_setup: Crystal-clear midday with crisp shadows.
-  material_texture: Matte glass, broad leaves, and light metal.
-  render_quality: Friendly futuristic scene with high readability.
-  spatial_distortion: Monorail line guiding the full composition.
-  atmosphere: Flow, wellbeing, and a civilized future.
-  key_features: Hanging gardens, silent train, elevated promenade.
-  creative_brief: Public mobility that feels more like a suspended park than hard infrastructure.
+  aesthetic: Civic mobility solarpunk where transit choreography is the social backbone.
+  form_and_line: Continuous ribbon tracks, modular station canopies, and pedestrian-first circulation arcs.
+  color_palette: Mint chlorophyll, sunlit limestone white, and saffron transit highlights.
+  lighting_setup: Clear noon exposure with reflective bounce under vegetated viaducts.
+  material_texture: Satin bio-composite panels, laminated glass fins, and dense hanging foliage mats.
+  render_quality: Production-ready environmental concept with strong wayfinding legibility.
+  spatial_distortion: S-curve rail perspective that links foreground station life to distant garden districts.
+  atmosphere: Efficient calm, civic trust, and everyday delight in shared infrastructure.
+  key_features: Quiet glide trains, pollinator bridges, open ticketless platforms, shade-rich promenades.
+  creative_brief: A post-car transit corridor where stations operate as neighborhood gardens and movement feels frictionless, inclusive, and joyful.
 avoidRules: [photoreal, cyberpunk-grime, warlike, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-002.webp }
 attributes:

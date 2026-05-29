@@ -4,843 +4,543 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP05-073',
-    name: "Howl's Moving Castle – Ghibli Wandering Clockwork Castle",
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Brass-meets-magic architecture, moving fortress silhouettes, romantic whimsy, skyborne scale, calcifer fire-demon, flying castle-blimp, meadow flower fields, turnip-head scarecrow',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Enchanted, wandering, romantic, whimsical',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        'A castle walks on mechanical chicken legs through meadows where magic and brass have learned to coexist like old lovers. Calcifer burns at the heart of it all, a demon whose contract is not servitude but found family. Every gear and spell in this wandering fortress sings the same refrain: home is not a place but the people who stoke your fire.',
-    },
+    "id": "SP05-073",
+    "name": "Howl's Moving Castle – Ghibli Wandering Clockwork Castle",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Brass-meets-magic architecture, moving fortress silhouettes, romantic whimsy, skyborne scale, calcifer fire-demon, flying castle-blimp, meadow flower fields, turnip-head scarecrow",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Enchanted, wandering, romantic, whimsical",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "A castle walks on mechanical chicken legs through meadows where magic and brass have learned to coexist like old lovers. Calcifer burns at the heart of it all, a demon whose contract is not servitude but found family. Every gear and spell in this wandering fortress sings the same refrain: home is not a place but the people who stoke your fire."
+    }
   },
   {
-    id: 'SP05-074',
-    name: 'Your Name – Makoto Shinkai Skyglow Longing Drama',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Hyper-realistic backgrounds, lens flares, stunning skies, vibrant lighting, hyper-luminous skies, urban longing, reflective youth, emotionally charged sunsets, body-swap comedy, comet-fall tragedy, braided-cord ribbon, twilight magic hour',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Romantic, breathtaking, luminous, aching',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        'Two souls trade bodies across time and space, connected by a braided cord that holds memory like water cupped in trembling hands. The sky remembers everything: comets that fall like tears, sunsets that ache with the color of a name you cannot quite recall. At twilight the veil thins, and longing becomes a mountain crater that even time cannot fill.',
-    },
+    "id": "SP05-074",
+    "name": "Your Name – Makoto Shinkai Skyglow Longing Drama",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Hyper-realistic backgrounds, lens flares, stunning skies, vibrant lighting, hyper-luminous skies, urban longing, reflective youth, emotionally charged sunsets, body-swap comedy, comet-fall tragedy, braided-cord ribbon, twilight magic hour",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Romantic, breathtaking, luminous, aching",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "Two souls trade bodies across time and space, connected by a braided cord that holds memory like water cupped in trembling hands. The sky remembers everything: comets that fall like tears, sunsets that ache with the color of a name you cannot quite recall. At twilight the veil thins, and longing becomes a mountain crater that even time cannot fill."
+    }
   },
   {
-    id: 'SP05-075',
-    name: 'Weathering With You – Shinkai Rainlight City Romance',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Rain-soaked city detail, shafts of sunlight, emotional weather, intimate urban scale, sunshine-girl power, perpetual Tokyo rain, rooftop shrines, flooded city finale',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Atmospheric, tender, stormy, hopeful',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        'Rain falls endlessly on Tokyo, each drop a small grief that pools into a city-wide melancholy. A girl who prays sunlight into existence carries the weight of every clear sky on shoulders too young for the burden. Water rises around them like a decision being made, and love answers: let the city drown if it means keeping her light alive.',
-    },
+    "id": "SP05-075",
+    "name": "Weathering With You – Shinkai Rainlight City Romance",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Rain-soaked city detail, shafts of sunlight, emotional weather, intimate urban scale, sunshine-girl power, perpetual Tokyo rain, rooftop shrines, flooded city finale",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Atmospheric, tender, stormy, hopeful",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "Rain falls endlessly on Tokyo, each drop a small grief that pools into a city-wide melancholy. A girl who prays sunlight into existence carries the weight of every clear sky on shoulders too young for the burden. Water rises around them like a decision being made, and love answers: let the city drown if it means keeping her light alive."
+    }
   },
   {
-    id: 'SP05-077',
-    name: 'Perfect Blue – Satoshi Kon Mirror Identity Thriller',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Unsettling urban realism, fractured self-image, reflective surfaces, intimate paranoia, idol-to-actress descent, stalker voyeurism, internet-age identity, mirrored-doppelganger',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Tense, disorienting, paranoid, chilling',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        'Reflections lie — mirrors show strangers wearing familiar faces, and the self fractures into a thousand shards of performance. Urban neon casts accusation instead of light, turning apartment rooms into psychological interrogation chambers. The camera is watching, and the camera might be you.',
-    },
+    "id": "SP05-077",
+    "name": "Perfect Blue – Satoshi Kon Mirror Identity Thriller",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Unsettling urban realism, fractured self-image, reflective surfaces, intimate paranoia, idol-to-actress descent, stalker voyeurism, internet-age identity, mirrored-doppelganger",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Tense, disorienting, paranoid, chilling",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "Reflections lie — mirrors show strangers wearing familiar faces, and the self fractures into a thousand shards of performance. Urban neon casts accusation instead of light, turning apartment rooms into psychological interrogation chambers. The camera is watching, and the camera might be you."
+    }
   },
   {
-    id: 'SP05-078',
-    name: 'Akira – Katsuhiro Otomo Light-Trail Mega-City',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Incredible mechanical detail, fluid animation, neo-Tokyo, iconic light trails, monumental city design, kinetic vehicles, precision detail, civic unrest at scale, psychic-awakening horror, capsule-gang bikes, military-coup chaos, stadium-conclusion',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Monumental, electric, apocalyptic, kinetic',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        'A city of impossible scale breathes neon and exhales revolution, its skyline carved by light-trail scars and crumbling civic monuments. Mechanical flesh and biological steel merge in the screaming vacuum of psychic awakening. Every frame should vibrate with the tension of a world one heartbeat from implosion.',
-    },
+    "id": "SP05-078",
+    "name": "Akira – Katsuhiro Otomo Light-Trail Mega-City",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Incredible mechanical detail, fluid animation, neo-Tokyo, iconic light trails, monumental city design, kinetic vehicles, precision detail, civic unrest at scale, psychic-awakening horror, capsule-gang bikes, military-coup chaos, stadium-conclusion",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Monumental, electric, apocalyptic, kinetic",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "A city of impossible scale breathes neon and exhales revolution, its skyline carved by light-trail scars and crumbling civic monuments. Mechanical flesh and biological steel merge in the screaming vacuum of psychic awakening. Every frame should vibrate with the tension of a world one heartbeat from implosion."
+    }
   },
   {
-    id: 'SP05-079',
-    name: 'Redline – Hyperkinetic Cosmic Racing',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Hand-drawn hyper-detailed, extreme speed lines, heavy black shadows, vibrant colors, impossible race tracks, razor speed lines, thick shadow contrast, hand-drawn velocity, alien-racer roster, seven-year-hand-drawn, nitro-boost frames, Yellow Line planet',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Adrenaline, ecstatic, breakneck, explosive',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        'Velocity becomes visible — speed is not movement but a material substance rendered in thick ink and explosive chroma. Hand-drawn frames scream past at escape velocity while shadows carve depth into pure kinetic poetry. Surrender to the ecstasy of the finish line, where God himself might be drag-racing.',
-    },
+    "id": "SP05-079",
+    "name": "Redline – Hyperkinetic Cosmic Racing",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Hand-drawn hyper-detailed, extreme speed lines, heavy black shadows, vibrant colors, impossible race tracks, razor speed lines, thick shadow contrast, hand-drawn velocity, alien-racer roster, seven-year-hand-drawn, nitro-boost frames, Yellow Line planet",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Adrenaline, ecstatic, breakneck, explosive",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "Velocity becomes visible — speed is not movement but a material substance rendered in thick ink and explosive chroma. Hand-drawn frames scream past at escape velocity while shadows carve depth into pure kinetic poetry. Surrender to the ecstasy of the finish line, where God himself might be drag-racing."
+    }
   },
   {
-    id: 'SP05-080',
-    name: 'Children of the Sea – Cosmic Ocean Lyrical',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Studio 4°C style, incredibly fluid water animation, cosmic ocean imagery, highly detailed eyes, flowing water motion, spiritual scale, delicate faces, aquarium-mystery, meteor-fall origin, whale-song communion, oceanic-cosmos merge',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Mystical, aquatic, ethereal, cosmic',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        'Water remembers everything — the ocean is a memory palace where whale songs echo ancient truths and human eyes hold the depth of cosmos. Fluid animation dissolves the boundary between girl and sea, between body and universe. Let each frame float untethered, suspended in the amniotic glow of creation itself.',
-    },
+    "id": "SP05-080",
+    "name": "Children of the Sea – Cosmic Ocean Lyrical",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Studio 4°C style, incredibly fluid water animation, cosmic ocean imagery, highly detailed eyes, flowing water motion, spiritual scale, delicate faces, aquarium-mystery, meteor-fall origin, whale-song communion, oceanic-cosmos merge",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Mystical, aquatic, ethereal, cosmic",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "Water remembers everything — the ocean is a memory palace where whale songs echo ancient truths and human eyes hold the depth of cosmos. Fluid animation dissolves the boundary between girl and sea, between body and universe. Let each frame float untethered, suspended in the amniotic glow of creation itself."
+    }
   },
   {
-    id: 'SP05-281',
-    name: 'Millennium Actress - Cinema-Memory Snowfall',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Life story retold through film fragments, period costumes flowing into each other, snow and studio lights, longing carried across eras with luminous cinematic tenderness',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Nostalgic, romantic, layered, wistful',
-      key_features:
-        'Era-shifting costumes, snow and light interplay, memory-cinema transitions, poised heroine silhouettes, temporal montage feeling',
-      creative_brief:
-        'A lifetime dissolves into film stock where snow falling on a studio lot is indistinguishable from memory falling through time. Period costumes bleed into one another like watercolor, erasing the boundary between roles played and lives lived. The camera chases not a woman but the particular ache of longing that no era can contain.',
-    },
+    "id": "SP05-281",
+    "name": "Millennium Actress - Cinema-Memory Snowfall",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Life story retold through film fragments, period costumes flowing into each other, snow and studio lights, longing carried across eras with luminous cinematic tenderness",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Nostalgic, romantic, layered, wistful",
+      "key_features": "Era-shifting costumes, snow and light interplay, memory-cinema transitions, poised heroine silhouettes, temporal montage feeling",
+      "creative_brief": "A lifetime dissolves into film stock where snow falling on a studio lot is indistinguishable from memory falling through time. Period costumes bleed into one another like watercolor, erasing the boundary between roles played and lives lived. The camera chases not a woman but the particular ache of longing that no era can contain."
+    }
   },
   {
-    id: 'SP05-282',
-    name: 'Tokyo Godfathers - Christmas Alley Grace',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Homeless trio comedy-drama, winter city alleys, neon nativity warmth, imperfect kindness in cramped urban spaces, humane chaos under holiday lights',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Messy, humane, festive, redemptive',
-      key_features:
-        'Christmas neon, alleyway city depth, trio ensemble staging, urban clutter tenderness, improvised family body language',
-      creative_brief:
-        'Neon halos crown the uncrowned, replacing gold and frankincense with convenience-store warmth and shared cardboard shelter. The alley does not judge, only holds whatever grace three broken souls can offer each other. Humor and heartbreak share a cigarette on a frozen street corner, arguing about what counts as a miracle.',
-    },
+    "id": "SP05-282",
+    "name": "Tokyo Godfathers - Christmas Alley Grace",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Homeless trio comedy-drama, winter city alleys, neon nativity warmth, imperfect kindness in cramped urban spaces, humane chaos under holiday lights",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Messy, humane, festive, redemptive",
+      "key_features": "Christmas neon, alleyway city depth, trio ensemble staging, urban clutter tenderness, improvised family body language",
+      "creative_brief": "Neon halos crown the uncrowned, replacing gold and frankincense with convenience-store warmth and shared cardboard shelter. The alley does not judge, only holds whatever grace three broken souls can offer each other. Humor and heartbreak share a cigarette on a frozen street corner, arguing about what counts as a miracle."
+    }
   },
   {
-    id: 'SP05-284',
-    name: 'Castle in the Sky - Floating Island Brass Adventure',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Brass robots, cloud-sea wonder, floating island myth, children against militarized greed, steampunk adventure carried by open skies and hand-painted warmth',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Adventurous, skybound, wondrous, brave',
-      key_features:
-        'Floating-island vistas, brass robot motifs, cloud-sea backdrops, child-duo silhouettes, sky-adventure motion',
-      creative_brief:
-        'Brass limbs reaching through clouds toward a home that floats above all the world greed, a testament to civilizations that chose the sky over conquest. Cloud-sea currents carry a girl and boy through ruins that hum with ancient memory, their adventure a rebuttal to every general who mistakes power for purpose. The floating island is not a destination but a promise written in laputa stone and held aloft by belief.',
-    },
+    "id": "SP05-284",
+    "name": "Castle in the Sky - Floating Island Brass Adventure",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Brass robots, cloud-sea wonder, floating island myth, children against militarized greed, steampunk adventure carried by open skies and hand-painted warmth",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Adventurous, skybound, wondrous, brave",
+      "key_features": "Floating-island vistas, brass robot motifs, cloud-sea backdrops, child-duo silhouettes, sky-adventure motion",
+      "creative_brief": "Brass limbs reaching through clouds toward a home that floats above all the world greed, a testament to civilizations that chose the sky over conquest. Cloud-sea currents carry a girl and boy through ruins that hum with ancient memory, their adventure a rebuttal to every general who mistakes power for purpose. The floating island is not a destination but a promise written in laputa stone and held aloft by belief."
+    }
   },
   {
-    id: 'SP05-285',
-    name: 'Nausicaa - Toxic Jungle Wind Prophecy',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Post-apocalyptic ecology myth, glider silhouette over toxic forests, giant insects, compassion amid planetary ruin, wind and pollen carrying epic spiritual urgency',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Prophetic, ecological, windswept, compassionate',
-      key_features:
-        'Glider profile, toxic-jungle color, giant-insect scale, wind-swept cloak movement, ecological epic framing',
-      creative_brief:
-        'Spores do not kill but purify, and only one who flies into the toxic wind with open arms can read the planet silent prophecy. Giant insects are not monsters but custodians of a deeper ecology that human fear cannot parse. Compassion becomes the only technology that survives the apocalypse intact.',
-    },
+    "id": "SP05-285",
+    "name": "Nausicaa - Toxic Jungle Wind Prophecy",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Post-apocalyptic ecology myth, glider silhouette over toxic forests, giant insects, compassion amid planetary ruin, wind and pollen carrying epic spiritual urgency",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Prophetic, ecological, windswept, compassionate",
+      "key_features": "Glider profile, toxic-jungle color, giant-insect scale, wind-swept cloak movement, ecological epic framing",
+      "creative_brief": "Spores do not kill but purify, and only one who flies into the toxic wind with open arms can read the planet silent prophecy. Giant insects are not monsters but custodians of a deeper ecology that human fear cannot parse. Compassion becomes the only technology that survives the apocalypse intact."
+    }
   },
   {
-    id: 'SP05-286',
-    name: 'Wolf Children - Rainy Countryside Motherhood',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Single-parent devotion across changing seasons, wolf-child wildness, mountain houses, weather-rich realism and fairy-tale softness in one maternal frame',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Tender, rural, weathered, loving',
-      key_features:
-        'Seasonal countryside, parent-child motion, rain-swept fields, mountain-house intimacy, transformation softness',
-      creative_brief:
-        'Rain washes the mountain house clean of everything but the fierce tenderness of a mother raising children who belong to two worlds and fully to neither. Seasons paint the countryside while she plants, repairs, and holds on with hands that have learned to let go. The wolf and the child are one creature in the soft light of morning, and she is the bridge between what they are and what they choose to become.',
-    },
+    "id": "SP05-286",
+    "name": "Wolf Children - Rainy Countryside Motherhood",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Single-parent devotion across changing seasons, wolf-child wildness, mountain houses, weather-rich realism and fairy-tale softness in one maternal frame",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Tender, rural, weathered, loving",
+      "key_features": "Seasonal countryside, parent-child motion, rain-swept fields, mountain-house intimacy, transformation softness",
+      "creative_brief": "Rain washes the mountain house clean of everything but the fierce tenderness of a mother raising children who belong to two worlds and fully to neither. Seasons paint the countryside while she plants, repairs, and holds on with hands that have learned to let go. The wolf and the child are one creature in the soft light of morning, and she is the bridge between what they are and what they choose to become."
+    }
   },
   {
-    id: 'SP05-288',
-    name: 'The Girl Who Leapt Through Time - Summer Rooftop Rewind',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Blue-sky school summer, leaping motion through ordinary neighborhoods, young regret and comedic consequence, warm clouds and temporal tenderness',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Youthful, breezy, wistful, playful',
-      key_features:
-        'Rooftop and cloud framing, leaping-body motion, suburban summer light, time-jump iconography, youthful ensemble warmth',
-      creative_brief:
-        'A leap rewinds the afternoon but every reversed moment tightens the knot between what could be and what was meant to happen. Rooftops become launch pads for second chances that teach the harshest lesson youth can learn: time is not a currency but a gift. Summer clouds bear witness to a girl who races against herself, losing and winning in the same breath.',
-    },
+    "id": "SP05-288",
+    "name": "The Girl Who Leapt Through Time - Summer Rooftop Rewind",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Blue-sky school summer, leaping motion through ordinary neighborhoods, young regret and comedic consequence, warm clouds and temporal tenderness",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Youthful, breezy, wistful, playful",
+      "key_features": "Rooftop and cloud framing, leaping-body motion, suburban summer light, time-jump iconography, youthful ensemble warmth",
+      "creative_brief": "A leap rewinds the afternoon but every reversed moment tightens the knot between what could be and what was meant to happen. Rooftops become launch pads for second chances that teach the harshest lesson youth can learn: time is not a currency but a gift. Summer clouds bear witness to a girl who races against herself, losing and winning in the same breath."
+    }
   },
   {
-    id: 'SP05-290',
-    name: 'Jin-Roh - Riot Smoke Tragedy Frame',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Heavy riot armor, political sorrow, urban smoke and red optics, impossible tenderness trapped inside oppressive security structures and alternate-history unrest',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Oppressive, tragic, political, smoky',
-      key_features:
-        'Riot-armor silhouettes, red optics, smoke-loaded streets, political unrest framing, tragic close-up tension',
-      creative_brief:
-        'Red optics cut through smoke like a question no one inside the armor is allowed to ask. The streets burn not with revolution but with the slow erosion of a soul forced to choose between duty and the person it was supposed to protect. Behind every visor a fairy tale rots, its moral inverted into the machinery of state violence.',
-    },
+    "id": "SP05-290",
+    "name": "Jin-Roh - Riot Smoke Tragedy Frame",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Heavy riot armor, political sorrow, urban smoke and red optics, impossible tenderness trapped inside oppressive security structures and alternate-history unrest",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Oppressive, tragic, political, smoky",
+      "key_features": "Riot-armor silhouettes, red optics, smoke-loaded streets, political unrest framing, tragic close-up tension",
+      "creative_brief": "Red optics cut through smoke like a question no one inside the armor is allowed to ask. The streets burn not with revolution but with the slow erosion of a soul forced to choose between duty and the person it was supposed to protect. Behind every visor a fairy tale rots, its moral inverted into the machinery of state violence."
+    }
   },
   {
-    id: 'SP05-291',
-    name: 'A Silent Voice - Riverside Apology Light',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Modern-school emotional realism, bridges and rivers, apology and disability awareness, soft city sunlight, longing and accountability rendered with humane patience',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Tender, remorseful, airy, human',
-      key_features:
-        'Riverside paths, modern school detail, hand-focused emotional framing, apology body language, soft city light',
-      creative_brief:
-        'An apology crosses a bridge in soft city light, each step weighted with years spent learning that cruelty is not erased but accounted for. Hands speak a language the voice abandoned, forming words that reach toward the person once pushed away. The river does not forget but flows forward, teaching that forgiveness is not a gift to the forgiven but a release for the forgiver.',
-    },
+    "id": "SP05-291",
+    "name": "A Silent Voice - Riverside Apology Light",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Modern-school emotional realism, bridges and rivers, apology and disability awareness, soft city sunlight, longing and accountability rendered with humane patience",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Tender, remorseful, airy, human",
+      "key_features": "Riverside paths, modern school detail, hand-focused emotional framing, apology body language, soft city light",
+      "creative_brief": "An apology crosses a bridge in soft city light, each step weighted with years spent learning that cruelty is not erased but accounted for. Hands speak a language the voice abandoned, forming words that reach toward the person once pushed away. The river does not forget but flows forward, teaching that forgiveness is not a gift to the forgiven but a release for the forgiver."
+    }
   },
   {
-    id: 'SP05-292',
-    name: 'Inu-Oh - Heike Punk Stage Vision',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Historical biwa performance exploding into glam-rock spectacle, distorted limbs turned into stage identity, medieval Japan colliding with ecstatic music-theater motion',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Ecstatic, theatrical, historical, rebellious',
-      key_features:
-        'Stage-performance poses, historical costume-glam fusion, biwa instrumentation, audience-energy framing, body-transformation iconography',
-      creative_brief:
-        'A biwa string snaps and the Heike dead rise not in vengeance but in glam rock glory, distorted bodies becoming the instruments of their own reclamation. Medieval Japan ghosts discover electricity, their grief transformed into a stage spectacle that history cannot silence. The performance is not rebellion but resurrection, every chord a name spoken aloud for the first time in centuries.',
-    },
+    "id": "SP05-292",
+    "name": "Inu-Oh - Heike Punk Stage Vision",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Historical biwa performance exploding into glam-rock spectacle, distorted limbs turned into stage identity, medieval Japan colliding with ecstatic music-theater motion",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Ecstatic, theatrical, historical, rebellious",
+      "key_features": "Stage-performance poses, historical costume-glam fusion, biwa instrumentation, audience-energy framing, body-transformation iconography",
+      "creative_brief": "A biwa string snaps and the Heike dead rise not in vengeance but in glam rock glory, distorted bodies becoming the instruments of their own reclamation. Medieval Japan ghosts discover electricity, their grief transformed into a stage spectacle that history cannot silence. The performance is not rebellion but resurrection, every chord a name spoken aloud for the first time in centuries."
+    }
   },
   {
-    id: 'SP05-293',
-    name: 'Tekkonkinkreet - Alleyway Child Myth',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Urban kid mythology, crowded roofs and alleys, rough sacred city energy, innocence and violence stacked vertically in a dense modern labyrinth',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Rough, spiritual, crowded, feral',
-      key_features:
-        'Dense city alleys, child silhouette contrast, rooftop motion, rough sacred iconography, urban myth staging',
-      creative_brief:
-        'Two boys own the city vertical chaos like stray gods born from concrete and corrugated tin, their rooftop kingdom held together by nothing but shared survival. Every alley is a myth waiting to happen, every shadow a lesson in the animal logic of streets that raise their own. The city breathes through them, sacred and feral in equal measure.',
-    },
+    "id": "SP05-293",
+    "name": "Tekkonkinkreet - Alleyway Child Myth",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Urban kid mythology, crowded roofs and alleys, rough sacred city energy, innocence and violence stacked vertically in a dense modern labyrinth",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Rough, spiritual, crowded, feral",
+      "key_features": "Dense city alleys, child silhouette contrast, rooftop motion, rough sacred iconography, urban myth staging",
+      "creative_brief": "Two boys own the city vertical chaos like stray gods born from concrete and corrugated tin, their rooftop kingdom held together by nothing but shared survival. Every alley is a myth waiting to happen, every shadow a lesson in the animal logic of streets that raise their own. The city breathes through them, sacred and feral in equal measure."
+    }
   },
   {
-    id: 'SP05-295',
-    name: 'Liz and the Blue Bird - Oboe Hallway Distance',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Delicate school music drama, pale interior light, oboe and flute emotional spacing, friendship rendered through tiny movements and corridor air',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Fragile, musical, restrained, aching',
-      key_features:
-        'Instrument detail, hallway spacing, delicate body language, pale interior lighting, sound-as-distance imagery',
-      creative_brief:
-        'An oboe line stretches across a hallway, the space between notes measuring the precise distance of a friendship too delicate to name. Pale light falls on the gap between two girls who communicate in the tiny movements of feet and eyelashes and the angle of a held breath. The blue bird is not one of them but the space they will soon learn to fill with music rather than silence.',
-    },
+    "id": "SP05-295",
+    "name": "Liz and the Blue Bird - Oboe Hallway Distance",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Delicate school music drama, pale interior light, oboe and flute emotional spacing, friendship rendered through tiny movements and corridor air",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Fragile, musical, restrained, aching",
+      "key_features": "Instrument detail, hallway spacing, delicate body language, pale interior lighting, sound-as-distance imagery",
+      "creative_brief": "An oboe line stretches across a hallway, the space between notes measuring the precise distance of a friendship too delicate to name. Pale light falls on the gap between two girls who communicate in the tiny movements of feet and eyelashes and the angle of a held breath. The blue bird is not one of them but the space they will soon learn to fill with music rather than silence."
+    }
   },
   {
-    id: 'SP05-296',
-    name: 'Metropolis - Deco Skyline Android Wonder',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Retro-futurist city towers, art-deco industrial grandeur, boy-and-android innocence, class conflict and monumental machinery in warm old-cinema wonder',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Grand, nostalgic, metallic, human',
-      key_features:
-        'Deco skyline forms, android character contrast, monumental machinery, crowd-class scale, retro-future city framing',
-      creative_brief:
-        'Art deco towers scrape a sky that looks backward and forward simultaneously, holding a boy and an android in the warm amber of old cinema wonder. Monuments to industry dominate class divisions that machinery was meant to erase but only deepened. Innocence becomes the most radical technology when it refuses to distinguish between the human heart and the mechanical one.',
-    },
+    "id": "SP05-296",
+    "name": "Metropolis - Deco Skyline Android Wonder",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Retro-futurist city towers, art-deco industrial grandeur, boy-and-android innocence, class conflict and monumental machinery in warm old-cinema wonder",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Grand, nostalgic, metallic, human",
+      "key_features": "Deco skyline forms, android character contrast, monumental machinery, crowd-class scale, retro-future city framing",
+      "creative_brief": "Art deco towers scrape a sky that looks backward and forward simultaneously, holding a boy and an android in the warm amber of old cinema wonder. Monuments to industry dominate class divisions that machinery was meant to erase but only deepened. Innocence becomes the most radical technology when it refuses to distinguish between the human heart and the mechanical one."
+    }
   },
   {
-    id: 'SP05-297',
-    name: 'The Garden of Words - Rain Pavilion Solitude',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Hyper-detailed rain, shoes and leaves, quiet age-gap longing, garden pavilion intimacy, wet surfaces carrying impossible emotional precision',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Rainy, intimate, lonely, exquisite',
-      key_features:
-        'Rain-surface detail, pavilion framing, shoe-and-step motifs, wet foliage reflections, emotionally charged stillness',
-      creative_brief:
-        'Every raindrop becomes a lens, magnifying the unspoken between two people who meet in a garden pavilion as if by accident but stay by design. Shoes left beside a wet bench hold more biography than any dialogue could bear. The garden is not a setting but a confidant, holding their silence with the patience of moss and the precision of falling water.',
-    },
+    "id": "SP05-297",
+    "name": "The Garden of Words - Rain Pavilion Solitude",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Hyper-detailed rain, shoes and leaves, quiet age-gap longing, garden pavilion intimacy, wet surfaces carrying impossible emotional precision",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Rainy, intimate, lonely, exquisite",
+      "key_features": "Rain-surface detail, pavilion framing, shoe-and-step motifs, wet foliage reflections, emotionally charged stillness",
+      "creative_brief": "Every raindrop becomes a lens, magnifying the unspoken between two people who meet in a garden pavilion as if by accident but stay by design. Shoes left beside a wet bench hold more biography than any dialogue could bear. The garden is not a setting but a confidant, holding their silence with the patience of moss and the precision of falling water."
+    }
   },
   {
-    id: 'SP05-071',
-    name: 'Spirited Away – Ghibli Bathhouse Reverie Fantasy',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Hayao Miyazaki style, lush hand-painted backgrounds, expressive animation, magical realism, lively spirit bathhouse, hand-painted wonder, expressive mystery, warm eccentric detail, soot-sprites, bath tokens, no-face spirit, radish spirit',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Wonderstruck, magical, enchanting, dreamy',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        'A bathhouse floats between worlds, its corridors crowded with gods who come to wash away the dust of the divine. No-Face drifts through the steam like loneliness given form, hungry for connection but speaking only in gold. Childhood discovers that courage is not the absence of fear but the decision to keep walking through a world that defies understanding.',
-    },
+    "id": "SP05-071",
+    "name": "Spirited Away – Ghibli Bathhouse Reverie Fantasy",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Hayao Miyazaki style, lush hand-painted backgrounds, expressive animation, magical realism, lively spirit bathhouse, hand-painted wonder, expressive mystery, warm eccentric detail, soot-sprites, bath tokens, no-face spirit, radish spirit",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Wonderstruck, magical, enchanting, dreamy",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "A bathhouse floats between worlds, its corridors crowded with gods who come to wash away the dust of the divine. No-Face drifts through the steam like loneliness given form, hungry for connection but speaking only in gold. Childhood discovers that courage is not the absence of fear but the decision to keep walking through a world that defies understanding."
+    }
   },
   {
-    id: 'SP05-287',
-    name: 'Belle - Virtual Cathedral Pop Opera',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Digital fantasy stagecraft, whale-shaped servers, pop-idol catharsis, online identity and emotional spectacle rendered with ornate luminous scale',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Grand, digital, heartfelt, operatic',
-      key_features:
-        'Virtual-cathedral geometry, pop-performance lighting, avatar elegance, online interface motifs, song-climax framing',
-      creative_brief:
-        'A cathedral rises from server racks where a girl voice becomes architecture, her song rebuilding the digital world one note at a time. Within the whale-shaped lattice of data, identity is both armor and anthem, a performance so luminous it becomes indistinguishable from truth. The avatar is not a mask but the soul projected at the scale it always deserved.',
-    },
+    "id": "SP05-287",
+    "name": "Belle - Virtual Cathedral Pop Opera",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Digital fantasy stagecraft, whale-shaped servers, pop-idol catharsis, online identity and emotional spectacle rendered with ornate luminous scale",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Grand, digital, heartfelt, operatic",
+      "key_features": "Virtual-cathedral geometry, pop-performance lighting, avatar elegance, online interface motifs, song-climax framing",
+      "creative_brief": "A cathedral rises from server racks where a girl voice becomes architecture, her song rebuilding the digital world one note at a time. Within the whale-shaped lattice of data, identity is both armor and anthem, a performance so luminous it becomes indistinguishable from truth. The avatar is not a mask but the soul projected at the scale it always deserved."
+    }
   },
   {
-    id: 'SP05-300',
-    name: 'Promare - Chromatic Firestorm Hero Theater',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Poster-bright rescue spectacle, triangular flames, anti-naturalistic mecha firefighting, operatic rivals, maximal color-block motion and modern theatrical bravado',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Blazing, theatrical, graphic, triumphant',
-      key_features:
-        'Triangular fire shapes, rescue-mecha silhouettes, poster-color blocking, rival hero staging, maximal graphic motion',
-      creative_brief:
-        'Fire does not consume but announces, triangular flames reshaping the world into poster-sized declarations of impossible will. Mecha firefighters move through the inferno like brushstrokes on a canvas that refuses naturalism, every rescue a graphic choice. Rivalry ignites into opera, and the stage is a burning city that asks not to be saved but to be spectacular.',
-    },
+    "id": "SP05-300",
+    "name": "Promare - Chromatic Firestorm Hero Theater",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Poster-bright rescue spectacle, triangular flames, anti-naturalistic mecha firefighting, operatic rivals, maximal color-block motion and modern theatrical bravado",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Blazing, theatrical, graphic, triumphant",
+      "key_features": "Triangular fire shapes, rescue-mecha silhouettes, poster-color blocking, rival hero staging, maximal graphic motion",
+      "creative_brief": "Fire does not consume but announces, triangular flames reshaping the world into poster-sized declarations of impossible will. Mecha firefighters move through the inferno like brushstrokes on a canvas that refuses naturalism, every rescue a graphic choice. Rivalry ignites into opera, and the stage is a burning city that asks not to be saved but to be spectacular."
+    }
   },
   {
-    id: 'SP05-072',
-    name: 'Princess Mononoke – Ghibli Forest Spirits Epic',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Ancient forests, sacred beasts, weathered warriors, ecological awe, mythic sorrow, deer-god forest spirit, kodama tree spirits, iron-town conflict, wolf-goddess Moro',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Majestic, elemental, primal, awe-inspiring',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        'The forest does not whisper; it roars through the mouths of wolf-goddesses and walks on the hooves of a god whose footsteps sprout life and death in equal measure. Iron clashes against root, industry against ancient pact, and every wound on the earth bleeds a curse that no blade can cut. Kodama tilt their heads at the violence, waiting to see which side nature will choose.',
-    },
+    "id": "SP05-072",
+    "name": "Princess Mononoke – Ghibli Forest Spirits Epic",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Ancient forests, sacred beasts, weathered warriors, ecological awe, mythic sorrow, deer-god forest spirit, kodama tree spirits, iron-town conflict, wolf-goddess Moro",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Majestic, elemental, primal, awe-inspiring",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "The forest does not whisper; it roars through the mouths of wolf-goddesses and walks on the hooves of a god whose footsteps sprout life and death in equal measure. Iron clashes against root, industry against ancient pact, and every wound on the earth bleeds a curse that no blade can cut. Kodama tilt their heads at the violence, waiting to see which side nature will choose."
+    }
   },
   {
-    id: 'SP05-076',
-    name: 'Paprika – Satoshi Kon Parade Dream Surrealism',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Dream parades, impossible transitions, saturated symbolism, psychological spectacle, DC-mini devices, parade-of-objects, dream-therapy tech, blurring-reality',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Surreal, delirious, kaleidoscopic, mind-bending',
-      key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
-      creative_brief:
-        "A parade of impossible objects marches through the dissolving wall between sleeping and waking — a filmstrip of the subconscious unspooled across latex skies. Every cut is a breath held too long; every scene bleeds into the next like watercolor in rain. Make it feel like a dream you can't quite remember but can't stop chasing.",
-    },
+    "id": "SP05-076",
+    "name": "Paprika – Satoshi Kon Parade Dream Surrealism",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Dream parades, impossible transitions, saturated symbolism, psychological spectacle, DC-mini devices, parade-of-objects, dream-therapy tech, blurring-reality",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Surreal, delirious, kaleidoscopic, mind-bending",
+      "key_features": "Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry",
+      "creative_brief": "A parade of impossible objects marches through the dissolving wall between sleeping and waking — a filmstrip of the subconscious unspooled across latex skies. Every cut is a breath held too long; every scene bleeds into the next like watercolor in rain. Make it feel like a dream you can't quite remember but can't stop chasing."
+    }
   },
   {
-    id: 'SP05-283',
-    name: 'The Boy and the Heron - Marsh-Gate Mourning Dream',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'War-era estate mourning, uncanny bird guide, dream-architecture beyond grief, painterly reeds and tower spaces, Miyazaki late-style metaphysical tenderness',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Mourning, uncanny, painterly, searching',
-      key_features:
-        'Heron guide silhouette, tower-and-marsh imagery, war-era domestic detail, dream-gate framing, grief-soaked stillness',
-      creative_brief:
-        'Grief opens doors that should not exist, a heron beak tapping on the glass between life and what comes after. The marsh is a threshold, a membrane through which mourning becomes architecture and architecture becomes a journey inward. Every reed sways with the weight of unspoken farewell, every tower ascends toward a silence only the dead can fill.',
-    },
+    "id": "SP05-283",
+    "name": "The Boy and the Heron - Marsh-Gate Mourning Dream",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "War-era estate mourning, uncanny bird guide, dream-architecture beyond grief, painterly reeds and tower spaces, Miyazaki late-style metaphysical tenderness",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Mourning, uncanny, painterly, searching",
+      "key_features": "Heron guide silhouette, tower-and-marsh imagery, war-era domestic detail, dream-gate framing, grief-soaked stillness",
+      "creative_brief": "Grief opens doors that should not exist, a heron beak tapping on the glass between life and what comes after. The marsh is a threshold, a membrane through which mourning becomes architecture and architecture becomes a journey inward. Every reed sways with the weight of unspoken farewell, every tower ascends toward a silence only the dead can fill."
+    }
   },
   {
-    id: 'SP05-294',
-    name: 'Mind Game - Psychedelic Escape Sprint',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Explosive mixed-style self-reinvention, hot-blooded panic, abstract transitions, impossible comedic near-death and liberation surging through every visual decision',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Liberating, insane, bright, kinetic',
-      key_features:
-        'Mixed-media bursts, escape-motion framing, psychedelic transitions, comic panic acting, freedom iconography',
-      creative_brief:
-        'Death becomes a door and the door opens into a sprint where every frame sheds its own skin in pursuit of something wilder. The universe laughs at itself through watercolor dissolves, photographic collage, and line art that refuses to sit still. Liberation is not a state but a velocity, and the image accelerates until it escapes its own definition.',
-    },
+    "id": "SP05-294",
+    "name": "Mind Game - Psychedelic Escape Sprint",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Explosive mixed-style self-reinvention, hot-blooded panic, abstract transitions, impossible comedic near-death and liberation surging through every visual decision",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Liberating, insane, bright, kinetic",
+      "key_features": "Mixed-media bursts, escape-motion framing, psychedelic transitions, comic panic acting, freedom iconography",
+      "creative_brief": "Death becomes a door and the door opens into a sprint where every frame sheds its own skin in pursuit of something wilder. The universe laughs at itself through watercolor dissolves, photographic collage, and line art that refuses to sit still. Liberation is not a state but a velocity, and the image accelerates until it escapes its own definition."
+    }
   },
   {
-    id: 'SP05-298',
-    name: 'Night Is Short, Walk on Girl - Drunken Kyoto Whirl',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Nightlife romance rendered as a whimsical city odyssey, pub interiors, surreal side quests, warm chaos and literary flirtation rushing through one magical evening',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Tipsy, whimsical, urban, affectionate',
-      key_features:
-        'Night-street glow, pub clutter, festival-night momentum, literary props, whimsical encounter staging',
-      creative_brief:
-        'One Kyoto evening stretches into an impossible odyssey where every pub doorway opens onto a different genre of joy. Literary references tumble through the streets like drunk philosophers chasing a girl who chases nothing but the night itself. Romance is not a destination but the particular velocity of a city in love with its own strangeness.',
-    },
+    "id": "SP05-298",
+    "name": "Night Is Short, Walk on Girl - Drunken Kyoto Whirl",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Nightlife romance rendered as a whimsical city odyssey, pub interiors, surreal side quests, warm chaos and literary flirtation rushing through one magical evening",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Tipsy, whimsical, urban, affectionate",
+      "key_features": "Night-street glow, pub clutter, festival-night momentum, literary props, whimsical encounter staging",
+      "creative_brief": "One Kyoto evening stretches into an impossible odyssey where every pub doorway opens onto a different genre of joy. Literary references tumble through the streets like drunk philosophers chasing a girl who chases nothing but the night itself. Romance is not a destination but the particular velocity of a city in love with its own strangeness."
+    }
   },
   {
-    id: 'SP05-299',
-    name: 'Paprika - Parade Dream-Collapse Carnival',
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Psychoanalytic dream parades, appliance-icon chaos, identity slippage, theater curtains and impossible transitions, carnival-density surrealism with polished motion logic',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Surreal, carnivalesque, invasive, dazzling',
-      key_features:
-        'Dream-parade motifs, appliance iconography, stage-curtain transitions, identity-split framing, polished dream density',
-      creative_brief:
-        'A parade marches from dream into waking, refrigerators and dolls and gods all dancing to a frequency that dissolves the boundary between therapist and patient. Identity peels away in strips like theater curtain, revealing not a true self but an infinite regression of possible selves. The carnival is not entertainment but invasion, and the mind has no immune system for what it secretly wants.',
-    },
+    "id": "SP05-299",
+    "name": "Paprika - Parade Dream-Collapse Carnival",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Psychoanalytic dream parades, appliance-icon chaos, identity slippage, theater curtains and impossible transitions, carnival-density surrealism with polished motion logic",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Surreal, carnivalesque, invasive, dazzling",
+      "key_features": "Dream-parade motifs, appliance iconography, stage-curtain transitions, identity-split framing, polished dream density",
+      "creative_brief": "A parade marches from dream into waking, refrigerators and dolls and gods all dancing to a frequency that dissolves the boundary between therapist and patient. Identity peels away in strips like theater curtain, revealing not a true self but an infinite regression of possible selves. The carnival is not entertainment but invasion, and the mind has no immune system for what it secretly wants."
+    }
   },
   {
-    id: 'SP05-289',
-    name: "Angel's Egg - Cathedral Water Ruin Silence",
-    category: '10. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
-    style: {
-      aesthetic:
-        'Monumental gothic emptiness, impossible vessels, sacred ruin, dream-like Christian symbolism and oceanic stillness inside a nearly wordless apocalyptic reverie',
-      form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
-      lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
-      material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
-      render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
-      spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Sacred, silent, dreamlike, mournful',
-      key_features:
-        'Cathedral ruin scale, water-black emptiness, egg imagery, elongated silhouettes, sacred-symbolic composition',
-      creative_brief:
-        'Water covers the cathedral floor, a mirror that reflects no god, only the hollow grandeur of belief abandoned to stillness. An egg cradled in thin fingers holds either everything or nothing, and the film refuses to answer which. Sacred images drift through ruined arches like forgotten prayers, their meaning no longer remembered but still unbearably felt.',
-    },
-  },
+    "id": "SP05-289",
+    "name": "Angel's Egg - Cathedral Water Ruin Silence",
+    "category": "10. Studio Masterpieces",
+    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
+    "style": {
+      "aesthetic": "Monumental gothic emptiness, impossible vessels, sacred ruin, dream-like Christian symbolism and oceanic stillness inside a nearly wordless apocalyptic reverie",
+      "form_and_line": "Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening",
+      "color_palette": "Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature",
+      "lighting_setup": "Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth",
+      "material_texture": "Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness",
+      "render_quality": "Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality",
+      "spatial_distortion": "Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design",
+      "atmosphere": "Sacred, silent, dreamlike, mournful",
+      "key_features": "Cathedral ruin scale, water-black emptiness, egg imagery, elongated silhouettes, sacred-symbolic composition",
+      "creative_brief": "Water covers the cathedral floor, a mirror that reflects no god, only the hollow grandeur of belief abandoned to stillness. An egg cradled in thin fingers holds either everything or nothing, and the film refuses to answer which. Sacred images drift through ruined arches like forgotten prayers, their meaning no longer remembered but still unbearably felt."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

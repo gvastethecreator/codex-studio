@@ -530,6 +530,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
   );
 }
 
+// react-doctor-disable-next-line react-doctor/no-giant-component -- inspector view intentionally kept cohesive pending dedicated decomposition pass
 export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
   detail,
   onClearSelectedJob,

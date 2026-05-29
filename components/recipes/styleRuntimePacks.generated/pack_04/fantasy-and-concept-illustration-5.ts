@@ -4,1180 +4,993 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP04-025',
-    name: 'Felt Tip Marker',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'paint, blend',
-    style: {
-      aesthetic: 'Marker drawing',
-      form_and_line: 'Bleeding ink',
-      color_palette: 'Saturated, overlapping, marker-bleed fusion, highlighter neon',
-      lighting_setup: 'Flat, no correction, marker-smudge raw',
-      material_texture: 'Paper bleed',
-      render_quality: 'Sketchbook, bold, alcohol-marker spontaneity, studio hand-style',
-      spatial_distortion: 'Loose',
-      atmosphere: 'Casual, bright, coffee-shop sketch, creative mess',
-      key_features: 'Stroke overlap, bleeding edge, tonal blending',
-      creative_brief:
-        'Marker ink bleeds into paper fiber with the casual confidence of a coffee-shop sketch, colors overlapping like conversation. The alcohol base evaporates leaving pigment frozen mid-spread, every stroke a decision made at speed. This is drawing without the safety net, where the line between boldness and mess is exactly the point.',
-    },
+    "id": "SP04-025",
+    "name": "Felt Tip Marker",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "paint, blend",
+    "style": {
+      "aesthetic": "Marker drawing",
+      "form_and_line": "Bleeding ink",
+      "color_palette": "Saturated, overlapping, marker-bleed fusion, highlighter neon",
+      "lighting_setup": "Flat, no correction, marker-smudge raw",
+      "material_texture": "Paper bleed",
+      "render_quality": "Sketchbook, bold, alcohol-marker spontaneity, studio hand-style",
+      "spatial_distortion": "Loose",
+      "atmosphere": "Casual, bright, coffee-shop sketch, creative mess",
+      "key_features": "Stroke overlap, bleeding edge, tonal blending",
+      "creative_brief": "Marker ink bleeds into paper fiber with the casual confidence of a coffee-shop sketch, colors overlapping like conversation. The alcohol base evaporates leaving pigment frozen mid-spread, every stroke a decision made at speed. This is drawing without the safety net, where the line between boldness and mess is exactly the point."
+    }
   },
   {
-    id: 'SP04-026',
-    name: 'Pop-Up Book',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'flat page',
-    style: {
-      aesthetic: '3D paper engineering',
-      form_and_line: 'Cut edges',
-      color_palette: 'Cardstock, kraft-paper spectrum, die-cut primaries',
-      lighting_setup: 'Paper shadows, crease-relief light, fold-structure shading',
-      material_texture: 'Paper',
-      render_quality: 'Intricate, dimensional, paper-engineering wonder, structural delight',
-      spatial_distortion: 'Folded',
-      atmosphere: 'Surprise, fun, page-turn anticipation, engineered magic',
-      key_features: 'Tabs and slots, pop-up mechanisms, layering depth',
-      creative_brief:
-        'Paper folds along invisible hinges, tabs and slots creating architecture from cardstock dreams. Drop shadows tell the story of depth, each layer lifting from the page in engineered surprise. This is reading as architecture, where turning the page constructs a world that stands up and demands wonder.',
-    },
+    "id": "SP04-026",
+    "name": "Pop-Up Book",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "flat page",
+    "style": {
+      "aesthetic": "3D paper engineering",
+      "form_and_line": "Cut edges",
+      "color_palette": "Cardstock, kraft-paper spectrum, die-cut primaries",
+      "lighting_setup": "Paper shadows, crease-relief light, fold-structure shading",
+      "material_texture": "Paper",
+      "render_quality": "Intricate, dimensional, paper-engineering wonder, structural delight",
+      "spatial_distortion": "Folded",
+      "atmosphere": "Surprise, fun, page-turn anticipation, engineered magic",
+      "key_features": "Tabs and slots, pop-up mechanisms, layering depth",
+      "creative_brief": "Paper folds along invisible hinges, tabs and slots creating architecture from cardstock dreams. Drop shadows tell the story of depth, each layer lifting from the page in engineered surprise. This is reading as architecture, where turning the page constructs a world that stands up and demands wonder."
+    }
   },
   {
-    id: 'SP04-028',
-    name: 'Chalk Pastel',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'sharp, pen',
-    style: {
-      aesthetic: 'Soft blending',
-      form_and_line: 'Thick dust',
-      color_palette: 'Soft, dusty, pastel-mist spectrum, muted winter warmth',
-      lighting_setup: 'Soft, diffuse glow, paper-tooth scatter, feather-light',
-      material_texture: 'Paper tooth',
-      render_quality: 'The Snowman wintery dreamy softness, pastel flight',
-      spatial_distortion: 'Blurred',
-      atmosphere: 'Soft, winter, snow-globe stillness, nostalgic bedtime',
-      key_features: 'Smudge, chalk-dust bloom, soft-edge blending',
-      creative_brief:
-        'Chalk dust settles into paper tooth like snow on ancient landscape, edges dissolving into atmospheric haze. The soft blur of pastel blending creates an image seen through memory rather than eyes. This is the world viewed through a frost-covered window, where distance softens everything into dream.',
-    },
+    "id": "SP04-028",
+    "name": "Chalk Pastel",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "sharp, pen",
+    "style": {
+      "aesthetic": "Soft blending",
+      "form_and_line": "Thick dust",
+      "color_palette": "Soft, dusty, pastel-mist spectrum, muted winter warmth",
+      "lighting_setup": "Soft, diffuse glow, paper-tooth scatter, feather-light",
+      "material_texture": "Paper tooth",
+      "render_quality": "The Snowman wintery dreamy softness, pastel flight",
+      "spatial_distortion": "Blurred",
+      "atmosphere": "Soft, winter, snow-globe stillness, nostalgic bedtime",
+      "key_features": "Smudge, chalk-dust bloom, soft-edge blending",
+      "creative_brief": "Chalk dust settles into paper tooth like snow on ancient landscape, edges dissolving into atmospheric haze. The soft blur of pastel blending creates an image seen through memory rather than eyes. This is the world viewed through a frost-covered window, where distance softens everything into dream."
+    }
   },
   {
-    id: 'SP04-019',
-    name: 'Crayon Drawing',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'professional, smooth',
-    style: {
-      aesthetic: "Child's drawing",
-      form_and_line: 'Waxy, messy',
-      color_palette: 'Vibrant wax, crayon spectrum, primary finger-paint',
-      lighting_setup: 'Flat, paper-white bounce, no synthetic shadow',
-      material_texture: 'Wax buildup',
-      render_quality: 'Naive, cute, hand-drawn authenticity, childhood sincerity',
-      spatial_distortion: 'Stick figures',
-      atmosphere: 'Innocent, fun, refrigerator-gallery pride, joyful scribble',
-      key_features: 'Paper grain, waxy stroke, uneven fill',
-      creative_brief:
-        "Wax builds up on paper tooth with the conviction only a child's hand can muster, colors applied with more enthusiasm than precision. Stick figures stand proud against white space, their uneven limbs monuments to sincerity over skill. This is the masterpiece before anyone learned what a masterpiece should look like.",
-    },
+    "id": "SP04-019",
+    "name": "Crayon Drawing",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "professional, smooth",
+    "style": {
+      "aesthetic": "Child's drawing",
+      "form_and_line": "Waxy, messy",
+      "color_palette": "Vibrant wax, crayon spectrum, primary finger-paint",
+      "lighting_setup": "Flat, paper-white bounce, no synthetic shadow",
+      "material_texture": "Wax buildup",
+      "render_quality": "Naive, cute, hand-drawn authenticity, childhood sincerity",
+      "spatial_distortion": "Stick figures",
+      "atmosphere": "Innocent, fun, refrigerator-gallery pride, joyful scribble",
+      "key_features": "Paper grain, waxy stroke, uneven fill",
+      "creative_brief": "Wax builds up on paper tooth with the conviction only a child's hand can muster, colors applied with more enthusiasm than precision. Stick figures stand proud against white space, their uneven limbs monuments to sincerity over skill. This is the masterpiece before anyone learned what a masterpiece should look like."
+    }
   },
   {
-    id: 'SP04-022',
-    name: 'Colored Pencil',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'ink, paint',
-    style: {
-      aesthetic: 'Soft sketch',
-      form_and_line: 'Pencil strokes',
-      color_palette: 'Soft, layered, crayon-adjacent warmth, gentle fade',
-      lighting_setup: 'Paper white, natural ambient, soft diffuse',
-      material_texture: 'Pencil grain',
-      render_quality: 'Gentle, fuzzy, sketchbook intimacy, soft-focus warmth',
-      spatial_distortion: 'Soft edges',
-      atmosphere: 'Quiet, homey, afternoon sketch, personal journal',
-      key_features: 'Crosshatching, pencil stroke direction, smudged blending',
-      creative_brief:
-        'Colored pencil layers build slowly like sediment, each stroke leaving its grain signature on the tooth of the page. The soft fuzz of pigment drift creates a world seen through the gentlest possible lens. This is the sketchbook as sanctuary, where quiet observation becomes a form of devotion.',
-    },
+    "id": "SP04-022",
+    "name": "Colored Pencil",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "ink, paint",
+    "style": {
+      "aesthetic": "Soft sketch",
+      "form_and_line": "Pencil strokes",
+      "color_palette": "Soft, layered, crayon-adjacent warmth, gentle fade",
+      "lighting_setup": "Paper white, natural ambient, soft diffuse",
+      "material_texture": "Pencil grain",
+      "render_quality": "Gentle, fuzzy, sketchbook intimacy, soft-focus warmth",
+      "spatial_distortion": "Soft edges",
+      "atmosphere": "Quiet, homey, afternoon sketch, personal journal",
+      "key_features": "Crosshatching, pencil stroke direction, smudged blending",
+      "creative_brief": "Colored pencil layers build slowly like sediment, each stroke leaving its grain signature on the tooth of the page. The soft fuzz of pigment drift creates a world seen through the gentlest possible lens. This is the sketchbook as sanctuary, where quiet observation becomes a form of devotion."
+    }
   },
   {
-    id: 'SP04-024',
-    name: 'Claymation Style',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: '2d, drawn',
-    style: {
-      aesthetic: 'Plasticine model',
-      form_and_line: 'None',
-      color_palette: 'Clay colors, matte polymer spectrum, earthy plasticity',
-      lighting_setup: 'Studio, key-fill softbox, stop-motion continuity',
-      material_texture: 'Fingerprints',
-      render_quality: 'Aardman tactile stop-motion, cheese-loving charm',
-      spatial_distortion: 'Chunky',
-      atmosphere: 'Funny, physical, handmade comedy, frame-by-frame delight',
-      key_features: 'Thumbprints, clay-sculpt surface, wireframe armature hints',
-      creative_brief:
-        "Thumbprints press into plasticine flesh like the maker's signature, each depression a frame of stop-motion labor. Chunky forms carry the weight of physical existence, fingers having shaped every contour. This is the handmade universe where imperfection is the proof of love, and the space between frames hums with effort.",
-    },
+    "id": "SP04-024",
+    "name": "Claymation Style",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "2d, drawn",
+    "style": {
+      "aesthetic": "Plasticine model",
+      "form_and_line": "None",
+      "color_palette": "Clay colors, matte polymer spectrum, earthy plasticity",
+      "lighting_setup": "Studio, key-fill softbox, stop-motion continuity",
+      "material_texture": "Fingerprints",
+      "render_quality": "Aardman tactile stop-motion, cheese-loving charm",
+      "spatial_distortion": "Chunky",
+      "atmosphere": "Funny, physical, handmade comedy, frame-by-frame delight",
+      "key_features": "Thumbprints, clay-sculpt surface, wireframe armature hints",
+      "creative_brief": "Thumbprints press into plasticine flesh like the maker's signature, each depression a frame of stop-motion labor. Chunky forms carry the weight of physical existence, fingers having shaped every contour. This is the handmade universe where imperfection is the proof of love, and the space between frames hums with effort."
+    }
   },
   {
-    id: 'SP04-029',
-    name: 'Sticker Art',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'background',
-    style: {
-      aesthetic: 'Die-cut sticker',
-      form_and_line: 'Thick White outline',
-      color_palette: 'Vector, glossy finish, sticker-sheet spectrum',
-      lighting_setup: 'Glossy, specular highlight, vinyl sheen reflection',
-      material_texture: 'Vinyl',
-      render_quality: 'Redbubble, cute, die-cut precision, sticker-collector gloss',
-      spatial_distortion: 'Simplified',
-      atmosphere: 'Fun, collectible, laptop-decal personality, pop-culture cheer',
-      key_features: 'White border, die-cut outline, separate silhouette',
-      creative_brief:
-        'Thick white outlines quarantine each shape from its neighbors like diplomatic immunity for design. Glossy highlights slide across vinyl surfaces, the specular reflection promising the satisfaction of peeling and sticking. This is the art of the collectible, where every shape is a small declaration of identity waiting to attach itself to a laptop lid.',
-    },
+    "id": "SP04-029",
+    "name": "Sticker Art",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "background",
+    "style": {
+      "aesthetic": "Die-cut sticker",
+      "form_and_line": "Thick White outline",
+      "color_palette": "Vector, glossy finish, sticker-sheet spectrum",
+      "lighting_setup": "Glossy, specular highlight, vinyl sheen reflection",
+      "material_texture": "Vinyl",
+      "render_quality": "Redbubble, cute, die-cut precision, sticker-collector gloss",
+      "spatial_distortion": "Simplified",
+      "atmosphere": "Fun, collectible, laptop-decal personality, pop-culture cheer",
+      "key_features": "White border, die-cut outline, separate silhouette",
+      "creative_brief": "Thick white outlines quarantine each shape from its neighbors like diplomatic immunity for design. Glossy highlights slide across vinyl surfaces, the specular reflection promising the satisfaction of peeling and sticking. This is the art of the collectible, where every shape is a small declaration of identity waiting to attach itself to a laptop lid."
+    }
   },
   {
-    id: 'SP04-039',
-    name: 'Movie Poster (Painted)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'photo collage',
-    style: {
-      aesthetic:
-        'Painted adventure poster, Drew Struzan style, floating-head collage, airbrush epic, nostalgia machine',
-      form_and_line: 'Airbrush',
-      color_palette: 'Warm/Cool contrast, orange-teal poster push, airbrush spectrum',
-      lighting_setup: 'Rim light, hero backlight, dramatic key separation',
-      material_texture: 'Canvas',
-      render_quality: 'Star Wars space-opera epic, galaxy-spanning wonder',
-      spatial_distortion: 'Floating heads',
-      atmosphere: 'Cinematic, classic, blockbuster anticipation, VHS-era magic',
-      key_features: 'Lens flare, floating-head montage, title treatment space',
-      creative_brief:
-        'Floating heads assemble in montage as if summoned by the gravity of the film they advertise, each face rendered in airbrush devotion. Warm and cool light negotiate across features like the conflict that drives every story. This is the poster as promise, where a single image must contain the entire emotional arc of a two-hour dream.',
-    },
+    "id": "SP04-039",
+    "name": "Movie Poster (Painted)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "photo collage",
+    "style": {
+      "aesthetic": "Painted adventure poster, Drew Struzan style, floating-head collage, airbrush epic, nostalgia machine",
+      "form_and_line": "Airbrush",
+      "color_palette": "Warm/Cool contrast, orange-teal poster push, airbrush spectrum",
+      "lighting_setup": "Rim light, hero backlight, dramatic key separation",
+      "material_texture": "Canvas",
+      "render_quality": "Star Wars space-opera epic, galaxy-spanning wonder",
+      "spatial_distortion": "Floating heads",
+      "atmosphere": "Cinematic, classic, blockbuster anticipation, VHS-era magic",
+      "key_features": "Lens flare, floating-head montage, title treatment space",
+      "creative_brief": "Floating heads assemble in montage as if summoned by the gravity of the film they advertise, each face rendered in airbrush devotion. Warm and cool light negotiate across features like the conflict that drives every story. This is the poster as promise, where a single image must contain the entire emotional arc of a two-hour dream."
+    }
   },
   {
-    id: 'SP04-044',
-    name: 'Travel Poster (Vintage)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'photo',
-    style: {
-      aesthetic: 'Railway poster',
-      form_and_line: 'None',
-      color_palette: 'Flat, sunny, holiday-brochure, Mediterranean warmth',
-      lighting_setup: 'Flat, eternal-summer illumination, postcard optimism',
-      material_texture: 'Lithograph',
-      render_quality: 'Optimistic, classic, wanderlust charm, golden-age tourism',
-      spatial_distortion: 'Simplified view',
-      atmosphere: 'Happy, vacation, seaside leisure, arrival excitement',
-      key_features: 'Text at bottom, destination lettering, simplified landmark',
-      creative_brief:
-        'Flat color bands reduce landscape to its emotional essence, each horizontal stripe a different pleasure of the destination. Simplified forms promise the journey before the journey begins. This is travel rendered as anticipation, where the poster arrives before the train and the destination lives first in imagination.',
-    },
+    "id": "SP04-044",
+    "name": "Travel Poster (Vintage)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "photo",
+    "style": {
+      "aesthetic": "Railway poster",
+      "form_and_line": "None",
+      "color_palette": "Flat, sunny, holiday-brochure, Mediterranean warmth",
+      "lighting_setup": "Flat, eternal-summer illumination, postcard optimism",
+      "material_texture": "Lithograph",
+      "render_quality": "Optimistic, classic, wanderlust charm, golden-age tourism",
+      "spatial_distortion": "Simplified view",
+      "atmosphere": "Happy, vacation, seaside leisure, arrival excitement",
+      "key_features": "Text at bottom, destination lettering, simplified landmark",
+      "creative_brief": "Flat color bands reduce landscape to its emotional essence, each horizontal stripe a different pleasure of the destination. Simplified forms promise the journey before the journey begins. This is travel rendered as anticipation, where the poster arrives before the train and the destination lives first in imagination."
+    }
   },
   {
-    id: 'SP04-031',
-    name: 'Art Deco Poster',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'messy, organic',
-    style: {
-      aesthetic: '1920s travel poster',
-      form_and_line: 'Geometric curves',
-      color_palette: 'Gold, Black, Teal, deco opulence, champagne shimmer',
-      lighting_setup: 'Gradient, metallic sheen, sunburst radiance',
-      material_texture: 'Airbrush',
-      render_quality: 'Gatsby jazz-age luxury, champagne shimmer, deco decadence',
-      spatial_distortion: 'Streamlined',
-      atmosphere: 'Elegant, fast, roaring-twenties glamour, ocean-liner sophistication',
-      key_features: 'Sunburst, geometric framing, speed lines',
-      creative_brief:
-        'Geometric sunbursts radiate from center points like the roar of the jazz age made visible. Gold leaf and teal gradients slide across streamlined forms, every curve engineered for speed and elegance. This is the future as imagined by the past, where luxury wears geometric armor and glamour travels by ocean liner.',
-    },
+    "id": "SP04-031",
+    "name": "Art Deco Poster",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "messy, organic",
+    "style": {
+      "aesthetic": "1920s travel poster",
+      "form_and_line": "Geometric curves",
+      "color_palette": "Gold, Black, Teal, deco opulence, champagne shimmer",
+      "lighting_setup": "Gradient, metallic sheen, sunburst radiance",
+      "material_texture": "Airbrush",
+      "render_quality": "Gatsby jazz-age luxury, champagne shimmer, deco decadence",
+      "spatial_distortion": "Streamlined",
+      "atmosphere": "Elegant, fast, roaring-twenties glamour, ocean-liner sophistication",
+      "key_features": "Sunburst, geometric framing, speed lines",
+      "creative_brief": "Geometric sunbursts radiate from center points like the roar of the jazz age made visible. Gold leaf and teal gradients slide across streamlined forms, every curve engineered for speed and elegance. This is the future as imagined by the past, where luxury wears geometric armor and glamour travels by ocean liner."
+    }
   },
   {
-    id: 'SP04-032',
-    name: 'Mucha Art Nouveau Poster',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'straight lines, minimal',
-    style: {
-      aesthetic:
-        'Flowing decorative lithograph, Alphonse Mucha style, botanical hair, organic ornament, belle epoque beauty',
-      form_and_line: 'Flowing hair/vines',
-      color_palette: 'Peach, Sage, Gold, botanical soft-metallic, organic gem',
-      lighting_setup: 'Flat, stain-glass glow, halo radiance',
-      material_texture: 'Lithograph',
-      render_quality: 'Decorative, floral, sinuous refinement, fin-de-siecle elegance',
-      spatial_distortion: 'Organic curves',
-      atmosphere: 'Beautiful, romantic, belle-epoque reverie, ornamental trance',
-      key_features: 'Circle halo, flowing hair-vines, organic border',
-      creative_brief:
-        'Hair and vines flow into each other until figure and ornament become a single botanical sentence. Circular halos frame the subject like a stained-glass window dedicated to the religion of beauty. This is the decorative impulse elevated to spiritual practice, where every curve is a prayer and every flower a benediction.',
-    },
+    "id": "SP04-032",
+    "name": "Mucha Art Nouveau Poster",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "straight lines, minimal",
+    "style": {
+      "aesthetic": "Flowing decorative lithograph, Alphonse Mucha style, botanical hair, organic ornament, belle epoque beauty",
+      "form_and_line": "Flowing hair/vines",
+      "color_palette": "Peach, Sage, Gold, botanical soft-metallic, organic gem",
+      "lighting_setup": "Flat, stain-glass glow, halo radiance",
+      "material_texture": "Lithograph",
+      "render_quality": "Decorative, floral, sinuous refinement, fin-de-siecle elegance",
+      "spatial_distortion": "Organic curves",
+      "atmosphere": "Beautiful, romantic, belle-epoque reverie, ornamental trance",
+      "key_features": "Circle halo, flowing hair-vines, organic border",
+      "creative_brief": "Hair and vines flow into each other until figure and ornament become a single botanical sentence. Circular halos frame the subject like a stained-glass window dedicated to the religion of beauty. This is the decorative impulse elevated to spiritual practice, where every curve is a prayer and every flower a benediction."
+    }
   },
   {
-    id: 'SP04-033',
-    name: 'Propaganda Poster',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'subtle, weak',
-    style: {
-      aesthetic: 'Constructivist',
-      form_and_line: 'Bold',
-      color_palette: 'Red, Black, Cream, revolutionary tension, stark authority',
-      lighting_setup: 'High contrast, heroic low-angle, dramatic light-beam',
-      material_texture: 'Screenprint',
-      render_quality: 'Shepard Fairey propagandistic bold, OBEY aesthetic, street authority',
-      spatial_distortion: 'Heroic angle',
-      atmosphere: 'Strong, commanding, revolutionary urgency, mass-movement energy',
-      key_features: 'Rays, bold typography, constructivist geometry',
-      creative_brief:
-        'Red strikes against cream with the force of a clenched fist, constructivist geometry marshaling form into political weapon. Low-angle heroism tilts the world upward toward inevitability. This is the image as command, where composition itself issues orders and every diagonal is a demand for action.',
-    },
+    "id": "SP04-033",
+    "name": "Propaganda Poster",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "subtle, weak",
+    "style": {
+      "aesthetic": "Constructivist",
+      "form_and_line": "Bold",
+      "color_palette": "Red, Black, Cream, revolutionary tension, stark authority",
+      "lighting_setup": "High contrast, heroic low-angle, dramatic light-beam",
+      "material_texture": "Screenprint",
+      "render_quality": "Shepard Fairey propagandistic bold, OBEY aesthetic, street authority",
+      "spatial_distortion": "Heroic angle",
+      "atmosphere": "Strong, commanding, revolutionary urgency, mass-movement energy",
+      "key_features": "Rays, bold typography, constructivist geometry",
+      "creative_brief": "Red strikes against cream with the force of a clenched fist, constructivist geometry marshaling form into political weapon. Low-angle heroism tilts the world upward toward inevitability. This is the image as command, where composition itself issues orders and every diagonal is a demand for action."
+    }
   },
   {
-    id: 'SP04-037',
-    name: 'Bauhaus Poster',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'decorative, floral',
-    style: {
-      aesthetic: 'Geometric design',
-      form_and_line: 'Grid',
-      color_palette: 'Red, Blue, Yellow, primary triad, modernist restraint',
-      lighting_setup: 'Flat, functional, no decorative illumination',
-      material_texture: 'Matte',
-      render_quality: 'Modernist, layout, grid-discipline purity, form-follows-function',
-      spatial_distortion: 'Diagonal type',
-      atmosphere: 'Rational, design, intellectual clarity, utopian minimalism',
-      key_features: 'Circle/Square/Triangle, grid structure, asymmetric balance',
-      creative_brief:
-        'Primary colors declare territories on a grid that acknowledges only the essential geometries: circle, square, triangle. Asymmetry achieves balance through tension rather than symmetry, every element earning its place through function. This is design as moral philosophy, where less is not merely more but everything.',
-    },
+    "id": "SP04-037",
+    "name": "Bauhaus Poster",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "decorative, floral",
+    "style": {
+      "aesthetic": "Geometric design",
+      "form_and_line": "Grid",
+      "color_palette": "Red, Blue, Yellow, primary triad, modernist restraint",
+      "lighting_setup": "Flat, functional, no decorative illumination",
+      "material_texture": "Matte",
+      "render_quality": "Modernist, layout, grid-discipline purity, form-follows-function",
+      "spatial_distortion": "Diagonal type",
+      "atmosphere": "Rational, design, intellectual clarity, utopian minimalism",
+      "key_features": "Circle/Square/Triangle, grid structure, asymmetric balance",
+      "creative_brief": "Primary colors declare territories on a grid that acknowledges only the essential geometries: circle, square, triangle. Asymmetry achieves balance through tension rather than symmetry, every element earning its place through function. This is design as moral philosophy, where less is not merely more but everything."
+    }
   },
   {
-    id: 'SP04-045',
-    name: 'Gig Poster (Screenprint)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'digital gradient',
-    style: {
-      aesthetic: 'Rock band poster',
-      form_and_line: 'Thick ink',
-      color_palette: '3 spot colors, screenprint economy, poster-impact triad',
-      lighting_setup: 'Halftone, dot-screen depth, gig-poster rawness',
-      material_texture: 'Paper grain',
-      render_quality: 'Handmade, cool, squeegee texture, indie-venue vibe',
-      spatial_distortion: 'Distressed',
-      atmosphere: 'Loud, graphic, live-music energy, crowd-volume presence',
-      key_features: 'Overprint, registration misalignment, distressed edge',
-      creative_brief:
-        'Ink layers build in registration rough enough to feel the human hand behind the squeegee, each color pass a different instrument in the visual band. Typography shouts band names like a setlist, letterforms as loud as amplifiers. This is live music translated into flat color, where the poster vibrates at the frequency of the venue.',
-    },
+    "id": "SP04-045",
+    "name": "Gig Poster (Screenprint)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "digital gradient",
+    "style": {
+      "aesthetic": "Rock band poster",
+      "form_and_line": "Thick ink",
+      "color_palette": "3 spot colors, screenprint economy, poster-impact triad",
+      "lighting_setup": "Halftone, dot-screen depth, gig-poster rawness",
+      "material_texture": "Paper grain",
+      "render_quality": "Handmade, cool, squeegee texture, indie-venue vibe",
+      "spatial_distortion": "Distressed",
+      "atmosphere": "Loud, graphic, live-music energy, crowd-volume presence",
+      "key_features": "Overprint, registration misalignment, distressed edge",
+      "creative_brief": "Ink layers build in registration rough enough to feel the human hand behind the squeegee, each color pass a different instrument in the visual band. Typography shouts band names like a setlist, letterforms as loud as amplifiers. This is live music translated into flat color, where the poster vibrates at the frequency of the venue."
+    }
   },
   {
-    id: 'SP04-038',
-    name: 'National Park Poster (WPA)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'photo, detailed',
-    style: {
-      aesthetic: 'Screenprint landscape',
-      form_and_line: 'None',
-      color_palette: 'Separated layers, earth-toned screen spectrum, scenic flat-tint',
-      lighting_setup: 'Flat gradient, dawn-dusk banding, atmospheric layering',
-      material_texture: 'Screen mesh',
-      render_quality: 'Vintage travel, bold, nostalgia-invoking vistas, WPA monumentality',
-      spatial_distortion: 'Simplified mountains',
-      atmosphere: 'Majestic, graphic, road-trip reverie, democratic grandeur',
-      key_features: 'Serif font, layered silhouette, scenic horizontal banding',
-      creative_brief:
-        'Layered silhouettes of mountains stack like geological promises, each color band a different hour of the wilderness day. Serif type announces destinations with the authority of a national promise. This is landscape translated through the democracy of screenprint, where nature becomes poster and poster becomes monument.',
-    },
+    "id": "SP04-038",
+    "name": "National Park Poster (WPA)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "photo, detailed",
+    "style": {
+      "aesthetic": "Screenprint landscape",
+      "form_and_line": "None",
+      "color_palette": "Separated layers, earth-toned screen spectrum, scenic flat-tint",
+      "lighting_setup": "Flat gradient, dawn-dusk banding, atmospheric layering",
+      "material_texture": "Screen mesh",
+      "render_quality": "Vintage travel, bold, nostalgia-invoking vistas, WPA monumentality",
+      "spatial_distortion": "Simplified mountains",
+      "atmosphere": "Majestic, graphic, road-trip reverie, democratic grandeur",
+      "key_features": "Serif font, layered silhouette, scenic horizontal banding",
+      "creative_brief": "Layered silhouettes of mountains stack like geological promises, each color band a different hour of the wilderness day. Serif type announces destinations with the authority of a national promise. This is landscape translated through the democracy of screenprint, where nature becomes poster and poster becomes monument."
+    }
   },
   {
-    id: 'SP04-034',
-    name: 'Psychedelic Poster (60s)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'straight, readable',
-    style: {
-      aesthetic: 'Fillmore poster',
-      form_and_line: 'Warped text',
-      color_palette: 'Neon clash, acid-rock spectrum, vibrating complementaries',
-      lighting_setup: 'Flat, color-field vibration, optical tension',
-      material_texture: 'Screenprint',
-      render_quality: 'Trippy, retro, visual-overload euphoria, summer-of-love energy',
-      spatial_distortion: 'Liquid',
-      atmosphere: 'Groovy, music, hallucinogenic bliss, counterculture festival',
-      key_features: 'Illegible font, warped lettering, swirling typography',
-      creative_brief:
-        'Typography warps and melts like wax in a lava lamp, letters losing their duty to meaning in favor of pure optical vibration. Neon colors clash with the confidence of a Fillmore bill, each hue vibrating against its complement. This is visual experience as altered state, where reading becomes seeing and seeing becomes feeling.',
-    },
+    "id": "SP04-034",
+    "name": "Psychedelic Poster (60s)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "straight, readable",
+    "style": {
+      "aesthetic": "Fillmore poster",
+      "form_and_line": "Warped text",
+      "color_palette": "Neon clash, acid-rock spectrum, vibrating complementaries",
+      "lighting_setup": "Flat, color-field vibration, optical tension",
+      "material_texture": "Screenprint",
+      "render_quality": "Trippy, retro, visual-overload euphoria, summer-of-love energy",
+      "spatial_distortion": "Liquid",
+      "atmosphere": "Groovy, music, hallucinogenic bliss, counterculture festival",
+      "key_features": "Illegible font, warped lettering, swirling typography",
+      "creative_brief": "Typography warps and melts like wax in a lava lamp, letters losing their duty to meaning in favor of pure optical vibration. Neon colors clash with the confidence of a Fillmore bill, each hue vibrating against its complement. This is visual experience as altered state, where reading becomes seeing and seeing becomes feeling."
+    }
   },
   {
-    id: 'SP04-036',
-    name: 'Collage Art (Dada)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'seamless, painted',
-    style: {
-      aesthetic: 'Cut and paste',
-      form_and_line: 'Scissor cuts',
-      color_palette: 'Vintage photo, sepia-toned fragment, found-image palette',
-      lighting_setup: 'Mismatched, multiple light sources, irreverent continuity',
-      material_texture: 'Halftone',
-      render_quality: 'Punk, surreal, anti-aesthetic rebellion, found-object poetry',
-      spatial_distortion: 'Hybrid objects',
-      atmosphere: 'Rebellious, weird, dada absurdism, anti-art provocation',
-      key_features: 'Paper edges, scissor-cut seams, photo-fragment juxtaposition',
-      creative_brief:
-        'Scissor edges interrupt photographic reality, grafting disparate moments into impossible hybrid forms. Sepia photographs and halftone fragments share space without permission, their juxtaposition the entire argument. This is creation as rupture, where meaning emerges from the collision of things that were never meant to meet.',
-    },
+    "id": "SP04-036",
+    "name": "Collage Art (Dada)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "seamless, painted",
+    "style": {
+      "aesthetic": "Cut and paste",
+      "form_and_line": "Scissor cuts",
+      "color_palette": "Vintage photo, sepia-toned fragment, found-image palette",
+      "lighting_setup": "Mismatched, multiple light sources, irreverent continuity",
+      "material_texture": "Halftone",
+      "render_quality": "Punk, surreal, anti-aesthetic rebellion, found-object poetry",
+      "spatial_distortion": "Hybrid objects",
+      "atmosphere": "Rebellious, weird, dada absurdism, anti-art provocation",
+      "key_features": "Paper edges, scissor-cut seams, photo-fragment juxtaposition",
+      "creative_brief": "Scissor edges interrupt photographic reality, grafting disparate moments into impossible hybrid forms. Sepia photographs and halftone fragments share space without permission, their juxtaposition the entire argument. This is creation as rupture, where meaning emerges from the collision of things that were never meant to meet."
+    }
   },
   {
-    id: 'SP04-035',
-    name: 'Minimalist Vector',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'detail, texture',
-    style: {
-      aesthetic: 'Corporate Memphis',
-      form_and_line: 'None',
-      color_palette: 'Flat solid, corporate-memphis palette, bright geometric',
-      lighting_setup: 'None, shadowless, pure vector illumination',
-      material_texture: 'Vector',
-      render_quality: 'Tech startup, clean, pitch-deck polish, generic friendliness',
-      spatial_distortion: 'Big limbs',
-      atmosphere: 'Friendly, corporate, inclusive blandness, diverse stock-photo cheer',
-      key_features: 'Flat, oversized limbs, blobby shapes',
-      creative_brief:
-        'Oversized limbs and blobby shapes populate a world rendered in the cheerful flatness of startup optimism. Colors sit side by side without shadow or depth, committed to accessibility over atmosphere. This is the visual language of inclusion as aesthetic, where every figure is a friendly abstraction of the human condition.',
-    },
+    "id": "SP04-035",
+    "name": "Minimalist Vector",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "detail, texture",
+    "style": {
+      "aesthetic": "Corporate Memphis",
+      "form_and_line": "None",
+      "color_palette": "Flat solid, corporate-memphis palette, bright geometric",
+      "lighting_setup": "None, shadowless, pure vector illumination",
+      "material_texture": "Vector",
+      "render_quality": "Tech startup, clean, pitch-deck polish, generic friendliness",
+      "spatial_distortion": "Big limbs",
+      "atmosphere": "Friendly, corporate, inclusive blandness, diverse stock-photo cheer",
+      "key_features": "Flat, oversized limbs, blobby shapes",
+      "creative_brief": "Oversized limbs and blobby shapes populate a world rendered in the cheerful flatness of startup optimism. Colors sit side by side without shadow or depth, committed to accessibility over atmosphere. This is the visual language of inclusion as aesthetic, where every figure is a friendly abstraction of the human condition."
+    }
   },
   {
-    id: 'SP04-053',
-    name: 'Storyboard Sketch',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'color, detailed',
-    style: {
-      aesthetic: 'Movie frame sketch',
-      form_and_line: 'Loose pencil/marker',
-      color_palette: 'Greyscale + Arrows, monochrome clarity, directional red accent',
-      lighting_setup: 'Value study, light-plan sweep, shot-design intent',
-      material_texture: 'Paper',
-      render_quality: 'Cinematic flow, directorial shorthand, shot-language clarity',
-      spatial_distortion: 'Motion blur lines',
-      atmosphere: 'Action, plan, pre-vis intensity, production hustle',
-      key_features: 'Frame border, camera arrows, shot description',
-      creative_brief:
-        'Arrows trace camera movement through rough frames, each sketch a placeholder for a moment that will be shot and lit and performed. Loose lines capture blocking before performance, intention before execution. This is cinema before it becomes cinema, the raw napkin-sketch of a scene that will eventually fill a screen.',
-    },
+    "id": "SP04-053",
+    "name": "Storyboard Sketch",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "color, detailed",
+    "style": {
+      "aesthetic": "Movie frame sketch",
+      "form_and_line": "Loose pencil/marker",
+      "color_palette": "Greyscale + Arrows, monochrome clarity, directional red accent",
+      "lighting_setup": "Value study, light-plan sweep, shot-design intent",
+      "material_texture": "Paper",
+      "render_quality": "Cinematic flow, directorial shorthand, shot-language clarity",
+      "spatial_distortion": "Motion blur lines",
+      "atmosphere": "Action, plan, pre-vis intensity, production hustle",
+      "key_features": "Frame border, camera arrows, shot description",
+      "creative_brief": "Arrows trace camera movement through rough frames, each sketch a placeholder for a moment that will be shot and lit and performed. Loose lines capture blocking before performance, intention before execution. This is cinema before it becomes cinema, the raw napkin-sketch of a scene that will eventually fill a screen."
+    }
   },
   {
-    id: 'SP04-047',
-    name: 'Matte Painting',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'cartoon, sketch',
-    style: {
-      aesthetic: 'Movie background',
-      form_and_line: 'None',
-      color_palette: 'Photorealistic, natural-world spectrum, cinematic grade',
-      lighting_setup: 'Cinematic, God-light rays, atmospheric perspective',
-      material_texture: 'Photo bash',
-      render_quality: 'Epic, detailed, world-building scale, invisible compositing',
-      spatial_distortion: 'None',
-      atmosphere: 'Vast, invisible, suspension-of-disbelief, epic silence',
-      key_features: 'Horizon line, depth layering, atmospheric haze',
-      creative_brief:
-        'Vastness asserts itself through atmospheric perspective, mountains dissolving into the distance like a promise receding. Light behaves with the physics of cinema, sculpting depth from haze and horizon. This is the background as protagonist, where the world itself carries the emotional weight of the story.',
-    },
+    "id": "SP04-047",
+    "name": "Matte Painting",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "cartoon, sketch",
+    "style": {
+      "aesthetic": "Movie background",
+      "form_and_line": "None",
+      "color_palette": "Photorealistic, natural-world spectrum, cinematic grade",
+      "lighting_setup": "Cinematic, God-light rays, atmospheric perspective",
+      "material_texture": "Photo bash",
+      "render_quality": "Epic, detailed, world-building scale, invisible compositing",
+      "spatial_distortion": "None",
+      "atmosphere": "Vast, invisible, suspension-of-disbelief, epic silence",
+      "key_features": "Horizon line, depth layering, atmospheric haze",
+      "creative_brief": "Vastness asserts itself through atmospheric perspective, mountains dissolving into the distance like a promise receding. Light behaves with the physics of cinema, sculpting depth from haze and horizon. This is the background as protagonist, where the world itself carries the emotional weight of the story."
+    }
   },
   {
-    id: 'SP04-082',
-    name: 'Photobash Paintover Iteration',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'clean, pure illustration, single medium, hand-painted only, smooth, finished, final, one-pass, unlayered',
-    style: {
-      aesthetic:
-        'Photography-based concept art, real-photo fragments assembled into new designs, painted-over photo plates, texture-library construction, matte-painting technique applied to character and vehicle design, mixed-media production speed, reality-sampling creative workflow',
-      form_and_line:
-        'Photo-edge cutout contours, painted-over photo transitions, adjustment-layer blend, lasso-masked compositing, mixed-resolution edge collision',
-      color_palette:
-        'Photo-base color gamut, unified grade adjustment layer, paint-stroke color harmony over photo, realistic-then-stylized color bridge',
-      lighting_setup:
-        'Photo-real light base, painted light adjustment, mixed-source illumination, environment-lighting matched across elements',
-      material_texture:
-        'Photographic surface detail, painted-over brush strokes, resolution-mismatch texture patches, clone-stamp repair marks',
-      render_quality:
-        'Photobash concept art, production-speed visualization, mixed-media concept, fast-iteration professional workflow',
-      spatial_distortion:
-        'Assembled from disparate photo perspectives, unified through paint-over, forced-perspective composite, scale-blended elements',
-      atmosphere:
-        'Industrial, practical, production-ready, fast-turnaround creative, resourceful problem-solving',
-      key_features:
-        'Visible photo seams, paint-over strokes, resolution-mismatch patches, texture-library compositing, adjustment-layer grading',
-      creative_brief:
-        "Photographs fracture and reassemble under the painter's hand, reality sampled and remixed into something that never existed. Brushstrokes bridge the seams between found fragments, paint and pixel negotiating a shared surface. This is the collage of the production artist, where the deadline demands the image arrive before the imagination finishes its work.",
-    },
+    "id": "SP04-082",
+    "name": "Photobash Paintover Iteration",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "clean, pure illustration, single medium, hand-painted only, smooth, finished, final, one-pass, unlayered",
+    "style": {
+      "aesthetic": "Photography-based concept art, real-photo fragments assembled into new designs, painted-over photo plates, texture-library construction, matte-painting technique applied to character and vehicle design, mixed-media production speed, reality-sampling creative workflow",
+      "form_and_line": "Photo-edge cutout contours, painted-over photo transitions, adjustment-layer blend, lasso-masked compositing, mixed-resolution edge collision",
+      "color_palette": "Photo-base color gamut, unified grade adjustment layer, paint-stroke color harmony over photo, realistic-then-stylized color bridge",
+      "lighting_setup": "Photo-real light base, painted light adjustment, mixed-source illumination, environment-lighting matched across elements",
+      "material_texture": "Photographic surface detail, painted-over brush strokes, resolution-mismatch texture patches, clone-stamp repair marks",
+      "render_quality": "Photobash concept art, production-speed visualization, mixed-media concept, fast-iteration professional workflow",
+      "spatial_distortion": "Assembled from disparate photo perspectives, unified through paint-over, forced-perspective composite, scale-blended elements",
+      "atmosphere": "Industrial, practical, production-ready, fast-turnaround creative, resourceful problem-solving",
+      "key_features": "Visible photo seams, paint-over strokes, resolution-mismatch patches, texture-library compositing, adjustment-layer grading",
+      "creative_brief": "Photographs fracture and reassemble under the painter's hand, reality sampled and remixed into something that never existed. Brushstrokes bridge the seams between found fragments, paint and pixel negotiating a shared surface. This is the collage of the production artist, where the deadline demands the image arrive before the imagination finishes its work."
+    }
   },
   {
-    id: 'SP04-055',
-    name: 'Keyframe Art',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'sketchy, rough',
-    style: {
-      aesthetic: 'Cinematic moment',
-      form_and_line: 'None',
-      color_palette: 'Color graded, cinematic LUT, emotional-tone timing',
-      lighting_setup: 'Cinematic, framed intent, motivated light source',
-      material_texture: 'Painted',
-      render_quality: 'Movie still, emotional, screen-grab gravity, story-beat resonance',
-      spatial_distortion: 'None',
-      atmosphere: 'Story beat, narrative tension, turning-point weight',
-      key_features: '16:9 ratio, letterbox framing, cinematic composition',
-      creative_brief:
-        "Light and composition converge on the single frame that defines the entire story, the moment where everything changes. Color temperature carries emotion, shadow direction carries threat, every visual element serving the narrative pivot. This is the story's heartbeat rendered as still image, the visual climax that earns every frame before and after.",
-    },
+    "id": "SP04-055",
+    "name": "Keyframe Art",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "sketchy, rough",
+    "style": {
+      "aesthetic": "Cinematic moment",
+      "form_and_line": "None",
+      "color_palette": "Color graded, cinematic LUT, emotional-tone timing",
+      "lighting_setup": "Cinematic, framed intent, motivated light source",
+      "material_texture": "Painted",
+      "render_quality": "Movie still, emotional, screen-grab gravity, story-beat resonance",
+      "spatial_distortion": "None",
+      "atmosphere": "Story beat, narrative tension, turning-point weight",
+      "key_features": "16:9 ratio, letterbox framing, cinematic composition",
+      "creative_brief": "Light and composition converge on the single frame that defines the entire story, the moment where everything changes. Color temperature carries emotion, shadow direction carries threat, every visual element serving the narrative pivot. This is the story's heartbeat rendered as still image, the visual climax that earns every frame before and after."
+    }
   },
   {
-    id: 'SP04-083',
-    name: 'Loose Gesture Energy Sketch',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'tight, clean, finished, rendered, precise, controlled, refined, polished, perfect, measured, careful',
-    style: {
-      aesthetic:
-        '30-second gesture drawing, pure motion capture, dynamic sweeping lines, figure-in-action energy, life-drawing studio urgency, Glen Keane animation roughs, flowing kinetic scribbles, pose-before-anatomy priority, capturing the moment not the form',
-      form_and_line:
-        'Sweeping gesture arcs, repeated motion-search lines, scribble-density for mass, fast single-stroke confidence, no erasing no correction',
-      color_palette:
-        'Single graphite tone, ochre conte crayon, charcoal black, newsprint buff background, no color distraction from motion',
-      lighting_setup:
-        'Implied through scribble density and line pressure, no rendered lighting, value-from-urgency technique',
-      material_texture:
-        'Rough newsprint tooth, graphite smudge trail, chalk-dust particulate, gesture-line velocity texture',
-      render_quality:
-        'Figure-drawing studio sketch, motion-capture aesthetic, animation-rough beauty, kinetic-energy rendering',
-      spatial_distortion:
-        'Action-line curvature, foreshortened gesture exaggeration, motion-trail afterimages, dynamic-tension pose compression',
-      atmosphere: 'Urgent, alive, fleeting-capture, creative-flow state, pure-motion celebration',
-      key_features:
-        'Sweeping gesture arcs, multiple search-lines, scribble-density value, no correction marks, pure-motion energy',
-      creative_brief:
-        'Lines chase motion across the page with the urgency of a stopwatch, capturing the gesture before the pose can settle. The figure exists in pure velocity, anatomy subordinate to action, form emerging from flow. This is the life-drawing studio at its most alive, where the model moves faster than the eye and the hand learns to trust itself.',
-    },
+    "id": "SP04-083",
+    "name": "Loose Gesture Energy Sketch",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "tight, clean, finished, rendered, precise, controlled, refined, polished, perfect, measured, careful",
+    "style": {
+      "aesthetic": "30-second gesture drawing, pure motion capture, dynamic sweeping lines, figure-in-action energy, life-drawing studio urgency, Glen Keane animation roughs, flowing kinetic scribbles, pose-before-anatomy priority, capturing the moment not the form",
+      "form_and_line": "Sweeping gesture arcs, repeated motion-search lines, scribble-density for mass, fast single-stroke confidence, no erasing no correction",
+      "color_palette": "Single graphite tone, ochre conte crayon, charcoal black, newsprint buff background, no color distraction from motion",
+      "lighting_setup": "Implied through scribble density and line pressure, no rendered lighting, value-from-urgency technique",
+      "material_texture": "Rough newsprint tooth, graphite smudge trail, chalk-dust particulate, gesture-line velocity texture",
+      "render_quality": "Figure-drawing studio sketch, motion-capture aesthetic, animation-rough beauty, kinetic-energy rendering",
+      "spatial_distortion": "Action-line curvature, foreshortened gesture exaggeration, motion-trail afterimages, dynamic-tension pose compression",
+      "atmosphere": "Urgent, alive, fleeting-capture, creative-flow state, pure-motion celebration",
+      "key_features": "Sweeping gesture arcs, multiple search-lines, scribble-density value, no correction marks, pure-motion energy",
+      "creative_brief": "Lines chase motion across the page with the urgency of a stopwatch, capturing the gesture before the pose can settle. The figure exists in pure velocity, anatomy subordinate to action, form emerging from flow. This is the life-drawing studio at its most alive, where the model moves faster than the eye and the hand learns to trust itself."
+    }
   },
   {
-    id: 'SP04-056',
-    name: 'Photobash',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'painted, cartoon',
-    style: {
-      aesthetic: 'Mixed photos',
-      form_and_line: 'None',
-      color_palette: 'Unified grading, photobash-comped, multi-source harmony',
-      lighting_setup: 'Realistic, ambient-match, multi-photo consistency',
-      material_texture: 'Photo',
-      render_quality: 'Realistic, fast, iterative pitching, concept-development speed',
-      spatial_distortion: 'Mismatched resolution',
-      atmosphere: 'Realism, concept, speculative design, art-department urgency',
-      key_features: 'Texture clash, photo-fragment seam, value-unify grading',
-      creative_brief:
-        "Photographs crash into paint with productive violence, real-world fragments surrendering to the artist's intervention. Textures from a thousand sources assemble into a single coherent fiction. This is concept art at production speed, where the available becomes the imagined through the alchemy of overlay.",
-    },
+    "id": "SP04-056",
+    "name": "Photobash",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "painted, cartoon",
+    "style": {
+      "aesthetic": "Mixed photos",
+      "form_and_line": "None",
+      "color_palette": "Unified grading, photobash-comped, multi-source harmony",
+      "lighting_setup": "Realistic, ambient-match, multi-photo consistency",
+      "material_texture": "Photo",
+      "render_quality": "Realistic, fast, iterative pitching, concept-development speed",
+      "spatial_distortion": "Mismatched resolution",
+      "atmosphere": "Realism, concept, speculative design, art-department urgency",
+      "key_features": "Texture clash, photo-fragment seam, value-unify grading",
+      "creative_brief": "Photographs crash into paint with productive violence, real-world fragments surrendering to the artist's intervention. Textures from a thousand sources assemble into a single coherent fiction. This is concept art at production speed, where the available becomes the imagined through the alchemy of overlay."
+    }
   },
   {
-    id: 'SP04-046',
-    name: 'Speedpaint',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'detailed, polished',
-    style: {
-      aesthetic: 'Quick digital painting',
-      form_and_line: 'None',
-      color_palette: 'Mood lighting, atmospheric bleed, tonal-mood spectrum',
-      lighting_setup: 'Atmospheric, ambient depth, mood-first illumination',
-      material_texture: 'Brush strokes',
-      render_quality: 'Concept, loose, thumbnail energy, big-idea confidence',
-      spatial_distortion: 'Undefined details',
-      atmosphere: 'Energetic, rough, ideation velocity, creative flow',
-      key_features: 'Composition focus, gestural strokes, value-block emphasis',
-      creative_brief:
-        'Brushes move at the speed of imagination, shapes emerging from broad strokes before detail has permission to arrive. Values establish form in three tones, mood before mechanics, atmosphere before anatomy. This is the idea at the moment of its birth, still wet and breathing and uncommitted to any final form.',
-    },
+    "id": "SP04-046",
+    "name": "Speedpaint",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "detailed, polished",
+    "style": {
+      "aesthetic": "Quick digital painting",
+      "form_and_line": "None",
+      "color_palette": "Mood lighting, atmospheric bleed, tonal-mood spectrum",
+      "lighting_setup": "Atmospheric, ambient depth, mood-first illumination",
+      "material_texture": "Brush strokes",
+      "render_quality": "Concept, loose, thumbnail energy, big-idea confidence",
+      "spatial_distortion": "Undefined details",
+      "atmosphere": "Energetic, rough, ideation velocity, creative flow",
+      "key_features": "Composition focus, gestural strokes, value-block emphasis",
+      "creative_brief": "Brushes move at the speed of imagination, shapes emerging from broad strokes before detail has permission to arrive. Values establish form in three tones, mood before mechanics, atmosphere before anatomy. This is the idea at the moment of its birth, still wet and breathing and uncommitted to any final form."
+    }
   },
   {
-    id: 'SP04-049',
-    name: 'Environment Concept',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'character focus',
-    style: {
-      aesthetic: 'Game level art',
-      form_and_line: 'Perspective grid',
-      color_palette: 'Atmospheric, mood-grade spectrum, location-feel depth',
-      lighting_setup: 'Key light, dramatic spotlight, environmental storytelling',
-      material_texture: 'Painted',
-      render_quality: 'Immersive, vast, sense-of-place conviction, environmental narrative',
-      spatial_distortion: 'None',
-      atmosphere: 'Adventure, place, exploration wonder, threshold excitement',
-      key_features: 'Scale figure, perspective grid, environmental storytelling',
-      creative_brief:
-        'Atmosphere builds the world before architecture arrives, light establishing the emotional climate of a place that does not yet exist. Scale hints through doorway silhouettes and distant mountain passes, inviting exploration. This is the threshold of adventure, where the environment itself extends a hand toward the player.',
-    },
+    "id": "SP04-049",
+    "name": "Environment Concept",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "character focus",
+    "style": {
+      "aesthetic": "Game level art",
+      "form_and_line": "Perspective grid",
+      "color_palette": "Atmospheric, mood-grade spectrum, location-feel depth",
+      "lighting_setup": "Key light, dramatic spotlight, environmental storytelling",
+      "material_texture": "Painted",
+      "render_quality": "Immersive, vast, sense-of-place conviction, environmental narrative",
+      "spatial_distortion": "None",
+      "atmosphere": "Adventure, place, exploration wonder, threshold excitement",
+      "key_features": "Scale figure, perspective grid, environmental storytelling",
+      "creative_brief": "Atmosphere builds the world before architecture arrives, light establishing the emotional climate of a place that does not yet exist. Scale hints through doorway silhouettes and distant mountain passes, inviting exploration. This is the threshold of adventure, where the environment itself extends a hand toward the player."
+    }
   },
   {
-    id: 'SP04-058',
-    name: 'Low Poly Concept',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'smooth, high res',
-    style: {
-      aesthetic: 'Early 3D game',
-      form_and_line: 'None',
-      color_palette: 'Flat shading, vertex-colored, low-spec palette',
-      lighting_setup: 'Vertex light, gouraud shading, no real-time lighting',
-      material_texture: 'Pixelated',
-      render_quality: 'PS1 early 3D console retro, jagged nostalgia, pioneer polygons',
-      spatial_distortion: 'Blocky',
-      atmosphere: 'Nostalgic, simple, CD-ROM childhood, fifth-gen warmth',
-      key_features: 'Polygons, unfiltered textures, affine warping',
-      creative_brief:
-        "Triangles declare form through economy, every polygon a deliberate allocation of limited rendering budget. Flat-shaded faces catch light at the simplest possible angle, nostalgia emerging from the gap between intention and limitation. This is the aesthetic of early 3D, where the hardware's constraints became the art direction.",
-    },
+    "id": "SP04-058",
+    "name": "Low Poly Concept",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "smooth, high res",
+    "style": {
+      "aesthetic": "Early 3D game",
+      "form_and_line": "None",
+      "color_palette": "Flat shading, vertex-colored, low-spec palette",
+      "lighting_setup": "Vertex light, gouraud shading, no real-time lighting",
+      "material_texture": "Pixelated",
+      "render_quality": "PS1 early 3D console retro, jagged nostalgia, pioneer polygons",
+      "spatial_distortion": "Blocky",
+      "atmosphere": "Nostalgic, simple, CD-ROM childhood, fifth-gen warmth",
+      "key_features": "Polygons, unfiltered textures, affine warping",
+      "creative_brief": "Triangles declare form through economy, every polygon a deliberate allocation of limited rendering budget. Flat-shaded faces catch light at the simplest possible angle, nostalgia emerging from the gap between intention and limitation. This is the aesthetic of early 3D, where the hardware's constraints became the art direction."
+    }
   },
   {
-    id: 'SP04-090',
-    name: 'Prop Variant Design Sheet',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'one version, single design, no comparison, no annotation, unclear, vague, floating, contextless, unlabeled',
-    style: {
-      aesthetic:
-        'Prop-variant exploration sheet, iterative-object design comparison, material-breakout detail circles, scale-reference silhouette, RPG-item tier progression, common-to-legendary upgrade path, functional-part callouts, grip-ergonomic note, designer-decision documentation',
-      form_and_line:
-        'Clean design-drawing contours, variant-comparison alignment, material-callout leader lines, ergonomic-arc construction, orthographic side-view precision',
-      color_palette:
-        'Material-specific colors, wood-handle brown, steel-blade grey, bronze-fitting gold, leather-wrap dark, gem-inset jewel tones, tier-progression color coding',
-      lighting_setup:
-        'Consistent studio light for comparison, metallic-specular highlight, subsurface on translucent gems, matte-diffuse on wood',
-      material_texture:
-        'Wood-grain variation, metal-brushed directional, leather-stitching detail, gem-facet refraction, rust-wear edge patina',
-      render_quality:
-        'Prop-design variant sheet, iterative-object exploration, material-breakdown rendering, production-reference specification',
-      spatial_distortion:
-        'Orthographic side-view alignment, variant-row comparison, detail-circle magnification, scale-reference figure, exploded-part disassembly',
-      atmosphere:
-        'Methodical, iterative, design-problem-solving, craftsperson precision, production-clarity',
-      key_features:
-        'Variant-row comparison, material-callout circles, scale-reference silhouette, tier-progression layout, exploded-part views',
-      creative_brief:
-        "Variants array themselves in evolutionary sequence, the rusted common weapon ascending through material upgrades toward legendary radiance. Each iteration tells the story of the player's journey through the object itself. This is design as progression system, where the sword that saved you at level one becomes the artifact that defines you at level ninety.",
-    },
+    "id": "SP04-090",
+    "name": "Prop Variant Design Sheet",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "one version, single design, no comparison, no annotation, unclear, vague, floating, contextless, unlabeled",
+    "style": {
+      "aesthetic": "Prop-variant exploration sheet, iterative-object design comparison, material-breakout detail circles, scale-reference silhouette, RPG-item tier progression, common-to-legendary upgrade path, functional-part callouts, grip-ergonomic note, designer-decision documentation",
+      "form_and_line": "Clean design-drawing contours, variant-comparison alignment, material-callout leader lines, ergonomic-arc construction, orthographic side-view precision",
+      "color_palette": "Material-specific colors, wood-handle brown, steel-blade grey, bronze-fitting gold, leather-wrap dark, gem-inset jewel tones, tier-progression color coding",
+      "lighting_setup": "Consistent studio light for comparison, metallic-specular highlight, subsurface on translucent gems, matte-diffuse on wood",
+      "material_texture": "Wood-grain variation, metal-brushed directional, leather-stitching detail, gem-facet refraction, rust-wear edge patina",
+      "render_quality": "Prop-design variant sheet, iterative-object exploration, material-breakdown rendering, production-reference specification",
+      "spatial_distortion": "Orthographic side-view alignment, variant-row comparison, detail-circle magnification, scale-reference figure, exploded-part disassembly",
+      "atmosphere": "Methodical, iterative, design-problem-solving, craftsperson precision, production-clarity",
+      "key_features": "Variant-row comparison, material-callout circles, scale-reference silhouette, tier-progression layout, exploded-part views",
+      "creative_brief": "Variants array themselves in evolutionary sequence, the rusted common weapon ascending through material upgrades toward legendary radiance. Each iteration tells the story of the player's journey through the object itself. This is design as progression system, where the sword that saved you at level one becomes the artifact that defines you at level ninety."
+    }
   },
   {
-    id: 'SP04-092',
-    name: 'Costume Design Exploration Board',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric',
-    style: {
-      aesthetic:
-        'Costume-design-concept-board, fabric-swatch-pinned-to-corkboard, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images-alongside-new-designs, trim-and-notion-samples, dye-lot-variation-chips, fashion-studio- wall energy, character-costume-evolution-across-film-timeline, designer-notes-and-question-marks-in-margins',
-      form_and_line:
-        'Fashion-croquis-figure-templates, silhouette-exploration-variations, swatch-square-grids, annotation-leader-lines-from-fabric-to-design, design-line-clean-contours',
-      color_palette:
-        'Fabric-swatch-spectrum, historical-dye-reference, costume-character-color-ways, silk-satin-cotton-wool-leather colors, dye-lot-variation, trim-metallic-accents, button-and-hook-color-comparison',
-      lighting_setup:
-        'Designer-studio-daylight, task-lamp-on-pinned-swatches, fabric-sheen-in-light, consistent-lighting-for-comparison',
-      material_texture:
-        'Fabric-switch-square-textures, silk-sheen, wool-tweed, cotton-weave, leather-grain, lace-pattern-pinned, velvet-nap, corkboard-texture-behind',
-      render_quality:
-        'Costume-design-board aesthetic, fashion-concept-rendering, character-wardrobe-exploration, historical-costume-research, film-production costume-art',
-      spatial_distortion:
-        'Corkboard-pin-arrangement, swatch-grid-layout, silhouette-row-comparison, reference-image-cluster, annotation-space, design-evolution-progression',
-      atmosphere:
-        'Creative, historical-research, character-through-clothing, costume-department-workshop, fitting-room-energy, fabric-store-inspiration',
-      key_features:
-        'Fabric-swatch-squares-pinned, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images, corkboard-pin-texture, annotation-leader-lines, notion-sample-accents',
-      creative_brief:
-        'Fabric swatches pin to corkboard beside historical references and contemporary sketches, the costume evolving across time periods and dye lots in a single visual conversation. Color-way strips run horizontally through the composition like a timeline of aesthetic decisions. This is character revealed through textile, where what the hero wears contains their entire biography.',
-    },
+    "id": "SP04-092",
+    "name": "Costume Design Exploration Board",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric",
+    "style": {
+      "aesthetic": "Costume-design-concept-board, fabric-swatch-pinned-to-corkboard, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images-alongside-new-designs, trim-and-notion-samples, dye-lot-variation-chips, fashion-studio- wall energy, character-costume-evolution-across-film-timeline, designer-notes-and-question-marks-in-margins",
+      "form_and_line": "Fashion-croquis-figure-templates, silhouette-exploration-variations, swatch-square-grids, annotation-leader-lines-from-fabric-to-design, design-line-clean-contours",
+      "color_palette": "Fabric-swatch-spectrum, historical-dye-reference, costume-character-color-ways, silk-satin-cotton-wool-leather colors, dye-lot-variation, trim-metallic-accents, button-and-hook-color-comparison",
+      "lighting_setup": "Designer-studio-daylight, task-lamp-on-pinned-swatches, fabric-sheen-in-light, consistent-lighting-for-comparison",
+      "material_texture": "Fabric-switch-square-textures, silk-sheen, wool-tweed, cotton-weave, leather-grain, lace-pattern-pinned, velvet-nap, corkboard-texture-behind",
+      "render_quality": "Costume-design-board aesthetic, fashion-concept-rendering, character-wardrobe-exploration, historical-costume-research, film-production costume-art",
+      "spatial_distortion": "Corkboard-pin-arrangement, swatch-grid-layout, silhouette-row-comparison, reference-image-cluster, annotation-space, design-evolution-progression",
+      "atmosphere": "Creative, historical-research, character-through-clothing, costume-department-workshop, fitting-room-energy, fabric-store-inspiration",
+      "key_features": "Fabric-swatch-squares-pinned, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images, corkboard-pin-texture, annotation-leader-lines, notion-sample-accents",
+      "creative_brief": "Fabric swatches pin to corkboard beside historical references and contemporary sketches, the costume evolving across time periods and dye lots in a single visual conversation. Color-way strips run horizontally through the composition like a timeline of aesthetic decisions. This is character revealed through textile, where what the hero wears contains their entire biography."
+    }
   },
   {
-    id: 'SP04-051',
-    name: 'Creature Design',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'human, cute',
-    style: {
-      aesthetic: 'Monster concept',
-      form_and_line: 'Anatomical',
-      color_palette: 'Skin tones, organic chromatics, creature-flesh spectrum',
-      lighting_setup: 'Rim light, silhouette reveal, ambient dread',
-      material_texture: 'Scales, fur',
-      render_quality: 'Scary, biological, anatomical conviction, apex-predator presence',
-      spatial_distortion: 'Extra limbs',
-      atmosphere: 'Dangerous, alive, predatory stillness, ecological tension',
-      key_features: 'Silhouette, anatomical breakdown, adaptive feature',
-      creative_brief:
-        "Anatomy follows the logic of habitat, every fang and carapace an answer to an evolutionary question the viewer hasn't thought to ask. The creature holds its ground with the stillness of perfect adaptation, muscles coiled under hide designed by survival. This is biology as imagination, where every monster is a thesis about its environment.",
-    },
+    "id": "SP04-051",
+    "name": "Creature Design",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "human, cute",
+    "style": {
+      "aesthetic": "Monster concept",
+      "form_and_line": "Anatomical",
+      "color_palette": "Skin tones, organic chromatics, creature-flesh spectrum",
+      "lighting_setup": "Rim light, silhouette reveal, ambient dread",
+      "material_texture": "Scales, fur",
+      "render_quality": "Scary, biological, anatomical conviction, apex-predator presence",
+      "spatial_distortion": "Extra limbs",
+      "atmosphere": "Dangerous, alive, predatory stillness, ecological tension",
+      "key_features": "Silhouette, anatomical breakdown, adaptive feature",
+      "creative_brief": "Anatomy follows the logic of habitat, every fang and carapace an answer to an evolutionary question the viewer hasn't thought to ask. The creature holds its ground with the stillness of perfect adaptation, muscles coiled under hide designed by survival. This is biology as imagination, where every monster is a thesis about its environment."
+    }
   },
   {
-    id: 'SP04-095',
-    name: 'Foliage Design Kit',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'bare, dead, no plants, desert, empty, urban, concrete, interior, no vegetation, sterile',
-    style: {
-      aesthetic:
-        'Environment-design-foliage-kit, tree-variant-shape-library, bush-silhouette-language-exploration, grass-clump-variety-sheet, flowering-plant-seasonal-variations, palm-fern-conifer-deciduous-shape-comparison, stylized-vs-naturalistic-foliage-spectrum, game-environment-vegetation-pass, plant-silhouette-readability-at-distance, Miyazaki-Ghibli-forest-spirit-inspiration',
-      form_and_line:
-        'Organic-foliage-contour-variations, frond-unfurling-lines, pine-needle-cluster-contours, vine-tendril-curves, tree-branching-patterns, flower-petal-arrangement',
-      color_palette:
-        'Photosynthesis-green-spectrum, spring-bright-to-autumn-rust, flower-bloom-color-accents, bark-brown-variety, chlorophyll-through-sunlight, shadow-green-cool-to-sun-green-warm',
-      lighting_setup:
-        'Dappled-sun-through-canopy, rim-light-on-leaf-edges, subsurface-scattering-on-thin-leaves, shadow-cool-under-foliage, atmospheric-haze-at-forest-depth',
-      material_texture:
-        'Leaf-surface-gloss-matte, bark-roughness, fern-frond-fractal, moss-velvet, pine-needle- cluster, petal-soft-ephemeral, vine-tendril-tension',
-      render_quality:
-        'Foliage-design-kit aesthetic, environment-vegetation-reference, botanical-variety-beauty, game-level-art plant-language, nature-as-design-system',
-      spatial_distortion:
-        'Tree-silhouette-library-grid, scale-from-bush-to-canopy, ground-cover-to-overstory-layering, atmospheric-depth-vegetation-fade',
-      atmosphere:
-        'Lush, alive, botanical-wonder, forest-bathing calm, Miyazaki-nature-reverence, oxygen-rich-creativity, garden-planning-joy',
-      key_features:
-        'Tree-shape-variant-library, bush-silhouette-comparison, grass-clump-variety-sheet, seasonal-color-variation, plant-silhouette-readability, Miyazaki-forest-inspiration, canopy-to-ground-cover-layering',
-      creative_brief:
-        'Trees, bushes, ground cover, and vines array themselves in a botanical alphabet of shape language, each silhouette a different letter in the vocabulary of environment design. Stylized forms sit beside naturalistic studies, the spectrum from Ghibli enchantment to field-guide accuracy. This is the forest as design system, where every leaf cluster serves the readability of the game world.',
-    },
+    "id": "SP04-095",
+    "name": "Foliage Design Kit",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "bare, dead, no plants, desert, empty, urban, concrete, interior, no vegetation, sterile",
+    "style": {
+      "aesthetic": "Environment-design-foliage-kit, tree-variant-shape-library, bush-silhouette-language-exploration, grass-clump-variety-sheet, flowering-plant-seasonal-variations, palm-fern-conifer-deciduous-shape-comparison, stylized-vs-naturalistic-foliage-spectrum, game-environment-vegetation-pass, plant-silhouette-readability-at-distance, Miyazaki-Ghibli-forest-spirit-inspiration",
+      "form_and_line": "Organic-foliage-contour-variations, frond-unfurling-lines, pine-needle-cluster-contours, vine-tendril-curves, tree-branching-patterns, flower-petal-arrangement",
+      "color_palette": "Photosynthesis-green-spectrum, spring-bright-to-autumn-rust, flower-bloom-color-accents, bark-brown-variety, chlorophyll-through-sunlight, shadow-green-cool-to-sun-green-warm",
+      "lighting_setup": "Dappled-sun-through-canopy, rim-light-on-leaf-edges, subsurface-scattering-on-thin-leaves, shadow-cool-under-foliage, atmospheric-haze-at-forest-depth",
+      "material_texture": "Leaf-surface-gloss-matte, bark-roughness, fern-frond-fractal, moss-velvet, pine-needle- cluster, petal-soft-ephemeral, vine-tendril-tension",
+      "render_quality": "Foliage-design-kit aesthetic, environment-vegetation-reference, botanical-variety-beauty, game-level-art plant-language, nature-as-design-system",
+      "spatial_distortion": "Tree-silhouette-library-grid, scale-from-bush-to-canopy, ground-cover-to-overstory-layering, atmospheric-depth-vegetation-fade",
+      "atmosphere": "Lush, alive, botanical-wonder, forest-bathing calm, Miyazaki-nature-reverence, oxygen-rich-creativity, garden-planning-joy",
+      "key_features": "Tree-shape-variant-library, bush-silhouette-comparison, grass-clump-variety-sheet, seasonal-color-variation, plant-silhouette-readability, Miyazaki-forest-inspiration, canopy-to-ground-cover-layering",
+      "creative_brief": "Trees, bushes, ground cover, and vines array themselves in a botanical alphabet of shape language, each silhouette a different letter in the vocabulary of environment design. Stylized forms sit beside naturalistic studies, the spectrum from Ghibli enchantment to field-guide accuracy. This is the forest as design system, where every leaf cluster serves the readability of the game world."
+    }
   },
   {
-    id: 'SP04-054',
-    name: 'Prop Design',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'background',
-    style: {
-      aesthetic: 'Item focus',
-      form_and_line: 'Clean',
-      color_palette: 'Material render, PBR-reference, asset-library spectrum',
-      lighting_setup: 'Studio, product-isolation light, neutral-pedestal',
-      material_texture: 'Wear and tear',
-      render_quality: 'RPG item, detailed, asset-sheet polish, loot-table charm',
-      spatial_distortion: 'None',
-      atmosphere: 'Valuable, useful, item-card significance, inventory worth',
-      key_features: 'Isolated, orthographic view, material breakdown',
-      creative_brief:
-        "The object floats in neutral space, every detail rendered with the attention an artifact deserves. Materials declare themselves: weathered leather, polished metal, carved wood, each surface a different chapter of the item's imagined history. This is the prop as treasure, isolated and elevated by the spotlight of design focus.",
-    },
+    "id": "SP04-054",
+    "name": "Prop Design",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "background",
+    "style": {
+      "aesthetic": "Item focus",
+      "form_and_line": "Clean",
+      "color_palette": "Material render, PBR-reference, asset-library spectrum",
+      "lighting_setup": "Studio, product-isolation light, neutral-pedestal",
+      "material_texture": "Wear and tear",
+      "render_quality": "RPG item, detailed, asset-sheet polish, loot-table charm",
+      "spatial_distortion": "None",
+      "atmosphere": "Valuable, useful, item-card significance, inventory worth",
+      "key_features": "Isolated, orthographic view, material breakdown",
+      "creative_brief": "The object floats in neutral space, every detail rendered with the attention an artifact deserves. Materials declare themselves: weathered leather, polished metal, carved wood, each surface a different chapter of the item's imagined history. This is the prop as treasure, isolated and elevated by the spotlight of design focus."
+    }
   },
   {
-    id: 'SP04-081',
-    name: 'Thumbnail Silhouette Exploration',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version',
-    style: {
-      aesthetic:
-        'Five-minute value thumbnail, pure silhouette blocking, 20 variations of same subject, composition-first exploration, black-shape character designs, negative-space discovery, Feng Zhu rapid iteration, no detail only shape, greyscale priority, design-before-detail philosophy, filling pages with possibility',
-      form_and_line:
-        'Rough value-blocking, chunky silhouette contours, no internal detail lines, pure-shape communication, lasso-tool fill shapes',
-      color_palette:
-        '3-value greyscale, black silhouette, mid-gray background fill, white negative space, no color distraction',
-      lighting_setup:
-        'Value-only light separation, rim-light silhouette reading, no rendering just mass indication',
-      material_texture:
-        'Brush-block roughness, lasso-selection sharp edges, digital-canvas tooth, speed-painting surface, no refinement',
-      render_quality:
-        'Rapid-iteration concept thumbnail, design-exploration aesthetic, ideation-first rendering, no polish allowed',
-      spatial_distortion:
-        'Silhouette variation across grid, proportion exploration, mass-tweaking between iterations, shape-language comparison',
-      atmosphere:
-        'Energetic, exploratory, possibility-rich, pre-decision excitement, creative-sprint focus',
-      key_features:
-        'Greyscale-only silhouettes, multiple-iteration grid, composition thumbnails, value-grouping clarity, shape-language experimentation',
-      creative_brief:
-        'Black shapes populate the canvas like a conversation in pure form, twenty variations on a single subject each arguing for a different personality. Negative space carves character from darkness, the silhouette doing all the storytelling before detail ever arrives. This is design at its most foundational, where the shadow of the thing must convince before the thing itself appears.',
-    },
+    "id": "SP04-081",
+    "name": "Thumbnail Silhouette Exploration",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version",
+    "style": {
+      "aesthetic": "Five-minute value thumbnail, pure silhouette blocking, 20 variations of same subject, composition-first exploration, black-shape character designs, negative-space discovery, Feng Zhu rapid iteration, no detail only shape, greyscale priority, design-before-detail philosophy, filling pages with possibility",
+      "form_and_line": "Rough value-blocking, chunky silhouette contours, no internal detail lines, pure-shape communication, lasso-tool fill shapes",
+      "color_palette": "3-value greyscale, black silhouette, mid-gray background fill, white negative space, no color distraction",
+      "lighting_setup": "Value-only light separation, rim-light silhouette reading, no rendering just mass indication",
+      "material_texture": "Brush-block roughness, lasso-selection sharp edges, digital-canvas tooth, speed-painting surface, no refinement",
+      "render_quality": "Rapid-iteration concept thumbnail, design-exploration aesthetic, ideation-first rendering, no polish allowed",
+      "spatial_distortion": "Silhouette variation across grid, proportion exploration, mass-tweaking between iterations, shape-language comparison",
+      "atmosphere": "Energetic, exploratory, possibility-rich, pre-decision excitement, creative-sprint focus",
+      "key_features": "Greyscale-only silhouettes, multiple-iteration grid, composition thumbnails, value-grouping clarity, shape-language experimentation",
+      "creative_brief": "Black shapes populate the canvas like a conversation in pure form, twenty variations on a single subject each arguing for a different personality. Negative space carves character from darkness, the silhouette doing all the storytelling before detail ever arrives. This is design at its most foundational, where the shadow of the thing must convince before the thing itself appears."
+    }
   },
   {
-    id: 'SP04-098',
-    name: 'World Map Concept',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'accurate, satellite, photo, modern map, GPS, clean, clinical, boring, flat, atlas, political borders',
-    style: {
-      aesthetic:
-        'Fantasy-world-map-concept-art, Tolkien-Middle-Earth-map-heritage, sea-monster-and-ship-illustrations-in-ocean-margins, compass-rose-and-rhumb-lines, mountain-range-profile-illustrations, stylized-forest-cluster-icons, ancient-cartography-energy, here-be-dragons-text-annotation, parchment-map-with-burnt-edges, fantasy-novel-endpaper-map-aesthetic',
-      form_and_line:
-        'Parchment-border-outline, coastline-wavy-contour, river-meandering-path, mountain-range-hatching, forest-icon-cluster, compass-rose- geometric, rhumb-line-radiating-grid, cartouche-decoration',
-      color_palette:
-        'Parchment-cream-aged, sepia-brown-ink, ocean-margin-teal, forest-icon-green, mountain-hatch-grey, compass-rose-gold, burnt-edge-charcoal-black, decorative-border vermillion',
-      lighting_setup:
-        'Flat-top-down-cartographic-lighting, soft-aged-parchment-ambient, shadow-under-compass-rose-for-depth-bump, burnt-edge-shadow',
-      material_texture:
-        'Aged-parchment-paper, burnt-edge-char, ink-bleed-into-fibers, wax-seal-residue, tea-stain-weathering, fold-crease-wear, leather-binding- edge',
-      render_quality:
-        'Fantasy-cartography aesthetic, Tolkien-map-heritage, novel-endpaper-beauty, world-building-cartographic-art, here-be-dragons charm',
-      spatial_distortion:
-        'Top-down-cartographic-projection, ocean-margin-illustration-boundary, compass-overlay, scale-league-bar, rhumb-line-navigation-grid',
-      atmosphere:
-        'Adventurous, mysterious, unexplored-territory-wonder, ancient-knowledge, quest-planning, map-unfolding-anticipation, world-immersion',
-      key_features:
-        'Sea-monster-ocean-illustrations, compass-rose, rhumb-lines, mountain-range-profile-drawings, stylized-forest-icons, parchment-aged-texture, burnt-edges, cartouche-title-decoration, Tolkien-map-heritage',
-      creative_brief:
-        'Coastlines sprawl across parchment in the confident uncertainty of pre-modern cartography, sea monsters breaching in empty ocean margins where knowledge ends and imagination begins. Mountain ranges stack in profile along continental spines while compass roses radiate the promise of navigation. This is the world rendered as invitation, where every blank space is an argument for adventure.',
-    },
+    "id": "SP04-098",
+    "name": "World Map Concept",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "accurate, satellite, photo, modern map, GPS, clean, clinical, boring, flat, atlas, political borders",
+    "style": {
+      "aesthetic": "Fantasy-world-map-concept-art, Tolkien-Middle-Earth-map-heritage, sea-monster-and-ship-illustrations-in-ocean-margins, compass-rose-and-rhumb-lines, mountain-range-profile-illustrations, stylized-forest-cluster-icons, ancient-cartography-energy, here-be-dragons-text-annotation, parchment-map-with-burnt-edges, fantasy-novel-endpaper-map-aesthetic",
+      "form_and_line": "Parchment-border-outline, coastline-wavy-contour, river-meandering-path, mountain-range-hatching, forest-icon-cluster, compass-rose- geometric, rhumb-line-radiating-grid, cartouche-decoration",
+      "color_palette": "Parchment-cream-aged, sepia-brown-ink, ocean-margin-teal, forest-icon-green, mountain-hatch-grey, compass-rose-gold, burnt-edge-charcoal-black, decorative-border vermillion",
+      "lighting_setup": "Flat-top-down-cartographic-lighting, soft-aged-parchment-ambient, shadow-under-compass-rose-for-depth-bump, burnt-edge-shadow",
+      "material_texture": "Aged-parchment-paper, burnt-edge-char, ink-bleed-into-fibers, wax-seal-residue, tea-stain-weathering, fold-crease-wear, leather-binding- edge",
+      "render_quality": "Fantasy-cartography aesthetic, Tolkien-map-heritage, novel-endpaper-beauty, world-building-cartographic-art, here-be-dragons charm",
+      "spatial_distortion": "Top-down-cartographic-projection, ocean-margin-illustration-boundary, compass-overlay, scale-league-bar, rhumb-line-navigation-grid",
+      "atmosphere": "Adventurous, mysterious, unexplored-territory-wonder, ancient-knowledge, quest-planning, map-unfolding-anticipation, world-immersion",
+      "key_features": "Sea-monster-ocean-illustrations, compass-rose, rhumb-lines, mountain-range-profile-drawings, stylized-forest-icons, parchment-aged-texture, burnt-edges, cartouche-title-decoration, Tolkien-map-heritage",
+      "creative_brief": "Coastlines sprawl across parchment in the confident uncertainty of pre-modern cartography, sea monsters breaching in empty ocean margins where knowledge ends and imagination begins. Mountain ranges stack in profile along continental spines while compass roses radiate the promise of navigation. This is the world rendered as invitation, where every blank space is an argument for adventure."
+    }
   },
   {
-    id: 'SP04-088',
-    name: 'Rough Environment Pass',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'detailed, finished, character-focused, close-up, tight brushwork, polished, small scale, intimate',
-    style: {
-      aesthetic:
-        'Broad-stroke environment blockout, atmospheric-perspective depth establishing, big-shape landscape composition, focal-point lighting direction, thumbnail-scale world-building, macro-brush confidence, Feng Zhu environment speedpaint, James Gurney atmosphere study',
-      form_and_line:
-        'Large brush blocking, soft-contour atmospheric shapes, no detail lines, edge-dissolving into fog, compositional-flow curves',
-      color_palette:
-        'Atmospheric-perspective gradients, warm-light cool-shadow separation, fog-desaturated distance, foreground-saturated depth cues',
-      lighting_setup:
-        'Key-light direction establishing, atmospheric shadow depth, light-ray volumetric indication, backlit-rim atmospheric separation',
-      material_texture:
-        'Big-brush stroke surface, atmospheric-softness texture, fog-volume gradation, cloud-layer softness, distance-lost detail texture',
-      render_quality:
-        'Rough environment pass, atmospheric-blockout beauty, large-scale composition study, world-building speedpaint',
-      spatial_distortion:
-        'Atmospheric-perspective depth compression, big-foreground small-background scale contrast, fog-layer recession planes',
-      atmosphere:
-        'Vast, atmospheric, world-scale, exploratory, pre-production wonder, frontier-imagination',
-      key_features:
-        'Atmospheric-perspective depth, big-brush shape blocking, fog-layer recession, key-light direction, thumbnail-scale composition',
-      creative_brief:
-        'Atmosphere arrives before detail, broad brushes establishing the emotional weather of an entire world in a few decisive strokes. Depth stacks in atmospheric bands, the foreground a suggestion and the distance a promise. This is the threshold moment of world-building, where the environment exists as feeling before it exists as place.',
-    },
+    "id": "SP04-088",
+    "name": "Rough Environment Pass",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "detailed, finished, character-focused, close-up, tight brushwork, polished, small scale, intimate",
+    "style": {
+      "aesthetic": "Broad-stroke environment blockout, atmospheric-perspective depth establishing, big-shape landscape composition, focal-point lighting direction, thumbnail-scale world-building, macro-brush confidence, Feng Zhu environment speedpaint, James Gurney atmosphere study",
+      "form_and_line": "Large brush blocking, soft-contour atmospheric shapes, no detail lines, edge-dissolving into fog, compositional-flow curves",
+      "color_palette": "Atmospheric-perspective gradients, warm-light cool-shadow separation, fog-desaturated distance, foreground-saturated depth cues",
+      "lighting_setup": "Key-light direction establishing, atmospheric shadow depth, light-ray volumetric indication, backlit-rim atmospheric separation",
+      "material_texture": "Big-brush stroke surface, atmospheric-softness texture, fog-volume gradation, cloud-layer softness, distance-lost detail texture",
+      "render_quality": "Rough environment pass, atmospheric-blockout beauty, large-scale composition study, world-building speedpaint",
+      "spatial_distortion": "Atmospheric-perspective depth compression, big-foreground small-background scale contrast, fog-layer recession planes",
+      "atmosphere": "Vast, atmospheric, world-scale, exploratory, pre-production wonder, frontier-imagination",
+      "key_features": "Atmospheric-perspective depth, big-brush shape blocking, fog-layer recession, key-light direction, thumbnail-scale composition",
+      "creative_brief": "Atmosphere arrives before detail, broad brushes establishing the emotional weather of an entire world in a few decisive strokes. Depth stacks in atmospheric bands, the foreground a suggestion and the distance a promise. This is the threshold moment of world-building, where the environment exists as feeling before it exists as place."
+    }
   },
   {
-    id: 'SP04-057',
-    name: 'Blueprint Schematic',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: '3d, shaded',
-    style: {
-      aesthetic: 'Technical diagram',
-      form_and_line: 'White lines',
-      color_palette: 'Blue background, white-line cyan, blueprint nostalgia',
-      lighting_setup: 'None, diagrammatic, machine-drawing clarity',
-      material_texture: 'Grid paper',
-      render_quality: 'Engineering, precise, shop-floor accuracy, technical authority',
-      spatial_distortion: 'Exploded view',
-      atmosphere: 'Smart, plan, drafting-table focus, patent-office gravity',
-      key_features: 'Measurements, dimension lines, grid sub-base',
-      creative_brief:
-        'White lines trace purpose across blue fields, every measurement and callout a contract between designer and maker. Orthographic projections obey the tyranny of exact scale, views aligned in the sacred geometry of the drafting table. This is the object before it becomes object, existing first in the pure space of technical intention.',
-    },
+    "id": "SP04-057",
+    "name": "Blueprint Schematic",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "3d, shaded",
+    "style": {
+      "aesthetic": "Technical diagram",
+      "form_and_line": "White lines",
+      "color_palette": "Blue background, white-line cyan, blueprint nostalgia",
+      "lighting_setup": "None, diagrammatic, machine-drawing clarity",
+      "material_texture": "Grid paper",
+      "render_quality": "Engineering, precise, shop-floor accuracy, technical authority",
+      "spatial_distortion": "Exploded view",
+      "atmosphere": "Smart, plan, drafting-table focus, patent-office gravity",
+      "key_features": "Measurements, dimension lines, grid sub-base",
+      "creative_brief": "White lines trace purpose across blue fields, every measurement and callout a contract between designer and maker. Orthographic projections obey the tyranny of exact scale, views aligned in the sacred geometry of the drafting table. This is the object before it becomes object, existing first in the pure space of technical intention."
+    }
   },
   {
-    id: 'SP04-087',
-    name: 'Silhouette Iteration Sheet',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'detailed, rendered, colored, one design, final, finished, internal detail, texture, single silhouette',
-    style: {
-      aesthetic:
-        '20-silhouette iteration sheet, pure-shape design exploration, negative-space composition study, character-shape-language comparison, bulky-vs-sleek-vs-spiky-vs-round silhouette range, creature-design through silhouette only, Kienan Lafferty shape-exploration, form-before-detail discipline',
-      form_and_line:
-        'Pure black fill shapes, no interior lines, varied contour exploration, chunky-vs-spindly silhouette spectrum, shape-contrast across iterations',
-      color_palette:
-        'Black silhouettes on white, occasional mid-grey for secondary-read shapes, no color whatsoever',
-      lighting_setup:
-        'None, pure silhouette reading against white background, no lighting information',
-      material_texture:
-        'Flat-black fill, sharp-silhouette edges, no surface indication, pure two-dimensional shape reading',
-      render_quality:
-        'Silhouette-iteration concept sheet, pure-shape design study, form-first rendering, industrial-design methodology',
-      spatial_distortion:
-        'Grid-arranged silhouettes for comparison, scale-normalized across iterations, shape-language spectrum positioning',
-      atmosphere:
-        'Methodical, exploratory, design-rigor, form-obsession, pre-detail discipline, professional-iteration mindset',
-      key_features:
-        'Pure-black silhouettes on white, 20-variation grid, no internal detail, shape-language spectrum, scale-normalized comparison',
-      creative_brief:
-        'Twenty shapes stand in silent competition, each silhouette arguing for the soul of the character through pure outline alone. Bulky squares face sleek triangles face spiky stars, the language of shape doing all the narrative work. This is design as elimination tournament, where the winner is chosen before the face is drawn.',
-    },
+    "id": "SP04-087",
+    "name": "Silhouette Iteration Sheet",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "detailed, rendered, colored, one design, final, finished, internal detail, texture, single silhouette",
+    "style": {
+      "aesthetic": "20-silhouette iteration sheet, pure-shape design exploration, negative-space composition study, character-shape-language comparison, bulky-vs-sleek-vs-spiky-vs-round silhouette range, creature-design through silhouette only, Kienan Lafferty shape-exploration, form-before-detail discipline",
+      "form_and_line": "Pure black fill shapes, no interior lines, varied contour exploration, chunky-vs-spindly silhouette spectrum, shape-contrast across iterations",
+      "color_palette": "Black silhouettes on white, occasional mid-grey for secondary-read shapes, no color whatsoever",
+      "lighting_setup": "None, pure silhouette reading against white background, no lighting information",
+      "material_texture": "Flat-black fill, sharp-silhouette edges, no surface indication, pure two-dimensional shape reading",
+      "render_quality": "Silhouette-iteration concept sheet, pure-shape design study, form-first rendering, industrial-design methodology",
+      "spatial_distortion": "Grid-arranged silhouettes for comparison, scale-normalized across iterations, shape-language spectrum positioning",
+      "atmosphere": "Methodical, exploratory, design-rigor, form-obsession, pre-detail discipline, professional-iteration mindset",
+      "key_features": "Pure-black silhouettes on white, 20-variation grid, no internal detail, shape-language spectrum, scale-normalized comparison",
+      "creative_brief": "Twenty shapes stand in silent competition, each silhouette arguing for the soul of the character through pure outline alone. Bulky squares face sleek triangles face spiky stars, the language of shape doing all the narrative work. This is design as elimination tournament, where the winner is chosen before the face is drawn."
+    }
   },
   {
-    id: 'SP04-093',
-    name: 'Lighting Scenario Pass',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'single lighting, one time of day, consistent mood, no comparison, flat, character focused, subject prominent',
-    style: {
-      aesthetic:
-        'Same-scene-eight-different-lighting-pass, dawn-morning-noon-afternoon-dusk-night-midnight-storm variations, pure-atmosphere-comparison-grid, Pixar-lighting-color-script philosophy, environment-emotional-impact-through-light-only, golden-hour-vs-overcast-vs-neon-night, shadow-direction-and-temperature study, lighting-as-storytelling-tool, cinematography-reference-sheet',
-      form_and_line:
-        'Same-composition-repeated-with-atmospheric-variation, consistent-scene-geometry-under-different-light, atmospheric-edge-dissolve, shadow-direction-arc-across-variations',
-      color_palette:
-        'Dawn-cool-lavender, morning-gold-warm, noon-neutral-white, afternoon-amber-warm, dusk-magenta-purple, night-blue-desaturation, midnight- deep-indigo, storm-green-grey-menace',
-      lighting_setup:
-        'Eight-different-key-light-directions, shadow-temperature-warm-to-cool, volumetric-fog-varying-density, time-of-day-color-temperature-spectrum',
-      material_texture:
-        'Atmospheric-density-variation, fog-soft-to-clear, cloud-diffusion-amount, shadow-sharpness-variation, light-ray- visibility-morning-vs-noon',
-      render_quality:
-        'Lighting-scenario-study, color-script-beauty, atmospheric-comparison-rendering, film-lighting-reference, Pixar-philosophy-color-script',
-      spatial_distortion:
-        'Repeated-scene-composition-grid, lighting- angle-rotation-across-scenes, atmospheric-perspective-depth-varying, shadow-length-arc-across-day',
-      atmosphere:
-        'Moody, time-passage, emotional-light-shift, atmospheric-storytelling, dawn-hope-to-midnight-mystery, lighting-as-emotion-language',
-      key_features:
-        'Same-scene-different lighting, eight-variation-grid, dawn-to-midnight progression, atmospheric-density comparison, shadow-direction-arc, color-temperature-spectrum, Pixar-color-script-philosophy',
-      creative_brief:
-        "Eight lighting conditions cascade across the identical scene in a grid of emotional weather, dawn's golden hope giving way to midnight's cobalt dread. Shadow direction shifts the architectural mood from welcoming to threatening without moving a single wall. This is storytelling through photons, where the same room becomes eight different emotions under eight different skies.",
-    },
+    "id": "SP04-093",
+    "name": "Lighting Scenario Pass",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "single lighting, one time of day, consistent mood, no comparison, flat, character focused, subject prominent",
+    "style": {
+      "aesthetic": "Same-scene-eight-different-lighting-pass, dawn-morning-noon-afternoon-dusk-night-midnight-storm variations, pure-atmosphere-comparison-grid, Pixar-lighting-color-script philosophy, environment-emotional-impact-through-light-only, golden-hour-vs-overcast-vs-neon-night, shadow-direction-and-temperature study, lighting-as-storytelling-tool, cinematography-reference-sheet",
+      "form_and_line": "Same-composition-repeated-with-atmospheric-variation, consistent-scene-geometry-under-different-light, atmospheric-edge-dissolve, shadow-direction-arc-across-variations",
+      "color_palette": "Dawn-cool-lavender, morning-gold-warm, noon-neutral-white, afternoon-amber-warm, dusk-magenta-purple, night-blue-desaturation, midnight- deep-indigo, storm-green-grey-menace",
+      "lighting_setup": "Eight-different-key-light-directions, shadow-temperature-warm-to-cool, volumetric-fog-varying-density, time-of-day-color-temperature-spectrum",
+      "material_texture": "Atmospheric-density-variation, fog-soft-to-clear, cloud-diffusion-amount, shadow-sharpness-variation, light-ray- visibility-morning-vs-noon",
+      "render_quality": "Lighting-scenario-study, color-script-beauty, atmospheric-comparison-rendering, film-lighting-reference, Pixar-philosophy-color-script",
+      "spatial_distortion": "Repeated-scene-composition-grid, lighting- angle-rotation-across-scenes, atmospheric-perspective-depth-varying, shadow-length-arc-across-day",
+      "atmosphere": "Moody, time-passage, emotional-light-shift, atmospheric-storytelling, dawn-hope-to-midnight-mystery, lighting-as-emotion-language",
+      "key_features": "Same-scene-different lighting, eight-variation-grid, dawn-to-midnight progression, atmospheric-density comparison, shadow-direction-arc, color-temperature-spectrum, Pixar-color-script-philosophy",
+      "creative_brief": "Eight lighting conditions cascade across the identical scene in a grid of emotional weather, dawn's golden hope giving way to midnight's cobalt dread. Shadow direction shifts the architectural mood from welcoming to threatening without moving a single wall. This is storytelling through photons, where the same room becomes eight different emotions under eight different skies."
+    }
   },
   {
-    id: 'SP04-059',
-    name: 'UI/HUD Design',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'organic, messy',
-    style: {
-      aesthetic: 'Game interface',
-      form_and_line: 'Thin tech lines',
-      color_palette: 'Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast',
-      lighting_setup: 'Glow, emissive interface, screen-space radiance',
-      material_texture: 'Screen',
-      render_quality: 'Futuristic, functional, diegetic elegance, heads-up immersion',
-      spatial_distortion: 'None',
-      atmosphere: 'Tech, info, augmented awareness, mission-ops focus',
-      key_features: 'Floating, thin rule-lines, data readout',
-      creative_brief:
-        'Information floats above the world in clean vectors, health bars and ammo counters forming a translucent layer between player and peril. Diegetic elements embed themselves in the game world, screens within screens, data made physical. This is the interface as architecture, where function wears the skin of fiction.',
-    },
+    "id": "SP04-059",
+    "name": "UI/HUD Design",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "organic, messy",
+    "style": {
+      "aesthetic": "Game interface",
+      "form_and_line": "Thin tech lines",
+      "color_palette": "Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast",
+      "lighting_setup": "Glow, emissive interface, screen-space radiance",
+      "material_texture": "Screen",
+      "render_quality": "Futuristic, functional, diegetic elegance, heads-up immersion",
+      "spatial_distortion": "None",
+      "atmosphere": "Tech, info, augmented awareness, mission-ops focus",
+      "key_features": "Floating, thin rule-lines, data readout",
+      "creative_brief": "Information floats above the world in clean vectors, health bars and ammo counters forming a translucent layer between player and peril. Diegetic elements embed themselves in the game world, screens within screens, data made physical. This is the interface as architecture, where function wears the skin of fiction."
+    }
   },
   {
-    id: 'SP04-085',
-    name: 'Mood Color Script Pass',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight composition',
-    style: {
-      aesthetic:
-        'Color-script concept art, lighting-first storytelling, atmospheric-color temperature study, film-color progression across time-of-day, Pixar color-script methodology, environment-emotion mapping, no characters just light, pure atmosphere painting',
-      form_and_line:
-        'Soft atmospheric shape blocking, edge-dissolving fog, value-first massing, light-beams as composition vectors',
-      color_palette:
-        'Scene-color mapping, dawn-cool to noon-warm progression, twilight-magenta transition, night-blue desaturation, emotional-color temperature shifts',
-      lighting_setup:
-        'Time-of-day light study, atmospheric scattering, volumetric light-beam emphasis, shadow-temperature exploration',
-      material_texture:
-        'Atmospheric density gradients, fog-volume softness, light-particle dust motes, cloud-layer texture, haze-depth texture',
-      render_quality:
-        'Color-script painting, atmospheric-study beauty, lighting-first environment art, emotional-color rendering',
-      spatial_distortion:
-        'Depth-through-atmosphere, color-temperature spatial separation, fog-layered recession, light-defined space creation',
-      atmosphere:
-        'Evocative, emotional, lighting-first, atmospheric storytelling, temporal-transition poetry',
-      key_features:
-        'Color-temperature mapping, time-of-day light progression, atmospheric-perspective depth, fog-layer separation, no character subjects',
-      creative_brief:
-        'Light travels across the same scene in eight emotional temperatures, dawn hope mutating into midnight mystery through the slow graduation of color. Atmosphere carries the narrative arc before any character enters the frame. This is environment as emotion, where the lighting pass contains the entire emotional script in its gradient.',
-    },
+    "id": "SP04-085",
+    "name": "Mood Color Script Pass",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight composition",
+    "style": {
+      "aesthetic": "Color-script concept art, lighting-first storytelling, atmospheric-color temperature study, film-color progression across time-of-day, Pixar color-script methodology, environment-emotion mapping, no characters just light, pure atmosphere painting",
+      "form_and_line": "Soft atmospheric shape blocking, edge-dissolving fog, value-first massing, light-beams as composition vectors",
+      "color_palette": "Scene-color mapping, dawn-cool to noon-warm progression, twilight-magenta transition, night-blue desaturation, emotional-color temperature shifts",
+      "lighting_setup": "Time-of-day light study, atmospheric scattering, volumetric light-beam emphasis, shadow-temperature exploration",
+      "material_texture": "Atmospheric density gradients, fog-volume softness, light-particle dust motes, cloud-layer texture, haze-depth texture",
+      "render_quality": "Color-script painting, atmospheric-study beauty, lighting-first environment art, emotional-color rendering",
+      "spatial_distortion": "Depth-through-atmosphere, color-temperature spatial separation, fog-layered recession, light-defined space creation",
+      "atmosphere": "Evocative, emotional, lighting-first, atmospheric storytelling, temporal-transition poetry",
+      "key_features": "Color-temperature mapping, time-of-day light progression, atmospheric-perspective depth, fog-layer separation, no character subjects",
+      "creative_brief": "Light travels across the same scene in eight emotional temperatures, dawn hope mutating into midnight mystery through the slow graduation of color. Atmosphere carries the narrative arc before any character enters the frame. This is environment as emotion, where the lighting pass contains the entire emotional script in its gradient."
+    }
   },
   {
-    id: 'SP04-052',
-    name: 'Isometric Game Art',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'perspective, flat',
-    style: {
-      aesthetic: 'SimCity simulation-city view, top-down utopia, ordered delight',
-      form_and_line: 'Clean pixel/vector',
-      color_palette: 'Bright, clear, toy-saturated palette, readable contrast',
-      lighting_setup: 'Top-left sun, uniform isometric light, tile-friendly illumination',
-      material_texture: 'Tileable',
-      render_quality: 'Game asset, cute, simulator clarity, God-game charm',
-      spatial_distortion: 'No perspective',
-      atmosphere: 'Orderly, toy, city-building serenity, top-down satisfaction',
-      key_features: '30 degree angle, tile grid, isometric block',
-      creative_brief:
-        'The world tilts precisely thirty degrees, every building and road rendered from the god-angle of absolute order. Tiny figures populate the isometric grid like pieces in a board game designed by an urban planner with a sense of humor. This is the city as toy, where control is total and the view never changes but always satisfies.',
-    },
+    "id": "SP04-052",
+    "name": "Isometric Game Art",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "perspective, flat",
+    "style": {
+      "aesthetic": "SimCity simulation-city view, top-down utopia, ordered delight",
+      "form_and_line": "Clean pixel/vector",
+      "color_palette": "Bright, clear, toy-saturated palette, readable contrast",
+      "lighting_setup": "Top-left sun, uniform isometric light, tile-friendly illumination",
+      "material_texture": "Tileable",
+      "render_quality": "Game asset, cute, simulator clarity, God-game charm",
+      "spatial_distortion": "No perspective",
+      "atmosphere": "Orderly, toy, city-building serenity, top-down satisfaction",
+      "key_features": "30 degree angle, tile grid, isometric block",
+      "creative_brief": "The world tilts precisely thirty degrees, every building and road rendered from the god-angle of absolute order. Tiny figures populate the isometric grid like pieces in a board game designed by an urban planner with a sense of humor. This is the city as toy, where control is total and the view never changes but always satisfies."
+    }
   },
   {
-    id: 'SP04-086',
-    name: 'Callout Detail Sheet',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled',
-    style: {
-      aesthetic:
-        'Production callout sheet, front-side-back orthographic views, material-annotation arrows, scale-reference figure, exploded-mechanism detail, construction-line overlays, measurement callouts, 3D-modeler-ready clarity, nothing left to interpretation',
-      form_and_line:
-        'Clean orthographic linework, consistent line weight, mechanical-drawing precision, annotation-leader straightness, dimension-line accuracy',
-      color_palette:
-        'White background, black ink lines, red annotation marks, blue construction lines, grey tone-value fills, no decorative color',
-      lighting_setup:
-        'Flat shadowless studio, even diffuse illumination for shape reading, rim-light separation for overlapping forms, no mood lighting',
-      material_texture:
-        'Neutral white surface, ink-line precision, digital-wireframe overlay option, cross-section hatch-fill, exploded-view part separation',
-      render_quality:
-        'Production callout sheet, 3D-modeler reference, orthographic precision, no-artistic-ambiguity rendering',
-      spatial_distortion:
-        'Orthographic projection, no perspective, front-side-back grid alignment, exploded-part axial separation, cutaway-section views',
-      atmosphere:
-        'Clinical, precise, informational, production-ready, zero-ambiguity communication',
-      key_features:
-        'Front-side-back orthographic views, annotation arrows with text labels, scale-reference figure, exploded-mechanism details, dimension lines',
-      creative_brief:
-        'Arrows point toward detail with the authority of engineering, every annotation a contract between the artist and the modeler who will inherit this drawing. Orthographic views align in sacred geometry, measurements declaring the exact dimensions of imagination. This is the final word before construction begins, where ambiguity dies and certainty takes its first breath.',
-    },
+    "id": "SP04-086",
+    "name": "Callout Detail Sheet",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled",
+    "style": {
+      "aesthetic": "Production callout sheet, front-side-back orthographic views, material-annotation arrows, scale-reference figure, exploded-mechanism detail, construction-line overlays, measurement callouts, 3D-modeler-ready clarity, nothing left to interpretation",
+      "form_and_line": "Clean orthographic linework, consistent line weight, mechanical-drawing precision, annotation-leader straightness, dimension-line accuracy",
+      "color_palette": "White background, black ink lines, red annotation marks, blue construction lines, grey tone-value fills, no decorative color",
+      "lighting_setup": "Flat shadowless studio, even diffuse illumination for shape reading, rim-light separation for overlapping forms, no mood lighting",
+      "material_texture": "Neutral white surface, ink-line precision, digital-wireframe overlay option, cross-section hatch-fill, exploded-view part separation",
+      "render_quality": "Production callout sheet, 3D-modeler reference, orthographic precision, no-artistic-ambiguity rendering",
+      "spatial_distortion": "Orthographic projection, no perspective, front-side-back grid alignment, exploded-part axial separation, cutaway-section views",
+      "atmosphere": "Clinical, precise, informational, production-ready, zero-ambiguity communication",
+      "key_features": "Front-side-back orthographic views, annotation arrows with text labels, scale-reference figure, exploded-mechanism details, dimension lines",
+      "creative_brief": "Arrows point toward detail with the authority of engineering, every annotation a contract between the artist and the modeler who will inherit this drawing. Orthographic views align in sacred geometry, measurements declaring the exact dimensions of imagination. This is the final word before construction begins, where ambiguity dies and certainty takes its first breath."
+    }
   },
   {
-    id: 'SP04-096',
-    name: 'Weapon Tier Progression',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt:
-      'one version, static, no comparison, flat, no materials, unlabeled, single option, no evolution, just final',
-    style: {
-      aesthetic:
-        'RPG-weapon-tier-progression-sheet, rusted-common-to-legendary-glow, same-weapon-eight-ascension-levels, material-evolution-from-cracked-iron-to-celestial-gold, RPG-loot-visual-progression, Monster-Hunter-weapon-tree-design, Diablo-common-to-unique visual arc, game-design-reward-visualization, player-motivation-through-visual-upgrade',
-      form_and_line:
-        'Same-base-silhouette-with-increasing-detail, line-complexity-growing-per-tier, common-item-simple-to-legendary-intricate, ornamentation-progression',
-      color_palette:
-        'Rusted-common-grey, iron-steel-blue, reinforced-silver, enchanted-purple-glow, dragon-bone-ivory, demonic-crimson, celestial-gold-white, divine-rainbow-iridescent, tier-progression-color-story',
-      lighting_setup:
-        'Consistent-studio-lighting-for-comparison, specular-highlight-increasing-on-polished-tiers, glow-effect-on-magical-items, matte-diffuse-on-common-rusted',
-      material_texture:
-        'Rust-pitted-iron, hammered-steel-grain, polished-silver-mirror, dragon-bone-porous-ivory, obsidian-volcanic-glass, celestial-gold-leaf, gem-encrusted-inlay, leather-wrap-grip',
-      render_quality:
-        'Weapon-tier-progression-sheet aesthetic, RPG-game-loot-design, item-evolution-beauty, Diablo-to-Monster-Hunter design language, player-reward visualization art',
-      spatial_distortion:
-        'Horizontal-tier-progression-row, same-view-for-comparison, material-magnification-callout-circles, scale-reference, handle-to-blade-proportions',
-      atmosphere:
-        'Progression, aspiration, hard-earned-reward, game-design-psychology, loot-lust-satisfaction, legendary-achievement',
-      key_features:
-        'Eight-tier-progression-row, material-evolution-from-common-to-legendary, glow-ramping-per-tier, consistent-view-for-comparison, material-callout-circles, tier-color-story, RPG-loot-language',
-      creative_brief:
-        'A single weapon transforms across eight tiers of ascension, cracked iron gathering celestial gold with each progressive iteration. Materials evolve along a visible ladder of player achievement, the object itself chronicling the journey. This is the visual economy of reward, where the sword becomes diary and trophy simultaneously.',
-    },
+    "id": "SP04-096",
+    "name": "Weapon Tier Progression",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "one version, static, no comparison, flat, no materials, unlabeled, single option, no evolution, just final",
+    "style": {
+      "aesthetic": "RPG-weapon-tier-progression-sheet, rusted-common-to-legendary-glow, same-weapon-eight-ascension-levels, material-evolution-from-cracked-iron-to-celestial-gold, RPG-loot-visual-progression, Monster-Hunter-weapon-tree-design, Diablo-common-to-unique visual arc, game-design-reward-visualization, player-motivation-through-visual-upgrade",
+      "form_and_line": "Same-base-silhouette-with-increasing-detail, line-complexity-growing-per-tier, common-item-simple-to-legendary-intricate, ornamentation-progression",
+      "color_palette": "Rusted-common-grey, iron-steel-blue, reinforced-silver, enchanted-purple-glow, dragon-bone-ivory, demonic-crimson, celestial-gold-white, divine-rainbow-iridescent, tier-progression-color-story",
+      "lighting_setup": "Consistent-studio-lighting-for-comparison, specular-highlight-increasing-on-polished-tiers, glow-effect-on-magical-items, matte-diffuse-on-common-rusted",
+      "material_texture": "Rust-pitted-iron, hammered-steel-grain, polished-silver-mirror, dragon-bone-porous-ivory, obsidian-volcanic-glass, celestial-gold-leaf, gem-encrusted-inlay, leather-wrap-grip",
+      "render_quality": "Weapon-tier-progression-sheet aesthetic, RPG-game-loot-design, item-evolution-beauty, Diablo-to-Monster-Hunter design language, player-reward visualization art",
+      "spatial_distortion": "Horizontal-tier-progression-row, same-view-for-comparison, material-magnification-callout-circles, scale-reference, handle-to-blade-proportions",
+      "atmosphere": "Progression, aspiration, hard-earned-reward, game-design-psychology, loot-lust-satisfaction, legendary-achievement",
+      "key_features": "Eight-tier-progression-row, material-evolution-from-common-to-legendary, glow-ramping-per-tier, consistent-view-for-comparison, material-callout-circles, tier-color-story, RPG-loot-language",
+      "creative_brief": "A single weapon transforms across eight tiers of ascension, cracked iron gathering celestial gold with each progressive iteration. Materials evolve along a visible ladder of player achievement, the object itself chronicling the journey. This is the visual economy of reward, where the sword becomes diary and trophy simultaneously."
+    }
   },
   {
-    id: 'SP04-078',
-    name: 'Banksy Stencil Art (Street Protest)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'freehand',
-    style: {
-      aesthetic: 'Spray over cutout',
-      form_and_line: 'Bridges',
-      color_palette: 'Black on Wall, single-color guerrilla, high-arrest contrast',
-      lighting_setup: 'Flat, street-light ambient, no-studio rawness',
-      material_texture: 'Overspray',
-      render_quality: 'Political, street, quick-strike impact, message-first clarity',
-      spatial_distortion: 'Simplified levels',
-      atmosphere: 'Rebellious, simple, urban-dissident energy, unauthorized truth',
-      key_features: 'Bridges, cutout connections, stencil registration',
-      creative_brief:
-        'The stencil reduces the world to its silhouette, image emerging from the violent subtraction of spray through negative space. A single color carries the entire message, simplicity sharpening the political edge. This is the image as intervention, where the wall becomes the medium and the message arrives without permission.',
-    },
+    "id": "SP04-078",
+    "name": "Banksy Stencil Art (Street Protest)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "freehand",
+    "style": {
+      "aesthetic": "Spray over cutout",
+      "form_and_line": "Bridges",
+      "color_palette": "Black on Wall, single-color guerrilla, high-arrest contrast",
+      "lighting_setup": "Flat, street-light ambient, no-studio rawness",
+      "material_texture": "Overspray",
+      "render_quality": "Political, street, quick-strike impact, message-first clarity",
+      "spatial_distortion": "Simplified levels",
+      "atmosphere": "Rebellious, simple, urban-dissident energy, unauthorized truth",
+      "key_features": "Bridges, cutout connections, stencil registration",
+      "creative_brief": "The stencil reduces the world to its silhouette, image emerging from the violent subtraction of spray through negative space. A single color carries the entire message, simplicity sharpening the political edge. This is the image as intervention, where the wall becomes the medium and the message arrives without permission."
+    }
   },
   {
-    id: 'SP04-073',
-    name: 'Fountain Pen',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'pencil, dry',
-    style: {
-      aesthetic: 'Elegant writing/drawing',
-      form_and_line: 'Variable width (flex)',
-      color_palette: 'Black ink, nib-responsive, flex-width tonal richness',
-      lighting_setup: 'Pools of ink, liquid-light reflection, wet-pool gloss',
-      material_texture: 'Smooth paper',
-      render_quality: 'Classy, fluid, stationery refinement, handwritten elegance',
-      spatial_distortion: 'None',
-      atmosphere: 'Elegant, old, penmanship tradition, correspondence gravitas',
-      key_features: 'Line variation, flex-nib swell, hairline-to-broad',
-      creative_brief:
-        'Ink flows from the split nib with the generosity of a letter to someone loved, line width varying with pressure and angle. The hand moves with the rhythm of correspondence, every stroke carrying the weight of penmanship tradition. This is writing as drawing and drawing as writing, where every mark is a small act of elegance.',
-    },
+    "id": "SP04-073",
+    "name": "Fountain Pen",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "pencil, dry",
+    "style": {
+      "aesthetic": "Elegant writing/drawing",
+      "form_and_line": "Variable width (flex)",
+      "color_palette": "Black ink, nib-responsive, flex-width tonal richness",
+      "lighting_setup": "Pools of ink, liquid-light reflection, wet-pool gloss",
+      "material_texture": "Smooth paper",
+      "render_quality": "Classy, fluid, stationery refinement, handwritten elegance",
+      "spatial_distortion": "None",
+      "atmosphere": "Elegant, old, penmanship tradition, correspondence gravitas",
+      "key_features": "Line variation, flex-nib swell, hairline-to-broad",
+      "creative_brief": "Ink flows from the split nib with the generosity of a letter to someone loved, line width varying with pressure and angle. The hand moves with the rhythm of correspondence, every stroke carrying the weight of penmanship tradition. This is writing as drawing and drawing as writing, where every mark is a small act of elegance."
+    }
   },
   {
-    id: 'SP04-079',
-    name: 'Calligraphy (Blackletter)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'round, modern',
-    style: {
-      aesthetic: 'Gothic text',
-      form_and_line: 'Broad nib',
-      color_palette: 'Black ink, manuscript gold, parchment heritage',
-      lighting_setup: 'Flat, candle-light allusion, illuminated-manuscript warmth',
-      material_texture: 'Parchment',
-      render_quality: 'Medieval, heavy, scriptorium authority, sacred-text gravity',
-      spatial_distortion: 'Ornate',
-      atmosphere: 'Serious, old, cathedral silence, monastic devotion',
-      key_features: 'Verticals, broad-nib stroke, gothic architecturality',
-      creative_brief:
-        'Blackletter forms march across parchment with the architectural weight of cathedral stone, each stroke a flying buttress of ink. The nib moves through angles sharp enough to cut the silence of the scriptorium. This is text as monument, where the shape of the letter carries as much meaning as the word it spells.',
-    },
+    "id": "SP04-079",
+    "name": "Calligraphy (Blackletter)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "round, modern",
+    "style": {
+      "aesthetic": "Gothic text",
+      "form_and_line": "Broad nib",
+      "color_palette": "Black ink, manuscript gold, parchment heritage",
+      "lighting_setup": "Flat, candle-light allusion, illuminated-manuscript warmth",
+      "material_texture": "Parchment",
+      "render_quality": "Medieval, heavy, scriptorium authority, sacred-text gravity",
+      "spatial_distortion": "Ornate",
+      "atmosphere": "Serious, old, cathedral silence, monastic devotion",
+      "key_features": "Verticals, broad-nib stroke, gothic architecturality",
+      "creative_brief": "Blackletter forms march across parchment with the architectural weight of cathedral stone, each stroke a flying buttress of ink. The nib moves through angles sharp enough to cut the silence of the scriptorium. This is text as monument, where the shape of the letter carries as much meaning as the word it spells."
+    }
   },
   {
-    id: 'SP04-069',
-    name: 'Rubber Stamp',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'perfect, clean',
-    style: {
-      aesthetic: 'Ink stamp',
-      form_and_line: 'Thick, broken',
-      color_palette: 'Red or Black ink, stamp-pad economy, official pigment',
-      lighting_setup: 'Uneven pressure, ink-starvation pattern, hand-stamped irregularity',
-      material_texture: 'Ink starvation',
-      render_quality: 'Office, rough, bureaucrat artefact, rubber-worn character',
-      spatial_distortion: 'Missing parts',
-      atmosphere: 'Official, bureaucratic, desk-clerk authority, document-weight',
-      key_features: 'Border, stamp frame, ink-fade authenticity',
-      creative_brief:
-        'Ink hits paper with the decisive thud of officialdom, each impression a small act of bureaucratic permanence. Text and image share the rubber surface, typography and illustration united by the same decisive gesture. This is the authority of the stamp, where a single impression carries the weight of institution.',
-    },
+    "id": "SP04-069",
+    "name": "Rubber Stamp",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "perfect, clean",
+    "style": {
+      "aesthetic": "Ink stamp",
+      "form_and_line": "Thick, broken",
+      "color_palette": "Red or Black ink, stamp-pad economy, official pigment",
+      "lighting_setup": "Uneven pressure, ink-starvation pattern, hand-stamped irregularity",
+      "material_texture": "Ink starvation",
+      "render_quality": "Office, rough, bureaucrat artefact, rubber-worn character",
+      "spatial_distortion": "Missing parts",
+      "atmosphere": "Official, bureaucratic, desk-clerk authority, document-weight",
+      "key_features": "Border, stamp frame, ink-fade authenticity",
+      "creative_brief": "Ink hits paper with the decisive thud of officialdom, each impression a small act of bureaucratic permanence. Text and image share the rubber surface, typography and illustration united by the same decisive gesture. This is the authority of the stamp, where a single impression carries the weight of institution."
+    }
   },
   {
-    id: 'SP04-064',
-    name: 'Stipple (Dotwork)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'lines, solid',
-    style: {
-      aesthetic: 'Tattoo style',
-      form_and_line: 'None (dots)',
-      color_palette: 'Black ink, pointillist-mono, dot-gradient depth',
-      lighting_setup: 'Dot density, stipple-as-value, cumulative point shadow',
-      material_texture: 'Skin/Paper',
-      render_quality: 'Detailed, slow, meditative precision, hand-poke patience',
-      spatial_distortion: 'Gradient by dots',
-      atmosphere: 'Obsessive, soft, pointillist trance, meticulous calm',
-      key_features: 'Dots only, stipple gradient, point-by-point tone',
-      creative_brief:
-        'Points accumulate into form with the patience of a meditation practice, each dot a unit of time as much as tone. Thousands of tiny decisions coalesce into image, the whole emerging from the patient accumulation of the particular. This is drawing as ritual, where the journey through each dot matters more than the destination of the finished piece.',
-    },
+    "id": "SP04-064",
+    "name": "Stipple (Dotwork)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "lines, solid",
+    "style": {
+      "aesthetic": "Tattoo style",
+      "form_and_line": "None (dots)",
+      "color_palette": "Black ink, pointillist-mono, dot-gradient depth",
+      "lighting_setup": "Dot density, stipple-as-value, cumulative point shadow",
+      "material_texture": "Skin/Paper",
+      "render_quality": "Detailed, slow, meditative precision, hand-poke patience",
+      "spatial_distortion": "Gradient by dots",
+      "atmosphere": "Obsessive, soft, pointillist trance, meticulous calm",
+      "key_features": "Dots only, stipple gradient, point-by-point tone",
+      "creative_brief": "Points accumulate into form with the patience of a meditation practice, each dot a unit of time as much as tone. Thousands of tiny decisions coalesce into image, the whole emerging from the patient accumulation of the particular. This is drawing as ritual, where the journey through each dot matters more than the destination of the finished piece."
+    }
   },
   {
-    id: 'SP04-066',
-    name: 'Screenprint (Serigraph)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'gradient, painting',
-    style: {
-      aesthetic:
-        'Warhol pop-art print, factory repetition, celebrity silkscreen, mass-media critique',
-      form_and_line: 'None',
-      color_palette: 'Misaligned layers, pop-art separation, silkscreen offset',
-      lighting_setup: 'Halftone, mesh-screen texture, dot-pattern shadow',
-      material_texture: 'Mesh pattern',
-      render_quality: 'Pop art, mass produced, factory repetition, consumer-culture critique',
-      spatial_distortion: 'Offset color',
-      atmosphere: 'Bold, commercial, screenprint bazaar, poster-shop energy',
-      key_features: 'Layer overlap, color misregistration, halftone rosette',
-      creative_brief:
-        'Colors stack in flat layers like bricks in a factory wall, each screen its own sovereign nation of pigment. Repetition becomes meditation, celebrity faces multiplying into pattern, personality dissolving into product. This is the image as mass production, where the copy destroys the original and replaces it with icon.',
-    },
+    "id": "SP04-066",
+    "name": "Screenprint (Serigraph)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "gradient, painting",
+    "style": {
+      "aesthetic": "Warhol pop-art print, factory repetition, celebrity silkscreen, mass-media critique",
+      "form_and_line": "None",
+      "color_palette": "Misaligned layers, pop-art separation, silkscreen offset",
+      "lighting_setup": "Halftone, mesh-screen texture, dot-pattern shadow",
+      "material_texture": "Mesh pattern",
+      "render_quality": "Pop art, mass produced, factory repetition, consumer-culture critique",
+      "spatial_distortion": "Offset color",
+      "atmosphere": "Bold, commercial, screenprint bazaar, poster-shop energy",
+      "key_features": "Layer overlap, color misregistration, halftone rosette",
+      "creative_brief": "Colors stack in flat layers like bricks in a factory wall, each screen its own sovereign nation of pigment. Repetition becomes meditation, celebrity faces multiplying into pattern, personality dissolving into product. This is the image as mass production, where the copy destroys the original and replaces it with icon."
+    }
   },
   {
-    id: 'SP04-070',
-    name: 'Mezzotint',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'white background, lines',
-    style: {
-      aesthetic: 'Dark print',
-      form_and_line: 'None',
-      color_palette: 'Velvety Black, infinite-depth dark, burnished revelation',
-      lighting_setup: 'Burnished highlights, subtractive light, tonal emergence',
-      material_texture: 'Rocker marks',
-      render_quality: 'Dramatic, soft, tonal emergence, chiaroscuro majesty',
-      spatial_distortion: 'None',
-      atmosphere: 'Moody, night, candle-lit mystery, old-master depth',
-      key_features: 'Dark base, burnished highlight, tonal reveal',
-      creative_brief:
-        'Darkness emerges first, the entire plate worked to hold ink before the artist begins the slow labor of revealing light. Tones graduate from absolute black to luminous highlight through the patient rock of the mezzotint rocker. This is chiaroscuro as technique, where the image is liberated from darkness one burnished highlight at a time.',
-    },
+    "id": "SP04-070",
+    "name": "Mezzotint",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "white background, lines",
+    "style": {
+      "aesthetic": "Dark print",
+      "form_and_line": "None",
+      "color_palette": "Velvety Black, infinite-depth dark, burnished revelation",
+      "lighting_setup": "Burnished highlights, subtractive light, tonal emergence",
+      "material_texture": "Rocker marks",
+      "render_quality": "Dramatic, soft, tonal emergence, chiaroscuro majesty",
+      "spatial_distortion": "None",
+      "atmosphere": "Moody, night, candle-lit mystery, old-master depth",
+      "key_features": "Dark base, burnished highlight, tonal reveal",
+      "creative_brief": "Darkness emerges first, the entire plate worked to hold ink before the artist begins the slow labor of revealing light. Tones graduate from absolute black to luminous highlight through the patient rock of the mezzotint rocker. This is chiaroscuro as technique, where the image is liberated from darkness one burnished highlight at a time."
+    }
   },
   {
-    id: 'SP04-074',
-    name: 'Sharpie Art',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'fine detail',
-    style: {
-      aesthetic: 'Permanent marker',
-      form_and_line: 'Thick, bleeding',
-      color_palette: 'Black, smelly, solvent-fume authenticity, permanent-pigment assertion',
-      lighting_setup: 'None, marker-raw, no correction, bold-gesture confidence',
-      material_texture: 'Paper bleed',
-      render_quality: 'Bold, rough, sharpie swagger, street-tag attitude',
-      spatial_distortion: 'Blobby',
-      atmosphere: 'Permanent, loud, marker-commitment, no-going-back energy',
-      key_features: 'Thick lines, marker-nib character, bleed-through honesty',
-      creative_brief:
-        "Ink saturates paper fiber with the permanence of a shouted declaration, the marker's ghost bleeding through to the next page. Thick lines commit absolutely, no eraser, no undo, only the forward momentum of the chisel tip. This is drawing with consequences, where every stroke is a point of no return.",
-    },
+    "id": "SP04-074",
+    "name": "Sharpie Art",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "fine detail",
+    "style": {
+      "aesthetic": "Permanent marker",
+      "form_and_line": "Thick, bleeding",
+      "color_palette": "Black, smelly, solvent-fume authenticity, permanent-pigment assertion",
+      "lighting_setup": "None, marker-raw, no correction, bold-gesture confidence",
+      "material_texture": "Paper bleed",
+      "render_quality": "Bold, rough, sharpie swagger, street-tag attitude",
+      "spatial_distortion": "Blobby",
+      "atmosphere": "Permanent, loud, marker-commitment, no-going-back energy",
+      "key_features": "Thick lines, marker-nib character, bleed-through honesty",
+      "creative_brief": "Ink saturates paper fiber with the permanence of a shouted declaration, the marker's ghost bleeding through to the next page. Thick lines commit absolutely, no eraser, no undo, only the forward momentum of the chisel tip. This is drawing with consequences, where every stroke is a point of no return."
+    }
   },
   {
-    id: 'SP04-076',
-    name: 'Graffiti (Tag)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'clean, font',
-    style: {
-      aesthetic: 'Spray paint signature',
-      form_and_line: 'Drips',
-      color_palette: 'Chrome/Black, metallic-can spectrum, silver-cap assertion',
-      lighting_setup: 'Highlight, can-control sheen, spray-fat-cap pattern',
-      material_texture: 'Wall texture',
-      render_quality: 'Street, vandal, aerosol fluency, one-take bravado',
-      spatial_distortion: 'Flow',
-      atmosphere: 'Urban, fast, unauthorized moment, late-night vanish',
-      key_features: 'Drips, tag handstyle, can-control radius',
-      creative_brief:
-        'Paint escapes the can at pressure, the line born of wrist speed and the urgency of unauthorized creation. Letterforms bend and connect into a private language of identity and territory. This is the signature as architecture, written in the moment between looking over the shoulder and the next pass of headlights.',
-    },
+    "id": "SP04-076",
+    "name": "Graffiti (Tag)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "clean, font",
+    "style": {
+      "aesthetic": "Spray paint signature",
+      "form_and_line": "Drips",
+      "color_palette": "Chrome/Black, metallic-can spectrum, silver-cap assertion",
+      "lighting_setup": "Highlight, can-control sheen, spray-fat-cap pattern",
+      "material_texture": "Wall texture",
+      "render_quality": "Street, vandal, aerosol fluency, one-take bravado",
+      "spatial_distortion": "Flow",
+      "atmosphere": "Urban, fast, unauthorized moment, late-night vanish",
+      "key_features": "Drips, tag handstyle, can-control radius",
+      "creative_brief": "Paint escapes the can at pressure, the line born of wrist speed and the urgency of unauthorized creation. Letterforms bend and connect into a private language of identity and territory. This is the signature as architecture, written in the moment between looking over the shoulder and the next pass of headlights."
+    }
   },
   {
-    id: 'SP04-071',
-    name: 'Aquatint',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'sharp lines',
-    style: {
-      aesthetic: 'Tonal print',
-      form_and_line: 'Etched outline',
-      color_palette: 'Watercolor-like ink, tonal-wash range, rosin-texture tone',
-      lighting_setup: 'Soft wash, rosin-grain diffusion, tonal-merge subtlety',
-      material_texture: 'Rosin grain',
-      render_quality: 'Goya dark tonal print, haunting depth, sleep of reason',
-      spatial_distortion: 'None',
-      atmosphere: 'Somber, tonal, romantic darkness, gothic introspection',
-      key_features: 'Wash effect, aquatint grain, tonal gradation',
-      creative_brief:
-        'Tone pools across the plate in soft gradients built from the bite of acid on resin dust, each grain a tiny well of ink. The image emerges in atmospheric softness, edges dissolving into romantic ambiguity. This is darkness rendered as velvet, where shadow becomes the primary medium and light the precious exception.',
-    },
+    "id": "SP04-071",
+    "name": "Aquatint",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "sharp lines",
+    "style": {
+      "aesthetic": "Tonal print",
+      "form_and_line": "Etched outline",
+      "color_palette": "Watercolor-like ink, tonal-wash range, rosin-texture tone",
+      "lighting_setup": "Soft wash, rosin-grain diffusion, tonal-merge subtlety",
+      "material_texture": "Rosin grain",
+      "render_quality": "Goya dark tonal print, haunting depth, sleep of reason",
+      "spatial_distortion": "None",
+      "atmosphere": "Somber, tonal, romantic darkness, gothic introspection",
+      "key_features": "Wash effect, aquatint grain, tonal gradation",
+      "creative_brief": "Tone pools across the plate in soft gradients built from the bite of acid on resin dust, each grain a tiny well of ink. The image emerges in atmospheric softness, edges dissolving into romantic ambiguity. This is darkness rendered as velvet, where shadow becomes the primary medium and light the precious exception."
+    }
   },
   {
-    id: 'SP04-077',
-    name: 'Graffiti (Piece)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'tag, messy',
-    style: {
-      aesthetic: 'Wildstyle mural',
-      form_and_line: 'Outline and fill',
-      color_palette: 'Vibrant spray, wildstyle palette, fill-outline separation',
-      lighting_setup: 'Highlights, 3D-bevel shine, spray-glow radiance',
-      material_texture: 'Brick wall',
-      render_quality: 'Masterpiece, complex, piece-book glory, production-level mural',
-      spatial_distortion: 'Arrow shapes',
-      atmosphere: 'Hip hop, bold, wall-of-fame prestige, block-party spectacle',
-      key_features: 'Arrows, letter connections, dimension bevel',
-      creative_brief:
-        'Color fills interlock like puzzle pieces of pure style, wildstyle letterforms bending into abstraction and back. Arrows, connections, and dimensional drops build a visual complexity that rewards the second look and the third. This is the wall as gallery, where the piece claims space with the authority of paint and the generosity of public art.',
-    },
+    "id": "SP04-077",
+    "name": "Graffiti (Piece)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "tag, messy",
+    "style": {
+      "aesthetic": "Wildstyle mural",
+      "form_and_line": "Outline and fill",
+      "color_palette": "Vibrant spray, wildstyle palette, fill-outline separation",
+      "lighting_setup": "Highlights, 3D-bevel shine, spray-glow radiance",
+      "material_texture": "Brick wall",
+      "render_quality": "Masterpiece, complex, piece-book glory, production-level mural",
+      "spatial_distortion": "Arrow shapes",
+      "atmosphere": "Hip hop, bold, wall-of-fame prestige, block-party spectacle",
+      "key_features": "Arrows, letter connections, dimension bevel",
+      "creative_brief": "Color fills interlock like puzzle pieces of pure style, wildstyle letterforms bending into abstraction and back. Arrows, connections, and dimensional drops build a visual complexity that rewards the second look and the third. This is the wall as gallery, where the piece claims space with the authority of paint and the generosity of public art."
+    }
   },
   {
-    id: 'SP04-068',
-    name: 'Cyanotype (Blueprint)',
-    category: '5. Fantasy And Concept Illustration',
-    negativePrompt: 'red, yellow',
-    style: {
-      aesthetic: 'Sun print',
-      form_and_line: 'Silhouette (white)',
-      color_palette: 'Prussian Blue, monochrome cyan, sun-print depth',
-      lighting_setup: 'Negative, UV exposure, solar-contact alchemy',
-      material_texture: 'Watercolor paper',
-      render_quality: 'Botanical, photo, photogram heritage, Anna Atkins legacy',
-      spatial_distortion: 'Soft edges',
-      atmosphere: 'Dreamy, blue, alternative-process magic, Victorian science',
-      key_features: 'Blue only, contact shadow, silhouette photogram',
-      creative_brief:
-        'Prussian blue washes over paper in the signature of sunlight, chemistry and photon collaborating on the image. Foliage leaves its silhouette like a ghost of the garden, white shapes against the blue miracle. This is photography before photography knew its name, when light itself was the artist and the botanist held the paper.',
-    },
-  },
+    "id": "SP04-068",
+    "name": "Cyanotype (Blueprint)",
+    "category": "5. Fantasy And Concept Illustration",
+    "negativePrompt": "red, yellow",
+    "style": {
+      "aesthetic": "Sun print",
+      "form_and_line": "Silhouette (white)",
+      "color_palette": "Prussian Blue, monochrome cyan, sun-print depth",
+      "lighting_setup": "Negative, UV exposure, solar-contact alchemy",
+      "material_texture": "Watercolor paper",
+      "render_quality": "Botanical, photo, photogram heritage, Anna Atkins legacy",
+      "spatial_distortion": "Soft edges",
+      "atmosphere": "Dreamy, blue, alternative-process magic, Victorian science",
+      "key_features": "Blue only, contact shadow, silhouette photogram",
+      "creative_brief": "Prussian blue washes over paper in the signature of sunlight, chemistry and photon collaborating on the image. Foliage leaves its silhouette like a ghost of the garden, white shapes against the blue miracle. This is photography before photography knew its name, when light itself was the artist and the botanist held the paper."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

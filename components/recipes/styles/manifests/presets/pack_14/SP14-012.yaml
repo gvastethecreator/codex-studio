@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-012
+packId: pack_14
+name: Frostbound Reliquary Caravan
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Glacial pilgrimage noir with austere sacred logistics.
+  form_and_line: Processional wagon silhouettes, wind-cut capes, and elongated horizon rhythm.
+  color_palette: Frost silver, midnight blue, and muted ember orange.
+  lighting_setup: Polar twilight with intermittent lantern halos through blowing snow.
+  material_texture: Iced leather, weathered wood, frosted iron, and crystalline snow crust.
+  render_quality: Premium environmental key art balancing atmosphere and subject readability.
+  spatial_distortion: Wide caravan depth cues with repeating relic wagons fading into blizzard haze.
+  atmosphere: Endurance, solemn duty, and quiet eschatological urgency.
+  key_features: Armored reliquary carts, wind-bent banners, frozen shrine milestones.
+  creative_brief: A sacred caravan crossing a lethal winter frontier to protect relics that must never thaw nor fall.
+avoidRules: [photoreal, tropical-vibes, bright-comedy, modern-traffic, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-012.webp }
+attributes:
+  negativePrompt: photoreal, tropical-vibes, bright-comedy, modern-traffic, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

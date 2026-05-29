@@ -3,45 +3,22 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () =>
-    import('./pack_12/neon-urban-and-night-ops-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_12/wilderness-hunts-and-harsh-frontiers-2').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_12/sci-fi-frontiers-and-mech-zones-3').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_12/puzzle-chambers-and-adventure-setpieces-4').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_12/arcane-temples-and-mythic-realms-5').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_12/sieges-warfronts-and-last-stands-6').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_12/speed-sport-and-competitive-arenas-7').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_12/heists-horror-and-underworld-runs-8').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
+  () => import('./pack_12/neon-urban-and-night-ops-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_12/wilderness-hunts-and-harsh-frontiers-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_12/sci-fi-frontiers-and-mech-zones-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_12/puzzle-chambers-and-adventure-setpieces-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_12/arcane-temples-and-mythic-realms-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_12/sieges-warfronts-and-last-stands-6').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_12/speed-sport-and-competitive-arenas-7').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_12/heists-horror-and-underworld-runs-8').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: 'pack_12',
-    name: 'Video Game Originals Vault',
-    description:
-      'An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.',
+    id: "pack_12",
+    name: "Video Game Originals Vault",
+    description: "An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.",
     presets: categoryPresets.flat(),
   };
 }

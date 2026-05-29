@@ -4,22 +4,21 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP01-050',
-    name: 'Product Photography',
-    category: '5. Commercial And Product',
-    negativePrompt: 'dust, scratches, messy',
-    style: {
-      aesthetic: 'Clean commercial object',
-      form_and_line: 'Sharp edges',
-      color_palette: 'Accurate, clean',
-      lighting_setup: 'Studio softbox',
-      material_texture: 'Perfect surface',
-      render_quality: 'Apple ad, commercial',
-      spatial_distortion: 'None',
-      atmosphere: 'Professional, desire',
-      key_features: 'White/Grey background',
-      creative_brief:
-        'The object floats in its own perfection, suspended in a void where nothing competes for attention and every edge resolves into certainty. Light wraps around form like tailored silk, revealing contour without distraction, isolating the thing from its own history. Desire crystallizes in the absence of context, the thing becoming only what it promises to become.',
-    },
-  },
+    "id": "SP01-050",
+    "name": "Product Photography",
+    "category": "5. Commercial And Product",
+    "negativePrompt": "dust, scratches, messy",
+    "style": {
+      "aesthetic": "Clean commercial object",
+      "form_and_line": "Sharp edges",
+      "color_palette": "Accurate, clean",
+      "lighting_setup": "Studio softbox",
+      "material_texture": "Perfect surface",
+      "render_quality": "Apple ad, commercial",
+      "spatial_distortion": "None",
+      "atmosphere": "Professional, desire",
+      "key_features": "White/Grey background",
+      "creative_brief": "The object floats in its own perfection, suspended in a void where nothing competes for attention and every edge resolves into certainty. Light wraps around form like tailored silk, revealing contour without distraction, isolating the thing from its own history. Desire crystallizes in the absence of context, the thing becoming only what it promises to become."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

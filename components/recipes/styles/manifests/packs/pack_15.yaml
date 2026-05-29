@@ -14,6 +14,10 @@ categories:
       - pack_15/SP15-006.yaml
       - pack_15/SP15-007.yaml
       - pack_15/SP15-008.yaml
+      - pack_15/SP15-009.yaml
+      - pack_15/SP15-010.yaml
+      - pack_15/SP15-011.yaml
+      - pack_15/SP15-012.yaml
 presetRefs:
   - pack_15/SP15-001.yaml
   - pack_15/SP15-002.yaml
@@ -23,3 +27,7 @@ presetRefs:
   - pack_15/SP15-006.yaml
   - pack_15/SP15-007.yaml
   - pack_15/SP15-008.yaml
+  - pack_15/SP15-009.yaml
+  - pack_15/SP15-010.yaml
+  - pack_15/SP15-011.yaml
+  - pack_15/SP15-012.yaml

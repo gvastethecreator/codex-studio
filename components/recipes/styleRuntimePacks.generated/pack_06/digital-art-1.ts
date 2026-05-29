@@ -4,303 +4,273 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP06-046',
-    name: 'Digital Painting',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'Standard digital illustration',
-      form_and_line: 'Clean, refined',
-      color_palette: 'RGB, vibrant',
-      lighting_setup: 'Studio',
-      material_texture: 'Smooth',
-      render_quality: 'ArtStation, professional',
-      spatial_distortion: 'None',
-      atmosphere: 'Polished',
-      key_features: 'Digital look',
-      creative_brief:
-        'Undo exists. Layers float in infinite adjustability, colors sampled from a spectrum beyond physical pigment, every stroke revisable. The tablet records pressure into opacity, a simulation of paint that knows no drying time. The image achieves polish through iteration, a perfection that only the weightless can sustain.',
-    },
+    "id": "SP06-046",
+    "name": "Digital Painting",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "Standard digital illustration",
+      "form_and_line": "Clean, refined",
+      "color_palette": "RGB, vibrant",
+      "lighting_setup": "Studio",
+      "material_texture": "Smooth",
+      "render_quality": "ArtStation, professional",
+      "spatial_distortion": "None",
+      "atmosphere": "Polished",
+      "key_features": "Digital look",
+      "creative_brief": "Undo exists. Layers float in infinite adjustability, colors sampled from a spectrum beyond physical pigment, every stroke revisable. The tablet records pressure into opacity, a simulation of paint that knows no drying time. The image achieves polish through iteration, a perfection that only the weightless can sustain."
+    }
   },
   {
-    id: 'SP06-048',
-    name: 'Matte Painting',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'Photorealistic environment extension',
-      form_and_line: 'Invisible',
-      color_palette: 'Cinematic, atmospheric',
-      lighting_setup: 'Natural, consistent',
-      material_texture: 'Photo textures',
-      render_quality: 'Movie background',
-      spatial_distortion: 'None',
-      atmosphere: 'Epic, vast',
-      key_features: 'Seamless blend',
-      creative_brief:
-        'Photo textures merge with painted extension, the boundary between captured and constructed dissolving into seamless vastness. Cinematic light unifies what was never together, a world assembled from fragments that conspire to feel whole. The image convinces not through realism but through atmospheric coherence, light as the great unifier.',
-    },
+    "id": "SP06-048",
+    "name": "Matte Painting",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "Photorealistic environment extension",
+      "form_and_line": "Invisible",
+      "color_palette": "Cinematic, atmospheric",
+      "lighting_setup": "Natural, consistent",
+      "material_texture": "Photo textures",
+      "render_quality": "Movie background",
+      "spatial_distortion": "None",
+      "atmosphere": "Epic, vast",
+      "key_features": "Seamless blend",
+      "creative_brief": "Photo textures merge with painted extension, the boundary between captured and constructed dissolving into seamless vastness. Cinematic light unifies what was never together, a world assembled from fragments that conspire to feel whole. The image convinces not through realism but through atmospheric coherence, light as the great unifier."
+    }
   },
   {
-    id: 'SP06-053',
-    name: 'Concept Art',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'Movie design visualization',
-      form_and_line: 'Painterly',
-      color_palette: 'Mood lighting',
-      lighting_setup: 'Cinematic',
-      material_texture: 'Photobash',
-      render_quality: 'AAA Game',
-      spatial_distortion: 'None',
-      atmosphere: 'Epic, storytelling',
-      key_features: 'Focal point detail',
-      creative_brief:
-        'Mood precedes detail, atmosphere driving form rather than following it, the image designed to sell a world before a product. Photobash fragments meet painterly strokes in a hybrid language spoken in pre-production meetings. The image proposes rather than concludes, a question asked in cinematic light.',
-    },
+    "id": "SP06-053",
+    "name": "Concept Art",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "Movie design visualization",
+      "form_and_line": "Painterly",
+      "color_palette": "Mood lighting",
+      "lighting_setup": "Cinematic",
+      "material_texture": "Photobash",
+      "render_quality": "AAA Game",
+      "spatial_distortion": "None",
+      "atmosphere": "Epic, storytelling",
+      "key_features": "Focal point detail",
+      "creative_brief": "Mood precedes detail, atmosphere driving form rather than following it, the image designed to sell a world before a product. Photobash fragments meet painterly strokes in a hybrid language spoken in pre-production meetings. The image proposes rather than concludes, a question asked in cinematic light."
+    }
   },
   {
-    id: 'SP06-051',
-    name: 'Low Poly',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: '3D mesh with visible facets',
-      form_and_line: 'Sharp edges',
-      color_palette: 'Flat shaded polygons',
-      lighting_setup: 'Global illumination',
-      material_texture: 'None',
-      render_quality: 'Indie game',
-      spatial_distortion: 'Geometric',
-      atmosphere: 'Simple, clean',
-      key_features: 'Triangles',
-      creative_brief:
-        'The mesh is visible, every triangle a declaration that smoothness is a lie we tell through polygon count. Flat shading refuses to pretend curvature, each facet catching light with the honesty of origami. The image finds beauty in the geometry itself, the wireframe barely hidden beneath the surface.',
-    },
+    "id": "SP06-051",
+    "name": "Low Poly",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "3D mesh with visible facets",
+      "form_and_line": "Sharp edges",
+      "color_palette": "Flat shaded polygons",
+      "lighting_setup": "Global illumination",
+      "material_texture": "None",
+      "render_quality": "Indie game",
+      "spatial_distortion": "Geometric",
+      "atmosphere": "Simple, clean",
+      "key_features": "Triangles",
+      "creative_brief": "The mesh is visible, every triangle a declaration that smoothness is a lie we tell through polygon count. Flat shading refuses to pretend curvature, each facet catching light with the honesty of origami. The image finds beauty in the geometry itself, the wireframe barely hidden beneath the surface."
+    }
   },
   {
-    id: 'SP06-047',
-    name: 'Speedpaint',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'Quick digital sketch',
-      form_and_line: 'Rough, energetic',
-      color_palette: 'Bold, unrefined',
-      lighting_setup: 'Dramatic',
-      material_texture: 'Brush strokes',
-      render_quality: 'Concept, loose',
-      spatial_distortion: 'Unfinished edges',
-      atmosphere: 'Dynamic, fast',
-      key_features: 'Loose strokes',
-      creative_brief:
-        'Gestural strokes land with the urgency of an idea fighting its own evaporation, form suggested rather than defined, edges loose with velocity. The brush moves at the speed of thought — faster than craft, slower than instinct. The image breathes with the confidence of an artist who knows that finish is the enemy of life.',
-    },
+    "id": "SP06-047",
+    "name": "Speedpaint",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "Quick digital sketch",
+      "form_and_line": "Rough, energetic",
+      "color_palette": "Bold, unrefined",
+      "lighting_setup": "Dramatic",
+      "material_texture": "Brush strokes",
+      "render_quality": "Concept, loose",
+      "spatial_distortion": "Unfinished edges",
+      "atmosphere": "Dynamic, fast",
+      "key_features": "Loose strokes",
+      "creative_brief": "Gestural strokes land with the urgency of an idea fighting its own evaporation, form suggested rather than defined, edges loose with velocity. The brush moves at the speed of thought — faster than craft, slower than instinct. The image breathes with the confidence of an artist who knows that finish is the enemy of life."
+    }
   },
   {
-    id: 'SP06-054',
-    name: 'Isometric',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: '3D parallel projection',
-      form_and_line: 'Parallel lines',
-      color_palette: 'Vibrant',
-      lighting_setup: 'Studio',
-      material_texture: 'Smooth',
-      render_quality: 'Game asset',
-      spatial_distortion: 'No perspective',
-      atmosphere: 'Organized, toy-like',
-      key_features: '30 degree angle',
-      creative_brief:
-        "Parallel lines never converge, perspective abandoned for a god's-eye geometry where every tile receives equal attention. The world tilts thirty degrees, revealing itself as a diorama, a playset awaiting the hand. Distance is measured in grid cells, not vanishing points, infinitude implied by the edges that never meet.",
-    },
+    "id": "SP06-054",
+    "name": "Isometric",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "3D parallel projection",
+      "form_and_line": "Parallel lines",
+      "color_palette": "Vibrant",
+      "lighting_setup": "Studio",
+      "material_texture": "Smooth",
+      "render_quality": "Game asset",
+      "spatial_distortion": "No perspective",
+      "atmosphere": "Organized, toy-like",
+      "key_features": "30 degree angle",
+      "creative_brief": "Parallel lines never converge, perspective abandoned for a god's-eye geometry where every tile receives equal attention. The world tilts thirty degrees, revealing itself as a diorama, a playset awaiting the hand. Distance is measured in grid cells, not vanishing points, infinitude implied by the edges that never meet."
+    }
   },
   {
-    id: 'SP06-057',
-    name: 'Double Exposure',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'Blended images',
-      form_and_line: 'Silhouette',
-      color_palette: 'Mixed palettes',
-      lighting_setup: 'Contrast',
-      material_texture: 'Mixed',
-      render_quality: 'Artistic',
-      spatial_distortion: 'Image inside shape',
-      atmosphere: 'Dreamy',
-      key_features: 'Silhouette container',
-      creative_brief:
-        'Two realities occupy the same frame, one visible through the silhouette of the other, interior and exterior collapsing into a single exposure. The image holds contradiction as composition, a forest growing inside a profile, mountains where thoughts should be. Meaning emerges from the overlap, the space between the negatives.',
-    },
+    "id": "SP06-057",
+    "name": "Double Exposure",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "Blended images",
+      "form_and_line": "Silhouette",
+      "color_palette": "Mixed palettes",
+      "lighting_setup": "Contrast",
+      "material_texture": "Mixed",
+      "render_quality": "Artistic",
+      "spatial_distortion": "Image inside shape",
+      "atmosphere": "Dreamy",
+      "key_features": "Silhouette container",
+      "creative_brief": "Two realities occupy the same frame, one visible through the silhouette of the other, interior and exterior collapsing into a single exposure. The image holds contradiction as composition, a forest growing inside a profile, mountains where thoughts should be. Meaning emerges from the overlap, the space between the negatives."
+    }
   },
   {
-    id: 'SP06-059',
-    name: 'Paper Cutout (Digital)',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'Layered paper style',
-      form_and_line: 'Cut edges',
-      color_palette: 'Solid colors',
-      lighting_setup: 'Drop shadows',
-      material_texture: 'Paper grain',
-      render_quality: 'Craft, cute',
-      spatial_distortion: 'Simplified',
-      atmosphere: 'Playful',
-      key_features: 'Depth layers',
-      creative_brief:
-        'Layers of digital paper float at different depths, drop shadows creating the illusion of physicality in a world made of zeroes. The cuts are too perfect, the edges too clean, but the conceit charms through commitment to its own fiction. The image feels like a craft project rendered by a machine that wishes it had hands.',
-    },
+    "id": "SP06-059",
+    "name": "Paper Cutout (Digital)",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "Layered paper style",
+      "form_and_line": "Cut edges",
+      "color_palette": "Solid colors",
+      "lighting_setup": "Drop shadows",
+      "material_texture": "Paper grain",
+      "render_quality": "Craft, cute",
+      "spatial_distortion": "Simplified",
+      "atmosphere": "Playful",
+      "key_features": "Depth layers",
+      "creative_brief": "Layers of digital paper float at different depths, drop shadows creating the illusion of physicality in a world made of zeroes. The cuts are too perfect, the edges too clean, but the conceit charms through commitment to its own fiction. The image feels like a craft project rendered by a machine that wishes it had hands."
+    }
   },
   {
-    id: 'SP06-050',
-    name: 'Pixel Art (16-bit)',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'SNES game sprite',
-      form_and_line: 'Pixel perfect',
-      color_palette: 'Limited palette',
-      lighting_setup: 'Dithered',
-      material_texture: 'Pixel grid',
-      render_quality: 'Retro game',
-      spatial_distortion: 'Blocky',
-      atmosphere: 'Nostalgic',
-      key_features: 'Grid alignment',
-      creative_brief:
-        'Every pixel earns its place through limitation, the 16-bit palette a gauntlet that only intentional color survives. Sprites snap to grid with the conviction of a world built from discrete units, continuous reality rejected in favor of the quantized. The image carries the weight of every cartridge ever blown into, every save file ever lost.',
-    },
+    "id": "SP06-050",
+    "name": "Pixel Art (16-bit)",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "SNES game sprite",
+      "form_and_line": "Pixel perfect",
+      "color_palette": "Limited palette",
+      "lighting_setup": "Dithered",
+      "material_texture": "Pixel grid",
+      "render_quality": "Retro game",
+      "spatial_distortion": "Blocky",
+      "atmosphere": "Nostalgic",
+      "key_features": "Grid alignment",
+      "creative_brief": "Every pixel earns its place through limitation, the 16-bit palette a gauntlet that only intentional color survives. Sprites snap to grid with the conviction of a world built from discrete units, continuous reality rejected in favor of the quantized. The image carries the weight of every cartridge ever blown into, every save file ever lost."
+    }
   },
   {
-    id: 'SP06-056',
-    name: 'Synthwave',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: '80s retro-futurism',
-      form_and_line: 'Grid lines',
-      color_palette: 'Purple, Pink, Cyan',
-      lighting_setup: 'Neon glow',
-      material_texture: 'Scanlines',
-      render_quality: 'Retro, aesthetic',
-      spatial_distortion: 'Chrome reflection',
-      atmosphere: 'Nostalgic, cool',
-      key_features: 'Sunset gradient',
-      creative_brief:
-        'Neon gridlines stretch toward an infinite horizon that glows purple-pink, a synthesized sunset that never existed but everyone remembers. Chrome surfaces reflect a future that peaked in 1985 and has been echoing ever since. The image moves even when still, driven by a beat you can almost hear beneath the scanlines.',
-    },
+    "id": "SP06-056",
+    "name": "Synthwave",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "80s retro-futurism",
+      "form_and_line": "Grid lines",
+      "color_palette": "Purple, Pink, Cyan",
+      "lighting_setup": "Neon glow",
+      "material_texture": "Scanlines",
+      "render_quality": "Retro, aesthetic",
+      "spatial_distortion": "Chrome reflection",
+      "atmosphere": "Nostalgic, cool",
+      "key_features": "Sunset gradient",
+      "creative_brief": "Neon gridlines stretch toward an infinite horizon that glows purple-pink, a synthesized sunset that never existed but everyone remembers. Chrome surfaces reflect a future that peaked in 1985 and has been echoing ever since. The image moves even when still, driven by a beat you can almost hear beneath the scanlines."
+    }
   },
   {
-    id: 'SP06-060',
-    name: 'ASCII Art',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'Text based image',
-      form_and_line: 'Characters',
-      color_palette: 'Monochrome green/black',
-      lighting_setup: 'Density based',
-      material_texture: 'Text grid',
-      render_quality: 'Retro, hacker',
-      spatial_distortion: 'Low res',
-      atmosphere: 'Tech, code',
-      key_features: 'Text only',
-      creative_brief:
-        "Characters from the ASCII set assemble into image through density and contrast, the letter functioning as pixel, the keyboard as palette. The image exists simultaneously as text and picture, readable in two dimensions, meaningful in two languages. Every keystroke builds form from the alphabet's limited geometry.",
-    },
+    "id": "SP06-060",
+    "name": "ASCII Art",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "Text based image",
+      "form_and_line": "Characters",
+      "color_palette": "Monochrome green/black",
+      "lighting_setup": "Density based",
+      "material_texture": "Text grid",
+      "render_quality": "Retro, hacker",
+      "spatial_distortion": "Low res",
+      "atmosphere": "Tech, code",
+      "key_features": "Text only",
+      "creative_brief": "Characters from the ASCII set assemble into image through density and contrast, the letter functioning as pixel, the keyboard as palette. The image exists simultaneously as text and picture, readable in two dimensions, meaningful in two languages. Every keystroke builds form from the alphabet's limited geometry."
+    }
   },
   {
-    id: 'SP06-055',
-    name: 'Glitch Art',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'Corrupted data',
-      form_and_line: 'Jagged, displaced',
-      color_palette: 'RGB shift, neon',
-      lighting_setup: 'Broken',
-      material_texture: 'Pixels, noise',
-      render_quality: 'Broken, cyber',
-      spatial_distortion: 'Tearing',
-      atmosphere: 'Chaotic, tech',
-      key_features: 'Digital artifacts',
-      creative_brief:
-        'Data corrupts beautifully, pixels displaced into RGB ghosts that haunt the wrong positions, the image tearing along algorithmic fault lines. The error becomes the aesthetic, malfunction elevated to medium, entropy as creative collaborator. The glitch reveals the structure by breaking it, truth emerging from the crash.',
-    },
+    "id": "SP06-055",
+    "name": "Glitch Art",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "Corrupted data",
+      "form_and_line": "Jagged, displaced",
+      "color_palette": "RGB shift, neon",
+      "lighting_setup": "Broken",
+      "material_texture": "Pixels, noise",
+      "render_quality": "Broken, cyber",
+      "spatial_distortion": "Tearing",
+      "atmosphere": "Chaotic, tech",
+      "key_features": "Digital artifacts",
+      "creative_brief": "Data corrupts beautifully, pixels displaced into RGB ghosts that haunt the wrong positions, the image tearing along algorithmic fault lines. The error becomes the aesthetic, malfunction elevated to medium, entropy as creative collaborator. The glitch reveals the structure by breaking it, truth emerging from the crash."
+    }
   },
   {
-    id: 'SP06-049',
-    name: 'Vector Art (Flat)',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: 'Adobe Illustrator style',
-      form_and_line: 'Bezier curves',
-      color_palette: 'Solid flat colors',
-      lighting_setup: 'None',
-      material_texture: 'None',
-      render_quality: 'Icon, logo, clean',
-      spatial_distortion: 'Simplified',
-      atmosphere: 'Corporate, modern',
-      key_features: 'Infinite resolution',
-      creative_brief:
-        'Bezier curves describe the edge with mathematical precision, every path deliberate, every anchor point placed with intent. Color fills the enclosed space without variation, flat planes declaring their allegiance to geometry over texture. The image scales infinitely, resolution a concept that no longer applies.',
-    },
+    "id": "SP06-049",
+    "name": "Vector Art (Flat)",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "Adobe Illustrator style",
+      "form_and_line": "Bezier curves",
+      "color_palette": "Solid flat colors",
+      "lighting_setup": "None",
+      "material_texture": "None",
+      "render_quality": "Icon, logo, clean",
+      "spatial_distortion": "Simplified",
+      "atmosphere": "Corporate, modern",
+      "key_features": "Infinite resolution",
+      "creative_brief": "Bezier curves describe the edge with mathematical precision, every path deliberate, every anchor point placed with intent. Color fills the enclosed space without variation, flat planes declaring their allegiance to geometry over texture. The image scales infinitely, resolution a concept that no longer applies."
+    }
   },
   {
-    id: 'SP06-058',
-    name: 'Polygon Art',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: '2D geometric triangulation',
-      form_and_line: 'Triangles',
-      color_palette: 'Gradients per triangle',
-      lighting_setup: 'Flat',
-      material_texture: 'None',
-      render_quality: 'Vector, modern',
-      spatial_distortion: 'Geometric',
-      atmosphere: 'Clean, sharp',
-      key_features: 'Triangular mesh',
-      creative_brief:
-        'Triangles tessellate into recognition, the image emerging from a web of flat polygons like a low-resolution memory of form. Each facet carries a gradient, thousands of tiny skies stitched into a single face. The geometry is the art, the subject merely the occasion for its arrangement.',
-    },
+    "id": "SP06-058",
+    "name": "Polygon Art",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "2D geometric triangulation",
+      "form_and_line": "Triangles",
+      "color_palette": "Gradients per triangle",
+      "lighting_setup": "Flat",
+      "material_texture": "None",
+      "render_quality": "Vector, modern",
+      "spatial_distortion": "Geometric",
+      "atmosphere": "Clean, sharp",
+      "key_features": "Triangular mesh",
+      "creative_brief": "Triangles tessellate into recognition, the image emerging from a web of flat polygons like a low-resolution memory of form. Each facet carries a gradient, thousands of tiny skies stitched into a single face. The geometry is the art, the subject merely the occasion for its arrangement."
+    }
   },
   {
-    id: 'SP06-052',
-    name: 'Voxel Art',
-    category: '4. Digital Art',
-    negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
-    style: {
-      aesthetic: '3D cubes',
-      form_and_line: 'Cubes',
-      color_palette: 'Vibrant',
-      lighting_setup: 'AO',
-      material_texture: 'None',
-      render_quality: 'Minecraft style',
-      spatial_distortion: 'Blocky',
-      atmosphere: 'Cute, digital',
-      key_features: 'Cubes',
-      creative_brief:
-        'The world assembles from identical cubes, complexity emerging from simple repetition like a universe growing from a single cell. Shadows pool in the crevices between blocks, ambient occlusion describing form through darkness at the joints. The image builds meaning from the unit, the cathedral rising from the brick.',
-    },
-  },
+    "id": "SP06-052",
+    "name": "Voxel Art",
+    "category": "4. Digital Art",
+    "negativePrompt": "photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border",
+    "style": {
+      "aesthetic": "3D cubes",
+      "form_and_line": "Cubes",
+      "color_palette": "Vibrant",
+      "lighting_setup": "AO",
+      "material_texture": "None",
+      "render_quality": "Minecraft style",
+      "spatial_distortion": "Blocky",
+      "atmosphere": "Cute, digital",
+      "key_features": "Cubes",
+      "creative_brief": "The world assembles from identical cubes, complexity emerging from simple repetition like a universe growing from a single cell. Shadows pool in the crevices between blocks, ambient occlusion describing form through darkness at the joints. The image builds meaning from the unit, the cathedral rising from the brick."
+    }
+  }
 ] as unknown as StyleRuntimePreset[];

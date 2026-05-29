@@ -5,27 +5,19 @@ import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeType
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () => import('./pack_06/digital-art-1').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_06/traditional-painting-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_06/drawing-and-sketching-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_06/drawing-and-sketching-3').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_06/mixed-media-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_06/printmaking-5').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_06/retro-game-visual-systems-6').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_06/game-art-directions-and-ui-7').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
+  () => import('./pack_06/retro-game-visual-systems-6').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_06/game-art-directions-and-ui-7').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: 'pack_06',
-    name: 'Essential Art Styles',
-    description:
-      'A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.',
+    id: "pack_06",
+    name: "Essential Art Styles",
+    description: "A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.",
     presets: categoryPresets.flat(),
   };
 }

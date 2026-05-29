@@ -3,17 +3,15 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () =>
-    import('./pack_15/solarpunk-dreamscapes-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_15/solarpunk-dreamscapes-1').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: 'pack_15',
-    name: 'Solarpunk Dreamscapes Vault',
-    description:
-      'A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.',
+    id: "pack_15",
+    name: "Solarpunk Dreamscapes Vault",
+    description: "A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.",
     presets: categoryPresets.flat(),
   };
 }

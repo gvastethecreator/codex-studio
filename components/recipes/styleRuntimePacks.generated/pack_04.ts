@@ -3,28 +3,19 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () =>
-    import('./pack_04/comics-and-graphic-novel-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_04/editorial-illustration-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_04/childrens-and-educational-3').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
+  () => import('./pack_04/comics-and-graphic-novel-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_04/editorial-illustration-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_04/childrens-and-educational-3').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_04/printmaking-and-ink-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_04/fantasy-and-concept-illustration-5').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
+  () => import('./pack_04/fantasy-and-concept-illustration-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: 'pack_04',
-    name: 'Illustration & Graphic Novel',
-    description:
-      "A versatile collection of 80+ illustration styles, covering comics, children's books, editorial art, and printmaking.",
+    id: "pack_04",
+    name: "Illustration & Graphic Novel",
+    description: "A versatile collection of 80+ illustration styles, covering comics, children's books, editorial art, and printmaking.",
     presets: categoryPresets.flat(),
   };
 }

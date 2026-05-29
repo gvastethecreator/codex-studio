@@ -7,16 +7,16 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Choral rooftop scene where rain capture becomes a community ritual.
-  form_and_line: Open figures, functional roofs, and lyrical architectural tracing.
-  color_palette: Rain blue, soft copper, and damp green.
-  lighting_setup: Bright overcast sky with watery reflections.
-  material_texture: Collection surfaces, waterproof fabric, and wet plants.
-  render_quality: Poetic, clean, and highly evocative illustration.
-  spatial_distortion: Chained rooftops above a welcoming city.
-  atmosphere: Community, climate care, and serene emotion.
-  key_features: Rainwater capture, community choir, vegetated skyline.
-  creative_brief: An image where water infrastructure becomes a shared cultural act.
+  aesthetic: Pluvial-ritual solarpunk where civic acoustics and rain harvesting co-design public life.
+  form_and_line: Tiered chorus groupings, channeling roof geometries, and rhythmic cable spans between blocks.
+  color_palette: Storm blue, oxidized copper, and rain-saturated leaf green.
+  lighting_setup: Silver overcast with specular puddle highlights and translucent canopy glow.
+  material_texture: Ribbed catchment panels, tensioned waterproof textiles, wet moss edges, and ceramic gutters.
+  render_quality: Poetic production concept art balancing lyrical mood with infrastructural clarity.
+  spatial_distortion: Stepped roof-chain perspective descending toward a central cistern amphitheater.
+  atmosphere: Collective tenderness, climatic intelligence, and calm ceremonial focus.
+  key_features: Resonant cistern bowls, rooftop choir tiers, rainfall channels, and participatory water meters.
+  creative_brief: A rain event transformed into civic music, where each rooftop both sings and stores water for the neighborhood.
 avoidRules: [photoreal, dystopian-smog, aggressive-action, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-008.webp }
 attributes:

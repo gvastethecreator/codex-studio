@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP14-011
+packId: pack_14
+name: Obsidian Mask Theatre
+category: 1. Mythic Noir
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [mythic-noir-curated-vault, mythic-noir]
+visualDna:
+  aesthetic: Ritual performance noir with mythic stagecraft and symbolic menace.
+  form_and_line: Strong proscenium geometry, masked silhouettes, and choreographed diagonals.
+  color_palette: Obsidian black, lacquer red, and pearl smoke.
+  lighting_setup: Knife-like stage spotlights with dense velvet shadow pockets.
+  material_texture: Lacquered masks, heavy curtains, carved stone, and metallic dust.
+  render_quality: Prestige concept illustration with theatrical composition clarity.
+  spatial_distortion: Layered stage depth with recursive curtains framing focal action.
+  atmosphere: Fatal spectacle, sacred drama, and poised emotional tension.
+  key_features: Ceremonial masks, fractured proscenium arch, ritual choreography marks.
+  creative_brief: A forbidden theatre where mythic rites are performed as immaculate noir tragedy.
+avoidRules: [photoreal, slapstick, daylight-realism, flat-light, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP14-011.webp }
+attributes:
+  negativePrompt: photoreal, slapstick, daylight-realism, flat-light, watermark, text, logo
+taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-noir, categoryName: 1. Mythic Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }

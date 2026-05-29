@@ -11,193 +11,127 @@ export interface GeneratedStyleRuntimePackSummary {
 
 export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
   {
-    id: 'pack_01',
-    name: 'Photography & Realism',
-    description:
-      'A comprehensive collection of 80+ photographic styles, film stocks, and lighting setups.',
-    presetCount: 81,
+    "id": "pack_01",
+    "name": "Photography & Realism",
+    "description": "A comprehensive collection of 80+ photographic styles, film stocks, and lighting setups.",
+    "presetCount": 81
   },
   {
-    id: 'pack_02',
-    name: 'Cinematic & Media',
-    description:
-      'A collection of 80+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.',
-    presetCount: 120,
+    "id": "pack_02",
+    "name": "Cinematic & Media",
+    "description": "A collection of 80+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.",
+    "presetCount": 120
   },
   {
-    id: 'pack_03',
-    name: '3D & CGI Rendering',
-    description:
-      'A comprehensive collection of 80+ 3D rendering pipelines, visual looks, and material simulations.',
-    presetCount: 80,
+    "id": "pack_03",
+    "name": "3D & CGI Rendering",
+    "description": "A comprehensive collection of 80+ 3D rendering pipelines, visual looks, and material simulations.",
+    "presetCount": 80
   },
   {
-    id: 'pack_04',
-    name: 'Illustration & Graphic Novel',
-    description:
-      "A versatile collection of 80+ illustration styles, covering comics, children's books, editorial art, and printmaking.",
-    presetCount: 100,
+    "id": "pack_04",
+    "name": "Illustration & Graphic Novel",
+    "description": "A versatile collection of 80+ illustration styles, covering comics, children's books, editorial art, and printmaking.",
+    "presetCount": 100
   },
   {
-    id: 'pack_05',
-    name: 'Anime Battle & Worlds',
-    description:
-      'High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.',
-    presetCount: 135,
+    "id": "pack_05",
+    "name": "Anime Battle & Worlds",
+    "description": "High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.",
+    "presetCount": 135
   },
   {
-    id: 'pack_06',
-    name: 'Essential Art Styles',
-    description:
-      'A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.',
-    presetCount: 120,
+    "id": "pack_06",
+    "name": "Essential Art Styles",
+    "description": "A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.",
+    "presetCount": 120
   },
   {
-    id: 'pack_07',
-    name: 'Architecture & Interior',
-    description: 'Architectural styles and interior design aesthetics.',
-    presetCount: 80,
+    "id": "pack_07",
+    "name": "Architecture & Interior",
+    "description": "Architectural styles and interior design aesthetics.",
+    "presetCount": 80
   },
   {
-    id: 'pack_08',
-    name: 'Fashion & Costume',
-    description:
-      'A fashion and costume library spanning contemporary editorial looks, subcultural dress codes, historical silhouettes, character-costume fantasy, and material-forward transformation concepts.',
-    presetCount: 80,
+    "id": "pack_08",
+    "name": "Fashion & Costume",
+    "description": "A fashion and costume library spanning contemporary editorial looks, subcultural dress codes, historical silhouettes, character-costume fantasy, and material-forward transformation concepts.",
+    "presetCount": 80
   },
   {
-    id: 'pack_09',
-    name: 'Texture & Materiality',
-    description:
-      'A deep dive into realistic materials, surfaces, and elemental effects, perfect for 3D artists and texture generation.',
-    presetCount: 80,
+    "id": "pack_09",
+    "name": "Texture & Materiality",
+    "description": "A deep dive into realistic materials, surfaces, and elemental effects, perfect for 3D artists and texture generation.",
+    "presetCount": 80
   },
   {
-    id: 'pack_10',
-    name: 'Abstract & Experimental',
-    description:
-      'A semantically grouped abstract library covering geometric systems, reactive material flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven surfaces.',
-    presetCount: 80,
+    "id": "pack_10",
+    "name": "Abstract & Experimental",
+    "description": "A semantically grouped abstract library covering geometric systems, reactive material flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven surfaces.",
+    "presetCount": 80
   },
   {
-    id: 'pack_11',
-    name: 'Miscellaneous & Fun',
-    description: 'Playful, toy-like, and niche aesthetic styles.',
-    presetCount: 80,
+    "id": "pack_11",
+    "name": "Miscellaneous & Fun",
+    "description": "Playful, toy-like, and niche aesthetic styles.",
+    "presetCount": 80
   },
   {
-    id: 'pack_12',
-    name: 'Video Game Originals Vault',
-    description:
-      'An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.',
-    presetCount: 80,
+    "id": "pack_12",
+    "name": "Video Game Originals Vault",
+    "description": "An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.",
+    "presetCount": 80
   },
   {
-    id: 'pack_13',
-    name: 'Anime Character & Lifestyle',
-    description:
-      'Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.',
-    presetCount: 132,
+    "id": "pack_13",
+    "name": "Anime Character & Lifestyle",
+    "description": "Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.",
+    "presetCount": 132
   },
   {
-    id: 'pack_14',
-    name: 'Mythic Noir Curated Vault',
-    description:
-      'A curated pack of dark, elegant, and mythic visual directions designed for a strong, authorial identity.',
-    presetCount: 8,
+    "id": "pack_14",
+    "name": "Mythic Noir Curated Vault",
+    "description": "A curated pack of dark, elegant, and mythic visual directions designed for a strong, authorial identity.",
+    "presetCount": 12
   },
   {
-    id: 'pack_15',
-    name: 'Solarpunk Dreamscapes Vault',
-    description:
-      'A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.',
-    presetCount: 8,
+    "id": "pack_15",
+    "name": "Solarpunk Dreamscapes Vault",
+    "description": "A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.",
+    "presetCount": 12
   },
   {
-    id: 'pack_16',
-    name: 'Anime Classics & Prestige',
-    description:
-      'Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.',
-    presetCount: 140,
-  },
+    "id": "pack_16",
+    "name": "Anime Classics & Prestige",
+    "description": "Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.",
+    "presetCount": 140
+  }
 ] as GeneratedStyleRuntimePackSummary[];
 
 const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {
-  pack_01: () =>
-    import('./styleRuntimePacks.generated/pack_01').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_02: () =>
-    import('./styleRuntimePacks.generated/pack_02').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_03: () =>
-    import('./styleRuntimePacks.generated/pack_03').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_04: () =>
-    import('./styleRuntimePacks.generated/pack_04').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_05: () =>
-    import('./styleRuntimePacks.generated/pack_05').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_06: () =>
-    import('./styleRuntimePacks.generated/pack_06').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_07: () =>
-    import('./styleRuntimePacks.generated/pack_07').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_08: () =>
-    import('./styleRuntimePacks.generated/pack_08').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_09: () =>
-    import('./styleRuntimePacks.generated/pack_09').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_10: () =>
-    import('./styleRuntimePacks.generated/pack_10').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_11: () =>
-    import('./styleRuntimePacks.generated/pack_11').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_12: () =>
-    import('./styleRuntimePacks.generated/pack_12').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_13: () =>
-    import('./styleRuntimePacks.generated/pack_13').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_14: () =>
-    import('./styleRuntimePacks.generated/pack_14').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_15: () =>
-    import('./styleRuntimePacks.generated/pack_15').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
-  pack_16: () =>
-    import('./styleRuntimePacks.generated/pack_16').then((module) =>
-      module.loadGeneratedStyleRuntimePack(),
-    ),
+  "pack_01": () => import('./styleRuntimePacks.generated/pack_01').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_02": () => import('./styleRuntimePacks.generated/pack_02').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_03": () => import('./styleRuntimePacks.generated/pack_03').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_04": () => import('./styleRuntimePacks.generated/pack_04').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_05": () => import('./styleRuntimePacks.generated/pack_05').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_06": () => import('./styleRuntimePacks.generated/pack_06').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_07": () => import('./styleRuntimePacks.generated/pack_07').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_08": () => import('./styleRuntimePacks.generated/pack_08').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_09": () => import('./styleRuntimePacks.generated/pack_09').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_10": () => import('./styleRuntimePacks.generated/pack_10').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_11": () => import('./styleRuntimePacks.generated/pack_11').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_12": () => import('./styleRuntimePacks.generated/pack_12').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_13": () => import('./styleRuntimePacks.generated/pack_13').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_14": () => import('./styleRuntimePacks.generated/pack_14').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_15": () => import('./styleRuntimePacks.generated/pack_15').then((module) => module.loadGeneratedStyleRuntimePack()),
+  "pack_16": () => import('./styleRuntimePacks.generated/pack_16').then((module) => module.loadGeneratedStyleRuntimePack()),
 };
 
-export async function loadGeneratedStyleRuntimePack(
-  packId: string,
-): Promise<StyleRuntimePack | null> {
+export async function loadGeneratedStyleRuntimePack(packId: string): Promise<StyleRuntimePack | null> {
   const loader = GENERATED_STYLE_RUNTIME_PACK_LOADERS[packId];
   return loader ? loader() : null;
 }
 
 export async function loadGeneratedStyleRuntimePacks(): Promise<StyleRuntimePack[]> {
-  return Promise.all(
-    GENERATED_STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => loadGeneratedStyleRuntimePack(pack.id)),
-  ).then((loaded) => loaded.filter(Boolean) as StyleRuntimePack[]);
+  return Promise.all(GENERATED_STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => loadGeneratedStyleRuntimePack(pack.id))).then((loaded) => loaded.filter(Boolean) as StyleRuntimePack[]);
 }

@@ -1,0 +1,24 @@
+schemaVersion: 1
+id: SP15-009
+packId: pack_15
+name: Desert Bloom Desalinatory
+category: 1. Solarpunk Dreamscapes
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+visualDna:
+  aesthetic: Arid-region solarpunk oasis built around elegant desalination ecology.
+  form_and_line: Terraced basins, thin solar sails, and adaptive shade ribs.
+  color_palette: Sand gold, jade irrigation green, and clear cobalt accents.
+  lighting_setup: High desert sun softened by textile canopies and mist diffusion.
+  material_texture: Mineral concrete, woven shade membranes, and wet salt crystals.
+  render_quality: High-fidelity environmental concept art with clean engineering readability.
+  spatial_distortion: Cascading basin perspective from intake towers toward community gardens.
+  atmosphere: Resource intelligence, relief, and hopeful climatic resilience.
+  key_features: Desal towers, brine-art channels, productive oasis terraces.
+  creative_brief: A desert civic landscape where water production is visible, beautiful, and integrated into daily life.
+avoidRules: [photoreal, dystopian-drought, dark-horror, industrial-grime, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-009.webp }
+attributes:
+  negativePrompt: photoreal, dystopian-drought, dark-horror, industrial-grime, watermark, text, logo
+taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: solarpunk-dreamscapes, categoryName: 1. Solarpunk Dreamscapes, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
