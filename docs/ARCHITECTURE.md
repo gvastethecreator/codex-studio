@@ -57,6 +57,10 @@ graph TD
 - `apps/local-server/src/codexRoutes.ts`: groups Local Codex Session and model/account route behavior (`/api/codex/*`) behind one backend seam.
 - `apps/local-server/src/librariesRoutes.ts`: groups Studio Library list/create/default/remove HTTP behavior (`/api/libraries/*`) behind one backend seam.
 - `apps/local-server/src/projectRoutes.ts`: groups project listing/creation HTTP behavior (`/api/projects`) and keeps event/log side effects out of `appFactory.ts` inline handlers.
+- `apps/local-server/src/jobRoutes.ts`: groups job list/detail/cancel/create HTTP behavior (`/api/jobs/*`) and keeps provider-blocker/reference-processing orchestration out of `appFactory.ts` inline handlers.
+- `apps/local-server/src/assetLogRoutes.ts`: groups lightweight asset/log list HTTP behavior (`/api/assets`, `/api/logs`) into a dedicated backend seam.
+- `apps/local-server/src/runtimeRoutes.ts`: groups runtime health/bootstrap/app-server-start HTTP behavior (`/api/health`, `/api/bootstrap-config`, `/api/app-server/start`) into a dedicated backend seam.
+- `apps/local-server/src/studioControlRoutes.ts`: groups Studio control HTTP behavior (`/api/studio/reset`) into a dedicated backend seam.
 - `apps/local-server/src/providerRoutes.ts` and `apps/local-server/src/outputSourceRoutes.ts`: keep provider capability/preflight and External Output Source HTTP behavior out of `appFactory.ts` inline handlers.
 - `components/shell/StudioViewport.tsx`: demand-mounted route shell that lazy-loads studio and recipe surfaces.
 - `components/recipes/styles/manifests/`: granular source of truth for Style Pack Manifests and Style Preset Manifests.

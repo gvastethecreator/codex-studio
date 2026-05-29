@@ -1,5 +1,4 @@
 import { existsSync } from "node:fs";
-import { spawnSync } from "node:child_process";
 import { randomUUID } from "node:crypto";
 import path from "node:path";
 import { Hono } from "hono";
@@ -55,11 +54,13 @@ import { createSettingsRoutes } from "./settingsRoutes";
 import { createCodexRoutes } from "./codexRoutes";
 import { createLibrariesRoutes } from "./librariesRoutes";
 import { createProjectRoutes } from "./projectRoutes";
+import { createJobRoutes } from "./jobRoutes";
+import { createAssetLogRoutes } from "./assetLogRoutes";
+import { createRuntimeRoutes } from "./runtimeRoutes";
+import { createStudioControlRoutes } from "./studioControlRoutes";
 import type {
   AppServerEnsureReason,
   CodexModelCatalogResponse,
-  CreateJobRequest,
-  GenerationTaskSpec,
   LocalCodexSessionResponse,
 } from "../../../packages/shared/src";
 
@@ -127,77 +128,21 @@ export async function createStudioApp(
 
   app.use("*", cors());
 
-  app.get("/api/health", (c) => {
-    const settings = getSettings();
-    const library = inspectLibrary();
-    const [command, ...args] = resolveCodexInvocation(["--version"]);
-    const codex = spawnSync(command, args, { encoding: "utf8" });
-    const codexAvailable = codex.status === 0;
-    const appServerDiagnostics = readAppServerDiagnostics();
-    const libraryReady = library.exists && library.writable && library.missingFolders.length === 0;
-    const appServerRunning = isLocalAppServerRunning();
-
-    return c.json({
-      ok: true,
-      checkedAt: new Date().toISOString(),
-      libraryDir: settings.libraryDir,
-      runtime: {
-        platform: process.platform,
-        arch: process.arch,
-        bunVersion: Bun.version,
-        nodeVersion: process.versions.node,
-        cwd: process.cwd(),
-        envLocalPath: getEnvLocalPath(),
-        envLocalPresent: hasEnvLocalFile(),
-      },
-      config: {
-        serverPort: settings.serverPort,
-        codexWsPort: settings.codexWsPort,
-      },
-      library: {
-        exists: library.exists,
-        writable: library.writable,
-        readmePresent: library.readmePresent,
-        missingFolders: library.missingFolders,
-      },
-      codexCli: {
-        available: codexAvailable,
-        version: codexAvailable ? codex.stdout.trim() : null,
-        command: [command, ...args].join(" "),
-      },
-      appServer: {
-        running: appServerRunning,
-        wsUrl: getCodexWsUrl(),
-        pid: appServerDiagnostics.pid,
-        lastExitCode: appServerDiagnostics.lastExitCode,
-        lastExitAt: appServerDiagnostics.lastExitAt,
-        lastInvocation: appServerDiagnostics.lastInvocation?.join(" ") ?? null,
-        lastStartAt: appServerDiagnostics.lastStartAt,
-        lastStartError: appServerDiagnostics.lastStartError,
-        lastEnsureAt: appServerDiagnostics.lastEnsureAt,
-        lastEnsureReason: appServerDiagnostics.lastEnsureReason,
-      },
-      checks: {
-        libraryReady,
-        codexReady: codexAvailable,
-        onboardingReady: libraryReady && codexAvailable && appServerRunning,
-      },
-      worker: workerController.getWorkerStatus(),
-    });
-  });
-
-  app.post("/api/app-server/start", (c) => {
-    ensureLocalAppServer("user");
-    const diagnostics = readAppServerDiagnostics();
-    return c.json({
-      running: isLocalAppServerRunning(),
-      wsUrl: getCodexWsUrl(),
-      pid: diagnostics.pid,
-      lastStartError: diagnostics.lastStartError,
-    });
-  });
-
-  app.get("/api/bootstrap-config", (c) => c.json(getSettings()));
+  app.route(
+    "/api",
+    createRuntimeRoutes({
+      readSettings: getSettings,
+      inspectLibrary,
+      resolveCodexInvocation,
+      getCodexWsUrl,
+      getEnvLocalPath,
+      hasEnvLocalFile,
+      ensureAppServer: ensureLocalAppServer,
+      readAppServerDiagnostics,
+      isAppServerRunning: isLocalAppServerRunning,
+      readWorkerStatus: () => workerController.getWorkerStatus(),
+    }),
+  );
 
   app.route(
     "/api/settings",
@@ -234,9 +179,13 @@ export async function createStudioApp(
     }),
   );
 
-  app.post("/api/studio/reset", async (c) => {
-    return c.json(await resetStudioData(workerController));
-  });
+  app.route(
+    "/api/studio",
+    createStudioControlRoutes({
+      resetStudioData,
+      worker: workerController,
+    }),
+  );
 
   app.route(
     "/api/projects",
@@ -248,100 +197,48 @@ export async function createStudioApp(
     }),
   );
 
-  app.get("/api/jobs", (c) => c.json(dbStore.listJobs()));
+  app.route(
+    "/api/jobs",
+    createJobRoutes({
+      listJobs: () => dbStore.listJobs(),
+      getJob: (jobId) => dbStore.getJob(jobId),
+      getJobDetail,
+      cancelQueuedOrRunningJob: (jobId) => workerController.cancelQueuedOrRunningJob(jobId),
+      ensureDefaultProjectId: () => dbStore.ensureDefaultProject().id,
+      createJobId: () => randomUUID(),
+      createJob: (input) =>
+        dbStore.createJob({
+          id: input.id,
+          projectId: input.projectId,
+          kind: input.kind,
+          providerId: input.providerId,
+          sourceSpec: input.sourceSpec,
+          prompt: input.prompt,
+          execution: input.execution,
+        }),
+      updateJobFinalPrompt: (jobId, finalPrompt) => dbStore.updateJobFinalPrompt(jobId, finalPrompt),
+      processReferences,
+      hydrateSourceSpecAssetPaths,
+      readLibraryDir: () => getSettings().libraryDir,
+      resolveProviderExecutionBlocker: (providerId) => {
+        const capabilityReport = readProviderCapabilities(readEditableStudioSettings(settingsStorage));
+        return getProviderExecutionBlocker(capabilityReport, providerId);
+      },
+      isReferenceProcessingError: (error): error is ReferenceProcessingError =>
+        error instanceof ReferenceProcessingError,
+      publishEvent,
+      logJobCreated: (kind, jobId) => appLogger("info", "api", `Job created: ${kind}`, jobId),
+      enqueueJob: (job) => workerController.enqueueJob(job),
+    }),
+  );
 
-  app.get("/api/jobs/:id", async (c) => {
-    const detail = await getJobDetail(c.req.param("id"));
-    if (!detail) return c.json({ error: "Job not found" }, 404);
-    return c.json(detail);
-  });
-
-  app.post("/api/jobs/:id/cancel", (c) => {
-    const jobId = c.req.param("id");
-    const job = dbStore.getJob(jobId);
-    if (!job) return c.json({ error: "Job not found" }, 404);
-
-    if (job.status === "completed" || job.status === "failed" || job.status === "cancelled") {
-      return c.json(job);
-    }
-
-    const updatedJob = workerController.cancelQueuedOrRunningJob(jobId);
-    if (!updatedJob) {
-      return c.json({ error: "Job cannot be cancelled right now" }, 409);
-    }
-
-    return c.json(updatedJob);
-  });
-
-  app.post("/api/jobs", async (c) => {
-    const body = (await c.req.json()) as CreateJobRequest;
-    const projectId = body.projectId || dbStore.ensureDefaultProject().id;
-    const prompt = (body.prompt || body.sourceSpec?.prompt || "").trim();
-    if (!prompt) return c.json({ error: "Prompt is required" }, 400);
-    const jobId = randomUUID();
-    // Legacy clients may still post only { kind, prompt }. Keep the local runtime
-    // Codex-first by normalizing those jobs onto the current provider boundary.
-    const providerId =
-      body.kind === "dry_run"
-        ? "dry_run"
-        : (body.providerId ?? body.sourceSpec?.providerId ?? "codex");
-    let sourceSpec: GenerationTaskSpec | null = body.sourceSpec
-      ? {
-          ...body.sourceSpec,
-          providerId: body.sourceSpec.providerId ?? providerId,
-          assets: body.sourceSpec.assets.map((asset) => ({ ...asset })),
-        }
-      : null;
-    const capabilityReport = readProviderCapabilities(readEditableStudioSettings(settingsStorage));
-    const providerBlocker = getProviderExecutionBlocker(capabilityReport, providerId);
-    if (providerBlocker) {
-      return c.json(providerBlocker, 400);
-    }
-
-    let finalPrompt = prompt;
-    try {
-      const processedReferences = await processReferences(
-        jobId,
-        prompt,
-        body.references || [],
-        getSettings().libraryDir,
-      );
-      finalPrompt = processedReferences.augmentedPrompt;
-      sourceSpec = hydrateSourceSpecAssetPaths(
-        sourceSpec,
-        body.references || [],
-        processedReferences.persistedRefs,
-      );
-    } catch (error) {
-      if (error instanceof ReferenceProcessingError) {
-        return c.json(
-          { error: error.message, referenceName: error.referenceName, reason: error.reason },
-          400,
-        );
-      }
-      throw error;
-    }
-
-    const job = dbStore.createJob({
-      id: jobId,
-      projectId,
-      kind: body.kind,
-      providerId,
-      sourceSpec,
-      prompt,
-      execution: body.execution ?? null,
-    });
-    const queuedJob =
-      finalPrompt === prompt ? job : (dbStore.updateJobFinalPrompt(job.id, finalPrompt) ?? job);
-    publishEvent("job.created", queuedJob);
-    appLogger("info", "api", `Job created: ${queuedJob.kind}`, queuedJob.id);
-    workerController.enqueueJob(queuedJob);
-    return c.json(queuedJob, 201);
-  });
-
-  app.get("/api/assets", (c) => c.json(dbStore.listAssets()));
-
-  app.get("/api/logs", (c) => c.json(dbStore.listLogs()));
+  app.route(
+    "/api",
+    createAssetLogRoutes({
+      listAssets: () => dbStore.listAssets(),
+      listLogs: () => dbStore.listLogs(),
+    }),
+  );
 
   app.route(
     "/api/libraries",
