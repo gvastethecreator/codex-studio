@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: None, natural-contour, dermatoglyphic-pattern, skin-tension line
   atmosphere: Raw, real, mirror-close, skin-acceptance, dermatology-office, self-examination
   key_features: Texture, pore-opening, hair-follicle, fingerprint-ridge, vellus-hair shaft, sebaceous-filament, desquamation-flake, sulcus-cutis groove
-  creative_brief: The dermatoscope reveals a topography of vellus hair and sebaceous filament, mountains and valleys on a scale the naked eye dismisses as smooth uniformity. Langer's lines trace the tension map of the body's largest organ, a landscape we inhabit without ever seeing, the epidermal frontier where interior biology meets exterior world. Hyperreal intimacy transforms skin into terrain, the personal becoming geological through the alchemy of extreme magnification, mirror-close truth rendered without retouching.
+  creative_brief: >-
+    Build dermatology macro studies from pore topology, vellus hair presence, and subtle microrelief across skin tension lines. Preserve realistic epidermal variation and clinical honesty without locking into a specific person or body zone.
 avoidRules:
   - smooth plastic
 assets:

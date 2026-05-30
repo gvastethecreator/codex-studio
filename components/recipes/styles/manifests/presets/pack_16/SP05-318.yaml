@@ -13,15 +13,19 @@ tags:
   - 70s-and-80s-retro-anime
 visualDna:
   aesthetic: Raw 70s demonic transformation, wild color flashes, anguished screaming, biblical panic and old-TV violence rendered with unhinged retro intensity
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  form_and_line: Violent expressionist contour deformation, jagged transformation lines, exaggerated anatomy stress marks, frantic ink energy
+  color_palette: Acidic blood reds, toxic yellows, infernal violets, bruised shadow blacks, panic-white flash accents
+  lighting_setup: Strobing contrast bursts, harsh underlight horror angles, unstable cel shadow blocking, signal-distortion glow artifacts
+  material_texture: Rough cel paint irregularity, analog bleed and noise, distressed background brushwork, TV-era chroma instability
+  render_quality: Raw 70s shock-horror anime fidelity with intentionally abrasive compositing and emotionally volatile frame treatment
+  spatial_distortion: Body-horror perspective warping, elastic transformation silhouettes, panic-driven framing disorientation
   atmosphere: Panic-struck, psychedelic, tragic, primal
-  key_features: Demonic transformation poses, old-TV color harshness, screaming faces, biblical-horror iconography, raw retro violence
-  creative_brief: Colors fracture into screams as a human face remembers what lives beneath the skin. The TV signal distorts, unable to contain the voltage of one soul tearing itself in half. This is not horror for entertainment—this is horror as honesty, the frame shaking with the weight of what we hide inside.
+  key_features: Transformation agony line language, biblical-horror symbolism, old-TV chroma brutality, primal scream portraiture
+  creative_brief: >-
+    Preserve Devilman 1972 through raw expressive violence: unstable color,
+    distorted anatomy, and emotionally unfiltered horror iconography. The
+    preset should feel confrontational and tragic, not polished or sanitized
+    retro pastiche.
 avoidRules:
   - realistic
   - 3d render

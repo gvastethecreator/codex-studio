@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature
   atmosphere: Nature, intense, macro-silence, compound-gaze, arthropod-alert, alien-familiarity
   key_features: Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail
-  creative_brief: A thousand hexagonal lenses stare outward from the compound dome, each ommatidium catching its own fragment of the world in structural-color iridescence. The bristle between lenses catches macro flash in a constellation of catch-light hex arrays across the chitin curvature. The arthropod's gaze is a mosaic of tiny perspectives, a panoramic helmet built by evolution's own engineering department, alien and familiar in the same focus-stacked breath.
+  creative_brief: >-
+    Focus on compound-eye architecture: ommatidia lattice, structural iridescence, and macro catchlight arrays. Keep insect-scale detail highly resolved and scientifically coherent without tying to one species narrative.
 avoidRules:
   - human eye
 assets:

@@ -9,17 +9,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'paint, blend',
     style: {
-      aesthetic: 'Marker drawing',
-      form_and_line: 'Bleeding ink',
-      color_palette: 'Saturated, overlapping, marker-bleed fusion, highlighter neon',
-      lighting_setup: 'Flat, no correction, marker-smudge raw',
-      material_texture: 'Paper bleed',
-      render_quality: 'Sketchbook, bold, alcohol-marker spontaneity, studio hand-style',
-      spatial_distortion: 'Loose',
-      atmosphere: 'Casual, bright, coffee-shop sketch, creative mess',
-      key_features: 'Stroke overlap, bleeding edge, tonal blending',
+      aesthetic: 'Felt-tip/alcohol-marker illustration with spontaneous saturation behavior',
+      form_and_line: 'Broad marker strokes, edge bleed, and overlap-driven contour definition',
+      color_palette: 'High-saturation marker gamut with layered translucent mixes',
+      lighting_setup: 'Flat-to-minimal light modeling via tonal marker passes',
+      material_texture: 'Absorbent paper bleed, feathered edges, occasional smudge drag',
+      render_quality: 'Bold sketchbook immediacy with visible hand-speed decisions',
+      spatial_distortion: 'Loose perspective and gestural simplification',
+      atmosphere: 'Casual, energetic, improvised',
+      key_features: 'Stroke stacking, bleed halos, quick gradient blends via overlap',
       creative_brief:
-        'Marker ink bleeds into paper fiber with the casual confidence of a coffee-shop sketch, colors overlapping like conversation. The alcohol base evaporates leaving pigment frozen mid-spread, every stroke a decision made at speed. This is drawing without the safety net, where the line between boldness and mess is exactly the point.',
+        'Let marker behavior drive the image: fast stroke confidence, transparent layering, and paper bleed artifacts. Keep the style bold and flexible across subjects while avoiding over-specific scene cues that reduce prompt adaptability.',
     },
   },
   {
@@ -28,17 +28,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'flat page',
     style: {
-      aesthetic: '3D paper engineering',
-      form_and_line: 'Cut edges',
-      color_palette: 'Cardstock, kraft-paper spectrum, die-cut primaries',
-      lighting_setup: 'Paper shadows, crease-relief light, fold-structure shading',
-      material_texture: 'Paper',
-      render_quality: 'Intricate, dimensional, paper-engineering wonder, structural delight',
-      spatial_distortion: 'Folded',
-      atmosphere: 'Surprise, fun, page-turn anticipation, engineered magic',
-      key_features: 'Tabs and slots, pop-up mechanisms, layering depth',
+      aesthetic: 'Pop-up paper-engineering illustration language with dimensional storytelling',
+      form_and_line: 'Die-cut contours, fold seams, and tab-slot construction edges',
+      color_palette: 'Cardstock and kraft-derived tones with accent primaries',
+      lighting_setup: 'Directional page-top light emphasizing fold relief and cast depth',
+      material_texture: 'Matte paper surface, crease memory, cut-edge fuzz',
+      render_quality: 'Structural handcrafted finish with clear mechanism readability',
+      spatial_distortion: 'Layered fold-out depth and hinge-driven planar shifts',
+      atmosphere: 'Playful, surprising, engineered wonder',
+      key_features: 'Tabs, slots, folds, lift layers, mechanical page architecture',
       creative_brief:
-        'Paper folds along invisible hinges, tabs and slots creating architecture from cardstock dreams. Drop shadows tell the story of depth, each layer lifting from the page in engineered surprise. This is reading as architecture, where turning the page constructs a world that stands up and demands wonder.',
+        'Compose scenes as foldable structures, not flat illustrations. Prioritize readable paper mechanisms—hinges, layers, and slots—so dimensional surprise remains central while the style stays transferable to different subjects and narrative contexts.',
     },
   },
   {
@@ -47,17 +47,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'sharp, pen',
     style: {
-      aesthetic: 'Soft blending',
-      form_and_line: 'Thick dust',
-      color_palette: 'Soft, dusty, pastel-mist spectrum, muted winter warmth',
-      lighting_setup: 'Soft, diffuse glow, paper-tooth scatter, feather-light',
-      material_texture: 'Paper tooth',
-      render_quality: 'The Snowman wintery dreamy softness, pastel flight',
-      spatial_distortion: 'Blurred',
-      atmosphere: 'Soft, winter, snow-globe stillness, nostalgic bedtime',
-      key_features: 'Smudge, chalk-dust bloom, soft-edge blending',
+      aesthetic: 'Chalk pastel illustration with atmospheric soft-focus blending',
+      form_and_line: 'Broad dusty marks with reduced hard-edge dependency',
+      color_palette: 'Muted pastel spectrum with powdery warm-cool balance',
+      lighting_setup: 'Diffuse low-contrast illumination through chalk scatter',
+      material_texture: 'Strong paper tooth pickup, smudge trails, airborne dust bloom',
+      render_quality: 'Dreamlike, velvety, softly resolved pastel finish',
+      spatial_distortion: 'Edge blur and gentle form diffusion',
+      atmosphere: 'Nostalgic, calm, bedtime softness',
+      key_features: 'Smudged transitions, dust halos, matte bloom highlights',
       creative_brief:
-        'Chalk dust settles into paper tooth like snow on ancient landscape, edges dissolving into atmospheric haze. The soft blur of pastel blending creates an image seen through memory rather than eyes. This is the world viewed through a frost-covered window, where distance softens everything into dream.',
+        'Build mood through powdery transitions and softened boundaries rather than crisp drawing. Keep chalk pastel behavior central—smudge blending, tooth catch, and diffuse atmosphere—so the style remains reusable without binding it to a fixed seasonal scene.',
     },
   },
   {
@@ -66,17 +66,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'professional, smooth',
     style: {
-      aesthetic: "Child's drawing",
-      form_and_line: 'Waxy, messy',
-      color_palette: 'Vibrant wax, crayon spectrum, primary finger-paint',
-      lighting_setup: 'Flat, paper-white bounce, no synthetic shadow',
-      material_texture: 'Wax buildup',
-      render_quality: 'Naive, cute, hand-drawn authenticity, childhood sincerity',
-      spatial_distortion: 'Stick figures',
-      atmosphere: 'Innocent, fun, refrigerator-gallery pride, joyful scribble',
-      key_features: 'Paper grain, waxy stroke, uneven fill',
+      aesthetic: 'Childlike crayon illustration with naive expressive immediacy',
+      form_and_line: 'Waxy pressure-variable strokes with uneven contour control',
+      color_palette: 'Bright primary/secondary crayon set with spontaneous overlap',
+      lighting_setup: 'Flat paper-based lighting; value implied by stroke density',
+      material_texture: 'Heavy wax buildup and visible paper tooth drag',
+      render_quality: 'Deliberately unpolished, sincere, hand-made mark quality',
+      spatial_distortion: 'Simplified anatomy and playful proportion exaggeration',
+      atmosphere: 'Joyful, innocent, spontaneous',
+      key_features: 'Uneven fill, directional scribble, layered wax bloom',
       creative_brief:
-        "Wax builds up on paper tooth with the conviction only a child's hand can muster, colors applied with more enthusiasm than precision. Stick figures stand proud against white space, their uneven limbs monuments to sincerity over skill. This is the masterpiece before anyone learned what a masterpiece should look like.",
+        'Emphasize authentic child-drawing energy through bold wax marks, imperfect fill boundaries, and simplified forms. Keep the style emotionally direct and flexible across subjects without locking it to any specific pose or setting cliché.',
     },
   },
   {
@@ -85,17 +85,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'ink, paint',
     style: {
-      aesthetic: 'Soft sketch',
-      form_and_line: 'Pencil strokes',
-      color_palette: 'Soft, layered, crayon-adjacent warmth, gentle fade',
-      lighting_setup: 'Paper white, natural ambient, soft diffuse',
-      material_texture: 'Pencil grain',
-      render_quality: 'Gentle, fuzzy, sketchbook intimacy, soft-focus warmth',
-      spatial_distortion: 'Soft edges',
-      atmosphere: 'Quiet, homey, afternoon sketch, personal journal',
-      key_features: 'Crosshatching, pencil stroke direction, smudged blending',
+      aesthetic: 'Soft colored-pencil sketch language with layered pigment build-up',
+      form_and_line: 'Fine pencil contour and hatch strokes with directional grain',
+      color_palette: 'Muted warm-cool pencil layers with gradual tonal blending',
+      lighting_setup: 'Diffuse paper-white illumination with low-contrast form modeling',
+      material_texture: 'Pronounced tooth interaction and dry pigment granulation',
+      render_quality: 'Intimate sketchbook finish emphasizing hand pressure nuance',
+      spatial_distortion: 'Gentle edge falloff and softened structural transitions',
+      atmosphere: 'Quiet, reflective, domestic warmth',
+      key_features: 'Layered glazing, crosshatch modulation, stump-like soft blending',
       creative_brief:
-        'Colored pencil layers build slowly like sediment, each stroke leaving its grain signature on the tooth of the page. The soft fuzz of pigment drift creates a world seen through the gentlest possible lens. This is the sketchbook as sanctuary, where quiet observation becomes a form of devotion.',
+        'Build forms through incremental colored-pencil layering and visible stroke direction. Prioritize tactile paper interaction, subtle value shifts, and soft-edge transitions so the style remains calm and portable across subjects without scene-specific dependencies.',
     },
   },
   {
@@ -104,17 +104,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: '2d, drawn',
     style: {
-      aesthetic: 'Plasticine model',
-      form_and_line: 'None',
-      color_palette: 'Clay colors, matte polymer spectrum, earthy plasticity',
-      lighting_setup: 'Studio, key-fill softbox, stop-motion continuity',
-      material_texture: 'Fingerprints',
-      render_quality: 'Aardman tactile stop-motion, cheese-loving charm',
-      spatial_distortion: 'Chunky',
-      atmosphere: 'Funny, physical, handmade comedy, frame-by-frame delight',
-      key_features: 'Thumbprints, clay-sculpt surface, wireframe armature hints',
+      aesthetic: 'Plasticine stop-motion aesthetic (Aardman-inspired tactile charm)',
+      form_and_line: 'Sculpted volume with minimal drawn contour reliance',
+      color_palette: 'Matte clay chroma set with earthy and playful saturation balance',
+      lighting_setup: 'Controlled studio key-fill to maintain frame-consistent form read',
+      material_texture: 'Fingerprint impressions, sculpt-tool seams, soft clay compression',
+      render_quality: 'Hand-built stop-motion look with physical model believability',
+      spatial_distortion: 'Chunky silhouettes and compressed proportion stylization',
+      atmosphere: 'Whimsical, handcrafted, comedic warmth',
+      key_features: 'Tactile surface dents, clay seam lines, armature-informed posing hints',
       creative_brief:
-        "Thumbprints press into plasticine flesh like the maker's signature, each depression a frame of stop-motion labor. Chunky forms carry the weight of physical existence, fingers having shaped every contour. This is the handmade universe where imperfection is the proof of love, and the space between frames hums with effort.",
+        'Preserve the physicality of hand-sculpted clay in every form. Keep Aardman-like tactile imperfection—fingerprints, seam traces, and chunky silhouettes—while ensuring the style can apply to varied subjects without hard-coding specific pose beats or locations.',
     },
   },
   {
@@ -123,17 +123,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'background',
     style: {
-      aesthetic: 'Die-cut sticker',
-      form_and_line: 'Thick White outline',
-      color_palette: 'Vector, glossy finish, sticker-sheet spectrum',
-      lighting_setup: 'Glossy, specular highlight, vinyl sheen reflection',
-      material_texture: 'Vinyl',
-      render_quality: 'Redbubble, cute, die-cut precision, sticker-collector gloss',
-      spatial_distortion: 'Simplified',
-      atmosphere: 'Fun, collectible, laptop-decal personality, pop-culture cheer',
-      key_features: 'White border, die-cut outline, separate silhouette',
+      aesthetic: 'Die-cut sticker illustration with collectible decal language',
+      form_and_line: 'Bold simplified contours with thick white cutline margin',
+      color_palette: 'Saturated vector palette tuned for print legibility',
+      lighting_setup: 'Controlled vinyl gloss accents and compact specular highlights',
+      material_texture: 'Smooth sticker-vinyl finish with subtle laminate sheen',
+      render_quality: 'Crisp decal-ready rendering optimized for small-format readability',
+      spatial_distortion: 'Simplified silhouettes with icon-like proportion clarity',
+      atmosphere: 'Playful, punchy, identity-forward',
+      key_features: 'White border halo, isolated silhouette, peel-and-stick visual grammar',
       creative_brief:
-        'Thick white outlines quarantine each shape from its neighbors like diplomatic immunity for design. Glossy highlights slide across vinyl surfaces, the specular reflection promising the satisfaction of peeling and sticking. This is the art of the collectible, where every shape is a small declaration of identity waiting to attach itself to a laptop lid.',
+        'Build artwork as standalone decal units: clear silhouette, strong edge contrast, and high-chroma focal hierarchy. Keep compositions uncluttered and border-aware so designs stay recognizable at thumbnail and physical sticker scale.',
     },
   },
   {
@@ -169,17 +169,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'photo',
     style: {
-      aesthetic: 'Railway poster',
-      form_and_line: 'None',
-      color_palette: 'Flat, sunny, holiday-brochure, Mediterranean warmth',
-      lighting_setup: 'Flat, eternal-summer illumination, postcard optimism',
-      material_texture: 'Lithograph',
-      render_quality: 'Optimistic, classic, wanderlust charm, golden-age tourism',
-      spatial_distortion: 'Simplified view',
-      atmosphere: 'Happy, vacation, seaside leisure, arrival excitement',
-      key_features: 'Text at bottom, destination lettering, simplified landmark',
+      aesthetic:
+        'Vintage travel-poster style with idealized destination abstraction, optimistic transit-era polish, and graphic promotional clarity',
+      form_and_line:
+        'Simplified geometric landmark silhouettes with clean contour economy, broad shape stacking, and poster-friendly horizon banding',
+      color_palette:
+        'Sunlit flat chroma blocks with warm coastal tones, sky-sea separation, and restrained retro print contrast',
+      lighting_setup:
+        'Even poster illumination with soft midday optimism and minimal shadow complexity to maximize graphic legibility',
+      material_texture:
+        'Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival surface character',
+      render_quality:
+        'Clean promotional illustration finish emphasizing readable forms, aspirational mood, and destination-forward composition',
+      spatial_distortion:
+        'Deliberately simplified depth planes with flattened perspective and iconized environment hierarchy',
+      atmosphere: 'Bright, inviting, relaxed, optimistic, escapist',
+      key_features:
+        'Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors, travel-poster layout discipline',
       creative_brief:
-        'Flat color bands reduce landscape to its emotional essence, each horizontal stripe a different pleasure of the destination. Simplified forms promise the journey before the journey begins. This is travel rendered as anticipation, where the poster arrives before the train and the destination lives first in imagination.',
+        'Define this preset through vintage travel-poster grammar: flattened scenic planes, optimistic color blocking, and destination-led composition should carry identity beyond one railway or seaside locale.',
     },
   },
   {
@@ -188,17 +196,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'messy, organic',
     style: {
-      aesthetic: '1920s travel poster',
-      form_and_line: 'Geometric curves',
-      color_palette: 'Gold, Black, Teal, deco opulence, champagne shimmer',
-      lighting_setup: 'Gradient, metallic sheen, sunburst radiance',
-      material_texture: 'Airbrush',
-      render_quality: 'Gatsby jazz-age luxury, champagne shimmer, deco decadence',
-      spatial_distortion: 'Streamlined',
-      atmosphere: 'Elegant, fast, roaring-twenties glamour, ocean-liner sophistication',
-      key_features: 'Sunburst, geometric framing, speed lines',
+      aesthetic: 'Art Deco poster language with streamlined geometric glamour',
+      form_and_line: 'Symmetry-aware curves, stepped geometry, and aerodynamic motifs',
+      color_palette: 'Black, teal, gold, and metallic-adjacent accent hierarchy',
+      lighting_setup: 'Stylized gradient bands and radial sunburst emphasis',
+      material_texture: 'Smooth poster print with soft airbrush-like transitions',
+      render_quality: 'Decorative high-finish composition with era-authentic polish',
+      spatial_distortion: 'Streamlined elongation and geometric simplification',
+      atmosphere: 'Luxurious, optimistic, metropolitan',
+      key_features: 'Sunbursts, frame borders, speed motifs, ornamental geometry',
       creative_brief:
-        'Geometric sunbursts radiate from center points like the roar of the jazz age made visible. Gold leaf and teal gradients slide across streamlined forms, every curve engineered for speed and elegance. This is the future as imagined by the past, where luxury wears geometric armor and glamour travels by ocean liner.',
+        'Compose with Deco-era visual rhythm: bold geometry, metallic-accent color blocking, and elegant streamlining. Keep the poster language iconic and adaptable, avoiding over-specific location narratives while preserving period identity.',
     },
   },
   {
@@ -207,18 +215,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'straight lines, minimal',
     style: {
-      aesthetic:
-        'Flowing decorative lithograph, Alphonse Mucha style, botanical hair, organic ornament, belle epoque beauty',
-      form_and_line: 'Flowing hair/vines',
-      color_palette: 'Peach, Sage, Gold, botanical soft-metallic, organic gem',
-      lighting_setup: 'Flat, stain-glass glow, halo radiance',
-      material_texture: 'Lithograph',
-      render_quality: 'Decorative, floral, sinuous refinement, fin-de-siecle elegance',
-      spatial_distortion: 'Organic curves',
-      atmosphere: 'Beautiful, romantic, belle-epoque reverie, ornamental trance',
-      key_features: 'Circle halo, flowing hair-vines, organic border',
+      aesthetic: 'Art Nouveau decorative lithograph (Alphonse Mucha influence)',
+      form_and_line: 'Sinuous flowing contour integrating hair, vines, and ornamental framing',
+      color_palette: 'Peach, sage, ivory, and muted gold with floral pastel harmonics',
+      lighting_setup: 'Flat luminous treatment with halo-centered emphasis',
+      material_texture: 'Poster-lithograph grain and ink-flat ornamental finish',
+      render_quality: 'Highly decorative, elegant, and pattern-rich composition',
+      spatial_distortion: 'Organic curve dominance over rigid perspective structure',
+      atmosphere: 'Romantic, ornamental, reverent',
+      key_features: 'Circular nimbus motifs, botanical arabesques, integrated border systems',
       creative_brief:
-        'Hair and vines flow into each other until figure and ornament become a single botanical sentence. Circular halos frame the subject like a stained-glass window dedicated to the religion of beauty. This is the decorative impulse elevated to spiritual practice, where every curve is a prayer and every flower a benediction.',
+        'Preserve Mucha-style ornamental flow where figure and decoration interweave seamlessly. Prioritize rhythmic line arabesques, halo framing, and floral geometry so the style remains instantly Art Nouveau across varied subjects without fixed scene constraints.',
     },
   },
   {
@@ -247,17 +254,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'decorative, floral',
     style: {
-      aesthetic: 'Geometric design',
-      form_and_line: 'Grid',
-      color_palette: 'Red, Blue, Yellow, primary triad, modernist restraint',
-      lighting_setup: 'Flat, functional, no decorative illumination',
-      material_texture: 'Matte',
-      render_quality: 'Modernist, layout, grid-discipline purity, form-follows-function',
-      spatial_distortion: 'Diagonal type',
-      atmosphere: 'Rational, design, intellectual clarity, utopian minimalism',
-      key_features: 'Circle/Square/Triangle, grid structure, asymmetric balance',
+      aesthetic: 'Bauhaus poster modernism with function-first geometry',
+      form_and_line: 'Grid-governed composition using circles, squares, triangles, and bars',
+      color_palette: 'Primary triad with black/white neutral anchors',
+      lighting_setup: 'Flat functional value treatment, no decorative shading',
+      material_texture: 'Matte print-surface simplicity',
+      render_quality: 'Precise typographic-layout discipline and asymmetrical balance',
+      spatial_distortion: 'Diagonal type and geometric tension as compositional drivers',
+      atmosphere: 'Rational, didactic, constructive',
+      key_features: 'Modular grid, primary blocks, asymmetric equilibrium, typographic integration',
       creative_brief:
-        'Primary colors declare territories on a grid that acknowledges only the essential geometries: circle, square, triangle. Asymmetry achieves balance through tension rather than symmetry, every element earning its place through function. This is design as moral philosophy, where less is not merely more but everything.',
+        'Compose with strict Bauhaus economy: geometric primitives, disciplined grid logic, and purpose-led typography. Preserve functional clarity and asymmetrical balance while keeping the style portable across subjects beyond any single poster message.',
     },
   },
   {
@@ -266,17 +273,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'digital gradient',
     style: {
-      aesthetic: 'Rock band poster',
-      form_and_line: 'Thick ink',
-      color_palette: '3 spot colors, screenprint economy, poster-impact triad',
-      lighting_setup: 'Halftone, dot-screen depth, gig-poster rawness',
-      material_texture: 'Paper grain',
-      render_quality: 'Handmade, cool, squeegee texture, indie-venue vibe',
-      spatial_distortion: 'Distressed',
-      atmosphere: 'Loud, graphic, live-music energy, crowd-volume presence',
-      key_features: 'Overprint, registration misalignment, distressed edge',
+      aesthetic:
+        'Limited-ink screenprint gig-poster style with loud typographic presence, tactile print imperfection, and venue-energy graphic impact',
+      form_and_line:
+        'Thick ink contours with hand-pulled edge variance, halftone transitions, and letterform-dominant compositional structure',
+      color_palette:
+        'Three-spot high-contrast palette with deliberate overprint interactions and poster-impact chroma economy',
+      lighting_setup:
+        'Halftone-value illusion and flat print lighting logic prioritizing tonal punch over realistic illumination',
+      material_texture:
+        'Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts',
+      render_quality:
+        'Handmade print-shop fidelity emphasizing process evidence, tactile ink layering, and immediate event-readability',
+      spatial_distortion:
+        'Distressed print deformation with slight misregistration and compositionally intentional grit accents',
+      atmosphere: 'Loud, raw, energetic, gritty, live',
+      key_features:
+        'Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight typographic lockups',
       creative_brief:
-        'Ink layers build in registration rough enough to feel the human hand behind the squeegee, each color pass a different instrument in the visual band. Typography shouts band names like a setlist, letterforms as loud as amplifiers. This is live music translated into flat color, where the poster vibrates at the frequency of the venue.',
+        'Keep this preset rooted in screenprint gig-poster grammar: limited spot colors, overprint logic, and tactile registration imperfections should define identity beyond any specific band reference.',
     },
   },
   {
@@ -285,17 +300,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'photo, detailed',
     style: {
-      aesthetic: 'Screenprint landscape',
-      form_and_line: 'None',
-      color_palette: 'Separated layers, earth-toned screen spectrum, scenic flat-tint',
-      lighting_setup: 'Flat gradient, dawn-dusk banding, atmospheric layering',
-      material_texture: 'Screen mesh',
-      render_quality: 'Vintage travel, bold, nostalgia-invoking vistas, WPA monumentality',
-      spatial_distortion: 'Simplified mountains',
-      atmosphere: 'Majestic, graphic, road-trip reverie, democratic grandeur',
-      key_features: 'Serif font, layered silhouette, scenic horizontal banding',
+      aesthetic: 'WPA-inspired national-park travel poster screenprint language',
+      form_and_line: 'Simplified landscape silhouettes with strong horizon stratification',
+      color_palette: 'Earth-toned separated inks with limited scenic band gradients',
+      lighting_setup: 'Stylized day-phase color banding rather than realistic light physics',
+      material_texture: 'Screen mesh print feel with flat-ink layering',
+      render_quality: 'Bold vintage poster clarity with monumental scenic abstraction',
+      spatial_distortion: 'Simplified mountain masses and compressed depth tiers',
+      atmosphere: 'Majestic, nostalgic, civic-romantic',
+      key_features: 'Serif titling, horizontal strata, landmark silhouette simplification',
       creative_brief:
-        'Layered silhouettes of mountains stack like geological promises, each color band a different hour of the wilderness day. Serif type announces destinations with the authority of a national promise. This is landscape translated through the democracy of screenprint, where nature becomes poster and poster becomes monument.',
+        'Translate landscape into iconic poster forms: layered silhouettes, limited inks, and strong typographic framing. Keep the WPA travel-poster spirit while avoiding dependence on one specific landmark composition.',
     },
   },
   {
@@ -304,17 +319,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'straight, readable',
     style: {
-      aesthetic: 'Fillmore poster',
-      form_and_line: 'Warped text',
-      color_palette: 'Neon clash, acid-rock spectrum, vibrating complementaries',
-      lighting_setup: 'Flat, color-field vibration, optical tension',
-      material_texture: 'Screenprint',
-      render_quality: 'Trippy, retro, visual-overload euphoria, summer-of-love energy',
-      spatial_distortion: 'Liquid',
-      atmosphere: 'Groovy, music, hallucinogenic bliss, counterculture festival',
-      key_features: 'Illegible font, warped lettering, swirling typography',
+      aesthetic: '60s psychedelic poster language with optical-vibration typography',
+      form_and_line: 'Liquidly warped letterforms and undulating contour fields',
+      color_palette: 'High-chroma complementary clashes and acid-neon screenprint palette',
+      lighting_setup: 'Flat color-plane tension with no naturalistic light dependency',
+      material_texture: 'Screenprint grain and ink-overlap artifacts',
+      render_quality: 'Dense retro visual overload with deliberate readability disruption',
+      spatial_distortion: 'Melting curvature and wave-like compositional drift',
+      atmosphere: 'Countercultural, ecstatic, sensory-saturated',
+      key_features: 'Swirling typographic masses, radial waves, vibrating color adjacency',
       creative_brief:
-        'Typography warps and melts like wax in a lava lamp, letters losing their duty to meaning in favor of pure optical vibration. Neon colors clash with the confidence of a Fillmore bill, each hue vibrating against its complement. This is visual experience as altered state, where reading becomes seeing and seeing becomes feeling.',
+        'Treat typography as image and perception effect. Build high-impact psychedelic compositions through warping, chromatic clash, and pattern rhythm while keeping the style reusable beyond any specific event or location context.',
     },
   },
   {
@@ -323,17 +338,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'seamless, painted',
     style: {
-      aesthetic: 'Cut and paste',
-      form_and_line: 'Scissor cuts',
-      color_palette: 'Vintage photo, sepia-toned fragment, found-image palette',
-      lighting_setup: 'Mismatched, multiple light sources, irreverent continuity',
-      material_texture: 'Halftone',
-      render_quality: 'Punk, surreal, anti-aesthetic rebellion, found-object poetry',
-      spatial_distortion: 'Hybrid objects',
-      atmosphere: 'Rebellious, weird, dada absurdism, anti-art provocation',
-      key_features: 'Paper edges, scissor-cut seams, photo-fragment juxtaposition',
+      aesthetic: 'Dada-style cut-and-paste photomontage collage',
+      form_and_line: 'Hard scissor-cut boundaries and abrupt fragment intersections',
+      color_palette: 'Found-image sepia/grayscale base with selective accent insertions',
+      lighting_setup: 'Intentionally inconsistent source-light continuity across fragments',
+      material_texture: 'Halftone dots, paper edges, print-scan wear artifacts',
+      render_quality: 'Deliberate anti-polish collage assembly with conceptual friction',
+      spatial_distortion: 'Hybridized object-body juxtapositions and scale discontinuities',
+      atmosphere: 'Rebellious, absurdist, provocative',
+      key_features: 'Visible seams, torn edges, fragment clash composition',
       creative_brief:
-        'Scissor edges interrupt photographic reality, grafting disparate moments into impossible hybrid forms. Sepia photographs and halftone fragments share space without permission, their juxtaposition the entire argument. This is creation as rupture, where meaning emerges from the collision of things that were never meant to meet.',
+        'Build meaning from collision: juxtapose mismatched found fragments without smoothing continuity. Preserve visible cut seams, halftone textures, and intentional scale/light contradictions to keep the Dada montage language unmistakable and adaptable.',
     },
   },
   {
@@ -342,17 +357,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'detail, texture',
     style: {
-      aesthetic: 'Corporate Memphis',
-      form_and_line: 'None',
-      color_palette: 'Flat solid, corporate-memphis palette, bright geometric',
-      lighting_setup: 'None, shadowless, pure vector illumination',
-      material_texture: 'Vector',
-      render_quality: 'Tech startup, clean, pitch-deck polish, generic friendliness',
-      spatial_distortion: 'Big limbs',
-      atmosphere: 'Friendly, corporate, inclusive blandness, diverse stock-photo cheer',
-      key_features: 'Flat, oversized limbs, blobby shapes',
+      aesthetic: 'Minimalist vector character style in Corporate Memphis tradition',
+      form_and_line: 'Outline-light geometric figures with simplified anatomy blocks',
+      color_palette: 'Flat bright palette with controlled corporate-friendly contrast',
+      lighting_setup: 'Shadowless vector treatment with optional minimal shape layering',
+      material_texture: 'Clean digital-flat surfaces without tactile grain',
+      render_quality: 'UI/editorial-ready vector polish with high scalability',
+      spatial_distortion: 'Oversized limbs and soft blobby morphology',
+      atmosphere: 'Friendly, approachable, optimistic',
+      key_features: 'Abstract human forms, geometric props, flat compositional hierarchy',
       creative_brief:
-        'Oversized limbs and blobby shapes populate a world rendered in the cheerful flatness of startup optimism. Colors sit side by side without shadow or depth, committed to accessibility over atmosphere. This is the visual language of inclusion as aesthetic, where every figure is a friendly abstraction of the human condition.',
+        'Keep figures abstract, accessible, and instantly legible through flat geometry and simplified proportion. Maintain Corporate Memphis visual familiarity while avoiding over-specific narrative framing so assets stay reusable across product contexts.',
     },
   },
   {
@@ -361,8 +376,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'color, detailed',
     style: {
-      aesthetic: 'Movie frame sketch',
-      form_and_line: 'Loose pencil/marker',
+      aesthetic:
+        'Storyboard previsualization style prioritizing shot communication, camera intent, and narrative beat sequencing',
+      form_and_line:
+        'Loose pencil-marker shorthand with fast gesture notation, camera-arrow semantics, and frame-priority readability',
       color_palette: 'Greyscale + Arrows, monochrome clarity, directional red accent',
       lighting_setup: 'Value study, light-plan sweep, shot-design intent',
       material_texture: 'Paper',
@@ -371,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Action, plan, pre-vis intensity, production hustle',
       key_features: 'Frame border, camera arrows, shot description',
       creative_brief:
-        'Arrows trace camera movement through rough frames, each sketch a placeholder for a moment that will be shot and lit and performed. Loose lines capture blocking before performance, intention before execution. This is cinema before it becomes cinema, the raw napkin-sketch of a scene that will eventually fill a screen.',
+        'Keep this preset anchored in storyboard grammar: framing boxes, motion arrows, value-priority blocking, and shot-intent shorthand should define identity without tying to one concrete sequence.',
     },
   },
   {
@@ -400,26 +417,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'clean, pure illustration, single medium, hand-painted only, smooth, finished, final, one-pass, unlayered',
     style: {
-      aesthetic:
-        'Photography-based concept art, real-photo fragments assembled into new designs, painted-over photo plates, texture-library construction, matte-painting technique applied to character and vehicle design, mixed-media production speed, reality-sampling creative workflow',
-      form_and_line:
-        'Photo-edge cutout contours, painted-over photo transitions, adjustment-layer blend, lasso-masked compositing, mixed-resolution edge collision',
-      color_palette:
-        'Photo-base color gamut, unified grade adjustment layer, paint-stroke color harmony over photo, realistic-then-stylized color bridge',
+      aesthetic: 'Hybrid photobash-and-paintover concept rendering',
+      form_and_line: 'Cutout-based structural edges softened by targeted paint integration',
+      color_palette: 'Source-photo gamut unified by global grade and paint harmonization',
       lighting_setup:
-        'Photo-real light base, painted light adjustment, mixed-source illumination, environment-lighting matched across elements',
-      material_texture:
-        'Photographic surface detail, painted-over brush strokes, resolution-mismatch texture patches, clone-stamp repair marks',
-      render_quality:
-        'Photobash concept art, production-speed visualization, mixed-media concept, fast-iteration professional workflow',
-      spatial_distortion:
-        'Assembled from disparate photo perspectives, unified through paint-over, forced-perspective composite, scale-blended elements',
-      atmosphere:
-        'Industrial, practical, production-ready, fast-turnaround creative, resourceful problem-solving',
+        'Mixed-source lighting normalized through paint corrections and value balancing',
+      material_texture: 'Photo-detail patches with visible brush unification passes',
+      render_quality: 'Fast mixed-media visualization with controlled seam management',
+      spatial_distortion: 'Perspective reconciliation of disparate source fragments',
+      atmosphere: 'Pragmatic, production-driven, high-iteration studio workflow',
       key_features:
-        'Visible photo seams, paint-over strokes, resolution-mismatch patches, texture-library compositing, adjustment-layer grading',
+        'Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy',
       creative_brief:
-        "Photographs fracture and reassemble under the painter's hand, reality sampled and remixed into something that never existed. Brushstrokes bridge the seams between found fragments, paint and pixel negotiating a shared surface. This is the collage of the production artist, where the deadline demands the image arrive before the imagination finishes its work.",
+        'Assemble believable concepts from heterogeneous photo sources, then unify them with selective overpaint and grading. Preserve enough source texture to retain realism while enforcing consistent lighting, scale logic, and focal readability across the composite.',
     },
   },
   {
@@ -428,8 +438,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'sketchy, rough',
     style: {
-      aesthetic: 'Cinematic moment',
-      form_and_line: 'None',
+      aesthetic:
+        'Narrative keyframe concept style centered on emotional turning-point composition and cinematic visual impact',
+      form_and_line:
+        'Shape-led cinematic blocking with selective edge control, focal hierarchy, and frame-rhythm precision',
       color_palette: 'Color graded, cinematic LUT, emotional-tone timing',
       lighting_setup: 'Cinematic, framed intent, motivated light source',
       material_texture: 'Painted',
@@ -438,7 +450,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Story beat, narrative tension, turning-point weight',
       key_features: '16:9 ratio, letterbox framing, cinematic composition',
       creative_brief:
-        "Light and composition converge on the single frame that defines the entire story, the moment where everything changes. Color temperature carries emotion, shadow direction carries threat, every visual element serving the narrative pivot. This is the story's heartbeat rendered as still image, the visual climax that earns every frame before and after.",
+        'Keep this preset grounded in keyframe grammar: story-pivot composition, color-temperature emotion mapping, and cinematic focal control should define identity without hardcoding one plot beat.',
     },
   },
   {
@@ -449,24 +461,18 @@ export const GENERATED_STYLE_PRESETS = [
       'tight, clean, finished, rendered, precise, controlled, refined, polished, perfect, measured, careful',
     style: {
       aesthetic:
-        '30-second gesture drawing, pure motion capture, dynamic sweeping lines, figure-in-action energy, life-drawing studio urgency, Glen Keane animation roughs, flowing kinetic scribbles, pose-before-anatomy priority, capturing the moment not the form',
-      form_and_line:
-        'Sweeping gesture arcs, repeated motion-search lines, scribble-density for mass, fast single-stroke confidence, no erasing no correction',
-      color_palette:
-        'Single graphite tone, ochre conte crayon, charcoal black, newsprint buff background, no color distraction from motion',
-      lighting_setup:
-        'Implied through scribble density and line pressure, no rendered lighting, value-from-urgency technique',
-      material_texture:
-        'Rough newsprint tooth, graphite smudge trail, chalk-dust particulate, gesture-line velocity texture',
-      render_quality:
-        'Figure-drawing studio sketch, motion-capture aesthetic, animation-rough beauty, kinetic-energy rendering',
-      spatial_distortion:
-        'Action-line curvature, foreshortened gesture exaggeration, motion-trail afterimages, dynamic-tension pose compression',
-      atmosphere: 'Urgent, alive, fleeting-capture, creative-flow state, pure-motion celebration',
+        'Kinetic gesture sketch language with motion-first drawing priority (Glen Keane-inspired animation rough energy)',
+      form_and_line: 'Long sweeping arcs, repeated search lines, pressure-led scribble massing',
+      color_palette: 'Monochrome drawing media on warm paper base',
+      lighting_setup: 'Value implied by stroke density rather than rendered light',
+      material_texture: 'Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup',
+      render_quality: 'Loose and energetic draft quality emphasizing movement over finish',
+      spatial_distortion: 'Dynamic foreshortening and action-curve exaggeration',
+      atmosphere: 'Urgent, alive, improvisational studio energy',
       key_features:
-        'Sweeping gesture arcs, multiple search-lines, scribble-density value, no correction marks, pure-motion energy',
+        'Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail',
       creative_brief:
-        'Lines chase motion across the page with the urgency of a stopwatch, capturing the gesture before the pose can settle. The figure exists in pure velocity, anatomy subordinate to action, form emerging from flow. This is the life-drawing studio at its most alive, where the model moves faster than the eye and the hand learns to trust itself.',
+        'Capture action and weight flow in the minimum number of decisive marks. Allow overlap, correction traces, and density shifts to remain visible so the drawing records movement intent, not polished anatomy, while still preserving readable pose dynamics in a Glen Keane-inspired gestural spirit.',
     },
   },
   {
@@ -475,17 +481,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'painted, cartoon',
     style: {
-      aesthetic: 'Mixed photos',
-      form_and_line: 'None',
+      aesthetic:
+        'Photobash concept style using multi-source realism synthesis with fast iteration and art-direction cohesion',
+      form_and_line:
+        'Hybrid photo-paint seam management with compositional masking, perspective harmonization, and silhouette cleanup passes',
       color_palette: 'Unified grading, photobash-comped, multi-source harmony',
       lighting_setup: 'Realistic, ambient-match, multi-photo consistency',
       material_texture: 'Photo',
       render_quality: 'Realistic, fast, iterative pitching, concept-development speed',
-      spatial_distortion: 'Mismatched resolution',
+      spatial_distortion:
+        'Controlled source-scale mismatches intentionally corrected through grading, edge treatment, and depth harmonization',
       atmosphere: 'Realism, concept, speculative design, art-department urgency',
       key_features: 'Texture clash, photo-fragment seam, value-unify grading',
       creative_brief:
-        "Photographs crash into paint with productive violence, real-world fragments surrendering to the artist's intervention. Textures from a thousand sources assemble into a single coherent fiction. This is concept art at production speed, where the available becomes the imagined through the alchemy of overlay.",
+        'Preserve identity through photobash grammar: multi-source texture assembly, value/color unification, and seam-disguise compositing should define the style beyond one specific concept scene.',
     },
   },
   {
@@ -494,17 +503,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'detailed, polished',
     style: {
-      aesthetic: 'Quick digital painting',
-      form_and_line: 'None',
-      color_palette: 'Mood lighting, atmospheric bleed, tonal-mood spectrum',
-      lighting_setup: 'Atmospheric, ambient depth, mood-first illumination',
-      material_texture: 'Brush strokes',
-      render_quality: 'Concept, loose, thumbnail energy, big-idea confidence',
-      spatial_distortion: 'Undefined details',
-      atmosphere: 'Energetic, rough, ideation velocity, creative flow',
-      key_features: 'Composition focus, gestural strokes, value-block emphasis',
+      aesthetic:
+        'Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and exploratory visual decision-making',
+      form_and_line:
+        'Gestural brush massing with minimal contour commitment, directional stroke flow, and value-shape-first structure',
+      color_palette:
+        'Mood-driven tonal clusters with controlled atmospheric bleed and broad hue families for fast read hierarchy',
+      lighting_setup:
+        'Ambient atmospheric lighting established through large value masses and early-stage contrast anchors',
+      material_texture:
+        'Visible digital brush grain with layered opacity passes, rough-edge blending, and process-forward stroke evidence',
+      render_quality:
+        'Loose concept-stage rendering emphasizing composition testing, readable silhouettes, and iterative velocity over polish',
+      spatial_distortion:
+        'Intentionally unresolved edge zones with simplified depth grouping and suggestive form abstraction',
+      atmosphere: 'Energetic, exploratory, rough, expressive, iterative',
+      key_features:
+        'Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail suppression',
       creative_brief:
-        'Brushes move at the speed of imagination, shapes emerging from broad strokes before detail has permission to arrive. Values establish form in three tones, mood before mechanics, atmosphere before anatomy. This is the idea at the moment of its birth, still wet and breathing and uncommitted to any final form.',
+        'Preserve identity through speedpainting grammar: large-value block-ins, gestural stroke economy, and mood-prioritized form solving should define the preset without anchoring to a single sketch narrative.',
     },
   },
   {
@@ -513,8 +530,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'character focus',
     style: {
-      aesthetic: 'Game level art',
-      form_and_line: 'Perspective grid',
+      aesthetic:
+        'Environment concept-development style with mood-led worldbuilding, navigable composition logic, and place-first visual storytelling',
+      form_and_line:
+        'Perspective-grid anchored block design with readable silhouette layering and path-guided spatial rhythm',
       color_palette: 'Atmospheric, mood-grade spectrum, location-feel depth',
       lighting_setup: 'Key light, dramatic spotlight, environmental storytelling',
       material_texture: 'Painted',
@@ -523,7 +542,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Adventure, place, exploration wonder, threshold excitement',
       key_features: 'Scale figure, perspective grid, environmental storytelling',
       creative_brief:
-        'Atmosphere builds the world before architecture arrives, light establishing the emotional climate of a place that does not yet exist. Scale hints through doorway silhouettes and distant mountain passes, inviting exploration. This is the threshold of adventure, where the environment itself extends a hand toward the player.',
+        'Define identity through environment-concept grammar: atmospheric depth, scale cues, and exploration-forward composition should carry the style without binding it to one specific level narrative.',
     },
   },
   {
@@ -532,17 +551,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'smooth, high res',
     style: {
-      aesthetic: 'Early 3D game',
-      form_and_line: 'None',
+      aesthetic:
+        'Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and nostalgic polygonal abstraction',
+      form_and_line:
+        'Triangle-dominant faceting with minimal smoothing, hard-edge silhouette readability, and UV-era shape simplification',
       color_palette: 'Flat shading, vertex-colored, low-spec palette',
       lighting_setup: 'Vertex light, gouraud shading, no real-time lighting',
       material_texture: 'Pixelated',
-      render_quality: 'PS1 early 3D console retro, jagged nostalgia, pioneer polygons',
+      render_quality:
+        'Retro first-gen 3D rendering fidelity emphasizing constrained geometry, affine-era texture behavior, and deliberate technical limitation aesthetics',
       spatial_distortion: 'Blocky',
       atmosphere: 'Nostalgic, simple, CD-ROM childhood, fifth-gen warmth',
       key_features: 'Polygons, unfiltered textures, affine warping',
       creative_brief:
-        "Triangles declare form through economy, every polygon a deliberate allocation of limited rendering budget. Flat-shaded faces catch light at the simplest possible angle, nostalgia emerging from the gap between intention and limitation. This is the aesthetic of early 3D, where the hardware's constraints became the art direction.",
+        'Keep this preset rooted in low-poly constraint grammar: faceted geometry, low-res texture warping cues, and fixed-function shading simplicity should define identity beyond one console-era memory.',
     },
   },
   {
@@ -552,26 +574,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'one version, single design, no comparison, no annotation, unclear, vague, floating, contextless, unlabeled',
     style: {
-      aesthetic:
-        'Prop-variant exploration sheet, iterative-object design comparison, material-breakout detail circles, scale-reference silhouette, RPG-item tier progression, common-to-legendary upgrade path, functional-part callouts, grip-ergonomic note, designer-decision documentation',
-      form_and_line:
-        'Clean design-drawing contours, variant-comparison alignment, material-callout leader lines, ergonomic-arc construction, orthographic side-view precision',
+      aesthetic: 'Prop-variant design sheet with progression and function-first comparison',
+      form_and_line: 'Clean orthographic contours, aligned variant rows, leader-line annotations',
       color_palette:
-        'Material-specific colors, wood-handle brown, steel-blade grey, bronze-fitting gold, leather-wrap dark, gem-inset jewel tones, tier-progression color coding',
-      lighting_setup:
-        'Consistent studio light for comparison, metallic-specular highlight, subsurface on translucent gems, matte-diffuse on wood',
+        'Material-coded neutrals with restrained accent hierarchy for tier differentiation',
+      lighting_setup: 'Standardized neutral lighting to preserve apples-to-apples comparison',
       material_texture:
-        'Wood-grain variation, metal-brushed directional, leather-stitching detail, gem-facet refraction, rust-wear edge patina',
-      render_quality:
-        'Prop-design variant sheet, iterative-object exploration, material-breakdown rendering, production-reference specification',
-      spatial_distortion:
-        'Orthographic side-view alignment, variant-row comparison, detail-circle magnification, scale-reference figure, exploded-part disassembly',
-      atmosphere:
-        'Methodical, iterative, design-problem-solving, craftsperson precision, production-clarity',
+        'Controlled finish studies (grain, brushed metal, wrap, wear, inset materials)',
+      render_quality: 'Production-oriented iterative sheet balancing readability and specificity',
+      spatial_distortion: 'Grid-aligned side views with detail magnification and exploded subsets',
+      atmosphere: 'Methodical, engineering-aware, iterative craft discipline',
       key_features:
-        'Variant-row comparison, material-callout circles, scale-reference silhouette, tier-progression layout, exploded-part views',
+        'Variant taxonomy, functional callouts, scale references, modular part breakdown',
       creative_brief:
-        "Variants array themselves in evolutionary sequence, the rusted common weapon ascending through material upgrades toward legendary radiance. Each iteration tells the story of the player's journey through the object itself. This is design as progression system, where the sword that saved you at level one becomes the artifact that defines you at level ninety.",
+        'Compare multiple prop directions within a consistent visual framework. Emphasize functional differences, material behavior, and assembly logic so design decisions can be evaluated quickly across tiers while maintaining clear handoff value for downstream modeling and illustration.',
     },
   },
   {
@@ -581,26 +597,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric',
     style: {
-      aesthetic:
-        'Costume-design-concept-board, fabric-swatch-pinned-to-corkboard, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images-alongside-new-designs, trim-and-notion-samples, dye-lot-variation-chips, fashion-studio- wall energy, character-costume-evolution-across-film-timeline, designer-notes-and-question-marks-in-margins',
+      aesthetic: 'Costume exploration board combining silhouette, fabric, and colorway studies',
       form_and_line:
-        'Fashion-croquis-figure-templates, silhouette-exploration-variations, swatch-square-grids, annotation-leader-lines-from-fabric-to-design, design-line-clean-contours',
-      color_palette:
-        'Fabric-swatch-spectrum, historical-dye-reference, costume-character-color-ways, silk-satin-cotton-wool-leather colors, dye-lot-variation, trim-metallic-accents, button-and-hook-color-comparison',
-      lighting_setup:
-        'Designer-studio-daylight, task-lamp-on-pinned-swatches, fabric-sheen-in-light, consistent-lighting-for-comparison',
-      material_texture:
-        'Fabric-switch-square-textures, silk-sheen, wool-tweed, cotton-weave, leather-grain, lace-pattern-pinned, velvet-nap, corkboard-texture-behind',
-      render_quality:
-        'Costume-design-board aesthetic, fashion-concept-rendering, character-wardrobe-exploration, historical-costume-research, film-production costume-art',
-      spatial_distortion:
-        'Corkboard-pin-arrangement, swatch-grid-layout, silhouette-row-comparison, reference-image-cluster, annotation-space, design-evolution-progression',
-      atmosphere:
-        'Creative, historical-research, character-through-clothing, costume-department-workshop, fitting-room-energy, fabric-store-inspiration',
-      key_features:
-        'Fabric-swatch-squares-pinned, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images, corkboard-pin-texture, annotation-leader-lines, notion-sample-accents',
+        'Clean croquis-based variants with annotation leaders and modular panel layout',
+      color_palette: 'Multi-fabric palette families organized by role, era, and accent logic',
+      lighting_setup: 'Neutral comparison lighting with controlled sheen read on textiles',
+      material_texture: 'Swatch-forward surface representation (weave, nap, grain, luster)',
+      render_quality: 'Concept-development board clarity over final-fashion polish',
+      spatial_distortion: 'Grid/pinboard organization for side-by-side option evaluation',
+      atmosphere: 'Iterative studio workflow, design-review readiness',
+      key_features: 'Silhouette matrices, swatch clusters, trim notes, color strip comparisons',
       creative_brief:
-        'Fabric swatches pin to corkboard beside historical references and contemporary sketches, the costume evolving across time periods and dye lots in a single visual conversation. Color-way strips run horizontally through the composition like a timeline of aesthetic decisions. This is character revealed through textile, where what the hero wears contains their entire biography.',
+        'Build wardrobe identity through systematic variation, not single-look finality. Pair silhouette options with textile behavior and palette alternatives so fit, readability, and character coding can be evaluated quickly across multiple production directions.',
     },
   },
   {
@@ -609,17 +617,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'human, cute',
     style: {
-      aesthetic: 'Monster concept',
-      form_and_line: 'Anatomical',
+      aesthetic:
+        'Creature-concept development style driven by ecological plausibility, adaptive morphology, and silhouette threat readability',
+      form_and_line:
+        'Anatomical construction logic with biomechanical cue layering, functional limb articulation, and predator-profile contour control',
       color_palette: 'Skin tones, organic chromatics, creature-flesh spectrum',
       lighting_setup: 'Rim light, silhouette reveal, ambient dread',
       material_texture: 'Scales, fur',
       render_quality: 'Scary, biological, anatomical conviction, apex-predator presence',
-      spatial_distortion: 'Extra limbs',
+      spatial_distortion:
+        'Speculative anatomy distortions guided by functional adaptation, not random mutation, with balanced asymmetry control',
       atmosphere: 'Dangerous, alive, predatory stillness, ecological tension',
       key_features: 'Silhouette, anatomical breakdown, adaptive feature',
       creative_brief:
-        "Anatomy follows the logic of habitat, every fang and carapace an answer to an evolutionary question the viewer hasn't thought to ask. The creature holds its ground with the stillness of perfect adaptation, muscles coiled under hide designed by survival. This is biology as imagination, where every monster is a thesis about its environment.",
+        'Preserve identity through eco-anatomical design grammar: adaptive morphology, habitat-driven feature logic, and high-read silhouette threat should define style beyond one monster vignette.',
     },
   },
   {
@@ -630,25 +641,21 @@ export const GENERATED_STYLE_PRESETS = [
       'bare, dead, no plants, desert, empty, urban, concrete, interior, no vegetation, sterile',
     style: {
       aesthetic:
-        'Environment-design-foliage-kit, tree-variant-shape-library, bush-silhouette-language-exploration, grass-clump-variety-sheet, flowering-plant-seasonal-variations, palm-fern-conifer-deciduous-shape-comparison, stylized-vs-naturalistic-foliage-spectrum, game-environment-vegetation-pass, plant-silhouette-readability-at-distance, Miyazaki-Ghibli-forest-spirit-inspiration',
+        'Vegetation design kit with broad botanical shape-library coverage (Hayao Miyazaki-influenced natural poetry + production readability)',
       form_and_line:
-        'Organic-foliage-contour-variations, frond-unfurling-lines, pine-needle-cluster-contours, vine-tendril-curves, tree-branching-patterns, flower-petal-arrangement',
-      color_palette:
-        'Photosynthesis-green-spectrum, spring-bright-to-autumn-rust, flower-bloom-color-accents, bark-brown-variety, chlorophyll-through-sunlight, shadow-green-cool-to-sun-green-warm',
-      lighting_setup:
-        'Dappled-sun-through-canopy, rim-light-on-leaf-edges, subsurface-scattering-on-thin-leaves, shadow-cool-under-foliage, atmospheric-haze-at-forest-depth',
+        'Organic contour families spanning canopy, shrub, vine, and groundcover archetypes',
+      color_palette: 'Seasonal green-driven spectrum with bark/flower accent channels',
+      lighting_setup: 'Dappled canopy light with subsurface hints and cool understory shadow',
       material_texture:
-        'Leaf-surface-gloss-matte, bark-roughness, fern-frond-fractal, moss-velvet, pine-needle- cluster, petal-soft-ephemeral, vine-tendril-tension',
-      render_quality:
-        'Foliage-design-kit aesthetic, environment-vegetation-reference, botanical-variety-beauty, game-level-art plant-language, nature-as-design-system',
+        'Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss)',
+      render_quality: 'Reference-oriented foliage exploration balancing stylization and realism',
       spatial_distortion:
-        'Tree-silhouette-library-grid, scale-from-bush-to-canopy, ground-cover-to-overstory-layering, atmospheric-depth-vegetation-fade',
-      atmosphere:
-        'Lush, alive, botanical-wonder, forest-bathing calm, Miyazaki-nature-reverence, oxygen-rich-creativity, garden-planning-joy',
+        'Layered ecosystem depth from foreground clusters to atmospheric canopy fade',
+      atmosphere: 'Lush, breathable, ecosystem-rich',
       key_features:
-        'Tree-shape-variant-library, bush-silhouette-comparison, grass-clump-variety-sheet, seasonal-color-variation, plant-silhouette-readability, Miyazaki-forest-inspiration, canopy-to-ground-cover-layering',
+        'Silhouette readability sets, species variation matrices, season-state alternatives',
       creative_brief:
-        'Trees, bushes, ground cover, and vines array themselves in a botanical alphabet of shape language, each silhouette a different letter in the vocabulary of environment design. Stylized forms sit beside naturalistic studies, the spectrum from Ghibli enchantment to field-guide accuracy. This is the forest as design system, where every leaf cluster serves the readability of the game world.',
+        'Build foliage as a modular visual vocabulary for environment design. Prioritize silhouette distinction at gameplay/read distance, while preserving material and seasonal variation so vegetation sets remain flexible across biome mood and art-direction targets, with Hayao Miyazaki-influenced warmth in shape rhythm and ecological mood.',
     },
   },
   {
@@ -657,8 +664,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'background',
     style: {
-      aesthetic: 'Item focus',
-      form_and_line: 'Clean',
+      aesthetic:
+        'Prop-design presentation style with isolated artifact focus, material storytelling, and game-ready readability',
+      form_and_line:
+        'Clean technical-art contouring with form-break accents, silhouette-first readability, and callout-friendly structure',
       color_palette: 'Material render, PBR-reference, asset-library spectrum',
       lighting_setup: 'Studio, product-isolation light, neutral-pedestal',
       material_texture: 'Wear and tear',
@@ -667,7 +676,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Valuable, useful, item-card significance, inventory worth',
       key_features: 'Isolated, orthographic view, material breakdown',
       creative_brief:
-        "The object floats in neutral space, every detail rendered with the attention an artifact deserves. Materials declare themselves: weathered leather, polished metal, carved wood, each surface a different chapter of the item's imagined history. This is the prop as treasure, isolated and elevated by the spotlight of design focus.",
+        'Define this preset through prop-sheet grammar: isolated presentation, material-history cues, and utility-read composition should carry identity beyond one specific item lore.',
     },
   },
   {
@@ -678,25 +687,18 @@ export const GENERATED_STYLE_PRESETS = [
       'detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version',
     style: {
       aesthetic:
-        'Five-minute value thumbnail, pure silhouette blocking, 20 variations of same subject, composition-first exploration, black-shape character designs, negative-space discovery, Feng Zhu rapid iteration, no detail only shape, greyscale priority, design-before-detail philosophy, filling pages with possibility',
-      form_and_line:
-        'Rough value-blocking, chunky silhouette contours, no internal detail lines, pure-shape communication, lasso-tool fill shapes',
-      color_palette:
-        '3-value greyscale, black silhouette, mid-gray background fill, white negative space, no color distraction',
-      lighting_setup:
-        'Value-only light separation, rim-light silhouette reading, no rendering just mass indication',
-      material_texture:
-        'Brush-block roughness, lasso-selection sharp edges, digital-canvas tooth, speed-painting surface, no refinement',
-      render_quality:
-        'Rapid-iteration concept thumbnail, design-exploration aesthetic, ideation-first rendering, no polish allowed',
-      spatial_distortion:
-        'Silhouette variation across grid, proportion exploration, mass-tweaking between iterations, shape-language comparison',
-      atmosphere:
-        'Energetic, exploratory, possibility-rich, pre-decision excitement, creative-sprint focus',
+        'Value-thumbnail silhouette ideation focused on shape readability (Feng Zhu-style rapid ideation)',
+      form_and_line: 'Bold filled contours with minimal or no internal linework',
+      color_palette: 'Strict 3-value grayscale (black, mid gray, white)',
+      lighting_setup: 'Light logic expressed only through value grouping and rim separation',
+      material_texture: 'Matte digital block-fill with slight brush-edge variance',
+      render_quality: 'Deliberately rough ideation pass prioritizing quantity and clarity',
+      spatial_distortion: 'Controlled proportion and mass variation across comparative grid',
+      atmosphere: 'Exploratory, energetic, design-lab momentum',
       key_features:
-        'Greyscale-only silhouettes, multiple-iteration grid, composition thumbnails, value-grouping clarity, shape-language experimentation',
+        'Multi-variant silhouette grid, negative-space testing, high read-at-a-glance contrast',
       creative_brief:
-        'Black shapes populate the canvas like a conversation in pure form, twenty variations on a single subject each arguing for a different personality. Negative space carves character from darkness, the silhouette doing all the storytelling before detail ever arrives. This is design at its most foundational, where the shadow of the thing must convince before the thing itself appears.',
+        'Build character and prop identity from pure outer shape before adding detail. Keep each variant legible at thumbnail scale through disciplined value grouping, strong contour contrast, and intentional proportion shifts, following a Feng Zhu-style high-iteration design cadence.',
     },
   },
   {
@@ -736,25 +738,19 @@ export const GENERATED_STYLE_PRESETS = [
       'detailed, finished, character-focused, close-up, tight brushwork, polished, small scale, intimate',
     style: {
       aesthetic:
-        'Broad-stroke environment blockout, atmospheric-perspective depth establishing, big-shape landscape composition, focal-point lighting direction, thumbnail-scale world-building, macro-brush confidence, Feng Zhu environment speedpaint, James Gurney atmosphere study',
-      form_and_line:
-        'Large brush blocking, soft-contour atmospheric shapes, no detail lines, edge-dissolving into fog, compositional-flow curves',
-      color_palette:
-        'Atmospheric-perspective gradients, warm-light cool-shadow separation, fog-desaturated distance, foreground-saturated depth cues',
-      lighting_setup:
-        'Key-light direction establishing, atmospheric shadow depth, light-ray volumetric indication, backlit-rim atmospheric separation',
-      material_texture:
-        'Big-brush stroke surface, atmospheric-softness texture, fog-volume gradation, cloud-layer softness, distance-lost detail texture',
-      render_quality:
-        'Rough environment pass, atmospheric-blockout beauty, large-scale composition study, world-building speedpaint',
+        'Rough environment blockout with macro-shape worldbuilding focus (Feng Zhu and James Gurney-influenced)',
+      form_and_line: 'Broad brush masses, low-detail edge control, minimal explicit linework',
+      color_palette: 'Depth-driven warm/cool separation with fog-desaturated distance bands',
+      lighting_setup: 'Single clear key direction with volumetric atmosphere indication',
+      material_texture: 'Painterly large-stroke texture and soft haze transitions',
+      render_quality: 'Early environment pass prioritizing composition, scale, and mood',
       spatial_distortion:
-        'Atmospheric-perspective depth compression, big-foreground small-background scale contrast, fog-layer recession planes',
-      atmosphere:
-        'Vast, atmospheric, world-scale, exploratory, pre-production wonder, frontier-imagination',
+        'Foreground exaggeration and atmospheric compression for depth readability',
+      atmosphere: 'Expansive, exploratory, pre-production wonder',
       key_features:
-        'Atmospheric-perspective depth, big-brush shape blocking, fog-layer recession, key-light direction, thumbnail-scale composition',
+        'Big-shape hierarchy, focal light anchor, layered recession planes, thumbnail legibility',
       creative_brief:
-        'Atmosphere arrives before detail, broad brushes establishing the emotional weather of an entire world in a few decisive strokes. Depth stacks in atmospheric bands, the foreground a suggestion and the distance a promise. This is the threshold moment of world-building, where the environment exists as feeling before it exists as place.',
+        'Establish believable world scale quickly through large compositional masses and atmospheric depth cues. Keep detail intentionally suppressed so light direction, silhouette hierarchy, and distance layering carry the full environmental read at small viewing sizes, blending Feng Zhu-style blockout efficiency with James Gurney-like atmospheric logic.',
     },
   },
   {
@@ -763,8 +759,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: '3d, shaded',
     style: {
-      aesthetic: 'Technical diagram',
-      form_and_line: 'White lines',
+      aesthetic:
+        'Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline',
+      form_and_line:
+        'White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view readability',
       color_palette: 'Blue background, white-line cyan, blueprint nostalgia',
       lighting_setup: 'None, diagrammatic, machine-drawing clarity',
       material_texture: 'Grid paper',
@@ -773,7 +771,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Smart, plan, drafting-table focus, patent-office gravity',
       key_features: 'Measurements, dimension lines, grid sub-base',
       creative_brief:
-        'White lines trace purpose across blue fields, every measurement and callout a contract between designer and maker. Orthographic projections obey the tyranny of exact scale, views aligned in the sacred geometry of the drafting table. This is the object before it becomes object, existing first in the pure space of technical intention.',
+        'Define this preset by schematic-blueprint grammar: orthographic projection, measurement hierarchy, and title-block drafting structure should carry identity beyond any single mechanical design.',
     },
   },
   {
@@ -783,26 +781,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'detailed, rendered, colored, one design, final, finished, internal detail, texture, single silhouette',
     style: {
-      aesthetic:
-        '20-silhouette iteration sheet, pure-shape design exploration, negative-space composition study, character-shape-language comparison, bulky-vs-sleek-vs-spiky-vs-round silhouette range, creature-design through silhouette only, Kienan Lafferty shape-exploration, form-before-detail discipline',
-      form_and_line:
-        'Pure black fill shapes, no interior lines, varied contour exploration, chunky-vs-spindly silhouette spectrum, shape-contrast across iterations',
-      color_palette:
-        'Black silhouettes on white, occasional mid-grey for secondary-read shapes, no color whatsoever',
-      lighting_setup:
-        'None, pure silhouette reading against white background, no lighting information',
-      material_texture:
-        'Flat-black fill, sharp-silhouette edges, no surface indication, pure two-dimensional shape reading',
-      render_quality:
-        'Silhouette-iteration concept sheet, pure-shape design study, form-first rendering, industrial-design methodology',
-      spatial_distortion:
-        'Grid-arranged silhouettes for comparison, scale-normalized across iterations, shape-language spectrum positioning',
-      atmosphere:
-        'Methodical, exploratory, design-rigor, form-obsession, pre-detail discipline, professional-iteration mindset',
+      aesthetic: 'Comparative silhouette iteration board for shape-language selection',
+      form_and_line: 'Filled contour-only forms with zero interior detail dependency',
+      color_palette: 'Binary black-white with optional neutral gray grouping aids',
+      lighting_setup: 'Non-rendered; readability entirely silhouette-based',
+      material_texture: 'Flat fill blocks with crisp edge control',
+      render_quality: 'Systematic early-stage design study emphasizing variation breadth',
+      spatial_distortion: 'Normalized scale grid enabling direct mass/proportion comparison',
+      atmosphere: 'Methodical, exploratory, selection-oriented',
       key_features:
-        'Pure-black silhouettes on white, 20-variation grid, no internal detail, shape-language spectrum, scale-normalized comparison',
+        'High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing',
       creative_brief:
-        'Twenty shapes stand in silent competition, each silhouette arguing for the soul of the character through pure outline alone. Bulky squares face sleek triangles face spiky stars, the language of shape doing all the narrative work. This is design as elimination tournament, where the winner is chosen before the face is drawn.',
+        'Explore broad morphological directions through silhouette only. Keep variants scale-consistent and formally distinct so comparative review can isolate the strongest proportion, mass distribution, and negative-space logic before internal detail development.',
     },
   },
   {
@@ -839,8 +829,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'organic, messy',
     style: {
-      aesthetic: 'Game interface',
-      form_and_line: 'Thin tech lines',
+      aesthetic:
+        'Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration',
+      form_and_line:
+        'Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic structure',
       color_palette: 'Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast',
       lighting_setup: 'Glow, emissive interface, screen-space radiance',
       material_texture: 'Screen',
@@ -849,7 +841,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Tech, info, augmented awareness, mission-ops focus',
       key_features: 'Floating, thin rule-lines, data readout',
       creative_brief:
-        'Information floats above the world in clean vectors, health bars and ammo counters forming a translucent layer between player and peril. Diegetic elements embed themselves in the game world, screens within screens, data made physical. This is the interface as architecture, where function wears the skin of fiction.',
+        'Keep this preset defined by HUD grammar: translucent data layering, diegetic readouts, and functional vector hierarchy should carry identity beyond any single mission UI layout.',
     },
   },
   {
@@ -859,26 +851,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight composition',
     style: {
-      aesthetic:
-        'Color-script concept art, lighting-first storytelling, atmospheric-color temperature study, film-color progression across time-of-day, Pixar color-script methodology, environment-emotion mapping, no characters just light, pure atmosphere painting',
-      form_and_line:
-        'Soft atmospheric shape blocking, edge-dissolving fog, value-first massing, light-beams as composition vectors',
+      aesthetic: 'Color-script environmental painting driven by temporal light progression',
+      form_and_line: 'Soft mass blocking with low line dependency and edge hierarchy by depth',
       color_palette:
-        'Scene-color mapping, dawn-cool to noon-warm progression, twilight-magenta transition, night-blue desaturation, emotional-color temperature shifts',
-      lighting_setup:
-        'Time-of-day light study, atmospheric scattering, volumetric light-beam emphasis, shadow-temperature exploration',
-      material_texture:
-        'Atmospheric density gradients, fog-volume softness, light-particle dust motes, cloud-layer texture, haze-depth texture',
-      render_quality:
-        'Color-script painting, atmospheric-study beauty, lighting-first environment art, emotional-color rendering',
+        'Sequenced temperature arcs from cool dawn to warm noon to nocturnal desaturation',
+      lighting_setup: 'Volumetric scattering, shadow temperature contrast, time-of-day key shifts',
+      material_texture: 'Haze layers, particulate glow, diffuse cloud/fog transitions',
+      render_quality: 'Atmospheric study pass prioritizing mood continuity over detail finish',
       spatial_distortion:
-        'Depth-through-atmosphere, color-temperature spatial separation, fog-layered recession, light-defined space creation',
-      atmosphere:
-        'Evocative, emotional, lighting-first, atmospheric storytelling, temporal-transition poetry',
+        'Space defined through color recession and layered atmospheric perspective',
+      atmosphere: 'Cinematic, emotive, transitional, light-led storytelling',
       key_features:
-        'Color-temperature mapping, time-of-day light progression, atmospheric-perspective depth, fog-layer separation, no character subjects',
+        'Multi-frame mood continuity, temperature mapping, depth via fog stratification',
       creative_brief:
-        'Light travels across the same scene in eight emotional temperatures, dawn hope mutating into midnight mystery through the slow graduation of color. Atmosphere carries the narrative arc before any character enters the frame. This is environment as emotion, where the lighting pass contains the entire emotional script in its gradient.',
+        'Use light progression as the narrative engine. Build a sequence where palette temperature, shadow character, and atmospheric density shift coherently across time, allowing mood transitions to read instantly even in simplified, low-detail environment passes.',
     },
   },
   {
@@ -915,26 +901,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled',
     style: {
-      aesthetic:
-        'Production callout sheet, front-side-back orthographic views, material-annotation arrows, scale-reference figure, exploded-mechanism detail, construction-line overlays, measurement callouts, 3D-modeler-ready clarity, nothing left to interpretation',
-      form_and_line:
-        'Clean orthographic linework, consistent line weight, mechanical-drawing precision, annotation-leader straightness, dimension-line accuracy',
-      color_palette:
-        'White background, black ink lines, red annotation marks, blue construction lines, grey tone-value fills, no decorative color',
-      lighting_setup:
-        'Flat shadowless studio, even diffuse illumination for shape reading, rim-light separation for overlapping forms, no mood lighting',
-      material_texture:
-        'Neutral white surface, ink-line precision, digital-wireframe overlay option, cross-section hatch-fill, exploded-view part separation',
-      render_quality:
-        'Production callout sheet, 3D-modeler reference, orthographic precision, no-artistic-ambiguity rendering',
-      spatial_distortion:
-        'Orthographic projection, no perspective, front-side-back grid alignment, exploded-part axial separation, cutaway-section views',
-      atmosphere:
-        'Clinical, precise, informational, production-ready, zero-ambiguity communication',
-      key_features:
-        'Front-side-back orthographic views, annotation arrows with text labels, scale-reference figure, exploded-mechanism details, dimension lines',
+      aesthetic: 'Technical callout sheet for production handoff',
+      form_and_line: 'Uniform orthographic linework with strict weight hierarchy',
+      color_palette: 'Neutral monochrome base with limited annotation accent colors',
+      lighting_setup: 'Flat functional illumination for uncompromised shape legibility',
+      material_texture: 'Diagrammatic hatching, section fills, and exploded-part separators',
+      render_quality: 'High-clarity specification drawing with low interpretive ambiguity',
+      spatial_distortion: 'Pure orthographic alignment plus controlled exploded/cutaway views',
+      atmosphere: 'Clinical, exact, instruction-driven',
+      key_features: 'Multi-view orthos, dimension strings, labeled leaders, scale references',
       creative_brief:
-        'Arrows point toward detail with the authority of engineering, every annotation a contract between the artist and the modeler who will inherit this drawing. Orthographic views align in sacred geometry, measurements declaring the exact dimensions of imagination. This is the final word before construction begins, where ambiguity dies and certainty takes its first breath.',
+        'Communicate intent for downstream modeling and production without stylistic noise. Organize views, dimensions, and annotations into a strict hierarchy so structural decisions, part relationships, and proportional constraints remain immediately actionable.',
     },
   },
   {
@@ -944,26 +921,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'one version, static, no comparison, flat, no materials, unlabeled, single option, no evolution, just final',
     style: {
-      aesthetic:
-        'RPG-weapon-tier-progression-sheet, rusted-common-to-legendary-glow, same-weapon-eight-ascension-levels, material-evolution-from-cracked-iron-to-celestial-gold, RPG-loot-visual-progression, Monster-Hunter-weapon-tree-design, Diablo-common-to-unique visual arc, game-design-reward-visualization, player-motivation-through-visual-upgrade',
-      form_and_line:
-        'Same-base-silhouette-with-increasing-detail, line-complexity-growing-per-tier, common-item-simple-to-legendary-intricate, ornamentation-progression',
+      aesthetic: 'Tiered weapon progression sheet emphasizing upgrade readability',
+      form_and_line: 'Stable base silhouette with controlled complexity increase per tier',
       color_palette:
-        'Rusted-common-grey, iron-steel-blue, reinforced-silver, enchanted-purple-glow, dragon-bone-ivory, demonic-crimson, celestial-gold-white, divine-rainbow-iridescent, tier-progression-color-story',
-      lighting_setup:
-        'Consistent-studio-lighting-for-comparison, specular-highlight-increasing-on-polished-tiers, glow-effect-on-magical-items, matte-diffuse-on-common-rusted',
-      material_texture:
-        'Rust-pitted-iron, hammered-steel-grain, polished-silver-mirror, dragon-bone-porous-ivory, obsidian-volcanic-glass, celestial-gold-leaf, gem-encrusted-inlay, leather-wrap-grip',
-      render_quality:
-        'Weapon-tier-progression-sheet aesthetic, RPG-game-loot-design, item-evolution-beauty, Diablo-to-Monster-Hunter design language, player-reward visualization art',
-      spatial_distortion:
-        'Horizontal-tier-progression-row, same-view-for-comparison, material-magnification-callout-circles, scale-reference, handle-to-blade-proportions',
-      atmosphere:
-        'Progression, aspiration, hard-earned-reward, game-design-psychology, loot-lust-satisfaction, legendary-achievement',
+        'Structured rarity progression from muted utilitarian to luminous high-tier accents',
+      lighting_setup: 'Standardized comparison light with incremental specular/emissive escalation',
+      material_texture: 'Progressive material sophistication (wear, polish, inlay, arcane finish)',
+      render_quality: 'Comparative design board optimized for progression clarity',
+      spatial_distortion: 'Fixed-view horizontal evolution layout with optional detail insets',
+      atmosphere: 'Aspirational, reward-centric, game-economy legibility',
       key_features:
-        'Eight-tier-progression-row, material-evolution-from-common-to-legendary, glow-ramping-per-tier, consistent-view-for-comparison, material-callout-circles, tier-color-story, RPG-loot-language',
+        'Multi-tier continuity, rarity-coded visual jumps, consistent proportion baseline',
       creative_brief:
-        'A single weapon transforms across eight tiers of ascension, cracked iron gathering celestial gold with each progressive iteration. Materials evolve along a visible ladder of player achievement, the object itself chronicling the journey. This is the visual economy of reward, where the sword becomes diary and trophy simultaneously.',
+        'Show advancement through controlled visual deltas rather than silhouette replacement. Keep core identity stable while escalating materials, ornament, and energy cues so each tier feels earned, distinct, and instantly rank-readable in UI and gameplay contexts.',
     },
   },
   {
@@ -991,17 +961,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'pencil, dry',
     style: {
-      aesthetic: 'Elegant writing/drawing',
-      form_and_line: 'Variable width (flex)',
-      color_palette: 'Black ink, nib-responsive, flex-width tonal richness',
-      lighting_setup: 'Pools of ink, liquid-light reflection, wet-pool gloss',
-      material_texture: 'Smooth paper',
-      render_quality: 'Classy, fluid, stationery refinement, handwritten elegance',
-      spatial_distortion: 'None',
-      atmosphere: 'Elegant, old, penmanship tradition, correspondence gravitas',
-      key_features: 'Line variation, flex-nib swell, hairline-to-broad',
+      aesthetic: 'Refined ink-calligraphic illustration with formal stroke cadence',
+      form_and_line: 'High contrast hairline-to-broad transitions via pressure and angle control',
+      color_palette: 'Deep black ink, warm neutral paper, subtle sepia oxidation hints',
+      lighting_setup: 'Wet-ink sheen accents with controlled pooling at stroke terminals',
+      material_texture: 'Smooth vellum-like surface with minimal drag',
+      render_quality: 'Polished and fluid, prioritizing disciplined stroke elegance',
+      spatial_distortion: 'None; proportion preserved through calligraphic structure',
+      atmosphere: 'Ceremonial, classic, literate, archival quietness',
+      key_features: 'Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing',
       creative_brief:
-        'Ink flows from the split nib with the generosity of a letter to someone loved, line width varying with pressure and angle. The hand moves with the rhythm of correspondence, every stroke carrying the weight of penmanship tradition. This is writing as drawing and drawing as writing, where every mark is a small act of elegance.',
+        'Build form through disciplined stroke choreography. Emphasize contrast between razor hairlines and saturated broad strokes, preserving ink-flow dynamics and taper quality. Keep compositions balanced and breathable so calligraphic motion remains the primary carrier of identity.',
     },
   },
   {
@@ -1010,17 +980,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'round, modern',
     style: {
-      aesthetic: 'Gothic text',
-      form_and_line: 'Broad nib',
-      color_palette: 'Black ink, manuscript gold, parchment heritage',
-      lighting_setup: 'Flat, candle-light allusion, illuminated-manuscript warmth',
-      material_texture: 'Parchment',
-      render_quality: 'Medieval, heavy, scriptorium authority, sacred-text gravity',
-      spatial_distortion: 'Ornate',
-      atmosphere: 'Serious, old, cathedral silence, monastic devotion',
-      key_features: 'Verticals, broad-nib stroke, gothic architecturality',
+      aesthetic: 'Gothic blackletter calligraphy with architectural stroke logic',
+      form_and_line: 'Broad-nib vertical stress, diamond joins, angular counters',
+      color_palette: 'Dense black ink, parchment beige, muted antique gold accents',
+      lighting_setup: 'Mostly flat manuscript illumination with subtle warm edge lift',
+      material_texture: 'Fibrous parchment grain with slight ink feather control',
+      render_quality: 'Formal, weighty, high-discipline lettering with ornamental restraint',
+      spatial_distortion: 'Structured ornament extension without breaking text rhythm',
+      atmosphere: 'Liturgical, solemn, archival, ceremonial stillness',
+      key_features:
+        'Strong vertical columns, broken curves, tight spacing cadence, serifed terminals',
       creative_brief:
-        'Blackletter forms march across parchment with the architectural weight of cathedral stone, each stroke a flying buttress of ink. The nib moves through angles sharp enough to cut the silence of the scriptorium. This is text as monument, where the shape of the letter carries as much meaning as the word it spells.',
+        'Treat lettering as constructed architecture. Preserve strict nib-angle discipline, dense vertical cadence, and carefully measured spacing to maintain authority and rhythm. Apply ornament sparingly and structurally so decorative elements support, rather than dilute, blackletter clarity.',
     },
   },
   {
@@ -1029,8 +1000,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'perfect, clean',
     style: {
-      aesthetic: 'Ink stamp',
-      form_and_line: 'Thick, broken',
+      aesthetic:
+        'Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office artifact character',
+      form_and_line:
+        'Thick broken contour forms with pressure-loss gaps, edge breakup, and frame-first stamp geometry',
       color_palette: 'Red or Black ink, stamp-pad economy, official pigment',
       lighting_setup: 'Uneven pressure, ink-starvation pattern, hand-stamped irregularity',
       material_texture: 'Ink starvation',
@@ -1039,7 +1012,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Official, bureaucratic, desk-clerk authority, document-weight',
       key_features: 'Border, stamp frame, ink-fade authenticity',
       creative_brief:
-        'Ink hits paper with the decisive thud of officialdom, each impression a small act of bureaucratic permanence. Text and image share the rubber surface, typography and illustration united by the same decisive gesture. This is the authority of the stamp, where a single impression carries the weight of institution.',
+        'Preserve identity through stamp-impression grammar: uneven pressure, ink-starvation artifacts, and frame-locked official mark structure should define style beyond any single document context.',
     },
   },
   {
@@ -1048,8 +1021,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'lines, solid',
     style: {
-      aesthetic: 'Tattoo style',
-      form_and_line: 'None (dots)',
+      aesthetic:
+        'Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form emergence',
+      form_and_line:
+        'Dot-only mark system with density-controlled gradients, cluster rhythm, and no continuous stroke dependency',
       color_palette: 'Black ink, pointillist-mono, dot-gradient depth',
       lighting_setup: 'Dot density, stipple-as-value, cumulative point shadow',
       material_texture: 'Skin/Paper',
@@ -1058,7 +1033,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Obsessive, soft, pointillist trance, meticulous calm',
       key_features: 'Dots only, stipple gradient, point-by-point tone',
       creative_brief:
-        'Points accumulate into form with the patience of a meditation practice, each dot a unit of time as much as tone. Thousands of tiny decisions coalesce into image, the whole emerging from the patient accumulation of the particular. This is drawing as ritual, where the journey through each dot matters more than the destination of the finished piece.',
+        'Preserve identity through stipple grammar: point-density value modeling, dot-cluster edge control, and stroke-less tonal construction should define the style beyond one tattoo or illustration context.',
     },
   },
   {
@@ -1068,8 +1043,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'gradient, painting',
     style: {
       aesthetic:
-        'Warhol pop-art print, factory repetition, celebrity silkscreen, mass-media critique',
-      form_and_line: 'None',
+        'Pop-serigraph style with repetition logic, flat-process color authority, and media-reproduction iconography',
+      form_and_line:
+        'Layered flat-shape construction with screen-offset edges, halftone contour cues, and repeat-grid compositional rhythm',
       color_palette: 'Misaligned layers, pop-art separation, silkscreen offset',
       lighting_setup: 'Halftone, mesh-screen texture, dot-pattern shadow',
       material_texture: 'Mesh pattern',
@@ -1078,7 +1054,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Bold, commercial, screenprint bazaar, poster-shop energy',
       key_features: 'Layer overlap, color misregistration, halftone rosette',
       creative_brief:
-        'Colors stack in flat layers like bricks in a factory wall, each screen its own sovereign nation of pigment. Repetition becomes meditation, celebrity faces multiplying into pattern, personality dissolving into product. This is the image as mass production, where the copy destroys the original and replaces it with icon.',
+        'Preserve identity through serigraph-pop grammar: repeatable flat layers, misregistration offsets, and halftone process texture should define style without depending on one celebrity motif.',
     },
   },
   {
@@ -1087,17 +1063,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'white background, lines',
     style: {
-      aesthetic: 'Dark print',
-      form_and_line: 'None',
-      color_palette: 'Velvety Black, infinite-depth dark, burnished revelation',
-      lighting_setup: 'Burnished highlights, subtractive light, tonal emergence',
-      material_texture: 'Rocker marks',
-      render_quality: 'Dramatic, soft, tonal emergence, chiaroscuro majesty',
-      spatial_distortion: 'None',
-      atmosphere: 'Moody, night, candle-lit mystery, old-master depth',
-      key_features: 'Dark base, burnished highlight, tonal reveal',
+      aesthetic: 'Subtractive chiaroscuro print with deep black fields',
+      form_and_line: 'Minimal contour lines; value-driven form modeling',
+      color_palette: 'Velvet black, graphite charcoal, warm ivory highlight accents',
+      lighting_setup: 'Burnished highlight reveal over fully darkened plate structure',
+      material_texture: 'Fine rocker tooth, polished burnish transitions, plate-grain softness',
+      render_quality: 'High tonal drama with smooth gradients from mass-black to glow',
+      spatial_distortion: 'Flat print plane with depth implied through tonal recession',
+      atmosphere: 'Nocturnal, contemplative, austere, museum-print gravitas',
+      key_features:
+        'Continuous black ground, staged highlight recovery, velvety midtone transitions',
       creative_brief:
-        'Darkness emerges first, the entire plate worked to hold ink before the artist begins the slow labor of revealing light. Tones graduate from absolute black to luminous highlight through the patient rock of the mezzotint rocker. This is chiaroscuro as technique, where the image is liberated from darkness one burnished highlight at a time.',
+        'Build images from darkness outward: start with an uninterrupted black matrix and carve readable form through controlled highlight recovery. Prioritize tonal choreography over line detail, preserving soft transitions, burnished focal accents, and dense shadow architecture that sustains dramatic yet elegant print depth.',
     },
   },
   {
@@ -1106,17 +1083,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'fine detail',
     style: {
-      aesthetic: 'Permanent marker',
-      form_and_line: 'Thick, bleeding',
-      color_palette: 'Black, smelly, solvent-fume authenticity, permanent-pigment assertion',
-      lighting_setup: 'None, marker-raw, no correction, bold-gesture confidence',
-      material_texture: 'Paper bleed',
-      render_quality: 'Bold, rough, sharpie swagger, street-tag attitude',
-      spatial_distortion: 'Blobby',
-      atmosphere: 'Permanent, loud, marker-commitment, no-going-back energy',
-      key_features: 'Thick lines, marker-nib character, bleed-through honesty',
+      aesthetic: 'Permanent-marker illustration with assertive graphic massing',
+      form_and_line: 'Thick chisel-tip strokes, blunt corners, bleed-expanded contours',
+      color_palette: 'Carbon black, occasional cool gray marker layering',
+      lighting_setup: 'Minimal modeled light; contrast from bold fill-to-paper opposition',
+      material_texture: 'Fiber soak, edge feathering, back-bleed ghosting',
+      render_quality: 'Loud, raw, high-impact marks with uncorrected gesture energy',
+      spatial_distortion: 'Slight blob expansion and edge pooling in saturated regions',
+      atmosphere: 'Urgent, unapologetic, direct, poster-like confidence',
+      key_features: 'Heavy contour weight, visible nib angle behavior, permanent-ink spread',
       creative_brief:
-        "Ink saturates paper fiber with the permanence of a shouted declaration, the marker's ghost bleeding through to the next page. Thick lines commit absolutely, no eraser, no undo, only the forward momentum of the chisel tip. This is drawing with consequences, where every stroke is a point of no return.",
+        'Prioritize commitment and graphic force over precision. Use decisive chisel strokes, broad black masses, and controlled bleed artifacts to create a no-undo visual language. Keep detail economy intentional so marker pressure, direction, and saturation define character.',
     },
   },
   {
@@ -1125,17 +1102,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'clean, font',
     style: {
-      aesthetic: 'Spray paint signature',
-      form_and_line: 'Drips',
-      color_palette: 'Chrome/Black, metallic-can spectrum, silver-cap assertion',
-      lighting_setup: 'Highlight, can-control sheen, spray-fat-cap pattern',
-      material_texture: 'Wall texture',
-      render_quality: 'Street, vandal, aerosol fluency, one-take bravado',
-      spatial_distortion: 'Flow',
-      atmosphere: 'Urban, fast, unauthorized moment, late-night vanish',
-      key_features: 'Drips, tag handstyle, can-control radius',
+      aesthetic: 'Aerosol handstyle signature with velocity-led linework',
+      form_and_line: 'Continuous flowing strokes, pressure-width variation, drip tails',
+      color_palette: 'Chrome silver, matte black, occasional high-contrast accent pops',
+      lighting_setup: 'Surface sheen and overspray bloom define form, not volumetric light',
+      material_texture: 'Concrete/brick grain with soft spray edge diffusion',
+      render_quality: 'Fast, confident, one-pass execution with visible can control',
+      spatial_distortion: 'Elastic letter compression, directional slant, motion-stretch curves',
+      atmosphere: 'Nocturnal, kinetic, urban, improvised immediacy',
+      key_features: 'Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency',
       creative_brief:
-        'Paint escapes the can at pressure, the line born of wrist speed and the urgency of unauthorized creation. Letterforms bend and connect into a private language of identity and territory. This is the signature as architecture, written in the moment between looking over the shoulder and the next pass of headlights.',
+        'Focus on movement and signature identity. Build letterforms from uninterrupted gestural flow, preserving cap-behavior artifacts like overspray, taper bursts, and drips. Keep compositions energetic and readable within a compressed footprint, emphasizing rhythm over polish.',
     },
   },
   {
@@ -1144,17 +1121,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'sharp lines',
     style: {
-      aesthetic: 'Tonal print',
-      form_and_line: 'Etched outline',
-      color_palette: 'Watercolor-like ink, tonal-wash range, rosin-texture tone',
-      lighting_setup: 'Soft wash, rosin-grain diffusion, tonal-merge subtlety',
-      material_texture: 'Rosin grain',
-      render_quality: 'Goya dark tonal print, haunting depth, sleep of reason',
-      spatial_distortion: 'None',
-      atmosphere: 'Somber, tonal, romantic darkness, gothic introspection',
-      key_features: 'Wash effect, aquatint grain, tonal gradation',
+      aesthetic: 'Granular tonal etching with wash-like shadow fields',
+      form_and_line: 'Light etched scaffolding under dominant tonal masses',
+      color_palette: 'Smoke black, sepia umber, aged paper cream, muted iron gray',
+      lighting_setup: 'Diffused tonal bloom with softly merged edge falloff',
+      material_texture: 'Rosin-grain stipple, acid-bitten porosity, powdery plate tone',
+      render_quality: 'Atmospheric print depth with layered tonal veils and subtle edge dissolve',
+      spatial_distortion: 'Stable print geometry; depth built by tone stacking',
+      atmosphere: 'Somber, introspective, gothic-romantic, haunted stillness',
+      key_features: 'Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast',
       creative_brief:
-        'Tone pools across the plate in soft gradients built from the bite of acid on resin dust, each grain a tiny well of ink. The image emerges in atmospheric softness, edges dissolving into romantic ambiguity. This is darkness rendered as velvet, where shadow becomes the primary medium and light the precious exception.',
+        'Treat tone as the primary drawing language. Use granular gradients to model volume, letting contours stay secondary and partially submerged in shadow. Keep transitions misted and cohesive, with controlled grain visibility that conveys handcrafted etch character without sacrificing legibility.',
     },
   },
   {
@@ -1163,17 +1140,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'tag, messy',
     style: {
-      aesthetic: 'Wildstyle mural',
-      form_and_line: 'Outline and fill',
-      color_palette: 'Vibrant spray, wildstyle palette, fill-outline separation',
-      lighting_setup: 'Highlights, 3D-bevel shine, spray-glow radiance',
-      material_texture: 'Brick wall',
-      render_quality: 'Masterpiece, complex, piece-book glory, production-level mural',
-      spatial_distortion: 'Arrow shapes',
-      atmosphere: 'Hip hop, bold, wall-of-fame prestige, block-party spectacle',
-      key_features: 'Arrows, letter connections, dimension bevel',
+      aesthetic: 'Wildstyle mural composition with layered letter architecture',
+      form_and_line: 'Multi-layer outlines, interlocking fills, arrows and extension bars',
+      color_palette: 'High-saturation spray spectrum with complementary contrast blocking',
+      lighting_setup: 'Graphic bevel highlights and controlled glow accents for depth cues',
+      material_texture: 'Masonry wall grain under aerosol gradients and cutbacks',
+      render_quality: 'Complex and polished mural rendering with deliberate hierarchy',
+      spatial_distortion: 'Aggressive perspective bends, angular connectors, kinetic skew',
+      atmosphere: 'Celebratory, competitive, showcase-wall intensity',
+      key_features:
+        'Nested outlines, dimensional drop logic, connector lattice, readable abstraction',
       creative_brief:
-        'Color fills interlock like puzzle pieces of pure style, wildstyle letterforms bending into abstraction and back. Arrows, connections, and dimensional drops build a visual complexity that rewards the second look and the third. This is the wall as gallery, where the piece claims space with the authority of paint and the generosity of public art.',
+        'Construct a full piece as layered typographic architecture. Balance complexity and legibility through clear hierarchy: primary letter mass, secondary connectors, and tertiary effects. Use color blocking, bevel cues, and arrow rhythm to create depth-rich compositions that stay coherent at wall scale.',
     },
   },
   {
@@ -1182,17 +1160,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Concept Illustration',
     negativePrompt: 'red, yellow',
     style: {
-      aesthetic: 'Sun print',
-      form_and_line: 'Silhouette (white)',
+      aesthetic:
+        'Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry',
+      form_and_line:
+        'White-negative silhouettes with soft contact edges and exposure-based tonal falloff on coated paper',
       color_palette: 'Prussian Blue, monochrome cyan, sun-print depth',
       lighting_setup: 'Negative, UV exposure, solar-contact alchemy',
       material_texture: 'Watercolor paper',
-      render_quality: 'Botanical, photo, photogram heritage, Anna Atkins legacy',
+      render_quality:
+        'Alternative-process print fidelity emphasizing UV exposure behavior, washout dynamics, and historic photogram aesthetics',
       spatial_distortion: 'Soft edges',
       atmosphere: 'Dreamy, blue, alternative-process magic, Victorian science',
       key_features: 'Blue only, contact shadow, silhouette photogram',
       creative_brief:
-        'Prussian blue washes over paper in the signature of sunlight, chemistry and photon collaborating on the image. Foliage leaves its silhouette like a ghost of the garden, white shapes against the blue miracle. This is photography before photography knew its name, when light itself was the artist and the botanist held the paper.',
+        'Keep this preset anchored in cyanotype grammar: UV-contact silhouettes, Prussian-blue wash behavior, and chemistry-led tonal emergence should define style beyond one botanical arrangement.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Geometric design
-  form_and_line: Grid
-  color_palette: Red, Blue, Yellow, primary triad, modernist restraint
-  lighting_setup: Flat, functional, no decorative illumination
-  material_texture: Matte
-  render_quality: Modernist, layout, grid-discipline purity, form-follows-function
-  spatial_distortion: Diagonal type
-  atmosphere: Rational, design, intellectual clarity, utopian minimalism
-  key_features: Circle/Square/Triangle, grid structure, asymmetric balance
-  creative_brief: 'Primary colors declare territories on a grid that acknowledges only the essential geometries: circle, square, triangle. Asymmetry achieves balance through tension rather than symmetry, every element earning its place through function. This is design as moral philosophy, where less is not merely more but everything.'
+  aesthetic: Bauhaus poster modernism with function-first geometry
+  form_and_line: Grid-governed composition using circles, squares, triangles, and bars
+  color_palette: Primary triad with black/white neutral anchors
+  lighting_setup: Flat functional value treatment, no decorative shading
+  material_texture: Matte print-surface simplicity
+  render_quality: Precise typographic-layout discipline and asymmetrical balance
+  spatial_distortion: Diagonal type and geometric tension as compositional drivers
+  atmosphere: Rational, didactic, constructive
+  key_features: Modular grid, primary blocks, asymmetric equilibrium, typographic integration
+  creative_brief: >-
+    Compose with strict Bauhaus economy: geometric primitives, disciplined grid logic, and purpose-led typography. Preserve functional clarity and asymmetrical balance while keeping the style portable across subjects beyond any single poster message.
 avoidRules:
   - decorative
   - floral

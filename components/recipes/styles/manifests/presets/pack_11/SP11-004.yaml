@@ -12,16 +12,17 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Folded cardstock model, low-poly sculpture, kirigami construction, geometric craft
+  aesthetic: Low-poly papercraft construction with folded-cardstock geometry
   form_and_line: Sharp paper folds, triangular facets, crease lines, angular edges
   color_palette: Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish
   lighting_setup: Soft shadows, directional key light, facet-defining contrast, gentle ambient
   material_texture: Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel
-  render_quality: Pepakura papercraft geometric, fold-and-glue devotion, low-poly aesthetic, hand-assembled precision
+  render_quality: Hand-assembled geometric craft finish with precise fold logic
   spatial_distortion: Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition
   atmosphere: Delicate, handmade, clean, zen precision, patient craft, geometric calm
   key_features: Visible fold lines, tab-and-slot joins, score marks, polygon faces
-  creative_brief: Sharp folds carve the world into triangular certainties, each cardstock facet catching light at a different angle. Crease lines score the geometry of patience into flat paper, transforming two dimensions into three through precise origami logic. A fragile cathedral of folded craft where every edge tells the story of its making.
+  creative_brief: >-
+    Build forms through visible fold architecture: facets, score lines, and tab joins should define silhouette and volume. Keep surfaces matte and planar so the style reads as handcrafted papercraft rather than smooth CG modeling.
 avoidRules:
   - curved
   - smooth

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Crystalline city crossed by fast hover lines.
-  subject_treatment: Armed commuters and station guardians.
-  color_and_tone: Bright cyan, pure white, and soft violet.
-  lighting_and_shadow: Clean futuristic transit lighting.
-  texture_and_material: Tempered crystal, brushed metal, and holograms.
-  camera_and_composition: Central station as the flow hub.
-  atmosphere_and_mood: Elegant modernity with latent tension.
-  rendering_and_quality: Transit scene for an action RPG.
+  aesthetic: Neo-transit crystalpunk urbanism with militarized commuter infrastructure and high-throughput mobility design.
+  subject_treatment: Civilian-military overlap silhouettes, station sentry archetypes, and transit-role readable population layering.
+  color_and_tone: Electric cyan cores, clinical whites, lilac haze transitions, and steel-cool neutrals with alert-state accents.
+  lighting_and_shadow: Distributed platform luminaires, reflective canopy spill, holographic signage glow, and controlled hard-edge shadows.
+  texture_and_material: Faceted smart-glass skins, brushed transit alloys, anti-slip platform composites, and volumetric hologram artifacts.
+  camera_and_composition: Hub-centered circulation geometry with radial path vectors, multi-level depth lanes, and clear tactical sightlines.
+  atmosphere_and_mood: Ordered velocity, civic sophistication, and subdued security tension.
+  rendering_and_quality: AAA action-RPG environment concept quality with strong navigational readability and polished futurist material response.
 avoidRules:
   - watermark
   - text

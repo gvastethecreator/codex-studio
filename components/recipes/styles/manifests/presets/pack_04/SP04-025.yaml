@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Marker drawing
-  form_and_line: Bleeding ink
-  color_palette: Saturated, overlapping, marker-bleed fusion, highlighter neon
-  lighting_setup: Flat, no correction, marker-smudge raw
-  material_texture: Paper bleed
-  render_quality: Sketchbook, bold, alcohol-marker spontaneity, studio hand-style
-  spatial_distortion: Loose
-  atmosphere: Casual, bright, coffee-shop sketch, creative mess
-  key_features: Stroke overlap, bleeding edge, tonal blending
-  creative_brief: Marker ink bleeds into paper fiber with the casual confidence of a coffee-shop sketch, colors overlapping like conversation. The alcohol base evaporates leaving pigment frozen mid-spread, every stroke a decision made at speed. This is drawing without the safety net, where the line between boldness and mess is exactly the point.
+  aesthetic: Felt-tip/alcohol-marker illustration with spontaneous saturation behavior
+  form_and_line: Broad marker strokes, edge bleed, and overlap-driven contour definition
+  color_palette: High-saturation marker gamut with layered translucent mixes
+  lighting_setup: Flat-to-minimal light modeling via tonal marker passes
+  material_texture: Absorbent paper bleed, feathered edges, occasional smudge drag
+  render_quality: Bold sketchbook immediacy with visible hand-speed decisions
+  spatial_distortion: Loose perspective and gestural simplification
+  atmosphere: Casual, energetic, improvised
+  key_features: Stroke stacking, bleed halos, quick gradient blends via overlap
+  creative_brief: >-
+    Let marker behavior drive the image: fast stroke confidence, transparent layering, and paper bleed artifacts. Keep the style bold and flexible across subjects while avoiding over-specific scene cues that reduce prompt adaptability.
 avoidRules:
   - paint
   - blend

@@ -197,8 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Science And Bio Curiosities',
     negativePrompt: 'sunlight, happy',
     style: {
-      aesthetic:
-        "Dracula's castle, vampire-aristocrat, gothic-romance, coffin-elegance, Thornfield-horror",
+      aesthetic: 'Gothic horror romanticism with decayed aristocratic architecture',
       form_and_line:
         'Spiky architecture, flying-buttress silhouettes, tombstone-contours, wrought-iron flourishes',
       color_palette:
@@ -207,16 +206,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Moonlight, fog, candelabra-flicker, stained-glass-crypt, lightning-flash drama, torch-sconce warmth',
       material_texture:
         'Stone, velvet, fog, crumbling-masonry, coffin-wood, wax-drip candle, cold-marble tomb, cobweb-silk',
-      render_quality:
-        'Scary, romantic, Hammer-horror, Bram-Stoker atmosphere, veil-between-worlds, beautiful-damned',
+      render_quality: 'Atmospheric gothic rendering blending elegance and menace',
       spatial_distortion:
         'Shadows, elongated-fingers, stretched-castle towers, impossible-corridor depth, cape-swallowing darkness',
       atmosphere:
         'Fear, elegance, crypt-whisper, eternal-twilight, forbidden-love, moonlit-solitude',
       key_features:
-        'Bats, candelabra, wrought-iron gates, crumbling-gargoyle, moon-through-broken-window, velvet-draped-coffin',
+        'Wrought-iron motifs, candelabra light pools, stone decay, dramatic moonlit silhouettes',
       creative_brief:
-        "The image materializes as if Dracula's castle, vampire-aristocrat. Depth and surface negotiate meaning, each layer adding dimension to the whole. Every element serves the whole, coherence emerging from careful orchestration.",
+        'Build gothic tension through vertical architecture, candle/moon contrast, and ornamental decay. Keep the mood timeless and reusable, focusing on atmosphere systems rather than fixed character or location references.',
     },
   },
   {
@@ -225,7 +223,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Science And Bio Curiosities',
     negativePrompt: 'metal, dry',
     style: {
-      aesthetic: 'Genetic engineering, flesh-machine hybrid, wet-lab nightmare, chromosome-gothic',
+      aesthetic: 'Biopunk flesh-tech hybrid design with recombinant-lab aesthetics',
       form_and_line: 'Veins, flesh, sinew-strand contours, tendril-tangle, organic-tube networks',
       color_palette:
         'Pink, Green, Flesh, viscera-spectrum, bile-yellow, hemoglobin-crimson, amniotic-amber, bruise-purple',
@@ -233,8 +231,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Wet, slime, fluorescent-incubator, surgical-key, mucous-membrane sheen, bioreactor-glow',
       material_texture:
         'Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface',
-      render_quality:
-        'Gross, fascinating, Cronenberg-body, petri-dish horror, genetic-recombination, bio-lab art',
+      render_quality: 'Visceral speculative bio-design with high organic detail density',
       spatial_distortion:
         'Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy',
       atmosphere:
@@ -242,7 +239,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Flesh tubes, umbilical-cord coils, amniotic-fluid drip, pulsating-vein networks, grown-eye clusters, chitin-plate armor',
       creative_brief:
-        "Flesh and machine merge at the wet edge of genetic possibility, sinew wrapped around chitin in an unholy synthesis born from the petri dish. Incubator light pulses green across amniotic tanks where evolution accelerates beyond nature's patience into Cronenberg territory. The body becomes a construction site where biology learns to upgrade itself through modification and recombinant madness.",
+        'Merge soft tissue, vascular networks, and engineered structures into coherent biotechnological forms. Emphasize wet translucency, asymmetrical mutation logic, and lab-grown material cues without anchoring to a single narrative scene.',
     },
   },
   {
@@ -270,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow, melt-edge rounding',
       creative_brief:
-        "Six arms extend from a hexagonal center with the fractal precision of a crystal that knows exactly where it is going, dendrite branches reaching toward cold air. Dark-field illumination catches the stellar arms in a sapphire glow, transforming ice into celestial geometry one degree below freezing. Wilson Bentley's devotion made visible: each snowflake is a letter written in frozen water, addressed to anyone patient enough to read the cold before it melts into oblivion.",
+        'Highlight six-fold crystal symmetry, dendritic branching, and dark-field sparkle in fragile snowflake macro compositions. Keep the treatment scientifically grounded in ice morphology while flexible across crystal variants.',
     },
   },
   {
@@ -297,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Spores, colony-margin, aerial-hyphae, conidia-powder, petri-dish-lid, inhibition-zone, contamination-sector, sporulation-color',
       creative_brief:
-        "Aerial mycelium reaches upward from the agar surface like a microscopic forest dreaming of spore-bearing altitude, hyphal-fringe exploring the petri-dish atmosphere. Concentric growth rings mark the colony's expansion, each zone a day in the life of an organism that feeds on decay and exhales new life into the carbon cycle. The petri dish becomes an art gallery where the exhibition changes hourly, curated by hyphae and painted in penicillin-mint and sporulation-spectrum color against the agar glass.",
+        'Compose fungal macro studies with colony-margin behavior, aerial hyphae texture, and sporulation color zoning over agar-like substrates. Keep the aesthetic biologically rich and adaptable across mold and mycology specimens.',
     },
   },
   {
@@ -324,7 +321,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Scale bar, micron-marker, acceleration-voltage label, detector-mode annotation, sputter-coating grain, magnification-readout, charging-artifact bands',
       creative_brief:
-        'Electrons scan across a vacuum-sealed landscape where dust becomes boulders at one hundred thousand times magnification, raster lines sweeping over sputter-coated topography. Scale dissolves into vertigo when the invisible world reveals itself more intricate and structured than the visible one ever knew. Nano-landscape rendered in monochrome grey gradient, each dendrite-branch and crystalline-facet a continent mapped by the scanning beam in the electron silence.',
+        'Present SEM imagery as monochrome micro-topography with scale-bar legibility, sputter-coat artifacts, and beam-scan texture cues. Preserve scientific instrument character while allowing diverse specimen geometries.',
     },
   },
   {
@@ -352,7 +349,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Facets, crystal-termination, growth-terrace, cleavage-plane, acicular-spike, drusy-crust, geode-cavity, birefringence-color',
       creative_brief:
-        'Facets snap into geometric certainty as the supersaturated solution surrenders its dissolved cargo to the growing lattice, atom by atom joining the repeating pattern. Copper sulfate blue deepens at the termination point where the newest molecules are still finding their place in the crystal structure. Mineral time moves too slowly for human clocks, each crystal a geological thought that took weeks to complete its sentence, acicular-spike and drusy-crust forming at the patience-speed of chemistry.',
+        'Emphasize crystallization geometry through facet planes, growth terraces, and supersaturation-driven morphology shifts. Preserve lab-mineral precision and color-chemical identity while keeping compositions open-ended.',
     },
   },
   {
@@ -380,7 +377,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Nucleus, nucleolus-dot, mitochondria-squiggle, vacuole-clear, cell-membrane edge, staining-artifact, scale-micron-bar',
       creative_brief:
-        'Hematoxylin stains the nucleus purple while eosin floods the cytoplasm in pink counterpoint, the classic histological duet performed on a glass slide. Mitochondria squiggle through the cellular interior like tiny organs attending to invisible business at the scale where chemistry becomes life. Zoom far enough inward and the body dissolves into a galaxy of living architecture where every cell hums with autonomous purpose, a universe you carry inside and never see.',
+        'Render cellular life as structured histology with stain-coded compartments, membrane boundaries, and organelle clustering. Preserve microscope-slide readability and educational clarity while remaining adaptable across cell types.',
     },
   },
   {
@@ -406,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Texture, pore-opening, hair-follicle, fingerprint-ridge, vellus-hair shaft, sebaceous-filament, desquamation-flake, sulcus-cutis groove',
       creative_brief:
-        "The dermatoscope reveals a topography of vellus hair and sebaceous filament, mountains and valleys on a scale the naked eye dismisses as smooth uniformity. Langer's lines trace the tension map of the body's largest organ, a landscape we inhabit without ever seeing, the epidermal frontier where interior biology meets exterior world. Hyperreal intimacy transforms skin into terrain, the personal becoming geological through the alchemy of extreme magnification, mirror-close truth rendered without retouching.",
+        'Build dermatology macro studies from pore topology, vellus hair presence, and subtle microrelief across skin tension lines. Preserve realistic epidermal variation and clinical honesty without locking into a specific person or body zone.',
     },
   },
   {
@@ -434,7 +431,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Hooks, mushroom-cap tips, loop-pile, interlock-point, woven-backing, hook-shank, adhesive-layer, edge-trim',
       creative_brief:
-        'Mushroom-cap hooks reach toward loop-pile across a gap measured in microns, the burdock-inspired miracle of reversible fastening engineered into nylon monofilament. Each hook finds purchase in the fuzzy landscape of its counterpart with a satisfying engagement sound that every child recognizes before they can name the Swiss engineer who invented it. Hook-and-loop engineering rendered as macro landscape, the interlocking-interface between grip and release, biomimetic design transformed into industrial texture.',
+        'Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale engagement geometry. Preserve biomimetic engineering character while keeping subject framing flexible.',
     },
   },
   {
@@ -459,7 +456,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Grooves, spiral-lead-in, modulation-wiggle, dust-particle, stylus-reflection, lock-groove-circle, label-edge, pressing-plant matrix number',
       creative_brief:
-        'The stylus traces a wiggling canyon carved by sound waves pressed into PVC decades before digital convenience flattened music into invisible files. Modulation reveals itself in the lateral cuts: louder passages swing wider across the groove wall, quiet interludes tighten toward vinyl-carbon silence. The record groove is a physical waveform frozen in black plastic, waiting for a diamond needle to resurrect the music entombed in its spiral, sound you can see with the right grazing-incidence light.',
+        'Build analog-audio macro imagery around groove modulation, spiral geometry, and dust-on-PVC microtexture. Keep tactile hi-fi character and waveform-in-material readability as reusable visual anchors.',
     },
   },
   {
@@ -486,7 +483,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Veins, midrib-center, secondary-vein, areole-polygon, stomata-pores, margin-edge, backlit-translucency',
       creative_brief:
-        "Chlorophyll glows emerald under backlight that transforms the leaf blade into a stained-glass window of the forest floor, the midrib a central spine of transport and structure. Secondary veins branch outward into areole-polygon mesh, a distribution network that delivers sugar and extracts water with the efficiency of a logistical masterpiece refined by photosynthesis. Hold a leaf to the sun and you hold a map of the tree's circulatory system, chloroplast-glow revealing the architecture of green life.",
+        'Frame leaves as translucent vascular maps: midrib hierarchy, venation branching, and chlorophyll-rich backlight are core. Keep the style botanical, structural, and adaptable across species and seasonal palettes.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

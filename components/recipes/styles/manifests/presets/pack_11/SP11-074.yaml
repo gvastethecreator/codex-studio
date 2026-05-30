@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth
   atmosphere: Functional, close, design-cleverness, burdock-inspiration, Swiss-engineer wonder
   key_features: Hooks, mushroom-cap tips, loop-pile, interlock-point, woven-backing, hook-shank, adhesive-layer, edge-trim
-  creative_brief: Mushroom-cap hooks reach toward loop-pile across a gap measured in microns, the burdock-inspired miracle of reversible fastening engineered into nylon monofilament. Each hook finds purchase in the fuzzy landscape of its counterpart with a satisfying engagement sound that every child recognizes before they can name the Swiss engineer who invented it. Hook-and-loop engineering rendered as macro landscape, the interlocking-interface between grip and release, biomimetic design transformed into industrial texture.
+  creative_brief: >-
+    Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale engagement geometry. Preserve biomimetic engineering character while keeping subject framing flexible.
 avoidRules:
   - smooth
 assets:

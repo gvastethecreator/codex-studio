@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Glass house with plants, botanical sanctuary, Victorian Palm House, humid Eden, fern-filled paradise
-  form_and_line: Glass grid, curved glasshouse ribs, ironwork tracery, floor-to-glass, misty depth
+  aesthetic: Conservatory bioclimatic enclosure, botanical-display architecture, iron-and-glass horticultural shell
+  form_and_line: Ribbed glazed spans, fine iron tracery modules, greenhouse nave rhythm, layered planting depth bands
   color_palette: Green, Glass, Tropical Bloom accents, Dew-drop Silver, Mossy floor, Whitewashed iron
   lighting_setup: Diffused bright, glass-filtered sun, condensation prisms, mist-softened rays
-  material_texture: Glass, leaves, mist, cast iron, terracotta pots, gravel path, moist bark
-  render_quality: Humid, lush, peaceful, botanical-specimen clarity, greenhouse glow, steaming-leaf vitality
+  material_texture: Condensed glazing film, oxidized painted iron, damp gravel, terracotta efflorescence, broadleaf wax sheen
+  render_quality: Botanical-specimen precision, humidity-sensitive light bloom, curated lushness with structural clarity
   spatial_distortion: Condensation
-  atmosphere: Alive, wet, calm, growing, oxygen-dense, fern-forest peace
-  key_features: Plants, iron framework, glass panels, mist hanging in air, terracotta pots, fern fronds
-  creative_brief: Glass panels and iron ribs hold humidity like a held breath, condensation writing temporary poems on every pane. Ferns unfurl in slow motion against the architecture, green ambition meeting Victorian engineering in peaceful truce. The glasshouse dreams of rainforests while standing polite in English gardens.
+  atmosphere: Warm-humid cultivation calm, protected growth environment, quiet ecological abundance
+  key_features: Condensation gradients on panes, species-zoned planting beds, iron rib repetition, mist stratification, service paths
+  creative_brief: >-
+    Prioriza el contraste entre precisión estructural y vitalidad vegetal: la
+    retícula portante debe leerse con nitidez mientras la masa botánica introduce
+    variación orgánica, humedad y densidad. Evita convertirlo en jardín genérico;
+    debe sentirse como arquitectura de cultivo controlado.
 avoidRules:
   - dark
   - dry

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Loose spiky ink storybook, Quentin Blake style, Roald Dahl energy, expressive scrawl, joyful mess
-  form_and_line: Scratchy, loose
-  color_palette: Watercolor splash, ink-wash spontaneity, playful spill
-  lighting_setup: None, raw paper, uncontrolled wash flow
-  material_texture: Ink nib
-  render_quality: Roald Dahl mischievous storybook mess, giggling anarchy
-  spatial_distortion: Spiky
-  atmosphere: Funny, energetic, ink-flick irreverence, chaotic joy
-  key_features: Loose lines, ink splatter, expressive scratch
-  creative_brief: Ink flicks from the nib with anarchic joy, lines refusing to stay inside the lines because the lines were never the point. Watercolor splashes behave like weather systems of color, unpredictable and alive. This is drawing as laughter, where the energy of the gesture outruns the precision of the result and both are better for it.
+  aesthetic: Loose whimsical ink storybook language (Quentin Blake influence)
+  form_and_line: Scratchy, fast, expressive nib lines with playful instability
+  color_palette: Light watercolor splash accents over black ink skeleton
+  lighting_setup: Natural paper-white lighting with wash-led value hints
+  material_texture: Nib chatter, splatter marks, watery bleed pockets
+  render_quality: Mischievous, energetic, deliberately unrefined storybook finish
+  spatial_distortion: Elastic proportions and spiky gesture exaggeration
+  atmosphere: Humorous, lively, irreverent
+  key_features: Ink flicks, broken contour continuity, lively splash punctuation
+  creative_brief: >-
+    Keep the line alive and unruly: fast marks, playful distortions, and watercolor accents that support humor without over-rendering. Preserve Quentin Blake-like spontaneity while keeping compositions open enough for broad prompt reuse.
 avoidRules:
   - heavy
   - dark

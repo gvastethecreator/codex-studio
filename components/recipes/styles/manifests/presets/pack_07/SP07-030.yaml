@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Geometric concrete block, revolutionary architecture, communal machine, socialist monument
-  form_and_line: Bold diagonals, intersecting cylinders, floating cantilevers, pilotis grid, dynamic tension
+  aesthetic: Constructivist civic-machine language, ideological monumentality, tectonic propaganda geometry
+  form_and_line: Aggressive diagonals, interlocking prismatic/cylindrical bodies, exposed structural vectors, suspended connectors
   color_palette: Grey, Red accents, Raw Concrete, Faded Ochre, Industrial Black, Propaganda Crimson
   lighting_setup: Overcast, low-angle drama, stark shadow projection, factory-window rhythm
   material_texture: Concrete, rough-cast render, steel frame, glass-block, bolted plate
-  render_quality: Utopian, stark, heavy, revolutionary monument, collectivist scale, heroic industry
+  render_quality: Diagrammatic mass clarity, high-contrast volumetric legibility, archival-modernist severity
   spatial_distortion: Floating masses
-  atmosphere: Serious, collective, revolutionary, communal purpose, factory-hall echo, historic weight
-  key_features: Cylinder/Cube, floating volumes, exposed structure, sky-bridge walkways, bold red accents
-  creative_brief: Cylinders and cubes crash into each other like ideas at a revolutionary committee meeting. Red accents cut through grey like a banner through Soviet sky, color as declaration. The building stands as a manifesto in concrete, promising collective futures that never arrived, still waiting.
+  atmosphere: Austere, programmatic, collectivist, machine-age idealism with historical residue
+  key_features: Cantilever stress reads, pilotis lift-off, bridge-like connectors, banner-red accent planes, structural hierarchy exposed
+  creative_brief: >-
+    Construye composiciones donde la forma actúe como manifiesto: geometría en
+    conflicto controlado, estructura visible y cromatismo político mínimo pero
+    contundente. Debe sentirse como arquitectura-programa (función + ideología), no
+    como set cinematográfico puntual.
 avoidRules:
   - ornate
   - capitalist

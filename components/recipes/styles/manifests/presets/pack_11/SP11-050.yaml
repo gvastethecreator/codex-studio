@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension
   atmosphere: Party, relax, cocktail-hour murmur, ice-clink rhythm, Friday-evening freedom
   key_features: Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap bruise
-  creative_brief: Ice cubes stack in crystalline architecture, refracting amber negroni light into caustic patterns that dance across the bar surface. Condensation beads slowly on the chilled coupe, each droplet a tiny lens containing an inverted miniature of the room it cools. Liquid-ruby clarity promises the specific warmth of a Friday evening, the citrus-peel twist releasing its oil across the surface like a benediction before the first sip.
+  creative_brief: >-
+    Frame cocktails as liquid-physics portraits: refraction through glass, condensation microdetail, and garnish architecture. Keep mood luxurious and tactile while making the style portable across drink types and bar contexts.
 avoidRules:
   - opaque
 assets:

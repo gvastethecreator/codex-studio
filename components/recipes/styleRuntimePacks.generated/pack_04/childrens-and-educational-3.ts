@@ -9,17 +9,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Childrens And Educational',
     negativePrompt: 'tall, realistic',
     style: {
-      aesthetic: 'Super deformed',
-      form_and_line: 'Thick outline',
-      color_palette: 'Bright, candy pop, hyper-saturated cute',
-      lighting_setup: 'Simple, flat cel, soft ambient glow',
-      material_texture: 'Smooth',
-      render_quality: 'Cute, mascot, squishable charm, kawaii appeal',
-      spatial_distortion: '2 heads tall',
-      atmosphere: 'Kawaii, funny, playful slapstick, adorable chaos',
-      key_features: 'Big head, tiny body, oversized props',
+      aesthetic: 'Chibi super-deformed character language with mascot-forward charm',
+      form_and_line: 'Thick clean outlines and simplified interior detail economy',
+      color_palette: 'Bright candy-saturated palette with high contrast readability',
+      lighting_setup: 'Flat cel shading with minimal soft ambient accents',
+      material_texture: 'Smooth digital finish with toy-like surface clarity',
+      render_quality: 'Highly stylized cute rendering tuned for instant emotional read',
+      spatial_distortion: 'Extreme head-to-body ratio (~2 heads tall)',
+      atmosphere: 'Playful, comedic, lighthearted',
+      key_features: 'Oversized head, tiny limbs, exaggerated props and expression icons',
       creative_brief:
-        'Proportions collapse into pure adorable geometry, heads becoming planets that tiny bodies orbit around. Bright candy colors bounce off thick outlines like joy given physical mass. This is the physics of cute, where the rules of anatomy bend to serve the universal language of charm.',
+        'Prioritize silhouette charm and immediate facial readability through extreme proportion stylization. Keep forms simple, bouncy, and high-contrast so characters remain expressive at small sizes across stickers, panels, and UI-style contexts.',
     },
   },
   {
@@ -28,17 +28,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Childrens And Educational',
     negativePrompt: 'perfect registration',
     style: {
-      aesthetic: 'Zine style',
-      form_and_line: 'Grainy',
-      color_palette: 'Neon Pink/Blue/Yellow, riso overlay spectrum, soy-ink vibrance',
-      lighting_setup: 'Overprint, registered misalign, translucent ink layers',
-      material_texture: 'Grainy, misaligned',
-      render_quality: 'Indie, print, risograph texture, zine-culture artefact',
-      spatial_distortion: 'Offset layers',
-      atmosphere: 'DIY, cool, indie-press energy, art-school authenticity',
-      key_features: 'Noise, grain texture, overprint halo',
+      aesthetic: 'Risograph zine print language with analog imperfection as feature',
+      form_and_line: 'Grain-bearing contours and stencil-like shape separation',
+      color_palette: 'Limited fluorescent/soy-ink channels with bold overprint interactions',
+      lighting_setup: 'Layered translucent ink behavior instead of naturalistic light modeling',
+      material_texture:
+        'High grain, registration drift, roller noise, and paper absorbency artifacts',
+      render_quality: 'DIY indie-print finish with deliberate production irregularities',
+      spatial_distortion: 'Channel misalignment and offset halos around forms',
+      atmosphere: 'Handmade, rebellious, art-press energy',
+      key_features: 'Overprint collisions, halftone grain fields, registration mismatch signatures',
       creative_brief:
-        "Colors misalign with the poetry of imperfect registration, each layer asserting its independence from the others. Grain texture buzzes beneath the surface like the hum of the risograph drum itself. This is the artifact as art form, where the machine's fingerprint becomes the signature.",
+        'Embrace riso mechanics as core style grammar: limited inks, imperfect registration, and tactile noise. Compose around overprint behavior and channel offset so each image feels materially printed rather than digitally simulated.',
     },
   },
   {
@@ -47,18 +48,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Childrens And Educational',
     negativePrompt: 'digital, sharp',
     style: {
-      aesthetic:
-        'Classic watercolor animal storybook, Beatrix Potter style, English countryside gentleness, waistcoat whimsy',
-      form_and_line: 'Pencil sketch',
-      color_palette: 'Soft wash, watercolor bloom, botanical pastel',
-      lighting_setup: 'Gentle, diffuse daylight, paper-white reserve',
-      material_texture: 'Paper grain',
-      render_quality: 'Classic, gentle, watercolor delicacy, cottage comfort',
-      spatial_distortion: 'Cute animals',
-      atmosphere: 'Whimsical, soft, English garden gentleness, storybook warmth',
-      key_features: 'White background fade, wet-on-dry detail, soft edge',
+      aesthetic: 'Classic watercolor storybook illustration (Beatrix Potter influence)',
+      form_and_line: 'Light pencil underdrawing with delicate ink-free contour suggestion',
+      color_palette: 'Botanical pastels, warm neutrals, and transparent wash layering',
+      lighting_setup: 'Soft diffuse daylight with preserved paper-white highlights',
+      material_texture: 'Cold-press paper grain, bloom edges, and wet-on-dry detail contrast',
+      render_quality: 'Gentle handcrafted finish with nursery-book readability',
+      spatial_distortion: 'Mildly anthropomorphic and soft-proportioned character stylization',
+      atmosphere: 'Tender, pastoral, comforting',
+      key_features: 'White-space breathing room, feathered wash edges, subtle detail accents',
       creative_brief:
-        'Watercolor blooms across paper grain like the first breath of an English morning, edges softening into the white reserve of possibility. Animals wear waistcoats not as costume but as birthright, their gentle eyes holding the wisdom of garden walls and hedgerow secrets. This is childhood remembered as water and pigment, fragile and luminous.',
+        'Maintain a Beatrix Potter-style balance of observational nature detail and gentle anthropomorphic charm. Use transparent watercolor behavior, soft edge transitions, and paper-white breathing space to keep imagery warm, calm, and timelessly storybook.',
     },
   },
   {
@@ -67,18 +67,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Childrens And Educational',
     negativePrompt: 'drawn, painted',
     style: {
-      aesthetic:
-        'Painted paper collage storybook, Eric Carle style, hungry caterpillar charm, tissue-paper poetry',
-      form_and_line: 'Scissor edges',
-      color_palette: 'Painted paper textures, tissue-paper spectrum, matte-wash vibrance',
-      lighting_setup: 'Drop shadows, layered depth, paper-thickness relief',
-      material_texture: 'Painted paper',
-      render_quality: 'Handmade, layered, collage warmth, pre-school artistry',
-      spatial_distortion: 'Simple shapes',
-      atmosphere: 'Creative, bright, classroom joy, tactile discovery',
-      key_features: 'Layer depth, scissor-cut edges, paper overlap',
+      aesthetic: 'Painted paper-collage storybook language (Eric Carle influence)',
+      form_and_line: 'Hand-cut silhouette shapes with irregular scissor contours',
+      color_palette: 'Tissue-paper primaries and secondaries with matte gouache-like variation',
+      lighting_setup: 'Shallow cast shadows from stacked paper layers',
+      material_texture: 'Visible paper fiber, torn edges, paint mottling',
+      render_quality: 'Handmade tactile collage finish with child-facing readability',
+      spatial_distortion: 'Simplified forms and modular layered depth planes',
+      atmosphere: 'Bright, playful, exploratory, classroom-friendly',
+      key_features: 'Overlap stratification, cut-edge rhythm, texture-rich color blocks',
       creative_brief:
-        'Torn paper edges cast their own shadows, each scissor cut a deliberate act of composition by subtraction. Painted textures layer like geological strata of preschool imagination. This is the art of making from what already exists, where every rough edge is a signature and every overlap a conversation.',
+        'Build imagery through layered cut-paper construction rather than drawn contour modeling. Preserve Eric Carle-style tactile warmth: irregular edges, painted paper variation, and clear shape hierarchy that stays legible across diverse subjects and compositions.',
     },
   },
   {
@@ -87,18 +86,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Childrens And Educational',
     negativePrompt: 'heavy, dark',
     style: {
-      aesthetic:
-        'Loose spiky ink storybook, Quentin Blake style, Roald Dahl energy, expressive scrawl, joyful mess',
-      form_and_line: 'Scratchy, loose',
-      color_palette: 'Watercolor splash, ink-wash spontaneity, playful spill',
-      lighting_setup: 'None, raw paper, uncontrolled wash flow',
-      material_texture: 'Ink nib',
-      render_quality: 'Roald Dahl mischievous storybook mess, giggling anarchy',
-      spatial_distortion: 'Spiky',
-      atmosphere: 'Funny, energetic, ink-flick irreverence, chaotic joy',
-      key_features: 'Loose lines, ink splatter, expressive scratch',
+      aesthetic: 'Loose whimsical ink storybook language (Quentin Blake influence)',
+      form_and_line: 'Scratchy, fast, expressive nib lines with playful instability',
+      color_palette: 'Light watercolor splash accents over black ink skeleton',
+      lighting_setup: 'Natural paper-white lighting with wash-led value hints',
+      material_texture: 'Nib chatter, splatter marks, watery bleed pockets',
+      render_quality: 'Mischievous, energetic, deliberately unrefined storybook finish',
+      spatial_distortion: 'Elastic proportions and spiky gesture exaggeration',
+      atmosphere: 'Humorous, lively, irreverent',
+      key_features: 'Ink flicks, broken contour continuity, lively splash punctuation',
       creative_brief:
-        'Ink flicks from the nib with anarchic joy, lines refusing to stay inside the lines because the lines were never the point. Watercolor splashes behave like weather systems of color, unpredictable and alive. This is drawing as laughter, where the energy of the gesture outruns the precision of the result and both are better for it.',
+        'Keep the line alive and unruly: fast marks, playful distortions, and watercolor accents that support humor without over-rendering. Preserve Quentin Blake-like spontaneity while keeping compositions open enough for broad prompt reuse.',
     },
   },
   {
@@ -129,17 +127,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Childrens And Educational',
     negativePrompt: 'cartoon, messy',
     style: {
-      aesthetic: 'Vintage textbook',
-      form_and_line: 'Fine ink',
-      color_palette: 'Watercolor tint, botanical pastel, sepia heritage',
-      lighting_setup: 'Flat, specimen-light clarity, shadowless diagram',
-      material_texture: 'Aged paper',
-      render_quality: 'Accurate, detailed, field-guide rigor, naturalist precision',
-      spatial_distortion: 'Dissected view',
-      atmosphere: 'Educational, classic, museum-cabinet authority, taxonomic reverence',
-      key_features: 'Label text, anatomical callouts, specimen arrangement',
+      aesthetic: 'Scientific botanical plate in vintage field-guide tradition',
+      form_and_line: 'Fine controlled ink contour with diagrammatic annotation leaders',
+      color_palette: 'Muted watercolor tints over warm archival-paper neutrals',
+      lighting_setup: 'Flat specimen illumination prioritizing structural clarity',
+      material_texture: 'Aged paper grain with light wash transparency',
+      render_quality: 'High-accuracy naturalist rendering for educational reference',
+      spatial_distortion: 'Orthographic specimen layout with sectional/dissected insets',
+      atmosphere: 'Taxonomic, scholarly, measured',
+      key_features: 'Nomenclature labels, anatomical callouts, curated specimen grouping',
       creative_brief:
-        'Ink lines trace botanical specimens with the reverence of scientific witness, each root and stamen catalogued in patient detail. Watercolor tints wash across sepia pages like the ghost of a garden pressed between time. This is the meeting point of art and taxonomy, where the urge to name and the urge to beauty share the same page.',
+        'Illustrate flora as study objects with clear morphology and readable annotation hierarchy. Balance scientific precision and aesthetic restraint through clean ink structure, transparent tinting, and plate-style composition adaptable to varied species.',
     },
   },
   {
@@ -148,17 +146,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Childrens And Educational',
     negativePrompt: 'outline, texture',
     style: {
-      aesthetic: 'Infographic style',
-      form_and_line: 'None',
-      color_palette: 'Vibrant, flat, infographic spectrum, pedagogy primaries',
-      lighting_setup: 'Flat shading, even illumination, vector clarity',
-      material_texture: 'Vector clean',
-      render_quality: 'Educational, modern, screen-friendly crispness, animated-explainer sheen',
-      spatial_distortion: 'Rounded geometry',
-      atmosphere: 'Smart, clean, science-communication clarity, optimistic didacticism',
-      key_features: 'Geometric, simplified shapes, isometric modules',
+      aesthetic: 'Flat educational infographic system (Kurzgesagt-inspired visual pedagogy)',
+      form_and_line: 'Outline-minimal geometric primitives with rounded construction logic',
+      color_palette: 'Vibrant flat-spectrum channels with strong semantic color grouping',
+      lighting_setup: 'Shadow-light simplified to subtle flat-shape value separation',
+      material_texture: 'Pure vector cleanliness with no analog artifacting',
+      render_quality: 'Screen-optimized explainer clarity and modular consistency',
+      spatial_distortion: 'Simplified isometric/orthographic-friendly shape grammar',
+      atmosphere: 'Optimistic, informative, high-clarity',
+      key_features: 'Modular icon blocks, geometric metaphors, hierarchy-first composition',
       creative_brief:
-        'Geometry asserts itself as universal language, every rounded rectangle and isometric module a unit of clarity. Flat colors sit in perfect, shadowless adjacency, explaining the universe through simplification. This is knowledge made beautiful, where complexity surrenders to the elegance of the diagram.',
+        'Translate complex concepts into concise geometric storytelling. Keep Kurzgesagt-style readability through consistent shape language, semantic color coding, and modular composition that remains adaptable across topics without anchoring to fixed narrative scenes.',
     },
   },
   {
@@ -168,26 +166,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'detailed, rendered, textured, realistic, photo, final building, polished, interior, furniture',
     style: {
-      aesthetic:
-        'Physical-foam-core-architecture-massing-model, white-balsa-wood-and-chipboard-buildings, rough-cut-xacto-knife-edges, hot-glue-seams visible, scale-figures-inserted-for-reference, contextual-surrounding-blocks-in-grey, cut-out-paper-trees-on-wire-stands, architectural-school-pinup-critique energy, early-stage-volume-study, before-digital-before-rendering',
-      form_and_line:
-        'Xacto-knife-cut-rough-contours, foam-core-layered-stepping, hot-glue-beads-between-planes, chipboard-grain-direction, wire-pin-tree-supports',
-      color_palette:
-        'White-foam-core, warm-balsa-brown, chipboard-grey, museum-board-white, hot-glue-amber, wire-tree-black, cork-sheet-tan',
-      lighting_setup:
-        'Overhead-studio-daylight, desk-lamp-side-light-to-cast-model-shadows, shadow-depth-revealing-massing, photography-light-box-diffuse',
-      material_texture:
-        'Foam-core-polystyrene-texture, balsa-wood-grain, hot-glue-gloss-beads, chipboard-rough-fiber, cork-sheet- granularity, xacto-blade-scratch-marks',
-      render_quality:
-        'Physical-architecture-model aesthetic, massing-study-beauty, school-critique-rendering, handmade-form-exploration, pre-digital-process-art',
-      spatial_distortion:
-        'Scale-model-proportions, contextual-block-surroundings, figure-scale-reference, base-board-ground-plane, top-down-aerial-photography',
-      atmosphere:
-        'Studio-critique-nervous, late-night-model-building, form-discovery-excitement, architectural-school-soul, chipboard-dust-and-coffee',
-      key_features:
-        'Foam-core-white-blocks, balsa-wood-warmth, xacto-cut-rough-edges, hot-glue-beads, scale-figure-reference, chipboard-base, cut-out-paper-trees, contextual-surrounding-massing',
+      aesthetic: 'Handmade architectural massing model study',
+      form_and_line: 'Blocky volumetric planes with rough-cut contour fidelity',
+      color_palette: 'Neutral model-shop tones (foam white, chipboard gray, wood tan)',
+      lighting_setup: 'Simple studio top/side light to emphasize shadow mass separation',
+      material_texture: 'Visible foam core edges, wood grain hints, glue seam artifacts',
+      render_quality: 'Early-phase physical prototype realism with low-finish honesty',
+      spatial_distortion: 'Scale-model compression with contextual block simplification',
+      atmosphere: 'Workshop-iterative, practical, form-discovery focus',
+      key_features: 'Volumetric hierarchy, scale cues, handcrafted assembly traces',
       creative_brief:
-        'Balsa wood and chipboard rise from the worktable in the rough geometry of architectural dreaming, hot-glue seams visible as honest scars of construction. Scale figures stand at the base of foam-core towers, tiny witnesses to the volume study. This is architecture before architecture, where the building exists first as model and the model exists first as all-nighter.',
+        'Emphasize architecture as mass and proportion rather than facade detail. Preserve handcrafted model artifacts—cut edges, seam joins, and board texture—so the image reads as an early design prototype built for fast spatial decision-making.',
     },
   },
   {
@@ -197,26 +186,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'uniform, single material, untextured, flat, smooth, same everywhere, homogeneous, finished piece, single surface',
     style: {
-      aesthetic:
-        'Surface-study concept art, material-callout swatches around a design, leather next to metal next to fabric material comparison, RPG-item material breakdown, callout-lines to material type labels, texture-library exploration, rendering different surfaces exercise, prop-design material pass',
-      form_and_line:
-        'Callout-leader lines from design to swatches, clean design contours, swatch-grid separation, annotation arrows, technical-drawing precision',
-      color_palette:
-        'Material-accurate colors, leather brown, steel grey, brass gold, fabric cream, wood grain, glass clear, gem-facet sparkle, each material its own color world',
-      lighting_setup:
-        'Consistent studio lighting across all swatches for comparison, specular highlight on metals, matte on fabrics, translucent on glass',
-      material_texture:
-        'Leather grain close-up, metal-brushed surface, fabric weave macro, wood-end-grain, gem-facet refraction, rust-patina edge',
-      render_quality:
-        'Material-study concept sheet, texture-library reference, production-ready surface breakdown, prop-design specification',
+      aesthetic: 'Material-study board integrating design sketch and comparative swatches',
+      form_and_line: 'Precise contour drawing with leader-line callouts and inset annotations',
+      color_palette: 'Material-true hues organized by functional group',
+      lighting_setup: 'Consistent neutral studio lighting for cross-material comparison',
+      material_texture: 'Macro texture insets (grain, weave, brushed metal, translucency, patina)',
+      render_quality: 'Technical-art hybrid sheet optimized for readability and handoff',
       spatial_distortion:
-        'Swatch-grid orthogonal layout, magnified-detail callout circles, annotation-leader lines, exploded-material separation',
-      atmosphere:
-        'Analytical, educational, production-practical, designer-reference, texture-obsession',
+        'Orthogonal layout with magnified callout circles and structured grid spacing',
+      atmosphere: 'Analytical, didactic, workshop-reference clarity',
       key_features:
-        'Callout lines to material swatches, magnified detail circles, annotation labels per material, comparison-grid layout, texture-macro insets',
+        'Swatch matrix, labeled material zones, detail zooms, controlled comparison framework',
       creative_brief:
-        "Material swatches orbit the design like scientific samples, each surface a different thesis about texture and time. Leather sits next to metal next to fabric, the contrast between them telling the story of the object's construction. This is the prop as material essay, where what something is made of defines what it can become.",
+        'Present surface behavior as a system, not decoration. Pair a clean base design with labeled texture and finish callouts so each material choice is legible, comparable, and production-actionable across multiple manufacturing or rendering interpretations.',
     },
   },
   {
@@ -226,26 +208,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no comparison',
     style: {
-      aesthetic:
-        'Monster-size-comparison-chart, human-silhouette-reference-figure-for-scale, five-creatures-in-ascending-height, diminutive-to-colossal-progression, kaiju-scale-at-the-right, real-world-object-reference-alongside, blue-whale-or-elephant-comparison-bars, Godzilla-scale-atmospheric, Monster-Hunter-size-comparison-wall-chart, sense-of-awe-through-relativity',
-      form_and_line:
-        'Human-silhouette at-left-for-scale-reference, size-comparison-bar-lines, creature-silhouette-building-in-complexity-as-size-increases, ground-line-baseline, height-measurement-tick-marks',
-      color_palette:
-        'Human-silhouette-grey, creature-progression-neutral-to-colored, gigantic-monsters-in-atmospheric-blue-grey-distance, measurement-bar-black, scale-grid-blue-line',
-      lighting_setup:
-        'Consistent-rim-light-for-silhouette-reading, atmospheric-depth-fade-on-giant-creatures, ground-plane-shadow-for-scale, fog-at-colossal-scale',
-      material_texture:
-        'Silhouette-flat-quality, atmospheric-fog- fading-texture-on-large, measurement-tick-precision, real-object-reference-photo-texture, museum-educational-display-surface',
-      render_quality:
-        'Size-comparison-chart aesthetic, monster-scale-reference, kaiju-magnitude beauty, Monster-Hunter-size-guide, science-museum-educational-art',
-      spatial_distortion:
-        'Horizontal-size-progression-left-to-right, human-reference-anchor-left, creature-height-doubling-each-step, background-atmospheric-fade-on-largest',
-      atmosphere:
-        'Awe-inspiring, humbling, human-insignificance, scale-terror-and-wonder, scientific-fascination, giant-monster-majesty, museum-education',
+      aesthetic: 'Creature size-comparison chart with educational scale framing',
+      form_and_line: 'Baseline-aligned silhouettes with measurement ticks and reference markers',
+      color_palette: 'Neutral comparative scheme with restrained atmospheric scaling cues',
+      lighting_setup: 'Consistent silhouette rim/read light for cross-subject legibility',
+      material_texture: 'Clean chartboard finish with minimal atmospheric fade on largest entries',
+      render_quality: 'Infographic-style concept sheet optimized for proportional comprehension',
+      spatial_distortion: 'Left-to-right ascending scale progression with fixed ground reference',
+      atmosphere: 'Awe-oriented yet analytical, museum-chart clarity',
       key_features:
-        'Human-silhouette-scale-reference, size-ascension-left-to-right, atmospheric-fade-on-giants, measurement-tick-bar, ground-line-baseline, real-object-comparison, Monster-Hunter-size-chart-language',
+        'Human and real-world benchmarks, incremental height logic, clear unit hierarchy',
       creative_brief:
-        "A human silhouette stands at the left edge of the chart, rapidly dwarfed by creature after creature scaling upward toward the kaiju-sized colossus at the right. Reference animals anchor the comparison: elephant, blue whale, familiar giants rendered small by what comes next. This is awe engineered through proportion, where the monster's true size is measured in how thoroughly it erases the human from the frame.",
+        'Communicate extreme scale through disciplined comparative layout. Anchor every creature to shared baseline and measurement context, combining familiar reference objects with escalating silhouettes so perceived magnitude remains immediate and unambiguous.',
     },
   },
   {
@@ -256,25 +230,20 @@ export const GENERATED_STYLE_PRESETS = [
       'stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion, guesswork',
     style: {
       aesthetic:
-        "Medical-textbook-anatomy-reference, muscle-diagram-overlay-on-skeletal-system, bone-ghost-view-in-translucent-flesh, tendon-insertion-origin-annotation, Leonardo-da-Vinci-anatomical-study energy, Gray's-Anatomy-textbook illustrations, figure-drawing-anatomy-reference, ecorche-muscle-flayed-view, accurate-proportion-grid, scientific-observation-art",
-      form_and_line:
-        'Precise-medical-illustration-linework, muscle-fiber-direction-strokes, tendon-cord-insertion-lines, skeletal-ghost-contour, organ-cavity-diagram, notation-leader-lines',
+        'Educational anatomical reference plate with layered structural clarity (Leonardo da Vinci and classical medical-plate influence)',
+      form_and_line: 'Precise technical linework for muscle, bone, and tendon mapping',
       color_palette:
-        'Medical-textbook-red-muscle, white-bone, blue-vein, crimson-artery, yellow-nerve, translucent-flesh-pink, anatomical-chart-educational spectrum',
-      lighting_setup:
-        'Clinical-even-diffuse-illumination, no-mood-lighting-for-accuracy, rim-light-for-three-dimensional-form-reading, shadow-to-indicate-depth-in-body-cavities',
-      material_texture:
-        'Anatomical-plate-paper, vintage-textbook-aging, ink-line-precision, watercolor-wash-over-drawing, translucent-tissue-layering, dissection-reference-texture',
-      render_quality:
-        "Medical-textbook-anatomical-rendering, Leonardo-da-Vinci-study, Gray's-Anatomy beauty, scientific-illustration-precision, ecorche-reference-art",
+        'Standardized didactic coding (muscle warm, bone neutral, vascular cool/warm accents)',
+      lighting_setup: 'Even clinical illumination for unambiguous form legibility',
+      material_texture: 'Plate-style paper and wash overlays with minimal decorative noise',
+      render_quality: 'Reference-grade illustration optimized for study and instruction',
       spatial_distortion:
-        'Anterior-posterior-lateral orthographic, muscle-overlay-ghost-views, skeleton-within-flesh-transparency, inset-magnification-detail, proportion-grid-overlay',
-      atmosphere:
-        'Scientific, reverent, study-of-life, Renaissance-curiosity, anatomical-truth, art-meets-science, figure-drawing-foundation',
+        'Multi-view orthographic layout with transparent overlays and inset details',
+      atmosphere: 'Scientific, disciplined, pedagogical',
       key_features:
-        'Muscle-diagram-overlay, skeletal-ghost-underdrawing, tendon-insertion-annotation, medical-textbook-line-quality, anterior-posterior-lateral, proportion-grid, ecorche-flayed-view',
+        'Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity',
       creative_brief:
-        'Muscle fibers layer over bone like anatomical ghosts, tendon insertions annotated with the precision of surgical observation. The ecorche figure stands flayed and instructive, revealing the engineering beneath the skin. This is the body as machine and miracle simultaneously, drawn with the reverence of Leonardo and the precision of Gray.',
+        'Present anatomy as a readable structural system. Use consistent labeling, overlay logic, and view alignment so skeletal framework, muscular volume, and connective pathways can be studied independently and in relation without stylistic ambiguity, preserving a Leonardo da Vinci-informed observational rigor.',
     },
   },
   {
@@ -283,18 +252,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Childrens And Educational',
     negativePrompt: 'realistic, soft',
     style: {
-      aesthetic:
-        'Sailor Jerry bold-traditional tattoo flash, nautical boldness, old-school commitment',
-      form_and_line: 'Bold black outline',
-      color_palette: 'Red, Yellow, Green, Black, classic-flash palette, shop-staple primaries',
-      lighting_setup: 'Skin fade (whip shading), pepper-shading gradation, flash-sheet lighting',
-      material_texture: 'Paper stain',
-      render_quality: 'Old school, bold, sailor-sleeve heritage, lasting-hold tradition',
-      spatial_distortion: '2D',
-      atmosphere: 'Tough, classic, boardwalk tradition, anchor-tattoo loyalty',
-      key_features: 'Bold will hold, thick outline, limited-palette flash',
+      aesthetic: 'Traditional flash-sheet tattoo graphic language',
+      form_and_line: 'Heavy black contour with simplified internal separators',
+      color_palette: 'Classic flash primaries (red, yellow, green, black) with flat opaque fills',
+      lighting_setup: 'Minimal realism; depth through selective whip/pepper shading motifs',
+      material_texture: 'Slight paper aging and ink edge texture',
+      render_quality: 'Bold, iconic, high legibility at distance and small scale',
+      spatial_distortion: 'Intentionally flat emblematic composition',
+      atmosphere: 'Tough, nostalgic, craft-shop heritage, ceremonial permanence',
+      key_features: 'Bold-will-hold geometry, limited palette discipline, emblem-first silhouettes',
       creative_brief:
-        'Bold lines and solid fills honor the tradition of anchors, swallows, and hearts worn on sailor skin. Red, green, black, and yellow build a visual vocabulary of commitment and superstition. This is the flash sheet as promise, where every design has weathered decades of salt air and still holds its color.',
+        'Design for immediate recognition and long-term readability. Use thick black outlines, compact symbolic forms, and flat saturated fills with restrained shading accents. Maintain sheet-ready clarity where each motif works as a standalone emblem and as part of a cohesive flash collection.',
     },
   },
   {
@@ -303,17 +271,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Childrens And Educational',
     negativePrompt: 'paint, thick',
     style: {
-      aesthetic: 'Doodle',
-      form_and_line: 'Thin blue lines',
-      color_palette: 'Bic Ballpoint Blue, notebook authenticity',
-      lighting_setup: 'Crosshatching, pen-pressure shadow, desk-lamp intimacy',
-      material_texture: 'Paper indent',
-      render_quality: 'Sketchy, obsessive, margin-doodle honesty, school-desk artistry',
-      spatial_distortion: 'Ink blobs',
-      atmosphere: 'Bored, detailed, lecture-hall drift, idle-hands devotion',
-      key_features: 'Blue ink, ballpoint texture, pressure-line weight',
+      aesthetic: 'Notebook-ink illustration with obsessive micro-hatching',
+      form_and_line: 'Fine pressure-variable pen lines, spiral and contour doodle logic',
+      color_palette: 'Ballpoint blue, desaturated navy, off-white notebook stock',
+      lighting_setup: 'Density-built shading through layered hatch accumulation',
+      material_texture: 'Light paper tooth, occasional indent drag, tiny ink clots',
+      render_quality: 'Raw, intimate, highly detailed pen-work with handmade variance',
+      spatial_distortion: 'Minor line wobble and pooled-ink nodes in dense zones',
+      atmosphere: 'Casual yet meticulous, study-desk focus, spontaneous craft energy',
+      key_features: 'Blue-only mark system, pressure-led value changes, margin-sketch rhythm',
       creative_brief:
-        'Ballpoint ink accumulates in spiraling density, the pressure of the hand visible in every accumulating stroke. Doodles evolve into devotion, the margins of a notebook becoming a cathedral of idle attention. This is the masterpiece of the bored, where the tool of the student becomes the instrument of the obsessive.',
+        'Compose with continuous pen flow and cumulative hatch density rather than painterly fills. Preserve the immediacy of notebook drawing: slight tremor, pressure shifts, and clustered line nests that convert quick doodle language into resolved illustrative structure.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: None, flat-sheet, grit-density, particle-projection, backing-plane
   atmosphere: Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience
   key_features: Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction scratch
-  creative_brief: 'Angular grit particles stand at attention on the resin-coated backing, each sharp facet a tooth waiting to bite into wood or metal with controlled violence. Grazing light catches the abrasive points in a constellation of bright specks across the brown field, particle-size distribution revealed through shadow and sparkle. Destruction as precision: every scratch left behind is a record of material removed measured in microns, the grit-grade a language of roughness spoken by every workshop surface.'
+  creative_brief: >-
+    Build abrasive-surface studies from angular grit morphology, resin bonding topology, and directional scratch evidence. Keep workshop material realism and roughness-grade readability as primary style drivers.
 avoidRules:
   - smooth
 assets:

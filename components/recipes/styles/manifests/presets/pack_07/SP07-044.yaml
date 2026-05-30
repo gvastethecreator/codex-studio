@@ -17,14 +17,15 @@ visualDna:
   color_palette: Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys
   lighting_setup: Diffuse late-day illumination with mild reflected fill and gentle luminance falloff across linear surfaces
   material_texture: Raw concrete grain, corten oxidation bloom, brushed steel edges, gravel fines, wind-responsive grasses, weathered timber inserts
-  render_quality: Editorial-grade landscape architecture rendering with emphasis on material authenticity and ecological layering
+  render_quality: Competition-board landscape fidelity, adaptive-reuse legibility, ecologically credible planting succession and detailing
   spatial_distortion: Compressed linear perspective supporting procession, depth through repeating modules, strong path legibility
-  atmosphere: Civic, restorative, adaptive, contemporary, breathable, infrastructural yet humane
-  key_features: Linear planting rails, modular seating planes, reclaimed-industrial texture palette, public-use readability, ecological succession cues
+  atmosphere: Civic respite under infrastructural memory, contemporary but weathered, socially permeable
+  key_features: Rail-origin linearity, corten-edge stratification, modular seat-wall interfaces, pollinator-support planting mixes, pedestrian procession cues
   creative_brief: >-
-    Express adaptive-reuse landscape language as the core style: disciplined
-    linear geometry, reclaimed materials, and ecological planting structure
-    must define the preset independent of a specific city or landmark.
+    Mantén tensión entre pasado industrial y ecología contemporánea: la retícula
+    infraestructural debe seguir visible mientras la vegetación la suaviza y reprograma.
+    El estilo debe servir para corredores lineales, parques elevados y bordes urbanos
+    reconvertidos.
 avoidRules:
   - wild forest
 assets:

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Screenprint landscape
-  form_and_line: None
-  color_palette: Separated layers, earth-toned screen spectrum, scenic flat-tint
-  lighting_setup: Flat gradient, dawn-dusk banding, atmospheric layering
-  material_texture: Screen mesh
-  render_quality: Vintage travel, bold, nostalgia-invoking vistas, WPA monumentality
-  spatial_distortion: Simplified mountains
-  atmosphere: Majestic, graphic, road-trip reverie, democratic grandeur
-  key_features: Serif font, layered silhouette, scenic horizontal banding
-  creative_brief: Layered silhouettes of mountains stack like geological promises, each color band a different hour of the wilderness day. Serif type announces destinations with the authority of a national promise. This is landscape translated through the democracy of screenprint, where nature becomes poster and poster becomes monument.
+  aesthetic: WPA-inspired national-park travel poster screenprint language
+  form_and_line: Simplified landscape silhouettes with strong horizon stratification
+  color_palette: Earth-toned separated inks with limited scenic band gradients
+  lighting_setup: Stylized day-phase color banding rather than realistic light physics
+  material_texture: Screen mesh print feel with flat-ink layering
+  render_quality: Bold vintage poster clarity with monumental scenic abstraction
+  spatial_distortion: Simplified mountain masses and compressed depth tiers
+  atmosphere: Majestic, nostalgic, civic-romantic
+  key_features: Serif titling, horizontal strata, landmark silhouette simplification
+  creative_brief: >-
+    Translate landscape into iconic poster forms: layered silhouettes, limited inks, and strong typographic framing. Keep the WPA travel-poster spirit while avoiding dependence on one specific landmark composition.
 avoidRules:
   - photo
   - detailed

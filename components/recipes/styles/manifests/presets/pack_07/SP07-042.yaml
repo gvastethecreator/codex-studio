@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Overgrown flower beds, romantic chaos, Gertrude Jekyll border, painterly planting, bee-hum profusion
-  form_and_line: Organic clumps, meandering paths, herbaceous mounds, self-seeded drifts, rose-arch curve
+  aesthetic: Informal cottage planting, romantic abundance horticulture, soft-edged domestic garden vernacular
+  form_and_line: Layered mixed-height borders, meandering circulation, rounded perennial masses, climbing-arch punctuation
   color_palette: Pastel flowers, Green, Lavender haze, Hollyhock Pink, Delphinium Blue, Cream Rose
   lighting_setup: Soft sun, cloud-diffused English light, dappled under-tree, golden-hour petal glow
   material_texture: Petals, leaves, rough stone path, mossy brick, bark mulch, feathery foliage
-  render_quality: Romantic, messy, cottage-idyll, painter's garden, informal abundance, bee-loud beauty
+  render_quality: Painterly botanical richness, seasonal stratification clarity, intentionally informal but composed garden structure
   spatial_distortion: None
-  atmosphere: Peaceful, sweet, dreamy, rustling, scented, time-stands-still garden
-  key_features: Flowers, overflowing borders, rose arches, winding path, bird bath, foxgloves, lavender
-  creative_brief: Flowers crowd the path with the gentle anarchy of things that grow without permission. Lavender spills over stone edges, foxgloves standing tall like pink sentries of abandon. The garden has forgotten where it was told to stay, and in that forgetting found something more beautiful than order.
+  atmosphere: Gentle abundance, sensory softness, lived-in horticultural intimacy
+  key_features: Overflowing border transitions, scented herb drifts, rose/clematis vertical accents, curved gravel paths, pollinator cues
+  creative_brief: >-
+    Prioriza mezcla, estratificación y espontaneidad controlada: debe parecer libre
+    pero diseñada por capas de floración, textura y altura. Evita formalismo rígido;
+    busca calidez doméstica y continuidad estacional.
 avoidRules:
   - formal
   - concrete

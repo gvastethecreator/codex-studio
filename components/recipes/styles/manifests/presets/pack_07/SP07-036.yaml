@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - historical-and-sacred-architecture
 visualDna:
-  aesthetic: Vegas gambling hall, pleasure labyrinth, windowless empire, sensory-trap palace
-  form_and_line: Busy patterns, carpet maze, machine rows, mirrored columns, endless grid of chance
+  aesthetic: Hyper-commercial gaming interior, spectacle-driven chance architecture, windowless sensory economy
+  form_and_line: Dense machine orthogonals, non-directional carpet fields, mirrored reflective breaks, circulation ambiguity by design
   color_palette: Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple
   lighting_setup: Dark with bright spots, ceiling wash, slot-machine glow, chandelier bling, ambient overstimulation
-  material_texture: Carpet, plastic, vinyl seating, mirrored ceiling, chrome trim, felt table
-  render_quality: Overstimulating, tacky, sensory-saturation, gambler's cathedral, neon-excess
+  material_texture: Pattern-saturated carpet pile, injection-molded machine housings, chrome trim wear, laminated bar surfaces, felt-table nap
+  render_quality: High-density stimulus realism, luminous hierarchy control, commercial-grade nightlife finish
   spatial_distortion: None
-  atmosphere: Greed, excitement, fake, disoriented, timeless, chance-buzzed numbness
-  key_features: No clocks, no windows, slot machines, busy carpet, mirrored ceiling, cocktail waitress
-  creative_brief: Carpet patterns swirl in deliberate confusion, designed to keep eyes on the floor and minds off the exits. Slot machines blink their seductive arithmetic, chrome and neon building a temple where hope is the currency and time the sacrifice. The room has no clocks, no windows, no mercy, only another roll.
+  atmosphere: Continuous arousal, temporal dislocation, engineered comfort-pressure, synthetic opulence
+  key_features: Clockless envelope, low-ceiling glow wash, jackpot beacon clusters, patterned wayfinding suppression, mirrored depth amplification
+  creative_brief: >-
+    Estructura el lenguaje visual como sistema de sobreestimulación controlada:
+    patrones, luces y reflejos deben dirigir atención continua y desorientar el
+    tiempo. El resultado debe sentirse comercial y estratégico, no caricaturesco.
 avoidRules:
   - daylight
   - calm

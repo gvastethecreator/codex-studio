@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Infinity pool, resort paradise, liquid-edge luxury, beach-club fantasy, turquoise dream
-  form_and_line: Water edge, vanishing horizon, Baja shelf, palm trunks vertical, curved lazy-river
+  aesthetic: Tropical hospitality leisure architecture, horizon-edge aquatic luxury language, resortscape refinement
+  form_and_line: Infinity-edge datum alignment, shallow lounge shelf geometry, palm-vertical counterpoints, terrace-water layering
   color_palette: Turquoise, Palm Green, White cabana, Bougainvillea Pink, Sand Beige, Sky-reflected teal
   lighting_setup: Bright sun, underwater glow, tiki-torch amber, fire-pit flicker, sunset-surface shimmer
   material_texture: Water, stone, pebble-sheen plaster, pool tile, teak deck, canvas awning
-  render_quality: Luxury, vacation, resort-brochure, five-star paradise, pool-day perfection
+  render_quality: Premium hospitality visualization, polished but believable luxury finish, controlled reflective water realism
   spatial_distortion: None
-  atmosphere: Relaxing, expensive, sunkissed, cocktail-bliss, endless-summer, weightless-tranquility
-  key_features: Palm trees, infinity edge, submerged loungers, cabana, fire bowls, turquoise water
-  creative_brief: Water meets sky at an edge so precise it disappears, the pool becoming a second horizon liquid and still. Palm shadows stripe across limestone, afternoon distilled into geometry of leisure. The resort floats between ocean and pool deck, a thin membrane of luxury stretched across tropical heat.
+  atmosphere: Slow-time indulgence, warm-climate serenity, curated escape mood
+  key_features: Knife-edge overflow line, submerged chaise platforms, cabana shade modules, evening fire accents, tropical planting frame
+  creative_brief: >-
+    Construye una gramática de resort de alta gama basada en relación agua-horizonte,
+    sombras vegetales y materialidad cálida de exterior. Debe sentirse exclusivo y
+    relajado sin depender de marca, destino o escena turística específica.
 avoidRules:
   - cold
   - city

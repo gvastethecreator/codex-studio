@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Decaying hallway, institutional horror, peeling madness, sanitarium ruin, ghost of order
-  form_and_line: Peeling paint lines, institutional symmetry, long perspective corridor, collapsed grid, sagging ceiling
+  aesthetic: Derelict institutional interior, bureaucratic ruin, pathology of maintenance failure
+  form_and_line: Rigid corridor axiality disrupted by collapses, repeated door modules, suspended-ceiling failure patterns
   color_palette: Desaturated Green/Grey, Sickly Mint, Rust stain, Water-damage Brown, Faded Cream
   lighting_setup: Shafts of light, dust-beam theater, broken-window blade, flickering emergency bulb, pitch corners
-  material_texture: Rot, rust, debris, flaking paint, water-stained plaster, shattered glass, mold bloom
-  render_quality: Scary, ruined, texture, abandonment beauty, decay-as-art, gothic institutional
+  material_texture: Delaminated paint skins, mineral streaking, rust bloom at junctions, damp plaster blistering, fungal spread traces
+  render_quality: Forensic decay readability, high tactile distress detail, institutional-era authenticity
   spatial_distortion: Collapsed ceiling
-  atmosphere: Horror, sad, old, forgotten, echoing, institutional trauma, peeling silence
-  key_features: Wheelchair, peeling paint, long hallway, broken windows, institutional signs, collapsed ceiling
-  creative_brief: Paint peels in continents, cartographies of neglect mapping themselves across institutional green walls. A wheelchair sits where it was abandoned decades ago, patient object still waiting for someone to return. Dust motes dance in light-shafts like the only living things brave enough to still inhabit this place.
+  atmosphere: Oppressive stillness, administrative abandonment, cold acoustic emptiness
+  key_features: Faded compliance signage, broken fluorescent housings, cracked linoleum seams, dust shafts, partial ceiling cave-ins
+  creative_brief: >-
+    Construye la identidad desde la degradación sistémica: pintura, yeso, luminarias
+    y pavimentos deben narrar décadas de uso y abandono. Mantén tensión psicológica
+    sin teatralidad explícita; el miedo surge de la evidencia material y la escala
+    institucional repetitiva.
 avoidRules:
   - clean
   - new

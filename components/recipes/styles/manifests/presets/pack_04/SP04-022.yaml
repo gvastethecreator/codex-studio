@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Soft sketch
-  form_and_line: Pencil strokes
-  color_palette: Soft, layered, crayon-adjacent warmth, gentle fade
-  lighting_setup: Paper white, natural ambient, soft diffuse
-  material_texture: Pencil grain
-  render_quality: Gentle, fuzzy, sketchbook intimacy, soft-focus warmth
-  spatial_distortion: Soft edges
-  atmosphere: Quiet, homey, afternoon sketch, personal journal
-  key_features: Crosshatching, pencil stroke direction, smudged blending
-  creative_brief: Colored pencil layers build slowly like sediment, each stroke leaving its grain signature on the tooth of the page. The soft fuzz of pigment drift creates a world seen through the gentlest possible lens. This is the sketchbook as sanctuary, where quiet observation becomes a form of devotion.
+  aesthetic: Soft colored-pencil sketch language with layered pigment build-up
+  form_and_line: Fine pencil contour and hatch strokes with directional grain
+  color_palette: Muted warm-cool pencil layers with gradual tonal blending
+  lighting_setup: Diffuse paper-white illumination with low-contrast form modeling
+  material_texture: Pronounced tooth interaction and dry pigment granulation
+  render_quality: Intimate sketchbook finish emphasizing hand pressure nuance
+  spatial_distortion: Gentle edge falloff and softened structural transitions
+  atmosphere: Quiet, reflective, domestic warmth
+  key_features: Layered glazing, crosshatch modulation, stump-like soft blending
+  creative_brief: >-
+    Build forms through incremental colored-pencil layering and visible stroke direction. Prioritize tactile paper interaction, subtle value shifts, and soft-edge transitions so the style remains calm and portable across subjects without scene-specific dependencies.
 avoidRules:
   - ink
   - paint

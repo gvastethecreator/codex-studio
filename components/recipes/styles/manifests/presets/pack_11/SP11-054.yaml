@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Food shaped like animals, rice-ball-bear, sausage-octopus, egg-sheet-panda, carrot-flower, apple-rabbit
   atmosphere: Cute, hungry, lunch-break-joy, bento-box-surprise, oh-my-god-its-a-panda
   key_features: Panda rice ball, nori-cutout face, sausage-octopus, tamagoyaki-roll, cherry-tomato, grass-separator, apple-rabbit ears, bento-pick flag
-  creative_brief: Nori cutouts transform rice balls into panda faces, seaweed smiles floating above tamago-yellow rectangles in a compartment of organized love. The octopus sausage poses with tentacle legs spread wide, a whimsical protein sculpture designed to delight before it nourishes. A mother woke before dawn to pack edible joy into a lacquered box, each ingredient placed like a character in a tiny delicious story told at lunchtime to a child who will remember this forever.
+  creative_brief: >-
+    Build kyaraben compositions around compartment balance, character-shaped ingredients, and precise decorative food cuts. Keep the style playful and organized, with reusable cute-food motifs suitable for many lunchbox concepts.
 avoidRules:
   - messy
 assets:

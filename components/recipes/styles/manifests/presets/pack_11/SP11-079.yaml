@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: None, flat-laminate, weave-repeat, tow-orientation, ply-stack
   atmosphere: Fast, expensive, autoclave-cure, racing-engineering, carbon-fiber exclusivity
   key_features: Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack surface
-  creative_brief: Twill weave runs diagonal across the laminate in a repeating pattern of strength and shadow, each tow a bundle of thousands of carbon filaments thinner than spider silk. The anisotropic surface catches reflection along the fiber direction, gloss following the same path that stress will follow under load, aerospace engineering rendered as textile art. Black and silver woven into a composite that laughs at steel while weighing almost nothing, Formula-1 engineering at the macro scale of the individual tow.
+  creative_brief: >-
+    Emphasize carbon composite language through twill repeat, tow boundaries, and anisotropic reflection aligned with fiber direction. Keep the style high-tech and structural, transferable across automotive, aerospace, and product surfaces.
 avoidRules:
   - metal
 assets:

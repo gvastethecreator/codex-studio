@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Painted paper collage storybook, Eric Carle style, hungry caterpillar charm, tissue-paper poetry
-  form_and_line: Scissor edges
-  color_palette: Painted paper textures, tissue-paper spectrum, matte-wash vibrance
-  lighting_setup: Drop shadows, layered depth, paper-thickness relief
-  material_texture: Painted paper
-  render_quality: Handmade, layered, collage warmth, pre-school artistry
-  spatial_distortion: Simple shapes
-  atmosphere: Creative, bright, classroom joy, tactile discovery
-  key_features: Layer depth, scissor-cut edges, paper overlap
-  creative_brief: Torn paper edges cast their own shadows, each scissor cut a deliberate act of composition by subtraction. Painted textures layer like geological strata of preschool imagination. This is the art of making from what already exists, where every rough edge is a signature and every overlap a conversation.
+  aesthetic: Painted paper-collage storybook language (Eric Carle influence)
+  form_and_line: Hand-cut silhouette shapes with irregular scissor contours
+  color_palette: Tissue-paper primaries and secondaries with matte gouache-like variation
+  lighting_setup: Shallow cast shadows from stacked paper layers
+  material_texture: Visible paper fiber, torn edges, paint mottling
+  render_quality: Handmade tactile collage finish with child-facing readability
+  spatial_distortion: Simplified forms and modular layered depth planes
+  atmosphere: Bright, playful, exploratory, classroom-friendly
+  key_features: Overlap stratification, cut-edge rhythm, texture-rich color blocks
+  creative_brief: >-
+    Build imagery through layered cut-paper construction rather than drawn contour modeling. Preserve Eric Carle-style tactile warmth: irregular edges, painted paper variation, and clear shape hierarchy that stays legible across diverse subjects and compositions.
 avoidRules:
   - drawn
   - painted

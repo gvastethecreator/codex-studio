@@ -85,21 +85,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'hd, vector, smooth',
     style: {
-      aesthetic: 'NES game sprite, 8-bit wonder, cartridge-era arcade, pixelated memory',
+      aesthetic: '8-bit sprite-art language with strict retro hardware constraints',
       form_and_line: 'Pixel grid, sharp blocky edges, stair-step diagonals, hard-square corners',
       color_palette:
         'Limited 56 color palette, restricted index, retro-chip saturation, dithered blends',
       lighting_setup: 'None, flat emission, self-illuminated pixel, screen-native glow',
       material_texture:
         'Large pixels, visible grid cells, CRT phosphor grain, blocky texel surface',
-      render_quality:
-        'Retro gaming, arcade, sprite-sheet charm, scanline nostalgia, chip-tune visual',
+      render_quality: 'Crisp low-resolution sprite finish with tile-ready readability',
       spatial_distortion:
         'Low resolution abstraction, blocky simplification, tile-based construction, forced grid logic',
       atmosphere: 'Nostalgic, fun, digital, childhood arcade, joypad romance, pixel-hero quest',
       key_features: 'Pixel grid alignment, dithering patterns, sprite boundaries, tile-map logic',
       creative_brief:
-        'Each pixel is a choice, every color indexed from a palette of fifty-six possibilities, constrained freedom that somehow expands imagination. Dithering patterns approximate what the restricted palette cannot say directly, dot by dot conjuring depth from a flat grid. Heroes are born on tile-mapped kingdoms where every visible cell was placed by hand against the scanline grain.',
+        'Preserve grid discipline, limited palette logic, and dithering-based shading to define form. Favor strong silhouettes and cluster control so imagery stays authentic to 8-bit constraints across characters, props, and environments.',
     },
   },
   {
@@ -108,8 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'subtle',
     style: {
-      aesthetic:
-        'Andy Warhol style, Factory-silkscreen, soup-can-icon, celebrity-grid, mass-media shrine',
+      aesthetic: 'Pop Art silkscreen language (Andy Warhol influence)',
       form_and_line:
         'Halftone dots, Ben-Day-dot grids, thick-outline contours, screen-registration edges',
       color_palette:
@@ -118,8 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Flat, silkscreen-exposure, photo-stencil light, pop-shop fluorescence, studio-flash',
       material_texture:
         'Screenprint, ink-push-through canvas, squeegee-drag texture, canvas-tooth underlay, offset-print halftone',
-      render_quality:
-        'Mass media, bold, repetition-grid, 15-minutes-of-fame, Factory-production, commodity-critique',
+      render_quality: 'High-contrast mass-media print rendering with serial repetition logic',
       spatial_distortion:
         'Repetition, color-variation grid, multiple-exposure overlap, registration-offset, print-misalignment',
       atmosphere:
@@ -127,7 +124,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Halftone, Ben-Day dots, silkscreen-registration marks, color-channel separation, ink-bleed edge, repetition-grid layout',
       creative_brief:
-        'Ben-Day dots pixelate celebrity into commodity, fifteen minutes of fame arranged in a four-color registration grid across the canvas. The soup can repeats itself in serial rows, mass production becoming meditation, consumption becoming icon, offset-CMYK becoming gospel. Silkscreen registration slips just slightly at the edges, the mechanical imperfection that proves the human hand behind mechanical reproduction, ink-push-through texture on toothy canvas.',
+        'Use Warhol-informed serial repetition, halftone structure, and channel-shifted silkscreen color blocks to create iconic pop impact. Keep imagery reproducible, high-contrast, and mechanically printed in character.',
     },
   },
   {
@@ -163,8 +160,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'boring, straight',
     style: {
-      aesthetic:
-        'LSD trip art, acid-test poster, Fillmore-ballroom, liquid-light-show, consciousness-expanded',
+      aesthetic: 'Psychedelic poster language with liquid optical distortion',
       form_and_line:
         'Melting, swirling, paisley-whorl, flame-tongue contours, morphing-edges, fluid-mandala',
       color_palette:
@@ -173,16 +169,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Glowing, blacklight-fluorescence, lava-lamp convection, strobe-freeze, pulse-blink rhythm',
       material_texture:
         'Fractals, liquid-emulsion, oil-projection blob, poster-ink bleed, light-machine swirl',
-      render_quality:
-        'Mind-bending, trippy, blotter-art, Fillmore-poster, psychedelic-therapy, Jimi-Hendrix visuals',
+      render_quality: 'High-intensity trippy rendering with immersive pattern recursion',
       spatial_distortion:
         'Melting reality, Dali-clock droop, kaleidoscopic fragmentation, mirror-room infinity, perspective-liquefaction',
       atmosphere:
         'Crazy, expanding, cosmic-consciousness, ego-dissolution, doors-of-perception, heightened-awareness',
       key_features:
-        'Eyes everywhere, melting-clock motif, paisley-pattern, fractal-spiral recursion, blacklight-poster glow, mandala-center, flame-tongue edges',
+        'Paisley recursion, mandala centers, blacklight glow, fluid edge morphing, fractal spirals',
       creative_brief:
-        'Paisley whorls spiral inward toward a vanishing point beyond ego, beyond form, beyond language, into a liquid-light-show eternity. Flame-tongue contours lick at the edges of reality while blacklight fluorescence reveals a hidden overlay on the visible world, every surface breathing. Consciousness expands like oil-projection blobs dancing on Fillmore ballroom walls, doors of perception thrown open to a spectrum the sober eye cannot decode.',
+        'Maximize psychedelic force through liquid distortion, chromatic clash, and recursive ornament. Keep visual intensity and altered-perception cues high while avoiding fixed venue or narrative anchors.',
     },
   },
   {
@@ -191,8 +186,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'realistic, 3d',
     style: {
-      aesthetic:
-        '80s geometric pattern, post-modern furniture, anti-design rebellion, kindergarten-chic',
+      aesthetic: 'Memphis postmodern design with playful anti-minimal geometric clash',
       form_and_line:
         'Squiggles, triangles, zigzag-lines, polka-dot grids, confetti-burst contours, zany-circles',
       color_palette:
@@ -201,15 +195,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Flat, no-shadow graphic, offset-print registration, two-dimensional clarity, poster-flat',
       material_texture:
         'Speckled pattern, terrazzo-chip, laminate-veneer, plastic-laminate gloss, rubber-paint finish',
-      render_quality:
-        "Chaotic, fun, retro, Saved-by-the-Bell, Pee-wee's-Playhouse, post-modern-clash, anti-good-taste",
+      render_quality: 'Bold retro-pattern rendering with high-energy postmodern contrast',
       spatial_distortion:
         'Abstract shapes, floating-pattern planes, Op-art illusions, checkerboard-grid, squiggle-rhythm',
       atmosphere: 'Playful, energetic, rule-breaking joy, design-anarchy, sugar-cereal morning',
       key_features:
         'Geometric patterns, squiggle-motif, terrazzo-speckle, black-white-checkerboard, contrasting-bold-outlines',
       creative_brief:
-        'Squiggles and triangles collide in a geometric party where good taste got uninvited and design anarchy took the microphone. Terrazzo speckles scatter across laminate surfaces while checkerboard grids march toward post-modern collision, every pattern screaming for attention. Anti-beauty weaponized into joy in a kindergarten-chic rebellion against beige, Saved-by-the-Bell energy rendered in contrasting bold outlines.',
+        'Compose with high-contrast Memphis primitives: squiggles, checkerboards, terrazzo noise, and bold geometric blocks. Preserve playful anti-minimal tension while keeping pattern vocabulary reusable in any layout.',
     },
   },
   {
@@ -263,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Bling, individual-flake shape, specular-sparkle hot-spot, hexagonal-glitter, holo-shift, bokeh-background, confetti-mix',
       creative_brief:
-        'Holographic flakes scatter across the frame like a disco ball caught in a blender, each micro-hexagon reflecting its own version of the light source in specular-point-cloud celebration. PET film edges catch metallic brilliance at glancing angles while confetti-rainbow chaos buries the frame in craft-project aftermath. The kindergarten-art-room singularity: a pile of glitter photographed at macro scale where every individual flake becomes a tiny mirror of joy.',
+        'Build macro sparkle fields from dense glitter geometry, holographic specular scatter, and color-shifting foil reflections. Keep the visual mood celebratory and high-energy while preserving a reusable material-focused direction.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

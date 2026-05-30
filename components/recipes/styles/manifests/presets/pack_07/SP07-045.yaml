@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Cactus garden, arid sculpture, spiny landscape, survival beauty, textural desert
-  form_and_line: Spikes, rosette geometry, vertical accent-columns, mounded clusters, gravel sweeps
+  aesthetic: Xeric landscape design, drought-morphology showcase, arid sculptural planting system
+  form_and_line: Rosette/columnar plant contrast, gravel swales, dry-runoff channels, low-maintenance clustered masses
   color_palette: Sage Green, Red Earth, Blue Agave, Golden Barrel, Ochre rock, Prickly-pear Magenta fruit
   lighting_setup: Hard sun, heat-shimmer, sunset-glow on spines, backlit-agave drama, starfield night
   material_texture: Rocks, succulents, decomposed granite, spiny skin, waxy cuticle, rusted steel edge
-  render_quality: Sustainable, dry, arid-beauty, water-wise texture, desert-garden art
+  render_quality: Climate-resilient landscape realism, high botanical morphology clarity, water-wise composition credibility
   spatial_distortion: None
-  atmosphere: Hot, resilient, sun-forged, silent-survival, ancient-patience, desert-truth
-  key_features: Succulents, agave rosettes, dry riverbed, golden barrel cacti, rusted steel, gravel mulch
-  creative_brief: Agave blades catch late sun like green jewels sharpened by drought into weapon and sculpture simultaneously. Golden barrel cacti huddle in geological patience, each spine a tiny monument to survival without apology. The garden celebrates what thrives on neglect, beauty that asks for nothing but to be left alone.
+  atmosphere: Sun-hardened calm, resilient austerity, low-water elegance
+  key_features: Agave rosette focals, decomposed-granite mulch, dry creek routing, cactus height cadence, rusted steel edging bands
+  creative_brief: >-
+    El preset debe mostrar diseño xerófito con criterio técnico: especies de baja
+    demanda hídrica, suelos drenantes y lectura clara de control de escorrentía.
+    Busca una belleza austera y táctil, no una postal turística del desierto.
 avoidRules:
   - lawn
   - wet

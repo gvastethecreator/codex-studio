@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Tiny portions, negative-space plating, height-stacked architecture, swoosh-negative, edge-placement composition
   atmosphere: Elegant, tasty, hushed-dining-room, wine-glass-clink, white-glove-service, anticipation
   key_features: Garnish, sauce-swirl swoosh, tweezered-microgreen, edible-flower accent, tuile-crisp, reduction-drizzle, sea-salt-flake
-  creative_brief: A tweezered microgreen lands on the sauce swoosh with the precision of a watchmaker placing a jewel in a movement of edible art. Negative space on the plate becomes as important as the food itself, absence defining presence in the geometric theater of fine dining. The meal is a three-hour narrative told through reduction-drizzle and sea-salt-flake, every course a paragraph in a story written by hands that spent decades learning to listen to ingredients.
+  creative_brief: >-
+    Design fine-dining plating as geometric composition: controlled negative space, precise garnish placement, and sauce architecture. Emphasize texture contrast and premium finish cues while keeping dish subjects open and reusable.
 avoidRules:
   - messy
   - cafeteria

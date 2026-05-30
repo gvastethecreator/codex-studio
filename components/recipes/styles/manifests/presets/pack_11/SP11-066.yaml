@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: None, random-scatter, pile-depth, flake-overlap, specular-point-cloud
   atmosphere: Fun, bright, art-room joy, celebration-scatter, make-a-mess, glitter-in-everything
   key_features: Bling, individual-flake shape, specular-sparkle hot-spot, hexagonal-glitter, holo-shift, bokeh-background, confetti-mix
-  creative_brief: 'Holographic flakes scatter across the frame like a disco ball caught in a blender, each micro-hexagon reflecting its own version of the light source in specular-point-cloud celebration. PET film edges catch metallic brilliance at glancing angles while confetti-rainbow chaos buries the frame in craft-project aftermath. The kindergarten-art-room singularity: a pile of glitter photographed at macro scale where every individual flake becomes a tiny mirror of joy.'
+  creative_brief: >-
+    Build macro sparkle fields from dense glitter geometry, holographic specular scatter, and color-shifting foil reflections. Keep the visual mood celebratory and high-energy while preserving a reusable material-focused direction.
 avoidRules:
   - matte
 assets:

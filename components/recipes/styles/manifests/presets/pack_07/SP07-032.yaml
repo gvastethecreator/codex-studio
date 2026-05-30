@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: NYC/London grime-worn metropolitan underground, tile echo, commuter solitude
-  form_and_line: Perspective tunnel, arched vault, column rhythm, vanishing track lines, signage grid
+  aesthetic: Metropolitan underground transit vernacular, ceramic-infrastructure patina, commuter-intensity public realm
+  form_and_line: Repetitive bay rhythm, rail-perspective convergence, vaulted/flat hybrid ceilings, sign-band alignment
   color_palette: Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone
   lighting_setup: Fluorescent flicker, platform-edge pools, advertising-light glare, tunnel-black void
-  material_texture: Tile, dirt, ceramic glaze, metal rail, chewing-gum pavement, peeling paint
-  render_quality: Urban, gritty, public, transit-realism, commuter poetry, damp-platform grime
+  material_texture: Chipped ceramic tile glaze, oxidized rail steel, oil-dark ballast edges, moisture staining, anti-slip platform wear
+  render_quality: Documentary transit realism, high micro-wear authenticity, dense urban public-space legibility
   spatial_distortion: Motion blur train
-  atmosphere: Lonely, transit, anonymous, platform-wait, underground rhythm, metropolitan solitude
-  key_features: Tiles, vaulted ceiling, platform edge, bench, signage, track tunnel
-  creative_brief: Tiles hold decades of commuter breath in their grout, ceramic witness to a million hurried journeys underground. Fluorescent light flattens everything into equal grey, democracy of illumination where suits and sorrows look the same. The tunnel stretches toward vanishing point, a perspective built for waiting.
+  atmosphere: Transitory, anonymous, humid subterranean pressure, routine urgency
+  key_features: Platform warning strip, tiled wayfinding bands, ad-light spill, service conduit clutter, tunnel mouth void
+  creative_brief: >-
+    Diseña este preset como lenguaje de movilidad masiva: repetición modular,
+    desgaste de alto tráfico y señalética como estructura compositiva principal.
+    La escena debe sentirse operativa y habitada por flujos, no como decorado vacío.
 avoidRules:
   - clean
   - sunny

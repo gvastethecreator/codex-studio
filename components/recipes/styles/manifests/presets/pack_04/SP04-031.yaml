@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: 1920s travel poster
-  form_and_line: Geometric curves
-  color_palette: Gold, Black, Teal, deco opulence, champagne shimmer
-  lighting_setup: Gradient, metallic sheen, sunburst radiance
-  material_texture: Airbrush
-  render_quality: Gatsby jazz-age luxury, champagne shimmer, deco decadence
-  spatial_distortion: Streamlined
-  atmosphere: Elegant, fast, roaring-twenties glamour, ocean-liner sophistication
-  key_features: Sunburst, geometric framing, speed lines
-  creative_brief: Geometric sunbursts radiate from center points like the roar of the jazz age made visible. Gold leaf and teal gradients slide across streamlined forms, every curve engineered for speed and elegance. This is the future as imagined by the past, where luxury wears geometric armor and glamour travels by ocean liner.
+  aesthetic: Art Deco poster language with streamlined geometric glamour
+  form_and_line: Symmetry-aware curves, stepped geometry, and aerodynamic motifs
+  color_palette: Black, teal, gold, and metallic-adjacent accent hierarchy
+  lighting_setup: Stylized gradient bands and radial sunburst emphasis
+  material_texture: Smooth poster print with soft airbrush-like transitions
+  render_quality: Decorative high-finish composition with era-authentic polish
+  spatial_distortion: Streamlined elongation and geometric simplification
+  atmosphere: Luxurious, optimistic, metropolitan
+  key_features: Sunbursts, frame borders, speed motifs, ornamental geometry
+  creative_brief: >-
+    Compose with Deco-era visual rhythm: bold geometry, metallic-accent color blocking, and elegant streamlining. Keep the poster language iconic and adaptable, avoiding over-specific location narratives while preserving period identity.
 avoidRules:
   - messy
   - organic

@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix
   atmosphere: Rustic, dry, wine-bottle quiet, cork-pop anticipation, cellar-coolness, natural-craft
   key_features: Texture, lenticel-pores, cellular-structure, wine-stain, bottle-neck imprint, cork-brand, extraction-spiral, suberin-wax sheen
-  creative_brief: Lenticel pores penetrate the prismatic cell structure like tunnels bored through a miniature sponge, the breathing architecture of Quercus suber rendered in tannin-brown and suberin-wax cream. The wine-stain magenta edges the stopper in testimony to the bottle's horizontal slumber in cellar coolness. Compressed bark remembers the curve of the neck it sealed, elasticity encoded in cellular walls that bounce back when pressure finally releases, the cork-pop sound a small celebration of natural engineering.
+  creative_brief: >-
+    Highlight cork as breathable bark-engineered material with lenticel channels, elastic cellular compression, and matte natural grain. Preserve wine-closure heritage cues while keeping applications broader than a single bottle moment.
 avoidRules:
   - smooth
 assets:

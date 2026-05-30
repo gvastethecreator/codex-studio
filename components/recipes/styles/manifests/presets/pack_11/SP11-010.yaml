@@ -12,16 +12,17 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: NES game sprite, 8-bit wonder, cartridge-era arcade, pixelated memory
+  aesthetic: 8-bit sprite-art language with strict retro hardware constraints
   form_and_line: Pixel grid, sharp blocky edges, stair-step diagonals, hard-square corners
   color_palette: Limited 56 color palette, restricted index, retro-chip saturation, dithered blends
   lighting_setup: None, flat emission, self-illuminated pixel, screen-native glow
   material_texture: Large pixels, visible grid cells, CRT phosphor grain, blocky texel surface
-  render_quality: Retro gaming, arcade, sprite-sheet charm, scanline nostalgia, chip-tune visual
+  render_quality: Crisp low-resolution sprite finish with tile-ready readability
   spatial_distortion: Low resolution abstraction, blocky simplification, tile-based construction, forced grid logic
   atmosphere: Nostalgic, fun, digital, childhood arcade, joypad romance, pixel-hero quest
   key_features: Pixel grid alignment, dithering patterns, sprite boundaries, tile-map logic
-  creative_brief: Each pixel is a choice, every color indexed from a palette of fifty-six possibilities, constrained freedom that somehow expands imagination. Dithering patterns approximate what the restricted palette cannot say directly, dot by dot conjuring depth from a flat grid. Heroes are born on tile-mapped kingdoms where every visible cell was placed by hand against the scanline grain.
+  creative_brief: >-
+    Preserve grid discipline, limited palette logic, and dithering-based shading to define form. Favor strong silhouettes and cluster control so imagery stays authentic to 8-bit constraints across characters, props, and environments.
 avoidRules:
   - hd
   - vector

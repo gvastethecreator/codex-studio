@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Cooperative defense in a radiant citadel.
-  subject_treatment: Clases complementarias cubriendo accesos.
-  color_and_tone: Radiant white, gold, and heroic blue.
-  lighting_and_shadow: Light sources integrated into the architecture.
-  texture_and_material: Clean marble, ornamented metal, and crystal.
-  camera_and_composition: Central plaza with multiple routes.
-  atmosphere_and_mood: Unity, urgency, and positive epic momentum.
-  rendering_and_quality: Co-op setting with impeccable readability.
+  aesthetic: Luminous citadel-defense fantasy with cooperative class-synergy staging and sacred-urban fortification identity.
+  subject_treatment: Complementary role classes holding convergent lanes, support-damage-tank readability, and coordinated defensive posture.
+  color_and_tone: High-key alabaster whites, regal gold trims, disciplined cobalt/azure hero accents, and threat-contrast red micro-signals.
+  lighting_and_shadow: Architecture-integrated emissive systems, balanced heroic fill, lane-defining shadow channels, and objective-centric glow hierarchy.
+  texture_and_material: Polished ceremonial marble, filigreed alloy ornament, faceted crystal nodes, and weather-lightened stone joints.
+  camera_and_composition: Hub-plaza topology with branching ingress routes, team-position legibility, and layered objective focus.
+  atmosphere_and_mood: Resolute unity, urgent coordination, and hopeful epic escalation.
+  rendering_and_quality: High-clarity co-op warfront key-art quality with strong role readability, route comprehension, and encounter pacing cues.
 avoidRules:
   - watermark
   - text

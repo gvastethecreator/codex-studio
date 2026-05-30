@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Dissolving, dispersion-front, plume-expansion, diffusion-gradient, dissipating-edge
   atmosphere: Artistic, flow, fluid-dynamics peace, ink-drop meditation, underwater-weather
   key_features: Smoke shape, ink-tendril, mushroom-cap, vortex-ring, dye-gradient, backlit-glow, turbulence-texture
-  creative_brief: Black plumes mushroom through clear water in slow-motion blossoms, tendrils curling outward into delicate vortices that visualize the invisible turbulence of fluid dynamics. The ink dances in three dimensions for a few seconds of dispersion before diffusion wins and the sculpture fades to grey then nothing. Fluid dynamics becomes abstract expressionism in the cloud tank, a dye-dance captured one frame before entropy dissolves the mushroom-cap masterpiece back into uniform water.
+  creative_brief: >-
+    Emphasize fluid-dynamics choreography with plume morphology, tendril vortices, and diffusion gradients suspended in clear liquid volume. Keep the abstraction kinetic and physically grounded, independent of one tank setup.
 avoidRules:
   - still
 assets:

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Black board scratched white
-  form_and_line: White scratches
-  color_palette: Black and White, reversed contrast, luminous white scratch
-  lighting_setup: Inverted, scratch-as-light, dark-field reveal
-  material_texture: Scratches
-  render_quality: Detailed, night, mystery-box reveal, intricate linework
-  spatial_distortion: None
-  atmosphere: Magical, night, star-lit enchantment, theatrical revelation
-  key_features: Black base, white scratch engraving, negative reveal
-  creative_brief: Light emerges from darkness through subtraction, each white scratch carving revelation from a black sea of possibility. The image appears in reverse, born from removal rather than addition. This is the magic trick of the scratchboard, where the artist draws with light against the void.
+  aesthetic: Scratchboard engraving language with subtractive light reveal
+  form_and_line: White incised strokes on black ground, varying incision density
+  color_palette: Strict black-white inverse contrast system
+  lighting_setup: Highlight structure carved through negative subtraction
+  material_texture: Knife/scratch marks, hatch scratches, burr-like edge chatter
+  render_quality: Intricate high-contrast detail with printlike precision
+  spatial_distortion: Stable proportions, depth suggested via hatch frequency
+  atmosphere: Nocturnal, theatrical, mysterious
+  key_features: Dark-field base, luminous scratch marks, reverse-value composition
+  creative_brief: >-
+    Render by removing darkness rather than adding light. Use incision rhythm, hatch density, and directional scratch patterns to define form and focal hierarchy while keeping the scratchboard inversion logic central and reusable across subjects.
 avoidRules:
   - white background
 assets:

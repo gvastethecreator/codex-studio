@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Die-cut sticker
-  form_and_line: Thick White outline
-  color_palette: Vector, glossy finish, sticker-sheet spectrum
-  lighting_setup: Glossy, specular highlight, vinyl sheen reflection
-  material_texture: Vinyl
-  render_quality: Redbubble, cute, die-cut precision, sticker-collector gloss
-  spatial_distortion: Simplified
-  atmosphere: Fun, collectible, laptop-decal personality, pop-culture cheer
-  key_features: White border, die-cut outline, separate silhouette
-  creative_brief: Thick white outlines quarantine each shape from its neighbors like diplomatic immunity for design. Glossy highlights slide across vinyl surfaces, the specular reflection promising the satisfaction of peeling and sticking. This is the art of the collectible, where every shape is a small declaration of identity waiting to attach itself to a laptop lid.
+  aesthetic: Die-cut sticker illustration with collectible decal language
+  form_and_line: Bold simplified contours with thick white cutline margin
+  color_palette: Saturated vector palette tuned for print legibility
+  lighting_setup: Controlled vinyl gloss accents and compact specular highlights
+  material_texture: Smooth sticker-vinyl finish with subtle laminate sheen
+  render_quality: Crisp decal-ready rendering optimized for small-format readability
+  spatial_distortion: Simplified silhouettes with icon-like proportion clarity
+  atmosphere: Playful, punchy, identity-forward
+  key_features: White border halo, isolated silhouette, peel-and-stick visual grammar
+  creative_brief: >-
+    Build artwork as standalone decal units: clear silhouette, strong edge contrast, and high-chroma focal hierarchy. Keep compositions uncluttered and border-aware so designs stay recognizable at thumbnail and physical sticker scale.
 avoidRules:
   - background
 assets:

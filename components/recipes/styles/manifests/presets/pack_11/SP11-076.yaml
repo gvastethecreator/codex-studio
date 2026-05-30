@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Carpet, ground-cover continuity, terrain-following, rock-contour, hummock-mound
   atmosphere: Quiet, tiny, moss-forest silence, dewdrop-morning, miniature-continent, ground-level peace
   key_features: Greenery, phyllid-leaflets, sporophyte-capsule, dewdrop-bead, rhizoid-felt, soil-particle, detritus, capsule-teeth peristome
-  creative_brief: Phyllid leaflets spiral upward from the forest floor, each tiny green blade a solar panel for the miniature continent of bryophyte life below. Dewdrops bead on the gametophyte surface, magnifying the cellular structure beneath into liquid lenses of pure morning suspended on velvet-plant texture. A carpet of moss transforms stone into softness, death into soil, and scale into a doorway to the forest's smallest kingdom where sporophyte stalks rise like watchtowers over the green empire.
+  creative_brief: >-
+    Emphasize bryophyte micro-landscapes with dense phyllid texture, dew-lens highlights, and sporophyte accents over soft terrain. Preserve miniature-forest atmosphere without fixing a specific outdoor setting.
 avoidRules:
   - dry
 assets:

@@ -13,15 +13,18 @@ tags:
   - 70s-and-80s-retro-anime
 visualDna:
   aesthetic: Bike speed, arcade neon, hidden-city truth, youth rebellion under simulated skies, glossy urban 80s tech mythmaking
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  form_and_line: Sharp urban-retro contouring, motorcycle-speed diagonals, arcade signage geometry, surveillance-era skyline segmentation
+  color_palette: Neon arcade cyans and pinks over asphalt blacks, synthetic twilight violets, chrome-fleck highlights
+  lighting_setup: Wet-night neon spill, sign-flicker practicals, high-contrast cel shadow slabs, sodium street backfill
+  material_texture: Slick rain asphalt sheen, painted cel city backdrops, CRT-like bloom edges, analog grain noise
+  render_quality: 80s OVA-grade retro-futurist rendering with glossy urban drama and signal-era compositing character
+  spatial_distortion: Speed-lens perspective stretch, bike-centric forward thrust, layered urban canyon depth compression
   atmosphere: Sleek, rebellious, nocturnal, revelatory
-  key_features: Arcade glow, motorcycle motion, hidden-system hints, urban highways, youth-rebellion silhouettes
-  creative_brief: Motorcycle exhaust bleeds into arcade phosphor as a generation discovers that the sky above the city is just a screen, a lie painted by power. Speed becomes revelation, each gear-shift peeling back another layer of simulation until truth blossoms like neon on wet asphalt. Rebellion has never looked this glossy.
+  key_features: Urban-night velocity language, arcade neon overlays, rebel rider silhouette, simulated-city visual hints
+  creative_brief: >-
+    Keep Megazone 23 anchored in glossy rebellious retro-urbanism: motorcycle
+    momentum, arcade neon logic, and paranoia embedded in city visuals. The
+    style should balance cool surface aesthetics with hidden-system unease.
 avoidRules:
   - realistic
   - 3d render

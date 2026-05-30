@@ -12,16 +12,17 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Church window art, cathedral glass, sacred luminosity, divine illumination
+  aesthetic: Stained-glass window art with lead-came segmentation
   form_and_line: Thick black lead came, segmented contours, curvilinear divisions, interconnected cells
   color_palette: Vibrant translucent glass, jewel-tone spectrum, ruby-cobalt-emerald, sun-drenched saturation
   lighting_setup: Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama
   material_texture: Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina
-  render_quality: Religious, ornate, colorful, gothic-arch beauty, painted-glass storytelling, rose-window awe
+  render_quality: Ornamental luminous-glass rendering with structural lead-line clarity
   spatial_distortion: Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity
   atmosphere: Spiritual, beautiful, light, reverent calm, sacred awe, transcendent glow
   key_features: Black outlines mandatory, lead-came shadows, solder joints, textured glass surface
-  creative_brief: Light dies and is reborn in passage through colored glass, fractured into jewel-toned revelation between black lead lines. Bubbles and ripples in the antique surface catch the sun at glancing angles, transforming opacity into sacred luminosity. A window becomes a gateway when sunlight performs the daily miracle of turning silica into stained transcendence.
+  creative_brief: >-
+    Build imagery as interconnected glass cells framed by dark lead lines. Emphasize backlit translucency, jewel-tone contrast, and subtle glass imperfections so illumination feels material and architectural.
 avoidRules:
   - opaque
   - dull

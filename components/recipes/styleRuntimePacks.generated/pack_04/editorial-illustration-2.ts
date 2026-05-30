@@ -9,17 +9,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Editorial Illustration',
     negativePrompt: 'modern, clean',
     style: {
-      aesthetic: 'Cheap detective novel',
-      form_and_line: 'Painted',
-      color_palette: 'Saturated Red/Yellow, pulpy blood-and-fire, lurid primaries',
-      lighting_setup: 'Dramatic shadow, femme-fatale noir, half-lit menace',
-      material_texture: 'Cheap paper',
-      render_quality: 'Trashy, exciting, high-octane pulp, dime-store thrill',
-      spatial_distortion: 'Action pose',
-      atmosphere: 'Dangerous, cheap, newsstand suspense, lurid desperation',
-      key_features: 'Title space, cover blurb, dramatic composition',
+      aesthetic:
+        'Mid-century pulp-cover illustration style with sensational composition, high-urgency editorial drama, and lurid market-impact intent',
+      form_and_line:
+        'Painterly contour emphasis with bold gesture silhouettes, kinetic focal diagonals, and headline-oriented compositional framing',
+      color_palette:
+        'Aggressive warm primaries with acid yellow-red pushes, deep shadow anchors, and high-contrast attention-grab hierarchy',
+      lighting_setup:
+        'Hard-edged spotlight contrast with half-lit faces, dramatic shadow wedges, and suspense-driven value staging',
+      material_texture:
+        'Cheap coated-pulp paper feel with visible print wear, ink soak variation, and subtle halftone residue',
+      render_quality:
+        'High-energy cover-art finish prioritizing immediate shelf readability, dramatic hooks, and tabloid-level visual punch',
+      spatial_distortion:
+        'Perspective pushed toward action-forward staging with foreground exaggeration and compressed narrative depth',
+      atmosphere: 'Tense, sensational, urgent, dramatic, lurid',
+      key_features:
+        'Masthead-safe title zone, blurb-driven layout logic, sensational focal center, newsstand-impact color blocking',
       creative_brief:
-        'Lurid colors scream from the newsstand rack, every cover a desperate bid for attention in the marketplace of sensation. Dames and danger share the same garish spotlight, their fates already sealed by the dime-store price on the corner. This is fiction as commodity, where the cover must sell the entire paperback in a single lurid glance.',
+        'Keep this preset defined by pulp-cover sales grammar: lurid contrast, dramatic focal diagonals, and headline-first composition should drive identity without hardcoding one detective scene.',
     },
   },
   {
@@ -74,17 +82,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Editorial Illustration',
     negativePrompt: 'messy, art',
     style: {
-      aesthetic: 'Data visualization',
-      form_and_line: 'Thin icons',
-      color_palette: 'Consistent palette, data-viz spectrum, categorical distinction',
-      lighting_setup: 'Flat, no shadow, pure information design',
-      material_texture: 'Vector',
-      render_quality: 'Information, clean, dashboard clarity, explainer-article crispness',
-      spatial_distortion: 'Isometric',
-      atmosphere: 'Smart, data, editorial authority, knowledge elegance',
-      key_features: 'Charts, iconography, data-flow arrows',
+      aesthetic: 'Editorial infographic/data-visualization illustration system',
+      form_and_line: 'Thin icon strokes, modular chart primitives, directional flow connectors',
+      color_palette: 'Consistent categorical palette with accessible contrast grouping',
+      lighting_setup: 'Flat informational rendering with no decorative shadowing',
+      material_texture: 'Clean vector output suitable for print and screen',
+      render_quality: 'High-legibility explainer quality with dashboard-grade precision',
+      spatial_distortion: 'Optional isometric modules integrated into 2D data layouts',
+      atmosphere: 'Analytical, trustworthy, concise',
+      key_features: 'Chart blocks, iconography families, data-flow arrows, hierarchy scaffolds',
       creative_brief:
-        'Data flows through thin icons and arrow pathways like a circulatory system made visible, every chart a heartbeat of information. Isometric modules stack in clean precision, form serving function with quiet confidence. This is complexity made legible, where the beauty lies not in embellishment but in the elegant arrangement of truth.',
+        'Prioritize information hierarchy and cognitive clarity. Build visuals from reusable chart and icon modules, keeping color semantics and reading flow explicit so complex topics remain quickly understandable across editorial contexts.',
     },
   },
   {
@@ -93,8 +101,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Editorial Illustration',
     negativePrompt: 'soft, toy',
     style: {
-      aesthetic: 'Gun or sword',
-      form_and_line: 'Mechanical',
+      aesthetic:
+        'Weapon concept-sheet style with functional lethality readability, industrial precision, and controlled silhouette authority',
+      form_and_line:
+        'Mechanical contour logic with component segmentation, ergonomic line flow, and side-profile specification clarity',
       color_palette: 'Gunmetal, tactical finish, weapon-grade metals',
       lighting_setup: 'Rim light, barrel gleam, tactical edge highlight',
       material_texture: 'Scratched metal',
@@ -103,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dangerous, heavy, trigger discipline, combat-readiness',
       key_features: 'Side view, mechanical detail, magazine/guard',
       creative_brief:
-        'Steel catches light along edges sharpened by the imagination of combat, every bevel and fuller a decision about mortality. The weapon sits in isolation, its purpose radiating through stillness like a held breath. This is the tool as character, where design tells the story of every battle it has not yet fought.',
+        'Preserve identity through weapon-design grammar: component hierarchy, material wear logic, and isolated profile readability should define the style without anchoring it to one battle story.',
     },
   },
   {
@@ -112,17 +122,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Editorial Illustration',
     negativePrompt: 'background, action',
     style: {
-      aesthetic: 'Front/Side/Back view',
-      form_and_line: 'Clean line',
+      aesthetic:
+        'Production character-turnaround style focused on design legibility, neutral presentation, and pipeline handoff clarity',
+      form_and_line:
+        'Clean contour hierarchy with construction-line discipline, silhouette consistency, and annotation-friendly edge clarity',
       color_palette: 'Flat + Occlusion, neutral reference palette, material IDs',
       lighting_setup: 'Neutral, studio-reference, shadow-accurate fidelity',
       material_texture: 'Material callouts',
       render_quality: 'Production ready, pipeline clarity, handoff precision',
-      spatial_distortion: 'T-Pose',
+      spatial_distortion:
+        'Neutral stance standardization with proportion-locked turnaround consistency across orthographic views',
       atmosphere: 'Neutral, design, professional review, iterative feedback',
       key_features: 'Scale, turnaround views, callout annotations',
       creative_brief:
-        'Front, side, and back views orbit the subject like moons around a planet of design decisions. Neutral lighting refuses to editorialize, every seam and proportion presented without flattery or distortion. This is the character as blueprint, naked of pose and personality, ready to be handed to the modeler.',
+        'Keep this preset grounded in turnaround-sheet grammar: proportion locking, neutral lighting, and annotation-ready orthographic consistency should define identity beyond any specific character persona.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

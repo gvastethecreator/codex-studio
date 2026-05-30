@@ -13,15 +13,18 @@ tags:
   - 70s-and-80s-retro-anime
 visualDna:
   aesthetic: Easygoing cosmic rogue swagger, laser arm, nightclub planets, flirtation and danger with a perpetual grin, pulp-space cool rendered in cel-era shine
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  form_and_line: Pulp-space rogue silhouette language, sleek swagger posture geometry, clean retro contour confidence, action-strip staging
+  color_palette: Signature red-jacket dominance, nightclub neon purples, smoky ambers, steel-blues, and comic-pulp contrast blacks
+  lighting_setup: Lounge-noir practical lighting, laser-edge highlights, low-key corridor pools, starfield back rim
+  material_texture: Glossy retro-future wardrobe sheen, smoke-layer diffusion, brushed sci-fi surfaces, analog cel compositing grain
+  render_quality: Stylish 80s pulp-space anime fidelity with crisp character readability and seductive retro-noir atmosphere
+  spatial_distortion: Charisma-first framing, corridor perspective pull, dynamic one-versus-many staging with confident center-weight
   atmosphere: Cocky, cosmic, playful, dangerous
-  key_features: Red-jacket silhouette, laser-arm iconography, nightclub planet backdrops, rogue body language, pulp-space framing
-  creative_brief: A grin cuts through cigar smoke and starlight as a man with a laser arm proves that cool cannot be learned, only worn. Every planet is a nightclub, every corridor a flirtation, every gun barrel a conversation starter. The cosmos is just a casino and this rogue is the house, and the house always wins with style.
+  key_features: Red-jacket icon silhouette, laser-arm motif, nightclub-planet ambience, pulp rogue attitude grammar
+  creative_brief: >-
+    Preserve Cobra’s identity through effortless rogue charisma, pulp-space
+    noir styling, and seductive retro-futurist framing. The style must read
+    as playful danger and cosmopolitan swagger, not generic space-opera action.
 avoidRules:
   - realistic
   - 3d render

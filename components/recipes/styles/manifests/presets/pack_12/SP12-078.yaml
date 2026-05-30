@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Silent heist in nocturnal lotus gardens.
-  subject_treatment: Ninjas specialized in vertical mobility.
-  color_and_tone: Midnight blue, lotus pink, and ink black.
-  lighting_and_shadow: Dim moonlight and paper lamps.
-  texture_and_material: Calm water, polished stone, and silk.
-  camera_and_composition: Curved bridges and chained rooftops.
-  atmosphere_and_mood: Poetic stealth and surgical precision.
-  rendering_and_quality: Refined, highly readable stealth scene.
+  aesthetic: Moonlit stealth-op romanticism combining elegant garden architecture with high-precision vertical infiltration language.
+  subject_treatment: Agile shinobi silhouettes, grappling-focused mobility roles, and discipline-coded team presence with minimal visual noise.
+  color_and_tone: Deep indigo night fields, lotus-magenta highlights, lacquer-black anchors, and subtle lantern amber punctuation.
+  lighting_and_shadow: Soft lunar key, paper-lantern practical pools, water-reflected fill, and razor-edged concealment bands.
+  texture_and_material: Mirror-still water skins, wet polished stone, silk movement trails, aged timber bridge grain, and mossy edge detail.
+  camera_and_composition: Curved bridge chains, rooftop relay paths, and layered occlusion framing designed for stealth readability.
+  atmosphere_and_mood: Controlled tension, poetic silence, and surgical execution discipline.
+  rendering_and_quality: Premium stealth key-art finish with clean target-path communication, elegant contrast hierarchy, and minimal-clutter tactical clarity.
 avoidRules:
   - watermark
   - text

@@ -12,16 +12,17 @@ tags:
   - miscellaneous-and-fun
   - food-and-commercial-fun
 visualDna:
-  aesthetic: Glossy 3D icon, emoji communication, playful glyph, digital hieroglyph
+  aesthetic: Glossy 3D emoji/icon language for playful digital communication
   form_and_line: Round, smooth, pill-shaped, sphere-based, soft extrusion
   color_palette: Bright Yellow, Blue, Red, vivid primaries, gradient-rich, punchy saturation
   lighting_setup: Studio softbox, rim light, gradient sky reflection, glossy hotspot
   material_texture: Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell
-  render_quality: Apple platform emoji, UI design, glossy smile, message-bubble charm, keycap precision
+  render_quality: Platform-agnostic polished icon render with toy-like gloss
   spatial_distortion: Sphere based, anthropomorphic objects, simplified features, chunky proportions
   atmosphere: Happy, expressive, digital, instant communication, friendly warmth, pixel joy
   key_features: Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette
-  creative_brief: Glossy spheres of digital emotion float in a gradient world of uncomplicated joy, each squircle catching a perfect white rim-catchlight. Gradient highlights curve across the candy-shell surface, transforming simple shapes into feelings rendered in three dimensions. A universal glyph language sculpted in reflective plastic and soft-shadow warmth.
+  creative_brief: >-
+    Model icons as simple rounded volumes with clean specular response and high readability. Keep expression and silhouette instantly legible at small sizes, using gradient highlights and soft shadows to reinforce friendly depth.
 avoidRules:
   - flat
   - 2d

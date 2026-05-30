@@ -12,16 +12,17 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Warhammer 40k cathedral-industrial war fantasy, grimdark future, eternal crusade
+  aesthetic: Grimdark cathedral-industrial war fantasy with oppressive futurism
   form_and_line: Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles
   color_palette: Mud, Blood, Rust, boltgun-metal, purity-parchment cream, plasma-coil blue, heretic-ash grey, melta-glow orange
   lighting_setup: Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools
   material_texture: Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet
-  render_quality: Hopeless, war, eternal, forge-world industry, ten-thousand-year crusade, dark-millennium spectacle
+  render_quality: Dense militarized gothic rendering with maximal wear and severity
   spatial_distortion: Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks
   atmosphere: Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor
-  key_features: Skulls, aquila-imperialis, purity-seals, servo-skulls, gothic-cathedral spires, chainsword, bolter-shell casings
-  creative_brief: Cathedral-spine warships drift through a void where hope goes to die under ten thousand years of crusade and ceramite silence. Skulls adorn every surface because decoration in the dark millennium must remind the living what awaits them at the end of the only war. Purity seals flutter in the furnace wind of a galaxy that has forgotten what peace looks like, faith worn as armor against the dying of the light.
+  key_features: Skull iconography, purity seals, cathedral spires, battle-scarred armor plates, relic-tech ornament
+  creative_brief: >-
+    Prioritize monumental gothic-industrial massing, ritualized insignia, and heavily weathered war materials. Keep the tone oppressive and fatalistic through scale, grime, and relic-tech ornament without anchoring to a specific franchise scene.
 avoidRules:
   - hope
   - light

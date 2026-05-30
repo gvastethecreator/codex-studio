@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Psychological horror on a subsea rail line.
-  subject_treatment: Trapped passengers and invisible entities.
-  color_and_tone: Abyss blue, black, and emergency red.
-  lighting_and_shadow: Violent flickers and deep darkness.
-  texture_and_material: Wet metal, fogged glass, and salt.
-  camera_and_composition: Narrow carriage with deep-frame tension.
-  atmosphere_and_mood: Claustrophobia, paranoia, and desperation.
-  rendering_and_quality: Survival scene with high emotional impact.
+  aesthetic: Abyssal transit-horror language centered on confined infrastructure failure and unseen predatory presence.
+  subject_treatment: Civilian vulnerability silhouettes, fragmented survivor groupings, and implied non-human threat through spatial absence.
+  color_and_tone: Pressure-depth blues, blackout blacks, arterial emergency reds, and sickly desaturated neutrals under panic lighting.
+  lighting_and_shadow: Intermittent emergency flicker, hard strobe interruptions, low-visibility recesses, and silhouette-breaking backflares.
+  texture_and_material: Brine-streaked steel panels, condensation-heavy glazing, corroded fasteners, wet flooring film, and mineral salt crusting.
+  camera_and_composition: Tight carriage sightlines with choke-point framing, foreground obstruction, and vanishing-depth anxiety construction.
+  atmosphere_and_mood: Claustrophobic dread, escalating paranoia, and survival-driven urgency.
+  rendering_and_quality: High-intensity survival-horror concept fidelity with cinematic tension control and environment-first fear readability.
 avoidRules:
   - watermark
   - text

@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Bone walls, empire of the dead, skull architecture, underground ossuary, silence of centuries
-  form_and_line: Skulls, stacked femur patterns, arch niches, skull-and-crossbone geometry, tunnel perspective
+  aesthetic: Ossuary architecture, ritualized mortality display, subterranean bone-structure interior language
+  form_and_line: Repetitive cranium/fracture motifs, long-bone lattice arrangements, shallow arch-bay sequencing, compressed tunnel axiality
   color_palette: Bone White, Dirt, Sepia age, Calcium Yellow, Shadow Brown, Cartilage Cream
   lighting_setup: Torch/Flashlight, flame-flicker on bone, LED beam, dramatic shadow-cast, warm death-glow
-  material_texture: Bone, dirt, calcium deposit, cold stone, crumbling mortar, dry-earth scent
-  render_quality: Macabre, claustrophobic, bone-chamber realism, death-density, ancient silence
+  material_texture: Chalky calcium bloom, porous cortical-bone pitting, dust-loaded mortar seams, damp stone substrate transitions
+  render_quality: Archaeological-macabre fidelity, high microtexture readability, low-light subterranean material realism
   spatial_distortion: None
-  atmosphere: Death, silence, below-ground, ossuary-reverence, chilling peace, mortal reminder
-  key_features: Skulls, stacked long bones, arched niches, low ceiling, tunnel shaft, decorative bone patterns
-  creative_brief: Skulls arranged in geometric chorus, tibiae stacked like library books catalogued by the grim librarian of centuries. The walls watch with a thousand empty sockets, calcium constellations mapping the architecture of mortality. Silence down here has weight, the accumulated stillness of generations who have nothing left to say.
+  atmosphere: Solemn, compressed, reverential dread, deep-time stillness
+  key_features: Patterned skull courses, femur cross-stack bands, ossuary niches, candle/torch hotspot falloff, low vault pressure
+  creative_brief: >-
+    Define la estética por repetición material y orden funerario: el hueso funciona
+    como módulo arquitectónico y símbolo simultáneamente. La composición debe
+    transmitir reverencia, densidad histórica y lectura espacial subterránea sin
+    depender de relato gótico explícito.
 avoidRules:
   - living
 assets:

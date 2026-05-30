@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash
   atmosphere: Comfort, smell, bakery-dawn, yeast-aroma, crust-tap satisfaction, carb-comfort
   key_features: Steam, flour-dusting, scoring-blade marks, crust-crack fissure, golden-crumb honeycomb, parchment-paper, banneton-ring
-  creative_brief: Steam rises from the scored crust carrying the aroma of yeast and transformation across the early-morning street, the baguette's ear curling upward where the lame cut deep enough. Honeycomb crumb structure reveals itself at the tear point, air pockets that were once invisible gases now memorialized in golden-brown architecture. The bakery window glows like a lantern of comfort, crust-sheen catching the incandescent warmth of bread that finished baking forty minutes before dawn.
+  creative_brief: >-
+    Highlight artisan bread cues through crust scoring, crumb honeycomb structure, and warm bakehouse color temperature. Keep the visual language focused on texture-rich freshness and handcrafted baking detail across varied pastry forms.
 avoidRules:
   - burnt
 assets:

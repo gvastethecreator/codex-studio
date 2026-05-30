@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature
   atmosphere: Dreamy, fleeting, pop-second, bubble-bath quiet, childhood-wonder, vanishing-beauty
   key_features: Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp
-  creative_brief: Interference colors swirl across the soap membrane, magenta sliding into cyan into gold as film thickness varies by nanometers, gravity draining the film toward the bottom pole. The sphere hangs in borrowed air, its surface a map of convection currents and micelle-layer physics and the approaching black spot that signals imminent return to nothing. One more second of existence, fragility wearing its most beautiful dress, thin-film poetry floating on glycerin and childhood breath.
+  creative_brief: >-
+    Prioritize thin-film interference physics with nanometric color bands, convective swirls, and fragile spherical membrane behavior. Keep iridescent transience and optical delicacy as portable style traits.
 avoidRules:
   - popped
 assets:
