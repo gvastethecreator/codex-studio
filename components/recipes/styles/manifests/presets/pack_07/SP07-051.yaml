@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Art Nouveau in nature, elven grace, valley sanctuary, waterfall palace, timeless woodland harmony
-  form_and_line: Elegant curves, filigree arches, natural-branch colonnades, cascading terraces, leaf-tracery windows
+  aesthetic: Elven organic classicism, nature-integrated sanctuary architecture, high-fantasy lyrical refinement
+  form_and_line: Filigree arch systems, branch-derived colonnades, cascading terrace tiers, flowing non-orthogonal structural curves
   color_palette: Autumn Gold, White, Silver Birch, Moss-floor Green, Waterfall Mist, Soft Lavender dusk
   lighting_setup: Magical glow, elf-lantern warmth, waterfall-reflected moonlight, star-dome canopy, inner-light radiance
   material_texture: Carved stone, leaves, living wood, mother-of-pearl inlay, silver filigree, crystalline light
-  render_quality: Ethereal, ancient, Tolkien-beauty, elven-crafted perfection, sacred wood, Middle-earth elegance
+  render_quality: High-fidelity fantasy-environment rendering with handcrafted-biotic integration and timeless ornamental clarity
   spatial_distortion: None
-  atmosphere: Magical, safe, timeless, song-filled, story-sanctuary, hidden-peace, weary-traveler's rest
-  key_features: Waterfalls, delicate bridges, open-air halls, elven pavilions, tree-integrated architecture, star-viewing terrace
-  creative_brief: Waterfalls thread through filigree arches like liquid silver poured through elven hands. Trees lean into architecture, branches becoming columns in a hall that never decided where nature ends and craft begins. The valley holds its breath in perpetual twilight, a sanctuary that appears only when the world has grown tired enough to deserve it.
+  atmosphere: Sacred refuge, melancholic peace, timeless continuity, elevated wonder
+  key_features: Water-threaded terraces, arbor-structural fusion, fine bridge tracery, open-air ceremonial halls, star-facing platforms
+  creative_brief: >-
+    Keep this preset centered on elven design language: graceful curvature,
+    biotic-architectural fusion, and luminous serenity should define identity.
+    Preserve author-specific fantasy elegance while avoiding fixed scene beats
+    or single-location dependence.
 avoidRules:
   - industrial
   - blocky

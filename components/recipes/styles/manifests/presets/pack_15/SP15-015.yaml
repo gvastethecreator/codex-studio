@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Atrium depth corridor guiding toward a luminous civic fountain node.
   atmosphere: Melancholic joy, ambient leisure, and curated digital nostalgia.
   key_features: Retro signage monoliths, mirrored pools, synthetic palms, and open social plazas.
-  creative_brief: A vaporpunk commons where abandoned mall aesthetics are reclaimed as a serene climate-conscious civic interior.
+  creative_brief: >-
+    Preserve sunset mall-mirage grammar as a reusable style system:
+    retro-consumer spatial nostalgia, climate-adaptive indoor plaza logic, and
+    soft digital leisure mood should remain coherent across subjects.
 avoidRules: [photoreal, gritty-realism, warlike, horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-015.webp }
 attributes:

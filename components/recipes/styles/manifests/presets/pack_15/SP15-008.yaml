@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Stepped roof-chain perspective descending toward a central cistern amphitheater.
   atmosphere: Collective tenderness, climatic intelligence, and calm ceremonial focus.
   key_features: Resonant cistern bowls, rooftop choir tiers, rainfall channels, and participatory water meters.
-  creative_brief: A rain event transformed into civic music, where each rooftop both sings and stores water for the neighborhood.
+  creative_brief: >-
+    Preserve rooftop rain-choir grammar as a reusable style language:
+    pluvial acoustic civic rituals, visible catchment systems, and collective
+    climate literacy should remain stable across subjects.
 avoidRules: [photoreal, dystopian-smog, aggressive-action, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-008.webp }
 attributes:

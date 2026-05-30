@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Luxury-school social cruelty, staircase confrontations, expensive uniforms, humiliations blooming into romance, glossy teen melodrama with sharp class contrast
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Elite-campus melodrama grammar with social-hierarchy staging, glossy emotional collision, and status-coded romance tension
+  form_and_line: Sharp posture-contrast silhouettes, staircase-axis confrontation blocking, disciplined facial micro-expression linework, and uniform-tailored contour control
+  color_palette: Ivory and academy navy bases, luxury black accents, restrained gold signifiers, rain-slick slate neutrals, and crimson social-pressure highlights
+  lighting_setup: Overcast prestige-campus diffusion, reflective rain sheen, corridor backlight separation, and dramatic stairwell contrast pockets
+  material_texture: Premium school uniform textiles, polished stone railings, umbrella and leather accessory gloss, and wet pavement reflective layering
+  render_quality: High-polish shojo melodrama rendering with social-rank readability, clean fashion fidelity, and emotionally charged framing clarity
+  spatial_distortion: Vertical-status perspective exaggeration through stair and balcony vantage compression
   atmosphere: Tumultuous, glamorous, bruising, addictive
   key_features: Elite school props, social hierarchy staging, staircase confrontations, polished uniform detail, rain-soaked dramatic beats
-  creative_brief: Marble staircases are not architecture but vertical arenas where status climbs and kindness stumbles. Rain does not discriminate between designer fabric and borrowed courage, soaking both equally. The cruelest corridors hold the warmest transformations, and humiliation is sometimes the only doorway into love.
+  creative_brief: >-
+    Preserve elite-campus melodrama grammar as a reusable style system:
+    hierarchy-coded fashion contrast, staircase confrontation staging, and
+    polished emotional tension should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

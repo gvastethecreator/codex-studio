@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Osaka school romance with comedy timing, exaggerated embarrassment, height-contrast staging, playful face acting, colorful youthful banter with full-hearted payoff
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Height-gap romcom shojo language with Osaka banter energy, embarrassment-forward timing, and heartfelt youth-couple momentum
+  form_and_line: Elastic comedic facial acting lines, contrasting tall-short body-language framing, lively conversational gesture contours, and clean school-street silhouette rhythm
+  color_palette: Bright youthful pastels with warmer peach accents, playful urban school tones, and selective pop-color highlights for comedic beats
+  lighting_setup: Daylight-forward romcom clarity, warm after-school ambience, low-complexity contrast, and highlight accents timed to reaction moments
+  material_texture: Casual schoolwear textiles, city-street prop simplicity, and low-noise backgrounds that keep timing and expressions in focus
+  render_quality: High-readability romcom render with energetic acting clarity, sincere payoff framing, and balanced comedy-romance polish
+  spatial_distortion: Comedic composition exploiting height contrast and interpersonal distance changes without sacrificing emotional readability
   atmosphere: Funny, sweet, loud, sincere
   key_features: Height-contrast compositions, comic reaction faces, school-date props, banter body language, bright urban youth color
-  creative_brief: Height is not measurement but emotional scale stretched to absurdity and back to tenderness. Osaka streets become an arena where embarrassment and affection trade punches with equal force. The loudest laugh bends toward the quietest confession, and inches between two people dissolve into nothing when the timing is finally right.
+  creative_brief: >-
+    Preserve height-gap comedy-romance grammar as a reusable style system:
+    banter-driven reaction timing, height-contrast staging, and loud-to-tender
+    emotional pivots should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

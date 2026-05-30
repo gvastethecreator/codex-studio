@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Convoy-lane depth perspective ending at a civic repair hangar.
   atmosphere: Gritty solidarity, practical endurance, and collective reconstruction.
   key_features: Diesel haulers, communal machine shops, fuel reclamation towers, and worker canteens.
-  creative_brief: A dieselpunk district where heavy infrastructure is repurposed for mutual aid logistics and public resilience.
+  creative_brief: >-
+    Preserve iron convoy-commons grammar as a reusable style system:
+    heavy repair urbanism, reclaimed fuel logistics, and worker-solidarity
+    infrastructure should remain coherent across subjects.
 avoidRules: [photoreal, pristine-utopia, neon-cyber, magical-fantasy, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-017.webp }
 attributes:

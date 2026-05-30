@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Underground hall, mountain kingdom, stone-deep majesty, forge-heart stronghold, ancestral deep
-  form_and_line: Geometric blocky, megalithic pillars, vaulted axe-cut ceiling, rune-engraved arch, broad axes
+  aesthetic: Subterranean dwarven monumentalism, forge-centric mountain architecture, ancestral stonecraft doctrine
+  form_and_line: Megalithic pillar grids, chisel-defined mass geometry, rune-banded arches, load-bearing vault heaviness
   color_palette: Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black
   lighting_setup: Lava glow, forge-fire, crystal-lamp amber, torch-bracket rhythm, subterranean orange warmth
   material_texture: Hewn stone, chisel-marked granite, hammered gold, molten iron, vein crystal, thick leather
-  render_quality: Heavy, industrial fantasy, Khazad-dum majesty, deep-delver craftsmanship, stone-song epic
+  render_quality: Epic fantasy-fortress fidelity with dense material weight, craft-mark readability, and structural gravity
   spatial_distortion: None
-  atmosphere: Epic, strong, ancient-resolve, forge-breath, deep-root, clan-hall echoes, enduring pride
-  key_features: Pillars, great hall, golden hoard, forge anvil, rune carvings, lava channel, axe-trophies
-  creative_brief: Stone pillars rise from living rock, axes still singing in the chisel marks that shaped them. Gold veins pulse through granite like the mountain itself has a circulatory system of treasure. The hall echoes with forge-hammer ghosts, every shadow cast by a fire that has burned for ten thousand years.
+  atmosphere: Ancestral resilience, forge heat, clan authority, deep-earth solemnity
+  key_features: Rune-carved support systems, forge-anvil cores, lava heat channels, treasure-vein geology, hall-scale axiality
+  creative_brief: >-
+    Treat this style as dwarven architectural grammar: massive stone systems,
+    forge-lit interiors, and rune-encoded craftsmanship must drive identity.
+    Maintain weight, durability, and lineage cues without hard-locking to a
+    specific franchise hall.
 avoidRules:
   - wood
   - light

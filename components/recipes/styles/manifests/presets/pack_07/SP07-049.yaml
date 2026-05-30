@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Manicured lawn, designed landscape, green cathedral, Augusta perfection, sculpted fairway
-  form_and_line: Rolling hills, bunker-sweep curves, tee-box rectangles, green-contour undulations, fairway ribbons
+  aesthetic: Championship golf-landscape formalism, high-control turf architecture, leisure-sport topographic curation
+  form_and_line: Ribboned fairway corridors, bunker-cut parabolas, green contour micro-undulations, routing-driven sightline geometry
   color_palette: Vibrant Green, Sand, Sky Blue, Pinstripe Mow lines, Water-hazard Teal, Flag Yellow
   lighting_setup: Morning mist, low-angle fairway light, golden-hour green glow, dew-sparkle, shadow-bunker drama
   material_texture: Short grass, crisp turf, sand, water surface, flagstick, raked-bunker pattern
-  render_quality: Artificial nature, rich, landscape-design perfection, tournament-ready, man-versus-nature beauty
+  render_quality: Tournament-grade landscape visualization, precise maintenance readability, high-fidelity sport-terrain legibility
   spatial_distortion: None
-  atmosphere: Quiet, sport, exclusive, morning-fresh, focused-walk, manicured nature
-  key_features: Sand trap, manicured green, pin flag, water hazard, fairway mow lines, white bunker edge
-  creative_brief: Fairways sweep in manicured curves, grass cropped to precision that nature would never choose for itself. Sand traps carve bright wounds into green, hazards arranged like sculpture in a gallery for the sport of kings. Morning mist clings to water hazards, the landscape holding its breath before the first tee shot.
+  atmosphere: Controlled calm, competitive focus, curated exclusivity, early-round concentration
+  key_features: Stripe-mown fairways, edge-defined bunkers, pin-position focality, hazard choreography, route legibility from tee to green
+  creative_brief: >-
+    Define this preset through golf-course design grammar: disciplined turf
+    gradients, strategic hazard placement, and route-readability from distance.
+    Keep the style anchored in precision maintenance and competitive play optics,
+    not a specific club or tournament narrative.
 avoidRules:
   - weeds
   - forest

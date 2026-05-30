@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Fishing-by-the-river domestic healing, inherited hobbies, pastel water surfaces, practical tackle detail, soft family reconstruction through outdoor routine
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Riverbank compositional flow lines, tackle-and-rod contour precision, and sibling proximity gesture softness
+  color_palette: Water pastel blues, grassy greens, neutral outdoorwear tones, fly-lure accents, and evening amber warmth
+  lighting_setup: Riverside daylight reflection fill, cloud-soft sky diffusion, and camp-cook practical highlights near water
+  material_texture: Nylon line sheen, rod cork grain, damp river stones, layered knit clothing, and lunch-kit surfaces
+  render_quality: Pastoral-healing rendering with practical hobby fidelity and calm relational warmth
+  spatial_distortion: Gentle river-depth perspective easing to support restorative pacing
   atmosphere: Pastoral, healing, quiet, tender
   key_features: Fishing gear, riverside backdrops, sibling closeness, reflective water light, practical outdoor textures
-  creative_brief: Two hands on one fishing rod, the line arcing into water that holds both fish and the memory of a father who taught them how to cast. The river does not rush — it waits, like grief, like healing, like a sister learning to fill the silence with fly-tying and small inherited rituals. Every catch is also a release.
+  creative_brief: >-
+    Preserve riverside-fishing sisters grammar as a reusable style language:
+    practical tackle realism, reflective water calm, and inherited-hobby healing
+    intimacy should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

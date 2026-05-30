@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Beach fort, summer sculpture, tidal architecture, ephemeral citadel, shore-built kingdom
-  form_and_line: Drip towers, bucket-mold cylinders, scalloped turrets, battlement ridges, moat-trench circles
-  color_palette: Sand beige, Wet-sand Brown, Shell-white, Shore-gold, Driftwood Grey, Sea-glass fragment
-  lighting_setup: Sunlight, beach-glare, low-afternoon shadow, wave-reflected shimmer, seaside-haze
-  material_texture: Sand grains, wet-packed surface, shell bits, pebble, granular-drip, water-smooth
-  render_quality: Temporary, fragile, beach-day memory, tide-fated beauty, summer-childhood art, grain-by-grain
+  aesthetic: Ephemeral littoral architecture language built from wet-sand sculpting, tidal vulnerability, and playful improvised fortress typologies
+  form_and_line: Bucket-cast cylindrical towers, drip-formed verticals, scalloped parapets, concentric moat cuts, and soft-edged erosion-prone contours
+  color_palette: Dry sand beige, wet umber brown, shell off-white, sunlit shore gold, driftwood gray, and muted sea-glass accents
+  lighting_setup: Hard coastal daylight, reflected water shimmer, low-angle beach shadows, slight marine haze, and bright specular micro-highlights on damp surfaces
+  material_texture: Granular sand aggregation, compacted wet-sand crust, drip-strand ridges, shell inclusions, pebble interruptions, and erosion-softened edges
+  render_quality: High-detail transient-sculpture rendering emphasizing granular fidelity, controlled collapse cues, and intentionally impermanent structural character
   spatial_distortion: Crumbling
-  atmosphere: Summer, fun, beach-joy, tide-watch, salty-breeze, impermanent creation, bucket-and-spade
-  key_features: Grainy, drip-castle towers, moat, battlements, bucket-mold texture, seashell decoration, tide-line
-  creative_brief: Drip towers rise with the organic wonkiness of sand-water slurry surrendered to gravity. Bucket-mold cylinders repeat in endless battlement, each turret a memory of the plastic pail that shaped it. The tide whispers its countdown, the castle magnificent precisely because it cannot last, architecture that borrows its beauty from impermanence.
+  atmosphere: Sunlit, playful, fragile, tactile, and shaped by imminent natural decay
+  key_features: Drip-cast turret profiles, bucket-mold repeat modules, carved moat channels, crenelated sand ridges, shell inlay accents, and visible tidal wear lines
+  creative_brief: >-
+    Keep the style anchored in wet-sand construction grammar: granular
+    material behavior, bucket-cast geometry, and erosion-prone ephemeral
+    forms should define outputs across varied subjects.
 avoidRules:
   - stone
 assets:

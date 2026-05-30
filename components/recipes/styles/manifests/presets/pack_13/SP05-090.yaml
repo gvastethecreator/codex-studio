@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Oversized eyes, glowing memories, tender tragedy, sentimental domestic framing, Key visual-novel style, dango-daikazoku, cherry-blossom path, starfish carving
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
-  atmosphere: Emotional, nostalgic, tearful, tender
-  key_features: Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth
-  creative_brief: Tears are stored behind enormous eyes like reservoirs behind glass — every glance is a memory waiting to spill, every cherry blossom a promise already falling. Domestic spaces become shrines to the people who made them warm, and light behaves like a gentle ghost of the happiness that once lived here. Let sorrow and sweetness share the same soft-focus frame.
+  aesthetic: Soft-eyed melodramatic anime language with visual-novel sentimentality, domestic-memory emphasis, and bittersweet emotional resonance
+  form_and_line: Rounded tender contours, large eye-emotion focus, gentle hand-gesture acting, and close relational framing with minimal kinetic aggression
+  color_palette: Warm cream and peach neutrals, cherry-blossom pink accents, soft dusk violets, and muted nostalgia-washed highlights
+  lighting_setup: Diffuse memory-like glow, soft interior practical warmth, gentle backlight halos, and low-contrast shadow treatment for emotional softness
+  material_texture: Home textiles, polished wood traces, delicate floral particulate overlays, and slightly hazed atmosphere suggestive of recollection
+  render_quality: Tearful high-clarity drama render with refined softness, expressive close-up fidelity, and cohesive sentimental grading
+  spatial_distortion: Intimate close-to-medium framing with shallow depth and mild dreamy softness around emotional focal points
+  atmosphere: Tender, nostalgic, sorrowful, and affectionate
+  key_features: Soft-focus emotional closeups, memory-coded lighting, domestic nostalgia props, and blossom-like ephemeral accent motifs
+  creative_brief: >-
+    Preserve soft-eyed melodrama grammar as a reusable style system:
+    memory-washed lighting, intimate emotion-first framing, and bittersweet
+    domestic tenderness should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Ultra-gentle school romance, nervous hallway glances, clean daylight, social fear thawing into warmth, sincerity as spectacle, fragile closeness and kindness
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Shy-school-romance shojo language with social-anxiety thaw, daylight sincerity, and small-gesture emotional revelation
+  form_and_line: Fine soft contouring, blush-reactive facial micro-acting, cautious body-language spacing, and clean school-uniform silhouette readability
+  color_palette: Light classroom creams, tender pink blush accents, pale sky blues, and warm daylight neutrals with gentle saturation
+  lighting_setup: Clear daytime window key, soft corridor bounce, minimal dramatic contrast, and subtle bloom to support fragile emotional beats
+  material_texture: Crisp school-fabric textures, paper-and-desk prop simplicity, and airy low-noise backgrounds that keep focus on expression
+  render_quality: Gentle high-clarity romance render with sincerity-first readability, subtle emotional gradients, and unforced softness
+  spatial_distortion: Natural hallway/classroom framing with mild romantic stylization and respectful interpersonal distance cues
   atmosphere: Shy, bright, hopeful, soft
   key_features: Hallway proximity, blush-heavy face acting, classroom sunlight, friendship-circle warmth, delicate confession framing
-  creative_brief: A hallway is not architecture but the distance between two people deciding whether to speak. Sunlight through classroom windows becomes the only witness to a courage too fragile to name. Every blush is a tiny revolution against the fear of being seen, and sincerity is the last spectacle worth staging.
+  creative_brief: >-
+    Preserve shy-hallway-bloom grammar as a reusable style system:
+    daylight-soft school framing, blush-led micro-expression acting, and
+    sincerity-over-spectacle romance pacing should remain consistent across
+    subjects.
 avoidRules:
   - realistic
   - 3d render

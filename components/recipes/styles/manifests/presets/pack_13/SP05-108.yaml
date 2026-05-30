@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Floral-frame compositions, magical-girl transformation-space backgrounds, floating decorative elements
   atmosphere: Enchanting, gentle, sweet-natured, storybook magic, pure-hearted wonder
   key_features: Floating flower petals, sparkle-dust particles, lace-pattern borders, ribbon-framing devices, magical-transformation glow
-  creative_brief: Petals drift through every frame like punctuation marks in a sentence written in sugar-spun thread and gold-foil light. The world is constructed from lullabies and lace borders, each character a wish given gentle outline and pastel breath. This is the visual language of believing in magic before anyone tells you to stop.
+  creative_brief: >-
+    Preserve fairy-tale storybook-soft grammar as a reusable style system:
+    pastel-lace ornament framing, gentle diffused glow hierarchy, and tender
+    shoujo-fantasy softness should remain consistent across subjects.
 avoidRules:
   - hard
   - sharp

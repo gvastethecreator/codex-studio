@@ -12,22 +12,25 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: 2001 slab, alien artifact, absolute-geometry presence, evolution-catalyst object, cosmic-marker
-  form_and_line: Sharp rectangle, perfect-edges, zero-feature surface, 1:4:9 proportion, impossible-vertical, crisp-corners
-  color_palette: Matte Black, Absolute-void Black, Light-absorbing surface, Starlight-reflection edge, Moon-surface Grey
-  lighting_setup: Absorbs light, anti-reflective void, sun-alignment glow, stark-side shadow, dawn-touch edge
-  material_texture: Perfectly smooth, non-material surface, frictionless, impossibly-dense, alien-substance, crystalline-matte
-  render_quality: Alien, minimal, Kubrick-mystery, absolute-simplicity, cosmic-enigma, evolution-precision
+  aesthetic: Kubrickian alien-monolith language based on absolute geometric austerity, symbolic artifact presence, and minimal cosmic monumentality
+  form_and_line: Strict 1:4:9 rectangular proportion, flawless planar faces, razor-clean vertical edges, zero ornament policy, and uncompromised orthogonal silhouette dominance
+  color_palette: Deep matte black mass, near-void black absorption fields, faint edge silver glints, and sparse neutral lunar-gray environmental reflections
+  lighting_setup: High-contrast directional lighting with extreme absorption response, minimal edge catch-light, severe cast shadow geometry, and restrained ambient fill
+  material_texture: Ultra-smooth featureless surface, non-granular matte finish, near-specular suppression, and artifact-grade manufacturing uniformity
+  render_quality: Precision-minimal rendering with maximum geometric authority, disciplined tonal economy, and enigmatic high-concept sci-fi clarity
   spatial_distortion: None
-  atmosphere: Ominous, mystery, cosmic-wonder, evolutionary-pause, unknowable-intelligence, silent-revelation, transcendent-fear
-  key_features: 1:4:9 ratio, perfectly black, sharp edges, featureless surface, rectangular slab, alien presence, vertical dominance
-  creative_brief: Absolute rectangle interrupts landscape with the violence of perfect geometry, a shape that does not belong to any geology humans have named. The surface drinks light without returning it, matte black absorbing every question the universe thought to ask. The slab simply is, an assertion of presence that predates language, waiting for the apes below it to touch it and learn to kill.
+  atmosphere: Ominous, contemplative, transcendent, silent, and intellectually unsettling
+  key_features: Canonical 1:4:9 proportion control, light-absorbing black plane behavior, featureless monolithic slab profile, and severe vertical compositional anchoring
+  creative_brief: >-
+    Preserve monolith style as a reusable grammar of geometric absolutes:
+    strict proportion, featureless black material response, and symbolic
+    minimal monumentality should remain stable across subject changes.
 avoidRules:
-  - detail
+  - ornamentation
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-079.webp
 attributes:
-  negativePrompt: detail
+  negativePrompt: ornamentation
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

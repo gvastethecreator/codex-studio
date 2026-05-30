@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Layered bowl-topography perspective with drifting low-gravity particles.
   atmosphere: Quiet futurism, contemplative community, and ritual calm.
   key_features: Lunar gardens, gravity-light bridges, and phase-calendar lantern towers.
-  creative_brief: A lunarpunk hamlet where civic life follows tides, phases, and shared stewardship.
+  creative_brief: >-
+    Preserve moonwater terraces grammar as a reusable style language:
+    low-gravity reflective ecology, crescent civic planning, and ritual lunar
+    calm should remain stable across subjects.
 avoidRules: [photoreal, militarized-moon-base, grim-industrial, neon-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-028.webp }
 attributes:

@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Victorian palm house, glass cathedral, botanical treasury, iron-and-glass jewel, tropical collection
-  form_and_line: White iron frame, curved glasshouse ribs, ridge-and-furrow roof, circular staircase, tiered planting
+  aesthetic: Historic iron-and-glass conservatory typology, botanical-display architecture, climate-controlled plant cathedral
+  form_and_line: Ribbed glazed vaults, fine cast-iron module repetition, ridge-and-furrow canopy logic, vertical specimen layering
   color_palette: White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver
   lighting_setup: Diffused, glasshouse-bright, condensation-prism, rain-on-glass, golden-hour ironwork glow
   material_texture: Glass, condensation, cast iron, terracotta tile, tropical bark, giant-leaf surface
-  render_quality: Scientific, humid, Kew-Gardens grandeur, botanical-collection beauty, ironwork elegance
+  render_quality: Museum-grade conservatory rendering with structural clarity, humidity atmosphere control, and specimen readability
   spatial_distortion: None
-  atmosphere: Lush, enclosed, transported, tropical-England, conservatory-hush, plant-wonder
-  key_features: Iron structure, curved glass roof, spiral staircase, giant ferns, orchid display, palm canopy
-  creative_brief: Iron ribs curve toward glass heaven, Victorian engineering dreaming in white filigree and condensation. Giant ferns unfurl prehistoric ambition beneath a roof that taught winter to grow tropical orchids. The glasshouse stands as a lung made architecture, breathing green long after the empire that built it faded.
+  atmosphere: Enclosed lushness, humid cultivation calm, curated botanical awe
+  key_features: Cast-iron lattice bays, condensation-prism glazing, layered tropical canopies, conservatory circulation clarity
+  creative_brief: >-
+    Build a reusable conservatory language where ironwork precision and dense
+    botanical growth coexist in a controlled humid envelope. Prioritize
+    greenhouse structural rhythm, plant-display hierarchy, and atmospheric
+    moisture cues over landmark-specific storytelling.
 avoidRules:
   - outdoor
 assets:

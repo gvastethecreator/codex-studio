@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Sweeping track perspective disappearing into layered mesas.
   atmosphere: Exploratory momentum, frontier resilience, and optimistic engineering.
   key_features: Ion monorail, cliffside depots, expedition cargo rigs, and signal beacons.
-  creative_brief: A raypunk transit backbone that turns remote badlands into connected futures.
+  creative_brief: >-
+    Preserve ion frontier-monorail grammar as a reusable style system:
+    elevated frontier transit continuity, canyon-scale vector depth, and
+    exploratory engineering optimism should remain coherent across subjects.
 avoidRules: [photoreal, post-apoc-rubble-only, medieval-castles, horror-gore, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-027.webp }
 attributes:

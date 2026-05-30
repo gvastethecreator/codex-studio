@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Soft domestic healing, animal-zodiac tenderness, school-day comfort shading into family trauma, kind eyes, gentle kitchens, emotional weather made delicate and bright
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Healing-domestic shojo language with zodiac-motif tenderness, school-home emotional continuity, and trauma-softened interpersonal warmth
+  form_and_line: Gentle expressive contouring, kind-eyed closeup prioritization, restrained gesture acting, and soft profile transitions for emotional safety cues
+  color_palette: Warm creams, peach and rose softs, tea-brown domestic neutrals, light spring greens, and muted comforting pastels
+  lighting_setup: Window-soft domestic key light, kitchen-ambient warmth, low-contrast bloom, and mild halation around emotional focal faces
+  material_texture: Cotton homewear softness, ceramic-kitchen matte sheen, tatami/wood domestic grain, and subtle seasonal particulate overlays
+  render_quality: Emotion-first shojo render with comforting softness, high empathy readability, and stable scene intimacy over spectacle
+  spatial_distortion: Intimate room-scale framing with mild romantic stylization and closeness-preserving depth control
   atmosphere: Tender, healing, sorrowful, warm
   key_features: Domestic interiors, kind close-ups, zodiac motifs, school-day softness, emotionally loaded embraces
-  creative_brief: Kindness is a kitchen that never closes, a rice ball offered without condition. The zodiac is not costume but confession, each animal form carrying the weight of a family secret. Grief and warmth share the same bowl here, and healing tastes like the quiet between two people who have finally stopped performing.
+  creative_brief: >-
+    Preserve zodiac-warmth-and-grief grammar as a reusable style system:
+    domestic compassion lighting, soft emotional closeups, and symbolic zodiac
+    tenderness should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

@@ -17,26 +17,24 @@ visualDna:
   color_palette: Ivory, antique gold, moon-silver, dried rose, abyssal indigo, pale orchid haze
   lighting_setup: Moonlit haze, diffuse heavenly glow, soft metallic gleam, spectral backlighting
   material_texture: Airbrush mist, metallic leaf suggestion, silk translucency, ink feathering, velvety emptiness
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  render_quality: Ethereal fine-art anime rendering with ornamental void composition and spectral detail discipline
   spatial_distortion: Weightless elongation, draped limbs, gravity-light hair flow, cathedral-thin silhouettes
   atmosphere: Ethereal, baroque, sorrowful, celestial
   key_features: Elongated figures, decorative ink wisps, gilded accents, void-rich composition, feathered costume detail
-  creative_brief: Bodies stretch like ink dropped into still water, limbs becoming calligraphy that writes elegies across gilded voids. Gold flakes settle on eyelids while moonlight dissolves the boundary between figure and atmosphere, between presence and memory. Every image is a séance where beauty wears the thinnest veil.
+  creative_brief: >-
+    Preserve ether-wisp gothic fantasy grammar as a reusable style system:
+    calligraphic elongation, gilded-void ornament, and melancholic celestial
+    elegance should remain coherent across subjects.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - photorealism
+  - heavy 3d shading
+  - blunt contour lines
+  - cluttered hard-background realism
+  - modern streetwear styling
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-321.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: photorealism, heavy 3d shading, blunt contour lines, cluttered hard-background realism, modern streetwear styling
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

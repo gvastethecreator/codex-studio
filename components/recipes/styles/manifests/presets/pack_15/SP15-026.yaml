@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Cathedral-like longitudinal depth ending in a launch altar.
   atmosphere: Triumphal curiosity, solemn innovation, and civic mythmaking.
   key_features: Rocket reliquaries, mission mosaics, and ion-organ balconies.
-  creative_brief: A raypunk cathedral where space travel is practiced as civic liturgy.
+  creative_brief: >-
+    Preserve rocket cathedral-arcade grammar as a reusable style language:
+    sacred-science monumental planning, longitudinal launch choreography, and
+    civic mythmaking cues should remain stable across subjects.
 avoidRules: [photoreal, dystopian-decay, rustic-medieval, grim-bunker-only, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-026.webp }
 attributes:

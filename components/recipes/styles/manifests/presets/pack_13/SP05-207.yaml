@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Production-desk realism, scooters and keyframes, team stress turned camaraderie, office coffee and deadline boards, professional slice-of-life with hopeful momentum
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Desk-clutter compositional line rhythm, storyboard panel geometry accents, and ensemble workflow body-language clarity
+  color_palette: Fluorescent office neutrals, sticky-note yellows, monitor blues, coffee browns, and commuter-scooter accent reds
+  lighting_setup: Mixed office fluorescent top-light, monitor glow spill, late-night desk lamp pools, and window-gray overtime ambience
+  material_texture: Paper stacks, tablet and keyboard plastics, corkboards, coffee cup condensation, and worn office flooring
+  render_quality: Workplace-production rendering with high task-readability and energetic team-chaos coherence
+  spatial_distortion: Deadline-pressure framing through tighter desk-depth stacking and motion-led corridor cuts
   atmosphere: Busy, collaborative, stressed, upbeat
   key_features: Desk clutter, storyboards, production checklists, team ensemble acting, studio fluorescent warmth
-  creative_brief: Deadline boards glow fluorescent in a studio where caffeine and keyframes share the same desk. Five women chase the anime dream through spreadsheets and storyboards, discovering that the real production is the friendship assembled frame by frame. Art is not just what hangs on the screen — it is who you make it with.
+  creative_brief: >-
+    Preserve anime-studio workday grammar as a reusable style language:
+    production-desk density, collaborative hustle energy, and hopeful
+    professional camaraderie should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

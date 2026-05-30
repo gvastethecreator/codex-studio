@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Anime detective noir with a strong ink language.
-  form_and_line: High contrast, hard outlines, and graphic shadows.
-  color_palette: Black and white with a single crimson accent.
-  lighting_setup: Intense sidelight and venetian-blind shadows.
-  material_texture: Rough paper, light rain, and minimal shine.
-  render_quality: Highly readable anime noir poster style.
-  spatial_distortion: Tight framing for psychological mystery.
-  atmosphere: Intrigue, solitude, and deduction.
-  key_features: Gabardina, calle nocturna, pista visual central.
-  creative_brief: A detective at the moment of discovery—dramatic and restrained.
+  aesthetic: Ink-driven anime noir detective language with psychological austerity, urban midnight isolation, and clue-centric narrative tension
+  form_and_line: Hard-edged contour blocks, bold black massing, angular coat silhouettes, and graphic shadow slicing inspired by crime-poster composition
+  color_palette: Monochrome black-white dominance with restrained crimson accent channels reserved for focal evidence or emotional stress points
+  lighting_setup: Severe lateral key, venetian-shadow banding, wet-street specular cuts, and controlled negative fill for noir depth retention
+  material_texture: Rough matte paper-like grain, light drizzle particulate, damp pavement sheen, and low-gloss textile surfaces
+  render_quality: Poster-grade anime noir rendering with high legibility, disciplined value contrast, and cinematic restraint at card scale
+  spatial_distortion: Tight focal framing with compressed depth to heighten claustrophobic deduction mood
+  atmosphere: Intriguing, solitary, tense, and cerebral
+  key_features: Trenchcoat silhouette authority, central evidence anchor, striped shadow patterning, and crimson clue-emphasis logic
+  creative_brief: >-
+    Preserve detective-noir anime grammar as a reusable style system:
+    monochrome ink massing, selective crimson focal accents, and hard lateral
+    shadow architecture should remain consistent across subjects.
 avoidRules:
   - photoreal
   - colorful-rainbow

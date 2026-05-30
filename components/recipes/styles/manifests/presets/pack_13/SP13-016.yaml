@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Anime battle fantasy with elemental magic.
-  form_and_line: Sorceress design with cape and dynamic gesture.
-  color_palette: Storm blue, electric white, and violet.
-  lighting_setup: Magical discharges as the primary light source.
-  material_texture: Ritual fabric, glowing runes, and energy particles.
-  render_quality: High-impact combat illustration.
-  spatial_distortion: Upward perspective with enveloping energy.
-  atmosphere: Poder, urgencia y grandiosidad arcana.
-  key_features: Magic circle, central lightning bolt, dominant pose.
-  creative_brief: Spell at peak climax with strong readability and a memorable form.
+  aesthetic: Arcane battle-mage anime language with elemental storm authority, ritual-combat iconography, and high-impact fantasy dynamism
+  form_and_line: Commanding caster silhouette, cape-driven motion vectors, rune-circle geometry anchors, and upward gesture lines emphasizing spell-release force
+  color_palette: Storm blue foundations, electric white discharge cores, violet arcane shadows, and selective silver highlights for energy separation
+  lighting_setup: Spell-emission as dominant key source, secondary rune-floor uplight, high-contrast rim flashes, and particulate glow falloff control
+  material_texture: Layered ritual textiles, embossed sigil surfaces, charged air particle trails, and luminous rune-inscription edges
+  render_quality: Premium combat-anime rendering with sharp spell readability, disciplined effects layering, and strong pose-to-energy coherence
+  spatial_distortion: Low-angle upward perspective with radial energy wrap and controlled environment warping around the cast focal point
+  atmosphere: Urgent, powerful, grand, and arcane-charged
+  key_features: Central magic-circle architecture, lightning discharge hierarchy, dominant caster stance, and rune-particle system choreography
+  creative_brief: >-
+    Keep battle-mage stormcast grammar as a reusable style system: rune-anchored
+    spell geometry, electric-violet energy hierarchy, and low-angle arcane
+    dominance should remain consistent across subjects.
 avoidRules:
   - photoreal
   - low-contrast

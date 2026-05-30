@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Castle in sky, celestial fortress, cloud realm, Laputa vision, aerial kingdom
-  form_and_line: Vertical towers, floating-island massing, air-bridge spans, waterfall-fall lines, spiral spires
+  aesthetic: Aerial-fortress romanticism, floating-island megastructure fantasy, skyborne sovereign architecture
+  form_and_line: Vertiginous spire clusters, suspended landmass tiering, bridge-span void crossings, downward waterfall vectors
   color_palette: White, Blue sky, Cloud-silver, Golden sun edge, Waterfall-cascade White, Lapis above
   lighting_setup: Bright sun, cloud-reflected brilliance, angel-ray beams, blue-sky ambient, golden-edge rim light
   material_texture: Stone, clouds, gossamer, crystalline spire, floating rock, wisp-vapor base
-  render_quality: Dreamy, impossible, Miyazaki-beauty, sky-castle wonder, unfettered imagination, weightless grandeur
+  render_quality: High-fantasy sky-architecture rendering with atmospheric depth, impossible-engineering coherence, and majestic scale control
   spatial_distortion: Floating rocks
-  atmosphere: Magical, high, sky-kingdom, impossible-dream, wind-borne, breathtakingly free
-  key_features: Clouds below, floating islands, waterfalls into void, air bridges, tallest spire, blue sky around
-  creative_brief: Spires pierce cloud layer like needles stitching heaven to earth with stone thread. Waterfalls drop into blue nothing, liquid abandoning its loyalty to gravity for the freedom of falling forever. The castle floats as if the ground beneath it simply forgot to be there, an architecture of refusal.
+  atmosphere: Sublime altitude, impossible calm, wind-driven grandeur, transcendent distance
+  key_features: Void-bridging spans, cloud-below horizon lines, floating mass undercuts, skyfall waterfalls, aerial silhouette dominance
+  creative_brief: >-
+    Prioritize floating-castle visual logic through suspended massing,
+    high-altitude atmosphere, and vertical landmark composition. Keep the
+    identity in weight-defying architecture and sky-scale wonder rather than a
+    single named fortress narrative.
 avoidRules:
   - grounded
 assets:

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Ink-splash-suggesting-impact-zones, negative-space-as-form, brushstroke-gesture-as-anatomy, no-filled-forms, economy-of-space
   atmosphere: Zen-discipline, explosive-silence, one-strike-certainty, ink-grind-meditation, master's-quiet-confidence
   key_features: Sumi-ink-monochrome, single-brushstroke-gestures, dry-brush-splinter-edges, ink-pool-wetness, rice-paper-texture, negative-space-as-light, vermillion-seal-stamp
-  creative_brief: 'A single brushstroke carries the entire arc of a sword — from stillness through violence back to silence — in one unbroken gesture of suspended ink. The negative space between strikes holds more weight than the marks themselves, white paper vibrating with implied motion. Combat distilled to calligraphy: the battle exists as much in what was withheld as what was laid down.'
+  creative_brief: >-
+    Preserve sumi-e brushstroke combat grammar as a reusable style system:
+    pressure-variable calligraphic stroke anatomy, negative-space impact logic,
+    and monochrome ink-value composition should remain consistent across
+    subjects.
 avoidRules:
   - detailed
   - filled

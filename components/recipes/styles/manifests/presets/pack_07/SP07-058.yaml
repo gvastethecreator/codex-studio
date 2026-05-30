@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Grown crystal tower, mineral skyscraper, geodesic fantasy, geological architecture, prism spire
-  form_and_line: Sharp facets, hexagonal columns, converging crystal points, geometric shard, pyramid cap
+  aesthetic: Crystalline megastructure fantasy, geologic-growth architecture, mineral monolith futurism
+  form_and_line: Faceted vertical stacks, hex-column bundles, shard convergence vectors, prismatic apex geometry
   color_palette: Purple/Blue/White, Amethyst, Sapphire, Diamond-spark, Deep Crystal Violet, Iridescent flash
   lighting_setup: Internal refraction, rainbow-dispersion, inner-glow core, facet-edge brilliance, dark-crystal depth
   material_texture: Glassy, mineral crystal, gemstone face, translucent depth, faceted surface, amethyst geode
-  render_quality: Alien, pure, crystalline-perfection, geode-magic, otherworldly prism, mineral-beauty
+  render_quality: High-clarity crystal-architecture rendering with refraction-coherent light behavior and gemstone-scale precision
   spatial_distortion: None
-  atmosphere: Cold, magical, gemstone-elegant, ancient-growth, silent-harmonic, other-realm
-  key_features: Translucency, crystal facets, inner glowing core, rainbow refraction, giant geode, prism spire
-  creative_brief: Amethyst facets catch inner light and throw it outward in violet splinters, the tower glowing from a source that geometry itself seems to generate. Crystal columns rise from mineral seed, grown rather than built, architecture at geological speed. The spire sings at frequencies only quartz can hear, a silent music of refraction.
+  atmosphere: Luminous stillness, cold awe, otherworld elegance, mineral transcendence
+  key_features: Refraction-edged facet planes, translucent depth cores, prism-spire silhouette, internal glow strata, geode-scale detailing
+  creative_brief: >-
+    Treat this preset as crystal-growth architecture language: faceted geometry,
+    translucent mass, and optical dispersion should carry the identity. Keep
+    forms precise and majestic, with geological logic that remains reusable
+    across fantasy or sci-fi settings.
 avoidRules:
   - brick
   - wood

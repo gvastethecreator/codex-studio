@@ -13,16 +13,19 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: Delicate shojo style with springtime romanticism.
-  form_and_line: Elegant fine linework, expressive eyes, and soft gestures.
-  color_palette: Rosa pastel, crema, lavanda y verde menta.
-  lighting_setup: Luz difusa de tarde, brillos suaves en cabello.
-  material_texture: Fine paper, airborne petals, and lightweight fabrics.
-  render_quality: Ethereal anime illustration with a polished finish.
-  spatial_distortion: Light depth focused on facial emotion.
-  atmosphere: Tenderness, nostalgia, and emotional calm.
-  key_features: Petals, emotional gaze, romantic palette.
-  creative_brief: An intimate spring scene with shojo sensitivity and clean vertical composition.
+  aesthetic: Soft shojo-romance language with delicate emotional framing, spring-inflected tonal warmth, and lyrical character sensitivity
+  form_and_line: Fine tapered linework, elongated eye-expression geometry, gentle hand and hair gesture arcs, and open negative-space framing
+  color_palette: Pastel rose, cream, lavender, mint green, and muted blush accents with low-saturation harmony
+  lighting_setup: Diffuse late-afternoon glow, soft hair highlight ribbons, low-contrast facial fill, and subtle bloom around focal features
+  material_texture: Matte paper delicacy, lightweight fabric flow, petal-soft particulate overlays, and minimal-grain painterly finish
+  render_quality: Polished ethereal shojo render with controlled softness, stable facial readability, and emotionally transparent color grading
+  spatial_distortion: Shallow depth emphasis around expression focal plane with restrained background recession
+  atmosphere: Tender, nostalgic, romantic, calm, and introspective
+  key_features: Expressive gaze hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance, and intimacy-first composition
+  creative_brief: >-
+    Keep this preset anchored in shojo emotional grammar: delicate line weight,
+    pastel romantic tonality, and expression-centered composition should remain
+    transferable across subjects.
 avoidRules:
   - photoreal
   - gritty

@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Dessert-cafe moe softness, tiny uniforms, foam art and lace trims, decorative interiors, sugar-sweet pacing, plush friendliness and cozy customer-service charm
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Tiny-uniform silhouette language, dessert-display contour neatness, and soft comedic service-gesture readability
+  color_palette: Whipped-cream whites, pastel strawberry pinks, mint accents, caramel browns, and warm interior golds
+  lighting_setup: Cafe pendant warm pools, pastry-case glow, and gentle window diffusion for plush ambience
+  material_texture: Lace trim weave, ceramic cup glaze, foam microtexture, polished wood counters, and confectionery gloss details
+  render_quality: Sugar-cozy moe rendering with high decorative legibility and inviting hospitality tone
+  spatial_distortion: Compact table-and-counter framing to heighten tiny-world charm
   atmosphere: Sugary, tiny, cute, soothing
   key_features: Cafe counters, lace uniform detail, desserts and teacups, plush texture cues, decorative interior symmetry
-  creative_brief: Latte foam blooms into a rabbit silhouette atop a cup too pretty to disturb. Lace aprons and sugar-dusted counters frame a world where sweetness is not indulgence but atmosphere — the gravity that keeps everyone orbiting the same cozy counter. Every order arrives with a side of irreplaceable small-talk.
+  creative_brief: >-
+    Preserve cafe-sugar cotton grammar as a reusable style language:
+    dessert-display softness, lace-uniform charm, and compact cozy service
+    staging should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Fisheye-NVG-lens-distortion, HUD-elements-composited, body-cam-head-motion-blur, targeting-reticle-center
   atmosphere: Tactical, tense, nocturnal-war, predator-stalking, high-tech-vulnerability, ghostly-green-paranoia
   key_features: Green-phosphor-monochrome, image-intensifier-grain, HUD-tactical-overlay, targeting-reticle, NVG-lens-vignette, infrared-laser-dots, body-cam-framing
-  creative_brief: The world flattens into phosphor-green truth — bodies reduced to thermal ghosts drifting through an intensifier tube's grainy field of regard. HUD crosshairs float over the scene like digital prayers, every mote of sensor noise a witness to the invisible spectrum. Seeing here is an act of technology, not nature, and the feed cannot be trusted to show what matters.
+  creative_brief: >-
+    Preserve night-vision tactical-footage grammar as a reusable style system:
+    phosphor monochrome sensor response, HUD-overlay compositing, and
+    intensifier-grain perception should remain consistent across subjects.
 avoidRules:
   - colorful
   - bright

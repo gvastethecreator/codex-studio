@@ -17,26 +17,24 @@ visualDna:
   color_palette: Pearl white, amethyst, midnight blue, rose quartz, icy silver, celestial lavender
   lighting_setup: Soft moon-rim illumination, jewel-like specular accents, staged dramatic glow
   material_texture: Silk sheen, gem sparkle, lace filigree, polished hair ribbons, glossy eye highlights
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  render_quality: High-elegance fashion-fantasy rendering with precise silhouette hierarchy and jewel-toned compositional clarity
   spatial_distortion: Fashion-figure proportions, cathedral-tall silhouettes, elegant hand and neck extension
   atmosphere: Elegant, lunar, poised, dramatic
   key_features: Extremely long limbs, ornate costume geometry, moonlit framing, jewel accessories, poised emotional distance
-  creative_brief: Limbs extend beyond natural law, reaching toward a moon that seems to have been waiting for exactly this proportion of grace. Ornamental geometry clings to silhouettes carved from cathedral glass and unspoken longing. Elegance here is not ornament but architecture—the bone structure of a dream refusing to be small.
+  creative_brief: >-
+    Preserve celestial limb-elongation grammar as a reusable style language:
+    cathedral-tall silhouettes, ornamental costume geometry, and moonlit
+    emotional poise should remain stable across subjects.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - photoreal anatomy realism
+  - short compact proportions
+  - casual modern minimal outfits
+  - muddy lighting
+  - thick comic inking
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-322.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: photoreal anatomy realism, short compact proportions, casual modern minimal outfits, muddy lighting, thick comic inking
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

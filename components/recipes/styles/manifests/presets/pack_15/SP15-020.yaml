@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Spiraling promenade perspective orbiting a central energy core.
   atmosphere: Controlled exhilaration, scientific pride, and uneasy wonder.
   key_features: Transparent reactor chamber, educational kiosks, and orbital cafe rings.
-  creative_brief: A people-first atompunk boulevard where energy infrastructure is a civic landmark.
+  creative_brief: >-
+    Preserve reactor-promenade grammar as a reusable style language:
+    orbiting public-energy architecture, transparent educational infrastructure,
+    and controlled scientific wonder should remain stable across subjects.
 avoidRules: [photoreal, dystopian-bunker-only, sludge-industrial, fantasy-castle, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-020.webp }
 attributes:

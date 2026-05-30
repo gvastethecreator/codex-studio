@@ -17,26 +17,24 @@ visualDna:
   color_palette: Cement grey, faded blue, rust orange, dirty cream, bruised purple, asphalt black
   lighting_setup: Hazy urban daylight, sodium-vapor night bleed, flat overcast concrete gloom
   material_texture: Dry-brush grit, photocopy grain, rough wall scrape, cracked paint, pencil scuff
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  render_quality: Gritty sketch-urban rendering with rough poetic abstraction and tactile city-line immediacy
   spatial_distortion: Loose body proportions, tilted urban perspective, sketched motion drift, uneven head-to-limb relationships
   atmosphere: Restless, rough, spiritual, urban
   key_features: Scratchy concrete textures, rooftop silhouettes, adolescent motion, rough city iconography, sacred-urban weirdness
-  creative_brief: Concrete breathes through scratched lines as a bicycle carves meaning into the city rough skin. Rooftops become confessionals, alleyways become temples, and every scuff mark on the pavement is a prayer written in scuffed shoe rubber. The holy and the ugly share a cigarette on a fire escape, and the line between them was never drawn.
+  creative_brief: >-
+    Preserve scratchy urban-drift grammar as a reusable style system:
+    dry-ink roughness, concrete-poetry composition, and adolescent restless
+    city energy should remain coherent across subjects.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - clean glossy polish
+  - perfect symmetry
+  - sterile gradients
+  - ultra-smooth linework
+  - fantasy ornament overuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-325.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: clean glossy polish, perfect symmetry, sterile gradients, ultra-smooth linework, fantasy ornament overuse
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

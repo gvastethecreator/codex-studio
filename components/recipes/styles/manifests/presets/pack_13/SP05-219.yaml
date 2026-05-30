@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Ordinary boys turning hallways and riverbanks into dead-serious nonsense stages, sketch-comedy timing, school-blazer awkwardness, underplayed absurdity
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Deadpan-comedy contour economy, exaggerated reaction silhouette beats, and banal-setting stage composition
+  color_palette: Neutral school grays, blazer navy, riverbank greens, sun-faded concrete, and occasional comedic accent pops
+  lighting_setup: Flat classroom daylight, casual outdoor afternoon fill, and low-drama illumination supporting timing-first gags
+  material_texture: Blazer wool texture, desk-edge scuffs, riverbank grass and dirt, and everyday prop matte finishes
+  render_quality: Ensemble deadpan rendering with timing clarity, awkward-boy body language, and low-stakes absurdist rhythm
+  spatial_distortion: Momentary gag exaggeration through reaction-scale pops within otherwise normal perspective
   atmosphere: Goofy, deadpan, schoolyard, loose
   key_features: Blazer silhouettes, hallway conversation staging, low-budget absurdist posing, riverbank comedy scenes, ensemble rhythm
-  creative_brief: A school blazer becomes a cape, a hallway becomes a battlefield, and three friends treat absurdity with the solemnity of a national crisis. The joke is never the punchline — it is the commitment, the deadpan delivery, the way teenage boys alchemize boredom into theater with only each other as audience. Nothing matters, so everything does.
+  creative_brief: >-
+    Preserve hallway-idiot-theater grammar as a reusable style system:
+    deadpan comedic commitment, mundane-space stagecraft, and ensemble
+    adolescent absurdity should remain coherent across subjects.
 avoidRules:
   - realistic
   - 3d render

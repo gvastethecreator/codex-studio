@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Tech cube, cybernetic-collective vessel, assimilation architecture, networked sentience, adaptive geometry
-  form_and_line: Pipes, conduit-bundles, alcove-grid, regeneration-niche, data-node columns, tractor-beam emitter rings
-  color_palette: Dark Grey, Green light, Cybernetic-sick Green, Cold-metal Black, Plasma-blue, Necrotic-circuit glow
-  lighting_setup: Space, interior-green ambient, alcove-spot, plasma-conduit pulse, tractor-beam green wash, deep-space void
-  material_texture: Greebles, cybernetic-surface detail, bio-mechanical interface, tube-bundle, armor-plate, drone-socket, regeneration gel
-  render_quality: Complex, scary, Borg-collective menace, assimilation-horror, cybernetic-nightmare, hive-precision
+  aesthetic: Borg-inspired cybernetic hive-architecture language emphasizing modular collective infrastructure, relentless utility, and machine-organic integration
+  form_and_line: Orthogonal cube massing, dense conduit bundles, repetitive alcove grids, emitter-ring nodes, layered service gantries, and infrastructural panel recursion
+  color_palette: Graphite black metals, gunmetal gray fields, phosphor green emissions, cold cyan plasma accents, and deep void-shadow undertones
+  lighting_setup: Low-key space ambience, pulsing green conduit glow, localized alcove practicals, intermittent plasma highlights, and high-contrast industrial shadow depth
+  material_texture: Greeble-dense armor plates, biomechanical interface surfaces, cable harness clusters, regeneration-gel translucency, machined panel seams, and worn conductive patina
+  render_quality: High-density techno-industrial rendering with strong modular repetition, oppressive mechanical precision, and coherent cybernetic-hive identity
   spatial_distortion: None
-  atmosphere: Ominous, assimilating, resistance is futile
-  key_features: Cube, regeneration alcoves, conduit bundles, green plasma, drone figures, tractor beam, hive architecture
-  creative_brief: Green plasma pulses through conduit bundles like the cube itself has a circulatory system of cold light. Regeneration alcoves line the walls in infinite grid, each niche waiting for a drone that will rise and serve. The architecture hums with collective purpose, every surface a circuit, every corridor a vein, beauty eliminated in favor of function perfected into horror.
+  atmosphere: Ominous, collective, dehumanized, efficient, and technologically invasive
+  key_features: Cube-shell modularity, regeneration alcove matrices, conduit superstructure webs, green plasma channeling, emitter-ring apparatus, and dense service-surface detailing
+  creative_brief: >-
+    Keep the preset anchored in cybernetic-hive grammar: orthogonal cube
+    macroform, conduit-saturated infrastructure, and phosphor-green collective
+    systems should remain consistent across subject changes.
 avoidRules:
   - smooth
 assets:

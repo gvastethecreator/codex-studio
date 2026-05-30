@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Dungeon anime with bioluminescence and mystical echoes.
-  form_and_line: Clear outlines, exploration props, and threatening silhouettes.
-  color_palette: Dark blue, glowing green, and subdued amber.
-  lighting_setup: Torchlight plus bioluminescent sources.
-  material_texture: Wet stone, crystals, and underground mist.
-  render_quality: Anime environment scene with explorer-focused framing.
-  spatial_distortion: Tunnel perspective with progressive tension.
-  atmosphere: Suspenso, curiosidad y peligro latente.
-  key_features: Glowing portal, explorer backpack, runes.
-  creative_brief: Expedition through a deep passage with atmospheric mood and crisp readability.
+  aesthetic: Labyrinthine dungeon-exploration anime language with bioluminescent mysticism, survival-focus readability, and escalating subterranean tension
+  form_and_line: Clear contour hierarchy for explorers, jagged threat silhouettes, rune-guided path geometry, and tunnel-axis perspective lines that build pressure
+  color_palette: Abyssal blue foundations, toxic-lime bioluminescent accents, muted amber torch warmth, and stone-neutral grays for value stability
+  lighting_setup: Dual-source contrast of warm torch practicals and cool bio-glow pockets, with controlled fog diffusion and high-value focal anchoring
+  material_texture: Moist carved stone faces, crystalline growth nodes, mossy damp seams, airborne underground mist, and weathered expedition gear surfaces
+  render_quality: High-clarity environment-anime render with exploration-centric focal design, strong depth readability, and suspense-preserving tonal discipline
+  spatial_distortion: Progressive tunnel compression with layered occlusion planes to intensify danger anticipation
+  atmosphere: Suspenseful, curious, cautious, and latent-threat driven
+  key_features: Bioluminescent rune cues, portal-like glow anchors, expedition loadout silhouette markers, and moisture-rich cavern material signatures
+  creative_brief: >-
+    Preserve dungeon-glow exploration grammar as a reusable style system:
+    dual warm-cool underground lighting, rune-guided spatial tension, and wet
+    cavern material fidelity should remain consistent across subjects.
 avoidRules:
   - photoreal
   - daylight

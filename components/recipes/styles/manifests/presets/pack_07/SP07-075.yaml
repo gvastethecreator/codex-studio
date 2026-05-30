@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Impossible architecture, optical-illusion maze, M.C. Escher dream, paradoxical geometry, mental-puzzle space
-  form_and_line: Clean lines, stair-paradox loops, arch-reversal, floor-wall-ceiling ambiguity, isometric-impossible, endless ascent
-  color_palette: Greyscale, Warm paper-cream, Ink-black line, Stone-tone gradient, Shadow-cool Grey, Lithograph-sepia
-  lighting_setup: Flat, lithograph-even, impossible-shadow, ambiguity-light, multiple-light-source confusion, print-studio clarity
-  material_texture: Stone, print-paper grain, lithograph-ink, carved-stone, woodcut-line, etched-detail
-  render_quality: Mind-bending, loop, optical-illusion genius, paradox-realized, impossible-print, brain-puzzle art
-  spatial_distortion: Gravity defiance
-  atmosphere: Confusing, infinite, wonder-perplexed, impossible-calm, mind-trapped, perspective-vertigo, delightful-bafflement
-  key_features: Stairs, impossible loops, multiple gravity, archways, courtyard paradox, ascending-descending figures, lithograph look
-  creative_brief: Stairs climb toward destinations that exist in three conflicting gravity directions, each ascent leading somewhere the architect's sanity should have vetoed. Figures walk upside-down through archways that connect ceilings to floors, the whole scene a polite rebellion against the dictatorship of physics. The print hangs in eternal paradox, a joke told in lithograph that the brain never stops trying to find the punchline of.
+  aesthetic: Paradox-architecture language inspired by Escher-like visual logic, impossible circulation systems, and mathematically staged optical ambiguity
+  form_and_line: Interlocking stair loops, inversion-ready arches, isometric structural grids, floor-wall-ceiling role swaps, and closed-path ascent/descent paradoxes
+  color_palette: Monochrome gray spectrum, warm print-paper cream, deep ink black linework, subtle sepia undertones, and cool shadow modulation bands
+  lighting_setup: Print-style even exposure with intentionally conflicting shadow cues, multi-vector light implication, and restrained contrast for illusion persistence
+  material_texture: Lithograph paper grain, etched ink hatch marks, matte stone-like plane treatment, and fine engraving-style contour detailing
+  render_quality: High-precision optical-illusion rendering with strict geometric coherence, controlled print aesthetic, and cognitively destabilizing yet readable topology
+  spatial_distortion: Multi-gravity inversion loops and perspective-locked paradox compression across connected planes
+  atmosphere: Cerebral, disorienting, elegant, infinite, and intriguingly unresolved
+  key_features: Multi-gravity stair circuits, impossible arch transitions, perspective-locked loop topology, inversion-compatible courtyards, and lithographic line hierarchy
+  creative_brief: >-
+    Preserve a reusable impossible-architecture grammar: paradox stair loops,
+    stable line logic under contradictory gravity cues, and lithograph-like
+    tonal discipline should define the preset across subject changes.
 avoidRules:
   - logical physics
 assets:

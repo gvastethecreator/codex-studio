@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Elite-school parody romance, princely posturing, rose-cloud backdrops, theatrical flirting, comedy elegance, emotional sincerity hiding under polished nonsense
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Elite-academy romantic-satire shojo language with princely theater, rose-cloud performativity, and affectionate comedic self-awareness
+  form_and_line: Elegant parody contouring, theatrical gesture silhouettes, ensemble-reaction framing, and compositional flourishes timed to comedic flirt beats
+  color_palette: Rose and champagne tones, polished academy neutrals, pastel-gold decorative accents, and selective high-romance color flares
+  lighting_setup: Stage-like spotlight pockets, dreamy bloom overlays on cue, soft academy ambient fill, and comic reveal contrast boosts
+  material_texture: Ornate school décor surfaces, tailored costume textiles, bouquet/rose motif overlays, and refined prop polish with playful exaggeration
+  render_quality: High-polish comedic shojo render with strong ensemble timing readability, theatrical romance styling, and satirical elegance balance
+  spatial_distortion: Mildly exaggerated courtly staging with dynamic group blocking and pose-centric comedic depth control
   atmosphere: Playful, elegant, satirical, affectionate
   key_features: Rose effects, princely poses, ornate academy props, ensemble comedy staging, polished costume detail
-  creative_brief: Roses bloom on cue because irony is the truest form of sincerity here. Every princely pose is a negotiation between what is expected and what is actually felt, the gap filled with theatrical genius. The joke and the confession share the same spotlight, and neither wants to yield.
+  creative_brief: >-
+    Preserve rose-cloud flirt-theater grammar as a reusable style system:
+    theatrical princely staging, satirical romance motifs, and ensemble
+    comedy-confession balance should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

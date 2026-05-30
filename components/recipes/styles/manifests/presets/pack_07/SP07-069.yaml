@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Bouncy house, party inflatable, air-filled fun palace, childhood carnival, birthday-bounce kingdom
-  form_and_line: Seams, inflated tube curves, turret-bulge cylinders, rounded-battlement bumps, fan-hose snake
-  color_palette: Neon vinyl, Hot Pink, Electric Yellow, Safety Orange, Royal Blue inflatable, Bright Green
-  lighting_setup: Glossy, vinyl-shine reflection, sun-through-vinyl translucency, party-string lights, fan-inflated tension
-  material_texture: Plastic vinyl, glossy PVC, seam-weld ridge, inflatable-taut surface, bouncy-air resistance, nylon-web tie
-  render_quality: Soft, air filled, bounce-house joy, backyard-carnival, inflatable-castle kitsch, birthday-party centerpiece
-  spatial_distortion: Bulging
-  atmosphere: Fun, bouncy, party-excitement, air-pressure, squeaky-joy, kid-energy, temporary-amusement
-  key_features: Wrinkles, seam lines, blower fan, bright color panels, turrets, slide opening, net windows
-  creative_brief: Vinyl turrets bulge with air-pressure pride, seams straining against the enthusiasm trapped within. Electric yellow panels glow with the translucency of thin plastic and thick joy, the castle trembling slightly as children inside test the physics of bouncing. The blower fan hums its eternal note, the heartbeat of temporary architecture.
+  aesthetic: Play-structure inflatable architecture language with pressurized soft-volume massing, carnival color blocking, and temporary-event spatial identity
+  form_and_line: Bulging pneumatic tubes, welded panel segmentation, rounded turret lobes, soft crenellation bumps, and hose-fed anchoring geometry
+  color_palette: High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral seam-strip accents
+  lighting_setup: Outdoor diffuse sun with strong vinyl specular hits, translucent panel glow, localized party practicals, and subtle subsurface edge bloom
+  material_texture: Glossy PVC skin, heat-weld seam ridges, taut inflated membranes, wrinkle transitions at load points, nylon tie-down details, and blower-interface fittings
+  render_quality: Toy-like yet structurally legible inflatable rendering with high material fidelity, controlled sheen, and clear temporary-installation character
+  spatial_distortion: Soft-volume inflation bulge and pressure-rounded edge behavior across all masses
+  atmosphere: Energetic, playful, kinetic, festive, and unmistakably temporary
+  key_features: Pressurized tubular frame, heat-weld seam grid, vivid panel zoning, mesh safety windows, blower-fed inflation node, and soft-impact edge profiles
+  creative_brief: >-
+    Preserve inflatable-architecture grammar as a reusable style system:
+    pressure-rounded massing, welded vinyl seam topology, and saturated modular
+    color zoning must stay consistent independent of subject matter.
 avoidRules:
   - hard edges
 assets:

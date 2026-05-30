@@ -13,15 +13,18 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: Art-student shojo-seinen blend, spring light, campus studios, unspoken longing, youth drifting toward adulthood through creativity and fragile friendship
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  form_and_line: Sketchbook-informed contour work, painterly gesture accents, fine emotional line economy, and studio-prop silhouette readability
+  color_palette: Spring ivory, muted sakura pinks, pale celadon, weathered wood neutrals, and charcoal sketch accents
+  lighting_setup: North-window atelier daylight, dusty afternoon bloom, and soft reflective fill from paper and canvas surfaces
+  material_texture: Graphite dust, watercolor paper tooth, cotton aprons, worn easel wood, and matte student-tool patina
+  render_quality: Poetic art-school rendering with lived-in studio realism, emotional restraint, and tactile analog warmth
+  spatial_distortion: Gentle memory-depth drift through layered studio foreground elements
   atmosphere: Soft, wistful, intelligent, aching
   key_features: Art-studio props, spring campus light, quiet ensemble spacing, unspoken affection acting, sketchbook textures
-  creative_brief: Spring light through studio windows is not illumination but interrogation, asking every canvas what it means to grow up without a map. Unspoken longing settles between easels like charcoal dust, fine and permanent. Art becomes the only language capable of translating the ache of youth into something that makes the distance between people feel shorter.
+  creative_brief: >-
+    Preserve art-school spring-ache grammar as a reusable style language:
+    sketch-driven line economy, studio-material tactility, and restrained
+    youthful longing should remain coherent across subjects.
 avoidRules:
   - realistic
   - 3d render

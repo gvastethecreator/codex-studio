@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Sorcerous comedy-adventure, greedy treasure energy, explosive spell circles, fantasy road dust, mischievous confidence, loud 90s spellcasting charm
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  aesthetic: Arcane-roadtrip comedy anime language with loud spell theatrics, mercenary bravado, and treasure-hunter chaos driven by high-tempo 90s fantasy irreverence
+  form_and_line: Agile expressive linework with elastic comedic accents, flame-and-spell circle geometry, and reaction-shot exaggeration tuned for banter energy
+  color_palette: Fire-cast oranges, sapphire spell blues, travel-leather browns, pop-magenta highlight accents, and bright fantasy sky contrasts
+  lighting_setup: Spell-burst key flashes, campfire/torch practical warmth, high-contrast cel cuts during attacks, and comedic daylight resets between clashes
+  material_texture: Dusty road matte surfaces, parchment-and-leather travel props, cel-grain overlays, and painted fantasy-environment depth wash
+  render_quality: Punchy 90s fantasy-comedy rendering with clear comedic timing readability, explosive magic staging, and adventurous charm fidelity
+  spatial_distortion: Kinetic pose exaggeration and rapid perspective pushes that support slapstick-into-spell impact transitions
   atmosphere: Comic, adventurous, fiery, rambunctious
   key_features: Spell-circle bursts, roadtrip fantasy props, comic reaction faces, treasure-hunter posing, fireball spectacle
-  creative_brief: A sorceress whose firepower vastly exceeds her judgment, dragging a fellowship of misfits across fantasy kingdoms that will never be the same after her spell circles stop glowing. Greed is a lifestyle, destruction is a love language, and the only thing more explosive than her magic is her appetite for treasure, food, and the absolute refusal to let anyone else get the last word. The road is chaos, and chaos has never had a better ambassador.
+  creative_brief: >-
+    Preserve arcane-chaos-roadtrip grammar as a reusable style system:
+    comedy-to-combat spell pivots, loud fantasy color contrast, and mischievous
+    party-chemistry staging should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

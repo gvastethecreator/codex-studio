@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Biomechanical mecha dread, cross-shaped explosions, red alert command rooms, teenage isolation, apocalyptic ocean skies, intimate trauma framed by military procedure
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  aesthetic: Existential biomecha anime language with red-alert militarism, sacred-apocalypse iconography, and fragile adolescent interiority under procedural command pressure
+  form_and_line: Sharp 90s mechanical contour discipline, angular cockpit framing grids, restrained character acting lines, and punctuated impact-stroke accents
+  color_palette: Alert crimson overlays, bruised violets, toxic industrial greens, apocalyptic ocean blues, and desaturated skin tones under control-room light
+  lighting_setup: Emergency UI strobing, hard cockpit practicals, cross-blast overexposure flashes, and severe shadow partitions that heighten psychological confinement
+  material_texture: Biomechanical plating sheen, wet-organic understructure cues, cathode-monitor bloom, cel-layer grain, and painted-background decay tonality
+  render_quality: Prestige late-90s psychological mecha rendering with disciplined cel readability, oppressive mood grading, and symbolic action clarity
+  spatial_distortion: Claustrophobic interior compression punctuated by sudden scale ruptures during apocalyptic events and cross-shaped detonation framing
   atmosphere: Apocalyptic, interior, anxious, sacred
   key_features: Red alert overlays, cockpit claustrophobia, cross-shaped blasts, command-room grids, lonely child pilot framing
-  creative_brief: Children piloting gods they cannot understand, apocalypse as family therapy gone catastrophically wrong, red alert klaxons screaming through command rooms while a boy whispers that he must not run away. The mecha bleed, the crosses detonate, and the line between biomechanical horror and teenage loneliness dissolves into something older than either. The end of the world wears the face of everyone who failed to love you properly.
+  creative_brief: >-
+    Preserve red-alert psychological-biomecha grammar as a reusable style
+    system: emergency-interface tension, sacred-apocalypse symbol bursts, and
+    cockpit-scale adolescent isolation should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

@@ -13,15 +13,18 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: Otaku apartment eccentricity, fashion makeovers, jellyfish softness, outsider-sisterhood warmth, frills and insecurity rendered with bright empathy
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  form_and_line: Accessory-heavy contour play, frill-density line clustering, jellyfish-curvature motifs, and makeover-before/after silhouette contrast
+  color_palette: Aquarium cyan, translucent lilac, bubblegum pink accents, dusty apartment neutrals, and glossy fashion highlights
+  lighting_setup: Window-soft apartment fill, boutique fitting-room sparkle, and selective glamour highlights over cozy clutter bases
+  material_texture: Synthetic lace, beadwork, layered fabric trims, posters and print textures, and glossy cosmetic surface cues
+  render_quality: Empathetic makeover-shojo rendering with quirky-density detail and soft bioluminescent color harmony
+  spatial_distortion: Soft underwater-like drift in framing transitions to suggest emotional emergence
   atmosphere: Eccentric, sweet, transformative, cozy
   key_features: Jellyfish motifs, frilly fabric detail, apartment-clan clutter, makeover contrasts, sisterhood group energy
-  creative_brief: A cramped apartment is not confinement but ecosystem, every corner pulsing with the soft bioluminescence of shared obsession. Jellyfish become metaphor—creatures that drift but never drown, translucent but never invisible. Makeover is not erasure but translation, the outside world finally learning to read a language the heart has been speaking all along.
+  creative_brief: >-
+    Preserve jelly-color makeover grammar as a reusable style language:
+    otaku-clutter warmth, aquatic-soft chroma cues, and fashion-identity
+    transformation contrast should stay coherent across subjects.
 avoidRules:
   - realistic
   - 3d render

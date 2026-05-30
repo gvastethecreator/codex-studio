@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Bowl-crater depth framing clustered dwellings around a central pond.
   atmosphere: Resourceful tenderness, lunar rhythm, and communal resilience.
   key_features: Tidal converters, crater cisterns, and moon festival courtyards.
-  creative_brief: A lunarpunk settlement where each home participates in the moon’s energy cycle.
+  creative_brief: >-
+    Preserve tidal crater-hamlet grammar as a reusable style language:
+    crater-bowl communal planning, lunar energy-cycle participation, and
+    resilient tenderness should remain stable across subjects.
 avoidRules: [photoreal, brutalist-war-base, cyberpunk-chaos, body-horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-030.webp }
 attributes:

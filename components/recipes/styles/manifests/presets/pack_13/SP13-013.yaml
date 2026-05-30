@@ -13,16 +13,19 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: Emotional anime idol backstage before the show.
-  form_and_line: Soft features, stage wardrobe, and sincere acting.
-  color_palette: Night blue, muted pink, and warm gold.
-  lighting_setup: Luz de camerino con bokeh de escenario al fondo.
-  material_texture: Tela brillante, espejo y maquillaje sutil.
-  render_quality: Polished illustration with emotional weight.
-  spatial_distortion: Intimate medium shot with shallow depth.
-  atmosphere: Vulnerability, aspiration, and determination.
-  key_features: Microphone, pre-stage gaze, rain outside.
-  creative_brief: A delicate, memorable human moment just before the performance.
+  aesthetic: Idol-backstage slice-of-life anime language with pre-performance emotional intimacy, polished stagecraft contrast, and rain-tinted nocturnal sensitivity
+  form_and_line: Soft facial contour priority, controlled costume fold line elegance, hand-gesture micro-acting cues, and close-framing silhouette clarity
+  color_palette: Night blues, muted rose accents, dressing-room warm golds, mirror-neutral highlights, and subdued skin midtones
+  lighting_setup: Vanity-light practicals as warm key, soft stage-bokeh back separation, low-contrast interior fill, and rain-cooled edge tones from exterior spill
+  material_texture: Satin idol fabric sheen, reflective mirror surfaces, subtle cosmetic powder finish, damp window diffusion, and metallic mic hardware accents
+  render_quality: Emotion-first polished anime rendering with refined facial readability, restrained detail density, and premium music-drama card legibility
+  spatial_distortion: Intimate medium framing with shallow focus falloff and background performance context kept intentionally soft
+  atmosphere: Vulnerable, aspirational, focused, and quietly determined
+  key_features: Backstage mirror-light rhythm, pre-stage expression anchor, microphone/wardrobe readiness cues, and rain-muted outside contrast
+  creative_brief: >-
+    Preserve rainy idol-backstage grammar as a reusable style system: warm
+    dressing-room practicals, intimate expression-led framing, and subtle
+    pre-performance tension should remain consistent across subjects.
 avoidRules:
   - photoreal
   - gritty-horror

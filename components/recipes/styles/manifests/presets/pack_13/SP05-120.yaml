@@ -21,21 +21,22 @@ visualDna:
   spatial_distortion: Thermal-crosshairs-targeting, heat-plume-distortion, body-heat-translucency-through-thin-walls, cold-receding-hot-advancing-depth
   atmosphere: Tactical, predatory, invisible-spectrum, alien-senses, seen-beyond-human-vision, heat-of-battle-literal, technological-bloodlust
   key_features: White-hot-to-blue-cold-gradient, ironbow-false-color-spectrum, thermal-crosshairs-HUD, heat-bloom-halo, no-ink-edges, emissive-heat-only-lighting, Predator-trilogy-tactical-overlay
-  creative_brief: Rage registers as white-hot core, fear as cooling blue, the body's emotional truth mapped across the ironbow spectrum where no face remains recognizable. The thermal crosshair tracks heat like a predator reading prey through walls, every bloom of infrared halo a confession the subject cannot control. Vision itself becomes weaponized — to be seen is to be targeted.
+  creative_brief: >-
+    Preserve thermal-signature anime grammar as a reusable style system:
+    false-color heat-band mapping, emissive-only scene logic, and HUD-tracked
+    sensor perception should remain consistent across subjects.
 avoidRules:
-  - cool
-  - blue
-  - dark
   - muted
-  - smooth gradient
+  - low-contrast heat separation
   - natural color
   - realistic skin
   - normal lighting
-  - visible detail
+  - daylight palette
+  - non-sensor rendering
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-120.webp
 attributes:
-  negativePrompt: cool, blue, dark, muted, smooth gradient, natural color, realistic skin, normal lighting, visible detail
+  negativePrompt: muted, low-contrast heat separation, natural color, realistic skin, normal lighting, daylight palette, non-sensor rendering
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

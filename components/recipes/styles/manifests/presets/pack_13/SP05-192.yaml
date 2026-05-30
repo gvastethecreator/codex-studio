@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Student-council severity clashing with maid-cafe blush comedy, hidden identity sparkle, strict posture dissolving into embarrassment, high-energy romantic power-play
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Secret-identity romcom shojo grammar balancing authority-rigidity and maid-cafe sparkle through high-contrast persona switching
+  form_and_line: Snappy expression-line bursts, command-posture to flustered-pose transitions, frill-accent contouring, and comedic reaction framing
+  color_palette: Black-and-white uniform binaries, pastel pink embarrassment accents, warm cafe amber, and authority-red highlight punctuation
+  lighting_setup: Bright cafe practical glow, high-key comedic fill, spotlight blush emphasis, and punchy contrast for identity-reveal beats
+  material_texture: Crisp maid-uniform fabric layering, lace frill detailing, polished service-surface reflections, and badge or ribbon accent textures
+  render_quality: Energetic romcom-shojo rendering with clear dual-role readability, expressive timing clarity, and polished costume articulation
+  spatial_distortion: Persona-shift exaggeration via comedic framing squash and confidence-height perspective modulation
   atmosphere: Combative, cute, sparkling, energetic
   key_features: Maid-cafe props, strict-to-flustered acting, secret-identity staging, school-authority costume contrast, playful dominance framing
-  creative_brief: Severity is a uniform worn so tightly it becomes performance, and the blush underneath threatens to unravel the entire act. Two identities orbit each other like sparring partners who have forgotten why they started fighting. The thrill is not in keeping secrets but in being discovered by exactly the right person at exactly the wrong moment.
+  creative_brief: >-
+    Preserve secret-uniform double-life grammar as a reusable style system:
+    authority-versus-cafe visual contrast, identity-switch expression rhythm,
+    and playful dominance staging should stay stable across subjects.
 avoidRules:
   - realistic
   - 3d render

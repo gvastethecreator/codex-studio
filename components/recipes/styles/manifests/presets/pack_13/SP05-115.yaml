@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Faceted-gem-cut body proportions, hexagonal-symmetry, prism-split-light-spatial-rainbows, ice-shard-fragmentation-composition
   atmosphere: Frozen, pristine, otherworldly-cold, crystal-temple-silence, geometric-perfection-awe, winter-solitude-beauty
   key_features: Faceted-crystal-contours, internal-light-refraction, prism-rainbow-splitting, ice-blue-monochrome-spectrum, hexagonal-ice-symmetry, frost-fern-textures
-  creative_brief: Light enters the figure and fractures — prismatic rainbows spilling from hexagonal planes where flesh once curved soft and warm. Each character is a geometry of frozen time, refractive surfaces catching interior light that has no earthly source. The cold here is not absence but presence, a perfection too structured to be merely winter.
+  creative_brief: >-
+    Preserve ice-crystal refractive anime grammar as a reusable style system:
+    faceted prism anatomy, internal refraction hierarchy, and sub-zero
+    geometric material logic should remain consistent across subjects.
 avoidRules:
   - warm
   - soft

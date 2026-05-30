@@ -36,7 +36,6 @@ avoidRules:
   - harsh
   - detailed-face
   - visible features
-  - gloomy
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-118.webp
 attributes:

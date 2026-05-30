@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Ascending spiral perspective linking ground labs to elevated garden observatories.
   atmosphere: Curious optimism, civic care, and intergenerational collaboration.
   key_features: Outdoor seminar terraces, energy dashboards, seed libraries, and maker-learning nodes.
-  creative_brief: A public learning hub where children and adults study ecology through the very systems that power and cool the building.
+  creative_brief: >-
+    Preserve canopy learning-spiral grammar as a reusable style system:
+    pedagogical ramp architecture, visible climate dashboards, and
+    intergenerational eco-learning should remain coherent across subjects.
 avoidRules: [photoreal, dystopian, sterile-corporate, militarized, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-013.webp }
 attributes:

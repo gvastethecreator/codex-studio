@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Diagonal bridge network perspective traversing staggered orchard terraces.
   atmosphere: Quiet fertility, climatic intelligence, and gentle communal rhythm.
   key_features: Condensation towers, drip-fed orchard lanes, suspended homes, and visible storage cisterns.
-  creative_brief: A fog-dependent hillside settlement that transforms airborne moisture into food, shade, and neighborhood life.
+  creative_brief: >-
+    Preserve fog-orchard habitat grammar as a reusable style language:
+    atmospheric water-capture infrastructure, orchard-lane domesticity, and
+    cloudbelt adaptation cues should remain stable across subjects.
 avoidRules: [photoreal, dystopian-rust, dark-horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-004.webp }
 attributes:

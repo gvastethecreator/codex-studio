@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Characters small in vast empty spaces, loneliness-accentuating framing, negative-space compositions
   atmosphere: Quiet, introspective, profoundly lonely, meditative stillness, held breath
   key_features: Negative space dominance, minimalist line count, single-color atmospheres, tiny figures in big emptiness, intentional silence
-  creative_brief: A single figure stands in an ocean of negative space, the weight of silence pressing outward from the frame. Every line is a decision, every empty expanse a held breath waiting for the courage to exhale. The loneliness here is not emptiness but fullness — a solitude that teaches the eye to treasure what little it is given.
+  creative_brief: >-
+    Preserve minimalist-indie-quiet grammar as a reusable style system:
+    negative-space dominance, sparse line economy, and low-saturation
+    contemplative atmospheres should remain consistent across subjects.
 avoidRules:
   - busy
   - detailed

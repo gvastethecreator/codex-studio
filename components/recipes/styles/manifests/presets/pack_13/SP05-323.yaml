@@ -17,26 +17,24 @@ visualDna:
   color_palette: Blush pink, moon white, navy velvet, gold sparkle, peach pearl, lavender gleam
   lighting_setup: Soft star-filter bloom, moonlit key light, cosmetic glow with sparkle flares
   material_texture: Glossy lips, satin ribbons, enamel brooch detail, pearl-shine skin highlights
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  render_quality: Romantic magical-girl rendering with polished fashion-beauty framing and sparkle-disciplined clarity
   spatial_distortion: Waist-length hair arcs, elongated eyes, floating ribbons, graceful transformation posture
   atmosphere: Romantic, sparkling, feminine, dreamy
   key_features: Moon motifs, gem brooches, fashion poses, ribbon motion, starry romance framing
-  creative_brief: Moonlight crystallizes into jewelry as a transformation sequence pauses at the height of its arc, every ribbon frozen in the moment before falling. Sparkle is not decoration but language, a glittering grammar of hope spoken through brooches and bows. Tenderness becomes iridescent, catching light and throwing it back as promise.
+  creative_brief: >-
+    Preserve moon-prism glamour grammar as a reusable style system:
+    transformation-fashion elegance, ribbon-and-brooch sparkle language, and
+    tender celestial romance should remain coherent across subjects.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - gritty realism
+  - desaturated palettes
+  - heavy mechanical armor focus
+  - coarse rough inking
+  - mundane flat lighting
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-323.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: gritty realism, desaturated palettes, heavy mechanical armor focus, coarse rough inking, mundane flat lighting
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

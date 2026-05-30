@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Art-student dorm life, warm sketchbook textures, soft geometric rooms, little daily rituals, low-pressure humor, cozy abstraction in everyday school life
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Sketchbook-first contouring, simplified geometric room blocking, and playful art-supply silhouette motifs
+  color_palette: Warm paper creams, soft coral and mint accents, gentle graphite grays, and sunwashed dorm yellows
+  lighting_setup: Late-afternoon dorm sunlight, warm desk-lamp pockets, and low-contrast ambient interior wrap
+  material_texture: Pencil grain, paper stacks, fabric futon surfaces, poster tape edges, and tabletop art-supply wear
+  render_quality: Relaxed art-dorm rendering with abstracted comfort geometry and handmade sketch warmth
+  spatial_distortion: Mild geometric flattening that supports cozy visual abstraction
   atmosphere: Sunny, crafty, relaxed, cute
   key_features: Sketchbook props, dorm-room geometry, art-supplies clutter, soft comedic staging, warm pastel room light
-  creative_brief: A dorm room tilts into abstraction as sunlight reorganizes the geometry of easels and half-eaten snacks. Sketchbooks multiply like warm weeds, each page a small rebellion against precision. Creation here is not grand — it is the soft scratch of pencil on paper while a friend hums across the room.
+  creative_brief: >-
+    Preserve art-dorm sunshine grammar as a reusable style system: sketchbook
+    tactility, soft geometric interiors, and low-pressure creative ritual tone
+    should remain coherent across subjects.
 avoidRules:
   - realistic
   - 3d render

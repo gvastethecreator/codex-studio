@@ -12,16 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Shoujo fantasy rescue with armored heroines, rune-light, giant mythic summons, candy-bright quest energy, magical friendship in a richly colored fantasy world
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  aesthetic: Jewel-quest magical-knight shojo language with heroic friendship cores, rune-lit rescue momentum, and bright mythic fantasy optimism
+  form_and_line: Armor-and-skirt silhouette clarity, emblematic weapon/rune geometry, team-choreography pose arcs, and expressive heroic line accents
+  color_palette: Saturated jewel primaries, radiant pink-red-blue heroine signatures, gold rune highlights, and sky-fantasy gradients with bright readability
+  lighting_setup: Rune-emission key glows, summon-scale backlight blooms, high-contrast cel split shading, and luminous team-rim partitioning
+  material_texture: Polished armor facets, layered cel paint warmth, watercolor fantasy backdrops, and magical particle overlays with slight film grain
+  render_quality: High-energy 90s magical-fantasy render with ensemble clarity, heroic transformation readability, and richly colorful quest polish
+  spatial_distortion: Dynamic heroic foreshortening with balanced trio staging and summon-scale depth escalation
   atmosphere: Heroic, bright, jewel-like, adventurous
   key_features: Armor-and-skirt silhouettes, giant summon motifs, jewel magic effects, fantasy vehicle scale, team-quest compositions
-  creative_brief: Armor glows not from polish but from the heat of belief worn against the skin. Giant summons are prayers given form, the landscape itself bending to accommodate impossible courage. Every jewel holds a heartbeat, every blade carries the weight of someone waiting at home.
+  creative_brief: >-
+    Preserve jewel-armor quest grammar as a reusable style system:
+    team-heroine silhouette choreography, rune-and-summon light hierarchy, and
+    bright friendship-driven fantasy momentum should remain consistent across
+    subjects.
 avoidRules:
   - realistic
   - 3d render

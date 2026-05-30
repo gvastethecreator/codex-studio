@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Courtyard flywheel perspective radiating into timepiece micro-ateliers.
   atmosphere: Patient mastery, communal ingenuity, and elegant mechanical rhythm.
   key_features: Public gear libraries, escapement stations, cooperative chronometer forge, and clock-tower canopy.
-  creative_brief: A neighborhood fabrication courtyard where repair culture is organized through visible clockwork systems and shared precision craft.
+  creative_brief: >-
+    Preserve circular maker-courtyard grammar as a reusable style language:
+    radial precision-work choreography, visible clockwork governance, and
+    communal repair culture should remain stable across subjects.
 avoidRules: [photoreal, sterile-corporate, dystopian-factory, dark-gloom, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-010.webp }
 attributes:

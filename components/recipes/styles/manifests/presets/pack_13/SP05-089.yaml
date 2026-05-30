@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Casual school comedy drifting into low-key surreal beats, gentle weirdness, simple shapes, Osaka daydreams, Chiyo-chan pigtails, Yukari-sensei chaos, penguin Chiyo
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
-  atmosphere: Quietly bizarre, sweet, dreamy, gentle
-  key_features: Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth
-  creative_brief: The classroom bends gently at the corners, reality slightly warped by the gravitational pull of a daydream about nothing in particular. A penguin costume, a floating pigtail, a teacher's existential meltdown — all rendered in the quiet pastel palette of a mind wandering pleasantly off-course. Sweet surrealism that never raises its voice.
+  aesthetic: Soft-surreal classroom comedy language blending mundane school routine with dreamlike absurd intrusions delivered in gentle deadpan tone
+  form_and_line: Simple friendly contouring with occasional subtle deformation cues, low-intensity reaction acting, and composition designed for conversational weirdness
+  color_palette: Quiet pastels, warm classroom neutrals, mint and beige supports, and mild surreal accent hues introduced sparingly
+  lighting_setup: Calm daytime school ambient with even soft fill, minimal dramatic contrast, and slight atmospheric lift during surreal beats
+  material_texture: Everyday classroom textures kept lightweight, with simple prop fidelity and low-noise backgrounds supporting character humor
+  render_quality: Gentle surreal-slice render emphasizing timing, expression nuance, and understated oddity without heavy visual aggression
+  spatial_distortion: Mostly stable classroom perspective with light dreamlike bending at gag-critical moments
+  atmosphere: Sweet, dreamy, odd, and quietly funny
+  key_features: Low-key surreal inserts, deadpan reaction rhythm, school-life baseline continuity, and softly uncanny visual punctuation
+  creative_brief: >-
+    Preserve soft-surreal classroom grammar as a reusable style system:
+    calm everyday baseline, subtle absurd intrusions, and gentle deadpan
+    expression timing should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

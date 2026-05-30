@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Ringed plaza perspective orbiting a transparent seed-vault pavilion.
   atmosphere: Collective gratitude, practical hope, and celebratory responsibility.
   key_features: Seed swap counters, stewardship oath wall, crop lineage displays, and communal planting table.
-  creative_brief: A civic seed festival where joy, governance, and biodiversity literacy merge into a single public ritual.
+  creative_brief: >-
+    Preserve seed-vault festival grammar as a reusable style language:
+    circular stewardship choreography, archive-centered civic ceremony, and
+    biodiversity literacy cues should remain stable across subjects.
 avoidRules: [photoreal, bleak, techno-cold, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-006.webp }
 attributes:

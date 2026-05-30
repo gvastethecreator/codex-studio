@@ -12,23 +12,26 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: City of dead, tomb-city, death empire, mausoleum megalopolis, soul-river architecture
-  form_and_line: Sharp spires, obelisk avenues, crypt blocks, tomb-grid geometry, sarcophagus rows
-  color_palette: Green mist, Black stone, Bone-white marble, Faded Gold, Crypt-shadow Purple, Death-rust Red
-  lighting_setup: Eerie Green, witch-light glow, corpse-candle, moon-through-fog, underworld-ember, soul-flame
-  material_texture: Stone, bone, crumbling masonry, weathered marble, iron gate, skull-ornament, ash
-  render_quality: Evil, dark, tomb-city epic, death-cult architecture, sepulchral grandeur, gothic-necropolis
+  aesthetic: Monumental funerary urbanism defined by sepulchral grandeur, ritual geometry, and necromantic civic order at megalopolis scale
+  form_and_line: Obelisk-dominant axial planning, stepped mausoleum masses, repetitive crypt grids, sarcophagus colonnades, and severe pointed skyline rhythm
+  color_palette: Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and bruised violet shadow fields
+  lighting_setup: Low underlit crypt glow, pallid moon diffusion, selective soul-lantern accents, volumetric cemetery fog, and ember-like rune highlights
+  material_texture: Weather-eaten stone blocks, cracked marble facings, oxidized iron gates, ash-coated paving, carved ossuary reliefs, and eroded funerary inscriptions
+  render_quality: High-detail dark-fantasy architectural rendering with disciplined tonal restraint, monumental readability, and oppressive atmospheric layering
   spatial_distortion: None
-  atmosphere: Dread, death, eternal-silence, soul-heavy, grave-chill, mourner's-land, un-living stillness
-  key_features: Green fog, obelisks, sarcophagi, death runes, skull motifs, crypt entrances, tomb-pyramids
-  creative_brief: Obelisks cast green-tinted shadows across avenues paved with the names of the entombed. Soul-flame flickers in brass lanterns, each light a small rebellion against the empire of permanent dark. The city extends in all directions, infinite cemetery, architecture built for occupants who will never complain about the square footage.
+  atmosphere: Solemn, oppressive, ritualistic, haunted, and acoustically muted as if sound itself were entombed
+  key_features: Processional obelisk avenues, stacked crypt terraces, sarcophagus field repetition, necro-rune wayfinding, skull-derived ornament systems, and monument-scale mausoleum gates
+  creative_brief: >-
+    Keep the preset driven by funerary megacity grammar: axial tomb planning,
+    obelisk hierarchy, and spectral low-light atmosphere should remain
+    structurally consistent across compositions.
 avoidRules:
   - life
-  - green
+  - lush vegetation
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-063.webp
 attributes:
-  negativePrompt: life, green
+  negativePrompt: life, lush vegetation
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
