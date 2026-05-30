@@ -17,11 +17,14 @@ visualDna:
   color_palette: Red, Black, Cream, revolutionary tension, stark authority
   lighting_setup: High contrast, heroic low-angle, dramatic light-beam
   material_texture: Screenprint
-  render_quality: Shepard Fairey propagandistic bold, OBEY aesthetic, street authority
+  render_quality: High-impact poster rendering with command-tone typography, screenprint flatness, and mass-communication urgency
   spatial_distortion: Heroic angle
   atmosphere: Strong, commanding, revolutionary urgency, mass-movement energy
   key_features: Rays, bold typography, constructivist geometry
-  creative_brief: Red strikes against cream with the force of a clenched fist, constructivist geometry marshaling form into political weapon. Low-angle heroism tilts the world upward toward inevitability. This is the image as command, where composition itself issues orders and every diagonal is a demand for action.
+  creative_brief: >-
+    Keep this preset defined by command-poster grammar: constructivist
+    diagonals, high-contrast propaganda palette, and declarative type-shape
+    hierarchy should drive impact without tying to any single artist brand.
 avoidRules:
   - subtle
   - weak

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Physical-foam-core-architecture-massing-model, white-balsa-wood-and-chipboard-buildings, rough-cut-xacto-knife-edges, hot-glue-seams visible, scale-figures-inserted-for-reference, contextual-surrounding-blocks-in-grey, cut-out-paper-trees-on-wire-stands, architectural-school-pinup-critique energy, early-stage-volume-study, before-digital-before-rendering
-  form_and_line: Xacto-knife-cut-rough-contours, foam-core-layered-stepping, hot-glue-beads-between-planes, chipboard-grain-direction, wire-pin-tree-supports
-  color_palette: White-foam-core, warm-balsa-brown, chipboard-grey, museum-board-white, hot-glue-amber, wire-tree-black, cork-sheet-tan
-  lighting_setup: Overhead-studio-daylight, desk-lamp-side-light-to-cast-model-shadows, shadow-depth-revealing-massing, photography-light-box-diffuse
-  material_texture: Foam-core-polystyrene-texture, balsa-wood-grain, hot-glue-gloss-beads, chipboard-rough-fiber, cork-sheet- granularity, xacto-blade-scratch-marks
-  render_quality: Physical-architecture-model aesthetic, massing-study-beauty, school-critique-rendering, handmade-form-exploration, pre-digital-process-art
-  spatial_distortion: Scale-model-proportions, contextual-block-surroundings, figure-scale-reference, base-board-ground-plane, top-down-aerial-photography
-  atmosphere: Studio-critique-nervous, late-night-model-building, form-discovery-excitement, architectural-school-soul, chipboard-dust-and-coffee
-  key_features: Foam-core-white-blocks, balsa-wood-warmth, xacto-cut-rough-edges, hot-glue-beads, scale-figure-reference, chipboard-base, cut-out-paper-trees, contextual-surrounding-massing
-  creative_brief: Balsa wood and chipboard rise from the worktable in the rough geometry of architectural dreaming, hot-glue seams visible as honest scars of construction. Scale figures stand at the base of foam-core towers, tiny witnesses to the volume study. This is architecture before architecture, where the building exists first as model and the model exists first as all-nighter.
+  aesthetic: Handmade architectural massing model study
+  form_and_line: Blocky volumetric planes with rough-cut contour fidelity
+  color_palette: Neutral model-shop tones (foam white, chipboard gray, wood tan)
+  lighting_setup: Simple studio top/side light to emphasize shadow mass separation
+  material_texture: Visible foam core edges, wood grain hints, glue seam artifacts
+  render_quality: Early-phase physical prototype realism with low-finish honesty
+  spatial_distortion: Scale-model compression with contextual block simplification
+  atmosphere: Workshop-iterative, practical, form-discovery focus
+  key_features: Volumetric hierarchy, scale cues, handcrafted assembly traces
+  creative_brief: >-
+    Emphasize architecture as mass and proportion rather than facade detail. Preserve handcrafted model artifacts—cut edges, seam joins, and board texture—so the image reads as an early design prototype built for fast spatial decision-making.
 avoidRules:
   - detailed
   - rendered

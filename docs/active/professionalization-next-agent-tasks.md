@@ -1,12 +1,18 @@
-# Codex Studio Next Agent Tasks
+# Próximas tareas de agentes para Codex Studio
 
 Repo: `D:\DEV\codex-studio`
 
-Status: paused by user for another agent. Do not mark the active goal complete. The project is improved but not yet in final professional/release condition.
+Estado: pausado por usuario para otro agente. No marcar el objetivo activo como completado. El proyecto mejoró, pero todavía no está en estado final de release profesional.
 
 Update 2026-05-26: **Style Preset Authoring Tooling** and **Browser-Verified Styles Performance Gate** are completed in this branch. Unless the user asks to iterate on scaffold/gate UX, resume from **Live Recipe Prompt Quality Evaluation**.
 
-## Resume Protocol
+Update 2026-05-30: pipeline follow-up work is split into three ready-to-pick docs:
+
+- `docs/active/pipeline-token-efficiency-plan.md`: reduce tokens through compact `Compiled Provider Input`, Provider Session Contract reuse, batch context sharing, and safe metrics.
+- `docs/active/pipeline-image-quality-plan.md`: improve output quality with structured visual specs, reference roles, prompt tightening, quality presets, and live review evidence.
+- `docs/active/pipeline-queue-reliability-plan.md`: harden queue submission with task-spec validation, reference preflight, provider preflight, normalized errors, and dry-run smoke coverage.
+
+## Protocolo de reanudación
 
 1. Read `AGENTS.md`, `CONTEXT.md`, `docs/ARCHITECTURE.md`, latest relevant `docs/adr/*.md`, `docs/active/professionalization-roadmap.md`, `docs/active/professionalization-handoff.md`, `docs/TECHNICAL_DEBT.md`, and `SKILLS.md`.
 2. Use PowerShell without profile (`login:false` / `-NoProfile`) because local profile/oh-my-posh previously caused hangs/noise.
@@ -14,7 +20,7 @@ Update 2026-05-26: **Style Preset Authoring Tooling** and **Browser-Verified Sty
 4. Pick one vertical slice. Add focused tests/guards where useful.
 5. Validate with focused `bun run test -- <files>` and `bun run check -- <files>`, then relevant domain gate and `bun run build`.
 
-## Latest Verified Slice
+## Último slice verificado
 
 Latest focused work fixed and verified:
 
@@ -44,9 +50,9 @@ bun run check -- hooks/useStudioGenerationActions.ts hooks/useStudioGenerationAc
 bun run build
 ```
 
-## Highest Priority Pending Tasks
+## Tareas pendientes de mayor prioridad
 
-### 1. Style Preset Authoring Tooling
+### 1. Tooling de authoring para Style Presets
 
 Problem: presets are now granular, but authoring still requires manual YAML creation plus pack/category ref edits.
 
@@ -79,7 +85,7 @@ bun run styles:templates:verify
 bun run styles:source:verify
 ```
 
-### 2. Browser-Verified Styles Performance Gate (completed in this branch)
+### 2. Gate de rendimiento de Styles verificado en navegador (completado en esta rama)
 
 Completed:
 
@@ -106,7 +112,7 @@ bun run styles:browser:verify -- --url=http://localhost:3001/#recipe-styles
 bun run build
 ```
 
-### 3. Live Recipe Prompt Quality Evaluation
+### 3. Evaluación en vivo de calidad de prompts de Recipe
 
 Problem: compact Recipe Provider Directives save tokens, and the repo now has a dedicated live-comparison harness, but representative Codex evidence still needs to be collected.
 
@@ -135,7 +141,7 @@ bun run recipes:evaluate:live -- --recipe=styles --out=logs/recipe-prompt-qualit
 bun run providers:verify
 ```
 
-### 4. Catalog-First UI Completion
+### 4. Cierre de UI catalog-first
 
 Problem: Catalog Entries are durable truth, but legacy Visual Batch compatibility still exists.
 
@@ -165,7 +171,7 @@ bun run test -- contexts/legacyVisualBatchReducer.test.ts lib/localGenerationVis
 bun run build
 ```
 
-### 5. Settings And External Output UX
+### 5. UX de Settings y External Output
 
 Problem: settings/output-source backend exists, but UX still needs polish for professional file workflows.
 
@@ -194,7 +200,7 @@ bun run check -- components/StudioSettingsModal.tsx hooks/useStudioSettings.ts s
 bun run build
 ```
 
-### 6. Command Center Completion
+### 6. Cierre de Command Center
 
 Problem: top toolbar is the Command Center, but final command/menu polish remains.
 
@@ -221,7 +227,7 @@ bun run check -- components/HeaderToolbar.tsx components/ui/TopToolbar.tsx hooks
 bun run build
 ```
 
-### 7. Backend Dependency Injection
+### 7. Inyección de dependencias en backend
 
 Problem: logger seam exists, but DB/worker/lifecycle still rely on singletons/global modules in places.
 
@@ -248,7 +254,7 @@ bun run test -- apps/local-server/src/appFactory.test.ts apps/local-server/src/w
 bun run build
 ```
 
-## Medium Priority Pending Tasks
+## Tareas pendientes de prioridad media
 
 ### 8. Recipe Modules For New Asset Types
 
@@ -308,7 +314,7 @@ git status --short
 git ls-files
 ```
 
-## Suggested Skills
+## Skills sugeridas
 
 - `caveman`: keep communication brief, user prefers this mode.
 - `handoff`: for future pause/resume docs.
@@ -317,7 +323,7 @@ git ls-files
 - `playwright`: for browser validation/perf screenshots if adding browser gates.
 - `openai-docs`: only when changing Codex official integration semantics.
 
-## Do Not Do
+## No hacer
 
 - Do not mark the active goal complete.
 - Do not collapse Codex-first product semantics into a generic provider router.
@@ -326,6 +332,6 @@ git ls-files
 - Do not delete/move Studio Library data unless user explicitly asks.
 - Do not run broad formatting over entire dirty tree casually.
 
-## Recommended Next First Slice
+## Siguiente primer slice recomendado
 
 Start with **Browser-Verified Styles Performance Gate**. The static/render-plan checks already exist and manual browser verification was proven, but the reusable release-gate script is still missing.

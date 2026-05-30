@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Railway poster
-  form_and_line: None
-  color_palette: Flat, sunny, holiday-brochure, Mediterranean warmth
-  lighting_setup: Flat, eternal-summer illumination, postcard optimism
-  material_texture: Lithograph
-  render_quality: Optimistic, classic, wanderlust charm, golden-age tourism
-  spatial_distortion: Simplified view
-  atmosphere: Happy, vacation, seaside leisure, arrival excitement
-  key_features: Text at bottom, destination lettering, simplified landmark
-  creative_brief: Flat color bands reduce landscape to its emotional essence, each horizontal stripe a different pleasure of the destination. Simplified forms promise the journey before the journey begins. This is travel rendered as anticipation, where the poster arrives before the train and the destination lives first in imagination.
+  aesthetic: Vintage travel-poster style with idealized destination abstraction, optimistic transit-era polish, and graphic promotional clarity
+  form_and_line: Simplified geometric landmark silhouettes with clean contour economy, broad shape stacking, and poster-friendly horizon banding
+  color_palette: Sunlit flat chroma blocks with warm coastal tones, sky-sea separation, and restrained retro print contrast
+  lighting_setup: Even poster illumination with soft midday optimism and minimal shadow complexity to maximize graphic legibility
+  material_texture: Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival surface character
+  render_quality: Clean promotional illustration finish emphasizing readable forms, aspirational mood, and destination-forward composition
+  spatial_distortion: Deliberately simplified depth planes with flattened perspective and iconized environment hierarchy
+  atmosphere: Bright, inviting, relaxed, optimistic, escapist
+  key_features: Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors, travel-poster layout discipline
+  creative_brief: >-
+    Define this preset through vintage travel-poster grammar: flattened scenic
+    planes, optimistic color blocking, and destination-led composition should
+    carry identity beyond one railway or seaside locale.
 avoidRules:
   - photo
 assets:

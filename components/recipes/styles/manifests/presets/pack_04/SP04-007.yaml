@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Clean-line European adventure comic, Tintin style, Hergé precision, clear-line clarity, journalistic globe-trotting
-  form_and_line: Uniform thickness
-  color_palette: Flat, bright, primary/secondary clarity, spot-color precision
-  lighting_setup: No shadows, uniform illumination, graphic flatness
-  material_texture: Clean
-  render_quality: Hergé precise clear-line, immaculate restraint
-  spatial_distortion: Cartoon
-  atmosphere: Adventure, clear, globe-trotting discovery, investigative charm
-  key_features: No hatching, uniform line weight, clean background
-  creative_brief: Every line carries equal weight and equal certainty, the uniform stroke refusing to hide or hesitate. Flat colors sit side by side like diplomatic nations, each hue declaring its territory without aggression. This is the world viewed through a magnifying glass of clarity, where adventure is a question asked in clean, confident ink.
+  aesthetic: Ligne Claire European comics language (Hergé/Tintin clear-line tradition)
+  form_and_line: Uniform monoline contour with high descriptive precision
+  color_palette: Bright flat fills with disciplined primary/secondary harmony
+  lighting_setup: Shadow-minimal, evenly lit graphic treatment
+  material_texture: Smooth ink-and-flat-color finish, no grain emphasis
+  render_quality: Crisp editorial clarity with restrained visual noise
+  spatial_distortion: Mild cartoon stylization with accurate environmental structure
+  atmosphere: Curious, adventurous, lucid, observational
+  key_features: Zero hatching, stable line weight, readable architecture and props
+  creative_brief: >-
+    Preserve absolute clarity in every mark: monoline contour, flat color fields, and legible staging. Keep compositions information-rich but visually calm, following the Hergé-derived Ligne Claire discipline where readability is the main expressive engine.
 avoidRules:
   - shading
   - gradient

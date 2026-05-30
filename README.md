@@ -1,177 +1,131 @@
 # Codex Studio
 
-> A local-first image studio that uses your authenticated Codex/ChatGPT session — no `OPENAI_API_KEY` required.
+> Estudio de imágenes local-first que usa tu sesión autenticada de Codex/ChatGPT — sin `OPENAI_API_KEY` para el flujo principal.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Bun](https://img.shields.io/badge/runtime-Bun-black?logo=bun)](https://bun.sh)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
 
-**Current status: early open-source preview.** The technical foundation works well locally. The current goal is to polish onboarding, documentation, and ergonomics so more people can install it without needing to know the repo's internal history.
+**Estado actual: preview open-source temprana.** La base técnica ya funciona bien en local. El foco ahora es dejar onboarding, documentación y DX en nivel “instalable en minutos”.
 
-## Why this project is interesting
+## Ruta rápida
 
-- **No `OPENAI_API_KEY` required** for the main flow.
-- **Uses your local Codex/ChatGPT session** already authenticated on your machine.
-- **Persistent job queue** with local execution tracking backed by SQLite.
-- **Assets, logs, and transcripts live outside the repo**, in a configurable local library.
-- **Full creative UI** with recipes, workspaces, visual grid, and review tools.
-- **Multiple provider support** — Codex (primary), fal.ai, Google Gemini, ComfyUI (planned).
+1. Instala dependencias y prepara la librería local:
+	- `bun install`
+	- `bun run studio:init`
+2. Arranca el entorno:
+	- `bun run dev`
+3. Verifica que todo responde:
+	- UI: <http://localhost:17222>
+	- API local: <http://localhost:17223/api/health>
 
-## How it works
+## ¿Por qué llama la atención este proyecto?
 
-1. The React/Vite UI receives prompts, recipes, reference images, and user actions.
-2. The local Bun/Hono backend creates and supervises persistent jobs.
-3. `codex app-server` executes real Codex turns to generate or edit images.
-4. The local library stores assets, SQLite, transcripts, and operational logs.
-5. The UI catches up over HTTP, listens to live activity over SSE, and maintains a compatible visual cache so the studio stays usable even when generation happens outside the browser.
+- **No exige API key** para el flujo principal con Codex.
+- **Aprovecha tu sesión local** autenticada de Codex/ChatGPT.
+- **Cola persistente de jobs** con trazabilidad sobre SQLite.
+- **Assets, logs y transcripts fuera del repo**, en una Studio Library configurable.
+- **UI creativa completa**: recetas, workspaces, grid visual y herramientas de revisión.
+- **Arquitectura extensible** con frontera de proveedores (Codex-first).
 
-## Data model
+## Cómo funciona
 
-- **SQLite + Image Catalog** are the durable source of truth for jobs, catalogued images, libraries, and logs.
-- **IndexedDB** keeps `GenerationBatch[]` in `catalog-cache` as a visual compatibility cache for the current grid.
-- **`GET /api/events`** distributes live job, log, and asset events to the frontend.
-- **`/api/codex/session`** is the canonical read of the local Codex/ChatGPT session used by onboarding and diagnostics.
+1. La UI React/Vite recibe prompts, recetas e imágenes de referencia.
+2. El backend local Bun/Hono crea y supervisa jobs persistentes.
+3. `codex app-server` ejecuta turns reales para generar/editar imágenes.
+4. La Studio Library guarda assets, SQLite, transcripts y logs.
+5. La UI sincroniza por HTTP + SSE y mantiene compatibilidad visual para seguir operativa.
 
-## Prerequisites
+## Requisitos
 
-Before starting the studio, make sure you have:
+- **Bun** en PATH — [bun.sh](https://bun.sh)
+- **Codex CLI** instalado y autenticado con login de ChatGPT en la misma máquina.
+- Soporte de `codex app-server` en esa instalación.
+- Navegador moderno con IndexedDB.
 
-- **Bun** installed and available in PATH — [bun.sh](https://bun.sh)
-- **Codex CLI** installed and authenticated with a **ChatGPT login** on the same machine.
-- `codex app-server` support from that Codex installation.
-- A modern browser with IndexedDB support.
+Si falta Codex o la sesión local, la UI puede abrir pero no completará generaciones reales. Ver [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md).
 
-If Codex is missing or the local session is unavailable, the UI can start but real generation will not complete. See [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md) for common issues.
+## Configuración local
 
-## Quick start
+El backend toma variables desde `.env.local`. Puedes dejar que `bun run studio:init` lo cree o copiar `.env.example`.
 
-```bash
-bun install
-bun run studio:init
-bun run dev
-```
-
-After that you should have:
-
-- UI: <http://localhost:17222>
-- Local API: <http://localhost:17223/api/health>
-- Default library: `~/AI-Studio-Library` (on Windows: `%USERPROFILE%\AI-Studio-Library`)
-- Logs: `~/AI-Studio-Library/logs`
-- SQLite: `~/AI-Studio-Library/db/studio.sqlite`
-
-### First run
-
-`bun run studio:init` creates the local library structure, initializes SQLite, generates a default project, and creates `.env.local` if it does not yet exist.
-
-The repo ships `.env.example` with safe placeholders so tools, tasks, and new environments have explicit variables from the first clone. Machine-specific values should go in `.env.local`.
-
-The UI automatically opens a first-run guide to verify the local backend, Codex CLI, `codex app-server`, and the library path. You can reopen it at any time from the `Setup` button in the header.
-
-To start only part of the system:
-
-- `bun run dev:ui` — Vite UI without the local backend.
-- `bun run dev:server` — Hono API + `codex app-server` supervisor.
-- `bun run dev:electron` — Electron desktop shell over the local dev flow.
-
-## Local configuration
-
-The backend loads values from `.env.local`. You can let `bun run studio:init` create it automatically or copy the template from `.env.example`.
-
-Available variables:
+Variables principales:
 
 - `STUDIO_LIBRARY_DIR`
 - `STUDIO_SERVER_PORT`
 - `STUDIO_CODEX_WS_PORT`
 - `VITE_STUDIO_API_BASE`
 
-Optional Electron shell variables:
+Variables opcionales para shell de Electron:
 
-- `STUDIO_ELECTRON_API_BASE` — reuse an already-running local backend instead of `http://localhost:17223`.
-- `STUDIO_ELECTRON_RENDERER_URL` — point the desktop shell to a Vite dev server other than the default `http://localhost:17222`.
+- `STUDIO_ELECTRON_API_BASE`
+- `STUDIO_ELECTRON_RENDERER_URL`
 
-Example library paths:
+Ejemplos de ruta de librería:
 
 - Windows: `%USERPROFILE%\AI-Studio-Library`
-- macOS: `/Users/<your-user>/AI-Studio-Library`
-- Linux: `/home/<your-user>/AI-Studio-Library`
+- macOS: `/Users/<tu-usuario>/AI-Studio-Library`
+- Linux: `/home/<tu-usuario>/AI-Studio-Library`
 
-## Useful scripts
+## Scripts útiles
 
 ```bash
-bun run dev           # local backend + integrated UI
-bun run dev:server    # Hono API + codex app-server supervisor
-bun run dev:ui        # Vite+ UI only (vp dev)
-bun run dev:electron  # Electron desktop shell for local development
-bun run studio:init   # create library, SQLite, and default project
-bun run styles:validate # validate granular style manifests
-bun run fmt           # format with Oxfmt via Vite+
-bun run lint          # lint with Oxlint via Vite+
-bun run check         # unified format + lint + type-check via Vite+
-bun run test          # unit test suite with Vitest via Vite+
-bun run test:unit     # quick subset for iteration
-bun run test:coverage # HTML coverage + console summary
-bun run validate:fast # fast loop: unit tests + server verification
-bun run validate:full # full gate: check + tests + build
-bun run build         # build UI (Vite+/Rolldown) + backend verification
-bun run preview:electron # test Electron shell loading `dist/`
-bun run tooling:logs  # open `logs/tooling` with latest command logs
+bun run dev
+bun run dev:server
+bun run dev:ui
+bun run dev:electron
+bun run studio:init
+bun run fmt
+bun run lint
+bun run check
+bun run test
+bun run build
+bun run validate:fast
+bun run validate:full
 ```
 
-For large refactors, use `bun run validate:fast` while iterating and `bun run validate:full` at close. `bun run check` runs the unified format, lint, and type-check loop over Vite+, making it the recommended command for local validation.
+## Detalles clave
 
-VS Code tasks in `.vscode/tasks.json` mirror this flow with short emoji-labeled names.
+| Tema | Decisión |
+|------|----------|
+| Fuente de verdad durable | `SQLite + Image Catalog` |
+| Cache visual compatible | `GenerationBatch[]` en IndexedDB (solo compatibilidad) |
+| Eventos en vivo | `GET /api/events` (SSE) |
+| Sesión local canónica | `/api/codex/session` |
+| Filosofía de producto | Codex-first, local-first, library-backed |
 
-### Tooling logs
-
-Quality and build commands (`fmt`, `lint`, `check`, `test`, `build`, `validate:*`) write persistent logs to `logs/tooling/`.
-
-- Each run generates a timestamped file.
-- A `*.latest.log` per task is also updated.
-- This makes it easy to debug intermittent failures without re-running commands just to read the console.
-
-## Repository structure
+## Estructura del repositorio
 
 ```text
 .
-├─ apps/local-server/     # local Bun/Hono backend and worker
-├─ components/            # main studio UI
-├─ contexts/              # global and generation state
-├─ docs/                  # architecture, services, ADRs, and guides
-├─ hooks/                 # sync, pipeline, and persistence
-├─ packages/shared/       # types shared between UI and backend
-├─ scripts/               # initialization scripts and internal utilities
-└─ services/              # frontend adapters toward the local backend
+├─ apps/local-server/
+├─ components/
+├─ contexts/
+├─ docs/
+├─ hooks/
+├─ packages/shared/
+├─ scripts/
+└─ services/
 ```
 
-### Style preset manifests
+## Documentación principal
 
-Legacy monolithic packs are retired. The main loader consumes the granular structure:
+- [`CONTEXT.md`](./CONTEXT.md) — vocabulario canónico del dominio.
+- [`AGENTS.md`](./AGENTS.md) — reglas operativas para agentes.
+- [`SKILLS.md`](./SKILLS.md) — flujos especializados.
+- [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — arquitectura vigente.
+- [`docs/SERVICES.md`](./docs/SERVICES.md) — mapa de servicios e integraciones.
+- [`docs/DEV_GUIDE.md`](./docs/DEV_GUIDE.md) — convenciones de desarrollo.
+- [`docs/TOOLING.md`](./docs/TOOLING.md) — comandos y calidad.
+- [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md) — diagnóstico rápido.
 
-- `components/recipes/styles/manifests/packs/*.yaml` — lightweight Style Pack Manifests, categories, and references.
-- `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` — editable Style Preset Manifests, one file per preset.
+## Checklist de validación rápida
 
-Edit the granular manifests under `components/recipes/styles/manifests/`. `bun run styles:split` refuses to overwrite them from legacy YAML. `styles:source:verify` fails if legacy YAML reappears or if the runtime re-uses retired pack exports. The UI consumes `StyleRuntimePack` through compact loaders generated from the granular manifests.
+- [ ] `bun run studio:init` completa sin errores.
+- [ ] `bun run dev` levanta UI + backend.
+- [ ] `GET /api/health` responde correctamente.
+- [ ] Puedes abrir la UI y ver el estado de readiness.
 
-## Documentation
+## Próximo paso
 
-- [`CONTEXT.md`](./CONTEXT.md) — canonical project language and terms.
-- [`AGENTS.md`](./AGENTS.md) — rules for agents and automated contributors.
-- [`SKILLS.md`](./SKILLS.md) — specialized workflows for providers, recipes, presets, settings, and outputs.
-- [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — system overview.
-- [`docs/SERVICES.md`](./docs/SERVICES.md) — service map and integration points.
-- [`docs/DEV_GUIDE.md`](./docs/DEV_GUIDE.md) — conventions for extending recipes and UI.
-- [`docs/TOOLING.md`](./docs/TOOLING.md) — current tooling stack, commands, and logs.
-- [`docs/ELECTRON.md`](./docs/ELECTRON.md) — strategy and constraints for a future desktop build.
-- [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md) — common setup and runtime errors.
-- [`docs/IMPLEMENTATION_LOG.md`](./docs/IMPLEMENTATION_LOG.md) — log of applied tasks during the catch-up phase.
-- [`docs/TECHNICAL_DEBT.md`](./docs/TECHNICAL_DEBT.md) — known technical debt and next focus areas.
-- [`docs/adr/0001-local-codex-studio.md`](./docs/adr/0001-local-codex-studio.md) — foundational architectural decision.
-- [`ROADMAP.md`](./ROADMAP.md) — product priorities for the open-source stage.
-
-## Contributing
-
-If you want to help prepare the project for a more solid open-source release, see [`CONTRIBUTING.md`](./CONTRIBUTING.md).
-
-## License
-
-This repository is distributed under the [MIT](./LICENSE) license.
+Si quieres contribuir, empieza por [`CONTRIBUTING.md`](./CONTRIBUTING.md). Si quieres entender prioridades de producto, sigue en [`ROADMAP.md`](./ROADMAP.md).

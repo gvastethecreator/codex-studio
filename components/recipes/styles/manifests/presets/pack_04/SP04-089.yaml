@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Creature-design exploration sheet, anatomical-speculation sketching, muscle-study overlays, bone-structure ghost drawings, adaptation-to-environment design thinking, alien-biology brainstorming, Terryl Whitlatch anatomical fantasy, Monster-Hunter design iteration, evolution-pressure visualization
-  form_and_line: Anatomical construction lines, skeleton-ghost underdrawing, muscle-group overlay contours, movement-range indication arcs, biological-adaptation callouts
-  color_palette: Sketch-grey tonal range, ochre underdrawing, blue construction overlay, red muscle-highlight, neutral background, no final color
-  lighting_setup: Anatomical-study lighting, rim-light for form reading, subsurface-indication on thin membranes, translucent-tissue light
-  material_texture: Anatomical-texture variety, scale-plate overlap, fur-direction strokes, carapace-gloss indication, membrane-translucency, scar-tissue roughness
-  render_quality: Creature-design exploration sheet, biological-concept study, anatomical-speculation rendering, adaptive-evolution visualization
-  spatial_distortion: Multiple-pose iteration grid, anatomical-layering ghost views, skeleton-over-flesh transparency, evolution-variant comparison
-  atmosphere: Scientific, exploratory, biological-wonder, adaptive-imagination, speculative-zoology excitement
-  key_features: Anatomy-layering views, skeleton-ghost overlay, muscle-group callouts, multiple-pose iterations, adaptation-annotation notes
-  creative_brief: Anatomy speculates across the page in overlapping studies, muscle groups ghosting through translucent hide in search of evolutionary purpose. Bone structures peek through like scaffolding for monsters yet unbuilt. This is biology as creative writing, where every adaptation tells the story of the environment that demanded it.
+  aesthetic: Speculative creature-design sheet with layered anatomical logic (Terryl Whitlatch-style anatomical imagination)
+  form_and_line: Construction underdrawings, skeletal overlays, muscular contour notes
+  color_palette: Neutral sketch tones with limited functional overlay coding
+  lighting_setup: Form-reading study light with selective translucency cues
+  material_texture: Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests
+  render_quality: Iterative concept-study fidelity prioritizing function over polish
+  spatial_distortion: Multi-pose and layered ghost-view layout for structural analysis
+  atmosphere: Scientific, exploratory, speculative naturalism
+  key_features: Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks
+  creative_brief: >-
+    Develop creatures as coherent biological systems. Pair silhouette and anatomy passes to test mobility, survivability, and material behavior, keeping overlays and callouts explicit enough to compare evolutionary variants before committing to final render direction in a Terryl Whitlatch-style creature-development mindset.
 avoidRules:
   - human
   - normal

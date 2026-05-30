@@ -1,27 +1,27 @@
-# Code of Conduct
+# Código de conducta
 
-## Our pledge
+## Nuestro compromiso
 
-We pledge to make participation in Codex Studio welcoming, respectful, and harassment-free for everyone.
+Nos comprometemos a que participar en Codex Studio sea una experiencia respetuosa, inclusiva y libre de acoso para todas las personas.
 
-## Expected behavior
+## Comportamiento esperado
 
-- Be respectful and constructive.
-- Assume good intent, but accept feedback when impact differs from intent.
-- Keep discussions focused on the project and the people using it.
-- Prefer clear bug reports, reproducible examples, and specific proposals.
+- Trato respetuoso y constructivo.
+- Asumir buena intención, aceptando feedback cuando el impacto no coincide con la intención.
+- Mantener foco en el proyecto y en quienes lo usan.
+- Priorizar reportes claros, ejemplos reproducibles y propuestas concretas.
 
-## Unacceptable behavior
+## Comportamiento no aceptable
 
-- Harassment, threats, insults, or discriminatory language.
-- Sexualized language or imagery in project spaces.
-- Publishing private information without explicit permission.
-- Sustained disruption of issues, pull requests, discussions, or reviews.
+- Acoso, amenazas, insultos o lenguaje discriminatorio.
+- Contenido sexualizado en espacios del proyecto.
+- Publicación de información privada sin permiso explícito.
+- Interrupción sostenida de issues, PRs, discusiones o revisiones.
 
-## Enforcement
+## Aplicación
 
-Maintainers may remove comments, close issues, block users, or take other reasonable action when this code is violated.
+El equipo mantenedor puede moderar comentarios, cerrar issues, bloquear usuarios o tomar otras acciones razonables cuando se incumpla este código.
 
-If you need to report a problem, contact the maintainers privately through the security or contact channel listed by the repository owner.
+Si necesitas reportar un problema, usa el canal privado indicado por la persona o equipo propietario del repositorio.
 
-This Code of Conduct is adapted from the Contributor Covenant, version 2.1.
+Este código está adaptado de Contributor Covenant v2.1.

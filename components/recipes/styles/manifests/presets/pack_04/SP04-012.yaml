@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Surreal sci-fi
-  form_and_line: Fine stipple
-  color_palette: Pastel, desert, dream-fade spectrum, soft alien blues
-  lighting_setup: Flat, ambient dream glow, no harsh shadows
-  material_texture: Dot shading
-  render_quality: French, intricate, ligne-claire sci-fi, desert-planet immersion
-  spatial_distortion: Alien shapes
-  atmosphere: Dreamy, vast, silent alien wilderness, meditative solitude
-  key_features: Complex background, stipple gradients, alien architecture
-  creative_brief: Stippled gradients breathe across alien deserts, each dot a grain of sand on worlds that never were. Pastel skies melt into dream-fade horizons where architecture grows like coral, silent and patient. This is the sci-fi of meditation, not conquest, where solitude in an alien landscape feels like coming home.
+  aesthetic: Dreamline retro sci-fi comics language (Moebius-inspired airy surrealism)
+  form_and_line: Fine controlled contour with stipple-assisted tonal modulation
+  color_palette: Soft pastel atmospherics, dusty warms, and cool alien blues
+  lighting_setup: Even ambient illumination with low-contrast dream glow
+  material_texture: Dot/stipple shading and clean matte color fields
+  render_quality: Intricate yet breathable world-detailing with contemplative pacing
+  spatial_distortion: Organic-futurist forms and elegant non-Euclidean silhouettes
+  atmosphere: Vast, meditative, enigmatic, serene
+  key_features: Stipple gradients, expansive negative space, poetic architecture
+  creative_brief: >-
+    Combine clean line precision with spacious, pastel sci-fi atmospheres in a Moebius-influenced manner. Favor contemplative scale, unusual architecture, and restrained contrast so imagery feels exploratory and dreamlike without anchoring to any single scene narrative.
 avoidRules:
   - dark
   - heavy shadows

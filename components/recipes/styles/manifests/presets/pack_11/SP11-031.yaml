@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth
   atmosphere: Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony
   key_features: Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool reflection
-  creative_brief: Chainsaw bite meets diamond clarity in a frozen gallery where sculptures drip toward their own disappearance with each passing degree. Light refracts through crystal mass, splitting into rainbows trapped inside internal fractures and air-bubble constellations. Elegance carved from falling temperature, every facet melting toward liquid grace at the speed of thaw, a countdown performed in crystal.
+  creative_brief: >-
+    Preserve identity through ice-sculpture grammar: refractive crystal mass,
+    internal fracture networks, melt-phase transitions, and facet-driven light
+    behavior should define style beyond a specific event setting.
 avoidRules:
   - warm
   - opaque

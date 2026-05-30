@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Ornate costumes, gentle magic, decorative emblems, shimmering softness, card motifs, feathered wings, floating petals, magical circles
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Tender, charming, magical, sweet
-  key_features: Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling
-  creative_brief: Ornate costume ribbons and feathered wings float through magical circles as card motifs cascade like promises, each decorative emblem rendered with the delicate precision of a love letter written in sparkles. The 90s cel warmth wraps tender magic in shimmering softness, a visual lullaby for the heart.
+  aesthetic: Delicate magical-girl ornament style with emblematic ritual motifs, gentle enchantment, and luminous innocence
+  form_and_line: Fine 90s cel contours, ribbon-flow gesture accents, emblem-framing circles, and graceful silhouette articulation
+  color_palette: Pastel jewel harmony with soft pink-lilac cores, mint-cyan glints, and controlled golden sparkle highlights
+  lighting_setup: Soft radiant bloom, haloed key lights, tender rim glows, and low-contrast magical diffusion
+  material_texture: Silk-and-ribbon softness, particle sparkle layering, watercolor-backed cel fields, and analog grain warmth
+  render_quality: Elegant vintage-anime magical rendering with high decorative clarity and emotionally gentle polish
+  spatial_distortion: Lightly elongated fairytale proportions with floating motif depth and graceful compositional lift
+  atmosphere: Tender, hopeful, radiant, whimsical, reassuring
+  key_features: Emblematic ritual motifs, ribbon choreography, soft magical bloom, decorative pastel harmony
+  creative_brief: >-
+    Preserve this preset through ornamental magic grammar: emblem circles,
+    ribbon-flow silhouettes, and soft jewel-pastel luminance should remain the
+    transferable identity beyond specific character archetypes.
 avoidRules:
   - realistic
   - 3d render

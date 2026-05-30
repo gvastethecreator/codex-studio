@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: 2D cutout, die-line silhouette, punch-out negative space, floating-object illusion
   atmosphere: Cool, decorative, urban-expression, laptop-personality, street-art rebellion
   key_features: White outline, kiss-cut border, gloss-laminate sheen, color-separation registration
-  creative_brief: Thick white borders define the edge where the image asserts independence from background, a die-cut declaration ready to travel. Vinyl laminate catches the gloss of UV-resistant inks, weatherproof personality engineered for laptops and street poles and skate-deck swagger. The sticker peels away from its sheet carrying a fragment of urban identity pressed into adhesive permanence.
+  creative_brief: >-
+    Keep identity in die-cut sticker grammar: thick contour borders,
+    high-saturation flat fills, and laminate gloss behavior should define the
+    preset without anchoring it to one urban micro-scene.
 avoidRules:
   - 3d
   - shadow

@@ -4,21 +4,26 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP15-017",
-    "name": "Iron Convoy Commons",
-    "category": "7. Corepunk — Dieselpunk",
-    "negativePrompt": "photoreal, pristine-utopia, neon-cyber, magical-fantasy, watermark, text, logo",
-    "style": {
-      "aesthetic": "Post-war dieselpunk rebuilt as cooperative freight and repair urbanism.",
-      "form_and_line": "Heavy chassis geometry, elevated fuel viaducts, and robust workshop framing.",
-      "color_palette": "Oxide red, soot gray, and signal amber.",
-      "lighting_setup": "Smoky afternoon backlight with hard industrial highlights.",
-      "material_texture": "Riveted steel, grease-dark rubber, weathered concrete, and canvas utility tarps.",
-      "render_quality": "Rugged cinematic concept art with strong mass readability and mechanical detail.",
-      "spatial_distortion": "Convoy-lane depth perspective ending at a civic repair hangar.",
-      "atmosphere": "Gritty solidarity, practical endurance, and collective reconstruction.",
-      "key_features": "Diesel haulers, communal machine shops, fuel reclamation towers, and worker canteens.",
-      "creative_brief": "A dieselpunk district where heavy infrastructure is repurposed for mutual aid logistics and public resilience."
-    }
-  }
+    id: 'SP15-017',
+    name: 'Iron Convoy Commons',
+    category: '7. Corepunk — Dieselpunk',
+    negativePrompt:
+      'photoreal, pristine-utopia, neon-cyber, magical-fantasy, watermark, text, logo',
+    style: {
+      aesthetic: 'Post-war dieselpunk rebuilt as cooperative freight and repair urbanism.',
+      form_and_line: 'Heavy chassis geometry, elevated fuel viaducts, and robust workshop framing.',
+      color_palette: 'Oxide red, soot gray, and signal amber.',
+      lighting_setup: 'Smoky afternoon backlight with hard industrial highlights.',
+      material_texture:
+        'Riveted steel, grease-dark rubber, weathered concrete, and canvas utility tarps.',
+      render_quality:
+        'Rugged cinematic concept art with strong mass readability and mechanical detail.',
+      spatial_distortion: 'Convoy-lane depth perspective ending at a civic repair hangar.',
+      atmosphere: 'Gritty solidarity, practical endurance, and collective reconstruction.',
+      key_features:
+        'Diesel haulers, communal machine shops, fuel reclamation towers, and worker canteens.',
+      creative_brief:
+        'A dieselpunk district where heavy infrastructure is repurposed for mutual aid logistics and public resilience.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

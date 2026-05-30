@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Ink stamp
-  form_and_line: Thick, broken
+  aesthetic: Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office artifact character
+  form_and_line: Thick broken contour forms with pressure-loss gaps, edge breakup, and frame-first stamp geometry
   color_palette: Red or Black ink, stamp-pad economy, official pigment
   lighting_setup: Uneven pressure, ink-starvation pattern, hand-stamped irregularity
   material_texture: Ink starvation
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Missing parts
   atmosphere: Official, bureaucratic, desk-clerk authority, document-weight
   key_features: Border, stamp frame, ink-fade authenticity
-  creative_brief: Ink hits paper with the decisive thud of officialdom, each impression a small act of bureaucratic permanence. Text and image share the rubber surface, typography and illustration united by the same decisive gesture. This is the authority of the stamp, where a single impression carries the weight of institution.
+  creative_brief: >-
+    Preserve identity through stamp-impression grammar: uneven pressure,
+    ink-starvation artifacts, and frame-locked official mark structure should
+    define style beyond any single document context.
 avoidRules:
   - perfect
   - clean

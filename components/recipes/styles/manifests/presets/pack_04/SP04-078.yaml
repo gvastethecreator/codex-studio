@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP04-078
 packId: pack_04
-name: Banksy Stencil Art (Street Protest)
+name: Street Protest Stencil Art
 category: 5. Fantasy And Concept Illustration
 version: 1
 supportedTasks:
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Simplified levels
   atmosphere: Rebellious, simple, urban-dissident energy, unauthorized truth
   key_features: Bridges, cutout connections, stencil registration
-  creative_brief: The stencil reduces the world to its silhouette, image emerging from the violent subtraction of spray through negative space. A single color carries the entire message, simplicity sharpening the political edge. This is the image as intervention, where the wall becomes the medium and the message arrives without permission.
+  creative_brief: >-
+    Preserve identity through protest-stencil grammar: bridge-supported cutouts,
+    single-ink high-contrast silhouettes, and fast unauthorized wall
+    readability should define the style without referencing any named artist.
 avoidRules:
   - freehand
 assets:

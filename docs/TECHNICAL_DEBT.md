@@ -1,20 +1,22 @@
-# Technical Debt
+# Deuda técnica
 
-This document tracks technical debt that remains relevant while Codex Studio prepares for a stronger open-source preview.
+Este documento registra deuda técnica activa mientras Codex Studio se prepara para una release open-source más sólida.
 
-## High priority
+## Alta prioridad
 
-Accepted architecture review batch: `docs/architecture/architecture-review-2026-05-29.md`.
-Shared execution tracker: `docs/architecture/DEEPENING-ROADMAP.md`.
+Referencia de arquitectura aceptada:
 
-Current execution queue:
+- `docs/architecture/architecture-review-2026-05-29.md`
+- `docs/architecture/DEEPENING-ROADMAP.md`
 
-1. Deepen the `Studio Shell` orchestration module.
-2. Deepen the `Studio Generation Session` module.
-3. Separate `Studio Settings` seams by operational domain.
-4. Finish `appFactory` route composition deepening (`events` + `library` extraction complete; continue route-level seam hardening).
-5. Deepen `Local Studio Sync` refresh policy semantics.
-6. Review naming and seam clarity in the provider-neutral `Local Generation Run` flow.
+Cola de ejecución actual:
+
+1. Profundizar orquestación de `Studio Shell`.
+2. Profundizar `Studio Generation Session`.
+3. Separar seams de `Studio Settings` por dominio operativo.
+4. Completar deepening de rutas en `appFactory`.
+5. Mejorar semántica de refresh en `Local Studio Sync`.
+6. Revisar claridad de seams en `Local Generation Run`.
 
 ### 1. Further decompose `components/AppContent.tsx`
 
@@ -69,7 +71,7 @@ Recommended next steps:
 - strengthen isolated tests for catalog, worker lifecycle, and provider execution;
 - preserve the Provider Boundary so route handlers and non-provider modules do not import concrete provider executors directly.
 
-## Medium priority
+## Prioridad media
 
 ### 1. Studio Runtime vs Studio Readiness naming
 
@@ -101,26 +103,26 @@ After major Vite+, Rolldown, OXC, React, or Bun updates, run the full validation
 
 Before a public release candidate, review tracked files and history for local prompts, generated assets, SQLite files, logs, and machine-specific paths.
 
-## Performance notes
+## Notas de rendimiento
 
 - Heavy recipe surfaces should remain demand-loaded.
 - `react-scan`, Three.js, style catalog data, ZIP export, YAML parsing, and visual background effects should not enter the startup bundle eagerly.
 - `ui:source:verify`, `ui:chunks:verify`, and `styles:render:verify` should remain release gates if they continue to catch real regressions.
 
-## Documentation gaps
+## Brechas de documentación
 
 - Add more catalog-first migration guidance as ADR-0013 continues.
 - Add a manual open-source smoke-test checklist.
 - Keep provider configuration docs explicit about Provider Secrets staying outside SQLite-backed Studio Settings.
 
-## Closed or mostly closed areas
+## Áreas cerradas (o casi cerradas)
 
 - Monolithic legacy style pack YAML has been retired in favor of granular manifests.
 - Style runtime naming is explicit with `StyleRuntimePack` and `StyleRuntimePreset`.
 - Style preset templates exist for image, sprite sheet, and texture authoring.
 - External Output Sources provide the safer import boundary for unmanaged output folders.
 
-## Release-facing rule
+## Regla de priorización hacia release
 
 Technical debt should be prioritized when it blocks one of these outcomes:
 

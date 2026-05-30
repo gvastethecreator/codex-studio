@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Endless weapon silhouettes, glowing sky shifts, polished duel spectacle, modern myth, golden reality marble, servant-class hierarchies, noble phantasm weapons, command seal markings
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
-  atmosphere: Mythic, dramatic, grandiose, epic
-  key_features: Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography
-  creative_brief: Golden skies shatter into infinite weapon-scapes as legends summoned from the depths of myth duel beneath indifferent city lights. Every blade carries a name and a millennium of yearning, the mundane world peeling back like painted scenery to reveal truth too vast and glorious to contain in a single frame.
+  aesthetic: Mythic-duel spectacle style with ceremonial weapon iconography, noble dramatic scale, and reality-layer rupture effects
+  form_and_line: Heroic duel silhouettes, weapon-field repetition patterns, calligraphic strike vectors, and emblematic stance framing
+  color_palette: Regal gold-crimson contrasts over deep navy-charcoal grounds, with luminous arc accents and ceremonial highlight bands
+  lighting_setup: Mythic backlight domes, volumetric ray fan-outs, high-drama rim partitioning, and duel-focus spotlight behavior
+  material_texture: Polished relic-metal sheen, arcane effect particles, clean cinematic composites, and controlled bloom around signature weapons
+  render_quality: Grand-scale fantasy-action rendering with high symbolic clarity and premium spectacle polish
+  spatial_distortion: Reality-fold perspective pulls and horizon warping around weapon manifestations to emphasize mythic magnitude
+  atmosphere: Grandiose, operatic, solemn, epic, fated
+  key_features: Weapon-field iconography, ceremonial duel staging, reality-layer rupture cues, regal color authority
+  creative_brief: >-
+    Preserve identity through mythic weapon symbolism and ceremonial duel
+    framing; reality-warp spectacle should support an operatic visual grammar
+    beyond specific lore references.
 avoidRules:
   - realistic
   - 3d render

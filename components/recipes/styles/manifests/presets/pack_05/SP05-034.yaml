@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Comic-leaning hero uniforms, optimistic crowd energy, school-battle polish, quirk-based powers, hero agency rankings, stadium tournament arcs, smash attacks
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
-  atmosphere: Aspirational, energetic, hopeful, inspiring
-  key_features: Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography
-  creative_brief: Stadium lights ignite the sky above a generation reaching for capes and calling, primary-color costumes streaking across the frame like comic book promises made visible. Every punch carries the weight of a dream broadcast live, every splash page a declaration that heroism is taught, learned, and earned in the arena of youth.
+  aesthetic: Heroic optimism action style with emblematic costume coding, uplifted momentum, and bright civic-spectacle energy
+  form_and_line: Clean heroic contour grammar, readable emblem silhouettes, impact arcs with celebratory pose punctuation, comic-influenced line confidence
+  color_palette: Primary-forward chroma with high-key accents, disciplined shadow saturation, and motivational contrast hierarchy
+  lighting_setup: Broadcast-bright keys, triumphant backlight halos, crowd-energy bloom, and crisp highlight framing for iconic poses
+  material_texture: Polished suit surfaces, effect particles with clean edge control, low-noise digital compositing, high-legibility finish
+  render_quality: Blockbuster modern-anime polish tuned for inspirational action clarity and poster-grade frame readability
+  spatial_distortion: Dynamic but orderly foreshortening and perspective thrust to amplify heroic ascent without chaos blur
+  atmosphere: Aspirational, kinetic, uplifting, confident, bold
+  key_features: Emblem-driven silhouettes, optimism-first action cadence, poster-ready impact framing, high-visibility hero grammar
+  creative_brief: >-
+    Keep the preset anchored in optimistic hero readability: emblematic
+    silhouettes, high-key motivational color logic, and celebratory impact
+    staging should stay transferable beyond school or arena narratives.
 avoidRules:
   - realistic
   - 3d render

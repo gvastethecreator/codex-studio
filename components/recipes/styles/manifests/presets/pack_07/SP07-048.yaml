@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: City skyline view, urban aerie, high-rise garden escape, above-the-noise retreat, planted penthouse
-  form_and_line: Railing, planter-grid, lounge-seating rectangle, pergola frame, hedge-row horizon
-  color_palette: Green, Grey, Blue sky, Sunset Orange, Corten Rust, City-light Gold
-  lighting_setup: Sunset, string-light canopy, fire-table glow, city-sparkle below, dusk-to-dark transition
-  material_texture: Decking, pots, weathered ipe wood, zinc planter, outdoor fabric, gravel
-  render_quality: Urban oasis, skyline-sanctuary, elevated-escape, city-balcony dream
-  spatial_distortion: None
-  atmosphere: Cool, escape, above-it-all, private-horizon, breeze, metropolitan quietude
-  key_features: Skyline, railing edge, ipe deck, planter beds, fire pit, lounge seating, string lights
-  creative_brief: Skyline spreads below like a scatter of diamonds on dark velvet, the city reduced to jewelry by altitude. String lights write temporary constellations above ipe decking still warm from departed sun. The garden levitates above urban noise, an island of soil that forgot it was supposed to be on the ground.
+  aesthetic: Elevated biophilic-modern terrace style with calm geometric planting composition and hospitality-grade outdoor minimalism
+  form_and_line: Linear planter modules, low horizontal furniture massing, thin-frame pergola rhythm, softened orthogonal hardscape
+  color_palette: Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber highlights
+  lighting_setup: Warm twilight gradient with soft practical point-lights and controlled low-contrast edge definition
+  material_texture: Oiled hardwood decking, matte powder-coated metal, coarse aggregate gravel, woven exterior textile, brushed zinc planters
+  render_quality: Premium landscape-architecture visualization finish with clean hierarchy, restrained bloom, and tactile material legibility
+  spatial_distortion: Long-axis compositional pull with shallow vertical compression to preserve terrace layering and planting cadence
+  atmosphere: Quiet, restorative, refined, breathable, contemplative, design-forward
+  key_features: Modular planting bands, warm deck planes, integrated ambient lighting, low-profile lounge geometry, material contrast between greenery and hardscape
+  creative_brief: >-
+    Keep the preset anchored in biophilic terrace language: structured
+    planting rhythm, restrained luxury materials, and atmospheric calm should
+    carry the identity without depending on any specific location narrative.
 avoidRules:
   - ground level
 assets:

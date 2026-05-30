@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - toys-and-miniatures
 visualDna:
-  aesthetic: Plastic hero toy, blister-pack icon, Saturday-morning warrior, molded-champion
-  form_and_line: Muscle definition, heroic physique, sculpted-hero contours, punch-ready stance
-  color_palette: Bright plastic, primary-suit colors, flesh-tan plastic, metallic-sword silver, cape-blue
-  lighting_setup: Blister pack reflection, card-back gloss, overhead retail fluorescents, plastic-bubble glare
-  material_texture: Glossy plastic, injection-mold shell, hollow-torso lightweight, paint-application sheen
-  render_quality: Mass produced, toy, peg-hook nostalgia, action-figure charm, punch-kick-pose energy
-  spatial_distortion: 5 points of articulation, shoulder-hip-knee hinges, swivel-neck, weapon-grip hands
-  atmosphere: Exciting, play, adventure aisle, birthday-morning thrill, living-room-battle diorama
-  key_features: Joints visible, thigh-swivel seams, molded-cape detail, accessory-weapon grip
-  creative_brief: Five points of articulation unlock infinite adventure on the living-room floor, the blister-pack reflection catching retail fluorescence like a hero's arrival. Injection-molded plastic holds the punch-ready stance permanently, cape frozen mid-swoop across molded shoulders. Every Saturday morning is encoded in the thigh-swivel seams and weapon-grip hands of a molded champion.
+  aesthetic: Retro action-toy collectible style with heroic molded proportions, shelf-display energy, and kinetic play-readiness
+  form_and_line: Sculpted hero contour emphasis with visible articulation seams, bold toy silhouette clarity, and pose-forward geometry
+  color_palette: Saturated toy primaries with metallic accent paints, molded skin-tone neutrals, and high-contrast accessory blocks
+  lighting_setup: Retail-style overhead speculars, blister-like glare streaks, and glossy card-surface reflections for packaging realism
+  material_texture: Injection-mold plastic sheen, painted detail pass variation, seam-line evidence, and rigid-shell synthetic finish
+  render_quality: High-legibility collectible rendering focused on articulation readability, toy-scale dynamics, and nostalgic mass-market polish
+  spatial_distortion: Action-figure joint logic with hinge/swivel articulation cues and exaggerated heroic torso-to-limb proportioning
+  atmosphere: Playful, energetic, nostalgic, bold, adventurous
+  key_features: Articulation seam grammar, molded accessory grip cues, hero-pose silhouette lock, packaged-collectible lighting behavior
+  creative_brief: >-
+    Preserve identity through articulated toy-hero grammar: molded plastic
+    anatomy, visible joint systems, and display-ready gloss should carry the
+    preset without anchoring it to one fixed living-room battle story.
 avoidRules:
   - realistic skin
 assets:

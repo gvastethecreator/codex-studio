@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - historical-and-sacred-architecture
 visualDna:
-  aesthetic: Dark ornate cathedral or mansion, stone romance, medieval dream, vertical yearning
-  form_and_line: Pointed arches, intricate carving, ribbed vaults, flying buttresses, spires reaching
-  color_palette: Dark stone, stained glass colors, Deep Crimson, midnight Blue, burnished Gold, weathered Grey
-  lighting_setup: Dim, candlelight, mysterious, stained glass glow, moonlit shafts, flickering shadow
-  material_texture: Stone, dust, cobwebs, carved oak, cold iron, weathered limestone, tarnished brass
-  render_quality: Haunted, historic, detailed, cathedral awe, sacred darkness, ancient craft
-  spatial_distortion: Elongated vertical lines
-  atmosphere: Spooky, dramatic, ancient, sacred, echoing, time-layered reverence
-  key_features: Vertical emphasis, flying buttresses, gargoyle silhouettes, tracery windows, ribbed ceiling
-  creative_brief: Stone reaches skyward with medieval longing, every spire a prayer cast in limestone and shadow. Colored light bleeds through saints and roses, painting cold floors with jewel-toned devotion. The architecture does not invite, it commands reverence, demanding that the soul look up.
+  aesthetic: Gothic revival style with sacred verticality, ornamental stone drama, and reverential shadowed grandeur
+  form_and_line: Pointed-arch grammar, ribbed vault structure, tracery intricacy, buttress rhythm, and spire-led upward composition
+  color_palette: Weathered stone grays with stained-jewel chroma bursts, deep crimson-blue shadows, and muted burnished metallic notes
+  lighting_setup: Low-key candle and moon shafts, stained-glass projection color pools, and high-contrast devotional shadow layering
+  material_texture: Carved limestone erosion detail, aged oak relief, cold iron patina, dusted masonry surfaces, tarnished brass accents
+  render_quality: Monumental historic visualization with high ornamental fidelity and atmospheric sacred-darkness precision
+  spatial_distortion: Vertical elongation emphasis with vaulted depth pull to intensify reverential upward focus
+  atmosphere: Solemn, dramatic, ancient, sacred, awe-struck
+  key_features: Vertical-devotional composition, pointed-arch language, stained-light dramaturgy, carved stone ornament hierarchy
+  creative_brief: >-
+    Preserve this preset through vertical sacred geometry and stained-light
+    contrast logic; Gothic reverence should be conveyed by material and form
+    grammar rather than haunted-narrative tropes.
 avoidRules:
   - modern
   - bright

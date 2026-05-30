@@ -1,29 +1,33 @@
 import type { RecipeId } from '../types';
 import { buildPackFallbackCatalog } from './stylePresetVisuals';
 
-const recipeCardImageFiles = import.meta.glob('../assets/recipes/cards/*.webp', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-});
+type ImportMetaGlobFn = (
+  pattern: string,
+  options: { eager: true; query: '?url'; import: 'default' },
+) => Record<string, unknown>;
 
-const styleCategoryImageFiles = import.meta.glob('../assets/recipes/styles/category-bases/*.webp', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-});
+function safeImportMetaGlob(pattern: string): Record<string, unknown> {
+  const glob = (import.meta as ImportMeta & { glob?: ImportMetaGlobFn }).glob;
+  if (typeof glob === 'function') {
+    return glob(pattern, {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    });
+  }
 
-const styleDefaultImageFiles = import.meta.glob('../assets/recipes/styles/defaults/*.webp', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-});
+  return {};
+}
 
-const stylePreviewImageFiles = import.meta.glob('../assets/recipes/styles/previews/*.webp', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-});
+const recipeCardImageFiles = safeImportMetaGlob('../assets/recipes/cards/*.webp');
+
+const styleCategoryImageFiles = safeImportMetaGlob(
+  '../assets/recipes/styles/category-bases/*.webp',
+);
+
+const styleDefaultImageFiles = safeImportMetaGlob('../assets/recipes/styles/defaults/*.webp');
+
+const stylePreviewImageFiles = safeImportMetaGlob('../assets/recipes/styles/previews/*.webp');
 
 function buildUrlCatalog(files: Record<string, unknown>) {
   const catalog: Record<string, string> = {};

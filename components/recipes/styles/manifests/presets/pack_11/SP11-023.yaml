@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance
   atmosphere: Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia
   key_features: Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail
-  creative_brief: Pressed metal bears the ghost of lithographed ink, a wind-up heart ticking through the decades with clockwork precision. The key turns with satisfying resistance, each click a promise of mechanized wonder translated through gear-train mathematics. Mantelpiece nostalgia in stamped steel and hand-soldered joints, a robot waiting for the next wound spring to release its mechanical soul.
+  creative_brief: >-
+    Keep this preset grounded in wind-up tin-toy grammar: stamped metal
+    lithography, key-driven clockwork cues, and pressed-soldered mechanical
+    charm should define identity beyond one mascot narrative.
 avoidRules:
   - plastic
 assets:

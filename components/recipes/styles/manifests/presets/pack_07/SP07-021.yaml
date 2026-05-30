@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Frank Gehry sculptural deconstructivist landmark, titanium wildness, Bilbao effect
-  form_and_line: Distorted geometry, collapsing volumes, twisting towers, exploding facets, folded planes
-  color_palette: Titanium, Steel, Champagne Silver, Warm Ochre stone, Mirror Sky
-  lighting_setup: Reflective sun, surface-dancing light, angled shadow drama, metallic shimmer
-  material_texture: Metal panels, titanium shingles, zinc cladding, glass shards, bent steel
-  render_quality: Chaotic, fluid, modern, sculptural explosion, gravity-defying, architectural fireworks
-  spatial_distortion: Melting/Twisting
-  atmosphere: Disorienting, dynamic, cerebral, exhilarating, rule-breaking, impossible beauty
-  key_features: No right angles, folding titanium skin, explosive volumes, shimmering surfaces, sculptural roofscape
-  creative_brief: Titanium skin folds like origami caught mid-thought, volumes collapsing and exploding in the same breath. The building refuses to sit still, every facet chasing light across its surface like a living thing. Architecture discovers it can dance, and the ground below it forgets what stable means.
+  aesthetic: Deconstructivist architectural style focused on controlled instability, anti-orthogonal form language, and sculptural kinetic tension
+  form_and_line: Folded planes, fractured mass intersections, torsion-like profiles, displaced axes, and non-linear envelope continuity
+  color_palette: Brushed titanium and steel neutrals with warm mineral countertones, mirrored sky reflections, and restrained metallic highlights
+  lighting_setup: Sharp angular shadow cuts, reflective glint choreography, and dynamic sun-tracking contrast across faceted surfaces
+  material_texture: Metal cladding seams, zinc-titanium panel grain, glass specular fracture, and high-precision structural skin detailing
+  render_quality: High-end sculptural architecture visualization with fluid mass readability and disciplined anti-symmetry coherence
+  spatial_distortion: Intentional geometric dislocation with twisting volumetric vectors and collapsing-perspective cues
+  atmosphere: Disorienting, cerebral, energetic, provocative, audacious
+  key_features: Anti-right-angle composition, folded metallic envelope, displaced volume grammar, kinetic mass choreography
+  creative_brief: >-
+    Keep this preset anchored in deconstructive geometry logic: fractured axes,
+    folded metallic skins, and controlled spatial disorientation should define
+    the style independent of any specific landmark reference.
 avoidRules:
   - box
   - symmetrical

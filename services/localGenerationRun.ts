@@ -1,31 +1,31 @@
-import type { GeneratedImage, ImageGenerationConfig } from "../types";
+import type { GeneratedImage, ImageGenerationConfig } from '../types';
 import type {
   EditableStudioSettings,
   GenerationProviderId,
   GenerationTaskAssetRef,
   Job as StudioJob,
-} from "../packages/shared/src";
-import { createThumbnail } from "../utils/imageUtils";
+} from '../packages/shared/src';
+import { createThumbnail } from '../utils/imageUtils';
 import {
   buildGenerationVariationBrief,
   createGenerationVariationKey,
-} from "../lib/generationVariation";
-import { resolveGenerationConfig } from "../lib/recipeContext";
-import { materializeCatalogEntryImage } from "../lib/studioCatalogImageAdapter";
-import { buildGenerationTaskSpecFromRecipe } from "../lib/recipeModules";
+} from '../lib/generationVariation';
+import { resolveGenerationConfig } from '../lib/recipeContext';
+import { materializeCatalogEntryImage } from '../lib/studioCatalogImageAdapter';
+import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
 import {
   createStudioJob,
   getEditableStudioSettings,
   listProjects,
   queryCatalog,
-} from "./localStudioService";
-import { createStudioEventStream, type StudioEventStream, watchJob } from "./studioEventSource";
+} from './localStudioService';
+import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
 import {
   isGenerationCancellationError,
   throwIfGenerationAborted,
   toGenerationDataUrl,
   waitForGenerationDelay,
-} from "./localGenerationRuntimeAdapters";
+} from './localGenerationRuntimeAdapters';
 
 interface RunLocalGenerationOptions {
   config: ImageGenerationConfig;
@@ -42,17 +42,17 @@ interface RunLocalGenerationOptions {
 
 export type LocalGenerationLifecycleOutcome =
   | {
-      status: "completed";
+      status: 'completed';
       result: LocalGenerationRunResult;
       durationMs: number;
     }
   | {
-      status: "cancelled";
+      status: 'cancelled';
       message: string;
       durationMs: number;
     }
   | {
-      status: "failed";
+      status: 'failed';
       message: string;
       durationMs: number;
     };
@@ -71,9 +71,25 @@ export function resolveLocalGenerationProviderId({
   settings,
 }: {
   providerId?: GenerationProviderId | null;
-  settings?: Pick<EditableStudioSettings, "defaultProviderId"> | null;
+  settings?: Pick<EditableStudioSettings, 'defaultProviderId'> | null;
 }): GenerationProviderId {
-  return providerId ?? settings?.defaultProviderId ?? "codex";
+  return providerId ?? settings?.defaultProviderId ?? 'codex';
+}
+
+export function createLocalRunBatchId(now = Date.now, random = Math.random) {
+  return `batch-${now()}-${random().toString(36).slice(2, 10)}`;
+}
+
+export function createLocalRunTaskSpecId({
+  batchId,
+  batchIndex,
+  now = Date.now,
+}: {
+  batchId: string;
+  batchIndex: number;
+  now?: () => number;
+}) {
+  return `spec-${batchId}-${batchIndex}-${now()}`;
 }
 
 export async function buildJobAssets({
@@ -81,27 +97,27 @@ export async function buildJobAssets({
   inputImage,
 }: {
   config: ImageGenerationConfig;
-  inputImage?: RunLocalGenerationOptions["inputImage"];
+  inputImage?: RunLocalGenerationOptions['inputImage'];
 }): Promise<GenerationTaskAssetRef[]> {
   const assets: GenerationTaskAssetRef[] = [];
   const isEditMode = Boolean(inputImage);
 
   if (inputImage) {
     assets.push({
-      role: "input",
-      name: "input-image.png",
+      role: 'input',
+      name: 'input-image.png',
       dataUrl: await toGenerationDataUrl(inputImage.src),
       strength: 1,
     });
   }
 
   const queuedAttachments = isEditMode
-    ? config.attachments.filter((attachment) => attachment.id.startsWith("mask-"))
+    ? config.attachments.filter((attachment) => attachment.id.startsWith('mask-'))
     : config.attachments;
 
   for (const attachment of queuedAttachments) {
     assets.push({
-      role: attachment.id.startsWith("mask-") ? "mask" : "reference",
+      role: attachment.id.startsWith('mask-') ? 'mask' : 'reference',
       name: attachment.name,
       dataUrl: attachment.dataUrl,
       strength: attachment.strength,
@@ -115,8 +131,8 @@ export function buildLocalGenerationTaskPrompt({
   config,
   inputImage,
 }: {
-  config: Pick<ImageGenerationConfig, "prompt" | "attachments" | "recipeId">;
-  inputImage?: RunLocalGenerationOptions["inputImage"];
+  config: Pick<ImageGenerationConfig, 'prompt' | 'attachments' | 'recipeId'>;
+  inputImage?: RunLocalGenerationOptions['inputImage'];
 }) {
   const editPrompt = inputImage?.prompt?.trim();
   if (editPrompt) return editPrompt;
@@ -125,12 +141,12 @@ export function buildLocalGenerationTaskPrompt({
   if (prompt) return prompt;
 
   if (config.attachments.length > 0) {
-    return config.recipeId === "styles"
-      ? "Apply the selected style using the provided reference image."
-      : "Generate from the provided reference image.";
+    return config.recipeId === 'styles'
+      ? 'Apply the selected style using the provided reference image.'
+      : 'Generate from the provided reference image.';
   }
 
-  return "Generate a high-quality image.";
+  return 'Generate a high-quality image.';
 }
 
 /**
@@ -144,7 +160,7 @@ export async function runSingleCodexImagegenJob(options: {
   batchCount: number;
   workspaceId: string;
   providerId: GenerationProviderId;
-  inputImage?: RunLocalGenerationOptions["inputImage"];
+  inputImage?: RunLocalGenerationOptions['inputImage'];
   stream?: StudioEventStream;
   signal?: AbortSignal;
   onJobCreated?: (job: StudioJob) => void;
@@ -152,6 +168,7 @@ export async function runSingleCodexImagegenJob(options: {
 }) {
   const {
     config,
+    batchId,
     batchIndex,
     batchCount,
     workspaceId,
@@ -174,9 +191,9 @@ export async function runSingleCodexImagegenJob(options: {
         variationKey,
       });
   const sourceSpec = buildGenerationTaskSpecFromRecipe({
-    id: `${batchId}-${Date.now()}`,
+    id: createLocalRunTaskSpecId({ batchId, batchIndex }),
     providerId,
-    task: inputImage ? "image_edit" : undefined,
+    task: inputImage ? 'image_edit' : undefined,
     config: {
       ...config,
       prompt: taskPrompt,
@@ -202,7 +219,7 @@ export async function runSingleCodexImagegenJob(options: {
     execution: {
       model: config.executionModel,
       reasoningEffort: config.executionReasoningEffort,
-      serviceTier: config.executionSpeed === "standard" ? null : config.executionSpeed,
+      serviceTier: config.executionSpeed === 'standard' ? null : config.executionSpeed,
     },
     references: requestAssets.flatMap((asset) =>
       asset.dataUrl
@@ -269,7 +286,7 @@ export async function runLocalGeneration({
       settings,
     });
     const resolvedConfig = resolveGenerationConfig(config);
-    const batchId = `${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
+    const batchId = createLocalRunBatchId();
     const batchCount = inputImage ? 1 : resolvedConfig.batchCount || 1;
     const batchImages: GeneratedImage[] = [];
     let lastError: Error | null = null;
@@ -303,7 +320,7 @@ export async function runLocalGeneration({
 
     if (batchImages.length === 0) {
       if (lastError) throw lastError;
-      throw new Error("No assets were synthesized. Please check your prompt or context.");
+      throw new Error('No assets were synthesized. Please check your prompt or context.');
     }
 
     return {
@@ -326,21 +343,21 @@ export async function runLocalGenerationWithLifecycle(
   try {
     const result = await runLocalGeneration(options);
     return {
-      status: "completed",
+      status: 'completed',
       result,
       durationMs: Date.now() - startedAt,
     };
   } catch (error) {
     if (isGenerationCancellationError(error)) {
       return {
-        status: "cancelled",
+        status: 'cancelled',
         message: error instanceof Error ? error.message : String(error),
         durationMs: Date.now() - startedAt,
       };
     }
 
     return {
-      status: "failed",
+      status: 'failed',
       message: error instanceof Error ? error.message : String(error),
       durationMs: Date.now() - startedAt,
     };

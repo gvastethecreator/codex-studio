@@ -3,19 +3,23 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_05/modern-shonen-and-action-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_05/modern-shonen-and-action-1').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_05/mecha-and-cyberpunk-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_05/isekai-and-high-fantasy-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_05/dark-fantasy-and-seinen-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_05/isekai-and-high-fantasy-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_05/dark-fantasy-and-seinen-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_05/action-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: "pack_05",
-    name: "Anime 01 — Anime Battle & Worlds",
-    description: "High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.",
+    id: 'pack_05',
+    name: 'Anime 01 — Anime Battle & Worlds',
+    description:
+      'High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.',
     presets: categoryPresets.flat(),
   };
 }

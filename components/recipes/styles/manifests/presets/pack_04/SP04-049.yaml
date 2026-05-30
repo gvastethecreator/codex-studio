@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Game level art
-  form_and_line: Perspective grid
+  aesthetic: Environment concept-development style with mood-led worldbuilding, navigable composition logic, and place-first visual storytelling
+  form_and_line: Perspective-grid anchored block design with readable silhouette layering and path-guided spatial rhythm
   color_palette: Atmospheric, mood-grade spectrum, location-feel depth
   lighting_setup: Key light, dramatic spotlight, environmental storytelling
   material_texture: Painted
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Adventure, place, exploration wonder, threshold excitement
   key_features: Scale figure, perspective grid, environmental storytelling
-  creative_brief: Atmosphere builds the world before architecture arrives, light establishing the emotional climate of a place that does not yet exist. Scale hints through doorway silhouettes and distant mountain passes, inviting exploration. This is the threshold of adventure, where the environment itself extends a hand toward the player.
+  creative_brief: >-
+    Define identity through environment-concept grammar: atmospheric depth,
+    scale cues, and exploration-forward composition should carry the style
+    without binding it to one specific level narrative.
 avoidRules:
   - character focus
 assets:

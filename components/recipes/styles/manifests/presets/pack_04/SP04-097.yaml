@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: 24-frame-composition-thumbnail-grid, storyboard-composition-planning, camera-angle-exploration-for-sequence, Hitchcock-shot-list-energy, wide-medium-closeup-extreme-closeup-progression, high-angle-low-angle-dutch-tilt-variety, film-sequence-shot-design, composition-rhythm-across-scene, golden-ratio-rule-of-thirds-grid-overlay
-  form_and_line: Thumbnail-loose-value-sketching, simple-shape-composition, camera-angle-construction-lines, perspective-grid- underlays, framing-device-annotations, directional-arrow-for-camera-movement
-  color_palette: Greyscale-value-thumbnails, single-wash-tone, warm-key-vs-cool-key scenes, black-marker-for-foreground, white-for-negative-space, no-color-distraction
-  lighting_setup: Value-lighting-only, key-light-direction-per-thumbnail, silhouette-vs-lit-comparison, shadow-shape-emphasis, atmospheric-value depth
-  material_texture: Marker-wash-thumbnail-texture, pencil-construction-lines, digital-canvas-grid-texture, loose-brush-blocking, thumbnail-scale-small-surface
-  render_quality: Composition-thumbnail-grid aesthetic, film-shot-design, storyboard-planning-beauty, Hitchcock-ian-composition study, camera-language reference
-  spatial_distortion: 24-frame-grid-layout, shot-progression-across-time, camera-angle-comparison, perspective-variation-per-frame, depth-compression-closeup-vs-wide
-  atmosphere: Analytical, pre-production, director's-viewfinder, story-planning-excitement, Hitchcock-suspense-through-composition, visual-storytelling-method
-  key_features: 24-frame-composition-grid, camera-angle-variety, shot-size-progression, perspective-grid-underlay, value-thumbnail-technique, Hitchcock-shot-list-energy, golden-ratio-overlay, directional-arrow-annotations
-  creative_brief: Twenty-four frames arrange themselves in a grid of cinematic intention, camera angles mapping the emotional terrain of a scene that has not yet been shot. Wide shots establish, close-ups interrogate, Dutch angles destabilize. This is the film existing first as composition, where every frame decision is a directorial choice rendered in thumbnail.
+  aesthetic: Composition thumbnail grid for shot-language exploration (Alfred Hitchcock-inspired camera grammar)
+  form_and_line: Loose value thumbnails with framing guides and camera-angle markers
+  color_palette: Predominantly grayscale with optional restrained warm/cool key differentiation
+  lighting_setup: Per-frame key direction studies using simple value grouping
+  material_texture: Marker/pencil roughness retained for planning immediacy
+  render_quality: Previsualization-grade roughs prioritizing sequence rhythm over polish
+  spatial_distortion: Multi-panel grid enabling rapid comparison of lens/angle/depth setups
+  atmosphere: Analytical, cinematic, pre-production momentum
+  key_features: Shot-size variety, perspective alternation, compositional cadence mapping
+  creative_brief: >-
+    Plan visual storytelling through rapid compositional permutations. Keep each frame simple but intention-rich, focusing on camera placement, value hierarchy, and staging rhythm so sequence readability and emotional pacing can be evaluated before final rendering, with Alfred Hitchcock-style suspense-oriented framing discipline.
 avoidRules:
   - rendered
   - polished

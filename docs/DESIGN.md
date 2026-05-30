@@ -1,46 +1,42 @@
-# Design and UX System
+# Sistema de diseño y UX
 
-## 1. Design philosophy
+## Objetivo
 
-Codex Studio is a professional creative tool. It takes cues from video editors, DAWs, game engines, and local developer tools: dense, precise, task-oriented, and dark by default so generated images stay visually dominant.
+Codex Studio debe sentirse como una herramienta creativa profesional: precisa, técnica y orientada a tareas, sin sacrificar claridad para usuarios nuevos.
 
-The interface should feel technical without becoming hostile. New users should understand what is ready, what is blocked, and what action to take next.
+## Principios
 
-## 2. Color palette
+- Claridad antes que adorno.
+- Estado del sistema visible y accionable.
+- Consistencia de vocabulario en toda la UI.
 
-- **Main background:** near-black and very dark zinc neutrals.
-- **Surfaces:** subtle translucent panels with restrained borders. Avoid decorative glassmorphism.
-- **Primary accent:** emerald/accent tones for generation and ready states.
-- **Danger:** red tones for destructive operations.
-- **Info:** blue/cyan tones for metrics, usage, and diagnostics.
-- **Text:** high-contrast foreground text, with zinc grays for secondary labels and metadata.
+## Paleta
 
-Use color as state and hierarchy, not decoration. Inactive surfaces should stay restrained.
+- Fondo principal oscuro (near-black/zinc).
+- Superficies sobrias, sin glassmorphism decorativo.
+- Acento para estados de generación/listo.
+- Semántica de color clara para peligro/info.
 
-## 3. Typography
+## Tipografía
 
-- **General UI:** system sans or Inter-like sans-serif.
-- **Technical data:** JetBrains Mono or similar monospace for IDs, ports, tokens, logs, and runtime details.
-- **Hierarchy:** compact uppercase labels with wide tracking are acceptable for metadata, but body copy should remain readable and direct.
+- Sans legible para UI general.
+- Monoespaciada para datos técnicos (IDs, puertos, logs).
 
-## 4. Motion
+## Motion
 
-- The project uses **GSAP** for React animation and local compatibility helpers.
-- Use the View Transitions API for full-screen or image-grid transitions when it improves continuity.
-- Keep most UI motion in the 150-250 ms range.
-- Animate state changes, reveals, loading, and feedback. Avoid purely decorative choreography.
-- Prefer transforms and opacity. Do not animate layout properties.
+- GSAP como estándar.
+- Duraciones típicas 150–250 ms.
+- Animar estado/revelado/feedback; no “animación por animar”.
+- Priorizar `transform` y `opacity`.
 
-## 5. Interaction model
+## Interacción
 
-- Global drag and drop supports reference image input.
-- Keyboard shortcuts include carousel navigation, `Escape` to close modals, and spacebar comparison where available.
-- Toasts provide non-blocking success/failure feedback.
-- Destructive actions should explain exactly what will be removed, what remains, and how recovery works.
+- Drag & drop global para referencias.
+- Atajos útiles (`Escape`, navegación de carrusel, comparación).
+- Confirmaciones destructivas con impacto y recuperación explicados.
 
-## 6. Open-source presentation goals
+## Meta open-source
 
-- Copy should be clear to a first-time user who does not know the repo history.
-- Diagnostics should name the blocked subsystem and suggest the next action.
-- Empty states should teach the workflow instead of merely saying that nothing exists.
-- Keep component vocabulary consistent across toolbar, panels, modals, and settings.
+- Copy comprensible para quien llega por primera vez.
+- Empty states que enseñen el siguiente paso.
+- Diagnósticos que indiquen bloqueo + acción recomendada.

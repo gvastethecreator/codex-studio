@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Item focus
-  form_and_line: Clean
+  aesthetic: Prop-design presentation style with isolated artifact focus, material storytelling, and game-ready readability
+  form_and_line: Clean technical-art contouring with form-break accents, silhouette-first readability, and callout-friendly structure
   color_palette: Material render, PBR-reference, asset-library spectrum
   lighting_setup: Studio, product-isolation light, neutral-pedestal
   material_texture: Wear and tear
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Valuable, useful, item-card significance, inventory worth
   key_features: Isolated, orthographic view, material breakdown
-  creative_brief: 'The object floats in neutral space, every detail rendered with the attention an artifact deserves. Materials declare themselves: weathered leather, polished metal, carved wood, each surface a different chapter of the item''s imagined history. This is the prop as treasure, isolated and elevated by the spotlight of design focus.'
+  creative_brief: >-
+    Define this preset through prop-sheet grammar: isolated presentation,
+    material-history cues, and utility-read composition should carry identity
+    beyond one specific item lore.
 avoidRules:
   - background
 assets:

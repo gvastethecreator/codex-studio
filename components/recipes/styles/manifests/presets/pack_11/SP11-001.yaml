@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - toys-and-miniatures
 visualDna:
-  aesthetic: Scene built entirely from LEGO toy bricks, ABS-plastic diorama, brick-for-brick construction, snap-together storytelling
-  form_and_line: Brick seams, studs, interlocking grid, sharp-corner geometry
-  color_palette: Classic LEGO toy-brick primaries (Red, Blue, Yellow), bright-plastic spectrum, high-saturation glossy
-  lighting_setup: Glossy plastic reflection, studio key light, rim highlights, shallow depth of field
-  material_texture: ABS plastic, studs, injection-molded precision, glossy shell finish, clutch-power grip
-  render_quality: The LEGO Movie toy-brick stop-motion energy, everything-is-awesome kinetic, brick-built wonder
-  spatial_distortion: Blocky, minifigure proportions, cubic abstraction, top-stud resolution, snap-grid logic
-  atmosphere: Playful, creative, childhood, imaginative nostalgia, colorful joy, constructive wonder
-  key_features: Studs on top surfaces, tubular undersides, brick-seam shadows, minifigure scale
-  creative_brief: The world clicks together one stud at a time, every surface a testament to constructive imagination. Light glances across glossy ABS plastic as if the bricks themselves hum with readiness. Block by block, the ordinary rebuilds itself into the extraordinary.
+  aesthetic: Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful constructive energy
+  form_and_line: Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural rhythm
+  color_palette: High-saturation toy primaries with clean contrast blocks and glossy plastic-friendly hue separation
+  lighting_setup: Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability
+  material_texture: Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish
+  render_quality: Crisp toy-assembly rendering prioritizing modular legibility, geometric coherence, and playful engineered charm
+  spatial_distortion: Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial simplification
+  atmosphere: Playful, inventive, structured, nostalgic, constructive
+  key_features: Stud-grid grammar, modular seam legibility, toy-plastic gloss control, block-assembly composition logic
+  creative_brief: >-
+    Keep this preset defined by modular snap-assembly language and toy-plastic
+    material behavior, so brick-system readability remains the transferable core
+    beyond specific diorama scenes.
 avoidRules:
   - melted
   - smooth

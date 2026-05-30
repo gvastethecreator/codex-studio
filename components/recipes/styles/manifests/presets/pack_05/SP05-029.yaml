@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Explosive coming-of-age surrealism, abrupt style shifts, youthful emotional whiplash, baseball-bat girl, Vespa scooters, manga panel pop-ups, guitar smashes
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Wild, formative, rebellious, explosive
-  key_features: Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy
-  creative_brief: A Vespa tears through the fabric of suburban boredom as manga panels erupt from asphalt and guitars swing like battle-axes. Reality flickers wildly between animation styles — adolescence detonating in every chromatic burst, every speed-line fracture, every absurd cut that feels more honest than the real.
+  aesthetic: Adolescent kinetic-collage style with abrupt tonal pivots, rebellious surreal pop energy, and anti-linear visual rhythm
+  form_and_line: Mixed-grammar line states, impact-smear transitions, panel-break overlays, elastic contour interruptions, intentionally uneven stroke cadence
+  color_palette: Hyper-saturated primaries colliding with acidic neons, abrupt pastel inversions, high-chroma bursts against muted reset zones
+  lighting_setup: Rapid contrast switches, flash-frame highlights, intentional exposure jumps, and graphic shadow snapping between beats
+  material_texture: Hybrid cel-polish with manga halftone inserts, rough print fragments, and controlled noise patches for collage friction
+  render_quality: Experimental early-digital anime treatment favoring stylistic rupture, energetic readability, and emotionally volatile transitions
+  spatial_distortion: Perspective ruptures, jump-cut framing logic, and composition resets that mimic impulsive developmental turbulence
+  atmosphere: Restless, rebellious, volatile, cathartic, raw
+  key_features: Multi-style collision grammar, panel-break kinetics, chroma whiplash, anti-linear composition pacing
+  creative_brief: >-
+    Keep this preset defined by abrupt stylistic modulation and collage-like
+    motion logic, turning emotional volatility into a transferable visual system
+    rather than a specific coming-of-age scene.
 avoidRules:
   - realistic
   - 3d render

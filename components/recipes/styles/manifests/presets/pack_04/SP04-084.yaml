@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Surface-study concept art, material-callout swatches around a design, leather next to metal next to fabric material comparison, RPG-item material breakdown, callout-lines to material type labels, texture-library exploration, rendering different surfaces exercise, prop-design material pass
-  form_and_line: Callout-leader lines from design to swatches, clean design contours, swatch-grid separation, annotation arrows, technical-drawing precision
-  color_palette: Material-accurate colors, leather brown, steel grey, brass gold, fabric cream, wood grain, glass clear, gem-facet sparkle, each material its own color world
-  lighting_setup: Consistent studio lighting across all swatches for comparison, specular highlight on metals, matte on fabrics, translucent on glass
-  material_texture: Leather grain close-up, metal-brushed surface, fabric weave macro, wood-end-grain, gem-facet refraction, rust-patina edge
-  render_quality: Material-study concept sheet, texture-library reference, production-ready surface breakdown, prop-design specification
-  spatial_distortion: Swatch-grid orthogonal layout, magnified-detail callout circles, annotation-leader lines, exploded-material separation
-  atmosphere: Analytical, educational, production-practical, designer-reference, texture-obsession
-  key_features: Callout lines to material swatches, magnified detail circles, annotation labels per material, comparison-grid layout, texture-macro insets
-  creative_brief: Material swatches orbit the design like scientific samples, each surface a different thesis about texture and time. Leather sits next to metal next to fabric, the contrast between them telling the story of the object's construction. This is the prop as material essay, where what something is made of defines what it can become.
+  aesthetic: Material-study board integrating design sketch and comparative swatches
+  form_and_line: Precise contour drawing with leader-line callouts and inset annotations
+  color_palette: Material-true hues organized by functional group
+  lighting_setup: Consistent neutral studio lighting for cross-material comparison
+  material_texture: Macro texture insets (grain, weave, brushed metal, translucency, patina)
+  render_quality: Technical-art hybrid sheet optimized for readability and handoff
+  spatial_distortion: Orthogonal layout with magnified callout circles and structured grid spacing
+  atmosphere: Analytical, didactic, workshop-reference clarity
+  key_features: Swatch matrix, labeled material zones, detail zooms, controlled comparison framework
+  creative_brief: >-
+    Present surface behavior as a system, not decoration. Pair a clean base design with labeled texture and finish callouts so each material choice is legible, comparable, and production-actionable across multiple manufacturing or rendering interpretations.
 avoidRules:
   - uniform
   - single material

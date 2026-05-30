@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Game interface
-  form_and_line: Thin tech lines
+  aesthetic: Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration
+  form_and_line: Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic structure
   color_palette: Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast
   lighting_setup: Glow, emissive interface, screen-space radiance
   material_texture: Screen
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Tech, info, augmented awareness, mission-ops focus
   key_features: Floating, thin rule-lines, data readout
-  creative_brief: Information floats above the world in clean vectors, health bars and ammo counters forming a translucent layer between player and peril. Diegetic elements embed themselves in the game world, screens within screens, data made physical. This is the interface as architecture, where function wears the skin of fiction.
+  creative_brief: >-
+    Keep this preset defined by HUD grammar: translucent data layering,
+    diegetic readouts, and functional vector hierarchy should carry identity
+    beyond any single mission UI layout.
 avoidRules:
   - organic
   - messy

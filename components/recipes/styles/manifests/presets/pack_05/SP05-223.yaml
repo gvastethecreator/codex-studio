@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Night-city women in armored suits, synth neon, biker cool, corporate conspiracies, 80s cyber-noir glamour with hard-chrome aggression
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Glossy, dangerous, neon, rebellious
-  key_features: Power-suit silhouettes, neon skyline reflections, biker fashion accents, corporate high-rise staging, chase-scene motion
-  creative_brief: Chrome limbs catch neon like liquid code as armored women tear through corporate towers on a mission with no backup and no compromise. The city sweats synthwave and oil, every puddle reflecting a different shade of conspiracy. Power suits gleam not just with polish but with the anger of those who built their own armor.
+  aesthetic: Retro cyber-noir anime armor style with aggressive chrome femininity, analog-tech glamour, and precision mechanical elegance
+  form_and_line: Hard contour inking, segmented armor seam logic, angular silhouette blocking, technical hatch accents, high-clarity line discipline
+  color_palette: Acid cyan-magenta duality, graphite neutrals, electric violet sparks, cold steel midtones, selective hot-pink highlights
+  lighting_setup: High-contrast practical glow with hard rim separation, tube-light specular streaks, and controlled reflective bounce
+  material_texture: Brushed alloy plates, high-gloss polymer inserts, carbon weave panels, clean mechatronic seams, mirrored trim flashes
+  render_quality: Premium cel-anime mecha finish with dense micro-detail, crisp compositing, and polished techno-surface readability
+  spatial_distortion: Dynamic foreshortening with engineered silhouette priority, diagonal velocity framing, technical depth layering
+  atmosphere: Sleek, high-voltage, assertive, dangerous, stylishly militant
+  key_features: Exosuit silhouette grammar, segmented armor articulation, specular edge choreography, neon-metal contrast, precision mechanical ornament
+  creative_brief: >-
+    Preserve a signature of armored cyber-noir elegance: the preset should read
+    through line discipline, material contrast, and chromatic voltage rather
+    than any fixed narrative setting.
 avoidRules:
   - realistic
   - 3d render

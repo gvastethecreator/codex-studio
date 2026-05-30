@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Fashion-forward heartbreak, black eyeliner, music-scene intimacy, urban cool, punk band visuals, star-crossed tragedy, manga-panel layout, denim-and-leather style
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
-  atmosphere: Raw, glamorous, intense, stylish
-  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
-  creative_brief: Guitar feedback hums beneath the surface of every panel, black eyeliner tracing the fault lines where love and ambition collide in denim-and-leather intimacy. Two women orbit each other like twin stars burning at opposite ends of the same dream — glamorous wreckage illuminated by the glow of a stage that promised everything.
+  aesthetic: Punk-romance editorial anime style balancing glam abrasion, emotional proximity, and music-scene intimacy without fixed narrative casting
+  form_and_line: Delicate facial line economy paired with sharper fashion-edge accents, expressive eye architecture, and panel-like compositional rhythm
+  color_palette: Muted rose-violet base, charcoal cosmetic contrasts, selective crimson highlights, soft metallic accents, low-saturation skin warmth
+  lighting_setup: Stage-adjacent soft bloom with directional rim glints, moody fill shadows, and selective halation around focal expressions
+  material_texture: Denim grain, leather sheen, smudged cosmetic surfaces, soft textile overlays, subtle print-poster patina
+  render_quality: High-polish shojo-drama render with editorial styling precision, emotional close-up clarity, and cinematic tonal restraint
+  spatial_distortion: Intimate framing compression with elegant elongation and gesture-led depth cues to emphasize relational tension
+  atmosphere: Intimate, aching, stylish, magnetic, bittersweet
+  key_features: Fashion-emotion coupling, eyeliner contrast language, music-scene visual cadence, close-range expressive dramaturgy
+  creative_brief: >-
+    Define the preset through glam-punk material contrast and emotionally
+    charged portrait staging; preserve the tension between tenderness and edge
+    as a transferable visual language.
 avoidRules:
   - realistic
   - 3d render

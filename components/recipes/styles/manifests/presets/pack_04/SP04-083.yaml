@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: 30-second gesture drawing, pure motion capture, dynamic sweeping lines, figure-in-action energy, life-drawing studio urgency, Glen Keane animation roughs, flowing kinetic scribbles, pose-before-anatomy priority, capturing the moment not the form
-  form_and_line: Sweeping gesture arcs, repeated motion-search lines, scribble-density for mass, fast single-stroke confidence, no erasing no correction
-  color_palette: Single graphite tone, ochre conte crayon, charcoal black, newsprint buff background, no color distraction from motion
-  lighting_setup: Implied through scribble density and line pressure, no rendered lighting, value-from-urgency technique
-  material_texture: Rough newsprint tooth, graphite smudge trail, chalk-dust particulate, gesture-line velocity texture
-  render_quality: Figure-drawing studio sketch, motion-capture aesthetic, animation-rough beauty, kinetic-energy rendering
-  spatial_distortion: Action-line curvature, foreshortened gesture exaggeration, motion-trail afterimages, dynamic-tension pose compression
-  atmosphere: Urgent, alive, fleeting-capture, creative-flow state, pure-motion celebration
-  key_features: Sweeping gesture arcs, multiple search-lines, scribble-density value, no correction marks, pure-motion energy
-  creative_brief: Lines chase motion across the page with the urgency of a stopwatch, capturing the gesture before the pose can settle. The figure exists in pure velocity, anatomy subordinate to action, form emerging from flow. This is the life-drawing studio at its most alive, where the model moves faster than the eye and the hand learns to trust itself.
+  aesthetic: Kinetic gesture sketch language with motion-first drawing priority (Glen Keane-inspired animation rough energy)
+  form_and_line: Long sweeping arcs, repeated search lines, pressure-led scribble massing
+  color_palette: Monochrome drawing media on warm paper base
+  lighting_setup: Value implied by stroke density rather than rendered light
+  material_texture: Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup
+  render_quality: Loose and energetic draft quality emphasizing movement over finish
+  spatial_distortion: Dynamic foreshortening and action-curve exaggeration
+  atmosphere: Urgent, alive, improvisational studio energy
+  key_features: Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail
+  creative_brief: >-
+    Capture action and weight flow in the minimum number of decisive marks. Allow overlap, correction traces, and density shifts to remain visible so the drawing records movement intent, not polished anatomy, while still preserving readable pose dynamics in a Glen Keane-inspired gestural spirit.
 avoidRules:
   - tight
   - clean

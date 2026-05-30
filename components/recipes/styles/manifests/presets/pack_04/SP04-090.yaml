@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Prop-variant exploration sheet, iterative-object design comparison, material-breakout detail circles, scale-reference silhouette, RPG-item tier progression, common-to-legendary upgrade path, functional-part callouts, grip-ergonomic note, designer-decision documentation
-  form_and_line: Clean design-drawing contours, variant-comparison alignment, material-callout leader lines, ergonomic-arc construction, orthographic side-view precision
-  color_palette: Material-specific colors, wood-handle brown, steel-blade grey, bronze-fitting gold, leather-wrap dark, gem-inset jewel tones, tier-progression color coding
-  lighting_setup: Consistent studio light for comparison, metallic-specular highlight, subsurface on translucent gems, matte-diffuse on wood
-  material_texture: Wood-grain variation, metal-brushed directional, leather-stitching detail, gem-facet refraction, rust-wear edge patina
-  render_quality: Prop-design variant sheet, iterative-object exploration, material-breakdown rendering, production-reference specification
-  spatial_distortion: Orthographic side-view alignment, variant-row comparison, detail-circle magnification, scale-reference figure, exploded-part disassembly
-  atmosphere: Methodical, iterative, design-problem-solving, craftsperson precision, production-clarity
-  key_features: Variant-row comparison, material-callout circles, scale-reference silhouette, tier-progression layout, exploded-part views
-  creative_brief: Variants array themselves in evolutionary sequence, the rusted common weapon ascending through material upgrades toward legendary radiance. Each iteration tells the story of the player's journey through the object itself. This is design as progression system, where the sword that saved you at level one becomes the artifact that defines you at level ninety.
+  aesthetic: Prop-variant design sheet with progression and function-first comparison
+  form_and_line: Clean orthographic contours, aligned variant rows, leader-line annotations
+  color_palette: Material-coded neutrals with restrained accent hierarchy for tier differentiation
+  lighting_setup: Standardized neutral lighting to preserve apples-to-apples comparison
+  material_texture: Controlled finish studies (grain, brushed metal, wrap, wear, inset materials)
+  render_quality: Production-oriented iterative sheet balancing readability and specificity
+  spatial_distortion: Grid-aligned side views with detail magnification and exploded subsets
+  atmosphere: Methodical, engineering-aware, iterative craft discipline
+  key_features: Variant taxonomy, functional callouts, scale references, modular part breakdown
+  creative_brief: >-
+    Compare multiple prop directions within a consistent visual framework. Emphasize functional differences, material behavior, and assembly logic so design decisions can be evaluated quickly across tiers while maintaining clear handoff value for downstream modeling and illustration.
 avoidRules:
   - one version
   - single design

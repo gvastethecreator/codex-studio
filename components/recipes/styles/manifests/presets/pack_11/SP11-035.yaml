@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear
   atmosphere: Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread
   key_features: Heat glow, temperature-scale bar, crosshair-reticle, hot-spot bloom, cold-background contrast
-  creative_brief: Heat blooms in rainbow signatures against the cold indifference of the infrared void, bodies announcing themselves by the warmth they radiate. Sensor-speckle noise textures the thermal image with the grain of electronic vision, hot-pixel artifacts dotting the predator's view. The world remapped into a topography of temperature where hiding is made impossible by the physics of emission.
+  creative_brief: >-
+    Preserve this preset through thermal-imaging grammar: emissive heat maps,
+    false-color temperature bands, sensor-noise artifacts, and blob-based
+    isotherm contours should define identity beyond tactical hunt narratives.
 avoidRules:
   - natural colors
 assets:

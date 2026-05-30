@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Skeleton visible, interior-revelation, nested-anatomy transparency, bone-stacked projection
   atmosphere: Scientific, raw, clinical-mortality, hospital-quiet, body-interior mystery
   key_features: Bones, joint-space gaps, dental-filling artifacts, fracture-line shadows, trabecular-bone grain
-  creative_brief: Bones float in negative space like a secret architecture revealed beneath the soft tissue of the visible, density mapping onto grey gradients. Joint-space gaps separate the body's framework into its component pieces, the interior made exterior through penetrating light. Mortality rendered in clinical monochrome, a radiograph portrait that sees through pretense to the structure beneath.
+  creative_brief: >-
+    Define identity through radiograph grammar: density-layer projection,
+    monochrome transmission mapping, and skeletal contrast hierarchy should
+    carry the style beyond one clinical narrative frame.
 avoidRules:
   - skin
   - color

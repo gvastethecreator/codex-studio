@@ -12,7 +12,7 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Classic university library, gothic-campus romance, candlelit scholarship, Oxford-common-room
+  aesthetic: Gothic scholarly interior style with candlelit intellectual mood, archival intimacy, and old-world academic romance
   form_and_line: Detailed, gothic, arch-window contours, columnar rhythm, ornate typography
   color_palette: Brown, Tweed, Black, Gold, mahogany-warm, oxblood-leather, brass-fixture shimmer, parchment-cream
   lighting_setup: Candlelight, dim, desk-lamp pool, fireplace flicker, window-shaft dust-mote drama
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None, towering bookshelf compression, vaulted-ceiling vertigo, cloistered intimacy
   atmosphere: Serious, studious, mysterious, rain-on-glass melancholy, ancient-knowledge reverence, midnight revelation
   key_features: Books and coffee, quill-and-inkwell, brass reading lamps, leather-bound stacks
-  creative_brief: Candlelight pools on mahogany where leather-bound centuries whisper their secrets to the lone scholar at midnight. Dust motes drift through the window-shaft like suspended thought, illuminating the eternal October of the vaulted reading room. Knowledge darkens into mystery in the gothic hour between sunset and revelation, coffee growing cold beside the open manuscript.
+  creative_brief: >-
+    Preserve identity through gothic-academic atmosphere grammar: mahogany,
+    leather, dust-lit shafts, and candle-warm chiaroscuro should carry the
+    preset without tying it to one specific institution or room.
 avoidRules:
   - bright
   - modern

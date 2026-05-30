@@ -4,129 +4,182 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP07-044",
-    "name": "Urban Park (High Line)",
-    "category": "4. Landscape And Gardens",
-    "negativePrompt": "wild forest",
-    "style": {
-      "aesthetic": "City green space, elevated oasis, urban-meadow, infrastructure-to-garden, railway-bloom",
-      "form_and_line": "Concrete paths, linear-meander, rail-track planting lines, overlook platforms, bridge-span views",
-      "color_palette": "Concrete, Grass, Rust, Corten steel orange, Prairie-flower Yellow, Skyline Grey",
-      "lighting_setup": "City sun, building-reflected glow, street-lamp pools, sunset-skyline silhouette",
-      "material_texture": "Steel, plants, weathered wood, gravel path, ornamental grasses, raw concrete plank",
-      "render_quality": "Modern, public, post-industrial poetry, green-infrastructure, urban-ecology beauty",
-      "spatial_distortion": "None",
-      "atmosphere": "Relaxed, urban, elevated, strolling, above-the-street, collective breathing space",
-      "key_features": "Bench, planted rail tracks, city overlook, concrete planks, native grasses, public art",
-      "creative_brief": "Railway tracks become planting beds, industrial ghosts dressed in native grasses and autumn seed heads. Concrete planks stretch above street grid, a ribbon of green where New Yorkers remember what dirt smells like. The High Line stitches abandoned infrastructure into the living fabric of a city that forgot to look up."
-    }
+    id: 'SP07-044',
+    name: 'Urban Park (High Line)',
+    category: '4. Landscape And Gardens',
+    negativePrompt: 'wild forest',
+    style: {
+      aesthetic:
+        'Post-industrial ecological promenade style blending infrastructural linearity with softened native planting systems',
+      form_and_line:
+        'Longitudinal circulation bands, alternating hardscape-softscape strips, bench-block rhythm, articulated edge transitions',
+      color_palette:
+        'Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys',
+      lighting_setup:
+        'Diffuse late-day illumination with mild reflected fill and gentle luminance falloff across linear surfaces',
+      material_texture:
+        'Raw concrete grain, corten oxidation bloom, brushed steel edges, gravel fines, wind-responsive grasses, weathered timber inserts',
+      render_quality:
+        'Editorial-grade landscape architecture rendering with emphasis on material authenticity and ecological layering',
+      spatial_distortion:
+        'Compressed linear perspective supporting procession, depth through repeating modules, strong path legibility',
+      atmosphere:
+        'Civic, restorative, adaptive, contemporary, breathable, infrastructural yet humane',
+      key_features:
+        'Linear planting rails, modular seating planes, reclaimed-industrial texture palette, public-use readability, ecological succession cues',
+      creative_brief:
+        'Express adaptive-reuse landscape language as the core style: disciplined linear geometry, reclaimed materials, and ecological planting structure must define the preset independent of a specific city or landmark.',
+    },
   },
   {
-    "id": "SP07-041",
-    "name": "French Formal Garden",
-    "category": "4. Landscape And Gardens",
-    "negativePrompt": "wild, messy",
-    "style": {
-      "aesthetic": "Versailles grand formal palace garden, geometric power, royal symmetry",
-      "form_and_line": "Symmetry, patterns, axial vistas, parterre embroidery, reflecting-canal lines, avenue perspectives",
-      "color_palette": "Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone",
-      "lighting_setup": "Flat sun, axial-light drama, fountain-sparkle, golden-hour hedge wash, statue-silhouette",
-      "material_texture": "Manicured hedge, clipped boxwood, raked gravel, fountain stone, lead statue, grass parterre",
-      "render_quality": "Controlled, royal, ordered-nature, Le Notre geometry, garden-as-architecture, courtly perfection",
-      "spatial_distortion": "None",
-      "atmosphere": "Order, grand, absolute, orchestrated nature, king's gaze, tamed creation",
-      "key_features": "Topiary, reflecting pool, parterre de broderie, axial vista, fountain, statue, orangery",
-      "creative_brief": "Boxwood bends to geometry, nature disciplined into parterre embroidery that reads like green scripture from above. Reflecting pools double the sky, water turned to mirror that makes architecture believe it has a twin. The garden follows orders, every axis a line drawn by a king who mistook control for beauty."
-    }
+    id: 'SP07-041',
+    name: 'French Formal Garden',
+    category: '4. Landscape And Gardens',
+    negativePrompt: 'wild, messy',
+    style: {
+      aesthetic: 'Versailles grand formal palace garden, geometric power, royal symmetry',
+      form_and_line:
+        'Symmetry, patterns, axial vistas, parterre embroidery, reflecting-canal lines, avenue perspectives',
+      color_palette:
+        'Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone',
+      lighting_setup:
+        'Flat sun, axial-light drama, fountain-sparkle, golden-hour hedge wash, statue-silhouette',
+      material_texture:
+        'Manicured hedge, clipped boxwood, raked gravel, fountain stone, lead statue, grass parterre',
+      render_quality:
+        'Controlled, royal, ordered-nature, Le Notre geometry, garden-as-architecture, courtly perfection',
+      spatial_distortion: 'None',
+      atmosphere: "Order, grand, absolute, orchestrated nature, king's gaze, tamed creation",
+      key_features:
+        'Topiary, reflecting pool, parterre de broderie, axial vista, fountain, statue, orangery',
+      creative_brief:
+        'Boxwood bends to geometry, nature disciplined into parterre embroidery that reads like green scripture from above. Reflecting pools double the sky, water turned to mirror that makes architecture believe it has a twin. The garden follows orders, every axis a line drawn by a king who mistook control for beauty.',
+    },
   },
   {
-    "id": "SP07-043",
-    "name": "Zen Rock Garden",
-    "category": "4. Landscape And Gardens",
-    "negativePrompt": "plants, water",
-    "style": {
-      "aesthetic": "Raked gravel, karesansui poetry, dry-landscape meditation, stone-island sea, temple stillness",
-      "form_and_line": "Rake lines (circles), ripple patterns, island-composition, horizontal-plane geometry, moss-mound accents",
-      "color_palette": "Grey, White, Moss, Granite Black, Silver sand, Lichen Green",
-      "lighting_setup": "Shadows in grooves, low-angle raking light, temple-eave shade, early-morning crisp",
-      "material_texture": "Gravel, stone, crisp sand, weathered granite, velvet moss, crushed quartz",
-      "render_quality": "Meditative, dry, contemplative-minimal, mind-clearing, sand-grain perfection",
-      "spatial_distortion": "None",
-      "atmosphere": "Calm, focus, emptied-mind, stone-presence, raked-order, timeless sitting",
-      "key_features": "Rocks, raked gravel, ripple patterns, moss islands, boundary wall, no water",
-      "creative_brief": "Gravel raked into concentric ripples, stone islands floating on a sea of sand that has never known water. Each groove a moment of attention crystallized, the rake a brush that paints with absence and pattern. The garden asks nothing but that you sit, and in sitting, empty into its stillness."
-    }
+    id: 'SP07-043',
+    name: 'Zen Rock Garden',
+    category: '4. Landscape And Gardens',
+    negativePrompt: 'plants, water',
+    style: {
+      aesthetic:
+        'Raked gravel, karesansui poetry, dry-landscape meditation, stone-island sea, temple stillness',
+      form_and_line:
+        'Rake lines (circles), ripple patterns, island-composition, horizontal-plane geometry, moss-mound accents',
+      color_palette: 'Grey, White, Moss, Granite Black, Silver sand, Lichen Green',
+      lighting_setup:
+        'Shadows in grooves, low-angle raking light, temple-eave shade, early-morning crisp',
+      material_texture: 'Gravel, stone, crisp sand, weathered granite, velvet moss, crushed quartz',
+      render_quality:
+        'Meditative, dry, contemplative-minimal, mind-clearing, sand-grain perfection',
+      spatial_distortion: 'None',
+      atmosphere: 'Calm, focus, emptied-mind, stone-presence, raked-order, timeless sitting',
+      key_features: 'Rocks, raked gravel, ripple patterns, moss islands, boundary wall, no water',
+      creative_brief:
+        'Gravel raked into concentric ripples, stone islands floating on a sea of sand that has never known water. Each groove a moment of attention crystallized, the rake a brush that paints with absence and pattern. The garden asks nothing but that you sit, and in sitting, empty into its stillness.',
+    },
   },
   {
-    "id": "SP07-049",
-    "name": "Golf Course",
-    "category": "4. Landscape And Gardens",
-    "negativePrompt": "weeds, forest",
-    "style": {
-      "aesthetic": "Manicured lawn, designed landscape, green cathedral, Augusta perfection, sculpted fairway",
-      "form_and_line": "Rolling hills, bunker-sweep curves, tee-box rectangles, green-contour undulations, fairway ribbons",
-      "color_palette": "Vibrant Green, Sand, Sky Blue, Pinstripe Mow lines, Water-hazard Teal, Flag Yellow",
-      "lighting_setup": "Morning mist, low-angle fairway light, golden-hour green glow, dew-sparkle, shadow-bunker drama",
-      "material_texture": "Short grass, crisp turf, sand, water surface, flagstick, raked-bunker pattern",
-      "render_quality": "Artificial nature, rich, landscape-design perfection, tournament-ready, man-versus-nature beauty",
-      "spatial_distortion": "None",
-      "atmosphere": "Quiet, sport, exclusive, morning-fresh, focused-walk, manicured nature",
-      "key_features": "Sand trap, manicured green, pin flag, water hazard, fairway mow lines, white bunker edge",
-      "creative_brief": "Fairways sweep in manicured curves, grass cropped to precision that nature would never choose for itself. Sand traps carve bright wounds into green, hazards arranged like sculpture in a gallery for the sport of kings. Morning mist clings to water hazards, the landscape holding its breath before the first tee shot."
-    }
+    id: 'SP07-049',
+    name: 'Golf Course',
+    category: '4. Landscape And Gardens',
+    negativePrompt: 'weeds, forest',
+    style: {
+      aesthetic:
+        'Manicured lawn, designed landscape, green cathedral, Augusta perfection, sculpted fairway',
+      form_and_line:
+        'Rolling hills, bunker-sweep curves, tee-box rectangles, green-contour undulations, fairway ribbons',
+      color_palette:
+        'Vibrant Green, Sand, Sky Blue, Pinstripe Mow lines, Water-hazard Teal, Flag Yellow',
+      lighting_setup:
+        'Morning mist, low-angle fairway light, golden-hour green glow, dew-sparkle, shadow-bunker drama',
+      material_texture:
+        'Short grass, crisp turf, sand, water surface, flagstick, raked-bunker pattern',
+      render_quality:
+        'Artificial nature, rich, landscape-design perfection, tournament-ready, man-versus-nature beauty',
+      spatial_distortion: 'None',
+      atmosphere: 'Quiet, sport, exclusive, morning-fresh, focused-walk, manicured nature',
+      key_features:
+        'Sand trap, manicured green, pin flag, water hazard, fairway mow lines, white bunker edge',
+      creative_brief:
+        'Fairways sweep in manicured curves, grass cropped to precision that nature would never choose for itself. Sand traps carve bright wounds into green, hazards arranged like sculpture in a gallery for the sport of kings. Morning mist clings to water hazards, the landscape holding its breath before the first tee shot.',
+    },
   },
   {
-    "id": "SP07-045",
-    "name": "Desert Xeriscape",
-    "category": "4. Landscape And Gardens",
-    "negativePrompt": "lawn, wet",
-    "style": {
-      "aesthetic": "Cactus garden, arid sculpture, spiny landscape, survival beauty, textural desert",
-      "form_and_line": "Spikes, rosette geometry, vertical accent-columns, mounded clusters, gravel sweeps",
-      "color_palette": "Sage Green, Red Earth, Blue Agave, Golden Barrel, Ochre rock, Prickly-pear Magenta fruit",
-      "lighting_setup": "Hard sun, heat-shimmer, sunset-glow on spines, backlit-agave drama, starfield night",
-      "material_texture": "Rocks, succulents, decomposed granite, spiny skin, waxy cuticle, rusted steel edge",
-      "render_quality": "Sustainable, dry, arid-beauty, water-wise texture, desert-garden art",
-      "spatial_distortion": "None",
-      "atmosphere": "Hot, resilient, sun-forged, silent-survival, ancient-patience, desert-truth",
-      "key_features": "Succulents, agave rosettes, dry riverbed, golden barrel cacti, rusted steel, gravel mulch",
-      "creative_brief": "Agave blades catch late sun like green jewels sharpened by drought into weapon and sculpture simultaneously. Golden barrel cacti huddle in geological patience, each spine a tiny monument to survival without apology. The garden celebrates what thrives on neglect, beauty that asks for nothing but to be left alone."
-    }
+    id: 'SP07-045',
+    name: 'Desert Xeriscape',
+    category: '4. Landscape And Gardens',
+    negativePrompt: 'lawn, wet',
+    style: {
+      aesthetic: 'Cactus garden, arid sculpture, spiny landscape, survival beauty, textural desert',
+      form_and_line:
+        'Spikes, rosette geometry, vertical accent-columns, mounded clusters, gravel sweeps',
+      color_palette:
+        'Sage Green, Red Earth, Blue Agave, Golden Barrel, Ochre rock, Prickly-pear Magenta fruit',
+      lighting_setup:
+        'Hard sun, heat-shimmer, sunset-glow on spines, backlit-agave drama, starfield night',
+      material_texture:
+        'Rocks, succulents, decomposed granite, spiny skin, waxy cuticle, rusted steel edge',
+      render_quality: 'Sustainable, dry, arid-beauty, water-wise texture, desert-garden art',
+      spatial_distortion: 'None',
+      atmosphere: 'Hot, resilient, sun-forged, silent-survival, ancient-patience, desert-truth',
+      key_features:
+        'Succulents, agave rosettes, dry riverbed, golden barrel cacti, rusted steel, gravel mulch',
+      creative_brief:
+        'Agave blades catch late sun like green jewels sharpened by drought into weapon and sculpture simultaneously. Golden barrel cacti huddle in geological patience, each spine a tiny monument to survival without apology. The garden celebrates what thrives on neglect, beauty that asks for nothing but to be left alone.',
+    },
   },
   {
-    "id": "SP07-048",
-    "name": "Rooftop Garden",
-    "category": "4. Landscape And Gardens",
-    "negativePrompt": "ground level",
-    "style": {
-      "aesthetic": "City skyline view, urban aerie, high-rise garden escape, above-the-noise retreat, planted penthouse",
-      "form_and_line": "Railing, planter-grid, lounge-seating rectangle, pergola frame, hedge-row horizon",
-      "color_palette": "Green, Grey, Blue sky, Sunset Orange, Corten Rust, City-light Gold",
-      "lighting_setup": "Sunset, string-light canopy, fire-table glow, city-sparkle below, dusk-to-dark transition",
-      "material_texture": "Decking, pots, weathered ipe wood, zinc planter, outdoor fabric, gravel",
-      "render_quality": "Urban oasis, skyline-sanctuary, elevated-escape, city-balcony dream",
-      "spatial_distortion": "None",
-      "atmosphere": "Cool, escape, above-it-all, private-horizon, breeze, metropolitan quietude",
-      "key_features": "Skyline, railing edge, ipe deck, planter beds, fire pit, lounge seating, string lights",
-      "creative_brief": "Skyline spreads below like a scatter of diamonds on dark velvet, the city reduced to jewelry by altitude. String lights write temporary constellations above ipe decking still warm from departed sun. The garden levitates above urban noise, an island of soil that forgot it was supposed to be on the ground."
-    }
+    id: 'SP07-048',
+    name: 'Rooftop Garden',
+    category: '4. Landscape And Gardens',
+    negativePrompt: 'ground level',
+    style: {
+      aesthetic:
+        'Elevated biophilic-modern terrace style with calm geometric planting composition and hospitality-grade outdoor minimalism',
+      form_and_line:
+        'Linear planter modules, low horizontal furniture massing, thin-frame pergola rhythm, softened orthogonal hardscape',
+      color_palette:
+        'Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber highlights',
+      lighting_setup:
+        'Warm twilight gradient with soft practical point-lights and controlled low-contrast edge definition',
+      material_texture:
+        'Oiled hardwood decking, matte powder-coated metal, coarse aggregate gravel, woven exterior textile, brushed zinc planters',
+      render_quality:
+        'Premium landscape-architecture visualization finish with clean hierarchy, restrained bloom, and tactile material legibility',
+      spatial_distortion:
+        'Long-axis compositional pull with shallow vertical compression to preserve terrace layering and planting cadence',
+      atmosphere: 'Quiet, restorative, refined, breathable, contemplative, design-forward',
+      key_features:
+        'Modular planting bands, warm deck planes, integrated ambient lighting, low-profile lounge geometry, material contrast between greenery and hardscape',
+      creative_brief:
+        'Keep the preset anchored in biophilic terrace language: structured planting rhythm, restrained luxury materials, and atmospheric calm should carry the identity without depending on any specific location narrative.',
+    },
   },
   {
-    "id": "SP07-055",
-    "name": "Candy Kingdom",
-    "category": "4. Landscape And Gardens",
-    "negativePrompt": "scary, realistic",
-    "style": {
-      "aesthetic": "Edible architecture, confectionery city, sugar-frosted fantasy, dessert landscape, gumdrop wonderland",
-      "form_and_line": "Rounded soft, lollipop colonnades, icing-scallop trim, gumdrop spires, chocolate-bar block",
-      "color_palette": "Pink, Pastel, Candy-apple Red, Gumdrop Green, Marshmallow White, Licorice Black",
-      "lighting_setup": "Soft sugar glow, candy-store warm, frosting-sparkle, gumdrop-translucent, sugar-crystal shimmer",
-      "material_texture": "Frosting, cake, hard candy shell, marshmallow, wafer, spun-sugar web, chocolate drip",
-      "render_quality": "Cute, delicious, Willy-Wonka dream, sugar-rush beauty, confectionery perfection, edible fantasy",
-      "spatial_distortion": "Melting",
-      "atmosphere": "Sweet, fun, candy-store joy, whimsical, sugar-high delight, childhood wonder",
-      "key_features": "Sprinkles, gumdrop path, icing trim, candy-cane columns, chocolate river, lollipop trees, gingerbread walls",
-      "creative_brief": "Gumdrop spires dissolve slightly at their peaks, architecture built from the chemistry of sweetness and the physics of whimsy. Icing traces scalloped promises across gingerbread walls, every surface a temptation that would ruin dinner. The kingdom stands in eternal afternoon, a place where dentists fear to tread and children dream of citizenship."
-    }
-  }
+    id: 'SP07-055',
+    name: 'Candy Kingdom',
+    category: '4. Landscape And Gardens',
+    negativePrompt: 'scary, realistic',
+    style: {
+      aesthetic:
+        'Edible architecture, confectionery city, sugar-frosted fantasy, dessert landscape, gumdrop wonderland',
+      form_and_line:
+        'Rounded soft, lollipop colonnades, icing-scallop trim, gumdrop spires, chocolate-bar block',
+      color_palette:
+        'Pink, Pastel, Candy-apple Red, Gumdrop Green, Marshmallow White, Licorice Black',
+      lighting_setup:
+        'Soft sugar glow, candy-store warm, frosting-sparkle, gumdrop-translucent, sugar-crystal shimmer',
+      material_texture:
+        'Frosting, cake, hard candy shell, marshmallow, wafer, spun-sugar web, chocolate drip',
+      render_quality:
+        'Cute, delicious, Willy-Wonka dream, sugar-rush beauty, confectionery perfection, edible fantasy',
+      spatial_distortion: 'Melting',
+      atmosphere: 'Sweet, fun, candy-store joy, whimsical, sugar-high delight, childhood wonder',
+      key_features:
+        'Sprinkles, gumdrop path, icing trim, candy-cane columns, chocolate river, lollipop trees, gingerbread walls',
+      creative_brief:
+        'Gumdrop spires dissolve slightly at their peaks, architecture built from the chemistry of sweetness and the physics of whimsy. Icing traces scalloped promises across gingerbread walls, every surface a temptation that would ruin dinner. The kingdom stands in eternal afternoon, a place where dentists fear to tread and children dream of citizenship.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

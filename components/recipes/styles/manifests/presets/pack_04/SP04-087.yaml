@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: 20-silhouette iteration sheet, pure-shape design exploration, negative-space composition study, character-shape-language comparison, bulky-vs-sleek-vs-spiky-vs-round silhouette range, creature-design through silhouette only, Kienan Lafferty shape-exploration, form-before-detail discipline
-  form_and_line: Pure black fill shapes, no interior lines, varied contour exploration, chunky-vs-spindly silhouette spectrum, shape-contrast across iterations
-  color_palette: Black silhouettes on white, occasional mid-grey for secondary-read shapes, no color whatsoever
-  lighting_setup: None, pure silhouette reading against white background, no lighting information
-  material_texture: Flat-black fill, sharp-silhouette edges, no surface indication, pure two-dimensional shape reading
-  render_quality: Silhouette-iteration concept sheet, pure-shape design study, form-first rendering, industrial-design methodology
-  spatial_distortion: Grid-arranged silhouettes for comparison, scale-normalized across iterations, shape-language spectrum positioning
-  atmosphere: Methodical, exploratory, design-rigor, form-obsession, pre-detail discipline, professional-iteration mindset
-  key_features: Pure-black silhouettes on white, 20-variation grid, no internal detail, shape-language spectrum, scale-normalized comparison
-  creative_brief: Twenty shapes stand in silent competition, each silhouette arguing for the soul of the character through pure outline alone. Bulky squares face sleek triangles face spiky stars, the language of shape doing all the narrative work. This is design as elimination tournament, where the winner is chosen before the face is drawn.
+  aesthetic: Comparative silhouette iteration board for shape-language selection
+  form_and_line: Filled contour-only forms with zero interior detail dependency
+  color_palette: Binary black-white with optional neutral gray grouping aids
+  lighting_setup: Non-rendered; readability entirely silhouette-based
+  material_texture: Flat fill blocks with crisp edge control
+  render_quality: Systematic early-stage design study emphasizing variation breadth
+  spatial_distortion: Normalized scale grid enabling direct mass/proportion comparison
+  atmosphere: Methodical, exploratory, selection-oriented
+  key_features: High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing
+  creative_brief: >-
+    Explore broad morphological directions through silhouette only. Keep variants scale-consistent and formally distinct so comparative review can isolate the strongest proportion, mass distribution, and negative-space logic before internal detail development.
 avoidRules:
   - detailed
   - rendered

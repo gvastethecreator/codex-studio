@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Same-scene-eight-different-lighting-pass, dawn-morning-noon-afternoon-dusk-night-midnight-storm variations, pure-atmosphere-comparison-grid, Pixar-lighting-color-script philosophy, environment-emotional-impact-through-light-only, golden-hour-vs-overcast-vs-neon-night, shadow-direction-and-temperature study, lighting-as-storytelling-tool, cinematography-reference-sheet
-  form_and_line: Same-composition-repeated-with-atmospheric-variation, consistent-scene-geometry-under-different-light, atmospheric-edge-dissolve, shadow-direction-arc-across-variations
-  color_palette: Dawn-cool-lavender, morning-gold-warm, noon-neutral-white, afternoon-amber-warm, dusk-magenta-purple, night-blue-desaturation, midnight- deep-indigo, storm-green-grey-menace
-  lighting_setup: Eight-different-key-light-directions, shadow-temperature-warm-to-cool, volumetric-fog-varying-density, time-of-day-color-temperature-spectrum
-  material_texture: Atmospheric-density-variation, fog-soft-to-clear, cloud-diffusion-amount, shadow-sharpness-variation, light-ray- visibility-morning-vs-noon
-  render_quality: Lighting-scenario-study, color-script-beauty, atmospheric-comparison-rendering, film-lighting-reference, Pixar-philosophy-color-script
-  spatial_distortion: Repeated-scene-composition-grid, lighting- angle-rotation-across-scenes, atmospheric-perspective-depth-varying, shadow-length-arc-across-day
-  atmosphere: Moody, time-passage, emotional-light-shift, atmospheric-storytelling, dawn-hope-to-midnight-mystery, lighting-as-emotion-language
-  key_features: Same-scene-different lighting, eight-variation-grid, dawn-to-midnight progression, atmospheric-density comparison, shadow-direction-arc, color-temperature-spectrum, Pixar-color-script-philosophy
-  creative_brief: Eight lighting conditions cascade across the identical scene in a grid of emotional weather, dawn's golden hope giving way to midnight's cobalt dread. Shadow direction shifts the architectural mood from welcoming to threatening without moving a single wall. This is storytelling through photons, where the same room becomes eight different emotions under eight different skies.
+  aesthetic: Iterative color-script style focused on controlled multi-pass illumination studies and mood transfer through light alone
+  form_and_line: Stable compositional scaffold with constant geometry, variation expressed through light patterning, edge softness, and shadow behavior
+  color_palette: Phase-based palette families from cool pre-dawn violets to warm amber daylight, magenta dusk transitions, and deep nocturnal indigos
+  lighting_setup: Systematic key-angle sweeps, temperature-shift ladders, variable diffusion density, calibrated contrast steps across render passes
+  material_texture: Per-pass volumetric response variation, haze density modulation, shadow hardness tuning, reflective intensity mapping
+  render_quality: Production-grade lighting development board aesthetic with coherent comparability between passes and disciplined cinematic polish
+  spatial_distortion: Fixed camera and structure with depth perception driven by atmosphere and luminance distribution changes
+  atmosphere: Analytical yet emotional, cinematic, temporal, expressive, study-driven
+  key_features: Multi-pass lighting matrix, color-temperature progression, shadow-arc logic, atmospheric phase control, mood-through-illumination methodology
+  creative_brief: >-
+    Treat this preset as a lighting-grammar engine: keep composition stable
+    and let emotional identity emerge from controlled pass-to-pass
+    illumination decisions, not from narrative scene changes.
 avoidRules:
   - single lighting
   - one time of day

@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Carved block print
-  form_and_line: White gouges
+  aesthetic: Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold democratic graphic force
+  form_and_line: White gouge-cut channels and chunky relief edges with high black-mass balance and knife-path rhythm
   color_palette: Black ink, single-color assertion, bold monochrome
   lighting_setup: None, ink-only, no shading hierarchy
   material_texture: Ink roll texture
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Chunky lines
   atmosphere: Folk, strong, print-workshop resolve, democratic art
   key_features: No fine detail, gouge marks, carved texture
-  creative_brief: Carved away material leaves behind a surface born of resistance, each gouge a record of the knife's passage through linoleum. Ink sits heavy on the raised portions, transferring the image with the satisfying pressure of the press. This is printmaking as labor, where every white line required the removal of something solid.
+  creative_brief: >-
+    Define this preset through relief-linocut grammar: carved negative marks,
+    heavy ink transfer, and hand-tool gouge cadence should carry identity
+    beyond any specific folk scene.
 avoidRules:
   - grey
   - gradient

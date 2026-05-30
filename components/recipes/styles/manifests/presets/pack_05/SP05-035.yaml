@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Vertical movement gear, siege tension, desperate city walls, feral urgency, ODM gear cables, titan-shifter transformations, walled cities, colossal-scale terror
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
-  atmosphere: Dire, relentless, desperate, terrifying
-  key_features: Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography
-  creative_brief: Cables snap taut against gravity as human bodies arc between colossal shadows that devour the horizon. Desperation has a geometry here — vertical, angular, the mathematics of prey refusing to yield — drawn in razor-sharp motion lines that cut through stone walls and the terrible stillness of giants.
+  aesthetic: Vertical-survival action style defined by scale terror, aerial trajectory tension, and militarized desperation rhythm
+  form_and_line: Cable-vector diagonals, hook-point geometry, hard angular pose silhouettes, sharp momentum lines for vertical traversal
+  color_palette: Dusty militarized neutrals with emergency flares of red-orange, cold steel tones, and smoke-dark value structure
+  lighting_setup: Harsh side light with particulate haze, breached-sky shafts, silhouette-first backlight, and panic-intensity contrast spikes
+  material_texture: Cable tension sheen, weathered harness materials, masonry debris grain, smoke and grit overlays with high kinetic readability
+  render_quality: High-intensity survival anime finish emphasizing motion mechanics, scale legibility, and urgency-first compositional clarity
+  spatial_distortion: Extreme vertical foreshortening with depth-drop exaggeration and looming mass contrast to reinforce peril
+  atmosphere: Desperate, relentless, hunted, grim, adrenaline-heavy
+  key_features: Aerial trajectory grammar, scale-shock framing, cable-mechanics readability, siege-pressure visual cadence
+  creative_brief: >-
+    The identity should come from vertical-mobility tension and overwhelming
+    scale contrast: cable-driven motion logic and depth-drop fear must remain
+    central regardless of setting specifics.
 avoidRules:
   - realistic
   - 3d render

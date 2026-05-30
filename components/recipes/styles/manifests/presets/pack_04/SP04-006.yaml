@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Vertical scroll comic
-  form_and_line: Clean digital
-  color_palette: Full color, flat, webtoon cel-shade, vibrant gradient
-  lighting_setup: Soft cell shade, rim glint, subtle ambient occlusion
-  material_texture: Digital
-  render_quality: Manhwa, modern, sleek scrolling sheen, influencer polish
-  spatial_distortion: Pretty characters
-  atmosphere: Drama, fantasy, romantic tension, digital-native storytelling
-  key_features: Vertical flow, scrolling panel gap, animated layer
-  creative_brief: The scroll pulls downward like gravity itself, each panel gap a breath between beats of digital storytelling. Colors arrive saturated and immediate, cel-shaded drama flowing through the infinite vertical canvas of the phone screen. This is narrative engineered for the thumb and the heart simultaneously, where romance and fantasy drip-feed through luminous glass.
+  aesthetic: Vertical-scroll webcomic language with mobile-first readability
+  form_and_line: Clean digital linework with controlled contour simplification
+  color_palette: Saturated full-color palette with flat-to-soft-cel value staging
+  lighting_setup: Soft cel shading with selective rim accents for depth separation
+  material_texture: Crisp screen-native finish with minimal analog noise
+  render_quality: Polished episodic panel rendering optimized for long-scroll consumption
+  spatial_distortion: Stylized proportions tuned for expressive character readability
+  atmosphere: Emotion-forward, dramatic, contemporary digital storytelling
+  key_features: Vertical pacing gaps, beat-driven panel stacking, gradient-backed emphasis moments
+  creative_brief: >-
+    Design for continuous vertical reading rhythm. Balance expressive characters, high-contrast focal points, and spacing-driven pacing so emotion lands panel-to-panel without relying on fixed scene staging or single-shot composition tropes.
 avoidRules:
   - black and white
 assets:

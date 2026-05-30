@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Severe lighting, cat-and-mouse psychology, elite interiors, symbolic menace, death-note pages, notebook rules, shinigami eyes, apple motifs
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Tense, cerebral, chilling, intellectual
-  key_features: Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy
-  creative_brief: Severe lighting carves a shinigami's grin from absolute darkness while ruled notebook pages flutter like death warrants across a chessboard of cat-and-mouse psychology. Apple motifs rot in the margins, the clean 2000s digital polish making the intellectual menace feel surgical—every shadow a calculation, every calm expression a confession withheld.
+  aesthetic: Cerebral thriller-anime style with moral-void minimalism, symbolic menace, and strategic psychological framing
+  form_and_line: Controlled precision contours, stillness-priority pose language, sharp silhouette partitions, sparse gesture economy for tension buildup
+  color_palette: Near-monochrome neutrals, selective crimson warning accents, cold amber paper tones, deep black shadow architecture
+  lighting_setup: Hard chiaroscuro segmentation, surgical highlight placement, constrained ambient lift, and intentional darkness as compositional mass
+  material_texture: Matte paper-like surfaces, subtle analog grain, polished low-noise cel layers, restrained reflective cues
+  render_quality: High-discipline early-digital anime finish optimized for suspense readability and symbolic object prominence
+  spatial_distortion: Compressed psychological space with strategic negative voids and perspective restraint to amplify mental pressure
+  atmosphere: Calculating, oppressive, cold, analytical, ominous
+  key_features: Chiaroscuro intellect, symbolic prop hierarchy, stillness-driven menace, contrast-led narrative tension
+  creative_brief: >-
+    Build identity through psychological contrast logic—severe light partition,
+    symbolic object emphasis, and compositional restraint—so the preset reads
+    as cerebral suspense across any subject matter.
 avoidRules:
   - realistic
   - 3d render

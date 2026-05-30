@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: City green space, elevated oasis, urban-meadow, infrastructure-to-garden, railway-bloom
-  form_and_line: Concrete paths, linear-meander, rail-track planting lines, overlook platforms, bridge-span views
-  color_palette: Concrete, Grass, Rust, Corten steel orange, Prairie-flower Yellow, Skyline Grey
-  lighting_setup: City sun, building-reflected glow, street-lamp pools, sunset-skyline silhouette
-  material_texture: Steel, plants, weathered wood, gravel path, ornamental grasses, raw concrete plank
-  render_quality: Modern, public, post-industrial poetry, green-infrastructure, urban-ecology beauty
-  spatial_distortion: None
-  atmosphere: Relaxed, urban, elevated, strolling, above-the-street, collective breathing space
-  key_features: Bench, planted rail tracks, city overlook, concrete planks, native grasses, public art
-  creative_brief: Railway tracks become planting beds, industrial ghosts dressed in native grasses and autumn seed heads. Concrete planks stretch above street grid, a ribbon of green where New Yorkers remember what dirt smells like. The High Line stitches abandoned infrastructure into the living fabric of a city that forgot to look up.
+  aesthetic: Post-industrial ecological promenade style blending infrastructural linearity with softened native planting systems
+  form_and_line: Longitudinal circulation bands, alternating hardscape-softscape strips, bench-block rhythm, articulated edge transitions
+  color_palette: Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys
+  lighting_setup: Diffuse late-day illumination with mild reflected fill and gentle luminance falloff across linear surfaces
+  material_texture: Raw concrete grain, corten oxidation bloom, brushed steel edges, gravel fines, wind-responsive grasses, weathered timber inserts
+  render_quality: Editorial-grade landscape architecture rendering with emphasis on material authenticity and ecological layering
+  spatial_distortion: Compressed linear perspective supporting procession, depth through repeating modules, strong path legibility
+  atmosphere: Civic, restorative, adaptive, contemporary, breathable, infrastructural yet humane
+  key_features: Linear planting rails, modular seating planes, reclaimed-industrial texture palette, public-use readability, ecological succession cues
+  creative_brief: >-
+    Express adaptive-reuse landscape language as the core style: disciplined
+    linear geometry, reclaimed materials, and ecological planting structure
+    must define the preset independent of a specific city or landmark.
 avoidRules:
   - wild forest
 assets:

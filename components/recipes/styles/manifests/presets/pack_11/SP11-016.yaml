@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Round shapes, oversize-head proportions, stubby limbs, chunky paws
   atmosphere: Comforting, soft, security-blanket warmth, bedtime safety, unconditional love
   key_features: Button eyes, stitched smile, bean-bag weight, satin-bow accent
-  creative_brief: Button eyes hold gaze without judgment, stitched smiles promising the unconditional comfort that smells like nursery safety and bedtime years. Polyester filling shifts with every embrace, reshaping the plush companion into the unique form of each child's specific love. Softness as sanctuary, velvet-touch tenderness manufactured by the dozen yet made singular by affection.
+  creative_brief: >-
+    Anchor this preset in plush-toy comfort grammar: seam-led softness,
+    oversized cuddly proportions, and velvet-fiber tactility should define
+    identity without depending on a specific nursery storyline.
 avoidRules:
   - hard
   - plastic

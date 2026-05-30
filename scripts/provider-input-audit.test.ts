@@ -11,6 +11,9 @@ describe('provider input audit', () => {
     expect(report.rows.every((row) => row.kind === 'recipe')).toBe(true);
     expect(report.rows.every((row) => row.hasRecipeProviderDirectives)).toBe(true);
     expect(report.rows.every((row) => row.omittedStableInstructions)).toBe(true);
+    expect(report.rows.every((row) => row.providerSessionContractId)).toBe(true);
+    expect(report.rows.every((row) => row.assetRefCount >= 0)).toBe(true);
+    expect(report.rows.every((row) => !row.inlineAssetBytesPresent)).toBe(true);
     expect(report.rows.every((row) => !row.inlineDataLeak)).toBe(true);
     expect(report.rows.every((row) => !row.secretLikeLeak)).toBe(true);
   });

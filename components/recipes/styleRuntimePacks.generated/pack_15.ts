@@ -21,9 +21,10 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: "pack_15",
-    name: "Solarpunk Dreamscapes Vault",
-    description: "A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.",
+    id: 'pack_15',
+    name: 'Solarpunk Dreamscapes Vault',
+    description:
+      'A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.',
     presets: categoryPresets.flat(),
   };
 }

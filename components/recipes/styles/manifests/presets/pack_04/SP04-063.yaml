@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Classical woodblock seascape language, Hokusai style, Great Wave energy, floating-world poetry
+  aesthetic: Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour elegance, and floating-world calm
   form_and_line: Variable width
   color_palette: Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth
   lighting_setup: Flat, no shadow, graphic elegance, woodblock tradition
   material_texture: Wood grain
-  render_quality: Japanese classical woodblock masterpiece, Edo precision
+  render_quality: Traditional woodblock print fidelity emphasizing carved-line discipline, restrained elegance, and repeatable impression clarity
   spatial_distortion: Flattened perspective
   atmosphere: Nature, calm, ukiyo-e transience, seasonal reverence
   key_features: Outline, gradient band, seal signature
-  creative_brief: The wave curls with the permanence of a woodblock, each line carved with the confidence of a thousand impressions. Prussian blue bleeds into the paper edge, the gradient of ocean and sky sharing a single pigment language. This is nature captured in the floating world, where the moment between crest and crash lasts forever in carved relief.
+  creative_brief: >-
+    Anchor identity in ukiyo-e woodblock grammar: carved contour rhythm,
+    bokashi gradient transitions, and indigo-forward restraint should define the
+    preset without naming a specific masterwork or artist.
 avoidRules:
   - western
   - 3d

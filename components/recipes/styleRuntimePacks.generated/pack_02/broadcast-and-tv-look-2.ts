@@ -4,21 +4,31 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP02-115",
-    "name": "Home Movies - Marker-Edge Improvised Sitcom",
-    "category": "3. Broadcast And Tv Look",
-    "negativePrompt": "digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern",
-    "style": {
-      "aesthetic": "Improvised-kid-filmmaker cartoon, dry marker linework, suburban awkwardness, anti-slick timing, homemade creativity, youth theater cringe, hand-drawn TV softness",
-      "form_and_line": "Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks",
-      "color_palette": "CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe",
-      "lighting_setup": "Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness",
-      "material_texture": "Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness",
-      "render_quality": "Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth",
-      "spatial_distortion": "Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency",
-      "atmosphere": "Awkward, homemade, earnest, low-key funny",
-      "key_features": "Marker-like linework, simple suburban rooms, improvised poses, school-project props, handmade TV charm",
-      "creative_brief": "Scenes feel reconstructed from memory by hands still learning to draw, the wobble in every line testifying to creation happening in real time. Characters wander through rooms built of felt-tip conviction, their awkward pauses filling space that slicker productions would edit out."
-    }
-  }
+    id: 'SP02-115',
+    name: 'Home Movies - Marker-Edge Improvised Sitcom',
+    category: '3. Broadcast And Tv Look',
+    negativePrompt:
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+    style: {
+      aesthetic:
+        'Improvised-kid-filmmaker cartoon, dry marker linework, suburban awkwardness, anti-slick timing, homemade creativity, youth theater cringe, hand-drawn TV softness',
+      form_and_line:
+        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+      color_palette:
+        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
+      lighting_setup:
+        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+      material_texture:
+        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+      render_quality:
+        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+      spatial_distortion:
+        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+      atmosphere: 'Awkward, homemade, earnest, low-key funny',
+      key_features:
+        'Marker-like linework, simple suburban rooms, improvised poses, school-project props, handmade TV charm',
+      creative_brief:
+        'Scenes feel reconstructed from memory by hands still learning to draw, the wobble in every line testifying to creation happening in real time. Characters wander through rooms built of felt-tip conviction, their awkward pauses filling space that slicker productions would edit out.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

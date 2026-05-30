@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Mary Blair style, mid-century modern
-  form_and_line: Dry brush
+  aesthetic: Mid-century gouache modernism with playful geometric warmth and simplified educational storytelling clarity
+  form_and_line: Dry-brush edge variation with soft geometric contour blocking and shape-first compositional rhythm
   color_palette: Opaque, matte, chalk-finish spectrum, design-flat contrast
   lighting_setup: Flat, even matte illumination, mid-century glow
   material_texture: Chalky paint
-  render_quality: Mary Blair mid-century retro, Disneyland warmth, geometric joy
+  render_quality: Retro-gouache illustrative finish emphasizing opaque shape design, friendly abstraction, and color-led narrative legibility
   spatial_distortion: Stylized shapes
   atmosphere: Colorful, design, atomic-age optimism, playful modernism
   key_features: Brush texture, dry-brush stroke, gouache opacity
-  creative_brief: Gouache sits on the surface with the confident opacity of mid-century optimism, every brushstroke a declaration of design. Flat shapes and dry-brush textures dance together in the geometric ballet of atomic-age whimsy. This is modernism with a warm heart, where abstraction and affection share the same canvas.
+  creative_brief: >-
+    Preserve identity through mid-century gouache design language: opaque
+    geometric shape choreography, dry-brush texture, and warm optimistic color
+    relationships should carry the style without referencing specific studios.
 avoidRules:
   - transparent
   - watercolor

@@ -2,10 +2,12 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import {
   createCompiledProviderInput,
+  createProviderInputMetrics,
   createGenerationTaskSpec,
   createProviderSessionContract,
   isBuiltInGenerationProvider,
   isGenerationTaskKind,
+  validateGenerationTaskSpec,
 } from './generationContracts';
 
 describe('generationContracts', () => {
@@ -102,5 +104,95 @@ describe('generationContracts', () => {
     expect(isGenerationTaskKind('texture_generate')).toBe(true);
     expect(isGenerationTaskKind('codex_imagegen')).toBe(false);
     expect(isGenerationTaskKind('future_vendor_task')).toBe(false);
+  });
+
+  it('validates local queued Generation Task Spec ids and hydrated assets', () => {
+    const validSpec = createGenerationTaskSpec({
+      id: 'spec-batch-1234-abcd-0-5678',
+      task: 'image_generate',
+      providerId: 'codex',
+      prompt: 'small brass key on velvet cloth',
+      assets: [
+        {
+          role: 'reference',
+          name: 'reference.png',
+          localPath: 'D:/AI-Studio-Library/.studio/references/job-1/reference.png',
+        },
+      ],
+      metadata: {
+        batchId: 'batch-1234-abcd',
+      },
+    });
+
+    expect(
+      validateGenerationTaskSpec(validSpec, {
+        requireLocalRunIds: true,
+        requireHydratedAssets: true,
+      }),
+    ).toEqual([]);
+
+    const invalidSpec = {
+      ...validSpec,
+      id: '1234-abcd',
+      metadata: { batchId: '1234-abcd' },
+      assets: [
+        {
+          role: 'reference' as const,
+          name: 'inline.png',
+          dataUrl: 'data:image/png;base64,AAAA',
+        },
+      ],
+    };
+
+    expect(
+      validateGenerationTaskSpec(invalidSpec, {
+        requireLocalRunIds: true,
+        requireHydratedAssets: true,
+      }).map((issue) => issue.code),
+    ).toEqual(['invalid_spec_id', 'invalid_batch_id', 'inline_asset_not_hydrated']);
+  });
+
+  it('rejects source specs routed through a different provider id', () => {
+    const spec = createGenerationTaskSpec({
+      id: 'spec-1',
+      task: 'image_generate',
+      providerId: 'codex',
+      prompt: 'small brass key on velvet cloth',
+    });
+
+    expect(
+      validateGenerationTaskSpec(spec, { expectedProviderId: 'google' }).map((issue) => issue.code),
+    ).toEqual(['invalid_provider']);
+  });
+
+  it('summarizes safe provider input metrics without reading payload internals', () => {
+    const spec = createGenerationTaskSpec({
+      id: 'spec-metrics',
+      task: 'image_generate',
+      prompt: 'small brass key on velvet cloth',
+      assets: [{ role: 'reference', name: 'ref.png', localPath: 'D:/ref.png' }],
+    });
+    const contract = createProviderSessionContract({
+      id: 'codex-imagegen-v1',
+      providerId: 'codex',
+    });
+    const compiled = createCompiledProviderInput({
+      providerId: 'codex',
+      contract,
+      sourceSpec: spec,
+      payloadKind: 'codex_prompt',
+      payload: { text: 'Prompt: small brass key on velvet cloth' },
+      estimatedPromptChars: 39,
+    });
+
+    expect(createProviderInputMetrics(spec, compiled)).toMatchObject({
+      sourceSpecChars: expect.any(Number),
+      compiledInputChars: expect.any(Number),
+      compiledPayloadChars: expect.any(Number),
+      estimatedPromptChars: 39,
+      assetRefCount: 1,
+      inlineAssetBytesPresent: false,
+      providerSessionContractId: 'codex-imagegen-v1',
+    });
   });
 });

@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Stacked containers, megacity underbelly, vertical shantytown, Kowloon-inspired density, neon-blight
-  form_and_line: Wires, neon, fire-escape zigzag, shipping-container grid, AC-unit cascade, laundry lines
-  color_palette: Dark, Neon, Rain-wet Black, Sickly Green, Magenta sign, Rust Brown, Blue smog
-  lighting_setup: Artificial, neon-bath, hologram flicker, rain-streak LED, shadowed alley, 24-hour unnatural twilight
-  material_texture: Rust, metal, rain, grimy plastic, corrugated shutter, wet pavement, peeling poster
-  render_quality: Dense, dangerous, high-tech low-life, rain-slick neon, social-compression horror, Blade Runner overcrowding
-  spatial_distortion: None
-  atmosphere: Oppressive, tech, desperate, hunted, data-saturated, no-sky, breathing-each-other's-air
-  key_features: Vertical density, neon signs, stacked AC units, fire escapes, cable chaos, street-level market stalls
-  creative_brief: Containers stack toward smog-blurred sky, each box a life compressed into corrugated steel and desperation. Neon signs advertise in six languages, flickering promises that none of the residents can afford. The alley narrows into lightlessness, a vertical shantytown where humanity packs itself tighter than circuit boards.
+  aesthetic: Hyper-dense techno-brutalist residential style focused on vertical compression, improvised modularity, and infrastructural overload
+  form_and_line: Repeating module stacks, cable-bundle diagonals, service-ladder zigzags, grille and shutter rhythms, fragmented light channels
+  color_palette: Carbon blacks, oxidized rust browns, toxic greens, sign-magenta accents, smoggy blue-greys, low-luminance neon tints
+  lighting_setup: Persistent artificial spill, flicker-prone practicals, hard occlusion pockets, wet-surface micro-reflections, narrow contrast windows
+  material_texture: Corrugated steel fatigue, polymer grime bloom, layered paint peel, stained concrete, oxidized fastener patina, damp residue
+  render_quality: High-detail architectural dystopia rendering with clutter legibility, controlled noise, and material density realism
+  spatial_distortion: Vertical stacking exaggeration with narrow depth corridors and compressed breathing-space intervals
+  atmosphere: Oppressive, overbuilt, unstable, electrically saturated, survivalist
+  key_features: Modular stack logic, exposed service infrastructure, cable congestion patterns, degraded industrial surfaces, constrained circulation geometry
+  creative_brief: >-
+    Preserve the style as a system of compression and infrastructural excess:
+    the visual identity must emerge from modular density, material wear, and
+    electric clutter rather than a specific named district.
 avoidRules:
   - clean
   - wide streets

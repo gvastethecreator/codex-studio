@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Plant-filled artistic room, global traveler, collected over time, layered story
-  form_and_line: Chaotic organic forms, cascading vines, piled cushions, hanging macrame, soft heaps
-  color_palette: Earth tones, vibrant patterns, Terracotta, Turquoise, Spice, Indigo
-  lighting_setup: Dappled sunlight through plants, candle glow, Moroccan lantern, fairy string lights
-  material_texture: Rattan, macrame, leaves, handwoven kilim, raw linen, carved wood
-  render_quality: Pinterest, jungle, relaxed, layered, free-spirited, curated wanderlust
-  spatial_distortion: Overgrown plants
-  atmosphere: Free, natural, messy, worldly, creative, sun-drenched laziness
-  key_features: Plants in every corner, hanging rattan chair, layered Persian rugs, gallery wall
-  creative_brief: Plants claim territory with slow green confidence, vines rewriting the boundary between indoors and elsewhere. Each object carries passport stamps from distant bazaars, a cabinet of curiosities assembled by a soul too restless for matching sets. The air hums with chlorophyll and wanderlust, every surface a story half-told.
+  aesthetic: Bohemian-eclectic style defined by collected layering, botanical softness, and artisanal global texture interplay
+  form_and_line: Organic asymmetry, draped textile cascades, rounded handcrafted silhouettes, vegetal flow lines, intentionally uneven composition balance
+  color_palette: Warm earth foundations with turquoise-indigo accents, spice pigments, terracotta anchors, and patterned chroma punctuation
+  lighting_setup: Filtered natural dappling with low-intensity ambient practicals, lantern diffusion, and soft shadow overlap
+  material_texture: Woven natural fibers, hand-knotted rugs, macramé cords, raw linen folds, carved wood micro-relief, leaf translucency
+  render_quality: Richly layered boho editorial finish with tactile density, controlled visual clutter, and cohesive material harmony
+  spatial_distortion: Gentle organic depth drift driven by plants and textiles, avoiding rigid axial symmetry
+  atmosphere: Free-spirited, warm, lived-in, creative, worldly
+  key_features: Layered artifact curation, botanical-textile rhythm, asymmetrical comfort composition, handcrafted surface diversity
+  creative_brief: >-
+    Build the preset around layered artisan materials and botanical flow,
+    keeping eclectic curation and tactile warmth as transferable style anchors
+    rather than a fixed traveler-room vignette.
 avoidRules:
   - minimalist
   - empty

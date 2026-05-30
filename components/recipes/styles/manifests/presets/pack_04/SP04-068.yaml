@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Sun print
-  form_and_line: Silhouette (white)
+  aesthetic: Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry
+  form_and_line: White-negative silhouettes with soft contact edges and exposure-based tonal falloff on coated paper
   color_palette: Prussian Blue, monochrome cyan, sun-print depth
   lighting_setup: Negative, UV exposure, solar-contact alchemy
   material_texture: Watercolor paper
-  render_quality: Botanical, photo, photogram heritage, Anna Atkins legacy
+  render_quality: Alternative-process print fidelity emphasizing UV exposure behavior, washout dynamics, and historic photogram aesthetics
   spatial_distortion: Soft edges
   atmosphere: Dreamy, blue, alternative-process magic, Victorian science
   key_features: Blue only, contact shadow, silhouette photogram
-  creative_brief: Prussian blue washes over paper in the signature of sunlight, chemistry and photon collaborating on the image. Foliage leaves its silhouette like a ghost of the garden, white shapes against the blue miracle. This is photography before photography knew its name, when light itself was the artist and the botanist held the paper.
+  creative_brief: >-
+    Keep this preset anchored in cyanotype grammar: UV-contact silhouettes,
+    Prussian-blue wash behavior, and chemistry-led tonal emergence should define
+    style beyond one botanical arrangement.
 avoidRules:
   - red
   - yellow

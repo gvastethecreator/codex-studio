@@ -4,57 +4,60 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP09-029",
-    "name": "Velvet Fabric",
-    "category": "3. Fabric And Soft Materials",
-    "negativePrompt": "cotton, flat",
-    "style": {
-      "aesthetic": "Luxury cloth",
-      "form_and_line": "Soft folds",
-      "color_palette": "Deep Red or Blue",
-      "lighting_setup": "Rim light sheen",
-      "material_texture": "Fuzzy",
-      "render_quality": "Royal, theater",
-      "spatial_distortion": "Soft drape",
-      "atmosphere": "Rich, soft",
-      "key_features": "Sheen on folds",
-      "creative_brief": "Summon the deep luxury of velvet where piled fibers catch light at the crest of each soft fold, creating a landscape of deep shadows and rich highlights that shift with the angle of view. The surface should feel like visual touch, a textile that drinks light and returns it as color deepened by surrounding darkness. Render the sensuality of fabric that seems to breathe."
-    }
+    id: 'SP09-029',
+    name: 'Velvet Fabric',
+    category: '3. Fabric And Soft Materials',
+    negativePrompt: 'cotton, flat',
+    style: {
+      aesthetic: 'Luxury cloth',
+      form_and_line: 'Soft folds',
+      color_palette: 'Deep Red or Blue',
+      lighting_setup: 'Rim light sheen',
+      material_texture: 'Fuzzy',
+      render_quality: 'Royal, theater',
+      spatial_distortion: 'Soft drape',
+      atmosphere: 'Rich, soft',
+      key_features: 'Sheen on folds',
+      creative_brief:
+        'Summon the deep luxury of velvet where piled fibers catch light at the crest of each soft fold, creating a landscape of deep shadows and rich highlights that shift with the angle of view. The surface should feel like visual touch, a textile that drinks light and returns it as color deepened by surrounding darkness. Render the sensuality of fabric that seems to breathe.',
+    },
   },
   {
-    "id": "SP09-045",
-    "name": "Felt Fabric",
-    "category": "3. Fabric And Soft Materials",
-    "negativePrompt": "woven, shiny",
-    "style": {
-      "aesthetic": "Compressed wool",
-      "form_and_line": "Fuzzy edge",
-      "color_palette": "Matte colors",
-      "lighting_setup": "Soft absorption",
-      "material_texture": "Fuzzy, dense",
-      "render_quality": "Craft, soft",
-      "spatial_distortion": "None",
-      "atmosphere": "Warm, craft",
-      "key_features": "No weave",
-      "creative_brief": "Summon the soft density of felted wool where fibers have surrendered individual identity to become a unified surface without weave or grain, matte colors absorbing light like powdered pigment painted onto compressed cloud. The fuzzy edge should dissolve into atmosphere without a defined boundary. Capture the warmth of compression, softness achieved through the pressure of becoming one."
-    }
+    id: 'SP09-045',
+    name: 'Felt Fabric',
+    category: '3. Fabric And Soft Materials',
+    negativePrompt: 'woven, shiny',
+    style: {
+      aesthetic: 'Compressed wool',
+      form_and_line: 'Fuzzy edge',
+      color_palette: 'Matte colors',
+      lighting_setup: 'Soft absorption',
+      material_texture: 'Fuzzy, dense',
+      render_quality: 'Craft, soft',
+      spatial_distortion: 'None',
+      atmosphere: 'Warm, craft',
+      key_features: 'No weave',
+      creative_brief:
+        'Summon the soft density of felted wool where fibers have surrendered individual identity to become a unified surface without weave or grain, matte colors absorbing light like powdered pigment painted onto compressed cloud. The fuzzy edge should dissolve into atmosphere without a defined boundary. Capture the warmth of compression, softness achieved through the pressure of becoming one.',
+    },
   },
   {
-    "id": "SP09-069",
-    "name": "Fiberglass Insulation",
-    "category": "3. Fabric And Soft Materials",
-    "negativePrompt": "cotton candy",
-    "style": {
-      "aesthetic": "Pink wall insulation",
-      "form_and_line": "Fibers",
-      "color_palette": "Pink",
-      "lighting_setup": "Soft",
-      "material_texture": "Itchy glass fibers",
-      "render_quality": "Construction, industrial",
-      "spatial_distortion": "Fluffy batts",
-      "atmosphere": "Unfinished, itchy",
-      "key_features": "Fiber direction",
-      "creative_brief": "Capture the industrial cotton-candy of pink fiberglass insulation where glass fibers interweave into fluffy batts of suspended irritation, the color deceptively soft while the texture promises an itch that the eye can almost feel. The fiber direction should create a grain of pink haze across unfinished wall cavities. Render the beauty of the in-between, construction paused in mid-reveal."
-    }
-  }
+    id: 'SP09-069',
+    name: 'Fiberglass Insulation',
+    category: '3. Fabric And Soft Materials',
+    negativePrompt: 'cotton candy',
+    style: {
+      aesthetic: 'Pink wall insulation',
+      form_and_line: 'Fibers',
+      color_palette: 'Pink',
+      lighting_setup: 'Soft',
+      material_texture: 'Itchy glass fibers',
+      render_quality: 'Construction, industrial',
+      spatial_distortion: 'Fluffy batts',
+      atmosphere: 'Unfinished, itchy',
+      key_features: 'Fiber direction',
+      creative_brief:
+        'Capture the industrial cotton-candy of pink fiberglass insulation where glass fibers interweave into fluffy batts of suspended irritation, the color deceptively soft while the texture promises an itch that the eye can almost feel. The fiber direction should create a grain of pink haze across unfinished wall cavities. Render the beauty of the in-between, construction paused in mid-reveal.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

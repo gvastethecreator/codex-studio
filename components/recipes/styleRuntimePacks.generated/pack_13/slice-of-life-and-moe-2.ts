@@ -4,543 +4,843 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP05-081",
-    "name": "K-On! – KyoAni Cozy Band Practice",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Kyoto Animation moe, soft lighting, detailed instruments, squishy faces, school-club music warmth, soft instruments, gentle comedy, comforting youthfulness, afternoon-tea band, cake-and-practice, Les Paul guitar, Sakuragaoka High",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Relaxed, cheerful, warmhearted, cozy",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "Afternoon light pools on a music-room floor where tea has gone cold and a guitar string still hums with unfinished melody. Friendship is the real instrument here, tuned to the frequency of shared laughter and clumsy chord progressions. Wrap the frame in the warmth of a sunlit nap you never want to wake from."
-    }
+    id: 'SP05-081',
+    name: 'K-On! – KyoAni Cozy Band Practice',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Kyoto Animation moe, soft lighting, detailed instruments, squishy faces, school-club music warmth, soft instruments, gentle comedy, comforting youthfulness, afternoon-tea band, cake-and-practice, Les Paul guitar, Sakuragaoka High',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Relaxed, cheerful, warmhearted, cozy',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        'Afternoon light pools on a music-room floor where tea has gone cold and a guitar string still hums with unfinished melody. Friendship is the real instrument here, tuned to the frequency of shared laughter and clumsy chord progressions. Wrap the frame in the warmth of a sunlit nap you never want to wake from.',
+    },
   },
   {
-    "id": "SP05-202",
-    "name": "Tamako Market - Mochi Street Warmth",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Shopping-street community coziness, mochi-shop sweetness, cheerful signage, festival intimacy, Kyoto warmth, low-stakes affection and local routine charm",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Cheerful, neighborhood-soft, tasty, warm",
-      "key_features": "Shopping-street props, food-stall detail, community ensemble staging, festival banners, cozy storefront lighting",
-      "creative_brief": "A shopping arcade hums with the rhythm of familiar faces and freshly steamed mochi. Festival bunting catches the breeze above a storefront where every transaction is a small act of belonging. The street holds its warmth like a shared secret, passed between neighbors who need no words."
-    }
+    id: 'SP05-202',
+    name: 'Tamako Market - Mochi Street Warmth',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Shopping-street community coziness, mochi-shop sweetness, cheerful signage, festival intimacy, Kyoto warmth, low-stakes affection and local routine charm',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Cheerful, neighborhood-soft, tasty, warm',
+      key_features:
+        'Shopping-street props, food-stall detail, community ensemble staging, festival banners, cozy storefront lighting',
+      creative_brief:
+        'A shopping arcade hums with the rhythm of familiar faces and freshly steamed mochi. Festival bunting catches the breeze above a storefront where every transaction is a small act of belonging. The street holds its warmth like a shared secret, passed between neighbors who need no words.',
+    },
   },
   {
-    "id": "SP05-208",
-    "name": "Do It Yourself!! - Handmade Craft Club Glow",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "DIY school-club softness, tactile wood and cloth, earnest beginner craftsmanship, warm afternoons, friendship built one handmade object at a time",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Crafty, sweet, tactile, optimistic",
-      "key_features": "Tools and craft materials, workshop sunlight, beginner-made textures, friend-group posing, handmade object focus",
-      "creative_brief": "Sawdust drifts like slow confetti through the clubroom window-light, settling on half-finished shelves and the shoulders of friends who measure twice and laugh three times. Wood remembers every splinter, cloth holds every crooked stitch, and the thing you build with your own hands carries the warmth of everyone who helped hold it steady."
-    }
+    id: 'SP05-208',
+    name: 'Do It Yourself!! - Handmade Craft Club Glow',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'DIY school-club softness, tactile wood and cloth, earnest beginner craftsmanship, warm afternoons, friendship built one handmade object at a time',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Crafty, sweet, tactile, optimistic',
+      key_features:
+        'Tools and craft materials, workshop sunlight, beginner-made textures, friend-group posing, handmade object focus',
+      creative_brief:
+        'Sawdust drifts like slow confetti through the clubroom window-light, settling on half-finished shelves and the shoulders of friends who measure twice and laugh three times. Wood remembers every splinter, cloth holds every crooked stitch, and the thing you build with your own hands carries the warmth of everyone who helped hold it steady.',
+    },
   },
   {
-    "id": "SP05-086",
-    "name": "Yuru Camp – Campfire Comfort",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Outdoor cooking, layered blankets, serene landscapes, practical cozy details, camping-gear accuracy, Mount Fuji views, curry-noodle scenes, pine-cone fire starters",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Peaceful, cozy, comforting, serene",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "A campfire is a small sun you can sit beside — its warmth rewrites the cold geometry of a mountain night into the soft algebra of comfort. Steam rises from a cup of curry noodles while Fuji watches silently, ancient and indifferent to human scale. Build the image like a blanket fort: layers of warmth, pockets of quiet, stitching of gentle light."
-    }
+    id: 'SP05-086',
+    name: 'Yuru Camp – Campfire Comfort',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Outdoor cooking, layered blankets, serene landscapes, practical cozy details, camping-gear accuracy, Mount Fuji views, curry-noodle scenes, pine-cone fire starters',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Peaceful, cozy, comforting, serene',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        'A campfire is a small sun you can sit beside — its warmth rewrites the cold geometry of a mountain night into the soft algebra of comfort. Steam rises from a cup of curry noodles while Fuji watches silently, ancient and indifferent to human scale. Build the image like a blanket fort: layers of warmth, pockets of quiet, stitching of gentle light.',
+    },
   },
   {
-    "id": "SP05-207",
-    "name": "Shirobako - Anime Studio Workday Cheer",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Production-desk realism, scooters and keyframes, team stress turned camaraderie, office coffee and deadline boards, professional slice-of-life with hopeful momentum",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Busy, collaborative, stressed, upbeat",
-      "key_features": "Desk clutter, storyboards, production checklists, team ensemble acting, studio fluorescent warmth",
-      "creative_brief": "Deadline boards glow fluorescent in a studio where caffeine and keyframes share the same desk. Five women chase the anime dream through spreadsheets and storyboards, discovering that the real production is the friendship assembled frame by frame. Art is not just what hangs on the screen — it is who you make it with."
-    }
+    id: 'SP05-207',
+    name: 'Shirobako - Anime Studio Workday Cheer',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Production-desk realism, scooters and keyframes, team stress turned camaraderie, office coffee and deadline boards, professional slice-of-life with hopeful momentum',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Busy, collaborative, stressed, upbeat',
+      key_features:
+        'Desk clutter, storyboards, production checklists, team ensemble acting, studio fluorescent warmth',
+      creative_brief:
+        'Deadline boards glow fluorescent in a studio where caffeine and keyframes share the same desk. Five women chase the anime dream through spreadsheets and storyboards, discovering that the real production is the friendship assembled frame by frame. Art is not just what hangs on the screen — it is who you make it with.',
+    },
   },
   {
-    "id": "SP05-211",
-    "name": "Super Cub - Mechanical Quietude Road",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Minimal school life transformed by a small motorbike, practical details, roadside sunlight, emotional expansion through ordinary movement and solitude",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Minimal, freeing, quiet, clean",
-      "key_features": "Motorbike detail, roadside composition, practical school clothing, open-air framing, subtle emotional acting",
-      "creative_brief": "A secondhand Honda carries a girl into the silence beyond town, where asphalt becomes meditation and engine drone replaces every word she never had. The world opens not with a roar but with the click of a kickstand and the decision to go somewhere, anywhere, alone and unafraid."
-    }
+    id: 'SP05-211',
+    name: 'Super Cub - Mechanical Quietude Road',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Minimal school life transformed by a small motorbike, practical details, roadside sunlight, emotional expansion through ordinary movement and solitude',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Minimal, freeing, quiet, clean',
+      key_features:
+        'Motorbike detail, roadside composition, practical school clothing, open-air framing, subtle emotional acting',
+      creative_brief:
+        'A secondhand Honda carries a girl into the silence beyond town, where asphalt becomes meditation and engine drone replaces every word she never had. The world opens not with a roar but with the click of a kickstand and the decision to go somewhere, anywhere, alone and unafraid.',
+    },
   },
   {
-    "id": "SP05-215",
-    "name": "Slow Loop - Riverside Fishing Sisters",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Fishing-by-the-river domestic healing, inherited hobbies, pastel water surfaces, practical tackle detail, soft family reconstruction through outdoor routine",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Pastoral, healing, quiet, tender",
-      "key_features": "Fishing gear, riverside backdrops, sibling closeness, reflective water light, practical outdoor textures",
-      "creative_brief": "Two hands on one fishing rod, the line arcing into water that holds both fish and the memory of a father who taught them how to cast. The river does not rush — it waits, like grief, like healing, like a sister learning to fill the silence with fly-tying and small inherited rituals. Every catch is also a release."
-    }
+    id: 'SP05-215',
+    name: 'Slow Loop - Riverside Fishing Sisters',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Fishing-by-the-river domestic healing, inherited hobbies, pastel water surfaces, practical tackle detail, soft family reconstruction through outdoor routine',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Pastoral, healing, quiet, tender',
+      key_features:
+        'Fishing gear, riverside backdrops, sibling closeness, reflective water light, practical outdoor textures',
+      creative_brief:
+        'Two hands on one fishing rod, the line arcing into water that holds both fish and the memory of a father who taught them how to cast. The river does not rush — it waits, like grief, like healing, like a sister learning to fill the silence with fly-tying and small inherited rituals. Every catch is also a release.',
+    },
   },
   {
-    "id": "SP05-216",
-    "name": "Laid-Back Camp - Winter Camp Stove Glow",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Cold-weather camping coziness, puffy jackets, enamel mugs, practical gear, quiet friendship through warm food and starry nights, tactile outdoor comfort",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Cozy, crisp, friendly, restorative",
-      "key_features": "Camp gear realism, stove warmth, starry-night campsites, bundled silhouettes, food-and-flame intimacy",
-      "creative_brief": "A camp stove throws orange light against the winter dark, warming hands and ramen and the quiet joy of being exactly where you chose to be. Puffy jackets and enamel mugs become the material poetry of outdoor solitude, each piece of gear a vote for comfort over convenience. The stars do not need to be shared — but it helps."
-    }
+    id: 'SP05-216',
+    name: 'Laid-Back Camp - Winter Camp Stove Glow',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Cold-weather camping coziness, puffy jackets, enamel mugs, practical gear, quiet friendship through warm food and starry nights, tactile outdoor comfort',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Cozy, crisp, friendly, restorative',
+      key_features:
+        'Camp gear realism, stove warmth, starry-night campsites, bundled silhouettes, food-and-flame intimacy',
+      creative_brief:
+        'A camp stove throws orange light against the winter dark, warming hands and ramen and the quiet joy of being exactly where you chose to be. Puffy jackets and enamel mugs become the material poetry of outdoor solitude, each piece of gear a vote for comfort over convenience. The stars do not need to be shared — but it helps.',
+    },
   },
   {
-    "id": "SP05-217",
-    "name": "Keep Your Hands Off Eizouken! - Sketch Imagination Sprint",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Student creativity exploding into rough production fantasies, sketchbook engines, hand-built worlds, clubroom zeal, imagination visualized with practical design obsession",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Inventive, spirited, nerdy, kinetic",
-      "key_features": "Sketch overlays, invention poses, clubroom clutter, production imagination sequences, rough-draft visual energy",
-      "creative_brief": "A sketch transforms mid-page from doodle to world — dams burst, cities fly, and three girls in a flooded clubroom invent visual language from scratch paper and obsession. Imagination here has mass and velocity, rough storyboards carrying the weight of entire universes. The best special effect is the spark in an animator eye."
-    }
+    id: 'SP05-217',
+    name: 'Keep Your Hands Off Eizouken! - Sketch Imagination Sprint',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Student creativity exploding into rough production fantasies, sketchbook engines, hand-built worlds, clubroom zeal, imagination visualized with practical design obsession',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Inventive, spirited, nerdy, kinetic',
+      key_features:
+        'Sketch overlays, invention poses, clubroom clutter, production imagination sequences, rough-draft visual energy',
+      creative_brief:
+        'A sketch transforms mid-page from doodle to world — dams burst, cities fly, and three girls in a flooded clubroom invent visual language from scratch paper and obsession. Imagination here has mass and velocity, rough storyboards carrying the weight of entire universes. The best special effect is the spark in an animator eye.',
+    },
   },
   {
-    "id": "SP05-082",
-    "name": "Nichijou – Absurd School Comedy",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Ordinary classrooms detonated by absurd punchlines, elastic reactions, crisp timing, deer-vs-principal wrestling, robot-girl Nano, explosion-cut reaction, go-soccer rule",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Absurd, bright, hilarious, energetic",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "The mundane is a thin membrane stretched over a universe of glorious nonsense — a deer wrestles a principal, a robot girl orders coffee, a soccer ball becomes existential crisis. Elastic faces stretch reality to its breaking point before snapping back with impeccable comic timing. Calm surfaces conceal the absurd hurricane always one frame away."
-    }
+    id: 'SP05-082',
+    name: 'Nichijou – Absurd School Comedy',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Ordinary classrooms detonated by absurd punchlines, elastic reactions, crisp timing, deer-vs-principal wrestling, robot-girl Nano, explosion-cut reaction, go-soccer rule',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Absurd, bright, hilarious, energetic',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        'The mundane is a thin membrane stretched over a universe of glorious nonsense — a deer wrestles a principal, a robot girl orders coffee, a soccer ball becomes existential crisis. Elastic faces stretch reality to its breaking point before snapping back with impeccable comic timing. Calm surfaces conceal the absurd hurricane always one frame away.',
+    },
   },
   {
-    "id": "SP05-083",
-    "name": "Lucky Star – Otaku Chat Slice",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Pop-culture banter, flat-color rooms, seated comedy rhythm, easygoing social energy, chocolate-corner, anime reference gags, blue-hair Konata, seasonal festival episodes",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Casual, nerdy, laid-back, witty",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "Conversation drifts like afternoon clouds across a classroom table, bouncing from chocolate snacks to mecha anime to the existential weight of which end of the cornet to eat first. Nothing happens and everything happens in the sacred rhythm of friends killing time together. The frame breathes easy, unhurried, content."
-    }
+    id: 'SP05-083',
+    name: 'Lucky Star – Otaku Chat Slice',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Pop-culture banter, flat-color rooms, seated comedy rhythm, easygoing social energy, chocolate-corner, anime reference gags, blue-hair Konata, seasonal festival episodes',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Casual, nerdy, laid-back, witty',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        'Conversation drifts like afternoon clouds across a classroom table, bouncing from chocolate snacks to mecha anime to the existential weight of which end of the cornet to eat first. Nothing happens and everything happens in the sacred rhythm of friends killing time together. The frame breathes easy, unhurried, content.',
+    },
   },
   {
-    "id": "SP05-084",
-    "name": "Haruhi Suzumiya – School Sci-Fi Whimsy",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Cheerful school life cracking open into weird cosmology, bright performance energy, SOS-brigade clubroom, god-complex narrator, bunny-suit publicity, closed-space entities",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Playful, uncanny, chaotic, meta",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "Ordinary school corridors bend into corridors of cosmic significance when a single girl's boredom can rewrite the fabric of reality. Bright-eyed chaos wears a ribbon and a smile, daring the universe to keep up. Make the extraordinary feel casually adjacent, like you might trip over a closed space on the way to lunch."
-    }
+    id: 'SP05-084',
+    name: 'Haruhi Suzumiya – School Sci-Fi Whimsy',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Cheerful school life cracking open into weird cosmology, bright performance energy, SOS-brigade clubroom, god-complex narrator, bunny-suit publicity, closed-space entities',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Playful, uncanny, chaotic, meta',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        "Ordinary school corridors bend into corridors of cosmic significance when a single girl's boredom can rewrite the fabric of reality. Bright-eyed chaos wears a ribbon and a smile, daring the universe to keep up. Make the extraordinary feel casually adjacent, like you might trip over a closed space on the way to lunch.",
+    },
   },
   {
-    "id": "SP05-087",
-    "name": "Non Non Biyori – Rural Quietude",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Slow countryside pacing, bright skies, tiny daily rituals, broad silence and warmth, rural-school one-room, countryside buses, ren-chon cuteness, cicada-summer sound",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Rural, calming, idyllic, nostalgic",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "Time flows at the speed of a countryside bus schedule — slow enough to count each cicada pulse, slow enough to notice the way sunlight moves across a single-floor schoolhouse. Smallness is not insignificance but intimacy; a child's handprints on a window are the day's only monument. Paint the air thick with the hush of summer afternoon."
-    }
+    id: 'SP05-087',
+    name: 'Non Non Biyori – Rural Quietude',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Slow countryside pacing, bright skies, tiny daily rituals, broad silence and warmth, rural-school one-room, countryside buses, ren-chon cuteness, cicada-summer sound',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Rural, calming, idyllic, nostalgic',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        "Time flows at the speed of a countryside bus schedule — slow enough to count each cicada pulse, slow enough to notice the way sunlight moves across a single-floor schoolhouse. Smallness is not insignificance but intimacy; a child's handprints on a window are the day's only monument. Paint the air thick with the hush of summer afternoon.",
+    },
   },
   {
-    "id": "SP05-090",
-    "name": "Clannad – Soft-Eyed Melodrama",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Oversized eyes, glowing memories, tender tragedy, sentimental domestic framing, Key visual-novel style, dango-daikazoku, cherry-blossom path, starfish carving",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Emotional, nostalgic, tearful, tender",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "Tears are stored behind enormous eyes like reservoirs behind glass — every glance is a memory waiting to spill, every cherry blossom a promise already falling. Domestic spaces become shrines to the people who made them warm, and light behaves like a gentle ghost of the happiness that once lived here. Let sorrow and sweetness share the same soft-focus frame."
-    }
+    id: 'SP05-090',
+    name: 'Clannad – Soft-Eyed Melodrama',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Oversized eyes, glowing memories, tender tragedy, sentimental domestic framing, Key visual-novel style, dango-daikazoku, cherry-blossom path, starfish carving',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Emotional, nostalgic, tearful, tender',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        'Tears are stored behind enormous eyes like reservoirs behind glass — every glance is a memory waiting to spill, every cherry blossom a promise already falling. Domestic spaces become shrines to the people who made them warm, and light behaves like a gentle ghost of the happiness that once lived here. Let sorrow and sweetness share the same soft-focus frame.',
+    },
   },
   {
-    "id": "SP05-201",
-    "name": "Hyouka - Tea-Light Mystery Classroom",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Quiet school mysteries, careful eye animation, old clubrooms, books and tea, low-drama deduction made beautiful through light and stillness, curiosity carrying the frame",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Curious, refined, calm, observant",
-      "key_features": "Clubroom detail, tea-and-book props, attentive facial acting, sunlit dust motes, restrained mystery framing",
-      "creative_brief": "Dust motes drift through sunlit clubroom air, each particle a clue too small to name. A cup of tea cools beside an unopened book, and the stillness itself becomes the mystery worth solving. Curiosity does not shout here — it glows like late afternoon through classroom windows, patient and exact."
-    }
+    id: 'SP05-201',
+    name: 'Hyouka - Tea-Light Mystery Classroom',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Quiet school mysteries, careful eye animation, old clubrooms, books and tea, low-drama deduction made beautiful through light and stillness, curiosity carrying the frame',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Curious, refined, calm, observant',
+      key_features:
+        'Clubroom detail, tea-and-book props, attentive facial acting, sunlit dust motes, restrained mystery framing',
+      creative_brief:
+        'Dust motes drift through sunlit clubroom air, each particle a clue too small to name. A cup of tea cools beside an unopened book, and the stillness itself becomes the mystery worth solving. Curiosity does not shout here — it glows like late afternoon through classroom windows, patient and exact.',
+    },
   },
   {
-    "id": "SP05-204",
-    "name": "Aria - Canal Breeze Healing Reverie",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Neo-Venezia gondola calm, watercolor water reflections, healing-company warmth, slow conversational days, beautiful emptiness and kindness drifting through every frame",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Healing, airy, serene, luminous",
-      "key_features": "Canal reflections, gondola silhouettes, white uniforms, water-breeze softness, peaceful city panoramas",
-      "creative_brief": "Water holds the city in a mirror that never quite settles, gondola wakes dissolving into the quiet of an aquamarine afternoon. Strangers become guests, then friends, then the reason the canal breeze feels like music. Healing moves at the speed of oars through still water — slow, rhythmic, irreversible."
-    }
+    id: 'SP05-204',
+    name: 'Aria - Canal Breeze Healing Reverie',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Neo-Venezia gondola calm, watercolor water reflections, healing-company warmth, slow conversational days, beautiful emptiness and kindness drifting through every frame',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Healing, airy, serene, luminous',
+      key_features:
+        'Canal reflections, gondola silhouettes, white uniforms, water-breeze softness, peaceful city panoramas',
+      creative_brief:
+        'Water holds the city in a mirror that never quite settles, gondola wakes dissolving into the quiet of an aquamarine afternoon. Strangers become guests, then friends, then the reason the canal breeze feels like music. Healing moves at the speed of oars through still water — slow, rhythmic, irreversible.',
+    },
   },
   {
-    "id": "SP05-205",
-    "name": "Barakamon - Island Calligraphy Summer",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Remote-island humor, calligraphy ink, lively kids, ocean wind and self-reinvention, fish-market energy, broad comedy softened by natural summer beauty",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Refreshing, funny, breezy, heartfelt",
-      "key_features": "Calligraphy tools, seaside village backdrops, energetic kids, summer sky expanses, fish-and-field props",
-      "creative_brief": "Ink splashes across fresh paper as a city-wrecked calligrapher discovers that art lives in the chaos of children and the salt of the sea. Fish-market laughter and cicada drone become brushstrokes of a summer that rewrites identity one imperfect character at a time. The island teaches what Tokyo never could — looseness is mastery."
-    }
+    id: 'SP05-205',
+    name: 'Barakamon - Island Calligraphy Summer',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Remote-island humor, calligraphy ink, lively kids, ocean wind and self-reinvention, fish-market energy, broad comedy softened by natural summer beauty',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Refreshing, funny, breezy, heartfelt',
+      key_features:
+        'Calligraphy tools, seaside village backdrops, energetic kids, summer sky expanses, fish-and-field props',
+      creative_brief:
+        'Ink splashes across fresh paper as a city-wrecked calligrapher discovers that art lives in the chaos of children and the salt of the sea. Fish-market laughter and cicada drone become brushstrokes of a summer that rewrites identity one imperfect character at a time. The island teaches what Tokyo never could — looseness is mastery.',
+    },
   },
   {
-    "id": "SP05-206",
-    "name": "Usagi Drop - Single-Parent Everyday Tenderness",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Gentle domestic routine, childcare sincerity, small apartments, school lunches, emotional growth through quiet responsibility and ordinary care",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Tender, domestic, patient, soft",
-      "key_features": "Household routine props, lunchbox detail, caregiving gestures, neighborhood paths, parent-child framing",
-      "creative_brief": "Small hands reach for a lunchbox as morning light traces the quiet architecture of unexpected parenthood. Every grocery run and bedtime story becomes a monument to choosing care over convenience. Tenderness lives in the ordinary — the bento arranged just so, the shoes lined up at the door, the silence after a question that needs no answer."
-    }
+    id: 'SP05-206',
+    name: 'Usagi Drop - Single-Parent Everyday Tenderness',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Gentle domestic routine, childcare sincerity, small apartments, school lunches, emotional growth through quiet responsibility and ordinary care',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Tender, domestic, patient, soft',
+      key_features:
+        'Household routine props, lunchbox detail, caregiving gestures, neighborhood paths, parent-child framing',
+      creative_brief:
+        'Small hands reach for a lunchbox as morning light traces the quiet architecture of unexpected parenthood. Every grocery run and bedtime story becomes a monument to choosing care over convenience. Tenderness lives in the ordinary — the bento arranged just so, the shoes lined up at the door, the silence after a question that needs no answer.',
+    },
   },
   {
-    "id": "SP05-209",
-    "name": "Is the Order a Rabbit? - Cafe Sugar Cotton",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Dessert-cafe moe softness, tiny uniforms, foam art and lace trims, decorative interiors, sugar-sweet pacing, plush friendliness and cozy customer-service charm",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Sugary, tiny, cute, soothing",
-      "key_features": "Cafe counters, lace uniform detail, desserts and teacups, plush texture cues, decorative interior symmetry",
-      "creative_brief": "Latte foam blooms into a rabbit silhouette atop a cup too pretty to disturb. Lace aprons and sugar-dusted counters frame a world where sweetness is not indulgence but atmosphere — the gravity that keeps everyone orbiting the same cozy counter. Every order arrives with a side of irreplaceable small-talk."
-    }
+    id: 'SP05-209',
+    name: 'Is the Order a Rabbit? - Cafe Sugar Cotton',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Dessert-cafe moe softness, tiny uniforms, foam art and lace trims, decorative interiors, sugar-sweet pacing, plush friendliness and cozy customer-service charm',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Sugary, tiny, cute, soothing',
+      key_features:
+        'Cafe counters, lace uniform detail, desserts and teacups, plush texture cues, decorative interior symmetry',
+      creative_brief:
+        'Latte foam blooms into a rabbit silhouette atop a cup too pretty to disturb. Lace aprons and sugar-dusted counters frame a world where sweetness is not indulgence but atmosphere — the gravity that keeps everyone orbiting the same cozy counter. Every order arrives with a side of irreplaceable small-talk.',
+    },
   },
   {
-    "id": "SP05-212",
-    "name": "Komi Can't Communicate - Chalkboard Social Jitters",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "School social-anxiety comedy with immaculate classrooms, chalkboard confession atmosphere, idealized modern student beauty filtered through nervous silence and cute exaggeration",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Shy, polished, funny, affectionate",
-      "key_features": "Classroom orderliness, chalkboard motifs, awkward body language, social-jitter reaction beats, beauty-and-comedy contrast",
-      "creative_brief": "A chalkboard becomes confessional, carrying the words a trembling hand cannot speak aloud. Silence stretches into something almost visible — a fourth wall between the girl who wants one hundred friends and the classroom that feels like a stage she never auditioned for. Every glance is a negotiation with courage."
-    }
+    id: 'SP05-212',
+    name: "Komi Can't Communicate - Chalkboard Social Jitters",
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'School social-anxiety comedy with immaculate classrooms, chalkboard confession atmosphere, idealized modern student beauty filtered through nervous silence and cute exaggeration',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Shy, polished, funny, affectionate',
+      key_features:
+        'Classroom orderliness, chalkboard motifs, awkward body language, social-jitter reaction beats, beauty-and-comedy contrast',
+      creative_brief:
+        'A chalkboard becomes confessional, carrying the words a trembling hand cannot speak aloud. Silence stretches into something almost visible — a fourth wall between the girl who wants one hundred friends and the classroom that feels like a stage she never auditioned for. Every glance is a negotiation with courage.',
+    },
   },
   {
-    "id": "SP05-213",
-    "name": "Working!! - Family Restaurant Shift Comedy",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Restaurant shift banter, aprons and order pads, ensemble workplace chemistry, low-stakes service chaos, after-school job warmth with punchy interactions",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Cheery, busy, ensemble-driven, comfy",
-      "key_features": "Restaurant props, work-uniform silhouettes, coworker chemistry staging, service-counter compositions, comedic order-taking beats",
-      "creative_brief": "Order bells ring counterpoint to kitchen chaos as aprons and inside jokes crisscross the dining floor. Nobody here is saving the world — they are saving table four from the wrong dressing and each other from bad days. Service with a smile, but the smile is real, and so is the family that clocked in together."
-    }
+    id: 'SP05-213',
+    name: 'Working!! - Family Restaurant Shift Comedy',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Restaurant shift banter, aprons and order pads, ensemble workplace chemistry, low-stakes service chaos, after-school job warmth with punchy interactions',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Cheery, busy, ensemble-driven, comfy',
+      key_features:
+        'Restaurant props, work-uniform silhouettes, coworker chemistry staging, service-counter compositions, comedic order-taking beats',
+      creative_brief:
+        'Order bells ring counterpoint to kitchen chaos as aprons and inside jokes crisscross the dining floor. Nobody here is saving the world — they are saving table four from the wrong dressing and each other from bad days. Service with a smile, but the smile is real, and so is the family that clocked in together.',
+    },
   },
   {
-    "id": "SP05-214",
-    "name": "Tanaka-kun Is Always Listless - Breeze-Drift Lethargy",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "High-school lethargy rendered as ambient art, soft wind, benches, low-energy friendship, sleepy body language and beautiful nothingness",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Sleepy, gentle, airy, easygoing",
-      "key_features": "Reclined poses, breeze effects, bench-and-classroom staging, minimal exertion comedy, soft ambient light",
-      "creative_brief": "A boy listless as a curtain in summer breeze becomes the still center around which friendship orbits without demand. Benches and classroom corners transform into temples of beautiful inertia — places where doing nothing together counts as everything. Slowness is not a flaw here; it is the aesthetic."
-    }
+    id: 'SP05-214',
+    name: 'Tanaka-kun Is Always Listless - Breeze-Drift Lethargy',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'High-school lethargy rendered as ambient art, soft wind, benches, low-energy friendship, sleepy body language and beautiful nothingness',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Sleepy, gentle, airy, easygoing',
+      key_features:
+        'Reclined poses, breeze effects, bench-and-classroom staging, minimal exertion comedy, soft ambient light',
+      creative_brief:
+        'A boy listless as a curtain in summer breeze becomes the still center around which friendship orbits without demand. Benches and classroom corners transform into temples of beautiful inertia — places where doing nothing together counts as everything. Slowness is not a flaw here; it is the aesthetic.',
+    },
   },
   {
-    "id": "SP05-218",
-    "name": "Yama no Susume - Summit Day Friendship",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Mountain-hiking schoolgirls, crisp air, trail snacks, gradual confidence building, summit panoramas, outdoor hobby warmth rendered with encouraging sincerity",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Fresh, supportive, scenic, uplifting",
-      "key_features": "Hiking gear, trail compositions, summit vistas, friendship encouragement gestures, bright mountain skies",
-      "creative_brief": "Trail switchbacks become a metaphor for growth — each turn revealing a wider sky, each step a small summit shared between friends who started the climb unsure. Granola bars taste better at altitude, and the peak is less a destination than a photograph waiting to prove you were brave together."
-    }
+    id: 'SP05-218',
+    name: 'Yama no Susume - Summit Day Friendship',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Mountain-hiking schoolgirls, crisp air, trail snacks, gradual confidence building, summit panoramas, outdoor hobby warmth rendered with encouraging sincerity',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Fresh, supportive, scenic, uplifting',
+      key_features:
+        'Hiking gear, trail compositions, summit vistas, friendship encouragement gestures, bright mountain skies',
+      creative_brief:
+        'Trail switchbacks become a metaphor for growth — each turn revealing a wider sky, each step a small summit shared between friends who started the climb unsure. Granola bars taste better at altitude, and the peak is less a destination than a photograph waiting to prove you were brave together.',
+    },
   },
   {
-    "id": "SP05-219",
-    "name": "Daily Lives of High School Boys - Hallway Idiot Theater",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Ordinary boys turning hallways and riverbanks into dead-serious nonsense stages, sketch-comedy timing, school-blazer awkwardness, underplayed absurdity",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Goofy, deadpan, schoolyard, loose",
-      "key_features": "Blazer silhouettes, hallway conversation staging, low-budget absurdist posing, riverbank comedy scenes, ensemble rhythm",
-      "creative_brief": "A school blazer becomes a cape, a hallway becomes a battlefield, and three friends treat absurdity with the solemnity of a national crisis. The joke is never the punchline — it is the commitment, the deadpan delivery, the way teenage boys alchemize boredom into theater with only each other as audience. Nothing matters, so everything does."
-    }
+    id: 'SP05-219',
+    name: 'Daily Lives of High School Boys - Hallway Idiot Theater',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Ordinary boys turning hallways and riverbanks into dead-serious nonsense stages, sketch-comedy timing, school-blazer awkwardness, underplayed absurdity',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Goofy, deadpan, schoolyard, loose',
+      key_features:
+        'Blazer silhouettes, hallway conversation staging, low-budget absurdist posing, riverbank comedy scenes, ensemble rhythm',
+      creative_brief:
+        'A school blazer becomes a cape, a hallway becomes a battlefield, and three friends treat absurdity with the solemnity of a national crisis. The joke is never the punchline — it is the commitment, the deadpan delivery, the way teenage boys alchemize boredom into theater with only each other as audience. Nothing matters, so everything does.',
+    },
   },
   {
-    "id": "SP05-220",
-    "name": "Sketchbook Full Colors - Stray Cat Afternoon",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Quiet art-club slice of life, drifting cat encounters, little town details, watercolor-soft afternoons, nearly plotless observation turned deeply comforting",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Drifting, soft, observant, comforting",
-      "key_features": "Sketchbook props, stray-cat motifs, little-town backdrops, warm afternoon light, observational stillness",
-      "creative_brief": "A stray cat leads the art club through an afternoon of barely-there narrative, each encounter a watercolor vignette of small-town stillness. Observation becomes the highest form of participation — watching, sketching, letting the world unfold at the speed of a cat stretching in sun. Plot dissolves into presence."
-    }
+    id: 'SP05-220',
+    name: 'Sketchbook Full Colors - Stray Cat Afternoon',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Quiet art-club slice of life, drifting cat encounters, little town details, watercolor-soft afternoons, nearly plotless observation turned deeply comforting',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Drifting, soft, observant, comforting',
+      key_features:
+        'Sketchbook props, stray-cat motifs, little-town backdrops, warm afternoon light, observational stillness',
+      creative_brief:
+        'A stray cat leads the art club through an afternoon of barely-there narrative, each encounter a watercolor vignette of small-town stillness. Observation becomes the highest form of participation — watching, sketching, letting the world unfold at the speed of a cat stretching in sun. Plot dissolves into presence.',
+    },
   },
   {
-    "id": "SP05-088",
-    "name": "Kobayashi's Dragon Maid – Domestic Fantasy Chaos",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Household comedy colliding with mythic creatures, bright domestic mayhem, affectionate humor, maid-dragon Tohru, tail-cooking gags, Kanna-chan cuteness, portal-to-another-world",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Whimsical, bustling, heartwarming, chaotic",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "A dragon in an apron is the universe's best joke and also its most sincere — mythic power folded into domestic devotion, tail used for cooking, portal to another world opening behind the laundry. The apartment is too small for this much love and entirely large enough to hold it all. Make chaos feel like home."
-    }
+    id: 'SP05-088',
+    name: "Kobayashi's Dragon Maid – Domestic Fantasy Chaos",
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Household comedy colliding with mythic creatures, bright domestic mayhem, affectionate humor, maid-dragon Tohru, tail-cooking gags, Kanna-chan cuteness, portal-to-another-world',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Whimsical, bustling, heartwarming, chaotic',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        "A dragon in an apron is the universe's best joke and also its most sincere — mythic power folded into domestic devotion, tail used for cooking, portal to another world opening behind the laundry. The apartment is too small for this much love and entirely large enough to hold it all. Make chaos feel like home.",
+    },
   },
   {
-    "id": "SP05-210",
-    "name": "Hidamari Sketch - Art Dorm Sunshine Scribble",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Art-student dorm life, warm sketchbook textures, soft geometric rooms, little daily rituals, low-pressure humor, cozy abstraction in everyday school life",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Sunny, crafty, relaxed, cute",
-      "key_features": "Sketchbook props, dorm-room geometry, art-supplies clutter, soft comedic staging, warm pastel room light",
-      "creative_brief": "A dorm room tilts into abstraction as sunlight reorganizes the geometry of easels and half-eaten snacks. Sketchbooks multiply like warm weeds, each page a small rebellion against precision. Creation here is not grand — it is the soft scratch of pencil on paper while a friend hums across the room."
-    }
+    id: 'SP05-210',
+    name: 'Hidamari Sketch - Art Dorm Sunshine Scribble',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Art-student dorm life, warm sketchbook textures, soft geometric rooms, little daily rituals, low-pressure humor, cozy abstraction in everyday school life',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Sunny, crafty, relaxed, cute',
+      key_features:
+        'Sketchbook props, dorm-room geometry, art-supplies clutter, soft comedic staging, warm pastel room light',
+      creative_brief:
+        'A dorm room tilts into abstraction as sunlight reorganizes the geometry of easels and half-eaten snacks. Sketchbooks multiply like warm weeds, each page a small rebellion against precision. Creation here is not grand — it is the soft scratch of pencil on paper while a friend hums across the room.',
+    },
   },
   {
-    "id": "SP05-085",
-    "name": "Bocchi the Rock! – Anxiety Glitch Music Comedy",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Social panic visualized through mixed-media bursts, guitar-club awkwardness, comic breakdowns, closet-rock scenes, pixel-art meltdowns, kessoku-band formation, live-house venues",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Awkward, hilarious, anxious, relatable",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "Social anxiety explodes into pixel-art shrapnel and manga-panel disintegration — a girl dissolves into dust because someone said hello. The stage becomes a lifeline, guitar strings the only language that doesn't betray. Let the frame shape-shift between awkward silence and the transcendent roar of a power chord."
-    }
+    id: 'SP05-085',
+    name: 'Bocchi the Rock! – Anxiety Glitch Music Comedy',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Social panic visualized through mixed-media bursts, guitar-club awkwardness, comic breakdowns, closet-rock scenes, pixel-art meltdowns, kessoku-band formation, live-house venues',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Awkward, hilarious, anxious, relatable',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        "Social anxiety explodes into pixel-art shrapnel and manga-panel disintegration — a girl dissolves into dust because someone said hello. The stage becomes a lifeline, guitar strings the only language that doesn't betray. Let the frame shape-shift between awkward silence and the transcendent roar of a power chord.",
+    },
   },
   {
-    "id": "SP05-089",
-    "name": "Azumanga Daioh – Soft Surreal Classroom",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Casual school comedy drifting into low-key surreal beats, gentle weirdness, simple shapes, Osaka daydreams, Chiyo-chan pigtails, Yukari-sensei chaos, penguin Chiyo",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Quietly bizarre, sweet, dreamy, gentle",
-      "key_features": "Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth",
-      "creative_brief": "The classroom bends gently at the corners, reality slightly warped by the gravitational pull of a daydream about nothing in particular. A penguin costume, a floating pigtail, a teacher's existential meltdown — all rendered in the quiet pastel palette of a mind wandering pleasantly off-course. Sweet surrealism that never raises its voice."
-    }
+    id: 'SP05-089',
+    name: 'Azumanga Daioh – Soft Surreal Classroom',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Casual school comedy drifting into low-key surreal beats, gentle weirdness, simple shapes, Osaka daydreams, Chiyo-chan pigtails, Yukari-sensei chaos, penguin Chiyo',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Quietly bizarre, sweet, dreamy, gentle',
+      key_features:
+        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+      creative_brief:
+        "The classroom bends gently at the corners, reality slightly warped by the gravitational pull of a daydream about nothing in particular. A penguin costume, a floating pigtail, a teacher's existential meltdown — all rendered in the quiet pastel palette of a mind wandering pleasantly off-course. Sweet surrealism that never raises its voice.",
+    },
   },
   {
-    "id": "SP05-203",
-    "name": "A Place Further Than the Universe - Youth Expedition Glow",
-    "category": "5. Slice of Life & Moe",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Teen friendship turned expedition dream, bright skies, travel prep, school uniforms becoming adventure gear, emotional propulsion through ordinary sincerity",
-      "form_and_line": "Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness",
-      "color_palette": "Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth",
-      "lighting_setup": "Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion",
-      "material_texture": "Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear",
-      "render_quality": "Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone",
-      "spatial_distortion": "Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy",
-      "atmosphere": "Hopeful, brave, bright, uplifting",
-      "key_features": "Travel gear, sky-heavy framing, friendship ensemble, determination close-ups, journey-prep montages",
-      "creative_brief": "Four silhouettes against an impossibly white horizon, their school skirts still creased from yesterday classroom. The map they unfold is less geography than permission — a dare written in longitude and the geometry of friendship. Every frame trembles with the velocity of a dream that refuses to stay hypothetical."
-    }
-  }
+    id: 'SP05-203',
+    name: 'A Place Further Than the Universe - Youth Expedition Glow',
+    category: '5. Slice of Life & Moe',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Teen friendship turned expedition dream, bright skies, travel prep, school uniforms becoming adventure gear, emotional propulsion through ordinary sincerity',
+      form_and_line:
+        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+      color_palette:
+        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+      lighting_setup:
+        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+      material_texture:
+        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+      render_quality:
+        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+      spatial_distortion:
+        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+      atmosphere: 'Hopeful, brave, bright, uplifting',
+      key_features:
+        'Travel gear, sky-heavy framing, friendship ensemble, determination close-ups, journey-prep montages',
+      creative_brief:
+        'Four silhouettes against an impossibly white horizon, their school skirts still creased from yesterday classroom. The map they unfold is less geography than permission — a dare written in longitude and the geometry of friendship. Every frame trembles with the velocity of a dream that refuses to stay hypothetical.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

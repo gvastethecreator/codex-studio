@@ -1,4 +1,5 @@
 import {
+  createProviderInputMetrics,
   createGenerationTaskSpec,
   type CompiledProviderInput,
   type GenerationProviderId,
@@ -38,6 +39,9 @@ export interface ProviderInputAuditRow {
   compiledInputChars: number;
   compiledPayloadChars: number;
   estimatedPromptChars: number | null;
+  assetRefCount: number;
+  inlineAssetBytesPresent: boolean;
+  providerSessionContractId: string | null;
   legacyRecipeContextChars: number;
   recipeProviderDirectivesChars: number;
   hasRecipeProviderDirectives: boolean;
@@ -64,10 +68,6 @@ export interface ProviderInputAuditReport {
 const EXTERNAL_FIXTURE_PROVIDERS: GenerationProviderId[] = ['google', 'fal', 'comfy'];
 const SECRET_LIKE_PATTERN =
   /(api[_-]?key|secret|bearer|access[_-]?token|refresh[_-]?token|sk-[A-Za-z0-9]|SHOULD_NOT_LEAK|SECRET_INLINE_IMAGE|data:image\/[^;]+;base64)/i;
-
-function jsonChars(value: unknown) {
-  return JSON.stringify(value).length;
-}
 
 function createAuditJob(providerId: GenerationProviderId, sourceSpec: GenerationTaskSpec) {
   return {
@@ -212,6 +212,7 @@ function createAuditRow({
 }): ProviderInputAuditRow {
   const compiledJson = JSON.stringify(compiled);
   const payloadJson = JSON.stringify(compiled.payload);
+  const metrics = createProviderInputMetrics(sourceSpec, compiled);
   const recipeProviderDirectives = sourceSpec.metadata.recipeProviderDirectives;
   const serializedDirectives = isRecipeProviderDirectives(recipeProviderDirectives)
     ? serializeRecipeProviderDirectives(recipeProviderDirectives)
@@ -238,10 +239,13 @@ function createAuditRow({
     recipeId: sourceSpec.recipeId,
     task: sourceSpec.task,
     payloadKind: compiled.payloadKind,
-    sourceSpecChars: jsonChars(sourceSpec),
-    compiledInputChars: jsonChars(compiled),
-    compiledPayloadChars: jsonChars(compiled.payload),
-    estimatedPromptChars: compiled.audit.estimatedPromptChars,
+    sourceSpecChars: metrics.sourceSpecChars,
+    compiledInputChars: metrics.compiledInputChars,
+    compiledPayloadChars: metrics.compiledPayloadChars,
+    estimatedPromptChars: metrics.estimatedPromptChars,
+    assetRefCount: metrics.assetRefCount,
+    inlineAssetBytesPresent: metrics.inlineAssetBytesPresent,
+    providerSessionContractId: metrics.providerSessionContractId,
     legacyRecipeContextChars: legacyRecipeContext.length,
     recipeProviderDirectivesChars: serializedDirectives.length,
     hasRecipeProviderDirectives: Boolean(serializedDirectives),
@@ -307,6 +311,9 @@ export function createProviderInputAuditReport(
   for (const row of rows) {
     if (!row.compact) failures.push(`${row.id} is not marked compact.`);
     if (!row.omittedStableInstructions) failures.push(`${row.id} repeats stable instructions.`);
+    if (row.inlineAssetBytesPresent && row.kind === 'recipe') {
+      failures.push(`${row.id} has inline asset bytes in source spec.`);
+    }
     if (row.inlineDataLeak) failures.push(`${row.id} leaks inline image data.`);
     if (row.secretLikeLeak) failures.push(`${row.id} leaks secret-like payload content.`);
     if (row.kind === 'recipe' && !row.hasRecipeProviderDirectives) {

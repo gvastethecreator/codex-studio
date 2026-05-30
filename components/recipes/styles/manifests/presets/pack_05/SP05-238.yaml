@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Digital kaiju fights in suburban city blocks, tokusatsu legacy reframed through modern clean lines, neon grid overlays, giant-hero silhouette clarity and youth melancholy
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Neon, heroic, melancholic, clean
-  key_features: Grid overlays, giant-hero silhouettes, suburban city destruction, clean digital mecha lines, tokusatsu posing
-  creative_brief: Tokusatsu giants cast neon shadows over suburban rooftops while teenagers carry the weight of digital gods in their chests. Grid lines crackle through ordinary streets like memory through static. Heroism is clean lines and complicated silence.
+  aesthetic: Neo-tokusatsu digital anime style with giant-silhouette heroism, lattice-grid iconography, and clean melancholic futurism
+  form_and_line: Bold hero contour staging, scale-contrast silhouette stacking, geometric effect overlays, restrained technical hatch accents
+  color_palette: Cool steel base, electric cyan lattices, muted magenta glows, controlled white-hot highlights, low-saturation dusk neutrals
+  lighting_setup: Monumental backlight silhouettes, grid-emissive overlays, selective rim emphasis, soft atmospheric diffusion against hard key edges
+  material_texture: Smooth armored composites, semi-gloss synthetic panels, subtle weathering traces, luminous energy-surface interaction cues
+  render_quality: Crisp modern tokusatsu-anime finish with high silhouette readability, effect-layer precision, and emotionally clean rendering
+  spatial_distortion: Hero-scale exaggeration via depth compression and vertical dominance, with foreground-midground scale tension
+  atmosphere: Heroic, wistful, controlled, luminous, resonant
+  key_features: Giant-form silhouette grammar, digital lattice overlays, disciplined mecha contour language, mood-through-scale composition
+  creative_brief: >-
+    The style should be recognized by monumental silhouette contrast and
+    digital-grid visual motifs; keep the emotional tone contemplative while
+    preserving clean heroic readability across different subjects.
 avoidRules:
   - realistic
   - 3d render

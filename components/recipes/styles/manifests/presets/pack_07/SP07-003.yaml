@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: 1950s/60s designer interior, Palm Springs chic, atomic-era optimism, cocktail culture
-  form_and_line: Organic curves, tapered legs, sculptural silhouettes, floating sideboards, kidney shapes
-  color_palette: Teak wood, Mustard Yellow, Olive Green, Burnt Orange, Warm Walnut, Avocado
-  lighting_setup: Sputnik chandelier, warm lamp, arc floor lamp, filtered afternoon glow, bubble pendant
-  material_texture: Wood grain, tweed fabric, molded plywood, hairpin steel, shag wool, walnut veneer
-  render_quality: Mad Men mid-century editorial, stylish, retro, Don Draper warmth
-  spatial_distortion: None
-  atmosphere: Stylish, nostalgic, warm, confident, cocktail-hour ease, aspirational cool
-  key_features: Iconic furniture shapes, sunken lounge, breeze blocks, atomic starburst, tapered legs
-  creative_brief: Sunlight slants through atomic-age optimism, warming teak and tweed with the confidence of an era that believed in tomorrow. Curves cradle the eye like a cocktail glass, every silhouette an argument for pleasure as virtue. Nostalgia distilled to its purest form, not memory but mood.
+  aesthetic: Mid-century modern interior style with atomic optimism, sculptural domesticity, and restrained retro sophistication
+  form_and_line: Organic modern curves, tapered structural elements, floating cabinetry lines, and iconically balanced furniture silhouettes
+  color_palette: Teak-walnut browns with mustard-olive accents, burnt orange punctuation, and warm neutral support fields
+  lighting_setup: Warm ambient lamp pools, period pendant glow, filtered afternoon daylight, and low-contrast hospitality warmth
+  material_texture: Veneered wood grain clarity, tweed and wool tactility, molded plywood smoothness, and light metal detailing
+  render_quality: Editorial retro-modern visualization with clean compositional discipline and materially rich but controlled nostalgia
+  spatial_distortion: Stable proportions with gentle curvature emphasis to preserve sculptural furniture readability
+  atmosphere: Warm, stylish, nostalgic, social, composed
+  key_features: Atomic-modern silhouette language, wood-textile harmony, tapered geometry cadence, retro editorial balance
+  creative_brief: >-
+    Preserve this preset through iconic mid-century proportion logic and
+    warm material choreography, keeping atomic-era optimism as a transferable
+    mood rather than a fixed period scene.
 avoidRules:
   - antique
   - victorian

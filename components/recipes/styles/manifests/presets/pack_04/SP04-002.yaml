@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Cosmic silver-age dynamism, Jack Kirby style, crackling energy dots, cosmic scale, new-god ambition
-  form_and_line: Dynamic energy, Kirby dots, crackle, cosmic radiation lines
+  aesthetic: Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic interstellar scale
+  form_and_line: High-velocity foreshortened contouring, dense energy-dot fields, radiation burst linework, and impact-first panel rhythm
   color_palette: Bright primary, comic pop spectrum, magenta/cyan punch
   lighting_setup: Dramatic, cosmic backlight, heroic rim glow
   material_texture: Newsprint
-  render_quality: Cosmic, energetic, crackling aura, silver-age spectacle
+  render_quality: Bold classic-comic rendering focused on energetic readability, cosmic spectacle, and iconic action silhouette clarity
   spatial_distortion: Exaggerated perspective
   atmosphere: Epic, sci-fi, super-powered wonder, interstellar drama
-  key_features: Kirby Krackle, cosmic energy field, dynamic foreshortening
-  creative_brief: Kirby Krackle erupts across the cosmic canvas, each crackling dot a universe of potential energy held in suspension. The linework vibrates with silver-age awe, where every fist and cape thrusts toward an infinite horizon of wonder. This is visual scripture for the age of atomic optimism, drawn by a hand that believed the cosmos could be conquered with courage and a perfectly foreshortened punch.
+  key_features: Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age heroic panel cadence
+  creative_brief: >-
+    Keep this preset anchored in silver-age cosmic action grammar: crackling
+    energy-dot fields, optimistic interstellar scale, and aggressive
+    foreshortened hero staging should define identity without naming any author.
 avoidRules:
   - dark
   - gritty

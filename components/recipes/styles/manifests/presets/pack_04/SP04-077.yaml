@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Wildstyle mural
-  form_and_line: Outline and fill
-  color_palette: Vibrant spray, wildstyle palette, fill-outline separation
-  lighting_setup: Highlights, 3D-bevel shine, spray-glow radiance
-  material_texture: Brick wall
-  render_quality: Masterpiece, complex, piece-book glory, production-level mural
-  spatial_distortion: Arrow shapes
-  atmosphere: Hip hop, bold, wall-of-fame prestige, block-party spectacle
-  key_features: Arrows, letter connections, dimension bevel
-  creative_brief: Color fills interlock like puzzle pieces of pure style, wildstyle letterforms bending into abstraction and back. Arrows, connections, and dimensional drops build a visual complexity that rewards the second look and the third. This is the wall as gallery, where the piece claims space with the authority of paint and the generosity of public art.
+  aesthetic: Wildstyle mural composition with layered letter architecture
+  form_and_line: Multi-layer outlines, interlocking fills, arrows and extension bars
+  color_palette: High-saturation spray spectrum with complementary contrast blocking
+  lighting_setup: Graphic bevel highlights and controlled glow accents for depth cues
+  material_texture: Masonry wall grain under aerosol gradients and cutbacks
+  render_quality: Complex and polished mural rendering with deliberate hierarchy
+  spatial_distortion: Aggressive perspective bends, angular connectors, kinetic skew
+  atmosphere: Celebratory, competitive, showcase-wall intensity
+  key_features: Nested outlines, dimensional drop logic, connector lattice, readable abstraction
+  creative_brief: >-
+    Construct a full piece as layered typographic architecture. Balance complexity and legibility through clear hierarchy: primary letter mass, secondary connectors, and tertiary effects. Use color blocking, bevel cues, and arrow rhythm to create depth-rich compositions that stay coherent at wall scale.
 avoidRules:
   - tag
   - messy

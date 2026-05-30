@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Underground comix crosshatching, R. Crumb style, obsessive ink, counterculture texture, raw id
-  form_and_line: Crosshatching, wobble
-  color_palette: Black and White, obsessive ink, dense-hash texture
-  lighting_setup: Texture heavy, crosshatch shading, paranoid shadow web
-  material_texture: Gritty paper
-  render_quality: Counter-culture, ugly, hand-drawn funk, underground authenticity
-  spatial_distortion: Grotesque
-  atmosphere: Subversive, weird, countercultural absurdism, satirical bite
-  key_features: Dense detail, obsessive crosshatching, wobbling panel borders
-  creative_brief: Ink builds in dense crosshatched thickets, every stroke an obsessive confession dragged from the id. The paper sweats counterculture, wobbling panel borders refusing the tyranny of the straight edge. This is drawing as exorcism, the hand moving faster than propriety can stop it.
+  aesthetic: Underground comix ink density (R. Crumb-inspired counterculture draftsmanship)
+  form_and_line: Nervous wobble contours with obsessive crosshatch layering
+  color_palette: High-contrast black-and-white with dense hatch midtones
+  lighting_setup: Shadow built by manual hatch fields and texture accumulation
+  material_texture: Rough print-paper feel with visible hand-ink irregularity
+  render_quality: Raw, hand-forged, anti-polish comic finish
+  spatial_distortion: Grotesque exaggeration and elastic anatomy choices
+  atmosphere: Subversive, satirical, abrasive, id-driven
+  key_features: Heavy hatch webs, warped panel borders, hyper-detailed clutter zones
+  creative_brief: >-
+    Lean into restless hand energy and deliberate visual overload. Use crosshatch mass, unstable contour rhythm, and grotesque proportion shifts to maintain a R. Crumb-like underground comix attitude without locking the prompt to a specific scene setup.
 avoidRules:
   - clean
   - mainstream

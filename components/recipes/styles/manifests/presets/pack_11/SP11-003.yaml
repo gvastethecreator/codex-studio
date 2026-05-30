@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - science-and-bio-curiosities
 visualDna:
-  aesthetic: Hand-sculpted modeling clay, squishy art, childhood craft table, sensory play
-  form_and_line: Soft, squished edges, rolled cylinders, pinched forms, organic blobs
-  color_palette: Bright, mixed colors, primary yellow-red-blue-green, marbled blends, matte finish
-  lighting_setup: Soft studio light, diffused overhead, warm tabletop, gentle fill
-  material_texture: Salty dough, fingerprints, cracks, slightly dry surface, crumbly edges, hand-warmed softness
-  render_quality: Preschool art, fun, soft, tactile joy, refrigerator-gallery charm, imperfect beauty
-  spatial_distortion: Blobby shapes, flattened gravity, uneven thickness, smooshed proportions
-  atmosphere: Childish, creative, messy, experimental, happy chaos, beginner's joy
-  key_features: Cracks in dry clay, color smears, thumb impressions, tool marks
-  creative_brief: Fingerprints become brushstrokes in a world made of squishable possibility, the salty dough remembering every press and pinch. Bright colors smear together at the borders where imagination overflows and precision dissolves into happy chaos. The art lives in its imperfection, carrying the honest mark of hands too young for straight lines.
+  aesthetic: Hand-molded dough-craft style with tactile imperfection, playful experimentation, and analog childlike sculpting energy
+  form_and_line: Pinched organic silhouettes, rolled-volume construction, uneven hand-shaped edges, and compression-led contour behavior
+  color_palette: Bright mixed primaries with marbled blend transitions and matte craft-paste chroma softness
+  lighting_setup: Gentle diffused tabletop lighting emphasizing surface dents, soft shadows, and finger-formed volume relief
+  material_texture: Dough-like matte grain, thumbprint impressions, crumbly micro-cracks, tool-scrape traces, and hand-warmed surface irregularity
+  render_quality: Tactile craft-render finish prioritizing handmade honesty, texture legibility, and playful imperfect shaping
+  spatial_distortion: Smooshed uneven proportions with gravity-soft forms and non-uniform thickness distribution
+  atmosphere: Playful, messy, warm, experimental, joyful
+  key_features: Fingerprint topology, pinch-and-roll morphology, matte dough crackle cues, handmade asymmetry language
+  creative_brief: >-
+    Keep this preset grounded in tactile hand-sculpting evidence: finger marks,
+    uneven compression, and matte dough behavior should carry the identity
+    independent of any specific craft-table narrative.
 avoidRules:
   - shiny
   - wet

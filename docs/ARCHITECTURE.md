@@ -1,8 +1,8 @@
-# Architecture
+# Arquitectura
 
-## Overview
+## Visión general
 
-Codex Studio keeps the React/Vite SPA as the primary interface, but real generation work runs through a local Bun/Hono backend. The backend supervises `codex app-server`, persists SQLite state, serves Studio Library assets, and emits live SSE events.
+Codex Studio mantiene una SPA React/Vite como interfaz principal, pero la ejecución real de generación ocurre en un backend local Bun/Hono. Ese backend supervisa `codex app-server`, persiste estado en SQLite, sirve assets de Studio Library y emite eventos SSE en vivo.
 
 ```mermaid
 graph TD
@@ -29,7 +29,7 @@ graph TD
     PROVIDERS --> COMFY["ComfyUI local runtime"]
 ```
 
-## Main seams
+## Seams principales
 
 - `hooks/useStudioShell.ts`: materializes the `Studio Shell` by composing deeper shell-facing seams instead of owning catalog, page, and command wiring inline.
 - `hooks/useStudioViewState.ts`: groups shell-local queue, editor, preview, and overlay visibility state so `useStudioShell.ts` can cross smaller view-state surfaces instead of a flat list of UI setters.
@@ -67,11 +67,11 @@ graph TD
 - `components/shell/StudioViewport.tsx`: demand-mounted route shell that lazy-loads studio and recipe surfaces.
 - `components/recipes/styles/manifests/`: granular source of truth for Style Pack Manifests and Style Preset Manifests.
 
-## Generation flow
+## Flujo de generación
 
 1. The user works in the UI: prompt, recipe, attachments, batch count, provider, and workspace.
 2. `useGenerationPipeline` delegates execution to the local generation runner.
-3. The runner resolves the Recipe Module, builds a provider-independent Generation Task Spec, creates one or more Persistent Jobs, and waits through the shared SSE stream.
+3. The runner resolves the Recipe Module, creates a `batch-*` local run id, builds provider-independent Generation Task Specs with `spec-*` ids, creates one or more Persistent Jobs, and waits through the shared SSE stream.
 4. The backend worker executes each job through the Provider Boundary.
 5. Codex remains the primary adapter and runs turns against `codex app-server`.
 6. External adapters compile the same Generation Task Spec into compact provider-specific inputs and only execute when concrete runtime preflight passes.
@@ -79,7 +79,7 @@ graph TD
 8. The UI refreshes `/api/catalog` by `jobId` and renders catalog-derived images.
 9. Legacy Visual Batch compatibility is built only for remaining grid/recovery edges.
 
-## State and persistence
+## Estado y persistencia
 
 - SQLite is the local source of truth for jobs, cataloged assets, libraries, projects, settings, job events, and system logs.
 - The Studio Library is an external local folder. By default it lives under the user's home directory, for example `%USERPROFILE%\AI-Studio-Library` on Windows.
@@ -88,7 +88,7 @@ graph TD
 - `LegacyVisualBatchContext` stores only lightweight refs for recovery dedupe and generated append compatibility.
 - External Output Sources are read-only candidates until selected files are explicitly imported as Local Assets into the Studio Library.
 
-## Local session and readiness
+## Sesión local y readiness
 
 - The main product flow is blocked on **ChatGPT login** through the local Codex CLI.
 - The default Codex flow does not require `OPENAI_API_KEY`.
@@ -113,7 +113,7 @@ Current concrete adapters:
 - **Google Gemini image API:** hosted executor using `GOOGLE_API_KEY`, `GEMINI_API_KEY`, or `NANO_BANANA_API_KEY` from backend env only.
 - **ComfyUI:** local executor using `COMFY_API_URL` or `COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`.
 
-## Demand-mounted surfaces
+## Superficies demand-mounted
 
 Large or optional UI surfaces should not inflate startup:
 
@@ -122,7 +122,7 @@ Large or optional UI surfaces should not inflate startup:
 - heavy catalog data, YAML parsing, ZIP export, Three.js, and visual background effects are lazy-loaded;
 - `ui:source:verify` and `ui:chunks:verify` guard against regressions.
 
-## Automation surfaces
+## Superficies de automatización
 
 Codex SDK or scripts are automation surfaces, not the product runtime. They are used for audits, migrations, checks, and maintenance:
 
@@ -134,7 +134,7 @@ Codex SDK or scripts are automation surfaces, not the product runtime. They are 
 - `ui:chunks:verify`
 - `library:layout:verify`
 
-## Open-source architecture goals
+## Objetivos de arquitectura open-source
 
 - Keep setup local-first and Codex-first.
 - Keep user assets and runtime state outside the repo.

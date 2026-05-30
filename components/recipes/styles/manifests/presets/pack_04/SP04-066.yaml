@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Warhol pop-art print, factory repetition, celebrity silkscreen, mass-media critique
-  form_and_line: None
+  aesthetic: Pop-serigraph style with repetition logic, flat-process color authority, and media-reproduction iconography
+  form_and_line: Layered flat-shape construction with screen-offset edges, halftone contour cues, and repeat-grid compositional rhythm
   color_palette: Misaligned layers, pop-art separation, silkscreen offset
   lighting_setup: Halftone, mesh-screen texture, dot-pattern shadow
   material_texture: Mesh pattern
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Offset color
   atmosphere: Bold, commercial, screenprint bazaar, poster-shop energy
   key_features: Layer overlap, color misregistration, halftone rosette
-  creative_brief: Colors stack in flat layers like bricks in a factory wall, each screen its own sovereign nation of pigment. Repetition becomes meditation, celebrity faces multiplying into pattern, personality dissolving into product. This is the image as mass production, where the copy destroys the original and replaces it with icon.
+  creative_brief: >-
+    Preserve identity through serigraph-pop grammar: repeatable flat layers,
+    misregistration offsets, and halftone process texture should define style
+    without depending on one celebrity motif.
 avoidRules:
   - gradient
   - painting

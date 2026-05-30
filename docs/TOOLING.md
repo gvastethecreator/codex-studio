@@ -1,33 +1,30 @@
-# Tooling and Quality Flow
+# Tooling y flujo de calidad
 
-This document summarizes the development stack and operational commands for the repo.
+Este documento resume el stack de desarrollo y los comandos operativos del repo.
 
-## Current stack
+## Ruta rápida
 
-- **Package manager:** Bun
-- **UI toolchain:** Vite+
-- **UI bundler:** Vite 8 + Rolldown
-- **Lint / format:** Oxlint + Oxfmt through Vite+
-- **Unit tests:** Vitest through Vite+
-- **Styles:** Tailwind CSS v4 with tokens in `index.css`
-- **React animation:** GSAP
+1. Usa `bun run check` durante el ciclo normal.
+2. Valida con `bun run test`.
+3. Cierra con `bun run build` o `bun run validate:full`.
 
-## Source of truth
+## Stack actual
 
-UI tooling configuration lives in `vite.config.ts`.
+- Gestor de paquetes: **Bun**
+- Toolchain UI: **Vite+**
+- Bundler UI: **Vite 8 + Rolldown**
+- Lint/format: **Oxlint + Oxfmt** vía Vite+
+- Tests unitarios: **Vitest** vía Vite+
+- Estilos: **Tailwind CSS v4**
+- Animación React: **GSAP**
 
-It centralizes:
+## Fuente de verdad
 
-- app aliases;
-- `fmt`;
-- `lint`;
-- `test`;
-- `staged`;
-- Vite and Tailwind plugins.
+La configuración de tooling vive en `vite.config.ts`.
 
-Do not reintroduce duplicate ESLint, Prettier, or Vitest configuration outside this file unless there is a documented exception.
+No dupliques configuración de ESLint/Prettier/Vitest fuera de ese archivo salvo excepción explícitamente documentada.
 
-## Main commands
+## Comandos principales
 
 ```bash
 bun run fmt
@@ -42,34 +39,24 @@ bun run validate:fast
 bun run validate:full
 ```
 
-## Persistent logs
+## Logs persistentes
 
-These tasks run through `scripts/tooling-task.ts` and write logs to `logs/tooling/`.
+Las tareas de calidad/build pasan por `scripts/tooling-task.ts` y escriben en `logs/tooling/`:
 
-Conventions:
+- `<task>-YYYY-MM-DDTHH-MM-SS.log`
+- `<task>.latest.log`
 
-- `<task>-YYYY-MM-DDTHH-MM-SS.log` — one specific run;
-- `<task>.latest.log` — latest known state for that task.
+## Checklist
 
-This makes it possible to:
+- [ ] Usar `validate:fast` durante iteración.
+- [ ] Usar `validate:full` antes de cerrar trabajo grande.
+- [ ] Adjuntar logs relevantes si reportas fallos.
 
-- attach a concrete failure to an issue;
-- review long runs without losing context to terminal scrollback;
-- debug intermittent failures without immediately re-running the command.
+## Nota de rendimiento (Windows)
 
-## Notes
+Puedes reducir carga del terminal/IDE ajustando:
 
-- `bun run build` validates both the UI and the local backend.
-- `bun run validate:fast` is the recommended short loop during refactors.
-- `bun run validate:full` is the local release gate before closing larger work.
-- VS Code tasks in `.vscode/tasks.json` mirror this flow with short emoji-labeled names.
+- `OXFMT_THREADS`
+- `OXLINT_THREADS`
 
-## Integrated terminal stability
-
-To avoid freezing the integrated terminal or overloading the IDE on Windows:
-
-- `bun run fmt` and `bun run fmt:check` limit Oxfmt to a reasonable thread count. The default is `8` and can be overridden with `OXFMT_THREADS`.
-- `bun run lint` and `bun run lint:fix` limit Oxlint to a reasonable thread count. The default is `8` and can be overridden with `OXLINT_THREADS`.
-- `bun run build` and the build step inside `validate:full` no longer dump the full asset list to the console. The terminal shows a short summary and the full detail remains in `logs/tooling/`.
-
-If you need full output from a heavy run, open the corresponding timestamped log in `logs/tooling/` instead of repeating the command just to read the console.
+Si necesitas detalle completo, revisa `logs/tooling/` en lugar de repetir comandos sólo para leer salida.

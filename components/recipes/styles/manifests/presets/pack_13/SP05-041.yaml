@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Court gowns, flowers, dramatic gazes, romantic palace framing, voluminous ballroom skirts, tear-streaked embraces, royal intrigue, candlelit corridors
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
-  atmosphere: Regal, passionate, elegant, romantic
-  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
-  creative_brief: Silk whispers across marble as candlelight catches the single tear-track of a duchess caught between duty and desire, voluminous gowns rustling with the weight of unspoken declarations. Every glance across the ballroom is a treaty signed in rose petals — palace intrigue rendered in the language of lace and longing.
+  aesthetic: Ornamental court-romance shojo style with aristocratic elegance, ceremonial drama, and emotionally charged decorum
+  form_and_line: Fine calligraphic contouring, elongated graceful anatomy, couture silhouette emphasis, gesture-rich hand and gaze choreography
+  color_palette: Rose-pearl pastels with jewel-toned ceremonial accents, warm candle ambers, ivory highlights, and muted velvet shadows
+  lighting_setup: Portrait-soft bloom, candle-like practical glows, selective rim polish, and luminous halation tuned for emotional proximity
+  material_texture: Silk drape fidelity, lace micro-detail, satin reflectance, floral appliqué softness, delicate ornamental surface layering
+  render_quality: Luxe shojo rendering with couture-grade fabric readability, polished emotional close-ups, and restrained cinematic softness
+  spatial_distortion: Ballroom-scale elegance through vertical elongation and curated depth layering that prioritizes relational staging
+  atmosphere: Regal, yearning, tender, ceremonial, dramatic
+  key_features: Couture-emotion coupling, ornament-driven composition, gaze-led dramaturgy, ceremonial color hierarchy
+  creative_brief: >-
+    Encode this preset as an ornamental romance grammar: couture silhouettes,
+    ceremonial lighting, and emotionally loaded gaze choreography should remain
+    transferable beyond any single palace narrative.
 avoidRules:
   - realistic
   - 3d render

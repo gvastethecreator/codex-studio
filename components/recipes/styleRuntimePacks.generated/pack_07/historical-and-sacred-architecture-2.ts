@@ -4,75 +4,102 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP07-022",
-    "name": "Neoclassical",
-    "category": "3. Historical And Sacred Architecture",
-    "negativePrompt": "modern, asymmetry",
-    "style": {
-      "aesthetic": "Government building/Museum, temple-front authority, Enlightenment reason, civic monument",
-      "form_and_line": "Columns, pediments, triangular tympanum, stepped plinths, axial vistas",
-      "color_palette": "White Marble, Stone, Portland limestone, Gilded bronze, Cool Grey shadow",
-      "lighting_setup": "Sunlight and shadow, column-cast stripes, portico shade, floodlit night drama",
-      "material_texture": "Smooth stone, chiseled marble, polished granite, cast plaster, verdigris copper",
-      "render_quality": "Grand, symmetrical, order, eternal authority, democratic dignity, timeless proportion",
-      "spatial_distortion": "None",
-      "atmosphere": "Serious, powerful, timeless, institutionally calm, Athenian echo, civic pride",
-      "key_features": "Columns, triangular pediment, domed rotunda, grand staircase, axial symmetry",
-      "creative_brief": "Columns march in disciplined procession toward a pediment that crowns reason triumphant over chaos. Stone carries the echo of senates and symposiums, every fluted shaft a vote for order over impulse. The structure does not persuade, it declares, wearing its authority in marble and proportion."
-    }
+    id: 'SP07-022',
+    name: 'Neoclassical',
+    category: '3. Historical And Sacred Architecture',
+    negativePrompt: 'modern, asymmetry',
+    style: {
+      aesthetic:
+        'Government building/Museum, temple-front authority, Enlightenment reason, civic monument',
+      form_and_line: 'Columns, pediments, triangular tympanum, stepped plinths, axial vistas',
+      color_palette: 'White Marble, Stone, Portland limestone, Gilded bronze, Cool Grey shadow',
+      lighting_setup:
+        'Sunlight and shadow, column-cast stripes, portico shade, floodlit night drama',
+      material_texture:
+        'Smooth stone, chiseled marble, polished granite, cast plaster, verdigris copper',
+      render_quality:
+        'Grand, symmetrical, order, eternal authority, democratic dignity, timeless proportion',
+      spatial_distortion: 'None',
+      atmosphere: 'Serious, powerful, timeless, institutionally calm, Athenian echo, civic pride',
+      key_features: 'Columns, triangular pediment, domed rotunda, grand staircase, axial symmetry',
+      creative_brief:
+        'Columns march in disciplined procession toward a pediment that crowns reason triumphant over chaos. Stone carries the echo of senates and symposiums, every fluted shaft a vote for order over impulse. The structure does not persuade, it declares, wearing its authority in marble and proportion.',
+    },
   },
   {
-    "id": "SP07-009",
-    "name": "Gothic Revival",
-    "category": "3. Historical And Sacred Architecture",
-    "negativePrompt": "modern, bright, simple",
-    "style": {
-      "aesthetic": "Dark ornate cathedral or mansion, stone romance, medieval dream, vertical yearning",
-      "form_and_line": "Pointed arches, intricate carving, ribbed vaults, flying buttresses, spires reaching",
-      "color_palette": "Dark stone, stained glass colors, Deep Crimson, midnight Blue, burnished Gold, weathered Grey",
-      "lighting_setup": "Dim, candlelight, mysterious, stained glass glow, moonlit shafts, flickering shadow",
-      "material_texture": "Stone, dust, cobwebs, carved oak, cold iron, weathered limestone, tarnished brass",
-      "render_quality": "Haunted, historic, detailed, cathedral awe, sacred darkness, ancient craft",
-      "spatial_distortion": "Elongated vertical lines",
-      "atmosphere": "Spooky, dramatic, ancient, sacred, echoing, time-layered reverence",
-      "key_features": "Vertical emphasis, flying buttresses, gargoyle silhouettes, tracery windows, ribbed ceiling",
-      "creative_brief": "Stone reaches skyward with medieval longing, every spire a prayer cast in limestone and shadow. Colored light bleeds through saints and roses, painting cold floors with jewel-toned devotion. The architecture does not invite, it commands reverence, demanding that the soul look up."
-    }
+    id: 'SP07-009',
+    name: 'Gothic Revival',
+    category: '3. Historical And Sacred Architecture',
+    negativePrompt: 'modern, bright, simple',
+    style: {
+      aesthetic:
+        'Gothic revival style with sacred verticality, ornamental stone drama, and reverential shadowed grandeur',
+      form_and_line:
+        'Pointed-arch grammar, ribbed vault structure, tracery intricacy, buttress rhythm, and spire-led upward composition',
+      color_palette:
+        'Weathered stone grays with stained-jewel chroma bursts, deep crimson-blue shadows, and muted burnished metallic notes',
+      lighting_setup:
+        'Low-key candle and moon shafts, stained-glass projection color pools, and high-contrast devotional shadow layering',
+      material_texture:
+        'Carved limestone erosion detail, aged oak relief, cold iron patina, dusted masonry surfaces, tarnished brass accents',
+      render_quality:
+        'Monumental historic visualization with high ornamental fidelity and atmospheric sacred-darkness precision',
+      spatial_distortion:
+        'Vertical elongation emphasis with vaulted depth pull to intensify reverential upward focus',
+      atmosphere: 'Solemn, dramatic, ancient, sacred, awe-struck',
+      key_features:
+        'Vertical-devotional composition, pointed-arch language, stained-light dramaturgy, carved stone ornament hierarchy',
+      creative_brief:
+        'Preserve this preset through vertical sacred geometry and stained-light contrast logic; Gothic reverence should be conveyed by material and form grammar rather than haunted-narrative tropes.',
+    },
   },
   {
-    "id": "SP07-036",
-    "name": "Casino Floor",
-    "category": "3. Historical And Sacred Architecture",
-    "negativePrompt": "daylight, calm",
-    "style": {
-      "aesthetic": "Vegas gambling hall, pleasure labyrinth, windowless empire, sensory-trap palace",
-      "form_and_line": "Busy patterns, carpet maze, machine rows, mirrored columns, endless grid of chance",
-      "color_palette": "Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple",
-      "lighting_setup": "Dark with bright spots, ceiling wash, slot-machine glow, chandelier bling, ambient overstimulation",
-      "material_texture": "Carpet, plastic, vinyl seating, mirrored ceiling, chrome trim, felt table",
-      "render_quality": "Overstimulating, tacky, sensory-saturation, gambler's cathedral, neon-excess",
-      "spatial_distortion": "None",
-      "atmosphere": "Greed, excitement, fake, disoriented, timeless, chance-buzzed numbness",
-      "key_features": "No clocks, no windows, slot machines, busy carpet, mirrored ceiling, cocktail waitress",
-      "creative_brief": "Carpet patterns swirl in deliberate confusion, designed to keep eyes on the floor and minds off the exits. Slot machines blink their seductive arithmetic, chrome and neon building a temple where hope is the currency and time the sacrifice. The room has no clocks, no windows, no mercy, only another roll."
-    }
+    id: 'SP07-036',
+    name: 'Casino Floor',
+    category: '3. Historical And Sacred Architecture',
+    negativePrompt: 'daylight, calm',
+    style: {
+      aesthetic: 'Vegas gambling hall, pleasure labyrinth, windowless empire, sensory-trap palace',
+      form_and_line:
+        'Busy patterns, carpet maze, machine rows, mirrored columns, endless grid of chance',
+      color_palette: 'Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple',
+      lighting_setup:
+        'Dark with bright spots, ceiling wash, slot-machine glow, chandelier bling, ambient overstimulation',
+      material_texture: 'Carpet, plastic, vinyl seating, mirrored ceiling, chrome trim, felt table',
+      render_quality:
+        "Overstimulating, tacky, sensory-saturation, gambler's cathedral, neon-excess",
+      spatial_distortion: 'None',
+      atmosphere: 'Greed, excitement, fake, disoriented, timeless, chance-buzzed numbness',
+      key_features:
+        'No clocks, no windows, slot machines, busy carpet, mirrored ceiling, cocktail waitress',
+      creative_brief:
+        'Carpet patterns swirl in deliberate confusion, designed to keep eyes on the floor and minds off the exits. Slot machines blink their seductive arithmetic, chrome and neon building a temple where hope is the currency and time the sacrifice. The room has no clocks, no windows, no mercy, only another roll.',
+    },
   },
   {
-    "id": "SP07-039",
-    "name": "Server Room",
-    "category": "3. Historical And Sacred Architecture",
-    "negativePrompt": "messy, organic",
-    "style": {
-      "aesthetic": "Data center aisles, computational cathedral, silicon temple, digital infrastructure, cold aisles of data",
-      "form_and_line": "Perspective lines, rack-grid infinity, cable-management channels, perforated door rhythm, raised floor grid",
-      "color_palette": "Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal",
-      "lighting_setup": "Artificial cool, rack-integrated glow, service-aisle strip, status-LED constellation, cold-corridor containment",
-      "material_texture": "Metal, plastic, perforated steel, fiber optic, Kevlar cable jacket, heatsink fin",
-      "render_quality": "High tech, loud fan, data-sovereign, server-farm precision, digital fortress",
-      "spatial_distortion": "None",
-      "atmosphere": "Cold, data, power, humming, computational, always-on vigilance",
-      "key_features": "Blinking lights, server racks, cold aisle, cable management, raised floor, cooling fans",
-      "creative_brief": "Blue LEDs blink their staccato trust across cold aisles, each rack a vault storing the world in zeros and ones. Cooling fans hum their eternal mantra against heat death, the data center a monastery of computation. Light here serves machines not eyes, every blink a prayer to uptime."
-    }
-  }
+    id: 'SP07-039',
+    name: 'Server Room',
+    category: '3. Historical And Sacred Architecture',
+    negativePrompt: 'messy, organic',
+    style: {
+      aesthetic:
+        'Data center aisles, computational cathedral, silicon temple, digital infrastructure, cold aisles of data',
+      form_and_line:
+        'Perspective lines, rack-grid infinity, cable-management channels, perforated door rhythm, raised floor grid',
+      color_palette:
+        'Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal',
+      lighting_setup:
+        'Artificial cool, rack-integrated glow, service-aisle strip, status-LED constellation, cold-corridor containment',
+      material_texture:
+        'Metal, plastic, perforated steel, fiber optic, Kevlar cable jacket, heatsink fin',
+      render_quality:
+        'High tech, loud fan, data-sovereign, server-farm precision, digital fortress',
+      spatial_distortion: 'None',
+      atmosphere: 'Cold, data, power, humming, computational, always-on vigilance',
+      key_features:
+        'Blinking lights, server racks, cold aisle, cable management, raised floor, cooling fans',
+      creative_brief:
+        'Blue LEDs blink their staccato trust across cold aisles, each rack a vault storing the world in zeros and ones. Cooling fans hum their eternal mantra against heat death, the data center a monastery of computation. Light here serves machines not eyes, every blink a prayer to uptime.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

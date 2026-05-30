@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Fantasy-world-map-concept-art, Tolkien-Middle-Earth-map-heritage, sea-monster-and-ship-illustrations-in-ocean-margins, compass-rose-and-rhumb-lines, mountain-range-profile-illustrations, stylized-forest-cluster-icons, ancient-cartography-energy, here-be-dragons-text-annotation, parchment-map-with-burnt-edges, fantasy-novel-endpaper-map-aesthetic
-  form_and_line: Parchment-border-outline, coastline-wavy-contour, river-meandering-path, mountain-range-hatching, forest-icon-cluster, compass-rose- geometric, rhumb-line-radiating-grid, cartouche-decoration
-  color_palette: Parchment-cream-aged, sepia-brown-ink, ocean-margin-teal, forest-icon-green, mountain-hatch-grey, compass-rose-gold, burnt-edge-charcoal-black, decorative-border vermillion
-  lighting_setup: Flat-top-down-cartographic-lighting, soft-aged-parchment-ambient, shadow-under-compass-rose-for-depth-bump, burnt-edge-shadow
-  material_texture: Aged-parchment-paper, burnt-edge-char, ink-bleed-into-fibers, wax-seal-residue, tea-stain-weathering, fold-crease-wear, leather-binding- edge
-  render_quality: Fantasy-cartography aesthetic, Tolkien-map-heritage, novel-endpaper-beauty, world-building-cartographic-art, here-be-dragons charm
-  spatial_distortion: Top-down-cartographic-projection, ocean-margin-illustration-boundary, compass-overlay, scale-league-bar, rhumb-line-navigation-grid
-  atmosphere: Adventurous, mysterious, unexplored-territory-wonder, ancient-knowledge, quest-planning, map-unfolding-anticipation, world-immersion
-  key_features: Sea-monster-ocean-illustrations, compass-rose, rhumb-lines, mountain-range-profile-drawings, stylized-forest-icons, parchment-aged-texture, burnt-edges, cartouche-title-decoration, Tolkien-map-heritage
-  creative_brief: Coastlines sprawl across parchment in the confident uncertainty of pre-modern cartography, sea monsters breaching in empty ocean margins where knowledge ends and imagination begins. Mountain ranges stack in profile along continental spines while compass roses radiate the promise of navigation. This is the world rendered as invitation, where every blank space is an argument for adventure.
+  aesthetic: Mythic hand-drafted cartographic illustration with ornamental navigation grammar and editorial worldbuilding clarity
+  form_and_line: Calligraphic contour hierarchy, iconographic terrain symbols, radial navigation geometry, decorative border cadence
+  color_palette: Aged parchment neutrals, iron-gall sepia ink, oxidized teal accents, muted mineral greens, restrained vermillion highlights
+  lighting_setup: Uniform document-style illumination, low-specular paper response, subtle edge-vignette to emphasize plate readability
+  material_texture: Fibrous vellum grain, dry-ink bleed, pressure-variant line deposition, fold-memory wear, wax-like residue details
+  render_quality: High-fidelity illustrated atlas plate finish with controlled print-era imperfections and deliberate artisan irregularity
+  spatial_distortion: Orthographic map-plane logic with symbolic scale compression and layered annotation depth
+  atmosphere: Scholarly, arcane, exploratory, archival, crafted for interpretive reading rather than literal realism
+  key_features: Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched terrain icon system, weathered paper patina
+  creative_brief: >-
+    Prioritize cartographic language as style: ornamental navigation marks,
+    disciplined icon systems, and tactile print-era texture should define the
+    image independently of any specific fictional place.
 avoidRules:
   - accurate
   - satellite

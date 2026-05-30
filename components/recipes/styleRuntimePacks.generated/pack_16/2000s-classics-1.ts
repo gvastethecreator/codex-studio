@@ -4,363 +4,563 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP05-147",
-    "name": "Toradora! - Winter Romance Tsundere Collision",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Compact school romance with emotional blunt-force trauma, winter streets, domestic apartment warmth, tiny tiger hostility, youth awkwardness sharpened into comedy and heartbreak",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Combative, sweet, wintery, sincere",
-      "key_features": "School-uniform warmth, winter streetlights, apartment clutter intimacy, sharp reaction acting, emotional proximity framing",
-      "creative_brief": "Winter narrows the world to the space between two people who refuse to admit the distance is closing, harsh words serving as frost on something warmer underneath. Every slammed door and sharp retort is just grammar for a feeling too large for the vocabulary of youth. The coldest season knows best how to make a heart burn."
-    }
+    id: 'SP05-147',
+    name: 'Toradora! - Winter Romance Tsundere Collision',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Compact school romance with emotional blunt-force trauma, winter streets, domestic apartment warmth, tiny tiger hostility, youth awkwardness sharpened into comedy and heartbreak',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Combative, sweet, wintery, sincere',
+      key_features:
+        'School-uniform warmth, winter streetlights, apartment clutter intimacy, sharp reaction acting, emotional proximity framing',
+      creative_brief:
+        'Winter narrows the world to the space between two people who refuse to admit the distance is closing, harsh words serving as frost on something warmer underneath. Every slammed door and sharp retort is just grammar for a feeling too large for the vocabulary of youth. The coldest season knows best how to make a heart burn.',
+    },
   },
   {
-    "id": "SP05-149",
-    "name": "Hitman Reborn! - Mafia Tutor Comedy Escalation",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "School-comedy absurdity maturing into ring-battle mafia spectacle, baby-suited tutor menace, bright comedy turned clan action, family crest iconography, hyper-youthful underworld energy",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Rowdy, comic, fiery, loyal",
-      "key_features": "Family emblems, ring-battle effects, school-to-mafia contrast, eccentric mentor framing, bright clan poses",
-      "creative_brief": "A baby in a suit issues orders and the schoolyard becomes a crime family, rings flashing promises between exams and explosions. Loyalties are tested in the space between lunch period and life-or-death clan warfare. Growing up is just another gang war with better accessories and much higher stakes."
-    }
+    id: 'SP05-149',
+    name: 'Hitman Reborn! - Mafia Tutor Comedy Escalation',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'School-comedy absurdity maturing into ring-battle mafia spectacle, baby-suited tutor menace, bright comedy turned clan action, family crest iconography, hyper-youthful underworld energy',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Rowdy, comic, fiery, loyal',
+      key_features:
+        'Family emblems, ring-battle effects, school-to-mafia contrast, eccentric mentor framing, bright clan poses',
+      creative_brief:
+        'A baby in a suit issues orders and the schoolyard becomes a crime family, rings flashing promises between exams and explosions. Loyalties are tested in the space between lunch period and life-or-death clan warfare. Growing up is just another gang war with better accessories and much higher stakes.',
+    },
   },
   {
-    "id": "SP05-151",
-    "name": "The Melancholy of Haruhi Suzumiya - SOS Club Reality Bending",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Cheerful school-club energy with cosmological instability humming underneath, bright clubroom compositions, eccentric youth charisma, sudden genre fracture between slice-of-life and godlike anomaly",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Playful, uncanny, bright, meta",
-      "key_features": "Clubroom clutter, eccentric leader posing, school-lifestyle brightness, reality-bend hints, ensemble body language",
-      "creative_brief": "A schoolgirl who is god without knowing it, a clubroom where the ordinary vibrates at mythic frequency. Boredom bends reality sideways, and the most dangerous force in the universe is a teenage whim dressed in a sailor uniform. Every beam of afternoon light carries the faint tremor of creation on the verge of rewriting itself."
-    }
+    id: 'SP05-151',
+    name: 'The Melancholy of Haruhi Suzumiya - SOS Club Reality Bending',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Cheerful school-club energy with cosmological instability humming underneath, bright clubroom compositions, eccentric youth charisma, sudden genre fracture between slice-of-life and godlike anomaly',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Playful, uncanny, bright, meta',
+      key_features:
+        'Clubroom clutter, eccentric leader posing, school-lifestyle brightness, reality-bend hints, ensemble body language',
+      creative_brief:
+        'A schoolgirl who is god without knowing it, a clubroom where the ordinary vibrates at mythic frequency. Boredom bends reality sideways, and the most dangerous force in the universe is a teenage whim dressed in a sailor uniform. Every beam of afternoon light carries the faint tremor of creation on the verge of rewriting itself.',
+    },
   },
   {
-    "id": "SP05-152",
-    "name": "Gintama - Feudal Sci-Fi Deadpan Mayhem",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Samurai-comedy nonsense in a sci-fi Edo city, deadpan punchlines, absurd parodies, wooden swords and vending machines sharing one street, lazy hero swagger, chaos with heart",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Irreverent, chaotic, lovable, stupid-smart",
-      "key_features": "Anachronistic prop mashups, comedic reaction faces, lazy hero postures, sci-fi Edo streets, parody-ready staging",
-      "creative_brief": "The sacred art of nonsense, practiced daily on streets where wooden swords rest beside vending machines and aliens run neighborhood shops. A lazy hero who has seen too much to take anything seriously turns every crisis into a punchline and every punchline into a life lesson whispered between explosions. Chaos is not the enemy here; it is the native language."
-    }
+    id: 'SP05-152',
+    name: 'Gintama - Feudal Sci-Fi Deadpan Mayhem',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Samurai-comedy nonsense in a sci-fi Edo city, deadpan punchlines, absurd parodies, wooden swords and vending machines sharing one street, lazy hero swagger, chaos with heart',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Irreverent, chaotic, lovable, stupid-smart',
+      key_features:
+        'Anachronistic prop mashups, comedic reaction faces, lazy hero postures, sci-fi Edo streets, parody-ready staging',
+      creative_brief:
+        'The sacred art of nonsense, practiced daily on streets where wooden swords rest beside vending machines and aliens run neighborhood shops. A lazy hero who has seen too much to take anything seriously turns every crisis into a punchline and every punchline into a life lesson whispered between explosions. Chaos is not the enemy here; it is the native language.',
+    },
   },
   {
-    "id": "SP05-154",
-    "name": "Blood+ - Military Vampire Transit",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Military logistics crossing with melancholy vampiric violence, night trains, schoolgirl burden, sharp blades against modern corridors, secret-war seriousness",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Bleak, disciplined, nocturnal, tragic",
-      "key_features": "Sword-bearing schoolgirl contrast, military convoy spaces, vampiric motion blur, sterile interiors, night-travel framing",
-      "creative_brief": "War travels by night train, blood stored in refrigerated cargo, a schoolgirl sword cutting through decades of silence. The military machine demands discipline, but the heart demands blood, and somewhere in the sterile corridors between orders and instinct, a girl learns that the blade she carries answers to something older than any chain of command."
-    }
+    id: 'SP05-154',
+    name: 'Blood+ - Military Vampire Transit',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Military logistics crossing with melancholy vampiric violence, night trains, schoolgirl burden, sharp blades against modern corridors, secret-war seriousness',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Bleak, disciplined, nocturnal, tragic',
+      key_features:
+        'Sword-bearing schoolgirl contrast, military convoy spaces, vampiric motion blur, sterile interiors, night-travel framing',
+      creative_brief:
+        'War travels by night train, blood stored in refrigerated cargo, a schoolgirl sword cutting through decades of silence. The military machine demands discipline, but the heart demands blood, and somewhere in the sterile corridors between orders and instinct, a girl learns that the blade she carries answers to something older than any chain of command.',
+    },
   },
   {
-    "id": "SP05-156",
-    "name": "Higurashi - Cicada Village Breakdown",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Cute rural summer shattered by paranoia, cicada noise, festival masks, friendship turning knife-edge, hot village afternoons that hide catastrophic loops and dread",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Pastoral, paranoid, feverish, terrifying",
-      "key_features": "Village festival imagery, cute-to-horror contrast, cicada-summer palette, breakdown expressions, shrine-and-home staging",
-      "creative_brief": "Summer that loops infinitely, cicadas screaming the same hour over and over until friendship curdles into suspicion and festival masks hide faces that may no longer be human. A village so small that the sky presses down on it, so sweet that the rot must be hidden somewhere beneath the rice fields. Trust becomes the deadliest currency when the calendar resets and someone you love is holding the knife."
-    }
+    id: 'SP05-156',
+    name: 'Higurashi - Cicada Village Breakdown',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Cute rural summer shattered by paranoia, cicada noise, festival masks, friendship turning knife-edge, hot village afternoons that hide catastrophic loops and dread',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Pastoral, paranoid, feverish, terrifying',
+      key_features:
+        'Village festival imagery, cute-to-horror contrast, cicada-summer palette, breakdown expressions, shrine-and-home staging',
+      creative_brief:
+        'Summer that loops infinitely, cicadas screaming the same hour over and over until friendship curdles into suspicion and festival masks hide faces that may no longer be human. A village so small that the sky presses down on it, so sweet that the rot must be hidden somewhere beneath the rice fields. Trust becomes the deadliest currency when the calendar resets and someone you love is holding the knife.',
+    },
   },
   {
-    "id": "SP05-157",
-    "name": "Air Gear - Neon Street-Skate Battle",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Motorized inline-skate gangs, rooftop freedom, wind-carved city movement, youth bravado, punk-tech speed culture, kinetic parkour and impossible airtime",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Fast, rebellious, flashy, weightless",
-      "key_features": "Skate silhouettes, rooftop city motion, street-gang fashion, wind effects, airborne action poses",
-      "creative_brief": "Gravity is a suggestion that these streets never accepted, rooftops becoming launch pads and sky becoming territory for those brave enough to claim it. Motorized wheels sing a neon hymn across the city skyline, and every jump is a declaration of sovereignty over the vertical world. Speed is not escape here; speed is identity."
-    }
+    id: 'SP05-157',
+    name: 'Air Gear - Neon Street-Skate Battle',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Motorized inline-skate gangs, rooftop freedom, wind-carved city movement, youth bravado, punk-tech speed culture, kinetic parkour and impossible airtime',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Fast, rebellious, flashy, weightless',
+      key_features:
+        'Skate silhouettes, rooftop city motion, street-gang fashion, wind effects, airborne action poses',
+      creative_brief:
+        'Gravity is a suggestion that these streets never accepted, rooftops becoming launch pads and sky becoming territory for those brave enough to claim it. Motorized wheels sing a neon hymn across the city skyline, and every jump is a declaration of sovereignty over the vertical world. Speed is not escape here; speed is identity.',
+    },
   },
   {
-    "id": "SP05-159",
-    "name": "Nana - Black-Lipstick Apartment Punk",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Tokyo apartment rock drama, black-lipstick cool, fashion-band melancholy, cigarettes and vulnerability, youth cohabitation, emotional abrasion in late-night city interiors",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Stylish, aching, adult, intimate",
-      "key_features": "Band-fashion silhouettes, apartment clutter romance, train-and-city motifs, black-lipstick contrast, emotionally loaded close-ups",
-      "creative_brief": "Two women named the same, sharing cigarettes and heartbreak in cramped Tokyo rooms where guitar feedback drowns out the sound of loneliness. Black lipstick stains on coffee cups, fashion as emotional armor, the city at midnight through train windows reflecting faces that are learning how to hurt each other and how to heal. Rock and roll as the only honest language between two people who have forgotten how to speak without performance."
-    }
+    id: 'SP05-159',
+    name: 'Nana - Black-Lipstick Apartment Punk',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Tokyo apartment rock drama, black-lipstick cool, fashion-band melancholy, cigarettes and vulnerability, youth cohabitation, emotional abrasion in late-night city interiors',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Stylish, aching, adult, intimate',
+      key_features:
+        'Band-fashion silhouettes, apartment clutter romance, train-and-city motifs, black-lipstick contrast, emotionally loaded close-ups',
+      creative_brief:
+        'Two women named the same, sharing cigarettes and heartbreak in cramped Tokyo rooms where guitar feedback drowns out the sound of loneliness. Black lipstick stains on coffee cups, fashion as emotional armor, the city at midnight through train windows reflecting faces that are learning how to hurt each other and how to heal. Rock and roll as the only honest language between two people who have forgotten how to speak without performance.',
+    },
   },
   {
-    "id": "SP05-160",
-    "name": "Ouran High School Host Club - Rose-Backdrop Elite Comedy",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Elite academy parody, rose-petal excess, sparkling host-club nonsense, rich-kid interiors, theatrical self-awareness, comedic reverse-harem flamboyance",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Playful, polished, satirical, extravagant",
-      "key_features": "Rose-backdrop comedy, princely school uniforms, ornate academy rooms, ensemble pose symmetry, theatrical sparkle",
-      "creative_brief": "Chandeliers and common sense both shattering in equal measure, rich boys performing affection as high theater in halls where the tuition costs more than most families earn in a lifetime. Rose petals fall like confetti over the beautiful absurdity of privilege, and somewhere in the glittering parody, a scholarship student learns that class is the one fantasy these princes cannot escape. Satire with a silk lining and a genuine beating heart underneath."
-    }
+    id: 'SP05-160',
+    name: 'Ouran High School Host Club - Rose-Backdrop Elite Comedy',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Elite academy parody, rose-petal excess, sparkling host-club nonsense, rich-kid interiors, theatrical self-awareness, comedic reverse-harem flamboyance',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Playful, polished, satirical, extravagant',
+      key_features:
+        'Rose-backdrop comedy, princely school uniforms, ornate academy rooms, ensemble pose symmetry, theatrical sparkle',
+      creative_brief:
+        'Chandeliers and common sense both shattering in equal measure, rich boys performing affection as high theater in halls where the tuition costs more than most families earn in a lifetime. Rose petals fall like confetti over the beautiful absurdity of privilege, and somewhere in the glittering parody, a scholarship student learns that class is the one fantasy these princes cannot escape. Satire with a silk lining and a genuine beating heart underneath.',
+    },
   },
   {
-    "id": "SP05-024",
-    "name": "Alchemy Brotherhood Epic",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Military coats, symbolic circles, brotherly resolve, moral steampunk fantasy, automail limbs, alchemy transmutation, philosopher-stone glow, homunculus symbols",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Epic, thoughtful, tragic, philosophical",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "Transmutation circles bloom beneath military boots as automail limbs catch the philosopher-stone glow, steampunk alchemy rendered in clean digital cel lines that draw moral weight as precisely as mechanical detail. Brother stands beside brother against symbolic geometry, the visual language of equivalent exchange—nothing gained without something lost."
-    }
+    id: 'SP05-024',
+    name: 'Alchemy Brotherhood Epic',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Military coats, symbolic circles, brotherly resolve, moral steampunk fantasy, automail limbs, alchemy transmutation, philosopher-stone glow, homunculus symbols',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Epic, thoughtful, tragic, philosophical',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        'Transmutation circles bloom beneath military boots as automail limbs catch the philosopher-stone glow, steampunk alchemy rendered in clean digital cel lines that draw moral weight as precisely as mechanical detail. Brother stands beside brother against symbolic geometry, the visual language of equivalent exchange—nothing gained without something lost.',
+    },
   },
   {
-    "id": "SP05-026",
-    "name": "Masked Rebellion Mecha",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Theatrical poses, insurgent iconography, elegant mecha conflict, high drama, knightmare frames, dominating royal costumes, tactical command rooms",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Grand, strategic, dramatic, political",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "Masked revolutionaries command the chessboard of empire beneath vaulted ceilings and tactical glow-lines. Armored silhouettes carve drama from shadow and resolve, each frame a manifesto of elegant defiance rendered in early-digital cel paint. Knightmare frames catch the crimson of a sunset that has seen too much, and still the rebellion burns."
-    }
+    id: 'SP05-026',
+    name: 'Masked Rebellion Mecha',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Theatrical poses, insurgent iconography, elegant mecha conflict, high drama, knightmare frames, dominating royal costumes, tactical command rooms',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Grand, strategic, dramatic, political',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        'Masked revolutionaries command the chessboard of empire beneath vaulted ceilings and tactical glow-lines. Armored silhouettes carve drama from shadow and resolve, each frame a manifesto of elegant defiance rendered in early-digital cel paint. Knightmare frames catch the crimson of a sunset that has seen too much, and still the rebellion burns.',
+    },
   },
   {
-    "id": "SP05-027",
-    "name": "Spiral Overdrive Mecha",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Hot-blooded mecha bravado, drill motifs, impossible scale, shout-driven momentum, galaxy-level throwdowns, spiral power, shades-wearing heroes, core drills",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Hype, unstoppable, passionate, transcendent",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "A drill spirals through the cosmos, piercing the ceiling of belief itself with shout-driven velocity. Galaxy-scale mecha silhouette against impossible light, every frame trembling with the energy of a universe that refuses to say 'impossible.' Speed lines become scripture, and the drill is the prayer."
-    }
+    id: 'SP05-027',
+    name: 'Spiral Overdrive Mecha',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Hot-blooded mecha bravado, drill motifs, impossible scale, shout-driven momentum, galaxy-level throwdowns, spiral power, shades-wearing heroes, core drills',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Hype, unstoppable, passionate, transcendent',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        "A drill spirals through the cosmos, piercing the ceiling of belief itself with shout-driven velocity. Galaxy-scale mecha silhouette against impossible light, every frame trembling with the energy of a universe that refuses to say 'impossible.' Speed lines become scripture, and the drill is the prayer.",
+    },
   },
   {
-    "id": "SP05-030",
-    "name": "Gothic Academy Action",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Haunted-school style, moon motifs, stylized weapons, angular cool, chain-scythe combat, rivalry mask designs, crimson-night showdowns, spirit orbs",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Gothic, stylish, eerie, sleek",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "Crescent moons hang over hallways where weapons have souls and students wield chain-scythe elegance beneath crimson-night skies. Angular silhouettes dance through stylized showdowns, each frame dripping with the stylish dread of a gothic midnight syllabus written in moonlight and malice."
-    }
+    id: 'SP05-030',
+    name: 'Gothic Academy Action',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Haunted-school style, moon motifs, stylized weapons, angular cool, chain-scythe combat, rivalry mask designs, crimson-night showdowns, spirit orbs',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Gothic, stylish, eerie, sleek',
+      key_features:
+        'Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy',
+      creative_brief:
+        'Crescent moons hang over hallways where weapons have souls and students wield chain-scythe elegance beneath crimson-night skies. Angular silhouettes dance through stylized showdowns, each frame dripping with the stylish dread of a gothic midnight syllabus written in moonlight and malice.',
+    },
   },
   {
-    "id": "SP05-141",
-    "name": "Soul Eater - Halloween Soul Resonance Punk",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Halloween-town architecture, moon-face grins, striped fashion silhouettes, weapon-partner action, Tim-Burton-meets-shonen rhythm, exaggerated soul-wave cool",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Spooky, stylish, energetic, mischievous",
-      "key_features": "Moon-face iconography, striped accessories, weapon forms, playful gothic backdrops, rhythm-heavy action poses",
-      "creative_brief": "The moon wears a grin it did not earn, and the school hallway bends into a nightmare carnival where weapons are partners sharing the same pulse. Stripes, stitches, and crescent shadows compose a grammar of spooky cool. Halloween never ended — it just enrolled in the academy and started a band."
-    }
+    id: 'SP05-141',
+    name: 'Soul Eater - Halloween Soul Resonance Punk',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Halloween-town architecture, moon-face grins, striped fashion silhouettes, weapon-partner action, Tim-Burton-meets-shonen rhythm, exaggerated soul-wave cool',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Spooky, stylish, energetic, mischievous',
+      key_features:
+        'Moon-face iconography, striped accessories, weapon forms, playful gothic backdrops, rhythm-heavy action poses',
+      creative_brief:
+        'The moon wears a grin it did not earn, and the school hallway bends into a nightmare carnival where weapons are partners sharing the same pulse. Stripes, stitches, and crescent shadows compose a grammar of spooky cool. Halloween never ended — it just enrolled in the academy and started a band.',
+    },
   },
   {
-    "id": "SP05-145",
-    "name": "Eureka Seven - Sky-Surf Youth Mecha Romance",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Aerial surf mecha, teenage longing, counterculture energy, sunset cloud seas, board-riding robots, bright emotional rebellion, sky-soaked romance and motion",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Airy, romantic, youthful, free",
-      "key_features": "Sky-surf silhouettes, cloud-ocean backdrops, youthful pilot fashion, board-riding motion lines, glowing horizon staging",
-      "creative_brief": "The sky is an ocean and the surfboard is a robot with a heart, carving clouds like waves while youth lifts off carrying more hope than fuel. Every sunset is a runway and love is the only destination on the map, coordinates written in contrails. Freedom is not escape — it is the board beneath your feet and the horizon answering back."
-    }
+    id: 'SP05-145',
+    name: 'Eureka Seven - Sky-Surf Youth Mecha Romance',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Aerial surf mecha, teenage longing, counterculture energy, sunset cloud seas, board-riding robots, bright emotional rebellion, sky-soaked romance and motion',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Airy, romantic, youthful, free',
+      key_features:
+        'Sky-surf silhouettes, cloud-ocean backdrops, youthful pilot fashion, board-riding motion lines, glowing horizon staging',
+      creative_brief:
+        'The sky is an ocean and the surfboard is a robot with a heart, carving clouds like waves while youth lifts off carrying more hope than fuel. Every sunset is a runway and love is the only destination on the map, coordinates written in contrails. Freedom is not escape — it is the board beneath your feet and the horizon answering back.',
+    },
   },
   {
-    "id": "SP05-146",
-    "name": "Black Butler - Velvet Servant Gothic",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Victorian mansion elegance, demonic contract refinement, silverware precision, black-tailcoat poise, aristocratic morbidity, candlelit service turned occult theater",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Elegant, sinister, poised, decadent",
-      "key_features": "Tailcoat silhouettes, gothic mansion interiors, silver serving props, contract symbolism, candlelit dramatic poses",
-      "creative_brief": "Candlelight catches the silver tray before it catches the secret, and a tailcoat holds its crease sharper than any blade in the room. Elegance is the slow poison served at tea time, each gesture a clause in a contract signed in candle wax. The mansion keeps secrets the way lace keeps shadows — delicately, and with precision."
-    }
+    id: 'SP05-146',
+    name: 'Black Butler - Velvet Servant Gothic',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Victorian mansion elegance, demonic contract refinement, silverware precision, black-tailcoat poise, aristocratic morbidity, candlelit service turned occult theater',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Elegant, sinister, poised, decadent',
+      key_features:
+        'Tailcoat silhouettes, gothic mansion interiors, silver serving props, contract symbolism, candlelit dramatic poses',
+      creative_brief:
+        'Candlelight catches the silver tray before it catches the secret, and a tailcoat holds its crease sharper than any blade in the room. Elegance is the slow poison served at tea time, each gesture a clause in a contract signed in candle wax. The mansion keeps secrets the way lace keeps shadows — delicately, and with precision.',
+    },
   },
   {
-    "id": "SP05-150",
-    "name": "Shakugan no Shana - Crimson Schoolyard Embers",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "School life folding into ember-eyed battle fantasy, tiny-tsundere severity, floating flame fragments, hidden-world combat, early-digital supernatural romance tension",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Fiery, severe, romantic, hidden",
-      "key_features": "Ember particles, school-uniform contrast, sword-and-flame poses, hidden-world overlays, compact but intense framing",
-      "creative_brief": "Embers drift through the classroom window, trailing the scent of a world hidden one dimension over where crimson eyes are the only warning before steel meets destiny. Her grip on the sword says this is not the first school year she has spent at war. Twilight is when the ordinary bleeds, and the boundary between timelines catches fire."
-    }
+    id: 'SP05-150',
+    name: 'Shakugan no Shana - Crimson Schoolyard Embers',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'School life folding into ember-eyed battle fantasy, tiny-tsundere severity, floating flame fragments, hidden-world combat, early-digital supernatural romance tension',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Fiery, severe, romantic, hidden',
+      key_features:
+        'Ember particles, school-uniform contrast, sword-and-flame poses, hidden-world overlays, compact but intense framing',
+      creative_brief:
+        'Embers drift through the classroom window, trailing the scent of a world hidden one dimension over where crimson eyes are the only warning before steel meets destiny. Her grip on the sword says this is not the first school year she has spent at war. Twilight is when the ordinary bleeds, and the boundary between timelines catches fire.',
+    },
   },
   {
-    "id": "SP05-153",
-    "name": "D.Gray-man - Exorcist Cathedral Machinery",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Exorcist uniforms, cursed machinery, gothic Europe, innocence weaponry, melancholy stained-glass combat, youthful burden carried through dark sacred spaces",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Somber, holy, cursed, determined",
-      "key_features": "Exorcist coat silhouettes, sacred-tech weapons, cathedral depth, mourning-eyed expressions, curse-mark motifs",
-      "creative_brief": "Cathedrals that hum with the quiet prayer of cursed machinery, stained glass filtering light onto children carrying weapons they were never meant to hold. Innocence weaponized, melancholy consecrated, every exorcism a negotiation between damnation and grace conducted through iron and sacrament. The holy and the mechanical share the same breath here."
-    }
+    id: 'SP05-153',
+    name: 'D.Gray-man - Exorcist Cathedral Machinery',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Exorcist uniforms, cursed machinery, gothic Europe, innocence weaponry, melancholy stained-glass combat, youthful burden carried through dark sacred spaces',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Somber, holy, cursed, determined',
+      key_features:
+        'Exorcist coat silhouettes, sacred-tech weapons, cathedral depth, mourning-eyed expressions, curse-mark motifs',
+      creative_brief:
+        'Cathedrals that hum with the quiet prayer of cursed machinery, stained glass filtering light onto children carrying weapons they were never meant to hold. Innocence weaponized, melancholy consecrated, every exorcism a negotiation between damnation and grace conducted through iron and sacrament. The holy and the mechanical share the same breath here.',
+    },
   },
   {
-    "id": "SP05-155",
-    "name": "The Familiar of Zero - Tsundere Magic Academy",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "2000s magic-academy comedy, aristocratic fantasy schools, pink-haired tantrum energy, summoned-familiar romance, wand-duel pageantry, playful noblesse fantasy",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Comic, magical, bratty, romantic",
-      "key_features": "Magic-school uniforms, aristocratic interiors, wand-duel staging, summoned-companion motifs, tsundere expression acting",
-      "creative_brief": "A summoning spell that went sideways, a boy from another world bound to a tiny aristocrat with a temper larger than her magical talent. Halls of privilege shake with the thunder of her indignation, and every wand duel is a courtship conducted through explosions. Magic here is less about power and more about the impossible algebra of two people learning to share a heart."
-    }
+    id: 'SP05-155',
+    name: 'The Familiar of Zero - Tsundere Magic Academy',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        '2000s magic-academy comedy, aristocratic fantasy schools, pink-haired tantrum energy, summoned-familiar romance, wand-duel pageantry, playful noblesse fantasy',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Comic, magical, bratty, romantic',
+      key_features:
+        'Magic-school uniforms, aristocratic interiors, wand-duel staging, summoned-companion motifs, tsundere expression acting',
+      creative_brief:
+        'A summoning spell that went sideways, a boy from another world bound to a tiny aristocrat with a temper larger than her magical talent. Halls of privilege shake with the thunder of her indignation, and every wand duel is a courtship conducted through explosions. Magic here is less about power and more about the impossible algebra of two people learning to share a heart.',
+    },
   },
   {
-    "id": "SP05-158",
-    "name": "Mushi-Shi - Whispering Forest Healing",
-    "category": "2. 2000s Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Quiet wandering folkloric medicine, pale supernatural ecology, mossy villages, soft light over invisible lifeforms, contemplative 2000s fantasy naturalism",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Quiet, mystical, healing, solitary",
-      "key_features": "Forest hush, pale spirit traces, herbal-traveler framing, misty villages, contemplative body language",
-      "creative_brief": "Invisible life breathes between the trees, pale filaments of existence that most eyes will never register, and one wandering man who carries the cure for what cannot be named in a simple wooden box. Every village holds a secret illness, every forest whispers a diagnosis, and healing moves at walking speed through moss and mist. The supernatural is not spectacle here; it is ecology."
-    }
-  }
+    id: 'SP05-158',
+    name: 'Mushi-Shi - Whispering Forest Healing',
+    category: '2. 2000s Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Quiet wandering folkloric medicine, pale supernatural ecology, mossy villages, soft light over invisible lifeforms, contemplative 2000s fantasy naturalism',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Quiet, mystical, healing, solitary',
+      key_features:
+        'Forest hush, pale spirit traces, herbal-traveler framing, misty villages, contemplative body language',
+      creative_brief:
+        'Invisible life breathes between the trees, pale filaments of existence that most eyes will never register, and one wandering man who carries the cure for what cannot be named in a simple wooden box. Every village holds a secret illness, every forest whispers a diagnosis, and healing moves at walking speed through moss and mist. The supernatural is not spectacle here; it is ecology.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

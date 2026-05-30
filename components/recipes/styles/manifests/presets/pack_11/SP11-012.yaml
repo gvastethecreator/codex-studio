@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - science-and-bio-curiosities
 visualDna:
-  aesthetic: Eco-futurist utopia, green-tech dreamscape, harmonious tomorrow, nature-integrated civilization
-  form_and_line: Art Nouveau curves + tech, organic spirals, flowing botanicals, branch-like infrastructure
-  color_palette: Lush Green, Gold, White, Blue, chlorophyll spectrum, sunlight-through-leaf, clear-sky optimism
-  lighting_setup: Bright sunlight, lens flare, canopy-dappled light, bioluminescent accent, golden-hour hope
-  material_texture: Leaves, glass, solar panels, living walls, polished bamboo, mycelium-grown structures
-  render_quality: Optimistic, clean, nature, eco-utopia clarity, Studio-Ghibli green, thriving-earth beauty
-  spatial_distortion: Plants growing on buildings, vertical-forest integration, root-network architecture, canopy-bound city
-  atmosphere: Hopeful, bright, sustainable, regenerative calm, symbiotic warmth, tomorrow's garden
-  key_features: Nature integration, solar-panel mosaics, green-roof cascades, butterfly-accompaniment
-  creative_brief: Glass towers breathe through chlorophyll veins, spiraling toward a sun that promises instead of threatens. Art Nouveau curves intertwine with solar panels in a city where technology and nature stopped fighting and started collaborating. Tomorrow glows green against a sky scrubbed clean of yesterday's exhaust, butterflies tracing paths through vertical forests of hope.
+  aesthetic: Regenerative eco-futurist style with biophilic infrastructure language, clean-tech optimism, and balanced organic-technological harmony
+  form_and_line: Flowing botanical arcs merged with engineered modular structures, branch-like network geometry, and smooth growth-driven contours
+  color_palette: Chlorophyll-rich greens with warm solar golds, clean sky blues, and soft neutral whites for breathable visual clarity
+  lighting_setup: Clear daylight with leaf-filtered dapple, gentle solar glints, and selective bio-luminous accents for hopeful atmosphere
+  material_texture: Living-wall foliage, transparent energy glass, matte photovoltaic surfaces, bamboo-like composites, and bio-grown material cues
+  render_quality: Clean high-clarity eco-future rendering emphasizing regenerative readability and integrated nature-tech cohesion
+  spatial_distortion: Vertical garden layering, canopy-network depth paths, and architecture-as-ecosystem spatial interweaving
+  atmosphere: Hopeful, bright, restorative, sustainable, calm
+  key_features: Biophilic structure integration, solar-surface mosaics, layered green roofs, regenerative systems readability
+  creative_brief: >-
+    Preserve identity through regenerative design grammar: integrated greenery,
+    clean-energy material language, and optimistic daylight ecology should define
+    the preset beyond any specific city narrative.
 avoidRules:
   - dark
   - industrial

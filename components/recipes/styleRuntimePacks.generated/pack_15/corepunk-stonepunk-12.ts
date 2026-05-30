@@ -4,57 +4,65 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP15-031",
-    "name": "Basalt Gear Sanctuary",
-    "category": "12. Corepunk — Stonepunk",
-    "negativePrompt": "photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo",
-    "style": {
-      "aesthetic": "Proto-industrial sanctuary where megalith engineering drives communal survival.",
-      "form_and_line": "Cyclopean arches, carved gear motifs, and gravity-fed terraces.",
-      "color_palette": "Basalt charcoal, copper oxide green, and fire ember orange.",
-      "lighting_setup": "Hearthlight cores and skylight shafts across rough-cut stone planes.",
-      "material_texture": "Chiseled basalt, rope pulleys, hammered copper, and packed clay.",
-      "render_quality": "Heavy tactile concept art with robust structural clarity.",
-      "spatial_distortion": "Layered vertical fortress view anchored by a central gear temple.",
-      "atmosphere": "Ancient ingenuity, ritual labor, and elemental endurance.",
-      "key_features": "Stone gear arrays, aqueduct lifts, and monolith workshop cloisters.",
-      "creative_brief": "A stonepunk citadel proving complex machinery can emerge from primal materials."
-    }
+    id: 'SP15-031',
+    name: 'Basalt Gear Sanctuary',
+    category: '12. Corepunk — Stonepunk',
+    negativePrompt:
+      'photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo',
+    style: {
+      aesthetic: 'Proto-industrial sanctuary where megalith engineering drives communal survival.',
+      form_and_line: 'Cyclopean arches, carved gear motifs, and gravity-fed terraces.',
+      color_palette: 'Basalt charcoal, copper oxide green, and fire ember orange.',
+      lighting_setup: 'Hearthlight cores and skylight shafts across rough-cut stone planes.',
+      material_texture: 'Chiseled basalt, rope pulleys, hammered copper, and packed clay.',
+      render_quality: 'Heavy tactile concept art with robust structural clarity.',
+      spatial_distortion: 'Layered vertical fortress view anchored by a central gear temple.',
+      atmosphere: 'Ancient ingenuity, ritual labor, and elemental endurance.',
+      key_features: 'Stone gear arrays, aqueduct lifts, and monolith workshop cloisters.',
+      creative_brief:
+        'A stonepunk citadel proving complex machinery can emerge from primal materials.',
+    },
   },
   {
-    "id": "SP15-032",
-    "name": "Megalith Transit Spine",
-    "category": "12. Corepunk — Stonepunk",
-    "negativePrompt": "photoreal, cyber-neon, whimsical-fantasy-only, modern-asphalt-roads, watermark, text, logo",
-    "style": {
-      "aesthetic": "Continental trade artery built from colossal stone tracks and kinetic sled systems.",
-      "form_and_line": "Parallel carved lanes, pillar forests, and weighted counterbalance towers.",
-      "color_palette": "Sandstone beige, slate blue, and iron rust.",
-      "lighting_setup": "Harsh directional sunlight and torch tunnels at transit nodes.",
-      "material_texture": "Weathered stone blocks, braided cable ropes, and bone-polished sliders.",
-      "render_quality": "Expansive concept panorama with readable infrastructure logic.",
-      "spatial_distortion": "Long horizon perspective stressing infrastructure scale and distance.",
-      "atmosphere": "Industrious motion, civic pragmatism, and old-world futurity.",
-      "key_features": "Counterweight elevators, stone sled trains, and trade gate bastions.",
-      "creative_brief": "A stonepunk mobility network that transforms mountain empires into connected economies."
-    }
+    id: 'SP15-032',
+    name: 'Megalith Transit Spine',
+    category: '12. Corepunk — Stonepunk',
+    negativePrompt:
+      'photoreal, cyber-neon, whimsical-fantasy-only, modern-asphalt-roads, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Continental trade artery built from colossal stone tracks and kinetic sled systems.',
+      form_and_line: 'Parallel carved lanes, pillar forests, and weighted counterbalance towers.',
+      color_palette: 'Sandstone beige, slate blue, and iron rust.',
+      lighting_setup: 'Harsh directional sunlight and torch tunnels at transit nodes.',
+      material_texture: 'Weathered stone blocks, braided cable ropes, and bone-polished sliders.',
+      render_quality: 'Expansive concept panorama with readable infrastructure logic.',
+      spatial_distortion: 'Long horizon perspective stressing infrastructure scale and distance.',
+      atmosphere: 'Industrious motion, civic pragmatism, and old-world futurity.',
+      key_features: 'Counterweight elevators, stone sled trains, and trade gate bastions.',
+      creative_brief:
+        'A stonepunk mobility network that transforms mountain empires into connected economies.',
+    },
   },
   {
-    "id": "SP15-033",
-    "name": "Flint Engine Market",
-    "category": "12. Corepunk — Stonepunk",
-    "negativePrompt": "photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo",
-    "style": {
-      "aesthetic": "Bustling workshop bazaar where friction engines and artisan mechanics dominate daily life.",
-      "form_and_line": "Dense market alleys, pulley canopies, and stepped workshop fronts.",
-      "color_palette": "Clay red, smoke gray, and amber firelight.",
-      "lighting_setup": "Torch strings and forge sparks under shaded textile awnings.",
-      "material_texture": "Flint components, braided hemp, raw timber stalls, and blackened bronze.",
-      "render_quality": "Character-rich environment concept with strong material readability.",
-      "spatial_distortion": "Compressed street perspective emphasizing crowded machine commerce.",
-      "atmosphere": "Noisy invention, communal trade, and practical improvisation.",
-      "key_features": "Spark-wheel stalls, mobile anvils, barter counters, and pit-forge kiosks.",
-      "creative_brief": "A stonepunk market where every invention is assembled in public and tested immediately."
-    }
-  }
+    id: 'SP15-033',
+    name: 'Flint Engine Market',
+    category: '12. Corepunk — Stonepunk',
+    negativePrompt:
+      'photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Bustling workshop bazaar where friction engines and artisan mechanics dominate daily life.',
+      form_and_line: 'Dense market alleys, pulley canopies, and stepped workshop fronts.',
+      color_palette: 'Clay red, smoke gray, and amber firelight.',
+      lighting_setup: 'Torch strings and forge sparks under shaded textile awnings.',
+      material_texture: 'Flint components, braided hemp, raw timber stalls, and blackened bronze.',
+      render_quality: 'Character-rich environment concept with strong material readability.',
+      spatial_distortion: 'Compressed street perspective emphasizing crowded machine commerce.',
+      atmosphere: 'Noisy invention, communal trade, and practical improvisation.',
+      key_features: 'Spark-wheel stalls, mobile anvils, barter counters, and pit-forge kiosks.',
+      creative_brief:
+        'A stonepunk market where every invention is assembled in public and tested immediately.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

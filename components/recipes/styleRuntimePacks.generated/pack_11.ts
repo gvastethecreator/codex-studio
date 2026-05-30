@@ -4,8 +4,12 @@ import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeType
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () => import('./pack_11/toys-and-miniatures-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_11/food-and-commercial-fun-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_11/science-and-bio-curiosities-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_11/food-and-commercial-fun-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_11/science-and-bio-curiosities-3').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
   () => import('./pack_11/retro-pop-and-kitsch-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_11/oddities-and-novelty-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
@@ -13,9 +17,9 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: "pack_11",
-    name: "Miscellaneous & Fun",
-    description: "Playful, toy-like, and niche aesthetic styles.",
+    id: 'pack_11',
+    name: 'Miscellaneous & Fun',
+    description: 'Playful, toy-like, and niche aesthetic styles.',
     presets: categoryPresets.flat(),
   };
 }

@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - science-and-bio-curiosities
 visualDna:
-  aesthetic: 1940s retro-future war, diesel-powered dystopia, iron-giant nightmare, wartime brutalist future
+  aesthetic: Diesel-industrial retrofuturism with heavy mechanical massing, soot-era infrastructure, and oppressive analog power aesthetics
   form_and_line: Rivets, heavy metal plates, cast-iron curves, bolted seams, industrial silhouettes
   color_palette: Oil, Grease, Steel, Rust, soot-black, oxidized copper, military-olive stain, burnt-sienna corrosion
   lighting_setup: Sooty, dark, industrial, caged-bulb gloom, exhaust-haze diffusion, furnace-glow warmth
   material_texture: Grime, smoke, metal, cold-stamped steel, oil-slick puddles, sweat-stained leather, caked rust
-  render_quality: War, heavy, mechanical, piston-driven nightmare, totalitarian engineering, colossal dread
+  render_quality: Dense mechanical rendering with piston-era complexity, high material wear readability, and monumental industrial gravity
   spatial_distortion: Bulky machinery, oversized engines, vertical oppression, crushing-mass architecture
   atmosphere: Dirty, loud, powerful, oppressive weight, grinding fatigue, iron-willed endurance
   key_features: Exhaust smoke, bolted armor plates, pressure gauges, colossal treads
-  creative_brief: Rivets hold the sky together above a world grinding forward on treads and desperation, oil streaks smearing across cold-stamped steel. Exhaust haze diffuses caged-bulb light into a permanent industrial dusk where every surface carries the grease of endless labor. Progress smells of diesel and looks like a three-ton fist clenched against a soot-black horizon.
+  creative_brief: >-
+    Keep identity rooted in diesel-mechanical grammar: riveted mass, soot-loaded
+    atmosphere, and pressure-gauge industrial lighting should define the style
+    without locking it to a single war narrative vignette.
 avoidRules:
   - clean
   - digital

@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - editorial-illustration
 visualDna:
-  aesthetic: Cheap detective novel
-  form_and_line: Painted
-  color_palette: Saturated Red/Yellow, pulpy blood-and-fire, lurid primaries
-  lighting_setup: Dramatic shadow, femme-fatale noir, half-lit menace
-  material_texture: Cheap paper
-  render_quality: Trashy, exciting, high-octane pulp, dime-store thrill
-  spatial_distortion: Action pose
-  atmosphere: Dangerous, cheap, newsstand suspense, lurid desperation
-  key_features: Title space, cover blurb, dramatic composition
-  creative_brief: Lurid colors scream from the newsstand rack, every cover a desperate bid for attention in the marketplace of sensation. Dames and danger share the same garish spotlight, their fates already sealed by the dime-store price on the corner. This is fiction as commodity, where the cover must sell the entire paperback in a single lurid glance.
+  aesthetic: Mid-century pulp-cover illustration style with sensational composition, high-urgency editorial drama, and lurid market-impact intent
+  form_and_line: Painterly contour emphasis with bold gesture silhouettes, kinetic focal diagonals, and headline-oriented compositional framing
+  color_palette: Aggressive warm primaries with acid yellow-red pushes, deep shadow anchors, and high-contrast attention-grab hierarchy
+  lighting_setup: Hard-edged spotlight contrast with half-lit faces, dramatic shadow wedges, and suspense-driven value staging
+  material_texture: Cheap coated-pulp paper feel with visible print wear, ink soak variation, and subtle halftone residue
+  render_quality: High-energy cover-art finish prioritizing immediate shelf readability, dramatic hooks, and tabloid-level visual punch
+  spatial_distortion: Perspective pushed toward action-forward staging with foreground exaggeration and compressed narrative depth
+  atmosphere: Tense, sensational, urgent, dramatic, lurid
+  key_features: Masthead-safe title zone, blurb-driven layout logic, sensational focal center, newsstand-impact color blocking
+  creative_brief: >-
+    Keep this preset defined by pulp-cover sales grammar: lurid contrast,
+    dramatic focal diagonals, and headline-first composition should drive
+    identity without hardcoding one detective scene.
 avoidRules:
   - modern
   - clean

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Production callout sheet, front-side-back orthographic views, material-annotation arrows, scale-reference figure, exploded-mechanism detail, construction-line overlays, measurement callouts, 3D-modeler-ready clarity, nothing left to interpretation
-  form_and_line: Clean orthographic linework, consistent line weight, mechanical-drawing precision, annotation-leader straightness, dimension-line accuracy
-  color_palette: White background, black ink lines, red annotation marks, blue construction lines, grey tone-value fills, no decorative color
-  lighting_setup: Flat shadowless studio, even diffuse illumination for shape reading, rim-light separation for overlapping forms, no mood lighting
-  material_texture: Neutral white surface, ink-line precision, digital-wireframe overlay option, cross-section hatch-fill, exploded-view part separation
-  render_quality: Production callout sheet, 3D-modeler reference, orthographic precision, no-artistic-ambiguity rendering
-  spatial_distortion: Orthographic projection, no perspective, front-side-back grid alignment, exploded-part axial separation, cutaway-section views
-  atmosphere: Clinical, precise, informational, production-ready, zero-ambiguity communication
-  key_features: Front-side-back orthographic views, annotation arrows with text labels, scale-reference figure, exploded-mechanism details, dimension lines
-  creative_brief: Arrows point toward detail with the authority of engineering, every annotation a contract between the artist and the modeler who will inherit this drawing. Orthographic views align in sacred geometry, measurements declaring the exact dimensions of imagination. This is the final word before construction begins, where ambiguity dies and certainty takes its first breath.
+  aesthetic: Technical callout sheet for production handoff
+  form_and_line: Uniform orthographic linework with strict weight hierarchy
+  color_palette: Neutral monochrome base with limited annotation accent colors
+  lighting_setup: Flat functional illumination for uncompromised shape legibility
+  material_texture: Diagrammatic hatching, section fills, and exploded-part separators
+  render_quality: High-clarity specification drawing with low interpretive ambiguity
+  spatial_distortion: Pure orthographic alignment plus controlled exploded/cutaway views
+  atmosphere: Clinical, exact, instruction-driven
+  key_features: Multi-view orthos, dimension strings, labeled leaders, scale references
+  creative_brief: >-
+    Communicate intent for downstream modeling and production without stylistic noise. Organize views, dimensions, and annotations into a strict hierarchy so structural decisions, part relationships, and proportional constraints remain immediately actionable.
 avoidRules:
   - single view
   - one angle

@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Technical diagram
-  form_and_line: White lines
+  aesthetic: Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline
+  form_and_line: White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view readability
   color_palette: Blue background, white-line cyan, blueprint nostalgia
   lighting_setup: None, diagrammatic, machine-drawing clarity
   material_texture: Grid paper
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Exploded view
   atmosphere: Smart, plan, drafting-table focus, patent-office gravity
   key_features: Measurements, dimension lines, grid sub-base
-  creative_brief: White lines trace purpose across blue fields, every measurement and callout a contract between designer and maker. Orthographic projections obey the tyranny of exact scale, views aligned in the sacred geometry of the drafting table. This is the object before it becomes object, existing first in the pure space of technical intention.
+  creative_brief: >-
+    Define this preset by schematic-blueprint grammar: orthographic projection,
+    measurement hierarchy, and title-block drafting structure should carry
+    identity beyond any single mechanical design.
 avoidRules:
   - 3d
   - shaded

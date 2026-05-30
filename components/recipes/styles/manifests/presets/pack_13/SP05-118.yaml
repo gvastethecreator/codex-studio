@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Golden-hour-silhouette-only scenes, characters as warm-rim-lit-black-shapes against blazing-orange-sky, no-facial-features-just-backlit-contours, school-rooftop-confession-scene, seaside-sunset-promise, Makoto-Shinkai-sky-intensity applied to pure-silhouette, lens-flare-diffraction-halos, emotion-conveyed-entirely-through-posture-and-sky-color, Your-Name-twilight-magic, longing-expressed-through-light-alone
-  form_and_line: Pure-silhouette-contours, rim-light-hair-edge-definition, no-internal-lines-just-shape, wind-blown-hair-edge-reading, posture-as-only-storytelling-tool
-  color_palette: Sun-blast-orange, blazing-magenta-sky, deep-shadow-black, gold-rim-light, purple-dusk-transition, pink-cloud-glow, cyan-sky-remnant-at-zenith, warm-to-cool-atmosphere-gradient
-  lighting_setup: Extreme-backlight-silhouette, golden-hour-rim-light, lens-flare-artifacts, atmospheric-haze-diffusion, crepuscular-ray-god-beams
-  material_texture: Lens-flare-bloom, anamorphic-streak-flare, atmospheric-dust-mote-haze, cloud-layer-softness, sun-disk-overexposure-burn, film-grain-in-shadows
-  render_quality: Golden-hour-silhouette-anime, Makoto-Shinkai-sky-rendering, romance-through-light, sunset-color-script-artistry, emotion-in-silhouette
-  spatial_distortion: Characters-as-black-cutouts-against-sky, sun-position-composition-anchor, negative-space-sky-dominance, extreme-depth-created-by-atmosphere
-  atmosphere: Romantic, nostalgic, bittersweet-longing, end-of-day-magic, unspoken-confession, tearful-twilight, beautiful-goodbye
-  key_features: Pure-silhouette-against-sunset, golden-hour-rim-light, Shinkai-sky-intensity, lens-flare-halos, atmospheric-haze-depth, school-rooftop-setting, cloud-glow-gradients
-  creative_brief: 'Faces dissolve into the sun, leaving only the truth of posture — the tilt of a head, the distance between two bodies standing on a rooftop at the edge of day. The sky does all the speaking: magenta bleeding into gold, cloud glow carrying the confession that lips cannot form. Emotion in silhouette is the purest kind, because nothing distracts from what the heart is already projecting onto the light.'
+  aesthetic: Golden-hour silhouette anime style with sky-dominant emotional storytelling, backlit contour poetry, and twilight longing through color
+  form_and_line: Pure silhouette contour discipline, rim-lit hair-edge articulation, posture-led narrative shape language, minimal internal line intrusion
+  color_palette: Blazing orange-magenta sunset cores, deep silhouette blacks, gold rim luminance, violet dusk transitions, cyan zenith remnants
+  lighting_setup: Extreme backlight staging with flare halos, atmospheric diffusion, crepuscular beam accents, and overexposed solar edge treatment
+  material_texture: Lens flare bloom strata, haze particulate depth, soft cloud gradient layering, subtle film-grain shadow structure
+  render_quality: High-impact sunset silhouette rendering with cinematic sky scripting and emotionally readable negative-space composition
+  spatial_distortion: Sky-first composition dominance with silhouette-anchor foregrounds and atmosphere-driven perceived depth expansion
+  atmosphere: Nostalgic, bittersweet, romantic, tender, wistful
+  key_features: Sky-as-narrator framing, pure silhouette dramaturgy, golden rim contour logic, flare-and-haze emotional depth
+  creative_brief: >-
+    Preserve identity through sky-led silhouette storytelling: emotional weight
+    should emerge from backlight color scripts, posture contours, and atmospheric
+    flare depth rather than specific rooftop or seaside scenes.
 avoidRules:
   - dark
   - gloomy

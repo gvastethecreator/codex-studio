@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Quick digital painting
-  form_and_line: None
-  color_palette: Mood lighting, atmospheric bleed, tonal-mood spectrum
-  lighting_setup: Atmospheric, ambient depth, mood-first illumination
-  material_texture: Brush strokes
-  render_quality: Concept, loose, thumbnail energy, big-idea confidence
-  spatial_distortion: Undefined details
-  atmosphere: Energetic, rough, ideation velocity, creative flow
-  key_features: Composition focus, gestural strokes, value-block emphasis
-  creative_brief: Brushes move at the speed of imagination, shapes emerging from broad strokes before detail has permission to arrive. Values establish form in three tones, mood before mechanics, atmosphere before anatomy. This is the idea at the moment of its birth, still wet and breathing and uncommitted to any final form.
+  aesthetic: Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and exploratory visual decision-making
+  form_and_line: Gestural brush massing with minimal contour commitment, directional stroke flow, and value-shape-first structure
+  color_palette: Mood-driven tonal clusters with controlled atmospheric bleed and broad hue families for fast read hierarchy
+  lighting_setup: Ambient atmospheric lighting established through large value masses and early-stage contrast anchors
+  material_texture: Visible digital brush grain with layered opacity passes, rough-edge blending, and process-forward stroke evidence
+  render_quality: Loose concept-stage rendering emphasizing composition testing, readable silhouettes, and iterative velocity over polish
+  spatial_distortion: Intentionally unresolved edge zones with simplified depth grouping and suggestive form abstraction
+  atmosphere: Energetic, exploratory, rough, expressive, iterative
+  key_features: Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail suppression
+  creative_brief: >-
+    Preserve identity through speedpainting grammar: large-value block-ins,
+    gestural stroke economy, and mood-prioritized form solving should define
+    the preset without anchoring to a single sketch narrative.
 avoidRules:
   - detailed
   - polished

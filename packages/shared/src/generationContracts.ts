@@ -108,6 +108,39 @@ export interface CompiledProviderInput<TPayload = unknown> {
   };
 }
 
+export type GenerationTaskSpecValidationCode =
+  | 'invalid_task_spec'
+  | 'invalid_spec_id'
+  | 'invalid_batch_id'
+  | 'invalid_task'
+  | 'invalid_provider'
+  | 'invalid_prompt'
+  | 'invalid_asset'
+  | 'inline_asset_not_hydrated';
+
+export interface GenerationTaskSpecValidationIssue {
+  code: GenerationTaskSpecValidationCode;
+  message: string;
+  field: string;
+  safeDetails?: Record<string, unknown>;
+}
+
+export interface GenerationTaskSpecValidationOptions {
+  requireLocalRunIds?: boolean;
+  requireHydratedAssets?: boolean;
+  expectedProviderId?: GenerationProviderId | null;
+}
+
+export interface ProviderInputMetrics {
+  sourceSpecChars: number;
+  compiledInputChars: number;
+  compiledPayloadChars: number;
+  estimatedPromptChars: number | null;
+  assetRefCount: number;
+  inlineAssetBytesPresent: boolean;
+  providerSessionContractId: string | null;
+}
+
 export interface CreateCompiledProviderInputArgs<TPayload = unknown> {
   providerId: GenerationProviderId;
   contract?: ProviderSessionContract | null;
@@ -142,6 +175,27 @@ export function isBuiltInGenerationProvider(
 
 export function isGenerationTaskKind(value: string): value is GenerationTaskKind {
   return GENERATION_TASK_KINDS.includes(value as GenerationTaskKind);
+}
+
+function jsonChars(value: unknown) {
+  return JSON.stringify(value).length;
+}
+
+function readMetadataString(metadata: Record<string, unknown>, key: string) {
+  const value = metadata[key];
+  return typeof value === 'string' ? value.trim() : '';
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function hasAssetLocation(asset: GenerationTaskAssetRef) {
+  return Boolean(asset.dataUrl?.trim() || asset.localPath?.trim() || asset.sourceUrl?.trim());
+}
+
+function hasInlineAssetBytes(asset: GenerationTaskAssetRef) {
+  return /^data:image\/[^;]+;base64,/i.test(asset.dataUrl?.trim() ?? '');
 }
 
 export function createGenerationTaskSpec({
@@ -233,5 +287,173 @@ export function createCompiledProviderInput<TPayload>({
       omittedStableInstructions,
       estimatedPromptChars,
     },
+  };
+}
+
+export function validateGenerationTaskSpec(
+  spec: GenerationTaskSpec | null | undefined,
+  options: GenerationTaskSpecValidationOptions = {},
+): GenerationTaskSpecValidationIssue[] {
+  const issues: GenerationTaskSpecValidationIssue[] = [];
+  if (!spec) {
+    return [
+      {
+        code: 'invalid_task_spec',
+        message: 'Generation Task Spec is required.',
+        field: 'sourceSpec',
+      },
+    ];
+  }
+
+  if (spec.version !== GENERATION_TASK_SPEC_VERSION) {
+    issues.push({
+      code: 'invalid_task_spec',
+      message: 'Generation Task Spec version is unsupported.',
+      field: 'sourceSpec.version',
+      safeDetails: { version: spec.version },
+    });
+  }
+
+  if (!spec.id?.trim()) {
+    issues.push({
+      code: 'invalid_spec_id',
+      message: 'Generation Task Spec id is required.',
+      field: 'sourceSpec.id',
+    });
+  } else if (options.requireLocalRunIds && !/^spec-batch-[a-z0-9-]+$/i.test(spec.id)) {
+    issues.push({
+      code: 'invalid_spec_id',
+      message: 'Local queued Generation Task Spec ids must use the spec-batch-* format.',
+      field: 'sourceSpec.id',
+      safeDetails: { specId: spec.id },
+    });
+  }
+
+  if (!isGenerationTaskKind(spec.task)) {
+    issues.push({
+      code: 'invalid_task',
+      message: 'Generation Task must use a provider-independent task kind.',
+      field: 'sourceSpec.task',
+      safeDetails: { task: spec.task },
+    });
+  }
+
+  if (spec.providerId !== null && typeof spec.providerId !== 'string') {
+    issues.push({
+      code: 'invalid_provider',
+      message: 'Generation Provider id must be a string or null.',
+      field: 'sourceSpec.providerId',
+    });
+  }
+  if (
+    options.expectedProviderId !== undefined &&
+    spec.providerId !== null &&
+    spec.providerId !== options.expectedProviderId
+  ) {
+    issues.push({
+      code: 'invalid_provider',
+      message: 'Generation Task Spec providerId must match the job providerId.',
+      field: 'sourceSpec.providerId',
+      safeDetails: {
+        sourceSpecProviderId: spec.providerId,
+        expectedProviderId: options.expectedProviderId,
+      },
+    });
+  }
+
+  if (!spec.prompt?.trim()) {
+    issues.push({
+      code: 'invalid_prompt',
+      message: 'Generation Task Spec prompt is required.',
+      field: 'sourceSpec.prompt',
+    });
+  }
+
+  const metadata = isRecord(spec.metadata) ? spec.metadata : {};
+  if (!isRecord(spec.metadata)) {
+    issues.push({
+      code: 'invalid_task_spec',
+      message: 'Generation Task Spec metadata must be an object.',
+      field: 'sourceSpec.metadata',
+    });
+  }
+
+  const batchId = readMetadataString(metadata, 'batchId');
+  if (options.requireLocalRunIds || batchId) {
+    if (!batchId) {
+      issues.push({
+        code: 'invalid_batch_id',
+        message: 'Local queued Generation Task Specs require metadata.batchId.',
+        field: 'sourceSpec.metadata.batchId',
+      });
+    } else if (!/^batch-[a-z0-9-]+$/i.test(batchId)) {
+      issues.push({
+        code: 'invalid_batch_id',
+        message: 'Local queued batch ids must use the batch-* format.',
+        field: 'sourceSpec.metadata.batchId',
+        safeDetails: { batchId },
+      });
+    }
+  }
+
+  if (!Array.isArray(spec.assets)) {
+    issues.push({
+      code: 'invalid_asset',
+      message: 'Generation Task Spec assets must be an array.',
+      field: 'sourceSpec.assets',
+    });
+    return issues;
+  }
+
+  spec.assets.forEach((asset, index) => {
+    const field = `sourceSpec.assets.${index}`;
+    if (!isRecord(asset)) {
+      issues.push({
+        code: 'invalid_asset',
+        message: 'Generation Task asset must be an object.',
+        field,
+      });
+      return;
+    }
+    if (!asset.name?.trim()) {
+      issues.push({
+        code: 'invalid_asset',
+        message: 'Generation Task asset name is required.',
+        field: `${field}.name`,
+      });
+    }
+    if (!hasAssetLocation(asset)) {
+      issues.push({
+        code: 'invalid_asset',
+        message: 'Generation Task asset requires dataUrl, localPath, or sourceUrl.',
+        field,
+        safeDetails: { role: asset.role, name: asset.name },
+      });
+    }
+    if (options.requireHydratedAssets && hasInlineAssetBytes(asset)) {
+      issues.push({
+        code: 'inline_asset_not_hydrated',
+        message: 'Inline image asset must be persisted to localPath before provider execution.',
+        field: `${field}.dataUrl`,
+        safeDetails: { role: asset.role, name: asset.name },
+      });
+    }
+  });
+
+  return issues;
+}
+
+export function createProviderInputMetrics(
+  sourceSpec: GenerationTaskSpec,
+  compiledInput: CompiledProviderInput,
+): ProviderInputMetrics {
+  return {
+    sourceSpecChars: jsonChars(sourceSpec),
+    compiledInputChars: jsonChars(compiledInput),
+    compiledPayloadChars: jsonChars(compiledInput.payload),
+    estimatedPromptChars: compiledInput.audit.estimatedPromptChars,
+    assetRefCount: sourceSpec.assets.length,
+    inlineAssetBytesPresent: sourceSpec.assets.some(hasInlineAssetBytes),
+    providerSessionContractId: compiledInput.contractId,
   };
 }

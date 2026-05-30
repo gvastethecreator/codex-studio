@@ -7,17 +7,31 @@ import {
   type StylePresetCatalog,
 } from './stylePresetManifests';
 
-const packManifestFiles = import.meta.glob('./styles/manifests/packs/*.yaml', {
-  query: '?raw',
-  import: 'default',
-  eager: false,
-});
+type ManifestGlobLoader = () => Promise<unknown>;
+type ImportMetaGlobFn = (
+  pattern: string,
+  options: { query: '?raw'; import: 'default'; eager: false },
+) => Record<string, ManifestGlobLoader>;
 
-const presetManifestFiles = import.meta.glob('./styles/manifests/presets/**/*.yaml', {
-  query: '?raw',
-  import: 'default',
-  eager: false,
-});
+function safeImportMetaGlob(pattern: string): Record<string, ManifestGlobLoader> {
+  const glob = (import.meta as ImportMeta & { glob?: ImportMetaGlobFn }).glob;
+  if (typeof glob === 'function') {
+    return glob(pattern, {
+      query: '?raw',
+      import: 'default',
+      eager: false,
+    });
+  }
+  return {};
+}
+
+const packManifestFiles = safeImportMetaGlob('./styles/manifests/packs/*.yaml');
+
+const presetManifestFiles = safeImportMetaGlob('./styles/manifests/presets/**/*.yaml');
+
+function hasManifestGlobs() {
+  return Object.keys(packManifestFiles).length > 0 && Object.keys(presetManifestFiles).length > 0;
+}
 
 let yamlLoader: Promise<typeof import('js-yaml')> | null = null;
 
@@ -36,6 +50,38 @@ async function loadYamlObjects<T>(files: Record<string, () => Promise<unknown>>)
   return entries
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([, yamlContent]) => yaml.load(String(yamlContent)) as T);
+}
+
+async function readYamlFile(filePath: string): Promise<string> {
+  const fs = await import('node:fs/promises');
+  return fs.readFile(filePath, 'utf8');
+}
+
+async function listYamlFiles(directoryPath: string): Promise<string[]> {
+  const fs = await import('node:fs/promises');
+  const entries = await fs.readdir(directoryPath, { withFileTypes: true });
+  const files = await Promise.all(
+    entries.map(async (entry) => {
+      const fullPath = `${directoryPath}/${entry.name}`;
+      if (entry.isDirectory()) {
+        return listYamlFiles(fullPath);
+      }
+      return entry.isFile() && entry.name.toLowerCase().endsWith('.yaml') ? [fullPath] : [];
+    }),
+  );
+  return files.flat();
+}
+
+async function loadYamlObjectsFromDisk<T>(directoryPath: string): Promise<T[]> {
+  const yaml = await loadYamlParser();
+  const filePaths = (await listYamlFiles(directoryPath)).sort((a, b) => a.localeCompare(b));
+  const yamlContents = await Promise.all(filePaths.map((filePath) => readYamlFile(filePath)));
+  return yamlContents.map((yamlContent) => yaml.load(String(yamlContent)) as T);
+}
+
+async function resolveFileUrlPath(url: URL): Promise<string> {
+  const { fileURLToPath } = await import('node:url');
+  return fileURLToPath(url);
 }
 
 export interface LoadedStylePresetCatalog extends StylePresetCatalog {
@@ -66,10 +112,19 @@ export async function loadStylePresetCatalog(): Promise<LoadedStylePresetCatalog
   if (catalogPromise) return catalogPromise;
 
   catalogPromise = (async () => {
-    const [packsRaw, presetManifests] = await Promise.all([
-      loadYamlObjects<StylePackManifest>(packManifestFiles),
-      loadYamlObjects<StylePresetManifest>(presetManifestFiles),
-    ]);
+    const [packsRaw, presetManifests] = hasManifestGlobs()
+      ? await Promise.all([
+          loadYamlObjects<StylePackManifest>(packManifestFiles),
+          loadYamlObjects<StylePresetManifest>(presetManifestFiles),
+        ])
+      : await Promise.all([
+          loadYamlObjectsFromDisk<StylePackManifest>(
+            await resolveFileUrlPath(new URL('./styles/manifests/packs', import.meta.url)),
+          ),
+          loadYamlObjectsFromDisk<StylePresetManifest>(
+            await resolveFileUrlPath(new URL('./styles/manifests/presets', import.meta.url)),
+          ),
+        ]);
     const packs = packsRaw.sort((a, b) => compareStylePackIdsForDisplay(a.id, b.id));
     const presets = presetManifests.map(normalizePresetAssetAvailability);
     const graph = validateStyleManifestGraph(packs, presets);

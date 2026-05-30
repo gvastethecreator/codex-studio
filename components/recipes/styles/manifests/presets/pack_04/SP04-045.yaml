@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Rock band poster
-  form_and_line: Thick ink
-  color_palette: 3 spot colors, screenprint economy, poster-impact triad
-  lighting_setup: Halftone, dot-screen depth, gig-poster rawness
-  material_texture: Paper grain
-  render_quality: Handmade, cool, squeegee texture, indie-venue vibe
-  spatial_distortion: Distressed
-  atmosphere: Loud, graphic, live-music energy, crowd-volume presence
-  key_features: Overprint, registration misalignment, distressed edge
-  creative_brief: Ink layers build in registration rough enough to feel the human hand behind the squeegee, each color pass a different instrument in the visual band. Typography shouts band names like a setlist, letterforms as loud as amplifiers. This is live music translated into flat color, where the poster vibrates at the frequency of the venue.
+  aesthetic: Limited-ink screenprint gig-poster style with loud typographic presence, tactile print imperfection, and venue-energy graphic impact
+  form_and_line: Thick ink contours with hand-pulled edge variance, halftone transitions, and letterform-dominant compositional structure
+  color_palette: Three-spot high-contrast palette with deliberate overprint interactions and poster-impact chroma economy
+  lighting_setup: Halftone-value illusion and flat print lighting logic prioritizing tonal punch over realistic illumination
+  material_texture: Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts
+  render_quality: Handmade print-shop fidelity emphasizing process evidence, tactile ink layering, and immediate event-readability
+  spatial_distortion: Distressed print deformation with slight misregistration and compositionally intentional grit accents
+  atmosphere: Loud, raw, energetic, gritty, live
+  key_features: Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight typographic lockups
+  creative_brief: >-
+    Keep this preset rooted in screenprint gig-poster grammar: limited spot
+    colors, overprint logic, and tactile registration imperfections should
+    define identity beyond any specific band reference.
 avoidRules:
   - digital gradient
 assets:

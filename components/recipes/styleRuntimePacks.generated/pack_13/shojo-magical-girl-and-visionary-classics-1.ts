@@ -4,723 +4,1123 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP05-013",
-    "name": "Psychological Biomech Drama",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Biomechanical dread, tense interiors, emotionally fractured mecha conflict, LCL fluid pools, entry plug cockpits, monstrous Angel designs",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Apocalyptic, introspective, harrowing, philosophical",
-      "key_features": "Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling",
-      "creative_brief": "Entry plug interiors glow with amniotic dread as biomechanical titans wrestle against alien geometries that defy comprehension, every cable and vertebra rendered in the cold precision of a soul questioning its own existence. The cel shadows here are not decorative but diagnostic—emotional fractures mapped onto monstrous anatomy."
-    }
+    id: 'SP05-013',
+    name: 'Psychological Biomech Drama',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Biomech-psychological drama style with existential tension, techno-organic unease, and introspective catastrophe',
+      form_and_line:
+        'Clinical 90s cel contour control, vertebral-mechanical silhouette hybrids, angular emotional posing, and diagnostic line clarity',
+      color_palette:
+        'Sickly greens and muted violets against warning reds and sterile grays, with restrained neon trauma accents',
+      lighting_setup:
+        'Harsh medical-cel contrast, cockpit-like enclosed glows, severe rim separations, and shadow bands that imply psychological fracture',
+      material_texture:
+        'Wet bio-fluid sheen, cable-organic micro-detail, painted cel grain, and analog-film noise in dark fields',
+      render_quality:
+        'Golden-era anime precision with philosophical gravitas, high emotional readability, and controlled apocalyptic staging',
+      spatial_distortion:
+        'Constrained claustrophobic interiors punctuated by scale rupture moments and uncanny anatomical-mechanical depth shifts',
+      atmosphere: 'Harrowing, introspective, apocalyptic, fragile, intense',
+      key_features:
+        'Techno-organic silhouette fusion, diagnostic shadow logic, existential cockpit tension, trauma-coded color architecture',
+      creative_brief:
+        'Keep this preset rooted in biomech existential language: techno-organic morphology, clinical shadow partitions, and psychological dread should carry the style independent of franchise-specific entities.',
+    },
   },
   {
-    "id": "SP05-162",
-    "name": "Sailor Moon - Moonlit Ribbon Justice",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Urban night magic, schoolgirl heroism, crescent emblems, transformation ribbons, heartfelt friendship and elegant monster-of-the-week glamour, moonlit romantic action",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Radiant, romantic, heroic, graceful",
-      "key_features": "Transformation ribbons, crescent motifs, moonlit city backgrounds, team silhouette posing, jewel-tone magic effects",
-      "creative_brief": "Moonlight worn as armor, ribbons unfurling into weapons of absolute love, the adolescent heart discovering that tenderness is the most formidable force in the solar system. A girl who cries easily and fights impossibly, whose transformation is not disguise but distillation of her truest self into radiant form. In the name of the moon, every shadow learns to fear the light carried by those who refuse to stop caring."
-    }
+    id: 'SP05-162',
+    name: 'Sailor Moon - Moonlit Ribbon Justice',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Moonlit magical-heroine style with radiant transformation symbolism, romantic justice energy, and team-oriented luminous heroism',
+      form_and_line:
+        'Crisp vintage-cel contouring, transformation ribbon trajectories, emblem-forward silhouette clarity, and expressive heroic gesture language',
+      color_palette:
+        'Jewel-pastel fusion with moon-silver highlights, pink-cyan-lilac harmonies, and high-contrast magical accent pulses',
+      lighting_setup:
+        'Moonlit backlight halos, transformation glow blooms, heroic rim partitions, and city-night reflective luminance',
+      material_texture:
+        'Shimmer particle overlays, satin-ribbon sheen, watercolor-cel depth layering, and subtle analog grain warmth',
+      render_quality:
+        'Golden-era magical-action anime finish with strong transformation readability and radiant ensemble polish',
+      spatial_distortion:
+        'Dynamic but graceful foreshortening supporting transformation arcs and team silhouette staging',
+      atmosphere: 'Radiant, romantic, heroic, hopeful, graceful',
+      key_features:
+        'Transformation symbolism, moon-emblem light logic, jewel-tone magic effects, team-heroine silhouette choreography',
+      creative_brief:
+        'Keep this preset defined by moonlit transformation grammar and compassionate heroic radiance: ribbon-emblem motion and jewel-toned magical glow should remain transferable beyond specific character identities.',
+    },
   },
   {
-    "id": "SP05-168",
-    "name": "Neon Genesis Evangelion - Red Alert Psychological Collapse",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Biomechanical mecha dread, cross-shaped explosions, red alert command rooms, teenage isolation, apocalyptic ocean skies, intimate trauma framed by military procedure",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Apocalyptic, interior, anxious, sacred",
-      "key_features": "Red alert overlays, cockpit claustrophobia, cross-shaped blasts, command-room grids, lonely child pilot framing",
-      "creative_brief": "Children piloting gods they cannot understand, apocalypse as family therapy gone catastrophically wrong, red alert klaxons screaming through command rooms while a boy whispers that he must not run away. The mecha bleed, the crosses detonate, and the line between biomechanical horror and teenage loneliness dissolves into something older than either. The end of the world wears the face of everyone who failed to love you properly."
-    }
+    id: 'SP05-168',
+    name: 'Neon Genesis Evangelion - Red Alert Psychological Collapse',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Biomechanical mecha dread, cross-shaped explosions, red alert command rooms, teenage isolation, apocalyptic ocean skies, intimate trauma framed by military procedure',
+      form_and_line:
+        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+      color_palette:
+        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+      lighting_setup:
+        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+      material_texture:
+        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+      render_quality:
+        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+      spatial_distortion:
+        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
+      atmosphere: 'Apocalyptic, interior, anxious, sacred',
+      key_features:
+        'Red alert overlays, cockpit claustrophobia, cross-shaped blasts, command-room grids, lonely child pilot framing',
+      creative_brief:
+        'Children piloting gods they cannot understand, apocalypse as family therapy gone catastrophically wrong, red alert klaxons screaming through command rooms while a boy whispers that he must not run away. The mecha bleed, the crosses detonate, and the line between biomechanical horror and teenage loneliness dissolves into something older than either. The end of the world wears the face of everyone who failed to love you properly.',
+    },
   },
   {
-    "id": "SP05-171",
-    "name": "Slayers - Arcane Chaos Roadtrip",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Sorcerous comedy-adventure, greedy treasure energy, explosive spell circles, fantasy road dust, mischievous confidence, loud 90s spellcasting charm",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Comic, adventurous, fiery, rambunctious",
-      "key_features": "Spell-circle bursts, roadtrip fantasy props, comic reaction faces, treasure-hunter posing, fireball spectacle",
-      "creative_brief": "A sorceress whose firepower vastly exceeds her judgment, dragging a fellowship of misfits across fantasy kingdoms that will never be the same after her spell circles stop glowing. Greed is a lifestyle, destruction is a love language, and the only thing more explosive than her magic is her appetite for treasure, food, and the absolute refusal to let anyone else get the last word. The road is chaos, and chaos has never had a better ambassador."
-    }
+    id: 'SP05-171',
+    name: 'Slayers - Arcane Chaos Roadtrip',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Sorcerous comedy-adventure, greedy treasure energy, explosive spell circles, fantasy road dust, mischievous confidence, loud 90s spellcasting charm',
+      form_and_line:
+        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+      color_palette:
+        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+      lighting_setup:
+        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+      material_texture:
+        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+      render_quality:
+        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+      spatial_distortion:
+        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
+      atmosphere: 'Comic, adventurous, fiery, rambunctious',
+      key_features:
+        'Spell-circle bursts, roadtrip fantasy props, comic reaction faces, treasure-hunter posing, fireball spectacle',
+      creative_brief:
+        'A sorceress whose firepower vastly exceeds her judgment, dragging a fellowship of misfits across fantasy kingdoms that will never be the same after her spell circles stop glowing. Greed is a lifestyle, destruction is a love language, and the only thing more explosive than her magic is her appetite for treasure, food, and the absolute refusal to let anyone else get the last word. The road is chaos, and chaos has never had a better ambassador.',
+    },
   },
   {
-    "id": "SP05-172",
-    "name": "The Vision of Escaflowne - Tarot Mecha Fantasy",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Tarot prophecy, cape-swept knights, dragon-armored mecha, windswept fantasy romance, jewel-toned sky drama, fate-heavy 90s grandeur",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Romantic, fated, windswept, grand",
-      "key_features": "Tarot symbolism, capes and armor, fantasy mecha silhouettes, sky-heavy compositions, prophecy-charged gazes",
-      "creative_brief": "Destiny written in tarot cards scattered across worlds, mechanical dragons answering the summons of a girl whose heart can bridge dimensions and whose courage can move armored titans. Capes sweep through jewel-toned skies as prophecy unfurls like a lover confession, every duel a page in a fortune that was written before the stars were named. Romance and warfare share the same breath here, and fate wears the face of someone you chose to protect against all odds."
-    }
+    id: 'SP05-172',
+    name: 'The Vision of Escaflowne - Tarot Mecha Fantasy',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Tarot prophecy, cape-swept knights, dragon-armored mecha, windswept fantasy romance, jewel-toned sky drama, fate-heavy 90s grandeur',
+      form_and_line:
+        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+      color_palette:
+        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+      lighting_setup:
+        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+      material_texture:
+        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+      render_quality:
+        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+      spatial_distortion:
+        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
+      atmosphere: 'Romantic, fated, windswept, grand',
+      key_features:
+        'Tarot symbolism, capes and armor, fantasy mecha silhouettes, sky-heavy compositions, prophecy-charged gazes',
+      creative_brief:
+        'Destiny written in tarot cards scattered across worlds, mechanical dragons answering the summons of a girl whose heart can bridge dimensions and whose courage can move armored titans. Capes sweep through jewel-toned skies as prophecy unfurls like a lover confession, every duel a page in a fortune that was written before the stars were named. Romance and warfare share the same breath here, and fate wears the face of someone you chose to protect against all odds.',
+    },
   },
   {
-    "id": "SP05-176",
-    "name": "Magic Knight Rayearth - Jewel Armor Quest",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Shoujo fantasy rescue with armored heroines, rune-light, giant mythic summons, candy-bright quest energy, magical friendship in a richly colored fantasy world",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Heroic, bright, jewel-like, adventurous",
-      "key_features": "Armor-and-skirt silhouettes, giant summon motifs, jewel magic effects, fantasy vehicle scale, team-quest compositions",
-      "creative_brief": "Armor glows not from polish but from the heat of belief worn against the skin. Giant summons are prayers given form, the landscape itself bending to accommodate impossible courage. Every jewel holds a heartbeat, every blade carries the weight of someone waiting at home."
-    }
+    id: 'SP05-176',
+    name: 'Magic Knight Rayearth - Jewel Armor Quest',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Shoujo fantasy rescue with armored heroines, rune-light, giant mythic summons, candy-bright quest energy, magical friendship in a richly colored fantasy world',
+      form_and_line:
+        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+      color_palette:
+        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+      lighting_setup:
+        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+      material_texture:
+        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+      render_quality:
+        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+      spatial_distortion:
+        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
+      atmosphere: 'Heroic, bright, jewel-like, adventurous',
+      key_features:
+        'Armor-and-skirt silhouettes, giant summon motifs, jewel magic effects, fantasy vehicle scale, team-quest compositions',
+      creative_brief:
+        'Armor glows not from polish but from the heat of belief worn against the skin. Giant summons are prayers given form, the landscape itself bending to accommodate impossible courage. Every jewel holds a heartbeat, every blade carries the weight of someone waiting at home.',
+    },
   },
   {
-    "id": "SP05-177",
-    "name": "Martian Successor Nadesico - Cheerful Bridge-Deck Mecha",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Cheerful ensemble spaceship banter, bridge-deck chaos, retro-futurist mecha action, anime-inside-anime meta flavor, bright war-comedy balance",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Bouncy, tactical, colorful, meta",
-      "key_features": "Bridge-deck ensemble staging, mecha sortie framing, retro UI accents, playful command-room energy, bright team body language",
-      "creative_brief": "War and comedy share the same bridge-deck, the same breath between alarm and punchline. Retro consoles blink with the rhythm of chosen family, mecha limbs extending like arguments made physical. This ship flies on the fuel of irreverence, and every crew member knows the stakes taste sweeter when the jokes land."
-    }
+    id: 'SP05-177',
+    name: 'Martian Successor Nadesico - Cheerful Bridge-Deck Mecha',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Cheerful ensemble spaceship banter, bridge-deck chaos, retro-futurist mecha action, anime-inside-anime meta flavor, bright war-comedy balance',
+      form_and_line:
+        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+      color_palette:
+        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+      lighting_setup:
+        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+      material_texture:
+        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+      render_quality:
+        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+      spatial_distortion:
+        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
+      atmosphere: 'Bouncy, tactical, colorful, meta',
+      key_features:
+        'Bridge-deck ensemble staging, mecha sortie framing, retro UI accents, playful command-room energy, bright team body language',
+      creative_brief:
+        'War and comedy share the same bridge-deck, the same breath between alarm and punchline. Retro consoles blink with the rhythm of chosen family, mecha limbs extending like arguments made physical. This ship flies on the fuel of irreverence, and every crew member knows the stakes taste sweeter when the jokes land.',
+    },
   },
   {
-    "id": "SP05-178",
-    "name": "Blue Seed - Mythic Tokyo Purge",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Mythic plant-horror action in modern Tokyo, shrine lineage duty, monster invasions, spiritual bureaucracy, 90s occult action with emergency-team momentum",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Urgent, mythic, urban, supernatural",
-      "key_features": "Shrine symbols, monster-vine invasions, city emergency framing, lineage heroine posture, occult-tech contrast",
-      "creative_brief": "Ancient roots crack concrete, and the city learns its own mythology the hard way. Shrine duty is not heritage but emergency, a bloodline answering the phone at 3 AM. In the spaces between skyscrapers, something older than asphalt stirs and remembers its name."
-    }
+    id: 'SP05-178',
+    name: 'Blue Seed - Mythic Tokyo Purge',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Mythic plant-horror action in modern Tokyo, shrine lineage duty, monster invasions, spiritual bureaucracy, 90s occult action with emergency-team momentum',
+      form_and_line:
+        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+      color_palette:
+        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+      lighting_setup:
+        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+      material_texture:
+        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+      render_quality:
+        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+      spatial_distortion:
+        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
+      atmosphere: 'Urgent, mythic, urban, supernatural',
+      key_features:
+        'Shrine symbols, monster-vine invasions, city emergency framing, lineage heroine posture, occult-tech contrast',
+      creative_brief:
+        'Ancient roots crack concrete, and the city learns its own mythology the hard way. Shrine duty is not heritage but emergency, a bloodline answering the phone at 3 AM. In the spaces between skyscrapers, something older than asphalt stirs and remembers its name.',
+    },
   },
   {
-    "id": "SP05-019",
-    "name": "Wired Existential Glitch",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Stark shadows, signal noise, minimal rooms, digital alienation, layered distortion, CRT monitor glow, static interference, school-girl psychological horror",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Unsettling, introspective, dissonant, bleak",
-      "key_features": "Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling",
-      "creative_brief": "CRT monitor glow bleeds across a stark room where a schoolgirl's silhouette fractures into signal noise, the comfortable tropes of anime cuteness corrupted by static that whispers of digital alienation. Layers of distortion stack like bad dreams, cel lines dissolving into the visual equivalent of a scream you cannot hear."
-    }
+    id: 'SP05-019',
+    name: 'Wired Existential Glitch',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Psychological glitch-anime style built on analog signal decay, identity fragmentation, and minimalist existential framing',
+      form_and_line:
+        'Fine cel contours interrupted by interference breaks, discontinuous silhouette echoes, jittered edge registration, restrained gesture geometry',
+      color_palette:
+        'Desaturated lavenders and cold cyans with intermittent neon corruption pulses, charcoal voids, and ghost-white highlights',
+      lighting_setup:
+        'Low-key monitor-like emission, abrupt contrast cliffs, isolated halo bands, and unstable luminance transitions',
+      material_texture:
+        'CRT phosphor grain, static overlays, scanline veils, layered cel paint softness disrupted by digital noise scars',
+      render_quality:
+        'High-fidelity retro-anime treatment with intentional analog artifacts and controlled degradation for emotional unease',
+      spatial_distortion:
+        'Perceptual depth drift, duplicated contour offsets, and compositional dislocation that suggests cognitive instability',
+      atmosphere: 'Uncanny, introspective, fragile, dissonant, haunted',
+      key_features:
+        'Signal-noise dramaturgy, fragmented silhouette logic, analog-digital tension, sparse emotional staging, interference-led mood design',
+      creative_brief:
+        'Make the style recognizable through signal degradation behavior and perceptual instability: line breaks, static overlays, and contrast collapse should communicate psychological tension independent of character archetype.',
+    },
   },
   {
-    "id": "SP05-020",
-    "name": "Dream Card Enchanter",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Ornate costumes, gentle magic, decorative emblems, shimmering softness, card motifs, feathered wings, floating petals, magical circles",
-      "form_and_line": "Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking",
-      "color_palette": "Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop",
-      "lighting_setup": "High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights",
-      "material_texture": "Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture",
-      "render_quality": "High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading",
-      "spatial_distortion": "Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design",
-      "atmosphere": "Tender, charming, magical, sweet",
-      "key_features": "Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling",
-      "creative_brief": "Ornate costume ribbons and feathered wings float through magical circles as card motifs cascade like promises, each decorative emblem rendered with the delicate precision of a love letter written in sparkles. The 90s cel warmth wraps tender magic in shimmering softness, a visual lullaby for the heart."
-    }
+    id: 'SP05-020',
+    name: 'Dream Card Enchanter',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Delicate magical-girl ornament style with emblematic ritual motifs, gentle enchantment, and luminous innocence',
+      form_and_line:
+        'Fine 90s cel contours, ribbon-flow gesture accents, emblem-framing circles, and graceful silhouette articulation',
+      color_palette:
+        'Pastel jewel harmony with soft pink-lilac cores, mint-cyan glints, and controlled golden sparkle highlights',
+      lighting_setup:
+        'Soft radiant bloom, haloed key lights, tender rim glows, and low-contrast magical diffusion',
+      material_texture:
+        'Silk-and-ribbon softness, particle sparkle layering, watercolor-backed cel fields, and analog grain warmth',
+      render_quality:
+        'Elegant vintage-anime magical rendering with high decorative clarity and emotionally gentle polish',
+      spatial_distortion:
+        'Lightly elongated fairytale proportions with floating motif depth and graceful compositional lift',
+      atmosphere: 'Tender, hopeful, radiant, whimsical, reassuring',
+      key_features:
+        'Emblematic ritual motifs, ribbon choreography, soft magical bloom, decorative pastel harmony',
+      creative_brief:
+        'Preserve this preset through ornamental magic grammar: emblem circles, ribbon-flow silhouettes, and soft jewel-pastel luminance should remain the transferable identity beyond specific character archetypes.',
+    },
   },
   {
-    "id": "SP05-183",
-    "name": "Kimi ni Todoke - Shy Hallway Bloom",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Ultra-gentle school romance, nervous hallway glances, clean daylight, social fear thawing into warmth, sincerity as spectacle, fragile closeness and kindness",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Shy, bright, hopeful, soft",
-      "key_features": "Hallway proximity, blush-heavy face acting, classroom sunlight, friendship-circle warmth, delicate confession framing",
-      "creative_brief": "A hallway is not architecture but the distance between two people deciding whether to speak. Sunlight through classroom windows becomes the only witness to a courage too fragile to name. Every blush is a tiny revolution against the fear of being seen, and sincerity is the last spectacle worth staging."
-    }
+    id: 'SP05-183',
+    name: 'Kimi ni Todoke - Shy Hallway Bloom',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Ultra-gentle school romance, nervous hallway glances, clean daylight, social fear thawing into warmth, sincerity as spectacle, fragile closeness and kindness',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Shy, bright, hopeful, soft',
+      key_features:
+        'Hallway proximity, blush-heavy face acting, classroom sunlight, friendship-circle warmth, delicate confession framing',
+      creative_brief:
+        'A hallway is not architecture but the distance between two people deciding whether to speak. Sunlight through classroom windows becomes the only witness to a courage too fragile to name. Every blush is a tiny revolution against the fear of being seen, and sincerity is the last spectacle worth staging.',
+    },
   },
   {
-    "id": "SP05-190",
-    "name": "Ao Haru Ride - Clean Uniform Reunion Ache",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Polished school romance, former-crush reunion tension, clean uniforms, hallway silences, emotionally guarded adolescence, cool beauty hiding confusion",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Pensive, attractive, hesitant, tender",
-      "key_features": "Clean school styling, reunion glances, cool-guy silhouette contrast, airy campus spaces, heart-stopping close-ups",
-      "creative_brief": "A pressed uniform holds the shape of who someone used to be, and reunion is the collision of memory with the stranger who now wears that face. Hallway silences are louder than any confession, reverberating with years of unsaid sentences. Cool exterior is just the first page of a story the heart has not finished writing."
-    }
+    id: 'SP05-190',
+    name: 'Ao Haru Ride - Clean Uniform Reunion Ache',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Polished school romance, former-crush reunion tension, clean uniforms, hallway silences, emotionally guarded adolescence, cool beauty hiding confusion',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Pensive, attractive, hesitant, tender',
+      key_features:
+        'Clean school styling, reunion glances, cool-guy silhouette contrast, airy campus spaces, heart-stopping close-ups',
+      creative_brief:
+        'A pressed uniform holds the shape of who someone used to be, and reunion is the collision of memory with the stranger who now wears that face. Hallway silences are louder than any confession, reverberating with years of unsaid sentences. Cool exterior is just the first page of a story the heart has not finished writing.',
+    },
   },
   {
-    "id": "SP05-181",
-    "name": "Fruits Basket - Zodiac Warmth and Grief",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Soft domestic healing, animal-zodiac tenderness, school-day comfort shading into family trauma, kind eyes, gentle kitchens, emotional weather made delicate and bright",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Tender, healing, sorrowful, warm",
-      "key_features": "Domestic interiors, kind close-ups, zodiac motifs, school-day softness, emotionally loaded embraces",
-      "creative_brief": "Kindness is a kitchen that never closes, a rice ball offered without condition. The zodiac is not costume but confession, each animal form carrying the weight of a family secret. Grief and warmth share the same bowl here, and healing tastes like the quiet between two people who have finally stopped performing."
-    }
+    id: 'SP05-181',
+    name: 'Fruits Basket - Zodiac Warmth and Grief',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Soft domestic healing, animal-zodiac tenderness, school-day comfort shading into family trauma, kind eyes, gentle kitchens, emotional weather made delicate and bright',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Tender, healing, sorrowful, warm',
+      key_features:
+        'Domestic interiors, kind close-ups, zodiac motifs, school-day softness, emotionally loaded embraces',
+      creative_brief:
+        'Kindness is a kitchen that never closes, a rice ball offered without condition. The zodiac is not costume but confession, each animal form carrying the weight of a family secret. Grief and warmth share the same bowl here, and healing tastes like the quiet between two people who have finally stopped performing.',
+    },
   },
   {
-    "id": "SP05-182",
-    "name": "Nana - Black-Lace Apartment Heartbreak",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Fashion-forward adult shojo, cigarette smoke over cramped Tokyo apartments, black lace and stage lights, romantic damage, friendship and ambition grinding together",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Stylish, aching, intimate, adult",
-      "key_features": "Fashion silhouettes, apartment intimacy, concert lighting accents, emotional confrontation framing, black-lace detail",
-      "creative_brief": "Black lace is armor for hearts that bruise in fashionable silhouettes. Cigarette smoke fills the space between what two people want and what they can actually give. Stage lights expose everything, and the most dangerous duet is the one where ambition and love refuse to take turns."
-    }
+    id: 'SP05-182',
+    name: 'Nana - Black-Lace Apartment Heartbreak',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Fashion-forward adult shojo, cigarette smoke over cramped Tokyo apartments, black lace and stage lights, romantic damage, friendship and ambition grinding together',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Stylish, aching, intimate, adult',
+      key_features:
+        'Fashion silhouettes, apartment intimacy, concert lighting accents, emotional confrontation framing, black-lace detail',
+      creative_brief:
+        'Black lace is armor for hearts that bruise in fashionable silhouettes. Cigarette smoke fills the space between what two people want and what they can actually give. Stage lights expose everything, and the most dangerous duet is the one where ambition and love refuse to take turns.',
+    },
   },
   {
-    "id": "SP05-184",
-    "name": "Ouran High School Host Club - Rose-Cloud Flirt Theater",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Elite-school parody romance, princely posturing, rose-cloud backdrops, theatrical flirting, comedy elegance, emotional sincerity hiding under polished nonsense",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Playful, elegant, satirical, affectionate",
-      "key_features": "Rose effects, princely poses, ornate academy props, ensemble comedy staging, polished costume detail",
-      "creative_brief": "Roses bloom on cue because irony is the truest form of sincerity here. Every princely pose is a negotiation between what is expected and what is actually felt, the gap filled with theatrical genius. The joke and the confession share the same spotlight, and neither wants to yield."
-    }
+    id: 'SP05-184',
+    name: 'Ouran High School Host Club - Rose-Cloud Flirt Theater',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Elite-school parody romance, princely posturing, rose-cloud backdrops, theatrical flirting, comedy elegance, emotional sincerity hiding under polished nonsense',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Playful, elegant, satirical, affectionate',
+      key_features:
+        'Rose effects, princely poses, ornate academy props, ensemble comedy staging, polished costume detail',
+      creative_brief:
+        'Roses bloom on cue because irony is the truest form of sincerity here. Every princely pose is a negotiation between what is expected and what is actually felt, the gap filled with theatrical genius. The joke and the confession share the same spotlight, and neither wants to yield.',
+    },
   },
   {
-    "id": "SP05-185",
-    "name": "Paradise Kiss - Runway Heartbreak Chic",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Fashion-school rebellion, runway fabrics, adult yearning, punk glamour, cigarettes and sewing rooms, glossy color and emotional mess sharing the same pose",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Chic, restless, romantic, self-inventing",
-      "key_features": "Runway silhouettes, sewing-room textures, fashion detail, angular romantic posing, city-night glamour",
-      "creative_brief": "A sewing needle pierces fabric and future simultaneously, stitching desire into wearable proof. Runway lights expose more than garment lines—they reveal the hunger beneath the glamour. Every hem carries the friction of a heart breaking beautifully, rebellion tailored to fit."
-    }
+    id: 'SP05-185',
+    name: 'Paradise Kiss - Runway Heartbreak Chic',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Fashion-school rebellion, runway fabrics, adult yearning, punk glamour, cigarettes and sewing rooms, glossy color and emotional mess sharing the same pose',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Chic, restless, romantic, self-inventing',
+      key_features:
+        'Runway silhouettes, sewing-room textures, fashion detail, angular romantic posing, city-night glamour',
+      creative_brief:
+        'A sewing needle pierces fabric and future simultaneously, stitching desire into wearable proof. Runway lights expose more than garment lines—they reveal the hunger beneath the glamour. Every hem carries the friction of a heart breaking beautifully, rebellion tailored to fit.',
+    },
   },
   {
-    "id": "SP05-186",
-    "name": "Lovely Complex - Height-Gap Comedy Romance",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Osaka school romance with comedy timing, exaggerated embarrassment, height-contrast staging, playful face acting, colorful youthful banter with full-hearted payoff",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Funny, sweet, loud, sincere",
-      "key_features": "Height-contrast compositions, comic reaction faces, school-date props, banter body language, bright urban youth color",
-      "creative_brief": "Height is not measurement but emotional scale stretched to absurdity and back to tenderness. Osaka streets become an arena where embarrassment and affection trade punches with equal force. The loudest laugh bends toward the quietest confession, and inches between two people dissolve into nothing when the timing is finally right."
-    }
+    id: 'SP05-186',
+    name: 'Lovely Complex - Height-Gap Comedy Romance',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Osaka school romance with comedy timing, exaggerated embarrassment, height-contrast staging, playful face acting, colorful youthful banter with full-hearted payoff',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Funny, sweet, loud, sincere',
+      key_features:
+        'Height-contrast compositions, comic reaction faces, school-date props, banter body language, bright urban youth color',
+      creative_brief:
+        'Height is not measurement but emotional scale stretched to absurdity and back to tenderness. Osaka streets become an arena where embarrassment and affection trade punches with equal force. The loudest laugh bends toward the quietest confession, and inches between two people dissolve into nothing when the timing is finally right.',
+    },
   },
   {
-    "id": "SP05-187",
-    "name": "Skip Beat! - Revenge Idol Stardom Spark",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Show-business transformation, spite-fueled determination, flamboyant acting rehearsal, revenge turning into self-discovery, theatrical wardrobe energy, emotion rendered in starbursts and masks",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Driven, theatrical, glittering, intense",
-      "key_features": "Showbiz costumes, rehearsal spaces, mask symbolism, expressive revenge faces, starburst comedic effects",
-      "creative_brief": "Spite burns cleaner than ambition, its flame hot enough to forge an entire self from scratch. Rehearsal rooms become laboratories where revenge mutates into something the mirror does not recognize. Masks do not hide the truth—they reveal which version of the soul is loudest today."
-    }
+    id: 'SP05-187',
+    name: 'Skip Beat! - Revenge Idol Stardom Spark',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Show-business transformation, spite-fueled determination, flamboyant acting rehearsal, revenge turning into self-discovery, theatrical wardrobe energy, emotion rendered in starbursts and masks',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Driven, theatrical, glittering, intense',
+      key_features:
+        'Showbiz costumes, rehearsal spaces, mask symbolism, expressive revenge faces, starburst comedic effects',
+      creative_brief:
+        'Spite burns cleaner than ambition, its flame hot enough to forge an entire self from scratch. Rehearsal rooms become laboratories where revenge mutates into something the mirror does not recognize. Masks do not hide the truth—they reveal which version of the soul is loudest today.',
+    },
   },
   {
-    "id": "SP05-188",
-    "name": "Boys Over Flowers - Elite Campus Melodrama",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Luxury-school social cruelty, staircase confrontations, expensive uniforms, humiliations blooming into romance, glossy teen melodrama with sharp class contrast",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Tumultuous, glamorous, bruising, addictive",
-      "key_features": "Elite school props, social hierarchy staging, staircase confrontations, polished uniform detail, rain-soaked dramatic beats",
-      "creative_brief": "Marble staircases are not architecture but vertical arenas where status climbs and kindness stumbles. Rain does not discriminate between designer fabric and borrowed courage, soaking both equally. The cruelest corridors hold the warmest transformations, and humiliation is sometimes the only doorway into love."
-    }
+    id: 'SP05-188',
+    name: 'Boys Over Flowers - Elite Campus Melodrama',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Luxury-school social cruelty, staircase confrontations, expensive uniforms, humiliations blooming into romance, glossy teen melodrama with sharp class contrast',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Tumultuous, glamorous, bruising, addictive',
+      key_features:
+        'Elite school props, social hierarchy staging, staircase confrontations, polished uniform detail, rain-soaked dramatic beats',
+      creative_brief:
+        'Marble staircases are not architecture but vertical arenas where status climbs and kindness stumbles. Rain does not discriminate between designer fabric and borrowed courage, soaking both equally. The cruelest corridors hold the warmest transformations, and humiliation is sometimes the only doorway into love.',
+    },
   },
   {
-    "id": "SP05-189",
-    "name": "Orange - Sunset Regret Letter Drama",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Time-bending school romance, sunset sports fields, letters from the future, emotional caution and missed chances, warm orange light carrying quiet grief",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Regretful, warm, hopeful, bittersweet",
-      "key_features": "Letter motifs, sunset field backdrops, teen ensemble tenderness, time-memory framing, restrained confession scenes",
-      "creative_brief": "Sunset is not the end of light but the beginning of memory, orange bleeding into every regret like a letter too late to deliver. Sports fields hold the echo of moments that could have bent differently. Time folds here, and a message from the future arrives as softly as a hand that should have been held."
-    }
+    id: 'SP05-189',
+    name: 'Orange - Sunset Regret Letter Drama',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Time-bending school romance, sunset sports fields, letters from the future, emotional caution and missed chances, warm orange light carrying quiet grief',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Regretful, warm, hopeful, bittersweet',
+      key_features:
+        'Letter motifs, sunset field backdrops, teen ensemble tenderness, time-memory framing, restrained confession scenes',
+      creative_brief:
+        'Sunset is not the end of light but the beginning of memory, orange bleeding into every regret like a letter too late to deliver. Sports fields hold the echo of moments that could have bent differently. Time folds here, and a message from the future arrives as softly as a hand that should have been held.',
+    },
   },
   {
-    "id": "SP05-191",
-    "name": "Say I Love You - Night-Walk Intimacy",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "More grounded shojo romance, late-night streets, shy trust-building, protective closeness, simple fashion and emotionally readable modern tenderness",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Intimate, cautious, warm, vulnerable",
-      "key_features": "Night-walk lighting, modern casual outfits, protective gesture language, realistic school-date spaces, trust-building eye contact",
-      "creative_brief": "Night streets erase pretense, leaving only the honest rhythm of footsteps and the space closing between two bodies learning to trust. Simple clothes carry complex hearts, and a protective gesture speaks louder than any grand declaration. Intimacy is built in the gaps between streetlamps, one hesitant step at a time."
-    }
+    id: 'SP05-191',
+    name: 'Say I Love You - Night-Walk Intimacy',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'More grounded shojo romance, late-night streets, shy trust-building, protective closeness, simple fashion and emotionally readable modern tenderness',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Intimate, cautious, warm, vulnerable',
+      key_features:
+        'Night-walk lighting, modern casual outfits, protective gesture language, realistic school-date spaces, trust-building eye contact',
+      creative_brief:
+        'Night streets erase pretense, leaving only the honest rhythm of footsteps and the space closing between two bodies learning to trust. Simple clothes carry complex hearts, and a protective gesture speaks louder than any grand declaration. Intimacy is built in the gaps between streetlamps, one hesitant step at a time.',
+    },
   },
   {
-    "id": "SP05-192",
-    "name": "Maid Sama! - Secret Uniform Double Life",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Student-council severity clashing with maid-cafe blush comedy, hidden identity sparkle, strict posture dissolving into embarrassment, high-energy romantic power-play",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Combative, cute, sparkling, energetic",
-      "key_features": "Maid-cafe props, strict-to-flustered acting, secret-identity staging, school-authority costume contrast, playful dominance framing",
-      "creative_brief": "Severity is a uniform worn so tightly it becomes performance, and the blush underneath threatens to unravel the entire act. Two identities orbit each other like sparring partners who have forgotten why they started fighting. The thrill is not in keeping secrets but in being discovered by exactly the right person at exactly the wrong moment."
-    }
+    id: 'SP05-192',
+    name: 'Maid Sama! - Secret Uniform Double Life',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Student-council severity clashing with maid-cafe blush comedy, hidden identity sparkle, strict posture dissolving into embarrassment, high-energy romantic power-play',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Combative, cute, sparkling, energetic',
+      key_features:
+        'Maid-cafe props, strict-to-flustered acting, secret-identity staging, school-authority costume contrast, playful dominance framing',
+      creative_brief:
+        'Severity is a uniform worn so tightly it becomes performance, and the blush underneath threatens to unravel the entire act. Two identities orbit each other like sparring partners who have forgotten why they started fighting. The thrill is not in keeping secrets but in being discovered by exactly the right person at exactly the wrong moment.',
+    },
   },
   {
-    "id": "SP05-194",
-    "name": "Rose of Versailles - Court Portrait Revolution",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Baroque court melodrama, powdered elegance, sword-bearing nobility, revolution on the horizon, lace and tragedy rendered with operatic grandeur",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Regal, tragic, historic, operatic",
-      "key_features": "Baroque interiors, lace uniforms, court portrait poses, revolutionary tension, tear-bright dramatic gazes",
-      "creative_brief": "Powder and steel occupy the same portrait frame, beauty and violence locked in a waltz that history will not survive unchanged. Every lace ruffle conceals a pulse that beats for something larger than courtly approval. Revolution does not announce itself with trumpets—it wears silk and holds a sword with the same steady hand."
-    }
+    id: 'SP05-194',
+    name: 'Rose of Versailles - Court Portrait Revolution',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Baroque court melodrama, powdered elegance, sword-bearing nobility, revolution on the horizon, lace and tragedy rendered with operatic grandeur',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Regal, tragic, historic, operatic',
+      key_features:
+        'Baroque interiors, lace uniforms, court portrait poses, revolutionary tension, tear-bright dramatic gazes',
+      creative_brief:
+        'Powder and steel occupy the same portrait frame, beauty and violence locked in a waltz that history will not survive unchanged. Every lace ruffle conceals a pulse that beats for something larger than courtly approval. Revolution does not announce itself with trumpets—it wears silk and holds a sword with the same steady hand.',
+    },
   },
   {
-    "id": "SP05-195",
-    "name": "Neighborhood Story - Harajuku Handmade Romance",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "90s fashion-school youthfulness, handmade accessories, Harajuku color pops, neighborhood love drama, cute clutter and ambitious creative dreams",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Cute, stylish, youthful, crafty",
-      "key_features": "Handmade accessories, Harajuku color, art-school props, street-fashion silhouettes, neighborhood romance staging",
-      "creative_brief": "Handmade is a fingerprint pressed into fabric, every stitch carrying the tremor of a dream too new to name. Harajuku streets spill color like an open sketchbook, and ambition wears mismatched earrings on purpose. The neighborhood is not setting but conspirator, every alley humming with the possibility of being seen by someone who gets it."
-    }
+    id: 'SP05-195',
+    name: 'Neighborhood Story - Harajuku Handmade Romance',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        '90s fashion-school youthfulness, handmade accessories, Harajuku color pops, neighborhood love drama, cute clutter and ambitious creative dreams',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Cute, stylish, youthful, crafty',
+      key_features:
+        'Handmade accessories, Harajuku color, art-school props, street-fashion silhouettes, neighborhood romance staging',
+      creative_brief:
+        'Handmade is a fingerprint pressed into fabric, every stitch carrying the tremor of a dream too new to name. Harajuku streets spill color like an open sketchbook, and ambition wears mismatched earrings on purpose. The neighborhood is not setting but conspirator, every alley humming with the possibility of being seen by someone who gets it.',
+    },
   },
   {
-    "id": "SP05-196",
-    "name": "Honey and Clover - Art-School Spring Ache",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Art-student shojo-seinen blend, spring light, campus studios, unspoken longing, youth drifting toward adulthood through creativity and fragile friendship",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Soft, wistful, intelligent, aching",
-      "key_features": "Art-studio props, spring campus light, quiet ensemble spacing, unspoken affection acting, sketchbook textures",
-      "creative_brief": "Spring light through studio windows is not illumination but interrogation, asking every canvas what it means to grow up without a map. Unspoken longing settles between easels like charcoal dust, fine and permanent. Art becomes the only language capable of translating the ache of youth into something that makes the distance between people feel shorter."
-    }
+    id: 'SP05-196',
+    name: 'Honey and Clover - Art-School Spring Ache',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Art-student shojo-seinen blend, spring light, campus studios, unspoken longing, youth drifting toward adulthood through creativity and fragile friendship',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Soft, wistful, intelligent, aching',
+      key_features:
+        'Art-studio props, spring campus light, quiet ensemble spacing, unspoken affection acting, sketchbook textures',
+      creative_brief:
+        'Spring light through studio windows is not illumination but interrogation, asking every canvas what it means to grow up without a map. Unspoken longing settles between easels like charcoal dust, fine and permanent. Art becomes the only language capable of translating the ache of youth into something that makes the distance between people feel shorter.',
+    },
   },
   {
-    "id": "SP05-197",
-    "name": "Kamisama Kiss - Shrine Romance and Fox Familiar",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Modern shrine romance, fox-familiar charm, godhood responsibilities, soft comedy and spiritual tenderness, moonlit shrine stairs and magical domesticity",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Playful, spiritual, romantic, luminous",
-      "key_features": "Shrine props, fox motifs, moonlit stair scenes, divine-contract details, playful supernatural intimacy",
-      "creative_brief": "Shrine stairs connect two worlds and the space between them belongs to no one but the fox who waits at the top. Moonlight does not illuminate—it consecrates, turning domestic moments into small acts of worship. Divine contracts are signed in the language of shared meals and hair-trigger sarcasm, and that is exactly how it should be."
-    }
+    id: 'SP05-197',
+    name: 'Kamisama Kiss - Shrine Romance and Fox Familiar',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Modern shrine romance, fox-familiar charm, godhood responsibilities, soft comedy and spiritual tenderness, moonlit shrine stairs and magical domesticity',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Playful, spiritual, romantic, luminous',
+      key_features:
+        'Shrine props, fox motifs, moonlit stair scenes, divine-contract details, playful supernatural intimacy',
+      creative_brief:
+        'Shrine stairs connect two worlds and the space between them belongs to no one but the fox who waits at the top. Moonlight does not illuminate—it consecrates, turning domestic moments into small acts of worship. Divine contracts are signed in the language of shared meals and hair-trigger sarcasm, and that is exactly how it should be.',
+    },
   },
   {
-    "id": "SP05-198",
-    "name": "Princess Jellyfish - Jelly-Color Otaku Makeover",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Otaku apartment eccentricity, fashion makeovers, jellyfish softness, outsider-sisterhood warmth, frills and insecurity rendered with bright empathy",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Eccentric, sweet, transformative, cozy",
-      "key_features": "Jellyfish motifs, frilly fabric detail, apartment-clan clutter, makeover contrasts, sisterhood group energy",
-      "creative_brief": "A cramped apartment is not confinement but ecosystem, every corner pulsing with the soft bioluminescence of shared obsession. Jellyfish become metaphor—creatures that drift but never drown, translucent but never invisible. Makeover is not erasure but translation, the outside world finally learning to read a language the heart has been speaking all along."
-    }
+    id: 'SP05-198',
+    name: 'Princess Jellyfish - Jelly-Color Otaku Makeover',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Otaku apartment eccentricity, fashion makeovers, jellyfish softness, outsider-sisterhood warmth, frills and insecurity rendered with bright empathy',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Eccentric, sweet, transformative, cozy',
+      key_features:
+        'Jellyfish motifs, frilly fabric detail, apartment-clan clutter, makeover contrasts, sisterhood group energy',
+      creative_brief:
+        'A cramped apartment is not confinement but ecosystem, every corner pulsing with the soft bioluminescence of shared obsession. Jellyfish become metaphor—creatures that drift but never drown, translucent but never invisible. Makeover is not erasure but translation, the outside world finally learning to read a language the heart has been speaking all along.',
+    },
   },
   {
-    "id": "SP05-200",
-    "name": "Sukitte Ii na yo - Rainy Umbrella Confession",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Contemporary shojo realism, umbrellas, rain-soaked school romance, tentative self-worth, modern intimacy and apology under sodium streetlights",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Rainy, vulnerable, sincere, modern",
-      "key_features": "Umbrella framing, rain reflections, urban school-route scenery, hesitant touch language, confession-heavy close-ups",
-      "creative_brief": "Rain does not stop for confessions, and an umbrella becomes a temporary room where two people finally stop apologizing for their own existence. Sodium streetlights paint everything amber, turning ordinary school routes into cathedrals of the almost-spoken. Every raindrop is a tiny forgiveness, and the only answer that matters is the one whispered between the patter and the pause."
-    }
+    id: 'SP05-200',
+    name: 'Sukitte Ii na yo - Rainy Umbrella Confession',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Contemporary shojo realism, umbrellas, rain-soaked school romance, tentative self-worth, modern intimacy and apology under sodium streetlights',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Rainy, vulnerable, sincere, modern',
+      key_features:
+        'Umbrella framing, rain reflections, urban school-route scenery, hesitant touch language, confession-heavy close-ups',
+      creative_brief:
+        'Rain does not stop for confessions, and an umbrella becomes a temporary room where two people finally stop apologizing for their own existence. Sodium streetlights paint everything amber, turning ordinary school routes into cathedrals of the almost-spoken. Every raindrop is a tiny forgiveness, and the only answer that matters is the one whispered between the patter and the pause.',
+    },
   },
   {
-    "id": "SP05-193",
-    "name": "Snow White with the Red Hair - Herbal Courtship Fantasy",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Gentle herbalist heroine, medieval court warmth, red-hair glow, palace gardens, respectful romance, competence and tenderness rendered in luminous fantasy elegance",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Graceful, capable, warm, romantic",
-      "key_features": "Herbal props, palace-garden backdrops, red-hair focal contrast, respectful body language, fantasy court costume detail",
-      "creative_brief": "Red hair is not color but declaration, a flag planted in palace soil that refuses to ask permission. Herbs heal not only bodies but the distance between station and sincerity. Competence is the quietest form of love, and every garden nurtured in courtly shadow proves that tenderness can grow anywhere."
-    }
+    id: 'SP05-193',
+    name: 'Snow White with the Red Hair - Herbal Courtship Fantasy',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Gentle herbalist heroine, medieval court warmth, red-hair glow, palace gardens, respectful romance, competence and tenderness rendered in luminous fantasy elegance',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Graceful, capable, warm, romantic',
+      key_features:
+        'Herbal props, palace-garden backdrops, red-hair focal contrast, respectful body language, fantasy court costume detail',
+      creative_brief:
+        'Red hair is not color but declaration, a flag planted in palace soil that refuses to ask permission. Herbs heal not only bodies but the distance between station and sincerity. Competence is the quietest form of love, and every garden nurtured in courtly shadow proves that tenderness can grow anywhere.',
+    },
   },
   {
-    "id": "SP05-199",
-    "name": "Yona of the Dawn - Crimson Princess Resolve",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Desert and palace journeys, red-hair heroine resolve, loyal guardians, folk-fantasy romance, travel hardship softened by devotion and destiny",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Resolute, romantic, sweeping, brave",
-      "key_features": "Travel-cloak silhouettes, red-hair focal points, palace-to-wilderness contrast, guardian ensemble staging, heroic profile poses",
-      "creative_brief": "Crimson is not a hair color but a compass needle, pointing always toward the self that hardship has yet to reveal. The road strips away everything that was borrowed and demands everything that is real. Guardians do not follow a princess—they follow a resolve so bright it leaves afterimages on the horizon."
-    }
+    id: 'SP05-199',
+    name: 'Yona of the Dawn - Crimson Princess Resolve',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Desert and palace journeys, red-hair heroine resolve, loyal guardians, folk-fantasy romance, travel hardship softened by devotion and destiny',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Resolute, romantic, sweeping, brave',
+      key_features:
+        'Travel-cloak silhouettes, red-hair focal points, palace-to-wilderness contrast, guardian ensemble staging, heroic profile poses',
+      creative_brief:
+        'Crimson is not a hair color but a compass needle, pointing always toward the self that hardship has yet to reveal. The road strips away everything that was borrowed and demands everything that is real. Guardians do not follow a princess—they follow a resolve so bright it leaves afterimages on the horizon.',
+    },
   },
   {
-    "id": "SP05-047",
-    "name": "Airy First-Love Tenderness",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Soft blushes, distance-closing glances, clean school-day romance, airy pacing, cherry blossom season, classroom proximity, ribbon ties, stairwell confessions",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Gentle, hopeful, innocent, sweet",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "Cherry blossoms fall at the exact speed of a quickening heartbeat as two desks drift closer across an endless spring semester, ribbon ties fluttering in corridor breezes heavy with unspoken confession. Every stolen glance is a tiny universe of hope rendered in the softest pastel — first love as the gentlest possible apocalypse."
-    }
+    id: 'SP05-047',
+    name: 'Airy First-Love Tenderness',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Soft blushes, distance-closing glances, clean school-day romance, airy pacing, cherry blossom season, classroom proximity, ribbon ties, stairwell confessions',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Gentle, hopeful, innocent, sweet',
+      key_features:
+        'Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language',
+      creative_brief:
+        'Cherry blossoms fall at the exact speed of a quickening heartbeat as two desks drift closer across an endless spring semester, ribbon ties fluttering in corridor breezes heavy with unspoken confession. Every stolen glance is a tiny universe of hope rendered in the softest pastel — first love as the gentlest possible apocalypse.',
+    },
   },
   {
-    "id": "SP05-041",
-    "name": "Ornate Palace Shojo",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Court gowns, flowers, dramatic gazes, romantic palace framing, voluminous ballroom skirts, tear-streaked embraces, royal intrigue, candlelit corridors",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Regal, passionate, elegant, romantic",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "Silk whispers across marble as candlelight catches the single tear-track of a duchess caught between duty and desire, voluminous gowns rustling with the weight of unspoken declarations. Every glance across the ballroom is a treaty signed in rose petals — palace intrigue rendered in the language of lace and longing."
-    }
+    id: 'SP05-041',
+    name: 'Ornate Palace Shojo',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Ornamental court-romance shojo style with aristocratic elegance, ceremonial drama, and emotionally charged decorum',
+      form_and_line:
+        'Fine calligraphic contouring, elongated graceful anatomy, couture silhouette emphasis, gesture-rich hand and gaze choreography',
+      color_palette:
+        'Rose-pearl pastels with jewel-toned ceremonial accents, warm candle ambers, ivory highlights, and muted velvet shadows',
+      lighting_setup:
+        'Portrait-soft bloom, candle-like practical glows, selective rim polish, and luminous halation tuned for emotional proximity',
+      material_texture:
+        'Silk drape fidelity, lace micro-detail, satin reflectance, floral appliqué softness, delicate ornamental surface layering',
+      render_quality:
+        'Luxe shojo rendering with couture-grade fabric readability, polished emotional close-ups, and restrained cinematic softness',
+      spatial_distortion:
+        'Ballroom-scale elegance through vertical elongation and curated depth layering that prioritizes relational staging',
+      atmosphere: 'Regal, yearning, tender, ceremonial, dramatic',
+      key_features:
+        'Couture-emotion coupling, ornament-driven composition, gaze-led dramaturgy, ceremonial color hierarchy',
+      creative_brief:
+        'Encode this preset as an ornamental romance grammar: couture silhouettes, ceremonial lighting, and emotionally loaded gaze choreography should remain transferable beyond any single palace narrative.',
+    },
   },
   {
-    "id": "SP05-042",
-    "name": "Theatrical Duel Symbolism",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Stage-like spaces, surreal roses, elegant confrontation, symbolic choreography, spinning rose frames, sword-duel silhouettes, student-council grandeur, floating stairs",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Surreal, dramatic, theatrical, symbolic",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "A rose spins in midair and the world transforms into a stage where duels are declarations of the soul fought in silhouette against impossible architecture. Floating staircases ascend toward towers that hold every question worth asking — surrealism as the truest mirror of emotional truth, sword-clash echoing through the theater of becoming."
-    }
+    id: 'SP05-042',
+    name: 'Theatrical Duel Symbolism',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Symbolist theatrical-shojo style with surreal stage architecture, ritual confrontation, and allegorical romantic tension',
+      form_and_line:
+        'Elegant duel silhouette control, rose-motif framing arcs, long-limb choreographic posing, and delicate dramatic contour precision',
+      color_palette:
+        'Rose-jewel spectrum with pearl neutrals, velvet shadow violets, and selective gilded symbolic accents',
+      lighting_setup:
+        'Stage-like spotlight halos, soft theatrical haze, romantic rim glow, and symbolic contrast emphasis on central figures',
+      material_texture:
+        'Velvet-and-silk softness, rose-petal particulate overlays, painted stage-depth gradients, and luminous cel patina',
+      render_quality:
+        'High-poetry shojo rendering with surreal compositional elegance and emotionally symbolic frame design',
+      spatial_distortion:
+        'Dream-stage perspective lifts with impossible architectural layering and allegorical depth choreography',
+      atmosphere: 'Theatrical, surreal, charged, introspective, ceremonial',
+      key_features:
+        'Symbolic duel framing, rose iconography grammar, stage-space surrealism, ritual emotional choreography',
+      creative_brief:
+        'Define this preset through allegorical stage language: symbolic rose motifs, ceremonial confrontation poses, and surreal architecture should carry the emotional logic beyond any singular duel scenario.',
+    },
   },
   {
-    "id": "SP05-043",
-    "name": "Soft Healing Ensemble",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Gentle domestic warmth, emotional bonds, soft expressions, seasonal comfort, fruit-themed naming, found-family coziness, watercolor art room, rain-soaked reunions",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Healing, heartfelt, warm, gentle",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "Rain drums against the window of a room filled with the quiet courage of broken people learning to love themselves, seasonal light pooling in watercolor washes across found-family tenderness. Every gentle expression is a hard-won victory, warmth blooming through the cracks like spring after the longest winter."
-    }
+    id: 'SP05-043',
+    name: 'Soft Healing Ensemble',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Healing ensemble shojo style with domestic softness, seasonal emotional tonality, and restorative interpersonal warmth',
+      form_and_line:
+        'Tender low-pressure contouring, rounded silhouette comfort, micro-expression precision, and gentle gesture continuity',
+      color_palette:
+        'Soft apricot-rose creams, muted sage and lavender supports, warm neutral mids, and low-contrast restorative harmony',
+      lighting_setup:
+        'Diffuse ambient wrap, window-soft directional glow, low-intensity bloom, and balanced luminance for emotional calm',
+      material_texture:
+        'Watercolor-wash background softness, knit and cotton tactility, matte domestic surfaces, subtle paper-like grain',
+      render_quality:
+        'Iyashikei-influenced shojo finish with calm clarity, delicate chroma restraint, and emotionally legible close framing',
+      spatial_distortion:
+        'Intimate depth compression and gentle proportional elongation to support ensemble closeness and comfort',
+      atmosphere: 'Soothing, compassionate, hopeful, cozy, restorative',
+      key_features:
+        'Comfort-led color discipline, domestic material tenderness, ensemble expression readability, seasonal healing cadence',
+      creative_brief:
+        'Keep the preset centered on restorative visual language—soft contour rhythm, warm-diffuse light behavior, and ensemble tenderness—so it communicates healing tone across varied subjects.',
+    },
   },
   {
-    "id": "SP05-044",
-    "name": "Punk Romance Drama",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Fashion-forward heartbreak, black eyeliner, music-scene intimacy, urban cool, punk band visuals, star-crossed tragedy, manga-panel layout, denim-and-leather style",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Raw, glamorous, intense, stylish",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "Guitar feedback hums beneath the surface of every panel, black eyeliner tracing the fault lines where love and ambition collide in denim-and-leather intimacy. Two women orbit each other like twin stars burning at opposite ends of the same dream — glamorous wreckage illuminated by the glow of a stage that promised everything."
-    }
+    id: 'SP05-044',
+    name: 'Punk Romance Drama',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Punk-romance editorial anime style balancing glam abrasion, emotional proximity, and music-scene intimacy without fixed narrative casting',
+      form_and_line:
+        'Delicate facial line economy paired with sharper fashion-edge accents, expressive eye architecture, and panel-like compositional rhythm',
+      color_palette:
+        'Muted rose-violet base, charcoal cosmetic contrasts, selective crimson highlights, soft metallic accents, low-saturation skin warmth',
+      lighting_setup:
+        'Stage-adjacent soft bloom with directional rim glints, moody fill shadows, and selective halation around focal expressions',
+      material_texture:
+        'Denim grain, leather sheen, smudged cosmetic surfaces, soft textile overlays, subtle print-poster patina',
+      render_quality:
+        'High-polish shojo-drama render with editorial styling precision, emotional close-up clarity, and cinematic tonal restraint',
+      spatial_distortion:
+        'Intimate framing compression with elegant elongation and gesture-led depth cues to emphasize relational tension',
+      atmosphere: 'Intimate, aching, stylish, magnetic, bittersweet',
+      key_features:
+        'Fashion-emotion coupling, eyeliner contrast language, music-scene visual cadence, close-range expressive dramaturgy',
+      creative_brief:
+        'Define the preset through glam-punk material contrast and emotionally charged portrait staging; preserve the tension between tenderness and edge as a transferable visual language.',
+    },
   },
   {
-    "id": "SP05-045",
-    "name": "Rose-Petal Comedy Club",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "School romance farce, elegant d├®cor, comedic timing, decorative absurdity, host-club antics, twin sibling contrast, chandelier glamour, rose-petal entrances",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Playful, lavish, absurd, sparkling",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "Rose petals cascade through chandelier light as a comedy of aristocratic errors unfolds in silk and slapstick, gender dissolving into performance and romance into farce. Every entrance is a declaration that elegance and absurdity bloom from the same absurdly beautiful stem — the host club as theater of the heart."
-    }
+    id: 'SP05-045',
+    name: 'Rose-Petal Comedy Club',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'School romance farce, elegant d├®cor, comedic timing, decorative absurdity, host-club antics, twin sibling contrast, chandelier glamour, rose-petal entrances',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Playful, lavish, absurd, sparkling',
+      key_features:
+        'Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language',
+      creative_brief:
+        'Rose petals cascade through chandelier light as a comedy of aristocratic errors unfolds in silk and slapstick, gender dissolving into performance and romance into farce. Every entrance is a declaration that elegance and absurdity bloom from the same absurdly beautiful stem — the host club as theater of the heart.',
+    },
   },
   {
-    "id": "SP05-046",
-    "name": "Luminous Letter Drama",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Delicate correspondence, immaculate costume design, emotional stillness, glowing sunsets, Victorian-era costumes, tear-stained letters, flower-petal montages, window-light isolation",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Tender, cinematic, longing, elegant",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "A letter unfolds in amber lamplight, every handwritten word a bridge between souls who cannot touch, Victorian lace catching the glow of eternal sunset through a solitary window. Hands move across paper with the precision of someone who learned love through correspondence — emotion distilled into ink, waiting to be held."
-    }
+    id: 'SP05-046',
+    name: 'Luminous Letter Drama',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Epistolary romance-shojo style with period elegance, contemplative stillness, and emotionally luminous restraint',
+      form_and_line:
+        'Fine calligraphic linework, delicate hand-gesture focus, graceful portrait contours, and posture-driven longing cues',
+      color_palette:
+        'Amber-rose twilight tones, pearl neutrals, muted jewel accents, and soft sepia warmth for memory-like intimacy',
+      lighting_setup:
+        'Window-lamp dual glow, low-intensity bloom halos, gentle rim caress, and still-life portrait luminance balance',
+      material_texture:
+        'Paper-fiber tactility, ink trace softness, lace and satin micro-detail, watercolor-like background transitions',
+      render_quality:
+        'Cinematic shojo rendering optimized for intimate emotional legibility and period-textile precision',
+      spatial_distortion:
+        'Intimate depth compression with gentle elongation to prioritize correspondence-era emotional proximity',
+      atmosphere: 'Tender, wistful, elegant, reflective, intimate',
+      key_features:
+        'Epistolary gesture grammar, amber correspondence lighting, period fabric delicacy, longing-through-stillness framing',
+      creative_brief:
+        'Preserve identity via epistolary intimacy: paper-ink tactility, amber portrait lighting, and restrained romantic stillness should define this style independent of specific story letters.',
+    },
   },
   {
-    "id": "SP05-050",
-    "name": "Cozy Sign-Language Romance",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Warm city dates, tactile communication, soft winter palettes, tender gestures, sign-language intimacy, scarf-sharing warmth, festival lights, coffee-shop dates",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Cozy, intimate, tender, warm",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "Hands speak louder than words in the quiet spaces between winter streetlight and coffee-shop steam, festival lanterns glowing above shared scarves like small, warm constellations. Every signed gesture maps tenderness across the distance between two souls — intimacy as a language the camera learns to read, one fingertip at a time."
-    }
+    id: 'SP05-050',
+    name: 'Cozy Sign-Language Romance',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Warm city dates, tactile communication, soft winter palettes, tender gestures, sign-language intimacy, scarf-sharing warmth, festival lights, coffee-shop dates',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Cozy, intimate, tender, warm',
+      key_features:
+        'Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language',
+      creative_brief:
+        'Hands speak louder than words in the quiet spaces between winter streetlight and coffee-shop steam, festival lanterns glowing above shared scarves like small, warm constellations. Every signed gesture maps tenderness across the distance between two souls — intimacy as a language the camera learns to read, one fingertip at a time.',
+    },
   },
   {
-    "id": "SP05-048",
-    "name": "Crimson Hair Quest Romance",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Traveling princess energy, historical fantasy clothing, scenic horizons, heartfelt loyalty, red-hair heroine, shoujo sparkle eyes, countryside travelogue, mythical war backdrop",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Adventurous, romantic, sweeping, brave",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "Crimson hair streams across wind-swept horizons as a princess-turned-warrior gathers loyal souls beneath ancient skies, shoujo sparkle eyes reflecting not just love but the fire of a kingdom awaiting its dawn. Every countryside vista is a page in a travelogue of courage, and every arrow is hope made trajectory."
-    }
+    id: 'SP05-048',
+    name: 'Crimson Hair Quest Romance',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Traveling princess energy, historical fantasy clothing, scenic horizons, heartfelt loyalty, red-hair heroine, shoujo sparkle eyes, countryside travelogue, mythical war backdrop',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Adventurous, romantic, sweeping, brave',
+      key_features:
+        'Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language',
+      creative_brief:
+        'Crimson hair streams across wind-swept horizons as a princess-turned-warrior gathers loyal souls beneath ancient skies, shoujo sparkle eyes reflecting not just love but the fire of a kingdom awaiting its dawn. Every countryside vista is a page in a travelogue of courage, and every arrow is hope made trajectory.',
+    },
   },
   {
-    "id": "SP05-049",
-    "name": "Velvet Gothic Academy",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Night-school mystery, lace uniforms, moonlit corridors, forbidden longing, black-lake reflections, mahogany furniture, rose-garden secrets, candlelit libraries",
-      "form_and_line": "Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail",
-      "color_palette": "Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity",
-      "lighting_setup": "Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation",
-      "material_texture": "Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency",
-      "render_quality": "Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness",
-      "spatial_distortion": "Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling",
-      "atmosphere": "Gothic, yearning, mysterious, melancholic",
-      "key_features": "Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language",
-      "creative_brief": "Moonlight threads through lace curtains as the forbidden blooms in mahogany-trimmed silence, black-lake waters holding centuries of whispered secrets beneath rose-garden shadows. A nocturne of yearning drawn in velvet and silver — gothic romance where every candlelit corridor leads deeper into the heart's beautiful darkness."
-    }
-  }
+    id: 'SP05-049',
+    name: 'Velvet Gothic Academy',
+    category: '4. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Night-school mystery, lace uniforms, moonlit corridors, forbidden longing, black-lake reflections, mahogany furniture, rose-garden secrets, candlelit libraries',
+      form_and_line:
+        'Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail',
+      color_palette:
+        'Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity',
+      lighting_setup:
+        'Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation',
+      material_texture:
+        'Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency',
+      render_quality:
+        'Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness',
+      spatial_distortion:
+        'Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling',
+      atmosphere: 'Gothic, yearning, mysterious, melancholic',
+      key_features:
+        'Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language',
+      creative_brief:
+        "Moonlight threads through lace curtains as the forbidden blooms in mahogany-trimmed silence, black-lake waters holding centuries of whispered secrets beneath rose-garden shadows. A nocturne of yearning drawn in velvet and silver — gothic romance where every candlelit corridor leads deeper into the heart's beautiful darkness.",
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

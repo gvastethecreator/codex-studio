@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Painted adventure poster, Drew Struzan style, floating-head collage, airbrush epic, nostalgia machine
-  form_and_line: Airbrush
-  color_palette: Warm/Cool contrast, orange-teal poster push, airbrush spectrum
-  lighting_setup: Rim light, hero backlight, dramatic key separation
-  material_texture: Canvas
-  render_quality: Star Wars space-opera epic, galaxy-spanning wonder
-  spatial_distortion: Floating heads
-  atmosphere: Cinematic, classic, blockbuster anticipation, VHS-era magic
-  key_features: Lens flare, floating-head montage, title treatment space
-  creative_brief: Floating heads assemble in montage as if summoned by the gravity of the film they advertise, each face rendered in airbrush devotion. Warm and cool light negotiate across features like the conflict that drives every story. This is the poster as promise, where a single image must contain the entire emotional arc of a two-hour dream.
+  aesthetic: Hand-painted epic poster style with airbrushed montage drama, nostalgic theatrical promise, and maximal emotional compression
+  form_and_line: Soft-airbrush contour blending, compositional figure stacking, and montage-guided directional flow toward focal hierarchy
+  color_palette: Bold warm-cool oppositions with theatrical amber/cyan pushes, luminous atmospheric transitions, and poster-grade chroma emphasis
+  lighting_setup: Heroic rim/backlight layering with dramatic key splits, glow accents, and stage-like contrast separation
+  material_texture: Subtle painted-surface grain with airbrush mist transitions and matte poster-print finish cues
+  render_quality: Classic illustrated one-sheet fidelity emphasizing narrative condensation, iconic readability, and high-drama polish
+  spatial_distortion: Layered montage depth with overlapping portrait scales and symbolic background expansion for mythic scope
+  atmosphere: Cinematic, nostalgic, anticipatory, grand, emotional
+  key_features: Airbrushed montage composition, theatrical light contrast, high-impact focal stacking, title-safe hero spacing
+  creative_brief: >-
+    Anchor this preset in painted epic-poster grammar: airbrushed montage
+    layering, theatrical warm/cool lighting conflict, and promise-driven
+    composition should remain the transferable identity beyond any specific saga.
 avoidRules:
   - photo collage
 assets:

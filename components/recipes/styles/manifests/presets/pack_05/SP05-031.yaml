@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Ornamental swordplay, flowing elemental trails, historical fantasy grandeur, water-breathing forms, taisho-era settings, demon-blood arts, patterned haori jackets
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
-  atmosphere: Heroic, luminous, graceful, resolute
-  key_features: Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography
-  creative_brief: Water dragons spiral from the edge of a katana, ink and breath fusing into one luminous killing stroke. Taisho-era moonlight washes over patterned haori jackets and demon-blood flowers, each frame a woodblock print brought to furious life — a Hiroshige landscape animated by the fire of sacrifice.
+  aesthetic: Ornamental blade-fantasy action style with calligraphic motion, ceremonial elegance, and mythic elemental flourish
+  form_and_line: Curved sword-arc trajectories, decorative yet sharp contour control, fluid strike ribbons, and posture-led heroic silhouette grammar
+  color_palette: Luminous jewel accents over deep ink neutrals, selective vermilion-gold highlights, and atmospheric cool-warm transitions
+  lighting_setup: Moonlit high-contrast accents, controlled bloom around slash arcs, and dramatic rim isolation for ceremonial action beats
+  material_texture: Fine textile pattern hints, polished steel glint behavior, painterly effect overlays, and low-noise digital cel finish
+  render_quality: Premium stylized action rendering that balances ornamental detail with crisp combat readability
+  spatial_distortion: Elegant directional foreshortening with spiral motion emphasis and fluid depth pulls around weapon arcs
+  atmosphere: Heroic, graceful, luminous, solemn, resolute
+  key_features: Calligraphic slash language, ornamental combat elegance, mythic elemental arc motifs, ceremonial silhouette staging
+  creative_brief: >-
+    Keep this preset rooted in decorative blade choreography and luminous arc
+    design, treating elemental flow as visual calligraphy rather than
+    franchise-specific narrative cues.
 avoidRules:
   - realistic
   - 3d render
