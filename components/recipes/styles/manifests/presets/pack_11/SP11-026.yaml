@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Wildstyle lettering, interlocking form, letter-morph chaos, arrow-flow motion
   atmosphere: Cool, illegal, midnight mission, painted-steel thunder, huff-and-rattle cadence
   key_features: Drips, fat-cap-to-skinny-cap transitions, halo-fade background, tag-handstyle flourish
-  creative_brief: Aerosol hisses against concrete in the midnight cathedral of the train yard, fat caps laying fill while skinny caps carve outline. Drips become devotion running toward the ground, overspray halos marking the edge between control and surrender. The wall breathes color where before there was only brick and silence, a piece-book page turned public and permanent.
+  creative_brief: >-
+    Define this preset through aerosol graffiti grammar: fat-cap fill vs
+    skinny-cap line control, overspray halos, drip behavior, and wall-surface
+    tooth should carry identity beyond any single train-yard narrative.
 avoidRules:
   - brush strokes
   - clean

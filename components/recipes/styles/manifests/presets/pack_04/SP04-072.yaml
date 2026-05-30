@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Doodle
-  form_and_line: Thin blue lines
-  color_palette: Bic Ballpoint Blue, notebook authenticity
-  lighting_setup: Crosshatching, pen-pressure shadow, desk-lamp intimacy
-  material_texture: Paper indent
-  render_quality: Sketchy, obsessive, margin-doodle honesty, school-desk artistry
-  spatial_distortion: Ink blobs
-  atmosphere: Bored, detailed, lecture-hall drift, idle-hands devotion
-  key_features: Blue ink, ballpoint texture, pressure-line weight
-  creative_brief: Ballpoint ink accumulates in spiraling density, the pressure of the hand visible in every accumulating stroke. Doodles evolve into devotion, the margins of a notebook becoming a cathedral of idle attention. This is the masterpiece of the bored, where the tool of the student becomes the instrument of the obsessive.
+  aesthetic: Notebook-ink illustration with obsessive micro-hatching
+  form_and_line: Fine pressure-variable pen lines, spiral and contour doodle logic
+  color_palette: Ballpoint blue, desaturated navy, off-white notebook stock
+  lighting_setup: Density-built shading through layered hatch accumulation
+  material_texture: Light paper tooth, occasional indent drag, tiny ink clots
+  render_quality: Raw, intimate, highly detailed pen-work with handmade variance
+  spatial_distortion: Minor line wobble and pooled-ink nodes in dense zones
+  atmosphere: Casual yet meticulous, study-desk focus, spontaneous craft energy
+  key_features: Blue-only mark system, pressure-led value changes, margin-sketch rhythm
+  creative_brief: >-
+    Compose with continuous pen flow and cumulative hatch density rather than painterly fills. Preserve the immediacy of notebook drawing: slight tremor, pressure shifts, and clustered line nests that convert quick doodle language into resolved illustrative structure.
 avoidRules:
   - paint
   - thick

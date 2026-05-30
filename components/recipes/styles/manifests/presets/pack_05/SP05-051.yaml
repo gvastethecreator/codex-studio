@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Hyper-fast neon city action, street chrome, youthful desperation, electric motion, cyber-leg prosthetics, neon underglow, hacker interfaces, gravity-shifting stunts
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Tragic, kinetic, desperate, electric
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: Speed becomes a language of grief in corridors of glass and light. Youth hurls itself through the city's electric veins, each stride a refusal to stop feeling. Chrome limbs catch neon reflections like tears the future forgot to shed.
+  aesthetic: Kinetic cyber-athletic anime style with velocity-forward line energy, prosthetic-mech elegance, and emotional high-voltage momentum
+  form_and_line: Aggressive motion-vector inking, segmented mechanical contour logic, diagonal force-lines, crisp technical edge discipline
+  color_palette: Electric cyan-magenta spikes over steel neutrals, deep violet shadows, selective hazard-orange micro-accents
+  lighting_setup: Dynamic rim bursts, strobing practical spill, high-speed specular streaking, sharp contrast pockets under moving glow
+  material_texture: Lightweight alloy limbs, polymer joint housings, brushed composite plates, reflective performance coatings, circuit-trace details
+  render_quality: Premium action-cel rendering with high temporal clarity, dense technical detail, and polished mecha-athletic finish
+  spatial_distortion: Extreme foreshortening and directional depth tunnels to amplify acceleration and trajectory readability
+  atmosphere: Urgent, cathartic, intense, adrenaline-charged
+  key_features: Velocity line grammar, prosthetic silhouette readability, motion-led composition, reflective mech surfaces, kinetic luminance trails
+  creative_brief: >-
+    Define the preset through speed grammar and engineered body dynamics:
+    directional line force, mechatronic material response, and emotional motion
+    tension should remain the core identity.
 avoidRules:
   - realistic
   - 3d render

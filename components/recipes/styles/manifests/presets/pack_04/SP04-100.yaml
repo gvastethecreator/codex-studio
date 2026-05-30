@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Monster-size-comparison-chart, human-silhouette-reference-figure-for-scale, five-creatures-in-ascending-height, diminutive-to-colossal-progression, kaiju-scale-at-the-right, real-world-object-reference-alongside, blue-whale-or-elephant-comparison-bars, Godzilla-scale-atmospheric, Monster-Hunter-size-comparison-wall-chart, sense-of-awe-through-relativity
-  form_and_line: Human-silhouette at-left-for-scale-reference, size-comparison-bar-lines, creature-silhouette-building-in-complexity-as-size-increases, ground-line-baseline, height-measurement-tick-marks
-  color_palette: Human-silhouette-grey, creature-progression-neutral-to-colored, gigantic-monsters-in-atmospheric-blue-grey-distance, measurement-bar-black, scale-grid-blue-line
-  lighting_setup: Consistent-rim-light-for-silhouette-reading, atmospheric-depth-fade-on-giant-creatures, ground-plane-shadow-for-scale, fog-at-colossal-scale
-  material_texture: Silhouette-flat-quality, atmospheric-fog- fading-texture-on-large, measurement-tick-precision, real-object-reference-photo-texture, museum-educational-display-surface
-  render_quality: Size-comparison-chart aesthetic, monster-scale-reference, kaiju-magnitude beauty, Monster-Hunter-size-guide, science-museum-educational-art
-  spatial_distortion: Horizontal-size-progression-left-to-right, human-reference-anchor-left, creature-height-doubling-each-step, background-atmospheric-fade-on-largest
-  atmosphere: Awe-inspiring, humbling, human-insignificance, scale-terror-and-wonder, scientific-fascination, giant-monster-majesty, museum-education
-  key_features: Human-silhouette-scale-reference, size-ascension-left-to-right, atmospheric-fade-on-giants, measurement-tick-bar, ground-line-baseline, real-object-comparison, Monster-Hunter-size-chart-language
-  creative_brief: 'A human silhouette stands at the left edge of the chart, rapidly dwarfed by creature after creature scaling upward toward the kaiju-sized colossus at the right. Reference animals anchor the comparison: elephant, blue whale, familiar giants rendered small by what comes next. This is awe engineered through proportion, where the monster''s true size is measured in how thoroughly it erases the human from the frame.'
+  aesthetic: Creature size-comparison chart with educational scale framing
+  form_and_line: Baseline-aligned silhouettes with measurement ticks and reference markers
+  color_palette: Neutral comparative scheme with restrained atmospheric scaling cues
+  lighting_setup: Consistent silhouette rim/read light for cross-subject legibility
+  material_texture: Clean chartboard finish with minimal atmospheric fade on largest entries
+  render_quality: Infographic-style concept sheet optimized for proportional comprehension
+  spatial_distortion: Left-to-right ascending scale progression with fixed ground reference
+  atmosphere: Awe-oriented yet analytical, museum-chart clarity
+  key_features: Human and real-world benchmarks, incremental height logic, clear unit hierarchy
+  creative_brief: >-
+    Communicate extreme scale through disciplined comparative layout. Anchor every creature to shared baseline and measurement context, combining familiar reference objects with escalating silhouettes so perceived magnitude remains immediate and unambiguous.
 avoidRules:
   - single creature
   - no reference

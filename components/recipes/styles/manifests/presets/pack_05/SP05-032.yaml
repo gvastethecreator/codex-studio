@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: City-night exorcism battles, tactical martial movement, dark energy silhouettes, domain expansions, cursed finger relics, blindfold masks, shattered domain barriers
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
-  atmosphere: Menacing, agile, cursed, stylish
-  key_features: Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography
-  creative_brief: Neon bleeds through shattered domain barriers as cursed energy coils through midnight alleys in elegant geometries. Hooded sorcerers move with tactical precision, every hand-sign and finger-flick unleashing a mathematics of beautiful violence — streetwear apocalypse rendered in the slickest ink.
+  aesthetic: Urban occult combat style with ritual geometry, predatory restraint, and high-contrast supernatural pressure fields
+  form_and_line: Razor contour discipline, sigil-like motion arcs, hand-gesture emphasis, silhouette cuts that privilege threat readability
+  color_palette: Near-black base with toxic cyan-violet energy seams, selective crimson hazard notes, and sparse white-hot highlights
+  lighting_setup: Low-key nocturnal staging, localized aura bloom, hard rim partitions, and volumetric pockets around cursed emissions
+  material_texture: Polished modern surfaces interrupted by particulate curse residue, sharp effect overlays, subtle grain under high contrast
+  render_quality: Premium dark-action anime finish with clean edge fidelity and controlled post-bloom tuned for occult readability
+  spatial_distortion: Compressed depth lanes and warped local perspective around energy events to signal unstable spiritual space
+  atmosphere: Menacing, controlled, tactical, uncanny, electric
+  key_features: Ritual gesture grammar, pressure-field visuals, sigil energy contours, threat-priority silhouette staging
+  creative_brief: >-
+    Define this preset by occult-pressure visual logic: gesture-led energy
+    geometry, hard contrast segmentation, and localized spatial instability
+    should carry the identity across any subject.
 avoidRules:
   - realistic
   - 3d render

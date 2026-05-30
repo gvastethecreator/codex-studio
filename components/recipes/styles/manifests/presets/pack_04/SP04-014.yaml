@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: 16-bit game art
-  form_and_line: Pixel outline
-  color_palette: Limited palette, arcade memory, dithered index spectrum
-  lighting_setup: Dithered, pixel-baked shadow, no real-time illumination
-  material_texture: Pixel grid
-  render_quality: Retro game, sprite-constrained charm, pixel artistry
-  spatial_distortion: Sprite
-  atmosphere: Nostalgic, digital, 16-bit childhood, console-warm memory
-  key_features: Pixel grid, hard-edge aliasing, limited frame
-  creative_brief: Every pixel earns its place in a grid where space is currency and every shade is a deliberate commitment. Dithering patterns bridge the gap between colors like stepping stones across a limited palette. This is memory rendered in blocks, each sprite a time capsule of when imagination filled the gaps between pixels.
+  aesthetic: Retro pixel-comic language rooted in 16-bit sprite constraints
+  form_and_line: Pixel-stepped contours with strict tile/grid alignment
+  color_palette: Limited indexed palette with controlled dithering ramps
+  lighting_setup: Baked sprite shading via cluster placement and dither gradients
+  material_texture: Explicit pixel grid with intentional aliasing
+  render_quality: Crisp low-resolution sprite craft with compositional economy
+  spatial_distortion: Chunked perspective and proportion adapted to sprite readability
+  atmosphere: Nostalgic, arcade-coded, playful
+  key_features: Palette discipline, cluster logic, hard-edge silhouettes, frame-efficient detail
+  creative_brief: >-
+    Treat resolution limits as style drivers. Build readable forms through pixel clustering, palette economy, and dithering strategy so compositions feel authentically retro while staying clear in both static comic frames and sprite-like action beats.
 avoidRules:
   - vector
   - smooth

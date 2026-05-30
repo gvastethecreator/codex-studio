@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Greek or Italian coastal home, sun-drenched retreat, blue-shuttered simplicity, sea-facing sanctuary
-  form_and_line: Soft plaster edges, arches, barrel ceilings, colonnades, terraced courtyards
-  color_palette: White, Azure Blue, Terracotta, Bougainvillea Magenta, Warm Ochre, Sea-glass Green
-  lighting_setup: Bright blinding sun, deep shutter-shadow, courtyard dapple, candlelit terrace evening
-  material_texture: Stucco, tile, sea water, rough stone, hand-painted ceramic, wrought iron, bleached timber
-  render_quality: Vacation, sunny, airy, dolce vita warmth, coastal breeze realism, sun-bleached beauty
-  spatial_distortion: None
-  atmosphere: Relaxed, summer, hot, siesta-slow, salt-air, cicada-humming bliss
-  key_features: White walls and blue sea, terracotta roof tiles, bougainvillea cascade, olive grove, pergola shade
-  creative_brief: White stucco drinks sunlight until it glows from within, blue shutters blinking against the glare like drowsy eyelids. Bougainvillea cascades over terracotta, magenta defiance against the bleaching sun. The villa breathes in slow siesta rhythm, every arched doorway a frame around the sea.
+  aesthetic: Mediterranean sun-architecture style with limewashed simplicity, thermal brightness, and breezy coastal restraint
+  form_and_line: Soft-edged stucco volumes, arch repetition, terrace layering, colonnade cadence, courtyard flow geometry
+  color_palette: Lime white fields, azure accents, terracotta earths, warm ochre mids, sea-glass greens, restrained floral magenta notes
+  lighting_setup: High-intensity solar wash with crisp shadow cuts, reflected courtyard bounce, warm dusk practical transitions
+  material_texture: Mineral stucco grain, handmade tile variation, rough stone joints, weathered timber bleach, wrought-iron matte detail
+  render_quality: Clean Mediterranean realism with sun-bleached precision, airy depth, and disciplined material-light interplay
+  spatial_distortion: Open-volume perspective calm with framed axial views and layered indoor-outdoor transitions
+  atmosphere: Luminous, relaxed, airy, warm, restorative
+  key_features: Limewash-and-terracotta signature, high-sun shadow architecture, courtyard flow sequencing, coastal chroma restraint
+  creative_brief: >-
+    Encode Mediterranean identity through solar contrast behavior and
+    limewash-terra material pairing, ensuring the style remains transferable
+    beyond any single villa setting.
 avoidRules:
   - rain
   - cold

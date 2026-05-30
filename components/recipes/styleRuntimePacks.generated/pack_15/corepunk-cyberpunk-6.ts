@@ -4,21 +4,26 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP15-016",
-    "name": "Meshlight Alley Protocol",
-    "category": "6. Corepunk — Cyberpunk",
-    "negativePrompt": "photoreal, empty-streets, military-oppression, fantasy-medieval, watermark, text, logo",
-    "style": {
-      "aesthetic": "Civic cyberpunk with encrypted neighborhood infrastructure and humane street-scale systems.",
-      "form_and_line": "Cable lattices, modular kiosks, and dense vertical sign rhythm.",
-      "color_palette": "Electric blue, magenta pulse, and asphalt charcoal.",
-      "lighting_setup": "Wet-night neon with selective AR overlay glow.",
-      "material_texture": "Carbon composites, rain-slick concrete, translucent OLED screens, and braided fiber conduits.",
-      "render_quality": "High-contrast concept key art with precise wayfinding and edge clarity.",
-      "spatial_distortion": "Narrow alley canyon perspective pulling into a secure community node.",
-      "atmosphere": "Alert intelligence, cooperative resilience, and controlled nocturnal energy.",
-      "key_features": "Mesh routers, encrypted market stalls, cooperative security drones, and coded mural walls.",
-      "creative_brief": "A cyberpunk alley where surveillance is community-owned and data systems protect local autonomy."
-    }
-  }
+    id: 'SP15-016',
+    name: 'Meshlight Alley Protocol',
+    category: '6. Corepunk — Cyberpunk',
+    negativePrompt:
+      'photoreal, empty-streets, military-oppression, fantasy-medieval, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Civic cyberpunk with encrypted neighborhood infrastructure and humane street-scale systems.',
+      form_and_line: 'Cable lattices, modular kiosks, and dense vertical sign rhythm.',
+      color_palette: 'Electric blue, magenta pulse, and asphalt charcoal.',
+      lighting_setup: 'Wet-night neon with selective AR overlay glow.',
+      material_texture:
+        'Carbon composites, rain-slick concrete, translucent OLED screens, and braided fiber conduits.',
+      render_quality: 'High-contrast concept key art with precise wayfinding and edge clarity.',
+      spatial_distortion: 'Narrow alley canyon perspective pulling into a secure community node.',
+      atmosphere: 'Alert intelligence, cooperative resilience, and controlled nocturnal energy.',
+      key_features:
+        'Mesh routers, encrypted market stalls, cooperative security drones, and coded mural walls.',
+      creative_brief:
+        'A cyberpunk alley where surveillance is community-owned and data systems protect local autonomy.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

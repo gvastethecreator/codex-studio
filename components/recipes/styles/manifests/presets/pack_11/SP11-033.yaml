@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: 2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay
   atmosphere: Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin
   key_features: Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar reference
-  creative_brief: Cyan paper holds white-line certainty, a world of orthographic projection and measured intention rendered in ammonia-developed precision. Dimension strings pin the drawing to reality while revision clouds mark the lingering questions in every plan. The building exists here first, in the blueprint dream, before a single foundation is poured or brick is laid.
+  creative_brief: >-
+    Keep this preset defined by blueprint drafting grammar: white-line
+    orthographic clarity, dimension-string hierarchy, title-block structure,
+    and diazo-paper tone should carry identity without a fixed building story.
 avoidRules:
   - color
   - photo

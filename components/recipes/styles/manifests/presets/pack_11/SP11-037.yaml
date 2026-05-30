@@ -12,7 +12,7 @@ tags:
   - miscellaneous-and-fun
   - science-and-bio-curiosities
 visualDna:
-  aesthetic: Victorian sci-fi, brass-and-steam future, airship-dream, Jules-Verne workshop
+  aesthetic: Victorian-industrial speculative style with brass-and-steam futurism, analog invention romance, and ornate mechanical worldbuilding
   form_and_line: Gears, pipes, cog-train silhouettes, steam-vent contours, clock-face profiles
   color_palette: Brass, Copper, Brown leather, verdigris-patina green, steam-whistle silver, mahogany-wood, boiler-plate iron
   lighting_setup: Gaslight, steam, mantle-flame glow, hissing-vent haze, Edison-bulb warmth, lantern-swing shadows
@@ -20,8 +20,11 @@ visualDna:
   render_quality: Intricate, mechanical, gear-by-gear wonder, differential-engine complexity, aether-science elegance
   spatial_distortion: Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve precision
   atmosphere: Adventure, invention, zeppelin-dock excitement, mad-scientist workshop, tea-and-gears coziness
-  key_features: Goggles, top-hat-with-gears, pocket-watch chain, brass-fittings, steam-whistle, cog-wheel motifs
-  creative_brief: Brass gears interlock in clockwork conspiracy while steam hisses through copper pipes toward a future that was never built. The airship captain checks her pocket watch as pressure gauges tremble at the edge of invention and disaster in equal measure. Victorian engineering dreams in polished mahogany and coal-fired aspiration, aether-science wearing goggles and carrying a differential engine in its waistcoat.
+  key_features: Cog-wheel motif language, pressure-gauge instrumentation, brass fittings, steam venting cues, mechanical ornament layering
+  creative_brief: >-
+    Keep this preset defined by ornate steam-mechanical grammar: brass-copper
+    assemblies, pressure instrumentation, and gaslight warmth should drive the
+    style without depending on named literary references.
 avoidRules:
   - plastic
   - digital

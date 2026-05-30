@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Painted realism comic cover, Alex Ross style, gouache heroism, Norman Rockwell meets capes
-  form_and_line: None (painted)
-  color_palette: Realistic gouache, muted skin-tone warmth, chiaroscuro depth
-  lighting_setup: Realistic, soft key, majestic hero spotlight
-  material_texture: Brush strokes
-  render_quality: Cinematic, masterpiece, painterly gravitas, fine-art finish
-  spatial_distortion: Realistic anatomy
-  atmosphere: Epic, serious, mythic reverence, hall-of-heroes grandeur
-  key_features: No outlines, gouache rendering, portrait gravitas
-  creative_brief: Brushstrokes replace lines entirely, gouache building flesh and fabric from luminous pigment alone. Light pools on heroic faces like divine attention, each highlight a benediction upon mortal shoulders carrying immortal weight. This is the superhero rendered not as cartoon but as Renaissance subject, worthy of gilded frames and hushed galleries.
+  aesthetic: Painted realist comic illustration (Alex Ross influence with Norman Rockwell portrait sensibility)
+  form_and_line: Line-minimal painterly construction through value and edge control
+  color_palette: Naturalistic gouache-like chroma with warm skin and muted secondary balance
+  lighting_setup: Classical soft-key + focused heroic spotlight modeling
+  material_texture: Visible brushwork and layered pigment transitions
+  render_quality: Fine-art comic finish with high anatomical and textile fidelity
+  spatial_distortion: Realist proportion and volume, minimal stylization
+  atmosphere: Mythic, solemn, reverential
+  key_features: Outline-free form definition, portrait-grade facial modeling, painterly fabric rendering
+  creative_brief: >-
+    Treat comic imagery as formal portrait painting: model form through nuanced value, edge temperature, and restrained color shifts. Preserve Alex Ross-style gravitas and Rockwell-like human realism while keeping composition adaptable across subjects and poses.
 avoidRules:
   - line art
   - cartoon

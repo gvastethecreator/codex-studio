@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Large-scale conflict, somber wartime palettes, cinematic tragedy, military pressure, battleship cannons, trench warfare, propaganda broadcast, soldier childhoods
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
-  atmosphere: Somber, catastrophic, tragic, devastating
-  key_features: Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography
-  creative_brief: Trench mud and battleship smoke smear across a landscape stripped of innocence, children marching in uniforms too large for their still-growing bones. Silhouettes dissolve into propaganda static, each frame a war photograph painted with the trembling brush of profound sorrow — cinema as memorial.
+  aesthetic: Tragic war-anime style with institutional gravity, elegiac pacing, and large-scale mechanized conflict weight
+  form_and_line: Severe silhouette hierarchy, disciplined military shape language, blast-line punctuation, and mournful still-frame counterbeats
+  color_palette: Desaturated iron blues, muddy earth umbers, smoke grays, muted blood-crimson accents, low-saturation cold highlights
+  lighting_setup: Diffused battlefield overcast with intermittent blast flashes, long shadow veils, and documentary-like contrast restraint
+  material_texture: Sooted metal surfaces, churned earth particulate, worn fabric grain, static noise overlays for archival-war tone
+  render_quality: Cinematic war-drama polish focused on emotional gravity, scale coherence, and restrained effect realism
+  spatial_distortion: Wide conflict planes with pressure-depth layering and occasional compression for claustrophobic strategic burden
+  atmosphere: Somber, catastrophic, heavy, mournful, relentless
+  key_features: Militarized silhouette order, elegiac blast rhythm, archival tragedy tonality, institutional conflict visual grammar
+  creative_brief: >-
+    Preserve this preset as a war elegy language: desaturated conflict weight,
+    institutional silhouette discipline, and grief-forward pacing should define
+    it beyond any specific battlefront.
 avoidRules:
   - realistic
   - 3d render

@@ -4,123 +4,130 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP03-043",
-    "name": "X-Ray Shader",
-    "category": "1. Hard Surface And Industrial Cgi",
-    "negativePrompt": "opaque, skin",
-    "style": {
-      "aesthetic": "See-through object",
-      "form_and_line": "Internal structure",
-      "color_palette": "Blue/White inverted, clinical spectrum",
-      "lighting_setup": "Internal glow, self-illuminated core",
-      "material_texture": "Bone, metal, density-based",
-      "render_quality": "Medical, sci-fi, diagnostic scan",
-      "atmosphere": "Analytical, cold, forensic insight",
-      "key_features": "Internal view, see-through silhouette",
-      "creative_brief": "Opacity becomes optional — the outer shell dissolves into a ghost of itself, and internal structures reveal themselves like blueprints given physical form. Bone, circuitry, and mechanical skeletons glow from within in clinical blue-white, density-based transparency mapping hidden complexity to visible light. The image reads as a diagnostic scan elevated to art: forensic, cold, and strangely intimate in its exposure of what was never meant to be seen."
-    }
+    id: 'SP03-043',
+    name: 'X-Ray Shader',
+    category: '1. Hard Surface And Industrial Cgi',
+    negativePrompt: 'opaque, skin',
+    style: {
+      aesthetic: 'See-through object',
+      form_and_line: 'Internal structure',
+      color_palette: 'Blue/White inverted, clinical spectrum',
+      lighting_setup: 'Internal glow, self-illuminated core',
+      material_texture: 'Bone, metal, density-based',
+      render_quality: 'Medical, sci-fi, diagnostic scan',
+      atmosphere: 'Analytical, cold, forensic insight',
+      key_features: 'Internal view, see-through silhouette',
+      creative_brief:
+        'Opacity becomes optional — the outer shell dissolves into a ghost of itself, and internal structures reveal themselves like blueprints given physical form. Bone, circuitry, and mechanical skeletons glow from within in clinical blue-white, density-based transparency mapping hidden complexity to visible light. The image reads as a diagnostic scan elevated to art: forensic, cold, and strangely intimate in its exposure of what was never meant to be seen.',
+    },
   },
   {
-    "id": "SP03-028",
-    "name": "Nurbs Surface",
-    "category": "1. Hard Surface And Industrial Cgi",
-    "negativePrompt": "polygons, sharp",
-    "style": {
-      "aesthetic": "Mathematically perfect curves",
-      "form_and_line": "Flow lines",
-      "color_palette": "Zebra stripe reflection, curvature analysis",
-      "lighting_setup": "Studio check, highlight continuity",
-      "material_texture": "Glossy, class-A surface",
-      "render_quality": "CAD, automotive, manufacturing-grade",
-      "atmosphere": "Perfect, engineered, mathematical precision",
-      "key_features": "Smoothness, G2 continuity",
-      "creative_brief": "Curves so smooth they vanish into mathematics — zebra-stripe reflections run across Class-A surfaces like diagnostic poetry, proving with every unbroken band that G2 continuity holds. No polygon dares show its face; nurbs define form as pure equation rendered into gloss. The image channels automotive design studios and CAD bays at dawn, where perfection is measured in the uninterrupted flow of a highlight across a fender."
-    }
+    id: 'SP03-028',
+    name: 'Nurbs Surface',
+    category: '1. Hard Surface And Industrial Cgi',
+    negativePrompt: 'polygons, sharp',
+    style: {
+      aesthetic: 'Mathematically perfect curves',
+      form_and_line: 'Flow lines',
+      color_palette: 'Zebra stripe reflection, curvature analysis',
+      lighting_setup: 'Studio check, highlight continuity',
+      material_texture: 'Glossy, class-A surface',
+      render_quality: 'CAD, automotive, manufacturing-grade',
+      atmosphere: 'Perfect, engineered, mathematical precision',
+      key_features: 'Smoothness, G2 continuity',
+      creative_brief:
+        'Curves so smooth they vanish into mathematics — zebra-stripe reflections run across Class-A surfaces like diagnostic poetry, proving with every unbroken band that G2 continuity holds. No polygon dares show its face; nurbs define form as pure equation rendered into gloss. The image channels automotive design studios and CAD bays at dawn, where perfection is measured in the uninterrupted flow of a highlight across a fender.',
+    },
   },
   {
-    "id": "SP03-025",
-    "name": "Kitbash",
-    "category": "1. Hard Surface And Industrial Cgi",
-    "negativePrompt": "organic, smooth",
-    "style": {
-      "aesthetic": "Complex mechanical detail",
-      "form_and_line": "Greebles",
-      "color_palette": "Grey, metal, industrial wear",
-      "lighting_setup": "AO dirt, rim-detail",
-      "material_texture": "Mechanical parts, greeble density",
-      "render_quality": "Concept art, detailed, blockbuster sci-fi",
-      "atmosphere": "Industrial, complex, constructed chaos",
-      "key_features": "Dense detail, mechanical storytelling",
-      "creative_brief": "A thousand borrowed parts assemble into something that feels designed rather than composed — greebles cluster at panel seams like barnacles on a starship hull, and ambient occlusion pools in the crevices of mechanical density. Industrial grey and worn metal tell stories of fabrication and repair, every rivet and panel line a fragment of worldbuilding. The image captures blockbuster sci-fi concept art at its most convincing: constructed chaos that somehow reads as functional."
-    }
+    id: 'SP03-025',
+    name: 'Kitbash',
+    category: '1. Hard Surface And Industrial Cgi',
+    negativePrompt: 'organic, smooth',
+    style: {
+      aesthetic: 'Complex mechanical detail',
+      form_and_line: 'Greebles',
+      color_palette: 'Grey, metal, industrial wear',
+      lighting_setup: 'AO dirt, rim-detail',
+      material_texture: 'Mechanical parts, greeble density',
+      render_quality: 'Concept art, detailed, blockbuster sci-fi',
+      atmosphere: 'Industrial, complex, constructed chaos',
+      key_features: 'Dense detail, mechanical storytelling',
+      creative_brief:
+        'A thousand borrowed parts assemble into something that feels designed rather than composed — greebles cluster at panel seams like barnacles on a starship hull, and ambient occlusion pools in the crevices of mechanical density. Industrial grey and worn metal tell stories of fabrication and repair, every rivet and panel line a fragment of worldbuilding. The image captures blockbuster sci-fi concept art at its most convincing: constructed chaos that somehow reads as functional.',
+    },
   },
   {
-    "id": "SP03-071",
-    "name": "Glassmorphism UI",
-    "category": "1. Hard Surface And Industrial Cgi",
-    "negativePrompt": "opaque, flat",
-    "style": {
-      "aesthetic": "Frosted glass interface",
-      "form_and_line": "White borders",
-      "color_palette": "Blurry background colors, frosted tones",
-      "lighting_setup": "Soft, diffuse-transmission",
-      "material_texture": "Noise blur, glass-transparency",
-      "render_quality": "Modern UI design, interface trend",
-      "atmosphere": "Clean, modern, translucent UX",
-      "key_features": "Floating cards, depth-blur layers",
-      "creative_brief": "Interface panels float in a hierarchy of blur — each card catches the colors behind it and softens them into frosted abstraction, and white borders trace the edges of translucent rectangles like window frames into another layer. Depth-blur cascades through the z-stack, and diffuse transmission gives glass its weight without its opacity. The image is modern UI rendered tactile: a glassmorphism dream where every surface is a window and every window is a promise of what lies beneath."
-    }
+    id: 'SP03-071',
+    name: 'Glassmorphism UI',
+    category: '1. Hard Surface And Industrial Cgi',
+    negativePrompt: 'opaque, flat',
+    style: {
+      aesthetic: 'Frosted glass interface',
+      form_and_line: 'White borders',
+      color_palette: 'Blurry background colors, frosted tones',
+      lighting_setup: 'Soft, diffuse-transmission',
+      material_texture: 'Noise blur, glass-transparency',
+      render_quality: 'Modern UI design, interface trend',
+      atmosphere: 'Clean, modern, translucent UX',
+      key_features: 'Floating cards, depth-blur layers',
+      creative_brief:
+        'Interface panels float in a hierarchy of blur — each card catches the colors behind it and softens them into frosted abstraction, and white borders trace the edges of translucent rectangles like window frames into another layer. Depth-blur cascades through the z-stack, and diffuse transmission gives glass its weight without its opacity. The image is modern UI rendered tactile: a glassmorphism dream where every surface is a window and every window is a promise of what lies beneath.',
+    },
   },
   {
-    "id": "SP03-074",
-    "name": "Neon Sign 3D",
-    "category": "1. Hard Surface And Industrial Cgi",
-    "negativePrompt": "flat, print",
-    "style": {
-      "aesthetic": "Glowing glass tubes",
-      "form_and_line": "Tube shape",
-      "color_palette": "Neon Red/Blue, electric glow",
-      "lighting_setup": "Glow, wall reflection, ambient spill",
-      "material_texture": "Glass, metal supports, tube fittings",
-      "render_quality": "Nightlife, sign, urban-branding",
-      "atmosphere": "Urban, cool, nighttime energy",
-      "key_features": "Tube connections, gas-glow realism",
-      "creative_brief": "Bent glass tubes filled with noble gases emit electric red and blue — the glow spills onto the brick wall behind in a soft ambient bloom, and metal support fittings anchor the sign with industrial honesty. Tube connections and transformer housings render with gas-glow realism, and the wall reflection bleeds color into darkness like a bar sign at 2AM. The image is urban nightlife rendered in three dimensions: a neon sign you could walk up to and feel the warmth buzzing through the glass."
-    }
+    id: 'SP03-074',
+    name: 'Neon Sign 3D',
+    category: '1. Hard Surface And Industrial Cgi',
+    negativePrompt: 'flat, print',
+    style: {
+      aesthetic: 'Glowing glass tubes',
+      form_and_line: 'Tube shape',
+      color_palette: 'Neon Red/Blue, electric glow',
+      lighting_setup: 'Glow, wall reflection, ambient spill',
+      material_texture: 'Glass, metal supports, tube fittings',
+      render_quality: 'Nightlife, sign, urban-branding',
+      atmosphere: 'Urban, cool, nighttime energy',
+      key_features: 'Tube connections, gas-glow realism',
+      creative_brief:
+        'Bent glass tubes filled with noble gases emit electric red and blue — the glow spills onto the brick wall behind in a soft ambient bloom, and metal support fittings anchor the sign with industrial honesty. Tube connections and transformer housings render with gas-glow realism, and the wall reflection bleeds color into darkness like a bar sign at 2AM. The image is urban nightlife rendered in three dimensions: a neon sign you could walk up to and feel the warmth buzzing through the glass.',
+    },
   },
   {
-    "id": "SP03-061",
-    "name": "Hard Surface Modeling",
-    "category": "1. Hard Surface And Industrial Cgi",
-    "negativePrompt": "organic, soft",
-    "style": {
-      "aesthetic": "Robot or gun",
-      "form_and_line": "Bevels, panel lines",
-      "color_palette": "Gunmetal, painted metal, military-grade",
-      "lighting_setup": "Rim light, mechanical edge-pop",
-      "material_texture": "Scratched metal, machined wear",
-      "render_quality": "Mech design, precise, weapon-grade",
-      "atmosphere": "Industrial, military, tactical grit",
-      "key_features": "Functional parts, panel-line definition",
-      "creative_brief": "Every bevel catches rim light like a knife edge, and panel lines carve functional logic across gunmetal surfaces — machined wear and scratched metal tell stories of assembly, disassembly, and combat. The geometry serves purpose before aesthetics: every greeble is a hypothetical component, every seam a maintenance access point. The image radiates weapon-grade precision, mech design where form follows function into the realm of tactical beauty."
-    }
+    id: 'SP03-061',
+    name: 'Hard Surface Modeling',
+    category: '1. Hard Surface And Industrial Cgi',
+    negativePrompt: 'organic, soft',
+    style: {
+      aesthetic: 'Robot or gun',
+      form_and_line: 'Bevels, panel lines',
+      color_palette: 'Gunmetal, painted metal, military-grade',
+      lighting_setup: 'Rim light, mechanical edge-pop',
+      material_texture: 'Scratched metal, machined wear',
+      render_quality: 'Mech design, precise, weapon-grade',
+      atmosphere: 'Industrial, military, tactical grit',
+      key_features: 'Functional parts, panel-line definition',
+      creative_brief:
+        'Every bevel catches rim light like a knife edge, and panel lines carve functional logic across gunmetal surfaces — machined wear and scratched metal tell stories of assembly, disassembly, and combat. The geometry serves purpose before aesthetics: every greeble is a hypothetical component, every seam a maintenance access point. The image radiates weapon-grade precision, mech design where form follows function into the realm of tactical beauty.',
+    },
   },
   {
-    "id": "SP03-067",
-    "name": "Cybernetic Implant",
-    "category": "1. Hard Surface And Industrial Cgi",
-    "negativePrompt": "flesh only",
-    "style": {
-      "aesthetic": "Tech merged with body",
-      "form_and_line": "Integration lines",
-      "color_palette": "Chrome, LED",
-      "lighting_setup": "Sci-fi",
-      "material_texture": "Metal/Skin transition, bio-mech fusion",
-      "render_quality": "Deus Ex transhuman sci-fi, augmented identity",
-      "spatial_distortion": "Prosthetic",
-      "atmosphere": "Futuristic, body horror, identity tension",
-      "key_features": "Seamless blend, implant integration",
-      "creative_brief": "Chrome meets skin at a seam that is neither wound nor ornament — integration lines trace the border between born and built, and LED indicators glow beneath translucent dermal layers like technology learning to blush. The bio-mech fusion renders the transition from metal to flesh with unsettling seamlessness, prosthetic forms that feel less like replacement and more like evolution. The image channels Deus Ex transhumanism: identity tension rendered in chrome and tissue, the augmented self asking where the body ends and the machine begins."
-    }
-  }
+    id: 'SP03-067',
+    name: 'Cybernetic Implant',
+    category: '1. Hard Surface And Industrial Cgi',
+    negativePrompt: 'flesh only',
+    style: {
+      aesthetic: 'Tech merged with body',
+      form_and_line: 'Integration lines',
+      color_palette: 'Chrome, LED',
+      lighting_setup: 'Sci-fi',
+      material_texture: 'Metal/Skin transition, bio-mech fusion',
+      render_quality: 'Deus Ex transhuman sci-fi, augmented identity',
+      spatial_distortion: 'Prosthetic',
+      atmosphere: 'Futuristic, body horror, identity tension',
+      key_features: 'Seamless blend, implant integration',
+      creative_brief:
+        'Chrome meets skin at a seam that is neither wound nor ornament — integration lines trace the border between born and built, and LED indicators glow beneath translucent dermal layers like technology learning to blush. The bio-mech fusion renders the transition from metal to flesh with unsettling seamlessness, prosthetic forms that feel less like replacement and more like evolution. The image channels Deus Ex transhumanism: identity tension rendered in chrome and tissue, the augmented self asking where the body ends and the machine begins.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

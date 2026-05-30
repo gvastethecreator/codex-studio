@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Gentle domestic warmth, emotional bonds, soft expressions, seasonal comfort, fruit-themed naming, found-family coziness, watercolor art room, rain-soaked reunions
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
-  atmosphere: Healing, heartfelt, warm, gentle
-  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
-  creative_brief: Rain drums against the window of a room filled with the quiet courage of broken people learning to love themselves, seasonal light pooling in watercolor washes across found-family tenderness. Every gentle expression is a hard-won victory, warmth blooming through the cracks like spring after the longest winter.
+  aesthetic: Healing ensemble shojo style with domestic softness, seasonal emotional tonality, and restorative interpersonal warmth
+  form_and_line: Tender low-pressure contouring, rounded silhouette comfort, micro-expression precision, and gentle gesture continuity
+  color_palette: Soft apricot-rose creams, muted sage and lavender supports, warm neutral mids, and low-contrast restorative harmony
+  lighting_setup: Diffuse ambient wrap, window-soft directional glow, low-intensity bloom, and balanced luminance for emotional calm
+  material_texture: Watercolor-wash background softness, knit and cotton tactility, matte domestic surfaces, subtle paper-like grain
+  render_quality: Iyashikei-influenced shojo finish with calm clarity, delicate chroma restraint, and emotionally legible close framing
+  spatial_distortion: Intimate depth compression and gentle proportional elongation to support ensemble closeness and comfort
+  atmosphere: Soothing, compassionate, hopeful, cozy, restorative
+  key_features: Comfort-led color discipline, domestic material tenderness, ensemble expression readability, seasonal healing cadence
+  creative_brief: >-
+    Keep the preset centered on restorative visual language—soft contour rhythm,
+    warm-diffuse light behavior, and ensemble tenderness—so it communicates
+    healing tone across varied subjects.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Gothic text
-  form_and_line: Broad nib
-  color_palette: Black ink, manuscript gold, parchment heritage
-  lighting_setup: Flat, candle-light allusion, illuminated-manuscript warmth
-  material_texture: Parchment
-  render_quality: Medieval, heavy, scriptorium authority, sacred-text gravity
-  spatial_distortion: Ornate
-  atmosphere: Serious, old, cathedral silence, monastic devotion
-  key_features: Verticals, broad-nib stroke, gothic architecturality
-  creative_brief: Blackletter forms march across parchment with the architectural weight of cathedral stone, each stroke a flying buttress of ink. The nib moves through angles sharp enough to cut the silence of the scriptorium. This is text as monument, where the shape of the letter carries as much meaning as the word it spells.
+  aesthetic: Gothic blackletter calligraphy with architectural stroke logic
+  form_and_line: Broad-nib vertical stress, diamond joins, angular counters
+  color_palette: Dense black ink, parchment beige, muted antique gold accents
+  lighting_setup: Mostly flat manuscript illumination with subtle warm edge lift
+  material_texture: Fibrous parchment grain with slight ink feather control
+  render_quality: Formal, weighty, high-discipline lettering with ornamental restraint
+  spatial_distortion: Structured ornament extension without breaking text rhythm
+  atmosphere: Liturgical, solemn, archival, ceremonial stillness
+  key_features: Strong vertical columns, broken curves, tight spacing cadence, serifed terminals
+  creative_brief: >-
+    Treat lettering as constructed architecture. Preserve strict nib-angle discipline, dense vertical cadence, and carefully measured spacing to maintain authority and rhythm. Apply ornament sparingly and structurally so decorative elements support, rather than dilute, blackletter clarity.
 avoidRules:
   - round
   - modern

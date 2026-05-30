@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Banknote style
-  form_and_line: Fine crosshatching
+  aesthetic: Engraved etching style with document-grade line security, old-master precision, and tonal density through incision logic
+  form_and_line: Fine crosshatch weave with controlled burin-like stroke layering and micro-line directional modulation
   color_palette: Black ink, tonal-hash spectrum, burin-precision value
   lighting_setup: Line density, hatching-as-light, cumulative shadow depth
   material_texture: Paper
-  render_quality: Durer engraved old-master classic, renaissance precision
+  render_quality: High-precision engraving fidelity emphasizing line-depth hierarchy, anti-counterfeit visual complexity, and archival print character
   spatial_distortion: None
   atmosphere: Serious, valuable, mint-condition reverence, time-capsule gravitas
   key_features: Hatching, crosshatching, fine-line density
-  creative_brief: Crosshatched lines build density with the obsessive precision of currency, each stroke a security feature against the counterfeit of carelessness. Light slides across engraved surfaces with the weight of history and the gleam of privilege. This is the image as document, where linework carries the authority of the mint.
+  creative_brief: >-
+    Keep this preset anchored in engraving grammar: dense crosshatch tonality,
+    burin-like incision discipline, and document-authority detail should define
+    identity beyond any single banknote motif.
 avoidRules:
   - smooth shading
 assets:

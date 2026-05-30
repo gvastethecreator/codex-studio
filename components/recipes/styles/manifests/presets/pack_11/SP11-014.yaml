@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Rural romantic life, pastoral dream, meadow-dwelling simplicity, countryside idyll
-  form_and_line: Soft, flowery, organic tendrils, billowing fabric, wildflower outlines
-  color_palette: Pastel, earth tones, floral, lavender-cream, sage-green, butter-yellow, rose-quartz blush
-  lighting_setup: Golden hour, soft, lace-curtain diffusion, candlelit tableaux, dawn-mist quiet
-  material_texture: Linen, flowers, wood, hand-thrown ceramics, embroidered cotton, pressed herbs, wicker weave
-  render_quality: Pinterest, cozy, traditional, bread-baking warmth, sun-kissed nostalgia, slow-living grace
-  spatial_distortion: None, natural proportions, garden-gate framing, window-light intimacy
-  atmosphere: Peaceful, slow, romantic, gentle contentment, wildflower freedom, hearthside safety
-  key_features: Flowers everywhere, mason-jar bouquets, wicker baskets, tea-stained doily lace
-  creative_brief: Wildflowers bend in the golden-hour breeze near a windowsill where bread dough rises slowly under linen cloth. The pastoral dream breathes at garden pace, wrapped in hand-thrown ceramics and pressed-herb fragrance and tea-stained doily lace. Peace wears an embroidered apron and moves at the speed of wildflower growth, unhurried, rooted, radiant.
+  aesthetic: Soft handcrafted pastoral-romantic style centered on slow-living warmth, botanical gentleness, and domestic natural charm
+  form_and_line: Delicate organic contouring, airy floral tendrils, soft textile drape lines, and graceful hand-drawn edge behavior
+  color_palette: Muted pastel-earth harmonies with sage, cream, lavender, butter, and blush accents tuned for comforting balance
+  lighting_setup: Diffused golden warmth with curtain-soft scatter, candlelike ambient glows, and misty morning low-contrast serenity
+  material_texture: Natural-fiber linens, hand-thrown ceramic matte grain, wicker weave detail, embroidered thread cues, and dried-botanical tactility
+  render_quality: Cozy handcrafted finish emphasizing tactile intimacy, visual softness, and calm domestic-natural storytelling
+  spatial_distortion: Natural human-scale proportions with close-range framing and gently compressed depth for intimate mood
+  atmosphere: Peaceful, tender, cozy, romantic, unhurried
+  key_features: Botanical motif density, textile-and-ceramic warmth, handmade domestic texture stack, slow-living compositional pacing
+  creative_brief: >-
+    Keep this preset defined by soft botanical domestic craft language and warm
+    tactile calm; it should communicate gentle slow-living atmosphere without
+    locking into a single countryside vignette.
 avoidRules:
   - city
   - modern

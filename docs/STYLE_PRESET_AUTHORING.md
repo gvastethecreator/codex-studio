@@ -1,42 +1,36 @@
-# Style Preset Authoring Guide
+# Guía de authoring de Style Presets
 
-Real presets live in `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
-Start from one of these templates:
+Los presets reales viven en `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
+Empieza desde una de estas plantillas:
 
 - `components/recipes/styles/manifests/templates/style-preset.template.yaml` for image style presets.
 - `components/recipes/styles/manifests/templates/sprite-sheet-preset.template.yaml` for sprite or animation-sheet presets.
 - `components/recipes/styles/manifests/templates/texture-preset.template.yaml` for texture/material presets.
 
-Do not add new presets to legacy pack YAML. Monolithic legacy pack YAML is
-retired; `scripts/style-migration/legacy-packs/` must stay free of YAML files.
-`bun run styles:source:verify` fails if YAML appears there, if YAML files
-reappear under the retired `components/recipes/styles/packs/` directory, or if
-any YAML file under `components/recipes/styles/` lives outside `manifests/`.
+No agregues presets nuevos al YAML legacy. Ese formato monolítico está retirado;
+`scripts/style-migration/legacy-packs/` debe permanecer sin YAML.
+`bun run styles:source:verify` falla si reaparecen YAML fuera de `manifests/`.
 
-## Scaffold first, edit second
+## Primero scaffold, después edición
 
-Use `styles:scaffold` to create a new preset skeleton and update both pack-level
-and category `presetRefs` together.
+Usa `styles:scaffold` para crear el esqueleto del preset y actualizar `presetRefs`
+tanto a nivel pack como categoría.
 
-The command is dry-run by default and prints the planned file changes plus the
-next validation steps. Pass `--write` to mutate files.
+El comando corre en dry-run por defecto e imprime cambios planificados y pasos de validación. Usa `--write` para mutar archivos.
 
 ```bash
 bun run styles:scaffold -- --preset=SP01-082 --pack=pack_01 --category=portrait-styles --name="Morning Window Portrait" --template=style
 bun run styles:scaffold -- --preset=SP06-101 --pack=pack_06 --category="6. Video Game & Pixel Art Styles" --name="Arcade Action Sprite" --template=sprite --write
 ```
 
-Optional flags:
+Flags opcionales:
 
 - `--default-image=/assets/...` to prefill a real default image path.
 - `--write` to actually create/update files.
 
-If `--default-image` is omitted, the scaffold still points `assets.defaultImage`
-at `/assets/recipes/styles/defaults/<PRESET_ID>.webp`, but it leaves
-`taxonomy.hasDefaultImage: false` so validation truthfully reports that the
-default image asset is still pending.
+Si omites `--default-image`, el scaffold apunta igual a `/assets/recipes/styles/defaults/<PRESET_ID>.webp`, pero deja `taxonomy.hasDefaultImage: false` para reflejar que falta generar ese asset.
 
-## Prompt Specificity
+## Especificidad de prompts
 
 Batch generation prompts are deliberately pack- and category-specific.
 Before running a new pack, extend `scripts/generate-style-defaults.ts` with
@@ -62,9 +56,9 @@ Anime packs now have a deliberately finer split:
 - `pack_06`, `pack_08`, `pack_10`, and `pack_12` also rely on semantic buckets now; do not collapse them back into a single catch-all category like `Videojuegos`.
 - When authoring or regenerating those packs, keep the prompt anchors and category labels aligned with that split instead of collapsing them back into generic anime staging.
 
-## Naming and language policy (required)
+## Política de naming e idioma (obligatoria)
 
-Use a single durable convention across manifests:
+Usa una convención única y durable en manifiestos:
 
 - `category.id` MUST be `kebab-case`.
 - `taxonomy.categoryId` MUST match the category id exactly.
@@ -75,7 +69,22 @@ Do not introduce legacy Spanish catch-all slugs like `videojuegos` or
 `videojuegos-originals-vault`. The normalized slug for pack 12 is
 `video-game-originals-vault`.
 
-## Template Flow
+## Contrato Style-First (obligatorio)
+
+`Style Preset` significa **lenguaje visual reusable**, no escena fija.
+
+- `visualDna` MUST describe style mechanics first: linework, palette logic, lighting model, material response, composition behavior, render finish.
+- `creative_brief` MUST explain the visual intent as a transferable style system.
+- Avoid scene-anchored identity phrases as the core definition (e.g. hard-coding one location/story beat like `wet city street`, `classroom confession`, `battle in alley`).
+- A preset can include mild context cues, but they cannot be the main identity of the style.
+
+Quick self-check before saving:
+
+1. Could this style apply to at least 5 different subjects without rewriting the DNA?
+2. If I remove the location/story nouns, does the preset still have a clear visual identity?
+3. Is this preset materially distinct from neighboring presets in the same category?
+
+## Flujo con plantillas
 
 `styles:scaffold` uses the template files below automatically. If you need a
 manual flow, use the same files directly:
@@ -93,7 +102,7 @@ bun run styles:templates:verify
 bun run styles:verify
 ```
 
-## Quick Example
+## Ejemplo rápido
 
 Create `presets/pack_01/MY-CUSTOM.yaml`:
 
@@ -150,7 +159,7 @@ taxonomy:
   hasDefaultImage: true
 ```
 
-## Then register in the pack manifest
+## Luego registra en el manifiesto del pack
 
 Edit `manifests/packs/pack_01.yaml`:
 
@@ -166,14 +175,14 @@ Both references are required. `styles:validate` rejects duplicate pack refs,
 category refs missing from the pack-level list, and refs that point outside the
 pack namespace.
 
-## Finally generate runtime data + validate
+## Finalmente genera runtime + valida
 
 ```bash
 bun run styles:runtime:check   # verify runtime data is current
 bun run styles:verify          # full validation: taxonomy, coverage, source audit
 ```
 
-## Taxonomy Contract
+## Contrato de taxonomía
 
 Every preset manifest must include a `taxonomy` block:
 
@@ -199,7 +208,7 @@ It also enforces pack-reference drift:
 - category `presetRefs` must also exist in top-level `presetRefs`
 - pack and category refs must use the same `<pack_id>/<PRESET_ID>.yaml` namespace
 
-## Visual DNA Fields
+## Campos de Visual DNA
 
 All 8 fields are required and checked for emptiness by `validateStyleManifestGraph`:
 
@@ -214,7 +223,7 @@ All 8 fields are required and checked for emptiness by `validateStyleManifestGra
 | `atmosphere_and_mood`    | Emotional quality, ambient feel   |
 | `rendering_and_quality`  | Resolution, polish level          |
 
-## Avoid Rules
+## Reglas de exclusión (avoid rules)
 
 Negative prompt snippets applied per-preset. Use simple lowercase keywords:
 

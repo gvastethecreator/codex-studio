@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Dark print
-  form_and_line: None
-  color_palette: Velvety Black, infinite-depth dark, burnished revelation
-  lighting_setup: Burnished highlights, subtractive light, tonal emergence
-  material_texture: Rocker marks
-  render_quality: Dramatic, soft, tonal emergence, chiaroscuro majesty
-  spatial_distortion: None
-  atmosphere: Moody, night, candle-lit mystery, old-master depth
-  key_features: Dark base, burnished highlight, tonal reveal
-  creative_brief: Darkness emerges first, the entire plate worked to hold ink before the artist begins the slow labor of revealing light. Tones graduate from absolute black to luminous highlight through the patient rock of the mezzotint rocker. This is chiaroscuro as technique, where the image is liberated from darkness one burnished highlight at a time.
+  aesthetic: Subtractive chiaroscuro print with deep black fields
+  form_and_line: Minimal contour lines; value-driven form modeling
+  color_palette: Velvet black, graphite charcoal, warm ivory highlight accents
+  lighting_setup: Burnished highlight reveal over fully darkened plate structure
+  material_texture: Fine rocker tooth, polished burnish transitions, plate-grain softness
+  render_quality: High tonal drama with smooth gradients from mass-black to glow
+  spatial_distortion: Flat print plane with depth implied through tonal recession
+  atmosphere: Nocturnal, contemplative, austere, museum-print gravitas
+  key_features: Continuous black ground, staged highlight recovery, velvety midtone transitions
+  creative_brief: >-
+    Build images from darkness outward: start with an uninterrupted black matrix and carve readable form through controlled highlight recovery. Prioritize tonal choreography over line detail, preserving soft transitions, burnished focal accents, and dense shadow architecture that sustains dramatic yet elegant print depth.
 avoidRules:
   - white background
   - lines

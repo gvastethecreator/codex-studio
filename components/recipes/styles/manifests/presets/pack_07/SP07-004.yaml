@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Cozy Nordic home, Danish contentment, winter refuge, candlelit warmth
-  form_and_line: Soft edges, textiles, rounded nooks, low profiles, organic gentle arcs
-  color_palette: White, Light Wood, Pastel, Dusty Rose, Muted Sage, Cream
-  lighting_setup: Candlelight, soft window light, warm pendant glow, fireplace flicker, salt-lamp amber
-  material_texture: Knitted wool, sheepskin, pine, oiled oak, brushed cotton, ceramic
-  render_quality: IKEA catalog-clean, cozy, bright, Swedish simplicity
-  spatial_distortion: None
-  atmosphere: Comfortable, safe, warm, content, tucked-in, restorative quiet
-  key_features: Textiles everywhere, chunky knit throws, ceramic mugs, candle clusters, fur rugs
-  creative_brief: Warmth becomes architecture, every surface an invitation to linger, to rest, to exhale against the winter whispering outside. Candle flame multiplies across ceramic and wool, small fires anchoring the spirit to the present moment. Contentment takes physical form through texture, the room a held breath of gratitude.
+  aesthetic: Scandinavian hygge interior style emphasizing thermal comfort minimalism, soft domestic intimacy, and restorative calm
+  form_and_line: Low-profile furniture rhythm, rounded edge gentleness, textile-heavy layering, and uncluttered ergonomic composition
+  color_palette: Soft whites and creams with pale timber tones, muted sage-rose accents, and low-contrast warmth harmonics
+  lighting_setup: Candle-practical glow networks, diffuse window softness, warm pendants, and evening comfort luminance balance
+  material_texture: Knit wool tactility, sheepskin softness, matte ceramics, oiled light wood grain, and brushed natural-fiber surfaces
+  render_quality: Clean Nordic editorial finish with cozy readability, restrained detailing, and comfort-first visual hierarchy
+  spatial_distortion: Neutral spatial behavior with intimacy built through layered soft materials rather than geometric exaggeration
+  atmosphere: Comforting, quiet, warm, restorative, safe
+  key_features: Thermal-comfort light logic, soft textile dominance, pale timber calm, uncluttered hygge composition
+  creative_brief: >-
+    Keep identity centered on comfort architecture: soft luminance, natural
+    textile tactility, and low-contrast Nordic restraint should remain
+    transferable beyond winter-home narratives.
 avoidRules:
   - dark
   - cold

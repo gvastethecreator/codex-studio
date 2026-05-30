@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: 90s internet nostalgia, dead-mall surrealism, dial-up dream, corporate-abandoned utopia
-  form_and_line: Glitch art, datamosh edge, pixel-sort stripe, RGB-shift fringe, compression-artifact contour
-  color_palette: Pink, Teal, White, sunset-gradient, mall-fountain cyan, marble-vein grey, Windows-95 teal
-  lighting_setup: Bright, surreal, fluorescent-tube buzz, CRT-glow, chrome-reflection bloom, unnatural-backlight
-  material_texture: Marble, water, windows 95, pixelated-UI chrome, ROM-boot screen, CD-ROM iridescence
-  render_quality: A E S T H E T I C, full-width-spaced, bust-of-Helios,  s l o w e d  r e v e r b, broken-Internet poetry
-  spatial_distortion: Statue busts, Greco-Roman kitsch, floating-column fragments, checkerboard-plane floor
-  atmosphere: Chill, surreal, ironic, forgotten-future, elevator-music eternity, digital-liminal space
-  key_features: Palm trees, Fiji-water bottle, Arizona-iced-tea, checkerboard-tile floor, sunset-gradient sky, helios-bust placeholder
-  creative_brief: A marble bust of Helios drifts through pixel-sorted skies above a dead mall's checkerboard floor, Roman kitsch meeting Windows 95 chrome. Fiji water bottles and Arizona iced tea stand as still-life objects in an abandoned food court where the background music never stopped playing. The future we were promised sits in liminal pastel eternity, broken-Internet poetry rendered at dial-up speed forever.
+  aesthetic: Retro-digital liminal surrealism with consumer-memory nostalgia, soft-ironic mood, and abandoned-future ambiance
+  form_and_line: Glitch-fringed geometry, pixel-sorted edges, RGB misregistration halos, and low-res UI-inspired shape rhythm
+  color_palette: Pastel magenta-cyan gradients with soft teal neutrals, sunset vapor tones, marble greys, and synthetic white highlights
+  lighting_setup: Fluorescent ambient haze, CRT-like glow spill, reflective chrome blooms, and deliberately unnatural backlight gradients
+  material_texture: Faux-marble surfaces, glossy retro-plastic finishes, pixel UI artifacts, scanline-like noise, and iridescent disc-like sheen
+  render_quality: Stylized retro-net aesthetic emphasizing liminal mood design, broken-digital texture poetry, and iconic vapor composition
+  spatial_distortion: Floating classical fragments, checker-grid infinite planes, and scale-ambiguous object staging in suspended void space
+  atmosphere: Chill, surreal, ironic, nostalgic, liminal
+  key_features: Sunset-gradient backdrops, checker-floor infinity cues, classical-fragment contrast, retro-digital artifact layering
+  creative_brief: >-
+    Define this preset through liminal retro-digital mood grammar: pastel
+    synthetic gradients, artifacted UI-era textures, and surreal object staging
+    should carry identity without depending on specific brand props or named icons.
 avoidRules:
   - serious
   - dark

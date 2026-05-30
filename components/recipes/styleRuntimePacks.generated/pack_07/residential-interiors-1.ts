@@ -4,1227 +4,1774 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP07-016",
-    "name": "Bauhaus Interior",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "ornate, cluttered",
-    "style": {
-      "aesthetic": "Functional modernist room, form follows function, workshop aesthetic, design-for-all",
-      "form_and_line": "Geometric shapes, pure circle and square, tubular arcs, flat planes intersect, grid logic",
-      "color_palette": "Primary colors + Black/White, Clean Red, Canary Yellow, Cobalt Blue, Warm Grey",
-      "lighting_setup": "Even, functional, task-focused spots, floating globe pendants, industrial-grade clarity",
-      "material_texture": "Steel, glass, leather, bent plywood, canvas webbing, linoleum, chrome plate",
-      "render_quality": "Design classic, rational, German-modern clarity, timeless efficiency, honest construction",
-      "spatial_distortion": "None",
-      "atmosphere": "Smart, artistic, clean, workshop-fresh, purpose-driven, intellectual calm",
-      "key_features": "Tubular steel, primary color accents, cantilever chairs, isometric clarity, interlocking forms",
-      "creative_brief": "Primary colors assert themselves against white space with the confidence of manifestos made visible. Steel arcs through air with industrial grace, every tube and plane answering to function alone. Beauty emerges not from decoration but from the honesty of things being exactly what they are."
-    }
-  },
-  {
-    "id": "SP07-004",
-    "name": "Scandinavian Hygge",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "dark, cold, metal, plastic",
-    "style": {
-      "aesthetic": "Cozy Nordic home, Danish contentment, winter refuge, candlelit warmth",
-      "form_and_line": "Soft edges, textiles, rounded nooks, low profiles, organic gentle arcs",
-      "color_palette": "White, Light Wood, Pastel, Dusty Rose, Muted Sage, Cream",
-      "lighting_setup": "Candlelight, soft window light, warm pendant glow, fireplace flicker, salt-lamp amber",
-      "material_texture": "Knitted wool, sheepskin, pine, oiled oak, brushed cotton, ceramic",
-      "render_quality": "IKEA catalog-clean, cozy, bright, Swedish simplicity",
-      "spatial_distortion": "None",
-      "atmosphere": "Comfortable, safe, warm, content, tucked-in, restorative quiet",
-      "key_features": "Textiles everywhere, chunky knit throws, ceramic mugs, candle clusters, fur rugs",
-      "creative_brief": "Warmth becomes architecture, every surface an invitation to linger, to rest, to exhale against the winter whispering outside. Candle flame multiplies across ceramic and wool, small fires anchoring the spirit to the present moment. Contentment takes physical form through texture, the room a held breath of gratitude."
-    }
-  },
-  {
-    "id": "SP07-018",
-    "name": "Farmhouse Chic",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "modern, sleek, metal",
-    "style": {
-      "aesthetic": "Modern barn interior, rural refinement, whitewashed nostalgia, homestead grace",
-      "form_and_line": "Shiplap walls, gabled ceilings, apron-front lines, open shelving, X-brace details",
-      "color_palette": "White, Cream, Wood, Galvanized Silver, Soft Linen, Black Iron accent",
-      "lighting_setup": "Bright airy, oversized pendants, gooseneck barn lights, morning window wash",
-      "material_texture": "Distressed wood, linen, chalk-painted furniture, cotton ticking, woven baskets, galvanized metal",
-      "render_quality": "Magnolia farmhouse editorial, family, clean, Chip & Joanna warmth",
-      "spatial_distortion": "None",
-      "atmosphere": "Welcoming, soft, home, gathered-around-table, Sunday-morning peace, real-family living",
-      "key_features": "Sliding barn door, shiplap accent wall, farmhouse sink, open shelving, beadboard ceiling",
-      "creative_brief": "Shiplap stretches toward vaulted ceilings like Sunday hymns made visible, whitewashed nostalgia bright with fresh coffee light. Distressed surfaces tell gentle lies about age, every scuff a purchased memory. The space wraps around family like a quilt, each rough beam a promise that imperfect things hold together."
-    }
-  },
-  {
-    "id": "SP07-002",
-    "name": "Industrial Loft",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "cozy, soft, carpet, wallpaper",
-    "style": {
-      "aesthetic": "Converted warehouse apartment, factory bones, urban sanctuary, creative reuse",
-      "form_and_line": "Exposed pipes and beams, overhead gantry, raw steel trusses, riveted joints",
-      "color_palette": "Brick Red, Concrete Grey, Black Metal, Oxidized Copper, Aged Zinc",
-      "lighting_setup": "Large factory windows, Edison bulbs, caged pendants, clerestory glow, amber pools",
-      "material_texture": "Rough brick, polished concrete, rust, reclaimed timber, worn saddle leather",
-      "render_quality": "Trendy, urban, raw, warehouse-chic, authentic grit, patina beauty",
-      "spatial_distortion": "None",
-      "atmosphere": "Cool, masculine, urban, edgy, creative energy, after-hours calm",
-      "key_features": "Exposed structure, open ductwork, mezzanine floor, rolling loft ladder",
-      "creative_brief": "Raw bones wear their history like armor, rivet and rust telling stories of machines that once sang. Amber pools cut islands through cavernous dark, each shadow preserving the dignity of honest material. The space remembers labor, celebrates it, builds poetry from what others discard."
-    }
-  },
-  {
-    "id": "SP07-005",
-    "name": "Bohemian Eclectic",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "minimalist, empty, sterile",
-    "style": {
-      "aesthetic": "Plant-filled artistic room, global traveler, collected over time, layered story",
-      "form_and_line": "Chaotic organic forms, cascading vines, piled cushions, hanging macrame, soft heaps",
-      "color_palette": "Earth tones, vibrant patterns, Terracotta, Turquoise, Spice, Indigo",
-      "lighting_setup": "Dappled sunlight through plants, candle glow, Moroccan lantern, fairy string lights",
-      "material_texture": "Rattan, macrame, leaves, handwoven kilim, raw linen, carved wood",
-      "render_quality": "Pinterest, jungle, relaxed, layered, free-spirited, curated wanderlust",
-      "spatial_distortion": "Overgrown plants",
-      "atmosphere": "Free, natural, messy, worldly, creative, sun-drenched laziness",
-      "key_features": "Plants in every corner, hanging rattan chair, layered Persian rugs, gallery wall",
-      "creative_brief": "Plants claim territory with slow green confidence, vines rewriting the boundary between indoors and elsewhere. Each object carries passport stamps from distant bazaars, a cabinet of curiosities assembled by a soul too restless for matching sets. The air hums with chlorophyll and wanderlust, every surface a story half-told."
-    }
-  },
-  {
-    "id": "SP07-017",
-    "name": "Maximalist Decor",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "empty, white, minimal",
-    "style": {
-      "aesthetic": "Pattern on pattern room, controlled chaos, collected gallery, riotous personality",
-      "form_and_line": "Complex layers, framed overload, busy skirting, curio-shelf density, textile-on-textile",
-      "color_palette": "Saturated jewel tones, Emerald, Sapphire, Ruby, Amethyst, Peacock Teal, Coral",
-      "lighting_setup": "Warm lamps everywhere, picture lights, chandelier glitter, sconce pools, dimmer-warm glow",
-      "material_texture": "Velvet, wallpaper, rugs, chintz, embroidered silk, gilt frame, cloisonné, book spines",
-      "render_quality": "Eclectic, busy, rich, more-is-more, layered opulence, collected over generations",
-      "spatial_distortion": "None",
-      "atmosphere": "Exciting, personal, loud, intoxicating, treasure-gallery, unapologetic abundance",
-      "key_features": "No empty space, gallery walls floor to ceiling, layered rugs, pattern mixing, objet collections",
-      "creative_brief": "Pattern collides with pattern in joyful anarchy, every surface a shout against the tyranny of restraint. Collections spill across surfaces like civilizations compressed into objects, each shelf a small museum of personal obsession. The room vibrates at the frequency of too-much, and refuses to apologize."
-    }
-  },
-  {
-    "id": "SP07-019",
-    "name": "Art Nouveau Interior",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "straight lines",
-    "style": {
-      "aesthetic": "1900s organic room, Belle Epoque bloom, nature-as-structure, total-art Gesamtkunstwerk",
-      "form_and_line": "Whiplash curves, tendril stair rails, floral doorframes, sinuous glass, flowing wrought iron",
-      "color_palette": "Sage, Gold, Wood, Peacock Blue, Lilac, Amber glass, Moss green",
-      "lighting_setup": "Stained glass light, Tiffany-lamp warmth, lotus-petal sconces, insect-wing glow",
-      "material_texture": "Carved wood, glass, wrought iron, iridescent favrile glass, patinated bronze, floral marquetry",
-      "render_quality": "Horta decorative flowing turn-of-century, whiplash beauty",
-      "spatial_distortion": "Melting shapes",
-      "atmosphere": "Romantic, nature, soft, enchanted, organic rhythm, floral intoxication",
-      "key_features": "Curved wood, floral motifs everywhere, tendril staircase, stained glass skylight, organic lamp forms",
-      "creative_brief": "Wrought iron grows like vines up the stairwell, tendrils of metal blooming into lamp shades and door handles. Every surface curves away from geometry, the room a garden that learned to speak architecture. Light passes through iris-colored glass, falling on wood carved into the shape of wind."
-    }
-  },
-  {
-    "id": "SP07-003",
-    "name": "Mid-Century Modern",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "antique, victorian, industrial",
-    "style": {
-      "aesthetic": "1950s/60s designer interior, Palm Springs chic, atomic-era optimism, cocktail culture",
-      "form_and_line": "Organic curves, tapered legs, sculptural silhouettes, floating sideboards, kidney shapes",
-      "color_palette": "Teak wood, Mustard Yellow, Olive Green, Burnt Orange, Warm Walnut, Avocado",
-      "lighting_setup": "Sputnik chandelier, warm lamp, arc floor lamp, filtered afternoon glow, bubble pendant",
-      "material_texture": "Wood grain, tweed fabric, molded plywood, hairpin steel, shag wool, walnut veneer",
-      "render_quality": "Mad Men mid-century editorial, stylish, retro, Don Draper warmth",
-      "spatial_distortion": "None",
-      "atmosphere": "Stylish, nostalgic, warm, confident, cocktail-hour ease, aspirational cool",
-      "key_features": "Iconic furniture shapes, sunken lounge, breeze blocks, atomic starburst, tapered legs",
-      "creative_brief": "Sunlight slants through atomic-age optimism, warming teak and tweed with the confidence of an era that believed in tomorrow. Curves cradle the eye like a cocktail glass, every silhouette an argument for pleasure as virtue. Nostalgia distilled to its purest form, not memory but mood."
-    }
-  },
-  {
-    "id": "SP07-020",
-    "name": "Memphis Design",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "boring, beige",
-    "style": {
-      "aesthetic": "80s postmodern room, Italian radical design, Sottsass irreverence, anti-taste manifesto",
-      "form_and_line": "Squiggles and triangles, totemic shelves, asymmetrical bookcases, confetti geometry, playful offsets",
-      "color_palette": "Pastel + Black/White pattern, Bubblegum Pink, Teal, Traffic Yellow, Vivid Orange",
-      "lighting_setup": "Bright studio, neon accents, colored bulb glow, gallery-track spots, plastic-filtered light",
-      "material_texture": "Laminate, plastic, terrazzo chip, printed Formica, glossy enamel, rubber",
-      "render_quality": "Playful, weird, retro, radical-postmodern, joyous clash, ironic surface",
-      "spatial_distortion": "Asymmetry",
-      "atmosphere": "Fun, chaotic, art, rebellious, child-like, design manifesto energy",
-      "key_features": "Bacterial pattern, asymmetrical shelving, squiggle mirror, color-blocked surfaces, totemic plinths",
-      "creative_brief": "Squiggles disrupt the tyranny of the straight line, color blocking declares war on beige conformity. Shelves tilt at impossible angles like the whole room just discovered it has a sense of humor. Design becomes manifesto, every laminate surface a joke told at the expense of seriousness."
-    }
-  },
-  {
-    "id": "SP07-001",
-    "name": "Modern Minimalist",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "clutter, ornate, pattern, dark",
-    "style": {
-      "aesthetic": "Clean white open space, airy volume, sculptural emptiness, light as material",
-      "form_and_line": "Straight horizontal lines, floating planes, silent geometry, invisible junctions",
-      "color_palette": "White, Warm Beige, Cool Grey, Muted Sand, Pale Oak",
-      "lighting_setup": "Soft diffuse daylight, shadowless ambient, luminous ceiling, hidden cove glow",
-      "material_texture": "Smooth plaster, matte paint, honed stone, micro-cement, tactile stucco",
-      "render_quality": "Architectural Digest design-editorial clean, aspirational perfection",
-      "spatial_distortion": "None",
-      "atmosphere": "Calm, spacious, expensive, meditative, weightless, curated stillness",
-      "key_features": "Empty space, hidden storage, frameless glazing, floating staircase",
-      "creative_brief": "Silence acquires geometry, absence becoming presence through the discipline of subtraction. Light pools and recedes across seamless planes, each surface a meditation on what was removed. The frame exhales stillness, every void as intentional as the forms that define it."
-    }
-  },
-  {
-    "id": "SP07-027",
-    "name": "Tudor Revival",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "modern",
-    "style": {
-      "aesthetic": "English cottage, storybook charm, half-timbered romance, fairy-tale dwelling",
-      "form_and_line": "Half-timbering, steep gables, diamond-pane windows, tall chimneys, crooked ridge lines",
-      "color_palette": "Dark Wood, White Plaster, Warm Terracotta, Lichen Green, Ochre wash",
-      "lighting_setup": "Overcast soft, leaded-glass glow, inglenook firelight, cottage-window candle",
-      "material_texture": "Brick, wood, thatch, wattle-and-daub, leaded glass, hand-split shake",
-      "render_quality": "Cozy, historic, storybook, idyllic England, hearth-and-home, weathered charm",
-      "spatial_distortion": "Crooked beams",
-      "atmosphere": "Homey, old world, hearth-warm, rooted, garden-sheltered, folk-tale safe",
-      "key_features": "Timber frame, steep gables, tall chimney stack, diamond leaded windows, arched door hood",
-      "creative_brief": "Half-timbered bones press dark against whitewashed plaster like a structural X-ray made beautiful. Diamond panes catch firelight in their tiny leaded prisons, each a small painting of the garden beyond. The cottage wraps around its hearth like hands around a warm mug, rooted deeper than foundations."
-    }
-  },
-  {
-    "id": "SP07-021",
-    "name": "Deconstructivism",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "box, symmetrical",
-    "style": {
-      "aesthetic": "Frank Gehry sculptural deconstructivist landmark, titanium wildness, Bilbao effect",
-      "form_and_line": "Distorted geometry, collapsing volumes, twisting towers, exploding facets, folded planes",
-      "color_palette": "Titanium, Steel, Champagne Silver, Warm Ochre stone, Mirror Sky",
-      "lighting_setup": "Reflective sun, surface-dancing light, angled shadow drama, metallic shimmer",
-      "material_texture": "Metal panels, titanium shingles, zinc cladding, glass shards, bent steel",
-      "render_quality": "Chaotic, fluid, modern, sculptural explosion, gravity-defying, architectural fireworks",
-      "spatial_distortion": "Melting/Twisting",
-      "atmosphere": "Disorienting, dynamic, cerebral, exhilarating, rule-breaking, impossible beauty",
-      "key_features": "No right angles, folding titanium skin, explosive volumes, shimmering surfaces, sculptural roofscape",
-      "creative_brief": "Titanium skin folds like origami caught mid-thought, volumes collapsing and exploding in the same breath. The building refuses to sit still, every facet chasing light across its surface like a living thing. Architecture discovers it can dance, and the ground below it forgets what stable means."
-    }
-  },
-  {
-    "id": "SP07-025",
-    "name": "Bauhaus Architecture",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "decoration, roof tiles",
-    "style": {
-      "aesthetic": "Dessau building, machine-age purity, stripped-function beauty, industrial clarity",
-      "form_and_line": "Grid windows, flat roof, cubic masses, extruded strips, ribbon glazing, cantilevered corners",
-      "color_palette": "White, Grey, Black, Steel Blue, signal Red accent, pale Yellow wall",
-      "lighting_setup": "Flat daylight, even north-light, recessed-can shadow, strip-window rhythm",
-      "material_texture": "Concrete, glass, steel sash, linoleum floors, mineral render, tubular handrails",
-      "render_quality": "Functional, honest, clean, material-truth clarity, modernist manifesto, unadorned precision",
-      "spatial_distortion": "None",
-      "atmosphere": "Rational, modern, stark, workshop-clean, progressive idealism, disciplined calm",
-      "key_features": "Glass curtain wall, asymmetrical composition, flat roof terrace, exposed structure, ribbon windows",
-      "creative_brief": "Glass curtain walls deny the distinction between inside and out, transparency becoming the only ornament a building needs. Flat roofs turn their backs on romantic silhouettes, honesty of structure the new aesthetic. The architecture demands nothing but that you see it clearly, function the only poetry permitted."
-    }
-  },
-  {
-    "id": "SP07-010",
-    "name": "Futuristic Pod",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "old, dirty, square corners",
-    "style": {
-      "aesthetic": "Sci-fi living space, 2001 aesthetics, zero-friction habitat, orbital minimalism",
-      "form_and_line": "Seamless curves, no corners, egg-like capsules, organic blobs, continuous shells",
-      "color_palette": "Glossy White, LED Blue, Cool Cyan, Holographic Silver, Soft Magenta accent",
-      "lighting_setup": "Hidden strip lighting, embedded glow panels, mood-responsive ambient, sensor-activated zones",
-      "material_texture": "Plastic, glass, screen, carbon fiber, gel polymer, smart-surface, touch-reactive",
-      "render_quality": "Space station, clean, utopia, pristine future, anti-septic perfection",
-      "spatial_distortion": "None",
-      "atmosphere": "Sterile, advanced, cold, weightless, hum-free, intelligence-saturated",
-      "key_features": "Curved white surfaces, embedded displays, voice-responsive lighting, pod bed, auto-tinting glass",
-      "creative_brief": "Seams vanish into curves, the room a continuous membrane between inhabitant and void. Embedded displays pulse with quiet data, surfaces responding to presence like a living skin. Tomorrow arrived and built itself a dwelling, every surface an argument against corners."
-    }
-  },
-  {
-    "id": "SP07-026",
-    "name": "Googie Architecture",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "square, boring",
-    "style": {
-      "aesthetic": "50s Diner/Gas station, roadside futurism, car-culture optimism, atomic-age roadside",
-      "form_and_line": "Upswept roof, starbursts, boomerang angles, flying-V canopies, diamond window walls",
-      "color_palette": "Neon, Chrome, Red, Turquoise vinyl, Buttery Yellow, Atomic Orange",
-      "lighting_setup": "Neon signs, backlit plastic panels, cantilevered roof glow, kitsch brilliance, animated chase lights",
-      "material_texture": "Glass, steel, terrazzo, boomerang Formica, stucco rock, polished chrome",
-      "render_quality": "Space age, retro, optimistic, mid-century ambition, Jetsons-come-true, car-hood shine",
-      "spatial_distortion": "Boomerang shapes",
-      "atmosphere": "Fun, fast, atomic, drive-in romance, rocket-ship tomorrow, diner coffee energy",
-      "key_features": "Cantilever, upswept roof, neon signage, starburst ornament, angled glass walls, terrazzo floors",
-      "creative_brief": "Roofs sweep upward like the fins of a car that never stops accelerating toward tomorrow. Neon writes promises across the desert night, every starburst and boomerang a bet on the future. The diner glows with atomic-age optimism, a roadside cathedral where chrome is the religion and coffee the sacrament."
-    }
-  },
-  {
-    "id": "SP07-006",
-    "name": "Brutalist Architecture",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "delicate, painted, wood, glass",
-    "style": {
-      "aesthetic": "Massive concrete structure, raw monument, bunker poetry, fortress presence",
-      "form_and_line": "Heavy geometric blocks, board-marked walls, cantilevered masses, angular shadows",
-      "color_palette": "Raw Concrete Grey, Charcoal, Slate, weathered Pewter, damp Ash",
-      "lighting_setup": "Harsh shadows, dramatic, low-angle sun, deep recesses, stark contrast",
-      "material_texture": "Rough concrete formwork, board imprints, tie-hole patterns, exposed aggregate, cold stone",
-      "render_quality": "Monumental, imposing, heavy, sculptural weight, heroic scale, institutional power",
-      "spatial_distortion": "None",
-      "atmosphere": "Oppressive, powerful, stoic, enduring, fortress-like silence, territorial",
-      "key_features": "Concrete dominance, monolithic volumes, rhythmic boardmarks, shadow geometry",
-      "creative_brief": "Mass becomes monument, concrete refusing apology for its weight. Shadow carves geometric drama across board-marked planes, light and dark locked in a standoff of equals. The structure stands silent, an argument for permanence in a world of disposability, every tie-hole a signature of human hands that poured and stripped."
-    }
-  },
-  {
-    "id": "SP07-007",
-    "name": "Art Deco",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "minimal, rustic, plain",
-    "style": {
-      "aesthetic": "1920s glamour architecture, skyscraper age, jazz modernity, speakeasy elegance",
-      "form_and_line": "Geometric patterns, sunbursts, stepped ziggurats, chevron flows, fountain motifs",
-      "color_palette": "Gold, Black, Emerald Green, Chrome, Deep Navy, Ivory",
-      "lighting_setup": "Dramatic uplighting, sconce glow, mirrored reflection, marquee brilliance, frosted panels",
-      "material_texture": "Polished brass, marble, velvet, lacquered wood, etched glass, chrome inlay",
-      "render_quality": "Great Gatsby jazz-age luxurious, ornate, Art Deco decadence",
-      "spatial_distortion": "None",
-      "atmosphere": "Expensive, party, jazz age, extravagant, champagne fizz, midnight glamour",
-      "key_features": "Geometric ornamentation, sunburst mirrors, chevron floors, gold accents, tiered chandeliers",
-      "creative_brief": "Gold catches champagne light while black mirrors hold secrets whispered at midnight. Geometry ascends in stepped celebration, every chevron and sunburst a toast to the audacity of ornament. The room dresses for a party that never ended, wearing its glamour like starlight worn as fabric."
-    }
-  },
-  {
-    "id": "SP07-028",
-    "name": "Sustainable Green",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "concrete, industrial",
-    "style": {
-      "aesthetic": "Vertical forest building, living architecture, Bosco Verticale, breathing tower, planted habitat",
-      "form_and_line": "Organic + Grid, staggered planters, stepped terraces, living balconies, vegetated fins",
-      "color_palette": "Green plants, Wood, Sky reflection, Soil Brown, Seasonal Blossom color",
-      "lighting_setup": "Natural sun, leaf-filtered dapple, photosynthesis glow, seasonal-angle shadow",
-      "material_texture": "Leaves, timber, living bark, bamboo cladding, rammed earth, recycled aggregate",
-      "render_quality": "Eco-friendly, alive, biophilic wellness, carbon-negative beauty, nature-reclaimed",
-      "spatial_distortion": "Overgrown",
-      "atmosphere": "Healthy, future, fresh, oxygen-rich, symbiotic, planet-healing optimism",
-      "key_features": "Trees on balcony, green walls, integrated planters, solar shading, rainwater harvesting, biodiversity habitat",
-      "creative_brief": "Trees emerge from balconies like the forest is reclaiming its territory one floor at a time. Glass reflects green, a tower that breathes, filtering city air through a million leaves. The building stands as a treaty between vertical ambition and horizontal ecology, each terrace a peace offering to the biosphere."
-    }
-  },
-  {
-    "id": "SP07-030",
-    "name": "Soviet Constructivist",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "ornate, capitalist",
-    "style": {
-      "aesthetic": "Geometric concrete block, revolutionary architecture, communal machine, socialist monument",
-      "form_and_line": "Bold diagonals, intersecting cylinders, floating cantilevers, pilotis grid, dynamic tension",
-      "color_palette": "Grey, Red accents, Raw Concrete, Faded Ochre, Industrial Black, Propaganda Crimson",
-      "lighting_setup": "Overcast, low-angle drama, stark shadow projection, factory-window rhythm",
-      "material_texture": "Concrete, rough-cast render, steel frame, glass-block, bolted plate",
-      "render_quality": "Utopian, stark, heavy, revolutionary monument, collectivist scale, heroic industry",
-      "spatial_distortion": "Floating masses",
-      "atmosphere": "Serious, collective, revolutionary, communal purpose, factory-hall echo, historic weight",
-      "key_features": "Cylinder/Cube, floating volumes, exposed structure, sky-bridge walkways, bold red accents",
-      "creative_brief": "Cylinders and cubes crash into each other like ideas at a revolutionary committee meeting. Red accents cut through grey like a banner through Soviet sky, color as declaration. The building stands as a manifesto in concrete, promising collective futures that never arrived, still waiting."
-    }
-  },
-  {
-    "id": "SP07-024",
-    "name": "Victorian Painted Lady",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "plain, grey",
-    "style": {
-      "aesthetic": "San Francisco house, candy-colored heritage, architectural confection, gingerbread fantasy",
-      "form_and_line": "Gingerbread trim, spindle work, fish-scale shingles, bay windows, gable ornament, tall narrow",
-      "color_palette": "Pastel Blue/Pink/Yellow, Lavender, Mint Green, Cream trim, Dusty Rose",
-      "lighting_setup": "Sunny day, San Francisco fog-diffused, golden-hour facade glow, painted-lady sparkle",
-      "material_texture": "Wood siding, painted redwood, scroll-sawn ornament, turned spindles, bracketed eaves",
-      "render_quality": "Charming, detailed, dollhouse, postcard-perfect, neighborhood jewel, color-pop delight",
-      "spatial_distortion": "None",
-      "atmosphere": "Happy, nostalgic, cute, cheerful, preserved-history, whimsical pride",
-      "key_features": "Turret, gingerbread trim, three-color paint scheme, bay windows, fish-scale shingles",
-      "creative_brief": "Gingerbread trim frills against fog like lace on a widow, every spindle and fish-scale shingle a small act of joy against grey skies. Pastel paint schemes announce the house before you see it, a chromatic argument that homes should sing. The painted lady stands dressed for a party that never ends, San Francisco her eternal ballroom."
-    }
-  },
-  {
-    "id": "SP07-008",
-    "name": "Japanese Zen",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "clutter, western, plastic",
-    "style": {
-      "aesthetic": "Traditional Japanese room, wabi-sabi beauty, tea ceremony stillness, monastic restraint",
-      "form_and_line": "Grid of Shoji screens, tatami modules, tokonoma alcove, vertical posts, sliding tracks",
-      "color_palette": "Bamboo, Rice Paper White, Tatami Green, Charcoal Sumi, Warm Cedar, Indigo",
-      "lighting_setup": "Diffused paper lantern light, shoji-filtered daylight, alcove spotlight, seasonal shadow play",
-      "material_texture": "Tatami mat, wood, paper, hand-troweled clay, rush grass, raw silk",
-      "render_quality": "Peaceful, simple, natural, meditative clarity, refined emptiness",
-      "spatial_distortion": "None",
-      "atmosphere": "Meditative, quiet, disciplined, reverent, breathing stillness, seasonal awareness",
-      "key_features": "Low furniture, tokonoma alcove, sliding fusuma, irori hearth, zen garden view",
-      "creative_brief": "Rice paper filters daylight into meditation, each shoji grid a gentle discipline imposed on chaos. The tokonoma alcove holds a single branch, a universe of meaning in one deliberate gesture. Emptiness becomes the loudest element in the room, silence the material from which presence emerges."
-    }
-  },
-  {
-    "id": "SP07-029",
-    "name": "Adobe/Pueblo",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "sharp edges, wood",
-    "style": {
-      "aesthetic": "Desert mud house, earthen sanctuary, pueblo revival, timeless Southwest, hand-shaped dwelling",
-      "form_and_line": "Rounded corners, stepped massing, thick-wall masses, parapet silhouettes, organic contours",
-      "color_palette": "Terracotta, Sand, Warm Ochre, Sage brush, Deep Cinnamon, Sunbaked Clay",
-      "lighting_setup": "Harsh desert sun, deep window-reveal shadow, nicho candle glow, kiva fireplace flicker",
-      "material_texture": "Mud plaster, hand-troweled adobe, vigas wood, saltillo tile, rough-hewn lintels",
-      "render_quality": "Natural, earthy, solid, timeless-pueblo, sun-baked authenticity, ancestral craft",
-      "spatial_distortion": "Handmade walls",
-      "atmosphere": "Warm, dry, grounded, ancient-land, pueblo-silent, earth-connected peace",
-      "key_features": "Wood beams (vigas), rounded edges, kiva fireplace, nicho alcoves, bancos, ladder access",
-      "creative_brief": "Hands shaped these walls, each undulation a fingerprint of the maker pressed into mud and time. Vigas stretch across ceilings like ribs of earth made visible, holding centuries of desert silence above. The dwelling emerges from the ground as if it grew there, earthen architecture remembering its origin in soil."
-    }
-  },
-  {
-    "id": "SP07-032",
-    "name": "Subway Station",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "clean, sunny",
-    "style": {
-      "aesthetic": "NYC/London grime-worn metropolitan underground, tile echo, commuter solitude",
-      "form_and_line": "Perspective tunnel, arched vault, column rhythm, vanishing track lines, signage grid",
-      "color_palette": "Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone",
-      "lighting_setup": "Fluorescent flicker, platform-edge pools, advertising-light glare, tunnel-black void",
-      "material_texture": "Tile, dirt, ceramic glaze, metal rail, chewing-gum pavement, peeling paint",
-      "render_quality": "Urban, gritty, public, transit-realism, commuter poetry, damp-platform grime",
-      "spatial_distortion": "Motion blur train",
-      "atmosphere": "Lonely, transit, anonymous, platform-wait, underground rhythm, metropolitan solitude",
-      "key_features": "Tiles, vaulted ceiling, platform edge, bench, signage, track tunnel",
-      "creative_brief": "Tiles hold decades of commuter breath in their grout, ceramic witness to a million hurried journeys underground. Fluorescent light flattens everything into equal grey, democracy of illumination where suits and sorrows look the same. The tunnel stretches toward vanishing point, a perspective built for waiting."
-    }
-  },
-  {
-    "id": "SP07-011",
-    "name": "Luxury Penthouse",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "basement, dark, cheap",
-    "style": {
-      "aesthetic": "High-rise apartment with view, sky home, vertical privilege, glass aerie",
-      "form_and_line": "Floor to ceiling glass, floating planes, open-span living, cantilevered balcony",
-      "color_palette": "Neutral interior, blue city exterior, Charcoal upholstery, Brass accent, Ivory cream",
-      "lighting_setup": "City lights at night, recessed cove glow, art-spot accents, sky-reflected ambient, dim-to-warm LEDs",
-      "material_texture": "Glass, reflection, leather, book-matched marble, brushed nickel, silk velvet",
-      "render_quality": "Expensive, exclusive, rich, penthouse perfection, whispered wealth, skyline bragging",
-      "spatial_distortion": "None",
-      "atmosphere": "Powerful, lonely, successful, elevated, above-it-all quiet, rarefied air",
-      "key_features": "City skyline view, private terrace, infinity-edge pool, wine room, automated blinds",
-      "creative_brief": "Glass dissolves the boundary between sanctuary and skyline, the city spread below like a circuit board of ambition. Suspended between earth and stars, the penthouse breathes rarefied air where silence costs more than noise. Solitude becomes luxury when framed by an empire of lights below."
-    }
-  },
-  {
-    "id": "SP07-012",
-    "name": "Rustic Cabin",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "city, modern, cold",
-    "style": {
-      "aesthetic": "Log cabin interior, wilderness retreat, pioneer warmth, mountain sanctuary",
-      "form_and_line": "Rough log shapes, stacked stone, heavy timber trusses, hand-hewn beams, chunky proportions",
-      "color_palette": "Warm brown, fire orange, Golden Amber, Forest Pine, Smoked Oat",
-      "lighting_setup": "Fireplace glow, oil-lamp amber, candle flicker, window-filtered forest light, cast-iron stove warmth",
-      "material_texture": "Rough wood, stone, fur, hammered copper, wool blanket, cast iron, leather hide",
-      "render_quality": "Cozy, retreat, nature, crackling-warmth realism, off-grid tranquility",
-      "spatial_distortion": "None",
-      "atmosphere": "Warm, safe, isolated, stories-by-fire, pine-scented, snow-quiet",
-      "key_features": "Wood everywhere, stone hearth fireplace, antler chandelier, fur throws, log walls",
-      "creative_brief": "Logs hold centuries in their rings, walls that grew from wilderness now sheltering against it. Fire paints everything amber, shadows dancing on rough-hewn surfaces like memories of the tree that was. The cabin exhales pine and safety, a pocket of warmth carved from the inhospitable dark beyond."
-    }
-  },
-  {
-    "id": "SP07-013",
-    "name": "Mediterranean Villa",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "rain, cold, dark, grey",
-    "style": {
-      "aesthetic": "Greek or Italian coastal home, sun-drenched retreat, blue-shuttered simplicity, sea-facing sanctuary",
-      "form_and_line": "Soft plaster edges, arches, barrel ceilings, colonnades, terraced courtyards",
-      "color_palette": "White, Azure Blue, Terracotta, Bougainvillea Magenta, Warm Ochre, Sea-glass Green",
-      "lighting_setup": "Bright blinding sun, deep shutter-shadow, courtyard dapple, candlelit terrace evening",
-      "material_texture": "Stucco, tile, sea water, rough stone, hand-painted ceramic, wrought iron, bleached timber",
-      "render_quality": "Vacation, sunny, airy, dolce vita warmth, coastal breeze realism, sun-bleached beauty",
-      "spatial_distortion": "None",
-      "atmosphere": "Relaxed, summer, hot, siesta-slow, salt-air, cicada-humming bliss",
-      "key_features": "White walls and blue sea, terracotta roof tiles, bougainvillea cascade, olive grove, pergola shade",
-      "creative_brief": "White stucco drinks sunlight until it glows from within, blue shutters blinking against the glare like drowsy eyelids. Bougainvillea cascades over terracotta, magenta defiance against the bleaching sun. The villa breathes in slow siesta rhythm, every arched doorway a frame around the sea."
-    }
-  },
-  {
-    "id": "SP07-031",
-    "name": "Space Station Interior",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "wood, brick",
-    "style": {
-      "aesthetic": "ISS orbital station module, zero-G clutter, Velcro walls, Earth through cupola",
-      "form_and_line": "Wires, panels, equipment rack geometry, circular hatch rings, padded tunnel tubes",
-      "color_palette": "White, Velcro Blue, Equipment Beige, Soft-glow Green LED, Black panel accents",
-      "lighting_setup": "Harsh LED, panel-integrated task light, cupola-filtered Earth light, dim night-mode amber",
-      "material_texture": "Padding, metal, velcro tape, cable bundles, control panel plastic, foil insulation",
-      "render_quality": "Scientific, cramped, orbital-realism, functional density, engineering clutter, cosmic frontier",
-      "spatial_distortion": "Zero-G floating",
-      "atmosphere": "Claustrophobic, tech, weightless, frontier-isolation, science-hum, fragile habitation",
-      "key_features": "Handrails, equipment racks, round hatches, observation cupola, floating cables, soft walls",
-      "creative_brief": "Velcro strips hold notebooks mid-air, zero gravity transforming every surface into ceiling and floor simultaneously. Cables float like sleeping seaweed, blue LED constellations mapping the thin membrane between human warmth and void. Earth glows through the cupola, a blue reminder of everything left below."
-    }
-  },
-  {
-    "id": "SP07-035",
-    "name": "Library (Old)",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "digital, modern",
-    "style": {
-      "aesthetic": "Stacks of books, bibliophile sanctuary, reading-room heaven, literary labyrinth, scholar's cathedral",
-      "form_and_line": "Vertical spines, shelf-grid rhythm, arched alcoves, rolling ladders, barrel-vault ceiling",
-      "color_palette": "Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather",
-      "lighting_setup": "Warm lamp, banker's green glass shade, reading-table pool, high-window shaft, brass sconce",
-      "material_texture": "Paper, wood, leather, vellum, gilt tooling, waxed oak, marble bust",
-      "render_quality": "Quiet, intellectual, scholarly peace, book-scent serenity, timeless learning",
-      "spatial_distortion": "None",
-      "atmosphere": "Studious, hush, absorbed, musty-sweet, inherited wisdom, reading-trance",
-      "key_features": "Books everywhere, rolling ladder, reading tables, brass lamps, vaulted ceiling, globe",
-      "creative_brief": "Books breathe their slow vanilla decay into air thick with ideas waiting to be rediscovered. Ladders slide on brass rails toward ceiling-high wisdom, every spine a door to a mind that once burned to be heard. The library holds silence not as absence but as the accumulated hush of centuries reading."
-    }
-  },
-  {
-    "id": "SP07-015",
-    "name": "Victorian Mansion",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "minimal, bright, open",
-    "style": {
-      "aesthetic": "19th century cluttered room, Empire excess, mourning elegance, parlour theatre",
-      "form_and_line": "Ornate patterns everywhere, framed silhouettes, heavy draping swags, crowded picture rails",
-      "color_palette": "Dark Red, Gold, Mahogany, Plum, Bottle Green, Antique Brass",
-      "lighting_setup": "Dim gaslight, oil-lamp pools, fireplace flicker, heavy-curtained gloom, tarnished candelabra",
-      "material_texture": "Velvet, wallpaper, dust, horsehair, brocade, marble mantels, chinoiserie",
-      "render_quality": "Antique, heavy, stuffed, museum-dense, gaslit nostalgia, maximalist inheritance",
-      "spatial_distortion": "None",
-      "atmosphere": "Oppressive, historic, rich, cluttered memory, mothball, ancestral weight",
-      "key_features": "Pattern density, overstuffed furniture, floor-to-ceiling drapes, gallery wall, taxidermy",
-      "creative_brief": "Velvet swallows light, brocade fighting pattern against pattern in a war of abundance. Each surface carries the weight of ancestors who confused accumulation with permanence, every object a memorial to acquisition. The air is thick with mothball and memory, rooms that stopped breathing a century ago."
-    }
-  },
-  {
-    "id": "SP07-033",
-    "name": "Greenhouse/Conservatory",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "dark, dry",
-    "style": {
-      "aesthetic": "Glass house with plants, botanical sanctuary, Victorian Palm House, humid Eden, fern-filled paradise",
-      "form_and_line": "Glass grid, curved glasshouse ribs, ironwork tracery, floor-to-glass, misty depth",
-      "color_palette": "Green, Glass, Tropical Bloom accents, Dew-drop Silver, Mossy floor, Whitewashed iron",
-      "lighting_setup": "Diffused bright, glass-filtered sun, condensation prisms, mist-softened rays",
-      "material_texture": "Glass, leaves, mist, cast iron, terracotta pots, gravel path, moist bark",
-      "render_quality": "Humid, lush, peaceful, botanical-specimen clarity, greenhouse glow, steaming-leaf vitality",
-      "spatial_distortion": "Condensation",
-      "atmosphere": "Alive, wet, calm, growing, oxygen-dense, fern-forest peace",
-      "key_features": "Plants, iron framework, glass panels, mist hanging in air, terracotta pots, fern fronds",
-      "creative_brief": "Glass panels and iron ribs hold humidity like a held breath, condensation writing temporary poems on every pane. Ferns unfurl in slow motion against the architecture, green ambition meeting Victorian engineering in peaceful truce. The glasshouse dreams of rainforests while standing polite in English gardens."
-    }
-  },
-  {
-    "id": "SP07-014",
-    "name": "Cyberpunk Apartment",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "clean, organized, day",
-    "style": {
-      "aesthetic": "Cluttered high-tech low-life room, neon slum, analog-cable chaos, data-crimes den",
-      "form_and_line": "Wires, screens, trash, stacked monitors, cable spaghetti, hacked-together racks, unfolded futons",
-      "color_palette": "Dark, Neon Pink/Blue/Green, Amber CRT glow, Deep Violet, sickly Fluorescent",
-      "lighting_setup": "Screen glow, neon from window, buzzing fluorescent strip, holiday lights strung up, server LED blink",
-      "material_texture": "Metal, junk, ramen cups, peeling stickers, corrugated plastic, synth-leather, heatsinks",
-      "render_quality": "Dystopian, messy, detailed, chrome-beyond, circuit-grime, wet pavement reflection",
-      "spatial_distortion": "None",
-      "atmosphere": "Depressing, cool, tech, hunted, data-saturated, 3AM desperation",
-      "key_features": "Clutter density, multiple monitors, noodle cups, neon reflection in puddles, hacking rig",
-      "creative_brief": "Neon bleeds across rain-slick surfaces while monitors stack like windows into adjacent digital hells. Cable spaghetti traces the desperate infrastructure of a life lived between data streams and instant noodles. The room thrums with 3AM electricity, too alive to sleep, too exhausted to shut down."
-    }
-  },
-  {
-    "id": "SP07-037",
-    "name": "Aquarium Tunnel",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "dry",
-    "style": {
-      "aesthetic": "Underwater glass tunnel, submerged walkway, ocean-immersed passage, blue cathedral, marine immersion",
-      "form_and_line": "Curved glass, arched acrylic, perspective tube, floor-to-ceiling curve, flowing water line",
-      "color_palette": "Blue, Cyan, Aquamarine, Deep Navy shadow, Bioluminescent fleck, Sandy floor tan",
-      "lighting_setup": "Caustics, rippling light nets, overhead-dappled, blue ambient, tank-glow",
-      "material_texture": "Glass, water, acrylic, coral rock, sand bed, shimmering scale",
-      "render_quality": "Immersive, blue, aquarium-clarity, oceanic wonder, deep-blue meditation",
-      "spatial_distortion": "Refraction",
-      "atmosphere": "Wonder, deep, floating, quiet-awe, blue-weightless, other-world calm",
-      "key_features": "Fish overhead, glass tunnel, caustic light patterns, sharks, coral, stingrays",
-      "creative_brief": "Water bends light into dancing nets that sweep across the tunnel floor like living embroidery. Sharks glide overhead with the slow confidence of creatures that have never questioned their dominion. The tube becomes a lung breathing blue, every visitor a bubble of warm air moving through cold depths."
-    }
-  },
-  {
-    "id": "SP07-038",
-    "name": "Catacombs",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "living",
-    "style": {
-      "aesthetic": "Bone walls, empire of the dead, skull architecture, underground ossuary, silence of centuries",
-      "form_and_line": "Skulls, stacked femur patterns, arch niches, skull-and-crossbone geometry, tunnel perspective",
-      "color_palette": "Bone White, Dirt, Sepia age, Calcium Yellow, Shadow Brown, Cartilage Cream",
-      "lighting_setup": "Torch/Flashlight, flame-flicker on bone, LED beam, dramatic shadow-cast, warm death-glow",
-      "material_texture": "Bone, dirt, calcium deposit, cold stone, crumbling mortar, dry-earth scent",
-      "render_quality": "Macabre, claustrophobic, bone-chamber realism, death-density, ancient silence",
-      "spatial_distortion": "None",
-      "atmosphere": "Death, silence, below-ground, ossuary-reverence, chilling peace, mortal reminder",
-      "key_features": "Skulls, stacked long bones, arched niches, low ceiling, tunnel shaft, decorative bone patterns",
-      "creative_brief": "Skulls arranged in geometric chorus, tibiae stacked like library books catalogued by the grim librarian of centuries. The walls watch with a thousand empty sockets, calcium constellations mapping the architecture of mortality. Silence down here has weight, the accumulated stillness of generations who have nothing left to say."
-    }
-  },
-  {
-    "id": "SP07-040",
-    "name": "Treehouse",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "ground level",
-    "style": {
-      "aesthetic": "House in canopy, child's secret kingdom, elevated hideaway, forest perch, arboreal adventure",
-      "form_and_line": "Wood planks, branch-cradled platforms, ladder diagonals, suspension-bridge curves, wrap-around deck",
-      "color_palette": "Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss",
-      "lighting_setup": "Dappled sun, leaf-filtered shimmer, lantern glow, fairy-string twinkle, camping-lamp amber",
-      "material_texture": "Bark, wood, rope ladder, canvas, salvaged plank, tree-sap",
-      "render_quality": "Childhood, secret, summer-adventure, backyard-magic, freedom fantasy",
-      "spatial_distortion": "Crooked",
-      "atmosphere": "Adventure, high, above-ground, secret-hideout, wind-in-leaves, kid-dream independence",
-      "key_features": "Ladder, tree trunk through floor, rope swing, lanterns, wooden deck, lookout platform",
-      "creative_brief": "Wood planks embrace the living trunk, architecture deferring to botany with each board bent around bark. Rope bridges sway between platforms like conversations between branches, the whole structure a negotiation with gravity and growth. The treehouse holds childhood aloft, a secret kept above the reach of adult ground."
-    }
-  },
-  {
-    "id": "SP07-034",
-    "name": "Abandoned Asylum",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "clean, new",
-    "style": {
-      "aesthetic": "Decaying hallway, institutional horror, peeling madness, sanitarium ruin, ghost of order",
-      "form_and_line": "Peeling paint lines, institutional symmetry, long perspective corridor, collapsed grid, sagging ceiling",
-      "color_palette": "Desaturated Green/Grey, Sickly Mint, Rust stain, Water-damage Brown, Faded Cream",
-      "lighting_setup": "Shafts of light, dust-beam theater, broken-window blade, flickering emergency bulb, pitch corners",
-      "material_texture": "Rot, rust, debris, flaking paint, water-stained plaster, shattered glass, mold bloom",
-      "render_quality": "Scary, ruined, texture, abandonment beauty, decay-as-art, gothic institutional",
-      "spatial_distortion": "Collapsed ceiling",
-      "atmosphere": "Horror, sad, old, forgotten, echoing, institutional trauma, peeling silence",
-      "key_features": "Wheelchair, peeling paint, long hallway, broken windows, institutional signs, collapsed ceiling",
-      "creative_brief": "Paint peels in continents, cartographies of neglect mapping themselves across institutional green walls. A wheelchair sits where it was abandoned decades ago, patient object still waiting for someone to return. Dust motes dance in light-shafts like the only living things brave enough to still inhabit this place."
-    }
-  },
-  {
-    "id": "SP07-042",
-    "name": "English Cottage Garden",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "formal, concrete",
-    "style": {
-      "aesthetic": "Overgrown flower beds, romantic chaos, Gertrude Jekyll border, painterly planting, bee-hum profusion",
-      "form_and_line": "Organic clumps, meandering paths, herbaceous mounds, self-seeded drifts, rose-arch curve",
-      "color_palette": "Pastel flowers, Green, Lavender haze, Hollyhock Pink, Delphinium Blue, Cream Rose",
-      "lighting_setup": "Soft sun, cloud-diffused English light, dappled under-tree, golden-hour petal glow",
-      "material_texture": "Petals, leaves, rough stone path, mossy brick, bark mulch, feathery foliage",
-      "render_quality": "Romantic, messy, cottage-idyll, painter's garden, informal abundance, bee-loud beauty",
-      "spatial_distortion": "None",
-      "atmosphere": "Peaceful, sweet, dreamy, rustling, scented, time-stands-still garden",
-      "key_features": "Flowers, overflowing borders, rose arches, winding path, bird bath, foxgloves, lavender",
-      "creative_brief": "Flowers crowd the path with the gentle anarchy of things that grow without permission. Lavender spills over stone edges, foxgloves standing tall like pink sentries of abandon. The garden has forgotten where it was told to stay, and in that forgetting found something more beautiful than order."
-    }
-  },
-  {
-    "id": "SP07-047",
-    "name": "Maze/Labyrinth",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "open field",
-    "style": {
-      "aesthetic": "Hedge maze, living puzzle, green architecture, secret-garden labyrinth, puzzle palace",
-      "form_and_line": "Vertical walls, right-angle corridors, dead-end geometry, spiral center, boxwood-perfect edges",
-      "color_palette": "Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue",
-      "lighting_setup": "Shadowy paths, light-at-end glow, sun-stripe corridor, dappled-floor pattern, mysterious dead-end",
-      "material_texture": "Leaves, clipped hedge, dense foliage surface, gravel floor, mossy statue, bark-stem wall",
-      "render_quality": "Mysterious, geometric, puzzle-chamber, green-architecture, perspective-trick, getting-lost poetry",
-      "spatial_distortion": "None",
-      "atmosphere": "Lost, puzzle, confused, curious, walls-closing-in, center-discovery",
-      "key_features": "High walls, dead ends, gravel path, center fountain, statue focal point, clipped precision",
-      "creative_brief": "Hedge walls rise green and impenetrable, each turn a question with no obvious answer. Gravel crunches underfoot like the maze itself is counting your steps, amused by your confusion. The center waits, whether fountain or folly, a secret the boxwood has promised never to reveal too quickly."
-    }
-  },
-  {
-    "id": "SP07-050",
-    "name": "Botanical Glasshouse",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "outdoor",
-    "style": {
-      "aesthetic": "Victorian palm house, glass cathedral, botanical treasury, iron-and-glass jewel, tropical collection",
-      "form_and_line": "White iron frame, curved glasshouse ribs, ridge-and-furrow roof, circular staircase, tiered planting",
-      "color_palette": "White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver",
-      "lighting_setup": "Diffused, glasshouse-bright, condensation-prism, rain-on-glass, golden-hour ironwork glow",
-      "material_texture": "Glass, condensation, cast iron, terracotta tile, tropical bark, giant-leaf surface",
-      "render_quality": "Scientific, humid, Kew-Gardens grandeur, botanical-collection beauty, ironwork elegance",
-      "spatial_distortion": "None",
-      "atmosphere": "Lush, enclosed, transported, tropical-England, conservatory-hush, plant-wonder",
-      "key_features": "Iron structure, curved glass roof, spiral staircase, giant ferns, orchid display, palm canopy",
-      "creative_brief": "Iron ribs curve toward glass heaven, Victorian engineering dreaming in white filigree and condensation. Giant ferns unfurl prehistoric ambition beneath a roof that taught winter to grow tropical orchids. The glasshouse stands as a lung made architecture, breathing green long after the empire that built it faded."
-    }
-  },
-  {
-    "id": "SP07-046",
-    "name": "Tropical Resort Pool",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "cold, city",
-    "style": {
-      "aesthetic": "Infinity pool, resort paradise, liquid-edge luxury, beach-club fantasy, turquoise dream",
-      "form_and_line": "Water edge, vanishing horizon, Baja shelf, palm trunks vertical, curved lazy-river",
-      "color_palette": "Turquoise, Palm Green, White cabana, Bougainvillea Pink, Sand Beige, Sky-reflected teal",
-      "lighting_setup": "Bright sun, underwater glow, tiki-torch amber, fire-pit flicker, sunset-surface shimmer",
-      "material_texture": "Water, stone, pebble-sheen plaster, pool tile, teak deck, canvas awning",
-      "render_quality": "Luxury, vacation, resort-brochure, five-star paradise, pool-day perfection",
-      "spatial_distortion": "None",
-      "atmosphere": "Relaxing, expensive, sunkissed, cocktail-bliss, endless-summer, weightless-tranquility",
-      "key_features": "Palm trees, infinity edge, submerged loungers, cabana, fire bowls, turquoise water",
-      "creative_brief": "Water meets sky at an edge so precise it disappears, the pool becoming a second horizon liquid and still. Palm shadows stripe across limestone, afternoon distilled into geometry of leisure. The resort floats between ocean and pool deck, a thin membrane of luxury stretched across tropical heat."
-    }
-  },
-  {
-    "id": "SP07-060",
-    "name": "Haunted House (Cartoon)",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "scary realistic",
-    "style": {
-      "aesthetic": "Scooby Doo spooky cartoon manor, Mystery Inc. haunt, crooked fun",
-      "form_and_line": "Wonky angles, crooked windows, leaning chimney, sagging roofline, cartoon-distort timbering",
-      "color_palette": "Purple, Green, Black, Cartoon-Orange trim, Spooky-moon White, Dark-violet shadows",
-      "lighting_setup": "Lightning flash, cartoon-moon glow, window-silhouette yellow, dramatic-thunder strobe, bat-shadow",
-      "material_texture": "Painted, ink-line, cel-shade, flat-color, wood-siding cartoon, weathervane silhouette",
-      "render_quality": "Spooky, fun, Hanna-Barbera charm, cartoon-haunt delight, flat-color perfection, nostalgic-scary",
-      "spatial_distortion": "Face in window",
-      "atmosphere": "Spooky, classic, cartoon-creepy, silly-scare, nostalgia, Saturday-morning thrill",
-      "key_features": "Bats, crooked shutters, lightning bolt, full moon, weathervane, creepy tree, iron gate",
-      "creative_brief": "Crooked shutters hang at impossible angles, the whole house leaning as if trying to escape its own foundation. Lightning cracks the purple sky behind weathervanes that spin with cartoon panic. The manor is scary the way Saturday mornings were scary, all thrill and no nightmare, spooky enough to hide behind the couch but never behind your eyes."
-    }
-  },
-  {
-    "id": "SP07-073",
-    "name": "Ant Farm",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "surface",
-    "style": {
-      "aesthetic": "Tunnel cross section, subterranean city, insect engineering, soil labyrinth, colony metropolis",
-      "form_and_line": "Tunnels, branching-chamber network, gallery-nodes, vertical shafts, fungus-garden alcoves, queen-chamber oval",
-      "color_palette": "Sand, Dirt, Amber-gel fill, Chamber-dark Brown, Ant-black silhouette, Tunneling-fresh earth",
-      "lighting_setup": "Side light, gel-illuminated cross-section, tunnel-depth shadow, chamber-glow, observation-pane backlit",
-      "material_texture": "Grainy, sand-particle, soil-structure, gel-embedded clarity, tunnel-wall compact, mandible-scarred",
-      "render_quality": "Subterranean, busy, ant-farm fascination, insect-city realism, colony-industry, cross-section beauty",
-      "spatial_distortion": "None",
-      "atmosphere": "Busy, hidden, organized-chaos, colony-purpose, underfoot-world, instinct-hive, tunnel-darkness",
-      "key_features": "Tunnels, chambers, queen's chamber, worker ants, fungus garden, brood cells, glass observation pane",
-      "creative_brief": "Tunnels branch through amber gel like a circulatory system excavated from the body of the earth. Chambers bloom at tunnel junctions, each a specialized organ of the colony: nursery, granary, throne room for the queen. The cross-section reveals a civilization that built its empire in darkness, architecture without architects, perfect in its blind purpose."
-    }
-  },
-  {
-    "id": "SP07-078",
-    "name": "Borg Industrial Hive Cube",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "smooth",
-    "style": {
-      "aesthetic": "Tech cube, cybernetic-collective vessel, assimilation architecture, networked sentience, adaptive geometry",
-      "form_and_line": "Pipes, conduit-bundles, alcove-grid, regeneration-niche, data-node columns, tractor-beam emitter rings",
-      "color_palette": "Dark Grey, Green light, Cybernetic-sick Green, Cold-metal Black, Plasma-blue, Necrotic-circuit glow",
-      "lighting_setup": "Space, interior-green ambient, alcove-spot, plasma-conduit pulse, tractor-beam green wash, deep-space void",
-      "material_texture": "Greebles, cybernetic-surface detail, bio-mechanical interface, tube-bundle, armor-plate, drone-socket, regeneration gel",
-      "render_quality": "Complex, scary, Borg-collective menace, assimilation-horror, cybernetic-nightmare, hive-precision",
-      "spatial_distortion": "None",
-      "atmosphere": "Ominous, assimilating, resistance is futile",
-      "key_features": "Cube, regeneration alcoves, conduit bundles, green plasma, drone figures, tractor beam, hive architecture",
-      "creative_brief": "Green plasma pulses through conduit bundles like the cube itself has a circulatory system of cold light. Regeneration alcoves line the walls in infinite grid, each niche waiting for a drone that will rise and serve. The architecture hums with collective purpose, every surface a circuit, every corridor a vein, beauty eliminated in favor of function perfected into horror."
-    }
-  },
-  {
-    "id": "SP07-080",
-    "name": "Tardis Infinite Console Chamber",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "small",
-    "style": {
-      "aesthetic": "Bigger on the inside, impossible interior beyond outer shell, dimensional transcendence",
-      "form_and_line": "Hexagons/Roundels, organic-coral architecture, console-pedestal, gallery-level curves, time-rotor column, infinite-arches",
-      "color_palette": "Orange/Teal, Coral-amber glow, Deep-ocean Teal, Console-copper, Roundel-warm gold, Time-vortex blue",
-      "lighting_setup": "Console glow, time-rotor pulse, roundel-indirect, gallery-level ambient, regeneration-energy gold, warm coral wash",
-      "material_texture": "Tech, organic, grown-coral surface, control-console brass, glass roundel, copper wire, gel-pack",
-      "render_quality": "Sci-fi, chaotic, Doctor-Who wonder, impossible-dimensions, time-machine Baroque, bigger-on-the-inside magic",
-      "spatial_distortion": "Time rotor",
-      "atmosphere": "Adventure, time, wonder-awe, time-lord, infinite-explore, dimensional-impossible, home-among-stars",
-      "key_features": "Central column, roundel walls, hexagonal console, time rotor, gallery levels, organic architecture, infinite depth",
-      "creative_brief": "Console pedestal rises from coral-grown floor, organic architecture pulsing with the slow respiration of a machine that has outgrown machinery. Roundels line curved walls like eyes that watch every timeline simultaneously, the chamber bigger than its exterior, bigger than geometry, bigger than the concept of containment. Time itself pools in the rotor column, the room a vessel sailing on currents of causality."
-    }
-  },
-  {
-    "id": "SP07-064",
-    "name": "Bespin Sunset Cloud Metropolis, carbon-freeze elegance, tibanna gas glow",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "ground",
-    "style": {
-      "aesthetic": "Floating sci-fi city, gas-giant mining colony, cloud-top civilization, retro-future elegance, sky-mining hub",
-      "form_and_line": "Clean curves, domed landing-pad circles, spire-vanes, rounded-hull geometry, floating-platform discs",
-      "color_palette": "Orange sunset, White, Gas-giant Pink, Tibanna Gold, Sky-reflected Amber, Cloud-silver",
-      "lighting_setup": "Sunset, orange-horizon bath, interior-warm gold, cloud-reflected glow, landing-beacon lights",
-      "material_texture": "Metal, cloud, smooth hull, sleek alloy, transparisteel, polished deck",
-      "render_quality": "Utopian, mining, Star-Wars Cloud-City beauty, sunset-metropolis elegance, retro-future luxury",
-      "spatial_distortion": "None",
-      "atmosphere": "Beautiful, high, administrative-calm, gas-giant-horizon, luxury-above-chaos, carbon-frozen serenity",
-      "key_features": "Orange sky, cloud spires, landing platforms, smooth domes, skyline silhouette, tibanna refinery",
-      "creative_brief": "Orange sky stretches to gas-giant infinity, cloud spires catching the last light of a sun that never fully sets. Domed platforms hover with art deco grace, retro-future elegance suspended above atmospheric storms. The city floats on the breath of a planet, administrative calm wrapped in tibanna gold and carbon-freeze serenity."
-    }
-  },
-  {
-    "id": "SP07-066",
-    "name": "Lego Brick-Built City",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "smooth, realistic",
-    "style": {
-      "aesthetic": "Lego toy brick world, ABS-plastic metropolis, snap-together skyline",
-      "form_and_line": "Brick seams, stud-grid geometry, modular-block stacking, stepped-pyramid, interlocking corners",
-      "color_palette": "Primary plastic, Bright Red, Yellow, Blue, Green, Black, White, Grey",
-      "lighting_setup": "Glossy, plastic-surface reflection, light-pool on studs, playroom-filtered sun, specular shine",
-      "material_texture": "Plastic studs, injection-mold surface, ABS sheen, clutch-power grip, brick-name logo, smooth-slope",
-      "render_quality": "Toy, blocky, LEGO-catalog perfection, snap-together realism, brick-built charm, Danish toy beauty",
-      "spatial_distortion": "None",
-      "atmosphere": "Playful, constructed, childhood-creative, instruction-following, brick-searching, imaginative-build",
-      "key_features": "Studs, brick texture, minifigure scale, interlocking bricks, modular builds, brick separator, baseplate",
-      "creative_brief": "Studs catch light on their tiny circular crowns, each brick a pixel in a world built one snap at a time. Modular walls rise in primary-color determination, the city skyline rendered in ABS plastic and childhood ambition. Instructions lie scattered nearby, already abandoned for the superior architecture of imagination."
-    }
-  },
-  {
-    "id": "SP07-057",
-    "name": "Steampunk City",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "clean energy",
-    "style": {
-      "aesthetic": "Steam powered London, brass-age metropolis, Victorian science fiction, Jules Verne future, clockwork empire",
-      "form_and_line": "Pipes, gears, clock-face towers, dirigible-dock arches, chimney stacks, flywheel silhouettes",
-      "color_palette": "Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright",
-      "lighting_setup": "Gaslight, warm amber street-glow, gear-spark, hissing steam-vent light, amber window, smog-diffused",
-      "material_texture": "Metal, brick, riveted copper, wood panel, leather, steam-whistle brass, soot-coat",
-      "render_quality": "Industrial, retro, speculative-Victorian, gear-and-brass romance, steam-punk opulence",
-      "spatial_distortion": "None",
-      "atmosphere": "Busy, smoky, inventive, gear-turning, coal-breath, thrilling-progress, stoker's warmth",
-      "key_features": "Gears, steam vents, brass pipes, clock tower, dirigible, copper boilers, cobblestone streets",
-      "creative_brief": "Gears mesh with clockwork certainty while steam hisses from brass joints, the city breathing through iron lungs. Dirigibles drift between chimney stacks, leviathans of canvas and ambition navigating a sky thick with progress. Every rivet tells a story of hands that believed the future would taste of coal smoke and ingenuity."
-    }
-  },
-  {
-    "id": "SP07-054",
-    "name": "Cyberpunk Slums",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "clean, wide streets",
-    "style": {
-      "aesthetic": "Stacked containers, megacity underbelly, vertical shantytown, Kowloon-inspired density, neon-blight",
-      "form_and_line": "Wires, neon, fire-escape zigzag, shipping-container grid, AC-unit cascade, laundry lines",
-      "color_palette": "Dark, Neon, Rain-wet Black, Sickly Green, Magenta sign, Rust Brown, Blue smog",
-      "lighting_setup": "Artificial, neon-bath, hologram flicker, rain-streak LED, shadowed alley, 24-hour unnatural twilight",
-      "material_texture": "Rust, metal, rain, grimy plastic, corrugated shutter, wet pavement, peeling poster",
-      "render_quality": "Dense, dangerous, high-tech low-life, rain-slick neon, social-compression horror, Blade Runner overcrowding",
-      "spatial_distortion": "None",
-      "atmosphere": "Oppressive, tech, desperate, hunted, data-saturated, no-sky, breathing-each-other's-air",
-      "key_features": "Vertical density, neon signs, stacked AC units, fire escapes, cable chaos, street-level market stalls",
-      "creative_brief": "Containers stack toward smog-blurred sky, each box a life compressed into corrugated steel and desperation. Neon signs advertise in six languages, flickering promises that none of the residents can afford. The alley narrows into lightlessness, a vertical shantytown where humanity packs itself tighter than circuit boards."
-    }
-  },
-  {
-    "id": "SP07-065",
-    "name": "Paper Town",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "realistic",
-    "style": {
-      "aesthetic": "Model village, papercraft diorama, folded world, origami architecture, card-stock miniature",
-      "form_and_line": "Cut edges, fold-score geometry, glue-tab seams, pop-up angles, diorama-depth layering",
-      "color_palette": "White paper, Kraft Brown, Newsprint Grey, Colored-card stock tints, Tracing-paper Milk",
-      "lighting_setup": "Studio soft, flat-model light, cut-shadow starkness, paper-translucency glow, tabletop spot",
-      "material_texture": "Paper grain, card-stock tooth, fold-creases, cut-edge fiber, glue-bead, bristol surface",
-      "render_quality": "Fragile, craft, miniature-precision, paper-sculpture art, architectural-model beauty",
-      "spatial_distortion": "None",
-      "atmosphere": "Quiet, delicate, handmade, still-life, cardboard-dream, patient-craft, tiny-perfection",
-      "key_features": "Fold lines, cut edges, miniature scale, glue tabs, layered depth, pop-up elements, paper grain",
-      "creative_brief": "Cut edges cast razor shadows, each fold a decision frozen in card stock and craft knife precision. The town rises from paper flats like a pop-up book dreaming itself three-dimensional. Glue tabs hold buildings together with the tender fragility of things made by hands that knew it would not last."
-    }
-  },
-  {
-    "id": "SP07-051",
-    "name": "Rivendell Verdant Elven Refuge, Last Homely House",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "industrial, blocky",
-    "style": {
-      "aesthetic": "Art Nouveau in nature, elven grace, valley sanctuary, waterfall palace, timeless woodland harmony",
-      "form_and_line": "Elegant curves, filigree arches, natural-branch colonnades, cascading terraces, leaf-tracery windows",
-      "color_palette": "Autumn Gold, White, Silver Birch, Moss-floor Green, Waterfall Mist, Soft Lavender dusk",
-      "lighting_setup": "Magical glow, elf-lantern warmth, waterfall-reflected moonlight, star-dome canopy, inner-light radiance",
-      "material_texture": "Carved stone, leaves, living wood, mother-of-pearl inlay, silver filigree, crystalline light",
-      "render_quality": "Ethereal, ancient, Tolkien-beauty, elven-crafted perfection, sacred wood, Middle-earth elegance",
-      "spatial_distortion": "None",
-      "atmosphere": "Magical, safe, timeless, song-filled, story-sanctuary, hidden-peace, weary-traveler's rest",
-      "key_features": "Waterfalls, delicate bridges, open-air halls, elven pavilions, tree-integrated architecture, star-viewing terrace",
-      "creative_brief": "Waterfalls thread through filigree arches like liquid silver poured through elven hands. Trees lean into architecture, branches becoming columns in a hall that never decided where nature ends and craft begins. The valley holds its breath in perpetual twilight, a sanctuary that appears only when the world has grown tired enough to deserve it."
-    }
-  },
-  {
-    "id": "SP07-052",
-    "name": "Dwarven Fortress",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "wood, light, delicate",
-    "style": {
-      "aesthetic": "Underground hall, mountain kingdom, stone-deep majesty, forge-heart stronghold, ancestral deep",
-      "form_and_line": "Geometric blocky, megalithic pillars, vaulted axe-cut ceiling, rune-engraved arch, broad axes",
-      "color_palette": "Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black",
-      "lighting_setup": "Lava glow, forge-fire, crystal-lamp amber, torch-bracket rhythm, subterranean orange warmth",
-      "material_texture": "Hewn stone, chisel-marked granite, hammered gold, molten iron, vein crystal, thick leather",
-      "render_quality": "Heavy, industrial fantasy, Khazad-dum majesty, deep-delver craftsmanship, stone-song epic",
-      "spatial_distortion": "None",
-      "atmosphere": "Epic, strong, ancient-resolve, forge-breath, deep-root, clan-hall echoes, enduring pride",
-      "key_features": "Pillars, great hall, golden hoard, forge anvil, rune carvings, lava channel, axe-trophies",
-      "creative_brief": "Stone pillars rise from living rock, axes still singing in the chisel marks that shaped them. Gold veins pulse through granite like the mountain itself has a circulatory system of treasure. The hall echoes with forge-hammer ghosts, every shadow cast by a fire that has burned for ten thousand years."
-    }
-  },
-  {
-    "id": "SP07-059",
-    "name": "Hobbit Hole Hillside Roundhouse, Bag End comfort",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "square, tall",
-    "style": {
-      "aesthetic": "Round door in hill, Shire dwelling, earth-sheltered home, cozy burrow, garden-roof cottage",
-      "form_and_line": "Round, curved tunnel, arch windows, circular symmetry, low-earth dome, winding path",
-      "color_palette": "Green, Wood, Earth, Brass knob, Buttercream plaster, Flower-garden colors, Warm brick",
-      "lighting_setup": "Cozy warm, hearth-glow, round-window light, candle-sconce, tunnel-lantern, afternoon-gold",
-      "material_texture": "Grass, wood, clay plaster, flagstone floor, brass fixtures, wattle, herb garden",
-      "render_quality": "Cozy, hidden, Tolkien-Shire charm, hobbit-hole perfection, underground-warmth, storybook comfort",
-      "spatial_distortion": "None",
-      "atmosphere": "Homey, safe, garden-sheltered, tea-ready, pipe-smoke, fireside tales, earth-embrace",
-      "key_features": "Round door, grass roof, round windows, hearth fireplace, pantry shelves, brass knob center",
-      "creative_brief": "Grass roof slopes into hillside, architecture hiding its ambition beneath a blanket of wildflowers and humility. The round door opens inward with brass-center welcome, a portal into warmth that smells of fresh bread and pipe tobacco. The hill embraces its occupant like earth learning to love the creature that burrowed into it."
-    }
-  },
-  {
-    "id": "SP07-062",
-    "name": "Ewok Canopy Rope Village, Endor treetops, forest-moon tribe",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "metal",
-    "style": {
-      "aesthetic": "Huts in redwoods, arboreal village, treetop tribe, giant-sequoia settlement, leaf-hidden community",
-      "form_and_line": "Rope bridges, suspension curves, platform circles, trunk-wrap rings, ladder diagonals",
-      "color_palette": "Brown, Green, Rope Tan, Bark Grey, Canopy-filtered Gold, Redwood Rust",
-      "lighting_setup": "Forest filter, canopy-dappled, lantern-glow, sunset-through-leaves, campfire amber, star-through-branches",
-      "material_texture": "Wood, rope, thatch, woven vine, leather hide, log, bark",
-      "render_quality": "Primitive, high, Star-Wars Endor charm, forest-moon authenticity, tree-village adventure",
-      "spatial_distortion": "None",
-      "atmosphere": "Tribal, nature, canopy-home, forest-guardian, wind-through-bridge, leaf-whisper, tribe-gathering",
-      "key_features": "Bridges, platform huts, rope ladders, trunk walkways, lookout platforms, thatched roofs, hanging lanterns",
-      "creative_brief": "Rope bridges sway between redwood giants, suspension arcs tracing the path of wind through ancient canopy. Platforms wrap around trunks like hands holding old friends, architecture that bows to botany with every beam. The village lives where light filters through a million needles, a civilization built at the altitude of birdsong."
-    }
-  },
-  {
-    "id": "SP07-069",
-    "name": "Inflatable Castle",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "hard edges",
-    "style": {
-      "aesthetic": "Bouncy house, party inflatable, air-filled fun palace, childhood carnival, birthday-bounce kingdom",
-      "form_and_line": "Seams, inflated tube curves, turret-bulge cylinders, rounded-battlement bumps, fan-hose snake",
-      "color_palette": "Neon vinyl, Hot Pink, Electric Yellow, Safety Orange, Royal Blue inflatable, Bright Green",
-      "lighting_setup": "Glossy, vinyl-shine reflection, sun-through-vinyl translucency, party-string lights, fan-inflated tension",
-      "material_texture": "Plastic vinyl, glossy PVC, seam-weld ridge, inflatable-taut surface, bouncy-air resistance, nylon-web tie",
-      "render_quality": "Soft, air filled, bounce-house joy, backyard-carnival, inflatable-castle kitsch, birthday-party centerpiece",
-      "spatial_distortion": "Bulging",
-      "atmosphere": "Fun, bouncy, party-excitement, air-pressure, squeaky-joy, kid-energy, temporary-amusement",
-      "key_features": "Wrinkles, seam lines, blower fan, bright color panels, turrets, slide opening, net windows",
-      "creative_brief": "Vinyl turrets bulge with air-pressure pride, seams straining against the enthusiasm trapped within. Electric yellow panels glow with the translucency of thin plastic and thick joy, the castle trembling slightly as children inside test the physics of bouncing. The blower fan hums its eternal note, the heartbeat of temporary architecture."
-    }
-  },
-  {
-    "id": "SP07-070",
-    "name": "Gingerbread House",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "inedible",
-    "style": {
-      "aesthetic": "Cookie house, Christmas confection, Hansel-and-Gretel cottage, holiday bakery architecture, edible fairytale",
-      "form_and_line": "Icing piping, scalloped roof-tile cookies, gumdrop border lines, candy-cane porch columns, pretzel-log walls",
-      "color_palette": "Brown, White, Candy, Gumdrop Red/Green, Icing Pink, Peppermint Swirl, Golden cookie",
-      "lighting_setup": "Warm, oven-glow, Christmas-light twinkle, sugar-sparkle, cozy-window amber, holiday-candle",
-      "material_texture": "Cookie, sugar, royal icing, hard candy, pretzel, chocolate, sprinkled surface, gum paste",
-      "render_quality": "Christmas, sweet, holiday-baking beauty, edible-architecture charm, gingerbread-perfection, festive-delicious",
-      "spatial_distortion": "None",
-      "atmosphere": "Festive, yummy, holiday-joy, kitchen-warm, candy-smell, childhood-December, sweet-tradition",
-      "key_features": "Gumdrops, icing snow, candy cane columns, cookie roof, peppermint path, pretzel fence, sprinkle roof",
-      "creative_brief": "Royal icing traces snow-scallops along cookie-tile rooflines, each piped ridge a small triumph of sugar over structural engineering. Gumdrops march in chromatic guard along pretzel-log walls, candy sentinels at their sweetest posts. The house glows with oven-warmth still fresh, a dwelling built to be eaten, architecture that understands its destiny is delicious demolition."
-    }
-  },
-  {
-    "id": "SP07-071",
-    "name": "Mushroom House",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "square",
-    "style": {
-      "aesthetic": "Smurf whimsical mushroom cottage, tiny blue village",
-      "form_and_line": "Organic, stem-cylinder, cap-dome, gill-undercut, fairy-ring cluster, bulbous, soft-swell",
-      "color_palette": "Red cap, White stalk, Spore Brown, Moss Green, Fairy Blue, Forest-floor Amber, Toadstool-spot Cream",
-      "lighting_setup": "Forest floor, spotted-light dapple, mushroom-glow bioluminescent, shade-cool, firefly-twinkle, under-cap shadow",
-      "material_texture": "Fungus, mushroom-cap skin, gill-ribs, velvet moss, spore-dust, forest loam, dewdrop",
-      "render_quality": "Fantasy, cute, fairy-tale fungi, Smurf-village charm, woodland-magic, storybook-enchantment",
-      "spatial_distortion": "Bulbous",
-      "atmosphere": "Magic, small, hidden, fairy-glade, tiny-footstep, enchanted-forest, wee-folk safe",
-      "key_features": "Spots, red cap, white stem, tiny round door, chimney smoke, mushroom village, moss carpet",
-      "creative_brief": "Red caps dome above white stalks like tiny observatories built by a civilization that worships at the altar of spore and soil. Chimney smoke curls from mushroom-crown to forest canopy, the only sign of habitation in a glade that keeps secrets. The village hides at ankle height, a world you would miss if you walked through it standing up."
-    }
-  },
-  {
-    "id": "SP07-074",
-    "name": "Dollhouse (Cutaway)",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "full wall",
-    "style": {
-      "aesthetic": "House cross section, peek-inside home, miniature rooms exposed, four-wall transparency, voyeur-dwelling",
-      "form_and_line": "Room dividers, floor-level rectangles, staircase-diagonal, furniture-silhouette grid, doll-scale proportions",
-      "color_palette": "Pastel, Wallpaper-print colors, Toy-furniture Wood, Miniature-carpet Beige, Doll-dress Pink",
-      "lighting_setup": "Flat, even-room illumination, wall-mounted bead-light, room-box shadow, display brightness",
-      "material_texture": "Miniature, dollhouse-wood, doll-fabric, tiny ceramic, paper wallpaper, plastic-toy, painted metal",
-      "render_quality": "Cute, organized, dollhouse-precision, miniature-life, cross-section charm, play-scale perfection",
-      "spatial_distortion": "None",
-      "atmosphere": "Playful, voyeur, tiny-life, peek-through, imaginative-play, ordered-doll-world, childhood-make-believe",
-      "key_features": "No front wall, miniature furniture, tiny staircase, room-by-room view, doll occupants, cross-section edge, tiny chandelier",
-      "creative_brief": "Rooms stack in cross-section honesty, no front wall to hide the miniature dramas unfolding on each floor. Tiny chandeliers drip from popsicle-stick ceilings, furniture arranged for occupants the size of thumbs. The dollhouse reveals everything, a home without secrets, each room a stage waiting for small hands to begin the play."
-    }
-  },
-  {
-    "id": "SP07-076",
-    "name": "Dyson Sphere",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "planet surface",
-    "style": {
-      "aesthetic": "Megastructure around sun, star-engineered shell, Kardashev-civilization monument, solar-harvest sphere, cosmic-engineering",
-      "form_and_line": "Grid, panel-cell hexagons, curved-horizon lattice, inner-surface curvature, star-centered symmetry",
-      "color_palette": "Black silhouette against sun, Solar-flare Orange/Gold, Edge-burn White, Dark-panel Grey, Corona-blue",
-      "lighting_setup": "Backlit, star-brilliance edge, panel-silhouette drama, inner-surface self-illumination, cosmic-scale rim light",
-      "material_texture": "Tech, ultra-structure, carbon-nanotube weave, solar-collector array, heat-sink fin, orbital-engineering metal",
-      "render_quality": "Cosmic, massive, megastructure awe, Dyson-imagination, star-taming civilization, scale-horror sublime",
-      "spatial_distortion": "Curved horizon",
-      "atmosphere": "Epic, sci-fi, civilization-scale, star-furnace, engineering-god, unfathomable-ambition, majestic-isolation",
-      "key_features": "Star inside, panel grid, curved horizon, solar collectors, hexagonal structure, silhouette against star, orbital ring",
-      "creative_brief": "Hexagonal panels curve toward a horizon that bends the wrong way, enclosing a star like a cage built for fire. Silhouettes of civilization-scale engineering trace black geometries against solar brilliance, the sphere a crust wrapped around a captive sun. The structure whispers of intelligences that measure their projects in astronomical units and their patience in stellar lifetimes."
-    }
-  },
-  {
-    "id": "SP07-077",
-    "name": "Ringworld",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "globe",
-    "style": {
-      "aesthetic": "Halo ring, Niven megastructure, orbital-band world, habitable-ring landscape, cosmic-ribbon",
-      "form_and_line": "Upward horizon, arch-in-sky curve, ribbon-land strip, edge-wall lines, sun-shadow band",
-      "color_palette": "Blue, Green strip, Space Black, Ocean-band, Atmosphere-white rim, Shadow-wall Dark",
-      "lighting_setup": "Sunlight, ring-self-shadow, edge-wall glow, atmosphere-scatter blue, void-black contrast",
-      "material_texture": "Atmosphere, continental land, orbital-plate metal, sea-surface, cloud-swirl, mountain-shadow",
-      "render_quality": "Vast, artificial, Niven-scale imagination, ringworld-wonder, habitable-engineering, landscape-megastructure",
-      "spatial_distortion": "Ring shape",
-      "atmosphere": "Awe, scale, world-builder, cosmic-horizon, engineering-sublime, infinite-land, ring-citizen perspective",
-      "key_features": "Sky arch, upward-curving land, edge wall, sun-shadow band, ocean strip, ring curvature, mountain-on-horizon",
-      "creative_brief": "Landscape curves upward into sky, continents bending toward an arch that replaces horizon with the underside of the same world. Edge walls rise like mountain ranges built by hands that thought in planetary scale, holding atmosphere against the void. The ring spins its slow eternity, a world that forgot to be a sphere and became a ribbon instead."
-    }
-  },
-  {
-    "id": "SP07-075",
-    "name": "Escher Staircase",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "logical physics",
-    "style": {
-      "aesthetic": "Impossible architecture, optical-illusion maze, M.C. Escher dream, paradoxical geometry, mental-puzzle space",
-      "form_and_line": "Clean lines, stair-paradox loops, arch-reversal, floor-wall-ceiling ambiguity, isometric-impossible, endless ascent",
-      "color_palette": "Greyscale, Warm paper-cream, Ink-black line, Stone-tone gradient, Shadow-cool Grey, Lithograph-sepia",
-      "lighting_setup": "Flat, lithograph-even, impossible-shadow, ambiguity-light, multiple-light-source confusion, print-studio clarity",
-      "material_texture": "Stone, print-paper grain, lithograph-ink, carved-stone, woodcut-line, etched-detail",
-      "render_quality": "Mind-bending, loop, optical-illusion genius, paradox-realized, impossible-print, brain-puzzle art",
-      "spatial_distortion": "Gravity defiance",
-      "atmosphere": "Confusing, infinite, wonder-perplexed, impossible-calm, mind-trapped, perspective-vertigo, delightful-bafflement",
-      "key_features": "Stairs, impossible loops, multiple gravity, archways, courtyard paradox, ascending-descending figures, lithograph look",
-      "creative_brief": "Stairs climb toward destinations that exist in three conflicting gravity directions, each ascent leading somewhere the architect's sanity should have vetoed. Figures walk upside-down through archways that connect ceilings to floors, the whole scene a polite rebellion against the dictatorship of physics. The print hangs in eternal paradox, a joke told in lithograph that the brain never stops trying to find the punchline of."
-    }
-  },
-  {
-    "id": "SP07-068",
-    "name": "Cardboard Fort",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "solid wall",
-    "style": {
-      "aesthetic": "Box castle, appliance-box architecture, living-room fortress, recycled-carton stronghold, blanket-city",
-      "form_and_line": "Tape lines, box-flap geometry, duct-tape seams, crayon-drawn details, stacked-rectangles, cut-window squares",
-      "color_palette": "Brown cardboard, Packing-tape Tan, Marker-Black, Crayon colors, Shipping-label White",
-      "lighting_setup": "Indoor, living-room lamp, blanket-filtered light, flashlight-fort interior, window-box glow",
-      "material_texture": "Corrugated, kraft fiber, tape-adhesive, crayon wax, marker-ink, blanket-fabric drape",
-      "render_quality": "Childhood, rough, make-believe reality, refrigerator-box magic, blanket-fort nostalgia, kid-crafted love",
-      "spatial_distortion": "Sagging",
-      "atmosphere": "Imaginative, cheap, pretend-kingdom, Saturday-morning, sibling-architect, proud-builder, temporary-realm",
-      "key_features": "Tape, corrugated edges, duct tape, marker drawings, box flaps, blanket roof, crayon windows",
-      "creative_brief": "Tape holds corrugated walls against the entropy of play, each seam a negotiation between structural ambition and the limits of adhesive. Crayon windows drawn with the conviction that a rectangle of blue is all any room needs of the sky. The fort stands in living-room twilight, a sovereignty declared in cardboard and defended with blanket artillery."
-    }
-  },
-  {
-    "id": "SP07-072",
-    "name": "Bottle Ship",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "ocean",
-    "style": {
-      "aesthetic": "Ship inside glass, impossible-in-bottle, maritime miniature, patience-craft, message-in-bottle mystery",
-      "form_and_line": "Glass reflection, hull-curve silhouette, mast-rigging threads, bottle-neck constriction, cork-stopper circle",
-      "color_palette": "Wood, Glass, Rigging-tan, Sail-cream, Sea-blue tint, Brass, Cork-brown",
-      "lighting_setup": "Studio, glass-highlight streak, bottle-curve distortion-glint, display-shelf ambient, window-light catch",
-      "material_texture": "Glass, miniature, cork, thread, wire, tissue-paper sail, tiny-metal, dust-in-bottle",
-      "render_quality": "Detailed, impossible, ship-in-bottle wonder, maritime-craft miracle, patience-art, miniature-perfection",
-      "spatial_distortion": "Distorted by glass",
-      "atmosphere": "Precious, trapped, still-voyage, curio-cabinet, patient-hands, impossible-journey, nautical-dream",
-      "key_features": "Glass bottle, miniature ship, cork, rigging threads, glass distortion, display stand, impossible construction",
-      "creative_brief": "Hull and rigging captured mid-voyage through a bottleneck that denies the ship's original scale. Glass distorts the masts, the whole vessel swimming in a lens-curved miniature ocean of trapped air. The bottle holds not just a ship but the impossible patience of hands that threaded masts through necks narrower than conviction."
-    }
-  },
-  {
-    "id": "SP07-067",
-    "name": "Sandcastle",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "stone",
-    "style": {
-      "aesthetic": "Beach fort, summer sculpture, tidal architecture, ephemeral citadel, shore-built kingdom",
-      "form_and_line": "Drip towers, bucket-mold cylinders, scalloped turrets, battlement ridges, moat-trench circles",
-      "color_palette": "Sand beige, Wet-sand Brown, Shell-white, Shore-gold, Driftwood Grey, Sea-glass fragment",
-      "lighting_setup": "Sunlight, beach-glare, low-afternoon shadow, wave-reflected shimmer, seaside-haze",
-      "material_texture": "Sand grains, wet-packed surface, shell bits, pebble, granular-drip, water-smooth",
-      "render_quality": "Temporary, fragile, beach-day memory, tide-fated beauty, summer-childhood art, grain-by-grain",
-      "spatial_distortion": "Crumbling",
-      "atmosphere": "Summer, fun, beach-joy, tide-watch, salty-breeze, impermanent creation, bucket-and-spade",
-      "key_features": "Grainy, drip-castle towers, moat, battlements, bucket-mold texture, seashell decoration, tide-line",
-      "creative_brief": "Drip towers rise with the organic wonkiness of sand-water slurry surrendered to gravity. Bucket-mold cylinders repeat in endless battlement, each turret a memory of the plastic pail that shaped it. The tide whispers its countdown, the castle magnificent precisely because it cannot last, architecture that borrows its beauty from impermanence."
-    }
-  },
-  {
-    "id": "SP07-058",
-    "name": "Crystal Spire",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "brick, wood",
-    "style": {
-      "aesthetic": "Grown crystal tower, mineral skyscraper, geodesic fantasy, geological architecture, prism spire",
-      "form_and_line": "Sharp facets, hexagonal columns, converging crystal points, geometric shard, pyramid cap",
-      "color_palette": "Purple/Blue/White, Amethyst, Sapphire, Diamond-spark, Deep Crystal Violet, Iridescent flash",
-      "lighting_setup": "Internal refraction, rainbow-dispersion, inner-glow core, facet-edge brilliance, dark-crystal depth",
-      "material_texture": "Glassy, mineral crystal, gemstone face, translucent depth, faceted surface, amethyst geode",
-      "render_quality": "Alien, pure, crystalline-perfection, geode-magic, otherworldly prism, mineral-beauty",
-      "spatial_distortion": "None",
-      "atmosphere": "Cold, magical, gemstone-elegant, ancient-growth, silent-harmonic, other-realm",
-      "key_features": "Translucency, crystal facets, inner glowing core, rainbow refraction, giant geode, prism spire",
-      "creative_brief": "Amethyst facets catch inner light and throw it outward in violet splinters, the tower glowing from a source that geometry itself seems to generate. Crystal columns rise from mineral seed, grown rather than built, architecture at geological speed. The spire sings at frequencies only quartz can hear, a silent music of refraction."
-    }
-  },
-  {
-    "id": "SP07-061",
-    "name": "Ice Palace",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "warm, fire",
-    "style": {
-      "aesthetic": "Frozen castle, glacial fortress, winter queen's palace, crystalline ice-kingdom, permafrost monument",
-      "form_and_line": "Sharp ice, icicle colonnade, frozen-cascade stairs, crystal-spike spires, frost-filigree arch",
-      "color_palette": "White, Cyan, Ice Blue, Aurora Green, Deep-glacier Teal, Diamond-spark",
-      "lighting_setup": "Glittering, aurora-shimmer, ice-internal refraction, moon-on-snow, frozen-sun brilliance",
-      "material_texture": "Ice, snow, frost flower, hoarfrost, compacted snow-block, glacial glass, crystal rime",
-      "render_quality": "Cold, magical, Narnia-Winter beauty, frozen-cathedral grandeur, ice-sculpture perfection",
-      "spatial_distortion": "None",
-      "atmosphere": "Frozen, regal, winter-eternal, enchanted-cold, silent-snow, crystalline-awe, frosted-breath",
-      "key_features": "Icicles, frost crystals, ice chandelier, snowdrift stairs, frozen throne, aurora-lit hall, ice bridge",
-      "creative_brief": "Icicle colonnades catch aurora light and throw it into prismatic rebellion against the monochrome of winter. Frost filigree traces arabesques across transparent walls, cold becoming architect, ice becoming cathedral. The palace stands at absolute zero of warmth and maximum of wonder, a kingdom where beauty is measured in degrees below freezing."
-    }
-  },
-  {
-    "id": "SP07-056",
-    "name": "Underwater City",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "sky, dry",
-    "style": {
-      "aesthetic": "Atlantis/Rapture submerged lost-city grandeur, art-deco depths, leaking domes",
-      "form_and_line": "Domes, coral, bubble-pods, glass-tunnel arteries, cathedral spires, ring-hub geometry",
-      "color_palette": "Blue, Gold, Biolum, Coral Pink, Seaweed Green, Rust-orange decay, Gleaming Brass",
-      "lighting_setup": "Water filtered, blue-ambient abyss, bioluminescent constellation, dome-interior gold glow, emergency red",
-      "material_texture": "Wet stone, glass, copper-green patina, coral-encrust, riveted brass, leaking concrete",
-      "render_quality": "Mysterious, deep, Rapture-dystopia, lost-civilization poetry, water-pressure beauty, abandoned majesty",
-      "spatial_distortion": "None",
-      "atmosphere": "Silent, pressure, awe-mixed-with-dread, water-weight, ghostly, decaying-utopia",
-      "key_features": "Bubbles, glass domes, art deco details, leaking cracks, coral overgrowth, bathysphere docks",
-      "creative_brief": "Art deco brass glimmers through water-dark corridors, luxury drowning in slow deterioration. Coral fingers reach through cracks in domed ceilings, the ocean patiently reclaiming what hubris built on its floor. Bioluminescence pulses in the deep like a city's last heartbeat, beautiful and terminal."
-    }
-  },
-  {
-    "id": "SP07-079",
-    "name": "Monolith",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "detail",
-    "style": {
-      "aesthetic": "2001 slab, alien artifact, absolute-geometry presence, evolution-catalyst object, cosmic-marker",
-      "form_and_line": "Sharp rectangle, perfect-edges, zero-feature surface, 1:4:9 proportion, impossible-vertical, crisp-corners",
-      "color_palette": "Matte Black, Absolute-void Black, Light-absorbing surface, Starlight-reflection edge, Moon-surface Grey",
-      "lighting_setup": "Absorbs light, anti-reflective void, sun-alignment glow, stark-side shadow, dawn-touch edge",
-      "material_texture": "Perfectly smooth, non-material surface, frictionless, impossibly-dense, alien-substance, crystalline-matte",
-      "render_quality": "Alien, minimal, Kubrick-mystery, absolute-simplicity, cosmic-enigma, evolution-precision",
-      "spatial_distortion": "None",
-      "atmosphere": "Ominous, mystery, cosmic-wonder, evolutionary-pause, unknowable-intelligence, silent-revelation, transcendent-fear",
-      "key_features": "1:4:9 ratio, perfectly black, sharp edges, featureless surface, rectangular slab, alien presence, vertical dominance",
-      "creative_brief": "Absolute rectangle interrupts landscape with the violence of perfect geometry, a shape that does not belong to any geology humans have named. The surface drinks light without returning it, matte black absorbing every question the universe thought to ask. The slab simply is, an assertion of presence that predates language, waiting for the apes below it to touch it and learn to kill."
-    }
-  },
-  {
-    "id": "SP07-063",
-    "name": "Necropolis",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "life, green",
-    "style": {
-      "aesthetic": "City of dead, tomb-city, death empire, mausoleum megalopolis, soul-river architecture",
-      "form_and_line": "Sharp spires, obelisk avenues, crypt blocks, tomb-grid geometry, sarcophagus rows",
-      "color_palette": "Green mist, Black stone, Bone-white marble, Faded Gold, Crypt-shadow Purple, Death-rust Red",
-      "lighting_setup": "Eerie Green, witch-light glow, corpse-candle, moon-through-fog, underworld-ember, soul-flame",
-      "material_texture": "Stone, bone, crumbling masonry, weathered marble, iron gate, skull-ornament, ash",
-      "render_quality": "Evil, dark, tomb-city epic, death-cult architecture, sepulchral grandeur, gothic-necropolis",
-      "spatial_distortion": "None",
-      "atmosphere": "Dread, death, eternal-silence, soul-heavy, grave-chill, mourner's-land, un-living stillness",
-      "key_features": "Green fog, obelisks, sarcophagi, death runes, skull motifs, crypt entrances, tomb-pyramids",
-      "creative_brief": "Obelisks cast green-tinted shadows across avenues paved with the names of the entombed. Soul-flame flickers in brass lanterns, each light a small rebellion against the empire of permanent dark. The city extends in all directions, infinite cemetery, architecture built for occupants who will never complain about the square footage."
-    }
-  },
-  {
-    "id": "SP07-053",
-    "name": "Floating Castle",
-    "category": "1. Residential Interiors",
-    "negativePrompt": "grounded",
-    "style": {
-      "aesthetic": "Castle in sky, celestial fortress, cloud realm, Laputa vision, aerial kingdom",
-      "form_and_line": "Vertical towers, floating-island massing, air-bridge spans, waterfall-fall lines, spiral spires",
-      "color_palette": "White, Blue sky, Cloud-silver, Golden sun edge, Waterfall-cascade White, Lapis above",
-      "lighting_setup": "Bright sun, cloud-reflected brilliance, angel-ray beams, blue-sky ambient, golden-edge rim light",
-      "material_texture": "Stone, clouds, gossamer, crystalline spire, floating rock, wisp-vapor base",
-      "render_quality": "Dreamy, impossible, Miyazaki-beauty, sky-castle wonder, unfettered imagination, weightless grandeur",
-      "spatial_distortion": "Floating rocks",
-      "atmosphere": "Magical, high, sky-kingdom, impossible-dream, wind-borne, breathtakingly free",
-      "key_features": "Clouds below, floating islands, waterfalls into void, air bridges, tallest spire, blue sky around",
-      "creative_brief": "Spires pierce cloud layer like needles stitching heaven to earth with stone thread. Waterfalls drop into blue nothing, liquid abandoning its loyalty to gravity for the freedom of falling forever. The castle floats as if the ground beneath it simply forgot to be there, an architecture of refusal."
-    }
-  }
+    id: 'SP07-016',
+    name: 'Bauhaus Interior',
+    category: '1. Residential Interiors',
+    negativePrompt: 'ornate, cluttered',
+    style: {
+      aesthetic:
+        'Functional modernist room, form follows function, workshop aesthetic, design-for-all',
+      form_and_line:
+        'Geometric shapes, pure circle and square, tubular arcs, flat planes intersect, grid logic',
+      color_palette:
+        'Primary colors + Black/White, Clean Red, Canary Yellow, Cobalt Blue, Warm Grey',
+      lighting_setup:
+        'Even, functional, task-focused spots, floating globe pendants, industrial-grade clarity',
+      material_texture:
+        'Steel, glass, leather, bent plywood, canvas webbing, linoleum, chrome plate',
+      render_quality:
+        'Design classic, rational, German-modern clarity, timeless efficiency, honest construction',
+      spatial_distortion: 'None',
+      atmosphere: 'Smart, artistic, clean, workshop-fresh, purpose-driven, intellectual calm',
+      key_features:
+        'Tubular steel, primary color accents, cantilever chairs, isometric clarity, interlocking forms',
+      creative_brief:
+        'Primary colors assert themselves against white space with the confidence of manifestos made visible. Steel arcs through air with industrial grace, every tube and plane answering to function alone. Beauty emerges not from decoration but from the honesty of things being exactly what they are.',
+    },
+  },
+  {
+    id: 'SP07-004',
+    name: 'Scandinavian Hygge',
+    category: '1. Residential Interiors',
+    negativePrompt: 'dark, cold, metal, plastic',
+    style: {
+      aesthetic:
+        'Scandinavian hygge interior style emphasizing thermal comfort minimalism, soft domestic intimacy, and restorative calm',
+      form_and_line:
+        'Low-profile furniture rhythm, rounded edge gentleness, textile-heavy layering, and uncluttered ergonomic composition',
+      color_palette:
+        'Soft whites and creams with pale timber tones, muted sage-rose accents, and low-contrast warmth harmonics',
+      lighting_setup:
+        'Candle-practical glow networks, diffuse window softness, warm pendants, and evening comfort luminance balance',
+      material_texture:
+        'Knit wool tactility, sheepskin softness, matte ceramics, oiled light wood grain, and brushed natural-fiber surfaces',
+      render_quality:
+        'Clean Nordic editorial finish with cozy readability, restrained detailing, and comfort-first visual hierarchy',
+      spatial_distortion:
+        'Neutral spatial behavior with intimacy built through layered soft materials rather than geometric exaggeration',
+      atmosphere: 'Comforting, quiet, warm, restorative, safe',
+      key_features:
+        'Thermal-comfort light logic, soft textile dominance, pale timber calm, uncluttered hygge composition',
+      creative_brief:
+        'Keep identity centered on comfort architecture: soft luminance, natural textile tactility, and low-contrast Nordic restraint should remain transferable beyond winter-home narratives.',
+    },
+  },
+  {
+    id: 'SP07-018',
+    name: 'Farmhouse Chic',
+    category: '1. Residential Interiors',
+    negativePrompt: 'modern, sleek, metal',
+    style: {
+      aesthetic: 'Modern barn interior, rural refinement, whitewashed nostalgia, homestead grace',
+      form_and_line:
+        'Shiplap walls, gabled ceilings, apron-front lines, open shelving, X-brace details',
+      color_palette: 'White, Cream, Wood, Galvanized Silver, Soft Linen, Black Iron accent',
+      lighting_setup: 'Bright airy, oversized pendants, gooseneck barn lights, morning window wash',
+      material_texture:
+        'Distressed wood, linen, chalk-painted furniture, cotton ticking, woven baskets, galvanized metal',
+      render_quality: 'Magnolia farmhouse editorial, family, clean, Chip & Joanna warmth',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Welcoming, soft, home, gathered-around-table, Sunday-morning peace, real-family living',
+      key_features:
+        'Sliding barn door, shiplap accent wall, farmhouse sink, open shelving, beadboard ceiling',
+      creative_brief:
+        'Shiplap stretches toward vaulted ceilings like Sunday hymns made visible, whitewashed nostalgia bright with fresh coffee light. Distressed surfaces tell gentle lies about age, every scuff a purchased memory. The space wraps around family like a quilt, each rough beam a promise that imperfect things hold together.',
+    },
+  },
+  {
+    id: 'SP07-002',
+    name: 'Industrial Loft',
+    category: '1. Residential Interiors',
+    negativePrompt: 'cozy, soft, carpet, wallpaper',
+    style: {
+      aesthetic:
+        'Industrial adaptive-reuse style centered on structural honesty, patinated utility, and refined rawness',
+      form_and_line:
+        'Exposed load-bearing geometry, truss and conduit rhythm, riveted junction articulation, long-span volumetric framing',
+      color_palette:
+        'Brick oxides, concrete neutrals, graphite metals, oxidized copper notes, muted amber warmth',
+      lighting_setup:
+        'High-aperture daylight shafts with warm practical pools, shadow zoning, and contrast-led volumetric depth',
+      material_texture:
+        'Board-formed concrete, rough masonry grain, weathered steel oxidation, reclaimed timber wear, matte leather accents',
+      render_quality:
+        'High-fidelity industrial-chic finish balancing grit legibility with editorial polish and material truthfulness',
+      spatial_distortion:
+        'Perspective stability with scale-forward depth, emphasizing structural rhythm over decorative clutter',
+      atmosphere: 'Grounded, utilitarian, creative, mature, atmospheric',
+      key_features:
+        'Structure-as-ornament language, patina hierarchy, utility-driven composition, adaptive-reuse material choreography',
+      creative_brief:
+        'Preserve identity through exposed structural systems and patinated material contrast, treating utility elements as primary visual grammar independent of any specific loft narrative.',
+    },
+  },
+  {
+    id: 'SP07-005',
+    name: 'Bohemian Eclectic',
+    category: '1. Residential Interiors',
+    negativePrompt: 'minimalist, empty, sterile',
+    style: {
+      aesthetic:
+        'Bohemian-eclectic style defined by collected layering, botanical softness, and artisanal global texture interplay',
+      form_and_line:
+        'Organic asymmetry, draped textile cascades, rounded handcrafted silhouettes, vegetal flow lines, intentionally uneven composition balance',
+      color_palette:
+        'Warm earth foundations with turquoise-indigo accents, spice pigments, terracotta anchors, and patterned chroma punctuation',
+      lighting_setup:
+        'Filtered natural dappling with low-intensity ambient practicals, lantern diffusion, and soft shadow overlap',
+      material_texture:
+        'Woven natural fibers, hand-knotted rugs, macramé cords, raw linen folds, carved wood micro-relief, leaf translucency',
+      render_quality:
+        'Richly layered boho editorial finish with tactile density, controlled visual clutter, and cohesive material harmony',
+      spatial_distortion:
+        'Gentle organic depth drift driven by plants and textiles, avoiding rigid axial symmetry',
+      atmosphere: 'Free-spirited, warm, lived-in, creative, worldly',
+      key_features:
+        'Layered artifact curation, botanical-textile rhythm, asymmetrical comfort composition, handcrafted surface diversity',
+      creative_brief:
+        'Build the preset around layered artisan materials and botanical flow, keeping eclectic curation and tactile warmth as transferable style anchors rather than a fixed traveler-room vignette.',
+    },
+  },
+  {
+    id: 'SP07-017',
+    name: 'Maximalist Decor',
+    category: '1. Residential Interiors',
+    negativePrompt: 'empty, white, minimal',
+    style: {
+      aesthetic:
+        'Pattern on pattern room, controlled chaos, collected gallery, riotous personality',
+      form_and_line:
+        'Complex layers, framed overload, busy skirting, curio-shelf density, textile-on-textile',
+      color_palette:
+        'Saturated jewel tones, Emerald, Sapphire, Ruby, Amethyst, Peacock Teal, Coral',
+      lighting_setup:
+        'Warm lamps everywhere, picture lights, chandelier glitter, sconce pools, dimmer-warm glow',
+      material_texture:
+        'Velvet, wallpaper, rugs, chintz, embroidered silk, gilt frame, cloisonné, book spines',
+      render_quality:
+        'Eclectic, busy, rich, more-is-more, layered opulence, collected over generations',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Exciting, personal, loud, intoxicating, treasure-gallery, unapologetic abundance',
+      key_features:
+        'No empty space, gallery walls floor to ceiling, layered rugs, pattern mixing, objet collections',
+      creative_brief:
+        'Pattern collides with pattern in joyful anarchy, every surface a shout against the tyranny of restraint. Collections spill across surfaces like civilizations compressed into objects, each shelf a small museum of personal obsession. The room vibrates at the frequency of too-much, and refuses to apologize.',
+    },
+  },
+  {
+    id: 'SP07-019',
+    name: 'Art Nouveau Interior',
+    category: '1. Residential Interiors',
+    negativePrompt: 'straight lines',
+    style: {
+      aesthetic:
+        '1900s organic room, Belle Epoque bloom, nature-as-structure, total-art Gesamtkunstwerk',
+      form_and_line:
+        'Whiplash curves, tendril stair rails, floral doorframes, sinuous glass, flowing wrought iron',
+      color_palette: 'Sage, Gold, Wood, Peacock Blue, Lilac, Amber glass, Moss green',
+      lighting_setup:
+        'Stained glass light, Tiffany-lamp warmth, lotus-petal sconces, insect-wing glow',
+      material_texture:
+        'Carved wood, glass, wrought iron, iridescent favrile glass, patinated bronze, floral marquetry',
+      render_quality: 'Horta decorative flowing turn-of-century, whiplash beauty',
+      spatial_distortion: 'Melting shapes',
+      atmosphere: 'Romantic, nature, soft, enchanted, organic rhythm, floral intoxication',
+      key_features:
+        'Curved wood, floral motifs everywhere, tendril staircase, stained glass skylight, organic lamp forms',
+      creative_brief:
+        'Wrought iron grows like vines up the stairwell, tendrils of metal blooming into lamp shades and door handles. Every surface curves away from geometry, the room a garden that learned to speak architecture. Light passes through iris-colored glass, falling on wood carved into the shape of wind.',
+    },
+  },
+  {
+    id: 'SP07-003',
+    name: 'Mid-Century Modern',
+    category: '1. Residential Interiors',
+    negativePrompt: 'antique, victorian, industrial',
+    style: {
+      aesthetic:
+        'Mid-century modern interior style with atomic optimism, sculptural domesticity, and restrained retro sophistication',
+      form_and_line:
+        'Organic modern curves, tapered structural elements, floating cabinetry lines, and iconically balanced furniture silhouettes',
+      color_palette:
+        'Teak-walnut browns with mustard-olive accents, burnt orange punctuation, and warm neutral support fields',
+      lighting_setup:
+        'Warm ambient lamp pools, period pendant glow, filtered afternoon daylight, and low-contrast hospitality warmth',
+      material_texture:
+        'Veneered wood grain clarity, tweed and wool tactility, molded plywood smoothness, and light metal detailing',
+      render_quality:
+        'Editorial retro-modern visualization with clean compositional discipline and materially rich but controlled nostalgia',
+      spatial_distortion:
+        'Stable proportions with gentle curvature emphasis to preserve sculptural furniture readability',
+      atmosphere: 'Warm, stylish, nostalgic, social, composed',
+      key_features:
+        'Atomic-modern silhouette language, wood-textile harmony, tapered geometry cadence, retro editorial balance',
+      creative_brief:
+        'Preserve this preset through iconic mid-century proportion logic and warm material choreography, keeping atomic-era optimism as a transferable mood rather than a fixed period scene.',
+    },
+  },
+  {
+    id: 'SP07-020',
+    name: 'Memphis Design',
+    category: '1. Residential Interiors',
+    negativePrompt: 'boring, beige',
+    style: {
+      aesthetic:
+        '80s postmodern room, Italian radical design, Sottsass irreverence, anti-taste manifesto',
+      form_and_line:
+        'Squiggles and triangles, totemic shelves, asymmetrical bookcases, confetti geometry, playful offsets',
+      color_palette:
+        'Pastel + Black/White pattern, Bubblegum Pink, Teal, Traffic Yellow, Vivid Orange',
+      lighting_setup:
+        'Bright studio, neon accents, colored bulb glow, gallery-track spots, plastic-filtered light',
+      material_texture: 'Laminate, plastic, terrazzo chip, printed Formica, glossy enamel, rubber',
+      render_quality: 'Playful, weird, retro, radical-postmodern, joyous clash, ironic surface',
+      spatial_distortion: 'Asymmetry',
+      atmosphere: 'Fun, chaotic, art, rebellious, child-like, design manifesto energy',
+      key_features:
+        'Bacterial pattern, asymmetrical shelving, squiggle mirror, color-blocked surfaces, totemic plinths',
+      creative_brief:
+        'Squiggles disrupt the tyranny of the straight line, color blocking declares war on beige conformity. Shelves tilt at impossible angles like the whole room just discovered it has a sense of humor. Design becomes manifesto, every laminate surface a joke told at the expense of seriousness.',
+    },
+  },
+  {
+    id: 'SP07-001',
+    name: 'Modern Minimalist',
+    category: '1. Residential Interiors',
+    negativePrompt: 'clutter, ornate, pattern, dark',
+    style: {
+      aesthetic: 'Clean white open space, airy volume, sculptural emptiness, light as material',
+      form_and_line:
+        'Straight horizontal lines, floating planes, silent geometry, invisible junctions',
+      color_palette: 'White, Warm Beige, Cool Grey, Muted Sand, Pale Oak',
+      lighting_setup:
+        'Soft diffuse daylight, shadowless ambient, luminous ceiling, hidden cove glow',
+      material_texture: 'Smooth plaster, matte paint, honed stone, micro-cement, tactile stucco',
+      render_quality: 'Architectural Digest design-editorial clean, aspirational perfection',
+      spatial_distortion: 'None',
+      atmosphere: 'Calm, spacious, expensive, meditative, weightless, curated stillness',
+      key_features: 'Empty space, hidden storage, frameless glazing, floating staircase',
+      creative_brief:
+        'Silence acquires geometry, absence becoming presence through the discipline of subtraction. Light pools and recedes across seamless planes, each surface a meditation on what was removed. The frame exhales stillness, every void as intentional as the forms that define it.',
+    },
+  },
+  {
+    id: 'SP07-027',
+    name: 'Tudor Revival',
+    category: '1. Residential Interiors',
+    negativePrompt: 'modern',
+    style: {
+      aesthetic:
+        'Tudor-revival residential style with half-timber heritage expression, romantic asymmetry, and hearth-centered historic warmth',
+      form_and_line:
+        'Exposed timber grid overlays, steep gable silhouettes, irregular ridge rhythm, leaded-diamond fenestration, and chimney vertical anchors',
+      color_palette:
+        'Dark stained wood against limewash whites, terracotta earth notes, moss-lichen greens, and warm ochre weathering tones',
+      lighting_setup:
+        'Soft overcast daylight with warm interior hearth glow, leaded-window diffusion, and gentle evening candle accents',
+      material_texture:
+        'Aged timber grain, lime plaster chalkiness, handmade brick variation, leaded glass facets, and weathered roof textures',
+      render_quality:
+        'Heritage-rich visualization balancing storybook softness with authentic historical construction detail',
+      spatial_distortion:
+        'Mild picturesque irregularity in beam and ridge alignment to reinforce handcrafted pre-modern character',
+      atmosphere: 'Rooted, warm, nostalgic, protective, intimate',
+      key_features:
+        'Half-timber façade grammar, steep gable profile, leaded window rhythm, chimney-hearth vertical identity',
+      creative_brief:
+        'Keep this preset defined by timber-lime contrast, picturesque asymmetry, and hearth-driven warmth, preserving Tudor revival language beyond any specific cottage narrative.',
+    },
+  },
+  {
+    id: 'SP07-021',
+    name: 'Deconstructivism',
+    category: '1. Residential Interiors',
+    negativePrompt: 'box, symmetrical',
+    style: {
+      aesthetic:
+        'Deconstructivist architectural style focused on controlled instability, anti-orthogonal form language, and sculptural kinetic tension',
+      form_and_line:
+        'Folded planes, fractured mass intersections, torsion-like profiles, displaced axes, and non-linear envelope continuity',
+      color_palette:
+        'Brushed titanium and steel neutrals with warm mineral countertones, mirrored sky reflections, and restrained metallic highlights',
+      lighting_setup:
+        'Sharp angular shadow cuts, reflective glint choreography, and dynamic sun-tracking contrast across faceted surfaces',
+      material_texture:
+        'Metal cladding seams, zinc-titanium panel grain, glass specular fracture, and high-precision structural skin detailing',
+      render_quality:
+        'High-end sculptural architecture visualization with fluid mass readability and disciplined anti-symmetry coherence',
+      spatial_distortion:
+        'Intentional geometric dislocation with twisting volumetric vectors and collapsing-perspective cues',
+      atmosphere: 'Disorienting, cerebral, energetic, provocative, audacious',
+      key_features:
+        'Anti-right-angle composition, folded metallic envelope, displaced volume grammar, kinetic mass choreography',
+      creative_brief:
+        'Keep this preset anchored in deconstructive geometry logic: fractured axes, folded metallic skins, and controlled spatial disorientation should define the style independent of any specific landmark reference.',
+    },
+  },
+  {
+    id: 'SP07-025',
+    name: 'Bauhaus Architecture',
+    category: '1. Residential Interiors',
+    negativePrompt: 'decoration, roof tiles',
+    style: {
+      aesthetic:
+        'Bauhaus modernist style with machine-age rationalism, functional clarity, and disciplined anti-ornamental expression',
+      form_and_line:
+        'Cubic massing, ribbon windows, planar asymmetry, flat-roof horizontals, and exposed structural legibility',
+      color_palette:
+        'White-black-gray base with steel-blue neutrals and sparse signal-color accents for functional hierarchy',
+      lighting_setup:
+        'Even daylight distribution, low-drama shadows, strip-window rhythm, and clarity-first luminance balance',
+      material_texture:
+        'Mineral render matte, steel-frame precision, glass plane clarity, linoleum tactility, and tubular metal detailing',
+      render_quality:
+        'Crisp modernist visualization prioritizing proportion discipline, material truth, and graphic compositional order',
+      spatial_distortion:
+        'Geometric stability with orthogonal rigor and asymmetry handled through measured mass relationships',
+      atmosphere: 'Rational, calm, precise, progressive, utilitarian',
+      key_features:
+        'Function-first composition, ribbon glazing language, flat-roof planar order, restrained signal accents',
+      creative_brief:
+        'Preserve identity through functional hierarchy and geometric discipline: anti-ornamental clarity, structural legibility, and measured asymmetry are the transferable core of this preset.',
+    },
+  },
+  {
+    id: 'SP07-010',
+    name: 'Futuristic Pod',
+    category: '1. Residential Interiors',
+    negativePrompt: 'old, dirty, square corners',
+    style: {
+      aesthetic:
+        'Neo-futurist habitat style with seamless ergonomics, ambient intelligence, and high-purity spatial minimalism',
+      form_and_line:
+        'Continuous shell geometry, cornerless flow transitions, integrated interface planes, and biomorphic module repetition',
+      color_palette:
+        'Clinical white foundations with cool cyan-blue light channels, holographic silver mids, and sparse magenta signal accents',
+      lighting_setup:
+        'Embedded indirect luminance, adaptive ambient gradients, responsive zone highlights, and soft panel-based glow architecture',
+      material_texture:
+        'Composite smart surfaces, matte-gloss polymer contrast, low-friction glass skins, touch-reactive interface finishes',
+      render_quality:
+        'Ultra-clean futuristic interior rendering with precision surfacing, controlled bloom, and sterile-detail clarity',
+      spatial_distortion:
+        'Smooth axial continuity with no abrupt depth breaks, reinforcing weightless circulation and frictionless occupancy',
+      atmosphere: 'Sterile, serene, advanced, controlled, weightless',
+      key_features:
+        'Seamless shell language, integrated interface lighting, adaptive ambient systems, cornerless ergonomic flow',
+      creative_brief:
+        'Preserve identity through seamless volumetric continuity and intelligent ambient lighting behavior; the style should communicate post-friction futurity regardless of specific room program.',
+    },
+  },
+  {
+    id: 'SP07-026',
+    name: 'Googie Architecture',
+    category: '1. Residential Interiors',
+    negativePrompt: 'square, boring',
+    style: {
+      aesthetic:
+        'Googie retro-futurist style with atomic-age optimism, velocity-driven geometry, and exuberant commercial-modern spectacle',
+      form_and_line:
+        'Upswept cantilevers, boomerang vectors, starburst motifs, flying-V canopies, and angular glazing rhythms',
+      color_palette:
+        'Neon-bright primaries with chrome neutrals, turquoise-red anchors, buttery yellow highlights, and atomic orange punches',
+      lighting_setup:
+        'High-signage neon glow, backlit plastic diffusion, marquee-like edge lighting, and animated luminance sequencing',
+      material_texture:
+        'Polished chrome, terrazzo sparkle, Formica gloss, painted stucco grain, and crisp glazed surface reflections',
+      render_quality:
+        'High-energy mid-century retro-future rendering with kitsch precision and polished optimism-forward finish',
+      spatial_distortion:
+        'Directional boomerang skew and upswept perspective emphasis to imply constant forward motion',
+      atmosphere: 'Playful, optimistic, fast, theatrical, nostalgic',
+      key_features:
+        'Velocity geometry language, neon-chrome contrast, starburst ornament grammar, exuberant cantilever choreography',
+      creative_brief:
+        'Keep the preset identifiable through atomic-age velocity forms and neon-chrome exuberance; prioritize optimistic retro-future geometry over any fixed roadside venue narrative.',
+    },
+  },
+  {
+    id: 'SP07-006',
+    name: 'Brutalist Architecture',
+    category: '1. Residential Interiors',
+    negativePrompt: 'delicate, painted, wood, glass',
+    style: {
+      aesthetic:
+        'Brutalist monumental style with unapologetic mass, structural frankness, and civic-institutional gravity',
+      form_and_line:
+        'Monolithic block stacking, deep recess cuts, cantilever slabs, hard orthogonal silhouettes, and shadow-carved edges',
+      color_palette:
+        'Concrete gray spectrum with charcoal and slate anchors, damp ash variation, and low-chroma mineral depth',
+      lighting_setup:
+        'Hard-angle sunlight, deep shadow wells, high-contrast façade articulation, and recess-emphasizing directional light',
+      material_texture:
+        'Board-formed concrete imprint, tie-hole cadence, exposed aggregate roughness, and weathered mineral patina',
+      render_quality:
+        'Monumental architectural rendering emphasizing material mass, tectonic clarity, and disciplined sculptural austerity',
+      spatial_distortion:
+        'Stable monumental perspective with mass-dominant depth compression and proportionally heavy visual balance',
+      atmosphere: 'Stoic, severe, powerful, enduring, contemplative',
+      key_features:
+        'Monolithic concrete hierarchy, boardmark rhythm, deep-recess shadow logic, tectonic cantilever expression',
+      creative_brief:
+        'Define this preset through material mass and shadow tectonics: raw concrete imprint language, monolithic composition, and institutional permanence are the transferable identity.',
+    },
+  },
+  {
+    id: 'SP07-007',
+    name: 'Art Deco',
+    category: '1. Residential Interiors',
+    negativePrompt: 'minimal, rustic, plain',
+    style: {
+      aesthetic:
+        'Art Deco glamour style with geometric opulence, metallic luxury contrast, and high-society theatrical polish',
+      form_and_line:
+        'Stepped ziggurat profiles, chevron rhythms, sunburst motifs, and symmetrical ornament hierarchies with strong axial control',
+      color_palette:
+        'Black-gold dominance with emerald and deep navy enrichments, ivory balancing planes, and chrome highlight accents',
+      lighting_setup:
+        'Dramatic uplight architecture, mirrored bounce play, sconce-and-chandelier glow layering, and marquee-like brilliance nodes',
+      material_texture:
+        'Polished brass sheen, marble veining, velvet softness, lacquer depth, etched-glass detailing, and chrome inlay precision',
+      render_quality:
+        'Luxe deco visualization with crisp ornamental readability and cinematic night-glamour finish',
+      spatial_distortion:
+        'Structured symmetry with vertical accent pulls to reinforce grandeur and formal theatrical presence',
+      atmosphere: 'Opulent, glamorous, dramatic, celebratory, nocturnal',
+      key_features:
+        'Geometric ornament grammar, metallic-luxury contrast, stepped silhouette architecture, mirror-light amplification',
+      creative_brief:
+        'Preserve Art Deco identity through geometric ornament hierarchy and metallic-material drama, keeping the style transferable beyond party or speakeasy storytelling.',
+    },
+  },
+  {
+    id: 'SP07-028',
+    name: 'Sustainable Green',
+    category: '1. Residential Interiors',
+    negativePrompt: 'concrete, industrial',
+    style: {
+      aesthetic:
+        'Vertical forest building, living architecture, Bosco Verticale, breathing tower, planted habitat',
+      form_and_line:
+        'Organic + Grid, staggered planters, stepped terraces, living balconies, vegetated fins',
+      color_palette: 'Green plants, Wood, Sky reflection, Soil Brown, Seasonal Blossom color',
+      lighting_setup:
+        'Natural sun, leaf-filtered dapple, photosynthesis glow, seasonal-angle shadow',
+      material_texture:
+        'Leaves, timber, living bark, bamboo cladding, rammed earth, recycled aggregate',
+      render_quality:
+        'Eco-friendly, alive, biophilic wellness, carbon-negative beauty, nature-reclaimed',
+      spatial_distortion: 'Overgrown',
+      atmosphere: 'Healthy, future, fresh, oxygen-rich, symbiotic, planet-healing optimism',
+      key_features:
+        'Trees on balcony, green walls, integrated planters, solar shading, rainwater harvesting, biodiversity habitat',
+      creative_brief:
+        'Trees emerge from balconies like the forest is reclaiming its territory one floor at a time. Glass reflects green, a tower that breathes, filtering city air through a million leaves. The building stands as a treaty between vertical ambition and horizontal ecology, each terrace a peace offering to the biosphere.',
+    },
+  },
+  {
+    id: 'SP07-030',
+    name: 'Soviet Constructivist',
+    category: '1. Residential Interiors',
+    negativePrompt: 'ornate, capitalist',
+    style: {
+      aesthetic:
+        'Geometric concrete block, revolutionary architecture, communal machine, socialist monument',
+      form_and_line:
+        'Bold diagonals, intersecting cylinders, floating cantilevers, pilotis grid, dynamic tension',
+      color_palette:
+        'Grey, Red accents, Raw Concrete, Faded Ochre, Industrial Black, Propaganda Crimson',
+      lighting_setup: 'Overcast, low-angle drama, stark shadow projection, factory-window rhythm',
+      material_texture: 'Concrete, rough-cast render, steel frame, glass-block, bolted plate',
+      render_quality:
+        'Utopian, stark, heavy, revolutionary monument, collectivist scale, heroic industry',
+      spatial_distortion: 'Floating masses',
+      atmosphere:
+        'Serious, collective, revolutionary, communal purpose, factory-hall echo, historic weight',
+      key_features:
+        'Cylinder/Cube, floating volumes, exposed structure, sky-bridge walkways, bold red accents',
+      creative_brief:
+        'Cylinders and cubes crash into each other like ideas at a revolutionary committee meeting. Red accents cut through grey like a banner through Soviet sky, color as declaration. The building stands as a manifesto in concrete, promising collective futures that never arrived, still waiting.',
+    },
+  },
+  {
+    id: 'SP07-024',
+    name: 'Victorian Painted Lady',
+    category: '1. Residential Interiors',
+    negativePrompt: 'plain, grey',
+    style: {
+      aesthetic:
+        'San Francisco house, candy-colored heritage, architectural confection, gingerbread fantasy',
+      form_and_line:
+        'Gingerbread trim, spindle work, fish-scale shingles, bay windows, gable ornament, tall narrow',
+      color_palette: 'Pastel Blue/Pink/Yellow, Lavender, Mint Green, Cream trim, Dusty Rose',
+      lighting_setup:
+        'Sunny day, San Francisco fog-diffused, golden-hour facade glow, painted-lady sparkle',
+      material_texture:
+        'Wood siding, painted redwood, scroll-sawn ornament, turned spindles, bracketed eaves',
+      render_quality:
+        'Charming, detailed, dollhouse, postcard-perfect, neighborhood jewel, color-pop delight',
+      spatial_distortion: 'None',
+      atmosphere: 'Happy, nostalgic, cute, cheerful, preserved-history, whimsical pride',
+      key_features:
+        'Turret, gingerbread trim, three-color paint scheme, bay windows, fish-scale shingles',
+      creative_brief:
+        'Gingerbread trim frills against fog like lace on a widow, every spindle and fish-scale shingle a small act of joy against grey skies. Pastel paint schemes announce the house before you see it, a chromatic argument that homes should sing. The painted lady stands dressed for a party that never ends, San Francisco her eternal ballroom.',
+    },
+  },
+  {
+    id: 'SP07-008',
+    name: 'Japanese Zen',
+    category: '1. Residential Interiors',
+    negativePrompt: 'clutter, western, plastic',
+    style: {
+      aesthetic:
+        'Japanese zen-wabi interior style with disciplined emptiness, seasonal restraint, and contemplative material quietude',
+      form_and_line:
+        'Modular tatami grid logic, shoji and fusuma linear cadence, alcove focal minimalism, and low horizon furniture profiles',
+      color_palette:
+        'Rice-paper whites, bamboo and cedar warms, tatami greens, sumi-charcoal accents, and muted indigo depth notes',
+      lighting_setup:
+        'Shoji-filtered daylight diffusion, lantern-soft ambient pools, alcove emphasis lighting, and seasonal shadow subtlety',
+      material_texture:
+        'Tatami fiber weave, raw wood grain, hand-troweled clay matte, paper translucency, and silk-soft accent surfaces',
+      render_quality:
+        'Refined minimalist rendering with high material calm, balanced negative space, and meditative visual precision',
+      spatial_distortion:
+        'Neutral geometric proportioning with depth expressed through layered screens and controlled emptiness',
+      atmosphere: 'Meditative, serene, disciplined, reverent, still',
+      key_features:
+        'Modular calm composition, shoji-tatami grammar, seasonal light subtlety, wabi material restraint',
+      creative_brief:
+        'Keep this preset defined by disciplined emptiness and modular natural material rhythm; meditative screen-filtered light and restrained focal gestures should drive style transferability.',
+    },
+  },
+  {
+    id: 'SP07-029',
+    name: 'Adobe/Pueblo',
+    category: '1. Residential Interiors',
+    negativePrompt: 'sharp edges, wood',
+    style: {
+      aesthetic:
+        'Desert mud house, earthen sanctuary, pueblo revival, timeless Southwest, hand-shaped dwelling',
+      form_and_line:
+        'Rounded corners, stepped massing, thick-wall masses, parapet silhouettes, organic contours',
+      color_palette: 'Terracotta, Sand, Warm Ochre, Sage brush, Deep Cinnamon, Sunbaked Clay',
+      lighting_setup:
+        'Harsh desert sun, deep window-reveal shadow, nicho candle glow, kiva fireplace flicker',
+      material_texture:
+        'Mud plaster, hand-troweled adobe, vigas wood, saltillo tile, rough-hewn lintels',
+      render_quality:
+        'Natural, earthy, solid, timeless-pueblo, sun-baked authenticity, ancestral craft',
+      spatial_distortion: 'Handmade walls',
+      atmosphere: 'Warm, dry, grounded, ancient-land, pueblo-silent, earth-connected peace',
+      key_features:
+        'Wood beams (vigas), rounded edges, kiva fireplace, nicho alcoves, bancos, ladder access',
+      creative_brief:
+        'Hands shaped these walls, each undulation a fingerprint of the maker pressed into mud and time. Vigas stretch across ceilings like ribs of earth made visible, holding centuries of desert silence above. The dwelling emerges from the ground as if it grew there, earthen architecture remembering its origin in soil.',
+    },
+  },
+  {
+    id: 'SP07-032',
+    name: 'Subway Station',
+    category: '1. Residential Interiors',
+    negativePrompt: 'clean, sunny',
+    style: {
+      aesthetic: 'NYC/London grime-worn metropolitan underground, tile echo, commuter solitude',
+      form_and_line:
+        'Perspective tunnel, arched vault, column rhythm, vanishing track lines, signage grid',
+      color_palette:
+        'Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone',
+      lighting_setup:
+        'Fluorescent flicker, platform-edge pools, advertising-light glare, tunnel-black void',
+      material_texture:
+        'Tile, dirt, ceramic glaze, metal rail, chewing-gum pavement, peeling paint',
+      render_quality:
+        'Urban, gritty, public, transit-realism, commuter poetry, damp-platform grime',
+      spatial_distortion: 'Motion blur train',
+      atmosphere:
+        'Lonely, transit, anonymous, platform-wait, underground rhythm, metropolitan solitude',
+      key_features: 'Tiles, vaulted ceiling, platform edge, bench, signage, track tunnel',
+      creative_brief:
+        'Tiles hold decades of commuter breath in their grout, ceramic witness to a million hurried journeys underground. Fluorescent light flattens everything into equal grey, democracy of illumination where suits and sorrows look the same. The tunnel stretches toward vanishing point, a perspective built for waiting.',
+    },
+  },
+  {
+    id: 'SP07-011',
+    name: 'Luxury Penthouse',
+    category: '1. Residential Interiors',
+    negativePrompt: 'basement, dark, cheap',
+    style: {
+      aesthetic:
+        'Ultra-luxury aerial residential style with monolithic glazing, restrained opulence, and curated minimal spatial drama',
+      form_and_line:
+        'Long uninterrupted glazing lines, floating slab planes, cantilever gestures, low-profile furnishings, disciplined negative space',
+      color_palette:
+        'Warm ivory neutrals, charcoal anchors, smoky blue-greys, brushed brass accents, muted stone undertones',
+      lighting_setup:
+        'Layered ambient cove light, soft practical pools, controlled reflection management, low-glare premium interior illumination',
+      material_texture:
+        'Book-matched marble veining, satin metal trims, full-grain leather, soft woven textiles, polished glass depth, matte lacquer panels',
+      render_quality:
+        'Architectural-visualization premium finish with high material fidelity, clean staging, and luxury hospitality polish',
+      spatial_distortion:
+        'Wide-angle restraint with elongated interior axis and balanced foreground-midground luxury object hierarchy',
+      atmosphere: 'Serene, controlled, aspirational, private, rarefied',
+      key_features:
+        'Continuous glazing language, floating architectural planes, high-end material pairings, low-clutter composition, curated statement objects',
+      creative_brief:
+        'Encode luxury through proportion, material choreography, and lighting discipline rather than landmarks; the style should remain transferable to any high-end interior program.',
+    },
+  },
+  {
+    id: 'SP07-012',
+    name: 'Rustic Cabin',
+    category: '1. Residential Interiors',
+    negativePrompt: 'city, modern, cold',
+    style: {
+      aesthetic:
+        'Rustic shelter style emphasizing heavy natural mass, handcrafted durability, and hearth-centered warmth',
+      form_and_line:
+        'Thick timber geometries, stacked masonry rhythm, robust joinery expression, compact protective proportions',
+      color_palette:
+        'Burnt umber and smoked oak base, ember ambers, pine-greens, muted ash neutrals, low-saturation warmth gradients',
+      lighting_setup:
+        'Hearth-priority low-key glow, warm practical flicker, soft exterior daylight filtration, deep shadow comfort zones',
+      material_texture:
+        'Hand-hewn wood grain, rough stone porosity, wool and hide tactility, forged metal patina, matte earthen finishes',
+      render_quality:
+        'Authentic rustic realism with material weight clarity, thermal atmosphere, and durable craft legibility',
+      spatial_distortion:
+        'Stable enclosed depth with compressive intimacy that reinforces protective interior character',
+      atmosphere: 'Sheltering, grounded, quiet, warm, resilient',
+      key_features:
+        'Hearth-centric composition, heavy natural material hierarchy, handcrafted structural expression, thermal visual comfort',
+      creative_brief:
+        'Keep this preset identifiable by massy natural materials and hearth-led light behavior, translating rustic protection and craft durability across different interior subjects.',
+    },
+  },
+  {
+    id: 'SP07-013',
+    name: 'Mediterranean Villa',
+    category: '1. Residential Interiors',
+    negativePrompt: 'rain, cold, dark, grey',
+    style: {
+      aesthetic:
+        'Mediterranean sun-architecture style with limewashed simplicity, thermal brightness, and breezy coastal restraint',
+      form_and_line:
+        'Soft-edged stucco volumes, arch repetition, terrace layering, colonnade cadence, courtyard flow geometry',
+      color_palette:
+        'Lime white fields, azure accents, terracotta earths, warm ochre mids, sea-glass greens, restrained floral magenta notes',
+      lighting_setup:
+        'High-intensity solar wash with crisp shadow cuts, reflected courtyard bounce, warm dusk practical transitions',
+      material_texture:
+        'Mineral stucco grain, handmade tile variation, rough stone joints, weathered timber bleach, wrought-iron matte detail',
+      render_quality:
+        'Clean Mediterranean realism with sun-bleached precision, airy depth, and disciplined material-light interplay',
+      spatial_distortion:
+        'Open-volume perspective calm with framed axial views and layered indoor-outdoor transitions',
+      atmosphere: 'Luminous, relaxed, airy, warm, restorative',
+      key_features:
+        'Limewash-and-terracotta signature, high-sun shadow architecture, courtyard flow sequencing, coastal chroma restraint',
+      creative_brief:
+        'Encode Mediterranean identity through solar contrast behavior and limewash-terra material pairing, ensuring the style remains transferable beyond any single villa setting.',
+    },
+  },
+  {
+    id: 'SP07-031',
+    name: 'Space Station Interior',
+    category: '1. Residential Interiors',
+    negativePrompt: 'wood, brick',
+    style: {
+      aesthetic: 'ISS orbital station module, zero-G clutter, Velcro walls, Earth through cupola',
+      form_and_line:
+        'Wires, panels, equipment rack geometry, circular hatch rings, padded tunnel tubes',
+      color_palette:
+        'White, Velcro Blue, Equipment Beige, Soft-glow Green LED, Black panel accents',
+      lighting_setup:
+        'Harsh LED, panel-integrated task light, cupola-filtered Earth light, dim night-mode amber',
+      material_texture:
+        'Padding, metal, velcro tape, cable bundles, control panel plastic, foil insulation',
+      render_quality:
+        'Scientific, cramped, orbital-realism, functional density, engineering clutter, cosmic frontier',
+      spatial_distortion: 'Zero-G floating',
+      atmosphere:
+        'Claustrophobic, tech, weightless, frontier-isolation, science-hum, fragile habitation',
+      key_features:
+        'Handrails, equipment racks, round hatches, observation cupola, floating cables, soft walls',
+      creative_brief:
+        'Velcro strips hold notebooks mid-air, zero gravity transforming every surface into ceiling and floor simultaneously. Cables float like sleeping seaweed, blue LED constellations mapping the thin membrane between human warmth and void. Earth glows through the cupola, a blue reminder of everything left below.',
+    },
+  },
+  {
+    id: 'SP07-035',
+    name: 'Library (Old)',
+    category: '1. Residential Interiors',
+    negativePrompt: 'digital, modern',
+    style: {
+      aesthetic:
+        "Stacks of books, bibliophile sanctuary, reading-room heaven, literary labyrinth, scholar's cathedral",
+      form_and_line:
+        'Vertical spines, shelf-grid rhythm, arched alcoves, rolling ladders, barrel-vault ceiling',
+      color_palette:
+        'Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather',
+      lighting_setup:
+        "Warm lamp, banker's green glass shade, reading-table pool, high-window shaft, brass sconce",
+      material_texture: 'Paper, wood, leather, vellum, gilt tooling, waxed oak, marble bust',
+      render_quality:
+        'Quiet, intellectual, scholarly peace, book-scent serenity, timeless learning',
+      spatial_distortion: 'None',
+      atmosphere: 'Studious, hush, absorbed, musty-sweet, inherited wisdom, reading-trance',
+      key_features:
+        'Books everywhere, rolling ladder, reading tables, brass lamps, vaulted ceiling, globe',
+      creative_brief:
+        'Books breathe their slow vanilla decay into air thick with ideas waiting to be rediscovered. Ladders slide on brass rails toward ceiling-high wisdom, every spine a door to a mind that once burned to be heard. The library holds silence not as absence but as the accumulated hush of centuries reading.',
+    },
+  },
+  {
+    id: 'SP07-015',
+    name: 'Victorian Mansion',
+    category: '1. Residential Interiors',
+    negativePrompt: 'minimal, bright, open',
+    style: {
+      aesthetic: '19th century cluttered room, Empire excess, mourning elegance, parlour theatre',
+      form_and_line:
+        'Ornate patterns everywhere, framed silhouettes, heavy draping swags, crowded picture rails',
+      color_palette: 'Dark Red, Gold, Mahogany, Plum, Bottle Green, Antique Brass',
+      lighting_setup:
+        'Dim gaslight, oil-lamp pools, fireplace flicker, heavy-curtained gloom, tarnished candelabra',
+      material_texture: 'Velvet, wallpaper, dust, horsehair, brocade, marble mantels, chinoiserie',
+      render_quality:
+        'Antique, heavy, stuffed, museum-dense, gaslit nostalgia, maximalist inheritance',
+      spatial_distortion: 'None',
+      atmosphere: 'Oppressive, historic, rich, cluttered memory, mothball, ancestral weight',
+      key_features:
+        'Pattern density, overstuffed furniture, floor-to-ceiling drapes, gallery wall, taxidermy',
+      creative_brief:
+        'Velvet swallows light, brocade fighting pattern against pattern in a war of abundance. Each surface carries the weight of ancestors who confused accumulation with permanence, every object a memorial to acquisition. The air is thick with mothball and memory, rooms that stopped breathing a century ago.',
+    },
+  },
+  {
+    id: 'SP07-033',
+    name: 'Greenhouse/Conservatory',
+    category: '1. Residential Interiors',
+    negativePrompt: 'dark, dry',
+    style: {
+      aesthetic:
+        'Glass house with plants, botanical sanctuary, Victorian Palm House, humid Eden, fern-filled paradise',
+      form_and_line:
+        'Glass grid, curved glasshouse ribs, ironwork tracery, floor-to-glass, misty depth',
+      color_palette:
+        'Green, Glass, Tropical Bloom accents, Dew-drop Silver, Mossy floor, Whitewashed iron',
+      lighting_setup:
+        'Diffused bright, glass-filtered sun, condensation prisms, mist-softened rays',
+      material_texture: 'Glass, leaves, mist, cast iron, terracotta pots, gravel path, moist bark',
+      render_quality:
+        'Humid, lush, peaceful, botanical-specimen clarity, greenhouse glow, steaming-leaf vitality',
+      spatial_distortion: 'Condensation',
+      atmosphere: 'Alive, wet, calm, growing, oxygen-dense, fern-forest peace',
+      key_features:
+        'Plants, iron framework, glass panels, mist hanging in air, terracotta pots, fern fronds',
+      creative_brief:
+        'Glass panels and iron ribs hold humidity like a held breath, condensation writing temporary poems on every pane. Ferns unfurl in slow motion against the architecture, green ambition meeting Victorian engineering in peaceful truce. The glasshouse dreams of rainforests while standing polite in English gardens.',
+    },
+  },
+  {
+    id: 'SP07-014',
+    name: 'Cyberpunk Apartment',
+    category: '1. Residential Interiors',
+    negativePrompt: 'clean, organized, day',
+    style: {
+      aesthetic:
+        'Cyber-clutter interior style with improvised techno-living density, salvage modularity, and nocturnal hacker ambience',
+      form_and_line:
+        'Cable-mass diagonals, stacked display rectangles, ad-hoc rack assemblies, layered utility object silhouettes, compressed circulation paths',
+      color_palette:
+        'Deep charcoal base, toxic neon pink-blue-green accents, amber CRT pockets, cold violet shadows, fluorescent sickly fills',
+      lighting_setup:
+        'Multi-source low-light mix from displays, strips, indicator LEDs, and localized neon spill with sharp falloff pockets',
+      material_texture:
+        'Scuffed metal housings, brittle plastic shells, adhesive residue layers, worn synthetic upholstery, dusted heat-sink fins',
+      render_quality:
+        'High-detail lived-in cyber interior rendering with controlled chaos readability and tactile grime realism',
+      spatial_distortion:
+        'Dense near-field composition with depth blocked by stacked hardware planes and overlapping cable strata',
+      atmosphere: 'Restless, saturated, unstable, sleep-deprived, obsessive',
+      key_features:
+        'Hardware accumulation grammar, cable entropy patterns, mixed-display luminance, scavenged modular furniture, patinated tech surfaces',
+      creative_brief:
+        'Express cyber-residential identity through infrastructural clutter logic, mixed-source low-light behavior, and improvised material wear, without anchoring the style to one narrative room setup.',
+    },
+  },
+  {
+    id: 'SP07-037',
+    name: 'Aquarium Tunnel',
+    category: '1. Residential Interiors',
+    negativePrompt: 'dry',
+    style: {
+      aesthetic:
+        'Underwater glass tunnel, submerged walkway, ocean-immersed passage, blue cathedral, marine immersion',
+      form_and_line:
+        'Curved glass, arched acrylic, perspective tube, floor-to-ceiling curve, flowing water line',
+      color_palette:
+        'Blue, Cyan, Aquamarine, Deep Navy shadow, Bioluminescent fleck, Sandy floor tan',
+      lighting_setup: 'Caustics, rippling light nets, overhead-dappled, blue ambient, tank-glow',
+      material_texture: 'Glass, water, acrylic, coral rock, sand bed, shimmering scale',
+      render_quality: 'Immersive, blue, aquarium-clarity, oceanic wonder, deep-blue meditation',
+      spatial_distortion: 'Refraction',
+      atmosphere: 'Wonder, deep, floating, quiet-awe, blue-weightless, other-world calm',
+      key_features: 'Fish overhead, glass tunnel, caustic light patterns, sharks, coral, stingrays',
+      creative_brief:
+        'Water bends light into dancing nets that sweep across the tunnel floor like living embroidery. Sharks glide overhead with the slow confidence of creatures that have never questioned their dominion. The tube becomes a lung breathing blue, every visitor a bubble of warm air moving through cold depths.',
+    },
+  },
+  {
+    id: 'SP07-038',
+    name: 'Catacombs',
+    category: '1. Residential Interiors',
+    negativePrompt: 'living',
+    style: {
+      aesthetic:
+        'Bone walls, empire of the dead, skull architecture, underground ossuary, silence of centuries',
+      form_and_line:
+        'Skulls, stacked femur patterns, arch niches, skull-and-crossbone geometry, tunnel perspective',
+      color_palette: 'Bone White, Dirt, Sepia age, Calcium Yellow, Shadow Brown, Cartilage Cream',
+      lighting_setup:
+        'Torch/Flashlight, flame-flicker on bone, LED beam, dramatic shadow-cast, warm death-glow',
+      material_texture:
+        'Bone, dirt, calcium deposit, cold stone, crumbling mortar, dry-earth scent',
+      render_quality:
+        'Macabre, claustrophobic, bone-chamber realism, death-density, ancient silence',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Death, silence, below-ground, ossuary-reverence, chilling peace, mortal reminder',
+      key_features:
+        'Skulls, stacked long bones, arched niches, low ceiling, tunnel shaft, decorative bone patterns',
+      creative_brief:
+        'Skulls arranged in geometric chorus, tibiae stacked like library books catalogued by the grim librarian of centuries. The walls watch with a thousand empty sockets, calcium constellations mapping the architecture of mortality. Silence down here has weight, the accumulated stillness of generations who have nothing left to say.',
+    },
+  },
+  {
+    id: 'SP07-040',
+    name: 'Treehouse',
+    category: '1. Residential Interiors',
+    negativePrompt: 'ground level',
+    style: {
+      aesthetic:
+        "House in canopy, child's secret kingdom, elevated hideaway, forest perch, arboreal adventure",
+      form_and_line:
+        'Wood planks, branch-cradled platforms, ladder diagonals, suspension-bridge curves, wrap-around deck',
+      color_palette: 'Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss',
+      lighting_setup:
+        'Dappled sun, leaf-filtered shimmer, lantern glow, fairy-string twinkle, camping-lamp amber',
+      material_texture: 'Bark, wood, rope ladder, canvas, salvaged plank, tree-sap',
+      render_quality: 'Childhood, secret, summer-adventure, backyard-magic, freedom fantasy',
+      spatial_distortion: 'Crooked',
+      atmosphere:
+        'Adventure, high, above-ground, secret-hideout, wind-in-leaves, kid-dream independence',
+      key_features:
+        'Ladder, tree trunk through floor, rope swing, lanterns, wooden deck, lookout platform',
+      creative_brief:
+        'Wood planks embrace the living trunk, architecture deferring to botany with each board bent around bark. Rope bridges sway between platforms like conversations between branches, the whole structure a negotiation with gravity and growth. The treehouse holds childhood aloft, a secret kept above the reach of adult ground.',
+    },
+  },
+  {
+    id: 'SP07-034',
+    name: 'Abandoned Asylum',
+    category: '1. Residential Interiors',
+    negativePrompt: 'clean, new',
+    style: {
+      aesthetic:
+        'Decaying hallway, institutional horror, peeling madness, sanitarium ruin, ghost of order',
+      form_and_line:
+        'Peeling paint lines, institutional symmetry, long perspective corridor, collapsed grid, sagging ceiling',
+      color_palette:
+        'Desaturated Green/Grey, Sickly Mint, Rust stain, Water-damage Brown, Faded Cream',
+      lighting_setup:
+        'Shafts of light, dust-beam theater, broken-window blade, flickering emergency bulb, pitch corners',
+      material_texture:
+        'Rot, rust, debris, flaking paint, water-stained plaster, shattered glass, mold bloom',
+      render_quality:
+        'Scary, ruined, texture, abandonment beauty, decay-as-art, gothic institutional',
+      spatial_distortion: 'Collapsed ceiling',
+      atmosphere: 'Horror, sad, old, forgotten, echoing, institutional trauma, peeling silence',
+      key_features:
+        'Wheelchair, peeling paint, long hallway, broken windows, institutional signs, collapsed ceiling',
+      creative_brief:
+        'Paint peels in continents, cartographies of neglect mapping themselves across institutional green walls. A wheelchair sits where it was abandoned decades ago, patient object still waiting for someone to return. Dust motes dance in light-shafts like the only living things brave enough to still inhabit this place.',
+    },
+  },
+  {
+    id: 'SP07-042',
+    name: 'English Cottage Garden',
+    category: '1. Residential Interiors',
+    negativePrompt: 'formal, concrete',
+    style: {
+      aesthetic:
+        'Overgrown flower beds, romantic chaos, Gertrude Jekyll border, painterly planting, bee-hum profusion',
+      form_and_line:
+        'Organic clumps, meandering paths, herbaceous mounds, self-seeded drifts, rose-arch curve',
+      color_palette:
+        'Pastel flowers, Green, Lavender haze, Hollyhock Pink, Delphinium Blue, Cream Rose',
+      lighting_setup:
+        'Soft sun, cloud-diffused English light, dappled under-tree, golden-hour petal glow',
+      material_texture:
+        'Petals, leaves, rough stone path, mossy brick, bark mulch, feathery foliage',
+      render_quality:
+        "Romantic, messy, cottage-idyll, painter's garden, informal abundance, bee-loud beauty",
+      spatial_distortion: 'None',
+      atmosphere: 'Peaceful, sweet, dreamy, rustling, scented, time-stands-still garden',
+      key_features:
+        'Flowers, overflowing borders, rose arches, winding path, bird bath, foxgloves, lavender',
+      creative_brief:
+        'Flowers crowd the path with the gentle anarchy of things that grow without permission. Lavender spills over stone edges, foxgloves standing tall like pink sentries of abandon. The garden has forgotten where it was told to stay, and in that forgetting found something more beautiful than order.',
+    },
+  },
+  {
+    id: 'SP07-047',
+    name: 'Maze/Labyrinth',
+    category: '1. Residential Interiors',
+    negativePrompt: 'open field',
+    style: {
+      aesthetic:
+        'Hedge maze, living puzzle, green architecture, secret-garden labyrinth, puzzle palace',
+      form_and_line:
+        'Vertical walls, right-angle corridors, dead-end geometry, spiral center, boxwood-perfect edges',
+      color_palette:
+        'Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue',
+      lighting_setup:
+        'Shadowy paths, light-at-end glow, sun-stripe corridor, dappled-floor pattern, mysterious dead-end',
+      material_texture:
+        'Leaves, clipped hedge, dense foliage surface, gravel floor, mossy statue, bark-stem wall',
+      render_quality:
+        'Mysterious, geometric, puzzle-chamber, green-architecture, perspective-trick, getting-lost poetry',
+      spatial_distortion: 'None',
+      atmosphere: 'Lost, puzzle, confused, curious, walls-closing-in, center-discovery',
+      key_features:
+        'High walls, dead ends, gravel path, center fountain, statue focal point, clipped precision',
+      creative_brief:
+        'Hedge walls rise green and impenetrable, each turn a question with no obvious answer. Gravel crunches underfoot like the maze itself is counting your steps, amused by your confusion. The center waits, whether fountain or folly, a secret the boxwood has promised never to reveal too quickly.',
+    },
+  },
+  {
+    id: 'SP07-050',
+    name: 'Botanical Glasshouse',
+    category: '1. Residential Interiors',
+    negativePrompt: 'outdoor',
+    style: {
+      aesthetic:
+        'Victorian palm house, glass cathedral, botanical treasury, iron-and-glass jewel, tropical collection',
+      form_and_line:
+        'White iron frame, curved glasshouse ribs, ridge-and-furrow roof, circular staircase, tiered planting',
+      color_palette:
+        'White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver',
+      lighting_setup:
+        'Diffused, glasshouse-bright, condensation-prism, rain-on-glass, golden-hour ironwork glow',
+      material_texture:
+        'Glass, condensation, cast iron, terracotta tile, tropical bark, giant-leaf surface',
+      render_quality:
+        'Scientific, humid, Kew-Gardens grandeur, botanical-collection beauty, ironwork elegance',
+      spatial_distortion: 'None',
+      atmosphere: 'Lush, enclosed, transported, tropical-England, conservatory-hush, plant-wonder',
+      key_features:
+        'Iron structure, curved glass roof, spiral staircase, giant ferns, orchid display, palm canopy',
+      creative_brief:
+        'Iron ribs curve toward glass heaven, Victorian engineering dreaming in white filigree and condensation. Giant ferns unfurl prehistoric ambition beneath a roof that taught winter to grow tropical orchids. The glasshouse stands as a lung made architecture, breathing green long after the empire that built it faded.',
+    },
+  },
+  {
+    id: 'SP07-046',
+    name: 'Tropical Resort Pool',
+    category: '1. Residential Interiors',
+    negativePrompt: 'cold, city',
+    style: {
+      aesthetic:
+        'Infinity pool, resort paradise, liquid-edge luxury, beach-club fantasy, turquoise dream',
+      form_and_line:
+        'Water edge, vanishing horizon, Baja shelf, palm trunks vertical, curved lazy-river',
+      color_palette:
+        'Turquoise, Palm Green, White cabana, Bougainvillea Pink, Sand Beige, Sky-reflected teal',
+      lighting_setup:
+        'Bright sun, underwater glow, tiki-torch amber, fire-pit flicker, sunset-surface shimmer',
+      material_texture: 'Water, stone, pebble-sheen plaster, pool tile, teak deck, canvas awning',
+      render_quality: 'Luxury, vacation, resort-brochure, five-star paradise, pool-day perfection',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Relaxing, expensive, sunkissed, cocktail-bliss, endless-summer, weightless-tranquility',
+      key_features:
+        'Palm trees, infinity edge, submerged loungers, cabana, fire bowls, turquoise water',
+      creative_brief:
+        'Water meets sky at an edge so precise it disappears, the pool becoming a second horizon liquid and still. Palm shadows stripe across limestone, afternoon distilled into geometry of leisure. The resort floats between ocean and pool deck, a thin membrane of luxury stretched across tropical heat.',
+    },
+  },
+  {
+    id: 'SP07-060',
+    name: 'Haunted House (Cartoon)',
+    category: '1. Residential Interiors',
+    negativePrompt: 'scary realistic',
+    style: {
+      aesthetic: 'Scooby Doo spooky cartoon manor, Mystery Inc. haunt, crooked fun',
+      form_and_line:
+        'Wonky angles, crooked windows, leaning chimney, sagging roofline, cartoon-distort timbering',
+      color_palette:
+        'Purple, Green, Black, Cartoon-Orange trim, Spooky-moon White, Dark-violet shadows',
+      lighting_setup:
+        'Lightning flash, cartoon-moon glow, window-silhouette yellow, dramatic-thunder strobe, bat-shadow',
+      material_texture:
+        'Painted, ink-line, cel-shade, flat-color, wood-siding cartoon, weathervane silhouette',
+      render_quality:
+        'Spooky, fun, Hanna-Barbera charm, cartoon-haunt delight, flat-color perfection, nostalgic-scary',
+      spatial_distortion: 'Face in window',
+      atmosphere:
+        'Spooky, classic, cartoon-creepy, silly-scare, nostalgia, Saturday-morning thrill',
+      key_features:
+        'Bats, crooked shutters, lightning bolt, full moon, weathervane, creepy tree, iron gate',
+      creative_brief:
+        'Crooked shutters hang at impossible angles, the whole house leaning as if trying to escape its own foundation. Lightning cracks the purple sky behind weathervanes that spin with cartoon panic. The manor is scary the way Saturday mornings were scary, all thrill and no nightmare, spooky enough to hide behind the couch but never behind your eyes.',
+    },
+  },
+  {
+    id: 'SP07-073',
+    name: 'Ant Farm',
+    category: '1. Residential Interiors',
+    negativePrompt: 'surface',
+    style: {
+      aesthetic:
+        'Tunnel cross section, subterranean city, insect engineering, soil labyrinth, colony metropolis',
+      form_and_line:
+        'Tunnels, branching-chamber network, gallery-nodes, vertical shafts, fungus-garden alcoves, queen-chamber oval',
+      color_palette:
+        'Sand, Dirt, Amber-gel fill, Chamber-dark Brown, Ant-black silhouette, Tunneling-fresh earth',
+      lighting_setup:
+        'Side light, gel-illuminated cross-section, tunnel-depth shadow, chamber-glow, observation-pane backlit',
+      material_texture:
+        'Grainy, sand-particle, soil-structure, gel-embedded clarity, tunnel-wall compact, mandible-scarred',
+      render_quality:
+        'Subterranean, busy, ant-farm fascination, insect-city realism, colony-industry, cross-section beauty',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Busy, hidden, organized-chaos, colony-purpose, underfoot-world, instinct-hive, tunnel-darkness',
+      key_features:
+        "Tunnels, chambers, queen's chamber, worker ants, fungus garden, brood cells, glass observation pane",
+      creative_brief:
+        'Tunnels branch through amber gel like a circulatory system excavated from the body of the earth. Chambers bloom at tunnel junctions, each a specialized organ of the colony: nursery, granary, throne room for the queen. The cross-section reveals a civilization that built its empire in darkness, architecture without architects, perfect in its blind purpose.',
+    },
+  },
+  {
+    id: 'SP07-078',
+    name: 'Borg Industrial Hive Cube',
+    category: '1. Residential Interiors',
+    negativePrompt: 'smooth',
+    style: {
+      aesthetic:
+        'Tech cube, cybernetic-collective vessel, assimilation architecture, networked sentience, adaptive geometry',
+      form_and_line:
+        'Pipes, conduit-bundles, alcove-grid, regeneration-niche, data-node columns, tractor-beam emitter rings',
+      color_palette:
+        'Dark Grey, Green light, Cybernetic-sick Green, Cold-metal Black, Plasma-blue, Necrotic-circuit glow',
+      lighting_setup:
+        'Space, interior-green ambient, alcove-spot, plasma-conduit pulse, tractor-beam green wash, deep-space void',
+      material_texture:
+        'Greebles, cybernetic-surface detail, bio-mechanical interface, tube-bundle, armor-plate, drone-socket, regeneration gel',
+      render_quality:
+        'Complex, scary, Borg-collective menace, assimilation-horror, cybernetic-nightmare, hive-precision',
+      spatial_distortion: 'None',
+      atmosphere: 'Ominous, assimilating, resistance is futile',
+      key_features:
+        'Cube, regeneration alcoves, conduit bundles, green plasma, drone figures, tractor beam, hive architecture',
+      creative_brief:
+        'Green plasma pulses through conduit bundles like the cube itself has a circulatory system of cold light. Regeneration alcoves line the walls in infinite grid, each niche waiting for a drone that will rise and serve. The architecture hums with collective purpose, every surface a circuit, every corridor a vein, beauty eliminated in favor of function perfected into horror.',
+    },
+  },
+  {
+    id: 'SP07-080',
+    name: 'Tardis Infinite Console Chamber',
+    category: '1. Residential Interiors',
+    negativePrompt: 'small',
+    style: {
+      aesthetic:
+        'Bigger on the inside, impossible interior beyond outer shell, dimensional transcendence',
+      form_and_line:
+        'Hexagons/Roundels, organic-coral architecture, console-pedestal, gallery-level curves, time-rotor column, infinite-arches',
+      color_palette:
+        'Orange/Teal, Coral-amber glow, Deep-ocean Teal, Console-copper, Roundel-warm gold, Time-vortex blue',
+      lighting_setup:
+        'Console glow, time-rotor pulse, roundel-indirect, gallery-level ambient, regeneration-energy gold, warm coral wash',
+      material_texture:
+        'Tech, organic, grown-coral surface, control-console brass, glass roundel, copper wire, gel-pack',
+      render_quality:
+        'Sci-fi, chaotic, Doctor-Who wonder, impossible-dimensions, time-machine Baroque, bigger-on-the-inside magic',
+      spatial_distortion: 'Time rotor',
+      atmosphere:
+        'Adventure, time, wonder-awe, time-lord, infinite-explore, dimensional-impossible, home-among-stars',
+      key_features:
+        'Central column, roundel walls, hexagonal console, time rotor, gallery levels, organic architecture, infinite depth',
+      creative_brief:
+        'Console pedestal rises from coral-grown floor, organic architecture pulsing with the slow respiration of a machine that has outgrown machinery. Roundels line curved walls like eyes that watch every timeline simultaneously, the chamber bigger than its exterior, bigger than geometry, bigger than the concept of containment. Time itself pools in the rotor column, the room a vessel sailing on currents of causality.',
+    },
+  },
+  {
+    id: 'SP07-064',
+    name: 'Bespin Sunset Cloud Metropolis, carbon-freeze elegance, tibanna gas glow',
+    category: '1. Residential Interiors',
+    negativePrompt: 'ground',
+    style: {
+      aesthetic:
+        'Aerostat-retrofuturist luxury architecture style with buoyant megastructure forms and serene high-altitude modernism',
+      form_and_line:
+        'Streamlined aerodynamic curves, concentric platform geometries, slender fin-like spires, soft dome articulation',
+      color_palette:
+        'Warm amber atmosphere, pale ivory structure tones, rosy gas-cloud gradients, brushed gold accents, cool silver highlights',
+      lighting_setup:
+        'Diffuse horizon glow with elevated ambient wrap, soft beacon punctuations, restrained specular skyline shimmer',
+      material_texture:
+        'Polished alloy skin, satin glass surfaces, smooth composite hulls, fine seam detailing, low-roughness deck plates',
+      render_quality:
+        'Premium speculative-architecture finish with retro-future elegance, high clarity, and controlled atmospheric bloom',
+      spatial_distortion:
+        'Vertical openness with gentle curvature emphasis and depth staged through stacked floating structural tiers',
+      atmosphere: 'Majestic, quiet, elevated, orderly, aspirational',
+      key_features:
+        'Aerostat silhouette language, dome-platform hierarchy, warm atmosphere-grade color wash, refined metallic surface treatment',
+      creative_brief:
+        'Keep the preset defined by high-altitude retrofuturist architecture grammar: buoyant forms, warm atmospheric light, and polished structural serenity should remain recognizable across different subjects.',
+    },
+  },
+  {
+    id: 'SP07-066',
+    name: 'Lego Brick-Built City',
+    category: '1. Residential Interiors',
+    negativePrompt: 'smooth, realistic',
+    style: {
+      aesthetic: 'Lego toy brick world, ABS-plastic metropolis, snap-together skyline',
+      form_and_line:
+        'Brick seams, stud-grid geometry, modular-block stacking, stepped-pyramid, interlocking corners',
+      color_palette: 'Primary plastic, Bright Red, Yellow, Blue, Green, Black, White, Grey',
+      lighting_setup:
+        'Glossy, plastic-surface reflection, light-pool on studs, playroom-filtered sun, specular shine',
+      material_texture:
+        'Plastic studs, injection-mold surface, ABS sheen, clutch-power grip, brick-name logo, smooth-slope',
+      render_quality:
+        'Toy, blocky, LEGO-catalog perfection, snap-together realism, brick-built charm, Danish toy beauty',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Playful, constructed, childhood-creative, instruction-following, brick-searching, imaginative-build',
+      key_features:
+        'Studs, brick texture, minifigure scale, interlocking bricks, modular builds, brick separator, baseplate',
+      creative_brief:
+        'Studs catch light on their tiny circular crowns, each brick a pixel in a world built one snap at a time. Modular walls rise in primary-color determination, the city skyline rendered in ABS plastic and childhood ambition. Instructions lie scattered nearby, already abandoned for the superior architecture of imagination.',
+    },
+  },
+  {
+    id: 'SP07-057',
+    name: 'Steampunk City',
+    category: '1. Residential Interiors',
+    negativePrompt: 'clean energy',
+    style: {
+      aesthetic:
+        'Steam powered London, brass-age metropolis, Victorian science fiction, Jules Verne future, clockwork empire',
+      form_and_line:
+        'Pipes, gears, clock-face towers, dirigible-dock arches, chimney stacks, flywheel silhouettes',
+      color_palette:
+        'Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright',
+      lighting_setup:
+        'Gaslight, warm amber street-glow, gear-spark, hissing steam-vent light, amber window, smog-diffused',
+      material_texture:
+        'Metal, brick, riveted copper, wood panel, leather, steam-whistle brass, soot-coat',
+      render_quality:
+        'Industrial, retro, speculative-Victorian, gear-and-brass romance, steam-punk opulence',
+      spatial_distortion: 'None',
+      atmosphere:
+        "Busy, smoky, inventive, gear-turning, coal-breath, thrilling-progress, stoker's warmth",
+      key_features:
+        'Gears, steam vents, brass pipes, clock tower, dirigible, copper boilers, cobblestone streets',
+      creative_brief:
+        'Gears mesh with clockwork certainty while steam hisses from brass joints, the city breathing through iron lungs. Dirigibles drift between chimney stacks, leviathans of canvas and ambition navigating a sky thick with progress. Every rivet tells a story of hands that believed the future would taste of coal smoke and ingenuity.',
+    },
+  },
+  {
+    id: 'SP07-054',
+    name: 'Cyberpunk Slums',
+    category: '1. Residential Interiors',
+    negativePrompt: 'clean, wide streets',
+    style: {
+      aesthetic:
+        'Hyper-dense techno-brutalist residential style focused on vertical compression, improvised modularity, and infrastructural overload',
+      form_and_line:
+        'Repeating module stacks, cable-bundle diagonals, service-ladder zigzags, grille and shutter rhythms, fragmented light channels',
+      color_palette:
+        'Carbon blacks, oxidized rust browns, toxic greens, sign-magenta accents, smoggy blue-greys, low-luminance neon tints',
+      lighting_setup:
+        'Persistent artificial spill, flicker-prone practicals, hard occlusion pockets, wet-surface micro-reflections, narrow contrast windows',
+      material_texture:
+        'Corrugated steel fatigue, polymer grime bloom, layered paint peel, stained concrete, oxidized fastener patina, damp residue',
+      render_quality:
+        'High-detail architectural dystopia rendering with clutter legibility, controlled noise, and material density realism',
+      spatial_distortion:
+        'Vertical stacking exaggeration with narrow depth corridors and compressed breathing-space intervals',
+      atmosphere: 'Oppressive, overbuilt, unstable, electrically saturated, survivalist',
+      key_features:
+        'Modular stack logic, exposed service infrastructure, cable congestion patterns, degraded industrial surfaces, constrained circulation geometry',
+      creative_brief:
+        'Preserve the style as a system of compression and infrastructural excess: the visual identity must emerge from modular density, material wear, and electric clutter rather than a specific named district.',
+    },
+  },
+  {
+    id: 'SP07-065',
+    name: 'Paper Town',
+    category: '1. Residential Interiors',
+    negativePrompt: 'realistic',
+    style: {
+      aesthetic:
+        'Model village, papercraft diorama, folded world, origami architecture, card-stock miniature',
+      form_and_line:
+        'Cut edges, fold-score geometry, glue-tab seams, pop-up angles, diorama-depth layering',
+      color_palette:
+        'White paper, Kraft Brown, Newsprint Grey, Colored-card stock tints, Tracing-paper Milk',
+      lighting_setup:
+        'Studio soft, flat-model light, cut-shadow starkness, paper-translucency glow, tabletop spot',
+      material_texture:
+        'Paper grain, card-stock tooth, fold-creases, cut-edge fiber, glue-bead, bristol surface',
+      render_quality:
+        'Fragile, craft, miniature-precision, paper-sculpture art, architectural-model beauty',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Quiet, delicate, handmade, still-life, cardboard-dream, patient-craft, tiny-perfection',
+      key_features:
+        'Fold lines, cut edges, miniature scale, glue tabs, layered depth, pop-up elements, paper grain',
+      creative_brief:
+        'Cut edges cast razor shadows, each fold a decision frozen in card stock and craft knife precision. The town rises from paper flats like a pop-up book dreaming itself three-dimensional. Glue tabs hold buildings together with the tender fragility of things made by hands that knew it would not last.',
+    },
+  },
+  {
+    id: 'SP07-051',
+    name: 'Rivendell Verdant Elven Refuge, Last Homely House',
+    category: '1. Residential Interiors',
+    negativePrompt: 'industrial, blocky',
+    style: {
+      aesthetic:
+        'Art Nouveau in nature, elven grace, valley sanctuary, waterfall palace, timeless woodland harmony',
+      form_and_line:
+        'Elegant curves, filigree arches, natural-branch colonnades, cascading terraces, leaf-tracery windows',
+      color_palette:
+        'Autumn Gold, White, Silver Birch, Moss-floor Green, Waterfall Mist, Soft Lavender dusk',
+      lighting_setup:
+        'Magical glow, elf-lantern warmth, waterfall-reflected moonlight, star-dome canopy, inner-light radiance',
+      material_texture:
+        'Carved stone, leaves, living wood, mother-of-pearl inlay, silver filigree, crystalline light',
+      render_quality:
+        'Ethereal, ancient, Tolkien-beauty, elven-crafted perfection, sacred wood, Middle-earth elegance',
+      spatial_distortion: 'None',
+      atmosphere:
+        "Magical, safe, timeless, song-filled, story-sanctuary, hidden-peace, weary-traveler's rest",
+      key_features:
+        'Waterfalls, delicate bridges, open-air halls, elven pavilions, tree-integrated architecture, star-viewing terrace',
+      creative_brief:
+        'Waterfalls thread through filigree arches like liquid silver poured through elven hands. Trees lean into architecture, branches becoming columns in a hall that never decided where nature ends and craft begins. The valley holds its breath in perpetual twilight, a sanctuary that appears only when the world has grown tired enough to deserve it.',
+    },
+  },
+  {
+    id: 'SP07-052',
+    name: 'Dwarven Fortress',
+    category: '1. Residential Interiors',
+    negativePrompt: 'wood, light, delicate',
+    style: {
+      aesthetic:
+        'Underground hall, mountain kingdom, stone-deep majesty, forge-heart stronghold, ancestral deep',
+      form_and_line:
+        'Geometric blocky, megalithic pillars, vaulted axe-cut ceiling, rune-engraved arch, broad axes',
+      color_palette:
+        'Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black',
+      lighting_setup:
+        'Lava glow, forge-fire, crystal-lamp amber, torch-bracket rhythm, subterranean orange warmth',
+      material_texture:
+        'Hewn stone, chisel-marked granite, hammered gold, molten iron, vein crystal, thick leather',
+      render_quality:
+        'Heavy, industrial fantasy, Khazad-dum majesty, deep-delver craftsmanship, stone-song epic',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Epic, strong, ancient-resolve, forge-breath, deep-root, clan-hall echoes, enduring pride',
+      key_features:
+        'Pillars, great hall, golden hoard, forge anvil, rune carvings, lava channel, axe-trophies',
+      creative_brief:
+        'Stone pillars rise from living rock, axes still singing in the chisel marks that shaped them. Gold veins pulse through granite like the mountain itself has a circulatory system of treasure. The hall echoes with forge-hammer ghosts, every shadow cast by a fire that has burned for ten thousand years.',
+    },
+  },
+  {
+    id: 'SP07-059',
+    name: 'Hobbit Hole Hillside Roundhouse, Bag End comfort',
+    category: '1. Residential Interiors',
+    negativePrompt: 'square, tall',
+    style: {
+      aesthetic:
+        'Round door in hill, Shire dwelling, earth-sheltered home, cozy burrow, garden-roof cottage',
+      form_and_line:
+        'Round, curved tunnel, arch windows, circular symmetry, low-earth dome, winding path',
+      color_palette:
+        'Green, Wood, Earth, Brass knob, Buttercream plaster, Flower-garden colors, Warm brick',
+      lighting_setup:
+        'Cozy warm, hearth-glow, round-window light, candle-sconce, tunnel-lantern, afternoon-gold',
+      material_texture:
+        'Grass, wood, clay plaster, flagstone floor, brass fixtures, wattle, herb garden',
+      render_quality:
+        'Cozy, hidden, Tolkien-Shire charm, hobbit-hole perfection, underground-warmth, storybook comfort',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Homey, safe, garden-sheltered, tea-ready, pipe-smoke, fireside tales, earth-embrace',
+      key_features:
+        'Round door, grass roof, round windows, hearth fireplace, pantry shelves, brass knob center',
+      creative_brief:
+        'Grass roof slopes into hillside, architecture hiding its ambition beneath a blanket of wildflowers and humility. The round door opens inward with brass-center welcome, a portal into warmth that smells of fresh bread and pipe tobacco. The hill embraces its occupant like earth learning to love the creature that burrowed into it.',
+    },
+  },
+  {
+    id: 'SP07-062',
+    name: 'Ewok Canopy Rope Village, Endor treetops, forest-moon tribe',
+    category: '1. Residential Interiors',
+    negativePrompt: 'metal',
+    style: {
+      aesthetic:
+        'Huts in redwoods, arboreal village, treetop tribe, giant-sequoia settlement, leaf-hidden community',
+      form_and_line:
+        'Rope bridges, suspension curves, platform circles, trunk-wrap rings, ladder diagonals',
+      color_palette: 'Brown, Green, Rope Tan, Bark Grey, Canopy-filtered Gold, Redwood Rust',
+      lighting_setup:
+        'Forest filter, canopy-dappled, lantern-glow, sunset-through-leaves, campfire amber, star-through-branches',
+      material_texture: 'Wood, rope, thatch, woven vine, leather hide, log, bark',
+      render_quality:
+        'Primitive, high, Star-Wars Endor charm, forest-moon authenticity, tree-village adventure',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Tribal, nature, canopy-home, forest-guardian, wind-through-bridge, leaf-whisper, tribe-gathering',
+      key_features:
+        'Bridges, platform huts, rope ladders, trunk walkways, lookout platforms, thatched roofs, hanging lanterns',
+      creative_brief:
+        'Rope bridges sway between redwood giants, suspension arcs tracing the path of wind through ancient canopy. Platforms wrap around trunks like hands holding old friends, architecture that bows to botany with every beam. The village lives where light filters through a million needles, a civilization built at the altitude of birdsong.',
+    },
+  },
+  {
+    id: 'SP07-069',
+    name: 'Inflatable Castle',
+    category: '1. Residential Interiors',
+    negativePrompt: 'hard edges',
+    style: {
+      aesthetic:
+        'Bouncy house, party inflatable, air-filled fun palace, childhood carnival, birthday-bounce kingdom',
+      form_and_line:
+        'Seams, inflated tube curves, turret-bulge cylinders, rounded-battlement bumps, fan-hose snake',
+      color_palette:
+        'Neon vinyl, Hot Pink, Electric Yellow, Safety Orange, Royal Blue inflatable, Bright Green',
+      lighting_setup:
+        'Glossy, vinyl-shine reflection, sun-through-vinyl translucency, party-string lights, fan-inflated tension',
+      material_texture:
+        'Plastic vinyl, glossy PVC, seam-weld ridge, inflatable-taut surface, bouncy-air resistance, nylon-web tie',
+      render_quality:
+        'Soft, air filled, bounce-house joy, backyard-carnival, inflatable-castle kitsch, birthday-party centerpiece',
+      spatial_distortion: 'Bulging',
+      atmosphere:
+        'Fun, bouncy, party-excitement, air-pressure, squeaky-joy, kid-energy, temporary-amusement',
+      key_features:
+        'Wrinkles, seam lines, blower fan, bright color panels, turrets, slide opening, net windows',
+      creative_brief:
+        'Vinyl turrets bulge with air-pressure pride, seams straining against the enthusiasm trapped within. Electric yellow panels glow with the translucency of thin plastic and thick joy, the castle trembling slightly as children inside test the physics of bouncing. The blower fan hums its eternal note, the heartbeat of temporary architecture.',
+    },
+  },
+  {
+    id: 'SP07-070',
+    name: 'Gingerbread House',
+    category: '1. Residential Interiors',
+    negativePrompt: 'inedible',
+    style: {
+      aesthetic:
+        'Cookie house, Christmas confection, Hansel-and-Gretel cottage, holiday bakery architecture, edible fairytale',
+      form_and_line:
+        'Icing piping, scalloped roof-tile cookies, gumdrop border lines, candy-cane porch columns, pretzel-log walls',
+      color_palette:
+        'Brown, White, Candy, Gumdrop Red/Green, Icing Pink, Peppermint Swirl, Golden cookie',
+      lighting_setup:
+        'Warm, oven-glow, Christmas-light twinkle, sugar-sparkle, cozy-window amber, holiday-candle',
+      material_texture:
+        'Cookie, sugar, royal icing, hard candy, pretzel, chocolate, sprinkled surface, gum paste',
+      render_quality:
+        'Christmas, sweet, holiday-baking beauty, edible-architecture charm, gingerbread-perfection, festive-delicious',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Festive, yummy, holiday-joy, kitchen-warm, candy-smell, childhood-December, sweet-tradition',
+      key_features:
+        'Gumdrops, icing snow, candy cane columns, cookie roof, peppermint path, pretzel fence, sprinkle roof',
+      creative_brief:
+        'Royal icing traces snow-scallops along cookie-tile rooflines, each piped ridge a small triumph of sugar over structural engineering. Gumdrops march in chromatic guard along pretzel-log walls, candy sentinels at their sweetest posts. The house glows with oven-warmth still fresh, a dwelling built to be eaten, architecture that understands its destiny is delicious demolition.',
+    },
+  },
+  {
+    id: 'SP07-071',
+    name: 'Mushroom House',
+    category: '1. Residential Interiors',
+    negativePrompt: 'square',
+    style: {
+      aesthetic: 'Smurf whimsical mushroom cottage, tiny blue village',
+      form_and_line:
+        'Organic, stem-cylinder, cap-dome, gill-undercut, fairy-ring cluster, bulbous, soft-swell',
+      color_palette:
+        'Red cap, White stalk, Spore Brown, Moss Green, Fairy Blue, Forest-floor Amber, Toadstool-spot Cream',
+      lighting_setup:
+        'Forest floor, spotted-light dapple, mushroom-glow bioluminescent, shade-cool, firefly-twinkle, under-cap shadow',
+      material_texture:
+        'Fungus, mushroom-cap skin, gill-ribs, velvet moss, spore-dust, forest loam, dewdrop',
+      render_quality:
+        'Fantasy, cute, fairy-tale fungi, Smurf-village charm, woodland-magic, storybook-enchantment',
+      spatial_distortion: 'Bulbous',
+      atmosphere:
+        'Magic, small, hidden, fairy-glade, tiny-footstep, enchanted-forest, wee-folk safe',
+      key_features:
+        'Spots, red cap, white stem, tiny round door, chimney smoke, mushroom village, moss carpet',
+      creative_brief:
+        'Red caps dome above white stalks like tiny observatories built by a civilization that worships at the altar of spore and soil. Chimney smoke curls from mushroom-crown to forest canopy, the only sign of habitation in a glade that keeps secrets. The village hides at ankle height, a world you would miss if you walked through it standing up.',
+    },
+  },
+  {
+    id: 'SP07-074',
+    name: 'Dollhouse (Cutaway)',
+    category: '1. Residential Interiors',
+    negativePrompt: 'full wall',
+    style: {
+      aesthetic:
+        'House cross section, peek-inside home, miniature rooms exposed, four-wall transparency, voyeur-dwelling',
+      form_and_line:
+        'Room dividers, floor-level rectangles, staircase-diagonal, furniture-silhouette grid, doll-scale proportions',
+      color_palette:
+        'Pastel, Wallpaper-print colors, Toy-furniture Wood, Miniature-carpet Beige, Doll-dress Pink',
+      lighting_setup:
+        'Flat, even-room illumination, wall-mounted bead-light, room-box shadow, display brightness',
+      material_texture:
+        'Miniature, dollhouse-wood, doll-fabric, tiny ceramic, paper wallpaper, plastic-toy, painted metal',
+      render_quality:
+        'Cute, organized, dollhouse-precision, miniature-life, cross-section charm, play-scale perfection',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Playful, voyeur, tiny-life, peek-through, imaginative-play, ordered-doll-world, childhood-make-believe',
+      key_features:
+        'No front wall, miniature furniture, tiny staircase, room-by-room view, doll occupants, cross-section edge, tiny chandelier',
+      creative_brief:
+        'Rooms stack in cross-section honesty, no front wall to hide the miniature dramas unfolding on each floor. Tiny chandeliers drip from popsicle-stick ceilings, furniture arranged for occupants the size of thumbs. The dollhouse reveals everything, a home without secrets, each room a stage waiting for small hands to begin the play.',
+    },
+  },
+  {
+    id: 'SP07-076',
+    name: 'Dyson Sphere',
+    category: '1. Residential Interiors',
+    negativePrompt: 'planet surface',
+    style: {
+      aesthetic:
+        'Megastructure around sun, star-engineered shell, Kardashev-civilization monument, solar-harvest sphere, cosmic-engineering',
+      form_and_line:
+        'Grid, panel-cell hexagons, curved-horizon lattice, inner-surface curvature, star-centered symmetry',
+      color_palette:
+        'Black silhouette against sun, Solar-flare Orange/Gold, Edge-burn White, Dark-panel Grey, Corona-blue',
+      lighting_setup:
+        'Backlit, star-brilliance edge, panel-silhouette drama, inner-surface self-illumination, cosmic-scale rim light',
+      material_texture:
+        'Tech, ultra-structure, carbon-nanotube weave, solar-collector array, heat-sink fin, orbital-engineering metal',
+      render_quality:
+        'Cosmic, massive, megastructure awe, Dyson-imagination, star-taming civilization, scale-horror sublime',
+      spatial_distortion: 'Curved horizon',
+      atmosphere:
+        'Epic, sci-fi, civilization-scale, star-furnace, engineering-god, unfathomable-ambition, majestic-isolation',
+      key_features:
+        'Star inside, panel grid, curved horizon, solar collectors, hexagonal structure, silhouette against star, orbital ring',
+      creative_brief:
+        'Hexagonal panels curve toward a horizon that bends the wrong way, enclosing a star like a cage built for fire. Silhouettes of civilization-scale engineering trace black geometries against solar brilliance, the sphere a crust wrapped around a captive sun. The structure whispers of intelligences that measure their projects in astronomical units and their patience in stellar lifetimes.',
+    },
+  },
+  {
+    id: 'SP07-077',
+    name: 'Ringworld',
+    category: '1. Residential Interiors',
+    negativePrompt: 'globe',
+    style: {
+      aesthetic:
+        'Halo ring, Niven megastructure, orbital-band world, habitable-ring landscape, cosmic-ribbon',
+      form_and_line:
+        'Upward horizon, arch-in-sky curve, ribbon-land strip, edge-wall lines, sun-shadow band',
+      color_palette:
+        'Blue, Green strip, Space Black, Ocean-band, Atmosphere-white rim, Shadow-wall Dark',
+      lighting_setup:
+        'Sunlight, ring-self-shadow, edge-wall glow, atmosphere-scatter blue, void-black contrast',
+      material_texture:
+        'Atmosphere, continental land, orbital-plate metal, sea-surface, cloud-swirl, mountain-shadow',
+      render_quality:
+        'Vast, artificial, Niven-scale imagination, ringworld-wonder, habitable-engineering, landscape-megastructure',
+      spatial_distortion: 'Ring shape',
+      atmosphere:
+        'Awe, scale, world-builder, cosmic-horizon, engineering-sublime, infinite-land, ring-citizen perspective',
+      key_features:
+        'Sky arch, upward-curving land, edge wall, sun-shadow band, ocean strip, ring curvature, mountain-on-horizon',
+      creative_brief:
+        'Landscape curves upward into sky, continents bending toward an arch that replaces horizon with the underside of the same world. Edge walls rise like mountain ranges built by hands that thought in planetary scale, holding atmosphere against the void. The ring spins its slow eternity, a world that forgot to be a sphere and became a ribbon instead.',
+    },
+  },
+  {
+    id: 'SP07-075',
+    name: 'Escher Staircase',
+    category: '1. Residential Interiors',
+    negativePrompt: 'logical physics',
+    style: {
+      aesthetic:
+        'Impossible architecture, optical-illusion maze, M.C. Escher dream, paradoxical geometry, mental-puzzle space',
+      form_and_line:
+        'Clean lines, stair-paradox loops, arch-reversal, floor-wall-ceiling ambiguity, isometric-impossible, endless ascent',
+      color_palette:
+        'Greyscale, Warm paper-cream, Ink-black line, Stone-tone gradient, Shadow-cool Grey, Lithograph-sepia',
+      lighting_setup:
+        'Flat, lithograph-even, impossible-shadow, ambiguity-light, multiple-light-source confusion, print-studio clarity',
+      material_texture:
+        'Stone, print-paper grain, lithograph-ink, carved-stone, woodcut-line, etched-detail',
+      render_quality:
+        'Mind-bending, loop, optical-illusion genius, paradox-realized, impossible-print, brain-puzzle art',
+      spatial_distortion: 'Gravity defiance',
+      atmosphere:
+        'Confusing, infinite, wonder-perplexed, impossible-calm, mind-trapped, perspective-vertigo, delightful-bafflement',
+      key_features:
+        'Stairs, impossible loops, multiple gravity, archways, courtyard paradox, ascending-descending figures, lithograph look',
+      creative_brief:
+        "Stairs climb toward destinations that exist in three conflicting gravity directions, each ascent leading somewhere the architect's sanity should have vetoed. Figures walk upside-down through archways that connect ceilings to floors, the whole scene a polite rebellion against the dictatorship of physics. The print hangs in eternal paradox, a joke told in lithograph that the brain never stops trying to find the punchline of.",
+    },
+  },
+  {
+    id: 'SP07-068',
+    name: 'Cardboard Fort',
+    category: '1. Residential Interiors',
+    negativePrompt: 'solid wall',
+    style: {
+      aesthetic:
+        'Box castle, appliance-box architecture, living-room fortress, recycled-carton stronghold, blanket-city',
+      form_and_line:
+        'Tape lines, box-flap geometry, duct-tape seams, crayon-drawn details, stacked-rectangles, cut-window squares',
+      color_palette:
+        'Brown cardboard, Packing-tape Tan, Marker-Black, Crayon colors, Shipping-label White',
+      lighting_setup:
+        'Indoor, living-room lamp, blanket-filtered light, flashlight-fort interior, window-box glow',
+      material_texture:
+        'Corrugated, kraft fiber, tape-adhesive, crayon wax, marker-ink, blanket-fabric drape',
+      render_quality:
+        'Childhood, rough, make-believe reality, refrigerator-box magic, blanket-fort nostalgia, kid-crafted love',
+      spatial_distortion: 'Sagging',
+      atmosphere:
+        'Imaginative, cheap, pretend-kingdom, Saturday-morning, sibling-architect, proud-builder, temporary-realm',
+      key_features:
+        'Tape, corrugated edges, duct tape, marker drawings, box flaps, blanket roof, crayon windows',
+      creative_brief:
+        'Tape holds corrugated walls against the entropy of play, each seam a negotiation between structural ambition and the limits of adhesive. Crayon windows drawn with the conviction that a rectangle of blue is all any room needs of the sky. The fort stands in living-room twilight, a sovereignty declared in cardboard and defended with blanket artillery.',
+    },
+  },
+  {
+    id: 'SP07-072',
+    name: 'Bottle Ship',
+    category: '1. Residential Interiors',
+    negativePrompt: 'ocean',
+    style: {
+      aesthetic:
+        'Ship inside glass, impossible-in-bottle, maritime miniature, patience-craft, message-in-bottle mystery',
+      form_and_line:
+        'Glass reflection, hull-curve silhouette, mast-rigging threads, bottle-neck constriction, cork-stopper circle',
+      color_palette: 'Wood, Glass, Rigging-tan, Sail-cream, Sea-blue tint, Brass, Cork-brown',
+      lighting_setup:
+        'Studio, glass-highlight streak, bottle-curve distortion-glint, display-shelf ambient, window-light catch',
+      material_texture:
+        'Glass, miniature, cork, thread, wire, tissue-paper sail, tiny-metal, dust-in-bottle',
+      render_quality:
+        'Detailed, impossible, ship-in-bottle wonder, maritime-craft miracle, patience-art, miniature-perfection',
+      spatial_distortion: 'Distorted by glass',
+      atmosphere:
+        'Precious, trapped, still-voyage, curio-cabinet, patient-hands, impossible-journey, nautical-dream',
+      key_features:
+        'Glass bottle, miniature ship, cork, rigging threads, glass distortion, display stand, impossible construction',
+      creative_brief:
+        "Hull and rigging captured mid-voyage through a bottleneck that denies the ship's original scale. Glass distorts the masts, the whole vessel swimming in a lens-curved miniature ocean of trapped air. The bottle holds not just a ship but the impossible patience of hands that threaded masts through necks narrower than conviction.",
+    },
+  },
+  {
+    id: 'SP07-067',
+    name: 'Sandcastle',
+    category: '1. Residential Interiors',
+    negativePrompt: 'stone',
+    style: {
+      aesthetic:
+        'Beach fort, summer sculpture, tidal architecture, ephemeral citadel, shore-built kingdom',
+      form_and_line:
+        'Drip towers, bucket-mold cylinders, scalloped turrets, battlement ridges, moat-trench circles',
+      color_palette:
+        'Sand beige, Wet-sand Brown, Shell-white, Shore-gold, Driftwood Grey, Sea-glass fragment',
+      lighting_setup:
+        'Sunlight, beach-glare, low-afternoon shadow, wave-reflected shimmer, seaside-haze',
+      material_texture:
+        'Sand grains, wet-packed surface, shell bits, pebble, granular-drip, water-smooth',
+      render_quality:
+        'Temporary, fragile, beach-day memory, tide-fated beauty, summer-childhood art, grain-by-grain',
+      spatial_distortion: 'Crumbling',
+      atmosphere:
+        'Summer, fun, beach-joy, tide-watch, salty-breeze, impermanent creation, bucket-and-spade',
+      key_features:
+        'Grainy, drip-castle towers, moat, battlements, bucket-mold texture, seashell decoration, tide-line',
+      creative_brief:
+        'Drip towers rise with the organic wonkiness of sand-water slurry surrendered to gravity. Bucket-mold cylinders repeat in endless battlement, each turret a memory of the plastic pail that shaped it. The tide whispers its countdown, the castle magnificent precisely because it cannot last, architecture that borrows its beauty from impermanence.',
+    },
+  },
+  {
+    id: 'SP07-058',
+    name: 'Crystal Spire',
+    category: '1. Residential Interiors',
+    negativePrompt: 'brick, wood',
+    style: {
+      aesthetic:
+        'Grown crystal tower, mineral skyscraper, geodesic fantasy, geological architecture, prism spire',
+      form_and_line:
+        'Sharp facets, hexagonal columns, converging crystal points, geometric shard, pyramid cap',
+      color_palette:
+        'Purple/Blue/White, Amethyst, Sapphire, Diamond-spark, Deep Crystal Violet, Iridescent flash',
+      lighting_setup:
+        'Internal refraction, rainbow-dispersion, inner-glow core, facet-edge brilliance, dark-crystal depth',
+      material_texture:
+        'Glassy, mineral crystal, gemstone face, translucent depth, faceted surface, amethyst geode',
+      render_quality:
+        'Alien, pure, crystalline-perfection, geode-magic, otherworldly prism, mineral-beauty',
+      spatial_distortion: 'None',
+      atmosphere: 'Cold, magical, gemstone-elegant, ancient-growth, silent-harmonic, other-realm',
+      key_features:
+        'Translucency, crystal facets, inner glowing core, rainbow refraction, giant geode, prism spire',
+      creative_brief:
+        'Amethyst facets catch inner light and throw it outward in violet splinters, the tower glowing from a source that geometry itself seems to generate. Crystal columns rise from mineral seed, grown rather than built, architecture at geological speed. The spire sings at frequencies only quartz can hear, a silent music of refraction.',
+    },
+  },
+  {
+    id: 'SP07-061',
+    name: 'Ice Palace',
+    category: '1. Residential Interiors',
+    negativePrompt: 'warm, fire',
+    style: {
+      aesthetic:
+        "Frozen castle, glacial fortress, winter queen's palace, crystalline ice-kingdom, permafrost monument",
+      form_and_line:
+        'Sharp ice, icicle colonnade, frozen-cascade stairs, crystal-spike spires, frost-filigree arch',
+      color_palette: 'White, Cyan, Ice Blue, Aurora Green, Deep-glacier Teal, Diamond-spark',
+      lighting_setup:
+        'Glittering, aurora-shimmer, ice-internal refraction, moon-on-snow, frozen-sun brilliance',
+      material_texture:
+        'Ice, snow, frost flower, hoarfrost, compacted snow-block, glacial glass, crystal rime',
+      render_quality:
+        'Cold, magical, Narnia-Winter beauty, frozen-cathedral grandeur, ice-sculpture perfection',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Frozen, regal, winter-eternal, enchanted-cold, silent-snow, crystalline-awe, frosted-breath',
+      key_features:
+        'Icicles, frost crystals, ice chandelier, snowdrift stairs, frozen throne, aurora-lit hall, ice bridge',
+      creative_brief:
+        'Icicle colonnades catch aurora light and throw it into prismatic rebellion against the monochrome of winter. Frost filigree traces arabesques across transparent walls, cold becoming architect, ice becoming cathedral. The palace stands at absolute zero of warmth and maximum of wonder, a kingdom where beauty is measured in degrees below freezing.',
+    },
+  },
+  {
+    id: 'SP07-056',
+    name: 'Underwater City',
+    category: '1. Residential Interiors',
+    negativePrompt: 'sky, dry',
+    style: {
+      aesthetic: 'Atlantis/Rapture submerged lost-city grandeur, art-deco depths, leaking domes',
+      form_and_line:
+        'Domes, coral, bubble-pods, glass-tunnel arteries, cathedral spires, ring-hub geometry',
+      color_palette:
+        'Blue, Gold, Biolum, Coral Pink, Seaweed Green, Rust-orange decay, Gleaming Brass',
+      lighting_setup:
+        'Water filtered, blue-ambient abyss, bioluminescent constellation, dome-interior gold glow, emergency red',
+      material_texture:
+        'Wet stone, glass, copper-green patina, coral-encrust, riveted brass, leaking concrete',
+      render_quality:
+        'Mysterious, deep, Rapture-dystopia, lost-civilization poetry, water-pressure beauty, abandoned majesty',
+      spatial_distortion: 'None',
+      atmosphere: 'Silent, pressure, awe-mixed-with-dread, water-weight, ghostly, decaying-utopia',
+      key_features:
+        'Bubbles, glass domes, art deco details, leaking cracks, coral overgrowth, bathysphere docks',
+      creative_brief:
+        "Art deco brass glimmers through water-dark corridors, luxury drowning in slow deterioration. Coral fingers reach through cracks in domed ceilings, the ocean patiently reclaiming what hubris built on its floor. Bioluminescence pulses in the deep like a city's last heartbeat, beautiful and terminal.",
+    },
+  },
+  {
+    id: 'SP07-079',
+    name: 'Monolith',
+    category: '1. Residential Interiors',
+    negativePrompt: 'detail',
+    style: {
+      aesthetic:
+        '2001 slab, alien artifact, absolute-geometry presence, evolution-catalyst object, cosmic-marker',
+      form_and_line:
+        'Sharp rectangle, perfect-edges, zero-feature surface, 1:4:9 proportion, impossible-vertical, crisp-corners',
+      color_palette:
+        'Matte Black, Absolute-void Black, Light-absorbing surface, Starlight-reflection edge, Moon-surface Grey',
+      lighting_setup:
+        'Absorbs light, anti-reflective void, sun-alignment glow, stark-side shadow, dawn-touch edge',
+      material_texture:
+        'Perfectly smooth, non-material surface, frictionless, impossibly-dense, alien-substance, crystalline-matte',
+      render_quality:
+        'Alien, minimal, Kubrick-mystery, absolute-simplicity, cosmic-enigma, evolution-precision',
+      spatial_distortion: 'None',
+      atmosphere:
+        'Ominous, mystery, cosmic-wonder, evolutionary-pause, unknowable-intelligence, silent-revelation, transcendent-fear',
+      key_features:
+        '1:4:9 ratio, perfectly black, sharp edges, featureless surface, rectangular slab, alien presence, vertical dominance',
+      creative_brief:
+        'Absolute rectangle interrupts landscape with the violence of perfect geometry, a shape that does not belong to any geology humans have named. The surface drinks light without returning it, matte black absorbing every question the universe thought to ask. The slab simply is, an assertion of presence that predates language, waiting for the apes below it to touch it and learn to kill.',
+    },
+  },
+  {
+    id: 'SP07-063',
+    name: 'Necropolis',
+    category: '1. Residential Interiors',
+    negativePrompt: 'life, green',
+    style: {
+      aesthetic:
+        'City of dead, tomb-city, death empire, mausoleum megalopolis, soul-river architecture',
+      form_and_line:
+        'Sharp spires, obelisk avenues, crypt blocks, tomb-grid geometry, sarcophagus rows',
+      color_palette:
+        'Green mist, Black stone, Bone-white marble, Faded Gold, Crypt-shadow Purple, Death-rust Red',
+      lighting_setup:
+        'Eerie Green, witch-light glow, corpse-candle, moon-through-fog, underworld-ember, soul-flame',
+      material_texture:
+        'Stone, bone, crumbling masonry, weathered marble, iron gate, skull-ornament, ash',
+      render_quality:
+        'Evil, dark, tomb-city epic, death-cult architecture, sepulchral grandeur, gothic-necropolis',
+      spatial_distortion: 'None',
+      atmosphere:
+        "Dread, death, eternal-silence, soul-heavy, grave-chill, mourner's-land, un-living stillness",
+      key_features:
+        'Green fog, obelisks, sarcophagi, death runes, skull motifs, crypt entrances, tomb-pyramids',
+      creative_brief:
+        'Obelisks cast green-tinted shadows across avenues paved with the names of the entombed. Soul-flame flickers in brass lanterns, each light a small rebellion against the empire of permanent dark. The city extends in all directions, infinite cemetery, architecture built for occupants who will never complain about the square footage.',
+    },
+  },
+  {
+    id: 'SP07-053',
+    name: 'Floating Castle',
+    category: '1. Residential Interiors',
+    negativePrompt: 'grounded',
+    style: {
+      aesthetic: 'Castle in sky, celestial fortress, cloud realm, Laputa vision, aerial kingdom',
+      form_and_line:
+        'Vertical towers, floating-island massing, air-bridge spans, waterfall-fall lines, spiral spires',
+      color_palette:
+        'White, Blue sky, Cloud-silver, Golden sun edge, Waterfall-cascade White, Lapis above',
+      lighting_setup:
+        'Bright sun, cloud-reflected brilliance, angel-ray beams, blue-sky ambient, golden-edge rim light',
+      material_texture:
+        'Stone, clouds, gossamer, crystalline spire, floating rock, wisp-vapor base',
+      render_quality:
+        'Dreamy, impossible, Miyazaki-beauty, sky-castle wonder, unfettered imagination, weightless grandeur',
+      spatial_distortion: 'Floating rocks',
+      atmosphere: 'Magical, high, sky-kingdom, impossible-dream, wind-borne, breathtakingly free',
+      key_features:
+        'Clouds below, floating islands, waterfalls into void, air bridges, tallest spire, blue sky around',
+      creative_brief:
+        'Spires pierce cloud layer like needles stitching heaven to earth with stone thread. Waterfalls drop into blue nothing, liquid abandoning its loyalty to gravity for the freedom of falling forever. The castle floats as if the ground beneath it simply forgot to be there, an architecture of refusal.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

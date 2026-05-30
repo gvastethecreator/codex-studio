@@ -4,723 +4,1123 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP05-034",
-    "name": "Bright Hero Academy",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Comic-leaning hero uniforms, optimistic crowd energy, school-battle polish, quirk-based powers, hero agency rankings, stadium tournament arcs, smash attacks",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Aspirational, energetic, hopeful, inspiring",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "Stadium lights ignite the sky above a generation reaching for capes and calling, primary-color costumes streaking across the frame like comic book promises made visible. Every punch carries the weight of a dream broadcast live, every splash page a declaration that heroism is taught, learned, and earned in the arena of youth."
-    }
+    id: 'SP05-034',
+    name: 'Bright Hero Academy',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Heroic optimism action style with emblematic costume coding, uplifted momentum, and bright civic-spectacle energy',
+      form_and_line:
+        'Clean heroic contour grammar, readable emblem silhouettes, impact arcs with celebratory pose punctuation, comic-influenced line confidence',
+      color_palette:
+        'Primary-forward chroma with high-key accents, disciplined shadow saturation, and motivational contrast hierarchy',
+      lighting_setup:
+        'Broadcast-bright keys, triumphant backlight halos, crowd-energy bloom, and crisp highlight framing for iconic poses',
+      material_texture:
+        'Polished suit surfaces, effect particles with clean edge control, low-noise digital compositing, high-legibility finish',
+      render_quality:
+        'Blockbuster modern-anime polish tuned for inspirational action clarity and poster-grade frame readability',
+      spatial_distortion:
+        'Dynamic but orderly foreshortening and perspective thrust to amplify heroic ascent without chaos blur',
+      atmosphere: 'Aspirational, kinetic, uplifting, confident, bold',
+      key_features:
+        'Emblem-driven silhouettes, optimism-first action cadence, poster-ready impact framing, high-visibility hero grammar',
+      creative_brief:
+        'Keep the preset anchored in optimistic hero readability: emblematic silhouettes, high-key motivational color logic, and celebratory impact staging should stay transferable beyond school or arena narratives.',
+    },
   },
   {
-    "id": "SP05-133",
-    "name": "Mashle - Brickwall Comedy Spell-School Brawl",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Magic-school world broken by deadlift absurdity, muscular deadpan, wand-logic punctured by physical-force jokes, elite academy duels with comedy undercut",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Dumb, forceful, confident, hilarious",
-      "key_features": "Spell-school props, deadpan hero stance, physical gag payoffs, absurd power contrast, academy-combat framing",
-      "creative_brief": "A young man deadlifts his way through a world built on incantations, and every spell shatters against the immovable object of pure physical confidence. The academy prepared its wizards for counterspells and arcane nuance, never for someone who solves riddles with biceps and answers prophecies with protein. Absurdity is the most powerful magic of all."
-    }
+    id: 'SP05-133',
+    name: 'Mashle - Brickwall Comedy Spell-School Brawl',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Magic-school world broken by deadlift absurdity, muscular deadpan, wand-logic punctured by physical-force jokes, elite academy duels with comedy undercut',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Dumb, forceful, confident, hilarious',
+      key_features:
+        'Spell-school props, deadpan hero stance, physical gag payoffs, absurd power contrast, academy-combat framing',
+      creative_brief:
+        'A young man deadlifts his way through a world built on incantations, and every spell shatters against the immovable object of pure physical confidence. The academy prepared its wizards for counterspells and arcane nuance, never for someone who solves riddles with biceps and answers prophecies with protein. Absurdity is the most powerful magic of all.',
+    },
   },
   {
-    "id": "SP05-134",
-    "name": "Sakamoto Days - Convenience-Store Assassin Sprint",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Everyday storefront life colliding with impossibly clean assassin choreography, suburban product aisles turned combat lanes, calm professionalism amid absurd action",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Cool, funny, efficient, surprising",
-      "key_features": "Retail-space combat staging, impossible stunt clarity, dead-calm expressions, product-clutter motion lines, hitman pose economy",
-      "creative_brief": "Calm hands arrange instant noodles on a shelf while a silenced pistol rests beside the register, retired violence humming beneath suburbia. The convenience store is a stage and reformed assassins are the most dangerous actors, finding rhythm in the mundane. Peace tastes like discount snacks and barely contained velocity."
-    }
+    id: 'SP05-134',
+    name: 'Sakamoto Days - Convenience-Store Assassin Sprint',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Everyday storefront life colliding with impossibly clean assassin choreography, suburban product aisles turned combat lanes, calm professionalism amid absurd action',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Cool, funny, efficient, surprising',
+      key_features:
+        'Retail-space combat staging, impossible stunt clarity, dead-calm expressions, product-clutter motion lines, hitman pose economy',
+      creative_brief:
+        'Calm hands arrange instant noodles on a shelf while a silenced pistol rests beside the register, retired violence humming beneath suburbia. The convenience store is a stage and reformed assassins are the most dangerous actors, finding rhythm in the mundane. Peace tastes like discount snacks and barely contained velocity.',
+    },
   },
   {
-    "id": "SP05-032",
-    "name": "Gritty Urban Curses",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "City-night exorcism battles, tactical martial movement, dark energy silhouettes, domain expansions, cursed finger relics, blindfold masks, shattered domain barriers",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Menacing, agile, cursed, stylish",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "Neon bleeds through shattered domain barriers as cursed energy coils through midnight alleys in elegant geometries. Hooded sorcerers move with tactical precision, every hand-sign and finger-flick unleashing a mathematics of beautiful violence — streetwear apocalypse rendered in the slickest ink."
-    }
+    id: 'SP05-032',
+    name: 'Gritty Urban Curses',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Urban occult combat style with ritual geometry, predatory restraint, and high-contrast supernatural pressure fields',
+      form_and_line:
+        'Razor contour discipline, sigil-like motion arcs, hand-gesture emphasis, silhouette cuts that privilege threat readability',
+      color_palette:
+        'Near-black base with toxic cyan-violet energy seams, selective crimson hazard notes, and sparse white-hot highlights',
+      lighting_setup:
+        'Low-key nocturnal staging, localized aura bloom, hard rim partitions, and volumetric pockets around cursed emissions',
+      material_texture:
+        'Polished modern surfaces interrupted by particulate curse residue, sharp effect overlays, subtle grain under high contrast',
+      render_quality:
+        'Premium dark-action anime finish with clean edge fidelity and controlled post-bloom tuned for occult readability',
+      spatial_distortion:
+        'Compressed depth lanes and warped local perspective around energy events to signal unstable spiritual space',
+      atmosphere: 'Menacing, controlled, tactical, uncanny, electric',
+      key_features:
+        'Ritual gesture grammar, pressure-field visuals, sigil energy contours, threat-priority silhouette staging',
+      creative_brief:
+        'Define this preset by occult-pressure visual logic: gesture-led energy geometry, hard contrast segmentation, and localized spatial instability should carry the identity across any subject.',
+    },
   },
   {
-    "id": "SP05-035",
-    "name": "Gritty Wallbound Survival",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Vertical movement gear, siege tension, desperate city walls, feral urgency, ODM gear cables, titan-shifter transformations, walled cities, colossal-scale terror",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Dire, relentless, desperate, terrifying",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "Cables snap taut against gravity as human bodies arc between colossal shadows that devour the horizon. Desperation has a geometry here — vertical, angular, the mathematics of prey refusing to yield — drawn in razor-sharp motion lines that cut through stone walls and the terrible stillness of giants."
-    }
+    id: 'SP05-035',
+    name: 'Gritty Wallbound Survival',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Vertical-survival action style defined by scale terror, aerial trajectory tension, and militarized desperation rhythm',
+      form_and_line:
+        'Cable-vector diagonals, hook-point geometry, hard angular pose silhouettes, sharp momentum lines for vertical traversal',
+      color_palette:
+        'Dusty militarized neutrals with emergency flares of red-orange, cold steel tones, and smoke-dark value structure',
+      lighting_setup:
+        'Harsh side light with particulate haze, breached-sky shafts, silhouette-first backlight, and panic-intensity contrast spikes',
+      material_texture:
+        'Cable tension sheen, weathered harness materials, masonry debris grain, smoke and grit overlays with high kinetic readability',
+      render_quality:
+        'High-intensity survival anime finish emphasizing motion mechanics, scale legibility, and urgency-first compositional clarity',
+      spatial_distortion:
+        'Extreme vertical foreshortening with depth-drop exaggeration and looming mass contrast to reinforce peril',
+      atmosphere: 'Desperate, relentless, hunted, grim, adrenaline-heavy',
+      key_features:
+        'Aerial trajectory grammar, scale-shock framing, cable-mechanics readability, siege-pressure visual cadence',
+      creative_brief:
+        'The identity should come from vertical-mobility tension and overwhelming scale contrast: cable-driven motion logic and depth-drop fear must remain central regardless of setting specifics.',
+    },
   },
   {
-    "id": "SP05-036",
-    "name": "Colossal War Drama",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Large-scale conflict, somber wartime palettes, cinematic tragedy, military pressure, battleship cannons, trench warfare, propaganda broadcast, soldier childhoods",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Somber, catastrophic, tragic, devastating",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "Trench mud and battleship smoke smear across a landscape stripped of innocence, children marching in uniforms too large for their still-growing bones. Silhouettes dissolve into propaganda static, each frame a war photograph painted with the trembling brush of profound sorrow — cinema as memorial."
-    }
+    id: 'SP05-036',
+    name: 'Colossal War Drama',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Tragic war-anime style with institutional gravity, elegiac pacing, and large-scale mechanized conflict weight',
+      form_and_line:
+        'Severe silhouette hierarchy, disciplined military shape language, blast-line punctuation, and mournful still-frame counterbeats',
+      color_palette:
+        'Desaturated iron blues, muddy earth umbers, smoke grays, muted blood-crimson accents, low-saturation cold highlights',
+      lighting_setup:
+        'Diffused battlefield overcast with intermittent blast flashes, long shadow veils, and documentary-like contrast restraint',
+      material_texture:
+        'Sooted metal surfaces, churned earth particulate, worn fabric grain, static noise overlays for archival-war tone',
+      render_quality:
+        'Cinematic war-drama polish focused on emotional gravity, scale coherence, and restrained effect realism',
+      spatial_distortion:
+        'Wide conflict planes with pressure-depth layering and occasional compression for claustrophobic strategic burden',
+      atmosphere: 'Somber, catastrophic, heavy, mournful, relentless',
+      key_features:
+        'Militarized silhouette order, elegiac blast rhythm, archival tragedy tonality, institutional conflict visual grammar',
+      creative_brief:
+        'Preserve this preset as a war elegy language: desaturated conflict weight, institutional silhouette discipline, and grief-forward pacing should define it beyond any specific battlefront.',
+    },
   },
   {
-    "id": "SP05-039",
-    "name": "Tactical Adventure Shonen",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Clever combat systems, adventurous landscapes, youthful competition, bright strategy, hunter license cards, nen ability webs, phantom troupe, greed island cards",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Adventurous, calculating, strategic, curious",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "Strategy blooms across the frame like a visible thought-form, every combat a chess match played at the speed of instinct against vast, adventurous horizons. Nen threads web through the composition, binding curiosity to consequence — a world where intelligence is the truest superpower and the unknown is the greatest treasure."
-    }
+    id: 'SP05-039',
+    name: 'Tactical Adventure Shonen',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Strategic-adventure shonen style with systems-driven combat readability, curiosity-forward world energy, and tactical clarity',
+      form_and_line:
+        'Diagrammatic action vectors, clean decision-point silhouettes, ability-network motifs, and choreography that foregrounds planning',
+      color_palette:
+        'Bright exploratory saturation with disciplined tactical accents, cool-warm contrast nodes, and lucid value grouping',
+      lighting_setup:
+        'Adventure-bright daylight with focused tactical highlights, balanced fill, and clear visual signaling for ability states',
+      material_texture:
+        'Clean modern anime surface polish, legible effect overlays, map-like compositional textures, low-grit digital finish',
+      render_quality:
+        'Premium strategy-action anime rendering that prioritizes intelligible combat logic and world-discovery freshness',
+      spatial_distortion:
+        'Dynamic depth with navigational clarity, emphasizing positional intelligence over chaotic motion blur',
+      atmosphere: 'Curious, competitive, analytical, adventurous, high-spirited',
+      key_features:
+        'System-logic action grammar, tactical readability, exploratory composition, intelligence-led spectacle pacing',
+      creative_brief:
+        'Keep the preset centered on strategic legibility and discovery energy: combat should feel like visible problem-solving, with action grammar driven by tactical decisions rather than fixed lore references.',
+    },
   },
   {
-    "id": "SP05-121",
-    "name": "Demon Slayer - Lantern Bloodline Sword Ballet",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Taisho-era demon hunting, patterned haori silhouettes, lantern-lit sword arcs, breathing-technique slash trails, family-memory tenderness meeting high-contrast violence, wood-and-snow atmosphere",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Heroic, tragic, elegant, intense",
-      "key_features": "Katana arc readability, patterned costumes, lantern-and-mist staging, emotional combat pauses, ceremonial blade poses",
-      "creative_brief": "A katana arc cuts through lantern mist, the blade-trail lingering like a breath exhaled into winter air. Patterned haori billow through Taisho-era twilight, each fold holding family memory as tightly as the grip on a Nichirin sword. Combat here is choreography — a dance between inherited grief and the elegant violence of release."
-    }
+    id: 'SP05-121',
+    name: 'Demon Slayer - Lantern Bloodline Sword Ballet',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Taisho-era demon hunting, patterned haori silhouettes, lantern-lit sword arcs, breathing-technique slash trails, family-memory tenderness meeting high-contrast violence, wood-and-snow atmosphere',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Heroic, tragic, elegant, intense',
+      key_features:
+        'Katana arc readability, patterned costumes, lantern-and-mist staging, emotional combat pauses, ceremonial blade poses',
+      creative_brief:
+        'A katana arc cuts through lantern mist, the blade-trail lingering like a breath exhaled into winter air. Patterned haori billow through Taisho-era twilight, each fold holding family memory as tightly as the grip on a Nichirin sword. Combat here is choreography — a dance between inherited grief and the elegant violence of release.',
+    },
   },
   {
-    "id": "SP05-124",
-    "name": "Blue Lock - Predator-Ego Sports Assault",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Hyper-competitive striker psychology, neon pitch intensity, feral ego close-ups, goalbox warfare, cutthroat sports animation, ballistic shot framing, tactical hunger made visual",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Predatory, focused, manic, competitive",
-      "key_features": "Soccer-ball velocity, eye-line intensity, predator metaphors, field-line perspective, lock-on shot framing",
-      "creative_brief": "The goalbox narrows to a single retinal instant — predator eyes locking onto the ball with the hunger of a striker who has decided that scoring is the only acceptable form of existence. Neon pitch markings blur into velocity trails, the field becoming a cage where ego is the only muscle that matters. Every frame is a shot already taken, already scored, already inevitable."
-    }
+    id: 'SP05-124',
+    name: 'Blue Lock - Predator-Ego Sports Assault',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Hyper-competitive striker psychology, neon pitch intensity, feral ego close-ups, goalbox warfare, cutthroat sports animation, ballistic shot framing, tactical hunger made visual',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Predatory, focused, manic, competitive',
+      key_features:
+        'Soccer-ball velocity, eye-line intensity, predator metaphors, field-line perspective, lock-on shot framing',
+      creative_brief:
+        'The goalbox narrows to a single retinal instant — predator eyes locking onto the ball with the hunger of a striker who has decided that scoring is the only acceptable form of existence. Neon pitch markings blur into velocity trails, the field becoming a cage where ego is the only muscle that matters. Every frame is a shot already taken, already scored, already inevitable.',
+    },
   },
   {
-    "id": "SP05-128",
-    "name": "Bleach: Thousand-Year Blood War - Royal Black Blade Opera",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Severe black uniforms, palace-scale combat, spiritual warfare, white-black contrast, calligraphic attack names, aristocratic villain drama, divine war-pageantry",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Regal, severe, explosive, mythic",
-      "key_features": "Black robe silhouettes, palace verticality, spiritual attack effects, dramatic cloak movement, sword-name theatrics",
-      "creative_brief": "Black robes sweep across marble floors like ink bleeding into holy water, and every thunderclap is a name spoken too loudly. Combat here is not battle but liturgy, each blade swing a prayer to oblivion delivered with regal precision. The sky answers steel with steel, and silence with silence."
-    }
+    id: 'SP05-128',
+    name: 'Bleach: Thousand-Year Blood War - Royal Black Blade Opera',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Severe black uniforms, palace-scale combat, spiritual warfare, white-black contrast, calligraphic attack names, aristocratic villain drama, divine war-pageantry',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Regal, severe, explosive, mythic',
+      key_features:
+        'Black robe silhouettes, palace verticality, spiritual attack effects, dramatic cloak movement, sword-name theatrics',
+      creative_brief:
+        'Black robes sweep across marble floors like ink bleeding into holy water, and every thunderclap is a name spoken too loudly. Combat here is not battle but liturgy, each blade swing a prayer to oblivion delivered with regal precision. The sky answers steel with steel, and silence with silence.',
+    },
   },
   {
-    "id": "SP05-131",
-    "name": "Wind Breaker - Delinquent Street Protector Rush",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Modern school-delinquent action, alleyway wind shear, gang jackets, city-protector swagger, bruised knuckles and neon convenience stores, rooftop loyalty clashes",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Rowdy, loyal, kinetic, swaggering",
-      "key_features": "Jacket silhouettes, urban rooftop staging, knuckle-first action, streetlight color pops, team loyalty poses",
-      "creative_brief": "Wind cuts through the alley where loyalty is the only currency that matters and knuckles meet jawbone under the flicker of a neon convenience-store sign. The street crowns its protectors in bruised fists and oversized jackets, swagger earned one rooftop standoff at a time. Brotherhood is a fist bump and the wind that follows it."
-    }
+    id: 'SP05-131',
+    name: 'Wind Breaker - Delinquent Street Protector Rush',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Modern school-delinquent action, alleyway wind shear, gang jackets, city-protector swagger, bruised knuckles and neon convenience stores, rooftop loyalty clashes',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Rowdy, loyal, kinetic, swaggering',
+      key_features:
+        'Jacket silhouettes, urban rooftop staging, knuckle-first action, streetlight color pops, team loyalty poses',
+      creative_brief:
+        'Wind cuts through the alley where loyalty is the only currency that matters and knuckles meet jawbone under the flicker of a neon convenience-store sign. The street crowns its protectors in bruised fists and oversized jackets, swagger earned one rooftop standoff at a time. Brotherhood is a fist bump and the wind that follows it.',
+    },
   },
   {
-    "id": "SP05-135",
-    "name": "Undead Unluck - Rule-Breaker Curse Impact",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Conceptual powers with slapstick brutality, unlucky chain reactions, immortal body damage, poppy modern action comic energy, romance hidden inside kinetic chaos",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Chaotic, playful, brutal, offbeat",
-      "key_features": "Rule-based action motifs, body-damage exaggeration, bright effect symbols, momentum-heavy posing, comic impact beats",
-      "creative_brief": "Bad luck is a weapon the universe never meant to hand over, and every missed step triggers a chain reaction that reads like divine slapstick. Bodies break in sequences so comic they loop back to profound, while romance flickers beneath the rubble. Chaos is not the enemy here — it is the only language love speaks fluently."
-    }
+    id: 'SP05-135',
+    name: 'Undead Unluck - Rule-Breaker Curse Impact',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Conceptual powers with slapstick brutality, unlucky chain reactions, immortal body damage, poppy modern action comic energy, romance hidden inside kinetic chaos',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Chaotic, playful, brutal, offbeat',
+      key_features:
+        'Rule-based action motifs, body-damage exaggeration, bright effect symbols, momentum-heavy posing, comic impact beats',
+      creative_brief:
+        'Bad luck is a weapon the universe never meant to hand over, and every missed step triggers a chain reaction that reads like divine slapstick. Bodies break in sequences so comic they loop back to profound, while romance flickers beneath the rubble. Chaos is not the enemy here — it is the only language love speaks fluently.',
+    },
   },
   {
-    "id": "SP05-136",
-    "name": "Black Clover - Grimoire Thunder Squad",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Anti-magic underdog drive, squad-based spell warfare, medieval-black-bull energy, book-based spellcasting, ragged ambition versus noble polish",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Determined, loud, magical, scrappy",
-      "key_features": "Grimoire staging, team squad silhouettes, anti-magic aura contrast, loud rivalry poses, magical battleground debris",
-      "creative_brief": "A grimoire opens and ambition spills out louder than any incantation, raw willpower forged into a blade that cuts through destiny. The squad stands together in rags that read like banners, shouting defiance at polished towers that never believed them worthy. Magic bends not to birthright but to the volume of a heart refusing to stay silent."
-    }
+    id: 'SP05-136',
+    name: 'Black Clover - Grimoire Thunder Squad',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Anti-magic underdog drive, squad-based spell warfare, medieval-black-bull energy, book-based spellcasting, ragged ambition versus noble polish',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Determined, loud, magical, scrappy',
+      key_features:
+        'Grimoire staging, team squad silhouettes, anti-magic aura contrast, loud rivalry poses, magical battleground debris',
+      creative_brief:
+        'A grimoire opens and ambition spills out louder than any incantation, raw willpower forged into a blade that cuts through destiny. The squad stands together in rags that read like banners, shouting defiance at polished towers that never believed them worthy. Magic bends not to birthright but to the volume of a heart refusing to stay silent.',
+    },
   },
   {
-    "id": "SP05-138",
-    "name": "Kagurabachi - Sword Oath Under Neon Rain",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Brooding urban sword-revenge thriller, enchanted blades, cold rain, yakuza underworld severity, stylish restraint before sudden violence, sleek modern occult drama",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Brooding, precise, cool, vengeful",
-      "key_features": "Rainlit katana poses, occult blade effects, underworld interiors, severe facial acting, neon-rain contrast",
-      "creative_brief": "Rain carries the last words of a dead oath, pooling around unsheathed steel beneath flickering Shinjuku neon. The blade cuts more than flesh — it slices through the lie that the past can be left behind. Vengeance wears a school uniform and walks through midnight with the stillness of someone who has already decided."
-    }
+    id: 'SP05-138',
+    name: 'Kagurabachi - Sword Oath Under Neon Rain',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Brooding urban sword-revenge thriller, enchanted blades, cold rain, yakuza underworld severity, stylish restraint before sudden violence, sleek modern occult drama',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Brooding, precise, cool, vengeful',
+      key_features:
+        'Rainlit katana poses, occult blade effects, underworld interiors, severe facial acting, neon-rain contrast',
+      creative_brief:
+        'Rain carries the last words of a dead oath, pooling around unsheathed steel beneath flickering Shinjuku neon. The blade cuts more than flesh — it slices through the lie that the past can be left behind. Vengeance wears a school uniform and walks through midnight with the stillness of someone who has already decided.',
+    },
   },
   {
-    "id": "SP05-139",
-    "name": "Attack on Titan - Wall Rupture Desperation",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Wall-top military survival, giant flesh threat, vertical maneuver gear, humanity under siege, dust-cloud dread, desperate tactical sacrifice, city-scale terror",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Desperate, colossal, militarized, tragic",
-      "key_features": "Extreme scale contrast, maneuver-gear lines, breached-wall debris, regiment silhouettes, panic-charged perspective",
-      "creative_brief": "Walls are not protection but the silhouette of the cage humanity drew around itself, and soldiers swing on wires through dust that tastes like old terror. Each flight between rooftops is a gamble that the next landing point still exists. Scale tips cruelly — the giant is always larger than hope and the fall always longer than courage."
-    }
+    id: 'SP05-139',
+    name: 'Attack on Titan - Wall Rupture Desperation',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Wall-top military survival, giant flesh threat, vertical maneuver gear, humanity under siege, dust-cloud dread, desperate tactical sacrifice, city-scale terror',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Desperate, colossal, militarized, tragic',
+      key_features:
+        'Extreme scale contrast, maneuver-gear lines, breached-wall debris, regiment silhouettes, panic-charged perspective',
+      creative_brief:
+        'Walls are not protection but the silhouette of the cage humanity drew around itself, and soldiers swing on wires through dust that tastes like old terror. Each flight between rooftops is a gamble that the next landing point still exists. Scale tips cruelly — the giant is always larger than hope and the fall always longer than courage.',
+    },
   },
   {
-    "id": "SP05-140",
-    "name": "Frieren Combat Flashback - Ancient Calm Spell Impact",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Measured spellcasting from a long-lived mage, soft post-journey melancholy interrupted by precise magical violence, understated action framed by emotional memory and sky-rich stillness",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Calm, precise, wistful, powerful",
-      "key_features": "Controlled spell geometry, quiet face acting, sky-heavy backgrounds, measured combat spacing, memory-laden stillness",
-      "creative_brief": "A thousand years of memory compress into a single gesture, and a spell blooms like morning through the hands of someone who has outlived every companion. Violence is not loud here — it is quiet, precise, and already finished before the enemy understands it began. The sky watches with the patience of an elf who has seen empires rise and crumble like cloud formations."
-    }
+    id: 'SP05-140',
+    name: 'Frieren Combat Flashback - Ancient Calm Spell Impact',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Measured spellcasting from a long-lived mage, soft post-journey melancholy interrupted by precise magical violence, understated action framed by emotional memory and sky-rich stillness',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Calm, precise, wistful, powerful',
+      key_features:
+        'Controlled spell geometry, quiet face acting, sky-heavy backgrounds, measured combat spacing, memory-laden stillness',
+      creative_brief:
+        'A thousand years of memory compress into a single gesture, and a spell blooms like morning through the hands of someone who has outlived every companion. Violence is not loud here — it is quiet, precise, and already finished before the enemy understands it began. The sky watches with the patience of an elf who has seen empires rise and crumble like cloud formations.',
+    },
   },
   {
-    "id": "SP05-037",
-    "name": "Impact Frame Comedy Hero",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Ultra-clean impact cuts, absurd overkill power, dry visual punchlines, one-punch hero, bald caped caper, monster association, deadpan reaction shots",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Deadpan, overwhelming, absurd, comedic",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "Mountains atomize into perfect white impact frames while a bald man registers mild inconvenience — the universe exhausting itself against absolute stillness. Cosmic catastrophe rendered as the world's most beautifully animated deadpan, where the joke is the gap between apocalypse and a blank expression."
-    }
+    id: 'SP05-037',
+    name: 'Impact Frame Comedy Hero',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Satirical overpowered action style combining premium destruction spectacle with deadpan comedic detachment',
+      form_and_line:
+        'Hyper-clean impact silhouettes, minimal-expression face grammar, explosive contour bursts, freeze-frame punchline timing lines',
+      color_palette:
+        'Catastrophic contrast spikes over neutral comedic anchors, high-energy effect chroma with deliberate flat reaction zones',
+      lighting_setup:
+        'Blockbuster blast illumination paired with calm portrait lighting for reaction shots, emphasizing joke-through-contrast',
+      material_texture:
+        'Crisp debris effects, polished impact particles, low-noise digital surfaces, comic-clean compositing with theatrical clarity',
+      render_quality:
+        'Top-tier action animation polish intentionally juxtaposed with anti-dramatic character stillness and visual punchline control',
+      spatial_distortion:
+        'Extreme impact foreshortening alternating with static deadpan framing to maximize comedic dissonance',
+      atmosphere: 'Absurd, overpowering, ironic, explosive, stoic',
+      key_features:
+        'Spectacle-vs-deadpan duality, overkill impact staging, minimal-reaction comedy rhythm, freeze-frame gag mechanics',
+      creative_brief:
+        'The style should read as high-budget action satire: catastrophic impact grammar contrasted with emotionally flat reaction framing, making comedic dissonance the transferable core.',
+    },
   },
   {
-    "id": "SP05-129",
-    "name": "One-Punch Man - Prestige Hero Impact Satire",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Prestige-action animation colliding with bored overpowered comedy, monster-of-the-week destruction, caped simplicity, city-smashing impact clarity, sincerity and satire sharing the same frame",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Deadpan, explosive, absurd, triumphant",
-      "key_features": "Huge impact craters, cape silhouette, serious-monster design, anticlimactic hero expression, blockbuster destruction staging",
-      "creative_brief": "A hero stands in the crater where a city block used to be, expression blanker than the devastation around him. Destruction is rendered with blockbuster reverence while the face at its epicenter refuses the drama. The sublime joke is that sincerity and spectacle have become indistinguishable."
-    }
+    id: 'SP05-129',
+    name: 'One-Punch Man - Prestige Hero Impact Satire',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Prestige-action animation colliding with bored overpowered comedy, monster-of-the-week destruction, caped simplicity, city-smashing impact clarity, sincerity and satire sharing the same frame',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Deadpan, explosive, absurd, triumphant',
+      key_features:
+        'Huge impact craters, cape silhouette, serious-monster design, anticlimactic hero expression, blockbuster destruction staging',
+      creative_brief:
+        'A hero stands in the crater where a city block used to be, expression blanker than the devastation around him. Destruction is rendered with blockbuster reverence while the face at its epicenter refuses the drama. The sublime joke is that sincerity and spectacle have become indistinguishable.',
+    },
   },
   {
-    "id": "SP05-132",
-    "name": "Solo Leveling - Shadow Monarch Raid Ascension",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Dungeon-raid power fantasy, violet-black shadow summons, rank-up intensity, Korean portal action polish, monarch aura spectacle, solitary ascent into overwhelming force",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Dominant, sleek, ominous, ascendant",
-      "key_features": "Shadow-army silhouettes, violet aura bloom, dungeon architecture, rank-up visual cues, overpowered hero framing",
-      "creative_brief": "Shadows kneel before a lone figure ascending through the dungeon gate, violet lightning threading the silhouette of a monarch who was once nobody. Power accretes like a gathering storm, each rank a new strata of loneliness. Solitude is the tax the throne collects from those who reach it alone."
-    }
+    id: 'SP05-132',
+    name: 'Solo Leveling - Shadow Monarch Raid Ascension',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Dungeon-raid power fantasy, violet-black shadow summons, rank-up intensity, Korean portal action polish, monarch aura spectacle, solitary ascent into overwhelming force',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Dominant, sleek, ominous, ascendant',
+      key_features:
+        'Shadow-army silhouettes, violet aura bloom, dungeon architecture, rank-up visual cues, overpowered hero framing',
+      creative_brief:
+        'Shadows kneel before a lone figure ascending through the dungeon gate, violet lightning threading the silhouette of a monarch who was once nobody. Power accretes like a gathering storm, each rank a new strata of loneliness. Solitude is the tax the throne collects from those who reach it alone.',
+    },
   },
   {
-    "id": "SP05-040",
-    "name": "Blade Field Urban Fantasy",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Endless weapon silhouettes, glowing sky shifts, polished duel spectacle, modern myth, golden reality marble, servant-class hierarchies, noble phantasm weapons, command seal markings",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Mythic, dramatic, grandiose, epic",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "Golden skies shatter into infinite weapon-scapes as legends summoned from the depths of myth duel beneath indifferent city lights. Every blade carries a name and a millennium of yearning, the mundane world peeling back like painted scenery to reveal truth too vast and glorious to contain in a single frame."
-    }
+    id: 'SP05-040',
+    name: 'Blade Field Urban Fantasy',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Mythic-duel spectacle style with ceremonial weapon iconography, noble dramatic scale, and reality-layer rupture effects',
+      form_and_line:
+        'Heroic duel silhouettes, weapon-field repetition patterns, calligraphic strike vectors, and emblematic stance framing',
+      color_palette:
+        'Regal gold-crimson contrasts over deep navy-charcoal grounds, with luminous arc accents and ceremonial highlight bands',
+      lighting_setup:
+        'Mythic backlight domes, volumetric ray fan-outs, high-drama rim partitioning, and duel-focus spotlight behavior',
+      material_texture:
+        'Polished relic-metal sheen, arcane effect particles, clean cinematic composites, and controlled bloom around signature weapons',
+      render_quality:
+        'Grand-scale fantasy-action rendering with high symbolic clarity and premium spectacle polish',
+      spatial_distortion:
+        'Reality-fold perspective pulls and horizon warping around weapon manifestations to emphasize mythic magnitude',
+      atmosphere: 'Grandiose, operatic, solemn, epic, fated',
+      key_features:
+        'Weapon-field iconography, ceremonial duel staging, reality-layer rupture cues, regal color authority',
+      creative_brief:
+        'Preserve identity through mythic weapon symbolism and ceremonial duel framing; reality-warp spectacle should support an operatic visual grammar beyond specific lore references.',
+    },
   },
   {
-    "id": "SP05-123",
-    "name": "Fire Force - Cathedral Inferno Brigade",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Religious-firefighter action, glowing ember halos, rescue teams in black coats, infernal combustion, cathedral-industrial interiors, liturgical symbolism mixed with speed-line heroics",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Blazing, heroic, sacred, kinetic",
-      "key_features": "Flame trails, brigade uniforms, ember particles, cathedral scale, ignition-focused action posing",
-      "creative_brief": "Fire prayers rise through cathedral naves where brigade coats cut black silhouettes against altar flames. Embers drift upward like inverted benedictions, the sacred and the combustible fused into a single liturgical emergency. Salvation here wears turnout gear and moves at ignition speed — faith propelled through inferno by the sole conviction that something burning can still be saved."
-    }
+    id: 'SP05-123',
+    name: 'Fire Force - Cathedral Inferno Brigade',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Religious-firefighter action, glowing ember halos, rescue teams in black coats, infernal combustion, cathedral-industrial interiors, liturgical symbolism mixed with speed-line heroics',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Blazing, heroic, sacred, kinetic',
+      key_features:
+        'Flame trails, brigade uniforms, ember particles, cathedral scale, ignition-focused action posing',
+      creative_brief:
+        'Fire prayers rise through cathedral naves where brigade coats cut black silhouettes against altar flames. Embers drift upward like inverted benedictions, the sacred and the combustible fused into a single liturgical emergency. Salvation here wears turnout gear and moves at ignition speed — faith propelled through inferno by the sole conviction that something burning can still be saved.',
+    },
   },
   {
-    "id": "SP05-125",
-    "name": "Kaiju No. 8 - Civic Monster Response Unit",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Municipal anti-kaiju action, armored cleanup crews, giant-monster tissue aftermath, urban defense operations, public-infrastructure heroics, monster-sized perspective shifts",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Explosive, civic, resilient, colossal",
-      "key_features": "Scale contrast with city blocks, defense-suit silhouettes, kaiju debris, team-response formations, oversized impact framing",
-      "creative_brief": "A kaiju corpse sprawls across city blocks like a fallen skyscraper, and amidst the tissue steam, armored cleanup crews move with the grim efficiency of public servants who have seen too many Tuesdays end this way. Monster-scale destruction meets municipal-scale response — garbage trucks hauling away pieces of nightmare alongside ordinary debris. The heroism here wears a defense-suit helmet and fills out overtime forms."
-    }
+    id: 'SP05-125',
+    name: 'Kaiju No. 8 - Civic Monster Response Unit',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Municipal anti-kaiju action, armored cleanup crews, giant-monster tissue aftermath, urban defense operations, public-infrastructure heroics, monster-sized perspective shifts',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Explosive, civic, resilient, colossal',
+      key_features:
+        'Scale contrast with city blocks, defense-suit silhouettes, kaiju debris, team-response formations, oversized impact framing',
+      creative_brief:
+        'A kaiju corpse sprawls across city blocks like a fallen skyscraper, and amidst the tissue steam, armored cleanup crews move with the grim efficiency of public servants who have seen too many Tuesdays end this way. Monster-scale destruction meets municipal-scale response — garbage trucks hauling away pieces of nightmare alongside ordinary debris. The heroism here wears a defense-suit helmet and fills out overtime forms.',
+    },
   },
   {
-    "id": "SP05-126",
-    "name": "Dandadan - Paranormal Turbo Romance Brawl",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Occult comedy collision, ghost-speed punch-ups, alien weirdness, teen-romance bickering, turbo-charged nonsense, supernatural street fights with irreverent energy",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Wild, funny, romantic, unhinged",
-      "key_features": "Occult iconography, speed-burst framing, weird-creature silhouettes, high-energy reaction shots, teen-banter body language",
-      "creative_brief": "Two teenagers argue over convenience-store snacks while a ghost and an alien crash through the same window at escape velocity. The frame crackles with the friction of irreverent youth colliding against cosmic nonsense, each punch line drawn at the speed of a skipped heartbeat. Romance hides in the recoil, blooming in the split-second between impact and laughter."
-    }
+    id: 'SP05-126',
+    name: 'Dandadan - Paranormal Turbo Romance Brawl',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Occult comedy collision, ghost-speed punch-ups, alien weirdness, teen-romance bickering, turbo-charged nonsense, supernatural street fights with irreverent energy',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Wild, funny, romantic, unhinged',
+      key_features:
+        'Occult iconography, speed-burst framing, weird-creature silhouettes, high-energy reaction shots, teen-banter body language',
+      creative_brief:
+        'Two teenagers argue over convenience-store snacks while a ghost and an alien crash through the same window at escape velocity. The frame crackles with the friction of irreverent youth colliding against cosmic nonsense, each punch line drawn at the speed of a skipped heartbeat. Romance hides in the recoil, blooming in the split-second between impact and laughter.',
+    },
   },
   {
-    "id": "SP05-127",
-    "name": "Hell's Paradise - Poison Garden Executioner",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Executioner blades in hallucinogenic paradise, floral horror, island monstrosities, sacred violence, Edo-period criminal fatalism colliding with impossible botanical terror",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Lethal, lush, mystical, brutal",
-      "key_features": "Flower-and-blood contrast, executioner sword poses, poisonous color pops, creature-body horror, dense island backdrops",
-      "creative_brief": "Blossoms bloom from wounds, each petal a lethal geometry drawn in the space between execution and enlightenment. This island paradise is the cruelest tutor, schooling condemned souls in the grammar of beautiful death. Blood feeds a garden that remembers every name whispered into its soil."
-    }
+    id: 'SP05-127',
+    name: "Hell's Paradise - Poison Garden Executioner",
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Executioner blades in hallucinogenic paradise, floral horror, island monstrosities, sacred violence, Edo-period criminal fatalism colliding with impossible botanical terror',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Lethal, lush, mystical, brutal',
+      key_features:
+        'Flower-and-blood contrast, executioner sword poses, poisonous color pops, creature-body horror, dense island backdrops',
+      creative_brief:
+        'Blossoms bloom from wounds, each petal a lethal geometry drawn in the space between execution and enlightenment. This island paradise is the cruelest tutor, schooling condemned souls in the grammar of beautiful death. Blood feeds a garden that remembers every name whispered into its soil.',
+    },
   },
   {
-    "id": "SP05-038",
-    "name": "Psychedelic Psychic Minimalism",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Sketchy psychic eruptions, raw emotional states, pop-abstract energy storms, esper kids, broccoli-head protagonist, finger-flick devastation, emotional percentage meters",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Strange, cathartic, emotional, unexpected",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "Psychic storms bloom from the quietest heart, sketchy lines vibrating with unsaid feeling before exploding into pop-abstract cataclysm. A boy's emotions reach one hundred percent and the world fractures into the most tender apocalypse ever drawn — paint smeared by the hand of overwhelming empathy."
-    }
+    id: 'SP05-038',
+    name: 'Psychedelic Psychic Minimalism',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Psychic-expression action style with sketch-rough spontaneity, emotional volatility, and pop-abstract rupture dynamics',
+      form_and_line:
+        'Intentional line wobble, scribble-energy bursts, contour destabilization under emotional peaks, and hand-drawn unpredictability',
+      color_palette:
+        'Hyper-saturated emotional spikes over neutral calm fields, abrupt neon surges, and cathartic chroma inversions',
+      lighting_setup:
+        'Unstable luminance pulses, aura bloom surges, and expression-tied exposure shifts that mirror emotional escalation',
+      material_texture:
+        'Crayon-like edge noise, sketch grain overlays, painterly smear accents, and cel-polish broken by raw marks',
+      render_quality:
+        'Stylized high-energy rendering that keeps rough expressive artifacts intentionally visible as part of the finish',
+      spatial_distortion:
+        'Emotion-driven perspective warping and psychic blast deformation with elastic frame pressure',
+      atmosphere: 'Cathartic, unstable, empathetic, surreal, explosive',
+      key_features:
+        'Sketch-to-burst transitions, emotion-linked visual instability, pop-abstract psychic motifs, rough-expression fidelity',
+      creative_brief:
+        'Define this preset by emotional-energy visualization: sketch roughness should escalate into abstract psychic rupture, making inner state the structural driver of style.',
+    },
   },
   {
-    "id": "SP05-130",
-    "name": "Mob Psycho 100 - Psychic Paint-Surge Meltdown",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Middle-school psychic awkwardness exploding into paint-like energy storms, emotional overload meter, sketchy sincerity, abstract telekinetic outbursts, humility versus apocalypse",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Earnest, explosive, weird, cathartic",
-      "key_features": "Paint-surge psychic effects, simple sincere faces, emotion-meter tension, abstract motion bursts, telekinetic debris halos",
-      "creative_brief": "Emotion crosses an invisible threshold and the world becomes a paint storm howling with every color the psyche can manufacture. A boy with a bowl cut holds back the apocalypse with nothing but honesty and trembling hands. The universe listens when feeling overflows, and it screams back in abstract."
-    }
+    id: 'SP05-130',
+    name: 'Mob Psycho 100 - Psychic Paint-Surge Meltdown',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Middle-school psychic awkwardness exploding into paint-like energy storms, emotional overload meter, sketchy sincerity, abstract telekinetic outbursts, humility versus apocalypse',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Earnest, explosive, weird, cathartic',
+      key_features:
+        'Paint-surge psychic effects, simple sincere faces, emotion-meter tension, abstract motion bursts, telekinetic debris halos',
+      creative_brief:
+        'Emotion crosses an invisible threshold and the world becomes a paint storm howling with every color the psyche can manufacture. A boy with a bowl cut holds back the apocalypse with nothing but honesty and trembling hands. The universe listens when feeling overflows, and it screams back in abstract.',
+    },
   },
   {
-    "id": "SP05-137",
-    "name": "Dr. Stone - Science Kingdom Action Blueprint",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Primal wilderness civilization-building fused with competitive action energy, bright invention montages, chemistry-as-power spectacle, survival optimism and tactical intelligence",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Inventive, bold, optimistic, strategic",
-      "key_features": "Blueprint overlays, primitive-to-modern tool contrast, science symbols, bright expression acting, invention triumph moments",
-      "creative_brief": "A boy counts the seconds until civilization returns, using chemistry as his war drum and ingenuity as his compass. Stone-age horizons crack open under the pressure of relentless optimism, each invention a love letter to the future almost lost. The wilderness does not know it is being rebuilt until the first lightbulb flickers on."
-    }
+    id: 'SP05-137',
+    name: 'Dr. Stone - Science Kingdom Action Blueprint',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Primal wilderness civilization-building fused with competitive action energy, bright invention montages, chemistry-as-power spectacle, survival optimism and tactical intelligence',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Inventive, bold, optimistic, strategic',
+      key_features:
+        'Blueprint overlays, primitive-to-modern tool contrast, science symbols, bright expression acting, invention triumph moments',
+      creative_brief:
+        'A boy counts the seconds until civilization returns, using chemistry as his war drum and ingenuity as his compass. Stone-age horizons crack open under the pressure of relentless optimism, each invention a love letter to the future almost lost. The wilderness does not know it is being rebuilt until the first lightbulb flickers on.',
+    },
   },
   {
-    "id": "SP05-031",
-    "name": "Painterly Blade Fantasy",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Ornamental swordplay, flowing elemental trails, historical fantasy grandeur, water-breathing forms, taisho-era settings, demon-blood arts, patterned haori jackets",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Heroic, luminous, graceful, resolute",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "Water dragons spiral from the edge of a katana, ink and breath fusing into one luminous killing stroke. Taisho-era moonlight washes over patterned haori jackets and demon-blood flowers, each frame a woodblock print brought to furious life — a Hiroshige landscape animated by the fire of sacrifice."
-    }
+    id: 'SP05-031',
+    name: 'Painterly Blade Fantasy',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Ornamental blade-fantasy action style with calligraphic motion, ceremonial elegance, and mythic elemental flourish',
+      form_and_line:
+        'Curved sword-arc trajectories, decorative yet sharp contour control, fluid strike ribbons, and posture-led heroic silhouette grammar',
+      color_palette:
+        'Luminous jewel accents over deep ink neutrals, selective vermilion-gold highlights, and atmospheric cool-warm transitions',
+      lighting_setup:
+        'Moonlit high-contrast accents, controlled bloom around slash arcs, and dramatic rim isolation for ceremonial action beats',
+      material_texture:
+        'Fine textile pattern hints, polished steel glint behavior, painterly effect overlays, and low-noise digital cel finish',
+      render_quality:
+        'Premium stylized action rendering that balances ornamental detail with crisp combat readability',
+      spatial_distortion:
+        'Elegant directional foreshortening with spiral motion emphasis and fluid depth pulls around weapon arcs',
+      atmosphere: 'Heroic, graceful, luminous, solemn, resolute',
+      key_features:
+        'Calligraphic slash language, ornamental combat elegance, mythic elemental arc motifs, ceremonial silhouette staging',
+      creative_brief:
+        'Keep this preset rooted in decorative blade choreography and luminous arc design, treating elemental flow as visual calligraphy rather than franchise-specific narrative cues.',
+    },
   },
   {
-    "id": "SP05-033",
-    "name": "Chaotic Splatter Action",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Frantic violence, offbeat humor, messy cityscapes, dirty cinematic framing, chainsaw devil transforms, blood-splatter comedy, newspaper manga panels, door-kick entries",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Deranged, explosive, chaotic, visceral",
-      "key_features": "Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography",
-      "creative_brief": "A chainsaw revs through the fourth wall, spraying ink-splatter comedy across filthy urban frames like a deranged love letter to celluloid chaos. Newspaper halftones collide with sakuga-level ultraviolence, the sublime and the stupid sharing a cigarette in a trashed apartment while the world burns beautifully outside."
-    }
+    id: 'SP05-033',
+    name: 'Chaotic Splatter Action',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Grindhouse-splatter action style with punk absurdity, grotesque humor, and chaotic cinematic framing energy',
+      form_and_line:
+        'Jagged impact strokes, aggressive silhouette breakage, halftone-panel interruptions, and deliberately unstable line cadence',
+      color_palette:
+        'Dirty reds and oily blacks with acidic neon accents, paper-gray halftone fields, and high-impact contrast bursts',
+      lighting_setup:
+        'Harsh practical glare, grime-filtered shadows, strobe-like impact flashes, and uneven luminance for manic pacing',
+      material_texture:
+        'Ink splatter overlays, print-noise grit, smeared debris particulates, and roughened compositing layers',
+      render_quality:
+        'High-intensity splatter-action rendering with controlled visual mess and sharp comedic-shock timing',
+      spatial_distortion:
+        'Abrupt perspective warps and frame rupture moments that amplify violent-comic disorientation',
+      atmosphere: 'Deranged, visceral, anarchic, darkly comic, volatile',
+      key_features:
+        'Splatter-comedy contrast, panel-break chaos, grindhouse texture stack, unstable impact framing',
+      creative_brief:
+        'Preserve identity through grindhouse splatter grammar and absurd tonal collision: rough print textures and manic frame ruptures should define the style regardless of character premise.',
+    },
   },
   {
-    "id": "SP05-122",
-    "name": "Chainsaw Man - Filthy Devil-Hunter Frenzy",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Urban grime, devil-contract desperation, splattered apartment-block carnage, greasy youth burnout, industrial gore comedy, ridiculous violence played with deadpan panic, civic-collapse devil hunting",
-      "form_and_line": "Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking",
-      "color_palette": "Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops",
-      "lighting_setup": "High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination",
-      "material_texture": "Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish",
-      "render_quality": "Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition",
-      "spatial_distortion": "Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening",
-      "atmosphere": "Chaotic, filthy, feral, desperate",
-      "key_features": "Industrial splatter, jagged power silhouettes, exhausted youth body language, grim city clutter, violent comic timing",
-      "creative_brief": "Blood dries on concrete and nobody stops to clean it — the filth of devil hunting is not aesthetic but environmental, the air itself greasy with exhaust and bad decisions. Violence arrives with deadpan inevitability, bodies ragdolling through apartment-block corridors as if physics gave up. The horror laughs at itself, and that hollow cackle is the soundtrack of youth spent paying someone else's debts."
-    }
+    id: 'SP05-122',
+    name: 'Chainsaw Man - Filthy Devil-Hunter Frenzy',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Urban grime, devil-contract desperation, splattered apartment-block carnage, greasy youth burnout, industrial gore comedy, ridiculous violence played with deadpan panic, civic-collapse devil hunting',
+      form_and_line:
+        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+      color_palette:
+        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+      lighting_setup:
+        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+      material_texture:
+        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+      render_quality:
+        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+      spatial_distortion:
+        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+      atmosphere: 'Chaotic, filthy, feral, desperate',
+      key_features:
+        'Industrial splatter, jagged power silhouettes, exhausted youth body language, grim city clutter, violent comic timing',
+      creative_brief:
+        "Blood dries on concrete and nobody stops to clean it — the filth of devil hunting is not aesthetic but environmental, the air itself greasy with exhaust and bad decisions. Violence arrives with deadpan inevitability, bodies ragdolling through apartment-block corridors as if physics gave up. The horror laughs at itself, and that hollow cackle is the soundtrack of youth spent paying someone else's debts.",
+    },
   },
   {
-    "id": "SP05-025",
-    "name": "Shadow Notebook Thriller",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Severe lighting, cat-and-mouse psychology, elite interiors, symbolic menace, death-note pages, notebook rules, shinigami eyes, apple motifs",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Tense, cerebral, chilling, intellectual",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "Severe lighting carves a shinigami's grin from absolute darkness while ruled notebook pages flutter like death warrants across a chessboard of cat-and-mouse psychology. Apple motifs rot in the margins, the clean 2000s digital polish making the intellectual menace feel surgical—every shadow a calculation, every calm expression a confession withheld."
-    }
+    id: 'SP05-025',
+    name: 'Shadow Notebook Thriller',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Cerebral thriller-anime style with moral-void minimalism, symbolic menace, and strategic psychological framing',
+      form_and_line:
+        'Controlled precision contours, stillness-priority pose language, sharp silhouette partitions, sparse gesture economy for tension buildup',
+      color_palette:
+        'Near-monochrome neutrals, selective crimson warning accents, cold amber paper tones, deep black shadow architecture',
+      lighting_setup:
+        'Hard chiaroscuro segmentation, surgical highlight placement, constrained ambient lift, and intentional darkness as compositional mass',
+      material_texture:
+        'Matte paper-like surfaces, subtle analog grain, polished low-noise cel layers, restrained reflective cues',
+      render_quality:
+        'High-discipline early-digital anime finish optimized for suspense readability and symbolic object prominence',
+      spatial_distortion:
+        'Compressed psychological space with strategic negative voids and perspective restraint to amplify mental pressure',
+      atmosphere: 'Calculating, oppressive, cold, analytical, ominous',
+      key_features:
+        'Chiaroscuro intellect, symbolic prop hierarchy, stillness-driven menace, contrast-led narrative tension',
+      creative_brief:
+        'Build identity through psychological contrast logic—severe light partition, symbolic object emphasis, and compositional restraint—so the preset reads as cerebral suspense across any subject matter.',
+    },
   },
   {
-    "id": "SP05-148",
-    "name": "Baccano! - Jazz Railcrime Ensemble",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Prohibition-era train violence, immortal gangsters, jazz-age ensemble chaos, amber barrooms, nonlinear pulp cool, smiling criminals and bloody miracles",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Riotous, jazzy, dangerous, charismatic",
-      "key_features": "Train-car action, 1930s fashion, ensemble staging, amber bar lighting, pulp-crime body language",
-      "creative_brief": "A train car becomes a ballroom for bullets and immortals who forgot how to die, jazz keeping time while bodies hit the floor and get back up grinning. Amber light pools in whiskey glasses while nonlinear chaos writes its own pulp scripture. The 1930s never ended — it just learned to smile through the blood."
-    }
+    id: 'SP05-148',
+    name: 'Baccano! - Jazz Railcrime Ensemble',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Prohibition-era train violence, immortal gangsters, jazz-age ensemble chaos, amber barrooms, nonlinear pulp cool, smiling criminals and bloody miracles',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Riotous, jazzy, dangerous, charismatic',
+      key_features:
+        'Train-car action, 1930s fashion, ensemble staging, amber bar lighting, pulp-crime body language',
+      creative_brief:
+        'A train car becomes a ballroom for bullets and immortals who forgot how to die, jazz keeping time while bodies hit the floor and get back up grinning. Amber light pools in whiskey glasses while nonlinear chaos writes its own pulp scripture. The 1930s never ended — it just learned to smile through the blood.',
+    },
   },
   {
-    "id": "SP05-021",
-    "name": "Headband Ninja Journey",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Youthful ninja adventure, village rooftops, earthy speed, determined rivalry, headband motifs, kunai silhouettes, forest training grounds, chakra surges",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Energetic, earnest, youthful, determined",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "A headband catches the wind above village rooftops, chakra surging through kunai silhouettes as youthful determination burns across training-ground forests colored in saturated digital-cel primaries. Every leap is framed with the earnest conviction of a story just beginning, speed lines tracing the arc of a dream in motion."
-    }
+    id: 'SP05-021',
+    name: 'Headband Ninja Journey',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Youth-shonen velocity style with disciplined martial iconography, optimistic momentum arcs, and early-digital action clarity',
+      form_and_line:
+        'Clean directional inking, compact contour economy, speed-line vectors, emblematic prop silhouettes, readable pose architecture',
+      color_palette:
+        'Saturated primaries with warm earth underlay, energetic accent spikes, high-contrast cel blocks, restrained shadow neutrals',
+      lighting_setup:
+        'Balanced key-fill anime model with brisk rim accents, controlled highlight pops, and smooth gradient transitions',
+      material_texture:
+        'Matte cel surface discipline, subtle broadcast-era noise, clean plate layering, minimal micro-surface clutter',
+      render_quality:
+        'Early-2000s digital-cel finish with crisp action legibility, stable compositing, and confident color separation',
+      spatial_distortion:
+        'Forward-leaning perspective thrust, elastic action staging, and trajectory-oriented framing for kinetic storytelling',
+      atmosphere: 'Driven, hopeful, kinetic, focused, resilient',
+      key_features:
+        'Martial motif abstraction, readable motion vectors, optimistic action cadence, stylized rivalry energy without fixed setting',
+      creative_brief:
+        'Preserve a youthful combat grammar through motion-vector linework, emblematic silhouette cues, and saturated cel dynamism so the style transfers across subjects without relying on a specific locale.',
+    },
   },
   {
-    "id": "SP05-022",
-    "name": "Urban Spirit Blade",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Street fashion, oversized blades, monochrome contrast, supernatural swagger, bankai releases, soul-cutting zanpakuto, hollow masks, spiritual pressure",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Stylish, intense, iconic, cool",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "A zanpakuto release tears the sky open above street-fashion warriors caught mid-transformation, hollow masks splitting the frame between monochrome menace and supernatural swagger. The oversized blade catches rim light like a promise, every pose radiating the iconic cool of a generation that learned confidence from ink and animation."
-    }
+    id: 'SP05-022',
+    name: 'Urban Spirit Blade',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Urban-supernatural blade style with monochrome dominance, high-fashion severity, and spiritual pressure visualized as controlled aura geometry',
+      form_and_line:
+        'Long weapon-led diagonals, razor contour precision, severe silhouette blocking, mask-like facial simplification, ink-clean negative-space cuts',
+      color_palette:
+        'Black-white core with selective cyan-violet spectral accents, silver steel mids, and sparse high-intensity contrast nodes',
+      lighting_setup:
+        'Hard-edged rim illumination, selective underglow, concentrated aura bloom pockets, and dramatic shadow partitioning',
+      material_texture:
+        'Smooth matte cloth against polished blade sheen, faint particle haze, low-grain digital cel patina, crisp effect overlays',
+      render_quality:
+        'Premium early-digital shonen polish optimized for iconic pose readability and supernatural edge fidelity',
+      spatial_distortion:
+        'High-angle slash trajectories with compressed depth lanes and silhouette-priority framing for impact authority',
+      atmosphere: 'Severe, iconic, charged, controlled, intimidating',
+      key_features:
+        'Monochrome supremacy, blade-vector composition, aura-pressure motifs, severe fashion silhouettes, mask-signature abstraction',
+      creative_brief:
+        'Anchor this preset in monochrome sword-energy language and strict silhouette authority; emphasize spiritual-pressure contrast design over any specific transformation scene.',
+    },
   },
   {
-    "id": "SP05-023",
-    "name": "Grand Pirate Adventure",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Elastic anatomy, bright oceans, exaggerated faces, treasure-hunt exuberance, straw-hat silhouettes, pirate flags, sea-king monsters, devil-fruit powers",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Joyful, adventurous, spirited, free",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "Elastic faces stretch impossibly wide against oceans painted in hues too bright for reality, straw-hat silhouettes bouncing across the horizon with the uncontainable joy of absolute freedom. Devil-fruit logic bends anatomy into pure emotional expression, every frame a declaration that adventure is not a destination but a way of seeing."
-    }
+    id: 'SP05-023',
+    name: 'Grand Pirate Adventure',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Elastic-adventure shonen style with exaggerated expression physics, optimistic maritime energy, and carnival-scale freedom tone',
+      form_and_line:
+        'Rubberized silhouette stretching, expressive facial exaggeration, playful action arcs, and high-clarity contour timing',
+      color_palette:
+        'Sunlit high-saturation primaries with tropical cyan-azure fields, warm accent bursts, and cheerful contrast control',
+      lighting_setup:
+        'Bright open-sky keys, clean cel highlights, soft gradient fill, and lively rim accents for buoyant readability',
+      material_texture:
+        'Smooth cel-polish surfaces, low-noise digital grain, crisp effect overlays, and clean line-art compositing',
+      render_quality:
+        'Early-digital adventure anime finish emphasizing exuberant readability, elastic staging, and colorful momentum',
+      spatial_distortion:
+        'Stretch-and-squash perspective logic with playful foreshortening and horizon-expanding exploratory framing',
+      atmosphere: 'Joyful, adventurous, playful, free, high-spirited',
+      key_features:
+        'Elastic expression grammar, high-sun adventure palette, playful action deformation, exploratory kinetic framing',
+      creative_brief:
+        'Keep identity anchored in elastic expressive physics and bright exploratory momentum; the style should communicate boundless adventure energy without relying on specific pirate or lore motifs.',
+    },
   },
   {
-    "id": "SP05-028",
-    "name": "Lo-Fi Sword Roadtrip",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Hip-hop cadence, loose swagger, historical roads, rhythmic action cuts, samurai-champloo beats, graffiti aesthetic, sunflowers, sword-dance duels",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Cool, kinetic, rhythmic, improvisational",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "A beat drops and two blades cut the frame in half, Edo roads stretching into turntable rhythm beneath a graffiti sky. Sunflowers bend toward dust and swagger, each panel a scratched vinyl track of improvisational sword poetry — loose, lethal, and impossibly cool."
-    }
+    id: 'SP05-028',
+    name: 'Lo-Fi Sword Roadtrip',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Lo-fi rhythm-action style blending sword kinetics with streetwise groove, improvised cool, and beat-synced visual pacing',
+      form_and_line:
+        'Swinging diagonal cut-lines, loose-but-precise contour attitude, rhythm-marked pose transitions, and improvised gesture cadence',
+      color_palette:
+        'Dusty warm earth bases with punchy graffiti accent colors, vinyl-like muted blacks, and selective neon pulse notes',
+      lighting_setup:
+        'Low-sun directional wash, rhythmic shadow slicing, warm haze overlays, and beat-accent highlight pops',
+      material_texture:
+        'Film-grain and scratch patina, matte cel surfaces, slight urban grit overlays, and analog-mix visual warmth',
+      render_quality:
+        'Early-digital anime polish with lo-fi texture seasoning and rhythm-first action readability',
+      spatial_distortion:
+        'Beat-driven framing shifts with kinetic perspective snaps and flow-preserving directional depth',
+      atmosphere: 'Cool, laid-back, kinetic, improvisational, stylish',
+      key_features:
+        'Rhythm-cut action grammar, lo-fi texture stack, swagger-forward posing, street-meets-sword visual cadence',
+      creative_brief:
+        'Define this preset by rhythm-synced action language and lo-fi swagger: sword motion should feel musically improvised, with texture and pacing as the transferable identity rather than a specific historical road scene.',
+    },
   },
   {
-    "id": "SP05-029",
-    "name": "Chaotic Indie Adolescence",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Explosive coming-of-age surrealism, abrupt style shifts, youthful emotional whiplash, baseball-bat girl, Vespa scooters, manga panel pop-ups, guitar smashes",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Wild, formative, rebellious, explosive",
-      "key_features": "Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy",
-      "creative_brief": "A Vespa tears through the fabric of suburban boredom as manga panels erupt from asphalt and guitars swing like battle-axes. Reality flickers wildly between animation styles — adolescence detonating in every chromatic burst, every speed-line fracture, every absurd cut that feels more honest than the real."
-    }
+    id: 'SP05-029',
+    name: 'Chaotic Indie Adolescence',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Adolescent kinetic-collage style with abrupt tonal pivots, rebellious surreal pop energy, and anti-linear visual rhythm',
+      form_and_line:
+        'Mixed-grammar line states, impact-smear transitions, panel-break overlays, elastic contour interruptions, intentionally uneven stroke cadence',
+      color_palette:
+        'Hyper-saturated primaries colliding with acidic neons, abrupt pastel inversions, high-chroma bursts against muted reset zones',
+      lighting_setup:
+        'Rapid contrast switches, flash-frame highlights, intentional exposure jumps, and graphic shadow snapping between beats',
+      material_texture:
+        'Hybrid cel-polish with manga halftone inserts, rough print fragments, and controlled noise patches for collage friction',
+      render_quality:
+        'Experimental early-digital anime treatment favoring stylistic rupture, energetic readability, and emotionally volatile transitions',
+      spatial_distortion:
+        'Perspective ruptures, jump-cut framing logic, and composition resets that mimic impulsive developmental turbulence',
+      atmosphere: 'Restless, rebellious, volatile, cathartic, raw',
+      key_features:
+        'Multi-style collision grammar, panel-break kinetics, chroma whiplash, anti-linear composition pacing',
+      creative_brief:
+        'Keep this preset defined by abrupt stylistic modulation and collage-like motion logic, turning emotional volatility into a transferable visual system rather than a specific coming-of-age scene.',
+    },
   },
   {
-    "id": "SP05-142",
-    "name": "Black Lagoon - South Seas Gun-Runner Grit",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Tropical criminal port cities, cigarettes and speedboats, hard-bitten mercenary action, gunmetal humidity, profanity-laced underworld cool, lawless modern noir",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Gruff, hot, dangerous, worldly",
-      "key_features": "Gun-action framing, tropical industrial docks, criminal fashion silhouettes, speedboat spray, hardboiled expressions",
-      "creative_brief": "Salt air mixes with cordite while a cigarette glows at the edge of the dock, the ember the only honest light in a port city built on lies. No one here is innocent, but some are more interesting than others, and the sea does not judge — it just swallows the evidence. Every speedboat departure is a question mark trailing across the water."
-    }
+    id: 'SP05-142',
+    name: 'Black Lagoon - South Seas Gun-Runner Grit',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Tropical criminal port cities, cigarettes and speedboats, hard-bitten mercenary action, gunmetal humidity, profanity-laced underworld cool, lawless modern noir',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Gruff, hot, dangerous, worldly',
+      key_features:
+        'Gun-action framing, tropical industrial docks, criminal fashion silhouettes, speedboat spray, hardboiled expressions',
+      creative_brief:
+        'Salt air mixes with cordite while a cigarette glows at the edge of the dock, the ember the only honest light in a port city built on lies. No one here is innocent, but some are more interesting than others, and the sea does not judge — it just swallows the evidence. Every speedboat departure is a question mark trailing across the water.',
+    },
   },
   {
-    "id": "SP05-143",
-    "name": "Darker than Black - Contract Killer Night Rain",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Urban electrical espionage, masked contractors, cold neon rain, conspiratorial apartment blocks, emotion-suppressed assassin cool, after-midnight tech noir",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Cold, secretive, sleek, lonely",
-      "key_features": "Electric effect threads, masked silhouettes, rainlit city alleys, covert-operatives framing, controlled facial acting",
-      "creative_brief": "Neon bleeds down the window of a safehouse where nobody feels safe, and a contractor checks the time with a face emptied of everything except the cost of the next mission. Every power subtracts a piece of self, and the balance sheet is written in cold rain. The city at 3 AM is just another mask, and everyone wears it well."
-    }
+    id: 'SP05-143',
+    name: 'Darker than Black - Contract Killer Night Rain',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Urban electrical espionage, masked contractors, cold neon rain, conspiratorial apartment blocks, emotion-suppressed assassin cool, after-midnight tech noir',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Cold, secretive, sleek, lonely',
+      key_features:
+        'Electric effect threads, masked silhouettes, rainlit city alleys, covert-operatives framing, controlled facial acting',
+      creative_brief:
+        'Neon bleeds down the window of a safehouse where nobody feels safe, and a contractor checks the time with a face emptied of everything except the cost of the next mission. Every power subtracts a piece of self, and the balance sheet is written in cold rain. The city at 3 AM is just another mask, and everyone wears it well.',
+    },
   },
   {
-    "id": "SP05-144",
-    "name": "Samurai Champloo - Lo-Fi Edo Swagger",
-    "category": "1. Modern Shonen & Action",
-    "negativePrompt": "realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature",
-    "style": {
-      "aesthetic": "Edo roadtrip remixed with hip-hop attitude, loose sword swagger, vinyl-scratch pacing, dusty sunlight, anachronistic cool threaded through wandering samurai adventure",
-      "form_and_line": "Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity",
-      "color_palette": "Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range",
-      "lighting_setup": "Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow",
-      "material_texture": "Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain",
-      "render_quality": "Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending",
-      "spatial_distortion": "Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses",
-      "atmosphere": "Loose, stylish, sunbaked, rebellious",
-      "key_features": "Streetwise sword poses, lo-fi travel scenery, rhythm-first action timing, relaxed body language, dusty road compositions",
-      "creative_brief": "Two swords and a record scratch walk through Edo like they invented the future and forgot to tell anyone. Dust rises from sandals that have traveled nowhere and everywhere, each step a beat in a wandering rhythm. The road is just a long sample loop waiting for the next cut."
-    }
-  }
+    id: 'SP05-144',
+    name: 'Samurai Champloo - Lo-Fi Edo Swagger',
+    category: '1. Modern Shonen & Action',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+    style: {
+      aesthetic:
+        'Edo roadtrip remixed with hip-hop attitude, loose sword swagger, vinyl-scratch pacing, dusty sunlight, anachronistic cool threaded through wandering samurai adventure',
+      form_and_line:
+        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+      color_palette:
+        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+      lighting_setup:
+        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+      material_texture:
+        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+      render_quality:
+        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+      spatial_distortion:
+        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+      atmosphere: 'Loose, stylish, sunbaked, rebellious',
+      key_features:
+        'Streetwise sword poses, lo-fi travel scenery, rhythm-first action timing, relaxed body language, dusty road compositions',
+      creative_brief:
+        'Two swords and a record scratch walk through Edo like they invented the future and forgot to tell anyone. Dust rises from sandals that have traveled nowhere and everywhere, each step a beat in a wandering rhythm. The road is just a long sample loop waiting for the next cut.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

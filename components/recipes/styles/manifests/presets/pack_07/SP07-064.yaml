@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Floating sci-fi city, gas-giant mining colony, cloud-top civilization, retro-future elegance, sky-mining hub
-  form_and_line: Clean curves, domed landing-pad circles, spire-vanes, rounded-hull geometry, floating-platform discs
-  color_palette: Orange sunset, White, Gas-giant Pink, Tibanna Gold, Sky-reflected Amber, Cloud-silver
-  lighting_setup: Sunset, orange-horizon bath, interior-warm gold, cloud-reflected glow, landing-beacon lights
-  material_texture: Metal, cloud, smooth hull, sleek alloy, transparisteel, polished deck
-  render_quality: Utopian, mining, Star-Wars Cloud-City beauty, sunset-metropolis elegance, retro-future luxury
-  spatial_distortion: None
-  atmosphere: Beautiful, high, administrative-calm, gas-giant-horizon, luxury-above-chaos, carbon-frozen serenity
-  key_features: Orange sky, cloud spires, landing platforms, smooth domes, skyline silhouette, tibanna refinery
-  creative_brief: Orange sky stretches to gas-giant infinity, cloud spires catching the last light of a sun that never fully sets. Domed platforms hover with art deco grace, retro-future elegance suspended above atmospheric storms. The city floats on the breath of a planet, administrative calm wrapped in tibanna gold and carbon-freeze serenity.
+  aesthetic: Aerostat-retrofuturist luxury architecture style with buoyant megastructure forms and serene high-altitude modernism
+  form_and_line: Streamlined aerodynamic curves, concentric platform geometries, slender fin-like spires, soft dome articulation
+  color_palette: Warm amber atmosphere, pale ivory structure tones, rosy gas-cloud gradients, brushed gold accents, cool silver highlights
+  lighting_setup: Diffuse horizon glow with elevated ambient wrap, soft beacon punctuations, restrained specular skyline shimmer
+  material_texture: Polished alloy skin, satin glass surfaces, smooth composite hulls, fine seam detailing, low-roughness deck plates
+  render_quality: Premium speculative-architecture finish with retro-future elegance, high clarity, and controlled atmospheric bloom
+  spatial_distortion: Vertical openness with gentle curvature emphasis and depth staged through stacked floating structural tiers
+  atmosphere: Majestic, quiet, elevated, orderly, aspirational
+  key_features: Aerostat silhouette language, dome-platform hierarchy, warm atmosphere-grade color wash, refined metallic surface treatment
+  creative_brief: >-
+    Keep the preset defined by high-altitude retrofuturist architecture
+    grammar: buoyant forms, warm atmospheric light, and polished structural
+    serenity should remain recognizable across different subjects.
 avoidRules:
   - ground
 assets:

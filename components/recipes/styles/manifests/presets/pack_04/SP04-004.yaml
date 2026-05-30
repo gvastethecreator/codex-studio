@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Action manga
-  form_and_line: Speed lines
-  color_palette: Black and White, screentone greyscale, high-contrast zip
-  lighting_setup: High contrast, dramatic shadow cuts, motion-line energy
-  material_texture: Screentone
-  render_quality: Dynamic, Japanese, crisp screentone gradation, editorial polish
-  spatial_distortion: Spiky hair
-  atmosphere: Intense, battle, shonen spirit, explosive confrontation
-  key_features: Speed lines, action kanji, power-up aura
-  creative_brief: Speed lines tear through negative space like wind made visible, the page vibrating with the kinetic language of clashing wills. Screentone gradients build tension in greyscale, each dot pattern a pressure valve for the energy about to explode. This is a language of motion and determination, where the quiet moment between panels holds more threat than any strike.
+  aesthetic: High-energy action manga in monochrome print language
+  form_and_line: Aggressive contour weight shifts, speed-line fields, impact burst geometry
+  color_palette: Black, white, and screentone grayscale hierarchy
+  lighting_setup: Hard-contrast shadow cuts with directional momentum accents
+  material_texture: Visible screentone raster and ink-solid blacks
+  render_quality: Dynamic editorial panel finish with sharp kinetic readability
+  spatial_distortion: Exaggerated perspective and motion warping during impact moments
+  atmosphere: Intense, competitive, escalation-driven
+  key_features: Speed vectors, panel impact framing, energy-emphasis effects
+  creative_brief: >-
+    Drive action through panel rhythm, value punch, and directional line force. Prioritize kinetic clarity and emotional intensity using bold black masses, screentone modulation, and perspective exaggeration that keeps movement readable at a glance.
 avoidRules:
   - color
   - american comic

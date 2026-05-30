@@ -23,6 +23,8 @@ function formatRow(row: ProviderInputAuditRow) {
       `promptChars=${estimate}`,
       `payloadChars=${row.compiledPayloadChars}`,
       `sourceSpecChars=${row.sourceSpecChars}`,
+      `assets=${row.assetRefCount}`,
+      `contract=${row.providerSessionContractId ?? 'none'}`,
       `directives=${directives}`,
       leaks,
     ].join(' | ') + notes

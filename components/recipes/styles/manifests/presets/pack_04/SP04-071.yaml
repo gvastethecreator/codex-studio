@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Tonal print
-  form_and_line: Etched outline
-  color_palette: Watercolor-like ink, tonal-wash range, rosin-texture tone
-  lighting_setup: Soft wash, rosin-grain diffusion, tonal-merge subtlety
-  material_texture: Rosin grain
-  render_quality: Goya dark tonal print, haunting depth, sleep of reason
-  spatial_distortion: None
-  atmosphere: Somber, tonal, romantic darkness, gothic introspection
-  key_features: Wash effect, aquatint grain, tonal gradation
-  creative_brief: Tone pools across the plate in soft gradients built from the bite of acid on resin dust, each grain a tiny well of ink. The image emerges in atmospheric softness, edges dissolving into romantic ambiguity. This is darkness rendered as velvet, where shadow becomes the primary medium and light the precious exception.
+  aesthetic: Granular tonal etching with wash-like shadow fields
+  form_and_line: Light etched scaffolding under dominant tonal masses
+  color_palette: Smoke black, sepia umber, aged paper cream, muted iron gray
+  lighting_setup: Diffused tonal bloom with softly merged edge falloff
+  material_texture: Rosin-grain stipple, acid-bitten porosity, powdery plate tone
+  render_quality: Atmospheric print depth with layered tonal veils and subtle edge dissolve
+  spatial_distortion: Stable print geometry; depth built by tone stacking
+  atmosphere: Somber, introspective, gothic-romantic, haunted stillness
+  key_features: Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast
+  creative_brief: >-
+    Treat tone as the primary drawing language. Use granular gradients to model volume, letting contours stay secondary and partially submerged in shadow. Keep transitions misted and cohesive, with controlled grain visibility that conveys handcrafted etch character without sacrificing legibility.
 avoidRules:
   - sharp lines
 assets:

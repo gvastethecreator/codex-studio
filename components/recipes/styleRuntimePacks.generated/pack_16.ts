@@ -5,19 +5,25 @@ import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeType
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () => import('./pack_16/2000s-classics-1').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_16/90s-golden-era-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_16/sports-competition-and-performance-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_16/sports-competition-and-performance-3').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
   () => import('./pack_16/studio-masterpieces-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_16/70s-and-80s-retro-anime-5').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_16/samurais-and-medieval-6').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_16/70s-and-80s-retro-anime-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_16/samurais-and-medieval-6').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_16/horror-7').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: "pack_16",
-    name: "Anime 03 — Anime Classics & Prestige",
-    description: "Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.",
+    id: 'pack_16',
+    name: 'Anime 03 — Anime Classics & Prestige',
+    description:
+      'Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.',
     presets: categoryPresets.flat(),
   };
 }

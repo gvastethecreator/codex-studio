@@ -3,19 +3,32 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_03/hard-surface-and-industrial-cgi-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_03/organic-and-character-cgi-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_03/environment-and-worldbuilding-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_03/lookdev-and-render-pipelines-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_03/hard-surface-and-industrial-cgi-1').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_03/organic-and-character-cgi-2').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_03/environment-and-worldbuilding-3').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_03/lookdev-and-render-pipelines-4').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
   () => import('./pack_03/stylized-3d-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: "pack_03",
-    name: "3D & CGI Rendering",
-    description: "A comprehensive collection of 80+ 3D rendering pipelines, visual looks, and material simulations.",
+    id: 'pack_03',
+    name: '3D & CGI Rendering',
+    description:
+      'A comprehensive collection of 80+ 3D rendering pipelines, visual looks, and material simulations.',
     presets: categoryPresets.flat(),
   };
 }

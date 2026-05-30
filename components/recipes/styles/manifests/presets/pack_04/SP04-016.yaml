@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Cyberpunk city
-  form_and_line: Sharp
-  color_palette: Neon on Black, cyan/magenta vapor, deep-night void
-  lighting_setup: City lights, neon reflection cascade, volumetric mist
-  material_texture: Rain, grit
-  render_quality: Blade Runner neon-noir dark, rainy dystopia, future-chic
-  spatial_distortion: None
-  atmosphere: Dystopian, cool, street-level future, chrome-and-wet-asphalt
-  key_features: Rain, neon reflection, persistent drizzle
-  creative_brief: Neon bleeds into wet asphalt, every reflection a promise and a warning written in cyan and magenta. Rain falls diagonally across the frame, a permanent weather system of noir inevitability. This is the city after midnight rendered as electric scripture, where every shadow might be hiding the future.
+  aesthetic: Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist editorial framing
+  form_and_line: Knife-edged contour work, selective heavy blacks, angular panel-ready geometry, restrained crosshatch texture
+  color_palette: Black-dominant base, cyan-magenta duotone energy, cool indigo shadows, sparse neon highlight punctuation
+  lighting_setup: Chiaroscuro with luminous edge accents, vapor-soft diffusion pockets, hard silhouette separation
+  material_texture: Slick reflective surfaces, particulate haze, coarse urban grit abstraction, chromed edge glints
+  render_quality: High-impact noir-comic rendering with poster-grade readability and controlled cinematic bloom
+  spatial_distortion: Perspective compression tuned for dramatic panel composition and foreground-background tension
+  atmosphere: Ominous, electric, tense, sophisticated, anti-utopian
+  key_features: Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion bands, sharp graphic silhouettes
+  creative_brief: >-
+    Treat this preset as a comic-language system: contrast hierarchy, duotone
+    chroma control, and graphic noir shadow architecture should define identity
+    without locking to a specific place.
 avoidRules:
   - daylight
   - nature

@@ -1,16 +1,16 @@
-# Architecture Deepening Roadmap
+# Hoja de ruta de deepening arquitectónico
 
-This roadmap tracks refactors that turn shallow modules into deeper modules with better locality, leverage, and testability. Related decisions live in `docs/adr/`.
+Esta hoja de ruta sigue refactors que convierten módulos superficiales en módulos más profundos, con mejor locality, leverage y testabilidad. Las decisiones relacionadas viven en `docs/adr/`.
 
 Current findings index: `docs/architecture/architecture-review-2026-05-29.md`.
 
-## Concepts
+## Conceptos
 
 - **Depth:** a small interface that hides significant useful behavior.
 - **Locality:** related behavior changes in one place instead of many callers.
 - **Deletion test:** if deleting a module makes complexity disappear, it was likely a pass-through. If complexity reappears across many callers, the module was earning its keep.
 
-## Accepted review batch - 2026-05-29
+## Lote de revisión aceptado - 2026-05-29
 
 The current accepted batch comes from `docs/architecture/architecture-review-2026-05-29.md`.
 
@@ -23,7 +23,7 @@ Execution order for the accepted batch:
 5. Deepen `Local Studio Sync` refresh policy semantics.
 6. Review naming and seam clarity in `Local Generation Run` provider-neutral flow.
 
-## Work tracker
+## Seguimiento de trabajo
 
 ### 1. Deepen the `Studio Shell` orchestration module
 
@@ -233,7 +233,7 @@ Execution order for the accepted batch:
 - **Exit criteria:** no pack depends on category id `videojuegos`; category ids are consistently `kebab-case`; taxonomy ids/tags are English-only; style validation remains green after each migration batch.
 - **Docs:** update `docs/STYLE_PRESET_AUTHORING.md`, `SKILLS.md`, and the findings index.
 
-## Phase 1: backend foundation
+## Fase 1: base de backend
 
 - ADR 0002: callable app factory.
 - ADR 0003: extract reference manager.
@@ -242,18 +242,18 @@ Execution order for the accepted batch:
 - ADR 0006: SSE job watcher.
 - ADR 0007: consolidate generation flows.
 
-## Phase 2: frontend state and components
+## Fase 2: estado frontend y componentes
 
 - ADR 0010: decompose god contexts.
 - ADR 0011: decompose `AppContent` god component.
 - ADR 0013: resolve the catalog/batch dual model.
 
-## Phase 3: recipes and UI modules
+## Fase 3: recipes y módulos de UI
 
 - ADR 0012: recipe context builder seam.
 - ADR 0015: extract the 3D viewport from the Camera recipe.
 
-## Phase 4: data model migration
+## Fase 4: migración de modelo de datos
 
 - ADR 0008: multi-library disk catalog.
 - ADR 0009: embedded image metadata.
@@ -261,7 +261,7 @@ Execution order for the accepted batch:
 - ADR 0016: deduplicate image extraction.
 - ADR 0017: centralize configuration.
 
-## Recommended order
+## Orden recomendado
 
 1. Backend foundation first, so the local API can be tested and supervised cleanly.
 2. Frontend state next, so the shell can consume fewer shallow interfaces.
@@ -270,7 +270,7 @@ Execution order for the accepted batch:
 
 For the currently accepted batch, prefer the explicit order in **Accepted review batch - 2026-05-27**.
 
-## Success metrics
+## Métricas de éxito
 
 - **Testability:** modules can be tested through their public interface without unrelated module mocking.
 - **Modularity:** deleting one module does not break unrelated concerns.

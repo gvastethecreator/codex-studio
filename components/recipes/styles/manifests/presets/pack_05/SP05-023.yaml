@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Elastic anatomy, bright oceans, exaggerated faces, treasure-hunt exuberance, straw-hat silhouettes, pirate flags, sea-king monsters, devil-fruit powers
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Joyful, adventurous, spirited, free
-  key_features: Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy
-  creative_brief: Elastic faces stretch impossibly wide against oceans painted in hues too bright for reality, straw-hat silhouettes bouncing across the horizon with the uncontainable joy of absolute freedom. Devil-fruit logic bends anatomy into pure emotional expression, every frame a declaration that adventure is not a destination but a way of seeing.
+  aesthetic: Elastic-adventure shonen style with exaggerated expression physics, optimistic maritime energy, and carnival-scale freedom tone
+  form_and_line: Rubberized silhouette stretching, expressive facial exaggeration, playful action arcs, and high-clarity contour timing
+  color_palette: Sunlit high-saturation primaries with tropical cyan-azure fields, warm accent bursts, and cheerful contrast control
+  lighting_setup: Bright open-sky keys, clean cel highlights, soft gradient fill, and lively rim accents for buoyant readability
+  material_texture: Smooth cel-polish surfaces, low-noise digital grain, crisp effect overlays, and clean line-art compositing
+  render_quality: Early-digital adventure anime finish emphasizing exuberant readability, elastic staging, and colorful momentum
+  spatial_distortion: Stretch-and-squash perspective logic with playful foreshortening and horizon-expanding exploratory framing
+  atmosphere: Joyful, adventurous, playful, free, high-spirited
+  key_features: Elastic expression grammar, high-sun adventure palette, playful action deformation, exploratory kinetic framing
+  creative_brief: >-
+    Keep identity anchored in elastic expressive physics and bright exploratory
+    momentum; the style should communicate boundless adventure energy without
+    relying on specific pirate or lore motifs.
 avoidRules:
   - realistic
   - 3d render

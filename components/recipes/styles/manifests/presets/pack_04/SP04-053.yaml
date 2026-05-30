@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Movie frame sketch
-  form_and_line: Loose pencil/marker
+  aesthetic: Storyboard previsualization style prioritizing shot communication, camera intent, and narrative beat sequencing
+  form_and_line: Loose pencil-marker shorthand with fast gesture notation, camera-arrow semantics, and frame-priority readability
   color_palette: Greyscale + Arrows, monochrome clarity, directional red accent
   lighting_setup: Value study, light-plan sweep, shot-design intent
   material_texture: Paper
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Motion blur lines
   atmosphere: Action, plan, pre-vis intensity, production hustle
   key_features: Frame border, camera arrows, shot description
-  creative_brief: Arrows trace camera movement through rough frames, each sketch a placeholder for a moment that will be shot and lit and performed. Loose lines capture blocking before performance, intention before execution. This is cinema before it becomes cinema, the raw napkin-sketch of a scene that will eventually fill a screen.
+  creative_brief: >-
+    Keep this preset anchored in storyboard grammar: framing boxes, motion
+    arrows, value-priority blocking, and shot-intent shorthand should define
+    identity without tying to one concrete sequence.
 avoidRules:
   - color
   - detailed

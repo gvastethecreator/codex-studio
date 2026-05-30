@@ -5,10 +5,28 @@ import type { ImageGenerationConfig } from '../types';
 import {
   buildJobAssets,
   buildLocalGenerationTaskPrompt,
+  createLocalRunBatchId,
+  createLocalRunTaskSpecId,
   resolveLocalGenerationProviderId,
 } from './localGenerationRun';
 
 describe('localGenerationRun', () => {
+  it('uses app-server-safe local generation identifiers', () => {
+    const batchId = createLocalRunBatchId(
+      () => 1234,
+      () => 0.5,
+    );
+    const specId = createLocalRunTaskSpecId({
+      batchId,
+      batchIndex: 2,
+      now: () => 5678,
+    });
+
+    expect(batchId).toMatch(/^batch-\d+-[a-z0-9]+$/);
+    expect(batchId).toBe('batch-1234-i');
+    expect(specId).toBe('spec-batch-1234-i-2-5678');
+  });
+
   it('uses the explicit provider before Studio Settings defaults', () => {
     expect(
       resolveLocalGenerationProviderId({

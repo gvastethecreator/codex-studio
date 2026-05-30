@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Street fashion, oversized blades, monochrome contrast, supernatural swagger, bankai releases, soul-cutting zanpakuto, hollow masks, spiritual pressure
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Stylish, intense, iconic, cool
-  key_features: Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy
-  creative_brief: A zanpakuto release tears the sky open above street-fashion warriors caught mid-transformation, hollow masks splitting the frame between monochrome menace and supernatural swagger. The oversized blade catches rim light like a promise, every pose radiating the iconic cool of a generation that learned confidence from ink and animation.
+  aesthetic: Urban-supernatural blade style with monochrome dominance, high-fashion severity, and spiritual pressure visualized as controlled aura geometry
+  form_and_line: Long weapon-led diagonals, razor contour precision, severe silhouette blocking, mask-like facial simplification, ink-clean negative-space cuts
+  color_palette: Black-white core with selective cyan-violet spectral accents, silver steel mids, and sparse high-intensity contrast nodes
+  lighting_setup: Hard-edged rim illumination, selective underglow, concentrated aura bloom pockets, and dramatic shadow partitioning
+  material_texture: Smooth matte cloth against polished blade sheen, faint particle haze, low-grain digital cel patina, crisp effect overlays
+  render_quality: Premium early-digital shonen polish optimized for iconic pose readability and supernatural edge fidelity
+  spatial_distortion: High-angle slash trajectories with compressed depth lanes and silhouette-priority framing for impact authority
+  atmosphere: Severe, iconic, charged, controlled, intimidating
+  key_features: Monochrome supremacy, blade-vector composition, aura-pressure motifs, severe fashion silhouettes, mask-signature abstraction
+  creative_brief: >-
+    Anchor this preset in monochrome sword-energy language and strict
+    silhouette authority; emphasize spiritual-pressure contrast design over any
+    specific transformation scene.
 avoidRules:
   - realistic
   - 3d render

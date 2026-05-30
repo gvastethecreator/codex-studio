@@ -4,363 +4,583 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP06-092",
-    "name": "C64 Commodore Palette",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "smooth, modern, high res, 3d, realistic, gradient, HD, anti-aliased, photo, clean, high color",
-    "style": {
-      "aesthetic": "Commodore-64-pixel-art, broad-fat-pixels in 320x200 or 160x200 multi-color mode, that-unmistakable-C64-brown-and-grey-palette, SID-chip-music-visual-counterpart, Last-Ninja-isometric-adventure, Impossible-Mission-platform-elegance, European-computer-game-look, wide-pixel-aspect-ratio-stretching, 16-colors-of-genius-constraint",
-      "form_and_line": "Fat-pixel-8x8 character-blocks, multi-color-sprite-overlay, 320x200-chunky-resolution, wide-pixel-aspect stretching, hardware-sprite-multiplexing barriers visible",
-      "color_palette": "C64-classic-16 — brown, dark-grey, light-grey, orange, cyan, purple, green, blue, yellow, white, black, red, all slightly-muted-80s-computer-spectrum",
-      "lighting_setup": "Flat-pixel-fill-lighting, no-gradients, dither-pattern-value-transitions, color-per-8x8-cell-limitation, raster-interrupt-split effects",
-      "material_texture": "Character-block-grid, hardware-sprite-resolution-limit, dither-pattern-noise, CRT-composite-video-artifacting, SID-audio-hum-visual-counterpart",
-      "render_quality": "Commodore-64-pixel aesthetic, 8-bit-home-computer-beauty, European-80s-game-art, fat-pixel-warmth, 16-color-mastery",
-      "spatial_distortion": "Multi-color-character-block-grid, wide-pixel-aspect-ratio, 160x200-resolution-proportions, raster-scanline-line-rendering, PAL/NTSC-letterbox",
-      "atmosphere": "80s-computer-club nostalgia, bedroom-coding-wonder, cassette-loading-patience, SID-chip-soundtrack-memory, European-home-computer-warmth",
-      "key_features": "C64-16-color-palette, fat-multi-color-pixels, character-block-grid-artifacts, wide-pixel-aspect, dither-pattern-shading, CRT-composite-blur, raster-split-effects",
-      "creative_brief": "Fat pixels in sixteen colors — that unmistakable C64 brown, the grey, the cyan — wide as they are tall on PAL displays that stretched horizontally what the chip intended square. Each 8x8 character cell holds a color choice, the image built from the same grid that held text. The aesthetic is the European bedroom at 3am, the glow of a CRT reflecting on a teenager's glasses, the sound of a datasette loading a world one byte at a time."
-    }
+    id: 'SP06-092',
+    name: 'C64 Commodore Palette',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'smooth, modern, high res, 3d, realistic, gradient, HD, anti-aliased, photo, clean, high color',
+    style: {
+      aesthetic:
+        'Commodore-64-pixel-art, broad-fat-pixels in 320x200 or 160x200 multi-color mode, that-unmistakable-C64-brown-and-grey-palette, SID-chip-music-visual-counterpart, Last-Ninja-isometric-adventure, Impossible-Mission-platform-elegance, European-computer-game-look, wide-pixel-aspect-ratio-stretching, 16-colors-of-genius-constraint',
+      form_and_line:
+        'Fat-pixel-8x8 character-blocks, multi-color-sprite-overlay, 320x200-chunky-resolution, wide-pixel-aspect stretching, hardware-sprite-multiplexing barriers visible',
+      color_palette:
+        'C64-classic-16 — brown, dark-grey, light-grey, orange, cyan, purple, green, blue, yellow, white, black, red, all slightly-muted-80s-computer-spectrum',
+      lighting_setup:
+        'Flat-pixel-fill-lighting, no-gradients, dither-pattern-value-transitions, color-per-8x8-cell-limitation, raster-interrupt-split effects',
+      material_texture:
+        'Character-block-grid, hardware-sprite-resolution-limit, dither-pattern-noise, CRT-composite-video-artifacting, SID-audio-hum-visual-counterpart',
+      render_quality:
+        'Commodore-64-pixel aesthetic, 8-bit-home-computer-beauty, European-80s-game-art, fat-pixel-warmth, 16-color-mastery',
+      spatial_distortion:
+        'Multi-color-character-block-grid, wide-pixel-aspect-ratio, 160x200-resolution-proportions, raster-scanline-line-rendering, PAL/NTSC-letterbox',
+      atmosphere:
+        '80s-computer-club nostalgia, bedroom-coding-wonder, cassette-loading-patience, SID-chip-soundtrack-memory, European-home-computer-warmth',
+      key_features:
+        'C64-16-color-palette, fat-multi-color-pixels, character-block-grid-artifacts, wide-pixel-aspect, dither-pattern-shading, CRT-composite-blur, raster-split-effects',
+      creative_brief:
+        "Fat pixels in sixteen colors — that unmistakable C64 brown, the grey, the cyan — wide as they are tall on PAL displays that stretched horizontally what the chip intended square. Each 8x8 character cell holds a color choice, the image built from the same grid that held text. The aesthetic is the European bedroom at 3am, the glow of a CRT reflecting on a teenager's glasses, the sound of a datasette loading a world one byte at a time.",
+    },
   },
   {
-    "id": "SP06-094",
-    "name": "Atari 2600 Extreme Limitation",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "detailed, smooth, high-res, modern, 3d, colorful, rich palette, complex, anti-aliased, HD",
-    "style": {
-      "aesthetic": "Atari-VCS-2600 extreme limitation, 40-pixel-wide-player-sprites, single-color-per-scanline, stripe-color-technique for multicolor, Combat-tank-blocky, Pitfall-vine-simplicity, Adventure-square-dot-hero, hardware-limitation-as-aesthetic, 128-bytes-of-RAM-universe, only-two-player-sprites-on-screen",
-      "form_and_line": "40-fat-pixel-wide sprites, single-scanline-height-color-bands, blocky-rectangle-everything, missile-and-ball-hardware-objects, playfield-block-backgrounds",
-      "color_palette": "NTSC-128-color-palette, 4-colors-per-scanline, rainbow-stripe-technique, bright-primaries, Atari-warmth-color-gen, black-background-standard, TIA-chip-color-generation",
-      "lighting_setup": "No-lighting-whatsoever, sprite-color-as-background-separation, scanline-stripe-color-for-depth, no-gradients-no-shading",
-      "material_texture": "TIA-graphics-chip-texture, scanline-stripe-artifacts, sprite-flicker-at-object-limit, phosphor-persistence-blur, NTSC-color-bleed, RF-modulator-static-noise",
-      "render_quality": "Atari-2600-extreme-limitation aesthetic, 1977-hardware-constraint-beauty, minimal-pixel-poetry, 128-bytes-of-RAM art",
-      "spatial_distortion": "40-pixel-sprite-width, 160x192-playfield-resolution, scanline-color-stripe-proportions, object-flicker-at-sprite-limits, two-players-half-screen-context",
-      "atmosphere": "Primitive, ingenious, constraint-creativity, first-generation-home-console wonder, cartridge-dust-and-static, woodgrain-console-nostalgia",
-      "key_features": "40-pixel-wide-sprites, scanline-color-stripes, sprite-flicker-multiplexing, 4-colors-per-scanline, TIA-hardware-artifacts, blocky-rectangle-everything, black-background-standard",
-      "creative_brief": "Forty fat pixels define the entire player character. Four colors per scanline. Two sprites on screen at once. The 2600 did not offer — it demanded cleverness, and cleverness answered with stripe-color techniques and flicker multiplexing. The image is a monument to what can be done when you have 128 bytes of RAM and an idea bigger than the hardware."
-    }
+    id: 'SP06-094',
+    name: 'Atari 2600 Extreme Limitation',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'detailed, smooth, high-res, modern, 3d, colorful, rich palette, complex, anti-aliased, HD',
+    style: {
+      aesthetic:
+        'Atari-VCS-2600 extreme limitation, 40-pixel-wide-player-sprites, single-color-per-scanline, stripe-color-technique for multicolor, Combat-tank-blocky, Pitfall-vine-simplicity, Adventure-square-dot-hero, hardware-limitation-as-aesthetic, 128-bytes-of-RAM-universe, only-two-player-sprites-on-screen',
+      form_and_line:
+        '40-fat-pixel-wide sprites, single-scanline-height-color-bands, blocky-rectangle-everything, missile-and-ball-hardware-objects, playfield-block-backgrounds',
+      color_palette:
+        'NTSC-128-color-palette, 4-colors-per-scanline, rainbow-stripe-technique, bright-primaries, Atari-warmth-color-gen, black-background-standard, TIA-chip-color-generation',
+      lighting_setup:
+        'No-lighting-whatsoever, sprite-color-as-background-separation, scanline-stripe-color-for-depth, no-gradients-no-shading',
+      material_texture:
+        'TIA-graphics-chip-texture, scanline-stripe-artifacts, sprite-flicker-at-object-limit, phosphor-persistence-blur, NTSC-color-bleed, RF-modulator-static-noise',
+      render_quality:
+        'Atari-2600-extreme-limitation aesthetic, 1977-hardware-constraint-beauty, minimal-pixel-poetry, 128-bytes-of-RAM art',
+      spatial_distortion:
+        '40-pixel-sprite-width, 160x192-playfield-resolution, scanline-color-stripe-proportions, object-flicker-at-sprite-limits, two-players-half-screen-context',
+      atmosphere:
+        'Primitive, ingenious, constraint-creativity, first-generation-home-console wonder, cartridge-dust-and-static, woodgrain-console-nostalgia',
+      key_features:
+        '40-pixel-wide-sprites, scanline-color-stripes, sprite-flicker-multiplexing, 4-colors-per-scanline, TIA-hardware-artifacts, blocky-rectangle-everything, black-background-standard',
+      creative_brief:
+        'Forty fat pixels define the entire player character. Four colors per scanline. Two sprites on screen at once. The 2600 did not offer — it demanded cleverness, and cleverness answered with stripe-color techniques and flicker multiplexing. The image is a monument to what can be done when you have 128 bytes of RAM and an idea bigger than the hardware.',
+    },
   },
   {
-    "id": "SP06-095",
-    "name": "Sega Genesis Dither-Heavy",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "smooth, gradient, modern, HD, anti-aliased, high color, photo, soft, realistic, clean, minimal dither",
-    "style": {
-      "aesthetic": "Sega-Genesis-Mega-Drive-16-bit aesthetic, heavy-dithering-for-transparency-fake, 64-colors-simultaneous-on-screen, crunchy-FM-synth-soundtrack-visual-equivalent, Sonic-spiky-pixel-design, Streets-of-Rage-palette-grit, 9-bit-color-depth-9-bit-attitude, Genesis-does-what-Nintendon''t philosophy, blast-processing-images",
-      "form_and_line": "Chunky-16-bit-sprites, heavy-dither-pattern-edges, 320x224-resolution, sprite-scaling-hardware, two-layer-parallax-backgrounds",
-      "color_palette": "512-color-total-palette, 64-on-screen, heavy-dither-to-fake-more, Genesis-signature-dark-gritty, Electric-blue-Sonic, Streets-of-Rage-orange-sunset, golden-cartridge-bronze",
-      "lighting_setup": "Dither-pattern-as-lighting-gradient, highlight-shadow-mode-palette-swap, palette-cycling-for-glow, per-tile-palette-limitation-workaround",
-      "material_texture": "Dither-pattern-grid-texture, Genesis-composite-video-blur, cartridge-connector-blinking-artifacts, CRAM-dot-crawl, scanline-overlay, checkerboard-transparency-dither",
-      "render_quality": "Sega-Genesis-dither aesthetic, blast-processing-beauty, 16-bit-attitude-rendering, crunchy-pixel-charm, checkerboard-transparency-magic",
-      "spatial_distortion": "320x224-Genesis-resolution, two-layer-parallax-depth, sprite-scaling-horizontal-line, vertical-border-overscan, PAL-letterbox",
-      "atmosphere": "90s-console-war-attitude, arcade-at-home energy, blast-processing-teenage excitement, FM-synth-funk, Sonic-speed-swagger",
-      "key_features": "Heavy-dither-patterns, 64-color-on-screen, Genesis-composite-video-artifacts, checkerboard-transparency, two-layer-parallax, Sonic-spiky-pixel-design, FM-synth- crunchy-visual",
-      "creative_brief": "Dithering is not a compromise but a signature — checkerboard patterns standing in for transparency, for gradients, for atmospheric depth in a machine limited to 64 colors on screen. Spiky blue hedgehogs race across parallax backgrounds, the FM synth of the visual world translating into crunchy pixel attitude. The image does what Nintendon't — it dithers with pride, blast-processing beauty one checkerboard at a time."
-    }
+    id: 'SP06-095',
+    name: 'Sega Genesis Dither-Heavy',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'smooth, gradient, modern, HD, anti-aliased, high color, photo, soft, realistic, clean, minimal dither',
+    style: {
+      aesthetic:
+        "Sega-Genesis-Mega-Drive-16-bit aesthetic, heavy-dithering-for-transparency-fake, 64-colors-simultaneous-on-screen, crunchy-FM-synth-soundtrack-visual-equivalent, Sonic-spiky-pixel-design, Streets-of-Rage-palette-grit, 9-bit-color-depth-9-bit-attitude, Genesis-does-what-Nintendon''t philosophy, blast-processing-images",
+      form_and_line:
+        'Chunky-16-bit-sprites, heavy-dither-pattern-edges, 320x224-resolution, sprite-scaling-hardware, two-layer-parallax-backgrounds',
+      color_palette:
+        '512-color-total-palette, 64-on-screen, heavy-dither-to-fake-more, Genesis-signature-dark-gritty, Electric-blue-Sonic, Streets-of-Rage-orange-sunset, golden-cartridge-bronze',
+      lighting_setup:
+        'Dither-pattern-as-lighting-gradient, highlight-shadow-mode-palette-swap, palette-cycling-for-glow, per-tile-palette-limitation-workaround',
+      material_texture:
+        'Dither-pattern-grid-texture, Genesis-composite-video-blur, cartridge-connector-blinking-artifacts, CRAM-dot-crawl, scanline-overlay, checkerboard-transparency-dither',
+      render_quality:
+        'Sega-Genesis-dither aesthetic, blast-processing-beauty, 16-bit-attitude-rendering, crunchy-pixel-charm, checkerboard-transparency-magic',
+      spatial_distortion:
+        '320x224-Genesis-resolution, two-layer-parallax-depth, sprite-scaling-horizontal-line, vertical-border-overscan, PAL-letterbox',
+      atmosphere:
+        '90s-console-war-attitude, arcade-at-home energy, blast-processing-teenage excitement, FM-synth-funk, Sonic-speed-swagger',
+      key_features:
+        'Heavy-dither-patterns, 64-color-on-screen, Genesis-composite-video-artifacts, checkerboard-transparency, two-layer-parallax, Sonic-spiky-pixel-design, FM-synth- crunchy-visual',
+      creative_brief:
+        "Dithering is not a compromise but a signature — checkerboard patterns standing in for transparency, for gradients, for atmospheric depth in a machine limited to 64 colors on screen. Spiky blue hedgehogs race across parallax backgrounds, the FM synth of the visual world translating into crunchy pixel attitude. The image does what Nintendon't — it dithers with pride, blast-processing beauty one checkerboard at a time.",
+    },
   },
   {
-    "id": "SP06-082",
-    "name": "SNES Mode 7 Vista",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "realistic perspective, 3d rendering, smooth gradients, high resolution, modern graphics, photo textures",
-    "style": {
-      "aesthetic": "Classic 16-bit Mode 7 effect, pseudo-3D rotating floor plane stretching to horizon, sprite-scaled objects approaching from distance, Final Fantasy VI airship vista, Super Mario Kart track stretching, F-Zero speed-distorted ground, 1991 hardware magic",
-      "form_and_line": "Scanline-stepped pseudo-perspective, sprite-scaling contour, tile-based ground plane with rotation transform, chunky affine mapping",
-      "color_palette": "256-color SNES palette, vibrant mode-7 blues, checkerboard ground, gradient-sky banding, 15-bit color depth charm",
-      "lighting_setup": "Palette-cycled water shimmer, gradient-sky fake lighting, sprite brightness for depth, no real light, pure hardware trickery",
-      "material_texture": "Affine-transformed tile repetition, no-mipmap chunky scaling, scanline rendering artifacts, cartridge-memory limitations visible",
-      "render_quality": "SNES Mode 7 capture, 16-bit pseudo-3D nostalgia, Nintendo hardware-trick aesthetic, retro-technical beauty",
-      "spatial_distortion": "Perspective-transformed flat plane, sprite-scale depth illusion, horizon-line division, no vertical camera",
-      "atmosphere": "Nostalgic, technically miraculous, 16-bit wonder, childhood epic-adventure immersion",
-      "key_features": "Perspective-transformed floor plane, scaled sprite layering, scanline artifact lines, gradient-banded sky, 256-color charm",
-      "creative_brief": "The ground plane rotates and stretches into pseudo-3D perspective, a flat world performing depth through affine transformations that were miracles in 1991. Sprites scale toward the camera without changing resolution, growing blockier as they approach, the hardware straining against its own ambition. The image is a magic trick the SNES taught the world, a flat surface dreaming of dimensions it could not reach."
-    }
+    id: 'SP06-082',
+    name: 'SNES Mode 7 Vista',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'realistic perspective, 3d rendering, smooth gradients, high resolution, modern graphics, photo textures',
+    style: {
+      aesthetic:
+        'Classic 16-bit Mode 7 effect, pseudo-3D rotating floor plane stretching to horizon, sprite-scaled objects approaching from distance, Final Fantasy VI airship vista, Super Mario Kart track stretching, F-Zero speed-distorted ground, 1991 hardware magic',
+      form_and_line:
+        'Scanline-stepped pseudo-perspective, sprite-scaling contour, tile-based ground plane with rotation transform, chunky affine mapping',
+      color_palette:
+        '256-color SNES palette, vibrant mode-7 blues, checkerboard ground, gradient-sky banding, 15-bit color depth charm',
+      lighting_setup:
+        'Palette-cycled water shimmer, gradient-sky fake lighting, sprite brightness for depth, no real light, pure hardware trickery',
+      material_texture:
+        'Affine-transformed tile repetition, no-mipmap chunky scaling, scanline rendering artifacts, cartridge-memory limitations visible',
+      render_quality:
+        'SNES Mode 7 capture, 16-bit pseudo-3D nostalgia, Nintendo hardware-trick aesthetic, retro-technical beauty',
+      spatial_distortion:
+        'Perspective-transformed flat plane, sprite-scale depth illusion, horizon-line division, no vertical camera',
+      atmosphere:
+        'Nostalgic, technically miraculous, 16-bit wonder, childhood epic-adventure immersion',
+      key_features:
+        'Perspective-transformed floor plane, scaled sprite layering, scanline artifact lines, gradient-banded sky, 256-color charm',
+      creative_brief:
+        'The ground plane rotates and stretches into pseudo-3D perspective, a flat world performing depth through affine transformations that were miracles in 1991. Sprites scale toward the camera without changing resolution, growing blockier as they approach, the hardware straining against its own ambition. The image is a magic trick the SNES taught the world, a flat surface dreaming of dimensions it could not reach.',
+    },
   },
   {
-    "id": "SP06-093",
-    "name": "MSX2 Japanese Computer",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "western, modern, 3d, realistic, low color, dark, muted, gritty, photo, smooth gradient",
-    "style": {
-      "aesthetic": "MSX2-Japanese-8-bit-computer-art, bright-vibrant-pixel-palette unique to Japanese-home-computers, Metal-Gear-original-stealth-sprites, Ys-ancient- adventure-RPG-tiles, Konami-MSX-era-charm, slightly-compact-Japanese-pixel-style, SCREEN-mode-graphics-layered, disk-BASIC-and-cassette-tape-loading",
-      "form_and_line": "Compact-pixel-sprite-design, 256x212-screen-resolution, Japanese-text-8x8-character-cells, sprite-pattern-table-limits",
-      "color_palette": "MSX2-bright-palette, vivid-saturated-japanese-8-bit, emerald-greens, cherry-reds, sky-blues, golden-yellows, pastel-pinks unique to platform, 256-colors-from-palette",
-      "lighting_setup": "Flat-sprite-lighting, bright-color-fields, no-shading-on-simple-sprites, SCREEN-layer-transparency-overlay",
-      "material_texture": "MSX-pixel-grid, Kanji-character-texture, disk-BASIC-interface-framing, cassette-data-screech-sonic-texture, YM2413-FM-synth-chip-sound-visual-equivalent",
-      "render_quality": "MSX2-Japanese-computer pixel aesthetic, Konami-8-bit-beauty, bright-home-computer art, 1985-Japan-tech nostalgia",
-      "spatial_distortion": "256x212-Japanese-resolution, SCREEN-mode-layering, vertical-scanline-rendering, Kanji-text-overlay, pixel-aspect-specific-to-MSX",
-      "atmosphere": "80s-Japan-tech wonder, Konami-office-creativity, cassette-tape-patience, early-Kojima-stealth-atmosphere, Akihabara-electronics-district soul",
-      "key_features": "MSX2-vibrant-palette, compact-pixel-resolution, SCREEN-mode-layering, Kanji-character-support, Konami-charm, Japanese-8-bit-brightness, 256x212-proportions",
-      "creative_brief": "Compact sprites in a palette that Japan made brighter than the West could match — emerald greens, cherry reds, konami blues — populate a 256x212 grid that shows its kanji without apology. The image carries the spirit of Akihabara before the tourists arrived, of disk BASIC and FM synthesis and games that fit on a cassette. Brightness is the aesthetic, saturation the philosophy."
-    }
+    id: 'SP06-093',
+    name: 'MSX2 Japanese Computer',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'western, modern, 3d, realistic, low color, dark, muted, gritty, photo, smooth gradient',
+    style: {
+      aesthetic:
+        'MSX2-Japanese-8-bit-computer-art, bright-vibrant-pixel-palette unique to Japanese-home-computers, Metal-Gear-original-stealth-sprites, Ys-ancient- adventure-RPG-tiles, Konami-MSX-era-charm, slightly-compact-Japanese-pixel-style, SCREEN-mode-graphics-layered, disk-BASIC-and-cassette-tape-loading',
+      form_and_line:
+        'Compact-pixel-sprite-design, 256x212-screen-resolution, Japanese-text-8x8-character-cells, sprite-pattern-table-limits',
+      color_palette:
+        'MSX2-bright-palette, vivid-saturated-japanese-8-bit, emerald-greens, cherry-reds, sky-blues, golden-yellows, pastel-pinks unique to platform, 256-colors-from-palette',
+      lighting_setup:
+        'Flat-sprite-lighting, bright-color-fields, no-shading-on-simple-sprites, SCREEN-layer-transparency-overlay',
+      material_texture:
+        'MSX-pixel-grid, Kanji-character-texture, disk-BASIC-interface-framing, cassette-data-screech-sonic-texture, YM2413-FM-synth-chip-sound-visual-equivalent',
+      render_quality:
+        'MSX2-Japanese-computer pixel aesthetic, Konami-8-bit-beauty, bright-home-computer art, 1985-Japan-tech nostalgia',
+      spatial_distortion:
+        '256x212-Japanese-resolution, SCREEN-mode-layering, vertical-scanline-rendering, Kanji-text-overlay, pixel-aspect-specific-to-MSX',
+      atmosphere:
+        '80s-Japan-tech wonder, Konami-office-creativity, cassette-tape-patience, early-Kojima-stealth-atmosphere, Akihabara-electronics-district soul',
+      key_features:
+        'MSX2-vibrant-palette, compact-pixel-resolution, SCREEN-mode-layering, Kanji-character-support, Konami-charm, Japanese-8-bit-brightness, 256x212-proportions',
+      creative_brief:
+        'Compact sprites in a palette that Japan made brighter than the West could match — emerald greens, cherry reds, konami blues — populate a 256x212 grid that shows its kanji without apology. The image carries the spirit of Akihabara before the tourists arrived, of disk BASIC and FM synthesis and games that fit on a cassette. Brightness is the aesthetic, saturation the philosophy.',
+    },
   },
   {
-    "id": "SP06-086",
-    "name": "RPG Maker Chibi Tileworld",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "realistic, 3d, photorealistic, smooth, modern, high resolution, detailed, serious, gritty",
-    "style": {
-      "aesthetic": "Classic RPG Maker top-down tile world, chibi two-head-tall sprites, cute 16x16 tile forests, tiny treasure chests, innkeeper NPC behind counter, nostalgic indie-RPG charm, Yume Nikki dreamscape simplicity, Ib horror-cute dissonance",
-      "form_and_line": "Small-pixel sprite outlines, tile-grid construction, chunky square tiles, simple sprite animation frames, grid-locked everything",
-      "color_palette": "Cute saturated tiles, bright green grass, blue water tiles, brown village roofs, character-specific palette swaps, RTP default charm",
-      "lighting_setup": "Flat ambient tile lighting, occasional window-yellow glow tiles, no dynamic lighting, pre-baked atmosphere",
-      "material_texture": "Tile-repetition grids, sprite-pixel squareness, grid-aligned collision edges, chunky-block construction feel",
-      "render_quality": "RPG Maker game screen, indie-RPG nostalgia, chibi-pixel charm, do-it-yourself game-aesthetic warmth",
-      "spatial_distortion": "Top-down orthographic grid, tile-based movement snapping, screen-transition fade, flat-isometric hybrid worldview",
-      "atmosphere": "Cozy, nostalgic, do-it-yourself creativity, small-town adventure warmth, indie-game soul",
-      "key_features": "Grid-based tile world, chibi two-head-tall sprites, top-down orthographic perspective, tile-repetition patterns, dialogue-box overlay",
-      "creative_brief": "Chibi sprites navigate a tile-based world where every tree, every chest, every innkeeper stands on an invisible grid of possibility. The orthographic camera never tilts, never zooms, content to observe a miniature universe from its fixed divine perspective. The image feels like a world built in an afternoon by someone who believed in the stories they were telling."
-    }
+    id: 'SP06-086',
+    name: 'RPG Maker Chibi Tileworld',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'realistic, 3d, photorealistic, smooth, modern, high resolution, detailed, serious, gritty',
+    style: {
+      aesthetic:
+        'Classic RPG Maker top-down tile world, chibi two-head-tall sprites, cute 16x16 tile forests, tiny treasure chests, innkeeper NPC behind counter, nostalgic indie-RPG charm, Yume Nikki dreamscape simplicity, Ib horror-cute dissonance',
+      form_and_line:
+        'Small-pixel sprite outlines, tile-grid construction, chunky square tiles, simple sprite animation frames, grid-locked everything',
+      color_palette:
+        'Cute saturated tiles, bright green grass, blue water tiles, brown village roofs, character-specific palette swaps, RTP default charm',
+      lighting_setup:
+        'Flat ambient tile lighting, occasional window-yellow glow tiles, no dynamic lighting, pre-baked atmosphere',
+      material_texture:
+        'Tile-repetition grids, sprite-pixel squareness, grid-aligned collision edges, chunky-block construction feel',
+      render_quality:
+        'RPG Maker game screen, indie-RPG nostalgia, chibi-pixel charm, do-it-yourself game-aesthetic warmth',
+      spatial_distortion:
+        'Top-down orthographic grid, tile-based movement snapping, screen-transition fade, flat-isometric hybrid worldview',
+      atmosphere:
+        'Cozy, nostalgic, do-it-yourself creativity, small-town adventure warmth, indie-game soul',
+      key_features:
+        'Grid-based tile world, chibi two-head-tall sprites, top-down orthographic perspective, tile-repetition patterns, dialogue-box overlay',
+      creative_brief:
+        'Chibi sprites navigate a tile-based world where every tree, every chest, every innkeeper stands on an invisible grid of possibility. The orthographic camera never tilts, never zooms, content to observe a miniature universe from its fixed divine perspective. The image feels like a world built in an afternoon by someone who believed in the stories they were telling.',
+    },
   },
   {
-    "id": "SP06-081",
-    "name": "Game Boy Green Monochrome",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "color, hd, smooth, gradient, realistic, high resolution, detailed, photorealistic, 3d, modern",
-    "style": {
-      "aesthetic": "Original DMG Game Boy palette, four shades of olive-green, 160x144 low-resolution vision, chunky pixel characters, pea-soup display, Nintendo handheld nostalgia, 1989 portable gaming, sprites as blocky silhouettes of heroism",
-      "form_and_line": "Rigid pixel-grid alignment, 8x8 or 16x16 tile construction, sprite boundary boxing, no sub-pixel rendering",
-      "color_palette": "Four-shade green gradient, pea-soup olive, sickly lime, bile yellow highlight, shadow-moss dark, no other colors exist",
-      "lighting_setup": "Self-illuminated LCD screen, reflective green phosphor glow, pocket-light on plastic screen",
-      "material_texture": "LCD pixel grid gap, dusty plastic screen overlay, passive-matrix ghost trail, screen-burn memory",
-      "render_quality": "Game Boy screen capture, retro handheld nostalgia, 8-bit portable aesthetic, chunky-pixel charm",
-      "spatial_distortion": "Screen-edge vignette, LCD-viewing-angle washout, reflective plastic frame reflection, pocket-sized display",
-      "atmosphere": "Nostalgic, portable, childhood road-trip, under-the-covers gaming, battery-life anxiety",
-      "key_features": "Four-shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen bezel framing, monochrome dot-matrix",
-      "creative_brief": "Four shades of green constitute the entire universe, every hero, every villain, every world reduced to pea-soup gradients on a dot-matrix LCD. The screen glows with its own faint light, a portable sun under blankets after bedtime. The image exists in the moment before batteries die, a pocket-sized epic rendered visible by four simple voltages."
-    }
+    id: 'SP06-081',
+    name: 'Game Boy Green Monochrome',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'color, hd, smooth, gradient, realistic, high resolution, detailed, photorealistic, 3d, modern',
+    style: {
+      aesthetic:
+        'Original DMG Game Boy palette, four shades of olive-green, 160x144 low-resolution vision, chunky pixel characters, pea-soup display, Nintendo handheld nostalgia, 1989 portable gaming, sprites as blocky silhouettes of heroism',
+      form_and_line:
+        'Rigid pixel-grid alignment, 8x8 or 16x16 tile construction, sprite boundary boxing, no sub-pixel rendering',
+      color_palette:
+        'Four-shade green gradient, pea-soup olive, sickly lime, bile yellow highlight, shadow-moss dark, no other colors exist',
+      lighting_setup:
+        'Self-illuminated LCD screen, reflective green phosphor glow, pocket-light on plastic screen',
+      material_texture:
+        'LCD pixel grid gap, dusty plastic screen overlay, passive-matrix ghost trail, screen-burn memory',
+      render_quality:
+        'Game Boy screen capture, retro handheld nostalgia, 8-bit portable aesthetic, chunky-pixel charm',
+      spatial_distortion:
+        'Screen-edge vignette, LCD-viewing-angle washout, reflective plastic frame reflection, pocket-sized display',
+      atmosphere:
+        'Nostalgic, portable, childhood road-trip, under-the-covers gaming, battery-life anxiety',
+      key_features:
+        'Four-shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen bezel framing, monochrome dot-matrix',
+      creative_brief:
+        'Four shades of green constitute the entire universe, every hero, every villain, every world reduced to pea-soup gradients on a dot-matrix LCD. The screen glows with its own faint light, a portable sun under blankets after bedtime. The image exists in the moment before batteries die, a pocket-sized epic rendered visible by four simple voltages.',
+    },
   },
   {
-    "id": "SP06-088",
-    "name": "PSX Vertex Wobble",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "stable, clean, smooth, modern, high-poly, anti-aliased, sharp, high resolution, stable geometry, filtered",
-    "style": {
-      "aesthetic": "PlayStation 1 aesthetic, vertex-warble jittering polygons, affine texture swim, unfiltered chunky textures, dithering-haze distance fog, Silent Hill grain-and-gloom, Metal Gear Solid low-poly intensity, no z-buffer precision, 1995 3D in all its unstable glory",
-      "form_and_line": "Low-poly triangulated mesh, wobbling vertices on camera move, no sub-pixel precision, chunky model contours, affine-mapped edges",
-      "color_palette": "16-bit color depth banding, dither-pattern gradients, PSX texture-page compression colors, distance-fog greying, CRT-emulated chroma bleed",
-      "lighting_setup": "Per-vertex gouraud shading, no per-pixel lights, dither-stepped shadow transitions, distance-fog atmosphere, no realtime shadows",
-      "material_texture": "Unfiltered nearest-neighbor textures, polygon-warp texture swim, dithering gradient noise, affine-distorted texels, scanline artifact overlay",
-      "render_quality": "PlayStation 1 aesthetic, 32-bit console 3D, retro-CGI wobble poetry, beautiful instability",
-      "spatial_distortion": "Jitter-vertex polygon warping, z-fighting flicker, affine-perspective distortion, distance-fog depth compression",
-      "atmosphere": "Eerie, nostalgic, technological-limitation beauty, 90s-3D uncanny poetry, CRT-warmth glow",
-      "key_features": "Vertex wobble jitter, unfiltered chunky textures, dithering gradient bands, affine texture warping, distance-fog atmosphere, z-fighting flicker",
-      "creative_brief": "Polygons wobble and swim as the camera moves, vertices jittering in a dance of mathematical imprecision that somehow feels more alive than perfection. Textures warp across triangular faces, affine mapping stretching pixels in ways they were never meant to stretch. The image trembles with the beauty of a machine trying its absolute hardest and not quite succeeding, which is to say: with the beauty of effort made visible."
-    }
+    id: 'SP06-088',
+    name: 'PSX Vertex Wobble',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'stable, clean, smooth, modern, high-poly, anti-aliased, sharp, high resolution, stable geometry, filtered',
+    style: {
+      aesthetic:
+        'PlayStation 1 aesthetic, vertex-warble jittering polygons, affine texture swim, unfiltered chunky textures, dithering-haze distance fog, Silent Hill grain-and-gloom, Metal Gear Solid low-poly intensity, no z-buffer precision, 1995 3D in all its unstable glory',
+      form_and_line:
+        'Low-poly triangulated mesh, wobbling vertices on camera move, no sub-pixel precision, chunky model contours, affine-mapped edges',
+      color_palette:
+        '16-bit color depth banding, dither-pattern gradients, PSX texture-page compression colors, distance-fog greying, CRT-emulated chroma bleed',
+      lighting_setup:
+        'Per-vertex gouraud shading, no per-pixel lights, dither-stepped shadow transitions, distance-fog atmosphere, no realtime shadows',
+      material_texture:
+        'Unfiltered nearest-neighbor textures, polygon-warp texture swim, dithering gradient noise, affine-distorted texels, scanline artifact overlay',
+      render_quality:
+        'PlayStation 1 aesthetic, 32-bit console 3D, retro-CGI wobble poetry, beautiful instability',
+      spatial_distortion:
+        'Jitter-vertex polygon warping, z-fighting flicker, affine-perspective distortion, distance-fog depth compression',
+      atmosphere:
+        'Eerie, nostalgic, technological-limitation beauty, 90s-3D uncanny poetry, CRT-warmth glow',
+      key_features:
+        'Vertex wobble jitter, unfiltered chunky textures, dithering gradient bands, affine texture warping, distance-fog atmosphere, z-fighting flicker',
+      creative_brief:
+        'Polygons wobble and swim as the camera moves, vertices jittering in a dance of mathematical imprecision that somehow feels more alive than perfection. Textures warp across triangular faces, affine mapping stretching pixels in ways they were never meant to stretch. The image trembles with the beauty of a machine trying its absolute hardest and not quite succeeding, which is to say: with the beauty of effort made visible.',
+    },
   },
   {
-    "id": "SP06-087",
-    "name": "GBA Tactical Pixel",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "realistic, 3d, smooth, dark, gritty, modern, high res, photorealistic, chaotic, messy",
-    "style": {
-      "aesthetic": "Game Boy Advance tactical grid, Advance Wars battle-map clarity, bright clean military sprites, Fire Emblem portrait elegance, isometric battlefields, tiny tanks and infantry on squared terrain, colorful commander portraits, handheld-strategy precision",
-      "form_and_line": "Crisp small-sprite pixel art, unit-icon clarity, grid-cell division lines, portrait-window framing, clean readable silhouettes",
-      "color_palette": "Bright tactical readability, blue-sea green-land clear contrast, red-enemy blue-ally coding, colorful commander portrait saturation, sunlit battlefield tone",
-      "lighting_setup": "Flat even illumination for gameplay clarity, no atmospheric lighting, readability-first approach, sun-baked tile brightness",
-      "material_texture": "Pixel-grid precision, crisp small-sprite definition, GBA screen color gamut, handheld-LCD rendering limits",
-      "render_quality": "GBA tactical-game screen, handheld-strategy aesthetic, bright-readable pixel art, portable-war precision",
-      "spatial_distortion": "Grid-based tactical space, isometric or top-down tile perspectives, unit-placement precision, fog-of-war reveal mechanic",
-      "atmosphere": "Strategic, bright, readable, turn-based calm, tactical satisfaction, portable focus",
-      "key_features": "Tactical grid overlay, isometric tile terrain, bright readable sprite units, commander portrait windows, turn-based UI elements",
-      "creative_brief": "Bright blue sea meets green land on a grid that means war, every tile a tactical possibility, every unit a commitment to position. Readability governs color — red enemies, blue allies, no ambiguity in the language of pixels designed to be read at speed. The image is a board game that learned to animate, a map that contains multitudes of tiny soldiers waiting for orders."
-    }
+    id: 'SP06-087',
+    name: 'GBA Tactical Pixel',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'realistic, 3d, smooth, dark, gritty, modern, high res, photorealistic, chaotic, messy',
+    style: {
+      aesthetic:
+        'Game Boy Advance tactical grid, Advance Wars battle-map clarity, bright clean military sprites, Fire Emblem portrait elegance, isometric battlefields, tiny tanks and infantry on squared terrain, colorful commander portraits, handheld-strategy precision',
+      form_and_line:
+        'Crisp small-sprite pixel art, unit-icon clarity, grid-cell division lines, portrait-window framing, clean readable silhouettes',
+      color_palette:
+        'Bright tactical readability, blue-sea green-land clear contrast, red-enemy blue-ally coding, colorful commander portrait saturation, sunlit battlefield tone',
+      lighting_setup:
+        'Flat even illumination for gameplay clarity, no atmospheric lighting, readability-first approach, sun-baked tile brightness',
+      material_texture:
+        'Pixel-grid precision, crisp small-sprite definition, GBA screen color gamut, handheld-LCD rendering limits',
+      render_quality:
+        'GBA tactical-game screen, handheld-strategy aesthetic, bright-readable pixel art, portable-war precision',
+      spatial_distortion:
+        'Grid-based tactical space, isometric or top-down tile perspectives, unit-placement precision, fog-of-war reveal mechanic',
+      atmosphere:
+        'Strategic, bright, readable, turn-based calm, tactical satisfaction, portable focus',
+      key_features:
+        'Tactical grid overlay, isometric tile terrain, bright readable sprite units, commander portrait windows, turn-based UI elements',
+      creative_brief:
+        'Bright blue sea meets green land on a grid that means war, every tile a tactical possibility, every unit a commitment to position. Readability governs color — red enemies, blue allies, no ambiguity in the language of pixels designed to be read at speed. The image is a board game that learned to animate, a map that contains multitudes of tiny soldiers waiting for orders.',
+    },
   },
   {
-    "id": "SP06-097",
-    "name": "Amiga DeluxePaint HAM",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "limited palette, blocky, simple, modern, smooth gradient, dither, PC, low color, 256, chunky",
-    "style": {
-      "aesthetic": "Commodore-Amiga-DeluxePaint aesthetic, HAM-6-Hold-And-Modify-mode 4096-colors, copper-list-rainbow-sky-gradients, 80s-computer-art-software, Defender-of-the-Crown-jewel-tones, Shadow-of-the-Beast-steel-grey-parallax, King-Tut-tomb-painting-pixel-art, Andy-Warhol-Amiga-1000-commodore-era, video-toaster-workstation-soul",
-      "form_and_line": "Fat-Amiga-pixels, HAM-fringing-artifacts, copper-list-gradient-banding, 320x256-or-320x512-interlaced-workbench, 16-color-sprite-over-4096-background",
-      "color_palette": "4096-color-HAM-mode, rainbow-copper-list-gradients, King-Tut-treasure-gold, Defender-of-the-Crown-jewel, Amiga-Workbench-blue, video-toaster-spectrum, HAM-fringing-magenta-cyan edges",
-      "lighting_setup": "Copper-list-gradient-as-sky-lighting, HAM-palette-gradient-shading, 16-color-sprite-lighting on 4096-backgrounds, no-real-time-light-but-beautiful-gradients",
-      "material_texture": "HAM-fringing-edge-artifacts, copper-list-gradient-band-texture, DeluxePaint-brush-patterns, Amiga-hold-and-modify-color-bleed, NTSC-PAL-artifact-texture",
-      "render_quality": "Amiga-DeluxePaint aesthetic, HAM-mode-beauty, 80s-computer-art software rendering, copper-list-rainbow, 4096-color-1985-miracle",
-      "spatial_distortion": "320x256-overscan-resolution, HAM-fringing-edge-pixels, copper-list-vertical-gradient-spatial, workbench-window-framing, PAL-interlace-spatial",
-      "atmosphere": "80s-computer-art-revolution, video-production-dream, boing-ball-demo-scene, Amiga-workbench-creativity, copper-list-programming-art",
-      "key_features": "HAM6-Hold-And-Modify-fringing, copper-list-rainbow-gradients, 4096-color-mode, DeluxePaint-brush-patterns, Amiga-Workbench-blue, 320x256-resolution, video-toaster-aesthetic",
-      "creative_brief": "Hold-and-Modify mode achieves 4096 colors through a clever trick — each pixel borrows from its neighbor, creating a cascade of color that sometimes fringes magenta at the edges of contrast. Copper-list rainbows stripe the sky in gradients that were pure programming art. The image is the Amiga dreaming in 1985 of a future where every computer would be a video workstation and every user an artist with DeluxePaint."
-    }
+    id: 'SP06-097',
+    name: 'Amiga DeluxePaint HAM',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'limited palette, blocky, simple, modern, smooth gradient, dither, PC, low color, 256, chunky',
+    style: {
+      aesthetic:
+        'Commodore-Amiga-DeluxePaint aesthetic, HAM-6-Hold-And-Modify-mode 4096-colors, copper-list-rainbow-sky-gradients, 80s-computer-art-software, Defender-of-the-Crown-jewel-tones, Shadow-of-the-Beast-steel-grey-parallax, King-Tut-tomb-painting-pixel-art, Andy-Warhol-Amiga-1000-commodore-era, video-toaster-workstation-soul',
+      form_and_line:
+        'Fat-Amiga-pixels, HAM-fringing-artifacts, copper-list-gradient-banding, 320x256-or-320x512-interlaced-workbench, 16-color-sprite-over-4096-background',
+      color_palette:
+        '4096-color-HAM-mode, rainbow-copper-list-gradients, King-Tut-treasure-gold, Defender-of-the-Crown-jewel, Amiga-Workbench-blue, video-toaster-spectrum, HAM-fringing-magenta-cyan edges',
+      lighting_setup:
+        'Copper-list-gradient-as-sky-lighting, HAM-palette-gradient-shading, 16-color-sprite-lighting on 4096-backgrounds, no-real-time-light-but-beautiful-gradients',
+      material_texture:
+        'HAM-fringing-edge-artifacts, copper-list-gradient-band-texture, DeluxePaint-brush-patterns, Amiga-hold-and-modify-color-bleed, NTSC-PAL-artifact-texture',
+      render_quality:
+        'Amiga-DeluxePaint aesthetic, HAM-mode-beauty, 80s-computer-art software rendering, copper-list-rainbow, 4096-color-1985-miracle',
+      spatial_distortion:
+        '320x256-overscan-resolution, HAM-fringing-edge-pixels, copper-list-vertical-gradient-spatial, workbench-window-framing, PAL-interlace-spatial',
+      atmosphere:
+        '80s-computer-art-revolution, video-production-dream, boing-ball-demo-scene, Amiga-workbench-creativity, copper-list-programming-art',
+      key_features:
+        'HAM6-Hold-And-Modify-fringing, copper-list-rainbow-gradients, 4096-color-mode, DeluxePaint-brush-patterns, Amiga-Workbench-blue, 320x256-resolution, video-toaster-aesthetic',
+      creative_brief:
+        'Hold-and-Modify mode achieves 4096 colors through a clever trick — each pixel borrows from its neighbor, creating a cascade of color that sometimes fringes magenta at the edges of contrast. Copper-list rainbows stripe the sky in gradients that were pure programming art. The image is the Amiga dreaming in 1985 of a future where every computer would be a video workstation and every user an artist with DeluxePaint.',
+    },
   },
   {
-    "id": "SP06-085",
-    "name": "Visual Novel Screen",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "action, motion, dynamic, 3d, real-time, intense, fast, combat, epic, cinematic camera",
-    "style": {
-      "aesthetic": "Japanese visual novel frame, cel-style character sprite on soft-focus photograph background, ADV dialogue-box framing, emotional portrait composition, dating-sim intimacy, Key visual-arts large-eye tenderness, Fate/stay night nighttime atmosphere, choice-branch tension",
-      "form_and_line": "Clean cel-style character outlines on photo backgrounds, UI-frame division, dialogue-box anchoring, sprite-expression sheets",
-      "color_palette": "Anime cel colors, soft-photo background desaturation, UI-box translucent gradients, gentle evening tones, school-uniform palette",
-      "lighting_setup": "Diffuse-filtered photographic backgrounds, soft character sprite lighting independent of scene, gentle vignette framing",
-      "material_texture": "Vector-clean character against JPEG-grain background, UI-glass translucency, soft photographic bokeh, mixed-media texture",
-      "render_quality": "Visual-novel screenshot, ADV-game aesthetic, emotional portrait-focused rendering, mixed-media anime-game still",
-      "spatial_distortion": "Character sprite layered over static background, dialogue box occupying lower third, choice-button overlay, flat composite depth",
-      "atmosphere": "Intimate, emotional, narrative-focused, quiet tension, relationship-weighted silence",
-      "key_features": "Character sprite over photo background, dialogue-box framing, ADV text interface, emotional facial expressions, romantic-ambient lighting",
-      "creative_brief": "A cel-shaded character gazes at someone beyond the frame, dialogue box awaiting the button press that advances intimacy. The background softens into bokeh — the world is suggestion, the face is fact. Every still carries the weight of the choice that comes next, narrative suspended in a single composite frame."
-    }
+    id: 'SP06-085',
+    name: 'Visual Novel Screen',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'action, motion, dynamic, 3d, real-time, intense, fast, combat, epic, cinematic camera',
+    style: {
+      aesthetic:
+        'Japanese visual novel frame, cel-style character sprite on soft-focus photograph background, ADV dialogue-box framing, emotional portrait composition, dating-sim intimacy, Key visual-arts large-eye tenderness, Fate/stay night nighttime atmosphere, choice-branch tension',
+      form_and_line:
+        'Clean cel-style character outlines on photo backgrounds, UI-frame division, dialogue-box anchoring, sprite-expression sheets',
+      color_palette:
+        'Anime cel colors, soft-photo background desaturation, UI-box translucent gradients, gentle evening tones, school-uniform palette',
+      lighting_setup:
+        'Diffuse-filtered photographic backgrounds, soft character sprite lighting independent of scene, gentle vignette framing',
+      material_texture:
+        'Vector-clean character against JPEG-grain background, UI-glass translucency, soft photographic bokeh, mixed-media texture',
+      render_quality:
+        'Visual-novel screenshot, ADV-game aesthetic, emotional portrait-focused rendering, mixed-media anime-game still',
+      spatial_distortion:
+        'Character sprite layered over static background, dialogue box occupying lower third, choice-button overlay, flat composite depth',
+      atmosphere:
+        'Intimate, emotional, narrative-focused, quiet tension, relationship-weighted silence',
+      key_features:
+        'Character sprite over photo background, dialogue-box framing, ADV text interface, emotional facial expressions, romantic-ambient lighting',
+      creative_brief:
+        'A cel-shaded character gazes at someone beyond the frame, dialogue box awaiting the button press that advances intimacy. The background softens into bokeh — the world is suggestion, the face is fact. Every still carries the weight of the choice that comes next, narrative suspended in a single composite frame.',
+    },
   },
   {
-    "id": "SP06-096",
-    "name": "Neo Geo Sprite King",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "low detail, limited sprite, simple, minimal, retro, small, basic, weak hardware, few frames",
-    "style": {
-      "aesthetic": "Neo-Geo-arcade-perfection, massive-detailed-sprites-unmatched, Metal-Slug-animation-fluidity, King-of-Fighters-sprite-artistry, Samurai-Shodown-silhouette-power, 1990-arcade-king-machine, unlimited-sprite-budget-during-development, every-frame-hand-drawn-with-love, AES-cartridge-ridiculous-price-tag-energy",
-      "form_and_line": "Enormous-detailed-sprite-pixels, massive-animation-frames-per-character, background-parallax-depth, no-hardware-sprite-limits-visible, pixel-art-at-its-peak",
-      "color_palette": "4096-color-simultaneous, 65K-total-palette, rich-vibrant-arcade-spectrum, SNK-deep-color-mastery, no-palette-compromise, unlimited-sprite-color-budget",
-      "lighting_setup": "Sprite-pixel-art-lighting-finesse, hundreds-of-frames-animation, palette-gradient-depth, background-atmospheric-perspective, sprite-shadow-under-foot",
-      "material_texture": "Massive-sprite-pixel-texture, hand-drawn-animation-frame-density, background-tile-variety-wealth, arcade-CRT-perfect-display, AES-home-cartridge-luxury, no-compromise-pixel-quality",
-      "render_quality": "Neo-Geo-sprite-king aesthetic, peak-pixel-art rendering, arcade-perfection beauty, Metal-Slug-animation-masterpiece, unlimited-sprite-budget-luxury",
-      "spatial_distortion": "Massive-sprite-on-screen-freedom, many-background-parallax-layers, no-object-limits-spatial, fluid-animation-without-spatial-compromise",
-      "atmosphere": "Arcade-royalty, pixel-art-apotheosis, money-is-no-object-production, SNK-golden-age, MVS-cartridge-heavyweight-champion",
-      "key_features": "Massive-detailed-sprites, Metal-Slug-animation-fluidity, 4096-simultaneous-colors, no-visible-sprite-limits, rich-arcade-palette, hundreds-of-animation-frames, SNK-sprite-artistry",
-      "creative_brief": "Sprites explode with detail that should not fit in memory — Metal Slug soldiers with hundreds of animation frames, every death pose a work of art, every background tile hand-drawn with obsessive care. 4096 colors on screen simultaneously, the palette of a machine that refused to compromise. The image is the arcade at its absolute peak, a moment before polygons made pixels obsolete, when sprite art reached its final form."
-    }
+    id: 'SP06-096',
+    name: 'Neo Geo Sprite King',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'low detail, limited sprite, simple, minimal, retro, small, basic, weak hardware, few frames',
+    style: {
+      aesthetic:
+        'Neo-Geo-arcade-perfection, massive-detailed-sprites-unmatched, Metal-Slug-animation-fluidity, King-of-Fighters-sprite-artistry, Samurai-Shodown-silhouette-power, 1990-arcade-king-machine, unlimited-sprite-budget-during-development, every-frame-hand-drawn-with-love, AES-cartridge-ridiculous-price-tag-energy',
+      form_and_line:
+        'Enormous-detailed-sprite-pixels, massive-animation-frames-per-character, background-parallax-depth, no-hardware-sprite-limits-visible, pixel-art-at-its-peak',
+      color_palette:
+        '4096-color-simultaneous, 65K-total-palette, rich-vibrant-arcade-spectrum, SNK-deep-color-mastery, no-palette-compromise, unlimited-sprite-color-budget',
+      lighting_setup:
+        'Sprite-pixel-art-lighting-finesse, hundreds-of-frames-animation, palette-gradient-depth, background-atmospheric-perspective, sprite-shadow-under-foot',
+      material_texture:
+        'Massive-sprite-pixel-texture, hand-drawn-animation-frame-density, background-tile-variety-wealth, arcade-CRT-perfect-display, AES-home-cartridge-luxury, no-compromise-pixel-quality',
+      render_quality:
+        'Neo-Geo-sprite-king aesthetic, peak-pixel-art rendering, arcade-perfection beauty, Metal-Slug-animation-masterpiece, unlimited-sprite-budget-luxury',
+      spatial_distortion:
+        'Massive-sprite-on-screen-freedom, many-background-parallax-layers, no-object-limits-spatial, fluid-animation-without-spatial-compromise',
+      atmosphere:
+        'Arcade-royalty, pixel-art-apotheosis, money-is-no-object-production, SNK-golden-age, MVS-cartridge-heavyweight-champion',
+      key_features:
+        'Massive-detailed-sprites, Metal-Slug-animation-fluidity, 4096-simultaneous-colors, no-visible-sprite-limits, rich-arcade-palette, hundreds-of-animation-frames, SNK-sprite-artistry',
+      creative_brief:
+        'Sprites explode with detail that should not fit in memory — Metal Slug soldiers with hundreds of animation frames, every death pose a work of art, every background tile hand-drawn with obsessive care. 4096 colors on screen simultaneously, the palette of a machine that refused to compromise. The image is the arcade at its absolute peak, a moment before polygons made pixels obsolete, when sprite art reached its final form.',
+    },
   },
   {
-    "id": "SP06-100",
-    "name": "Game Boy Camera Thermal Print",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "smooth, HD, color, gradient, modern, clean, sharp, anti-aliased, realistic, film grain",
-    "style": {
-      "aesthetic": "Nintendo-Game-Boy-Camera aesthetic, 128x112-CMOS-sensor-digital-photo, 4-shade-greyscale-thermal-printer-dot-matrix, tiny-Game-Boy-Printer-paper-roll, low-res-face-selfie-with-fisheye-lens, stamp-mode-photo-booth, hot-sauce-nickname-energy, 1998-handheld-photography-miracle, thermal-paper-fading-over-time, chiptune-photo-shoot-vibes",
-      "form_and_line": "128x112-extreme-low-resolution, Game-Boy-Camera-CMOS-sensor-contours, thermal-printer-dot-matrix-lines, fisheye-lens-panorama-distortion, stamp-mode-tile-grid",
-      "color_palette": "4-shade-Game-Boy-greyscale, thermal-dot-white, light-grey, dark-grey, black, paper-white-background, thermal-chemical-blue-when-fresh",
-      "lighting_setup": "CMOS-sensor-low-dynamic-range, Game-Boy-screen-backlit-display, flash-none-available, ambient-CRT-or-outdoor-light, terrible-low-light-noise",
-      "material_texture": "Thermal-printer-dot-matrix, Game-Boy-Printer-paper-roll-texture, fading-thermal-print-chemical, CMOS-sensor-noise-grain, Game-Boy-Camera-plastic-lens, sticker-print-peel-backing",
-      "render_quality": "Game-Boy-Camera-photo aesthetic, thermal-printer-dot-art, 128x112-extreme-low-resolution, 1998-digital-photography-beauty",
-      "spatial_distortion": "Fisheye-CMOS-lens-distortion, 128x112-proportions, stamp-mode-tile-arrangement, Game-Boy-Printer-paper-roll-curling, mini-thermal-print-scale",
-      "atmosphere": "1998-tech-wonder, playground-selfie-creativity, hot-sauce-silliness, thermal-print-memory-fading, Game-Boy-peripheral-magic",
-      "key_features": "128x112-thermal-greyscale, Game-Boy-Camera-CMOS-grain, thermal-printer-dot-matrix, fisheye-lens-distortion, stamp-mode-tiling, 4-shade-greyscale-only, thermal-paper-texture",
-      "creative_brief": "A 128x112 CMOS sensor captures the world in four shades of thermal grey, the Game Boy Camera transforming handheld photography into dot-matrix memory. The fisheye lens distorts faces into moons, stamp mode tiles them into photo-booth grids, the thermal printer spitting out tiny fading squares of chemical paper. The image is 1998 believing the future had arrived — and being absolutely right."
-    }
+    id: 'SP06-100',
+    name: 'Game Boy Camera Thermal Print',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'smooth, HD, color, gradient, modern, clean, sharp, anti-aliased, realistic, film grain',
+    style: {
+      aesthetic:
+        'Nintendo-Game-Boy-Camera aesthetic, 128x112-CMOS-sensor-digital-photo, 4-shade-greyscale-thermal-printer-dot-matrix, tiny-Game-Boy-Printer-paper-roll, low-res-face-selfie-with-fisheye-lens, stamp-mode-photo-booth, hot-sauce-nickname-energy, 1998-handheld-photography-miracle, thermal-paper-fading-over-time, chiptune-photo-shoot-vibes',
+      form_and_line:
+        '128x112-extreme-low-resolution, Game-Boy-Camera-CMOS-sensor-contours, thermal-printer-dot-matrix-lines, fisheye-lens-panorama-distortion, stamp-mode-tile-grid',
+      color_palette:
+        '4-shade-Game-Boy-greyscale, thermal-dot-white, light-grey, dark-grey, black, paper-white-background, thermal-chemical-blue-when-fresh',
+      lighting_setup:
+        'CMOS-sensor-low-dynamic-range, Game-Boy-screen-backlit-display, flash-none-available, ambient-CRT-or-outdoor-light, terrible-low-light-noise',
+      material_texture:
+        'Thermal-printer-dot-matrix, Game-Boy-Printer-paper-roll-texture, fading-thermal-print-chemical, CMOS-sensor-noise-grain, Game-Boy-Camera-plastic-lens, sticker-print-peel-backing',
+      render_quality:
+        'Game-Boy-Camera-photo aesthetic, thermal-printer-dot-art, 128x112-extreme-low-resolution, 1998-digital-photography-beauty',
+      spatial_distortion:
+        'Fisheye-CMOS-lens-distortion, 128x112-proportions, stamp-mode-tile-arrangement, Game-Boy-Printer-paper-roll-curling, mini-thermal-print-scale',
+      atmosphere:
+        '1998-tech-wonder, playground-selfie-creativity, hot-sauce-silliness, thermal-print-memory-fading, Game-Boy-peripheral-magic',
+      key_features:
+        '128x112-thermal-greyscale, Game-Boy-Camera-CMOS-grain, thermal-printer-dot-matrix, fisheye-lens-distortion, stamp-mode-tiling, 4-shade-greyscale-only, thermal-paper-texture',
+      creative_brief:
+        'A 128x112 CMOS sensor captures the world in four shades of thermal grey, the Game Boy Camera transforming handheld photography into dot-matrix memory. The fisheye lens distorts faces into moons, stamp mode tiles them into photo-booth grids, the thermal printer spitting out tiny fading squares of chemical paper. The image is 1998 believing the future had arrived — and being absolutely right.',
+    },
   },
   {
-    "id": "SP06-098",
-    "name": "TurboGrafx PC Engine",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "western, dark, muted, gritty, limited, simple, low color, CGA, slow, weak, Nintendo",
-    "style": {
-      "aesthetic": "PC-Engine-TurboGrafx-16-aesthetic, compact-Japanese-sprite-magic, bright-vibrant-482-color-palette, Bonk-PC-Genjin-headbutt-caveman-charm, Castlevania-Rondo-of-Blood-richness, Hudson-Soft-API-developer-bee-logo-soul, HuCard-thin-credit-card-cartridges, CD-ROM2-Red-Book-audio-RPG-golden-age, NEC-console-that-could-have-been-great",
-      "form_and_line": "Compact-but-vibrant-pixel-sprites, 16-bit-sprite-hardware-in-8-bit-CPU-body, 320x256-or-256x240-resolution, CD-ROM-data-loaded-into-sprite-RAM",
-      "color_palette": "512-color-total, 482-displayable, PC-Engine-vibrant-bright, Bonk-orange-brown-caveman, Castlevania-gothic-red-purple, Dracula-X-CD-red-book-audio-visual-counterpart, Hudson-bee-yellow",
-      "lighting_setup": "Sprite-pixel-art-directional-lighting, palette-gradient-for-depth, CD-ROM-loaded-backgrounds-complex, parallax-scrolling-lighting, no-blast-processing-but-elegant-rendering",
-      "material_texture": "HuCard-thin-cartridge-texture, CD-ROM2-loading-screen, pixel-sprite-compactness, 8-bit-CPU-16-bit-graphics-schizophrenia, PC-Engine-LT-portable-LCD",
-      "render_quality": "PC-Engine-TurboGrafx-pixel aesthetic, Japanese-16-bit-compact-beauty, HuCard-game-charm, CD-ROM-RPG- golden-era-rendering",
-      "spatial_distortion": "320x256-Japanese-resolution, CD-ROM-loaded-backgrounds-ceiling, vertical-oriented-Japanese-shmups, handheld-LT-LCD-screen, compact-sprite-proportions",
-      "atmosphere": "Japanese-console-wonder, NEC-technical-ingenuity, Hudson-Soft- creativity, CD-ROM-RPG- golden-age, what-could-have-been nostalgia",
-      "key_features": "Bright-482-color-palette, HuCard-cartridge, CD-ROM2-loaded-art, PC-Engine-compact-sprite-design, Bonk-PC-Genjin-style, 16-bit-graphics-in-8-bit-system, Japanese-console-charm",
-      "creative_brief": "An 8-bit CPU drives 16-bit graphics through elegant Japanese engineering, compact sprites achieving what bigger machines managed with more silicon. HuCard cartridges thinner than credit cards contain entire worlds, the CD-ROM add-on loading backgrounds too beautiful for the era. The image carries the what-if of NEC's ambition, a console that nearly changed everything, preserved now in the amber of pixel art that still glows."
-    }
+    id: 'SP06-098',
+    name: 'TurboGrafx PC Engine',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'western, dark, muted, gritty, limited, simple, low color, CGA, slow, weak, Nintendo',
+    style: {
+      aesthetic:
+        'PC-Engine-TurboGrafx-16-aesthetic, compact-Japanese-sprite-magic, bright-vibrant-482-color-palette, Bonk-PC-Genjin-headbutt-caveman-charm, Castlevania-Rondo-of-Blood-richness, Hudson-Soft-API-developer-bee-logo-soul, HuCard-thin-credit-card-cartridges, CD-ROM2-Red-Book-audio-RPG-golden-age, NEC-console-that-could-have-been-great',
+      form_and_line:
+        'Compact-but-vibrant-pixel-sprites, 16-bit-sprite-hardware-in-8-bit-CPU-body, 320x256-or-256x240-resolution, CD-ROM-data-loaded-into-sprite-RAM',
+      color_palette:
+        '512-color-total, 482-displayable, PC-Engine-vibrant-bright, Bonk-orange-brown-caveman, Castlevania-gothic-red-purple, Dracula-X-CD-red-book-audio-visual-counterpart, Hudson-bee-yellow',
+      lighting_setup:
+        'Sprite-pixel-art-directional-lighting, palette-gradient-for-depth, CD-ROM-loaded-backgrounds-complex, parallax-scrolling-lighting, no-blast-processing-but-elegant-rendering',
+      material_texture:
+        'HuCard-thin-cartridge-texture, CD-ROM2-loading-screen, pixel-sprite-compactness, 8-bit-CPU-16-bit-graphics-schizophrenia, PC-Engine-LT-portable-LCD',
+      render_quality:
+        'PC-Engine-TurboGrafx-pixel aesthetic, Japanese-16-bit-compact-beauty, HuCard-game-charm, CD-ROM-RPG- golden-era-rendering',
+      spatial_distortion:
+        '320x256-Japanese-resolution, CD-ROM-loaded-backgrounds-ceiling, vertical-oriented-Japanese-shmups, handheld-LT-LCD-screen, compact-sprite-proportions',
+      atmosphere:
+        'Japanese-console-wonder, NEC-technical-ingenuity, Hudson-Soft- creativity, CD-ROM-RPG- golden-age, what-could-have-been nostalgia',
+      key_features:
+        'Bright-482-color-palette, HuCard-cartridge, CD-ROM2-loaded-art, PC-Engine-compact-sprite-design, Bonk-PC-Genjin-style, 16-bit-graphics-in-8-bit-system, Japanese-console-charm',
+      creative_brief:
+        "An 8-bit CPU drives 16-bit graphics through elegant Japanese engineering, compact sprites achieving what bigger machines managed with more silicon. HuCard cartridges thinner than credit cards contain entire worlds, the CD-ROM add-on loading backgrounds too beautiful for the era. The image carries the what-if of NEC's ambition, a console that nearly changed everything, preserved now in the amber of pixel art that still glows.",
+    },
   },
   {
-    "id": "SP06-089",
-    "name": "Text-Mode Roguelike ANSI",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "graphical, realistic, 3d, smooth, photo, painted, modern, high res, sprites, bitmap",
-    "style": {
-      "aesthetic": "Terminal-based roguelike art, ASCII dungeon map, ANSI color-block monsters, CP437 code-page characters, Dwarf Fortress visual abstraction, NetHack @-symbol hero, ancient BBS door-game art, text-mode worldbuilding where ¥ is gold and D is dragon",
-      "form_and_line": "Fixed-width character grid, monospace font construction, glyph-symbol representation, ASCII-art contour building, character-cell precision",
-      "color_palette": "16-color ANSI palette, DOS-blue background, bright-white @ hero, red D dragon, yellow ¥ gold, green forest hashes, cyan water tildes",
-      "lighting_setup": "No lighting, pure symbolic display, color-coding for object type, ANSI-color depth cue, terminal-background ambient",
-      "material_texture": "Monospace pixel-glyph grid, terminal-phosphor glow, text-mode character aliasing, CRT-character bleed bloom, scanline text overlay",
-      "render_quality": "Text-mode game display, ANSI-art dungeon, terminal-gaming aesthetic, code-page visual language, pure-symbolic rendering",
-      "spatial_distortion": "Character-grid dungeon floor, ASCII-symbol perspective, text-cell depth layering, fixed-width tile space, terminal-window framing",
-      "atmosphere": "Arcane, scholarly, pure imagination, text-as-world, programmer-mystic, deep-systems reverence",
-      "key_features": "ASCII/ANSI character representation, fixed-width grid, 16-color terminal palette, glyph-symbolic worldbuilding, code-page 437 characters",
-      "creative_brief": "The @ symbol is you. The D is the dragon. The # is the corridor. The world assembles from 256 characters on a 16-color grid, a universe described entirely in text that the mind renders into image. Code-page 437 is the palette, the monospace font the brush, and imagination the only GPU that matters."
-    }
+    id: 'SP06-089',
+    name: 'Text-Mode Roguelike ANSI',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'graphical, realistic, 3d, smooth, photo, painted, modern, high res, sprites, bitmap',
+    style: {
+      aesthetic:
+        'Terminal-based roguelike art, ASCII dungeon map, ANSI color-block monsters, CP437 code-page characters, Dwarf Fortress visual abstraction, NetHack @-symbol hero, ancient BBS door-game art, text-mode worldbuilding where ¥ is gold and D is dragon',
+      form_and_line:
+        'Fixed-width character grid, monospace font construction, glyph-symbol representation, ASCII-art contour building, character-cell precision',
+      color_palette:
+        '16-color ANSI palette, DOS-blue background, bright-white @ hero, red D dragon, yellow ¥ gold, green forest hashes, cyan water tildes',
+      lighting_setup:
+        'No lighting, pure symbolic display, color-coding for object type, ANSI-color depth cue, terminal-background ambient',
+      material_texture:
+        'Monospace pixel-glyph grid, terminal-phosphor glow, text-mode character aliasing, CRT-character bleed bloom, scanline text overlay',
+      render_quality:
+        'Text-mode game display, ANSI-art dungeon, terminal-gaming aesthetic, code-page visual language, pure-symbolic rendering',
+      spatial_distortion:
+        'Character-grid dungeon floor, ASCII-symbol perspective, text-cell depth layering, fixed-width tile space, terminal-window framing',
+      atmosphere:
+        'Arcane, scholarly, pure imagination, text-as-world, programmer-mystic, deep-systems reverence',
+      key_features:
+        'ASCII/ANSI character representation, fixed-width grid, 16-color terminal palette, glyph-symbolic worldbuilding, code-page 437 characters',
+      creative_brief:
+        'The @ symbol is you. The D is the dragon. The # is the corridor. The world assembles from 256 characters on a 16-color grid, a universe described entirely in text that the mind renders into image. Code-page 437 is the palette, the monospace font the brush, and imagination the only GPU that matters.',
+    },
   },
   {
-    "id": "SP06-099",
-    "name": "DS Flipnote Studio",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "color, 3d, smooth, HD, realistic, complex, gradient, rich, detailed, shading, 60fps",
-    "style": {
-      "aesthetic": "Nintendo-DSi-Flipnote-Studio aesthetic, crude-black-and-white-hand-drawn animation on tiny stylus-screen, simple-bouncing-stick-figures, memo-pad-gridding, DS-camera-crude-photo-backgrounds, low-res-LCD-limitation, exported-GIF-quality-charm, internet-Flipnote-Hatena-community-art, 2009-creativity-within-limitations, Pokemon-Scribble-community-energy",
-      "form_and_line": "Stylus-drawn-on-resistive-touchscreen, jittery-hand-drawn-lines, crude-simple-contours, frame-by-frame-animation-marks, tiny-screen-scale linework",
-      "color_palette": "Black-only-on-white, DS-LCD-desaturated-blacks, grey-background-grid, occasionally red-blue-3D-anaglyph-experiments, no-other-colors",
-      "lighting_setup": "None, flat-black-line-drawing, DS-backlit-LCD-uniform-illumination, no-shading-no-lighting",
-      "material_texture": "DS-resistive-touchscreen-texture, stylus-tip-plastic-on-plastic, low-res-LCD-pixel-grid, DSi-camera-CMOS-grain, Flipnote-memo-pad-pattern",
-      "render_quality": "Flipnote-Studio-DS aesthetic, crude-black-and-white-animation beauty, low-res-handheld-art, internet-share-community-energy",
-      "spatial_distortion": "Tiny-DS-LCD-resolution, stylus-screen-proportions, flipnote-memo-pad-gridding, crude-perspective-attempts, exported-GIF-spatial-compression",
-      "atmosphere": "Youthful, creative-community, bedroom-animation-studio, DSi-sharing- nostalgia, 2009-internet-early-social-media, charming-simplicity",
-      "key_features": "Black-on-white-drawing-only, DS-stylus-jittery-lines, flipbook-animation-marks, DSi-camera-backgrounds, memo-pad-grid-texture, low-res-LCD, exported-GIF-artifacts",
-      "creative_brief": "A plastic stylus drags across resistive touchscreen, black line on white canvas, the jitter of the hand recorded in every stroke. Frame-by-frame animation assembled on a device designed for notes, the Nintendo DS becoming a studio for a generation. The image is exported as a GIF, uploaded to Hatena, shared with a community that made art from the simplest possible tools because simplicity was all they had and all they needed."
-    }
+    id: 'SP06-099',
+    name: 'DS Flipnote Studio',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'color, 3d, smooth, HD, realistic, complex, gradient, rich, detailed, shading, 60fps',
+    style: {
+      aesthetic:
+        'Nintendo-DSi-Flipnote-Studio aesthetic, crude-black-and-white-hand-drawn animation on tiny stylus-screen, simple-bouncing-stick-figures, memo-pad-gridding, DS-camera-crude-photo-backgrounds, low-res-LCD-limitation, exported-GIF-quality-charm, internet-Flipnote-Hatena-community-art, 2009-creativity-within-limitations, Pokemon-Scribble-community-energy',
+      form_and_line:
+        'Stylus-drawn-on-resistive-touchscreen, jittery-hand-drawn-lines, crude-simple-contours, frame-by-frame-animation-marks, tiny-screen-scale linework',
+      color_palette:
+        'Black-only-on-white, DS-LCD-desaturated-blacks, grey-background-grid, occasionally red-blue-3D-anaglyph-experiments, no-other-colors',
+      lighting_setup:
+        'None, flat-black-line-drawing, DS-backlit-LCD-uniform-illumination, no-shading-no-lighting',
+      material_texture:
+        'DS-resistive-touchscreen-texture, stylus-tip-plastic-on-plastic, low-res-LCD-pixel-grid, DSi-camera-CMOS-grain, Flipnote-memo-pad-pattern',
+      render_quality:
+        'Flipnote-Studio-DS aesthetic, crude-black-and-white-animation beauty, low-res-handheld-art, internet-share-community-energy',
+      spatial_distortion:
+        'Tiny-DS-LCD-resolution, stylus-screen-proportions, flipnote-memo-pad-gridding, crude-perspective-attempts, exported-GIF-spatial-compression',
+      atmosphere:
+        'Youthful, creative-community, bedroom-animation-studio, DSi-sharing- nostalgia, 2009-internet-early-social-media, charming-simplicity',
+      key_features:
+        'Black-on-white-drawing-only, DS-stylus-jittery-lines, flipbook-animation-marks, DSi-camera-backgrounds, memo-pad-grid-texture, low-res-LCD, exported-GIF-artifacts',
+      creative_brief:
+        'A plastic stylus drags across resistive touchscreen, black line on white canvas, the jitter of the hand recorded in every stroke. Frame-by-frame animation assembled on a device designed for notes, the Nintendo DS becoming a studio for a generation. The image is exported as a GIF, uploaded to Hatena, shared with a community that made art from the simplest possible tools because simplicity was all they had and all they needed.',
+    },
   },
   {
-    "id": "SP06-084",
-    "name": "FMV Pre-Rendered Sprites",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "real-time, hand-drawn, pixel art, vector, clean, sharp, native resolution, modern, smooth",
-    "style": {
-      "aesthetic": "CG-rendered-to-sprite look, Donkey Kong Country aesthetic, 1994 Silicon Graphics pre-render magic, 3D models baked into 2D sprites, dithering-to-fit-palette artifacts, Killer Instinct arcade sprites, 256-color quantization charm",
-      "form_and_line": "CGI model contours baked to pixel, aliased pre-render edges, dithering-approximated soft shading, frame-by-frame rendered animation loops",
-      "color_palette": "256-color quantized palette, dither-pattern transitions, banded gradient approximation, CGI-to-cartridge color space compression",
-      "lighting_setup": "Raytraced studio lighting baked into sprites, pre-computed shadows, specular highlight dithering, no realtime lighting",
-      "material_texture": "Dithered gradient banding, CGI-to-pixel quantization noise, pre-rendered texture compression artifacts, frame-buffer dither patterns",
-      "render_quality": "Pre-rendered sprite magic, FMV-to-game compression aesthetic, 90s CGI nostalgia, Silicon Graphics beauty",
-      "spatial_distortion": "3D model baked to flat sprite sheet, isometric pre-rendered perspectives, frame-interpolation ghost frames",
-      "atmosphere": "90s CGI wonder, technological marvel of its time, pre-rendered beauty, cartridge-compressed ambition",
-      "key_features": "CGI dithering artifacts, 256-color banding, baked 3D-to-2D sprites, pre-rendered animation loops, palette quantization",
-      "creative_brief": "Silicon Graphics workstations rendered 3D models into 2D sprites through the alchemy of pre-computation, every frame a tiny ray-traced miracle compressed into a palette of 256 colors. Dithering stands in for gradients, banding for smoothness, the cartridge carrying the ghosts of a render farm. The image is CGI that remembers its compression, beauty that fits on a chip."
-    }
+    id: 'SP06-084',
+    name: 'FMV Pre-Rendered Sprites',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'real-time, hand-drawn, pixel art, vector, clean, sharp, native resolution, modern, smooth',
+    style: {
+      aesthetic:
+        'CG-rendered-to-sprite look, Donkey Kong Country aesthetic, 1994 Silicon Graphics pre-render magic, 3D models baked into 2D sprites, dithering-to-fit-palette artifacts, Killer Instinct arcade sprites, 256-color quantization charm',
+      form_and_line:
+        'CGI model contours baked to pixel, aliased pre-render edges, dithering-approximated soft shading, frame-by-frame rendered animation loops',
+      color_palette:
+        '256-color quantized palette, dither-pattern transitions, banded gradient approximation, CGI-to-cartridge color space compression',
+      lighting_setup:
+        'Raytraced studio lighting baked into sprites, pre-computed shadows, specular highlight dithering, no realtime lighting',
+      material_texture:
+        'Dithered gradient banding, CGI-to-pixel quantization noise, pre-rendered texture compression artifacts, frame-buffer dither patterns',
+      render_quality:
+        'Pre-rendered sprite magic, FMV-to-game compression aesthetic, 90s CGI nostalgia, Silicon Graphics beauty',
+      spatial_distortion:
+        '3D model baked to flat sprite sheet, isometric pre-rendered perspectives, frame-interpolation ghost frames',
+      atmosphere:
+        '90s CGI wonder, technological marvel of its time, pre-rendered beauty, cartridge-compressed ambition',
+      key_features:
+        'CGI dithering artifacts, 256-color banding, baked 3D-to-2D sprites, pre-rendered animation loops, palette quantization',
+      creative_brief:
+        'Silicon Graphics workstations rendered 3D models into 2D sprites through the alchemy of pre-computation, every frame a tiny ray-traced miracle compressed into a palette of 256 colors. Dithering stands in for gradients, banding for smoothness, the cartridge carrying the ghosts of a render farm. The image is CGI that remembers its compression, beauty that fits on a chip.',
+    },
   },
   {
-    "id": "SP06-090",
-    "name": "Voxel Block Sprites",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "smooth, organic, curved, realistic, high poly, anti-aliased, fluid, soft, photorealistic, painted",
-    "style": {
-      "aesthetic": "Three-dimensional pixel blocks, voxel-art characters, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic-pixel world, Minecraft-meets-sprite-sheet, colorful block-built characters, isometric cube-grid construction, toy-block 3D pixel art",
-      "form_and_line": "Cubic-voxel contour, block-stepped edges, orthogonal grid construction, visible cube boundaries, straight-angle everything",
-      "color_palette": "Bright plastic-cube colors, toy-block primaries, voxel-material palette, per-cube flat coloring, modular color scheme",
-      "lighting_setup": "Global-illumination cube lighting, ambient-occlusion block corners, soft shadow under voxel overhangs, directional sun on block-grid",
-      "material_texture": "Cube-face flat shading, block-edge ambient occlusion, plastic-cube surface, matte-voxel material, grid-seam texture",
-      "render_quality": "Voxel-art render, MagicaVoxel-style beauty, 3D-pixel aesthetic, block-world charm, toy-cube rendering",
-      "spatial_distortion": "Voxel-grid blocky proportions, isometric cube arrangement, cube-stepped curves, block-resolution shape limitation",
-      "atmosphere": "Playful, constructive, toy-block creativity, digital-Lego spirit, colorful-three-dimensional-pixel joy",
-      "key_features": "Cubic-voxel construction, block-stepped contours, isometric grid alignment, ambient-occlusion block edges, per-cube flat coloring",
-      "creative_brief": "The world measured in cubes, curves approximated by stepping blocks, the smooth world rejected in favor of the constructible. Every cube face catches light at a different angle, ambient occlusion darkening the joints where blocks meet, giving mass to the modular. The image is a toy that became a universe, LEGO brick logic scaled to infinity."
-    }
+    id: 'SP06-090',
+    name: 'Voxel Block Sprites',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'smooth, organic, curved, realistic, high poly, anti-aliased, fluid, soft, photorealistic, painted',
+    style: {
+      aesthetic:
+        'Three-dimensional pixel blocks, voxel-art characters, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic-pixel world, Minecraft-meets-sprite-sheet, colorful block-built characters, isometric cube-grid construction, toy-block 3D pixel art',
+      form_and_line:
+        'Cubic-voxel contour, block-stepped edges, orthogonal grid construction, visible cube boundaries, straight-angle everything',
+      color_palette:
+        'Bright plastic-cube colors, toy-block primaries, voxel-material palette, per-cube flat coloring, modular color scheme',
+      lighting_setup:
+        'Global-illumination cube lighting, ambient-occlusion block corners, soft shadow under voxel overhangs, directional sun on block-grid',
+      material_texture:
+        'Cube-face flat shading, block-edge ambient occlusion, plastic-cube surface, matte-voxel material, grid-seam texture',
+      render_quality:
+        'Voxel-art render, MagicaVoxel-style beauty, 3D-pixel aesthetic, block-world charm, toy-cube rendering',
+      spatial_distortion:
+        'Voxel-grid blocky proportions, isometric cube arrangement, cube-stepped curves, block-resolution shape limitation',
+      atmosphere:
+        'Playful, constructive, toy-block creativity, digital-Lego spirit, colorful-three-dimensional-pixel joy',
+      key_features:
+        'Cubic-voxel construction, block-stepped contours, isometric grid alignment, ambient-occlusion block edges, per-cube flat coloring',
+      creative_brief:
+        'The world measured in cubes, curves approximated by stepping blocks, the smooth world rejected in favor of the constructible. Every cube face catches light at a different angle, ambient occlusion darkening the joints where blocks meet, giving mass to the modular. The image is a toy that became a universe, LEGO brick logic scaled to infinity.',
+    },
   },
   {
-    "id": "SP06-091",
-    "name": "Vectrex Vector Display",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "raster, pixel, filled, color, modern, 3d, photo, smooth, realistic, solid, bitmap, shaded",
-    "style": {
-      "aesthetic": "Vectrex-console vector-CRT display, pure-white-glowing-lines on pitch-black-screen, single-color-vector-drawing, Asteroids-style-wireframe, Tempest-tunnel-perspective, analog-electron-beam-drawing-in-real-time, plastic-screen-overlay-color-gels for faux-color, no-pixels-no-bitmap-just-lines, 1982-console-limitation-beauty, cathode-ray-tube-vector-magic",
-      "form_and_line": "Pure-glowing-vector-lines-only, wireframe-geometry, electron-beam-drawn-contours, no-filled-surfaces, transparency-through-wireframe, line-brightness-peaking-at-stroke-centers",
-      "color_palette": "Phosphor-white-on-void-black, Vectrex-screen-overlay blue or green or red transparent-plastic-gel, single-color-per-display, no-gradients-pure-beam",
-      "lighting_setup": "Self-illuminated-phosphor-glow, brighter-at-line-intersections, beam-persistence-afterglow, CRT-screen-curvature-reflective-light",
-      "material_texture": "CRT-phosphor-glow-bloom, vector-display-line-artifact, transparent-plastic-screen-overlay-scratches, electron-beam-persistence-trail, analog-vector-drift-wobble",
-      "render_quality": "Vectrex-vector-display aesthetic, analog-CRT-beam-beauty, wireframe-only-rendering, 1982-vector-console nostalgia",
-      "spatial_distortion": "Vector-wireframe-perspective, infinite-black-void-space, rotating-wireframe-objects, CRT-screen-curvature, plastic-overlay-frame",
-      "atmosphere": "Retro-futuristic, analog-electronic, arcade-darkness, vector-glow-hypnosis, pre-pixel-computing soul",
-      "key_features": "Pure-white-vector-lines-on-black, wireframe-only-geometry, CRT-phosphor-glow-bloom, plastic-screen-overlay-framing, single-color-display, line-intersection brightening, electron-beam-persistence",
-      "creative_brief": "Pure white phosphor lines float on glass-black void, the electron beam tracing geometry with analog precision, no pixels, no grid, just voltage translated into light. A colored plastic overlay tints the monochrome into blue or red, a gel between the cathode ray and the eye. The image is light in its most elemental form — a single color, a single beam, a single continuous line that never stops moving."
-    }
+    id: 'SP06-091',
+    name: 'Vectrex Vector Display',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'raster, pixel, filled, color, modern, 3d, photo, smooth, realistic, solid, bitmap, shaded',
+    style: {
+      aesthetic:
+        'Vectrex-console vector-CRT display, pure-white-glowing-lines on pitch-black-screen, single-color-vector-drawing, Asteroids-style-wireframe, Tempest-tunnel-perspective, analog-electron-beam-drawing-in-real-time, plastic-screen-overlay-color-gels for faux-color, no-pixels-no-bitmap-just-lines, 1982-console-limitation-beauty, cathode-ray-tube-vector-magic',
+      form_and_line:
+        'Pure-glowing-vector-lines-only, wireframe-geometry, electron-beam-drawn-contours, no-filled-surfaces, transparency-through-wireframe, line-brightness-peaking-at-stroke-centers',
+      color_palette:
+        'Phosphor-white-on-void-black, Vectrex-screen-overlay blue or green or red transparent-plastic-gel, single-color-per-display, no-gradients-pure-beam',
+      lighting_setup:
+        'Self-illuminated-phosphor-glow, brighter-at-line-intersections, beam-persistence-afterglow, CRT-screen-curvature-reflective-light',
+      material_texture:
+        'CRT-phosphor-glow-bloom, vector-display-line-artifact, transparent-plastic-screen-overlay-scratches, electron-beam-persistence-trail, analog-vector-drift-wobble',
+      render_quality:
+        'Vectrex-vector-display aesthetic, analog-CRT-beam-beauty, wireframe-only-rendering, 1982-vector-console nostalgia',
+      spatial_distortion:
+        'Vector-wireframe-perspective, infinite-black-void-space, rotating-wireframe-objects, CRT-screen-curvature, plastic-overlay-frame',
+      atmosphere:
+        'Retro-futuristic, analog-electronic, arcade-darkness, vector-glow-hypnosis, pre-pixel-computing soul',
+      key_features:
+        'Pure-white-vector-lines-on-black, wireframe-only-geometry, CRT-phosphor-glow-bloom, plastic-screen-overlay-framing, single-color-display, line-intersection brightening, electron-beam-persistence',
+      creative_brief:
+        'Pure white phosphor lines float on glass-black void, the electron beam tracing geometry with analog precision, no pixels, no grid, just voltage translated into light. A colored plastic overlay tints the monochrome into blue or red, a gel between the cathode ray and the eye. The image is light in its most elemental form — a single color, a single beam, a single continuous line that never stops moving.',
+    },
   },
   {
-    "id": "SP06-083",
-    "name": "Vector Arcade Wireframe",
-    "category": "6. Retro Game Visual Systems",
-    "negativePrompt": "filled, solid, textured, colorful, raster, bitmap, shading, filled polygons, complex, photo",
-    "style": {
-      "aesthetic": "Glowing vector cathode-ray lines, Asteroids-era phosphor geometry, Tempest wireframe tunnels, Battlezone green-grid battlefield, pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron-beam drawing in real-time",
-      "form_and_line": "Pure glowing geometric strokes, wireframe polygon meshes, no filled surfaces, beam-drawn contour lines only, vector-coordinate precision",
-      "color_palette": "Phosphor green on void black, occasional amber-orange screens, blue-white vector glow, single-color per display, no RGB mixing",
-      "lighting_setup": "Self-illuminated phosphor lines, electron-beam persistence glow, brighter at stroke starts, dimming at stroke ends",
-      "material_texture": "CRT phosphor glow, analog vector display bloom, line-intersection brightening, phosphor-persistence afterglow, no pixels just beams",
-      "render_quality": "Vector arcade display, analog CRT beauty, electron-beam line art, retro-electronic aesthetic",
-      "spatial_distortion": "Vector-perspective wireframe grids, rotating wireframe models, infinite blank black space, no occlusion just transparency",
-      "atmosphere": "Retro-futuristic, electronic, arcade-darkness, analog-computing soul, early-CGI wonder",
-      "key_features": "Glowing vector lines on black, wireframe-only geometry, phosphor bloom at line intersections, no filled surfaces, raster-scan absent",
-      "creative_brief": "Pure electron beams sweep glowing geometry onto phosphor-coated glass, lines brighter where they cross, dimmer where they end, the display drawing in real time. No pixels exist, only vectors, only motion, only the persistence of light on a retina that believes what it has just seen. The image is a conspiracy between voltage and vision, the cathode ray as paintbrush."
-    }
-  }
+    id: 'SP06-083',
+    name: 'Vector Arcade Wireframe',
+    category: '6. Retro Game Visual Systems',
+    negativePrompt:
+      'filled, solid, textured, colorful, raster, bitmap, shading, filled polygons, complex, photo',
+    style: {
+      aesthetic:
+        'Glowing vector cathode-ray lines, Asteroids-era phosphor geometry, Tempest wireframe tunnels, Battlezone green-grid battlefield, pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron-beam drawing in real-time',
+      form_and_line:
+        'Pure glowing geometric strokes, wireframe polygon meshes, no filled surfaces, beam-drawn contour lines only, vector-coordinate precision',
+      color_palette:
+        'Phosphor green on void black, occasional amber-orange screens, blue-white vector glow, single-color per display, no RGB mixing',
+      lighting_setup:
+        'Self-illuminated phosphor lines, electron-beam persistence glow, brighter at stroke starts, dimming at stroke ends',
+      material_texture:
+        'CRT phosphor glow, analog vector display bloom, line-intersection brightening, phosphor-persistence afterglow, no pixels just beams',
+      render_quality:
+        'Vector arcade display, analog CRT beauty, electron-beam line art, retro-electronic aesthetic',
+      spatial_distortion:
+        'Vector-perspective wireframe grids, rotating wireframe models, infinite blank black space, no occlusion just transparency',
+      atmosphere:
+        'Retro-futuristic, electronic, arcade-darkness, analog-computing soul, early-CGI wonder',
+      key_features:
+        'Glowing vector lines on black, wireframe-only geometry, phosphor bloom at line intersections, no filled surfaces, raster-scan absent',
+      creative_brief:
+        'Pure electron beams sweep glowing geometry onto phosphor-coated glass, lines brighter where they cross, dimmer where they end, the display drawing in real time. No pixels exist, only vectors, only motion, only the persistence of light on a retina that believes what it has just seen. The image is a conspiracy between voltage and vision, the cathode ray as paintbrush.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

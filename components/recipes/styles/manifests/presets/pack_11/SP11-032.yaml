@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Liquid surface, pour-path flow, surface-tension boundary, ceramic-cup curvature
   atmosphere: Cozy, morning, cafe-hum warmth, espresso-machine rhythm, first-sip quiet
   key_features: Cup rim, crema ring, latte-art rosetta, saucer-spoon, steamed-milk gloss, pour-steam wisps
-  creative_brief: Microfoam velvet spreads across espresso crema in the practiced pour of a barista whose hand knows the weight of the pitcher. The rosetta blooms on the liquid canvas, a fleeting masterpiece destined to be sipped into disappearance within minutes. Beauty floats on crema for three seconds of appreciation before the first taste dissolves the canvas back into coffee.
+  creative_brief: >-
+    Anchor this preset in latte-surface grammar: microfoam density control,
+    crema-contrast flow patterns, and pour-path symmetry should define identity
+    beyond one café narrative moment.
 avoidRules:
   - solid
   - paint

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Broad-stroke environment blockout, atmospheric-perspective depth establishing, big-shape landscape composition, focal-point lighting direction, thumbnail-scale world-building, macro-brush confidence, Feng Zhu environment speedpaint, James Gurney atmosphere study
-  form_and_line: Large brush blocking, soft-contour atmospheric shapes, no detail lines, edge-dissolving into fog, compositional-flow curves
-  color_palette: Atmospheric-perspective gradients, warm-light cool-shadow separation, fog-desaturated distance, foreground-saturated depth cues
-  lighting_setup: Key-light direction establishing, atmospheric shadow depth, light-ray volumetric indication, backlit-rim atmospheric separation
-  material_texture: Big-brush stroke surface, atmospheric-softness texture, fog-volume gradation, cloud-layer softness, distance-lost detail texture
-  render_quality: Rough environment pass, atmospheric-blockout beauty, large-scale composition study, world-building speedpaint
-  spatial_distortion: Atmospheric-perspective depth compression, big-foreground small-background scale contrast, fog-layer recession planes
-  atmosphere: Vast, atmospheric, world-scale, exploratory, pre-production wonder, frontier-imagination
-  key_features: Atmospheric-perspective depth, big-brush shape blocking, fog-layer recession, key-light direction, thumbnail-scale composition
-  creative_brief: Atmosphere arrives before detail, broad brushes establishing the emotional weather of an entire world in a few decisive strokes. Depth stacks in atmospheric bands, the foreground a suggestion and the distance a promise. This is the threshold moment of world-building, where the environment exists as feeling before it exists as place.
+  aesthetic: Rough environment blockout with macro-shape worldbuilding focus (Feng Zhu and James Gurney-influenced)
+  form_and_line: Broad brush masses, low-detail edge control, minimal explicit linework
+  color_palette: Depth-driven warm/cool separation with fog-desaturated distance bands
+  lighting_setup: Single clear key direction with volumetric atmosphere indication
+  material_texture: Painterly large-stroke texture and soft haze transitions
+  render_quality: Early environment pass prioritizing composition, scale, and mood
+  spatial_distortion: Foreground exaggeration and atmospheric compression for depth readability
+  atmosphere: Expansive, exploratory, pre-production wonder
+  key_features: Big-shape hierarchy, focal light anchor, layered recession planes, thumbnail legibility
+  creative_brief: >-
+    Establish believable world scale quickly through large compositional masses and atmospheric depth cues. Keep detail intentionally suppressed so light direction, silhouette hierarchy, and distance layering carry the full environmental read at small viewing sizes, blending Feng Zhu-style blockout efficiency with James Gurney-like atmospheric logic.
 avoidRules:
   - detailed
   - finished

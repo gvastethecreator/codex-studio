@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Delicate correspondence, immaculate costume design, emotional stillness, glowing sunsets, Victorian-era costumes, tear-stained letters, flower-petal montages, window-light isolation
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
-  atmosphere: Tender, cinematic, longing, elegant
-  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
-  creative_brief: A letter unfolds in amber lamplight, every handwritten word a bridge between souls who cannot touch, Victorian lace catching the glow of eternal sunset through a solitary window. Hands move across paper with the precision of someone who learned love through correspondence — emotion distilled into ink, waiting to be held.
+  aesthetic: Epistolary romance-shojo style with period elegance, contemplative stillness, and emotionally luminous restraint
+  form_and_line: Fine calligraphic linework, delicate hand-gesture focus, graceful portrait contours, and posture-driven longing cues
+  color_palette: Amber-rose twilight tones, pearl neutrals, muted jewel accents, and soft sepia warmth for memory-like intimacy
+  lighting_setup: Window-lamp dual glow, low-intensity bloom halos, gentle rim caress, and still-life portrait luminance balance
+  material_texture: Paper-fiber tactility, ink trace softness, lace and satin micro-detail, watercolor-like background transitions
+  render_quality: Cinematic shojo rendering optimized for intimate emotional legibility and period-textile precision
+  spatial_distortion: Intimate depth compression with gentle elongation to prioritize correspondence-era emotional proximity
+  atmosphere: Tender, wistful, elegant, reflective, intimate
+  key_features: Epistolary gesture grammar, amber correspondence lighting, period fabric delicacy, longing-through-stillness framing
+  creative_brief: >-
+    Preserve identity via epistolary intimacy: paper-ink tactility, amber
+    portrait lighting, and restrained romantic stillness should define this
+    style independent of specific story letters.
 avoidRules:
   - realistic
   - 3d render

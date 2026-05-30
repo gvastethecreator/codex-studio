@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Monster concept
-  form_and_line: Anatomical
+  aesthetic: Creature-concept development style driven by ecological plausibility, adaptive morphology, and silhouette threat readability
+  form_and_line: Anatomical construction logic with biomechanical cue layering, functional limb articulation, and predator-profile contour control
   color_palette: Skin tones, organic chromatics, creature-flesh spectrum
   lighting_setup: Rim light, silhouette reveal, ambient dread
   material_texture: Scales, fur
   render_quality: Scary, biological, anatomical conviction, apex-predator presence
-  spatial_distortion: Extra limbs
+  spatial_distortion: Speculative anatomy distortions guided by functional adaptation, not random mutation, with balanced asymmetry control
   atmosphere: Dangerous, alive, predatory stillness, ecological tension
   key_features: Silhouette, anatomical breakdown, adaptive feature
-  creative_brief: Anatomy follows the logic of habitat, every fang and carapace an answer to an evolutionary question the viewer hasn't thought to ask. The creature holds its ground with the stillness of perfect adaptation, muscles coiled under hide designed by survival. This is biology as imagination, where every monster is a thesis about its environment.
+  creative_brief: >-
+    Preserve identity through eco-anatomical design grammar: adaptive morphology,
+    habitat-driven feature logic, and high-read silhouette threat should define
+    style beyond one monster vignette.
 avoidRules:
   - human
   - cute

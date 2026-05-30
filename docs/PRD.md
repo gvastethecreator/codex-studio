@@ -1,40 +1,34 @@
-# PRD: Local Codex Studio
+# PRD: Codex Studio local-first
 
-## Purpose
+## Objetivo
 
-Convert the existing visual image app into a local studio for generating, reviewing, and managing images with the user's authenticated Codex/ChatGPT session on the same machine, without requiring API keys for the main flow.
+Convertir la app visual actual en un estudio local para generar, revisar y gestionar imágenes usando la sesión autenticada de Codex/ChatGPT del propio usuario, sin requerir API keys en el flujo principal.
 
-## Users
+## Usuarios objetivo
 
-- Creators who want a local workflow with a persistent library.
-- Technical artists who need prompts, recipes, references, batches, and exports.
-- Codex/ChatGPT users who prefer automating generation from their local authenticated session.
+- Creadores que quieren flujo local con librería persistente.
+- Artistas técnicos que trabajan con prompts, recetas, referencias y exportaciones.
+- Usuarios de Codex/ChatGPT que prefieren automatizar generación desde su entorno local.
 
-## Functional requirements
+## Requisitos funcionales
 
-- Generate images from the UI through persistent Generation Task jobs.
-- Keep Codex as the primary product runtime through `codex app-server`.
-- Store assets, logs, transcripts, and metadata in a configurable external Studio Library.
-- Persist jobs, assets, catalog entries, libraries, and logs in SQLite.
-- Show both transient UI queue items and persistent backend jobs.
-- Show local logs in the app console.
-- Import selected files from registered External Output Sources into the Studio Library.
-- Preserve workspaces, favorites, multi-select, archive/trash, vault export, and recipes.
-- Provide dry-run or smoke-check paths to validate setup without consuming real generation.
+- Generación desde UI con jobs persistentes (`Generation Task`).
+- Codex como runtime principal vía `codex app-server`.
+- Assets/logs/transcripts en Studio Library configurable.
+- Persistencia de jobs/catálogo/librerías/logs en SQLite.
+- Soporte de cola transitoria UI + cola persistente backend.
+- Importación de archivos desde External Output Sources registradas.
 
-## Non-functional requirements
+## Requisitos no funcionales
 
-- Do not require `OPENAI_API_KEY` for the main Codex flow.
-- Keep Provider Secrets out of SQLite-backed Studio Settings, catalog metadata, logs, transcripts, screenshots, and docs.
-- Keep the local backend runnable with Bun.
-- Keep VS Code tasks for starting, validating, and inspecting logs.
-- Avoid committing sensitive or heavy local files: SQLite databases, logs, generated assets, `.env.local`, and temporary artifacts.
-- Keep the UI useful when generation continues outside the browser.
+- No exigir `OPENAI_API_KEY` en flujo principal.
+- Mantener Provider Secrets fuera de Studio Settings persistidos en SQLite.
+- Backend local ejecutable con Bun.
+- Tareas de VS Code para ejecutar, validar e inspeccionar logs.
 
-## Out of current scope
+## Fuera de alcance actual
 
-- Remote multi-user operation.
-- Cloud synchronization.
-- Making API keys mandatory for the default flow.
-- Final supported Electron packaging.
-- Perfect semantic mask editing. The editor routes image edits through local jobs with textual context and reference attachments; precision depends on the available provider capability.
+- Operación multiusuario remota.
+- Sincronización cloud.
+- Empaquetado final soportado de Electron.
+- Edición semántica perfecta de máscaras.

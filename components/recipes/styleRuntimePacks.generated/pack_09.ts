@@ -4,18 +4,29 @@ import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeType
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () => import('./pack_09/metals-and-minerals-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_09/organic-and-bio-materials-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_09/fabric-and-soft-materials-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_09/surface-wear-and-aging-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_09/fx-and-procedural-materiality-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_09/organic-and-bio-materials-2').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_09/fabric-and-soft-materials-3').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_09/surface-wear-and-aging-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_09/fx-and-procedural-materiality-5').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
-    id: "pack_09",
-    name: "Texture & Materiality",
-    description: "A deep dive into realistic materials, surfaces, and elemental effects, perfect for 3D artists and texture generation.",
+    id: 'pack_09',
+    name: 'Texture & Materiality',
+    description:
+      'A deep dive into realistic materials, surfaces, and elemental effects, perfect for 3D artists and texture generation.',
     presets: categoryPresets.flat(),
   };
 }

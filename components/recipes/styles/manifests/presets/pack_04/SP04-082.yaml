@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Photography-based concept art, real-photo fragments assembled into new designs, painted-over photo plates, texture-library construction, matte-painting technique applied to character and vehicle design, mixed-media production speed, reality-sampling creative workflow
-  form_and_line: Photo-edge cutout contours, painted-over photo transitions, adjustment-layer blend, lasso-masked compositing, mixed-resolution edge collision
-  color_palette: Photo-base color gamut, unified grade adjustment layer, paint-stroke color harmony over photo, realistic-then-stylized color bridge
-  lighting_setup: Photo-real light base, painted light adjustment, mixed-source illumination, environment-lighting matched across elements
-  material_texture: Photographic surface detail, painted-over brush strokes, resolution-mismatch texture patches, clone-stamp repair marks
-  render_quality: Photobash concept art, production-speed visualization, mixed-media concept, fast-iteration professional workflow
-  spatial_distortion: Assembled from disparate photo perspectives, unified through paint-over, forced-perspective composite, scale-blended elements
-  atmosphere: Industrial, practical, production-ready, fast-turnaround creative, resourceful problem-solving
-  key_features: Visible photo seams, paint-over strokes, resolution-mismatch patches, texture-library compositing, adjustment-layer grading
-  creative_brief: Photographs fracture and reassemble under the painter's hand, reality sampled and remixed into something that never existed. Brushstrokes bridge the seams between found fragments, paint and pixel negotiating a shared surface. This is the collage of the production artist, where the deadline demands the image arrive before the imagination finishes its work.
+  aesthetic: Hybrid photobash-and-paintover concept rendering
+  form_and_line: Cutout-based structural edges softened by targeted paint integration
+  color_palette: Source-photo gamut unified by global grade and paint harmonization
+  lighting_setup: Mixed-source lighting normalized through paint corrections and value balancing
+  material_texture: Photo-detail patches with visible brush unification passes
+  render_quality: Fast mixed-media visualization with controlled seam management
+  spatial_distortion: Perspective reconciliation of disparate source fragments
+  atmosphere: Pragmatic, production-driven, high-iteration studio workflow
+  key_features: Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy
+  creative_brief: >-
+    Assemble believable concepts from heterogeneous photo sources, then unify them with selective overpaint and grading. Preserve enough source texture to retain realism while enforcing consistent lighting, scale logic, and focal readability across the composite.
 avoidRules:
   - clean
   - pure illustration

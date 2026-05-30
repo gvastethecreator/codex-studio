@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Elegant writing/drawing
-  form_and_line: Variable width (flex)
-  color_palette: Black ink, nib-responsive, flex-width tonal richness
-  lighting_setup: Pools of ink, liquid-light reflection, wet-pool gloss
-  material_texture: Smooth paper
-  render_quality: Classy, fluid, stationery refinement, handwritten elegance
-  spatial_distortion: None
-  atmosphere: Elegant, old, penmanship tradition, correspondence gravitas
-  key_features: Line variation, flex-nib swell, hairline-to-broad
-  creative_brief: Ink flows from the split nib with the generosity of a letter to someone loved, line width varying with pressure and angle. The hand moves with the rhythm of correspondence, every stroke carrying the weight of penmanship tradition. This is writing as drawing and drawing as writing, where every mark is a small act of elegance.
+  aesthetic: Refined ink-calligraphic illustration with formal stroke cadence
+  form_and_line: High contrast hairline-to-broad transitions via pressure and angle control
+  color_palette: Deep black ink, warm neutral paper, subtle sepia oxidation hints
+  lighting_setup: Wet-ink sheen accents with controlled pooling at stroke terminals
+  material_texture: Smooth vellum-like surface with minimal drag
+  render_quality: Polished and fluid, prioritizing disciplined stroke elegance
+  spatial_distortion: None; proportion preserved through calligraphic structure
+  atmosphere: Ceremonial, classic, literate, archival quietness
+  key_features: Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing
+  creative_brief: >-
+    Build form through disciplined stroke choreography. Emphasize contrast between razor hairlines and saturated broad strokes, preserving ink-flow dynamics and taper quality. Keep compositions balanced and breathable so calligraphic motion remains the primary carrier of identity.
 avoidRules:
   - pencil
   - dry

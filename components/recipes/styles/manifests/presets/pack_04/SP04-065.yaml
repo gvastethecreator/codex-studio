@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Grease pencil on stone
-  form_and_line: Grainy crayon
+  aesthetic: Stone-lithography style with grease-crayon mark character, tonal grain softness, and chemical-print process identity
+  form_and_line: Grainy litho-crayon contouring with soft edge diffusion and pressure-sensitive wax-mark variation
   color_palette: Black or Sepia, single-stone tone, litho-crayon warmth
   lighting_setup: Soft grain, stone-texture diffusion, atmospheric softness
   material_texture: Stone grain
-  render_quality: Escher labyrinthine print, impossible geometries, mind-bending precision
+  render_quality: Classical lithographic fidelity emphasizing stone-grain tonal transitions, press transfer nuance, and atmospheric print softness
   spatial_distortion: None
   atmosphere: Classic, soft, print-studio quiet, optical wonder
   key_features: Grain, stone texture, crayon registration
-  creative_brief: Grease pencil glides across limestone with the soft friction of tradition, every mark a negotiation between hand and stone. The image waits inside the grain, latent until chemistry and pressure conspire to reveal it. This is printmaking as alchemy, where the artist works in reverse and trusts the press to complete the spell.
+  creative_brief: >-
+    Keep this preset defined by lithographic grammar: grease-on-stone mark
+    behavior, granular tonal transfer, and chemistry-driven reveal should carry
+    identity beyond any specific geometric subject.
 avoidRules:
   - sharp lines
 assets:

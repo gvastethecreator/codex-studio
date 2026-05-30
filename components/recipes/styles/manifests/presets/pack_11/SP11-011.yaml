@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Retro-futurist 80s grid, neon-drenched nostalgia, cassette-punk dreamscape, outrun highway
-  form_and_line: Laser grid, wireframe mountains, chrome horizon, sun-striped plane, digital contour
-  color_palette: Magenta, Cyan, Purple, Black, hot-neon spectrum, cyan-to-magenta gradient, deep-void backdrop
-  lighting_setup: Neon sun, glow, grid-floor radiance, chrome reflection bounce, ambient synth-light
-  material_texture: VHS grain, scanlines, CRT phosphor, chrome gloss, magnetic-tape hiss
-  render_quality: Outrun, retro, cool, FM-synth aesthetic, drive-into-sunset bliss, retro-wave precision
-  spatial_distortion: Chrome reflection, infinite grid, sun-stripe layering, horizon-engine depth
-  atmosphere: Nostalgic, fast, digital, midnight drive, electromagnetic romance, hyper-color pulse
-  key_features: Sunset gradient, laser-grid floor, triangular sun bands, neon palm silhouettes
-  creative_brief: A chrome sun sets permanently on a neon grid stretching into retro-future infinity, magenta bleeding into cyan across a sky that never existed. Laser-grid floor meets digital mountains while the outrun highway carves through a dreamscape lit by the glow of things that should be but are not yet. Speed and melancholy merge in the eternal dusk of the cassette-punk horizon.
+  aesthetic: Synthwave-retro digital aesthetic with neon geometric minimalism, analog-video nostalgia, and stylized horizon futurism
+  form_and_line: Vector-clean wireframe planes, triangular solar motifs, parallel grid recurrences, crisp retro-computational contours
+  color_palette: High-voltage magenta-cyan axis, deep violet shadows, near-black base fields, selective chrome white accents
+  lighting_setup: Emissive neon washes, bloom-forward gradient transitions, controlled halo response, reflective horizon glow
+  material_texture: CRT phosphor bloom, subtle scanline interference, VHS-era grain noise, glossy chrome edge catches
+  render_quality: Polished outrun visual finish with poster clarity, era-authentic digital artifacting, and sharp retro-wave discipline
+  spatial_distortion: Infinite perspective grid pull with horizon compression and mirrored depth cues for stylized forward momentum
+  atmosphere: Nostalgic, electric, melancholic, kinetic, euphoric
+  key_features: Neon gradient staging, wireframe depth lattice, triangular solar iconography, analog-video patina, chromed accent rhythm
+  creative_brief: >-
+    Preserve a recognizable synthwave language through gradient voltage,
+    geometric horizon systems, and analog display artifacts rather than any
+    fixed narrative roadway scene.
 avoidRules:
   - nature
   - green

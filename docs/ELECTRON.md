@@ -1,107 +1,49 @@
-# Electron: Proposed Direction
+# Electron: dirección propuesta
 
-This document does not announce an immediate Electron release. It defines the recommended path toward desktop support without turning the renderer into a bundle of desktop APIs.
+Este documento no anuncia un release inmediato de Electron. Define una estrategia gradual para soporte desktop sin acoplar el renderer a APIs de escritorio.
 
-## Current state
+## Estado actual
 
-Today the product works as a React/Vite UI that talks to a local Bun/Hono backend over HTTP. That flow is useful and remains the main path.
+El flujo principal sigue siendo UI React/Vite + backend local Bun/Hono por HTTP.
 
-The key piece that prepares the ground is **Studio Runtime**:
+El seam clave es `Studio Runtime`: el renderer resuelve `apiBase` dinámicamente (`window.codexStudio?.apiBase` → `VITE_STUDIO_API_BASE` → localhost por defecto).
 
-- the renderer no longer blindly assumes `http://localhost:17223`;
-- it first tries `window.codexStudio?.apiBase`;
-- then `VITE_STUDIO_API_BASE`;
-- and only then falls back to the default localhost value.
+## Ruta rápida
 
-This gives the app a real seam for a future desktop adapter.
+1. `bun run dev:electron` para validar shell desktop en desarrollo.
+2. `bun run preview:electron` para probar carga de build local.
+3. Mantener la app web como camino principal mientras se consolida runtime.
 
-The repo also includes a minimal Electron shell to explore that path without promising final packaging yet:
+## Línea base de seguridad
 
-- `bun run dev:electron` — starts the local backend + Vite + an Electron window against the dev server.
-- `bun run preview:electron` — builds `dist/`, starts the local backend, and loads the packaged UI inside Electron.
+- `BrowserWindow` con `preload` explícito.
+- `nodeIntegration: false`.
+- `contextIsolation: true`.
+- `sandbox: true` cuando sea viable.
+- Exponer sólo wrappers mínimos vía `contextBridge`.
+- Bloquear navegación inesperada y aperturas arbitrarias.
 
-If the backend or renderer is already running, the scripts try to reuse them before starting new processes.
+## Fricción real
 
-Useful variables:
+La complejidad no es abrir una ventana Electron: es empaquetar correctamente el backend local (Bun + `codex app-server`) dentro de distribución desktop.
 
-- `STUDIO_ELECTRON_API_BASE` points to another local backend.
-- `STUDIO_ELECTRON_RENDERER_URL` uses another dev server during `dev:electron`.
+## Estrategia por fases
 
-## Security baseline
+| Fase | Objetivo |
+|------|----------|
+| 1 | Renderer preparado (seam runtime estable) |
+| 2 | Adaptador desktop mínimo (`main` + `preload`) |
+| 3 | Empaquetado serio (Bun embebido o runtime alternativo) |
 
-Based on current Electron guidance, this project should preserve these rules:
+## Decisión práctica actual
 
-- `BrowserWindow` with explicit `preload`;
-- `nodeIntegration: false`;
-- `contextIsolation: true`;
-- `sandbox: true` when viable for the real needs;
-- expose only minimal wrappers from `preload` through `contextBridge`;
-- do not leak the full `ipcRenderer` into the renderer;
-- block unexpected navigation and arbitrary window opens.
+- No intentar release final de Electron todavía.
+- Sí consolidar runtime/onboarding y desacoplar renderer.
+- Tratar Electron como adaptador futuro, no como reescritura.
 
-In development, Electron can load the dev server URL. In production, it must load packaged local files.
+## Checklist previo a distribución desktop
 
-## The real friction
-
-The Electron window itself is not the hard part. The real bottleneck is the local backend:
-
-- `apps/local-server` uses Bun-specific APIs like `Bun.serve` and `Bun.file`;
-- Electron's desktop main process runs on Node, not Bun;
-- the product also depends on `codex app-server` and the user's authenticated local session.
-
-In other words: adding a `BrowserWindow` is easy. Packaging the full local runtime correctly is the serious part.
-
-## Recommended phased strategy
-
-### Phase 1: renderer prepared
-
-Partially done now:
-
-- the renderer resolves its API base from runtime;
-- onboarding already validates backend, Codex CLI, `codex app-server`, and local library;
-- the UI remains functional in the browser without being tied to Electron.
-
-### Phase 2: minimal desktop adapter
-
-Goal:
-
-- create `main` + `preload` processes;
-- load the Vite UI in dev and static files in production;
-- inject `window.codexStudio.apiBase` from `preload`;
-- keep the local backend as a separate process supervised by desktop.
-
-Current state:
-
-- `electron/main.cjs` creates a safe `BrowserWindow` and blocks unexpected navigation;
-- `electron/preload.cjs` exposes only `window.codexStudio` through `contextBridge`;
-- `dev:electron` and `preview:electron` start the desktop shell without coupling the renderer to Electron APIs.
-
-This phase avoids rewriting the renderer and makes Electron a new adapter at the Studio Runtime seam.
-
-### Phase 3: serious packaging
-
-Options to evaluate:
-
-1. package Bun with the app and supervise `apps/local-server` as a child process;
-2. port the local backend adapter to a Node-compatible runtime if Electron becomes the main distribution channel.
-
-Option 1 preserves more current code. Option 2 reduces external runtime dependencies, but requires more backend-adapter work.
-
-## Practical decision for now
-
-For the next open-source stage, the recommendation is:
-
-- **do not** attempt a full Electron release yet;
-- **do** keep consolidating Studio Runtime and onboarding;
-- **do** keep the renderer free of direct Electron dependencies;
-- **do** treat Electron as a future adapter, not as a product rewrite.
-
-In short: there is already a working desktop shell to validate UX and seams. There is not yet a final packaged and supported desktop distribution.
-
-## Checklist before attempting a desktop build
-
-- define how Bun will be packaged or supervised;
-- confirm `codex app-server` behavior inside a distributed desktop app;
-- review OS-specific Studio Library paths;
-- decide the logs and health-check channel between main, preload, and renderer;
-- add navigation and window-open restrictions from the first prototype.
+- [ ] Definir empaquetado/supervisión de Bun.
+- [ ] Validar comportamiento de `codex app-server` en app distribuida.
+- [ ] Revisar rutas de Studio Library por SO.
+- [ ] Definir canal de health/logs entre main, preload y renderer.

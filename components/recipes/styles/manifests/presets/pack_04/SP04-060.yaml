@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - editorial-illustration
 visualDna:
-  aesthetic: Gun or sword
-  form_and_line: Mechanical
+  aesthetic: Weapon concept-sheet style with functional lethality readability, industrial precision, and controlled silhouette authority
+  form_and_line: Mechanical contour logic with component segmentation, ergonomic line flow, and side-profile specification clarity
   color_palette: Gunmetal, tactical finish, weapon-grade metals
   lighting_setup: Rim light, barrel gleam, tactical edge highlight
   material_texture: Scratched metal
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Dangerous, heavy, trigger discipline, combat-readiness
   key_features: Side view, mechanical detail, magazine/guard
-  creative_brief: Steel catches light along edges sharpened by the imagination of combat, every bevel and fuller a decision about mortality. The weapon sits in isolation, its purpose radiating through stillness like a held breath. This is the tool as character, where design tells the story of every battle it has not yet fought.
+  creative_brief: >-
+    Preserve identity through weapon-design grammar: component hierarchy,
+    material wear logic, and isolated profile readability should define the
+    style without anchoring it to one battle story.
 avoidRules:
   - soft
   - toy

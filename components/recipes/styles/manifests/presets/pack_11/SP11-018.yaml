@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form
   atmosphere: Fun, squeaky, celebration, birthday-cake excitement, carnival-joy, shared laughter
   key_features: Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings
-  creative_brief: Latex twists into zoological impossibility under carnival lights, each squeaky joint a small miracle of air pressure and pinch-twist technique. The balloon animal exists on borrowed time, its glossy surface reflecting birthday-candle flicker and party-room glare. Fragile joy shaped by breath and tension and the knowledge that every latex zoo eventually softens and sighs.
+  creative_brief: >-
+    Keep the preset defined by latex-twist construction grammar: segmented
+    tubular inflation, knot-node articulation, and glossy pressure-tension
+    highlights should carry the style beyond any fixed party scene.
 avoidRules:
   - sharp
   - flat

@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Sci-fi living space, 2001 aesthetics, zero-friction habitat, orbital minimalism
-  form_and_line: Seamless curves, no corners, egg-like capsules, organic blobs, continuous shells
-  color_palette: Glossy White, LED Blue, Cool Cyan, Holographic Silver, Soft Magenta accent
-  lighting_setup: Hidden strip lighting, embedded glow panels, mood-responsive ambient, sensor-activated zones
-  material_texture: Plastic, glass, screen, carbon fiber, gel polymer, smart-surface, touch-reactive
-  render_quality: Space station, clean, utopia, pristine future, anti-septic perfection
-  spatial_distortion: None
-  atmosphere: Sterile, advanced, cold, weightless, hum-free, intelligence-saturated
-  key_features: Curved white surfaces, embedded displays, voice-responsive lighting, pod bed, auto-tinting glass
-  creative_brief: Seams vanish into curves, the room a continuous membrane between inhabitant and void. Embedded displays pulse with quiet data, surfaces responding to presence like a living skin. Tomorrow arrived and built itself a dwelling, every surface an argument against corners.
+  aesthetic: Neo-futurist habitat style with seamless ergonomics, ambient intelligence, and high-purity spatial minimalism
+  form_and_line: Continuous shell geometry, cornerless flow transitions, integrated interface planes, and biomorphic module repetition
+  color_palette: Clinical white foundations with cool cyan-blue light channels, holographic silver mids, and sparse magenta signal accents
+  lighting_setup: Embedded indirect luminance, adaptive ambient gradients, responsive zone highlights, and soft panel-based glow architecture
+  material_texture: Composite smart surfaces, matte-gloss polymer contrast, low-friction glass skins, touch-reactive interface finishes
+  render_quality: Ultra-clean futuristic interior rendering with precision surfacing, controlled bloom, and sterile-detail clarity
+  spatial_distortion: Smooth axial continuity with no abrupt depth breaks, reinforcing weightless circulation and frictionless occupancy
+  atmosphere: Sterile, serene, advanced, controlled, weightless
+  key_features: Seamless shell language, integrated interface lighting, adaptive ambient systems, cornerless ergonomic flow
+  creative_brief: >-
+    Preserve identity through seamless volumetric continuity and intelligent
+    ambient lighting behavior; the style should communicate post-friction
+    futurity regardless of specific room program.
 avoidRules:
   - old
   - dirty

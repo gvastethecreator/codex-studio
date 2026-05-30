@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Stark shadows, signal noise, minimal rooms, digital alienation, layered distortion, CRT monitor glow, static interference, school-girl psychological horror
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Unsettling, introspective, dissonant, bleak
-  key_features: Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling
-  creative_brief: CRT monitor glow bleeds across a stark room where a schoolgirl's silhouette fractures into signal noise, the comfortable tropes of anime cuteness corrupted by static that whispers of digital alienation. Layers of distortion stack like bad dreams, cel lines dissolving into the visual equivalent of a scream you cannot hear.
+  aesthetic: Psychological glitch-anime style built on analog signal decay, identity fragmentation, and minimalist existential framing
+  form_and_line: Fine cel contours interrupted by interference breaks, discontinuous silhouette echoes, jittered edge registration, restrained gesture geometry
+  color_palette: Desaturated lavenders and cold cyans with intermittent neon corruption pulses, charcoal voids, and ghost-white highlights
+  lighting_setup: Low-key monitor-like emission, abrupt contrast cliffs, isolated halo bands, and unstable luminance transitions
+  material_texture: CRT phosphor grain, static overlays, scanline veils, layered cel paint softness disrupted by digital noise scars
+  render_quality: High-fidelity retro-anime treatment with intentional analog artifacts and controlled degradation for emotional unease
+  spatial_distortion: Perceptual depth drift, duplicated contour offsets, and compositional dislocation that suggests cognitive instability
+  atmosphere: Uncanny, introspective, fragile, dissonant, haunted
+  key_features: Signal-noise dramaturgy, fragmented silhouette logic, analog-digital tension, sparse emotional staging, interference-led mood design
+  creative_brief: >-
+    Make the style recognizable through signal degradation behavior and
+    perceptual instability: line breaks, static overlays, and contrast collapse
+    should communicate psychological tension independent of character archetype.
 avoidRules:
   - realistic
   - 3d render

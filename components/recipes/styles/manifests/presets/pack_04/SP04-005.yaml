@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Romance manga
-  form_and_line: Thin, delicate
-  color_palette: Black and White, soft grey tones, pearlescent accent
-  lighting_setup: Soft bloom, luminous glow, dreamy highlight
-  material_texture: Flower screentones
-  render_quality: Beautiful, emotional, delicate linework, expressive eyes
-  spatial_distortion: Big eyes
-  atmosphere: Romantic, soft, shoujo longing, petal-strewn reverie
-  key_features: Sparkles, flower petals, decorative panel borders
-  creative_brief: Petals fall through panel borders like whispered confessions, each delicate line tracing the architecture of longing. Eyes carry entire worlds of unspoken feeling within their luminous screens, the sparkle overlay softening reality into reverie. This is the grammar of the heart rendered in ink and flower screentones, where beauty is both weapon and sanctuary.
+  aesthetic: Romantic manga visual language with decorative emotional emphasis
+  form_and_line: Fine delicate linework, elegant curves, expressive facial detailing
+  color_palette: Monochrome with soft gray tone bands and light ornamental accents
+  lighting_setup: Diffused glow, soft bloom highlights, low-contrast value transitions
+  material_texture: Floral/sparkle screentone motifs and airy texture overlays
+  render_quality: Polished emotional panel rendering with graceful line control
+  spatial_distortion: Stylized facial proportion and lyrical panel-space treatment
+  atmosphere: Tender, dreamy, introspective
+  key_features: Decorative overlays, ornamental borders, emotion-forward closeups
+  creative_brief: >-
+    Emphasize emotional nuance through delicate line economy, soft tonal gradients, and ornamental composition cues. Keep visual flow gentle and lyrical, using decorative screentones and expressive close framing to prioritize intimacy over action impact.
 avoidRules:
   - rough
   - ugly

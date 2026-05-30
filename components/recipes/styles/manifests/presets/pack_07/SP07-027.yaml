@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: English cottage, storybook charm, half-timbered romance, fairy-tale dwelling
-  form_and_line: Half-timbering, steep gables, diamond-pane windows, tall chimneys, crooked ridge lines
-  color_palette: Dark Wood, White Plaster, Warm Terracotta, Lichen Green, Ochre wash
-  lighting_setup: Overcast soft, leaded-glass glow, inglenook firelight, cottage-window candle
-  material_texture: Brick, wood, thatch, wattle-and-daub, leaded glass, hand-split shake
-  render_quality: Cozy, historic, storybook, idyllic England, hearth-and-home, weathered charm
-  spatial_distortion: Crooked beams
-  atmosphere: Homey, old world, hearth-warm, rooted, garden-sheltered, folk-tale safe
-  key_features: Timber frame, steep gables, tall chimney stack, diamond leaded windows, arched door hood
-  creative_brief: Half-timbered bones press dark against whitewashed plaster like a structural X-ray made beautiful. Diamond panes catch firelight in their tiny leaded prisons, each a small painting of the garden beyond. The cottage wraps around its hearth like hands around a warm mug, rooted deeper than foundations.
+  aesthetic: Tudor-revival residential style with half-timber heritage expression, romantic asymmetry, and hearth-centered historic warmth
+  form_and_line: Exposed timber grid overlays, steep gable silhouettes, irregular ridge rhythm, leaded-diamond fenestration, and chimney vertical anchors
+  color_palette: Dark stained wood against limewash whites, terracotta earth notes, moss-lichen greens, and warm ochre weathering tones
+  lighting_setup: Soft overcast daylight with warm interior hearth glow, leaded-window diffusion, and gentle evening candle accents
+  material_texture: Aged timber grain, lime plaster chalkiness, handmade brick variation, leaded glass facets, and weathered roof textures
+  render_quality: Heritage-rich visualization balancing storybook softness with authentic historical construction detail
+  spatial_distortion: Mild picturesque irregularity in beam and ridge alignment to reinforce handcrafted pre-modern character
+  atmosphere: Rooted, warm, nostalgic, protective, intimate
+  key_features: Half-timber façade grammar, steep gable profile, leaded window rhythm, chimney-hearth vertical identity
+  creative_brief: >-
+    Keep this preset defined by timber-lime contrast, picturesque asymmetry,
+    and hearth-driven warmth, preserving Tudor revival language beyond any
+    specific cottage narrative.
 avoidRules:
   - modern
 assets:

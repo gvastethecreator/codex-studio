@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Permanent marker
-  form_and_line: Thick, bleeding
-  color_palette: Black, smelly, solvent-fume authenticity, permanent-pigment assertion
-  lighting_setup: None, marker-raw, no correction, bold-gesture confidence
-  material_texture: Paper bleed
-  render_quality: Bold, rough, sharpie swagger, street-tag attitude
-  spatial_distortion: Blobby
-  atmosphere: Permanent, loud, marker-commitment, no-going-back energy
-  key_features: Thick lines, marker-nib character, bleed-through honesty
-  creative_brief: Ink saturates paper fiber with the permanence of a shouted declaration, the marker's ghost bleeding through to the next page. Thick lines commit absolutely, no eraser, no undo, only the forward momentum of the chisel tip. This is drawing with consequences, where every stroke is a point of no return.
+  aesthetic: Permanent-marker illustration with assertive graphic massing
+  form_and_line: Thick chisel-tip strokes, blunt corners, bleed-expanded contours
+  color_palette: Carbon black, occasional cool gray marker layering
+  lighting_setup: Minimal modeled light; contrast from bold fill-to-paper opposition
+  material_texture: Fiber soak, edge feathering, back-bleed ghosting
+  render_quality: Loud, raw, high-impact marks with uncorrected gesture energy
+  spatial_distortion: Slight blob expansion and edge pooling in saturated regions
+  atmosphere: Urgent, unapologetic, direct, poster-like confidence
+  key_features: Heavy contour weight, visible nib angle behavior, permanent-ink spread
+  creative_brief: >-
+    Prioritize commitment and graphic force over precision. Use decisive chisel strokes, broad black masses, and controlled bleed artifacts to create a no-undo visual language. Keep detail economy intentional so marker pressure, direction, and saturation define character.
 avoidRules:
   - fine detail
 assets:

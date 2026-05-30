@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Stitch resolution, pixel-like embroidery, cross-count limitation, grid-cell abstraction
   atmosphere: Homey, detailed, fireside-craft, generational skill, slow-thread meditation
   key_features: Fabric grain, embroidery-hoop frame, needle-thread tail, stitch-direction shading, floss-skein palette
-  creative_brief: Thread counts become resolution in a textile grid where French knots serve as pixels and satin stitch bands render smooth gradients. The hoop holds tension across a canvas woven from patience and generational knowledge, each needle pass a quiet act of preservation. Thread-painted artistry blooms on Aida cloth, the slow meditation of hands that speak through floss and fabric.
+  creative_brief: >-
+    Define this preset by embroidery-system grammar: stitch families as mark
+    vocabulary, thread-direction shading, and cloth-grid resolution limits
+    should carry identity beyond one handcrafted vignette.
 avoidRules:
   - paint
   - flat

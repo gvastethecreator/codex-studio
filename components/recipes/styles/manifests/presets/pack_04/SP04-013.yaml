@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Super deformed
-  form_and_line: Thick outline
-  color_palette: Bright, candy pop, hyper-saturated cute
-  lighting_setup: Simple, flat cel, soft ambient glow
-  material_texture: Smooth
-  render_quality: Cute, mascot, squishable charm, kawaii appeal
-  spatial_distortion: 2 heads tall
-  atmosphere: Kawaii, funny, playful slapstick, adorable chaos
-  key_features: Big head, tiny body, oversized props
-  creative_brief: Proportions collapse into pure adorable geometry, heads becoming planets that tiny bodies orbit around. Bright candy colors bounce off thick outlines like joy given physical mass. This is the physics of cute, where the rules of anatomy bend to serve the universal language of charm.
+  aesthetic: Chibi super-deformed character language with mascot-forward charm
+  form_and_line: Thick clean outlines and simplified interior detail economy
+  color_palette: Bright candy-saturated palette with high contrast readability
+  lighting_setup: Flat cel shading with minimal soft ambient accents
+  material_texture: Smooth digital finish with toy-like surface clarity
+  render_quality: Highly stylized cute rendering tuned for instant emotional read
+  spatial_distortion: Extreme head-to-body ratio (~2 heads tall)
+  atmosphere: Playful, comedic, lighthearted
+  key_features: Oversized head, tiny limbs, exaggerated props and expression icons
+  creative_brief: >-
+    Prioritize silhouette charm and immediate facial readability through extreme proportion stylization. Keep forms simple, bouncy, and high-contrast so characters remain expressive at small sizes across stickers, panels, and UI-style contexts.
 avoidRules:
   - tall
   - realistic

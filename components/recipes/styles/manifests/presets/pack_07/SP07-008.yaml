@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Traditional Japanese room, wabi-sabi beauty, tea ceremony stillness, monastic restraint
-  form_and_line: Grid of Shoji screens, tatami modules, tokonoma alcove, vertical posts, sliding tracks
-  color_palette: Bamboo, Rice Paper White, Tatami Green, Charcoal Sumi, Warm Cedar, Indigo
-  lighting_setup: Diffused paper lantern light, shoji-filtered daylight, alcove spotlight, seasonal shadow play
-  material_texture: Tatami mat, wood, paper, hand-troweled clay, rush grass, raw silk
-  render_quality: Peaceful, simple, natural, meditative clarity, refined emptiness
-  spatial_distortion: None
-  atmosphere: Meditative, quiet, disciplined, reverent, breathing stillness, seasonal awareness
-  key_features: Low furniture, tokonoma alcove, sliding fusuma, irori hearth, zen garden view
-  creative_brief: Rice paper filters daylight into meditation, each shoji grid a gentle discipline imposed on chaos. The tokonoma alcove holds a single branch, a universe of meaning in one deliberate gesture. Emptiness becomes the loudest element in the room, silence the material from which presence emerges.
+  aesthetic: Japanese zen-wabi interior style with disciplined emptiness, seasonal restraint, and contemplative material quietude
+  form_and_line: Modular tatami grid logic, shoji and fusuma linear cadence, alcove focal minimalism, and low horizon furniture profiles
+  color_palette: Rice-paper whites, bamboo and cedar warms, tatami greens, sumi-charcoal accents, and muted indigo depth notes
+  lighting_setup: Shoji-filtered daylight diffusion, lantern-soft ambient pools, alcove emphasis lighting, and seasonal shadow subtlety
+  material_texture: Tatami fiber weave, raw wood grain, hand-troweled clay matte, paper translucency, and silk-soft accent surfaces
+  render_quality: Refined minimalist rendering with high material calm, balanced negative space, and meditative visual precision
+  spatial_distortion: Neutral geometric proportioning with depth expressed through layered screens and controlled emptiness
+  atmosphere: Meditative, serene, disciplined, reverent, still
+  key_features: Modular calm composition, shoji-tatami grammar, seasonal light subtlety, wabi material restraint
+  creative_brief: >-
+    Keep this preset defined by disciplined emptiness and modular natural
+    material rhythm; meditative screen-filtered light and restrained focal
+    gestures should drive style transferability.
 avoidRules:
   - clutter
   - western

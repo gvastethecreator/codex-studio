@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Zine style
-  form_and_line: Grainy
-  color_palette: Neon Pink/Blue/Yellow, riso overlay spectrum, soy-ink vibrance
-  lighting_setup: Overprint, registered misalign, translucent ink layers
-  material_texture: Grainy, misaligned
-  render_quality: Indie, print, risograph texture, zine-culture artefact
-  spatial_distortion: Offset layers
-  atmosphere: DIY, cool, indie-press energy, art-school authenticity
-  key_features: Noise, grain texture, overprint halo
-  creative_brief: Colors misalign with the poetry of imperfect registration, each layer asserting its independence from the others. Grain texture buzzes beneath the surface like the hum of the risograph drum itself. This is the artifact as art form, where the machine's fingerprint becomes the signature.
+  aesthetic: Risograph zine print language with analog imperfection as feature
+  form_and_line: Grain-bearing contours and stencil-like shape separation
+  color_palette: Limited fluorescent/soy-ink channels with bold overprint interactions
+  lighting_setup: Layered translucent ink behavior instead of naturalistic light modeling
+  material_texture: High grain, registration drift, roller noise, and paper absorbency artifacts
+  render_quality: DIY indie-print finish with deliberate production irregularities
+  spatial_distortion: Channel misalignment and offset halos around forms
+  atmosphere: Handmade, rebellious, art-press energy
+  key_features: Overprint collisions, halftone grain fields, registration mismatch signatures
+  creative_brief: >-
+    Embrace riso mechanics as core style grammar: limited inks, imperfect registration, and tactile noise. Compose around overprint behavior and channel offset so each image feels materially printed rather than digitally simulated.
 avoidRules:
   - perfect registration
 assets:

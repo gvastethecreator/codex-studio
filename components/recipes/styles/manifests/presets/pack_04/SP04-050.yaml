@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Sci-fi ship/car
-  form_and_line: Technical
+  aesthetic: Futurist vehicle concept style balancing industrial plausibility with aspirational speed-form language
+  form_and_line: Technical line discipline with aerodynamic panel segmentation, functional contour logic, and engineering-forward silhouette design
   color_palette: Industrial, gunmetal primaries, functional-finish spectrum
   lighting_setup: Studio, product-shot key, technical highlight
   material_texture: Metal, dirt
-  render_quality: Syd Mead futurist industrial design, functional beauty, tomorrow's nostalgia
+  render_quality: High-fidelity industrial concept rendering emphasizing material separation, manufacturable form language, and mobility-focused intent
   spatial_distortion: None
   atmosphere: Fast, tech, prototype adrenaline, engineering cool
   key_features: Perspective, technical form-language, callout detail
-  creative_brief: 'Surfaces curve with the tension of velocity, every panel line a decision about aerodynamics and aggression. Materials declare themselves through highlights: chrome here, carbon there, paint like liquid midnight. This is the machine as fantasy, where form serves speed and speed serves desire.'
+  creative_brief: >-
+    Keep this preset defined by vehicle-design grammar: aerodynamic surface
+    logic, functional panel hierarchy, and material-response readability should
+    drive identity without depending on a specific sci-fi model.
 avoidRules:
   - organic
 assets:

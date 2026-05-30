@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Modern caped-hero digital comic, DC/Marvel house style, widescreen action, cinematic decompression
-  form_and_line: Clean digital ink
-  color_palette: Digital gradient, holographic foil sheen, lens-flare spectrum
-  lighting_setup: Cinematic, dynamic key light, god-ray accents
-  material_texture: Smooth
-  render_quality: High detail, polished, glossy finish, specular hero-suit reflections
-  spatial_distortion: Muscular
-  atmosphere: Action, serious, blockbuster intensity, widescreen spectacle
-  key_features: Lens flare, digital glow, panoramic spread
-  creative_brief: Light bends around muscle and fabric with the precision of a blockbuster's third-act climax, every frame holding its breath before impact. Gradients slide across spandex like liquid chrome, all holographic sheen and digital perfection. This is the modern myth machine at full throttle, printing gods in ones and zeros.
+  aesthetic: Modern blockbuster-comic style with sleek mythic hero energy, widescreen panel staging, and high-impact digital polish
+  form_and_line: Clean high-confidence digital inking with controlled contour weights, sharp silhouette reads, and cinematic action line economy
+  color_palette: Bold cool-warm contrast with luminous gradient ramps, reflective accent tones, and controlled flare-spectrum highlights
+  lighting_setup: Dynamic key/rim orchestration with volumetric accent rays, specular hit placement, and dramatic separation for heroic focus
+  material_texture: Smooth digitally polished surfaces with subtle composite grain and high-clarity FX glow layering
+  render_quality: High-detail glossy comic finish emphasizing readability under motion, premium digital compositing, and refined surface response
+  spatial_distortion: Heroic proportion push with muscular volume exaggeration, forced-perspective beats, and panoramic action framing
+  atmosphere: Intense, mythic, serious, kinetic, cinematic
+  key_features: Widescreen action composition, specular-driven suit rendering, flare-controlled highlights, decompressed-impact pacing
+  creative_brief: >-
+    Keep this preset grounded in polished blockbuster-comic grammar: heroic
+    silhouette clarity, dynamic light separation, and high-gloss action staging
+    should define identity without dependence on any specific comic universe.
 avoidRules:
   - flat
   - retro

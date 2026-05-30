@@ -4,291 +4,414 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP11-050",
-    "name": "Cocktail Macro",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "opaque",
-    "style": {
-      "aesthetic": "Drink closeup, cocktail-porn, mixology-art, back-bar-beauty, happy-hour-glamour",
-      "form_and_line": "Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral",
-      "color_palette": "Liquid gradient, negroni-crimson, gin-clear, blue-curacao ocean, Campari-ruby, mint-green, lime-wheel bright",
-      "lighting_setup": "Backlit refraction, through-glass beam, ice-cube caustic, rim-light-on-condensation, bar-shelf amber",
-      "material_texture": "Condensation, ice, frosted-glass chill, sugar-rim crystal, mint-leaf vein, citrus-oil slick",
-      "render_quality": "Refreshing, cold, happy-hour glamour, sip-ready desire, liquid-lens beauty",
-      "spatial_distortion": "Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension",
-      "atmosphere": "Party, relax, cocktail-hour murmur, ice-clink rhythm, Friday-evening freedom",
-      "key_features": "Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap bruise",
-      "creative_brief": "Ice cubes stack in crystalline architecture, refracting amber negroni light into caustic patterns that dance across the bar surface. Condensation beads slowly on the chilled coupe, each droplet a tiny lens containing an inverted miniature of the room it cools. Liquid-ruby clarity promises the specific warmth of a Friday evening, the citrus-peel twist releasing its oil across the surface like a benediction before the first sip."
-    }
+    id: 'SP11-050',
+    name: 'Cocktail Macro',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'opaque',
+    style: {
+      aesthetic: 'Drink closeup, cocktail-porn, mixology-art, back-bar-beauty, happy-hour-glamour',
+      form_and_line:
+        'Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral',
+      color_palette:
+        'Liquid gradient, negroni-crimson, gin-clear, blue-curacao ocean, Campari-ruby, mint-green, lime-wheel bright',
+      lighting_setup:
+        'Backlit refraction, through-glass beam, ice-cube caustic, rim-light-on-condensation, bar-shelf amber',
+      material_texture:
+        'Condensation, ice, frosted-glass chill, sugar-rim crystal, mint-leaf vein, citrus-oil slick',
+      render_quality: 'Refreshing, cold, happy-hour glamour, sip-ready desire, liquid-lens beauty',
+      spatial_distortion:
+        'Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension',
+      atmosphere: 'Party, relax, cocktail-hour murmur, ice-clink rhythm, Friday-evening freedom',
+      key_features:
+        'Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap bruise',
+      creative_brief:
+        'Ice cubes stack in crystalline architecture, refracting amber negroni light into caustic patterns that dance across the bar surface. Condensation beads slowly on the chilled coupe, each droplet a tiny lens containing an inverted miniature of the room it cools. Liquid-ruby clarity promises the specific warmth of a Friday evening, the citrus-peel twist releasing its oil across the surface like a benediction before the first sip.',
+    },
   },
   {
-    "id": "SP11-017",
-    "name": "Action Figure (90s)",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "realistic skin",
-    "style": {
-      "aesthetic": "Plastic hero toy, blister-pack icon, Saturday-morning warrior, molded-champion",
-      "form_and_line": "Muscle definition, heroic physique, sculpted-hero contours, punch-ready stance",
-      "color_palette": "Bright plastic, primary-suit colors, flesh-tan plastic, metallic-sword silver, cape-blue",
-      "lighting_setup": "Blister pack reflection, card-back gloss, overhead retail fluorescents, plastic-bubble glare",
-      "material_texture": "Glossy plastic, injection-mold shell, hollow-torso lightweight, paint-application sheen",
-      "render_quality": "Mass produced, toy, peg-hook nostalgia, action-figure charm, punch-kick-pose energy",
-      "spatial_distortion": "5 points of articulation, shoulder-hip-knee hinges, swivel-neck, weapon-grip hands",
-      "atmosphere": "Exciting, play, adventure aisle, birthday-morning thrill, living-room-battle diorama",
-      "key_features": "Joints visible, thigh-swivel seams, molded-cape detail, accessory-weapon grip",
-      "creative_brief": "Five points of articulation unlock infinite adventure on the living-room floor, the blister-pack reflection catching retail fluorescence like a hero's arrival. Injection-molded plastic holds the punch-ready stance permanently, cape frozen mid-swoop across molded shoulders. Every Saturday morning is encoded in the thigh-swivel seams and weapon-grip hands of a molded champion."
-    }
+    id: 'SP11-017',
+    name: 'Action Figure (90s)',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'realistic skin',
+    style: {
+      aesthetic:
+        'Retro action-toy collectible style with heroic molded proportions, shelf-display energy, and kinetic play-readiness',
+      form_and_line:
+        'Sculpted hero contour emphasis with visible articulation seams, bold toy silhouette clarity, and pose-forward geometry',
+      color_palette:
+        'Saturated toy primaries with metallic accent paints, molded skin-tone neutrals, and high-contrast accessory blocks',
+      lighting_setup:
+        'Retail-style overhead speculars, blister-like glare streaks, and glossy card-surface reflections for packaging realism',
+      material_texture:
+        'Injection-mold plastic sheen, painted detail pass variation, seam-line evidence, and rigid-shell synthetic finish',
+      render_quality:
+        'High-legibility collectible rendering focused on articulation readability, toy-scale dynamics, and nostalgic mass-market polish',
+      spatial_distortion:
+        'Action-figure joint logic with hinge/swivel articulation cues and exaggerated heroic torso-to-limb proportioning',
+      atmosphere: 'Playful, energetic, nostalgic, bold, adventurous',
+      key_features:
+        'Articulation seam grammar, molded accessory grip cues, hero-pose silhouette lock, packaged-collectible lighting behavior',
+      creative_brief:
+        'Preserve identity through articulated toy-hero grammar: molded plastic anatomy, visible joint systems, and display-ready gloss should carry the preset without anchoring it to one fixed living-room battle story.',
+    },
   },
   {
-    "id": "SP11-001",
-    "name": "Lego Toy Brick Build",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "melted, smooth, organic",
-    "style": {
-      "aesthetic": "Scene built entirely from LEGO toy bricks, ABS-plastic diorama, brick-for-brick construction, snap-together storytelling",
-      "form_and_line": "Brick seams, studs, interlocking grid, sharp-corner geometry",
-      "color_palette": "Classic LEGO toy-brick primaries (Red, Blue, Yellow), bright-plastic spectrum, high-saturation glossy",
-      "lighting_setup": "Glossy plastic reflection, studio key light, rim highlights, shallow depth of field",
-      "material_texture": "ABS plastic, studs, injection-molded precision, glossy shell finish, clutch-power grip",
-      "render_quality": "The LEGO Movie toy-brick stop-motion energy, everything-is-awesome kinetic, brick-built wonder",
-      "spatial_distortion": "Blocky, minifigure proportions, cubic abstraction, top-stud resolution, snap-grid logic",
-      "atmosphere": "Playful, creative, childhood, imaginative nostalgia, colorful joy, constructive wonder",
-      "key_features": "Studs on top surfaces, tubular undersides, brick-seam shadows, minifigure scale",
-      "creative_brief": "The world clicks together one stud at a time, every surface a testament to constructive imagination. Light glances across glossy ABS plastic as if the bricks themselves hum with readiness. Block by block, the ordinary rebuilds itself into the extraordinary."
-    }
+    id: 'SP11-001',
+    name: 'Lego Toy Brick Build',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'melted, smooth, organic',
+    style: {
+      aesthetic:
+        'Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful constructive energy',
+      form_and_line:
+        'Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural rhythm',
+      color_palette:
+        'High-saturation toy primaries with clean contrast blocks and glossy plastic-friendly hue separation',
+      lighting_setup:
+        'Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability',
+      material_texture:
+        'Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish',
+      render_quality:
+        'Crisp toy-assembly rendering prioritizing modular legibility, geometric coherence, and playful engineered charm',
+      spatial_distortion:
+        'Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial simplification',
+      atmosphere: 'Playful, inventive, structured, nostalgic, constructive',
+      key_features:
+        'Stud-grid grammar, modular seam legibility, toy-plastic gloss control, block-assembly composition logic',
+      creative_brief:
+        'Keep this preset defined by modular snap-assembly language and toy-plastic material behavior, so brick-system readability remains the transferable core beyond specific diorama scenes.',
+    },
   },
   {
-    "id": "SP11-002",
-    "name": "Funko Pop Vinyl Collectible Figure",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "realistic proportions, small head",
-    "style": {
-      "aesthetic": "Vinyl collectible figure, bobblehead charm, pop-culture icon, display-shelf darling",
-      "form_and_line": "Smooth, rounded, simplified contours, cute abstraction, soft silhouette",
-      "color_palette": "Matte vinyl paint, saturated primaries, soft pastel accents, bold contrast",
-      "lighting_setup": "Studio box lighting, even diffusion, shadowless display, product-photography glow",
-      "material_texture": "Vinyl plastic, matte finish, smooth rotocast surface, semi-soft touch",
-      "render_quality": "Collectible, cute, merchandise, display-shelf appeal, window-box beauty, fandom artifact",
-      "spatial_distortion": "Giant square head, simple black button eyes, zero-mouth expression, exaggerated cranium",
-      "atmosphere": "Cute, static, display, shelf presence, fandom love, curated collection",
-      "key_features": "Box packaging (optional), die-cut window, branded display stand",
-      "creative_brief": "Giant square heads hold entire universes behind black button eyes, the vinyl figure distilled to its purest geometric essence. The bobblehead stands silent on its display shelf, a pop-culture icon rendered cute through radical simplification. Fandom worship crystallized in rotocast plastic, waiting in window-box devotion."
-    }
+    id: 'SP11-002',
+    name: 'Funko Pop Vinyl Collectible Figure',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'realistic proportions, small head',
+    style: {
+      aesthetic:
+        'Designer-vinyl collectible style with iconic simplification, shelf-display charisma, and fandom-object polish',
+      form_and_line:
+        'Big-head minimal silhouette logic, rounded contour economy, reduced facial feature grammar, and toy-like geometric abstraction',
+      color_palette:
+        'Matte-vinyl friendly saturated blocks with restrained pastel accents and high-contrast identity markers',
+      lighting_setup:
+        'Soft-box product illumination, even diffusion for form clarity, controlled specular restraint, and shelf-ready glow balance',
+      material_texture:
+        'Rotocast vinyl matte skin, smooth molded edges, subtle seam minimalism, and semi-soft tactile finish cues',
+      render_quality:
+        'Premium collectible-render aesthetic focused on silhouette recognizability and display-case merchandising clarity',
+      spatial_distortion:
+        'Exaggerated cranium-to-body ratio with simplified limb volume to maintain stylized collectible identity',
+      atmosphere: 'Cute, curated, iconic, collectible, display-forward',
+      key_features:
+        'Big-head abstraction grammar, button-eye minimalism, display-figure composition cues, vinyl-matte surface discipline',
+      creative_brief:
+        'Preserve this preset through collectible abstraction rules—overscaled head ratios, reduced facial geometry, and matte vinyl display polish should define the style regardless of franchise character source.',
+    },
   },
   {
-    "id": "SP11-022",
-    "name": "Aardman Clay Stop-Motion",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "smooth cgi",
-    "style": {
-      "aesthetic": "Wallace & Gromit cozy clay stop-motion comedy, cheese-and-crackers warmth",
-      "form_and_line": "Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles",
-      "color_palette": "Matte clay colors, plasticine spectrum, earth-pigment tones, muted primary blends",
-      "lighting_setup": "Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth",
-      "material_texture": "Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability",
-      "render_quality": "British dry humor tactile, Aardman charm, thumbprint poetry, frame-by-frame soul",
-      "spatial_distortion": "Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands",
-      "atmosphere": "Funny, charming, tea-time warmth, vegetable-garden mischief, inventive optimism",
-      "key_features": "Plasticine, visible thumbprints, painted-backdrop sets, wire-armature shadows",
-      "creative_brief": "Thumbprints remain visible in the plasticine, the human touch preserved frame by patient frame in the stop-motion ritual. Wide mouths and gummy grins animate through the alchemy of twenty-four adjustments per second, each sculpted expression a small miracle of clay and coffee. Tea-time absurdity captured in the space between photographed moments, Wensleydale cheese and inventive optimism in equal measure."
-    }
+    id: 'SP11-022',
+    name: 'Clay Stop-Motion Comedy',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'smooth cgi',
+    style: {
+      aesthetic:
+        'Cozy clay stop-motion comedy style with tactile handmade humor and frame-by-frame sculpted expression',
+      form_and_line: 'Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles',
+      color_palette:
+        'Matte clay colors, plasticine spectrum, earth-pigment tones, muted primary blends',
+      lighting_setup:
+        'Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth',
+      material_texture:
+        'Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability',
+      render_quality:
+        'Handcrafted stop-motion fidelity emphasizing thumbprint evidence, expressive sculpt timing, and tactile comedic warmth',
+      spatial_distortion:
+        'Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands',
+      atmosphere: 'Funny, charming, warm, quirky, optimistic',
+      key_features: 'Plasticine, visible thumbprints, painted-backdrop sets, wire-armature shadows',
+      creative_brief:
+        'Define this preset by clay stop-motion grammar: visible thumbprints, sculpted expression swaps, and miniature practical-set lighting should hold identity without referencing specific studios or characters.',
+    },
   },
   {
-    "id": "SP11-023",
-    "name": "Tin Toy",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "plastic",
-    "style": {
-      "aesthetic": "Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity",
-      "form_and_line": "Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly",
-      "color_palette": "Metallic, Red, Gold, stamped-tin spectrum, oxidized-brass patina, litho-ink fade",
-      "lighting_setup": "Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce",
-      "material_texture": "Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges",
-      "render_quality": "Retro, mechanical, wind-up wonder, gear-train heart, toy-cabinet treasure",
-      "spatial_distortion": "Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance",
-      "atmosphere": "Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia",
-      "key_features": "Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail",
-      "creative_brief": "Pressed metal bears the ghost of lithographed ink, a wind-up heart ticking through the decades with clockwork precision. The key turns with satisfying resistance, each click a promise of mechanized wonder translated through gear-train mathematics. Mantelpiece nostalgia in stamped steel and hand-soldered joints, a robot waiting for the next wound spring to release its mechanical soul."
-    }
+    id: 'SP11-023',
+    name: 'Tin Toy',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'plastic',
+    style: {
+      aesthetic:
+        'Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity',
+      form_and_line:
+        'Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly',
+      color_palette:
+        'Metallic, Red, Gold, stamped-tin spectrum, oxidized-brass patina, litho-ink fade',
+      lighting_setup:
+        'Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce',
+      material_texture:
+        'Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges',
+      render_quality: 'Retro, mechanical, wind-up wonder, gear-train heart, toy-cabinet treasure',
+      spatial_distortion:
+        'Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance',
+      atmosphere:
+        'Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia',
+      key_features: 'Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail',
+      creative_brief:
+        'Keep this preset grounded in wind-up tin-toy grammar: stamped metal lithography, key-driven clockwork cues, and pressed-soldered mechanical charm should define identity beyond one mascot narrative.',
+    },
   },
   {
-    "id": "SP11-024",
-    "name": "Diorama Box",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "full scale",
-    "style": {
-      "aesthetic": "Shoebox scene, miniature theater, classroom-craft world, peek-in story box",
-      "form_and_line": "Cutout layers, silhouette-backdrop contours, parallax-stack edges, stage-flat profiles",
-      "color_palette": "Mixed media, construction-paper spectrum, painted-backdrop hues, collage-variety",
-      "lighting_setup": "Top down, peep-box illumination, side-shaft beam, miniature-spot warmth",
-      "material_texture": "Cardboard, glue, cotton-ball clouds, pipe-cleaner trees, felt-grass, popsicle-stick frames",
-      "render_quality": "School project, depth, diorama magic, shoe-box wonderland, bring-your-imagination craft",
-      "spatial_distortion": "Forced perspective, shrinking-plane depth, foreground-background scale, cutout-distance illusion",
-      "atmosphere": "Creative, miniature, tiny-world awe, classroom-project pride, peering-in discovery",
-      "key_features": "Box walls, layered-cardboard strata, cotton-cloud ceiling, peephole framing",
-      "creative_brief": "A shoebox becomes a universe through the transformative power of construction paper and glue, cotton-ball clouds floating above pipe-cleaner trees. Parallax-stack layers create false depth in the miniature theater, forcing perspective into the illusion of distance. The peephole frames a world that exists only when someone leans in close enough to believe in popsicle-stick horizons."
-    }
+    id: 'SP11-024',
+    name: 'Diorama Box',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'full scale',
+    style: {
+      aesthetic:
+        'Handcrafted miniature diorama style with playful stagecraft depth, layered cutout worldbuilding, and tactile craft-theater charm',
+      form_and_line:
+        'Flat cutout silhouettes, stacked layer edges, profile-stage geometry, and parallax-driven contour readability',
+      color_palette:
+        'Mixed handmade craft hues with construction-paper saturation, painted backdrop transitions, and collage-friendly contrast blocks',
+      lighting_setup:
+        'Miniature-box top/side illumination with focused peep-stage warmth and shadow layering that enhances depth illusion',
+      material_texture:
+        'Cardboard grain, glue seams, felt and fiber accents, soft craft stuffing cues, and stick-frame handcrafted irregularity',
+      render_quality:
+        'Tactile craft-diorama finish emphasizing layered depth cues, handmade authenticity, and miniature theatrical legibility',
+      spatial_distortion:
+        'Forced-perspective micro-staging with deliberate scale compression between foreground and backdrop planes',
+      atmosphere: 'Curious, creative, intimate, playful, wonder-filled',
+      key_features:
+        'Layered box-stage architecture, peephole composition logic, cutout depth stratification, tactile handmade material evidence',
+      creative_brief:
+        'Keep this preset rooted in miniature layered-stage grammar: handcrafted material evidence, parallax plane stacking, and peephole worldbuilding should define identity beyond any specific shoebox classroom narrative.',
+    },
   },
   {
-    "id": "SP11-016",
-    "name": "Plushie",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "hard, plastic",
-    "style": {
-      "aesthetic": "Stuffed animal, plush companion, toy-store mascot, bedtime best-friend",
-      "form_and_line": "Seams, stuffed-round contours, soft-pillow silhouette",
-      "color_palette": "Soft pastel, nursery spectrum, blush-pink, duckling-yellow, cloud-white, baby-blue",
-      "lighting_setup": "Soft studio, nursery-window glow, gentle diffusion, warm-overhead comfort",
-      "material_texture": "Faux fur, fabric, velvet-soft nap, squishy filling, micro-fiber fuzz",
-      "render_quality": "Cute, huggable, snuggle-ready charm, crane-game prize, velvet-touch tenderness",
-      "spatial_distortion": "Round shapes, oversize-head proportions, stubby limbs, chunky paws",
-      "atmosphere": "Comforting, soft, security-blanket warmth, bedtime safety, unconditional love",
-      "key_features": "Button eyes, stitched smile, bean-bag weight, satin-bow accent",
-      "creative_brief": "Button eyes hold gaze without judgment, stitched smiles promising the unconditional comfort that smells like nursery safety and bedtime years. Polyester filling shifts with every embrace, reshaping the plush companion into the unique form of each child's specific love. Softness as sanctuary, velvet-touch tenderness manufactured by the dozen yet made singular by affection."
-    }
+    id: 'SP11-016',
+    name: 'Plushie',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'hard, plastic',
+    style: {
+      aesthetic: 'Stuffed animal, plush companion, toy-store mascot, bedtime best-friend',
+      form_and_line: 'Seams, stuffed-round contours, soft-pillow silhouette',
+      color_palette:
+        'Soft pastel, nursery spectrum, blush-pink, duckling-yellow, cloud-white, baby-blue',
+      lighting_setup: 'Soft studio, nursery-window glow, gentle diffusion, warm-overhead comfort',
+      material_texture: 'Faux fur, fabric, velvet-soft nap, squishy filling, micro-fiber fuzz',
+      render_quality:
+        'Cute, huggable, snuggle-ready charm, crane-game prize, velvet-touch tenderness',
+      spatial_distortion: 'Round shapes, oversize-head proportions, stubby limbs, chunky paws',
+      atmosphere: 'Comforting, soft, security-blanket warmth, bedtime safety, unconditional love',
+      key_features: 'Button eyes, stitched smile, bean-bag weight, satin-bow accent',
+      creative_brief:
+        'Anchor this preset in plush-toy comfort grammar: seam-led softness, oversized cuddly proportions, and velvet-fiber tactility should define identity without depending on a specific nursery storyline.',
+    },
   },
   {
-    "id": "SP11-005",
-    "name": "Amigurumi Crochet",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "smooth, plastic, hard",
-    "style": {
-      "aesthetic": "Crocheted yarn doll, amigurumi plush, handmade companion, woolen charm",
-      "form_and_line": "Spiral stitch pattern, V-stitch rows, rounded increases, circular construction",
-      "color_palette": "Soft yarn colors, heathered pastels, cream-spectrum, gentle jewel tones",
-      "lighting_setup": "Soft, fuzzy, diffused window light, warm bounce, cozy shadows",
-      "material_texture": "Yarn fibers, polyester stuffing, looped stitch surface, plump fill",
-      "render_quality": "Handmade, cute, soft, stitch-by-stitch care, artisanal warmth, hug-ready appeal",
-      "spatial_distortion": "Round, chibi proportions, oversized head, tiny limbs, compact body",
-      "atmosphere": "Cozy, sweet, tactile, nurturing, heartfelt, handmade love",
-      "key_features": "Stitch texture, gauge-consistent rows, yarn halo, safety-eye shine",
-      "creative_brief": "Yarn becomes companion through the rhythmic dance of hook and loop, stitch building upon stitch in spiral construction. Safety-eye shine catches the window light as the amigurumi creature waits with hug-ready proportions and wordless comfort. Roundness born from tension, softness earned through hours of patient crochet devotion."
-    }
+    id: 'SP11-005',
+    name: 'Amigurumi Crochet',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'smooth, plastic, hard',
+    style: {
+      aesthetic: 'Crocheted yarn doll, amigurumi plush, handmade companion, woolen charm',
+      form_and_line:
+        'Spiral stitch pattern, V-stitch rows, rounded increases, circular construction',
+      color_palette: 'Soft yarn colors, heathered pastels, cream-spectrum, gentle jewel tones',
+      lighting_setup: 'Soft, fuzzy, diffused window light, warm bounce, cozy shadows',
+      material_texture: 'Yarn fibers, polyester stuffing, looped stitch surface, plump fill',
+      render_quality:
+        'Handmade, cute, soft, stitch-by-stitch care, artisanal warmth, hug-ready appeal',
+      spatial_distortion: 'Round, chibi proportions, oversized head, tiny limbs, compact body',
+      atmosphere: 'Cozy, sweet, tactile, nurturing, heartfelt, handmade love',
+      key_features: 'Stitch texture, gauge-consistent rows, yarn halo, safety-eye shine',
+      creative_brief:
+        'Yarn becomes companion through the rhythmic dance of hook and loop, stitch building upon stitch in spiral construction. Safety-eye shine catches the window light as the amigurumi creature waits with hug-ready proportions and wordless comfort. Roundness born from tension, softness earned through hours of patient crochet devotion.',
+    },
   },
   {
-    "id": "SP11-020",
-    "name": "Wooden Toy",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "plastic, metal",
-    "style": {
-      "aesthetic": "Carved wood figure, traditional toy, whittled companion, heirloom plaything",
-      "form_and_line": "Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms",
-      "color_palette": "Natural wood, painted details, warm-oak honey, beech-cream, hand-painted folk-accents",
-      "lighting_setup": "Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth",
-      "material_texture": "Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina",
-      "render_quality": "Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm",
-      "spatial_distortion": "Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry",
-      "atmosphere": "Nostalgic, simple, fireside quiet, grandfather's workshop, old-world tenderness",
-      "key_features": "Wood texture, visible grain rings, dovetail joints, paint-wear edges",
-      "creative_brief": "Grain rings record the life of the tree now shaped into a plaything for new generations, each growth ring a calendar preserved in oak. Paint chips at the edges reveal layered history of countless small hands, each touch polishing the wood toward heirloom satin. Simplicity carved from a single block carries more warmth than any assembly line could manufacture."
-    }
+    id: 'SP11-020',
+    name: 'Wooden Toy',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'plastic, metal',
+    style: {
+      aesthetic: 'Carved wood figure, traditional toy, whittled companion, heirloom plaything',
+      form_and_line: 'Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms',
+      color_palette:
+        'Natural wood, painted details, warm-oak honey, beech-cream, hand-painted folk-accents',
+      lighting_setup: 'Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth',
+      material_texture:
+        'Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina',
+      render_quality:
+        'Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm',
+      spatial_distortion:
+        'Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry',
+      atmosphere: "Nostalgic, simple, fireside quiet, grandfather's workshop, old-world tenderness",
+      key_features: 'Wood texture, visible grain rings, dovetail joints, paint-wear edges',
+      creative_brief:
+        'Grain rings record the life of the tree now shaped into a plaything for new generations, each growth ring a calendar preserved in oak. Paint chips at the edges reveal layered history of countless small hands, each touch polishing the wood toward heirloom satin. Simplicity carved from a single block carries more warmth than any assembly line could manufacture.',
+    },
   },
   {
-    "id": "SP11-025",
-    "name": "Button Eye Doll",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "human eyes",
-    "style": {
-      "aesthetic": "Coraline uncanny button-eyed dollhouse fantasy, other-mother tension",
-      "form_and_line": "Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace",
-      "color_palette": "Muted, creepy, faded-indigo, storm-purple, bone-cream, dust-mote grey, spiderweb-silver",
-      "lighting_setup": "Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill",
-      "material_texture": "Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine",
-      "render_quality": "Spooky, stop motion, Laika-studio magic, beautiful-nightmare, handcrafted-horror, dark-whimsy",
-      "spatial_distortion": "Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints",
-      "atmosphere": "Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for",
-      "key_features": "Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces",
-      "creative_brief": "Four-hole buttons replace the windows to the soul, threading a line between cute and deeply wrong, cross-stitch tension pulling burlap into a grimace. Needle-hole pupils stare without blinking from a face constructed of fabric and sawdust and careful-what-you-wish-for. Handcrafted horror presses its needle into the uncanny valley where dolls watch you back with button eyes that remember."
-    }
+    id: 'SP11-025',
+    name: 'Button Eye Doll',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'human eyes',
+    style: {
+      aesthetic:
+        'Uncanny handcrafted button-eyed doll style with stitched-fantasy tension and eerie miniature-horror charm',
+      form_and_line: 'Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace',
+      color_palette:
+        'Muted, creepy, faded-indigo, storm-purple, bone-cream, dust-mote grey, spiderweb-silver',
+      lighting_setup:
+        'Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill',
+      material_texture:
+        'Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine',
+      render_quality:
+        'Spooky handcrafted stop-motion look emphasizing stitched unease, tactile doll materials, and dark-whimsy atmosphere',
+      spatial_distortion:
+        'Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints',
+      atmosphere:
+        'Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for',
+      key_features:
+        'Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces',
+      creative_brief:
+        'Preserve identity through uncanny dollcraft grammar: button-eye geometry, stitched-mouth tension, and burlap-thread material unease should carry the preset without referencing specific films or studios.',
+    },
   },
   {
-    "id": "SP11-021",
-    "name": "Sticker Art",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "3d, shadow",
-    "style": {
-      "aesthetic": "Die-cut sticker, laptop-decal culture, street-art collectible, vinyl peel-and-stick",
-      "form_and_line": "Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision",
-      "color_palette": "Vibrant flat colors, UV-resistant inks, neon-pop spectrum, spot-gloss accents",
-      "lighting_setup": "Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity",
-      "material_texture": "Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back",
-      "render_quality": "Graphic, collectible, sticker-sheet appeal, skate-deck swagger, street-art credibility",
-      "spatial_distortion": "2D cutout, die-line silhouette, punch-out negative space, floating-object illusion",
-      "atmosphere": "Cool, decorative, urban-expression, laptop-personality, street-art rebellion",
-      "key_features": "White outline, kiss-cut border, gloss-laminate sheen, color-separation registration",
-      "creative_brief": "Thick white borders define the edge where the image asserts independence from background, a die-cut declaration ready to travel. Vinyl laminate catches the gloss of UV-resistant inks, weatherproof personality engineered for laptops and street poles and skate-deck swagger. The sticker peels away from its sheet carrying a fragment of urban identity pressed into adhesive permanence."
-    }
+    id: 'SP11-021',
+    name: 'Sticker Art',
+    category: '1. Toys And Miniatures',
+    negativePrompt: '3d, shadow',
+    style: {
+      aesthetic:
+        'Die-cut sticker, laptop-decal culture, street-art collectible, vinyl peel-and-stick',
+      form_and_line:
+        'Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision',
+      color_palette:
+        'Vibrant flat colors, UV-resistant inks, neon-pop spectrum, spot-gloss accents',
+      lighting_setup: 'Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity',
+      material_texture:
+        'Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back',
+      render_quality:
+        'Graphic, collectible, sticker-sheet appeal, skate-deck swagger, street-art credibility',
+      spatial_distortion:
+        '2D cutout, die-line silhouette, punch-out negative space, floating-object illusion',
+      atmosphere: 'Cool, decorative, urban-expression, laptop-personality, street-art rebellion',
+      key_features:
+        'White outline, kiss-cut border, gloss-laminate sheen, color-separation registration',
+      creative_brief:
+        'Keep identity in die-cut sticker grammar: thick contour borders, high-saturation flat fills, and laminate gloss behavior should define the preset without anchoring it to one urban micro-scene.',
+    },
   },
   {
-    "id": "SP11-061",
-    "name": "Water Drop Reflection",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "dry",
-    "style": {
-      "aesthetic": "Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic",
-      "form_and_line": "Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet",
-      "color_palette": "Clear, prismatic-dispersion, rainbow-caustic, inverted-scene spectrum, bokeh-chromatic",
-      "lighting_setup": "Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight",
-      "material_texture": "Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss",
-      "render_quality": "Physics, beauty, droplet-lens, refraction-magic, macro-patience, liquid-optics",
-      "spatial_distortion": "Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization",
-      "atmosphere": "Calm, focus, macro-meditation, rain-pause, single-drop universe",
-      "key_features": "Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight, chromatic-aberration fringing, surface-tension curvature",
-      "creative_brief": "The droplet becomes a lens, surface tension holding the sphere in a balance between gravity and molecular cohesion, a temporary crystal of liquid physics. Inside the drop, an entire world waits compressed into refractive suspension, inverted and miniature, a universe that fits on a blade of grass. The bokeh-background dissolves into chromatic softness while the contact-line marks the boundary where water meets leaf in perfect capillarity."
-    }
+    id: 'SP11-061',
+    name: 'Water Drop Reflection',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'dry',
+    style: {
+      aesthetic: 'Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic',
+      form_and_line:
+        'Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet',
+      color_palette:
+        'Clear, prismatic-dispersion, rainbow-caustic, inverted-scene spectrum, bokeh-chromatic',
+      lighting_setup:
+        'Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight',
+      material_texture:
+        'Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss',
+      render_quality:
+        'Physics, beauty, droplet-lens, refraction-magic, macro-patience, liquid-optics',
+      spatial_distortion:
+        'Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization',
+      atmosphere: 'Calm, focus, macro-meditation, rain-pause, single-drop universe',
+      key_features:
+        'Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight, chromatic-aberration fringing, surface-tension curvature',
+      creative_brief:
+        'The droplet becomes a lens, surface tension holding the sphere in a balance between gravity and molecular cohesion, a temporary crystal of liquid physics. Inside the drop, an entire world waits compressed into refractive suspension, inverted and miniature, a universe that fits on a blade of grass. The bokeh-background dissolves into chromatic softness while the contact-line marks the boundary where water meets leaf in perfect capillarity.',
+    },
   },
   {
-    "id": "SP11-065",
-    "name": "Soap Bubble",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "popped",
-    "style": {
-      "aesthetic": "Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence",
-      "form_and_line": "Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl",
-      "color_palette": "Rainbow iridescent, thin-film spectrum, magenta-cyan-yellow, soap-film pastel, interference-order colors",
-      "lighting_setup": "Reflection, dark-background, specular-catch, diffuse-overhead, ring-light iridescence",
-      "material_texture": "Thin film liquid, soap-membrane, glycerin-viscosity, fluid-dynamics surface, micelle-layer",
-      "render_quality": "Fragile, colorful, bubble-poetry, interference-physics, iridescent-beauty, floating-second",
-      "spatial_distortion": "Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature",
-      "atmosphere": "Dreamy, fleeting, pop-second, bubble-bath quiet, childhood-wonder, vanishing-beauty",
-      "key_features": "Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp",
-      "creative_brief": "Interference colors swirl across the soap membrane, magenta sliding into cyan into gold as film thickness varies by nanometers, gravity draining the film toward the bottom pole. The sphere hangs in borrowed air, its surface a map of convection currents and micelle-layer physics and the approaching black spot that signals imminent return to nothing. One more second of existence, fragility wearing its most beautiful dress, thin-film poetry floating on glycerin and childhood breath."
-    }
+    id: 'SP11-065',
+    name: 'Soap Bubble',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'popped',
+    style: {
+      aesthetic:
+        'Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence',
+      form_and_line:
+        'Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl',
+      color_palette:
+        'Rainbow iridescent, thin-film spectrum, magenta-cyan-yellow, soap-film pastel, interference-order colors',
+      lighting_setup:
+        'Reflection, dark-background, specular-catch, diffuse-overhead, ring-light iridescence',
+      material_texture:
+        'Thin film liquid, soap-membrane, glycerin-viscosity, fluid-dynamics surface, micelle-layer',
+      render_quality:
+        'Fragile, colorful, bubble-poetry, interference-physics, iridescent-beauty, floating-second',
+      spatial_distortion:
+        'Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature',
+      atmosphere:
+        'Dreamy, fleeting, pop-second, bubble-bath quiet, childhood-wonder, vanishing-beauty',
+      key_features:
+        'Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp',
+      creative_brief:
+        'Interference colors swirl across the soap membrane, magenta sliding into cyan into gold as film thickness varies by nanometers, gravity draining the film toward the bottom pole. The sphere hangs in borrowed air, its surface a map of convection currents and micelle-layer physics and the approaching black spot that signals imminent return to nothing. One more second of existence, fragility wearing its most beautiful dress, thin-film poetry floating on glycerin and childhood breath.',
+    },
   },
   {
-    "id": "SP11-076",
-    "name": "Moss",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "dry",
-    "style": {
-      "aesthetic": "Forest floor zoom, moss-carpet, bryophyte-macro, soft-ground-cover, miniature-forest",
-      "form_and_line": "Tiny leaves, phyllid-spiral, gametophyte-shoot, sporophyte-stalk, leaflet-arrangement",
-      "color_palette": "Green, emerald-spectrum, moss-velvet, sporophyte-ochre, spring-moss bright, shadow-moss deep, dewdrop-crystal",
-      "lighting_setup": "Dappled, canopy-shaft, diffused-understory, leaf-filtered, dewdrop-sparkle, morning-ground",
-      "material_texture": "Velvet plant, leaflet-surface, rhizoid-felt, capsule-sporangium, water-film, soil-particle, detritus-grain",
-      "render_quality": "Nature, soft, forest-floor macro, bryophyte-world, moss-garden, ground-cover beauty",
-      "spatial_distortion": "Carpet, ground-cover continuity, terrain-following, rock-contour, hummock-mound",
-      "atmosphere": "Quiet, tiny, moss-forest silence, dewdrop-morning, miniature-continent, ground-level peace",
-      "key_features": "Greenery, phyllid-leaflets, sporophyte-capsule, dewdrop-bead, rhizoid-felt, soil-particle, detritus, capsule-teeth peristome",
-      "creative_brief": "Phyllid leaflets spiral upward from the forest floor, each tiny green blade a solar panel for the miniature continent of bryophyte life below. Dewdrops bead on the gametophyte surface, magnifying the cellular structure beneath into liquid lenses of pure morning suspended on velvet-plant texture. A carpet of moss transforms stone into softness, death into soil, and scale into a doorway to the forest's smallest kingdom where sporophyte stalks rise like watchtowers over the green empire."
-    }
+    id: 'SP11-076',
+    name: 'Moss',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'dry',
+    style: {
+      aesthetic:
+        'Forest floor zoom, moss-carpet, bryophyte-macro, soft-ground-cover, miniature-forest',
+      form_and_line:
+        'Tiny leaves, phyllid-spiral, gametophyte-shoot, sporophyte-stalk, leaflet-arrangement',
+      color_palette:
+        'Green, emerald-spectrum, moss-velvet, sporophyte-ochre, spring-moss bright, shadow-moss deep, dewdrop-crystal',
+      lighting_setup:
+        'Dappled, canopy-shaft, diffused-understory, leaf-filtered, dewdrop-sparkle, morning-ground',
+      material_texture:
+        'Velvet plant, leaflet-surface, rhizoid-felt, capsule-sporangium, water-film, soil-particle, detritus-grain',
+      render_quality:
+        'Nature, soft, forest-floor macro, bryophyte-world, moss-garden, ground-cover beauty',
+      spatial_distortion:
+        'Carpet, ground-cover continuity, terrain-following, rock-contour, hummock-mound',
+      atmosphere:
+        'Quiet, tiny, moss-forest silence, dewdrop-morning, miniature-continent, ground-level peace',
+      key_features:
+        'Greenery, phyllid-leaflets, sporophyte-capsule, dewdrop-bead, rhizoid-felt, soil-particle, detritus, capsule-teeth peristome',
+      creative_brief:
+        "Phyllid leaflets spiral upward from the forest floor, each tiny green blade a solar panel for the miniature continent of bryophyte life below. Dewdrops bead on the gametophyte surface, magnifying the cellular structure beneath into liquid lenses of pure morning suspended on velvet-plant texture. A carpet of moss transforms stone into softness, death into soil, and scale into a doorway to the forest's smallest kingdom where sporophyte stalks rise like watchtowers over the green empire.",
+    },
   },
   {
-    "id": "SP11-078",
-    "name": "Cork",
-    "category": "1. Toys And Miniatures",
-    "negativePrompt": "smooth",
-    "style": {
-      "aesthetic": "Wine cork zoom, bottle-stopper, bark-product, Quercus-suber, compressed-tradition",
-      "form_and_line": "Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section",
-      "color_palette": "Tan, Brown, cork-bark spectrum, wine-stain magenta, burnt-brand, aged-patina amber, suberin-wax cream",
-      "lighting_setup": "Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight",
-      "material_texture": "Compressed wood, suberin-cellular, lenticel-tube, elastic-recovery, pressed-granule, stopper-cylinder, bottle-neck impression",
-      "render_quality": "Natural, dry, bottle-closure, wine-cellar macro, bark-harvest craft, sustainable-texture",
-      "spatial_distortion": "Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix",
-      "atmosphere": "Rustic, dry, wine-bottle quiet, cork-pop anticipation, cellar-coolness, natural-craft",
-      "key_features": "Texture, lenticel-pores, cellular-structure, wine-stain, bottle-neck imprint, cork-brand, extraction-spiral, suberin-wax sheen",
-      "creative_brief": "Lenticel pores penetrate the prismatic cell structure like tunnels bored through a miniature sponge, the breathing architecture of Quercus suber rendered in tannin-brown and suberin-wax cream. The wine-stain magenta edges the stopper in testimony to the bottle's horizontal slumber in cellar coolness. Compressed bark remembers the curve of the neck it sealed, elasticity encoded in cellular walls that bounce back when pressure finally releases, the cork-pop sound a small celebration of natural engineering."
-    }
-  }
+    id: 'SP11-078',
+    name: 'Cork',
+    category: '1. Toys And Miniatures',
+    negativePrompt: 'smooth',
+    style: {
+      aesthetic:
+        'Wine cork zoom, bottle-stopper, bark-product, Quercus-suber, compressed-tradition',
+      form_and_line:
+        'Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section',
+      color_palette:
+        'Tan, Brown, cork-bark spectrum, wine-stain magenta, burnt-brand, aged-patina amber, suberin-wax cream',
+      lighting_setup: 'Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight',
+      material_texture:
+        'Compressed wood, suberin-cellular, lenticel-tube, elastic-recovery, pressed-granule, stopper-cylinder, bottle-neck impression',
+      render_quality:
+        'Natural, dry, bottle-closure, wine-cellar macro, bark-harvest craft, sustainable-texture',
+      spatial_distortion:
+        'Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix',
+      atmosphere:
+        'Rustic, dry, wine-bottle quiet, cork-pop anticipation, cellar-coolness, natural-craft',
+      key_features:
+        'Texture, lenticel-pores, cellular-structure, wine-stain, bottle-neck imprint, cork-brand, extraction-spiral, suberin-wax sheen',
+      creative_brief:
+        "Lenticel pores penetrate the prismatic cell structure like tunnels bored through a miniature sponge, the breathing architecture of Quercus suber rendered in tannin-brown and suberin-wax cream. The wine-stain magenta edges the stopper in testimony to the bottle's horizontal slumber in cellar coolness. Compressed bark remembers the curve of the neck it sealed, elasticity encoded in cellular walls that bounce back when pressure finally releases, the cork-pop sound a small celebration of natural engineering.",
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

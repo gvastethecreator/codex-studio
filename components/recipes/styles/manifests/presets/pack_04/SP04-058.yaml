@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Early 3D game
-  form_and_line: None
+  aesthetic: Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and nostalgic polygonal abstraction
+  form_and_line: Triangle-dominant faceting with minimal smoothing, hard-edge silhouette readability, and UV-era shape simplification
   color_palette: Flat shading, vertex-colored, low-spec palette
   lighting_setup: Vertex light, gouraud shading, no real-time lighting
   material_texture: Pixelated
-  render_quality: PS1 early 3D console retro, jagged nostalgia, pioneer polygons
+  render_quality: Retro first-gen 3D rendering fidelity emphasizing constrained geometry, affine-era texture behavior, and deliberate technical limitation aesthetics
   spatial_distortion: Blocky
   atmosphere: Nostalgic, simple, CD-ROM childhood, fifth-gen warmth
   key_features: Polygons, unfiltered textures, affine warping
-  creative_brief: Triangles declare form through economy, every polygon a deliberate allocation of limited rendering budget. Flat-shaded faces catch light at the simplest possible angle, nostalgia emerging from the gap between intention and limitation. This is the aesthetic of early 3D, where the hardware's constraints became the art direction.
+  creative_brief: >-
+    Keep this preset rooted in low-poly constraint grammar: faceted geometry,
+    low-res texture warping cues, and fixed-function shading simplicity should
+    define identity beyond one console-era memory.
 avoidRules:
   - smooth
   - high res

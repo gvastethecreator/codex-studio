@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Cluttered high-tech low-life room, neon slum, analog-cable chaos, data-crimes den
-  form_and_line: Wires, screens, trash, stacked monitors, cable spaghetti, hacked-together racks, unfolded futons
-  color_palette: Dark, Neon Pink/Blue/Green, Amber CRT glow, Deep Violet, sickly Fluorescent
-  lighting_setup: Screen glow, neon from window, buzzing fluorescent strip, holiday lights strung up, server LED blink
-  material_texture: Metal, junk, ramen cups, peeling stickers, corrugated plastic, synth-leather, heatsinks
-  render_quality: Dystopian, messy, detailed, chrome-beyond, circuit-grime, wet pavement reflection
-  spatial_distortion: None
-  atmosphere: Depressing, cool, tech, hunted, data-saturated, 3AM desperation
-  key_features: Clutter density, multiple monitors, noodle cups, neon reflection in puddles, hacking rig
-  creative_brief: Neon bleeds across rain-slick surfaces while monitors stack like windows into adjacent digital hells. Cable spaghetti traces the desperate infrastructure of a life lived between data streams and instant noodles. The room thrums with 3AM electricity, too alive to sleep, too exhausted to shut down.
+  aesthetic: Cyber-clutter interior style with improvised techno-living density, salvage modularity, and nocturnal hacker ambience
+  form_and_line: Cable-mass diagonals, stacked display rectangles, ad-hoc rack assemblies, layered utility object silhouettes, compressed circulation paths
+  color_palette: Deep charcoal base, toxic neon pink-blue-green accents, amber CRT pockets, cold violet shadows, fluorescent sickly fills
+  lighting_setup: Multi-source low-light mix from displays, strips, indicator LEDs, and localized neon spill with sharp falloff pockets
+  material_texture: Scuffed metal housings, brittle plastic shells, adhesive residue layers, worn synthetic upholstery, dusted heat-sink fins
+  render_quality: High-detail lived-in cyber interior rendering with controlled chaos readability and tactile grime realism
+  spatial_distortion: Dense near-field composition with depth blocked by stacked hardware planes and overlapping cable strata
+  atmosphere: Restless, saturated, unstable, sleep-deprived, obsessive
+  key_features: Hardware accumulation grammar, cable entropy patterns, mixed-display luminance, scavenged modular furniture, patinated tech surfaces
+  creative_brief: >-
+    Express cyber-residential identity through infrastructural clutter logic,
+    mixed-source low-light behavior, and improvised material wear, without
+    anchoring the style to one narrative room setup.
 avoidRules:
   - clean
   - organized

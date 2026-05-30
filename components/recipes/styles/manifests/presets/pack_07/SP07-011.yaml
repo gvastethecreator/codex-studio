@@ -12,16 +12,16 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: High-rise apartment with view, sky home, vertical privilege, glass aerie
-  form_and_line: Floor to ceiling glass, floating planes, open-span living, cantilevered balcony
-  color_palette: Neutral interior, blue city exterior, Charcoal upholstery, Brass accent, Ivory cream
-  lighting_setup: City lights at night, recessed cove glow, art-spot accents, sky-reflected ambient, dim-to-warm LEDs
-  material_texture: Glass, reflection, leather, book-matched marble, brushed nickel, silk velvet
-  render_quality: Expensive, exclusive, rich, penthouse perfection, whispered wealth, skyline bragging
-  spatial_distortion: None
-  atmosphere: Powerful, lonely, successful, elevated, above-it-all quiet, rarefied air
-  key_features: City skyline view, private terrace, infinity-edge pool, wine room, automated blinds
-  creative_brief: Glass dissolves the boundary between sanctuary and skyline, the city spread below like a circuit board of ambition. Suspended between earth and stars, the penthouse breathes rarefied air where silence costs more than noise. Solitude becomes luxury when framed by an empire of lights below.
+  aesthetic: Ultra-luxury aerial residential style with monolithic glazing, restrained opulence, and curated minimal spatial drama
+  form_and_line: Long uninterrupted glazing lines, floating slab planes, cantilever gestures, low-profile furnishings, disciplined negative space
+  color_palette: Warm ivory neutrals, charcoal anchors, smoky blue-greys, brushed brass accents, muted stone undertones
+  lighting_setup: Layered ambient cove light, soft practical pools, controlled reflection management, low-glare premium interior illumination
+  material_texture: Book-matched marble veining, satin metal trims, full-grain leather, soft woven textiles, polished glass depth, matte lacquer panels
+  render_quality: Architectural-visualization premium finish with high material fidelity, clean staging, and luxury hospitality polish
+  spatial_distortion: Wide-angle restraint with elongated interior axis and balanced foreground-midground luxury object hierarchy
+  atmosphere: Serene, controlled, aspirational, private, rarefied
+  key_features: Continuous glazing language, floating architectural planes, high-end material pairings, low-clutter composition, curated statement objects
+  creative_brief: Encode luxury through proportion, material choreography, and lighting discipline rather than landmarks; the style should remain transferable to any high-end interior program.
 avoidRules:
   - basement
   - dark

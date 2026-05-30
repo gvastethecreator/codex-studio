@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Log cabin interior, wilderness retreat, pioneer warmth, mountain sanctuary
-  form_and_line: Rough log shapes, stacked stone, heavy timber trusses, hand-hewn beams, chunky proportions
-  color_palette: Warm brown, fire orange, Golden Amber, Forest Pine, Smoked Oat
-  lighting_setup: Fireplace glow, oil-lamp amber, candle flicker, window-filtered forest light, cast-iron stove warmth
-  material_texture: Rough wood, stone, fur, hammered copper, wool blanket, cast iron, leather hide
-  render_quality: Cozy, retreat, nature, crackling-warmth realism, off-grid tranquility
-  spatial_distortion: None
-  atmosphere: Warm, safe, isolated, stories-by-fire, pine-scented, snow-quiet
-  key_features: Wood everywhere, stone hearth fireplace, antler chandelier, fur throws, log walls
-  creative_brief: Logs hold centuries in their rings, walls that grew from wilderness now sheltering against it. Fire paints everything amber, shadows dancing on rough-hewn surfaces like memories of the tree that was. The cabin exhales pine and safety, a pocket of warmth carved from the inhospitable dark beyond.
+  aesthetic: Rustic shelter style emphasizing heavy natural mass, handcrafted durability, and hearth-centered warmth
+  form_and_line: Thick timber geometries, stacked masonry rhythm, robust joinery expression, compact protective proportions
+  color_palette: Burnt umber and smoked oak base, ember ambers, pine-greens, muted ash neutrals, low-saturation warmth gradients
+  lighting_setup: Hearth-priority low-key glow, warm practical flicker, soft exterior daylight filtration, deep shadow comfort zones
+  material_texture: Hand-hewn wood grain, rough stone porosity, wool and hide tactility, forged metal patina, matte earthen finishes
+  render_quality: Authentic rustic realism with material weight clarity, thermal atmosphere, and durable craft legibility
+  spatial_distortion: Stable enclosed depth with compressive intimacy that reinforces protective interior character
+  atmosphere: Sheltering, grounded, quiet, warm, resilient
+  key_features: Hearth-centric composition, heavy natural material hierarchy, handcrafted structural expression, thermal visual comfort
+  creative_brief: >-
+    Keep this preset identifiable by massy natural materials and hearth-led
+    light behavior, translating rustic protection and craft durability across
+    different interior subjects.
 avoidRules:
   - city
   - modern

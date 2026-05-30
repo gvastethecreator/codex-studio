@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Ultra-clean impact cuts, absurd overkill power, dry visual punchlines, one-punch hero, bald caped caper, monster association, deadpan reaction shots
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
-  atmosphere: Deadpan, overwhelming, absurd, comedic
-  key_features: Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography
-  creative_brief: Mountains atomize into perfect white impact frames while a bald man registers mild inconvenience — the universe exhausting itself against absolute stillness. Cosmic catastrophe rendered as the world's most beautifully animated deadpan, where the joke is the gap between apocalypse and a blank expression.
+  aesthetic: Satirical overpowered action style combining premium destruction spectacle with deadpan comedic detachment
+  form_and_line: Hyper-clean impact silhouettes, minimal-expression face grammar, explosive contour bursts, freeze-frame punchline timing lines
+  color_palette: Catastrophic contrast spikes over neutral comedic anchors, high-energy effect chroma with deliberate flat reaction zones
+  lighting_setup: Blockbuster blast illumination paired with calm portrait lighting for reaction shots, emphasizing joke-through-contrast
+  material_texture: Crisp debris effects, polished impact particles, low-noise digital surfaces, comic-clean compositing with theatrical clarity
+  render_quality: Top-tier action animation polish intentionally juxtaposed with anti-dramatic character stillness and visual punchline control
+  spatial_distortion: Extreme impact foreshortening alternating with static deadpan framing to maximize comedic dissonance
+  atmosphere: Absurd, overpowering, ironic, explosive, stoic
+  key_features: Spectacle-vs-deadpan duality, overkill impact staging, minimal-reaction comedy rhythm, freeze-frame gag mechanics
+  creative_brief: >-
+    The style should read as high-budget action satire: catastrophic impact
+    grammar contrasted with emotionally flat reaction framing, making comedic
+    dissonance the transferable core.
 avoidRules:
   - realistic
   - 3d render

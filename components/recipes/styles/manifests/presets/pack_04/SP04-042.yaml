@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - editorial-illustration
 visualDna:
-  aesthetic: Surreal album-art dreamscape, Pink Floyd style, Hipgnosis iconic, prism mystery, impossible geometry
-  form_and_line: Sharp
-  color_palette: Surreal, mind-bending juxtaposition, prismatic dream-tone
-  lighting_setup: Dramatic, otherworldly glow, impossible light source
-  material_texture: Grainy photo
-  render_quality: Hipgnosis iconic surreal album cover, mind-bending design
-  spatial_distortion: Impossible object
-  atmosphere: Deep, weird, headphone trance, lysergic meditation
-  key_features: Square crop, surreal juxtaposition, prism symbolism
-  creative_brief: Impossible geometries float in headphone-space, the visual logic of a dream where physics follows feeling instead of force. Prismatic light bends through surreal architectures constructed from album-side attention spans. This is what music looks like when you close your eyes, the cover art as portal rather than packaging.
+  aesthetic: Surreal music-cover style with conceptual visual paradoxes, dream-logic symbolism, and iconic square-format image tension
+  form_and_line: Sharp-edged geometric motifs balanced with soft surreal transitions, symbolic object juxtaposition, and clean silhouette punctuation
+  color_palette: Prismatic spectral accents over controlled dark bases, uncanny complementary pairings, and dream-state tonal discontinuities
+  lighting_setup: Impossible-source illumination with haloed glows, selective hard-edge highlights, and surreal depth cues
+  material_texture: Fine analog-photo grain with matte print character and subtle collage-surface irregularity
+  render_quality: Concept-forward cover rendering prioritizing symbolic ambiguity, memorable central metaphor, and high-impact square readability
+  spatial_distortion: Non-Euclidean object relationships and paradox perspective logic sustaining deliberate visual disorientation
+  atmosphere: Mysterious, contemplative, strange, immersive, hypnotic
+  key_features: Square-cover composition, symbolic juxtaposition engine, prismatic accent system, impossible-space staging
+  creative_brief: >-
+    Define this preset through surreal symbolic composition and paradox lighting:
+    the style should feel like a conceptual music-cover portal without referencing
+    any specific band legacy or canonical album motif.
 avoidRules:
   - photo
   - boring

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Color-script concept art, lighting-first storytelling, atmospheric-color temperature study, film-color progression across time-of-day, Pixar color-script methodology, environment-emotion mapping, no characters just light, pure atmosphere painting
-  form_and_line: Soft atmospheric shape blocking, edge-dissolving fog, value-first massing, light-beams as composition vectors
-  color_palette: Scene-color mapping, dawn-cool to noon-warm progression, twilight-magenta transition, night-blue desaturation, emotional-color temperature shifts
-  lighting_setup: Time-of-day light study, atmospheric scattering, volumetric light-beam emphasis, shadow-temperature exploration
-  material_texture: Atmospheric density gradients, fog-volume softness, light-particle dust motes, cloud-layer texture, haze-depth texture
-  render_quality: Color-script painting, atmospheric-study beauty, lighting-first environment art, emotional-color rendering
-  spatial_distortion: Depth-through-atmosphere, color-temperature spatial separation, fog-layered recession, light-defined space creation
-  atmosphere: Evocative, emotional, lighting-first, atmospheric storytelling, temporal-transition poetry
-  key_features: Color-temperature mapping, time-of-day light progression, atmospheric-perspective depth, fog-layer separation, no character subjects
-  creative_brief: Light travels across the same scene in eight emotional temperatures, dawn hope mutating into midnight mystery through the slow graduation of color. Atmosphere carries the narrative arc before any character enters the frame. This is environment as emotion, where the lighting pass contains the entire emotional script in its gradient.
+  aesthetic: Color-script environmental painting driven by temporal light progression
+  form_and_line: Soft mass blocking with low line dependency and edge hierarchy by depth
+  color_palette: Sequenced temperature arcs from cool dawn to warm noon to nocturnal desaturation
+  lighting_setup: Volumetric scattering, shadow temperature contrast, time-of-day key shifts
+  material_texture: Haze layers, particulate glow, diffuse cloud/fog transitions
+  render_quality: Atmospheric study pass prioritizing mood continuity over detail finish
+  spatial_distortion: Space defined through color recession and layered atmospheric perspective
+  atmosphere: Cinematic, emotive, transitional, light-led storytelling
+  key_features: Multi-frame mood continuity, temperature mapping, depth via fog stratification
+  creative_brief: >-
+    Use light progression as the narrative engine. Build a sequence where palette temperature, shadow character, and atmospheric density shift coherently across time, allowing mood transitions to read instantly even in simplified, low-detail environment passes.
 avoidRules:
   - detailed linework
   - finished rendering

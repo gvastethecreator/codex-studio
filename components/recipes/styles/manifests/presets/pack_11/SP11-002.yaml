@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - toys-and-miniatures
 visualDna:
-  aesthetic: Vinyl collectible figure, bobblehead charm, pop-culture icon, display-shelf darling
-  form_and_line: Smooth, rounded, simplified contours, cute abstraction, soft silhouette
-  color_palette: Matte vinyl paint, saturated primaries, soft pastel accents, bold contrast
-  lighting_setup: Studio box lighting, even diffusion, shadowless display, product-photography glow
-  material_texture: Vinyl plastic, matte finish, smooth rotocast surface, semi-soft touch
-  render_quality: Collectible, cute, merchandise, display-shelf appeal, window-box beauty, fandom artifact
-  spatial_distortion: Giant square head, simple black button eyes, zero-mouth expression, exaggerated cranium
-  atmosphere: Cute, static, display, shelf presence, fandom love, curated collection
-  key_features: Box packaging (optional), die-cut window, branded display stand
-  creative_brief: Giant square heads hold entire universes behind black button eyes, the vinyl figure distilled to its purest geometric essence. The bobblehead stands silent on its display shelf, a pop-culture icon rendered cute through radical simplification. Fandom worship crystallized in rotocast plastic, waiting in window-box devotion.
+  aesthetic: Designer-vinyl collectible style with iconic simplification, shelf-display charisma, and fandom-object polish
+  form_and_line: Big-head minimal silhouette logic, rounded contour economy, reduced facial feature grammar, and toy-like geometric abstraction
+  color_palette: Matte-vinyl friendly saturated blocks with restrained pastel accents and high-contrast identity markers
+  lighting_setup: Soft-box product illumination, even diffusion for form clarity, controlled specular restraint, and shelf-ready glow balance
+  material_texture: Rotocast vinyl matte skin, smooth molded edges, subtle seam minimalism, and semi-soft tactile finish cues
+  render_quality: Premium collectible-render aesthetic focused on silhouette recognizability and display-case merchandising clarity
+  spatial_distortion: Exaggerated cranium-to-body ratio with simplified limb volume to maintain stylized collectible identity
+  atmosphere: Cute, curated, iconic, collectible, display-forward
+  key_features: Big-head abstraction grammar, button-eye minimalism, display-figure composition cues, vinyl-matte surface discipline
+  creative_brief: >-
+    Preserve this preset through collectible abstraction rules—overscaled head
+    ratios, reduced facial geometry, and matte vinyl display polish should
+    define the style regardless of franchise character source.
 avoidRules:
   - realistic proportions
   - small head

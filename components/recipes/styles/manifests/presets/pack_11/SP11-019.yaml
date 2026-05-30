@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Muppet television puppet workshop, felt-and-foam soul, Jim Henson heart
+  aesthetic: Broadcast-era felt-puppet style with hand-operated expressivity, sewn-form character charm, and workshop craft energy
   form_and_line: Fuzzy edges, fabric-cut contours, sewn-shape silhouettes, armature skeleton
   color_palette: Bright felt, craft-store spectrum, neon-green, hot-pink, safety-orange, deep-purple
   lighting_setup: TV studio, three-point broadcast, key-fill-backlight, warm-stage glow
   material_texture: Felt fabric, foam padding, sewn-seam detail, ping-pong-ball eyes, fleece nap
   render_quality: Handmade, expressive, hand-in-sock life, backstage magic, felt-and-fur personality
   spatial_distortion: Flapping mouth, hand-driven jaw, rod-controlled arms, loose-neck wobble
-  atmosphere: Funny, alive, vaudeville warmth, backstage camaraderie, Muppet-theater chaos
+  atmosphere: Funny, lively, theatrical, warm, handmade
   key_features: Arm rods, seam-stitch detail, googly-eye placement, felt-color blocking
-  creative_brief: Bright felt and foam padding conceal the hand that gives the creature its soul, arm rods dancing above the frame while the felt mouth flaps wide. Ping-pong-ball eyes roll with vaudeville timing as the television screen becomes a window to a workshop where inanimate fabric learns to feel. Hand-in-sock life captured between broadcast key light and the backstage magic of sewn-seam personality.
+  creative_brief: >-
+    Preserve this preset through hand-operated puppet grammar: felt seams,
+    foam volume, rod-assisted gesture, and broadcast-stage lighting should
+    define identity without relying on named puppet franchises.
 avoidRules:
   - cgi
   - smooth

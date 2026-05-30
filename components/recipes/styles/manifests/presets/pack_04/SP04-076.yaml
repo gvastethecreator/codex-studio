@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Spray paint signature
-  form_and_line: Drips
-  color_palette: Chrome/Black, metallic-can spectrum, silver-cap assertion
-  lighting_setup: Highlight, can-control sheen, spray-fat-cap pattern
-  material_texture: Wall texture
-  render_quality: Street, vandal, aerosol fluency, one-take bravado
-  spatial_distortion: Flow
-  atmosphere: Urban, fast, unauthorized moment, late-night vanish
-  key_features: Drips, tag handstyle, can-control radius
-  creative_brief: Paint escapes the can at pressure, the line born of wrist speed and the urgency of unauthorized creation. Letterforms bend and connect into a private language of identity and territory. This is the signature as architecture, written in the moment between looking over the shoulder and the next pass of headlights.
+  aesthetic: Aerosol handstyle signature with velocity-led linework
+  form_and_line: Continuous flowing strokes, pressure-width variation, drip tails
+  color_palette: Chrome silver, matte black, occasional high-contrast accent pops
+  lighting_setup: Surface sheen and overspray bloom define form, not volumetric light
+  material_texture: Concrete/brick grain with soft spray edge diffusion
+  render_quality: Fast, confident, one-pass execution with visible can control
+  spatial_distortion: Elastic letter compression, directional slant, motion-stretch curves
+  atmosphere: Nocturnal, kinetic, urban, improvised immediacy
+  key_features: Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency
+  creative_brief: >-
+    Focus on movement and signature identity. Build letterforms from uninterrupted gestural flow, preserving cap-behavior artifacts like overspray, taper bursts, and drips. Keep compositions energetic and readable within a compressed footprint, emphasizing rhythm over polish.
 avoidRules:
   - clean
   - font

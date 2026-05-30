@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-022
 packId: pack_11
-name: Aardman Clay Stop-Motion
+name: Clay Stop-Motion Comedy
 category: 1. Toys And Miniatures
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - toys-and-miniatures
 visualDna:
-  aesthetic: Wallace & Gromit cozy clay stop-motion comedy, cheese-and-crackers warmth
+  aesthetic: Cozy clay stop-motion comedy style with tactile handmade humor and frame-by-frame sculpted expression
   form_and_line: Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles
   color_palette: Matte clay colors, plasticine spectrum, earth-pigment tones, muted primary blends
   lighting_setup: Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth
   material_texture: Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability
-  render_quality: British dry humor tactile, Aardman charm, thumbprint poetry, frame-by-frame soul
+  render_quality: Handcrafted stop-motion fidelity emphasizing thumbprint evidence, expressive sculpt timing, and tactile comedic warmth
   spatial_distortion: Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands
-  atmosphere: Funny, charming, tea-time warmth, vegetable-garden mischief, inventive optimism
+  atmosphere: Funny, charming, warm, quirky, optimistic
   key_features: Plasticine, visible thumbprints, painted-backdrop sets, wire-armature shadows
-  creative_brief: Thumbprints remain visible in the plasticine, the human touch preserved frame by patient frame in the stop-motion ritual. Wide mouths and gummy grins animate through the alchemy of twenty-four adjustments per second, each sculpted expression a small miracle of clay and coffee. Tea-time absurdity captured in the space between photographed moments, Wensleydale cheese and inventive optimism in equal measure.
+  creative_brief: >-
+    Define this preset by clay stop-motion grammar: visible thumbprints,
+    sculpted expression swaps, and miniature practical-set lighting should hold
+    identity without referencing specific studios or characters.
 avoidRules:
   - smooth cgi
 assets:

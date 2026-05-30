@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Massive concrete structure, raw monument, bunker poetry, fortress presence
-  form_and_line: Heavy geometric blocks, board-marked walls, cantilevered masses, angular shadows
-  color_palette: Raw Concrete Grey, Charcoal, Slate, weathered Pewter, damp Ash
-  lighting_setup: Harsh shadows, dramatic, low-angle sun, deep recesses, stark contrast
-  material_texture: Rough concrete formwork, board imprints, tie-hole patterns, exposed aggregate, cold stone
-  render_quality: Monumental, imposing, heavy, sculptural weight, heroic scale, institutional power
-  spatial_distortion: None
-  atmosphere: Oppressive, powerful, stoic, enduring, fortress-like silence, territorial
-  key_features: Concrete dominance, monolithic volumes, rhythmic boardmarks, shadow geometry
-  creative_brief: Mass becomes monument, concrete refusing apology for its weight. Shadow carves geometric drama across board-marked planes, light and dark locked in a standoff of equals. The structure stands silent, an argument for permanence in a world of disposability, every tie-hole a signature of human hands that poured and stripped.
+  aesthetic: Brutalist monumental style with unapologetic mass, structural frankness, and civic-institutional gravity
+  form_and_line: Monolithic block stacking, deep recess cuts, cantilever slabs, hard orthogonal silhouettes, and shadow-carved edges
+  color_palette: Concrete gray spectrum with charcoal and slate anchors, damp ash variation, and low-chroma mineral depth
+  lighting_setup: Hard-angle sunlight, deep shadow wells, high-contrast façade articulation, and recess-emphasizing directional light
+  material_texture: Board-formed concrete imprint, tie-hole cadence, exposed aggregate roughness, and weathered mineral patina
+  render_quality: Monumental architectural rendering emphasizing material mass, tectonic clarity, and disciplined sculptural austerity
+  spatial_distortion: Stable monumental perspective with mass-dominant depth compression and proportionally heavy visual balance
+  atmosphere: Stoic, severe, powerful, enduring, contemplative
+  key_features: Monolithic concrete hierarchy, boardmark rhythm, deep-recess shadow logic, tectonic cantilever expression
+  creative_brief: >-
+    Define this preset through material mass and shadow tectonics: raw concrete
+    imprint language, monolithic composition, and institutional permanence are
+    the transferable identity.
 avoidRules:
   - delicate
   - painted

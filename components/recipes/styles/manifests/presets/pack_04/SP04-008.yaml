@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: High contrast ink
-  form_and_line: Negative space
+  aesthetic: Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant visual storytelling
+  form_and_line: Negative-space carving with razor-edged contour breaks, stark shape blocking, and subtraction-first figure construction
   color_palette: Black and White only, stark binary, zero greyscale
   lighting_setup: Harsh, single-source key, knife-edge cast shadows
-  material_texture: Ink splatter
-  render_quality: Frank Miller ultra-contrast gritty, shadow-first storytelling
-  spatial_distortion: Silhouette
-  atmosphere: Dark, violent, rain-slick alley, femme-fatale menace
+  material_texture: Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density variation
+  render_quality: Ultra-contrast noir rendering prioritizing shadow hierarchy, binary value discipline, and aggressive readability
+  spatial_distortion: Silhouette-forward composition with compressed midtone absence and hard cutout depth cues
+  atmosphere: Dark, menacing, tense, unforgiving, nocturnal
   key_features: No greyscale, silhouette framing, white-out rim
-  creative_brief: Darkness swallows form whole, spitting back only what the single light source deigns to reveal. Every silhouette is a verdict, every white-rimmed edge a razor's promise of violence. This is storytelling by subtraction, where what you cannot see matters more than what you can.
+  creative_brief: >-
+    Preserve identity through binary-light discipline: deep blacks, strategic white
+    carve-outs, and silhouette verdicts should carry the narrative weight without
+    leaning on named noir franchises or fixed alleyway scenes.
 avoidRules:
   - grey
   - color

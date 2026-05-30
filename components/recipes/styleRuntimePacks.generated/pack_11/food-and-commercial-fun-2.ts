@@ -4,147 +4,217 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    "id": "SP11-049",
-    "name": "Fast Food Commercial",
-    "category": "2. Food And Commercial Fun",
-    "negativePrompt": "real, soggy",
-    "style": {
-      "aesthetic": "Burger ad, quick-service-photography, crave-engineering, food-styling trickery, drive-thru theater",
-      "form_and_line": "Perfect layers, bun-dome contour, lettuce-ruffle edge, patty-sear ring, cheese-drape curves",
-      "color_palette": "Saturated Orange, Brown, Heinz-red, lettuce-chlorophyll green, sesame-gold, pickle-neon green",
-      "lighting_setup": "High key studio, backlight-through-bun, rim-light on cheese, oil-sheen catch, steam-backlit glow",
-      "material_texture": "Melting cheese, water drops, sesame-seed nub, grill-mark char, condensation-bead, oil-slick gloss",
-      "render_quality": "Unrealistic perfection, food-stylist magic, spray-bottle mist, tweezer-placement, hunger-trap",
-      "spatial_distortion": "Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly",
-      "atmosphere": "Exciting, hungry, late-night craving, drive-thru anticipation, guilty-pleasure",
-      "key_features": "Sesame seeds, cheese-pull stretch, condensation water-beads, grill-mark cross-hatch, lettuce-edge frill, patty-juice sheen",
-      "creative_brief": "The sesame seeds were placed individually by a stylist with tweezers and unlimited patience, each seed a tiny monument to food-photography artifice. Cheese drapes in calculated cascade while condensation beads form at exactly the right angle to catch the studio backlight through the bun dome. This is not food but its Platonic ideal, engineered to trigger craving centers through the alchemy of steam and golden browning and the lie that the burger always looks this good."
-    }
+    id: 'SP11-049',
+    name: 'Fast Food Commercial',
+    category: '2. Food And Commercial Fun',
+    negativePrompt: 'real, soggy',
+    style: {
+      aesthetic:
+        'Burger ad, quick-service-photography, crave-engineering, food-styling trickery, drive-thru theater',
+      form_and_line:
+        'Perfect layers, bun-dome contour, lettuce-ruffle edge, patty-sear ring, cheese-drape curves',
+      color_palette:
+        'Saturated Orange, Brown, Heinz-red, lettuce-chlorophyll green, sesame-gold, pickle-neon green',
+      lighting_setup:
+        'High key studio, backlight-through-bun, rim-light on cheese, oil-sheen catch, steam-backlit glow',
+      material_texture:
+        'Melting cheese, water drops, sesame-seed nub, grill-mark char, condensation-bead, oil-slick gloss',
+      render_quality:
+        'Unrealistic perfection, food-stylist magic, spray-bottle mist, tweezer-placement, hunger-trap',
+      spatial_distortion:
+        'Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly',
+      atmosphere: 'Exciting, hungry, late-night craving, drive-thru anticipation, guilty-pleasure',
+      key_features:
+        'Sesame seeds, cheese-pull stretch, condensation water-beads, grill-mark cross-hatch, lettuce-edge frill, patty-juice sheen',
+      creative_brief:
+        'The sesame seeds were placed individually by a stylist with tweezers and unlimited patience, each seed a tiny monument to food-photography artifice. Cheese drapes in calculated cascade while condensation beads form at exactly the right angle to catch the studio backlight through the bun dome. This is not food but its Platonic ideal, engineered to trigger craving centers through the alchemy of steam and golden browning and the lie that the burger always looks this good.',
+    },
   },
   {
-    "id": "SP11-046",
-    "name": "Michelin Fine-Dining Editorial",
-    "category": "2. Food And Commercial Fun",
-    "negativePrompt": "messy, cafeteria",
-    "style": {
-      "aesthetic": "Fine dining plate, tasting-menu artistry, white-tablecloth theater, culinary-stage",
-      "form_and_line": "Precise plating, tweezer-placement contour, sauce-swirl geometry, micro-green garnish, geometric-stacking",
-      "color_palette": "Vibrant, fresh, reduction-glaze mahogany, herb-oil emerald, nasturtium-orange, crème-fraîche white, plate-negative-space",
-      "lighting_setup": "Soft window light, candle-glow warmth, tablecloth-bounce fill, rim-light-on-sauce sheen",
-      "material_texture": "Sauce gloss, fresh herbs, demi-glace mirror, micro-green velvet, tuile-crisp, edible-flower petal, sea-salt crystal",
-      "render_quality": "Delicious, expensive, Michelin-star precision, tasting-menu journey, culinary-art, gastronomic-beauty",
-      "spatial_distortion": "Tiny portions, negative-space plating, height-stacked architecture, swoosh-negative, edge-placement composition",
-      "atmosphere": "Elegant, tasty, hushed-dining-room, wine-glass-clink, white-glove-service, anticipation",
-      "key_features": "Garnish, sauce-swirl swoosh, tweezered-microgreen, edible-flower accent, tuile-crisp, reduction-drizzle, sea-salt-flake",
-      "creative_brief": "A tweezered microgreen lands on the sauce swoosh with the precision of a watchmaker placing a jewel in a movement of edible art. Negative space on the plate becomes as important as the food itself, absence defining presence in the geometric theater of fine dining. The meal is a three-hour narrative told through reduction-drizzle and sea-salt-flake, every course a paragraph in a story written by hands that spent decades learning to listen to ingredients."
-    }
+    id: 'SP11-046',
+    name: 'Michelin Fine-Dining Editorial',
+    category: '2. Food And Commercial Fun',
+    negativePrompt: 'messy, cafeteria',
+    style: {
+      aesthetic:
+        'Fine dining plate, tasting-menu artistry, white-tablecloth theater, culinary-stage',
+      form_and_line:
+        'Precise plating, tweezer-placement contour, sauce-swirl geometry, micro-green garnish, geometric-stacking',
+      color_palette:
+        'Vibrant, fresh, reduction-glaze mahogany, herb-oil emerald, nasturtium-orange, crème-fraîche white, plate-negative-space',
+      lighting_setup:
+        'Soft window light, candle-glow warmth, tablecloth-bounce fill, rim-light-on-sauce sheen',
+      material_texture:
+        'Sauce gloss, fresh herbs, demi-glace mirror, micro-green velvet, tuile-crisp, edible-flower petal, sea-salt crystal',
+      render_quality:
+        'Delicious, expensive, Michelin-star precision, tasting-menu journey, culinary-art, gastronomic-beauty',
+      spatial_distortion:
+        'Tiny portions, negative-space plating, height-stacked architecture, swoosh-negative, edge-placement composition',
+      atmosphere:
+        'Elegant, tasty, hushed-dining-room, wine-glass-clink, white-glove-service, anticipation',
+      key_features:
+        'Garnish, sauce-swirl swoosh, tweezered-microgreen, edible-flower accent, tuile-crisp, reduction-drizzle, sea-salt-flake',
+      creative_brief:
+        'A tweezered microgreen lands on the sauce swoosh with the precision of a watchmaker placing a jewel in a movement of edible art. Negative space on the plate becomes as important as the food itself, absence defining presence in the geometric theater of fine dining. The meal is a three-hour narrative told through reduction-drizzle and sea-salt-flake, every course a paragraph in a story written by hands that spent decades learning to listen to ingredients.',
+    },
   },
   {
-    "id": "SP11-055",
-    "name": "Pizza Melt",
-    "category": "2. Food And Commercial Fun",
-    "negativePrompt": "cold",
-    "style": {
-      "aesthetic": "Cheese pull, pizzeria-magic, molten-mozzarella, slice-photography, delivery-crave",
-      "form_and_line": "Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup",
-      "color_palette": "Red, Yellow, White, sauce-crimson, mozzarella-ivory, crust-golden, pepperoni-charred, basil-green, oregano-fleck",
-      "lighting_setup": "Warm, pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam",
-      "material_texture": "Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge, melted-mozzarella-strand, semolina-dust",
-      "render_quality": "Cheesy, hot, cheese-pull porn, Friday-night ritual, fold-the-slice, New-York-style",
-      "spatial_distortion": "Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool",
-      "atmosphere": "Craving, greasy, delivery-doorbell, napkin-stack anticipation, box-steam reveal",
-      "key_features": "Pepperoni, cheese-stretch strand, crust-blister, grease-pool, oregano-fleck, pepperoni-cup, box-corner-grease-stain, garlic-knot companion",
-      "creative_brief": "The mozzarella string stretches from slice to mouth in an elastic bridge of dairy physics, catching pizzeria light along its glistening arc of perfect melt. Pepperoni cups hold tiny pools of orange oil while the undercarriage reveals leopard-spotted char from a properly fired deck oven and a thousand degrees of stone-deck heat. This is not a photograph of food but a portrait of craving itself, grease and glory rendered on a paper plate under delivery-box steam."
-    }
+    id: 'SP11-055',
+    name: 'Pizza Melt',
+    category: '2. Food And Commercial Fun',
+    negativePrompt: 'cold',
+    style: {
+      aesthetic:
+        'Cheese pull, pizzeria-magic, molten-mozzarella, slice-photography, delivery-crave',
+      form_and_line:
+        'Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup',
+      color_palette:
+        'Red, Yellow, White, sauce-crimson, mozzarella-ivory, crust-golden, pepperoni-charred, basil-green, oregano-fleck',
+      lighting_setup:
+        'Warm, pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam',
+      material_texture:
+        'Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge, melted-mozzarella-strand, semolina-dust',
+      render_quality:
+        'Cheesy, hot, cheese-pull porn, Friday-night ritual, fold-the-slice, New-York-style',
+      spatial_distortion:
+        'Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool',
+      atmosphere: 'Craving, greasy, delivery-doorbell, napkin-stack anticipation, box-steam reveal',
+      key_features:
+        'Pepperoni, cheese-stretch strand, crust-blister, grease-pool, oregano-fleck, pepperoni-cup, box-corner-grease-stain, garlic-knot companion',
+      creative_brief:
+        'The mozzarella string stretches from slice to mouth in an elastic bridge of dairy physics, catching pizzeria light along its glistening arc of perfect melt. Pepperoni cups hold tiny pools of orange oil while the undercarriage reveals leopard-spotted char from a properly fired deck oven and a thousand degrees of stone-deck heat. This is not a photograph of food but a portrait of craving itself, grease and glory rendered on a paper plate under delivery-box steam.',
+    },
   },
   {
-    "id": "SP11-053",
-    "name": "Chocolate Flow",
-    "category": "2. Food And Commercial Fun",
-    "negativePrompt": "watery",
-    "style": {
-      "aesthetic": "Melting chocolate river, patisserie-waterfall, temper-dark-flow, molten-cocoa, fondue-dream",
-      "form_and_line": "Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex",
-      "color_palette": "Dark Brown, couverture-ebony, ganache-mahogany, milk-chocolate amber, cocoa-dust, tempered-sheen",
-      "lighting_setup": "Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface mirror",
-      "material_texture": "Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity",
-      "render_quality": "Rich, decadent, chocolatier-art, tempering-perfection, dessert-seduction, cocoa-bean poetry",
-      "spatial_distortion": "Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple",
-      "atmosphere": "Indulgent, sweet, pâtisserie-afternoon, truffle-luxury, cocoa-comfort, melting-moment",
-      "key_features": "Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin, chocolate-shavings curl",
-      "creative_brief": "Tempered couverture cascades in ribbons of liquid obsidian, folding over itself in thick glossy waves that catch the soft-box reflection like a dark mirror. The ganache pool holds its surface tension with the viscosity of a dessert that understands luxury is measured in mouthfeel. Viscosity becomes art when chocolate moves at the speed of honey down a perfectly chilled marble slope, every ripple a poem written in cocoa butter and patience."
-    }
+    id: 'SP11-053',
+    name: 'Chocolate Flow',
+    category: '2. Food And Commercial Fun',
+    negativePrompt: 'watery',
+    style: {
+      aesthetic:
+        'Melting chocolate river, patisserie-waterfall, temper-dark-flow, molten-cocoa, fondue-dream',
+      form_and_line:
+        'Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex',
+      color_palette:
+        'Dark Brown, couverture-ebony, ganache-mahogany, milk-chocolate amber, cocoa-dust, tempered-sheen',
+      lighting_setup:
+        'Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface mirror',
+      material_texture:
+        'Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity',
+      render_quality:
+        'Rich, decadent, chocolatier-art, tempering-perfection, dessert-seduction, cocoa-bean poetry',
+      spatial_distortion:
+        'Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple',
+      atmosphere:
+        'Indulgent, sweet, pâtisserie-afternoon, truffle-luxury, cocoa-comfort, melting-moment',
+      key_features:
+        'Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin, chocolate-shavings curl',
+      creative_brief:
+        'Tempered couverture cascades in ribbons of liquid obsidian, folding over itself in thick glossy waves that catch the soft-box reflection like a dark mirror. The ganache pool holds its surface tension with the viscosity of a dessert that understands luxury is measured in mouthfeel. Viscosity becomes art when chocolate moves at the speed of honey down a perfectly chilled marble slope, every ripple a poem written in cocoa butter and patience.',
+    },
   },
   {
-    "id": "SP11-054",
-    "name": "Bento Box",
-    "category": "2. Food And Commercial Fun",
-    "negativePrompt": "messy",
-    "style": {
-      "aesthetic": "Cute lunch box, kyaraben-art, obento-love, character-bento, Japanese-mother devotion",
-      "form_and_line": "Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours",
-      "color_palette": "Colorful, organized, tamago-yellow, spinach-green, umeboshi-red, salmon-pink, nori-black, cherry-tomato red",
-      "lighting_setup": "Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient",
-      "material_texture": "Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss",
-      "render_quality": "Kawaii, organized, lunchtime-love, bento-box art, edible-character, Japanese-motherhood",
-      "spatial_distortion": "Food shaped like animals, rice-ball-bear, sausage-octopus, egg-sheet-panda, carrot-flower, apple-rabbit",
-      "atmosphere": "Cute, hungry, lunch-break-joy, bento-box-surprise, oh-my-god-its-a-panda",
-      "key_features": "Panda rice ball, nori-cutout face, sausage-octopus, tamagoyaki-roll, cherry-tomato, grass-separator, apple-rabbit ears, bento-pick flag",
-      "creative_brief": "Nori cutouts transform rice balls into panda faces, seaweed smiles floating above tamago-yellow rectangles in a compartment of organized love. The octopus sausage poses with tentacle legs spread wide, a whimsical protein sculpture designed to delight before it nourishes. A mother woke before dawn to pack edible joy into a lacquered box, each ingredient placed like a character in a tiny delicious story told at lunchtime to a child who will remember this forever."
-    }
+    id: 'SP11-054',
+    name: 'Bento Box',
+    category: '2. Food And Commercial Fun',
+    negativePrompt: 'messy',
+    style: {
+      aesthetic:
+        'Cute lunch box, kyaraben-art, obento-love, character-bento, Japanese-mother devotion',
+      form_and_line:
+        'Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours',
+      color_palette:
+        'Colorful, organized, tamago-yellow, spinach-green, umeboshi-red, salmon-pink, nori-black, cherry-tomato red',
+      lighting_setup:
+        'Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient',
+      material_texture:
+        'Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss',
+      render_quality:
+        'Kawaii, organized, lunchtime-love, bento-box art, edible-character, Japanese-motherhood',
+      spatial_distortion:
+        'Food shaped like animals, rice-ball-bear, sausage-octopus, egg-sheet-panda, carrot-flower, apple-rabbit',
+      atmosphere: 'Cute, hungry, lunch-break-joy, bento-box-surprise, oh-my-god-its-a-panda',
+      key_features:
+        'Panda rice ball, nori-cutout face, sausage-octopus, tamagoyaki-roll, cherry-tomato, grass-separator, apple-rabbit ears, bento-pick flag',
+      creative_brief:
+        'Nori cutouts transform rice balls into panda faces, seaweed smiles floating above tamago-yellow rectangles in a compartment of organized love. The octopus sausage poses with tentacle legs spread wide, a whimsical protein sculpture designed to delight before it nourishes. A mother woke before dawn to pack edible joy into a lacquered box, each ingredient placed like a character in a tiny delicious story told at lunchtime to a child who will remember this forever.',
+    },
   },
   {
-    "id": "SP11-047",
-    "name": "Candy Land",
-    "category": "2. Food And Commercial Fun",
-    "negativePrompt": "healthy, savory",
-    "style": {
-      "aesthetic": "World made of sweets, confectionery-kingdom, gumdrop-forest, gingerbread-architecture, sugar-plum-fairy",
-      "form_and_line": "Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles",
-      "color_palette": "Pink, Blue, Sugar, candy-floss spectrum, marshmallow-white, licorice-black, jellybean-rainbow, cotton-candy pastel",
-      "lighting_setup": "Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow backlight",
-      "material_texture": "Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell snap, sprinkle-crunch",
-      "render_quality": "Sweet, magical, Willy-Wonka wonder, candy-land fantasy, sugar-rush dream, gumdrop-path joy",
-      "spatial_distortion": "Everything is edible, lollipop-tree scale, gingerbread-house proportions, chocolate-river flow, candy-cane columns",
-      "atmosphere": "Happy, hungry, sugar-plum dreams, everlasting-gobstopper hope, candy-shop awe",
-      "key_features": "Lollipops, gumdrop-path, frosting-icicle drip, candy-cane arch, chocolate-waterfall, sprinkle-confetti",
-      "creative_brief": "Gumdrop pathways wind toward gingerbread palaces under skies made of cotton candy and spun-sugar possibility, every surface edible and eager. Lollipop trees cast sugar-crystal shadows while chocolate rivers flow with the viscosity of childhood dreams made physical. A kingdom built entirely from confectionery excess where hunger transforms into wonder with every candy-cane step toward the everlasting-gobstopper horizon."
-    }
+    id: 'SP11-047',
+    name: 'Candy Land',
+    category: '2. Food And Commercial Fun',
+    negativePrompt: 'healthy, savory',
+    style: {
+      aesthetic:
+        'World made of sweets, confectionery-kingdom, gumdrop-forest, gingerbread-architecture, sugar-plum-fairy',
+      form_and_line:
+        'Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles',
+      color_palette:
+        'Pink, Blue, Sugar, candy-floss spectrum, marshmallow-white, licorice-black, jellybean-rainbow, cotton-candy pastel',
+      lighting_setup:
+        'Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow backlight',
+      material_texture:
+        'Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell snap, sprinkle-crunch',
+      render_quality:
+        'Sweet, magical, Willy-Wonka wonder, candy-land fantasy, sugar-rush dream, gumdrop-path joy',
+      spatial_distortion:
+        'Everything is edible, lollipop-tree scale, gingerbread-house proportions, chocolate-river flow, candy-cane columns',
+      atmosphere: 'Happy, hungry, sugar-plum dreams, everlasting-gobstopper hope, candy-shop awe',
+      key_features:
+        'Lollipops, gumdrop-path, frosting-icicle drip, candy-cane arch, chocolate-waterfall, sprinkle-confetti',
+      creative_brief:
+        'Gumdrop pathways wind toward gingerbread palaces under skies made of cotton candy and spun-sugar possibility, every surface edible and eager. Lollipop trees cast sugar-crystal shadows while chocolate rivers flow with the viscosity of childhood dreams made physical. A kingdom built entirely from confectionery excess where hunger transforms into wonder with every candy-cane step toward the everlasting-gobstopper horizon.',
+    },
   },
   {
-    "id": "SP11-009",
-    "name": "Emoji 3D",
-    "category": "2. Food And Commercial Fun",
-    "negativePrompt": "flat, 2d, sketch",
-    "style": {
-      "aesthetic": "Glossy 3D icon, emoji communication, playful glyph, digital hieroglyph",
-      "form_and_line": "Round, smooth, pill-shaped, sphere-based, soft extrusion",
-      "color_palette": "Bright Yellow, Blue, Red, vivid primaries, gradient-rich, punchy saturation",
-      "lighting_setup": "Studio softbox, rim light, gradient sky reflection, glossy hotspot",
-      "material_texture": "Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell",
-      "render_quality": "Apple platform emoji, UI design, glossy smile, message-bubble charm, keycap precision",
-      "spatial_distortion": "Sphere based, anthropomorphic objects, simplified features, chunky proportions",
-      "atmosphere": "Happy, expressive, digital, instant communication, friendly warmth, pixel joy",
-      "key_features": "Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette",
-      "creative_brief": "Glossy spheres of digital emotion float in a gradient world of uncomplicated joy, each squircle catching a perfect white rim-catchlight. Gradient highlights curve across the candy-shell surface, transforming simple shapes into feelings rendered in three dimensions. A universal glyph language sculpted in reflective plastic and soft-shadow warmth."
-    }
+    id: 'SP11-009',
+    name: 'Emoji 3D',
+    category: '2. Food And Commercial Fun',
+    negativePrompt: 'flat, 2d, sketch',
+    style: {
+      aesthetic: 'Glossy 3D icon, emoji communication, playful glyph, digital hieroglyph',
+      form_and_line: 'Round, smooth, pill-shaped, sphere-based, soft extrusion',
+      color_palette: 'Bright Yellow, Blue, Red, vivid primaries, gradient-rich, punchy saturation',
+      lighting_setup: 'Studio softbox, rim light, gradient sky reflection, glossy hotspot',
+      material_texture:
+        'Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell',
+      render_quality:
+        'Apple platform emoji, UI design, glossy smile, message-bubble charm, keycap precision',
+      spatial_distortion:
+        'Sphere based, anthropomorphic objects, simplified features, chunky proportions',
+      atmosphere: 'Happy, expressive, digital, instant communication, friendly warmth, pixel joy',
+      key_features:
+        'Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette',
+      creative_brief:
+        'Glossy spheres of digital emotion float in a gradient world of uncomplicated joy, each squircle catching a perfect white rim-catchlight. Gradient highlights curve across the candy-shell surface, transforming simple shapes into feelings rendered in three dimensions. A universal glyph language sculpted in reflective plastic and soft-shadow warmth.',
+    },
   },
   {
-    "id": "SP11-040",
-    "name": "Kawaii Pastel",
-    "category": "2. Food And Commercial Fun",
-    "negativePrompt": "dark, scary",
-    "style": {
-      "aesthetic": "Sanrio ultra-cute mascot illustration, Hello Kitty innocence, kawaii overload",
-      "form_and_line": "Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette",
-      "color_palette": "Pastel Pink, Blue, Yellow, cotton-candy-spectrum, mint-chip, lavender-cream, buttercream, powder-blue sky",
-      "lighting_setup": "Bright, flat, ring-light softness, studio-bounce fill, high-key-whites, shadowless-cheer",
-      "material_texture": "Smooth, fluffy, marshmallow-soft, fondant-gloss, sherbet-grain, cotton-ball fuzz",
-      "render_quality": "Cute, happy, soft, sticker-pack joy, kawaii-tsunami, smile-inducing overload",
-      "spatial_distortion": "Big eyes, sparkle-pupil, oversized-head, tiny-body, chibi-extremity, bean-proportion",
-      "atmosphere": "Joy, innocence, pastel-paradise, friendship-festival, sugar-rush delight, unconditional-sweetness",
-      "key_features": "Sparkles, ribbon-bows, heart-motifs, blush-stickers, star-twinkle accents, animal-ear headbands",
-      "creative_brief": "Sparkle-pupil eyes occupy half of every face in a dimension where cuteness is the only physical law and gravity bends toward joy. Cotton-candy skies rain marshmallow drops onto creatures with heads too big for their tiny bean-proportioned bodies. Aggressive sweetness radiates from every pastel surface, weaponizing innocence into an overwhelming sensory embrace that leaves no room for anything but smile."
-    }
-  }
+    id: 'SP11-040',
+    name: 'Kawaii Pastel',
+    category: '2. Food And Commercial Fun',
+    negativePrompt: 'dark, scary',
+    style: {
+      aesthetic: 'Sanrio ultra-cute mascot illustration, Hello Kitty innocence, kawaii overload',
+      form_and_line:
+        'Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette',
+      color_palette:
+        'Pastel Pink, Blue, Yellow, cotton-candy-spectrum, mint-chip, lavender-cream, buttercream, powder-blue sky',
+      lighting_setup:
+        'Bright, flat, ring-light softness, studio-bounce fill, high-key-whites, shadowless-cheer',
+      material_texture:
+        'Smooth, fluffy, marshmallow-soft, fondant-gloss, sherbet-grain, cotton-ball fuzz',
+      render_quality:
+        'Cute, happy, soft, sticker-pack joy, kawaii-tsunami, smile-inducing overload',
+      spatial_distortion:
+        'Big eyes, sparkle-pupil, oversized-head, tiny-body, chibi-extremity, bean-proportion',
+      atmosphere:
+        'Joy, innocence, pastel-paradise, friendship-festival, sugar-rush delight, unconditional-sweetness',
+      key_features:
+        'Sparkles, ribbon-bows, heart-motifs, blush-stickers, star-twinkle accents, animal-ear headbands',
+      creative_brief:
+        'Sparkle-pupil eyes occupy half of every face in a dimension where cuteness is the only physical law and gravity bends toward joy. Cotton-candy skies rain marshmallow drops onto creatures with heads too big for their tiny bean-proportioned bodies. Aggressive sweetness radiates from every pastel surface, weaponizing innocence into an overwhelming sensory embrace that leaves no room for anything but smile.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

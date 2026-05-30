@@ -12,16 +12,16 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Criminal enforcers in a filthy cyber city, 80s neon vice, illegal tech, wet asphalt violence, hard-edged police-thriller futurism with dangerous swagger
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Vice-soaked, neon, lawless, hardboiled
-  key_features: Wet city alleys, criminal-tech props, prison-mercenary silhouettes, hard neon rim light, vice-district staging
-  creative_brief: Wet asphalt and stolen neon, a city that bleeds through its own circuits. Three criminals carry badges like wounds, swaggering through rain that tastes of illegal tech and expired justice. The future is a back-alley transaction in a trench coat.
+  aesthetic: Gritty enforcement-cyberpunk anime style with analog surveillance mood, punitive tech iconography, and hardboiled futurist attitude
+  form_and_line: Dense industrial inking, rigid angular anatomy, mechanical panel etching, severe contour weight shifts
+  color_palette: Polluted tungsten ambers, toxic cyans, bruised violets, dirty steel greys, constrained red warning accents
+  lighting_setup: Harsh top-lit practicals, strip-light reflections, narrow rim passes, low-key contrast with localized glow bursts
+  material_texture: Scuffed metal casings, worn polymer shells, cable abrasion marks, oxidized fasteners, oily reflective film
+  render_quality: Mature seinen-mecha finish emphasizing grime realism, mechanical fidelity, and disciplined compositing
+  spatial_distortion: Compressed telephoto pressure mixed with abrupt perspective breaks for tactical hostility and visual tension
+  atmosphere: Coercive, paranoid, punitive, claustrophobic, electrically unstable
+  key_features: Enforcement-tech silhouette language, warning-light color discipline, abrasion-heavy armor surfaces, surveillance-era mechanical detailing
+  creative_brief: Encode a law-and-pressure cyber aesthetic through texture wear, austere lighting, and mechanical severity; avoid fixed story beats so the preset remains reusable across subjects.
 avoidRules:
   - realistic
   - 3d render

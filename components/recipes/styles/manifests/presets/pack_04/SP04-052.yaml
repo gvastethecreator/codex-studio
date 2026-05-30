@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: SimCity simulation-city view, top-down utopia, ordered delight
-  form_and_line: Clean pixel/vector
-  color_palette: Bright, clear, toy-saturated palette, readable contrast
-  lighting_setup: Top-left sun, uniform isometric light, tile-friendly illumination
-  material_texture: Tileable
-  render_quality: Game asset, cute, simulator clarity, God-game charm
-  spatial_distortion: No perspective
-  atmosphere: Orderly, toy, city-building serenity, top-down satisfaction
-  key_features: 30 degree angle, tile grid, isometric block
-  creative_brief: The world tilts precisely thirty degrees, every building and road rendered from the god-angle of absolute order. Tiny figures populate the isometric grid like pieces in a board game designed by an urban planner with a sense of humor. This is the city as toy, where control is total and the view never changes but always satisfies.
+  aesthetic: Isometric systems-art style with modular worldbuilding clarity, playful simulation readability, and toy-scale urban abstraction
+  form_and_line: Clean vector-pixel hybrid contours, grid-disciplined shape language, and module-first construction logic
+  color_palette: Bright ordered saturation with zone-based hue grouping, clear functional contrast, and tile-friendly color separation
+  lighting_setup: Consistent directional isometric lighting with uniform shadow logic and readability-first highlight placement
+  material_texture: Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset cohesion
+  render_quality: Production-grade simulation asset finish emphasizing legibility at scale, modular coherence, and system clarity
+  spatial_distortion: Isometric orthographic logic with fixed-angle depth mapping and no perspective convergence
+  atmosphere: Ordered, playful, clean, constructive, serene
+  key_features: Isometric angle discipline, modular tile-grid composition, systems readability hierarchy, toy-scale abstraction
+  creative_brief: >-
+    Keep identity in modular isometric grammar: fixed-angle spatial logic,
+    tile-grid coherence, and readable system layering should transfer across
+    subjects beyond any particular city-simulator reference.
 avoidRules:
   - perspective
   - flat

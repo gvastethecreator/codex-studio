@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: 50s Diner/Gas station, roadside futurism, car-culture optimism, atomic-age roadside
-  form_and_line: Upswept roof, starbursts, boomerang angles, flying-V canopies, diamond window walls
-  color_palette: Neon, Chrome, Red, Turquoise vinyl, Buttery Yellow, Atomic Orange
-  lighting_setup: Neon signs, backlit plastic panels, cantilevered roof glow, kitsch brilliance, animated chase lights
-  material_texture: Glass, steel, terrazzo, boomerang Formica, stucco rock, polished chrome
-  render_quality: Space age, retro, optimistic, mid-century ambition, Jetsons-come-true, car-hood shine
-  spatial_distortion: Boomerang shapes
-  atmosphere: Fun, fast, atomic, drive-in romance, rocket-ship tomorrow, diner coffee energy
-  key_features: Cantilever, upswept roof, neon signage, starburst ornament, angled glass walls, terrazzo floors
-  creative_brief: Roofs sweep upward like the fins of a car that never stops accelerating toward tomorrow. Neon writes promises across the desert night, every starburst and boomerang a bet on the future. The diner glows with atomic-age optimism, a roadside cathedral where chrome is the religion and coffee the sacrament.
+  aesthetic: Googie retro-futurist style with atomic-age optimism, velocity-driven geometry, and exuberant commercial-modern spectacle
+  form_and_line: Upswept cantilevers, boomerang vectors, starburst motifs, flying-V canopies, and angular glazing rhythms
+  color_palette: Neon-bright primaries with chrome neutrals, turquoise-red anchors, buttery yellow highlights, and atomic orange punches
+  lighting_setup: High-signage neon glow, backlit plastic diffusion, marquee-like edge lighting, and animated luminance sequencing
+  material_texture: Polished chrome, terrazzo sparkle, Formica gloss, painted stucco grain, and crisp glazed surface reflections
+  render_quality: High-energy mid-century retro-future rendering with kitsch precision and polished optimism-forward finish
+  spatial_distortion: Directional boomerang skew and upswept perspective emphasis to imply constant forward motion
+  atmosphere: Playful, optimistic, fast, theatrical, nostalgic
+  key_features: Velocity geometry language, neon-chrome contrast, starburst ornament grammar, exuberant cantilever choreography
+  creative_brief: >-
+    Keep the preset identifiable through atomic-age velocity forms and
+    neon-chrome exuberance; prioritize optimistic retro-future geometry over
+    any fixed roadside venue narrative.
 avoidRules:
   - square
   - boring

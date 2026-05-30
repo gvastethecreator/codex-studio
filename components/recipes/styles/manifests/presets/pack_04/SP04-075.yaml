@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Sailor Jerry bold-traditional tattoo flash, nautical boldness, old-school commitment
-  form_and_line: Bold black outline
-  color_palette: Red, Yellow, Green, Black, classic-flash palette, shop-staple primaries
-  lighting_setup: Skin fade (whip shading), pepper-shading gradation, flash-sheet lighting
-  material_texture: Paper stain
-  render_quality: Old school, bold, sailor-sleeve heritage, lasting-hold tradition
-  spatial_distortion: 2D
-  atmosphere: Tough, classic, boardwalk tradition, anchor-tattoo loyalty
-  key_features: Bold will hold, thick outline, limited-palette flash
-  creative_brief: Bold lines and solid fills honor the tradition of anchors, swallows, and hearts worn on sailor skin. Red, green, black, and yellow build a visual vocabulary of commitment and superstition. This is the flash sheet as promise, where every design has weathered decades of salt air and still holds its color.
+  aesthetic: Traditional flash-sheet tattoo graphic language
+  form_and_line: Heavy black contour with simplified internal separators
+  color_palette: Classic flash primaries (red, yellow, green, black) with flat opaque fills
+  lighting_setup: Minimal realism; depth through selective whip/pepper shading motifs
+  material_texture: Slight paper aging and ink edge texture
+  render_quality: Bold, iconic, high legibility at distance and small scale
+  spatial_distortion: Intentionally flat emblematic composition
+  atmosphere: Tough, nostalgic, craft-shop heritage, ceremonial permanence
+  key_features: "Bold will hold" geometry, limited palette discipline, emblem-first silhouettes
+  creative_brief: >-
+    Design for immediate recognition and long-term readability. Use thick black outlines, compact symbolic forms, and flat saturated fills with restrained shading accents. Maintain sheet-ready clarity where each motif works as a standalone emblem and as part of a cohesive flash collection.
 avoidRules:
   - realistic
   - soft

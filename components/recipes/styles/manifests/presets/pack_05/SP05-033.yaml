@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Frantic violence, offbeat humor, messy cityscapes, dirty cinematic framing, chainsaw devil transforms, blood-splatter comedy, newspaper manga panels, door-kick entries
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
-  atmosphere: Deranged, explosive, chaotic, visceral
-  key_features: Impact-driven action design, freeze-frame power posing, dynamic energy trails, spectacle choreography
-  creative_brief: A chainsaw revs through the fourth wall, spraying ink-splatter comedy across filthy urban frames like a deranged love letter to celluloid chaos. Newspaper halftones collide with sakuga-level ultraviolence, the sublime and the stupid sharing a cigarette in a trashed apartment while the world burns beautifully outside.
+  aesthetic: Grindhouse-splatter action style with punk absurdity, grotesque humor, and chaotic cinematic framing energy
+  form_and_line: Jagged impact strokes, aggressive silhouette breakage, halftone-panel interruptions, and deliberately unstable line cadence
+  color_palette: Dirty reds and oily blacks with acidic neon accents, paper-gray halftone fields, and high-impact contrast bursts
+  lighting_setup: Harsh practical glare, grime-filtered shadows, strobe-like impact flashes, and uneven luminance for manic pacing
+  material_texture: Ink splatter overlays, print-noise grit, smeared debris particulates, and roughened compositing layers
+  render_quality: High-intensity splatter-action rendering with controlled visual mess and sharp comedic-shock timing
+  spatial_distortion: Abrupt perspective warps and frame rupture moments that amplify violent-comic disorientation
+  atmosphere: Deranged, visceral, anarchic, darkly comic, volatile
+  key_features: Splatter-comedy contrast, panel-break chaos, grindhouse texture stack, unstable impact framing
+  creative_brief: >-
+    Preserve identity through grindhouse splatter grammar and absurd tonal
+    collision: rough print textures and manic frame ruptures should define the
+    style regardless of character premise.
 avoidRules:
   - realistic
   - 3d render

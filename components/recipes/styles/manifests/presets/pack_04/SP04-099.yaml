@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Game-UI-HUD-wireframe-concept, diegetic-in-world-interface-versus-non-diegetic-screen-overlay, health-bar-ammo-counter-stamina-meter-explorations, radial-menu-vs-linear-menu-comparison, minimalist-data-presentation-versus-diagetic-in-world-clues, Dead-Space-diegetic-UI-health-on-spine, minimal-screen-clutter-philosophy, player-experience-design-sketch
-  form_and_line: Clean-wireframe-lines, UI-element-bounding-boxes, hierarchy-readability-strokes, flow-arrow-between-screens, wireframe-grid-alignment, consistent-padding-markers
-  color_palette: Wireframe-grey, functional-cyan, warning-red, neutral-green, blueprint-blue, screen-black-background, UI-element-transparency-alpha
-  lighting_setup: None, flat-UI-lighting, glow-effect-on-interactive-elements, screen-ambient-illumination, dark-background-for-contrast
-  material_texture: Screen-pixel-grid, wireframe-line-precision, UI-glass-transparency, holographic-translucency, screen-glare-subtle, minimal-texture-functional
-  render_quality: UI-UX-wireframe-aesthetic, game-HUD-concept-design, Dead-Space-diegetic-inspiration, player-experience-clarity, functional-beauty-rendering
-  spatial_distortion: Screen-space-composition, diegetic-world-space-vs-screen-overlay, UI-element-hierarchy-layout, radial-vs-linear-menu-placement, safe-zone-margin-framing
-  atmosphere: Functional, player-centered, information-clarity, game-design-thinking, UX-problem-solving, elegant-minimalism
-  key_features: Diegetic-vs-non-diegetic-UI-comparison, wireframe-bounding-boxes, health-bar-mana-stamina-layouts, radial-menu-exploration, Dead-Space-health-on-spine-reference, screen-safe-zone, element-hierarchy-callouts
-  creative_brief: Health bars and ammo counters float in wireframe experiments, diegetic displays embedded in the character's own equipment versus menus hovering in screen-space. Radial wheels compete with linear bars in the clean language of UX sketching. This is the interface before it becomes invisible, where every pixel of player information earns its place through rigorous design argument.
+  aesthetic: Game HUD wireframe concept balancing diegetic and overlay paradigms
+  form_and_line: Clean bounding-box architecture with spacing, flow, and hierarchy guides
+  color_palette: Functional UI neutrals with semantic accent colors for state signaling
+  lighting_setup: Flat interface contrast with optional interaction glow cues
+  material_texture: Minimalist screen-surface treatment; precision-first wireframe presentation
+  render_quality: UX concept fidelity focused on clarity, density control, and usability
+  spatial_distortion: Safe-zone aware screen layout plus world-anchored UI option studies
+  atmosphere: Functional, restrained, information-priority design
+  key_features: Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints
+  creative_brief: >-
+    Prototype interface systems that communicate critical gameplay data with minimal cognitive load. Compare multiple layout paradigms under consistent hierarchy rules, ensuring legibility, interaction clarity, and screen-space economy across different play contexts.
 avoidRules:
   - finished
   - polished

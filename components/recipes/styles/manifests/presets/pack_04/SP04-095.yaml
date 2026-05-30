@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Environment-design-foliage-kit, tree-variant-shape-library, bush-silhouette-language-exploration, grass-clump-variety-sheet, flowering-plant-seasonal-variations, palm-fern-conifer-deciduous-shape-comparison, stylized-vs-naturalistic-foliage-spectrum, game-environment-vegetation-pass, plant-silhouette-readability-at-distance, Miyazaki-Ghibli-forest-spirit-inspiration
-  form_and_line: Organic-foliage-contour-variations, frond-unfurling-lines, pine-needle-cluster-contours, vine-tendril-curves, tree-branching-patterns, flower-petal-arrangement
-  color_palette: Photosynthesis-green-spectrum, spring-bright-to-autumn-rust, flower-bloom-color-accents, bark-brown-variety, chlorophyll-through-sunlight, shadow-green-cool-to-sun-green-warm
-  lighting_setup: Dappled-sun-through-canopy, rim-light-on-leaf-edges, subsurface-scattering-on-thin-leaves, shadow-cool-under-foliage, atmospheric-haze-at-forest-depth
-  material_texture: Leaf-surface-gloss-matte, bark-roughness, fern-frond-fractal, moss-velvet, pine-needle- cluster, petal-soft-ephemeral, vine-tendril-tension
-  render_quality: Foliage-design-kit aesthetic, environment-vegetation-reference, botanical-variety-beauty, game-level-art plant-language, nature-as-design-system
-  spatial_distortion: Tree-silhouette-library-grid, scale-from-bush-to-canopy, ground-cover-to-overstory-layering, atmospheric-depth-vegetation-fade
-  atmosphere: Lush, alive, botanical-wonder, forest-bathing calm, Miyazaki-nature-reverence, oxygen-rich-creativity, garden-planning-joy
-  key_features: Tree-shape-variant-library, bush-silhouette-comparison, grass-clump-variety-sheet, seasonal-color-variation, plant-silhouette-readability, Miyazaki-forest-inspiration, canopy-to-ground-cover-layering
-  creative_brief: Trees, bushes, ground cover, and vines array themselves in a botanical alphabet of shape language, each silhouette a different letter in the vocabulary of environment design. Stylized forms sit beside naturalistic studies, the spectrum from Ghibli enchantment to field-guide accuracy. This is the forest as design system, where every leaf cluster serves the readability of the game world.
+  aesthetic: Vegetation design kit with broad botanical shape-library coverage (Hayao Miyazaki-influenced natural poetry + production readability)
+  form_and_line: Organic contour families spanning canopy, shrub, vine, and groundcover archetypes
+  color_palette: Seasonal green-driven spectrum with bark/flower accent channels
+  lighting_setup: Dappled canopy light with subsurface hints and cool understory shadow
+  material_texture: Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss)
+  render_quality: Reference-oriented foliage exploration balancing stylization and realism
+  spatial_distortion: Layered ecosystem depth from foreground clusters to atmospheric canopy fade
+  atmosphere: Lush, breathable, ecosystem-rich
+  key_features: Silhouette readability sets, species variation matrices, season-state alternatives
+  creative_brief: >-
+    Build foliage as a modular visual vocabulary for environment design. Prioritize silhouette distinction at gameplay/read distance, while preserving material and seasonal variation so vegetation sets remain flexible across biome mood and art-direction targets, with Hayao Miyazaki-influenced warmth in shape rhythm and ecological mood.
 avoidRules:
   - bare
   - dead

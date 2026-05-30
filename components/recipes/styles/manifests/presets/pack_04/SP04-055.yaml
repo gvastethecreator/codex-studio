@@ -12,8 +12,8 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Cinematic moment
-  form_and_line: None
+  aesthetic: Narrative keyframe concept style centered on emotional turning-point composition and cinematic visual impact
+  form_and_line: Shape-led cinematic blocking with selective edge control, focal hierarchy, and frame-rhythm precision
   color_palette: Color graded, cinematic LUT, emotional-tone timing
   lighting_setup: Cinematic, framed intent, motivated light source
   material_texture: Painted
@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Story beat, narrative tension, turning-point weight
   key_features: 16:9 ratio, letterbox framing, cinematic composition
-  creative_brief: Light and composition converge on the single frame that defines the entire story, the moment where everything changes. Color temperature carries emotion, shadow direction carries threat, every visual element serving the narrative pivot. This is the story's heartbeat rendered as still image, the visual climax that earns every frame before and after.
+  creative_brief: >-
+    Keep this preset grounded in keyframe grammar: story-pivot composition,
+    color-temperature emotion mapping, and cinematic focal control should define
+    identity without hardcoding one plot beat.
 avoidRules:
   - sketchy
   - rough

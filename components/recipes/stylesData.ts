@@ -37,12 +37,24 @@ function normalizeStyleRuntimePreset(preset: StyleRuntimePreset): StyleRuntimePr
   };
 }
 
-const styleDefaultManifestFiles = import.meta.glob(
+type ImportMetaGlobFn = (
+  pattern: string,
+  options: { eager: true; import: 'default' },
+) => Record<string, unknown>;
+
+function safeImportMetaGlob(pattern: string): Record<string, unknown> {
+  const glob = (import.meta as ImportMeta & { glob?: ImportMetaGlobFn }).glob;
+  if (typeof glob === 'function') {
+    return glob(pattern, {
+      eager: true,
+      import: 'default',
+    });
+  }
+  return {};
+}
+
+const styleDefaultManifestFiles = safeImportMetaGlob(
   '../../assets/recipes/styles/defaults/manifest-pack_*.json',
-  {
-    eager: true,
-    import: 'default',
-  },
 );
 
 function isNonEmptyString(value: unknown): value is string {

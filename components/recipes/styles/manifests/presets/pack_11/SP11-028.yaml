@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Continuous line, one-stroke drawing illusion, tube-path negative-space, cursive-electric flow
   atmosphere: Buzzing, night, last-call quiet, rain-on-neon romance, urban-loneliness beauty
   key_features: Black backing, tube-mounting clips, transformer-glow warmth, glass-bend highlights, wall-wash halo
-  creative_brief: Bent glass hums with noble gas electricity, cursive light writing desire onto the night street in argon-purple and neon-red. The glow bleeds halo-soft into rain-slick pavement, doubling the message into a shimmering reflection below the buzzing tube. A storefront beacon calls to the lonely and the lost, electric poetry for the rain-on-neon hour when the city exhales.
+  creative_brief: >-
+    Preserve identity through neon-sign grammar: bent tube continuity,
+    gas-discharge halo bleed, dark-background contrast, and reflective spill
+    should define style without locking to one storefront scene.
 avoidRules:
   - daylight
   - paint

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Gravity layers, horizontal-strata formation, uphill-camel silhouette, canyon-wall illusion
   atmosphere: Patience, nature, desert-quiet, beach-memory, wandering-nomad, sun-baked stillness
   key_features: Layers, color-strata bands, glass-bottle curve, cork-seal top, pour-funnel marks
-  creative_brief: Grain settles upon grain in gravity-orchestrated stratigraphy, colored earth arranged by steady hand and held breath in glass. Each pour-line layer records an epoch compressed to millimeters, desert landscapes trapped in bottle-round transparency. One shake separates all order into chaos, returning the canyon walls and dune horizons to sand and tourist-stall memory.
+  creative_brief: >-
+    Keep this preset grounded in gravity-layered sand grammar: stratified pour
+    bands, granular edge behavior, and bottle-curvature distortion should
+    define style beyond any specific souvenir narrative.
 avoidRules:
   - water
   - paint

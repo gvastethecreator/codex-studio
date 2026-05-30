@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Costume-design-concept-board, fabric-swatch-pinned-to-corkboard, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images-alongside-new-designs, trim-and-notion-samples, dye-lot-variation-chips, fashion-studio- wall energy, character-costume-evolution-across-film-timeline, designer-notes-and-question-marks-in-margins
-  form_and_line: Fashion-croquis-figure-templates, silhouette-exploration-variations, swatch-square-grids, annotation-leader-lines-from-fabric-to-design, design-line-clean-contours
-  color_palette: Fabric-swatch-spectrum, historical-dye-reference, costume-character-color-ways, silk-satin-cotton-wool-leather colors, dye-lot-variation, trim-metallic-accents, button-and-hook-color-comparison
-  lighting_setup: Designer-studio-daylight, task-lamp-on-pinned-swatches, fabric-sheen-in-light, consistent-lighting-for-comparison
-  material_texture: Fabric-switch-square-textures, silk-sheen, wool-tweed, cotton-weave, leather-grain, lace-pattern-pinned, velvet-nap, corkboard-texture-behind
-  render_quality: Costume-design-board aesthetic, fashion-concept-rendering, character-wardrobe-exploration, historical-costume-research, film-production costume-art
-  spatial_distortion: Corkboard-pin-arrangement, swatch-grid-layout, silhouette-row-comparison, reference-image-cluster, annotation-space, design-evolution-progression
-  atmosphere: Creative, historical-research, character-through-clothing, costume-department-workshop, fitting-room-energy, fabric-store-inspiration
-  key_features: Fabric-swatch-squares-pinned, silhouette-variation-iterations, color-way-comparison-strips, historical-reference-images, corkboard-pin-texture, annotation-leader-lines, notion-sample-accents
-  creative_brief: Fabric swatches pin to corkboard beside historical references and contemporary sketches, the costume evolving across time periods and dye lots in a single visual conversation. Color-way strips run horizontally through the composition like a timeline of aesthetic decisions. This is character revealed through textile, where what the hero wears contains their entire biography.
+  aesthetic: Costume exploration board combining silhouette, fabric, and colorway studies
+  form_and_line: Clean croquis-based variants with annotation leaders and modular panel layout
+  color_palette: Multi-fabric palette families organized by role, era, and accent logic
+  lighting_setup: Neutral comparison lighting with controlled sheen read on textiles
+  material_texture: Swatch-forward surface representation (weave, nap, grain, luster)
+  render_quality: Concept-development board clarity over final-fashion polish
+  spatial_distortion: Grid/pinboard organization for side-by-side option evaluation
+  atmosphere: Iterative studio workflow, design-review readiness
+  key_features: Silhouette matrices, swatch clusters, trim notes, color strip comparisons
+  creative_brief: >-
+    Build wardrobe identity through systematic variation, not single-look finality. Pair silhouette options with textile behavior and palette alternatives so fit, readability, and character coding can be evaluated quickly across multiple production directions.
 avoidRules:
   - finished
   - one version

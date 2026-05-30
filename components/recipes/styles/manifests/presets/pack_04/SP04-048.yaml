@@ -12,16 +12,19 @@ tags:
   - illustration-and-graphic-novel
   - editorial-illustration
 visualDna:
-  aesthetic: Front/Side/Back view
-  form_and_line: Clean line
+  aesthetic: Production character-turnaround style focused on design legibility, neutral presentation, and pipeline handoff clarity
+  form_and_line: Clean contour hierarchy with construction-line discipline, silhouette consistency, and annotation-friendly edge clarity
   color_palette: Flat + Occlusion, neutral reference palette, material IDs
   lighting_setup: Neutral, studio-reference, shadow-accurate fidelity
   material_texture: Material callouts
   render_quality: Production ready, pipeline clarity, handoff precision
-  spatial_distortion: T-Pose
+  spatial_distortion: Neutral stance standardization with proportion-locked turnaround consistency across orthographic views
   atmosphere: Neutral, design, professional review, iterative feedback
   key_features: Scale, turnaround views, callout annotations
-  creative_brief: Front, side, and back views orbit the subject like moons around a planet of design decisions. Neutral lighting refuses to editorialize, every seam and proportion presented without flattery or distortion. This is the character as blueprint, naked of pose and personality, ready to be handed to the modeler.
+  creative_brief: >-
+    Keep this preset grounded in turnaround-sheet grammar: proportion locking,
+    neutral lighting, and annotation-ready orthographic consistency should define
+    identity beyond any specific character persona.
 avoidRules:
   - background
   - action

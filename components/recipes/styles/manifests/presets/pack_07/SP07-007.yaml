@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: 1920s glamour architecture, skyscraper age, jazz modernity, speakeasy elegance
-  form_and_line: Geometric patterns, sunbursts, stepped ziggurats, chevron flows, fountain motifs
-  color_palette: Gold, Black, Emerald Green, Chrome, Deep Navy, Ivory
-  lighting_setup: Dramatic uplighting, sconce glow, mirrored reflection, marquee brilliance, frosted panels
-  material_texture: Polished brass, marble, velvet, lacquered wood, etched glass, chrome inlay
-  render_quality: Great Gatsby jazz-age luxurious, ornate, Art Deco decadence
-  spatial_distortion: None
-  atmosphere: Expensive, party, jazz age, extravagant, champagne fizz, midnight glamour
-  key_features: Geometric ornamentation, sunburst mirrors, chevron floors, gold accents, tiered chandeliers
-  creative_brief: Gold catches champagne light while black mirrors hold secrets whispered at midnight. Geometry ascends in stepped celebration, every chevron and sunburst a toast to the audacity of ornament. The room dresses for a party that never ended, wearing its glamour like starlight worn as fabric.
+  aesthetic: Art Deco glamour style with geometric opulence, metallic luxury contrast, and high-society theatrical polish
+  form_and_line: Stepped ziggurat profiles, chevron rhythms, sunburst motifs, and symmetrical ornament hierarchies with strong axial control
+  color_palette: Black-gold dominance with emerald and deep navy enrichments, ivory balancing planes, and chrome highlight accents
+  lighting_setup: Dramatic uplight architecture, mirrored bounce play, sconce-and-chandelier glow layering, and marquee-like brilliance nodes
+  material_texture: Polished brass sheen, marble veining, velvet softness, lacquer depth, etched-glass detailing, and chrome inlay precision
+  render_quality: Luxe deco visualization with crisp ornamental readability and cinematic night-glamour finish
+  spatial_distortion: Structured symmetry with vertical accent pulls to reinforce grandeur and formal theatrical presence
+  atmosphere: Opulent, glamorous, dramatic, celebratory, nocturnal
+  key_features: Geometric ornament grammar, metallic-luxury contrast, stepped silhouette architecture, mirror-light amplification
+  creative_brief: >-
+    Preserve Art Deco identity through geometric ornament hierarchy and
+    metallic-material drama, keeping the style transferable beyond party or
+    speakeasy storytelling.
 avoidRules:
   - minimal
   - rustic

@@ -12,16 +12,19 @@ tags:
   - miscellaneous-and-fun
   - toys-and-miniatures
 visualDna:
-  aesthetic: Coraline uncanny button-eyed dollhouse fantasy, other-mother tension
+  aesthetic: Uncanny handcrafted button-eyed doll style with stitched-fantasy tension and eerie miniature-horror charm
   form_and_line: Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace
   color_palette: Muted, creepy, faded-indigo, storm-purple, bone-cream, dust-mote grey, spiderweb-silver
   lighting_setup: Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill
   material_texture: Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine
-  render_quality: Spooky, stop motion, Laika-studio magic, beautiful-nightmare, handcrafted-horror, dark-whimsy
+  render_quality: Spooky handcrafted stop-motion look emphasizing stitched unease, tactile doll materials, and dark-whimsy atmosphere
   spatial_distortion: Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints
   atmosphere: Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for
   key_features: Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces
-  creative_brief: Four-hole buttons replace the windows to the soul, threading a line between cute and deeply wrong, cross-stitch tension pulling burlap into a grimace. Needle-hole pupils stare without blinking from a face constructed of fabric and sawdust and careful-what-you-wish-for. Handcrafted horror presses its needle into the uncanny valley where dolls watch you back with button eyes that remember.
+  creative_brief: >-
+    Preserve identity through uncanny dollcraft grammar: button-eye geometry,
+    stitched-mouth tension, and burlap-thread material unease should carry the
+    preset without referencing specific films or studios.
 avoidRules:
   - human eyes
 assets:

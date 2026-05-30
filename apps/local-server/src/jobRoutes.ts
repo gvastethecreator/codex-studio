@@ -1,11 +1,12 @@
-import { Hono } from "hono";
+import { Hono } from 'hono';
 import type {
   CreateJobRequest,
   GenerationTaskSpec,
   Job,
   JobDetailResponse,
-} from "../../../packages/shared/src";
-import type { publishEvent } from "./events";
+} from '../../../packages/shared/src';
+import { validateGenerationTaskSpec } from '../../../packages/shared/src';
+import type { publishEvent } from './events';
 
 interface ProcessReferencesResult {
   augmentedPrompt: string;
@@ -28,22 +29,22 @@ interface JobRoutesDependencies {
   createJob: (input: {
     id: string;
     projectId: string;
-    kind: Job["kind"];
-    providerId: Job["providerId"];
+    kind: Job['kind'];
+    providerId: Job['providerId'];
     sourceSpec: GenerationTaskSpec | null;
     prompt: string;
-    execution: Job["execution"];
+    execution: Job['execution'];
   }) => Job;
   updateJobFinalPrompt: (jobId: string, finalPrompt: string) => Job | null;
   processReferences: (
     jobId: string,
     prompt: string,
-    references: CreateJobRequest["references"],
+    references: CreateJobRequest['references'],
     libraryDir: string,
   ) => Promise<ProcessReferencesResult>;
   hydrateSourceSpecAssetPaths: (
     sourceSpec: GenerationTaskSpec | null,
-    references: CreateJobRequest["references"],
+    references: CreateJobRequest['references'],
     persistedRefs: unknown[],
   ) => GenerationTaskSpec | null;
   readLibraryDir: () => string;
@@ -52,6 +53,39 @@ interface JobRoutesDependencies {
   publishEvent: typeof publishEvent;
   logJobCreated: (kind: string, jobId: string) => void;
   enqueueJob: (job: Job) => void;
+}
+
+function shouldRequireLocalRunIds(sourceSpec: GenerationTaskSpec | null) {
+  const metadata =
+    sourceSpec?.metadata &&
+    typeof sourceSpec.metadata === 'object' &&
+    !Array.isArray(sourceSpec.metadata)
+      ? sourceSpec.metadata
+      : {};
+  return Boolean(
+    sourceSpec &&
+    (typeof metadata.batchId === 'string' || typeof metadata.workspaceId === 'string'),
+  );
+}
+
+function createValidationErrorResponse(
+  sourceSpec: GenerationTaskSpec,
+  providerId: Job['providerId'],
+) {
+  const issues = validateGenerationTaskSpec(sourceSpec, {
+    requireLocalRunIds: shouldRequireLocalRunIds(sourceSpec),
+    requireHydratedAssets: true,
+    expectedProviderId: providerId,
+  });
+  if (issues.length === 0) return null;
+
+  return {
+    error: 'Invalid Generation Task Spec',
+    code: issues[0].code,
+    field: issues[0].field,
+    reason: issues[0].message,
+    issues,
+  };
 }
 
 export function createJobRoutes({
@@ -74,42 +108,42 @@ export function createJobRoutes({
 }: JobRoutesDependencies) {
   const routes = new Hono();
 
-  routes.get("/", (c) => c.json(listJobs()));
+  routes.get('/', (c) => c.json(listJobs()));
 
-  routes.get("/:id", async (c) => {
-    const detail = await getJobDetail(c.req.param("id"));
-    if (!detail) return c.json({ error: "Job not found" }, 404);
+  routes.get('/:id', async (c) => {
+    const detail = await getJobDetail(c.req.param('id'));
+    if (!detail) return c.json({ error: 'Job not found' }, 404);
     return c.json(detail);
   });
 
-  routes.post("/:id/cancel", (c) => {
-    const jobId = c.req.param("id");
+  routes.post('/:id/cancel', (c) => {
+    const jobId = c.req.param('id');
     const job = getJob(jobId);
-    if (!job) return c.json({ error: "Job not found" }, 404);
+    if (!job) return c.json({ error: 'Job not found' }, 404);
 
-    if (job.status === "completed" || job.status === "failed" || job.status === "cancelled") {
+    if (job.status === 'completed' || job.status === 'failed' || job.status === 'cancelled') {
       return c.json(job);
     }
 
     const updatedJob = cancelQueuedOrRunningJob(jobId);
     if (!updatedJob) {
-      return c.json({ error: "Job cannot be cancelled right now" }, 409);
+      return c.json({ error: 'Job cannot be cancelled right now' }, 409);
     }
 
     return c.json(updatedJob);
   });
 
-  routes.post("/", async (c) => {
+  routes.post('/', async (c) => {
     const body = (await c.req.json()) as CreateJobRequest;
     const projectId = body.projectId || ensureDefaultProjectId();
-    const prompt = (body.prompt || body.sourceSpec?.prompt || "").trim();
-    if (!prompt) return c.json({ error: "Prompt is required" }, 400);
+    const prompt = (body.prompt || body.sourceSpec?.prompt || '').trim();
+    if (!prompt) return c.json({ error: 'Prompt is required' }, 400);
     const jobId = createJobId();
 
     const providerId =
-      body.kind === "dry_run"
-        ? "dry_run"
-        : (body.providerId ?? body.sourceSpec?.providerId ?? "codex");
+      body.kind === 'dry_run'
+        ? 'dry_run'
+        : (body.providerId ?? body.sourceSpec?.providerId ?? 'codex');
 
     let sourceSpec: GenerationTaskSpec | null = body.sourceSpec
       ? {
@@ -148,6 +182,13 @@ export function createJobRoutes({
       throw error;
     }
 
+    if (sourceSpec) {
+      const validationError = createValidationErrorResponse(sourceSpec, providerId);
+      if (validationError) {
+        return c.json(validationError, 400);
+      }
+    }
+
     const job = createJob({
       id: jobId,
       projectId,
@@ -161,7 +202,7 @@ export function createJobRoutes({
     const queuedJob =
       finalPrompt === prompt ? job : (updateJobFinalPrompt(job.id, finalPrompt) ?? job);
 
-    publishEvent("job.created", queuedJob);
+    publishEvent('job.created', queuedJob);
     logJobCreated(queuedJob.kind, queuedJob.id);
     enqueueJob(queuedJob);
     return c.json(queuedJob, 201);

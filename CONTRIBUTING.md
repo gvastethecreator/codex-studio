@@ -1,14 +1,15 @@
-# Contributing to Codex Studio
+# Guía de contribución para Codex Studio
 
-Thank you for helping turn this repo into a more solid, easier-to-install open-source product.
+Gracias por ayudar a convertir este repo en un proyecto open-source más robusto, claro e instalable.
 
-## Before opening a PR
+## Ruta rápida para contribuir
 
-- Review the product context in `README.md` and `ROADMAP.md`.
-- If your change touches architecture or local sync, also check `docs/ARCHITECTURE.md` and `docs/SERVICES.md`.
-- If you are adding or modifying a recipe, read `docs/DEV_GUIDE.md`.
+1. Lee `README.md` y `ROADMAP.md`.
+2. Levanta el entorno local con `bun run studio:init` + `bun run dev`.
+3. Haz un cambio pequeño, validable y con contexto.
+4. Corre checks mínimos antes del PR.
 
-## Recommended local setup
+## Setup recomendado
 
 ```bash
 bun install
@@ -16,22 +17,20 @@ bun run studio:init
 bun run dev
 ```
 
-To run processes separately:
+Opcional por separado:
 
 ```bash
 bun run dev:server
 bun run dev:ui
 ```
 
-## Requirements for contributing
+## Requisitos
 
-- **Bun** available in PATH.
-- **Codex CLI** installed and locally authenticated.
-- Do not depend on API keys for the main product flow.
+- Bun disponible en PATH.
+- Codex CLI instalado y autenticado localmente.
+- No depender de API keys para el flujo principal.
 
-## Minimum checklist for code changes
-
-Before opening a PR, try to get these green:
+## Checklist antes de abrir PR
 
 ```bash
 bun run fmt:check
@@ -41,44 +40,37 @@ bun run test
 bun run build
 ```
 
-If your change touches onboarding, setup, or DX, update the corresponding documentation in the same PR.
+## Convenciones importantes
 
-## Important repo conventions
+- No commitear assets generados, logs, DBs SQLite ni contenido local de librería.
+- No commitear `.env.local` ni secretos reales.
+- Mantener experiencia local-first funcional sin `OPENAI_API_KEY`.
+- Documentar variables nuevas y scripts públicos en `README.md`.
+- Si cambias decisiones estructurales, deja rastro en `docs/adr/`.
 
-- Do not commit generated assets, logs, SQLite databases, or local library content.
-- Do not commit `.env.local`, `.env` with real data, or machine-specific paths.
-- Keep the UI local-first: the main experience must continue to work without `OPENAI_API_KEY`.
-- If you add a new environment variable or public script, document it in `README.md`.
-- If you change a relevant structural decision, leave evidence in `docs/adr/` or at least in the affected technical documentation.
-- Main quality tasks must continue writing logs to `logs/tooling/`.
-- New unit tests must be written using `vite-plus/test`.
+## Cómo reportar bugs útiles
 
-## How to file useful bug reports
+Incluye:
 
-When opening an issue or describing a problem, include:
+- SO
+- versión de Bun (`bun --version`)
+- versión de Codex (`codex --version`)
+- comando ejecutado
+- resultado esperado vs real
+- logs relevantes (`logs/tooling/` o logs de Studio Library)
 
-- operating system;
-- Bun version (`bun --version`);
-- Codex version (`codex --version`);
-- command used (`bun run dev`, `bun run dev:server`, etc.);
-- what you expected to happen;
-- what actually happened;
-- relevant logs or screenshots from the `logs/` folder inside your Studio Library (e.g. `%USERPROFILE%\AI-Studio-Library\logs` on Windows), `logs/tooling/`, or your equivalent directory.
+## Qué aportes tienen más impacto hoy
 
-## Especially valuable changes right now
+- onboarding y mensajes de error
+- compatibilidad Windows/macOS/Linux
+- trazabilidad de jobs y assets
+- documentación pública
+- claridad de copy/UX en la UI
 
-During this open-source preparation stage, PRs that improve the following are most welcome:
+## Estilo de contribución
 
-- onboarding and error messages;
-- Windows/macOS/Linux compatibility;
-- job and asset traceability;
-- public documentation;
-- UI copy, naming, and affordance cleanup.
+Preferimos cambios pequeños, explicables y fáciles de verificar. Menos heroicidad; más claridad.
 
-## Contribution style
+## Código de conducta
 
-Prefer small, well-explained, easy-to-validate changes. If you plan a large cleanup or major reorganization, open an issue or leave a focus note first to align direction. Less heroics, more clarity.
-
-## Code of Conduct
-
-This project follows the [Contributor Covenant Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you agree to uphold it.
+Este proyecto sigue [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md).

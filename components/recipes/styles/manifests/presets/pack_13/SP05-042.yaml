@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Stage-like spaces, surreal roses, elegant confrontation, symbolic choreography, spinning rose frames, sword-duel silhouettes, student-council grandeur, floating stairs
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
-  atmosphere: Surreal, dramatic, theatrical, symbolic
-  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
-  creative_brief: A rose spins in midair and the world transforms into a stage where duels are declarations of the soul fought in silhouette against impossible architecture. Floating staircases ascend toward towers that hold every question worth asking — surrealism as the truest mirror of emotional truth, sword-clash echoing through the theater of becoming.
+  aesthetic: Symbolist theatrical-shojo style with surreal stage architecture, ritual confrontation, and allegorical romantic tension
+  form_and_line: Elegant duel silhouette control, rose-motif framing arcs, long-limb choreographic posing, and delicate dramatic contour precision
+  color_palette: Rose-jewel spectrum with pearl neutrals, velvet shadow violets, and selective gilded symbolic accents
+  lighting_setup: Stage-like spotlight halos, soft theatrical haze, romantic rim glow, and symbolic contrast emphasis on central figures
+  material_texture: Velvet-and-silk softness, rose-petal particulate overlays, painted stage-depth gradients, and luminous cel patina
+  render_quality: High-poetry shojo rendering with surreal compositional elegance and emotionally symbolic frame design
+  spatial_distortion: Dream-stage perspective lifts with impossible architectural layering and allegorical depth choreography
+  atmosphere: Theatrical, surreal, charged, introspective, ceremonial
+  key_features: Symbolic duel framing, rose iconography grammar, stage-space surrealism, ritual emotional choreography
+  creative_brief: >-
+    Define this preset through allegorical stage language: symbolic rose motifs,
+    ceremonial confrontation poses, and surreal architecture should carry the
+    emotional logic beyond any singular duel scenario.
 avoidRules:
   - realistic
   - 3d render

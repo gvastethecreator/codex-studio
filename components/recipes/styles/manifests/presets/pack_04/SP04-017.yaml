@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Classic watercolor animal storybook, Beatrix Potter style, English countryside gentleness, waistcoat whimsy
-  form_and_line: Pencil sketch
-  color_palette: Soft wash, watercolor bloom, botanical pastel
-  lighting_setup: Gentle, diffuse daylight, paper-white reserve
-  material_texture: Paper grain
-  render_quality: Classic, gentle, watercolor delicacy, cottage comfort
-  spatial_distortion: Cute animals
-  atmosphere: Whimsical, soft, English garden gentleness, storybook warmth
-  key_features: White background fade, wet-on-dry detail, soft edge
-  creative_brief: Watercolor blooms across paper grain like the first breath of an English morning, edges softening into the white reserve of possibility. Animals wear waistcoats not as costume but as birthright, their gentle eyes holding the wisdom of garden walls and hedgerow secrets. This is childhood remembered as water and pigment, fragile and luminous.
+  aesthetic: Classic watercolor storybook illustration (Beatrix Potter influence)
+  form_and_line: Light pencil underdrawing with delicate ink-free contour suggestion
+  color_palette: Botanical pastels, warm neutrals, and transparent wash layering
+  lighting_setup: Soft diffuse daylight with preserved paper-white highlights
+  material_texture: Cold-press paper grain, bloom edges, and wet-on-dry detail contrast
+  render_quality: Gentle handcrafted finish with nursery-book readability
+  spatial_distortion: Mildly anthropomorphic and soft-proportioned character stylization
+  atmosphere: Tender, pastoral, comforting
+  key_features: White-space breathing room, feathered wash edges, subtle detail accents
+  creative_brief: >-
+    Maintain a Beatrix Potter-style balance of observational nature detail and gentle anthropomorphic charm. Use transparent watercolor behavior, soft edge transitions, and paper-white breathing space to keep imagery warm, calm, and timelessly storybook.
 avoidRules:
   - digital
   - sharp
