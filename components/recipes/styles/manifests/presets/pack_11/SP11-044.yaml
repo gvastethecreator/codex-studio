@@ -12,16 +12,17 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Andy Warhol style, Factory-silkscreen, soup-can-icon, celebrity-grid, mass-media shrine
+  aesthetic: Pop Art silkscreen language (Andy Warhol influence)
   form_and_line: Halftone dots, Ben-Day-dot grids, thick-outline contours, screen-registration edges
   color_palette: High contrast neon, Marilyn-blonde, tomato-soup red, electric-chair yellow, mickey-mouse black, offset-CMYK
   lighting_setup: Flat, silkscreen-exposure, photo-stencil light, pop-shop fluorescence, studio-flash
   material_texture: Screenprint, ink-push-through canvas, squeegee-drag texture, canvas-tooth underlay, offset-print halftone
-  render_quality: Mass media, bold, repetition-grid, 15-minutes-of-fame, Factory-production, commodity-critique
+  render_quality: High-contrast mass-media print rendering with serial repetition logic
   spatial_distortion: Repetition, color-variation grid, multiple-exposure overlap, registration-offset, print-misalignment
   atmosphere: Ironic, bold, Campbell's-soup nostalgia, celebrity-worship, mechanical-reproduction
   key_features: Halftone, Ben-Day dots, silkscreen-registration marks, color-channel separation, ink-bleed edge, repetition-grid layout
-  creative_brief: Ben-Day dots pixelate celebrity into commodity, fifteen minutes of fame arranged in a four-color registration grid across the canvas. The soup can repeats itself in serial rows, mass production becoming meditation, consumption becoming icon, offset-CMYK becoming gospel. Silkscreen registration slips just slightly at the edges, the mechanical imperfection that proves the human hand behind mechanical reproduction, ink-push-through texture on toothy canvas.
+  creative_brief: >-
+    Use Warhol-informed serial repetition, halftone structure, and channel-shifted silkscreen color blocks to create iconic pop impact. Keep imagery reproducible, high-contrast, and mechanically printed in character.
 avoidRules:
   - subtle
 assets:

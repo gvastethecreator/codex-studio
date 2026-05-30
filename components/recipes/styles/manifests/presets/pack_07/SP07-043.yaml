@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Raked gravel, karesansui poetry, dry-landscape meditation, stone-island sea, temple stillness
-  form_and_line: Rake lines (circles), ripple patterns, island-composition, horizontal-plane geometry, moss-mound accents
+  aesthetic: Karesansui minimalism, dry-landscape abstraction, contemplative stone-field composition
+  form_and_line: Intentional rake-wave geometry, void-dominant horizontal planes, asymmetrical stone clusters, controlled negative space
   color_palette: Grey, White, Moss, Granite Black, Silver sand, Lichen Green
   lighting_setup: Shadows in grooves, low-angle raking light, temple-eave shade, early-morning crisp
   material_texture: Gravel, stone, crisp sand, weathered granite, velvet moss, crushed quartz
-  render_quality: Meditative, dry, contemplative-minimal, mind-clearing, sand-grain perfection
+  render_quality: Hyper-clean minimal rendering, granular surface precision, disciplined compositional silence
   spatial_distortion: None
-  atmosphere: Calm, focus, emptied-mind, stone-presence, raked-order, timeless sitting
-  key_features: Rocks, raked gravel, ripple patterns, moss islands, boundary wall, no water
-  creative_brief: Gravel raked into concentric ripples, stone islands floating on a sea of sand that has never known water. Each groove a moment of attention crystallized, the rake a brush that paints with absence and pattern. The garden asks nothing but that you sit, and in sitting, empty into its stillness.
+  atmosphere: Focused stillness, restrained ritual order, quiet temporal suspension
+  key_features: Raked ripple fields, anchored stone triads, selective moss masses, hard boundary containment, water-absence emphasis
+  creative_brief: >-
+    Define este preset por economía extrema de medios: pocos elementos, máxima
+    intención espacial. El gesto de rastrillado y la posición de la piedra deben
+    funcionar como lenguaje compositivo principal, no como decoración zen genérica.
 avoidRules:
   - plants
   - water

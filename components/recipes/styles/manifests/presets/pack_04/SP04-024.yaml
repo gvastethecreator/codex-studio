@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Plasticine model
-  form_and_line: None
-  color_palette: Clay colors, matte polymer spectrum, earthy plasticity
-  lighting_setup: Studio, key-fill softbox, stop-motion continuity
-  material_texture: Fingerprints
-  render_quality: Aardman tactile stop-motion, cheese-loving charm
-  spatial_distortion: Chunky
-  atmosphere: Funny, physical, handmade comedy, frame-by-frame delight
-  key_features: Thumbprints, clay-sculpt surface, wireframe armature hints
-  creative_brief: Thumbprints press into plasticine flesh like the maker's signature, each depression a frame of stop-motion labor. Chunky forms carry the weight of physical existence, fingers having shaped every contour. This is the handmade universe where imperfection is the proof of love, and the space between frames hums with effort.
+  aesthetic: Plasticine stop-motion aesthetic (Aardman-inspired tactile charm)
+  form_and_line: Sculpted volume with minimal drawn contour reliance
+  color_palette: Matte clay chroma set with earthy and playful saturation balance
+  lighting_setup: Controlled studio key-fill to maintain frame-consistent form read
+  material_texture: Fingerprint impressions, sculpt-tool seams, soft clay compression
+  render_quality: Hand-built stop-motion look with physical model believability
+  spatial_distortion: Chunky silhouettes and compressed proportion stylization
+  atmosphere: Whimsical, handcrafted, comedic warmth
+  key_features: Tactile surface dents, clay seam lines, armature-informed posing hints
+  creative_brief: >-
+    Preserve the physicality of hand-sculpted clay in every form. Keep Aardman-like tactile imperfection—fingerprints, seam traces, and chunky silhouettes—while ensuring the style can apply to varied subjects without hard-coding specific pose beats or locations.
 avoidRules:
   - 2d
   - drawn

@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Sesame seeds, cheese-pull stretch, condensation water-beads, grill-mark cross-hatch, lettuce-edge frill, patty-juice sheen',
       creative_brief:
-        'The sesame seeds were placed individually by a stylist with tweezers and unlimited patience, each seed a tiny monument to food-photography artifice. Cheese drapes in calculated cascade while condensation beads form at exactly the right angle to catch the studio backlight through the bun dome. This is not food but its Platonic ideal, engineered to trigger craving centers through the alchemy of steam and golden browning and the lie that the burger always looks this good.',
+        'Construct hyper-stylized fast-food hero shots with idealized layering, condensation control, and high-key crave lighting. Focus on commercial appetizing cues and dynamic ingredient staging without tying to a specific brand or scene.',
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Garnish, sauce-swirl swoosh, tweezered-microgreen, edible-flower accent, tuile-crisp, reduction-drizzle, sea-salt-flake',
       creative_brief:
-        'A tweezered microgreen lands on the sauce swoosh with the precision of a watchmaker placing a jewel in a movement of edible art. Negative space on the plate becomes as important as the food itself, absence defining presence in the geometric theater of fine dining. The meal is a three-hour narrative told through reduction-drizzle and sea-salt-flake, every course a paragraph in a story written by hands that spent decades learning to listen to ingredients.',
+        'Design fine-dining plating as geometric composition: controlled negative space, precise garnish placement, and sauce architecture. Emphasize texture contrast and premium finish cues while keeping dish subjects open and reusable.',
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pepperoni, cheese-stretch strand, crust-blister, grease-pool, oregano-fleck, pepperoni-cup, box-corner-grease-stain, garlic-knot companion',
       creative_brief:
-        'The mozzarella string stretches from slice to mouth in an elastic bridge of dairy physics, catching pizzeria light along its glistening arc of perfect melt. Pepperoni cups hold tiny pools of orange oil while the undercarriage reveals leopard-spotted char from a properly fired deck oven and a thousand degrees of stone-deck heat. This is not a photograph of food but a portrait of craving itself, grease and glory rendered on a paper plate under delivery-box steam.',
+        'Emphasize pizza craving cues through elastic cheese pull, blistered crust texture, and glossy topping oils. Maintain commercial appetite intensity with dynamic melt behavior and high warmth contrast, independent of brand context.',
     },
   },
   {
@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin, chocolate-shavings curl',
       creative_brief:
-        'Tempered couverture cascades in ribbons of liquid obsidian, folding over itself in thick glossy waves that catch the soft-box reflection like a dark mirror. The ganache pool holds its surface tension with the viscosity of a dessert that understands luxury is measured in mouthfeel. Viscosity becomes art when chocolate moves at the speed of honey down a perfectly chilled marble slope, every ripple a poem written in cocoa butter and patience.',
+        'Render chocolate as a viscosity-driven material: ribbon folds, glossy highlights, and dense fluid thickness. Emphasize premium confection texture and controlled flow behavior without hardcoding a specific dessert scene.',
     },
   },
   {
@@ -137,7 +137,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Panda rice ball, nori-cutout face, sausage-octopus, tamagoyaki-roll, cherry-tomato, grass-separator, apple-rabbit ears, bento-pick flag',
       creative_brief:
-        'Nori cutouts transform rice balls into panda faces, seaweed smiles floating above tamago-yellow rectangles in a compartment of organized love. The octopus sausage poses with tentacle legs spread wide, a whimsical protein sculpture designed to delight before it nourishes. A mother woke before dawn to pack edible joy into a lacquered box, each ingredient placed like a character in a tiny delicious story told at lunchtime to a child who will remember this forever.',
+        'Build kyaraben compositions around compartment balance, character-shaped ingredients, and precise decorative food cuts. Keep the style playful and organized, with reusable cute-food motifs suitable for many lunchbox concepts.',
     },
   },
   {
@@ -164,7 +164,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Lollipops, gumdrop-path, frosting-icicle drip, candy-cane arch, chocolate-waterfall, sprinkle-confetti',
       creative_brief:
-        'Gumdrop pathways wind toward gingerbread palaces under skies made of cotton candy and spun-sugar possibility, every surface edible and eager. Lollipop trees cast sugar-crystal shadows while chocolate rivers flow with the viscosity of childhood dreams made physical. A kingdom built entirely from confectionery excess where hunger transforms into wonder with every candy-cane step toward the everlasting-gobstopper horizon.',
+        'Build a confectionery fantasy system with edible architecture, candy-pattern materials, and high-sugar color harmony. Keep forms whimsical and modular so the style can map onto varied environments without a fixed storyline.',
     },
   },
   {
@@ -173,21 +173,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Food And Commercial Fun',
     negativePrompt: 'flat, 2d, sketch',
     style: {
-      aesthetic: 'Glossy 3D icon, emoji communication, playful glyph, digital hieroglyph',
+      aesthetic: 'Glossy 3D emoji/icon language for playful digital communication',
       form_and_line: 'Round, smooth, pill-shaped, sphere-based, soft extrusion',
       color_palette: 'Bright Yellow, Blue, Red, vivid primaries, gradient-rich, punchy saturation',
       lighting_setup: 'Studio softbox, rim light, gradient sky reflection, glossy hotspot',
       material_texture:
         'Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell',
-      render_quality:
-        'Apple platform emoji, UI design, glossy smile, message-bubble charm, keycap precision',
+      render_quality: 'Platform-agnostic polished icon render with toy-like gloss',
       spatial_distortion:
         'Sphere based, anthropomorphic objects, simplified features, chunky proportions',
       atmosphere: 'Happy, expressive, digital, instant communication, friendly warmth, pixel joy',
       key_features:
         'Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette',
       creative_brief:
-        'Glossy spheres of digital emotion float in a gradient world of uncomplicated joy, each squircle catching a perfect white rim-catchlight. Gradient highlights curve across the candy-shell surface, transforming simple shapes into feelings rendered in three dimensions. A universal glyph language sculpted in reflective plastic and soft-shadow warmth.',
+        'Model icons as simple rounded volumes with clean specular response and high readability. Keep expression and silhouette instantly legible at small sizes, using gradient highlights and soft shadows to reinforce friendly depth.',
     },
   },
   {
@@ -196,7 +195,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Food And Commercial Fun',
     negativePrompt: 'dark, scary',
     style: {
-      aesthetic: 'Sanrio ultra-cute mascot illustration, Hello Kitty innocence, kawaii overload',
+      aesthetic: 'Kawaii pastel mascot illustration language with high-cute stylization',
       form_and_line:
         'Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette',
       color_palette:
@@ -205,8 +204,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Bright, flat, ring-light softness, studio-bounce fill, high-key-whites, shadowless-cheer',
       material_texture:
         'Smooth, fluffy, marshmallow-soft, fondant-gloss, sherbet-grain, cotton-ball fuzz',
-      render_quality:
-        'Cute, happy, soft, sticker-pack joy, kawaii-tsunami, smile-inducing overload',
+      render_quality: 'Soft polished mascot finish with sticker-friendly clarity',
       spatial_distortion:
         'Big eyes, sparkle-pupil, oversized-head, tiny-body, chibi-extremity, bean-proportion',
       atmosphere:
@@ -214,7 +212,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Sparkles, ribbon-bows, heart-motifs, blush-stickers, star-twinkle accents, animal-ear headbands',
       creative_brief:
-        'Sparkle-pupil eyes occupy half of every face in a dimension where cuteness is the only physical law and gravity bends toward joy. Cotton-candy skies rain marshmallow drops onto creatures with heads too big for their tiny bean-proportioned bodies. Aggressive sweetness radiates from every pastel surface, weaponizing innocence into an overwhelming sensory embrace that leaves no room for anything but smile.',
+        'Prioritize rounded silhouettes, pastel harmony, and expression-first facial design. Keep proportions chibi-extreme and emotionally positive while avoiding scene-locked motifs so the style adapts across many character concepts.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

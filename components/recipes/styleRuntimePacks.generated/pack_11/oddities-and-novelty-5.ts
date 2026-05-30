@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Steam, flour-dusting, scoring-blade marks, crust-crack fissure, golden-crumb honeycomb, parchment-paper, banneton-ring',
       creative_brief:
-        "Steam rises from the scored crust carrying the aroma of yeast and transformation across the early-morning street, the baguette's ear curling upward where the lame cut deep enough. Honeycomb crumb structure reveals itself at the tear point, air pockets that were once invisible gases now memorialized in golden-brown architecture. The bakery window glows like a lantern of comfort, crust-sheen catching the incandescent warmth of bread that finished baking forty minutes before dawn.",
+        'Highlight artisan bread cues through crust scoring, crumb honeycomb structure, and warm bakehouse color temperature. Keep the visual language focused on texture-rich freshness and handcrafted baking detail across varied pastry forms.',
     },
   },
   {
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Juice drops, seed-suspension, peel-spiral, pulp-splash, knife-blade reflection, fruit-half cross-section, mid-air-droplet constellation',
       creative_brief:
-        'A knife passes through citrus mid-flight, the moment frozen by strobe-light speed before gravity can reassert its ancient claim. Juice droplets suspend in parabolic arcs, each sphere a tiny lens refracting the orchard back at itself in liquid-sculpture precision. The fruit surrenders its interior geometry in a radial burst of pulp and seed and liquid sunlight, frozen-in-flight energy that celebrates the split second between whole and consumed.',
+        'Compose high-speed fruit impact imagery with suspended droplets, radial pulp motion, and crisp cut geometry. Preserve kinetic freshness and strobe-frozen energy while keeping subjects and arrangements broadly interchangeable.',
     },
   },
   {
@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rice grains, shari-pearl definition, nori-wrap band, wasabi-dot, pickled-ginger mound, soy-sauce dish',
       creative_brief:
-        "The knife falls once, a single stroke separating flesh from flesh with the conviction born of a decade's practice at dawn. Shari pearls hold their form under nigiri pressure, each grain of rice individually placed by hands that learned patience at the Tsukiji auction. Omakase is a conversation conducted in silence where the itamae speaks through the arrangement of salmon-orange and hamachi-amber on black lacquer, each piece a haiku of the sea.",
+        'Emphasize precision-cut seafood geometry, shari grain structure, and disciplined arrangement rhythm typical of high-end sushi presentation. Preserve freshness cues, lacquer contrast, and minimalist balance for reusable omakase-style direction.',
     },
   },
   {
@@ -90,22 +90,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'curved, smooth, realistic',
     style: {
-      aesthetic:
-        'Folded cardstock model, low-poly sculpture, kirigami construction, geometric craft',
+      aesthetic: 'Low-poly papercraft construction with folded-cardstock geometry',
       form_and_line: 'Sharp paper folds, triangular facets, crease lines, angular edges',
       color_palette: 'Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish',
       lighting_setup:
         'Soft shadows, directional key light, facet-defining contrast, gentle ambient',
       material_texture:
         'Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel',
-      render_quality:
-        'Pepakura papercraft geometric, fold-and-glue devotion, low-poly aesthetic, hand-assembled precision',
+      render_quality: 'Hand-assembled geometric craft finish with precise fold logic',
       spatial_distortion:
         'Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition',
       atmosphere: 'Delicate, handmade, clean, zen precision, patient craft, geometric calm',
       key_features: 'Visible fold lines, tab-and-slot joins, score marks, polygon faces',
       creative_brief:
-        'Sharp folds carve the world into triangular certainties, each cardstock facet catching light at a different angle. Crease lines score the geometry of patience into flat paper, transforming two dimensions into three through precise origami logic. A fragile cathedral of folded craft where every edge tells the story of its making.',
+        'Build forms through visible fold architecture: facets, score lines, and tab joins should define silhouette and volume. Keep surfaces matte and planar so the style reads as handcrafted papercraft rather than smooth CG modeling.',
     },
   },
   {
@@ -140,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'opaque, dull, painting',
     style: {
-      aesthetic: 'Church window art, cathedral glass, sacred luminosity, divine illumination',
+      aesthetic: 'Stained-glass window art with lead-came segmentation',
       form_and_line:
         'Thick black lead came, segmented contours, curvilinear divisions, interconnected cells',
       color_palette:
@@ -149,15 +147,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama',
       material_texture:
         'Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina',
-      render_quality:
-        'Religious, ornate, colorful, gothic-arch beauty, painted-glass storytelling, rose-window awe',
+      render_quality: 'Ornamental luminous-glass rendering with structural lead-line clarity',
       spatial_distortion:
         'Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity',
       atmosphere: 'Spiritual, beautiful, light, reverent calm, sacred awe, transcendent glow',
       key_features:
         'Black outlines mandatory, lead-came shadows, solder joints, textured glass surface',
       creative_brief:
-        'Light dies and is reborn in passage through colored glass, fractured into jewel-toned revelation between black lead lines. Bubbles and ripples in the antique surface catch the sun at glancing angles, transforming opacity into sacred luminosity. A window becomes a gateway when sunlight performs the daily miracle of turning silica into stained transcendence.',
+        'Build imagery as interconnected glass cells framed by dark lead lines. Emphasize backlit translucency, jewel-tone contrast, and subtle glass imperfections so illumination feels material and architectural.',
     },
   },
   {
@@ -191,21 +188,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'paper, ink, digital',
     style: {
-      aesthetic: 'Drawing on black slate board, sidewalk art, vintage classroom, chalk-dust magic',
+      aesthetic: 'Chalkboard drawing language on dark slate surfaces',
       form_and_line:
         'Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections',
       color_palette:
         'White chalk on Black board, soft pastel chalks, muted color spectrum, dusty desaturation',
       lighting_setup: 'Flat, even overhead fluorescents, no glare, diffused ambient',
       material_texture: 'Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth',
-      render_quality:
-        'Cafe menu, school, rustic, ephemeral artistry, wiped-clean impermanence, sidewalk festival',
+      render_quality: 'Ephemeral hand-drawn chalk finish with visible correction history',
       spatial_distortion:
         'Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing',
       atmosphere: 'Casual, temporary, rustic, creative, fleeting, nostalgic melancholy',
       key_features: 'Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending',
       creative_brief:
-        "Dust particles float in afternoon classroom light as white lines carve stories onto black slate, each stroke already haunted by the eraser's ghost. Variable chalk thickness traces the hand's tremor, the broken stroke, the re-drawn correction. Ephemeral beauty drawn in calcium carbonate, more honest because it knows it will not last.",
+        'Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts, smudge transitions, and imperfect lettering rhythm to emphasize temporary handmade expression.',
     },
   },
   {
@@ -266,23 +262,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'realistic, photo, 3d',
     style: {
-      aesthetic:
-        'Traditional American tattoo design, sailor flash art, street-shop heritage, anchor-and-swallow iconography',
+      aesthetic: 'Traditional old-school tattoo flash design language',
       form_and_line: 'Bold black outlines, heavy contour weight, ribbony banners, coiled snakes',
       color_palette:
         'Red, Green, Yellow, Black shading, limited triad palette, spit-shaded gradients',
       lighting_setup: 'Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow',
       material_texture:
         'Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges',
-      render_quality:
-        'Sailor Jerry bold-traditional flash, classic, nautical soul, iron-wrought toughness',
+      render_quality: 'Bold flash-sheet rendering with high durability/readability logic',
       spatial_distortion:
         '2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout',
       atmosphere: 'Tough, classic, bold, salt-air romance, port-town grit, permanent devotion',
       key_features:
-        'Pepper shading (dots), rose-and-dagger motifs, banner text, swallow silhouettes',
+        'Pepper shading dots, banner typography, emblematic motif blocks, thick contour lock',
       creative_brief:
-        "Bold black outlines cage the color within, heavy enough to hold against time and skin and salt-air memory. Pepper shading stipples across the rose-and-dagger motifs while swallow silhouettes cut toward invisible horizons. The sailor's soul rendered in three colors and a thousand stories of distant ports, inked permanence on yellowed flash.",
+        'Design each motif as a standalone flash emblem: thick outlines, limited palette fills, and compact symbolic forms. Keep contrast and shape clarity high so marks remain legible at both sheet and tattoo scales.',
     },
   },
   {
@@ -372,8 +366,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'flat, matte',
     style: {
-      aesthetic:
-        '2000s Tech UI, XP-era optimism, glossy-future, start-up-aesthetic, skeuomorphic-harmony',
+      aesthetic: 'Frutiger Aero Y2K-era glossy UI optimism and skeuomorphic futurism',
       form_and_line:
         'Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles',
       color_palette:
@@ -382,8 +375,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth',
       material_texture:
         'Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens',
-      render_quality:
-        'Optimistic, corporate tech, Y2K-fresh, start-up-utopia, human-friendly-machine, skeuomorphic-beauty',
+      render_quality: 'Polished early-2000s interface rendering with optimistic consumer-tech tone',
       spatial_distortion:
         'Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation',
       atmosphere:
@@ -391,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection',
       creative_brief:
-        'Aqua-gel buttons float above brushed-metal surfaces in a world still optimistic about broadband and a future rendered in glossy skeuomorphic wonder. Lens flares streak across grass-green progress bars climbing toward completion with start-up-utopia confidence. The desktop was a garden where every click promised a brighter digital tomorrow, window-reflection streak catching the dawn of the Y2K-fresh era.',
+        'Build a Frutiger Aero system from glossy rounded controls, aqua translucency, and bright eco-tech accents. Maintain optimistic Y2K interface energy with modular UI motifs that can adapt across multiple subjects.',
     },
   },
   {
@@ -427,7 +419,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'hope, light',
     style: {
-      aesthetic: 'Warhammer 40k cathedral-industrial war fantasy, grimdark future, eternal crusade',
+      aesthetic: 'Grimdark cathedral-industrial war fantasy with oppressive futurism',
       form_and_line:
         'Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles',
       color_palette:
@@ -436,15 +428,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Dark, harsh, gothic-arch crypt-light, muzzle-flash bursts, warp-storm flicker, candle-shrine pools',
       material_texture:
         'Grime, scars, ceramite-ceramic, battle-damage pitting, purity-seal wax, worn-leather, adamantium-rivet',
-      render_quality:
-        'Hopeless, war, eternal, forge-world industry, ten-thousand-year crusade, dark-millennium spectacle',
+      render_quality: 'Dense militarized gothic rendering with maximal wear and severity',
       spatial_distortion:
         'Skulls everywhere, gothic-overscaling, cathedral-proportions, dreadnought-mass, flying-buttress tanks',
       atmosphere: 'Depressing, epic, only-war, dying-emperor, last-stand-courage, faith-as-armor',
       key_features:
-        'Skulls, aquila-imperialis, purity-seals, servo-skulls, gothic-cathedral spires, chainsword, bolter-shell casings',
+        'Skull iconography, purity seals, cathedral spires, battle-scarred armor plates, relic-tech ornament',
       creative_brief:
-        'Cathedral-spine warships drift through a void where hope goes to die under ten thousand years of crusade and ceramite silence. Skulls adorn every surface because decoration in the dark millennium must remind the living what awaits them at the end of the only war. Purity seals flutter in the furnace wind of a galaxy that has forgotten what peace looks like, faith worn as armor against the dying of the light.',
+        'Prioritize monumental gothic-industrial massing, ritualized insignia, and heavily weathered war materials. Keep the tone oppressive and fatalistic through scale, grime, and relic-tech ornament without anchoring to a specific franchise scene.',
     },
   },
   {
@@ -472,7 +463,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail',
       creative_brief:
-        "A thousand hexagonal lenses stare outward from the compound dome, each ommatidium catching its own fragment of the world in structural-color iridescence. The bristle between lenses catches macro flash in a constellation of catch-light hex arrays across the chitin curvature. The arthropod's gaze is a mosaic of tiny perspectives, a panoramic helmet built by evolution's own engineering department, alien and familiar in the same focus-stacked breath.",
+        'Focus on compound-eye architecture: ommatidia lattice, structural iridescence, and macro catchlight arrays. Keep insect-scale detail highly resolved and scientifically coherent without tying to one species narrative.',
     },
   },
   {
@@ -499,7 +490,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern, conjunctiva-vessels, lacrimal-caruncle',
       creative_brief:
-        "Radial striae stretch from pupil to limbal ring like the rays of a sun made of muscle fiber, the iris a personal nebula in amber-hazel or steel-grey or the blue of deep water. The cornea catches a ring-light catch-light, a tiny reflection that proves this is a living eye and not a painted portrait. To photograph the iris at macro scale is to map the geography of a soul's visible edge, the frontier where interior meets exterior in fibrous color, window-to-soul rendered at life-size magnitude.",
+        'Render eye macro portraits with strong iris-striae definition, limbal contrast, and controlled corneal catchlights. Maintain anatomical fidelity and intimate scale while avoiding portrait-specific narrative constraints.',
     },
   },
   {
@@ -526,7 +517,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network, peeling-edge curls, bubbled-paint texture',
       creative_brief:
-        'Iron oxide blooms across the paint surface in continents of orange corrosion, pushing up blisters that will eventually crack and fall away into the entropy of forgotten corners. The flaking edge catches raking side-light, revealing layer after layer of pigment and primer and the metal beneath, each stratum a chapter in the slow-motion story of abandonment. Entropy works slowly here, painting its own wabi-sabi masterpiece over the one that came before, every rust stain a sundial.',
+        'Emphasize corrosion aesthetics through oxide blooms, paint blistering, and layered substrate exposure under grazing light. Keep entropy, patina, and material aging as reusable style anchors across industrial surfaces.',
     },
   },
   {
@@ -554,7 +545,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Chips, bond-pads, via-arrays, standard-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial',
       creative_brief:
-        "Copper traces route across green solder mask in Manhattan geometry, turning at precise forty-five-degree angles toward bond-pad destinations in the silicon city. Gold wire arcs bridge the die to its package, hair-thin filaments carrying the electricity of computation across micron gaps. Standard-cell rows stretch outward like a megalopolis designed by algorithms and etched by light, Moore's law rendered visible in the interconnect highways of the integrated-circuit landscape.",
+        'Treat circuit surfaces as engineered micro-landscapes: trace routing logic, via arrays, and metallic layer hierarchy should stay explicit. Emphasize clean-room precision and component-scale structure without overfitting to one chip architecture.',
     },
   },
   {
@@ -581,7 +572,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge',
       creative_brief:
-        'Warp crosses weft in the ancient rhythm of the loom, each thread intersection a small knot of civilization repeated ten thousand times per yard. Individual fibers twist into plies, plies into yarn, yarn into the architecture of clothing and shelter and sails that crossed oceans. The weave reveals itself only to those who lean close enough to see the textile for the forest of threads it truly is, fiber-halo fuzz catching raking light.',
+        'Build textile macro studies from visible warp-weft architecture, ply twist detail, and raking-light fiber halo. Keep tactile weave logic central so the style applies across fabrics, garments, and material studies.',
     },
   },
   {
@@ -608,7 +599,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather, calamus-base',
       creative_brief:
-        'Barbules hook into neighboring barbules with the zipper precision of velcro designed by evolution and refined across sixty million years of flight. The rachis spine runs through the center of the vane like a keel through water, organizing chaos into aerodynamic surface, each barb contributing to a structure so perfect it taught aviation that flight was already solved. Keratin iridescence shifts from green to purple at the tilt of the feather, structural color born from surface physics rather than pigment.',
+        'Highlight feather micro-architecture through rachis structure, barb-barbule interlock, and angle-dependent iridescence. Preserve avian aerodynamic logic and keratin texture detail in a broadly reusable macro style.',
     },
   },
   {
@@ -636,7 +627,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift, dandelion-stem',
       creative_brief:
-        'The pappus parachute catches wind and lifts the cypsela seed from its stem with the aerodynamic elegance of a million years of trial and error distilled into radial fluff. Backlit filaments glow translucent-silver against a sky-blue bokeh, each bristle a prayer for favorable current and distance from the parent plant. A child closes their eyes and blows, launching a thousand tiny spacecraft toward destinations chosen by breeze and hope, make-a-wish physics rendered at macro scale.',
+        'Frame dandelion dispersal as lightweight aerodynamics: radial pappus geometry, translucent backlight, and suspended drift motion. Preserve botanical delicacy and airborne fragility without narrative scene lock.',
     },
   },
   {
@@ -663,7 +654,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pores, cell-windows, strut-network, scrub-layer, water-bead, soap-bubble residue, cellulose-fiber, abrasive-grit surface',
       creative_brief:
-        "Open-cell foam architecture reveals itself as a cathedral of interconnected void spaces, struts spanning pores in a load-bearing lattice where air occupies more volume than solid. Water beads sit in surface-tension pockets, suspended between absorption and release in the absorbent-micro landscape of the kitchen sponge. A universe of holes within holes, the sponge's entire purpose defined by what it can contain and what it excludes, porous geometry at the scale where cleaning becomes architecture.",
+        'Render porous sponge material through open-cell networks, strut lattices, and moisture-retention microphysics. Keep absorbency-driven structure and tactile cleanliness cues reusable across foam-like subjects.',
     },
   },
   {
@@ -689,7 +680,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack surface',
       creative_brief:
-        'Twill weave runs diagonal across the laminate in a repeating pattern of strength and shadow, each tow a bundle of thousands of carbon filaments thinner than spider silk. The anisotropic surface catches reflection along the fiber direction, gloss following the same path that stress will follow under load, aerospace engineering rendered as textile art. Black and silver woven into a composite that laughs at steel while weighing almost nothing, Formula-1 engineering at the macro scale of the individual tow.',
+        'Emphasize carbon composite language through twill repeat, tow boundaries, and anisotropic reflection aligned with fiber direction. Keep the style high-tech and structural, transferable across automotive, aerospace, and product surfaces.',
     },
   },
   {
@@ -715,7 +706,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Smoke shape, ink-tendril, mushroom-cap, vortex-ring, dye-gradient, backlit-glow, turbulence-texture',
       creative_brief:
-        'Black plumes mushroom through clear water in slow-motion blossoms, tendrils curling outward into delicate vortices that visualize the invisible turbulence of fluid dynamics. The ink dances in three dimensions for a few seconds of dispersion before diffusion wins and the sculpture fades to grey then nothing. Fluid dynamics becomes abstract expressionism in the cloud tank, a dye-dance captured one frame before entropy dissolves the mushroom-cap masterpiece back into uniform water.',
+        'Emphasize fluid-dynamics choreography with plume morphology, tendril vortices, and diffusion gradients suspended in clear liquid volume. Keep the abstraction kinetic and physically grounded, independent of one tank setup.',
     },
   },
   {
@@ -740,7 +731,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction scratch',
       creative_brief:
-        'Angular grit particles stand at attention on the resin-coated backing, each sharp facet a tooth waiting to bite into wood or metal with controlled violence. Grazing light catches the abrasive points in a constellation of bright specks across the brown field, particle-size distribution revealed through shadow and sparkle. Destruction as precision: every scratch left behind is a record of material removed measured in microns, the grit-grade a language of roughness spoken by every workshop surface.',
+        'Build abrasive-surface studies from angular grit morphology, resin bonding topology, and directional scratch evidence. Keep workshop material realism and roughness-grade readability as primary style drivers.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -13,15 +13,19 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: Victorian mansion elegance, demonic contract refinement, silverware precision, black-tailcoat poise, aristocratic morbidity, candlelit service turned occult theater
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
+  form_and_line: Aristocratic silhouette precision, lace-tailcoat contour elegance, decorative interior line filigree, controlled digital inking
+  color_palette: Ebony-black tailoring, wine and burgundy shadows, candle-amber highlights, silver service accents, desaturated gothic neutrals
+  lighting_setup: Candle-biased practical pools, manor interior falloff, polished silver specular flashes, theatrical low-key gradients
+  material_texture: Velvet drape depth, lacquered wood sheen, polished silverware edges, crisp fabric creasing, smooth digital compositing
+  render_quality: Refined 2000s gothic-anime finish with high costume readability, luxe interior detailing, and restrained digital glow
+  spatial_distortion: Chamber-stage composition with vertical elegance, servant-master distance coding, and ceremonial gesture framing
   atmosphere: Elegant, sinister, poised, decadent
-  key_features: Tailcoat silhouettes, gothic mansion interiors, silver serving props, contract symbolism, candlelit dramatic poses
-  creative_brief: Candlelight catches the silver tray before it catches the secret, and a tailcoat holds its crease sharper than any blade in the room. Elegance is the slow poison served at tea time, each gesture a clause in a contract signed in candle wax. The mansion keeps secrets the way lace keeps shadows — delicately, and with precision.
+  key_features: Tailcoat-and-lace silhouette grammar, candlelit gothic interiors, ritual service props, contract-era visual symbolism
+  creative_brief: >-
+    Preserve Black Butler through ceremonial elegance, gothic domestic
+    opulence, and razor-clean costume language. The style should read as poised
+    aristocratic menace—precise, composed, and darkly theatrical—without
+    reducing it to generic Victorian horror.
 avoidRules:
   - realistic
   - 3d render

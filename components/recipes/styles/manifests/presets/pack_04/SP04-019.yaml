@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Child's drawing
-  form_and_line: Waxy, messy
-  color_palette: Vibrant wax, crayon spectrum, primary finger-paint
-  lighting_setup: Flat, paper-white bounce, no synthetic shadow
-  material_texture: Wax buildup
-  render_quality: Naive, cute, hand-drawn authenticity, childhood sincerity
-  spatial_distortion: Stick figures
-  atmosphere: Innocent, fun, refrigerator-gallery pride, joyful scribble
-  key_features: Paper grain, waxy stroke, uneven fill
-  creative_brief: Wax builds up on paper tooth with the conviction only a child's hand can muster, colors applied with more enthusiasm than precision. Stick figures stand proud against white space, their uneven limbs monuments to sincerity over skill. This is the masterpiece before anyone learned what a masterpiece should look like.
+  aesthetic: Childlike crayon illustration with naive expressive immediacy
+  form_and_line: Waxy pressure-variable strokes with uneven contour control
+  color_palette: Bright primary/secondary crayon set with spontaneous overlap
+  lighting_setup: Flat paper-based lighting; value implied by stroke density
+  material_texture: Heavy wax buildup and visible paper tooth drag
+  render_quality: Deliberately unpolished, sincere, hand-made mark quality
+  spatial_distortion: Simplified anatomy and playful proportion exaggeration
+  atmosphere: Joyful, innocent, spontaneous
+  key_features: Uneven fill, directional scribble, layered wax bloom
+  creative_brief: >-
+    Emphasize authentic child-drawing energy through bold wax marks, imperfect fill boundaries, and simplified forms. Keep the style emotionally direct and flexible across subjects without locking it to any specific pose or setting cliché.
 avoidRules:
   - professional
   - smooth

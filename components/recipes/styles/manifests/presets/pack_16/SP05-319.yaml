@@ -13,15 +13,19 @@ tags:
   - 70s-and-80s-retro-anime
 visualDna:
   aesthetic: Carrier-deck mecha operations mixed with pop-idol fate, city-inside-ship scale, missiles and melodies sharing one dramatic retro-future frame
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
+  form_and_line: Dual-register composition between military mecha rigor and idol-performance staging, clean retro contour discipline
+  color_palette: Carrier-deck greys with pop-idol pastel accents, missile-warning reds, starlight blues, and warm showlight highlights
+  lighting_setup: Hangar practical beams mixed with stage-spot accents, cockpit glows, and contrast-driven celestial backlight
+  material_texture: Painted hull plating, runway markings, concert-stage surfaces, analog cel edge shimmer, mild film grain
+  render_quality: High-drama 80s mecha-opera frame quality balancing tactical readability with melodramatic pop spectacle
+  spatial_distortion: Macro-fleet scale juxtaposed with intimate performer framing, layered depth between civic interior and battle exterior
   atmosphere: Romantic, strategic, pop-infused, starry
-  key_features: Carrier-deck staging, idol symbolism, city-inside-ship backdrops, missile salvos, retro-future military glam
-  creative_brief: A pop melody drifts across a carrier deck where love and missile trajectories share the same radar screen. Inside the ship, a city dreams in miniature while outside, vacuum waits like an unwritten verse. Fate here is both a combat formation and a chorus, sung in harmony with destruction.
+  key_features: Carrier-deck mecha grammar, idol-performance motifs, city-inside-ship scale cues, military-pop contrast language
+  creative_brief: >-
+    Keep Macross specific by preserving its military-pop duality:
+    operational mecha staging fused with emotional performance iconography.
+    The style should hold both strategic scale and romantic theatricality in
+    the same visual system.
 avoidRules:
   - realistic
   - 3d render

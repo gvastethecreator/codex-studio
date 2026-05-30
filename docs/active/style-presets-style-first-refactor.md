@@ -288,6 +288,156 @@ Vigésima segunda ola manual completada (10 presets adicionales):
 
 Total manual refactorizado hasta ahora: **160 presets**.
 
+Vigésima tercera ola manual completada (10 presets adicionales):
+
+- `components/recipes/styles/manifests/presets/pack_04/SP04-018.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-019.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-020.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-022.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-023.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-024.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-025.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-026.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-027.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-028.yaml`
+
+Total manual refactorizado hasta ahora: **170 presets**.
+
+Vigésima cuarta ola manual completada (10 presets adicionales):
+
+- `components/recipes/styles/manifests/presets/pack_04/SP04-029.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-030.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-031.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-032.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-034.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-035.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-036.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-037.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-038.yaml`
+- `components/recipes/styles/manifests/presets/pack_04/SP04-040.yaml`
+
+Total manual refactorizado hasta ahora: **180 presets**.
+
+Vigésima quinta ola manual completada (15 presets adicionales):
+
+- `components/recipes/styles/manifests/presets/pack_11/SP11-004.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-005.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-006.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-007.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-008.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-009.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-010.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-038.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-039.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-040.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-041.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-042.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-043.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-044.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-045.yaml`
+
+Total manual refactorizado hasta ahora: **195 presets**.
+
+Vigésima sexta ola manual completada (40 presets adicionales):
+
+- `components/recipes/styles/manifests/presets/pack_11/SP11-041.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-042.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-043.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-044.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-045.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-046.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-047.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-048.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-049.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-050.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-051.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-052.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-053.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-054.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-055.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-056.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-057.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-058.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-059.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-060.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-061.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-062.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-063.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-064.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-065.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-066.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-067.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-068.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-069.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-070.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-071.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-072.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-073.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-074.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-075.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-076.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-077.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-078.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-079.yaml`
+- `components/recipes/styles/manifests/presets/pack_11/SP11-080.yaml`
+
+Total manual refactorizado hasta ahora: **235 presets**.
+
+Vigésima séptima ola manual completada (20 presets adicionales, revisión profunda):
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-028.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-029.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-030.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-031.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-032.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-033.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-034.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-035.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-036.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-037.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-038.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-039.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-040.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-041.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-042.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-043.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-044.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-045.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-046.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-047.yaml`
+
+Total manual refactorizado hasta ahora: **255 presets**.
+
+Vigésima octava ola manual completada (15 presets adicionales, corrección por auditoría):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-021.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-030.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-039.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-048.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-057.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-066.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-075.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-001.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-002.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-145.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-146.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-317.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-318.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-319.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-320.yaml`
+
+Total manual refactorizado hasta ahora: **270 presets**.
+
+Vigésima novena ola manual completada (5 presets adicionales, corrección por auditoría):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-076.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-077.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-078.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-079.yaml`
+- `components/recipes/styles/manifests/presets/pack_12/SP12-080.yaml`
+
+Total manual refactorizado hasta ahora: **275 presets**.
+
 ## Guía de reescritura aplicada
 
 ### Do ✅

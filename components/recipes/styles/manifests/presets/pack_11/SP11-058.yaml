@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Blobs, amoeboid-shapes, pseudopod-extension, organelle-displacement, nuclear-eccentricity
   atmosphere: Life, science, lab-bench quiet, cellular-metabolism, inner-space awe, microbiological wonder
   key_features: Nucleus, nucleolus-dot, mitochondria-squiggle, vacuole-clear, cell-membrane edge, staining-artifact, scale-micron-bar
-  creative_brief: Hematoxylin stains the nucleus purple while eosin floods the cytoplasm in pink counterpoint, the classic histological duet performed on a glass slide. Mitochondria squiggle through the cellular interior like tiny organs attending to invisible business at the scale where chemistry becomes life. Zoom far enough inward and the body dissolves into a galaxy of living architecture where every cell hums with autonomous purpose, a universe you carry inside and never see.
+  creative_brief: >-
+    Render cellular life as structured histology with stain-coded compartments, membrane boundaries, and organelle clustering. Preserve microscope-slide readability and educational clarity while remaining adaptable across cell types.
 avoidRules:
   - animal
 assets:

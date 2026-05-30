@@ -13,15 +13,19 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: Aerial surf mecha, teenage longing, counterculture energy, sunset cloud seas, board-riding robots, bright emotional rebellion, sky-soaked romance and motion
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
+  form_and_line: Fluid airborne contouring, aerodynamic mecha-curve language, youth-driven character silhouettes, clean digital inking
+  color_palette: Sky-heavy cyans, sunset magentas, bright surf-accent neons, and optimistic high-chroma atmospheric transitions
+  lighting_setup: Golden-hour sky backlight, polished digital gradients, cloud-reflected fill, horizon rim streaks
+  material_texture: Semi-gloss board surfaces, smooth digital-cel overlays, airy cloud-volume softness, light filmic noise
+  render_quality: Mid-2000s high-polish anime compositing with motion-rich aerial readability and emotionally bright tonal control
+  spatial_distortion: Arc-based flight perspective, sweeping diagonal motion lanes, gravity-light framing with open sky depth
   atmosphere: Airy, romantic, youthful, free
-  key_features: Sky-surf silhouettes, cloud-ocean backdrops, youthful pilot fashion, board-riding motion lines, glowing horizon staging
-  creative_brief: The sky is an ocean and the surfboard is a robot with a heart, carving clouds like waves while youth lifts off carrying more hope than fuel. Every sunset is a runway and love is the only destination on the map, coordinates written in contrails. Freedom is not escape — it is the board beneath your feet and the horizon answering back.
+  key_features: Air-surf mecha choreography, cloud-ocean staging, youth-culture fashion coding, luminous horizon kinetics
+  creative_brief: >-
+    Keep Eureka Seven’s identity in the fusion of romantic youth energy and
+    aerial mecha flow: open skies, surf-like motion grammar, and emotionally
+    saturated color transitions. The style should privilege lift, momentum,
+    and longing over ground-bound combat staging.
 avoidRules:
   - realistic
   - 3d render

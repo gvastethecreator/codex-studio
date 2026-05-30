@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Winter siege under auroras at a remote bastion.
-  subject_treatment: Elite defenders and assault machines.
-  color_and_tone: Aurora green, ice blue, and war red.
-  lighting_and_shadow: Celestial glow over compacted snow.
-  texture_and_material: Carved ice, stone, and iron.
-  camera_and_composition: Tiered walls with offensive approach routes.
-  atmosphere_and_mood: Desperate resistance and pride.
-  rendering_and_quality: High-level tactical warfare scene.
+  aesthetic: Polar-fortress siege epic blending glacial militarism, celestial sky phenomena, and entrenched defensive architecture.
+  subject_treatment: Coordinated defender archetypes, breach-specialist assault units, and readable class-role separation under pressure.
+  color_and_tone: Aurora greens, steel-cold cyans, storm-slate neutrals, and disciplined war-signal reds for combat legibility.
+  lighting_and_shadow: Boreal sky wash, low-angle frozen reflections, blast-lit choke points, and long snowfield shadow geometry.
+  texture_and_material: Wind-cut ice slabs, frost-sealed masonry, impact-scarred ironworks, and powdered snow accumulation strata.
+  camera_and_composition: Multi-tier bastion overview with attack vectors, siege-lane hierarchy, and depth-staged defensive fallback zones.
+  atmosphere_and_mood: Heroic attrition, tactical urgency, and last-stand resolve under hostile climate severity.
+  rendering_and_quality: Premium warfront key-art fidelity with high unit readability, environment strategy cues, and cinematic weather integration.
 avoidRules:
   - watermark
   - text

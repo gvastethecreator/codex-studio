@@ -12,16 +12,17 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Drawing on black slate board, sidewalk art, vintage classroom, chalk-dust magic
+  aesthetic: Chalkboard drawing language on dark slate surfaces
   form_and_line: Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections
   color_palette: White chalk on Black board, soft pastel chalks, muted color spectrum, dusty desaturation
   lighting_setup: Flat, even overhead fluorescents, no glare, diffused ambient
   material_texture: Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth
-  render_quality: Cafe menu, school, rustic, ephemeral artistry, wiped-clean impermanence, sidewalk festival
+  render_quality: Ephemeral hand-drawn chalk finish with visible correction history
   spatial_distortion: Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing
   atmosphere: Casual, temporary, rustic, creative, fleeting, nostalgic melancholy
   key_features: Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending
-  creative_brief: Dust particles float in afternoon classroom light as white lines carve stories onto black slate, each stroke already haunted by the eraser's ghost. Variable chalk thickness traces the hand's tremor, the broken stroke, the re-drawn correction. Ephemeral beauty drawn in calcium carbonate, more honest because it knows it will not last.
+  creative_brief: >-
+    Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts, smudge transitions, and imperfect lettering rhythm to emphasize temporary handmade expression.
 avoidRules:
   - paper
   - ink

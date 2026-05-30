@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: ISS orbital station module, zero-G clutter, Velcro walls, Earth through cupola
-  form_and_line: Wires, panels, equipment rack geometry, circular hatch rings, padded tunnel tubes
+  aesthetic: Orbital habitat realism, utilitarian aerospace interior, operational zero-G workstation density
+  form_and_line: Modular rack matrices, radial hatch apertures, tether paths, cable bundles, tool-retention zones
   color_palette: White, Velcro Blue, Equipment Beige, Soft-glow Green LED, Black panel accents
   lighting_setup: Harsh LED, panel-integrated task light, cupola-filtered Earth light, dim night-mode amber
-  material_texture: Padding, metal, velcro tape, cable bundles, control panel plastic, foil insulation
-  render_quality: Scientific, cramped, orbital-realism, functional density, engineering clutter, cosmic frontier
+  material_texture: Nomex-like soft panels, brushed alloy fasteners, hook-loop retention strips, MLI foil reflections, molded control plastics
+  render_quality: Mission-grade technical fidelity, dense but readable instrumentation, believable spacecraft wear patterns
   spatial_distortion: Zero-G floating
-  atmosphere: Claustrophobic, tech, weightless, frontier-isolation, science-hum, fragile habitation
-  key_features: Handrails, equipment racks, round hatches, observation cupola, floating cables, soft walls
-  creative_brief: Velcro strips hold notebooks mid-air, zero gravity transforming every surface into ceiling and floor simultaneously. Cables float like sleeping seaweed, blue LED constellations mapping the thin membrane between human warmth and void. Earth glows through the cupola, a blue reminder of everything left below.
+  atmosphere: Contained, procedural, sleep-deprived precision, fragile livability in hostile vacuum context
+  key_features: Handrail networks, laptop tether points, labeled rack bays, circular pressure hatches, floating utility pouches
+  creative_brief: >-
+    Mantén una lógica de ingeniería operativa: cada superficie debe sugerir función
+    (sujeción, acceso, control o mantenimiento). La estética se apoya en densidad
+    instrumental, ergonomía en microgravedad y jerarquía visual de interfaces,
+    evitando clichés sci-fi limpios o teatrales.
 avoidRules:
   - wood
   - brick

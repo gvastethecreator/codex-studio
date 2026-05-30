@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly
   atmosphere: Exciting, hungry, late-night craving, drive-thru anticipation, guilty-pleasure
   key_features: Sesame seeds, cheese-pull stretch, condensation water-beads, grill-mark cross-hatch, lettuce-edge frill, patty-juice sheen
-  creative_brief: The sesame seeds were placed individually by a stylist with tweezers and unlimited patience, each seed a tiny monument to food-photography artifice. Cheese drapes in calculated cascade while condensation beads form at exactly the right angle to catch the studio backlight through the bun dome. This is not food but its Platonic ideal, engineered to trigger craving centers through the alchemy of steam and golden browning and the lie that the burger always looks this good.
+  creative_brief: >-
+    Construct hyper-stylized fast-food hero shots with idealized layering, condensation control, and high-key crave lighting. Focus on commercial appetizing cues and dynamic ingredient staging without tying to a specific brand or scene.
 avoidRules:
   - real
   - soggy

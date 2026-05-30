@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Everything is edible, lollipop-tree scale, gingerbread-house proportions, chocolate-river flow, candy-cane columns
   atmosphere: Happy, hungry, sugar-plum dreams, everlasting-gobstopper hope, candy-shop awe
   key_features: Lollipops, gumdrop-path, frosting-icicle drip, candy-cane arch, chocolate-waterfall, sprinkle-confetti
-  creative_brief: Gumdrop pathways wind toward gingerbread palaces under skies made of cotton candy and spun-sugar possibility, every surface edible and eager. Lollipop trees cast sugar-crystal shadows while chocolate rivers flow with the viscosity of childhood dreams made physical. A kingdom built entirely from confectionery excess where hunger transforms into wonder with every candy-cane step toward the everlasting-gobstopper horizon.
+  creative_brief: >-
+    Build a confectionery fantasy system with edible architecture, candy-pattern materials, and high-sugar color harmony. Keep forms whimsical and modular so the style can map onto varied environments without a fixed storyline.
 avoidRules:
   - healthy
   - savory

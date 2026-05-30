@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal
   atmosphere: Winter, beauty, falling-snow silence, crystal-uniqueness, frozen-moment, microscopic-wonder
   key_features: Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow, melt-edge rounding
-  creative_brief: 'Six arms extend from a hexagonal center with the fractal precision of a crystal that knows exactly where it is going, dendrite branches reaching toward cold air. Dark-field illumination catches the stellar arms in a sapphire glow, transforming ice into celestial geometry one degree below freezing. Wilson Bentley''s devotion made visible: each snowflake is a letter written in frozen water, addressed to anyone patient enough to read the cold before it melts into oblivion.'
+  creative_brief: >-
+    Highlight six-fold crystal symmetry, dendritic branching, and dark-field sparkle in fragile snowflake macro compositions. Keep the treatment scientifically grounded in ice morphology while flexible across crystal variants.
 avoidRules:
   - melted
 assets:

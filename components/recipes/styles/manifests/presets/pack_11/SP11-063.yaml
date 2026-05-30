@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau
   atmosphere: Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay
   key_features: Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network, peeling-edge curls, bubbled-paint texture
-  creative_brief: Iron oxide blooms across the paint surface in continents of orange corrosion, pushing up blisters that will eventually crack and fall away into the entropy of forgotten corners. The flaking edge catches raking side-light, revealing layer after layer of pigment and primer and the metal beneath, each stratum a chapter in the slow-motion story of abandonment. Entropy works slowly here, painting its own wabi-sabi masterpiece over the one that came before, every rust stain a sundial.
+  creative_brief: >-
+    Emphasize corrosion aesthetics through oxide blooms, paint blistering, and layered substrate exposure under grazing light. Keep entropy, patina, and material aging as reusable style anchors across industrial surfaces.
 avoidRules:
   - clean
 assets:

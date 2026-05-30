@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: City-like, macro-block placement, standard-cell grid, routing-congestion channel, floor-plan region
   atmosphere: Digital, logic, clean-room silence, wafer-fab precision, clock-tree rhythm, silicon-dream
   key_features: Chips, bond-pads, via-arrays, standard-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial
-  creative_brief: Copper traces route across green solder mask in Manhattan geometry, turning at precise forty-five-degree angles toward bond-pad destinations in the silicon city. Gold wire arcs bridge the die to its package, hair-thin filaments carrying the electricity of computation across micron gaps. Standard-cell rows stretch outward like a megalopolis designed by algorithms and etched by light, Moore's law rendered visible in the interconnect highways of the integrated-circuit landscape.
+  creative_brief: >-
+    Treat circuit surfaces as engineered micro-landscapes: trace routing logic, via arrays, and metallic layer hierarchy should stay explicit. Emphasize clean-room precision and component-scale structure without overfitting to one chip architecture.
 avoidRules:
   - organic
 assets:

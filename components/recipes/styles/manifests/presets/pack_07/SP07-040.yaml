@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: House in canopy, child's secret kingdom, elevated hideaway, forest perch, arboreal adventure
-  form_and_line: Wood planks, branch-cradled platforms, ladder diagonals, suspension-bridge curves, wrap-around deck
+  aesthetic: Arboreal micro-architecture, elevated timber refuge typology, canopy-integrated hideaway design
+  form_and_line: Stilt/branch hybrid supports, staggered deck plates, rope/cable diagonals, trunk-avoidance cutouts
   color_palette: Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss
   lighting_setup: Dappled sun, leaf-filtered shimmer, lantern glow, fairy-string twinkle, camping-lamp amber
-  material_texture: Bark, wood, rope ladder, canvas, salvaged plank, tree-sap
-  render_quality: Childhood, secret, summer-adventure, backyard-magic, freedom fantasy
+  material_texture: Weathered softwood grain, rope fiber fray, bark abrasion contacts, galvanized hardware oxidation, canvas sun-fade
+  render_quality: Hand-built authenticity, lightweight structural plausibility, crafted outdoor living detail
   spatial_distortion: Crooked
-  atmosphere: Adventure, high, above-ground, secret-hideout, wind-in-leaves, kid-dream independence
-  key_features: Ladder, tree trunk through floor, rope swing, lanterns, wooden deck, lookout platform
-  creative_brief: Wood planks embrace the living trunk, architecture deferring to botany with each board bent around bark. Rope bridges sway between platforms like conversations between branches, the whole structure a negotiation with gravity and growth. The treehouse holds childhood aloft, a secret kept above the reach of adult ground.
+  atmosphere: Elevated intimacy, playful autonomy, wind-exposed shelter, exploratory calm
+  key_features: Trunk-through-floor apertures, rope access points, lookout edges, lantern-scale warm pools, improvised joinery details
+  creative_brief: >-
+    Construye una gramática de refugio elevado donde la estructura se adapta al
+    árbol en vez de dominarlo. El estilo debe combinar improvisación artesanal,
+    seguridad funcional y atmósfera de descubrimiento sin caer en iconografía infantil
+    obligatoria.
 avoidRules:
   - ground level
 assets:

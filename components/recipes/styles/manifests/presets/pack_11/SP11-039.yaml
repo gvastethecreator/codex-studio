@@ -12,16 +12,17 @@ tags:
   - miscellaneous-and-fun
   - science-and-bio-curiosities
 visualDna:
-  aesthetic: Dracula's castle, vampire-aristocrat, gothic-romance, coffin-elegance, Thornfield-horror
+  aesthetic: Gothic horror romanticism with decayed aristocratic architecture
   form_and_line: Spiky architecture, flying-buttress silhouettes, tombstone-contours, wrought-iron flourishes
   color_palette: Black, Grey, Deep Red, midnight-blue, blood-wine, silver-moon, funeral-lilac, bone-ivory
   lighting_setup: Moonlight, fog, candelabra-flicker, stained-glass-crypt, lightning-flash drama, torch-sconce warmth
   material_texture: Stone, velvet, fog, crumbling-masonry, coffin-wood, wax-drip candle, cold-marble tomb, cobweb-silk
-  render_quality: Scary, romantic, Hammer-horror, Bram-Stoker atmosphere, veil-between-worlds, beautiful-damned
+  render_quality: Atmospheric gothic rendering blending elegance and menace
   spatial_distortion: Shadows, elongated-fingers, stretched-castle towers, impossible-corridor depth, cape-swallowing darkness
   atmosphere: Fear, elegance, crypt-whisper, eternal-twilight, forbidden-love, moonlit-solitude
-  key_features: Bats, candelabra, wrought-iron gates, crumbling-gargoyle, moon-through-broken-window, velvet-draped-coffin
-  creative_brief: The image materializes as if Dracula's castle, vampire-aristocrat. Depth and surface negotiate meaning, each layer adding dimension to the whole. Every element serves the whole, coherence emerging from careful orchestration.
+  key_features: Wrought-iron motifs, candelabra light pools, stone decay, dramatic moonlit silhouettes
+  creative_brief: >-
+    Build gothic tension through vertical architecture, candle/moon contrast, and ornamental decay. Keep the mood timeless and reusable, focusing on atmosphere systems rather than fixed character or location references.
 avoidRules:
   - sunlight
   - happy

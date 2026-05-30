@@ -25,7 +25,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap bruise',
       creative_brief:
-        'Ice cubes stack in crystalline architecture, refracting amber negroni light into caustic patterns that dance across the bar surface. Condensation beads slowly on the chilled coupe, each droplet a tiny lens containing an inverted miniature of the room it cools. Liquid-ruby clarity promises the specific warmth of a Friday evening, the citrus-peel twist releasing its oil across the surface like a benediction before the first sip.',
+        'Frame cocktails as liquid-physics portraits: refraction through glass, condensation microdetail, and garnish architecture. Keep mood luxurious and tactile while making the style portable across drink types and bar contexts.',
     },
   },
   {
@@ -214,19 +214,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Toys And Miniatures',
     negativePrompt: 'smooth, plastic, hard',
     style: {
-      aesthetic: 'Crocheted yarn doll, amigurumi plush, handmade companion, woolen charm',
+      aesthetic: 'Amigurumi crochet plush language with handmade yarn charm',
       form_and_line:
         'Spiral stitch pattern, V-stitch rows, rounded increases, circular construction',
       color_palette: 'Soft yarn colors, heathered pastels, cream-spectrum, gentle jewel tones',
       lighting_setup: 'Soft, fuzzy, diffused window light, warm bounce, cozy shadows',
       material_texture: 'Yarn fibers, polyester stuffing, looped stitch surface, plump fill',
-      render_quality:
-        'Handmade, cute, soft, stitch-by-stitch care, artisanal warmth, hug-ready appeal',
+      render_quality: 'Soft handcrafted finish emphasizing stitch structure and tactile warmth',
       spatial_distortion: 'Round, chibi proportions, oversized head, tiny limbs, compact body',
       atmosphere: 'Cozy, sweet, tactile, nurturing, heartfelt, handmade love',
       key_features: 'Stitch texture, gauge-consistent rows, yarn halo, safety-eye shine',
       creative_brief:
-        'Yarn becomes companion through the rhythmic dance of hook and loop, stitch building upon stitch in spiral construction. Safety-eye shine catches the window light as the amigurumi creature waits with hug-ready proportions and wordless comfort. Roundness born from tension, softness earned through hours of patient crochet devotion.',
+        'Prioritize readable stitch topology, yarn fiber behavior, and stuffed volume balance. Keep shapes compact and endearing, with crochet construction details driving form identity across any character or object.',
     },
   },
   {
@@ -328,7 +327,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight, chromatic-aberration fringing, surface-tension curvature',
       creative_brief:
-        'The droplet becomes a lens, surface tension holding the sphere in a balance between gravity and molecular cohesion, a temporary crystal of liquid physics. Inside the drop, an entire world waits compressed into refractive suspension, inverted and miniature, a universe that fits on a blade of grass. The bokeh-background dissolves into chromatic softness while the contact-line marks the boundary where water meets leaf in perfect capillarity.',
+        'Compose liquid-lens macro imagery around spherical droplets, inverted refractive interiors, and precise contact-line behavior. Prioritize optical clarity and tension-driven curvature without fixing the style to one surface or setting.',
     },
   },
   {
@@ -356,7 +355,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp',
       creative_brief:
-        'Interference colors swirl across the soap membrane, magenta sliding into cyan into gold as film thickness varies by nanometers, gravity draining the film toward the bottom pole. The sphere hangs in borrowed air, its surface a map of convection currents and micelle-layer physics and the approaching black spot that signals imminent return to nothing. One more second of existence, fragility wearing its most beautiful dress, thin-film poetry floating on glycerin and childhood breath.',
+        'Prioritize thin-film interference physics with nanometric color bands, convective swirls, and fragile spherical membrane behavior. Keep iridescent transience and optical delicacy as portable style traits.',
     },
   },
   {
@@ -384,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Greenery, phyllid-leaflets, sporophyte-capsule, dewdrop-bead, rhizoid-felt, soil-particle, detritus, capsule-teeth peristome',
       creative_brief:
-        "Phyllid leaflets spiral upward from the forest floor, each tiny green blade a solar panel for the miniature continent of bryophyte life below. Dewdrops bead on the gametophyte surface, magnifying the cellular structure beneath into liquid lenses of pure morning suspended on velvet-plant texture. A carpet of moss transforms stone into softness, death into soil, and scale into a doorway to the forest's smallest kingdom where sporophyte stalks rise like watchtowers over the green empire.",
+        'Emphasize bryophyte micro-landscapes with dense phyllid texture, dew-lens highlights, and sporophyte accents over soft terrain. Preserve miniature-forest atmosphere without fixing a specific outdoor setting.',
     },
   },
   {
@@ -411,7 +410,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Texture, lenticel-pores, cellular-structure, wine-stain, bottle-neck imprint, cork-brand, extraction-spiral, suberin-wax sheen',
       creative_brief:
-        "Lenticel pores penetrate the prismatic cell structure like tunnels bored through a miniature sponge, the breathing architecture of Quercus suber rendered in tannin-brown and suberin-wax cream. The wine-stain magenta edges the stopper in testimony to the bottle's horizontal slumber in cellar coolness. Compressed bark remembers the curve of the neck it sealed, elasticity encoded in cellular walls that bounce back when pressure finally releases, the cork-pop sound a small celebration of natural engineering.",
+        'Highlight cork as breathable bark-engineered material with lenticel channels, elastic cellular compression, and matte natural grain. Preserve wine-closure heritage cues while keeping applications broader than a single bottle moment.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

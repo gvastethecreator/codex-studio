@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Infographic style
-  form_and_line: None
-  color_palette: Vibrant, flat, infographic spectrum, pedagogy primaries
-  lighting_setup: Flat shading, even illumination, vector clarity
-  material_texture: Vector clean
-  render_quality: Educational, modern, screen-friendly crispness, animated-explainer sheen
-  spatial_distortion: Rounded geometry
-  atmosphere: Smart, clean, science-communication clarity, optimistic didacticism
-  key_features: Geometric, simplified shapes, isometric modules
-  creative_brief: Geometry asserts itself as universal language, every rounded rectangle and isometric module a unit of clarity. Flat colors sit in perfect, shadowless adjacency, explaining the universe through simplification. This is knowledge made beautiful, where complexity surrenders to the elegance of the diagram.
+  aesthetic: Flat educational infographic system (Kurzgesagt-inspired visual pedagogy)
+  form_and_line: Outline-minimal geometric primitives with rounded construction logic
+  color_palette: Vibrant flat-spectrum channels with strong semantic color grouping
+  lighting_setup: Shadow-light simplified to subtle flat-shape value separation
+  material_texture: Pure vector cleanliness with no analog artifacting
+  render_quality: Screen-optimized explainer clarity and modular consistency
+  spatial_distortion: Simplified isometric/orthographic-friendly shape grammar
+  atmosphere: Optimistic, informative, high-clarity
+  key_features: Modular icon blocks, geometric metaphors, hierarchy-first composition
+  creative_brief: >-
+    Translate complex concepts into concise geometric storytelling. Keep Kurzgesagt-style readability through consistent shape language, semantic color coding, and modular composition that remains adaptable across topics without anchoring to fixed narrative scenes.
 avoidRules:
   - outline
   - texture

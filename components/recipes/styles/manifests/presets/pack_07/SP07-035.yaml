@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Stacks of books, bibliophile sanctuary, reading-room heaven, literary labyrinth, scholar's cathedral
-  form_and_line: Vertical spines, shelf-grid rhythm, arched alcoves, rolling ladders, barrel-vault ceiling
+  aesthetic: Historic reading-room classicism, archival interior atmosphere, bibliographic monumentality
+  form_and_line: Tall shelf bays, ladder-track verticals, table-aisle symmetry, vault/alcove cadence, spine-color striping
   color_palette: Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather
   lighting_setup: Warm lamp, banker's green glass shade, reading-table pool, high-window shaft, brass sconce
-  material_texture: Paper, wood, leather, vellum, gilt tooling, waxed oak, marble bust
-  render_quality: Quiet, intellectual, scholarly peace, book-scent serenity, timeless learning
+  material_texture: Oxidized leather grain, deckled paper edges, gilt tooling wear, polished oak handling patina, brass lamp tarnish
+  render_quality: Museum-grade interior rendering, fine material aging fidelity, deep focus for catalog-like readability
   spatial_distortion: None
-  atmosphere: Studious, hush, absorbed, musty-sweet, inherited wisdom, reading-trance
-  key_features: Books everywhere, rolling ladder, reading tables, brass lamps, vaulted ceiling, globe
-  creative_brief: Books breathe their slow vanilla decay into air thick with ideas waiting to be rediscovered. Ladders slide on brass rails toward ceiling-high wisdom, every spine a door to a mind that once burned to be heard. The library holds silence not as absence but as the accumulated hush of centuries reading.
+  atmosphere: Contemplative discipline, inherited scholarship, reverent silence with warm pooled light
+  key_features: Green-shade task lamps, catalog-table clusters, rolling rail ladders, shelf-bay numbering logic, atlas/globe accents
+  creative_brief: >-
+    Haz que el preset funcione como tipología bibliográfica completa: ritmo de
+    estanterías, luz de lectura localizada y envejecimiento noble de materiales.
+    Debe conservar solemnidad intelectual y legibilidad editorial sin depender de
+    una biblioteca histórica concreta.
 avoidRules:
   - digital
   - modern

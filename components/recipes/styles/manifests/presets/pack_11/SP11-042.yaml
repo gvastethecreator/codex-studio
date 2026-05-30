@@ -12,16 +12,17 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: 2000s Tech UI, XP-era optimism, glossy-future, start-up-aesthetic, skeuomorphic-harmony
+  aesthetic: Frutiger Aero Y2K-era glossy UI optimism and skeuomorphic futurism
   form_and_line: Glossy curves, rounded-rect silhouettes, bubble-button contours, aqua-orb profiles
   color_palette: Cyan, Green, White, aqua-bubble blue, grass-green, brushed-metal grey, traffic-light amber
   lighting_setup: Bright, glossy, window-reflection streak, soft-overhead ambient, screen-glow-backlight, inset-shadow depth
   material_texture: Glass, water bubbles, brushed-aluminum, aqua-gel buttons, acrylic-transparency, droplet-lens
-  render_quality: Optimistic, corporate tech, Y2K-fresh, start-up-utopia, human-friendly-machine, skeuomorphic-beauty
+  render_quality: Polished early-2000s interface rendering with optimistic consumer-tech tone
   spatial_distortion: Floating icons, dock-magnification, widget-flyout, layer-drop-shadow separation
   atmosphere: Fresh, clean, future, login-screen possibility, broadband-dawn, digital-optimism
   key_features: Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection
-  creative_brief: Aqua-gel buttons float above brushed-metal surfaces in a world still optimistic about broadband and a future rendered in glossy skeuomorphic wonder. Lens flares streak across grass-green progress bars climbing toward completion with start-up-utopia confidence. The desktop was a garden where every click promised a brighter digital tomorrow, window-reflection streak catching the dawn of the Y2K-fresh era.
+  creative_brief: >-
+    Build a Frutiger Aero system from glossy rounded controls, aqua translucency, and bright eco-tech accents. Maintain optimistic Y2K interface energy with modular UI motifs that can adapt across multiple subjects.
 avoidRules:
   - flat
   - matte

@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple
   atmosphere: Indulgent, sweet, pâtisserie-afternoon, truffle-luxury, cocoa-comfort, melting-moment
   key_features: Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin, chocolate-shavings curl
-  creative_brief: Tempered couverture cascades in ribbons of liquid obsidian, folding over itself in thick glossy waves that catch the soft-box reflection like a dark mirror. The ganache pool holds its surface tension with the viscosity of a dessert that understands luxury is measured in mouthfeel. Viscosity becomes art when chocolate moves at the speed of honey down a perfectly chilled marble slope, every ripple a poem written in cocoa butter and patience.
+  creative_brief: >-
+    Render chocolate as a viscosity-driven material: ribbon folds, glossy highlights, and dense fluid thickness. Emphasize premium confection texture and controlled flow behavior without hardcoding a specific dessert scene.
 avoidRules:
   - watery
 assets:

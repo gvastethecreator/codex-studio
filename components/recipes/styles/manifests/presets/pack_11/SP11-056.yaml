@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe
   atmosphere: Scientific, weird, electron-beam silence, nano-frontier, magnification-horizon
   key_features: Scale bar, micron-marker, acceleration-voltage label, detector-mode annotation, sputter-coating grain, magnification-readout, charging-artifact bands
-  creative_brief: Electrons scan across a vacuum-sealed landscape where dust becomes boulders at one hundred thousand times magnification, raster lines sweeping over sputter-coated topography. Scale dissolves into vertigo when the invisible world reveals itself more intricate and structured than the visible one ever knew. Nano-landscape rendered in monochrome grey gradient, each dendrite-branch and crystalline-facet a continent mapped by the scanning beam in the electron silence.
+  creative_brief: >-
+    Present SEM imagery as monochrome micro-topography with scale-bar legibility, sputter-coat artifacts, and beam-scan texture cues. Preserve scientific instrument character while allowing diverse specimen geometries.
 avoidRules:
   - color
   - far away

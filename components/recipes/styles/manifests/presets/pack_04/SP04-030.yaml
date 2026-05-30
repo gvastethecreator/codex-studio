@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Vintage textbook
-  form_and_line: Fine ink
-  color_palette: Watercolor tint, botanical pastel, sepia heritage
-  lighting_setup: Flat, specimen-light clarity, shadowless diagram
-  material_texture: Aged paper
-  render_quality: Accurate, detailed, field-guide rigor, naturalist precision
-  spatial_distortion: Dissected view
-  atmosphere: Educational, classic, museum-cabinet authority, taxonomic reverence
-  key_features: Label text, anatomical callouts, specimen arrangement
-  creative_brief: Ink lines trace botanical specimens with the reverence of scientific witness, each root and stamen catalogued in patient detail. Watercolor tints wash across sepia pages like the ghost of a garden pressed between time. This is the meeting point of art and taxonomy, where the urge to name and the urge to beauty share the same page.
+  aesthetic: Scientific botanical plate in vintage field-guide tradition
+  form_and_line: Fine controlled ink contour with diagrammatic annotation leaders
+  color_palette: Muted watercolor tints over warm archival-paper neutrals
+  lighting_setup: Flat specimen illumination prioritizing structural clarity
+  material_texture: Aged paper grain with light wash transparency
+  render_quality: High-accuracy naturalist rendering for educational reference
+  spatial_distortion: Orthographic specimen layout with sectional/dissected insets
+  atmosphere: Taxonomic, scholarly, measured
+  key_features: Nomenclature labels, anatomical callouts, curated specimen grouping
+  creative_brief: >-
+    Illustrate flora as study objects with clear morphology and readable annotation hierarchy. Balance scientific precision and aesthetic restraint through clean ink structure, transparent tinting, and plate-style composition adaptable to varied species.
 avoidRules:
   - cartoon
   - messy

@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Desert mud house, earthen sanctuary, pueblo revival, timeless Southwest, hand-shaped dwelling
-  form_and_line: Rounded corners, stepped massing, thick-wall masses, parapet silhouettes, organic contours
+  aesthetic: Earthen adobe habitat, pueblo-derived vernacular massing, hand-formed desert domestic architecture
+  form_and_line: Monolithic thick-wall volumes, softened chamfers, stepped rooflines, recessed apertures, low-slung parapets
   color_palette: Terracotta, Sand, Warm Ochre, Sage brush, Deep Cinnamon, Sunbaked Clay
   lighting_setup: Harsh desert sun, deep window-reveal shadow, nicho candle glow, kiva fireplace flicker
-  material_texture: Mud plaster, hand-troweled adobe, vigas wood, saltillo tile, rough-hewn lintels
-  render_quality: Natural, earthy, solid, timeless-pueblo, sun-baked authenticity, ancestral craft
+  material_texture: Lime-washed earthen plaster, straw-fiber inclusions, hand-trowel undulation, exposed vigas, clay tile wear
+  render_quality: Archaeology-grade material honesty, sun-baked tonal compression, handcrafted imperfection with structural plausibility
   spatial_distortion: Handmade walls
-  atmosphere: Warm, dry, grounded, ancient-land, pueblo-silent, earth-connected peace
-  key_features: Wood beams (vigas), rounded edges, kiva fireplace, nicho alcoves, bancos, ladder access
-  creative_brief: Hands shaped these walls, each undulation a fingerprint of the maker pressed into mud and time. Vigas stretch across ceilings like ribs of earth made visible, holding centuries of desert silence above. The dwelling emerges from the ground as if it grew there, earthen architecture remembering its origin in soil.
+  atmosphere: Grounded, sheltering, arid-climate calm, ancestral domestic continuity
+  key_features: Deep window reveals, banco seating ledges, nicho wall recesses, kiva-type hearth geometry, roof access ladders
+  creative_brief: >-
+    Define este preset como gramática de arquitectura en tierra: muros de gran
+    inercia térmica, huecos profundos y acabados manuales que revelan la mano del
+    constructor. La estética debe transmitir durabilidad climática y arraigo local,
+    evitando postal turística o escena narrativa única.
 avoidRules:
   - sharp edges
   - wood

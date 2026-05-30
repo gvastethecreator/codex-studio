@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory
   atmosphere: Energy, vitamin, orchard-vitality, splash-play, life-force, morning-juice vitality
   key_features: Juice drops, seed-suspension, peel-spiral, pulp-splash, knife-blade reflection, fruit-half cross-section, mid-air-droplet constellation
-  creative_brief: A knife passes through citrus mid-flight, the moment frozen by strobe-light speed before gravity can reassert its ancient claim. Juice droplets suspend in parabolic arcs, each sphere a tiny lens refracting the orchard back at itself in liquid-sculpture precision. The fruit surrenders its interior geometry in a radial burst of pulp and seed and liquid sunlight, frozen-in-flight energy that celebrates the split second between whole and consumed.
+  creative_brief: >-
+    Compose high-speed fruit impact imagery with suspended droplets, radial pulp motion, and crisp cut geometry. Preserve kinetic freshness and strobe-frozen energy while keeping subjects and arrangements broadly interchangeable.
 avoidRules:
   - rotten
   - still

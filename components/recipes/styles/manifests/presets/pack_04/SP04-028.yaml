@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Soft blending
-  form_and_line: Thick dust
-  color_palette: Soft, dusty, pastel-mist spectrum, muted winter warmth
-  lighting_setup: Soft, diffuse glow, paper-tooth scatter, feather-light
-  material_texture: Paper tooth
-  render_quality: The Snowman wintery dreamy softness, pastel flight
-  spatial_distortion: Blurred
-  atmosphere: Soft, winter, snow-globe stillness, nostalgic bedtime
-  key_features: Smudge, chalk-dust bloom, soft-edge blending
-  creative_brief: Chalk dust settles into paper tooth like snow on ancient landscape, edges dissolving into atmospheric haze. The soft blur of pastel blending creates an image seen through memory rather than eyes. This is the world viewed through a frost-covered window, where distance softens everything into dream.
+  aesthetic: Chalk pastel illustration with atmospheric soft-focus blending
+  form_and_line: Broad dusty marks with reduced hard-edge dependency
+  color_palette: Muted pastel spectrum with powdery warm-cool balance
+  lighting_setup: Diffuse low-contrast illumination through chalk scatter
+  material_texture: Strong paper tooth pickup, smudge trails, airborne dust bloom
+  render_quality: Dreamlike, velvety, softly resolved pastel finish
+  spatial_distortion: Edge blur and gentle form diffusion
+  atmosphere: Nostalgic, calm, bedtime softness
+  key_features: Smudged transitions, dust halos, matte bloom highlights
+  creative_brief: >-
+    Build mood through powdery transitions and softened boundaries rather than crisp drawing. Keep chalk pastel behavior central—smudge blending, tooth catch, and diffuse atmosphere—so the style remains reusable without binding it to a fixed seasonal scene.
 avoidRules:
   - sharp
   - pen

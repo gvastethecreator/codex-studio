@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: None, leaf-plane, blade-expansion, lobe-geometry, venation-pattern
   atmosphere: Fresh, organic, forest-floor quiet, photosynthesis-magic, chloroplast-glow, green-life
   key_features: Veins, midrib-center, secondary-vein, areole-polygon, stomata-pores, margin-edge, backlit-translucency
-  creative_brief: Chlorophyll glows emerald under backlight that transforms the leaf blade into a stained-glass window of the forest floor, the midrib a central spine of transport and structure. Secondary veins branch outward into areole-polygon mesh, a distribution network that delivers sugar and extracts water with the efficiency of a logistical masterpiece refined by photosynthesis. Hold a leaf to the sun and you hold a map of the tree's circulatory system, chloroplast-glow revealing the architecture of green life.
+  creative_brief: >-
+    Frame leaves as translucent vascular maps: midrib hierarchy, venation branching, and chlorophyll-rich backlight are core. Keep the style botanical, structural, and adaptable across species and seasonal palettes.
 avoidRules:
   - dead
 assets:

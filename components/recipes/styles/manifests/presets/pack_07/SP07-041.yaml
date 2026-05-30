@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Versailles grand formal palace garden, geometric power, royal symmetry
-  form_and_line: "Symmetry, patterns, axial vistas, parterre embroidery, reflecting-canal lines, avenue perspectives"
+  aesthetic: Grand formal landscape classicism, power-encoded garden geometry, choreographed nature order
+  form_and_line: Central axial composition, mirrored parterre grids, perspectival allées, basin-aligned focal hierarchy
   color_palette: Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone
   lighting_setup: Flat sun, axial-light drama, fountain-sparkle, golden-hour hedge wash, statue-silhouette
   material_texture: Manicured hedge, clipped boxwood, raked gravel, fountain stone, lead statue, grass parterre
-  render_quality: Controlled, royal, ordered-nature, Le Notre geometry, garden-as-architecture, courtly perfection
+  render_quality: Planimetric precision with cinematic depth, horticultural discipline readability, stately ceremonial clarity
   spatial_distortion: None
-  atmosphere: Order, grand, absolute, orchestrated nature, king's gaze, tamed creation
-  key_features: Topiary, reflecting pool, parterre de broderie, axial vista, fountain, statue, orangery
-  creative_brief: Boxwood bends to geometry, nature disciplined into parterre embroidery that reads like green scripture from above. Reflecting pools double the sky, water turned to mirror that makes architecture believe it has a twin. The garden follows orders, every axis a line drawn by a king who mistook control for beauty.
+  atmosphere: Monumental order, ceremonial calm, curated authority, deliberate visual command
+  key_features: Embroidered parterres, clipped hedge planes, mirrored water axes, statuary punctuation, long-view control points
+  creative_brief: >-
+    El preset debe comunicar control espacial absoluto mediante ejes, simetría y
+    jardinería de precisión. Piensa el jardín como arquitectura horizontal: lectura
+    clara en planta y en perspectiva, con naturaleza sometida a un sistema formal.
 avoidRules:
   - wild
   - messy

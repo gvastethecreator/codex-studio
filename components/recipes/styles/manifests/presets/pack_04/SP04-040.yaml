@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - editorial-illustration
 visualDna:
-  aesthetic: Data visualization
-  form_and_line: Thin icons
-  color_palette: Consistent palette, data-viz spectrum, categorical distinction
-  lighting_setup: Flat, no shadow, pure information design
-  material_texture: Vector
-  render_quality: Information, clean, dashboard clarity, explainer-article crispness
-  spatial_distortion: Isometric
-  atmosphere: Smart, data, editorial authority, knowledge elegance
-  key_features: Charts, iconography, data-flow arrows
-  creative_brief: Data flows through thin icons and arrow pathways like a circulatory system made visible, every chart a heartbeat of information. Isometric modules stack in clean precision, form serving function with quiet confidence. This is complexity made legible, where the beauty lies not in embellishment but in the elegant arrangement of truth.
+  aesthetic: Editorial infographic/data-visualization illustration system
+  form_and_line: Thin icon strokes, modular chart primitives, directional flow connectors
+  color_palette: Consistent categorical palette with accessible contrast grouping
+  lighting_setup: Flat informational rendering with no decorative shadowing
+  material_texture: Clean vector output suitable for print and screen
+  render_quality: High-legibility explainer quality with dashboard-grade precision
+  spatial_distortion: Optional isometric modules integrated into 2D data layouts
+  atmosphere: Analytical, trustworthy, concise
+  key_features: Chart blocks, iconography families, data-flow arrows, hierarchy scaffolds
+  creative_brief: >-
+    Prioritize information hierarchy and cognitive clarity. Build visuals from reusable chart and icon modules, keeping color semantics and reading flow explicit so complex topics remain quickly understandable across editorial contexts.
 avoidRules:
   - messy
   - art

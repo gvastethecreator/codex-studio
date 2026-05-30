@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Cut and paste
-  form_and_line: Scissor cuts
-  color_palette: Vintage photo, sepia-toned fragment, found-image palette
-  lighting_setup: Mismatched, multiple light sources, irreverent continuity
-  material_texture: Halftone
-  render_quality: Punk, surreal, anti-aesthetic rebellion, found-object poetry
-  spatial_distortion: Hybrid objects
-  atmosphere: Rebellious, weird, dada absurdism, anti-art provocation
-  key_features: Paper edges, scissor-cut seams, photo-fragment juxtaposition
-  creative_brief: Scissor edges interrupt photographic reality, grafting disparate moments into impossible hybrid forms. Sepia photographs and halftone fragments share space without permission, their juxtaposition the entire argument. This is creation as rupture, where meaning emerges from the collision of things that were never meant to meet.
+  aesthetic: Dada-style cut-and-paste photomontage collage
+  form_and_line: Hard scissor-cut boundaries and abrupt fragment intersections
+  color_palette: Found-image sepia/grayscale base with selective accent insertions
+  lighting_setup: Intentionally inconsistent source-light continuity across fragments
+  material_texture: Halftone dots, paper edges, print-scan wear artifacts
+  render_quality: Deliberate anti-polish collage assembly with conceptual friction
+  spatial_distortion: Hybridized object-body juxtapositions and scale discontinuities
+  atmosphere: Rebellious, absurdist, provocative
+  key_features: Visible seams, torn edges, fragment clash composition
+  creative_brief: >-
+    Build meaning from collision: juxtapose mismatched found fragments without smoothing continuity. Preserve visible cut seams, halftone textures, and intentional scale/light contradictions to keep the Dada montage language unmistakable and adaptable.
 avoidRules:
   - seamless
   - painted

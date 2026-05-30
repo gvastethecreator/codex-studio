@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Fillmore poster
-  form_and_line: Warped text
-  color_palette: Neon clash, acid-rock spectrum, vibrating complementaries
-  lighting_setup: Flat, color-field vibration, optical tension
-  material_texture: Screenprint
-  render_quality: Trippy, retro, visual-overload euphoria, summer-of-love energy
-  spatial_distortion: Liquid
-  atmosphere: Groovy, music, hallucinogenic bliss, counterculture festival
-  key_features: Illegible font, warped lettering, swirling typography
-  creative_brief: Typography warps and melts like wax in a lava lamp, letters losing their duty to meaning in favor of pure optical vibration. Neon colors clash with the confidence of a Fillmore bill, each hue vibrating against its complement. This is visual experience as altered state, where reading becomes seeing and seeing becomes feeling.
+  aesthetic: 60s psychedelic poster language with optical-vibration typography
+  form_and_line: Liquidly warped letterforms and undulating contour fields
+  color_palette: High-chroma complementary clashes and acid-neon screenprint palette
+  lighting_setup: Flat color-plane tension with no naturalistic light dependency
+  material_texture: Screenprint grain and ink-overlap artifacts
+  render_quality: Dense retro visual overload with deliberate readability disruption
+  spatial_distortion: Melting curvature and wave-like compositional drift
+  atmosphere: Countercultural, ecstatic, sensory-saturated
+  key_features: Swirling typographic masses, radial waves, vibrating color adjacency
+  creative_brief: >-
+    Treat typography as image and perception effect. Build high-impact psychedelic compositions through warping, chromatic clash, and pattern rhythm while keeping the style reusable beyond any specific event or location context.
 avoidRules:
   - straight
   - readable

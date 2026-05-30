@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Drift competition in ceremonial-tech desert kingdoms.
-  subject_treatment: Noble pilots with light armor and heraldic helmets.
-  color_and_tone: Golden sand, turquoise, and crimson red.
-  lighting_and_shadow: Low sun with illuminated dust trails.
-  texture_and_material: Leather, burnished steel, and eroded stone.
-  camera_and_composition: Open curve with the drift as the focal action.
-  atmosphere_and_mood: Elegant rivalry and visceral speed.
-  rendering_and_quality: Seasonal competitive-event artwork.
+  aesthetic: Arid motorsport ceremonial-futurism with pageantry-grade race iconography and high-velocity desert spectacle.
+  subject_treatment: Performance drivers as faction-athlete silhouettes, lightweight combat-sport armor, heraldic motifs integrated into race gear.
+  color_and_tone: Sun-scorched ochres, oxidized turquoise, heat-haze ambers, and disciplined crimson accents for team readability.
+  lighting_and_shadow: Low-angle desert key light, elongated cast shadows, backlit dust plumes, and high-contrast rim separation on moving forms.
+  texture_and_material: Wind-abraded stone composites, burnished alloy fairings, stitched leather interfaces, and particulate sand abrasion layers.
+  camera_and_composition: Apex-turn framing with lateral motion vectors, multi-depth track geometry, and strong directional flow through foreground dust.
+  atmosphere_and_mood: Ritualized rivalry, kinetic honor culture, and high-stakes competitive intensity under harsh climate pressure.
+  rendering_and_quality: Premium event-key-art finish with crisp silhouette hierarchy, readable faction coding, and motion-rich environmental storytelling.
 avoidRules:
   - watermark
   - text

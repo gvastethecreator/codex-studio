@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove
   atmosphere: Music, tech, needle-drop quiet, vinyl-warmth, listening-room, hi-fi reverence
   key_features: Grooves, spiral-lead-in, modulation-wiggle, dust-particle, stylus-reflection, lock-groove-circle, label-edge, pressing-plant matrix number
-  creative_brief: 'The stylus traces a wiggling canyon carved by sound waves pressed into PVC decades before digital convenience flattened music into invisible files. Modulation reveals itself in the lateral cuts: louder passages swing wider across the groove wall, quiet interludes tighten toward vinyl-carbon silence. The record groove is a physical waveform frozen in black plastic, waiting for a diamond needle to resurrect the music entombed in its spiral, sound you can see with the right grazing-incidence light.'
+  creative_brief: >-
+    Build analog-audio macro imagery around groove modulation, spiral geometry, and dust-on-PVC microtexture. Keep tactile hi-fi character and waveform-in-material readability as reusable visual anchors.
 avoidRules:
   - smooth
 assets:

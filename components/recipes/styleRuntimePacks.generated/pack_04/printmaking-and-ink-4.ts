@@ -9,17 +9,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Printmaking And Ink',
     negativePrompt: 'white background',
     style: {
-      aesthetic: 'Black board scratched white',
-      form_and_line: 'White scratches',
-      color_palette: 'Black and White, reversed contrast, luminous white scratch',
-      lighting_setup: 'Inverted, scratch-as-light, dark-field reveal',
-      material_texture: 'Scratches',
-      render_quality: 'Detailed, night, mystery-box reveal, intricate linework',
-      spatial_distortion: 'None',
-      atmosphere: 'Magical, night, star-lit enchantment, theatrical revelation',
-      key_features: 'Black base, white scratch engraving, negative reveal',
+      aesthetic: 'Scratchboard engraving language with subtractive light reveal',
+      form_and_line: 'White incised strokes on black ground, varying incision density',
+      color_palette: 'Strict black-white inverse contrast system',
+      lighting_setup: 'Highlight structure carved through negative subtraction',
+      material_texture: 'Knife/scratch marks, hatch scratches, burr-like edge chatter',
+      render_quality: 'Intricate high-contrast detail with printlike precision',
+      spatial_distortion: 'Stable proportions, depth suggested via hatch frequency',
+      atmosphere: 'Nocturnal, theatrical, mysterious',
+      key_features: 'Dark-field base, luminous scratch marks, reverse-value composition',
       creative_brief:
-        'Light emerges from darkness through subtraction, each white scratch carving revelation from a black sea of possibility. The image appears in reverse, born from removal rather than addition. This is the magic trick of the scratchboard, where the artist draws with light against the void.',
+        'Render by removing darkness rather than adding light. Use incision rhythm, hatch density, and directional scratch patterns to define form and focal hierarchy while keeping the scratchboard inversion logic central and reusable across subjects.',
     },
   },
   {
@@ -30,25 +30,18 @@ export const GENERATED_STYLE_PRESETS = [
       'rendered, polished, detailed, one frame, single composition, finished, color, loud, busy, tight',
     style: {
       aesthetic:
-        '24-frame-composition-thumbnail-grid, storyboard-composition-planning, camera-angle-exploration-for-sequence, Hitchcock-shot-list-energy, wide-medium-closeup-extreme-closeup-progression, high-angle-low-angle-dutch-tilt-variety, film-sequence-shot-design, composition-rhythm-across-scene, golden-ratio-rule-of-thirds-grid-overlay',
-      form_and_line:
-        'Thumbnail-loose-value-sketching, simple-shape-composition, camera-angle-construction-lines, perspective-grid- underlays, framing-device-annotations, directional-arrow-for-camera-movement',
+        'Composition thumbnail grid for shot-language exploration (Alfred Hitchcock-inspired camera grammar)',
+      form_and_line: 'Loose value thumbnails with framing guides and camera-angle markers',
       color_palette:
-        'Greyscale-value-thumbnails, single-wash-tone, warm-key-vs-cool-key scenes, black-marker-for-foreground, white-for-negative-space, no-color-distraction',
-      lighting_setup:
-        'Value-lighting-only, key-light-direction-per-thumbnail, silhouette-vs-lit-comparison, shadow-shape-emphasis, atmospheric-value depth',
-      material_texture:
-        'Marker-wash-thumbnail-texture, pencil-construction-lines, digital-canvas-grid-texture, loose-brush-blocking, thumbnail-scale-small-surface',
-      render_quality:
-        'Composition-thumbnail-grid aesthetic, film-shot-design, storyboard-planning-beauty, Hitchcock-ian-composition study, camera-language reference',
-      spatial_distortion:
-        '24-frame-grid-layout, shot-progression-across-time, camera-angle-comparison, perspective-variation-per-frame, depth-compression-closeup-vs-wide',
-      atmosphere:
-        "Analytical, pre-production, director's-viewfinder, story-planning-excitement, Hitchcock-suspense-through-composition, visual-storytelling-method",
-      key_features:
-        '24-frame-composition-grid, camera-angle-variety, shot-size-progression, perspective-grid-underlay, value-thumbnail-technique, Hitchcock-shot-list-energy, golden-ratio-overlay, directional-arrow-annotations',
+        'Predominantly grayscale with optional restrained warm/cool key differentiation',
+      lighting_setup: 'Per-frame key direction studies using simple value grouping',
+      material_texture: 'Marker/pencil roughness retained for planning immediacy',
+      render_quality: 'Previsualization-grade roughs prioritizing sequence rhythm over polish',
+      spatial_distortion: 'Multi-panel grid enabling rapid comparison of lens/angle/depth setups',
+      atmosphere: 'Analytical, cinematic, pre-production momentum',
+      key_features: 'Shot-size variety, perspective alternation, compositional cadence mapping',
       creative_brief:
-        'Twenty-four frames arrange themselves in a grid of cinematic intention, camera angles mapping the emotional terrain of a scene that has not yet been shot. Wide shots establish, close-ups interrogate, Dutch angles destabilize. This is the film existing first as composition, where every frame decision is a directorial choice rendered in thumbnail.',
+        'Plan visual storytelling through rapid compositional permutations. Keep each frame simple but intention-rich, focusing on camera placement, value hierarchy, and staging rhythm so sequence readability and emotional pacing can be evaluated before final rendering, with Alfred Hitchcock-style suspense-oriented framing discipline.',
     },
   },
   {
@@ -58,26 +51,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art',
     style: {
-      aesthetic:
-        'Game-UI-HUD-wireframe-concept, diegetic-in-world-interface-versus-non-diegetic-screen-overlay, health-bar-ammo-counter-stamina-meter-explorations, radial-menu-vs-linear-menu-comparison, minimalist-data-presentation-versus-diagetic-in-world-clues, Dead-Space-diegetic-UI-health-on-spine, minimal-screen-clutter-philosophy, player-experience-design-sketch',
-      form_and_line:
-        'Clean-wireframe-lines, UI-element-bounding-boxes, hierarchy-readability-strokes, flow-arrow-between-screens, wireframe-grid-alignment, consistent-padding-markers',
-      color_palette:
-        'Wireframe-grey, functional-cyan, warning-red, neutral-green, blueprint-blue, screen-black-background, UI-element-transparency-alpha',
-      lighting_setup:
-        'None, flat-UI-lighting, glow-effect-on-interactive-elements, screen-ambient-illumination, dark-background-for-contrast',
+      aesthetic: 'Game HUD wireframe concept balancing diegetic and overlay paradigms',
+      form_and_line: 'Clean bounding-box architecture with spacing, flow, and hierarchy guides',
+      color_palette: 'Functional UI neutrals with semantic accent colors for state signaling',
+      lighting_setup: 'Flat interface contrast with optional interaction glow cues',
       material_texture:
-        'Screen-pixel-grid, wireframe-line-precision, UI-glass-transparency, holographic-translucency, screen-glare-subtle, minimal-texture-functional',
-      render_quality:
-        'UI-UX-wireframe-aesthetic, game-HUD-concept-design, Dead-Space-diegetic-inspiration, player-experience-clarity, functional-beauty-rendering',
-      spatial_distortion:
-        'Screen-space-composition, diegetic-world-space-vs-screen-overlay, UI-element-hierarchy-layout, radial-vs-linear-menu-placement, safe-zone-margin-framing',
-      atmosphere:
-        'Functional, player-centered, information-clarity, game-design-thinking, UX-problem-solving, elegant-minimalism',
+        'Minimalist screen-surface treatment; precision-first wireframe presentation',
+      render_quality: 'UX concept fidelity focused on clarity, density control, and usability',
+      spatial_distortion: 'Safe-zone aware screen layout plus world-anchored UI option studies',
+      atmosphere: 'Functional, restrained, information-priority design',
       key_features:
-        'Diegetic-vs-non-diegetic-UI-comparison, wireframe-bounding-boxes, health-bar-mana-stamina-layouts, radial-menu-exploration, Dead-Space-health-on-spine-reference, screen-safe-zone, element-hierarchy-callouts',
+        'Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints',
       creative_brief:
-        "Health bars and ammo counters float in wireframe experiments, diegetic displays embedded in the character's own equipment versus menus hovering in screen-space. Radial wheels compete with linear bars in the clean language of UX sketching. This is the interface before it becomes invisible, where every pixel of player information earns its place through rigorous design argument.",
+        'Prototype interface systems that communicate critical gameplay data with minimal cognitive load. Compare multiple layout paradigms under consistent hierarchy rules, ensuring legibility, interaction clarity, and screen-space economy across different play contexts.',
     },
   },
   {
@@ -88,25 +74,19 @@ export const GENERATED_STYLE_PRESETS = [
       'human, normal, domestic, cute, ordinary, recognizable, existing animal, final render, single version',
     style: {
       aesthetic:
-        'Creature-design exploration sheet, anatomical-speculation sketching, muscle-study overlays, bone-structure ghost drawings, adaptation-to-environment design thinking, alien-biology brainstorming, Terryl Whitlatch anatomical fantasy, Monster-Hunter design iteration, evolution-pressure visualization',
-      form_and_line:
-        'Anatomical construction lines, skeleton-ghost underdrawing, muscle-group overlay contours, movement-range indication arcs, biological-adaptation callouts',
-      color_palette:
-        'Sketch-grey tonal range, ochre underdrawing, blue construction overlay, red muscle-highlight, neutral background, no final color',
-      lighting_setup:
-        'Anatomical-study lighting, rim-light for form reading, subsurface-indication on thin membranes, translucent-tissue light',
+        'Speculative creature-design sheet with layered anatomical logic (Terryl Whitlatch-style anatomical imagination)',
+      form_and_line: 'Construction underdrawings, skeletal overlays, muscular contour notes',
+      color_palette: 'Neutral sketch tones with limited functional overlay coding',
+      lighting_setup: 'Form-reading study light with selective translucency cues',
       material_texture:
-        'Anatomical-texture variety, scale-plate overlap, fur-direction strokes, carapace-gloss indication, membrane-translucency, scar-tissue roughness',
-      render_quality:
-        'Creature-design exploration sheet, biological-concept study, anatomical-speculation rendering, adaptive-evolution visualization',
-      spatial_distortion:
-        'Multiple-pose iteration grid, anatomical-layering ghost views, skeleton-over-flesh transparency, evolution-variant comparison',
-      atmosphere:
-        'Scientific, exploratory, biological-wonder, adaptive-imagination, speculative-zoology excitement',
+        'Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests',
+      render_quality: 'Iterative concept-study fidelity prioritizing function over polish',
+      spatial_distortion: 'Multi-pose and layered ghost-view layout for structural analysis',
+      atmosphere: 'Scientific, exploratory, speculative naturalism',
       key_features:
-        'Anatomy-layering views, skeleton-ghost overlay, muscle-group callouts, multiple-pose iterations, adaptation-annotation notes',
+        'Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks',
       creative_brief:
-        'Anatomy speculates across the page in overlapping studies, muscle groups ghosting through translucent hide in search of evolutionary purpose. Bone structures peek through like scaffolding for monsters yet unbuilt. This is biology as creative writing, where every adaptation tells the story of the environment that demanded it.',
+        'Develop creatures as coherent biological systems. Pair silhouette and anatomy passes to test mobility, survivability, and material behavior, keeping overlays and callouts explicit enough to compare evolutionary variants before committing to final render direction in a Terryl Whitlatch-style creature-development mindset.',
     },
   },
   {
@@ -115,17 +95,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Printmaking And Ink',
     negativePrompt: 'smooth shading',
     style: {
-      aesthetic: 'Banknote style',
-      form_and_line: 'Fine crosshatching',
+      aesthetic:
+        'Engraved etching style with document-grade line security, old-master precision, and tonal density through incision logic',
+      form_and_line:
+        'Fine crosshatch weave with controlled burin-like stroke layering and micro-line directional modulation',
       color_palette: 'Black ink, tonal-hash spectrum, burin-precision value',
       lighting_setup: 'Line density, hatching-as-light, cumulative shadow depth',
       material_texture: 'Paper',
-      render_quality: 'Durer engraved old-master classic, renaissance precision',
+      render_quality:
+        'High-precision engraving fidelity emphasizing line-depth hierarchy, anti-counterfeit visual complexity, and archival print character',
       spatial_distortion: 'None',
       atmosphere: 'Serious, valuable, mint-condition reverence, time-capsule gravitas',
       key_features: 'Hatching, crosshatching, fine-line density',
       creative_brief:
-        'Crosshatched lines build density with the obsessive precision of currency, each stroke a security feature against the counterfeit of carelessness. Light slides across engraved surfaces with the weight of history and the gleam of privilege. This is the image as document, where linework carries the authority of the mint.',
+        'Keep this preset anchored in engraving grammar: dense crosshatch tonality, burin-like incision discipline, and document-authority detail should define identity beyond any single banknote motif.',
     },
   },
   {
@@ -134,17 +117,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Printmaking And Ink',
     negativePrompt: 'sharp lines',
     style: {
-      aesthetic: 'Grease pencil on stone',
-      form_and_line: 'Grainy crayon',
+      aesthetic:
+        'Stone-lithography style with grease-crayon mark character, tonal grain softness, and chemical-print process identity',
+      form_and_line:
+        'Grainy litho-crayon contouring with soft edge diffusion and pressure-sensitive wax-mark variation',
       color_palette: 'Black or Sepia, single-stone tone, litho-crayon warmth',
       lighting_setup: 'Soft grain, stone-texture diffusion, atmospheric softness',
       material_texture: 'Stone grain',
-      render_quality: 'Escher labyrinthine print, impossible geometries, mind-bending precision',
+      render_quality:
+        'Classical lithographic fidelity emphasizing stone-grain tonal transitions, press transfer nuance, and atmospheric print softness',
       spatial_distortion: 'None',
       atmosphere: 'Classic, soft, print-studio quiet, optical wonder',
       key_features: 'Grain, stone texture, crayon registration',
       creative_brief:
-        'Grease pencil glides across limestone with the soft friction of tradition, every mark a negotiation between hand and stone. The image waits inside the grain, latent until chemistry and pressure conspire to reveal it. This is printmaking as alchemy, where the artist works in reverse and trusts the press to complete the spell.',
+        'Keep this preset defined by lithographic grammar: grease-on-stone mark behavior, granular tonal transfer, and chemistry-driven reveal should carry identity beyond any specific geometric subject.',
     },
   },
   {
@@ -153,8 +139,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Printmaking And Ink',
     negativePrompt: 'repeatable, clean',
     style: {
-      aesthetic: 'One off print',
-      form_and_line: 'Smudged',
+      aesthetic:
+        'Monotype one-off print style with painterly transfer unpredictability and unique impression-first identity',
+      form_and_line:
+        'Smudged plate-transfer marks with pressure-variant edges, ghost traces, and spontaneous ink movement',
       color_palette: 'Ink wash, single-pass tone, monoprint spontaneity',
       lighting_setup: 'Unpredictable, plate-pressure variation, unique ghost-artifact',
       material_texture: 'Plate texture',
@@ -163,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Expressive, unique, printmaking surprise, serendipitous beauty',
       key_features: 'Ghost image, ink-bleed edge, plate-memory residue',
       creative_brief:
-        'The press receives the plate knowing it will never print this exact image again, the urgency of the unique embedded in every roll. Pigment transfers with the spontaneity of a performance, no two pulls ever identical. This is printmaking as jazz, where the improvisation of the press becomes the composition itself.',
+        'Define this preset through monotype grammar: one-pass transfer, non-repeatable ghosting, and pressure-born variation should carry identity beyond any single expressive print scene.',
     },
   },
   {
@@ -172,8 +160,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Printmaking And Ink',
     negativePrompt: 'grey, gradient',
     style: {
-      aesthetic: 'Carved block print',
-      form_and_line: 'White gouges',
+      aesthetic:
+        'Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold democratic graphic force',
+      form_and_line:
+        'White gouge-cut channels and chunky relief edges with high black-mass balance and knife-path rhythm',
       color_palette: 'Black ink, single-color assertion, bold monochrome',
       lighting_setup: 'None, ink-only, no shading hierarchy',
       material_texture: 'Ink roll texture',
@@ -182,7 +172,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Folk, strong, print-workshop resolve, democratic art',
       key_features: 'No fine detail, gouge marks, carved texture',
       creative_brief:
-        "Carved away material leaves behind a surface born of resistance, each gouge a record of the knife's passage through linoleum. Ink sits heavy on the raised portions, transferring the image with the satisfying pressure of the press. This is printmaking as labor, where every white line required the removal of something solid.",
+        'Define this preset through relief-linocut grammar: carved negative marks, heavy ink transfer, and hand-tool gouge cadence should carry identity beyond any specific folk scene.',
     },
   },
   {
@@ -212,17 +202,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Printmaking And Ink',
     negativePrompt: 'stiff, pencil',
     style: {
-      aesthetic: 'Sumi-e ink wash gesture, Zen brushwork, haiku simplicity',
-      form_and_line: 'Variable pressure',
-      color_palette: 'Black ink, sumi depth, ink-stone monochrome',
-      lighting_setup: 'Dry brush, ink-flow suggestion, negative-space reserve',
-      material_texture: 'Rice paper',
-      render_quality: 'Zen, expressive, single-breath energy, meditative discipline',
-      spatial_distortion: 'Loose',
-      atmosphere: 'Calm, flow, ink-grind stillness, ensō completion',
-      key_features: 'Gesture, variable pressure, dry-brush splinter',
+      aesthetic: 'Expressive monochrome brush-ink gestural rendering',
+      form_and_line: 'Pressure-reactive strokes from razor taper to saturated belly',
+      color_palette: 'Carbon black, diluted gray washes, paper-white negative space',
+      lighting_setup: 'Value implied through wash layering and dry-brush breakup',
+      material_texture: 'Absorbent rice-paper bloom with feathered bleed fringes',
+      render_quality: 'Minimal yet controlled, emphasizing breath-like stroke economy',
+      spatial_distortion: 'Intentional looseness with calligraphic balance preservation',
+      atmosphere: 'Quiet, contemplative, fluid, meditative immediacy',
+      key_features: 'One-breath gesture arcs, dry-brush fractures, water-ink diffusion gradients',
       creative_brief:
-        'Ink meets paper with the economy of haiku, each brushstroke a gesture that cannot be revised or regretted. The circle closes with the breath of completion, the enso holding the entire philosophy of the moment in its simple curve. This is drawing as meditation, where the space between strokes contains the silence of the zendo.',
+        'Compose with maximal economy: few strokes, high intent. Let pressure, moisture, and speed create the full value system, using negative space as an active structural element. Preserve spontaneous gesture while maintaining compositional equilibrium and tonal clarity.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

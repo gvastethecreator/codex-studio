@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Hedge maze, living puzzle, green architecture, secret-garden labyrinth, puzzle palace
-  form_and_line: Vertical walls, right-angle corridors, dead-end geometry, spiral center, boxwood-perfect edges
+  aesthetic: Formal hedge-labyrinth typology, navigational puzzle landscape, clipped-green enclosure architecture
+  form_and_line: Orthogonal corridor matrix, controlled dead-end cadence, center-seeking path hierarchy, high hedge wall continuity
   color_palette: Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue
   lighting_setup: Shadowy paths, light-at-end glow, sun-stripe corridor, dappled-floor pattern, mysterious dead-end
   material_texture: Leaves, clipped hedge, dense foliage surface, gravel floor, mossy statue, bark-stem wall
-  render_quality: Mysterious, geometric, puzzle-chamber, green-architecture, perspective-trick, getting-lost poetry
+  render_quality: Precise topiary geometry readability, wayfinding-tension composition, disciplined landscape architecture rendering
   spatial_distortion: None
-  atmosphere: Lost, puzzle, confused, curious, walls-closing-in, center-discovery
-  key_features: High walls, dead ends, gravel path, center fountain, statue focal point, clipped precision
-  creative_brief: Hedge walls rise green and impenetrable, each turn a question with no obvious answer. Gravel crunches underfoot like the maze itself is counting your steps, amused by your confusion. The center waits, whether fountain or folly, a secret the boxwood has promised never to reveal too quickly.
+  atmosphere: Curious disorientation, playful anxiety, enclosed progression, destination suspense
+  key_features: High clipped hedges, junction-node rhythm, gravel route texture, central terminus marker, formal trimming precision
+  creative_brief: >-
+    El estilo debe priorizar experiencia de recorrido y pérdida controlada: muros
+    verdes altos, intersecciones repetidas y orientación progresiva hacia un núcleo.
+    Mantén legibilidad geométrica y tensión lúdica sin convertirlo en narrativa de
+    fantasía cerrada.
 avoidRules:
   - open field
 assets:

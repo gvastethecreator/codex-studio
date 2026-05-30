@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - historical-and-sacred-architecture
 visualDna:
-  aesthetic: Data center aisles, computational cathedral, silicon temple, digital infrastructure, cold aisles of data
-  form_and_line: Perspective lines, rack-grid infinity, cable-management channels, perforated door rhythm, raised floor grid
+  aesthetic: Mission-critical data infrastructure interior, machine-first architecture, uptime-centric technical environment
+  form_and_line: Rack-bay serial rhythm, strict hot/cold aisle zoning, orthogonal cable trays, perforated panel cadence
   color_palette: Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal
   lighting_setup: Artificial cool, rack-integrated glow, service-aisle strip, status-LED constellation, cold-corridor containment
-  material_texture: Metal, plastic, perforated steel, fiber optic, Kevlar cable jacket, heatsink fin
-  render_quality: High tech, loud fan, data-sovereign, server-farm precision, digital fortress
+  material_texture: Powder-coated rack steel, braided fiber looms, perforated mesh doors, rubberized raised-floor tiles, fan-intake dusting
+  render_quality: Facility-grade realism, high information density, precise systems legibility under cool artificial light
   spatial_distortion: None
-  atmosphere: Cold, data, power, humming, computational, always-on vigilance
-  key_features: Blinking lights, server racks, cold aisle, cable management, raised floor, cooling fans
-  creative_brief: Blue LEDs blink their staccato trust across cold aisles, each rack a vault storing the world in zeros and ones. Cooling fans hum their eternal mantra against heat death, the data center a monastery of computation. Light here serves machines not eyes, every blink a prayer to uptime.
+  atmosphere: Controlled urgency, uninterrupted operation, low-human occupancy, infrastructural vigilance
+  key_features: Status-LED clusters, aisle containment, CRAC airflow cues, labeled patch fields, redundancy-oriented rack repetition
+  creative_brief: >-
+    La identidad debe surgir de operación continua y control térmico: todo elemento
+    visual (racks, aire, cableado, señalización) responde a disponibilidad y
+    mantenimiento. Evita look futurista genérico; busca realismo de infraestructura
+    crítica contemporánea.
 avoidRules:
   - messy
   - organic

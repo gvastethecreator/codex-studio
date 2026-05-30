@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin
   atmosphere: Biological, decay, lab-incubator warmth, agar-dawn, invisible-kingdom, decomposition-cycle
   key_features: Spores, colony-margin, aerial-hyphae, conidia-powder, petri-dish-lid, inhibition-zone, contamination-sector, sporulation-color
-  creative_brief: Aerial mycelium reaches upward from the agar surface like a microscopic forest dreaming of spore-bearing altitude, hyphal-fringe exploring the petri-dish atmosphere. Concentric growth rings mark the colony's expansion, each zone a day in the life of an organism that feeds on decay and exhales new life into the carbon cycle. The petri dish becomes an art gallery where the exhibition changes hourly, curated by hyphae and painted in penicillin-mint and sporulation-spectrum color against the agar glass.
+  creative_brief: >-
+    Compose fungal macro studies with colony-margin behavior, aerial hyphae texture, and sporulation color zoning over agar-like substrates. Keep the aesthetic biologically rich and adaptable across mold and mycology specimens.
 avoidRules:
   - clean
 assets:

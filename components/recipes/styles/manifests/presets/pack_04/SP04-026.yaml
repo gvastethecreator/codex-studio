@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: 3D paper engineering
-  form_and_line: Cut edges
-  color_palette: Cardstock, kraft-paper spectrum, die-cut primaries
-  lighting_setup: Paper shadows, crease-relief light, fold-structure shading
-  material_texture: Paper
-  render_quality: Intricate, dimensional, paper-engineering wonder, structural delight
-  spatial_distortion: Folded
-  atmosphere: Surprise, fun, page-turn anticipation, engineered magic
-  key_features: Tabs and slots, pop-up mechanisms, layering depth
-  creative_brief: Paper folds along invisible hinges, tabs and slots creating architecture from cardstock dreams. Drop shadows tell the story of depth, each layer lifting from the page in engineered surprise. This is reading as architecture, where turning the page constructs a world that stands up and demands wonder.
+  aesthetic: Pop-up paper-engineering illustration language with dimensional storytelling
+  form_and_line: Die-cut contours, fold seams, and tab-slot construction edges
+  color_palette: Cardstock and kraft-derived tones with accent primaries
+  lighting_setup: Directional page-top light emphasizing fold relief and cast depth
+  material_texture: Matte paper surface, crease memory, cut-edge fuzz
+  render_quality: Structural handcrafted finish with clear mechanism readability
+  spatial_distortion: Layered fold-out depth and hinge-driven planar shifts
+  atmosphere: Playful, surprising, engineered wonder
+  key_features: Tabs, slots, folds, lift layers, mechanical page architecture
+  creative_brief: >-
+    Compose scenes as foldable structures, not flat illustrations. Prioritize readable paper mechanisms—hinges, layers, and slots—so dimensional surprise remains central while the style stays transferable to different subjects and narrative contexts.
 avoidRules:
   - flat page
 assets:

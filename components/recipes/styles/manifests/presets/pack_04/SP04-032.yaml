@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Flowing decorative lithograph, Alphonse Mucha style, botanical hair, organic ornament, belle epoque beauty
-  form_and_line: Flowing hair/vines
-  color_palette: Peach, Sage, Gold, botanical soft-metallic, organic gem
-  lighting_setup: Flat, stain-glass glow, halo radiance
-  material_texture: Lithograph
-  render_quality: Decorative, floral, sinuous refinement, fin-de-siecle elegance
-  spatial_distortion: Organic curves
-  atmosphere: Beautiful, romantic, belle-epoque reverie, ornamental trance
-  key_features: Circle halo, flowing hair-vines, organic border
-  creative_brief: Hair and vines flow into each other until figure and ornament become a single botanical sentence. Circular halos frame the subject like a stained-glass window dedicated to the religion of beauty. This is the decorative impulse elevated to spiritual practice, where every curve is a prayer and every flower a benediction.
+  aesthetic: Art Nouveau decorative lithograph (Alphonse Mucha influence)
+  form_and_line: Sinuous flowing contour integrating hair, vines, and ornamental framing
+  color_palette: Peach, sage, ivory, and muted gold with floral pastel harmonics
+  lighting_setup: Flat luminous treatment with halo-centered emphasis
+  material_texture: Poster-lithograph grain and ink-flat ornamental finish
+  render_quality: Highly decorative, elegant, and pattern-rich composition
+  spatial_distortion: Organic curve dominance over rigid perspective structure
+  atmosphere: Romantic, ornamental, reverent
+  key_features: Circular nimbus motifs, botanical arabesques, integrated border systems
+  creative_brief: >-
+    Preserve Mucha-style ornamental flow where figure and decoration interweave seamlessly. Prioritize rhythmic line arabesques, halo framing, and floral geometry so the style remains instantly Art Nouveau across varied subjects without fixed scene constraints.
 avoidRules:
   - straight lines
   - minimal

@@ -12,16 +12,17 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Corporate Memphis
-  form_and_line: None
-  color_palette: Flat solid, corporate-memphis palette, bright geometric
-  lighting_setup: None, shadowless, pure vector illumination
-  material_texture: Vector
-  render_quality: Tech startup, clean, pitch-deck polish, generic friendliness
-  spatial_distortion: Big limbs
-  atmosphere: Friendly, corporate, inclusive blandness, diverse stock-photo cheer
-  key_features: Flat, oversized limbs, blobby shapes
-  creative_brief: Oversized limbs and blobby shapes populate a world rendered in the cheerful flatness of startup optimism. Colors sit side by side without shadow or depth, committed to accessibility over atmosphere. This is the visual language of inclusion as aesthetic, where every figure is a friendly abstraction of the human condition.
+  aesthetic: Minimalist vector character style in Corporate Memphis tradition
+  form_and_line: Outline-light geometric figures with simplified anatomy blocks
+  color_palette: Flat bright palette with controlled corporate-friendly contrast
+  lighting_setup: Shadowless vector treatment with optional minimal shape layering
+  material_texture: Clean digital-flat surfaces without tactile grain
+  render_quality: UI/editorial-ready vector polish with high scalability
+  spatial_distortion: Oversized limbs and soft blobby morphology
+  atmosphere: Friendly, approachable, optimistic
+  key_features: Abstract human forms, geometric props, flat compositional hierarchy
+  creative_brief: >-
+    Keep figures abstract, accessible, and instantly legible through flat geometry and simplified proportion. Maintain Corporate Memphis visual familiarity while avoiding over-specific narrative framing so assets stay reusable across product contexts.
 avoidRules:
   - detail
   - texture

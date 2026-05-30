@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: None, natural-proportion, geta-board framing, sashimi-fan geometry, nigiri-oval balance
   atmosphere: Clean, tasty, sushi-counter quiet, soy-sauce dip anticipation, wasabi-nose-cleanse
   key_features: Rice grains, shari-pearl definition, nori-wrap band, wasabi-dot, pickled-ginger mound, soy-sauce dish
-  creative_brief: The knife falls once, a single stroke separating flesh from flesh with the conviction born of a decade's practice at dawn. Shari pearls hold their form under nigiri pressure, each grain of rice individually placed by hands that learned patience at the Tsukiji auction. Omakase is a conversation conducted in silence where the itamae speaks through the arrangement of salmon-orange and hamachi-amber on black lacquer, each piece a haiku of the sea.
+  creative_brief: >-
+    Emphasize precision-cut seafood geometry, shari grain structure, and disciplined arrangement rhythm typical of high-end sushi presentation. Preserve freshness cues, lacquer contrast, and minimalist balance for reusable omakase-style direction.
 avoidRules:
   - cooked
   - dry

@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization
   atmosphere: Calm, focus, macro-meditation, rain-pause, single-drop universe
   key_features: Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight, chromatic-aberration fringing, surface-tension curvature
-  creative_brief: The droplet becomes a lens, surface tension holding the sphere in a balance between gravity and molecular cohesion, a temporary crystal of liquid physics. Inside the drop, an entire world waits compressed into refractive suspension, inverted and miniature, a universe that fits on a blade of grass. The bokeh-background dissolves into chromatic softness while the contact-line marks the boundary where water meets leaf in perfect capillarity.
+  creative_brief: >-
+    Compose liquid-lens macro imagery around spherical droplets, inverted refractive interiors, and precise contact-line behavior. Prioritize optical clarity and tension-driven curvature without fixing the style to one surface or setting.
 avoidRules:
   - dry
 assets:

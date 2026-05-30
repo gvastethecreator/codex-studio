@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: None, natural-contour, feather-curve, vane-width taper, rachis-diameter
   atmosphere: Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy
   key_features: Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather, calamus-base
-  creative_brief: Barbules hook into neighboring barbules with the zipper precision of velcro designed by evolution and refined across sixty million years of flight. The rachis spine runs through the center of the vane like a keel through water, organizing chaos into aerodynamic surface, each barb contributing to a structure so perfect it taught aviation that flight was already solved. Keratin iridescence shifts from green to purple at the tilt of the feather, structural color born from surface physics rather than pigment.
+  creative_brief: >-
+    Highlight feather micro-architecture through rachis structure, barb-barbule interlock, and angle-dependent iridescence. Preserve avian aerodynamic logic and keratin texture detail in a broadly reusable macro style.
 avoidRules:
   - blurry
 assets:

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Cursed amusement park with colorful grotesque aesthetics.
-  subject_treatment: Clown bosses and lethal attraction automatons.
-  color_and_tone: Dirty yellow, carmine red, and spectral violet.
-  lighting_and_shadow: Flickering fair lights and theatrical fog.
-  texture_and_material: Peeling paint, old canvas, and oxidized metal.
-  camera_and_composition: Tent entrance as the danger focal point.
-  atmosphere_and_mood: Playful unease and unpredictable chaos.
-  rendering_and_quality: Boss-rush stage with strong identity.
+  aesthetic: Corrupted carnival-horror spectacle blending festive visual language with predatory underworld game-space design.
+  subject_treatment: Twisted ringmaster archetypes, malfunctioning attraction constructs, and exaggerated mascot-fear iconography.
+  color_and_tone: Nicotine yellows, coagulated carmine, bruise-violet haze, and intermittent sodium-white glare for unstable tonal rhythm.
+  lighting_and_shadow: Erratic marquee flicker, strobing practicals, volumetric fog beams, and deep pocketed shadows at circulation edges.
+  texture_and_material: Cracked enamel coatings, mildew-stained canvas, rusted ride mechanics, and grease-darkened junction hardware.
+  camera_and_composition: Choke-point entry composition with layered threat reveals, asymmetrical framing tension, and forced perspective funnels.
+  atmosphere_and_mood: Carnivalesque dread, malicious playfulness, and escalating boss-arena unpredictability.
+  rendering_and_quality: High-impact encounter concept-art fidelity with clear gameplay readability and grotesque environmental character.
 avoidRules:
   - watermark
   - text

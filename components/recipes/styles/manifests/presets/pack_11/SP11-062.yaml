@@ -21,7 +21,8 @@ visualDna:
   spatial_distortion: Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v
   atmosphere: Cozy, close, fabric-store, textile-tradition, thread-history, warp-weighted loom
   key_features: Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge
-  creative_brief: Warp crosses weft in the ancient rhythm of the loom, each thread intersection a small knot of civilization repeated ten thousand times per yard. Individual fibers twist into plies, plies into yarn, yarn into the architecture of clothing and shelter and sails that crossed oceans. The weave reveals itself only to those who lean close enough to see the textile for the forest of threads it truly is, fiber-halo fuzz catching raking light.
+  creative_brief: >-
+    Build textile macro studies from visible warp-weft architecture, ply twist detail, and raking-light fiber halo. Keep tactile weave logic central so the style applies across fabrics, garments, and material studies.
 avoidRules:
   - smooth
 assets:

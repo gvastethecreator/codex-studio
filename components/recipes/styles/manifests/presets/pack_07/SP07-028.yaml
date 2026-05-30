@@ -12,16 +12,21 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Vertical forest building, living architecture, Bosco Verticale, breathing tower, planted habitat
-  form_and_line: Organic + Grid, staggered planters, stepped terraces, living balconies, vegetated fins
+  aesthetic: Vertical biophilic high-rise, metabolist eco-tower, planted-envelope architecture, urban rewilding facade
+  form_and_line: Orthogonal slab grid interleaved with irregular canopy protrusions, cantilevered planter bands, stacked terrace strata
   color_palette: Green plants, Wood, Sky reflection, Soil Brown, Seasonal Blossom color
   lighting_setup: Natural sun, leaf-filtered dapple, photosynthesis glow, seasonal-angle shadow
   material_texture: Leaves, timber, living bark, bamboo cladding, rammed earth, recycled aggregate
-  render_quality: Eco-friendly, alive, biophilic wellness, carbon-negative beauty, nature-reclaimed
+  render_quality: High-detail architectural visualization, species-level planting readability, believable facade ecology and maintenance logic
   spatial_distortion: Overgrown
-  atmosphere: Healthy, future, fresh, oxygen-rich, symbiotic, planet-healing optimism
-  key_features: Trees on balcony, green walls, integrated planters, solar shading, rainwater harvesting, biodiversity habitat
-  creative_brief: Trees emerge from balconies like the forest is reclaiming its territory one floor at a time. Glass reflects green, a tower that breathes, filtering city air through a million leaves. The building stands as a treaty between vertical ambition and horizontal ecology, each terrace a peace offering to the biosphere.
+  atmosphere: Regenerative urbanism, breathable density, temperate microclimate comfort, long-horizon civic optimism
+  key_features: Deep planter setbacks, mixed-height canopy layers, facade irrigation tracks, bird-supportive ledges, evapotranspirative shading
+  creative_brief: >-
+    Construye una tipología de torre-jardín donde la vegetación no sea decorativa,
+    sino parte del sistema arquitectónico: control solar, amortiguación térmica,
+    identidad de fachada y hábitat urbano. El estilo debe mantener lectura técnica
+    (estructura, drenaje, mantenimiento) y al mismo tiempo una presencia orgánica
+    densa, apta para múltiples programas residenciales o mixtos.
 avoidRules:
   - concrete
   - industrial

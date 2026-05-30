@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Underwater glass tunnel, submerged walkway, ocean-immersed passage, blue cathedral, marine immersion
-  form_and_line: Curved glass, arched acrylic, perspective tube, floor-to-ceiling curve, flowing water line
+  aesthetic: Immersive marine tunnel architecture, acrylic ocean envelope, subaquatic promenade spectacle
+  form_and_line: Continuous arched shell sections, tubular perspective thrust, layered water-column depth bands, soft biotic flow lines
   color_palette: Blue, Cyan, Aquamarine, Deep Navy shadow, Bioluminescent fleck, Sandy floor tan
   lighting_setup: Caustics, rippling light nets, overhead-dappled, blue ambient, tank-glow
-  material_texture: Glass, water, acrylic, coral rock, sand bed, shimmering scale
-  render_quality: Immersive, blue, aquarium-clarity, oceanic wonder, deep-blue meditation
+  material_texture: Thick acrylic panel seams, caustic-lit water skin, suspended particulates, reef substrate roughness, scale flashes
+  render_quality: High-clarity aquatic rendering, refractive fidelity, volumetric depth realism with controlled color attenuation
   spatial_distortion: Refraction
-  atmosphere: Wonder, deep, floating, quiet-awe, blue-weightless, other-world calm
-  key_features: Fish overhead, glass tunnel, caustic light patterns, sharks, coral, stingrays
-  creative_brief: Water bends light into dancing nets that sweep across the tunnel floor like living embroidery. Sharks glide overhead with the slow confidence of creatures that have never questioned their dominion. The tube becomes a lung breathing blue, every visitor a bubble of warm air moving through cold depths.
+  atmosphere: Quiet awe, pressurized calm, cinematic blue immersion, slowed human tempo
+  key_features: Overhead marine silhouettes, caustic lattice sweeps, acrylic rib joints, variable turbidity zones, biotic layering
+  creative_brief: >-
+    Define este preset desde óptica y envolvente: refracción, caústicas y gradiente
+    de profundidad deben construir la experiencia. La arquitectura del túnel tiene
+    que sentirse robusta y técnica, mientras la vida marina aporta escala, ritmo y
+    movimiento atmosférico.
 avoidRules:
   - dry
 assets:
