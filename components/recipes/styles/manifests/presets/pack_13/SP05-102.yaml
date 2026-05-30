@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Realistic human proportions, middle-aged body types, grounded camera angles, no hero poses
   atmosphere: Weary, grounded, melancholic realism, adult resignation, quiet desperation
   key_features: Facial pores and wrinkles, stubble rendering, tired-eye bags, clothing fabric detail, cigarette smoke trails
-  creative_brief: Every wrinkle tells a story the character stopped telling years ago. The fluorescent lights of a late-night office expose not just skin but the accumulated weight of ordinary survival. Beauty here is an honest reckoning with what time does to faces that never expected to be looked at.
+  creative_brief: >-
+    Preserve gritty realist seinen grammar as a reusable style system:
+    unflattering practical lighting, age-and-labor facial detail fidelity, and
+    grounded adult-drama material realism should remain consistent across
+    subjects.
 avoidRules:
   - cute
   - kawaii

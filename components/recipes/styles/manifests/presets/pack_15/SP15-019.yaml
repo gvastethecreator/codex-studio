@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Symmetric central perspective emphasizing civic monumentality.
   atmosphere: Confident progress, latent risk, and mid-century spectacle.
   key_features: Isotope fountain, atom sculptures, civic dome, and radiation-proof tram stops.
-  creative_brief: An atompunk downtown designed as a public promise that science can save everything.
+  creative_brief: >-
+    Preserve neon isotope-plaza grammar as a reusable style system:
+    retro-atomic civic monumentality, spectacle-driven public science, and
+    latent-risk aesthetic tension should remain coherent across subjects.
 avoidRules: [photoreal, post-apocalypse-rust, grimdark-gore, medieval-elements, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-019.webp }
 attributes:

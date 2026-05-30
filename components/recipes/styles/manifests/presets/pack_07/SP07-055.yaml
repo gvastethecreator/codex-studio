@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Edible architecture, confectionery city, sugar-frosted fantasy, dessert landscape, gumdrop wonderland
-  form_and_line: Rounded soft, lollipop colonnades, icing-scallop trim, gumdrop spires, chocolate-bar block
+  aesthetic: Confectionery urban fantasy, edible-architecture surrealism, high-whimsy sugarcraft environment language
+  form_and_line: Soft rounded massing, candy-column repetition, piped-icing ornament bands, dessert-object modular forms
   color_palette: Pink, Pastel, Candy-apple Red, Gumdrop Green, Marshmallow White, Licorice Black
   lighting_setup: Soft sugar glow, candy-store warm, frosting-sparkle, gumdrop-translucent, sugar-crystal shimmer
   material_texture: Frosting, cake, hard candy shell, marshmallow, wafer, spun-sugar web, chocolate drip
-  render_quality: Cute, delicious, Willy-Wonka dream, sugar-rush beauty, confectionery perfection, edible fantasy
+  render_quality: Stylized high-saturation fantasy rendering with material-edibility cues and playful structural coherence
   spatial_distortion: Melting
-  atmosphere: Sweet, fun, candy-store joy, whimsical, sugar-high delight, childhood wonder
-  key_features: Sprinkles, gumdrop path, icing trim, candy-cane columns, chocolate river, lollipop trees, gingerbread walls
-  creative_brief: Gumdrop spires dissolve slightly at their peaks, architecture built from the chemistry of sweetness and the physics of whimsy. Icing traces scalloped promises across gingerbread walls, every surface a temptation that would ruin dinner. The kingdom stands in eternal afternoon, a place where dentists fear to tread and children dream of citizenship.
+  atmosphere: Playful excess, cheerful surrealism, hyper-sweet escapism
+  key_features: Icing-ornament facades, gumdrop route markers, sprinkle particulate accents, candy-cane structural motifs, syrup-flow features
+  creative_brief: >-
+    Build this preset as a confectionery design system: edible materials,
+    playful ornament, and bright sugar-coded contrast should define the style.
+    Keep it whimsical and modular so subjects can change while the candy
+    architecture identity stays unmistakable.
 avoidRules:
   - scary
   - realistic

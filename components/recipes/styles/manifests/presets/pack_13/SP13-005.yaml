@@ -13,16 +13,19 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: Melancholic slice-of-life on a rainy day.
-  form_and_line: Soft strokes, natural anatomy, and everyday acting.
-  color_palette: Gray blues, warm beige, and damp green.
-  lighting_setup: Luz nublada con reflejos de ventana.
-  material_texture: Agua en cristal, tejidos blandos y muebles simples.
-  render_quality: Intimate, cinematic anime frame.
-  spatial_distortion: Close medium framing for emotional connection.
-  atmosphere: Stillness, introspection, and domestic warmth.
-  key_features: Gota en vidrio, gesto sutil, narrativa de cotidiano.
-  creative_brief: A small, human moment that conveys emotion without grandiosity.
+  aesthetic: Intimate slice-of-life anime language with rainy-day melancholy, grounded domestic realism, and restrained emotional dramaturgy
+  form_and_line: Soft contour cadence, naturalistic anatomy simplification, subtle gesture-driven acting lines, and low-noise framing hierarchy
+  color_palette: Clouded blue-grays, damp green undertones, warm beige interior neutrals, and muted skin tones with low-saturation harmony
+  lighting_setup: Overcast ambient key, window reflection accents, diffuse interior fill, and gentle value rolloff for calm tonal continuity
+  material_texture: Raindrop-on-glass diffusion, soft knit and cotton fabrics, matte wood furniture planes, and low-gloss indoor surfaces
+  render_quality: Cinematic everyday anime finish with emotional subtlety, high readability, and controlled detail density
+  spatial_distortion: Medium-close compositional intimacy with shallow depth emphasis and minimal perspective exaggeration
+  atmosphere: Quiet, reflective, tender, and human-scale
+  key_features: Rain-laced glazing cues, understated facial micro-expression, domestic prop simplicity, and soft tonal transitions
+  creative_brief: >-
+    Preserve rainy slice-of-life grammar as a reusable style system: subdued
+    overcast palette, intimate framing, and gesture-led emotional storytelling
+    should remain consistent across subjects.
 avoidRules:
   - photoreal
   - action-chaos

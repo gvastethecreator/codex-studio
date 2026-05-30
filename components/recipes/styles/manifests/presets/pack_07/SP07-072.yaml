@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Ship inside glass, impossible-in-bottle, maritime miniature, patience-craft, message-in-bottle mystery
-  form_and_line: Glass reflection, hull-curve silhouette, mast-rigging threads, bottle-neck constriction, cork-stopper circle
-  color_palette: Wood, Glass, Rigging-tan, Sail-cream, Sea-blue tint, Brass, Cork-brown
-  lighting_setup: Studio, glass-highlight streak, bottle-curve distortion-glint, display-shelf ambient, window-light catch
-  material_texture: Glass, miniature, cork, thread, wire, tissue-paper sail, tiny-metal, dust-in-bottle
-  render_quality: Detailed, impossible, ship-in-bottle wonder, maritime-craft miracle, patience-art, miniature-perfection
-  spatial_distortion: Distorted by glass
-  atmosphere: Precious, trapped, still-voyage, curio-cabinet, patient-hands, impossible-journey, nautical-dream
-  key_features: Glass bottle, miniature ship, cork, rigging threads, glass distortion, display stand, impossible construction
-  creative_brief: Hull and rigging captured mid-voyage through a bottleneck that denies the ship's original scale. Glass distorts the masts, the whole vessel swimming in a lens-curved miniature ocean of trapped air. The bottle holds not just a ship but the impossible patience of hands that threaded masts through necks narrower than conviction.
+  aesthetic: Maritime miniature craft language defined by encapsulated vessel composition, curio-display precision, and impossible-scale illusion within glass containment
+  form_and_line: Elongated bottle silhouette, narrowed neck constraint, compressed mast geometry, fine rigging thread networks, and hull curvature framed by cylindrical enclosure
+  color_palette: Aged wood brown, sail cream, rigging tan, pale bottle aqua tint, oxidized brass accents, neutral glass highlights, and cork earth tones
+  lighting_setup: Controlled display lighting with elongated glass specular streaks, refractive edge highlights, mild internal shadow compression, and shelf-ambient fill
+  material_texture: Clear glass surface, micro-scratched display patina, varnished miniature wood, thread rigging fibers, folded sail paper texture, and porous cork grain
+  render_quality: High-precision miniature rendering with strong scale readability, glass-optics fidelity, and handcrafted curio-display finish
+  spatial_distortion: Cylindrical refraction warp and magnification compression introduced by curved bottle glass
+  atmosphere: Reverent, meticulous, contemplative, archival, and quietly impossible
+  key_features: Neck-constrained assembly illusion, fine thread rigging web, cork-sealed enclosure, magnified glass curvature, miniature hull detailing, and display-plinth presentation
+  creative_brief: >-
+    Keep the preset anchored in encapsulated-miniature craft grammar: visible
+    glass refraction behavior, constrained-insertion assembly logic, and
+    meticulous rigging density must remain stable across subjects.
 avoidRules:
   - ocean
 assets:

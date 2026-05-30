@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Glitch-displaced body parts, RGB-channel-offset doubling, screen-wrap distortion, fish-eye music-video lens
   atmosphere: Euphoric, overstimulated, terminally-online joy, digital-nativity celebration
   key_features: Chromatic aberration edges, RGB channel split, holographic overlay, internet-culture visual references, digital glitch artifacts
-  creative_brief: The screen drinks itself, pixels bleeding into one another in a RGB-split sacrament of digital excess. Every edge fractures into chromatic rainbows, every surface holographic foil catching the ring-light glow of infinite scroll. This is the aesthetic of being too online to feel anything but sublime.
+  creative_brief: >-
+    Preserve neon-hyperpop grammar as a reusable style system: RGB-split edge
+    behavior, high-saturation digital glow stacking, and holographic glitch
+    overlays should remain consistent across subjects.
 avoidRules:
   - muted
   - subtle

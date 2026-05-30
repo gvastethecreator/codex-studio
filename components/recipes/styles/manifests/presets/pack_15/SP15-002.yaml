@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: S-curve rail perspective that links foreground station life to distant garden districts.
   atmosphere: Efficient calm, civic trust, and everyday delight in shared infrastructure.
   key_features: Quiet glide trains, pollinator bridges, open ticketless platforms, shade-rich promenades.
-  creative_brief: A post-car transit corridor where stations operate as neighborhood gardens and movement feels frictionless, inclusive, and joyful.
+  creative_brief: >-
+    Preserve wind-garden monorail grammar as a reusable style language:
+    ribbon-transit continuity, station-as-garden typology, and pedestrian-first
+    civic flow should remain stable across subjects.
 avoidRules: [photoreal, cyberpunk-grime, warlike, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-002.webp }
 attributes:

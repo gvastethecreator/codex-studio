@@ -13,15 +13,18 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: Modern shrine romance, fox-familiar charm, godhood responsibilities, soft comedy and spiritual tenderness, moonlit shrine stairs and magical domesticity
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  form_and_line: Shrine-ornament contour rhythm, kimono-sleeve flow lines, fox-tail gesture accents, and expressive sacred-comedy framing
+  color_palette: Vermilion gate reds, moonlit indigo, parchment cream, fox-gold accents, and lantern amber warmth
+  lighting_setup: Shrine-lantern pools, cool moon rim lighting, and talisman-like localized glow in twilight scenes
+  material_texture: Lacquered wood, stone-step wear, paper charm fibers, silk weave drape, and brushed ceremonial metal accents
+  render_quality: Spiritual-romcom rendering with folkloric detail clarity, playful intimacy, and luminous night atmosphere
+  spatial_distortion: Sacred-stair perspective lift with subtle spirit-layer parallax
   atmosphere: Playful, spiritual, romantic, luminous
   key_features: Shrine props, fox motifs, moonlit stair scenes, divine-contract details, playful supernatural intimacy
-  creative_brief: Shrine stairs connect two worlds and the space between them belongs to no one but the fox who waits at the top. Moonlight does not illuminate—it consecrates, turning domestic moments into small acts of worship. Divine contracts are signed in the language of shared meals and hair-trigger sarcasm, and that is exactly how it should be.
+  creative_brief: >-
+    Preserve shrine-romance grammar as a reusable style system: vermilion
+    spiritual architecture, moonlit familiar motifs, and playful devotional
+    tenderness should remain stable across subject changes.
 avoidRules:
   - realistic
   - 3d render

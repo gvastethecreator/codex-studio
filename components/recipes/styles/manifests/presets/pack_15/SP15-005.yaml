@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Amphitheater-like basin depth emphasizing a multifunctional water-energy core.
   atmosphere: Collective comfort, thermal relief, and visible ecological stewardship.
   key_features: Thermal battery basins, refill kiosks, mist pergolas, and everyday mixed-age occupancy.
-  creative_brief: A neighborhood plaza that openly displays water management and passive cooling as beautiful public infrastructure rather than hidden utilities.
+  creative_brief: >-
+    Preserve sun-reservoir commons grammar as a reusable style system:
+    concentric hydro-civic planning, thermal-relief architecture, and public
+    stewardship visibility should remain coherent across subjects.
 avoidRules: [photoreal, militarized, dirty-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-005.webp }
 attributes:

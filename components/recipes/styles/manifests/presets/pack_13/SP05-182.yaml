@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Fashion-forward adult shojo, cigarette smoke over cramped Tokyo apartments, black lace and stage lights, romantic damage, friendship and ambition grinding together
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Adult-fashion shojo drama language with black-lace intimacy, apartment-night realism, and stage-glamour heartbreak duality
+  form_and_line: Slim fashion-forward contouring, angular romantic posing, high-emotion facial line accents, and silhouette contrast between streetwear and performance looks
+  color_palette: Black and wine-red anchors, smoky mauves, metallic silver accents, low-ambient amber practicals, and selective neon-stage highlights
+  lighting_setup: Interior practical pools, cigarette-smoke diffusion, backstage spotlight slices, and moody rim accents for emotional fracture scenes
+  material_texture: Lace and leather material contrast, glossy makeup highlights, lived-in apartment surfaces, and textile detail with urban wear traces
+  render_quality: Stylish mature shojo rendering with polished fashion readability, intimate drama tonality, and high emotional clarity without pastel washout
+  spatial_distortion: Compact urban interior framing with runway-like silhouette emphasis and controlled depth around interpersonal tension
   atmosphere: Stylish, aching, intimate, adult
   key_features: Fashion silhouettes, apartment intimacy, concert lighting accents, emotional confrontation framing, black-lace detail
-  creative_brief: Black lace is armor for hearts that bruise in fashionable silhouettes. Cigarette smoke fills the space between what two people want and what they can actually give. Stage lights expose everything, and the most dangerous duet is the one where ambition and love refuse to take turns.
+  creative_brief: >-
+    Preserve black-lace apartment-heartbreak grammar as a reusable style
+    system: fashion-drama silhouette contrast, smoky intimate lighting, and
+    ambition-versus-affection tension should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Model village, papercraft diorama, folded world, origami architecture, card-stock miniature
-  form_and_line: Cut edges, fold-score geometry, glue-tab seams, pop-up angles, diorama-depth layering
-  color_palette: White paper, Kraft Brown, Newsprint Grey, Colored-card stock tints, Tracing-paper Milk
-  lighting_setup: Studio soft, flat-model light, cut-shadow starkness, paper-translucency glow, tabletop spot
-  material_texture: Paper grain, card-stock tooth, fold-creases, cut-edge fiber, glue-bead, bristol surface
-  render_quality: Fragile, craft, miniature-precision, paper-sculpture art, architectural-model beauty
+  aesthetic: Papercraft urban miniature language centered on folded construction logic, diorama layering, and handcrafted architectural model sensibility
+  form_and_line: Crisp cut-edge silhouettes, scored fold hinges, tab-locked joints, stepped pop-up planes, and shallow stacked depth cues
+  color_palette: Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency, and muted pigment accents
+  lighting_setup: Soft tabletop key, directional shadow cuts from paper edges, low-contrast fill, and subtle translucency glow through thin sheet layers
+  material_texture: Visible paper fiber, card-stock tooth, scored crease memory, cut-edge fuzz, dried glue seams, and matte bristol finish
+  render_quality: High-clarity handcrafted miniature rendering with delicate construction detail, controlled scale cues, and intentionally non-photoreal material behavior
   spatial_distortion: None
-  atmosphere: Quiet, delicate, handmade, still-life, cardboard-dream, patient-craft, tiny-perfection
-  key_features: Fold lines, cut edges, miniature scale, glue tabs, layered depth, pop-up elements, paper grain
-  creative_brief: Cut edges cast razor shadows, each fold a decision frozen in card stock and craft knife precision. The town rises from paper flats like a pop-up book dreaming itself three-dimensional. Glue tabs hold buildings together with the tender fragility of things made by hands that knew it would not last.
+  atmosphere: Delicate, patient, precise, contemplative, and visibly hand-assembled
+  key_features: Exposed fold-score lines, tab-and-slot joins, layered façade planes, miniature street depth stacking, paper-edge shadow rhythm, and matte handmade finish
+  creative_brief: >-
+    Keep this preset defined by papercraft construction grammar: folded planar
+    architecture, exposed assembly seams, and miniature diorama depth should
+    remain consistent and transferable across subjects.
 avoidRules:
   - realistic
 assets:

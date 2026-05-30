@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Diagonal boulevard view emphasizing speed and social flow.
   atmosphere: Electric elegance, urban music pulse, and curated decadence.
   key_features: Jazz clubs, radio towers, deco taxis, and mirrored canopies.
-  creative_brief: A decopunk nightlife district that runs on style, voltage, and live brass.
+  creative_brief: >-
+    Preserve chrome jazz-boulevard grammar as a reusable style system:
+    nocturnal deco-streamline rhythms, music-pulse nightlife choreography, and
+    reflective urban glamour should remain coherent across subjects.
 avoidRules: [photoreal, medieval-ornament, pastoral-rural, post-apocalypse, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-023.webp }
 attributes:

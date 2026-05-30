@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Mythic plant-horror action in modern Tokyo, shrine lineage duty, monster invasions, spiritual bureaucracy, 90s occult action with emergency-team momentum
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  aesthetic: Urban-occult crisis anime language with shrine-lineage duty, plant-entity incursion dread, and 90s emergency-response supernatural momentum
+  form_and_line: Sharp cel-era contouring, thorn-vine intrusion silhouettes, tactical action stroke bursts, and ritual-symbol inking accents
+  color_palette: Emergency reds, toxic chlorophyll greens, asphalt neutrals, shrine-gold accents, and stormed night blues
+  lighting_setup: Siren-practical contrast, shrine-talisman glow cues, high-contrast cel shadow blocks, and invasion-event rim flashes
+  material_texture: Wet urban concrete, invasive botanical creep textures, painted matte city backdrops, and light cel-grain film warmth
+  render_quality: High-tension 90s occult-action render with clear threat readability, procedural-team staging, and myth-vs-modern polish
+  spatial_distortion: Kinetic urban perspective with growth-driven environmental deformation and emergency-zone depth compression
   atmosphere: Urgent, mythic, urban, supernatural
   key_features: Shrine symbols, monster-vine invasions, city emergency framing, lineage heroine posture, occult-tech contrast
-  creative_brief: Ancient roots crack concrete, and the city learns its own mythology the hard way. Shrine duty is not heritage but emergency, a bloodline answering the phone at 3 AM. In the spaces between skyscrapers, something older than asphalt stirs and remembers its name.
+  creative_brief: >-
+    Preserve mythic-tokyo-purge grammar as a reusable style system:
+    shrine-symbol emergency framing, invasive botanical threat geometry, and
+    occult-procedural urban tension should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

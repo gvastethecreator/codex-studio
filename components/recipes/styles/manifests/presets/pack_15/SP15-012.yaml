@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Layered waterfront depth from root-level platforms to elevated public decks.
   atmosphere: Resilient tranquility, civic ingenuity, and ecological reciprocity.
   key_features: Amphibious neighborhoods, mangrove filtration belts, tidal mobility corridors.
-  creative_brief: A thriving coastal city that rises with tides and treats mangroves as core urban infrastructure.
+  creative_brief: >-
+    Preserve mangrove lift-city grammar as a reusable style language:
+    amphibious civic elevation, root-network filtration logic, and tidal
+    neighborhood continuity should remain stable across subjects.
 avoidRules: [photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-012.webp }
 attributes:

@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Shopping-street community coziness, mochi-shop sweetness, cheerful signage, festival intimacy, Kyoto warmth, low-stakes affection and local routine charm
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Rounded storefront silhouettes, signage-friendly contour rhythm, and ensemble blocking tuned for neighborhood familiarity
+  color_palette: Mochi-cream whites, warm cedar browns, festival reds, mint paper signage accents, and evening amber shoplight
+  lighting_setup: Arcade lantern strings, storefront tungsten spill, and soft overcast daylight transitions on street corridors
+  material_texture: Rice-cake powder matte, wooden counter grain, noren fabric weave, paper banner fibers, and polished display-glass highlights
+  render_quality: Community-market slice rendering with cozy commerce detail and festive readability
+  spatial_distortion: Street-corridor depth curvature emphasizing intimate local scale
   atmosphere: Cheerful, neighborhood-soft, tasty, warm
   key_features: Shopping-street props, food-stall detail, community ensemble staging, festival banners, cozy storefront lighting
-  creative_brief: A shopping arcade hums with the rhythm of familiar faces and freshly steamed mochi. Festival bunting catches the breeze above a storefront where every transaction is a small act of belonging. The street holds its warmth like a shared secret, passed between neighbors who need no words.
+  creative_brief: >-
+    Preserve mochi-street warmth grammar as a reusable style language:
+    neighborhood storefront rhythm, food-craft texture cues, and communal
+    festival intimacy should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

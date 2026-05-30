@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Sightly off-model proportions, frame-to-frame variation implied, organic asymmetry, hand-drawn wobble
   atmosphere: Nostalgic, handmade, pre-digital soul, animation-desk intimacy, warm imperfection
   key_features: Pencil underdrawing visible, smudge marks, peg-bar registration holes, rough construction lines, colored pencil fill
-  creative_brief: The hand that drew this is still present in every smudge, every construction line left unerased, every wobble that refused to become perfect. This is animation before it learned to lie — raw graphite on paper, the smell of a studio floor, the sound of a pencil scratching toward the next frame.
+  creative_brief: >-
+    Preserve textured hand-drawn rough grammar as a reusable style system:
+    visible underdrawing, paper-tooth graphite behavior, and imperfect human
+    line variance should remain consistent across subjects.
 avoidRules:
   - digital clean
   - vector smooth

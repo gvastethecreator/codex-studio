@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: 90s fashion-school youthfulness, handmade accessories, Harajuku color pops, neighborhood love drama, cute clutter and ambitious creative dreams
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: 90s fashion-atelier shojo grammar with handmade-accessory culture, Harajuku pop layering, and neighborhood-creative coming-of-age energy
+  form_and_line: Expressive fashion-silhouette linework, accessory-forward contour emphasis, playful pose asymmetry, and boutique-display compositional rhythm
+  color_palette: Saturated candy pops, denim and black streetwear anchors, pastel accessory accents, sticker-bright highlights, and warm skin tones
+  lighting_setup: Boutique-window glow, overcast street diffusion, neon-sign accent spill, and soft indoor tungsten warmth for atelier moments
+  material_texture: Denim grain, knit and canvas layering, handmade bead and fabric trim detail, paper-pattern scraps, and glossy plastic charm accents
+  render_quality: Vibrant retro-shojo rendering with trend-culture readability, handcrafted detail density, and youthful editorial polish
+  spatial_distortion: Fashion-illustration elongation with dynamic street-angle framing and accessory-scale emphasis
   atmosphere: Cute, stylish, youthful, crafty
   key_features: Handmade accessories, Harajuku color, art-school props, street-fashion silhouettes, neighborhood romance staging
-  creative_brief: Handmade is a fingerprint pressed into fabric, every stitch carrying the tremor of a dream too new to name. Harajuku streets spill color like an open sketchbook, and ambition wears mismatched earrings on purpose. The neighborhood is not setting but conspirator, every alley humming with the possibility of being seen by someone who gets it.
+  creative_brief: >-
+    Preserve neighborhood-story fashion grammar as a reusable style language:
+    handmade accessory density, Harajuku color-layer logic, and creative-youth
+    editorial energy should remain consistent across subject changes.
 avoidRules:
   - realistic
   - 3d render

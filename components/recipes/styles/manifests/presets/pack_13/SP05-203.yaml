@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Teen friendship turned expedition dream, bright skies, travel prep, school uniforms becoming adventure gear, emotional propulsion through ordinary sincerity
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Expedition-energy silhouette language, map-and-gear contour emphasis, and momentum-forward pose readability
+  color_palette: Polar whites, sky cyan gradients, uniform navy anchors, orange determination accents, and sunlit skin warmth
+  lighting_setup: Crisp travel-day daylight, high-albedo horizon bounce, and pre-departure interior practical warmth
+  material_texture: Nylon travel gear, insulated fabrics, map paper fibers, frost-kissed surfaces, and transit-scuffed luggage detail
+  render_quality: Inspirational youth-expedition rendering with clean atmospheric breadth and emotional propulsion clarity
+  spatial_distortion: Horizon-expansion perspective that amplifies collective forward motion
   atmosphere: Hopeful, brave, bright, uplifting
   key_features: Travel gear, sky-heavy framing, friendship ensemble, determination close-ups, journey-prep montages
-  creative_brief: Four silhouettes against an impossibly white horizon, their school skirts still creased from yesterday classroom. The map they unfold is less geography than permission — a dare written in longitude and the geometry of friendship. Every frame trembles with the velocity of a dream that refuses to stay hypothetical.
+  creative_brief: >-
+    Preserve youth-expedition glow grammar as a reusable style system:
+    sky-heavy optimism, friendship-driven momentum, and practical travel motifs
+    should stay coherent across different subjects.
 avoidRules:
   - realistic
   - 3d render

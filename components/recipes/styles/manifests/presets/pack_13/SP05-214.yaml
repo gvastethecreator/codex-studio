@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: High-school lethargy rendered as ambient art, soft wind, benches, low-energy friendship, sleepy body language and beautiful nothingness
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Relaxed low-energy pose silhouettes, minimal expression lines, and breezy negative-space composition control
+  color_palette: Pale sky blues, soft grays, uniform neutrals, gentle spring greens, and light cream highlights
+  lighting_setup: Diffuse midday overcast, sleepy classroom ambient fill, and soft bench-side outdoor light
+  material_texture: Light fabric drape, bench paint wear, paper notebook surfaces, and soft wind-ruffled hair texture
+  render_quality: Lethargic-comfort rendering with calm comedic timing and airy minimalism
+  spatial_distortion: Time-dilation framing that stretches quiet pauses and ambient stillness
   atmosphere: Sleepy, gentle, airy, easygoing
   key_features: Reclined poses, breeze effects, bench-and-classroom staging, minimal exertion comedy, soft ambient light
-  creative_brief: A boy listless as a curtain in summer breeze becomes the still center around which friendship orbits without demand. Benches and classroom corners transform into temples of beautiful inertia — places where doing nothing together counts as everything. Slowness is not a flaw here; it is the aesthetic.
+  creative_brief: >-
+    Preserve breeze-drift lethargy grammar as a reusable style system:
+    low-energy friendship staging, airy pause-centric timing, and beautiful
+    everyday inertia should remain coherent across subjects.
 avoidRules:
   - realistic
   - 3d render

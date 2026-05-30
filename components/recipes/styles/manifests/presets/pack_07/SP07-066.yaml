@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Lego toy brick world, ABS-plastic metropolis, snap-together skyline
-  form_and_line: Brick seams, stud-grid geometry, modular-block stacking, stepped-pyramid, interlocking corners
-  color_palette: Primary plastic, Bright Red, Yellow, Blue, Green, Black, White, Grey
-  lighting_setup: Glossy, plastic-surface reflection, light-pool on studs, playroom-filtered sun, specular shine
-  material_texture: Plastic studs, injection-mold surface, ABS sheen, clutch-power grip, brick-name logo, smooth-slope
-  render_quality: Toy, blocky, LEGO-catalog perfection, snap-together realism, brick-built charm, Danish toy beauty
+  aesthetic: Brick-built toy-city language based on modular ABS construction, stud-visible assembly logic, and playful engineered urban composition
+  form_and_line: Orthogonal stud grid, stepped block massing, interlocking corner bonds, repeated module cadence, and clean toy-scale geometry transitions
+  color_palette: Saturated primary red-yellow-blue, bright green accents, neutral black-white-gray balancing blocks, and occasional transparent-plastic highlight tones
+  lighting_setup: Broad diffuse indoor key light with crisp plastic speculars, stud-top highlight clustering, and low-roughness reflections across molded surfaces
+  material_texture: Injection-mold ABS sheen, circular stud caps, seamline joints, smooth slope-piece transitions, and subtle tooling marks typical of toy bricks
+  render_quality: High-readability toy-architecture rendering with precise modular assembly, glossy material fidelity, and deliberate non-realistic block abstraction
   spatial_distortion: None
-  atmosphere: Playful, constructed, childhood-creative, instruction-following, brick-searching, imaginative-build
-  key_features: Studs, brick texture, minifigure scale, interlocking bricks, modular builds, brick separator, baseplate
-  creative_brief: Studs catch light on their tiny circular crowns, each brick a pixel in a world built one snap at a time. Modular walls rise in primary-color determination, the city skyline rendered in ABS plastic and childhood ambition. Instructions lie scattered nearby, already abandoned for the superior architecture of imagination.
+  atmosphere: Energetic, constructive, optimistic, playful, and system-driven
+  key_features: Visible stud fields, baseplate-aligned footprints, modular façade stacking, interlocking brick seams, toy-scale proportion logic, and bright plastic color blocking
+  creative_brief: >-
+    Preserve a reusable brick-built grammar: stud-first modular geometry,
+    glossy ABS material response, and color-blocked toy urbanism should remain
+    stable across any subject.
 avoidRules:
   - smooth
   - realistic

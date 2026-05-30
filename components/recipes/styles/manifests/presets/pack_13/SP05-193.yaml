@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Gentle herbalist heroine, medieval court warmth, red-hair glow, palace gardens, respectful romance, competence and tenderness rendered in luminous fantasy elegance
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Court-herbal fantasy shojo grammar centered on dignified tenderness, artisan competency cues, and warm palace-garden elegance
+  form_and_line: Graceful court silhouette flow, botanical tool and vial contour accents, composed expression linework, and soft ceremonial posture arcs
+  color_palette: Botanical greens, warm cream parchment tones, red-hair focal chroma, muted royal blues, and honey-gold highlights
+  lighting_setup: Soft courtyard daylight, filtered garden translucency, candle-warm interior accents, and gentle rim glow around focal hair tones
+  material_texture: Linen and court-satin layering, herb-leaf matte detail, glass-vial translucency, polished wood cabinetry, and subtle embroidery finishes
+  render_quality: Refined fantasy-shojo rendering with craft-competence readability, calm romantic clarity, and luminous but grounded finish
+  spatial_distortion: Storybook depth extension through garden-arch perspective and gentle focal elongation
   atmosphere: Graceful, capable, warm, romantic
   key_features: Herbal props, palace-garden backdrops, red-hair focal contrast, respectful body language, fantasy court costume detail
-  creative_brief: Red hair is not color but declaration, a flag planted in palace soil that refuses to ask permission. Herbs heal not only bodies but the distance between station and sincerity. Competence is the quietest form of love, and every garden nurtured in courtly shadow proves that tenderness can grow anywhere.
+  creative_brief: >-
+    Preserve herbal-courtship fantasy grammar as a reusable style language:
+    botanical craft motifs, warm court elegance, and competence-led tenderness
+    should remain consistent across subject changes.
 avoidRules:
   - realistic
   - 3d render

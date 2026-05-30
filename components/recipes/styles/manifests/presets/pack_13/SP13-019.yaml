@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Gentle anime fantasy with a spirit courier.
-  form_and_line: Organic linework, youthful silhouette, and companion creature.
-  color_palette: Forest green, cream, and sky blue.
-  lighting_setup: Soft natural morning light between trees.
-  material_texture: Leaves, handcrafted leather, and sealed paper.
-  render_quality: Charming illustration in a calm-adventure style.
-  spatial_distortion: Path perspective with layered organic depth.
-  atmosphere: Curiosidad, bondad y viaje personal.
-  key_features: Letter satchel, small spirit, forest path.
-  creative_brief: A mystical delivery day with a warm, familiar tone.
+  aesthetic: Gentle forest-fantasy courier anime language with pastoral mysticism, kindness-forward adventure, and spirit-companion charm
+  form_and_line: Organic natural contours, youthful mobility silhouettes, satchel-and-scroll prop readability, and curved path lines guiding journey progression
+  color_palette: Forest greens, sky-soft blues, cream neutrals, bark browns, and light moss highlights with subdued saturation
+  lighting_setup: Morning canopy-filtered light, soft ground bounce, mild particulate godrays, and warm-cool balance that preserves tranquil tone
+  material_texture: Leaf-layer variation, hand-stitched leather satchels, wax-sealed paper surfaces, mossy bark grain, and soft mist diffusion
+  render_quality: Charming high-clarity anime rendering with calm exploratory pacing, reliable character-prop hierarchy, and cozy fantasy polish
+  spatial_distortion: Path-led layered depth with gentle atmospheric perspective and companion silhouette legibility
+  atmosphere: Kind, curious, hopeful, and quietly magical
+  key_features: Courier satchel iconography, spirit-companion silhouette cues, path-to-forest depth rhythm, and letter-delivery narrative prop anchors
+  creative_brief: >-
+    Preserve forest-courier fantasy grammar as a reusable style system:
+    pastoral palette harmony, journey-guided composition, and spirit-companion
+    warmth should remain stable across subjects.
 avoidRules:
   - photoreal
   - dark-gore

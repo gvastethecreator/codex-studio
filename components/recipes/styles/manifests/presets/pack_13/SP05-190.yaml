@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Polished school romance, former-crush reunion tension, clean uniforms, hallway silences, emotionally guarded adolescence, cool beauty hiding confusion
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Clean-reunion shojo grammar with emotional guardedness, polished school minimalism, and tension carried by near-silent interpersonal spacing
+  form_and_line: Crisp uniform silhouette control, controlled negative-space blocking, understated eyelash and hairline rendering, and pause-heavy pose language
+  color_palette: Cool powder blues, winter-white shirt values, subdued graphite neutrals, faint blush accents, and low-saturation spring greens
+  lighting_setup: Cloud-soft ambient fill, corridor window side-light, subtle reflective floor bounce, and low-bloom highlight restraint
+  material_texture: Pressed cotton uniform planes, matte classroom surfaces, smooth notebook-paper cues, and minimally glossy hair sheen
+  render_quality: Clean contemporary-shojo rendering with composure-forward facial readability and restrained romantic polish
+  spatial_distortion: Emotional-distance compression through corridor depth and over-shoulder perspective narrowing
   atmosphere: Pensive, attractive, hesitant, tender
   key_features: Clean school styling, reunion glances, cool-guy silhouette contrast, airy campus spaces, heart-stopping close-ups
-  creative_brief: A pressed uniform holds the shape of who someone used to be, and reunion is the collision of memory with the stranger who now wears that face. Hallway silences are louder than any confession, reverberating with years of unsaid sentences. Cool exterior is just the first page of a story the heart has not finished writing.
+  creative_brief: >-
+    Preserve clean-uniform reunion grammar as a reusable style system:
+    minimal school-space composition, quiet emotional distance cues, and
+    polished restrained linework should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

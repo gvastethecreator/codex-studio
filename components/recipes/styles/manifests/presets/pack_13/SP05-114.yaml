@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Patchwork-seam-divisions, embroidery-hoop-composition-framing, stuffed-doll-proportions, fabric-gather-pleats
   atmosphere: Cozy, handmade, craft-circle-warmth, grandparent's-sewing-room, slow-craft-meditation, tactile-comfort
   key_features: Stitching-trail-contours, yarn-bundle-hair, button-eyes, fabric-patchwork-seams, embroidery-hoop-framing, frayed-fabric-edges, sashiko-stitching-patterns
-  creative_brief: Every seam is visible, every edge frayed with the softness of fabric that has known hands. Thread replaces ink, stitching contours where outlines once ruled, sashiko patterns running through kimono folds like inherited memory made textile. This world was sewn together one evening at a time, the needle's rhythm still audible in every assembled silhouette.
+  creative_brief: >-
+    Preserve threadbare patchwork anime grammar as a reusable style system:
+    stitch-trail contour substitution, fabric-weave material hierarchy, and
+    handcrafted seam composition should remain consistent across subjects.
 avoidRules:
   - smooth
   - digital

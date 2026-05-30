@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Remote-island humor, calligraphy ink, lively kids, ocean wind and self-reinvention, fish-market energy, broad comedy softened by natural summer beauty
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Expressive brush-gesture motifs, broad comedic body language, and breezy island-space contour openness
+  color_palette: Cerulean summer sky, sea salt whites, island greenery, ink-black calligraphy accents, and sun-warmed ochres
+  lighting_setup: High summer daylight, sea-reflected highlights, and interior tatami shade contrast with warm evening glows
+  material_texture: Brush-bristle ink density, rice-paper absorbency, weathered wood houses, cotton casualwear, and market-crate roughness
+  render_quality: Warm comedic-healing rendering with lively island rhythm and craft-identity clarity
+  spatial_distortion: Wind-driven framing looseness with gesture-led motion emphasis
   atmosphere: Refreshing, funny, breezy, heartfelt
   key_features: Calligraphy tools, seaside village backdrops, energetic kids, summer sky expanses, fish-and-field props
-  creative_brief: Ink splashes across fresh paper as a city-wrecked calligrapher discovers that art lives in the chaos of children and the salt of the sea. Fish-market laughter and cicada drone become brushstrokes of a summer that rewrites identity one imperfect character at a time. The island teaches what Tokyo never could — looseness is mastery.
+  creative_brief: >-
+    Preserve island-calligraphy summer grammar as a reusable style system:
+    brush-and-ink expressiveness, seaside domestic comedy, and breezy
+    self-reinvention tone should remain coherent across subjects.
 avoidRules:
   - realistic
   - 3d render

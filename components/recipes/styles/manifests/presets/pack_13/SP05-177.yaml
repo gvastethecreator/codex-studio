@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Cheerful ensemble spaceship banter, bridge-deck chaos, retro-futurist mecha action, anime-inside-anime meta flavor, bright war-comedy balance
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  aesthetic: Retro-space-opera comedy anime language balancing bridge-deck banter, earnest mecha sorties, and playful meta-genre self-awareness
+  form_and_line: Expressive ensemble line acting, cockpit-and-bridge UI framing geometry, dynamic sortie pose accents, and comedic reaction silhouette clarity
+  color_palette: Bright bridge-console cyans and ambers, team-uniform accent pops, deep space navy backdrops, and warm comedic interior tones
+  lighting_setup: Console-practical glow clusters, alert-state contrast spikes, cel-cut shadow timing for jokes and action beats, and occasional explosion rim flashes
+  material_texture: Analog sci-fi panel surfaces, painted space vistas, cel overlay grain, retro UI display bloom, and mechanical sortie detailing
+  render_quality: Clean 90s ensemble-mecha rendering with dialogue-to-action rhythm readability, lively tonal shifts, and charismatic crew-first polish
+  spatial_distortion: Alternating stable ensemble staging and kinetic sortie perspective bursts to maintain war-comedy pacing balance
   atmosphere: Bouncy, tactical, colorful, meta
   key_features: Bridge-deck ensemble staging, mecha sortie framing, retro UI accents, playful command-room energy, bright team body language
-  creative_brief: War and comedy share the same bridge-deck, the same breath between alarm and punchline. Retro consoles blink with the rhythm of chosen family, mecha limbs extending like arguments made physical. This ship flies on the fuel of irreverence, and every crew member knows the stakes taste sweeter when the jokes land.
+  creative_brief: >-
+    Preserve cheerful bridge-deck mecha grammar as a reusable style system:
+    ensemble command-room kinetics, retro-UI practical lighting, and war-comedy
+    tonal pivots should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

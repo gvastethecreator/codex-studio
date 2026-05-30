@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Quiet school mysteries, careful eye animation, old clubrooms, books and tea, low-drama deduction made beautiful through light and stillness, curiosity carrying the frame
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Deliberate observational line economy, eye-acting emphasis, and tidy prop contours that support deduction readability
+  color_palette: Tea amber, worn-paper cream, polished wood browns, uniform navy, and late-afternoon honey highlights
+  lighting_setup: Window-slat afternoon light, desk-lamp amber pockets, and soft suspended dust-glow in still interiors
+  material_texture: Chalkboard matte, bookcloth wear, ceramic teacup glaze, varnished desk grain, and old-clubroom patina
+  render_quality: Refined quiet-mystery rendering with disciplined stillness and high prop-legibility balance
+  spatial_distortion: Subtle viewpoint tightening around clue objects and gaze vectors
   atmosphere: Curious, refined, calm, observant
   key_features: Clubroom detail, tea-and-book props, attentive facial acting, sunlit dust motes, restrained mystery framing
-  creative_brief: Dust motes drift through sunlit clubroom air, each particle a clue too small to name. A cup of tea cools beside an unopened book, and the stillness itself becomes the mystery worth solving. Curiosity does not shout here — it glows like late afternoon through classroom windows, patient and exact.
+  creative_brief: >-
+    Preserve tea-light classroom mystery grammar as a reusable style system:
+    observational stillness, clue-forward object staging, and warm-intellectual
+    ambience should remain coherent across subjects.
 avoidRules:
   - realistic
   - 3d render

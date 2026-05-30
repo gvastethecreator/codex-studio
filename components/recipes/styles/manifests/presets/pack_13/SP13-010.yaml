@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Adventurous isekai with a caravan in a fantasy forest.
-  form_and_line: Character design varied by class and role.
-  color_palette: Forest greens, soft gold, and leather tones.
-  lighting_setup: Light filtered through leaves, friendly shadows.
-  material_texture: Wood, travel fabric, and handcrafted metal.
-  render_quality: Escena party-anime con claridad de grupo.
-  spatial_distortion: Layered composition with natural depth.
-  atmosphere: Camaraderie, discovery, and an open road.
-  key_features: Dynamic party, mount, visual travel map.
-  creative_brief: A traveling party in a living world with a bright adventurous tone.
+  aesthetic: Isekai adventure-party anime language with warm exploratory spirit, class-differentiated ensemble styling, and fantasy-travel worldbuilding clarity
+  form_and_line: Role-coded character silhouettes, layered caravan staging lines, accessory-driven class readability, and forward-motion composition arcs
+  color_palette: Forest greens, mossy neutrals, warm leather browns, soft gold accents, and sky-filtered natural highlights
+  lighting_setup: Leaf-filtered canopy key light, dappled ground bounce, soft shadow pooling, and warm rim accents on travel gear focal points
+  material_texture: Handworked wood grain, stitched travel fabrics, worn leather straps, forged but low-polish metal fittings, and dust-softened path surfaces
+  render_quality: Ensemble-focused anime rendering with clear party hierarchy, environmental cohesion, and reliable small-card group legibility
+  spatial_distortion: Layered journey composition using mild depth compression to keep multi-character readability without losing world scale
+  atmosphere: Adventurous, friendly, curious, and road-forward
+  key_features: Class-distinct outfit language, caravan/travel prop system, mount-and-gear silhouette markers, and path-to-horizon compositional flow
+  creative_brief: >-
+    Keep this preset anchored in isekai-party travel grammar: class-readable
+    ensemble silhouettes, nature-filtered lighting, and journey-centric fantasy
+    prop language should remain stable across subjects.
 avoidRules:
   - photoreal
   - sci-fi-city

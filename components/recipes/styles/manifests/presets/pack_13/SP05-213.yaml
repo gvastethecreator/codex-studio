@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Restaurant shift banter, aprons and order pads, ensemble workplace chemistry, low-stakes service chaos, after-school job warmth with punchy interactions
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Service-counter blocking lines, apron and tray silhouette clarity, and fast ensemble reaction timing cues
+  color_palette: Diner cream tones, uniform blacks and whites, menu reds, warm kitchen ambers, and stainless highlights
+  lighting_setup: Bright restaurant practicals, kitchen pass-through glow, and evening customer-floor warmth
+  material_texture: Apron cloth, laminated menus, ceramic dish sheen, countertop laminate, and fryer-kitchen metallics
+  render_quality: Workplace-comedy rendering with rhythm-first scene readability and upbeat service realism
+  spatial_distortion: Quick-cut staging compression to support banter-driven comedic pace
   atmosphere: Cheery, busy, ensemble-driven, comfy
   key_features: Restaurant props, work-uniform silhouettes, coworker chemistry staging, service-counter compositions, comedic order-taking beats
-  creative_brief: Order bells ring counterpoint to kitchen chaos as aprons and inside jokes crisscross the dining floor. Nobody here is saving the world — they are saving table four from the wrong dressing and each other from bad days. Service with a smile, but the smile is real, and so is the family that clocked in together.
+  creative_brief: >-
+    Preserve family-restaurant shift grammar as a reusable style language:
+    service-floor choreography, ensemble banter timing, and low-stakes workplace
+    warmth should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

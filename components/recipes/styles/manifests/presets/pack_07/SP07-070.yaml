@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Cookie house, Christmas confection, Hansel-and-Gretel cottage, holiday bakery architecture, edible fairytale
-  form_and_line: Icing piping, scalloped roof-tile cookies, gumdrop border lines, candy-cane porch columns, pretzel-log walls
-  color_palette: Brown, White, Candy, Gumdrop Red/Green, Icing Pink, Peppermint Swirl, Golden cookie
-  lighting_setup: Warm, oven-glow, Christmas-light twinkle, sugar-sparkle, cozy-window amber, holiday-candle
-  material_texture: Cookie, sugar, royal icing, hard candy, pretzel, chocolate, sprinkled surface, gum paste
-  render_quality: Christmas, sweet, holiday-baking beauty, edible-architecture charm, gingerbread-perfection, festive-delicious
+  aesthetic: Edible festive architecture language combining confectionery ornament logic, fairy-tale cottage massing, and handcrafted holiday patisserie detail
+  form_and_line: Piped-icing contour lines, scalloped cookie shingles, candy-column repetition, pretzel-beam framing, and rounded confection trim geometry
+  color_palette: Baked ginger brown, royal-icing white, peppermint red, sugar green, candy pink accents, warm caramel notes, and sprinkle multicolor highlights
+  lighting_setup: Warm interior amber, sugar crystal glints, soft holiday practical twinkle, oven-like base warmth, and low-contrast cozy shadowing
+  material_texture: Baked cookie grain, piped icing relief, crystalline sugar dust, hard-candy gloss, pretzel salt roughness, and chocolate glaze accents
+  render_quality: High-detail confection-architecture rendering with readable edible materials, decorative precision, and handcrafted festive clarity
   spatial_distortion: None
-  atmosphere: Festive, yummy, holiday-joy, kitchen-warm, candy-smell, childhood-December, sweet-tradition
-  key_features: Gumdrops, icing snow, candy cane columns, cookie roof, peppermint path, pretzel fence, sprinkle roof
-  creative_brief: Royal icing traces snow-scallops along cookie-tile rooflines, each piped ridge a small triumph of sugar over structural engineering. Gumdrops march in chromatic guard along pretzel-log walls, candy sentinels at their sweetest posts. The house glows with oven-warmth still fresh, a dwelling built to be eaten, architecture that understands its destiny is delicious demolition.
+  atmosphere: Festive, cozy, whimsical, indulgent, and ceremonially handcrafted
+  key_features: Icing-defined joints, gumdrop or candy-node accents, cookie-tile roof rhythm, peppermint linear motifs, pretzel structural trim, and sprinkle micro-detailing
+  creative_brief: >-
+    Keep this preset anchored in edible-architecture grammar: gingerbread body
+    massing, piped-icing structural linework, and candy ornament systems should
+    define style identity consistently across different subjects.
 avoidRules:
   - inedible
 assets:

@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: DIY school-club softness, tactile wood and cloth, earnest beginner craftsmanship, warm afternoons, friendship built one handmade object at a time
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Tool-and-material contour clarity, beginner-handmade imperfection cues, and cheerful workshop gesture arcs
+  color_palette: Sanded wood beiges, glue-white highlights, cloth pastels, soft mint accents, and amber afternoon window tones
+  lighting_setup: Workshop-side daylight, dust-mote backlight, and gentle practical lamp fill on workbenches
+  material_texture: Sawdust particulate, unfinished timber grain, fabric scraps, adhesive sheen, and hand-painted craft surfaces
+  render_quality: Craft-club rendering with tactile object fidelity, beginner warmth, and process-over-polish readability
+  spatial_distortion: Workbench-focused framing that magnifies handmade object presence
   atmosphere: Crafty, sweet, tactile, optimistic
   key_features: Tools and craft materials, workshop sunlight, beginner-made textures, friend-group posing, handmade object focus
-  creative_brief: Sawdust drifts like slow confetti through the clubroom window-light, settling on half-finished shelves and the shoulders of friends who measure twice and laugh three times. Wood remembers every splinter, cloth holds every crooked stitch, and the thing you build with your own hands carries the warmth of everyone who helped hold it steady.
+  creative_brief: >-
+    Preserve handmade craft-club grammar as a reusable style system:
+    tactile workshop materials, process-visible object making, and friendly
+    collaborative optimism should remain coherent across subjects.
 avoidRules:
   - realistic
   - 3d render

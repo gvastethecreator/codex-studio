@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Atlantis/Rapture submerged lost-city grandeur, art-deco depths, leaking domes
-  form_and_line: Domes, coral, bubble-pods, glass-tunnel arteries, cathedral spires, ring-hub geometry
+  aesthetic: Submerged metropolis retro-futurism, art-deco abyss architecture, drowned-utopia monumental decay
+  form_and_line: Pressure-dome clusters, glass transit arteries, deco verticals, ring-hub circulation geometry, leak-path fractures
   color_palette: Blue, Gold, Biolum, Coral Pink, Seaweed Green, Rust-orange decay, Gleaming Brass
   lighting_setup: Water filtered, blue-ambient abyss, bioluminescent constellation, dome-interior gold glow, emergency red
   material_texture: Wet stone, glass, copper-green patina, coral-encrust, riveted brass, leaking concrete
-  render_quality: Mysterious, deep, Rapture-dystopia, lost-civilization poetry, water-pressure beauty, abandoned majesty
+  render_quality: Cinematic underwater-city fidelity with pressure-aware detail, deco readability, and ruin-overgrowth balance
   spatial_distortion: None
-  atmosphere: Silent, pressure, awe-mixed-with-dread, water-weight, ghostly, decaying-utopia
-  key_features: Bubbles, glass domes, art deco details, leaking cracks, coral overgrowth, bathysphere docks
-  creative_brief: Art deco brass glimmers through water-dark corridors, luxury drowning in slow deterioration. Coral fingers reach through cracks in domed ceilings, the ocean patiently reclaiming what hubris built on its floor. Bioluminescence pulses in the deep like a city's last heartbeat, beautiful and terminal.
+  atmosphere: Pressurized awe, elegiac decline, silent grandeur, abyssal melancholy
+  key_features: Deco-metal motifs, dome leak signatures, coral colonization layers, biolum wayfinding accents, bathysphere interface docks
+  creative_brief: >-
+    Anchor the style in art-deco underwater urbanism: elegant geometric
+    infrastructure under pressure, marine reclamation, and luminous deep-sea
+    ambience. Preserve the lost-civilization tone without locking to a single
+    fictional city.
 avoidRules:
   - sky
   - dry

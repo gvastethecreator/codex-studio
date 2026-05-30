@@ -13,15 +13,18 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: Desert and palace journeys, red-hair heroine resolve, loyal guardians, folk-fantasy romance, travel hardship softened by devotion and destiny
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  form_and_line: Heroic travel silhouette language, cloak-flow contour emphasis, weapon-and-ornament balance, and determined profile readability
+  color_palette: Crimson focal hair tones, sandstone ochres, dusk violets, royal indigo accents, and campfire amber highlights
+  lighting_setup: Harsh travel daylight, desert sunset gradients, and torchlit night pockets with directional contrast
+  material_texture: Weathered cloth wraps, leather straps, metal charm patina, palace stone polish, and wind-worn travel gear
+  render_quality: Folk-fantasy shojo rendering with journey-scale clarity and resolve-forward character emphasis
+  spatial_distortion: Horizon-stretch perspective reinforcing pilgrimage momentum and leadership ascent
   atmosphere: Resolute, romantic, sweeping, brave
   key_features: Travel-cloak silhouettes, red-hair focal points, palace-to-wilderness contrast, guardian ensemble staging, heroic profile poses
-  creative_brief: Crimson is not a hair color but a compass needle, pointing always toward the self that hardship has yet to reveal. The road strips away everything that was borrowed and demands everything that is real. Guardians do not follow a princess—they follow a resolve so bright it leaves afterimages on the horizon.
+  creative_brief: >-
+    Preserve crimson-princess quest grammar as a reusable style system:
+    travel-worn fantasy silhouettes, guardian-ensemble composition, and
+    resolve-centered chroma hierarchy should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

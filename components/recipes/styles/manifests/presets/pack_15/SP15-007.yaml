@@ -8,15 +8,18 @@ supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
   aesthetic: Healthcare center integrated into an urban vertical meadow.
-  form_and_line: Friendly architecture, accessible routes, and soft curves.
-  color_palette: Warm white, meadow green, and clear blue.
-  lighting_setup: Abundant natural light filtered through gardens.
-  material_texture: Soft glass, medicinal vegetation, and hygienic wood.
-  render_quality: Futuristic wellness visual with real human warmth.
-  spatial_distortion: Open section of a high-rise garden building.
+  form_and_line: Layered therapeutic terraces, universal-access circulation loops, and soft curve-led wayfinding geometry.
+  color_palette: Clinical warm white, meadow chlorophyll greens, and calm sky-cyan accents.
+  lighting_setup: Broad daylight filtered through medicinal canopy strata with gentle interior bounce.
+  material_texture: Diffuse low-iron glass, therapeutic plant foliage, hygienic timber laminates, and matte bioceramic railings.
+  render_quality: Production-grade wellness concept balancing medical clarity with emotionally reassuring spatial warmth.
+  spatial_distortion: Vertical sectional reveal linking treatment floors, recovery gardens, and restorative circulation terraces.
   atmosphere: Care, calm, and technological trust without coldness.
   key_features: Green facade, therapeutic terrace, serene circulation.
-  creative_brief: A future clinic that heals through how it feels to inhabit it.
+  creative_brief: >-
+    Preserve vertical-meadow clinic grammar as a reusable style system:
+    therapeutic biophilic layering, accessible healing circulation, and
+    human-centered clinical calm should remain coherent across subjects.
 avoidRules: [photoreal, sterile-corporate, dark-gloomy, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-007.webp }
 attributes:

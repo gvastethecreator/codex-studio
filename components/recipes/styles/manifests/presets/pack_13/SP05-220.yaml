@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Quiet art-club slice of life, drifting cat encounters, little town details, watercolor-soft afternoons, nearly plotless observation turned deeply comforting
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Gentle sketchbook contours, cat-movement tracking line cues, and observational still-life composition balance
+  color_palette: Watercolor creams, dusty town pastels, warm amber afternoon tones, muted foliage greens, and soft ink accents
+  lighting_setup: Slow afternoon sidelight, soft interior ambient bleed, and diffuse cloud-filtered outdoor illumination
+  material_texture: Watercolor wash grain, notebook paper tooth, stucco wall wear, wooden bench patina, and cat-fur softness cues
+  render_quality: Meditative observational rendering with minimal plot pressure and high comfort readability
+  spatial_distortion: Light vignette-like focus drift to prioritize quiet noticing over dramatic depth
   atmosphere: Drifting, soft, observant, comforting
   key_features: Sketchbook props, stray-cat motifs, little-town backdrops, warm afternoon light, observational stillness
-  creative_brief: A stray cat leads the art club through an afternoon of barely-there narrative, each encounter a watercolor vignette of small-town stillness. Observation becomes the highest form of participation — watching, sketching, letting the world unfold at the speed of a cat stretching in sun. Plot dissolves into presence.
+  creative_brief: >-
+    Preserve stray-cat afternoon grammar as a reusable style language:
+    observational watercolor calm, tiny-town detail softness, and minimal
+    narrative comfort should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

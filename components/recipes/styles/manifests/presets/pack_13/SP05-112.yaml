@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Characters-sprawling-across-brick-courses, tags-wrapping-around-anatomy, wall-texture-integrated-into-design, large-scale-mural-proportions
   atmosphere: Urban, rebellious, street-authentic, outlaw-creative, midnight-painting-session, city-breathing-art
   key_features: Brick-wall-texture-background, spray-paint-drips, stencil-edge-sharpness, graffiti-tag-integration, overspray-halos, concrete-grain-surface
-  creative_brief: The wall breathes through layers of buff paint and wildstyle tags, characters pushing through brick courses like weeds through concrete. Spray-can halos soften every edge while drips run deliberately through features, half-painted and half-alive. This is the city's skin given motion — vandalism refined into visual scripture.
+  creative_brief: >-
+    Preserve graffiti-wall anime grammar as a reusable style system:
+    spray-drip contour behavior, wall-texture integration, and wildstyle-tag
+    compositional interaction should remain consistent across subjects.
 avoidRules:
   - clean
   - polished

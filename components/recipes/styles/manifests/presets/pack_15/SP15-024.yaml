@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Layered lounge composition with nested alcoves and secret passages.
   atmosphere: Confidential intrigue, aristocratic modernity, and hushed momentum.
   key_features: Hidden speaking booths, deco fan lamps, and turbine stage centerpiece.
-  creative_brief: A decopunk salon where influence is traded as carefully as rare machinery.
+  creative_brief: >-
+    Preserve velvet turbine-salon grammar as a reusable style language:
+    intimate deco intrigue interiors, turbine-motif opulence, and confidential
+    social choreography should remain stable across subjects.
 avoidRules: [photoreal, minimalist-office, cyberpunk-neon-overload, cartoonish, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-024.webp }
 attributes:

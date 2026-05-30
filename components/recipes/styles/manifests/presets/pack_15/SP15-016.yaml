@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Narrow alley canyon perspective pulling into a secure community node.
   atmosphere: Alert intelligence, cooperative resilience, and controlled nocturnal energy.
   key_features: Mesh routers, encrypted market stalls, cooperative security drones, and coded mural walls.
-  creative_brief: A cyberpunk alley where surveillance is community-owned and data systems protect local autonomy.
+  creative_brief: >-
+    Preserve meshlight alley-protocol grammar as a reusable style language:
+    encrypted street-scale infrastructure, cooperative data autonomy, and
+    wet-night wayfinding clarity should remain stable across subjects.
 avoidRules: [photoreal, empty-streets, military-oppression, fantasy-medieval, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-016.webp }
 attributes:

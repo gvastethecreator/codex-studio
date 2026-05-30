@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Tunnel cross section, subterranean city, insect engineering, soil labyrinth, colony metropolis
-  form_and_line: Tunnels, branching-chamber network, gallery-nodes, vertical shafts, fungus-garden alcoves, queen-chamber oval
-  color_palette: Sand, Dirt, Amber-gel fill, Chamber-dark Brown, Ant-black silhouette, Tunneling-fresh earth
-  lighting_setup: Side light, gel-illuminated cross-section, tunnel-depth shadow, chamber-glow, observation-pane backlit
-  material_texture: Grainy, sand-particle, soil-structure, gel-embedded clarity, tunnel-wall compact, mandible-scarred
-  render_quality: Subterranean, busy, ant-farm fascination, insect-city realism, colony-industry, cross-section beauty
+  aesthetic: Subterranean colony-architecture language centered on exposed tunnel networks, bio-functional chamber zoning, and observational cutaway clarity
+  form_and_line: Branching capillary tunnels, nodal chamber clusters, vertical shaft connectors, oval brood cavities, and layered cross-section strata boundaries
+  color_palette: Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly turned earth tones
+  lighting_setup: Lateral cutaway illumination, translucent gel transmission, controlled subterranean shadow pockets, and rim-lit observation-pane edge highlights
+  material_texture: Granular soil compaction, particulate sand bands, moist tunnel wall smoothing, gel-suspended clarity, and fine excavation scoring
+  render_quality: High-detail naturalistic cutaway rendering with strong system readability, dense micro-activity cues, and precise subterranean stratification legibility
   spatial_distortion: None
-  atmosphere: Busy, hidden, organized-chaos, colony-purpose, underfoot-world, instinct-hive, tunnel-darkness
-  key_features: Tunnels, chambers, queen's chamber, worker ants, fungus garden, brood cells, glass observation pane
-  creative_brief: 'Tunnels branch through amber gel like a circulatory system excavated from the body of the earth. Chambers bloom at tunnel junctions, each a specialized organ of the colony: nursery, granary, throne room for the queen. The cross-section reveals a civilization that built its empire in darkness, architecture without architects, perfect in its blind purpose.'
+  atmosphere: Industrious, concealed, biological, system-driven, and relentlessly functional
+  key_features: Exposed tunnel mesh hierarchy, specialized chamber typologies, vertical circulation shafts, brood-cell clustering, colony path density, and transparent observation boundary
+  creative_brief: >-
+    Preserve ant-farm style as a reusable cutaway grammar: branching
+    subterranean circulation, function-specific chamber typologies, and
+    granular earth stratification should remain consistent across subjects.
 avoidRules:
   - surface
 assets:

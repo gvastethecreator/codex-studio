@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Wide-angle terminal framing emphasizing outbound vectors and scale.
   atmosphere: Adventurous bravado, serial-era wonder, and imminent launch energy.
   key_features: Raycraft docks, expedition banners, ion towers, and mission kiosks.
-  creative_brief: A raypunk departure hub where every gate promises a different strange planet.
+  creative_brief: >-
+    Preserve photon safari-port grammar as a reusable style system:
+    pulp launch logistics, expedition vector staging, and optimistic serial-era
+    adventure energy should remain coherent across subjects.
 avoidRules: [photoreal, hard-cyberpunk-grime, medieval, horror-gore, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-025.webp }
 attributes:

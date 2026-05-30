@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Nighttime anime cyberpunk with rain and neon.
-  form_and_line: Sharp strokes, urban silhouettes, and selective tech details.
-  color_palette: Magenta, cyan, black, and electric accents.
-  lighting_setup: Neon backlight with wet reflections and controlled bloom.
-  material_texture: Asfalto mojado, metal satinado y cristales brillantes.
-  render_quality: High-contrast modern anime illustration.
-  spatial_distortion: Deep street perspective with dramatic vanishing point.
-  atmosphere: Urban tension, stealth, and a futuristic pulse.
-  key_features: Atmospheric neon, vigilant character, noir mood.
-  creative_brief: A guardian in a rainy alley with bold visual identity and strong card readability.
+  aesthetic: Urban anime-cyberpunk noir language with rain-soaked metropolitan layering, vigilant character framing, and high-chroma neon control
+  form_and_line: Razor-edged silhouette cuts, angular urban framing lines, selective tech glyph details, and convergent street geometry for depth pressure
+  color_palette: Dominant magenta-cyan duality, deep asphalt blacks, electric accent nodes, and cool metallic neutrals for structural balance
+  lighting_setup: Back-biased neon rim systems, wet-surface reflection pooling, constrained bloom halos, and low-key fill preserving noir contrast
+  material_texture: Wet asphalt specular streaks, satin metal paneling, rain-beaded glass, luminous signage diffusion, and damp fabric micro-sheen
+  render_quality: High-contrast contemporary anime finish with cinematic night grading, clean edge discipline, and robust thumbnail readability
+  spatial_distortion: Deep vanishing-point street compression with controlled perspective exaggeration and foreground-midground-background separation
+  atmosphere: Tense, alert, nocturnal, technological, and atmospheric
+  key_features: Neon channel reflections, rain-layer depth, vigilant stance framing, cyan-magenta contrast gating, and noir silhouette integrity
+  creative_brief: >-
+    Preserve cyberpunk-vigil style as a reusable grammar: neon-backed noir
+    silhouettes, rain-reflective urban surfaces, and controlled high-contrast
+    color tension should remain stable across subjects.
 avoidRules:
   - photoreal
   - watercolor

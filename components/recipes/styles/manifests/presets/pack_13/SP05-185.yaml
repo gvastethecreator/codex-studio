@@ -12,16 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Fashion-school rebellion, runway fabrics, adult yearning, punk glamour, cigarettes and sewing rooms, glossy color and emotional mess sharing the same pose
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Runway-heartbreak shojo language with fashion-school rebellion, punk-luxe tailoring, and coming-of-age emotional volatility
+  form_and_line: Editorial fashion silhouette emphasis, sharp pose-line confidence, garment-structure contour detailing, and expressive confrontation framing
+  color_palette: Black-cherry fashion anchors, magenta and plum accents, metallic highlight notes, and selective warm skin-light contrast
+  lighting_setup: Runway spot and backstage practical interplay, reflective fabric edge highlights, and mood-shifting scene contrast tied to emotional stakes
+  material_texture: Structured couture fabrics, stitching-room tactile detail, glossy makeup and accessory surfaces, and urban-night ambient texture cues
+  render_quality: High-style shojo render with strong garment readability, emotional fashion-drama intensity, and polished adult-romance clarity
+  spatial_distortion: Catwalk-inspired perspective lines with intimate backroom compression to balance performance and vulnerability
   atmosphere: Chic, restless, romantic, self-inventing
   key_features: Runway silhouettes, sewing-room textures, fashion detail, angular romantic posing, city-night glamour
-  creative_brief: A sewing needle pierces fabric and future simultaneously, stitching desire into wearable proof. Runway lights expose more than garment lines—they reveal the hunger beneath the glamour. Every hem carries the friction of a heart breaking beautifully, rebellion tailored to fit.
+  creative_brief: >-
+    Preserve runway-heartbreak chic grammar as a reusable style system:
+    couture silhouette authority, backstage-versus-spotlight contrast, and
+    self-invention-through-fashion emotional tension should remain consistent
+    across subjects.
 avoidRules:
   - realistic
   - 3d render

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Body cavities opening impossibly, anatomical diagrams overlaid on living figures, spiral distortion consuming space
   atmosphere: Horrifying, transgressive, darkly beautiful, mesmerizing disgust, anatomical nightmare
   key_features: Exposed musculature, arterial spray detail, bone-texture rendering, biological-precision gore, spiral contamination motifs
-  creative_brief: The body becomes a landscape of terrible revelation, muscle fiber rendered with the reverence of a medical engraving and the nightmare of a fever dream. What should remain hidden unfurls in wet crimson detail, spiraling outward in geometries of beautiful contamination. The horror is not in the gore but in how carefully each fiber has been mapped.
+  creative_brief: >-
+    Preserve visceral-horror anime grammar as a reusable style system:
+    clinical-detail rendering discipline, transgressive anatomical abstraction,
+    and high-contrast dread composition should remain consistent across subjects.
 avoidRules:
   - cute
   - clean

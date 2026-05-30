@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Cold-weather camping coziness, puffy jackets, enamel mugs, practical gear, quiet friendship through warm food and starry nights, tactile outdoor comfort
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Practical camp-gear silhouette clarity, bundled-clothing contour shapes, and fire-circle composition flow
+  color_palette: Winter blues, pine greens, stove-orange warmth, tent-canvas neutrals, and star-night indigos
+  lighting_setup: Campfire key-light, cold ambient night fill, lantern practical accents, and crisp dawn campsite diffusion
+  material_texture: Nylon tent weave, quilted jackets, enamel mug gloss, metal cookset wear, and frosted ground detail
+  render_quality: Cozy winter-camp rendering with practical outdoor fidelity and restorative social calm
+  spatial_distortion: Circular campsite framing compression emphasizing shared warmth in open cold space
   atmosphere: Cozy, crisp, friendly, restorative
   key_features: Camp gear realism, stove warmth, starry-night campsites, bundled silhouettes, food-and-flame intimacy
-  creative_brief: A camp stove throws orange light against the winter dark, warming hands and ramen and the quiet joy of being exactly where you chose to be. Puffy jackets and enamel mugs become the material poetry of outdoor solitude, each piece of gear a vote for comfort over convenience. The stars do not need to be shared — but it helps.
+  creative_brief: >-
+    Preserve winter-camp stove grammar as a reusable style language:
+    practical gear realism, cold-versus-warm lighting contrast, and quiet
+    friendship comfort should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

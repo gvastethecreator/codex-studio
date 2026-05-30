@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Layered drydock perspective converging toward an elevated command gantry.
   atmosphere: Industrious wonder, mechanical pride, and measured optimism.
   key_features: Aether cranes, pressure gauges, civic airships, and cooperative dock crews.
-  creative_brief: A steampunk harbor where municipal transport and heavy craft feel artisanal rather than militarized.
+  creative_brief: >-
+    Preserve brass aether-dockyard grammar as a reusable style language:
+    pressure-era civic logistics, riveted artisanal machinery, and cooperative
+    dock labor rhythm should remain stable across subjects.
 avoidRules: [photoreal, grimdark-war, neon-cyber, low-detail, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-014.webp }
 attributes:

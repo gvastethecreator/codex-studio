@@ -13,15 +13,18 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: Contemporary shojo realism, umbrellas, rain-soaked school romance, tentative self-worth, modern intimacy and apology under sodium streetlights
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  form_and_line: Naturalistic modern-shojo contouring, umbrella-canopy framing arcs, hesitant hand-gesture emphasis, and close-distance posture cues
+  color_palette: Sodium amber highlights, wet asphalt blue-grays, uniform charcoal, muted skin warmth, and rain-reflection silvers
+  lighting_setup: Streetlamp halo pools, rainy backscatter glow, storefront practical spill, and low-contrast nocturnal fill
+  material_texture: Rain-beaded umbrella nylon, damp cotton uniforms, pavement gloss reflections, and fogged acrylic signage surfaces
+  render_quality: Intimate rainy-romance rendering with grounded urban realism and emotionally readable micro-acting
+  spatial_distortion: Condensed shared-umbrella framing compression to emphasize vulnerability proximity
   atmosphere: Rainy, vulnerable, sincere, modern
   key_features: Umbrella framing, rain reflections, urban school-route scenery, hesitant touch language, confession-heavy close-ups
-  creative_brief: Rain does not stop for confessions, and an umbrella becomes a temporary room where two people finally stop apologizing for their own existence. Sodium streetlights paint everything amber, turning ordinary school routes into cathedrals of the almost-spoken. Every raindrop is a tiny forgiveness, and the only answer that matters is the one whispered between the patter and the pause.
+  creative_brief: >-
+    Preserve rainy-umbrella confession grammar as a reusable style language:
+    sodium-lit wet urban surfaces, hesitant intimate blocking, and modern
+    vulnerability pacing should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

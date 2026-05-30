@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Smurf whimsical mushroom cottage, tiny blue village
-  form_and_line: Organic, stem-cylinder, cap-dome, gill-undercut, fairy-ring cluster, bulbous, soft-swell
-  color_palette: Red cap, White stalk, Spore Brown, Moss Green, Fairy Blue, Forest-floor Amber, Toadstool-spot Cream
-  lighting_setup: Forest floor, spotted-light dapple, mushroom-glow bioluminescent, shade-cool, firefly-twinkle, under-cap shadow
-  material_texture: Fungus, mushroom-cap skin, gill-ribs, velvet moss, spore-dust, forest loam, dewdrop
-  render_quality: Fantasy, cute, fairy-tale fungi, Smurf-village charm, woodland-magic, storybook-enchantment
-  spatial_distortion: Bulbous
-  atmosphere: Magic, small, hidden, fairy-glade, tiny-footstep, enchanted-forest, wee-folk safe
-  key_features: Spots, red cap, white stem, tiny round door, chimney smoke, mushroom village, moss carpet
-  creative_brief: Red caps dome above white stalks like tiny observatories built by a civilization that worships at the altar of spore and soil. Chimney smoke curls from mushroom-crown to forest canopy, the only sign of habitation in a glade that keeps secrets. The village hides at ankle height, a world you would miss if you walked through it standing up.
+  aesthetic: Fungal vernacular architecture language with whimsical woodland domesticity, bulbous toadstool massing, and miniature fairy-settlement logic
+  form_and_line: Rounded stem columns, dome-cap roof volumes, gill-like undersides, soft swelling transitions, clustered ring settlement layouts, and circular aperture motifs
+  color_palette: Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm forest-amber undertones
+  lighting_setup: Canopy-filtered dapple light, cool shade fill, subtle bioluminescent edge accents, low-height rim glow, and gentle under-cap shadow pockets
+  material_texture: Matte fungal skin, cap speckle patterning, ribbed gill surfaces, moist moss mats, fine spore dust, loam substrate, and dew micro-highlights
+  render_quality: Storybook-fantasy rendering with organic curvature fidelity, tactile fungal detail, and controlled whimsy without scene-locking
+  spatial_distortion: Cap-and-stem volumetric swelling and softened miniature-scale proportion stretching
+  atmosphere: Enchanted, sheltered, tiny-scale, gentle, and ecologically integrated
+  key_features: Dome-cap roof silhouettes, speckled fungal patterning, stem-based wall bodies, circular doors and windows, moss-integrated foundations, and clustered micro-settlement composition
+  creative_brief: >-
+    Preserve mushroom-house grammar as a reusable style system: bulbous fungal
+    forms, cap-and-stem architectural hierarchy, and miniature ecological scale
+    cues should remain stable across subject changes.
 avoidRules:
   - square
 assets:

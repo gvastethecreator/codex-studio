@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Industrial anime mecha with monumental scale.
-  form_and_line: Technical paneling, defined mechanical lines, and a robust silhouette.
-  color_palette: Cold steel, signal orange, and deep blue.
-  lighting_setup: Focos de hangar, chispas de mantenimiento y rim duro.
-  material_texture: Brushed metal, technical grease, and visible cabling.
-  render_quality: Launch key visual with controlled detail.
-  spatial_distortion: Gran angular con profundidad de hangar.
-  atmosphere: Combat preparation and latent power.
-  key_features: Mecha scale, operators, launch energy.
-  creative_brief: A primary mecha in pre-mission ignition, with heroic presence and clear readability.
+  aesthetic: Industrial mecha-launch anime language with monumental machine presence, maintenance-bay realism, and pre-deployment tension
+  form_and_line: Dense mechanical panel segmentation, articulated joint geometry, heavy silhouette anchoring, and infrastructural hangar line grids supporting scale cues
+  color_palette: Cold steel grays, deep navy undertones, signal orange safety accents, and constrained warning-light reds
+  lighting_setup: High-bay spotlight beams, hard metallic rim accents, intermittent maintenance sparks, and low ambient fill for mass emphasis
+  material_texture: Brushed and worn metal plates, hydraulic residue traces, exposed cabling bundles, heat-stressed paint edges, and matte industrial flooring
+  render_quality: High-detail mecha key-visual rendering with disciplined mechanical readability, layered depth hierarchy, and production-grade anime polish
+  spatial_distortion: Wide-angle hangar depth exaggeration with controlled perspective convergence to reinforce machine scale
+  atmosphere: Pressurized, anticipatory, technical, and power-laden
+  key_features: Monument-scale mecha silhouette, articulated panel logic, maintenance scaffolding context, launch-readiness lighting cues, and operator-scale contrast markers
+  creative_brief: >-
+    Preserve mecha-hangar style as a reusable grammar: heavy mechanical
+    line-dense construction, industrial lighting tension, and scale-through-
+    infrastructure contrast should remain consistent across subjects.
 avoidRules:
   - photoreal
   - toy-like

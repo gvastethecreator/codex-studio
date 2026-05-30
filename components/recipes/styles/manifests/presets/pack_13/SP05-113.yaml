@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Segmented-by-lead-lines, rose-window-circular-framing, Gothic-arch-vertical-emphasis, flat-icon-perspective, hieratic-scale-size-means-importance
   atmosphere: Sacred, awe-inspiring, divine-light, cathedral-hush, medieval-reverence-meets-anime-emotion, transcendent-beauty
   key_features: Black-lead-came-segmentation, jewel-toned-translucent-colors, backlit-by-sunlight-glow, Gothic-arch-framing, rose-window-circular-composition, glass-imperfection-texture
-  creative_brief: Sunlight passes through sapphire faces and ruby hands, casting sacred geometry across stone floors that hold centuries of silence. Each figure is divided by black lead into jeweled panels that belong to a rose window more than a frame of animation. The divine here is not depicted but transmitted — light itself becoming the storyteller through colored glass.
+  creative_brief: >-
+    Preserve stained-glass cathedral anime grammar as a reusable style system:
+    lead-came segmentation, jewel-translucent backlight transmission, and
+    gothic rosette framing should remain consistent across subjects.
 avoidRules:
   - flat
   - opaque

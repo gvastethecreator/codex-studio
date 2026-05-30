@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Foreshortened extreme perspectives, fist-to-camera depth compression, ground-shatter crater deformation, afterimage ghost trails
   atmosphere: Electric, explosive, adrenaline-maximum, battle-fever intensity, unstoppable momentum
   key_features: Speed-line forests, impact-burst radial marks, afterimage trails, power-up aura distortion, ground-shatter cracks
-  creative_brief: The frame cannot contain what it holds — speed lines erupt outward like the page itself is screaming, impact bursts radiating from the point where fist meets impossibility. Motion becomes a character more vivid than any figure, a forest of kinetic marks through which bodies blur at the limit of what animation can capture.
+  creative_brief: >-
+    Preserve action-line battle-intensity grammar as a reusable style system:
+    speed-line density architecture, impact-burst focal choreography, and
+    kinetic deformation readability should remain consistent across subjects.
 avoidRules:
   - still
   - calm

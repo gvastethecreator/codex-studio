@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Sports anime at competitive climax.
-  form_and_line: Speed lines, explosive pose, and clean athletic anatomy.
-  color_palette: Electric blue, white, and orange accents.
-  lighting_setup: Luces de estadio con highlights intensos.
-  material_texture: Sports flooring, stylized sweat, and technical fabric.
-  render_quality: Final-impact frame with maximum readability.
-  spatial_distortion: Perspective compression to intensify action.
-  atmosphere: Determination, effort, and catharsis.
-  key_features: Freeze-frame action, strong expressions, visual energy.
-  creative_brief: A decisive match moment with instant readability and high emotion.
+  aesthetic: High-impact sports-anime climax language with competitive intensity, kinetic framing, and emotionally charged athletic heroism
+  form_and_line: Velocity-biased line bursts, dynamic foreshortening, anatomically clean action poses, and trajectory arcs guiding focal impact
+  color_palette: Electric blue core, bright white contrast anchors, energetic orange highlights, and neutral court/stadium balancing tones
+  lighting_setup: Stadium overhead arrays, hard specular sweat highlights, motion-accent rim lighting, and selective contrast peaks at action focal zones
+  material_texture: Polished sport-surface reflections, moisture sheen on skin, breathable technical fabric detail, and chalk/rubber micro-particulate cues
+  render_quality: Broadcast-ready action frame quality with crisp motion readability, controlled detail density, and premium key-moment clarity
+  spatial_distortion: Perspective compression with directional motion tunneling to intensify speed and impact perception
+  atmosphere: Driven, explosive, cathartic, and performance-maximized
+  key_features: Freeze-frame kinetic apex, expressive competitive gaze, speed-line hierarchy, stadium-light contrast gating, and action-vector composition
+  creative_brief: >-
+    Preserve sports-climax grammar as a reusable style system: speed-vector
+    composition, high-contrast athletic lighting, and emotion-forward action
+    readability should stay consistent across subjects.
 avoidRules:
   - photoreal
   - muddy-motion

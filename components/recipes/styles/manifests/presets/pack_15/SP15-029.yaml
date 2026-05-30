@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Curved plaza perspective emphasizing communal center gravity.
   atmosphere: Mutual aid, creative craft, and patient technological optimism.
   key_features: Shared fab labs, moon bazaar stalls, and low-gravity amphitheater gardens.
-  creative_brief: A lunarpunk commons where scarcity is answered through design and solidarity.
+  creative_brief: >-
+    Preserve selenite commons grammar as a reusable style system:
+    cooperative dome urbanism, craft-forward mutual-aid infrastructure, and
+    patient moon-district optimism should remain coherent across subjects.
 avoidRules: [photoreal, militarism, dystopian-surveillance, heavy-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-029.webp }
 attributes:

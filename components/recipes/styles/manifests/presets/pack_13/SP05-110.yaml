@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Infinite-regression corridors, impossible-object architecture, scale-shifting between frames, non-Euclidean dream geography
   atmosphere: Disorienting, hypnotic, profound, symbolic, between-worlds liminality, sleeping-mind poetry
   key_features: Impossible architecture, floating disconnected elements, morphing dream transitions, contradictory light sources, infinite spatial loops
-  creative_brief: A staircase climbs toward a sky that was underwater a moment ago, and none of this contradicts itself. The architecture of sleep obeys only the logic of association — corridors stretching past vanishing points into memory, doors opening onto the wrong childhood. This is the image as dream, the dream as architecture, the architecture as feeling made spatial.
+  creative_brief: >-
+    Preserve surreal dream-logic grammar as a reusable style system:
+    impossible spatial transitions, contradictory light logic, and symbolic
+    non-Euclidean composition should remain consistent across subjects.
 avoidRules:
   - realistic
   - logical

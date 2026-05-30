@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Neo-Venezia gondola calm, watercolor water reflections, healing-company warmth, slow conversational days, beautiful emptiness and kindness drifting through every frame
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Flowing canal-curve composition lines, delicate gondola profile contours, and serene conversational pose language
+  color_palette: Aqua canals, sun-bleached stucco creams, seafoam greens, soft terracotta accents, and pearl daylight haze
+  lighting_setup: High-key maritime diffusion, water-bounce highlights, and slow golden-hour wash across facades
+  material_texture: Rippled water reflections, weathered plaster walls, varnished wood gondola surfaces, linen uniforms, and stone bridge wear
+  render_quality: Healing-aqua rendering with meditative pacing, airy depth, and watercolor-soft tonal transitions
+  spatial_distortion: Gentle reflection warping and canal-depth drift for floating calm
   atmosphere: Healing, airy, serene, luminous
   key_features: Canal reflections, gondola silhouettes, white uniforms, water-breeze softness, peaceful city panoramas
-  creative_brief: Water holds the city in a mirror that never quite settles, gondola wakes dissolving into the quiet of an aquamarine afternoon. Strangers become guests, then friends, then the reason the canal breeze feels like music. Healing moves at the speed of oars through still water — slow, rhythmic, irreversible.
+  creative_brief: >-
+    Preserve canal-breeze healing grammar as a reusable style language:
+    water-reflection softness, serene maritime architecture, and conversational
+    emotional pacing should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

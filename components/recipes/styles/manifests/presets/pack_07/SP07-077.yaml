@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Halo ring, Niven megastructure, orbital-band world, habitable-ring landscape, cosmic-ribbon
-  form_and_line: Upward horizon, arch-in-sky curve, ribbon-land strip, edge-wall lines, sun-shadow band
-  color_palette: Blue, Green strip, Space Black, Ocean-band, Atmosphere-white rim, Shadow-wall Dark
-  lighting_setup: Sunlight, ring-self-shadow, edge-wall glow, atmosphere-scatter blue, void-black contrast
-  material_texture: Atmosphere, continental land, orbital-plate metal, sea-surface, cloud-swirl, mountain-shadow
-  render_quality: Vast, artificial, Niven-scale imagination, ringworld-wonder, habitable-engineering, landscape-megastructure
-  spatial_distortion: Ring shape
-  atmosphere: Awe, scale, world-builder, cosmic-horizon, engineering-sublime, infinite-land, ring-citizen perspective
-  key_features: Sky arch, upward-curving land, edge wall, sun-shadow band, ocean strip, ring curvature, mountain-on-horizon
-  creative_brief: Landscape curves upward into sky, continents bending toward an arch that replaces horizon with the underside of the same world. Edge walls rise like mountain ranges built by hands that thought in planetary scale, holding atmosphere against the void. The ring spins its slow eternity, a world that forgot to be a sphere and became a ribbon instead.
+  aesthetic: Habitable ringworld megastructure language with Niven-inspired orbital-band ecology, engineered horizon behavior, and macro-civilization landscape planning
+  form_and_line: Upward-curving horizon arcs, continuous ribbon-terrain bands, colossal edge-wall verticals, axial shadow swaths, and long curvature-led sightlines
+  color_palette: Atmospheric blue gradients, biosphere green land strips, oceanic cyan bands, structural charcoal edge walls, void black backdrop, and high-altitude white haze
+  lighting_setup: Stellar directional sunlight with large-scale self-shadow sectors, atmospheric forward scatter, edge-wall rim illumination, and high-contrast void separation
+  material_texture: Planetary-scale terrain tiling, cloud-layer streaking, water-band reflectivity, megastructure wall faceting, and engineered orbital substrate transitions
+  render_quality: Ultra-vast speculative landscape rendering with rigorous curvature readability, macro-engineering coherence, and cinematic scale clarity
+  spatial_distortion: Orbital-band curvature with upward horizon wrap and macro-scale perspective compression
+  atmosphere: Grand, engineered, expansive, serene, and cosmically inhabited
+  key_features: Upward sky-arching terrain, habitable ribbon biosphere, kilometer-scale edge-wall containment, ring-rotation shadow bands, and continuous orbital horizon logic
+  creative_brief: >-
+    Preserve ringworld identity as a reusable style grammar: orbital-horizon
+    curvature behavior, ribbon-biosphere stratification, and edge-wall
+    megastructure cues should remain stable across subject matter.
 avoidRules:
   - globe
 assets:

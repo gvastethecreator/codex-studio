@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Characters composed of faceted planes, hair as geometric fan-shapes, faces as jewel-cut surfaces
   atmosphere: Grand, theatrical, elegant severity, crystalline beauty, staged perfection
   key_features: Geometric hair fans, faceted-jewel eyes, ruler-straight lines, stained-glass color separation, stage-set compositions
-  creative_brief: Characters are carved from gemstone rather than drawn, their hair fanning outward in geometric rays of lapis and gold. Stage light catches every faceted plane, transforming faces into crystalline architecture. The aesthetic is a cathedral built from character design, each figure a stained-glass window in human form.
+  creative_brief: >-
+    Preserve deco-geometric anime grammar as a reusable style system:
+    faceted planar construction, jewel-tone staged lighting, and ruler-precise
+    contour discipline should remain consistent across subjects.
 avoidRules:
   - organic
   - round

@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Interlaced district perspective linking street clinics to elevated biofarms.
   atmosphere: Experimental care, ethical tension, and hopeful adaptation.
   key_features: Community gene clinic, edible tissue greenhouses, open-source wetlab kiosks.
-  creative_brief: A biopunk borough where biotechnology is treated as public infrastructure instead of private power.
+  creative_brief: >-
+    Preserve gene-garden borough grammar as a reusable style language:
+    civic biotech accessibility, ethical wetlab openness, and community-scale
+    ecological adaptation should remain stable across subjects.
 avoidRules: [photoreal, body-horror-gore, dystopian-abuse, militarized-lab, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-018.webp }
 attributes:

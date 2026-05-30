@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Steam powered London, brass-age metropolis, Victorian science fiction, Jules Verne future, clockwork empire
-  form_and_line: Pipes, gears, clock-face towers, dirigible-dock arches, chimney stacks, flywheel silhouettes
+  aesthetic: Neo-Victorian industrial futurism, brass-and-steam metropolis language, speculative imperial machinery urbanism
+  form_and_line: Gear-and-pipe lattice networks, chimney skyline cadence, clocktower landmarks, dirigible-port arches, flywheel silhouettes
   color_palette: Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright
   lighting_setup: Gaslight, warm amber street-glow, gear-spark, hissing steam-vent light, amber window, smog-diffused
   material_texture: Metal, brick, riveted copper, wood panel, leather, steam-whistle brass, soot-coat
-  render_quality: Industrial, retro, speculative-Victorian, gear-and-brass romance, steam-punk opulence
+  render_quality: High-detail steampunk city rendering with mechanical plausibility, atmospheric soot layering, and retro-industrial readability
   spatial_distortion: None
-  atmosphere: Busy, smoky, inventive, gear-turning, coal-breath, thrilling-progress, stoker's warmth
-  key_features: Gears, steam vents, brass pipes, clock tower, dirigible, copper boilers, cobblestone streets
-  creative_brief: Gears mesh with clockwork certainty while steam hisses from brass joints, the city breathing through iron lungs. Dirigibles drift between chimney stacks, leviathans of canvas and ambition navigating a sky thick with progress. Every rivet tells a story of hands that believed the future would taste of coal smoke and ingenuity.
+  atmosphere: Industrious momentum, smoky ambition, engineered spectacle, retro-progress anxiety
+  key_features: Steam-vent rhythm, brass conduit runs, clockwork facade motifs, boiler infrastructure nodes, airship traffic cues
+  creative_brief: >-
+    Preserve steampunk identity through mechanical urban systems: steam
+    infrastructure, brass articulation, and Victorian-derived form language.
+    Keep the world inventive and dense, but reusable beyond any one city or
+    literary reference.
 avoidRules:
   - clean energy
 assets:

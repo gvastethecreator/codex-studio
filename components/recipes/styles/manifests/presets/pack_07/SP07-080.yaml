@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Bigger on the inside, impossible interior beyond outer shell, dimensional transcendence
-  form_and_line: Hexagons/Roundels, organic-coral architecture, console-pedestal, gallery-level curves, time-rotor column, infinite-arches
-  color_palette: Orange/Teal, Coral-amber glow, Deep-ocean Teal, Console-copper, Roundel-warm gold, Time-vortex blue
-  lighting_setup: Console glow, time-rotor pulse, roundel-indirect, gallery-level ambient, regeneration-energy gold, warm coral wash
-  material_texture: Tech, organic, grown-coral surface, control-console brass, glass roundel, copper wire, gel-pack
-  render_quality: Sci-fi, chaotic, Doctor-Who wonder, impossible-dimensions, time-machine Baroque, bigger-on-the-inside magic
-  spatial_distortion: Time rotor
-  atmosphere: Adventure, time, wonder-awe, time-lord, infinite-explore, dimensional-impossible, home-among-stars
-  key_features: Central column, roundel walls, hexagonal console, time rotor, gallery levels, organic architecture, infinite depth
-  creative_brief: Console pedestal rises from coral-grown floor, organic architecture pulsing with the slow respiration of a machine that has outgrown machinery. Roundels line curved walls like eyes that watch every timeline simultaneously, the chamber bigger than its exterior, bigger than geometry, bigger than the concept of containment. Time itself pools in the rotor column, the room a vessel sailing on currents of causality.
+  aesthetic: TARDIS-inspired dimensional console-chamber language combining time-machine retro-tech, organic architectural growth, and impossible interior expansion
+  form_and_line: Central time-rotor axis, hex-console radial geometry, roundel wall repetition, layered gallery rings, sweeping organic arches, and deep non-euclidean recession cues
+  color_palette: Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold roundel highlights, and temporal blue accent glows
+  lighting_setup: Pulsing rotor core illumination, console practical spill, indirect roundel bounce, tiered gallery ambience, and controlled golden regeneration-like bloom
+  material_texture: Mixed organic-tech surfaces, coral-like ribbed wall growth, worn metallic console plating, glass roundel diffusion, braided cabling, and translucent control interfaces
+  render_quality: High-detail franchise-faithful sci-fi interior rendering with layered dimensional depth, rich tactile complexity, and coherent retrofuturist machine elegance
+  spatial_distortion: Non-euclidean depth recursion with center-anchored rotor perspective and interior scale dilation
+  atmosphere: Adventurous, wondrous, mysterious, temporal, and spatially unbounded
+  key_features: Time-rotor central column, radial hex-console command node, repeating roundel wall language, multi-level gallery circulation, and infinite-depth chamber perspective
+  creative_brief: >-
+    Keep the preset anchored in "bigger-on-the-inside" chamber grammar:
+    central rotor hierarchy, roundel-driven wall rhythm, and organic-retrotech
+    dimensional layering should remain consistent across subject changes.
 avoidRules:
   - small
 assets:

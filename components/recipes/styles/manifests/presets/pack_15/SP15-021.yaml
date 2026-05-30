@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Long roadside perspective with repeating signs and receding tailfins.
   atmosphere: Cheerful futurism, consumer ritual, and launch-night anticipation.
   key_features: Rocket-view diner rooftops, atom logos, and retro-future service stations.
-  creative_brief: A roadside atompunk strip where everyday nightlife watches the sky for ignition trails.
+  creative_brief: >-
+    Preserve orbit diner-strip grammar as a reusable style system:
+    roadside atomic-age signage rhythm, consumer-nightlife futurism, and
+    launch-culture anticipation should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk-gloom, medieval, grim-horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-021.webp }
 attributes:

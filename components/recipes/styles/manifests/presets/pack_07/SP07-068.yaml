@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Box castle, appliance-box architecture, living-room fortress, recycled-carton stronghold, blanket-city
-  form_and_line: Tape lines, box-flap geometry, duct-tape seams, crayon-drawn details, stacked-rectangles, cut-window squares
-  color_palette: Brown cardboard, Packing-tape Tan, Marker-Black, Crayon colors, Shipping-label White
-  lighting_setup: Indoor, living-room lamp, blanket-filtered light, flashlight-fort interior, window-box glow
-  material_texture: Corrugated, kraft fiber, tape-adhesive, crayon wax, marker-ink, blanket-fabric drape
-  render_quality: Childhood, rough, make-believe reality, refrigerator-box magic, blanket-fort nostalgia, kid-crafted love
+  aesthetic: Improvised domestic fortification language using recycled cardboard modules, taped joints, and playful hand-marked make-believe architecture
+  form_and_line: Stacked box orthogonals, flap-derived overhangs, taped seam traces, hand-cut aperture geometry, and uneven hand-built silhouette breaks
+  color_palette: Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and soft fabric neutrals
+  lighting_setup: Warm indoor ambient base, practical lamp spill, flashlight hotspot accents, cloth-filtered bounce, and low-contrast enclosed interior glow
+  material_texture: Corrugated edge channels, fibrous kraft surfaces, glossy tape strips, marker bleed, waxy crayon marks, and draped textile canopy folds
+  render_quality: Handcrafted low-tech realism with visible assembly imperfections, tactile recycled-material detail, and nostalgic child-builder authenticity
   spatial_distortion: Sagging
-  atmosphere: Imaginative, cheap, pretend-kingdom, Saturday-morning, sibling-architect, proud-builder, temporary-realm
-  key_features: Tape, corrugated edges, duct tape, marker drawings, box flaps, blanket roof, crayon windows
-  creative_brief: Tape holds corrugated walls against the entropy of play, each seam a negotiation between structural ambition and the limits of adhesive. Crayon windows drawn with the conviction that a rectangle of blue is all any room needs of the sky. The fort stands in living-room twilight, a sovereignty declared in cardboard and defended with blanket artillery.
+  atmosphere: Inventive, scrappy, cozy, playful, temporary, and proudly homemade
+  key_features: Exposed corrugated cut edges, tape-reinforced joints, flap roofs, hand-drawn marker ornament, crayon aperture motifs, and soft blanket canopy closures
+  creative_brief: >-
+    Preserve a reusable cardboard-fort grammar: recycled box massing, visible
+    tape assembly logic, and hand-drawn childlike detailing should remain the
+    defining identity independent of scene content.
 avoidRules:
   - solid wall
 assets:

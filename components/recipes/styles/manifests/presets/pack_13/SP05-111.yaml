@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Flattened ukiyo-e perspective, decorative-space composition, layered-depth through color planes, no western vanishing-point
   atmosphere: Timeless, decorative, nature's-power, floating-world poetry, traditional-meets-modern elegance
   key_features: Woodblock-line quality, bokashi-gradient skies, flat-decorative color fields, Great-Wave motif echoes, Hiroshige-rain streaks, rice-paper texture
-  creative_brief: The Great Wave curls through hair and fabric alike, sumi-black lines carved with the pressure of centuries into washi surfaces. Color blocks itself flat against the picture plane, refusing western illusion for Edo-period conviction. What emerges is animation remembering its oldest ancestor — the floating world reborn in cel and pigment.
+  creative_brief: >-
+    Preserve ukiyo-e woodblock anime grammar as a reusable style system:
+    carved-line contour behavior, flat decorative color-field depth, and
+    washi-print texture logic should remain consistent across subjects.
 avoidRules:
   - 3d
   - realistic

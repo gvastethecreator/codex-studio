@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Figures dissolving at edges into abstract color fields, backgrounds bleeding into foreground, no hard spatial boundaries
   atmosphere: Meditative, ephemeral, dreamlike transience, ink-stone poetry
   key_features: Watercolor blooms, disappearing linework, ink-pool negative space, pigment granulation, wet-paper texture
-  creative_brief: Pigment breathes across wet paper, characters dissolving at their edges into pools of memory and suggestion. The image refuses to hold still, bleeding from form into feeling, from ink into atmosphere. What remains is not a drawing but the ghost of one — already fading, already beautiful.
+  creative_brief: >-
+    Preserve fluid painterly anime grammar as a reusable style system: wet-into-
+    wet edge dissolution, ink-wash gesture hierarchy, and porous paper-driven
+    pigment behavior should remain consistent across subjects.
 avoidRules:
   - hard outlines
   - cel shading

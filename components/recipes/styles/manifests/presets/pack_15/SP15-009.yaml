@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Cascading basin perspective from intake towers toward community gardens.
   atmosphere: Resource intelligence, relief, and hopeful climatic resilience.
   key_features: Desal towers, brine-art channels, productive oasis terraces.
-  creative_brief: A desert civic landscape where water production is visible, beautiful, and integrated into daily life.
+  creative_brief: >-
+    Preserve desert-bloom desalinatory grammar as a reusable style system:
+    arid water-production elegance, shade-adaptive public infrastructure, and
+    oasis-scale resilience cues should remain coherent across subjects.
 avoidRules: [photoreal, dystopian-drought, dark-horror, industrial-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-009.webp }
 attributes:

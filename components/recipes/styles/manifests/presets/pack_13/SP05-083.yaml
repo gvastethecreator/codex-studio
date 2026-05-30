@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Pop-culture banter, flat-color rooms, seated comedy rhythm, easygoing social energy, chocolate-corner, anime reference gags, blue-hair Konata, seasonal festival episodes
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
-  atmosphere: Casual, nerdy, laid-back, witty
-  key_features: Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth
-  creative_brief: Conversation drifts like afternoon clouds across a classroom table, bouncing from chocolate snacks to mecha anime to the existential weight of which end of the cornet to eat first. Nothing happens and everything happens in the sacred rhythm of friends killing time together. The frame breathes easy, unhurried, content.
+  aesthetic: Otaku-chat slice anime language with laid-back conversational comedy, flat-color domestic calm, and social micro-rhythm focus
+  form_and_line: Relaxed everyday contouring, seated-group composition stability, expression-over-action line prioritization, and low-drama gesture pacing
+  color_palette: Gentle indoor pastels, beige and cream neutrals, mint accents, snack-toned warm highlights, and balanced low-contrast skin hues
+  lighting_setup: Soft ambient classroom/living-room fill, mild window daylight, minimal dramatic shadowing, and steady tonal consistency for dialogue scenes
+  material_texture: Simple flat-surface interiors, soft textile cues, low-noise tabletop props, and unobtrusive environmental detail support
+  render_quality: Dialogue-forward anime rendering with crisp facial readability, consistent low-key polish, and comfortable episodic pacing tone
+  spatial_distortion: Stable seated conversational framing with mild cute stylization and clear multi-character line-of-sight readability
+  atmosphere: Casual, nerdy, witty, and comfortable
+  key_features: Conversation-circle composition, snack/prop banter anchors, expression-timing subtlety, and relaxed social energy continuity
+  creative_brief: >-
+    Preserve otaku-chat slice grammar as a reusable style system:
+    dialogue-first staging, soft low-contrast interiors, and personality-driven
+    conversational micro-acting should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

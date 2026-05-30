@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Multi-level harbor depth guiding eye from quay to floating market core.
   atmosphere: Cooperative momentum, ocean stewardship, and optimistic trade energy.
   key_features: Tidal turbines, floating exchange decks, amphibious cargo micro-transit.
-  creative_brief: A living coastal bioport where community commerce, ferry movement, and renewable tidal systems merge seamlessly.
+  creative_brief: >-
+    Preserve tidal-bioport exchange grammar as a reusable style system:
+    amphibious logistics layering, renewable tidal mechanics, and cooperative
+    harbor commerce should remain coherent across subjects.
 avoidRules: [photoreal, industrial-smog, bleak-gray, warlike-port, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-003.webp }
 attributes:

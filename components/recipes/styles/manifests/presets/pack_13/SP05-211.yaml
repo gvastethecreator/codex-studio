@@ -13,15 +13,18 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: Minimal school life transformed by a small motorbike, practical details, roadside sunlight, emotional expansion through ordinary movement and solitude
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
+  form_and_line: Practical machine-and-rider contour precision, restrained gesture linework, and open-road composition simplicity
+  color_palette: Matte bike blacks, cold morning blues, subdued uniform neutrals, and occasional warm sunset road accents
+  lighting_setup: Clear roadside daylight, overcast commuting tones, and sparse golden-hour rim light on metal surfaces
+  material_texture: Engine casing matte, tire rubber grain, worn seat vinyl, asphalt grit, and wind-pressed clothing folds
+  render_quality: Minimal mechanical-slice rendering with quiet freedom tone and utilitarian fidelity
+  spatial_distortion: Long-road perspective taper to convey gradual emotional expansion
   atmosphere: Minimal, freeing, quiet, clean
   key_features: Motorbike detail, roadside composition, practical school clothing, open-air framing, subtle emotional acting
-  creative_brief: A secondhand Honda carries a girl into the silence beyond town, where asphalt becomes meditation and engine drone replaces every word she never had. The world opens not with a roar but with the click of a kickstand and the decision to go somewhere, anywhere, alone and unafraid.
+  creative_brief: >-
+    Preserve super-cub quietude grammar as a reusable style language:
+    practical bike realism, sparse open-road framing, and low-voice personal
+    liberation should remain stable across subjects.
 avoidRules:
   - realistic
   - 3d render

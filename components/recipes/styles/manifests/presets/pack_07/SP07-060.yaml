@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Scooby Doo spooky cartoon manor, Mystery Inc. haunt, crooked fun
-  form_and_line: Wonky angles, crooked windows, leaning chimney, sagging roofline, cartoon-distort timbering
-  color_palette: Purple, Green, Black, Cartoon-Orange trim, Spooky-moon White, Dark-violet shadows
-  lighting_setup: Lightning flash, cartoon-moon glow, window-silhouette yellow, dramatic-thunder strobe, bat-shadow
-  material_texture: Painted, ink-line, cel-shade, flat-color, wood-siding cartoon, weathervane silhouette
-  render_quality: Spooky, fun, Hanna-Barbera charm, cartoon-haunt delight, flat-color perfection, nostalgic-scary
+  aesthetic: Retro TV cartoon haunted-manor language blending playful menace, exaggerated architecture, and Saturday-morning mystery energy in the Scooby-Doo tradition
+  form_and_line: Canted verticals, bowing roof ridges, asymmetrical shutter rhythm, warped fenestration, and elastic silhouette curves with readable inked outlines
+  color_palette: Moonlit violet, toxic-lime accents, charcoal black, desaturated pumpkin orange trim, pale spectral ivory, and deep indigo shadow pools
+  lighting_setup: Intermittent lightning keys, cool moon backlight, selective window glow, high-contrast cel-shadow blocks, and storm-driven rim flashes
+  material_texture: Flat painted clapboard planes, stylized ink contouring, limited cel-shaded gradients, simplified weathered timber motifs, and graphic silhouette props
+  render_quality: Clean 2D-cartoon readability with nostalgic TV-era finish, high shape clarity, controlled texture minimalism, and playful spooky tone
   spatial_distortion: Face in window
-  atmosphere: Spooky, classic, cartoon-creepy, silly-scare, nostalgia, Saturday-morning thrill
-  key_features: Bats, crooked shutters, lightning bolt, full moon, weathervane, creepy tree, iron gate
-  creative_brief: Crooked shutters hang at impossible angles, the whole house leaning as if trying to escape its own foundation. Lightning cracks the purple sky behind weathervanes that spin with cartoon panic. The manor is scary the way Saturday mornings were scary, all thrill and no nightmare, spooky enough to hide behind the couch but never behind your eyes.
+  atmosphere: Campy, eerie, mischievous, nostalgic, theatrical, and suspenseful without realistic horror intensity
+  key_features: Leaning manor profile, zig-zag lightning motifs, crescent or full moon framing, bat silhouettes, twisted foreground trees, iron gate rhythm, and bright window pops
+  creative_brief: >-
+    Keep the preset anchored in stylized cartoon-haunt grammar: exaggerated
+    crooked architecture, storm-lit silhouette contrast, and playful spooky
+    staging should remain consistent while avoiding realistic horror rendering.
 avoidRules:
   - scary realistic
 assets:

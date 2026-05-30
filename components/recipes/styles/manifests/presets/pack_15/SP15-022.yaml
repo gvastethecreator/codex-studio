@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Grand central atrium perspective with layered balconies and depth.
   atmosphere: Sophisticated ambition, urbane spectacle, and controlled excess.
   key_features: Deco turbine murals, golden clockwork lifts, and grand civic dais.
-  creative_brief: A decopunk power hall where elegance is engineered as public propaganda.
+  creative_brief: >-
+    Preserve gilded dynamo-atrium grammar as a reusable style language:
+    geometric art-deco monumentality, luxury-industrial symbolism, and staged
+    civic spectacle should remain stable across subjects.
 avoidRules: [photoreal, minimal-scandi, rustic-farm, neon-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-022.webp }
 attributes:

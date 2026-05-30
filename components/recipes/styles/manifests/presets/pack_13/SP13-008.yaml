@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Gothic vampire anime with dark elegance.
-  form_and_line: Dramatic fine outlines and ornate wardrobe.
-  color_palette: Burgundy, black, silver, and deep violet.
-  lighting_setup: Warm candelabras against dense shadows.
-  material_texture: Velvet, marble, and aged metal.
-  render_quality: Sophisticated nighttime-mansion illustration.
-  spatial_distortion: Perspectiva interior con profundidad teatral.
-  atmosphere: Aristocratic melancholy and subtle danger.
-  key_features: Escalinata, protagonista en capa, aura inquietante.
-  creative_brief: An iconic vampiric presence in a baroque setting, readable and elegant.
+  aesthetic: Gothic-vampiric anime language with aristocratic decadence, nocturnal romantic tension, and baroque interior theatricality
+  form_and_line: Fine dramatic contouring, elongated regal silhouette treatment, ornate costume trim lines, and sweeping stair/hall compositional diagonals
+  color_palette: Burgundy wine reds, abyssal blacks, oxidized silver accents, deep violet shadows, and candle-amber warmth
+  lighting_setup: Candelabra key pools against heavy ambient darkness, selective rim highlights on costume edges, and controlled chiaroscuro depth layering
+  material_texture: Crushed velvet drape, polished marble floors, aged wrought metal ornament, satin cape sheen, and carved wood architectural detailing
+  render_quality: High-polish gothic anime rendering with luxurious material separation, elegant contrast control, and premium nocturnal readability
+  spatial_distortion: Theatrical interior perspective with staged depth recession through staircases, arches, and chandelier anchor points
+  atmosphere: Seductive, melancholic, aristocratic, ominous, and composed
+  key_features: Grand staircase hierarchy, cape silhouette dominance, baroque ornament cadence, candlelit shadow orchestration, and noble-vampire iconography
+  creative_brief: >-
+    Keep this preset anchored in gothic-vampire grammar: baroque interior
+    opulence, burgundy-black chiaroscuro, and aristocratic silhouette drama
+    should remain stable and transferable across subjects.
 avoidRules:
   - photoreal
   - cute-chibi

@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Outdoor cooking, layered blankets, serene landscapes, practical cozy details, camping-gear accuracy, Mount Fuji views, curry-noodle scenes, pine-cone fire starters
-  form_and_line: Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness
-  color_palette: Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth
-  lighting_setup: Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion
-  material_texture: Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear
-  render_quality: Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone
-  spatial_distortion: Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy
-  atmosphere: Peaceful, cozy, comforting, serene
-  key_features: Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth
-  creative_brief: 'A campfire is a small sun you can sit beside — its warmth rewrites the cold geometry of a mountain night into the soft algebra of comfort. Steam rises from a cup of curry noodles while Fuji watches silently, ancient and indifferent to human scale. Build the image like a blanket fort: layers of warmth, pockets of quiet, stitching of gentle light.'
+  aesthetic: Outdoor-camp comfort anime language emphasizing practical gear intimacy, winter-night warmth contrast, and contemplative nature companionship
+  form_and_line: Relaxed rounded contouring with utilitarian prop readability, layered blanket silhouettes, and cooking-task micro-gesture clarity
+  color_palette: Cool mountain blues and pine greens balanced by firelit oranges, wool neutrals, and muted camping-gear earthy accents
+  lighting_setup: Campfire-centered warm key with cool ambient night fill, ember micro-highlights, and gentle steam-lit edge separation
+  material_texture: Brushed camping textiles, enamel cookware sheen, wood and pine-cone roughness, thermal breath haze, and lightweight tent-fabric diffusion
+  render_quality: Cozy high-clarity camp slice render with tactile gear detail, slow pacing tone, and comfort-forward atmospheric balance
+  spatial_distortion: Grounded natural-space framing with intimate foreground activity and serene background landscape depth
+  atmosphere: Serene, restorative, practical, and warmly introspective
+  key_features: Fire-and-food comfort anchors, authentic camping prop language, cold-vs-warm tonal dialogue, and quiet companionship cues
+  creative_brief: >-
+    Preserve campfire-comfort grammar as a reusable style system: practical
+    outdoor gear intimacy, warm firelight against cool nature ambience, and
+    unhurried restorative pacing should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

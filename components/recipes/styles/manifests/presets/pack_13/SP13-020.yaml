@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Epic anime finale with a sunset skyline.
-  form_and_line: Mature protagonist silhouette and contemplative stance.
-  color_palette: Twilight orange, deep blue, and soft black.
-  lighting_setup: Low-sun backlight with a cinematic halo.
-  material_texture: Wind through clothing, city lights, and clear sky.
-  render_quality: End-of-season still—elegant and emotional.
-  spatial_distortion: Wide establishing shot with figure in the foreground.
-  atmosphere: Resolution, nostalgia, and an open future.
-  key_features: Horizonte urbano, capa al viento, mood de despedida.
-  creative_brief: Closing image with restrained emotion and iconic presence.
+  aesthetic: End-of-season finale anime language with mature reflective heroism, skyline-scale closure, and restrained emotional catharsis
+  form_and_line: Foreground silhouette anchoring, wind-reactive garment lines, broad horizon layering, and clean negative-space framing for narrative finality
+  color_palette: Twilight orange gradients, deep cobalt-blue distance fields, softened charcoal shadows, and sparse city-light amber accents
+  lighting_setup: Low-sun rear key halo, long-shadow foreground shaping, subtle rim highlights on figure edges, and controlled atmospheric glow
+  material_texture: Wind-brushed fabric folds, distant urban light haze, clean evening sky gradation, and matte rooftop/structural surfaces
+  render_quality: Elegant cinematic anime still quality with high compositional discipline, emotional clarity, and poster-like finale readability
+  spatial_distortion: Wide establishing composition with foreground-to-skyline scale contrast and stable horizon control
+  atmosphere: Resolute, nostalgic, contemplative, and future-facing
+  key_features: Hero-back silhouette framing, sunset skyline stratification, wind-motion garment cues, and farewell-tone color orchestration
+  creative_brief: >-
+    Keep finale-skyline grammar as a reusable style system: sunset-backlit
+    silhouette closure, wide horizon emotional staging, and restrained
+    end-episode tonality should remain consistent across subjects.
 avoidRules:
   - photoreal
   - comedy-chibi

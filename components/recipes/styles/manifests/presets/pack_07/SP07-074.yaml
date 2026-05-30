@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: House cross section, peek-inside home, miniature rooms exposed, four-wall transparency, voyeur-dwelling
-  form_and_line: Room dividers, floor-level rectangles, staircase-diagonal, furniture-silhouette grid, doll-scale proportions
-  color_palette: Pastel, Wallpaper-print colors, Toy-furniture Wood, Miniature-carpet Beige, Doll-dress Pink
-  lighting_setup: Flat, even-room illumination, wall-mounted bead-light, room-box shadow, display brightness
-  material_texture: Miniature, dollhouse-wood, doll-fabric, tiny ceramic, paper wallpaper, plastic-toy, painted metal
-  render_quality: Cute, organized, dollhouse-precision, miniature-life, cross-section charm, play-scale perfection
+  aesthetic: Cutaway miniature domestic architecture language with staged room-box composition, toy-scale interior curation, and handcrafted display-house precision
+  form_and_line: Open-face sectional façade removal, stacked floor plate bands, compartmental room grids, diagonal staircase connectors, and compact miniature furnishing geometry
+  color_palette: Soft pastel wall fields, printed wallpaper motifs, painted toy-wood neutrals, carpet beige bases, dusty pink highlights, and muted decorative accents
+  lighting_setup: Even display-style room lighting, gentle interior practical glow, low-contrast compartment shadows, and soft frontal illumination for sectional readability
+  material_texture: Painted miniature timber, paper wallpaper grain, tiny textile upholstery, molded toy-plastic details, glazed micro-ceramics, and satin lacquer trims
+  render_quality: High-clarity miniature cutaway rendering with disciplined room-by-room legibility, balanced decorative density, and crafted dollhouse authenticity
   spatial_distortion: None
-  atmosphere: Playful, voyeur, tiny-life, peek-through, imaginative-play, ordered-doll-world, childhood-make-believe
-  key_features: No front wall, miniature furniture, tiny staircase, room-by-room view, doll occupants, cross-section edge, tiny chandelier
-  creative_brief: Rooms stack in cross-section honesty, no front wall to hide the miniature dramas unfolding on each floor. Tiny chandeliers drip from popsicle-stick ceilings, furniture arranged for occupants the size of thumbs. The dollhouse reveals everything, a home without secrets, each room a stage waiting for small hands to begin the play.
+  atmosphere: Playful, curated, intimate, orderly, and theatrically domestic
+  key_features: Open-front sectional view, stacked micro-room modules, miniature stair transitions, toy-furniture silhouette language, decorative chandelier nodes, and crisp cutaway perimeter edges
+  creative_brief: >-
+    Keep the preset anchored in dollhouse-cutaway grammar: open-face sectional
+    room stacking, miniature interior detailing, and toy-scale domestic
+    proportion logic should stay transferable across subject matter.
 avoidRules:
   - full wall
 assets:

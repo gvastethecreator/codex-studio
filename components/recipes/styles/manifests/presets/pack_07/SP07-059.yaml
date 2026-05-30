@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Round door in hill, Shire dwelling, earth-sheltered home, cozy burrow, garden-roof cottage
-  form_and_line: Round, curved tunnel, arch windows, circular symmetry, low-earth dome, winding path
-  color_palette: Green, Wood, Earth, Brass knob, Buttercream plaster, Flower-garden colors, Warm brick
-  lighting_setup: Cozy warm, hearth-glow, round-window light, candle-sconce, tunnel-lantern, afternoon-gold
-  material_texture: Grass, wood, clay plaster, flagstone floor, brass fixtures, wattle, herb garden
-  render_quality: Cozy, hidden, Tolkien-Shire charm, hobbit-hole perfection, underground-warmth, storybook comfort
+  aesthetic: Earth-sheltered pastoral cottage language focused on circular thresholds, hillside integration, and humble handcrafted domesticity with Shire-like warmth
+  form_and_line: Dominant circular apertures, low bermed roof profiles, gently arched corridors, soft radial room planning, and meandering garden approach lines
+  color_palette: Moss green, weathered timber brown, loam umber, butter-cream plaster, muted brass highlights, warm terracotta accents, soft wildflower notes
+  lighting_setup: Hearth-led amber key light, low window spill, lantern practicals, diffuse afternoon bounce, and mild tunnel falloff to preserve intimate depth
+  material_texture: Turf roof matting, hand-planed timber, lime-clay plaster, worn flagstone, brushed brass hardware, woven natural fibers, and herb-garden edges
+  render_quality: Storybook residential realism with tactile handcrafted detail, cozy volumetric softness, and restrained fantasy charm anchored in lived-in function
   spatial_distortion: None
-  atmosphere: Homey, safe, garden-sheltered, tea-ready, pipe-smoke, fireside tales, earth-embrace
-  key_features: Round door, grass roof, round windows, hearth fireplace, pantry shelves, brass knob center
-  creative_brief: Grass roof slopes into hillside, architecture hiding its ambition beneath a blanket of wildflowers and humility. The round door opens inward with brass-center welcome, a portal into warmth that smells of fresh bread and pipe tobacco. The hill embraces its occupant like earth learning to love the creature that burrowed into it.
+  atmosphere: Protected, domestic, pastoral, intimate, slow-living, and quietly celebratory of everyday ritual
+  key_features: Circular front door with centered brass hardware, integrated sod roofline, rounded window set, compact hearth core, curved joinery, and pantry-forward kitchen detailing
+  creative_brief: >-
+    Preserve a reusable grammar of earth-sheltered circular domestic architecture:
+    low bermed massing, round apertures, warm handcrafted interiors, and
+    garden-integrated transitions should define the style across subjects.
 avoidRules:
   - square
   - tall

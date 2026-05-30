@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Ascending terrace perspective that reveals crop zoning, access routes, and communal nodes.
   atmosphere: Productive calm, collective pride, and grounded optimism.
   key_features: Tiered agro-cells, gravity-fed water channels, seedling cooperatives, and shared harvest platforms.
-  creative_brief: A mountainside food district where cultivation, logistics, and community life interlock into a visibly resilient daily system.
+  creative_brief: >-
+    Preserve terraced sky-harvest grammar as a reusable style system: stepped
+    agro-ecology zoning, gravity-fed civic logistics, and cooperative daily
+    stewardship should remain consistent across subjects.
 avoidRules: [photoreal, dystopian, dirty-pollution, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-001.webp }
 attributes:

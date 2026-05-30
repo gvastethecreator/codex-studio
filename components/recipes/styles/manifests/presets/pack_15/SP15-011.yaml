@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Layered vertical district depth linked by glowing metabolic corridors.
   atmosphere: Nurturing experimentation, civic trust, and living-system intelligence.
   key_features: Gene-lit avenues, communal wetlabs, symbiotic canopy nodes, and bio-signal kiosks.
-  creative_brief: A biopunk neighborhood where public biotech replaces brittle utilities and creates a visibly living urban metabolism.
+  creative_brief: >-
+    Preserve biolumina night-grid grammar as a reusable style system:
+    organism-powered civic infrastructure, metabolic corridor legibility, and
+    trust-centered neighborhood biotech should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk-grime, violent-neon, blackout-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-011.webp }
 attributes:
