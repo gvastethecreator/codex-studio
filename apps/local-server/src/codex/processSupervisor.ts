@@ -17,6 +17,18 @@ export interface ProcessInfo {
   lastStartAt: string | null;
 }
 
+export type AppServerProcessStatus = ProcessInfo['status'];
+
+export class AppServerStartError extends Error {
+  readonly causeValue: unknown;
+
+  constructor(message: string, causeValue: unknown) {
+    super(message);
+    this.name = 'AppServerStartError';
+    this.causeValue = causeValue;
+  }
+}
+
 export interface ProcessSupervisor {
   ensureAppServer(reason?: AppServerEnsureReason): Promise<ProcessInfo>;
   stopAppServer(): Promise<void>;
@@ -50,10 +62,25 @@ export function getAppServerDiagnostics() {
   };
 }
 
+export function resolveAppServerProcessStatus({
+  running,
+  lastStartError,
+}: {
+  running: boolean;
+  lastStartError: string | null;
+}): AppServerProcessStatus {
+  if (running) return 'running';
+  if (lastStartError) return 'error';
+  return 'stopped';
+}
+
 function currentInfo(): ProcessInfo {
   return {
     ...getAppServerDiagnostics(),
-    status: isAppServerRunning() ? 'running' : diagnostics.lastStartError ? 'error' : 'stopped',
+    status: resolveAppServerProcessStatus({
+      running: isAppServerRunning(),
+      lastStartError: diagnostics.lastStartError,
+    }),
   };
 }
 
@@ -90,10 +117,11 @@ export function ensureAppServer(reason: AppServerEnsureReason = 'session') {
     diagnostics.pid = null;
     diagnostics.lastStartError = message;
     log('error', 'app-server', `Failed to start codex app-server: ${message}`);
-    throw error;
+    throw new AppServerStartError(`Failed to start codex app-server: ${message}`, error);
   }
 
-  diagnostics.pid = appServerProcess.pid ?? null;
+  const processHandle = appServerProcess;
+  diagnostics.pid = processHandle.pid ?? null;
 
   const pipeOutput = async (stream: ReadableStream<Uint8Array> | null) => {
     if (!stream) return;
@@ -104,20 +132,22 @@ export function ensureAppServer(reason: AppServerEnsureReason = 'session') {
       appendFileSync(logPath, Buffer.from(chunk.value).toString('utf8'));
     }
   };
-  if (appServerProcess.stdout instanceof ReadableStream) void pipeOutput(appServerProcess.stdout);
-  if (appServerProcess.stderr instanceof ReadableStream) void pipeOutput(appServerProcess.stderr);
+  if (processHandle.stdout instanceof ReadableStream) void pipeOutput(processHandle.stdout);
+  if (processHandle.stderr instanceof ReadableStream) void pipeOutput(processHandle.stderr);
 
   log(
     'info',
     'app-server',
-    `Started codex app-server on ${getCodexWsUrl()} with ${invocation.join(' ')} (pid ${appServerProcess.pid})`,
+    `Started codex app-server on ${getCodexWsUrl()} with ${invocation.join(' ')} (pid ${processHandle.pid})`,
   );
-  void appServerProcess.exited.then((code) => {
+  void processHandle.exited.then((code) => {
     diagnostics.pid = null;
     diagnostics.lastExitCode = code;
     diagnostics.lastExitAt = new Date().toISOString();
     log('warn', 'app-server', `codex app-server exited with code ${code}`);
-    appServerProcess = null;
+    if (appServerProcess === processHandle) {
+      appServerProcess = null;
+    }
   });
 }
 

@@ -48,14 +48,18 @@ export type LocalGenerationLifecycleOutcome =
     }
   | {
       status: 'cancelled';
+      reason: 'cancelled';
       message: string;
       durationMs: number;
     }
   | {
       status: 'failed';
+      reason: 'timeout' | 'failed';
       message: string;
       durationMs: number;
     };
+
+export type LocalGenerationFailureReason = 'cancelled' | 'timeout' | 'failed';
 
 export interface LocalGenerationRunResult {
   batchId: string;
@@ -64,6 +68,42 @@ export interface LocalGenerationRunResult {
   images: GeneratedImage[];
   createdAt: number;
   generatedCount: number;
+}
+
+export function classifyLocalGenerationFailureReason(error: unknown): LocalGenerationFailureReason {
+  if (isGenerationCancellationError(error)) {
+    return 'cancelled';
+  }
+
+  const message = error instanceof Error ? error.message : String(error);
+  return /timed?\s*out|timeout/i.test(message) ? 'timeout' : 'failed';
+}
+
+export function buildLocalGenerationFailureOutcome({
+  error,
+  durationMs,
+}: {
+  error: unknown;
+  durationMs: number;
+}): Extract<LocalGenerationLifecycleOutcome, { status: 'cancelled' | 'failed' }> {
+  const reason = classifyLocalGenerationFailureReason(error);
+  const message = error instanceof Error ? error.message : String(error);
+
+  if (reason === 'cancelled') {
+    return {
+      status: 'cancelled',
+      reason,
+      message,
+      durationMs,
+    };
+  }
+
+  return {
+    status: 'failed',
+    reason,
+    message,
+    durationMs,
+  };
 }
 
 export function resolveLocalGenerationProviderId({
@@ -348,18 +388,9 @@ export async function runLocalGenerationWithLifecycle(
       durationMs: Date.now() - startedAt,
     };
   } catch (error) {
-    if (isGenerationCancellationError(error)) {
-      return {
-        status: 'cancelled',
-        message: error instanceof Error ? error.message : String(error),
-        durationMs: Date.now() - startedAt,
-      };
-    }
-
-    return {
-      status: 'failed',
-      message: error instanceof Error ? error.message : String(error),
+    return buildLocalGenerationFailureOutcome({
+      error,
       durationMs: Date.now() - startedAt,
-    };
+    });
   }
 }

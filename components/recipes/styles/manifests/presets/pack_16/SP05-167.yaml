@@ -19,7 +19,7 @@ visualDna:
   material_texture: Chapa usada, paneles de nave, textiles utilitarios y grano analógico de space-western anime.
   render_quality: Acabado premium noventero con ritmo de persecución y claridad de set-piece orbital.
   spatial_distortion: Composición de ruta interestelar con encuadre de dogfight, abordaje y escape improvisado.
-  atmosphere: Aventurera, chulesca, estelar, callejera.
+  atmosphere: Aventurera, chulesca, estelar y callejera.
   key_features: Siluetas de nave distintivas, estelas largas, ropa outlaw y mapas de ruta cósmica.
   creative_brief: Define una gramática reusable de aventura espacial buscatesoros para cualquier sujeto, priorizando libertad, riesgo y espíritu de tripulación.
 avoidRules:

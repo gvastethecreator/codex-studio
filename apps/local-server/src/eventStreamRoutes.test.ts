@@ -1,7 +1,19 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
-import { createEventStreamRoutes } from './eventStreamRoutes';
+import {
+  EVENT_STREAM_KEEPALIVE_MS,
+  createEventStreamRoutes,
+  createServerConnectedEvent,
+} from './eventStreamRoutes';
 
 describe('eventStreamRoutes', () => {
+  it('exports connected event helper and keepalive interval', () => {
+    const event = createServerConnectedEvent();
+    expect(event.type).toBe('server.connected');
+    expect(event.payload).toEqual({ ok: true });
+    expect(typeof event.createdAt).toBe('string');
+    expect(EVENT_STREAM_KEEPALIVE_MS).toBe(10_000);
+  });
+
   it('returns SSE handshake payload and no-buffering header', async () => {
     const subscribeEvents = vi.fn(() => () => true);
     const routes = createEventStreamRoutes({

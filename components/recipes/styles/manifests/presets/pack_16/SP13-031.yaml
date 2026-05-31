@@ -21,7 +21,7 @@ visualDna:
   render_quality: Precise anime readability with unease-first composition, preserving mundane detail while inserting controlled anomalies.
   spatial_distortion: Corridor tunnel perspective stretched beyond comfort, with micro-tilt and depth drag near terminal doors.
   atmosphere: Social emptiness, anticipatory dread, and the feeling of being observed by architecture itself.
-  key_features: Repeating lockers or doors, uncertain reflections, failed lighting intervals, and threshold interruptions.
+  key_features: Repeating lockers or doors, uncertain reflections, failed flicker intervals, and threshold interruptions.
   creative_brief: Create a reusable school-liminal horror grammar for any subject by combining bureaucratic geometry, flicker rhythm, and barely-perceived distortions.
 avoidRules:
   - photoreal

@@ -1,6 +1,7 @@
 import type {
   CodexAuthMode,
   CodexUsageSnapshot,
+  LocalCodexSessionReason,
   LocalCodexSessionResponse,
 } from '../../../../packages/shared/src';
 import { CodexRpcClient } from './rpcClient';
@@ -22,6 +23,7 @@ interface LocalCodexSessionBase {
   source: LocalCodexSessionResponse['source'];
   fetchedAt: string;
   error: string | null;
+  fallbackReason?: Exclude<LocalCodexSessionReason, null>;
 }
 
 const CODEX_CLIENT_INFO = {
@@ -36,6 +38,29 @@ function now() {
 
 function defaultClientFactory(): CodexRpcTransport {
   return new CodexRpcClient();
+}
+
+const APP_SERVER_UNAVAILABLE_PATTERN =
+  /app-server|connect|connection|econnrefused|socket|websocket|timed out|timeout/i;
+
+export function normalizeCodexSessionErrorMessage(error: unknown) {
+  if (error instanceof Error) return error.message;
+  if (typeof error === 'string') return error;
+  try {
+    return JSON.stringify(error);
+  } catch {
+    return String(error);
+  }
+}
+
+export function classifyLocalCodexSessionFallbackReason(
+  error: unknown,
+): Exclude<LocalCodexSessionReason, null> {
+  const message = normalizeCodexSessionErrorMessage(error);
+  if (!message || message === 'undefined' || message === 'null') {
+    return 'unknown';
+  }
+  return APP_SERVER_UNAVAILABLE_PATTERN.test(message) ? 'app_server_unavailable' : 'unknown';
 }
 
 export function resolveCodexAuthMode(account: any): CodexAuthMode {
@@ -79,7 +104,8 @@ export function buildLocalCodexSessionResponse(
     reason = base.error ? 'app_server_unavailable' : null;
   } else if (base.error) {
     state = 'unavailable';
-    reason = 'app_server_unavailable';
+    reason =
+      base.source === 'fallback' ? (base.fallbackReason ?? 'unknown') : 'app_server_unavailable';
   } else {
     state = 'requires_chatgpt_login';
     reason = 'chatgpt_login_required';
@@ -153,13 +179,15 @@ export function createLocalCodexSessionReader({
         });
       });
     } catch (error) {
+      const errorMessage = normalizeCodexSessionErrorMessage(error);
       return buildLocalCodexSessionResponse({
         authMode: null,
         planType: null,
         usage: null,
         source: 'fallback',
         fetchedAt: now(),
-        error: error instanceof Error ? error.message : String(error),
+        error: errorMessage,
+        fallbackReason: classifyLocalCodexSessionFallbackReason(error),
       });
     }
   };
